@@ -34,9 +34,13 @@ def safety(tags):
     return bad
 
 
-def identity(tags, char):
-    """Recall of the character's design tags among WD14-detected tags."""
+def identity(tags, char, shot=None):
+    """Recall of the character's design tags (those in frame for the shot) among WD14-detected tags."""
     design = split_tags(char.get("tag_prompt") or "")
+    if shot == "close-up":
+        design = [t for t in design if not prompts.LOWER_RE.search(t)]
+    elif shot in ("medium", "over-shoulder"):
+        design = [t for t in design if not prompts.FEET_RE.search(t)]
     seen = {t for t, conf in tags.get("general", {}).items() if conf >= DESIGN_THRESHOLD}
     hit = [t for t in design if t in seen]
     return {"recall": round(len(hit) / max(1, len(design)), 3), "missing": [t for t in design if t not in seen]}
@@ -54,6 +58,8 @@ def main():
     ap.add_argument("--seed-base", type=int, default=1000)
     ap.add_argument("--ref", default=None, help="reference image for IP-Adapter")
     ap.add_argument("--ip-weight", type=float, default=0.6)
+    ap.add_argument("--ip-preset", default="PLUS (high strength)", help='or "PLUS FACE (portraits)"')
+    ap.add_argument("--ip-end", type=float, default=0.8)
     ap.add_argument("--panels", default=None, help="comma separated panel indices")
     ap.add_argument("--no-sfw", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
@@ -88,7 +94,8 @@ def main():
         ref_name = comfy.upload(Path(args.ref).read_bytes(), f"webtoon_{args.run}_ref.png")
 
     meta = {"run": args.run, "preset": args.preset or world["style_id"], "ref": args.ref,
-            "ip_weight": args.ip_weight if args.ref else None, "storyboard": args.storyboard, "images": []}
+            "ip_weight": args.ip_weight if args.ref else None,
+            "ip_preset": args.ip_preset if args.ref else None, "ip_end": args.ip_end if args.ref else None, "storyboard": args.storyboard, "images": []}
     outdir.mkdir(parents=True, exist_ok=True)
     for i, k, p, seed in jobs:
         rec = {"panel": i, "variant": k, "width": p["width"], "height": p["height"],
@@ -96,7 +103,8 @@ def main():
         for attempt in range(MAX_RESEED + 1):
             s = seed if attempt == 0 else random.randint(0, 2**31)
             g = comfy.workflow(p["positive"], p["negative"], p["width"], p["height"], s, p["preset"],
-                               f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", ref_image=ref_name, ip_weight=args.ip_weight)
+                               f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", ref_image=ref_name, ip_weight=args.ip_weight,
+                               ip_preset=args.ip_preset, ip_end=args.ip_end)
             png = comfy.run(g)[0]
             tags = wd14_tag(png)
             bad = safety(tags) if not args.no_sfw else {}
@@ -107,7 +115,7 @@ def main():
         (outdir / name).write_bytes(png)
         rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"))
         if panels[i].get("characters"):
-            rec["identity"] = identity(tags, char)
+            rec["identity"] = identity(tags, char, panels[i].get("shot"))
         meta["images"].append(rec)
         ident = rec.get("identity", {}).get("recall")
         print(f"p{i:02d} s{k} seed={s} {rec['status']} identity={ident}")

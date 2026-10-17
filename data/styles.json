@@ -4,10 +4,35 @@
     "clean_webtoon": {
       "checkpoint": "noobai-xl-eps11.safetensors",
       "prediction": "eps",
-      "artist_tags": ["(artist:ningen mame:0.8)", "(artist:ciloranko:0.6)"],
-      "aesthetic_tags": ["flat color", "clean lineart"],
-      "quality_pos": ["masterpiece", "best quality", "newest", "absurdres", "highres"],
-      "quality_neg": ["worst quality", "low quality", "normal quality", "bad anatomy", "bad hands", "extra fingers", "missing fingers", "jpeg artifacts", "blurry", "lowres", "old", "early"],
+      "artist_tags": [
+        "(artist:ningen mame:0.8)",
+        "(artist:ciloranko:0.6)"
+      ],
+      "aesthetic_tags": [
+        "flat color",
+        "clean lineart"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "old",
+        "early"
+      ],
       "sampler": "euler_ancestral",
       "scheduler": "normal",
       "steps": 28,
@@ -17,9 +42,31 @@
       "checkpoint": "noobai-xl-eps11.safetensors",
       "prediction": "eps",
       "artist_tags": [],
-      "aesthetic_tags": ["flat color", "clean lineart"],
-      "quality_pos": ["masterpiece", "best quality", "newest", "absurdres", "highres"],
-      "quality_neg": ["worst quality", "low quality", "normal quality", "bad anatomy", "bad hands", "extra fingers", "missing fingers", "jpeg artifacts", "blurry", "lowres", "old", "early"],
+      "aesthetic_tags": [
+        "flat color",
+        "clean lineart"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "old",
+        "early"
+      ],
       "sampler": "euler_ancestral",
       "scheduler": "normal",
       "steps": 28,
@@ -29,30 +76,108 @@
       "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
       "prediction": "eps",
       "artist_tags": [],
-      "aesthetic_tags": ["soft shading", "pastel colors"],
-      "quality_pos": ["masterpiece", "best quality", "absurdres", "highres"],
-      "quality_neg": ["worst quality", "low quality", "bad anatomy", "bad hands", "extra fingers", "jpeg artifacts", "blurry", "lowres"],
+      "aesthetic_tags": [
+        "soft shading",
+        "pastel colors"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
       "sampler": "euler_ancestral",
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
     }
   },
-  "always_negative": ["text", "letters", "speech bubble", "watermark", "signature", "logo", "username", "comic", "multiple views", "panel"],
-  "sfw_positive": ["general"],
-  "sfw_negative": ["nsfw", "nude", "nipples", "cleavage", "underwear", "panties", "lingerie", "sexually suggestive", "explicit", "questionable", "sensitive", "blood", "gore"],
+  "always_negative": [
+    "text",
+    "letters",
+    "speech bubble",
+    "watermark",
+    "signature",
+    "logo",
+    "username",
+    "comic",
+    "multiple views",
+    "panel"
+  ],
+  "sfw_positive": [
+    "general"
+  ],
+  "sfw_negative": [
+    "nsfw",
+    "nude",
+    "nipples",
+    "cleavage",
+    "underwear",
+    "panties",
+    "lingerie",
+    "sexually suggestive",
+    "explicit",
+    "questionable",
+    "sensitive",
+    "blood",
+    "gore"
+  ],
   "shot_tags": {
-    "close-up": ["close-up", "portrait", "face focus"],
-    "medium": ["upper body", "cowboy shot"],
-    "wide": ["full body", "wide shot", "scenery"],
-    "over-shoulder": ["from behind", "over-the-shoulder shot"],
-    "establishing": ["scenery", "establishing shot", "wide shot", "no humans"]
+    "close-up": [
+      "(close-up:1.3)",
+      "(portrait:1.2)",
+      "face focus"
+    ],
+    "medium": [
+      "upper body",
+      "cowboy shot"
+    ],
+    "wide": [
+      "full body",
+      "wide shot",
+      "scenery"
+    ],
+    "over-shoulder": [
+      "from behind",
+      "over-the-shoulder shot"
+    ],
+    "establishing": [
+      "scenery",
+      "establishing shot",
+      "wide shot",
+      "no humans"
+    ]
   },
   "shot_size": {
-    "close-up": [832, 1216],
-    "medium": [832, 1216],
-    "over-shoulder": [832, 1216],
-    "wide": [1216, 832],
-    "establishing": [1216, 832]
+    "close-up": [
+      832,
+      1216
+    ],
+    "medium": [
+      832,
+      1216
+    ],
+    "over-shoulder": [
+      832,
+      1216
+    ],
+    "wide": [
+      1216,
+      832
+    ],
+    "establishing": [
+      1216,
+      832
+    ]
   }
 }

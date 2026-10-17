@@ -10,6 +10,10 @@ from common import dedupe, split_tags
 # Design attributes owned by the character's tag_prompt; scene tags must not override them.
 DESIGN_RE = re.compile(r"\b(hair|eyes|skin|freckles|jacket|shirt|shorts|skirt|pantyhose|footwear|boots|dress|uniform)\b")
 
+# Design tags outside the frame of tighter shots; left in, they pull the camera back to full body.
+LOWER_RE = re.compile(r"\b(shorts|skirt|pants|pantyhose|thighhighs|legwear|socks|footwear|boots|shoes)\b")
+FEET_RE = re.compile(r"\b(footwear|boots|shoes|socks)\b")
+
 COUNT_TAGS = {"1girl", "1boy", "2girls", "2boys", "3girls", "multiple girls", "multiple boys", "solo", "no humans"}
 
 
@@ -37,13 +41,19 @@ def build(panel, world, styles, preset_id=None, sfw=True):
     char_tags = []
     for c in chars:
         char_tags += split_tags(c.get("tag_prompt") or "")
-    design = set(char_tags)
+    if panel.get("shot") == "close-up":
+        char_tags = [t for t in char_tags if not LOWER_RE.search(t)]
+    elif panel.get("shot") in ("medium", "over-shoulder"):
+        char_tags = [t for t in char_tags if not FEET_RE.search(t)]
+    design = set(split_tags(" , ".join(c.get("tag_prompt") or "" for c in chars)))
 
     scene = [t for t in panel.get("visual_tags", []) if t not in COUNT_TAGS]
     if chars:
         scene = [t for t in scene if t in design or not DESIGN_RE.search(t)]
     loc = locs.get(panel.get("location_id"))
     loc_tags = split_tags(loc["tag_prompt"]) if loc else []
+    if panel.get("shot") == "close-up":
+        loc_tags = loc_tags[:3]  # a full scene description pulls the camera back to a medium shot
     shot = styles["shot_tags"].get(panel.get("shot"), [])
     if chars:
         shot = [t for t in shot if t != "no humans"]

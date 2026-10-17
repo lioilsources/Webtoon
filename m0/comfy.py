@@ -8,7 +8,7 @@ import uuid
 from common import COMFY_URL, http, http_json
 
 
-def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=None, ip_weight=0.6):
+def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=None, ip_weight=0.6, ip_preset="PLUS (high strength)", ip_end=0.8):
     """API-format graph. ref_image = filename already uploaded to ComfyUI input/."""
     g = {
         "ckpt": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": preset["checkpoint"]}},
@@ -27,12 +27,12 @@ def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=
         g["sample"]["inputs"]["model"] = ["vpred", 0]
     if ref_image:
         base = g["sample"]["inputs"]["model"]
-        g["ipload"] = {"class_type": "IPAdapterUnifiedLoader", "inputs": {"model": base, "preset": "PLUS (high strength)"}}
+        g["ipload"] = {"class_type": "IPAdapterUnifiedLoader", "inputs": {"model": base, "preset": ip_preset}}
         g["refimg"] = {"class_type": "LoadImage", "inputs": {"image": ref_image}}
         g["ipapply"] = {"class_type": "IPAdapterAdvanced", "inputs": {
             "model": ["ipload", 0], "ipadapter": ["ipload", 1], "image": ["refimg", 0],
             "weight": ip_weight, "weight_type": "linear", "combine_embeds": "concat",
-            "start_at": 0.0, "end_at": 0.8, "embeds_scaling": "V only"}}
+            "start_at": 0.0, "end_at": ip_end, "embeds_scaling": "V only"}}
         g["sample"]["inputs"]["model"] = ["ipapply", 0]
     return g
 
