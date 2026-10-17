@@ -17,7 +17,7 @@
         "id": "pixel",
         "name": "Pixel",
         "count_tag": null,
-        "tag_prompt": "black and white cat, tuxedo cat, green eyes",
+        "tag_prompt": "(black cat:1.2), white chest, white paws, tuxedo cat, green eyes",
         "desc_en": "Pixel, a black-and-white tuxedo cat"
       },
       {
@@ -117,7 +117,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7211,
+        "negative_extra": [
+          "grey cat",
+          "white cat",
+          "orange cat"
+        ]
       },
       {
         "shot": "medium",
@@ -183,7 +189,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7411,
+        "negative_extra": [
+          "overalls on boy",
+          "glasses on boy",
+          "red hair"
+        ]
       },
       {
         "shot": "medium",
@@ -220,8 +232,10 @@
           "portal",
           "blue portal",
           "glowing",
-          "robot",
-          "falling"
+          "(robot:1.3)",
+          "small robot",
+          "falling out",
+          "midair"
         ],
         "scene_en": "a blue glowing circle opens in the middle of the room and a small robot tumbles out",
         "bubbles": [
@@ -232,7 +246,8 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7611
       },
       {
         "shot": "wide",
@@ -397,7 +412,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8111,
+        "negative_extra": [
+          "grey cat",
+          "white cat",
+          "orange cat"
+        ]
       },
       {
         "shot": "medium",
@@ -526,7 +547,7 @@
         "gap_after": "medium"
       },
       {
-        "shot": "wide",
+        "shot": "medium",
         "location_id": "room",
         "characters": [
           {
@@ -537,9 +558,10 @@
           "no humans",
           "cat",
           "on wardrobe",
-          "flower pot",
+          "(flower pot:1.3)",
           "falling",
-          "broken"
+          "knocking over",
+          "potted plant"
         ],
         "scene_en": "the cat jumps onto the wardrobe and knocks a flower pot off",
         "bubbles": [],
@@ -548,7 +570,13 @@
             "text": "PRÁSK!"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8611,
+        "negative_extra": [
+          "grey cat",
+          "white cat",
+          "orange cat"
+        ]
       },
       {
         "shot": "medium",
@@ -594,9 +622,11 @@
         "visual_tags": [
           "portal",
           "closing",
+          "glowing",
+          "(robot:1.3)",
+          "small robot",
           "waving",
-          "robot",
-          "glowing"
+          "blue light"
         ],
         "scene_en": "the portal closes and the robot waves goodbye",
         "bubbles": [
@@ -607,7 +637,8 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8811
       },
       {
         "shot": "medium",
@@ -673,7 +704,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 9011,
+        "negative_extra": [
+          "grey cat",
+          "white cat",
+          "orange cat"
+        ]
       }
     ]
   }

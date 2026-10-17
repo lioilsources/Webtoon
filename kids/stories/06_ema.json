@@ -17,7 +17,7 @@
         "id": "bobik",
         "name": "Bobík",
         "count_tag": null,
-        "tag_prompt": "white rabbit, black ears, bunny",
+        "tag_prompt": "white rabbit, (black ears:1.3), white fur, bunny",
         "desc_en": "Bobik, a white rabbit with black ears"
       },
       {
@@ -31,7 +31,7 @@
         "id": "vrana",
         "name": "Pan Vrána",
         "count_tag": "1boy",
-        "tag_prompt": "old man, grey hair, grey beard, straw hat, green overalls, gardener, gloves",
+        "tag_prompt": "(old man:1.3), elderly, wrinkled skin, grey hair, long grey beard, straw hat, green overalls, gardener, gloves",
         "desc_en": "Mr. Vrana, a mysterious old gardener with a grey beard, straw hat and green overalls"
       }
     ],
@@ -106,7 +106,14 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7111,
+        "negative_extra": [
+          "multiple rabbits",
+          "2 rabbits",
+          "rabbit girl",
+          "animal ears"
+        ]
       },
       {
         "shot": "close-up",
@@ -131,7 +138,14 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7211,
+        "negative_extra": [
+          "multiple rabbits",
+          "2 rabbits",
+          "rabbit girl",
+          "animal ears"
+        ]
       },
       {
         "shot": "wide",
@@ -171,7 +185,14 @@
             "text": "FŮŮŮŠ!"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7311,
+        "negative_extra": [
+          "multiple rabbits",
+          "2 rabbits",
+          "rabbit girl",
+          "animal ears"
+        ]
       },
       {
         "shot": "medium",
@@ -296,11 +317,13 @@
         ],
         "visual_tags": [
           "flying",
+          "midair",
+          "holding animal",
           "huge tree",
           "golden light",
           "glowing",
-          "on branch",
-          "surprised"
+          "surprised",
+          "sky"
         ],
         "scene_en": "the rabbit suddenly swerves towards a giant old tree in the park where a small golden light glows on a branch",
         "bubbles": [
@@ -316,7 +339,15 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 7711,
+        "negative_extra": [
+          "multiple rabbits",
+          "2 rabbits",
+          "rabbit girl",
+          "animal ears",
+          "sitting"
+        ]
       },
       {
         "shot": "close-up",
@@ -410,7 +441,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8011,
+        "negative_extra": [
+          "child",
+          "young",
+          "multiple rabbits"
+        ]
       },
       {
         "shot": "medium",
@@ -446,7 +483,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8111,
+        "negative_extra": [
+          "boy",
+          "male child",
+          "hat on girl"
+        ]
       },
       {
         "shot": "medium",
@@ -479,7 +522,12 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8211,
+        "negative_extra": [
+          "hat on girl",
+          "straw hat on girl"
+        ]
       },
       {
         "shot": "close-up",
@@ -512,11 +560,14 @@
         "characters": [],
         "visual_tags": [
           "no humans",
-          "kitten",
-          "cat",
+          "(solo:1.2)",
+          "one kitten",
+          "small kitten",
           "on branch",
+          "high up",
           "tree",
-          "scared"
+          "scared",
+          "meowing"
         ],
         "scene_en": "a tiny kitten is stuck high up on a branch of a tall tree, meowing",
         "bubbles": [
@@ -531,7 +582,12 @@
             "text": "Mňau!"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8411,
+        "negative_extra": [
+          "multiple cats",
+          "2 cats"
+        ]
       },
       {
         "shot": "medium",
@@ -562,7 +618,7 @@
         "gap_after": "small"
       },
       {
-        "shot": "wide",
+        "shot": "medium",
         "location_id": "park",
         "characters": [
           {
@@ -575,6 +631,8 @@
           "kitten",
           "flying",
           "carrying",
+          "holding paw",
+          "midair",
           "tree",
           "sparkle"
         ],
@@ -585,7 +643,11 @@
             "text": "FŮŮŮŠ!"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8611,
+        "negative_extra": [
+          "multiple rabbits"
+        ]
       },
       {
         "shot": "medium",
@@ -685,7 +747,14 @@
             "text": "FŮŮŠ!"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8911,
+        "negative_extra": [
+          "multiple rabbits",
+          "2 rabbits",
+          "rabbit girl",
+          "animal ears"
+        ]
       }
     ]
   }

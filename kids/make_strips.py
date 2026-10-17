@@ -44,7 +44,7 @@ KIDS_NEG = ["horror", "scary", "creepy face", "realistic"]
 def comfy_render(panel, world, styles, preset, seed):
     p = prompts.build(panel, world, styles, preset)
     pos = p["positive"] + ", " + ", ".join(KIDS_POS)
-    neg = p["negative"] + ", " + ", ".join(KIDS_NEG)
+    neg = p["negative"] + ", " + ", ".join(KIDS_NEG + panel.get("negative_extra", []))
     g = comfy.workflow(pos, neg, p["width"], p["height"], seed, p["preset"], f"webtoon/kids/{world['id']}")
     return comfy.run(g)[0], pos
 
