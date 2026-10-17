@@ -1,0 +1,89 @@
+{
+  "id": "w_skyisles",
+  "title": "Nebeské ostrovy",
+  "synopsis": "Létající ostrovy spojené lanovými mosty. Poštovní kurýři doručují dopisy přes propasti mraků, zatímco pod nimi se stahuje bouře, o které nikdo nemluví.",
+  "tone": "dobrodružný, hřejivý, lehce tajemný",
+  "audience": "teen",
+  "language": "cs",
+  "style_id": "clean_webtoon",
+  "bible": {
+    "rules": [
+      "Ostrovy drží ve vzduchu modré krystaly; když krystal zhasne, ostrov klesá.",
+      "Kurýři nikdy neotevírají cizí dopisy.",
+      "Pod mraky nikdo nebyl a nevrátil se."
+    ],
+    "factions": [
+      "Poštovní cech",
+      "Strážci krystalů"
+    ]
+  },
+  "canon": {
+    "nodes": [
+      {
+        "id": "c1",
+        "text": "Vesna dostane dopis bez adresáta, který svítí modře."
+      }
+    ],
+    "constraints": [
+      "Žádná postava nezemře v prvních třech dílech.",
+      "Bez krve a explicitního násilí."
+    ]
+  },
+  "permissions": {
+    "can_add_characters": false,
+    "can_create_character": false,
+    "can_change_location": true,
+    "allowed_locations": [
+      "l_post",
+      "l_bridge",
+      "l_market",
+      "l_cliff"
+    ]
+  },
+  "characters": [
+    {
+      "id": "c_vesna",
+      "name": "Vesna",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "Mladá poštovní kurýrka (kolem 20 let). Krátké rozcuchané měděné vlasy po bradu, jeden pramen zastrčený za uchem, velké zelené oči, pihy na nose. Nosí tmavě modrou kurýrskou bundu s mosaznými knoflíky a odznakem obálky na rukávu, bílou košili, hnědé kraťasy přes černé punčocháče, vysoké hnědé šněrovací boty, koženou brašnu přes rameno a letecké brýle na čele. Na levém zápěstí kožený náramek s malým modrým krystalem.",
+      "personality": "zvědavá, tvrdohlavá, laskavá, rychle jedná",
+      "speech_style": "krátké věty, hovorová čeština, občas si mumlá pro sebe",
+      "tag_prompt": "short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet",
+      "identity_level": "prompt",
+      "reference_images": [],
+      "unknown_tags": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_post",
+      "name": "Poštovní věž",
+      "description": "Dřevěná věž plná přihrádek na dopisy, kruhová okna, výhled na mraky.",
+      "tag_prompt": "indoors, post office, wooden interior, shelves, many letters, round window, warm lighting, sky visible through window",
+      "mood": "útulná"
+    },
+    {
+      "id": "l_bridge",
+      "name": "Lanový most",
+      "description": "Dlouhý lanový most mezi ostrovy nad mořem mraků.",
+      "tag_prompt": "outdoors, rope bridge, floating island, sea of clouds, blue sky, wind, high place",
+      "mood": "závratná"
+    },
+    {
+      "id": "l_market",
+      "name": "Tržiště",
+      "description": "Rušné tržiště s barevnými plachtami a lucernami.",
+      "tag_prompt": "outdoors, market, market stall, crowd, colorful awning, paper lantern, town, daytime",
+      "mood": "živá"
+    },
+    {
+      "id": "l_cliff",
+      "name": "Bouřkový útes",
+      "description": "Okraj ostrova, pod ním temné bouřkové mraky a blesky.",
+      "tag_prompt": "outdoors, cliff edge, floating island, dark clouds, storm, lightning, dramatic sky, wind",
+      "mood": "hrozivá"
+    }
+  ]
+}

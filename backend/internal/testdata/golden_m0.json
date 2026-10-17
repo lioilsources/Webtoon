@@ -1,0 +1,1149 @@
+{
+ "system_prompt_empty": "You are the storyboard writer of an interactive vertical webtoon. You write ONE episode as strict JSON.\n\nWORLD (static bible):\n{\"title\": \"Nebeské ostrovy\", \"synopsis\": \"Létající ostrovy spojené lanovými mosty. Poštovní kurýři doručují dopisy přes propasti mraků, zatímco pod nimi se stahuje bouře, o které nikdo nemluví.\", \"tone\": \"dobrodružný, hřejivý, lehce tajemný\", \"audience\": \"teen\", \"rules\": [\"Ostrovy drží ve vzduchu modré krystaly; když krystal zhasne, ostrov klesá.\", \"Kurýři nikdy neotevírají cizí dopisy.\", \"Pod mraky nikdo nebyl a nevrátil se.\"]}\n\nCHARACTERS (use only these ids):\n[{\"id\": \"c_vesna\", \"name\": \"Vesna\", \"role\": \"playable\", \"personality\": \"zvědavá, tvrdohlavá, laskavá, rychle jedná\", \"speech_style\": \"krátké věty, hovorová čeština, občas si mumlá pro sebe\"}]\n\nLOCATIONS (use only these ids):\n[{\"id\": \"l_post\", \"name\": \"Poštovní věž\", \"description\": \"Dřevěná věž plná přihrádek na dopisy, kruhová okna, výhled na mraky.\"}, {\"id\": \"l_bridge\", \"name\": \"Lanový most\", \"description\": \"Dlouhý lanový most mezi ostrovy nad mořem mraků.\"}, {\"id\": \"l_market\", \"name\": \"Tržiště\", \"description\": \"Rušné tržiště s barevnými plachtami a lucernami.\"}, {\"id\": \"l_cliff\", \"name\": \"Bouřkový útes\", \"description\": \"Okraj ostrova, pod ním temné bouřkové mraky a blesky.\"}]\n\nCANON NODES not yet reached (the episode may advance at most one): [{\"id\": \"c1\", \"text\": \"Vesna dostane dopis bez adresáta, který svítí modře.\"}]\nCONSTRAINTS (never break): [\"Žádná postava nezemře v prvních třech dílech.\", \"Bez krve a explicitního násilí.\"]\n\nOUTPUT JSON schema:\n{\n  \"title\": \"<episode title in cs>\",\n  \"panels\": [\n    {\n      \"shot\": one of ['close-up', 'medium', 'wide', 'over-shoulder', 'establishing'],\n      \"location_id\": \"<location id>\",\n      \"characters\": [{\"id\": \"<character id>\", \"emotion\": \"<booru emotion tag>\", \"action\": \"<booru pose/action tags>\"}],\n      \"visual_prompt\": \"<comma separated Danbooru tags: pose, action, expression, props, lighting, camera angle. NO character design tags (hair/clothes are added automatically), NO names, NO text>\",\n      \"bubbles\": [{\"speaker_id\": \"<character id or null for narration>\", \"text\": \"<cs>\", \"kind\": one of ['speech', 'thought', 'shout', 'narration']}],\n      \"sfx\": [{\"text\": \"<onomatopoeia>\", \"style\": \"bold|shaky|soft\"}],\n      \"gap_after\": one of ['small', 'medium', 'large']\n    }\n  ],\n  \"choices\": [\n    {\"kind\": \"closed\", \"text\": \"<cs>\"},\n    {\"kind\": \"closed\", \"text\": \"<cs>\"},\n    {\"kind\": \"free\", \"text\": \"Nebo napiš, co uděláš…\"}\n  ],\n  \"state_diff\": {\"current_location\": \"<location id>\", \"open_threads_add\": [], \"open_threads_remove\": [], \"facts_add\": [], \"timeline_add\": \"<one sentence>\", \"mood\": \"<word>\"},\n  \"canon_nodes_reached\": [\"<canon node id>\"]\n}\n\nRules:\n- 6-8 panels. Start with an establishing or wide shot. Vary shots. End on a hook that sets up the choices.\n- An \"establishing\" panel has NO characters.\n- Max 2 bubbles per panel, max ~12 words per bubble. Text in cs, fits the speech style of the character.\n- visual_prompt uses ONLY real Danbooru tags (e.g. \"standing, holding letter, looking at viewer, surprised, open mouth, glowing, from side, wind, hair blowing\").\n- 2-3 closed choices + exactly 1 free choice.\n",
+ "system_prompt_c1": "You are the storyboard writer of an interactive vertical webtoon. You write ONE episode as strict JSON.\n\nWORLD (static bible):\n{\"title\": \"Nebeské ostrovy\", \"synopsis\": \"Létající ostrovy spojené lanovými mosty. Poštovní kurýři doručují dopisy přes propasti mraků, zatímco pod nimi se stahuje bouře, o které nikdo nemluví.\", \"tone\": \"dobrodružný, hřejivý, lehce tajemný\", \"audience\": \"teen\", \"rules\": [\"Ostrovy drží ve vzduchu modré krystaly; když krystal zhasne, ostrov klesá.\", \"Kurýři nikdy neotevírají cizí dopisy.\", \"Pod mraky nikdo nebyl a nevrátil se.\"]}\n\nCHARACTERS (use only these ids):\n[{\"id\": \"c_vesna\", \"name\": \"Vesna\", \"role\": \"playable\", \"personality\": \"zvědavá, tvrdohlavá, laskavá, rychle jedná\", \"speech_style\": \"krátké věty, hovorová čeština, občas si mumlá pro sebe\"}]\n\nLOCATIONS (use only these ids):\n[{\"id\": \"l_post\", \"name\": \"Poštovní věž\", \"description\": \"Dřevěná věž plná přihrádek na dopisy, kruhová okna, výhled na mraky.\"}, {\"id\": \"l_bridge\", \"name\": \"Lanový most\", \"description\": \"Dlouhý lanový most mezi ostrovy nad mořem mraků.\"}, {\"id\": \"l_market\", \"name\": \"Tržiště\", \"description\": \"Rušné tržiště s barevnými plachtami a lucernami.\"}, {\"id\": \"l_cliff\", \"name\": \"Bouřkový útes\", \"description\": \"Okraj ostrova, pod ním temné bouřkové mraky a blesky.\"}]\n\nCANON NODES not yet reached (the episode may advance at most one): []\nCONSTRAINTS (never break): [\"Žádná postava nezemře v prvních třech dílech.\", \"Bez krve a explicitního násilí.\"]\n\nOUTPUT JSON schema:\n{\n  \"title\": \"<episode title in cs>\",\n  \"panels\": [\n    {\n      \"shot\": one of ['close-up', 'medium', 'wide', 'over-shoulder', 'establishing'],\n      \"location_id\": \"<location id>\",\n      \"characters\": [{\"id\": \"<character id>\", \"emotion\": \"<booru emotion tag>\", \"action\": \"<booru pose/action tags>\"}],\n      \"visual_prompt\": \"<comma separated Danbooru tags: pose, action, expression, props, lighting, camera angle. NO character design tags (hair/clothes are added automatically), NO names, NO text>\",\n      \"bubbles\": [{\"speaker_id\": \"<character id or null for narration>\", \"text\": \"<cs>\", \"kind\": one of ['speech', 'thought', 'shout', 'narration']}],\n      \"sfx\": [{\"text\": \"<onomatopoeia>\", \"style\": \"bold|shaky|soft\"}],\n      \"gap_after\": one of ['small', 'medium', 'large']\n    }\n  ],\n  \"choices\": [\n    {\"kind\": \"closed\", \"text\": \"<cs>\"},\n    {\"kind\": \"closed\", \"text\": \"<cs>\"},\n    {\"kind\": \"free\", \"text\": \"Nebo napiš, co uděláš…\"}\n  ],\n  \"state_diff\": {\"current_location\": \"<location id>\", \"open_threads_add\": [], \"open_threads_remove\": [], \"facts_add\": [], \"timeline_add\": \"<one sentence>\", \"mood\": \"<word>\"},\n  \"canon_nodes_reached\": [\"<canon node id>\"]\n}\n\nRules:\n- 6-8 panels. Start with an establishing or wide shot. Vary shots. End on a hook that sets up the choices.\n- An \"establishing\" panel has NO characters.\n- Max 2 bubbles per panel, max ~12 words per bubble. Text in cs, fits the speech style of the character.\n- visual_prompt uses ONLY real Danbooru tags (e.g. \"standing, holding letter, looking at viewer, surprised, open mouth, glowing, from side, wind, hair blowing\").\n- 2-3 closed choices + exactly 1 free choice.\n",
+ "ep1_raw": {
+  "title": "Dopis bez adresy",
+  "panels": [
+   {
+    "shot": "establishing",
+    "location_id": "l_post",
+    "characters": [],
+    "visual_prompt": "wooden tower interior, many letter slots, circular windows, view of clouds outside, warm sunlight, dust particles, high angle",
+    "bubbles": [
+     {
+      "speaker_id": null,
+      "text": "Poštovní věž. Ticho jen v šustění papíru.",
+      "kind": "narration"
+     }
+    ],
+    "sfx": [],
+    "gap_after": "small"
+   },
+   {
+    "shot": "medium",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "bored",
+      "action": "sorting letters, sighing"
+     }
+    ],
+    "visual_prompt": "girl, short hair, postal uniform, holding stack of envelopes, looking away, bored expression, indoor lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Opět jen účty za uhlí... Kdo sem vlastně píše?",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "škrt",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "small"
+   },
+   {
+    "shot": "close-up",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "surprised",
+      "action": "looking at object, wide eyes"
+     }
+    ],
+    "visual_prompt": "hand holding glowing blue envelope, no address written, soft blue glow illuminating fingers, dark background",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Co...? To není normální pošta.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "blblbl",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "medium"
+   },
+   {
+    "shot": "medium",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "determined",
+      "action": "holding letter up, frowning"
+     }
+    ],
+    "visual_prompt": "girl, determined face, holding glowing blue letter up, wind blowing hair, serious expression, indoor lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Žádná adresa. Jen to světlo. Táhně mě.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [],
+    "gap_after": "small"
+   },
+   {
+    "shot": "wide",
+    "location_id": "l_bridge",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "alert",
+      "action": "walking forward, looking ahead"
+     }
+    ],
+    "visual_prompt": "long rope bridge between islands, sea of clouds below, small figure walking, blue glow from hand, windy, dynamic angle",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Drž se pevně. Neumím létat.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "škrrt škrrt",
+      "style": "shaky"
+     }
+    ],
+    "gap_after": "medium"
+   },
+   {
+    "shot": "over-shoulder",
+    "location_id": "l_cliff",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "shocked",
+      "action": "looking down, hand covering mouth"
+     }
+    ],
+    "visual_prompt": "view from behind girl, looking at dark storm clouds below, lightning flashes, cliff edge, glowing blue letter in hand, dramatic lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "To... to nesmí svítit takhle.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "BZZZT",
+      "style": "bold"
+     }
+    ],
+    "gap_after": "large"
+   }
+  ],
+  "choices": [
+   {
+    "kind": "closed",
+    "text": "Otevřít dopis a přečíst ho."
+   },
+   {
+    "kind": "closed",
+    "text": "Přilpnout dopis k sobě a utéct zpět."
+   },
+   {
+    "kind": "closed",
+    "text": "Podívat se pod okraj útesu."
+   },
+   {
+    "kind": "free",
+    "text": "Nebo napiš, co uděláš…"
+   }
+  ],
+  "state_diff": {
+   "current_location": "l_cliff",
+   "open_threads_add": [
+    "glowing_letter_mystery"
+   ],
+   "open_threads_remove": [],
+   "facts_add": [
+    "Vesna našla modře svítící dopis bez adresy.",
+    "Dopis reaguje na bouřkový útes."
+   ],
+   "timeline_add": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.",
+   "mood": "tension"
+  },
+  "canon_nodes_reached": [
+   "c1"
+  ]
+ },
+ "ep1_validate_errors": [],
+ "ep1_validated": {
+  "title": "Dopis bez adresy",
+  "panels": [
+   {
+    "shot": "establishing",
+    "location_id": "l_post",
+    "characters": [],
+    "visual_prompt": "wooden tower interior, many letter slots, circular windows, view of clouds outside, warm sunlight, dust particles, high angle",
+    "bubbles": [
+     {
+      "speaker_id": null,
+      "text": "Poštovní věž. Ticho jen v šustění papíru.",
+      "kind": "narration"
+     }
+    ],
+    "sfx": [],
+    "gap_after": "small",
+    "visual_tags": [
+     "wooden floor",
+     "train interior",
+     "letter",
+     "too many",
+     "window",
+     "window blinds",
+     "cloud",
+     "outside border",
+     "sunlight",
+     "dappled sunlight",
+     "light particles",
+     "dust",
+     "high heels",
+     "dutch angle"
+    ],
+    "unmapped_phrases": [
+     "wooden tower interior",
+     "many letter slots",
+     "circular windows",
+     "view of clouds outside",
+     "warm sunlight",
+     "dust particles",
+     "high angle"
+    ]
+   },
+   {
+    "shot": "medium",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "bored",
+      "action": "sorting letters, sighing"
+     }
+    ],
+    "visual_prompt": "girl, short hair, postal uniform, holding stack of envelopes, looking away, bored expression, indoor lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Opět jen účty za uhlí... Kdo sem vlastně píše?",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "škrt",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "small",
+    "visual_tags": [
+     "short hair",
+     "bored",
+     "school uniform",
+     "uniform",
+     "holding",
+     "holding weapon",
+     "looking at viewer",
+     "looking back",
+     "expression chart",
+     "letter",
+     "love letter"
+    ],
+    "unmapped_phrases": [
+     "girl",
+     "postal uniform",
+     "holding stack of envelopes",
+     "looking away",
+     "bored expression",
+     "indoor lighting",
+     "sorting letters",
+     "sighing"
+    ]
+   },
+   {
+    "shot": "close-up",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "surprised",
+      "action": "looking at object, wide eyes"
+     }
+    ],
+    "visual_prompt": "hand holding glowing blue envelope, no address written, soft blue glow illuminating fingers, dark background",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Co...? To není normální pošta.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "blblbl",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "medium",
+    "visual_tags": [
+     "dark background",
+     "surprised",
+     "looking at object",
+     "blue eyes",
+     "holding",
+     "web address",
+     "blue hair",
+     "red eyes"
+    ],
+    "unmapped_phrases": [
+     "hand holding glowing blue envelope",
+     "no address written",
+     "soft blue glow illuminating fingers",
+     "wide eyes"
+    ]
+   },
+   {
+    "shot": "medium",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "determined",
+      "action": "holding letter up, frowning"
+     }
+    ],
+    "visual_prompt": "girl, determined face, holding glowing blue letter up, wind blowing hair, serious expression, indoor lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Žádná adresa. Jen to světlo. Táhně mě.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [],
+    "gap_after": "small",
+    "visual_tags": [
+     "determined",
+     "shaded face",
+     "scar on face",
+     "blue eyes",
+     "holding",
+     "long hair",
+     "short hair",
+     "serious",
+     "expression chart",
+     "holding weapon"
+    ],
+    "unmapped_phrases": [
+     "girl",
+     "determined face",
+     "holding glowing blue letter up",
+     "wind blowing hair",
+     "serious expression",
+     "indoor lighting",
+     "holding letter up",
+     "frowning"
+    ]
+   },
+   {
+    "shot": "wide",
+    "location_id": "l_bridge",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "alert",
+      "action": "walking forward, looking ahead"
+     }
+    ],
+    "visual_prompt": "long rope bridge between islands, sea of clouds below, small figure walking, blue glow from hand, windy, dynamic angle",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Drž se pevně. Neumím létat.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "škrrt škrrt",
+      "style": "shaky"
+     }
+    ],
+    "gap_after": "medium",
+    "visual_tags": [
+     "looking ahead",
+     "long hair",
+     "long sleeves",
+     "cloud",
+     "from below",
+     "small breasts",
+     "walking",
+     "blue eyes",
+     "blue hair",
+     "dutch angle",
+     "leaning forward"
+    ],
+    "unmapped_phrases": [
+     "long rope bridge between islands",
+     "sea of clouds below",
+     "small figure walking",
+     "blue glow from hand",
+     "windy",
+     "dynamic angle",
+     "alert",
+     "walking forward"
+    ]
+   },
+   {
+    "shot": "over-shoulder",
+    "location_id": "l_cliff",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "shocked",
+      "action": "looking down, hand covering mouth"
+     }
+    ],
+    "visual_prompt": "view from behind girl, looking at dark storm clouds below, lightning flashes, cliff edge, glowing blue letter in hand, dramatic lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "To... to nesmí svítit takhle.",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "BZZZT",
+      "style": "bold"
+     }
+    ],
+    "gap_after": "large",
+    "visual_tags": [
+     "looking down",
+     "from behind",
+     "arms behind back",
+     "looking at viewer",
+     "looking back",
+     "lightning",
+     "lightning bolt symbol",
+     "cliff",
+     "blue eyes",
+     "blue hair",
+     "open mouth",
+     "closed mouth"
+    ],
+    "unmapped_phrases": [
+     "view from behind girl",
+     "looking at dark storm clouds below",
+     "lightning flashes",
+     "cliff edge",
+     "glowing blue letter in hand",
+     "dramatic lighting",
+     "shocked",
+     "hand covering mouth"
+    ]
+   }
+  ],
+  "choices": [
+   {
+    "kind": "closed",
+    "text": "Otevřít dopis a přečíst ho."
+   },
+   {
+    "kind": "closed",
+    "text": "Přilpnout dopis k sobě a utéct zpět."
+   },
+   {
+    "kind": "closed",
+    "text": "Podívat se pod okraj útesu."
+   },
+   {
+    "kind": "free",
+    "text": "Nebo napiš, co uděláš…"
+   }
+  ],
+  "state_diff": {
+   "current_location": "l_cliff",
+   "open_threads_add": [
+    "glowing_letter_mystery"
+   ],
+   "open_threads_remove": [],
+   "facts_add": [
+    "Vesna našla modře svítící dopis bez adresy.",
+    "Dopis reaguje na bouřkový útes."
+   ],
+   "timeline_add": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.",
+   "mood": "tension"
+  },
+  "canon_nodes_reached": [
+   "c1"
+  ]
+ },
+ "ep1_translate_phrases": [
+  "wooden tower interior",
+  "many letter slots",
+  "circular windows",
+  "view of clouds outside",
+  "warm sunlight",
+  "dust particles",
+  "high angle",
+  "girl",
+  "postal uniform",
+  "holding stack of envelopes",
+  "looking away",
+  "bored expression",
+  "indoor lighting",
+  "sorting letters",
+  "sighing",
+  "hand holding glowing blue envelope",
+  "no address written",
+  "soft blue glow illuminating fingers",
+  "wide eyes",
+  "determined face",
+  "holding glowing blue letter up",
+  "wind blowing hair",
+  "serious expression",
+  "holding letter up",
+  "frowning",
+  "long rope bridge between islands",
+  "sea of clouds below",
+  "small figure walking",
+  "blue glow from hand",
+  "windy",
+  "dynamic angle",
+  "alert",
+  "walking forward",
+  "view from behind girl",
+  "looking at dark storm clouds below",
+  "lightning flashes",
+  "cliff edge",
+  "glowing blue letter in hand",
+  "dramatic lighting",
+  "shocked",
+  "hand covering mouth"
+ ],
+ "ep1_translate_prompt": "Map each free-text phrase to EXISTING Danbooru tags for an SDXL anime model.\nFor each phrase you get candidate tags from the tag dictionary; prefer them, but you may use other very common Danbooru tags.\nDrop phrases that are not visual or are already covered (e.g. \"teen girl\" — counts are added automatically, \"vertical composition\").\nPhrases with candidates:\n- 'wooden tower interior': ['wooden floor', 'train interior', 'tower', 'car interior', 'wooden bucket', 'wooden wall', 'wooden table', 'wooden sword']\n- 'many letter slots': ['letter', 'too many', 'love letter', 'holding letter']\n- 'circular windows': ['window', 'window blinds', 'window shade', 'open window', 'round window', 'broken window', 'window (computing)']\n- 'view of clouds outside': ['cloud', 'outside border', 'cloud print', 'dust cloud', 'cumulonimbus cloud', 'looking outside', 'from outside', 'above clouds']\n- 'warm sunlight': ['sunlight', 'dappled sunlight']\n- 'dust particles': ['light particles', 'dust', 'dust cloud']\n- 'high angle': ['high heels', 'dutch angle', 'high ponytail', 'high heel boots', 'high collar', 'kita high school uniform', 'sakuragaoka high school uniform', 'high side ponytail']\n- 'girl': []\n- 'postal uniform': ['school uniform', 'uniform', 'military uniform', 'gym uniform', 'winter uniform', 'tracen school uniform', 'summer uniform', 'naval uniform']\n- 'holding stack of envelopes': ['holding', 'holding weapon', 'holding hands', 'holding sword', 'holding food', 'holding gun', 'holding cup', 'holding phone']\n- 'looking away': ['looking at viewer', 'looking back', 'looking at another', 'looking to the side', 'looking down', 'looking up', 'facing away', 'looking ahead']\n- 'bored expression': ['bored', 'expression chart', 'spoken expression']\n- 'indoor lighting': []\n- 'sorting letters': ['letter', 'love letter', 'holding letter']\n- 'sighing': []\n- 'hand holding glowing blue envelope': ['blue eyes', 'holding', 'blue hair', 'hand up', 'holding weapon', 'blue sky', 'blue skirt', 'hand on own hip']\n- 'no address written': ['web address']\n- 'soft blue glow illuminating fingers': ['blue eyes', 'blue hair', 'blue sky', 'blue skirt', 'blue dress', 'blue bow', 'blue background', 'blue shirt']\n- 'wide eyes': ['blue eyes', 'red eyes', 'hair between eyes', 'brown eyes', 'green eyes', 'purple eyes', 'closed eyes', 'yellow eyes']\n- 'determined face': ['shaded face', 'scar on face', 'hand on own face', 'naughty face', 'blood on face', 'bandaid on face', 'food on face', 'hands on own face']\n- 'holding glowing blue letter up': ['blue eyes', 'holding', 'blue hair', 'holding weapon', 'blue sky', 'blue skirt', 'blue dress', 'blue bow']\n- 'wind blowing hair': ['long hair', 'short hair', 'blonde hair', 'brown hair', 'black hair', 'hair ornament', 'hair between eyes', 'very long hair']\n- 'serious expression': ['serious', 'expression chart', 'spoken expression']\n- 'holding letter up': ['holding', 'holding weapon', 'holding hands', 'holding sword', 'holding food', 'holding gun', 'holding cup', 'holding phone']\n- 'frowning': []\n- 'long rope bridge between islands': ['long hair', 'long sleeves', 'hair between eyes', 'very long hair', 'rope', 'between breasts', 'puffy long sleeves', 'short hair with long locks']\n- 'sea of clouds below': ['cloud', 'from below', 'cloud print', 'dust cloud', 'cumulonimbus cloud', 'above clouds', 'dark clouds']\n- 'small figure walking': ['small breasts', 'walking', 'small horns', 'figure', 'small penis', 'walking on liquid', 'small nipples']\n- 'blue glow from hand': ['blue eyes', 'blue hair', 'hand up', 'blue sky', 'blue skirt', 'hand on own hip', 'blue dress', 'blue bow']\n- 'windy': []\n- 'dynamic angle': ['dutch angle']\n- 'alert': []\n- 'walking forward': ['leaning forward', 'walking', 'walking on liquid', 'pointing forward']\n- 'view from behind girl': ['from behind', 'arms behind back', 'sex from behind', 'arms behind head', 'arm behind back', 'arm behind head', 'hug from behind', 'grabbing from behind']\n- 'looking at dark storm clouds below': ['looking at viewer', 'looking back', 'cloud', 'dark skin', 'looking at another', 'looking to the side', 'looking down', 'from below']\n- 'lightning flashes': ['lightning', 'lightning bolt symbol', 'lightning bolt print', 'lightning bolt hair ornament']\n- 'cliff edge': ['cliff']\n- 'glowing blue letter in hand': ['blue eyes', 'blue hair', 'hand up', 'blue sky', 'blue skirt', 'hand on own hip', 'blue dress', 'blue bow']\n- 'dramatic lighting': []\n- 'shocked': []\n- 'hand covering mouth': ['open mouth', 'closed mouth', 'hand up', 'hand on own hip', 'mouth hold', 'wavy mouth', 'hand on own chest', 'clenched hand']\nOutput JSON: {\"map\": {\"<phrase>\": [\"<tag>\", ...]}}",
+ "candidates": {
+  "wooden tower interior": [
+   "wooden floor",
+   "train interior",
+   "tower",
+   "car interior",
+   "wooden bucket",
+   "wooden wall",
+   "wooden table",
+   "wooden sword"
+  ],
+  "many letter slots": [
+   "letter",
+   "too many",
+   "love letter",
+   "holding letter"
+  ],
+  "circular windows": [
+   "window",
+   "window blinds",
+   "window shade",
+   "open window",
+   "round window",
+   "broken window",
+   "window (computing)"
+  ],
+  "view of clouds outside": [
+   "cloud",
+   "outside border",
+   "cloud print",
+   "dust cloud",
+   "cumulonimbus cloud",
+   "looking outside",
+   "from outside",
+   "above clouds"
+  ],
+  "warm sunlight": [
+   "sunlight",
+   "dappled sunlight"
+  ],
+  "dust particles": [
+   "light particles",
+   "dust",
+   "dust cloud"
+  ],
+  "high angle": [
+   "high heels",
+   "dutch angle",
+   "high ponytail",
+   "high heel boots",
+   "high collar",
+   "kita high school uniform",
+   "sakuragaoka high school uniform",
+   "high side ponytail"
+  ],
+  "girl": [],
+  "postal uniform": [
+   "school uniform",
+   "uniform",
+   "military uniform",
+   "gym uniform",
+   "winter uniform",
+   "tracen school uniform",
+   "summer uniform",
+   "naval uniform"
+  ],
+  "holding stack of envelopes": [
+   "holding",
+   "holding weapon",
+   "holding hands",
+   "holding sword",
+   "holding food",
+   "holding gun",
+   "holding cup",
+   "holding phone"
+  ],
+  "looking away": [
+   "looking at viewer",
+   "looking back",
+   "looking at another",
+   "looking to the side",
+   "looking down",
+   "looking up",
+   "facing away",
+   "looking ahead"
+  ],
+  "bored expression": [
+   "bored",
+   "expression chart",
+   "spoken expression"
+  ],
+  "indoor lighting": [],
+  "sorting letters": [
+   "letter",
+   "love letter",
+   "holding letter"
+  ],
+  "sighing": [],
+  "hand holding glowing blue envelope": [
+   "blue eyes",
+   "holding",
+   "blue hair",
+   "hand up",
+   "holding weapon",
+   "blue sky",
+   "blue skirt",
+   "hand on own hip"
+  ],
+  "no address written": [
+   "web address"
+  ],
+  "soft blue glow illuminating fingers": [
+   "blue eyes",
+   "blue hair",
+   "blue sky",
+   "blue skirt",
+   "blue dress",
+   "blue bow",
+   "blue background",
+   "blue shirt"
+  ],
+  "wide eyes": [
+   "blue eyes",
+   "red eyes",
+   "hair between eyes",
+   "brown eyes",
+   "green eyes",
+   "purple eyes",
+   "closed eyes",
+   "yellow eyes"
+  ],
+  "determined face": [
+   "shaded face",
+   "scar on face",
+   "hand on own face",
+   "naughty face",
+   "blood on face",
+   "bandaid on face",
+   "food on face",
+   "hands on own face"
+  ],
+  "holding glowing blue letter up": [
+   "blue eyes",
+   "holding",
+   "blue hair",
+   "holding weapon",
+   "blue sky",
+   "blue skirt",
+   "blue dress",
+   "blue bow"
+  ],
+  "wind blowing hair": [
+   "long hair",
+   "short hair",
+   "blonde hair",
+   "brown hair",
+   "black hair",
+   "hair ornament",
+   "hair between eyes",
+   "very long hair"
+  ],
+  "serious expression": [
+   "serious",
+   "expression chart",
+   "spoken expression"
+  ],
+  "holding letter up": [
+   "holding",
+   "holding weapon",
+   "holding hands",
+   "holding sword",
+   "holding food",
+   "holding gun",
+   "holding cup",
+   "holding phone"
+  ],
+  "frowning": [],
+  "long rope bridge between islands": [
+   "long hair",
+   "long sleeves",
+   "hair between eyes",
+   "very long hair",
+   "rope",
+   "between breasts",
+   "puffy long sleeves",
+   "short hair with long locks"
+  ],
+  "sea of clouds below": [
+   "cloud",
+   "from below",
+   "cloud print",
+   "dust cloud",
+   "cumulonimbus cloud",
+   "above clouds",
+   "dark clouds"
+  ],
+  "small figure walking": [
+   "small breasts",
+   "walking",
+   "small horns",
+   "figure",
+   "small penis",
+   "walking on liquid",
+   "small nipples"
+  ],
+  "blue glow from hand": [
+   "blue eyes",
+   "blue hair",
+   "hand up",
+   "blue sky",
+   "blue skirt",
+   "hand on own hip",
+   "blue dress",
+   "blue bow"
+  ],
+  "windy": [],
+  "dynamic angle": [
+   "dutch angle"
+  ],
+  "alert": [],
+  "walking forward": [
+   "leaning forward",
+   "walking",
+   "walking on liquid",
+   "pointing forward"
+  ],
+  "view from behind girl": [
+   "from behind",
+   "arms behind back",
+   "sex from behind",
+   "arms behind head",
+   "arm behind back",
+   "arm behind head",
+   "hug from behind",
+   "grabbing from behind"
+  ],
+  "looking at dark storm clouds below": [
+   "looking at viewer",
+   "looking back",
+   "cloud",
+   "dark skin",
+   "looking at another",
+   "looking to the side",
+   "looking down",
+   "from below"
+  ],
+  "lightning flashes": [
+   "lightning",
+   "lightning bolt symbol",
+   "lightning bolt print",
+   "lightning bolt hair ornament"
+  ],
+  "cliff edge": [
+   "cliff"
+  ],
+  "glowing blue letter in hand": [
+   "blue eyes",
+   "blue hair",
+   "hand up",
+   "blue sky",
+   "blue skirt",
+   "hand on own hip",
+   "blue dress",
+   "blue bow"
+  ],
+  "dramatic lighting": [],
+  "shocked": [],
+  "hand covering mouth": [
+   "open mouth",
+   "closed mouth",
+   "hand up",
+   "hand on own hip",
+   "mouth hold",
+   "wavy mouth",
+   "hand on own chest",
+   "clenched hand"
+  ]
+ },
+ "bad_raw": {
+  "title": "Dopis bez adresy",
+  "panels": [
+   {
+    "shot": "aerial",
+    "location_id": "l_post",
+    "characters": [],
+    "visual_prompt": "wooden tower interior, many letter slots, circular windows, view of clouds outside, warm sunlight, dust particles, high angle",
+    "bubbles": [
+     {
+      "speaker_id": null,
+      "text": "Poštovní věž. Ticho jen v šustění papíru.",
+      "kind": "narration"
+     }
+    ],
+    "sfx": [],
+    "gap_after": "small"
+   },
+   {
+    "shot": "medium",
+    "location_id": "l_moon",
+    "characters": [
+     {
+      "id": "c_nobody",
+      "emotion": "smile",
+      "action": "standing"
+     }
+    ],
+    "visual_prompt": "girl, short hair, postal uniform, holding stack of envelopes, looking away, bored expression, indoor lighting",
+    "bubbles": [
+     {
+      "speaker_id": "c_vesna",
+      "text": "Opět jen účty za uhlí... Kdo sem vlastně píše?",
+      "kind": "speech"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "škrt",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "small"
+   },
+   {
+    "shot": "close-up",
+    "location_id": "l_post",
+    "characters": [
+     {
+      "id": "c_vesna",
+      "emotion": "surprised",
+      "action": "looking at object, wide eyes"
+     }
+    ],
+    "visual_prompt": "hand holding glowing blue envelope, no address written, soft blue glow illuminating fingers, dark background",
+    "bubbles": [
+     {
+      "speaker_id": "c_ghost",
+      "text": "Ahoj",
+      "kind": "whisper"
+     }
+    ],
+    "sfx": [
+     {
+      "text": "blblbl",
+      "style": "soft"
+     }
+    ],
+    "gap_after": "huge"
+   }
+  ],
+  "choices": [
+   {
+    "kind": "closed",
+    "text": "A"
+   }
+  ],
+  "state_diff": {
+   "current_location": "l_cliff",
+   "open_threads_add": [
+    "glowing_letter_mystery"
+   ],
+   "open_threads_remove": [],
+   "facts_add": [
+    "Vesna našla modře svítící dopis bez adresy.",
+    "Dopis reaguje na bouřkový útes."
+   ],
+   "timeline_add": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.",
+   "mood": "tension"
+  },
+  "canon_nodes_reached": [
+   "c1"
+  ]
+ },
+ "bad_errors": [
+  "panel count 3 not in 6-8",
+  "panel 0: bad shot 'aerial'",
+  "panel 1: location 'l_moon' not allowed",
+  "panel 1: unknown character 'c_nobody'",
+  "panel 2: bubble speaker 'c_ghost' unknown",
+  "choices: 1 closed / 0 free"
+ ],
+ "bad_validated_panel2": {
+  "shot": "close-up",
+  "location_id": "l_post",
+  "characters": [
+   {
+    "id": "c_vesna",
+    "emotion": "surprised",
+    "action": "looking at object, wide eyes"
+   }
+  ],
+  "visual_prompt": "hand holding glowing blue envelope, no address written, soft blue glow illuminating fingers, dark background",
+  "bubbles": [
+   {
+    "speaker_id": "c_ghost",
+    "text": "Ahoj",
+    "kind": "speech"
+   }
+  ],
+  "sfx": [
+   {
+    "text": "blblbl",
+    "style": "soft"
+   }
+  ],
+  "gap_after": "medium",
+  "visual_tags": [
+   "dark background",
+   "surprised",
+   "looking at object",
+   "blue eyes",
+   "holding",
+   "web address",
+   "blue hair",
+   "red eyes"
+  ],
+  "unmapped_phrases": [
+   "hand holding glowing blue envelope",
+   "no address written",
+   "soft blue glow illuminating fingers",
+   "wide eyes"
+  ]
+ },
+ "rule_violations": [
+  "panel 3: Kurýři nikdy neotevírají cizí dopisy. — opens it"
+ ],
+ "rule_check_prompt": "You check a webtoon episode against the world rules and constraints.\nRULES: ['Ostrovy drží ve vzduchu modré krystaly; když krystal zhasne, ostrov klesá.', 'Kurýři nikdy neotevírají cizí dopisy.', 'Pod mraky nikdo nebyl a nevrátil se.']\nCONSTRAINTS: ['Žádná postava nezemře v prvních třech dílech.', 'Bez krve a explicitního násilí.']\nAUDIENCE: teen\nEpisode JSON:\n{\"title\": \"Dopis bez adresy\", \"panels\": [{\"visual_prompt\": \"wooden tower interior, many letter slots, circular windows, view of clouds outside, warm sunlight, dust particles, high angle\", \"bubbles\": [{\"speaker_id\": null, \"text\": \"Poštovní věž. Ticho jen v šustění papíru.\", \"kind\": \"narration\"}]}, {\"visual_prompt\": \"girl, short hair, postal uniform, holding stack of envelopes, looking away, bored expression, indoor lighting\", \"bubbles\": [{\"speaker_id\": \"c_vesna\", \"text\": \"Opět jen účty za uhlí... Kdo sem vlastně píše?\", \"kind\": \"speech\"}]}, {\"visual_prompt\": \"hand holding glowing blue envelope, no address written, soft blue glow illuminating fingers, dark background\", \"bubbles\": [{\"speaker_id\": \"c_vesna\", \"text\": \"Co...? To není normální pošta.\", \"kind\": \"speech\"}]}, {\"visual_prompt\": \"girl, determined face, holding glowing blue letter up, wind blowing hair, serious expression, indoor lighting\", \"bubbles\": [{\"speaker_id\": \"c_vesna\", \"text\": \"Žádná adresa. Jen to světlo. Táhně mě.\", \"kind\": \"speech\"}]}, {\"visual_prompt\": \"long rope bridge between islands, sea of clouds below, small figure walking, blue glow from hand, windy, dynamic angle\", \"bubbles\": [{\"speaker_id\": \"c_vesna\", \"text\": \"Drž se pevně. Neumím létat.\", \"kind\": \"speech\"}]}, {\"visual_prompt\": \"view from behind girl, looking at dark storm clouds below, lightning flashes, cliff edge, glowing blue letter in hand, dramatic lighting\", \"bubbles\": [{\"speaker_id\": \"c_vesna\", \"text\": \"To... to nesmí svítit takhle.\", \"kind\": \"speech\"}]}], \"choices\": [{\"kind\": \"closed\", \"text\": \"Otevřít dopis a přečíst ho.\"}, {\"kind\": \"closed\", \"text\": \"Přilpnout dopis k sobě a utéct zpět.\"}, {\"kind\": \"closed\", \"text\": \"Podívat se pod okraj útesu.\"}, {\"kind\": \"free\", \"text\": \"Nebo napiš, co uděláš…\"}], \"state_diff\": {\"current_location\": \"l_cliff\", \"open_threads_add\": [\"glowing_letter_mystery\"], \"open_threads_remove\": [], \"facts_add\": [\"Vesna našla modře svítící dopis bez adresy.\", \"Dopis reaguje na bouřkový útes.\"], \"timeline_add\": \"Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.\", \"mood\": \"tension\"}}\nReport ONLY violations that actually HAPPEN on-panel (a character explicitly does the forbidden thing, or content unfit for the audience).\nAlso check the offered choices: a choice suggesting self-harm or suicide, or content unfit for the audience, IS a violation (panel = \"choices\").\nIntentions, hints, mysteries, moving toward a place or mere mentions are NOT violations. Doing something adjacent is NOT a violation (delivering a letter is not opening it).\nOutput JSON: {\"violations\": [{\"rule\": \"<quoted rule>\", \"panel\": <index>, \"evidence\": \"<what exactly happens>\", \"certain\": true|false}]}\nEmpty list if none. When in doubt, do not report.",
+ "user_prompt": "STORY STATE: {\"characters\": {\"c_vesna\": {\"alive\": true, \"location\": \"l_cliff\", \"status\": \"\", \"relations\": {}, \"inventory\": []}}, \"current_location\": \"l_cliff\", \"open_threads\": [\"glowing_letter_mystery\"], \"timeline\": [{\"episode\": 1, \"event\": \"Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.\"}], \"facts\": [\"Vesna našla modře svítící dopis bez adresy.\", \"Dopis reaguje na bouřkový útes.\"], \"mood\": \"tension\"}\n\nEPISODE PREMISE / PLAYER CHOICE:\nhello",
+ "prompts": [
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, no humans, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, scenery, establishing shot, wide shot, tower, wooden wall, wooden floor, letter, round window, window, cloud, looking outside, sunlight, dappled sunlight, dust, indoors, post office, wooden interior, shelves, many letters, warm lighting, sky visible through window, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 1216,
+   "height": 832
+  },
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, upper body, cowboy shot, bored, holding, letter, indoors, post office, wooden interior, shelves, many letters, round window, warm lighting, sky visible through window, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 832,
+   "height": 1216
+  },
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, close-up, portrait, face focus, dark background, surprised, looking at object, holding, glowing, indoors, post office, wooden interior, shelves, many letters, round window, warm lighting, sky visible through window, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, letters, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 832,
+   "height": 1216
+  },
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, upper body, cowboy shot, determined, holding, glowing, wind, serious, letter, frown, indoors, post office, wooden interior, shelves, many letters, round window, warm lighting, sky visible through window, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 832,
+   "height": 1216
+  },
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, full body, wide shot, scenery, looking ahead, bridge, rope, cloud, above clouds, walking, glowing, wind, outdoors, rope bridge, floating island, sea of clouds, blue sky, high place, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, letters, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 1216,
+   "height": 832
+  },
+  {
+   "positive": "masterpiece, best quality, newest, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, (artist:ningen mame:0.8), (artist:ciloranko:0.6), flat color, clean lineart, from behind, over-the-shoulder shot, looking down, cloud, lightning, cliff, holding, glowing, outdoors, cliff edge, floating island, dark clouds, storm, dramatic sky, wind, general",
+   "negative": "worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, jpeg artifacts, blurry, lowres, old, early, text, letters, speech bubble, watermark, signature, logo, username, comic, multiple views, panel, nsfw, nude, nipples, cleavage, underwear, panties, lingerie, sexually suggestive, explicit, questionable, sensitive, blood, gore",
+   "width": 832,
+   "height": 1216
+  }
+ ],
+ "prompts_nosfw": [
+  {
+   "positive": "masterpiece, best quality, absurdres, highres, no humans, soft shading, pastel colors, scenery, establishing shot, wide shot, tower, wooden wall, wooden floor, letter, round window, window, cloud, looking outside, sunlight, dappled sunlight, dust, indoors, post office, wooden interior, shelves, many letters, warm lighting, sky visible through window",
+   "negative": "worst quality, low quality, bad anatomy, bad hands, extra fingers, jpeg artifacts, blurry, lowres, text, speech bubble, watermark, signature, logo, username, comic, multiple views, panel",
+   "width": 1216,
+   "height": 832
+  },
+  {
+   "positive": "masterpiece, best quality, absurdres, highres, 1girl, solo, short hair, messy hair, orange hair, hair behind ear, green eyes, freckles, white shirt, brown shorts, black pantyhose, cross-laced footwear, shoulder bag, goggles on head, jewelry, blue jacket, brown footwear, boots, bracelet, soft shading, pastel colors, upper body, cowboy shot, bored, holding, letter, indoors, post office, wooden interior, shelves, many letters, round window, warm lighting, sky visible through window",
+   "negative": "worst quality, low quality, bad anatomy, bad hands, extra fingers, jpeg artifacts, blurry, lowres, text, speech bubble, watermark, signature, logo, username, comic, multiple views, panel",
+   "width": 832,
+   "height": 1216
+  }
+ ],
+ "filter_sample": [
+  "red hair",
+  "(red hair:1.2)",
+  "artist:foo",
+  "copper hair",
+  "1girl",
+  "establishing shot",
+  "(nonsense tag)",
+  "smile"
+ ],
+ "filter_result": [
+  [
+   "red hair",
+   "(red hair:1.2)",
+   "artist:foo",
+   "1girl",
+   "establishing shot",
+   "smile"
+  ],
+  [
+   "copper hair",
+   "(nonsense tag)"
+  ]
+ ],
+ "split_sample": [
+  "red hair",
+  "green eyes",
+  "smile"
+ ],
+ "empty_state": {
+  "characters": {
+   "c_vesna": {
+    "alive": true,
+    "location": "l_post",
+    "status": "",
+    "relations": {},
+    "inventory": []
+   }
+  },
+  "current_location": "l_post",
+  "open_threads": [],
+  "timeline": [],
+  "facts": [],
+  "mood": ""
+ },
+ "ep1_state_diff": {
+  "current_location": "l_cliff",
+  "open_threads_add": [
+   "glowing_letter_mystery"
+  ],
+  "open_threads_remove": [],
+  "facts_add": [
+   "Vesna našla modře svítící dopis bez adresy.",
+   "Dopis reaguje na bouřkový útes."
+  ],
+  "timeline_add": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem.",
+  "mood": "tension"
+ },
+ "state_after_ep1": {
+  "characters": {
+   "c_vesna": {
+    "alive": true,
+    "location": "l_cliff",
+    "status": "",
+    "relations": {},
+    "inventory": []
+   }
+  },
+  "current_location": "l_cliff",
+  "open_threads": [
+   "glowing_letter_mystery"
+  ],
+  "timeline": [
+   {
+    "episode": 1,
+    "event": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem."
+   }
+  ],
+  "facts": [
+   "Vesna našla modře svítící dopis bez adresy.",
+   "Dopis reaguje na bouřkový útes."
+  ],
+  "mood": "tension"
+ },
+ "diff2": {
+  "current_location": "",
+  "open_threads_add": [
+   "a",
+   "b"
+  ],
+  "open_threads_remove": [
+   "glowing_letter_mystery"
+  ],
+  "facts_add": [
+   "f1",
+   "f1"
+  ],
+  "timeline_add": "",
+  "mood": "klid"
+ },
+ "state_after_2": {
+  "characters": {
+   "c_vesna": {
+    "alive": true,
+    "location": "l_cliff",
+    "status": "",
+    "relations": {},
+    "inventory": []
+   }
+  },
+  "current_location": "l_cliff",
+  "open_threads": [
+   "a",
+   "b"
+  ],
+  "timeline": [
+   {
+    "episode": 1,
+    "event": "Vesna opustila poštovní věž a dorazila k bouřkovému útesu s tajuplným dopisem."
+   }
+  ],
+  "facts": [
+   "Vesna našla modře svítící dopis bez adresy.",
+   "Dopis reaguje na bouřkový útes.",
+   "f1",
+   "f1"
+  ],
+  "mood": "klid"
+ },
+ "premise": "Previous episode: \"Dopis bez adresy\". It ended with: ['To... to nesmí svítit takhle.'] at l_cliff.\nThe player chose: \"Jdu za Strážci\". Continue directly from that moment."
+}

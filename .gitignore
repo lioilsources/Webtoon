@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+out/
+.env
+.env.*
+# Flutter
+app/build/
+app/.dart_tool/
+app/.flutter-plugins*
+app/.idea/
+*.iml

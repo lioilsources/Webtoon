@@ -1,0 +1,49 @@
+# Local dev: Postgres 16 + the webtoon service (API + worker pool in one process).
+#   docker compose up -d db            # just the database (host port 5434)
+#   docker compose up --build          # database + service on :8095
+# The service talks to the Spark LLM/ComfyUI/WD14 over the LAN; it never starts ComfyUI.
+name: webtoon
+
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: webtoon
+      POSTGRES_PASSWORD: webtoon
+      POSTGRES_DB: webtoon
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U webtoon -d webtoon"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+  webtoon:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://webtoon:webtoon@db:5432/webtoon?sslmode=disable
+      MEDIA_DIR: /media
+      MEDIA_BASE_URL: /media
+      MODE: all
+      WORKERS: "2"
+      LISTEN_ADDR: ":8095"
+      WEBTOON_SEED: "true"
+      WEBTOON_SEED_OWNER: author
+      WEBTOON_LLM: ${WEBTOON_LLM:-http://192.168.88.66:8080/v1}
+      WEBTOON_LLM_MODEL: ${WEBTOON_LLM_MODEL:-openclaw-default}
+      WEBTOON_COMFY: ${WEBTOON_COMFY:-http://192.168.88.66:8188}
+      WEBTOON_WD14: ${WEBTOON_WD14:-http://192.168.88.66:8097}
+    ports:
+      - "8095:8095"
+    volumes:
+      - media:/media
+
+volumes:
+  pgdata:
+  media:
