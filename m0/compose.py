@@ -48,7 +48,7 @@ def wrap(draw, text, fnt, max_w):
     return lines
 
 
-def draw_bubble(img, bubble, slot, n_slots):
+def draw_bubble(img, bubble, slot, n_slots, placed=None):
     d = ImageDraw.Draw(img)
     W, H = img.size
     kind = bubble.get("kind", "speech")
@@ -65,7 +65,13 @@ def draw_bubble(img, bubble, slot, n_slots):
         right = slot % 2 == 1
         x = W - bw - margin if right else margin
         y = margin + (slot // 2) * (bh + 30) + (40 if right else 0)
+    # Wide panels are short: push the bubble below any already placed one it would overlap.
+    for px0, py0, px1, py1 in sorted(placed or [], key=lambda b: b[1]):
+        if x < px1 and px0 < x + bw and y < py1 + 12 and py0 < y + bh:
+            y = py1 + (60 if kind != "narration" else 12)
     box = (x, y, x + bw, y + bh)
+    if placed is not None:
+        placed.append(box)
 
     if kind == "narration":
         d.rectangle(box, fill=(255, 248, 225), outline=INK, width=3)
@@ -138,10 +144,11 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
         bubbles = p.get("bubbles", [])
         narr = [b for b in bubbles if b.get("kind") == "narration"]
         talk = [b for b in bubbles if b.get("kind") != "narration"]
+        placed = []
         for k, b in enumerate(narr):
-            draw_bubble(img, b, k, len(narr))
+            draw_bubble(img, b, k, len(narr), placed)
         for k, b in enumerate(talk):
-            draw_bubble(img, b, k + (1 if narr else 0), len(talk))
+            draw_bubble(img, b, k + (1 if narr else 0), len(talk), placed)
         for k, s in enumerate(p.get("sfx", [])):
             draw_sfx(img, s, k)
         parts.append((img, GAPS.get(p.get("gap_after"), 140)))

@@ -93,7 +93,7 @@ def render_story(path, backend, preset, styles, seed_base, placeholder):
             f = outdir / f"p{i:02d}_s0.png"
             if f.exists():
                 continue
-            seed = seed_base + i * 100
+            seed = panel.get("seed", seed_base + i * 100)
             use = panel.get("backend", "comfy") if backend == "auto" else backend
             t0 = time.time()
             png, prompt = (flux_render(panel, world, seed) if use == "flux"
