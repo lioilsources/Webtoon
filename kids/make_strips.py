@@ -41,11 +41,49 @@ KIDS_POS = ["cute", "wholesome", "pastel colors"]
 KIDS_NEG = ["horror", "scary", "creepy face", "realistic"]
 
 
+NATURAL_NEG = ("text, speech bubble, watermark, signature, logo, comic panel, multiple views, nsfw, nude, "
+               "underwear, cleavage, suggestive, blood, gore, horror, scary, creepy face, deformed, extra limbs, "
+               "bad anatomy, bad hands")
+SHOT_EN = {"establishing": "wide establishing shot, no people", "wide": "wide shot, full body",
+           "medium": "medium shot", "close-up": "close-up"}
+
+
+def natural_prompt(panel, world, pre):
+    """Sentence prompt for models that read prose (Juggernaut, FLUX): style, shot, scene, who is in it."""
+    chars = {c["id"]: c for c in world["characters"]}
+    who = " ".join(chars[c["id"]]["desc_en"] + "." for c in panel.get("characters", []) if c["id"] in chars)
+    loc = next((l.get("desc_en", "") for l in world["locations"] if l["id"] == panel.get("location_id")), "")
+    trig = ", ".join(l["trigger"] for l in pre.get("loras", []) if l.get("trigger"))
+    if pre.get("who_first"):
+        # SDXL reads ~77 CLIP tokens; descriptions after the scene got merged into whoever the scene names
+        # first (the pug wore the girl's apron). Who first, scene second, setting last.
+        parts = [trig, pre["style_text"], SHOT_EN.get(panel.get("shot"), ""), who, panel["scene_en"] + ".", loc]
+    else:
+        parts = [trig, pre["style_text"], SHOT_EN.get(panel.get("shot"), ""), panel["scene_en"] + ".", who, loc,
+                 panel.get("extra_en", "")]
+    return " ".join(x.strip() for x in parts if x and x.strip())
+
+
 def comfy_render(panel, world, styles, preset, seed):
+    pre = styles["presets"][preset]
+    w, h = styles["shot_size"].get(panel.get("shot"), [832, 1216])
+    prefix = f"webtoon/kids/{world['id']}"
+    loras = pre.get("loras", [])
+    if pre.get("graph") == "flux":
+        pos = natural_prompt(panel, world, pre)
+        return comfy.run(comfy.flux_workflow(pos, w, h, seed, pre, prefix, loras))[0], pos
+    if pre.get("dialect") == "natural":
+        pos = natural_prompt(panel, world, pre)
+        neg = ", ".join([pre.get("negative", ""), NATURAL_NEG] + panel.get("negative_extra", []))
+        g = comfy.workflow(pos, neg, w, h, seed, pre, prefix, loras=loras)
+        return comfy.run(g)[0], pos
     p = prompts.build(panel, world, styles, preset)
     pos = p["positive"] + ", " + ", ".join(KIDS_POS)
     neg = p["negative"] + ", " + ", ".join(KIDS_NEG + panel.get("negative_extra", []))
-    g = comfy.workflow(pos, neg, p["width"], p["height"], seed, p["preset"], f"webtoon/kids/{world['id']}")
+    trig = [l["trigger"] for l in loras if l.get("trigger")]
+    if trig:
+        pos = ", ".join(trig) + ", " + pos
+    g = comfy.workflow(pos, neg, p["width"], p["height"], seed, p["preset"], prefix, loras=loras)
     return comfy.run(g)[0], pos
 
 
@@ -132,7 +170,8 @@ def main():
             raise SystemExit("CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET are not set — *.ol1n.com is behind Cloudflare Access")
         if args.backend != "flux":
             for pre in {args.preset or load_json(p)["world"].get("style_id", "clean_webtoon") for p in paths}:
-                check_checkpoint(styles["presets"][pre]["checkpoint"])
+                if "checkpoint" in styles["presets"][pre]:
+                    check_checkpoint(styles["presets"][pre]["checkpoint"])
     for p in paths:
         render_story(p, args.backend, args.preset, styles, args.seed_base, args.placeholder)
 

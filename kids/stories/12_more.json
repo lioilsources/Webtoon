@@ -1,0 +1,241 @@
+{
+  "world": {
+    "id": "k_reef",
+    "title": "Podmořský třpyt",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_pixar",
+    "characters": [
+      {
+        "id": "maja",
+        "name": "Maja",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, short hair, turquoise swimsuit, diving mask, snorkel, swim fins",
+        "desc_en": "Maja, a brave 10-year-old girl with short black hair in a turquoise swimsuit, diving mask, snorkel and swim fins"
+      },
+      {
+        "id": "perlicka",
+        "name": "Perlička",
+        "count_tag": null,
+        "tag_prompt": "sea otter, brown fur, small animal, holding pearl",
+        "desc_en": "Perlicka, a playful little brown sea otter"
+      },
+      {
+        "id": "straz",
+        "name": "Korálový strážce",
+        "count_tag": null,
+        "tag_prompt": "octopus, giant octopus, purple, wise, old",
+        "desc_en": "the Coral Guardian, a large wise grumpy old purple octopus with bushy eyebrows"
+      }
+    ],
+    "locations": [
+      {
+        "id": "reef",
+        "tag_prompt": "underwater, coral reef, light rays, clear water, fish, bubbles",
+        "desc_en": "Clear tropical coral sea, sunbeams shining through the water and drawing light patterns on the sandy bottom."
+      },
+      {
+        "id": "cave",
+        "tag_prompt": "underwater, cave, glowing coral, shipwreck, throne, dark, bioluminescence",
+        "desc_en": "An underwater cave full of glowing corals, a throne made from an old shipwreck in the middle."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Podmořský třpyt",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "reef",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "fish",
+          "sand"
+        ],
+        "scene_en": "a crystal clear coral reef with sunbeams shining through the water, colorful fish, no people",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Průzračné korálové moře."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "reef",
+        "characters": [
+          {
+            "id": "maja"
+          },
+          {
+            "id": "perlicka"
+          }
+        ],
+        "visual_tags": [
+          "swimming",
+          "underwater",
+          "pointing",
+          "otter",
+          "glowing pearl"
+        ],
+        "scene_en": "Maja swims underwater with snorkel and fins, pointing towards a dark cave, while the sea otter does a somersault next to her holding a glowing blue pearl",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "maja",
+            "text": "Perličko, podívej! Tam odtud vychází to divné světlo."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "reef",
+        "characters": [
+          {
+            "id": "perlicka"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "otter",
+          "holding pearl",
+          "glowing",
+          "bubbles",
+          "excited"
+        ],
+        "scene_en": "the little sea otter holds up a glowing blue pearl like a lantern towards the cave, blowing bubbles",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "perlicka",
+            "text": "Píísk! Píísk!",
+            "icon": "pearl",
+            "translation": "Počkej na mě, mám světlo!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "blub blub"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "straz"
+          }
+        ],
+        "visual_tags": [
+          "octopus",
+          "throne",
+          "glowing coral"
+        ],
+        "scene_en": "inside an underwater cave full of glowing corals, a big old octopus sits on a throne made from a shipwreck",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Jeskyně plná svítících korálů."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "straz"
+          }
+        ],
+        "visual_tags": [
+          "octopus",
+          "crossed arms",
+          "stern",
+          "glowing coral"
+        ],
+        "scene_en": "the big wise octopus crosses several tentacles and looks down sternly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "straz",
+            "text": "Kdo se odvažuje vstoupit do Jeskyně vzpomínek?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "maja"
+          },
+          {
+            "id": "perlicka"
+          },
+          {
+            "id": "straz"
+          }
+        ],
+        "visual_tags": [
+          "otter",
+          "giving pearl",
+          "pointing",
+          "smile",
+          "octopus"
+        ],
+        "scene_en": "the sea otter carefully places her glowing pearl in front of the octopus as a gift, Maja points at the otter and smiles",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "maja",
+            "text": "Jsme kamarádky! Hledáme ztracenou hvězdu z oceánské koruny!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "straz"
+          },
+          {
+            "id": "perlicka"
+          }
+        ],
+        "visual_tags": [
+          "octopus",
+          "smile",
+          "raised tentacle",
+          "otter",
+          "glowing"
+        ],
+        "scene_en": "the old octopus smiles and raises one tentacle in welcome, the otter beams",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "straz",
+            "text": "Vydra s tak čistým srdcem tu dlouho nebyla. Vstupte!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

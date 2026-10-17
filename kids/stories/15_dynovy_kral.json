@@ -1,0 +1,270 @@
+{
+  "world": {
+    "id": "k_pumpkinking",
+    "title": "Halloweenská noc v Čarodějném lese",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "pony_pixar",
+    "characters": [
+      {
+        "id": "sara",
+        "name": "Sára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, long hair, witch hat, witch costume, purple dress, striped thighhighs, holding broom, pumpkin basket",
+        "desc_en": "Sara, a brave 11-year-old girl dressed as a little witch with a pointy hat, purple dress and striped socks, holding a broom and a pumpkin-shaped basket"
+      },
+      {
+        "id": "tinek",
+        "name": "Tínek",
+        "count_tag": null,
+        "tag_prompt": "black cat, kitten, big yellow eyes, scared",
+        "desc_en": "Tinek, a very timid little black kitten with huge yellow eyes"
+      },
+      {
+        "id": "kral",
+        "name": "Dýňový král",
+        "count_tag": null,
+        "tag_prompt": "(pumpkin head:1.4), (jack-o'-lantern head:1.3), tall, giant, cloak, autumn leaves cloak, glowing eyes, no face",
+        "desc_en": "the Pumpkin King, a giant figure with a glowing carved jack-o'-lantern for a head and a cloak of autumn leaves"
+      }
+    ],
+    "locations": [
+      {
+        "id": "forest",
+        "tag_prompt": "outdoors, night, forest, full moon, fog, jack-o'-lantern, halloween, twisted trees",
+        "desc_en": "A Halloween forest at night, full moon, fog creeping over the ground, twisted trees like clawed hands, glowing carved pumpkins everywhere."
+      },
+      {
+        "id": "clearing",
+        "tag_prompt": "outdoors, night, forest clearing, glowing mushrooms, halloween, fog",
+        "desc_en": "A forest clearing surrounded by glowing mushrooms."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Halloweenská noc v Čarodějném lese",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "forest",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "moon",
+          "fog",
+          "pumpkins"
+        ],
+        "scene_en": "a Halloween forest at night with a full moon, fog and glowing carved pumpkins",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Halloweenská noc v Čarodějném lese."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "tinek"
+          }
+        ],
+        "visual_tags": [
+          "walking",
+          "cat in basket",
+          "peeking",
+          "holding broom",
+          "smile"
+        ],
+        "scene_en": "Sara walks cheerfully with her broom and pumpkin basket, the black kitten peeks out of the basket with wide eyes",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Neboj se, Tínku! Dneska je Halloween, všechna strašidla jsou přece jenom převlečení sousedé… nebo ne?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "tinek"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "kitten",
+          "in basket",
+          "trembling",
+          "scared",
+          "wide-eyed"
+        ],
+        "scene_en": "close-up of the little black kitten trembling inside the pumpkin basket, only ears and huge eyes showing",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "tinek",
+            "text": "M… mňáááu?",
+            "icon": "fish",
+            "translation": "A co byl ten hrozný zvuk za námi?!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "clearing",
+        "characters": [
+          {
+            "id": "kral"
+          }
+        ],
+        "visual_tags": [
+          "pumpkin head",
+          "giant",
+          "sack",
+          "candy",
+          "glowing mushrooms"
+        ],
+        "scene_en": "in a clearing ringed with glowing mushrooms stands the giant Pumpkin King holding a huge sack of sweets",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Uprostřed mýtiny stojí Dýňový král."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "clearing",
+        "characters": [
+          {
+            "id": "kral"
+          },
+          {
+            "id": "sara"
+          },
+          {
+            "id": "tinek"
+          }
+        ],
+        "visual_tags": [
+          "towering",
+          "laughing",
+          "cat on head",
+          "covering eyes"
+        ],
+        "scene_en": "the Pumpkin King towers over Sara laughing spookily, the kitten has leapt onto her witch hat and covers her eyes with his paws",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "kral",
+            "text": "Muuuhahaha! Kdo se odvažuje žádat o sladkosti v mé noci?!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "clearing",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "tinek"
+          }
+        ],
+        "visual_tags": [
+          "holding cat",
+          "holding basket",
+          "brave",
+          "smile"
+        ],
+        "scene_en": "Sara lifts the kitten off her hat and bravely holds out her basket",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Koledu, nebo vám něco provedeme! A můj kocour umí strašidelně prskat!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "clearing",
+        "characters": [
+          {
+            "id": "tinek"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "kitten",
+          "hissing",
+          "fur standing on end",
+          "puffed chest",
+          "brave"
+        ],
+        "scene_en": "close-up of the black kitten puffing out his chest and hissing as bravely as he can",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "tinek",
+            "text": "Fíííík! Mňau!",
+            "icon": "fish"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "clearing",
+        "characters": [
+          {
+            "id": "kral"
+          },
+          {
+            "id": "sara"
+          }
+        ],
+        "visual_tags": [
+          "laughing",
+          "giant lollipop",
+          "candy",
+          "throwing",
+          "happy"
+        ],
+        "scene_en": "the Pumpkin King laughs warmly and drops a giant lollipop into Sara's basket",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kral",
+            "text": "To byl ale strašidelný kocour! Tady máte pořádnou odměnu! Šťastný Halloween!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

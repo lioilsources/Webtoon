@@ -1,0 +1,259 @@
+{
+  "world": {
+    "id": "k_orbit",
+    "title": "Záchrana na oběžné dráze",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "atomix_space",
+    "characters": [
+      {
+        "id": "viktorie",
+        "name": "Viktorie",
+        "count_tag": "1girl",
+        "tag_prompt": "child, orange hair, ponytail, freckles, white spacesuit, goggles on head, oil on face",
+        "desc_en": "Viktorie, a brilliant 12-year-old mechanic with an orange ponytail, freckles and a white space suit, welding goggles on her forehead"
+      },
+      {
+        "id": "pixel",
+        "name": "Pixel",
+        "count_tag": null,
+        "tag_prompt": "orange cat, two tails, alien cat, glowing eyes",
+        "desc_en": "Pixel, a ginger alien cat with two tails"
+      },
+      {
+        "id": "daniel",
+        "name": "Kapitán Daniel",
+        "count_tag": "1boy",
+        "tag_prompt": "adult, man, short brown hair, beard, captain uniform, headset",
+        "desc_en": "Captain Daniel, a calm man with short brown hair and a beard in a captain's uniform with a headset"
+      }
+    ],
+    "locations": [
+      {
+        "id": "cockpit",
+        "tag_prompt": "indoors, spaceship interior, cockpit, control panel, red light, warning lights, science fiction",
+        "desc_en": "The cockpit of a spaceship with red warning lights flashing."
+      },
+      {
+        "id": "hull",
+        "tag_prompt": "outdoors, space, spaceship hull, earth (planet), stars, science fiction",
+        "desc_en": "The outer hull of a spaceship in open space, planet Earth glowing in the distance."
+      },
+      {
+        "id": "bridge",
+        "tag_prompt": "indoors, space station, bridge, monitors, science fiction, blue light",
+        "desc_en": "The command bridge of space station Alpha."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Záchrana na oběžné dráze",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "cockpit",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "alarm",
+          "red light"
+        ],
+        "scene_en": "a spaceship cockpit with red alarm lights flashing",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Řídící kabina vesmírné lodi. Bliká alarm."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "UÍÍ… UÍÍ…"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cockpit",
+        "characters": [
+          {
+            "id": "viktorie"
+          }
+        ],
+        "visual_tags": [
+          "kneeling",
+          "open panel",
+          "machinery",
+          "wiping forehead",
+          "wrench"
+        ],
+        "scene_en": "Viktorie kneels at an open engine service panel, wiping oil from her forehead",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "viktorie",
+            "text": "Pixeli, co se děje? Hlavní počítač nehlásí žádnou chybu!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cockpit",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "two tails",
+          "fur standing on end",
+          "jumping",
+          "control panel",
+          "sparks"
+        ],
+        "scene_en": "the ginger two-tailed cat with bristling fur jumps onto the main control panel, both tails pointing at the right fan",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "pixel",
+            "text": "Mňau-mňau! Zzzzt!",
+            "icon": "bolt",
+            "translation": "Tamhle! Ventilátor!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "hull",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "spaceship",
+          "planet",
+          "space"
+        ],
+        "scene_en": "the outer hull of a spaceship in space, Earth glowing far away",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Venku ve volném vesmíru."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hull",
+        "characters": [
+          {
+            "id": "viktorie"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "spacewalk",
+          "space helmet",
+          "repairing",
+          "cat in space helmet",
+          "floating",
+          "holding tool in mouth"
+        ],
+        "scene_en": "Viktorie in a space helmet clings magnetically to the hull replacing a burnt part, the cat in a tiny helmet floats beside her holding a tool in his mouth",
+        "bubbles": [],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "bridge",
+        "characters": [
+          {
+            "id": "daniel"
+          }
+        ],
+        "visual_tags": [
+          "headset",
+          "serious",
+          "monitors",
+          "talking"
+        ],
+        "scene_en": "Captain Daniel speaks into his headset on the station bridge, worried",
+        "bubbles": [
+          {
+            "kind": "radio",
+            "speaker": "daniel",
+            "text": "Viktorie, zbývají dvě minuty do průletu meteoritickým polem! Zvládáš to?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "hull",
+        "characters": [
+          {
+            "id": "viktorie"
+          }
+        ],
+        "visual_tags": [
+          "space helmet",
+          "determined",
+          "smile",
+          "screwdriver",
+          "stars"
+        ],
+        "scene_en": "close-up of Viktorie inside her helmet tightening a bolt, smiling with determination",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "viktorie",
+            "text": "Už to bude, tati! Pixel našel uvolněný kabel dřív než senzory!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "hull",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "two tails",
+          "space helmet",
+          "floating",
+          "closed eyes",
+          "content"
+        ],
+        "scene_en": "the ginger cat floats in his tiny space helmet next to the ship, eyes closed, purring",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "pixel",
+            "text": "Purrr…",
+            "icon": "heart"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

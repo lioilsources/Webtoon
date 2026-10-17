@@ -1,0 +1,255 @@
+{
+  "world": {
+    "id": "k_cake",
+    "title": "Ztracený recept na nejlepší koláč",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "juggernaut_pixar",
+    "characters": [
+      {
+        "id": "elenka",
+        "name": "Elenka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, two buns, freckles, big smile, yellow dress, white apron, flour on clothes",
+        "desc_en": "Elenka, an energetic smiling 8-year-old girl with brown hair in two buns, freckles, a yellow dress and a white apron dusted with flour"
+      },
+      {
+        "id": "mopik",
+        "name": "Mopík",
+        "count_tag": null,
+        "tag_prompt": "pug, fat dog, fawn fur, black muzzle, curly tail",
+        "desc_en": "Mopik, a chubby lazy fawn pug with a black wrinkly face and a curly tail"
+      },
+      {
+        "id": "babicka",
+        "name": "Babička Lubomíra",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, grey hair, hair bun, glasses, floral dress, cardigan, smile",
+        "desc_en": "Grandma Lubomira, a cheerful plump 65-year-old woman with grey hair in a bun, round glasses, a floral dress and a cardigan"
+      }
+    ],
+    "locations": [
+      {
+        "id": "kitchen",
+        "tag_prompt": "indoors, kitchen, old kitchen, wooden table, rolling pin, bowls, flour, sunlight",
+        "desc_en": "An old sunlit country kitchen, rolling pins and bowls on a wooden table, flour spilled all over the floor."
+      },
+      {
+        "id": "hall",
+        "tag_prompt": "indoors, hallway, wooden floor, wicker basket, door, coat rack, warm lighting",
+        "desc_en": "The hallway of an old cottage with a wooden floor and an old wicker basket by the door."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Ztracený recept na nejlepší koláč",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "kitchen",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "flour on floor",
+          "shelves",
+          "window"
+        ],
+        "scene_en": "a cozy old sunlit kitchen with rolling pins, mixing bowls and flour scattered everywhere, empty of people",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Sluncem zalitá starodávná kuchyně."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "elenka"
+          },
+          {
+            "id": "mopik"
+          }
+        ],
+        "visual_tags": [
+          "standing on stool",
+          "reaching up",
+          "shelf",
+          "dog under table"
+        ],
+        "scene_en": "Elenka stands on tiptoes on a wooden stool stretching up towards a high shelf, the pug lies under the table below",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "elenka",
+            "text": "Mopíku, ještě kousek! Babiččin tajný recept na jahodový koláč musí být někde tady nahoře!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "mopik"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "pug",
+          "flour on nose",
+          "sneezing",
+          "looking up"
+        ],
+        "scene_en": "close-up of the pug lying on the floor with a dusting of white flour on his nose, sneezing and looking up hopefully, wagging his tail",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "mopik",
+            "text": "Haf! Haf!",
+            "icon": "bone",
+            "translation": "Raději mi hoď ten kousek másla!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "PČÍK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "mopik"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "pug",
+          "head in basket",
+          "wicker basket",
+          "sniffing"
+        ],
+        "scene_en": "the pug pushes his nose deep into an old wicker basket by the door in the hallway",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Mopík strčí čenich do starého proutěného koše."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "čmuch čmuch"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "elenka"
+          },
+          {
+            "id": "mopik"
+          }
+        ],
+        "visual_tags": [
+          "pug",
+          "holding paper in mouth",
+          "rolled paper",
+          "ribbon",
+          "clapping",
+          "happy"
+        ],
+        "scene_en": "the pug holds a yellowed rolled-up paper tied with a red ribbon in his mouth, Elenka claps her hands in delight",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "elenka",
+            "text": "Ty jsi génius! Našel jsi ho! Babička bude koukat!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "babicka"
+          }
+        ],
+        "visual_tags": [
+          "shopping bag",
+          "surprised",
+          "smile",
+          "doorway"
+        ],
+        "scene_en": "grandma comes into the hallway carrying a shopping bag, surprised and smiling",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "babicka",
+            "text": "Co to tady vy dva vyvádíte?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "babicka",
+            "text": "Jéje, vy jste našli recept mé prababičky!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "elenka"
+          },
+          {
+            "id": "babicka"
+          },
+          {
+            "id": "mopik"
+          }
+        ],
+        "visual_tags": [
+          "pug",
+          "sitting",
+          "proud",
+          "holding paper",
+          "happy",
+          "family"
+        ],
+        "scene_en": "grandma holds the old recipe and laughs with Elenka while the pug sits proudly waiting for a reward",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "mopik",
+            "text": "Haf!",
+            "icon": "bone",
+            "translation": "A teď ta odměna!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

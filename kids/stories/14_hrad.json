@@ -1,0 +1,259 @@
+{
+  "world": {
+    "id": "k_castle",
+    "title": "Tajemství starého hradu",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_manga",
+    "characters": [
+      {
+        "id": "klarka",
+        "name": "Klárka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, braid, oversized sweater, knitted sweater, holding flashlight",
+        "desc_en": "Klarka, a curious 9-year-old girl with a blonde braid in a far too big knitted sweater, holding a flashlight"
+      },
+      {
+        "id": "hugo",
+        "name": "Hugo",
+        "count_tag": null,
+        "tag_prompt": "owl, eagle owl, orange eyes, ear tufts, brown feathers",
+        "desc_en": "Hugo, a big Eurasian eagle-owl with orange eyes and ear tufts"
+      },
+      {
+        "id": "jaromir",
+        "name": "Rytíř Jaromír",
+        "count_tag": null,
+        "tag_prompt": "ghost, knight, armor, translucent, glowing, blue",
+        "desc_en": "Sir Jaromir, a kind translucent glowing blue ghost knight in old armor"
+      }
+    ],
+    "locations": [
+      {
+        "id": "library",
+        "tag_prompt": "indoors, castle, library, bookshelf, cobweb, dark, flashlight beam",
+        "desc_en": "A huge dark castle library full of cobwebs, tall bookshelves and old books."
+      },
+      {
+        "id": "passage",
+        "tag_prompt": "indoors, castle, secret passage, stone wall, blue light, dust, grandfather clock",
+        "desc_en": "A secret stone passage behind the library, dusty air glowing blue, an old grandfather clock."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Tajemství starého hradu",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "library",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "books",
+          "cobweb"
+        ],
+        "scene_en": "a huge dark castle library with tall bookshelves and cobwebs",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Obří hradní knihovna plná pavučin."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "hugo"
+          }
+        ],
+        "visual_tags": [
+          "owl on shoulder",
+          "flashlight",
+          "whispering",
+          "head turned"
+        ],
+        "scene_en": "Klarka shines her flashlight at the wall between the books, the owl sits on her shoulder with his head turned all the way round",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Hugo, osvětli tu horní polici. Určitě tu musí být tajné tlačítko."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "hugo"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "owl",
+          "flying",
+          "coat of arms",
+          "stone lion",
+          "pecking"
+        ],
+        "scene_en": "the owl flaps up to a family coat of arms on the wall and pecks at the stone lion on it",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "hugo",
+            "text": "Húúú! Húúú!",
+            "icon": "moon",
+            "translation": "Tady! Ten lev!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "ŤUK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "passage",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "secret passage",
+          "open bookshelf"
+        ],
+        "scene_en": "the bookshelf swings open revealing a secret stone passage glowing with blue light",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Za knihovnou se otevře tajná chodba."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "SKŘÍÍÍP"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "passage",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "jaromir"
+          },
+          {
+            "id": "hugo"
+          }
+        ],
+        "visual_tags": [
+          "ghost",
+          "emerging from wall",
+          "surprised",
+          "jumping back",
+          "owl on head"
+        ],
+        "scene_en": "a glowing translucent ghost knight emerges from the stone wall, Klarka jumps back in surprise while the owl calmly lands on the knight's helmet",
+        "bubbles": [],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "passage",
+        "characters": [
+          {
+            "id": "jaromir"
+          },
+          {
+            "id": "hugo"
+          }
+        ],
+        "visual_tags": [
+          "ghost",
+          "floating",
+          "scratching head",
+          "owl on head",
+          "friendly"
+        ],
+        "scene_en": "the friendly ghost knight floats and scratches his helmet, the owl sitting on top",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "jaromir",
+            "text": "Ahoj malá průzkumnice! Neviděla jsi tady někde moje klíče od komnaty?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "jaromir",
+            "text": "Hledám je už stovka let!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "passage",
+        "characters": [
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "pointing",
+          "flashlight",
+          "grandfather clock"
+        ],
+        "scene_en": "Klarka smiles and points at an old grandfather clock",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Nebyly náhodou zavěšené na kyvadle těch starých hodin?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "passage",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "key",
+          "glowing",
+          "pendulum",
+          "clock"
+        ],
+        "scene_en": "close-up of a glowing old iron key hanging on the swinging pendulum of a grandfather clock",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "tik… tak…"
+          }
+        ],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

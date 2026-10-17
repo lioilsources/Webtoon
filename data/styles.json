@@ -200,6 +200,255 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
+    },
+    "juggernaut_pixar": {
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "style_text": "3D animated movie still, cute stylized characters, warm lighting.",
+      "negative": "photo, photorealistic, realistic skin, bad quality, worst quality, low quality, jpeg artifacts, blurry, watermark, deformed, disfigured",
+      "loras": [
+        {
+          "name": "Pixar_SDXL/PixarXL.safetensors",
+          "strength": 0.8,
+          "trigger": "pixar style"
+        }
+      ],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0,
+      "who_first": true
+    },
+    "juggernaut_book": {
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "style_text": "Children's book gouache illustration, warm lighting.",
+      "negative": "photo, photorealistic, realistic skin, bad quality, worst quality, low quality, jpeg artifacts, blurry, watermark, deformed, disfigured",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0,
+      "who_first": true
+    },
+    "flux_manga": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's manga webtoon panel, clean ink lineart, soft cel shading, gentle colors, cute and wholesome, no text, no speech bubbles.",
+      "loras": []
+    },
+    "flux_pixar": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "3D animated movie still in Pixar style, cute stylized characters, soft lighting, wholesome, no text.",
+      "loras": [
+        {
+          "name": "3D_Pixar_Flux/Canopus-Pixar-3D-FluxDev-LoRA.safetensors",
+          "strength": 0.8,
+          "trigger": "pixar"
+        }
+      ]
+    },
+    "flux_kawaii": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "cute 3d kawaii render, soft pastel colors, rounded toy-like characters, wholesome, no text.",
+      "loras": [
+        {
+          "name": "3D_Pixar_Flux/Cute-3d-Kawaii.safetensors",
+          "strength": 0.8,
+          "trigger": "cute 3d kawaii"
+        }
+      ]
+    },
+    "pony_pixar": {
+      "checkpoint": "ponyDiffusionV6XL_v6StartWithThisOne.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "source_cartoon",
+        "3d",
+        "rating_safe"
+      ],
+      "quality_pos": [
+        "score_9",
+        "score_8_up",
+        "score_7_up",
+        "score_6_up"
+      ],
+      "quality_neg": [
+        "score_4",
+        "score_5",
+        "score_6",
+        "bad quality",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "blurry",
+        "ugly",
+        "watermark",
+        "rating_explicit",
+        "rating_questionable",
+        "nsfw",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "cat girl",
+        "animal nose",
+        "body fur",
+        "snout"
+      ],
+      "loras": [
+        {
+          "name": "Pixar_Pony/Pixar_Pony.safetensors",
+          "strength": 0.8,
+          "trigger": "pixar cinematic style"
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 6.5
+    },
+    "atomix_anime": {
+      "checkpoint": "atomixPonyAnimeXL_v30.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "source_anime",
+        "rating_safe"
+      ],
+      "quality_pos": [
+        "score_9",
+        "score_8_up",
+        "score_7_up",
+        "score_6_up"
+      ],
+      "quality_neg": [
+        "score_4",
+        "score_5",
+        "score_6",
+        "bad quality",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "blurry",
+        "ugly",
+        "watermark",
+        "rating_explicit",
+        "rating_questionable",
+        "nsfw",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "cat girl",
+        "animal nose",
+        "body fur",
+        "snout"
+      ],
+      "loras": [],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 6.5
+    },
+    "atomix_space": {
+      "checkpoint": "atomixPonyAnimeXL_v30.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "source_anime",
+        "rating_safe"
+      ],
+      "quality_pos": [
+        "score_9",
+        "score_8_up",
+        "score_7_up",
+        "score_6_up"
+      ],
+      "quality_neg": [
+        "score_4",
+        "score_5",
+        "score_6",
+        "bad quality",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "blurry",
+        "ugly",
+        "watermark",
+        "rating_explicit",
+        "rating_questionable",
+        "nsfw",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "cat girl",
+        "animal nose",
+        "body fur",
+        "snout"
+      ],
+      "loras": [
+        {
+          "name": "Starship_Hulls_-_Pony_r1.safetensors",
+          "strength": 0.6,
+          "trigger": "st4rhu11s"
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 6.5
+    },
+    "autismmix_anime": {
+      "checkpoint": "AutismMix_pony.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "source_anime",
+        "rating_safe"
+      ],
+      "quality_pos": [
+        "score_9",
+        "score_8_up",
+        "score_7_up",
+        "score_6_up",
+        "score_5_up",
+        "score_4_up"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "watermark",
+        "signature",
+        "rating_explicit",
+        "rating_questionable",
+        "nsfw",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "cat girl",
+        "animal nose",
+        "body fur",
+        "snout"
+      ],
+      "loras": [],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 7.0
     }
   },
   "always_negative": [

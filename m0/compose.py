@@ -25,7 +25,8 @@ INK = (20, 20, 24)
 def font(kind, size):
     name, weight = {"speech": ("Nunito-Variable.ttf", b"Bold"), "thought": ("Nunito-Italic-Variable.ttf", b"SemiBold"),
                     "shout": ("DynaPuff-Variable.ttf", b"Bold"), "narration": ("Baloo2-Variable.ttf", b"Medium"),
-                    "sfx": ("DynaPuff-Variable.ttf", b"Bold"), "ui": ("Nunito-Variable.ttf", b"SemiBold")}[kind]
+                    "sfx": ("DynaPuff-Variable.ttf", b"Bold"), "ui": ("Nunito-Variable.ttf", b"SemiBold"),
+                    "pet": ("DynaPuff-Variable.ttf", b"Bold"), "radio": ("Nunito-Variable.ttf", b"Bold")}[kind]
     f = ImageFont.truetype(str(FONTS / name), size)
     try:
         f.set_variation_by_name(weight)
@@ -48,10 +49,84 @@ def wrap(draw, text, fnt, max_w):
     return lines
 
 
+PET_FILL = (255, 244, 214)
+RADIO_FILL = (222, 238, 255)
+
+
+def draw_icon(d, icon, cx, cy, r):
+    """Small pictogram for pet bubbles (what the animal is thinking about)."""
+    if icon == "bone":
+        d.rounded_rectangle((cx - r, cy - r * 0.25, cx + r, cy + r * 0.25), radius=4, fill="white", outline=INK, width=2)
+        for sx in (-1, 1):
+            for sy in (-1, 1):
+                ex, ey = cx + sx * r, cy + sy * r * 0.3
+                d.ellipse((ex - r * 0.32, ey - r * 0.32, ex + r * 0.32, ey + r * 0.32), fill="white", outline=INK, width=2)
+        d.rectangle((cx - r * 0.85, cy - r * 0.2, cx + r * 0.85, cy + r * 0.2), fill="white")
+    elif icon == "fish":
+        d.polygon([(cx + r * 0.4, cy), (cx + r, cy - r * 0.55), (cx + r, cy + r * 0.55)], fill=(120, 180, 230), outline=INK)
+        d.ellipse((cx - r, cy - r * 0.55, cx + r * 0.55, cy + r * 0.55), fill=(120, 180, 230), outline=INK, width=2)
+        d.ellipse((cx - r * 0.62, cy - r * 0.2, cx - r * 0.42, cy), fill=INK)
+    elif icon == "pearl":
+        d.ellipse((cx - r * 0.8, cy - r * 0.8, cx + r * 0.8, cy + r * 0.8), fill=(150, 210, 255), outline=INK, width=2)
+        d.ellipse((cx - r * 0.45, cy - r * 0.5, cx - r * 0.1, cy - r * 0.15), fill="white")
+    elif icon == "bolt":
+        d.polygon([(cx + r * 0.2, cy - r), (cx - r * 0.6, cy + r * 0.1), (cx - r * 0.05, cy + r * 0.1),
+                   (cx - r * 0.3, cy + r), (cx + r * 0.6, cy - r * 0.15), (cx + r * 0.05, cy - r * 0.15)],
+                  fill=(255, 210, 40), outline=INK)
+    elif icon == "heart":
+        d.ellipse((cx - r, cy - r * 0.7, cx, cy + r * 0.3), fill=(240, 90, 110))
+        d.ellipse((cx, cy - r * 0.7, cx + r, cy + r * 0.3), fill=(240, 90, 110))
+        d.polygon([(cx - r * 0.95, cy - r * 0.05), (cx + r * 0.95, cy - r * 0.05), (cx, cy + r)], fill=(240, 90, 110))
+    elif icon == "moon":
+        d.ellipse((cx - r * 0.8, cy - r * 0.8, cx + r * 0.8, cy + r * 0.8), fill=(255, 215, 80), outline=INK, width=2)
+        d.ellipse((cx - r * 0.35, cy - r * 0.95, cx + r * 1.1, cy + r * 0.6), fill=PET_FILL)
+    else:  # paw
+        d.ellipse((cx - r * 0.55, cy - r * 0.1, cx + r * 0.55, cy + r * 0.8), fill=(150, 100, 70))
+        for ox, oy in ((-0.7, -0.35), (-0.25, -0.75), (0.25, -0.75), (0.7, -0.35)):
+            d.ellipse((cx + (ox - 0.22) * r, cy + (oy - 0.22) * r, cx + (ox + 0.22) * r, cy + (oy + 0.22) * r), fill=(150, 100, 70))
+
+
+def draw_pet(img, bubble, slot, placed):
+    """Pet bubble: pictogram + the animal's sound, with the 'translation' small underneath."""
+    d = ImageDraw.Draw(img)
+    W, H = img.size
+    fs, ft = font("pet", 28), font("thought", 21)
+    icon_w, pad = 52, 18
+    max_w = int(W * 0.6)
+    sound = wrap(d, bubble["text"], fs, max_w - icon_w - 2 * pad)
+    trans = wrap(d, bubble["translation"], ft, max_w - icon_w - 2 * pad) if bubble.get("translation") else []
+    lhs, lht = int(fs.size * 1.2), int(ft.size * 1.25)
+    tw = max([d.textlength(l, font=fs) for l in sound] + [d.textlength(l, font=ft) for l in trans])
+    bw = int(tw) + icon_w + 2 * pad
+    bh = max(lhs * len(sound) + lht * len(trans) + 2 * pad - 6, icon_w + 12)
+    right = slot % 2 == 1
+    x = W - bw - 22 if right else 22
+    y = 22 + (slot // 2) * (bh + 30) + (40 if right else 0)
+    for px0, py0, px1, py1 in sorted(placed or [], key=lambda b: b[1]):
+        if x < px1 and px0 < x + bw and y < py1 + 12 and py0 < y + bh:
+            y = py1 + 60
+    if placed is not None:
+        placed.append((x, y, x + bw, y + bh))
+    cx, cy = x + bw / 2, y + bh
+    tx, ty = cx + (40 if cx < W / 2 else -40), min(H - 20, y + bh + 44)
+    for r, f in ((9, 0.4), (6, 0.75)):  # bubbly tail, like a thought: animals do not quite speak
+        px, py = cx + (tx - cx) * f, cy + (ty - cy) * f
+        d.ellipse((px - r, py - r, px + r, py + r), fill=PET_FILL, outline=INK, width=2)
+    d.rounded_rectangle((x, y, x + bw, y + bh), radius=min(bh // 2, 30), fill=PET_FILL, outline=(150, 100, 60), width=4)
+    draw_icon(d, bubble.get("icon", "paw"), x + pad + icon_w / 2 - 4, y + bh / 2, 20)
+    ty0 = y + (bh - (lhs * len(sound) + lht * len(trans))) / 2
+    for i, line in enumerate(sound):
+        d.text((x + pad + icon_w, ty0 + i * lhs), line, font=fs, fill=INK)
+    for i, line in enumerate(trans):
+        d.text((x + pad + icon_w, ty0 + lhs * len(sound) + i * lht), line, font=ft, fill=(95, 85, 80))
+
+
 def draw_bubble(img, bubble, slot, n_slots, placed=None):
     d = ImageDraw.Draw(img)
     W, H = img.size
     kind = bubble.get("kind", "speech")
+    if kind == "pet":
+        return draw_pet(img, bubble, slot, placed)
     fnt = font(kind, 26 if kind != "shout" else 30)
     max_w = int(W * (0.62 if kind != "narration" else 0.8))
     lines = wrap(d, bubble["text"], fnt, max_w - 40)
@@ -83,13 +158,16 @@ def draw_bubble(img, bubble, slot, n_slots, placed=None):
                 px, py = cx + (tx - cx) * f, cy + (ty - cy) * f
                 d.ellipse((px - r, py - r, px + r, py + r), fill="white", outline=INK, width=2)
         else:
-            d.polygon([(cx - 22, cy - 4), (cx + 10, cy - 4), (tx, ty)], fill="white", outline=INK, width=3)
-        if kind == "shout":
+            d.polygon([(cx - 22, cy - 4), (cx + 10, cy - 4), (tx, ty)], fill=RADIO_FILL if kind == "radio" else "white", outline=INK, width=3)
+        if kind == "radio":  # voice from a speaker/radio: square box, blue tint
+            d.rectangle(box, fill=RADIO_FILL, outline=INK, width=3)
+            d.line([(x + bw - 30, y + 8), (x + bw - 14, y + 8)], fill=INK, width=2)
+        elif kind == "shout":
             d.rectangle(box, fill="white", outline=INK, width=5)
         else:
             d.rounded_rectangle(box, radius=min(bh // 2, 40), fill="white", outline=INK, width=3)
         if kind != "thought":
-            d.polygon([(cx - 19, cy - 6), (cx + 7, cy - 6), (tx - 1, ty - 9)], fill="white")
+            d.polygon([(cx - 19, cy - 6), (cx + 7, cy - 6), (tx - 1, ty - 9)], fill=RADIO_FILL if kind == "radio" else "white")
     for i, line in enumerate(lines):
         lw = d.textlength(line, font=fnt)
         d.text((x + (bw - lw) / 2, y + 15 + i * lh), line, font=fnt, fill=INK)
