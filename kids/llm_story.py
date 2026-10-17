@@ -64,7 +64,7 @@ STORYBOARD = """You turn a short Czech children's story into a vertical webtoon 
   }
 }
 Rules:
-- 8 panels, covering every scene of the story in order. Panel 0 is "establishing" with no characters.
+- One panel per story beat (8 panels for a short story, up to 24 for a long one), covering every scene in order. Panel 0 is "establishing" with no characters.
 - Keep every line of dialogue from the story VERBATIM in a bubble of its speaker (Czech, same punctuation).
   Story actions that are not dialogue (e.g. "Maxík štěká") become a short narration bubble or an sfx.
 - Max 2 bubbles per panel. A panel with an animal only adds "no humans" to visual_tags.
@@ -108,8 +108,8 @@ def validate(data):
         locs = {l["id"] for l in world["locations"]}
     except (KeyError, TypeError) as e:
         return [f"missing key {e}"]
-    if not 6 <= len(panels) <= 10:
-        errs.append(f"{len(panels)} panels, expected 8")
+    if not 6 <= len(panels) <= 26:
+        errs.append(f"{len(panels)} panels, expected 8-24")
     for c in world["characters"]:
         c["tag_prompt"] = ", ".join(split_tags(c.get("tag_prompt") or ""))
     for l in world["locations"]:

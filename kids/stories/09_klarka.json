@@ -1,0 +1,682 @@
+{
+  "world": {
+    "id": "k_hillhouse",
+    "title": "Klárka a strašidelný dům na kopci",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "animagine_storybook",
+    "characters": [
+      {
+        "id": "klarka",
+        "name": "Klárka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, red hair, short hair, vampire costume, black cape, red bow",
+        "desc_en": "Klarka, a brave 8-year-old girl with short red hair in a cute vampire costume with a black cape"
+      },
+      {
+        "id": "nela",
+        "name": "Nela",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, twintails, witch hat, orange dress, holding pumpkin bucket",
+        "desc_en": "Nela, her 8-year-old best friend with blonde pigtails, an orange dress and a witch hat"
+      },
+      {
+        "id": "luna",
+        "name": "Luna",
+        "count_tag": null,
+        "tag_prompt": "black cat, yellow eyes",
+        "desc_en": "Luna, a timid black cat with yellow eyes"
+      },
+      {
+        "id": "bila",
+        "name": "Paní Bílá",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, white hair, long hair, white dress, shawl, gentle",
+        "desc_en": "Mrs. Bila, a gentle old woman with long white hair and a white dress"
+      },
+      {
+        "id": "chlapec",
+        "name": "Chlapec",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, ghost, translucent, glowing, short hair, suspenders, old-fashioned clothes",
+        "desc_en": "a small translucent ghost boy in old-fashioned clothes with suspenders"
+      }
+    ],
+    "locations": [
+      {
+        "id": "village",
+        "tag_prompt": "outdoors, night, village, full moon, path, hill, house on hill, halloween"
+      },
+      {
+        "id": "door",
+        "tag_prompt": "outdoors, night, old house, door, porch, moonlight, halloween"
+      },
+      {
+        "id": "hall",
+        "tag_prompt": "indoors, night, hallway, old portraits, dim lighting, wooden floor, moonlight"
+      },
+      {
+        "id": "toyroom",
+        "tag_prompt": "indoors, night, room, toys, shelf, old furniture, candlelight, warm lighting"
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Klárka a strašidelný dům na kopci",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "village",
+        "characters": [],
+        "visual_tags": [
+          "moon",
+          "dark sky"
+        ],
+        "scene_en": "a dark village under a bright moon, an old house on a hill",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Obloha je tmavá. Měsíc svítí nad vesnicí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "village",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "nela"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "walking",
+          "halloween costume",
+          "cat",
+          "path"
+        ],
+        "scene_en": "Klarka and Nela walk along the path in costumes, the black cat follows",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Říká se, že v tom domě na kopci straší."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Strašidla neexistují."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "village",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "looking down",
+          "smile",
+          "confident"
+        ],
+        "scene_en": "Klarka looks down confidently at her black cat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "luna",
+            "text": "Mňau."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Luno, ty se nebojíš, viď?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "village",
+        "characters": [
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "hiding",
+          "scared",
+          "behind legs"
+        ],
+        "scene_en": "close-up of the black cat hiding behind Klarka's legs",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Kočka se schová za její nohy."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "door",
+        "characters": [
+          {
+            "id": "nela"
+          },
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "open door",
+          "scared",
+          "confident",
+          "moonlight"
+        ],
+        "scene_en": "the front door of the old house slowly creaks open",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "To bylo děsivé."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Jen vítr."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "SKŘÍÍÍP"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "door",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "running",
+          "reaching",
+          "shouting"
+        ],
+        "scene_en": "the black cat dashes inside, Klarka reaches after it",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "klarka",
+            "text": "LUNO!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "running",
+          "door",
+          "slam",
+          "surprised"
+        ],
+        "scene_en": "the girls run inside and the door slams behind them",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "PRÁSK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "nela"
+          },
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "quiet",
+          "listening",
+          "nervous",
+          "hallway"
+        ],
+        "scene_en": "the girls stand in a silent hallway with old portraits on the walls",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Slyšela jsi to?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Ano."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "hihihi…"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "chlapec"
+          }
+        ],
+        "visual_tags": [
+          "standing",
+          "end of hallway",
+          "translucent",
+          "glowing",
+          "looking at viewer"
+        ],
+        "scene_en": "at the end of the hallway stands a small translucent boy",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Ahoj."
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Chlapec nic neřekne."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "chlapec"
+          }
+        ],
+        "visual_tags": [
+          "pointing",
+          "stairs",
+          "translucent",
+          "fading"
+        ],
+        "scene_en": "the ghost boy points towards the stairs and fades away",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ukáže ke schodům. Pak zmizí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "doorway",
+          "toys",
+          "amazed",
+          "looking around"
+        ],
+        "scene_en": "the girls open an old door into a room full of old toys",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Za starými dveřmi je pokoj plný hraček."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "toyroom",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "photo (object)",
+          "old photo",
+          "on table",
+          "sepia"
+        ],
+        "scene_en": "close-up of an old photograph on the table showing the same little boy",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "To je on."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "toyroom",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "wooden box",
+          "toy horse",
+          "wooden toy",
+          "hands",
+          "holding"
+        ],
+        "scene_en": "hands open a small wooden box with a wooden toy horse inside",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "V krabičce je dřevěný koník."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "bila"
+          }
+        ],
+        "visual_tags": [
+          "standing",
+          "gentle smile",
+          "candlelight",
+          "looking at viewer"
+        ],
+        "scene_en": "a gentle old woman in white suddenly appears in the doorway",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bila",
+            "text": "Našli jste ji."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Kdo jste?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "bila"
+          }
+        ],
+        "visual_tags": [
+          "sad smile",
+          "candlelight",
+          "hands together"
+        ],
+        "scene_en": "the old woman explains softly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bila",
+            "text": "Jeho babička."
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Chlapec se každý Halloween vrací pro svého dřevěného koníka."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "chlapec"
+          }
+        ],
+        "visual_tags": [
+          "toy horse",
+          "on table",
+          "smile",
+          "translucent",
+          "glowing"
+        ],
+        "scene_en": "Klarka places the toy horse on the table and the ghost boy appears, smiling for the first time",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "chlapec",
+            "text": "Děkuju."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "chlapec"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "petting",
+          "cat",
+          "translucent",
+          "smile",
+          "purring"
+        ],
+        "scene_en": "the ghost boy pets the black cat, which purrs",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Takže jsi nebyl zlý duch."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "vrrr"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "chlapec"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "translucent",
+          "glowing",
+          "sad smile",
+          "portrait"
+        ],
+        "scene_en": "close-up of the ghost boy's gentle face",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "chlapec",
+            "text": "Jen jsem nechtěl být zapomenutý."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "nela"
+          },
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "window",
+          "moonlight",
+          "smile",
+          "relieved"
+        ],
+        "scene_en": "the boy has vanished, the girls stand by the window as bells ring outside",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Chlapec zmizí. Venku začnou zvonit zvonky."
+          },
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Tak… půjdeme domů?"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "cink cink"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "toyroom",
+        "characters": [
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "candlelight"
+        ],
+        "scene_en": "Klarka smiles",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Jo."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "door",
+        "characters": [
+          {
+            "id": "luna"
+          },
+          {
+            "id": "chlapec"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "sitting",
+          "doorway",
+          "looking away",
+          "translucent",
+          "faint"
+        ],
+        "scene_en": "the black cat sits in the doorway staring into the dark, behind it the faint ghost boy appears for a moment",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Luno?"
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Na okamžik se za ní objeví chlapec."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

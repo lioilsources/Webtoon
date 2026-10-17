@@ -100,6 +100,103 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
+    },
+    "hassaku_storybook": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "watercolor (medium)",
+        "storybook",
+        "soft lighting",
+        "pastel colors"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "amazing quality"
+      ],
+      "quality_neg": [
+        "bad quality",
+        "worst quality",
+        "worst detail",
+        "sketch",
+        "censored",
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "signature",
+        "watermark"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "animagine_storybook": {
+      "checkpoint": "animagine-xl-40-opt.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "watercolor (medium)",
+        "storybook",
+        "soft lighting"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "high score",
+        "great score",
+        "absurdres"
+      ],
+      "quality_neg": [
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "text",
+        "error",
+        "missing finger",
+        "extra digits",
+        "fewer digits",
+        "cropped",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "watermark",
+        "signature"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "illustrious_storybook": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "watercolor (medium)",
+        "storybook",
+        "soft lighting"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality"
+      ],
+      "quality_neg": [
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "blurry",
+        "watermark",
+        "signature"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
     }
   },
   "always_negative": [

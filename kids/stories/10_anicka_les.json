@@ -1,0 +1,716 @@
+{
+  "world": {
+    "id": "k_moonforest",
+    "title": "Anička a tajemství měsíčního lesa",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "animagine_storybook",
+    "characters": [
+      {
+        "id": "anicka",
+        "name": "Anička",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, long hair, brown eyes, red hoodie, holding flashlight",
+        "desc_en": "Anicka, a brave but gentle 9-year-old girl with long brown hair and a red hoodie, holding a flashlight"
+      },
+      {
+        "id": "mina",
+        "name": "Míňa",
+        "count_tag": null,
+        "tag_prompt": "fox, red fox, small fox, orange fur, collar",
+        "desc_en": "Mina, a small ginger fox with a collar"
+      },
+      {
+        "id": "eli",
+        "name": "Eli",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, twintails, blue eyes, purple coat, scarf",
+        "desc_en": "Eli, her 7-year-old little sister with blonde pigtails and a purple coat"
+      },
+      {
+        "id": "pani",
+        "name": "Lesní paní",
+        "count_tag": "1girl",
+        "tag_prompt": "mature female, silver hair, very long hair, green cloak, long cloak, leaf crown, glowing, gentle",
+        "desc_en": "the Forest Lady, a mysterious glowing woman with very long silver hair, a leaf crown and a long green cloak"
+      }
+    ],
+    "locations": [
+      {
+        "id": "forest",
+        "tag_prompt": "outdoors, forest, night, moonlight, full moon, trees, branches, halloween"
+      },
+      {
+        "id": "heart",
+        "tag_prompt": "outdoors, forest, night, giant tree, black tree, roots, smoke, moonlight"
+      },
+      {
+        "id": "bedroom",
+        "tag_prompt": "indoors, bedroom, morning, bed, window, sunlight"
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Anička a tajemství měsíčního lesa",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "forest",
+        "characters": [],
+        "visual_tags": [
+          "moonbeam"
+        ],
+        "scene_en": "a dark forest on Halloween night, moonlight shining through the branches",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Je Halloween. Měsíc svítí skrz větve."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "eli"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "walking",
+          "flashlight",
+          "fox",
+          "holding hands"
+        ],
+        "scene_en": "Anicka and Eli walk through the forest with a flashlight, the little fox leads the way",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Neměli bychom být doma?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Za chvíli."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "fox",
+          "sniffing",
+          "alert",
+          "ears up"
+        ],
+        "scene_en": "close-up of the fox stopping and sniffing the air",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Míňa se zastaví. Zavětří."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "eli"
+          }
+        ],
+        "visual_tags": [
+          "flashlight",
+          "raising",
+          "silhouette",
+          "between trees",
+          "scared"
+        ],
+        "scene_en": "Anicka raises her flashlight, a dark figure stands between the trees",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Co to je?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "flashlight",
+          "light beam",
+          "empty",
+          "trees"
+        ],
+        "scene_en": "the flashlight beam lights up empty trees",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Anička posvítí. Nic."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "eli"
+          }
+        ],
+        "visual_tags": [
+          "shadow",
+          "shadow creature",
+          "black silhouettes",
+          "scared",
+          "shouting"
+        ],
+        "scene_en": "dark shadow shapes appear between the trees, Eli cries out",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "eli",
+            "text": "Ani!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "ŠŠŠŠŠŠ…"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "eli"
+          }
+        ],
+        "visual_tags": [
+          "holding hands",
+          "protecting",
+          "determined",
+          "scared"
+        ],
+        "scene_en": "Anicka grabs Eli's hand protectively as the shadows come closer",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Neboj."
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Stíny se přibližují."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "fox",
+          "leaping",
+          "growling",
+          "shadow",
+          "dissolving",
+          "motion lines"
+        ],
+        "scene_en": "the little fox growls and leaps forward, the shadows burst apart and vanish",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "VŽŽŮŮŮM!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "pani"
+          },
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "standing",
+          "glowing",
+          "moonlight",
+          "surprised"
+        ],
+        "scene_en": "a glowing woman in a long green cloak appears before the girls",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Proč jste přišly do mého lesa?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Protože jsme hledaly Míňu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "pani"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "gentle smile",
+          "fox",
+          "glowing",
+          "looking down"
+        ],
+        "scene_en": "the Forest Lady smiles at the fox",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Vaše liška vás sem přivedla schválně."
+          },
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Proč?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "pani"
+          }
+        ],
+        "visual_tags": [
+          "serious",
+          "glowing",
+          "hand on chest"
+        ],
+        "scene_en": "the Forest Lady speaks seriously",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Protože les potřebuje pomoc."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "heart",
+        "characters": [],
+        "visual_tags": [
+          "giant tree",
+          "black tree",
+          "smoke"
+        ],
+        "scene_en": "a huge ancient tree with a black trunk, dark smoke rising from its roots",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Lesní paní je zavede k obrovskému starému stromu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "pani"
+          }
+        ],
+        "visual_tags": [
+          "serious",
+          "pointing",
+          "smoke",
+          "glowing"
+        ],
+        "scene_en": "the Forest Lady points at the black tree",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Stíny se živí strachem."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "eli"
+          },
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "scared",
+          "holding hands",
+          "looking at another"
+        ],
+        "scene_en": "the sisters look at each other, scared",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Já se bojím."
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Já taky."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "determined",
+          "smile",
+          "moonlight"
+        ],
+        "scene_en": "Anicka smiles bravely",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Ale můžeme být statečné i když se bojíme."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "fox",
+          "paw",
+          "roots",
+          "glowing",
+          "light"
+        ],
+        "scene_en": "the little fox places its paw on the black root, light bursts out",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "ZÁŘ!"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "eli"
+          }
+        ],
+        "visual_tags": [
+          "holding hands",
+          "closed eyes",
+          "glowing",
+          "light particles"
+        ],
+        "scene_en": "the girls hold hands with closed eyes in the glow",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Míňo, nejsi na to sama."
+          },
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "A my taky ne."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "fox",
+          "glowing",
+          "light rays",
+          "green leaves",
+          "big tree",
+          "dissolving shadows"
+        ],
+        "scene_en": "the whole forest lights up, the shadows dissolve and the black tree turns into a huge green oak",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Celý les se rozzáří. Černý strom se změní v zelený dub."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "Vrrr!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "pani"
+          },
+          {
+            "id": "eli"
+          }
+        ],
+        "visual_tags": [
+          "gentle smile",
+          "glowing",
+          "green leaves"
+        ],
+        "scene_en": "the Forest Lady smiles under the green oak",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Teď už víte, jak se porazí strach."
+          },
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Jak?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "heart",
+        "characters": [
+          {
+            "id": "pani"
+          }
+        ],
+        "visual_tags": [
+          "gentle smile",
+          "glowing",
+          "portrait",
+          "leaf crown"
+        ],
+        "scene_en": "close-up of the Forest Lady's kind face",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pani",
+            "text": "Tím, že ho nenecháš rozhodovat za sebe."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "large"
+      },
+      {
+        "shot": "wide",
+        "location_id": "bedroom",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "eli"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "lying",
+          "in bed",
+          "fox",
+          "morning",
+          "sleepy"
+        ],
+        "scene_en": "morning: Anicka, Eli and the fox lie in bed",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eli",
+            "text": "Myslíš, že to byla pohádka?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Nevím."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "bedroom",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "fox",
+          "collar",
+          "leaf",
+          "green leaf"
+        ],
+        "scene_en": "close-up of the fox's collar with a small green leaf hanging on it",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Na obojku visí malý zelený list."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "bedroom",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "holding leaf",
+          "leaf",
+          "window",
+          "green light",
+          "smile"
+        ],
+        "scene_en": "Anicka holds the leaf, a green light flickers outside the window",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Asi ne."
+          },
+          {
+            "kind": "speech",
+            "speaker": "mina",
+            "text": "Mňau."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

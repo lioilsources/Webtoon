@@ -1,0 +1,680 @@
+{
+  "world": {
+    "id": "k_future",
+    "title": "Tereza a kočka z budoucnosti",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "illustrious_storybook",
+    "characters": [
+      {
+        "id": "tereza",
+        "name": "Tereza",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, double bun, brown eyes, round eyewear, orange shirt, overalls",
+        "desc_en": "Tereza, an inventive 7-year-old girl with black hair in two buns, round glasses and overalls"
+      },
+      {
+        "id": "pixel",
+        "name": "Pixel",
+        "count_tag": null,
+        "tag_prompt": "black and white cat, tuxedo cat, green eyes",
+        "desc_en": "Pixel, a black-and-white tuxedo cat"
+      },
+      {
+        "id": "david",
+        "name": "David",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, brown hair, short hair, grey hoodie, headphones around neck",
+        "desc_en": "David, her 11-year-old brother with short brown hair, a grey hoodie and headphones around his neck"
+      },
+      {
+        "id": "robot",
+        "name": "Robot 47",
+        "count_tag": null,
+        "tag_prompt": "robot, small robot, round body, white body, blue eyes, glowing eyes, antenna",
+        "desc_en": "Robot 47, a small round white service robot with glowing blue eyes and an antenna"
+      }
+    ],
+    "locations": [
+      {
+        "id": "room",
+        "tag_prompt": "indoors, bedroom, computer, desk, posters, toys, window, warm lighting"
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Tereza a kočka z budoucnosti",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "room",
+        "characters": [],
+        "visual_tags": [
+          "robot toys",
+          "shelf",
+          "monitor"
+        ],
+        "scene_en": "a child's bedroom full of robot posters, toys and an old computer",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Dětský pokoj."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "tereza"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "sitting",
+          "at desk",
+          "computer",
+          "cat on desk",
+          "daydreaming"
+        ],
+        "scene_en": "Tereza sits at the computer, the black-and-white cat lies on the desk",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Kdybych mohla cestovat časem, podívala bych se do budoucnosti."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "one eye closed",
+          "lying"
+        ],
+        "scene_en": "close-up of the cat opening one eye",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Co?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "jumping",
+          "box",
+          "glowing",
+          "paw",
+          "sparks"
+        ],
+        "scene_en": "the cat jumps and touches an old little box with its paw, the box lights up",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Krabička se rozsvítí."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "BZZZT!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "tereza"
+          }
+        ],
+        "visual_tags": [
+          "doorway",
+          "annoyed",
+          "arms crossed",
+          "surprised",
+          "waving hands"
+        ],
+        "scene_en": "David leans in the doorway annoyed, Tereza waves her hands innocently",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "Co jsi zase rozbila?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Já nic!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "box",
+          "floating",
+          "levitation",
+          "glowing",
+          "blue light"
+        ],
+        "scene_en": "the glowing little box levitates in the air",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Krabička začne levitovat."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "portal",
+          "blue portal",
+          "glowing",
+          "robot",
+          "falling"
+        ],
+        "scene_en": "a blue glowing circle opens in the middle of the room and a small robot tumbles out",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "robot",
+            "text": "Chyba! Chyba! Časová osa narušena!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "tereza"
+          },
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "shocked",
+          "excited",
+          "sparkling eyes",
+          "robot"
+        ],
+        "scene_en": "David stares in shock, Tereza is thrilled at the little robot",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "Tohle není normální."
+          },
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "To je robot!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "pixel"
+          },
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "robot",
+          "face-to-face",
+          "scanning"
+        ],
+        "scene_en": "the cat and the robot look at each other nose to nose, the robot scanning it",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Subjekt Pixel identifikován."
+          },
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Jak ho znáš?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "tereza"
+          },
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "hologram",
+          "futuristic city",
+          "flying car",
+          "glowing",
+          "amazed"
+        ],
+        "scene_en": "the robot projects a hologram of a future city with flying cars, Tereza is amazed",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "To je budoucnost?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Ano."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "robot"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "pointing",
+          "robot",
+          "cat",
+          "curious"
+        ],
+        "scene_en": "David asks, the robot points at the cat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "A proč jsi přišel sem?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Kvůli němu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "yawning",
+          "open mouth"
+        ],
+        "scene_en": "close-up of the cat yawning",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Co s ním je?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "robot",
+          "glowing eyes",
+          "serious"
+        ],
+        "scene_en": "the robot speaks solemnly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "V roce 2087 zachrání svět."
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ticho."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "deadpan",
+          "cat",
+          "pointing",
+          "looking down"
+        ],
+        "scene_en": "David looks down at the cat in disbelief",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "Naše kočka?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "pixel",
+            "text": "Mňau."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "tereza"
+          },
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "determined",
+          "fist",
+          "robot"
+        ],
+        "scene_en": "Tereza clenches her fist, ready for a mission",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Tak co musíme udělat?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Nic."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "robot"
+          },
+          {
+            "id": "tereza"
+          }
+        ],
+        "visual_tags": [
+          "robot",
+          "surprised",
+          "explaining"
+        ],
+        "scene_en": "the robot explains calmly to surprised Tereza",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Nic?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Musíte pouze zajistit, aby Pixel zůstal přesně takový, jaký je."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "cat",
+          "on wardrobe",
+          "flower pot",
+          "falling",
+          "broken"
+        ],
+        "scene_en": "the cat jumps onto the wardrobe and knocks a flower pot off",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "PRÁSK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "deadpan",
+          "sweatdrop",
+          "robot",
+          "nod"
+        ],
+        "scene_en": "David points at the mess, the robot nods",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "Tohle je hrdina budoucnosti?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "robot",
+            "text": "Ano."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "robot"
+          }
+        ],
+        "visual_tags": [
+          "portal",
+          "closing",
+          "waving",
+          "robot",
+          "glowing"
+        ],
+        "scene_en": "the portal closes and the robot waves goodbye",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Portál se zavře. Robot zmizí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "tereza"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "sitting",
+          "cat",
+          "lying",
+          "smile",
+          "petting"
+        ],
+        "scene_en": "Tereza sits next to the lying cat, smiling at it",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "Takže ty jednou zachráníš svět."
+          },
+          {
+            "kind": "speech",
+            "speaker": "tereza",
+            "text": "A já ti celou dobu dávala jenom granule."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "room",
+        "characters": [
+          {
+            "id": "david"
+          },
+          {
+            "id": "pixel"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "cat",
+          "meowing"
+        ],
+        "scene_en": "David smiles at the meowing cat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pixel",
+            "text": "Mňau."
+          },
+          {
+            "kind": "speech",
+            "speaker": "david",
+            "text": "Možná právě proto."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "world": {
+    "id": "k_lighthouse",
+    "title": "Sofie a tajemství majáku",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "animagine_storybook",
+    "characters": [
+      {
+        "id": "sofie",
+        "name": "Sofie",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, long hair, braid, green eyes, yellow raincoat, rubber boots",
+        "desc_en": "Sofie, a brave clever 9-year-old girl with a long brown braid and a yellow raincoat"
+      },
+      {
+        "id": "misa",
+        "name": "Míša",
+        "count_tag": null,
+        "tag_prompt": "dachshund, brown dog, long body, floppy ears",
+        "desc_en": "Misa, her small brown dachshund"
+      },
+      {
+        "id": "tom",
+        "name": "Tom",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, red hair, short hair, freckles, blue hoodie, scarf",
+        "desc_en": "Tom, her 10-year-old cousin with short red hair, freckles and a blue hoodie, secretly scared of everything"
+      },
+      {
+        "id": "eliska",
+        "name": "Paní Eliška",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, white hair, hair bun, shawl, long skirt, holding lantern",
+        "desc_en": "Mrs. Eliska, the old lighthouse keeper with white hair in a bun, a shawl and a lantern"
+      },
+      {
+        "id": "muz",
+        "name": "Tajemný muž",
+        "count_tag": "1boy",
+        "tag_prompt": "old man, grey beard, captain hat, long coat, dark coat, sad smile",
+        "desc_en": "a mysterious old man with a grey beard, a captain's hat and a long dark coat"
+      }
+    ],
+    "locations": [
+      {
+        "id": "cliff",
+        "tag_prompt": "outdoors, lighthouse, cliff, sea, waves, wind, dusk, cloudy sky"
+      },
+      {
+        "id": "inside",
+        "tag_prompt": "indoors, lighthouse interior, spiral staircase, stone wall, dark, dim lighting"
+      },
+      {
+        "id": "top",
+        "tag_prompt": "indoors, lighthouse, lantern room, window, night, sea visible through window, moonlight"
+      },
+      {
+        "id": "sea",
+        "tag_prompt": "outdoors, night, sea, dark, horizon, starry sky"
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Sofie a tajemství majáku",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "cliff",
+        "characters": [],
+        "visual_tags": [
+          "scenery"
+        ],
+        "scene_en": "an old lighthouse on a high cliff above a windy sea at dusk",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Vítr fouká od moře. Na vysokém útesu stojí starý maják."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "cliff",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "tom"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "holding leash",
+          "leash",
+          "dog",
+          "sniffing",
+          "walking",
+          "wind",
+          "hair blowing"
+        ],
+        "scene_en": "Sofie holds the leash of her sniffing dachshund, Tom walks nervously beside her",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Říkám ti, že ten maják je strašidelný."
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "To říkáš o každém starém domě."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cliff",
+        "characters": [
+          {
+            "id": "tom"
+          }
+        ],
+        "visual_tags": [
+          "nervous",
+          "sweatdrop",
+          "arms crossed",
+          "wind"
+        ],
+        "scene_en": "Tom with arms crossed, looking nervous",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Protože každý starý dům je strašidelný."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "cliff",
+        "characters": [
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "dog",
+          "growling",
+          "teeth",
+          "alert"
+        ],
+        "scene_en": "close-up of the dachshund suddenly growling",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Co je?"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "Vrrr…"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "cliff",
+        "characters": [
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "dog",
+          "running",
+          "lighthouse",
+          "motion lines"
+        ],
+        "scene_en": "the dachshund runs towards the old lighthouse door",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Pes běží k majáku."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "inside",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "sofie"
+          }
+        ],
+        "visual_tags": [
+          "open door",
+          "door",
+          "scared",
+          "surprised",
+          "holding leash"
+        ],
+        "scene_en": "the heavy lighthouse door opens by itself, Tom freezes",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "To nebyl vítr."
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Jasně, že byl."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "SKŘÍÍÍP"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "inside",
+        "characters": [
+          {
+            "id": "tom"
+          }
+        ],
+        "visual_tags": [
+          "scared",
+          "flinch",
+          "door",
+          "dark",
+          "sweatdrop"
+        ],
+        "scene_en": "the door slams shut behind Tom, he flinches",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Tak tohle byl určitě vítr."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "PRÁSK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "inside",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "from below",
+          "spiral staircase",
+          "dog",
+          "running",
+          "looking up",
+          "darkness"
+        ],
+        "scene_en": "a huge spiral staircase leads up into darkness, the dachshund races up the stairs",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Obrovské schodiště vede do tmy."
+          },
+          {
+            "kind": "shout",
+            "speaker": "sofie",
+            "text": "Míšo! Počkej!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "eliska"
+          }
+        ],
+        "visual_tags": [
+          "holding lantern",
+          "serious",
+          "looking at viewer",
+          "lantern"
+        ],
+        "scene_en": "at the top stands the old lighthouse keeper holding a lantern",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eliska",
+            "text": "Neměli jste sem chodit."
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Proč?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "eliska"
+          },
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "tom"
+          }
+        ],
+        "visual_tags": [
+          "pointing",
+          "window",
+          "sea",
+          "night"
+        ],
+        "scene_en": "the old woman points through the window at the dark sea, the children listen",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eliska",
+            "text": "Každou noc přesně o půlnoci maják sám zhasne."
+          },
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "A co se stane potom?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "eliska"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "lantern",
+          "dog",
+          "barking",
+          "mysterious"
+        ],
+        "scene_en": "the old woman speaks quietly while the dachshund starts barking",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "eliska",
+            "text": "Na moři se objeví světlo."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "HAF HAF!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "sea",
+        "characters": [],
+        "visual_tags": [
+          "glowing",
+          "light",
+          "small light",
+          "faraway"
+        ],
+        "scene_en": "far away on the dark sea a single small light appears",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "To není loď."
+          },
+          {
+            "kind": "speech",
+            "speaker": "eliska",
+            "text": "Ne."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "top",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "clock",
+          "midnight",
+          "dark"
+        ],
+        "scene_en": "close-up of an old wall clock striking midnight",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Hodiny odbijí dvanáct. Maják zhasne. Tma."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "DONG!"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "sofie"
+          }
+        ],
+        "visual_tags": [
+          "dark",
+          "scared",
+          "whispering",
+          "night"
+        ],
+        "scene_en": "in the darkness Tom and Sofie whisper to each other",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Sofie…"
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Co?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "tom"
+          }
+        ],
+        "visual_tags": [
+          "scared",
+          "wide-eyed",
+          "sweat",
+          "dark",
+          "portrait"
+        ],
+        "scene_en": "close-up of Tom's frightened face in the dark",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Něco je za námi."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "muz"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "standing",
+          "doorway",
+          "silhouette",
+          "dog",
+          "growling",
+          "moonlight"
+        ],
+        "scene_en": "a mysterious old man stands in the doorway in moonlight, the dachshund growls",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "muz",
+            "text": "Nebojte se."
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Kdo jste?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "muz"
+          }
+        ],
+        "visual_tags": [
+          "sad smile",
+          "moonlight",
+          "looking at viewer"
+        ],
+        "scene_en": "the old man with a sad gentle smile",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "muz",
+            "text": "Člověk, který už padesát let čeká na někoho, kdo mě vyslechne."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "top",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "photo (object)",
+          "old photo",
+          "holding photo",
+          "hands",
+          "sepia"
+        ],
+        "scene_en": "close-up of an old photograph of a young man and a little girl, held in wrinkled hands",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "muz",
+            "text": "Tohle byla moje sestra. Jedné bouřlivé noci zmizela na moři."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "muz"
+          }
+        ],
+        "visual_tags": [
+          "looking at another",
+          "moonlight",
+          "sad",
+          "curious"
+        ],
+        "scene_en": "Sofie looks up at the old man",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "A to světlo?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "muz",
+            "text": "Její loď. Každou noc se vrací."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "top",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "window",
+          "dog",
+          "barking",
+          "looking outside",
+          "glowing",
+          "sea",
+          "night"
+        ],
+        "scene_en": "Sofie and the barking dachshund at the window watch the light on the sea slowly coming closer",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Možná se opravdu vrací."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "HAF!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "sea",
+        "characters": [],
+        "visual_tags": [
+          "lighthouse",
+          "light beam",
+          "glowing",
+          "night",
+          "boat",
+          "cliff"
+        ],
+        "scene_en": "the lighthouse lights up again, its beam sweeping over the sea towards a small glowing boat",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Maják se znovu rozsvítí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

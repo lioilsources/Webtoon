@@ -1,0 +1,692 @@
+{
+  "world": {
+    "id": "k_ema",
+    "title": "Ema a králík, který uměl létat",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "illustrious_storybook",
+    "characters": [
+      {
+        "id": "ema",
+        "name": "Ema",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, short hair, messy hair, blue eyes, freckles, red dress, white socks, brown shoes",
+        "desc_en": "Ema, a bold 8-year-old girl with messy short blonde hair, freckles and a red dress"
+      },
+      {
+        "id": "bobik",
+        "name": "Bobík",
+        "count_tag": null,
+        "tag_prompt": "white rabbit, black ears, bunny",
+        "desc_en": "Bobik, a white rabbit with black ears"
+      },
+      {
+        "id": "klara",
+        "name": "Klára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, ponytail, glasses, green cardigan, white shirt, blue skirt",
+        "desc_en": "Klara, a careful 9-year-old girl with a brown ponytail, round glasses and a green cardigan"
+      },
+      {
+        "id": "vrana",
+        "name": "Pan Vrána",
+        "count_tag": "1boy",
+        "tag_prompt": "old man, grey hair, grey beard, straw hat, green overalls, gardener, gloves",
+        "desc_en": "Mr. Vrana, a mysterious old gardener with a grey beard, straw hat and green overalls"
+      }
+    ],
+    "locations": [
+      {
+        "id": "garden",
+        "tag_prompt": "outdoors, backyard, garden, grass, flowers, house, sunlight, afternoon"
+      },
+      {
+        "id": "sky",
+        "tag_prompt": "outdoors, sky, flying, rooftops, town, clouds, day, from above"
+      },
+      {
+        "id": "park",
+        "tag_prompt": "outdoors, park, huge tree, old tree, grass, day"
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Ema a králík, který uměl létat",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "garden",
+        "characters": [],
+        "visual_tags": [
+          "fence",
+          "tree"
+        ],
+        "scene_en": "a sunny back garden behind a house",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Slunečné odpoledne v zahradě za domem."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "sitting",
+          "on grass",
+          "drawing",
+          "sketchbook",
+          "holding pencil",
+          "smile",
+          "rabbit"
+        ],
+        "scene_en": "Ema sits in the grass drawing in a sketchbook, her white rabbit hopping beside her",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Bobíku, představ si, že bychom mohli létat."
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Ty bys určitě chtěl."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "looking at viewer",
+          "grass"
+        ],
+        "scene_en": "close-up of the white rabbit with black ears staring up thoughtfully",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Bobík se na Emu podívá. Pak…"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "rabbit",
+          "floating",
+          "levitation",
+          "surprised",
+          "open mouth",
+          "looking up",
+          "sitting"
+        ],
+        "scene_en": "the white rabbit jumps and floats up into the air while Ema stares up in shock",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Ehm…"
+          },
+          {
+            "kind": "shout",
+            "speaker": "ema",
+            "text": "BOBÍKU?!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "FŮŮŮŠ!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "running",
+          "doorway",
+          "surprised",
+          "pointing up"
+        ],
+        "scene_en": "Klara runs out of the house door while Ema points up at the sky",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Co se děje?"
+          },
+          {
+            "kind": "shout",
+            "speaker": "ema",
+            "text": "Můj králík létá!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "rabbit",
+          "flying",
+          "surprised",
+          "sweatdrop",
+          "adjusting eyewear"
+        ],
+        "scene_en": "the flying rabbit zooms past Klara's head, she adjusts her glasses in disbelief",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Králíci nelétají."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Dobře. Tenhle ano."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "fííí"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "sky",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "klara"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "flying",
+          "holding animal",
+          "holding hands",
+          "happy",
+          "scared",
+          "wind",
+          "hair blowing"
+        ],
+        "scene_en": "Ema hugs the rabbit and flies over the town rooftops, Klara holding her hand and looking scared",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Tohle je nejlepší den v mém životě!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Já bych raději zůstala na zemi!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "flying",
+          "huge tree",
+          "golden light",
+          "glowing",
+          "on branch",
+          "surprised"
+        ],
+        "scene_en": "the rabbit suddenly swerves towards a giant old tree in the park where a small golden light glows on a branch",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "ema",
+            "text": "Co to děláš?!"
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Na větvi obrovského stromu září malé zlaté světlo."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "golden light",
+          "glowing",
+          "sparkle",
+          "light particles",
+          "branch"
+        ],
+        "scene_en": "close-up: the rabbit touches the little golden light and it bursts into sparkles",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Světlo zmizí. A Bobík začne padat."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "ZÁŘ!"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "falling",
+          "rabbit",
+          "reaching",
+          "shouting",
+          "worried"
+        ],
+        "scene_en": "the rabbit falls from the sky while Ema reaches out screaming",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "ema",
+            "text": "BOBÍÍÍK!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "vrana"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "catching",
+          "holding animal",
+          "rabbit",
+          "smile"
+        ],
+        "scene_en": "at the last moment the old gardener catches the falling rabbit in his gloved hands",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vrana",
+            "text": "Takže se konečně probudila."
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Co se probudilo?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "vrana"
+          },
+          {
+            "id": "ema"
+          },
+          {
+            "id": "klara"
+          }
+        ],
+        "visual_tags": [
+          "pointing",
+          "rabbit",
+          "curious",
+          "surprised"
+        ],
+        "scene_en": "the gardener points at the rabbit in his arms, the two girls look amazed",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vrana",
+            "text": "Jeho kouzlo."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "On je kouzelný?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "vrana"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "mysterious",
+          "looking at another",
+          "curious"
+        ],
+        "scene_en": "the gardener smiles mysteriously as Ema asks a question",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vrana",
+            "text": "Každý králík má své tajemství."
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "A co je to světlo?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "vrana"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "closed eyes",
+          "gentle smile",
+          "portrait"
+        ],
+        "scene_en": "close-up of the old gardener smiling under his straw hat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vrana",
+            "text": "To zjistíte až tehdy, když budete ochotné pomoci někomu, kdo pomoc opravdu potřebuje."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "park",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "kitten",
+          "cat",
+          "on branch",
+          "tree",
+          "scared"
+        ],
+        "scene_en": "a tiny kitten is stuck high up on a branch of a tall tree, meowing",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Malé kotě uvízlo na vysokém stromě."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "Mňau!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "looking up",
+          "holding animal",
+          "rabbit",
+          "determined"
+        ],
+        "scene_en": "Ema looks up at the kitten holding the rabbit",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Bobíku…"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "kitten",
+          "flying",
+          "carrying",
+          "tree",
+          "sparkle"
+        ],
+        "scene_en": "the white rabbit flies up and gently carries the kitten down by its paw",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "FŮŮŮŠ!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "vrana"
+          }
+        ],
+        "visual_tags": [
+          "kitten",
+          "holding animal",
+          "smile",
+          "nod"
+        ],
+        "scene_en": "Klara holds the rescued kitten, the gardener nods",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Takže jeho kouzlo funguje jenom, když někomu pomáhá."
+          },
+          {
+            "kind": "speech",
+            "speaker": "vrana",
+            "text": "Přesně."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "klara"
+          }
+        ],
+        "visual_tags": [
+          "serious",
+          "hand on chin",
+          "curious",
+          "looking at another"
+        ],
+        "scene_en": "Ema puts her hand on her chin seriously, Klara looks at her puzzled",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Tak to máme problém."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Jaký?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "park",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "bobik"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "determined",
+          "rabbit",
+          "flying",
+          "jumping",
+          "sky"
+        ],
+        "scene_en": "Ema grins as the rabbit leaps back into the air above her",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Teď budeme muset hledat všechny, kteří potřebují pomoc."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "FŮŮŠ!"
+          }
+        ],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

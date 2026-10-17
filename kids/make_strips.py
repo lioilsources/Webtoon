@@ -84,6 +84,7 @@ def check_checkpoint(name):
 def render_story(path, backend, preset, styles, seed_base, placeholder):
     data = load_json(path)
     world, sb = data["world"], data["storyboard"]
+    preset = preset or world.get("style_id", "clean_webtoon")
     name = path.stem
     outdir = OUT / "kids" / name / backend
     log = []
@@ -117,7 +118,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--story", action="append", help="story file stem, e.g. 01_park (default: all)")
     ap.add_argument("--backend", choices=["comfy", "flux", "auto"], default="comfy")
-    ap.add_argument("--preset", default="clean_webtoon")
+    ap.add_argument("--preset", default=None, help="style preset (default: the story's world.style_id)")
     ap.add_argument("--seed-base", type=int, default=7000)
     ap.add_argument("--placeholder", action="store_true", help="layout check without rendering")
     args = ap.parse_args()
@@ -130,7 +131,8 @@ def main():
         if not os.environ.get("CF_ACCESS_CLIENT_ID"):
             raise SystemExit("CF_ACCESS_CLIENT_ID / CF_ACCESS_CLIENT_SECRET are not set — *.ol1n.com is behind Cloudflare Access")
         if args.backend != "flux":
-            check_checkpoint(styles["presets"][args.preset]["checkpoint"])
+            for pre in {args.preset or load_json(p)["world"].get("style_id", "clean_webtoon") for p in paths}:
+                check_checkpoint(styles["presets"][pre]["checkpoint"])
     for p in paths:
         render_story(p, args.backend, args.preset, styles, args.seed_base, args.placeholder)
 
