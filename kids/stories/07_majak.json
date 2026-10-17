@@ -147,7 +147,7 @@
         "gap_after": "medium"
       },
       {
-        "shot": "medium",
+        "shot": "close-up",
         "location_id": "cliff",
         "characters": [
           {
@@ -160,7 +160,7 @@
           "small dog",
           "growling",
           "alert",
-          "cliff"
+          "on grass"
         ],
         "scene_en": "close-up of the dachshund suddenly growling",
         "bubbles": [
@@ -176,7 +176,12 @@
           }
         ],
         "gap_after": "medium",
-        "seed": 7311
+        "seed": 7322,
+        "negative_extra": [
+          "water",
+          "swimming",
+          "waves"
+        ]
       },
       {
         "shot": "wide",
@@ -600,17 +605,20 @@
         "gap_after": "medium"
       },
       {
-        "shot": "close-up",
+        "shot": "medium",
         "location_id": "top",
-        "characters": [],
+        "characters": [
+          {
+            "id": "muz"
+          }
+        ],
         "visual_tags": [
-          "no humans",
-          "(old photo:1.3)",
-          "photo (object)",
-          "photo of young man and little girl",
-          "sepia",
           "holding photo",
-          "hands"
+          "(photo (object):1.3)",
+          "showing photo",
+          "sad smile",
+          "moonlight",
+          "upper body"
         ],
         "scene_en": "close-up of an old photograph of a young man and a little girl, held in wrinkled hands",
         "bubbles": [
@@ -622,7 +630,11 @@
         ],
         "sfx": [],
         "gap_after": "medium",
-        "seed": 8711
+        "seed": 8733,
+        "negative_extra": [
+          "picture frame",
+          "many photos"
+        ]
       },
       {
         "shot": "medium",
@@ -690,10 +702,11 @@
           }
         ],
         "gap_after": "medium",
-        "seed": 8911,
+        "seed": 8933,
         "negative_extra": [
           "multiple dogs",
-          "2 dogs"
+          "2 dogs",
+          "water on floor"
         ]
       },
       {

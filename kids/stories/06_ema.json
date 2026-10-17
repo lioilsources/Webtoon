@@ -70,7 +70,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "small"
+        "gap_after": "small",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "medium",
@@ -112,7 +118,10 @@
           "multiple rabbits",
           "2 rabbits",
           "rabbit girl",
-          "animal ears"
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -144,7 +153,10 @@
           "multiple rabbits",
           "2 rabbits",
           "rabbit girl",
-          "animal ears"
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -186,12 +198,15 @@
           }
         ],
         "gap_after": "medium",
-        "seed": 7311,
+        "seed": 7322,
         "negative_extra": [
           "multiple rabbits",
           "2 rabbits",
           "rabbit girl",
-          "animal ears"
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -225,7 +240,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "medium",
@@ -263,7 +284,13 @@
             "text": "fííí"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "wide",
@@ -302,7 +329,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "wide",
@@ -316,14 +349,15 @@
           }
         ],
         "visual_tags": [
-          "flying",
+          "(flying:1.3)",
           "midair",
+          "floating",
+          "feet off ground",
           "holding animal",
           "huge tree",
           "golden light",
-          "glowing",
-          "surprised",
-          "sky"
+          "sky",
+          "surprised"
         ],
         "scene_en": "the rabbit suddenly swerves towards a giant old tree in the park where a small golden light glows on a branch",
         "bubbles": [
@@ -340,13 +374,16 @@
         ],
         "sfx": [],
         "gap_after": "medium",
-        "seed": 7711,
+        "seed": 7722,
         "negative_extra": [
           "multiple rabbits",
           "2 rabbits",
           "rabbit girl",
           "animal ears",
-          "sitting"
+          "sitting",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -379,7 +416,13 @@
             "text": "ZÁŘ!"
           }
         ],
-        "gap_after": "small"
+        "gap_after": "small",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "wide",
@@ -408,7 +451,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "medium",
@@ -442,11 +491,15 @@
         ],
         "sfx": [],
         "gap_after": "medium",
-        "seed": 8011,
+        "seed": 8022,
         "negative_extra": [
           "child",
           "young",
-          "multiple rabbits"
+          "multiple rabbits",
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -488,7 +541,11 @@
         "negative_extra": [
           "boy",
           "male child",
-          "hat on girl"
+          "hat on girl",
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -526,7 +583,11 @@
         "seed": 8211,
         "negative_extra": [
           "hat on girl",
-          "straw hat on girl"
+          "straw hat on girl",
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -552,7 +613,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "wide",
@@ -586,7 +653,11 @@
         "seed": 8411,
         "negative_extra": [
           "multiple cats",
-          "2 cats"
+          "2 cats",
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       },
       {
@@ -615,10 +686,16 @@
           }
         ],
         "sfx": [],
-        "gap_after": "small"
+        "gap_after": "small",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
-        "shot": "medium",
+        "shot": "wide",
         "location_id": "park",
         "characters": [
           {
@@ -627,26 +704,35 @@
         ],
         "visual_tags": [
           "no humans",
-          "rabbit",
+          "(kitten riding on rabbit:1.3)",
+          "white rabbit",
           "kitten",
           "flying",
-          "carrying",
-          "holding paw",
           "midair",
+          "descending",
           "tree",
           "sparkle"
         ],
         "scene_en": "the white rabbit flies up and gently carries the kitten down by its paw",
-        "bubbles": [],
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Bobík vyletí ke kotěti a snese ho dolů."
+          }
+        ],
         "sfx": [
           {
             "text": "FŮŮŮŠ!"
           }
         ],
         "gap_after": "medium",
-        "seed": 8611,
+        "seed": 8655,
         "negative_extra": [
-          "multiple rabbits"
+          "animal ears",
+          "multiple rabbits",
+          "small rabbits",
+          "multiple cats"
         ]
       },
       {
@@ -680,7 +766,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "medium",
@@ -713,7 +805,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
+        ]
       },
       {
         "shot": "wide",
@@ -753,7 +851,10 @@
           "multiple rabbits",
           "2 rabbits",
           "rabbit girl",
-          "animal ears"
+          "animal ears",
+          "rabbit ears on head",
+          "kemonomimi",
+          "hat with ears"
         ]
       }
     ]

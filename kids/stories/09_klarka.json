@@ -31,7 +31,7 @@
         "id": "bila",
         "name": "Paní Bílá",
         "count_tag": "1girl",
-        "tag_prompt": "old woman, white hair, long hair, white dress, shawl, gentle",
+        "tag_prompt": "(old woman:1.3), elderly, wrinkled skin, white hair, long hair, white dress, shawl, gentle smile",
         "desc_en": "Mrs. Bila, a gentle old woman with long white hair and a white dress"
       },
       {
@@ -391,15 +391,16 @@
         "gap_after": "medium"
       },
       {
-        "shot": "close-up",
+        "shot": "medium",
         "location_id": "toyroom",
         "characters": [],
         "visual_tags": [
           "no humans",
-          "photo (object)",
-          "old photo",
+          "(framed photo:1.3)",
+          "old photo of a little boy",
+          "sepia",
           "on table",
-          "sepia"
+          "candlelight"
         ],
         "scene_en": "close-up of an old photograph on the table showing the same little boy",
         "bubbles": [
@@ -410,7 +411,12 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 8144,
+        "negative_extra": [
+          "eye",
+          "close-up eye"
+        ]
       },
       {
         "shot": "close-up",
