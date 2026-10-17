@@ -15,7 +15,17 @@ go run ./cmd/webtoon serve                    # API :8095 + 2 workery (MODE=all)
 docker compose up --build
 ```
 
-Příkazy binárky: `serve` (výchozí), `migrate`, `seed [-world f.json] [-styles f.json] [-owner id] [-visibility public]`.
+Příkazy binárky: `serve` (výchozí), `migrate`, `seed [-world f.json] [-styles f.json] [-owner id] [-visibility public]`,
+`import-demo [-campaign id | -world w_skyisles -player player] [-character id] [-variant 0] <storyboard.json> <panel_dir>`.
+
+`import-demo` vloží hotový díl z výstupů M0 bez volání LLM/ComfyUI (pro vývoj čtečky): storyboard →
+epizoda `ready` s panely `ready`, obrázky `pNN_s<variant>.png` (+ seed/prompt z `meta.json`, pokud je)
+se zkopírují do `MEDIA_DIR/episodes/<ep>/`, `state_diff` se aplikuje na kampaň. Bez `-campaign` založí
+novou kampaň hráče `-player`; s `-campaign` přidá další díl (kampaň nesmí mít díl ve frontě).
+
+```sh
+go run ./cmd/webtoon import-demo -player player ../out/dev/storyboard_ep1.json ../out/2026-10-17/ep1_noob_plain
+```
 Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`.
 
 ### Konfigurace (env)
@@ -67,6 +77,7 @@ POST   /worlds/{id}/characters          owner; ostatní jen když permissions.ca
 POST   /worlds/{id}/locations           jen owner
 GET    /worlds/{id}/stats               jen owner: počty, rozložení voleb (by_kind, by_choice), hloubka kampaní, canon
 POST   /campaigns                       {world_id, player_character_id?, title?, start?=true} → 201 + first_episode_id
+GET    /campaigns?world_id=             vlastní kampaně (world_title, počet dílů, stav posledního dílu), nejnovější aktivita první
 GET    /campaigns/{id}                  hráč nebo owner světa; state, canon_progress, seznam epizod
 POST   /campaigns/{id}/episodes         jen hráč; {choice_id} | {free_text} → 202 {episode_id}
 GET    /episodes/{id}                   status, panels_ready/total, panels[] (image_url, bubbles, sfx, gap_after…), choices
@@ -97,11 +108,12 @@ v prototypu je potřeba ho vygenerovat znovu.
 ## Struktura
 
 ```
-cmd/webtoon/            main: serve | migrate | seed
+cmd/webtoon/            main: serve | migrate | seed | import-demo
 data/                   kopie ../data (world_m0, styles, wd14_tags), embedded
 internal/api/           HTTP handlery, auth stub, /media
 internal/comfy/         ComfyUI klient + workflow (port m0/comfy.py)
 internal/config/        env
+internal/demo/          import-demo: hotový díl z výstupů M0 (storyboard + PNG)
 internal/db/            migrace (embedded) + queries.sql; dbq/ = vygenerované sqlc (`sqlc generate`)
 internal/domain/        typy světa, stylů, storyboardu
 internal/llm/           OpenAI-kompatibilní JSON klient

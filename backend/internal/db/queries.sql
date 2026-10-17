@@ -95,6 +95,16 @@ RETURNING *;
 -- name: GetCampaign :one
 SELECT * FROM campaigns WHERE id = $1;
 
+-- name: ListPlayerCampaigns :many
+SELECT
+    c.id, c.world_id, w.title AS world_title, c.title, c.status, c.player_character_id, c.created_at, c.updated_at,
+    (SELECT count(*) FROM episodes e WHERE e.campaign_id = c.id)::int AS episodes,
+    COALESCE((SELECT e.status FROM episodes e WHERE e.campaign_id = c.id ORDER BY e.idx DESC LIMIT 1), '')::text AS last_status,
+    COALESCE((SELECT max(e.updated_at) FROM episodes e WHERE e.campaign_id = c.id), c.updated_at)::timestamptz AS last_activity
+FROM campaigns c JOIN worlds w ON w.id = c.world_id
+WHERE c.player_id = $1
+ORDER BY last_activity DESC;
+
 -- name: GetCampaignForUpdate :one
 SELECT * FROM campaigns WHERE id = $1 FOR UPDATE;
 

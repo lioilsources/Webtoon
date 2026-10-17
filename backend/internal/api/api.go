@@ -57,6 +57,7 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /worlds/{id}/stats", s.requireUser(s.worldStats))
 
 	mux.HandleFunc("POST /campaigns", s.requireUser(s.createCampaign))
+	mux.HandleFunc("GET /campaigns", s.requireUser(s.listCampaigns))
 	mux.HandleFunc("GET /campaigns/{id}", s.requireUser(s.getCampaign))
 	mux.HandleFunc("POST /campaigns/{id}/episodes", s.requireUser(s.createEpisode))
 

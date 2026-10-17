@@ -4,6 +4,8 @@
 //	webtoon migrate                     apply migrations and exit
 //	webtoon seed [-world f] [-styles f] [-owner id] [-visibility v]
 //	                                    import the M0 world + style presets (embedded copies by default)
+//	webtoon import-demo [-campaign id | -world id -player id] [-character id] [-variant n] <storyboard.json> <panel_dir>
+//	                                    insert a ready episode from M0 outputs (no LLM/ComfyUI calls)
 package main
 
 import (
@@ -26,6 +28,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/comfy"
 	"github.com/ol1n/webtoon/backend/internal/config"
 	"github.com/ol1n/webtoon/backend/internal/db"
+	"github.com/ol1n/webtoon/backend/internal/demo"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/seed"
 	"github.com/ol1n/webtoon/backend/internal/store"
@@ -54,8 +57,10 @@ func main() {
 		err = db.Migrate(cfg.DatabaseURL)
 	case "seed":
 		err = runSeed(ctx, cfg, args)
+	case "import-demo":
+		err = runImportDemo(ctx, cfg, args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -91,6 +96,44 @@ func runSeed(ctx context.Context, cfg config.Config, args []string) error {
 	}
 	defer s.Pool.Close()
 	return doSeed(ctx, s, *worldPath, *stylesPath, *owner, *vis)
+}
+
+func runImportDemo(ctx context.Context, cfg config.Config, args []string) error {
+	fs := flag.NewFlagSet("import-demo", flag.ExitOnError)
+	campaign := fs.String("campaign", "", "append to this campaign (default: create a new one)")
+	world := fs.String("world", "w_skyisles", "world of the new campaign")
+	player := fs.String("player", "player", "player_id (X-User-ID) of the new campaign")
+	character := fs.String("character", "", "player character (default: first playable)")
+	title := fs.String("title", "", "title of the new campaign (default: world title)")
+	variant := fs.Int("variant", 0, "image variant: pNN_s<variant>.png")
+	fs.Usage = func() {
+		fmt.Fprintln(fs.Output(), "usage: webtoon import-demo [flags] <storyboard.json> <panel_dir>")
+		fs.PrintDefaults()
+	}
+	fs.Parse(args) //nolint:errcheck
+	if fs.NArg() != 2 {
+		fs.Usage()
+		return errors.New("import-demo needs <storyboard.json> <panel_dir>")
+	}
+	sb, err := os.ReadFile(fs.Arg(0))
+	if err != nil {
+		return err
+	}
+	s, err := openStore(ctx, cfg)
+	if err != nil {
+		return err
+	}
+	defer s.Pool.Close()
+	res, err := demo.Import(ctx, s, demo.Options{
+		Storyboard: sb, PanelDir: fs.Arg(1), Variant: *variant, MediaDir: cfg.MediaDir,
+		CampaignID: *campaign, WorldID: *world, PlayerID: *player, PlayerCharacterID: *character, Title: *title,
+	})
+	if err != nil {
+		return err
+	}
+	slog.Info("imported demo episode", "campaign", res.CampaignID, "episode", res.EpisodeID, "index", res.Index,
+		"panels", res.Panels, "media_dir", cfg.MediaDir)
+	return nil
 }
 
 func doSeed(ctx context.Context, s *store.Store, worldPath, stylesPath, owner, vis string) error {

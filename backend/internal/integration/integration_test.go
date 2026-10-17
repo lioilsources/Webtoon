@@ -78,6 +78,7 @@ type env struct {
 	llm   *fakes.LLM
 	comfy *fakes.Comfy
 	wd14  *fakes.WD14
+	media string
 }
 
 func setup(t *testing.T) *env {
@@ -114,6 +115,7 @@ func setup(t *testing.T) *env {
 	cc := comfy.New(e.comfy.URL)
 	cc.PollInterval = time.Millisecond
 	media := t.TempDir()
+	e.media = media
 	e.w = worker.New(worker.Config{ID: "it", MediaDir: media, Backoff: 5 * time.Minute, RetryBase: time.Second},
 		s, &storyboard.Generator{LLM: lc, Vocab: testutil.Vocab(t)}, cc, wd14.New(e.wd14.URL))
 	e.srv = httptest.NewServer(api.New(api.Config{MediaDir: media}, s, e.w).Handler())

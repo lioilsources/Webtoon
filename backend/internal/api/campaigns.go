@@ -147,6 +147,27 @@ func (s *Server) campaignJSON(c dbq.Campaign, eps []dbq.Episode) map[string]any 
 	return out
 }
 
+// listCampaigns lists the caller's own campaigns (newest activity first), optionally for one world.
+func (s *Server) listCampaigns(w http.ResponseWriter, r *http.Request) {
+	rows, err := s.store.Q.ListPlayerCampaigns(r.Context(), userID(r))
+	if err != nil {
+		s.fail(w, err)
+		return
+	}
+	world := r.URL.Query().Get("world_id")
+	out := make([]map[string]any, 0, len(rows))
+	for _, c := range rows {
+		if world != "" && c.WorldID != world {
+			continue
+		}
+		out = append(out, map[string]any{"id": c.ID, "world_id": c.WorldID, "world_title": c.WorldTitle,
+			"title": c.Title, "status": c.Status, "player_character_id": c.PlayerCharacterID,
+			"episodes": c.Episodes, "last_episode_status": c.LastStatus, "last_activity": c.LastActivity,
+			"created_at": c.CreatedAt, "updated_at": c.UpdatedAt})
+	}
+	writeJSON(w, http.StatusOK, map[string]any{"campaigns": out})
+}
+
 // loadCampaign returns the campaign if the caller is its player or the world owner.
 func (s *Server) loadCampaign(r *http.Request, id string) (dbq.Campaign, dbq.World, error) {
 	c, err := s.store.Q.GetCampaign(r.Context(), id)
