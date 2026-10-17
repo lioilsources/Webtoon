@@ -1,0 +1,53 @@
+{
+  "world": {
+    "id": "k_forest", "title": "Záhada v lese", "audience": "kids", "language": "cs", "style_id": "clean_webtoon",
+    "characters": [
+      {"id": "terezka", "name": "Terezka", "count_tag": "1girl",
+       "tag_prompt": "child, black hair, bob cut, bangs, brown eyes, backpack, orange raincoat, red boots",
+       "desc_en": "Terezka, a quiet curious 7-year-old girl with a black bob haircut, orange raincoat, red boots and a small backpack"},
+      {"id": "misa", "name": "Míša", "count_tag": null,
+       "tag_prompt": "grey cat, cat, green eyes, fluffy",
+       "desc_en": "Misa, her watchful fluffy grey cat with green eyes"},
+      {"id": "skritek", "name": "Skřítek", "count_tag": null,
+       "tag_prompt": "gnome, tiny, pointy ears, pointy hat, brown hat, white beard, green tunic, red scarf, smile",
+       "desc_en": "a tiny friendly forest gnome with pointy ears, a tall brown pointy hat, green tunic and a red scarf"},
+      {"id": "sova", "name": "Sova", "count_tag": null,
+       "tag_prompt": "owl, brown feathers, big eyes, perched, branch",
+       "desc_en": "a wise old brown owl with big round eyes perched on a branch"}
+    ],
+    "locations": [
+      {"id": "path", "tag_prompt": "outdoors, forest, path, tree, moss, sunbeam, light rays, dappled sunlight"},
+      {"id": "stump", "tag_prompt": "outdoors, forest, tree stump, moss, mushroom, ferns, dappled sunlight"},
+      {"id": "house", "tag_prompt": "outdoors, forest, tiny house, house in tree, round door, lantern, flowers, warm lighting"}
+    ]
+  },
+  "storyboard": {
+    "title": "Záhada v lese",
+    "panels": [
+      {"shot": "establishing", "location_id": "path", "characters": [], "visual_tags": ["tall trees"],
+       "scene_en": "a dense green forest with sunbeams falling between tall trees onto a mossy path",
+       "bubbles": [{"kind": "narration", "text": "Hustý les. Mezi stromy svítí slunce."}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "path", "characters": [{"id": "terezka"}, {"id": "misa"}], "visual_tags": ["walking", "footprints", "looking down", "curious", "pointing"],
+       "scene_en": "Terezka walks along the forest path and points at tiny footprints in the mud, her grey cat Misa walking ahead",
+       "bubbles": [{"kind": "speech", "text": "Míšo, někdo tu nechal stopy. Pojďme je sledovat!"}], "sfx": [{"text": "Mňau!"}]},
+      {"shot": "medium", "location_id": "stump", "characters": [{"id": "terezka"}], "visual_tags": ["holding scarf", "red scarf", "small scarf", "curious", "squatting"],
+       "scene_en": "Terezka squats by an old mossy tree stump and holds up a tiny red scarf she found",
+       "bubbles": [{"kind": "speech", "text": "Komu patří?"}]},
+      {"shot": "medium", "location_id": "stump", "characters": [{"id": "sova"}], "visual_tags": ["no humans", "owl", "night", "looking at viewer", "wise"],
+       "scene_en": "a wise brown owl on a branch above the stump looks down with big round eyes",
+       "bubbles": [{"kind": "speech", "text": "Húú… tomu, kdo se bojí být sám."}]},
+      {"shot": "medium", "location_id": "stump", "characters": [{"id": "skritek"}], "visual_tags": ["no humans", "peeking out", "hollow", "tree stump", "shy", "surprised"],
+       "scene_en": "a tiny shy gnome with a pointy brown hat peeks out of a hollow in the tree stump",
+       "bubbles": [{"kind": "speech", "text": "Můj šátek! Děkuju. Ztratil jsem se."}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "stump", "characters": [{"id": "terezka"}, {"id": "misa"}, {"id": "skritek"}], "visual_tags": ["squatting", "kind smile", "cat", "rubbing", "size difference"],
+       "scene_en": "Terezka kneels kindly in front of the tiny gnome, her grey cat rubs against the gnome's little leg",
+       "bubbles": [{"kind": "speech", "text": "Neboj se. Míša a já tě dovedeme domů."}]},
+      {"shot": "wide", "location_id": "house", "characters": [{"id": "terezka"}, {"id": "skritek"}], "visual_tags": ["holding", "berry", "blueberry", "giving", "smile", "waving"],
+       "scene_en": "at a tiny house built into the roots of a tree, the gnome gives Terezka a handful of forest berries",
+       "bubbles": [{"kind": "speech", "text": "Jste nejlepší kamarádky. Tady máte lesní bobule."}, {"kind": "speech", "text": "Rádi jsme pomohli!"}]},
+      {"shot": "close-up", "location_id": "house", "characters": [{"id": "misa"}], "visual_tags": ["no humans", "closed eyes", "content", "purring", ":3"],
+       "scene_en": "close-up of Misa the grey cat with closed eyes, purring contentedly",
+       "bubbles": [{"kind": "narration", "text": "Míša spokojeně přede."}], "sfx": [{"text": "Vrrr…"}]}
+    ]
+  }
+}

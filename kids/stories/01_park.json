@@ -1,0 +1,55 @@
+{
+  "world": {
+    "id": "k_park", "title": "Veselý den v parku", "audience": "kids", "language": "cs", "style_id": "clean_webtoon",
+    "characters": [
+      {"id": "anicka", "name": "Anička", "count_tag": "1girl",
+       "tag_prompt": "child, brown hair, twintails, hair ribbon, brown eyes, smile, yellow shirt, short sleeves, blue overalls, white sneakers",
+       "desc_en": "Anicka, a cheerful 8-year-old girl with brown hair in two pigtails tied with red ribbons, yellow t-shirt and blue denim overalls"},
+      {"id": "maxik", "name": "Maxík", "count_tag": null,
+       "tag_prompt": "brown dog, puppy, floppy ears, red collar, dog tail",
+       "desc_en": "Maxik, her small playful brown puppy with floppy ears and a red collar"},
+      {"id": "novakova", "name": "Paní Nováková", "count_tag": "1girl",
+       "tag_prompt": "old woman, grey hair, hair bun, glasses, green cardigan, long skirt, basket, smile",
+       "desc_en": "Mrs. Novakova, a kind elderly lady with grey hair in a bun, round glasses and a green cardigan, holding a wicker basket of pastries"},
+      {"id": "tomas", "name": "Tomáš", "count_tag": "1boy",
+       "tag_prompt": "child, male child, short hair, black hair, messy hair, blue shirt, green shorts, bandaid on nose",
+       "desc_en": "Tomas, a clumsy 8-year-old boy with messy black hair, blue t-shirt, green shorts and a bandaid on his nose"}
+    ],
+    "locations": [
+      {"id": "park", "tag_prompt": "outdoors, park, grass, flowers, trees, path, blue sky, sunlight, day"},
+      {"id": "sand", "tag_prompt": "outdoors, park, sandbox, sand, playground, trees, sunlight, day"},
+      {"id": "bench", "tag_prompt": "outdoors, park, bench, trees, flowers, sunlight, afternoon"}
+    ]
+  },
+  "storyboard": {
+    "title": "Veselý den v parku",
+    "panels": [
+      {"shot": "establishing", "location_id": "park", "characters": [], "visual_tags": ["flower bed", "fountain", "playground"],
+       "scene_en": "a sunny city park full of green trees, colorful flower beds, winding paths and a sandbox playground in the distance",
+       "bubbles": [{"kind": "narration", "text": "Slunečné ráno v parku."}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "park", "characters": [{"id": "anicka"}, {"id": "maxik"}], "visual_tags": ["running", "leash", "holding leash", "open mouth", "happy"],
+       "scene_en": "Anicka runs happily along the park path holding Maxik on a leash, the puppy bounding beside her",
+       "bubbles": [{"kind": "speech", "text": "Maxíku, dnes bude nejlepší den! Pojďme hledat poklad!"}],
+       "sfx": [{"text": "HAF!"}]},
+      {"shot": "medium", "location_id": "sand", "characters": [{"id": "anicka"}, {"id": "maxik"}], "visual_tags": ["sitting", "digging", "holding shovel", "toy shovel", "excited", "sparkle"],
+       "scene_en": "Anicka kneels in the sandbox and proudly holds up an old red plastic toy shovel she just dug out, Maxik digging next to her",
+       "bubbles": [{"kind": "speech", "text": "Tohle je mapa! Tady je X!"}]},
+      {"shot": "wide", "location_id": "sand", "characters": [{"id": "maxik"}], "visual_tags": ["no humans", "running", "squirrel", "chasing", "motion lines"],
+       "scene_en": "Maxik the brown puppy suddenly dashes off across the playground after a red squirrel",
+       "bubbles": [{"kind": "narration", "text": "Maxík zahlédne veverku a vystřelí!"}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "park", "characters": [{"id": "anicka"}, {"id": "tomas"}], "visual_tags": ["collision", "falling", "ice cream", "dropping", "surprised", "open mouth", "motion lines"],
+       "scene_en": "Anicka, pulled along by the leash, bumps into Tomas; his ice cream cone flies out of his hand, both look surprised",
+       "bubbles": [{"kind": "shout", "text": "Ááá! Moje zmrzlina!"}, {"kind": "speech", "text": "Promiň! Maxík jen hledal poklad!"}],
+       "sfx": [{"text": "BUM!"}]},
+      {"shot": "close-up", "location_id": "park", "characters": [{"id": "maxik"}], "visual_tags": ["no humans", "licking", "tongue out", "ice cream", "on ground", "happy"],
+       "scene_en": "close-up of Maxik the puppy happily licking the dropped ice cream on the grass, wagging his tail",
+       "bubbles": [{"kind": "narration", "text": "Maxík olízne spadlou zmrzlinu a mává ocasem."}], "sfx": [{"text": "MLASK"}]},
+      {"shot": "medium", "location_id": "bench", "characters": [{"id": "novakova"}], "visual_tags": ["sitting", "on bench", "laughing", "holding basket", "bread", "cookie", "holding cookie"],
+       "scene_en": "Mrs. Novakova sits on a park bench laughing warmly and offers a cookie from her basket of pastries",
+       "bubbles": [{"kind": "speech", "text": "Tady máte sušenku pro statečného lovce pokladů."}]},
+      {"shot": "wide", "location_id": "bench", "characters": [{"id": "anicka"}, {"id": "maxik"}, {"id": "tomas"}], "visual_tags": ["laughing", "eating", "cookie", "holding cookie", "happy", "group"],
+       "scene_en": "Anicka, Tomas and Mrs. Novakova laugh together at the bench while Maxik happily chews a cookie at their feet",
+       "bubbles": [{"kind": "speech", "text": "Díky! Maxíku, jsi nejlepší pes na světě!"}, {"kind": "narration", "text": "Všichni se smějí a Maxík spokojeně žvýká."}]}
+    ]
+  }
+}

@@ -110,6 +110,15 @@ def choices_block(choices, title):
     return img
 
 
+def end_block(text):
+    """Closing card for a finished story (no reader choices)."""
+    img = Image.new("RGB", (WIDTH, 200), (245, 243, 250))
+    d = ImageDraw.Draw(img)
+    fnt = font("narration", 48)
+    d.text(((WIDTH - d.textlength(text, font=fnt)) / 2, 70), text, font=fnt, fill=INK)
+    return img
+
+
 def placeholder(panel, i):
     w, h = (1216, 832) if panel["shot"] in ("wide", "establishing") else (832, 1216)
     img = Image.new("RGB", (w, h), (200 + i * 6 % 50, 210, 225))
@@ -139,7 +148,7 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
 
     title = Image.new("RGB", (WIDTH, 160), BG)
     ImageDraw.Draw(title).text((40, 50), sb["title"], font=font("narration", 54), fill=INK)
-    end = choices_block(sb.get("choices", []), sb["title"])
+    end = choices_block(sb["choices"], sb["title"]) if sb.get("choices") else end_block(sb.get("end", "Konec"))
     total = title.height + sum(im.height + g for im, g in parts) + end.height
     strip = Image.new("RGB", (WIDTH, total), BG)
     y = 0

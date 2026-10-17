@@ -1,0 +1,51 @@
+{
+  "world": {
+    "id": "k_kitchen", "title": "Zábavný zmatek v kuchyni", "audience": "kids", "language": "cs", "style_id": "clean_webtoon",
+    "characters": [
+      {"id": "lucka", "name": "Lucka", "count_tag": "1girl",
+       "tag_prompt": "child, red hair, ponytail, green eyes, freckles, pink apron, striped shirt, smile",
+       "desc_en": "Lucka, a cheerful 8-year-old girl with a red ponytail, freckles and a pink apron over a striped shirt"},
+      {"id": "puntik", "name": "Puntík", "count_tag": null,
+       "tag_prompt": "hamster, brown hamster, small animal, round",
+       "desc_en": "Puntik, her tiny round brown hamster"},
+      {"id": "mama", "name": "Máma", "count_tag": "1girl",
+       "tag_prompt": "mature female, brown hair, long hair, ponytail, blue sweater, jeans",
+       "desc_en": "Mom, a patient woman with long brown hair in a ponytail and a blue sweater"},
+      {"id": "honzik", "name": "Honzík", "count_tag": "1boy",
+       "tag_prompt": "child, male child, red hair, short hair, freckles, green shirt, overalls",
+       "desc_en": "Honzik, Lucka's curious 5-year-old little brother with short red hair, freckles and a green shirt"}
+    ],
+    "locations": [
+      {"id": "kitchen", "tag_prompt": "indoors, kitchen, table, mixing bowl, cookie, baking, window, sunlight, cozy"}
+    ]
+  },
+  "storyboard": {
+    "title": "Zábavný zmatek v kuchyni",
+    "panels": [
+      {"shot": "establishing", "location_id": "kitchen", "characters": [], "visual_tags": ["flour", "rolling pin", "baking sheet", "oven"],
+       "scene_en": "a cheerful sunny kitchen, the table covered with mixing bowls, flour, eggs, a rolling pin and cookie cutters",
+       "bubbles": [{"kind": "narration", "text": "Veselá kuchyň plná mís a mouky."}], "gap_after": "small"},
+      {"shot": "medium", "location_id": "kitchen", "characters": [{"id": "lucka"}, {"id": "puntik"}], "visual_tags": ["hamster in bowl", "pointing", "happy", "cookie cutter"],
+       "scene_en": "Lucka smiles and points at her tiny brown hamster Puntik sitting inside an empty mixing bowl on the table",
+       "bubbles": [{"kind": "speech", "text": "Puntíku, ty budeš ochutnávač!"}]},
+      {"shot": "medium", "location_id": "kitchen", "characters": [{"id": "puntik"}], "visual_tags": ["no humans", "flour", "white powder", "cloud of flour", "jumping", "messy"],
+       "scene_en": "the hamster jumps into a bag of flour and a big white cloud of flour explodes over the table",
+       "bubbles": [], "sfx": [{"text": "PUF!"}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "kitchen", "characters": [{"id": "lucka"}, {"id": "honzik"}], "visual_tags": ["covered in flour", "white powder", "laughing", "pointing", "shocked"],
+       "scene_en": "everything is white with flour: Lucka is shocked while her little brother Honzik laughs and points at the flour-covered hamster",
+       "bubbles": [{"kind": "shout", "text": "Puntíku!!"}, {"kind": "speech", "text": "Haha, sněhulák!"}]},
+      {"shot": "medium", "location_id": "kitchen", "characters": [{"id": "mama"}, {"id": "lucka"}], "visual_tags": ["surprised", "doorway", "hands on hips", "embarrassed", "sweatdrop"],
+       "scene_en": "Mom stands in the kitchen doorway, surprised, while flour-covered Lucka smiles sheepishly",
+       "bubbles": [{"kind": "shout", "text": "Co se tady stalo?!"}, {"kind": "speech", "text": "Puntík chtěl pomoct…"}]},
+      {"shot": "wide", "location_id": "kitchen", "characters": [{"id": "lucka"}, {"id": "mama"}, {"id": "honzik"}], "visual_tags": ["cleaning", "broom", "rolling pin", "teamwork", "smile"],
+       "scene_en": "Mom, Lucka and Honzik clean up together and roll out new cookie dough, smiling",
+       "bubbles": [{"kind": "speech", "text": "Teď už jen opatrně."}]},
+      {"shot": "close-up", "location_id": "kitchen", "characters": [{"id": "puntik"}], "visual_tags": ["no humans", "eating", "holding food", "cookie", "crumbs", "happy"],
+       "scene_en": "close-up of tiny Puntik the hamster holding a small piece of cookie in his paws and nibbling it happily",
+       "bubbles": [{"kind": "narration", "text": "Puntík dostane malý kousek sušenky."}], "sfx": [{"text": "chrup"}]},
+      {"shot": "wide", "location_id": "kitchen", "characters": [{"id": "mama"}, {"id": "lucka"}, {"id": "honzik"}], "visual_tags": ["sitting", "at table", "cookie", "plate", "laughing", "family"],
+       "scene_en": "the family sits at the table with a plate of fresh cookies, everyone laughing, the hamster on the table",
+       "bubbles": [{"kind": "speech", "text": "Nejlepší pečení je to společné."}, {"kind": "speech", "text": "A nejlepší pomocník je Puntík!"}]}
+    ]
+  }
+}

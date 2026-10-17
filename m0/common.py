@@ -37,6 +37,12 @@ def save_json(path, obj):
 def http(method, url, body=None, headers=None, timeout=300):
     """Returns raw response bytes. body may be bytes or a JSON-serialisable obj."""
     headers = dict(headers or {})
+    # The public *.ol1n.com endpoints sit behind Cloudflare Access; the LAN ones ignore these.
+    # Cloudflare answers urllib's default User-Agent with 403 before Access looks at the token.
+    headers.setdefault("User-Agent", "webtoon-m0/1.0")
+    if os.environ.get("CF_ACCESS_CLIENT_ID"):
+        headers.setdefault("CF-Access-Client-Id", os.environ["CF_ACCESS_CLIENT_ID"])
+        headers.setdefault("CF-Access-Client-Secret", os.environ.get("CF_ACCESS_CLIENT_SECRET", ""))
     if body is not None and not isinstance(body, (bytes, bytearray)):
         body = json.dumps(body).encode()
         headers.setdefault("Content-Type", "application/json")

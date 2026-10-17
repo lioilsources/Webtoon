@@ -1,0 +1,50 @@
+{
+  "world": {
+    "id": "k_sea", "title": "Dobrodružství u moře", "audience": "kids", "language": "cs", "style_id": "clean_webtoon",
+    "characters": [
+      {"id": "eliska", "name": "Eliška", "count_tag": "1girl",
+       "tag_prompt": "child, blonde hair, long hair, blue eyes, straw hat, sun hat, white sundress, sandals",
+       "desc_en": "Eliska, a brave 9-year-old girl with long blonde hair, a big straw sun hat and a white sundress"},
+      {"id": "rybka", "name": "Rybka", "count_tag": null,
+       "tag_prompt": "white rabbit, bunny, black spot on ear, small animal",
+       "desc_en": "Rybka, her small white bunny with one black spot on its ear"},
+      {"id": "deda", "name": "Dědeček", "count_tag": "1boy",
+       "tag_prompt": "old man, grey hair, white beard, fisherman, bucket hat, yellow raincoat, rubber boots, smile",
+       "desc_en": "Grandpa, a calm old fisherman with a white beard, bucket hat and yellow raincoat"}
+    ],
+    "locations": [
+      {"id": "beach", "tag_prompt": "outdoors, beach, sand, ocean, waves, seashell, blue sky, clouds, day"},
+      {"id": "shore", "tag_prompt": "outdoors, beach, shore, waves, splashing, ocean, seagull, day"},
+      {"id": "fire", "tag_prompt": "outdoors, beach, night, campfire, sunset, starry sky, warm lighting"}
+    ]
+  },
+  "storyboard": {
+    "title": "Dobrodružství u moře",
+    "panels": [
+      {"shot": "establishing", "location_id": "beach", "characters": [], "visual_tags": ["horizon", "seagull"],
+       "scene_en": "a wide sandy beach with gentle turquoise waves, seashells in the sand and seagulls in a bright summer sky",
+       "bubbles": [{"kind": "narration", "text": "Široká písčitá pláž, vlny a mušle."}], "gap_after": "small"},
+      {"shot": "medium", "location_id": "beach", "characters": [{"id": "eliska"}, {"id": "rybka"}], "visual_tags": ["holding basket", "basket", "rabbit in basket", "smile", "walking"],
+       "scene_en": "Eliska walks along the beach carrying a wicker basket, her white bunny Rybka peeking out and cleaning its ear with a paw",
+       "bubbles": [{"kind": "speech", "text": "Rybko, dnes najdeme nejkrásnější mušli!"}, {"kind": "narration", "text": "Rybka si čistí ouško."}]},
+      {"shot": "wide", "location_id": "shore", "characters": [{"id": "eliska"}, {"id": "rybka"}], "visual_tags": ["squatting", "picking up", "seashell", "rabbit", "hopping", "surprised", "reaching"],
+       "scene_en": "Eliska squats picking up seashells while Rybka the bunny hops out of the basket towards the waves; Eliska reaches out in alarm",
+       "bubbles": [{"kind": "shout", "text": "Ne! Voda není pro králíky!"}], "sfx": [{"text": "HOP HOP"}]},
+      {"shot": "medium", "location_id": "shore", "characters": [], "visual_tags": ["no humans", "seagull", "flying", "bird", "holding seashell", "beak"],
+       "scene_en": "a curious seagull swoops down and snatches a pretty seashell in its beak",
+       "bubbles": [{"kind": "narration", "text": "Racek se snese a sebere mušli!"}], "sfx": [{"text": "KRÁÁ!"}], "gap_after": "small"},
+      {"shot": "medium", "location_id": "shore", "characters": [{"id": "rybka"}], "visual_tags": ["no humans", "scared", "trembling", "waves", "splashing"],
+       "scene_en": "little white bunny Rybka trembles at the edge of the water as a small wave rolls towards it",
+       "bubbles": [{"kind": "narration", "text": "Rybka se bojí vln."}]},
+      {"shot": "wide", "location_id": "shore", "characters": [{"id": "eliska"}, {"id": "deda"}], "visual_tags": ["fishing net", "holding net", "worried", "pointing", "gentle smile"],
+       "scene_en": "Grandpa the fisherman arrives with a fishing net, Eliska points worriedly at the bunny near the waves",
+       "bubbles": [{"kind": "speech", "text": "Dědo, pomoz! Rybka chce plavat!"}, {"kind": "speech", "text": "Pojď sem, malý hrdino."}]},
+      {"shot": "close-up", "location_id": "shore", "characters": [{"id": "deda"}, {"id": "rybka"}], "visual_tags": ["holding animal", "rabbit", "gentle", "hands", "smile"],
+       "scene_en": "close-up of grandpa's big gentle hands carefully lifting the little white bunny out of the wet sand",
+       "bubbles": [{"kind": "narration", "text": "Dědeček Rybku jemně zvedne."}]},
+      {"shot": "wide", "location_id": "fire", "characters": [{"id": "eliska"}, {"id": "rybka"}, {"id": "deda"}], "visual_tags": ["sitting", "campfire", "holding seashell", "rabbit on lap", "smile", "happy"],
+       "scene_en": "evening by a campfire on the beach: Eliska holds a big beautiful seashell, Rybka the bunny rests on her lap, grandpa smiles beside them",
+       "bubbles": [{"kind": "speech", "text": "Vidíš? I bez plavání jsme našli poklad."}, {"kind": "narration", "text": "Rybka odpočívá na klíně. Všichni se usmívají."}]}
+    ]
+  }
+}

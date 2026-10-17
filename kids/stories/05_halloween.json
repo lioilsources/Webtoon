@@ -1,0 +1,53 @@
+{
+  "world": {
+    "id": "k_halloween", "title": "Halloweenská noc", "audience": "kids", "language": "cs", "style_id": "clean_webtoon",
+    "characters": [
+      {"id": "natalka", "name": "Natálka", "count_tag": "1girl",
+       "tag_prompt": "child, purple hair, long hair, braid, witch hat, witch costume, black dress, purple cape, holding broom",
+       "desc_en": "Natalka, a brave 9-year-old girl dressed as a little witch with a pointy black hat, purple cape and a braid"},
+      {"id": "stinek", "name": "Stínek", "count_tag": null,
+       "tag_prompt": "black dog, white stripe, dog, medium dog",
+       "desc_en": "Stinek, her black dog with a single white stripe down his face"},
+      {"id": "sofie", "name": "Sofie", "count_tag": "1girl",
+       "tag_prompt": "child, blonde hair, short hair, ghost costume, white sheet, holding candy bag",
+       "desc_en": "Sofie, her friend in a cute white ghost costume with her blonde head poking out"},
+      {"id": "duch", "name": "Duch", "count_tag": null,
+       "tag_prompt": "ghost, cute, translucent, floating, smile, round eyes, sheet ghost",
+       "desc_en": "a friendly translucent glowing ghost with a round shape and a gentle smile"}
+    ],
+    "locations": [
+      {"id": "street", "tag_prompt": "outdoors, autumn, evening, street, jack-o'-lantern, pumpkin, string lights, autumn leaves, halloween"},
+      {"id": "oldhouse", "tag_prompt": "outdoors, night, old house, abandoned, door, spider web, full moon, halloween"},
+      {"id": "hall", "tag_prompt": "indoors, night, dark, hallway, candle, candlelight, old furniture, halloween"}
+    ]
+  },
+  "storyboard": {
+    "title": "Halloweenská noc",
+    "panels": [
+      {"shot": "establishing", "location_id": "street", "characters": [], "visual_tags": ["orange sky", "dusk"],
+       "scene_en": "an autumn evening street decorated with glowing jack-o-lanterns, fairy lights and fallen orange leaves",
+       "bubbles": [{"kind": "narration", "text": "Podzimní večer, dýně a světýlka."}], "gap_after": "small"},
+      {"shot": "wide", "location_id": "street", "characters": [{"id": "natalka"}, {"id": "stinek"}, {"id": "sofie"}], "visual_tags": ["walking", "lantern", "holding lantern", "determined", "smile"],
+       "scene_en": "Natalka the little witch walks bravely down the street with Sofie in her ghost costume and black dog Stinek, who growls a little",
+       "bubbles": [{"kind": "speech", "text": "Stínku, dnes budeme stateční!"}], "sfx": [{"text": "Vrrr…"}]},
+      {"shot": "establishing", "location_id": "oldhouse", "characters": [], "visual_tags": ["creepy", "broken window", "dead tree"],
+       "scene_en": "an old empty-looking house with a creaking half-open door, cobwebs and a full moon behind it, spooky but not scary",
+       "bubbles": [{"kind": "narration", "text": "Zevnitř se ozve tiché…"}], "sfx": [{"text": "BÚÚ…"}], "gap_after": "small"},
+      {"shot": "medium", "location_id": "oldhouse", "characters": [{"id": "sofie"}, {"id": "natalka"}], "visual_tags": ["scared", "hugging", "trembling", "determined", "pointing"],
+       "scene_en": "Sofie in her ghost costume clings to Natalka nervously, while Natalka looks determined and points at the door",
+       "bubbles": [{"kind": "shout", "text": "Jééé… to je strašidelné!"}, {"kind": "speech", "text": "Pojďme se podívat. Stínek nás ochrání."}]},
+      {"shot": "wide", "location_id": "hall", "characters": [{"id": "duch"}], "visual_tags": ["no humans", "glowing", "floating", "sad", "candle"],
+       "scene_en": "in a dark hallway lit by candles, a cute translucent friendly ghost floats looking a bit sad",
+       "bubbles": [{"kind": "speech", "text": "Nebojte se… jen jsem ztratil svou dýni."}]},
+      {"shot": "medium", "location_id": "hall", "characters": [{"id": "natalka"}], "visual_tags": ["smile", "determined", "candlelight", "fist pump"],
+       "scene_en": "Natalka the little witch smiles confidently in the candlelit hallway",
+       "bubbles": [{"kind": "speech", "text": "My ti pomůžeme ji najít!"}], "gap_after": "small"},
+      {"shot": "medium", "location_id": "hall", "characters": [{"id": "stinek"}], "visual_tags": ["no humans", "under table", "jack-o'-lantern", "barking", "tail wagging"],
+       "scene_en": "Stinek the black dog finds a glowing jack-o-lantern under an old table and barks proudly",
+       "bubbles": [], "sfx": [{"text": "HAF HAF!"}]},
+      {"shot": "wide", "location_id": "street", "characters": [{"id": "natalka"}, {"id": "sofie"}, {"id": "duch"}], "visual_tags": ["night", "holding lantern", "candy", "jack-o'-lantern", "laughing", "waving"],
+       "scene_en": "outside at night the happy ghost holds his pumpkin, the girls hold lanterns and candy, the black dog wags his tail, everyone laughing",
+       "bubbles": [{"kind": "speech", "text": "Děkuji, statečné holky a pejsku. Šťastný Halloween!"}, {"kind": "speech", "text": "Vidíš, Stínku? I duchové můžou být kamarádi."}]}
+    ]
+  }
+}
