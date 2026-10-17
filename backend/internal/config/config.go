@@ -4,6 +4,7 @@ package config
 import (
 	"os"
 	"strconv"
+	"strings"
 	"time"
 )
 
@@ -22,6 +23,17 @@ type Config struct {
 	MaxAttempts  int           // WEBTOON_MAX_ATTEMPTS for ordinary failures
 	Seed         bool          // WEBTOON_SEED: import the embedded M0 world + styles on startup
 	SeedOwner    string        // WEBTOON_SEED_OWNER
+	CORSOrigins  []string      // WEBTOON_CORS_ORIGINS: comma-separated browser origins allowed to call the API ("*" = any)
+}
+
+func envList(key string) []string {
+	var out []string
+	for _, v := range strings.Split(os.Getenv(key), ",") {
+		if v = strings.TrimSpace(v); v != "" {
+			out = append(out, v)
+		}
+	}
+	return out
 }
 
 func envOr(key, fallback string) string {
@@ -58,6 +70,7 @@ func Load() Config {
 		DatabaseURL:  envOr("DATABASE_URL", "postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable"),
 		MediaDir:     envOr("MEDIA_DIR", "./media"),
 		MediaBaseURL: envOr("MEDIA_BASE_URL", "/media"),
+		CORSOrigins:  envList("WEBTOON_CORS_ORIGINS"),
 		Workers:      envInt("WORKERS", 2),
 		Mode:         envOr("MODE", "all"),
 		ListenAddr:   envOr("LISTEN_ADDR", ":8095"),

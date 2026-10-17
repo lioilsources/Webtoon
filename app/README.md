@@ -31,6 +31,13 @@ flutter run -d macos \
 | `WEBTOON_USER` | `player` | posílá se jako `X-User-ID` (auth je zatím stub) |
 | `WEBTOON_OPEN_CAMPAIGN` | – | jen pro vývoj: po startu rovnou otevře čtečku kampaně `cp_…` |
 
+Web (Chrome): backend musí povolit origin, např. `WEBTOON_CORS_ORIGINS=http://localhost:8096`.
+
+```sh
+flutter build web --dart-define=WEBTOON_API=http://localhost:8095 --dart-define=WEBTOON_USER=player
+python3 -m http.server 8096 -d build/web
+```
+
 Android emulátor: `WEBTOON_API=http://10.0.2.2:8095`. Na dev backend se chodí přes čisté http:
 Android má `usesCleartextTraffic`, iOS `NSAllowsLocalNetworking` (localhost, `.local`), macOS
 entitlement `network.client`.
@@ -55,6 +62,11 @@ flutter test
   (fronta + „waiting“, průběh k/n, výsledky, nejlepší → reference, polling skončí), upload/přeřazení/
   odebrání referencí, limit 8 MiB, IP-Adapter nastavení, nová postava + smazání, lokace, dashboard,
   „Zahraj si vlastní svět“, „Upravit“ v detailu světa.
+- `integration_test/author_live_test.dart`: autor **proti živému backendu** (bez fake): nový svět, základ,
+  styl, práva, pravidlo + uzel kánonu, nová postava, tagy, LLM tlačítko (tagy, nebo česká hláška když LLM
+  neběží), upload reference postavy i lokace, dashboard; po každém kroku ověří stav přes API. Negeneruje
+  nic na GPU (žádný sheet ani kampaň). Spuštění: backend `MODE=api`, pak
+  `flutter test integration_test/author_live_test.dart -d macos --dart-define=WEBTOON_API=http://localhost:8095 --dart-define=WEBTOON_USER=author_live`.
 - `test/api_test.dart` navíc: autorské endpointy (cesty, těla, multipart `file`, 204 u DELETE, parsování
   `stats`, `sheet`, `ip_adapter`, `reference_urls`, frakcí).
 

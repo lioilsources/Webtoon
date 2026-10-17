@@ -44,6 +44,7 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 | `LISTEN_ADDR` | `:8095` | |
 | `WEBTOON_BACKOFF` | `5m` | odklad jobu, když LLM / ComfyUI / WD14 neodpovídá |
 | `WEBTOON_MAX_ATTEMPTS` | `3` | pokusy při běžné chybě (exponenciální backoff od 30 s) |
+| `WEBTOON_CORS_ORIGINS` | – | origins pro Flutter web, čárkami (`http://localhost:8096`, `*`); prázdné = bez CORS |
 | `WEBTOON_SEED`, `WEBTOON_SEED_OWNER` | `false`, `seed` | seed při startu |
 
 ## Pipeline (worker)

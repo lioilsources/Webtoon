@@ -124,7 +124,7 @@ func (c *Client) complete(ctx context.Context, system, user string, temperature 
 	}
 	if resp.StatusCode >= 300 {
 		e := fmt.Errorf("POST %s/chat/completions → %d: %s", c.URL, resp.StatusCode, truncate(raw, 500))
-		if upstream.StatusUnavailable(resp.StatusCode) {
+		if upstream.StatusUnavailable(resp.StatusCode) || backendDown(resp.StatusCode, raw) {
 			return "", upstream.Unavailable("llm", e)
 		}
 		return "", e
@@ -153,4 +153,15 @@ func truncate(b []byte, n int) string {
 		return string(b[:n]) + "..."
 	}
 	return string(b)
+}
+
+// backendDown: LiteLLM keeps answering while the model behind it is off schedule, and reports
+// that as a 500 "Connection error" (no fallback). Treat it like a 502 so jobs wait, not fail.
+func backendDown(code int, body []byte) bool {
+	if code != http.StatusInternalServerError {
+		return false
+	}
+	b := string(body)
+	return strings.Contains(b, "Connection error") || strings.Contains(b, "No fallback model group") ||
+		strings.Contains(b, "APIConnectionError")
 }

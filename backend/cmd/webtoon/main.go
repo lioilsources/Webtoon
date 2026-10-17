@@ -211,7 +211,7 @@ func serve(ctx context.Context, cfg config.Config) error {
 		}
 		srv := &http.Server{Addr: cfg.ListenAddr, ReadHeaderTimeout: 10 * time.Second,
 			Handler: api.New(api.Config{MediaDir: cfg.MediaDir, MediaBaseURL: cfg.MediaBaseURL, MaxAttempts: cfg.MaxAttempts,
-				LLM: llmClient, Vocab: vocab}, s, waker).Handler()}
+				LLM: llmClient, Vocab: vocab, CORSOrigins: cfg.CORSOrigins}, s, waker).Handler()}
 		go func() {
 			<-ctx.Done()
 			shut, cancel := context.WithTimeout(context.Background(), 10*time.Second)

@@ -45,8 +45,14 @@ class Hint extends StatelessWidget {
   );
 }
 
+/// The newest message replaces the current one instead of queueing behind it
+/// (an error must not wait 4 s behind "Uloženo.").
 void showSnack(BuildContext context, String text) =>
-    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(text)));
+    _replaceSnack(ScaffoldMessenger.of(context), text);
+
+void _replaceSnack(ScaffoldMessengerState messenger, String text) => messenger
+  ..hideCurrentSnackBar()
+  ..showSnackBar(SnackBar(content: Text(text)));
 
 /// Runs [fn], shows the Czech error message of an [ApiException] as a snack bar.
 Future<T?> guarded<T>(BuildContext context, Future<T> Function() fn) async {
@@ -54,7 +60,7 @@ Future<T?> guarded<T>(BuildContext context, Future<T> Function() fn) async {
   try {
     return await fn();
   } on ApiException catch (e) {
-    messenger.showSnackBar(SnackBar(content: Text(e.message)));
+    _replaceSnack(messenger, e.message);
     return null;
   }
 }

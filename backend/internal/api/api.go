@@ -27,6 +27,7 @@ type Config struct {
 	MaxUpload    int64          // reference image upload limit, default 8 MiB
 	LLM          llm.JSONCaller // tag_prompt generation (nil = 503)
 	Vocab        *tags.Vocab    // WD14 vocabulary for the tag repair pass
+	CORSOrigins  []string       // browser origins allowed to call the API (Flutter web); empty = no CORS headers
 }
 
 type Server struct {
@@ -88,7 +89,38 @@ func (s *Server) Handler() http.Handler {
 
 	mux.HandleFunc("GET /media/{path...}", s.media)
 
-	return s.withUser(s.logRequests(mux))
+	return s.withCORS(s.withUser(s.logRequests(mux)))
+}
+
+// withCORS lets the Flutter web build call the API from another origin and answers preflights.
+func (s *Server) withCORS(next http.Handler) http.Handler {
+	if len(s.cfg.CORSOrigins) == 0 {
+		return next
+	}
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if origin := r.Header.Get("Origin"); origin != "" && s.corsAllowed(origin) {
+			h := w.Header()
+			h.Set("Access-Control-Allow-Origin", origin)
+			h.Add("Vary", "Origin")
+			if r.Method == http.MethodOptions && r.Header.Get("Access-Control-Request-Method") != "" {
+				h.Set("Access-Control-Allow-Methods", "GET, POST, PATCH, DELETE, OPTIONS")
+				h.Set("Access-Control-Allow-Headers", "Content-Type, X-User-ID")
+				h.Set("Access-Control-Max-Age", "600")
+				w.WriteHeader(http.StatusNoContent)
+				return
+			}
+		}
+		next.ServeHTTP(w, r)
+	})
+}
+
+func (s *Server) corsAllowed(origin string) bool {
+	for _, o := range s.cfg.CORSOrigins {
+		if o == "*" || o == origin {
+			return true
+		}
+	}
+	return false
 }
 
 // --- auth stub -----------------------------------------------------------------

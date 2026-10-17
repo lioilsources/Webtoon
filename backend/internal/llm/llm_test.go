@@ -72,6 +72,13 @@ func TestClientUnavailable(t *testing.T) {
 	if _, err := c.JSON(context.Background(), "s", "u", 0); !upstream.IsUnavailable(err) {
 		t.Fatalf("connection refused must be unavailable: %v", err)
 	}
+	litellm := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		http.Error(w, `{"error":{"message":"litellm.InternalServerError: OpenAIException - Connection error.No fallback model group found"}}`, http.StatusInternalServerError)
+	}))
+	defer litellm.Close()
+	if _, err := llm.New(litellm.URL, "m").JSON(context.Background(), "s", "u", 0); !upstream.IsUnavailable(err) {
+		t.Fatalf("LiteLLM 500 connection error must be unavailable: %v", err)
+	}
 	bad := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "bad", http.StatusBadRequest)
 	}))
