@@ -82,7 +82,7 @@
           "shelf",
           "dog under table"
         ],
-        "scene_en": "Elenka stands on tiptoes on a wooden stool stretching up towards a high shelf, the pug lies under the table below",
+        "scene_en": "a little girl in an apron stands on tiptoes on a wooden stool reaching for a high shelf; far below under the table lies a small pug",
         "bubbles": [
           {
             "kind": "speech",
@@ -91,7 +91,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "dog wearing clothes",
+          "dog wearing dress",
+          "dog in apron"
+        ],
+        "seed": 20100
       },
       {
         "shot": "close-up",
@@ -174,7 +180,7 @@
           "clapping",
           "happy"
         ],
-        "scene_en": "the pug holds a yellowed rolled-up paper tied with a red ribbon in his mouth, Elenka claps her hands in delight",
+        "scene_en": "a girl claps her hands happily; at her feet a pug holds a rolled-up paper with a red ribbon in his mouth",
         "bubbles": [
           {
             "kind": "speech",
@@ -183,7 +189,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "dog wearing clothes",
+          "dog wearing dress",
+          "dog in apron"
+        ],
+        "seed": 20407
       },
       {
         "shot": "medium",
@@ -237,7 +249,7 @@
           "happy",
           "family"
         ],
-        "scene_en": "grandma holds the old recipe and laughs with Elenka while the pug sits proudly waiting for a reward",
+        "scene_en": "grandma holds an old paper recipe and laughs with the little girl; a pug sits proudly on the floor in front of them",
         "bubbles": [
           {
             "kind": "pet",
@@ -248,7 +260,13 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "dog wearing clothes",
+          "dog wearing dress",
+          "dog in apron"
+        ],
+        "seed": 20614
       }
     ]
   }

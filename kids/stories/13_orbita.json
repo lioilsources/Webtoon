@@ -114,7 +114,11 @@
           "fur standing on end",
           "jumping",
           "control panel",
-          "sparks"
+          "sparks",
+          "feral",
+          "quadruped",
+          "animal focus",
+          "on all fours"
         ],
         "scene_en": "the ginger two-tailed cat with bristling fur jumps onto the main control panel, both tails pointing at the right fan",
         "bubbles": [
@@ -127,7 +131,17 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "anthro",
+          "humanoid",
+          "standing on two legs",
+          "human body",
+          "bipedal",
+          "clothes on animal",
+          "mask"
+        ],
+        "seed": 20207
       },
       {
         "shot": "establishing",
@@ -167,12 +181,22 @@
           "repairing",
           "cat in space helmet",
           "floating",
-          "holding tool in mouth"
+          "holding tool in mouth",
+          "(1girl:1.2)",
+          "cat",
+          "feral"
         ],
         "scene_en": "Viktorie in a space helmet clings magnetically to the hull replacing a burnt part, the cat in a tiny helmet floats beside her holding a tool in his mouth",
         "bubbles": [],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "cat ears",
+          "animal ears",
+          "anthro",
+          "kemonomimi"
+        ],
+        "seed": 20400
       },
       {
         "shot": "medium",
@@ -240,7 +264,13 @@
           "space helmet",
           "floating",
           "closed eyes",
-          "content"
+          "content",
+          "feral",
+          "quadruped",
+          "animal focus",
+          "on all fours",
+          "(cat:1.3)",
+          "cat in space helmet"
         ],
         "scene_en": "the ginger cat floats in his tiny space helmet next to the ship, eyes closed, purring",
         "bubbles": [
@@ -252,7 +282,19 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "anthro",
+          "humanoid",
+          "standing on two legs",
+          "human body",
+          "bipedal",
+          "clothes on animal",
+          "mask",
+          "astronaut suit",
+          "robot"
+        ],
+        "seed": 20714
       }
     ]
   }
