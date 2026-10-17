@@ -79,13 +79,21 @@ class SheetImage {
   final List<String> missing;
   final String status; // ok | unsafe
 
+  /// Ratings over the audience's threshold, e.g. {"sensitive": 0.87} in a kids world.
+  final Map<String, double> unsafe;
+
   const SheetImage({
     this.seed = 0,
     this.imageUrl,
     this.recall = 0,
     this.missing = const [],
     this.status = 'ok',
+    this.unsafe = const {},
   });
+
+  /// Rejected only as "sensitive" (tight or revealing clothes), i.e. only for kids.
+  bool get onlySensitive =>
+      unsafe.keys.every((k) => k == 'sensitive') && unsafe.isNotEmpty;
 
   factory SheetImage.fromJson(Map<String, dynamic> j) => SheetImage(
     seed: integer(j['seed']),
@@ -93,6 +101,10 @@ class SheetImage {
     recall: dbl(j['recall']) ?? 0,
     missing: strList(j['missing']),
     status: str(j['status'], 'ok'),
+    unsafe: {
+      for (final e in ((j['unsafe'] as Map?) ?? const {}).entries)
+        '${e.key}': dbl(e.value) ?? 0,
+    },
   );
 }
 

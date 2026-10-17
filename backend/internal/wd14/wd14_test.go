@@ -23,9 +23,28 @@ func TestSafetyThresholds(t *testing.T) {
 		{map[string]float64{"questionable": 0.4567, "explicit": 0.5}, map[string]float64{"questionable": 0.457, "explicit": 0.5}},
 	}
 	for _, c := range cases {
-		if got := wd14.Safety(&wd14.Tags{Rating: c.rating}); !reflect.DeepEqual(got, c.want) {
+		if got := wd14.Safety(&wd14.Tags{Rating: c.rating}, "teen"); !reflect.DeepEqual(got, c.want) {
 			t.Errorf("Safety(%v) = %v, want %v", c.rating, got, c.want)
 		}
+	}
+}
+
+func TestSafetyByAudience(t *testing.T) {
+	tight := &wd14.Tags{Rating: map[string]float64{"general": 0.1, "sensitive": 0.87, "questionable": 0.003}}
+	if got := wd14.Safety(tight, "teen"); len(got) != 0 {
+		t.Errorf("teen: %v", got)
+	}
+	if got := wd14.Safety(tight, "kids"); !reflect.DeepEqual(got, map[string]float64{"sensitive": 0.87}) {
+		t.Errorf("kids: %v", got)
+	}
+	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"sensitive": 0.5}}, "kids"); len(got) != 0 {
+		t.Errorf("kids at the threshold: %v", got)
+	}
+	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, "adult"); len(got) != 0 {
+		t.Errorf("adult: %v", got)
+	}
+	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, ""); len(got) == 0 {
+		t.Error("unknown audience must be checked like teen")
 	}
 }
 

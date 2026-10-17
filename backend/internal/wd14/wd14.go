@@ -18,8 +18,23 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/upstream"
 )
 
-// Unsafe holds the rating thresholds for audience-safe panels.
+// Unsafe holds the rating thresholds for audience-safe (teen) panels.
 var Unsafe = map[string]float64{"explicit": 0.2, "questionable": 0.3}
+
+// UnsafeKids adds "sensitive" (skin-tight or revealing clothes, suggestive poses):
+// fine for teens, not for a kids world.
+var UnsafeKids = map[string]float64{"explicit": 0.2, "questionable": 0.3, "sensitive": 0.5}
+
+// Thresholds for World.Audience; adult worlds are not checked (nil).
+func Thresholds(audience string) map[string]float64 {
+	switch audience {
+	case "adult":
+		return nil
+	case "kids":
+		return UnsafeKids
+	}
+	return Unsafe
+}
 
 const (
 	DesignThreshold = 0.35
@@ -70,10 +85,10 @@ func (c *Client) Tag(ctx context.Context, png []byte) (*Tags, error) {
 
 func round3(f float64) float64 { return math.Round(f*1000) / 1000 }
 
-// Safety returns the ratings over their threshold (empty = safe).
-func Safety(t *Tags) map[string]float64 {
+// Safety returns the ratings over the audience's thresholds (empty = safe).
+func Safety(t *Tags, audience string) map[string]float64 {
 	bad := map[string]float64{}
-	for k, lim := range Unsafe {
+	for k, lim := range Thresholds(audience) {
 		if v := t.Rating[k]; v > lim {
 			bad[k] = round3(v)
 		}

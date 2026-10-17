@@ -66,6 +66,9 @@ class FakeWebtoonApi implements WebtoonApi {
   final Map<String, List<Map<String, dynamic>>> sheetScripts = {};
   final Map<String, CharacterSheet> sheets = {};
   int sheetFetches = 0;
+
+  /// When set, every sheet candidate is rejected with these ratings and the sheet fails.
+  Map<String, double>? sheetUnsafe;
   final Map<String, List<Map<String, dynamic>>> episodeScripts;
 
   /// Episode JSON served for an id created by [continueCampaign].
@@ -395,7 +398,8 @@ class FakeWebtoonApi implements WebtoonApi {
       'image_url': '/media/characters/$worldId/$characterId/sheet_${id}_$k.png',
       'recall': [0.5, 0.75, 0.9, 0.6][k % 4],
       'missing': k == 2 ? <String>[] : ['freckles'],
-      'status': 'ok',
+      'status': sheetUnsafe == null ? 'ok' : 'unsafe',
+      if (sheetUnsafe != null) 'unsafe': sheetUnsafe,
     };
     Map<String, dynamic> snap(String status, int done, {String error = ''}) => {
       'id': id,
@@ -412,7 +416,10 @@ class FakeWebtoonApi implements WebtoonApi {
     sheetScripts[id] = [
       snap('queued', 0, error: 'waiting: comfyui unavailable (next try 12:00)'),
       snap('rendering', 2),
-      snap('ready', seeds),
+      if (sheetUnsafe == null)
+        snap('ready', seeds)
+      else
+        snap('failed', seeds, error: 'all $seeds candidates unsafe'),
     ];
     final s = CharacterSheet.fromJson(
       snap('queued', 0, error: 'waiting: comfyui unavailable (next try 12:00)'),

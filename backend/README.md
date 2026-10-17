@@ -56,8 +56,8 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
    storyboard s `warnings`. Pak se uloží panely a pro každý se zařadí panel job (+ id voleb `c1..c3`, `free`).
 2. **panel job**: prompt (pořadí quality → count → character tag_prompt → artist/style → shot → scene → location → SFW,
    odstranění negativů, které koliduje s pozitivem) → ComfyUI (eps/v-pred, IP-Adapter, pokud má postava
-   `identity_level=ip_adapter` a referenci v `MEDIA_DIR`) → WD14 safety (`explicit>0.2`, `questionable>0.3`,
-   max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
+   `identity_level=ip_adapter` a referenci v `MEDIA_DIR`) → WD14 safety podle `audience` světa (teen: `explicit>0.2`, `questionable>0.3`;
+   kids navíc `sensitive>0.5`, tj. přiléhavé/odhalující oblečení; adult bez kontroly), max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
    `panels_ready++`, identity recall per postava.
    - **Záběr řídí tagy postavy** (port `m0/prompts.py`): close-up vynechá design tagy spodní poloviny
      (`LOWER_RE`: shorts, skirt, pants, pantyhose, thighhighs, legwear, socks, footwear, boots, shoes) a nechá

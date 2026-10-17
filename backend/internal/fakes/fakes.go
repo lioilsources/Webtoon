@@ -232,11 +232,12 @@ func (f *Comfy) Uploads() []string {
 // WD14 answers /tag. Unsafe(n) makes the next n answers explicit.
 type WD14 struct {
 	*httptest.Server
-	Down     atomic.Bool
-	unsafe   atomic.Int32
-	Always   atomic.Bool // every answer explicit
-	Tags     map[string]float64
-	Requests atomic.Int32
+	Down      atomic.Bool
+	unsafe    atomic.Int32
+	Always    atomic.Bool // every answer explicit
+	Sensitive float64     // "sensitive" rating of the safe answers (default 0.08)
+	Tags      map[string]float64
+	Requests  atomic.Int32
 }
 
 func NewWD14(general map[string]float64) *WD14 {
@@ -252,7 +253,11 @@ func NewWD14(general map[string]float64) *WD14 {
 			return
 		}
 		f.Requests.Add(1)
-		rating := map[string]float64{"general": 0.9, "sensitive": 0.08, "questionable": 0.01, "explicit": 0.001}
+		sensitive := f.Sensitive
+		if sensitive == 0 {
+			sensitive = 0.08
+		}
+		rating := map[string]float64{"general": 0.9, "sensitive": sensitive, "questionable": 0.01, "explicit": 0.001}
 		if f.Always.Load() || f.unsafe.Add(-1) >= 0 {
 			rating = map[string]float64{"general": 0.01, "sensitive": 0.1, "questionable": 0.2, "explicit": 0.9}
 		}

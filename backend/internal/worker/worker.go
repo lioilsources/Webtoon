@@ -304,9 +304,10 @@ func BaseSeed(episodeID string, idx int) int64 {
 	return int64(h.Sum32()%1_000_000_000) + int64(idx)*100
 }
 
-// render runs one prompt through ComfyUI with the WD14 safety reseeds (max wd14.MaxReseed).
+// render runs one prompt through ComfyUI with the WD14 safety reseeds (max wd14.MaxReseed),
+// using the thresholds of the world's audience (wd14.Thresholds).
 // Returns the last image, its tags, the unsafe ratings (empty = safe) and the seed used.
-func (w *Worker) render(ctx context.Context, pr *prompt.Result, seed int64, prefix string, ip *comfy.IPAdapter, sfw bool) (
+func (w *Worker) render(ctx context.Context, pr *prompt.Result, seed int64, prefix string, ip *comfy.IPAdapter, audience string) (
 	png []byte, tagged *wd14.Tags, bad map[string]float64, used int64, attempts []RenderAttempt, err error) {
 	for attempt := 0; attempt <= wd14.MaxReseed; attempt++ {
 		s := seed
@@ -323,10 +324,7 @@ func (w *Worker) render(ctx context.Context, pr *prompt.Result, seed int64, pref
 		if err != nil {
 			return nil, nil, nil, 0, nil, err
 		}
-		bad = map[string]float64{}
-		if sfw {
-			bad = wd14.Safety(tagged)
-		}
+		bad = wd14.Safety(tagged, audience)
 		attempts = append(attempts, RenderAttempt{Seed: s, Unsafe: bad})
 		used = s
 		if len(bad) == 0 {
@@ -374,7 +372,7 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 		seed = rand.Int64N(1 << 31)
 	}
 	prefix := fmt.Sprintf("webtoon/%s/p%02d", pp.EpisodeID, pp.Panel)
-	png, tagged, bad, seed, attempts, err := w.render(ctx, pr, seed, prefix, ip, sfw)
+	png, tagged, bad, seed, attempts, err := w.render(ctx, pr, seed, prefix, ip, ec.World.Audience)
 	if err != nil {
 		return err
 	}
@@ -517,7 +515,7 @@ func (w *Worker) sheetJob(ctx context.Context, job *Job) error {
 	base := BaseSeed(sh.ID, 0)
 	for k := len(images); k < sh.Seeds; k++ {
 		prefix := fmt.Sprintf("webtoon/sheets/%s/s%d", sh.ID, k)
-		png, tagged, bad, seed, attempts, err := w.render(ctx, pr, base+int64(k), prefix, nil, sfw)
+		png, tagged, bad, seed, attempts, err := w.render(ctx, pr, base+int64(k), prefix, nil, sc.World.Audience)
 		if err != nil {
 			return err
 		}

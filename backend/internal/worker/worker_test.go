@@ -474,6 +474,26 @@ func TestSheetComfyDownResumes(t *testing.T) {
 	}
 }
 
+func TestKidsWorldRejectsSensitive(t *testing.T) {
+	h := newHarness(t)
+	h.wd14.Sensitive = 0.87 // skin-tight outfit: passes for teens
+	h.store.addSheet("sh1", "c_vesna", 1)
+	h.drain()
+	if sh := h.store.sheet("sh1"); sh.Status != "ready" {
+		t.Fatalf("teen: %+v", sh)
+	}
+
+	k := newHarness(t)
+	k.wd14.Sensitive = 0.87
+	k.store.world.Audience = "kids"
+	k.store.addSheet("sh1", "c_vesna", 1)
+	k.drain()
+	sh := k.store.sheet("sh1")
+	if sh.Status != "failed" || sh.Images[0].Unsafe["sensitive"] != 0.87 || len(k.comfy.Graphs()) != 1+wd14.MaxReseed {
+		t.Fatalf("kids: %+v, %d renders", sh, len(k.comfy.Graphs()))
+	}
+}
+
 func TestSheetAllUnsafeFails(t *testing.T) {
 	h := newHarness(t)
 	h.wd14.Always.Store(true)

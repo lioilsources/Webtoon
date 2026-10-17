@@ -329,6 +329,22 @@ void main() {
     await tester.pumpWidget(const SizedBox());
   });
 
+  testWidgets('kids world: sheet rejected as sensitive explains why', (
+    tester,
+  ) async {
+    final api = authorApi()..sheetUnsafe = {'sensitive': 0.87};
+    await openCharacter(tester, api);
+    await tester.tap(find.byKey(const ValueKey('generate-sheet')));
+    for (var i = 0; i < 5; i++) {
+      await tester.pump(const Duration(milliseconds: 120));
+    }
+    await tester.pumpAndSettle();
+    expect(find.textContaining('kontrolou obsahu pro děti'), findsOneWidget);
+    expect(find.text('nevhodné pro děti'), findsNWidgets(4));
+    expect(api.worlds.first.character('c_vesna')!.referenceImages, isEmpty);
+    await tester.pumpWidget(const SizedBox());
+  });
+
   testWidgets('reference upload, make main, remove', (tester) async {
     final api = authorApi();
     var n = 0;

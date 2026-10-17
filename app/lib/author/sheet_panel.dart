@@ -173,7 +173,14 @@ class _Status extends StatelessWidget {
       case 'ready':
         text = 'Hotovo: ${sheet.images.length} variant';
       case 'failed':
-        text = 'Nepovedlo se: ${sheet.error}';
+        text = sheet.error.contains('unsafe')
+            ? sheet.images.any((i) => i.onlySensitive)
+                  ? 'Žádná varianta neprošla kontrolou obsahu pro děti: oblečení '
+                        'nebo póza působí příliš odhaleně či přiléhavě. Uprav tagy '
+                        'oblečení a zkus to znovu.'
+                  : 'Žádná varianta neprošla kontrolou obsahu. Uprav tagy postavy '
+                        'a zkus to znovu.'
+            : 'Nepovedlo se: ${sheet.error}';
       case 'rendering':
         text = 'Kreslí se ${sheet.done}/${sheet.seeds}';
       default:
@@ -253,7 +260,9 @@ class _Candidate extends ConsumerWidget {
               children: [
                 Text(
                   unsafe
-                      ? 'nevhodné'
+                      ? image.onlySensitive
+                            ? 'nevhodné pro děti'
+                            : 'nevhodné'
                       : 'shoda ${(image.recall * 100).round()} %',
                   style: ComicFonts.ui(800).copyWith(fontSize: 12),
                 ),
