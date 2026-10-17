@@ -13,6 +13,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ol1n/webtoon/backend/internal/prompt"
 	"github.com/ol1n/webtoon/backend/internal/tags"
 	"github.com/ol1n/webtoon/backend/internal/upstream"
 )
@@ -85,9 +86,10 @@ type Identity struct {
 	Missing []string `json:"missing"`
 }
 
-// IdentityScore = recall of the character's design tags among WD14-detected tags.
-func IdentityScore(t *Tags, tagPrompt string) Identity {
-	design := tags.Split(tagPrompt)
+// IdentityScore = recall of the character's design tags among WD14-detected tags. Only the
+// tags in frame for the shot count (render.identity: a close-up does not show the boots).
+func IdentityScore(t *Tags, tagPrompt, shot string) Identity {
+	design := prompt.InFrame(tags.Split(tagPrompt), shot)
 	var hit int
 	missing := []string{}
 	for _, d := range design {

@@ -99,6 +99,10 @@ func CharacterFromRow(c dbq.Character) domain.Character {
 	if c.IdentityAsset != nil {
 		ch.IdentityAsset = *c.IdentityAsset
 	}
+	if len(c.IpAdapter) > 0 && string(c.IpAdapter) != "null" {
+		ip := unmarshalOr(c.IpAdapter, domain.IPAdapterConfig{})
+		ch.IPAdapter = &ip
+	}
 	return ch
 }
 
@@ -374,5 +378,64 @@ func (s *Store) FinalizeEpisode(ctx context.Context, episodeID string, fn func(*
 			snap = MustJSON(f.StateSnapshot)
 		}
 		return q.FinishEpisode(ctx, dbq.FinishEpisodeParams{ID: episodeID, Status: f.EpisodeStatus, StateSnapshot: snap, Error: f.Error})
+	})
+}
+
+// --- character sheets ------------------------------------------------------------
+
+func SheetFromRow(r dbq.CharacterSheet) worker.Sheet {
+	return worker.Sheet{ID: r.ID, WorldID: r.WorldID, CharacterID: r.CharacterID, Status: r.Status,
+		Seeds: int(r.Seeds), Images: unmarshalOr(r.Images, []worker.SheetImage{})}
+}
+
+func (s *Store) LoadSheetContext(ctx context.Context, id string) (*worker.SheetContext, error) {
+	r, err := s.Q.GetSheet(ctx, id)
+	if err != nil {
+		return nil, notFound(err)
+	}
+	w, err := s.LoadWorld(ctx, s.Q, r.WorldID)
+	if err != nil {
+		return nil, err
+	}
+	st, err := s.LoadStyles(ctx, s.Q)
+	if err != nil {
+		return nil, err
+	}
+	return &worker.SheetContext{Sheet: SheetFromRow(r), World: w, Styles: st}, nil
+}
+
+func (s *Store) SetSheetStatus(ctx context.Context, id, status, msg string) error {
+	return s.Q.SetSheetStatus(ctx, dbq.SetSheetStatusParams{ID: id, Status: status, Error: msg})
+}
+
+func (s *Store) SetSheetPrompt(ctx context.Context, id, positive, negative string) error {
+	return s.Q.SetSheetPrompt(ctx, dbq.SetSheetPromptParams{ID: id, Prompt: positive, Negative: negative})
+}
+
+func (s *Store) AddSheetImage(ctx context.Context, id string, img worker.SheetImage) error {
+	return s.Q.AddSheetImage(ctx, dbq.AddSheetImageParams{ID: id, Image: MustJSON(img)})
+}
+
+func (s *Store) FinishSheet(ctx context.Context, id, status string, best *int, msg string) error {
+	return s.Tx(ctx, func(q *dbq.Queries) error {
+		r, err := q.GetSheetForUpdate(ctx, id)
+		if err != nil {
+			return notFound(err)
+		}
+		var b *int32
+		if best != nil {
+			images := unmarshalOr(r.Images, []worker.SheetImage{})
+			if *best < 0 || *best >= len(images) || images[*best].Path == "" {
+				return fmt.Errorf("sheet %s: invalid best image %d", id, *best)
+			}
+			v := int32(*best)
+			b = &v
+			if err := q.AppendCharacterReference(ctx, dbq.AppendCharacterReferenceParams{
+				WorldID: r.WorldID, ID: r.CharacterID, Path: images[*best].Path,
+			}); err != nil {
+				return err
+			}
+		}
+		return q.FinishSheet(ctx, dbq.FinishSheetParams{ID: id, Status: status, Best: b, Error: msg})
 	})
 }

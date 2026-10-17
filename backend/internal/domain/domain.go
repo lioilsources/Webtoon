@@ -57,7 +57,21 @@ type Character struct {
 	ReferenceImages []string `json:"reference_images,omitempty"`
 	IdentityLevel   string   `json:"identity_level,omitempty"`
 	IdentityAsset   string   `json:"identity_asset,omitempty"`
+	// IPAdapter tunes the IP-Adapter when IdentityLevel is "ip_adapter" (nil = defaults).
+	// M0 result: prompt-only is the default identity level.
+	IPAdapter *IPAdapterConfig `json:"ip_adapter,omitempty"`
 }
+
+// IPAdapterConfig mirrors m0/render.py --ip-preset / --ip-weight / --ip-end. Zero values mean
+// the defaults (PLUS (high strength), 0.6, 0.8); a face crop works at weight 0.3–0.4.
+type IPAdapterConfig struct {
+	Preset string  `json:"preset,omitempty"`
+	Weight float64 `json:"weight,omitempty"`
+	EndAt  float64 `json:"end_at,omitempty"`
+}
+
+// IPAdapterPresets are the IPAdapterUnifiedLoader presets usable with SDXL.
+var IPAdapterPresets = []string{"PLUS (high strength)", "PLUS FACE (portraits)", "STANDARD (medium strength)", "VIT-G (medium strength)"}
 
 type Location struct {
 	ID              string   `json:"id"`

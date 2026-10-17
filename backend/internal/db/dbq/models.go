@@ -39,6 +39,23 @@ type Character struct {
 	IdentityAsset   *string
 	Position        int32
 	CreatedAt       time.Time
+	IpAdapter       json.RawMessage
+}
+
+type CharacterSheet struct {
+	ID          string
+	WorldID     string
+	CharacterID string
+	RequestedBy string
+	Status      string
+	Seeds       int32
+	Prompt      string
+	Negative    string
+	Images      json.RawMessage
+	Best        *int32
+	Error       string
+	CreatedAt   time.Time
+	UpdatedAt   time.Time
 }
 
 type Episode struct {

@@ -11,6 +11,52 @@ import (
 	"time"
 )
 
+const addSheetImage = `-- name: AddSheetImage :exec
+UPDATE character_sheets SET images = images || jsonb_build_array($1::jsonb), updated_at = now() WHERE id = $2
+`
+
+type AddSheetImageParams struct {
+	Image json.RawMessage
+	ID    string
+}
+
+func (q *Queries) AddSheetImage(ctx context.Context, arg AddSheetImageParams) error {
+	_, err := q.db.Exec(ctx, addSheetImage, arg.Image, arg.ID)
+	return err
+}
+
+const appendCharacterReference = `-- name: AppendCharacterReference :exec
+UPDATE characters SET reference_images = reference_images || jsonb_build_array($1::text)
+WHERE world_id = $2 AND id = $3 AND NOT reference_images ? $1::text
+`
+
+type AppendCharacterReferenceParams struct {
+	Path    string
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) AppendCharacterReference(ctx context.Context, arg AppendCharacterReferenceParams) error {
+	_, err := q.db.Exec(ctx, appendCharacterReference, arg.Path, arg.WorldID, arg.ID)
+	return err
+}
+
+const appendLocationReference = `-- name: AppendLocationReference :exec
+UPDATE locations SET reference_images = reference_images || jsonb_build_array($1::text)
+WHERE world_id = $2 AND id = $3 AND NOT reference_images ? $1::text
+`
+
+type AppendLocationReferenceParams struct {
+	Path    string
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) AppendLocationReference(ctx context.Context, arg AppendLocationReferenceParams) error {
+	_, err := q.db.Exec(ctx, appendLocationReference, arg.Path, arg.WorldID, arg.ID)
+	return err
+}
+
 const campaignDepths = `-- name: CampaignDepths :many
 SELECT d.depth::int AS depth, count(*)::int AS campaigns FROM (
     SELECT max(e.idx) AS depth FROM episodes e JOIN campaigns c ON c.id = e.campaign_id
@@ -112,6 +158,43 @@ func (q *Queries) ChoiceDistribution(ctx context.Context, worldID string) ([]Cho
 	return items, nil
 }
 
+const choicesByEpisode = `-- name: ChoicesByEpisode :many
+SELECT (e.idx - 1)::int AS episode,
+    COALESCE(NULLIF(e.chosen->>'choice_id', ''), e.chosen->>'kind', '')::text AS choice_id,
+    count(*)::int AS n
+FROM episodes e JOIN campaigns c ON c.id = e.campaign_id
+WHERE c.world_id = $1 AND e.chosen IS NOT NULL
+GROUP BY 1, 2
+ORDER BY 1, 2
+`
+
+type ChoicesByEpisodeRow struct {
+	Episode  int32
+	ChoiceID string
+	N        int32
+}
+
+// The choice that led to episode idx was made at the end of episode idx - 1.
+func (q *Queries) ChoicesByEpisode(ctx context.Context, worldID string) ([]ChoicesByEpisodeRow, error) {
+	rows, err := q.db.Query(ctx, choicesByEpisode, worldID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []ChoicesByEpisodeRow
+	for rows.Next() {
+		var i ChoicesByEpisodeRow
+		if err := rows.Scan(&i.Episode, &i.ChoiceID, &i.N); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const claimJob = `-- name: ClaimJob :one
 UPDATE jobs SET status = 'running', attempts = attempts + 1, locked_by = $1, locked_at = now(), updated_at = now()
 WHERE id = (
@@ -151,6 +234,22 @@ UPDATE jobs SET status = 'done', locked_by = '', updated_at = now() WHERE id = $
 func (q *Queries) CompleteJob(ctx context.Context, id int64) error {
 	_, err := q.db.Exec(ctx, completeJob, id)
 	return err
+}
+
+const countPlayerCharacterCampaigns = `-- name: CountPlayerCharacterCampaigns :one
+SELECT count(*)::int FROM campaigns WHERE world_id = $1 AND player_character_id = $2
+`
+
+type CountPlayerCharacterCampaignsParams struct {
+	WorldID           string
+	PlayerCharacterID *string
+}
+
+func (q *Queries) CountPlayerCharacterCampaigns(ctx context.Context, arg CountPlayerCharacterCampaignsParams) (int32, error) {
+	row := q.db.QueryRow(ctx, countPlayerCharacterCampaigns, arg.WorldID, arg.PlayerCharacterID)
+	var column_1 int32
+	err := row.Scan(&column_1)
+	return column_1, err
 }
 
 const createCampaign = `-- name: CreateCampaign :one
@@ -198,10 +297,10 @@ func (q *Queries) CreateCampaign(ctx context.Context, arg CreateCampaignParams) 
 
 const createCharacter = `-- name: CreateCharacter :one
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13,
-        (SELECT count(*) FROM characters c WHERE c.world_id = $1))
-RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,
+        (SELECT COALESCE(max(c.position) + 1, 0) FROM characters c WHERE c.world_id = $1))
+RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter
 `
 
 type CreateCharacterParams struct {
@@ -218,6 +317,7 @@ type CreateCharacterParams struct {
 	ReferenceImages json.RawMessage
 	IdentityLevel   string
 	IdentityAsset   *string
+	IpAdapter       json.RawMessage
 }
 
 func (q *Queries) CreateCharacter(ctx context.Context, arg CreateCharacterParams) (Character, error) {
@@ -235,6 +335,7 @@ func (q *Queries) CreateCharacter(ctx context.Context, arg CreateCharacterParams
 		arg.ReferenceImages,
 		arg.IdentityLevel,
 		arg.IdentityAsset,
+		arg.IpAdapter,
 	)
 	var i Character
 	err := row.Scan(
@@ -253,6 +354,7 @@ func (q *Queries) CreateCharacter(ctx context.Context, arg CreateCharacterParams
 		&i.IdentityAsset,
 		&i.Position,
 		&i.CreatedAt,
+		&i.IpAdapter,
 	)
 	return i, err
 }
@@ -306,7 +408,7 @@ func (q *Queries) CreateEpisode(ctx context.Context, arg CreateEpisodeParams) (E
 
 const createLocation = `-- name: CreateLocation :one
 INSERT INTO locations (world_id, id, name, description, tag_prompt, reference_images, mood, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, (SELECT count(*) FROM locations l WHERE l.world_id = $1))
+VALUES ($1, $2, $3, $4, $5, $6, $7, (SELECT COALESCE(max(l.position) + 1, 0) FROM locations l WHERE l.world_id = $1))
 RETURNING world_id, id, name, description, tag_prompt, reference_images, mood, position, created_at
 `
 
@@ -341,6 +443,47 @@ func (q *Queries) CreateLocation(ctx context.Context, arg CreateLocationParams) 
 		&i.Mood,
 		&i.Position,
 		&i.CreatedAt,
+	)
+	return i, err
+}
+
+const createSheet = `-- name: CreateSheet :one
+INSERT INTO character_sheets (id, world_id, character_id, requested_by, seeds)
+VALUES ($1, $2, $3, $4, $5)
+RETURNING id, world_id, character_id, requested_by, status, seeds, prompt, negative, images, best, error, created_at, updated_at
+`
+
+type CreateSheetParams struct {
+	ID          string
+	WorldID     string
+	CharacterID string
+	RequestedBy string
+	Seeds       int32
+}
+
+func (q *Queries) CreateSheet(ctx context.Context, arg CreateSheetParams) (CharacterSheet, error) {
+	row := q.db.QueryRow(ctx, createSheet,
+		arg.ID,
+		arg.WorldID,
+		arg.CharacterID,
+		arg.RequestedBy,
+		arg.Seeds,
+	)
+	var i CharacterSheet
+	err := row.Scan(
+		&i.ID,
+		&i.WorldID,
+		&i.CharacterID,
+		&i.RequestedBy,
+		&i.Status,
+		&i.Seeds,
+		&i.Prompt,
+		&i.Negative,
+		&i.Images,
+		&i.Best,
+		&i.Error,
+		&i.CreatedAt,
+		&i.UpdatedAt,
 	)
 	return i, err
 }
@@ -420,6 +563,40 @@ func (q *Queries) DeferJob(ctx context.Context, arg DeferJobParams) error {
 	return err
 }
 
+const deleteCharacter = `-- name: DeleteCharacter :execrows
+DELETE FROM characters WHERE world_id = $1 AND id = $2
+`
+
+type DeleteCharacterParams struct {
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) DeleteCharacter(ctx context.Context, arg DeleteCharacterParams) (int64, error) {
+	result, err := q.db.Exec(ctx, deleteCharacter, arg.WorldID, arg.ID)
+	if err != nil {
+		return 0, err
+	}
+	return result.RowsAffected(), nil
+}
+
+const deleteLocation = `-- name: DeleteLocation :execrows
+DELETE FROM locations WHERE world_id = $1 AND id = $2
+`
+
+type DeleteLocationParams struct {
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) DeleteLocation(ctx context.Context, arg DeleteLocationParams) (int64, error) {
+	result, err := q.db.Exec(ctx, deleteLocation, arg.WorldID, arg.ID)
+	if err != nil {
+		return 0, err
+	}
+	return result.RowsAffected(), nil
+}
+
 const enqueueJob = `-- name: EnqueueJob :one
 INSERT INTO jobs (kind, payload, max_attempts, run_after)
 VALUES ($1, $2, $3, now() + make_interval(secs => $4::float8))
@@ -481,6 +658,27 @@ func (q *Queries) FinishEpisode(ctx context.Context, arg FinishEpisodeParams) er
 	return err
 }
 
+const finishSheet = `-- name: FinishSheet :exec
+UPDATE character_sheets SET status = $2, best = $3, error = $4, updated_at = now() WHERE id = $1
+`
+
+type FinishSheetParams struct {
+	ID     string
+	Status string
+	Best   *int32
+	Error  string
+}
+
+func (q *Queries) FinishSheet(ctx context.Context, arg FinishSheetParams) error {
+	_, err := q.db.Exec(ctx, finishSheet,
+		arg.ID,
+		arg.Status,
+		arg.Best,
+		arg.Error,
+	)
+	return err
+}
+
 const getCampaign = `-- name: GetCampaign :one
 SELECT id, world_id, player_id, title, status, player_character_id, state, canon_progress, branch_parent_episode_id, created_at, updated_at FROM campaigns WHERE id = $1
 `
@@ -523,6 +721,39 @@ func (q *Queries) GetCampaignForUpdate(ctx context.Context, id string) (Campaign
 		&i.BranchParentEpisodeID,
 		&i.CreatedAt,
 		&i.UpdatedAt,
+	)
+	return i, err
+}
+
+const getCharacter = `-- name: GetCharacter :one
+SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter FROM characters WHERE world_id = $1 AND id = $2
+`
+
+type GetCharacterParams struct {
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) GetCharacter(ctx context.Context, arg GetCharacterParams) (Character, error) {
+	row := q.db.QueryRow(ctx, getCharacter, arg.WorldID, arg.ID)
+	var i Character
+	err := row.Scan(
+		&i.WorldID,
+		&i.ID,
+		&i.OwnerID,
+		&i.Name,
+		&i.Role,
+		&i.CountTag,
+		&i.Description,
+		&i.Personality,
+		&i.SpeechStyle,
+		&i.TagPrompt,
+		&i.ReferenceImages,
+		&i.IdentityLevel,
+		&i.IdentityAsset,
+		&i.Position,
+		&i.CreatedAt,
+		&i.IpAdapter,
 	)
 	return i, err
 }
@@ -644,6 +875,32 @@ func (q *Queries) GetLatestEpisode(ctx context.Context, campaignID string) (Epis
 	return i, err
 }
 
+const getLocation = `-- name: GetLocation :one
+SELECT world_id, id, name, description, tag_prompt, reference_images, mood, position, created_at FROM locations WHERE world_id = $1 AND id = $2
+`
+
+type GetLocationParams struct {
+	WorldID string
+	ID      string
+}
+
+func (q *Queries) GetLocation(ctx context.Context, arg GetLocationParams) (Location, error) {
+	row := q.db.QueryRow(ctx, getLocation, arg.WorldID, arg.ID)
+	var i Location
+	err := row.Scan(
+		&i.WorldID,
+		&i.ID,
+		&i.Name,
+		&i.Description,
+		&i.TagPrompt,
+		&i.ReferenceImages,
+		&i.Mood,
+		&i.Position,
+		&i.CreatedAt,
+	)
+	return i, err
+}
+
 const getPanel = `-- name: GetPanel :one
 SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at FROM panels WHERE episode_id = $1 AND idx = $2
 `
@@ -692,6 +949,56 @@ func (q *Queries) GetSetting(ctx context.Context, key string) (json.RawMessage, 
 	var value json.RawMessage
 	err := row.Scan(&value)
 	return value, err
+}
+
+const getSheet = `-- name: GetSheet :one
+SELECT id, world_id, character_id, requested_by, status, seeds, prompt, negative, images, best, error, created_at, updated_at FROM character_sheets WHERE id = $1
+`
+
+func (q *Queries) GetSheet(ctx context.Context, id string) (CharacterSheet, error) {
+	row := q.db.QueryRow(ctx, getSheet, id)
+	var i CharacterSheet
+	err := row.Scan(
+		&i.ID,
+		&i.WorldID,
+		&i.CharacterID,
+		&i.RequestedBy,
+		&i.Status,
+		&i.Seeds,
+		&i.Prompt,
+		&i.Negative,
+		&i.Images,
+		&i.Best,
+		&i.Error,
+		&i.CreatedAt,
+		&i.UpdatedAt,
+	)
+	return i, err
+}
+
+const getSheetForUpdate = `-- name: GetSheetForUpdate :one
+SELECT id, world_id, character_id, requested_by, status, seeds, prompt, negative, images, best, error, created_at, updated_at FROM character_sheets WHERE id = $1 FOR UPDATE
+`
+
+func (q *Queries) GetSheetForUpdate(ctx context.Context, id string) (CharacterSheet, error) {
+	row := q.db.QueryRow(ctx, getSheetForUpdate, id)
+	var i CharacterSheet
+	err := row.Scan(
+		&i.ID,
+		&i.WorldID,
+		&i.CharacterID,
+		&i.RequestedBy,
+		&i.Status,
+		&i.Seeds,
+		&i.Prompt,
+		&i.Negative,
+		&i.Images,
+		&i.Best,
+		&i.Error,
+		&i.CreatedAt,
+		&i.UpdatedAt,
+	)
+	return i, err
 }
 
 const getWorld = `-- name: GetWorld :one
@@ -754,7 +1061,7 @@ func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error 
 }
 
 const listCharacters = `-- name: ListCharacters :many
-SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at FROM characters WHERE world_id = $1 ORDER BY position, created_at
+SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter FROM characters WHERE world_id = $1 ORDER BY position, created_at
 `
 
 func (q *Queries) ListCharacters(ctx context.Context, worldID string) ([]Character, error) {
@@ -782,6 +1089,7 @@ func (q *Queries) ListCharacters(ctx context.Context, worldID string) ([]Charact
 			&i.IdentityAsset,
 			&i.Position,
 			&i.CreatedAt,
+			&i.IpAdapter,
 		); err != nil {
 			return nil, err
 		}
@@ -1012,6 +1320,49 @@ func (q *Queries) ListPlayerCampaigns(ctx context.Context, playerID string) ([]L
 	return items, nil
 }
 
+const listSheets = `-- name: ListSheets :many
+SELECT id, world_id, character_id, requested_by, status, seeds, prompt, negative, images, best, error, created_at, updated_at FROM character_sheets WHERE world_id = $1 AND character_id = $2 ORDER BY created_at DESC, id LIMIT 50
+`
+
+type ListSheetsParams struct {
+	WorldID     string
+	CharacterID string
+}
+
+func (q *Queries) ListSheets(ctx context.Context, arg ListSheetsParams) ([]CharacterSheet, error) {
+	rows, err := q.db.Query(ctx, listSheets, arg.WorldID, arg.CharacterID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []CharacterSheet
+	for rows.Next() {
+		var i CharacterSheet
+		if err := rows.Scan(
+			&i.ID,
+			&i.WorldID,
+			&i.CharacterID,
+			&i.RequestedBy,
+			&i.Status,
+			&i.Seeds,
+			&i.Prompt,
+			&i.Negative,
+			&i.Images,
+			&i.Best,
+			&i.Error,
+			&i.CreatedAt,
+			&i.UpdatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const listStylePresets = `-- name: ListStylePresets :many
 SELECT id, data FROM style_presets ORDER BY id
 `
@@ -1045,6 +1396,7 @@ const listWorlds = `-- name: ListWorlds :many
 SELECT id, owner_id, title, synopsis, tone, audience, language, style_id, bible, canon, permissions, visibility, intro_episode_ids, created_at, updated_at FROM worlds
 WHERE (visibility = 'public' OR owner_id = $1::text)
   AND ($2::text IS NULL OR visibility = $2::text)
+  AND (NOT $3::bool OR owner_id = $1::text)
 ORDER BY created_at DESC
 LIMIT 200
 `
@@ -1052,10 +1404,11 @@ LIMIT 200
 type ListWorldsParams struct {
 	Viewer     string
 	Visibility *string
+	OnlyOwn    bool
 }
 
 func (q *Queries) ListWorlds(ctx context.Context, arg ListWorldsParams) ([]World, error) {
-	rows, err := q.db.Query(ctx, listWorlds, arg.Viewer, arg.Visibility)
+	rows, err := q.db.Query(ctx, listWorlds, arg.Viewer, arg.Visibility, arg.OnlyOwn)
 	if err != nil {
 		return nil, err
 	}
@@ -1109,6 +1462,47 @@ func (q *Queries) PanelProgress(ctx context.Context, episodeID string) (PanelPro
 	var i PanelProgressRow
 	err := row.Scan(&i.Ready, &i.Failed, &i.Total)
 	return i, err
+}
+
+const playerCreatedCharacters = `-- name: PlayerCreatedCharacters :many
+SELECT id, name, owner_id, description, created_at FROM characters
+WHERE world_id = $1 AND role = 'player_created'
+ORDER BY created_at DESC
+LIMIT 200
+`
+
+type PlayerCreatedCharactersRow struct {
+	ID          string
+	Name        string
+	OwnerID     string
+	Description string
+	CreatedAt   time.Time
+}
+
+func (q *Queries) PlayerCreatedCharacters(ctx context.Context, worldID string) ([]PlayerCreatedCharactersRow, error) {
+	rows, err := q.db.Query(ctx, playerCreatedCharacters, worldID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []PlayerCreatedCharactersRow
+	for rows.Next() {
+		var i PlayerCreatedCharactersRow
+		if err := rows.Scan(
+			&i.ID,
+			&i.Name,
+			&i.OwnerID,
+			&i.Description,
+			&i.CreatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
 }
 
 const refreshPanelsReady = `-- name: RefreshPanelsReady :one
@@ -1286,6 +1680,83 @@ func (q *Queries) SetPanelStatus(ctx context.Context, arg SetPanelStatusParams) 
 	return err
 }
 
+const setSheetPrompt = `-- name: SetSheetPrompt :exec
+UPDATE character_sheets SET prompt = $2, negative = $3, updated_at = now() WHERE id = $1
+`
+
+type SetSheetPromptParams struct {
+	ID       string
+	Prompt   string
+	Negative string
+}
+
+func (q *Queries) SetSheetPrompt(ctx context.Context, arg SetSheetPromptParams) error {
+	_, err := q.db.Exec(ctx, setSheetPrompt, arg.ID, arg.Prompt, arg.Negative)
+	return err
+}
+
+const setSheetStatus = `-- name: SetSheetStatus :exec
+UPDATE character_sheets SET status = $2, error = $3, updated_at = now() WHERE id = $1
+`
+
+type SetSheetStatusParams struct {
+	ID     string
+	Status string
+	Error  string
+}
+
+func (q *Queries) SetSheetStatus(ctx context.Context, arg SetSheetStatusParams) error {
+	_, err := q.db.Exec(ctx, setSheetStatus, arg.ID, arg.Status, arg.Error)
+	return err
+}
+
+const setWorldPermissions = `-- name: SetWorldPermissions :exec
+UPDATE worlds SET permissions = $2, updated_at = now() WHERE id = $1
+`
+
+type SetWorldPermissionsParams struct {
+	ID          string
+	Permissions json.RawMessage
+}
+
+func (q *Queries) SetWorldPermissions(ctx context.Context, arg SetWorldPermissionsParams) error {
+	_, err := q.db.Exec(ctx, setWorldPermissions, arg.ID, arg.Permissions)
+	return err
+}
+
+const stoppedAt = `-- name: StoppedAt :many
+SELECT d.last::int AS episode, count(*)::int AS campaigns FROM (
+    SELECT COALESCE((SELECT max(e.idx) FROM episodes e WHERE e.campaign_id = c.id), 0) AS last
+    FROM campaigns c WHERE c.world_id = $1
+) d GROUP BY d.last ORDER BY d.last
+`
+
+type StoppedAtRow struct {
+	Episode   int32
+	Campaigns int32
+}
+
+// Where players stopped: index of each campaign's last episode (0 = no episode yet).
+func (q *Queries) StoppedAt(ctx context.Context, worldID string) ([]StoppedAtRow, error) {
+	rows, err := q.db.Query(ctx, stoppedAt, worldID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []StoppedAtRow
+	for rows.Next() {
+		var i StoppedAtRow
+		if err := rows.Scan(&i.Episode, &i.Campaigns); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const updateCampaignState = `-- name: UpdateCampaignState :exec
 UPDATE campaigns SET state = $2, canon_progress = $3, updated_at = now() WHERE id = $1
 `
@@ -1299,6 +1770,127 @@ type UpdateCampaignStateParams struct {
 func (q *Queries) UpdateCampaignState(ctx context.Context, arg UpdateCampaignStateParams) error {
 	_, err := q.db.Exec(ctx, updateCampaignState, arg.ID, arg.State, arg.CanonProgress)
 	return err
+}
+
+const updateCharacter = `-- name: UpdateCharacter :one
+UPDATE characters SET
+    name             = COALESCE($1, name),
+    role             = COALESCE($2, role),
+    count_tag        = COALESCE($3, count_tag),
+    description      = COALESCE($4, description),
+    personality      = COALESCE($5, personality),
+    speech_style     = COALESCE($6, speech_style),
+    tag_prompt       = COALESCE($7, tag_prompt),
+    reference_images = COALESCE($8, reference_images),
+    identity_level   = COALESCE($9, identity_level),
+    identity_asset   = CASE WHEN $10::bool THEN $11 ELSE identity_asset END,
+    ip_adapter       = CASE WHEN $12::bool THEN $13 ELSE ip_adapter END
+WHERE world_id = $14 AND id = $15
+RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter
+`
+
+type UpdateCharacterParams struct {
+	Name             *string
+	Role             *string
+	CountTag         *string
+	Description      *string
+	Personality      *string
+	SpeechStyle      *string
+	TagPrompt        *string
+	ReferenceImages  json.RawMessage
+	IdentityLevel    *string
+	SetIdentityAsset bool
+	IdentityAsset    *string
+	SetIpAdapter     bool
+	IpAdapter        json.RawMessage
+	WorldID          string
+	ID               string
+}
+
+func (q *Queries) UpdateCharacter(ctx context.Context, arg UpdateCharacterParams) (Character, error) {
+	row := q.db.QueryRow(ctx, updateCharacter,
+		arg.Name,
+		arg.Role,
+		arg.CountTag,
+		arg.Description,
+		arg.Personality,
+		arg.SpeechStyle,
+		arg.TagPrompt,
+		arg.ReferenceImages,
+		arg.IdentityLevel,
+		arg.SetIdentityAsset,
+		arg.IdentityAsset,
+		arg.SetIpAdapter,
+		arg.IpAdapter,
+		arg.WorldID,
+		arg.ID,
+	)
+	var i Character
+	err := row.Scan(
+		&i.WorldID,
+		&i.ID,
+		&i.OwnerID,
+		&i.Name,
+		&i.Role,
+		&i.CountTag,
+		&i.Description,
+		&i.Personality,
+		&i.SpeechStyle,
+		&i.TagPrompt,
+		&i.ReferenceImages,
+		&i.IdentityLevel,
+		&i.IdentityAsset,
+		&i.Position,
+		&i.CreatedAt,
+		&i.IpAdapter,
+	)
+	return i, err
+}
+
+const updateLocation = `-- name: UpdateLocation :one
+UPDATE locations SET
+    name             = COALESCE($1, name),
+    description      = COALESCE($2, description),
+    tag_prompt       = COALESCE($3, tag_prompt),
+    reference_images = COALESCE($4, reference_images),
+    mood             = COALESCE($5, mood)
+WHERE world_id = $6 AND id = $7
+RETURNING world_id, id, name, description, tag_prompt, reference_images, mood, position, created_at
+`
+
+type UpdateLocationParams struct {
+	Name            *string
+	Description     *string
+	TagPrompt       *string
+	ReferenceImages json.RawMessage
+	Mood            *string
+	WorldID         string
+	ID              string
+}
+
+func (q *Queries) UpdateLocation(ctx context.Context, arg UpdateLocationParams) (Location, error) {
+	row := q.db.QueryRow(ctx, updateLocation,
+		arg.Name,
+		arg.Description,
+		arg.TagPrompt,
+		arg.ReferenceImages,
+		arg.Mood,
+		arg.WorldID,
+		arg.ID,
+	)
+	var i Location
+	err := row.Scan(
+		&i.WorldID,
+		&i.ID,
+		&i.Name,
+		&i.Description,
+		&i.TagPrompt,
+		&i.ReferenceImages,
+		&i.Mood,
+		&i.Position,
+		&i.CreatedAt,
+	)
+	return i, err
 }
 
 const updatePanelBubbles = `-- name: UpdatePanelBubbles :exec
@@ -1384,13 +1976,14 @@ func (q *Queries) UpdateWorld(ctx context.Context, arg UpdateWorldParams) (World
 
 const upsertCharacter = `-- name: UpsertCharacter :exec
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
 ON CONFLICT (world_id, id) DO UPDATE SET
     owner_id = EXCLUDED.owner_id, name = EXCLUDED.name, role = EXCLUDED.role, count_tag = EXCLUDED.count_tag,
     description = EXCLUDED.description, personality = EXCLUDED.personality, speech_style = EXCLUDED.speech_style,
     tag_prompt = EXCLUDED.tag_prompt, reference_images = EXCLUDED.reference_images,
-    identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset, position = EXCLUDED.position
+    identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset,
+    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position
 `
 
 type UpsertCharacterParams struct {
@@ -1407,6 +2000,7 @@ type UpsertCharacterParams struct {
 	ReferenceImages json.RawMessage
 	IdentityLevel   string
 	IdentityAsset   *string
+	IpAdapter       json.RawMessage
 	Position        int32
 }
 
@@ -1425,6 +2019,7 @@ func (q *Queries) UpsertCharacter(ctx context.Context, arg UpsertCharacterParams
 		arg.ReferenceImages,
 		arg.IdentityLevel,
 		arg.IdentityAsset,
+		arg.IpAdapter,
 		arg.Position,
 	)
 	return err

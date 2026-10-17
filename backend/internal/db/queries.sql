@@ -33,6 +33,7 @@ SELECT * FROM worlds WHERE id = $1;
 SELECT * FROM worlds
 WHERE (visibility = 'public' OR owner_id = @viewer::text)
   AND (sqlc.narg(visibility)::text IS NULL OR visibility = sqlc.narg(visibility)::text)
+  AND (NOT @only_own::bool OR owner_id = @viewer::text)
 ORDER BY created_at DESC
 LIMIT 200;
 
@@ -54,28 +55,81 @@ RETURNING *;
 
 -- name: CreateCharacter :one
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13,
-        (SELECT count(*) FROM characters c WHERE c.world_id = $1))
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,
+        (SELECT COALESCE(max(c.position) + 1, 0) FROM characters c WHERE c.world_id = $1))
 RETURNING *;
+
+-- name: GetCharacter :one
+SELECT * FROM characters WHERE world_id = $1 AND id = $2;
+
+-- name: UpdateCharacter :one
+UPDATE characters SET
+    name             = COALESCE(sqlc.narg(name), name),
+    role             = COALESCE(sqlc.narg(role), role),
+    count_tag        = COALESCE(sqlc.narg(count_tag), count_tag),
+    description      = COALESCE(sqlc.narg(description), description),
+    personality      = COALESCE(sqlc.narg(personality), personality),
+    speech_style     = COALESCE(sqlc.narg(speech_style), speech_style),
+    tag_prompt       = COALESCE(sqlc.narg(tag_prompt), tag_prompt),
+    reference_images = COALESCE(sqlc.narg(reference_images), reference_images),
+    identity_level   = COALESCE(sqlc.narg(identity_level), identity_level),
+    identity_asset   = CASE WHEN @set_identity_asset::bool THEN sqlc.narg(identity_asset) ELSE identity_asset END,
+    ip_adapter       = CASE WHEN @set_ip_adapter::bool THEN sqlc.narg(ip_adapter) ELSE ip_adapter END
+WHERE world_id = @world_id AND id = @id
+RETURNING *;
+
+-- name: AppendCharacterReference :exec
+UPDATE characters SET reference_images = reference_images || jsonb_build_array(@path::text)
+WHERE world_id = @world_id AND id = @id AND NOT reference_images ? @path::text;
+
+-- name: DeleteCharacter :execrows
+DELETE FROM characters WHERE world_id = $1 AND id = $2;
+
+-- name: CountPlayerCharacterCampaigns :one
+SELECT count(*)::int FROM campaigns WHERE world_id = $1 AND player_character_id = $2;
 
 -- name: UpsertCharacter :exec
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
 ON CONFLICT (world_id, id) DO UPDATE SET
     owner_id = EXCLUDED.owner_id, name = EXCLUDED.name, role = EXCLUDED.role, count_tag = EXCLUDED.count_tag,
     description = EXCLUDED.description, personality = EXCLUDED.personality, speech_style = EXCLUDED.speech_style,
     tag_prompt = EXCLUDED.tag_prompt, reference_images = EXCLUDED.reference_images,
-    identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset, position = EXCLUDED.position;
+    identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset,
+    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position;
 
 -- name: ListCharacters :many
 SELECT * FROM characters WHERE world_id = $1 ORDER BY position, created_at;
 
 -- name: CreateLocation :one
 INSERT INTO locations (world_id, id, name, description, tag_prompt, reference_images, mood, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, (SELECT count(*) FROM locations l WHERE l.world_id = $1))
+VALUES ($1, $2, $3, $4, $5, $6, $7, (SELECT COALESCE(max(l.position) + 1, 0) FROM locations l WHERE l.world_id = $1))
 RETURNING *;
+
+-- name: GetLocation :one
+SELECT * FROM locations WHERE world_id = $1 AND id = $2;
+
+-- name: UpdateLocation :one
+UPDATE locations SET
+    name             = COALESCE(sqlc.narg(name), name),
+    description      = COALESCE(sqlc.narg(description), description),
+    tag_prompt       = COALESCE(sqlc.narg(tag_prompt), tag_prompt),
+    reference_images = COALESCE(sqlc.narg(reference_images), reference_images),
+    mood             = COALESCE(sqlc.narg(mood), mood)
+WHERE world_id = @world_id AND id = @id
+RETURNING *;
+
+-- name: AppendLocationReference :exec
+UPDATE locations SET reference_images = reference_images || jsonb_build_array(@path::text)
+WHERE world_id = @world_id AND id = @id AND NOT reference_images ? @path::text;
+
+-- name: DeleteLocation :execrows
+DELETE FROM locations WHERE world_id = $1 AND id = $2;
+
+-- name: SetWorldPermissions :exec
+UPDATE worlds SET permissions = $2, updated_at = now() WHERE id = $1;
 
 -- name: UpsertLocation :exec
 INSERT INTO locations (world_id, id, name, description, tag_prompt, reference_images, mood, position)
@@ -255,3 +309,52 @@ SELECT node::text AS node_id, count(*)::int AS campaigns
 FROM campaigns c, jsonb_array_elements_text(c.canon_progress) AS node
 WHERE c.world_id = $1
 GROUP BY node ORDER BY node;
+
+-- name: StoppedAt :many
+-- Where players stopped: index of each campaign's last episode (0 = no episode yet).
+SELECT d.last::int AS episode, count(*)::int AS campaigns FROM (
+    SELECT COALESCE((SELECT max(e.idx) FROM episodes e WHERE e.campaign_id = c.id), 0) AS last
+    FROM campaigns c WHERE c.world_id = $1
+) d GROUP BY d.last ORDER BY d.last;
+
+-- name: ChoicesByEpisode :many
+-- The choice that led to episode idx was made at the end of episode idx - 1.
+SELECT (e.idx - 1)::int AS episode,
+    COALESCE(NULLIF(e.chosen->>'choice_id', ''), e.chosen->>'kind', '')::text AS choice_id,
+    count(*)::int AS n
+FROM episodes e JOIN campaigns c ON c.id = e.campaign_id
+WHERE c.world_id = $1 AND e.chosen IS NOT NULL
+GROUP BY 1, 2
+ORDER BY 1, 2;
+
+-- name: PlayerCreatedCharacters :many
+SELECT id, name, owner_id, description, created_at FROM characters
+WHERE world_id = $1 AND role = 'player_created'
+ORDER BY created_at DESC
+LIMIT 200;
+
+-- name: CreateSheet :one
+INSERT INTO character_sheets (id, world_id, character_id, requested_by, seeds)
+VALUES ($1, $2, $3, $4, $5)
+RETURNING *;
+
+-- name: GetSheet :one
+SELECT * FROM character_sheets WHERE id = $1;
+
+-- name: GetSheetForUpdate :one
+SELECT * FROM character_sheets WHERE id = $1 FOR UPDATE;
+
+-- name: ListSheets :many
+SELECT * FROM character_sheets WHERE world_id = $1 AND character_id = $2 ORDER BY created_at DESC, id LIMIT 50;
+
+-- name: SetSheetStatus :exec
+UPDATE character_sheets SET status = $2, error = $3, updated_at = now() WHERE id = $1;
+
+-- name: SetSheetPrompt :exec
+UPDATE character_sheets SET prompt = $2, negative = $3, updated_at = now() WHERE id = $1;
+
+-- name: AddSheetImage :exec
+UPDATE character_sheets SET images = images || jsonb_build_array(@image::jsonb), updated_at = now() WHERE id = @id;
+
+-- name: FinishSheet :exec
+UPDATE character_sheets SET status = $2, best = $3, error = $4, updated_at = now() WHERE id = $1;

@@ -1,4 +1,8 @@
+import 'dart:typed_data';
+
 import 'package:flutter/widgets.dart';
+
+import '../models/author.dart';
 
 import '../models/campaign.dart';
 import '../models/episode.dart';
@@ -68,8 +72,101 @@ abstract class WebtoonApi {
   /// PATCH /episodes/{id}/panels/{n} {"regenerate": true}
   Future<Panel> regeneratePanel(String episodeId, int panel);
 
-  /// Image for a panel's `image_url`.
+  /// Image for a panel's `image_url` (also used for any `/media/...` URL).
   ImageProvider panelImage(String imageUrl);
+
+  // --- author (M3) ---------------------------------------------------------------
+
+  /// GET /worlds?owner=me — only the caller's own worlds.
+  Future<List<WorldSummary>> listMyWorlds();
+
+  /// GET /style_presets
+  Future<List<StylePreset>> listStylePresets();
+
+  /// POST /worlds {title, style_id, ...fields}
+  Future<World> createWorld({
+    required String title,
+    required String styleId,
+    Map<String, dynamic> fields = const {},
+  });
+
+  /// PATCH /worlds/{id} with any subset of the world fields.
+  Future<World> updateWorld(String worldId, Map<String, dynamic> patch);
+
+  /// GET /worlds/{id}/stats (owner only).
+  Future<WorldStats> getWorldStats(String worldId);
+
+  /// POST /worlds/{id}/characters
+  Future<Character> createCharacter(
+    String worldId,
+    Map<String, dynamic> fields,
+  );
+
+  /// PATCH /worlds/{id}/characters/{cid}
+  Future<Character> updateCharacter(
+    String worldId,
+    String characterId,
+    Map<String, dynamic> patch,
+  );
+
+  /// DELETE /worlds/{id}/characters/{cid}
+  Future<void> deleteCharacter(String worldId, String characterId);
+
+  /// POST /worlds/{id}/characters/{cid}/tag_prompt — LLM suggestion, not saved.
+  Future<TagSuggestion> suggestCharacterTags(
+    String worldId,
+    String characterId, {
+    String? description,
+  });
+
+  /// POST /worlds/{id}/characters/{cid}/sheet → 202 sheet job.
+  Future<CharacterSheet> createSheet(
+    String worldId,
+    String characterId, {
+    int seeds = 4,
+  });
+
+  /// GET /worlds/{id}/characters/{cid}/sheets (newest first).
+  Future<List<CharacterSheet>> listSheets(String worldId, String characterId);
+
+  /// GET /sheets/{id}
+  Future<CharacterSheet> getSheet(String sheetId);
+
+  /// POST /worlds/{id}/characters/{cid}/references (multipart "file").
+  Future<Character> uploadCharacterReference(
+    String worldId,
+    String characterId,
+    Uint8List bytes,
+    String filename,
+  );
+
+  /// POST /worlds/{id}/locations
+  Future<Location> createLocation(String worldId, Map<String, dynamic> fields);
+
+  /// PATCH /worlds/{id}/locations/{lid}
+  Future<Location> updateLocation(
+    String worldId,
+    String locationId,
+    Map<String, dynamic> patch,
+  );
+
+  /// DELETE /worlds/{id}/locations/{lid}
+  Future<void> deleteLocation(String worldId, String locationId);
+
+  /// POST /worlds/{id}/locations/{lid}/tag_prompt
+  Future<TagSuggestion> suggestLocationTags(
+    String worldId,
+    String locationId, {
+    String? description,
+  });
+
+  /// POST /worlds/{id}/locations/{lid}/references (multipart "file").
+  Future<Location> uploadLocationReference(
+    String worldId,
+    String locationId,
+    Uint8List bytes,
+    String filename,
+  );
 }
 
 /// Czech text for an HTTP status when the body has no usable message.
@@ -79,6 +176,8 @@ String czechStatus(int code) => switch (code) {
   403 => 'Na tohle nemáš oprávnění',
   404 => 'Nenalezeno',
   409 => 'Konflikt — něco se právě generuje',
+  413 => 'Soubor je moc velký',
+  503 => 'LLM teď neběží (GPU server mimo rozvrh), zkus to později',
   >= 500 => 'Chyba serveru',
   _ => 'HTTP $code',
 };
@@ -99,7 +198,21 @@ String czechError(String msg, int code) {
         'Předchozí díl nenabízí volnou odpověď.',
     'missing X-User-ID': 'Chybí přihlášení (X-User-ID).',
     'not found': 'Nenalezeno.',
+    'only the world owner can edit it': 'Svět může upravovat jen jeho autor.',
+    'only the world owner can add locations':
+        'Lokace může přidávat jen autor světa.',
+    'only the world owner can see stats': 'Statistiky vidí jen autor světa.',
+    'character is the player character of a campaign':
+        'Postavu nejde smazat, hraje za ni hráč v některé kampani.',
+    'file must be a PNG or JPEG image':
+        'Soubor musí být obrázek PNG nebo JPEG.',
+    'file too large (max 8 MiB)': 'Soubor je moc velký (max. 8 MiB).',
+    'unknown style_id': 'Neznámý výtvarný styl.',
+    'title and style_id are required': 'Vyplň název a vyber styl.',
   };
+  if (code == 503) {
+    return 'LLM teď neběží (GPU server mimo rozvrh), zkus to později.';
+  }
   if (known.containsKey(msg)) return known[msg]!;
   if (msg.startsWith('free_text longer than')) {
     return 'Text je moc dlouhý (max. 500 znaků).';

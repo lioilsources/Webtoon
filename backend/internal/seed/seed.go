@@ -110,11 +110,15 @@ func World(ctx context.Context, s *store.Store, raw []byte, ownerID, visibility 
 			if refs == nil {
 				refs = []string{}
 			}
+			var ip json.RawMessage
+			if c.IPAdapter != nil {
+				ip = store.MustJSON(c.IPAdapter)
+			}
 			if err := q.UpsertCharacter(ctx, dbq.UpsertCharacterParams{
 				WorldID: w.ID, ID: c.ID, OwnerID: ownerID, Name: c.Name, Role: def(c.Role, "npc"),
 				CountTag: c.CountTag, Description: c.Description, Personality: c.Personality,
 				SpeechStyle: c.SpeechStyle, TagPrompt: c.TagPrompt, ReferenceImages: store.MustJSON(refs),
-				IdentityLevel: def(c.IdentityLevel, "prompt"), IdentityAsset: asset, Position: int32(i),
+				IdentityLevel: def(c.IdentityLevel, "prompt"), IdentityAsset: asset, IpAdapter: ip, Position: int32(i),
 			}); err != nil {
 				return fmt.Errorf("character %s: %w", c.ID, err)
 			}

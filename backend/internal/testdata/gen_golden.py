@@ -6,7 +6,7 @@ import copy, json, sys
 import pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3] / "m0"))
 sys.dont_write_bytecode = True
-import common, storyboard, prompts, state
+import common, storyboard, prompts, state, comfy, render, gen_character
 
 world = common.load_json(common.DATA / "world_m0.json")
 styles = common.load_json(common.DATA / "styles.json")
@@ -77,6 +77,78 @@ for p in out["prompts"]:
 out["prompts_nosfw"] = [prompts.build(p, world, styles, "hassaku_soft", sfw=False) for p in ep1["panels"][:2]]
 for p in out["prompts_nosfw"]:
     p.pop("preset")
+
+# shot-aware prompts: every shot on the M0 character (close-ups drop lower-body tags, medium/over-shoulder footwear)
+shot_panels = [{"shot": shot, "location_id": "l_market", "characters": [{"id": "c_vesna"}],
+                "visual_tags": ["1girl", "smile", "long hair", "brown shorts", "boots", "holding letter"]}
+               for shot in ["close-up", "medium", "over-shoulder", "wide", "establishing", "sheet"]]
+out["shot_panels"] = shot_panels
+out["shot_prompts"] = [prompts.build(p, world, styles) for p in shot_panels]
+for p in out["shot_prompts"]:
+    p.pop("preset")
+out["sheet_panel"] = render.sheet_panel(world["characters"][0])
+out["sheet_prompt"] = prompts.build(render.sheet_panel(world["characters"][0]), world, styles)
+out["sheet_prompt"].pop("preset")
+
+# identity scoring on in-frame design tags
+char = world["characters"][0]
+seen = {"short hair": 0.9, "orange hair": 0.8, "green eyes": 0.5, "freckles": 0.34, "white shirt": 0.36,
+        "brown shorts": 0.7, "boots": 0.6, "smile": 0.9}
+out["identity"] = [{"shot": shot, "general": seen, "identity": render.identity({"general": seen}, char, shot or None)}
+                   for shot in ["", "close-up", "medium", "over-shoulder", "wide", "sheet"]]
+
+# ComfyUI workflow graphs (prompt-only, IP-Adapter defaults, configured IP-Adapter)
+wf = []
+for args in [
+    dict(positive="a, b", negative="c", width=832, height=1216, seed=1000, preset="clean_webtoon", prefix="webtoon/x/p00_s0"),
+    dict(positive="a", negative="c", width=1216, height=832, seed=7, preset="hassaku_soft", prefix="x", ref="ref.png"),
+    dict(positive="a", negative="c", width=832, height=1216, seed=9, preset="clean_webtoon", prefix="x", ref="face.png",
+         ip_weight=0.35, ip_preset="PLUS FACE (portraits)", ip_end=0.6),
+]:
+    kw = dict(ref_image=args.get("ref"))
+    for k in ("ip_weight", "ip_preset", "ip_end"):
+        if k in args:
+            kw[k] = args[k]
+    g = comfy.workflow(args["positive"], args["negative"], args["width"], args["height"], args["seed"],
+                       styles["presets"][args["preset"]], args["prefix"], **kw)
+    wf.append({"args": args, "graph": g})
+out["workflows"] = wf
+
+# character tag_prompt generation (m0/gen_character.py) with a scripted LLM
+gc_calls = []
+gc_replies = [
+    {"tags": ["Short_Hair", "orange hair", "copper braid", "green eyes", "leather bracelet", "orange hair", "brown boots"], "notes": "n"},
+    {"replace": {"copper braid": ["braid", "orange hair"], "leather bracelet": ["bracelet"], "brown boots": ["brown footwear", "bootz"]}},
+    {"tags": ["short hair", "green eyes", "glowy aura"]},
+    {"replace": {"glowy aura": ["qqq", "zzz"]}},
+    {"tags": ["short hair", "green eyes", "zzz unknown", "yyy unknown"]},
+    {"replace": {"zzz unknown": ["qqq"], "yyy unknown": ["freckles"]}},
+]
+def gc_llm(system, user, temperature=0.7, **kw):
+    gc_calls.append({"system": system, "user": user, "temperature": temperature})
+    return gc_replies[len(gc_calls) - 1]
+gen_character.llm_json = gc_llm
+ch = {"name": "Vesna", "description": "Mladá kurýrka s krátkými zrzavými vlasy."}
+out["gen_character_system"] = gen_character.SYSTEM
+out["gen_character_replies"] = gc_replies
+known, unknown = gen_character.make_tag_prompt(ch)
+out["gen_character_result"] = {"known": known, "unknown": unknown}
+out["gen_character_calls"] = gc_calls
+# second scenario: first attempt leaves an unknown tag, the second is clean
+gc_calls2 = []
+gc_replies2 = [
+    {"tags": ["short hair", "glowy aura"]},
+    {"replace": {"glowy aura": "qqq, sparkle"}},
+    {"tags": ["short hair", "green eyes"]},
+]
+def gc_llm2(system, user, temperature=0.7, **kw):
+    gc_calls2.append({"system": system, "user": user, "temperature": temperature})
+    return gc_replies2[len(gc_calls2) - 1]
+gen_character.llm_json = gc_llm2
+known2, unknown2 = gen_character.make_tag_prompt(ch)
+out["gen_character2_replies"] = gc_replies2
+out["gen_character2_result"] = {"known": known2, "unknown": unknown2}
+out["gen_character2_calls"] = gc_calls2
 
 # filter
 sample = ["red hair", "(red hair:1.2)", "artist:foo", "copper hair", "1girl", "establishing shot", "(nonsense tag)", "smile"]

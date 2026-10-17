@@ -9,6 +9,7 @@ import (
 	"time"
 
 	"github.com/ol1n/webtoon/backend/internal/comfy"
+	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/fakes"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
@@ -339,6 +340,57 @@ func TestIPAdapterReferenceUpload(t *testing.T) {
 	if withIP != chars {
 		t.Fatalf("IP-Adapter on %d graphs, %d panels have characters", withIP, chars)
 	}
+	for _, g := range h.comfy.Graphs() {
+		if n, ok := g["ipapply"]; ok {
+			in := n.(map[string]any)["inputs"].(map[string]any)
+			load := g["ipload"].(map[string]any)["inputs"].(map[string]any)
+			if in["weight"] != 0.6 || in["end_at"] != 0.8 || load["preset"] != "PLUS (high strength)" {
+				t.Fatalf("default IP-Adapter settings: %v %v", in, load)
+			}
+		}
+	}
+}
+
+func TestIPAdapterCharacterConfig(t *testing.T) {
+	h := newHarness(t)
+	ref := filepath.Join(h.media, "refs", "vesna_face.jpg")
+	os.MkdirAll(filepath.Dir(ref), 0o755)
+	os.WriteFile(ref, fakes.TinyPNG(), 0o644)
+	c := &h.store.world.Characters[0]
+	c.IdentityLevel = "ip_adapter"
+	c.ReferenceImages = []string{"refs/vesna_face.jpg"}
+	c.IPAdapter = &domain.IPAdapterConfig{Preset: "PLUS FACE (portraits)", Weight: 0.35, EndAt: 0.6}
+	h.store.addCampaignWithEpisode("cp1", "ep1", "premise", nil)
+	h.drain()
+	ups := h.comfy.Uploads()
+	if len(ups) == 0 || !strings.HasSuffix(ups[0], "_ref.jpg") {
+		t.Fatalf("uploads %v", ups)
+	}
+	seen := 0
+	for _, g := range h.comfy.Graphs() {
+		if n, ok := g["ipapply"]; ok {
+			seen++
+			in := n.(map[string]any)["inputs"].(map[string]any)
+			load := g["ipload"].(map[string]any)["inputs"].(map[string]any)
+			if in["weight"] != 0.35 || in["end_at"] != 0.6 || load["preset"] != "PLUS FACE (portraits)" {
+				t.Fatalf("character IP-Adapter settings ignored: %v %v", in, load)
+			}
+		}
+	}
+	if seen == 0 {
+		t.Fatal("no IP-Adapter graph")
+	}
+	// prompt-only (the default identity level) ignores the config.
+	h2 := newHarness(t)
+	h2.store.world.Characters[0].IPAdapter = &domain.IPAdapterConfig{Weight: 0.4}
+	h2.store.world.Characters[0].ReferenceImages = []string{"refs/x.png"}
+	h2.store.addCampaignWithEpisode("cp1", "ep1", "premise", nil)
+	h2.drain()
+	for _, g := range h2.comfy.Graphs() {
+		if _, ok := g["ipapply"]; ok {
+			t.Fatal("prompt-only character rendered with IP-Adapter")
+		}
+	}
 }
 
 func TestAssignChoiceIDs(t *testing.T) {
@@ -346,5 +398,103 @@ func TestAssignChoiceIDs(t *testing.T) {
 	worker.AssignChoiceIDs(cs)
 	if cs[0].ID != "c1" || cs[1].ID != "c2" || cs[len(cs)-1].ID != "free" {
 		t.Fatalf("%+v", cs)
+	}
+}
+
+func TestCharacterSheet(t *testing.T) {
+	h := newHarness(t)
+	h.store.addSheet("sh1", "c_vesna", 4)
+	h.drain()
+	sh := h.store.sheet("sh1")
+	if sh.Status != "ready" || len(sh.Images) != 4 || sh.Best == nil || *sh.Best != 0 {
+		t.Fatalf("sheet %+v", sh)
+	}
+	// Prompt = prompts.build(render.sheet_panel(char)) of the prototype.
+	var want struct{ Positive, Negative string }
+	testutil.GoldenField(t, testutil.Golden(t), "sheet_prompt", &want)
+	if sh.Prompt != want.Positive || sh.Negative != want.Negative {
+		t.Fatalf("sheet prompt\n got: %s\nwant: %s", sh.Prompt, want.Positive)
+	}
+	seeds := map[int64]bool{}
+	for _, im := range sh.Images {
+		if im.Status != "ok" || im.Path == "" || im.Recall <= 0 {
+			t.Fatalf("image %+v", im)
+		}
+		if _, err := os.Stat(filepath.Join(h.media, im.Path)); err != nil {
+			t.Fatal(err)
+		}
+		seeds[im.Seed] = true
+	}
+	if len(seeds) != 4 {
+		t.Fatalf("seeds %v", seeds)
+	}
+	refs := h.store.world.Characters[0].ReferenceImages
+	if len(refs) != 1 || refs[0] != sh.Images[0].Path {
+		t.Fatalf("reference_images %v", refs)
+	}
+	for _, g := range h.comfy.Graphs() {
+		if g["ipapply"] != nil {
+			t.Fatal("sheet must render prompt-only")
+		}
+	}
+}
+
+func TestBestSheetImage(t *testing.T) {
+	ims := []worker.SheetImage{{Status: "unsafe", Recall: 0.9}, {Status: "ok", Recall: 0.5}, {Status: "ok", Recall: 0.7}, {Status: "ok", Recall: 0.7}}
+	if b := worker.BestSheetImage(ims); b != 2 {
+		t.Fatalf("best %d", b)
+	}
+	if b := worker.BestSheetImage(ims[:1]); b != -1 {
+		t.Fatalf("best %d", b)
+	}
+}
+
+func TestSheetComfyDownResumes(t *testing.T) {
+	h := newHarness(t)
+	h.store.addSheet("sh1", "c_vesna", 3)
+	h.comfy.Down.Store(true)
+	h.drain()
+	sh := h.store.sheet("sh1")
+	if sh.Status != "queued" || !strings.HasPrefix(sh.Error, "waiting: ") || len(sh.Images) != 0 {
+		t.Fatalf("during outage %+v", sh)
+	}
+	if j := h.store.job(1); j.Status != "queued" || j.Attempts != 0 {
+		t.Fatalf("job %+v", j)
+	}
+	// Resume from a partially rendered sheet: one candidate is already there.
+	h.store.mu.Lock()
+	h.store.sheets["sh1"].Images = []worker.SheetImage{{Seed: 1, Path: "characters/x.png", Status: "ok", Recall: 0.1}}
+	h.store.mu.Unlock()
+	h.comfy.Down.Store(false)
+	h.store.advance(6 * time.Minute)
+	h.drain()
+	sh = h.store.sheet("sh1")
+	if sh.Status != "ready" || len(sh.Images) != 3 || len(h.comfy.Graphs()) != 2 || *sh.Best == 0 {
+		t.Fatalf("after outage %+v, %d renders", sh, len(h.comfy.Graphs()))
+	}
+}
+
+func TestSheetAllUnsafeFails(t *testing.T) {
+	h := newHarness(t)
+	h.wd14.Always.Store(true)
+	h.store.addSheet("sh1", "c_vesna", 2)
+	h.drain()
+	sh := h.store.sheet("sh1")
+	if sh.Status != "failed" || !strings.Contains(sh.Error, "unsafe") || len(sh.Images) != 2 || sh.Images[0].Path != "" {
+		t.Fatalf("%+v", sh)
+	}
+	if len(h.comfy.Graphs()) != 2*(1+wd14.MaxReseed) {
+		t.Fatalf("renders %d", len(h.comfy.Graphs()))
+	}
+	if len(h.store.world.Characters[0].ReferenceImages) != 0 {
+		t.Fatal("unsafe image became a reference")
+	}
+
+	h2 := newHarness(t)
+	h2.store.world.Characters[0].TagPrompt = ""
+	h2.store.addSheet("sh2", "c_vesna", 2)
+	h2.drain()
+	if sh := h2.store.sheet("sh2"); sh.Status != "failed" || !strings.Contains(sh.Error, "tag_prompt") {
+		t.Fatalf("%+v", sh)
 	}
 }

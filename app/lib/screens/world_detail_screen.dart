@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../api/webtoon_api.dart';
+import '../author/world_editor_screen.dart';
 import '../models/world.dart';
 import '../providers/providers.dart';
 import '../theme.dart';
@@ -20,7 +21,22 @@ class WorldDetailScreen extends ConsumerWidget {
     final world = ref.watch(worldProvider(worldId));
     final userId = ref.watch(apiProvider).userId;
     return Scaffold(
-      appBar: AppBar(title: Text(world.valueOrNull?.title ?? 'Svět')),
+      appBar: AppBar(
+        title: Text(world.valueOrNull?.title ?? 'Svět'),
+        actions: [
+          if (world.valueOrNull?.isMine(userId) ?? false)
+            IconButton(
+              key: const ValueKey('edit-world'),
+              tooltip: 'Upravit svět',
+              onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  builder: (_) => WorldEditorScreen(worldId: worldId),
+                ),
+              ),
+              icon: const Icon(Icons.edit_outlined),
+            ),
+        ],
+      ),
       body: world.when(
         loading: () => const Center(child: CircularProgressIndicator()),
         error: (e, _) => ErrorRetry(

@@ -29,8 +29,11 @@ type LLM struct {
 	Storyboard func(user string) string // default: StoryboardJSON
 	Violations string                   // rule check reply, default no violations
 	Blocked    string                   // moderation blocks player text containing this
-	mu         sync.Mutex
-	calls      map[string]int
+	// CharacterTags is the tag_prompt generation reply (gen_character SYSTEM, also for locations).
+	// Its repair pass maps "copper hair" to "orange hair" and drops everything else.
+	CharacterTags string
+	mu            sync.Mutex
+	calls         map[string]int
 }
 
 const (
@@ -38,12 +41,17 @@ const (
 	KindTranslate  = "translate"
 	KindRuleCheck  = "rulecheck"
 	KindModeration = "moderation"
+	KindTagPrompt  = "tagprompt"
+	KindTagRepair  = "tagrepair"
 )
+
+var unknownTagRE = regexp.MustCompile(`'([^']*)'`)
 
 var phraseRE = regexp.MustCompile(`(?m)^- '([^']*)': `)
 
 func NewLLM(storyboardJSON string) *LLM {
-	f := &LLM{calls: map[string]int{}, Violations: `{"violations": []}`, Blocked: "ZAKÁZÁNO"}
+	f := &LLM{calls: map[string]int{}, Violations: `{"violations": []}`, Blocked: "ZAKÁZÁNO",
+		CharacterTags: `{"tags": ["short hair", "Orange_Hair", "copper hair", "green eyes", "brown boots", "green eyes"], "notes": "fake"}`}
 	f.Storyboard = func(string) string { return storyboardJSON }
 	f.Server = httptest.NewServer(http.HandlerFunc(f.handle))
 	return f
@@ -86,6 +94,23 @@ func (f *LLM) handle(w http.ResponseWriter, r *http.Request) {
 		content = string(b)
 	case system == "You are a strict continuity editor.":
 		kind, content = KindRuleCheck, f.Violations
+	case strings.HasPrefix(system, "You convert a character description"), strings.HasPrefix(system, "You convert a location description"):
+		if strings.HasPrefix(user, "These Danbooru tags do not exist") {
+			kind = KindTagRepair
+			rep := map[string][]string{}
+			first := strings.SplitN(user, "\n", 2)[0]
+			for _, m := range unknownTagRE.FindAllStringSubmatch(first, -1) {
+				if m[1] == "copper hair" {
+					rep[m[1]] = []string{"orange hair"}
+				} else {
+					rep[m[1]] = []string{}
+				}
+			}
+			b, _ := json.Marshal(map[string]any{"replace": rep})
+			content = string(b)
+		} else {
+			kind, content = KindTagPrompt, f.CharacterTags
+		}
 	case strings.HasPrefix(system, "You are a content moderator"):
 		kind = KindModeration
 		input := user[strings.Index(user, "<<<"):]

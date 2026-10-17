@@ -12,7 +12,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/store"
+	"github.com/ol1n/webtoon/backend/internal/tags"
 )
 
 // Waker is notified after a job is enqueued (the in-process worker pool).
@@ -22,6 +24,9 @@ type Config struct {
 	MediaDir     string
 	MediaBaseURL string // prefix for image URLs, default "/media"
 	MaxAttempts  int
+	MaxUpload    int64          // reference image upload limit, default 8 MiB
+	LLM          llm.JSONCaller // tag_prompt generation (nil = 503)
+	Vocab        *tags.Vocab    // WD14 vocabulary for the tag repair pass
 }
 
 type Server struct {
@@ -39,6 +44,9 @@ func New(cfg Config, s *store.Store, waker Waker) *Server {
 	if cfg.MaxAttempts <= 0 {
 		cfg.MaxAttempts = 3
 	}
+	if cfg.MaxUpload <= 0 {
+		cfg.MaxUpload = defaultMaxUpload
+	}
 	return &Server{cfg: cfg, store: s, waker: waker, log: slog.Default().With("component", "api")}
 }
 
@@ -55,6 +63,20 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("POST /worlds/{id}/characters", s.requireUser(s.createCharacter))
 	mux.HandleFunc("POST /worlds/{id}/locations", s.requireUser(s.createLocation))
 	mux.HandleFunc("GET /worlds/{id}/stats", s.requireUser(s.worldStats))
+
+	// M3 author tools
+	mux.HandleFunc("GET /style_presets", s.listStylePresets)
+	mux.HandleFunc("PATCH /worlds/{id}/characters/{cid}", s.requireUser(s.patchCharacter))
+	mux.HandleFunc("DELETE /worlds/{id}/characters/{cid}", s.requireUser(s.deleteCharacter))
+	mux.HandleFunc("POST /worlds/{id}/characters/{cid}/tag_prompt", s.requireUser(s.characterTagPrompt))
+	mux.HandleFunc("POST /worlds/{id}/characters/{cid}/sheet", s.requireUser(s.createSheet))
+	mux.HandleFunc("GET /worlds/{id}/characters/{cid}/sheets", s.requireUser(s.listSheets))
+	mux.HandleFunc("POST /worlds/{id}/characters/{cid}/references", s.requireUser(s.uploadCharacterReference))
+	mux.HandleFunc("PATCH /worlds/{id}/locations/{lid}", s.requireUser(s.patchLocation))
+	mux.HandleFunc("DELETE /worlds/{id}/locations/{lid}", s.requireUser(s.deleteLocation))
+	mux.HandleFunc("POST /worlds/{id}/locations/{lid}/tag_prompt", s.requireUser(s.locationTagPrompt))
+	mux.HandleFunc("POST /worlds/{id}/locations/{lid}/references", s.requireUser(s.uploadLocationReference))
+	mux.HandleFunc("GET /sheets/{sid}", s.requireUser(s.getSheet))
 
 	mux.HandleFunc("POST /campaigns", s.requireUser(s.createCampaign))
 	mux.HandleFunc("GET /campaigns", s.requireUser(s.listCampaigns))

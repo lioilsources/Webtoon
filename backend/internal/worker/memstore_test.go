@@ -25,6 +25,14 @@ type memStore struct {
 	campaigns map[string]*worker.Campaign
 	episodes  map[string]*memEpisode
 	panels    map[string][]*memPanel
+	sheets    map[string]*memSheet
+}
+
+type memSheet struct {
+	worker.Sheet
+	Error            string
+	Best             *int
+	Prompt, Negative string
 }
 
 type memJob struct {
@@ -54,7 +62,8 @@ var errNotFound = errors.New("not found")
 
 func newMemStore(w *domain.World, st *domain.Styles) *memStore {
 	return &memStore{now: time.Now(), world: w, styles: st,
-		campaigns: map[string]*worker.Campaign{}, episodes: map[string]*memEpisode{}, panels: map[string][]*memPanel{}}
+		campaigns: map[string]*worker.Campaign{}, episodes: map[string]*memEpisode{}, panels: map[string][]*memPanel{},
+		sheets: map[string]*memSheet{}}
 }
 
 func (m *memStore) advance(d time.Duration) { m.mu.Lock(); m.now = m.now.Add(d); m.mu.Unlock() }
@@ -254,5 +263,66 @@ func (m *memStore) FinalizeEpisode(_ context.Context, ep string, fn func(*worker
 		c.State, c.CanonProgress = f.CampaignState, f.CanonProgress
 	}
 	e.Status, e.Error, e.Snapshot = f.EpisodeStatus, f.Error, f.StateSnapshot
+	return nil
+}
+
+func (m *memStore) addSheet(id, charID string, seeds int) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.sheets[id] = &memSheet{Sheet: worker.Sheet{ID: id, WorldID: m.world.ID, CharacterID: charID, Status: "queued", Seeds: seeds}}
+	m.enqueue(worker.KindSheet, worker.SheetPayload{SheetID: id}, 3)
+}
+
+func (m *memStore) sheet(id string) memSheet {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	return *m.sheets[id]
+}
+
+func (m *memStore) LoadSheetContext(_ context.Context, id string) (*worker.SheetContext, error) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	sh, ok := m.sheets[id]
+	if !ok {
+		return nil, errNotFound
+	}
+	cp := sh.Sheet
+	cp.Images = append([]worker.SheetImage(nil), sh.Images...)
+	return &worker.SheetContext{Sheet: cp, World: m.world, Styles: m.styles}, nil
+}
+
+func (m *memStore) SetSheetStatus(_ context.Context, id, status, msg string) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.sheets[id].Status, m.sheets[id].Error = status, msg
+	return nil
+}
+
+func (m *memStore) SetSheetPrompt(_ context.Context, id, pos, neg string) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.sheets[id].Prompt, m.sheets[id].Negative = pos, neg
+	return nil
+}
+
+func (m *memStore) AddSheetImage(_ context.Context, id string, img worker.SheetImage) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.sheets[id].Images = append(m.sheets[id].Images, img)
+	return nil
+}
+
+func (m *memStore) FinishSheet(_ context.Context, id, status string, best *int, msg string) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	sh := m.sheets[id]
+	sh.Status, sh.Best, sh.Error = status, best, msg
+	if best != nil {
+		for i := range m.world.Characters {
+			if m.world.Characters[i].ID == sh.CharacterID {
+				m.world.Characters[i].ReferenceImages = append(m.world.Characters[i].ReferenceImages, sh.Images[*best].Path)
+			}
+		}
+	}
 	return nil
 }

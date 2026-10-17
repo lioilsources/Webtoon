@@ -8,6 +8,7 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/ol1n/webtoon/backend/internal/testutil"
 	"github.com/ol1n/webtoon/backend/internal/upstream"
 	"github.com/ol1n/webtoon/backend/internal/wd14"
 )
@@ -30,12 +31,42 @@ func TestSafetyThresholds(t *testing.T) {
 
 func TestIdentityScore(t *testing.T) {
 	tg := &wd14.Tags{General: map[string]float64{"short hair": 0.9, "green eyes": 0.35, "freckles": 0.34}}
-	id := wd14.IdentityScore(tg, "short hair, green eyes, freckles")
+	id := wd14.IdentityScore(tg, "short hair, green eyes, freckles", "")
 	if id.Recall != 0.667 || !reflect.DeepEqual(id.Missing, []string{"freckles"}) {
 		t.Fatalf("%+v", id)
 	}
-	if id := wd14.IdentityScore(tg, ""); id.Recall != 0 {
+	if id := wd14.IdentityScore(tg, "", ""); id.Recall != 0 {
 		t.Fatalf("%+v", id)
+	}
+	// Out-of-frame tags do not count: boots are not in a medium shot, the skirt not in a close-up.
+	tg = &wd14.Tags{General: map[string]float64{"short hair": 0.9}}
+	if id := wd14.IdentityScore(tg, "short hair, red skirt, brown boots", "close-up"); id.Recall != 1 || len(id.Missing) != 0 {
+		t.Fatalf("close-up %+v", id)
+	}
+	if id := wd14.IdentityScore(tg, "short hair, red skirt, brown boots", "medium"); id.Recall != 0.5 ||
+		!reflect.DeepEqual(id.Missing, []string{"red skirt"}) {
+		t.Fatalf("medium %+v", id)
+	}
+}
+
+// TestIdentityMatchesPrototype compares with render.identity on the M0 character for every shot.
+func TestIdentityMatchesPrototype(t *testing.T) {
+	g := testutil.Golden(t)
+	var cases []struct {
+		Shot    string             `json:"shot"`
+		General map[string]float64 `json:"general"`
+		Want    wd14.Identity      `json:"identity"`
+	}
+	testutil.GoldenField(t, g, "identity", &cases)
+	if len(cases) == 0 {
+		t.Fatal("no golden identity cases")
+	}
+	w := testutil.World(t)
+	for _, c := range cases {
+		got := wd14.IdentityScore(&wd14.Tags{General: c.General}, w.Characters[0].TagPrompt, c.Shot)
+		if got.Recall != c.Want.Recall || !reflect.DeepEqual(got.Missing, c.Want.Missing) {
+			t.Errorf("shot %q: got %+v, want %+v", c.Shot, got, c.Want)
+		}
 	}
 }
 

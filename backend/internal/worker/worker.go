@@ -18,6 +18,7 @@ import (
 	"math/rand/v2"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 	"time"
 
@@ -139,6 +140,8 @@ func (w *Worker) RunOnce(ctx context.Context, id string) (bool, error) {
 		perr = w.episodeJob(ctx, job)
 	case KindPanel:
 		perr = w.panelJob(ctx, job)
+	case KindSheet:
+		perr = w.sheetJob(ctx, job)
 	default:
 		perr = permanent(fmt.Errorf("unknown job kind %q", job.Kind))
 	}
@@ -193,14 +196,25 @@ func (w *Worker) onDefer(ctx context.Context, job *Job, err error, at time.Time)
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.SetPanelStatus(ctx, p.EpisodeID, p.Panel, "pending", msg)
 		}
+	case KindSheet:
+		var p SheetPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.SetSheetStatus(ctx, p.SheetID, "queued", msg)
+		}
 	}
 }
 
 func (w *Worker) onRetry(ctx context.Context, job *Job, err error) {
-	if job.Kind == KindPanel {
+	switch job.Kind {
+	case KindPanel:
 		var p PanelPayload
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.SetPanelStatus(ctx, p.EpisodeID, p.Panel, "pending", err.Error())
+		}
+	case KindSheet:
+		var p SheetPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.SetSheetStatus(ctx, p.SheetID, "queued", err.Error())
 		}
 	}
 }
@@ -217,6 +231,11 @@ func (w *Worker) onFail(ctx context.Context, job *Job, err error) {
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.SetPanelStatus(ctx, p.EpisodeID, p.Panel, "failed", err.Error())
 			_ = w.maybeFinalize(ctx, p.EpisodeID)
+		}
+	case KindSheet:
+		var p SheetPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.FinishSheet(ctx, p.SheetID, "failed", nil, err.Error())
 		}
 	}
 }
@@ -285,6 +304,38 @@ func BaseSeed(episodeID string, idx int) int64 {
 	return int64(h.Sum32()%1_000_000_000) + int64(idx)*100
 }
 
+// render runs one prompt through ComfyUI with the WD14 safety reseeds (max wd14.MaxReseed).
+// Returns the last image, its tags, the unsafe ratings (empty = safe) and the seed used.
+func (w *Worker) render(ctx context.Context, pr *prompt.Result, seed int64, prefix string, ip *comfy.IPAdapter, sfw bool) (
+	png []byte, tagged *wd14.Tags, bad map[string]float64, used int64, attempts []RenderAttempt, err error) {
+	for attempt := 0; attempt <= wd14.MaxReseed; attempt++ {
+		s := seed
+		if attempt > 0 {
+			s = rand.Int64N(1<<31 + 1)
+		}
+		g := comfy.Workflow(pr.Positive, pr.Negative, pr.Width, pr.Height, s, pr.Preset, prefix, ip)
+		images, err := w.comfy.Run(ctx, g)
+		if err != nil {
+			return nil, nil, nil, 0, nil, err
+		}
+		png = images[0]
+		tagged, err = w.wd14.Tag(ctx, png)
+		if err != nil {
+			return nil, nil, nil, 0, nil, err
+		}
+		bad = map[string]float64{}
+		if sfw {
+			bad = wd14.Safety(tagged)
+		}
+		attempts = append(attempts, RenderAttempt{Seed: s, Unsafe: bad})
+		used = s
+		if len(bad) == 0 {
+			break
+		}
+	}
+	return png, tagged, bad, used, attempts, nil
+}
+
 func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 	var pp PanelPayload
 	if err := json.Unmarshal(job.Payload, &pp); err != nil {
@@ -313,7 +364,7 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 	if err := w.store.SetPanelStatus(ctx, pp.EpisodeID, pp.Panel, "rendering", ""); err != nil {
 		return err
 	}
-	refName, err := w.uploadReference(ctx, ec.World, &panel.SB)
+	ip, err := w.uploadReference(ctx, ec.World, &panel.SB)
 	if err != nil {
 		return err
 	}
@@ -323,36 +374,9 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 		seed = rand.Int64N(1 << 31)
 	}
 	prefix := fmt.Sprintf("webtoon/%s/p%02d", pp.EpisodeID, pp.Panel)
-	var (
-		png      []byte
-		tagged   *wd14.Tags
-		bad      map[string]float64
-		attempts []RenderAttempt
-	)
-	for attempt := 0; attempt <= wd14.MaxReseed; attempt++ {
-		s := seed
-		if attempt > 0 {
-			s = rand.Int64N(1<<31 + 1)
-		}
-		g := comfy.Workflow(pr.Positive, pr.Negative, pr.Width, pr.Height, s, pr.Preset, prefix, refName, 0.6)
-		images, err := w.comfy.Run(ctx, g)
-		if err != nil {
-			return err
-		}
-		png = images[0]
-		tagged, err = w.wd14.Tag(ctx, png)
-		if err != nil {
-			return err
-		}
-		bad = map[string]float64{}
-		if sfw {
-			bad = wd14.Safety(tagged)
-		}
-		attempts = append(attempts, RenderAttempt{Seed: s, Unsafe: bad})
-		seed = s
-		if len(bad) == 0 {
-			break
-		}
+	png, tagged, bad, seed, attempts, err := w.render(ctx, pr, seed, prefix, ip, sfw)
+	if err != nil {
+		return err
 	}
 
 	res := &PanelResult{
@@ -375,7 +399,7 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 		var sum float64
 		for _, pc := range panel.SB.Characters {
 			if c, ok := ec.World.Character(pc.ID); ok {
-				id := wd14.IdentityScore(tagged, c.TagPrompt)
+				id := wd14.IdentityScore(tagged, c.TagPrompt, panel.SB.Shot)
 				res.Identity[c.ID] = id
 				sum += id.Recall
 			}
@@ -396,22 +420,129 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 	return w.maybeFinalize(ctx, pp.EpisodeID)
 }
 
-// uploadReference uploads the first IP-Adapter reference of a character in the panel.
-func (w *Worker) uploadReference(ctx context.Context, wld *domain.World, p *domain.SBPanel) (string, error) {
+// uploadReference uploads the first reference of the first character in the panel with
+// identity_level ip_adapter and returns the adapter settings (that character's ip_adapter
+// config). nil = prompt-only, the M0 default.
+func (w *Worker) uploadReference(ctx context.Context, wld *domain.World, p *domain.SBPanel) (*comfy.IPAdapter, error) {
 	for _, pc := range p.Characters {
 		c, ok := wld.Character(pc.ID)
 		if !ok || c.IdentityLevel != "ip_adapter" || len(c.ReferenceImages) == 0 {
 			continue
 		}
-		path := filepath.Join(w.cfg.MediaDir, filepath.FromSlash(c.ReferenceImages[0]))
-		png, err := os.ReadFile(path)
+		rel := c.ReferenceImages[0]
+		path := filepath.Join(w.cfg.MediaDir, filepath.FromSlash(rel))
+		img, err := os.ReadFile(path)
 		if err != nil {
 			w.log.Warn("reference image missing, rendering prompt-only", "character", c.ID, "path", path)
-			return "", nil
+			return nil, nil
 		}
-		return w.comfy.Upload(ctx, png, fmt.Sprintf("webtoon_%s_%s_ref.png", wld.ID, c.ID))
+		ext := strings.ToLower(filepath.Ext(rel))
+		if ext != ".jpg" && ext != ".jpeg" {
+			ext = ".png"
+		}
+		name, err := w.comfy.Upload(ctx, img, fmt.Sprintf("webtoon_%s_%s_ref%s", wld.ID, c.ID, ext))
+		if err != nil {
+			return nil, err
+		}
+		return comfy.IPAdapterFor(name, c.IPAdapter), nil
 	}
-	return "", nil
+	return nil, nil
+}
+
+// --- character sheet job -------------------------------------------------------
+
+// DefaultSheetSeeds is the prototype's `render.py --sheet --seeds 4`.
+const DefaultSheetSeeds = 4
+
+// SheetPanel = render.sheet_panel: full body on a white background, no location.
+func SheetPanel(characterID string) domain.SBPanel {
+	return domain.SBPanel{Shot: "sheet", Characters: []domain.SBChar{{ID: characterID}},
+		VisualTags: []string{"standing", "full body", "looking at viewer", "smile", "white background",
+			"simple background", "straight-on", "arms at sides"}}
+}
+
+// BestSheetImage picks the safe candidate with the highest identity recall (first on ties); -1 if none.
+func BestSheetImage(images []SheetImage) int {
+	best := -1
+	for i, im := range images {
+		if im.Status == "ok" && (best < 0 || im.Recall > images[best].Recall) {
+			best = i
+		}
+	}
+	return best
+}
+
+// sheetJob renders a character reference sheet: Seeds candidates (prompt-only, the sheet is
+// the future IP-Adapter reference), WD14 safety + identity recall on each, best one becomes a
+// reference image. Progress is stored per candidate, so a job interrupted by a ComfyUI outage
+// continues where it stopped.
+func (w *Worker) sheetJob(ctx context.Context, job *Job) error {
+	var sp SheetPayload
+	if err := json.Unmarshal(job.Payload, &sp); err != nil {
+		return permanent(err)
+	}
+	sc, err := w.store.LoadSheetContext(ctx, sp.SheetID)
+	if err != nil {
+		return err
+	}
+	sh := sc.Sheet
+	if sh.Status == "ready" || sh.Status == "failed" {
+		return nil
+	}
+	char, ok := sc.World.Character(sh.CharacterID)
+	if !ok {
+		return permanent(fmt.Errorf("character %s not found", sh.CharacterID))
+	}
+	if char.TagPrompt == "" {
+		return permanent(fmt.Errorf("character %s has no tag_prompt", char.ID))
+	}
+	sfw := sc.World.Audience != "adult"
+	panel := SheetPanel(char.ID)
+	pr, err := prompt.Build(&panel, sc.World, sc.Styles, "", sfw)
+	if err != nil {
+		return permanent(err)
+	}
+	if err := w.comfy.Ping(ctx); err != nil {
+		return err
+	}
+	if err := w.store.SetSheetStatus(ctx, sh.ID, "rendering", ""); err != nil {
+		return err
+	}
+	if len(sh.Images) == 0 {
+		if err := w.store.SetSheetPrompt(ctx, sh.ID, pr.Positive, pr.Negative); err != nil {
+			return err
+		}
+	}
+	images := sh.Images
+	base := BaseSeed(sh.ID, 0)
+	for k := len(images); k < sh.Seeds; k++ {
+		prefix := fmt.Sprintf("webtoon/sheets/%s/s%d", sh.ID, k)
+		png, tagged, bad, seed, attempts, err := w.render(ctx, pr, base+int64(k), prefix, nil, sfw)
+		if err != nil {
+			return err
+		}
+		id := wd14.IdentityScore(tagged, char.TagPrompt, panel.Shot)
+		im := SheetImage{Seed: seed, Status: "ok", Recall: id.Recall, Missing: id.Missing, Attempts: attempts}
+		if len(bad) > 0 {
+			im.Status, im.Unsafe = "unsafe", bad
+		} else {
+			rel := filepath.ToSlash(filepath.Join("characters", sc.World.ID, char.ID, fmt.Sprintf("sheet_%s_%d_%d.png", sh.ID, k, seed)))
+			if err := writeFile(filepath.Join(w.cfg.MediaDir, rel), png); err != nil {
+				return err
+			}
+			im.Path = rel
+		}
+		if err := w.store.AddSheetImage(ctx, sh.ID, im); err != nil {
+			return err
+		}
+		images = append(images, im)
+		w.log.Info("sheet candidate", "sheet", sh.ID, "character", char.ID, "k", k, "seed", seed, "status", im.Status, "identity", im.Recall)
+	}
+	best := BestSheetImage(images)
+	if best < 0 {
+		return w.store.FinishSheet(ctx, sh.ID, "failed", nil, fmt.Sprintf("all %d candidates unsafe", len(images)))
+	}
+	return w.store.FinishSheet(ctx, sh.ID, "ready", &best, "")
 }
 
 func writeFile(path string, data []byte) error {

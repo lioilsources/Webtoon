@@ -3,9 +3,11 @@ package api
 import (
 	"encoding/json"
 	"errors"
+	"fmt"
 	"net/http"
 	"regexp"
 	"slices"
+	"strings"
 	"time"
 
 	"github.com/jackc/pgx/v5/pgconn"
@@ -28,8 +30,37 @@ type worldResp struct {
 	Bible       json.RawMessage `json:"bible"`
 	Canon       json.RawMessage `json:"canon"`
 	Permissions json.RawMessage `json:"permissions"`
+	Characters  []characterResp `json:"characters"`
+	Locations   []locationResp  `json:"locations"`
 	CreatedAt   time.Time       `json:"created_at"`
 	UpdatedAt   time.Time       `json:"updated_at"`
+}
+
+// characterResp adds the media URLs of the reference images (reference_images are MEDIA_DIR paths).
+type characterResp struct {
+	domain.Character
+	ReferenceURLs []string `json:"reference_urls"`
+}
+
+type locationResp struct {
+	domain.Location
+	ReferenceURLs []string `json:"reference_urls"`
+}
+
+func (s *Server) mediaURLs(paths []string) []string {
+	out := make([]string, 0, len(paths))
+	for _, p := range paths {
+		out = append(out, s.mediaURL(p))
+	}
+	return out
+}
+
+func (s *Server) characterJSON(c domain.Character) characterResp {
+	return characterResp{Character: c, ReferenceURLs: s.mediaURLs(c.ReferenceImages)}
+}
+
+func (s *Server) locationJSON(l domain.Location) locationResp {
+	return locationResp{Location: l, ReferenceURLs: s.mediaURLs(l.ReferenceImages)}
 }
 
 func (s *Server) worldResponse(r *http.Request, row dbq.World) (*worldResp, error) {
@@ -37,22 +68,31 @@ func (s *Server) worldResponse(r *http.Request, row dbq.World) (*worldResp, erro
 	if err != nil {
 		return nil, err
 	}
-	return &worldResp{World: w, Bible: row.Bible, Canon: row.Canon, Permissions: row.Permissions,
-		CreatedAt: row.CreatedAt, UpdatedAt: row.UpdatedAt}, nil
+	resp := &worldResp{World: w, Bible: row.Bible, Canon: row.Canon, Permissions: row.Permissions,
+		Characters: make([]characterResp, 0, len(w.Characters)), Locations: make([]locationResp, 0, len(w.Locations)),
+		CreatedAt: row.CreatedAt, UpdatedAt: row.UpdatedAt}
+	for _, c := range w.Characters {
+		resp.Characters = append(resp.Characters, s.characterJSON(c))
+	}
+	for _, l := range w.Locations {
+		resp.Locations = append(resp.Locations, s.locationJSON(l))
+	}
+	return resp, nil
 }
 
 type characterReq struct {
-	ID              string   `json:"id"`
-	Name            string   `json:"name"`
-	Role            string   `json:"role"`
-	CountTag        string   `json:"count_tag"`
-	Description     string   `json:"description"`
-	Personality     string   `json:"personality"`
-	SpeechStyle     string   `json:"speech_style"`
-	TagPrompt       string   `json:"tag_prompt"`
-	ReferenceImages []string `json:"reference_images"`
-	IdentityLevel   string   `json:"identity_level"`
-	IdentityAsset   *string  `json:"identity_asset"`
+	ID              string                  `json:"id"`
+	Name            string                  `json:"name"`
+	Role            string                  `json:"role"`
+	CountTag        string                  `json:"count_tag"`
+	Description     string                  `json:"description"`
+	Personality     string                  `json:"personality"`
+	SpeechStyle     string                  `json:"speech_style"`
+	TagPrompt       string                  `json:"tag_prompt"`
+	ReferenceImages []string                `json:"reference_images"`
+	IdentityLevel   string                  `json:"identity_level"`
+	IdentityAsset   *string                 `json:"identity_asset"`
+	IPAdapter       *domain.IPAdapterConfig `json:"ip_adapter"`
 }
 
 type locationReq struct {
@@ -79,7 +119,9 @@ type worldReq struct {
 	Locations   []locationReq   `json:"locations"`
 }
 
-func (s *Server) validateWorldReq(r *http.Request, req *worldReq) error {
+// validateWorldReq checks the fields and normalises canon (trimmed texts, ids for new nodes).
+// locIDs are the world's location ids (for permissions.allowed_locations).
+func (s *Server) validateWorldReq(r *http.Request, req *worldReq, locIDs []string) error {
 	if req.Audience != nil && !slices.Contains(audiences, *req.Audience) {
 		return errf(http.StatusBadRequest, "audience must be kids|teen|adult")
 	}
@@ -101,16 +143,101 @@ func (s *Server) validateWorldReq(r *http.Request, req *worldReq) error {
 		}
 	}
 	if len(req.Canon) > 0 {
-		var c domain.Canon
-		if json.Unmarshal(req.Canon, &c) != nil {
-			return errf(http.StatusBadRequest, "canon must be {nodes: [{id, text}], constraints: [...]}")
+		canon, err := normalizeCanon(req.Canon)
+		if err != nil {
+			return err
 		}
+		req.Canon = canon
 	}
 	if len(req.Permissions) > 0 {
 		var p domain.Permissions
 		if json.Unmarshal(req.Permissions, &p) != nil {
 			return errf(http.StatusBadRequest, "invalid permissions")
 		}
+		for _, l := range p.AllowedLocations {
+			if !slices.Contains(locIDs, l) {
+				return errf(http.StatusBadRequest, "permissions.allowed_locations: unknown location "+l)
+			}
+		}
+		if p.MaxEpisodes < 0 {
+			return errf(http.StatusBadRequest, "permissions.max_episodes must be >= 0")
+		}
+	}
+	return nil
+}
+
+// normalizeCanon validates the canon editor's ordered node list and constraints. Nodes keep
+// their ids (campaign canon_progress refers to them); new nodes without an id get n1, n2, ….
+// Other keys of the canon object are kept.
+func normalizeCanon(raw json.RawMessage) (json.RawMessage, error) {
+	bad := errf(http.StatusBadRequest, "canon must be {nodes: [{id, text}], constraints: [...]}")
+	var doc map[string]json.RawMessage
+	if json.Unmarshal(raw, &doc) != nil || doc == nil {
+		return nil, bad
+	}
+	var c domain.Canon
+	if json.Unmarshal(raw, &c) != nil {
+		return nil, bad
+	}
+	seen := map[string]bool{}
+	for _, n := range c.Nodes {
+		if n.ID != "" {
+			if seen[n.ID] {
+				return nil, errf(http.StatusBadRequest, "duplicate canon node id "+n.ID)
+			}
+			seen[n.ID] = true
+		}
+	}
+	nodes := make([]domain.CanonNode, 0, len(c.Nodes))
+	next := 1
+	for _, n := range c.Nodes {
+		n.Text = strings.TrimSpace(n.Text)
+		if n.Text == "" {
+			return nil, errf(http.StatusBadRequest, "canon node text is required")
+		}
+		if n.ID == "" {
+			for seen[fmt.Sprintf("n%d", next)] {
+				next++
+			}
+			n.ID = fmt.Sprintf("n%d", next)
+			seen[n.ID] = true
+		} else if len(n.ID) > 64 {
+			return nil, errf(http.StatusBadRequest, "canon node id too long")
+		}
+		nodes = append(nodes, n)
+	}
+	constraints := make([]any, 0, len(c.Constraints))
+	for _, x := range c.Constraints {
+		switch v := x.(type) {
+		case string:
+			if v = strings.TrimSpace(v); v != "" {
+				constraints = append(constraints, v)
+			}
+		case nil:
+		default:
+			constraints = append(constraints, v)
+		}
+	}
+	doc["nodes"] = store.MustJSON(nodes)
+	doc["constraints"] = store.MustJSON(constraints)
+	return store.MustJSON(doc), nil
+}
+
+var countTagValues = []string{"", "1girl", "1boy"}
+
+// validateIPAdapter checks the optional IP-Adapter settings (zero = default).
+func validateIPAdapter(ip *domain.IPAdapterConfig) error {
+	if ip == nil {
+		return nil
+	}
+	if ip.Preset != "" && !slices.Contains(domain.IPAdapterPresets, ip.Preset) {
+		return errf(http.StatusBadRequest, "ip_adapter.preset must be one of: "+strings.Join(domain.IPAdapterPresets, ", "))
+	}
+	if ip.Weight < 0 || ip.Weight > 2 {
+		return errf(http.StatusBadRequest, "ip_adapter.weight must be within 0..2")
+	}
+	if ip.EndAt < 0 || ip.EndAt > 1 {
+		return errf(http.StatusBadRequest, "ip_adapter.end_at must be within 0..1")
 	}
 	return nil
 }
@@ -132,7 +259,11 @@ func (s *Server) createWorld(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, errf(http.StatusBadRequest, "title and style_id are required"))
 		return
 	}
-	if err := s.validateWorldReq(r, &req); err != nil {
+	var locIDs []string
+	for _, l := range req.Locations {
+		locIDs = append(locIDs, l.ID)
+	}
+	if err := s.validateWorldReq(r, &req, locIDs); err != nil {
 		s.fail(w, err)
 		return
 	}
@@ -178,7 +309,12 @@ func (s *Server) listWorlds(w http.ResponseWriter, r *http.Request) {
 	if v := r.URL.Query().Get("visibility"); v != "" {
 		vis = &v
 	}
-	rows, err := s.store.Q.ListWorlds(r.Context(), dbq.ListWorldsParams{Viewer: userID(r), Visibility: vis})
+	onlyOwn := r.URL.Query().Get("owner") == "me"
+	if onlyOwn && userID(r) == "" {
+		s.fail(w, errf(http.StatusUnauthorized, "missing X-User-ID"))
+		return
+	}
+	rows, err := s.store.Q.ListWorlds(r.Context(), dbq.ListWorldsParams{Viewer: userID(r), Visibility: vis, OnlyOwn: onlyOwn})
 	if err != nil {
 		s.fail(w, err)
 		return
@@ -237,7 +373,16 @@ func (s *Server) patchWorld(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, errf(http.StatusBadRequest, "use POST /worlds/{id}/characters|locations"))
 		return
 	}
-	if err := s.validateWorldReq(r, &req); err != nil {
+	locs, err := s.store.Q.ListLocations(r.Context(), row.ID)
+	if err != nil {
+		s.fail(w, err)
+		return
+	}
+	var locIDs []string
+	for _, l := range locs {
+		locIDs = append(locIDs, l.ID)
+	}
+	if err := s.validateWorldReq(r, &req, locIDs); err != nil {
 		s.fail(w, err)
 		return
 	}
@@ -290,13 +435,24 @@ func insertCharacter(r *http.Request, q *dbq.Queries, worldID, ownerID string, c
 	if !slices.Contains(idLevels, c.IdentityLevel) {
 		return dbq.Character{}, errf(http.StatusBadRequest, "identity_level must be prompt|ip_adapter|lora")
 	}
+	if !slices.Contains(countTagValues, c.CountTag) {
+		return dbq.Character{}, errf(http.StatusBadRequest, "count_tag must be 1girl|1boy or empty")
+	}
+	if err := validateIPAdapter(c.IPAdapter); err != nil {
+		return dbq.Character{}, err
+	}
+	var ip json.RawMessage
+	if c.IPAdapter != nil {
+		ip = store.MustJSON(c.IPAdapter)
+	}
 	if c.ReferenceImages == nil {
 		c.ReferenceImages = []string{}
 	}
 	row, err := q.CreateCharacter(r.Context(), dbq.CreateCharacterParams{
 		WorldID: worldID, ID: c.ID, OwnerID: ownerID, Name: c.Name, Role: c.Role, CountTag: c.CountTag,
-		Description: c.Description, Personality: c.Personality, SpeechStyle: c.SpeechStyle, TagPrompt: c.TagPrompt,
+		Description: c.Description, Personality: c.Personality, SpeechStyle: c.SpeechStyle, TagPrompt: normTagPrompt(c.TagPrompt),
 		ReferenceImages: store.MustJSON(c.ReferenceImages), IdentityLevel: c.IdentityLevel, IdentityAsset: c.IdentityAsset,
+		IpAdapter: ip,
 	})
 	return row, conflict(err, "character")
 }
@@ -314,7 +470,7 @@ func insertLocation(r *http.Request, q *dbq.Queries, worldID string, l locationR
 		l.ReferenceImages = []string{}
 	}
 	row, err := q.CreateLocation(r.Context(), dbq.CreateLocationParams{
-		WorldID: worldID, ID: l.ID, Name: l.Name, Description: l.Description, TagPrompt: l.TagPrompt,
+		WorldID: worldID, ID: l.ID, Name: l.Name, Description: l.Description, TagPrompt: normTagPrompt(l.TagPrompt),
 		ReferenceImages: store.MustJSON(l.ReferenceImages), Mood: l.Mood,
 	})
 	return row, conflict(err, "location")
@@ -348,7 +504,7 @@ func (s *Server) createCharacter(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
-	writeJSON(w, http.StatusCreated, store.CharacterFromRow(c))
+	writeJSON(w, http.StatusCreated, s.characterJSON(store.CharacterFromRow(c)))
 }
 
 func (s *Server) createLocation(w http.ResponseWriter, r *http.Request) {
@@ -371,7 +527,7 @@ func (s *Server) createLocation(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
-	writeJSON(w, http.StatusCreated, store.LocationFromRow(l))
+	writeJSON(w, http.StatusCreated, s.locationJSON(store.LocationFromRow(l)))
 }
 
 // worldStats is the author dashboard: counts, where campaigns are, choice distribution.
@@ -422,6 +578,44 @@ func (s *Server) worldStats(w http.ResponseWriter, r *http.Request) {
 	for _, c := range canon {
 		canonOut[c.NodeID] = int(c.Campaigns)
 	}
+	stopped, err := s.store.Q.StoppedAt(ctx, row.ID)
+	if err != nil {
+		s.fail(w, err)
+		return
+	}
+	stoppedOut := make([]map[string]int, 0, len(stopped))
+	for _, st := range stopped {
+		stoppedOut = append(stoppedOut, map[string]int{"episode": int(st.Episode), "campaigns": int(st.Campaigns)})
+	}
+	perEp, err := s.store.Q.ChoicesByEpisode(ctx, row.ID)
+	if err != nil {
+		s.fail(w, err)
+		return
+	}
+	type epChoices struct {
+		Episode int            `json:"episode"`
+		Total   int            `json:"total"`
+		Choices map[string]int `json:"choices"`
+	}
+	perEpOut := []*epChoices{}
+	for _, c := range perEp {
+		if len(perEpOut) == 0 || perEpOut[len(perEpOut)-1].Episode != int(c.Episode) {
+			perEpOut = append(perEpOut, &epChoices{Episode: int(c.Episode), Choices: map[string]int{}})
+		}
+		cur := perEpOut[len(perEpOut)-1]
+		cur.Choices[c.ChoiceID] += int(c.N)
+		cur.Total += int(c.N)
+	}
+	pcs, err := s.store.Q.PlayerCreatedCharacters(ctx, row.ID)
+	if err != nil {
+		s.fail(w, err)
+		return
+	}
+	pcOut := make([]map[string]any, 0, len(pcs))
+	for _, c := range pcs {
+		pcOut = append(pcOut, map[string]any{"id": c.ID, "name": c.Name, "owner_id": c.OwnerID,
+			"description": c.Description, "created_at": c.CreatedAt})
+	}
 	writeJSON(w, http.StatusOK, map[string]any{
 		"world_id":                  row.ID,
 		"campaigns":                 counts.Campaigns,
@@ -435,7 +629,10 @@ func (s *Server) worldStats(w http.ResponseWriter, r *http.Request) {
 			"by_kind":   byKind,   // closed vs free
 			"by_choice": byChoice, // c1/c2/c3/free — position of the picked option
 		},
-		"campaign_depth": depthOut, // how many episodes campaigns got to (where players stopped)
-		"canon_reached":  canonOut,
+		"campaign_depth":     depthOut,   // how many episodes campaigns got to
+		"canon_reached":      canonOut,   // canon node id → campaigns that reached it
+		"stopped_at":         stoppedOut, // last episode index per campaign (0 = no episode yet)
+		"choices_by_episode": perEpOut,   // choice made at the end of episode i (c1/c2/c3/free)
+		"player_created":     pcOut,
 	})
 }

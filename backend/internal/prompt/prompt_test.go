@@ -49,6 +49,60 @@ func TestBuildMatchesPrototype(t *testing.T) {
 	}
 }
 
+// TestShotAwareMatchesPrototype: close-ups drop lower-body design tags and keep 3 location tags,
+// medium / over-shoulder drop footwear; scene filtering still sees the full design.
+func TestShotAwareMatchesPrototype(t *testing.T) {
+	g := testutil.Golden(t)
+	var panels []domain.SBPanel
+	var want []golden
+	testutil.GoldenField(t, g, "shot_panels", &panels)
+	testutil.GoldenField(t, g, "shot_prompts", &want)
+	var sheet domain.SBPanel
+	var wantSheet golden
+	testutil.GoldenField(t, g, "sheet_panel", &sheet)
+	testutil.GoldenField(t, g, "sheet_prompt", &wantSheet)
+	panels = append(panels, sheet)
+	want = append(want, wantSheet)
+	w, st := testutil.World(t), testutil.Styles(t)
+	for i := range panels {
+		got, err := prompt.Build(&panels[i], w, st, "", true)
+		if err != nil {
+			t.Fatal(err)
+		}
+		if got.Positive != want[i].Positive || got.Negative != want[i].Negative ||
+			got.Width != want[i].Width || got.Height != want[i].Height {
+			t.Errorf("shot %q\n got: %s | %s %dx%d\nwant: %s | %s %dx%d", panels[i].Shot,
+				got.Positive, got.Negative, got.Width, got.Height,
+				want[i].Positive, want[i].Negative, want[i].Width, want[i].Height)
+		}
+	}
+	close, _ := prompt.Build(&panels[0], w, st, "", true)
+	for _, gone := range []string{"black pantyhose", "cross-laced footwear", "many letters"} {
+		if strings.Contains(close.Positive, gone) {
+			t.Errorf("close-up keeps %q", gone)
+		}
+	}
+	if !strings.Contains(close.Positive, "(close-up:1.3), (portrait:1.2), face focus") {
+		t.Errorf("weighted close-up tags missing: %s", close.Positive)
+	}
+}
+
+func TestInFrame(t *testing.T) {
+	design := []string{"short hair", "red skirt", "black thighhighs", "brown boots", "white socks", "blue jacket"}
+	cases := map[string]string{
+		"close-up":      "short hair, blue jacket",
+		"medium":        "short hair, red skirt, black thighhighs, blue jacket",
+		"over-shoulder": "short hair, red skirt, black thighhighs, blue jacket",
+		"wide":          strings.Join(design, ", "),
+		"":              strings.Join(design, ", "),
+	}
+	for shot, want := range cases {
+		if got := strings.Join(prompt.InFrame(design, shot), ", "); got != want {
+			t.Errorf("InFrame(%q) = %s, want %s", shot, got, want)
+		}
+	}
+}
+
 func TestBuildOrderAndConflicts(t *testing.T) {
 	w, st := testutil.World(t), testutil.Styles(t)
 	p := &domain.SBPanel{

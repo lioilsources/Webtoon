@@ -182,13 +182,14 @@ func serve(ctx context.Context, cfg config.Config) error {
 		return errors.New("nothing to run: check MODE / WORKERS")
 	}
 
+	vocab, err := tags.LoadVocab(data.WD14Tags)
+	if err != nil {
+		return err
+	}
+	llmClient := llm.New(cfg.LLMURL, cfg.LLMModel)
 	var wk *worker.Worker
 	if runWorker {
-		vocab, err := tags.LoadVocab(data.WD14Tags)
-		if err != nil {
-			return err
-		}
-		gen := &storyboard.Generator{LLM: llm.New(cfg.LLMURL, cfg.LLMModel), Vocab: vocab, Attempts: 3}
+		gen := &storyboard.Generator{LLM: llmClient, Vocab: vocab, Attempts: 3}
 		wk = worker.New(worker.Config{MediaDir: cfg.MediaDir, Backoff: cfg.Backoff, MaxAttempts: cfg.MaxAttempts},
 			s, gen, comfy.New(cfg.ComfyURL), wd14.New(cfg.WD14URL))
 	}
@@ -209,7 +210,8 @@ func serve(ctx context.Context, cfg config.Config) error {
 			waker = wk
 		}
 		srv := &http.Server{Addr: cfg.ListenAddr, ReadHeaderTimeout: 10 * time.Second,
-			Handler: api.New(api.Config{MediaDir: cfg.MediaDir, MediaBaseURL: cfg.MediaBaseURL, MaxAttempts: cfg.MaxAttempts}, s, waker).Handler()}
+			Handler: api.New(api.Config{MediaDir: cfg.MediaDir, MediaBaseURL: cfg.MediaBaseURL, MaxAttempts: cfg.MaxAttempts,
+				LLM: llmClient, Vocab: vocab}, s, waker).Handler()}
 		go func() {
 			<-ctx.Done()
 			shut, cancel := context.WithTimeout(context.Background(), 10*time.Second)

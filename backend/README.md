@@ -1,4 +1,4 @@
-# Webtoon backend (M1)
+# Webtoon backend (M1–M3)
 
 Go služba pro interaktivní webtoon (WEBTOON_PLAN §2, §3, §5, §7): HTTP API a worker pool nad Postgres
 job tabulkou. Pipeline je port ověřeného Python prototypu `../m0/`. Systémové prompty, validace, filtr tagů
@@ -58,8 +58,24 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
    `identity_level=ip_adapter` a referenci v `MEDIA_DIR`) → WD14 safety (`explicit>0.2`, `questionable>0.3`,
    max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
    `panels_ready++`, identity recall per postava.
+   - **Záběr řídí tagy postavy** (port `m0/prompts.py`): close-up vynechá design tagy spodní poloviny
+     (`LOWER_RE`: shorts, skirt, pants, pantyhose, thighhighs, legwear, socks, footwear, boots, shoes) a nechá
+     jen první 3 tagy lokace; medium a over-shoulder vynechají obuv (`FEET_RE`). Filtr scénických tagů pořád
+     zná celý design. Shot tagy close-upu jsou vážené: `(close-up:1.3), (portrait:1.2), face focus`.
+     Identity recall počítá jen tagy, které jsou v záběru vidět.
+   - **IP-Adapter** jen u postav s `identity_level=ip_adapter` (výchozí je `prompt`, výsledek M0). Postava
+     může mít `ip_adapter: {preset, weight, end_at}`. Výchozí hodnoty jsou z prototypu
+     (`PLUS (high strength)`, 0.6, 0.8). Pro výřez obličeje funguje `PLUS FACE (portraits)` s vahou 0.3–0.4.
+     Použije se první obrázek z `reference_images` první takové postavy v panelu.
 3. Když jsou všechny panely hotové, `state_diff` se aplikuje na kampaň (+ `canon_progress`), uloží se snapshot
    stavu u epizody a epizoda je `ready`. Pokud selžou všechny panely, epizoda je `failed`.
+
+4. **sheet job** (character sheet, port `render.py --sheet`): panel `sheet` (celá postava, bílé pozadí, bez
+   lokace, bez IP-Adapteru) → N seedů (výchozí 4, max 8; seed = deterministický základ + k), každý s WD14
+   safety reseedy jako panel → bezpečné PNG do `MEDIA_DIR/characters/<world>/<char>/sheet_<id>_<k>_<seed>.png`.
+   Nejlepší kandidát (nejvyšší identity recall) se přidá na konec `reference_images` postavy. Kandidáti se
+   ukládají průběžně, takže job přerušený výpadkem ComfyUI pokračuje tam, kde skončil. Když jsou všichni
+   kandidáti unsafe, sheet je `failed`.
 
 Výpadek LLM (běží 13–07) nebo ComfyUI/WD14 (07–13): job dostane `run_after = now + 5 min`, attempt se nepočítá,
 epizoda zůstává `queued`/`generating` a v `error` je "waiting: …". Epizoda kvůli rozvrhu nikdy neselže.
@@ -73,9 +89,25 @@ POST   /worlds                          {title, style_id, synopsis, tone, audien
 GET    /worlds?visibility=public        veřejné + vlastní
 GET    /worlds/{id}                     vč. characters, locations
 PATCH  /worlds/{id}                     jen owner
+GET    /worlds?owner=me                 jen vlastní světy (záložka „Tvořit“)
 POST   /worlds/{id}/characters          owner; ostatní jen když permissions.can_create_character (role player_created)
 POST   /worlds/{id}/locations           jen owner
-GET    /worlds/{id}/stats               jen owner: počty, rozložení voleb (by_kind, by_choice), hloubka kampaní, canon
+GET    /worlds/{id}/stats               jen owner (dashboard), viz níže
+GET    /style_presets                   presety stylu pro picker (+ preview_url, pokud existuje MEDIA_DIR/styles/<id>.png|jpg|webp)
+
+PATCH  /worlds/{id}/characters/{cid}    owner (hráč jen svou player_created postavu, bez změny role); libovolná podmnožina
+                                        name, role, count_tag, description, personality, speech_style, tag_prompt,
+                                        reference_images (jen přeřadit/odebrat), identity_level, identity_asset, ip_adapter (null = smazat)
+DELETE /worlds/{id}/characters/{cid}    204; 409, když je to hráčská postava nějaké kampaně
+POST   /worlds/{id}/characters/{cid}/tag_prompt   {description?} → {tags, tag_prompt, dropped, unknown, replaced, notes}; NEukládá
+POST   /worlds/{id}/characters/{cid}/sheet        {seeds?=4} → 202 sheet; 409, když se jiný sheet ještě kreslí
+GET    /worlds/{id}/characters/{cid}/sheets       {sheets: [...]} nejnovější první
+GET    /sheets/{id}                     owner světa nebo kdo sheet zadal: status, done/seeds, images[{seed, image_url, recall, missing, status}], best, best_image_url
+POST   /worlds/{id}/characters/{cid}/references   multipart, pole "file", PNG/JPEG ≤ 8 MiB → 201 postava
+PATCH  /worlds/{id}/locations/{lid}     jen owner; name, description, tag_prompt, reference_images, mood
+DELETE /worlds/{id}/locations/{lid}     204; odebere ji i z permissions.allowed_locations
+POST   /worlds/{id}/locations/{lid}/tag_prompt    jako u postav (vlastní system prompt pro scenérii)
+POST   /worlds/{id}/locations/{lid}/references    jako u postav
 POST   /campaigns                       {world_id, player_character_id?, title?, start?=true} → 201 + first_episode_id
 GET    /campaigns?world_id=             vlastní kampaně (world_title, počet dílů, stav posledního dílu), nejnovější aktivita první
 GET    /campaigns/{id}                  hráč nebo owner světa; state, canon_progress, seznam epizod
@@ -85,6 +117,27 @@ PATCH  /episodes/{id}/panels/{n}        jen hráč; {"bubbles": [...]} (bez rege
 GET    /media/{path}                    soubory z MEDIA_DIR
 GET    /health
 ```
+
+Postavy a lokace v odpovědích mají navíc `reference_urls` (URL k `reference_images`). `tag_prompt` se při
+uložení normalizuje (booru zápis, bez prázdných a duplicitních tagů).
+
+**Generování `tag_prompt`** (port `m0/gen_character.py`): až 3 pokusy LLM (teplota 0.3), po každém repair pass
+(0.2), který neznámé tagy (mimo WD14 slovník + EXTRA_TAGS) přeloží na existující. Vyhrává pokus s nejmenším
+počtem neznámých tagů. `dropped` jsou tagy z LLM, které po opravě zmizely úplně (UI je ukáže šedě),
+`replaced` je mapa původní tag → náhrady, `unknown` je druhá hodnota `make_tag_prompt` (paritní test).
+LLM mimo rozvrh → 503 `llm unavailable: …`. Autor výsledek doladí a uloží přes `PATCH … {tag_prompt}`.
+
+**Kánon editor**: `PATCH /worlds/{id} {canon: {nodes: [{id, text}], constraints: [...]}}` nahradí celý kánon
+v daném pořadí. Uzly si nechávají id (odkazuje na ně `canon_progress`), nové bez id dostanou `n1`, `n2`, …;
+prázdný text nebo duplicitní id = 400, prázdné constraints se zahodí. `permissions.allowed_locations` musí
+obsahovat existující lokace, `max_episodes ≥ 0`. `bible` je volný objekt (editor upravuje `rules` a `factions`,
+oba seznamy textů). Do storyboard promptu jde z bible jen `rules` (parita s prototypem).
+
+**Stats** (`GET /worlds/{id}/stats`): `campaigns, players, episodes, episodes_ready, episodes_failed,
+panels_ready, player_created_characters`, `choices {by_kind, by_choice}`, `campaign_depth [{episodes, campaigns}]`,
+`canon_reached {node: campaigns}`, `stopped_at [{episode, campaigns}]` (index posledního dílu každé kampaně,
+0 = zatím bez dílu), `choices_by_episode [{episode, total, choices {c1, c2, free…}}]` (volba na konci dílu
+`episode`), `player_created [{id, name, owner_id, description, created_at}]`.
 
 První epizoda kampaně má jako premisu první kanonický uzel světa (jinak synopsis). Další epizody navazují
 na poslední `ready` epizodu stejným textem premisy jako `m0/state.py`. Když epizoda selže (např. moderace),
@@ -102,15 +155,17 @@ WEBTOON_LLM_SMOKE=1 go test -run Smoke -v ./internal/storyboard/   # 1 pokus pro
 
 Testy nikdy nevolají reálné ComfyUI/WD14. Fakes jsou v `internal/fakes`.
 `internal/testdata/golden_m0.json` generuje `python3 -B internal/testdata/gen_golden.py internal/testdata/golden_m0.json`
-(čisté funkce z `m0/*.py`); při změně promptů
-v prototypu je potřeba ho vygenerovat znovu.
+(čisté funkce z `m0/*.py`: prompty všech záběrů vč. sheetu, `render.identity`, `comfy.workflow` s IP-Adapterem,
+`gen_character.make_tag_prompt` se skriptovaným LLM); při změně promptů v prototypu je potřeba ho
+vygenerovat znovu. `data/styles.json` je kopie `../data/styles.json` (musí být shodná).
 
 ## Struktura
 
 ```
 cmd/webtoon/            main: serve | migrate | seed | import-demo
 data/                   kopie ../data (world_m0, styles, wd14_tags), embedded
-internal/api/           HTTP handlery, auth stub, /media
+internal/api/           HTTP handlery, auth stub, /media; authoring.go = nástroje autora (M3)
+internal/chargen/       tag_prompt postavy/lokace z popisu (port m0/gen_character.py)
 internal/comfy/         ComfyUI klient + workflow (port m0/comfy.py)
 internal/config/        env
 internal/demo/          import-demo: hotový díl z výstupů M0 (storyboard + PNG)
@@ -133,8 +188,12 @@ internal/fakes/, testutil/, testdata/, integration/   testy
 - Skutečná auth (Ol1nLLM účty). `X-User-ID` se bere tak, jak přijde.
 - `director: {...}` v POST episodes (přidat/odebrat postavu, změnit lokaci). `permissions` se zatím vynucuje
   jen pro tvorbu postav, `allowed_locations` (validátor) a `max_episodes`.
-- Generování `tag_prompt` postavy LLM (`m0/gen_character.py`), upload referenčních obrázků, character sheet.
-  `reference_images` jsou cesty relativní k `MEDIA_DIR`.
+- `reference_images` jsou cesty relativní k `MEDIA_DIR`. Smazání postavy/lokace nebo odebrání reference
+  nemaže soubory. Upload nemá antivir ani přepočet velikosti obrázku.
+- LoRA (`identity_level=lora`, `identity_asset`) se jen ukládá, worker ji nepoužívá. Reference lokací se
+  zatím do ComfyUI neposílají (IP-Adapter/img2img pro establishing shoty).
+- `bible.factions` ani jiné klíče bible kromě `rules` se do storyboard promptu nedostanou (parita s prototypem).
+- Řazení postav a lokací (sloupec `position`) nemá endpoint.
 - Detekce bbox postav (ocásky bublin), komprese timeline, RAG nad epizodami, větvení kampaní (pole
   `branch_parent_episode_id` připravené).
 - Moderace výstupu je jen rule check (publikum) + WD14. Samostatné moderační volání nad texty bublin chybí.

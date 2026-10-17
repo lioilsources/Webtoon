@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import 'author/create_screen.dart';
 import 'providers/providers.dart';
 import 'screens/campaigns_screen.dart';
 import 'screens/reader_screen.dart';
@@ -21,7 +22,8 @@ class WebtoonApp extends StatelessWidget {
   );
 }
 
-/// Two tabs: worlds and the user's campaigns.
+/// Three tabs: worlds, the user's campaigns, and "Tvořit" (the user's own worlds — the
+/// author side; one app for both roles).
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
 
@@ -52,7 +54,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   Widget build(BuildContext context) => Scaffold(
     body: IndexedStack(
       index: _tab,
-      children: const [WorldsScreen(), CampaignsScreen()],
+      children: const [WorldsScreen(), CampaignsScreen(), CreateScreen()],
     ),
     bottomNavigationBar: NavigationBar(
       selectedIndex: _tab,
@@ -67,6 +69,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           icon: Icon(Icons.auto_stories_outlined),
           selectedIcon: Icon(Icons.auto_stories),
           label: 'Kampaně',
+        ),
+        NavigationDestination(
+          icon: Icon(Icons.brush_outlined),
+          selectedIcon: Icon(Icons.brush),
+          label: 'Tvořit',
         ),
       ],
     ),

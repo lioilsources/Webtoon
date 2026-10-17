@@ -14,6 +14,7 @@ import (
 const (
 	KindEpisode = "episode"
 	KindPanel   = "panel"
+	KindSheet   = "sheet"
 )
 
 type Job struct {
@@ -32,6 +33,37 @@ type PanelPayload struct {
 	EpisodeID  string `json:"episode_id"`
 	Panel      int    `json:"panel"`
 	Regenerate bool   `json:"regenerate,omitempty"`
+}
+
+type SheetPayload struct {
+	SheetID string `json:"sheet_id"`
+}
+
+// Sheet is one character reference sheet render (m0/render.py --sheet).
+type Sheet struct {
+	ID          string
+	WorldID     string
+	CharacterID string
+	Status      string
+	Seeds       int
+	Images      []SheetImage
+}
+
+// SheetImage is one candidate: Path is empty when the render stayed unsafe (not stored).
+type SheetImage struct {
+	Seed     int64              `json:"seed"`
+	Path     string             `json:"path,omitempty"`
+	Status   string             `json:"status"` // ok | unsafe
+	Recall   float64            `json:"recall"`
+	Missing  []string           `json:"missing"`
+	Unsafe   map[string]float64 `json:"unsafe,omitempty"`
+	Attempts []RenderAttempt    `json:"attempts"`
+}
+
+type SheetContext struct {
+	Sheet  Sheet
+	World  *domain.World
+	Styles *domain.Styles
 }
 
 // Chosen is what the player picked (or wrote) at the end of the previous episode.
@@ -134,4 +166,12 @@ type Store interface {
 	// FinalizeEpisode locks the episode and its campaign, calls fn and persists its result
 	// (fn returning nil means "nothing to do").
 	FinalizeEpisode(ctx context.Context, episodeID string, fn func(ec *EpisodeContext, p Progress) *Finalization) error
+
+	LoadSheetContext(ctx context.Context, sheetID string) (*SheetContext, error)
+	SetSheetStatus(ctx context.Context, sheetID, status, errMsg string) error
+	SetSheetPrompt(ctx context.Context, sheetID, positive, negative string) error
+	AddSheetImage(ctx context.Context, sheetID string, img SheetImage) error
+	// FinishSheet sets the final status; when best != nil it also appends that image's path to
+	// the character's reference_images (atomically).
+	FinishSheet(ctx context.Context, sheetID, status string, best *int, errMsg string) error
 }

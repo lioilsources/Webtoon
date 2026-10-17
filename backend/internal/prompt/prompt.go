@@ -15,6 +15,33 @@ import (
 // designRE matches design attributes owned by the character's tag_prompt; scene tags must not override them.
 var designRE = regexp.MustCompile(`\b(hair|eyes|skin|freckles|jacket|shirt|shorts|skirt|pantyhose|footwear|boots|dress|uniform)\b`)
 
+// LowerRE matches design tags outside the frame of a close-up; left in, they pull the camera back to full body.
+var LowerRE = regexp.MustCompile(`\b(shorts|skirt|pants|pantyhose|thighhighs|legwear|socks|footwear|boots|shoes)\b`)
+
+// FeetRE matches design tags outside the frame of medium / over-shoulder shots.
+var FeetRE = regexp.MustCompile(`\b(footwear|boots|shoes|socks)\b`)
+
+// InFrame drops the design tags the shot does not show (close-up: lower body; medium and
+// over-shoulder: footwear). Used for the prompt and for identity scoring.
+func InFrame(design []string, shot string) []string {
+	var re *regexp.Regexp
+	switch shot {
+	case "close-up":
+		re = LowerRE
+	case "medium", "over-shoulder":
+		re = FeetRE
+	default:
+		return design
+	}
+	out := make([]string, 0, len(design))
+	for _, t := range design {
+		if !re.MatchString(t) {
+			out = append(out, t)
+		}
+	}
+	return out
+}
+
 var countTags = map[string]bool{"1girl": true, "1boy": true, "2girls": true, "2boys": true, "3girls": true,
 	"multiple girls": true, "multiple boys": true, "solo": true, "no humans": true}
 
@@ -77,14 +104,16 @@ func Build(p *domain.SBPanel, w *domain.World, styles *domain.Styles, presetID s
 		}
 	}
 
-	var charTags []string
+	var allTags []string
 	for _, c := range chars {
-		charTags = append(charTags, tags.Split(c.TagPrompt)...)
+		allTags = append(allTags, tags.Split(c.TagPrompt)...)
 	}
+	// Scene filtering still knows the full design, only the prompt drops out-of-frame tags.
 	design := map[string]bool{}
-	for _, t := range charTags {
+	for _, t := range allTags {
 		design[t] = true
 	}
+	charTags := InFrame(allTags, p.Shot)
 
 	var scene []string
 	for _, t := range p.VisualTags {
@@ -99,6 +128,9 @@ func Build(p *domain.SBPanel, w *domain.World, styles *domain.Styles, presetID s
 	var locTags []string
 	if loc, ok := w.Location(p.LocationID); ok {
 		locTags = tags.Split(loc.TagPrompt)
+	}
+	if p.Shot == "close-up" && len(locTags) > 3 {
+		locTags = locTags[:3] // a full scene description pulls the camera back to a medium shot
 	}
 	var shot []string
 	for _, t := range styles.ShotTags[p.Shot] {

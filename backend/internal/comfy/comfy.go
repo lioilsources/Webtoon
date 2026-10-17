@@ -43,8 +43,33 @@ func node(class string, inputs map[string]any) map[string]any {
 	return map[string]any{"class_type": class, "inputs": inputs}
 }
 
-// Workflow builds the API-format graph. refImage = file name already uploaded to ComfyUI input/.
-func Workflow(positive, negative string, width, height int, seed int64, p domain.Preset, prefix, refImage string, ipWeight float64) Graph {
+// IP-Adapter defaults of the prototype (m0/comfy.workflow).
+const (
+	DefaultIPPreset = "PLUS (high strength)"
+	DefaultIPWeight = 0.6
+	DefaultIPEnd    = 0.8
+)
+
+// IPAdapter conditions the sampler on a reference image. Image = file name already uploaded
+// to ComfyUI input/. Zero Weight / EndAt and empty Preset take the defaults.
+type IPAdapter struct {
+	Image  string
+	Weight float64
+	Preset string
+	EndAt  float64
+}
+
+// IPAdapterFor builds the adapter settings from a character's optional config.
+func IPAdapterFor(image string, cfg *domain.IPAdapterConfig) *IPAdapter {
+	ip := &IPAdapter{Image: image}
+	if cfg != nil {
+		ip.Weight, ip.Preset, ip.EndAt = cfg.Weight, cfg.Preset, cfg.EndAt
+	}
+	return ip
+}
+
+// Workflow builds the API-format graph; ip == nil (or without Image) renders prompt-only.
+func Workflow(positive, negative string, width, height int, seed int64, p domain.Preset, prefix string, ip *IPAdapter) Graph {
 	sample := map[string]any{
 		"model": []any{"ckpt", 0}, "positive": []any{"pos", 0}, "negative": []any{"neg", 0}, "latent_image": []any{"latent", 0},
 		"seed": seed, "steps": p.Steps, "cfg": p.CFG,
@@ -63,14 +88,24 @@ func Workflow(positive, negative string, width, height int, seed int64, p domain
 		g["vpred"] = node("ModelSamplingDiscrete", map[string]any{"model": []any{"ckpt", 0}, "sampling": "v_prediction", "zsnr": true})
 		sample["model"] = []any{"vpred", 0}
 	}
-	if refImage != "" {
+	if ip != nil && ip.Image != "" {
+		weight, preset, end := ip.Weight, ip.Preset, ip.EndAt
+		if weight == 0 {
+			weight = DefaultIPWeight
+		}
+		if preset == "" {
+			preset = DefaultIPPreset
+		}
+		if end == 0 {
+			end = DefaultIPEnd
+		}
 		base := sample["model"]
-		g["ipload"] = node("IPAdapterUnifiedLoader", map[string]any{"model": base, "preset": "PLUS (high strength)"})
-		g["refimg"] = node("LoadImage", map[string]any{"image": refImage})
+		g["ipload"] = node("IPAdapterUnifiedLoader", map[string]any{"model": base, "preset": preset})
+		g["refimg"] = node("LoadImage", map[string]any{"image": ip.Image})
 		g["ipapply"] = node("IPAdapterAdvanced", map[string]any{
 			"model": []any{"ipload", 0}, "ipadapter": []any{"ipload", 1}, "image": []any{"refimg", 0},
-			"weight": ipWeight, "weight_type": "linear", "combine_embeds": "concat",
-			"start_at": 0.0, "end_at": 0.8, "embeds_scaling": "V only"})
+			"weight": weight, "weight_type": "linear", "combine_embeds": "concat",
+			"start_at": 0.0, "end_at": end, "embeds_scaling": "V only"})
 		sample["model"] = []any{"ipapply", 0}
 	}
 	return g

@@ -118,7 +118,7 @@ func setup(t *testing.T) *env {
 	e.media = media
 	e.w = worker.New(worker.Config{ID: "it", MediaDir: media, Backoff: 5 * time.Minute, RetryBase: time.Second},
 		s, &storyboard.Generator{LLM: lc, Vocab: testutil.Vocab(t)}, cc, wd14.New(e.wd14.URL))
-	e.srv = httptest.NewServer(api.New(api.Config{MediaDir: media}, s, e.w).Handler())
+	e.srv = httptest.NewServer(api.New(api.Config{MediaDir: media, MaxUpload: 64 << 10, LLM: lc, Vocab: testutil.Vocab(t)}, s, e.w).Handler())
 	t.Cleanup(e.srv.Close)
 	return e
 }
@@ -363,6 +363,24 @@ func TestFullFlow(t *testing.T) {
 	}
 	if stats["canon_reached"].(map[string]any)["c1"].(float64) != 1 {
 		t.Fatalf("canon stats %v", stats)
+	}
+	// where players stopped + choices per episode (the choice leading to episode i+1 is made at the end of i)
+	if st := stats["stopped_at"].([]any); len(st) != 1 || st[0].(map[string]any)["episode"].(float64) != 4 {
+		t.Fatalf("stopped_at %v", st)
+	}
+	perEp := stats["choices_by_episode"].([]any)
+	if len(perEp) != 3 {
+		t.Fatalf("choices_by_episode %v", perEp)
+	}
+	first := perEp[0].(map[string]any)
+	if first["episode"].(float64) != 1 || first["total"].(float64) != 1 || first["choices"].(map[string]any)["c2"].(float64) != 1 {
+		t.Fatalf("choices_by_episode[0] %v", first)
+	}
+	if perEp[1].(map[string]any)["choices"].(map[string]any)["free"].(float64) != 1 {
+		t.Fatalf("choices_by_episode[1] %v", perEp[1])
+	}
+	if pc := stats["player_created"].([]any); len(pc) != 0 {
+		t.Fatalf("player_created %v", pc)
 	}
 }
 

@@ -1,10 +1,12 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:typed_data';
 
 import 'package:flutter/widgets.dart';
 import 'package:http/http.dart' as http;
 
 import '../config.dart';
+import '../models/author.dart';
 import '../models/campaign.dart';
 import '../models/episode.dart';
 import '../models/json.dart';
@@ -39,6 +41,7 @@ class HttpWebtoonApi implements WebtoonApi {
     String path, {
     Object? body,
     Map<String, String>? query,
+    bool allowEmpty = false,
   }) async {
     final req = http.Request(method, _uri(path, query))
       ..headers.addAll(_headers);
@@ -46,6 +49,13 @@ class HttpWebtoonApi implements WebtoonApi {
       req.headers['Content-Type'] = 'application/json';
       req.body = jsonEncode(body);
     }
+    return _exec(req, allowEmpty: allowEmpty);
+  }
+
+  Future<Map<String, dynamic>> _exec(
+    http.BaseRequest req, {
+    bool allowEmpty = false,
+  }) async {
     final http.Response resp;
     try {
       resp = await http.Response.fromStream(
@@ -71,6 +81,7 @@ class HttpWebtoonApi implements WebtoonApi {
       );
     }
     if (decoded is! Map) {
+      if (allowEmpty) return const {};
       throw ApiException(
         'Neočekávaná odpověď serveru (${resp.statusCode}).',
         statusCode: resp.statusCode,
@@ -78,6 +89,30 @@ class HttpWebtoonApi implements WebtoonApi {
     }
     return obj(decoded);
   }
+
+  Future<Map<String, dynamic>> _upload(
+    String path,
+    Uint8List bytes,
+    String filename,
+  ) {
+    final lower = filename.toLowerCase();
+    final type = lower.endsWith('.png')
+        ? http.MediaType('image', 'png')
+        : http.MediaType('image', 'jpeg');
+    final req = http.MultipartRequest('POST', _uri(path))
+      ..headers.addAll(_headers)
+      ..files.add(
+        http.MultipartFile.fromBytes(
+          'file',
+          bytes,
+          filename: filename,
+          contentType: type,
+        ),
+      );
+    return _exec(req);
+  }
+
+  static String _e(String s) => Uri.encodeComponent(s);
 
   @override
   Future<List<WorldSummary>> listWorlds() async {
@@ -176,4 +211,180 @@ class HttpWebtoonApi implements WebtoonApi {
   @override
   ImageProvider panelImage(String imageUrl) =>
       NetworkImage(config.resolveMedia(imageUrl));
+
+  // --- author (M3) ---------------------------------------------------------------
+
+  @override
+  Future<List<WorldSummary>> listMyWorlds() async {
+    final j = await _send('GET', '/worlds', query: {'owner': 'me'});
+    return objList(j['worlds']).map(WorldSummary.fromJson).toList();
+  }
+
+  @override
+  Future<List<StylePreset>> listStylePresets() async {
+    final j = await _send('GET', '/style_presets');
+    return objList(j['presets']).map(StylePreset.fromJson).toList();
+  }
+
+  @override
+  Future<World> createWorld({
+    required String title,
+    required String styleId,
+    Map<String, dynamic> fields = const {},
+  }) async => World.fromJson(
+    await _send(
+      'POST',
+      '/worlds',
+      body: {...fields, 'title': title, 'style_id': styleId},
+    ),
+  );
+
+  @override
+  Future<World> updateWorld(String worldId, Map<String, dynamic> patch) async =>
+      World.fromJson(
+        await _send('PATCH', '/worlds/${_e(worldId)}', body: patch),
+      );
+
+  @override
+  Future<WorldStats> getWorldStats(String worldId) async =>
+      WorldStats.fromJson(await _send('GET', '/worlds/${_e(worldId)}/stats'));
+
+  @override
+  Future<Character> createCharacter(
+    String worldId,
+    Map<String, dynamic> fields,
+  ) async => Character.fromJson(
+    await _send('POST', '/worlds/${_e(worldId)}/characters', body: fields),
+  );
+
+  @override
+  Future<Character> updateCharacter(
+    String worldId,
+    String characterId,
+    Map<String, dynamic> patch,
+  ) async => Character.fromJson(
+    await _send(
+      'PATCH',
+      '/worlds/${_e(worldId)}/characters/${_e(characterId)}',
+      body: patch,
+    ),
+  );
+
+  @override
+  Future<void> deleteCharacter(String worldId, String characterId) => _send(
+    'DELETE',
+    '/worlds/${_e(worldId)}/characters/${_e(characterId)}',
+    allowEmpty: true,
+  );
+
+  @override
+  Future<TagSuggestion> suggestCharacterTags(
+    String worldId,
+    String characterId, {
+    String? description,
+  }) async => TagSuggestion.fromJson(
+    await _send(
+      'POST',
+      '/worlds/${_e(worldId)}/characters/${_e(characterId)}/tag_prompt',
+      body: {'description': ?description},
+    ),
+  );
+
+  @override
+  Future<CharacterSheet> createSheet(
+    String worldId,
+    String characterId, {
+    int seeds = 4,
+  }) async => CharacterSheet.fromJson(
+    await _send(
+      'POST',
+      '/worlds/${_e(worldId)}/characters/${_e(characterId)}/sheet',
+      body: {'seeds': seeds},
+    ),
+  );
+
+  @override
+  Future<List<CharacterSheet>> listSheets(
+    String worldId,
+    String characterId,
+  ) async {
+    final j = await _send(
+      'GET',
+      '/worlds/${_e(worldId)}/characters/${_e(characterId)}/sheets',
+    );
+    return objList(j['sheets']).map(CharacterSheet.fromJson).toList();
+  }
+
+  @override
+  Future<CharacterSheet> getSheet(String sheetId) async =>
+      CharacterSheet.fromJson(await _send('GET', '/sheets/${_e(sheetId)}'));
+
+  @override
+  Future<Character> uploadCharacterReference(
+    String worldId,
+    String characterId,
+    Uint8List bytes,
+    String filename,
+  ) async => Character.fromJson(
+    await _upload(
+      '/worlds/${_e(worldId)}/characters/${_e(characterId)}/references',
+      bytes,
+      filename,
+    ),
+  );
+
+  @override
+  Future<Location> createLocation(
+    String worldId,
+    Map<String, dynamic> fields,
+  ) async => Location.fromJson(
+    await _send('POST', '/worlds/${_e(worldId)}/locations', body: fields),
+  );
+
+  @override
+  Future<Location> updateLocation(
+    String worldId,
+    String locationId,
+    Map<String, dynamic> patch,
+  ) async => Location.fromJson(
+    await _send(
+      'PATCH',
+      '/worlds/${_e(worldId)}/locations/${_e(locationId)}',
+      body: patch,
+    ),
+  );
+
+  @override
+  Future<void> deleteLocation(String worldId, String locationId) => _send(
+    'DELETE',
+    '/worlds/${_e(worldId)}/locations/${_e(locationId)}',
+    allowEmpty: true,
+  );
+
+  @override
+  Future<TagSuggestion> suggestLocationTags(
+    String worldId,
+    String locationId, {
+    String? description,
+  }) async => TagSuggestion.fromJson(
+    await _send(
+      'POST',
+      '/worlds/${_e(worldId)}/locations/${_e(locationId)}/tag_prompt',
+      body: {'description': ?description},
+    ),
+  );
+
+  @override
+  Future<Location> uploadLocationReference(
+    String worldId,
+    String locationId,
+    Uint8List bytes,
+    String filename,
+  ) async => Location.fromJson(
+    await _upload(
+      '/worlds/${_e(worldId)}/locations/${_e(locationId)}/references',
+      bytes,
+      filename,
+    ),
+  );
 }
