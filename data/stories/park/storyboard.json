@@ -1,0 +1,261 @@
+{
+  "title": "Veselý den v parku",
+  "choices": [],
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "anicka"
+        },
+        {
+          "id": "maxik"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "holding leash",
+        "leash",
+        "smile",
+        "open mouth",
+        "dog running"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anicka",
+          "text": "Maxíku, dnes bude nejlepší den! Pojďme hledat poklad!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "maxik"
+        }
+      ],
+      "visual_tags": [
+        "barking",
+        "open mouth",
+        "wagging tail",
+        "happy",
+        "looking at viewer"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HAF! HAF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "anicka"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "digging",
+        "holding shovel",
+        "toy shovel",
+        "sand on face",
+        "excited",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anicka",
+          "text": "Tohle je mapa! Tady je X!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "anicka"
+        },
+        {
+          "id": "maxik"
+        }
+      ],
+      "visual_tags": [
+        "dog running",
+        "squirrel",
+        "pulled by dog",
+        "holding leash",
+        "surprised",
+        "motion lines",
+        "running"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FRRR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "anicka"
+        },
+        {
+          "id": "tomas"
+        }
+      ],
+      "visual_tags": [
+        "collision",
+        "ice cream",
+        "ice cream cone",
+        "dropping",
+        "surprised",
+        "open mouth",
+        "motion lines",
+        "falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tomas",
+          "text": "Ááá! Moje zmrzlina!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "anicka"
+        }
+      ],
+      "visual_tags": [
+        "apologizing",
+        "embarrassed",
+        "sweatdrop",
+        "hands together",
+        "bowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anicka",
+          "text": "Promiň! Maxík jen hledal poklad!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "maxik"
+        }
+      ],
+      "visual_tags": [
+        "(dog focus:1.3)",
+        "(close to viewer:1.2)",
+        "full body",
+        "dog licking ice cream",
+        "(ice cream cone on ground:1.2)",
+        "melting ice cream",
+        "wagging tail",
+        "happy",
+        "grass"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "LÍZ LÍZ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "novakova"
+        },
+        {
+          "id": "anicka"
+        }
+      ],
+      "visual_tags": [
+        "sitting on bench",
+        "holding cookie",
+        "giving",
+        "smile",
+        "kind smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "novakova",
+          "text": "Tady máte sušenku pro statečného lovce pokladů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "anicka"
+        },
+        {
+          "id": "maxik"
+        }
+      ],
+      "visual_tags": [
+        "hugging dog",
+        "laughing",
+        "closed eyes",
+        "happy",
+        "dog eating",
+        "cookie"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anicka",
+          "text": "Díky! Maxíku, jsi nejlepší pes na světě!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

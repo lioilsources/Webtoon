@@ -1,0 +1,245 @@
+{
+  "title": "Záhada v lese",
+  "choices": [],
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_path",
+      "characters": [
+        {
+          "id": "terezka"
+        },
+        {
+          "id": "misa"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "looking down",
+        "footprints",
+        "curious",
+        "cat walking ahead"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "terezka",
+          "text": "Míšo, někdo tu nechal stopy. Pojďme je sledovat!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_path",
+      "characters": [
+        {
+          "id": "misa"
+        }
+      ],
+      "visual_tags": [
+        "cat walking",
+        "meowing",
+        "open mouth",
+        "tail up",
+        "looking back"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "MŇAU",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stump",
+      "characters": [
+        {
+          "id": "terezka"
+        }
+      ],
+      "visual_tags": [
+        "squatting",
+        "holding scarf",
+        "red scarf",
+        "small scarf",
+        "curious",
+        "head tilt"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "terezka",
+          "text": "Komu patří?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stump",
+      "characters": [
+        {
+          "id": "sova"
+        }
+      ],
+      "visual_tags": [
+        "owl on branch",
+        "perched",
+        "tree branch",
+        "looking at viewer",
+        "wise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sova",
+          "text": "Húú… tomu, kdo se bojí být sám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stump",
+      "characters": [
+        {
+          "id": "skritek"
+        }
+      ],
+      "visual_tags": [
+        "peeking out",
+        "climbing out of tree stump",
+        "teary eyes",
+        "sad",
+        "reaching out"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "skritek",
+          "text": "Můj šátek! Děkuju. Ztratil jsem se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ŠUST",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stump",
+      "characters": [
+        {
+          "id": "terezka"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "holding out red scarf",
+        "offering",
+        "gentle smile",
+        "kind",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "terezka",
+          "text": "Neboj se. Míša a já tě dovedeme domů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stump",
+      "characters": [
+        {
+          "id": "misa"
+        }
+      ],
+      "visual_tags": [
+        "cat rubbing",
+        "nuzzling",
+        "closed eyes",
+        "happy",
+        "purring"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PRRR",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_house",
+      "characters": [
+        {
+          "id": "skritek"
+        }
+      ],
+      "visual_tags": [
+        "standing in front of tiny house",
+        "holding basket of berries",
+        "red scarf",
+        "happy",
+        "smile",
+        "waving"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "skritek",
+          "text": "Jste nejlepší kamarádky. Tady máte lesní bobule.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_path",
+      "characters": [
+        {
+          "id": "terezka"
+        },
+        {
+          "id": "misa"
+        }
+      ],
+      "visual_tags": [
+        "holding basket",
+        "berries",
+        "smile",
+        "happy",
+        "cat",
+        "walking home",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "terezka",
+          "text": "Rádi jsme pomohli!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

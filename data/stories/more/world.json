@@ -1,0 +1,95 @@
+{
+  "id": "w_more",
+  "title": "Dobrodružství u moře",
+  "synopsis": "Eliška a králík Rybka hledají na pláži nejkrásnější mušli.",
+  "tone": "veselý, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Vždy dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_shore",
+      "l_fire"
+    ]
+  },
+  "characters": [
+    {
+      "id": "eliska",
+      "name": "Eliška",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "female child, black hair, long hair, straw hat, blue eyes, white shirt, short sleeves, red capri pants, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "rybka",
+      "name": "Rybka",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "rabbit, white rabbit, white fur, black spot on ear, long ears",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "deda",
+      "name": "Dědeček",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "",
+      "tag_prompt": "old man, grey hair, white beard, fisherman, bucket hat, blue vest, rolled up sleeves, rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "racek",
+      "name": "Racek",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "seagull, bird, white feathers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, sand, ocean, waves, seashell, blue sky, clouds, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_shore",
+      "name": "U vody",
+      "description": "U vody",
+      "tag_prompt": "outdoors, beach, shore, waves, wet sand, seashell, ocean, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_fire",
+      "name": "Oheň",
+      "description": "Oheň",
+      "tag_prompt": "outdoors, beach, campfire, sunset, orange sky, evening, ocean, warm lighting",
+      "mood": ""
+    }
+  ]
+}

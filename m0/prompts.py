@@ -25,8 +25,10 @@ def count_tags(chars):
         tags.append("1girl" if girls == 1 else f"{girls}girls")
     if boys:
         tags.append("1boy" if boys == 1 else f"{boys}boys")
-    if not chars:
-        tags.append("no humans")
+    if not girls and not boys:
+        tags.append("no humans")  # empty panel, or animals only: keep the model from adding a girl
+        if len(chars) == 1:
+            tags.append("solo")  # one pet, not a litter
     elif len(chars) == 1:
         tags.append("solo")
     return tags
@@ -66,7 +68,8 @@ def build(panel, world, styles, preset_id=None, sfw=True):
         + shot + scene + loc_tags
         + (styles["sfw_positive"] if sfw else [])
     )
-    neg = dedupe(preset["quality_neg"] + styles["always_negative"] + (styles["sfw_negative"] if sfw else []))
+    kids = styles.get("kids_negative", []) if world.get("audience") == "kids" else []
+    neg = dedupe(preset["quality_neg"] + styles["always_negative"] + (styles["sfw_negative"] if sfw else []) + kids)
     # A negative tag the scene needs (e.g. "letters" vs. a letter being delivered) would fight the positive.
     pos_forms = set(pos) | {t + "s" for t in pos}
     neg = [t for t in neg if t not in pos_forms]

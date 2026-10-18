@@ -1,0 +1,247 @@
+{
+  "title": "Halloweenská noc",
+  "choices": [],
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "natalka"
+        },
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "holding lantern",
+        "smile",
+        "confident",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "natalka",
+          "text": "Stínku, dnes budeme stateční!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "stinek"
+        }
+      ],
+      "visual_tags": [
+        "(front view:1.2)",
+        "full body",
+        "dog standing",
+        "growling",
+        "alert",
+        "ears up",
+        "(white stripe on chest:1.2)",
+        "night",
+        "pumpkin"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "VRRR",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_door",
+      "characters": [],
+      "visual_tags": [
+        "door opening",
+        "creaking",
+        "spooky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "duch",
+          "text": "búú…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "VRZZ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "scared",
+        "trembling",
+        "hands on own cheeks",
+        "wide eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Jééé… to je strašidelné!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "natalka"
+        }
+      ],
+      "visual_tags": [
+        "brave",
+        "smile",
+        "pointing at door",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "natalka",
+          "text": "Pojďme se podívat. Stínek nás ochrání.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "duch"
+        }
+      ],
+      "visual_tags": [
+        "(cute ghost:1.3)",
+        "(close to viewer:1.2)",
+        "floating",
+        "sad",
+        "teary eyes",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "duch",
+          "text": "Nebojte se… jen jsem ztratil svou dýni.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "natalka"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "determined",
+        "raising fist",
+        "brave"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "natalka",
+          "text": "My ti pomůžeme ji najít!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "stinek"
+        }
+      ],
+      "visual_tags": [
+        "(front view:1.2)",
+        "full body",
+        "dog barking",
+        "open mouth",
+        "(white stripe on chest:1.2)",
+        "sitting next to pumpkin",
+        "jack-o'-lantern",
+        "under table",
+        "found"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HAF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "natalka"
+        },
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "holding lantern",
+        "candy",
+        "holding candy",
+        "laughing",
+        "happy",
+        "pumpkin",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "duch",
+          "text": "Děkuji, statečné holky a pejsku. Šťastný Halloween!",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "natalka",
+          "text": "Vidíš, Stínku? I duchové můžou být kamarádi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

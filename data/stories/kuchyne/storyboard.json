@@ -1,0 +1,245 @@
+{
+  "title": "Zábavný zmatek v kuchyni",
+  "choices": [],
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "lucka"
+        }
+      ],
+      "visual_tags": [
+        "baking",
+        "mixing",
+        "holding whisk",
+        "smile",
+        "happy",
+        "flour on table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "puntik"
+        }
+      ],
+      "visual_tags": [
+        "hamster in bowl",
+        "sitting",
+        "cute",
+        "mixing bowl",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucka",
+          "text": "Puntíku, ty budeš ochutnávač!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "puntik"
+        }
+      ],
+      "visual_tags": [
+        "(covered in flour:1.3)",
+        "(cloud of flour:1.3)",
+        "white powder",
+        "flour explosion",
+        "hamster jumping into flour",
+        "mess",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PUF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "lucka"
+        }
+      ],
+      "visual_tags": [
+        "(flour on face:1.2)",
+        "flour on clothes",
+        "shocked",
+        "open mouth",
+        "hands up",
+        "mess"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucka",
+          "text": "Puntíku!!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "honzik"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "pointing",
+        "closed eyes",
+        "open mouth",
+        "happy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "honzik",
+          "text": "Haha, sněhulák!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "mama"
+        },
+        {
+          "id": "lucka"
+        }
+      ],
+      "visual_tags": [
+        "standing in doorway",
+        "surprised",
+        "hands on hips",
+        "embarrassed",
+        "sweatdrop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mama",
+          "text": "Co se tady stalo?!",
+          "kind": "shout"
+        },
+        {
+          "speaker_id": "lucka",
+          "text": "Puntík chtěl pomoct…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "lucka"
+        }
+      ],
+      "visual_tags": [
+        "wiping table",
+        "holding cloth",
+        "cleaning",
+        "careful",
+        "gentle smile",
+        "cookie dough"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucka",
+          "text": "Teď už jen opatrně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "puntik"
+        }
+      ],
+      "visual_tags": [
+        "hamster eating",
+        "holding cookie crumb",
+        "sitting on table",
+        "cute",
+        "happy",
+        "cheeks full"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CHROUP",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "mama"
+        },
+        {
+          "id": "lucka"
+        }
+      ],
+      "visual_tags": [
+        "sitting at table",
+        "plate of cookies",
+        "laughing",
+        "happy",
+        "hug"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mama",
+          "text": "Nejlepší pečení je to společné.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lucka",
+          "text": "A nejlepší pomocník je Puntík!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "w_halloween",
+  "title": "Halloweenská noc",
+  "synopsis": "Natálka, pes Stínek a Sofie pomůžou laskavému duchovi.",
+  "tone": "veselý, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Vždy dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_door",
+      "l_hall"
+    ]
+  },
+  "characters": [
+    {
+      "id": "natalka",
+      "name": "Natálka",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "female child, black hair, long hair, purple eyes, witch costume, witch hat, purple dress, long sleeves, black cape, orange striped legwear, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "stinek",
+      "name": "Stínek",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "dog, black dog, black fur, white stripe, medium dog",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sofie",
+      "name": "Sofie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "female child, blonde hair, bob cut, ghost costume, white hooded cloak, long sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "duch",
+      "name": "Duch",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "ghost, cute ghost, transparent, white, floating, round eyes, smile",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Ulice",
+      "description": "Ulice",
+      "tag_prompt": "outdoors, night, autumn, street, jack-o'-lantern, string lights, autumn leaves, halloween",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Starý dům",
+      "description": "Starý dům",
+      "tag_prompt": "outdoors, night, old house, wooden door, cobweb, jack-o'-lantern, moon, halloween",
+      "mood": ""
+    },
+    {
+      "id": "l_hall",
+      "name": "Chodba",
+      "description": "Chodba",
+      "tag_prompt": "indoors, night, hallway, candle, candlelight, old furniture, cobweb, dim lighting",
+      "mood": ""
+    }
+  ]
+}

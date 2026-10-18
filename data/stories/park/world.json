@@ -1,0 +1,95 @@
+{
+  "id": "w_park",
+  "title": "Veselý den v parku",
+  "synopsis": "Anička a pes Maxík hledají v parku poklad.",
+  "tone": "veselý, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Vždy dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_park",
+      "l_sand",
+      "l_bench"
+    ]
+  },
+  "characters": [
+    {
+      "id": "anicka",
+      "name": "Anička",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "female child, (brown hair:1.3), twintails, hair bobbles, brown eyes, yellow shirt, short sleeves, blue overalls, white socks, red sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maxik",
+      "name": "Maxík",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "dog, small dog, brown dog, floppy ears, red collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "novakova",
+      "name": "Paní Nováková",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "old woman, grey hair, hair bun, glasses, green cardigan, long skirt, holding basket, bread",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "tomas",
+      "name": "Tomáš",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "",
+      "tag_prompt": "male child, black hair, messy hair, striped shirt, green shorts, bandaid on nose, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_park",
+      "name": "Park",
+      "description": "Park",
+      "tag_prompt": "outdoors, park, grass, trees, flowers, path, sunlight, blue sky, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_sand",
+      "name": "Pískoviště",
+      "description": "Pískoviště",
+      "tag_prompt": "outdoors, playground, sandbox, sand, park, trees, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_bench",
+      "name": "Lavička",
+      "description": "Lavička",
+      "tag_prompt": "outdoors, park, park bench, trees, flowers, sunlight, afternoon",
+      "mood": ""
+    }
+  ]
+}

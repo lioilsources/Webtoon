@@ -1,0 +1,95 @@
+{
+  "id": "w_les",
+  "title": "Záhada v lese",
+  "synopsis": "Terezka a kočka Míša najdou v lese ztraceného skřítka.",
+  "tone": "veselý, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Vždy dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_path",
+      "l_stump",
+      "l_house"
+    ]
+  },
+  "characters": [
+    {
+      "id": "terezka",
+      "name": "Terezka",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "",
+      "tag_prompt": "female child, blonde hair, short hair, bob cut, green eyes, orange hoodie, backpack, brown pants, brown boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "misa",
+      "name": "Míša",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "cat, grey cat, grey fur, yellow eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "skritek",
+      "name": "Skřítek",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "",
+      "tag_prompt": "gnome, chibi, tiny, pointy ears, big nose, red pointy hat, white beard, green tunic",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sova",
+      "name": "Sova",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "",
+      "tag_prompt": "owl, brown feathers, big eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_path",
+      "name": "Lesní stezka",
+      "description": "Lesní stezka",
+      "tag_prompt": "outdoors, forest, path, tall trees, sunbeam, light rays, moss, nature",
+      "mood": ""
+    },
+    {
+      "id": "l_stump",
+      "name": "Pařez",
+      "description": "Pařez",
+      "tag_prompt": "outdoors, forest, tree stump, moss, mushrooms, ferns, dappled sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_house",
+      "name": "Stromový domek",
+      "description": "Stromový domek",
+      "tag_prompt": "outdoors, forest, tiny house, house in tree, round door, flowers, warm lighting, fairy tale",
+      "mood": ""
+    }
+  ]
+}

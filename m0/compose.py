@@ -65,6 +65,11 @@ def draw_bubble(img, bubble, slot, n_slots):
         right = slot % 2 == 1
         x = W - bw - margin if right else margin
         y = margin + (slot // 2) * (bh + 30) + (40 if right else 0)
+    # Two long bubbles would overlap side by side: put the later one below the previous.
+    for px0, py0, px1, py1 in getattr(img, "_bubbles", []):
+        if x < px1 and px0 < x + bw and y < py1 + 30 and py0 < y + bh:
+            y = py1 + 50
+    img._bubbles = getattr(img, "_bubbles", []) + [(x, y, x + bw, y + bh)]
     box = (x, y, x + bw, y + bh)
 
     if kind == "narration":
@@ -95,6 +100,14 @@ def draw_sfx(img, sfx, i):
     fnt = font("sfx", 64)
     x, y = int(W * (0.55 if i % 2 == 0 else 0.1)), int(H * 0.68)
     d.text((x, y), sfx["text"], font=fnt, fill=(255, 220, 60), stroke_width=6, stroke_fill=INK)
+
+
+def end_block():
+    img = Image.new("RGB", (WIDTH, 200), (245, 243, 250))
+    d = ImageDraw.Draw(img)
+    fnt = font("narration", 48)
+    d.text(((WIDTH - d.textlength("Konec", font=fnt)) / 2, 70), "Konec", font=fnt, fill=INK)
+    return img
 
 
 def choices_block(choices, title):
@@ -139,7 +152,7 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
 
     title = Image.new("RGB", (WIDTH, 160), BG)
     ImageDraw.Draw(title).text((40, 50), sb["title"], font=font("narration", 54), fill=INK)
-    end = choices_block(sb.get("choices", []), sb["title"])
+    end = choices_block(sb["choices"], sb["title"]) if sb.get("choices") else end_block()
     total = title.height + sum(im.height + g for im, g in parts) + end.height
     strip = Image.new("RGB", (WIDTH, total), BG)
     y = 0

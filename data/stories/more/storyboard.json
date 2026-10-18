@@ -1,0 +1,250 @@
+{
+  "title": "Dobrodružství u moře",
+  "choices": [],
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "rybka"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "carrying basket",
+        "(rabbit in basket:1.3)",
+        "wicker basket",
+        "smile",
+        "happy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Rybko, dnes najdeme nejkrásnější mušli!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "rybka"
+        }
+      ],
+      "visual_tags": [
+        "(rabbit in basket:1.2)",
+        "wicker basket",
+        "grooming",
+        "paw on ear",
+        "(black spot on ear:1.2)",
+        "cute",
+        "front view"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "squatting",
+        "picking up seashell",
+        "holding seashell",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "rybka"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "hopping",
+        "rabbit running",
+        "toward waves",
+        "splash"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HOP HOP",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "worried",
+        "open mouth",
+        "reaching out",
+        "outstretched arm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Ne! Voda není pro králíky!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "racek"
+        }
+      ],
+      "visual_tags": [
+        "(bird focus:1.4)",
+        "(seagull:1.4)",
+        "(close to viewer:1.2)",
+        "white bird",
+        "yellow beak",
+        "(seashell in beak:1.3)",
+        "standing on sand",
+        "wings spread"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KRÁÁ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "worried",
+        "pointing",
+        "shouting",
+        "looking back"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Dědo, pomoz! Rybka chce plavat!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "deda"
+        }
+      ],
+      "visual_tags": [
+        "holding fishing net",
+        "walking",
+        "kind smile",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "deda",
+          "text": "Pojď sem, malý hrdino.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shore",
+      "characters": [
+        {
+          "id": "deda"
+        },
+        {
+          "id": "rybka"
+        }
+      ],
+      "visual_tags": [
+        "holding rabbit",
+        "gentle",
+        "hands",
+        "rabbit",
+        "scared",
+        "wet fur"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_fire",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "rybka"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "holding rabbit",
+        "rabbit on lap",
+        "holding seashell",
+        "big seashell",
+        "smile",
+        "campfire"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Vidíš? I bez plavání jsme našli poklad.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

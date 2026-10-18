@@ -10,6 +10,7 @@ Output: out/<YYYY-MM-DD>/<run>/pNN_sK.png + meta.json
 import argparse
 import datetime
 import random
+import re
 from pathlib import Path
 
 import comfy
@@ -18,6 +19,7 @@ from common import DATA, OUT, load_json, save_json, split_tags, wd14_tag
 
 # Rating thresholds on WD14 output for audience-safe panels.
 UNSAFE = {"explicit": 0.2, "questionable": 0.3}
+UNSAFE_KIDS = {**UNSAFE, "sensitive": 0.5}  # same as backend wd14.Thresholds("kids")
 DESIGN_THRESHOLD = 0.35
 MAX_RESEED = 2
 
@@ -28,15 +30,17 @@ def sheet_panel(char):
                             "simple background", "straight-on", "arms at sides"]}
 
 
-def safety(tags):
+def safety(tags, audience="teen"):
     r = tags.get("rating", {})
-    bad = {k: round(r.get(k, 0), 3) for k, lim in UNSAFE.items() if r.get(k, 0) > lim}
+    limits = UNSAFE_KIDS if audience == "kids" else UNSAFE
+    bad = {k: round(r.get(k, 0), 3) for k, lim in limits.items() if r.get(k, 0) > lim}
     return bad
 
 
 def identity(tags, char, shot=None):
     """Recall of the character's design tags (those in frame for the shot) among WD14-detected tags."""
-    design = split_tags(char.get("tag_prompt") or "")
+    # "(brown hair:1.3)" → "brown hair": weights are prompt syntax, WD14 reports bare tags.
+    design = [re.sub(r"^\((.*?)(:[\d.]+)?\)$", r"\1", t) for t in split_tags(char.get("tag_prompt") or "")]
     if shot == "close-up":
         design = [t for t in design if not prompts.LOWER_RE.search(t)]
     elif shot in ("medium", "over-shoulder"):
@@ -107,14 +111,14 @@ def main():
                                ip_preset=args.ip_preset, ip_end=args.ip_end)
             png = comfy.run(g)[0]
             tags = wd14_tag(png)
-            bad = safety(tags) if not args.no_sfw else {}
+            bad = safety(tags, world.get("audience")) if not args.no_sfw else {}
             rec["attempts"].append({"seed": s, "unsafe": bad})
             if not bad:
                 break
         name = f"p{i:02d}_s{k}.png"
         (outdir / name).write_bytes(png)
         rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"))
-        if panels[i].get("characters"):
+        if char["id"] in {c["id"] for c in panels[i].get("characters", [])} or args.sheet:
             rec["identity"] = identity(tags, char, panels[i].get("shot"))
         meta["images"].append(rec)
         ident = rec.get("identity", {}).get("recall")
