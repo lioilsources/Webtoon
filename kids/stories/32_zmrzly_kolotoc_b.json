@@ -1,0 +1,373 @@
+{
+  "world": {
+    "id": "k_carousel",
+    "title": "Případ zmrzlého kolotoče",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_stainedglass",
+    "characters": [
+      {
+        "id": "misa",
+        "name": "Míša",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, long hair, notebook, calm, detective, purple coat",
+        "desc_en": "Misa, a calm 10-year-old detective girl with long black hair and a notebook shaped like a beetroot"
+      },
+      {
+        "id": "zrzecka",
+        "name": "Zrzečka",
+        "count_tag": null,
+        "tag_prompt": "fox kit, fox, white spot on forehead, fluffy tail",
+        "desc_en": "Zrzecka, a fox kit with a white spot on her forehead"
+      },
+      {
+        "id": "cvikl",
+        "name": "Klaun Cvikl",
+        "count_tag": "1boy",
+        "tag_prompt": "clown, red nose, colorful costume, balancing on ball, nervous",
+        "desc_en": "Cvikl, a nervous fairground clown balancing on a ball"
+      },
+      {
+        "id": "raz",
+        "name": "Starosta Ráž",
+        "count_tag": "1boy",
+        "tag_prompt": "old man, mayor, mustache, suit, sash",
+        "desc_en": "Mayor Raz, a portly man with a mustache and a mayor's sash"
+      },
+      {
+        "id": "babicka",
+        "name": "Babička starosty",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, hooded cloak, basket, cat in arms",
+        "desc_en": "the mayor's grandmother in a hooded cloak with a basket and a kitten in her arms"
+      }
+    ],
+    "locations": [
+      {
+        "id": "fair",
+        "tag_prompt": "outdoors, night, fair, carousel, lanterns, cotton candy, town square",
+        "desc_en": "A fairground after sunset, a still carousel in the town square, neon horses, lanterns and cotton candy stalls."
+      },
+      {
+        "id": "alley",
+        "tag_prompt": "outdoors, night, alley, lantern, shadows, stall",
+        "desc_en": "A narrow alley behind a stall, lantern shadows like long fingers on the wall."
+      }
+    ],
+    "remake_of": "27_zmrzly_kolotoc"
+  },
+  "storyboard": {
+    "title": "Případ zmrzlého kolotoče",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "fair",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "carousel"
+        ],
+        "scene_en": "a fairground after sunset with a still carousel in the town square, lanterns and cotton candy stalls",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Pouť po západu slunce. Kolotoč stojí jako zamrzlý vír."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small",
+        "seed": 7000
+      },
+      {
+        "shot": "medium",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "misa"
+          },
+          {
+            "id": "zrzecka"
+          }
+        ],
+        "visual_tags": [
+          "notebook",
+          "fox sniffing gears",
+          "carousel"
+        ],
+        "scene_en": "Misa opens her notebook, the fox kit sniffs the carousel gears",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "misa",
+            "text": "Fakta, prosím. Kolotoč nejede, cukrová vata voní a nikdo nepláče — to znamená, že zloděj ještě není pryč."
+          },
+          {
+            "kind": "pet",
+            "speaker": "zrzecka",
+            "text": "Mňau.",
+            "icon": "paw"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7100
+      },
+      {
+        "shot": "medium",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "cvikl"
+          }
+        ],
+        "visual_tags": [
+          "clown",
+          "balancing on ball",
+          "nervous",
+          "sweat"
+        ],
+        "scene_en": "the clown wobbles on a ball, nervous",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "cvikl",
+            "text": "Já jen jsem si půjčil klíč… na chvíli… na hodinu… navždycky!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7200
+      },
+      {
+        "shot": "medium",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "zrzecka"
+          },
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "fox",
+          "tail wagging fast",
+          "smile",
+          "notebook"
+        ],
+        "scene_en": "the fox kit's tail wags like a metronome, Misa smiles",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "misa",
+            "text": "Děkuji, Zrzečko. Výpověď Cvikla je sladká lež."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "negative_extra": [
+          "animal ears",
+          "fox ears",
+          "fox tail",
+          "kemonomimi",
+          "fox girl"
+        ],
+        "seed": 20307
+      },
+      {
+        "shot": "wide",
+        "location_id": "alley",
+        "characters": [
+          {
+            "id": "babicka"
+          },
+          {
+            "id": "zrzecka"
+          }
+        ],
+        "visual_tags": [
+          "hooded cloak",
+          "basket",
+          "key",
+          "fox jumping on basket"
+        ],
+        "scene_en": "in the alley a mysterious hooded woman pulls a basket that clinks with a key, the fox kit leaps onto it",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "V košíku cinká klíč a voní máta."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "cink"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7400
+      },
+      {
+        "shot": "medium",
+        "location_id": "alley",
+        "characters": [
+          {
+            "id": "babicka"
+          },
+          {
+            "id": "raz"
+          }
+        ],
+        "visual_tags": [
+          "old woman",
+          "kitten in arms",
+          "mayor",
+          "surprised"
+        ],
+        "scene_en": "the hooded woman turns: she is the mayor's grandmother with a kitten in her arms, the mayor appears",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": null,
+            "text": "Mňau.",
+            "icon": "fish"
+          },
+          {
+            "kind": "speech",
+            "speaker": "raz",
+            "text": "To je moje klíčnice! A má v košíku i kliku od kolotoče!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7500
+      },
+      {
+        "shot": "medium",
+        "location_id": "alley",
+        "characters": [
+          {
+            "id": "misa"
+          }
+        ],
+        "visual_tags": [
+          "notebook",
+          "thinking",
+          "smile"
+        ],
+        "scene_en": "Misa writes in her notebook",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "misa",
+            "text": "Takže zloděj… není zloděj. Je to sběratel cizích klíčů."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7600
+      },
+      {
+        "shot": "wide",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "cvikl"
+          }
+        ],
+        "visual_tags": [
+          "clown",
+          "hiding behind cotton candy",
+          "carousel moving",
+          "key in gutter"
+        ],
+        "scene_en": "the kitten jumps, the key clinks into a gutter, the carousel jerks, the clown hides behind cotton candy",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "CINK!"
+          },
+          {
+            "text": "ÁÁÁ!"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7700
+      },
+      {
+        "shot": "wide",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "raz"
+          },
+          {
+            "id": "cvikl"
+          },
+          {
+            "id": "zrzecka"
+          }
+        ],
+        "visual_tags": [
+          "carousel spinning",
+          "lights",
+          "mayor riding horse",
+          "clown cranking",
+          "fox on controls"
+        ],
+        "scene_en": "the carousel spins again in bright lights, the mayor rides a horse holding on tight, the clown cranks, the fox kit sits on the controls",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "cvikl",
+            "text": "Slečno detektivko, já už nikdy nic nepůjčím!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "misa",
+            "text": "Výborně. Pak už nebudete muset taky vracet."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7800
+      },
+      {
+        "shot": "medium",
+        "location_id": "fair",
+        "characters": [
+          {
+            "id": "misa"
+          },
+          {
+            "id": "zrzecka"
+          }
+        ],
+        "visual_tags": [
+          "closing notebook",
+          "carousel lights",
+          "fox",
+          "satisfied"
+        ],
+        "scene_en": "Misa closes her notebook as the kitten rides a carousel horse like a princess",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "zrzecka",
+            "text": "Mňau-mňau.",
+            "icon": "paw"
+          },
+          {
+            "kind": "speech",
+            "speaker": "misa",
+            "text": "Případ rozpustil."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7900
+      }
+    ]
+  }
+}

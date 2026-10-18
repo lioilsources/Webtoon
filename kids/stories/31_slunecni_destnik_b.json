@@ -1,0 +1,401 @@
+{
+  "world": {
+    "id": "k_umbrella",
+    "title": "Záchrana slunečního deštníku",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_papercut",
+    "characters": [
+      {
+        "id": "anezka",
+        "name": "Anežka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, short hair, yellow raincoat, rubber boots, excited",
+        "desc_en": "Anezka, a curious fast-talking 8-year-old girl in a yellow raincoat"
+      },
+      {
+        "id": "pip",
+        "name": "Pip",
+        "count_tag": null,
+        "tag_prompt": "white rabbit, one black ear, bunny",
+        "desc_en": "Pip, a little white rabbit with one black ear"
+      },
+      {
+        "id": "ruzena",
+        "name": "Babička Růžena",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, white hair, hair bun, apron, holding cake",
+        "desc_en": "Grandma Ruzena, a smiling old woman in an apron carrying a cake"
+      },
+      {
+        "id": "franta",
+        "name": "Franta",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, blonde hair, overalls, pitchfork",
+        "desc_en": "Franta, a farm boy with blonde hair and overalls holding a pitchfork"
+      },
+      {
+        "id": "gabina",
+        "name": "Gábina",
+        "count_tag": null,
+        "tag_prompt": "hen, white hen, singing",
+        "desc_en": "Gabina, a white hen that sings"
+      }
+    ],
+    "locations": [
+      {
+        "id": "meadow",
+        "tag_prompt": "outdoors, meadow, storm clouds, rain, dandelions, grey sky",
+        "desc_en": "A meadow under grey storm clouds, rain drumming on dandelions."
+      },
+      {
+        "id": "barn",
+        "tag_prompt": "indoors, barn, hay bales, beams, cobwebs, leaking roof",
+        "desc_en": "A barn full of hay with a leaking roof and cobwebs hanging between the beams like curtains."
+      },
+      {
+        "id": "brook",
+        "tag_prompt": "outdoors, brook, willow tree, sunbeams, wet grass, after rain",
+        "desc_en": "A brook under an old willow, the rain stopping and the sun breaking through like a golden thread."
+      }
+    ],
+    "remake_of": "26_slunecni_destnik"
+  },
+  "storyboard": {
+    "title": "Záchrana slunečního deštníku",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "meadow",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "rain"
+        ],
+        "scene_en": "a meadow under grey storm clouds, rain drumming on dandelions",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Bouřková obloha nad loukou."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small",
+        "seed": 7000
+      },
+      {
+        "shot": "wide",
+        "location_id": "meadow",
+        "characters": [
+          {
+            "id": "anezka"
+          },
+          {
+            "id": "pip"
+          }
+        ],
+        "visual_tags": [
+          "running",
+          "big colorful umbrella",
+          "rabbit under umbrella",
+          "rain"
+        ],
+        "scene_en": "Anezka runs with a huge colourful umbrella, the little rabbit sitting under it",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Vítr otočí deštník dnem vzhůru a odnese ho jako mísu."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "FŮŮ!"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7100
+      },
+      {
+        "shot": "medium",
+        "location_id": "meadow",
+        "characters": [
+          {
+            "id": "pip"
+          },
+          {
+            "id": "anezka"
+          }
+        ],
+        "visual_tags": [
+          "rabbit",
+          "pulling",
+          "yellow light",
+          "glowing",
+          "mud",
+          "surprised"
+        ],
+        "scene_en": "the rabbit pulls a glowing yellow sunbeam out of the mud, Anezka stares",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anezka",
+            "text": "Pip! Vždyť ten deštník nesl ne déšť… ale odpolední sluníčko pro babiččinu zahradní slavnost!"
+          },
+          {
+            "kind": "pet",
+            "speaker": "pip",
+            "text": "Šňup! Šňup!",
+            "icon": "carrot"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7200
+      },
+      {
+        "shot": "medium",
+        "location_id": "meadow",
+        "characters": [
+          {
+            "id": "gabina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "hen",
+          "running",
+          "singing",
+          "musical notes"
+        ],
+        "scene_en": "the white hen runs past singing",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "gabina",
+            "text": "Kdo ukradl světlo, ať ho vrátí do květu!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7300
+      },
+      {
+        "shot": "wide",
+        "location_id": "barn",
+        "characters": [
+          {
+            "id": "franta"
+          },
+          {
+            "id": "pip"
+          }
+        ],
+        "visual_tags": [
+          "pitchfork",
+          "reaching up",
+          "rabbit jumping on hay",
+          "bucket",
+          "flour cloud"
+        ],
+        "scene_en": "in the barn Franta tries to catch the umbrella with a pitchfork, the rabbit bounces over hay bales and knocks over a bucket, a cloud of flour bursts",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "PUF!"
+          }
+        ],
+        "gap_after": "small",
+        "seed": 7400
+      },
+      {
+        "shot": "medium",
+        "location_id": "barn",
+        "characters": [
+          {
+            "id": "franta"
+          },
+          {
+            "id": "anezka"
+          }
+        ],
+        "visual_tags": [
+          "covered in flour",
+          "ghostly",
+          "laughing",
+          "white powder"
+        ],
+        "scene_en": "Franta covered in white flour looks like a ghost, Anezka laughs",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "franta",
+            "text": "Já nechtěl být strašidlo! Chci jen pomoct!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anezka",
+            "text": "Perfektní! Strašidla se bojí… pořádku!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7500
+      },
+      {
+        "shot": "wide",
+        "location_id": "barn",
+        "characters": [
+          {
+            "id": "pip"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "sniffing",
+          "window",
+          "umbrella in nest",
+          "swallow chicks",
+          "nest"
+        ],
+        "scene_en": "the rabbit follows the flour trail to a window where the umbrella is caught in a swallows' nest, wet chicks shivering under it",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "pip",
+            "text": "Šňup! Šňup!",
+            "icon": "carrot"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7600
+      },
+      {
+        "shot": "wide",
+        "location_id": "brook",
+        "characters": [
+          {
+            "id": "anezka"
+          },
+          {
+            "id": "pip"
+          },
+          {
+            "id": "franta"
+          }
+        ],
+        "visual_tags": [
+          "umbrella over nest",
+          "grass",
+          "pitchfork as stand",
+          "sunbeams"
+        ],
+        "scene_en": "by the brook Anezka sets the umbrella over the nest in the grass, the rabbit covers it gently, Franta holds the pitchfork as a stand",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Pip přiklopí deštník nad hnízdem, aby vlaštovky doschly."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7700
+      },
+      {
+        "shot": "medium",
+        "location_id": "brook",
+        "characters": [
+          {
+            "id": "ruzena"
+          },
+          {
+            "id": "anezka"
+          }
+        ],
+        "visual_tags": [
+          "holding cake",
+          "smile",
+          "explaining"
+        ],
+        "scene_en": "grandma arrives with a cake",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ruzena",
+            "text": "Copak to máme? Slunce pod deštníkem?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anezka",
+            "text": "Nebojte, babi. Sluníčko už je na svém místě — chrání malé křídla."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7800
+      },
+      {
+        "shot": "wide",
+        "location_id": "brook",
+        "characters": [
+          {
+            "id": "gabina"
+          },
+          {
+            "id": "franta"
+          },
+          {
+            "id": "pip"
+          }
+        ],
+        "visual_tags": [
+          "swallows flying",
+          "sparkling drops",
+          "laughing",
+          "hen",
+          "rabbit"
+        ],
+        "scene_en": "the swallows fly off shaking the umbrella, drops fall like glitter, the hen clucks, Franta laughs",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "KOKODÁK!"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7900
+      },
+      {
+        "shot": "close-up",
+        "location_id": "brook",
+        "characters": [
+          {
+            "id": "pip"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "staring at cake",
+          "sparkling eyes"
+        ],
+        "scene_en": "close-up of the rabbit staring at the cake as if it were a new sun",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "pip",
+            "text": "Koláč! Koláč!",
+            "icon": "cookie"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8000
+      }
+    ]
+  }
+}

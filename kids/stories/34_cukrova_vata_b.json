@@ -1,0 +1,378 @@
+{
+  "world": {
+    "id": "k_cottoncandy",
+    "title": "Cukrová vata nad vesmírem",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_dev_pixel",
+    "characters": [
+      {
+        "id": "klarka",
+        "name": "Klárka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, twin buns, space suit, paintbrush",
+        "desc_en": "Klarka, a 9-year-old space fan girl with two buns in a white space suit, holding a paintbrush"
+      },
+      {
+        "id": "bublina",
+        "name": "Bublina",
+        "count_tag": null,
+        "tag_prompt": "blue parrot",
+        "desc_en": "Bublina, a blue parrot"
+      },
+      {
+        "id": "ladja",
+        "name": "Robot Láďa",
+        "count_tag": null,
+        "tag_prompt": "robot, round robot, antenna",
+        "desc_en": "Ladja, a round clunky robot with a fork-shaped antenna"
+      },
+      {
+        "id": "nora",
+        "name": "Velitelka Nora",
+        "count_tag": "1girl",
+        "tag_prompt": "woman, commander, uniform, short hair",
+        "desc_en": "Commander Nora in a space station uniform"
+      },
+      {
+        "id": "zofka",
+        "name": "Žába Zofka",
+        "count_tag": null,
+        "tag_prompt": "alien frog, green, shiny, bubble suit",
+        "desc_en": "Zofka, a shiny green alien frog in a suit of bubbles"
+      }
+    ],
+    "locations": [
+      {
+        "id": "station",
+        "tag_prompt": "space station interior, round windows, round buttons, planet ring, stars",
+        "desc_en": "Space station Star Bun where everything is round: windows, buttons, even emergency sandwiches."
+      },
+      {
+        "id": "hangar",
+        "tag_prompt": "hangar, old space shuttle, cracked paint, antenna",
+        "desc_en": "A hangar with an old space shuttle with cracked enamel and a fork-shaped antenna."
+      },
+      {
+        "id": "ring",
+        "tag_prompt": "planet ring surface, candy rocks, blue planet, stars",
+        "desc_en": "The surface of a planet's ring, rocks like frozen sweets, a blue planet glowing in the distance."
+      }
+    ],
+    "remake_of": "29_cukrova_vata"
+  },
+  "storyboard": {
+    "title": "Cukrová vata nad vesmírem",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "station",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "a cosy round space station with round windows and buttons, a planet ring outside",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Stanice Hvězdná buchta."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small",
+        "seed": 7000
+      },
+      {
+        "shot": "medium",
+        "location_id": "station",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "painting on glass",
+          "stardust",
+          "parrot on head"
+        ],
+        "scene_en": "Klarka paints stardust on the window glass, a blue parrot sits on her head like a cap",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Dneska objevíme barvu, která neexistuje. Třeba zelenofialová se smíchem."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bublina",
+            "text": "Se smíchem! Se smíchem!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7100
+      },
+      {
+        "shot": "medium",
+        "location_id": "station",
+        "characters": [
+          {
+            "id": "ladja"
+          }
+        ],
+        "visual_tags": [
+          "robot",
+          "beeping",
+          "display"
+        ],
+        "scene_en": "the round robot reports, lights blinking",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ladja",
+            "text": "Upozornění: prstenec planety chutná po malinách. Chyba. Měření opakujte."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7200
+      },
+      {
+        "shot": "wide",
+        "location_id": "station",
+        "characters": [
+          {
+            "id": "bublina"
+          },
+          {
+            "id": "nora"
+          }
+        ],
+        "visual_tags": [
+          "parrot clicking beak",
+          "door opening",
+          "pink cotton candy cloud",
+          "commander"
+        ],
+        "scene_en": "the parrot clicks its beak, a door opens by itself and a pink cloud of cotton candy floats in, the commander watches",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nora",
+            "text": "To není nebezpečí. To je… dezert s gravitační poruchou."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "CVAK!"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7300
+      },
+      {
+        "shot": "wide",
+        "location_id": "hangar",
+        "characters": [
+          {
+            "id": "zofka"
+          }
+        ],
+        "visual_tags": [
+          "alien frog dancing",
+          "bubble suit",
+          "cotton candy following",
+          "old shuttle"
+        ],
+        "scene_en": "in the hangar a shiny green alien frog dances in a bubble suit, the cotton candy follows it like a puppy",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "Kvák-díky! Můj prstenec ztratil sladkost. Bez ní planeta zapomene snít."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7400
+      },
+      {
+        "shot": "medium",
+        "location_id": "hangar",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "parrot",
+          "translating",
+          "smile"
+        ],
+        "scene_en": "Klarka asks the parrot to translate",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Bublino, přelož to prosím z žabího do papouščího."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bublina",
+            "text": "Snít! Snít!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7500
+      },
+      {
+        "shot": "wide",
+        "location_id": "hangar",
+        "characters": [
+          {
+            "id": "ladja"
+          },
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "robot vacuuming",
+          "cotton candy inflating",
+          "pink hug",
+          "pencils"
+        ],
+        "scene_en": "the robot vacuums the cotton candy, which puffs up offended and wraps the whole hangar in a pink hug, Klarka finds three pencils",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarka",
+            "text": "Výborně. Máme cukr, žábu a tužku s vlastním názorem."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "FUMP!"
+          }
+        ],
+        "gap_after": "medium",
+        "seed": 7600
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "klarka"
+          },
+          {
+            "id": "bublina"
+          },
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "ladja"
+          }
+        ],
+        "visual_tags": [
+          "sprinkling stardust",
+          "glowing pink purple",
+          "frog croaking",
+          "robot antenna"
+        ],
+        "scene_en": "on the ring Klarka sprinkles stardust over the cotton candy, the parrot squawks, the frog croaks, the robot spins its antenna and the ring glows pink-purple",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "bublina",
+            "text": "Vrať sladkost! Vrať sladkost!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7700
+      },
+      {
+        "shot": "medium",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "ladja"
+          },
+          {
+            "id": "nora"
+          }
+        ],
+        "visual_tags": [
+          "robot",
+          "commander",
+          "writing log",
+          "glowing"
+        ],
+        "scene_en": "the robot reports, the commander writes in the log",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ladja",
+            "text": "Měření potvrzeno. Nová barva: malinová-záře-s-úsměvem."
+          },
+          {
+            "kind": "speech",
+            "speaker": "nora",
+            "text": "Zapisuji do kroniky: zachránila nás dívka, papoušek a žába s cukrovým vouskem."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7800
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "bublina"
+          },
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "ladja"
+          },
+          {
+            "id": "klarka"
+          }
+        ],
+        "visual_tags": [
+          "parrot on antenna",
+          "frog kissing robot",
+          "painting a house on a star"
+        ],
+        "scene_en": "the parrot sits on the antenna like a lighthouse, the frog kisses the robot's tin head, Klarka paints a little house with a big kitchen on a star",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "bublina",
+            "text": "S vouskem! S vouskem!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7900
+      }
+    ]
+  }
+}

@@ -639,6 +639,140 @@
       "scheduler": "karras",
       "steps": 30,
       "cfg": 5.0
+    },
+    "flux_papercut": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's picture book made of layered paper cut-out collage, visible paper textures and soft shadows between layers, bright colors. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_chalk": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's picture book in soft chalk pastel on toned paper, grainy texture, gentle warm colors. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_riso": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Risograph print illustration for a children's book, two-tone blue and pink ink, grainy halftone texture, slight misregistration. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_stainedglass": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's illustration in the style of a glowing stained glass window, bold dark lead lines, jewel colors. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_schnell_pixel": {
+      "graph": "flux",
+      "unet": "flux1-schnell.safetensors",
+      "steps": 4,
+      "guidance": 3.5,
+      "style_text": "16-bit pixel art scene from a cozy retro video game, crisp pixels, limited palette. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_dev_pixel": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "16-bit pixel art scene from a cozy retro video game, crisp pixels, limited palette. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "animagine_nouveau": {
+      "checkpoint": "animagine-xl-40-opt.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "art nouveau",
+        "ornate border",
+        "flowing lines",
+        "decorative"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "high score",
+        "great score",
+        "absurdres"
+      ],
+      "quality_neg": [
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "text",
+        "error",
+        "missing finger",
+        "extra digits",
+        "fewer digits",
+        "cropped",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "watermark",
+        "signature",
+        "book",
+        "open book",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "animal nose"
+      ],
+      "loras": [],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "illustrious_pixar": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "3d",
+        "cartoon",
+        "soft lighting"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality"
+      ],
+      "quality_neg": [
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "blurry",
+        "watermark",
+        "signature",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "animal nose"
+      ],
+      "loras": [
+        {
+          "name": "Pixar_Illustrious/Pixar_Illustrious.safetensors",
+          "strength": 0.8,
+          "trigger": null
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
     }
   },
   "always_negative": [
