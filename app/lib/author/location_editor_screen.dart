@@ -231,6 +231,7 @@ class _LocationEditorScreenState extends ConsumerState<LocationEditorScreen> {
             tags: _tags,
             dropped: _dropped,
             onChanged: (t) => setState(() => _tags = t),
+            example: 'garden',
           ),
           if (exists) ...[
             const SectionTitle('Referenční obrázky'),

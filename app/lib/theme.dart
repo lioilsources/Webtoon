@@ -125,11 +125,27 @@ ThemeData buildTheme(Brightness brightness) {
     side: BorderSide(color: comic.outline, width: 2),
   );
   return base.copyWith(
+    // ComicFonts styles carry no color; without onSurface they fall back to black, which is
+    // unreadable in dark mode (dropdown items use titleMedium, chips the labelStyle below).
     textTheme: base.textTheme.copyWith(
-      headlineMedium: ComicFonts.title().copyWith(fontSize: 30, height: 1.1),
-      headlineSmall: ComicFonts.title().copyWith(fontSize: 24, height: 1.15),
-      titleLarge: ComicFonts.title().copyWith(fontSize: 21, height: 1.2),
-      titleMedium: ComicFonts.ui(700).copyWith(fontSize: 16),
+      headlineMedium: ComicFonts.title().copyWith(
+        fontSize: 30,
+        height: 1.1,
+        color: scheme.onSurface,
+      ),
+      headlineSmall: ComicFonts.title().copyWith(
+        fontSize: 24,
+        height: 1.15,
+        color: scheme.onSurface,
+      ),
+      titleLarge: ComicFonts.title().copyWith(
+        fontSize: 21,
+        height: 1.2,
+        color: scheme.onSurface,
+      ),
+      titleMedium: ComicFonts.ui(
+        700,
+      ).copyWith(fontSize: 16, color: scheme.onSurface),
     ),
     appBarTheme: AppBarTheme(
       backgroundColor: dark ? ComicColors.night : ComicColors.paper,
@@ -180,7 +196,9 @@ ThemeData buildTheme(Brightness brightness) {
     ),
     chipTheme: base.chipTheme.copyWith(
       side: BorderSide(color: comic.outline, width: 1.5),
-      labelStyle: ComicFonts.ui(700).copyWith(fontSize: 13),
+      labelStyle: ComicFonts.ui(
+        700,
+      ).copyWith(fontSize: 13, color: scheme.onSurface),
     ),
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: dark ? ComicColors.nightSurface : Colors.white,

@@ -1,6 +1,23 @@
 {
   "title": "Veselý den v parku",
-  "choices": [],
+  "choices": [
+    {
+      "kind": "closed",
+      "text": "Ukázat poklad paní Novákové a zeptat se, komu patří."
+    },
+    {
+      "kind": "closed",
+      "text": "Vyrazit s Tomášem a Maxíkem hledat další poklad u rybníka."
+    },
+    {
+      "kind": "closed",
+      "text": "Pozvat všechny na piknik pod velkým dubem."
+    },
+    {
+      "kind": "free",
+      "text": "Nebo napiš, co uděláš…"
+    }
+  ],
   "panels": [
     {
       "shot": "wide",

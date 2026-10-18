@@ -101,3 +101,12 @@ func TestLLMDown(t *testing.T) {
 		t.Fatalf("got %v", err)
 	}
 }
+
+func TestSystemFor(t *testing.T) {
+	if chargen.SystemFor("1girl") != chargen.CharacterSystem || chargen.SystemFor("1boy") != chargen.CharacterSystem {
+		t.Fatal("humans keep the prototype prompt")
+	}
+	if chargen.SystemFor("") != chargen.CreatureSystem {
+		t.Fatal("no count tag = pet/creature prompt")
+	}
+}

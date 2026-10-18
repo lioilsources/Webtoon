@@ -27,6 +27,19 @@ Rules:
 - Hair color and eye color are MANDATORY.
 `
 
+// CreatureSystem replaces CharacterSystem for characters without a count tag (pets, animals,
+// creatures): with the human prompt the model invents hair, animal ears and "furry", i.e. an
+// anthropomorphic girl instead of a hedgehog.
+const CreatureSystem = `You convert a description of an ANIMAL or CREATURE (not a human) into a FIXED Danbooru tag list for an SDXL anime model (NoobAI-XL / Illustrious).
+Rules:
+- Output JSON: {"tags": ["...", ...], "notes": "..."}
+- Only real Danbooru general tags, lowercase, spaces instead of underscores.
+- The FIRST tag is the species or creature kind (e.g. "dog", "cat", "hedgehog", "owl", "hamster", "ghost"), then size, body/fur color, markings, eye color, accessories (collar, scarf, ribbon...) with colors.
+- 6-14 tags. It must stay a real animal/creature: NO hair tags, NO animal ears, NO "furry", NO "anthro", NO human clothing unless the description says so.
+- NO count tags (1girl, solo, no humans), NO pose, NO emotion, NO background, NO camera, NO quality tags, NO character/copyright names.
+- Use standard Danbooru color words (brown, black, white, grey...).
+`
+
 // LocationSystem is the same idea for Location.tag_prompt (not in the prototype, which wrote
 // location tags by hand): scenery tags only, appended after the scene tags of every panel.
 const LocationSystem = `You convert a location description into a FIXED Danbooru tag list for an SDXL anime model (NoobAI-XL / Illustrious).
@@ -67,7 +80,16 @@ type Result struct {
 // TagPrompt joins the tags as stored in Character.tag_prompt.
 func (r *Result) TagPrompt() string { return strings.Join(r.Tags, ", ") }
 
-// Generate = make_tag_prompt. system is CharacterSystem or LocationSystem.
+// SystemFor picks the prompt for a character: humans have a count tag (1girl, 1boy), pets and
+// creatures do not.
+func SystemFor(countTag string) string {
+	if countTag == "" {
+		return CreatureSystem
+	}
+	return CharacterSystem
+}
+
+// Generate = make_tag_prompt. system is CharacterSystem, CreatureSystem or LocationSystem.
 func Generate(ctx context.Context, c llm.JSONCaller, v *tags.Vocab, system, name, description string) (*Result, error) {
 	user := UserPrompt(name, description)
 	var best *Result

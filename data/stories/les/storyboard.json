@@ -1,6 +1,23 @@
 {
   "title": "Záhada v lese",
-  "choices": [],
+  "choices": [
+    {
+      "kind": "closed",
+      "text": "Jít se skřítkem do jeho domečku pod kořeny."
+    },
+    {
+      "kind": "closed",
+      "text": "Zeptat se sovy, kudy vede cesta k zářícímu jezírku."
+    },
+    {
+      "kind": "closed",
+      "text": "Poslat Míšu stopovat neznámé stopy v mechu."
+    },
+    {
+      "kind": "free",
+      "text": "Nebo napiš, co uděláš…"
+    }
+  ],
   "panels": [
     {
       "shot": "wide",

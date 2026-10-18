@@ -97,12 +97,14 @@ class TagChipsEditor extends StatefulWidget {
   final List<String> tags;
   final List<String> dropped;
   final ValueChanged<List<String>> onChanged;
+  final String example;
 
   const TagChipsEditor({
     super.key,
     required this.tags,
     this.dropped = const [],
     required this.onChanged,
+    this.example = 'green eyes',
   });
 
   @override
@@ -195,8 +197,8 @@ class _TagChipsEditorState extends State<TagChipsEditor> {
               child: TextField(
                 key: const ValueKey('tag-add-field'),
                 controller: _add,
-                decoration: const InputDecoration(
-                  hintText: 'Přidat tag (např. green eyes)',
+                decoration: InputDecoration(
+                  hintText: 'Přidat tag (např. ${widget.example})',
                   isDense: true,
                 ),
                 onSubmitted: _addTags,

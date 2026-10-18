@@ -1,6 +1,23 @@
 {
   "title": "Halloweenská noc",
-  "choices": [],
+  "choices": [
+    {
+      "kind": "closed",
+      "text": "Jít s duchem na jeho halloweenský večírek."
+    },
+    {
+      "kind": "closed",
+      "text": "Vyřezat s Sofií novou dýni pro celou ulici."
+    },
+    {
+      "kind": "closed",
+      "text": "Sledovat Stínka, který něco větří u starého plotu."
+    },
+    {
+      "kind": "free",
+      "text": "Nebo napiš, co uděláš…"
+    }
+  ],
   "panels": [
     {
       "shot": "wide",

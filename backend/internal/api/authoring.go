@@ -379,7 +379,7 @@ func (s *Server) characterTagPrompt(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
-	s.generateTags(w, r, chargen.CharacterSystem, c.Name, c.Description)
+	s.generateTags(w, r, chargen.SystemFor(c.CountTag), c.Name, c.Description)
 }
 
 func (s *Server) locationTagPrompt(w http.ResponseWriter, r *http.Request) {

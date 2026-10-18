@@ -6,7 +6,7 @@
 
 Humans are drawn with NoobAI (count_tag 1girl/1boy); pets and creatures have no count_tag, so a panel
 with animals only gets "no humans". Children are always fully dressed (audience kids → stricter negatives
-and the WD14 "sensitive" check).
+and the WD14 "sensitive" check). Each story ends with 3 closed choices + 1 free one for the next episode.
 """
 
 from common import DATA, save_json
@@ -37,6 +37,10 @@ def world(id, title, synopsis, characters, locations):
             "characters": characters, "locations": locations}
 
 
+def choices(closed):
+    return [{"kind": "closed", "text": t} for t in closed] + [{"kind": "free", "text": "Nebo napiš, co uděláš…"}]
+
+
 KID_GIRL = "1girl, female child"
 
 STORIES = {}
@@ -56,7 +60,7 @@ STORIES["park"] = (
         loc("l_sand", "Pískoviště", "outdoors, playground, sandbox, sand, park, trees, sunlight"),
         loc("l_bench", "Lavička", "outdoors, park, park bench, trees, flowers, sunlight, afternoon"),
     ]),
-    {"title": "Veselý den v parku", "choices": [], "panels": [
+    {"title": "Veselý den v parku", "choices": choices(['Ukázat poklad paní Novákové a zeptat se, komu patří.', 'Vyrazit s Tomášem a Maxíkem hledat další poklad u rybníka.', 'Pozvat všechny na piknik pod velkým dubem.']), "panels": [
         panel("wide", "l_park", ["anicka", "maxik"], "running, holding leash, leash, smile, open mouth, dog running",
               [("anicka", "Maxíku, dnes bude nejlepší den! Pojďme hledat poklad!")]),
         panel("medium", "l_park", ["maxik"], "barking, open mouth, wagging tail, happy, looking at viewer",
@@ -94,7 +98,7 @@ STORIES["more"] = (
         loc("l_shore", "U vody", "outdoors, beach, shore, waves, wet sand, seashell, ocean, sunlight"),
         loc("l_fire", "Oheň", "outdoors, beach, campfire, sunset, orange sky, evening, ocean, warm lighting"),
     ]),
-    {"title": "Dobrodružství u moře", "choices": [], "panels": [
+    {"title": "Dobrodružství u moře", "choices": choices(['Postavit s dědečkem největší hrad z písku na pláži.', 'Jít s Rybkou po stopách racka k majáku.', 'Hledat v jeskyni u skal další mušle.']), "panels": [
         panel("wide", "l_beach", ["eliska", "rybka"], "walking, carrying basket, (rabbit in basket:1.3), wicker basket, smile, happy",
               [("eliska", "Rybko, dnes najdeme nejkrásnější mušli!")]),
         panel("medium", "l_beach", ["rybka"], "(rabbit in basket:1.2), wicker basket, grooming, paw on ear, (black spot on ear:1.2), "
@@ -134,7 +138,7 @@ STORIES["les"] = (
         loc("l_house", "Stromový domek", "outdoors, forest, tiny house, house in tree, round door, flowers, "
             "warm lighting, fairy tale"),
     ]),
-    {"title": "Záhada v lese", "choices": [], "panels": [
+    {"title": "Záhada v lese", "choices": choices(['Jít se skřítkem do jeho domečku pod kořeny.', 'Zeptat se sovy, kudy vede cesta k zářícímu jezírku.', 'Poslat Míšu stopovat neznámé stopy v mechu.']), "panels": [
         panel("wide", "l_path", ["terezka", "misa"], "walking, looking down, footprints, curious, cat walking ahead",
               [("terezka", "Míšo, někdo tu nechal stopy. Pojďme je sledovat!")]),
         panel("medium", "l_path", ["misa"], "cat walking, meowing, open mouth, tail up, looking back",
@@ -169,7 +173,7 @@ STORIES["kuchyne"] = (
         loc("l_kitchen", "Kuchyně", "indoors, kitchen, table, mixing bowl, flour, cookies, baking, warm lighting, "
             "window"),
     ]),
-    {"title": "Zábavný zmatek v kuchyni", "choices": [], "panels": [
+    {"title": "Zábavný zmatek v kuchyni", "choices": choices(['Upéct s mámou a Honzíkem dort pro Puntíka.', 'Postavit Puntíkovi bludiště z krabiček.', 'Pozvat kamarády na ochutnávku sušenek.']), "panels": [
         panel("wide", "l_kitchen", ["lucka"], "baking, mixing, holding whisk, smile, happy, flour on table"),
         panel("close-up", "l_kitchen", ["puntik"], "hamster in bowl, sitting, cute, mixing bowl, looking up",
               [("lucka", "Puntíku, ty budeš ochutnávač!")], gap="small"),
@@ -209,7 +213,7 @@ STORIES["halloween"] = (
             "halloween"),
         loc("l_hall", "Chodba", "indoors, night, hallway, candle, candlelight, old furniture, cobweb, dim lighting"),
     ]),
-    {"title": "Halloweenská noc", "choices": [], "panels": [
+    {"title": "Halloweenská noc", "choices": choices(['Jít s duchem na jeho halloweenský večírek.', 'Vyřezat s Sofií novou dýni pro celou ulici.', 'Sledovat Stínka, který něco větří u starého plotu.']), "panels": [
         panel("wide", "l_street", ["natalka", "sofie"], "walking, holding lantern, smile, confident, night",
               [("natalka", "Stínku, dnes budeme stateční!")]),
         panel("medium", "l_street", ["stinek"], "(front view:1.2), full body, dog standing, growling, alert, "

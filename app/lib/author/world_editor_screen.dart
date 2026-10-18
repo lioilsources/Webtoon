@@ -28,7 +28,9 @@ class _NodeItem {
   final int uid = _seq++;
   final String id;
   final TextEditingController text;
-  _NodeItem(this.id, String t) : text = TextEditingController(text: t);
+  final bool fresh; // added by the author in this session: focus its field
+  _NodeItem(this.id, String t, {this.fresh = false})
+    : text = TextEditingController(text: t);
 }
 
 class _WorldEditorScreenState extends ConsumerState<WorldEditorScreen> {
@@ -411,6 +413,7 @@ class _WorldEditorScreenState extends ConsumerState<WorldEditorScreen> {
                     child: TextField(
                       key: ValueKey('canon-text-$i'),
                       controller: _nodes[i].text,
+                      autofocus: _nodes[i].fresh,
                       minLines: 1,
                       maxLines: 3,
                       decoration: const InputDecoration(isDense: true),
@@ -443,7 +446,8 @@ class _WorldEditorScreenState extends ConsumerState<WorldEditorScreen> {
       ),
       TextButton.icon(
         key: const ValueKey('canon-add'),
-        onPressed: () => setState(() => _nodes.add(_NodeItem('', ''))),
+        onPressed: () =>
+            setState(() => _nodes.add(_NodeItem('', '', fresh: true))),
         icon: const Icon(Icons.add),
         label: const Text('Přidat kanonický uzel'),
       ),
