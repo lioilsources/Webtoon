@@ -151,7 +151,7 @@
         "gap_after": "medium"
       },
       {
-        "shot": "wide",
+        "shot": "medium",
         "location_id": "peak",
         "characters": [
           {
@@ -159,13 +159,14 @@
           }
         ],
         "visual_tags": [
-          "giant",
+          "(ice giant:1.4)",
+          "blue skin",
           "icicles",
-          "mountain",
-          "(giant:1.4)",
-          "(ice giant:1.3)",
-          "huge figure on mountain",
-          "blue skin"
+          "icicle beard",
+          "angry",
+          "shouting",
+          "mountain peak",
+          "from below"
         ],
         "scene_en": "a huge blue ice giant covered in icicles stands on the mountain peak",
         "bubbles": [
@@ -179,7 +180,8 @@
         "gap_after": "medium",
         "negative_extra": [
           "no humans"
-        ]
+        ],
+        "seed": 20400
       },
       {
         "shot": "wide",
@@ -426,7 +428,8 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "seed": 21214
       }
     ]
   }
