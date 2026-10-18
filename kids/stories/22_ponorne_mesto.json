@@ -1,0 +1,444 @@
+{
+  "world": {
+    "id": "k_coralcity",
+    "title": "Ponorné město korálů",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_manga",
+    "characters": [
+      {
+        "id": "bara",
+        "name": "Bára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, ponytail, diving goggles on forehead, wetsuit",
+        "desc_en": "Bara, a brave 9-year-old diver girl with a black ponytail, a wetsuit and diving goggles pushed up on her forehead"
+      },
+      {
+        "id": "kapka",
+        "name": "Kapka",
+        "count_tag": null,
+        "tag_prompt": "small octopus, purple",
+        "desc_en": "Kapka, a small octopus that changes colour with its mood"
+      },
+      {
+        "id": "perlinka",
+        "name": "Perlinka",
+        "count_tag": "1girl",
+        "tag_prompt": "mermaid, librarian, glasses, shell backpack, books",
+        "desc_en": "Perlinka, a mermaid librarian with glasses carrying books in a seashell backpack"
+      },
+      {
+        "id": "sedy",
+        "name": "Táta Šedý",
+        "count_tag": null,
+        "tag_prompt": "shark, big grey shark, shy",
+        "desc_en": "Grandpa Grey, a huge but shy old grey shark"
+      }
+    ],
+    "locations": [
+      {
+        "id": "city",
+        "tag_prompt": "underwater, coral city, coral towers, shells, fish with lanterns, manta ray, morning",
+        "desc_en": "An underwater city of coral towers and shells, manta rays and little fish carrying lanterns."
+      },
+      {
+        "id": "library",
+        "tag_prompt": "underwater, library, shelves, hole in floor, bubbles",
+        "desc_en": "A coral library with a dark hole in the floor, air bubbles floating around it."
+      },
+      {
+        "id": "cave",
+        "tag_prompt": "underwater, cave, stalactites, seaweed, dim light",
+        "desc_en": "A dim underwater cave with stalactites and swaying seaweed."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Ponorné město korálů",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "city",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "an underwater city built of coral towers and seashells, manta rays and fish with little lanterns",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ponorné město z korálových věží a ulit."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "city",
+        "characters": [
+          {
+            "id": "perlinka"
+          },
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "mermaid",
+          "panic",
+          "books flying",
+          "octopus",
+          "purple",
+          "corner"
+        ],
+        "scene_en": "the mermaid librarian swims in a panic with books scattering around her, a small bright purple octopus trembles in a corner",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "perlinka",
+            "text": "Báro! Přiletěla jsem, jak jsem mohla! Knihovna… velká díra… v podlaze! A v ní tma! Nikdo z knihovních už nesmí dovnitř!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "city",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "goggles on forehead",
+          "determined",
+          "octopus",
+          "purple"
+        ],
+        "scene_en": "Bara pushes her goggles up on her forehead, the purple octopus whispers to her",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Tak jo. Kdo šel dovnitř?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "kapka",
+            "text": "Víla Ištkin šla dovnitř pro poslední knihu. A… nevyšla."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "city",
+        "characters": [
+          {
+            "id": "perlinka"
+          }
+        ],
+        "visual_tags": [
+          "mermaid",
+          "glasses",
+          "worried",
+          "holding book"
+        ],
+        "scene_en": "the mermaid librarian adjusts her glasses, worried",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Kolik knih ta díra spolkla?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "perlinka",
+            "text": "Všechny tři tisíce. Včetně té o receptech na chřipku. Ta je teď pod vodou rozhodně nejhorší zpráva dne."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "library",
+        "characters": [],
+        "visual_tags": [
+          "hole",
+          "darkness",
+          "bubbles",
+          "books"
+        ],
+        "scene_en": "a dark bottomless hole in the floor of the coral library with bubbles drifting around it",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Díra v podlaze knihovny jako nekonečná ústa."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "putting on goggles",
+          "rope",
+          "seaweed rope",
+          "octopus",
+          "purple"
+        ],
+        "scene_en": "Bara pulls her goggles down and takes out a rope made of seaweed, the octopus looks at her in alarm",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Já půjdu dolů. Kapko, ty jsi se mnou. Při nejhorším se zbarvíš fialově a budu vědět, že je čas utíkat."
+          },
+          {
+            "kind": "speech",
+            "speaker": "kapka",
+            "text": "To je tvůj plán?! Můj strach jako siréna?!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "octopus",
+          "pink",
+          "proud",
+          "blushing"
+        ],
+        "scene_en": "close-up of the small octopus turning pink with pride",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Jsi nejpoctivější ukazatel strachu, jakého znám."
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Kapka zrůžoví — pýchou."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "sedy"
+          },
+          {
+            "id": "bara"
+          },
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "shark",
+          "holding book",
+          "fairy",
+          "stalactites",
+          "shy"
+        ],
+        "scene_en": "in the underwater cave sits a huge shy grey shark gently holding a tiny frightened fairy and a book in his fins",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sedy",
+            "text": "Já ji nechtěl vystrašit. Já jsem si jen chtěl PŘEČÍST tuhle knihu. O zelenině. Nikdy jsem neuměl číst a stydím se zeptat."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "realization",
+          "octopus",
+          "pink"
+        ],
+        "scene_en": "Bara turns to the octopus, realising",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Tak proto ta tma! Ne zločin — stud!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "kapka",
+            "text": "A co když ty zmizelé knihy… jen PŘEČÍTAL?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "sedy"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "pointing",
+          "shark",
+          "deal"
+        ],
+        "scene_en": "Bara smiles and offers the shark a deal",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Táto Šedý, pusť vílu, a my tě naučíme číst. Ale pod jednou podmínkou."
+          },
+          {
+            "kind": "speech",
+            "speaker": "sedy",
+            "text": "Jakou?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "cave",
+        "characters": [
+          {
+            "id": "bara"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "goggles",
+          "bubbles"
+        ],
+        "scene_en": "close-up of Bara smiling",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Vrátíš knihovně všechny poházené plovoucí knihy. A pak s námi přijdeš na lekci."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "sedy"
+          },
+          {
+            "id": "bara"
+          },
+          {
+            "id": "kapka"
+          },
+          {
+            "id": "perlinka"
+          }
+        ],
+        "visual_tags": [
+          "shark",
+          "tiny glasses",
+          "reading aloud",
+          "clapping",
+          "crying happy",
+          "fairy riding shark"
+        ],
+        "scene_en": "a week later the shark sits on the library floor wearing tiny glasses reading aloud, Bara and the octopus clap, the mermaid cries happily and a tiny fairy rides on his back",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sedy",
+            "text": "Ko-če-ka… Ko-čka pije mléko."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "library",
+        "characters": [
+          {
+            "id": "kapka"
+          }
+        ],
+        "visual_tags": [
+          "octopus",
+          "golden",
+          "glowing",
+          "happy"
+        ],
+        "scene_en": "close-up of the octopus glowing golden with happiness",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kapka",
+            "text": "Víš co, Báro? Dnes se barvím do zlatova."
+          },
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Zlatá je tvoje barva pohody."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "world": {
+    "id": "k_icegarden",
+    "title": "Ledová zahradka",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "illustrious_storybook",
+    "characters": [
+      {
+        "id": "marinka",
+        "name": "Márinka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, long braid, green eyes, warm jacket, mittens, scarf",
+        "desc_en": "Marinka, a 10-year-old gardener from the north with a long blonde braid, a warm jacket and mittens"
+      },
+      {
+        "id": "vlocka",
+        "name": "Vločka",
+        "count_tag": null,
+        "tag_prompt": "arctic fox, white fox, fluffy tail",
+        "desc_en": "Vlocka, a white arctic fox with a huge fluffy tail"
+      },
+      {
+        "id": "ledovec",
+        "name": "Stařešina Ledovec",
+        "count_tag": null,
+        "tag_prompt": "ice giant, giant, icicles, blue skin, beard of ice",
+        "desc_en": "Elder Glacier, a huge grumpy blue ice giant covered in icicles"
+      },
+      {
+        "id": "pippop",
+        "name": "Pip a Pop",
+        "count_tag": null,
+        "tag_prompt": "two reindeer, young reindeer, racing",
+        "desc_en": "Pip and Pop, two young reindeer cousins always racing"
+      }
+    ],
+    "locations": [
+      {
+        "id": "garden",
+        "tag_prompt": "outdoors, snow, ice greenhouse, silver flower, mountains, morning",
+        "desc_en": "A snowy garden with a greenhouse made of ice and a single round silver flower inside, northern mountains."
+      },
+      {
+        "id": "peak",
+        "tag_prompt": "outdoors, mountain peak, snow, icicles, noon, blue sky",
+        "desc_en": "A snowy mountain peak above the garden at noon."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Ledová zahradka",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "garden",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "greenhouse"
+        ],
+        "scene_en": "a snowy northern garden with a greenhouse made of ice, inside it a single glowing silver flower",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Sněžná zahrada Márinky. Ráno."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "marinka"
+          }
+        ],
+        "visual_tags": [
+          "kneeling",
+          "talking to plant",
+          "silver flower",
+          "ice greenhouse"
+        ],
+        "scene_en": "Marinka kneels by the ice greenhouse talking softly to the silver flower",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "marinka",
+            "text": "No tak, zlatíčko, ty to zvládneš. Já tě zahřeju, kdybych měla na tobě spát."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "vlocka"
+          }
+        ],
+        "visual_tags": [
+          "arctic fox",
+          "writing in snow",
+          "tail",
+          "letters in snow"
+        ],
+        "scene_en": "the arctic fox writes letters into the snow with its fluffy tail",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ve sněhu: CHLAD NOC PŘIJDE"
+          },
+          {
+            "kind": "speech",
+            "speaker": "marinka",
+            "text": "Chlad noc přijde? Vločko, to jako obyčejná noc?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "vlocka"
+          }
+        ],
+        "visual_tags": [
+          "arctic fox",
+          "worried",
+          "writing fast",
+          "snow"
+        ],
+        "scene_en": "close-up of the fox writing faster in the snow",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ve sněhu: VÍC NEŽ NOC. MRAZÍCÍ OBR."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "peak",
+        "characters": [
+          {
+            "id": "ledovec"
+          }
+        ],
+        "visual_tags": [
+          "giant",
+          "icicles",
+          "mountain"
+        ],
+        "scene_en": "a huge blue ice giant covered in icicles stands on the mountain peak",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "ledovec",
+            "text": "KDO SE ODVAŽIL ZAHŘÁT ZEMI? CÍTÍM TEPLÍCHNO. TEPLÍCHNO JE ZAKÁZANÉ!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "peak",
+        "characters": [
+          {
+            "id": "pippop"
+          }
+        ],
+        "visual_tags": [
+          "two reindeer",
+          "racing",
+          "running",
+          "snow spray"
+        ],
+        "scene_en": "two young reindeer race each other in the snow",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pippop",
+            "text": "Běžím rychleji!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "pippop",
+            "text": "Ne! Já!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "peak",
+        "characters": [
+          {
+            "id": "pippop"
+          }
+        ],
+        "visual_tags": [
+          "two reindeer",
+          "stopping",
+          "shocked",
+          "looking up"
+        ],
+        "scene_en": "the two reindeer skid to a stop and look up in shock",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "pippop",
+            "text": "…Ledovec!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ledovec"
+          },
+          {
+            "id": "marinka"
+          }
+        ],
+        "visual_tags": [
+          "giant",
+          "looming",
+          "brave",
+          "standing firm"
+        ],
+        "scene_en": "the giant looms over the garden, Marinka stands firm",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ledovec",
+            "text": "Tak hele, malá zahradnice. Ta tvoje květina se má ZASTAVIT. Léto nemá co dělat na severu."
+          },
+          {
+            "kind": "speech",
+            "speaker": "marinka",
+            "text": "Ta květina není narušitelka. Ta květina je NADĚJE. A ta se nesmí zastavit."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "marinka"
+          },
+          {
+            "id": "vlocka"
+          }
+        ],
+        "visual_tags": [
+          "ice wall",
+          "fox writing in snow",
+          "shouting"
+        ],
+        "scene_en": "the giant raises a wall of ice around the garden, the fox writes huge letters in the snow",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ve sněhu: MŮŽEŠ BÝT I OCHRÁNCE"
+          },
+          {
+            "kind": "shout",
+            "speaker": "marinka",
+            "text": "Obr Ledovče! Pomoz mi tu květinu chránit — ne zničit! Vždyť ty jsi taky zima. A ta květina zimu PŘEŽIJE, když jí dáš zimu na míru!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "peak",
+        "characters": [
+          {
+            "id": "ledovec"
+          }
+        ],
+        "visual_tags": [
+          "giant",
+          "sad",
+          "icicles",
+          "soft"
+        ],
+        "scene_en": "close-up of the ice giant's face softening, icicles tinkling",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ledovec",
+            "text": "Nikdo mě nikdy… o pomoc nepožádal. Vždycky jen prchali."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "cink cink"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ledovec"
+          },
+          {
+            "id": "marinka"
+          },
+          {
+            "id": "pippop"
+          }
+        ],
+        "visual_tags": [
+          "giant kneeling",
+          "blowing gently",
+          "sparkling flower",
+          "reindeer with sled"
+        ],
+        "scene_en": "the next day the giant kneels and gently blows frost on the sparkling silver flower, the reindeer pull a sled of fresh snow",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ve sněhu: ZIMA + LÁSKA = KVĚTINA"
+          },
+          {
+            "kind": "speech",
+            "speaker": "marinka",
+            "text": "Vločko, ty jsi génius."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ledovec"
+          },
+          {
+            "id": "marinka"
+          }
+        ],
+        "visual_tags": [
+          "giant",
+          "shy",
+          "bowl of soup",
+          "smile"
+        ],
+        "scene_en": "Marinka offers the shy giant a bowl of soup",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ledovec",
+            "text": "Malá zahradnice, kdybys kdykoli potřebovala kouzlo zimy, jsem k dispozici. Stačí zavolat."
+          },
+          {
+            "kind": "speech",
+            "speaker": "marinka",
+            "text": "A já ti můžu nabídnout bramborovou polévku."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ledovec"
+          }
+        ],
+        "visual_tags": [
+          "giant",
+          "holding tiny bowl",
+          "embarrassed"
+        ],
+        "scene_en": "the giant holds a tiny bowl of soup, embarrassed",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ledovec",
+            "text": "Polévku neznám. Ale zkusím."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

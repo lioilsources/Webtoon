@@ -1,0 +1,481 @@
+{
+  "world": {
+    "id": "k_ghostcats",
+    "title": "Duch, který se bál koček",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_dev_ink",
+    "characters": [
+      {
+        "id": "sara",
+        "name": "Sára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, dark hair, long hair, star cape, bat ear headband",
+        "desc_en": "Sara, a thoughtful shy 11-year-old girl in a starry cape and a headband with bat ears"
+      },
+      {
+        "id": "noc",
+        "name": "Noc",
+        "count_tag": null,
+        "tag_prompt": "small bat, tiny flashlight on collar",
+        "desc_en": "Noc, a tiny bat with a miniature flashlight on its collar"
+      },
+      {
+        "id": "ema",
+        "name": "Ema",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, ponytail, witch costume",
+        "desc_en": "Ema, her friend in a witch costume"
+      },
+      {
+        "id": "klic",
+        "name": "Pan Klíč",
+        "count_tag": "1boy",
+        "tag_prompt": "old man, janitor, lantern, keys, mustache",
+        "desc_en": "Mr. Klic, the old school janitor with a lantern and a mustache"
+      },
+      {
+        "id": "moucha",
+        "name": "Moucha",
+        "count_tag": null,
+        "tag_prompt": "black cat, green collar",
+        "desc_en": "Moucha, a black cat with a green collar"
+      },
+      {
+        "id": "hubert",
+        "name": "Duch Hubert",
+        "count_tag": null,
+        "tag_prompt": "ghost, translucent, white, top hat, shy",
+        "desc_en": "Hubert, a shy translucent white ghost in a top hat"
+      }
+    ],
+    "locations": [
+      {
+        "id": "street",
+        "tag_prompt": "outdoors, night, fog, old school, halloween, lanterns",
+        "desc_en": "Halloween night, fog lying on the ground like a white cloth, an old school building."
+      },
+      {
+        "id": "corridor",
+        "tag_prompt": "indoors, school corridor, desks, blackboard, night, lantern",
+        "desc_en": "A school corridor at night, desks standing like soldiers, chalk writing by itself on the blackboard."
+      },
+      {
+        "id": "kitchen",
+        "tag_prompt": "indoors, school kitchen, pumpkin lanterns, table, cellar door, night",
+        "desc_en": "The school kitchen lit by pumpkin lanterns like soft moons."
+      },
+      {
+        "id": "parade",
+        "tag_prompt": "outdoors, night, foggy alley, lantern parade, children in costumes",
+        "desc_en": "A foggy alley with a lantern parade of children in costumes."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Duch, který se bál koček",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "street",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "school",
+          "fog"
+        ],
+        "scene_en": "Halloween night, fog on the ground, an old abandoned school",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Halloween. Mlha leží na zemi jako bílý hadr."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "street",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "noc"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "star cape",
+          "bat on shoulder",
+          "witch costume",
+          "fog"
+        ],
+        "scene_en": "Sara in a starry cape with a tiny bat on her shoulder talks with Ema in a witch costume",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Pokud se bojíš, počítej do tří. Pak si vymysli, že to strašidlo má hroznou rýmu."
+          },
+          {
+            "kind": "pet",
+            "speaker": "noc",
+            "text": "Pip.",
+            "icon": "moon"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "street",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "sara"
+          }
+        ],
+        "visual_tags": [
+          "worried",
+          "smile",
+          "tissue"
+        ],
+        "scene_en": "Ema looks worried, Sara smiles holding a tissue",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "A co když nemá rýmu, ale zlobu?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Pak mu nabídneme kapesník a uvidíme, jestli se zloba smrčí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "street",
+        "characters": [
+          {
+            "id": "hubert"
+          }
+        ],
+        "visual_tags": [
+          "window flying open",
+          "white figure",
+          "school",
+          "ghost"
+        ],
+        "scene_en": "a school window flies open by itself, a white figure flits in the dark and vanishes",
+        "bubbles": [],
+        "sfx": [
+          {
+            "text": "BOUCH!"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "corridor",
+        "characters": [
+          {
+            "id": "klic"
+          }
+        ],
+        "visual_tags": [
+          "blackboard",
+          "chalk writing by itself",
+          "lantern",
+          "shaking"
+        ],
+        "scene_en": "in the corridor chalk writes by itself on the blackboard, the old janitor holds a trembling lantern",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Na tabuli: NEDEJTE… KOČCE… mouku?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klic",
+            "text": "Já tady žádného Huberta neznám. Jen kočku Mouchu. Ta zná všechny."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "corridor",
+        "characters": [
+          {
+            "id": "moucha"
+          },
+          {
+            "id": "hubert"
+          }
+        ],
+        "visual_tags": [
+          "black cat yawning",
+          "ghost flinching",
+          "curtain"
+        ],
+        "scene_en": "a black cat with a green collar steps out of the shadow and yawns, the ghost behind a curtain flinches",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "hubert",
+            "text": "Já se nebojím lidí! Jen… koček. Mají tiché tlapy a rozhodné oči."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "corridor",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "noc"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "kind smile",
+          "bat",
+          "laughing"
+        ],
+        "scene_en": "Sara speaks kindly, the bat squeaks, Ema laughs",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "To je v pořádku, Huberte. Já se bojím pavouků. Dokonce i těch nakreslených."
+          },
+          {
+            "kind": "pet",
+            "speaker": "noc",
+            "text": "Pip-pip.",
+            "icon": "moon"
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Noc říká, že pavouci se bojí tebe. Tak máte remízu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "kitchen",
+        "characters": [],
+        "visual_tags": [
+          "old photo",
+          "box of memories",
+          "pumpkin lantern"
+        ],
+        "scene_en": "close-up of an old photo in a box: a little boy, a kitten and a young janitor with a broom mustache",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "V krabici se vzpomínkami je stará fotka."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "klic"
+          },
+          {
+            "id": "hubert"
+          }
+        ],
+        "visual_tags": [
+          "janitor",
+          "ghost",
+          "surprised",
+          "pumpkin lanterns"
+        ],
+        "scene_en": "the janitor stares at the ghost, the ghost looks sheepish",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klic",
+            "text": "To jsi ty? Vždyť jsi byl školní strašidlo na půl úvazku!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "hubert",
+            "text": "Strašil jsem, aby děti nelezly do sklepa. Tam byla prasklá trubka. A pak jsem… zapomněl přestat."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "hubert"
+          },
+          {
+            "id": "moucha"
+          },
+          {
+            "id": "noc"
+          }
+        ],
+        "visual_tags": [
+          "cat on ghost's shoulder",
+          "bat flashlight",
+          "cellar door open",
+          "gingerbread",
+          "glowing pumpkins"
+        ],
+        "scene_en": "the cat jumps on the ghost's shoulder, he startles then smiles, the bat switches on its tiny flashlight and the cellar door opens on a pile of gingerbread",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Přestaň teď. A začni svítit."
+          },
+          {
+            "kind": "speech",
+            "speaker": "hubert",
+            "text": "Dobrý večer, děti. Hrůza je vyprodaná. Dnes je program: překvapení."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "parade",
+        "characters": [
+          {
+            "id": "sara"
+          },
+          {
+            "id": "hubert"
+          },
+          {
+            "id": "moucha"
+          }
+        ],
+        "visual_tags": [
+          "lantern parade",
+          "fog",
+          "ghost holding hat",
+          "cat with bat ears"
+        ],
+        "scene_en": "a lantern parade through the fog, the ghost walks among the children holding his hat as he passes the cat, Sara puts her bat-ear headband on the cat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sara",
+            "text": "Halloween není noc, kdy se děsíme. Je to noc, kdy řekneme strachu: víme o tobě. A máme kapesník."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "parade",
+        "characters": [
+          {
+            "id": "hubert"
+          },
+          {
+            "id": "noc"
+          }
+        ],
+        "visual_tags": [
+          "ghost",
+          "smile",
+          "bat",
+          "gingerbread"
+        ],
+        "scene_en": "the ghost smiles holding gingerbread",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "noc",
+            "text": "Pip.",
+            "icon": "moon"
+          },
+          {
+            "kind": "speech",
+            "speaker": "hubert",
+            "text": "A perníček?"
+          },
+          {
+            "kind": "shout",
+            "speaker": null,
+            "text": "A perníček!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "street",
+        "characters": [
+          {
+            "id": "moucha"
+          },
+          {
+            "id": "noc"
+          }
+        ],
+        "visual_tags": [
+          "school window glowing",
+          "cat with bat ears",
+          "bat sleeping in hood",
+          "heart in fog"
+        ],
+        "scene_en": "the ghost glows as a light in the school window, the cat wears bat ears, the bat sleeps in Sara's hood, a heart shape appears in the fog",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Hubert mizí do školy — ne jako přízrak, ale jako světlo za oknem."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "world": {
+    "id": "k_circus",
+    "title": "Cirkus Amárie",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "animagine_storybook",
+    "characters": [
+      {
+        "id": "terka",
+        "name": "Terka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, bun, acrobat, sparkly leotard, tights",
+        "desc_en": "Terka, an 8-year-old circus acrobat girl with a hair bun and a sparkly leotard"
+      },
+      {
+        "id": "bimbo",
+        "name": "Bimbo",
+        "count_tag": null,
+        "tag_prompt": "chihuahua, curly fur, red jacket, small dog",
+        "desc_en": "Bimbo, a curly chihuahua in a red circus jacket"
+      },
+      {
+        "id": "boris",
+        "name": "Silák Boris",
+        "count_tag": "1boy",
+        "tag_prompt": "muscular, giant man, mustache, striped leotard, crying",
+        "desc_en": "Boris the strongman, a giant with a mustache and a striped leotard who cries at beautiful things"
+      },
+      {
+        "id": "whisk",
+        "name": "Madam Whisk",
+        "count_tag": "1girl",
+        "tag_prompt": "mature female, ringmaster, monocle, top hat, red tailcoat",
+        "desc_en": "Madam Whisk, a strict ringmaster with a monocle, top hat and red tailcoat"
+      }
+    ],
+    "locations": [
+      {
+        "id": "ring",
+        "tag_prompt": "indoors, circus tent, circus ring, spotlight, tightrope, empty seats, red and white stripes",
+        "desc_en": "A red-and-white circus big top, a sand ring, a tightrope and spotlights."
+      },
+      {
+        "id": "show",
+        "tag_prompt": "indoors, circus tent, crowd, spotlight, tightrope, night, drums",
+        "desc_en": "The big top at night, full of audience, spotlights on the tightrope."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Cirkus Amárie",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "ring",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "circus tent"
+        ],
+        "scene_en": "a red-and-white circus big top with a sand ring, three spotlights and empty seats",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Cirkusové šapité. Odpolední zkouška."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "terka"
+          },
+          {
+            "id": "bimbo"
+          }
+        ],
+        "visual_tags": [
+          "tightrope walking",
+          "balancing",
+          "dog holding net",
+          "confident"
+        ],
+        "scene_en": "Terka walks the tightrope confidently, the chihuahua below holds a safety net",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terka",
+            "text": "Bez publika to umím, Bimbo! Bez publika jsem královna provazů!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "bimbo"
+          }
+        ],
+        "visual_tags": [
+          "chihuahua",
+          "barking",
+          "red jacket",
+          "looking up"
+        ],
+        "scene_en": "close-up of the chihuahua barking up at her",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "bimbo",
+            "text": "Haf! Haf!",
+            "icon": "star",
+            "translation": "A co potom, až tam budou stovky očí?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "terka"
+          }
+        ],
+        "visual_tags": [
+          "tightrope",
+          "nervous",
+          "wobbly",
+          "sweatdrop"
+        ],
+        "scene_en": "Terka on the rope looking nervous",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terka",
+            "text": "Pak se mi motají nohy, hlava je jak balon a lano se mění na hada."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bimbo",
+            "text": "Whiiiist…",
+            "icon": "star",
+            "translation": "Hadi jsou taky jen lana, která se bojí."
+          },
+          {
+            "kind": "speech",
+            "speaker": "terka",
+            "text": "To nechápu, ale zní to chytře."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "boris"
+          },
+          {
+            "id": "whisk"
+          }
+        ],
+        "visual_tags": [
+          "strongman",
+          "barbell",
+          "crying",
+          "monocle",
+          "stern"
+        ],
+        "scene_en": "the strongman lifts a huge barbell with tears in his eyes, the strict ringmaster with a monocle stands beside him",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "boris",
+            "text": "Pardon, madam. Byla to… krása. Já se prostě rozbrečím u krásných věcí."
+          },
+          {
+            "kind": "speech",
+            "speaker": "whisk",
+            "text": "Siláku Borisi, dnes večer to má být TO NEJLEPŠÍ PŘEDSTAVENÍ. Návštěvnost klesá. Bez Terky na laně to nepůjde. A Terka se bojí publika."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "boris"
+          },
+          {
+            "id": "bimbo"
+          }
+        ],
+        "visual_tags": [
+          "strongman",
+          "kind smile",
+          "chihuahua jumping"
+        ],
+        "scene_en": "the strongman smiles kindly, the chihuahua jumps excitedly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "boris",
+            "text": "Co kdybychom jí pomohli? Já se taky bojím velkých věcí. A pak to vyjde."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bimbo",
+            "text": "Haf! Whiiiist!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "whisk"
+          }
+        ],
+        "visual_tags": [
+          "monocle",
+          "raised eyebrow",
+          "top hat"
+        ],
+        "scene_en": "the ringmaster lowers her monocle, intrigued",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "whisk",
+            "text": "Čivava má nápad? Tak ven s ním. Ráda bych viděla, jak pes vymyslí trik."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "bimbo"
+          },
+          {
+            "id": "boris"
+          }
+        ],
+        "visual_tags": [
+          "chihuahua on chair",
+          "holding sign",
+          "paper eyes",
+          "empty seats"
+        ],
+        "scene_en": "the chihuahua stands on a single chair in the empty seats holding a big sign, the strongman scatters piles of paper cut-out eyes on the seats",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terka",
+            "text": "A to má být co?"
+          },
+          {
+            "kind": "pet",
+            "speaker": "bimbo",
+            "text": "Haf!",
+            "icon": "star",
+            "translation": "Natrénovala sis lano tisíckrát naostro. Tak si zagoogluješ plné hlediště… hlediště BIMBŮ!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "ring",
+        "characters": [
+          {
+            "id": "terka"
+          }
+        ],
+        "visual_tags": [
+          "tightrope walking",
+          "confident",
+          "smile",
+          "spotlight"
+        ],
+        "scene_en": "Terka steps onto the rope and walks across without hesitation",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "boris",
+            "text": "Krása!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "whisk",
+            "text": "Tak. Čivava vymyslel trik. Zapsat do kroniky."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "show",
+        "characters": [],
+        "visual_tags": [
+          "crowd",
+          "spotlights",
+          "drums"
+        ],
+        "scene_en": "the big top at night packed with audience, spotlights and drums",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Večerní premiéra."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "show",
+        "characters": [
+          {
+            "id": "terka"
+          },
+          {
+            "id": "bimbo"
+          }
+        ],
+        "visual_tags": [
+          "tightrope",
+          "jumping",
+          "spin",
+          "chihuahua on tiny bicycle",
+          "spotlight",
+          "crowd cheering"
+        ],
+        "scene_en": "Terka spins and leaps on the tightrope under the spotlight while the chihuahua rides a tiny bicycle below whistling",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terka",
+            "text": "Oči. Oči. To jsou jen oči. Oči Bimbů."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "BUM BUM"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "show",
+        "characters": [
+          {
+            "id": "whisk"
+          }
+        ],
+        "visual_tags": [
+          "microphone",
+          "ringmaster",
+          "top hat",
+          "proud",
+          "spotlight"
+        ],
+        "scene_en": "the ringmaster announces into the microphone, proud",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "whisk",
+            "text": "Dámy a pánové… čivava Bimbo a lanochodkyně Terka!"
+          },
+          {
+            "kind": "pet",
+            "speaker": "bimbo",
+            "text": "Whiiiiist!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "show",
+        "characters": [
+          {
+            "id": "boris"
+          }
+        ],
+        "visual_tags": [
+          "strongman",
+          "crying",
+          "tissues",
+          "armchair",
+          "backstage"
+        ],
+        "scene_en": "backstage the strongman sits in a tiny armchair with a box of tissues, crying happily",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Boris v zákulisí s krabicí kapesníků."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "fňuk!"
+          }
+        ],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "world": {
+    "id": "k_turtle",
+    "title": "Modrá zpráva od želvy",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_kawaii",
+    "characters": [
+      {
+        "id": "terezka",
+        "name": "Terezka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, short hair, wetsuit, pebbles",
+        "desc_en": "Terezka, a small brave 7-year-old girl in a wetsuit who collects pebbles"
+      },
+      {
+        "id": "bodlinka",
+        "name": "Bodlinka",
+        "count_tag": null,
+        "tag_prompt": "hedgehog, red scarf",
+        "desc_en": "Bodlinka, a hedgehog wearing a red scarf"
+      },
+      {
+        "id": "iva",
+        "name": "Kapitánka Iva",
+        "count_tag": "1girl",
+        "tag_prompt": "woman, captain, diving suit, short hair",
+        "desc_en": "Captain Iva, a friendly woman in a diving suit"
+      },
+      {
+        "id": "olinka",
+        "name": "Olinka",
+        "count_tag": null,
+        "tag_prompt": "small octopus, pink",
+        "desc_en": "Olinka, a little pink octopus"
+      },
+      {
+        "id": "stovka",
+        "name": "Želva Stovka",
+        "count_tag": null,
+        "tag_prompt": "sea turtle, old, big",
+        "desc_en": "Stovka, a very old big sea turtle"
+      }
+    ],
+    "locations": [
+      {
+        "id": "station",
+        "tag_prompt": "underwater station, round windows, fish outside, map",
+        "desc_en": "A small station under the sea with round porthole windows, silver fish swimming outside."
+      },
+      {
+        "id": "reef",
+        "tag_prompt": "underwater, coral reef, lanterns, colorful corals, bubbles",
+        "desc_en": "A coral reef lit by little lanterns, colours like a broken rainbow."
+      },
+      {
+        "id": "wreck",
+        "tag_prompt": "underwater, shipwreck, old wood, sand",
+        "desc_en": "An old shipwreck behind the reef, old wheels sticking out of the wood."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Modrá zpráva od želvy",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "station",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "a small underwater station with round porthole windows, silver fish swimming outside",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Malá stanice pod hladinou."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "station",
+        "characters": [
+          {
+            "id": "terezka"
+          },
+          {
+            "id": "bodlinka"
+          }
+        ],
+        "visual_tags": [
+          "making map",
+          "hedgehog",
+          "red scarf",
+          "pebbles"
+        ],
+        "scene_en": "Terezka glues together a map, a hedgehog in a red scarf sits beside her like a little captain without a ship",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terezka",
+            "text": "Když je želva Stovka smutná, plave do kruhu. A když plave do kruhu, najde… vrak."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bodlinka",
+            "text": "Chrr.",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "station",
+        "characters": [
+          {
+            "id": "iva"
+          },
+          {
+            "id": "terezka"
+          }
+        ],
+        "visual_tags": [
+          "captain",
+          "finger raised",
+          "smile"
+        ],
+        "scene_en": "Captain Iva raises a finger, Terezka grins",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "iva",
+            "text": "Dobře, malá průzkumnice. Ale podmínka: držet se světla. A žádné sbírání „chrastících kamínků“ uprostřed proudu."
+          },
+          {
+            "kind": "speech",
+            "speaker": "terezka",
+            "text": "Jen tři. Možná čtyři. A jeden pro štěstí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "reef",
+        "characters": [
+          {
+            "id": "stovka"
+          },
+          {
+            "id": "olinka"
+          }
+        ],
+        "visual_tags": [
+          "sea turtle swimming in circles",
+          "question mark bubbles",
+          "octopus with key",
+          "coral"
+        ],
+        "scene_en": "on the reef the old turtle swims in circles with bubbles shaped like question marks, a little pink octopus plays with a key stuck in coral",
+        "bubbles": [],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "reef",
+        "characters": [
+          {
+            "id": "terezka"
+          },
+          {
+            "id": "bodlinka"
+          }
+        ],
+        "visual_tags": [
+          "hedgehog rolling",
+          "ball",
+          "current",
+          "key flying up"
+        ],
+        "scene_en": "the hedgehog curls into a ball, Terezka sets it on the current, it rolls like a mini submarine, hits the coral and the key shoots upward",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terezka",
+            "text": "Bodlinko! Jsi nejrychlejší kámen na světě!"
+          },
+          {
+            "kind": "pet",
+            "speaker": "olinka",
+            "text": "Žbluňk! Žbluňk!",
+            "icon": "pearl"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "wreck",
+        "characters": [
+          {
+            "id": "stovka"
+          }
+        ],
+        "visual_tags": [
+          "shipwreck",
+          "turtle",
+          "opening"
+        ],
+        "scene_en": "the turtle goes quiet and the old shipwreck behind the reef opens a little like a sleeping eye",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Vrak za útesem se pootevře jako spící oko."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "wreck",
+        "characters": [
+          {
+            "id": "terezka"
+          },
+          {
+            "id": "stovka"
+          }
+        ],
+        "visual_tags": [
+          "placing pebble",
+          "turtle touching pebble",
+          "threshold"
+        ],
+        "scene_en": "Terezka places a pebble on the threshold of the wreck, the turtle touches it with its nose",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Terezka položí na práh kamínek, který „chrastí dobrodružstvím“."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "wreck",
+        "characters": [],
+        "visual_tags": [
+          "glass sphere",
+          "glowing plant",
+          "seed",
+          "treasure"
+        ],
+        "scene_en": "inside the wreck a glass sphere with a tiny glowing plant like a moon vegetable",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terezka",
+            "text": "To je semínko útesu. Želva ho hlídala, dokud nepřijde někdo, kdo umí počkat."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "wreck",
+        "characters": [
+          {
+            "id": "iva"
+          },
+          {
+            "id": "olinka"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "octopus planting seed",
+          "sand"
+        ],
+        "scene_en": "Captain Iva smiles, the octopus plants the seed in the sand",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "iva",
+            "text": "A někdo, kdo má ježka jako záchranný člun."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "reef",
+        "characters": [
+          {
+            "id": "bodlinka"
+          },
+          {
+            "id": "terezka"
+          }
+        ],
+        "visual_tags": [
+          "hedgehog sleeping",
+          "scarf as pillow",
+          "three pebbles",
+          "heart shaped bubbles"
+        ],
+        "scene_en": "bubbles rise in the shape of a heart, the hedgehog sleeps on its folded scarf on three pebbles",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "terezka",
+            "text": "Čtyři kamínky. Ten čtvrtý je Bodlinka."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}
