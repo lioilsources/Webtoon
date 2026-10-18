@@ -1,0 +1,442 @@
+{
+  "world": {
+    "id": "k_goatfarm",
+    "title": "Mína a záhada mizejících jahod",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "cyberreal_clay",
+    "setting": "post-apocalyptic (gentle)",
+    "characters": [
+      {
+        "id": "anicka",
+        "name": "Anička",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, pigtails, magnifying glass, notebook, overalls",
+        "desc_en": "Anicka, a 9-year-old girl detective with brown pigtails, dungarees, a magnifying glass and a notebook"
+      },
+      {
+        "id": "mina",
+        "name": "Mína",
+        "count_tag": null,
+        "tag_prompt": "goat, dwarf goat, white goat, brown spots",
+        "desc_en": "Mina, a small white dwarf goat with brown spots"
+      },
+      {
+        "id": "tom",
+        "name": "Tom",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, red hair, messy hair, striped t-shirt, loud",
+        "desc_en": "Tom, her noisy 7-year-old brother with messy red hair and a striped t-shirt"
+      },
+      {
+        "id": "jana",
+        "name": "Babička Jana",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, white hair, apron, headscarf, holding pie",
+        "desc_en": "Grandma Jana, a round old lady in an apron and a headscarf"
+      },
+      {
+        "id": "frantisek",
+        "name": "Soused František",
+        "count_tag": "1boy",
+        "tag_prompt": "old man, straw hat, beard, overalls, hammer",
+        "desc_en": "neighbour Frantisek, an old man with a straw hat, beard and overalls"
+      }
+    ],
+    "locations": [
+      {
+        "id": "field",
+        "tag_prompt": "outdoors, farm, strawberry field, solar panels, windmill, water tower, morning, wasteland, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A small farm at the edge of a dusty wasteland: strawberry beds, solar panels, a windmill and an old water tower, morning light."
+      },
+      {
+        "id": "fence",
+        "tag_prompt": "outdoors, garden, scrap fence, hole in fence, feathers, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A garden fence made of scrap metal sheets with a small hole at the bottom."
+      },
+      {
+        "id": "night",
+        "tag_prompt": "outdoors, night, moon, farm, barrel, strawberry field, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "The farm at night under a big moon, a rusty barrel to hide behind."
+      },
+      {
+        "id": "yard",
+        "tag_prompt": "outdoors, farmyard, chicken coop, old car, morning, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "The farmyard in the morning, a chicken coop built from an old car."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Mína a záhada mizejících jahod",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "field",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "a small farm at the edge of a dusty wasteland, strawberry beds, solar panels, a windmill and a water tower, morning",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Farma na kraji pustiny. Letní ráno."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "field",
+        "characters": [
+          {
+            "id": "jana"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "empty field",
+          "upset",
+          "hands on head",
+          "goat",
+          "red mouth"
+        ],
+        "scene_en": "Grandma Jana stands over empty strawberry beds in dismay, the little goat nearby has a red-stained snout",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "jana",
+            "text": "Kdo mi sežral jahody?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "field",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "pointing",
+          "accusing",
+          "magnifying glass",
+          "thinking"
+        ],
+        "scene_en": "Tom points accusingly, Anicka holds up her magnifying glass",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Mína! Podívej, má červený čumák!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Mína možná jen očichávala. Já to vyšetřím."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "field",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "goat",
+          "red mouth",
+          "innocent",
+          "looking at viewer"
+        ],
+        "scene_en": "close-up of the goat with a red-stained snout looking innocent",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "mina",
+            "text": "Mééé.",
+            "icon": "strawberry"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "fence",
+        "characters": [
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "crawling",
+          "magnifying glass",
+          "feather",
+          "hole in fence"
+        ],
+        "scene_en": "Anicka crawls along the scrap fence with her magnifying glass and finds a feather by a small hole",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Tady jsou stopy. A tady peříčko. Slepičí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "fence",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "anicka"
+          }
+        ],
+        "visual_tags": [
+          "surprised",
+          "holding feather",
+          "explaining"
+        ],
+        "scene_en": "Tom is surprised, Anicka holds up the feather",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Takže to udělaly slepice?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Od souseda. Prolezly dírou."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "night",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "hiding",
+          "behind barrel",
+          "moon",
+          "whispering",
+          "goat"
+        ],
+        "scene_en": "at night the kids hide behind a rusty barrel under a big moon, the goat stands nearby",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Já se bojím."
+          },
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "To je jen Mína."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "night",
+        "characters": [
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "goat",
+          "chickens",
+          "chasing",
+          "strawberries",
+          "moonlight"
+        ],
+        "scene_en": "chickens sneak through the hole towards the strawberries and the goat chases them away",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "mina",
+            "text": "Mééé!",
+            "icon": "strawberry"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "KOKODÁK!"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "night",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "tom"
+          }
+        ],
+        "visual_tags": [
+          "excited",
+          "pointing",
+          "surprised",
+          "moonlight"
+        ],
+        "scene_en": "Anicka points excitedly, Tom gasps",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Mína je vlastně hlídačka!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "tom",
+            "text": "Tak to není ona!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "frantisek"
+          },
+          {
+            "id": "jana"
+          }
+        ],
+        "visual_tags": [
+          "fixing fence",
+          "hammer",
+          "chickens",
+          "holding pie",
+          "apologizing"
+        ],
+        "scene_en": "in the morning the neighbour fixes the fence with a hammer, chickens around him, grandma brings a pie",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "frantisek",
+            "text": "Moje slepice! Promiňte. Plot už bude opravený."
+          },
+          {
+            "kind": "speech",
+            "speaker": "jana",
+            "text": "A Mína dostane jahodu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "anicka"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "notebook",
+          "closing notebook",
+          "proud",
+          "goat",
+          "strawberry"
+        ],
+        "scene_en": "Anicka closes her notebook proudly, the goat munches a strawberry",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "anicka",
+            "text": "Případ uzavřen."
+          },
+          {
+            "kind": "pet",
+            "speaker": "mina",
+            "text": "Mééé.",
+            "icon": "strawberry",
+            "translation": "(vítězně)"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "tom"
+          },
+          {
+            "id": "mina"
+          }
+        ],
+        "visual_tags": [
+          "petting",
+          "goat",
+          "nibbling sleeve",
+          "laughing"
+        ],
+        "scene_en": "Tom carefully pets the goat, which nibbles his sleeve",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Mína Tomovi okusí rukáv. Všichni se smějí."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "ham!"
+          }
+        ],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

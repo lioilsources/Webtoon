@@ -449,6 +449,196 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 7.0
+    },
+    "noobai_flat": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "flat color",
+        "ligne claire",
+        "thick outlines",
+        "limited palette"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "very awa"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "animal nose"
+      ],
+      "loras": [
+        {
+          "name": "NoobAI/MeMaXL_Flat_Anime_Style_-_NoobIllustriousPonyXL.safetensors",
+          "strength": 0.8,
+          "trigger": null
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "hassaku_pixar": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "3d",
+        "cartoon"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "amazing quality"
+      ],
+      "quality_neg": [
+        "bad quality",
+        "worst quality",
+        "worst detail",
+        "sketch",
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "signature",
+        "watermark",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "animal nose"
+      ],
+      "loras": [
+        {
+          "name": "Pixar_Illustrious/Pixar_Illustrious.safetensors",
+          "strength": 0.8,
+          "trigger": null
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "flux_toybox": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "toy box photo: a miniature diorama of plastic toy figures and handmade props, tilt-shift, soft studio light, playful, no text.",
+      "loras": [
+        {
+          "name": "3D_Pixar_Flux/Toy_Box_Flux_v2_renderartist.safetensors",
+          "strength": 0.9,
+          "trigger": "t0yb0x"
+        }
+      ]
+    },
+    "flux_schnell_ink": {
+      "graph": "flux",
+      "unet": "flux1-schnell.safetensors",
+      "steps": 4,
+      "guidance": 3.5,
+      "style_text": "Children's graphic novel panel, bold black ink lines, flat limited palette of orange, teal and purple, cozy spooky mood, no text.",
+      "loras": []
+    },
+    "flux_dev_ink": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's graphic novel panel, bold black ink lines, flat limited palette of orange, teal and purple, cozy spooky mood, no text.",
+      "loras": []
+    },
+    "realvis_matte": {
+      "checkpoint": "RealVisXL_V5.0.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "Cinematic family film still, natural soft light, shallow depth of field.",
+      "negative": "bad quality, worst quality, low quality, jpeg artifacts, blurry, watermark, deformed, disfigured",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
+    },
+    "cyberreal_matte": {
+      "checkpoint": "CyberRealisticXL_v10.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "Cinematic concept art matte painting, painterly brushstrokes, soft light, cozy family film.",
+      "negative": "photo, photorealistic, realistic skin, bad quality, worst quality, low quality, jpeg artifacts, blurry, watermark, deformed, disfigured",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
+    },
+    "cyberreal_clay": {
+      "checkpoint": "CyberRealisticXL_v10.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "(claymation:1.4), (stop-motion animation:1.3), (plasticine figures:1.3), (miniature diorama set:1.3), tilt-shift, handmade, warm light.",
+      "negative": "photo, realistic skin, anime, 2d, flat, bad quality, worst quality, low quality, blurry, watermark, deformed",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
+    },
+    "realvis_clay": {
+      "checkpoint": "RealVisXL_V5.0.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "(claymation:1.4), (stop-motion animation:1.3), (plasticine figures:1.3), handmade miniature set, warm light.",
+      "negative": "photo, realistic skin, anime, 2d, flat, bad quality, worst quality, low quality, blurry, watermark, deformed",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
+    },
+    "juggernaut_lightning_comic": {
+      "checkpoint": "Juggernaut-XL-Lightning_4Steps.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "Retro comic book panel, bold ink outlines, halftone dots, bright flat colors.",
+      "negative": "photo, realistic, bad quality, worst quality, low quality, blurry, watermark, deformed",
+      "loras": [],
+      "sampler": "dpmpp_sde",
+      "scheduler": "karras",
+      "steps": 6,
+      "cfg": 2.0
+    },
+    "juggernaut_clay": {
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prediction": "eps",
+      "dialect": "natural",
+      "who_first": true,
+      "style_text": "(claymation:1.4), (stop-motion animation:1.3), (plasticine figures:1.3), handmade miniature set, warm light.",
+      "negative": "photo, realistic skin, anime, 2d, flat, bad quality, worst quality, low quality, blurry, watermark, deformed",
+      "loras": [],
+      "sampler": "dpmpp_2m",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
     }
   },
   "always_negative": [

@@ -80,6 +80,26 @@ def draw_icon(d, icon, cx, cy, r):
     elif icon == "moon":
         d.ellipse((cx - r * 0.8, cy - r * 0.8, cx + r * 0.8, cy + r * 0.8), fill=(255, 215, 80), outline=INK, width=2)
         d.ellipse((cx - r * 0.35, cy - r * 0.95, cx + r * 1.1, cy + r * 0.6), fill=PET_FILL)
+    elif icon == "carrot":
+        d.polygon([(cx - r * 0.7, cy - r * 0.55), (cx - r * 0.25, cy - r * 0.85), (cx + r * 0.85, cy + r * 0.85)],
+                  fill=(245, 140, 40), outline=INK)
+        d.line([(cx - r * 0.55, cy - r * 0.75), (cx - r * 0.95, cy - r * 1.05)], fill=(70, 160, 70), width=4)
+        d.line([(cx - r * 0.45, cy - r * 0.8), (cx - r * 0.45, cy - r * 1.15)], fill=(70, 160, 70), width=4)
+    elif icon == "cookie":
+        d.ellipse((cx - r * 0.85, cy - r * 0.85, cx + r * 0.85, cy + r * 0.85), fill=(215, 160, 90), outline=INK, width=2)
+        for ox, oy in ((-0.35, -0.3), (0.3, -0.1), (-0.1, 0.4), (0.35, 0.45)):
+            d.ellipse((cx + (ox - 0.1) * r, cy + (oy - 0.1) * r, cx + (ox + 0.1) * r, cy + (oy + 0.1) * r), fill=(90, 50, 30))
+    elif icon == "strawberry":
+        d.polygon([(cx - r * 0.8, cy - r * 0.35), (cx + r * 0.8, cy - r * 0.35), (cx, cy + r)], fill=(225, 45, 60), outline=INK)
+        d.ellipse((cx - r * 0.8, cy - r * 0.75, cx + r * 0.8, cy + r * 0.1), fill=(225, 45, 60))
+        d.polygon([(cx - r * 0.5, cy - r * 0.55), (cx, cy - r * 0.95), (cx + r * 0.5, cy - r * 0.55)], fill=(70, 160, 70))
+        for ox, oy in ((-0.3, -0.1), (0.3, -0.1), (0, 0.3), (-0.15, 0.6), (0.15, 0.6)):
+            d.ellipse((cx + ox * r - 2, cy + oy * r - 2, cx + ox * r + 2, cy + oy * r + 2), fill=(255, 230, 120))
+    elif icon == "star":
+        import math
+        pts = [(cx + (r if k % 2 == 0 else r * 0.45) * math.sin(k * math.pi / 5),
+                cy - (r if k % 2 == 0 else r * 0.45) * math.cos(k * math.pi / 5)) for k in range(10)]
+        d.polygon(pts, fill=(255, 205, 50), outline=INK)
     else:  # paw
         d.ellipse((cx - r * 0.55, cy - r * 0.1, cx + r * 0.55, cy + r * 0.8), fill=(150, 100, 70))
         for ox, oy in ((-0.7, -0.35), (-0.25, -0.75), (0.25, -0.75), (0.7, -0.35)):

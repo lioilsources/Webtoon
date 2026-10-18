@@ -1,0 +1,446 @@
+{
+  "world": {
+    "id": "k_snowtrail",
+    "title": "Bublina a bílá stopa",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "realvis_matte",
+    "setting": "post-apocalyptic (gentle)",
+    "characters": [
+      {
+        "id": "nela",
+        "name": "Nela",
+        "count_tag": "1girl",
+        "tag_prompt": "child, blonde hair, long hair, red beanie, winter jacket, snow boots",
+        "desc_en": "Nela, a sporty 11-year-old girl with long blonde hair, a red beanie and a winter jacket"
+      },
+      {
+        "id": "bublina",
+        "name": "Bublina",
+        "count_tag": null,
+        "tag_prompt": "terrier, small dog, white and tan fur",
+        "desc_en": "Bublina, a small white-and-tan terrier"
+      },
+      {
+        "id": "sofie",
+        "name": "Sofie",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, braids, green winter coat, scarf, thermos",
+        "desc_en": "Sofie, a careful 10-year-old girl with brown braids, a green winter coat and a thermos"
+      },
+      {
+        "id": "pavel",
+        "name": "Strýc Pavel",
+        "count_tag": "1boy",
+        "tag_prompt": "adult, man, beard, mountain rescue jacket, radio, goggles",
+        "desc_en": "Uncle Pavel, a calm bearded mountain rescuer in a red rescue jacket with a radio"
+      },
+      {
+        "id": "stene",
+        "name": "Štěně",
+        "count_tag": null,
+        "tag_prompt": "puppy, small puppy, brown fur, shivering",
+        "desc_en": "a tiny lost brown puppy"
+      }
+    ],
+    "locations": [
+      {
+        "id": "hut",
+        "tag_prompt": "outdoors, snow, mountain hut, snowing, ski lift, wind turbine, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A mountain hut by an old abandoned rusty ski lift, snow falling, a home-made wind turbine turning on the roof."
+      },
+      {
+        "id": "forest",
+        "tag_prompt": "outdoors, snowy forest, snowstorm, footprints, wind, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A snowy forest, paw prints between the trees, wind picking up."
+      },
+      {
+        "id": "shed",
+        "tag_prompt": "indoors, wooden shed, straw, cold, light through cracks, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "Inside an old wooden shed half-buried in snow, straw on the floor."
+      },
+      {
+        "id": "evening",
+        "tag_prompt": "indoors, cabin, wood stove, evening, warm lighting, cocoa, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "Inside the hut in the evening, a warm wood stove and mugs of cocoa."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Bublina a bílá stopa",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "hut",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "a mountain hut next to an old abandoned ski lift, gentle snowfall, a small wind turbine on the roof",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Horská chata u staré lanovky. Sněží."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hut",
+        "characters": [
+          {
+            "id": "nela"
+          },
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "building snowman",
+          "snow",
+          "dog running",
+          "smile"
+        ],
+        "scene_en": "Nela and Sofie build a snowman while the little terrier runs circles around them",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Bublino, přines mi rukavici!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Ona spíš přinese sněhovou kouli."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "hut",
+        "characters": [
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "terrier",
+          "barking",
+          "snowflakes",
+          "jumping"
+        ],
+        "scene_en": "close-up of the little terrier barking at a snowflake",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "bublina",
+            "text": "Haf!",
+            "icon": "bone"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hut",
+        "characters": [
+          {
+            "id": "nela"
+          },
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "dog running away",
+          "forest",
+          "shouting",
+          "reaching"
+        ],
+        "scene_en": "the terrier suddenly lifts its nose and races off towards the forest, Nela shouts after it",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "nela",
+            "text": "Bublino, stůj!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "snowstorm",
+          "footprints",
+          "holding arm",
+          "wind"
+        ],
+        "scene_en": "in the snowy forest the wind picks up, Sofie holds on to Nela's arm, paw prints lead between the trees",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Nelo, vracíme se. Sníh je čím dál hustší."
+          },
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Ale Bublina tam někde je. A slyšíš? Štěká."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "sofie"
+          }
+        ],
+        "visual_tags": [
+          "determined",
+          "snow",
+          "scarf"
+        ],
+        "scene_en": "Sofie nods bravely in the snow",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Tak rychle."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "bublina"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "terrier",
+          "digging",
+          "wooden shed",
+          "snow"
+        ],
+        "scene_en": "the terrier digs at the door of an old wooden shed half-buried in snow",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Najdou starou dřevěnou kůlnu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "shed",
+        "characters": [
+          {
+            "id": "stene"
+          },
+          {
+            "id": "bublina"
+          },
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "puppy",
+          "straw",
+          "licking",
+          "shivering",
+          "kneeling"
+        ],
+        "scene_en": "inside, a tiny puppy shivers in the straw while the terrier licks it, Nela kneels beside them",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Ty jsi nás přivedla kvůli němu!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "Musíme zavolat strýce Pavla."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "shed",
+        "characters": [
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "holding radio",
+          "talking",
+          "serious"
+        ],
+        "scene_en": "Nela speaks into a walkie-talkie",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Strýci, jsme u staré kůlny. Našly jsme štěně."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "forest",
+        "characters": [
+          {
+            "id": "pavel"
+          }
+        ],
+        "visual_tags": [
+          "snowmobile",
+          "radio",
+          "goggles",
+          "driving"
+        ],
+        "scene_en": "Uncle Pavel answers his radio from a snowmobile, already on the way",
+        "bubbles": [
+          {
+            "kind": "radio",
+            "speaker": "pavel",
+            "text": "Držte se tam. Už jedu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "evening",
+        "characters": [
+          {
+            "id": "pavel"
+          },
+          {
+            "id": "stene"
+          }
+        ],
+        "visual_tags": [
+          "carrying puppy",
+          "blanket",
+          "smile",
+          "doorway"
+        ],
+        "scene_en": "in the evening Uncle Pavel brings the puppy wrapped in a blanket into the warm hut",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "pavel",
+            "text": "Bublina je hrdinka. Našla ztracené štěně ze sousední chalupy."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "evening",
+        "characters": [
+          {
+            "id": "sofie"
+          },
+          {
+            "id": "nela"
+          }
+        ],
+        "visual_tags": [
+          "cocoa",
+          "mug",
+          "smile",
+          "blanket"
+        ],
+        "scene_en": "Sofie and Nela drink cocoa wrapped in blankets",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "sofie",
+            "text": "A já už se nebála."
+          },
+          {
+            "kind": "speech",
+            "speaker": "nela",
+            "text": "Trochu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "evening",
+        "characters": [
+          {
+            "id": "bublina"
+          },
+          {
+            "id": "stene"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "sleeping",
+          "dogs",
+          "wood stove",
+          "cuddling"
+        ],
+        "scene_en": "by the wood stove the terrier sleeps and the little puppy curls up next to her",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Štěně si lehne k Bublině. Všichni se usmívají."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "Zzz…"
+          }
+        ],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "world": {
+    "id": "k_parrot",
+    "title": "Kapitán Žako a ztracený poklad",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_toybox",
+    "setting": "post-apocalyptic (gentle)",
+    "characters": [
+      {
+        "id": "klara",
+        "name": "Klára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, red hair, braid, red bandana, pirate, striped shirt, shorts",
+        "desc_en": "Klara, a bold 9-year-old pirate girl with a red bandana and a striped shirt"
+      },
+      {
+        "id": "zako",
+        "name": "Kapitán Žako",
+        "count_tag": null,
+        "tag_prompt": "green parrot, parrot, bird",
+        "desc_en": "Captain Zako, a green parrot"
+      },
+      {
+        "id": "matej",
+        "name": "Matěj",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, blonde hair, short hair, blue t-shirt, sneakers",
+        "desc_en": "Matej, a slightly timid 10-year-old boy with short blonde hair and a blue t-shirt"
+      },
+      {
+        "id": "verca",
+        "name": "Verča",
+        "count_tag": "1girl",
+        "tag_prompt": "young woman, brown hair, ponytail, big hat, whistle, camp leader",
+        "desc_en": "Verca, a practical young camp leader with a big sun hat and a whistle"
+      },
+      {
+        "id": "bonzo",
+        "name": "Bonzo",
+        "count_tag": null,
+        "tag_prompt": "dog, brown dog, lazy, floppy ears",
+        "desc_en": "Bonzo, a lazy friendly brown camp dog"
+      }
+    ],
+    "locations": [
+      {
+        "id": "camp",
+        "tag_prompt": "outdoors, camp, tents, lake, flags, ropes, morning, half-sunken buildings, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A summer camp on the shore of a lake that flooded an old city: tents, ropes, flags, half-sunken towers rising from the calm water."
+      },
+      {
+        "id": "oaks",
+        "tag_prompt": "outdoors, meadow, three oak trees, cracked road, overpass, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A meadow with three huge oak trees grown through a cracked old highway overpass."
+      },
+      {
+        "id": "kitchen",
+        "tag_prompt": "outdoors, camp kitchen, old bus, pot, table, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "The camp kitchen built inside an old rusty bus with its sides open."
+      },
+      {
+        "id": "fire",
+        "tag_prompt": "outdoors, campfire, evening, lake, tents, sunset, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A campfire by the lake at sunset, the drowned skyline glowing on the water."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Kapitán Žako a ztracený poklad",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "camp",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "a summer camp by a lake that flooded an old city, tents and flags, half-sunken towers in the water",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Letní tábor u jezera, které zatopilo staré město."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "camp",
+        "characters": [
+          {
+            "id": "matej"
+          },
+          {
+            "id": "klara"
+          },
+          {
+            "id": "zako"
+          }
+        ],
+        "visual_tags": [
+          "holding map",
+          "old paper",
+          "parrot on shoulder",
+          "excited"
+        ],
+        "scene_en": "Matej holds up an old yellowed map, Klara has a green parrot on her shoulder",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "matej",
+            "text": "Našel jsem mapu! V loďce! Je tam křížek a nápis ‚poklad‘."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Pirátský poklad! Kapitáne Žako, co ty na to?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "camp",
+        "characters": [
+          {
+            "id": "zako"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "parrot",
+          "open beak",
+          "squawking"
+        ],
+        "scene_en": "close-up of the green parrot squawking with its beak wide open",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "zako",
+            "text": "Za třetím dubem! Za třetím dubem!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "camp",
+        "characters": [
+          {
+            "id": "matej"
+          },
+          {
+            "id": "klara"
+          }
+        ],
+        "visual_tags": [
+          "confused",
+          "explaining",
+          "finger raised"
+        ],
+        "scene_en": "Matej scratches his head, Klara explains with a raised finger",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "matej",
+            "text": "Odkud to ví?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Papoušci opakují, co slyší. Někdo to říkal před ním."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "establishing",
+        "location_id": "oaks",
+        "characters": [
+          {
+            "id": "bonzo"
+          }
+        ],
+        "visual_tags": [
+          "three trees",
+          "overpass",
+          "dog lying down"
+        ],
+        "scene_en": "three huge oak trees growing through a cracked old overpass in a meadow, a lazy dog lying in the grass",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Louka u tří dubů."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "oaks",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "matej"
+          }
+        ],
+        "visual_tags": [
+          "digging",
+          "shovel",
+          "counting",
+          "tree"
+        ],
+        "scene_en": "the kids dig with a small spade at the foot of the third oak",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Raz, dva, tři… tady!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "oaks",
+        "characters": [
+          {
+            "id": "matej"
+          }
+        ],
+        "visual_tags": [
+          "holding boot",
+          "old boot",
+          "disappointed",
+          "dirt"
+        ],
+        "scene_en": "Matej holds up a muddy old boot he just dug out",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "matej",
+            "text": "Poklad! Teda… bota."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "oaks",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "zako"
+          }
+        ],
+        "visual_tags": [
+          "parrot on shoulder",
+          "thinking",
+          "hand on chin"
+        ],
+        "scene_en": "Klara thinks hard while the parrot on her shoulder squawks",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "zako",
+            "text": "Sušenky! Sušenky!",
+            "icon": "cookie"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Počkat. Žako pořád opakuje sušenky. To není náhoda."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "verca"
+          },
+          {
+            "id": "klara"
+          },
+          {
+            "id": "matej"
+          }
+        ],
+        "visual_tags": [
+          "stirring pot",
+          "lemonade",
+          "running",
+          "holding map"
+        ],
+        "scene_en": "Verca stirs a big pot of lemonade in the old bus kitchen as the kids run in with the map",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "verca",
+            "text": "Aha, mapu z loňské hry. Někdo ji nechal v loďce."
+          },
+          {
+            "kind": "speech",
+            "speaker": "matej",
+            "text": "Takže žádný poklad?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "verca"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "wink",
+          "big hat"
+        ],
+        "scene_en": "Verca smiles mysteriously",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "verca",
+            "text": "Počkejte tady."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "verca"
+          },
+          {
+            "id": "zako"
+          }
+        ],
+        "visual_tags": [
+          "carrying crate",
+          "watermelon",
+          "cookies",
+          "medals",
+          "parrot"
+        ],
+        "scene_en": "Verca brings a crate with a watermelon, cookies and medals, the parrot flutters excitedly",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Bedna s melounem, sušenkami a medailemi „Hrdinové tábora“."
+          },
+          {
+            "kind": "pet",
+            "speaker": "zako",
+            "text": "Poklad! Poklad!",
+            "icon": "star"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "klara"
+          },
+          {
+            "id": "zako"
+          },
+          {
+            "id": "bonzo"
+          }
+        ],
+        "visual_tags": [
+          "parrot",
+          "dog",
+          "smile",
+          "medal"
+        ],
+        "scene_en": "Klara wearing a medal praises the parrot, the brown dog wags his tail",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Kapitáne, ty jsi nejlepší hledač."
+          },
+          {
+            "kind": "pet",
+            "speaker": "bonzo",
+            "text": "Haf!",
+            "icon": "bone"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "fire",
+        "characters": [
+          {
+            "id": "matej"
+          },
+          {
+            "id": "klara"
+          }
+        ],
+        "visual_tags": [
+          "campfire",
+          "eating watermelon",
+          "sitting",
+          "sunset"
+        ],
+        "scene_en": "the kids eat watermelon by the campfire at sunset",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "matej",
+            "text": "Příště hledáme opravdový poklad."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klara",
+            "text": "Opravdový poklad je, že jsme ho hledali spolu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "fire",
+        "characters": [
+          {
+            "id": "zako"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "parrot",
+          "pirate flag",
+          "birdcage",
+          "campfire"
+        ],
+        "scene_en": "close-up of the parrot on its cage decorated with a tiny pirate flag, firelight",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "zako",
+            "text": "Sušenky! Sušenky!",
+            "icon": "cookie"
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Všichni se smějí."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

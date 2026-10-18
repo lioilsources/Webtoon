@@ -1,0 +1,514 @@
+{
+  "world": {
+    "id": "k_rooftop",
+    "title": "Mrkvička na střeše",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "noobai_flat",
+    "setting": "post-apocalyptic (gentle)",
+    "characters": [
+      {
+        "id": "bara",
+        "name": "Bára",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, short hair, blue baseball cap, green eyes, orange jacket, cargo shorts, carrot in pocket",
+        "desc_en": "Bara, an inventive 10-year-old girl in a blue baseball cap and a patched orange jacket, a carrot sticking out of her pocket"
+      },
+      {
+        "id": "mrkvicka",
+        "name": "Mrkvička",
+        "count_tag": null,
+        "tag_prompt": "white rabbit, dwarf rabbit, small, fluffy",
+        "desc_en": "Mrkvicka, a small fluffy white dwarf rabbit"
+      },
+      {
+        "id": "kuba",
+        "name": "Kuba",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, black hair, curly hair, glasses, green hoodie, patched clothes",
+        "desc_en": "Kuba, a 10-year-old boy with curly black hair, glasses and a patched green hoodie"
+      },
+      {
+        "id": "doubravka",
+        "name": "Paní Doubravka",
+        "count_tag": "1girl",
+        "tag_prompt": "mature female, grey hair, short hair, work overalls, ring of keys, stern",
+        "desc_en": "Mrs. Doubravka, the stern but kind school caretaker in work overalls with a huge ring of keys"
+      },
+      {
+        "id": "ruzena",
+        "name": "Babička Růžena",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, white hair, hair bun, knitting, shawl, basket, smile",
+        "desc_en": "Grandma Ruzena, a smiling old neighbour knitting a scarf, a basket at her side"
+      }
+    ],
+    "locations": [
+      {
+        "id": "garden",
+        "tag_prompt": "outdoors, school garden, vegetable garden, stalls, garlands, spring, day, ruined city, vines, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A school community garden in an overgrown ruined city: vegetable beds in old bathtubs, stalls of salvaged wood, garlands of scrap fabric, spring sunshine."
+      },
+      {
+        "id": "stairs",
+        "tag_prompt": "outdoors, fire escape, rusty stairs, building, vines, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A rusty fire escape climbing the side of an old ivy-covered school building."
+      },
+      {
+        "id": "roof",
+        "tag_prompt": "outdoors, rooftop, water tank, solar panel, chimney, sky, overgrown city, day, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "The school roof with an old water tank, solar panels and a chimney, a green overgrown city skyline all around."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Mrkvička na střeše",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "garden",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "scenery"
+        ],
+        "scene_en": "a cheerful school community garden in an overgrown ruined city, stalls and garlands, spring day",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Školní zahrada v zarostlém městě. Jarní den."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "holding pet carrier",
+          "rabbit in carrier",
+          "proud",
+          "smile"
+        ],
+        "scene_en": "Bara proudly holds a pet carrier with a white rabbit inside",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Tohle je Mrkvička. Nejrychlejší králík ve škole."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "kuba"
+          },
+          {
+            "id": "bara"
+          }
+        ],
+        "visual_tags": [
+          "opening box",
+          "grass",
+          "shocked",
+          "reaching"
+        ],
+        "scene_en": "Kuba starts opening the carrier holding a handful of grass, Bara reaches out in alarm",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kuba",
+            "text": "Tak mu dám trochu trávy…"
+          },
+          {
+            "kind": "shout",
+            "speaker": "bara",
+            "text": "Kubo, neotvírej to takhle!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "running",
+          "spilled paint",
+          "motion lines",
+          "fence"
+        ],
+        "scene_en": "the white rabbit shoots out of the carrier, knocks over a cup of paint and dashes under a fence",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Mrkvička vystřelí z přepravky, převrhne barvy a zmizí za plotem."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "ŠUP!"
+          }
+        ],
+        "gap_after": "small"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "kuba"
+          },
+          {
+            "id": "bara"
+          }
+        ],
+        "visual_tags": [
+          "sweatdrop",
+          "determined",
+          "running"
+        ],
+        "scene_en": "Kuba looks guilty, Bara is already running",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kuba",
+            "text": "Já jsem ho jen chtěl nakrmit!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Tak ho teď musíme chytit!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "stairs",
+        "characters": [
+          {
+            "id": "doubravka"
+          },
+          {
+            "id": "bara"
+          }
+        ],
+        "visual_tags": [
+          "fire escape",
+          "rabbit",
+          "waving keys",
+          "shouting",
+          "running up stairs"
+        ],
+        "scene_en": "the rabbit hops up a rusty fire escape, the caretaker below waves her ring of keys, Bara runs after it",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "doubravka",
+            "text": "Na střechu se nesmí! Ani králíci, ani děti!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Ale on už tam je!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "stairs",
+        "characters": [
+          {
+            "id": "kuba"
+          },
+          {
+            "id": "bara"
+          }
+        ],
+        "visual_tags": [
+          "looking up",
+          "scared",
+          "holding basket",
+          "pointing"
+        ],
+        "scene_en": "Kuba looks up nervously at the roof, Bara hands him a wicker basket",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kuba",
+            "text": "Já tam nahoru nejdu. Tam je vysoko."
+          },
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Kubo, ty budeš držet košík. Já udělám mrkvovou stezku."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "roof",
+        "characters": [
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "ears up",
+          "carrot",
+          "rooftop"
+        ],
+        "scene_en": "close-up of the white rabbit on the roof pricking up its ears at a trail of carrot pieces",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Bára klade kousky mrkve. Mrkvička nastraží uši."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "roof",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "crouching",
+          "holding carrot",
+          "whispering",
+          "rabbit",
+          "chimney"
+        ],
+        "scene_en": "Bara crouches carefully on the roof holding out a carrot towards the rabbit sitting by the chimney",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "Mrkvičko… pojď na mrkev. Mám tu nejlepší."
+          },
+          {
+            "kind": "pet",
+            "speaker": "mrkvicka",
+            "text": "…",
+            "icon": "carrot",
+            "translation": "(cuk cuk nosem)"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "stairs",
+        "characters": [
+          {
+            "id": "kuba"
+          }
+        ],
+        "visual_tags": [
+          "holding bedsheet",
+          "stretching",
+          "nervous",
+          "looking up"
+        ],
+        "scene_en": "down below Kuba stretches out a bedsheet like a safety net, looking up nervously",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kuba",
+            "text": "Já to držím! Ale rychle!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "roof",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "rabbit in basket",
+          "wicker basket",
+          "covering with scarf",
+          "happy"
+        ],
+        "scene_en": "the rabbit jumps into a wicker basket and Bara covers it with a scarf, triumphant",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "bara",
+            "text": "Mám tě!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "stairs",
+        "characters": [
+          {
+            "id": "doubravka"
+          }
+        ],
+        "visual_tags": [
+          "arms crossed",
+          "raised eyebrow",
+          "keys",
+          "looking up"
+        ],
+        "scene_en": "the caretaker stands below with arms crossed and an eyebrow raised",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "doubravka",
+            "text": "Tak. A teď mi vysvětlete, proč máte na střeše králíka."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "rabbit",
+          "medal",
+          "gold medal",
+          "ribbon",
+          "proud"
+        ],
+        "scene_en": "close-up of the white rabbit wearing a big gold medal on a ribbon",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Mrkvička dostane medaili „Nejrychlejší králík“."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "ruzena"
+          },
+          {
+            "id": "kuba"
+          }
+        ],
+        "visual_tags": [
+          "knitting",
+          "sitting on ground",
+          "holding basket",
+          "smile"
+        ],
+        "scene_en": "Grandma Ruzena knits on a bench while Kuba sits on the ground hugging the basket",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ruzena",
+            "text": "Já mu upletu šálu. Bude mu slušet."
+          },
+          {
+            "kind": "speech",
+            "speaker": "kuba",
+            "text": "Já už výšky nemám rád. Ale košík jsem udržel."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "garden",
+        "characters": [
+          {
+            "id": "bara"
+          },
+          {
+            "id": "mrkvicka"
+          }
+        ],
+        "visual_tags": [
+          "laughing",
+          "rabbit",
+          "eating carrot",
+          "innocent"
+        ],
+        "scene_en": "Bara laughs while the rabbit nibbles a carrot looking completely innocent",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "bara",
+            "text": "A Mrkvička už nikdy nebude na střeše. Že ne?"
+          },
+          {
+            "kind": "pet",
+            "speaker": "mrkvicka",
+            "text": "…",
+            "icon": "carrot",
+            "translation": "(tváří se naprosto nevinně)"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}

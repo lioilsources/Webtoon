@@ -1,0 +1,496 @@
+{
+  "world": {
+    "id": "k_creakhouse",
+    "title": "Luna a dům, který vrže",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_schnell_ink",
+    "setting": "post-apocalyptic (gentle)",
+    "characters": [
+      {
+        "id": "ema",
+        "name": "Ema",
+        "count_tag": "1girl",
+        "tag_prompt": "child, black hair, bob cut, yellow raincoat, holding flashlight, basket",
+        "desc_en": "Ema, a curious 10-year-old girl with a black bob and a yellow raincoat, holding a flashlight"
+      },
+      {
+        "id": "luna",
+        "name": "Luna",
+        "count_tag": null,
+        "tag_prompt": "black cat, green eyes",
+        "desc_en": "Luna, a calm black cat with green eyes"
+      },
+      {
+        "id": "filip",
+        "name": "Filip",
+        "count_tag": "1boy",
+        "tag_prompt": "child, male child, brown hair, messy hair, skeleton costume, grin",
+        "desc_en": "Filip, her 11-year-old cousin with messy brown hair in a skeleton costume"
+      },
+      {
+        "id": "vranova",
+        "name": "Paní Vránová",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, grey hair, long hair, shawl, keys, holding flashlight, kind",
+        "desc_en": "Mrs. Vranova, a kind old lady with long grey hair, a shawl and a big ring of keys"
+      }
+    ],
+    "locations": [
+      {
+        "id": "house",
+        "tag_prompt": "outdoors, night, old house, halloween, jack-o'-lantern, pumpkins in tires, abandoned town, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "An old house at the edge of an abandoned overgrown town on Halloween night, carved pumpkins glowing in old car tyres."
+      },
+      {
+        "id": "hall",
+        "tag_prompt": "indoors, night, hallway, stairs, door, shadows, dust, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A dark creaky hallway with stairs and strange shadows on the walls."
+      },
+      {
+        "id": "attic",
+        "tag_prompt": "indoors, attic, dust, boxes, projector, white sheet, night, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A dusty attic full of old boxes and a hand-cranked film projector."
+      },
+      {
+        "id": "kitchen",
+        "tag_prompt": "indoors, kitchen, candles, wood stove, cocoa, warm lighting, night, post-apocalyptic, overgrown ruins, rusty metal, salvaged materials",
+        "desc_en": "A warm kitchen lit by candles and an old wood stove."
+      }
+    ]
+  },
+  "storyboard": {
+    "title": "Luna a dům, který vrže",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "house",
+        "characters": [],
+        "visual_tags": [
+          "no humans"
+        ],
+        "scene_en": "an old house at the edge of an abandoned overgrown town on Halloween night, pumpkins glowing in old tyres",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Halloween na kraji opuštěného města."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small"
+      },
+      {
+        "shot": "wide",
+        "location_id": "house",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "filip"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "walking",
+          "baskets",
+          "flashlight",
+          "cat running",
+          "pointing"
+        ],
+        "scene_en": "Ema and Filip walk with baskets towards the house, the black cat runs ahead, Filip points at a light in a window",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "filip",
+            "text": "Támhle v tom domě straší. Viděl jsem tam světlo."
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "To je dům paní Vránové. A Luna už je uvnitř!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "house",
+        "characters": [
+          {
+            "id": "filip"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "whispering",
+          "nervous",
+          "smirk"
+        ],
+        "scene_en": "Filip whispers nervously, Ema gives him a knowing look",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "filip",
+            "text": "Tak jdeme. Ale ty první."
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Já vím, že se bojíš víc."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "creaking door",
+          "shadows",
+          "flashlight",
+          "cat on stairs"
+        ],
+        "scene_en": "Ema opens a creaking door with her flashlight, strange shadows on the walls, the black cat sits on the stairs",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Luno, pojď sem."
+          }
+        ],
+        "sfx": [
+          {
+            "text": "SKŘÍÍÍP"
+          }
+        ],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "filip"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "jump scare",
+          "boo",
+          "startled",
+          "skeleton costume"
+        ],
+        "scene_en": "Filip jumps out behind Ema shouting boo, Ema startles",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "filip",
+            "text": "Bú!"
+          },
+          {
+            "kind": "shout",
+            "speaker": "ema",
+            "text": "Filipi!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "black cat",
+          "green eyes",
+          "stairs"
+        ],
+        "scene_en": "close-up of the black cat's glowing green eyes on the stairs",
+        "bubbles": [
+          {
+            "kind": "pet",
+            "speaker": "luna",
+            "text": "Mňau.",
+            "icon": "fish"
+          },
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Luna vyběhne po schodech nahoru."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "attic",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "filip"
+          }
+        ],
+        "visual_tags": [
+          "white sheet",
+          "ghost shape",
+          "projector light",
+          "scared",
+          "hiding behind"
+        ],
+        "scene_en": "in the dusty attic a white sheet flickers on the wall like a ghost, Ema points, Filip hides behind her",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Tam… tam něco je!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "filip",
+            "text": "Já… já tam nejdu."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "attic",
+        "characters": [
+          {
+            "id": "vranova"
+          }
+        ],
+        "visual_tags": [
+          "holding flashlight",
+          "doorway",
+          "curious"
+        ],
+        "scene_en": "Mrs. Vranova appears in the doorway with a flashlight",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vranova",
+            "text": "Kdo tady dělá hluk?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Paní Vránová! Tam je strašidlo!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "attic",
+        "characters": [
+          {
+            "id": "vranova"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "switching on light",
+          "projector",
+          "cat",
+          "smile"
+        ],
+        "scene_en": "Mrs. Vranova switches on the light next to an old projector, the black cat beside it",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vranova",
+            "text": "Ale kdeže. To je starý promítač. Luna mi ho zapnula ocasem."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "attic",
+        "characters": [
+          {
+            "id": "filip"
+          },
+          {
+            "id": "ema"
+          }
+        ],
+        "visual_tags": [
+          "projector",
+          "film",
+          "pumpkins on screen",
+          "relieved"
+        ],
+        "scene_en": "the sheet slides down revealing an old film of dancing pumpkins projected on the wall",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Prostěradlo se sesune. Ukáže se starý film s dýněmi."
+          },
+          {
+            "kind": "speech",
+            "speaker": "filip",
+            "text": "Takže žádné strašidlo?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "attic",
+        "characters": [
+          {
+            "id": "vranova"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "gentle",
+          "keys"
+        ],
+        "scene_en": "Mrs. Vranova smiles warmly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "vranova",
+            "text": "Jen staré kino. Pojďte na kakao."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "ema"
+          },
+          {
+            "id": "vranova"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "sitting",
+          "cocoa",
+          "mug",
+          "cat on lap",
+          "candles"
+        ],
+        "scene_en": "in the warm kitchen Ema drinks cocoa with the black cat on her lap, Mrs. Vranova smiles",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "ema",
+            "text": "Já se bála, ale Luna mě vedla."
+          },
+          {
+            "kind": "speech",
+            "speaker": "vranova",
+            "text": "Kočky vidí ve tmě líp než my."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "filip"
+          },
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "cocoa",
+          "grin",
+          "cat",
+          "licking"
+        ],
+        "scene_en": "Filip holds a mug of cocoa, the cat licks Ema's hand",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "filip",
+            "text": "Příště si vezmu baterku taky."
+          },
+          {
+            "kind": "pet",
+            "speaker": "luna",
+            "text": "Mňau.",
+            "icon": "heart",
+            "translation": "(olízne Eminu ruku)"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      },
+      {
+        "shot": "close-up",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "luna"
+          }
+        ],
+        "visual_tags": [
+          "no humans",
+          "black cat",
+          "tiny witch hat",
+          "content",
+          "candlelight"
+        ],
+        "scene_en": "close-up of the black cat wearing a tiny witch hat, looking pleased",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Ema nasadí Luně malou čarodějnickou čepici."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium"
+      }
+    ]
+  }
+}
