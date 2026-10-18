@@ -1,0 +1,444 @@
+{
+  "world": {
+    "id": "k_chococastle",
+    "title": "Strašidelný čokoládový zámek",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_schnell_linocut",
+    "characters": [
+      {
+        "id": "klarinka",
+        "name": "Klárinka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, brown hair, bob cut, detective, trench coat, magnifying glass, flashlight",
+        "desc_en": "Klarinka, an 8-year-old girl detective with a brown bob in a long coat full of tools, holding a magnifying glass"
+      },
+      {
+        "id": "cmuchalek",
+        "name": "Čmuchálek",
+        "count_tag": null,
+        "tag_prompt": "black cat, one white paw",
+        "desc_en": "Cmuchalek, a mysterious black cat with one white paw"
+      },
+      {
+        "id": "baron",
+        "name": "Baron Popletal",
+        "count_tag": null,
+        "tag_prompt": "ghost, translucent, baron, old clothes, wig",
+        "desc_en": "Baron Popletal, a clumsy translucent ghost in an old baron's coat and wig"
+      },
+      {
+        "id": "tekleria",
+        "name": "Paní Teklérie",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, witch, tall, glasses, dark cloak",
+        "desc_en": "Mrs. Tekleria, a tall old witch in glasses and a dark cloak who sells chocolate"
+      }
+    ],
+    "locations": [
+      {
+        "id": "gate",
+        "tag_prompt": "outdoors, night, castle gate, fog, jack-o'-lantern, bare trees, halloween",
+        "desc_en": "A cracked castle gate on a foggy Halloween evening, pumpkin lanterns, bare black trees."
+      },
+      {
+        "id": "hall",
+        "tag_prompt": "indoors, castle hall, broken candelabra, cobwebs, portrait, shutters",
+        "desc_en": "A great castle hall with broken candelabras, cobwebs and a huge portrait."
+      },
+      {
+        "id": "kitchen",
+        "tag_prompt": "indoors, castle kitchen, cauldron, chocolate wrappers, flashlight",
+        "desc_en": "The castle kitchen, a cauldron full of chocolate wrappers."
+      },
+      {
+        "id": "party",
+        "tag_prompt": "indoors, castle, halloween party, pumpkins, chocolate, children in costumes, night",
+        "desc_en": "The castle decorated with pumpkins for a Halloween party, a table piled with chocolate."
+      }
+    ],
+    "remake_of": "25_cokoladovy_zamek"
+  },
+  "storyboard": {
+    "title": "Strašidelný čokoládový zámek",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "gate",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "castle"
+        ],
+        "scene_en": "a cracked castle gate on a foggy Halloween evening with pumpkin lanterns and bare black trees",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Zámecká brána. Halloweenský večer."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small",
+        "seed": 7000
+      },
+      {
+        "shot": "wide",
+        "location_id": "gate",
+        "characters": [
+          {
+            "id": "klarinka"
+          },
+          {
+            "id": "cmuchalek"
+          }
+        ],
+        "visual_tags": [
+          "magnifying glass",
+          "detective",
+          "cat sniffing pumpkin"
+        ],
+        "scene_en": "Klarinka puts on her magnifying glass in front of the gate, the black cat sniffs a pumpkin",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "Případ číslo 13: zmizelá čokoláda celého městečka. Stopa vede sem. Do zámku, kam nikdo nevkročil sto let."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7100
+      },
+      {
+        "shot": "close-up",
+        "location_id": "gate",
+        "characters": [
+          {
+            "id": "cmuchalek"
+          }
+        ],
+        "visual_tags": [
+          "black cat",
+          "mysterious",
+          "glowing eyes"
+        ],
+        "scene_en": "close-up of the black cat looking mysterious",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "cmuchalek",
+            "text": "Něco ti povím, detektivko. Ten zámek straší. Ale straší ho duch, který… jak to říct… který se straší i sám."
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "To znamená co?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "cmuchalek",
+            "text": "Znamená to, že když se v tmě ozve zaúpění, je to buď on… nebo lednička."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7200
+      },
+      {
+        "shot": "wide",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "klarinka"
+          },
+          {
+            "id": "cmuchalek"
+          },
+          {
+            "id": "baron"
+          }
+        ],
+        "visual_tags": [
+          "flashlight",
+          "ghost",
+          "stuck in shutter",
+          "portrait",
+          "boo"
+        ],
+        "scene_en": "in the dusty hall a translucent ghost pops out of a huge portrait with his head stuck in a window shutter, Klarinka shines her flashlight on him",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "baron",
+            "text": "BUUU!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "Aha. Vy jste ten duch. Barone… vy jste zaseknutý v okenici?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7300
+      },
+      {
+        "shot": "medium",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "baron"
+          }
+        ],
+        "visual_tags": [
+          "ghost",
+          "embarrassed",
+          "stuck",
+          "shutter"
+        ],
+        "scene_en": "the ghost baron, stuck in the shutter, looks embarrassed",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "baron",
+            "text": "To je dlouhá historie. Strašil jsem, utíkal jsem, zapomněl jsem se otočit. Pomů… pomů… pomůžete mi?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7400
+      },
+      {
+        "shot": "close-up",
+        "location_id": "hall",
+        "characters": [
+          {
+            "id": "cmuchalek"
+          }
+        ],
+        "visual_tags": [
+          "black cat",
+          "deadpan"
+        ],
+        "scene_en": "the black cat looks at the viewer deadpan",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "cmuchalek",
+            "text": "Vidíš, Klárko. Sliboval jsem ti kvalitní zločin, a místo toho máme záchranné práce."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7500
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "klarinka"
+          },
+          {
+            "id": "baron"
+          }
+        ],
+        "visual_tags": [
+          "cauldron",
+          "chocolate wrappers",
+          "flashlight",
+          "pointing"
+        ],
+        "scene_en": "Klarinka finds a cauldron full of chocolate wrappers and points at the ghost",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "A tady je čokoláda! Barone, sníst čokoládu celého města, to je… ten zločin, který hledám!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "baron",
+            "text": "Já jsem ji nejedl! Já jsem ji jen… ukradl. Protože jsem strašil sto let a nikdo se nebál. Tak jsem si řekl — když už straším, alespoň ukradnu čokoládu, aby sem někdo přišel."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7600
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "baron"
+          }
+        ],
+        "visual_tags": [
+          "ghost",
+          "sad",
+          "lonely"
+        ],
+        "scene_en": "the ghost hangs his head sadly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "Takže vy jste se… NUDIL?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "baron",
+            "text": "Já jsem osamělý. Sto let jsem strašil a nikdo se mě nebál. Chtěl jsem, aby sem někdo přišel. I kdyby mě chtěl jen chytit."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7700
+      },
+      {
+        "shot": "wide",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "tekleria"
+          },
+          {
+            "id": "baron"
+          },
+          {
+            "id": "klarinka"
+          }
+        ],
+        "visual_tags": [
+          "tall witch",
+          "doorway",
+          "ghost hiding behind girl"
+        ],
+        "scene_en": "a tall witch in glasses enters, the ghost tries to hide behind the little detective",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tekleria",
+            "text": "Tak tady je moje čokoláda! Barone, to vy?"
+          },
+          {
+            "kind": "speech",
+            "speaker": "baron",
+            "text": "Vrátím vám ji… jen prosím… neříkejte nikomu, že jsem ji neuměl sníst."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "extra_en": "Absolutely no speech bubbles, no lettering, no words anywhere in the image.",
+        "seed": 20800
+      },
+      {
+        "shot": "medium",
+        "location_id": "kitchen",
+        "characters": [
+          {
+            "id": "tekleria"
+          }
+        ],
+        "visual_tags": [
+          "witch",
+          "taking off glasses",
+          "smile"
+        ],
+        "scene_en": "the witch takes off her glasses and smiles kindly",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "tekleria",
+            "text": "Barone, já jsem čarodějnice. Vyrábím čokoládu s kouzlem. Ta se nesní sama od sebe… ta se musí PODĚLIT."
+          },
+          {
+            "kind": "speech",
+            "speaker": "cmuchalek",
+            "text": "Kouzelná čokoláda, která se musí podělit. To je dneska to nejlepší pravidlo, co jsem slyšel."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7900
+      },
+      {
+        "shot": "wide",
+        "location_id": "party",
+        "characters": [
+          {
+            "id": "baron"
+          },
+          {
+            "id": "tekleria"
+          },
+          {
+            "id": "klarinka"
+          },
+          {
+            "id": "cmuchalek"
+          }
+        ],
+        "visual_tags": [
+          "halloween party",
+          "children in costumes",
+          "ghost telling stories",
+          "chocolate"
+        ],
+        "scene_en": "a Halloween party in the castle: the ghost happily tells stories to children in costumes, the witch hands out chocolate",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "baron",
+            "text": "A pak jsem se strašil sám! Sto let!"
+          },
+          {
+            "kind": "shout",
+            "speaker": null,
+            "text": "Více! Více!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8000
+      },
+      {
+        "shot": "medium",
+        "location_id": "party",
+        "characters": [
+          {
+            "id": "klarinka"
+          },
+          {
+            "id": "cmuchalek"
+          }
+        ],
+        "visual_tags": [
+          "detective hat",
+          "chocolate spider",
+          "smile",
+          "black cat"
+        ],
+        "scene_en": "Klarinka wearing a detective hat with a chocolate spider whispers to the cat",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "klarinka",
+            "text": "Případ číslo 13 uzavřen. Zločinec nebyl zlý. Byl sám."
+          },
+          {
+            "kind": "speech",
+            "speaker": "cmuchalek",
+            "text": "To už nejsou detektivní závěry. Tohle je moudrost."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "extra_en": "Absolutely no speech bubbles, no lettering, no words anywhere in the image.",
+        "seed": 21100
+      }
+    ]
+  }
+}

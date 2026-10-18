@@ -773,6 +773,134 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
+    },
+    "flux_linocut": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's book linocut print, bold carved black lines, three flat ink colors, paper texture. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_gouache": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Children's book gouache painting, matte opaque paint, visible brush strokes, warm mid-century palette. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_felt": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Needle-felted wool figures in a handmade felt diorama, fuzzy fibers, soft studio light, stop-motion look. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_vintage": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "1950s vintage circus poster lithograph, limited palette, aged paper, bold shapes. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_folk": {
+      "graph": "flux",
+      "unet": "flux1-dev.safetensors",
+      "steps": 20,
+      "guidance": 3.5,
+      "style_text": "Scandinavian folk art illustration, flat decorative shapes, ornamental patterns, cozy colors. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "flux_schnell_linocut": {
+      "graph": "flux",
+      "unet": "flux1-schnell.safetensors",
+      "steps": 4,
+      "guidance": 3.5,
+      "style_text": "Children's book linocut print, bold carved black lines, three flat ink colors, paper texture. No speech bubbles, no lettering, no text anywhere.",
+      "loras": []
+    },
+    "animagine_ukiyoe": {
+      "checkpoint": "animagine-xl-40-opt.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "ukiyo-e",
+        "woodblock print",
+        "traditional media"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "high score",
+        "great score",
+        "absurdres"
+      ],
+      "quality_neg": [
+        "lowres",
+        "bad anatomy",
+        "bad hands",
+        "text",
+        "error",
+        "missing finger",
+        "extra digits",
+        "fewer digits",
+        "cropped",
+        "worst quality",
+        "low quality",
+        "jpeg artifacts",
+        "watermark",
+        "signature",
+        "book",
+        "open book",
+        "holding book"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "noobai_chibi": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "chibi",
+        "cute",
+        "flat color",
+        "thick outlines"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "very awa"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "furry",
+        "anthro",
+        "animal ears",
+        "kemonomimi",
+        "animal nose"
+      ],
+      "loras": [
+        {
+          "name": "NoobAI/NoobAI-XL_Detailer.safetensors",
+          "strength": 0.6,
+          "trigger": null
+        }
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
     }
   },
   "always_negative": [

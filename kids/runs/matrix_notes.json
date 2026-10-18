@@ -9,7 +9,8 @@
     "Establishing/wide shots with SDXL drop the characters or the giant; a medium shot with the creature tags weighted brings them back.",
     "A style word that is also an object gets drawn literally: Animagine 'storybook' put books in hands.",
     "Realistic checkpoints (RealVis, CyberRealistic, Juggernaut Lightning) ignore drawn styles; claymation only took with weights (1.3–1.4) and a 'miniature diorama' framing.",
-    "FLUX-dev takes some media from the prompt alone (paper cut-out collage, chalk pastel, ink graphic novel, toy diorama with LoRA) but not others (pixel art, stained glass, two-tone risograph)."
+    "FLUX-dev takes some media from the prompt alone (paper cut-out collage, chalk pastel, ink graphic novel, toy diorama with LoRA) but not others (pixel art, stained glass, two-tone risograph).",
+    "Same style on FLUX dev vs schnell is not always dev > schnell: schnell took linocut better (sharper carved lines) but signs/letters the image more often."
   ],
   "presets": {
     "clean_webtoon": {
@@ -325,6 +326,80 @@
       "stories": [],
       "good": "-",
       "bad": "-",
+      "fixes": "-"
+    },
+    "flux_gouache": {
+      "verdict": "A",
+      "style": "gouache book (FLUX dev)",
+      "stories": [
+        "36"
+      ],
+      "good": "girl, fawn, cat and pies right on the test panel",
+      "bad": "hen missing, her straw hat landed on the fawn",
+      "fixes": "-"
+    },
+    "flux_felt": {
+      "verdict": "A",
+      "style": "needle-felted wool diorama (FLUX dev)",
+      "stories": [
+        "37"
+      ],
+      "good": "style fully taken; octopus and ghost-in-portrait both right",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "flux_vintage": {
+      "verdict": "B",
+      "style": "1950s circus poster (FLUX dev)",
+      "stories": [
+        "38"
+      ],
+      "good": "acrobat + chihuahua in red jacket right",
+      "bad": "poster look only mild",
+      "fixes": "-"
+    },
+    "flux_folk": {
+      "verdict": "B",
+      "style": "Scandinavian folk art (FLUX dev)",
+      "stories": [
+        "39"
+      ],
+      "good": "style strongly taken",
+      "bad": "ice giant missing; fox tail leaked onto the girl",
+      "fixes": "-"
+    },
+    "flux_linocut": {
+      "verdict": "C",
+      "style": "linocut (FLUX dev)",
+      "stories": [],
+      "good": "carved lines partly",
+      "bad": "cat drawn as a spotted deer-dog",
+      "fixes": "-"
+    },
+    "flux_schnell_linocut": {
+      "verdict": "B",
+      "style": "linocut (FLUX schnell)",
+      "stories": [
+        "40"
+      ],
+      "good": "took linocut better than dev did",
+      "bad": "signed the picture ('© Klarinka')",
+      "fixes": "extra_en no lettering"
+    },
+    "animagine_ukiyoe": {
+      "verdict": "D",
+      "style": "ukiyo-e (Animagine)",
+      "stories": [],
+      "good": "woodblock feel",
+      "bad": "tiny girl next to a giant fox, the ice giant missing",
+      "fixes": "-"
+    },
+    "noobai_chibi": {
+      "verdict": "D",
+      "style": "chibi (NoobAI + Detailer)",
+      "stories": [],
+      "good": "-",
+      "bad": "empty purple scene, the shark and octopus missing",
       "fixes": "-"
     }
   }

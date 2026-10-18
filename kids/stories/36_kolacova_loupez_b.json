@@ -1,0 +1,512 @@
+{
+  "world": {
+    "id": "k_pieheist",
+    "title": "Koláčová loupež na vesnici",
+    "audience": "kids",
+    "language": "cs",
+    "style_id": "flux_gouache",
+    "characters": [
+      {
+        "id": "amalka",
+        "name": "Amálka",
+        "count_tag": "1girl",
+        "tag_prompt": "child, freckles, braids, red hair, blue dress, smile",
+        "desc_en": "Amalka, a cheerful freckled 7-year-old girl with two red braids and a blue dress"
+      },
+      {
+        "id": "zofka",
+        "name": "Žofka",
+        "count_tag": null,
+        "tag_prompt": "hen, speckled hen, straw hat",
+        "desc_en": "Zofka, a vain speckled hen wearing a tiny straw hat"
+      },
+      {
+        "id": "marjanka",
+        "name": "Bába Marjánka",
+        "count_tag": "1girl",
+        "tag_prompt": "old woman, plump, white headscarf, apron, flour",
+        "desc_en": "Granny Marjanka, a plump kind village baker in a white headscarf and apron"
+      },
+      {
+        "id": "kdepak",
+        "name": "Kdepak",
+        "count_tag": null,
+        "tag_prompt": "orange cat, fat cat, sleepy",
+        "desc_en": "Kdepak, a lazy fat orange village cat"
+      },
+      {
+        "id": "skocik",
+        "name": "Skočík",
+        "count_tag": null,
+        "tag_prompt": "fawn, young deer, spots",
+        "desc_en": "Skocik, a small shy spotted fawn"
+      }
+    ],
+    "locations": [
+      {
+        "id": "yard",
+        "tag_prompt": "outdoors, farmyard, barn, long table, pies, fence, summer, sunlight",
+        "desc_en": "A sunny Czech village farmyard in front of a barn, a long table with three trays of apricot pies."
+      },
+      {
+        "id": "field",
+        "tag_prompt": "outdoors, golden wheat field, path, hill, afternoon",
+        "desc_en": "A golden wheat field behind the village in the late afternoon breeze."
+      },
+      {
+        "id": "shed",
+        "tag_prompt": "indoors, barn, hay, evening, warm light",
+        "desc_en": "Inside a small barn on a pile of hay in the evening."
+      }
+    ],
+    "remake_of": "21_kolacova_loupez"
+  },
+  "storyboard": {
+    "title": "Koláčová loupež na vesnici",
+    "panels": [
+      {
+        "shot": "establishing",
+        "location_id": "yard",
+        "characters": [],
+        "visual_tags": [
+          "no humans",
+          "pies",
+          "table"
+        ],
+        "scene_en": "a sunny Czech village farmyard, a long table with three trays of apricot pies in front of a barn",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Slunce praží. Na stole chladnou tři plechy meruňkových koláčů."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "small",
+        "seed": 7000
+      },
+      {
+        "shot": "wide",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          }
+        ],
+        "visual_tags": [
+          "leaning over fence",
+          "drooling",
+          "hen",
+          "sign"
+        ],
+        "scene_en": "Amalka leans over the fence staring at the pies with shining eyes, the speckled hen in a straw hat stands next to her by a sign",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "amalka",
+            "text": "Žofko… vidíš ty koláče? Tři plechy. TŘI, Žofko!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "Vidím, vidím. A taky vidím tabuli: NEDOTÝKAT SE — CHLADNOU."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7100
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "amalka"
+          }
+        ],
+        "visual_tags": [
+          "hen",
+          "adjusting hat",
+          "grin",
+          "pointing"
+        ],
+        "scene_en": "the hen adjusts her straw hat, Amalka grins mischievously",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "No dobře, NEDOTÝKAT SE. To chladnou stejně zapomněla napsat."
+          },
+          {
+            "kind": "speech",
+            "speaker": "amalka",
+            "text": "To je jasné znamení! Když někdo napíše NEDOTÝKAT SE, myslí tím: AMÁLKO, JEN TO ZKUS!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7200
+      },
+      {
+        "shot": "close-up",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "one eye open",
+          "sunbathing"
+        ],
+        "scene_en": "close-up of the fat orange cat lying in the sun opening one eye",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kdepak",
+            "text": "Já za vás neručím. Ale když budete kousat potichu, já neuslyším."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7300
+      },
+      {
+        "shot": "wide",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "skocik"
+          },
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "crawling on table",
+          "fawn",
+          "bumping table",
+          "pies flying",
+          "cat"
+        ],
+        "scene_en": "Amalka crawls on her belly along the table, a young fawn hops past and bumps the table, three pies slide off and land on the back of the sleeping cat",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "Kolem hopsne mladý srnec — a strčí do stolu!"
+          }
+        ],
+        "sfx": [
+          {
+            "text": "BUM!"
+          }
+        ],
+        "gap_after": "small",
+        "seed": 7400
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "pies on back",
+          "angry",
+          "indignant"
+        ],
+        "scene_en": "the orange cat sits up furious with three apricot pies stuck on his back",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "kdepak",
+            "text": "Já jsem KOČKA, ne podnos!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7500
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          }
+        ],
+        "visual_tags": [
+          "on table",
+          "shocked",
+          "hen",
+          "dramatic"
+        ],
+        "scene_en": "Amalka and the hen on the table look at each other dramatically",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "amalka",
+            "text": "…Žofko. Někdo ukradl koláče. To nejsme my. To je… LOUPEŽ!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "My jsme na stole, Kdepak má koláče na hřbetu a srnec utíká přes pole. Kdo z nich je zloděj?"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7600
+      },
+      {
+        "shot": "close-up",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "deadpan",
+          "crumbs"
+        ],
+        "scene_en": "close-up of the cat with crumbs on his fur, deadpan",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kdepak",
+            "text": "Databáze podezřelých je malá."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7700
+      },
+      {
+        "shot": "wide",
+        "location_id": "field",
+        "characters": [
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "magnifying glass",
+          "hoof prints",
+          "crumbs",
+          "walking",
+          "wheat field"
+        ],
+        "scene_en": "in the golden wheat field Amalka follows hoof prints with a magnifying glass, the hen beside her, the cat trailing behind",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "amalka",
+            "text": "Stopa kopýtková… a vedle ní drobečky! Zločinec jedl za pochodu!"
+          },
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "Nemohla bys takhle mluvit o srnci? Toho známe. Jmenuje se Skočík a bojí se vlastního mouchačení."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7800
+      },
+      {
+        "shot": "wide",
+        "location_id": "field",
+        "characters": [
+          {
+            "id": "marjanka"
+          }
+        ],
+        "visual_tags": [
+          "shouting",
+          "hands on hips",
+          "hill",
+          "apron"
+        ],
+        "scene_en": "on top of the hill the old baker shouts angrily into the distance",
+        "bubbles": [
+          {
+            "kind": "shout",
+            "speaker": "marjanka",
+            "text": "Kdo mi okradl koláče?! Já na ně čekala celou rodinu!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 7900
+      },
+      {
+        "shot": "medium",
+        "location_id": "shed",
+        "characters": [
+          {
+            "id": "skocik"
+          }
+        ],
+        "visual_tags": [
+          "fawn",
+          "eating",
+          "hay",
+          "shy",
+          "crumbs"
+        ],
+        "scene_en": "inside the barn the little fawn sits on the hay shyly nibbling the last pie",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "skocik",
+            "text": "Já… já jsem ten koláč jen chtěl očichat! A pak… pak jsem ho měl na jazyku!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8000
+      },
+      {
+        "shot": "medium",
+        "location_id": "shed",
+        "characters": [
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          },
+          {
+            "id": "kdepak"
+          }
+        ],
+        "visual_tags": [
+          "doorway",
+          "soft smile",
+          "hen",
+          "cat writing on paw"
+        ],
+        "scene_en": "Amalka and the hen peek in through the door, the cat pretends to take notes on his paw",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "amalka",
+            "text": "Chudáčku malý. Víš co, Žofko? Loupež nebyla. Byla to nouze."
+          },
+          {
+            "kind": "speech",
+            "speaker": "kdepak",
+            "text": "Bez komentáře."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8100
+      },
+      {
+        "shot": "wide",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "marjanka"
+          },
+          {
+            "id": "skocik"
+          },
+          {
+            "id": "amalka"
+          },
+          {
+            "id": "zofka"
+          }
+        ],
+        "visual_tags": [
+          "table full of pies",
+          "sign",
+          "flour in hair",
+          "fawn",
+          "hen",
+          "happy"
+        ],
+        "scene_en": "next morning the table is full of pies with a sign for everyone who is hungry, the baker, the fawn covered in crumbs, Amalka with flour in her braids and the hen with a cherry on her hat",
+        "bubbles": [
+          {
+            "kind": "narration",
+            "speaker": null,
+            "text": "„PRO VŠECHNY, KDO MAJÍ HLAD.“"
+          },
+          {
+            "kind": "speech",
+            "speaker": "marjanka",
+            "text": "Další spolu upečeme, děti. A ty, Kdepaku, tys nikdy nepomáhal? Ty jsi jen ležel!"
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8200
+      },
+      {
+        "shot": "medium",
+        "location_id": "yard",
+        "characters": [
+          {
+            "id": "kdepak"
+          },
+          {
+            "id": "zofka"
+          }
+        ],
+        "visual_tags": [
+          "cat",
+          "holding pie",
+          "hen",
+          "wink"
+        ],
+        "scene_en": "the cat holds a pie in his paws, the hen winks at the viewer",
+        "bubbles": [
+          {
+            "kind": "speech",
+            "speaker": "kdepak",
+            "text": "Dohlížel jsem. To je taky práce."
+          },
+          {
+            "kind": "speech",
+            "speaker": "zofka",
+            "text": "Někdo musí hlídat i hlídače."
+          }
+        ],
+        "sfx": [],
+        "gap_after": "medium",
+        "seed": 8300
+      }
+    ]
+  }
+}

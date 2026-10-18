@@ -16,6 +16,7 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 - A style word that is also an object gets drawn literally: Animagine 'storybook' put books in hands.
 - Realistic checkpoints (RealVis, CyberRealistic, Juggernaut Lightning) ignore drawn styles; claymation only took with weights (1.3–1.4) and a 'miniature diorama' framing.
 - FLUX-dev takes some media from the prompt alone (paper cut-out collage, chalk pastel, ink graphic novel, toy diorama with LoRA) but not others (pixel art, stained glass, two-tone risograph).
+- Same style on FLUX dev vs schnell is not always dev > schnell: schnell took linocut better (sharper carved lines) but signs/letters the image more often.
 
 ## Presety
 
@@ -23,27 +24,34 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 |---|---|---|---|---|---|---|---|---|
 | A | `flux_chalk` | flux1-dev | — | chalk pastel (FLUX dev) | — | 0 / 0 / 2 | — | 43 |
 | A | `flux_dev_ink` | flux1-dev | — | graphic novel ink (FLUX dev) | 30 | 13 / 0 / 1 | 0.00 | 32 |
+| A | `flux_felt` | flux1-dev | — | needle-felted wool diorama (FLUX dev) | — | 0 / 0 / 2 | — | 56 |
+| A | `flux_gouache` | flux1-dev | — | gouache book (FLUX dev) | — | 0 / 0 / 2 | — | 56 |
 | A | `flux_kawaii` | flux1-dev | Cute-3d-Kawaii 0.8 | kawaii 3D (FLUX dev + Cute-3d-Kawaii) | 28 | 10 / 0 / 0 | 0.00 | 31 |
 | A | `flux_manga` | flux1-dev | — | manga webtoon (FLUX dev, no LoRA) | 14, 22 | 21 / 0 / 0 | 0.00 | 93 |
-| A | `flux_papercut` | flux1-dev | — | paper cut-out collage (FLUX dev) | — | 0 / 0 / 1 | — | 244 |
+| A | `flux_papercut` | flux1-dev | — | paper cut-out collage (FLUX dev) | 31 | 11 / 0 / 1 | 0.00 | 36 |
 | A | `flux_pixar` | flux1-dev | Canopus-Pixar-3D-FluxDev-LoRA 0.8 | 3D animated film (FLUX dev + Canopus Pixar) | 12, 21 | 21 / 0 / 0 | 0.00 | 77 |
 | A | `flux_toybox` | flux1-dev | Toy_Box_Flux_v2_renderartist 0.9 | toy diorama (FLUX dev + Toy Box) | 17, 29 | 24 / 0 / 1 | 0.00 | 67 |
 | B | `animagine_storybook` | animagine-xl-40-opt | — | painterly cinematic light (Animagine XL 4) | 07, 09, 10, 23 | 78 / 6 / 0 | 0.08 | 45 |
 | B | `atomix_space` | atomixPonyAnimeXL_v30 | Starship_Hulls_-_Pony_r1 0.6 | anime sci-fi (Atomix Pony + Starship Hulls) | 13 | 8 / 0 / 0 | 0.00 | — |
 | B | `clean_webtoon` | noobai-xl-eps11 | — | flat clean webtoon (NoobAI + ningen mame/ciloranko) | 01, 02, 03, 04, 05, 27 | 50 / 3 / 0 | 0.06 | 18 |
 | B | `cyberreal_clay` | CyberRealisticXL_v10 | — | claymation diorama (CyberRealisticXL) | 20 | 12 / 6 / 6 | 0.50 | 46 |
+| B | `flux_folk` | flux1-dev | — | Scandinavian folk art (FLUX dev) | — | 0 / 0 / 1 | — | 78 |
 | B | `flux_riso` | flux1-dev | — | risograph (FLUX dev) | — | 0 / 0 / 1 | — | 29 |
 | B | `flux_schnell_ink` | flux1-schnell | — | graphic novel ink (FLUX schnell, 4 steps) | 18, 25 | 26 / 15 / 1 | 0.58 | 43 |
+| B | `flux_schnell_linocut` | flux1-schnell | — | linocut (FLUX schnell) | — | 0 / 0 / 1 | — | 47 |
+| B | `flux_vintage` | flux1-dev | — | 1950s circus poster (FLUX dev) | — | 0 / 0 / 1 | — | 76 |
 | B | `illustrious_storybook` | Illustrious-XL-v2.0 | — | watercolour picture book (Illustrious XL 2.0) | 06, 08, 24 | 54 / 9 / 0 | 0.17 | 43 |
 | B | `noobai_flat` | noobai-xl-eps11 | MeMaXL_Flat_Anime_Style_-_NoobIllustriousPonyXL 0.8 | flat ligne claire (NoobAI + MeMaXL Flat) | 16, 26 | 26 / 6 / 1 | 0.23 | 34 |
 | C | `flux_dev_pixel` | flux1-dev | — | 'pixel art' prompt (FLUX dev) | — | 0 / 0 / 1 | — | 47 |
-| C | `flux_stainedglass` | flux1-dev | — | 'stained glass' prompt (FLUX dev) | — | 0 / 0 / 1 | — | 49 |
+| C | `flux_linocut` | flux1-dev | — | linocut (FLUX dev) | — | 0 / 0 / 1 | — | 35 |
+| C | `flux_stainedglass` | flux1-dev | — | 'stained glass' prompt (FLUX dev) | 32 | 7 / 0 / 1 | 0.00 | 56 |
 | C | `juggernaut_book` | Juggernaut-XL_v9_RunDiffusionPhoto_v2 | — | gouache book (Juggernaut) | — | 0 / 0 / 0 | — | — |
 | C | `juggernaut_clay` | Juggernaut-XL_v9_RunDiffusionPhoto_v2 | — | claymation (Juggernaut) | — | 0 / 0 / 2 | — | 20 |
 | C | `juggernaut_pixar` | Juggernaut-XL_v9_RunDiffusionPhoto_v2 | PixarXL 0.8 | 3D Pixar (Juggernaut XL + PixarXL) | 11 | 7 / 0 / 0 | 0.00 | — |
 | C | `pony_pixar` | ponyDiffusionV6XL_v6StartWithThisOne | Pixar_Pony 0.8 | 3D (Pony V6 + Pixar Pony) | 15 | 8 / 0 / 0 | 0.00 | — |
 | C | `realvis_matte` | RealVisXL_V5.0 | — | photoreal family film (RealVisXL V5) | 19 | 13 / 3 / 1 | 0.23 | 47 |
 | D | `animagine_nouveau` | animagine-xl-40-opt | — | Art Nouveau (Animagine) | — | 0 / 0 / 1 | — | 22 |
+| D | `animagine_ukiyoe` | animagine-xl-40-opt | — | ukiyo-e (Animagine) | — | 0 / 0 / 1 | — | 44 |
 | D | `autismmix_anime` | AutismMix_pony | — | anime (AutismMix Pony) | — | 0 / 0 / 0 | — | — |
 | D | `cyberreal_matte` | CyberRealisticXL_v10 | — | matte painting (CyberRealistic) | — | 0 / 0 / 1 | — | 20 |
 | D | `flux_schnell_pixel` | flux1-schnell | — | pixel art (FLUX schnell) | — | 0 / 0 / 1 | — | 60 |
@@ -51,6 +59,7 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 | D | `hassaku_storybook` | HassakuXL_Illustrious_v3.4 | — | watercolour (Hassaku XL) | — | 0 / 0 / 0 | — | — |
 | D | `illustrious_pixar` | Illustrious-XL-v2.0 | Pixar_Illustrious 0.8 | 3D cartoon (Illustrious + Pixar Illustrious) | — | 0 / 0 / 2 | — | 20 |
 | D | `juggernaut_lightning_comic` | Juggernaut-XL-Lightning_4Steps | — | retro comic (Juggernaut Lightning) | — | 0 / 0 / 1 | — | 13 |
+| D | `noobai_chibi` | noobai-xl-eps11 | NoobAI-XL_Detailer 0.6 | chibi (NoobAI + Detailer) | — | 0 / 0 / 1 | — | 46 |
 | D | `realvis_clay` | RealVisXL_V5.0 | — | claymation (RealVis) | — | 0 / 0 / 3 | — | 20 |
 | - | `clean_webtoon_noartist` | noobai-xl-eps11 | — | unused | — | 0 / 0 / 0 | — | — |
 | - | `hassaku_soft` | HassakuXL_Illustrious_v3.4 | — | unused | — | 0 / 0 / 0 | — | — |
@@ -65,6 +74,16 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 ### `flux_dev_ink` — A
 - **funguje:** no bubbles, no fixes
 - **chyby:** -
+- **opravy:** -
+
+### `flux_felt` — A
+- **funguje:** style fully taken; octopus and ghost-in-portrait both right
+- **chyby:** -
+- **opravy:** -
+
+### `flux_gouache` — A
+- **funguje:** girl, fawn, cat and pies right on the test panel
+- **chyby:** hen missing, her straw hat landed on the fawn
 - **opravy:** -
 
 ### `flux_kawaii` — A
@@ -112,6 +131,11 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 - **chyby:** drifts back to photo (a real-looking girl), a herd instead of one goat
 - **opravy:** (claymation:1.4), (miniature diorama set:1.3); scene_en 'one small goat'
 
+### `flux_folk` — B
+- **funguje:** style strongly taken
+- **chyby:** ice giant missing; fox tail leaked onto the girl
+- **opravy:** -
+
 ### `flux_riso` — B
 - **funguje:** grain and good scene
 - **chyby:** two-tone ink not taken
@@ -121,6 +145,16 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 - **funguje:** ~2× faster than dev, style as good
 - **chyby:** draws speech bubbles / watermarks (4 of 26 panels)
 - **opravy:** scene_en without speech verbs; extra_en 'Absolutely no speech bubbles, no lettering'
+
+### `flux_schnell_linocut` — B
+- **funguje:** took linocut better than dev did
+- **chyby:** signed the picture ('© Klarinka')
+- **opravy:** extra_en no lettering
+
+### `flux_vintage` — B
+- **funguje:** acrobat + chihuahua in red jacket right
+- **chyby:** poster look only mild
+- **opravy:** -
 
 ### `illustrious_storybook` — B
 - **funguje:** the most 'book-like' look, soft and consistent
@@ -136,6 +170,11 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 - **funguje:** great scene
 - **chyby:** pixel art not taken — plain cartoon
 - **opravy:** a pixel-art LoRA would be needed
+
+### `flux_linocut` — C
+- **funguje:** carved lines partly
+- **chyby:** cat drawn as a spotted deer-dog
+- **opravy:** -
 
 ### `flux_stainedglass` — C
 - **funguje:** good storytelling (girl + fox kit + notebook)
@@ -172,6 +211,11 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 - **chyby:** test panel lost the fox and the action (cotton candy instead of notebook)
 - **opravy:** -
 
+### `animagine_ukiyoe` — D
+- **funguje:** woodblock feel
+- **chyby:** tiny girl next to a giant fox, the ice giant missing
+- **opravy:** -
+
 ### `autismmix_anime` — D
 - **funguje:** -
 - **chyby:** cat-girl even with anti-anthro tags
@@ -205,6 +249,11 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 ### `juggernaut_lightning_comic` — D
 - **funguje:** fast (13 s)
 - **chyby:** ignores the style, photoreal child
+- **opravy:** -
+
+### `noobai_chibi` — D
+- **funguje:** -
+- **chyby:** empty purple scene, the shark and octopus missing
 - **opravy:** -
 
 ### `realvis_clay` — D
@@ -251,3 +300,8 @@ Výhrady k číslům: příběhy 01–15 jsou v registru zpětně (`reconstructe
 | 33_modra_zprava_b | `flux_riso` | 28_modra_zprava |
 | 34_cukrova_vata_b | `flux_dev_pixel` | 29_cukrova_vata |
 | 35_duch_a_kocky_b | `flux_chalk` | 30_duch_a_kocky |
+| 36_kolacova_loupez_b | `flux_gouache` | 21_kolacova_loupez |
+| 37_ponorne_mesto_b | `flux_felt` | 22_ponorne_mesto |
+| 38_cirkus_b | `flux_vintage` | 23_cirkus |
+| 39_ledova_zahradka_b | `flux_folk` | 24_ledova_zahradka |
+| 40_cokoladovy_zamek_b | `flux_schnell_linocut` | 25_cokoladovy_zamek |
