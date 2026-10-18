@@ -10,7 +10,8 @@
     "A style word that is also an object gets drawn literally: Animagine 'storybook' put books in hands.",
     "Realistic checkpoints (RealVis, CyberRealistic, Juggernaut Lightning) ignore drawn styles; claymation only took with weights (1.3–1.4) and a 'miniature diorama' framing.",
     "FLUX-dev takes some media from the prompt alone (paper cut-out collage, chalk pastel, ink graphic novel, toy diorama with LoRA) but not others (pixel art, stained glass, two-tone risograph).",
-    "Same style on FLUX dev vs schnell is not always dev > schnell: schnell took linocut better (sharper carved lines) but signs/letters the image more often."
+    "Same style on FLUX dev vs schnell is not always dev > schnell: schnell took linocut better (sharper carved lines) but signs/letters the image more often.",
+    "A/B set 6 → set 7 (same storyboards and seeds): FLUX dev rendered all 60 panels right first time; the SDXL versions of 26/27 needed rerolls for animal ears and extra rabbits."
   ],
   "presets": {
     "clean_webtoon": {
@@ -219,13 +220,13 @@
       "fixes": "-"
     },
     "flux_dev_pixel": {
-      "verdict": "C",
+      "verdict": "B",
       "style": "'pixel art' prompt (FLUX dev)",
       "stories": [
         "34"
       ],
-      "good": "great scene",
-      "bad": "pixel art not taken — plain cartoon",
+      "good": "whole story right on the first render; frog, parrot, robot consistent",
+      "bad": "pixel art not taken — painted cartoon",
       "fixes": "a pixel-art LoRA would be needed"
     },
     "flux_papercut": {
@@ -234,7 +235,7 @@
       "stories": [
         "31"
       ],
-      "good": "style clearly taken from the prompt alone",
+      "good": "whole story right on the first render; paper-collage look strongest on establishing shots, softer on close-ups",
       "bad": "-",
       "fixes": "-"
     },
@@ -244,7 +245,7 @@
       "stories": [
         "35"
       ],
-      "good": "soft texture, ghost + cat right on first try",
+      "good": "13 panels right on the first render; ghost, cat, bat, janitor consistent",
       "bad": "-",
       "fixes": "-"
     },
@@ -254,18 +255,18 @@
       "stories": [
         "33"
       ],
-      "good": "grain and good scene",
+      "good": "whole story right on the first render; turtle, octopus, hedgehog consistent",
       "bad": "two-tone ink not taken",
       "fixes": "-"
     },
     "flux_stainedglass": {
-      "verdict": "C",
+      "verdict": "B",
       "style": "'stained glass' prompt (FLUX dev)",
       "stories": [
         "32"
       ],
-      "good": "good storytelling (girl + fox kit + notebook)",
-      "bad": "no stained glass look; fox tail behind the girl",
+      "good": "whole story right on the first render, lantern-lit fair looks great",
+      "bad": "no stained-glass look; reads as a painted night scene",
       "fixes": "-"
     },
     "realvis_matte": {
