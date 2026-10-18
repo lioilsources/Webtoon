@@ -1,0 +1,331 @@
+{
+  "_about": "Memory matrix of image-model experiments for kids' webtoon strips. One entry per preset in data/styles.json. Qualitative notes from reviewing every panel by eye; numbers (renders, rerolls, speed) are computed from kids/runs/jobs.jsonl by kids/tools/matrix.py. Verdict scale: A = use as default, B = good with known fixes, C = only for specific shots, D = avoid.",
+  "lessons": [
+    "Multi-character scenes (2–4 characters + animals) are where models differ most; single portraits are easy for all.",
+    "FLUX draws speech bubbles with gibberish when scene_en contains a verb of speaking (whispers, says, asks) — describe what is seen, not what is said; schnell does it far more often than dev.",
+    "SDXL (CLIP, ~77 tokens): character descriptions after the scene get merged into whoever the scene names first; put who first (who_first).",
+    "Booru anime checkpoints leak animal features onto humans (rabbit/fox/cat ears and tails) when an animal is in the same panel; negate 'animal ears, kemonomimi, fox tail' per panel.",
+    "Pony family draws animals as anthro characters unless tagged 'feral, quadruped' with 'anthro, humanoid, standing on two legs' negated.",
+    "Establishing/wide shots with SDXL drop the characters or the giant; a medium shot with the creature tags weighted brings them back.",
+    "A style word that is also an object gets drawn literally: Animagine 'storybook' put books in hands.",
+    "Realistic checkpoints (RealVis, CyberRealistic, Juggernaut Lightning) ignore drawn styles; claymation only took with weights (1.3–1.4) and a 'miniature diorama' framing.",
+    "FLUX-dev takes some media from the prompt alone (paper cut-out collage, chalk pastel, ink graphic novel, toy diorama with LoRA) but not others (pixel art, stained glass, two-tone risograph)."
+  ],
+  "presets": {
+    "clean_webtoon": {
+      "verdict": "B",
+      "style": "flat clean webtoon (NoobAI + ningen mame/ciloranko)",
+      "stories": [
+        "01–05",
+        "27"
+      ],
+      "good": "consistent cute characters, pastel, fast (~14 s)",
+      "bad": "close-ups of animals turn abstract; duplicates a second character; fox kit's ears leak to the girl",
+      "fixes": "negative_extra for duplicates and animal ears; medium shot instead of close-up for animals"
+    },
+    "illustrious_storybook": {
+      "verdict": "B",
+      "style": "watercolour picture book (Illustrious XL 2.0)",
+      "stories": [
+        "06",
+        "08",
+        "24"
+      ],
+      "good": "the most 'book-like' look, soft and consistent",
+      "bad": "duplicate rabbits; gardener drawn as a child; ice giant missing in wide shots; black-ear weight leaked onto a hat",
+      "fixes": "weight the creature in a medium shot; '(old man:1.3)'; avoid strong attribute weights"
+    },
+    "animagine_storybook": {
+      "verdict": "B",
+      "style": "painterly cinematic light (Animagine XL 4)",
+      "stories": [
+        "07",
+        "09",
+        "10",
+        "23"
+      ],
+      "good": "best night, lanterns and moonlight among SDXL",
+      "bad": "'storybook' → books in hands (fixed); swaps hair colours between two kids; lost the chihuahua and the acrobat once",
+      "fixes": "aesthetic 'illustration, painterly' and negate books; medium shots for small animals"
+    },
+    "animagine_nouveau": {
+      "verdict": "D",
+      "style": "Art Nouveau (Animagine)",
+      "stories": [],
+      "good": "pretty ornament",
+      "bad": "test panel lost the fox and the action (cotton candy instead of notebook)",
+      "fixes": "-"
+    },
+    "hassaku_storybook": {
+      "verdict": "D",
+      "style": "watercolour (Hassaku XL)",
+      "stories": [],
+      "good": "-",
+      "bad": "put bunny ears on the girl in the first test",
+      "fixes": "-"
+    },
+    "hassaku_pixar": {
+      "verdict": "D",
+      "style": "3D cartoon (Hassaku + Pixar Illustrious)",
+      "stories": [],
+      "good": "-",
+      "bad": "turned the rabbit anthro",
+      "fixes": "-"
+    },
+    "illustrious_pixar": {
+      "verdict": "D",
+      "style": "3D cartoon (Illustrious + Pixar Illustrious)",
+      "stories": [],
+      "good": "-",
+      "bad": "chaotic tiny characters underwater, empty classroom instead of ghost + cat",
+      "fixes": "-"
+    },
+    "noobai_flat": {
+      "verdict": "B",
+      "style": "flat ligne claire (NoobAI + MeMaXL Flat)",
+      "stories": [
+        "16",
+        "26"
+      ],
+      "good": "strong, clean graphic look; overgrown ruins look great",
+      "bad": "rabbit ears on the girl, extra rabbits",
+      "fixes": "negate animal ears / multiple rabbits per panel"
+    },
+    "juggernaut_pixar": {
+      "verdict": "C",
+      "style": "3D Pixar (Juggernaut XL + PixarXL)",
+      "stories": [
+        "11"
+      ],
+      "good": "the most polished single characters",
+      "bad": "merges two characters (pug wears the girl's dress); third character never appears",
+      "fixes": "who_first; best of 3; keep to one subject per panel"
+    },
+    "juggernaut_book": {
+      "verdict": "C",
+      "style": "gouache book (Juggernaut)",
+      "stories": [],
+      "good": "two subjects slightly better than with LoRA",
+      "bad": "still bleeds clothes onto the dog",
+      "fixes": "who_first"
+    },
+    "juggernaut_lightning_comic": {
+      "verdict": "D",
+      "style": "retro comic (Juggernaut Lightning)",
+      "stories": [],
+      "good": "fast (13 s)",
+      "bad": "ignores the style, photoreal child",
+      "fixes": "-"
+    },
+    "pony_pixar": {
+      "verdict": "C",
+      "style": "3D (Pony V6 + Pixar Pony)",
+      "stories": [
+        "15"
+      ],
+      "good": "girl in costume looks good",
+      "bad": "never drew the pumpkin king next to the girl; kitten turned into a masked girl/raccoon",
+      "fixes": "feral/quadruped + anti-anthro; creature only in solo shots"
+    },
+    "atomix_space": {
+      "verdict": "B",
+      "style": "anime sci-fi (Atomix Pony + Starship Hulls)",
+      "stories": [
+        "13"
+      ],
+      "good": "excellent humans (Viktorie, captain); LoRA shows in backgrounds",
+      "bad": "cat → cat-girl/anthro, blue-skinned spacewalk",
+      "fixes": "feral, quadruped; negate anthro, humanoid, cat ears"
+    },
+    "autismmix_anime": {
+      "verdict": "D",
+      "style": "anime (AutismMix Pony)",
+      "stories": [],
+      "good": "-",
+      "bad": "cat-girl even with anti-anthro tags",
+      "fixes": "-"
+    },
+    "flux_pixar": {
+      "verdict": "A",
+      "style": "3D animated film (FLUX dev + Canopus Pixar)",
+      "stories": [
+        "12",
+        "21"
+      ],
+      "good": "holds 3–4 characters incl. animals; no fixes needed",
+      "bad": "slow (40–70 s)",
+      "fixes": "-"
+    },
+    "flux_manga": {
+      "verdict": "A",
+      "style": "manga webtoon (FLUX dev, no LoRA)",
+      "stories": [
+        "14",
+        "22"
+      ],
+      "good": "zero fixes in two stories; ghost, owl, clock, shark, mermaid all right",
+      "bad": "slow",
+      "fixes": "-"
+    },
+    "flux_kawaii": {
+      "verdict": "A",
+      "style": "kawaii 3D (FLUX dev + Cute-3d-Kawaii)",
+      "stories": [
+        "28"
+      ],
+      "good": "consistent, cute, no fixes",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "flux_toybox": {
+      "verdict": "A",
+      "style": "toy diorama (FLUX dev + Toy Box)",
+      "stories": [
+        "17",
+        "29"
+      ],
+      "good": "the most consistent characters of all; tilt-shift toy look",
+      "bad": "slowest (~65 s)",
+      "fixes": "-"
+    },
+    "flux_dev_ink": {
+      "verdict": "A",
+      "style": "graphic novel ink (FLUX dev)",
+      "stories": [
+        "30"
+      ],
+      "good": "no bubbles, no fixes",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "flux_schnell_ink": {
+      "verdict": "B",
+      "style": "graphic novel ink (FLUX schnell, 4 steps)",
+      "stories": [
+        "18",
+        "25"
+      ],
+      "good": "~2× faster than dev, style as good",
+      "bad": "draws speech bubbles / watermarks (4 of 26 panels)",
+      "fixes": "scene_en without speech verbs; extra_en 'Absolutely no speech bubbles, no lettering'"
+    },
+    "flux_schnell_pixel": {
+      "verdict": "D",
+      "style": "pixel art (FLUX schnell)",
+      "stories": [],
+      "good": "-",
+      "bad": "no pixel art; watermark text",
+      "fixes": "-"
+    },
+    "flux_dev_pixel": {
+      "verdict": "C",
+      "style": "'pixel art' prompt (FLUX dev)",
+      "stories": [
+        "34"
+      ],
+      "good": "great scene",
+      "bad": "pixel art not taken — plain cartoon",
+      "fixes": "a pixel-art LoRA would be needed"
+    },
+    "flux_papercut": {
+      "verdict": "A",
+      "style": "paper cut-out collage (FLUX dev)",
+      "stories": [
+        "31"
+      ],
+      "good": "style clearly taken from the prompt alone",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "flux_chalk": {
+      "verdict": "A",
+      "style": "chalk pastel (FLUX dev)",
+      "stories": [
+        "35"
+      ],
+      "good": "soft texture, ghost + cat right on first try",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "flux_riso": {
+      "verdict": "B",
+      "style": "risograph (FLUX dev)",
+      "stories": [
+        "33"
+      ],
+      "good": "grain and good scene",
+      "bad": "two-tone ink not taken",
+      "fixes": "-"
+    },
+    "flux_stainedglass": {
+      "verdict": "C",
+      "style": "'stained glass' prompt (FLUX dev)",
+      "stories": [
+        "32"
+      ],
+      "good": "good storytelling (girl + fox kit + notebook)",
+      "bad": "no stained glass look; fox tail behind the girl",
+      "fixes": "-"
+    },
+    "realvis_matte": {
+      "verdict": "C",
+      "style": "photoreal family film (RealVisXL V5)",
+      "stories": [
+        "19"
+      ],
+      "good": "beautiful snow and light",
+      "bad": "ignores painted styles; wrong dog breed once",
+      "fixes": "describe the breed in scene_en, negate wrong breeds"
+    },
+    "cyberreal_matte": {
+      "verdict": "D",
+      "style": "matte painting (CyberRealistic)",
+      "stories": [],
+      "good": "-",
+      "bad": "photoreal, style ignored",
+      "fixes": "-"
+    },
+    "cyberreal_clay": {
+      "verdict": "B",
+      "style": "claymation diorama (CyberRealisticXL)",
+      "stories": [
+        "20"
+      ],
+      "good": "plasticine figures with fingerprints once weighted",
+      "bad": "drifts back to photo (a real-looking girl), a herd instead of one goat",
+      "fixes": "(claymation:1.4), (miniature diorama set:1.3); scene_en 'one small goat'"
+    },
+    "realvis_clay": {
+      "verdict": "D",
+      "style": "claymation (RealVis)",
+      "stories": [],
+      "good": "-",
+      "bad": "photoreal even with weights",
+      "fixes": "-"
+    },
+    "juggernaut_clay": {
+      "verdict": "C",
+      "style": "claymation (Juggernaut)",
+      "stories": [],
+      "good": "close-up OK",
+      "bad": "wide shots photoreal",
+      "fixes": "-"
+    },
+    "hassaku_soft": {
+      "verdict": "-",
+      "style": "unused",
+      "stories": [],
+      "good": "-",
+      "bad": "-",
+      "fixes": "-"
+    },
+    "clean_webtoon_noartist": {
+      "verdict": "-",
+      "style": "unused",
+      "stories": [],
+      "good": "-",
+      "bad": "-",
+      "fixes": "-"
+    }
+  }
+}
