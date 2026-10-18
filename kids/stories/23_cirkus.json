@@ -99,7 +99,7 @@
         "gap_after": "medium"
       },
       {
-        "shot": "close-up",
+        "shot": "medium",
         "location_id": "ring",
         "characters": [
           {
@@ -110,7 +110,11 @@
           "chihuahua",
           "barking",
           "red jacket",
-          "looking up"
+          "looking up",
+          "no humans",
+          "(chihuahua:1.3)",
+          "small dog",
+          "full body"
         ],
         "scene_en": "close-up of the chihuahua barking up at her",
         "bubbles": [
@@ -123,7 +127,11 @@
           }
         ],
         "sfx": [],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "human face",
+          "close-up face"
+        ]
       },
       {
         "shot": "medium",
@@ -355,7 +363,10 @@
           "spin",
           "chihuahua on tiny bicycle",
           "spotlight",
-          "crowd cheering"
+          "crowd cheering",
+          "(1girl:1.2)",
+          "(tightrope:1.3)",
+          "acrobat in spotlight"
         ],
         "scene_en": "Terka spins and leaps on the tightrope under the spotlight while the chihuahua rides a tiny bicycle below whistling",
         "bubbles": [
@@ -370,7 +381,10 @@
             "text": "BUM BUM"
           }
         ],
-        "gap_after": "medium"
+        "gap_after": "medium",
+        "negative_extra": [
+          "carousel"
+        ]
       },
       {
         "shot": "medium",
