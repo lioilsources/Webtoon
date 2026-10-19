@@ -1,0 +1,86 @@
+{
+  "id": "w_rd_10_jakarta",
+  "title": "Jakarta, angličtina za deště",
+  "synopsis": "Přístavní dělník Bram se učí anglicky z knihy z tržiště, lékařka Maya ho učí.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_port",
+      "l_cafe",
+      "l_quay"
+    ]
+  },
+  "characters": [
+    {
+      "id": "bram",
+      "name": "Bram",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Indonesian dock worker aged 29, short black hair",
+      "base": "mature male, asian, tan skin, athletic, short hair, black hair",
+      "outfits": {
+        "default": "work jacket, grey t-shirt"
+      },
+      "photo": "an athletic Indonesian dock worker aged 29, short black hair",
+      "tag_prompt": "mature male, asian, tan skin, athletic, short hair, black hair, work jacket, grey t-shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Indonesian doctor aged 27, long hair, glasses, white coat over a floral dress",
+      "base": "adult, asian, tan skin, curvy, wide hips, small breasts, long hair, black hair, glasses",
+      "outfits": {
+        "default": "white coat, floral dress",
+        "dress": "floral dress"
+      },
+      "photo": "a petite curvy Indonesian doctor aged 27, long hair, glasses, white coat over a floral dress",
+      "tag_prompt": "adult, asian, tan skin, curvy, wide hips, small breasts, long hair, black hair, glasses, white coat, floral dress",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_port",
+      "name": "Přístav",
+      "description": "Přístav",
+      "tag_prompt": "outdoors, port, shipping containers, shelter, heavy rain, morning, jakarta",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, small cafe, rain on window, textbook, coffee cup",
+      "mood": ""
+    },
+    {
+      "id": "l_quay",
+      "name": "Nábřeží",
+      "description": "Nábřeží",
+      "tag_prompt": "outdoors, waterfront, night after rain, city lights, bay, containers on horizon",
+      "mood": ""
+    }
+  ]
+}

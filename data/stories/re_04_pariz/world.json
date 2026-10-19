@@ -1,0 +1,85 @@
+{
+  "id": "w_re_04_pariz",
+  "title": "Tiše v Paříži",
+  "synopsis": "Tichá Mei Lin ze Šanghaje a knihkupec Henri z Rue Mouffetard.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rain",
+      "l_books",
+      "l_seine"
+    ]
+  },
+  "characters": [
+    {
+      "id": "meilin",
+      "name": "Mei Lin",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Chinese woman aged 31, waist-length straight black hair, delicate features",
+      "base": "adult, asian, slender, long hair, very long hair, black hair, straight hair, delicate features",
+      "outfits": {
+        "default": "white shirt, black trousers, minimalist"
+      },
+      "photo": "a slender Chinese woman aged 31, waist-length straight black hair, delicate features",
+      "tag_prompt": "adult, asian, slender, long hair, very long hair, black hair, straight hair, delicate features, white shirt, black trousers, minimalist",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "henri",
+      "name": "Henri",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a French bookseller aged 34, glasses, tousled brown hair, knitted sweater",
+      "base": "mature male, glasses, messy hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "knit sweater, beige sweater"
+      },
+      "photo": "a French bookseller aged 34, glasses, tousled brown hair, knitted sweater",
+      "tag_prompt": "mature male, glasses, messy hair, brown hair, brown eyes, knit sweater, beige sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rain",
+      "name": "Rue Mouffetard",
+      "description": "Rue Mouffetard",
+      "tag_prompt": "outdoors, paris, rain, bookstore front, awning, cobblestones",
+      "mood": ""
+    },
+    {
+      "id": "l_books",
+      "name": "Knihkupectví",
+      "description": "Knihkupectví",
+      "tag_prompt": "indoors, bookstore, bookshelves, dust in light, warm light, old books",
+      "mood": ""
+    },
+    {
+      "id": "l_seine",
+      "name": "Seina",
+      "description": "Seina",
+      "tag_prompt": "outdoors, seine, riverbank, bench, sunset, croissant, paris",
+      "mood": ""
+    }
+  ]
+}

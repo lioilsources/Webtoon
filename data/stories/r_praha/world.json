@@ -1,0 +1,96 @@
+{
+  "id": "w_r_praha",
+  "title": "Praha – Muž, který nevěřil na lásku",
+  "synopsis": "Nina, fotografka, a Adam, automechanik, který se umí obléknout.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_garage",
+      "l_bridge",
+      "l_restaurant",
+      "l_night"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nina",
+      "name": "Nina",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Vietnamese-Czech woman aged 32, short black bob hair, bright smile",
+      "base": "adult, asian, short hair, black hair, bob cut, brown eyes, bright smile",
+      "outfits": {
+        "default": "black turtleneck, wide pants, white sneakers",
+        "black_dress": "black dress, simple dress"
+      },
+      "photo": "a petite Vietnamese-Czech woman aged 32, short black bob hair, bright smile",
+      "tag_prompt": "adult, asian, short hair, black hair, bob cut, brown eyes, bright smile, black turtleneck, wide pants, white sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "adam",
+      "name": "Adam",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall strong Czech man aged 38, short brown hair, stubble",
+      "base": "mature male, tall, muscular, brown hair, short hair, stubble, brown eyes",
+      "outfits": {
+        "default": "blue overalls, white t-shirt, grease stains",
+        "walk": "black leather jacket, black t-shirt, jeans",
+        "jacket": "dark blazer, white shirt"
+      },
+      "photo": "a tall strong Czech man aged 38, short brown hair, stubble",
+      "tag_prompt": "mature male, tall, muscular, brown hair, short hair, stubble, brown eyes, blue overalls, white t-shirt, grease stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_garage",
+      "name": "Autoservis",
+      "description": "Autoservis",
+      "tag_prompt": "indoors, auto repair shop, garage, car, open hood, tools, daylight",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, statues, prague castle, old town, sunset",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, elegant restaurant, candle, evening, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_night",
+      "name": "Noční most",
+      "description": "Noční most",
+      "tag_prompt": "outdoors, charles bridge, night, street lamps, prague, city lights, river",
+      "mood": ""
+    }
+  ]
+}

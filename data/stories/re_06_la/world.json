@@ -1,0 +1,88 @@
+{
+  "id": "w_re_06_la",
+  "title": "Účetní a Pacifik",
+  "synopsis": "Účetní Tomáš z Brna přijde v kravatě na pláž v Santa Monice, surfařka Kayla mu chytí mapu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_surf",
+      "l_pier"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tomas",
+      "name": "Tomáš",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender Czech accountant aged 28, glasses, neatly ironed shirt",
+      "base": "mature male, slender, glasses, short hair, brown hair",
+      "outfits": {
+        "default": "white shirt, necktie, dress pants",
+        "surf": "rash guard, board shorts, wet hair",
+        "evening": "white shirt, loosened necktie, rolled up sleeves"
+      },
+      "photo": "a slender Czech accountant aged 28, glasses, neatly ironed shirt",
+      "tag_prompt": "mature male, slender, glasses, short hair, brown hair, white shirt, necktie, dress pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kayla",
+      "name": "Kayla",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a sun-tanned Californian surfer aged 27, sun-streaked blond hair, laughing",
+      "base": "adult, tan skin, blonde hair, streaked hair, long hair, smile",
+      "outfits": {
+        "default": "rash guard, board shorts",
+        "evening": "denim jacket, sundress"
+      },
+      "photo": "a sun-tanned Californian surfer aged 27, sun-streaked blond hair, laughing",
+      "tag_prompt": "adult, tan skin, blonde hair, streaked hair, long hair, smile, rash guard, board shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Santa Monica",
+      "description": "Santa Monica",
+      "tag_prompt": "outdoors, santa monica, beach, pier, ocean, waves, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_surf",
+      "name": "Vlny",
+      "description": "Vlny",
+      "tag_prompt": "outdoors, ocean, waves, surfboard, sunset, orange sky",
+      "mood": ""
+    },
+    {
+      "id": "l_pier",
+      "name": "Promenáda",
+      "description": "Promenáda",
+      "tag_prompt": "outdoors, santa monica pier, ferris wheel, night, carnival lights",
+      "mood": ""
+    }
+  ]
+}

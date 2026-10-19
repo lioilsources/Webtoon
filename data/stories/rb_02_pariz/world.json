@@ -1,0 +1,95 @@
+{
+  "id": "w_rb_02_pariz",
+  "title": "Paříž – Vysoká blondýnka",
+  "synopsis": "Emma z Londýna si připadá jako věž, Luc hledá cestu k Notre-Dame.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_seine",
+      "l_cafe",
+      "l_bridge",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "emma",
+      "name": "Emma",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender Nordic-looking woman aged 28, long blond hair, pale skin, elegant grey coat",
+      "base": "adult, tall female, slender, long hair, blonde hair, blue eyes, pale skin",
+      "outfits": {
+        "default": "elegant grey coat, scarf",
+        "dinner": "navy dress, long sleeves"
+      },
+      "photo": "a tall slender Nordic-looking woman aged 28, long blond hair, pale skin, elegant grey coat",
+      "tag_prompt": "adult, tall female, slender, long hair, blonde hair, blue eyes, pale skin, elegant grey coat, scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luc",
+      "name": "Luc",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic French man aged 35, short chestnut hair, leather jacket and jeans",
+      "base": "mature male, athletic, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "leather jacket, white t-shirt, jeans",
+        "dinner": "leather jacket, white shirt"
+      },
+      "photo": "an athletic French man aged 35, short chestnut hair, leather jacket and jeans",
+      "tag_prompt": "mature male, athletic, short hair, brown hair, brown eyes, leather jacket, white t-shirt, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_seine",
+      "name": "Nábřeží Seiny",
+      "description": "Nábřeží Seiny",
+      "tag_prompt": "outdoors, seine, river, quay, paris, stone wall, overcast",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "outdoors, parisian cafe, small round table, coffee cup, awning, paris street",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Pod mostem",
+      "description": "Pod mostem",
+      "tag_prompt": "outdoors, under bridge, seine, night, lamps, reflections on water",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace s výhledem",
+      "description": "Restaurace s výhledem",
+      "tag_prompt": "indoors, restaurant, window, eiffel tower, night, city lights, candle",
+      "mood": ""
+    }
+  ]
+}

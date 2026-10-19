@@ -1,0 +1,252 @@
+{
+  "title": "Boxerův deník",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "punching bag",
+        "boxing",
+        "sweat"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUM! BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "standing in doorway",
+        "holding notebook",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Arjun Mehta? Vím, že jste se rozhodl nemluvit. Proto jsem přišla mluvit první.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "stops punching",
+        "turning around",
+        "wary"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Novinářky mluví. Boxeři drží stráž.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "slight smile",
+        "holding diary"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Vstával jste sedmkrát. Váš deník jste nechal v knihovně v Bombaji. Špatně skrývaný, výborně psaný.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_canal",
+      "characters": [
+        {
+          "id": "arjun",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "embarrassed",
+        "blush",
+        "hand on neck"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "To bylo soukromé. I to o ‚ní‘.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_canal",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "string lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "O ní jste psal osmnáct stran. Nejstatečnější a nejsmutnější čtení mého roku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_canal",
+      "characters": [
+        {
+          "id": "arjun",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "earnest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Psal jsem o ženě, která existuje jen v hlavě. A pak jste vešla s mým deníkem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "arjun",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "holding new diary",
+        "writing",
+        "dusk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Deník jedna: ‚Záznamy o ní.‘ Deník dva: ‚Záznamy s ní.‘ Rozdíl je celý život.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "arjun",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "looking at diary together",
+        "skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "První záznam?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Dnes jsem prohrál rány, ale vyhrál večer. Vstal jsem poosmé.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "arjun",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "dusk",
+        "skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "To bude titul.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

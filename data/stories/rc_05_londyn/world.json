@@ -1,0 +1,95 @@
+{
+  "id": "w_rc_05_londyn",
+  "title": "Londýnský déšť",
+  "synopsis": "Kurátorka Mei bez deštníku a boxer Marcus.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gym",
+      "l_cafe",
+      "l_park",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mei",
+      "name": "Mei",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Chinese-Singaporean woman aged 27, sleek black bob, dark trench coat",
+      "base": "adult, asian, slender, small breasts, black hair, bob cut, dark eyes",
+      "outfits": {
+        "default": "dark trench coat",
+        "evening": "dark trench coat, colorful scarf"
+      },
+      "photo": "a slender Chinese-Singaporean woman aged 27, sleek black bob, dark trench coat",
+      "tag_prompt": "adult, asian, slender, small breasts, black hair, bob cut, dark eyes, dark trench coat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Black British boxer aged 31, shaved head, hoodie and sports jacket, calm and kind",
+      "base": "mature male, dark-skinned male, dark skin, athletic, bald, brown eyes",
+      "outfits": {
+        "default": "hoodie, sports jacket",
+        "evening": "dress shirt"
+      },
+      "photo": "an athletic Black British boxer aged 31, shaved head, hoodie and sports jacket, calm and kind",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, athletic, bald, brown eyes, hoodie, sports jacket",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gym",
+      "name": "Před boxernou",
+      "description": "Před boxernou",
+      "tag_prompt": "outdoors, london street, boxing gym entrance, rain, puddles, brick wall",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, cafe, wet coats, hot chocolate, window, rain",
+      "mood": ""
+    },
+    {
+      "id": "l_park",
+      "name": "Hyde Park",
+      "description": "Hyde Park",
+      "tag_prompt": "outdoors, hyde park, wet grass, trees, squirrel, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, candle, night, warm light",
+      "mood": ""
+    }
+  ]
+}

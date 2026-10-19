@@ -1,0 +1,94 @@
+{
+  "id": "w_rb_05_londyn",
+  "title": "Londýn – Tichá krása",
+  "synopsis": "Mei z Jakarty si myslí, že si jí nikdo nevšimne, Oliver upustí dokumenty.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_park",
+      "l_cafe",
+      "l_thames",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mei",
+      "name": "Mei",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Asian woman aged 29, long straight black hair, trench coat",
+      "base": "adult, asian, slender, long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "trench coat, high heels",
+        "dinner": "black dress, trench coat"
+      },
+      "photo": "a slender Asian woman aged 29, long straight black hair, trench coat",
+      "tag_prompt": "adult, asian, slender, long hair, straight hair, black hair, brown eyes, trench coat, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an elegant English man aged 36, light blond hair, glasses, tailored suit",
+      "base": "mature male, blonde hair, short hair, glasses, elegant",
+      "outfits": {
+        "default": "dark suit, white shirt, tie"
+      },
+      "photo": "an elegant English man aged 36, light blond hair, glasses, tailored suit",
+      "tag_prompt": "mature male, blonde hair, short hair, glasses, elegant, dark suit, white shirt, tie",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_park",
+      "name": "Hyde Park",
+      "description": "Hyde Park",
+      "tag_prompt": "outdoors, hyde park, autumn leaves, park bench, london, overcast",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, cafe, window, rain on window, coffee cup, london",
+      "mood": ""
+    },
+    {
+      "id": "l_thames",
+      "name": "Temže",
+      "description": "Temže",
+      "tag_prompt": "outdoors, thames, riverside, evening, big ben, street lamps",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace v Soho",
+      "description": "Restaurace v Soho",
+      "tag_prompt": "indoors, restaurant, soho, night, candle, warm light",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "title": "Paříž, polévka a odvaha",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone by window",
+        "writing",
+        "coffee cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Montmartre, zima.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "etienne"
+        }
+      ],
+      "visual_tags": [
+        "placing soup bowl on table",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Já jsem si objednala jen kávu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "etienne",
+          "text": "Vím. Ale píšete už dvě hodiny a nejíte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "holding notebook",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Právě jste dostal do recenze hvězdičku.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "etienne",
+          "text": "Připište, že polévka je zdarma pro každého, kdo se tváří smutně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "placing book on counter",
+        "evening"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O týden později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "chloe",
+          "text": "Tu jste zapomněl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "etienne"
+        }
+      ],
+      "visual_tags": [
+        "sitting at table",
+        "looking at viewer",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "etienne",
+          "text": "Já nic nezapomněl. Čekal jsem, jestli se vrátíte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "etienne"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting across table",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "etienne",
+          "text": "A ta recenze je dobrá?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "chloe",
+          "text": "Nejlepší, co jsem kdy napsala.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stairs",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "etienne",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking up stairs",
+        "fog",
+        "breath",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Bála jsem se. Že kdybych měla ráda, musela bych přestat psát.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "etienne",
+          "text": "Psát jinak. Psát jako někdo, kdo má rád.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stairs",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "etienne",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "standing on step",
+        "closed eyes",
+        "fog"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stairs",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "etienne",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Do recenze přidám hvězdičku.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "etienne",
+          "text": "Proč?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "chloe",
+          "text": "Za chuť.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

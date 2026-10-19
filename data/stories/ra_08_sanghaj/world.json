@@ -1,0 +1,78 @@
+{
+  "id": "w_ra_08_sanghaj",
+  "title": "Ztraceni v zahradě Yuyuan",
+  "synopsis": "Bývalý boxer David chytí v zahradě Yuyuan šátek, který Mei-Ling spadl do jezírka.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_garden",
+      "l_pond"
+    ]
+  },
+  "characters": [
+    {
+      "id": "david",
+      "name": "David Miller",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a very tall broad-shouldered American former heavyweight boxer aged 38, slightly crooked nose, short haircut, denim jacket",
+      "base": "mature male, very tall, broad shoulders, muscular, crooked nose, scar, short hair, brown hair",
+      "outfits": {
+        "default": "dark t-shirt, denim jacket, jeans"
+      },
+      "photo": "a very tall broad-shouldered American former heavyweight boxer aged 38, slightly crooked nose, short haircut, denim jacket",
+      "tag_prompt": "mature male, very tall, broad shoulders, muscular, crooked nose, scar, short hair, brown hair, dark t-shirt, denim jacket, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "meiling",
+      "name": "Mei-Ling Chen",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Chinese woman aged 25, long straight black hair, gentle smile, modern qipao",
+      "base": "adult, chinese, petite, slender, small breasts, long hair, straight hair, black hair, brown eyes, gentle smile",
+      "outfits": {
+        "default": "modern qipao, silk scarf",
+        "noscarf": "modern qipao"
+      },
+      "photo": "a petite Chinese woman aged 25, long straight black hair, gentle smile, modern qipao",
+      "tag_prompt": "adult, chinese, petite, slender, small breasts, long hair, straight hair, black hair, brown eyes, gentle smile, modern qipao, silk scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_garden",
+      "name": "Zahrada Yuyuan",
+      "description": "Zahrada Yuyuan",
+      "tag_prompt": "outdoors, yuyuan garden, chinese garden, stone bridge, red pavilion, pond, koi, ornate roof, east asian architecture",
+      "mood": ""
+    },
+    {
+      "id": "l_pond",
+      "name": "Most devíti zatáček",
+      "description": "Most devíti zatáček",
+      "tag_prompt": "outdoors, zigzag bridge, pond, koi, paper lantern, lantern light, dusk, chinese architecture",
+      "mood": ""
+    }
+  ]
+}

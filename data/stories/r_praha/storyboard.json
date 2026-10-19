@@ -1,0 +1,411 @@
+{
+  "title": "Praha – Muž, který nevěřil na lásku",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "standing by car",
+        "arms crossed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Co se stalo?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nina",
+          "text": "Auto přestalo poslouchat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "wiping hands",
+        "rag",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "A vy?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Já poslouchám vždycky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "talking on phone",
+        "holding phone",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Auto je hotové.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nina",
+          "text": "Kolik dlužím?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Jednu kávu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "holding phone",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "To je velmi drahá oprava.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Byl to složitý problém.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "nina"
+        },
+        {
+          "id": "adam",
+          "outfit": "walk"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "old town"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Víš, co je můj problém?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Jaký?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "vulnerable"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Vždycky čekám, že mě někdo odmítne, ještě než mě pozná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "nina"
+        },
+        {
+          "id": "adam",
+          "outfit": "walk"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Tak mě nech poznat tě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "surprised",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Nikdy bych neřekla, že automechanik může vypadat takhle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "adam",
+          "outfit": "jacket"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "leaning forward"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "A já nikdy neřekl, že fotografka může být tak nebezpečná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        }
+      ],
+      "visual_tags": [
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Nebezpečná?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Ukradla jsi mi srdce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        },
+        {
+          "id": "adam",
+          "outfit": "jacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "night",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Myslíš, že tohle vydrží?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        }
+      ],
+      "visual_tags": [
+        "pout",
+        "amused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "To není moc romantické.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Tak jinak.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        },
+        {
+          "id": "adam",
+          "outfit": "jacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "nina",
+          "outfit": "black_dress"
+        },
+        {
+          "id": "adam",
+          "outfit": "jacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile",
+        "closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Chci zjistit, jestli ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

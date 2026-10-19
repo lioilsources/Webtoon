@@ -1,0 +1,263 @@
+{
+  "title": "Londýn, jedna bota u Temže",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "sitting on bench",
+        "one shoe off",
+        "shoe on bench",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Southbank, podzim.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "ivy"
+        }
+      ],
+      "visual_tags": [
+        "holding cello case",
+        "holding shoe",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ivy",
+          "text": "Tohle je… vaše?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "oliver",
+          "text": "Ano. Puchýř. Omlouvám se za nepořádek.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "embarrassed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Oblek má systém. Život má systém. Puchýř systém nemá.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ivy",
+          "text": "A co máte rád, když systém neplatí?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Nevím. Nikdy jsem to nezkoušel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "ivy"
+        }
+      ],
+      "visual_tags": [
+        "playing cello",
+        "street performance",
+        "crowd",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O týden později.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_southbank",
+      "characters": [
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "standing in crowd",
+        "moved",
+        "teary eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Poslouchám čísla celý den. A tohle bylo živé.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ivy",
+          "text": "Vždycky se ptají, proč nehraju v sále. Bojím se sálů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_eye",
+      "characters": [
+        {
+          "id": "ivy"
+        },
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting facing each other",
+        "night skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ivy",
+          "text": "Dnes jsem se rozhodla hrát v sále.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "oliver",
+          "text": "Proč?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_eye",
+      "characters": [
+        {
+          "id": "ivy"
+        }
+      ],
+      "visual_tags": [
+        "looking at him",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ivy",
+          "text": "Víc se bojím, že tohle — co cítím teď — zůstane jen náhodou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_eye",
+      "characters": [
+        {
+          "id": "ivy"
+        },
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "london skyline"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_eye",
+      "characters": [
+        {
+          "id": "ivy"
+        },
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Tohle je první věc v životě, kde žádný systém nechci.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

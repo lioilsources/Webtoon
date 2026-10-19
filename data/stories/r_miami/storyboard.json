@@ -1,0 +1,369 @@
+{
+  "title": "Miami – Dívka v letních šatech",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo",
+        "sun hat"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "wind",
+        "hat flying away",
+        "surprised",
+        "reaching out"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FŮŮ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "jack"
+        }
+      ],
+      "visual_tags": [
+        "catching hat",
+        "holding sun hat",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Myslím, že tenhle patří vám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "camila"
+        },
+        {
+          "id": "jack"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing hat",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Děkuju.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jack",
+          "text": "Fotíte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "embarrassed smile",
+        "holding camera"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Snažím se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunrise",
+      "characters": [
+        {
+          "id": "jack"
+        }
+      ],
+      "visual_tags": [
+        "grin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Tak tohle bych si rád prohlédl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_surf",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "surf"
+        }
+      ],
+      "visual_tags": [
+        "falling off surfboard",
+        "splash",
+        "water"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Tohle mělo být romantické?",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ŠPLOUCH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_surf",
+      "characters": [
+        {
+          "id": "jack",
+          "outfit": "surf"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "standing in water",
+        "holding surfboard"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Ještě jsem nezačal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "candle",
+        "looking down",
+        "shy smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Nikdy jsem si nemyslela, že se do někoho zamiluju tak daleko od domova.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "jack",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "A jsi zamilovaná?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "night"
+        },
+        {
+          "id": "jack",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smiling at each other",
+        "sitting across table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Možná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jack",
+          "text": "Já určitě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "night"
+        },
+        {
+          "id": "jack",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on sand",
+        "arm around shoulder",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Ještě pořád si myslím, že nejsem dost hezká.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jack",
+          "text": "Tak se na mě podívej.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "night"
+        },
+        {
+          "id": "jack",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "looking at each other",
+        "faces close",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Vidíš, co vidím já?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_night",
+      "characters": [
+        {
+          "id": "camila",
+          "outfit": "night"
+        },
+        {
+          "id": "jack",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "waves",
+        "moonlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

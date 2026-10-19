@@ -1,0 +1,282 @@
+{
+  "title": "Jakarta, angličtina za deště",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "sitting under shelter",
+        "reading book",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jakarta. Tropický déšť.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "wet",
+        "broken umbrella",
+        "running under shelter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Promiňte — můžu se schovat?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "bram",
+          "text": "Yes. You can… stay.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting under shelter",
+        "showing book"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bram",
+          "text": "Učím se. Chci jednou studovat univerzitu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Já jsem lékařka. Možná bych vám mohla pomoct.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "holding textbook",
+        "strict teacher",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O týden později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Přeložte: ‚I love you.‘",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bram",
+          "text": "Tohle slovo se neučím. Až ho řeknu, musím vědět, že je pravda.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "soft expression",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "To slovo se neučí. To slovo se cítí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_quay",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "dress"
+        },
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "night",
+        "wet ground",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bram",
+          "text": "Chci říct jednu větu. Učil jsem se ji celý den.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_quay",
+      "characters": [
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "nervous smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bram",
+          "text": "You… are… my sunshine in the rain.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_quay",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "dress"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "tears",
+        "happy tears"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_quay",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "dress"
+        },
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_quay",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "dress"
+        },
+        {
+          "id": "bram"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "head on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "To slovo už jsi řekl. A já jsem mu rozuměla bez překladu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

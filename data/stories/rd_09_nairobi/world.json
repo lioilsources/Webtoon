@@ -1,0 +1,85 @@
+{
+  "id": "w_rd_09_nairobi",
+  "title": "Nairobi, zvuk savany",
+  "synopsis": "Automechanik Kwame a veterinářka Zuri — nejdřív pes, pak auto.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "vintage_poster",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_garage",
+      "l_clinic",
+      "l_park"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kwame",
+      "name": "Kwame",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Kenyan mechanic aged 38, muscular arms, hearty laugh, overalls",
+      "base": "mature male, dark-skinned male, very dark skin, muscular arms, short hair, black hair, big smile",
+      "outfits": {
+        "default": "work overalls, oil stains"
+      },
+      "photo": "a Kenyan mechanic aged 38, muscular arms, hearty laugh, overalls",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, muscular arms, short hair, black hair, big smile, work overalls, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zuri",
+      "name": "Zuri",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Kenyan veterinarian aged 34, short natural hair, khaki shirt",
+      "base": "adult, dark-skinned female, very dark skin, tall female, very short hair, natural hair",
+      "outfits": {
+        "default": "khaki shirt, cargo pants"
+      },
+      "photo": "a tall Kenyan veterinarian aged 34, short natural hair, khaki shirt",
+      "tag_prompt": "adult, dark-skinned female, very dark skin, tall female, very short hair, natural hair, khaki shirt, cargo pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_garage",
+      "name": "Autoservis",
+      "description": "Autoservis",
+      "tag_prompt": "indoors, auto repair shop, car, jeep, tools, afternoon, nairobi",
+      "mood": ""
+    },
+    {
+      "id": "l_clinic",
+      "name": "Klinika",
+      "description": "Klinika",
+      "tag_prompt": "indoors, veterinary clinic, corridor, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_park",
+      "name": "Národní park",
+      "description": "Národní park",
+      "tag_prompt": "outdoors, savanna, sunset, giraffes in distance, acacia tree, nairobi national park",
+      "mood": ""
+    }
+  ]
+}

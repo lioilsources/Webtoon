@@ -1,0 +1,240 @@
+{
+ "title": "Londýnská mlha, varšavské srdce",
+ "fonts": "romance",
+ "panels": [
+  {
+   "shot": "establishing",
+   "location_id": "l_market",
+   "characters": [],
+   "visual_tags": [
+    "fog",
+    "market stalls"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Londýn, Borough Market. Mlha a vůně koření.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_market",
+   "characters": [
+    {
+     "id": "zofia"
+    }
+   ],
+   "visual_tags": [
+    "umbrella turned inside out",
+    "wind",
+    "annoyed",
+    "rain"
+   ],
+   "bubbles": [],
+   "sfx": [
+    {
+     "text": "PRÁSK",
+     "style": "bold"
+    }
+   ],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_market",
+   "characters": [
+    {
+     "id": "daniel"
+    }
+   ],
+   "visual_tags": [
+    "running out of bistro",
+    "apron",
+    "smile"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "daniel",
+     "text": "Váš deštník právě zemřel. Pojďte dovnitř, než skončíte jako on.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_market",
+   "characters": [
+    {
+     "id": "zofia"
+    }
+   ],
+   "visual_tags": [
+    "stubborn",
+    "blush"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "zofia",
+     "text": "Já zvládnu cokoliv. Jen ne deštníky. A ne muže, kteří vaří, protože pak nechci odejít.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_bistro",
+   "characters": [
+    {
+     "id": "daniel"
+    }
+   ],
+   "visual_tags": [
+    "cooking",
+    "holding spices",
+    "steam",
+    "smile"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "daniel",
+     "text": "Kardamom je tichá dáma. Chilli je moje sestra. Hlučná, ale bez ní by svět stál.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_bistro",
+   "characters": [
+    {
+     "id": "zofia"
+    }
+   ],
+   "visual_tags": [
+    "sitting at counter",
+    "chin on hand",
+    "curious"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "zofia",
+     "text": "A co jste vy?",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "daniel",
+     "text": "Já jsem sůl. Nepoznáte mě, dokud chybím.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_bridge",
+   "characters": [
+    {
+     "id": "zofia"
+    }
+   ],
+   "visual_tags": [
+    "glasses fixed with string",
+    "smile",
+    "fog"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Daniel jí opravil brýle provázkem — „dočasné řešení, trvalý úmysl“.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_bridge",
+   "characters": [
+    {
+     "id": "daniel"
+    }
+   ],
+   "visual_tags": [
+    "looking at viewer",
+    "fog",
+    "street lamp"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "daniel",
+     "text": "Bojovala jste s deštníkem a vyhrála jste. Zamiloval jsem se do vítěze.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_bridge",
+   "characters": [
+    {
+     "id": "zofia"
+    }
+   ],
+   "visual_tags": [
+    "sad smile",
+    "fog"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "zofia",
+     "text": "Já jsem jen Polka s rozbitýma brýlema.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "daniel",
+     "text": "Pak se Anglie mýlí a já ne.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_bridge",
+   "characters": [
+    {
+     "id": "zofia"
+    },
+    {
+     "id": "daniel"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "kiss",
+    "shared scarf around both",
+    "closed eyes",
+    "streetlight"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "large"
+  }
+ ]
+}

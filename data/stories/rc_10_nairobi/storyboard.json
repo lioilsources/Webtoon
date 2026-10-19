@@ -1,0 +1,234 @@
+{
+  "title": "Nairobské ráno",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "baraka"
+        }
+      ],
+      "visual_tags": [
+        "walking through market",
+        "looking around",
+        "carrying bag"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "standing at fabric stall",
+        "folding fabric",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "baraka",
+          "text": "Promiňte, nevíte, kde mají autodíly?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wanjiku",
+          "text": "Vy jste Baraka? Kamauův bratr?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "baraka"
+        },
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smile",
+        "fabric stall"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "baraka",
+          "text": "Ano. Přijel jsem po dlouhé době.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wanjiku",
+          "text": "Tak vítejte doma.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "baraka"
+        }
+      ],
+      "visual_tags": [
+        "repairing car",
+        "under hood",
+        "wiping hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "baraka",
+          "text": "V Londýně jsem si zvykl, že mě nikdo nezná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "baraka"
+        },
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding cup of tea",
+        "giving tea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "wanjiku",
+          "text": "Tady vás znají. To není špatné.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "baraka",
+          "text": "Někdy mám strach, že už sem nepatřím.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wanjiku",
+          "text": "Patříte. Jen jste zapomněl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "baraka",
+          "outfit": "evening"
+        },
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "man holding flower",
+        "giving flower"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "baraka",
+          "text": "Wanjiku, můžu vás pozvat na večeři?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wanjiku",
+          "text": "Ano. Ale nejdřív mi ukážete, jak opravit kolo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "baraka",
+          "outfit": "evening"
+        },
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "smile",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "baraka",
+          "text": "Našel jsem v Nairobi svou múzu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wanjiku",
+          "text": "A já svého mechanika.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "baraka",
+          "outfit": "evening"
+        },
+        {
+          "id": "wanjiku"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "kiss",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

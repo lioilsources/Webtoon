@@ -1,0 +1,227 @@
+{
+  "title": "Nečekaná inspirace v Manhattanu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_fifth",
+      "characters": [],
+      "visual_tags": [
+        "rain",
+        "crowd with umbrellas",
+        "yellow taxi",
+        "traffic"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pátá Avenue. Prší.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_fifth",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "standing in front of shop window",
+        "looking at mannequins",
+        "from side",
+        "rain",
+        "sad"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_fifth",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "adjusting sweater",
+        "sigh",
+        "looking down",
+        "reflection in window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Městské dívky z obálek časopisů...",
+          "kind": "thought"
+        },
+        {
+          "speaker_id": "nina",
+          "text": "Já v tomhle městě plném modelek splývám s šedivým chodníkem.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "carrying paper cup",
+        "tripping",
+        "stumbling",
+        "falling forward",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Útulná kavárnička v SoHo.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "nina"
+        },
+        {
+          "id": "julian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man catching woman",
+        "hand on waist",
+        "faces close",
+        "looking at each other",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "julian",
+          "text": "Opatrně... Měl bych obrovskou škodu, kdyby se tak krásné dámě něco stalo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "nina"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "flustered",
+        "embarrassed",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nina",
+          "text": "Krásné? Já... já jsem spíš jen nešikovná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "julian"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "julian",
+          "text": "Někdy ten nejhezčí moment dne přichází bez varování.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "nina"
+        },
+        {
+          "id": "julian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man still holding her",
+        "smile",
+        "warm light",
+        "rain on window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "julian",
+          "text": "Dovolíte mi koupit vám novou kávu a sednout si k vám?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "nina"
+        },
+        {
+          "id": "julian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "two coffee cups",
+        "smiling at each other",
+        "blush"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

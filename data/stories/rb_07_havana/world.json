@@ -1,0 +1,94 @@
+{
+  "id": "w_rb_07_havana",
+  "title": "Havana – Boxer na Malecónu",
+  "synopsis": "Diego nezná nic než ring, Isabella z Miami hledá něco opravdového.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_malecon",
+      "l_cafe",
+      "l_street",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Cuban boxer aged 30, short brown hair, beard",
+      "base": "mature male, athletic, short hair, brown hair, beard, tan skin",
+      "outfits": {
+        "default": "boxing jersey, shorts",
+        "dinner": "white linen shirt, dark trousers"
+      },
+      "photo": "an athletic Cuban boxer aged 30, short brown hair, beard",
+      "tag_prompt": "mature male, athletic, short hair, brown hair, beard, tan skin, boxing jersey, shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "isabella",
+      "name": "Isabella",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall woman aged 26, long blond hair, fair skin, light summer dress",
+      "base": "adult, tall female, long hair, blonde hair, pale skin, blue eyes",
+      "outfits": {
+        "default": "light summer dress"
+      },
+      "photo": "a tall woman aged 26, long blond hair, fair skin, light summer dress",
+      "tag_prompt": "adult, tall female, long hair, blonde hair, pale skin, blue eyes, light summer dress",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_malecon",
+      "name": "Malecón",
+      "description": "Malecón",
+      "tag_prompt": "outdoors, malecon seawall, sunset, ocean, havana skyline",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, havana cafe, wooden counter, ceiling fan, espresso cups, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "Ulice",
+      "description": "Ulice",
+      "tag_prompt": "outdoors, havana street, colorful buildings, evening, string lights, music",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace s kapelou",
+      "description": "Restaurace s kapelou",
+      "tag_prompt": "indoors, restaurant, live band, night, warm light",
+      "mood": ""
+    }
+  ]
+}

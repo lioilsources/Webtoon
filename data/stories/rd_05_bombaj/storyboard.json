@@ -1,0 +1,262 @@
+{
+  "title": "Bombajská čajová pauza",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "rain",
+        "wet",
+        "under tin roof"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Období monzunů.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "pouring tea",
+        "offering cup",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Silný, s kardamomem. Vypadáte jako člověk, který dnes potřebuje silný čaj.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "holding tea cup",
+        "laughing",
+        "wet hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Tohle je nejlepší čaj v celém Bombaji.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Vím. Proto vám ho dávám zdarma.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "otec"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "arms crossed",
+        "stern"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O dva týdny později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "otec",
+          "text": "Priyo. Proč stojíte pod tím stánkem každé ráno?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "determined",
+        "holding cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Protože mi tady někdo připravuje den tak, že se nebojím ho začít.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stall",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "respectful",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Odešel jsem, protože matka onemocněla. Vařil jsem čaj, abych ji uživil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_marine",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on seawall",
+        "two tea cups",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Nejsem bohatý. Mám jen čaj a ruce, které umějí pracovat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "priya",
+          "text": "Máte ruce, které dělají lidem den lepší.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marine",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "close-up of hands"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marine",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marine",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "rain",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Zítra ráno. Stejný čas?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Každé ráno. Silný, s kardamomem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

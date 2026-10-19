@@ -1,0 +1,256 @@
+{
+  "title": "Nairobské slunce",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "mo"
+        }
+      ],
+      "visual_tags": [
+        "sprinting",
+        "coaching",
+        "shouting",
+        "sweat",
+        "sunny"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mo",
+          "text": "Ještě jednou! Rychleji!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "wanjiru"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "water splash on camera",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠPLÍCH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "mo"
+        }
+      ],
+      "visual_tags": [
+        "apologizing",
+        "hands up",
+        "embarrassed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mo",
+          "text": "Promiňte! Zaplatím! Jsem trenér, ne ničitel!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "wanjiru"
+        }
+      ],
+      "visual_tags": [
+        "smirk",
+        "looking at camera screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "wanjiru",
+          "text": "Klid. Mám to na fotce. Zlato. Smůla vám sluší.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mo",
+          "text": "To je nejhorší kompliment… a chci druhý.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "holding folder of poems",
+        "nervous",
+        "trembling hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mo",
+          "text": "Básničky. Jsem svalovec s básněmi. Ve fitku o tom nikdo neví.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "wanjiru"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "photos on table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "wanjiru",
+          "text": "Každý správný muž má šuplík, který nikdo neotevře. Ale čtěte nahlas.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "reading aloud",
+        "eyes closed",
+        "soft"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas, který křičí na stadionu, teď šeptá slova o slunci, které se učí plavat.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hills",
+      "characters": [
+        {
+          "id": "wanjiru"
+        },
+        {
+          "id": "mo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing on hill",
+        "wind",
+        "sunset",
+        "valley"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "wanjiru",
+          "text": "Hledala jsem muže, který je silný, ale ne tvrdý. Který zvedne činku i mé pochybnosti.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hills",
+      "characters": [
+        {
+          "id": "mo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "gentle",
+        "golden light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mo",
+          "text": "A já hledal ženu, která opravdu vidí. Uvidíte mě i v den, kdy nesvedu ani úsměv.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hills",
+      "characters": [
+        {
+          "id": "wanjiru"
+        },
+        {
+          "id": "mo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "wind",
+        "sunset",
+        "silhouette"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CVAK",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    }
+  ]
+}

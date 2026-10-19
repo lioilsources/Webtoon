@@ -1,0 +1,258 @@
+{
+  "title": "Rytmus Kingstonu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_corner",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "holding guidebook",
+        "lost",
+        "standing on corner"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_corner",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "happy",
+        "children dancing",
+        "music notes"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUM-TSS",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_corner",
+      "characters": [
+        {
+          "id": "rohan"
+        }
+      ],
+      "visual_tags": [
+        "holding guitar",
+        "stopped playing",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rohan",
+          "text": "Slečno. Vy jste mi rozbila písničku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_corner",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "rohan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "laughing",
+        "man offering hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Promiňte. Tanec se prostě stane.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rohan",
+          "text": "To nebyla stížnost. To byla žádost o ruku. Na tanec. Hned.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "rohan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing together",
+        "teaching dance steps",
+        "barefoot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Řekni: ‚Tu es belle.‘ — Jsi krásná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rohan",
+          "text": "Tů é bél…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rohan",
+          "text": "‚Mi soon come.‘ — Hned jsem tady.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "aisha",
+          "text": "Mi soon come.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "laughing loudly",
+        "seagulls flying away",
+        "head back"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HAHA!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_fire",
+      "characters": [
+        {
+          "id": "rohan"
+        }
+      ],
+      "visual_tags": [
+        "sitting by bonfire",
+        "playing guitar",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rohan",
+          "text": "Hledal jsem ženu, která má rytmus v kostech. Pak jste roztancovala ulice, na kterých tančím celý život.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_fire",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "firelight",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Rozesmál jste mě, roztančil a pak mi ukradl srdce. To je krádež, pane.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rohan",
+          "text": "Zatkněte mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_fire",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "rohan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "under palm tree",
+        "bonfire",
+        "stars",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

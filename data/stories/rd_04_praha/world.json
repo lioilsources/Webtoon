@@ -1,0 +1,85 @@
+{
+  "id": "w_rd_04_praha",
+  "title": "Praha v mlze",
+  "synopsis": "Fotografka architektury Tereza a architekt Filip, který poslouchá kámen.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bridge",
+      "l_cafe",
+      "l_tower"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tereza",
+      "name": "Tereza",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Czech woman aged 25, long straight blond hair, blue eyes, leather jacket",
+      "base": "adult, tall female, athletic, blonde hair, long hair, straight hair, blue eyes",
+      "outfits": {
+        "default": "leather jacket, jeans, sneakers"
+      },
+      "photo": "a tall athletic Czech woman aged 25, long straight blond hair, blue eyes, leather jacket",
+      "tag_prompt": "adult, tall female, athletic, blonde hair, long hair, straight hair, blue eyes, leather jacket, jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "filip",
+      "name": "Filip",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech architect aged 30, dark hair, the same grey sweater every day",
+      "base": "mature male, dark hair, short hair, calm",
+      "outfits": {
+        "default": "grey sweater, coat"
+      },
+      "photo": "a calm Czech architect aged 30, dark hair, the same grey sweater every day",
+      "tag_prompt": "mature male, dark hair, short hair, calm, grey sweater, coat",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, statues, fog, morning, river, prague",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, old cafe, velvet seats, window, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_tower",
+      "name": "Petřín",
+      "description": "Petřín",
+      "tag_prompt": "outdoors, observation tower, night, fog, city lights below, prague",
+      "mood": ""
+    }
+  ]
+}

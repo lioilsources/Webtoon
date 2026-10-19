@@ -1,0 +1,109 @@
+{
+  "id": "w_rc_01_ny",
+  "title": "Newyorské písmeno",
+  "synopsis": "Eliška z Brna přijede na kurz knižní vazby a v antikvariátu potká Daniela.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance_artist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_books",
+      "l_bridge",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "eliska",
+      "name": "Eliška",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Czech woman aged 28, dark curly hair, vintage floral dress, cardigan and a colourful scarf",
+      "base": "adult, curvy, small breasts, dark hair, curly hair, medium hair, brown eyes",
+      "outfits": {
+        "default": "floral dress, cardigan, colorful scarf"
+      },
+      "photo": "a petite curvy Czech woman aged 28, dark curly hair, vintage floral dress, cardigan and a colourful scarf",
+      "tag_prompt": "adult, curvy, small breasts, dark hair, curly hair, medium hair, brown eyes, floral dress, cardigan, colorful scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel Park",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Korean-American office worker aged 32, neat short black hair, glasses, dark suit, white shirt",
+      "base": "mature male, asian, black hair, short hair, glasses, brown eyes",
+      "outfits": {
+        "default": "dark suit, white shirt"
+      },
+      "photo": "a Korean-American office worker aged 32, neat short black hair, glasses, dark suit, white shirt",
+      "tag_prompt": "mature male, asian, black hair, short hair, glasses, brown eyes, dark suit, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an energetic woman in a blazer talking on the phone",
+      "base": "adult, black hair, ponytail, energetic, smile",
+      "outfits": {
+        "default": "blazer, holding phone"
+      },
+      "photo": "an energetic woman in a blazer talking on the phone",
+      "tag_prompt": "adult, black hair, ponytail, energetic, smile, blazer, holding phone",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Manhattan",
+      "description": "Manhattan",
+      "tag_prompt": "outdoors, manhattan, street, yellow taxi, steam, subway entrance, daytime, crowd",
+      "mood": ""
+    },
+    {
+      "id": "l_books",
+      "name": "Antikvariát",
+      "description": "Antikvariát",
+      "tag_prompt": "indoors, antique bookshop, bookshelves, old books, warm light, dust particles",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Brooklynský most",
+      "description": "Brooklynský most",
+      "tag_prompt": "outdoors, brooklyn bridge, evening, sunset, manhattan skyline, wind",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, small restaurant, candle, pasta, warm light, night",
+      "mood": ""
+    }
+  ]
+}

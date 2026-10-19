@@ -22,7 +22,17 @@ BG = (255, 255, 255)
 INK = (20, 20, 24)
 
 
+# Grown-up lettering for the romance stories (storyboard "fonts": "romance"); macOS system fonts, M0 is local.
+# Gill Sans on macOS lacks ě č ř ů ť ď ň, so speech uses Avenir Next (full Czech coverage).
+SYSTEM_FONTS = Path("/System/Library/Fonts")
+ROMANCE = {"speech": ("Avenir Next.ttc", 2), "thought": ("Avenir Next.ttc", 6), "shout": ("Supplemental/Futura.ttc", 2),
+           "narration": ("Supplemental/Baskerville.ttc", 2), "sfx": ("Supplemental/Futura.ttc", 4), "ui": ("Avenir Next.ttc", 5)}
+FONT_SET = None
+
+
 def font(kind, size):
+    if FONT_SET == "romance" and (SYSTEM_FONTS / ROMANCE[kind][0]).exists():
+        return ImageFont.truetype(str(SYSTEM_FONTS / ROMANCE[kind][0]), size, index=ROMANCE[kind][1])
     name, weight = {"speech": ("Nunito-Variable.ttf", b"Bold"), "thought": ("Nunito-Italic-Variable.ttf", b"SemiBold"),
                     "shout": ("DynaPuff-Variable.ttf", b"Bold"), "narration": ("Baloo2-Variable.ttf", b"Medium"),
                     "sfx": ("DynaPuff-Variable.ttf", b"Bold"), "ui": ("Nunito-Variable.ttf", b"SemiBold")}[kind]
@@ -132,6 +142,8 @@ def placeholder(panel, i):
 
 
 def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
+    global FONT_SET
+    FONT_SET = sb.get("fonts")
     parts = []
     for i, p in enumerate(sb["panels"]):
         if use_placeholder:
@@ -150,8 +162,11 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
             draw_sfx(img, s, k)
         parts.append((img, GAPS.get(p.get("gap_after"), 140)))
 
-    title = Image.new("RGB", (WIDTH, 160), BG)
-    ImageDraw.Draw(title).text((40, 50), sb["title"], font=font("narration", 54), fill=INK)
+    tf = font("narration", 54)
+    tlines = wrap(ImageDraw.Draw(Image.new("RGB", (1, 1))), sb["title"], tf, WIDTH - 80)
+    title = Image.new("RGB", (WIDTH, 100 + 66 * len(tlines)), BG)
+    for k, line in enumerate(tlines):
+        ImageDraw.Draw(title).text((40, 50 + 66 * k), line, font=tf, fill=INK)
     end = choices_block(sb["choices"], sb["title"]) if sb.get("choices") else end_block()
     total = title.height + sum(im.height + g for im, g in parts) + end.height
     strip = Image.new("RGB", (WIDTH, total), BG)

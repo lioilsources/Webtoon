@@ -1,0 +1,223 @@
+{
+  "title": "Paříž – Vysoká blondýnka",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "emma"
+        }
+      ],
+      "visual_tags": [
+        "standing at riverside",
+        "looking at water",
+        "lonely"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Všichni tady jsou malí a roztomilí… já jsem jako věž.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "luc"
+        }
+      ],
+      "visual_tags": [
+        "jogging",
+        "stopping",
+        "smile",
+        "slightly out of breath"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luc",
+          "text": "Pardon… hledám cestu k Notre-Dame. A ty vypadáš, jako bys věděla, kam jít.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "emma"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "slight smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "luc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at small table",
+        "coffee cups",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Přijela jsem z Londýna. Hledám… něco. Někoho.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "luc"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luc",
+          "text": "Možná jsi právě našla.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "luc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "night",
+        "under bridge"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luc",
+          "text": "Jsi krásná přesně taková, jaká jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "luc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "smile",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "smile",
+        "eiffel tower behind window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Poprvé se necítím moc vysoká.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "dinner"
+        },
+        {
+          "id": "luc",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing face to face",
+        "same height",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luc",
+          "text": "Protože jsi přesně na mou výšku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

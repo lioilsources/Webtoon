@@ -1,0 +1,295 @@
+{
+  "title": "Newyorské písmeno",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "pulling suitcase",
+        "looking around",
+        "nervous smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Manhattan. Pára z kanálů, žluté taxíky.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "eliska",
+          "text": "Tak jsem tady. Malá holka z Brna v největším městě světa.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "talking on phone",
+        "walking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Danieli, neboj se. Je to jen podpis smlouvy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "looking at bookshelf",
+        "holding book",
+        "glasses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Promiňte, nevíte, kde mají místopis?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing between bookshelves",
+        "pointing",
+        "holding book"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Já? Já jsem tu poprvé. Ale zkusila bych tu polici vzadu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Díky. Jste tu nová? Podle kufru.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Přijela jsem na kurz. Asi vypadám ztraceně.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Ne. Vypadáte, že něco hledáte. Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking side by side",
+        "man carrying suitcase",
+        "wind",
+        "hair blowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Vždycky jsem si myslela, že na tohle město nemám postavu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Jakou postavu?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "embarrassed",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "No… malou, kulatou. Tady jsou všichni vysocí a elegantní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "laughing",
+        "looking at each other",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Já jsem taky spíš kancelářský a nudný. A přesto tu jsem.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "eliska",
+          "text": "Vy nejste nudný.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting across table",
+        "candle",
+        "man clearing throat",
+        "shy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Eliško, můžu vás pozvat znovu? Třeba do knihovny. A pak na kávu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "eliska",
+          "text": "To zní jako velmi newyorské rande.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Doufám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "short kiss",
+        "hug",
+        "night",
+        "city lights",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

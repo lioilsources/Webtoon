@@ -1,0 +1,110 @@
+{
+  "id": "w_rc_03_miami",
+  "title": "Miamské zastavení",
+  "synopsis": "Irka Róisín, rozbité půjčené auto a mechanik Carlos.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gas",
+      "l_shop",
+      "l_cafe",
+      "l_shore"
+    ]
+  },
+  "characters": [
+    {
+      "id": "roisin",
+      "name": "Róisín",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Irish woman aged 30, long wavy red hair, freckles, elegant wrap dress and a wide sun hat",
+      "base": "adult, curvy, large breasts, red hair, long hair, wavy hair, freckles, green eyes",
+      "outfits": {
+        "default": "wrap dress, wide-brimmed hat"
+      },
+      "photo": "a curvy Irish woman aged 30, long wavy red hair, freckles, elegant wrap dress and a wide sun hat",
+      "tag_prompt": "adult, curvy, large breasts, red hair, long hair, wavy hair, freckles, green eyes, wrap dress, wide-brimmed hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "carlos",
+      "name": "Carlos",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad-shouldered Cuban-American mechanic aged 33, short dark hair, overalls over a white t-shirt",
+      "base": "mature male, tan skin, broad shoulders, black hair, short hair, brown eyes",
+      "outfits": {
+        "default": "overalls, white t-shirt, oil stains",
+        "clean": "white shirt, jeans"
+      },
+      "photo": "a broad-shouldered Cuban-American mechanic aged 33, short dark hair, overalls over a white t-shirt",
+      "tag_prompt": "mature male, tan skin, broad shoulders, black hair, short hair, brown eyes, overalls, white t-shirt, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "rosa",
+      "name": "Tía Rosa",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elderly Cuban woman with a grey bun and an apron, cafe owner",
+      "base": "old woman, grey hair, hair bun, apron, smile",
+      "outfits": {
+        "default": "floral blouse, apron"
+      },
+      "photo": "an elderly Cuban woman with a grey bun and an apron, cafe owner",
+      "tag_prompt": "old woman, grey hair, hair bun, apron, smile, floral blouse, apron",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gas",
+      "name": "Benzinka",
+      "description": "Benzinka",
+      "tag_prompt": "outdoors, gas station, rental car, smoke from hood, palm trees, sunny, miami",
+      "mood": ""
+    },
+    {
+      "id": "l_shop",
+      "name": "Dílna",
+      "description": "Dílna",
+      "tag_prompt": "indoors, auto repair shop, garage, tools, car, oil",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna Tíy Rosy",
+      "description": "Kavárna Tíy Rosy",
+      "tag_prompt": "indoors, cuban cafe, colorful walls, coffee cups, pastries, music",
+      "mood": ""
+    },
+    {
+      "id": "l_shore",
+      "name": "Nábřeží",
+      "description": "Nábřeží",
+      "tag_prompt": "outdoors, seaside promenade, street lamp, evening, ocean, miami",
+      "mood": ""
+    }
+  ]
+}

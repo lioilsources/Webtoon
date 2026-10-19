@@ -1,0 +1,94 @@
+{
+  "id": "w_rb_08_nairobi",
+  "title": "Nairobi – Běžec a fotografka",
+  "synopsis": "Jabari pořád běží, Elena z Prahy hledá klid.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "minimal_flat",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_park",
+      "l_lodge",
+      "l_sunset",
+      "l_dinner"
+    ]
+  },
+  "characters": [
+    {
+      "id": "jabari",
+      "name": "Jabari",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic Kenyan man aged 34, very dark skin, very short hair, running clothes",
+      "base": "mature male, dark-skinned male, very dark skin, tall, athletic, very short hair, black hair",
+      "outfits": {
+        "default": "running clothes, tank top, running shorts",
+        "dinner": "white shirt, dark trousers"
+      },
+      "photo": "a tall athletic Kenyan man aged 34, very dark skin, very short hair, running clothes",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, tall, athletic, very short hair, black hair, running clothes, tank top, running shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "elena",
+      "name": "Elena",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a European woman aged 28, long red hair, freckles, linen dress, camera",
+      "base": "adult, red hair, long hair, freckles, large breasts, pale skin, green eyes",
+      "outfits": {
+        "default": "linen dress, camera"
+      },
+      "photo": "a European woman aged 28, long red hair, freckles, linen dress, camera",
+      "tag_prompt": "adult, red hair, long hair, freckles, large breasts, pale skin, green eyes, linen dress, camera",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_park",
+      "name": "Národní park",
+      "description": "Národní park",
+      "tag_prompt": "outdoors, savanna, nairobi national park, acacia tree, giraffes, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_lodge",
+      "name": "Lodge",
+      "description": "Lodge",
+      "tag_prompt": "outdoors, safari lodge, wooden terrace, savanna view, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_sunset",
+      "name": "Západ slunce",
+      "description": "Západ slunce",
+      "tag_prompt": "outdoors, savanna, sunset, orange sky, acacia silhouette",
+      "mood": ""
+    },
+    {
+      "id": "l_dinner",
+      "name": "Večeře pod hvězdami",
+      "description": "Večeře pod hvězdami",
+      "tag_prompt": "outdoors, night, starry sky, lanterns, dinner table, savanna",
+      "mood": ""
+    }
+  ]
+}

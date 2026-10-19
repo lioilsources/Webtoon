@@ -1,0 +1,238 @@
+{
+  "title": "Pražské zrcadlení",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bridge",
+      "characters": [],
+      "visual_tags": [
+        "fog",
+        "statues",
+        "prague castle silhouette"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Karlův most zahalený do ranní mlhy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "holding coffee cup",
+        "alone",
+        "fog"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "leaning on stone railing",
+        "holding coffee cup",
+        "looking at river",
+        "melancholy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Stovky lidí a já tu chodím sám...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "wry smile",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Starý kovboj, co patří spíš do stájí než do téhle historické nádhery.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "papers flying",
+        "drawings scattered",
+        "wind",
+        "running",
+        "reaching out"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "U sochy svaté Luitgardy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "stepping on paper",
+        "crouching",
+        "picking up drawings"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing papers",
+        "woman out of breath",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Děkuji vám! To jsou všechny mé návrhy... Jste můj zachránce!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "shy",
+        "gentle",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Rádo se stalo, slečno. Jen jsem nechtěl, aby takové krásné umění skončilo ve Vltavě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding his rough hand",
+        "looking into his eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Máte oči plné příběhů...",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_statue",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smile",
+        "looking at each other",
+        "fog",
+        "sunbeam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Smím si vás nakreslit? Třeba u horké čokolády v kavárně za rohem?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

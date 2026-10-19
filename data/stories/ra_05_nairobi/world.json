@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_05_nairobi",
+  "title": "Safari srdce",
+  "synopsis": "Amara si připadá málo ženská, boxer Marcus ji vidí jako gazelu na obzoru.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_savanna",
+      "l_camp"
+    ]
+  },
+  "characters": [
+    {
+      "id": "amara",
+      "name": "Amara Diop",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Afro-French woman aged 26, very dark skin, short cropped black curls, safari shorts",
+      "base": "adult, dark-skinned female, very dark skin, tall female, athletic, small breasts, very short hair, curly hair, black hair, brown eyes",
+      "outfits": {
+        "default": "khaki safari shorts, white tank top, sun hat"
+      },
+      "photo": "a tall athletic Afro-French woman aged 26, very dark skin, short cropped black curls, safari shorts",
+      "tag_prompt": "adult, dark-skinned female, very dark skin, tall female, athletic, small breasts, very short hair, curly hair, black hair, brown eyes, khaki safari shorts, white tank top, sun hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus Vance",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a huge heavyweight American boxer aged 31, brown skin, buzz cut, scarred forearms, gentle eyes",
+      "base": "mature male, dark-skinned male, dark skin, very muscular, huge, scar, scars on arms, buzz cut, black hair, brown eyes",
+      "outfits": {
+        "default": "olive t-shirt, cargo pants"
+      },
+      "photo": "a huge heavyweight American boxer aged 31, brown skin, buzz cut, scarred forearms, gentle eyes",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, very muscular, huge, scar, scars on arms, buzz cut, black hair, brown eyes, olive t-shirt, cargo pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_savanna",
+      "name": "Savana",
+      "description": "Savana",
+      "tag_prompt": "outdoors, savanna, nairobi national park, safari jeep, elephants in distance, sunset, orange sky, purple sky",
+      "mood": ""
+    },
+    {
+      "id": "l_camp",
+      "name": "Kemp pod akácií",
+      "description": "Kemp pod akácií",
+      "tag_prompt": "outdoors, campsite, acacia tree, campfire, tent, dusk, savanna, sunset",
+      "mood": ""
+    }
+  ]
+}

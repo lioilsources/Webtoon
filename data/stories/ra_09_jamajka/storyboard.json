@@ -1,0 +1,239 @@
+{
+  "title": "Záře nad tropickým rájem",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_terrace",
+      "characters": [],
+      "visual_tags": [
+        "mist",
+        "mountains",
+        "coffee plantation",
+        "light rays"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Blue Mountains, Jamajka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "sitting at terrace table",
+        "holding tablet",
+        "charts",
+        "mountain view"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "sighing",
+        "closing tablet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alex",
+          "text": "Práce, čísla, tabulky... Přijel jsem na druhý konec světa, ale pořád jsem jen ten nudný muž z kanceláře.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "melancholy",
+        "looking at mountains"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alex",
+          "text": "Kdo by chtěl sdílet život s chlapem bez špetky spontánnosti?",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "zara"
+        }
+      ],
+      "visual_tags": [
+        "tripping over bag",
+        "stumbling",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Malá horská kavárna. Hraje jemné reggae.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "zara"
+        },
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man catching woman by shoulders",
+        "eye contact",
+        "faces close"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "zara"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zara",
+          "text": "Woah! Děkuji za záchranu!",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "zara",
+          "text": "Vy máte ale pevný stisk na někoho, kdo vypadá, že celý den jen sedí u počítače!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "taking off glasses",
+        "holding eyewear"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alex",
+          "text": "To byla náhoda... Většinou se držím jen klávesnice. Jsem Alex.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "zara"
+        },
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman sitting at his table",
+        "chin on hands",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zara",
+          "text": "Nudný? Ani náhodou. Alexi, máte v očích hluboký klid.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "zara"
+        },
+        {
+          "id": "alex"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "coffee cups",
+        "smiling at each other",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zara",
+          "text": "A tenhle ostrov vás naučí tancovat. Začněme společným šálkem zdejší kávové speciality!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

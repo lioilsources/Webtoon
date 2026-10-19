@@ -1,0 +1,397 @@
+{
+  "title": "Havana – Boxer, který přijel zapomenout",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bus",
+      "characters": [],
+      "visual_tags": [
+        "vintage cars",
+        "colonial buildings"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Havana.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bus",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "holding suitcase",
+        "getting off bus",
+        "serious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bus",
+      "characters": [
+        {
+          "id": "raul"
+        }
+      ],
+      "visual_tags": [
+        "arms crossed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "raul",
+          "text": "Takže ses opravdu vrátil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bus",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Potřeboval jsem místo, kde mě nikdo nezná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bus",
+      "characters": [
+        {
+          "id": "raul"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "raul",
+          "text": "Havana tě vždycky pozná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "isabel"
+        }
+      ],
+      "visual_tags": [
+        "placing coffee cup on counter",
+        "smile",
+        "behind counter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabel",
+          "text": "Dvě cukrové.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at counter",
+        "coffee cup",
+        "puzzled"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Já si nedávám cukr.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "isabel",
+          "text": "Já vím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "isabel"
+        }
+      ],
+      "visual_tags": [
+        "teasing smile",
+        "leaning on counter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Jak to víš?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "isabel",
+          "text": "Protože tě pozoruju už týden.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "first smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dance",
+      "characters": [
+        {
+          "id": "isabel",
+          "outfit": "dance"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "salsa",
+        "twirling",
+        "dress flowing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dance",
+      "characters": [
+        {
+          "id": "isabel",
+          "outfit": "dance"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman reaching out hand",
+        "man standing shy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabel",
+          "text": "Ty netančíš?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "Já boxuju.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "isabel",
+          "text": "To není odpověď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dance",
+      "characters": [
+        {
+          "id": "isabel",
+          "outfit": "dance"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing together",
+        "salsa",
+        "holding hands",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabel",
+          "text": "Bojuješ s hudbou.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "Hudba začala první.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "isabel"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on seawall",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Myslel jsem, že jsem přijel do Havany, abych zapomněl.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "isabel",
+          "text": "A podařilo se?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "looking at her",
+        "soft expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Ne.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "Potkal jsem tebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "isabel"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabel",
+          "text": "To zní jako docela dobrý důvod nezapomenout.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "isabel"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "sunset",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

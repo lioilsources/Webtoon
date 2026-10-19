@@ -1,0 +1,255 @@
+{
+  "title": "Kovboj a malířka z Chinatownu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "standing in front of canvas",
+        "painting",
+        "holding brush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Los Angeles, Chinatown. Jaro.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "jake"
+        }
+      ],
+      "visual_tags": [
+        "holding hat",
+        "looking around",
+        "doorway"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jake",
+          "text": "Promiňte — tohle je galerie, nebo dílna?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "Obojí. Záleží na tom, jestli kupujete, nebo koukáte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "jake"
+        }
+      ],
+      "visual_tags": [
+        "pointing at painting",
+        "prairie sunset painting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jake",
+          "text": "Tenhle je tichý. Slyším v něm vítr přes trávu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "turning around"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "…To je název, který jsem hledala měsíc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "jake"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "cleaning up studio",
+        "talking",
+        "holding rag"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O týden později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "jake",
+          "text": "V Montaně jsem měl sto důvodů, proč být sám. Ale žádný, proč ráno vstát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "soft expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Já vím, jak to je. Měsíce jsem neměla důvod vstát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jake"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on blanket",
+        "sunset",
+        "pizza"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jake",
+          "text": "V Montaně má západ slunce osm barev. Tady jen tři, ale víc světel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jake"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "brushing hair from her forehead",
+        "looking at each other"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jake"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jake"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "head on chest",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Že jsme si našli důvod ráno vstát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

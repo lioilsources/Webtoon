@@ -1,0 +1,103 @@
+{
+  "id": "w_r_jakarta",
+  "title": "Jakarta – Mechanik a dívka v červených šatech",
+  "synopsis": "Rafi, automechanik, a Maya, sebevědomá jen na první pohled.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_shop",
+      "l_party",
+      "l_roof"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rafi",
+      "name": "Rafi",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular burly Indonesian man aged 33, short black hair, mechanic",
+      "base": "mature male, asian, tan skin, muscular, burly, short hair, black hair",
+      "outfits": {
+        "default": "work overalls, grey t-shirt, oil stains",
+        "suit": "dark suit, white shirt"
+      },
+      "photo": "a muscular burly Indonesian man aged 33, short black hair, mechanic",
+      "tag_prompt": "mature male, asian, tan skin, muscular, burly, short hair, black hair, work overalls, grey t-shirt, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall elegant Indonesian woman aged 29, long straight black hair",
+      "base": "adult, asian, tan skin, tall female, long hair, black hair, straight hair, elegant",
+      "outfits": {
+        "default": "white blouse, black pants, sunglasses on head",
+        "red_dress": "red dress, long dress"
+      },
+      "photo": "a tall elegant Indonesian woman aged 29, long straight black hair",
+      "tag_prompt": "adult, asian, tan skin, tall female, long hair, black hair, straight hair, elegant, white blouse, black pants, sunglasses on head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "budi",
+      "name": "Budi",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a chubby cheerful Indonesian man aged 35, baseball cap, hawaiian shirt",
+      "base": "mature male, asian, tan skin, chubby, short hair, grin, baseball cap",
+      "outfits": {
+        "default": "hawaiian shirt"
+      },
+      "photo": "a chubby cheerful Indonesian man aged 35, baseball cap, hawaiian shirt",
+      "tag_prompt": "mature male, asian, tan skin, chubby, short hair, grin, baseball cap, hawaiian shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_shop",
+      "name": "Dílna",
+      "description": "Dílna",
+      "tag_prompt": "indoors, auto workshop, garage, car, open hood, tools, jakarta",
+      "mood": ""
+    },
+    {
+      "id": "l_party",
+      "name": "Večírek",
+      "description": "Večírek",
+      "tag_prompt": "indoors, party, ballroom, chandelier, evening, crowd",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, night, jakarta skyline, city lights, neon",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,228 @@
+{
+  "title": "Kingston – Havana",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_stadium",
+      "characters": [
+        {
+          "id": "andre"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "sprinting",
+        "motion blur",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stadium",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Můžu tě vyfotit po závodě?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stadium",
+      "characters": [
+        {
+          "id": "andre"
+        },
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man out of breath",
+        "woman holding camera"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "andre",
+          "text": "Já jsem jen běžec.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "camila",
+          "text": "A já jen fotografka. Tak se shodneme.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "andre"
+        },
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking on sand",
+        "barefoot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "andre",
+          "text": "Lidi vidí jen čas na stopkách.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "camila",
+          "text": "Já vidím, jak se usmíváš, když doběhneš.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "andre",
+          "text": "To je poprvé.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "andre",
+          "outfit": "evening"
+        },
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking along seawall",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mezizastávka v Havaně.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "camila",
+          "text": "Tady jsem doma. A ty?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "andre",
+          "text": "Teď taky trochu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "luis"
+        }
+      ],
+      "visual_tags": [
+        "playing guitar",
+        "singing",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "andre",
+          "outfit": "evening"
+        },
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving flower",
+        "holding flower",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "andre",
+          "text": "Camilo, můžu tě pozvat na procházku? A pak znovu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "camila",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "andre",
+          "outfit": "evening"
+        },
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "under lanterns",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

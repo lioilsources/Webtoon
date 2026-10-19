@@ -1,0 +1,85 @@
+{
+  "id": "w_re_03_havana",
+  "title": "Havana ve 4/4 taktu",
+  "synopsis": "Lucia z Madridu váhá před klubem La Terraza, tanečník Alejandro jí nabídne ruku.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_terraza",
+      "l_club",
+      "l_malecon"
+    ]
+  },
+  "characters": [
+    {
+      "id": "lucia",
+      "name": "Lucia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Spanish woman aged 24, red hair, freckles, round cheeks, vintage floral dress",
+      "base": "adult, red hair, long hair, freckles, round face, large breasts, curvy",
+      "outfits": {
+        "default": "floral dress, vintage dress, modest neckline, dance shoes"
+      },
+      "photo": "a Spanish woman aged 24, red hair, freckles, round cheeks, vintage floral dress",
+      "tag_prompt": "adult, red hair, long hair, freckles, round face, large breasts, curvy, floral dress, vintage dress, modest neckline, dance shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "alejandro",
+      "name": "Alejandro",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Cuban dancer aged 32, wavy black hair, white teeth, elegant 1950s-style suit",
+      "base": "mature male, tan skin, wavy hair, black hair, bright smile, elegant",
+      "outfits": {
+        "default": "1950s suit, cream suit, white shirt"
+      },
+      "photo": "a Cuban dancer aged 32, wavy black hair, white teeth, elegant 1950s-style suit",
+      "tag_prompt": "mature male, tan skin, wavy hair, black hair, bright smile, elegant, 1950s suit, cream suit, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_terraza",
+      "name": "La Terraza",
+      "description": "La Terraza",
+      "tag_prompt": "outdoors, havana, vintage car, pastel buildings, club entrance, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_club",
+      "name": "Klub",
+      "description": "Klub",
+      "tag_prompt": "indoors, dance club, ceiling fans, shadows, live band, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_malecon",
+      "name": "Malecón",
+      "description": "Malecón",
+      "tag_prompt": "outdoors, malecon seawall, midnight, waves, moonlight, havana",
+      "mood": ""
+    }
+  ]
+}

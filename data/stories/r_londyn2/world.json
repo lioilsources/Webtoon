@@ -1,0 +1,93 @@
+{
+  "id": "w_r_londyn",
+  "title": "Londýn – Kovboj v dešti",
+  "synopsis": "Emily z Texasu studuje v Londýně hudbu, Oliver restauruje staré domy.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_station",
+      "l_pub",
+      "l_farm",
+      "l_platform"
+    ]
+  },
+  "characters": [
+    {
+      "id": "emily",
+      "name": "Emily",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender athletic Texan woman aged 30, long blond hair, blue eyes",
+      "base": "adult, tall female, slender, athletic, blonde hair, long hair, blue eyes",
+      "outfits": {
+        "default": "plaid shirt, denim jacket, jeans, cowboy boots"
+      },
+      "photo": "a tall slender athletic Texan woman aged 30, long blond hair, blue eyes",
+      "tag_prompt": "adult, tall female, slender, athletic, blonde hair, long hair, blue eyes, plaid shirt, denim jacket, jeans, cowboy boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular British man aged 33, short brown hair, stubble",
+      "base": "mature male, muscular, brown hair, short hair, stubble, brown eyes",
+      "outfits": {
+        "default": "old leather jacket, grey t-shirt, jeans"
+      },
+      "photo": "a muscular British man aged 33, short brown hair, stubble",
+      "tag_prompt": "mature male, muscular, brown hair, short hair, stubble, brown eyes, old leather jacket, grey t-shirt, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_station",
+      "name": "Nádraží",
+      "description": "Nádraží",
+      "tag_prompt": "outdoors, train station entrance, london, rain, umbrellas, double-decker bus",
+      "mood": ""
+    },
+    {
+      "id": "l_pub",
+      "name": "Pub",
+      "description": "Pub",
+      "tag_prompt": "indoors, pub, wooden bar, pint glass, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_farm",
+      "name": "Farma",
+      "description": "Farma",
+      "tag_prompt": "outdoors, countryside, farm, horse, wooden fence, green hills, cloudy sky",
+      "mood": ""
+    },
+    {
+      "id": "l_platform",
+      "name": "Peron",
+      "description": "Peron",
+      "tag_prompt": "indoors, train station platform, train, departure board",
+      "mood": ""
+    }
+  ]
+}

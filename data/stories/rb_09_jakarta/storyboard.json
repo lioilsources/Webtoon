@@ -1,0 +1,206 @@
+{
+  "title": "Jakarta – Muž z kanceláře",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "coffee cup",
+        "laptop",
+        "tired",
+        "alone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Všichni chtějí dobrodružství… já jsem jen čísla.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "sari",
+          "outfit": "tray"
+        }
+      ],
+      "visual_tags": [
+        "carrying tray",
+        "smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Vypadáte, jako byste potřeboval něco silnějšího než kávu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "small smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking through market",
+        "street food",
+        "lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Pracuju tady. A vy?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adrian",
+          "text": "Přijel jsem z Londýna. Hledám něco, co není v tabulkách.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_canal",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking along canal",
+        "night",
+        "lanterns"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_canal",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Ty mě vidíš jinak.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "city lights",
+        "relaxed smile",
+        "no tie"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Poprvé se necítím nudný.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "sari"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands across table",
+        "smile",
+        "neon lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Protože nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

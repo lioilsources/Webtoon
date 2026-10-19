@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_06_praha",
+  "title": "Pražské zrcadlení",
+  "synopsis": "Moravský kovboj Viktor zachrání na Karlově mostě skicák Rumunky Eleny.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bridge",
+      "l_statue"
+    ]
+  },
+  "characters": [
+    {
+      "id": "viktor",
+      "name": "Viktor Kraus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular Moravian ranch cowboy aged 42, greying hair, wrinkles around the eyes, long leather coat",
+      "base": "mature male, tall, muscular, grey hair, short hair, stubble, wrinkles",
+      "outfits": {
+        "default": "leather coat, long coat, cowboy boots"
+      },
+      "photo": "a tall muscular Moravian ranch cowboy aged 42, greying hair, wrinkles around the eyes, long leather coat",
+      "tag_prompt": "mature male, tall, muscular, grey hair, short hair, stubble, wrinkles, leather coat, long coat, cowboy boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "elena",
+      "name": "Elena Popescu",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Romanian woman aged 29, thick dark hair in a bun, knit turtleneck and long skirt",
+      "base": "adult, short stature, curvy, wide hips, black hair, thick hair, hair bun, brown eyes",
+      "outfits": {
+        "default": "knit turtleneck, long skirt, tote bag"
+      },
+      "photo": "a petite curvy Romanian woman aged 29, thick dark hair in a bun, knit turtleneck and long skirt",
+      "tag_prompt": "adult, short stature, curvy, wide hips, black hair, thick hair, hair bun, brown eyes, knit turtleneck, long skirt, tote bag",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, prague, morning, fog, mist, statues, prague castle, stone railing",
+      "mood": ""
+    },
+    {
+      "id": "l_statue",
+      "name": "U sochy",
+      "description": "U sochy",
+      "tag_prompt": "outdoors, charles bridge, baroque statue, cobblestone, fog, papers on ground, wind",
+      "mood": ""
+    }
+  ]
+}

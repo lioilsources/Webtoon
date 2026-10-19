@@ -1,0 +1,383 @@
+{
+  "title": "Bombaj – Muž, který čekal na múzu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "from behind",
+        "blank canvas"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "dev"
+        }
+      ],
+      "visual_tags": [
+        "arms crossed",
+        "concerned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dev",
+          "text": "Už tři měsíce jsi nic nenafotil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Čekám.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "dev",
+          "text": "Na co?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Na múzu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "rain",
+        "umbrella falling",
+        "wet hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Prudký monzunový déšť.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "offering umbrella",
+        "holding umbrella",
+        "rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding umbrella",
+        "man in rain",
+        "wet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "A vy?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Já déšť přežiju.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "wet hair",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "A já?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Vy vypadáte, že přežijete všechno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "shy",
+        "hands together"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Nejsem fotogenická.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "To říkají lidé, kteří nevědí, co na nich hledat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CVAK",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "looking at camera screen",
+        "silent",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dev",
+          "text": "Našel jsi ji?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by sea",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Takže jsem tvoje múza?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "arjun",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "arjun",
+          "text": "Jsi důvod, proč zase vidím svět.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "woman looking down",
+        "blush"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "arjun"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

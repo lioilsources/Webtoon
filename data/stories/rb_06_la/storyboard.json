@@ -1,0 +1,227 @@
+{
+  "title": "Los Angeles – Svalovec",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "leaning on railing",
+        "looking at ocean",
+        "lonely"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Všichni chtějí jen fotku…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "tripping",
+        "stumbling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "lila"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man catching woman",
+        "holding her arm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Omlouvám se! Jsi v pořádku?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_truck",
+      "characters": [
+        {
+          "id": "lila"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "eating tacos",
+        "standing by food truck",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Přijela jsem z Mexika. Hledám něco skutečného.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "lila"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "embrace",
+        "dusk",
+        "waves"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "soft eyes",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Ty se nedíváš na svaly. Ty se díváš na mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "lila"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "dusk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "city lights",
+        "thoughtful smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Poprvé se cítím víc než tělo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        },
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands across table",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

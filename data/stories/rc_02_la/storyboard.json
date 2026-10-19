@@ -1,0 +1,290 @@
+{
+  "title": "Zlatý obzor",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "astrid"
+        }
+      ],
+      "visual_tags": [
+        "taking photo",
+        "holding camera",
+        "volleyball rolling at feet"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "waving",
+        "running",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Promiň! Můžeš mi ho hodit?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "astrid"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding volleyball",
+        "man catching ball",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astrid",
+          "text": "Můžu. Ale nejdřív mi řekni, jestli tady někde nepotkám skutečného prince.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "Já jsem jen volejbalista. Ale můžu tě vzít na nejlepší smoothie v LA.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_walk",
+      "characters": [
+        {
+          "id": "astrid"
+        },
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking side by side",
+        "holding smoothie cups"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astrid",
+          "text": "Lidi si myslí, že vysoká blondýna je automaticky sebevědomá.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "A není?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_walk",
+      "characters": [
+        {
+          "id": "astrid"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "sad smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astrid",
+          "text": "Někdy si připadám jako věž, která překáží.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_walk",
+      "characters": [
+        {
+          "id": "mateo"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Mně nepřekážíš. Naopak. Jsi první, kdo mě dnes porazil v hádce o míč.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "astrid",
+          "outfit": "evening"
+        },
+        {
+          "id": "mateo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding camera",
+        "man holding camera",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Můžu tě poprosit o jednu fotku? Ne mě. Tebe.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "astrid",
+          "text": "Já jsem za objektivem.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mateo",
+          "text": "Jednou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "astrid",
+          "outfit": "evening"
+        },
+        {
+          "id": "mateo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "arm around shoulder",
+        "sunset",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "astrid",
+          "outfit": "evening"
+        },
+        {
+          "id": "mateo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving flower",
+        "holding flower",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "Astrid, ty nejsi věž. Jsi maják.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "astrid",
+          "text": "To je nejlepší kompliment od volejbalisty.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "astrid",
+          "outfit": "evening"
+        },
+        {
+          "id": "mateo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "laughing",
+        "looking at each other",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mateo",
+          "text": "A příště tě naučím hrát.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "astrid",
+          "text": "A já tě naučím fotit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

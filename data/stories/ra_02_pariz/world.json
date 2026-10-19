@@ -1,0 +1,78 @@
+{
+  "id": "w_ra_02_pariz",
+  "title": "Pod pařížskými lucernami",
+  "synopsis": "Klára hledá v Paříži múzu, vítr jí odnese baret k botám mechanika Jean-Luca.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "art_nouveau_mucha",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_seine",
+      "l_square"
+    ]
+  },
+  "characters": [
+    {
+      "id": "klara",
+      "name": "Klára Dvořáková",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall very slender Czech woman aged 22, long blonde hair, delicate features, beret and cream trench coat",
+      "base": "adult, tall female, very slender, small breasts, blonde hair, long hair, blue eyes, delicate features",
+      "outfits": {
+        "default": "beret, cream trench coat, red scarf",
+        "nobaret": "cream trench coat, red scarf"
+      },
+      "photo": "a tall very slender Czech woman aged 22, long blonde hair, delicate features, beret and cream trench coat",
+      "tag_prompt": "adult, tall female, very slender, small breasts, blonde hair, long hair, blue eyes, delicate features, beret, cream trench coat, red scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jeanluc",
+      "name": "Jean-Luc Moreau",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular French mechanic aged 28 with dark skin and wild black curly hair, leather jacket",
+      "base": "mature male, dark-skinned male, dark skin, muscular, curly hair, messy hair, black hair, brown eyes",
+      "outfits": {
+        "default": "black leather jacket, dark t-shirt, boots, oil stains"
+      },
+      "photo": "a muscular French mechanic aged 28 with dark skin and wild black curly hair, leather jacket",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, muscular, curly hair, messy hair, black hair, brown eyes, black leather jacket, dark t-shirt, boots, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_seine",
+      "name": "Nábřeží Seiny",
+      "description": "Nábřeží Seiny",
+      "tag_prompt": "outdoors, seine, riverbank, street lamps, lamppost, eiffel tower, evening, bookstalls, paintings, city lights",
+      "mood": ""
+    },
+    {
+      "id": "l_square",
+      "name": "Montmartre",
+      "description": "Montmartre",
+      "tag_prompt": "outdoors, montmartre, small square, cobblestone, vintage car, open hood, cafe, evening, warm light",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "title": "Londýnský déšť",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "mei"
+        }
+      ],
+      "visual_tags": [
+        "standing in rain",
+        "no umbrella",
+        "wet hair",
+        "hugging self"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Londýn. Prší.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "walking out of door",
+        "holding umbrella"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Potřebujete deštník?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "mei"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sharing umbrella",
+        "rain",
+        "shy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "Já… ano. Ale nechci zdržovat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Já zrovna končím. Můžu vás doprovodit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mei"
+        }
+      ],
+      "visual_tags": [
+        "holding cup",
+        "hot chocolate",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "Lidi si myslí, že když jsem tichá, nemám názor.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "holding cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Já mluvím hlavně pěstmi. Ale taky mám názor.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "mei"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "To je poprvé, co mi to někdo řekl takhle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "mei"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "wet grass",
+        "squirrel"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Zítra mám zápas. Přijdeš?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mei",
+          "text": "Nikdy jsem box neviděla.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Tak to bude tvůj první. A pak tě vezmu na večeři.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "evening"
+        },
+        {
+          "id": "marcus",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting across table",
+        "candle",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "Vyhrál jsi?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Ale ty jsi tu. To je výhra.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "evening"
+        },
+        {
+          "id": "marcus",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "kiss",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

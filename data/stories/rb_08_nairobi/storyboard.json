@@ -1,0 +1,203 @@
+{
+  "title": "Nairobi – Běžec a fotografka",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "stopping",
+        "looking at view",
+        "breathing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jabari",
+          "text": "Vždycky běžím… ale od čeho?",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Omlouvám se, že vás ruším. Jste nádherný v pohybu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "shy smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lodge",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on terrace",
+        "tea cups"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Přijela jsem z Prahy. Hledám klid.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jabari",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "embrace",
+        "sunset",
+        "silhouette"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jabari",
+          "text": "Ty nechceš medaile. Chceš mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "jabari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dinner",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "jabari",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "lanterns",
+        "stars",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jabari",
+          "text": "Poprvé se cítím doma.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "I já.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "id": "w_rd_08_miami",
+  "title": "Miami, boxer a píseň",
+  "synopsis": "Boxer Rafa trénuje děti, kadeřnice Solange zpívá haitské písně.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gym",
+      "l_beach",
+      "l_harbor"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rafa",
+      "name": "Rafa",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Miami boxer aged 30, broken nose, hard hands, gentle eyes",
+      "base": "mature male, tan skin, muscular, broken nose, short hair, black hair, gentle eyes",
+      "outfits": {
+        "default": "tank top, track pants, towel on shoulder",
+        "dinner": "white shirt, dark trousers"
+      },
+      "photo": "a Miami boxer aged 30, broken nose, hard hands, gentle eyes",
+      "tag_prompt": "mature male, tan skin, muscular, broken nose, short hair, black hair, gentle eyes, tank top, track pants, towel on shoulder",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "solange",
+      "name": "Solange",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Haitian-American hairdresser aged 26, lively eyes, colorful satin blouse",
+      "base": "adult, dark-skinned female, dark skin, curvy, large breasts, wide hips, black hair, curly hair",
+      "outfits": {
+        "default": "satin blouse, colorful blouse, skirt"
+      },
+      "photo": "a curvy Haitian-American hairdresser aged 26, lively eyes, colorful satin blouse",
+      "tag_prompt": "adult, dark-skinned female, dark skin, curvy, large breasts, wide hips, black hair, curly hair, satin blouse, colorful blouse, skirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gym",
+      "name": "Tělocvična",
+      "description": "Tělocvična",
+      "tag_prompt": "indoors, old boxing gym, boxing ring, cracked windows, rain outside, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, sunset, orange sky, palm trees, miami",
+      "mood": ""
+    },
+    {
+      "id": "l_harbor",
+      "name": "Restaurace u přístavu",
+      "description": "Restaurace u přístavu",
+      "tag_prompt": "outdoors, harbor restaurant, candles, night, boats, sea breeze",
+      "mood": ""
+    }
+  ]
+}

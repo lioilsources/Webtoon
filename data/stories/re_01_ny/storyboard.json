@@ -1,0 +1,282 @@
+{
+  "title": "Šátek nad Brooklynem",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_street",
+      "characters": [],
+      "visual_tags": [
+        "autumn",
+        "bridge",
+        "cloudy sky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Brooklyn, podzim. Kafe stojí sedm dolarů.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "nikol"
+        }
+      ],
+      "visual_tags": [
+        "holding map upside down",
+        "wind",
+        "red scarf flying away",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FŮŮ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "gabriel"
+        }
+      ],
+      "visual_tags": [
+        "picking up red scarf",
+        "clay on face",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "nikol"
+        },
+        {
+          "id": "gabriel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "blush",
+        "embarrassed",
+        "man holding red scarf"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikol",
+          "text": "To je můj šátek. Teda byl. Teda je. Promiň, mluvím česky, když se stydím.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "gabriel",
+          "text": "Pak se styďte dál. Česky je to nejhezčí, co jsem dnes slyšel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "nikol"
+        },
+        {
+          "id": "gabriel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man tying scarf around her neck",
+        "gentle",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriel",
+          "text": "Teď patříte k Brooklynu. Odhlasováno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "nikol"
+        }
+      ],
+      "visual_tags": [
+        "touching unfinished sculpture",
+        "surprised",
+        "sculpture of woman's head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikol",
+          "text": "Proč má ta socha můj nos?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "gabriel"
+        }
+      ],
+      "visual_tags": [
+        "standing among sculptures",
+        "shy smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriel",
+          "text": "Protože jsem ho viděl v metru před třemi dny. A pak jsem ho nemohl přestat vymýšlet.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_studio",
+      "characters": [
+        {
+          "id": "nikol"
+        },
+        {
+          "id": "gabriel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "handshake",
+        "holding hands",
+        "clay on hands",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikol",
+          "text": "To je… skoro děsivé. A trochu to nejromantičtější, co jsem slyšela.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "nikol"
+        },
+        {
+          "id": "gabriel",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on blanket",
+        "paper cups",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriel",
+          "text": "Pochybovala jste o své kráse. Proč?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nikol",
+          "text": "Protože jsem malá a kulatá a v metru mě lidé přehlížejí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "gabriel",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "soft smile",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriel",
+          "text": "Newyorčané se neumí dívat. Já umím. Dívám se pořád.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "nikol"
+        },
+        {
+          "id": "gabriel",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "first star in sky",
+        "dusk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

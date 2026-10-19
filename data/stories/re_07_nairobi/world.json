@@ -1,0 +1,86 @@
+{
+  "id": "w_re_07_nairobi",
+  "title": "Nairobské slunce",
+  "synopsis": "Trenér Marcus „Mo“ s tajnými básněmi a fotografka Wanjiru v parku Uhuru.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_park",
+      "l_cafe",
+      "l_hills"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mo",
+      "name": "Mo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Black British coach aged 32, shaved head, big smile, sportswear",
+      "base": "mature male, dark-skinned male, very dark skin, muscular, bald, smile",
+      "outfits": {
+        "default": "sportswear, tank top, track pants",
+        "evening": "grey hoodie"
+      },
+      "photo": "a muscular Black British coach aged 32, shaved head, big smile, sportswear",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, muscular, bald, smile, sportswear, tank top, track pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "wanjiru",
+      "name": "Wanjiru",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Kenyan photographer aged 28, short dreadlocks, striking eyes, camera",
+      "base": "adult, dark-skinned female, very dark skin, short hair, dreadlocks, expressive eyes",
+      "outfits": {
+        "default": "khaki shirt, camera strap, jeans"
+      },
+      "photo": "a Kenyan photographer aged 28, short dreadlocks, striking eyes, camera",
+      "tag_prompt": "adult, dark-skinned female, very dark skin, short hair, dreadlocks, expressive eyes, khaki shirt, camera strap, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_park",
+      "name": "Park Uhuru",
+      "description": "Park Uhuru",
+      "tag_prompt": "outdoors, uhuru park, nairobi, sunny, running track, fountain",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, cafe, nairobi, window, photographs on table",
+      "mood": ""
+    },
+    {
+      "id": "l_hills",
+      "name": "Ngong Hills",
+      "description": "Ngong Hills",
+      "tag_prompt": "outdoors, ngong hills, sunset, valley, wind, golden light",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "title": "New York – Malá brunetka a boxer",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "sitting on bench",
+        "holding compact mirror",
+        "looking at mirror",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Central Park. Podzimní odpoledne.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "sofia",
+          "text": "Proč bych někoho zajímala… jsem moc malá a…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "jogging",
+        "tripping over backpack",
+        "falling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUCH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "sofia"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man sitting on ground next to bench",
+        "embarrassed",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "apologetic smile",
+        "holding two coffee cups"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Omlouvám se. Jsem James. Trénuju na zápas.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "shy",
+        "looking down",
+        "holding coffee cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Sofia. Právě jsem přijela z Miami… a pořád si myslím, že sem nepatřím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "warm eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Patříš. A ta tvoje energie je silnější než jakýkoliv úder.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "sofia"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "holding hands",
+        "evening"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Smím tě políbit?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "sofia"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "slow",
+        "tender"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "sofia"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "head on chest",
+        "closed eyes",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        },
+        {
+          "id": "james",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "city view",
+        "smiling at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Poprvé se cítím… hezká.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "Jsi. A já chci být ten, kdo ti to bude říkat každý den.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

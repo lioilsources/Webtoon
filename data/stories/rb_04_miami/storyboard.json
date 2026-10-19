@@ -1,0 +1,229 @@
+{
+  "title": "Miami – Dívka, kterou je třeba vidět",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "sitting on sand",
+        "hugging knees",
+        "sunset",
+        "lonely"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Všichni tady mají… víc. Já jsem jako kluk.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "riding bicycle",
+        "stopping",
+        "cowboy hat"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man standing with bicycle",
+        "tipping hat",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Hezký večer. Nechceš společnost?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at bar",
+        "drinks",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Přijel jsem na rodeo. A ty?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "aisha",
+          "text": "Hledám někoho, kdo mě uvidí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "embrace",
+        "wind",
+        "dusk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "looking at her",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Vidím tě. A jsi dokonalá.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sea breeze"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "smile",
+        "candlelight",
+        "ocean view"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Poprvé se cítím dost ženská.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "carlos",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands across table",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

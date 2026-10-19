@@ -1,0 +1,97 @@
+{
+  "id": "w_r_miami",
+  "title": "Miami – Dívka v letních šatech",
+  "synopsis": "Camila, fotografka z Brazílie, a Jack, instruktor surfování.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_sunrise",
+      "l_surf",
+      "l_restaurant",
+      "l_night"
+    ]
+  },
+  "characters": [
+    {
+      "id": "camila",
+      "name": "Camila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Brazilian woman aged 27, long black curly hair, tan skin, warm brown eyes",
+      "base": "adult, curvy, tan skin, long hair, black hair, curly hair, brown eyes",
+      "outfits": {
+        "default": "yellow sundress, sun hat",
+        "surf": "rash guard, board shorts, wet hair",
+        "night": "white sundress"
+      },
+      "photo": "a curvy Brazilian woman aged 27, long black curly hair, tan skin, warm brown eyes",
+      "tag_prompt": "adult, curvy, tan skin, long hair, black hair, curly hair, brown eyes, yellow sundress, sun hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jack",
+      "name": "Jack",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic white man aged 32, short blond hair, blue eyes, sun-tanned",
+      "base": "mature male, tall, muscular, blonde hair, short hair, blue eyes, tan",
+      "outfits": {
+        "default": "white t-shirt, board shorts",
+        "surf": "rash guard, board shorts",
+        "dinner": "linen shirt, chinos"
+      },
+      "photo": "a tall athletic white man aged 32, short blond hair, blue eyes, sun-tanned",
+      "tag_prompt": "mature male, tall, muscular, blonde hair, short hair, blue eyes, tan, white t-shirt, board shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_sunrise",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, sunrise, ocean, palm trees, miami",
+      "mood": ""
+    },
+    {
+      "id": "l_surf",
+      "name": "Vlny",
+      "description": "Vlny",
+      "tag_prompt": "outdoors, ocean, waves, surfboard, sunny, splash",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, small restaurant, string lights, candle, evening, ocean view",
+      "mood": ""
+    },
+    {
+      "id": "l_night",
+      "name": "Noční pláž",
+      "description": "Noční pláž",
+      "tag_prompt": "outdoors, beach, night, moon, stars, waves, moonlight",
+      "mood": ""
+    }
+  ]
+}

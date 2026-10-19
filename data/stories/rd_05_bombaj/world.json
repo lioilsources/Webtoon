@@ -1,0 +1,93 @@
+{
+  "id": "w_rd_05_bombaj",
+  "title": "Bombajská čajová pauza",
+  "synopsis": "Programátorka Priya a Arjun, bývalý kriketista, který nalévá nejlepší čaj v Bombaji.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "hassaku_soft",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_stall",
+      "l_marine"
+    ]
+  },
+  "characters": [
+    {
+      "id": "priya",
+      "name": "Priya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Indian woman aged 27, long dark hair, almond eyes, pastel modern saree",
+      "base": "adult, indian, brown skin, slender, small breasts, long hair, black hair, almond eyes",
+      "outfits": {
+        "default": "pastel saree"
+      },
+      "photo": "a slender Indian woman aged 27, long dark hair, almond eyes, pastel modern saree",
+      "tag_prompt": "adult, indian, brown skin, slender, small breasts, long hair, black hair, almond eyes, pastel saree",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "arjun",
+      "name": "Arjun",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Indian tea-stall owner aged 35, strong arms, goatee, broad smile",
+      "base": "mature male, indian, brown skin, muscular arms, goatee, short hair, black hair, wide smile",
+      "outfits": {
+        "default": "kurta, rolled up sleeves"
+      },
+      "photo": "an Indian tea-stall owner aged 35, strong arms, goatee, broad smile",
+      "tag_prompt": "mature male, indian, brown skin, muscular arms, goatee, short hair, black hair, wide smile, kurta, rolled up sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "otec",
+      "name": "Otec",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a stern older Indian man dressed in white",
+      "base": "old man, indian, brown skin, grey hair, mustache, stern",
+      "outfits": {
+        "default": "white kurta"
+      },
+      "photo": "a stern older Indian man dressed in white",
+      "tag_prompt": "old man, indian, brown skin, grey hair, mustache, stern, white kurta",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_stall",
+      "name": "Čajový stánek",
+      "description": "Čajový stánek",
+      "tag_prompt": "outdoors, tea stall, tin roof, rain, train station, morning, mumbai, monsoon",
+      "mood": ""
+    },
+    {
+      "id": "l_marine",
+      "name": "Marine Drive",
+      "description": "Marine Drive",
+      "tag_prompt": "outdoors, marine drive, seawall, night, city lights, wet street, waves",
+      "mood": ""
+    }
+  ]
+}

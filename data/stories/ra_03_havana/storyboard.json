@@ -1,0 +1,244 @@
+{
+  "title": "Karibské rytmy",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_street",
+      "characters": [],
+      "visual_tags": [
+        "colorful buildings",
+        "vintage car",
+        "music"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Stará Havana. Odevšad zní rumba a salsa.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "bea"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "people turning heads",
+        "embarrassed",
+        "hand on chest",
+        "holding hat"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "bea"
+        }
+      ],
+      "visual_tags": [
+        "sigh",
+        "embarrassed",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bea",
+          "text": "Proč musím všude tak svítit? Zrzavé vlasy, postava, kterou nepřehlédneš...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "bea"
+        }
+      ],
+      "visual_tags": [
+        "looking up",
+        "wistful",
+        "sad smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bea",
+          "text": "Přála bych si být pro jednou neviditelná.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "baptista"
+        }
+      ],
+      "visual_tags": [
+        "playing guitar",
+        "smile",
+        "closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Náměstíčko před starou katedrálou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "manny"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "salsa",
+        "crowd",
+        "dynamic pose",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "bea"
+        },
+        {
+          "id": "manny"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man bowing",
+        "offering hand",
+        "woman standing aside",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "manny",
+          "text": "Krásná seňorita tu stojí sama? V Havaně se na hudbu nesmutní. Smím prosit?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "bea"
+        }
+      ],
+      "visual_tags": [
+        "stepping back",
+        "nervous",
+        "hand on chest",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bea",
+          "text": "Já... já neumím tancovat. A všichni se budou dívat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "bea"
+        },
+        {
+          "id": "manny"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man holding her hand",
+        "pulling her close",
+        "faces close",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "manny",
+          "text": "Ať se dívají. Bude to tím, že v celém městě není nikdo tak nádherný jako vy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_plaza",
+      "characters": [
+        {
+          "id": "bea"
+        },
+        {
+          "id": "manny"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing together",
+        "salsa",
+        "twirling",
+        "laughing",
+        "dress flowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "manny",
+          "text": "Věřte mi, chytím vás.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

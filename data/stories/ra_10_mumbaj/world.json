@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_10_mumbaj",
+  "title": "Indická noc pod hvězdami",
+  "synopsis": "Australský mechanik Rhoan nastartuje na Marine Drive kabriolet krásné Priyi.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_market",
+      "l_drive"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rhoan",
+      "name": "Rhoan Dean",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Australian mechanic aged 27, tattooed arms, messy blond hair, tank top and tool belt",
+      "base": "mature male, muscular, tattoo, arm tattoo, blonde hair, messy hair, blue eyes",
+      "outfits": {
+        "default": "tank top, jeans, tool belt, backpack"
+      },
+      "photo": "a muscular Australian mechanic aged 27, tattooed arms, messy blond hair, tank top and tool belt",
+      "tag_prompt": "mature male, muscular, tattoo, arm tattoo, blonde hair, messy hair, blue eyes, tank top, jeans, tool belt, backpack",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "priya",
+      "name": "Priya Sharma",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender Indian woman aged 24 with long dyed blond hair, turquoise saree and gold jewelry",
+      "base": "adult, indian, brown skin, tall female, slender, small breasts, blonde hair, long hair, brown eyes, gold jewelry",
+      "outfits": {
+        "default": "turquoise saree, gold earrings, bracelet"
+      },
+      "photo": "a tall slender Indian woman aged 24 with long dyed blond hair, turquoise saree and gold jewelry",
+      "tag_prompt": "adult, indian, brown skin, tall female, slender, small breasts, blonde hair, long hair, brown eyes, gold jewelry, turquoise saree, gold earrings, bracelet",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_market",
+      "name": "Tržnice",
+      "description": "Tržnice",
+      "tag_prompt": "outdoors, mumbai, market, bazaar, spices, colorful stalls, string lights, auto rickshaw, crowd, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_drive",
+      "name": "Marine Drive",
+      "description": "Marine Drive",
+      "tag_prompt": "outdoors, marine drive, mumbai, promenade, sea, night, street lights, city lights, vintage convertible",
+      "mood": ""
+    }
+  ]
+}

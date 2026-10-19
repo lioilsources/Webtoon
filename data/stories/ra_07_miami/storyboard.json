@@ -1,0 +1,232 @@
+{
+  "title": "Anděl z pláže South Beach",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_ocean",
+      "characters": [],
+      "visual_tags": [
+        "art deco buildings",
+        "palm trees",
+        "people roller skating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ocean Drive, Miami.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ocean",
+      "characters": [
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "sitting on bench",
+        "adjusting glasses",
+        "watching people",
+        "sad"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ocean",
+      "characters": [
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "sigh",
+        "pushing up glasses",
+        "melancholy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucas",
+          "text": "Celé dny trávím u počítače.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ocean",
+      "characters": [
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "slouching on bench",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucas",
+          "text": "V tomhle městě plném slunce a dokonale opálených lidí jsem jako duch z jiné planety.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "tripping over driftwood",
+        "falling",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "camila"
+        },
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man running to help",
+        "kneeling",
+        "woman sitting on sand",
+        "concerned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucas",
+          "text": "Jste v pořádku? Nenařízla jste si nohu?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "sitting on sand",
+        "smile",
+        "brushing sand off knee"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Jen trocha písku! Ale děkuji... Vy jste tak pozorný.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "camila"
+        }
+      ],
+      "visual_tags": [
+        "warm smile",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Většina kluků tady jen předvádí bicepsy a ani by si nevšimla.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "embarrassed",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucas",
+          "text": "Já nejsem žádný sportovec... Jen obyčejný klučina z kanceláře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "camila"
+        },
+        {
+          "id": "lucas"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing up",
+        "woman holding his hand",
+        "warm smile",
+        "ocean"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "camila",
+          "text": "Právě proto jste výjimečný. Pojďte, pozvu vás na čerstvý kokosový džus jako poděkování!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

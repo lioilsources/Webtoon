@@ -1,0 +1,245 @@
+{
+  "title": "Safari srdce",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_savanna",
+      "characters": [],
+      "visual_tags": [
+        "elephants",
+        "sunset",
+        "acacia tree"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Národní park u Nairobi. Západ slunce.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_savanna",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "standing by jeep",
+        "looking through binoculars",
+        "elephants"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_savanna",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "stretching",
+        "looking down at self",
+        "sigh",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Vypadám spíš jako atletický chlapec než jako žena, která by někoho okouzlila...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_savanna",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "melancholy",
+        "looking at sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Láska je pro jiné.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man walking toward woman",
+        "holding two mugs",
+        "campfire"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kemp pod akácií.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "handing mug",
+        "hands touching",
+        "big hand",
+        "small hand",
+        "steam"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "gentle look",
+        "soft smile",
+        "holding mug"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Sleduji tě celý den. Máš v sobě takovou sílu a vznešenost... Připomínáš mi gazelu na obzoru.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "blinking",
+        "holding mug",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Já? Myslela jsem, že boxerskému šampionovi se líbí úplně jiné typy žen.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hand on her shoulder",
+        "standing close",
+        "looking at each other",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Když strávíš život v ringu, naučíš se poznat pravou krásu a ryzost.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_camp",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "faces close",
+        "smile",
+        "blush",
+        "sunset glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "A ty jsi ta nejkrásnější žena, jakou jsem kdy potkal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "title": "Londýnský déšť a horký čaj",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_station",
+      "characters": [],
+      "visual_tags": [
+        "glass roof",
+        "iron arches",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Nádraží St. Pancras. Venku leje jako z konve.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "mayumi"
+        }
+      ],
+      "visual_tags": [
+        "pulling huge suitcase",
+        "oversized suitcase",
+        "struggling",
+        "tired"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "mayumi"
+        }
+      ],
+      "visual_tags": [
+        "out of breath",
+        "sweatdrop",
+        "holding suitcase handle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mayumi",
+          "text": "Proč jsem si nabalila tolik věcí?",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "mayumi"
+        }
+      ],
+      "visual_tags": [
+        "sad",
+        "lonely",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mayumi",
+          "text": "Jsem tu tak ztracená... Malá holka ve velkém městě.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "mayumi"
+        }
+      ],
+      "visual_tags": [
+        "sitting at table",
+        "stirring tea",
+        "teacup",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tradiční londýnská čajovna.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "jack"
+        }
+      ],
+      "visual_tags": [
+        "sitting down",
+        "cowboy hat bumping flower vase",
+        "vase tipping",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "jack",
+          "outfit": "hatless"
+        }
+      ],
+      "visual_tags": [
+        "taking off hat",
+        "apologizing",
+        "embarrassed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Proboha, ma'am, moc se omlouvám! Jsem v tomhle městě velký jako slon v porcelánu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "mayumi"
+        }
+      ],
+      "visual_tags": [
+        "small smile",
+        "shy",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mayumi",
+          "text": "To nic není... Já si tu zase připadám tak malá, že mě lidé přehlížejí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "mayumi"
+        },
+        {
+          "id": "jack",
+          "outfit": "hatless"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at same table",
+        "height difference",
+        "gentle gaze",
+        "teacups",
+        "fireplace"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Přehlédnout někoho s tak kouzelným úsměvem? To by musel být člověk slepý.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "mayumi"
+        },
+        {
+          "id": "jack",
+          "outfit": "hatless"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smiling at each other",
+        "blush",
+        "rain on window",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Mohu vám nabídnout společnost, než venku přestane pršet?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

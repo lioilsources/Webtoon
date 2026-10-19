@@ -1,0 +1,292 @@
+{
+  "title": "Salsa na Havaně",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "rosario"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "teaching salsa",
+        "hands on hips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rosario",
+          "text": "Salsa není v nohou, salsa je v bocích!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "holding trumpet",
+        "lowering trumpet",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Nemáte rytmus, Rosario.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "rosario"
+        }
+      ],
+      "visual_tags": [
+        "hands on hips",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rosario",
+          "text": "Promiňte?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rosario",
+          "text": "Tak pojďte. Ukažte mi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing together",
+        "salsa",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Po západu slunce.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing",
+        "close",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Tančíte, jako byste se bála, že by to mohlo být skutečné.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rosario",
+          "text": "Cože?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "rosario"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "looking at viewer",
+        "wind in hair"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "candles",
+        "reaching across table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rosario",
+          "text": "Bála jsem se. Ten poslední odešel před pěti lety.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "diego",
+          "text": "Tohle je poprvé, co bych chtěl hrát pro někoho.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "playing trumpet",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rosario",
+          "text": "Tak hrajte. Já budu poslouchat. A neodejdu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "♪",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dawn",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing slowly",
+        "dawn"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dawn",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "golden light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dawn",
+      "characters": [
+        {
+          "id": "rosario"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Tak tedy jste zůstala.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rosario",
+          "text": "Nezůstala. Přišla jsem domů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

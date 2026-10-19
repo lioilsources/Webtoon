@@ -1,0 +1,95 @@
+{
+  "id": "w_rb_06_la",
+  "title": "Los Angeles – Svalovec",
+  "synopsis": "Marcus si myslí, že ženy chtějí jen jeho tělo, Lila z Mexika hledá něco skutečného.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_juggernaut",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pier",
+      "l_truck",
+      "l_beach",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall very muscular Black man aged 33, short black hair, tank top",
+      "base": "mature male, dark-skinned male, dark skin, tall, muscular, short hair, black hair",
+      "outfits": {
+        "default": "tank top, sweatpants",
+        "dinner": "black shirt, dark trousers"
+      },
+      "photo": "a tall very muscular Black man aged 33, short black hair, tank top",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, tall, muscular, short hair, black hair, tank top, sweatpants",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Latina woman aged 27, long chestnut hair, jeans and a denim jacket",
+      "base": "adult, petite, curvy, wide hips, long hair, brown hair, tan skin, brown eyes",
+      "outfits": {
+        "default": "jeans, crop top, denim jacket",
+        "dinner": "red dress, long sleeves"
+      },
+      "photo": "a petite curvy Latina woman aged 27, long chestnut hair, jeans and a denim jacket",
+      "tag_prompt": "adult, petite, curvy, wide hips, long hair, brown hair, tan skin, brown eyes, jeans, crop top, denim jacket",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pier",
+      "name": "Santa Monica Pier",
+      "description": "Santa Monica Pier",
+      "tag_prompt": "outdoors, santa monica pier, ferris wheel, ocean, sunset",
+      "mood": ""
+    },
+    {
+      "id": "l_truck",
+      "name": "Food truck",
+      "description": "Food truck",
+      "tag_prompt": "outdoors, food truck, string lights, evening, tacos, beach",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, sand, waves, dusk, pacific ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace s výhledem",
+      "description": "Restaurace s výhledem",
+      "tag_prompt": "indoors, rooftop restaurant, los angeles skyline, night, city lights",
+      "mood": ""
+    }
+  ]
+}

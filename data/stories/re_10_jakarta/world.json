@@ -1,0 +1,86 @@
+{
+  "id": "w_re_10_jakarta",
+  "title": "Boxerův deník",
+  "synopsis": "Boxer Arjun z Bombaje a novinářka Sari, která našla jeho deník.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gym",
+      "l_canal",
+      "l_roof"
+    ]
+  },
+  "characters": [
+    {
+      "id": "arjun",
+      "name": "Arjun",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Indian boxer aged 29, short black hair, scar on his chin, quick hands",
+      "base": "mature male, indian, brown skin, short hair, black hair, scar on chin, athletic",
+      "outfits": {
+        "default": "tank top, track pants, boxing wraps",
+        "evening": "white t-shirt, pants"
+      },
+      "photo": "an Indian boxer aged 29, short black hair, scar on his chin, quick hands",
+      "tag_prompt": "mature male, indian, brown skin, short hair, black hair, scar on chin, athletic, tank top, track pants, boxing wraps",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Indonesian journalist aged 29, black hair with blunt bangs, calm gaze, notebook",
+      "base": "adult, asian, tan skin, black hair, blunt bangs, medium hair, calm eyes",
+      "outfits": {
+        "default": "blouse, cardigan, holding notebook"
+      },
+      "photo": "an Indonesian journalist aged 29, black hair with blunt bangs, calm gaze, notebook",
+      "tag_prompt": "adult, asian, tan skin, black hair, blunt bangs, medium hair, calm eyes, blouse, cardigan, holding notebook",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gym",
+      "name": "Tělocvična",
+      "description": "Tělocvična",
+      "tag_prompt": "indoors, old boxing gym, punching bag, jakarta, dim light",
+      "mood": ""
+    },
+    {
+      "id": "l_canal",
+      "name": "Kavárna u kanálu",
+      "description": "Kavárna u kanálu",
+      "tag_prompt": "outdoors, cafe by canal, jakarta, evening, string lights",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, jakarta skyline, mosque, skyscrapers, dusk",
+      "mood": ""
+    }
+  ]
+}

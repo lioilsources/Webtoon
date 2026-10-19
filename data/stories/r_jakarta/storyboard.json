@@ -1,0 +1,414 @@
+{
+  "title": "Jakarta – Mechanik a dívka v červených šatech",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "standing by car",
+        "confident"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "hand on hip",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Prý jste nejlepší mechanik v Jakartě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "rafi"
+        }
+      ],
+      "visual_tags": [
+        "wiping hands",
+        "rag",
+        "shy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "To říká Budi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "budi"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "thumbs up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "budi",
+          "text": "A taky to říká tvoje máma.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "rafi"
+        }
+      ],
+      "visual_tags": [
+        "rolling eyes",
+        "annoyed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "rafi"
+        }
+      ],
+      "visual_tags": [
+        "repairing engine",
+        "leaning over car",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "sitting on chair",
+        "watching",
+        "curious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Vždycky jste tak soustředěný?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rafi",
+          "text": "Když něco opravuju, ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "A lidi?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "rafi"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "pause"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "Lidi jsou složitější.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_party",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "elegant"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Maya pozve Rafiho na večírek.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_party",
+      "characters": [
+        {
+          "id": "rafi",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "nervous",
+        "adjusting collar"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "Tohle je chyba.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Co?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rafi",
+          "text": "Že jsem sem přišel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_party",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        }
+      ],
+      "visual_tags": [
+        "puzzled",
+        "head tilt"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Proč?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_party",
+      "characters": [
+        {
+          "id": "rafi",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "Protože teď už nedokážu myslet na nic jiného.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        },
+        {
+          "id": "rafi",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on rooftop",
+        "night skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Víš, co jsem si o tobě myslela?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rafi",
+          "text": "Co?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Že jsi jen mechanik.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "A teď?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Teď vím, že jsi muž, do kterého se můžu zamilovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        },
+        {
+          "id": "rafi",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafi",
+          "text": "Já už se zamiloval.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "red_dress"
+        },
+        {
+          "id": "rafi",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "city lights"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "w_r_nairobi",
+  "title": "Nairobi – Muž v obleku a žena z parku",
+  "synopsis": "David, finanční analytik, a Amara, veterinářka.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_office",
+      "l_park",
+      "l_restaurant",
+      "l_city"
+    ]
+  },
+  "characters": [
+    {
+      "id": "david",
+      "name": "David",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall elegant Kenyan man aged 41, very dark skin, short black hair, perfectly tailored suit",
+      "base": "mature male, dark-skinned male, very dark skin, tall, short hair, black hair, elegant",
+      "outfits": {
+        "default": "navy suit, white shirt, tie",
+        "coat": "navy suit, long coat"
+      },
+      "photo": "a tall elegant Kenyan man aged 41, very dark skin, short black hair, perfectly tailored suit",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, tall, short hair, black hair, elegant, navy suit, white shirt, tie",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amara",
+      "name": "Amara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an athletic Kenyan woman aged 34, very dark skin, short natural hair",
+      "base": "adult, dark-skinned female, very dark skin, athletic, very short hair, afro",
+      "outfits": {
+        "default": "white shirt, khaki pants, sneakers",
+        "blue_dress": "blue dress, simple dress"
+      },
+      "photo": "an athletic Kenyan woman aged 34, very dark skin, short natural hair",
+      "tag_prompt": "adult, dark-skinned female, very dark skin, athletic, very short hair, afro, white shirt, khaki pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jonas",
+      "name": "Jonas",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Kenyan man aged 40 with glasses, grey suit, cheeky grin",
+      "base": "mature male, dark-skinned male, dark skin, glasses, short hair, black hair, grin",
+      "outfits": {
+        "default": "grey suit"
+      },
+      "photo": "a Kenyan man aged 40 with glasses, grey suit, cheeky grin",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, glasses, short hair, black hair, grin, grey suit",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_office",
+      "name": "Kancelář",
+      "description": "Kancelář",
+      "tag_prompt": "indoors, office, large window, cityscape, nairobi skyline, desk, laptop",
+      "mood": ""
+    },
+    {
+      "id": "l_park",
+      "name": "Park",
+      "description": "Park",
+      "tag_prompt": "outdoors, park, acacia tree, green grass, sunny, nairobi",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, warm light, evening, candle",
+      "mood": ""
+    },
+    {
+      "id": "l_city",
+      "name": "Večerní město",
+      "description": "Večerní město",
+      "tag_prompt": "outdoors, city street, night, street lights, nairobi",
+      "mood": ""
+    }
+  ]
+}

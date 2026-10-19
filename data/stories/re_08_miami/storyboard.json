@@ -1,0 +1,249 @@
+{
+  "title": "Mastné ruce, čisté srdce",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "lying under car",
+        "only legs visible",
+        "tools"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "carmen"
+        }
+      ],
+      "visual_tags": [
+        "hurrying",
+        "holding briefcase",
+        "worried"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carmen",
+          "text": "Pane mechaniku. Moje auto umřelo a já mám jednu hodinu na případ zbytku života.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "crawling out from under car",
+        "greasy",
+        "grin",
+        "talking to car"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Hola, bonita. Probouzíme se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "carmen"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carmen",
+          "text": "Vy s auty mluvíte španělsky?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "diego",
+          "text": "Všechno dobré na světě mluví španělsky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "VRRRM",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_coffee",
+      "characters": [
+        {
+          "id": "carmen"
+        }
+      ],
+      "visual_tags": [
+        "holding coffee cup",
+        "soft smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carmen",
+          "text": "Všichni mě vidí jako advokátku. Vy jste řekl ‚žena ve spěchu‘. To bylo… lidské.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_coffee",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "holding coffee cup",
+        "wiping forehead with handkerchief"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Hledal jsem ženu, která pozná, že mastné ruce můžou být čisté.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "diego",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "walking on sand",
+        "clean",
+        "hair down",
+        "evening"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carmen",
+          "text": "Vypadáte jinak.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carmen",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "wind in hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carmen",
+          "text": "Jsem zvyklá vyhrávat spory. Ale s vámi nechci vyhrát. Chci remízu. Napořád.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carmen",
+          "outfit": "evening"
+        },
+        {
+          "id": "diego",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "careful embrace",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carmen",
+          "outfit": "evening"
+        },
+        {
+          "id": "diego",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "sand",
+        "ocean",
+        "storm clouds on horizon"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Na obzoru bouřka, která se rozhodne počkat.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

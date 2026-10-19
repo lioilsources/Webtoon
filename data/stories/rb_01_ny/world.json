@@ -1,0 +1,95 @@
+{
+  "id": "w_rb_01_ny",
+  "title": "New York – Malá brunetka a boxer",
+  "synopsis": "Sofia z Miami pochybuje o sobě, James trénuje na zápas.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_park",
+      "l_cafe",
+      "l_lake",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Latina woman aged 26, olive skin, long wavy dark brown hair, brown eyes",
+      "base": "adult, petite, curvy, wide hips, small breasts, long hair, wavy hair, dark brown hair, olive skin, brown eyes",
+      "outfits": {
+        "default": "oversized sweater, blue jeans, sneakers",
+        "dinner": "burgundy dress, simple dress"
+      },
+      "photo": "a petite curvy Latina woman aged 26, olive skin, long wavy dark brown hair, brown eyes",
+      "tag_prompt": "adult, petite, curvy, wide hips, small breasts, long hair, wavy hair, dark brown hair, olive skin, brown eyes, oversized sweater, blue jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "james",
+      "name": "James",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular African American man aged 32, short black hair, boxer",
+      "base": "mature male, dark-skinned male, dark skin, tall, muscular, short hair, black hair",
+      "outfits": {
+        "default": "grey hoodie, sweatpants, boxing gloves over shoulder",
+        "dinner": "black shirt, dark trousers"
+      },
+      "photo": "a tall muscular African American man aged 32, short black hair, boxer",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, tall, muscular, short hair, black hair, grey hoodie, sweatpants, boxing gloves over shoulder",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_park",
+      "name": "Central Park",
+      "description": "Central Park",
+      "tag_prompt": "outdoors, central park, autumn, golden leaves, park bench, afternoon, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna u parku",
+      "description": "Kavárna u parku",
+      "tag_prompt": "indoors, cafe, window, coffee cup, autumn, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_lake",
+      "name": "Jezero",
+      "description": "Jezero",
+      "tag_prompt": "outdoors, central park, lake, evening, street lamps, manhattan skyline, reflections",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, window, city lights, night, candle, new york",
+      "mood": ""
+    }
+  ]
+}

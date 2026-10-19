@@ -1,0 +1,221 @@
+{
+  "title": "Jakarta – Bombaj",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "ravi"
+        }
+      ],
+      "visual_tags": [
+        "lost",
+        "looking around",
+        "holding briefcase"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "ravi"
+        },
+        {
+          "id": "ayu"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman serving coffee",
+        "man holding cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ravi",
+          "text": "Prosím, kávu. A cestu k hotelu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Kávu dostanete. Cestu vám ukážu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ravi",
+          "text": "To je moc milé.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "ravi"
+        }
+      ],
+      "visual_tags": [
+        "writing notes",
+        "notebook",
+        "sigh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ravi",
+          "text": "Celý život jsem v kanceláři. Připadám si nudný.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "ayu"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "leaning on counter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Nudný člověk by se neptal na cestu. Jen by bloudil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bombay",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "sea",
+        "evening",
+        "looking around"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O měsíc později. Bombaj.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bombay",
+      "characters": [
+        {
+          "id": "ravi"
+        },
+        {
+          "id": "ayu",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "surprised",
+        "meeting",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Tak jsme se našli.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ravi",
+          "text": "Já jsem doufal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "ravi"
+        },
+        {
+          "id": "ayu",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "candles",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ravi",
+          "text": "Ayu, můžu tě pozvat na procházku?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Ano. A pak znovu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "ravi"
+        },
+        {
+          "id": "ayu",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "candlelight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_01_ny",
+  "title": "Nečekaná inspirace v Manhattanu",
+  "synopsis": "Nina si v New Yorku připadá neviditelná, dokud ji v kavárně v SoHo nezachytí Julian.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_fifth",
+      "l_cafe"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nina",
+      "name": "Nina Sanchez",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Puerto Rican woman aged 25, long dark wavy hair, warm brown eyes",
+      "base": "adult, short stature, curvy, wide hips, tan skin, long hair, wavy hair, dark brown hair, brown eyes",
+      "outfits": {
+        "default": "oversized sweater, knit sweater, skinny jeans, sneakers"
+      },
+      "photo": "a petite curvy Puerto Rican woman aged 25, long dark wavy hair, warm brown eyes",
+      "tag_prompt": "adult, short stature, curvy, wide hips, tan skin, long hair, wavy hair, dark brown hair, brown eyes, oversized sweater, knit sweater, skinny jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "julian",
+      "name": "Julian Vane",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic American man aged 32, sharp-featured face, short light brown hair, tailored navy suit",
+      "base": "mature male, tall, athletic, slender, sharp jawline, short hair, light brown hair, blue eyes",
+      "outfits": {
+        "default": "navy suit, tailored suit, white shirt, no necktie, wristwatch"
+      },
+      "photo": "a tall athletic American man aged 32, sharp-featured face, short light brown hair, tailored navy suit",
+      "tag_prompt": "mature male, tall, athletic, slender, sharp jawline, short hair, light brown hair, blue eyes, navy suit, tailored suit, white shirt, no necktie, wristwatch",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_fifth",
+      "name": "Pátá Avenue",
+      "description": "Pátá Avenue",
+      "tag_prompt": "outdoors, fifth avenue, new york, rain, umbrellas, yellow taxi, crowd, boutique, shop window, mannequins, overcast",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna v SoHo",
+      "description": "Kavárna v SoHo",
+      "tag_prompt": "indoors, cafe, soho, coffee, raindrops on window, warm light, wooden table, laptop",
+      "mood": ""
+    }
+  ]
+}

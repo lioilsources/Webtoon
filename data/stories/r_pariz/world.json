@@ -1,0 +1,94 @@
+{
+  "id": "w_r_pariz",
+  "title": "Paříž – Zrzka a muž v modrém saku",
+  "synopsis": "Sofie, ilustrátorka z Dublinu, a Mathieu, kurátor galerie.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_montmartre",
+      "l_gallery",
+      "l_bistro",
+      "l_seine"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sofie",
+      "name": "Sofie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall curvy Irish woman aged 31, long wavy copper red hair, green eyes, freckles",
+      "base": "adult, tall female, curvy, large breasts, red hair, long hair, wavy hair, green eyes, freckles",
+      "outfits": {
+        "default": "beige trench coat, turtleneck, long skirt",
+        "red_dress": "red dress, long sleeves, high neckline"
+      },
+      "photo": "a tall curvy Irish woman aged 31, long wavy copper red hair, green eyes, freckles",
+      "tag_prompt": "adult, tall female, curvy, large breasts, red hair, long hair, wavy hair, green eyes, freckles, beige trench coat, turtleneck, long skirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mathieu",
+      "name": "Mathieu",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender elegant French man aged 35, dark curly hair, brown eyes",
+      "base": "mature male, slender, dark hair, curly hair, short hair, brown eyes",
+      "outfits": {
+        "default": "blue blazer, white shirt, elegant"
+      },
+      "photo": "a slender elegant French man aged 35, dark curly hair, brown eyes",
+      "tag_prompt": "mature male, slender, dark hair, curly hair, short hair, brown eyes, blue blazer, white shirt, elegant",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_montmartre",
+      "name": "Montmartre",
+      "description": "Montmartre",
+      "tag_prompt": "outdoors, montmartre, stone stairs, sacre-coeur, paris, windy, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_gallery",
+      "name": "Galerie",
+      "description": "Galerie",
+      "tag_prompt": "indoors, art gallery, paintings, white walls, soft light",
+      "mood": ""
+    },
+    {
+      "id": "l_bistro",
+      "name": "Bistro",
+      "description": "Bistro",
+      "tag_prompt": "indoors, parisian bistro, small table, candle, wine glass, evening, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_seine",
+      "name": "Seina",
+      "description": "Seina",
+      "tag_prompt": "outdoors, seine, river, bridge, eiffel tower, night, city lights",
+      "mood": ""
+    }
+  ]
+}

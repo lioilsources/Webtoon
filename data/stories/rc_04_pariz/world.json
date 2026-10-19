@@ -1,0 +1,94 @@
+{
+  "id": "w_rc_04_pariz",
+  "title": "Pařížský kovboj",
+  "synopsis": "Priya kreslí u Seiny, texaský kovboj Logan hledá výstaviště.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "art_nouveau_mucha",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_seine",
+      "l_fair",
+      "l_cafe",
+      "l_bridge"
+    ]
+  },
+  "characters": [
+    {
+      "id": "priya",
+      "name": "Priya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indian woman aged 29, long black hair, silk blouse and a sari-inspired skirt, sketchbook",
+      "base": "adult, indian, brown skin, small breasts, long hair, black hair, brown eyes",
+      "outfits": {
+        "default": "silk blouse, long skirt, holding sketchbook"
+      },
+      "photo": "a petite Indian woman aged 29, long black hair, silk blouse and a sari-inspired skirt, sketchbook",
+      "tag_prompt": "adult, indian, brown skin, small breasts, long hair, black hair, brown eyes, silk blouse, long skirt, holding sketchbook",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "logan",
+      "name": "Logan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall tanned Texan cowboy aged 34, stetson, denim jacket, cowboy boots",
+      "base": "mature male, tall, tan, brown hair, stubble, cowboy hat",
+      "outfits": {
+        "default": "denim jacket, jeans, cowboy boots",
+        "nohat": "denim jacket, jeans, holding cowboy hat"
+      },
+      "photo": "a tall tanned Texan cowboy aged 34, stetson, denim jacket, cowboy boots",
+      "tag_prompt": "mature male, tall, tan, brown hair, stubble, cowboy hat, denim jacket, jeans, cowboy boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_seine",
+      "name": "Nábřeží Seiny",
+      "description": "Nábřeží Seiny",
+      "tag_prompt": "outdoors, seine, riverbank, paris, bookstalls, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_fair",
+      "name": "Veletrh",
+      "description": "Veletrh",
+      "tag_prompt": "indoors, agricultural fair, exhibition hall, hay bales, crowd",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, small parisian cafe, rain on window, coffee",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Pont des Arts",
+      "description": "Pont des Arts",
+      "tag_prompt": "outdoors, pont des arts, bridge, seine, night, city lights",
+      "mood": ""
+    }
+  ]
+}

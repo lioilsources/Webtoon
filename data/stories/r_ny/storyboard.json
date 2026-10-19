@@ -1,0 +1,421 @@
+{
+  "title": "New York – Dívka z Prahy a muž z Manhattanu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_street",
+      "characters": [],
+      "visual_tags": [
+        "busy street",
+        "people walking",
+        "city noise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "New York kolem ní hučí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding suitcase",
+        "looking up",
+        "determined",
+        "small smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Tak dobře. Nový život.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "open suitcase",
+        "suitcase fallen on sidewalk",
+        "clothes spilled",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kufr se převrátí. Obsah se vysype na chodník.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "holding coat",
+        "offering coat",
+        "looking down",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Potřebujete pomoct?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kneeling woman looking up",
+        "man holding coat",
+        "blush",
+        "embarrassed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Já… děkuju.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "New York vás právě přivítal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "first smile",
+        "gentle smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "sitting by window",
+        "coffee cup",
+        "alone",
+        "looking outside"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O několik dní později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Takže jste přežila první týden.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting across table",
+        "two coffee cups",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Těsně.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Káva?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "eliska",
+          "text": "Tohle je moje první americké rande?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "daniel",
+          "outfit": "suit"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "warm eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Já doufal, že je to moje první americké rande.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "eliska"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking side by side",
+        "evening",
+        "looking at skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Víš, co je zvláštní? V Praze jsem si připadala obyčejná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "A tady?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "eliska"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "sad smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Tady si připadám ještě obyčejnější.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Já tě vidím úplně jinak.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "eliska",
+          "text": "Jak?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Jako někoho, koho chci poznat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_awning",
+      "characters": [
+        {
+          "id": "eliska",
+          "outfit": "rain"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "rain",
+        "under awning",
+        "man brushing wet hair from her face",
+        "hand on cheek",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Můžu?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_awning",
+      "characters": [
+        {
+          "id": "eliska",
+          "outfit": "rain"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "rain",
+        "tender"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_awning",
+      "characters": [
+        {
+          "id": "eliska",
+          "outfit": "rain"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smiling at each other",
+        "blush",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eliska",
+          "text": "Tohle nebylo v mém plánu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Naštěstí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

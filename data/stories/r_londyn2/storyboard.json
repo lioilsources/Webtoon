@@ -1,0 +1,374 @@
+{
+ "title": "Londýn – Kovboj v dešti",
+ "fonts": "romance",
+ "panels": [
+  {
+   "shot": "establishing",
+   "location_id": "l_station",
+   "characters": [],
+   "visual_tags": [
+    "rain",
+    "heavy rain",
+    "puddles"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Londýn. Déšť.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_station",
+   "characters": [
+    {
+     "id": "emily"
+    }
+   ],
+   "visual_tags": [
+    "broken umbrella",
+    "holding umbrella",
+    "wet",
+    "rain",
+    "annoyed"
+   ],
+   "bubbles": [],
+   "sfx": [
+    {
+     "text": "KŘUP",
+     "style": "bold"
+    }
+   ],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_station",
+   "characters": [
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "holding umbrella",
+    "smile",
+    "rain"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "oliver",
+     "text": "Potřebujete zachránit?",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_station",
+   "characters": [
+    {
+     "id": "emily"
+    },
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "sharing umbrella",
+    "rain"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Můj deštník nebo mě?",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "oliver",
+     "text": "Podle situace obojí.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_pub",
+   "characters": [
+    {
+     "id": "emily"
+    },
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "sitting at bar",
+    "beer"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Všichni tady vypadají, jako by se narodili v Londýně.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "oliver",
+     "text": "Já ne.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_pub",
+   "characters": [
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "deadpan",
+    "holding pint glass"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Ty ano.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "oliver",
+     "text": "Narodil jsem se ve Walesu.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_pub",
+   "characters": [
+    {
+     "id": "emily"
+    }
+   ],
+   "visual_tags": [
+    "laughing",
+    "closed eyes"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "wide",
+   "location_id": "l_farm",
+   "characters": [
+    {
+     "id": "emily"
+    }
+   ],
+   "visual_tags": [
+    "petting horse",
+    "smile",
+    "happy"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Oliver zjistí, že Emily miluje koně.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_farm",
+   "characters": [
+    {
+     "id": "emily"
+    },
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "leaning on fence",
+    "horse in background"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Takže ty nejsi kovboj.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "oliver",
+     "text": "Ne.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "emily",
+     "text": "Škoda.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_farm",
+   "characters": [
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "smile",
+    "holding cowboy hat"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "oliver",
+     "text": "Můžu se to naučit.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_platform",
+   "characters": [
+    {
+     "id": "emily"
+    }
+   ],
+   "visual_tags": [
+    "holding plane ticket",
+    "looking down"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "oliver",
+     "text": "Kdy odlétáš?",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "emily",
+     "text": "Za dva dny.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_platform",
+   "characters": [
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "worried",
+    "sad"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_platform",
+   "characters": [
+    {
+     "id": "emily"
+    }
+   ],
+   "visual_tags": [
+    "small smile",
+    "looking at viewer"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Ale možná ji nepoužiju.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_platform",
+   "characters": [
+    {
+     "id": "emily"
+    },
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "hug",
+    "smile"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "emily",
+     "text": "Tohle je rozhodně lepší než londýnský deštník.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_platform",
+   "characters": [
+    {
+     "id": "emily"
+    },
+    {
+     "id": "oliver"
+    }
+   ],
+   "visual_tags": [
+    "couple",
+    "hetero",
+    "kiss",
+    "closed eyes"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "large"
+  }
+ ]
+}

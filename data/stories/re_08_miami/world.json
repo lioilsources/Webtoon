@@ -1,0 +1,87 @@
+{
+  "id": "w_re_08_miami",
+  "title": "Mastné ruce, čisté srdce",
+  "synopsis": "Mechanik Diego z Little Havana nastartuje auto advokátce Carmen, která spěchá k soudu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_garage",
+      "l_coffee",
+      "l_beach"
+    ]
+  },
+  "characters": [
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad-shouldered Mexican mechanic aged 30, tattoo sleeves, long hair in a ponytail",
+      "base": "mature male, tan skin, broad shoulders, long hair, ponytail, black hair, sleeve tattoo",
+      "outfits": {
+        "default": "jeans, grease stains, shirt, rolled up sleeves",
+        "clean": "white shirt, open collar, hair down"
+      },
+      "photo": "a broad-shouldered Mexican mechanic aged 30, tattoo sleeves, long hair in a ponytail",
+      "tag_prompt": "mature male, tan skin, broad shoulders, long hair, ponytail, black hair, sleeve tattoo, jeans, grease stains, shirt, rolled up sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "carmen",
+      "name": "Carmen",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Cuban-American lawyer aged 30, dark hair in a bun, sharp suit, soft eyes",
+      "base": "adult, tan skin, black hair, hair bun, brown eyes",
+      "outfits": {
+        "default": "business suit, pencil skirt, blazer",
+        "evening": "summer dress, hair down"
+      },
+      "photo": "a Cuban-American lawyer aged 30, dark hair in a bun, sharp suit, soft eyes",
+      "tag_prompt": "adult, tan skin, black hair, hair bun, brown eyes, business suit, pencil skirt, blazer",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_garage",
+      "name": "Little Havana",
+      "description": "Little Havana",
+      "tag_prompt": "outdoors, little havana, miami, vintage car, street garage, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_coffee",
+      "name": "Calle Ocho",
+      "description": "Calle Ocho",
+      "tag_prompt": "outdoors, calle ocho, coffee stand, cuban coffee, colorful mural",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "South Beach",
+      "description": "South Beach",
+      "tag_prompt": "outdoors, south beach, evening, sand, ocean, distant storm clouds",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "id": "w_rb_09_jakarta",
+  "title": "Jakarta – Muž z kanceláře",
+  "synopsis": "Adrian z Londýna si připadá nudný, Sari mu nese něco silnějšího než kávu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_cyberreal_night",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_cafe",
+      "l_market",
+      "l_canal",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an elegant Eurasian man aged 37, short black hair, glasses, dark suit",
+      "base": "mature male, short hair, black hair, glasses, elegant",
+      "outfits": {
+        "default": "dark suit, white shirt"
+      },
+      "photo": "an elegant Eurasian man aged 37, short black hair, glasses, dark suit",
+      "tag_prompt": "mature male, short hair, black hair, glasses, elegant, dark suit, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indonesian woman aged 25, long dark hair, batik blouse",
+      "base": "adult, asian, petite, small breasts, long hair, black hair, tan skin, brown eyes",
+      "outfits": {
+        "default": "batik blouse, black skirt",
+        "tray": "batik blouse, black skirt, holding tray"
+      },
+      "photo": "a petite Indonesian woman aged 25, long dark hair, batik blouse",
+      "tag_prompt": "adult, asian, petite, small breasts, long hair, black hair, tan skin, brown eyes, batik blouse, black skirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_cafe",
+      "name": "Kavárna ve starém městě",
+      "description": "Kavárna ve starém městě",
+      "tag_prompt": "indoors, colonial cafe, kota tua, jakarta, ceiling fan, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_market",
+      "name": "Večerní trh",
+      "description": "Večerní trh",
+      "tag_prompt": "outdoors, night market, food stalls, string lights, crowd, jakarta",
+      "mood": ""
+    },
+    {
+      "id": "l_canal",
+      "name": "Kanál",
+      "description": "Kanál",
+      "tag_prompt": "outdoors, canal, night, lanterns, reflections, old buildings",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace s výhledem",
+      "description": "Restaurace s výhledem",
+      "tag_prompt": "indoors, rooftop restaurant, jakarta skyline, night, neon, city lights",
+      "mood": ""
+    }
+  ]
+}

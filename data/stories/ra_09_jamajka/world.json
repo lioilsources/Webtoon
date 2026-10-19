@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_09_jamajka",
+  "title": "Záře nad tropickým rájem",
+  "synopsis": "Bankéř Alex po rozvodu nevěří na romantiku, dokud mu v horské kavárně nepadne do náruče Zara.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "vintage_poster",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_terrace",
+      "l_cafe"
+    ]
+  },
+  "characters": [
+    {
+      "id": "alex",
+      "name": "Alexander „Alex“ Bishop",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an elegant American banker aged 40, light blond hair greying at the temples, glasses, linen shirt",
+      "base": "mature male, blonde hair, grey hair, short hair, glasses, blue eyes",
+      "outfits": {
+        "default": "linen shirt, light pants"
+      },
+      "photo": "an elegant American banker aged 40, light blond hair greying at the temples, glasses, linen shirt",
+      "tag_prompt": "mature male, blonde hair, grey hair, short hair, glasses, blue eyes, linen shirt, light pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zara",
+      "name": "Zara Jackson",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Jamaican woman aged 28 with dyed red dreadlocks and a wide beautiful smile, light summer dress",
+      "base": "adult, dark-skinned female, dark skin, red hair, dreadlocks, large breasts, wide smile, brown eyes",
+      "outfits": {
+        "default": "light summer dress, bead necklace"
+      },
+      "photo": "a curvy Jamaican woman aged 28 with dyed red dreadlocks and a wide beautiful smile, light summer dress",
+      "tag_prompt": "adult, dark-skinned female, dark skin, red hair, dreadlocks, large breasts, wide smile, brown eyes, light summer dress, bead necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_terrace",
+      "name": "Blue Mountains",
+      "description": "Blue Mountains",
+      "tag_prompt": "outdoors, blue mountains, jamaica, green mountains, mist, light rays, coffee plantation, terrace",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Horská kavárna",
+      "description": "Horská kavárna",
+      "tag_prompt": "indoors, wooden cafe, mountainside, open window, jungle, warm light, coffee cup",
+      "mood": ""
+    }
+  ]
+}

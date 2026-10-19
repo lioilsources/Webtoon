@@ -1,0 +1,257 @@
+{
+  "title": "Nairobi, zvuk savany",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "kwame"
+        }
+      ],
+      "visual_tags": [
+        "lying under car",
+        "legs visible",
+        "tools"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Nairobi, období dešťů.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "worried",
+        "jeep"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zuri",
+          "text": "Pes ještě dýchá, ale potřebuju mechanika dřív než zavírací hodinu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "kwame"
+        }
+      ],
+      "visual_tags": [
+        "sitting on floor",
+        "dog on lap",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kwame",
+          "text": "Pak pes první, auto druhé.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_garage",
+      "characters": [
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "sitting on tire"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zuri",
+          "text": "Máte psa raději než motor?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kwame",
+          "text": "Motor neví, co je strach. Pes ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clinic",
+      "characters": [
+        {
+          "id": "kwame"
+        }
+      ],
+      "visual_tags": [
+        "standing by wall",
+        "awkward",
+        "hands in pockets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zuri",
+          "text": "Pes bude žít.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kwame",
+          "text": "Dobře. Dobře. A vy — jak se máte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clinic",
+      "characters": [
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "tired smile",
+        "lab coat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kwame",
+          "text": "Sny nejsou dědictví. Sny jsou vlastní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "kwame"
+        },
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on car hood",
+        "sunset",
+        "savanna"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zuri",
+          "text": "Řeknu to rovnou: Líbíte se mi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "kwame"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kwame",
+          "text": "Tak to je první zápas, který jsem kdy vyhrál bez jediné rány.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "kwame"
+        },
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "kwame"
+        },
+        {
+          "id": "zuri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile",
+        "savanna"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zuri",
+          "text": "Proč mě objímáte?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kwame",
+          "text": "Protože auto neumí slovo ‚miluju‘.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

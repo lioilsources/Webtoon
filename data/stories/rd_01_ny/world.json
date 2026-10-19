@@ -1,0 +1,85 @@
+{
+  "id": "w_rd_01_ny",
+  "title": "Barevný obraz New Yorku",
+  "synopsis": "Ilustrátorka Nadia a knihovník Marcus, který čte Nerudu v metru.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_subway",
+      "l_library",
+      "l_roof"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nadia",
+      "name": "Nadia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Ghanaian woman aged 26, shoulder-length black curly hair, vintage floral dress",
+      "base": "adult, dark-skinned female, dark skin, curvy, wide hips, small breasts, black hair, curly hair, medium hair",
+      "outfits": {
+        "default": "floral dress, vintage dress, low heels"
+      },
+      "photo": "a petite curvy Ghanaian woman aged 26, shoulder-length black curly hair, vintage floral dress",
+      "tag_prompt": "adult, dark-skinned female, dark skin, curvy, wide hips, small breasts, black hair, curly hair, medium hair, floral dress, vintage dress, low heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall bookish man aged 32, thin glasses, shirt with one button undone",
+      "base": "mature male, tall, glasses, thin glasses, short hair, brown hair",
+      "outfits": {
+        "default": "white shirt, open collar, cardigan"
+      },
+      "photo": "a tall bookish man aged 32, thin glasses, shirt with one button undone",
+      "tag_prompt": "mature male, tall, glasses, thin glasses, short hair, brown hair, white shirt, open collar, cardigan",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_subway",
+      "name": "Metro",
+      "description": "Metro",
+      "tag_prompt": "indoors, subway car, train interior, passengers, afternoon light",
+      "mood": ""
+    },
+    {
+      "id": "l_library",
+      "name": "Knihovna",
+      "description": "Knihovna",
+      "tag_prompt": "indoors, library, bookshelves, reading room, window light",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, new york skyline, chimneys, sunset, golden light",
+      "mood": ""
+    }
+  ]
+}

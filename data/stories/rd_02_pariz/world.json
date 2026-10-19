@@ -1,0 +1,78 @@
+{
+  "id": "w_rd_02_pariz",
+  "title": "Paříž, polévka a odvaha",
+  "synopsis": "Novinářka Chloé a kuchař Étienne, který myslí místo hosta.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bistro",
+      "l_stairs"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloé",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Parisian woman aged 24, short black hair with bangs, men's blazer",
+      "base": "adult, small breasts, short hair, black hair, blunt bangs, brown eyes",
+      "outfits": {
+        "default": "oversized blazer, white shirt, flat shoes"
+      },
+      "photo": "a petite Parisian woman aged 24, short black hair with bangs, men's blazer",
+      "tag_prompt": "adult, small breasts, short hair, black hair, blunt bangs, brown eyes, oversized blazer, white shirt, flat shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "etienne",
+      "name": "Étienne",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a red-haired French chef aged 34, freckled forearms, calm slow manner",
+      "base": "mature male, red hair, short hair, freckles, calm",
+      "outfits": {
+        "default": "chef apron, white shirt, rolled up sleeves",
+        "coat": "wool coat, scarf"
+      },
+      "photo": "a red-haired French chef aged 34, freckled forearms, calm slow manner",
+      "tag_prompt": "mature male, red hair, short hair, freckles, calm, chef apron, white shirt, rolled up sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bistro",
+      "name": "Bistro",
+      "description": "Bistro",
+      "tag_prompt": "indoors, small bistro, window, silver chairs, soup bowl, winter afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_stairs",
+      "name": "Schody k Sacré-Cœur",
+      "description": "Schody k Sacré-Cœur",
+      "tag_prompt": "outdoors, montmartre, stairs, sacre-coeur, night, fog, paris city lights, winter",
+      "mood": ""
+    }
+  ]
+}

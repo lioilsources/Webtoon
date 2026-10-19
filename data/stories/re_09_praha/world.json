@@ -1,0 +1,85 @@
+{
+  "id": "w_re_09_praha",
+  "title": "Klobouk v Praze",
+  "synopsis": "Irský kovboj Sean zabloudí na Náplavku ke keramičce Petře.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_river",
+      "l_workshop",
+      "l_bridge"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sean",
+      "name": "Sean",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall bearded Irish ranch hand aged 35, brown hair, green eyes, cowboy hat",
+      "base": "mature male, tall, beard, brown hair, green eyes, cowboy hat",
+      "outfits": {
+        "default": "flannel shirt, jeans"
+      },
+      "photo": "a tall bearded Irish ranch hand aged 35, brown hair, green eyes, cowboy hat",
+      "tag_prompt": "mature male, tall, beard, brown hair, green eyes, cowboy hat, flannel shirt, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Czech ceramicist aged 32, dark curly hair, freckles, dress with tool pockets",
+      "base": "adult, curly hair, dark brown hair, freckles, brown eyes",
+      "outfits": {
+        "default": "dress with pockets, apron"
+      },
+      "photo": "a Czech ceramicist aged 32, dark curly hair, freckles, dress with tool pockets",
+      "tag_prompt": "adult, curly hair, dark brown hair, freckles, brown eyes, dress with pockets, apron",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_river",
+      "name": "Náplavka",
+      "description": "Náplavka",
+      "tag_prompt": "outdoors, prague, riverbank, vltava, potter's wheel, clay",
+      "mood": ""
+    },
+    {
+      "id": "l_workshop",
+      "name": "Dílna",
+      "description": "Dílna",
+      "tag_prompt": "indoors, pottery workshop, fireplace, shelves with mugs, potter's wheel",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, statues, dusk, prague castle",
+      "mood": ""
+    }
+  ]
+}

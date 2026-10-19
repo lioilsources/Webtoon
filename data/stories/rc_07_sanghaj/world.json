@@ -1,0 +1,93 @@
+{
+  "id": "w_rc_07_sanghaj",
+  "title": "Šanghajský čaj",
+  "synopsis": "Samuel na služební cestě nerozumí menu, Wei učí jógu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_tea",
+      "l_bund",
+      "l_rest",
+      "l_garden"
+    ]
+  },
+  "characters": [
+    {
+      "id": "samuel",
+      "name": "Samuel",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Afro-Brazilian office worker aged 33, short curly hair, glasses, tailored suit",
+      "base": "mature male, dark-skinned male, dark skin, curly hair, short hair, glasses",
+      "outfits": {
+        "default": "tailored suit, white shirt"
+      },
+      "photo": "an Afro-Brazilian office worker aged 33, short curly hair, glasses, tailored suit",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, curly hair, short hair, glasses, tailored suit, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "wei",
+      "name": "Wei",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Chinese woman aged 29, long straight black hair, minimalist clothes, yoga teacher",
+      "base": "adult, asian, tall female, athletic, long hair, black hair, straight hair",
+      "outfits": {
+        "default": "minimalist clothes, white top, grey pants"
+      },
+      "photo": "a tall athletic Chinese woman aged 29, long straight black hair, minimalist clothes, yoga teacher",
+      "tag_prompt": "adult, asian, tall female, athletic, long hair, black hair, straight hair, minimalist clothes, white top, grey pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_tea",
+      "name": "Čajovna",
+      "description": "Čajovna",
+      "tag_prompt": "indoors, chinese teahouse, wooden tables, teapot, tea cups, lanterns",
+      "mood": ""
+    },
+    {
+      "id": "l_bund",
+      "name": "The Bund",
+      "description": "The Bund",
+      "tag_prompt": "outdoors, the bund, huangpu river, shanghai skyline, dusk, umbrella",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, chinese restaurant, round table, dishes, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_garden",
+      "name": "Zahrada",
+      "description": "Zahrada",
+      "tag_prompt": "outdoors, chinese garden, lanterns, night, pavilion, pond",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "title": "Havana ve 4/4 taktu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_terraza",
+      "characters": [],
+      "visual_tags": [
+        "vintage car",
+        "pastel houses",
+        "salsa music"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Havana. Ze dveří zní salsa.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terraza",
+      "characters": [
+        {
+          "id": "lucia"
+        }
+      ],
+      "visual_tags": [
+        "standing at entrance",
+        "hesitant",
+        "hand on chest"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terraza",
+      "characters": [
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "offering hand",
+        "smile",
+        "standing in doorway"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alejandro",
+          "text": "Máte dvě možnosti. Jít domů. Nebo tančit se mnou a pak mi vyprávět, proč váháte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terraza",
+      "characters": [
+        {
+          "id": "lucia"
+        },
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "smile",
+        "taking his hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucia",
+          "text": "A jsou ty možnosti seřazené podle doporučení?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "alejandro",
+          "text": "Ano. Druhá. Vždy druhá.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "lucia"
+        },
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing",
+        "salsa",
+        "twirling",
+        "dress flowing",
+        "motion blur"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "looking at her",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alejandro",
+          "text": "Vy tančíte jako Havana. Trochu zchátralé, úplně krásné, plné příběhů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "lucia"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucia",
+          "text": "To je nejromantičtější urážka, co jsem kdy dostala.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "lucia"
+        },
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on seawall",
+        "legs dangling",
+        "man's jacket on her shoulders",
+        "waves"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lucia",
+          "text": "Říkala jsem si, že romantika umřela. Že všichni jen koukají do telefonů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alejandro",
+          "text": "Na Kubě telefony vypadávají. Zůstávají jen lidé. A tanec. A ty.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_malecon",
+      "characters": [
+        {
+          "id": "lucia"
+        },
+        {
+          "id": "alejandro"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "waves",
+        "moonlight",
+        "dress in breeze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kapitola jedna: Havana. Kapitola dvě: celý život.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

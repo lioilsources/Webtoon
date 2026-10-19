@@ -9,8 +9,10 @@ Output: out/<YYYY-MM-DD>/<run>/pNN_sK.png + meta.json
 
 import argparse
 import datetime
+import os
 import random
 import re
+import time
 from pathlib import Path
 
 import comfy
@@ -67,6 +69,7 @@ def main():
     ap.add_argument("--panels", default=None, help="comma separated panel indices")
     ap.add_argument("--no-sfw", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--skip-existing", action="store_true", help="resume: keep panels already on disk")
     args = ap.parse_args()
 
     world = load_json(args.world)
@@ -78,7 +81,7 @@ def main():
         panels = load_json(args.storyboard)["panels"]
     idx = [int(i) for i in args.panels.split(",")] if args.panels else list(range(len(panels)))
 
-    day = datetime.date.today().isoformat()
+    day = os.environ.get("WEBTOON_DAY") or datetime.date.today().isoformat()  # a batch can span midnight
     outdir = OUT / day / args.run
     jobs = []
     for i in idx:
@@ -101,9 +104,15 @@ def main():
             "ip_weight": args.ip_weight if args.ref else None,
             "ip_preset": args.ip_preset if args.ref else None, "ip_end": args.ip_end if args.ref else None, "storyboard": args.storyboard, "images": []}
     outdir.mkdir(parents=True, exist_ok=True)
+    if args.skip_existing and (outdir / "meta.json").exists():
+        meta["images"] = [r for r in load_json(outdir / "meta.json")["images"] if (outdir / r["file"]).exists()]
+        jobs = [j for j in jobs if not (outdir / f"p{j[0]:02d}_s{j[1]}.png").exists()]
     for i, k, p, seed in jobs:
         rec = {"panel": i, "variant": k, "width": p["width"], "height": p["height"],
                "positive": p["positive"], "negative": p["negative"], "attempts": []}
+        # Shared-GPU courtesy: while out/PAUSE exists (another job owns ComfyUI) wait between panels.
+        while (OUT / "PAUSE").exists():
+            time.sleep(20)
         for attempt in range(MAX_RESEED + 1):
             s = seed if attempt == 0 else random.randint(0, 2**31)
             g = comfy.workflow(p["positive"], p["negative"], p["width"], p["height"], s, p["preset"],

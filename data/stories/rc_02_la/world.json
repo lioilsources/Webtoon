@@ -1,0 +1,95 @@
+{
+  "id": "w_rc_02_la",
+  "title": "Zlatý obzor",
+  "synopsis": "Astrid z Dánska fotí na Venice Beach, Mateo hraje plážový volejbal.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_walk",
+      "l_cliff",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "astrid",
+      "name": "Astrid",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Danish woman aged 27, blonde hair in a ponytail, blue eyes, camera around her neck",
+      "base": "adult, tall female, athletic, small breasts, blonde hair, ponytail, blue eyes",
+      "outfits": {
+        "default": "white t-shirt, denim shorts, camera",
+        "evening": "white summer dress"
+      },
+      "photo": "a tall athletic Danish woman aged 27, blonde hair in a ponytail, blue eyes, camera around her neck",
+      "tag_prompt": "adult, tall female, athletic, small breasts, blonde hair, ponytail, blue eyes, white t-shirt, denim shorts, camera",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mateo",
+      "name": "Mateo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Mexican-American beach volleyball player aged 29, dark curly hair, tanned, cheerful",
+      "base": "mature male, tan skin, athletic, black hair, curly hair, brown eyes, smile",
+      "outfits": {
+        "default": "tank top, sports shorts",
+        "evening": "white linen shirt"
+      },
+      "photo": "a Mexican-American beach volleyball player aged 29, dark curly hair, tanned, cheerful",
+      "tag_prompt": "mature male, tan skin, athletic, black hair, curly hair, brown eyes, smile, tank top, sports shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Venice Beach",
+      "description": "Venice Beach",
+      "tag_prompt": "outdoors, venice beach, palm trees, sunlight, volleyball net, skateboarders",
+      "mood": ""
+    },
+    {
+      "id": "l_walk",
+      "name": "Promenáda",
+      "description": "Promenáda",
+      "tag_prompt": "outdoors, beach boardwalk, palm trees, smoothie cups, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_cliff",
+      "name": "Útes",
+      "description": "Útes",
+      "tag_prompt": "outdoors, cliff above ocean, sunset, golden hour, pacific ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, city lights view, los angeles, night, candle",
+      "mood": ""
+    }
+  ]
+}

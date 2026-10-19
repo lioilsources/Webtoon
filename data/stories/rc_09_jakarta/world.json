@@ -1,0 +1,94 @@
+{
+  "id": "w_rc_09_jakarta",
+  "title": "Jakarta – Bombaj",
+  "synopsis": "Plachý úředník Ravi bloudí Jakartou, Ayu mu ukáže cestu. O měsíc později Bombaj.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "minimal_flat",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_market",
+      "l_cafe",
+      "l_bombay",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ravi",
+      "name": "Ravi",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a shy Indian office clerk aged 33, glasses, dark suit",
+      "base": "mature male, indian, brown skin, glasses, black hair, short hair, shy",
+      "outfits": {
+        "default": "dark suit, white shirt"
+      },
+      "photo": "a shy Indian office clerk aged 33, glasses, dark suit",
+      "tag_prompt": "mature male, indian, brown skin, glasses, black hair, short hair, shy, dark suit, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ayu",
+      "name": "Ayu",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Indonesian woman aged 28, long wavy hair, batik blouse, works in a cafe",
+      "base": "adult, asian, tan skin, curvy, long hair, wavy hair, black hair, smile",
+      "outfits": {
+        "default": "batik blouse, apron",
+        "travel": "batik blouse, long skirt"
+      },
+      "photo": "a petite curvy Indonesian woman aged 28, long wavy hair, batik blouse, works in a cafe",
+      "tag_prompt": "adult, asian, tan skin, curvy, long hair, wavy hair, black hair, smile, batik blouse, apron",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_market",
+      "name": "Trh v Jakartě",
+      "description": "Trh v Jakartě",
+      "tag_prompt": "outdoors, market, jakarta, stalls, coffee stall, crowd, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, small cafe, notebook, coffee cups, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_bombay",
+      "name": "Nábřeží v Bombaji",
+      "description": "Nábřeží v Bombaji",
+      "tag_prompt": "outdoors, marine drive, mumbai, sea, evening, city lights",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, indian restaurant, candles, spices, night",
+      "mood": ""
+    }
+  ]
+}

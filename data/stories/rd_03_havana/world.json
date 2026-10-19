@@ -1,0 +1,85 @@
+{
+  "id": "w_rd_03_havana",
+  "title": "Salsa na Havaně",
+  "synopsis": "Učitelka salsy Rosario a trumpetista Diego, který nevěří, že někdo zůstane.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_malecon",
+      "l_restaurant",
+      "l_dawn"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rosario",
+      "name": "Rosario",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Cuban woman aged 28, long voluminous curly brown hair, killer smile, floral dress",
+      "base": "adult, tan skin, curvy, wide hips, long hair, curly hair, brown hair, bright smile",
+      "outfits": {
+        "default": "floral dress, colorful dress, red sandals"
+      },
+      "photo": "a curvy Cuban woman aged 28, long voluminous curly brown hair, killer smile, floral dress",
+      "tag_prompt": "adult, tan skin, curvy, wide hips, long hair, curly hair, brown hair, bright smile, floral dress, colorful dress, red sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Cuban trumpet player aged 33, square jaw, small scar through one eyebrow",
+      "base": "mature male, tan skin, square jaw, scar on eyebrow, short hair, black hair",
+      "outfits": {
+        "default": "white shirt, rolled up sleeves, dark trousers"
+      },
+      "photo": "a Cuban trumpet player aged 33, square jaw, small scar through one eyebrow",
+      "tag_prompt": "mature male, tan skin, square jaw, scar on eyebrow, short hair, black hair, white shirt, rolled up sleeves, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_malecon",
+      "name": "Malecón",
+      "description": "Malecón",
+      "tag_prompt": "outdoors, malecon, seawall, havana, colorful buildings, vintage cars, afternoon, orange light",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "outdoors, seaside restaurant, candles, night, ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_dawn",
+      "name": "Svítání",
+      "description": "Svítání",
+      "tag_prompt": "outdoors, malecon, dawn, orange sky, empty promenade",
+      "mood": ""
+    }
+  ]
+}

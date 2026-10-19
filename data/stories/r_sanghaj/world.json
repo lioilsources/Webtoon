@@ -1,0 +1,93 @@
+{
+  "id": "w_r_sanghaj",
+  "title": "Šanghaj – Cizinec, který zůstal",
+  "synopsis": "Thomas, Brit ztracený v Šanghaji, a Lin, překladatelka.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_cyberreal_night",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_tower",
+      "l_cafe",
+      "l_bund",
+      "l_station"
+    ]
+  },
+  "characters": [
+    {
+      "id": "thomas",
+      "name": "Thomas",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall strong British man aged 39, former athlete, ash blond hair going grey, light stubble",
+      "base": "mature male, tall, muscular, blonde hair, grey hair, short hair, stubble, blue eyes",
+      "outfits": {
+        "default": "navy overcoat, grey suit"
+      },
+      "photo": "a tall strong British man aged 39, former athlete, ash blond hair going grey, light stubble",
+      "tag_prompt": "mature male, tall, muscular, blonde hair, grey hair, short hair, stubble, blue eyes, navy overcoat, grey suit",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lin",
+      "name": "Lin",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Chinese woman aged 30, short black bob hair, clever amused eyes",
+      "base": "adult, asian, short hair, black hair, bob cut, brown eyes",
+      "outfits": {
+        "default": "camel coat, black turtleneck"
+      },
+      "photo": "a petite Chinese woman aged 30, short black bob hair, clever amused eyes",
+      "tag_prompt": "adult, asian, short hair, black hair, bob cut, brown eyes, camel coat, black turtleneck",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_tower",
+      "name": "Pudong",
+      "description": "Pudong",
+      "tag_prompt": "outdoors, shanghai, skyscrapers, lujiazui, dusk",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, shanghai cafe, neon sign, window, coffee cup, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_bund",
+      "name": "Bund",
+      "description": "Bund",
+      "tag_prompt": "outdoors, the bund, huangpu river, night, skyline, oriental pearl tower",
+      "mood": ""
+    },
+    {
+      "id": "l_station",
+      "name": "Nádraží",
+      "description": "Nádraží",
+      "tag_prompt": "indoors, railway station, shanghai, high-speed train, platform",
+      "mood": ""
+    }
+  ]
+}

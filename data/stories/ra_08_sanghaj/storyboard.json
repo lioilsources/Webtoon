@@ -1,0 +1,242 @@
+{
+  "title": "Ztraceni v zahradě Yuyuan",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_garden",
+      "characters": [],
+      "visual_tags": [
+        "red pavilion",
+        "stone bridge",
+        "koi pond"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zahrada Yuyuan, Šanghaj.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_garden",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "ducking under low roof",
+        "bending",
+        "narrow alley",
+        "too tall"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_garden",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "whispering",
+        "sad",
+        "looking at tourists"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Jsem tu jako medvěd v bambusovém lese... Vypadám strašidelně, lidé ze mě mají respekt.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_garden",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "lonely",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Kde bych tady našel někoho, kdo by se mě nezalekl?",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "meiling"
+        }
+      ],
+      "visual_tags": [
+        "leaning over water",
+        "feeding fish",
+        "koi",
+        "lanterns",
+        "scarf falling into water"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Most devíti zatáček.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "reaching out long arm",
+        "catching scarf",
+        "splash"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "noscarf"
+        }
+      ],
+      "visual_tags": [
+        "clasped hands on chest",
+        "surprised",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "meiling",
+          "text": "Ó, děkuji vám! Máte tak rychlé reflexy!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "noscarf"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing wet scarf",
+        "embarrassed",
+        "height difference"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Pardon... Jsem starý boxer. Reflexy mi zůstaly, i když vizáž mám spíš jako zápasník.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "noscarf"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding his sleeve",
+        "looking up into his eyes",
+        "admiration",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "meiling",
+          "text": "Pod tou drsnou slupkou vidím velmi jemné a dobré srdce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pond",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "noscarf"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking together",
+        "lanterns",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "meiling",
+          "text": "Smím vám ukázat ty nejkrásnější čajovny v zahradě?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

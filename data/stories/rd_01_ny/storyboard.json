@@ -1,0 +1,285 @@
+{
+  "title": "Barevný obraz New Yorku",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_subway",
+      "characters": [
+        {
+          "id": "nadia"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "holding sketchbook",
+        "drawing",
+        "pencil"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Brooklyn, podzim. Metro plné cizích lidí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_subway",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "stumbling",
+        "falling",
+        "book falling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SKŘÍÍP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_subway",
+      "characters": [
+        {
+          "id": "nadia"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting side by side",
+        "she holds his book",
+        "laughing",
+        "he blushes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Pardon — omlouvám se—",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nadia",
+          "text": "Neruda? Čtete Nerudu v metru?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "V metru ho čtu proto, že tam nikdo nevidí, že pláču.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_subway",
+      "characters": [
+        {
+          "id": "nadia"
+        }
+      ],
+      "visual_tags": [
+        "showing sketchbook",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nadia",
+          "text": "Já zase kreslím, protože slova mě zradí dřív než čára.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_library",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "looking at drawing",
+        "surprised",
+        "holding paper"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O týden později.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "To jsem… já?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_library",
+      "characters": [
+        {
+          "id": "nadia"
+        }
+      ],
+      "visual_tags": [
+        "closing sketchbook",
+        "embarrassed",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nadia",
+          "text": "Chci tam New York, ale nevím, jakou má barvu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_library",
+      "characters": [
+        {
+          "id": "nadia"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting across table",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Dejte mu barvu, kterou vidíte, když se na něj díváte z okna.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nadia",
+          "text": "Zlatavě oranžovou. Na podzim, když slunce svítí mezi domy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "nadia"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing",
+        "painting on easel",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Nikdo mě nikdy neviděl takhle. Jako bych měl duši.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nadia",
+          "text": "Já vás vidím. Už od toho dne v metru.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "nadia"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "nadia"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "smile",
+        "golden light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Neruda říkal, že láska je tichá. Ale vy ji teď slyšíte, že?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nadia",
+          "text": "Slyším. A vidím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

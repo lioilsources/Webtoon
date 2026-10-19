@@ -1,0 +1,419 @@
+{
+  "title": "Šanghaj – Cizinec, který zůstal",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_tower",
+      "characters": [],
+      "visual_tags": [
+        "shanghai skyline",
+        "skyscrapers"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "thomas"
+        }
+      ],
+      "visual_tags": [
+        "holding phone",
+        "looking up",
+        "lost"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thomas",
+          "text": "Nikdo mě tady nezná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "hands in pockets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lin",
+          "text": "To může být někdy výhoda.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "thomas"
+        },
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man turning around",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lin",
+          "text": "Ztratil jste se?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thomas",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lin",
+          "text": "Tak jste začal správně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "thomas"
+        }
+      ],
+      "visual_tags": [
+        "concentrating",
+        "talking",
+        "coffee cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lin mu pomáhá orientovat se ve městě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "coffee cup"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lin",
+          "text": "Skoro.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thomas",
+          "text": "Skoro?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "amused smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lin",
+          "text": "Řekl jste ‚chci kočku‘ místo ‚chci kávu‘.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "thomas"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PFFF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bund",
+      "characters": [
+        {
+          "id": "thomas"
+        },
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking along river",
+        "night skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thomas",
+          "text": "Celý život jsem hledal místo, kam budu patřit.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lin",
+          "text": "A našel jste ho?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bund",
+      "characters": [
+        {
+          "id": "thomas"
+        }
+      ],
+      "visual_tags": [
+        "looking at her",
+        "soft"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thomas",
+          "text": "Možná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lin",
+          "text": "Kde?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thomas",
+          "text": "Tady.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bund",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "blush",
+        "city lights"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "standing on platform",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Thomas má odjet zpět do Londýna.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "lin",
+          "text": "Takže tohle je sbohem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "thomas"
+        }
+      ],
+      "visual_tags": [
+        "holding ticket",
+        "tearing ticket"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thomas",
+          "text": "Ne.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lin",
+          "text": "Ne?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thomas",
+          "text": "Změnil jsem rezervaci.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "TRRR",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "happy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thomas",
+          "text": "Zůstávám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "thomas"
+        },
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "embrace",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "thomas"
+        },
+        {
+          "id": "lin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "train passing",
+        "motion blur"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

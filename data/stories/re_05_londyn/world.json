@@ -1,0 +1,85 @@
+{
+  "id": "w_re_05_londyn",
+  "title": "Londýnská mlha, varšavské srdce",
+  "synopsis": "Zofia z Varšavy bojuje s deštníkem na Borough Market, kuchař Daniel ji zachrání.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_market",
+      "l_bistro",
+      "l_bridge"
+    ]
+  },
+  "characters": [
+    {
+      "id": "zofia",
+      "name": "Zofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Polish woman aged 27, blond hair, freckles, taped glasses, grandfather's scarf",
+      "base": "adult, tall female, athletic, blonde hair, long hair, freckles, glasses, broken glasses",
+      "outfits": {
+        "default": "leather jacket, long scarf"
+      },
+      "photo": "a tall athletic Polish woman aged 27, blond hair, freckles, taped glasses, grandfather's scarf",
+      "tag_prompt": "adult, tall female, athletic, blonde hair, long hair, freckles, glasses, broken glasses, leather jacket, long scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall British chef aged 30 with Jamaican roots, dreadlocks tied in a bun, apron",
+      "base": "mature male, dark-skinned male, dark skin, tall, dreadlocks, hair bun, smile",
+      "outfits": {
+        "default": "chef apron, white shirt"
+      },
+      "photo": "a tall British chef aged 30 with Jamaican roots, dreadlocks tied in a bun, apron",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, tall, dreadlocks, hair bun, smile, chef apron, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_market",
+      "name": "Borough Market",
+      "description": "Borough Market",
+      "tag_prompt": "outdoors, london, market, fog, spices, stalls",
+      "mood": ""
+    },
+    {
+      "id": "l_bistro",
+      "name": "Bistro",
+      "description": "Bistro",
+      "tag_prompt": "indoors, small bistro kitchen, spices, steam, counter",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Tower Bridge",
+      "description": "Tower Bridge",
+      "tag_prompt": "outdoors, tower bridge, night, fog, street lamps, london",
+      "mood": ""
+    }
+  ]
+}

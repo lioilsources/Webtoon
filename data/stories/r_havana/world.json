@@ -1,0 +1,110 @@
+{
+  "id": "w_r_havana",
+  "title": "Havana – Boxer, který přijel zapomenout",
+  "synopsis": "Mateo, bývalý boxer, a Isabel, která v kavárně ví víc, než říká.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bus",
+      "l_cafe",
+      "l_dance",
+      "l_malecon"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mateo",
+      "name": "Mateo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular Cuban man aged 35, former boxer, broad shoulders, short black hair, calm gaze",
+      "base": "mature male, dark skin, tall, muscular, broad shoulders, short hair, black hair, calm",
+      "outfits": {
+        "default": "white linen shirt, dark trousers"
+      },
+      "photo": "a tall muscular Cuban man aged 35, former boxer, broad shoulders, short black hair, calm gaze",
+      "tag_prompt": "mature male, dark skin, tall, muscular, broad shoulders, short hair, black hair, calm, white linen shirt, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "isabel",
+      "name": "Isabel",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Afro-Cuban woman aged 30, long curly black hair, wide bright smile",
+      "base": "adult, dark-skinned female, dark skin, long hair, curly hair, black hair, bright smile",
+      "outfits": {
+        "default": "white blouse, apron",
+        "dance": "flowing orange dress, knee-length dress"
+      },
+      "photo": "a petite Afro-Cuban woman aged 30, long curly black hair, wide bright smile",
+      "tag_prompt": "adult, dark-skinned female, dark skin, long hair, curly hair, black hair, bright smile, white blouse, apron",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "raul",
+      "name": "Raúl",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a 62-year-old Cuban man, grey hair, grey moustache, weathered face, boxing gym owner",
+      "base": "old man, grey hair, grey mustache, wrinkles, dark skin",
+      "outfits": {
+        "default": "tank top, towel on shoulder"
+      },
+      "photo": "a 62-year-old Cuban man, grey hair, grey moustache, weathered face, boxing gym owner",
+      "tag_prompt": "old man, grey hair, grey mustache, wrinkles, dark skin, tank top, towel on shoulder",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bus",
+      "name": "Ulice",
+      "description": "Ulice",
+      "tag_prompt": "outdoors, havana street, old bus, colonial buildings, pastel facades, vintage cars, morning sun",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, small havana cafe, wooden counter, espresso cups, sunlight through shutters",
+      "mood": ""
+    },
+    {
+      "id": "l_dance",
+      "name": "Večerní ulice",
+      "description": "Večerní ulice",
+      "tag_prompt": "outdoors, havana street, evening, string lights, music, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_malecon",
+      "name": "Malecón",
+      "description": "Malecón",
+      "tag_prompt": "outdoors, malecon seawall, sunset, ocean, havana skyline",
+      "mood": ""
+    }
+  ]
+}

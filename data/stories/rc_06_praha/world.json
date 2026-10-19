@@ -1,0 +1,95 @@
+{
+  "id": "w_rc_06_praha",
+  "title": "Pražské mosty",
+  "synopsis": "Tunde přijel na fitness expo, Lucie kreslí na Kampě.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "pastel_shoujo",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kampa",
+      "l_cafe",
+      "l_bridge",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tunde",
+      "name": "Tunde",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Nigerian man aged 34 living in London, broad shoulders, short hair, sports tracksuit",
+      "base": "mature male, dark-skinned male, very dark skin, muscular, broad shoulders, short hair, black hair",
+      "outfits": {
+        "default": "tracksuit",
+        "evening": "white shirt"
+      },
+      "photo": "a muscular Nigerian man aged 34 living in London, broad shoulders, short hair, sports tracksuit",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, muscular, broad shoulders, short hair, black hair, tracksuit",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lucie",
+      "name": "Lucie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Czech woman aged 30, chestnut bob, vintage dress, art teacher with a sketchbook",
+      "base": "adult, curvy, wide hips, small breasts, brown hair, bob cut, brown eyes",
+      "outfits": {
+        "default": "vintage dress, cardigan, holding sketchbook",
+        "evening": "vintage dress"
+      },
+      "photo": "a petite curvy Czech woman aged 30, chestnut bob, vintage dress, art teacher with a sketchbook",
+      "tag_prompt": "adult, curvy, wide hips, small breasts, brown hair, bob cut, brown eyes, vintage dress, cardigan, holding sketchbook",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kampa",
+      "name": "Kampa",
+      "description": "Kampa",
+      "tag_prompt": "outdoors, kampa, riverbank, prague, charles bridge in background, trees, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, prague cafe, window, coffee cups",
+      "mood": ""
+    },
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, statues, evening, street lamps, tourists",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, czech restaurant, candles, night, warm light",
+      "mood": ""
+    }
+  ]
+}

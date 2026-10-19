@@ -1,0 +1,93 @@
+{
+  "id": "w_ra_03_havana",
+  "title": "Karibské rytmy",
+  "synopsis": "Bea by chtěla být v Havaně neviditelná, tanečník Manny ji vytáhne doprostřed náměstí.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_plaza"
+    ]
+  },
+  "characters": [
+    {
+      "id": "bea",
+      "name": "Beatrice „Bea“ Sullivan",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Irish woman aged 27 with vivid long red hair, freckles, pale skin, curvy figure",
+      "base": "adult, red hair, long hair, wavy hair, freckles, green eyes, pale skin, large breasts",
+      "outfits": {
+        "default": "floral dress, summer dress, straw hat"
+      },
+      "photo": "an Irish woman aged 27 with vivid long red hair, freckles, pale skin, curvy figure",
+      "tag_prompt": "adult, red hair, long hair, wavy hair, freckles, green eyes, pale skin, large breasts, floral dress, summer dress, straw hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "manny",
+      "name": "Manuel „Manny“ Cruz",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall lean athletic Cuban dancer aged 30, tanned skin, close-cropped black hair, radiant smile",
+      "base": "mature male, tall, lean, athletic, tan skin, very short hair, black hair, brown eyes, bright smile",
+      "outfits": {
+        "default": "white linen shirt, partially unbuttoned shirt, linen pants, sandals"
+      },
+      "photo": "a tall lean athletic Cuban dancer aged 30, tanned skin, close-cropped black hair, radiant smile",
+      "tag_prompt": "mature male, tall, lean, athletic, tan skin, very short hair, black hair, brown eyes, bright smile, white linen shirt, partially unbuttoned shirt, linen pants, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "baptista",
+      "name": "Baptišta",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an old Cuban street guitarist with a grey beard and straw fedora",
+      "base": "old man, dark skin, grey hair, grey beard, wrinkles",
+      "outfits": {
+        "default": "guayabera, straw fedora, acoustic guitar"
+      },
+      "photo": "an old Cuban street guitarist with a grey beard and straw fedora",
+      "tag_prompt": "old man, dark skin, grey hair, grey beard, wrinkles, guayabera, straw fedora, acoustic guitar",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Stará Havana",
+      "description": "Stará Havana",
+      "tag_prompt": "outdoors, old havana, narrow street, colorful buildings, peeling paint, vintage car, sunlight, laundry",
+      "mood": ""
+    },
+    {
+      "id": "l_plaza",
+      "name": "Náměstí u katedrály",
+      "description": "Náměstí u katedrály",
+      "tag_prompt": "outdoors, small plaza, old cathedral, live band, crowd, dancing, evening, warm light, string lights",
+      "mood": ""
+    }
+  ]
+}

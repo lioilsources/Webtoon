@@ -1,0 +1,85 @@
+{
+  "id": "w_re_02_kingston",
+  "title": "Rytmus Kingstonu",
+  "synopsis": "Aisha z Paříže roztančí ulici v Kingstonu a hudebník Rohan přestane hrát.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "minimal_flat",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_corner",
+      "l_beach",
+      "l_fire"
+    ]
+  },
+  "characters": [
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Black French woman aged 29, short afro, big earrings, explosive laugh",
+      "base": "adult, dark-skinned female, dark skin, tall female, athletic, very short hair, afro, big earrings",
+      "outfits": {
+        "default": "linen overalls"
+      },
+      "photo": "a tall athletic Black French woman aged 29, short afro, big earrings, explosive laugh",
+      "tag_prompt": "adult, dark-skinned female, dark skin, tall female, athletic, very short hair, afro, big earrings, linen overalls",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "rohan",
+      "name": "Rohan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a relaxed Jamaican musician aged 31, long braids, guitar on his back",
+      "base": "mature male, dark-skinned male, dark skin, long hair, braids, relaxed, guitar on back",
+      "outfits": {
+        "default": "open shirt, linen pants"
+      },
+      "photo": "a relaxed Jamaican musician aged 31, long braids, guitar on his back",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, long hair, braids, relaxed, guitar on back, open shirt, linen pants",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_corner",
+      "name": "Kingston",
+      "description": "Kingston",
+      "tag_prompt": "outdoors, kingston, colorful houses, street corner, street band, hot, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Blue Lagoon",
+      "description": "Blue Lagoon",
+      "tag_prompt": "outdoors, beach, lagoon, turquoise water, palm trees, late afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_fire",
+      "name": "Koncert na pláži",
+      "description": "Koncert na pláži",
+      "tag_prompt": "outdoors, beach, night, bonfire, drums, stars, palm tree",
+      "mood": ""
+    }
+  ]
+}

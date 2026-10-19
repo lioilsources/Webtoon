@@ -1,0 +1,77 @@
+{
+  "id": "w_ra_07_miami",
+  "title": "Anděl z pláže South Beach",
+  "synopsis": "Bledý kancelářský Lucas pomůže běžkyni Camile z písku.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_ocean",
+      "l_beach"
+    ]
+  },
+  "characters": [
+    {
+      "id": "lucas",
+      "name": "Lucas Carter",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a pale slender young American office worker aged 23, dark-framed glasses, short brown hair",
+      "base": "mature male, pale skin, slender, glasses, black-framed eyewear, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "white shirt, sleeves rolled up, khaki shorts"
+      },
+      "photo": "a pale slender young American office worker aged 23, dark-framed glasses, short brown hair",
+      "tag_prompt": "mature male, pale skin, slender, glasses, black-framed eyewear, short hair, brown hair, brown eyes, white shirt, sleeves rolled up, khaki shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "camila",
+      "name": "Camila Silva",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Brazilian runner aged 26, long blond hair in a ponytail, tanned skin",
+      "base": "adult, tall female, long legs, athletic, tan skin, blonde hair, long hair, ponytail, brown eyes",
+      "outfits": {
+        "default": "athletic tank top, running shorts, sneakers"
+      },
+      "photo": "a tall athletic Brazilian runner aged 26, long blond hair in a ponytail, tanned skin",
+      "tag_prompt": "adult, tall female, long legs, athletic, tan skin, blonde hair, long hair, ponytail, brown eyes, athletic tank top, running shorts, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_ocean",
+      "name": "Ocean Drive",
+      "description": "Ocean Drive",
+      "tag_prompt": "outdoors, ocean drive, miami, palm trees, art deco, buildings, roller skates, sunny, blue sky, bench",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, white sand, driftwood, ocean, waves, sunny",
+      "mood": ""
+    }
+  ]
+}

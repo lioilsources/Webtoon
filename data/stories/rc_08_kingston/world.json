@@ -1,0 +1,110 @@
+{
+  "id": "w_rc_08_kingston",
+  "title": "Kingston – Havana",
+  "synopsis": "Sprinter Andre a fotografka Camila: od stadionu v Kingstonu po Malecón.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_stadium",
+      "l_beach",
+      "l_malecon",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "andre",
+      "name": "Andre",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Afro-Caribbean sprinter aged 32, short fade haircut, track jacket",
+      "base": "mature male, dark-skinned male, very dark skin, tall, athletic, very short hair",
+      "outfits": {
+        "default": "track jacket, running shorts",
+        "evening": "white shirt"
+      },
+      "photo": "a tall Afro-Caribbean sprinter aged 32, short fade haircut, track jacket",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, tall, athletic, very short hair, track jacket, running shorts",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "camila",
+      "name": "Camila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Cuban photographer aged 28, curly brown hair, light summer dress, camera",
+      "base": "adult, tan skin, curvy, small breasts, curly hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "summer dress, camera"
+      },
+      "photo": "a curvy Cuban photographer aged 28, curly brown hair, light summer dress, camera",
+      "tag_prompt": "adult, tan skin, curvy, small breasts, curly hair, brown hair, brown eyes, summer dress, camera",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luis",
+      "name": "Luis",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Cuban man playing an acoustic guitar, guayabera shirt",
+      "base": "mature male, tan skin, black hair, mustache, smile",
+      "outfits": {
+        "default": "guayabera, holding guitar"
+      },
+      "photo": "a Cuban man playing an acoustic guitar, guayabera shirt",
+      "tag_prompt": "mature male, tan skin, black hair, mustache, smile, guayabera, holding guitar",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_stadium",
+      "name": "Stadion Kingston",
+      "description": "Stadion Kingston",
+      "tag_prompt": "outdoors, stadium, running track, kingston, sunny, crowd",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, jamaican beach, sand, palm trees, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_malecon",
+      "name": "Malecón",
+      "description": "Malecón",
+      "tag_prompt": "outdoors, malecon, havana, seawall, evening, sunset, vintage cars",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Rodinná restaurace",
+      "description": "Rodinná restaurace",
+      "tag_prompt": "indoors, family restaurant, havana, lanterns, guitar music, night",
+      "mood": ""
+    }
+  ]
+}

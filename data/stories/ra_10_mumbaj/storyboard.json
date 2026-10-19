@@ -1,0 +1,234 @@
+{
+  "title": "Indická noc pod hvězdami",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_market",
+      "characters": [],
+      "visual_tags": [
+        "spice stalls",
+        "colorful",
+        "lights",
+        "auto rickshaw"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tržnice v Mumbaji.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "backpack",
+        "wiping sweat from forehead",
+        "dodging auto rickshaw"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "tired",
+        "sad smile",
+        "dirty hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rhoan",
+          "text": "Svět plný barev a exotiky... A já jsem jen kluk z dílny s rukama od šmíru.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "looking around",
+        "lonely",
+        "spice stalls"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rhoan",
+          "text": "Tady žádnou princeznu nenajdu.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "broken down car",
+        "smoke from car hood",
+        "standing by car",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Marine Drive, „Královnin náhrdelník“. Noc.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "leaning over open hood",
+        "repairing engine",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "priya"
+        }
+      ],
+      "visual_tags": [
+        "stepping out of car",
+        "sparkling eyes",
+        "excited",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Vy jste neuvěřitelný! Volala jsem odtahovku a vy jste to spravil za pět minut!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "wiping hands with handkerchief",
+        "shy smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rhoan",
+          "text": "Motory jsou to jediné, čemu rozumím, slečno. Nic víc neumím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding his dirty hand",
+        "looking into his eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Rozumíte věcem, které dávají věci do pohybu. A právě jste zachránil můj večer.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_drive",
+      "characters": [
+        {
+          "id": "priya"
+        },
+        {
+          "id": "rhoan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting in convertible",
+        "driving along the sea",
+        "night",
+        "city lights",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "priya",
+          "text": "Projížďka podél moře s mým záchranářem je to nejmenší, jak vám mohu poděkovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

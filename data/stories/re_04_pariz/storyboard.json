@@ -1,0 +1,235 @@
+{
+  "title": "Tiše v Paříži",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "meilin"
+        }
+      ],
+      "visual_tags": [
+        "standing under awning",
+        "holding umbrella",
+        "rain",
+        "hesitant"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "opening door",
+        "smile",
+        "gesturing inside"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "henri",
+          "text": "Knihkupectví je jediné místo, kde se nesmí mlčet. Ale můžete začít knihou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rain",
+      "characters": [
+        {
+          "id": "meilin"
+        }
+      ],
+      "visual_tags": [
+        "shy",
+        "looking down",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "meilin",
+          "text": "Já… jsem moc tichá. Hledám si v knihách odvahu, kterou nemám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "pointing at bookshelf",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "henri",
+          "text": "Pak jste přišla správně. Odvaha je na policích. Levá strana, druhá řada.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "meilin"
+        },
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "browsing books",
+        "man pretending to sort books"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "henri",
+          "text": "Mluvíte málo. Já mluvím moc. Jsme kompletní rozhovor.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "meilin",
+          "text": "V Číně říkáme: nejhlasitější slovo je to, které čeká.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "meilin"
+        }
+      ],
+      "visual_tags": [
+        "full smile",
+        "holding book"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_books",
+      "characters": [
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "stunned",
+        "open mouth",
+        "blush"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "meilin"
+        },
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on bench",
+        "croissants",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "henri",
+          "text": "Máte ráda Paříž?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "meilin",
+          "text": "Dnes mi připadá tichá. Protože někdo mi naslouchá, jako by ticho byla hudba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "henri",
+          "text": "Ticho je hudba. Vy jste mi to dnes dokázala.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "meilin"
+        },
+        {
+          "id": "henri"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "kiss on head",
+        "closed eyes",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

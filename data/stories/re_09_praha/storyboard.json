@@ -1,0 +1,245 @@
+{
+  "title": "Klobouk v Praze",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "holding map",
+        "lost",
+        "cowboy hat",
+        "looking around"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "petra"
+        }
+      ],
+      "visual_tags": [
+        "shaping clay",
+        "looking up",
+        "amused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Pane. Klobouk dovnitř nenosíme. Praha je vysoká.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "confused",
+        "scratching head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sean",
+          "text": "Nejdřív jsem šel rovně. Teď jsem tady. Kde je tady?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "petra"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "clay on hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Nejhezčí místo, které jste mohl ztratit. Sedněte si.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_workshop",
+      "characters": [
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "using potter's wheel",
+        "clay splashing on hat",
+        "clumsy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sean",
+          "text": "V Irsku hlína poslouchá.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ČVACHT",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_workshop",
+      "characters": [
+        {
+          "id": "petra"
+        }
+      ],
+      "visual_tags": [
+        "standing by fireplace",
+        "arms crossed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Hlína nikde neposlouchá. Hlína naslouchá. Zkuste to znovu. Pomaleji.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_workshop",
+      "characters": [
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "holding small ugly bowl",
+        "moved",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sean",
+          "text": "První věc, kterou jsem v životě vyrobil rukama.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "petra"
+        },
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "statues",
+        "dusk",
+        "man holding hat in hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Sundal jste klobouk.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sean",
+          "text": "Řekl jsem skoro nikdy. Jste ten rozdíl mezi skoro a vždycky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sean",
+          "text": "Hledal jsem ženu, která mě naučí dělat věci pomalu. Našel jsem tři najednou. Všechny se jmenují Petra.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bridge",
+      "characters": [
+        {
+          "id": "petra"
+        },
+        {
+          "id": "sean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "statues",
+        "dusk",
+        "cowboy hat on ground",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

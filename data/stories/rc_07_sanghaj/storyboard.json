@@ -1,0 +1,225 @@
+{
+  "title": "Šanghajský čaj",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "samuel"
+        }
+      ],
+      "visual_tags": [
+        "holding menu",
+        "confused",
+        "glasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "pointing at menu"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "wei",
+          "text": "Doporučuji jasmínový.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tea",
+      "characters": [
+        {
+          "id": "samuel"
+        },
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "tea cups",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "samuel",
+          "text": "Děkuji. Já jsem tu poprvé.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wei",
+          "text": "To poznám. Ale nebojte, Šanghaj je milá, když se nepospíchá.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bund",
+      "characters": [
+        {
+          "id": "samuel"
+        },
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking along river",
+        "man holding umbrella",
+        "dusk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "samuel",
+          "text": "Celý den jsem mluvil o číslech. Připadám si nudný.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wei",
+          "text": "Čísla nejsou nuda. Jen je třeba je říct jako příběh.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bund",
+      "characters": [
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "samuel",
+          "text": "A vy umíte příběhy?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wei",
+          "text": "Učím jógu. To je taky příběh.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "samuel"
+        },
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman ordering",
+        "man laughing",
+        "dishes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "samuel",
+          "text": "Wei, můžu vás pozvat znovu? Třeba na procházku.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wei",
+          "text": "Ano. Ale tentokrát bez deštníku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_garden",
+      "characters": [
+        {
+          "id": "samuel"
+        },
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "lanterns",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "samuel",
+          "text": "Našel jsem v Šanghaji múzu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "wei",
+          "text": "A já prince v obleku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_garden",
+      "characters": [
+        {
+          "id": "samuel"
+        },
+        {
+          "id": "wei"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "lanterns"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "id": "w_rb_03_praha",
+  "title": "Praha – Zrzka s kudrnami",
+  "synopsis": "Klára pochybuje o svém těle, Tomáš z Brna nese krabici náhradních dílů.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bridge",
+      "l_cafe",
+      "l_petrin",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "klara",
+      "name": "Klára",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Czech woman aged 27, curly red hair, freckles, green coat over a modest dress",
+      "base": "adult, curvy, large breasts, red hair, curly hair, long hair, freckles, green eyes",
+      "outfits": {
+        "default": "dark green coat, long dress, high neckline",
+        "dinner": "emerald dress, long sleeves, high neckline"
+      },
+      "photo": "a curvy Czech woman aged 27, curly red hair, freckles, green coat over a modest dress",
+      "tag_prompt": "adult, curvy, large breasts, red hair, curly hair, long hair, freckles, green eyes, dark green coat, long dress, high neckline",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "tomas",
+      "name": "Tomáš",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad-shouldered Czech mechanic aged 34, short brown hair, beard, flannel shirt",
+      "base": "mature male, broad shoulders, short hair, brown hair, beard",
+      "outfits": {
+        "default": "flannel shirt, jeans, carrying cardboard box",
+        "walk": "flannel shirt, jeans",
+        "dinner": "dark shirt, jeans"
+      },
+      "photo": "a broad-shouldered Czech mechanic aged 34, short brown hair, beard, flannel shirt",
+      "tag_prompt": "mature male, broad shoulders, short hair, brown hair, beard, flannel shirt, jeans, carrying cardboard box",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bridge",
+      "name": "Karlův most",
+      "description": "Karlův most",
+      "tag_prompt": "outdoors, charles bridge, fog, autumn, statues, vltava, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna na Malé Straně",
+      "description": "Kavárna na Malé Straně",
+      "tag_prompt": "indoors, old cafe, window, coffee cup, prague, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_petrin",
+      "name": "Petřín",
+      "description": "Petřín",
+      "tag_prompt": "outdoors, petrin hill, autumn trees, path, golden leaves, prague view",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace pod Hradem",
+      "description": "Restaurace pod Hradem",
+      "tag_prompt": "indoors, restaurant, window, prague castle, night, city lights, candle",
+      "mood": ""
+    }
+  ]
+}

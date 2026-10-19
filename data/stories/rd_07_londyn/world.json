@@ -1,0 +1,77 @@
+{
+  "id": "w_rd_07_londyn",
+  "title": "Londýn, jedna bota u Temže",
+  "synopsis": "Bankéř Oliver bez jedné boty a violoncellistka Ivy, která se bojí sálů.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_cyberreal_night",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_southbank",
+      "l_eye"
+    ]
+  },
+  "characters": [
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a polished British banker aged 33 in a perfect suit",
+      "base": "mature male, short hair, brown hair, neat hair, clean-shaven",
+      "outfits": {
+        "default": "tailored suit, white shirt, tie"
+      },
+      "photo": "a polished British banker aged 33 in a perfect suit",
+      "tag_prompt": "mature male, short hair, brown hair, neat hair, clean-shaven, tailored suit, white shirt, tie",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ivy",
+      "name": "Ivy",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender Chinese-British cellist aged 29, long sleek black hair, flowing coat and scarf",
+      "base": "adult, asian, tall female, slender, long hair, black hair, straight hair",
+      "outfits": {
+        "default": "long flowing coat, scarf"
+      },
+      "photo": "a tall slender Chinese-British cellist aged 29, long sleek black hair, flowing coat and scarf",
+      "tag_prompt": "adult, asian, tall female, slender, long hair, black hair, straight hair, long flowing coat, scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_southbank",
+      "name": "Southbank",
+      "description": "Southbank",
+      "tag_prompt": "outdoors, southbank, thames, bench, night, city lights reflection, london",
+      "mood": ""
+    },
+    {
+      "id": "l_eye",
+      "name": "London Eye",
+      "description": "London Eye",
+      "tag_prompt": "indoors, ferris wheel capsule, night, london skyline, city lights",
+      "mood": ""
+    }
+  ]
+}

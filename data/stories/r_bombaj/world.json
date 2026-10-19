@@ -1,0 +1,109 @@
+{
+  "id": "w_r_bombaj",
+  "title": "Bombaj – Muž, který čekal na múzu",
+  "synopsis": "Arjun, fotograf bez inspirace, a Priya v monzunovém dešti.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "minimal_flat",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gallery",
+      "l_rain",
+      "l_studio",
+      "l_marina"
+    ]
+  },
+  "characters": [
+    {
+      "id": "arjun",
+      "name": "Arjun",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall slender Indian man aged 37, long black hair in a ponytail, bohemian style",
+      "base": "mature male, indian, brown skin, tall, slender, long hair, ponytail, black hair, stubble",
+      "outfits": {
+        "default": "linen kurta, scarf, bead necklace"
+      },
+      "photo": "a tall slender Indian man aged 37, long black hair in a ponytail, bohemian style",
+      "tag_prompt": "mature male, indian, brown skin, tall, slender, long hair, ponytail, black hair, stubble, linen kurta, scarf, bead necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "priya",
+      "name": "Priya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indian woman aged 32, long black hair, big expressive brown eyes",
+      "base": "adult, indian, brown skin, long hair, black hair, big brown eyes",
+      "outfits": {
+        "default": "mustard kurta, blue jeans"
+      },
+      "photo": "a petite Indian woman aged 32, long black hair, big expressive brown eyes",
+      "tag_prompt": "adult, indian, brown skin, long hair, black hair, big brown eyes, mustard kurta, blue jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dev",
+      "name": "Dev",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Indian man aged 38, glasses, short beard, white shirt",
+      "base": "mature male, indian, brown skin, glasses, short hair, beard",
+      "outfits": {
+        "default": "white shirt"
+      },
+      "photo": "an Indian man aged 38, glasses, short beard, white shirt",
+      "tag_prompt": "mature male, indian, brown skin, glasses, short hair, beard, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gallery",
+      "name": "Galerie",
+      "description": "Galerie",
+      "tag_prompt": "indoors, art gallery, studio, blank canvas, white wall",
+      "mood": ""
+    },
+    {
+      "id": "l_rain",
+      "name": "Monzun",
+      "description": "Monzun",
+      "tag_prompt": "outdoors, mumbai street, monsoon, heavy rain, puddles, umbrellas",
+      "mood": ""
+    },
+    {
+      "id": "l_studio",
+      "name": "Ateliér",
+      "description": "Ateliér",
+      "tag_prompt": "indoors, photo studio, softbox, camera on tripod",
+      "mood": ""
+    },
+    {
+      "id": "l_marina",
+      "name": "Marine Drive",
+      "description": "Marine Drive",
+      "tag_prompt": "outdoors, marine drive, sea, sunset, promenade",
+      "mood": ""
+    }
+  ]
+}

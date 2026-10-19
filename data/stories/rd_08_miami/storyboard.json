@@ -1,0 +1,260 @@
+{
+  "title": "Miami, boxer a píseň",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "wet",
+        "running inside",
+        "broken umbrella",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "solange",
+          "text": "Promiňte — mohla bych se schovat? Prší jako na Haiti.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "rafa"
+        }
+      ],
+      "visual_tags": [
+        "holding towel",
+        "offering towel",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafa",
+          "text": "Tady schováváme boxery, ale dámy s rozbitým deštníkem taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gym",
+      "characters": [
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "drying hair with towel",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "solange",
+          "text": "Vy jste ten boxer, ne?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rafa",
+          "text": "Byl. Lepší je učit dětské rány než rozdávat vlastní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "singing",
+        "eyes closed",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "♪",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "rafa"
+        }
+      ],
+      "visual_tags": [
+        "sitting on sand",
+        "listening",
+        "moved"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafa",
+          "text": "Můj táta takhle zpíval. Ta píseň — zpívala jste ji úplně stejně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "rafa"
+        },
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting together on sand",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafa",
+          "text": "Říkali mi, že musím být kamenný.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "solange",
+          "text": "Kamenný muž, který se nebojí měkkosti. To je v Miami vzácné.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_harbor",
+      "characters": [
+        {
+          "id": "rafa",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "sitting at table",
+        "candles",
+        "nervous"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rafa",
+          "text": "Nikdy jsem nebyl zamilovaný. A teď rozumím každému slovu o lásce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_harbor",
+      "characters": [
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "solange",
+          "text": "Tak to bude první polibek, který v životě dáte?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "rafa",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_harbor",
+      "characters": [
+        {
+          "id": "rafa",
+          "outfit": "dinner"
+        },
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "candlelight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_harbor",
+      "characters": [
+        {
+          "id": "rafa",
+          "outfit": "dinner"
+        },
+        {
+          "id": "solange"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "head on chest",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "solange",
+          "text": "Skládám píseň pro chlapce z tělocvičny, který se nebojí být měkký.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

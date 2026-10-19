@@ -1,0 +1,77 @@
+{
+  "id": "w_rd_06_la",
+  "title": "Kovboj a malířka z Chinatownu",
+  "synopsis": "Kovboj Jake hledá ticho, malířka Amara důvod ráno vstát.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_studio",
+      "l_roof"
+    ]
+  },
+  "characters": [
+    {
+      "id": "jake",
+      "name": "Jake",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad-shouldered Montana cowboy aged 36, cowboy hat, denim, faint smile",
+      "base": "mature male, tall, broad shoulders, short hair, brown hair, stubble, cowboy hat",
+      "outfits": {
+        "default": "denim jacket, jeans, cowboy boots"
+      },
+      "photo": "a broad-shouldered Montana cowboy aged 36, cowboy hat, denim, faint smile",
+      "tag_prompt": "mature male, tall, broad shoulders, short hair, brown hair, stubble, cowboy hat, denim jacket, jeans, cowboy boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amara",
+      "name": "Amara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an African American painter aged 31, curly afro, curvy, paint-stained overalls",
+      "base": "adult, dark-skinned female, dark skin, curvy, afro, curly hair, black hair",
+      "outfits": {
+        "default": "paint-stained overalls, white t-shirt"
+      },
+      "photo": "an African American painter aged 31, curly afro, curvy, paint-stained overalls",
+      "tag_prompt": "adult, dark-skinned female, dark skin, curvy, afro, curly hair, black hair, paint-stained overalls, white t-shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_studio",
+      "name": "Ateliér",
+      "description": "Ateliér",
+      "tag_prompt": "indoors, art studio, gallery, canvases, paint, chinatown, afternoon light",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, los angeles skyline, sunset, blanket",
+      "mood": ""
+    }
+  ]
+}

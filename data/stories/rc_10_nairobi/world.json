@@ -1,0 +1,94 @@
+{
+  "id": "w_rc_10_nairobi",
+  "title": "Nairobské ráno",
+  "synopsis": "Mechanik Baraka se vrací z Londýna domů, Wanjiku prodává látky na trhu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_market",
+      "l_shop",
+      "l_park",
+      "l_rest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "baraka",
+      "name": "Baraka",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad Kenyan mechanic aged 36, short dreadlocks, work overalls",
+      "base": "mature male, dark-skinned male, very dark skin, burly, short dreadlocks",
+      "outfits": {
+        "default": "work overalls, oil stains",
+        "evening": "button-up shirt"
+      },
+      "photo": "a broad Kenyan mechanic aged 36, short dreadlocks, work overalls",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, burly, short dreadlocks, work overalls, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "wanjiku",
+      "name": "Wanjiku",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Kenyan woman aged 30, natural afro, colourful dress",
+      "base": "adult, dark-skinned female, very dark skin, tall female, athletic, afro",
+      "outfits": {
+        "default": "colorful dress"
+      },
+      "photo": "a tall athletic Kenyan woman aged 30, natural afro, colourful dress",
+      "tag_prompt": "adult, dark-skinned female, very dark skin, tall female, athletic, afro, colorful dress",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_market",
+      "name": "Trh",
+      "description": "Trh",
+      "tag_prompt": "outdoors, market, nairobi, fabric stall, colorful fabrics, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_shop",
+      "name": "Dílna",
+      "description": "Dílna",
+      "tag_prompt": "indoors, auto repair workshop, car, tools, daylight",
+      "mood": ""
+    },
+    {
+      "id": "l_park",
+      "name": "Park",
+      "description": "Park",
+      "tag_prompt": "outdoors, park, acacia tree, flower stall, afternoon, nairobi",
+      "mood": ""
+    },
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, warm light, evening, candle",
+      "mood": ""
+    }
+  ]
+}

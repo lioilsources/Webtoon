@@ -1,0 +1,95 @@
+{
+  "id": "w_r_ny",
+  "title": "New York – Dívka z Prahy a muž z Manhattanu",
+  "synopsis": "Eliška přijíždí z Prahy za prací, Daniel jí na chodníku podá kabát.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_juggernaut",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_cafe",
+      "l_river",
+      "l_awning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "eliska",
+      "name": "Eliška",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Czech woman aged 29, long dark brown hair, brown eyes, natural look, little makeup",
+      "base": "adult, curvy, wide hips, small breasts, long hair, dark brown hair, brown eyes",
+      "outfits": {
+        "default": "cream sweater, blue jeans, ankle boots",
+        "rain": "beige trench coat, cream sweater, wet hair"
+      },
+      "photo": "a petite curvy Czech woman aged 29, long dark brown hair, brown eyes, natural look, little makeup",
+      "tag_prompt": "adult, curvy, wide hips, small breasts, long hair, dark brown hair, brown eyes, cream sweater, blue jeans, ankle boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic African American man aged 34, short black hair, calm attentive eyes",
+      "base": "mature male, dark-skinned male, very dark skin, tall, muscular, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "black leather jacket, white shirt, dark jeans",
+        "suit": "charcoal suit, white shirt"
+      },
+      "photo": "a tall athletic African American man aged 34, short black hair, calm attentive eyes",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, tall, muscular, short hair, black hair, brown eyes, black leather jacket, white shirt, dark jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Brooklyn",
+      "description": "Brooklyn",
+      "tag_prompt": "outdoors, brooklyn, brownstone, yellow taxi, sidewalk, autumn leaves, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, small cafe, window, coffee cup, warm light, brooklyn",
+      "mood": ""
+    },
+    {
+      "id": "l_river",
+      "name": "East River",
+      "description": "East River",
+      "tag_prompt": "outdoors, east river, promenade, manhattan skyline, evening, string lights",
+      "mood": ""
+    },
+    {
+      "id": "l_awning",
+      "name": "Markýza",
+      "description": "Markýza",
+      "tag_prompt": "outdoors, night, rain, under awning, wet street, neon reflections, new york",
+      "mood": ""
+    }
+  ]
+}

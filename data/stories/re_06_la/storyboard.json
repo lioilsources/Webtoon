@@ -1,0 +1,257 @@
+{
+  "title": "Účetní a Pacifik",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "tomas"
+        }
+      ],
+      "visual_tags": [
+        "standing on beach",
+        "shoes in sand",
+        "holding map",
+        "out of place"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "kayla"
+        }
+      ],
+      "visual_tags": [
+        "surfing",
+        "catching paper in air",
+        "splash"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠPLOUCH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "kayla"
+        }
+      ],
+      "visual_tags": [
+        "holding wet map",
+        "grin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kayla",
+          "text": "Gratuluji. První vlna, první ztracený dokument. Jste oficiálně Kalifornan.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "tomas"
+        }
+      ],
+      "visual_tags": [
+        "embarrassed",
+        "adjusting glasses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tomas",
+          "text": "Já jsem účetní z Brna. Já jsem sem nepatřil ani před tou vlnou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_surf",
+      "characters": [
+        {
+          "id": "tomas",
+          "outfit": "surf"
+        }
+      ],
+      "visual_tags": [
+        "falling off surfboard",
+        "splash"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŽBLUŇK",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_surf",
+      "characters": [
+        {
+          "id": "tomas",
+          "outfit": "surf"
+        },
+        {
+          "id": "kayla"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man standing on surfboard",
+        "woman cheering",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tomas",
+          "text": "Já stojím! Já opravdu stojím!",
+          "kind": "shout"
+        },
+        {
+          "speaker_id": "kayla",
+          "text": "To říká každý, koho jsem naučila surfovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_surf",
+      "characters": [
+        {
+          "id": "kayla"
+        }
+      ],
+      "visual_tags": [
+        "wink",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tomas",
+          "text": "Kolik jich bylo?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kayla",
+          "text": "Jeden. Právě teď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "tomas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "writing in notebook",
+        "smile",
+        "carnival lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tomas",
+          "text": "Náklady: letenka. Výnos: ona.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "kayla",
+          "outfit": "evening"
+        },
+        {
+          "id": "tomas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing close",
+        "ferris wheel lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kayla",
+          "text": "Hledala jsem muže, který se nebojí vypadat směšně. Vy padáte úžasně.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "tomas",
+          "text": "Teď bych rád poprvé skončil v něčích rukou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "kayla",
+          "outfit": "evening"
+        },
+        {
+          "id": "tomas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "under ferris wheel",
+        "night",
+        "carnival lights",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

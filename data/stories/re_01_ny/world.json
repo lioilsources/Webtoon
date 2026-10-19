@@ -1,0 +1,86 @@
+{
+  "id": "w_re_01_ny",
+  "title": "Šátek nad Brooklynem",
+  "synopsis": "Nikol z Prahy ztratí v Brooklynu babiččin šátek a sochař Gabriel ho najde.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_juggernaut",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_studio",
+      "l_roof"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nikol",
+      "name": "Nikol",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a short curvy Czech woman aged 26, curly brown hair, warm humorous eyes",
+      "base": "adult, curvy, wide hips, short stature, curly hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "oversized coat, red scarf, sneakers"
+      },
+      "photo": "a short curvy Czech woman aged 26, curly brown hair, warm humorous eyes",
+      "tag_prompt": "adult, curvy, wide hips, short stature, curly hair, brown hair, brown eyes, oversized coat, red scarf, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "gabriel",
+      "name": "Gabriel",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall slender African American sculptor aged 33, dreadlocks, smudge of clay on his cheek",
+      "base": "mature male, dark-skinned male, dark skin, tall, slender, dreadlocks, black hair, brown eyes",
+      "outfits": {
+        "default": "leather apron, grey t-shirt, clay on hands",
+        "evening": "denim jacket, grey t-shirt"
+      },
+      "photo": "a tall slender African American sculptor aged 33, dreadlocks, smudge of clay on his cheek",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, tall, slender, dreadlocks, black hair, brown eyes, leather apron, grey t-shirt, clay on hands",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Brooklyn",
+      "description": "Brooklyn",
+      "tag_prompt": "outdoors, brooklyn, brooklyn bridge, grey sky, autumn, galleries, alley",
+      "mood": ""
+    },
+    {
+      "id": "l_studio",
+      "name": "Ateliér",
+      "description": "Ateliér",
+      "tag_prompt": "indoors, sculpture studio, clay, sculptures, dust in light, light rays",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, dusk, new york skyline, city lights, blanket, paper cups",
+      "mood": ""
+    }
+  ]
+}

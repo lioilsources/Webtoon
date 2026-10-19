@@ -1,0 +1,422 @@
+{
+  "title": "Nairobi – Muž v obleku a žena z parku",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_office",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "sitting at desk",
+        "alone",
+        "looking out window"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_office",
+      "characters": [
+        {
+          "id": "jonas"
+        }
+      ],
+      "visual_tags": [
+        "placing two tickets on desk",
+        "grin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jonas",
+          "text": "V sobotu jdeš ven.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_office",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "sitting at desk",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Nemůžu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jonas",
+          "text": "Můžeš.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "david",
+          "text": "Mám práci.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_office",
+      "characters": [
+        {
+          "id": "jonas"
+        }
+      ],
+      "visual_tags": [
+        "smirk",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jonas",
+          "text": "Práce ti nikdy neřekne, že tě miluje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_office",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "injured dog",
+        "small dog",
+        "bandage"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "david",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking down",
+        "concerned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Potřebujete pomoc?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "Pokud umíte držet psa.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "david",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "taking off coat",
+        "kneeling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Vy jste přišel z kanceláře?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "david",
+          "text": "Je to tak vidět?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_park",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kneeling together",
+        "holding dog",
+        "dog licking hand",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Trochu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "blue_dress"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O několik dní později.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "speechless",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Je něco špatně?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "david",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "blue_dress"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "head tilt",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Tak proč se tak díváte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "sitting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Protože jsem právě zjistil, že můj oblíbený pohled není výhled z kanceláře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "blue_dress"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Ty pořád přemýšlíš.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "david",
+          "text": "Je to moje práce.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "A kdy přestaneš?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "stopping",
+        "soft determined look"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Teď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "blue_dress"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "holding hands",
+        "closed eyes",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "blue_dress"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Tohle už vypadá jako dobrá změna kariéry.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

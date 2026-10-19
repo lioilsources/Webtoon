@@ -1,0 +1,243 @@
+{
+  "title": "Pod pařížskými lucernami",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_seine",
+      "characters": [],
+      "visual_tags": [
+        "street lamps",
+        "eiffel tower",
+        "evening",
+        "couples in distance"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večerní nábřeží Seiny.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "hugging own arms",
+        "looking at couples",
+        "painting stall"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "sigh",
+        "sad",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Všichni tu vypadají jako z romantického filmu. A já si připadám jako přerostlý věšák na kabáty...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "looking up at sky",
+        "wistful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Kde je moje múza?",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "jeanluc"
+        }
+      ],
+      "visual_tags": [
+        "emerging from under car hood",
+        "vintage car",
+        "wiping hand",
+        "oil stains"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Montmartre.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "nobaret"
+        }
+      ],
+      "visual_tags": [
+        "wind",
+        "hair blowing",
+        "reaching out",
+        "surprised",
+        "beret flying away"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "jeanluc"
+        }
+      ],
+      "visual_tags": [
+        "holding beret",
+        "smile",
+        "charmed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jeanluc",
+          "text": "Pardon, mademoiselle... Myslím, že vám vítr seslal z nebe něco, co patří nejvznešenější dámě v Paříži.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "nobaret"
+        },
+        {
+          "id": "jeanluc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing beret",
+        "woman looking down",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Děkuji... Ale nemusíte přehánět. Jsem jen obyčejná vysoká holka.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "nobaret"
+        },
+        {
+          "id": "jeanluc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "man gently holding her hand",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jeanluc",
+          "text": "Obyčejná? Vaše elegance bere dech.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "klara"
+        },
+        {
+          "id": "jeanluc"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking together",
+        "smile",
+        "bistro sign",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jeanluc",
+          "text": "Pojďte, nedaleko je malé bistro. Dlužíte mi rozečtený rozhovor za záchranu vašeho klobouku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

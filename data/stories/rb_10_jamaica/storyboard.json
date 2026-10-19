@@ -1,0 +1,228 @@
+{
+  "title": "Jamajka – Kovboj v Negrilu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "sitting on sand",
+        "alone",
+        "cowboy hat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Tady jsem cizinec…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "barefoot",
+        "twirling",
+        "happy"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman stopping",
+        "pointing at hat",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Klobouk ti sluší. Jsi z Ameriky?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at bar",
+        "drinks",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Žiju tady. A ty?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "cole",
+          "text": "Přijel jsem hledat něco, co ranch nemá.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "embrace",
+        "sunset",
+        "waves"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Ty mě nevidíš jako kovboje. Vidíš mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sunset",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "sea breeze"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "hat on table",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Poprvé se cítím doma i daleko od domova.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rest",
+      "characters": [
+        {
+          "id": "amara"
+        },
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands across table",
+        "candlelight",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Protože jsi tady se mnou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

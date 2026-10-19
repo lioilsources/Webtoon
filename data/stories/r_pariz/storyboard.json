@@ -1,0 +1,345 @@
+{
+  "title": "Paříž – Zrzka a muž v modrém saku",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_montmartre",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "walking up stairs",
+        "wind",
+        "hair blowing",
+        "holding sketchbook"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_montmartre",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "sketchbook flying",
+        "paper flying",
+        "surprised",
+        "reaching out"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FÍÍÍ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_montmartre",
+      "characters": [
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "catching sketchbook",
+        "holding sketchbook",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathieu",
+          "text": "Tohle hledáte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_montmartre",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing sketchbook",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Ano.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mathieu",
+          "text": "Máte krásné kresby.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofie",
+          "text": "To říkáte každé cizince?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_montmartre",
+      "characters": [
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "smirk",
+        "gentle eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathieu",
+          "text": "Ne. Jen těm, které mě zaujmou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "looking at painting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sofie dostane práci v malé galerii.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "sofie",
+          "text": "Vždycky jsem chtěla žít v Paříži.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mathieu",
+          "text": "A teď?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "worried"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Teď se bojím, že sem nepatřím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "turning",
+        "looking at viewer",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathieu",
+          "text": "Paříž není klub s členskou kartou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "sofie",
+          "outfit": "red_dress"
+        }
+      ],
+      "visual_tags": [
+        "sitting at table",
+        "candle",
+        "blush",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Co je?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "mathieu",
+          "text": "Přemýšlím, proč se pořád snažíš být méně nápadná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "sofie",
+          "outfit": "red_dress"
+        }
+      ],
+      "visual_tags": [
+        "sad smile",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Protože jsem celý život byla příliš nápadná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bistro",
+      "characters": [
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "gentle smile",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathieu",
+          "text": "Mně se líbíš přesně taková.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "sofie",
+          "outfit": "red_dress"
+        },
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "walking",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathieu",
+          "text": "Mohu tě políbit?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofie",
+          "text": "Tentokrát se nemusíš ptát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_seine",
+      "characters": [
+        {
+          "id": "sofie",
+          "outfit": "red_dress"
+        },
+        {
+          "id": "mathieu"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "eiffel tower in background",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}
