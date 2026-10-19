@@ -1,0 +1,245 @@
+{
+  "title": "Soul – Kavárna a deska",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "jana"
+        }
+      ],
+      "visual_tags": [
+        "typing on laptop",
+        "tea cup",
+        "concentrated",
+        "glasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cafe",
+      "characters": [
+        {
+          "id": "jana"
+        },
+        {
+          "id": "minho"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man standing at table",
+        "woman looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "minho",
+          "text": "Můžeš mi doporučit?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jana",
+          "text": "Já piju jen čaj.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "minho",
+          "text": "Tak mi doporuč čaj.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jana",
+          "outfit": "casual"
+        },
+        {
+          "id": "minho",
+          "outfit": "bruised"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on rooftop",
+        "city skyline",
+        "evening"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "jana",
+          "outfit": "casual"
+        },
+        {
+          "id": "minho",
+          "outfit": "bruised"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman pointing at his black eye",
+        "both laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana",
+          "text": "Boxer s monoklem.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "minho",
+          "text": "A ty s brýlemi. Sedíme si.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "jana"
+        },
+        {
+          "id": "minho"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "eating street food",
+        "lanterns",
+        "smiling"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_market",
+      "characters": [
+        {
+          "id": "jana"
+        },
+        {
+          "id": "minho"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving rose",
+        "woman holding rose",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "minho",
+          "text": "Jano, zůstaň se mnou.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jana",
+          "text": "Zůstanu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "jana"
+        },
+        {
+          "id": "minho"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "apartment entrance",
+        "coat on hook",
+        "boots by door"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kabát na věšák, kozačky ke dveřím.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "jana"
+        },
+        {
+          "id": "minho"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "warm lamp"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_door",
+      "characters": [],
+      "visual_tags": [
+        "city lights through window",
+        "night",
+        "seoul",
+        "lamp off"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Soul za oknem svítí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

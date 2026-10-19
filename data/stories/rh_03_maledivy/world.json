@@ -1,0 +1,88 @@
+{
+  "id": "w_rh_03_maledivy",
+  "title": "Maledivy – Přesně to, co jsem hledal",
+  "synopsis": "Aisha o sobě pochybuje, dokud k jejímu bungalovu nad vodou nepřipluje na kajaku Kai.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "flat_anime_mema",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu další dny."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow",
+      "l_beach",
+      "l_room"
+    ]
+  },
+  "characters": [
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite dark-skinned woman aged 26 with short curly black hair and gold bracelets",
+      "base": "adult, mature female, petite, dark-skinned female, dark skin, short hair, curly hair, black hair, brown eyes",
+      "outfits": {
+        "default": "flowing turquoise beach dress, gold bracelets, sandals",
+        "dinner": "gold satin slip dress, gold bracelets, hoop earrings, barefoot",
+        "morning": "white linen sundress, gold bracelets, sun hat"
+      },
+      "photo": "a petite dark-skinned woman aged 26 with short curly black hair and gold bracelets",
+      "tag_prompt": "adult, mature female, petite, dark-skinned female, dark skin, short hair, curly hair, black hair, brown eyes, flowing turquoise beach dress, gold bracelets, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Pacific Islander man aged 32 with short black hair and a linen shirt",
+      "base": "mature male, athletic, tan skin, short hair, black hair, dark eyes",
+      "outfits": {
+        "default": "white short-sleeved linen shirt, board shorts, shell necklace",
+        "dinner": "cream linen shirt, linen trousers, shell necklace"
+      },
+      "photo": "an athletic Pacific Islander man aged 32 with short black hair and a linen shirt",
+      "tag_prompt": "mature male, athletic, tan skin, short hair, black hair, dark eyes, white short-sleeved linen shirt, board shorts, shell necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov nad vodou",
+      "description": "Bungalov nad vodou",
+      "tag_prompt": "outdoors, overwater bungalow, wooden deck, turquoise lagoon, maldives, sunny, clear water",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Večeře na pláži",
+      "description": "Večeře na pláži",
+      "tag_prompt": "outdoors, beach dinner, table in sand, lanterns, torches, sunset, palm trees",
+      "mood": ""
+    },
+    {
+      "id": "l_room",
+      "name": "Bungalov v noci",
+      "description": "Bungalov v noci",
+      "tag_prompt": "indoors, bungalow interior, white curtains, ocean view, night, candles",
+      "mood": ""
+    }
+  ]
+}

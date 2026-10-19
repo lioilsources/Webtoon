@@ -1,0 +1,295 @@
+{
+  "title": "Lázně v Karlových Varech",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_colonnade",
+      "characters": [],
+      "visual_tags": [
+        "colonnade",
+        "mist",
+        "steam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Karlovy Vary. Kolonáda.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_colonnade",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "walking slowly",
+        "hands in pockets",
+        "looking at fountain",
+        "serious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_colonnade",
+      "characters": [
+        {
+          "id": "greta"
+        },
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman walking fast toward man",
+        "pointing",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "greta",
+          "text": "Vy jste ten lékař, co kouká na fontánu, jako by ji chtěl operovat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "viktor",
+          "text": "A vy ta fyzioterapeutka, co běhá kolonádou, jako by ji honilo vlastní volno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_colonnade",
+      "characters": [
+        {
+          "id": "greta"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "ponytail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "greta",
+          "text": "Volno nesnáším. Volno znamená, že nejsem potřeba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_spa",
+      "characters": [
+        {
+          "id": "viktor"
+        },
+        {
+          "id": "greta",
+          "outfit": "spa"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man sitting at pool edge",
+        "woman in robe sitting next to him",
+        "steam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Nebojím se vody. Bojím se klidu. V klidu se ozvou věci, které odkládám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_spa",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "glasses fogged",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Manželství, které skončilo. Syn, který píše jednou za tři měsíce. A kdo jsem, když nejsem doktor?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_spa",
+      "characters": [
+        {
+          "id": "greta",
+          "outfit": "spa"
+        }
+      ],
+      "visual_tags": [
+        "gentle",
+        "attentive",
+        "steam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "greta",
+          "text": "Tělo nelže. Tak mi řekněte: co cítíte?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "viktor",
+          "text": "Že poprvé za deset let nechci být večer sám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "viktor",
+          "outfit": "coat"
+        },
+        {
+          "id": "greta",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking hand in hand",
+        "lanterns",
+        "steam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "greta",
+          "text": "Za týden odjíždím do Stockholmu. Mám život naplánovaný na dva roky dopředu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "viktor",
+          "outfit": "coat"
+        },
+        {
+          "id": "greta",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man turning her to face him",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Nechci slyšet „můžeme si psát“. Chci slyšet pravdu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "greta",
+          "text": "Do toho plánu se právě vešel jeden doktor z Karlových Varů. A nevím, co s tím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "viktor",
+          "outfit": "coat"
+        },
+        {
+          "id": "greta",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "steam",
+        "lanterns",
+        "then both laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Nepředepisujte léčbu. Nechte to hojení na čase.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_colonnade",
+      "characters": [],
+      "visual_tags": [
+        "morning",
+        "porch of spa house",
+        "two cups on table",
+        "train timetable with underlined line"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno na zápraží dva hrnky. A jízdní řád s podtrženým vlakem do Stockholmu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

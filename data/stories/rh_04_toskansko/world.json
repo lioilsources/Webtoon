@@ -1,0 +1,88 @@
+{
+  "id": "w_rh_04_toskansko",
+  "title": "Toskánsko – Celá",
+  "synopsis": "Giulia mezi vinicemi potká Lucu, který se dívá na ni celou — ale doma ho někdo čeká.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec: on má doma přítelkyni, ona odchází."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vine",
+      "l_barn",
+      "l_road"
+    ]
+  },
+  "characters": [
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Italian woman aged 28 with long red wavy hair and freckles",
+      "base": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, pale skin",
+      "outfits": {
+        "default": "emerald green wrap dress, knee boots, gold earrings",
+        "barn": "emerald green wrap dress, cropped denim jacket, knee boots, gold earrings",
+        "morning": "white blouse, long skirt, knee boots, hair tied"
+      },
+      "photo": "a curvy Italian woman aged 28 with long red wavy hair and freckles",
+      "tag_prompt": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, pale skin, emerald green wrap dress, knee boots, gold earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a bearded Italian mechanic aged 35 in a flannel shirt",
+      "base": "mature male, beard, short hair, brown hair, brown eyes, broad shoulders",
+      "outfits": {
+        "default": "red flannel shirt, jeans, work boots",
+        "evening": "red flannel shirt buttoned, jeans, rolled sleeves"
+      },
+      "photo": "a bearded Italian mechanic aged 35 in a flannel shirt",
+      "tag_prompt": "mature male, beard, short hair, brown hair, brown eyes, broad shoulders, red flannel shirt, jeans, work boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vine",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, tuscany, vineyard, cypress trees, rolling hills, dirt road, golden afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_barn",
+      "name": "Stodola",
+      "description": "Stodola",
+      "tag_prompt": "indoors, old barn, hay bales, wine bottle, lantern, warm light, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_road",
+      "name": "Cesta za úsvitu",
+      "description": "Cesta za úsvitu",
+      "tag_prompt": "outdoors, tuscany, dirt road, dawn, mist, cypress trees",
+      "mood": ""
+    }
+  ]
+}

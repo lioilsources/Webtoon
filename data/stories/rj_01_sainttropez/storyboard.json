@@ -1,0 +1,323 @@
+{
+  "title": "Jachta u Saint-Tropez",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_port",
+      "characters": [],
+      "visual_tags": [
+        "yachts",
+        "sparkling sea",
+        "sunny"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Saint-Tropez. Pozdní léto.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "valentina"
+        }
+      ],
+      "visual_tags": [
+        "standing on pier",
+        "holding martini glass",
+        "looking at sea",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Pět let bez dovolené. Tohle martini si zasloužím.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "standing on yacht deck",
+        "calling out",
+        "waving",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Madame! Jste jediná v přístavu, kdo se dívá na moře. Ostatní koukají na jachty.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "valentina"
+        }
+      ],
+      "visual_tags": [
+        "amused smile",
+        "raised eyebrow",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "A vy se díváte na mě. Tak kdo z nás dvou se tu nepředvádí?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "valentina"
+        },
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man leaning over railing",
+        "woman on pier",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Já. Ale jen abych vás pozval na večerní plavbu. Žádný přístav, žádní lidé. Jen vítr a víno.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "valentina",
+          "text": "Pozvání na útěk je nejlepší lichotka. V osm?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "evening"
+        },
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "facing each other",
+        "pouring wine",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Pět let jsem dělala PR pro cizí sny. Zapomněla jsem, jaké jsou moje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "reaching across table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Tuhle loď jsem koupil po rozchodu. Myslel jsem, že kupuju útěk. Kupoval jsem čekání.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "looking at viewer",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Na co?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "luca",
+          "text": "Na někoho, kdo se zeptá, na co se dívám, a nechá mi čas na odpověď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bow",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "evening"
+        },
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at railing side by side",
+        "moonlight",
+        "woman holding his collar"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Luco. Já se nechci vrátit do přístavu. Ani zítra, ani pozítří.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "luca",
+          "text": "Tak zůstaň. Loď má místo pro dva.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bow",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "evening"
+        },
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "embrace",
+        "moonlight",
+        "wind in hair"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "closed cabin door",
+        "warm light under door",
+        "moonlight on water through porthole"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře kajuty se zavřou. Zůstane jen měsíc na vodě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "morning"
+        },
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "sunrise",
+        "sharing coffee on deck",
+        "smiling",
+        "leaning on shoulder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno nikdo nemíří do přístavu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    }
+  ]
+}

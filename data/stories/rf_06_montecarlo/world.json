@@ -1,0 +1,103 @@
+{
+  "id": "w_rf_06_montecarlo",
+  "title": "Monte Carlo – Muž, který si vybral špatně",
+  "synopsis": "Investor Victor si na své jachtě vybere okouzlující Claire a přehlédne fotografku Sofii.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_cyberreal_night",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ztracená láska."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_cabin",
+      "l_port"
+    ]
+  },
+  "characters": [
+    {
+      "id": "victor",
+      "name": "Victor",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an elegant tall slender Spanish investor aged 42 with greying short hair, black tuxedo",
+      "base": "mature male, tall, slender, grey hair, short hair, brown eyes",
+      "outfits": {
+        "default": "black tuxedo, white shirt, buttoned shirt, black bow tie",
+        "day": "light grey linen suit, white shirt, buttoned shirt, no necktie"
+      },
+      "photo": "an elegant tall slender Spanish investor aged 42 with greying short hair, black tuxedo",
+      "tag_prompt": "mature male, tall, slender, grey hair, short hair, brown eyes, black tuxedo, white shirt, buttoned shirt, black bow tie",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "claire",
+      "name": "Claire",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender glamorous French woman aged 38 with blonde hair in an elegant updo",
+      "base": "adult, mature female, slender, blonde hair, long hair, updo, blue eyes",
+      "outfits": {
+        "default": "shimmering silver sequin evening gown, diamond earrings, long gloves, high heels, elegant updo"
+      },
+      "photo": "a slender glamorous French woman aged 38 with blonde hair in an elegant updo",
+      "tag_prompt": "adult, mature female, slender, blonde hair, long hair, updo, blue eyes, shimmering silver sequin evening gown, diamond earrings, long gloves, high heels, elegant updo",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Italian woman aged 34 with long dark brown hair in a low ponytail, natural look, a professional camera",
+      "base": "adult, mature female, slender, long hair, dark brown hair, brown eyes, natural makeup",
+      "outfits": {
+        "default": "simple black jumpsuit, camera strap, holding camera, flat shoes, hair in low ponytail",
+        "travel": "beige trench coat, black jumpsuit, small leather bag, hair down"
+      },
+      "photo": "a slender Italian woman aged 34 with long dark brown hair in a low ponytail, natural look, a professional camera",
+      "tag_prompt": "adult, mature female, slender, long hair, dark brown hair, brown eyes, natural makeup, simple black jumpsuit, camera strap, holding camera, flat shoes, hair in low ponytail",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "outdoors, yacht deck, night, party, string lights, monaco harbor, city lights, champagne",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Salon jachty",
+      "description": "Salon jachty",
+      "tag_prompt": "indoors, yacht salon, night, desk, photographs on table, lamp",
+      "mood": ""
+    },
+    {
+      "id": "l_port",
+      "name": "Přístav",
+      "description": "Přístav",
+      "tag_prompt": "outdoors, harbor, monaco, early morning, parked car, yachts, blue hour",
+      "mood": ""
+    }
+  ]
+}

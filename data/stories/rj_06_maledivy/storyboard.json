@@ -1,0 +1,322 @@
+{
+  "title": "Ostrov na Maledivách",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jetty",
+      "characters": [],
+      "visual_tags": [
+        "turquoise lagoon",
+        "palms",
+        "seaplane"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Maledivy. Soukromý ostrov.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jetty",
+      "characters": [
+        {
+          "id": "dominik"
+        }
+      ],
+      "visual_tags": [
+        "walking on jetty",
+        "barefoot",
+        "suit",
+        "sunglasses",
+        "tired face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Uspěl ve všem. A ztratil všechno.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jetty",
+      "characters": [
+        {
+          "id": "dominik"
+        },
+        {
+          "id": "naia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman greeting",
+        "mask on forehead",
+        "man taking off sunglasses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "naia",
+          "text": "Vítejte. Jsem Naia. Potápění je jen plavání s důvěrou. Tu vám tady dáme.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "naia",
+          "text": "Ale máte na sobě oblek. Tak spíš za dva dny.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_jetty",
+      "characters": [
+        {
+          "id": "naia"
+        }
+      ],
+      "visual_tags": [
+        "calm",
+        "serious",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "naia",
+          "text": "Útěk před vlastním životem se na ostrově neschová. Voda vám ho ukáže.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "dominik",
+          "outfit": "dive"
+        },
+        {
+          "id": "naia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "floating at surface",
+        "masks pushed up",
+        "talking",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dominik",
+          "text": "Dvacet let jsem stavěl firmy. Nikdy jsem neviděl nic tak klidného.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "naia",
+          "text": "Pod vodou se nedá lhát. Všechno je vidět. I to, před čím člověk utekl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "dominik",
+          "outfit": "dive"
+        }
+      ],
+      "visual_tags": [
+        "sad",
+        "wet hair",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dominik",
+          "text": "Žena odešla před rokem. Utekl jsem do práce. Práce neodejde.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "naia",
+          "text": "Ale ani neumí zůstat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "dominik",
+          "outfit": "night"
+        },
+        {
+          "id": "naia",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on sand",
+        "moonlight",
+        "facing each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "naia",
+          "text": "Za tři dny odjíždíte.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "dominik",
+          "text": "Odjíždím. Ale ne z ostrova. Z života, který jsem měl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "dominik",
+          "outfit": "night"
+        },
+        {
+          "id": "naia",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "smile",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "naia",
+          "text": "Investor, který se učí potápět. A když se to nenaučí?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "dominik",
+          "text": "Tak zůstane s průvodkyní, která ho drží nad vodou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "dominik",
+          "outfit": "night"
+        },
+        {
+          "id": "naia",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "embrace",
+        "moonlight",
+        "sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "naia",
+          "text": "Uč se. Celý život.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [],
+      "visual_tags": [
+        "villa door open to sea breeze",
+        "curtains moving",
+        "lanterns",
+        "moon"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře zůstanou otevřené. Pro mořský vítr, jediného svědka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jetty",
+      "characters": [
+        {
+          "id": "dominik"
+        },
+        {
+          "id": "naia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "sitting on jetty edge",
+        "signed contract on lap",
+        "smiling",
+        "sunrise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno na molu leží smlouva podepsaná na poslední stránce.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

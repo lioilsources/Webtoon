@@ -1,0 +1,286 @@
+{
+  "title": "Tajemná noc na Copacabaně",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_beach",
+      "characters": [],
+      "visual_tags": [
+        "mosaic promenade",
+        "beach",
+        "palm trees",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Rio de Janeiro. Copacabana.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carlos",
+          "outfit": "training"
+        }
+      ],
+      "visual_tags": [
+        "training at outdoor gym",
+        "pull-ups",
+        "sweat",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "beatrice"
+        },
+        {
+          "id": "pest"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "pushy man blocking woman's way",
+        "woman annoyed",
+        "stepping back"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pest",
+          "text": "Kam tak spěcháš, krásko?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "beatrice"
+        },
+        {
+          "id": "carlos",
+          "outfit": "training"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man stepping between",
+        "calm",
+        "protective",
+        "woman behind him"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Dáma už odchází. A ty taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "beatrice"
+        }
+      ],
+      "visual_tags": [
+        "relieved sigh",
+        "looking up",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatrice",
+          "text": "Děkuji vám... Vypadáte jako někdo, kdo se nebojí vůbec ničeho.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "carlos",
+          "outfit": "training"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "shy",
+        "scars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "Lidé se mě spíš bojí. Myslí si, že umím jen bojovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "beatrice",
+          "outfit": "evening"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "candlelit rooftop terrace",
+        "samba music from street",
+        "sitting by pool",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Santa Teresa. Z dálky zní samba.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "beatrice",
+          "outfit": "evening"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman gently touching scar on his eyebrow",
+        "tender",
+        "candlelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "carlos",
+          "text": "S tebou se cítím v bezpečí... poprvé v životě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "beatrice",
+          "outfit": "evening"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss on her shoulder",
+        "embrace",
+        "stars"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [],
+      "visual_tags": [
+        "empty terrace",
+        "candles",
+        "pool reflecting stars",
+        "rio lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Nad Riem svítí hvězdy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "beatrice"
+        },
+        {
+          "id": "carlos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "walking on beach holding hands",
+        "sunrise",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatrice",
+          "text": "Tak co, rváči? Půjdeme zítra zase na pláž?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "carlos",
+          "text": "Každé ráno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

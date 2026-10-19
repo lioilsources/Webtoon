@@ -1,0 +1,87 @@
+{
+  "id": "w_rg_09_kostarika",
+  "title": "Ztraceni v deštném pralese na Kostarice",
+  "synopsis": "Mechanik Leo opravuje Sophiin džíp u sopky Arenal a ona v něm najde, co doma nikdy nepotkala.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow",
+      "l_spring",
+      "l_road"
+    ]
+  },
+  "characters": [
+    {
+      "id": "leo",
+      "name": "Leo Baker",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular American mechanic aged 26 with short dark hair",
+      "base": "mature male, muscular, short hair, black hair, brown eyes, stubble",
+      "outfits": {
+        "default": "grey outdoor shirt, rolled-up sleeves, cargo pants, work boots, oil stains",
+        "clean": "olive green button-up shirt, cargo pants, hiking boots"
+      },
+      "photo": "a muscular American mechanic aged 26 with short dark hair",
+      "tag_prompt": "mature male, muscular, short hair, black hair, brown eyes, stubble, grey outdoor shirt, rolled-up sleeves, cargo pants, work boots, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sophie",
+      "name": "Sophie Laurent",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender French woman aged 23, long blonde hair",
+      "base": "adult, tall female, slender, blonde hair, long hair, blue eyes",
+      "outfits": {
+        "default": "floral midi dress, wide-brim straw hat, flat sandals",
+        "evening": "white linen dress, light rain jacket, hair loose"
+      },
+      "photo": "a tall slender French woman aged 23, long blonde hair",
+      "tag_prompt": "adult, tall female, slender, blonde hair, long hair, blue eyes, floral midi dress, wide-brim straw hat, flat sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov u Arenalu",
+      "description": "Bungalov u Arenalu",
+      "tag_prompt": "outdoors, wooden bungalow, rainforest, arenal volcano in background, rain, old jeep with open hood",
+      "mood": ""
+    },
+    {
+      "id": "l_spring",
+      "name": "Termální jezírko",
+      "description": "Termální jezírko",
+      "tag_prompt": "outdoors, natural hot spring pool, stone edge, steam, palm trees, rain, evening, lanterns",
+      "mood": ""
+    },
+    {
+      "id": "l_road",
+      "name": "Lesní cesta",
+      "description": "Lesní cesta",
+      "tag_prompt": "outdoors, jungle road, rainforest, morning sun, jeep, puddles",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "w_ri_07_bali",
+  "title": "Bali – Plážový resort",
+  "synopsis": "Úředník David bloudí mezi rýžovými terasami, Ayu ho zachrání před deštěm a naučí tančit.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: Ayu odjíždí, David zůstává."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rice",
+      "l_beach",
+      "l_resto",
+      "l_bungalow",
+      "l_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "david",
+      "name": "David",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender African American office worker aged 32, short black hair, glasses, light blue shirt",
+      "base": "mature male, dark-skinned male, dark skin, slender, short hair, black hair, glasses",
+      "outfits": {
+        "default": "light blue button-up shirt, beige chinos, glasses",
+        "evening": "white linen shirt, beige chinos, glasses, sandals"
+      },
+      "photo": "a slender African American office worker aged 32, short black hair, glasses, light blue shirt",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, slender, short hair, black hair, glasses, light blue button-up shirt, beige chinos, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ayu",
+      "name": "Ayu",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Indonesian woman aged 28, long black hair with a frangipani flower, floral sundress",
+      "base": "adult, mature female, petite, curvy, tan skin, long hair, black hair, brown eyes",
+      "outfits": {
+        "default": "floral sundress, sandals, frangipani in hair",
+        "dance": "golden sarong dress, gold bracelets, frangipani in hair",
+        "travel": "white blouse, long floral skirt, straw bag"
+      },
+      "photo": "a petite curvy Indonesian woman aged 28, long black hair with a frangipani flower, floral sundress",
+      "tag_prompt": "adult, mature female, petite, curvy, tan skin, long hair, black hair, brown eyes, floral sundress, sandals, frangipani in hair",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rice",
+      "name": "Rýžové terasy",
+      "description": "Rýžové terasy",
+      "tag_prompt": "outdoors, rice terraces, bali, palm trees, rain clouds, green, misty",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, bonfire, night, music, torches, ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_resto",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "outdoors, beach restaurant, candles, lanterns, night, flowers on table",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov",
+      "description": "Bungalov",
+      "tag_prompt": "outdoors, bali bungalow door, lanterns, night, palm leaves",
+      "mood": ""
+    },
+    {
+      "id": "l_morning",
+      "name": "Ráno",
+      "description": "Ráno",
+      "tag_prompt": "outdoors, bungalow terrace, morning, ocean view, seashell",
+      "mood": ""
+    }
+  ]
+}

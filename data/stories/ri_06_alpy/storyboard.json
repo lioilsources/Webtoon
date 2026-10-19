@@ -1,0 +1,243 @@
+{
+  "title": "Švýcarské Alpy – Horská chata",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_gondola",
+      "characters": [],
+      "visual_tags": [
+        "cable car over snowy mountains",
+        "alps"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Švýcarské Alpy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gondola",
+      "characters": [
+        {
+          "id": "marek"
+        },
+        {
+          "id": "elise"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting in cable car",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marek",
+          "text": "Nevypadám tu trochu jako medvěd?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elise",
+          "text": "Jako medvěd, který se nebojí výšek.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gondola",
+      "characters": [
+        {
+          "id": "elise"
+        }
+      ],
+      "visual_tags": [
+        "teasing smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marek",
+          "text": "To je kompliment?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elise",
+          "text": "To je fakt.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "marek",
+          "outfit": "sweater"
+        }
+      ],
+      "visual_tags": [
+        "playing guitar",
+        "fireplace",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "marek",
+          "outfit": "sweater"
+        },
+        {
+          "id": "elise",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "wine glasses",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elise",
+          "text": "Mareku, zůstaň do zítra.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marek",
+          "text": "Zůstanu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_slope",
+      "characters": [
+        {
+          "id": "marek"
+        },
+        {
+          "id": "elise",
+          "outfit": "ski"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "snow",
+        "woman handing glove",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elise",
+          "text": "Naučím tě lyžovat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marek",
+          "text": "A já tě naučím, jak se nebát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "marek",
+          "outfit": "sweater"
+        },
+        {
+          "id": "elise",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "wooden door",
+        "lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bunda, kozačky a šperky zůstanou v předsíni.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "marek",
+          "outfit": "sweater"
+        },
+        {
+          "id": "elise",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "tender"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_door",
+      "characters": [],
+      "visual_tags": [
+        "snowy window",
+        "night",
+        "stars over alps",
+        "lamp off"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Nad Alpami se rozsvítí hvězdy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -24,6 +24,7 @@ UNSAFE = {"explicit": 0.2, "questionable": 0.3}
 UNSAFE_KIDS = {**UNSAFE, "sensitive": 0.5}  # same as backend wd14.Thresholds("kids")
 DESIGN_THRESHOLD = 0.35
 MAX_RESEED = 2
+ADULT_TAG_LIMITS = {"cleavage": 0.8, "large breasts": 0.8, "covered nipples": 0.3, "shirtless": 0.5, "underwear": 0.3, "bed": 0.7}
 
 
 def sheet_panel(char):
@@ -36,6 +37,9 @@ def safety(tags, audience="teen"):
     r = tags.get("rating", {})
     limits = UNSAFE_KIDS if audience == "kids" else UNSAFE
     bad = {k: round(r.get(k, 0), 3) for k, lim in limits.items() if r.get(k, 0) > lim}
+    if audience == "adult":  # fashion is fine, a panel dominated by the neckline is not
+        g = tags.get("general", {})
+        bad.update({k: round(g[k], 3) for k, lim in ADULT_TAG_LIMITS.items() if g.get(k, 0) > lim})
     return bad
 
 
@@ -114,6 +118,10 @@ def main():
         while (OUT / "PAUSE").exists():
             time.sleep(20)
         for attempt in range(MAX_RESEED + 1):
+            # ComfyUI window end: WEBTOON_DEADLINE=HH:MM → submit nothing after it (resume later with --skip-existing).
+            if os.environ.get("WEBTOON_DEADLINE") and time.strftime("%H:%M") >= os.environ["WEBTOON_DEADLINE"]:
+                print(f"deadline {os.environ['WEBTOON_DEADLINE']} reached, stopping")
+                raise SystemExit(3)
             s = seed if attempt == 0 else random.randint(0, 2**31)
             g = comfy.workflow(p["positive"], p["negative"], p["width"], p["height"], s, p["preset"],
                                f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", ref_image=ref_name, ip_weight=args.ip_weight,

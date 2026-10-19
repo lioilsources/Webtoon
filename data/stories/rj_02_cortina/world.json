@@ -1,0 +1,88 @@
+{
+  "id": "w_rj_02_cortina",
+  "title": "Hory nad Cortinou",
+  "synopsis": "Klára se rok učila lyžovat kvůli instruktorovi Matteovi a teď se vrací pro odpověď.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořký konec: Klára odjede sama a silnější."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_lift",
+      "l_chalet",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "klara",
+      "name": "Klára Dvořáková",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender Czech woman aged 27, long black hair, red lipstick, red ski jacket",
+      "base": "adult, tall female, slender, black hair, long hair, dark eyes, red lips",
+      "outfits": {
+        "default": "red ski jacket, black ski pants, ski goggles on head, gloves",
+        "chalet": "fitted turtleneck sweater, slim jeans, hair down, red lips",
+        "coat": "long red wool coat, turtleneck sweater, ski goggles in hand"
+      },
+      "photo": "a tall slender Czech woman aged 27, long black hair, red lipstick, red ski jacket",
+      "tag_prompt": "adult, tall female, slender, black hair, long hair, dark eyes, red lips, red ski jacket, black ski pants, ski goggles on head, gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "matteo",
+      "name": "Matteo Bellini",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Italian ski instructor aged 33, tanned, short blond hair, ski instructor jacket",
+      "base": "mature male, tanned skin, blonde hair, short hair, blue eyes, athletic, bright smile",
+      "outfits": {
+        "default": "ski instructor jacket, ski pants, beanie",
+        "chalet": "cream cable knit sweater, dark trousers"
+      },
+      "photo": "an Italian ski instructor aged 33, tanned, short blond hair, ski instructor jacket",
+      "tag_prompt": "mature male, tanned skin, blonde hair, short hair, blue eyes, athletic, bright smile, ski instructor jacket, ski pants, beanie",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_lift",
+      "name": "Lanovka",
+      "description": "Lanovka",
+      "tag_prompt": "outdoors, ski resort, chairlift queue, snow, dolomites, mountains, sunny, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_chalet",
+      "name": "Chalet",
+      "description": "Chalet",
+      "tag_prompt": "indoors, wooden chalet, fireplace, window, night, cable car lights outside, grappa glasses",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa",
+      "description": "Terasa",
+      "tag_prompt": "outdoors, chalet terrace, night, snow falling, valley lights, starry sky, breath mist",
+      "mood": ""
+    }
+  ]
+}

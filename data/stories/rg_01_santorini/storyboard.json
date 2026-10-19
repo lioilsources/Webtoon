@@ -1,0 +1,288 @@
+{
+  "title": "Ztracený luxus na jachtě u Santorini",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "yacht anchored below cliffs",
+        "other yachts",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Santorini. Jachta kotví pod útesy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "looking at other yachts",
+        "from side",
+        "sunset",
+        "wind in hair"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "nosun"
+        }
+      ],
+      "visual_tags": [
+        "taking off sunglasses",
+        "sigh",
+        "insecure",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Všechny ženy tady vypadají jako z mola v Miláně... Já v těchhle šatech jen zkouším zapadnout.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "nosun"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man offering champagne glass",
+        "woman turning",
+        "surprised",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Modelky jsou jen věšáky na šaty.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "warm smile",
+        "looking at viewer",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Vy máte v sobě ženskost, ze které se mi tají dech.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "nosun"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "shy smile",
+        "holding champagne glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dinner",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "evening"
+        },
+        {
+          "id": "marcus",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at candlelit table",
+        "laughing",
+        "champagne",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře na palubě. Šampaňské a smích.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "evening"
+        },
+        {
+          "id": "marcus",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at cabin door",
+        "embrace",
+        "faces close",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Jsi dokonalá. Taková, jaká jsi.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "Zůstaň se mnou, Marcusi. Až do rána.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "evening"
+        },
+        {
+          "id": "marcus",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "hand on cheek",
+        "dim light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "closed cabin door",
+        "porthole",
+        "moonlight on waves",
+        "night",
+        "empty corridor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře kajuty se zavřou. Za okénkem šumí moře.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "sitting together on deck",
+        "coffee cups",
+        "her head on his shoulder",
+        "soft sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Poprvé se tu necítím navíc.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Protože jsi přesně tam, kam patříš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

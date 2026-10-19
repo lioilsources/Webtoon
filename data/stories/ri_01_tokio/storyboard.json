@@ -1,0 +1,296 @@
+{
+  "title": "Tokio – Módní týden",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_backstage",
+      "characters": [],
+      "visual_tags": [
+        "fashion week",
+        "gold dresses on racks",
+        "hairspray mist"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tokio. Týden módy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_backstage",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "work"
+        }
+      ],
+      "visual_tags": [
+        "holding makeup brush",
+        "doing makeup",
+        "concentrated",
+        "mirror lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Mezi modelkami jsem jen ta malá s štětcem.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_backstage",
+      "characters": [
+        {
+          "id": "haruto"
+        }
+      ],
+      "visual_tags": [
+        "holding documents",
+        "looking around",
+        "polite",
+        "lost"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "haruto",
+          "text": "Promiňte, nevíte, kde je pan Tanaka?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_backstage",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "work"
+        },
+        {
+          "id": "haruto"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "talking",
+        "woman pointing to the left",
+        "man smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Já jsem jen vizážistka. Ale zkuste chodbu vlevo.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "haruto",
+          "text": "Vy nejste jen vizážistka. Máte nejklidnější ruce v celé místnosti.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "evening"
+        },
+        {
+          "id": "haruto",
+          "outfit": "nojacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at bar",
+        "cocktail glasses",
+        "city view",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "V Tokiu si připadám moc kulatá.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "haruto",
+          "text": "A já moc nudný. Přesto tu sedíme spolu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "small smile",
+        "looking down",
+        "glass in hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "To je pravda.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_shibuya",
+      "characters": [
+        {
+          "id": "klara"
+        },
+        {
+          "id": "haruto"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "rain",
+        "man holding umbrella over woman",
+        "neon reflections"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "haruto",
+          "text": "Kláro, můžu vás pozvat zítra? Na procházku a večeři.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shibuya",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "rain",
+        "neon light on face",
+        "under umbrella"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Ano. Ale vezmu si kozačky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "evening"
+        },
+        {
+          "id": "haruto",
+          "outfit": "nojacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at door",
+        "embrace",
+        "looking at each other",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Druhý večer. Trenčkot zůstane na věšáku, kozačky u dveří.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "evening"
+        },
+        {
+          "id": "haruto",
+          "outfit": "nojacket"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "tender",
+        "dim light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_room",
+      "characters": [],
+      "visual_tags": [
+        "closed door",
+        "light under door",
+        "dark corridor",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře se zavřou. Tokio svítí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

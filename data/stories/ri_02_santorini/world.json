@@ -1,0 +1,104 @@
+{
+  "id": "w_ri_02_santorini",
+  "title": "Santorini – Resort",
+  "synopsis": "Nora přijela na Santorini na týden a plavčík Nikos jí ukáže nejlepší gyros i to, že léto nemusí trvat věčně.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_juggernaut",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: letní romance skončí, zůstane vzpomínka."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_terrace",
+      "l_nightbeach",
+      "l_bungalow",
+      "l_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nora",
+      "name": "Nora",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Black British woman aged 30, natural afro hair, warm brown eyes",
+      "base": "adult, curvy, dark-skinned female, dark skin, afro, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt dress, straw hat, sandals, gold hoop earrings",
+        "sunset": "emerald silk wrap dress, gold hoop earrings, gold bangles",
+        "night": "white linen shirt dress, gold hoop earrings, barefoot"
+      },
+      "photo": "a curvy Black British woman aged 30, natural afro hair, warm brown eyes",
+      "tag_prompt": "adult, curvy, dark-skinned female, dark skin, afro, black hair, brown eyes, white linen shirt dress, straw hat, sandals, gold hoop earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Greek lifeguard aged 33, short black hair, stubble, sun-tanned",
+      "base": "mature male, athletic, tan, short hair, black hair, stubble, brown eyes",
+      "outfits": {
+        "default": "white t-shirt, red shorts, whistle",
+        "evening": "white linen shirt, beige chinos"
+      },
+      "photo": "an athletic Greek lifeguard aged 33, short black hair, stubble, sun-tanned",
+      "tag_prompt": "mature male, athletic, tan, short hair, black hair, stubble, brown eyes, white t-shirt, red shorts, whistle",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, black sand, blue sea, sunny, beach umbrella, santorini",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa",
+      "description": "Terasa",
+      "tag_prompt": "outdoors, terrace, white houses, blue domes, caldera view, sunset, wine glasses",
+      "mood": ""
+    },
+    {
+      "id": "l_nightbeach",
+      "name": "Noční pláž",
+      "description": "Noční pláž",
+      "tag_prompt": "outdoors, beach, night, stars, moonlight, calm sea",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov",
+      "description": "Bungalov",
+      "tag_prompt": "outdoors, white bungalow door, night, lantern, bougainvillea",
+      "mood": ""
+    },
+    {
+      "id": "l_morning",
+      "name": "Ráno v bungalovu",
+      "description": "Ráno v bungalovu",
+      "tag_prompt": "indoors, white room, morning light, linen curtains, seashell on pillow, sea view",
+      "mood": ""
+    }
+  ]
+}

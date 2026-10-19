@@ -1,0 +1,294 @@
+{
+  "title": "Koberce v Istanbulu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bazaar",
+      "characters": [],
+      "visual_tags": [
+        "labyrinth of shops",
+        "lanterns",
+        "gold"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Istanbul. Velký bazar.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bazaar",
+      "characters": [
+        {
+          "id": "selma"
+        }
+      ],
+      "visual_tags": [
+        "leading tourists",
+        "raised hand",
+        "confident",
+        "walking"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bazaar",
+      "characters": [
+        {
+          "id": "can"
+        }
+      ],
+      "visual_tags": [
+        "standing before carpet shop",
+        "calm",
+        "arms crossed",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "can",
+          "text": "Madam. Průvodkyně tu mívají v očích únavu. Vy máte v očích moře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bazaar",
+      "characters": [
+        {
+          "id": "selma"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "selma",
+          "text": "Moře?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bazaar",
+      "characters": [
+        {
+          "id": "selma"
+        },
+        {
+          "id": "can"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "facing each other",
+        "carpets behind",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "can",
+          "text": "Hluboké. S ostrovem, ke kterému se nikomu nechce plavat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "selma",
+          "text": "Vy byste se odvážil?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "can",
+          "text": "Přijďte večer. Ukážu vám koberec, který se nedá koupit penězi. Bospor.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bosphorus",
+      "characters": [
+        {
+          "id": "selma",
+          "outfit": "evening"
+        },
+        {
+          "id": "can",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on deck",
+        "tea glasses",
+        "bridge lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "selma",
+          "text": "Čtu pravdu ve vzorech. I v očích. Je to moje pracovní deformace.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "can",
+          "text": "Tak si ve mně přečtěte pravdu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bosphorus",
+      "characters": [
+        {
+          "id": "selma",
+          "outfit": "evening"
+        },
+        {
+          "id": "can",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "city lights",
+        "night wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "selma",
+          "outfit": "evening"
+        },
+        {
+          "id": "can",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving small jewelry box",
+        "woman opening it",
+        "lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "selma",
+          "text": "Canu… tohle je z obchodní kolekce?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "can",
+          "text": "Dárek pro dobrou zákaznici.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "selma",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "pained smile",
+        "holding necklace box",
+        "eyes glistening"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "selma",
+          "text": "Ta krabička má razítko vašeho zboží. A tohle zboží dáváte každé, která vám uvěří o Bosporu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "selma"
+        }
+      ],
+      "visual_tags": [
+        "putting on coat",
+        "straightening earrings",
+        "cold expression",
+        "walking between carpets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "selma",
+          "text": "Vy nechcete ostrov, Canu. Vy chcete prodej.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "can",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone among carpets",
+        "head down",
+        "single lamp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bohatý na všechno. Kromě jedné věci.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

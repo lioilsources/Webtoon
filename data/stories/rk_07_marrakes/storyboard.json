@@ -1,0 +1,261 @@
+{
+  "title": "Marrákeš – Zahrada, která spí",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_medina",
+      "characters": [],
+      "visual_tags": [
+        "medina alley",
+        "fabrics",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Medína. Ráj a bludiště.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_medina",
+      "characters": [
+        {
+          "id": "celeste"
+        }
+      ],
+      "visual_tags": [
+        "lost",
+        "looking at phone",
+        "confused",
+        "crowd blur"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "celeste",
+          "text": "Mapa tady nefunguje.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_medina",
+      "characters": [
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "gesturing the way",
+        "polite distance",
+        "fabric stall"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_riad",
+      "characters": [
+        {
+          "id": "celeste"
+        },
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking into courtyard",
+        "fountain",
+        "orange trees",
+        "woman amazed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_riad",
+      "characters": [
+        {
+          "id": "celeste"
+        }
+      ],
+      "visual_tags": [
+        "removing hat",
+        "looking at him",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "celeste",
+          "text": "Na blogu mám sto tisíc lidí, kteří mě vidí každý den. Ty se na mě díváš, jako bych byla jediná v místnosti. To je nebezpečné.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_riad",
+      "characters": [
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "calm grey eyes",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "omar",
+          "text": "Ne. Nebezpečné je být viděn stokrát a pochopen nikdy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "celeste",
+          "outfit": "night"
+        },
+        {
+          "id": "omar",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on rooftop",
+        "mint tea",
+        "stars",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pomalé večery. Čaj.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "celeste",
+          "outfit": "night"
+        },
+        {
+          "id": "omar",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man kissing woman's hand",
+        "gentle",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Políbil jí ruku – dávno předtím, než políbil její rty.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "celeste",
+          "outfit": "airport"
+        }
+      ],
+      "visual_tags": [
+        "standing alone with suitcase",
+        "looking around",
+        "departure board"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "celeste",
+          "outfit": "airport"
+        }
+      ],
+      "visual_tags": [
+        "reading phone message",
+        "shocked",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "SMS od Omara: „Můj otec umřel. Musím vést rodinu. Nemohu tě vzít do života, který jsem nezvolil. Odpusť, že jsem ti ukázal zahradu.“",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "celeste",
+          "outfit": "airport"
+        }
+      ],
+      "visual_tags": [
+        "looking out window at plane",
+        "phone lowered",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ve stories nezveřejní nic. Některé zahrady nepatří na internet.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

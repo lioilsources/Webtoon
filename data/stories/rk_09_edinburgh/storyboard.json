@@ -1,0 +1,275 @@
+{
+  "title": "Edinburgh – Město, které pamatuje",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_shop",
+      "characters": [],
+      "visual_tags": [
+        "royal mile",
+        "rain",
+        "bookshop window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Royal Mile. Antikvariát.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "june"
+        }
+      ],
+      "visual_tags": [
+        "browsing old books",
+        "curious",
+        "red boots"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "june",
+          "text": "Hledám atmosféru vraždy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "alistair"
+        }
+      ],
+      "visual_tags": [
+        "handing old book across counter",
+        "dry smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kniha z roku 1890. Věnování od zamilovaného lupiče.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "june"
+        },
+        {
+          "id": "alistair"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "leaning on counter",
+        "flirting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "june",
+          "text": "Píšu o lidech, kteří se namlouvají přes zločin. Vy jste ten typ, co loupí srdce?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "alistair",
+          "text": "Já jsem typ, co prodává cizí dopisy a nikdy nenapsal vlastní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kirk",
+      "characters": [
+        {
+          "id": "june"
+        },
+        {
+          "id": "alistair",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking among gravestones",
+        "sharing umbrella",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Týden spolu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kirk",
+      "characters": [
+        {
+          "id": "june"
+        },
+        {
+          "id": "alistair",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "his hand holding hers inside her coat pocket"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pub",
+      "characters": [
+        {
+          "id": "june",
+          "outfit": "evening"
+        },
+        {
+          "id": "alistair"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "reading manuscript aloud",
+        "whisky",
+        "man correcting",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alistair",
+          "text": "Skotsko takhle nefunguje. Ne jako v amerických knihách.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "june"
+        },
+        {
+          "id": "alistair",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at gate",
+        "facing each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "june",
+          "text": "Zůstaň se mnou o týden déle.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "alistair",
+          "text": "Nemůžu. Mám obchod. Mám… zvyky. Jsem město, June. A ty jsi román. Romány končí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "june"
+        }
+      ],
+      "visual_tags": [
+        "sharp look",
+        "tears held back"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "june",
+          "text": "Detektivky končí odhalením. Ty ses právě odhalil: bojíš se, že když půjdeš za mnou, přestaneš být obětí vlastního příběhu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_airport",
+      "characters": [],
+      "visual_tags": [
+        "plane taking off",
+        "grey sky",
+        "window",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shop",
+      "characters": [
+        {
+          "id": "alistair"
+        }
+      ],
+      "visual_tags": [
+        "alone behind counter",
+        "holding book",
+        "reading dedication",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Věnování od ní: „Lupičům, kteří nekradou.“ Nekradl. A to byla ta největší krádež.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

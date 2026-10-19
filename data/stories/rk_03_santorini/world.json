@@ -1,0 +1,87 @@
+{
+  "id": "w_rk_03_santorini",
+  "title": "Santorini – Bílé stěny, modrá krev",
+  "synopsis": "Chloé píchne kolo nad kalderou a zachrání ji vinař Nikos, který věří na osud.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – Chloé zůstane na Santorini."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_road",
+      "l_winery",
+      "l_dome"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloé",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a French woman aged 26, long red hair, freckles, white sundress, silk headscarf",
+      "base": "adult, mature female, red hair, long hair, freckles, blue eyes, fair skin",
+      "outfits": {
+        "default": "white sundress, silk headscarf, cat-eye sunglasses, flat sandals",
+        "evening": "white flowing evening dress, gold earrings, hair down"
+      },
+      "photo": "a French woman aged 26, long red hair, freckles, white sundress, silk headscarf",
+      "tag_prompt": "adult, mature female, red hair, long hair, freckles, blue eyes, fair skin, white sundress, silk headscarf, cat-eye sunglasses, flat sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Greek man aged 32, tanned, full black beard, white linen shirt",
+      "base": "mature male, tan skin, full beard, black hair, short hair, brown eyes, muscular",
+      "outfits": {
+        "default": "white linen shirt, khaki trousers, rolled sleeves",
+        "evening": "navy linen shirt, dark trousers, leather belt"
+      },
+      "photo": "a Greek man aged 32, tanned, full black beard, white linen shirt",
+      "tag_prompt": "mature male, tan skin, full beard, black hair, short hair, brown eyes, muscular, white linen shirt, khaki trousers, rolled sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_road",
+      "name": "Cesta nad kalderou",
+      "description": "Cesta nad kalderou",
+      "tag_prompt": "outdoors, caldera road, santorini, bicycle, white houses, blue sea, cliffs, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_winery",
+      "name": "Vinárna ve skále",
+      "description": "Vinárna ve skále",
+      "tag_prompt": "indoors, cave winery, wine barrels, wine glasses, warm lanterns, stone walls",
+      "mood": ""
+    },
+    {
+      "id": "l_dome",
+      "name": "Modrá kopule",
+      "description": "Modrá kopule",
+      "tag_prompt": "outdoors, rooftop, blue dome church, santorini, night, city lights below, stars",
+      "mood": ""
+    }
+  ]
+}

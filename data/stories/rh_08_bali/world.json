@@ -1,0 +1,88 @@
+{
+  "id": "w_rh_08_bali",
+  "title": "Bali – Ring není všechno",
+  "synopsis": "Boxer Diego žije jen pro ring, dokud mu Isabella v rýžových polích neřekne ne.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "anime_screencap",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rice",
+      "l_villa",
+      "l_room"
+    ]
+  },
+  "characters": [
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular bearded boxer aged 31",
+      "base": "mature male, muscular, beard, short hair, black hair, brown eyes, scar on face",
+      "outfits": {
+        "default": "black t-shirt, cargo shorts, hand wraps",
+        "dinner": "white linen shirt, dark trousers"
+      },
+      "photo": "a muscular bearded boxer aged 31",
+      "tag_prompt": "mature male, muscular, beard, short hair, black hair, brown eyes, scar on face, black t-shirt, cargo shorts, hand wraps",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "isabella",
+      "name": "Isabella",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall blonde woman aged 26 in a yellow silk dress with gold jewellery",
+      "base": "adult, tall female, long hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "yellow silk midi dress, gold necklace, gold earrings, straw hat, sandals",
+        "dinner": "gold sequin dress, gold earrings, hair up, high heels",
+        "morning": "white linen dress, gold necklace, barefoot"
+      },
+      "photo": "a tall blonde woman aged 26 in a yellow silk dress with gold jewellery",
+      "tag_prompt": "adult, tall female, long hair, blonde hair, blue eyes, yellow silk midi dress, gold necklace, gold earrings, straw hat, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rice",
+      "name": "Rýžová pole",
+      "description": "Rýžová pole",
+      "tag_prompt": "outdoors, bali, rice terraces, palm trees, green, sunny, mountains",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "outdoors, villa terrace, infinity pool, jungle, lanterns, night, candles",
+      "mood": ""
+    },
+    {
+      "id": "l_room",
+      "name": "Pokoj",
+      "description": "Pokoj",
+      "tag_prompt": "indoors, bamboo villa room, mosquito net, carved wood, lanterns, night",
+      "mood": ""
+    }
+  ]
+}

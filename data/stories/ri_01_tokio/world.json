@@ -1,0 +1,96 @@
+{
+  "id": "w_ri_01_tokio",
+  "title": "Tokio – Módní týden",
+  "synopsis": "Vizážistka Klára si mezi modelkami v Tokiu připadá navíc, dokud ji tichý Haruto neuvidí jinak.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_cyberreal_night",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_backstage",
+      "l_bar",
+      "l_shibuya",
+      "l_room"
+    ]
+  },
+  "characters": [
+    {
+      "id": "klara",
+      "name": "Klára",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite slender Czech woman aged 29, copper bob haircut, green eyes, round tortoiseshell glasses",
+      "base": "adult, mature female, petite, slender, short hair, bob cut, copper hair, green eyes, glasses",
+      "outfits": {
+        "default": "beige trench coat, black turtleneck, thigh boots, round glasses",
+        "work": "black apron, black blouse, makeup brush, round glasses",
+        "evening": "little black dress, black pumps, gold earrings, round glasses"
+      },
+      "photo": "a petite slender Czech woman aged 29, copper bob haircut, green eyes, round tortoiseshell glasses",
+      "tag_prompt": "adult, mature female, petite, slender, short hair, bob cut, copper hair, green eyes, glasses, beige trench coat, black turtleneck, thigh boots, round glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "haruto",
+      "name": "Haruto",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender Japanese office worker aged 32, neat black hair, thin-rimmed glasses",
+      "base": "mature male, slender, short hair, black hair, neat hair, dark eyes, glasses",
+      "outfits": {
+        "default": "dark navy suit, white shirt, thin black necktie, glasses",
+        "nojacket": "white shirt, rolled sleeves, loosened necktie, glasses"
+      },
+      "photo": "a slender Japanese office worker aged 32, neat black hair, thin-rimmed glasses",
+      "tag_prompt": "mature male, slender, short hair, black hair, neat hair, dark eyes, glasses, dark navy suit, white shirt, thin black necktie, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_backstage",
+      "name": "Backstage přehlídky",
+      "description": "Backstage přehlídky",
+      "tag_prompt": "indoors, fashion show backstage, mirrors with lights, clothing racks, gold dresses, models in background, busy",
+      "mood": ""
+    },
+    {
+      "id": "l_bar",
+      "name": "Hotelový bar",
+      "description": "Hotelový bar",
+      "tag_prompt": "indoors, hotel bar, night, city view window, tokyo skyline, cocktail glass, dim warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_shibuya",
+      "name": "Šibuja",
+      "description": "Šibuja",
+      "tag_prompt": "outdoors, shibuya crossing, tokyo, night, rain, neon signs, wet street, reflections, umbrellas",
+      "mood": ""
+    },
+    {
+      "id": "l_room",
+      "name": "Hotelový pokoj",
+      "description": "Hotelový pokoj",
+      "tag_prompt": "indoors, hotel room entrance, door, night, city lights through window, dim lamp",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,270 @@
+{
+  "title": "Kjóto – Deštivé duby",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bamboo",
+      "characters": [],
+      "visual_tags": [
+        "bamboo forest",
+        "rain",
+        "mist",
+        "empty path"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Arašijama. Bambusový les v dešti.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bamboo",
+      "characters": [
+        {
+          "id": "hana"
+        }
+      ],
+      "visual_tags": [
+        "taking photo",
+        "wet hair",
+        "raindrops",
+        "foggy glasses",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bamboo",
+      "characters": [
+        {
+          "id": "hana"
+        },
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man holding umbrella over woman",
+        "rain",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Vypadáš jako báseň, kterou jsem zapomněl napsat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bamboo",
+      "characters": [
+        {
+          "id": "hana"
+        }
+      ],
+      "visual_tags": [
+        "wiping glasses",
+        "wry smile",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "Spisovatelé milují ženy, dokud je nemusejí číst do konce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ryokan",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "robe"
+        },
+        {
+          "id": "ethan",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at low table",
+        "sake cups",
+        "laughing",
+        "paper lantern"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ryokan. Víno, smích.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ryokan",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "robe"
+        },
+        {
+          "id": "ethan",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "lantern light",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ryokan",
+      "characters": [],
+      "visual_tags": [
+        "paper lantern blown out",
+        "shoji closed",
+        "rain on window",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lucerna zhasne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "robe"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone",
+        "holding small paper note",
+        "morning light",
+        "empty room",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno je Ethan pryč. Na polštáři lísteček:",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "",
+          "text": "„Příběh je silnější bez šťastného konce. Odpusť.“",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "robe"
+        }
+      ],
+      "visual_tags": [
+        "looking at empty room",
+        "tears held back",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "Nenapsal jsi příběh, Ethane. Ukradl jsi mi jen kapitolu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "dawn"
+        }
+      ],
+      "visual_tags": [
+        "tying scarf",
+        "picking up camera",
+        "standing up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "dawn"
+        }
+      ],
+      "visual_tags": [
+        "walking on bridge",
+        "taking photo of sunrise",
+        "mist",
+        "alone",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jde fotit východ slunce. Zamyšlená. Silnější.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

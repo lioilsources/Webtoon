@@ -1,0 +1,266 @@
+{
+  "title": "Podzimní vystřízlivění v Tokiu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_shibuya",
+      "characters": [],
+      "visual_tags": [
+        "neon signs",
+        "rain",
+        "crowd",
+        "scramble crossing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tokio. Šibuja v dešti.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_shibuya",
+      "characters": [
+        {
+          "id": "sophia"
+        }
+      ],
+      "visual_tags": [
+        "walking alone on wet pavement",
+        "stiletto boots",
+        "neon reflections",
+        "umbrella"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_shibuya",
+      "characters": [
+        {
+          "id": "sophia"
+        }
+      ],
+      "visual_tags": [
+        "looking around",
+        "lonely",
+        "rain",
+        "neon light on face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophia",
+          "text": "Můj život je jen shon. Hledám někoho, s kým bych mohla prostě zpomalit...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "sophia"
+        },
+        {
+          "id": "kenji"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man speaking to woman under gallery awning",
+        "rain",
+        "confident smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kenji",
+          "text": "Taky utíkáte před deštěm? Bydlím kousek odsud. Výhled na město vám ten déšť vynahradí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gallery",
+      "characters": [
+        {
+          "id": "sophia"
+        }
+      ],
+      "visual_tags": [
+        "hesitant",
+        "small smile",
+        "rain drops"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophia",
+          "text": "Jen na chvíli.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_apartment",
+      "characters": [
+        {
+          "id": "sophia"
+        },
+        {
+          "id": "kenji"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at window",
+        "city lights",
+        "night",
+        "looking at skyline together"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Roppongi. Město pod nimi svítí do noci.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_apartment",
+      "characters": [
+        {
+          "id": "sophia"
+        },
+        {
+          "id": "kenji"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss by the window",
+        "city lights behind",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_apartment",
+      "characters": [],
+      "visual_tags": [
+        "city lights through window",
+        "lamp switched off",
+        "dark room",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Tokio svítí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_apartment",
+      "characters": [
+        {
+          "id": "kenji",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "morning",
+        "standing",
+        "fastening wristwatch",
+        "not looking",
+        "cold expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_apartment",
+      "characters": [
+        {
+          "id": "sophia",
+          "outfit": "morning"
+        },
+        {
+          "id": "kenji",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman standing by window holding coffee cup",
+        "man fastening wristwatch by the door",
+        "fully clothed",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophia",
+          "text": "A... co bude teď, Kenji? Uvidíme se zítra?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kenji",
+          "text": "Byla to hezká noc, Sophio. Ale já zítra odlétám do Londýna. Nehledej v tom nic víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_apartment",
+      "characters": [
+        {
+          "id": "sophia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "alone",
+        "face in hands",
+        "single tear",
+        "morning light",
+        "empty room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

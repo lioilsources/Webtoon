@@ -1,0 +1,242 @@
+{
+  "title": "Toskánsko – Cyklistická trasa",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_path",
+      "characters": [
+        {
+          "id": "jakub"
+        }
+      ],
+      "visual_tags": [
+        "kneeling by bicycle",
+        "flat tire",
+        "frustrated"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_path",
+      "characters": [
+        {
+          "id": "giulia"
+        },
+        {
+          "id": "jakub"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman on bicycle stopping",
+        "man looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Potřebuješ pumpu?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jakub",
+          "text": "Potřebuju hlavně vodu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "giulia",
+          "text": "Tak pojď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_inn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "evening"
+        },
+        {
+          "id": "jakub",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "pasta",
+        "wine",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jakub",
+          "text": "Zítra jedu dál.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "giulia",
+          "text": "Já vím. Ale dnes zůstaň.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "evening"
+        },
+        {
+          "id": "jakub",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "holding hands",
+        "moonlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "evening"
+        },
+        {
+          "id": "jakub",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "moonlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "evening"
+        },
+        {
+          "id": "jakub",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "looking at each other",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Jakube, nechceš zůstat?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jakub",
+          "text": "Musím jet.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_door",
+      "characters": [],
+      "visual_tags": [
+        "wooden door closed",
+        "lamp",
+        "stone corridor",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ještě jedna noc.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "jakub"
+        },
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man riding bicycle away",
+        "woman waving",
+        "morning mist"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno Jakub odjíždí. Giulia mává.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "sad smile",
+        "tear",
+        "morning light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

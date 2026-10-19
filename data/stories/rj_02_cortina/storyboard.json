@@ -1,0 +1,297 @@
+{
+  "title": "Hory nad Cortinou",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_lift",
+      "characters": [],
+      "visual_tags": [
+        "snowy peaks",
+        "skiers",
+        "chairlift"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Cortina d'Ampezzo. Lyžařská sezóna.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lift",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "standing in queue",
+        "goggles on head",
+        "determined",
+        "looking ahead"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Rok jsem se učila lyžovat. Kvůli jednomu úsměvu.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lift",
+      "characters": [
+        {
+          "id": "klara"
+        },
+        {
+          "id": "matteo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man approaching",
+        "bright smile",
+        "woman lifting goggles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matteo",
+          "text": "Signora. Jste tu poprvé? Ten postoj na lyžích je na vás vidět.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "klara",
+          "text": "Druhý rok. Lyžuju kvůli instruktorovi, který mě loni naučil první oblouk a pak se neozval.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lift",
+      "characters": [
+        {
+          "id": "matteo"
+        }
+      ],
+      "visual_tags": [
+        "awkward smile",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matteo",
+          "text": "To musel být hlupák.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lift",
+      "characters": [
+        {
+          "id": "klara"
+        }
+      ],
+      "visual_tags": [
+        "cool smile",
+        "red lips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Byl. Ale měl krásný úsměv. Ten si pamatuju přesně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "chalet"
+        },
+        {
+          "id": "matteo",
+          "outfit": "chalet"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "holding small glasses",
+        "firelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matteo",
+          "text": "Chtěl jsem zavolat. Ale já nejsem člověk pro telefonáty. Jsem člověk pro hory.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "klara",
+          "text": "A co jsi za člověka, Matteo, když nejsi na hoře?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "matteo",
+          "outfit": "chalet"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "silent",
+        "firelight",
+        "shadow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matteo",
+          "text": "Bojím se, že když z hory sestoupím, nic ze mě nezbude.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "chalet"
+        },
+        {
+          "id": "matteo",
+          "outfit": "chalet"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "embrace",
+        "snow falling",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "chalet"
+        },
+        {
+          "id": "matteo",
+          "outfit": "chalet"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man pulling away",
+        "hands on her shoulders",
+        "pained expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matteo",
+          "text": "Kláro, nemůžu. Ty nejsi jen jedna ze sezón. A já neumím slíbit, že budu existovat, až sníh roztaje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "klara",
+          "outfit": "coat"
+        }
+      ],
+      "visual_tags": [
+        "putting on coat",
+        "small smile",
+        "calm",
+        "snow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "klara",
+          "text": "Před rokem bych plakala. Dneska si vezmu kabát a pojedu domů.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "klara",
+          "text": "Byls můj krásný mýtus, Matteo. Mýty patří do hor. Já patřím dolů.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "matteo",
+          "outfit": "chalet"
+        }
+      ],
+      "visual_tags": [
+        "standing alone on terrace",
+        "snow on shoulders",
+        "from behind",
+        "valley lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sníh mu padá na ramena. Poprvé si ho nevšímá.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

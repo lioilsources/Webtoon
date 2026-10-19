@@ -1,0 +1,257 @@
+{
+  "title": "Monte Carlo – Muž, který si vybral špatně",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "yacht party",
+        "lights",
+        "harbor at night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Monte Carlo. Victor pořádá večírek.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "full body",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "claire"
+        }
+      ],
+      "visual_tags": [
+        "arriving",
+        "walking",
+        "gown shimmering",
+        "guests looking"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "photographing",
+        "from side",
+        "looking at someone in distance"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sofia na palubě fotografuje.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "victor"
+        },
+        {
+          "id": "claire"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing",
+        "close",
+        "string lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "claire",
+          "text": "Díváš se na mě jako na ženu svého života.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "victor",
+          "text": "Možná jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "lowering camera",
+        "sad",
+        "looking away"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "victor",
+          "outfit": "day"
+        }
+      ],
+      "visual_tags": [
+        "reading documents",
+        "realization",
+        "frowning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Později Victor zjistí, že Claire chce hlavně jeho peníze a postavení.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "victor",
+          "outfit": "day"
+        }
+      ],
+      "visual_tags": [
+        "holding photograph",
+        "reading back of photograph"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "„Některé věci člověk pozná, až když je ztratí.“",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "victor",
+          "outfit": "day"
+        },
+        {
+          "id": "sofia",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "running toward car",
+        "woman by car door"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "victor",
+          "text": "Počkej.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofia",
+          "text": "Proč?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "victor",
+          "outfit": "day"
+        },
+        {
+          "id": "sofia",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "facing each other",
+        "woman calm",
+        "man desperate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "victor",
+          "text": "Protože jsem udělal chybu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofia",
+          "text": "A já nechci být tvoje druhá volba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "victor",
+          "outfit": "day"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "car driving away",
+        "blue hour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Odjede. Victor zůstane stát.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "title": "Cyklovýlet po vinicích Toskánska",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vines",
+      "characters": [],
+      "visual_tags": [
+        "rolling hills",
+        "vineyards",
+        "cypress"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Chianti. Kopce, víno a cypřiše.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vines",
+      "characters": [
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "standing next to bicycle",
+        "broken chain",
+        "frustrated",
+        "hands on hips"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CVAK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vines",
+      "characters": [
+        {
+          "id": "gabriele"
+        }
+      ],
+      "visual_tags": [
+        "riding vintage bicycle",
+        "stopping",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriele",
+          "text": "Řetěz? To se spraví. Toskánsko vás jen chce zdržet.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vines",
+      "characters": [
+        {
+          "id": "isabella"
+        },
+        {
+          "id": "gabriele"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man kneeling",
+        "fixing bicycle chain",
+        "woman watching",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Vy opravujete kola i v košili?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "gabriele",
+          "text": "Jsem architekt. Opravuju všechno, co drží pohromadě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "evening"
+        },
+        {
+          "id": "gabriele",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "wine tasting",
+        "raising glasses",
+        "candlelight",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Degustace ve starém sklípku.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "slipping off heels",
+        "sitting on bench",
+        "relaxed smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Celý den v sedle a teď ještě podpatky...",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pergola",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "evening"
+        },
+        {
+          "id": "gabriele",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing under pergola",
+        "string lights",
+        "holding hands",
+        "dusk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "gabriele",
+          "text": "Našel jsem v tobě čistotu, kterou jsem v městském shonu dlouho hledal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pergola",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "evening"
+        },
+        {
+          "id": "gabriele",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "string lights",
+        "warm glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pergola",
+      "characters": [],
+      "visual_tags": [
+        "villa window light turning off",
+        "string lights",
+        "starry night over hills"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Světla vily zhasnou. Nad kopci se rozsvítí hvězdy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vines",
+      "characters": [
+        {
+          "id": "isabella"
+        },
+        {
+          "id": "gabriele"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "riding bicycles side by side",
+        "vineyard road",
+        "sunlight",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Pojedeš se mnou až do Sieny?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "gabriele",
+          "text": "Pojedu s tebou kamkoli.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

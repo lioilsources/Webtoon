@@ -1,0 +1,88 @@
+{
+  "id": "w_rk_08_borabora",
+  "title": "Bora Bora – Voda nad zlatem",
+  "synopsis": "Vyčerpaná dermatoložka Margaux najde v laguně průvodce Tevu i klid, o kterém nevěřila, že si ho zaslouží.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – Margaux dá výpověď a zůstane na Bora Bora."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow",
+      "l_kayak",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "teva",
+      "name": "Teva",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Polynesian lagoon guide aged 36, long black hair tied back, traditional tattoo on his forearm",
+      "base": "mature male, tan skin, long hair, black hair, tied hair, brown eyes, muscular, tribal tattoo on arm",
+      "outfits": {
+        "default": "white linen shirt, open collar, rolled sleeves, linen shorts, shell necklace",
+        "night": "white linen shirt, flower behind ear, shell necklace"
+      },
+      "photo": "a Polynesian lagoon guide aged 36, long black hair tied back, traditional tattoo on his forearm",
+      "tag_prompt": "mature male, tan skin, long hair, black hair, tied hair, brown eyes, muscular, tribal tattoo on arm, white linen shirt, open collar, rolled sleeves, linen shorts, shell necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "margaux",
+      "name": "Margaux",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Belgian dermatologist aged 32, shoulder-length brown hair",
+      "base": "adult, mature female, brown hair, shoulder-length hair, brown eyes, fair skin, tired eyes",
+      "outfits": {
+        "default": "white linen dress, wide-brim hat, gold bracelet",
+        "night": "white silk maxi dress, pearl earrings, hat in hand",
+        "morning": "linen shirt dress, glasses, laptop"
+      },
+      "photo": "a Belgian dermatologist aged 32, shoulder-length brown hair",
+      "tag_prompt": "adult, mature female, brown hair, shoulder-length hair, brown eyes, fair skin, tired eyes, white linen dress, wide-brim hat, gold bracelet",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov nad vodou",
+      "description": "Bungalov nad vodou",
+      "tag_prompt": "outdoors, overwater bungalow, turquoise lagoon, wooden deck, mount otemanu, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_kayak",
+      "name": "Laguna za soumraku",
+      "description": "Laguna za soumraku",
+      "tag_prompt": "outdoors, kayak, lagoon, dusk, bioluminescence, glowing blue water, stars",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa nad lagunou",
+      "description": "Terasa nad lagunou",
+      "tag_prompt": "outdoors, terrace, night, moon reflection on lagoon, lanterns",
+      "mood": ""
+    }
+  ]
+}

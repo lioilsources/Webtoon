@@ -1,0 +1,246 @@
+{
+  "title": "Kostarika – Doma",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_beach",
+      "characters": [],
+      "visual_tags": [
+        "beach",
+        "jungle",
+        "waves",
+        "golden hour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kostarika.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "sitting on driftwood",
+        "holding cowboy hat",
+        "looking at sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Jsem jen venkovan…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman sitting down beside him",
+        "smile",
+        "man surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Jsi víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dinner on porch",
+        "lanterns",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře v bungalovu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "lantern light",
+        "jungle night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman putting his cowboy hat on her head",
+        "laughing",
+        "embrace"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "door closing",
+        "lanterns",
+        "hammock swaying",
+        "jungle night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře se zavřou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_porch_m",
+      "characters": [
+        {
+          "id": "cole"
+        },
+        {
+          "id": "amara",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "coffee",
+        "sitting close on porch",
+        "his arm around her"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Cítím se doma.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "Protože jsi se mnou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        },
+        {
+          "id": "amara",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking on beach together",
+        "holding hands",
+        "morning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají spolu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

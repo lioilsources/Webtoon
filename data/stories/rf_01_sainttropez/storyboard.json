@@ -1,0 +1,359 @@
+{
+  "title": "Saint-Tropez – Léto, které mělo trvat navždy",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_port",
+      "characters": [],
+      "visual_tags": [
+        "convertible car",
+        "yachts",
+        "sunny harbor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Saint-Tropez. Léto.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "full body",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "valerie"
+        }
+      ],
+      "visual_tags": [
+        "stepping out of convertible",
+        "holding hat",
+        "sunglasses",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valerie",
+          "text": "Tentokrát nikoho hledat nebudu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "valerie"
+        }
+      ],
+      "visual_tags": [
+        "wind",
+        "hat flying away",
+        "reaching out",
+        "surprised",
+        "hair blowing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FÍÍ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "nicolas"
+        }
+      ],
+      "visual_tags": [
+        "catching straw hat",
+        "holding hat",
+        "smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nicolas",
+          "text": "Možná vás hledá on.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "evening"
+        },
+        {
+          "id": "nicolas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at bow",
+        "sunset",
+        "champagne glasses",
+        "wind in hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nicolas",
+          "text": "Jste šťastná?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "valerie",
+          "text": "Právě teď ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "evening"
+        },
+        {
+          "id": "nicolas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hands touching",
+        "holding hands on railing",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hotel",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "taking off earrings",
+        "vanity table",
+        "mirror",
+        "soft smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Odloží náušnice. Pak hodinky.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hotel",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "evening"
+        },
+        {
+          "id": "nicolas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing by door",
+        "looking at each other",
+        "tension"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valerie",
+          "text": "Neměl bys zůstat.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nicolas",
+          "text": "Vím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hotel",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "evening"
+        },
+        {
+          "id": "nicolas",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hotel",
+      "characters": [],
+      "visual_tags": [
+        "closed curtains",
+        "city lights outside window",
+        "lamp off",
+        "dark room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Světla města zůstanou za oknem.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hotel",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "day"
+        },
+        {
+          "id": "nicolas",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning light",
+        "plane ticket on table",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nicolas",
+          "text": "Musím odjet.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "valerie",
+          "text": "Na jak dlouho?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nicolas",
+          "text": "Nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hotel",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "day"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "sad smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nicolas",
+          "text": "Vrátím se.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "valerie",
+          "text": "To říkají všichni.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "valerie",
+          "outfit": "beach"
+        }
+      ],
+      "visual_tags": [
+        "walking along shoreline",
+        "from behind",
+        "tears",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O tři měsíce později. Nicolas nepřijel.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "valerie",
+          "text": "Aspoň jsem jednou opravdu milovala.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

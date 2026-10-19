@@ -1,0 +1,306 @@
+{
+  "title": "Copacabana",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_stand",
+      "characters": [],
+      "visual_tags": [
+        "beach",
+        "football players",
+        "music"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Rio de Janeiro. Copacabana.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stand",
+      "characters": [
+        {
+          "id": "thiago"
+        }
+      ],
+      "visual_tags": [
+        "holding coconut",
+        "grin",
+        "calling out"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thiago",
+          "text": "Kokosovou vodu pro anděla?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stand",
+      "characters": [
+        {
+          "id": "beatriz"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "wind in dress",
+        "lowering sunglasses",
+        "small smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatriz",
+          "text": "To říkáte každé.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thiago",
+          "text": "Každé. Ale vám zadarmo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stand",
+      "characters": [
+        {
+          "id": "beatriz"
+        },
+        {
+          "id": "thiago"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing two coconuts",
+        "woman taking them",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatriz",
+          "text": "Dejte mi dva. Jeden pro mě a jeden pro to, co mi chcete říct.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thiago",
+          "text": "Dva kokosy. A jedna otázka: proč jste smutná?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stand",
+      "characters": [
+        {
+          "id": "beatriz"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "looking at sea",
+        "sad eyes",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Na módním týdnu se jí na to nikdo nezeptal.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "beatriz",
+          "outfit": "night"
+        },
+        {
+          "id": "thiago",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "caipirinhas",
+        "string lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatriz",
+          "text": "Za tři dny São Paulo. Pak Milán. Pak New York. Móda je kolotoč a já se bojím vystoupit.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thiago",
+          "text": "A co byste dělala, kdybyste vystoupila?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "thiago",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "warm smile",
+        "string lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thiago",
+          "text": "Prodávám kokosy. Ale sním o baru. A dneska i o ženě se smutnýma očima.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "beatriz",
+          "outfit": "night"
+        },
+        {
+          "id": "thiago",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "moonlight",
+        "wind in hair"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "beatriz",
+          "outfit": "night"
+        },
+        {
+          "id": "thiago",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman stepping back",
+        "hand on his chest",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatriz",
+          "text": "Ve čtyři ráno letím. Mám smlouvu. Smlouvy jsou jako řetězy.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thiago",
+          "text": "Zůstaň.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "beatriz",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "tears",
+        "looking up",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beatriz",
+          "text": "Poprvé jsem se necítila jako modelka, ale jako žena. To mě děsí víc než celý Milán.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "beatriz",
+          "text": "Nemůžu. Je mi to líto.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "thiago",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "holding two coconuts",
+        "empty beach",
+        "from behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Na písku zůstane jeden kokos, který nikdo nedopil.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

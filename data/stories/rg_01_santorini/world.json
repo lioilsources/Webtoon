@@ -1,0 +1,88 @@
+{
+  "id": "w_rg_01_santorini",
+  "title": "Ztracený luxus na jachtě u Santorini",
+  "synopsis": "Elena si mezi modelkami na jachtách připadá nepatřičně, dokud jí Marcus nepodá sklenku šampaňského.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_dinner",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "elena",
+      "name": "Elena Rosetti",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Italian woman aged 26, long dark wavy hair swept to one side, olive skin",
+      "base": "adult, mature female, petite, curvy, wide hips, long hair, wavy hair, side-swept hair, dark brown hair, brown eyes, olive skin",
+      "outfits": {
+        "default": "white silk blouse, short white skirt, wedge heels, large gold hoop earrings, sunglasses",
+        "nosun": "white silk blouse, short white skirt, wedge heels, large gold hoop earrings, holding sunglasses",
+        "evening": "red silk evening dress, thin straps, gold hoop earrings, gold bracelet, strappy heels"
+      },
+      "photo": "a petite curvy Italian woman aged 26, long dark wavy hair swept to one side, olive skin",
+      "tag_prompt": "adult, mature female, petite, curvy, wide hips, long hair, wavy hair, side-swept hair, dark brown hair, brown eyes, olive skin, white silk blouse, short white skirt, wedge heels, large gold hoop earrings, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcus",
+      "name": "Marcus Vane",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic British man aged 34, neat short brown hair, clean-shaven, relaxed office worker on holiday",
+      "base": "mature male, tall, athletic, short hair, neat haircut, brown hair, grey eyes, clean-shaven",
+      "outfits": {
+        "default": "white linen shirt, navy tailored shorts, silver diver watch, boat shoes",
+        "evening": "light blue linen shirt, white linen trousers, leather loafers, silver diver watch"
+      },
+      "photo": "a tall athletic British man aged 34, neat short brown hair, clean-shaven, relaxed office worker on holiday",
+      "tag_prompt": "mature male, tall, athletic, short hair, neat haircut, brown hair, grey eyes, clean-shaven, white linen shirt, navy tailored shorts, silver diver watch, boat shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba jachty",
+      "description": "Paluba jachty",
+      "tag_prompt": "outdoors, luxury yacht, deck, railing, santorini cliffs, white houses on cliff, dark blue sea, sunset, orange and purple sky",
+      "mood": ""
+    },
+    {
+      "id": "l_dinner",
+      "name": "Večeře na palubě",
+      "description": "Večeře na palubě",
+      "tag_prompt": "outdoors, yacht deck, dinner table, candles, champagne glasses, night, santorini lights in distance",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, dim warm light, porthole, waves outside",
+      "mood": ""
+    }
+  ]
+}

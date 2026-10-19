@@ -1,0 +1,266 @@
+{
+  "title": "Norské fjordy – Jachta",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "yacht on fjord",
+        "cliffs",
+        "waterfall"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Norské fjordy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "tamara"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo",
+        "wind",
+        "hair blowing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "tamara"
+        },
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man at steering wheel",
+        "woman lowering camera",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tamara",
+          "text": "Nevypadám tu trochu jako věž?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "erik",
+          "text": "Vypadáš jako maják. A já se podle tebe orientuju.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "tamara"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tamara",
+          "text": "To je hodně kapitánská odpověď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_salon",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "playing guitar",
+        "sitting",
+        "warm lamp light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_salon",
+      "characters": [
+        {
+          "id": "tamara",
+          "outfit": "cozy"
+        },
+        {
+          "id": "erik",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on sofa",
+        "blanket",
+        "wine glasses",
+        "looking at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Tamaro, zůstaň ještě den. Nebo dva.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "tamara",
+          "text": "Mám letenku.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "erik",
+          "text": "Já mám loď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_fog",
+      "characters": [
+        {
+          "id": "tamara",
+          "outfit": "cozy"
+        },
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning fog",
+        "man handing coffee mug",
+        "steam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tamara",
+          "text": "Tak jo. Zůstávám.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "erik",
+          "text": "To je nejlepší zpráva pro kapitána.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "tamara",
+          "outfit": "dinner"
+        },
+        {
+          "id": "erik",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "standing at cabin door",
+        "warm lamp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kabát na háčku, kozačky pod lavicí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "tamara",
+          "outfit": "dinner"
+        },
+        {
+          "id": "erik",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "porthole",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "porthole",
+        "moonlight on fjord",
+        "lamp turned off",
+        "darkness"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "w_rg_04_bali",
+  "title": "Toulky po plážích Bali",
+  "synopsis": "Mei-Ling naskočí za Danielem na motorku k vodopádům a ráno najde jen vzkaz.",
+  "tone": "romantický, hořký",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_cliff",
+      "l_road",
+      "l_waterfall",
+      "l_villa",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "meiling",
+      "name": "Mei-Ling Zhang",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Chinese woman aged 25, long straight black hair, tropical silk sundress",
+      "base": "adult, mature female, petite, curvy, black hair, long hair, straight hair, brown eyes",
+      "outfits": {
+        "default": "tropical print silk sundress, platform sandals, white sunglasses",
+        "evening": "white silk slip dress, jasmine flower in hair, thin gold anklet, barefoot"
+      },
+      "photo": "a petite curvy Chinese woman aged 25, long straight black hair, tropical silk sundress",
+      "tag_prompt": "adult, mature female, petite, curvy, black hair, long hair, straight hair, brown eyes, tropical print silk sundress, platform sandals, white sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "daniel",
+      "name": "Daniel Cross",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Australian man aged 30, long blond hair tied in a bun, tanned, hawaiian shirt",
+      "base": "mature male, athletic, tan, long hair, blonde hair, hair bun, blue eyes, stubble",
+      "outfits": {
+        "default": "short-sleeved hawaiian shirt, buttoned shirt, khaki shorts, leather sandals"
+      },
+      "photo": "an athletic Australian man aged 30, long blond hair tied in a bun, tanned, hawaiian shirt",
+      "tag_prompt": "mature male, athletic, tan, long hair, blonde hair, hair bun, blue eyes, stubble, short-sleeved hawaiian shirt, buttoned shirt, khaki shorts, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_cliff",
+      "name": "Útes Uluwatu",
+      "description": "Útes Uluwatu",
+      "tag_prompt": "outdoors, uluwatu, cliff, rough ocean, waves crashing, sunset, beach path",
+      "mood": ""
+    },
+    {
+      "id": "l_road",
+      "name": "Cesta k vodopádům",
+      "description": "Cesta k vodopádům",
+      "tag_prompt": "outdoors, bali, jungle road, motor scooter, palm trees, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_waterfall",
+      "name": "Vodopád",
+      "description": "Vodopád",
+      "tag_prompt": "outdoors, jungle waterfall, lush green, mist, sunlight rays",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Bambusová vila",
+      "description": "Bambusová vila",
+      "tag_prompt": "indoors, open bamboo villa, jungle, many candles, warm light, night, sheer curtains",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa za rozbřesku",
+      "description": "Terasa za rozbřesku",
+      "tag_prompt": "outdoors, villa terrace, dawn, jungle mist, wooden table, note on table",
+      "mood": ""
+    }
+  ]
+}

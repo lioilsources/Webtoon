@@ -1,0 +1,89 @@
+{
+  "id": "w_rj_03_bali",
+  "title": "Tanec na Bali",
+  "synopsis": "Surfař Noah uvidí Ayu tančit pro hosty resortu a poprvé za rok nemá kam spěchat.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Noah zůstává."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_stage",
+      "l_waves",
+      "l_hut"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ayu",
+      "name": "Ayu Lestari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Indonesian dancer aged 26, very long black hair with a flower behind the ear",
+      "base": "adult, slender, tan skin, black hair, very long hair, brown eyes, flower in hair",
+      "outfits": {
+        "default": "(long sleeves:1.3), (modest clothing:1.2), gold embroidered kebaya blouse, gold embroidered sash, long batik sarong skirt, flower crown, gold bracelets",
+        "surf": "long sleeve rash guard, board shorts over leggings, wet hair",
+        "evening": "white lace kebaya blouse, long batik sarong skirt, frangipani in hair"
+      },
+      "photo": "an Indonesian dancer aged 26, very long black hair with a flower behind the ear",
+      "tag_prompt": "adult, slender, tan skin, black hair, very long hair, brown eyes, flower in hair, (long sleeves:1.3), (modest clothing:1.2), gold embroidered kebaya blouse, gold embroidered sash, long batik sarong skirt, flower crown, gold bracelets",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "noah",
+      "name": "Noah Bennett",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Australian surfer aged 31, salty sandy blond hair, broad shoulders, faded t-shirt",
+      "base": "mature male, broad shoulders, messy hair, sandy blonde hair, blue eyes, tan skin, stubble",
+      "outfits": {
+        "default": "faded loose t-shirt, board shorts, shell necklace",
+        "surf": "long sleeve rash guard, board shorts",
+        "evening": "white linen shirt, rolled sleeves, khaki shorts"
+      },
+      "photo": "an Australian surfer aged 31, salty sandy blond hair, broad shoulders, faded t-shirt",
+      "tag_prompt": "mature male, broad shoulders, messy hair, sandy blonde hair, blue eyes, tan skin, stubble, faded loose t-shirt, board shorts, shell necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_stage",
+      "name": "Pláž resortu",
+      "description": "Pláž resortu",
+      "tag_prompt": "outdoors, beach resort, sunset, frangipani, torches, guests seated, ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_waves",
+      "name": "Vlny",
+      "description": "Vlny",
+      "tag_prompt": "outdoors, ocean, surfboards, morning, low tide, waves, sunlight, sitting on surfboard",
+      "mood": ""
+    },
+    {
+      "id": "l_hut",
+      "name": "Chýše",
+      "description": "Chýše",
+      "tag_prompt": "outdoors, beach hut, night, oil lamp, lanterns, blanket on sand, coconuts, starry sky",
+      "mood": ""
+    }
+  ]
+}

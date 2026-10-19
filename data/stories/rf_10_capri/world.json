@@ -1,0 +1,88 @@
+{
+  "id": "w_rf_10_capri",
+  "title": "Capri – Láska, která přišla příliš pozdě",
+  "synopsis": "Elena přijede na Capri po letech práce a majitel restaurace Antonio jí přinese dezert, který si neobjednala.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rest",
+      "l_beach",
+      "l_street"
+    ]
+  },
+  "characters": [
+    {
+      "id": "antonio",
+      "name": "Antonio",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a charismatic tall slender Italian man aged 50 with grey hair, owner of a small restaurant",
+      "base": "mature male, middle-aged, tall, slender, grey hair, short hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, buttoned shirt, black apron, dark trousers",
+        "evening": "cream linen jacket, light blue shirt, buttoned shirt"
+      },
+      "photo": "a charismatic tall slender Italian man aged 50 with grey hair, owner of a small restaurant",
+      "tag_prompt": "mature male, middle-aged, tall, slender, grey hair, short hair, brown eyes, white linen shirt, buttoned shirt, black apron, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "elena",
+      "name": "Elena",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Spanish woman aged 44 with long dark curly hair, gold earrings",
+      "base": "adult, mature female, slender, curly hair, black hair, long hair, brown eyes",
+      "outfits": {
+        "default": "navy silk midi dress, gold earrings, leather sandals, curly hair down",
+        "evening": "red silk wrap dress, gold bangles, curly hair pinned up",
+        "travel": "white linen trouser suit, sunglasses, silk headscarf"
+      },
+      "photo": "an elegant Spanish woman aged 44 with long dark curly hair, gold earrings",
+      "tag_prompt": "adult, mature female, slender, curly hair, black hair, long hair, brown eyes, navy silk midi dress, gold earrings, leather sandals, curly hair down",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rest",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "outdoors, restaurant terrace, capri, lemon trees, sea view, evening, candles, white tablecloth",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pobřeží",
+      "description": "Pobřeží",
+      "tag_prompt": "outdoors, rocky coast, capri, faraglioni, sunset, sea",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "Ulička",
+      "description": "Ulička",
+      "tag_prompt": "outdoors, narrow street, capri, morning, white houses, bougainvillea, taxi",
+      "mood": ""
+    }
+  ]
+}

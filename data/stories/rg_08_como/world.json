@@ -1,0 +1,103 @@
+{
+  "id": "w_rg_08_como",
+  "title": "Romantika u jezera Como",
+  "synopsis": "Analytik Max se na galavečeru zamiluje do Aurelie, jejíž život patří dohodnutému sňatku.",
+  "tone": "romantický, tragický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "semireal_25d",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gala",
+      "l_suite",
+      "l_breakfast"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Maximilian „Max“ Vane",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender elegant German banker aged 42, slicked-back dark hair, black tailored suit",
+      "base": "mature male, slender, elegant, short hair, slicked back hair, dark brown hair, grey eyes",
+      "outfits": {
+        "default": "black tailored suit, white shirt, silk tie, luxury wristwatch",
+        "morning": "white shirt, loosened tie, suit trousers, rolled-up sleeves"
+      },
+      "photo": "a slender elegant German banker aged 42, slicked-back dark hair, black tailored suit",
+      "tag_prompt": "mature male, slender, elegant, short hair, slicked back hair, dark brown hair, grey eyes, black tailored suit, white shirt, silk tie, luxury wristwatch",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "aurelia",
+      "name": "Aurelia Valenti",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Italian woman aged 24 with shoulder-length red hair, emerald evening gown",
+      "base": "adult, red hair, medium hair, wavy hair, green eyes, pale skin",
+      "outfits": {
+        "default": "emerald green evening gown, off-shoulder gown, high heels, pearl earrings",
+        "morning": "cream silk blouse, wide-leg trousers, pearl earrings, hair tied back"
+      },
+      "photo": "an Italian woman aged 24 with shoulder-length red hair, emerald evening gown",
+      "tag_prompt": "adult, red hair, medium hair, wavy hair, green eyes, pale skin, emerald green evening gown, off-shoulder gown, high heels, pearl earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "fiance",
+      "name": "Snoubenec",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an influential stern man in his sixties, grey hair, dark three-piece suit",
+      "base": "old man, grey hair, stern, wrinkles",
+      "outfits": {
+        "default": "dark three-piece suit, gold cufflinks"
+      },
+      "photo": "an influential stern man in his sixties, grey hair, dark three-piece suit",
+      "tag_prompt": "old man, grey hair, stern, wrinkles, dark three-piece suit, gold cufflinks",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gala",
+      "name": "Terasa vily",
+      "description": "Terasa vily",
+      "tag_prompt": "outdoors, lake como, villa terrace garden, cypress trees, moonlight on lake, gala, lanterns, night",
+      "mood": ""
+    },
+    {
+      "id": "l_suite",
+      "name": "Suita nad jezerem",
+      "description": "Suita nad jezerem",
+      "tag_prompt": "indoors, luxury suite, balcony doors open, view of lake como at night, moonlight",
+      "mood": ""
+    },
+    {
+      "id": "l_breakfast",
+      "name": "Ranní terasa",
+      "description": "Ranní terasa",
+      "tag_prompt": "outdoors, villa terrace, breakfast table, coffee, lake como, morning mist",
+      "mood": ""
+    }
+  ]
+}

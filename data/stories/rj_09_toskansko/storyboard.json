@@ -1,0 +1,276 @@
+{
+  "title": "Kola v Toskánsku",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vineyard",
+      "characters": [],
+      "visual_tags": [
+        "golden hills",
+        "mist",
+        "cypresses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Toskánsko.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "standing by bicycles",
+        "arms open",
+        "bright smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marco",
+          "text": "Signora Hana! Dvacet kilometrů, tři kopce a oběd, na který se nezapomíná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "hana"
+        }
+      ],
+      "visual_tags": [
+        "putting on helmet",
+        "skeptical",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "A průvodce, na kterého se nezapomíná? Slyšela jsem. Každá skupina má jednu, co vám na týden uvěří.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "playful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marco",
+          "text": "A každá skupina má jednu, co se mi snaží nesmát. Ta je vždycky nejzajímavější.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lunch",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "lunch"
+        },
+        {
+          "id": "marco",
+          "outfit": "lunch"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at long table alone",
+        "wine",
+        "cicadas"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "Mám jeden slib: zamiluju se jen do sebe. Žádné „ciao bella“, žádné loučení na letišti.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lunch",
+      "characters": [
+        {
+          "id": "marco",
+          "outfit": "lunch"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "no smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marco",
+          "text": "Poznám, kdy se žena směje doopravdy. Vy jste se smála třikrát. Naposledy teď, když jste řekla, že se nezamilujete.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lunch",
+      "characters": [
+        {
+          "id": "hana",
+          "outfit": "lunch"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "wine glass trembling",
+        "flustered"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "To není fér.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hill",
+      "characters": [
+        {
+          "id": "hana"
+        },
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "sunset",
+        "bicycles"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hill",
+      "characters": [
+        {
+          "id": "hana"
+        },
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman pulling away",
+        "breathing hard",
+        "hand raised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hana",
+          "text": "Loni jsem tady podlehla jinému průvodci. V listopadu napsal, že má přítelkyni. Řekla jsem si: už nikdy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hill",
+      "characters": [
+        {
+          "id": "hana"
+        },
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman zipping up jacket",
+        "man pained"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marco",
+          "text": "To není matematika. To je strach, kterému říkáte rozum.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "hana",
+          "text": "Možná. Ale rozum je jediné, co mě drží na kole.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hill",
+      "characters": [
+        {
+          "id": "marco"
+        }
+      ],
+      "visual_tags": [
+        "standing alone beside bicycle",
+        "sunset",
+        "woman cycling away in distance"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "V každé další skupině bude jedna, která se mu pokusí nesmát.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

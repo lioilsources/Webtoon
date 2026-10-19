@@ -1,0 +1,98 @@
+{
+  "id": "w_rf_01_sainttropez",
+  "title": "Saint-Tropez – Léto, které mělo trvat navždy",
+  "synopsis": "Valérie přijede do Saint-Tropez sama, Nicolas jí chytí klobouk a jedno léto změní všechno.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "fashion_editorial",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_port",
+      "l_yacht",
+      "l_hotel",
+      "l_beach"
+    ]
+  },
+  "characters": [
+    {
+      "id": "valerie",
+      "name": "Valérie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy French woman aged 32 with long wavy chestnut hair and warm brown eyes, elegant and feminine",
+      "base": "adult, mature female, mature female, curvy, long hair, chestnut hair, wavy hair, brown eyes",
+      "outfits": {
+        "default": "white sundress, wide-brim straw hat, oversized sunglasses, white leather knee boots, thin gold necklace",
+        "day": "crisp white button-up shirt, tailored beige shorts, oversized sunglasses, gold hoop earrings, leather sandals",
+        "evening": "emerald silk slip dress, delicate gold jewelry, gold drop earrings, strappy high heels, hair down",
+        "beach": "flowing ivory linen maxi dress, loose hair, bare feet, thin gold bracelet"
+      },
+      "photo": "a petite curvy French woman aged 32 with long wavy chestnut hair and warm brown eyes, elegant and feminine",
+      "tag_prompt": "adult, mature female, mature female, curvy, long hair, chestnut hair, wavy hair, brown eyes, white sundress, wide-brim straw hat, oversized sunglasses, white leather knee boots, thin gold necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "nicolas",
+      "name": "Nicolas",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall tanned athletic French man aged 37 with short dark hair and light stubble, simple but expensive clothes",
+      "base": "mature male, tall, athletic, tan, short hair, dark hair, brown eyes, light stubble",
+      "outfits": {
+        "default": "white linen shirt, buttoned shirt, navy chino trousers, leather loafers, steel wristwatch",
+        "evening": "navy linen blazer, white shirt, buttoned shirt, beige trousers, wristwatch",
+        "travel": "light grey cashmere sweater, dark trousers, leather weekender bag"
+      },
+      "photo": "a tall tanned athletic French man aged 37 with short dark hair and light stubble, simple but expensive clothes",
+      "tag_prompt": "mature male, tall, athletic, tan, short hair, dark hair, brown eyes, light stubble, white linen shirt, buttoned shirt, navy chino trousers, leather loafers, steel wristwatch",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_port",
+      "name": "Přístav",
+      "description": "Přístav",
+      "tag_prompt": "outdoors, harbor, saint-tropez, yachts, pastel houses, palm trees, sunny, blue sky, summer",
+      "mood": ""
+    },
+    {
+      "id": "l_yacht",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "outdoors, yacht deck, bow of yacht, sea, sunset, champagne glasses, orange sky",
+      "mood": ""
+    },
+    {
+      "id": "l_hotel",
+      "name": "Hotel",
+      "description": "Hotel",
+      "tag_prompt": "indoors, luxury hotel room, night, city lights through window, warm lamp, vanity table",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, autumn, overcast, empty beach, waves, wet sand",
+      "mood": ""
+    }
+  ]
+}

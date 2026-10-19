@@ -1,0 +1,88 @@
+{
+  "id": "w_rk_05_banff",
+  "title": "Banff – Ledová řeka, horké koleno",
+  "synopsis": "Norka Freya spadne z kola do ledového potoka a skotský průvodce Callum ji vytáhne i s humorem.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – Freya zůstává."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_trail",
+      "l_cabin",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "freya",
+      "name": "Freya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Norwegian woman aged 29, long blonde braid, cream cable-knit sweater",
+      "base": "adult, mature female, blonde hair, long hair, braid, blue eyes, athletic",
+      "outfits": {
+        "default": "cream cable knit sweater, black leggings, tall leather boots, cycling helmet",
+        "wet": "wet cable knit sweater, wet hair, oversized brown leather jacket, shivering",
+        "cabin": "oversized flannel shirt, thick wool socks, hair loose, blanket"
+      },
+      "photo": "a tall athletic Norwegian woman aged 29, long blonde braid, cream cable-knit sweater",
+      "tag_prompt": "adult, mature female, blonde hair, long hair, braid, blue eyes, athletic, cream cable knit sweater, black leggings, tall leather boots, cycling helmet",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "callum",
+      "name": "Callum",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Scottish mountain guide aged 31, ginger beard, brown leather jacket",
+      "base": "mature male, tall, beard, red hair, short hair, green eyes, broad shoulders",
+      "outfits": {
+        "default": "brown leather jacket, plaid flannel shirt, hiking boots",
+        "cabin": "plaid flannel shirt, rolled sleeves, jeans"
+      },
+      "photo": "a tall Scottish mountain guide aged 31, ginger beard, brown leather jacket",
+      "tag_prompt": "mature male, tall, beard, red hair, short hair, green eyes, broad shoulders, brown leather jacket, plaid flannel shirt, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_trail",
+      "name": "Lesní stezka",
+      "description": "Lesní stezka",
+      "tag_prompt": "outdoors, forest trail, banff, pine trees, mountain stream, rocks, autumn, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Srub",
+      "description": "Srub",
+      "tag_prompt": "indoors, log cabin, fireplace, fire, wooden walls, warm light, tea mugs, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa",
+      "description": "Terasa",
+      "tag_prompt": "outdoors, cabin terrace, mountains, pink sunrise, eagle in sky, mist, morning",
+      "mood": ""
+    }
+  ]
+}

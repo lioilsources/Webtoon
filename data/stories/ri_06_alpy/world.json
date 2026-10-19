@@ -1,0 +1,96 @@
+{
+  "id": "w_ri_06_alpy",
+  "title": "Švýcarské Alpy – Horská chata",
+  "synopsis": "Marek si připadá jako medvěd, lyžařka Elise mu ukáže, že je víc než svaly.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "fantasy_colorlines",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_gondola",
+      "l_chalet",
+      "l_slope",
+      "l_door"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marek",
+      "name": "Marek",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Czech man aged 34, short brown hair, leather jacket over grey wool sweater",
+      "base": "mature male, muscular, broad shoulders, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "brown leather jacket, grey wool sweater, hiking boots",
+        "sweater": "grey wool sweater, dark jeans"
+      },
+      "photo": "a muscular Czech man aged 34, short brown hair, leather jacket over grey wool sweater",
+      "tag_prompt": "mature male, muscular, broad shoulders, short hair, brown hair, brown eyes, brown leather jacket, grey wool sweater, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "elise",
+      "name": "Elise",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Swiss woman aged 30, long blond hair, white wool coat and knee boots",
+      "base": "adult, tall female, athletic, slender, long hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "white long wool coat, white knit hat, knee boots, silver earrings",
+        "ski": "red ski jacket, white ski pants, goggles on head",
+        "evening": "cream knit dress, silver necklace, knee boots"
+      },
+      "photo": "a tall athletic Swiss woman aged 30, long blond hair, white wool coat and knee boots",
+      "tag_prompt": "adult, tall female, athletic, slender, long hair, blonde hair, blue eyes, white long wool coat, white knit hat, knee boots, silver earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_gondola",
+      "name": "Lanovka",
+      "description": "Lanovka",
+      "tag_prompt": "indoors, cable car cabin, window, snowy mountains, alps, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_chalet",
+      "name": "Chata",
+      "description": "Chata",
+      "tag_prompt": "indoors, mountain chalet, fireplace, wooden walls, wine glasses, guitar, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_slope",
+      "name": "Svah",
+      "description": "Svah",
+      "tag_prompt": "outdoors, ski slope, snow, alps, morning, blue sky, skis",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Dveře pokoje",
+      "description": "Dveře pokoje",
+      "tag_prompt": "indoors, chalet corridor, wooden door, night, lamp",
+      "mood": ""
+    }
+  ]
+}

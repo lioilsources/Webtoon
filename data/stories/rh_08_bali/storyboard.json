@@ -1,0 +1,266 @@
+{
+  "title": "Bali – Ring není všechno",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_rice",
+      "characters": [],
+      "visual_tags": [
+        "rice terraces",
+        "palm trees",
+        "morning mist"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bali.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "shadow boxing on path",
+        "sweat",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Ring je všechno…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "diego"
+        },
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman standing in path",
+        "hands on hips",
+        "smile",
+        "man stopping"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "playful smile",
+        "straw hat",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Ring je jen místo. Ty jsi víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "diego",
+          "outfit": "dinner"
+        },
+        {
+          "id": "isabella",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dinner by pool",
+        "lanterns",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře ve vile.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "diego",
+          "outfit": "dinner"
+        },
+        {
+          "id": "isabella",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "lantern light",
+        "pool reflections"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [
+        {
+          "id": "diego",
+          "outfit": "dinner"
+        },
+        {
+          "id": "isabella",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman taking off her earrings",
+        "man holding her waist",
+        "standing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_room",
+      "characters": [],
+      "visual_tags": [
+        "lantern flame dimming",
+        "mosquito net",
+        "jungle night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lucerny dohoří.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "diego"
+        },
+        {
+          "id": "isabella",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "sitting by pool",
+        "her head on his shoulder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Cítím se jako muž.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "isabella",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "diego"
+        },
+        {
+          "id": "isabella",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking together through rice terraces",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

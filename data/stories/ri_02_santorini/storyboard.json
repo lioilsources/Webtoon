@@ -1,0 +1,294 @@
+{
+  "title": "Santorini – Resort",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "sitting under beach umbrella",
+        "reading book",
+        "straw hat"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "nikos"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "reaching out",
+        "apologetic smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Promiň! Můžeš hodit?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BUM",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "nora"
+        },
+        {
+          "id": "nikos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding ball",
+        "playful smile",
+        "man standing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Jen když mi řekneš, kde je nejlepší gyros.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nikos",
+          "text": "To ti ukážu sám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "sunset"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "wine glasses",
+        "sunset",
+        "caldera"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Za týden odjíždím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "honest",
+        "soft smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Já vím. Nechci to pokazit tím, že si budu hrát na něco trvalého.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "sunset"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "gold earrings",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Tak to nehrajme.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_nightbeach",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "night"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "holding hands",
+        "barefoot",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Noro, jsi nejkrásnější člověk, kterého jsem tu potkal.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "nora",
+          "text": "A ty nejlepší plavčík.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "night"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "lantern light",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "closed door",
+        "lantern",
+        "night",
+        "bougainvillea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře bungalovu se zavřou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "holding seashell",
+        "reading note",
+        "morning light",
+        "bittersweet smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno je jeho strana prázdná. Na polštáři lastura a vzkaz.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "",
+          "text": "„Bylo to krásné. Nikos.“",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "nora",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "tear",
+        "holding seashell",
+        "sea view"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

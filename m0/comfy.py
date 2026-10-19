@@ -22,8 +22,16 @@ def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=
         "decode": {"class_type": "VAEDecode", "inputs": {"samples": ["sample", 0], "vae": ["ckpt", 2]}},
         "save": {"class_type": "SaveImage", "inputs": {"images": ["decode", 0], "filename_prefix": prefix}},
     }
+    # Style LoRAs: preset["loras"] = [[file, strength], ...], chained after the checkpoint (model + clip).
+    model, clip = ["ckpt", 0], ["ckpt", 1]
+    for i, (name, strength) in enumerate(preset.get("loras") or []):
+        g[f"lora{i}"] = {"class_type": "LoraLoader", "inputs": {"model": model, "clip": clip, "lora_name": name,
+                                                                "strength_model": strength, "strength_clip": strength}}
+        model, clip = [f"lora{i}", 0], [f"lora{i}", 1]
+    g["pos"]["inputs"]["clip"] = g["neg"]["inputs"]["clip"] = clip
+    g["sample"]["inputs"]["model"] = model
     if preset.get("prediction") == "v":
-        g["vpred"] = {"class_type": "ModelSamplingDiscrete", "inputs": {"model": ["ckpt", 0], "sampling": "v_prediction", "zsnr": True}}
+        g["vpred"] = {"class_type": "ModelSamplingDiscrete", "inputs": {"model": model, "sampling": "v_prediction", "zsnr": True}}
         g["sample"]["inputs"]["model"] = ["vpred", 0]
     if ref_image:
         base = g["sample"]["inputs"]["model"]

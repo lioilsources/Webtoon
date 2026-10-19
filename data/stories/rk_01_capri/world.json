@@ -1,0 +1,88 @@
+{
+  "id": "w_rk_01_capri",
+  "title": "Capri – Zlato a sůl",
+  "synopsis": "Valentina slaví rozvod na Capri a vítr jí zanese šátek do koktejlu architekta Mathiase.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_juggernaut",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – o rok později svatba na stejné lodi."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_marina",
+      "l_boat",
+      "l_villa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "valentina",
+      "name": "Valentina",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Italian woman aged 30, long dark wavy hair, green eyes",
+      "base": "adult, mature female, dark hair, long hair, wavy hair, green eyes, tan skin",
+      "outfits": {
+        "default": "gold and black silk slip dress, thin straps, silk scarf, gold sandals, gold hoop earrings",
+        "sea": "gold and black silk slip dress, barefoot, wind-blown hair, gold bracelet",
+        "wedding": "ivory silk slip wedding dress, pearl earrings, flower in hair"
+      },
+      "photo": "an elegant Italian woman aged 30, long dark wavy hair, green eyes",
+      "tag_prompt": "adult, mature female, dark hair, long hair, wavy hair, green eyes, tan skin, gold and black silk slip dress, thin straps, silk scarf, gold sandals, gold hoop earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mathias",
+      "name": "Mathias",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall French man aged 35, short brown hair, light stubble",
+      "base": "mature male, tall, slender, short hair, brown hair, stubble, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, rolled sleeves, beige linen trousers, leather loafers, wristwatch",
+        "wedding": "light grey linen suit, white shirt, no necktie"
+      },
+      "photo": "a tall French man aged 35, short brown hair, light stubble",
+      "tag_prompt": "mature male, tall, slender, short hair, brown hair, stubble, brown eyes, white linen shirt, rolled sleeves, beige linen trousers, leather loafers, wristwatch",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_marina",
+      "name": "Marina Grande",
+      "description": "Marina Grande",
+      "tag_prompt": "outdoors, harbor, capri, yachts, lemon trees, pastel houses, cliffs, sunset, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_boat",
+      "name": "Faraglioni",
+      "description": "Faraglioni",
+      "tag_prompt": "outdoors, small wooden boat, sea, faraglioni rocks, sunset, calm water, mediterranean",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Bílá vila",
+      "description": "Bílá vila",
+      "tag_prompt": "indoors, white villa, open balcony doors, sea view, night, moonlight, sheer curtains, lamp",
+      "mood": ""
+    }
+  ]
+}

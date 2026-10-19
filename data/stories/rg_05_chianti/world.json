@@ -1,0 +1,87 @@
+{
+  "id": "w_rg_05_chianti",
+  "title": "Cyklovýlet po vinicích Toskánska",
+  "synopsis": "Isabelle uprostřed vinic praskne řetěz a architekt Gabriele zastaví na starém kole.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "watercolor_paris",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vines",
+      "l_cellar",
+      "l_pergola"
+    ]
+  },
+  "characters": [
+    {
+      "id": "isabella",
+      "name": "Isabella Conte",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Italian woman aged 27, short curly brown hair, white cycling jersey",
+      "base": "adult, tall female, athletic, short hair, curly hair, brown hair, brown eyes, tan skin",
+      "outfits": {
+        "default": "white cycling jersey, black cycling pants, sport sunglasses, cycling helmet",
+        "evening": "emerald green silk midi dress, high neckline, (modest clothing:1.2), strappy heels, small gold earrings"
+      },
+      "photo": "a tall athletic Italian woman aged 27, short curly brown hair, white cycling jersey",
+      "tag_prompt": "adult, tall female, athletic, short hair, curly hair, brown hair, brown eyes, tan skin, white cycling jersey, black cycling pants, sport sunglasses, cycling helmet",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "gabriele",
+      "name": "Gabriele Rossi",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender Italian architect aged 35 with greying temples, light blue linen shirt",
+      "base": "mature male, slender, grey temples, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "light blue linen shirt, beige chino trousers, leather loafers",
+        "evening": "white shirt, navy blazer, beige trousers, leather loafers"
+      },
+      "photo": "a slender Italian architect aged 35 with greying temples, light blue linen shirt",
+      "tag_prompt": "mature male, slender, grey temples, short hair, black hair, brown eyes, light blue linen shirt, beige chino trousers, leather loafers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vines",
+      "name": "Vinice v Chianti",
+      "description": "Vinice v Chianti",
+      "tag_prompt": "outdoors, tuscany, rolling hills, vineyard rows, cypress trees, gravel road, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_cellar",
+      "name": "Vinný sklípek",
+      "description": "Vinný sklípek",
+      "tag_prompt": "indoors, stone wine cellar, wine barrels, wine tasting, candles, arched ceiling",
+      "mood": ""
+    },
+    {
+      "id": "l_pergola",
+      "name": "Pergola u vily",
+      "description": "Pergola u vily",
+      "tag_prompt": "outdoors, tuscan villa, pergola, grape vines, string lights, evening, hills at dusk",
+      "mood": ""
+    }
+  ]
+}

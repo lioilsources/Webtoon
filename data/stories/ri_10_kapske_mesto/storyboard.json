@@ -1,0 +1,236 @@
+{
+  "title": "Kapské Město – Les a hora",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "michaela"
+        }
+      ],
+      "visual_tags": [
+        "holding camera",
+        "taking photo",
+        "forest trail"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "thabo"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "stopping",
+        "looking at viewer"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "michaela"
+        },
+        {
+          "id": "thabo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "talking",
+        "man pointing along trail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thabo",
+          "text": "Neztratila ses?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "michaela",
+          "text": "Ne. Jen hledám cestu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "thabo",
+          "text": "Tak pojď, ukážu ti ji.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "michaela"
+        },
+        {
+          "id": "thabo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "viewpoint",
+        "man handing water bottle",
+        "sunset",
+        "ocean"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thabo",
+          "text": "Michaelo, zůstaň na večeři.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "michaela",
+          "text": "Zůstanu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "thabo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "playing drum",
+        "fireplace",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "michaela",
+          "outfit": "evening"
+        },
+        {
+          "id": "thabo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "smiling at each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "thabo",
+          "text": "Jsi nejkrásnější turistka.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "michaela",
+          "text": "A ty nejlepší průvodce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "michaela",
+          "outfit": "evening"
+        },
+        {
+          "id": "thabo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "cabin door",
+        "lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kabát, kozačky a brýle zůstanou u krbu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "michaela",
+          "outfit": "evening"
+        },
+        {
+          "id": "thabo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "fireplace embers",
+        "dark cabin",
+        "night window",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "V krbu dohasíná oheň.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

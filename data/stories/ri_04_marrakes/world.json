@@ -1,0 +1,104 @@
+{
+  "id": "w_ri_04_marrakes",
+  "title": "Marrákeš – Spa",
+  "synopsis": "Sára hledá v Marrákeši klid, mechanik Karim jí nejdřív nabídne čaj a pak kus srdce, které si neodveze.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "painterly_oil",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec: rozejdou se."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_souk",
+      "l_spa",
+      "l_pool",
+      "l_door",
+      "l_street"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sara",
+      "name": "Sára",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Czech woman aged 28, long wavy red hair, freckles, emerald silk dress",
+      "base": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, pale skin",
+      "outfits": {
+        "default": "emerald silk midi dress, low heels, gold necklace, sunglasses on head",
+        "robe": "white bathrobe, hair towel",
+        "night": "black silk evening dress, gold necklace, pumps"
+      },
+      "photo": "a curvy Czech woman aged 28, long wavy red hair, freckles, emerald silk dress",
+      "tag_prompt": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, pale skin, emerald silk midi dress, low heels, gold necklace, sunglasses on head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "karim",
+      "name": "Karim",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Moroccan mechanic aged 34, short black hair, stubble, brown leather jacket",
+      "base": "mature male, muscular, tan, short hair, black hair, stubble, dark eyes",
+      "outfits": {
+        "default": "brown leather jacket, white t-shirt, jeans, oil stains",
+        "evening": "white linen shirt, dark trousers"
+      },
+      "photo": "a muscular Moroccan mechanic aged 34, short black hair, stubble, brown leather jacket",
+      "tag_prompt": "mature male, muscular, tan, short hair, black hair, stubble, dark eyes, brown leather jacket, white t-shirt, jeans, oil stains",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_souk",
+      "name": "Trh",
+      "description": "Trh",
+      "tag_prompt": "outdoors, marrakesh souk, market stalls, lanterns, spices, jewelry stall, scooter, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_spa",
+      "name": "Spa",
+      "description": "Spa",
+      "tag_prompt": "indoors, moroccan spa, hammam, tiles, mosaic, steam, arches",
+      "mood": ""
+    },
+    {
+      "id": "l_pool",
+      "name": "Bazén v riadu",
+      "description": "Bazén v riadu",
+      "tag_prompt": "outdoors, riad courtyard, pool, orange trees, lanterns, evening, mosaic tiles",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Dveře pokoje",
+      "description": "Dveře pokoje",
+      "tag_prompt": "indoors, riad corridor, carved wooden door, lanterns, night",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "Ulice ráno",
+      "description": "Ulice ráno",
+      "tag_prompt": "outdoors, marrakesh street, morning, taxi, red walls, suitcase",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "title": "Mlha na Šumavě",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "fog between trees",
+        "golden leaves"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Šumava. Podzim.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "vendula"
+        }
+      ],
+      "visual_tags": [
+        "holding map",
+        "looking at phone",
+        "confused",
+        "cold",
+        "standing at signpost"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vendula",
+          "text": "Žádný signál. A boty jsou až moc nové.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "jachym"
+        }
+      ],
+      "visual_tags": [
+        "walking out of fog",
+        "backpack",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jachym",
+          "text": "Ztracená?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "vendula"
+        },
+        {
+          "id": "jachym"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "facing each other",
+        "woman nervous smile",
+        "man faint smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vendula",
+          "text": "Ne. Jen nevím, kde jsem. To je rozdíl.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jachym",
+          "text": "Jedna varianta končí v chatě s čajem. Druhá v záchraně.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "vendula",
+          "text": "Tak tu s čajem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "jachym"
+        }
+      ],
+      "visual_tags": [
+        "first smile",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jachym",
+          "text": "Medvědi tu nejsou. Jen ztracené fitness trenérky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "vendula",
+          "outfit": "cabin"
+        },
+        {
+          "id": "jachym",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman sitting by fireplace",
+        "man making tea",
+        "back turned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vendula",
+          "text": "Celou hodinu mlčíte. Jako byste mlčel s někým.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "vendula",
+          "outfit": "cabin"
+        },
+        {
+          "id": "jachym",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "handing mug of tea",
+        "fingers touching",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jachym",
+          "text": "Večer tady mlčení znamená: jsem tady, mám čas a nechci být nikde jinde.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "vendula",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "holding mug",
+        "soft expression",
+        "firelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vendula",
+          "text": "Přijela jsem utéct. Od práce, od lidí, od jednoho muže.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jachym",
+          "text": "Já utéct nechci. Jen se nevracet sám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "vendula",
+          "outfit": "night"
+        },
+        {
+          "id": "jachym",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on bench under one blanket",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vendula",
+          "text": "Co když zjistím, že les byl jen krásný výlet, a ne začátek?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "jachym",
+          "text": "Tak výlet prodloužíme. Do pondělí. A pak celý život, jestli na mě najdeš čas.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "vendula",
+          "outfit": "night"
+        },
+        {
+          "id": "jachym",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "under blanket",
+        "starry night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bench",
+      "characters": [],
+      "visual_tags": [
+        "cabin door closed",
+        "warm window",
+        "two pairs of boots by the door",
+        "folded map",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno u dveří stojí dvoje boty. A mapa, do které už nikdo nemusí koukat.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

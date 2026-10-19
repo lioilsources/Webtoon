@@ -1,0 +1,266 @@
+{
+  "title": "Romantika u jezera Como",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_gala",
+      "characters": [],
+      "visual_tags": [
+        "villa garden",
+        "lanterns",
+        "moonlight on lake"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jezero Como. Dobročinný galavečer.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gala",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing alone holding champagne glass",
+        "bored",
+        "looking at watch"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gala",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "aurelia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman approaching",
+        "smiling",
+        "lanterns",
+        "man turning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aurelia",
+          "text": "Vypadáte, že počítáte minuty do konce.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "max",
+          "text": "Počítal. Teď počítám, kolik jich zbývá s vámi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_gala",
+      "characters": [
+        {
+          "id": "aurelia"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "green eyes",
+        "pearl earrings",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aurelia",
+          "text": "Tak je nepočítejte, Maxi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_gala",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "aurelia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking along terrace by the lake",
+        "moonlight",
+        "talking",
+        "close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mluví o knihách, o hvězdách, o všem kromě zítřka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "aurelia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing on balcony",
+        "embrace",
+        "moonlight on lake"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Miluju tě, Aurelie.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "aurelia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "moonlight",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_suite",
+      "characters": [],
+      "visual_tags": [
+        "balcony curtains moving in the wind",
+        "moonlight on lake",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Záclony se vlní. Jezero mlčí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_breakfast",
+      "characters": [
+        {
+          "id": "aurelia",
+          "outfit": "morning"
+        },
+        {
+          "id": "fiance"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "older man entering terrace",
+        "stern",
+        "woman standing up",
+        "shocked"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_breakfast",
+      "characters": [
+        {
+          "id": "aurelia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "tears in eyes",
+        "looking back",
+        "whisper"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aurelia",
+          "text": "Odpusť mi, Maxe... Tahle noc byla můj sen. Ale můj život patří mé rodině.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_breakfast",
+      "characters": [
+        {
+          "id": "max",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "alone",
+        "leaning on railing",
+        "looking at cold lake",
+        "from behind",
+        "morning mist"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

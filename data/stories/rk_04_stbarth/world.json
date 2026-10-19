@@ -1,0 +1,96 @@
+{
+  "id": "w_rk_04_stbarth",
+  "title": "St. Barthélemy – Jachta Nedočkavost",
+  "synopsis": "Bývalá modelka Isabelle si na jachtě jachtaře Viktora dokazuje, že ještě umí chtít, a odejde s hlavou vzhůru.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "fashion_editorial",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Špatný konec – Viktor má ženu, Isabelle odchází sama a hrdě."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_salon",
+      "l_break",
+      "l_pier"
+    ]
+  },
+  "characters": [
+    {
+      "id": "isabelle",
+      "name": "Isabelle",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Brazilian former model aged 33, long black wavy hair",
+      "base": "adult, mature female, tan skin, long hair, black hair, wavy hair, brown eyes, tall",
+      "outfits": {
+        "default": "emerald green silk wrap dress, gold cuff bracelets, gold hoop earrings, wide-brim hat",
+        "night": "emerald green silk wrap dress, gold cuff bracelets, hair down",
+        "morning": "emerald green silk wrap dress, wrinkled, gold cuff bracelets, sunglasses on head"
+      },
+      "photo": "a tall Brazilian former model aged 33, long black wavy hair",
+      "tag_prompt": "adult, mature female, tan skin, long hair, black hair, wavy hair, brown eyes, tall, emerald green silk wrap dress, gold cuff bracelets, gold hoop earrings, wide-brim hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "viktor",
+      "name": "Viktor",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Russian yachtsman aged 45, short grey hair",
+      "base": "mature male, tall, broad shoulders, short hair, grey hair, blue eyes, clean-shaven",
+      "outfits": {
+        "default": "white linen shirt, navy blazer, white trousers, luxury wristwatch",
+        "morning": "white polo shirt, white trousers, luxury wristwatch, sunglasses"
+      },
+      "photo": "a tall Russian yachtsman aged 45, short grey hair",
+      "tag_prompt": "mature male, tall, broad shoulders, short hair, grey hair, blue eyes, clean-shaven, white linen shirt, navy blazer, white trousers, luxury wristwatch",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba",
+      "description": "Paluba",
+      "tag_prompt": "outdoors, luxury yacht deck, champagne glasses, caribbean sea, golden hour, sunset",
+      "mood": ""
+    },
+    {
+      "id": "l_salon",
+      "name": "Podpalubí",
+      "description": "Podpalubí",
+      "tag_prompt": "indoors, yacht salon, leather sofa, soft lamps, night, porthole",
+      "mood": ""
+    },
+    {
+      "id": "l_break",
+      "name": "Snídaně u jiného ostrova",
+      "description": "Snídaně u jiného ostrova",
+      "tag_prompt": "outdoors, yacht deck, breakfast table, croissants, morning light, island",
+      "mood": ""
+    },
+    {
+      "id": "l_pier",
+      "name": "Gustavia",
+      "description": "Gustavia",
+      "tag_prompt": "outdoors, pier, gustavia, harbor, red roofs, morning, boats",
+      "mood": ""
+    }
+  ]
+}

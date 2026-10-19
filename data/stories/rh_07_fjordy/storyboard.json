@@ -1,0 +1,243 @@
+{
+  "title": "Fjordy – Zastav se",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "fjord",
+        "cliffs",
+        "low clouds"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Norské fjordy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "running on trail",
+        "sweat",
+        "determined",
+        "motion blur"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Vždycky běžím…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        },
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman standing on trail",
+        "raising hand",
+        "man stopping",
+        "breathing hard"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Zastav se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dinner by fireplace",
+        "candles",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer v chatě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "taking off earrings",
+        "soft smile",
+        "firelight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "firelight",
+        "shadows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "candle smoke",
+        "extinguished candle",
+        "window",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Svíčka zhasne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dock",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "leave"
+        }
+      ],
+      "visual_tags": [
+        "standing with suitcase",
+        "looking away",
+        "fog"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Musím domů. Bylo to krásné… ale jen dovolenkové.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dock",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "hurt",
+        "fog",
+        "looking down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dock",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "standing alone on dock",
+        "ferry leaving in fog",
+        "from behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Erik zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

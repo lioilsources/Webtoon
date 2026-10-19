@@ -1,0 +1,242 @@
+{
+  "title": "Bali – Plážový resort",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "lost",
+        "holding phone",
+        "looking around",
+        "rain starting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "ayu"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding big banana leaf over man",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Vy jste z resortu?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "david",
+          "text": "Ano. A vy?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Já jsem tady doma.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "dance"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "bonfire",
+        "torches",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "dance"
+        },
+        {
+          "id": "david",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman taking man's hands",
+        "dancing",
+        "awkward",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Já neumím tančit.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Já tě naučím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_resto",
+      "characters": [
+        {
+          "id": "ayu"
+        },
+        {
+          "id": "david",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving flower",
+        "candles",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Ayu, zůstaň se mnou do konce týdne.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Zůstanu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "ayu"
+        },
+        {
+          "id": "david",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "lanterns",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "closed bungalow door",
+        "lanterns",
+        "palm leaves",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře se zavřou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "travel"
+        },
+        {
+          "id": "david",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman with straw bag leaving",
+        "man standing on terrace",
+        "morning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno Ayu odjíždí za rodinou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "david",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "holding seashell",
+        "sad smile",
+        "ocean"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

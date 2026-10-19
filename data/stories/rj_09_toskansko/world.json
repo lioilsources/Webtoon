@@ -1,0 +1,87 @@
+{
+  "id": "w_rj_09_toskansko",
+  "title": "Kola v Toskánsku",
+  "synopsis": "Hana přijela s předsevzetím zamilovat se jen do sebe a cykloprůvodce Marco ho zkouší rozbít.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "flat_anime_mema",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořký konec: Hana odjede, Marco čeká další skupina."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_lunch",
+      "l_hill"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marco",
+      "name": "Marco Gianelli",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Italian cycling guide aged 34, tanned, black hair in a ponytail, white cycling jersey",
+      "base": "mature male, tan skin, black hair, ponytail, long hair, brown eyes, white teeth, bright smile, athletic",
+      "outfits": {
+        "default": "white cycling jersey, black cycling shorts, cycling gloves, sunglasses on head",
+        "lunch": "white linen shirt, rolled sleeves, khaki shorts"
+      },
+      "photo": "an Italian cycling guide aged 34, tanned, black hair in a ponytail, white cycling jersey",
+      "tag_prompt": "mature male, tan skin, black hair, ponytail, long hair, brown eyes, white teeth, bright smile, athletic, white cycling jersey, black cycling shorts, cycling gloves, sunglasses on head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "hana",
+      "name": "Hana Kolářová",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Czech athlete aged 30, brown braid, sporty, teal cycling jacket",
+      "base": "adult, athletic, brown hair, braid, single braid, hazel eyes, serious",
+      "outfits": {
+        "default": "teal cycling jacket, cycling helmet, black leggings, sneakers",
+        "lunch": "white sleeveless linen top, olive wide-leg trousers, sunglasses, braid"
+      },
+      "photo": "a Czech athlete aged 30, brown braid, sporty, teal cycling jacket",
+      "tag_prompt": "adult, athletic, brown hair, braid, single braid, hazel eyes, serious, teal cycling jacket, cycling helmet, black leggings, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, tuscany, vineyard, rolling hills, cypress trees, morning mist, bicycles, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_lunch",
+      "name": "Oběd pod dubem",
+      "description": "Oběd pod dubem",
+      "tag_prompt": "outdoors, long table under old oak tree, wine glasses, pasta, vineyard, noon, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_hill",
+      "name": "Kopec",
+      "description": "Kopec",
+      "tag_prompt": "outdoors, hilltop, sunset, long shadows, vineyard below, orange sky, bicycles",
+      "mood": ""
+    }
+  ]
+}

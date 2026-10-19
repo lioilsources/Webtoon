@@ -1,0 +1,96 @@
+{
+  "id": "w_rk_07_marrakes",
+  "title": "Marrákeš – Zahrada, která spí",
+  "synopsis": "Blogerka Celeste se ztratí v medíně a obchodník s látkami Omar jí ukáže zahradu, kterou si nesmí nechat.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Špatný konec – Omarovi zemře otec, musí vést rodinu a nepřijde."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_medina",
+      "l_riad",
+      "l_roof",
+      "l_airport"
+    ]
+  },
+  "characters": [
+    {
+      "id": "omar",
+      "name": "Omar",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Moroccan cloth merchant aged 38, grey eyes, short black hair, cream linen djellaba",
+      "base": "mature male, short hair, black hair, grey eyes, stubble, tall, calm",
+      "outfits": {
+        "default": "linen djellaba, cream color, leather sandals",
+        "night": "dark blue linen shirt, cream trousers"
+      },
+      "photo": "a tall Moroccan cloth merchant aged 38, grey eyes, short black hair, cream linen djellaba",
+      "tag_prompt": "mature male, short hair, black hair, grey eyes, stubble, tall, calm, linen djellaba, cream color, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a French lifestyle blogger aged 27, long wavy brown hair, wide-brim hat, white maxi dress",
+      "base": "adult, mature female, brown hair, long hair, wavy hair, hazel eyes",
+      "outfits": {
+        "default": "wide-brim straw hat, flowing white maxi dress, gold bangles, holding phone",
+        "night": "terracotta silk dress, silk scarf over shoulders, gold earrings",
+        "airport": "beige trench coat, wide-brim hat, sunglasses, suitcase"
+      },
+      "photo": "a French lifestyle blogger aged 27, long wavy brown hair, wide-brim hat, white maxi dress",
+      "tag_prompt": "adult, mature female, brown hair, long hair, wavy hair, hazel eyes, wide-brim straw hat, flowing white maxi dress, gold bangles, holding phone",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_medina",
+      "name": "Medína",
+      "description": "Medína",
+      "tag_prompt": "outdoors, medina, marrakesh, narrow alley, spice stalls, lanterns, fabric hanging, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_riad",
+      "name": "Riad",
+      "description": "Riad",
+      "tag_prompt": "indoors, riad courtyard, fountain, orange trees, mosaic tiles, arches",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha riadu",
+      "description": "Střecha riadu",
+      "tag_prompt": "outdoors, rooftop terrace, night, stars, mint tea, lanterns, marrakesh skyline",
+      "mood": ""
+    },
+    {
+      "id": "l_airport",
+      "name": "Letiště",
+      "description": "Letiště",
+      "tag_prompt": "indoors, airport terminal, departure board, large windows, morning",
+      "mood": ""
+    }
+  ]
+}

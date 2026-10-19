@@ -1,0 +1,223 @@
+{
+  "title": "Amalfi – Nudný",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "amalfi coast",
+        "colorful houses on cliffs",
+        "yacht"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pobřeží Amalfi.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "sitting on deck",
+        "reading papers",
+        "loosening collar",
+        "sigh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman sitting beside him",
+        "taking off sunglasses",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sari",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "wine glasses",
+        "sitting close",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer v kajutě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sari",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "lamp switching off",
+        "porthole",
+        "moonlit sea",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck_m",
+      "characters": [
+        {
+          "id": "sari",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "holding phone",
+        "guilty",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Adriane… doma mám přítele. Tohle byla chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck_m",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "hurt",
+        "taking off glasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck_m",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone on deck",
+        "empty chair beside him",
+        "from behind",
+        "sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Adrian zůstává na jachtě sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

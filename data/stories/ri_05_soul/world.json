@@ -1,0 +1,95 @@
+{
+  "id": "w_ri_05_soul",
+  "title": "Soul – Kavárna a deska",
+  "synopsis": "Stážistka Jana pije jen čaj a boxer Minho s monoklem jí to celé obrátí.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "retro_citypop",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_cafe",
+      "l_roof",
+      "l_market",
+      "l_door"
+    ]
+  },
+  "characters": [
+    {
+      "id": "jana",
+      "name": "Jana",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Czech woman aged 27, straight black hair with blunt bangs, glasses, camel coat",
+      "base": "adult, mature female, petite, slender, long hair, straight hair, black hair, blunt bangs, glasses, brown eyes",
+      "outfits": {
+        "default": "long camel coat, white blouse, knee boots, glasses",
+        "casual": "cream cardigan, pleated skirt, knee boots, glasses"
+      },
+      "photo": "a petite Czech woman aged 27, straight black hair with blunt bangs, glasses, camel coat",
+      "tag_prompt": "adult, mature female, petite, slender, long hair, straight hair, black hair, blunt bangs, glasses, brown eyes, long camel coat, white blouse, knee boots, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "minho",
+      "name": "Minho",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Korean boxer aged 30, short black hair, black track jacket",
+      "base": "mature male, athletic, muscular, short hair, black hair, dark eyes",
+      "outfits": {
+        "default": "black track jacket, white t-shirt, black jeans",
+        "bruised": "black track jacket, white t-shirt, black eye, bandage on cheek"
+      },
+      "photo": "an athletic Korean boxer aged 30, short black hair, black track jacket",
+      "tag_prompt": "mature male, athletic, muscular, short hair, black hair, dark eyes, black track jacket, white t-shirt, black jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_cafe",
+      "name": "Kavárna",
+      "description": "Kavárna",
+      "tag_prompt": "indoors, cafe, seoul, laptop, tea cup, window, plants, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, seoul skyline, evening, string lights, city lights",
+      "mood": ""
+    },
+    {
+      "id": "l_market",
+      "name": "Noční trh",
+      "description": "Noční trh",
+      "tag_prompt": "outdoors, night market, street food stalls, lanterns, crowd, seoul",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Dveře bytu",
+      "description": "Dveře bytu",
+      "tag_prompt": "indoors, apartment door, night, warm lamp, shoes at entrance",
+      "mood": ""
+    }
+  ]
+}

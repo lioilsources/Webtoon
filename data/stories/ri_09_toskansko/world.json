@@ -1,0 +1,103 @@
+{
+  "id": "w_ri_09_toskansko",
+  "title": "Toskánsko – Cyklistická trasa",
+  "synopsis": "Cyklista Jakub píchne mezi vinicemi, Giulia mu podá vodu a na jednu noc i domov.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "semireal_25d",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec: Jakub odjíždí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_path",
+      "l_inn",
+      "l_vineyard",
+      "l_door",
+      "l_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "jakub",
+      "name": "Jakub",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Czech cyclist aged 33, short dark hair, cycling jersey and sport sunglasses",
+      "base": "mature male, athletic, slender, short hair, dark hair, brown eyes",
+      "outfits": {
+        "default": "cycling jersey, cycling shorts, sport sunglasses, helmet",
+        "evening": "white linen shirt, dark jeans"
+      },
+      "photo": "an athletic Czech cyclist aged 33, short dark hair, cycling jersey and sport sunglasses",
+      "tag_prompt": "mature male, athletic, slender, short hair, dark hair, brown eyes, cycling jersey, cycling shorts, sport sunglasses, helmet",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Italian woman aged 29, long wavy red hair, freckles, yellow summer dress",
+      "base": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes",
+      "outfits": {
+        "default": "yellow summer dress, sandals, gold earrings, bicycle basket",
+        "evening": "terracotta linen dress, gold necklace, sandals"
+      },
+      "photo": "a curvy Italian woman aged 29, long wavy red hair, freckles, yellow summer dress",
+      "tag_prompt": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, yellow summer dress, sandals, gold earrings, bicycle basket",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_path",
+      "name": "Cyklostezka",
+      "description": "Cyklostezka",
+      "tag_prompt": "outdoors, tuscany, gravel road, cypress trees, vineyard, rolling hills, sunny, bicycle",
+      "mood": ""
+    },
+    {
+      "id": "l_inn",
+      "name": "Penzion",
+      "description": "Penzion",
+      "tag_prompt": "indoors, italian guesthouse, stone walls, pasta, wine, evening, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_vineyard",
+      "name": "Vinice v noci",
+      "description": "Vinice v noci",
+      "tag_prompt": "outdoors, vineyard, night, moonlight, stars, tuscany",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Dveře pokoje",
+      "description": "Dveře pokoje",
+      "tag_prompt": "indoors, stone corridor, wooden door, night, lamp",
+      "mood": ""
+    },
+    {
+      "id": "l_morning",
+      "name": "Ráno",
+      "description": "Ráno",
+      "tag_prompt": "outdoors, tuscany, gravel road, morning, mist, cypress trees",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "title": "Toskánsko – Úroda",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vineyard",
+      "characters": [],
+      "visual_tags": [
+        "vineyard",
+        "cypress trees",
+        "farmhouse"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Chianti. Říjen.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "petra"
+        }
+      ],
+      "visual_tags": [
+        "stumbling between vine rows in heels",
+        "holding folder",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "AU!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "petra"
+        },
+        {
+          "id": "lorenzo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man catching woman by the arm",
+        "steady",
+        "close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Já jsem tu pracovně. Usedlost se prodává.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "lorenzo"
+        }
+      ],
+      "visual_tags": [
+        "dry humor",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lorenzo",
+          "text": "Usedlost ne. Já ano. Ale jen s pozemkem, kočkou a špatným humorem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "petra",
+          "outfit": "harvest"
+        }
+      ],
+      "visual_tags": [
+        "picking grapes",
+        "basket",
+        "laughing",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sklizeň. Týdny.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yard",
+      "characters": [
+        {
+          "id": "petra",
+          "outfit": "harvest"
+        },
+        {
+          "id": "lorenzo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing under fig tree",
+        "string lights",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "lorenzo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "handing wine glass",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc svatého Martina.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "lorenzo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "speaking softly",
+        "holding glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lorenzo",
+          "text": "V Toskánsku se říká: dobré víno potřebuje trpělivost. Já čekal tři roky. Ty jsi přišla v říjnu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "petra",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "setting glass down on barrel",
+        "taking his hand",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Pak se napij pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cellar",
+      "characters": [
+        {
+          "id": "petra",
+          "outfit": "night"
+        },
+        {
+          "id": "lorenzo",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "lantern light",
+        "barrels"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cellar",
+      "characters": [],
+      "visual_tags": [
+        "lantern blown out by the barrel",
+        "dark cellar",
+        "wisp of smoke",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yard",
+      "characters": [
+        {
+          "id": "petra",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "on phone",
+        "morning light",
+        "smiling",
+        "fig tree"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "petra",
+          "text": "Usedlost stahuju z prodeje. Důvod? Osobní. Velmi osobní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

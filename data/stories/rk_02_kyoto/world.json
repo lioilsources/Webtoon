@@ -1,0 +1,96 @@
+{
+  "id": "w_rk_02_kyoto",
+  "title": "Kjóto – Deštivé duby",
+  "synopsis": "Fotografka Hana potká v dešti v bambusovém lese spisovatele Ethana, který jí ráno nechá jen lísteček.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ukiyoe",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Špatný konec – Ethan odejde bez rozloučení, Hana jde dál silnější."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bamboo",
+      "l_ryokan",
+      "l_room",
+      "l_river"
+    ]
+  },
+  "characters": [
+    {
+      "id": "hana",
+      "name": "Hana",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Japanese-Canadian woman aged 28, black bob haircut, round glasses, beige trench coat, camera",
+      "base": "adult, mature female, black hair, short hair, bob cut, black eyes, glasses",
+      "outfits": {
+        "default": "beige trench coat, black turtleneck, camera strap, holding camera, glasses",
+        "robe": "silk kimono-style robe, deep blue, obi belt, glasses",
+        "dawn": "beige trench coat, silk scarf, holding camera, glasses"
+      },
+      "photo": "a Japanese-Canadian woman aged 28, black bob haircut, round glasses, beige trench coat, camera",
+      "tag_prompt": "adult, mature female, black hair, short hair, bob cut, black eyes, glasses, beige trench coat, black turtleneck, camera strap, holding camera, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall American man aged 40, short brown hair, trimmed beard, dark wool coat",
+      "base": "mature male, tall, short hair, brown hair, beard, blue eyes",
+      "outfits": {
+        "default": "dark wool coat, grey scarf, holding umbrella, notebook",
+        "evening": "white shirt, dark trousers, rolled sleeves"
+      },
+      "photo": "a tall American man aged 40, short brown hair, trimmed beard, dark wool coat",
+      "tag_prompt": "mature male, tall, short hair, brown hair, beard, blue eyes, dark wool coat, grey scarf, holding umbrella, notebook",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bamboo",
+      "name": "Arashiyama",
+      "description": "Arashiyama",
+      "tag_prompt": "outdoors, bamboo forest, arashiyama, rain, path, mist, tall bamboo",
+      "mood": ""
+    },
+    {
+      "id": "l_ryokan",
+      "name": "Ryokan",
+      "description": "Ryokan",
+      "tag_prompt": "indoors, ryokan, tatami, paper lantern, shoji, low table, sake, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_room",
+      "name": "Pokoj ráno",
+      "description": "Pokoj ráno",
+      "tag_prompt": "indoors, tatami room, morning light, shoji, folded futon, empty room",
+      "mood": ""
+    },
+    {
+      "id": "l_river",
+      "name": "Řeka za úsvitu",
+      "description": "Řeka za úsvitu",
+      "tag_prompt": "outdoors, kamo river, dawn, mist, wooden bridge, kyoto, sunrise",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "w_rk_09_edinburgh",
+  "title": "Edinburgh – Město, které pamatuje",
+  "synopsis": "Spisovatelka detektivek June hledá atmosféru vraždy a najde majitele antikvariátu Alistaira, který se bojí odejít.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Špatný konec – Alistair zůstane, June odletí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_shop",
+      "l_kirk",
+      "l_pub",
+      "l_airport"
+    ]
+  },
+  "characters": [
+    {
+      "id": "alistair",
+      "name": "Alistair",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Scottish antiquarian bookseller aged 40, greying brown hair, tweed jacket, walking cane",
+      "base": "mature male, short hair, brown hair, grey hair, blue eyes, stubble, walking cane",
+      "outfits": {
+        "default": "tweed jacket, wool waistcoat, white shirt, corduroy trousers, walking cane",
+        "coat": "long dark wool coat, tartan scarf, walking cane"
+      },
+      "photo": "a Scottish antiquarian bookseller aged 40, greying brown hair, tweed jacket, walking cane",
+      "tag_prompt": "mature male, short hair, brown hair, grey hair, blue eyes, stubble, walking cane, tweed jacket, wool waistcoat, white shirt, corduroy trousers, walking cane",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "june",
+      "name": "June",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an American crime novelist aged 34, long black hair, camel wool coat, red over-knee boots",
+      "base": "adult, mature female, black hair, long hair, straight hair, brown eyes, red lipstick",
+      "outfits": {
+        "default": "camel wool coat, black turtleneck, red over-knee boots with brass buckles, leather bag",
+        "evening": "black turtleneck dress, red over-knee boots, gold earrings"
+      },
+      "photo": "an American crime novelist aged 34, long black hair, camel wool coat, red over-knee boots",
+      "tag_prompt": "adult, mature female, black hair, long hair, straight hair, brown eyes, red lipstick, camel wool coat, black turtleneck, red over-knee boots with brass buckles, leather bag",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_shop",
+      "name": "Antikvariát",
+      "description": "Antikvariát",
+      "tag_prompt": "indoors, antique bookshop, shelves of old books, wooden counter, lamp, royal mile, rain on window",
+      "mood": ""
+    },
+    {
+      "id": "l_kirk",
+      "name": "Greyfriars",
+      "description": "Greyfriars",
+      "tag_prompt": "outdoors, greyfriars kirkyard, old gravestones, rain, edinburgh, overcast",
+      "mood": ""
+    },
+    {
+      "id": "l_pub",
+      "name": "Pub",
+      "description": "Pub",
+      "tag_prompt": "indoors, old pub, whisky glasses, fireplace, wooden booth",
+      "mood": ""
+    },
+    {
+      "id": "l_airport",
+      "name": "Letiště",
+      "description": "Letiště",
+      "tag_prompt": "indoors, airport, departure gate, large windows, plane, grey sky",
+      "mood": ""
+    }
+  ]
+}

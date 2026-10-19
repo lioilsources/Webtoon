@@ -1,0 +1,235 @@
+{
+  "title": "Toulky po plážích Bali",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_cliff",
+      "characters": [],
+      "visual_tags": [
+        "sunset over ocean",
+        "cliffs",
+        "waves"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Uluwatu. Slunce zapadá nad útesem.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "meiling"
+        }
+      ],
+      "visual_tags": [
+        "walking along beach path",
+        "sundress blowing in wind",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "sitting on motor scooter",
+        "grinning",
+        "offering spare helmet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "daniel",
+          "text": "Chceš vidět nejhezčí vodopád na ostrově? Naskoč.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "meiling"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "riding motor scooter together",
+        "woman holding his waist",
+        "laughing",
+        "wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_waterfall",
+      "characters": [
+        {
+          "id": "meiling"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at waterfall",
+        "mist",
+        "holding hands",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "meiling",
+          "text": "Tohle je jako sen.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "daniel",
+          "text": "Sny jsou na Bali zadarmo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "evening"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "candlelit villa",
+        "standing close",
+        "faces close",
+        "warm light",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "meiling",
+          "outfit": "evening"
+        },
+        {
+          "id": "daniel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "candlelight",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [],
+      "visual_tags": [
+        "candles burning down",
+        "sheer curtain blowing in wind",
+        "jungle night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Závěs se vlní v nočním větru. Svíčky dohořívají.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "meiling"
+        }
+      ],
+      "visual_tags": [
+        "dawn",
+        "standing alone on terrace",
+        "finding note and crumpled banknote on table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "meiling"
+        }
+      ],
+      "visual_tags": [
+        "reading note",
+        "tears in eyes",
+        "holding paper",
+        "dawn light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "„Bylo to skvělé, ale já nehledám závazky. Šťastnou cestu, D.“",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "meiling",
+          "text": "Myslela jsem, že to znamenalo něco víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

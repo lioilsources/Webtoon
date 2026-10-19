@@ -1,0 +1,97 @@
+{
+  "id": "w_rf_08_budapest",
+  "title": "Budapešť – Lázně a druhá šance",
+  "synopsis": "Peter přijede do Budapešti sám a v lázních potká architektku Annu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "art_nouveau_mucha",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_baths",
+      "l_city",
+      "l_balcony",
+      "l_lobby"
+    ]
+  },
+  "characters": [
+    {
+      "id": "peter",
+      "name": "Peter",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall mature British manager aged 45 with greying hair, still athletic",
+      "base": "mature male, tall, athletic, grey hair, short hair, blue eyes",
+      "outfits": {
+        "default": "white bathrobe, white towel over shoulder",
+        "city": "navy wool overcoat, grey turtleneck, dark trousers",
+        "evening": "dark blazer, white shirt, buttoned shirt"
+      },
+      "photo": "a tall mature British manager aged 45 with greying hair, still athletic",
+      "tag_prompt": "mature male, tall, athletic, grey hair, short hair, blue eyes, white bathrobe, white towel over shoulder",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "anna",
+      "name": "Anna",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant curvy Hungarian woman aged 39 with wavy brown hair, an architect",
+      "base": "adult, mature female, curvy, long hair, wavy hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "white bathrobe, hair in bun",
+        "city": "burgundy wool coat, cream silk scarf, leather gloves, ankle boots",
+        "evening": "deep green velvet dress, pearl earrings, hair down"
+      },
+      "photo": "an elegant curvy Hungarian woman aged 39 with wavy brown hair, an architect",
+      "tag_prompt": "adult, mature female, curvy, long hair, wavy hair, brown hair, brown eyes, white bathrobe, hair in bun",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_baths",
+      "name": "Lázně",
+      "description": "Lázně",
+      "tag_prompt": "indoors, art nouveau thermal bath, ornate columns, mosaic, steam, pool, glass ceiling",
+      "mood": ""
+    },
+    {
+      "id": "l_city",
+      "name": "Večerní Budapešť",
+      "description": "Večerní Budapešť",
+      "tag_prompt": "outdoors, budapest, chain bridge, danube, parliament lit up, evening, street lamps",
+      "mood": ""
+    },
+    {
+      "id": "l_balcony",
+      "name": "Balkon hotelu",
+      "description": "Balkon hotelu",
+      "tag_prompt": "outdoors, hotel balcony, night, danube view, city lights",
+      "mood": ""
+    },
+    {
+      "id": "l_lobby",
+      "name": "Hotelová hala",
+      "description": "Hotelová hala",
+      "tag_prompt": "indoors, hotel lobby, art nouveau, morning, suitcase",
+      "mood": ""
+    }
+  ]
+}

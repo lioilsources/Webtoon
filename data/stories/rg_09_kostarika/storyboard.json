@@ -1,0 +1,267 @@
+{
+  "title": "Ztraceni v deštném pralese na Kostarice",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "rainforest",
+        "volcano",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kostarika. Pod sopkou Arenal prší.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "leaning into jeep engine",
+        "open hood",
+        "oil stains",
+        "rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "sophie"
+        },
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding drink",
+        "offering towel",
+        "man wiping hands",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophie",
+          "text": "Jsi neuvěřitelně zručný... Ve světě, ze kterého pocházím, muži neumí zatlouct ani hřebík.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "smudge of oil on cheek"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Já zase neumím mluvit na večírcích. Ale vím, jak dát věci do pořádku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "sophie"
+        },
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "engine running",
+        "smoke",
+        "cheering",
+        "high five"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BRRUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_spring",
+      "characters": [
+        {
+          "id": "sophie",
+          "outfit": "evening"
+        },
+        {
+          "id": "leo",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on stone edge of hot spring",
+        "feet in warm water",
+        "steam",
+        "lanterns",
+        "rain on palms"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer u termálního jezírka. Na palmy bubnuje déšť.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_spring",
+      "characters": [
+        {
+          "id": "sophie",
+          "outfit": "evening"
+        },
+        {
+          "id": "leo",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "her head on his shoulder",
+        "steam",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophie",
+          "text": "Nikdy jsem nechtěla, aby déšť přestal.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "leo",
+          "text": "Tak ať prší celou noc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_spring",
+      "characters": [
+        {
+          "id": "sophie",
+          "outfit": "evening"
+        },
+        {
+          "id": "leo",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "rain drops",
+        "lantern glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "bungalow window light switching off",
+        "rain",
+        "rainforest night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Světlo v bungalovu zhasne. Prší až do rána.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "sophie"
+        },
+        {
+          "id": "leo",
+          "outfit": "clean"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "driving jeep together",
+        "morning sun",
+        "laughing",
+        "rainforest road"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sophie",
+          "text": "Kam teď?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "leo",
+          "text": "Kamkoli. Džíp i já jsme opravení.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

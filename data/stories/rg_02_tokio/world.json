@@ -1,0 +1,87 @@
+{
+  "id": "w_rg_02_tokio",
+  "title": "Podzimní vystřízlivění v Tokiu",
+  "synopsis": "Sophia hledá v uspěchaném Tokiu někoho, s kým by zpomalila, a Kenji jí nabídne jedinou noc.",
+  "tone": "romantický, melancholický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_shibuya",
+      "l_gallery",
+      "l_apartment"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sophia",
+      "name": "Sophia van der Bilt",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall very slender Dutch woman aged 23, sleek blonde high ponytail, black turtleneck",
+      "base": "adult, tall female, very slender, blonde hair, long hair, high ponytail, sleek hair, blue eyes",
+      "outfits": {
+        "default": "black oversized turtleneck, black leather pencil skirt, black thigh-high boots, stiletto heels, high ponytail",
+        "morning": "black oversized turtleneck, black leather pencil skirt, hair down, barefoot, wrapped in blanket"
+      },
+      "photo": "a tall very slender Dutch woman aged 23, sleek blonde high ponytail, black turtleneck",
+      "tag_prompt": "adult, tall female, very slender, blonde hair, long hair, high ponytail, sleek hair, blue eyes, black oversized turtleneck, black leather pencil skirt, black thigh-high boots, stiletto heels, high ponytail",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kenji",
+      "name": "Kenji Sato",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular Japanese man aged 29, short black hair, sharp jawline, black leather jacket",
+      "base": "mature male, tall, muscular, black hair, short hair, dark eyes, sharp jawline",
+      "outfits": {
+        "default": "black leather jacket, white t-shirt, dark jeans, boots",
+        "morning": "black leather jacket, white t-shirt, dark jeans, fastening wristwatch"
+      },
+      "photo": "a tall muscular Japanese man aged 29, short black hair, sharp jawline, black leather jacket",
+      "tag_prompt": "mature male, tall, muscular, black hair, short hair, dark eyes, sharp jawline, black leather jacket, white t-shirt, dark jeans, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_shibuya",
+      "name": "Šibuja",
+      "description": "Šibuja",
+      "tag_prompt": "outdoors, shibuya, tokyo, night, rain, wet pavement, giant neon signs, crowd with umbrellas, reflections",
+      "mood": ""
+    },
+    {
+      "id": "l_gallery",
+      "name": "Před galerií",
+      "description": "Před galerií",
+      "tag_prompt": "outdoors, art gallery entrance, glass door, rain, neon light, tokyo, night",
+      "mood": ""
+    },
+    {
+      "id": "l_apartment",
+      "name": "Apartmán v Roppongi",
+      "description": "Apartmán v Roppongi",
+      "tag_prompt": "indoors, high-rise apartment, floor-to-ceiling window, tokyo night skyline, minimalist interior, city lights",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "title": "Dubaj – Jachta",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_marina",
+      "characters": [],
+      "visual_tags": [
+        "yachts",
+        "skyscrapers",
+        "sunny"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dubaj. Marina.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "looking around",
+        "holding paper",
+        "confused",
+        "sunglasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "lila"
+        },
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman stepping out of luxury car",
+        "man turning to her"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "omar",
+          "text": "Nevíte, kde je jachta pana Hamada?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lila",
+          "text": "Vím. Ale nejdřív mi řekněte, proč máte na veletrh tak dokonalou košili.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "omar"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "omar",
+          "text": "Protože mi sluší.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "evening"
+        },
+        {
+          "id": "omar",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "champagne glasses",
+        "city lights",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Omare, zůstaň na večeři.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "omar",
+          "text": "Zůstanu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "evening"
+        },
+        {
+          "id": "omar",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man giving rose",
+        "stars",
+        "skyline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "omar",
+          "text": "Lilo, jsi nejkrásnější žena v Dubaji.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lila",
+          "text": "A ty nejlepší mechanik.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "evening"
+        },
+        {
+          "id": "omar",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "cabin door",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Brýle, lodičky a šperky na stolku.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "evening"
+        },
+        {
+          "id": "omar",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "dubai skyline at night",
+        "yacht lights",
+        "calm water"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dubaj svítí až do rána.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

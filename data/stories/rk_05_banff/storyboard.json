@@ -1,0 +1,293 @@
+{
+  "title": "Banff – Ledová řeka, horké koleno",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "forest trail",
+        "mountains",
+        "stream"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Banff. Lesní stezka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "freya"
+        }
+      ],
+      "visual_tags": [
+        "falling off bicycle into stream",
+        "splash",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠPLOUCH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "wet"
+        },
+        {
+          "id": "callum"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man pulling woman out of water by hand",
+        "rocks",
+        "wet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "callum",
+          "text": "V Norsku vás učí plavat v ledovci?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "wet"
+        }
+      ],
+      "visual_tags": [
+        "teeth chattering",
+        "wearing his leather jacket",
+        "defiant smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freya",
+          "text": "Ne. Učí nás vypadat dobře při umírání.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "socks thrown across room",
+        "wet sweater drying by fire",
+        "door ajar",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mokré vrstvy za dveřmi. Smích. Létající ponožky.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HA HA!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "cabin"
+        },
+        {
+          "id": "callum",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "holding tea mugs",
+        "wrapped in blanket",
+        "comfortable silence"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dlouhé ticho, které není trapné.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "cabin"
+        },
+        {
+          "id": "callum",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "forehead touch",
+        "firelight",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "fire glowing embers",
+        "dark cabin",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "callum",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "holding two coffee mugs",
+        "pink mountains behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "callum",
+          "text": "Zůstaň ještě den.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "wrapped in blanket",
+        "teasing look"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freya",
+          "text": "A pak?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "callum",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "eagle in sky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "callum",
+          "text": "Pak tě naučím, že Skotsko je hezčí než Norsko. Bude to trvat. Roky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "freya",
+          "outfit": "cabin"
+        },
+        {
+          "id": "callum",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug at sunrise",
+        "hair blowing loose",
+        "mountains"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freya",
+          "text": "Dobře. Začni dnes.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

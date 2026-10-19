@@ -1,0 +1,95 @@
+{
+  "id": "w_ri_08_dubaj",
+  "title": "Dubaj – Jachta",
+  "synopsis": "Mechanik Omar hledá na veletrhu jachtu pana Hamada a najde Lilu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_marina",
+      "l_yacht",
+      "l_deck",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "omar",
+      "name": "Omar",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Moroccan mechanic aged 35, short black hair, beard, crisp white shirt and aviators",
+      "base": "mature male, muscular, beard, short hair, black hair, tan, dark eyes, sunglasses",
+      "outfits": {
+        "default": "crisp white shirt, dark trousers, aviator sunglasses",
+        "evening": "black shirt, dark trousers, silver watch"
+      },
+      "photo": "a muscular Moroccan mechanic aged 35, short black hair, beard, crisp white shirt and aviators",
+      "tag_prompt": "mature male, muscular, beard, short hair, black hair, tan, dark eyes, sunglasses, crisp white shirt, dark trousers, aviator sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Iranian woman aged 30, long wavy black hair, beige wrap dress and gold jewelry",
+      "base": "adult, tall female, athletic, long hair, black hair, wavy hair, brown eyes",
+      "outfits": {
+        "default": "beige wrap dress, stiletto heels, gold jewelry, sunglasses",
+        "evening": "black satin evening gown, gold earrings, stiletto heels"
+      },
+      "photo": "a tall athletic Iranian woman aged 30, long wavy black hair, beige wrap dress and gold jewelry",
+      "tag_prompt": "adult, tall female, athletic, long hair, black hair, wavy hair, brown eyes, beige wrap dress, stiletto heels, gold jewelry, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_marina",
+      "name": "Marina",
+      "description": "Marina",
+      "tag_prompt": "outdoors, dubai marina, yachts, skyscrapers, sunny, palm trees, luxury car",
+      "mood": ""
+    },
+    {
+      "id": "l_yacht",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "indoors, luxury yacht lounge, champagne glasses, evening, city lights through windows",
+      "mood": ""
+    },
+    {
+      "id": "l_deck",
+      "name": "Paluba",
+      "description": "Paluba",
+      "tag_prompt": "outdoors, yacht deck, night, stars, dubai skyline, city lights",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin door, night, warm light",
+      "mood": ""
+    }
+  ]
+}

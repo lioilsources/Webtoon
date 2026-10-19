@@ -1,0 +1,329 @@
+{
+  "title": "Kjóto – Déšť mezi sakurami",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_street",
+      "characters": [],
+      "visual_tags": [
+        "cherry blossoms",
+        "narrow street",
+        "petals falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kjóto. Jaro.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "riding bicycle",
+        "coat flowing",
+        "petals"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "crashing bicycle into bike rack",
+        "falling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BÁC!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman bending over man",
+        "concerned",
+        "man smiling sheepishly"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Jste v pořádku?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adrian",
+          "text": "Ano. Jen jsem se snažil sledovat vás.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "blush",
+        "looking away",
+        "adjusting glasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "rain"
+        },
+        {
+          "id": "adrian",
+          "outfit": "rain"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hiking",
+        "rain",
+        "running to shelter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Výlet do hor. Déšť.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "rain"
+        },
+        {
+          "id": "adrian",
+          "outfit": "rain"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "under shelter",
+        "man handing towel",
+        "woman holding wet coat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsi nádherná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "To říkáš jen proto, že prší.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adrian",
+          "text": "Právě proto.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "rain"
+        },
+        {
+          "id": "adrian",
+          "outfit": "rain"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "rain",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ryokan",
+      "characters": [
+        {
+          "id": "maya",
+          "outfit": "silk"
+        },
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting side by side on tatami",
+        "embrace",
+        "paper lamp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Zítra odjíždíš.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adrian",
+          "text": "Ano.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Tak na zítřek nemysleme.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ryokan",
+      "characters": [],
+      "visual_tags": [
+        "paper lamp turned off",
+        "shoji screen",
+        "two silhouettes embracing behind shoji",
+        "dark"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zhasnou lampu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "adrian",
+          "outfit": "travel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "platform",
+        "man holding suitcase",
+        "facing each other"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Počkej na mě.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Jak dlouho?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "adrian",
+          "text": "Nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "standing alone on platform",
+        "train leaving",
+        "from behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vlak odjíždí. Maya zůstane stát.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "w_rj_10_seychely",
+  "title": "Kuchař a architektka",
+  "synopsis": "Architektka Freja přijela navrhnout kuchyň resortu a šéfkuchař Elias jí ukáže, co se navrhnout nedá.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "anime_screencap",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Freja zůstane a v plánu přibude okno na moře."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kitchen",
+      "l_rocks",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "elias",
+      "name": "Elias Mwangi",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Kenyan head chef aged 33, muscular, short hair, crisp white chef jacket",
+      "base": "mature male, dark-skinned male, dark skin, muscular, short hair, black hair, brown eyes, warm smile",
+      "outfits": {
+        "default": "crisp white chef jacket, black trousers, chef apron",
+        "evening": "white linen shirt, beige trousers"
+      },
+      "photo": "a Kenyan head chef aged 33, muscular, short hair, crisp white chef jacket",
+      "tag_prompt": "mature male, dark-skinned male, dark skin, muscular, short hair, black hair, brown eyes, warm smile, crisp white chef jacket, black trousers, chef apron",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "freja",
+      "name": "Freja Sørensen",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender Danish architect aged 29, platinum pixie cut, icy blue eyes, black jumpsuit",
+      "base": "adult, tall female, slender, very short hair, platinum blonde hair, pixie cut, blue eyes",
+      "outfits": {
+        "default": "black sleeveless jumpsuit, minimalist silver jewelry, tablet in hand",
+        "evening": "white silk slip dress over white t-shirt, silver cuff, barefoot",
+        "night": "long white linen shirt dress, silver cuff, chef jacket over shoulders"
+      },
+      "photo": "a tall slender Danish architect aged 29, platinum pixie cut, icy blue eyes, black jumpsuit",
+      "tag_prompt": "adult, tall female, slender, very short hair, platinum blonde hair, pixie cut, blue eyes, black sleeveless jumpsuit, minimalist silver jewelry, tablet in hand",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kitchen",
+      "name": "Kuchyně resortu",
+      "description": "Kuchyně resortu",
+      "tag_prompt": "indoors, open kitchen, resort, spices, pots, window, ocean view, afternoon",
+      "mood": ""
+    },
+    {
+      "id": "l_rocks",
+      "name": "Pláž s balvany",
+      "description": "Pláž s balvany",
+      "tag_prompt": "outdoors, la digue, granite boulders, turquoise sea, beach, sunset, blanket, plates of food",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa",
+      "description": "Terasa",
+      "tag_prompt": "outdoors, terrace, granite boulders, night, moon over ocean, waves, lantern",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "w_rf_02_kyoto",
+  "title": "Kjóto – Déšť mezi sakurami",
+  "synopsis": "Maya jede na kole Kjótem a britský fotograf Adrian kvůli ní narazí do stojanu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_street",
+      "l_forest",
+      "l_ryokan",
+      "l_station"
+    ]
+  },
+  "characters": [
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite slender Japanese woman aged 28 with a short black bob and glasses, minimalist style",
+      "base": "adult, mature female, petite, slender, short hair, black hair, bob cut, glasses, dark eyes",
+      "outfits": {
+        "default": "long camel coat, black turtleneck, wide trousers, ankle boots",
+        "rain": "long grey coat, wet hair, black turtleneck, ankle boots",
+        "silk": "simple ivory silk dress, long sleeves, hair tucked behind ear"
+      },
+      "photo": "a petite slender Japanese woman aged 28 with a short black bob and glasses, minimalist style",
+      "tag_prompt": "adult, mature female, petite, slender, short hair, black hair, bob cut, glasses, dark eyes, long camel coat, black turtleneck, wide trousers, ankle boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular British photographer aged 35 with light brown hair, field jacket and a camera",
+      "base": "mature male, tall, muscular, light brown hair, short hair, blue eyes",
+      "outfits": {
+        "default": "olive field jacket, grey henley shirt, dark jeans, camera strap, camera",
+        "rain": "dark rain jacket, wet hair, camera bag",
+        "travel": "navy wool coat, grey sweater, suitcase"
+      },
+      "photo": "a tall muscular British photographer aged 35 with light brown hair, field jacket and a camera",
+      "tag_prompt": "mature male, tall, muscular, light brown hair, short hair, blue eyes, olive field jacket, grey henley shirt, dark jeans, camera strap, camera",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_street",
+      "name": "Ulička",
+      "description": "Ulička",
+      "tag_prompt": "outdoors, narrow street, kyoto, wooden houses, cherry blossoms, bicycle, spring",
+      "mood": ""
+    },
+    {
+      "id": "l_forest",
+      "name": "Hory",
+      "description": "Hory",
+      "tag_prompt": "outdoors, mountain forest, rain, small wooden shelter, mist, cedar trees",
+      "mood": ""
+    },
+    {
+      "id": "l_ryokan",
+      "name": "Ryokan",
+      "description": "Ryokan",
+      "tag_prompt": "indoors, ryokan, tatami, shoji, paper lamp, evening, traditional room",
+      "mood": ""
+    },
+    {
+      "id": "l_station",
+      "name": "Nádraží",
+      "description": "Nádraží",
+      "tag_prompt": "indoors, train station platform, morning, shinkansen, departing train",
+      "mood": ""
+    }
+  ]
+}

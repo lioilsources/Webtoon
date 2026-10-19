@@ -1,0 +1,307 @@
+{
+  "title": "Marrákeš – Spa",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "wide",
+      "location_id": "l_souk",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "looking at jewelry stall",
+        "holding necklace"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_souk",
+      "characters": [
+        {
+          "id": "karim"
+        }
+      ],
+      "visual_tags": [
+        "repairing scooter",
+        "kneeling",
+        "wrench",
+        "looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_souk",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "karim"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "talking",
+        "man standing up",
+        "wiping hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Nevíte, kde je spa?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "karim",
+          "text": "Vím. Ale nejdřív si dejte čaj.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_souk",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "karim"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "mint tea glasses",
+        "smiling",
+        "playful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "To je vydírání.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "karim",
+          "text": "To je pohostinnost.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_spa",
+      "characters": [
+        {
+          "id": "sara",
+          "outfit": "robe"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "steam",
+        "relaxed",
+        "mosaic tiles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "karim",
+          "text": "Proč tady vlastně jste?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sara",
+          "text": "Hledám klid.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_spa",
+      "characters": [
+        {
+          "id": "karim"
+        }
+      ],
+      "visual_tags": [
+        "leaning at arch",
+        "holding wrench",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "karim",
+          "text": "Opravuju skútr majitele. A vy?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pool",
+      "characters": [
+        {
+          "id": "sara",
+          "outfit": "night"
+        },
+        {
+          "id": "karim",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by pool",
+        "lanterns",
+        "talking",
+        "woman laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pool",
+      "characters": [
+        {
+          "id": "karim",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "serious",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "karim",
+          "text": "Sáro, jsi krásná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pool",
+      "characters": [
+        {
+          "id": "sara",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "teasing smile",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "To říkáš každé turistce?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "karim",
+          "text": "Ne. Ale ty odjíždíš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "sara",
+          "outfit": "night"
+        },
+        {
+          "id": "karim",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "carved door",
+        "lanterns"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_door",
+      "characters": [],
+      "visual_tags": [
+        "carved wooden door closed",
+        "lantern",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře se zavřou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "karim"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman in taxi window",
+        "man waving from distance",
+        "morning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno Sára odjíždí. Karim mává z dálky. Nedá se nic dělat.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

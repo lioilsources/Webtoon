@@ -1,0 +1,302 @@
+{
+  "title": "Bali – Cyklista a žena z džungle",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_road",
+      "characters": [],
+      "visual_tags": [
+        "rice terraces",
+        "mountain road",
+        "jungle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bali. Horská cesta dolů.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "ethan"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "riding bicycles downhill side by side",
+        "speed lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Pomaleji!",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Bojíš se?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "O tebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "grinning",
+        "wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hut",
+      "characters": [],
+      "visual_tags": [
+        "storm",
+        "lightning",
+        "rain on jungle",
+        "small hut"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "ethan",
+          "outfit": "rain"
+        },
+        {
+          "id": "sari",
+          "outfit": "rain"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman handing towel",
+        "man taking off wet jacket",
+        "rain outside"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Jsi pořád přesvědčený, že rychleji je lepší?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "ethan",
+          "outfit": "rain"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "soft expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Teď chci, aby tenhle okamžik trval co nejdéle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_falls",
+      "characters": [
+        {
+          "id": "ethan"
+        },
+        {
+          "id": "sari",
+          "outfit": "waterfall"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at waterfall",
+        "mist",
+        "rainbow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_falls",
+      "characters": [
+        {
+          "id": "ethan"
+        },
+        {
+          "id": "sari",
+          "outfit": "waterfall"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "waterfall mist"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Tohle bylo za co?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Za to, že jsi konečně zpomalil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_airport",
+      "characters": [
+        {
+          "id": "ethan",
+          "outfit": "travel"
+        },
+        {
+          "id": "sari",
+          "outfit": "waterfall"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "sad",
+        "evening"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Vrátíš se?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Ano.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Slibuješ?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Slibuju.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "riding bicycle on same road",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O rok později jede Ethan stejnou cestou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_falls",
+      "characters": [
+        {
+          "id": "sari",
+          "outfit": "waterfall"
+        }
+      ],
+      "visual_tags": [
+        "waiting at waterfall",
+        "smiling",
+        "turning around"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sari čeká u vodopádu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

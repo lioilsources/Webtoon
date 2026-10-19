@@ -1,0 +1,284 @@
+{
+  "title": "Santorini – Bílé stěny, modrá krev",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_road",
+      "characters": [],
+      "visual_tags": [
+        "caldera",
+        "white houses",
+        "blue domes",
+        "sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Santorini. Silnice po hraně kaldery.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "standing next to bicycle with flat tire",
+        "hands on hips",
+        "annoyed"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PSSS!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "looking around",
+        "empty road",
+        "sigh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Uprostřed ničeho. Skvělé.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "nikos"
+        }
+      ],
+      "visual_tags": [
+        "leaning out of old van window",
+        "grinning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Turistko, tady nejezdí autobusy. Jen osud. A ten dnes vypadá jako já.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "nikos"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "loading bicycle into van",
+        "laughing",
+        "sunny"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_winery",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "evening"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "wine tasting",
+        "holding wine glasses",
+        "barrels",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Degustace. Z dálky buzuki.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_winery",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "evening"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing between barrels",
+        "man spinning woman",
+        "dress swirling",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "♪",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dome",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "slowly removing headscarf",
+        "hair in wind",
+        "city lights",
+        "looking back"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dome",
+      "characters": [
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "hands in pockets",
+        "respectful",
+        "soft gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Můžu?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dome",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "playful smile",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Můžeš. Ale zítra mě svezeš na kole dolů. Na zadním sedadle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dome",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "evening"
+        },
+        {
+          "id": "nikos",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss under blue dome",
+        "stars",
+        "silhouette"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dome",
+      "characters": [],
+      "visual_tags": [
+        "starry sky over santorini",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstala. Vinárna má teď francouzský název a řecké srdce.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

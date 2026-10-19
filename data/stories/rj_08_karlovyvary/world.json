@@ -1,0 +1,88 @@
+{
+  "id": "w_rj_08_karlovyvary",
+  "title": "Lázně v Karlových Varech",
+  "synopsis": "Lékař Viktor přijel do lázní za klidem a švédská fyzioterapeutka Greta mu ho rozbije za pět minut.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "vintage_poster",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Viktor pojede do Stockholmu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_colonnade",
+      "l_spa",
+      "l_river"
+    ]
+  },
+  "characters": [
+    {
+      "id": "viktor",
+      "name": "Viktor Malý",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech doctor aged 41, tall, greying hair, thin-framed glasses, worn grey sweater",
+      "base": "mature male, tall, greying hair, short hair, thin-framed glasses, serious, clean shaven",
+      "outfits": {
+        "default": "worn grey knit sweater, collared shirt, wool trousers, thin glasses",
+        "coat": "camel wool overcoat, grey knit sweater, scarf"
+      },
+      "photo": "a Czech doctor aged 41, tall, greying hair, thin-framed glasses, worn grey sweater",
+      "tag_prompt": "mature male, tall, greying hair, short hair, thin-framed glasses, serious, clean shaven, worn grey knit sweater, collared shirt, wool trousers, thin glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "greta",
+      "name": "Greta Lindqvist",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Swedish physiotherapist aged 38, sandy blonde ponytail, fitted knit dress under an open trench coat",
+      "base": "adult, curvy, sandy blonde hair, ponytail, blue eyes, confident smile",
+      "outfits": {
+        "default": "fitted navy knit dress, open white trench coat, ankle boots",
+        "spa": "white spa robe tied at waist, hair in high ponytail",
+        "evening": "fitted burgundy knit dress, long cream coat, hair down"
+      },
+      "photo": "a Swedish physiotherapist aged 38, sandy blonde ponytail, fitted knit dress under an open trench coat",
+      "tag_prompt": "adult, curvy, sandy blonde hair, ponytail, blue eyes, confident smile, fitted navy knit dress, open white trench coat, ankle boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_colonnade",
+      "name": "Kolonáda",
+      "description": "Kolonáda",
+      "tag_prompt": "outdoors, colonnade, spa town, karlovy vary, mist over river, morning, columns, hot spring fountain",
+      "mood": ""
+    },
+    {
+      "id": "l_spa",
+      "name": "Lázeňský dům",
+      "description": "Lázeňský dům",
+      "tag_prompt": "indoors, spa hall, marble, steam, mineral pool, columns, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_river",
+      "name": "Pod vřídly",
+      "description": "Pod vřídly",
+      "tag_prompt": "outdoors, riverside promenade, night, lanterns, steam from hot spring, autumn leaves",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+  "title": "Tanec na Bali",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_stage",
+      "characters": [],
+      "visual_tags": [
+        "sunset over ocean",
+        "torches"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bali, Uluwatu. Soumrak.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stage",
+      "characters": [
+        {
+          "id": "ayu"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "traditional dance",
+        "graceful hands",
+        "elegant pose"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stage",
+      "characters": [
+        {
+          "id": "noah"
+        }
+      ],
+      "visual_tags": [
+        "sitting in back row",
+        "surfboard beside",
+        "captivated",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "noah",
+          "text": "Poprvé za rok nekoukám do telefonu.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stage",
+      "characters": [
+        {
+          "id": "ayu"
+        },
+        {
+          "id": "noah"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man approaching after dance",
+        "woman smiling",
+        "torchlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "noah",
+          "text": "Nevím, co ten tanec znamenal. Ale cítil jsem ho tady.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ayu",
+          "text": "Jste první host, který neříká „krásné“. Všichni říkají „krásné“.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stage",
+      "characters": [
+        {
+          "id": "noah"
+        }
+      ],
+      "visual_tags": [
+        "grin",
+        "embarrassed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "noah",
+          "text": "Jsem Australan. „Krásné“ nám trvá dvě hodiny. „Cítil jsem“ jde rychle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stage",
+      "characters": [
+        {
+          "id": "ayu"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "flower in hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Zítra v šest je odliv. Půjčím vám prkno.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "noah",
+          "text": "A co tanec pro vás?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_waves",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "surf"
+        },
+        {
+          "id": "noah",
+          "outfit": "surf"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on surfboards side by side",
+        "wet",
+        "laughing",
+        "morning sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Máte dobrou rovnováhu. Na Australana.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_waves",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "surf"
+        },
+        {
+          "id": "noah",
+          "outfit": "surf"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "looking at each other",
+        "serious",
+        "water sparkles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Já tady žiju, Noahu. A hosté odjíždějí.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "noah",
+          "text": "Nemám zpáteční letenku. Měl jsem. Propadla.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "evening"
+        },
+        {
+          "id": "noah",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on blanket",
+        "oil lamp",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Bojím se. Tady se hosté zamilují do západu slunce, ne do ženy.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "noah",
+          "text": "Nezapisuju si do paměti jednu noc. Zapisuju roky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "ayu",
+          "outfit": "evening"
+        },
+        {
+          "id": "noah",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "embrace",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ayu",
+          "text": "Zůstaň. Ne jako host. Jako můj.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "noah",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hut",
+      "characters": [],
+      "visual_tags": [
+        "lanterns glowing",
+        "hut in darkness",
+        "stars",
+        "two pairs of footprints in sand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampiony nechali hořet až do rána.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

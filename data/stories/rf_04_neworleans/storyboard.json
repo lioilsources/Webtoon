@@ -1,0 +1,341 @@
+{
+  "title": "New Orleans – Zrzka a jazzový klub",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_club",
+      "characters": [],
+      "visual_tags": [
+        "piano on stage",
+        "smoke",
+        "spotlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "New Orleans. Klub, kde hraje jazz.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "full body",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "emma"
+        }
+      ],
+      "visual_tags": [
+        "entering club",
+        "standing in doorway",
+        "looking around"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "playing piano",
+        "spotlight",
+        "looking up",
+        "eyes meeting"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "♪",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_club",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man standing by woman's table",
+        "offering hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Tančíte?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "emma",
+          "text": "Jen když se mi líbí hudba.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "Tak dnes máte štěstí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dancing in street",
+        "laughing",
+        "gas lamps"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "street"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding boots",
+        "barefoot",
+        "man laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Bolí?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "emma",
+          "text": "Krása něco stojí.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "Tak příště přijďte v teniskách.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "street"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman smiling",
+        "man shy smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Příště?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "Doufal jsem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_backstage",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "james",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man tucking strand of hair behind her ear",
+        "mirror lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Proč se na mě tak díváš?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "Protože se bojím, že když mrknu, zmizíš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_backstage",
+      "characters": [
+        {
+          "id": "emma"
+        },
+        {
+          "id": "james",
+          "outfit": "night"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "travel"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman with suitcase",
+        "man in doorway",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "james",
+          "text": "Takže odjíždíš.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "emma",
+          "text": "Ano.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "james",
+          "text": "A vrátíš se?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "emma",
+          "outfit": "travel"
+        },
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "woman's sad face over his shoulder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "emma",
+          "text": "Nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_door",
+      "characters": [
+        {
+          "id": "james"
+        }
+      ],
+      "visual_tags": [
+        "standing alone in doorway",
+        "empty street",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "James zůstane stát ve dveřích.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

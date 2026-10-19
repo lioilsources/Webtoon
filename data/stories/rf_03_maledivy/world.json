@@ -1,0 +1,96 @@
+{
+  "id": "w_rf_03_maledivy",
+  "title": "Maledivy – Žena, která nevěřila na krásu",
+  "synopsis": "Módní návrhářka Sofia o sobě pochybuje, dokud ji Leon nezačne potkávat náhodou každý den.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_resort",
+      "l_beach",
+      "l_night",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Brazilian woman aged 34 with long dark curly hair and warm brown eyes, fashion designer",
+      "base": "adult, mature female, curvy, plus size, long hair, curly hair, dark brown hair, tan skin, brown eyes",
+      "outfits": {
+        "default": "elegant black evening gown, statement earrings, high heels, curly hair down",
+        "day": "white linen wrap dress, straw sun hat, gold bracelets, sandals",
+        "dance": "flowing coral chiffon dress, statement earrings, barefoot, hair loose"
+      },
+      "photo": "a curvy Brazilian woman aged 34 with long dark curly hair and warm brown eyes, fashion designer",
+      "tag_prompt": "adult, mature female, curvy, plus size, long hair, curly hair, dark brown hair, tan skin, brown eyes, elegant black evening gown, statement earrings, high heels, curly hair down",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "leon",
+      "name": "Leon",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall athletic German businessman aged 39 with short blonde hair, always perfectly groomed",
+      "base": "mature male, tall, athletic, blonde hair, short hair, blue eyes, clean-shaven",
+      "outfits": {
+        "default": "tailored cream dinner jacket, white shirt, buttoned shirt, black trousers",
+        "day": "light blue linen shirt, buttoned shirt, white chinos, sunglasses"
+      },
+      "photo": "a tall athletic German businessman aged 39 with short blonde hair, always perfectly groomed",
+      "tag_prompt": "mature male, tall, athletic, blonde hair, short hair, blue eyes, clean-shaven, tailored cream dinner jacket, white shirt, buttoned shirt, black trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_resort",
+      "name": "Resort",
+      "description": "Resort",
+      "tag_prompt": "outdoors, luxury resort, maldives, overwater villas, evening, lanterns, palm trees",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, white sand beach, turquoise water, morning, palm trees, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_night",
+      "name": "Pláž v noci",
+      "description": "Pláž v noci",
+      "tag_prompt": "outdoors, beach, night, torches, string lights, sea, stars",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa",
+      "description": "Terasa",
+      "tag_prompt": "outdoors, villa terrace, night, candle, ocean view, moonlight",
+      "mood": ""
+    }
+  ]
+}

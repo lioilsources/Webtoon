@@ -1,0 +1,381 @@
+{
+  "title": "Vancouver – Muž, který našel lásku v horách",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "mountains",
+        "hiking group in distance"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hory nad Vancouverem.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "tripping on rock",
+        "falling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "UPS!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man offering hand",
+        "woman sitting on ground",
+        "embarrassed laugh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "V pořádku?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "Moje důstojnost je mrtvá.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Tu můžeme pohřbít nahoře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking side by side",
+        "sunbeams",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Proč ses nikdy neoženil?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Čekal jsem.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "Na co?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Na ženu, která se mě zeptá na něco jiného než na počasí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "cabin"
+        },
+        {
+          "id": "marcus",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man handing mug",
+        "fireplace",
+        "woman wrapped in sweater"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Je ti zima?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "Trochu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "cabin"
+        },
+        {
+          "id": "marcus",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man pulling her close",
+        "sitting by fire",
+        "embrace"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Teď už ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "cabin"
+        },
+        {
+          "id": "marcus",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "firelight",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_valley",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman holding phone",
+        "crying",
+        "man concerned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno zavolají z Mexico City. Nabízejí jí práci.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "To je skvělá zpráva.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "Tak proč pláčeš?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_valley",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hug",
+        "tears"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Protože jsem právě našla něco, co nechci opustit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "wedding"
+        }
+      ],
+      "visual_tags": [
+        "arriving on bicycle",
+        "white dress",
+        "lakeside"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O rok později.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "wedding"
+        },
+        {
+          "id": "marcus",
+          "outfit": "wedding"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "wedding arch",
+        "smiling",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Přišla jsem pozdě?",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "marcus",
+          "text": "O rok.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "wedding"
+        },
+        {
+          "id": "marcus",
+          "outfit": "wedding"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "flowers",
+        "sunny"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

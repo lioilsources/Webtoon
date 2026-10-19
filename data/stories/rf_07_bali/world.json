@@ -1,0 +1,97 @@
+{
+  "id": "w_rf_07_bali",
+  "title": "Bali – Cyklista a žena z džungle",
+  "synopsis": "Australan Ethan sjíždí na kole balijské hory a průvodkyně Sari ho učí zpomalit.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "fantasy_colorlines",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_road",
+      "l_hut",
+      "l_falls",
+      "l_airport"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic tanned Australian man aged 31 with light brown hair",
+      "base": "mature male, athletic, tan, light brown hair, short hair, blue eyes",
+      "outfits": {
+        "default": "fitted cycling jersey, cycling shorts, bike helmet, sunglasses",
+        "rain": "wet cycling jersey, wet hair, holding towel",
+        "travel": "white linen shirt, buttoned shirt, khaki trousers, backpack"
+      },
+      "photo": "an athletic tanned Australian man aged 31 with light brown hair",
+      "tag_prompt": "mature male, athletic, tan, light brown hair, short hair, blue eyes, fitted cycling jersey, cycling shorts, bike helmet, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender athletic Indonesian woman aged 29 with long black hair, a local guide",
+      "base": "adult, slender, athletic, long hair, black hair, brown eyes, tan skin",
+      "outfits": {
+        "default": "fitted olive cycling top, black cycling leggings, bike helmet, long braid",
+        "rain": "wet olive top, black leggings, wet hair, braid",
+        "waterfall": "flowing batik sarong dress, frangipani flower in hair, long hair down"
+      },
+      "photo": "a slender athletic Indonesian woman aged 29 with long black hair, a local guide",
+      "tag_prompt": "adult, slender, athletic, long hair, black hair, brown eyes, tan skin, fitted olive cycling top, black cycling leggings, bike helmet, long braid",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_road",
+      "name": "Horská cesta",
+      "description": "Horská cesta",
+      "tag_prompt": "outdoors, mountain road, bali, rice terraces, jungle, bicycles, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_hut",
+      "name": "Chatka v džungli",
+      "description": "Chatka v džungli",
+      "tag_prompt": "indoors, small wooden hut, jungle, storm outside, rain, dim light",
+      "mood": ""
+    },
+    {
+      "id": "l_falls",
+      "name": "Vodopád",
+      "description": "Vodopád",
+      "tag_prompt": "outdoors, waterfall, jungle, lush, mist, morning light",
+      "mood": ""
+    },
+    {
+      "id": "l_airport",
+      "name": "Rozloučení",
+      "description": "Rozloučení",
+      "tag_prompt": "outdoors, road, scooter, evening, palm trees",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "w_rj_07_rio",
+  "title": "Copacabana",
+  "synopsis": "Prodavač kokosů Thiago se ptá modelky Beatriz, proč je smutná, a ona neví, jak odpovědět.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance_artist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořký konec: Beatriz odletí, bar nikdy nevznikne."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_stand",
+      "l_bar",
+      "l_sand"
+    ]
+  },
+  "characters": [
+    {
+      "id": "thiago",
+      "name": "Thiago Alves",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Brazilian coconut seller aged 29, curly black hair, white t-shirt and denim shorts",
+      "base": "mature male, athletic, curly hair, black hair, brown eyes, tan skin, bright smile",
+      "outfits": {
+        "default": "yellow tank top over white t-shirt, denim shorts, sandals",
+        "night": "white t-shirt, denim shorts, shell bracelet"
+      },
+      "photo": "a Brazilian coconut seller aged 29, curly black hair, white t-shirt and denim shorts",
+      "tag_prompt": "mature male, athletic, curly hair, black hair, brown eyes, tan skin, bright smile, yellow tank top over white t-shirt, denim shorts, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "beatriz",
+      "name": "Beatriz Lima",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Brazilian model aged 27, waist-length straight black hair, flowing coral maxi dress",
+      "base": "adult, tall female, long legs, very long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "flowing coral maxi dress with high slit, oversized sunglasses, gold hoop earrings",
+        "night": "flowing ivory chiffon maxi dress, gold hoop earrings, hair down"
+      },
+      "photo": "a tall Brazilian model aged 27, waist-length straight black hair, flowing coral maxi dress",
+      "tag_prompt": "adult, tall female, long legs, very long hair, straight hair, black hair, brown eyes, flowing coral maxi dress with high slit, oversized sunglasses, gold hoop earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_stand",
+      "name": "Stánek",
+      "description": "Stánek",
+      "tag_prompt": "outdoors, copacabana beach, coconut stand, wave pattern promenade, afternoon, sea, palm trees",
+      "mood": ""
+    },
+    {
+      "id": "l_bar",
+      "name": "Bar na pláži",
+      "description": "Bar na pláži",
+      "tag_prompt": "outdoors, beach bar, night, string lights, caipirinha glasses, coconuts, samba",
+      "mood": ""
+    },
+    {
+      "id": "l_sand",
+      "name": "Prázdná pláž",
+      "description": "Prázdná pláž",
+      "tag_prompt": "outdoors, empty beach, night, moonlight, city lights in distance, waves",
+      "mood": ""
+    }
+  ]
+}

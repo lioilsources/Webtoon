@@ -1,0 +1,88 @@
+{
+  "id": "w_rk_06_rio",
+  "title": "Rio – Karneval mimo sezónu",
+  "synopsis": "Tanečník samby Rafael rozbije švédské architektce Ingrid tužku i plán na kontrolovaný život.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – Ingrid zůstane a kreslí křivky, které nikam nemusí vést."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_school",
+      "l_balcony"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rafael",
+      "name": "Rafael",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Brazilian samba dancer aged 34, curly black hair, warm smile, white linen shirt",
+      "base": "mature male, dark-skinned male, curly hair, black hair, brown eyes, athletic, smile",
+      "outfits": {
+        "default": "white linen shirt, buttoned, light trousers, barefoot",
+        "night": "dark silk shirt, buttoned, black trousers, gold chain"
+      },
+      "photo": "a Brazilian samba dancer aged 34, curly black hair, warm smile, white linen shirt",
+      "tag_prompt": "mature male, dark-skinned male, curly hair, black hair, brown eyes, athletic, smile, white linen shirt, buttoned, light trousers, barefoot",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ingrid",
+      "name": "Ingrid",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Swedish architect aged 30, short blonde hair, cat-eye glasses, tailored beige trousers",
+      "base": "adult, mature female, blonde hair, short hair, blue eyes, slim, cat-eye glasses",
+      "outfits": {
+        "default": "tailored beige trousers, white shirt, white sneakers, cat-eye glasses, sketchbook",
+        "dance": "red wrap dress, gold earrings, hair tucked behind ear",
+        "night": "black silk slip dress, pearl earrings"
+      },
+      "photo": "a Swedish architect aged 30, short blonde hair, cat-eye glasses, tailored beige trousers",
+      "tag_prompt": "adult, mature female, blonde hair, short hair, blue eyes, slim, cat-eye glasses, tailored beige trousers, white shirt, white sneakers, cat-eye glasses, sketchbook",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Copacabana",
+      "description": "Copacabana",
+      "tag_prompt": "outdoors, copacabana beach, wave pattern promenade, sand, palm trees, november, daytime",
+      "mood": ""
+    },
+    {
+      "id": "l_school",
+      "name": "Škola samby",
+      "description": "Škola samby",
+      "tag_prompt": "indoors, dance studio, samba school, colorful decorations, mirrors, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_balcony",
+      "name": "Balkon nad pláží",
+      "description": "Balkon nad pláží",
+      "tag_prompt": "outdoors, balcony, night, city lights, ocean, curtains blowing",
+      "mood": ""
+    }
+  ]
+}

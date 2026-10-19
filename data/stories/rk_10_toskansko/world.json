@@ -1,0 +1,88 @@
+{
+  "id": "w_rk_10_toskansko",
+  "title": "Toskánsko – Úroda",
+  "synopsis": "Realitní makléřka Petra přijede prodat usedlost vinaře Lorenza a zůstane déle, než by měla.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec – usedlost stažena z prodeje."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_yard",
+      "l_cellar"
+    ]
+  },
+  "characters": [
+    {
+      "id": "lorenzo",
+      "name": "Lorenzo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an Italian widower winemaker aged 42, salt-and-pepper beard, sun-worn face",
+      "base": "mature male, short hair, grey hair, salt and pepper beard, brown eyes, tan skin, strong hands",
+      "outfits": {
+        "default": "denim shirt, rolled sleeves, work trousers, leather boots",
+        "evening": "white linen shirt, dark waistcoat, dark trousers"
+      },
+      "photo": "an Italian widower winemaker aged 42, salt-and-pepper beard, sun-worn face",
+      "tag_prompt": "mature male, short hair, grey hair, salt and pepper beard, brown eyes, tan skin, strong hands, denim shirt, rolled sleeves, work trousers, leather boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "petra",
+      "name": "Petra",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Czech real-estate agent aged 37, long brown hair, blue eyes",
+      "base": "adult, mature female, brown hair, long hair, blue eyes",
+      "outfits": {
+        "default": "tailored pencil skirt, cream silk blouse, burgundy velvet pumps, leather folder",
+        "harvest": "denim shirt, rolled sleeves, jeans, rubber boots, hair in ponytail, grape stains",
+        "night": "ivory silk shirt, high-waisted trousers, hair down, pearl earrings"
+      },
+      "photo": "a Czech real-estate agent aged 37, long brown hair, blue eyes",
+      "tag_prompt": "adult, mature female, brown hair, long hair, blue eyes, tailored pencil skirt, cream silk blouse, burgundy velvet pumps, leather folder",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice v Chianti",
+      "description": "Vinice v Chianti",
+      "tag_prompt": "outdoors, vineyard, chianti, rows of grapevines, cypress trees, stone farmhouse, october, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_yard",
+      "name": "Dvůr pod fíkovníkem",
+      "description": "Dvůr pod fíkovníkem",
+      "tag_prompt": "outdoors, farmhouse courtyard, fig tree, string lights, wine crates, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_cellar",
+      "name": "Sklep se sudy",
+      "description": "Sklep se sudy",
+      "tag_prompt": "indoors, wine cellar, oak barrels, lantern, stone vault, night",
+      "mood": ""
+    }
+  ]
+}

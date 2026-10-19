@@ -1,0 +1,95 @@
+{
+  "id": "w_rg_07_rio",
+  "title": "Tajemná noc na Copacabaně",
+  "synopsis": "Boxer Carlos zastane Beatrice před dotěrou a ona v něm uvidí víc než rváče.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "western_comic",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "carlos",
+      "name": "Carlos Mendoza",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Brazilian boxer aged 28 with scars on his face, white linen shirt",
+      "base": "mature male, muscular, athletic, scar on face, scar on eyebrow, short hair, black hair, brown eyes, tan skin",
+      "outfits": {
+        "default": "white linen shirt, dark shorts, leather sandals",
+        "training": "grey tank top, black shorts, boxing hand wraps"
+      },
+      "photo": "a muscular Brazilian boxer aged 28 with scars on his face, white linen shirt",
+      "tag_prompt": "mature male, muscular, athletic, scar on face, scar on eyebrow, short hair, black hair, brown eyes, tan skin, white linen shirt, dark shorts, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "beatrice",
+      "name": "Beatrice Leclerc",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy French woman aged 26, dark curly hair, floral summer dress",
+      "base": "adult, mature female, petite, curvy, curly hair, dark brown hair, long hair, brown eyes",
+      "outfits": {
+        "default": "flowy floral summer dress, leather sandals, oversized sunglasses",
+        "evening": "blush pink silk dress, gold sandals, small gold hoops"
+      },
+      "photo": "a petite curvy French woman aged 26, dark curly hair, floral summer dress",
+      "tag_prompt": "adult, mature female, petite, curvy, curly hair, dark brown hair, long hair, brown eyes, flowy floral summer dress, leather sandals, oversized sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pest",
+      "name": "Dotěra",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a pushy young man with a cap and sunglasses",
+      "base": "young man, adult, smug, tank top, cap, sunglasses",
+      "outfits": {
+        "default": "tank top, baseball cap, sunglasses"
+      },
+      "photo": "a pushy young man with a cap and sunglasses",
+      "tag_prompt": "young man, adult, smug, tank top, cap, sunglasses, tank top, baseball cap, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Copacabana",
+      "description": "Copacabana",
+      "tag_prompt": "outdoors, copacabana beach, wave pattern mosaic promenade, palm trees, evening, warm wind, outdoor gym",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa v Santa Teresa",
+      "description": "Terasa v Santa Teresa",
+      "tag_prompt": "outdoors, rooftop terrace, small pool, candles, night, rio de janeiro lights, stars",
+      "mood": ""
+    }
+  ]
+}

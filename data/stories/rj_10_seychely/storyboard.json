@@ -1,0 +1,293 @@
+{
+  "title": "Kuchař a architektka",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_kitchen",
+      "characters": [],
+      "visual_tags": [
+        "open kitchen",
+        "steam",
+        "ocean beyond window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Seychely, La Digue.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "freja"
+        }
+      ],
+      "visual_tags": [
+        "holding tablet",
+        "professional",
+        "cool expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freja",
+          "text": "Vy jste šéfkuchař. Mám tu tři problémy s projektem vaší nové kuchyně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "elias"
+        }
+      ],
+      "visual_tags": [
+        "cooking at stove",
+        "not turning",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elias",
+          "text": "A já tři s tím vaším. Všechno krásné, ale není tam místo pro lidi. Kuchyň má mít okno na moře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "freja"
+        },
+        {
+          "id": "elias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man offering spoon with sauce",
+        "woman tasting",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elias",
+          "text": "Ochutnejte. Tohle je chutná kritika.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "freja",
+          "text": "To je nejlepší věc, co jsem tady měla.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kitchen",
+      "characters": [
+        {
+          "id": "elias"
+        }
+      ],
+      "visual_tags": [
+        "grin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elias",
+          "text": "Pak máte o tři problémy méně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rocks",
+      "characters": [
+        {
+          "id": "freja",
+          "outfit": "evening"
+        },
+        {
+          "id": "elias",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on blanket among boulders",
+        "plates of fish and mango",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freja",
+          "text": "Umím navrhnout dokonalý pokoj. Ale nedokázala bych říct, co dělá místo domovem.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elias",
+          "text": "Chutě. Vůně. Lidi, co tam vaří. Bez nich je to jen krabice.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rocks",
+      "characters": [
+        {
+          "id": "freja",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "warm eyes",
+        "soft smile",
+        "sunset light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elias",
+          "text": "Já lidi krmím, vy jim stavíte střechu. Stejná práce. Já chutí, vy betonem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "freja",
+          "outfit": "night"
+        },
+        {
+          "id": "elias",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "facing each other",
+        "foreheads touching",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "freja",
+          "text": "Bojím se, že si to budu pamatovat jako návrh. Ne jako život.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elias",
+          "text": "Tak nech navrhnout život. Já přidám chuť, ty linku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "freja",
+          "outfit": "night"
+        },
+        {
+          "id": "elias",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "kissing",
+        "moonlight",
+        "ocean"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [],
+      "visual_tags": [
+        "lantern going out",
+        "house door closed",
+        "moon over ocean",
+        "waves on granite"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Oceán dýchá dál. Nic neprozradí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "freja"
+        },
+        {
+          "id": "elias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "two coffee cups",
+        "tablet with pencil line drawn across plan",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno je v plánu nová čára tužkou: okno na moře.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

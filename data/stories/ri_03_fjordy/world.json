@@ -1,0 +1,96 @@
+{
+  "id": "w_ri_03_fjordy",
+  "title": "Norské fjordy – Jachta",
+  "synopsis": "Fotografka Tamara si na palubě připadá jako věž, kapitán Erik se podle ní orientuje jako podle majáku.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "thin_paint",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec: Tamara zůstává."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_salon",
+      "l_fog",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tamara",
+      "name": "Tamara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall athletic Brazilian woman aged 31, long straight black hair, camel coat and knee boots",
+      "base": "adult, tall female, athletic, tan skin, long hair, black hair, brown eyes",
+      "outfits": {
+        "default": "long camel wool coat, black turtleneck, knee boots, sunglasses",
+        "cozy": "oversized cream knit sweater, wool blanket, black leggings",
+        "dinner": "deep red knit dress, long gold earrings, knee boots"
+      },
+      "photo": "a tall athletic Brazilian woman aged 31, long straight black hair, camel coat and knee boots",
+      "tag_prompt": "adult, tall female, athletic, tan skin, long hair, black hair, brown eyes, long camel wool coat, black turtleneck, knee boots, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "erik",
+      "name": "Erik",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Norwegian yacht captain aged 35, short blond hair, full beard, navy fisherman sweater",
+      "base": "mature male, muscular, beard, blonde hair, short hair, blue eyes",
+      "outfits": {
+        "default": "navy cable knit fisherman sweater, beanie, dark jeans",
+        "evening": "grey henley shirt, dark jeans"
+      },
+      "photo": "a muscular Norwegian yacht captain aged 35, short blond hair, full beard, navy fisherman sweater",
+      "tag_prompt": "mature male, muscular, beard, blonde hair, short hair, blue eyes, navy cable knit fisherman sweater, beanie, dark jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba",
+      "description": "Paluba",
+      "tag_prompt": "outdoors, yacht deck, fjord, steep cliffs, waterfall, cold, overcast, sea",
+      "mood": ""
+    },
+    {
+      "id": "l_salon",
+      "name": "Salonek",
+      "description": "Salonek",
+      "tag_prompt": "indoors, yacht cabin lounge, wooden interior, blankets, wine, guitar, lamp, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_fog",
+      "name": "Ranní mlha",
+      "description": "Ranní mlha",
+      "tag_prompt": "outdoors, yacht deck, morning fog, fjord, coffee mugs, calm water",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin door, porthole, night, warm lamp",
+      "mood": ""
+    }
+  ]
+}

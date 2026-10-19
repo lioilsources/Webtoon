@@ -1,0 +1,87 @@
+{
+  "id": "w_rg_10_bergen",
+  "title": "Zimní samota v norských fjordech",
+  "synopsis": "Elena hledá úkryt před vichřicí ve skleněném domě bývalého boxera Neda.",
+  "tone": "romantický, melancholický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "minimal_flat",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_glass",
+      "l_aurora",
+      "l_port"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ned",
+      "name": "Edward „Ned“ Thorne",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a large former boxer aged 45 with a grey beard and deep wrinkles, heavy knit sweater",
+      "base": "mature male, large build, broad shoulders, beard, grey beard, wrinkles, short hair, grey hair",
+      "outfits": {
+        "default": "heavy knit sweater, dark leather trousers, boots"
+      },
+      "photo": "a large former boxer aged 45 with a grey beard and deep wrinkles, heavy knit sweater",
+      "tag_prompt": "mature male, large build, broad shoulders, beard, grey beard, wrinkles, short hair, grey hair, heavy knit sweater, dark leather trousers, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "elena",
+      "name": "Elena Vasylyk",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Ukrainian woman aged 27 with long wavy red hair, camel wool coat and plaid scarf",
+      "base": "adult, red hair, long hair, wavy hair, green eyes, pale skin",
+      "outfits": {
+        "default": "camel wool coat, plaid scarf, leather boots, snow on coat",
+        "indoor": "cream knit sweater, dark trousers, hair down",
+        "coat": "camel wool coat, plaid scarf, leather boots"
+      },
+      "photo": "a Ukrainian woman aged 27 with long wavy red hair, camel wool coat and plaid scarf",
+      "tag_prompt": "adult, red hair, long hair, wavy hair, green eyes, pale skin, camel wool coat, plaid scarf, leather boots, snow on coat",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_glass",
+      "name": "Skleněný dům nad fjordem",
+      "description": "Skleněný dům nad fjordem",
+      "tag_prompt": "indoors, modern glass house, wood stove, fjord view, snowy mountains, night, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_aurora",
+      "name": "Pod skleněnou střechou",
+      "description": "Pod skleněnou střechou",
+      "tag_prompt": "indoors, glass roof, green aurora borealis, northern lights, night sky, sofa, blankets",
+      "mood": ""
+    },
+    {
+      "id": "l_port",
+      "name": "Přístav v Bergenu",
+      "description": "Přístav v Bergenu",
+      "tag_prompt": "outdoors, bergen harbor, ferry, pier, snow, grey morning, colorful wooden houses",
+      "mood": ""
+    }
+  ]
+}

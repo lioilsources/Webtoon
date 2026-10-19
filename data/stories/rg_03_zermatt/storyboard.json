@@ -1,0 +1,233 @@
+{
+  "title": "Ztraceni ve švýcarských Alpách",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_storm",
+      "characters": [],
+      "visual_tags": [
+        "snowstorm",
+        "lonely chalet",
+        "glowing window"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zermatt. Venku zuří sněhová bouře.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "clara"
+        }
+      ],
+      "visual_tags": [
+        "taking off ski jacket",
+        "snow on shoulders",
+        "cheeks red from cold"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "lukas",
+          "outfit": "flannel"
+        }
+      ],
+      "visual_tags": [
+        "adding logs to fireplace",
+        "kneeling",
+        "looking over shoulder",
+        "fire light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "clara",
+          "outfit": "sweater"
+        }
+      ],
+      "visual_tags": [
+        "pulling off knit cap",
+        "blush",
+        "looking away",
+        "firelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "clara",
+          "text": "Vždycky jsem se styděla za to, jak moc jsem nápadná. Muži se mi většinou dívají jen na postavu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "clara",
+          "outfit": "sweater"
+        },
+        {
+          "id": "lukas",
+          "outfit": "flannel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man holding her face in his hands",
+        "gentle",
+        "looking into eyes",
+        "firelight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lukas",
+          "text": "Já se dívám do tvých očí, Claro. Jsi ta nejkrásnější žena, jakou tyhle hory kdy spatřily.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "clara",
+          "outfit": "sweater"
+        },
+        {
+          "id": "lukas",
+          "outfit": "flannel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting together on sheepskin rug by fireplace",
+        "wrapped in blanket",
+        "mugs of tea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bouře nepolevuje. Nikdo z nich to nelituje.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hut",
+      "characters": [
+        {
+          "id": "clara",
+          "outfit": "sweater"
+        },
+        {
+          "id": "lukas",
+          "outfit": "flannel"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "his hand in her red hair",
+        "firelight",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lukas",
+          "text": "Zůstaň se mnou... Dneska i navždy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hut",
+      "characters": [],
+      "visual_tags": [
+        "fireplace embers glowing",
+        "dark room",
+        "snow falling outside window",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Oheň dohasíná. Sníh padá až do rána.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "clara"
+        },
+        {
+          "id": "lukas"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing on terrace",
+        "holding hands",
+        "fresh snow",
+        "morning sun",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "clara",
+          "text": "Bouře skončila.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lukas",
+          "text": "Tak zůstaň kvůli výhledu. A kvůli mně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

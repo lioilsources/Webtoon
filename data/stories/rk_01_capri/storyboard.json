@@ -1,0 +1,292 @@
+{
+  "title": "Capri – Zlato a sůl",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_marina",
+      "characters": [],
+      "visual_tags": [
+        "yachts",
+        "harbor",
+        "lemon trees",
+        "cliffs",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Capri. Jachty cinkají, citronovníky voní.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "valentina"
+        }
+      ],
+      "visual_tags": [
+        "walking along harbor",
+        "holding scarf",
+        "confident smile",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Rozvod oslavím tím nejlepším jídlem života.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "valentina"
+        }
+      ],
+      "visual_tags": [
+        "silk scarf flying in wind",
+        "surprised",
+        "hand reaching"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FÍÍ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "mathias"
+        }
+      ],
+      "visual_tags": [
+        "sitting at cafe table",
+        "cocktail glass with silk scarf inside",
+        "amused",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mathias",
+          "text": "Buď je tohle nejlepší seznamka v Evropě, nebo se větru zalíbil můj drink.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_marina",
+      "characters": [
+        {
+          "id": "valentina"
+        },
+        {
+          "id": "mathias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman laughing",
+        "man handing back scarf",
+        "cafe table",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Větru. Ale vám nechám spropitné za inscenaci.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_boat",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "sea"
+        },
+        {
+          "id": "mathias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on stern of boat",
+        "feet in water",
+        "sunset",
+        "faraglioni rocks"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Plavba kolem Faraglioni.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_boat",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "sea"
+        }
+      ],
+      "visual_tags": [
+        "bare foot touching sea water",
+        "gold anklet",
+        "ripples"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_boat",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "sea"
+        },
+        {
+          "id": "mathias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "sunset backlight",
+        "eyes closed",
+        "wind in hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Polibek při západu slunce. Slaný, pomalý.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "valentina"
+        },
+        {
+          "id": "mathias"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing in doorway",
+        "man embracing woman from behind",
+        "chin on her shoulder",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "valentina",
+          "text": "Dnes žádné spěchání. Dnes si tě vychutnám jako večeři.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [],
+      "visual_tags": [
+        "closed door",
+        "lamp turned off",
+        "sheer curtains moving",
+        "moonlight on sea",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře se zavřou. Lampa zhasne. Moře doplétá příběh dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_boat",
+      "characters": [
+        {
+          "id": "valentina",
+          "outfit": "wedding"
+        },
+        {
+          "id": "mathias",
+          "outfit": "wedding"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "wedding on boat",
+        "holding hands",
+        "flowers",
+        "smiling",
+        "sunset",
+        "yachts"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O rok později se na stejné lodi berou.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "mathias",
+          "text": "Jachty pořád cinkají.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    }
+  ]
+}

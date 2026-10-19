@@ -1,0 +1,87 @@
+{
+  "id": "w_rj_04_istanbul",
+  "title": "Koberce v Istanbulu",
+  "synopsis": "Průvodkyně Selma uvěří obchodníkovi s koberci Canovi, dokud nepřečte vzor jeho dárku.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "art_nouveau_mucha",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořký konec: Selma odchází, Can zůstane sám."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bazaar",
+      "l_bosphorus",
+      "l_shop"
+    ]
+  },
+  "characters": [
+    {
+      "id": "selma",
+      "name": "Selma Aydın",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Turkish art historian aged 30, curly brown hair, almond eyes, long coat and gold earrings",
+      "base": "adult, curly hair, brown hair, long hair, almond-shaped eyes, red lips",
+      "outfits": {
+        "default": "long camel coat, silk blouse, gold earrings, red lipstick",
+        "evening": "deep green silk midi dress, long camel coat over shoulders, gold earrings, hair down"
+      },
+      "photo": "a Turkish art historian aged 30, curly brown hair, almond eyes, long coat and gold earrings",
+      "tag_prompt": "adult, curly hair, brown hair, long hair, almond-shaped eyes, red lips, long camel coat, silk blouse, gold earrings, red lipstick",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "can",
+      "name": "Can Demir",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Turkish carpet merchant aged 36, slicked black hair, trimmed beard, perfectly tailored vest",
+      "base": "mature male, black hair, slicked back hair, dark eyes, long eyelashes, trimmed beard",
+      "outfits": {
+        "default": "tailored burgundy vest, white shirt, dark trousers, pocket square",
+        "evening": "dark wool overcoat, white shirt, dark trousers"
+      },
+      "photo": "a Turkish carpet merchant aged 36, slicked black hair, trimmed beard, perfectly tailored vest",
+      "tag_prompt": "mature male, black hair, slicked back hair, dark eyes, long eyelashes, trimmed beard, tailored burgundy vest, white shirt, dark trousers, pocket square",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bazaar",
+      "name": "Velký bazar",
+      "description": "Velký bazar",
+      "tag_prompt": "indoors, grand bazaar, istanbul, lanterns, carpets hanging, gold jewelry shop, spices, crowd, arches",
+      "mood": ""
+    },
+    {
+      "id": "l_bosphorus",
+      "name": "Bospor",
+      "description": "Bospor",
+      "tag_prompt": "outdoors, boat deck, bosphorus, night, bridge lights, city lights on both shores, tea glasses",
+      "mood": ""
+    },
+    {
+      "id": "l_shop",
+      "name": "Krám s koberci",
+      "description": "Krám s koberci",
+      "tag_prompt": "indoors, carpet shop, carpets hanging like curtains, single lamp, night, ornate patterns",
+      "mood": ""
+    }
+  ]
+}

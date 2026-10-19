@@ -1,0 +1,96 @@
+{
+  "id": "w_rf_04_neworleans",
+  "title": "New Orleans – Zrzka a jazzový klub",
+  "synopsis": "Irka Emma vejde do jazzového klubu, kde boxer James hraje na piano jen pro ni.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Smutný konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_club",
+      "l_street",
+      "l_backstage",
+      "l_door"
+    ]
+  },
+  "characters": [
+    {
+      "id": "emma",
+      "name": "Emma",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall curvy Irish woman aged 30 with long copper-red wavy hair and freckles",
+      "base": "adult, tall female, curvy, long hair, wavy hair, red hair, freckles, green eyes",
+      "outfits": {
+        "default": "sequined cocktail dress, knee-high heeled boots, vintage pearl earrings, red lipstick",
+        "street": "sequined cocktail dress, bare feet, holding boots, vintage pearl earrings",
+        "travel": "belted trench coat, silk scarf, ankle boots, suitcase"
+      },
+      "photo": "a tall curvy Irish woman aged 30 with long copper-red wavy hair and freckles",
+      "tag_prompt": "adult, tall female, curvy, long hair, wavy hair, red hair, freckles, green eyes, sequined cocktail dress, knee-high heeled boots, vintage pearl earrings, red lipstick",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "james",
+      "name": "James",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall muscular African American man aged 36, former boxer who owns a small jazz club",
+      "base": "mature male, dark-skinned male, very dark skin, tall, muscular, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white dress shirt, buttoned shirt, black waistcoat, rolled sleeves, black trousers",
+        "night": "black suit, white shirt, buttoned shirt, loose necktie"
+      },
+      "photo": "a tall muscular African American man aged 36, former boxer who owns a small jazz club",
+      "tag_prompt": "mature male, dark-skinned male, very dark skin, tall, muscular, short hair, black hair, brown eyes, white dress shirt, buttoned shirt, black waistcoat, rolled sleeves, black trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_club",
+      "name": "Jazzový klub",
+      "description": "Jazzový klub",
+      "tag_prompt": "indoors, jazz club, grand piano, stage, smoke, dim spotlight, night, small tables",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "French Quarter",
+      "description": "French Quarter",
+      "tag_prompt": "outdoors, french quarter, night, wrought iron balconies, gas lamps, wet street",
+      "mood": ""
+    },
+    {
+      "id": "l_backstage",
+      "name": "Zákulisí",
+      "description": "Zákulisí",
+      "tag_prompt": "indoors, backstage, dressing room, mirror with lights, night",
+      "mood": ""
+    },
+    {
+      "id": "l_door",
+      "name": "Dveře klubu",
+      "description": "Dveře klubu",
+      "tag_prompt": "outdoors, club entrance, morning, door, street, overcast",
+      "mood": ""
+    }
+  ]
+}

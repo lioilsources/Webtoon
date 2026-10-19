@@ -1,0 +1,236 @@
+{
+  "title": "Noc v kasinu v Las Vegas",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_casino",
+      "characters": [],
+      "visual_tags": [
+        "glittering casino",
+        "roulette",
+        "lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Las Vegas. Zlato, křišťál a štěstí na prodej.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "jack"
+        }
+      ],
+      "visual_tags": [
+        "sitting at bar",
+        "ordering bourbon",
+        "adjusting suit jacket",
+        "alone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "jack"
+        },
+        {
+          "id": "veronica"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman sitting down next to him",
+        "dazzling smile",
+        "crystal chandeliers"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jack",
+          "text": "Co hledá taková mladá dáma u starého chlapíka z ranče?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bar",
+      "characters": [
+        {
+          "id": "veronica"
+        }
+      ],
+      "visual_tags": [
+        "hand on his shoulder",
+        "seductive smile",
+        "red lips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "veronica",
+          "text": "Hledám opravdového muže, ne kluky z Instagramu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_casino",
+      "characters": [
+        {
+          "id": "jack"
+        },
+        {
+          "id": "veronica"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "roulette table",
+        "woman cheering",
+        "man placing chips",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kolo rulety se točí. Jack vyhrává a ona tleská.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "jack"
+        },
+        {
+          "id": "veronica"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at window",
+        "fountains show outside",
+        "embrace",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "jack"
+        },
+        {
+          "id": "veronica"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "city lights",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_suite",
+      "characters": [],
+      "visual_tags": [
+        "closed suite door",
+        "do not disturb sign",
+        "hotel corridor",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dveře apartmá se zavřou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "jack",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "morning light through curtains",
+        "empty nightstand",
+        "sitting in armchair",
+        "alone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_suite",
+      "characters": [
+        {
+          "id": "jack",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "bitter smile",
+        "looking at bare wrist",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hodinky i peněženka jsou pryč. Veronica taky.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "jack",
+          "text": "Starý naivní blázen... Nalítl jsi na lesk Vegas.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

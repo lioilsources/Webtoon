@@ -1,0 +1,260 @@
+{
+  "title": "St. Barthélemy – Jachta Nedočkavost",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "yacht",
+        "champagne",
+        "golden hour",
+        "sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "St. Barth. Šampaňské, koktejly, ego.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "isabelle"
+        }
+      ],
+      "visual_tags": [
+        "holding champagne glass",
+        "leaning on railing",
+        "wind in dress",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabelle",
+          "text": "Po rozchodu si musím dokázat, že ještě umím chtít.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "arms spread",
+        "showing off",
+        "smug smile",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Všechno, co vidíš, je moje. Včetně západu slunce – koupil jsem si ho tím směrem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "isabelle"
+        }
+      ],
+      "visual_tags": [
+        "raised eyebrow",
+        "sipping champagne"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabelle",
+          "text": "Západ slunce si nekoupíš. Jen si můžeš pronajmout stín.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_salon",
+      "characters": [
+        {
+          "id": "isabelle",
+          "outfit": "night"
+        },
+        {
+          "id": "viktor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "passionate kiss",
+        "lamp light",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc. Rychlá jako bouřka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_salon",
+      "characters": [],
+      "visual_tags": [
+        "lamp turned off",
+        "porthole moonlight",
+        "dark salon",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_break",
+      "characters": [
+        {
+          "id": "isabelle",
+          "outfit": "morning"
+        },
+        {
+          "id": "viktor",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "breakfast table",
+        "man reading phone",
+        "woman holding coffee"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno jachta kotví u jiného ostrova.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_break",
+      "characters": [
+        {
+          "id": "viktor",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "not looking up",
+        "buttering croissant",
+        "casual"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktor",
+          "text": "Vysadím tě v Gustavii. Letí mi žena.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_break",
+      "characters": [
+        {
+          "id": "isabelle",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "calmly removing gold earring",
+        "placing it on table",
+        "cold stare"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_break",
+      "characters": [
+        {
+          "id": "isabelle",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "composed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabelle",
+          "text": "Loď si zaplatím sama. Ty si zaplatíš rozvod. Západ slunce ti nechám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pier",
+      "characters": [
+        {
+          "id": "isabelle",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "walking on pier",
+        "head held high",
+        "sunglasses",
+        "wind",
+        "from behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vystoupí na molo – a jde s hlavou vzhůru.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

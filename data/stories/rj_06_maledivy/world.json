@@ -1,0 +1,96 @@
+{
+  "id": "w_rj_06_maledivy",
+  "title": "Ostrov na Maledivách",
+  "synopsis": "Vyhořelý investor Dominik se od potápěčské instruktorky Naii učí nebát se hloubky.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Dominik zůstává na ostrově."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jetty",
+      "l_reef",
+      "l_beach",
+      "l_villa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "dominik",
+      "name": "Dominik Vávrů",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech investor aged 37, athletic, greying temples",
+      "base": "mature male, athletic, short hair, grey temples, brown hair, grey eyes, tired eyes",
+      "outfits": {
+        "default": "white linen suit, open collar shirt, barefoot, sunglasses",
+        "dive": "full black wetsuit zipped up, diving mask on forehead",
+        "night": "white linen shirt open at collar, linen trousers, barefoot"
+      },
+      "photo": "a Czech investor aged 37, athletic, greying temples",
+      "tag_prompt": "mature male, athletic, short hair, grey temples, brown hair, grey eyes, tired eyes, white linen suit, open collar shirt, barefoot, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "naia",
+      "name": "Naia Rahmani",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Maldivian dive instructor aged 32, tanned, long black braid, fully zipped wetsuit",
+      "base": "adult, mature female, petite, tan skin, black hair, long hair, single braid, dark eyes, calm",
+      "outfits": {
+        "default": "fully zipped long sleeve wetsuit, diving mask on forehead",
+        "night": "flowing turquoise silk maxi dress, shell necklace, hair down"
+      },
+      "photo": "a Maldivian dive instructor aged 32, tanned, long black braid, fully zipped wetsuit",
+      "tag_prompt": "adult, mature female, petite, tan skin, black hair, long hair, single braid, dark eyes, calm, fully zipped long sleeve wetsuit, diving mask on forehead",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jetty",
+      "name": "Molo",
+      "description": "Molo",
+      "tag_prompt": "outdoors, wooden jetty, turquoise water, palm trees, noon, white sand, private island",
+      "mood": ""
+    },
+    {
+      "id": "l_reef",
+      "name": "Útes",
+      "description": "Útes",
+      "tag_prompt": "outdoors, ocean surface, reef below, clear turquoise water, sunlight, heads above water",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, beach, night, moonlight path on sea, resort lights in distance, sand",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "outdoors, water villa, night, open door, sea breeze, curtains, lanterns",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "w_rg_03_zermatt",
+  "title": "Ztraceni ve švýcarských Alpách",
+  "synopsis": "Sněhová bouře zavře Claru s horským průvodcem Lukasem v chatě nad Zermattem.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "hassaku_soft",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Dobrý konec."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_storm",
+      "l_hut",
+      "l_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "clara",
+      "name": "Clara Zimmer",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy German woman aged 28 with long vivid red hair and freckles, white ski jacket",
+      "base": "adult, red hair, long hair, freckles, green eyes, pale skin, curvy",
+      "outfits": {
+        "default": "white puffer ski jacket, fur-trimmed hood, black ski pants, fur-lined leather boots, knit cap",
+        "sweater": "cream turtleneck sweater, black ski pants, fur-lined boots, hair down"
+      },
+      "photo": "a curvy German woman aged 28 with long vivid red hair and freckles, white ski jacket",
+      "tag_prompt": "adult, red hair, long hair, freckles, green eyes, pale skin, curvy, white puffer ski jacket, fur-trimmed hood, black ski pants, fur-lined leather boots, knit cap",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lukas",
+      "name": "Lukas Weber",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a broad-shouldered Swiss mountain guide aged 32 with stubble, plaid flannel shirt",
+      "base": "mature male, broad shoulders, muscular, stubble, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "red plaid flannel shirt, worn brown leather jacket, work boots",
+        "flannel": "red plaid flannel shirt, rolled-up sleeves, work boots"
+      },
+      "photo": "a broad-shouldered Swiss mountain guide aged 32 with stubble, plaid flannel shirt",
+      "tag_prompt": "mature male, broad shoulders, muscular, stubble, short hair, brown hair, brown eyes, red plaid flannel shirt, worn brown leather jacket, work boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_storm",
+      "name": "Chata v bouři",
+      "description": "Chata v bouři",
+      "tag_prompt": "outdoors, mountain hut, swiss alps, snowstorm, heavy snow, wooden chalet, warm window light, matterhorn silhouette",
+      "mood": ""
+    },
+    {
+      "id": "l_hut",
+      "name": "U krbu",
+      "description": "U krbu",
+      "tag_prompt": "indoors, wooden mountain hut, fireplace, crackling fire, sheepskin rug, warm light, snow on window",
+      "mood": ""
+    },
+    {
+      "id": "l_morning",
+      "name": "Ráno nad Zermattem",
+      "description": "Ráno nad Zermattem",
+      "tag_prompt": "outdoors, chalet terrace, swiss alps, fresh snow, clear blue sky, morning sun, matterhorn",
+      "mood": ""
+    }
+  ]
+}

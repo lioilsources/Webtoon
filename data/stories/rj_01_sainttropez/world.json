@@ -1,0 +1,96 @@
+{
+  "id": "w_rj_01_sainttropez",
+  "title": "Jachta u Saint-Tropez",
+  "synopsis": "Valentina si po pěti letech bez dovolené nechá od majitele jachty Lucy ukrást večer na moři.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_realvis_film",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu na lodi."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_port",
+      "l_deck",
+      "l_bow",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "valentina",
+      "name": "Valentina Rossi",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Italian woman aged 29 from Milan, wavy red hair, freckles, curvy figure",
+      "base": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes",
+      "outfits": {
+        "default": "white linen kaftan dress with gold trim, wide-brimmed sun hat, gold bangles, sunglasses on head",
+        "evening": "sheer white silk kimono over white maxi dress, gold bangles, hair down",
+        "morning": "oversized white shirt dress, gold bangles, barefoot"
+      },
+      "photo": "an Italian woman aged 29 from Milan, wavy red hair, freckles, curvy figure",
+      "tag_prompt": "adult, curvy, red hair, long hair, wavy hair, freckles, green eyes, white linen kaftan dress with gold trim, wide-brimmed sun hat, gold bangles, sunglasses on head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca Ferri",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a French-Italian yacht owner aged 35, olive skin, tousled brown hair",
+      "base": "mature male, olive skin, messy hair, brown hair, brown eyes, stubble, athletic",
+      "outfits": {
+        "default": "white polo shirt, white sailing trousers, boat shoes",
+        "evening": "light blue linen shirt, white sailing trousers, rolled sleeves"
+      },
+      "photo": "a French-Italian yacht owner aged 35, olive skin, tousled brown hair",
+      "tag_prompt": "mature male, olive skin, messy hair, brown hair, brown eyes, stubble, athletic, white polo shirt, white sailing trousers, boat shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_port",
+      "name": "Přístav",
+      "description": "Přístav",
+      "tag_prompt": "outdoors, harbor, marina, white yachts, saint-tropez, afternoon, sunlight, pier, lavender",
+      "mood": ""
+    },
+    {
+      "id": "l_deck",
+      "name": "Paluba",
+      "description": "Paluba",
+      "tag_prompt": "outdoors, yacht deck, night, open sea, harbor lights in distance, wine glasses, table, lantern",
+      "mood": ""
+    },
+    {
+      "id": "l_bow",
+      "name": "Příď",
+      "description": "Příď",
+      "tag_prompt": "outdoors, yacht bow, night, moonlight, moonlight reflection on sea, railing, starry sky",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin door, wooden door, dim light, night, porthole",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "title": "Zimní samota v norských fjordech",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_glass",
+      "characters": [],
+      "visual_tags": [
+        "glass house on cliff above fjord",
+        "snowstorm",
+        "glowing windows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bergen. Nad fjordem zuří vichřice.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_glass",
+      "characters": [
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "sitting by wood stove",
+        "whittling wood with knife",
+        "calm"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_glass",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "standing in doorway",
+        "snow on coat",
+        "shivering",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Promiňte... Můžu se tu schovat, než vichřice přejde?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_glass",
+      "characters": [
+        {
+          "id": "elena"
+        },
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man taking her snowy coat",
+        "warm stove light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ned",
+          "text": "Pojďte dál, než vás vítr odnese. Kamna hřejí pro dva.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_aurora",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "indoor"
+        },
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting together on sofa under glass roof",
+        "wrapped in blanket",
+        "green aurora above"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bouře utichne a nebe se rozsvítí zeleně.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_aurora",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "indoor"
+        }
+      ],
+      "visual_tags": [
+        "looking up at aurora",
+        "red hair glowing in green light",
+        "wonder"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_aurora",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "indoor"
+        },
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "aurora light",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_aurora",
+      "characters": [],
+      "visual_tags": [
+        "aurora borealis over glass roof",
+        "dark room",
+        "stove embers"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Polární záře tančí až do rána.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "coat"
+        },
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing at ferry gangway",
+        "holding both his hands",
+        "snow",
+        "ferry horn"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Můj život je v Kyjevě, Nede... Ty patříš těmhle horám. Ta noc byla zázrak, ale naše světy jsou moc daleko.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HÚÚÚ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "coat"
+        },
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss on her forehead",
+        "letting go of her hands",
+        "snow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ned",
+          "text": "Budeš moje polární záře, na kterou budu vzpomínat každou zimu. Šťastnou cestu, Eleno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_port",
+      "characters": [
+        {
+          "id": "ned"
+        }
+      ],
+      "visual_tags": [
+        "standing alone on pier",
+        "ferry sailing away into fjord",
+        "snow",
+        "from behind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "title": "Toskánsko – Celá",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vine",
+      "characters": [],
+      "visual_tags": [
+        "rolling hills",
+        "vineyard rows",
+        "cypress"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Toskánsko. Vinice.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vine",
+      "characters": [
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "walking on road",
+        "adjusting dress",
+        "annoyed",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Všichni se dívají jen na… tohle.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vine",
+      "characters": [
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "leaning on old truck",
+        "wiping hands with rag",
+        "watching"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vine",
+      "characters": [
+        {
+          "id": "giulia"
+        },
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man walking up to woman",
+        "woman crossing arms",
+        "suspicious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Dívám se na tebe celou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on hay bale",
+        "wine glasses",
+        "lantern",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer ve staré stodole.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [],
+      "visual_tags": [
+        "lantern flame going out",
+        "hay",
+        "darkness",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lucerna zhasne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "standing by truck",
+        "looking down",
+        "guilty",
+        "dawn"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Musím ti něco říct. Doma mám přítelkyni. Tohle byla chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "tears",
+        "shocked",
+        "dawn light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Chyba…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "walking away on dirt road",
+        "from behind",
+        "mist",
+        "cypress"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Giulia odchází se slzami v očích.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}
