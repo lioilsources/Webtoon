@@ -46,6 +46,14 @@ func TestSafetyByAudience(t *testing.T) {
 	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, ""); len(got) == 0 {
 		t.Error("unknown audience must be checked like teen")
 	}
+	neckline := &wd14.Tags{Rating: map[string]float64{"sensitive": 0.98},
+		General: map[string]float64{"cleavage": 0.93, "large breasts": 0.8, "dress": 0.9}}
+	if got := wd14.Safety(neckline, "adult"); !reflect.DeepEqual(got, map[string]float64{"cleavage": 0.93}) {
+		t.Errorf("adult neckline: %v", got)
+	}
+	if got := wd14.Safety(neckline, "teen"); len(got) != 0 {
+		t.Errorf("teen ignores general tags: %v", got)
+	}
 }
 
 func TestIdentityScore(t *testing.T) {

@@ -29,6 +29,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/config"
 	"github.com/ol1n/webtoon/backend/internal/db"
 	"github.com/ol1n/webtoon/backend/internal/demo"
+	"github.com/ol1n/webtoon/backend/internal/imageq"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/seed"
 	"github.com/ol1n/webtoon/backend/internal/store"
@@ -187,11 +188,18 @@ func serve(ctx context.Context, cfg config.Config) error {
 		return err
 	}
 	llmClient := llm.New(cfg.LLMURL, cfg.LLMModel)
+	llmClient.AccessID, llmClient.AccessSecret = cfg.CFAccessID, cfg.CFAccessSecret
 	var wk *worker.Worker
 	if runWorker {
 		gen := &storyboard.Generator{LLM: llmClient, Vocab: vocab, Attempts: 3}
+		var renderer worker.Renderer = comfy.New(cfg.ComfyURL)
+		var tagger worker.Tagger = wd14.New(cfg.WD14URL)
+		if cfg.ImageAPI != "" {
+			iq := imageq.New(cfg.ImageAPI, cfg.CFAccessID, cfg.CFAccessSecret)
+			renderer, tagger = iq, iq
+		}
 		wk = worker.New(worker.Config{MediaDir: cfg.MediaDir, Backoff: cfg.Backoff, MaxAttempts: cfg.MaxAttempts},
-			s, gen, comfy.New(cfg.ComfyURL), wd14.New(cfg.WD14URL))
+			s, gen, renderer, tagger)
 	}
 
 	var wg sync.WaitGroup
@@ -201,7 +209,7 @@ func serve(ctx context.Context, cfg config.Config) error {
 	}
 
 	slog.Info("webtoon ready", "mode", cfg.Mode, "addr", cfg.ListenAddr, "workers", cfg.Workers,
-		"llm", cfg.LLMURL, "model", cfg.LLMModel, "comfy", cfg.ComfyURL, "wd14", cfg.WD14URL,
+		"llm", cfg.LLMURL, "model", cfg.LLMModel, "comfy", cfg.ComfyURL, "wd14", cfg.WD14URL, "image_api", cfg.ImageAPI,
 		"media_dir", cfg.MediaDir, "backoff", cfg.Backoff)
 
 	if runAPI {

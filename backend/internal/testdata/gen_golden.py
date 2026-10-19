@@ -121,6 +121,8 @@ for args in [
     dict(positive="a", negative="c", width=1216, height=832, seed=7, preset="hassaku_soft", prefix="x", ref="ref.png"),
     dict(positive="a", negative="c", width=832, height=1216, seed=9, preset="clean_webtoon", prefix="x", ref="face.png",
          ip_weight=0.35, ip_preset="PLUS FACE (portraits)", ip_end=0.6),
+    dict(positive="a", negative="c", width=832, height=1216, seed=11, preset="fashion_editorial", prefix="x"),
+    dict(positive="a", negative="c", width=832, height=1216, seed=12, preset="anime_screencap", prefix="x", ref="ref.png"),
 ]:
     kw = dict(ref_image=args.get("ref"))
     for k in ("ip_weight", "ip_preset", "ip_end"):

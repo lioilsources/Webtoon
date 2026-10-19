@@ -87,3 +87,19 @@ func TestClientUnavailable(t *testing.T) {
 		t.Fatalf("400 is a real error: %v", err)
 	}
 }
+
+func TestClientSendsAccessHeaders(t *testing.T) {
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.Header.Get("CF-Access-Client-Id") != "id.access" || r.Header.Get("CF-Access-Client-Secret") != "secret" {
+			http.Error(w, "forbidden", http.StatusForbidden)
+			return
+		}
+		w.Write(reply(`{"ok": true}`))
+	}))
+	defer srv.Close()
+	c := llm.New(srv.URL, "m")
+	c.AccessID, c.AccessSecret = "id.access", "secret"
+	if _, err := c.JSON(context.Background(), "s", "u", 0); err != nil {
+		t.Fatal(err)
+	}
+}

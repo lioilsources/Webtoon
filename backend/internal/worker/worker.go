@@ -43,19 +43,31 @@ type Config struct {
 	Clock        func() time.Time
 }
 
+// Renderer runs ComfyUI graphs: comfy.Client on the LAN or imageq.Client through the AiStack Image API.
+type Renderer interface {
+	Ping(ctx context.Context) error
+	Upload(ctx context.Context, png []byte, name string) (string, error)
+	Run(ctx context.Context, g comfy.Graph) ([][]byte, error)
+}
+
+// Tagger is the WD14 tagger: wd14.Client on the LAN or imageq.Client.
+type Tagger interface {
+	Tag(ctx context.Context, png []byte) (*wd14.Tags, error)
+}
+
 type Worker struct {
 	cfg   Config
 	store Store
 	llm   llm.JSONCaller
 	gen   *storyboard.Generator
-	comfy *comfy.Client
-	wd14  *wd14.Client
+	comfy Renderer
+	wd14  Tagger
 	log   *slog.Logger
 	wake  chan struct{}
 	now   func() time.Time
 }
 
-func New(cfg Config, s Store, gen *storyboard.Generator, c *comfy.Client, t *wd14.Client) *Worker {
+func New(cfg Config, s Store, gen *storyboard.Generator, c Renderer, t Tagger) *Worker {
 	if cfg.Backoff <= 0 {
 		cfg.Backoff = 5 * time.Minute
 	}

@@ -195,7 +195,31 @@ type Preset struct {
 	CFG           float64  `json:"cfg"`
 	// Natural: photoreal checkpoints read sentences better than booru tags (prompt.Build).
 	Natural bool `json:"natural,omitempty"`
+	// Loras: style LoRAs chained after the checkpoint, styles.json [[file, strength], ...].
+	Loras []Lora `json:"loras,omitempty"`
 }
+
+// Lora is one style LoRA; strength applies to both model and CLIP.
+type Lora struct {
+	Name     string
+	Strength float64
+}
+
+func (l *Lora) UnmarshalJSON(b []byte) error {
+	var pair []json.RawMessage
+	if err := json.Unmarshal(b, &pair); err != nil || len(pair) != 2 {
+		return fmt.Errorf("lora: want [file, strength], got %s", b)
+	}
+	if err := json.Unmarshal(pair[0], &l.Name); err != nil {
+		return fmt.Errorf("lora file: %w", err)
+	}
+	if err := json.Unmarshal(pair[1], &l.Strength); err != nil {
+		return fmt.Errorf("lora strength: %w", err)
+	}
+	return nil
+}
+
+func (l Lora) MarshalJSON() ([]byte, error) { return json.Marshal([]any{l.Name, l.Strength}) }
 
 // --- storyboard (§5.2) -------------------------------------------------------
 

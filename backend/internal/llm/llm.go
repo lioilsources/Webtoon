@@ -28,6 +28,8 @@ type Client struct {
 	Retries   int // extra attempts when the reply is not valid JSON (prototype: 2)
 	HTTP      *http.Client
 	RetryWait time.Duration
+	// Cloudflare Access service token, when the LLM sits behind Access (llm.ol1n.com).
+	AccessID, AccessSecret string
 }
 
 func New(url, model string) *Client {
@@ -110,6 +112,10 @@ func (c *Client) complete(ctx context.Context, system, user string, temperature 
 		return "", err
 	}
 	req.Header.Set("Content-Type", "application/json")
+	if c.AccessID != "" {
+		req.Header.Set("CF-Access-Client-Id", c.AccessID)
+		req.Header.Set("CF-Access-Client-Secret", c.AccessSecret)
+	}
 	resp, err := c.HTTP.Do(req)
 	if err != nil {
 		if ctx.Err() != nil {

@@ -797,6 +797,345 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
+    },
+    "fashion_editorial": {
+      "checkpoint": "RealVisXL_V5.0.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "high fashion editorial photograph",
+        "vogue magazine",
+        "studio flash",
+        "crisp detail",
+        "luxury styling"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0,
+      "loras": [
+        [
+          "Juggernaut_XL_Lightning/Detail_Tweaker_XL.safetensors",
+          0.8
+        ]
+      ]
+    },
+    "photo_glossy": {
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "glossy luxury campaign photo",
+        "golden hour",
+        "vivid color",
+        "cinematic"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "steps": 32,
+      "cfg": 4.5,
+      "loras": [
+        [
+          "Juggernaut_XL_Lightning/xl_more_art-full__xl_real__Enhancer.safetensors",
+          0.6
+        ]
+      ]
+    },
+    "semireal_25d": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "realistic",
+        "semi-realistic",
+        "2.5d",
+        "soft cinematic light",
+        "detailed face"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": [
+        [
+          "style-realism-slider.safetensors",
+          1.5
+        ]
+      ]
+    },
+    "fantasy_colorlines": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "c0lorl1nes",
+        "fantasy illustration",
+        "vibrant colored lines",
+        "magical atmosphere",
+        "glowing light"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": [
+        [
+          "Illustrious_WAI/Velvets_Mythic_Fantasy_Styles__Flux__Pony__illustrious__ZiT__Anima__Krea2.safetensors",
+          0.8
+        ]
+      ]
+    },
+    "thin_paint": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "usnr",
+        "thin paint",
+        "painterly",
+        "soft brush strokes",
+        "muted palette"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": [
+        [
+          "style-usnr-thin-paint.safetensors",
+          0.8
+        ]
+      ]
+    },
+    "anime_screencap": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "anime screencap",
+        "anime coloring",
+        "2d",
+        "cel shading"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "old",
+        "early"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0,
+      "loras": [
+        [
+          "style-anime-screencap.safetensors",
+          0.9
+        ]
+      ]
+    },
+    "flat_anime_mema": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "flat color",
+        "flat anime style",
+        "clean lineart",
+        "pastel palette"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "old",
+        "early"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0,
+      "loras": [
+        [
+          "NoobAI/MeMaXL_Flat_Anime_Style_-_NoobIllustriousPonyXL.safetensors",
+          0.9
+        ]
+      ]
+    },
+    "pixar_3d": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "3d",
+        "pixar style",
+        "cinematic lighting",
+        "stylized adult characters"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": [
+        [
+          "Pixar_SDXL/PixarXL.safetensors",
+          0.9
+        ]
+      ]
     }
   },
   "always_negative": [
@@ -911,7 +1250,13 @@
     "topless",
     "see-through",
     "lingerie",
-    "swimsuit"
+    "swimsuit",
+    "cleavage",
+    "plunging neckline",
+    "covered nipples",
+    "skin tight",
+    "large breasts",
+    "midriff"
   ],
   "natural_shot": {
     "close-up": [

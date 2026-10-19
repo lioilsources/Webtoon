@@ -53,6 +53,39 @@ func TestWorkflowVariants(t *testing.T) {
 	if g := comfy.Workflow("pos", "neg", 832, 1216, 1, p, "x", &comfy.IPAdapter{}); g["ipapply"] != nil {
 		t.Fatal("adapter without image must render prompt-only")
 	}
+
+	p.Loras = []domain.Lora{{Name: "style.safetensors", Strength: 0.8}, {Name: "detail.safetensors", Strength: 0.5}}
+	g = comfy.Workflow("pos", "neg", 832, 1216, 1, p, "x", nil)
+	if m := inputs(g, "lora0")["model"].([]any); m[0] != "ckpt" || inputs(g, "lora0")["strength_clip"] != 0.8 {
+		t.Fatalf("lora0 %v", inputs(g, "lora0"))
+	}
+	if m := inputs(g, "lora1")["clip"].([]any); m[0] != "lora0" || inputs(g, "lora1")["lora_name"] != "detail.safetensors" {
+		t.Fatalf("lora1 %v", inputs(g, "lora1"))
+	}
+	for _, id := range []string{"pos", "neg"} {
+		if c := inputs(g, id)["clip"].([]any); c[0] != "lora1" || c[1] != 1 {
+			t.Fatalf("%s clip %v", id, c)
+		}
+	}
+	if m := inputs(g, "vpred")["model"].([]any); m[0] != "lora1" {
+		t.Fatalf("v-pred must wrap the last LoRA, got %v", m)
+	}
+}
+
+func TestLoraJSON(t *testing.T) {
+	var p domain.Preset
+	if err := json.Unmarshal([]byte(`{"loras": [["a/b.safetensors", 0.9]]}`), &p); err != nil {
+		t.Fatal(err)
+	}
+	if len(p.Loras) != 1 || p.Loras[0] != (domain.Lora{Name: "a/b.safetensors", Strength: 0.9}) {
+		t.Fatalf("loras %v", p.Loras)
+	}
+	if b, _ := json.Marshal(p.Loras); string(b) != `[["a/b.safetensors",0.9]]` {
+		t.Fatalf("marshal %s", b)
+	}
+	if err := json.Unmarshal([]byte(`{"loras": [["only-name"]]}`), &p); err == nil {
+		t.Fatal("malformed lora must fail")
+	}
 }
 
 // TestWorkflowMatchesPrototype compares the graph with m0/comfy.workflow (golden), as JSON.

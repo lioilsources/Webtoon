@@ -34,6 +34,11 @@ func Thresholds(audience string) map[string]float64 {
 	return Unsafe
 }
 
+// AdultTagLimits: adult worlds also reseed on revealing general tags. Fashion is fine,
+// a panel dominated by the neckline is not (m0/render.ADULT_TAG_LIMITS).
+var AdultTagLimits = map[string]float64{"cleavage": 0.8, "large breasts": 0.8, "covered nipples": 0.3,
+	"shirtless": 0.5, "underwear": 0.3, "bed": 0.7}
+
 const (
 	DesignThreshold = 0.35
 	MaxReseed       = 2
@@ -89,6 +94,13 @@ func Safety(t *Tags, audience string) map[string]float64 {
 	for k, lim := range Thresholds(audience) {
 		if v := t.Rating[k]; v > lim {
 			bad[k] = round3(v)
+		}
+	}
+	if audience == "adult" {
+		for k, lim := range AdultTagLimits {
+			if v := t.General[k]; v > lim {
+				bad[k] = round3(v)
+			}
 		}
 	}
 	return bad

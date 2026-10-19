@@ -75,17 +75,29 @@ func Workflow(positive, negative string, width, height int, seed int64, p domain
 		"seed": seed, "steps": p.Steps, "cfg": p.CFG,
 		"sampler_name": p.Sampler, "scheduler": p.Scheduler, "denoise": 1.0,
 	}
+	posIn := map[string]any{"text": positive, "clip": []any{"ckpt", 1}}
+	negIn := map[string]any{"text": negative, "clip": []any{"ckpt", 1}}
 	g := Graph{
 		"ckpt":   node("CheckpointLoaderSimple", map[string]any{"ckpt_name": p.Checkpoint}),
-		"pos":    node("CLIPTextEncode", map[string]any{"text": positive, "clip": []any{"ckpt", 1}}),
-		"neg":    node("CLIPTextEncode", map[string]any{"text": negative, "clip": []any{"ckpt", 1}}),
+		"pos":    node("CLIPTextEncode", posIn),
+		"neg":    node("CLIPTextEncode", negIn),
 		"latent": node("EmptyLatentImage", map[string]any{"width": width, "height": height, "batch_size": 1}),
 		"sample": node("KSampler", sample),
 		"decode": node("VAEDecode", map[string]any{"samples": []any{"sample", 0}, "vae": []any{"ckpt", 2}}),
 		"save":   node("SaveImage", map[string]any{"images": []any{"decode", 0}, "filename_prefix": prefix}),
 	}
+	// Style LoRAs, chained after the checkpoint (model + clip) like m0/comfy.workflow.
+	model, clip := []any{"ckpt", 0}, []any{"ckpt", 1}
+	for i, l := range p.Loras {
+		id := fmt.Sprintf("lora%d", i)
+		g[id] = node("LoraLoader", map[string]any{"model": model, "clip": clip, "lora_name": l.Name,
+			"strength_model": l.Strength, "strength_clip": l.Strength})
+		model, clip = []any{id, 0}, []any{id, 1}
+	}
+	posIn["clip"], negIn["clip"] = clip, clip
+	sample["model"] = model
 	if p.Prediction == "v" {
-		g["vpred"] = node("ModelSamplingDiscrete", map[string]any{"model": []any{"ckpt", 0}, "sampling": "v_prediction", "zsnr": true})
+		g["vpred"] = node("ModelSamplingDiscrete", map[string]any{"model": model, "sampling": "v_prediction", "zsnr": true})
 		sample["model"] = []any{"vpred", 0}
 	}
 	if ip != nil && ip.Image != "" {

@@ -1,5 +1,6 @@
 // Package fakes provides httptest stand-ins for the Spark services: an OpenAI-compatible
-// LLM, ComfyUI (/prompt, /history, /view, /upload/image, /system_stats) and the WD14 tagger.
+// LLM, ComfyUI (/prompt, /history, /view, /upload/image, /system_stats), the WD14 tagger
+// and the AiStack Image API (/v1/image/*).
 // Tests never talk to the real 192.168.88.66 hosts.
 package fakes
 
@@ -275,4 +276,156 @@ func TinyPNG() []byte {
 	var buf bytes.Buffer
 	png.Encode(&buf, img) //nolint:errcheck
 	return buf.Bytes()
+}
+
+// --- AiStack Image API ---------------------------------------------------------
+
+// ImageAPI fakes llm.ol1n.com/v1/image/*: a job is done after Polls status polls (default 1),
+// Closed reports every queued job as waiting_window, Fail ends jobs in error. /tag answers from
+// WD14 when set. Headers of every request are kept for the auth checks.
+type ImageAPI struct {
+	*httptest.Server
+	Closed   atomic.Bool
+	Fail     atomic.Bool
+	Polls    int
+	WD14     *WD14
+	PNGBytes []byte
+	mu       sync.Mutex
+	jobs     map[string]*imageJob
+	byRef    map[string]string
+	headers  []http.Header
+	submits  int
+	inputs   []string
+}
+
+type imageJob struct {
+	ID       string `json:"id"`
+	Status   string `json:"status"`
+	Error    string `json:"error,omitempty"`
+	NOutputs int    `json:"n_outputs"`
+	left     int
+}
+
+func NewImageAPI() *ImageAPI {
+	f := &ImageAPI{Polls: 1, PNGBytes: TinyPNG(), jobs: map[string]*imageJob{}, byRef: map[string]string{}}
+	window := func() map[string]any {
+		if f.Closed.Load() {
+			return map[string]any{"state": "closed", "reason": "LLM profile"}
+		}
+		return map[string]any{"state": "open"}
+	}
+	view := func(j *imageJob) map[string]any {
+		st := j.Status
+		if st == "queued" && f.Closed.Load() {
+			st = "waiting_window"
+		}
+		return map[string]any{"id": j.ID, "status": st, "error": j.Error, "n_outputs": j.NOutputs, "position": 0, "window": window()}
+	}
+	mux := http.NewServeMux()
+	mux.HandleFunc("POST /v1/image/jobs", func(w http.ResponseWriter, r *http.Request) {
+		if r.Header.Get("X-Project") == "" {
+			http.Error(w, `{"error":"missing X-Project"}`, 400)
+			return
+		}
+		var body struct {
+			Workflow  map[string]any    `json:"workflow"`
+			Inputs    map[string]string `json:"inputs"`
+			ClientRef string            `json:"client_ref"`
+		}
+		if err := json.NewDecoder(r.Body).Decode(&body); err != nil || len(body.Workflow) == 0 {
+			http.Error(w, `{"error":"bad workflow"}`, 400)
+			return
+		}
+		f.mu.Lock()
+		defer f.mu.Unlock()
+		if id, ok := f.byRef[body.ClientRef]; ok && body.ClientRef != "" {
+			w.Header().Set("Content-Type", "application/json")
+			json.NewEncoder(w).Encode(view(f.jobs[id])) //nolint:errcheck
+			return
+		}
+		f.submits++
+		j := &imageJob{ID: fmt.Sprintf("job%d", f.submits), Status: "queued", left: f.Polls}
+		f.jobs[j.ID] = j
+		f.byRef[body.ClientRef] = j.ID
+		for name := range body.Inputs {
+			f.inputs = append(f.inputs, name)
+		}
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusAccepted)
+		json.NewEncoder(w).Encode(view(j)) //nolint:errcheck
+	})
+	mux.HandleFunc("GET /v1/image/jobs/{id}", func(w http.ResponseWriter, r *http.Request) {
+		f.mu.Lock()
+		defer f.mu.Unlock()
+		j, ok := f.jobs[r.PathValue("id")]
+		if !ok {
+			http.Error(w, `{"error":"job not found"}`, 404)
+			return
+		}
+		if j.Status == "queued" && !f.Closed.Load() {
+			if j.left--; j.left <= 0 {
+				if f.Fail.Load() {
+					j.Status, j.Error = "error", "ComfyUI node error"
+				} else {
+					j.Status, j.NOutputs = "done", 1
+				}
+			}
+		}
+		json.NewEncoder(w).Encode(view(j)) //nolint:errcheck
+	})
+	mux.HandleFunc("GET /v1/image/jobs/{id}/outputs/{n}", func(w http.ResponseWriter, r *http.Request) {
+		f.mu.Lock()
+		j, ok := f.jobs[r.PathValue("id")]
+		f.mu.Unlock()
+		if !ok || j.Status != "done" || r.PathValue("n") != "0" {
+			http.Error(w, `{"error":"output not found"}`, 404)
+			return
+		}
+		w.Header().Set("Content-Type", "image/png")
+		w.Write(f.PNGBytes)
+	})
+	mux.HandleFunc("POST /v1/image/tag", func(w http.ResponseWriter, r *http.Request) {
+		if f.WD14 == nil {
+			http.Error(w, `{"error":"no tagger"}`, 502)
+			return
+		}
+		resp, err := http.Post(f.WD14.URL+"/tag", r.Header.Get("Content-Type"), r.Body)
+		if err != nil {
+			http.Error(w, err.Error(), 502)
+			return
+		}
+		defer resp.Body.Close()
+		w.WriteHeader(resp.StatusCode)
+		io.Copy(w, resp.Body) //nolint:errcheck
+	})
+	mux.HandleFunc("GET /v1/image/status", func(w http.ResponseWriter, r *http.Request) {
+		json.NewEncoder(w).Encode(map[string]any{"window": window(), "queued": 0, "running": false}) //nolint:errcheck
+	})
+	f.Server = httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		f.mu.Lock()
+		f.headers = append(f.headers, r.Header.Clone())
+		f.mu.Unlock()
+		mux.ServeHTTP(w, r)
+	}))
+	return f
+}
+
+// Submits counts new jobs (a repeated client_ref is not a new job).
+func (f *ImageAPI) Submits() int {
+	f.mu.Lock()
+	defer f.mu.Unlock()
+	return f.submits
+}
+
+func (f *ImageAPI) Headers() []http.Header {
+	f.mu.Lock()
+	defer f.mu.Unlock()
+	return append([]http.Header(nil), f.headers...)
+}
+
+// Inputs lists the input image names sent with the jobs.
+func (f *ImageAPI) Inputs() []string {
+	f.mu.Lock()
+	defer f.mu.Unlock()
+	return append([]string(nil), f.inputs...)
 }

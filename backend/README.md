@@ -36,6 +36,8 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 | `WEBTOON_LLM_MODEL` | `openclaw-default` | |
 | `WEBTOON_COMFY` | `http://192.168.88.66:8188` | ComfyUI. Služba ho **nikdy nespouští**, jen se ptá `/system_stats` |
 | `WEBTOON_WD14` | `http://192.168.88.66:8097` | WD14 tagger (`POST /tag`) |
+| `WEBTOON_IMAGE_API` | – | AiStack Image API (`https://llm.ol1n.com`); nastavené = místo `WEBTOON_COMFY` a `WEBTOON_WD14` |
+| `WEBTOON_CF_ACCESS_ID`, `WEBTOON_CF_ACCESS_SECRET` | – | service token Cloudflare Access pro Image API i LLM za `llm.ol1n.com` |
 | `DATABASE_URL` | `postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable` | |
 | `MEDIA_DIR` | `./media` | sem se ukládají PNG panelů, servíruje `GET /media/...` |
 | `MEDIA_BASE_URL` | `/media` | prefix `image_url` v odpovědích (např. `https://webtoon.ol1n.com/media`) |
@@ -47,6 +49,11 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 | `WEBTOON_CORS_ORIGINS` | – | origins pro Flutter web, čárkami (`http://localhost:8096`, `*`); prázdné = bez CORS |
 | `WEBTOON_SEED`, `WEBTOON_SEED_OWNER` | `false`, `seed` | seed při startu |
 
+Mimo domácí síť nastav `WEBTOON_IMAGE_API`: worker pak posílá grafy do sdílené fronty ComfyUI na SPARKu
+(`internal/imageq`, kontrakt `AiStack/services/gen-queue/IMAGE-API.md`) a WD14 volá přes `/v1/image/tag`.
+Referenční obrázky jdou s jobem v base64. Job zadaný mimo okno comfy ve frontě počká; worker mezitím
+dostane „unavailable“ a po `WEBTOON_BACKOFF` se přes stejný `client_ref` (hash grafu) připojí k témuž jobu.
+
 ## Pipeline (worker)
 
 1. **episode job**: free text projde nejdřív moderací (LLM, JSON verdikt; `kids` = přísnější instrukce, fail-closed).
@@ -57,7 +64,7 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 2. **panel job**: prompt (pořadí quality → count → character tag_prompt → artist/style → shot → scene → location → SFW,
    odstranění negativů, které koliduje s pozitivem) → ComfyUI (eps/v-pred, IP-Adapter, pokud má postava
    `identity_level=ip_adapter` a referenci v `MEDIA_DIR`) → WD14 safety podle `audience` světa (teen: `explicit>0.2`, `questionable>0.3`;
-   kids navíc `sensitive>0.5`, tj. přiléhavé/odhalující oblečení; adult má stejné prahy jako teen, svět pro dospělé je taky SFW), max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
+   kids navíc `sensitive>0.5`, tj. přiléhavé/odhalující oblečení; adult má prahy teen a navíc reseed na WD14 tagy `cleavage`/`large breasts` > 0.8, `shirtless` > 0.5, `bed` > 0.7 apod. (`wd14.AdultTagLimits`), svět pro dospělé je taky SFW), max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
    `panels_ready++`, identity recall per postava.
    - **Záběr řídí tagy postavy** (port `m0/prompts.py`): close-up vynechá design tagy spodní poloviny
      (`LOWER_RE`: shorts, skirt, pants, pantyhose, thighhighs, legwear, socks, footwear, boots, shoes) a nechá
@@ -67,6 +74,7 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
    - **Šatník** (romantické světy): postava má `base` (tagy bez oblečení), `outfits` (`{"default": …, "dinner": …}`)
      a `photo` (popis větou). Panel vybere oblečení přes `characters[].outfit` (jméno z `outfits`, nebo tagy přímo).
      Bez `outfit` platí `tag_prompt`. Publikum `kids`/`adult` přidá `kids_negative`/`adult_negative` ze styles.json.
+     Preset může mít stylové LoRA `"loras": [[soubor, síla], …]`, workflow je řetězí za checkpoint (model i CLIP), stejně jako `m0/comfy.py`.
    - **Fotorealistické presety** (`"natural": true`, Juggernaut, RealVis, CyberRealistic) dostanou prompt větami:
      dvojice jde na začátek s vahou 1.3 („a romantic couple … together in frame“), každá postava je `photo` + „wearing <outfit>“,
      záběr z `natural_shot`. Jinak modely druhou postavu vynechávají.
