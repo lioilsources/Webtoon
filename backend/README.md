@@ -57,13 +57,19 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 2. **panel job**: prompt (pořadí quality → count → character tag_prompt → artist/style → shot → scene → location → SFW,
    odstranění negativů, které koliduje s pozitivem) → ComfyUI (eps/v-pred, IP-Adapter, pokud má postava
    `identity_level=ip_adapter` a referenci v `MEDIA_DIR`) → WD14 safety podle `audience` světa (teen: `explicit>0.2`, `questionable>0.3`;
-   kids navíc `sensitive>0.5`, tj. přiléhavé/odhalující oblečení; adult bez kontroly), max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
+   kids navíc `sensitive>0.5`, tj. přiléhavé/odhalující oblečení; adult má stejné prahy jako teen, svět pro dospělé je taky SFW), max 2 reseedy, pak panel `failed`, obrázek se neuloží) → PNG do `MEDIA_DIR/episodes/<ep>/pNN_<seed>.png` →
    `panels_ready++`, identity recall per postava.
    - **Záběr řídí tagy postavy** (port `m0/prompts.py`): close-up vynechá design tagy spodní poloviny
      (`LOWER_RE`: shorts, skirt, pants, pantyhose, thighhighs, legwear, socks, footwear, boots, shoes) a nechá
      jen první 3 tagy lokace; medium a over-shoulder vynechají obuv (`FEET_RE`). Filtr scénických tagů pořád
      zná celý design. Shot tagy close-upu jsou vážené: `(close-up:1.3), (portrait:1.2), face focus`.
      Identity recall počítá jen tagy, které jsou v záběru vidět.
+   - **Šatník** (romantické světy): postava má `base` (tagy bez oblečení), `outfits` (`{"default": …, "dinner": …}`)
+     a `photo` (popis větou). Panel vybere oblečení přes `characters[].outfit` (jméno z `outfits`, nebo tagy přímo).
+     Bez `outfit` platí `tag_prompt`. Publikum `kids`/`adult` přidá `kids_negative`/`adult_negative` ze styles.json.
+   - **Fotorealistické presety** (`"natural": true`, Juggernaut, RealVis, CyberRealistic) dostanou prompt větami:
+     dvojice jde na začátek s vahou 1.3 („a romantic couple … together in frame“), každá postava je `photo` + „wearing <outfit>“,
+     záběr z `natural_shot`. Jinak modely druhou postavu vynechávají.
    - **IP-Adapter** jen u postav s `identity_level=ip_adapter` (výchozí je `prompt`, výsledek M0). Postava
      může mít `ip_adapter: {preset, weight, end_at}`. Výchozí hodnoty jsou z prototypu
      (`PLUS (high strength)`, 0.6, 0.8). Pro výřez obličeje funguje `PLUS FACE (portraits)` s vahou 0.3–0.4.

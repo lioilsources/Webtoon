@@ -350,8 +350,7 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 	if err != nil {
 		return err
 	}
-	sfw := ec.World.Audience != "adult"
-	pr, err := prompt.Build(&panel.SB, ec.World, ec.Styles, "", sfw)
+	pr, err := prompt.Build(&panel.SB, ec.World, ec.Styles, "", true)
 	if err != nil {
 		return permanent(err)
 	}
@@ -397,7 +396,7 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 		var sum float64
 		for _, pc := range panel.SB.Characters {
 			if c, ok := ec.World.Character(pc.ID); ok {
-				id := wd14.IdentityScore(tagged, c.TagPrompt, panel.SB.Shot)
+				id := wd14.IdentityScore(tagged, c.Design(pc.Outfit), panel.SB.Shot)
 				res.Identity[c.ID] = id
 				sum += id.Recall
 			}
@@ -494,9 +493,8 @@ func (w *Worker) sheetJob(ctx context.Context, job *Job) error {
 	if char.TagPrompt == "" {
 		return permanent(fmt.Errorf("character %s has no tag_prompt", char.ID))
 	}
-	sfw := sc.World.Audience != "adult"
 	panel := SheetPanel(char.ID)
-	pr, err := prompt.Build(&panel, sc.World, sc.Styles, "", sfw)
+	pr, err := prompt.Build(&panel, sc.World, sc.Styles, "", true)
 	if err != nil {
 		return permanent(err)
 	}

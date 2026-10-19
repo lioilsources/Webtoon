@@ -60,6 +60,35 @@ type Character struct {
 	// IPAdapter tunes the IP-Adapter when IdentityLevel is "ip_adapter" (nil = defaults).
 	// M0 result: prompt-only is the default identity level.
 	IPAdapter *IPAdapterConfig `json:"ip_adapter,omitempty"`
+	// Wardrobe (romance worlds): Base tags + one of Outfits, picked per panel by SBChar.Outfit.
+	// Photo is a sentence description for photoreal presets (Preset.Natural).
+	Base    string            `json:"base,omitempty"`
+	Photo   string            `json:"photo,omitempty"`
+	Outfits map[string]string `json:"outfits,omitempty"`
+}
+
+// Design is the character's tags in a panel: Base + the named outfit (or outfit tags given
+// inline), falling back to TagPrompt when the panel names no outfit (m0 prompts.design_of).
+func (c Character) Design(outfit string) string {
+	if outfit == "" || c.Base == "" {
+		return c.TagPrompt
+	}
+	if o, ok := c.Outfits[outfit]; ok {
+		return c.Base + ", " + o
+	}
+	return c.Base + ", " + outfit
+}
+
+// Wear is the outfit text of a panel for the natural prompt: the named outfit, inline tags,
+// or the "default" outfit when the panel names none.
+func (c Character) Wear(outfit string) string {
+	if outfit == "" {
+		return c.Outfits["default"]
+	}
+	if o, ok := c.Outfits[outfit]; ok {
+		return o
+	}
+	return outfit
 }
 
 // IPAdapterConfig mirrors m0/render.py --ip-preset / --ip-weight / --ip-end. Zero values mean
@@ -136,6 +165,21 @@ type Styles struct {
 	SFWNegative    []string            `json:"sfw_negative"`
 	ShotTags       map[string][]string `json:"shot_tags"`
 	ShotSize       map[string][2]int   `json:"shot_size"`
+	KidsNegative   []string            `json:"kids_negative"`
+	AdultNegative  []string            `json:"adult_negative"`
+	// NaturalShot is the sentence form of ShotTags for Preset.Natural.
+	NaturalShot map[string][]string `json:"natural_shot"`
+}
+
+// AudienceNegative is the extra negative of a world's audience (kids / adult).
+func (s *Styles) AudienceNegative(audience string) []string {
+	switch audience {
+	case "kids":
+		return s.KidsNegative
+	case "adult":
+		return s.AdultNegative
+	}
+	return nil
 }
 
 type Preset struct {
@@ -149,6 +193,8 @@ type Preset struct {
 	Scheduler     string   `json:"scheduler"`
 	Steps         int      `json:"steps"`
 	CFG           float64  `json:"cfg"`
+	// Natural: photoreal checkpoints read sentences better than booru tags (prompt.Build).
+	Natural bool `json:"natural,omitempty"`
 }
 
 // --- storyboard (§5.2) -------------------------------------------------------
@@ -194,6 +240,7 @@ type SBPanel struct {
 
 type SBChar struct {
 	ID      string   `json:"id"`
+	Outfit  string   `json:"outfit,omitempty"`
 	Emotion FlexList `json:"emotion"`
 	Action  FlexList `json:"action"`
 }

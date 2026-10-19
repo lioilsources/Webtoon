@@ -25,12 +25,10 @@ var Unsafe = map[string]float64{"explicit": 0.2, "questionable": 0.3}
 // fine for teens, not for a kids world.
 var UnsafeKids = map[string]float64{"explicit": 0.2, "questionable": 0.3, "sensitive": 0.5}
 
-// Thresholds for World.Audience; adult worlds are not checked (nil).
+// Thresholds for World.Audience. Adult worlds are SFW too (no nudity, nothing explicit):
+// they get the teen thresholds, like the m0 romance run.
 func Thresholds(audience string) map[string]float64 {
-	switch audience {
-	case "adult":
-		return nil
-	case "kids":
+	if audience == "kids" {
 		return UnsafeKids
 	}
 	return Unsafe

@@ -40,6 +40,9 @@ type Character struct {
 	Position        int32
 	CreatedAt       time.Time
 	IpAdapter       json.RawMessage
+	Base            string
+	Photo           string
+	Outfits         json.RawMessage
 }
 
 type CharacterSheet struct {

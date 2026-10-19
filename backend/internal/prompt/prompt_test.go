@@ -166,3 +166,35 @@ func TestCountTags(t *testing.T) {
 		}
 	}
 }
+
+// TestRomanceMatchesPrototype: per-panel outfits, photoreal presets in sentences (natural),
+// the adult negative and expression tags ("closed eyes", "wet hair") kept beside the design.
+func TestRomanceMatchesPrototype(t *testing.T) {
+	g := testutil.Golden(t)
+	var w domain.World
+	var panels []domain.SBPanel
+	var want, wantAnime []golden
+	testutil.GoldenField(t, g, "romance_world", &w)
+	testutil.GoldenField(t, g, "romance_panels", &panels)
+	testutil.GoldenField(t, g, "romance_prompts", &want)
+	testutil.GoldenField(t, g, "romance_prompts_anime", &wantAnime)
+	st := testutil.Styles(t)
+	for _, c := range []struct {
+		preset string
+		want   []golden
+	}{{"", want}, {"webtoon_romance", wantAnime}} {
+		for i := range panels {
+			got, err := prompt.Build(&panels[i], &w, st, c.preset, true)
+			if err != nil {
+				t.Fatal(err)
+			}
+			if got.Positive != c.want[i].Positive || got.Negative != c.want[i].Negative {
+				t.Errorf("%q panel %d\n got: %s\n      %s\nwant: %s\n      %s", c.preset, i,
+					got.Positive, got.Negative, c.want[i].Positive, c.want[i].Negative)
+			}
+			if got.Width != c.want[i].Width || got.Height != c.want[i].Height {
+				t.Errorf("%q panel %d size %dx%d, want %dx%d", c.preset, i, got.Width, got.Height, c.want[i].Width, c.want[i].Height)
+			}
+		}
+	}
+}

@@ -91,14 +91,16 @@ SELECT count(*)::int FROM campaigns WHERE world_id = $1 AND player_character_id 
 
 -- name: UpsertCharacter :exec
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position,
+                        base, photo, outfits)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18)
 ON CONFLICT (world_id, id) DO UPDATE SET
     owner_id = EXCLUDED.owner_id, name = EXCLUDED.name, role = EXCLUDED.role, count_tag = EXCLUDED.count_tag,
     description = EXCLUDED.description, personality = EXCLUDED.personality, speech_style = EXCLUDED.speech_style,
     tag_prompt = EXCLUDED.tag_prompt, reference_images = EXCLUDED.reference_images,
     identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset,
-    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position;
+    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position,
+    base = EXCLUDED.base, photo = EXCLUDED.photo, outfits = EXCLUDED.outfits;
 
 -- name: ListCharacters :many
 SELECT * FROM characters WHERE world_id = $1 ORDER BY position, created_at;

@@ -40,7 +40,7 @@ func TestSafetyByAudience(t *testing.T) {
 	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"sensitive": 0.5}}, "kids"); len(got) != 0 {
 		t.Errorf("kids at the threshold: %v", got)
 	}
-	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, "adult"); len(got) != 0 {
+	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, "adult"); len(got) != 1 {
 		t.Errorf("adult: %v", got)
 	}
 	if got := wd14.Safety(&wd14.Tags{Rating: map[string]float64{"explicit": 0.9}}, ""); len(got) == 0 {

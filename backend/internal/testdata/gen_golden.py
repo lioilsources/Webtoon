@@ -87,6 +87,23 @@ out["shot_prompts"] = [prompts.build(p, world, styles) for p in shot_panels]
 for p in out["shot_prompts"]:
     p.pop("preset")
 out["sheet_panel"] = render.sheet_panel(world["characters"][0])
+# romance worlds: outfits per panel, photoreal presets in sentences (natural), adult negative,
+# expression tags that mention hair/eyes; a 3-person panel for the group case
+rworld = common.load_json(common.DATA / "stories/rb_06_la/world.json")
+rpanels = common.load_json(common.DATA / "stories/rb_06_la/storyboard.json")["panels"]
+rworld["characters"].append({"id": "friend", "name": "Friend", "role": "npc", "count_tag": "1girl",
+                             "tag_prompt": "adult, short hair, black hair"})  # no base/photo: falls back to tag_prompt
+a, b = rworld["characters"][0]["id"], rworld["characters"][1]["id"]
+rpanels = rpanels + [dict(rpanels[-1], characters=[{"id": a, "outfit": "pink sundress"}, {"id": b, "outfit": "dinner"},
+                                                   {"id": "friend", "outfit": "dinner"}],
+                          visual_tags=["closed eyes", "wet hair", "red hair", "laughing"])]
+out["romance_world"] = rworld
+out["romance_panels"] = rpanels
+out["romance_prompts"] = [prompts.build(p, rworld, styles) for p in rpanels]
+out["romance_prompts_anime"] = [prompts.build(p, rworld, styles, "webtoon_romance") for p in rpanels]
+for p in out["romance_prompts"] + out["romance_prompts_anime"]:
+    p.pop("preset")
+
 out["sheet_prompt"] = prompts.build(render.sheet_panel(world["characters"][0]), world, styles)
 out["sheet_prompt"].pop("preset")
 

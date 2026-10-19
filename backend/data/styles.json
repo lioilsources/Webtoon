@@ -100,6 +100,703 @@
       "scheduler": "normal",
       "steps": 28,
       "cfg": 5.5
+    },
+    "photo_juggernaut": {
+      "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "soft romantic lighting",
+        "film grain"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "steps": 32,
+      "cfg": 4.5
+    },
+    "photo_realvis_film": {
+      "checkpoint": "RealVisXL_V5.0.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "warm golden hour light",
+        "kodak portra 400",
+        "film grain",
+        "analog photo"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 5.0
+    },
+    "photo_cyberreal_night": {
+      "checkpoint": "CyberRealisticXL_v10.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "blue hour",
+        "neon reflections",
+        "bokeh",
+        "moody cinematic lighting"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_2m_sde",
+      "scheduler": "karras",
+      "steps": 30,
+      "cfg": 4.5
+    },
+    "watercolor_paris": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "watercolor (medium)",
+        "traditional media",
+        "soft lighting",
+        "pastel colors",
+        "romantic"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "art_nouveau_mucha": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [
+        "(artist:alphonse mucha:0.9)"
+      ],
+      "aesthetic_tags": [
+        "art nouveau",
+        "ornate border",
+        "flowers",
+        "decorative"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "western_comic": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "western comics (style)",
+        "comic book",
+        "bold lineart",
+        "vivid colors",
+        "halftone",
+        "dynamic lighting"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "manga_mono": {
+      "checkpoint": "animagine-xl-40-opt.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "(monochrome:1.4)",
+        "(greyscale:1.4)",
+        "manga",
+        "screentone",
+        "ink",
+        "hatching (texture)",
+        "shoujo"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "high score",
+        "great score",
+        "absurdres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "low score",
+        "bad score",
+        "average score",
+        "(colorful:1.2)",
+        "(color:1.2)",
+        "2girls",
+        "yuri"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "webtoon_romance": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "flat color",
+        "clean lineart",
+        "soft lighting",
+        "blush",
+        "romantic atmosphere",
+        "sparkle"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "webtoon_romance_artist": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [
+        "(artist:wlop:0.7)",
+        "(artist:mika pikazo:0.4)"
+      ],
+      "aesthetic_tags": [
+        "soft lighting",
+        "romantic atmosphere"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "painterly_oil": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "oil painting (medium)",
+        "painterly",
+        "impasto",
+        "warm colors",
+        "dramatic lighting",
+        "realistic"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "retro_citypop": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "1980s (style)",
+        "retro artstyle",
+        "city pop",
+        "neon lights",
+        "cel shading",
+        "purple sky"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "minimal_flat": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "minimalism",
+        "flat color",
+        "limited palette",
+        "no lineart",
+        "simple shading",
+        "graphic design"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.0
+    },
+    "photo_lightning": {
+      "checkpoint": "Juggernaut-XL-Lightning_4Steps.safetensors",
+      "prediction": "eps",
+      "natural": true,
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "golden hour",
+        "warm tones",
+        "candid",
+        "film grain"
+      ],
+      "quality_pos": [
+        "cinematic film still",
+        "photograph",
+        "35mm",
+        "natural skin texture",
+        "shallow depth of field",
+        "highly detailed"
+      ],
+      "quality_neg": [
+        "anime",
+        "cartoon",
+        "illustration",
+        "drawing",
+        "painting",
+        "3d render",
+        "cgi",
+        "doll",
+        "plastic skin",
+        "airbrushed",
+        "deformed",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "blurry",
+        "lowres",
+        "jpeg artifacts"
+      ],
+      "sampler": "dpmpp_sde",
+      "scheduler": "karras",
+      "steps": 6,
+      "cfg": 1.5
+    },
+    "ink_wash": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "ink wash painting",
+        "sumi-e",
+        "traditional media",
+        "limited palette",
+        "red accent"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "noir_mono": {
+      "checkpoint": "animagine-xl-40-opt.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "(monochrome:1.4)",
+        "(greyscale:1.4)",
+        "film noir",
+        "high contrast",
+        "dramatic shadows",
+        "rain"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "high score",
+        "great score",
+        "absurdres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "(colorful:1.2)",
+        "(color:1.2)",
+        "2girls",
+        "yuri"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "ligne_claire": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "ligne claire",
+        "european comics",
+        "flat color",
+        "clean lineart",
+        "bright colors"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "pastel_shoujo": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "shoujo manga",
+        "pastel colors",
+        "sparkle",
+        "flower background",
+        "soft focus",
+        "bloom"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "vintage_poster": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "retro poster",
+        "1950s (style)",
+        "vintage",
+        "muted colors",
+        "halftone",
+        "textured paper"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
+    },
+    "ukiyoe": {
+      "checkpoint": "noobai-xl-eps11.safetensors",
+      "prediction": "eps",
+      "artist_tags": [],
+      "aesthetic_tags": [
+        "ukiyo-e",
+        "woodblock print",
+        "flat color",
+        "traditional media",
+        "patterned background"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "newest",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5
     }
   },
   "always_negative": [
@@ -112,7 +809,13 @@
     "username",
     "comic",
     "multiple views",
-    "panel"
+    "panel",
+    "2koma",
+    "4koma",
+    "multiple panels",
+    "split screen",
+    "border",
+    "collage"
   ],
   "sfw_positive": [
     "general"
@@ -178,6 +881,59 @@
     "establishing": [
       1216,
       832
+    ]
+  },
+  "kids_negative": [
+    "swimsuit",
+    "bikini",
+    "bare shoulders",
+    "midriff",
+    "navel",
+    "skin tight",
+    "bodysuit",
+    "thighs",
+    "sexy",
+    "seductive",
+    "revealing clothes",
+    "horror",
+    "gore",
+    "scary face"
+  ],
+  "adult_negative": [
+    "child",
+    "loli",
+    "shota",
+    "aged down",
+    "teenager",
+    "school uniform",
+    "nsfw",
+    "nude",
+    "topless",
+    "see-through",
+    "lingerie",
+    "swimsuit"
+  ],
+  "natural_shot": {
+    "close-up": [
+      "close-up portrait",
+      "face in focus"
+    ],
+    "medium": [
+      "medium shot",
+      "waist up"
+    ],
+    "wide": [
+      "wide shot",
+      "full body",
+      "environment visible"
+    ],
+    "over-shoulder": [
+      "over-the-shoulder shot"
+    ],
+    "establishing": [
+      "establishing shot",
+      "wide cityscape",
+      "no people"
     ]
   }
 }

@@ -110,6 +110,10 @@ func World(ctx context.Context, s *store.Store, raw []byte, ownerID, visibility 
 			if refs == nil {
 				refs = []string{}
 			}
+			outfits := c.Outfits
+			if outfits == nil {
+				outfits = map[string]string{}
+			}
 			var ip json.RawMessage
 			if c.IPAdapter != nil {
 				ip = store.MustJSON(c.IPAdapter)
@@ -119,6 +123,7 @@ func World(ctx context.Context, s *store.Store, raw []byte, ownerID, visibility 
 				CountTag: c.CountTag, Description: c.Description, Personality: c.Personality,
 				SpeechStyle: c.SpeechStyle, TagPrompt: c.TagPrompt, ReferenceImages: store.MustJSON(refs),
 				IdentityLevel: def(c.IdentityLevel, "prompt"), IdentityAsset: asset, IpAdapter: ip, Position: int32(i),
+				Base: c.Base, Photo: c.Photo, Outfits: store.MustJSON(outfits),
 			}); err != nil {
 				return fmt.Errorf("character %s: %w", c.ID, err)
 			}

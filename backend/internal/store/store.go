@@ -95,6 +95,7 @@ func CharacterFromRow(c dbq.Character) domain.Character {
 		ID: c.ID, OwnerID: c.OwnerID, Name: c.Name, Role: c.Role, CountTag: c.CountTag, Description: c.Description,
 		Personality: c.Personality, SpeechStyle: c.SpeechStyle, TagPrompt: c.TagPrompt,
 		ReferenceImages: unmarshalOr(c.ReferenceImages, []string{}), IdentityLevel: c.IdentityLevel,
+		Base: c.Base, Photo: c.Photo, Outfits: unmarshalOr(c.Outfits, map[string]string{}),
 	}
 	if c.IdentityAsset != nil {
 		ch.IdentityAsset = *c.IdentityAsset

@@ -300,7 +300,7 @@ INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, descripti
                         tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
 VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14,
         (SELECT COALESCE(max(c.position) + 1, 0) FROM characters c WHERE c.world_id = $1))
-RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter
+RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter, base, photo, outfits
 `
 
 type CreateCharacterParams struct {
@@ -355,6 +355,9 @@ func (q *Queries) CreateCharacter(ctx context.Context, arg CreateCharacterParams
 		&i.Position,
 		&i.CreatedAt,
 		&i.IpAdapter,
+		&i.Base,
+		&i.Photo,
+		&i.Outfits,
 	)
 	return i, err
 }
@@ -726,7 +729,7 @@ func (q *Queries) GetCampaignForUpdate(ctx context.Context, id string) (Campaign
 }
 
 const getCharacter = `-- name: GetCharacter :one
-SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter FROM characters WHERE world_id = $1 AND id = $2
+SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter, base, photo, outfits FROM characters WHERE world_id = $1 AND id = $2
 `
 
 type GetCharacterParams struct {
@@ -754,6 +757,9 @@ func (q *Queries) GetCharacter(ctx context.Context, arg GetCharacterParams) (Cha
 		&i.Position,
 		&i.CreatedAt,
 		&i.IpAdapter,
+		&i.Base,
+		&i.Photo,
+		&i.Outfits,
 	)
 	return i, err
 }
@@ -1061,7 +1067,7 @@ func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error 
 }
 
 const listCharacters = `-- name: ListCharacters :many
-SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter FROM characters WHERE world_id = $1 ORDER BY position, created_at
+SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter, base, photo, outfits FROM characters WHERE world_id = $1 ORDER BY position, created_at
 `
 
 func (q *Queries) ListCharacters(ctx context.Context, worldID string) ([]Character, error) {
@@ -1090,6 +1096,9 @@ func (q *Queries) ListCharacters(ctx context.Context, worldID string) ([]Charact
 			&i.Position,
 			&i.CreatedAt,
 			&i.IpAdapter,
+			&i.Base,
+			&i.Photo,
+			&i.Outfits,
 		); err != nil {
 			return nil, err
 		}
@@ -1786,7 +1795,7 @@ UPDATE characters SET
     identity_asset   = CASE WHEN $10::bool THEN $11 ELSE identity_asset END,
     ip_adapter       = CASE WHEN $12::bool THEN $13 ELSE ip_adapter END
 WHERE world_id = $14 AND id = $15
-RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter
+RETURNING world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter, base, photo, outfits
 `
 
 type UpdateCharacterParams struct {
@@ -1843,6 +1852,9 @@ func (q *Queries) UpdateCharacter(ctx context.Context, arg UpdateCharacterParams
 		&i.Position,
 		&i.CreatedAt,
 		&i.IpAdapter,
+		&i.Base,
+		&i.Photo,
+		&i.Outfits,
 	)
 	return i, err
 }
@@ -1976,14 +1988,16 @@ func (q *Queries) UpdateWorld(ctx context.Context, arg UpdateWorldParams) (World
 
 const upsertCharacter = `-- name: UpsertCharacter :exec
 INSERT INTO characters (world_id, id, owner_id, name, role, count_tag, description, personality, speech_style,
-                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
+                        tag_prompt, reference_images, identity_level, identity_asset, ip_adapter, position,
+                        base, photo, outfits)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18)
 ON CONFLICT (world_id, id) DO UPDATE SET
     owner_id = EXCLUDED.owner_id, name = EXCLUDED.name, role = EXCLUDED.role, count_tag = EXCLUDED.count_tag,
     description = EXCLUDED.description, personality = EXCLUDED.personality, speech_style = EXCLUDED.speech_style,
     tag_prompt = EXCLUDED.tag_prompt, reference_images = EXCLUDED.reference_images,
     identity_level = EXCLUDED.identity_level, identity_asset = EXCLUDED.identity_asset,
-    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position
+    ip_adapter = EXCLUDED.ip_adapter, position = EXCLUDED.position,
+    base = EXCLUDED.base, photo = EXCLUDED.photo, outfits = EXCLUDED.outfits
 `
 
 type UpsertCharacterParams struct {
@@ -2002,6 +2016,9 @@ type UpsertCharacterParams struct {
 	IdentityAsset   *string
 	IpAdapter       json.RawMessage
 	Position        int32
+	Base            string
+	Photo           string
+	Outfits         json.RawMessage
 }
 
 func (q *Queries) UpsertCharacter(ctx context.Context, arg UpsertCharacterParams) error {
@@ -2021,6 +2038,9 @@ func (q *Queries) UpsertCharacter(ctx context.Context, arg UpsertCharacterParams
 		arg.IdentityAsset,
 		arg.IpAdapter,
 		arg.Position,
+		arg.Base,
+		arg.Photo,
+		arg.Outfits,
 	)
 	return err
 }
