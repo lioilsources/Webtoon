@@ -21,7 +21,7 @@ from pathlib import Path
 
 from common import DATA, LLM_MODEL, LLM_URL, load_json, save_json
 
-SKILL = Path(__file__).resolve().parent.parent / "skills" / "storyboard-writer"
+SKILL = Path(os.environ.get("WEBTOON_SKILL_DIR") or Path(__file__).resolve().parent.parent / "skills" / "storyboard-writer")
 SHOTS = ["establishing", "wide", "medium", "close-up", "over-shoulder"]
 KINDS = ["speech", "thought", "shout", "narration"]
 GAPS = ["small", "medium", "large"]
@@ -44,17 +44,60 @@ def chat(messages, schema=None, temperature=0.4, max_tokens=6000):
     if CF_ID and CF_SECRET:
         req.add_header("CF-Access-Client-Id", CF_ID)
         req.add_header("CF-Access-Client-Secret", CF_SECRET)
-    with urllib.request.urlopen(req, timeout=600) as r:
-        content = json.load(r)["choices"][0]["message"]["content"]
+    if os.environ.get("WEBTOON_LLM_STREAM"):  # slow models: stream so the gateway's request timeout never fires
+        body["stream"] = True
+        req.data = json.dumps(body).encode()
+        parts, reasoning = [], []
+        with urllib.request.urlopen(req, timeout=1800) as r:
+            for line in r:
+                line = line.decode().strip()
+                if not line.startswith("data: ") or line == "data: [DONE]":
+                    continue
+                delta = json.loads(line[6:])["choices"][0].get("delta", {})
+                parts.append(delta.get("content") or "")
+                reasoning.append(delta.get("reasoning_content") or "")
+        # Nemotron's reasoning parser routes the whole answer to reasoning_content when thinking is off.
+        content = "".join(parts) or "".join(reasoning)
+    else:
+        with urllib.request.urlopen(req, timeout=600) as r:
+            msg = json.load(r)["choices"][0]["message"]
+            content = msg.get("content") or msg.get("reasoning_content") or ""
     content = re.sub(r"^```(?:json)?\s*|\s*```$", "", content.strip())
-    return json.loads(content)
+    if os.environ.get("WEBTOON_ADAPT_DUMP"):
+        d = Path(os.environ["WEBTOON_ADAPT_DUMP"])
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"last_raw_{os.getpid()}.txt").write_text(content)
+    # First JSON object only: some models append a second copy or trailing text after it.
+    return json.JSONDecoder().raw_decode(content[content.find("{"):])[0]
 
 
 # --- adaptation ---------------------------------------------------------------------------------
 
+def missing_fields(story):
+    """Required keys from story.schema.json, checked by hand (no jsonschema dependency)."""
+    req = {"story": ["id", "title", "synopsis", "ending", "characters", "locations", "panels"],
+           "character": ["id", "name", "gender", "base", "outfits", "photo"],
+           "location": ["id", "name", "tag_prompt"],
+           "panel": ["shot", "location_id", "characters", "visual_tags", "bubbles", "sfx", "gap_after"]}
+    errs = [f"missing field '{k}'" for k in req["story"] if k not in story]
+    for c in story.get("characters", []):
+        errs += [f"character {c.get('id', '?')}: missing field '{k}'" for k in req["character"] if k not in c]
+        if "default" not in c.get("outfits", {}):
+            errs.append(f"character {c.get('id', '?')}: outfits need a 'default'")
+    for l in story.get("locations", []):
+        errs += [f"location {l.get('id', '?')}: missing field '{k}'" for k in req["location"] if k not in l]
+    for i, p in enumerate(story.get("panels", [])):
+        errs += [f"panel {i}: missing field '{k}'" for k in req["panel"] if k not in p]
+        for b in p.get("bubbles", []):
+            errs += [f"panel {i}: bubble missing '{k}'" for k in ("speaker_id", "text", "kind") if k not in b]
+    return errs
+
+
 def check(story, world_tags=None):
     """Rule checks the schema cannot express. Returns a list of problems (empty = ok)."""
-    errs = []
+    errs = missing_fields(story)
+    if errs:  # the schema was not enforced (no guided decoding): report instead of crashing on a missing key
+        return errs
     chars = {c["id"]: c for c in story["characters"]}
     locs = {l["id"] for l in story["locations"]}
     for c in story["characters"]:
@@ -71,7 +114,17 @@ def check(story, world_tags=None):
         errs.append("panel 0 must be an establishing shot without characters")
     if panels[-1]["gap_after"] != "large":
         errs.append("last panel must have gap_after 'large'")
+    animated = [i for i, p in enumerate(panels) if p.get("animate")]
+    if len(animated) > 2:
+        errs.append(f"at most 2 animated panels per story, got {len(animated)}: {animated}")
     for i, p in enumerate(panels):
+        if p.get("animate"):
+            if not p.get("motion"):
+                errs.append(f"panel {i}: animate=true needs a motion prompt")
+            elif BANNED.search(p["motion"]) or re.search(r"\b(kiss|undress|unbutton|remov\w+)\b", p["motion"], re.I):
+                errs.append(f"panel {i}: motion prompt contains a banned action")
+            if len(p["characters"]) > 1 and not re.search(r"\b(ambient|only|static)\b", p["motion"], re.I):
+                errs.append(f"panel {i}: two people may only get ambient motion (say 'ambient only, static camera')")
         if p["location_id"] not in locs:
             errs.append(f"panel {i}: unknown location {p['location_id']}")
         ids = [c["id"] for c in p["characters"]]
@@ -127,7 +180,8 @@ def to_m0(story, style):
             tags = ["couple", "hetero"] + tags
         panels.append({"shot": p["shot"], "location_id": p["location_id"], "characters": p["characters"],
                        "visual_tags": tags, "bubbles": p["bubbles"],
-                       "sfx": [{"text": s, "style": "bold"} for s in p["sfx"]], "gap_after": p["gap_after"]})
+                       "sfx": [{"text": s, "style": "bold"} for s in p["sfx"]], "gap_after": p["gap_after"],
+                       **({"animate": True, "motion": p["motion"]} if p.get("animate") and p.get("motion") else {})})
     return world, {"title": story["title"], "fonts": "romance", "panels": panels}
 
 
@@ -148,8 +202,15 @@ def adapt(args):
         return
     vocab = set(load_json(DATA / "wd14_tags.json")) if (DATA / "wd14_tags.json").exists() else None
     for attempt in range(args.attempts):
-        story = chat(messages, schema=schema, temperature=0 if attempt == 0 else 0.5)
+        try:
+            story = chat(messages, schema=schema, temperature=0 if attempt == 0 else 0.5)
+        except ValueError as e:  # not JSON at all (model ignored the schema): counts as a failed attempt
+            print(f"attempt {attempt + 1}: invalid JSON: {e}")
+            messages.append({"role": "user", "content": f"Your answer was not valid JSON ({e}). Return the full JSON object again, nothing else."})
+            continue
         story["id"] = args.id
+        if os.environ.get("WEBTOON_ADAPT_DUMP"):  # keep every raw attempt for A/B analysis
+            save_json(Path(os.environ["WEBTOON_ADAPT_DUMP"]) / f"{args.id}.a{attempt + 1}.json", story)
         errs = check(story, vocab)
         if not errs:
             break
@@ -213,6 +274,55 @@ def qa(args):
     print(f"{sid}: {len(bad)}/{n} flagged; redo → m0/fix_panels.sh {sid}:{redo}" if redo else f"{sid}: all {n} panels ok")
 
 
+PICK_SCHEMA = {"title": "MotionPick", "type": "object", "additionalProperties": False, "required": ["panels"],
+               "properties": {"panels": {"type": "array", "maxItems": 2, "items": {
+                   "type": "object", "additionalProperties": False, "required": ["n", "motion"],
+                   "properties": {"n": {"type": "integer", "minimum": 0}, "motion": {"type": "string", "maxLength": 120}}}}}}
+
+
+def pick_motion(args):
+    """Existing (already rendered) storyboard → the model picks <= 2 panels to loop and writes their motion prompts."""
+    d = DATA / "stories" / args.pick_motion
+    sb = load_json(d / "storyboard.json")
+    rules = (SKILL / "prompts" / "adapt_system.md").read_text()
+    rule = next(l for l in rules.splitlines() if l.startswith("- `animate` / `motion`"))
+    panels = [{"n": i, "shot": p["shot"], "people": len(p["characters"]), "tags": p["visual_tags"],
+               "text": " / ".join(b["text"] for b in p["bubbles"])} for i, p in enumerate(sb["panels"])]
+    messages = [{"role": "system", "content": "You pick panels of a finished SFW romance webtoon to animate as short seamless loops.\n"
+                 + rule.lstrip("- ") + "\nAnswer JSON: {\"panels\": [{\"n\": <panel index>, \"motion\": \"...\"}]}"},
+                {"role": "user", "content": json.dumps(panels, ensure_ascii=False)}]
+    if args.dry_run:
+        print(json.dumps(messages, ensure_ascii=False, indent=1)[:3000])
+        return
+    for attempt in range(args.attempts):
+        try:
+            got = chat(messages, schema=PICK_SCHEMA, temperature=0 if attempt == 0 else 0.5)["panels"][:2]
+        except (ValueError, KeyError) as e:
+            print(f"attempt {attempt + 1}: invalid answer: {e}")
+            continue
+        errs = []
+        for g in got:
+            p = sb["panels"][g["n"]] if 0 <= g["n"] < len(sb["panels"]) else None
+            if p is None:
+                errs.append(f"panel {g['n']} does not exist")
+            elif BANNED.search(g["motion"]) or re.search(r"\b(kiss\w*|undress|unbutton|remov\w+)\b", g["motion"], re.I):
+                errs.append(f"panel {g['n']}: banned action in motion")
+            elif len(p["characters"]) > 1 and not re.search(r"\b(ambient|only|static)\b", g["motion"], re.I):
+                errs.append(f"panel {g['n']}: two people may only get ambient motion")
+        if not errs:
+            break
+        print(f"attempt {attempt + 1}:", *errs, sep="\n  ")
+        messages.append({"role": "user", "content": "Fix: " + "; ".join(errs)})
+    else:
+        sys.exit("gave up")
+    for p in sb["panels"]:
+        p.pop("animate", None), p.pop("motion", None)
+    for g in got:
+        sb["panels"][g["n"]].update(animate=True, motion=g["motion"])
+    save_json(d / "storyboard.json", sb)
+    print(f"{args.pick_motion}: " + "; ".join(f"p{g['n']:02d} {g['motion']}" for g in got))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", nargs="?", help="screenplay text file")
@@ -220,9 +330,12 @@ def main():
     ap.add_argument("--style", default="fashion_editorial", help="preset from data/styles.json")
     ap.add_argument("--attempts", type=int, default=3)
     ap.add_argument("--qa", help="rendered story dir (out/<day>/<id>) → visual QA instead of adaptation")
+    ap.add_argument("--pick-motion", help="story id: let the model pick <= 2 rendered panels to animate")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
-    if args.qa:
+    if args.pick_motion:
+        pick_motion(args)
+    elif args.qa:
         qa(args)
     elif args.source and args.id:
         adapt(args)

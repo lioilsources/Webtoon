@@ -138,6 +138,34 @@ class EpisodeNotifier extends StateNotifier<EpisodeState> {
     }
   }
 
+  /// Turn a panel's loop on/off, change its motion prompt or length, or re-render it
+  /// (`reseed_video`). The backend answers with the panel; polling picks up the finished loop.
+  Future<bool> setMotion(int panelIndex, Map<String, dynamic> patch) async {
+    final ep = state.episode;
+    if (ep == null) return false;
+    state = state.copyWith(
+      busyPanels: {...state.busyPanels, panelIndex},
+      clearError: true,
+    );
+    try {
+      final p = await _api.updatePanelMotion(id, panelIndex, patch);
+      if (!mounted) return true;
+      state = state.copyWith(
+        episode: state.episode!.withPanel(p),
+        busyPanels: {...state.busyPanels}..remove(panelIndex),
+      );
+      _schedule();
+      return true;
+    } on ApiException catch (e) {
+      if (!mounted) return false;
+      state = state.copyWith(
+        busyPanels: {...state.busyPanels}..remove(panelIndex),
+        error: e.message,
+      );
+      return false;
+    }
+  }
+
   /// Re-render a failed (or any finished) panel; polling resumes until it is done.
   Future<bool> regenerate(int panelIndex) async {
     final ep = state.episode;

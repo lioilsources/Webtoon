@@ -81,6 +81,7 @@ type Episode struct {
 	Error         string
 	CreatedAt     time.Time
 	UpdatedAt     time.Time
+	TitleI18n     json.RawMessage
 }
 
 type Job struct {
@@ -133,6 +134,13 @@ type Panel struct {
 	Attempts      json.RawMessage
 	Error         string
 	UpdatedAt     time.Time
+	Animate       bool
+	Motion        string
+	LoopSeconds   int32
+	VideoStatus   string
+	VideoPath     string
+	VideoSeed     int64
+	VideoError    string
 }
 
 type Setting struct {

@@ -72,6 +72,14 @@ abstract class WebtoonApi {
   /// PATCH /episodes/{id}/panels/{n} {"regenerate": true}
   Future<Panel> regeneratePanel(String episodeId, int panel);
 
+  /// PATCH /episodes/{id}/panels/{n} with any of `animate`, `motion`, `loop_seconds`,
+  /// `reseed_video` — turns the panel's 1–3 s loop on/off or re-renders it.
+  Future<Panel> updatePanelMotion(
+    String episodeId,
+    int panel,
+    Map<String, dynamic> patch,
+  );
+
   /// Image for a panel's `image_url` (also used for any `/media/...` URL).
   ImageProvider panelImage(String imageUrl);
 

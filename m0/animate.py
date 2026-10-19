@@ -1,0 +1,186 @@
+"""Seamless 1–3 s loops for storyboard panels marked `animate` (PLAN-motion-panels.md, phase 1).
+
+    python3 m0/animate.py --world data/stories/<id>/world.json --storyboard data/stories/<id>/storyboard.json --run <id>
+                          [--panels 0,2] [--seconds 2] [--seed-base 9000] [--skip-existing] [--force] [--dry-run]
+
+Takes the finished still out/<day>/<run>/pNN_s0.png and runs Wan 2.2 I2V 14B (Lightning, 4 steps) through
+WanFirstLastFrameToVideo with start = end = that still, so the clip closes on itself without a cut. The graph is a
+port of video-stack/workflows/flf2v_lightning_portrait.json; the clip is saved as an animated WebP (the Flutter
+Image widget plays it natively) plus three frames (first, middle, last) that go through the same WD14 safety check
+as a panel. Output: out/<day>/<run>/pNN_video.webp, pNN_v{0,1,2}.png, meta_video.json.
+"""
+
+import argparse
+import datetime
+import os
+import random
+import time
+from pathlib import Path
+
+import comfy
+from common import OUT, load_json, save_json, wd14_tag
+from render import MAX_RESEED, safety
+
+FPS = 16
+MAX_ANIMATED = 2  # one loop costs about 11 stills (PLAN-motion-panels §3)
+# Video is rendered at ~0.34 Mpx and upscaled in the strip; HD costs 5x (video-stack phase3 bench).
+SIZE = {"portrait": (480, 704), "landscape": (704, 480)}
+NEGATIVE = ("blurry, static, low quality, watermark, text, letters, extra limbs, extra fingers, morphing, deformed, "
+            "distorted face, flicker, jitter, camera shake, nsfw, nude, cleavage, underwear")
+STYLE_TAIL_TAGS = 4
+
+
+def frames(seconds):
+    """Wan VAE compresses time 4:1 → length must be 4n+1; 16 fps → 17 / 33 / 49 for 1 / 2 / 3 s."""
+    return FPS * seconds + 1
+
+
+def size_for(png_path):
+    from PIL import Image
+    w, h = Image.open(png_path).size
+    return SIZE["portrait" if h >= w else "landscape"]
+
+
+def style_tail(preset):
+    return ", ".join(preset.get("aesthetic_tags", [])[:STYLE_TAIL_TAGS])
+
+
+def graph(start_image, motion, preset, width, height, length, seed, prefix):
+    """FLF2V loop graph: same nodes and parameters as video-stack flf2v_lightning_portrait.json, plus
+    SaveAnimatedWEBP and three SaveImage probes (first / middle / last frame) for the WD14 check."""
+    positive = motion.strip().rstrip(".")
+    tail = style_tail(preset)
+    if tail:
+        positive += ", " + tail
+    g = {
+        "unet_high": {"class_type": "UNETLoader", "inputs": {"unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors", "weight_dtype": "default"}},
+        "lora_high": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_high", 0], "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_high_noise_model.safetensors", "strength_model": 1.0}},
+        "shift_high": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_high", 0], "shift": 5.0}},
+        "unet_low": {"class_type": "UNETLoader", "inputs": {"unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors", "weight_dtype": "default"}},
+        "lora_low": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_low", 0], "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_low_noise_model.safetensors", "strength_model": 1.0}},
+        "shift_low": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_low", 0], "shift": 5.0}},
+        "clip": {"class_type": "CLIPLoader", "inputs": {"clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default"}},
+        "pos": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": positive}},
+        "neg": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": NEGATIVE}},
+        "still": {"class_type": "LoadImage", "inputs": {"image": start_image}},
+        "vae": {"class_type": "VAELoader", "inputs": {"vae_name": "wan_2.1_vae.safetensors"}},
+        # start_image and end_image are the same still → the loop closes on itself.
+        "flf": {"class_type": "WanFirstLastFrameToVideo", "inputs": {
+            "positive": ["pos", 0], "negative": ["neg", 0], "vae": ["vae", 0],
+            "width": width, "height": height, "length": length, "batch_size": 1,
+            "start_image": ["still", 0], "end_image": ["still", 0]}},
+        "sample_high": {"class_type": "KSamplerAdvanced", "inputs": {
+            "add_noise": "enable", "noise_seed": seed, "steps": 4, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple",
+            "model": ["shift_high", 0], "positive": ["flf", 0], "negative": ["flf", 1], "latent_image": ["flf", 2],
+            "start_at_step": 0, "end_at_step": 2, "return_with_leftover_noise": "enable"}},
+        "sample_low": {"class_type": "KSamplerAdvanced", "inputs": {
+            "add_noise": "disable", "noise_seed": seed, "steps": 4, "cfg": 1.0, "sampler_name": "euler", "scheduler": "simple",
+            "model": ["shift_low", 0], "positive": ["flf", 0], "negative": ["flf", 1], "latent_image": ["sample_high", 0],
+            "start_at_step": 2, "end_at_step": 4, "return_with_leftover_noise": "disable"}},
+        "decode": {"class_type": "VAEDecode", "inputs": {"samples": ["sample_low", 0], "vae": ["vae", 0]}},
+        "webp": {"class_type": "SaveAnimatedWEBP", "inputs": {
+            "images": ["decode", 0], "filename_prefix": prefix, "fps": float(FPS), "lossless": False, "quality": 80, "method": "default"}},
+    }
+    for name, idx in (("v0", 0), ("v1", length // 2), ("v2", length - 1)):
+        g[f"pick_{name}"] = {"class_type": "ImageFromBatch", "inputs": {"image": ["decode", 0], "batch_index": idx, "length": 1}}
+        g[f"save_{name}"] = {"class_type": "SaveImage", "inputs": {"images": [f"pick_{name}", 0], "filename_prefix": f"{prefix}_{name}"}}
+    return g
+
+
+def select_panels(panels, explicit, force):
+    if explicit:
+        idx = [int(i) for i in explicit.split(",")]
+    else:
+        idx = [i for i, p in enumerate(panels) if p.get("animate") and p.get("motion")]
+    if len(idx) > MAX_ANIMATED and not force:
+        raise SystemExit(f"{len(idx)} animated panels, limit is {MAX_ANIMATED} per story (one loop ≈ 11 stills); use --force to override")
+    return idx
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--world", required=True)
+    ap.add_argument("--storyboard", required=True)
+    ap.add_argument("--run", required=True)
+    ap.add_argument("--panels", default=None, help="comma separated panel indices (default: panels with animate+motion)")
+    ap.add_argument("--seconds", type=int, default=2, choices=(1, 2, 3))
+    ap.add_argument("--seed-base", type=int, default=9000)
+    ap.add_argument("--skip-existing", action="store_true", help="keep loops already on disk")
+    ap.add_argument("--force", action="store_true", help=f"allow more than {MAX_ANIMATED} loops")
+    ap.add_argument("--dry-run", action="store_true", help="write the graphs to out/, call nothing")
+    args = ap.parse_args()
+
+    world = load_json(args.world)
+    sb = load_json(args.storyboard)
+    styles = load_json(Path(__file__).resolve().parent.parent / "data" / "styles.json")
+    preset = styles["presets"][world["style_id"]]
+    panels = sb["panels"]
+    idx = select_panels(panels, args.panels, args.force)
+    day = os.environ.get("WEBTOON_DAY") or datetime.date.today().isoformat()
+    outdir = OUT / day / args.run
+    outdir.mkdir(parents=True, exist_ok=True)
+    length = frames(args.seconds)
+    print(f"{len(idx)} loops × {args.seconds} s ({length} frames) → {outdir}  (preset={world['style_id']})")
+
+    meta_path = outdir / "meta_video.json"
+    meta = load_json(meta_path) if meta_path.exists() else {"run": args.run, "fps": FPS, "videos": []}
+    if args.skip_existing:
+        meta["videos"] = [r for r in meta["videos"] if (outdir / r["file"]).exists()]
+        idx = [i for i in idx if not (outdir / f"p{i:02d}_video.webp").exists()]
+
+    jobs = []
+    for i in idx:
+        still = outdir / f"p{i:02d}_s0.png"
+        if not still.exists():
+            print(f"p{i:02d}: still {still.name} missing, render it first — skipped")
+            continue
+        motion = panels[i].get("motion") or "subtle ambient motion, static camera"
+        w, h = size_for(still)
+        jobs.append((i, still, motion, w, h, args.seed_base + i * 100))
+
+    if args.dry_run:
+        for i, still, motion, w, h, seed in jobs:
+            g = graph(f"webtoon_{args.run}_p{i:02d}.png", motion, preset, w, h, length, seed, f"webtoon/{day}/{args.run}/p{i:02d}_video")
+            path = outdir / f"p{i:02d}_video_graph.json"
+            save_json(path, g)
+            print(f"[p{i:02d} {w}x{h} len={length} seed={seed}] + {g['pos']['inputs']['text']}\n  graph → {path}")
+        return
+    if not comfy.is_up():
+        raise SystemExit("ComfyUI is not reachable — check the Spark schedule (ComfyUI window 07–13) with Director.")
+
+    for i, still, motion, w, h, seed in jobs:
+        while (OUT / "PAUSE").exists():  # shared-GPU courtesy, same as render.py
+            time.sleep(20)
+        name = comfy.upload(still.read_bytes(), f"webtoon_{args.run}_p{i:02d}.png")
+        rec = {"panel": i, "seconds": args.seconds, "frames": length, "width": w, "height": h, "motion": motion, "attempts": []}
+        t0 = time.time()
+        for attempt in range(MAX_RESEED + 1):
+            if os.environ.get("WEBTOON_DEADLINE") and time.strftime("%H:%M") >= os.environ["WEBTOON_DEADLINE"]:
+                print(f"deadline {os.environ['WEBTOON_DEADLINE']} reached, stopping")
+                raise SystemExit(3)
+            s = seed if attempt == 0 else random.randint(0, 2**31)
+            g = graph(name, motion, preset, w, h, length, s, f"webtoon/{day}/{args.run}/p{i:02d}_video")
+            outs = comfy.run_outputs(g, timeout=1800)
+            webp = next((f for f in outs.get("webp", []) if f["filename"].lower().endswith(".webp")), None)
+            if webp is None:
+                raise RuntimeError(f"p{i:02d}: SaveAnimatedWEBP produced no file: {list(outs)}")
+            probes = {k: outs[f"save_{k}"][0]["bytes"] for k in ("v0", "v1", "v2")}
+            tags = {k: wd14_tag(b) for k, b in probes.items()}
+            bad = {k: v for k, t in tags.items() for v in [safety(t, world.get("audience"))] if v}
+            rec["attempts"].append({"seed": s, "unsafe": bad})
+            if not bad:
+                break
+        (outdir / f"p{i:02d}_video.webp").write_bytes(webp["bytes"])
+        for k, b in probes.items():
+            (outdir / f"p{i:02d}_{k}.png").write_bytes(b)
+        rec.update(file=f"p{i:02d}_video.webp", seed=s, elapsed_s=round(time.time() - t0, 1),
+                   status="failed" if bad else "ok", size_kb=len(webp["bytes"]) // 1024,
+                   ratings={k: t.get("rating") for k, t in tags.items()})
+        meta["videos"] = [r for r in meta["videos"] if r["panel"] != i] + [rec]
+        save_json(meta_path, meta)
+        print(f"p{i:02d} seed={s} {rec['status']} {rec['elapsed_s']}s {rec['size_kb']} kB")
+    print(f"done: {len(jobs)} loops, {sum(r['elapsed_s'] for r in meta['videos'] if r['panel'] in idx):.0f} s total")
+
+
+if __name__ == "__main__":
+    main()

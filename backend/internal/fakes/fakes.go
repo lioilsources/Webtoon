@@ -15,6 +15,7 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"regexp"
+	"strconv"
 	"strings"
 	"sync"
 	"sync/atomic"
@@ -33,6 +34,7 @@ type LLM struct {
 	// CharacterTags is the tag_prompt generation reply (gen_character SYSTEM, also for locations).
 	// Its repair pass maps "copper hair" to "orange hair" and drops everything else.
 	CharacterTags string
+	DropID        string // bubble translation leaves this id out (incomplete reply)
 	mu            sync.Mutex
 	calls         map[string]int
 }
@@ -44,7 +46,10 @@ const (
 	KindModeration = "moderation"
 	KindTagPrompt  = "tagprompt"
 	KindTagRepair  = "tagrepair"
+	KindBubbles    = "bubbles" // episode text translation (internal/translate)
 )
+
+var intoRE = regexp.MustCompile(`from (.+?) into (.+?)\.`)
 
 var unknownTagRE = regexp.MustCompile(`'([^']*)'`)
 
@@ -93,6 +98,29 @@ func (f *LLM) handle(w http.ResponseWriter, r *http.Request) {
 		}
 		b, _ := json.Marshal(map[string]any{"map": m})
 		content = string(b)
+	case strings.HasPrefix(system, "You translate the speech bubbles"):
+		// Every text comes back as "[<target language>] <original>"; f.DropID omits one id.
+		kind = KindBubbles
+		target := "?"
+		if m := intoRE.FindStringSubmatch(user); m != nil {
+			target = m[2]
+		}
+		var items []struct{ ID, Text string }
+		if i := strings.Index(user, "TEXTS (JSON):\n"); i >= 0 {
+			body := user[i+len("TEXTS (JSON):\n"):]
+			if j := strings.Index(body, "\n\nOutput JSON"); j >= 0 {
+				body = body[:j]
+			}
+			_ = json.Unmarshal([]byte(body), &items)
+		}
+		out := []map[string]string{}
+		for _, it := range items {
+			if it.ID != f.DropID {
+				out = append(out, map[string]string{"id": it.ID, "text": "[" + target + "] " + it.Text})
+			}
+		}
+		b, _ := json.Marshal(map[string]any{"translations": out})
+		content = string(b)
 	case system == "You are a strict continuity editor.":
 		kind, content = KindRuleCheck, f.Violations
 	case strings.HasPrefix(system, "You convert a character description"), strings.HasPrefix(system, "You convert a location description"):
@@ -140,14 +168,30 @@ type Comfy struct {
 	mu       sync.Mutex
 	graphs   []map[string]any
 	uploads  []string
-	pending  map[string]int // prompt id → remaining "not done yet" polls
+	pending  map[string]int  // prompt id → remaining "not done yet" polls
+	video    map[string]bool // prompt id → loop graph (WanFirstLastFrameToVideo)
 	seq      int
 	Pings    atomic.Int32
 	PNGBytes []byte
 }
 
+// IsVideoGraph reports whether an API-format graph is the motion-panel loop (comfy.VideoWorkflow).
+func IsVideoGraph(g map[string]any) bool {
+	for _, n := range g {
+		if m, ok := n.(map[string]any); ok && m["class_type"] == "WanFirstLastFrameToVideo" {
+			return true
+		}
+	}
+	return false
+}
+
+// TinyWEBP is a minimal RIFF/WEBP container: enough for comfy.IsWebP, not a decodable picture.
+func TinyWEBP() []byte {
+	return []byte("RIFF\x1a\x00\x00\x00WEBPVP8 \x0e\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")
+}
+
 func NewComfy() *Comfy {
-	f := &Comfy{pending: map[string]int{}, PNGBytes: TinyPNG()}
+	f := &Comfy{pending: map[string]int{}, video: map[string]bool{}, PNGBytes: TinyPNG()}
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /system_stats", func(w http.ResponseWriter, r *http.Request) {
 		f.Pings.Add(1)
@@ -157,7 +201,7 @@ func NewComfy() *Comfy {
 		var body struct {
 			Prompt map[string]any `json:"prompt"`
 		}
-		if err := json.NewDecoder(r.Body).Decode(&body); err != nil || body.Prompt["sample"] == nil {
+		if err := json.NewDecoder(r.Body).Decode(&body); err != nil || (body.Prompt["sample"] == nil && !IsVideoGraph(body.Prompt)) {
 			http.Error(w, "bad graph", 400)
 			return
 		}
@@ -165,6 +209,7 @@ func NewComfy() *Comfy {
 		f.seq++
 		id := fmt.Sprintf("p%d", f.seq)
 		f.pending[id] = 1
+		f.video[id] = IsVideoGraph(body.Prompt)
 		f.graphs = append(f.graphs, body.Prompt)
 		f.mu.Unlock()
 		json.NewEncoder(w).Encode(map[string]any{"prompt_id": id, "number": f.seq, "node_errors": map[string]any{}}) //nolint:errcheck
@@ -181,14 +226,30 @@ func NewComfy() *Comfy {
 			w.Write([]byte(`{}`))
 			return
 		}
+		img := func(name string) map[string]any {
+			return map[string]any{"images": []any{map[string]any{"filename": name, "subfolder": "webtoon", "type": "output"}}}
+		}
+		outputs := map[string]any{"save": img(id + ".png")}
+		f.mu.Lock()
+		isVideo := f.video[id]
+		f.mu.Unlock()
+		if isVideo { // the loop graph saves one WebP and three frames (comfy.VideoWorkflow)
+			outputs = map[string]any{"save_webp": img(id + ".webp"), "save_first": img(id + "_f0.png"),
+				"save_mid": img(id + "_f16.png"), "save_last": img(id + "_f32.png")}
+		}
 		json.NewEncoder(w).Encode(map[string]any{id: map[string]any{ //nolint:errcheck
 			"status":  map[string]any{"status_str": "success", "completed": true},
-			"outputs": map[string]any{"save": map[string]any{"images": []any{map[string]any{"filename": id + ".png", "subfolder": "webtoon", "type": "output"}}}},
+			"outputs": outputs,
 		}})
 	})
 	mux.HandleFunc("GET /view", func(w http.ResponseWriter, r *http.Request) {
 		if r.URL.Query().Get("type") != "output" || r.URL.Query().Get("filename") == "" {
 			http.Error(w, "bad view", 400)
+			return
+		}
+		if strings.HasSuffix(r.URL.Query().Get("filename"), ".webp") {
+			w.Header().Set("Content-Type", "image/webp")
+			w.Write(TinyWEBP())
 			return
 		}
 		w.Header().Set("Content-Type", "image/png")
@@ -299,6 +360,7 @@ type ImageAPI struct {
 }
 
 type imageJob struct {
+	video    bool   // loop graph: outputs = webp + 3 frames
 	ID       string `json:"id"`
 	Status   string `json:"status"`
 	Error    string `json:"error,omitempty"`
@@ -344,7 +406,7 @@ func NewImageAPI() *ImageAPI {
 			return
 		}
 		f.submits++
-		j := &imageJob{ID: fmt.Sprintf("job%d", f.submits), Status: "queued", left: f.Polls}
+		j := &imageJob{ID: fmt.Sprintf("job%d", f.submits), Status: "queued", left: f.Polls, video: IsVideoGraph(body.Workflow)}
 		f.jobs[j.ID] = j
 		f.byRef[body.ClientRef] = j.ID
 		for name := range body.Inputs {
@@ -368,6 +430,9 @@ func NewImageAPI() *ImageAPI {
 					j.Status, j.Error = "error", "ComfyUI node error"
 				} else {
 					j.Status, j.NOutputs = "done", 1
+					if j.video {
+						j.NOutputs = 4
+					}
 				}
 			}
 		}
@@ -377,8 +442,14 @@ func NewImageAPI() *ImageAPI {
 		f.mu.Lock()
 		j, ok := f.jobs[r.PathValue("id")]
 		f.mu.Unlock()
-		if !ok || j.Status != "done" || r.PathValue("n") != "0" {
+		n, _ := strconv.Atoi(r.PathValue("n"))
+		if !ok || j.Status != "done" || n < 0 || n >= j.NOutputs {
 			http.Error(w, `{"error":"output not found"}`, 404)
+			return
+		}
+		if j.video && n == 0 {
+			w.Header().Set("Content-Type", "image/webp")
+			w.Write(TinyWEBP())
 			return
 		}
 		w.Header().Set("Content-Type", "image/png")

@@ -21,6 +21,12 @@ type JSONCaller interface {
 	JSON(ctx context.Context, system, user string, temperature float64) (json.RawMessage, error)
 }
 
+// SchemaCaller is a JSONCaller that can also force a JSON schema (vLLM guided decoding).
+// Callers type-assert for it and fall back to JSON when the client cannot.
+type SchemaCaller interface {
+	JSONSchema(ctx context.Context, system, user string, temperature float64, name string, schema json.RawMessage) (json.RawMessage, error)
+}
+
 type Client struct {
 	URL       string // base, e.g. http://192.168.88.66:8080/v1
 	Model     string
@@ -61,11 +67,12 @@ func ExtractJSON(text string) (json.RawMessage, error) {
 }
 
 type chatReq struct {
-	Model          string            `json:"model"`
-	Messages       []chatMsg         `json:"messages"`
-	ResponseFormat map[string]string `json:"response_format"`
-	Temperature    float64           `json:"temperature"`
-	MaxTokens      int               `json:"max_tokens"`
+	Model          string         `json:"model"`
+	Messages       []chatMsg      `json:"messages"`
+	ResponseFormat any            `json:"response_format"`
+	Temperature    float64        `json:"temperature"`
+	MaxTokens      int            `json:"max_tokens"`
+	TemplateKwargs map[string]any `json:"chat_template_kwargs,omitempty"`
 }
 
 type chatMsg struct {
@@ -76,9 +83,20 @@ type chatMsg struct {
 // JSON runs one chat completion in JSON mode and returns the parsed object.
 // Transport errors and 502/503/504 are reported as upstream.Unavailable.
 func (c *Client) JSON(ctx context.Context, system, user string, temperature float64) (json.RawMessage, error) {
+	return c.call(ctx, system, user, temperature, map[string]string{"type": "json_object"}, nil)
+}
+
+// JSONSchema is JSON with a forced schema (response_format json_schema, strict) and thinking
+// switched off: qwen3 behind LiteLLM otherwise spends minutes reasoning before short structured answers.
+func (c *Client) JSONSchema(ctx context.Context, system, user string, temperature float64, name string, schema json.RawMessage) (json.RawMessage, error) {
+	rf := map[string]any{"type": "json_schema", "json_schema": map[string]any{"name": name, "schema": schema, "strict": true}}
+	return c.call(ctx, system, user, temperature, rf, map[string]any{"enable_thinking": false})
+}
+
+func (c *Client) call(ctx context.Context, system, user string, temperature float64, format any, kwargs map[string]any) (json.RawMessage, error) {
 	var last error
 	for attempt := 0; attempt <= c.Retries; attempt++ {
-		content, err := c.complete(ctx, system, user, temperature)
+		content, err := c.complete(ctx, system, user, temperature, format, kwargs)
 		if err != nil {
 			return nil, err
 		}
@@ -96,16 +114,17 @@ func (c *Client) JSON(ctx context.Context, system, user string, temperature floa
 	return nil, fmt.Errorf("LLM did not return valid JSON: %w", last)
 }
 
-func (c *Client) complete(ctx context.Context, system, user string, temperature float64) (string, error) {
+func (c *Client) complete(ctx context.Context, system, user string, temperature float64, format any, kwargs map[string]any) (string, error) {
 	body, _ := json.Marshal(chatReq{
 		Model: c.Model,
 		Messages: []chatMsg{
 			{Role: "system", Content: system},
 			{Role: "user", Content: user},
 		},
-		ResponseFormat: map[string]string{"type": "json_object"},
+		ResponseFormat: format,
 		Temperature:    temperature,
 		MaxTokens:      c.MaxTokens,
+		TemplateKwargs: kwargs,
 	})
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, c.URL+"/chat/completions", bytes.NewReader(body))
 	if err != nil {

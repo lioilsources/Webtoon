@@ -18,8 +18,13 @@ enum BubbleKind {
 
 class Bubble {
   final String? speakerId;
+
+  /// Original text, in the world's language. Editing always changes this.
   final String text;
   final BubbleKind kind;
+
+  /// Machine translations of [text] by language code (`en`, `pt-BR`, …).
+  final Map<String, String> i18n;
 
   /// Optional explicit tail target (§2 Panel.bubbles.anchor), normalized 0..1 in the panel.
   final Offset? anchor;
@@ -29,6 +34,7 @@ class Bubble {
     required this.text,
     this.kind = BubbleKind.speech,
     this.anchor,
+    this.i18n = const {},
   });
 
   factory Bubble.fromJson(Map<String, dynamic> j) {
@@ -39,8 +45,23 @@ class Bubble {
       text: str(j['text']),
       kind: BubbleKind.parse(str(j['kind'], 'speech')),
       anchor: ax != null && ay != null ? Offset(ax, ay) : null,
+      i18n: strMap(j['i18n']),
     );
   }
+
+  /// Text in [lang], or the original when there is no translation (null = original).
+  String textIn(String? lang) => lang == null ? text : (i18n[lang] ?? text);
+
+  /// This bubble as the reader shows it in [lang]; [i18n] stays so edits keep working.
+  Bubble localized(String? lang) => lang == null || !i18n.containsKey(lang)
+      ? this
+      : Bubble(
+          speakerId: speakerId,
+          text: i18n[lang]!,
+          kind: kind,
+          anchor: anchor,
+          i18n: i18n,
+        );
 
   /// Body for PATCH /episodes/{id}/panels/{n} (domain.Bubble).
   Map<String, dynamic> toJson() => {
@@ -49,11 +70,13 @@ class Bubble {
     'kind': kind.name,
   };
 
+  /// A changed text drops the translations (the backend retranslates the episode).
   Bubble copyWith({String? text, BubbleKind? kind}) => Bubble(
     speakerId: speakerId,
     text: text ?? this.text,
     kind: kind ?? this.kind,
     anchor: anchor,
+    i18n: text == null || text == this.text ? i18n : const {},
   );
 
   bool get isNarration => kind == BubbleKind.narration;
@@ -165,6 +188,16 @@ class Panel {
   final List<PanelCharacter> characters;
   final String error;
 
+  /// Motion panel: a 1–3 s seamless loop rendered from the still (PLAN-motion-panels).
+  /// [videoUrl] is set once the loop is ready; the still stays as poster and fallback.
+  final bool animate;
+  final String motion;
+  final int loopSeconds;
+  final String videoStatus; // '' | pending | rendering | ready | failed
+  final String? videoUrl;
+  final String videoError;
+  final int estimateSeconds;
+
   const Panel({
     required this.index,
     this.status = 'pending',
@@ -178,6 +211,13 @@ class Panel {
     this.sfx = const [],
     this.characters = const [],
     this.error = '',
+    this.animate = false,
+    this.motion = '',
+    this.loopSeconds = 2,
+    this.videoStatus = '',
+    this.videoUrl,
+    this.videoError = '',
+    this.estimateSeconds = 0,
   });
 
   factory Panel.fromJson(Map<String, dynamic> j) {
@@ -197,10 +237,24 @@ class Panel {
           .map((c) => PanelCharacter.fromJson(c, imageWidth: w, imageHeight: h))
           .toList(),
       error: str(j['error']),
+      animate: j['animate'] == true,
+      motion: str(j['motion']),
+      loopSeconds: integer(j['loop_seconds']) == 0
+          ? 2
+          : integer(j['loop_seconds']),
+      videoStatus: str(j['video_status']),
+      videoUrl: strOrNull(j['video_url']),
+      videoError: str(j['video_error']),
+      estimateSeconds: integer(j['estimate_seconds']),
     );
   }
 
   bool get isReady => status == 'ready' && imageUrl != null;
+
+  /// The loop is being rendered (the still is already shown).
+  bool get isVideoPending =>
+      animate && (videoStatus == 'pending' || videoStatus == 'rendering');
+  bool get hasVideo => animate && videoStatus == 'ready' && videoUrl != null;
   bool get isFailed => status == 'failed';
   bool get isPending => status == 'pending' || status == 'rendering';
 
@@ -210,6 +264,11 @@ class Panel {
     if (width > 0 && height > 0) return width / height;
     return (shot == 'wide' || shot == 'establishing') ? 1216 / 832 : 832 / 1216;
   }
+
+  /// The panel with every bubble in [lang] (null = original).
+  Panel localized(String? lang) => lang == null
+      ? this
+      : copyWith(bubbles: [for (final b in bubbles) b.localized(lang)]);
 
   Panel copyWith({List<Bubble>? bubbles, String? status}) => Panel(
     index: index,
@@ -224,6 +283,13 @@ class Panel {
     sfx: sfx,
     characters: characters,
     error: error,
+    animate: animate,
+    motion: motion,
+    loopSeconds: loopSeconds,
+    videoStatus: videoStatus,
+    videoUrl: videoUrl,
+    videoError: videoError,
+    estimateSeconds: estimateSeconds,
   );
 }
 
@@ -231,14 +297,26 @@ class Choice {
   final String id;
   final String kind; // closed | free | director
   final String text;
+  final Map<String, String> i18n;
 
-  const Choice({required this.id, required this.kind, required this.text});
+  const Choice({
+    required this.id,
+    required this.kind,
+    required this.text,
+    this.i18n = const {},
+  });
 
   factory Choice.fromJson(Map<String, dynamic> j) => Choice(
     id: str(j['id']),
     kind: str(j['kind'], 'closed'),
     text: str(j['text']),
+    i18n: strMap(j['i18n']),
   );
+
+  /// Same choice (same id) labelled in [lang]; the original when not translated.
+  Choice localized(String? lang) => lang == null || !i18n.containsKey(lang)
+      ? this
+      : Choice(id: id, kind: kind, text: i18n[lang]!, i18n: i18n);
 
   bool get isFree => kind == 'free';
 }
@@ -291,6 +369,15 @@ class Episode {
   final List<String> warnings;
   final String error;
 
+  /// Translated titles by language.
+  final Map<String, String> titleI18n;
+
+  /// Language of the originals (the world's), e.g. `cs`.
+  final String sourceLanguage;
+
+  /// Languages the whole episode is translated into (title, every bubble and choice).
+  final List<String> languages;
+
   const Episode({
     required this.id,
     this.campaignId = '',
@@ -305,6 +392,9 @@ class Episode {
     this.chosen,
     this.warnings = const [],
     this.error = '',
+    this.titleI18n = const {},
+    this.sourceLanguage = 'cs',
+    this.languages = const [],
   });
 
   factory Episode.fromJson(Map<String, dynamic> j) => Episode(
@@ -321,10 +411,26 @@ class Episode {
     chosen: Chosen.fromJson(j['chosen']),
     warnings: strList(j['warnings']),
     error: str(j['error']),
+    titleI18n: strMap(j['title_i18n']),
+    sourceLanguage: str(j['source_language'], 'cs'),
+    languages: strList(j['languages']),
   );
 
+  /// The language this episode is shown in for the reader's [preferred] one: the preferred
+  /// language when the episode is fully translated into it, otherwise the original (null).
+  String? displayLanguage(String? preferred) =>
+      preferred != null &&
+          preferred != sourceLanguage &&
+          languages.contains(preferred)
+      ? preferred
+      : null;
+
+  String titleIn(String? lang) =>
+      lang == null ? title : (titleI18n[lang] ?? title);
+
   /// Keep polling while the storyboard or any panel (incl. a regenerated one) is in flight.
-  bool get needsPolling => status.inProgress || panels.any((p) => p.isPending);
+  bool get needsPolling =>
+      status.inProgress || panels.any((p) => p.isPending || p.isVideoPending);
 
   List<Choice> get closedChoices => choices.where((c) => !c.isFree).toList();
 
@@ -349,6 +455,9 @@ class Episode {
     chosen: chosen,
     warnings: warnings,
     error: error,
+    titleI18n: titleI18n,
+    sourceLanguage: sourceLanguage,
+    languages: languages,
   );
 
   Episode withPanel(Panel p) =>

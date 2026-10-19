@@ -28,6 +28,7 @@ type Config struct {
 	LLM          llm.JSONCaller // tag_prompt generation (nil = 503)
 	Vocab        *tags.Vocab    // WD14 vocabulary for the tag repair pass
 	CORSOrigins  []string       // browser origins allowed to call the API (Flutter web); empty = no CORS headers
+	Langs        []string       // translation targets; a bubble edit re-enqueues translation (empty = off)
 }
 
 type Server struct {

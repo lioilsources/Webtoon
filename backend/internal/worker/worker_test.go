@@ -4,6 +4,8 @@ import (
 	"context"
 	"os"
 	"path/filepath"
+	"reflect"
+	"slices"
 	"strings"
 	"testing"
 	"time"
@@ -28,7 +30,7 @@ type harness struct {
 	media string
 }
 
-func newHarness(t *testing.T) *harness {
+func newHarness(t *testing.T, opts ...func(*worker.Config)) *harness {
 	t.Helper()
 	g := testutil.Golden(t)
 	h := &harness{t: t, media: t.TempDir()}
@@ -44,8 +46,11 @@ func newHarness(t *testing.T) *harness {
 	cc.PollInterval = time.Millisecond
 	gen := &storyboard.Generator{LLM: lc, Vocab: testutil.Vocab(t), Attempts: 3}
 	clock := func() time.Time { h.store.mu.Lock(); defer h.store.mu.Unlock(); return h.store.now }
-	h.w = worker.New(worker.Config{ID: "test", MediaDir: h.media, Backoff: 5 * time.Minute, RetryBase: time.Second, Clock: clock},
-		h.store, gen, cc, wd14.New(h.wd14.URL))
+	cfg := worker.Config{ID: "test", MediaDir: h.media, Backoff: 5 * time.Minute, RetryBase: time.Second, Clock: clock}
+	for _, o := range opts {
+		o(&cfg)
+	}
+	h.w = worker.New(cfg, h.store, gen, cc, wd14.New(h.wd14.URL))
 	return h
 }
 
@@ -516,5 +521,116 @@ func TestSheetAllUnsafeFails(t *testing.T) {
 	h2.drain()
 	if sh := h2.store.sheet("sh2"); sh.Status != "failed" || !strings.Contains(sh.Error, "tag_prompt") {
 		t.Fatalf("%+v", sh)
+	}
+}
+
+// --- motion panels -------------------------------------------------------------
+
+// animateFirstPanel marks the storyboard's first ready panel as a loop before its still renders.
+func (m *memStore) animatePanel(ep string, i int, motion string, seconds int) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	p := m.panels[ep][i]
+	p.SB.Animate, p.SB.Motion, p.SB.LoopSeconds, p.VideoStatus = true, motion, seconds, "pending"
+}
+
+func TestMotionPanelLoopAfterStill(t *testing.T) {
+	h := newHarness(t)
+	h.store.addCampaignWithEpisode("cp1", "ep1", "premise", nil)
+	h.step() // storyboard → panel jobs
+	h.store.animatePanel("ep1", 1, "her hair moves in the wind, static camera", 3)
+	h.drain() // stills, then the loop job the panel job enqueued
+
+	p := h.store.panel("ep1", 1)
+	if p.VideoStatus != "ready" || p.Video == nil || p.Video.Status != "ready" {
+		t.Fatalf("video %s %+v", p.VideoStatus, p.Video)
+	}
+	if !strings.HasSuffix(p.Video.VideoPath, ".webp") {
+		t.Fatalf("video path %q", p.Video.VideoPath)
+	}
+	b, err := os.ReadFile(filepath.Join(h.media, filepath.FromSlash(p.Video.VideoPath)))
+	if err != nil || !comfy.IsWebP(b) {
+		t.Fatalf("stored loop: %v webp=%v", err, comfy.IsWebP(b))
+	}
+	// The loop graph: FLF with start == end, 49 frames for 3 s, the panel's still as input, Wan negative.
+	var loop map[string]any
+	for _, g := range h.comfy.Graphs() {
+		if fakes.IsVideoGraph(g) {
+			loop = g
+		}
+	}
+	if loop == nil {
+		t.Fatal("no loop graph was submitted")
+	}
+	flf := loop["flf"].(map[string]any)["inputs"].(map[string]any)
+	if flf["length"].(float64) != 49 || !reflect.DeepEqual(flf["start_image"], flf["end_image"]) {
+		t.Fatalf("flf %v", flf)
+	}
+	if !slices.Contains(h.comfy.Uploads(), "loop_ep1_p01.png") {
+		t.Fatalf("still not uploaded: %v", h.comfy.Uploads())
+	}
+	pos := loop["pos"].(map[string]any)["inputs"].(map[string]any)["text"]
+	if pos != "her hair moves in the wind, static camera" {
+		t.Fatalf("motion prompt %v", pos)
+	}
+	// Static panels have no loop and the episode is ready regardless of the loop.
+	if h.store.panel("ep1", 0).VideoStatus != "" || h.store.episode("ep1").Status != "ready" {
+		t.Fatalf("panel0 video %q episode %s", h.store.panel("ep1", 0).VideoStatus, h.store.episode("ep1").Status)
+	}
+}
+
+func TestMotionPanelUnsafeFrameReseedsThenFails(t *testing.T) {
+	h := newHarness(t)
+	h.store.addCampaignWithEpisode("cp1", "ep1", "premise", nil)
+	h.step()
+	h.drain() // all stills ready, nothing animated yet
+	h.store.animatePanel("ep1", 2, "candle flickers, static camera", 1)
+	if err := h.store.EnqueuePanelVideo(context.Background(), worker.PanelVideoPayload{EpisodeID: "ep1", Panel: 2}, 3); err != nil {
+		t.Fatal(err)
+	}
+	h.wd14.Always.Store(true) // every frame unsafe → MaxReseed+1 renders, then failed
+	h.step()
+	p := h.store.panel("ep1", 2)
+	if p.VideoStatus != "failed" || p.Video.VideoPath != "" || len(p.Video.Attempts) != 1+wd14.MaxReseed {
+		t.Fatalf("video %+v", p.Video)
+	}
+	if p.Status != "ready" {
+		t.Fatal("a failed loop must not touch the still")
+	}
+	entries, _ := os.ReadDir(filepath.Join(h.media, "episodes", "ep1"))
+	for _, e := range entries {
+		if strings.HasSuffix(e.Name(), ".webp") {
+			t.Fatal("unsafe loop must not be stored")
+		}
+	}
+}
+
+func TestMotionPanelWaitsForStillAndComfy(t *testing.T) {
+	h := newHarness(t)
+	h.store.addCampaignWithEpisode("cp1", "ep1", "premise", nil)
+	h.step()
+	h.store.animatePanel("ep1", 0, "waves, static camera", 2)
+	// A loop job queued before the still exists retries (ordinary error, not a failure); with
+	// ComfyUI down the stills back off, so nothing can finish and nothing may fail.
+	h.store.enqueue(worker.KindPanelVideo, worker.PanelVideoPayload{EpisodeID: "ep1", Panel: 0}, 3)
+	h.comfy.Down.Store(true)
+	h.drain()
+	var loop *memJob
+	for _, j := range h.store.jobs {
+		if j.Kind == worker.KindPanelVideo {
+			loop = j
+		}
+		if j.Status == "failed" {
+			t.Fatalf("job failed while comfy is down: %+v", j)
+		}
+	}
+	if loop == nil || loop.Status != "queued" || !strings.Contains(loop.LastErr, "still not ready") {
+		t.Fatalf("loop job %+v", loop)
+	}
+	h.comfy.Down.Store(false)
+	h.store.advance(time.Hour)
+	h.drain()
+	if p := h.store.panel("ep1", 0); p.VideoStatus != "ready" {
+		t.Fatalf("video %s (%+v)", p.VideoStatus, p.Video)
 	}
 }

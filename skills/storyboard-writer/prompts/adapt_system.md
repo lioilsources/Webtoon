@@ -21,6 +21,7 @@ OUTPUT LANGUAGE: all reader-facing text (title, synopsis, bubbles, narration) in
 - `visual_tags`: 3–8 Danbooru tags for pose, action, expression, props, light, camera ("standing at railing", "holding wine glass", "looking back", "smile", "sunset", "from side"). NO design tags (hair, clothes come from the character), NO names, NO text.
 - `bubbles`: max 2 per panel, max ~14 words each. Use the source dialogue VERBATIM (fix typos, translate stray foreign words into {lang}, do not paraphrase). Inner monologue → kind "thought". Scene captions → kind "narration" with speaker_id "". A line shouted → "shout".
 - `sfx`: onomatopoeia only when the scene has a sound (BUM!, cink). Usually empty.
+- `animate` / `motion`: pick AT MOST 2 panels per story to render as a 1–3 s seamless loop: usually the establishing panel (ambient: waves, rain, neon, curtains) and one emotional beat with ONE person (hair in the wind, turning the head, a smile forming, raising a glass). Never a panel with two people doing something, never a kiss, never undressing or clothes moving. `motion` is an English prompt of at most 15 words: subject motion + ambient + "static camera". All other panels: animate=false, motion="".
 
 ## SFW rewrite rules (apply to every scene)
 - Undressing, lingerie, nudity, sex, "positions", bed scenes, lying together: NEVER drawn or written. Replace the whole scene with: an embrace or kiss (both fully dressed) → one panel WITHOUT people (closed door, lamp going out, curtain in the wind, city lights, sea) with a short narration → next scene, both dressed.

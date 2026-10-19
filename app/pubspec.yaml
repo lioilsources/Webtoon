@@ -38,6 +38,8 @@ dependencies:
   http: ^1.6.0
   collection: ^1.19.1
   file_selector: ^1.1.0
+  shared_preferences: ^2.5.3
+  visibility_detector: ^0.4.0+2
 
 dev_dependencies:
   flutter_test:
@@ -58,6 +60,13 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   uses-material-design: true
+
+  # CJK fallback for translated bubbles (Noto Sans JP/KR, OFL, ~19 MB). Plain assets, not
+  # `fonts:`, so they are loaded on demand (FontLoader) only when the reader picks ja/ko —
+  # the web build would otherwise download them at startup.
+  assets:
+    - assets/fonts/NotoSansJP-Variable.ttf
+    - assets/fonts/NotoSansKR-Variable.ttf
 
   # Bubble fonts (OFL, from cute_kid_fonts; copies of ../assets/fonts, licences alongside).
   fonts:

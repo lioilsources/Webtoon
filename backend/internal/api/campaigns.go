@@ -123,6 +123,7 @@ type episodeSummary struct {
 	ID          string          `json:"id"`
 	Index       int32           `json:"index"`
 	Title       string          `json:"title"`
+	TitleI18n   json.RawMessage `json:"title_i18n"`
 	Status      string          `json:"status"`
 	PanelsReady int32           `json:"panels_ready"`
 	PanelsTotal int32           `json:"panels_total"`
@@ -139,7 +140,7 @@ func (s *Server) campaignJSON(c dbq.Campaign, eps []dbq.Episode) map[string]any 
 	if eps != nil {
 		list := make([]episodeSummary, 0, len(eps))
 		for _, e := range eps {
-			list = append(list, episodeSummary{e.ID, e.Idx, e.Title, e.Status, e.PanelsReady, e.PanelsTotal,
+			list = append(list, episodeSummary{e.ID, e.Idx, e.Title, rawOr(e.TitleI18n, "{}"), e.Status, e.PanelsReady, e.PanelsTotal,
 				rawOr(e.Chosen, "null"), e.CreatedAt})
 		}
 		out["episodes"] = list

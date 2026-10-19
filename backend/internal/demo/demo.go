@@ -207,6 +207,8 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 				EpisodeID: e.ID, Idx: int32(i), Shot: p.Shot, LocationID: p.LocationID, GapAfter: p.GapAfter,
 				Bubbles: store.MustJSON(nonNil(p.Bubbles)), Sfx: store.MustJSON(nonNil(p.SFX)),
 				Characters: store.MustJSON(nonNil(p.Characters)), VisualTags: store.MustJSON(nonNil(p.VisualTags)),
+				Animate: p.Animate, Motion: p.Motion, LoopSeconds: int32(storyboard.LoopSecondsOr(p.LoopSeconds)),
+				VideoStatus: map[bool]string{true: "pending"}[p.Animate],
 			}); err != nil {
 				return err
 			}

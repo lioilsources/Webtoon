@@ -1,0 +1,277 @@
+{
+ "clip": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors",
+   "device": "default",
+   "type": "wan"
+  }
+ },
+ "decode": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "sample_low",
+    0
+   ],
+   "vae": [
+    "vae",
+    0
+   ]
+  }
+ },
+ "flf": {
+  "class_type": "WanFirstLastFrameToVideo",
+  "inputs": {
+   "batch_size": 1,
+   "end_image": [
+    "start",
+    0
+   ],
+   "height": 704,
+   "length": 33,
+   "negative": [
+    "neg",
+    0
+   ],
+   "positive": [
+    "pos",
+    0
+   ],
+   "start_image": [
+    "start",
+    0
+   ],
+   "vae": [
+    "vae",
+    0
+   ],
+   "width": 480
+  }
+ },
+ "frame_first": {
+  "class_type": "ImageFromBatch",
+  "inputs": {
+   "batch_index": 0,
+   "image": [
+    "decode",
+    0
+   ],
+   "length": 1
+  }
+ },
+ "frame_last": {
+  "class_type": "ImageFromBatch",
+  "inputs": {
+   "batch_index": 32,
+   "image": [
+    "decode",
+    0
+   ],
+   "length": 1
+  }
+ },
+ "frame_mid": {
+  "class_type": "ImageFromBatch",
+  "inputs": {
+   "batch_index": 16,
+   "image": [
+    "decode",
+    0
+   ],
+   "length": 1
+  }
+ },
+ "lora_high": {
+  "class_type": "LoraLoaderModelOnly",
+  "inputs": {
+   "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_high_noise_model.safetensors",
+   "model": [
+    "unet_high",
+    0
+   ],
+   "strength_model": 1
+  }
+ },
+ "lora_low": {
+  "class_type": "LoraLoaderModelOnly",
+  "inputs": {
+   "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_low_noise_model.safetensors",
+   "model": [
+    "unet_low",
+    0
+   ],
+   "strength_model": 1
+  }
+ },
+ "neg": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "clip",
+    0
+   ],
+   "text": "blurry, static, low quality, watermark, text"
+  }
+ },
+ "pos": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "clip",
+    0
+   ],
+   "text": "her hair moves in the sea breeze, static camera"
+  }
+ },
+ "sample_high": {
+  "class_type": "KSamplerAdvanced",
+  "inputs": {
+   "add_noise": "enable",
+   "cfg": 1,
+   "end_at_step": 2,
+   "latent_image": [
+    "flf",
+    2
+   ],
+   "model": [
+    "shift_high",
+    0
+   ],
+   "negative": [
+    "flf",
+    1
+   ],
+   "noise_seed": 4242,
+   "positive": [
+    "flf",
+    0
+   ],
+   "return_with_leftover_noise": "enable",
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "start_at_step": 0,
+   "steps": 4
+  }
+ },
+ "sample_low": {
+  "class_type": "KSamplerAdvanced",
+  "inputs": {
+   "add_noise": "disable",
+   "cfg": 1,
+   "end_at_step": 4,
+   "latent_image": [
+    "sample_high",
+    0
+   ],
+   "model": [
+    "shift_low",
+    0
+   ],
+   "negative": [
+    "flf",
+    1
+   ],
+   "noise_seed": 4242,
+   "positive": [
+    "flf",
+    0
+   ],
+   "return_with_leftover_noise": "disable",
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "start_at_step": 2,
+   "steps": 4
+  }
+ },
+ "save_first": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "filename_prefix": "webtoon/ep1/p03_loop_f0",
+   "images": [
+    "frame_first",
+    0
+   ]
+  }
+ },
+ "save_last": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "filename_prefix": "webtoon/ep1/p03_loop_f32",
+   "images": [
+    "frame_last",
+    0
+   ]
+  }
+ },
+ "save_mid": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "filename_prefix": "webtoon/ep1/p03_loop_f16",
+   "images": [
+    "frame_mid",
+    0
+   ]
+  }
+ },
+ "save_webp": {
+  "class_type": "SaveAnimatedWEBP",
+  "inputs": {
+   "filename_prefix": "webtoon/ep1/p03_loop",
+   "fps": 16,
+   "images": [
+    "decode",
+    0
+   ],
+   "lossless": false,
+   "method": "default",
+   "quality": 80
+  }
+ },
+ "shift_high": {
+  "class_type": "ModelSamplingSD3",
+  "inputs": {
+   "model": [
+    "lora_high",
+    0
+   ],
+   "shift": 5
+  }
+ },
+ "shift_low": {
+  "class_type": "ModelSamplingSD3",
+  "inputs": {
+   "model": [
+    "lora_low",
+    0
+   ],
+   "shift": 5
+  }
+ },
+ "start": {
+  "class_type": "LoadImage",
+  "inputs": {
+   "image": "loop_ep1_p03.png"
+  }
+ },
+ "unet_high": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+   "weight_dtype": "default"
+  }
+ },
+ "unet_low": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+   "weight_dtype": "default"
+  }
+ },
+ "vae": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "wan_2.1_vae.safetensors"
+  }
+ }
+}

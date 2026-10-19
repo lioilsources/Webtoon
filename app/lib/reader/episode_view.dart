@@ -4,10 +4,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/episode.dart';
 import '../models/world.dart';
 import '../providers/episode_provider.dart';
+import '../providers/language_provider.dart';
 import '../providers/providers.dart';
 import '../theme.dart';
 import 'bubble_edit_dialog.dart';
 import 'bubble_layout.dart';
+import 'motion_sheet.dart';
 import 'panel_view.dart';
 
 /// Max width of the strip: webtoons are narrow; on a wide window the strip is centred.
@@ -57,6 +59,9 @@ class EpisodeView extends ConsumerWidget {
       );
     }
     final notifier = ref.read(episodeProvider(episodeId).notifier);
+    // Bubbles in the reader's language when this episode is fully translated into it;
+    // edits still address the original panel (bubble indexes are the same).
+    final lang = ep.displayLanguage(ref.watch(readerLanguageProvider));
     return _Frame(
       child: LayoutBuilder(
         builder: (context, c) {
@@ -64,7 +69,7 @@ class EpisodeView extends ConsumerWidget {
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              EpisodeHeader(episode: ep),
+              EpisodeHeader(episode: ep, language: lang),
               if (ep.status.inProgress || ep.panels.any((p) => p.isPending))
                 GeneratingBanner(episode: ep),
               if (ep.status == EpisodeStatus.failed && ep.panelsReady == 0)
@@ -77,10 +82,13 @@ class EpisodeView extends ConsumerWidget {
               for (final p in ep.panels) ...[
                 PanelView(
                   key: ValueKey('panel-${ep.id}-${p.index}'),
-                  panel: p,
+                  panel: p.localized(lang),
                   image: p.imageUrl == null
                       ? null
                       : api.panelImage(p.imageUrl!),
+                  video: p.videoUrl == null
+                      ? null
+                      : api.panelImage(p.videoUrl!),
                   panelsTotal: ep.panelsTotal,
                   busy: st.busyPanels.contains(p.index),
                   onEditBubble: editable
@@ -88,6 +96,9 @@ class EpisodeView extends ConsumerWidget {
                       : null,
                   onRegenerate: editable
                       ? () => notifier.regenerate(p.index)
+                      : null,
+                  onMotion: editable && p.isReady
+                      ? () => _motion(context, notifier, p)
                       : null,
                 ),
                 SizedBox(height: gapHeight(p.gapAfter, width)),
@@ -98,6 +109,28 @@ class EpisodeView extends ConsumerWidget {
         },
       ),
     );
+  }
+
+  Future<void> _motion(
+    BuildContext context,
+    EpisodeNotifier notifier,
+    Panel panel,
+  ) async {
+    final edit = await showMotionSheet(context, panel: panel);
+    if (edit == null) return;
+    final unchanged =
+        !edit.reseed &&
+        edit.animate == panel.animate &&
+        (!edit.animate ||
+            (edit.motion == panel.motion &&
+                edit.loopSeconds == panel.loopSeconds));
+    if (unchanged) return;
+    final ok = await notifier.setMotion(panel.index, edit.toPatch());
+    if (!ok && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text('Pohyb panelu se nepodařilo uložit.')),
+      );
+    }
   }
 
   Future<void> _edit(
@@ -139,13 +172,16 @@ class _Frame extends StatelessWidget {
 
 class EpisodeHeader extends StatelessWidget {
   final Episode episode;
-  const EpisodeHeader({super.key, required this.episode});
+
+  /// Title language (null = original).
+  final String? language;
+  const EpisodeHeader({super.key, required this.episode, this.language});
 
   @override
   Widget build(BuildContext context) {
     final scheme = Theme.of(context).colorScheme;
     final title = episode.title.isNotEmpty
-        ? episode.title
+        ? episode.titleIn(language)
         : (episode.status.inProgress ? 'Nový díl' : 'Bez názvu');
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 36, 20, 22),

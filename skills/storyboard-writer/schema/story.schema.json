@@ -3,72 +3,235 @@
   "title": "WebtoonStory",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "title", "synopsis", "ending", "characters", "locations", "panels"],
+  "required": [
+    "id",
+    "title",
+    "synopsis",
+    "ending",
+    "characters",
+    "locations",
+    "panels"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z0-9_]+$"},
-    "title": {"type": "string", "minLength": 3, "maxLength": 80},
-    "synopsis": {"type": "string", "minLength": 10, "maxLength": 240},
-    "ending": {"type": "string", "minLength": 5, "maxLength": 120,
-               "description": "Ending as a constraint, e.g. 'Šťastný konec: zůstanou spolu.'"},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "synopsis": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 240
+    },
+    "ending": {
+      "type": "string",
+      "minLength": 5,
+      "maxLength": 120,
+      "description": "Ending as a constraint, e.g. 'Šťastný konec: zůstanou spolu.'"
+    },
     "characters": {
-      "type": "array", "minItems": 2, "maxItems": 4,
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 4,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "name", "gender", "base", "outfits", "photo"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "gender",
+          "base",
+          "outfits",
+          "photo"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
-          "name": {"type": "string"},
-          "gender": {"type": "string", "enum": ["f", "m"]},
-          "base": {"type": "string", "pattern": "^adult, mature (fe)?male, .+"},
-          "outfits": {
-            "type": "object", "required": ["default"], "minProperties": 1, "maxProperties": 4,
-            "additionalProperties": {"type": "string", "minLength": 8}
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
           },
-          "photo": {"type": "string", "minLength": 20, "maxLength": 200}
+          "name": {
+            "type": "string"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "f",
+              "m"
+            ]
+          },
+          "base": {
+            "type": "string",
+            "pattern": "^adult, mature (fe)?male, .+"
+          },
+          "outfits": {
+            "type": "object",
+            "required": [
+              "default"
+            ],
+            "minProperties": 1,
+            "maxProperties": 4,
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 8
+            }
+          },
+          "photo": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 200
+          }
         }
       }
     },
     "locations": {
-      "type": "array", "minItems": 2, "maxItems": 6,
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "name", "tag_prompt"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "tag_prompt"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^l_[a-z0-9_]+$"},
-          "name": {"type": "string"},
-          "tag_prompt": {"type": "string", "pattern": "^(indoors|outdoors), .+"}
+          "id": {
+            "type": "string",
+            "pattern": "^l_[a-z0-9_]+$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "tag_prompt": {
+            "type": "string",
+            "pattern": "^(indoors|outdoors), .+"
+          }
         }
       }
     },
     "panels": {
-      "type": "array", "minItems": 8, "maxItems": 12,
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 12,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["shot", "location_id", "characters", "visual_tags", "bubbles", "sfx", "gap_after"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "shot",
+          "location_id",
+          "characters",
+          "visual_tags",
+          "bubbles",
+          "sfx",
+          "gap_after",
+          "animate",
+          "motion"
+        ],
         "properties": {
-          "shot": {"type": "string", "enum": ["establishing", "wide", "medium", "close-up", "over-shoulder"]},
-          "location_id": {"type": "string"},
-          "characters": {
-            "type": "array", "maxItems": 2,
-            "items": {
-              "type": "object", "additionalProperties": false, "required": ["id"],
-              "properties": {"id": {"type": "string"}, "outfit": {"type": "string"}}
-            }
+          "shot": {
+            "type": "string",
+            "enum": [
+              "establishing",
+              "wide",
+              "medium",
+              "close-up",
+              "over-shoulder"
+            ]
           },
-          "visual_tags": {"type": "array", "minItems": 1, "maxItems": 8, "items": {"type": "string", "minLength": 2}},
-          "bubbles": {
-            "type": "array", "maxItems": 2,
+          "location_id": {
+            "type": "string"
+          },
+          "characters": {
+            "type": "array",
+            "maxItems": 2,
             "items": {
-              "type": "object", "additionalProperties": false, "required": ["speaker_id", "text", "kind"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id"
+              ],
               "properties": {
-                "speaker_id": {"type": "string"},
-                "text": {"type": "string", "minLength": 1, "maxLength": 140},
-                "kind": {"type": "string", "enum": ["speech", "thought", "shout", "narration"]}
+                "id": {
+                  "type": "string"
+                },
+                "outfit": {
+                  "type": "string"
+                }
               }
             }
           },
-          "sfx": {"type": "array", "maxItems": 2, "items": {"type": "string", "minLength": 1, "maxLength": 12}},
-          "gap_after": {"type": "string", "enum": ["small", "medium", "large"]}
+          "visual_tags": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 8,
+            "items": {
+              "type": "string",
+              "minLength": 2
+            }
+          },
+          "bubbles": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "speaker_id",
+                "text",
+                "kind"
+              ],
+              "properties": {
+                "speaker_id": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 140
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "speech",
+                    "thought",
+                    "shout",
+                    "narration"
+                  ]
+                }
+              }
+            }
+          },
+          "sfx": {
+            "type": "array",
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 12
+            }
+          },
+          "gap_after": {
+            "type": "string",
+            "enum": [
+              "small",
+              "medium",
+              "large"
+            ]
+          },
+          "animate": {
+            "type": "boolean",
+            "description": "Render this panel as a 1–3 s seamless loop (at most 2 per story)."
+          },
+          "motion": {
+            "type": "string",
+            "maxLength": 120,
+            "description": "Wan I2V motion prompt in English: subject motion + ambient + 'static camera'. Empty when animate is false."
+          }
         }
       }
     }

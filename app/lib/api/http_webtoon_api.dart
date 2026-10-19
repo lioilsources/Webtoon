@@ -209,6 +209,19 @@ class HttpWebtoonApi implements WebtoonApi {
       );
 
   @override
+  Future<Panel> updatePanelMotion(
+    String episodeId,
+    int panel,
+    Map<String, dynamic> patch,
+  ) async => Panel.fromJson(
+    await _send(
+      'PATCH',
+      '/episodes/${Uri.encodeComponent(episodeId)}/panels/$panel',
+      body: patch,
+    ),
+  );
+
+  @override
   ImageProvider panelImage(String imageUrl) =>
       NetworkImage(config.resolveMedia(imageUrl));
 

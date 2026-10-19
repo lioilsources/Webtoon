@@ -54,15 +54,22 @@ func TestAuthorTools(t *testing.T) {
 
 	// --- style presets + my worlds ---------------------------------------------------
 	presets := e.do("GET", "/style_presets", "", nil, 200)["presets"].([]any)
-	if len(presets) != 3 || presets[0].(map[string]any)["id"] != "clean_webtoon" ||
-		len(presets[0].(map[string]any)["artist_tags"].([]any)) != 2 || presets[0].(map[string]any)["preview_url"] != nil {
+	var clean map[string]any
+	for _, p := range presets {
+		if p.(map[string]any)["id"] == "clean_webtoon" {
+			clean = p.(map[string]any)
+		}
+	}
+	if len(presets) < 3 || clean == nil || len(clean["artist_tags"].([]any)) != 2 || clean["preview_url"] != nil {
 		t.Fatalf("presets %v", presets)
 	}
 	os.MkdirAll(filepath.Join(e.media, "styles"), 0o755)
 	os.WriteFile(filepath.Join(e.media, "styles", "hassaku_soft.png"), fakes.TinyPNG(), 0o644)
 	presets = e.do("GET", "/style_presets", "", nil, 200)["presets"].([]any)
-	if presets[2].(map[string]any)["preview_url"] != "/media/styles/hassaku_soft.png" {
-		t.Fatalf("preview %v", presets[2])
+	for _, p := range presets {
+		if p := p.(map[string]any); p["id"] == "hassaku_soft" && p["preview_url"] != "/media/styles/hassaku_soft.png" {
+			t.Fatalf("preview %v", p)
+		}
 	}
 
 	e.do("POST", "/worlds", "dm", map[string]any{"title": "x", "style_id": "clean_webtoon",

@@ -18,6 +18,7 @@ import (
 	"net/http/httptest"
 	"net/url"
 	"os"
+	"path/filepath"
 	"strings"
 	"sync"
 	"testing"
@@ -81,7 +82,7 @@ type env struct {
 	media string
 }
 
-func setup(t *testing.T) *env {
+func setup(t *testing.T, langs ...string) *env {
 	dsn := freshDB(t)
 	if err := db.Migrate(dsn); err != nil {
 		t.Fatal(err)
@@ -116,9 +117,9 @@ func setup(t *testing.T) *env {
 	cc.PollInterval = time.Millisecond
 	media := t.TempDir()
 	e.media = media
-	e.w = worker.New(worker.Config{ID: "it", MediaDir: media, Backoff: 5 * time.Minute, RetryBase: time.Second},
+	e.w = worker.New(worker.Config{ID: "it", MediaDir: media, Backoff: 5 * time.Minute, RetryBase: time.Second, Langs: langs},
 		s, &storyboard.Generator{LLM: lc, Vocab: testutil.Vocab(t)}, cc, wd14.New(e.wd14.URL))
-	e.srv = httptest.NewServer(api.New(api.Config{MediaDir: media, MaxUpload: 64 << 10, LLM: lc, Vocab: testutil.Vocab(t)}, s, e.w).Handler())
+	e.srv = httptest.NewServer(api.New(api.Config{MediaDir: media, MaxUpload: 64 << 10, LLM: lc, Vocab: testutil.Vocab(t), Langs: langs}, s, e.w).Handler())
 	t.Cleanup(e.srv.Close)
 	return e
 }
@@ -297,6 +298,45 @@ func TestFullFlow(t *testing.T) {
 	json.Unmarshal(after.Bubbles, &bubbles)
 	if bubbles[0]["text"] != "Nový text" {
 		t.Fatalf("bubbles %v", bubbles)
+	}
+
+	// --- motion panels ("Rozhýbat") ----------------------------------------------------
+	e.do("PATCH", "/episodes/"+ep2+"/panels/1", "player", map[string]any{"animate": true, "motion": "she takes off her coat"}, 400)
+	e.do("PATCH", "/episodes/"+ep2+"/panels/1", "player", map[string]any{"animate": true, "motion": "waves, static camera", "loop_seconds": 9}, 400)
+	mp := e.do("PATCH", "/episodes/"+ep2+"/panels/1", "player", map[string]any{"animate": true, "motion": "her hair moves in the wind, static camera", "loop_seconds": 3}, 202)
+	if mp["animate"] != true || mp["video_status"] != "pending" || mp["estimate_seconds"].(float64) != 200 || mp["video_url"] != nil {
+		t.Fatalf("motion patch %v", mp)
+	}
+	e.drain()
+	vp := e.do("GET", "/episodes/"+ep2, "player", nil, 200)["panels"].([]any)[1].(map[string]any)
+	if vp["video_status"] != "ready" || !strings.HasSuffix(vp["video_url"].(string), ".webp") || vp["image_url"] == nil {
+		t.Fatalf("loop not served next to the still: %v", vp)
+	}
+	if _, err := os.Stat(filepath.Join(e.media, strings.TrimPrefix(vp["video_url"].(string), "/media/"))); err != nil {
+		t.Fatal(err)
+	}
+	// Cap: two loops per episode.
+	e.do("PATCH", "/episodes/"+ep2+"/panels/2", "player", map[string]any{"animate": true, "motion": "rain on the window, static camera"}, 202)
+	e.do("PATCH", "/episodes/"+ep2+"/panels/3", "player", map[string]any{"animate": true, "motion": "candle flickers, static camera"}, 409)
+	// "Znovu" re-renders with a new seed; "Statický" forgets the loop but keeps the still.
+	e.drain()
+	seedBefore, _ := e.s.Q.GetPanel(ctx, mustPanelKey(ep2, 1))
+	e.do("PATCH", "/episodes/"+ep2+"/panels/1", "player", map[string]any{"reseed_video": true}, 202)
+	e.drain()
+	seedAfter, _ := e.s.Q.GetPanel(ctx, mustPanelKey(ep2, 1))
+	if seedAfter.VideoSeed == seedBefore.VideoSeed || seedAfter.VideoStatus != "ready" {
+		t.Fatalf("reseed: %d → %d (%s)", seedBefore.VideoSeed, seedAfter.VideoSeed, seedAfter.VideoStatus)
+	}
+	sp := e.do("PATCH", "/episodes/"+ep2+"/panels/1", "player", map[string]any{"animate": false}, 200)
+	if sp["animate"] != false || sp["video_url"] != nil || sp["image_url"] == nil {
+		t.Fatalf("static again: %v", sp)
+	}
+	// Regenerating the still of an animated panel renders the loop again from the new still.
+	e.do("PATCH", "/episodes/"+ep2+"/panels/2", "player", map[string]any{"regenerate": true}, 202)
+	e.drain()
+	rp, _ := e.s.Q.GetPanel(ctx, mustPanelKey(ep2, 2))
+	if rp.Status != "ready" || rp.VideoStatus != "ready" || rp.VideoPath == "" {
+		t.Fatalf("regenerate animated panel: %s / %s", rp.Status, rp.VideoStatus)
 	}
 
 	// --- free text, blocked by moderation -----------------------------------------------

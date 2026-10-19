@@ -48,6 +48,9 @@ class EpisodeSummary {
   final int panelsTotal;
   final Chosen? chosen;
 
+  /// Translated titles by language (complete or not: the history list just shows what exists).
+  final Map<String, String> titleI18n;
+
   const EpisodeSummary({
     required this.id,
     required this.index,
@@ -56,6 +59,7 @@ class EpisodeSummary {
     this.panelsReady = 0,
     this.panelsTotal = 0,
     this.chosen,
+    this.titleI18n = const {},
   });
 
   factory EpisodeSummary.fromJson(Map<String, dynamic> j) => EpisodeSummary(
@@ -66,7 +70,11 @@ class EpisodeSummary {
     panelsReady: integer(j['panels_ready']),
     panelsTotal: integer(j['panels_total']),
     chosen: Chosen.fromJson(j['chosen']),
+    titleI18n: strMap(j['title_i18n']),
   );
+
+  String titleIn(String? lang) =>
+      lang == null ? title : (titleI18n[lang] ?? title);
 }
 
 class Campaign {

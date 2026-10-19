@@ -121,6 +121,19 @@ List<PlacedBubble> layoutBubbles(
     return size;
   }
 
+  // Translations run longer than the original (German, Vietnamese…): a bubble may take at most
+  // this share of the panel height; above it the font shrinks in 8 % steps down to 60 %.
+  TextStyle fit(Bubble b, TextStyle style) {
+    final maxH = h * (b.isNarration ? 0.32 : 0.4);
+    final base = style.fontSize ?? 26 * s;
+    var f = 1.0;
+    while (f > 0.6 && measure(b, style).height > maxH) {
+      f *= 0.92;
+      style = style.copyWith(fontSize: base * f);
+    }
+    return style;
+  }
+
   Rect clampRect(Rect r) {
     final dx = r.left < margin
         ? margin - r.left
@@ -137,7 +150,7 @@ List<PlacedBubble> layoutBubbles(
   for (var i = 0; i < bubbles.length; i++) {
     final b = bubbles[i];
     if (!b.isNarration) continue;
-    final style = styleFor(b.kind, s);
+    final style = fit(b, styleFor(b.kind, s));
     final sz = measure(b, style);
     final rect = clampRect(Rect.fromLTWH(margin, y, sz.width, sz.height));
     out.add(
@@ -164,7 +177,7 @@ List<PlacedBubble> layoutBubbles(
     if (b.isNarration) continue;
     final slot = k + (hasNarration ? 1 : 0);
     k++;
-    final style = styleFor(b.kind, s);
+    final style = fit(b, styleFor(b.kind, s));
     final sz = measure(b, style);
     Rect at(bool right) {
       var r = Rect.fromLTWH(

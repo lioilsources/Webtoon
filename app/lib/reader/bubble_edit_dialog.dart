@@ -77,6 +77,16 @@ class _BubbleEditDialogState extends State<_BubbleEditDialog> {
               ).copyWith(color: Theme.of(context).colorScheme.onSurface),
               onSubmitted: (_) => _save(),
             ),
+            if (b.i18n.isNotEmpty)
+              Padding(
+                key: const ValueKey('bubble-edit-i18n-note'),
+                padding: const EdgeInsets.only(top: 4),
+                child: Text(
+                  'Upravuješ originál. Překlady do ${b.i18n.length} '
+                  '${b.i18n.length == 1 ? 'jazyka' : 'jazyků'} se po uložení vytvoří znovu.',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+              ),
           ],
         ),
       ),

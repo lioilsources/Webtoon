@@ -40,3 +40,11 @@ List<String> strList(Object? v) {
 }
 
 DateTime? date(Object? v) => v is String ? DateTime.tryParse(v) : null;
+
+/// `{"en": "…", "de": "…"}` → map of non-empty strings (translations, `i18n`).
+Map<String, String> strMap(Object? v) => {
+  if (v is Map)
+    for (final e in v.entries)
+      if (e.value is String && (e.value as String).isNotEmpty)
+        e.key.toString(): e.value as String,
+};

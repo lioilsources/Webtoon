@@ -6,6 +6,8 @@ import (
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/ol1n/webtoon/backend/internal/translate"
 )
 
 type Config struct {
@@ -27,6 +29,7 @@ type Config struct {
 	Seed           bool          // WEBTOON_SEED: import the embedded M0 world + styles on startup
 	SeedOwner      string        // WEBTOON_SEED_OWNER
 	CORSOrigins    []string      // WEBTOON_CORS_ORIGINS: comma-separated browser origins allowed to call the API ("*" = any)
+	Langs          []string      // WEBTOON_LANGS: translation targets of ready episodes (default all of translate.Langs; "none" = off)
 }
 
 func envList(key string) []string {
@@ -84,5 +87,17 @@ func Load() Config {
 		MaxAttempts:    envInt("WEBTOON_MAX_ATTEMPTS", 3),
 		Seed:           envOr("WEBTOON_SEED", "false") == "true",
 		SeedOwner:      envOr("WEBTOON_SEED_OWNER", "seed"),
+		Langs:          langs(),
+	}
+}
+
+func langs() []string {
+	switch v := envList("WEBTOON_LANGS"); {
+	case len(v) == 0:
+		return translate.Langs // the source language of each world is skipped per episode
+	case len(v) == 1 && v[0] == "none":
+		return nil
+	default:
+		return v
 	}
 }

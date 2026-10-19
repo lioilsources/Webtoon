@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'i18n/cjk_fonts.dart';
 
 /// Bundled OFL fonts (assets/fonts, same as m0/compose.py). They are variable fonts, so the
 /// weight is set through the `wght` axis as well as [FontWeight].
@@ -10,6 +11,7 @@ class ComicFonts {
   static TextStyle _v(String family, int weight, {FontStyle? style}) =>
       TextStyle(
         fontFamily: family,
+        fontFamilyFallback: kComicFallback,
         fontWeight: FontWeight.values[(weight ~/ 100 - 1).clamp(0, 8)],
         fontVariations: [FontVariation.weight(weight.toDouble())],
         fontStyle: style,

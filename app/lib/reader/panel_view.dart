@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:visibility_detector/visibility_detector.dart';
 
 import '../models/episode.dart';
 import '../theme.dart';
@@ -9,9 +10,13 @@ import 'bubble_painter.dart';
 
 /// One webtoon panel: the image with bubbles + SFX laid over it (Stack overlay, §5.5).
 /// Pending panels show a placeholder with progress; failed ones offer "regenerate".
+/// A motion panel plays its 1–3 s loop (animated WebP) over the still while it is on screen.
 class PanelView extends StatelessWidget {
   final Panel panel;
   final ImageProvider? image;
+
+  /// The panel's loop (animated WebP), when `panel.hasVideo`. The still stays as poster.
+  final ImageProvider? video;
   final int panelsTotal;
   final bool busy;
 
@@ -19,14 +24,19 @@ class PanelView extends StatelessWidget {
   final void Function(int bubbleIndex)? onEditBubble;
   final VoidCallback? onRegenerate;
 
+  /// Opens the "Rozhýbat" sheet. Null = not editable.
+  final VoidCallback? onMotion;
+
   const PanelView({
     super.key,
     required this.panel,
     this.image,
+    this.video,
     this.panelsTotal = 0,
     this.busy = false,
     this.onEditBubble,
     this.onRegenerate,
+    this.onMotion,
   });
 
   @override
@@ -66,6 +76,12 @@ class PanelView extends StatelessWidget {
           ),
           errorBuilder: (context, error, stack) => _imageError(context),
         ),
+        if (panel.hasVideo && video != null)
+          LoopImage(
+            key: ValueKey('panel-loop-${panel.index}'),
+            video: video!,
+            panelIndex: panel.index,
+          ),
         for (var i = 0; i < panel.sfx.length; i++)
           SfxText(sfx: panel.sfx[i], index: i, panelSize: size),
         IgnorePointer(
@@ -91,6 +107,33 @@ class PanelView extends StatelessWidget {
                     softWrap: true,
                   ),
                 ),
+              ),
+            ),
+          ),
+        if (panel.isVideoPending)
+          Positioned(
+            left: 10,
+            top: 10,
+            child: Chip(
+              key: ValueKey('panel-loop-pending-${panel.index}'),
+              avatar: const SizedBox.square(
+                dimension: 14,
+                child: CircularProgressIndicator(strokeWidth: 2),
+              ),
+              label: const Text('Rozhýbává se…'),
+              visualDensity: VisualDensity.compact,
+            ),
+          ),
+        if (onMotion != null)
+          Positioned(
+            left: 10,
+            bottom: 10,
+            child: IconButton.filledTonal(
+              key: ValueKey('panel-motion-${panel.index}'),
+              tooltip: panel.animate ? 'Pohyb panelu' : 'Rozhýbat',
+              onPressed: busy ? null : onMotion,
+              icon: Icon(
+                panel.animate ? Icons.movie : Icons.movie_creation_outlined,
               ),
             ),
           ),
@@ -172,6 +215,56 @@ class PanelView extends StatelessWidget {
               ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// The loop over the still: plays while at least half the panel is visible, pauses on tap,
+/// and stays on the poster when the system asks for reduced motion. Flutter decodes animated
+/// WebP natively (mobile, desktop and web); until the first frame arrives the still shows through.
+class LoopImage extends StatefulWidget {
+  final ImageProvider video;
+  final int panelIndex;
+  const LoopImage({super.key, required this.video, required this.panelIndex});
+
+  @override
+  State<LoopImage> createState() => _LoopImageState();
+}
+
+class _LoopImageState extends State<LoopImage> {
+  bool _visible = true;
+  bool _paused = false;
+
+  @override
+  Widget build(BuildContext context) {
+    if (MediaQuery.disableAnimationsOf(context)) {
+      return const SizedBox.shrink(key: ValueKey('loop-reduced-motion'));
+    }
+    final playing = _visible && !_paused;
+    return VisibilityDetector(
+      key: ValueKey('loop-visibility-${widget.panelIndex}'),
+      onVisibilityChanged: (info) {
+        final v = info.visibleFraction >= 0.5;
+        if (v != _visible && mounted) setState(() => _visible = v);
+      },
+      child: GestureDetector(
+        key: ValueKey('loop-tap-${widget.panelIndex}'),
+        behavior: HitTestBehavior.translucent,
+        onTap: () => setState(() => _paused = !_paused),
+        child: playing
+            ? Image(
+                key: const ValueKey('loop-playing'),
+                image: widget.video,
+                fit: BoxFit.cover,
+                gaplessPlayback: true,
+                // The poster is underneath: a loading or broken loop leaves the still visible.
+                frameBuilder: (context, child, frame, sync) =>
+                    frame == null && !sync ? const SizedBox.shrink() : child,
+                errorBuilder: (context, error, stack) =>
+                    const SizedBox.shrink(),
+              )
+            : const SizedBox.expand(key: ValueKey('loop-paused')),
       ),
     );
   }

@@ -8,6 +8,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/state"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/wd14"
 )
 
@@ -15,6 +16,10 @@ const (
 	KindEpisode = "episode"
 	KindPanel   = "panel"
 	KindSheet   = "sheet"
+
+	// KindTranslate fills the i18n maps of a ready episode (one LLM call per missing language).
+	KindTranslate  = "translate_episode"
+	KindPanelVideo = "panel_video" // 1–3 s loop from a finished still (PLAN-motion-panels)
 )
 
 type Job struct {
@@ -33,6 +38,26 @@ type PanelPayload struct {
 	EpisodeID  string `json:"episode_id"`
 	Panel      int    `json:"panel"`
 	Regenerate bool   `json:"regenerate,omitempty"`
+}
+
+// PanelVideoPayload renders the loop of an animated panel; Reseed picks a new seed ("Znovu").
+type PanelVideoPayload struct {
+	EpisodeID string `json:"episode_id"`
+	Panel     int    `json:"panel"`
+	Reseed    bool   `json:"reseed,omitempty"`
+}
+
+type TranslatePayload struct {
+	EpisodeID string   `json:"episode_id"`
+	Langs     []string `json:"langs,omitempty"` // empty = Config.Langs
+	Force     bool     `json:"force,omitempty"` // retranslate languages that are already complete
+}
+
+// EpisodeText is what a translation job reads: status, source language and all reader-facing text.
+type EpisodeText struct {
+	Status string
+	Source string // world language
+	translate.Episode
 }
 
 type SheetPayload struct {
@@ -102,11 +127,25 @@ type EpisodeContext struct {
 }
 
 type Panel struct {
+	EpisodeID     string
+	Index         int
+	Status        string
+	Seed          int64
+	ImagePath     string // relative to MEDIA_DIR, set once the still is ready
+	Width, Height int
+	VideoStatus   string         // "" static | pending | rendering | ready | failed
+	SB            domain.SBPanel // shot, location, characters, visual tags, bubbles, sfx, gap, animate/motion
+}
+
+// PanelVideoResult is what the loop job stores: the WebP path (relative to MEDIA_DIR) or the error.
+type PanelVideoResult struct {
 	EpisodeID string
 	Index     int
-	Status    string
+	Status    string // ready | failed
+	VideoPath string
 	Seed      int64
-	SB        domain.SBPanel // shot, location, characters, visual tags, bubbles, sfx, gap
+	Attempts  []RenderAttempt
+	Error     string
 }
 
 type RenderAttempt struct {
@@ -163,9 +202,18 @@ type Store interface {
 	SetPanelStatus(ctx context.Context, episodeID string, idx int, status, errMsg string) error
 	SavePanelResult(ctx context.Context, r *PanelResult) error
 	RefreshProgress(ctx context.Context, episodeID string) (Progress, error)
+	// Motion panels: the loop is a second job after the still; its status lives next to the panel.
+	SetPanelVideoStatus(ctx context.Context, episodeID string, idx int, status, errMsg string) error
+	SavePanelVideo(ctx context.Context, r *PanelVideoResult) error
+	EnqueuePanelVideo(ctx context.Context, p PanelVideoPayload, maxAttempts int) error
 	// FinalizeEpisode locks the episode and its campaign, calls fn and persists its result
 	// (fn returning nil means "nothing to do").
 	FinalizeEpisode(ctx context.Context, episodeID string, fn func(ec *EpisodeContext, p Progress) *Finalization) error
+
+	LoadEpisodeText(ctx context.Context, episodeID string) (*EpisodeText, error)
+	// ApplyTranslation stores one language, skipping texts whose original changed meanwhile.
+	ApplyTranslation(ctx context.Context, episodeID string, r translate.Result) error
+	EnqueueTranslation(ctx context.Context, p TranslatePayload, maxAttempts int) error
 
 	LoadSheetContext(ctx context.Context, sheetID string) (*SheetContext, error)
 	SetSheetStatus(ctx context.Context, sheetID, status, errMsg string) error

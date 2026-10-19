@@ -17,6 +17,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/state"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/worker"
 )
 
@@ -275,10 +276,15 @@ func (s *Store) SaveStoryboard(ctx context.Context, episodeID string, sb *domain
 			return err
 		}
 		for i, p := range sb.Panels {
+			videoStatus := ""
+			if p.Animate {
+				videoStatus = "pending" // the panel job enqueues the loop once the still is ready
+			}
 			if err := q.InsertPanel(ctx, dbq.InsertPanelParams{
 				EpisodeID: episodeID, Idx: int32(i), Shot: p.Shot, LocationID: p.LocationID, GapAfter: p.GapAfter,
 				Bubbles: MustJSON(p.Bubbles), Sfx: MustJSON(p.SFX), Characters: MustJSON(p.Characters),
 				VisualTags: MustJSON(p.VisualTags),
+				Animate:    p.Animate, Motion: p.Motion, LoopSeconds: int32(storyboard.LoopSecondsOr(p.LoopSeconds)), VideoStatus: videoStatus,
 			}); err != nil {
 				return err
 			}
@@ -295,14 +301,30 @@ func (s *Store) SaveStoryboard(ctx context.Context, episodeID string, sb *domain
 func PanelFromRow(p dbq.Panel) *worker.Panel {
 	return &worker.Panel{
 		EpisodeID: p.EpisodeID, Index: int(p.Idx), Status: p.Status, Seed: p.Seed,
+		ImagePath: p.ImagePath, Width: int(p.Width), Height: int(p.Height), VideoStatus: p.VideoStatus,
 		SB: domain.SBPanel{
 			Shot: p.Shot, LocationID: p.LocationID, GapAfter: p.GapAfter,
 			Characters: unmarshalOr(p.Characters, []domain.SBChar{}),
 			Bubbles:    unmarshalOr(p.Bubbles, []domain.Bubble{}),
 			SFX:        unmarshalOr(p.Sfx, []domain.SFX{}),
 			VisualTags: unmarshalOr(p.VisualTags, []string{}),
+			Animate:    p.Animate, Motion: p.Motion, LoopSeconds: int(p.LoopSeconds),
 		},
 	}
+}
+
+func (s *Store) SetPanelVideoStatus(ctx context.Context, episodeID string, idx int, status, msg string) error {
+	return s.Q.SetPanelVideoStatus(ctx, dbq.SetPanelVideoStatusParams{EpisodeID: episodeID, Idx: int32(idx), VideoStatus: status, VideoError: msg})
+}
+
+func (s *Store) SavePanelVideo(ctx context.Context, r *worker.PanelVideoResult) error {
+	return s.Q.SavePanelVideo(ctx, dbq.SavePanelVideoParams{EpisodeID: r.EpisodeID, Idx: int32(r.Index),
+		VideoStatus: r.Status, VideoPath: r.VideoPath, VideoSeed: r.Seed, VideoError: r.Error})
+}
+
+func (s *Store) EnqueuePanelVideo(ctx context.Context, p worker.PanelVideoPayload, maxAttempts int) error {
+	_, err := s.Enqueue(ctx, nil, worker.KindPanelVideo, p, maxAttempts)
+	return err
 }
 
 func (s *Store) GetPanel(ctx context.Context, episodeID string, idx int) (*worker.Panel, error) {
@@ -439,4 +461,94 @@ func (s *Store) FinishSheet(ctx context.Context, id, status string, best *int, m
 		}
 		return q.FinishSheet(ctx, dbq.FinishSheetParams{ID: id, Status: status, Best: b, Error: msg})
 	})
+}
+
+// --- translations ------------------------------------------------------------------
+
+// EpisodeTextFromRows assembles the reader-facing text of an episode for translation.
+func EpisodeTextFromRows(e dbq.Episode, panels []dbq.Panel, w *domain.World) *worker.EpisodeText {
+	et := &worker.EpisodeText{Status: e.Status, Source: w.Language}
+	if et.Source == "" {
+		et.Source = "cs"
+	}
+	et.Title = e.Title
+	et.TitleI18n = unmarshalOr(e.TitleI18n, map[string]string{})
+	et.Choices = unmarshalOr(e.Choices, []domain.Choice{})
+	et.Names = map[string]string{}
+	for _, c := range w.Characters {
+		et.Names[c.ID] = c.Name
+	}
+	et.Panels = make([][]domain.Bubble, len(panels))
+	for _, p := range panels {
+		if int(p.Idx) < len(et.Panels) {
+			et.Panels[p.Idx] = unmarshalOr(p.Bubbles, []domain.Bubble{})
+		}
+	}
+	return et
+}
+
+func (s *Store) LoadEpisodeText(ctx context.Context, episodeID string) (*worker.EpisodeText, error) {
+	e, err := s.Q.GetEpisode(ctx, episodeID)
+	if err != nil {
+		return nil, notFound(err)
+	}
+	c, err := s.Q.GetCampaign(ctx, e.CampaignID)
+	if err != nil {
+		return nil, notFound(err)
+	}
+	w, err := s.LoadWorld(ctx, s.Q, c.WorldID)
+	if err != nil {
+		return nil, err
+	}
+	panels, err := s.Q.ListPanels(ctx, episodeID)
+	if err != nil {
+		return nil, err
+	}
+	return EpisodeTextFromRows(e, panels, w), nil
+}
+
+// ApplyTranslation writes one language under row locks; texts edited since the translation
+// started keep no translation (their i18n was dropped by the edit and stays dropped).
+func (s *Store) ApplyTranslation(ctx context.Context, episodeID string, r translate.Result) error {
+	return s.Tx(ctx, func(q *dbq.Queries) error {
+		e, err := q.GetEpisodeForUpdate(ctx, episodeID)
+		if err != nil {
+			return notFound(err)
+		}
+		titles := unmarshalOr(e.TitleI18n, map[string]string{})
+		if titles == nil {
+			titles = map[string]string{}
+		}
+		if r.Title != nil && e.Title == r.Title.Src {
+			titles[r.Lang] = r.Title.Dst
+		}
+		choices := unmarshalOr(e.Choices, []domain.Choice{})
+		translate.ApplyChoices(choices, r.Lang, r.Choices)
+		if err := q.SetEpisodeI18n(ctx, dbq.SetEpisodeI18nParams{ID: episodeID, TitleI18n: MustJSON(titles), Choices: MustJSON(choices)}); err != nil {
+			return err
+		}
+		panels, err := q.ListPanelsForUpdate(ctx, episodeID)
+		if err != nil {
+			return err
+		}
+		for _, p := range panels {
+			pairs, ok := r.Bubbles[int(p.Idx)]
+			if !ok {
+				continue
+			}
+			bs := unmarshalOr(p.Bubbles, []domain.Bubble{})
+			if !translate.ApplyBubbles(bs, r.Lang, pairs) {
+				continue
+			}
+			if err := q.UpdatePanelBubbles(ctx, dbq.UpdatePanelBubblesParams{EpisodeID: episodeID, Idx: p.Idx, Bubbles: MustJSON(bs)}); err != nil {
+				return err
+			}
+		}
+		return nil
+	})
+}
+
+func (s *Store) EnqueueTranslation(ctx context.Context, p worker.TranslatePayload, maxAttempts int) error {
+	_, err := s.Enqueue(ctx, nil, worker.KindTranslate, p, maxAttempts)
+	return err
 }

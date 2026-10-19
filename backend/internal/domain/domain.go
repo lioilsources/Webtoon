@@ -260,6 +260,12 @@ type SBPanel struct {
 	GapAfter        string     `json:"gap_after"`
 	VisualTags      []string   `json:"visual_tags"`
 	UnmappedPhrases []string   `json:"unmapped_phrases"`
+	// Motion panels (PLAN-motion-panels): Animate renders a 1–3 s seamless loop from the still,
+	// Motion is the Wan I2V prompt ("subject motion + ambient + static camera"). Optional in
+	// every storyboard; absent fields keep old data as it is.
+	Animate     bool   `json:"animate,omitempty"`
+	Motion      string `json:"motion,omitempty"`
+	LoopSeconds int    `json:"loop_seconds,omitempty"`
 }
 
 type SBChar struct {
@@ -271,8 +277,10 @@ type SBChar struct {
 
 type Bubble struct {
 	SpeakerID *string `json:"speaker_id"`
-	Text      string  `json:"text"`
+	Text      string  `json:"text"` // original, in the world's language
 	Kind      string  `json:"kind"`
+	// I18n holds machine translations of Text keyed by language (en, de, pt-BR, …); dropped when Text changes.
+	I18n map[string]string `json:"i18n,omitempty"`
 }
 
 type SFX struct {
@@ -281,9 +289,10 @@ type SFX struct {
 }
 
 type Choice struct {
-	ID   string `json:"id,omitempty"`
-	Kind string `json:"kind"`
-	Text string `json:"text"`
+	ID   string            `json:"id,omitempty"`
+	Kind string            `json:"kind"`
+	Text string            `json:"text"`
+	I18n map[string]string `json:"i18n,omitempty"`
 }
 
 // FlexString accepts a JSON string, null, a number or a list of strings (joined by ", ").

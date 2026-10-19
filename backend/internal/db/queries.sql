@@ -214,8 +214,9 @@ SELECT
 FROM panels WHERE episode_id = $1;
 
 -- name: InsertPanel :exec
-INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9);
+INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags,
+                    animate, motion, loop_seconds, video_status)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13);
 
 -- name: GetPanel :one
 SELECT * FROM panels WHERE episode_id = $1 AND idx = $2;
@@ -231,6 +232,22 @@ UPDATE panels SET
     status = $3, image_path = $4, prompt = $5, negative = $6, seed = $7, width = $8, height = $9,
     rating = $10, identity = $11, identity_score = $12, attempts = $13, error = $14, updated_at = now()
 WHERE episode_id = $1 AND idx = $2;
+
+-- Editor: turn the loop on/off or change its prompt/length. video_status pending restarts the render,
+-- '' makes the panel static again (the file stays on disk, the row forgets it).
+-- name: SetPanelMotion :exec
+UPDATE panels SET animate = $3, motion = $4, loop_seconds = $5, video_status = $6, video_path = '', video_error = '', updated_at = now()
+WHERE episode_id = $1 AND idx = $2;
+
+-- name: SetPanelVideoStatus :exec
+UPDATE panels SET video_status = $3, video_error = $4, updated_at = now() WHERE episode_id = $1 AND idx = $2;
+
+-- name: SavePanelVideo :exec
+UPDATE panels SET video_status = $3, video_path = $4, video_seed = $5, video_error = $6, updated_at = now()
+WHERE episode_id = $1 AND idx = $2;
+
+-- name: CountAnimatedPanels :one
+SELECT count(*)::int FROM panels WHERE episode_id = $1 AND animate;
 
 -- name: UpdatePanelBubbles :exec
 UPDATE panels SET bubbles = $3, updated_at = now() WHERE episode_id = $1 AND idx = $2;
@@ -360,3 +377,15 @@ UPDATE character_sheets SET images = images || jsonb_build_array(@image::jsonb),
 
 -- name: FinishSheet :exec
 UPDATE character_sheets SET status = $2, best = $3, error = $4, updated_at = now() WHERE id = $1;
+
+-- name: SetEpisodeI18n :exec
+UPDATE episodes SET title_i18n = $2, choices = $3, updated_at = now() WHERE id = $1;
+
+-- name: ListReadyEpisodeIDs :many
+SELECT id FROM episodes WHERE status = 'ready' ORDER BY created_at, id;
+
+-- name: ListPanelsForUpdate :many
+SELECT * FROM panels WHERE episode_id = $1 ORDER BY idx FOR UPDATE;
+
+-- name: GetPanelForUpdate :one
+SELECT * FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE;

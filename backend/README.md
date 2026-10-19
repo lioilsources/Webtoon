@@ -38,6 +38,7 @@ Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`
 | `WEBTOON_WD14` | `http://192.168.88.66:8097` | WD14 tagger (`POST /tag`) |
 | `WEBTOON_IMAGE_API` | – | AiStack Image API (`https://llm.ol1n.com`); nastavené = místo `WEBTOON_COMFY` a `WEBTOON_WD14` |
 | `WEBTOON_CF_ACCESS_ID`, `WEBTOON_CF_ACCESS_SECRET` | – | service token Cloudflare Access pro Image API i LLM za `llm.ol1n.com` |
+| `WEBTOON_LANGS` | 12 jazyků Lexify | cílové jazyky překladu bublin (`en,de,…`, `none` = vypnuto); zdrojový jazyk světa se přeskočí |
 | `DATABASE_URL` | `postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable` | |
 | `MEDIA_DIR` | `./media` | sem se ukládají PNG panelů, servíruje `GET /media/...` |
 | `MEDIA_BASE_URL` | `/media` | prefix `image_url` v odpovědích (např. `https://webtoon.ol1n.com/media`) |
@@ -94,6 +95,34 @@ dostane „unavailable“ a po `WEBTOON_BACKOFF` se přes stejný `client_ref` (
 
 Výpadek LLM (běží 13–07) nebo ComfyUI/WD14 (07–13): job dostane `run_after = now + 5 min`, attempt se nepočítá,
 epizoda zůstává `queued`/`generating` a v `error` je "waiting: …". Epizoda kvůli rozvrhu nikdy neselže.
+
+### Překlady bublin
+
+Jako Lexify: každý text je v obsahu ve všech jazycích a čtečka jen přepíná. Hotový díl dostane job
+`translate_episode`: jedno volání LLM (`response_format: json_schema`, thinking vypnutý) na každý cílový
+jazyk, v něm titulek, všechny bubliny a volby, aby jména a tón seděly. Překlady leží vedle originálu
+(`bubbles[].i18n`, `choices[].i18n`, `episodes.title_i18n`), originál zůstává zdrojem pravdy. Úprava textu
+bubliny v editoru zahodí překlady té bubliny a zařadí díl k přeložení znovu; nezměněné texty si je
+nechají. LLM běží jen v okně 13–07, mimo něj job čeká (backoff), nic neselže. `GET /episodes/{id}` vrací
+`source_language` a `languages` (jazyky, do kterých je přeložený celý díl).
+
+    webtoon translate -all                  # zařadí překlad všech hotových dílů (hotové jazyky přeskočí)
+    webtoon translate -episode ep_… -langs en,ja -force -inline   # přeloží hned tady, bez workeru
+
+### Pohyblivá políčka (smyčka 1–3 s)
+
+`PLAN-motion-panels.md`. Storyboard (LLM) smí označit nejvýš 2 panely `"animate": true` s `"motion"`
+(anglický Wan prompt ≤ 15 slov, „subject motion + ambient + static camera“; validátor smyčku bez varování zruší
+u dvojic, polibků a zakázaných akcí, `storyboard.CheckMotion`). Instrukce je k systémovému promptu připojená
+až v `Generate`, takže `SystemPrompt` dál sedí na prototyp. Po hotovém stillu zařadí panel job
+`panel_video`: still se nahraje do ComfyUI a `comfy.VideoWorkflow` ho pustí přes **Wan 2.2 I2V 14B + Lightning**
+jako `WanFirstLastFrameToVideo` se stejným prvním i posledním snímkem (smyčka bez střihu), 480×704 / 704×480,
+16 fps, 17/33/49 snímků. Výstup je animovaný WebP (`SaveAnimatedWEBP`) + tři snímky (první, prostřední, poslední)
+pro WD14 se stejnými prahy jako still; unsafe → reseed, po `MaxReseed` `video_status=failed`, still zůstává.
+WebP leží v `MEDIA_DIR/episodes/<ep>/pNN_video_<seed>.webp` a API ho vrací jako `video_url` vedle `image_url`.
+Editor: `PATCH /episodes/{id}/panels/{n}` s `{"animate", "motion", "loop_seconds", "reseed_video"}`
+(`estimate_seconds` ≈ 100/155/200 s), `animate: false` smyčku zapomene (soubor zůstane). Přegenerovaný still
+dostane novou smyčku. ComfyUI mimo okno → backoff jako u panelů.
 
 ## API
 

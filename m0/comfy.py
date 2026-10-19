@@ -63,8 +63,9 @@ def upload(png_bytes, name):
     return res["name"] if not res.get("subfolder") else f"{res['subfolder']}/{res['name']}"
 
 
-def run(graph, timeout=900):
-    """Queues the graph, waits, returns list of PNG bytes."""
+def run_outputs(graph, timeout=900):
+    """Queues the graph, waits, returns {node_id: [{"filename", "subfolder", "type", "bytes"}, ...]} for every
+    output file (SaveImage PNGs, SaveAnimatedWEBP, VHS videos — ComfyUI lists them under "images" or "gifs")."""
     client_id = uuid.uuid4().hex
     pid = http_json("POST", f"{COMFY_URL}/prompt", {"prompt": graph, "client_id": client_id})["prompt_id"]
     t0 = time.time()
@@ -75,11 +76,20 @@ def run(graph, timeout=900):
             status = entry.get("status", {})
             if status.get("status_str") == "error":
                 raise RuntimeError(f"ComfyUI error: {json.dumps(status.get('messages', []))[:800]}")
-            images = []
-            for out in entry.get("outputs", {}).values():
-                for im in out.get("images", []):
-                    q = urllib.parse.urlencode({"filename": im["filename"], "subfolder": im["subfolder"], "type": im["type"]})
-                    images.append(http("GET", f"{COMFY_URL}/view?{q}"))
-            return images
+            outputs = {}
+            for node, out in entry.get("outputs", {}).items():
+                for key in ("images", "gifs", "videos"):
+                    for f in out.get(key, []):
+                        if f.get("type") == "temp":  # previews, not saved results
+                            continue
+                        q = urllib.parse.urlencode({"filename": f["filename"], "subfolder": f.get("subfolder", ""), "type": f.get("type", "output")})
+                        outputs.setdefault(node, []).append({**f, "bytes": http("GET", f"{COMFY_URL}/view?{q}")})
+            return outputs
         time.sleep(1.5)
     raise TimeoutError(f"prompt {pid} not finished in {timeout}s")
+
+
+def run(graph, timeout=900):
+    """Queues the graph, waits, returns list of PNG bytes (SaveImage outputs, graph order)."""
+    outs = run_outputs(graph, timeout)
+    return [f["bytes"] for node in graph if node in outs for f in outs[node] if f["filename"].lower().endswith(".png")]

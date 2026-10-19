@@ -236,6 +236,17 @@ func (q *Queries) CompleteJob(ctx context.Context, id int64) error {
 	return err
 }
 
+const countAnimatedPanels = `-- name: CountAnimatedPanels :one
+SELECT count(*)::int FROM panels WHERE episode_id = $1 AND animate
+`
+
+func (q *Queries) CountAnimatedPanels(ctx context.Context, episodeID string) (int32, error) {
+	row := q.db.QueryRow(ctx, countAnimatedPanels, episodeID)
+	var column_1 int32
+	err := row.Scan(&column_1)
+	return column_1, err
+}
+
 const countPlayerCharacterCampaigns = `-- name: CountPlayerCharacterCampaigns :one
 SELECT count(*)::int FROM campaigns WHERE world_id = $1 AND player_character_id = $2
 `
@@ -365,7 +376,7 @@ func (q *Queries) CreateCharacter(ctx context.Context, arg CreateCharacterParams
 const createEpisode = `-- name: CreateEpisode :one
 INSERT INTO episodes (id, campaign_id, idx, premise, chosen)
 VALUES ($1, $2, $3, $4, $5)
-RETURNING id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at
+RETURNING id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at, title_i18n
 `
 
 type CreateEpisodeParams struct {
@@ -405,6 +416,7 @@ func (q *Queries) CreateEpisode(ctx context.Context, arg CreateEpisodeParams) (E
 		&i.Error,
 		&i.CreatedAt,
 		&i.UpdatedAt,
+		&i.TitleI18n,
 	)
 	return i, err
 }
@@ -765,7 +777,7 @@ func (q *Queries) GetCharacter(ctx context.Context, arg GetCharacterParams) (Cha
 }
 
 const getEpisode = `-- name: GetEpisode :one
-SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at FROM episodes WHERE id = $1
+SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at, title_i18n FROM episodes WHERE id = $1
 `
 
 func (q *Queries) GetEpisode(ctx context.Context, id string) (Episode, error) {
@@ -791,12 +803,13 @@ func (q *Queries) GetEpisode(ctx context.Context, id string) (Episode, error) {
 		&i.Error,
 		&i.CreatedAt,
 		&i.UpdatedAt,
+		&i.TitleI18n,
 	)
 	return i, err
 }
 
 const getEpisodeForUpdate = `-- name: GetEpisodeForUpdate :one
-SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at FROM episodes WHERE id = $1 FOR UPDATE
+SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at, title_i18n FROM episodes WHERE id = $1 FOR UPDATE
 `
 
 func (q *Queries) GetEpisodeForUpdate(ctx context.Context, id string) (Episode, error) {
@@ -822,6 +835,7 @@ func (q *Queries) GetEpisodeForUpdate(ctx context.Context, id string) (Episode, 
 		&i.Error,
 		&i.CreatedAt,
 		&i.UpdatedAt,
+		&i.TitleI18n,
 	)
 	return i, err
 }
@@ -851,7 +865,7 @@ func (q *Queries) GetJob(ctx context.Context, id int64) (Job, error) {
 }
 
 const getLatestEpisode = `-- name: GetLatestEpisode :one
-SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at FROM episodes WHERE campaign_id = $1 ORDER BY idx DESC LIMIT 1
+SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at, title_i18n FROM episodes WHERE campaign_id = $1 ORDER BY idx DESC LIMIT 1
 `
 
 func (q *Queries) GetLatestEpisode(ctx context.Context, campaignID string) (Episode, error) {
@@ -877,6 +891,7 @@ func (q *Queries) GetLatestEpisode(ctx context.Context, campaignID string) (Epis
 		&i.Error,
 		&i.CreatedAt,
 		&i.UpdatedAt,
+		&i.TitleI18n,
 	)
 	return i, err
 }
@@ -908,7 +923,7 @@ func (q *Queries) GetLocation(ctx context.Context, arg GetLocationParams) (Locat
 }
 
 const getPanel = `-- name: GetPanel :one
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at FROM panels WHERE episode_id = $1 AND idx = $2
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 AND idx = $2
 `
 
 type GetPanelParams struct {
@@ -942,6 +957,59 @@ func (q *Queries) GetPanel(ctx context.Context, arg GetPanelParams) (Panel, erro
 		&i.Attempts,
 		&i.Error,
 		&i.UpdatedAt,
+		&i.Animate,
+		&i.Motion,
+		&i.LoopSeconds,
+		&i.VideoStatus,
+		&i.VideoPath,
+		&i.VideoSeed,
+		&i.VideoError,
+	)
+	return i, err
+}
+
+const getPanelForUpdate = `-- name: GetPanelForUpdate :one
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE
+`
+
+type GetPanelForUpdateParams struct {
+	EpisodeID string
+	Idx       int32
+}
+
+func (q *Queries) GetPanelForUpdate(ctx context.Context, arg GetPanelForUpdateParams) (Panel, error) {
+	row := q.db.QueryRow(ctx, getPanelForUpdate, arg.EpisodeID, arg.Idx)
+	var i Panel
+	err := row.Scan(
+		&i.EpisodeID,
+		&i.Idx,
+		&i.Status,
+		&i.Shot,
+		&i.LocationID,
+		&i.ImagePath,
+		&i.Prompt,
+		&i.Negative,
+		&i.Seed,
+		&i.Width,
+		&i.Height,
+		&i.GapAfter,
+		&i.Bubbles,
+		&i.Sfx,
+		&i.Characters,
+		&i.VisualTags,
+		&i.Rating,
+		&i.Identity,
+		&i.IdentityScore,
+		&i.Attempts,
+		&i.Error,
+		&i.UpdatedAt,
+		&i.Animate,
+		&i.Motion,
+		&i.LoopSeconds,
+		&i.VideoStatus,
+		&i.VideoPath,
+		&i.VideoSeed,
+		&i.VideoError,
 	)
 	return i, err
 }
@@ -1035,20 +1103,25 @@ func (q *Queries) GetWorld(ctx context.Context, id string) (World, error) {
 }
 
 const insertPanel = `-- name: InsertPanel :exec
-INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags,
+                    animate, motion, loop_seconds, video_status)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
 `
 
 type InsertPanelParams struct {
-	EpisodeID  string
-	Idx        int32
-	Shot       string
-	LocationID string
-	GapAfter   string
-	Bubbles    json.RawMessage
-	Sfx        json.RawMessage
-	Characters json.RawMessage
-	VisualTags json.RawMessage
+	EpisodeID   string
+	Idx         int32
+	Shot        string
+	LocationID  string
+	GapAfter    string
+	Bubbles     json.RawMessage
+	Sfx         json.RawMessage
+	Characters  json.RawMessage
+	VisualTags  json.RawMessage
+	Animate     bool
+	Motion      string
+	LoopSeconds int32
+	VideoStatus string
 }
 
 func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error {
@@ -1062,6 +1135,10 @@ func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error 
 		arg.Sfx,
 		arg.Characters,
 		arg.VisualTags,
+		arg.Animate,
+		arg.Motion,
+		arg.LoopSeconds,
+		arg.VideoStatus,
 	)
 	return err
 }
@@ -1111,7 +1188,7 @@ func (q *Queries) ListCharacters(ctx context.Context, worldID string) ([]Charact
 }
 
 const listEpisodes = `-- name: ListEpisodes :many
-SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at FROM episodes WHERE campaign_id = $1 ORDER BY idx
+SELECT id, campaign_id, idx, title, status, premise, chosen, moderation, storyboard, choices, state_diff, state_snapshot, warnings, panels_ready, panels_total, credits_cost, error, created_at, updated_at, title_i18n FROM episodes WHERE campaign_id = $1 ORDER BY idx
 `
 
 func (q *Queries) ListEpisodes(ctx context.Context, campaignID string) ([]Episode, error) {
@@ -1143,6 +1220,7 @@ func (q *Queries) ListEpisodes(ctx context.Context, campaignID string) ([]Episod
 			&i.Error,
 			&i.CreatedAt,
 			&i.UpdatedAt,
+			&i.TitleI18n,
 		); err != nil {
 			return nil, err
 		}
@@ -1226,7 +1304,7 @@ func (q *Queries) ListLocations(ctx context.Context, worldID string) ([]Location
 }
 
 const listPanels = `-- name: ListPanels :many
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at FROM panels WHERE episode_id = $1 ORDER BY idx
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 ORDER BY idx
 `
 
 func (q *Queries) ListPanels(ctx context.Context, episodeID string) ([]Panel, error) {
@@ -1261,6 +1339,67 @@ func (q *Queries) ListPanels(ctx context.Context, episodeID string) ([]Panel, er
 			&i.Attempts,
 			&i.Error,
 			&i.UpdatedAt,
+			&i.Animate,
+			&i.Motion,
+			&i.LoopSeconds,
+			&i.VideoStatus,
+			&i.VideoPath,
+			&i.VideoSeed,
+			&i.VideoError,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
+const listPanelsForUpdate = `-- name: ListPanelsForUpdate :many
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 ORDER BY idx FOR UPDATE
+`
+
+func (q *Queries) ListPanelsForUpdate(ctx context.Context, episodeID string) ([]Panel, error) {
+	rows, err := q.db.Query(ctx, listPanelsForUpdate, episodeID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []Panel
+	for rows.Next() {
+		var i Panel
+		if err := rows.Scan(
+			&i.EpisodeID,
+			&i.Idx,
+			&i.Status,
+			&i.Shot,
+			&i.LocationID,
+			&i.ImagePath,
+			&i.Prompt,
+			&i.Negative,
+			&i.Seed,
+			&i.Width,
+			&i.Height,
+			&i.GapAfter,
+			&i.Bubbles,
+			&i.Sfx,
+			&i.Characters,
+			&i.VisualTags,
+			&i.Rating,
+			&i.Identity,
+			&i.IdentityScore,
+			&i.Attempts,
+			&i.Error,
+			&i.UpdatedAt,
+			&i.Animate,
+			&i.Motion,
+			&i.LoopSeconds,
+			&i.VideoStatus,
+			&i.VideoPath,
+			&i.VideoSeed,
+			&i.VideoError,
 		); err != nil {
 			return nil, err
 		}
@@ -1322,6 +1461,30 @@ func (q *Queries) ListPlayerCampaigns(ctx context.Context, playerID string) ([]L
 			return nil, err
 		}
 		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
+const listReadyEpisodeIDs = `-- name: ListReadyEpisodeIDs :many
+SELECT id FROM episodes WHERE status = 'ready' ORDER BY created_at, id
+`
+
+func (q *Queries) ListReadyEpisodeIDs(ctx context.Context) ([]string, error) {
+	rows, err := q.db.Query(ctx, listReadyEpisodeIDs)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []string
+	for rows.Next() {
+		var id string
+		if err := rows.Scan(&id); err != nil {
+			return nil, err
+		}
+		items = append(items, id)
 	}
 	if err := rows.Err(); err != nil {
 		return nil, err
@@ -1607,6 +1770,32 @@ func (q *Queries) SavePanelResult(ctx context.Context, arg SavePanelResultParams
 	return err
 }
 
+const savePanelVideo = `-- name: SavePanelVideo :exec
+UPDATE panels SET video_status = $3, video_path = $4, video_seed = $5, video_error = $6, updated_at = now()
+WHERE episode_id = $1 AND idx = $2
+`
+
+type SavePanelVideoParams struct {
+	EpisodeID   string
+	Idx         int32
+	VideoStatus string
+	VideoPath   string
+	VideoSeed   int64
+	VideoError  string
+}
+
+func (q *Queries) SavePanelVideo(ctx context.Context, arg SavePanelVideoParams) error {
+	_, err := q.db.Exec(ctx, savePanelVideo,
+		arg.EpisodeID,
+		arg.Idx,
+		arg.VideoStatus,
+		arg.VideoPath,
+		arg.VideoSeed,
+		arg.VideoError,
+	)
+	return err
+}
+
 const saveStoryboard = `-- name: SaveStoryboard :exec
 UPDATE episodes SET
     title = $2, storyboard = $3, choices = $4, state_diff = $5, warnings = $6,
@@ -1639,6 +1828,21 @@ func (q *Queries) SaveStoryboard(ctx context.Context, arg SaveStoryboardParams) 
 	return err
 }
 
+const setEpisodeI18n = `-- name: SetEpisodeI18n :exec
+UPDATE episodes SET title_i18n = $2, choices = $3, updated_at = now() WHERE id = $1
+`
+
+type SetEpisodeI18nParams struct {
+	ID        string
+	TitleI18n json.RawMessage
+	Choices   json.RawMessage
+}
+
+func (q *Queries) SetEpisodeI18n(ctx context.Context, arg SetEpisodeI18nParams) error {
+	_, err := q.db.Exec(ctx, setEpisodeI18n, arg.ID, arg.TitleI18n, arg.Choices)
+	return err
+}
+
 const setEpisodeModeration = `-- name: SetEpisodeModeration :exec
 UPDATE episodes SET moderation = $2, updated_at = now() WHERE id = $1
 `
@@ -1668,6 +1872,34 @@ func (q *Queries) SetEpisodeStatus(ctx context.Context, arg SetEpisodeStatusPara
 	return err
 }
 
+const setPanelMotion = `-- name: SetPanelMotion :exec
+UPDATE panels SET animate = $3, motion = $4, loop_seconds = $5, video_status = $6, video_path = '', video_error = '', updated_at = now()
+WHERE episode_id = $1 AND idx = $2
+`
+
+type SetPanelMotionParams struct {
+	EpisodeID   string
+	Idx         int32
+	Animate     bool
+	Motion      string
+	LoopSeconds int32
+	VideoStatus string
+}
+
+// Editor: turn the loop on/off or change its prompt/length. video_status pending restarts the render,
+// ” makes the panel static again (the file stays on disk, the row forgets it).
+func (q *Queries) SetPanelMotion(ctx context.Context, arg SetPanelMotionParams) error {
+	_, err := q.db.Exec(ctx, setPanelMotion,
+		arg.EpisodeID,
+		arg.Idx,
+		arg.Animate,
+		arg.Motion,
+		arg.LoopSeconds,
+		arg.VideoStatus,
+	)
+	return err
+}
+
 const setPanelStatus = `-- name: SetPanelStatus :exec
 UPDATE panels SET status = $3, error = $4, updated_at = now() WHERE episode_id = $1 AND idx = $2
 `
@@ -1685,6 +1917,27 @@ func (q *Queries) SetPanelStatus(ctx context.Context, arg SetPanelStatusParams) 
 		arg.Idx,
 		arg.Status,
 		arg.Error,
+	)
+	return err
+}
+
+const setPanelVideoStatus = `-- name: SetPanelVideoStatus :exec
+UPDATE panels SET video_status = $3, video_error = $4, updated_at = now() WHERE episode_id = $1 AND idx = $2
+`
+
+type SetPanelVideoStatusParams struct {
+	EpisodeID   string
+	Idx         int32
+	VideoStatus string
+	VideoError  string
+}
+
+func (q *Queries) SetPanelVideoStatus(ctx context.Context, arg SetPanelVideoStatusParams) error {
+	_, err := q.db.Exec(ctx, setPanelVideoStatus,
+		arg.EpisodeID,
+		arg.Idx,
+		arg.VideoStatus,
+		arg.VideoError,
 	)
 	return err
 }

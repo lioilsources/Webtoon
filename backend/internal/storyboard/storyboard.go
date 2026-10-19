@@ -215,6 +215,7 @@ func Validate(ctx context.Context, sb *domain.Storyboard, w *domain.World, vocab
 		}
 		p.VisualTags, p.UnmappedPhrases = vocab.Filter(tags.Dedupe(t))
 	}
+	sb.Warnings = append(sb.Warnings, normalizeMotion(sb)...)
 	var closed, free int
 	for _, ch := range sb.Choices {
 		switch ch.Kind {
@@ -363,7 +364,7 @@ func (g *Generator) Generate(ctx context.Context, w *domain.World, state any, ca
 	if attempts <= 0 {
 		attempts = 3
 	}
-	system := SystemPrompt(w, canonProgress)
+	system := SystemPrompt(w, canonProgress) + motionAddendum
 	user := UserPrompt(state, premise)
 	feedback := ""
 	var log []domain.ValidationAttempt

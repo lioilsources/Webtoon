@@ -11,6 +11,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/state"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/worker"
 )
 
@@ -45,6 +46,7 @@ type memJob struct {
 type memEpisode struct {
 	worker.Episode
 	Title       string
+	TitleI18n   map[string]string
 	Choices     []domain.Choice
 	Warnings    []string
 	Error       string
@@ -55,6 +57,7 @@ type memEpisode struct {
 type memPanel struct {
 	worker.Panel
 	Result *worker.PanelResult
+	Video  *worker.PanelVideoResult
 	Error  string
 }
 
@@ -221,6 +224,34 @@ func (m *memStore) SavePanelResult(_ context.Context, r *worker.PanelResult) err
 	defer m.mu.Unlock()
 	p := m.panels[r.EpisodeID][r.Index]
 	p.Status, p.Seed, p.Result, p.Error = r.Status, r.Seed, r, r.Error
+	p.ImagePath, p.Width, p.Height = r.ImagePath, r.Width, r.Height
+	return nil
+}
+
+func (m *memStore) SetPanelVideoStatus(_ context.Context, ep string, i int, status, msg string) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	p := m.panels[ep][i]
+	p.VideoStatus = status
+	if p.Video == nil {
+		p.Video = &worker.PanelVideoResult{EpisodeID: ep, Index: i}
+	}
+	p.Video.Status, p.Video.Error = status, msg
+	return nil
+}
+
+func (m *memStore) SavePanelVideo(_ context.Context, r *worker.PanelVideoResult) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	p := m.panels[r.EpisodeID][r.Index]
+	p.VideoStatus, p.Video = r.Status, r
+	return nil
+}
+
+func (m *memStore) EnqueuePanelVideo(_ context.Context, p worker.PanelVideoPayload, maxAttempts int) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.enqueue(worker.KindPanelVideo, p, maxAttempts)
 	return nil
 }
 
@@ -325,4 +356,66 @@ func (m *memStore) FinishSheet(_ context.Context, id, status string, best *int, 
 		}
 	}
 	return nil
+}
+
+func (m *memStore) LoadEpisodeText(_ context.Context, id string) (*worker.EpisodeText, error) {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	e, ok := m.episodes[id]
+	if !ok {
+		return nil, errNotFound
+	}
+	src := m.world.Language
+	if src == "" {
+		src = "cs"
+	}
+	et := &worker.EpisodeText{Status: e.Status, Source: src}
+	et.Title, et.TitleI18n, et.Names = e.Title, map[string]string{}, map[string]string{}
+	for k, v := range e.TitleI18n {
+		et.TitleI18n[k] = v
+	}
+	for _, c := range m.world.Characters {
+		et.Names[c.ID] = c.Name
+	}
+	et.Choices = cloneJSON(e.Choices)
+	for _, p := range m.panels[id] {
+		et.Panels = append(et.Panels, cloneJSON(p.SB.Bubbles))
+	}
+	return et, nil
+}
+
+func (m *memStore) ApplyTranslation(_ context.Context, id string, r translate.Result) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	e, ok := m.episodes[id]
+	if !ok {
+		return errNotFound
+	}
+	if e.TitleI18n == nil {
+		e.TitleI18n = map[string]string{}
+	}
+	if r.Title != nil && e.Title == r.Title.Src {
+		e.TitleI18n[r.Lang] = r.Title.Dst
+	}
+	translate.ApplyChoices(e.Choices, r.Lang, r.Choices)
+	for i, p := range m.panels[id] {
+		if pairs, ok := r.Bubbles[i]; ok {
+			translate.ApplyBubbles(p.SB.Bubbles, r.Lang, pairs)
+		}
+	}
+	return nil
+}
+
+func (m *memStore) EnqueueTranslation(_ context.Context, p worker.TranslatePayload, maxAttempts int) error {
+	m.mu.Lock()
+	defer m.mu.Unlock()
+	m.enqueue(worker.KindTranslate, p, maxAttempts)
+	return nil
+}
+
+func cloneJSON[T any](v T) T {
+	var out T
+	b, _ := json.Marshal(v)
+	_ = json.Unmarshal(b, &out)
+	return out
 }

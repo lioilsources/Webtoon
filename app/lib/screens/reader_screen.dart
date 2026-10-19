@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show ScrollCacheExtent;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/languages.dart';
 import '../models/campaign.dart';
 import '../models/episode.dart';
 import '../providers/episode_provider.dart';
+import '../providers/language_provider.dart';
 import '../providers/providers.dart';
 import '../providers/reader_provider.dart';
 import '../reader/episode_end_block.dart';
@@ -59,6 +61,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       appBar: AppBar(
         title: Text(title),
         actions: [
+          if (st.episodes.isNotEmpty)
+            _LanguageMenu(
+              focus: ref
+                  .watch(episodeProvider(st.episodes[st.focusIndex].id))
+                  .episode,
+            ),
           if (st.episodes.isNotEmpty)
             IconButton(
               key: const ValueKey('history-button'),
@@ -175,7 +183,11 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                   foregroundColor: Colors.white,
                   child: Text('${e.index}'),
                 ),
-                title: Text(e.title.isNotEmpty ? e.title : 'Díl ${e.index}'),
+                title: Text(
+                  e.title.isNotEmpty
+                      ? e.titleIn(ref.read(readerLanguageProvider))
+                      : 'Díl ${e.index}',
+                ),
                 subtitle: Text(
                   [
                     episodeStatusLabel(e.status, e.panelsReady, e.panelsTotal),
@@ -265,7 +277,12 @@ class _EndOfCampaign extends ConsumerWidget {
         constraints: const BoxConstraints(maxWidth: kStripMaxWidth),
         child: EpisodeEndBlock(
           key: ValueKey('end-${source.id}'),
-          choices: source.choices,
+          choices: [
+            for (final c in source.choices)
+              c.localized(
+                source.displayLanguage(ref.watch(readerLanguageProvider)),
+              ),
+          ],
           creditsEstimate: source.creditsCost > 0
               ? source.creditsCost
               : source.panelsTotal,
@@ -313,4 +330,47 @@ class _Message extends StatelessWidget {
       ),
     ),
   );
+}
+
+/// Language picker like Lexify's: "Originál" first, then every reader language by its own
+/// name. Languages the focused episode is not (fully) translated into are disabled; episodes
+/// without the chosen language fall back to their original on their own.
+class _LanguageMenu extends ConsumerWidget {
+  final Episode? focus;
+  const _LanguageMenu({required this.focus});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final current = ref.watch(readerLanguageProvider);
+    final source = focus?.sourceLanguage ?? 'cs';
+    final available = focus?.languages ?? const <String>[];
+    final shown = focus?.displayLanguage(current);
+    PopupMenuItem<String> item(String value, String label, bool enabled) =>
+        CheckedPopupMenuItem<String>(
+          key: ValueKey('lang-$value'),
+          value: value,
+          enabled: enabled,
+          checked: value == (current ?? ''),
+          child: Text(label),
+        );
+    return PopupMenuButton<String>(
+      key: const ValueKey('language-button'),
+      tooltip: 'Jazyk bublin',
+      icon: shown == null
+          ? const Icon(Icons.translate_rounded)
+          : Text(
+              shown.toUpperCase(),
+              style: ComicFonts.ui(900).copyWith(fontSize: 13),
+            ),
+      onSelected: (v) => ref
+          .read(readerLanguageProvider.notifier)
+          .select(v.isEmpty ? null : v),
+      itemBuilder: (_) => [
+        item('', 'Originál (${langDisplayName(source)})', true),
+        const PopupMenuDivider(),
+        for (final l in kReaderLanguages)
+          if (l != source) item(l, langDisplayName(l), available.contains(l)),
+      ],
+    );
+  }
 }

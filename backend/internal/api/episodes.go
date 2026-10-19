@@ -5,11 +5,14 @@ import (
 	"net/http"
 	"slices"
 	"strconv"
+	"strings"
 
+	"github.com/ol1n/webtoon/backend/internal/comfy"
 	"github.com/ol1n/webtoon/backend/internal/db/dbq"
 	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/store"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/worker"
 )
 
@@ -28,6 +31,14 @@ type panelJSON struct {
 	Seed          int64           `json:"seed,omitempty"`
 	IdentityScore *float32        `json:"identity_score,omitempty"`
 	Error         string          `json:"error,omitempty"`
+	// Motion panel (PLAN-motion-panels): the loop is served next to the still, never instead of it.
+	Animate         bool   `json:"animate"`
+	Motion          string `json:"motion,omitempty"`
+	LoopSeconds     int32  `json:"loop_seconds,omitempty"`
+	VideoStatus     string `json:"video_status,omitempty"`
+	VideoURL        string `json:"video_url,omitempty"`
+	VideoError      string `json:"video_error,omitempty"`
+	EstimateSeconds int    `json:"estimate_seconds,omitempty"` // render-time hint for the editor
 }
 
 func (s *Server) panelJSON(p dbq.Panel) panelJSON {
@@ -37,6 +48,13 @@ func (s *Server) panelJSON(p dbq.Panel) panelJSON {
 	if p.Status == "ready" && p.ImagePath != "" {
 		out.ImageURL = s.mediaURL(p.ImagePath)
 		out.Width, out.Height = p.Width, p.Height
+	}
+	if p.Animate {
+		out.Animate, out.Motion, out.LoopSeconds, out.VideoStatus, out.VideoError = true, p.Motion, p.LoopSeconds, p.VideoStatus, p.VideoError
+		out.EstimateSeconds = comfy.VideoEstimateSeconds(int(p.LoopSeconds))
+		if p.VideoStatus == "ready" && p.VideoPath != "" {
+			out.VideoURL = s.mediaURL(p.VideoPath)
+		}
 	}
 	return out
 }
@@ -52,7 +70,7 @@ func (s *Server) loadEpisode(r *http.Request, id string) (dbq.Episode, dbq.Campa
 }
 
 func (s *Server) getEpisode(w http.ResponseWriter, r *http.Request) {
-	e, _, _, err := s.loadEpisode(r, r.PathValue("id"))
+	e, _, wrow, err := s.loadEpisode(r, r.PathValue("id"))
 	if err != nil {
 		s.fail(w, err)
 		return
@@ -66,8 +84,15 @@ func (s *Server) getEpisode(w http.ResponseWriter, r *http.Request) {
 	for _, p := range panels {
 		ps = append(ps, s.panelJSON(p))
 	}
+	// languages = translations complete for the whole episode; the reader offers only these.
+	text := store.EpisodeTextFromRows(e, panels, &domain.World{Language: wrow.Language})
+	langs := text.Languages()
+	if langs == nil {
+		langs = []string{}
+	}
 	writeJSON(w, http.StatusOK, map[string]any{
 		"id": e.ID, "campaign_id": e.CampaignID, "index": e.Idx, "title": e.Title, "status": e.Status,
+		"title_i18n": rawOr(e.TitleI18n, "{}"), "source_language": text.Source, "languages": langs,
 		"panels_ready": e.PanelsReady, "panels_total": e.PanelsTotal, "credits_cost": e.CreditsCost,
 		"panels": ps, "choices": rawOr(e.Choices, "[]"), "chosen": rawOr(e.Chosen, "null"),
 		"warnings": rawOr(e.Warnings, "[]"), "error": e.Error,
@@ -78,6 +103,15 @@ func (s *Server) getEpisode(w http.ResponseWriter, r *http.Request) {
 type panelPatch struct {
 	Bubbles    []domain.Bubble `json:"bubbles"`
 	Regenerate bool            `json:"regenerate"`
+	// Motion panel ("Rozhýbat"): any of these enqueues a loop render; animate=false makes it static.
+	Animate     *bool   `json:"animate"`
+	Motion      *string `json:"motion"`
+	LoopSeconds *int    `json:"loop_seconds"`
+	ReseedVideo bool    `json:"reseed_video"` // "Znovu": same prompt, new seed
+}
+
+func (r panelPatch) touchesMotion() bool {
+	return r.Animate != nil || r.Motion != nil || r.LoopSeconds != nil || r.ReseedVideo
 }
 
 // patchPanel edits bubble text (no image regeneration needed: bubbles are an overlay)
@@ -102,8 +136,8 @@ func (s *Server) patchPanel(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
-	if req.Bubbles == nil && !req.Regenerate {
-		s.fail(w, errf(http.StatusBadRequest, `send {"bubbles": [...]} or {"regenerate": true}`))
+	if req.Bubbles == nil && !req.Regenerate && !req.touchesMotion() {
+		s.fail(w, errf(http.StatusBadRequest, `send {"bubbles": [...]}, {"regenerate": true} or {"animate": true, "motion": "...", "loop_seconds": 2}`))
 		return
 	}
 	ctx := r.Context()
@@ -112,10 +146,62 @@ func (s *Server) patchPanel(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
+	retranslate, videoJob := false, false
 	err = s.store.Tx(ctx, func(q *dbq.Queries) error {
-		p, err := q.GetPanel(ctx, dbq.GetPanelParams{EpisodeID: e.ID, Idx: int32(n)})
+		p, err := q.GetPanelForUpdate(ctx, dbq.GetPanelForUpdateParams{EpisodeID: e.ID, Idx: int32(n)})
 		if err != nil {
 			return store.ErrNotFound
+		}
+		if req.touchesMotion() {
+			animate := p.Animate
+			if req.Animate != nil {
+				animate = *req.Animate
+			}
+			motion, loop := p.Motion, int(p.LoopSeconds)
+			if req.Motion != nil {
+				motion = strings.TrimSpace(*req.Motion)
+			}
+			if req.LoopSeconds != nil {
+				if *req.LoopSeconds < 1 || *req.LoopSeconds > 3 {
+					return errf(http.StatusBadRequest, "loop_seconds must be 1, 2 or 3")
+				}
+				loop = *req.LoopSeconds
+			}
+			loop = storyboard.LoopSecondsOr(loop)
+			if animate {
+				if err := storyboard.CheckMotion(motion); err != nil {
+					return errf(http.StatusBadRequest, err.Error())
+				}
+				if !p.Animate {
+					if cnt, err := q.CountAnimatedPanels(ctx, e.ID); err != nil {
+						return err
+					} else if int(cnt) >= storyboard.MaxAnimatedPanels {
+						return errf(http.StatusConflict, "at most "+strconv.Itoa(storyboard.MaxAnimatedPanels)+" animated panels per episode")
+					}
+				}
+			}
+			changed := animate != p.Animate || motion != p.Motion || loop != int(p.LoopSeconds) || req.ReseedVideo
+			if changed {
+				status := ""
+				if animate {
+					if p.VideoStatus == "rendering" {
+						return errf(http.StatusConflict, "the loop is being rendered")
+					}
+					status = "pending"
+				}
+				if err := q.SetPanelMotion(ctx, dbq.SetPanelMotionParams{EpisodeID: e.ID, Idx: int32(n),
+					Animate: animate, Motion: motion, LoopSeconds: int32(loop), VideoStatus: status}); err != nil {
+					return err
+				}
+				// The loop needs the still; before it exists the panel job enqueues the loop itself.
+				if animate && p.Status == "ready" {
+					if _, err := s.store.Enqueue(ctx, q, worker.KindPanelVideo,
+						worker.PanelVideoPayload{EpisodeID: e.ID, Panel: n, Reseed: req.ReseedVideo}, s.cfg.MaxAttempts); err != nil {
+						return err
+					}
+					videoJob = true
+				}
+			}
 		}
 		if req.Bubbles != nil {
 			for i, b := range req.Bubbles {
@@ -131,9 +217,20 @@ func (s *Server) patchPanel(w http.ResponseWriter, r *http.Request) {
 					}
 				}
 			}
+			// The editor changes originals only: unchanged texts keep their translations,
+			// changed ones lose them and the episode is queued for translation again.
+			old := []domain.Bubble{}
+			_ = json.Unmarshal(p.Bubbles, &old)
+			retranslate = translate.KeepI18n(old, req.Bubbles) && len(s.cfg.Langs) > 0 && e.Status == "ready"
 			if err := q.UpdatePanelBubbles(ctx, dbq.UpdatePanelBubblesParams{
 				EpisodeID: e.ID, Idx: int32(n), Bubbles: store.MustJSON(req.Bubbles)}); err != nil {
 				return err
+			}
+			if retranslate {
+				if _, err := s.store.Enqueue(ctx, q, worker.KindTranslate,
+					worker.TranslatePayload{EpisodeID: e.ID}, s.cfg.MaxAttempts); err != nil {
+					return err
+				}
 			}
 		}
 		if req.Regenerate {
@@ -157,7 +254,7 @@ func (s *Server) patchPanel(w http.ResponseWriter, r *http.Request) {
 		s.fail(w, err)
 		return
 	}
-	if req.Regenerate {
+	if req.Regenerate || retranslate || videoJob {
 		s.wake()
 	}
 	p, err := s.store.Q.GetPanel(ctx, dbq.GetPanelParams{EpisodeID: e.ID, Idx: int32(n)})
@@ -166,7 +263,7 @@ func (s *Server) patchPanel(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	code := http.StatusOK
-	if req.Regenerate {
+	if req.Regenerate || videoJob {
 		code = http.StatusAccepted
 	}
 	writeJSON(w, code, s.panelJSON(p))

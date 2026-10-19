@@ -77,6 +77,7 @@ class FakeWebtoonApi implements WebtoonApi {
   final List<ContinueCall> continueCalls = [];
   final List<(String, int, List<Bubble>)> bubbleUpdates = [];
   final List<(String, int)> regenerations = [];
+  final List<(String, int, Map<String, dynamic>)> motionPatches = [];
   final Map<String, int> episodeFetches = {};
   String? failNextContinue;
 
@@ -243,6 +244,37 @@ class FakeWebtoonApi implements WebtoonApi {
     dp['status'] = 'ready';
     dp['image_url'] = '/media/regen.png';
     episodeScripts[episodeId] = [j, done];
+    return Panel.fromJson(p);
+  }
+
+  @override
+  Future<Panel> updatePanelMotion(
+    String episodeId,
+    int panel,
+    Map<String, dynamic> patch,
+  ) async {
+    motionPatches.add((episodeId, panel, patch));
+    final j = _current(episodeId);
+    final p = (j['panels'] as List).cast<Map<String, dynamic>>()[panel];
+    final animate = patch['animate'] ?? p['animate'] ?? false;
+    p['animate'] = animate;
+    if (patch['motion'] != null) p['motion'] = patch['motion'];
+    if (patch['loop_seconds'] != null) {
+      p['loop_seconds'] = patch['loop_seconds'];
+    }
+    p.remove('video_url');
+    if (animate == true) {
+      p['video_status'] = 'pending';
+      p['estimate_seconds'] = 155;
+      // Next fetch: the loop is ready.
+      final done = jsonDecode(jsonEncode(j)) as Map<String, dynamic>;
+      final dp = (done['panels'] as List).cast<Map<String, dynamic>>()[panel];
+      dp['video_status'] = 'ready';
+      dp['video_url'] = '/media/loop.webp';
+      episodeScripts[episodeId] = [j, done];
+    } else {
+      p['video_status'] = '';
+    }
     return Panel.fromJson(p);
   }
 
@@ -621,9 +653,18 @@ Map<String, dynamic> panelJson(
   List<Map<String, dynamic>> sfx = const [],
   String gap = 'medium',
   List<Map<String, dynamic>> characters = const [],
+  bool animate = false,
+  String videoStatus = '',
+  String? videoUrl,
+  String motion = '',
 }) => {
   'index': i,
   'status': status,
+  if (animate) 'animate': true,
+  if (animate) 'motion': motion,
+  if (animate) 'loop_seconds': 2,
+  if (animate) 'video_status': videoStatus,
+  'video_url': ?videoUrl,
   if (status == 'ready') 'image_url': '/media/episodes/ep/p0${i}_1.png',
   if (status == 'ready') 'width': 1216,
   if (status == 'ready') 'height': 832,

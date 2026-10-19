@@ -28,6 +28,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/prompt"
 	"github.com/ol1n/webtoon/backend/internal/state"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/upstream"
 	"github.com/ol1n/webtoon/backend/internal/wd14"
 )
@@ -40,6 +41,7 @@ type Config struct {
 	PollInterval time.Duration // idle polling of the job table
 	StaleAfter   time.Duration // running jobs older than this are requeued
 	MaxAttempts  int           // for the panel jobs this worker enqueues
+	Langs        []string      // translation targets of ready episodes (empty = no translation jobs)
 	Clock        func() time.Time
 }
 
@@ -154,6 +156,10 @@ func (w *Worker) RunOnce(ctx context.Context, id string) (bool, error) {
 		perr = w.panelJob(ctx, job)
 	case KindSheet:
 		perr = w.sheetJob(ctx, job)
+	case KindTranslate:
+		perr = w.translateJob(ctx, job)
+	case KindPanelVideo:
+		perr = w.videoJob(ctx, job)
 	default:
 		perr = permanent(fmt.Errorf("unknown job kind %q", job.Kind))
 	}
@@ -213,6 +219,11 @@ func (w *Worker) onDefer(ctx context.Context, job *Job, err error, at time.Time)
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.SetSheetStatus(ctx, p.SheetID, "queued", msg)
 		}
+	case KindPanelVideo:
+		var p PanelVideoPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.SetPanelVideoStatus(ctx, p.EpisodeID, p.Panel, "pending", msg)
+		}
 	}
 }
 
@@ -227,6 +238,11 @@ func (w *Worker) onRetry(ctx context.Context, job *Job, err error) {
 		var p SheetPayload
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.SetSheetStatus(ctx, p.SheetID, "queued", err.Error())
+		}
+	case KindPanelVideo:
+		var p PanelVideoPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.SetPanelVideoStatus(ctx, p.EpisodeID, p.Panel, "pending", err.Error())
 		}
 	}
 }
@@ -248,6 +264,11 @@ func (w *Worker) onFail(ctx context.Context, job *Job, err error) {
 		var p SheetPayload
 		if json.Unmarshal(job.Payload, &p) == nil {
 			_ = w.store.FinishSheet(ctx, p.SheetID, "failed", nil, err.Error())
+		}
+	case KindPanelVideo:
+		var p PanelVideoPayload
+		if json.Unmarshal(job.Payload, &p) == nil {
+			_ = w.store.SetPanelVideoStatus(ctx, p.EpisodeID, p.Panel, "failed", err.Error())
 		}
 	}
 }
@@ -426,7 +447,134 @@ func (w *Worker) panelJob(ctx context.Context, job *Job) error {
 		log = log.With("identity", *res.IdentityScore)
 	}
 	log.Info("panel rendered")
+	if panel.SB.Animate && res.Status == "ready" {
+		// The loop starts from this still; a regenerated still gets a fresh loop.
+		if err := w.store.SetPanelVideoStatus(ctx, pp.EpisodeID, pp.Panel, "pending", ""); err != nil {
+			return err
+		}
+		if err := w.store.EnqueuePanelVideo(ctx, PanelVideoPayload{EpisodeID: pp.EpisodeID, Panel: pp.Panel}, w.cfg.MaxAttempts); err != nil {
+			return err
+		}
+	}
 	return w.maybeFinalize(ctx, pp.EpisodeID)
+}
+
+// --- motion panel job ---------------------------------------------------------
+
+// videoJob renders the 1–3 s loop of an animated panel from its finished still (PLAN-motion-panels).
+// The still must exist: before it does the job retries; a failed still fails the loop too.
+func (w *Worker) videoJob(ctx context.Context, job *Job) error {
+	var pp PanelVideoPayload
+	if err := json.Unmarshal(job.Payload, &pp); err != nil {
+		return permanent(err)
+	}
+	panel, err := w.store.GetPanel(ctx, pp.EpisodeID, pp.Panel)
+	if err != nil {
+		return err
+	}
+	if !panel.SB.Animate {
+		return w.store.SetPanelVideoStatus(ctx, pp.EpisodeID, pp.Panel, "", "") // turned off meanwhile
+	}
+	switch {
+	case panel.Status == "failed":
+		return permanent(fmt.Errorf("still failed, no loop"))
+	case panel.Status != "ready" || panel.ImagePath == "":
+		return fmt.Errorf("still not ready yet (%s)", panel.Status)
+	}
+	if err := storyboard.CheckMotion(panel.SB.Motion); err != nil {
+		return permanent(err)
+	}
+	ec, err := w.store.LoadEpisodeContext(ctx, pp.EpisodeID)
+	if err != nil {
+		return err
+	}
+	still, err := os.ReadFile(filepath.Join(w.cfg.MediaDir, filepath.FromSlash(panel.ImagePath)))
+	if err != nil {
+		return permanent(err)
+	}
+	if err := w.comfy.Ping(ctx); err != nil {
+		return err
+	}
+	if err := w.store.SetPanelVideoStatus(ctx, pp.EpisodeID, pp.Panel, "rendering", ""); err != nil {
+		return err
+	}
+	name, err := w.comfy.Upload(ctx, still, fmt.Sprintf("loop_%s_p%02d.png", pp.EpisodeID, pp.Panel))
+	if err != nil {
+		return err
+	}
+	width, height := comfy.VideoSize(panel.Width, panel.Height)
+	if panel.Width == 0 && panel.Height == 0 && (panel.SB.Shot == "wide" || panel.SB.Shot == "establishing") {
+		width, height = comfy.VideoSize(2, 1)
+	}
+	length := comfy.VideoLength(storyboard.LoopSecondsOr(panel.SB.LoopSeconds))
+	seed := BaseSeed(pp.EpisodeID, pp.Panel) + 1000
+	if pp.Reseed {
+		seed = rand.Int64N(1 << 31)
+	}
+	prefix := fmt.Sprintf("webtoon/%s/p%02d_loop", pp.EpisodeID, pp.Panel)
+	negative := comfy.VideoNegative
+	if ec.Styles != nil {
+		if an := ec.Styles.AudienceNegative(ec.World.Audience); len(an) > 0 {
+			negative += ", " + strings.Join(an, ", ")
+		}
+	}
+
+	var webp []byte
+	var attempts []RenderAttempt
+	var bad map[string]float64
+	for attempt := 0; attempt <= wd14.MaxReseed; attempt++ {
+		s := seed
+		if attempt > 0 {
+			s = rand.Int64N(1<<31 + 1)
+		}
+		outs, err := w.comfy.Run(ctx, comfy.VideoWorkflow(name, panel.SB.Motion, negative, width, height, length, s, prefix))
+		if err != nil {
+			return err
+		}
+		webp, bad = nil, map[string]float64{}
+		frames := 0
+		for _, o := range outs {
+			if comfy.IsWebP(o) {
+				webp = o
+				continue
+			}
+			frames++
+			tagged, err := w.wd14.Tag(ctx, o) // first / middle / last frame
+			if err != nil {
+				return err
+			}
+			for k, v := range wd14.Safety(tagged, ec.World.Audience) {
+				if v > bad[k] {
+					bad[k] = v
+				}
+			}
+		}
+		if webp == nil || frames == 0 {
+			return fmt.Errorf("loop graph returned %d outputs without a WebP and frames", len(outs))
+		}
+		attempts = append(attempts, RenderAttempt{Seed: s, Unsafe: bad})
+		seed = s
+		if len(bad) == 0 {
+			break
+		}
+	}
+	res := &PanelVideoResult{EpisodeID: pp.EpisodeID, Index: pp.Panel, Seed: seed, Attempts: attempts}
+	if len(bad) > 0 {
+		res.Status = "failed"
+		res.Error = fmt.Sprintf("unsafe frames after %d attempts: %v", len(attempts), bad)
+	} else {
+		rel := filepath.ToSlash(filepath.Join("episodes", pp.EpisodeID, fmt.Sprintf("p%02d_video_%d.webp", pp.Panel, seed)))
+		if err := writeFile(filepath.Join(w.cfg.MediaDir, rel), webp); err != nil {
+			return err
+		}
+		res.Status, res.VideoPath = "ready", rel
+	}
+	if err := w.store.SavePanelVideo(ctx, res); err != nil {
+		return err
+	}
+	w.log.Info("panel loop rendered", "episode", pp.EpisodeID, "panel", pp.Panel, "status", res.Status,
+		"seed", seed, "frames", length, "renders", len(attempts))
+	return nil
 }
 
 // uploadReference uploads the first reference of the first character in the panel with
@@ -571,7 +719,8 @@ func (w *Worker) maybeFinalize(ctx context.Context, episodeID string) error {
 	if err != nil || !prog.Done() {
 		return err
 	}
-	return w.store.FinalizeEpisode(ctx, episodeID, func(ec *EpisodeContext, p Progress) *Finalization {
+	ready := false
+	err = w.store.FinalizeEpisode(ctx, episodeID, func(ec *EpisodeContext, p Progress) *Finalization {
 		if ec.Episode.Status != "generating" || !p.Done() {
 			return nil
 		}
@@ -589,6 +738,57 @@ func (w *Worker) maybeFinalize(ctx context.Context, episodeID string) error {
 			f.Error = fmt.Sprintf("%d of %d panels failed", p.Failed, p.Total)
 		}
 		w.log.Info("episode ready", "episode", episodeID, "panels", p.Total, "failed", p.Failed)
+		ready = true
 		return f
 	})
+	if err != nil || !ready || len(w.cfg.Langs) == 0 {
+		return err
+	}
+	return w.store.EnqueueTranslation(ctx, TranslatePayload{EpisodeID: episodeID}, w.cfg.MaxAttempts)
+}
+
+// --- translation job -----------------------------------------------------------
+
+// translateJob = TranslateEpisode for the job's payload.
+func (w *Worker) translateJob(ctx context.Context, job *Job) error {
+	var p TranslatePayload
+	if err := json.Unmarshal(job.Payload, &p); err != nil {
+		return permanent(err)
+	}
+	_, err := w.TranslateEpisode(ctx, p)
+	return err
+}
+
+// TranslateEpisode translates a ready episode into every requested language that is not complete
+// yet (all of them with Force), storing each language as soon as it is done, so a job interrupted
+// by the LLM window continues where it stopped. Returns the languages it translated.
+func (w *Worker) TranslateEpisode(ctx context.Context, p TranslatePayload) ([]string, error) {
+	et, err := w.store.LoadEpisodeText(ctx, p.EpisodeID)
+	if err != nil {
+		return nil, err
+	}
+	if et.Status != "ready" {
+		return nil, nil // only finished episodes are translated; the ready transition enqueues again
+	}
+	langs := p.Langs
+	if len(langs) == 0 {
+		langs = w.cfg.Langs
+	}
+	items := et.Items()
+	var done []string
+	for _, lang := range translate.Targets(langs, et.Source) {
+		if !p.Force && et.Complete(lang) {
+			continue
+		}
+		got, err := translate.Run(ctx, w.llm, et.Source, lang, items)
+		if err != nil {
+			return done, err
+		}
+		if err := w.store.ApplyTranslation(ctx, p.EpisodeID, et.Collect(lang, got)); err != nil {
+			return done, err
+		}
+		done = append(done, lang)
+		w.log.Info("episode translated", "episode", p.EpisodeID, "lang", lang, "texts", len(items))
+	}
+	return done, nil
 }
