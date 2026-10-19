@@ -1,0 +1,327 @@
+{
+ "id": "rh_01_santorini",
+ "title": "Santorini – Ta, která se nedá přehlédnout",
+ "synopsis": "Malá Elena si mezi dokonalými lidmi na Santorini připadá neviditelná, dokud ji nezastaví Nikos.",
+ "ending": "Šťastný konec: zůstanou spolu.",
+ "characters": [
+  {
+   "id": "elena",
+   "name": "Elena",
+   "gender": "f",
+   "base": "adult, petite, mature female, curvy, wide hips, olive skin, long hair, wavy hair, dark brown hair, brown eyes",
+   "outfits": {
+    "default": "white silk dress, flowing dress, gold earrings, gold bracelets, high heels",
+    "dinner": "white silk dress, off-shoulder, gold necklace, gold earrings, hair up, high heels",
+    "morning": "oversized white linen shirt dress, gold earrings, sandals, hair down"
+   },
+   "photo": "a petite curvy Mediterranean woman aged 27 with long dark wavy hair"
+  },
+  {
+   "id": "nikos",
+   "name": "Nikos",
+   "gender": "m",
+   "base": "mature male, athletic, tan skin, short hair, black hair, brown eyes, stubble",
+   "outfits": {
+    "default": "white linen shirt, beige linen trousers, leather sandals",
+    "dinner": "navy linen shirt, white linen trousers, wristwatch"
+   },
+   "photo": "an athletic Greek man aged 34 with short black hair, tanned skin"
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_terrace",
+   "name": "Terasa nad kalderou",
+   "tag_prompt": "outdoors, santorini, caldera view, whitewashed buildings, blue dome, terrace, sea, sunlight"
+  },
+  {
+   "id": "l_yacht",
+   "name": "Jachta",
+   "tag_prompt": "outdoors, yacht deck, sunset, sea, wine glasses, candle, orange sky"
+  },
+  {
+   "id": "l_cabin",
+   "name": "Kajuta",
+   "tag_prompt": "indoors, yacht cabin, wooden interior, porthole, warm lamp light, night"
+  }
+ ],
+ "panels": [
+  {
+   "shot": "establishing",
+   "location_id": "l_terrace",
+   "characters": [],
+   "visual_tags": [
+    "whitewashed houses",
+    "blue domes",
+    "caldera",
+    "morning sun"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Santorini. Terasa s výhledem na kalderu.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "wide",
+   "location_id": "l_terrace",
+   "characters": [
+    {
+     "id": "elena"
+    }
+   ],
+   "visual_tags": [
+    "standing at railing",
+    "looking at sea",
+    "wind in hair",
+    "alone"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_terrace",
+   "characters": [
+    {
+     "id": "elena"
+    }
+   ],
+   "visual_tags": [
+    "sad",
+    "looking down",
+    "insecure"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "elena",
+     "text": "Všichni tady jsou dokonalí… já jsem jen malá.",
+     "kind": "thought"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_terrace",
+   "characters": [
+    {
+     "id": "nikos"
+    }
+   ],
+   "visual_tags": [
+    "walking past",
+    "stopping",
+    "looking at viewer",
+    "smile"
+   ],
+   "bubbles": [],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_terrace",
+   "characters": [
+    {
+     "id": "elena"
+    },
+    {
+     "id": "nikos"
+    }
+   ],
+   "visual_tags": [
+    "man standing beside woman",
+    "woman looking up",
+    "surprised",
+    "blush"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "nikos",
+     "text": "Ty jsi ta, která se nedá přehlédnout.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "wide",
+   "location_id": "l_yacht",
+   "characters": [
+    {
+     "id": "elena",
+     "outfit": "dinner"
+    },
+    {
+     "id": "nikos",
+     "outfit": "dinner"
+    }
+   ],
+   "visual_tags": [
+    "sitting at table",
+    "wine glasses",
+    "sunset",
+    "talking",
+    "smile"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Večer. Večeře na jachtě.",
+     "kind": "narration"
+    },
+    {
+     "speaker_id": "nikos",
+     "text": "Přijela jsi hledat něco skutečného?",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "close-up",
+   "location_id": "l_yacht",
+   "characters": [
+    {
+     "id": "elena",
+     "outfit": "dinner"
+    }
+   ],
+   "visual_tags": [
+    "soft smile",
+    "sunset light",
+    "looking at viewer"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "elena",
+     "text": "Ano.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_cabin",
+   "characters": [
+    {
+     "id": "elena",
+     "outfit": "dinner"
+    },
+    {
+     "id": "nikos",
+     "outfit": "dinner"
+    }
+   ],
+   "visual_tags": [
+    "man taking off her earrings gently",
+    "standing",
+    "faces close",
+    "warm light"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "nikos",
+     "text": "Nech mě se na tebe dívat… pomalu.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "medium"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_cabin",
+   "characters": [
+    {
+     "id": "elena",
+     "outfit": "dinner"
+    },
+    {
+     "id": "nikos",
+     "outfit": "dinner"
+    }
+   ],
+   "visual_tags": [
+    "kiss",
+    "embrace",
+    "eyes closed",
+    "warm light"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "elena",
+     "text": "Cítím se… hezká.",
+     "kind": "speech"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "small"
+  },
+  {
+   "shot": "medium",
+   "location_id": "l_cabin",
+   "characters": [],
+   "visual_tags": [
+    "lamp going out",
+    "porthole",
+    "moonlight on water",
+    "no humans"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "",
+     "text": "Lampa zhasne. Moře šumí dál.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  },
+  {
+   "shot": "wide",
+   "location_id": "l_terrace",
+   "characters": [
+    {
+     "id": "elena",
+     "outfit": "morning"
+    },
+    {
+     "id": "nikos"
+    }
+   ],
+   "visual_tags": [
+    "morning",
+    "coffee cups",
+    "hugging from behind",
+    "looking at sea",
+    "smile"
+   ],
+   "bubbles": [
+    {
+     "speaker_id": "nikos",
+     "text": "Jsi. A jsi moje.",
+     "kind": "speech"
+    },
+    {
+     "speaker_id": "",
+     "text": "Ráno zůstávají.",
+     "kind": "narration"
+    }
+   ],
+   "sfx": [],
+   "gap_after": "large"
+  }
+ ]
+}
