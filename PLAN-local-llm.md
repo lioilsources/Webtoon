@@ -22,8 +22,9 @@ scenáristu (a + b) a část editora obrazu (d). Programátor a návrhář styl�
 ## 2. Který model (podle Directora, PLAN-model-bench §6a)
 
 **Prakticky jen `qwen36`** (Qwen3.6-35B-A3B NVFP4, vLLM na SPARKu):
-- aliasy v LiteLLM: `openclaw-default` (thinking parser), **`judge`** (temperature 0, bez thinkingu) — pro psaní použít `judge`
-  nebo `openclaw-default` s vypnutým thinkingem;
+- alias v LiteLLM: **`openclaw-default`** (`judge` je zatím jen ve větvi feat/model-bench, živý config ho nemá); posílat
+  temperature 0, `response_format: json_schema` a `chat_template_kwargs.enable_thinking=false` (reasoning parser jinak
+  dá přemýšlení do `reasoning_content`, `content` zůstane JSON);
 - kontext 64k, tool calls, **`response_format: json_schema`** (xgrammar) — vynucené schéma je nutné, bez něj dal bench 48 %;
 - 80 tok/s na stream, 215 tok/s při 4 souběžných → storyboard ~2 500 tokenů ≈ 30 s;
 - okno **llm 13:00–07:00**; comfy 07–13, takže psaní a render se nepotkají;

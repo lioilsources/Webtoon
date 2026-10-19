@@ -13,7 +13,7 @@ a doplní odvozená pole (`tag_prompt`, `count_tag`, `permissions`…).
 
 ```bash
 # lokální model přes LiteLLM na SPARKu (okno llm 13:00–07:00) nebo přes llm.ol1n.com se service tokenem
-WEBTOON_LLM=https://llm.ol1n.com/v1 WEBTOON_LLM_MODEL=judge \
+WEBTOON_LLM=https://llm.ol1n.com/v1 WEBTOON_LLM_MODEL=openclaw-default \
 WEBTOON_CF_ACCESS_ID=… WEBTOON_CF_ACCESS_SECRET=… \
 python3 m0/adapt.py --id rl_01_santorini --style fashion_editorial scenare/santorini.md
 

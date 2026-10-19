@@ -34,7 +34,9 @@ CF_ID, CF_SECRET = os.environ.get("WEBTOON_CF_ACCESS_ID"), os.environ.get("WEBTO
 
 
 def chat(messages, schema=None, temperature=0.4, max_tokens=6000):
-    body = {"model": LLM_MODEL, "messages": messages, "temperature": temperature, "max_tokens": max_tokens}
+    # qwen36 runs with --reasoning-parser: thinking lands in reasoning_content, content stays JSON. Ask to skip it anyway.
+    body = {"model": LLM_MODEL, "messages": messages, "temperature": temperature, "max_tokens": max_tokens,
+            "chat_template_kwargs": {"enable_thinking": False}}
     if schema:
         body["response_format"] = {"type": "json_schema", "json_schema": {"name": schema["title"], "schema": schema, "strict": True}}
     req = urllib.request.Request(LLM_URL.rstrip("/") + "/chat/completions", data=json.dumps(body).encode(),
@@ -146,7 +148,7 @@ def adapt(args):
         return
     vocab = set(load_json(DATA / "wd14_tags.json")) if (DATA / "wd14_tags.json").exists() else None
     for attempt in range(args.attempts):
-        story = chat(messages, schema=schema, temperature=0.4 if attempt == 0 else 0.6)
+        story = chat(messages, schema=schema, temperature=0 if attempt == 0 else 0.5)
         story["id"] = args.id
         errs = check(story, vocab)
         if not errs:
