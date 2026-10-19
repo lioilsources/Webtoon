@@ -29,7 +29,7 @@ scenáristu (a + b) a část editora obrazu (d). Programátor a návrhář styl�
 - 80 tok/s na stream, 215 tok/s při 4 souběžných → storyboard ~2 500 tokenů ≈ 30 s;
 - okno **llm 13:00–07:00**; comfy 07–13, takže psaní a render se nepotkají;
 - přes `https://llm.ol1n.com/v1` se service tokenem, stejně jako dnešní moderace;
-- multimodální (vidění přes alias `judge`), na SPARKu zatím neověřeno — kontaktní arch poslat jako **jeden** složený obrázek.
+- multimodální (vidění přes `openclaw-default`), na SPARKu zatím neověřeno — kontaktní arch poslat jako **jeden** složený obrázek.
 
 Ostatní (`Gemma-4` 7 tok/s a schéma 20 %, `Nano-30B`, `swarm-director` 120B jen noční, `translate`, `vl` 7B) Director nedoporučuje.
 
@@ -38,7 +38,7 @@ Ostatní (`Gemma-4` 7 tok/s a schéma 20 %, `Nano-30B`, `swarm-director` 120B je
 ## 3. Architektura
 
 ```
-scénář.md ──► m0/adapt.py ──► qwen36 (judge, json_schema) ──► validace (kód) ──► data/stories/<id>/{world,storyboard}.json
+scénář.md ──► m0/adapt.py ──► qwen36 (openclaw-default, json_schema, thinking off) ──► validace (kód) ──► data/stories/<id>/{world,storyboard}.json
                   │  SKILL.md + prompts/adapt_system.md + schema/story.schema.json + examples/
                   └─ opakování s chybovou zpětnou vazbou (max 3×), pak odmítnout
 
