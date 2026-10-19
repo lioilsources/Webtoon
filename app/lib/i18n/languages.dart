@@ -34,6 +34,24 @@ const _native = {
   'uk': 'Українська',
 };
 
+const _flags = {
+  'cs': '🇨🇿',
+  'en': '🇬🇧',
+  'de': '🇩🇪',
+  'it': '🇮🇹',
+  'fr': '🇫🇷',
+  'pl': '🇵🇱',
+  'pt-BR': '🇧🇷',
+  'ja': '🇯🇵',
+  'ko': '🇰🇷',
+  'vi': '🇻🇳',
+  'ru': '🇷🇺',
+  'uk': '🇺🇦',
+};
+
+/// Flag emoji of a reader language; empty when unknown.
+String langFlag(String code) => _flags[code] ?? '';
+
 /// Native name of a language code; the code itself when unknown.
 String langDisplayName(String code) => _native[code] ?? code;
 

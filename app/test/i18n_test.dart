@@ -145,7 +145,7 @@ void main() {
 
     await tester.tap(find.byKey(const ValueKey('language-button')));
     await tester.pumpAndSettle();
-    expect(find.text('Originál (Čeština)'), findsOneWidget);
+    expect(find.text('🇨🇿  Originál (Čeština)'), findsOneWidget);
     // ja is offered but disabled: the episode is not fully translated into it.
     final ja = tester.widget<PopupMenuItem<String>>(
       find.byKey(const ValueKey('lang-ja')),
@@ -158,7 +158,7 @@ void main() {
     expect(find.text('Bublina 0'), findsNothing);
     expect(find.text('A letter without an address'), findsOneWidget);
     expect(
-      find.text('EN'),
+      find.text('🇬🇧 EN'),
       findsOneWidget,
     ); // app bar shows the active language
     expect(store.saved, 'en');

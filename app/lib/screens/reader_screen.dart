@@ -351,7 +351,7 @@ class _LanguageMenu extends ConsumerWidget {
           value: value,
           enabled: enabled,
           checked: value == (current ?? ''),
-          child: Text(label),
+          child: Text('${langFlag(value.isEmpty ? source : value)}  $label'),
         );
     return PopupMenuButton<String>(
       key: const ValueKey('language-button'),
@@ -359,7 +359,7 @@ class _LanguageMenu extends ConsumerWidget {
       icon: shown == null
           ? const Icon(Icons.translate_rounded)
           : Text(
-              shown.toUpperCase(),
+              '${langFlag(shown)} ${shown.toUpperCase()}',
               style: ComicFonts.ui(900).copyWith(fontSize: 13),
             ),
       onSelected: (v) => ref
