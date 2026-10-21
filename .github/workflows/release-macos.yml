@@ -51,13 +51,13 @@ jobs:
       - name: Package as ZIP
         run: |
           cd "app/build/macos/Build/Products/Debug"
-          zip -r "$OLDPWD/Webtoon-${{ github.ref_name }}-macOS.zip" "webtoon.app"
+          zip -r "$OLDPWD/Toonfork-${{ github.ref_name }}-macOS.zip" "Toonfork.app"
 
       - name: Upload to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: Webtoon-${{ github.ref_name }}-macOS.zip
-          name: Webtoon ${{ github.ref_name }}
+          files: Toonfork-${{ github.ref_name }}-macOS.zip
+          name: Toonfork ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           draft: false
           prerelease: true

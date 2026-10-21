@@ -94,7 +94,7 @@ jobs:
           files: |
             app/build/app/outputs/bundle/release/app-release.aab
             app/build/app/outputs/flutter-apk/app-release.apk
-          name: Webtoon ${{ github.ref_name }}
+          name: Toonfork ${{ github.ref_name }}
           tag_name: ${{ github.ref_name }}
           draft: false
           prerelease: true
@@ -106,5 +106,5 @@ jobs:
           appId: ${{ secrets.FIREBASE_ANDROID_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           groups: Alfa
-          releaseNotes: "Webtoon ${{ github.ref_name }} (build ${{ github.run_number }})"
+          releaseNotes: "Toonfork ${{ github.ref_name }} (build ${{ github.run_number }})"
           file: app/build/app/outputs/flutter-apk/app-release.apk
