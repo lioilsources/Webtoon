@@ -1,0 +1,63 @@
+# From Distribution/workflows (golden) via align-project.sh. Local differences:
+# release builds pass --dart-define=WEBTOON_API from the repository variable
+# WEBTOON_API (the app/lib/config.dart default is localhost), the Flutter
+# version is not pinned to 3.41 (app needs Dart ^3.12), and on Android a
+# missing keystore secret fails the run and Firebase runs only once
+# FIREBASE_ANDROID_APP_ID is set.
+
+name: Release macOS
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
+
+jobs:
+  build-macos:
+    name: Build & Release macOS
+    runs-on: macos-15
+    env:
+      # A release talks to the deployed backend, not the localhost default
+      # in app/lib/config.dart. Repository variable, not a secret: it ships
+      # inside the app anyway.
+      WEBTOON_API: ${{ vars.WEBTOON_API }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - name: Check WEBTOON_API
+        run: |
+          [ -n "$WEBTOON_API" ] || { echo "::error::Repository variable WEBTOON_API is not set (gh variable set WEBTOON_API --body https://…)"; exit 1; }
+          echo "API: $WEBTOON_API"
+
+      - name: Install dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Build macOS (debug)
+        working-directory: app
+        run: flutter build macos --debug --dart-define=WEBTOON_API=$WEBTOON_API
+
+      - name: Package as ZIP
+        run: |
+          cd "app/build/macos/Build/Products/Debug"
+          zip -r "$OLDPWD/Webtoon-${{ github.ref_name }}-macOS.zip" "webtoon.app"
+
+      - name: Upload to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: Webtoon-${{ github.ref_name }}-macOS.zip
+          name: Webtoon ${{ github.ref_name }}
+          tag_name: ${{ github.ref_name }}
+          draft: false
+          prerelease: true
