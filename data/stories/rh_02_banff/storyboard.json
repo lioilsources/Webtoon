@@ -19,7 +19,9 @@
         }
       ],
       "sfx": [],
-      "gap_after": "medium"
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling outside window static camera"
     },
     {
       "shot": "medium",
@@ -268,7 +270,9 @@
         }
       ],
       "sfx": [],
-      "gap_after": "large"
+      "gap_after": "large",
+      "animate": true,
+      "motion": "walking away alone static camera"
     }
   ]
 }

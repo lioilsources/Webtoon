@@ -1,0 +1,88 @@
+{
+  "id": "w_rq_01_santorini",
+  "title": "Santorini – Ta, která se nedá přehlédnout",
+  "synopsis": "Malá Elena si mezi dokonalými lidmi na Santorini připadá neviditelná, dokud ji nezastaví Nikos.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "fashion_editorial",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_terrace",
+      "l_yacht",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "elena",
+      "name": "Elena",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Mediterranean woman aged 27 with long dark wavy hair",
+      "base": "adult, mature female, petite, curvy, wide hips, olive skin, long hair, wavy hair, dark brown hair, brown eyes",
+      "outfits": {
+        "default": "white silk dress, flowing dress, gold earrings, gold bracelets, high heels",
+        "dinner": "white silk dress, off-shoulder, gold necklace, gold earrings, hair up, high heels",
+        "morning": "oversized white linen shirt dress, gold earrings, sandals, hair down"
+      },
+      "photo": "a petite curvy Mediterranean woman aged 27 with long dark wavy hair",
+      "tag_prompt": "adult, mature female, petite, curvy, wide hips, olive skin, long hair, wavy hair, dark brown hair, brown eyes, white silk dress, flowing dress, gold earrings, gold bracelets, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "nikos",
+      "name": "Nikos",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Greek man aged 34 with short black hair, tanned skin",
+      "base": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes, stubble",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "dinner": "navy linen shirt, white linen trousers, wristwatch"
+      },
+      "photo": "an athletic Greek man aged 34 with short black hair, tanned skin",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes, stubble, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_terrace",
+      "name": "Terasa nad kalderou",
+      "description": "Terasa nad kalderou",
+      "tag_prompt": "outdoors, santorini, caldera view, whitewashed buildings, blue dome, terrace, sea, sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_yacht",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "outdoors, yacht deck, sunset, sea, wine glasses, candle, orange sky",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, porthole, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

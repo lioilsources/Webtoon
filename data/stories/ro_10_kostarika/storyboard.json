@@ -1,0 +1,221 @@
+{
+  "title": "Kostarika – Pláž a džungle",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_beach",
+      "characters": [],
+      "visual_tags": [
+        "tropical_beach",
+        "palm_trees",
+        "sunrise",
+        "calm_sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kostarika – pláž a džungle.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "water_edge",
+        "cowboy_hat",
+        "gentle_wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "thoughtful_expression",
+        "distant_eyes",
+        "soft_light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Jsem jen venkovan…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "shore",
+        "sundress_flutter",
+        "sunlight_on_hair",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Jsi víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man",
+        "woman",
+        "facing_each_other",
+        "hand_touching",
+        "blush",
+        "sunlit_water"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dinner_table",
+        "wine_glasses",
+        "candle_flame",
+        "soft_shadows",
+        "smiling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře v bungalovu.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "Miluji ten západ slunce s tebou.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "cole",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_night",
+      "characters": [],
+      "visual_tags": [
+        "closed_wooden_door",
+        "candle_flicker",
+        "curtains_swaying",
+        "quiet_night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc se ztišila, světlo svíčky pomalu bledne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "morning"
+        },
+        {
+          "id": "amara",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "blanket",
+        "coffee_mugs",
+        "embrace_from_behind",
+        "dawn_sky",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Cítím se doma.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "amara",
+          "text": "Protože jsi se mnou.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "",
+          "text": "Ráno zůstávají spolu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

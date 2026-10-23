@@ -1,0 +1,88 @@
+{
+  "id": "w_rn_05_seychely",
+  "title": "Seychely – Tvoje ticho je hlasité",
+  "synopsis": "Tichá Mei na seychelské pláži najde v Oliverovi někoho, kdo její ticho slyší jako hlas.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "pastel_shoujo",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_yacht",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mei",
+      "name": "Mei",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Asian woman aged 30 with straight black hair",
+      "base": "adult, mature female, petite, slender, asian, straight hair, black hair, dark brown eyes",
+      "outfits": {
+        "default": "beige linen jumpsuit, wide leg, silver necklace, silver earrings, sunglasses",
+        "dinner": "ivory silk dress, off-shoulder, gold earrings, hair up, sandals",
+        "morning": "white cotton sundress, silver earrings, sandals, hair down"
+      },
+      "photo": "a petite Asian woman aged 30 with straight black hair",
+      "tag_prompt": "adult, mature female, petite, slender, asian, straight hair, black hair, dark brown eyes, beige linen jumpsuit, wide leg, silver necklace, silver earrings, sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender man aged 38 with glasses and short black hair",
+      "base": "adult, mature male, slender, glasses, short hair, black hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "beige linen shirt, white linen trousers, leather sandals",
+        "dinner": "navy linen shirt, white linen trousers, wristwatch"
+      },
+      "photo": "a slender man aged 38 with glasses and short black hair",
+      "tag_prompt": "adult, mature male, slender, glasses, short hair, black hair, blue eyes, fair skin, beige linen shirt, white linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Seychelská pláž",
+      "description": "Seychelská pláž",
+      "tag_prompt": "outdoors, seychelles, white sand beach, turquoise water, palm trees, morning sun",
+      "mood": ""
+    },
+    {
+      "id": "l_yacht",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "outdoors, yacht deck, sunset, sea, wine glasses, candle, orange sky",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, porthole, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "w_rq_02_banff",
+  "title": "Banff – Více než jen výhled",
+  "synopsis": "Vysoká Chloe hledá v kanadských horách teplo, které jí Ethan na krátký čas poskytne, než ji znovu opustí.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Ethan odjíždí a Chloe odchází sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_cabin",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloe",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender blonde woman aged 29 with long straight hair and blue eyes",
+      "base": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "beige outdoor jacket, white thermal sweater, slim fit hiking trousers, brown trekking boots, gold earrings",
+        "dinner": "white thermal sweater, slim fit hiking trousers, gold earrings",
+        "morning": "beige outdoor jacket, white thermal sweater, slim fit hiking trousers, brown trekking boots"
+      },
+      "photo": "a tall slender blonde woman aged 29 with long straight hair and blue eyes",
+      "tag_prompt": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes, beige outdoor jacket, white thermal sweater, slim fit hiking trousers, brown trekking boots, gold earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular man aged 36 with short brown hair and a rugged face",
+      "base": "adult, mature male, muscular, tan skin, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "dark green outdoor jacket, grey thermal shirt, black hiking trousers, hiking boots"
+      },
+      "photo": "a muscular man aged 36 with short brown hair and a rugged face",
+      "tag_prompt": "adult, mature male, muscular, tan skin, short hair, brown hair, brown eyes, dark green outdoor jacket, grey thermal shirt, black hiking trousers, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Lesní stezka",
+      "description": "Lesní stezka",
+      "tag_prompt": "outdoors, banff, pine forest, mountains, foggy morning, cold air, dirt path",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Horská chata",
+      "description": "Horská chata",
+      "tag_prompt": "indoors, cozy cabin, wooden walls, fireplace, warm lighting, wine glasses",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, bedroom, wooden walls, wool blanket, dim light, night",
+      "mood": ""
+    }
+  ]
+}

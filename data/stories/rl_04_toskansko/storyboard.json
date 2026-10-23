@@ -1,0 +1,291 @@
+{
+  "title": "Toskánsko – Chyba v lesích",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vineyard",
+      "characters": [],
+      "visual_tags": [
+        "rows of grapes",
+        "golden sun",
+        "quiet",
+        "empty road"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Toskánsko. Vinice pod poledním sluncem.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "walking alone",
+        "looking at ground",
+        "sad",
+        "wind in hair"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "touching chest",
+        "insecure",
+        "looking down",
+        "freckles visible"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Všichni se dívají jen na… tohle.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "standing by car",
+        "watching",
+        "hands in pockets",
+        "gentle smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        },
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man approaching woman",
+        "woman looking up",
+        "surprised",
+        "eye contact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Dívám se na tebe celou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        },
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing close",
+        "wine bottle",
+        "hay bales",
+        "dust in light",
+        "tension"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Stodola. Ticho a vůně sena.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        },
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man removing jewelry",
+        "woman closing eyes",
+        "intimate",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "vines"
+        },
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "hands on waist",
+        "passionate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "hay bales",
+        "darkness",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Noc přichází.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        },
+        {
+          "id": "luca",
+          "outfit": "vines"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "standing apart",
+        "man looking away",
+        "woman crying",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Mám doma přítelkyni. Byla to chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_road",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "tears",
+        "looking away",
+        "walking away",
+        "back view"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Giulia odchází se slzami.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

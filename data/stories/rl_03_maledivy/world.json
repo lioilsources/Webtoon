@@ -1,0 +1,88 @@
+{
+  "id": "w_rl_03_maledivy",
+  "title": "Maledivy - Přesně to, co jsem hledal",
+  "synopsis": "Aisha pochybuje o svém těle, dokud ji Kai na Maledivách nepřesvědčí, že je dokonalá.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "flat_anime_mema",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu další dny."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow_ext",
+      "l_beach",
+      "l_bungalow_int"
+    ]
+  },
+  "characters": [
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite dark-skinned woman aged 26 with short black curly hair",
+      "base": "adult, mature female, petite, dark skin, short hair, curly hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white silk beach cover-up, flowing dress, gold bracelets, sandals",
+        "evening": "white silk beach cover-up, off-shoulder, gold necklace, hair down, sandals",
+        "morning": "white linen shirt dress, gold earrings, barefoot, hair down"
+      },
+      "photo": "a petite dark-skinned woman aged 26 with short black curly hair",
+      "tag_prompt": "adult, mature female, petite, dark skin, short hair, curly hair, black hair, brown eyes, white silk beach cover-up, flowing dress, gold bracelets, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Asian-Pacific man aged 32 with short black hair, tanned skin",
+      "base": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "evening": "navy linen shirt, white linen trousers, wristwatch"
+      },
+      "photo": "an athletic Asian-Pacific man aged 32 with short black hair, tanned skin",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow_ext",
+      "name": "Exteriér bungalovu",
+      "description": "Exteriér bungalovu",
+      "tag_prompt": "outdoors, overwater bungalow, white wood, turquoise water, sunset, palm trees",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, white sand beach, ocean, sunset, candles, table",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow_int",
+      "name": "Interiér bungalovu",
+      "description": "Interiér bungalovu",
+      "tag_prompt": "indoors, bedroom, white curtains, ocean view, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

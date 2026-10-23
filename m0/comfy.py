@@ -8,8 +8,20 @@ import uuid
 from common import COMFY_URL, http, http_json
 
 
-def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=None, ip_weight=0.6, ip_preset="PLUS (high strength)", ip_end=0.8):
-    """API-format graph. ref_image = filename already uploaded to ComfyUI input/."""
+REGION_OVERLAP = 0.2  # each character's strip reaches this far past the frame's 1/n, so the pair can touch
+
+
+def strips(n):
+    """(x, width) of each character's vertical strip, as fractions of the frame, left to right."""
+    w = min(1.0, 1 / max(n, 1) + REGION_OVERLAP)
+    return [(round(i * (1 - w) / (n - 1), 3) if n > 1 else 0.0, round(w, 3)) for i in range(n)]
+
+
+def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=None, ip_weight=0.6, ip_preset="PLUS (high strength)", ip_end=0.8,
+             regions=None, refs=None):
+    """API-format graph. ref_image = filename already uploaded to ComfyUI input/.
+    regions = one prompt per character, left to right, each over its vertical strip (core area conditioning).
+    refs = [(uploaded filename, strip or None)]: one IP-Adapter per character reference, masked to its strip."""
     g = {
         "ckpt": {"class_type": "CheckpointLoaderSimple", "inputs": {"ckpt_name": preset["checkpoint"]}},
         "pos": {"class_type": "CLIPTextEncode", "inputs": {"text": positive, "clip": ["ckpt", 1]}},
@@ -29,19 +41,38 @@ def workflow(positive, negative, width, height, seed, preset, prefix, ref_image=
                                                                 "strength_model": strength, "strength_clip": strength}}
         model, clip = [f"lora{i}", 0], [f"lora{i}", 1]
     g["pos"]["inputs"]["clip"] = g["neg"]["inputs"]["clip"] = clip
+    cond = ["pos", 0]
+    for i, (text, (x, w)) in enumerate(zip(regions or [], strips(len(regions or [])))):
+        g[f"rpos{i}"] = {"class_type": "CLIPTextEncode", "inputs": {"text": text, "clip": clip}}
+        g[f"rarea{i}"] = {"class_type": "ConditioningSetAreaPercentage", "inputs": {
+            "conditioning": [f"rpos{i}", 0], "width": w, "height": 1.0, "x": x, "y": 0.0, "strength": 1.0}}
+        g[f"rcomb{i}"] = {"class_type": "ConditioningCombine", "inputs": {"conditioning_1": cond, "conditioning_2": [f"rarea{i}", 0]}}
+        cond = [f"rcomb{i}", 0]
+    g["sample"]["inputs"]["positive"] = cond
     g["sample"]["inputs"]["model"] = model
     if preset.get("prediction") == "v":
         g["vpred"] = {"class_type": "ModelSamplingDiscrete", "inputs": {"model": model, "sampling": "v_prediction", "zsnr": True}}
         g["sample"]["inputs"]["model"] = ["vpred", 0]
-    if ref_image:
-        base = g["sample"]["inputs"]["model"]
-        g["ipload"] = {"class_type": "IPAdapterUnifiedLoader", "inputs": {"model": base, "preset": ip_preset}}
-        g["refimg"] = {"class_type": "LoadImage", "inputs": {"image": ref_image}}
-        g["ipapply"] = {"class_type": "IPAdapterAdvanced", "inputs": {
-            "model": ["ipload", 0], "ipadapter": ["ipload", 1], "image": ["refimg", 0],
-            "weight": ip_weight, "weight_type": "linear", "combine_embeds": "concat",
-            "start_at": 0.0, "end_at": ip_end, "embeds_scaling": "V only"}}
-        g["sample"]["inputs"]["model"] = ["ipapply", 0]
+    refs = refs or ([(ref_image, None)] if ref_image else [])
+    if refs:
+        model = g["sample"]["inputs"]["model"]
+        g["ipload"] = {"class_type": "IPAdapterUnifiedLoader", "inputs": {"model": model, "preset": ip_preset}}
+        model = ["ipload", 0]
+        for i, (image, strip) in enumerate(refs):
+            g[f"refimg{i}"] = {"class_type": "LoadImage", "inputs": {"image": image}}
+            inputs = {"model": model, "ipadapter": ["ipload", 1], "image": [f"refimg{i}", 0],
+                      "weight": ip_weight, "weight_type": "linear", "combine_embeds": "concat",
+                      "start_at": 0.0, "end_at": ip_end, "embeds_scaling": "V only"}
+            if strip:  # without the mask both faces blend into each person
+                x, w = strip
+                g[f"mzero{i}"] = {"class_type": "SolidMask", "inputs": {"value": 0.0, "width": width, "height": height}}
+                g[f"mone{i}"] = {"class_type": "SolidMask", "inputs": {"value": 1.0, "width": round(w * width), "height": height}}
+                g[f"mask{i}"] = {"class_type": "MaskComposite", "inputs": {
+                    "destination": [f"mzero{i}", 0], "source": [f"mone{i}", 0], "x": round(x * width), "y": 0, "operation": "add"}}
+                inputs["attn_mask"] = [f"mask{i}", 0]
+            g[f"ipapply{i}"] = {"class_type": "IPAdapterAdvanced", "inputs": inputs}
+            model = [f"ipapply{i}", 0]
+        g["sample"]["inputs"]["model"] = model
     return g
 
 

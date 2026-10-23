@@ -1,0 +1,87 @@
+{
+  "id": "w_rq_06_capri",
+  "title": "Capri – Víc než jen svaly",
+  "synopsis": "Marcus je zvyklý, že lidé vidí jen jeho tělo, ale Lila v něm hledá něco hlubšího.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rocks",
+      "l_restaurant",
+      "l_villa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular man aged 33 with dark skin and short black hair",
+      "base": "adult, mature male, muscular, athletic, dark skin, short hair, black hair, brown eyes, stubble",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "dinner": "black linen shirt, white linen trousers, wristwatch"
+      },
+      "photo": "a muscular man aged 33 with dark skin and short black hair",
+      "tag_prompt": "adult, mature male, muscular, athletic, dark skin, short hair, black hair, brown eyes, stubble, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy woman aged 27 with long chestnut hair",
+      "base": "adult, petite, mature female, curvy, wide hips, chestnut hair, long hair, brown eyes",
+      "outfits": {
+        "default": "yellow silk mini dress, high heels, gold bracelets",
+        "dinner": "yellow silk mini dress, gold necklace, high heels, hair up"
+      },
+      "photo": "a petite curvy woman aged 27 with long chestnut hair",
+      "tag_prompt": "adult, petite, mature female, curvy, wide hips, chestnut hair, long hair, brown eyes, yellow silk mini dress, high heels, gold bracelets",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rocks",
+      "name": "Skály u pobřeží",
+      "description": "Skály u pobřeží",
+      "tag_prompt": "outdoors, capri, limestone cliffs, turquoise sea, bright sunlight, mediterranean coast",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "outdoors, terrace, lemon trees, white tablecloth, evening light, sea view",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "indoors, luxury villa, white walls, arched windows, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

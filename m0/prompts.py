@@ -17,6 +17,12 @@ EXPRESSION_RE = re.compile(r"^(closed eyes|half-closed eyes|wet hair|hair blowin
 LOWER_RE = re.compile(r"\b(shorts|skirt|pants|pantyhose|thighhighs|legwear|socks|footwear|boots|shoes)\b")
 FEET_RE = re.compile(r"\b(footwear|boots|shoes|socks)\b")
 
+# Colour is what tells two people apart; weighted so the style tags ("limited palette", monochrome) don't wash it out.
+COLOR_RE = re.compile(r"^(black|brown|dark brown|light brown|blonde|platinum blonde|red|auburn|chestnut|white|grey|silver|"
+                      r"pink|blue|green|purple|orange|aqua|hazel) (hair|eyes)$")
+
+AGE_ANCHOR = {"adult", "mature female", "mature male"}
+
 COUNT_TAGS = {"1girl", "1boy", "2girls", "2boys", "3girls", "multiple girls", "multiple boys", "solo", "no humans"}
 
 
@@ -37,7 +43,7 @@ def count_tags(chars):
     return tags
 
 
-def build(panel, world, styles, preset_id=None, sfw=True):
+def build(panel, world, styles, preset_id=None, sfw=True, regional=False):
     preset = styles["presets"][preset_id or world["style_id"]]
     chars_by_id = {c["id"]: c for c in world["characters"]}
     locs = {l["id"]: l for l in world["locations"]}
@@ -54,15 +60,15 @@ def build(panel, world, styles, preset_id=None, sfw=True):
     if preset.get("natural"):
         return _natural(panel, chars, design_of, locs, styles, preset, world, sfw)
 
-    char_tags = []
-    for c in chars:
-        char_tags += split_tags(design_of(c))
-    if panel.get("shot") == "close-up":
-        char_tags = [t for t in char_tags if not LOWER_RE.search(t)]
-    elif panel.get("shot") in ("medium", "over-shoulder"):
-        char_tags = [t for t in char_tags if not FEET_RE.search(t)]
-    design = set(split_tags(" , ".join(design_of(c) for c in chars)))
+    def tags_of(c):
+        tags = split_tags(design_of(c))
+        if panel.get("shot") == "close-up":
+            tags = [t for t in tags if not LOWER_RE.search(t)]
+        elif panel.get("shot") in ("medium", "over-shoulder"):
+            tags = [t for t in tags if not FEET_RE.search(t)]
+        return tags
 
+    design = set(split_tags(" , ".join(design_of(c) for c in chars)))
     scene = [t for t in panel.get("visual_tags", []) if t not in COUNT_TAGS]
     if chars:
         scene = [t for t in scene if t in design or EXPRESSION_RE.search(t) or not DESIGN_RE.search(t)]
@@ -73,25 +79,49 @@ def build(panel, world, styles, preset_id=None, sfw=True):
     shot = styles["shot_tags"].get(panel.get("shot"), [])
     if chars:
         shot = [t for t in shot if t != "no humans"]
+    style = preset["artist_tags"] + preset["aesthetic_tags"]
+
+    # One flat tag list lets SDXL swap hair, eyes and clothes between two people (the blonde turns brunette):
+    # with regional=True (render.py --regions) each character gets its own prompt over its strip of the frame (comfy.workflow regions).
+    regions = []
+    if regional and len(chars) > 1:
+        regions = [dedupe(preset["quality_pos"] + [c["count_tag"]] * bool(c.get("count_tag")) + weight(tags_of(c)) + style)
+                   for c in chars]
+        char_tags = [t for c in chars for t in tags_of(c) if t in AGE_ANCHOR]  # the shared prompt still says who is adult
+        scene = [t for t in scene if EXPRESSION_RE.search(t) or not DESIGN_RE.search(t)]  # design lives in the regions
+    else:
+        char_tags = [t for c in chars for t in tags_of(c)]
 
     pos = dedupe(
         preset["quality_pos"]
         + count_tags(chars)
         + char_tags
-        + preset["artist_tags"] + preset["aesthetic_tags"]
+        + style
         + shot + scene + loc_tags
         + (styles["sfw_positive"] if sfw else [])
     )
     neg = dedupe(preset["quality_neg"] + styles["always_negative"] + (styles["sfw_negative"] if sfw else [])
                  + audience_negative(world, styles))
     # A negative tag the scene needs (e.g. "letters" vs. a letter being delivered) would fight the positive.
-    pos_forms = set(pos) | {t + "s" for t in pos}
+    pos_forms = {t for tags in [pos, *regions] for t in tags} | {t + "s" for t in pos}
     neg = [t for t in neg if t not in pos_forms]
     w, h = styles["shot_size"].get(panel.get("shot"), [832, 1216])
-    return {"positive": ", ".join(pos), "negative": ", ".join(neg), "width": w, "height": h, "preset": preset}
+    return {"positive": ", ".join(pos), "negative": ", ".join(neg), "width": w, "height": h, "preset": preset,
+            "regions": [", ".join(r) for r in regions]}
+
+
+def weight(tags):
+    return [f"({t}:1.2)" if COLOR_RE.match(t) else t for t in tags]
+
+
+# Free worlds (local_strip.sh -f) lose the SFW negatives, never the age ones.
+AGE_NEGATIVE = ["child", "loli", "shota", "aged down", "teenager", "school uniform", "serafuku", "flat chest",
+                "petite", "short stature", "childlike face", "randoseru"]
 
 
 def audience_negative(world, styles):
+    if world.get("free"):
+        return AGE_NEGATIVE
     return {"kids": styles.get("kids_negative", []), "adult": styles.get("adult_negative", [])}.get(world.get("audience"), [])
 
 

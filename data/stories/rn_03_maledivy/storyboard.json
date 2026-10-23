@@ -1,0 +1,267 @@
+{
+  "title": "Maledivy – Přesně to, co jsem hledal",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "overwater bungalow",
+        "wooden deck",
+        "turquoise water",
+        "morning sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Maledivy. Overwater bungalov.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "looking at water",
+        "insecure",
+        "hands on hips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Moje prsa jsou moc malá…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "kayak approaching",
+        "paddling",
+        "smiling",
+        "looking at viewer"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "stepping off kayak",
+        "turning around",
+        "surprised",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Ty jsi přesně to, co jsem hledal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on sand",
+        "wine glasses",
+        "sunset",
+        "talking",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře na pláži.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "sunset light",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Cítím se ženská.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "holding hands",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow_night",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "taking off bracelet",
+        "standing close",
+        "faces close",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Nech mě tě obdivovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow_night",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "porthole",
+        "moonlight on water",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Moře šumí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "swim"
+        },
+        {
+          "id": "kai",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "standing at railing",
+        "hugging",
+        "looking at sea",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají spolu další dny.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

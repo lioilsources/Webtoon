@@ -1,0 +1,89 @@
+{
+  "id": "w_rn_06_capri",
+  "title": "Capri – Já chci tebe",
+  "synopsis": "Svalovec Marcus si myslí, že ho ženy chtějí jen kvůli tělu, dokud mu Lila neřekne, že chce jeho samotného.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_cliffs",
+      "l_restaurant",
+      "l_villa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Greek man aged 33 with dark skin, short black hair",
+      "base": "adult, mature male, muscular, dark skin, short hair, black hair, brown eyes, stubble",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "dinner": "white linen shirt, beige linen trousers, leather sandals",
+        "villa": "white linen shirt, beige linen trousers, leather sandals"
+      },
+      "photo": "a muscular Greek man aged 33 with dark skin, short black hair",
+      "tag_prompt": "adult, mature male, muscular, dark skin, short hair, black hair, brown eyes, stubble, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Italian woman aged 27 with long wavy chestnut hair",
+      "base": "adult, petite, mature female, wide hips, olive skin, long hair, wavy hair, chestnut hair, brown eyes",
+      "outfits": {
+        "default": "red mini dress, fitted, gold earrings, high heels",
+        "dinner": "red mini dress, fitted, gold earrings, high heels",
+        "villa": "red mini dress, fitted, gold earrings, high heels"
+      },
+      "photo": "a petite curvy Italian woman aged 27 with long wavy chestnut hair",
+      "tag_prompt": "adult, petite, mature female, wide hips, olive skin, long hair, wavy hair, chestnut hair, brown eyes, red mini dress, fitted, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_cliffs",
+      "name": "Skály Capri",
+      "description": "Skály Capri",
+      "tag_prompt": "outdoors, capri, limestone cliffs, sea, blue sky, midday sun",
+      "mood": ""
+    },
+    {
+      "id": "l_restaurant",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "outdoors, restaurant terrace, candlelight, sea view, sunset, string lights",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "indoors, villa living room, marble floor, large windows, sea view, warm lamp light, evening",
+      "mood": ""
+    }
+  ]
+}

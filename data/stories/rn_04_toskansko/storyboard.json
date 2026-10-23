@@ -1,0 +1,267 @@
+{
+  "title": "Toskánsko – Dívám se na tebe celou",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vineyard",
+      "characters": [],
+      "visual_tags": [
+        "tuscan vineyard",
+        "grapevines",
+        "cypress trees",
+        "hills",
+        "morning sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Toskánsko. Vinice u cesty.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "standing in vineyard",
+        "looking down",
+        "insecure",
+        "hands on hips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Všichni se dívají jen na… tohle.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "walking on path",
+        "stopping",
+        "looking at viewer",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia"
+        },
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man beside woman",
+        "woman looking up",
+        "surprised",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Dívám se na tebe celou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "barn"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on hay",
+        "wine glasses",
+        "lantern light",
+        "talking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Stodola. Víno a blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "lantern light",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Cítím se…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "barn"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "lantern light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "barn"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman on top",
+        "slow motion",
+        "eye contact",
+        "hay",
+        "lantern light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [],
+      "visual_tags": [
+        "lantern going out",
+        "darkness",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Ticho.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        },
+        {
+          "id": "luca",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "standing apart",
+        "woman with tears",
+        "man looking down",
+        "vineyard path"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Mám doma přítelkyni. Toto byla chyba.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "",
+          "text": "Giulia odchází se slzami.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "w_ro_06_capri",
+  "title": "Capri – Já chci tebe",
+  "synopsis": "Na skalnatých útesích Capri se Marcus a Lila setkají, najdou si blízkost a zůstávají spolu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_cliffs",
+      "l_terrace_dinner",
+      "l_villa",
+      "l_morning_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Mediterranean man aged 33 with short black hair and dark skin",
+      "base": "adult, mature male, muscular, dark skin, short hair, black hair, brown eyes, stubble",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "dinner": "navy linen shirt, white linen trousers, leather loafers",
+        "morning": "light cotton shirt, linen shorts, canvas shoes"
+      },
+      "photo": "a muscular Mediterranean man aged 33 with short black hair and dark skin",
+      "tag_prompt": "adult, mature male, muscular, dark skin, short hair, black hair, brown eyes, stubble, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Mediterranean woman aged 27 with long chestnut hair",
+      "base": "adult, mature female, petite, curvy, wide hips, olive skin, long hair, chestnut hair, brown eyes",
+      "outfits": {
+        "default": "red silk mini dress, high heels, gold necklace",
+        "dinner": "red silk off-shoulder dress, gold earrings, high heels",
+        "morning": "light cotton dress, sandals, simple bracelet"
+      },
+      "photo": "a petite curvy Mediterranean woman aged 27 with long chestnut hair",
+      "tag_prompt": "adult, mature female, petite, curvy, wide hips, olive skin, long hair, chestnut hair, brown eyes, red silk mini dress, high heels, gold necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_cliffs",
+      "name": "Skály Capri",
+      "description": "Skály Capri",
+      "tag_prompt": "outdoors, capri, rocky cliffs, blue sea, whitewashed houses, bright sun",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace_dinner",
+      "name": "Terasa – večeře",
+      "description": "Terasa – večeře",
+      "tag_prompt": "outdoors, terrace, dinner table, candles, sunset, sea view, soft lighting",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "indoors, villa interior, stone walls, warm lamp light, night",
+      "mood": ""
+    },
+    {
+      "id": "l_morning_terrace",
+      "name": "Ranní terasa",
+      "description": "Ranní terasa",
+      "tag_prompt": "outdoors, terrace, sunrise, mist over sea, empty chairs, gentle light",
+      "mood": ""
+    }
+  ]
+}

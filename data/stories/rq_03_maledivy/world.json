@@ -1,0 +1,88 @@
+{
+  "id": "w_rq_03_maledivy",
+  "title": "Malé Maledivy – Přesně to, co jsem hledal",
+  "synopsis": "Aisha bojuje se svou sebevěrou, dokud ji na Maledivách nepotká Kai, který vidí její skutečnou krásu.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "flat_anime_mema",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu další dny."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow",
+      "l_beach",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite woman aged 26 with dark skin and short curly black hair",
+      "base": "adult, mature female, petite, dark skin, short curly hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen sundress, gold bracelets, gold anklet, sandals",
+        "dinner": "yellow silk sundress, gold jewelry, flower in hair",
+        "morning": "white oversized linen shirt, gold bracelets"
+      },
+      "photo": "a petite woman aged 26 with dark skin and short curly black hair",
+      "tag_prompt": "adult, mature female, petite, dark skin, short curly hair, black hair, brown eyes, white linen sundress, gold bracelets, gold anklet, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Asian-Pacific man aged 32 with short black hair and tanned skin",
+      "base": "adult, mature male, athletic, asian-pacific, tan skin, short black hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, light blue linen shorts, flip flops",
+        "dinner": "white linen shirt, beige trousers, leather sandals"
+      },
+      "photo": "an athletic Asian-Pacific man aged 32 with short black hair and tanned skin",
+      "tag_prompt": "adult, mature male, athletic, asian-pacific, tan skin, short black hair, brown eyes, white linen shirt, light blue linen shorts, flip flops",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow",
+      "name": "Overwater bungalov",
+      "description": "Overwater bungalov",
+      "tag_prompt": "indoors, overwater bungalow, wooden deck, turquoise water, sunny, tropical luxury",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, white sand beach, palm trees, sunset, candlelit table, ocean",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice v bungalovu",
+      "description": "Ložnice v bungalovu",
+      "tag_prompt": "indoors, bedroom, glass floor, ocean view, soft white curtains, warm evening light",
+      "mood": ""
+    }
+  ]
+}

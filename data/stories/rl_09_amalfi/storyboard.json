@@ -1,0 +1,232 @@
+{
+  "title": "Amalfi – Chyba v noci",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "amalfi coast",
+        "cliffs",
+        "sea",
+        "sunset",
+        "yacht railing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Amalfi. Paluba jachty.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "looking at sea",
+        "sad",
+        "hands in pockets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "standing beside man",
+        "looking at man",
+        "gentle smile",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting close",
+        "wine glasses",
+        "faces close",
+        "intimate",
+        "dim light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Víno a blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "taking off glasses",
+        "looking at woman",
+        "soft expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "porthole",
+        "moonlight",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Noc je tichá.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "sari",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "morning",
+        "standing alone",
+        "holding coffee cup",
+        "looking at sea",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Mám doma přítele. Byla to chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "looking at distance",
+        "sad",
+        "hands in pockets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Adrian zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

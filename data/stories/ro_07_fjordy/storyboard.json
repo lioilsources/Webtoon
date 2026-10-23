@@ -1,0 +1,236 @@
+{
+  "title": "Norské fjordy – Zastav se",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "snow-capped mountains",
+        "deep fjord",
+        "mist",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Norské fjordy – horská stezka.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "breath visible",
+        "determined expression",
+        "snowy path"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Vždycky běžím…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "hand raised",
+        "smile",
+        "snow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Zastav se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "dinner table",
+        "candles",
+        "wine glasses",
+        "cozy fire",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer v chatě, blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        },
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "soft lighting",
+        "hands on cheeks",
+        "tender"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Cítím se… hezká.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "erik",
+          "text": "Jsi moje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_night",
+      "characters": [],
+      "visual_tags": [
+        "dim lamp",
+        "closed door",
+        "rain on window",
+        "silhouette"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc se chýlí, ticho.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "morning"
+        },
+        {
+          "id": "erik",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sunrise",
+        "mist over fjord",
+        "holding coffee cups",
+        "goodbyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Musím odjet domů, to byl jen dovolený.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "looking at horizon",
+        "hands in pockets",
+        "sad expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Zůstanu tady.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [],
+      "visual_tags": [
+        "empty terrace",
+        "misty fjord",
+        "sun rising"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Erik zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

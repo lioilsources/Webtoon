@@ -25,6 +25,9 @@ UNSAFE_KIDS = {**UNSAFE, "sensitive": 0.5}  # same as backend wd14.Thresholds("k
 DESIGN_THRESHOLD = 0.35
 MAX_RESEED = 2
 ADULT_TAG_LIMITS = {"cleavage": 0.8, "large breasts": 0.8, "covered nipples": 0.3, "shirtless": 0.5, "underwear": 0.3, "bed": 0.7}
+# Free worlds (world.json "free": true, local_strip.sh -f) drop the rating check but never this one.
+AGE_TAG_LIMITS = {"child": 0.35, "loli": 0.35, "shota": 0.35, "aged down": 0.35, "flat chest": 0.5,
+                  "school uniform": 0.5, "serafuku": 0.5, "randoseru": 0.35, "kindergarten uniform": 0.35}
 
 
 def sheet_panel(char):
@@ -33,12 +36,15 @@ def sheet_panel(char):
                             "simple background", "straight-on", "arms at sides"]}
 
 
-def safety(tags, audience="teen"):
+def safety(tags, audience="teen", free=False):
+    g = tags.get("general", {})
+    if free:  # always an adult world
+        return {k: round(g[k], 3) for k, lim in AGE_TAG_LIMITS.items() if g.get(k, 0) > lim}
+    bad = {}
     r = tags.get("rating", {})
     limits = UNSAFE_KIDS if audience == "kids" else UNSAFE
-    bad = {k: round(r.get(k, 0), 3) for k, lim in limits.items() if r.get(k, 0) > lim}
+    bad.update({k: round(r.get(k, 0), 3) for k, lim in limits.items() if r.get(k, 0) > lim})
     if audience == "adult":  # fashion is fine, a panel dominated by the neckline is not
-        g = tags.get("general", {})
         bad.update({k: round(g[k], 3) for k, lim in ADULT_TAG_LIMITS.items() if g.get(k, 0) > lim})
     return bad
 
@@ -67,18 +73,24 @@ def main():
     ap.add_argument("--seeds", type=int, default=1)
     ap.add_argument("--seed-base", type=int, default=1000)
     ap.add_argument("--ref", default=None, help="reference image for IP-Adapter")
-    ap.add_argument("--ip-weight", type=float, default=0.6)
+    ap.add_argument("--char-refs", action="store_true",
+                    help="render a reference sheet per character (ref_<id>.png), IP-Adapter it into every panel with that character. "
+                         "Burns colours on NoobAI even at 0.35, rainbow noise with the strip masks (banff test 2026-10-21)")
+    ap.add_argument("--ip-weight", type=float, default=None, help="default 0.6 with --ref, 0.5 with --char-refs")
     ap.add_argument("--ip-preset", default="PLUS (high strength)", help='or "PLUS FACE (portraits)"')
     ap.add_argument("--ip-end", type=float, default=0.8)
     ap.add_argument("--panels", default=None, help="comma separated panel indices")
-    ap.add_argument("--no-sfw", action="store_true")
+    ap.add_argument("--regions", action="store_true", help="own prompt per character over its strip of the frame (two-shots)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--skip-existing", action="store_true", help="resume: keep panels already on disk")
     args = ap.parse_args()
 
+    if args.ip_weight is None:
+        args.ip_weight = 0.5 if args.char_refs else 0.6  # a white-background sheet at full strength also drags its pose and backdrop in
     world = load_json(args.world)
     styles = load_json(DATA / "styles.json")
     char = next(c for c in world["characters"] if args.character in (None, c["id"]))
+    by_id = {c["id"]: c for c in world["characters"]}
     if args.sheet:
         panels = [sheet_panel(char)]
     else:
@@ -89,13 +101,15 @@ def main():
     outdir = OUT / day / args.run
     jobs = []
     for i in idx:
-        p = prompts.build(panels[i], world, styles, args.preset, sfw=not args.no_sfw)
+        p = prompts.build(panels[i], world, styles, args.preset, sfw=not world.get("free"), regional=args.regions)
         for k in range(args.seeds):
             jobs.append((i, k, p, args.seed_base + i * 100 + k))
     print(f"{len(jobs)} images → {outdir}  (preset={args.preset or world['style_id']}, ref={args.ref})")
     if args.dry_run:
         for i, k, p, seed in jobs:
             print(f"\n[p{i:02d} s{k} seed={seed} {p['width']}x{p['height']}]\n+ {p['positive']}\n- {p['negative']}")
+            for r in p.get("regions") or []:
+                print(f"  region: {r}")
         return
     if not comfy.is_up():
         raise SystemExit("ComfyUI is not reachable — check the Spark schedule (ComfyUI window 07–13) with Director.")
@@ -104,39 +118,73 @@ def main():
     if args.ref:
         ref_name = comfy.upload(Path(args.ref).read_bytes(), f"webtoon_{args.run}_ref.png")
 
-    meta = {"run": args.run, "preset": args.preset or world["style_id"], "ref": args.ref,
-            "ip_weight": args.ip_weight if args.ref else None,
-            "ip_preset": args.ip_preset if args.ref else None, "ip_end": args.ip_end if args.ref else None, "storyboard": args.storyboard, "images": []}
+    ip = bool(args.ref or args.char_refs)
+    meta = {"run": args.run, "preset": args.preset or world["style_id"], "ref": args.ref, "char_refs": {},
+            "ip_weight": args.ip_weight if ip else None,
+            "ip_preset": args.ip_preset if ip else None, "ip_end": args.ip_end if ip else None, "storyboard": args.storyboard, "images": []}
     outdir.mkdir(parents=True, exist_ok=True)
-    if args.skip_existing and (outdir / "meta.json").exists():
-        meta["images"] = [r for r in load_json(outdir / "meta.json")["images"] if (outdir / r["file"]).exists()]
-        jobs = [j for j in jobs if not (outdir / f"p{j[0]:02d}_s{j[1]}.png").exists()]
-    for i, k, p, seed in jobs:
-        rec = {"panel": i, "variant": k, "width": p["width"], "height": p["height"],
-               "positive": p["positive"], "negative": p["negative"], "attempts": []}
-        # Shared-GPU courtesy: while out/PAUSE exists (another job owns ComfyUI) wait between panels.
-        while (OUT / "PAUSE").exists():
-            time.sleep(20)
+
+    def draw(p, seed, prefix, refs=None):
+        """One image with WD14 safety reseeds → (png, tags, unsafe, seed, attempts)."""
+        attempts = []
         for attempt in range(MAX_RESEED + 1):
             # ComfyUI window end: WEBTOON_DEADLINE=HH:MM → submit nothing after it (resume later with --skip-existing).
             if os.environ.get("WEBTOON_DEADLINE") and time.strftime("%H:%M") >= os.environ["WEBTOON_DEADLINE"]:
                 print(f"deadline {os.environ['WEBTOON_DEADLINE']} reached, stopping")
                 raise SystemExit(3)
             s = seed if attempt == 0 else random.randint(0, 2**31)
-            g = comfy.workflow(p["positive"], p["negative"], p["width"], p["height"], s, p["preset"],
-                               f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", ref_image=ref_name, ip_weight=args.ip_weight,
-                               ip_preset=args.ip_preset, ip_end=args.ip_end)
+            g = comfy.workflow(p["positive"], p["negative"], p["width"], p["height"], s, p["preset"], prefix,
+                               ref_image=ref_name, ip_weight=args.ip_weight, ip_preset=args.ip_preset, ip_end=args.ip_end,
+                               regions=p.get("regions"), refs=refs)
             png = comfy.run(g)[0]
             tags = wd14_tag(png)
-            bad = safety(tags, world.get("audience")) if not args.no_sfw else {}
-            rec["attempts"].append({"seed": s, "unsafe": bad})
+            bad = safety(tags, world.get("audience"), free=bool(world.get("free")))
+            attempts.append({"seed": s, "unsafe": bad})
             if not bad:
                 break
+        return png, tags, bad, s, attempts
+
+    # One sheet per character, drawn once per run and kept (a rerun reuses it, so the face stays put).
+    char_refs = {}
+    if args.char_refs and not args.sheet:
+        old_refs = load_json(outdir / "meta.json").get("char_refs", {}) if (outdir / "meta.json").exists() else {}
+        for n, c in enumerate(world["characters"]):
+            f = outdir / f"ref_{c['id']}.png"
+            rec = old_refs.get(c["id"]) if f.exists() else None
+            if not rec:
+                p = prompts.build(sheet_panel(c), world, styles, args.preset, sfw=not world.get("free"))
+                png, tags, bad, s, attempts = draw(p, args.seed_base + 9000 + n, f"webtoon/{day}/{args.run}/ref_{c['id']}")
+                f.write_bytes(png)
+                rec = {"file": f.name, "seed": s, "status": "failed" if bad else "ok", "attempts": attempts,
+                       "identity": identity(tags, c, "sheet")}
+                print(f"ref {c['id']} seed={s} {rec['status']} identity={rec['identity']['recall']}")
+            meta["char_refs"][c["id"]] = rec
+            if rec["status"] == "ok":  # an unsafe sheet is never fed back into the panels
+                char_refs[c["id"]] = comfy.upload(f.read_bytes(), f"webtoon_{args.run}_ref_{c['id']}.png")
+
+    if args.skip_existing and (outdir / "meta.json").exists():
+        meta["images"] = [r for r in load_json(outdir / "meta.json")["images"] if (outdir / r["file"]).exists()]
+        jobs = [j for j in jobs if not (outdir / f"p{j[0]:02d}_s{j[1]}.png").exists()]
+    for i, k, p, seed in jobs:
+        rec = {"panel": i, "variant": k, "width": p["width"], "height": p["height"],
+               "positive": p["positive"], "negative": p["negative"], "regions": p.get("regions") or [], "attempts": []}
+        # Shared-GPU courtesy: while out/PAUSE exists (another job owns ComfyUI) wait between panels.
+        while (OUT / "PAUSE").exists():
+            time.sleep(20)
+        ids = [c["id"] for c in panels[i].get("characters", []) if c["id"] in by_id]
+        refs = [(char_refs[cid], strip if len(ids) > 1 else None)
+                for cid, strip in zip(ids, comfy.strips(len(ids))) if cid in char_refs]
+        png, tags, bad, s, rec["attempts"] = draw(p, seed, f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", refs)
+        rec["refs"] = [cid for cid in ids if cid in char_refs]
         name = f"p{i:02d}_s{k}.png"
         (outdir / name).write_bytes(png)
         rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"))
         if char["id"] in {c["id"] for c in panels[i].get("characters", [])} or args.sheet:
             rec["identity"] = identity(tags, char, panels[i].get("shot"))
+        # Every character in frame, so a drifting second lead shows up too (WD14 tags the whole image:
+        # in a two-shot it catches a lost hair colour, not two people swapping theirs).
+        rec["identity_by"] = {c["id"]: identity(tags, by_id[c["id"]], panels[i].get("shot"))
+                              for c in panels[i].get("characters", []) if c["id"] in by_id}
         meta["images"].append(rec)
         ident = rec.get("identity", {}).get("recall")
         print(f"p{i:02d} s{k} seed={s} {rec['status']} identity={ident}")
@@ -146,6 +194,12 @@ def main():
     if scored:
         meta["identity_mean"] = round(sum(scored) / len(scored), 3)
         print(f"mean identity recall: {meta['identity_mean']}")
+    for cid in by_id:
+        got = [r["identity_by"][cid]["recall"] for r in meta["images"] if cid in r.get("identity_by", {})]
+        if got:
+            meta.setdefault("identity_mean_by", {})[cid] = round(sum(got) / len(got), 3)
+    if meta.get("identity_mean_by"):
+        print("identity per character:", meta["identity_mean_by"])
     save_json(outdir / "meta.json", meta)
 
 

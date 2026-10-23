@@ -1,0 +1,269 @@
+{
+  "title": "Banff – Vysoká a studená",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "pine forest",
+        "mountain trail",
+        "morning mist",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Banff. Lesní cesta v kanadských horách.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "standing on trail",
+        "looking down",
+        "hands in pockets",
+        "alone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "sad",
+        "looking away",
+        "cold breath visible"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Jsem moc vysoká a studená…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "walking on trail",
+        "stopping",
+        "looking at viewer",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man approaching woman",
+        "woman turning",
+        "surprised",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Vypadáš, jako bys hledala něco víc než výhled.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "dinner"
+        },
+        {
+          "id": "ethan",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "wine glasses",
+        "talking",
+        "smile",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře v chatě.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Zůstaň přes noc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "dinner"
+        },
+        {
+          "id": "ethan",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "taking off jacket",
+        "standing",
+        "woman watching",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Nech mě se na tebe dívat… pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "dinner"
+        },
+        {
+          "id": "ethan",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Cítím se…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "moonlight through window",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Ticho v pokoji.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "default"
+        },
+        {
+          "id": "ethan",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "backpacks",
+        "walking apart",
+        "woman looking back",
+        "man looking ahead"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno Ethan říká, že musí odjet na služební cestu a neví, kdy se vrátí.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "chloe",
+          "text": "Chloe odchází sama.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

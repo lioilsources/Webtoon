@@ -1,0 +1,88 @@
+{
+  "id": "w_rl_04_toskansko",
+  "title": "Toskánsko – Chyba v lesích",
+  "synopsis": "Giulia hledá v Toskánsku únik, ale narazí na Luca, který ji sice přitahuje, ale nemůže jí dát nic trvalého.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: on má přítelkyni, ona odchází sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_barn",
+      "l_road"
+    ]
+  },
+  "characters": [
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy Mediterranean woman aged 28 with long red hair and freckles",
+      "base": "adult, mature female, curvy, olive skin, long hair, red hair, freckles, brown eyes",
+      "outfits": {
+        "default": "black lace dress, flowing dress, gold earrings, high heels",
+        "vines": "black lace dress, off-shoulder, gold necklace, gold earrings, hair down, high heels",
+        "morning": "oversized white linen shirt, bare legs, sandals, hair messy"
+      },
+      "photo": "a curvy Mediterranean woman aged 28 with long red hair and freckles",
+      "tag_prompt": "adult, mature female, curvy, olive skin, long hair, red hair, freckles, brown eyes, black lace dress, flowing dress, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Italian man aged 35 with short black hair and a beard",
+      "base": "adult, mature male, muscular, tan skin, short hair, black hair, beard, brown eyes",
+      "outfits": {
+        "default": "red flannel shirt, blue jeans, leather boots",
+        "vines": "red flannel shirt, blue jeans, leather boots, rolled sleeves"
+      },
+      "photo": "a muscular Italian man aged 35 with short black hair and a beard",
+      "tag_prompt": "adult, mature male, muscular, tan skin, short hair, black hair, beard, brown eyes, red flannel shirt, blue jeans, leather boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, tuscany, vineyard, rows of grapes, dirt road, afternoon sun, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_barn",
+      "name": "Stodola",
+      "description": "Stodola",
+      "tag_prompt": "indoors, barn, hay bales, wooden beams, dust motes, warm light, rustic",
+      "mood": ""
+    },
+    {
+      "id": "l_road",
+      "name": "Cesta z vinice",
+      "description": "Cesta z vinice",
+      "tag_prompt": "outdoors, tuscany, dirt road, cypress trees, morning mist, grey sky",
+      "mood": ""
+    }
+  ]
+}

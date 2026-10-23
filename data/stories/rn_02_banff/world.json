@@ -1,0 +1,88 @@
+{
+  "id": "w_rn_02_banff",
+  "title": "Banff – Vysoká a studená",
+  "synopsis": "Vysoká Chloe se v kanadských horách cítí osamělá, dokud ji Ethan nezastaví na stezce – ale ráno odchází a ona zůstává sama.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Ethan odchází na služební cestu a neví, kdy se vrátí; Chloe odchází sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_cabin",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloe",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall blonde woman aged 29 with long straight hair and freckles",
+      "base": "adult, mature female, tall, long hair, straight hair, blonde hair, blue eyes, freckles",
+      "outfits": {
+        "default": "olive green outdoor jacket, black hiking pants, gold earrings, hiking boots",
+        "dinner": "cream cable knit sweater, dark jeans, gold earrings, ankle boots",
+        "morning": "olive green outdoor jacket, black hiking pants, gold earrings, hiking boots"
+      },
+      "photo": "a tall blonde woman aged 29 with long straight hair and freckles",
+      "tag_prompt": "adult, mature female, tall, long hair, straight hair, blonde hair, blue eyes, freckles, olive green outdoor jacket, black hiking pants, gold earrings, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular man aged 36 with short brown hair and stubble",
+      "base": "adult, mature male, muscular, short hair, brown hair, brown eyes, stubble",
+      "outfits": {
+        "default": "dark outdoor jacket, black t-shirt, jeans, hiking boots",
+        "dinner": "white button-down shirt, dark trousers, leather belt, loafers"
+      },
+      "photo": "a muscular man aged 36 with short brown hair and stubble",
+      "tag_prompt": "adult, mature male, muscular, short hair, brown hair, brown eyes, stubble, dark outdoor jacket, black t-shirt, jeans, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Lesní cesta",
+      "description": "Lesní cesta",
+      "tag_prompt": "outdoors, banff national park, forest trail, pine trees, mountains, morning mist, soft light",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Chata",
+      "description": "Chata",
+      "tag_prompt": "indoors, log cabin, wooden interior, fireplace, warm lamp light, night, snow outside window",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, log cabin bedroom, wooden bed, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

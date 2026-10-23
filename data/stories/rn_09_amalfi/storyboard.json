@@ -1,0 +1,250 @@
+{
+  "title": "Amalfi – Nešťastný konec",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "yacht",
+        "amalfi coast",
+        "cliffs",
+        "sea",
+        "morning sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Amalfi Coast. Paluba jachty.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "looking at sea",
+        "slumped shoulders",
+        "glasses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "standing beside him",
+        "hand on arm",
+        "smiling",
+        "reassuring"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian",
+          "outfit": "casual"
+        },
+        {
+          "id": "sari",
+          "outfit": "casual"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on couch",
+        "wine glasses",
+        "close",
+        "talking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Kajuta. Víno, blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian",
+          "outfit": "casual"
+        },
+        {
+          "id": "sari",
+          "outfit": "casual"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man unbuttoning shirt",
+        "adjusting strap",
+        "faces close",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian",
+          "outfit": "casual"
+        },
+        {
+          "id": "sari",
+          "outfit": "casual"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "kiss",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "porthole",
+        "moonlight on water",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Moře šumí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "coffee cups",
+        "standing apart",
+        "looking at sea",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Mám přítele doma. Tohle byla chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "alone",
+        "morning",
+        "coffee cup",
+        "looking at sea",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Adrian zůstává sám na jachtě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

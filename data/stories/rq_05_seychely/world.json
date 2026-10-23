@@ -1,0 +1,87 @@
+{
+  "id": "w_rq_05_seychely",
+  "title": "Seychely – Hlasité ticho",
+  "synopsis": "Tichá Mei se na exotických Seychelách setkává s Oliverem, který v ní vidí víc, než kdo jiný.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "pastel_shoujo",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_yacht",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "mei",
+      "name": "Mei",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a slender Asian woman aged 30 with long straight black hair",
+      "base": "adult, mature female, slender, asian, long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen beach jumpsuit, silver earrings, silver necklace, sunglasses, sandals",
+        "dinner": "silver silk slip dress, silver jewelry, high heels, straight hair"
+      },
+      "photo": "a slender Asian woman aged 30 with long straight black hair",
+      "tag_prompt": "adult, mature female, slender, asian, long hair, straight hair, black hair, brown eyes, white linen beach jumpsuit, silver earrings, silver necklace, sunglasses, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "oliver",
+      "name": "Oliver",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a professional Caucasian man aged 38 with short black hair and glasses",
+      "base": "adult, mature male, athletic, white skin, short hair, black hair, brown eyes, glasses",
+      "outfits": {
+        "default": "beige linen suit, white shirt, leather loafers, glasses",
+        "dinner": "white linen shirt, navy linen trousers, wristwatch, glasses"
+      },
+      "photo": "a professional Caucasian man aged 38 with short black hair and glasses",
+      "tag_prompt": "adult, mature male, athletic, white skin, short hair, black hair, brown eyes, glasses, beige linen suit, white shirt, leather loafers, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Bílá pláž",
+      "description": "Bílá pláž",
+      "tag_prompt": "outdoors, seychelles, white sand, turquoise water, palm trees, bright sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_yacht",
+      "name": "Jachta",
+      "description": "Jachta",
+      "tag_prompt": "outdoors, yacht deck, sunset, ocean, luxury furniture, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, luxury interior, soft lighting, night, ocean view through window",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "w_rq_04_toskansko",
+  "title": "Toskánsko – Pohled na celou",
+  "synopsis": "Zrzavá Giulia hledá uznání za svou krásou, ale v náruči mechanika Lucy najde jen krátký pomami a kruté probuzení.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Luca přiznává vztah a Giulia odchází se slzami."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_barn",
+      "l_road"
+    ]
+  },
+  "characters": [
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy redhead woman aged 28 with freckles and green eyes",
+      "base": "adult, mature female, curvy, freckles, red hair, long hair, green eyes",
+      "outfits": {
+        "default": "green silk dress, floral pattern, high heel boots, gold earrings",
+        "morning": "green silk dress, floral pattern, high heel boots, messy hair"
+      },
+      "photo": "a curvy redhead woman aged 28 with freckles and green eyes",
+      "tag_prompt": "adult, mature female, curvy, freckles, red hair, long hair, green eyes, green silk dress, floral pattern, high heel boots, gold earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a rugged man aged 35 with a beard and short brown hair",
+      "base": "adult, mature male, athletic, beard, short hair, brown hair, brown eyes",
+      "outfits": {
+        "default": "red plaid flannel shirt, dark denim jeans, leather boots",
+        "morning": "red plaid flannel shirt, dark denim jeans, leather boots"
+      },
+      "photo": "a rugged man aged 35 with a beard and short brown hair",
+      "tag_prompt": "adult, mature male, athletic, beard, short hair, brown hair, brown eyes, red plaid flannel shirt, dark denim jeans, leather boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, tuscany, vineyard, rolling hills, cypress trees, sunny day, golden hour",
+      "mood": ""
+    },
+    {
+      "id": "l_barn",
+      "name": "Stodola",
+      "description": "Stodola",
+      "tag_prompt": "indoors, rustic barn, hay bales, wooden beams, dust motes in sunlight, warm atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_road",
+      "name": "Prachová cesta",
+      "description": "Prachová cesta",
+      "tag_prompt": "outdoors, country road, tuscany, cypress trees, bright daylight",
+      "mood": ""
+    }
+  ]
+}

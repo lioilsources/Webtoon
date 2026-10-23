@@ -1,0 +1,88 @@
+{
+  "id": "w_rq_08_bali",
+  "title": "Bali – Více než jen ring",
+  "synopsis": "Boxér Diego a elegantní Isabella nacházejí v klidu Bali rovnováhu mezi silou a jemností.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "anime_screencap",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_fields",
+      "l_villa",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular athletic man aged 31 with a beard and short black hair",
+      "base": "adult, mature male, athletic, muscular, tan skin, short hair, black hair, beard, brown eyes",
+      "outfits": {
+        "default": "grey cotton t-shirt, black linen trousers, leather sandals",
+        "dinner": "black linen shirt, black trousers, wristwatch"
+      },
+      "photo": "a muscular athletic man aged 31 with a beard and short black hair",
+      "tag_prompt": "adult, mature male, athletic, muscular, tan skin, short hair, black hair, beard, brown eyes, grey cotton t-shirt, black linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "isabella",
+      "name": "Isabella",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender blonde woman aged 26 with blue eyes",
+      "base": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "yellow silk dress, flowing dress, gold earrings, gold bracelets, high heels",
+        "dinner": "gold silk dress, backless dress, gold necklace, gold earrings, high heels",
+        "morning": "white oversized linen shirt, gold earrings, barefoot"
+      },
+      "photo": "a tall slender blonde woman aged 26 with blue eyes",
+      "tag_prompt": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes, yellow silk dress, flowing dress, gold earrings, gold bracelets, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_fields",
+      "name": "Rýžová pole",
+      "description": "Rýžová pole",
+      "tag_prompt": "outdoors, bali, rice terraces, tropical greenery, morning mist, soft sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Luxusní villa",
+      "description": "Luxusní villa",
+      "tag_prompt": "outdoors, bali villa, open air dining, tropical plants, warm lanterns, night",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, tropical bedroom, white curtains, wooden furniture, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

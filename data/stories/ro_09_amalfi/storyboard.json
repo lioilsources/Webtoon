@@ -1,0 +1,223 @@
+{
+  "title": "Amalfi Coast – nešťastný konec",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "blue sea",
+        "steep cliffs",
+        "yacht deck",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Amalfi Coast – jachta.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing at rail",
+        "looking out",
+        "wind in hair",
+        "thoughtful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman approaching",
+        "man turning",
+        "sunlight on faces",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "candlelit",
+        "wine glass",
+        "small table",
+        "intimate",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer v kajutě, víno a blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hand",
+        "gentle smile",
+        "dim lamp",
+        "close faces"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "eyes locked",
+        "candle flicker",
+        "soft smile",
+        "intimate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "closed door",
+        "lamp fading",
+        "night",
+        "moonlight",
+        "water"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc se chýlí, ticho v kajutě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "deck chair",
+        "sunrise",
+        "coffee cup",
+        "lonely"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno zůstává sám, Sari odešla.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

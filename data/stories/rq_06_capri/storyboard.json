@@ -1,0 +1,265 @@
+{
+  "title": "Capri – Víc než jen svaly",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_rocks",
+      "characters": [],
+      "visual_tags": [
+        "cliffs",
+        "blue water",
+        "bright sun",
+        "coastline"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Capri. Skály u pobřeží.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_rocks",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at sea",
+        "serious expression",
+        "wind in shirt"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Chtějí jen tělo…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rocks",
+      "characters": [
+        {
+          "id": "marcus"
+        },
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "walking",
+        "smiling",
+        "eye contact",
+        "sunny day"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Já chci tebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting close",
+        "holding hands",
+        "whispering",
+        "romantic atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Blízkost u večeře.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurant",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "closed eyes",
+        "soft lighting",
+        "tender"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "undoing buttons",
+        "standing",
+        "intense gaze",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "removing clothes",
+        "embrace",
+        "tender",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [],
+      "visual_tags": [
+        "curtain",
+        "wind",
+        "moonlight",
+        "empty room",
+        "warm lamp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vila utichla v objetí noci.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "marcus"
+        },
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "fully dressed",
+        "cuddling",
+        "kissing shoulder",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Cítím se víc než svaly.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "blushing",
+        "looking at partner",
+        "tender"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

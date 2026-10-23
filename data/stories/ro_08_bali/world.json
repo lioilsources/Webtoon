@@ -1,0 +1,97 @@
+{
+  "id": "w_ro_08_bali",
+  "title": "Bali – Když se setkají dva světy",
+  "synopsis": "Diego a Isabella nacházejí lásku mezi zelenými rýžovými poli a západem slunce na Bali.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "anime_screencap",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rice",
+      "l_villa",
+      "l_bedroom",
+      "l_balcony"
+    ]
+  },
+  "characters": [
+    {
+      "id": "diego",
+      "name": "Diego",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular Mexican boxer aged 31 with short dark hair and a trimmed beard",
+      "base": "adult, mature male, muscular, tan skin, short hair, dark hair, brown eyes, beard",
+      "outfits": {
+        "default": "white linen shirt, beige trousers, leather sandals",
+        "dinner": "light blue silk shirt, white trousers, leather loafers, silver watch",
+        "morning": "short-sleeve cotton shirt, khaki shorts, canvas sneakers"
+      },
+      "photo": "a muscular Mexican boxer aged 31 with short dark hair and a trimmed beard",
+      "tag_prompt": "adult, mature male, muscular, tan skin, short hair, dark hair, brown eyes, beard, white linen shirt, beige trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "isabella",
+      "name": "Isabella",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Italian blonde woman aged 26 with long straight hair and blue eyes",
+      "base": "adult, mature female, tall, slender, fair skin, long hair, straight hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "white silk dress, flowing dress, gold earrings, high heels",
+        "dinner": "red silk dress, off-shoulder, gold necklace, gold bracelet, high heels",
+        "morning": "light linen dress, sandals, hair down"
+      },
+      "photo": "a tall Italian blonde woman aged 26 with long straight hair and blue eyes",
+      "tag_prompt": "adult, mature female, tall, slender, fair skin, long hair, straight hair, blonde hair, blue eyes, white silk dress, flowing dress, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rice",
+      "name": "Rýžová pole",
+      "description": "Rýžová pole",
+      "tag_prompt": "outdoors, bali, rice terraces, mist, sunrise, mountains, soft light",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Villa – večeře",
+      "description": "Villa – večeře",
+      "tag_prompt": "indoors, bali villa, dining room, candlelight, evening, large windows, garden view",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, bali bedroom, night, soft lamp light, cozy blankets, closed door",
+      "mood": ""
+    },
+    {
+      "id": "l_balcony",
+      "name": "Balkón",
+      "description": "Balkón",
+      "tag_prompt": "outdoors, bali balcony, sunrise, sea view, gentle breeze, morning light",
+      "mood": ""
+    }
+  ]
+}

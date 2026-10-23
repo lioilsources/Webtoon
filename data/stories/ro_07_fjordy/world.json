@@ -1,0 +1,97 @@
+{
+  "id": "w_ro_07_fjordy",
+  "title": "Norské fjordy – Zastav se",
+  "synopsis": "Erik běží po horské stezce, kde ho potká Sofia a jejich krátké setkání končí smutným rozloučením.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Sofia odjíždí, Erik zůstává sám."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_trail",
+      "l_cabin",
+      "l_night",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "erik",
+      "name": "Erik",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Norwegian man aged 35 with short blond hair and tanned skin",
+      "base": "adult, mature male, athletic, tall, tanned skin, short hair, blond hair, blue eyes, stubble",
+      "outfits": {
+        "default": "outdoor jacket, wool sweater, cargo pants, hiking boots",
+        "dinner": "flannel shirt, wool trousers, leather shoes",
+        "morning": "light jacket, sweater, boots"
+      },
+      "photo": "a Norwegian man aged 35 with short blond hair and tanned skin",
+      "tag_prompt": "adult, mature male, athletic, tall, tanned skin, short hair, blond hair, blue eyes, stubble, outdoor jacket, wool sweater, cargo pants, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Mediterranean woman aged 28 with long straight black hair",
+      "base": "adult, mature female, petite, slender, fair skin, long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "light sweater, denim skirt, trekking boots",
+        "dinner": "knit dress, gold necklace, low heels",
+        "morning": "coat, scarf, ankle boots"
+      },
+      "photo": "a petite Mediterranean woman aged 28 with long straight black hair",
+      "tag_prompt": "adult, mature female, petite, slender, fair skin, long hair, straight hair, black hair, brown eyes, light sweater, denim skirt, trekking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_trail",
+      "name": "Stezka v norských fjordech",
+      "description": "Stezka v norských fjordech",
+      "tag_prompt": "outdoors, norwegian fjords, mountain trail, mist, sunrise, snow-capped peaks, daylight",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Chata – večerní večeře",
+      "description": "Chata – večerní večeře",
+      "tag_prompt": "indoors, wooden cabin interior, fireplace, dinner table, candles, evening light",
+      "mood": ""
+    },
+    {
+      "id": "l_night",
+      "name": "Chata – noc",
+      "description": "Chata – noc",
+      "tag_prompt": "indoors, cabin night, dim lamp light, closed door, rain on window, quiet",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa u chaty",
+      "description": "Terasa u chaty",
+      "tag_prompt": "outdoors, cabin terrace, sunrise over fjord, mist, morning, quiet",
+      "mood": ""
+    }
+  ]
+}

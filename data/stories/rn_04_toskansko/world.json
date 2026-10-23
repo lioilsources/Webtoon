@@ -1,0 +1,81 @@
+{
+  "id": "w_rn_04_toskansko",
+  "title": "Toskánsko – Dívám se na tebe celou",
+  "synopsis": "Giulia se v toskánské vinici cítí redukována na své tělo, dokud ji Luca nevidí celou – ale ráno přizná, že má přítelkyni a odejde.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Luca přiznává, že má přítelkyni a Giulia odchází se slzami."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_barn"
+    ]
+  },
+  "characters": [
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy red-haired woman aged 28 with fair skin, long wavy hair, freckles",
+      "base": "adult, mature female, curvy, wide hips, fair skin, long hair, wavy hair, red hair, freckles, green eyes",
+      "outfits": {
+        "default": "red silk dress, off-shoulder, gold earrings, gold bracelets, high-heeled boots",
+        "barn": "red silk dress, off-shoulder, gold earrings, hair down, high-heeled boots",
+        "morning": "red silk dress, off-shoulder, gold earrings, hair down, high-heeled boots"
+      },
+      "photo": "a curvy red-haired woman aged 28 with fair skin, long wavy hair, freckles",
+      "tag_prompt": "adult, mature female, curvy, wide hips, fair skin, long hair, wavy hair, red hair, freckles, green eyes, red silk dress, off-shoulder, gold earrings, gold bracelets, high-heeled boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic man aged 35 with olive skin, short black hair, beard",
+      "base": "adult, mature male, athletic, olive skin, short hair, black hair, brown eyes, beard, stubble",
+      "outfits": {
+        "default": "flannel shirt, dark jeans, work boots",
+        "barn": "flannel shirt, dark jeans, work boots",
+        "morning": "flannel shirt, dark jeans, work boots"
+      },
+      "photo": "an athletic man aged 35 with olive skin, short black hair, beard",
+      "tag_prompt": "adult, mature male, athletic, olive skin, short hair, black hair, brown eyes, beard, stubble, flannel shirt, dark jeans, work boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, tuscan vineyard, rows of grapevines, hills, cypress trees, morning sun, warm light",
+      "mood": ""
+    },
+    {
+      "id": "l_barn",
+      "name": "Stodola",
+      "description": "Stodola",
+      "tag_prompt": "indoors, rustic barn, wooden beams, hay bales, lantern light, evening, warm glow",
+      "mood": ""
+    }
+  ]
+}

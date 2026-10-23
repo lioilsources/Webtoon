@@ -1,0 +1,258 @@
+{
+  "title": "Kostarika – Jsi víc než venkovan",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_beach",
+      "characters": [],
+      "visual_tags": [
+        "palm trees",
+        "turquoise sea",
+        "white sand",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kostarika. Pláž u lesa.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "standing on sand",
+        "looking at sea",
+        "hands in pockets",
+        "alone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        }
+      ],
+      "visual_tags": [
+        "sad",
+        "looking down",
+        "insecure"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Jsem jen venkovan…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "smiling",
+        "hair in wind",
+        "barefoot"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole"
+        },
+        {
+          "id": "amara"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman in front",
+        "man looking up",
+        "surprised",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Jsi víc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "wine glasses",
+        "candlelight",
+        "talking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Večeře v bungalovu.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "cole",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "candlelight",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amara",
+          "text": "Protože jsi se mnou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "dinner"
+        },
+        {
+          "id": "amara",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "cole",
+          "text": "Cítím se doma.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "porch light",
+        "moonlight on sea",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Moře šumí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "cole",
+          "outfit": "morning"
+        },
+        {
+          "id": "amara",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning",
+        "coffee cups",
+        "hugging from behind",
+        "looking at sea",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají spolu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

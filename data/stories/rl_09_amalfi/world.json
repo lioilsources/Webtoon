@@ -1,0 +1,87 @@
+{
+  "id": "w_rl_09_amalfi",
+  "title": "Amalfi – Chyba v noci",
+  "synopsis": "Na jachtě u Amalfi se Adrian a Sari spojí, ale ranní realita rozdá všechno.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: ona odjíždí, on zůstává sám."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_cabin",
+      "l_terrace"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender mature man aged 37 with short brown hair and glasses",
+      "base": "adult, mature male, slender, tan skin, short hair, brown hair, brown eyes, glasses, clean shaven",
+      "outfits": {
+        "default": "navy suit jacket, white dress shirt, dark trousers, leather shoes, glasses",
+        "casual": "white linen shirt, beige trousers, loafers, glasses"
+      },
+      "photo": "a slender mature man aged 37 with short brown hair and glasses",
+      "tag_prompt": "adult, mature male, slender, tan skin, short hair, brown hair, brown eyes, glasses, clean shaven, navy suit jacket, white dress shirt, dark trousers, leather shoes, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indonesian woman aged 25 with long straight black hair",
+      "base": "adult, mature female, petite, olive skin, long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "black silk dress, flowing dress, gold earrings, high heels",
+        "morning": "oversized white shirt, bare legs, sandals, hair down"
+      },
+      "photo": "a petite Indonesian woman aged 25 with long straight black hair",
+      "tag_prompt": "adult, mature female, petite, olive skin, long hair, straight hair, black hair, brown eyes, black silk dress, flowing dress, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba jachty",
+      "description": "Paluba jachty",
+      "tag_prompt": "outdoors, yacht deck, amalfi coast, cliffs, sea, sunset, golden hour",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, dim light, wine bottle, night",
+      "mood": ""
+    },
+    {
+      "id": "l_terrace",
+      "name": "Terasa ráno",
+      "description": "Terasa ráno",
+      "tag_prompt": "outdoors, yacht terrace, morning light, sea, coffee cups, calm sea",
+      "mood": ""
+    }
+  ]
+}

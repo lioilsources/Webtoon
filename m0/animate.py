@@ -27,6 +27,7 @@ MAX_ANIMATED = 2  # one loop costs about 11 stills (PLAN-motion-panels §3)
 SIZE = {"portrait": (480, 704), "landscape": (704, 480)}
 NEGATIVE = ("blurry, static, low quality, watermark, text, letters, extra limbs, extra fingers, morphing, deformed, "
             "distorted face, flicker, jitter, camera shake, nsfw, nude, cleavage, underwear")
+NEGATIVE_FREE = NEGATIVE.replace("nsfw, nude, cleavage, underwear", "child, childlike face, aged down")
 STYLE_TAIL_TAGS = 4
 
 
@@ -45,7 +46,7 @@ def style_tail(preset):
     return ", ".join(preset.get("aesthetic_tags", [])[:STYLE_TAIL_TAGS])
 
 
-def graph(start_image, motion, preset, width, height, length, seed, prefix):
+def graph(start_image, motion, preset, width, height, length, seed, prefix, free=False):
     """FLF2V loop graph: same nodes and parameters as video-stack flf2v_lightning_portrait.json, plus
     SaveAnimatedWEBP and three SaveImage probes (first / middle / last frame) for the WD14 check."""
     positive = motion.strip().rstrip(".")
@@ -61,7 +62,7 @@ def graph(start_image, motion, preset, width, height, length, seed, prefix):
         "shift_low": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_low", 0], "shift": 5.0}},
         "clip": {"class_type": "CLIPLoader", "inputs": {"clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default"}},
         "pos": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": positive}},
-        "neg": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": NEGATIVE}},
+        "neg": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": NEGATIVE_FREE if free else NEGATIVE}},
         "still": {"class_type": "LoadImage", "inputs": {"image": start_image}},
         "vae": {"class_type": "VAELoader", "inputs": {"vae_name": "wan_2.1_vae.safetensors"}},
         # start_image and end_image are the same still → the loop closes on itself.
@@ -114,6 +115,7 @@ def main():
     sb = load_json(args.storyboard)
     styles = load_json(Path(__file__).resolve().parent.parent / "data" / "styles.json")
     preset = styles["presets"][world["style_id"]]
+    free = bool(world.get("free"))
     panels = sb["panels"]
     idx = select_panels(panels, args.panels, args.force)
     day = os.environ.get("WEBTOON_DAY") or datetime.date.today().isoformat()
@@ -140,7 +142,7 @@ def main():
 
     if args.dry_run:
         for i, still, motion, w, h, seed in jobs:
-            g = graph(f"webtoon_{args.run}_p{i:02d}.png", motion, preset, w, h, length, seed, f"webtoon/{day}/{args.run}/p{i:02d}_video")
+            g = graph(f"webtoon_{args.run}_p{i:02d}.png", motion, preset, w, h, length, seed, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free)
             path = outdir / f"p{i:02d}_video_graph.json"
             save_json(path, g)
             print(f"[p{i:02d} {w}x{h} len={length} seed={seed}] + {g['pos']['inputs']['text']}\n  graph → {path}")
@@ -159,14 +161,14 @@ def main():
                 print(f"deadline {os.environ['WEBTOON_DEADLINE']} reached, stopping")
                 raise SystemExit(3)
             s = seed if attempt == 0 else random.randint(0, 2**31)
-            g = graph(name, motion, preset, w, h, length, s, f"webtoon/{day}/{args.run}/p{i:02d}_video")
+            g = graph(name, motion, preset, w, h, length, s, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free)
             outs = comfy.run_outputs(g, timeout=1800)
             webp = next((f for f in outs.get("webp", []) if f["filename"].lower().endswith(".webp")), None)
             if webp is None:
                 raise RuntimeError(f"p{i:02d}: SaveAnimatedWEBP produced no file: {list(outs)}")
             probes = {k: outs[f"save_{k}"][0]["bytes"] for k in ("v0", "v1", "v2")}
             tags = {k: wd14_tag(b) for k, b in probes.items()}
-            bad = {k: v for k, t in tags.items() for v in [safety(t, world.get("audience"))] if v}
+            bad = {k: v for k, t in tags.items() for v in [safety(t, world.get("audience"), free=free)] if v}
             rec["attempts"].append({"seed": s, "unsafe": bad})
             if not bad:
                 break

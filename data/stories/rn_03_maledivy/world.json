@@ -1,0 +1,88 @@
+{
+  "id": "w_rn_03_maledivy",
+  "title": "Maledivy – Přesně to, co jsem hledal",
+  "synopsis": "Aisha si myslí, že její postava je nedostatečná, ale Kai jí ukáže, že je přesně to, co hledá.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "flat_anime_mema",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu další dny."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bungalow",
+      "l_beach",
+      "l_bungalow_night"
+    ]
+  },
+  "characters": [
+    {
+      "id": "aisha",
+      "name": "Aisha",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite dark-skinned woman aged 26 with short curly black hair",
+      "base": "adult, mature female, petite, dark skin, short hair, curly hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white cotton sundress, gold bracelets, sandals",
+        "dinner": "white linen dress, off-shoulder, gold necklace, gold bracelets, barefoot",
+        "swim": "white pareo over white sundress, gold bracelets, sandals"
+      },
+      "photo": "a petite dark-skinned woman aged 26 with short curly black hair",
+      "tag_prompt": "adult, mature female, petite, dark skin, short hair, curly hair, black hair, brown eyes, white cotton sundress, gold bracelets, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic light brown-skinned man aged 32 with short black hair",
+      "base": "adult, mature male, athletic, light brown skin, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, navy swim trunks, sandals",
+        "dinner": "light blue linen shirt, beige linen trousers, sandals"
+      },
+      "photo": "an athletic light brown-skinned man aged 32 with short black hair",
+      "tag_prompt": "adult, mature male, athletic, light brown skin, short hair, black hair, brown eyes, white linen shirt, navy swim trunks, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bungalow",
+      "name": "Overwater bungalov",
+      "description": "Overwater bungalov",
+      "tag_prompt": "outdoors, maldives, overwater bungalow, wooden deck, turquoise water, morning sun",
+      "mood": ""
+    },
+    {
+      "id": "l_beach",
+      "name": "Pláž",
+      "description": "Pláž",
+      "tag_prompt": "outdoors, maldives, white sand beach, palm trees, sunset, candlelight, sea",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow_night",
+      "name": "Bungalov v noci",
+      "description": "Bungalov v noci",
+      "tag_prompt": "indoors, maldives, overwater bungalow interior, wooden walls, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

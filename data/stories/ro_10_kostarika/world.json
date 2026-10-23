@@ -1,0 +1,97 @@
+{
+  "id": "w_ro_10_kostarika",
+  "title": "Kostarika – Pláž a džungle",
+  "synopsis": "Cole a Amara objevují, že domov není místo, ale člověk, který je miluje.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_bungalow",
+      "l_night",
+      "l_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "cole",
+      "name": "Cole",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Caucasian man aged 35 with short black hair, tan skin, and a short beard",
+      "base": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes, beard",
+      "outfits": {
+        "default": "brown leather cowboy hat, denim shirt, denim jeans, leather boots",
+        "dinner": "white linen shirt, beige linen trousers, leather boots",
+        "morning": "light cotton shirt, rolled sleeves, denim jeans, sandals"
+      },
+      "photo": "an athletic Caucasian man aged 35 with short black hair, tan skin, and a short beard",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, black hair, brown eyes, beard, brown leather cowboy hat, denim shirt, denim jeans, leather boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amara",
+      "name": "Amara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy Latina woman aged 27 with long dark curly hair and olive skin",
+      "base": "adult, mature female, curvy, petite, olive skin, long hair, curly hair, dark brown hair, brown eyes",
+      "outfits": {
+        "default": "white linen sundress, floral pattern, gold anklet, sandals",
+        "dinner": "light silk dress, off-shoulder, gold necklace, sandals",
+        "morning": "white cotton blouse, high-waist shorts, sandals"
+      },
+      "photo": "a petite curvy Latina woman aged 27 with long dark curly hair and olive skin",
+      "tag_prompt": "adult, mature female, curvy, petite, olive skin, long hair, curly hair, dark brown hair, brown eyes, white linen sundress, floral pattern, gold anklet, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Pláž v Kostarice",
+      "description": "Pláž v Kostarice",
+      "tag_prompt": "outdoors, costa rica, tropical beach, palm trees, turquoise water, sunrise, soft sand, gentle breeze",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov – večeře",
+      "description": "Bungalov – večeře",
+      "tag_prompt": "indoors, rustic bungalow interior, wooden table, candlelight, sunset through open doors, tropical plants",
+      "mood": ""
+    },
+    {
+      "id": "l_night",
+      "name": "Bungalov – noc",
+      "description": "Bungalov – noc",
+      "tag_prompt": "indoors, bungalow interior, dim lamp light, closed door, soft shadows, night",
+      "mood": ""
+    },
+    {
+      "id": "l_morning",
+      "name": "Ranní pláž",
+      "description": "Ranní pláž",
+      "tag_prompt": "outdoors, costa rica, beach at dawn, pastel sky, gentle waves, coffee mugs on blanket",
+      "mood": ""
+    }
+  ]
+}

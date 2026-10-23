@@ -1,0 +1,79 @@
+{
+  "id": "w_rn_09_amalfi",
+  "title": "Amalfi – Nešťastný konec",
+  "synopsis": "Adrian a Sari si na jachtě u Amalfi najdou chvíli blízkosti, ale ráno Sari odhalí, že má přítele a odejde.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Sari odhalí, že má přítele a odejde."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender office worker aged 37 with fair skin, short black hair, glasses",
+      "base": "adult, mature male, slender, fair skin, short hair, black hair, brown eyes, glasses",
+      "outfits": {
+        "default": "navy blue suit, white dress shirt, black oxford shoes, glasses",
+        "casual": "light blue linen shirt, beige linen trousers, loafers, glasses"
+      },
+      "photo": "a slender office worker aged 37 with fair skin, short black hair, glasses",
+      "tag_prompt": "adult, mature male, slender, fair skin, short hair, black hair, brown eyes, glasses, navy blue suit, white dress shirt, black oxford shoes, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indonesian woman aged 25 with fair skin, long straight black hair, dark brown eyes",
+      "base": "adult, petite, mature female, fair skin, long hair, straight hair, black hair, dark brown eyes",
+      "outfits": {
+        "default": "red silk dress, fitted, gold earrings, high heels",
+        "casual": "white linen sundress, gold earrings, sandals"
+      },
+      "photo": "a petite Indonesian woman aged 25 with fair skin, long straight black hair, dark brown eyes",
+      "tag_prompt": "adult, petite, mature female, fair skin, long hair, straight hair, black hair, dark brown eyes, red silk dress, fitted, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba jachty",
+      "description": "Paluba jachty",
+      "tag_prompt": "outdoors, amalfi coast, yacht deck, sea, cliffs, morning sun",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, porthole, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

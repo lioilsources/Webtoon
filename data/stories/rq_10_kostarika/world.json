@@ -1,0 +1,87 @@
+{
+  "id": "w_rq_10_kostarika",
+  "title": "Kostarika – Cítím se doma",
+  "synopsis": "Kovboj Cole a elegantní Amara nacházejí společný jazyk v exotickém ráji Kostariky.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_lightning",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstávají spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_beach",
+      "l_bungalow",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "cole",
+      "name": "Cole",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a rugged American cowboy aged 35 with a beard and tanned skin",
+      "base": "adult, mature male, athletic, tan skin, short hair, brown hair, beard, brown eyes",
+      "outfits": {
+        "default": "denim shirt, blue jeans, leather boots, cowboy hat",
+        "dinner": "beige linen shirt, dark trousers, leather boots"
+      },
+      "photo": "a rugged American cowboy aged 35 with a beard and tanned skin",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, brown hair, beard, brown eyes, denim shirt, blue jeans, leather boots, cowboy hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amara",
+      "name": "Amara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy woman aged 27 with long black curly hair",
+      "base": "adult, petite, mature female, curvy, wide hips, olive skin, curly hair, long hair, black hair, brown eyes",
+      "outfits": {
+        "default": "yellow floral sundress, straw hat, sandals",
+        "dinner": "silk beach dress, gold sandals, gold necklace, curly hair down"
+      },
+      "photo": "a petite curvy woman aged 27 with long black curly hair",
+      "tag_prompt": "adult, petite, mature female, curvy, wide hips, olive skin, curly hair, long hair, black hair, brown eyes, yellow floral sundress, straw hat, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_beach",
+      "name": "Pláž v Kostarice",
+      "description": "Pláž v Kostarice",
+      "tag_prompt": "outdoors, tropical beach, white sand, palm trees, turquoise water, bright sunlight",
+      "mood": ""
+    },
+    {
+      "id": "l_bungalow",
+      "name": "Bungalov",
+      "description": "Bungalov",
+      "tag_prompt": "indoors, tropical bungalow, bamboo walls, open windows, warm evening light, candles",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, bedroom, mosquito net, wooden furniture, moonlight, soft shadows",
+      "mood": ""
+    }
+  ]
+}

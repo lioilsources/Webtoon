@@ -1,0 +1,88 @@
+{
+  "id": "w_ro_02_banff",
+  "title": "Banff – Chladná výzva",
+  "synopsis": "Chloe a Ethan se setkají na zasněžené stezce, ale jejich noc končí rozloučením.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Chloe odchází sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_cabin",
+      "l_mountain_outside"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloe",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall blonde woman aged 29 with long straight hair, fair skin",
+      "base": "adult, mature female, tall, slender, fair skin, long hair, straight hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "green waterproof jacket, cargo pants, hiking boots, gold earrings",
+        "dinner": "warm sweater, wool scarf, hiking boots, gold earrings",
+        "morning": "cozy fleece jacket, jeans, boots"
+      },
+      "photo": "a tall blonde woman aged 29 with long straight hair, fair skin",
+      "tag_prompt": "adult, mature female, tall, slender, fair skin, long hair, straight hair, blonde hair, blue eyes, green waterproof jacket, cargo pants, hiking boots, gold earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Greek man aged 36 with short brown hair, tanned skin",
+      "base": "adult, mature male, athletic, tan skin, short hair, brown hair, brown eyes, stubble",
+      "outfits": {
+        "default": "outdoor jacket, cargo pants, hiking boots",
+        "dinner": "flannel shirt, wool trousers, boots"
+      },
+      "photo": "an athletic Greek man aged 36 with short brown hair, tanned skin",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, brown hair, brown eyes, stubble, outdoor jacket, cargo pants, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Lesní cesta",
+      "description": "Lesní cesta",
+      "tag_prompt": "outdoors, Banff National Park, forest trail, pine trees, snow-capped mountains, daylight",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Chata",
+      "description": "Chata",
+      "tag_prompt": "indoors, rustic cabin, wooden interior, fireplace, candlelight, evening",
+      "mood": ""
+    },
+    {
+      "id": "l_mountain_outside",
+      "name": "Krajina před chatou",
+      "description": "Krajina před chatou",
+      "tag_prompt": "outdoors, mountain clearing, sunrise, pine forest, road, early morning",
+      "mood": ""
+    }
+  ]
+}

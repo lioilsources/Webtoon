@@ -1,0 +1,279 @@
+{
+  "title": "Norské fjordy – Krátký okamžik",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "steep mountains",
+        "fjord",
+        "mist",
+        "coniferous forest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Norské fjordy. Mlha nad hory.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "athletic pose",
+        "breathing hard",
+        "from side"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Vždycky běžím…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        },
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "stopping",
+        "facing each other",
+        "eye contact",
+        "windy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Zastav se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        },
+        {
+          "id": "sofia",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "dinner plates",
+        "wine glasses",
+        "warm glow",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer v horské chatě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        },
+        {
+          "id": "sofia",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "close proximity",
+        "intense gaze",
+        "smiling"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        },
+        {
+          "id": "sofia",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "removing jacket",
+        "helping",
+        "standing",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        },
+        {
+          "id": "sofia",
+          "outfit": "evening"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "kiss",
+        "eyes closed",
+        "passion"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofia",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [],
+      "visual_tags": [
+        "curtain",
+        "wind",
+        "morning light",
+        "cold atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc plynula příliš rychle.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        },
+        {
+          "id": "sofia",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing by door",
+        "sitting",
+        "distance",
+        "sad expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Musím odjet domů. Tohle bylo jen dovolenkové.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "cabin"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone",
+        "looking at window",
+        "melancholy",
+        "empty room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Erik zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

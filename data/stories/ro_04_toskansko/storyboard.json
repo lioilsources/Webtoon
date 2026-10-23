@@ -1,0 +1,272 @@
+{
+  "title": "Toskánsko – Vinice a smutek",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_vineyard",
+      "characters": [],
+      "visual_tags": [
+        "rolling hills",
+        "vineyard rows",
+        "cypress trees",
+        "sunrise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Toskánsko – vinice a lesy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "standing among vines",
+        "gold earrings glint",
+        "red dress",
+        "sunlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia"
+        }
+      ],
+      "visual_tags": [
+        "sad expression",
+        "looking down",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Všichni se dívají jen na… tohle.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "walking on path",
+        "flannel shirt",
+        "beard",
+        "sunlit"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_vineyard",
+      "characters": [
+        {
+          "id": "giulia"
+        },
+        {
+          "id": "luca"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man facing woman",
+        "smile",
+        "hand reaching",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Dívám se na tebe celou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_barn",
+      "characters": [],
+      "visual_tags": [
+        "wooden beams",
+        "wine barrels",
+        "candlelight",
+        "sunset glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Stodola – večerní víno.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "barn"
+        },
+        {
+          "id": "luca",
+          "outfit": "wine"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hand hold",
+        "kiss",
+        "warm light",
+        "embrace"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_barn",
+      "characters": [],
+      "visual_tags": [
+        "moonlit barn exterior",
+        "lantern",
+        "silhouette",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc se chýlí, ticho mezi nimi.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hayfield",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        },
+        {
+          "id": "luca",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hay field",
+        "morning mist",
+        "two figures",
+        "tension"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luca",
+          "text": "Mám doma přítelkyni, tohle byla chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hayfield",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        },
+        {
+          "id": "luca",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "tears",
+        "turning away",
+        "sad eyes",
+        "soft wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "giulia",
+          "text": "Cítím se…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hayfield",
+      "characters": [
+        {
+          "id": "giulia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "path leading away",
+        "Giulia walking",
+        "tears",
+        "sunrise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Giulia odchází se slzami, Luca zůstává s lítostí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

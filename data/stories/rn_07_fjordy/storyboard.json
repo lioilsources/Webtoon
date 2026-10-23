@@ -1,0 +1,282 @@
+{
+  "title": "Norské fjordy – Cesta bez návratu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "fjord",
+        "mountains",
+        "trail",
+        "pine trees",
+        "overcast sky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Norské fjordy. Stezka u vody.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "looking ahead",
+        "determined",
+        "motion blur"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Vždycky běžím…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "standing on trail",
+        "blocking path",
+        "arms crossed",
+        "frowning"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik"
+        },
+        {
+          "id": "sofia"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man stopping",
+        "woman looking up",
+        "surprised",
+        "close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Zastav se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting by fireplace",
+        "wine glasses",
+        "close",
+        "smiling",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře v chatě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "removing jacket",
+        "removing sweater",
+        "standing",
+        "faces close",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "looking at viewer",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Cítím se…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "looking at viewer",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "fur blanket",
+        "moonlight through window",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Ticho v horách.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "walking away",
+        "backpack",
+        "looking back once",
+        "sunrise",
+        "mist"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Musím odjet domů. Bylo to jen dovolenkové.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "looking at trail",
+        "empty path",
+        "sunrise",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Erik zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

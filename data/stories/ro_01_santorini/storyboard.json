@@ -1,0 +1,252 @@
+{
+  "title": "Santorini – Ta, která se nedá přehlédnout",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_terrace",
+      "characters": [],
+      "visual_tags": [
+        "whitewashed houses",
+        "blue domes",
+        "caldera",
+        "sea",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Santorini. Terasa s výhledem na kalderu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "standing at railing",
+        "looking at sea",
+        "wind in hair",
+        "alone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "sad",
+        "looking down",
+        "insecure",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Všichni tady jsou dokonalí… já jsem jen malá.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "nikos"
+        },
+        {
+          "id": "elena"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man walking",
+        "woman standing",
+        "smile",
+        "sunlight",
+        "hand reaching"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Ty jsi ta, která se nedá přehlédnout.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "dinner"
+        },
+        {
+          "id": "nikos",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "deck",
+        "wine glasses",
+        "sunset",
+        "candlelight",
+        "table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Večeře na jachtě.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "nikos",
+          "text": "Přijela jsi hledat něco skutečného?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "sunset glow",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elena",
+          "text": "Ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "nikos",
+          "outfit": "dinner"
+        },
+        {
+          "id": "elena",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "cozy cabin",
+        "warm lamp light",
+        "hand holding",
+        "gentle kiss"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Nech mě tě obejmout… pomalu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "elena",
+          "text": "Cítím se… hezká.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "lamp off",
+        "potted plant",
+        "moonlight through porthole",
+        "empty"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Lampa zhasne. Moře šumí dál.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace",
+      "characters": [
+        {
+          "id": "elena",
+          "outfit": "morning"
+        },
+        {
+          "id": "nikos",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "morning light",
+        "coffee cups",
+        "hugging",
+        "sea view"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nikos",
+          "text": "Jsi. A jsi moje.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "",
+          "text": "Ráno zůstávají.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

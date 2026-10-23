@@ -1,0 +1,249 @@
+{
+  "title": "Seychely – Hlasité ticho",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_beach",
+      "characters": [],
+      "visual_tags": [
+        "white sand",
+        "palm trees",
+        "crystal clear water",
+        "sunny"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Seychely. Bělostná pláž pod žhavým sluncem.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "mei"
+        }
+      ],
+      "visual_tags": [
+        "walking on sand",
+        "looking at ocean",
+        "wind in hair",
+        "solitude"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "Jsem moc tichá…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "mei"
+        },
+        {
+          "id": "oliver"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing",
+        "eye contact",
+        "smile",
+        "glasses"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Tvoje ticho je hlasité.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "dinner"
+        },
+        {
+          "id": "oliver",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "wine glasses",
+        "sunset",
+        "talking",
+        "touching hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večer. Intimní rozhovor na jachtě.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_yacht",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "dinner"
+        },
+        {
+          "id": "oliver",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "holding hands",
+        "intertwined fingers",
+        "soft light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "dinner"
+        },
+        {
+          "id": "oliver",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "touching shoulder",
+        "standing close",
+        "warm lamp light",
+        "romantic tension"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "oliver",
+          "text": "Nech mě tě svléknout.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "dinner"
+        },
+        {
+          "id": "oliver",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kissing",
+        "embrace",
+        "eyes closed",
+        "passion"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [],
+      "visual_tags": [
+        "curtain",
+        "blowing curtain",
+        "moonlight",
+        "empty room",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Svět kolem nich pomalu zmizel.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "mei",
+          "outfit": "default"
+        },
+        {
+          "id": "oliver",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting",
+        "foreheads touching",
+        "embrace",
+        "soft smile",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mei",
+          "text": "Cítím se viděná.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "oliver",
+          "text": "A milovaná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

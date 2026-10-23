@@ -1,0 +1,89 @@
+{
+  "id": "w_rl_06_capri",
+  "title": "Capri – Skutečný pocit",
+  "synopsis": "Marcus se bojí, že ho Lila chce jen pro tělo, ale ona mu ukáže, že hledá jeho duši.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "photo_glossy",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zůstanou spolu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rocks",
+      "l_dinner",
+      "l_villa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "marcus",
+      "name": "Marcus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular man aged 33 with short black hair, tanned skin",
+      "base": "adult, mature male, muscular, tan skin, short hair, black hair, brown eyes",
+      "outfits": {
+        "default": "white linen shirt, beige linen trousers, leather sandals",
+        "dinner": "navy blue linen shirt, white linen trousers, wristwatch",
+        "morning": "white linen shirt, beige linen trousers, leather sandals"
+      },
+      "photo": "a muscular man aged 33 with short black hair, tanned skin",
+      "tag_prompt": "adult, mature male, muscular, tan skin, short hair, black hair, brown eyes, white linen shirt, beige linen trousers, leather sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lila",
+      "name": "Lila",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a curvy woman aged 27 with long wavy chestnut hair",
+      "base": "adult, mature female, curvy, wide hips, olive skin, long hair, wavy hair, chestnut hair, brown eyes",
+      "outfits": {
+        "default": "black silk mini dress, gold earrings, high heels",
+        "dinner": "black silk mini dress, off-shoulder, gold necklace, gold earrings, hair down, high heels",
+        "morning": "oversized white linen shirt dress, gold earrings, sandals, hair down"
+      },
+      "photo": "a curvy woman aged 27 with long wavy chestnut hair",
+      "tag_prompt": "adult, mature female, curvy, wide hips, olive skin, long hair, wavy hair, chestnut hair, brown eyes, black silk mini dress, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rocks",
+      "name": "Skály na Capri",
+      "description": "Skály na Capri",
+      "tag_prompt": "outdoors, capri, rocky coast, blue sea, sunlight, cliffs",
+      "mood": ""
+    },
+    {
+      "id": "l_dinner",
+      "name": "Restaurace",
+      "description": "Restaurace",
+      "tag_prompt": "indoors, restaurant, candlelight, table, sea view, night",
+      "mood": ""
+    },
+    {
+      "id": "l_villa",
+      "name": "Vila",
+      "description": "Vila",
+      "tag_prompt": "indoors, villa bedroom, wooden furniture, warm lamp light, night",
+      "mood": ""
+    }
+  ]
+}

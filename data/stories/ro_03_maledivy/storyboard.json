@@ -1,0 +1,254 @@
+{
+  "title": "Maledivy – Přesně to, co jsem hledal",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bungalow",
+      "characters": [],
+      "visual_tags": [
+        "bamboo platform",
+        "calm sea",
+        "sunrise glow",
+        "overwater huts"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Maledivy – bungalov nad vodou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "standing at rail",
+        "looking at horizon",
+        "wind in hair",
+        "thoughtful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha"
+        }
+      ],
+      "visual_tags": [
+        "sad expression",
+        "downcast eyes",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Moje prsa jsou moc malá…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "arriving in kayak",
+        "stepping onto deck",
+        "smile",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Ty jsi přesně to, co jsem hledal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bungalow",
+      "characters": [
+        {
+          "id": "aisha"
+        },
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hand in hand",
+        "gentle breeze",
+        "warm smiles",
+        "sunlit deck"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "candlelit table",
+        "sand",
+        "sunset colors",
+        "soft waves",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře na pláži – doteky, smích, polibky.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "kai",
+          "text": "Ty jsi přesně to, co jsem hledal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "adjusting dress",
+        "gentle hand",
+        "standing",
+        "soft lamp light",
+        "close faces",
+        "tender gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Nech mě tě obdivovat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "dinner"
+        },
+        {
+          "id": "kai",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "eyes closed",
+        "warm glow",
+        "intimate",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aisha",
+          "text": "Cítím se ženská.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kai",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "aisha",
+          "outfit": "morning"
+        },
+        {
+          "id": "kai",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "spooning",
+        "soft blankets",
+        "sea view",
+        "window",
+        "moonlight",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají spolu další dny.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

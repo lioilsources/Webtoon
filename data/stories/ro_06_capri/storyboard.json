@@ -1,0 +1,289 @@
+{
+  "title": "Capri – Já chci tebe",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_cliffs",
+      "characters": [],
+      "visual_tags": [
+        "rocky cliffs",
+        "blue sea",
+        "white houses",
+        "bright sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Capri – skalnaté útesy.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cliffs",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "standing on rocks",
+        "open linen shirt",
+        "shirt fluttering",
+        "hands on hips",
+        "confident"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cliffs",
+      "characters": [
+        {
+          "id": "marcus"
+        }
+      ],
+      "visual_tags": [
+        "thoughtful",
+        "looking away",
+        "sunlight on face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Chtějí jen tělo…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliffs",
+      "characters": [
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "walking past",
+        "silhouette",
+        "hair blowing",
+        "soft smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliffs",
+      "characters": [
+        {
+          "id": "marcus"
+        },
+        {
+          "id": "lila"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "woman facing man",
+        "man turning",
+        "blush",
+        "sunset glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lila",
+          "text": "Já chci tebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terrace_dinner",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "table",
+        "wine glasses",
+        "candlelight",
+        "sunset sky",
+        "close conversation"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře pod hvězdami.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terrace_dinner",
+      "characters": [
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "soft smile",
+        "wine glass raised",
+        "eyes sparkling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Blízkost a polibky.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "pulling shirt",
+        "gentle",
+        "soft lamp light",
+        "intimate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "dinner"
+        },
+        {
+          "id": "lila",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "embrace",
+        "kiss",
+        "eyes closed",
+        "warm glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcus",
+          "text": "Cítím se víc než svaly.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "lila",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_morning_terrace",
+      "characters": [],
+      "visual_tags": [
+        "sunrise",
+        "mist over sea",
+        "empty chairs",
+        "gentle light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno na terase.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_morning_terrace",
+      "characters": [
+        {
+          "id": "marcus",
+          "outfit": "morning"
+        },
+        {
+          "id": "lila",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "hugging",
+        "coffee cups",
+        "smile",
+        "sea view"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají spolu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

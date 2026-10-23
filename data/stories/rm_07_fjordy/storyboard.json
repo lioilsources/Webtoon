@@ -1,0 +1,281 @@
+{
+  "title": "Fjordy – Muž, který běží prázdně",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_trail",
+      "characters": [],
+      "visual_tags": [
+        "mountain trail",
+        "pine trees",
+        "morning mist",
+        "sunrise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Fjordy. Stezka vede k vrcholu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "looking forward",
+        "wind in hair",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "smile",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Vždycky běžím…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_trail",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "standing on trail",
+        "looking at viewer",
+        "surprised",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Zastav se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "wine glasses",
+        "candle",
+        "talking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Jsem unavená… chci se podívat na hvězdy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "removing jacket",
+        "removing sweater",
+        "standing",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        },
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "kiss",
+        "embrace",
+        "eyes closed",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "erik",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sofia",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [],
+      "visual_tags": [
+        "lamp going out",
+        "window showing mountains",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno. Sofia balí věci.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "sofia",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "packing bag",
+        "looking at viewer",
+        "sad",
+        "blush"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofia",
+          "text": "Musím odjet domů. To bylo jen dovolenkové.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_chalet",
+      "characters": [
+        {
+          "id": "erik",
+          "outfit": "default"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "looking at window",
+        "sad",
+        "sunrise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Erik zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

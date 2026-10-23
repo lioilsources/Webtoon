@@ -1,0 +1,77 @@
+{
+  "id": "w_ro_09_amalfi",
+  "title": "Amalfi Coast – nešťastný konec",
+  "synopsis": "Adrian a Sari se setkají na jachtě, ale ráno končí rozchodem.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "webtoon_romance",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Sari odešla, Adrian zůstává sám."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Caucasian man aged 37 with short brown hair, slender build, glasses",
+      "base": "adult, mature male, slender, fair skin, short hair, brown hair, brown eyes, glasses",
+      "outfits": {
+        "default": "gray suit, white shirt, tie, black dress shoes"
+      },
+      "photo": "a Caucasian man aged 37 with short brown hair, slender build, glasses",
+      "tag_prompt": "adult, mature male, slender, fair skin, short hair, brown hair, brown eyes, glasses, gray suit, white shirt, tie, black dress shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an Indonesian woman aged 25 with long black hair, petite build, subtle freckles",
+      "base": "adult, mature female, petite, curvy, olive skin, long hair, straight hair, black hair, brown eyes, freckles",
+      "outfits": {
+        "default": "red silk dress, flowing dress, gold earrings, high heels"
+      },
+      "photo": "an Indonesian woman aged 25 with long black hair, petite build, subtle freckles",
+      "tag_prompt": "adult, mature female, petite, curvy, olive skin, long hair, straight hair, black hair, brown eyes, freckles, red silk dress, flowing dress, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba jachty",
+      "description": "Paluba jachty",
+      "tag_prompt": "outdoors, amalfi coast, yacht deck, blue sea, cliffs, sunrise, gentle breeze",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta jachty",
+      "description": "Kajuta jachty",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, candlelight, night, soft lamp",
+      "mood": ""
+    }
+  ]
+}

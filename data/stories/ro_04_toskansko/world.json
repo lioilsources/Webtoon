@@ -1,0 +1,89 @@
+{
+  "id": "w_ro_04_toskansko",
+  "title": "Toskánsko – Vinice a smutek",
+  "synopsis": "Giulia se cítí pod drobnohledem, dokud Luca neodhalí své pravé úmysly.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ligne_claire",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: Giulia odchází se slzami."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_vineyard",
+      "l_barn",
+      "l_hayfield"
+    ]
+  },
+  "characters": [
+    {
+      "id": "giulia",
+      "name": "Giulia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a red-haired Mediterranean woman aged 28 with long wavy hair and freckles",
+      "base": "adult, mature female, curvy, wide hips, fair skin, long hair, wavy hair, red hair, green eyes, freckles",
+      "outfits": {
+        "default": "red silk dress, flowing dress, gold earrings, ankle boots",
+        "barn": "red silk dress, long sleeves, brown belt, leather boots",
+        "morning": "light linen dress, sandals, hair down"
+      },
+      "photo": "a red-haired Mediterranean woman aged 28 with long wavy hair and freckles",
+      "tag_prompt": "adult, mature female, curvy, wide hips, fair skin, long hair, wavy hair, red hair, green eyes, freckles, red silk dress, flowing dress, gold earrings, ankle boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "luca",
+      "name": "Luca",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Greek male mechanic aged 35 with short dark hair and a beard",
+      "base": "adult, mature male, athletic, tan skin, short hair, dark hair, brown eyes, beard, stubble",
+      "outfits": {
+        "default": "blue flannel shirt, denim jeans, work boots",
+        "wine": "white linen shirt, beige trousers, leather shoes",
+        "morning": "t-shirt, jeans, sneakers"
+      },
+      "photo": "a Greek male mechanic aged 35 with short dark hair and a beard",
+      "tag_prompt": "adult, mature male, athletic, tan skin, short hair, dark hair, brown eyes, beard, stubble, blue flannel shirt, denim jeans, work boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_vineyard",
+      "name": "Vinice",
+      "description": "Vinice",
+      "tag_prompt": "outdoors, Tuscan vineyard, rolling hills, cypress trees, sunrise, golden light",
+      "mood": ""
+    },
+    {
+      "id": "l_barn",
+      "name": "Stodola",
+      "description": "Stodola",
+      "tag_prompt": "indoors, rustic barn, wooden beams, wine barrels, candlelight, sunset glow",
+      "mood": ""
+    },
+    {
+      "id": "l_hayfield",
+      "name": "Seno",
+      "description": "Seno",
+      "tag_prompt": "outdoors, hay field, morning mist, distant hills, soft sunlight",
+      "mood": ""
+    }
+  ]
+}

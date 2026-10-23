@@ -1,0 +1,81 @@
+{
+  "id": "w_rm_07_fjordy",
+  "title": "Fjordy – Muž, který běží prázdně",
+  "synopsis": "Atlet Erik si na norském fjordu všimne, že Sofia ho zastavila, ale po svém odchodu zůstává sám.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "SFW: polibek ano, nahota ne."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: odjede domů."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_trail",
+      "l_chalet"
+    ]
+  },
+  "characters": [
+    {
+      "id": "erik",
+      "name": "Erik",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an athletic Norwegian man aged 35 with blonde hair, fair skin, and blue eyes",
+      "base": "adult, mature male, athletic, blonde hair, blue eyes, fair skin, freckles",
+      "outfits": {
+        "default": "navy blue windbreaker, black hiking boots, dark sunglasses",
+        "dinner": "navy blue windbreaker, black hiking boots, dark sunglasses",
+        "morning": "navy blue windbreaker, black hiking boots, dark sunglasses"
+      },
+      "photo": "an athletic Norwegian man aged 35 with blonde hair, fair skin, and blue eyes",
+      "tag_prompt": "adult, mature male, athletic, blonde hair, blue eyes, fair skin, freckles, navy blue windbreaker, black hiking boots, dark sunglasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sofia",
+      "name": "Sofia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite curvy woman aged 28 with long dark hair, olive skin, and brown eyes",
+      "base": "adult, petite, mature female, curvy, wide hips, olive skin, long hair, dark brown hair, brown eyes",
+      "outfits": {
+        "default": "black hiking boots, dark sunglasses, black jacket, trekking shoes",
+        "dinner": "black hiking boots, dark sunglasses, black jacket, trekking shoes",
+        "morning": "black hiking boots, dark sunglasses, black jacket, trekking shoes"
+      },
+      "photo": "a petite curvy woman aged 28 with long dark hair, olive skin, and brown eyes",
+      "tag_prompt": "adult, petite, mature female, curvy, wide hips, olive skin, long hair, dark brown hair, brown eyes, black hiking boots, dark sunglasses, black jacket, trekking shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_trail",
+      "name": "Stezka",
+      "description": "Stezka",
+      "tag_prompt": "outdoors, fjord, mountain trail, pine trees, morning mist, sunrise",
+      "mood": ""
+    },
+    {
+      "id": "l_chalet",
+      "name": "Chata",
+      "description": "Chata",
+      "tag_prompt": "indoors, chalet, wooden interior, fireplace, warm light, night",
+      "mood": ""
+    }
+  ]
+}
