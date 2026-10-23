@@ -71,8 +71,21 @@ class ReaderNotifier extends StateNotifier<ReaderState> {
   final WebtoonApi _api;
   final String campaignId;
 
+  bool _startAtFirst = false;
+
   ReaderNotifier(this._api, this.campaignId)
     : super(const ReaderState(loading: true));
+
+  /// Open on the first episode instead of the latest (the library opens stories from the
+  /// start). Applies now when the campaign is loaded, otherwise when it arrives.
+  void startAtFirst() {
+    final eps = state.episodes;
+    if (eps.isNotEmpty) {
+      state = state.copyWith(focusEpisodeId: eps.first.id);
+    } else {
+      _startAtFirst = true;
+    }
+  }
 
   Future<void> load() async {
     state = state.copyWith(loading: true, clearError: true);
@@ -82,7 +95,16 @@ class ReaderNotifier extends StateNotifier<ReaderState> {
           ? state.world!
           : await _api.getWorld(c.worldId);
       if (!mounted) return;
-      state = state.copyWith(campaign: c, world: w, loading: false);
+      final first = _startAtFirst && c.episodes.isNotEmpty
+          ? c.episodes.first.id
+          : null;
+      _startAtFirst = false;
+      state = state.copyWith(
+        campaign: c,
+        world: w,
+        loading: false,
+        focusEpisodeId: first,
+      );
     } on ApiException catch (e) {
       if (!mounted) return;
       state = state.copyWith(loading: false, error: e.message);

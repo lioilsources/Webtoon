@@ -1,9 +1,20 @@
-/// Build-time configuration (`--dart-define`).
-///
-///   flutter run -d macos \
-///     --dart-define=WEBTOON_API=http://localhost:8095 \
-///     --dart-define=WEBTOON_USER=player \
-///     [--dart-define=WEBTOON_OPEN_CAMPAIGN=cp_…]
+// Build-time configuration (`--dart-define`).
+//
+//   # Reader (default): offline, from content packs; no backend
+//   flutter run -d macos
+//
+//   # Studio: today's thin client of the Go backend + author tools
+//   flutter run -d macos \
+//     --dart-define=WEBTOON_STUDIO=true \
+//     --dart-define=WEBTOON_API=http://localhost:8095 \
+//     --dart-define=WEBTOON_USER=player \
+//     [--dart-define=WEBTOON_OPEN_CAMPAIGN=cp_…]
+
+/// `WEBTOON_STUDIO=true`: talk to the backend and show the author tools. Otherwise the app
+/// is the offline reader over installed packs (lib/packs).
+const bool kStudioBuild = bool.fromEnvironment('WEBTOON_STUDIO');
+
+/// Backend URL, user and polling for Studio builds.
 class AppConfig {
   /// Base URL of the Go backend (no trailing slash). Default = backend's `LISTEN_ADDR` :8095.
   final String apiBase;

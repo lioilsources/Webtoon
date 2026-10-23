@@ -27,6 +27,9 @@ class FakeWebtoonApi implements WebtoonApi {
   @override
   final String userId;
 
+  @override
+  bool get canEdit => true;
+
   final List<World> worlds;
   final Map<String, Campaign> campaigns;
 

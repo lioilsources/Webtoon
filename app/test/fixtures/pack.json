@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "fixture",
+  "title": "Fixture",
+  "version": 1,
+  "generated_at": "2026-10-23T08:00:00Z",
+  "worlds": [
+    {
+      "id": "w_les",
+      "title": "Les za humny",
+      "synopsis": "Malý les, velká dobrodružství.",
+      "tone": "hřejivý",
+      "audience": "kids",
+      "language": "cs",
+      "style_id": "clean_webtoon"
+    }
+  ],
+  "stories": [
+    {
+      "id": "cp_jezek",
+      "world_id": "w_les",
+      "title": "Ježek a lucerna",
+      "title_i18n": {"en": "The Hedgehog and the Lantern"},
+      "episodes": ["ep_j1", "ep_j2"],
+      "cover": "covers/cp_jezek.webp",
+      "languages": ["cs", "en"]
+    },
+    {
+      "id": "cp_sova",
+      "world_id": "w_les",
+      "title": "Sova, která nespala",
+      "title_i18n": {},
+      "episodes": ["ep_s1"],
+      "cover": "covers/cp_sova.webp",
+      "languages": ["cs"]
+    }
+  ],
+  "episodes": [
+    {
+      "id": "ep_j1",
+      "campaign_id": "cp_jezek",
+      "index": 1,
+      "title": "Ztracené světlo",
+      "status": "ready",
+      "title_i18n": {"en": "The Lost Light"},
+      "source_language": "cs",
+      "languages": ["en"],
+      "panels_ready": 2,
+      "panels_total": 2,
+      "credits_cost": 0,
+      "panels": [
+        {
+          "index": 0,
+          "status": "ready",
+          "image_url": "media/ep_j1/p00.webp",
+          "video_url": "media/ep_j1/p00_loop.webp",
+          "video_status": "ready",
+          "animate": true,
+          "loop_seconds": 2,
+          "width": 832,
+          "height": 1216,
+          "shot": "medium",
+          "location_id": "l_paseka",
+          "gap_after": "medium",
+          "bubbles": [
+            {"speaker_id": "c_jezek", "text": "Kde je moje lucerna?", "kind": "speech",
+             "i18n": {"en": "Where is my lantern?"}}
+          ],
+          "sfx": [],
+          "characters": [{"id": "c_jezek", "emotion": "worried", "action": "searching"}]
+        },
+        {
+          "index": 1,
+          "status": "ready",
+          "image_url": "media/ep_j1/p01.webp",
+          "width": 832,
+          "height": 1216,
+          "shot": "wide",
+          "location_id": "l_paseka",
+          "gap_after": "large",
+          "bubbles": [
+            {"speaker_id": null, "text": "Setmělo se.", "kind": "narration",
+             "i18n": {"en": "Night fell."}}
+          ],
+          "sfx": [{"text": "ŠUST", "style": "soft"}],
+          "characters": []
+        }
+      ],
+      "choices": [
+        {"id": "c1", "kind": "closed", "text": "Jít hledat k potoku.", "i18n": {"en": "Search by the brook."}},
+        {"id": "c2", "kind": "closed", "text": "Zeptat se sovy.", "i18n": {"en": "Ask the owl."}},
+        {"id": "free", "kind": "free", "text": "Nebo napiš, co uděláš…", "i18n": {"en": "Or write what you do…"}}
+      ],
+      "chosen": null,
+      "warnings": []
+    },
+    {
+      "id": "ep_j2",
+      "campaign_id": "cp_jezek",
+      "index": 2,
+      "title": "U sovy",
+      "status": "ready",
+      "title_i18n": {"en": "At the Owl's"},
+      "source_language": "cs",
+      "languages": ["en"],
+      "panels_ready": 1,
+      "panels_total": 1,
+      "credits_cost": 0,
+      "panels": [
+        {
+          "index": 0,
+          "status": "ready",
+          "image_url": "media/ep_j2/p00.webp",
+          "width": 832,
+          "height": 1216,
+          "shot": "medium",
+          "location_id": "l_dub",
+          "gap_after": "medium",
+          "bubbles": [
+            {"speaker_id": "c_sova", "text": "Lucernu? Viděla jsem ji u potoka.", "kind": "speech",
+             "i18n": {"en": "A lantern? I saw it by the brook."}}
+          ],
+          "sfx": [],
+          "characters": []
+        }
+      ],
+      "choices": [
+        {"id": "c1", "kind": "closed", "text": "Běžet k potoku."},
+        {"id": "free", "kind": "free", "text": "Nebo napiš, co uděláš…"}
+      ],
+      "chosen": {"choice_id": "c2", "kind": "closed", "text": "Zeptat se sovy."},
+      "warnings": []
+    },
+    {
+      "id": "ep_s1",
+      "campaign_id": "cp_sova",
+      "index": 1,
+      "title": "Dlouhá noc",
+      "status": "ready",
+      "title_i18n": {},
+      "source_language": "cs",
+      "languages": [],
+      "panels_ready": 1,
+      "panels_total": 1,
+      "credits_cost": 0,
+      "panels": [
+        {
+          "index": 0,
+          "status": "ready",
+          "image_url": "media/ep_s1/p00.webp",
+          "width": 1216,
+          "height": 832,
+          "shot": "establishing",
+          "location_id": "l_dub",
+          "gap_after": "small",
+          "bubbles": [
+            {"speaker_id": "c_sova", "text": "Zase nespím.", "kind": "thought"}
+          ],
+          "sfx": [],
+          "characters": []
+        }
+      ],
+      "choices": [],
+      "chosen": null,
+      "warnings": []
+    }
+  ]
+}

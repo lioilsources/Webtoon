@@ -389,3 +389,10 @@ SELECT * FROM panels WHERE episode_id = $1 ORDER BY idx FOR UPDATE;
 
 -- name: GetPanelForUpdate :one
 SELECT * FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE;
+
+-- export-pack: every world regardless of visibility, and the campaigns (stories) of one world.
+-- name: ListAllWorlds :many
+SELECT * FROM worlds ORDER BY id;
+
+-- name: ListWorldCampaigns :many
+SELECT * FROM campaigns WHERE world_id = $1 ORDER BY created_at, id;

@@ -32,6 +32,11 @@ abstract class WebtoonApi {
   /// The user the requests are made as (`X-User-ID`).
   String get userId;
 
+  /// Whether this backend can change anything: continue a story, edit bubbles, regenerate
+  /// or animate panels, author worlds. True for the Go backend, false for the offline pack
+  /// reader — the UI hides those controls and shows the library instead of the author tabs.
+  bool get canEdit;
+
   /// GET /worlds — public worlds plus the caller's own.
   Future<List<WorldSummary>> listWorlds();
 

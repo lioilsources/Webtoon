@@ -1143,6 +1143,47 @@ func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error 
 	return err
 }
 
+const listAllWorlds = `-- name: ListAllWorlds :many
+SELECT id, owner_id, title, synopsis, tone, audience, language, style_id, bible, canon, permissions, visibility, intro_episode_ids, created_at, updated_at FROM worlds ORDER BY id
+`
+
+// export-pack: every world regardless of visibility, and the campaigns (stories) of one world.
+func (q *Queries) ListAllWorlds(ctx context.Context) ([]World, error) {
+	rows, err := q.db.Query(ctx, listAllWorlds)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []World
+	for rows.Next() {
+		var i World
+		if err := rows.Scan(
+			&i.ID,
+			&i.OwnerID,
+			&i.Title,
+			&i.Synopsis,
+			&i.Tone,
+			&i.Audience,
+			&i.Language,
+			&i.StyleID,
+			&i.Bible,
+			&i.Canon,
+			&i.Permissions,
+			&i.Visibility,
+			&i.IntroEpisodeIds,
+			&i.CreatedAt,
+			&i.UpdatedAt,
+		); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
 const listCharacters = `-- name: ListCharacters :many
 SELECT world_id, id, owner_id, name, role, count_tag, description, personality, speech_style, tag_prompt, reference_images, identity_level, identity_asset, position, created_at, ip_adapter, base, photo, outfits FROM characters WHERE world_id = $1 ORDER BY position, created_at
 `
@@ -1554,6 +1595,42 @@ func (q *Queries) ListStylePresets(ctx context.Context) ([]ListStylePresetsRow, 
 	for rows.Next() {
 		var i ListStylePresetsRow
 		if err := rows.Scan(&i.ID, &i.Data); err != nil {
+			return nil, err
+		}
+		items = append(items, i)
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return items, nil
+}
+
+const listWorldCampaigns = `-- name: ListWorldCampaigns :many
+SELECT id, world_id, player_id, title, status, player_character_id, state, canon_progress, branch_parent_episode_id, created_at, updated_at FROM campaigns WHERE world_id = $1 ORDER BY created_at, id
+`
+
+func (q *Queries) ListWorldCampaigns(ctx context.Context, worldID string) ([]Campaign, error) {
+	rows, err := q.db.Query(ctx, listWorldCampaigns, worldID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+	var items []Campaign
+	for rows.Next() {
+		var i Campaign
+		if err := rows.Scan(
+			&i.ID,
+			&i.WorldID,
+			&i.PlayerID,
+			&i.Title,
+			&i.Status,
+			&i.PlayerCharacterID,
+			&i.State,
+			&i.CanonProgress,
+			&i.BranchParentEpisodeID,
+			&i.CreatedAt,
+			&i.UpdatedAt,
+		); err != nil {
 			return nil, err
 		}
 		items = append(items, i)

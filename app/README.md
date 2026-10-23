@@ -1,13 +1,44 @@
 # Webtoon — Flutter klient: čtečka (M1/M2) + autor (M3)
 
-Jedna aplikace pro obě role (WEBTOON_PLAN §5.5, §6): **čtenář** (seznam světů → detail světa →
-„Začít kampaň“ → čtečka) i **autor/DM** (záložka „Tvořit“: editor světa, knihovna postav a lokací,
-kánon, dashboard). Autor a hráč se liší jen vlastnictvím světa (`owner_id == X-User-ID`). Panely jsou obrázky z backendu (`/media/...`),
-bubliny a SFX se kreslí ve Flutteru jako overlay, takže jdou upravit bez regenerace obrázku.
+Jedna aplikace, dvě podoby podle build flagu:
+
+- **Reader** (výchozí): čte příběhy **offline z balíčků** (`../PACK_FORMAT.md`). Žádný backend.
+  Záložky **Knihovna** (příběhy podle světů, obálka + název, štítek publika; klepnutí otevře čtečku
+  na 1. dílu) a **Nastavení** (jazyk bublin, místo zabrané balíčky, „Obnovit starter“). Na konci
+  dílu se ukáže, co bylo zvoleno (ostatní volby ztlumené), a „Další díl“; po posledním dílu „Konec“
+  a návrh dalšího příběhu. Nic se negeneruje ani neupravuje (žádný dlouhý stisk na bublině,
+  regenerace ani pohyb panelu).
+- **Studio** (`--dart-define=WEBTOON_STUDIO=true`): dosavadní tenký klient Go backendu
+  (WEBTOON_PLAN §5.5, §6) — **čtenář** (seznam světů → detail světa → „Začít kampaň“ → čtečka)
+  i **autor/DM** (záložka „Tvořit“: editor světa, knihovna postav a lokací, kánon, dashboard).
+  Autor a hráč se liší jen vlastnictvím světa (`owner_id == X-User-ID`).
+
+V obou podobách jsou panely obrázky (z balíčku, nebo `/media/...` z backendu); bubliny a SFX se
+kreslí ve Flutteru jako overlay, takže jdou (ve Studiu) upravit bez regenerace obrázku.
 
 ![čtečka](docs/reader.png)
 
 ## Spuštění
+
+### Reader (offline, z balíčků)
+
+```sh
+flutter run -d macos            # nebo -d ios / chrome; žádný backend není potřeba
+flutter build macos             # release
+```
+
+Při prvním startu (nebo když má přibalený `assets/packs/starter.zip` vyšší `version` v `pack.json`
+než nainstalovaný) se starter rozbalí do `getApplicationSupportDirectory()/packs/starter/` —
+na macOS `~/Library/Containers/<bundle id>/Data/Library/Application Support/<bundle id>/packs/`,
+na iOS `Library/Application Support/packs/` v sandboxu aplikace. Další balíčky (z katalogu
+`webtoon-content`) se instalují přes `PackStore.installFromFile(path, expectedSha256: …)` do
+`packs/<id>[-<část>]/`; stahování a obchod zatím v aplikaci nejsou.
+
+`assets/packs/starter.zip` vyrábí `webtoon export-pack -starter …` (backend). Bez něj je v repu jen
+zástupný prázdný balíček (`version: 0`, žádné příběhy) — appka naběhne s prázdnou knihovnou a jakýkoli
+skutečný starter (`version ≥ 1`) ho při dalším startu nahradí.
+
+### Studio (proti backendu)
 
 ```sh
 # backend (viz ../backend/README.md); jen API, bez workeru = nic negeneruje
@@ -21,20 +52,28 @@ go run ./cmd/webtoon import-demo -player player \
 # aplikace
 cd ../app
 flutter run -d macos \
+  --dart-define=WEBTOON_STUDIO=true \
   --dart-define=WEBTOON_API=http://localhost:8095 \
   --dart-define=WEBTOON_USER=player
 ```
 
 | `--dart-define` | výchozí | |
 |---|---|---|
-| `WEBTOON_API` | `http://localhost:8095` | URL backendu (výchozí `LISTEN_ADDR` backendu je `:8095`) |
-| `WEBTOON_USER` | `player` | posílá se jako `X-User-ID` (auth je zatím stub) |
+| `WEBTOON_STUDIO` | `false` | `true` = Studio (HTTP backend + autor); jinak Reader z balíčků |
+| `WEBTOON_API` | `http://localhost:8095` | URL backendu (výchozí `LISTEN_ADDR` backendu je `:8095`); jen Studio |
+| `WEBTOON_USER` | `player` | posílá se jako `X-User-ID` (auth je zatím stub); jen Studio |
 | `WEBTOON_OPEN_CAMPAIGN` | – | jen pro vývoj: po startu rovnou otevře čtečku kampaně `cp_…` |
+
+Přepínač je v `apiProvider` (`lib/providers/providers.dart`): `WEBTOON_STUDIO=true` → `HttpWebtoonApi`,
+jinak `LocalWebtoonApi` nad `PackStore`. UI se pak neřídí flagem, ale `WebtoonApi.canEdit`
+(Http `true`, Local `false`): `HomeScreen` podle něj vybere záložky a čtečka skryje editaci.
+Testy proto fungují s `FakeWebtoonApi` (canEdit = true → Studio) i s `LocalWebtoonApi` bez dalšího
+přepínání.
 
 Web (Chrome): backend musí povolit origin, např. `WEBTOON_CORS_ORIGINS=http://localhost:8096`.
 
 ```sh
-flutter build web --dart-define=WEBTOON_API=http://localhost:8095 --dart-define=WEBTOON_USER=player
+flutter build web --dart-define=WEBTOON_STUDIO=true --dart-define=WEBTOON_API=http://localhost:8095 --dart-define=WEBTOON_USER=player
 python3 -m http.server 8096 -d build/web
 ```
 
@@ -56,6 +95,15 @@ flutter test
   zobrazováním panelů, regenerace selhaného panelu, úprava bubliny (PATCH), režie, chyby, historie.
 - `test/api_test.dart`: HTTP klient (hlavičky, těla požadavků, české chyby, tvar `GET /episodes/{id}`).
 - `test/screens_test.dart`: světy → detail → kampaň → čtečka; seznam kampaní.
+- `test/pack_store_test.dart`: `PackStore` nad fixture balíčkem (`test/fixtures/pack.json` + 1×1 PNG,
+  zip se skládá v `test/pack_fixture.dart`): instalace do `packs/<id>/`, přepis relativních cest médií
+  na absolutní, `load()` z disku, sha256, odmítnutí špatného schématu / chybějícího pack.json /
+  cesty `../`, přeinstalace a části, `ensureStarter` (první start, stejná / vyšší verze, bez assetu);
+  `LocalWebtoonApi` (světy, příběhy jako kampaně, díly, `FileImage`, nepodporované volání).
+- `test/library_test.dart`: Reader režim: Knihovna (skupiny podle světa, štítek publika, žádné
+  autorské záložky, klepnutí → čtečka na 1. dílu), splash při rozbalování, konec dílu offline
+  (zvolená volba zvýrazněná, ostatní neklikací, „Další díl“, „Konec“ + další příběh), žádná
+  editace bublin, Nastavení (jazyk, úložiště, „Obnovit starter“).
 - `test/author_test.dart`: autor nad `FakeWebtoonApi`: Tvořit + nový svět, uložení základu/stylu/práv
   (PATCH tělo), pravidla/frakce/kánon (přeřazení, id uzlů zůstávají)/mantinely, generování tagů a úprava
   čipů (smazat, vrátit vyřazený, přidat) → `tag_prompt`, LLM mimo rozvrh (503), character sheet
@@ -74,11 +122,18 @@ flutter test
 
 ```
 lib/
-  main.dart, app.dart          ProviderScope, téma (světlé/tmavé), záložky Světy / Kampaně / Tvořit
-  config.dart                  --dart-define (API, uživatel, poll interval)
+  main.dart, app.dart          ProviderScope, téma (světlé/tmavé); HomeScreen: Reader (Knihovna /
+                               Nastavení za splashem rozbalování) nebo Studio (Světy / Kampaně / Tvořit)
+  config.dart                  --dart-define (WEBTOON_STUDIO, API, uživatel, poll interval)
   theme.dart                   fonty (Nunito, Nunito Italic, DynaPuff, Baloo 2), komiksové barvy a karty
-  api/webtoon_api.dart         rozhraní WebtoonApi + ApiException + české chybové hlášky
-  api/http_webtoon_api.dart    implementace nad package:http
+  api/webtoon_api.dart         rozhraní WebtoonApi (+ canEdit) + ApiException + české chybové hlášky
+  api/http_webtoon_api.dart    implementace nad package:http (Studio)
+  api/local_webtoon_api.dart   implementace nad PackStore (Reader): světy, příběhy jako kampaně,
+                               díly z pack.json, FileImage; vše ostatní UnsupportedError
+  packs/pack_store.dart        instalace balíčků (zip/asset, sha256, rozbalení v isolate do
+                               <app support>/packs/<id>[-část]/), načtení pack.json do paměti,
+                               přepis cest médií na absolutní, starter podle verze
+  packs/pack_bootstrap.dart    stav startu (načítání / rozbalování k/n / hotovo / chyba) pro splash
   models/                      world (+ kánon, frakce, reference, ip_adapter), campaign, episode,
                                author (style presety, návrh tagů, character sheet, stats); lenient JSON
   providers/                   Riverpod: světy, kampaně, EpisodeNotifier (polling), ReaderNotifier,
@@ -90,7 +145,9 @@ lib/
     episode_view.dart          jeden díl: titulek, progres generování, panely s mezerami, „Zvoleno: …“
     episode_end_block.dart     volby, volný text, režie (jen když to permissions dovolí), cena v kreditech
     bubble_edit_dialog.dart    úprava textu bubliny (dlouhý stisk)
-  screens/                     worlds, world_detail (+ výběr postavy, „Upravit“ pro autora), campaigns, reader
+    local_episode_end.dart     Reader: zaznamenaná volba + „Další díl“; „Konec“ + další příběh
+  screens/                     worlds, world_detail (+ výběr postavy, „Upravit“ pro autora), campaigns, reader,
+                               library (Knihovna), settings (Nastavení), pack_splash
   author/
     create_screen.dart         záložka Tvořit: moje světy, dialog „Nový svět“ (název + styl)
     world_editor_screen.dart   editor světa: Základ / Lore & kánon / Postavy / Lokace / Přehled, výběr stylu
@@ -102,6 +159,8 @@ lib/
   services/push_notifications.dart   TODO rozhraní (zatím Noop, čtečka polluje)
   services/image_picker.dart   výběr PNG/JPEG přes file_selector (macOS: entitlement files.user-selected.read-only)
 assets/fonts/                  kopie ../assets/fonts včetně OFL licencí
+assets/packs/starter.zip       přibalený starter balíček (../PACK_FORMAT.md); v repu zástupný prázdný
+test/fixtures/pack.json        fixture balíček pro testy (1 svět, 2 příběhy, 3 díly)
 ```
 
 ## Jak funguje čtečka
@@ -130,6 +189,12 @@ assets/fonts/                  kopie ../assets/fonts včetně OFL licencí
   (backend ho zatím ignoruje).
 - **Úpravy textu:** dlouhý stisk na bublině → dialog → `PATCH /episodes/{id}/panels/{n}` se všemi
   bublinami panelu (optimisticky, při chybě se vrátí). Jen pro hráče kampaně.
+- **Reader (offline):** stejná čtečka nad `LocalWebtoonApi`. Příběh se otevře na 1. dílu
+  (`ReaderScreen(startAtFirst: true)`), pod každým dílem kromě posledního je blok s volbami dílu,
+  kde je zvýrazněná ta z `chosen` následujícího dílu (volný text se ukáže jako vlastní řádek) a
+  „Další díl“ (přesune zaostření), po posledním „Konec“ + další příběh ze stejného světa (nebo
+  jakýkoli jiný). Díly jsou `ready`, takže `needsPolling` je false a nic se nepolluje; `canEdit`
+  false vypne dlouhý stisk, regeneraci i pohyb panelu.
 
 ## Autor (záložka „Tvořit“)
 

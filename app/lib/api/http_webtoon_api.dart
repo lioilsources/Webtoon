@@ -27,6 +27,9 @@ class HttpWebtoonApi implements WebtoonApi {
   @override
   String get userId => config.userId;
 
+  @override
+  bool get canEdit => true;
+
   Map<String, String> get _headers => {
     'X-User-ID': config.userId,
     'Accept': 'application/json',

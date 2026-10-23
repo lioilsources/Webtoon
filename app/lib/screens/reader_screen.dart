@@ -11,14 +11,26 @@ import '../providers/providers.dart';
 import '../providers/reader_provider.dart';
 import '../reader/episode_end_block.dart';
 import '../reader/episode_view.dart';
+import '../reader/local_episode_end.dart';
 import '../theme.dart';
 
 /// The webtoon reader for one campaign: one vertical scroll of every episode. The view is
 /// anchored on the focused episode (default: the latest) — earlier episodes are above it,
 /// reachable by scrolling up, and the end-of-episode block with choices sits after the last.
+///
+/// With an API that cannot edit (the offline pack reader) nothing is generated: under each
+/// episode the recorded choice and "Další díl", after the last one "Konec" + another story.
 class ReaderScreen extends ConsumerStatefulWidget {
   final String campaignId;
-  const ReaderScreen({super.key, required this.campaignId});
+
+  /// Open on episode 1 instead of the latest (the library).
+  final bool startAtFirst;
+
+  const ReaderScreen({
+    super.key,
+    required this.campaignId,
+    this.startAtFirst = false,
+  });
 
   @override
   ConsumerState<ReaderScreen> createState() => _ReaderScreenState();
@@ -27,6 +39,14 @@ class ReaderScreen extends ConsumerStatefulWidget {
 class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final _scroll = ScrollController();
   String? _anchoredOn;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.startAtFirst) {
+      ref.read(readerProvider(widget.campaignId).notifier).startAtFirst();
+    }
+  }
 
   @override
   void dispose() {
@@ -94,10 +114,12 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       return const Center(child: CircularProgressIndicator());
     }
     final eps = st.episodes;
-    final isPlayer = _notifier.isPlayer;
+    final canEdit = ref.watch(apiProvider).canEdit;
+    final isPlayer = _notifier.isPlayer && canEdit;
+    final local = !canEdit;
     if (eps.isEmpty) {
       return _Message(
-        text: 'Kampaň zatím nemá žádný díl.',
+        text: local ? 'Příběh nemá žádný díl.' : 'Kampaň zatím nemá žádný díl.',
         action: isPlayer
             ? FilledButton(
                 onPressed: st.submitting
@@ -121,13 +143,27 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
       }
     });
 
-    Widget item(int i) => EpisodeView(
-      key: ValueKey('episode-${eps[i].id}'),
-      episodeId: eps[i].id,
-      world: st.world,
-      editable: isPlayer,
-      nextChosenText: i + 1 < eps.length ? eps[i + 1].chosen?.text : null,
-    );
+    final lang = ref.watch(readerLanguageProvider);
+    Widget item(int i) {
+      final next = i + 1 < eps.length ? eps[i + 1] : null;
+      return EpisodeView(
+        key: ValueKey('episode-${eps[i].id}'),
+        episodeId: eps[i].id,
+        world: st.world,
+        editable: isPlayer,
+        nextChosenText: local ? null : next?.chosen?.text,
+        footer: local && next != null
+            ? (ep) => LocalEpisodeEnd(
+                choices: [
+                  for (final c in ep.choices)
+                    c.localized(ep.displayLanguage(lang)),
+                ],
+                chosen: next.chosen,
+                onNext: () => _notifier.focus(next.id),
+              )
+            : null,
+      );
+    }
 
     final centerKey = ValueKey('center-${eps[f].id}');
     return RefreshIndicator(
@@ -151,7 +187,9 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
             itemBuilder: (_, i) => item(f + 1 + i),
           ),
           SliverToBoxAdapter(
-            child: isPlayer
+            child: local
+                ? _LocalEnd(campaign: st.campaign!)
+                : isPlayer
                 ? _EndOfCampaign(st: st, notifier: _notifier)
                 : null,
           ),
@@ -302,6 +340,38 @@ class _EndOfCampaign extends ConsumerWidget {
               ref.invalidate(campaignsProvider);
             }
           },
+        ),
+      ),
+    );
+  }
+}
+
+/// Offline reader, after the last episode: "Konec" + another story (same world first).
+class _LocalEnd extends ConsumerWidget {
+  final Campaign campaign;
+  const _LocalEnd({required this.campaign});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final all = ref.watch(campaignsProvider).valueOrNull ?? const [];
+    final others = all.where((c) => c.id != campaign.id).toList();
+    final suggestion = others.isEmpty
+        ? null
+        : others.firstWhere(
+            (c) => c.worldId == campaign.worldId,
+            orElse: () => others.first,
+          );
+    return Center(
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: kStripMaxWidth),
+        child: LocalStoryEnd(
+          suggestion: suggestion,
+          onOpen: (s) => Navigator.of(context).pushReplacement(
+            MaterialPageRoute<void>(
+              builder: (_) =>
+                  ReaderScreen(campaignId: s.id, startAtFirst: true),
+            ),
+          ),
         ),
       ),
     );

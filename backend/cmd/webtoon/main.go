@@ -8,6 +8,9 @@
 //	                                    insert a ready episode from M0 outputs (no LLM/ComfyUI calls)
 //	webtoon translate [-episode id | -all] [-langs en,de] [-force] [-inline]
 //	                                    translate ready episodes' bubbles (enqueue jobs, or call the LLM right here)
+//	webtoon export-pack -pack id -title t [-version 1] (-out dir [-product id | -free] | -starter file.zip)
+//	                    (-campaigns a,b | -worlds w,x | -world-prefix w_r_,w_ra_)
+//	                                    build an offline content pack (PACK_FORMAT.md) from the DB + MEDIA_DIR
 package main
 
 import (
@@ -31,9 +34,11 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/comfy"
 	"github.com/ol1n/webtoon/backend/internal/config"
 	"github.com/ol1n/webtoon/backend/internal/db"
+	"github.com/ol1n/webtoon/backend/internal/db/dbq"
 	"github.com/ol1n/webtoon/backend/internal/demo"
 	"github.com/ol1n/webtoon/backend/internal/imageq"
 	"github.com/ol1n/webtoon/backend/internal/llm"
+	"github.com/ol1n/webtoon/backend/internal/pack"
 	"github.com/ol1n/webtoon/backend/internal/seed"
 	"github.com/ol1n/webtoon/backend/internal/store"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
@@ -66,8 +71,10 @@ func main() {
 		err = runImportDemo(ctx, cfg, args)
 	case "translate":
 		err = runTranslate(ctx, cfg, args)
+	case "export-pack":
+		err = runExportPack(ctx, cfg, args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -316,4 +323,70 @@ func missingLangs(et *worker.EpisodeText, langs []string) int {
 		}
 	}
 	return n
+}
+
+// runExportPack builds a content pack (PACK_FORMAT.md). It only reads the database, so it opens
+// the pool without running migrations.
+func runExportPack(ctx context.Context, cfg config.Config, args []string) error {
+	fs := flag.NewFlagSet("export-pack", flag.ExitOnError)
+	var o pack.Options
+	fs.StringVar(&o.ID, "pack", "", "pack id, [a-z0-9-] (required)")
+	fs.StringVar(&o.Title, "title", "", "pack title (required)")
+	fs.IntVar(&o.Version, "version", 1, "pack version; part of the zip name")
+	fs.StringVar(&o.ProductID, "product", "", "store product id of a paid pack")
+	fs.BoolVar(&o.Free, "free", false, "free pack (no product)")
+	fs.StringVar(&o.OutDir, "out", "", "webtoon-content checkout: writes packs/, covers/ and merges catalog.json")
+	fs.StringVar(&o.Starter, "starter", "", "write this single zip (e.g. ../app/assets/packs/starter.zip) and touch no catalog")
+	fs.StringVar(&o.BaseURL, "base-url", pack.DefaultBaseURL, "catalog base_url")
+	fs.IntVar(&o.Workers, "workers", 0, "parallel cwebp processes (default: CPUs)")
+	fs.BoolVar(&o.Force, "force", false, "overwrite an existing zip")
+	campaigns := fs.String("campaigns", "", "comma-separated campaign ids")
+	worlds := fs.String("worlds", "", "comma-separated world ids (all their campaigns)")
+	prefixes := fs.String("world-prefix", "", "comma-separated world id prefixes (all campaigns of matching worlds)")
+	fs.Parse(args) //nolint:errcheck
+	if fs.NArg() != 0 {
+		return fmt.Errorf("export-pack takes flags only, got %v", fs.Args())
+	}
+	o.MediaDir = cfg.MediaDir
+	sel := pack.Selection{Campaigns: splitList(*campaigns), Worlds: splitList(*worlds), WorldPrefixes: splitList(*prefixes)}
+	if err := sel.Validate(); err != nil {
+		return err
+	}
+	pool, err := pgxpool.New(ctx, cfg.DatabaseURL)
+	if err != nil {
+		return err
+	}
+	defer pool.Close()
+	if err := pool.Ping(ctx); err != nil {
+		return err
+	}
+	sum, err := pack.Run(ctx, dbq.New(pool), o, sel)
+	if err != nil {
+		return err
+	}
+	for _, n := range sum.Notes {
+		fmt.Fprintln(os.Stderr, "note:", n)
+	}
+	for _, p := range sum.Parts {
+		part := p.Part
+		if part == "" {
+			part = "-"
+		}
+		fmt.Printf("part %s  %s\n  stories %d  episodes %d  panels %d  loops %d  bytes %d  sha256 %s\n",
+			part, p.Path, p.Stories, p.Episodes, p.Panels, p.Loops, p.Bytes, p.SHA256)
+	}
+	if sum.CatalogPath != "" {
+		fmt.Printf("catalog %s  version %d\n", sum.CatalogPath, sum.CatalogVersion)
+	}
+	return nil
+}
+
+func splitList(s string) []string {
+	var out []string
+	for _, v := range strings.Split(s, ",") {
+		if v = strings.TrimSpace(v); v != "" {
+			out = append(out, v)
+		}
+	}
+	return out
 }

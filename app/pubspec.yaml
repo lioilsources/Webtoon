@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: ^3.12.2
@@ -40,6 +40,10 @@ dependencies:
   file_selector: ^1.1.0
   shared_preferences: ^2.5.3
   visibility_detector: ^0.4.0+2
+  path_provider: ^2.1.6
+  archive: ^4.5.2
+  crypto: ^3.0.7
+  path: ^1.9.1
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +71,9 @@ flutter:
   assets:
     - assets/fonts/NotoSansJP-Variable.ttf
     - assets/fonts/NotoSansKR-Variable.ttf
+    # Starter content pack (../PACK_FORMAT.md), produced by `webtoon export-pack -starter`;
+    # extracted into <application support>/packs/starter/ on first launch (lib/packs).
+    - assets/packs/starter.zip
 
   # Bubble fonts (OFL, from cute_kid_fonts; copies of ../assets/fonts, licences alongside).
   fonts:

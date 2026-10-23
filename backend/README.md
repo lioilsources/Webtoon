@@ -16,7 +16,8 @@ docker compose up --build
 ```
 
 Příkazy binárky: `serve` (výchozí), `migrate`, `seed [-world f.json] [-styles f.json] [-owner id] [-visibility public]`,
-`import-demo [-campaign id | -world w_skyisles -player player] [-character id] [-variant 0] <storyboard.json> <panel_dir>`.
+`import-demo [-campaign id | -world w_skyisles -player player] [-character id] [-variant 0] <storyboard.json> <panel_dir>`,
+`translate [...]`, `export-pack [...]` (viz níže).
 
 `import-demo` vloží hotový díl z výstupů M0 bez volání LLM/ComfyUI (pro vývoj čtečky): storyboard →
 epizoda `ready` s panely `ready`, obrázky `pNN_s<variant>.png` (+ seed/prompt z `meta.json`, pokud je)
@@ -27,6 +28,34 @@ novou kampaň hráče `-player`; s `-campaign` přidá další díl (kampaň nes
 go run ./cmd/webtoon import-demo -player player ../out/dev/storyboard_ep1.json ../out/2026-10-17/ep1_noob_plain
 ```
 Migrace (embedded, golang-migrate) běží při každém startu `serve` i `seed`.
+
+### Export balíčků (`export-pack`)
+
+`webtoon export-pack` postaví offline balíček obsahu podle `../PACK_FORMAT.md` z DB + `MEDIA_DIR`
+(DB jen čte, migrace nespouští). Panely PNG převede na WebP q85 (`cwebp`, musí být v PATH:
+`brew install webp`), smyčky zkopíruje jako `pNN_loop.webp`, obálka příběhu je p00 prvního dílu
+oříznutý na střed a zmenšený na 416×608. Díly bere v pořadí `idx` a končí u prvního, který není
+`ready` nebo má panel bez obrázku; příběh bez hotového dílu vynechá; svět `w_lxf_*` odmítne.
+JSON dílu je přesně `GET /episodes/{id}` (`internal/episodejson`, sdílené s API) bez polí
+`seed`, `identity_score`, `error`, `video_error`, `estimate_seconds`, `created_at`, `updated_at`.
+`languages` příběhu = zdrojový jazyk světa + průnik překladů všech dílů; `title_i18n` příběhu se
+bere z prvního dílu, pokud má kampaň stejný název.
+
+```sh
+# výběr příběhů: -campaigns cp_a,cp_b | -worlds w_x,w_y | -world-prefix w_rb_,w_rc_ (lze kombinovat worlds + prefix)
+# starter: jeden zip (bez dělení), katalogu se nedotkne
+go run ./cmd/webtoon export-pack -starter ../app/assets/packs/starter.zip -pack starter -title Starter \
+  -worlds w_les,w_more -world-prefix w_r_,w_ra_
+# placený balíček do checkoutu webtoon-content: packs/<id>-v<verze>[-a|-b…].zip, covers/, catalog.json (version++)
+go run ./cmd/webtoon export-pack -out ../../webtoon-content -pack romance-1 -title "Romance I" -version 1 \
+  -product pack_romance_1 -world-prefix w_rb_,w_rc_
+```
+
+Nad 25 příběhů se balíček dělí na části `a`, `b`, … po 25 (každá je samostatný zip se svým `pack.json`,
+stejné `id`, pole `part`). Existující zip se nepřepisuje (nová verze = `-version N+1`; `-force` přepíše).
+Další volby: `-free` místo `-product`, `-base-url` (výchozí `https://lioilsources.github.io/webtoon-content/`),
+`-workers` (výchozí počet CPU). Na konci vypíše za každou část počty příběhů/dílů/panelů/smyček, bajty a sha256,
+na stderr poznámky o zkrácených a vynechaných příbězích.
 
 ### Konfigurace (env)
 
@@ -206,13 +235,15 @@ vygenerovat znovu. `data/styles.json` je kopie `../data/styles.json` (musí být
 ## Struktura
 
 ```
-cmd/webtoon/            main: serve | migrate | seed | import-demo
+cmd/webtoon/            main: serve | migrate | seed | import-demo | translate | export-pack
 data/                   kopie ../data (world_m0, styles, wd14_tags), embedded
 internal/api/           HTTP handlery, auth stub, /media; authoring.go = nástroje autora (M3)
 internal/chargen/       tag_prompt postavy/lokace z popisu (port m0/gen_character.py)
 internal/comfy/         ComfyUI klient + workflow (port m0/comfy.py)
 internal/config/        env
 internal/demo/          import-demo: hotový díl z výstupů M0 (storyboard + PNG)
+internal/episodejson/   tvar GET /episodes/{id}, sdílený API a balíčky
+internal/pack/          export-pack: výběr příběhů, pack.json, cwebp, zip, catalog.json (PACK_FORMAT.md)
 internal/db/            migrace (embedded) + queries.sql; dbq/ = vygenerované sqlc (`sqlc generate`)
 internal/domain/        typy světa, stylů, storyboardu
 internal/llm/           OpenAI-kompatibilní JSON klient

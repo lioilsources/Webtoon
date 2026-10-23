@@ -29,12 +29,17 @@ class EpisodeView extends ConsumerWidget {
   /// What was chosen to get to the *next* episode (shown under this one).
   final String? nextChosenText;
 
+  /// Built under the panels once the episode is loaded (the offline reader puts the
+  /// recorded choice + "Další díl" here).
+  final Widget Function(Episode episode)? footer;
+
   const EpisodeView({
     super.key,
     required this.episodeId,
     this.world,
     this.editable = false,
     this.nextChosenText,
+    this.footer,
   });
 
   @override
@@ -104,6 +109,7 @@ class EpisodeView extends ConsumerWidget {
                 SizedBox(height: gapHeight(p.gapAfter, width)),
               ],
               if (nextChosenText != null) ChosenNote(text: nextChosenText!),
+              if (footer != null) footer!(ep),
             ],
           );
         },
