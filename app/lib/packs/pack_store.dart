@@ -41,6 +41,10 @@ class PackStory {
   final String? cover;
   final List<String> languages;
 
+  /// Pack type of the story (kids, harlequin, superhero, …); null in packs exported before
+  /// catalog schema 2.
+  final String? type;
+
   const PackStory({
     required this.id,
     required this.packId,
@@ -50,6 +54,7 @@ class PackStory {
     this.episodeIds = const [],
     this.cover,
     this.languages = const [],
+    this.type,
   });
 
   String titleIn(String? lang) =>
@@ -141,6 +146,7 @@ class PackManifest {
             episodeIds: strList(s['episodes']),
             cover: media(s['cover']),
             languages: strList(s['languages']),
+            type: strOrNull(s['type']),
           ),
       ],
       episodes: episodes,

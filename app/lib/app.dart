@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'author/create_screen.dart';
+import 'packs/pack_bootstrap.dart';
+import 'i18n/ui_strings.dart';
+import 'profile/reader_profile.dart';
 import 'providers/providers.dart';
 import 'screens/campaigns_screen.dart';
 import 'screens/library_screen.dart';
 import 'screens/pack_splash.dart';
+import 'screens/profile_chooser_screen.dart';
 import 'screens/reader_screen.dart';
 import 'screens/settings_screen.dart';
+import 'screens/store_screen.dart';
 import 'screens/worlds_screen.dart';
 import 'theme.dart';
 
@@ -26,8 +31,8 @@ class WebtoonApp extends StatelessWidget {
 }
 
 /// Two shapes, decided by [WebtoonApi.canEdit]:
-/// - **Reader** (offline packs): Knihovna / Nastavení, behind a splash while the starter
-///   pack is extracted.
+/// - **Reader** (offline packs): Knihovna / Obchod / Nastavení, behind a splash while the
+///   starter pack is extracted, and the Děti / Dospělí chooser on first launch.
 /// - **Studio** (Go backend): Světy / Kampaně / Tvořit — the reader plus the author side.
 class HomeScreen extends ConsumerStatefulWidget {
   const HomeScreen({super.key});
@@ -65,15 +70,27 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         onRetry: () => ref.read(packBootstrapProvider.notifier).start(),
       );
     }
+    final profile = ref.watch(readerProfileProvider);
+    if (!profile.loaded) {
+      return PackSplash(state: const PackBootstrapState(), onRetry: () {});
+    }
+    if (profile.profile == null) return const ProfileChooserScreen();
+    final lang = ref.watch(uiLanguageProvider);
     return _tabs(
-      const [LibraryScreen(), SettingsScreen()],
-      const [
-        NavigationDestination(
+      const [LibraryScreen(), StoreScreen(), SettingsScreen()],
+      [
+        const NavigationDestination(
           icon: Icon(Icons.auto_stories_outlined),
           selectedIcon: Icon(Icons.auto_stories),
           label: 'Knihovna',
         ),
         NavigationDestination(
+          key: const ValueKey('tab-store'),
+          icon: const Icon(Icons.storefront_outlined),
+          selectedIcon: const Icon(Icons.storefront),
+          label: tr(lang, 'tab.store'),
+        ),
+        const NavigationDestination(
           icon: Icon(Icons.settings_outlined),
           selectedIcon: Icon(Icons.settings),
           label: 'Nastavení',

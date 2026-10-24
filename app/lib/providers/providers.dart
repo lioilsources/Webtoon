@@ -9,6 +9,7 @@ import '../models/campaign.dart';
 import '../models/world.dart';
 import '../packs/pack_bootstrap.dart';
 import '../packs/pack_store.dart';
+import '../profile/reader_profile.dart';
 import '../services/image_picker.dart';
 import '../services/push_notifications.dart';
 
@@ -29,11 +30,23 @@ final packBootstrapProvider =
 /// Reader builds read packs offline; `--dart-define=WEBTOON_STUDIO=true` talks to the Go
 /// backend (`WEBTOON_API`, `WEBTOON_USER`) as before. Overridden with a fake in tests —
 /// the UI then follows [WebtoonApi.canEdit], not the build flag.
-final apiProvider = Provider<WebtoonApi>(
-  (ref) => kStudioBuild
-      ? HttpWebtoonApi(ref.watch(configProvider))
-      : LocalWebtoonApi(ref.watch(packStoreProvider)),
-);
+final apiProvider = Provider<WebtoonApi>((ref) {
+  if (kStudioBuild) return HttpWebtoonApi(ref.watch(configProvider));
+  final store = ref.watch(packStoreProvider);
+  final profile = ref.watch(readerProfileProvider.select((p) => p.profile));
+  return LocalWebtoonApi(
+    store,
+    storyFilter: (s) => storyVisibleIn(store, profile, s),
+  );
+});
+
+/// [storyVisible] for a story of [store] (its world's audience + its pack type).
+bool storyVisibleIn(PackStore store, ReaderProfile? profile, PackStory s) =>
+    storyVisible(
+      profile,
+      worldAudience: store.world(s.worldId)?.audience,
+      type: s.type,
+    );
 
 final pushNotificationsProvider = Provider<PushNotifications>(
   (ref) => const NoopPushNotifications(),

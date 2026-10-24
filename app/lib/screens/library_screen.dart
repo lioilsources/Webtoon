@@ -6,7 +6,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/world.dart';
 import '../packs/pack_store.dart';
 import '../providers/language_provider.dart';
+import '../profile/reader_profile.dart';
 import '../providers/providers.dart';
+import '../shop/shop_controller.dart' show packsRevisionProvider;
 import '../theme.dart';
 import '../widgets/common.dart';
 import 'reader_screen.dart';
@@ -20,10 +22,17 @@ class LibraryScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     // Rebuild after a (re)install: the bootstrap state flips back to ready.
     ref.watch(packBootstrapProvider);
+    // … and after a download / delete in Obchod.
+    ref.watch(packsRevisionProvider);
     final store = ref.watch(packStoreProvider);
     final lang = ref.watch(readerLanguageProvider);
+    // Kids profile: no adult worlds, no harlequin stories.
+    final profile = ref.watch(readerProfileProvider.select((p) => p.profile));
+    final stories = [
+      for (final s in store.stories)
+        if (storyVisibleIn(store, profile, s)) s,
+    ];
     final worlds = store.worlds;
-    final stories = store.stories;
     final byWorld = <String, List<PackStory>>{};
     for (final s in stories) {
       (byWorld[s.worldId] ??= []).add(s);
@@ -130,11 +139,7 @@ class AudienceBadge extends StatelessWidget {
       'adult' => const Color(0xFFC84A3C),
       _ => ComicColors.accent,
     };
-    return Tag(
-      audienceLabel(audience),
-      color: color,
-      textColor: Colors.white,
-    );
+    return Tag(audienceLabel(audience), color: color, textColor: Colors.white);
   }
 }
 

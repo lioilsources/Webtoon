@@ -16,7 +16,13 @@ import 'webtoon_api.dart';
 class LocalWebtoonApi implements WebtoonApi {
   final PackStore store;
 
-  const LocalWebtoonApi(this.store);
+  /// Reader profile filter (Kids hides adult stories); null shows everything.
+  final bool Function(PackStory story)? storyFilter;
+
+  const LocalWebtoonApi(this.store, {this.storyFilter});
+
+  Iterable<PackStory> get _stories =>
+      storyFilter == null ? store.stories : store.stories.where(storyFilter!);
 
   @override
   String get userId => 'reader';
@@ -29,7 +35,14 @@ class LocalWebtoonApi implements WebtoonApi {
       throw UnsupportedError('$what is not available offline (pack reader)');
 
   @override
-  Future<List<WorldSummary>> listWorlds() async => store.worlds;
+  Future<List<WorldSummary>> listWorlds() async {
+    if (storyFilter == null) return store.worlds;
+    final shown = {for (final s in _stories) s.worldId};
+    return [
+      for (final w in store.worlds)
+        if (shown.contains(w.id)) w,
+    ];
+  }
 
   @override
   Future<World> getWorld(String id) async {
@@ -60,7 +73,7 @@ class LocalWebtoonApi implements WebtoonApi {
 
   @override
   Future<List<CampaignSummary>> listCampaigns({String? worldId}) async => [
-    for (final s in store.stories)
+    for (final s in _stories)
       if (worldId == null || s.worldId == worldId) _summary(s),
   ];
 

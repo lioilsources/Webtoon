@@ -16,6 +16,7 @@ import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/screens/reader_screen.dart';
 
 import 'pack_fixture.dart';
+import 'shop_fakes.dart';
 
 void main() {
   late PackStore store;
@@ -38,6 +39,7 @@ void main() {
       // The host locale is English and the fixture is translated into it; start on the
       // originals so the Czech texts are what the tests see.
       deviceLanguageProvider.overrideWithValue(null),
+      ...shopOverrides(),
     ],
     child: home == null ? const WebtoonApp() : MaterialApp(home: home),
   );
@@ -104,6 +106,7 @@ void main() {
               ),
             ),
           ),
+          ...shopOverrides(),
         ],
         child: const WebtoonApp(),
       ),

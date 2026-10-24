@@ -3,8 +3,12 @@
 Jedna aplikace, dvě podoby podle build flagu:
 
 - **Reader** (výchozí): čte příběhy **offline z balíčků** (`../PACK_FORMAT.md`). Žádný backend.
+  Při prvním startu volba profilu **Děti / Dospělí** (Dospělí jen přes rodičovskou bránu).
   Záložky **Knihovna** (příběhy podle světů, obálka + název, štítek publika; klepnutí otevře čtečku
-  na 1. dílu) a **Nastavení** (jazyk bublin, místo zabrané balíčky, „Obnovit starter“). Na konci
+  na 1. dílu; profil Děti skryje dospělé světy a harlequin příběhy), **Obchod** (typy balíčků →
+  balíčky s mřížkou obálek, počtem příběhů, velikostí a cenou z obchodu nebo „Zdarma“; nákup přes
+  rodičovskou bránu, stažení s průběhem, Stáhnout/Staženo/Smazat; výhodné sady) a **Nastavení**
+  (jazyk bublin, místo zabrané balíčky, „Obnovit starter“, profil čtenáře, „Obnovit nákupy“). Na konci
   dílu se ukáže, co bylo zvoleno (ostatní volby ztlumené), a „Další díl“; po posledním dílu „Konec“
   a návrh dalšího příběhu. Nic se negeneruje ani neupravuje (žádný dlouhý stisk na bublině,
   regenerace ani pohyb panelu).
@@ -32,7 +36,26 @@ než nainstalovaný) se starter rozbalí do `getApplicationSupportDirectory()/pa
 na macOS `~/Library/Containers/<bundle id>/Data/Library/Application Support/<bundle id>/packs/`,
 na iOS `Library/Application Support/packs/` v sandboxu aplikace. Další balíčky (z katalogu
 `webtoon-content`) se instalují přes `PackStore.installFromFile(path, expectedSha256: …)` do
-`packs/<id>[-<část>]/`; stahování a obchod zatím v aplikaci nejsou.
+`packs/<id>[-<část>]/`.
+
+### Obchod a nároky (../PACK_FORMAT.md, katalog schema 2)
+
+- `CatalogRepository` (`lib/shop/catalog_repository.dart`): `catalog.json` z GitHub Pages
+  (`WEBTOON_CATALOG_URL`, pak `base_urls.pages` z cache), poslední dobrá kopie v
+  `<app support>/catalog.json`; novější verze se bere při startu, když je síť. Čte schema 1 i 2.
+- `StoreGateway` (`lib/shop/store_gateway.dart`): jediné místo, které mluví s App Store / Google Play
+  (`in_app_purchase`, non-consumable). `--dart-define=WEBTOON_FAKE_IAP=true` → `FakeStoreGateway`
+  (nákupy hned projdou, ceny podle tierů).
+- `Entitlements` (`lib/shop/entitlements.dart`): vlastněné product id + účtenky (SharedPreferences);
+  balíček je odemčený, když je zdarma, když vlastníš `pack_<type>_<n>`, nebo bundle nad jeho typem —
+  i balíčky přidané do katalogu po nákupu. `gamebook_<id>` / `kit_<id>` jen jako nárok (čtečka
+  gamebooků je stub, `lib/gamebook/gamebook.dart`). Účtenky se zatím na serveru neověřují (TODO).
+- `PackDownloader` (`lib/shop/pack_downloader.dart`): jen odemčené balíčky; každá část do
+  `<app support>/downloads/*.part`, pokračuje přes HTTP `Range`, sha256 z katalogu, pak
+  `PackStore.installFromFile`. Nákup balíčku ho rovnou stáhne; bundle a „Obnovit nákupy“ ne.
+- Profil a brána: `lib/profile/` (`reader_profile.dart`, `parental_gate.dart` — násobilka 3–9 ×
+  3–9 před každým nákupem a před přepnutím na Dospělí). Texty obchodu, profilu a brány jsou ve všech
+  12 jazycích čtečky (`lib/i18n/ui_strings.dart`) a řídí se jazykem bublin; zbytek UI je zatím česky.
 
 `assets/packs/starter.zip` vyrábí `webtoon export-pack -starter …` (backend). Bez něj je v repu jen
 zástupný prázdný balíček (`version: 0`, žádné příběhy) — appka naběhne s prázdnou knihovnou a jakýkoli
@@ -63,6 +86,8 @@ flutter run -d macos \
 | `WEBTOON_API` | `http://localhost:8095` | URL backendu (výchozí `LISTEN_ADDR` backendu je `:8095`); jen Studio |
 | `WEBTOON_USER` | `player` | posílá se jako `X-User-ID` (auth je zatím stub); jen Studio |
 | `WEBTOON_OPEN_CAMPAIGN` | – | jen pro vývoj: po startu rovnou otevře čtečku kampaně `cp_…` |
+| `WEBTOON_FAKE_IAP` | `false` | `true` = falešný obchod (`FakeStoreGateway`), bez App Store / Play |
+| `WEBTOON_CATALOG_URL` | `https://lioilsources.github.io/webtoon-content/catalog.json` | katalog obchodu (staging kopie) |
 
 Přepínač je v `apiProvider` (`lib/providers/providers.dart`): `WEBTOON_STUDIO=true` → `HttpWebtoonApi`,
 jinak `LocalWebtoonApi` nad `PackStore`. UI se pak neřídí flagem, ale `WebtoonApi.canEdit`
@@ -104,6 +129,16 @@ flutter test
   autorské záložky, klepnutí → čtečka na 1. dílu), splash při rozbalování, konec dílu offline
   (zvolená volba zvýrazněná, ostatní neklikací, „Další díl“, „Konec“ + další příběh), žádná
   editace bublin, Nastavení (jazyk, úložiště, „Obnovit starter“).
+- `test/catalog_test.dart`: katalog schema 1 i 2 (typy, části z releases / r2 / `url`, bundly,
+  gamebooky, product id), `CatalogRepository` (cache, starší verze nepřepíše novější, offline).
+- `test/entitlements_test.dart`: produkt → balíčky, bundle nad typem pokryje i budoucí balíčky,
+  `bundle_all`, gamebook/kit, perzistence účtenek.
+- `test/pack_downloader_test.dart`: `PackDownloader` proti lokálnímu HTTP serveru: celé stažení,
+  přerušené spojení → pokračování přes `Range`, špatný sha256, bez nároku žádný požadavek.
+- `test/store_screen_test.dart`: volba profilu při prvním startu, brána (špatně / zrušit / správně),
+  Děti filtrují Knihovnu i Obchod, ceny / Zdarma, nákup → brána → účtenka → stažení, průběh,
+  vlastněný bundle, nákup bundlu nic nestahuje, smazání, detail balíčku, offline, Obnovit nákupy,
+  anglické UI. Vše nad `FakeStoreGateway` + `FakeInstaller` (`test/shop_fakes.dart`).
 - `test/author_test.dart`: autor nad `FakeWebtoonApi`: Tvořit + nový svět, uložení základu/stylu/práv
   (PATCH tělo), pravidla/frakce/kánon (přeřazení, id uzlů zůstávají)/mantinely, generování tagů a úprava
   čipů (smazat, vrátit vyřazený, přidat) → `tag_prompt`, LLM mimo rozvrh (503), character sheet
@@ -133,6 +168,12 @@ lib/
   packs/pack_store.dart        instalace balíčků (zip/asset, sha256, rozbalení v isolate do
                                <app support>/packs/<id>[-část]/), načtení pack.json do paměti,
                                přepis cest médií na absolutní, starter podle verze
+  shop/                        catalog (schema 1+2), catalog_repository (cache + refresh), store_gateway
+                               (in_app_purchase / fake), entitlements, pack_downloader (Range, sha256),
+                               shop_controller (stav obchodu + providery)
+  profile/                     reader_profile (Děti/Dospělí, filtr publika), parental_gate
+  gamebook/gamebook.dart       STUB: gamebooky (formát + čtečka později)
+  i18n/ui_strings.dart         texty obchodu/profilu/brány ve 12 jazycích
   packs/pack_bootstrap.dart    stav startu (načítání / rozbalování k/n / hotovo / chyba) pro splash
   models/                      world (+ kánon, frakce, reference, ip_adapter), campaign, episode,
                                author (style presety, návrh tagů, character sheet, stats); lenient JSON
@@ -147,7 +188,8 @@ lib/
     bubble_edit_dialog.dart    úprava textu bubliny (dlouhý stisk)
     local_episode_end.dart     Reader: zaznamenaná volba + „Další díl“; „Konec“ + další příběh
   screens/                     worlds, world_detail (+ výběr postavy, „Upravit“ pro autora), campaigns, reader,
-                               library (Knihovna), settings (Nastavení), pack_splash
+                               library (Knihovna), store (Obchod + detail balíčku), profile_chooser,
+                               settings (Nastavení), pack_splash
   author/
     create_screen.dart         záložka Tvořit: moje světy, dialog „Nový svět“ (název + styl)
     world_editor_screen.dart   editor světa: Základ / Lore & kánon / Postavy / Lokace / Přehled, výběr stylu
@@ -224,6 +266,8 @@ test/fixtures/pack.json        fixture balíček pro testy (1 svět, 2 příběh
 
 ## Co chybí
 
+- Čtečka gamebooků (`gamebook_<id>` / `kit_<id>` mají jen katalog a nárok), ověření účtenek na serveru.
+- Katalog se obnovuje jen při startu a tažením dolů v Obchodě, ne po návratu do appky.
 - Push notifikace (jen rozhraní `PushNotifications`), export dílu (PNG/PDF/share), kredity jako zůstatek.
 - Tvorba vlastní postavy (`can_create_character`) při startu kampaně — zatím jen výběr hratelných postav.
 - Autor: náhledy style presetů závisí na `preview_url` z backendu; nastavení `identity_asset` (LoRA) a

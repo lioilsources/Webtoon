@@ -2,13 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../i18n/languages.dart';
+import '../i18n/ui_strings.dart';
 import '../packs/pack_store.dart';
+import '../profile/reader_profile.dart';
 import '../providers/language_provider.dart';
 import '../providers/providers.dart';
+import '../shop/shop_controller.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import 'profile_chooser_screen.dart';
 
-/// Reader mode: bubble language, storage used by packs, "Obnovit starter".
+/// Reader mode: bubble language, reader profile, purchases (Obnovit nákupy), storage used by
+/// packs, "Obnovit starter".
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
 
@@ -18,6 +23,9 @@ class SettingsScreen extends ConsumerWidget {
     final lang = ref.watch(readerLanguageProvider);
     final store = ref.watch(packStoreProvider);
     final boot = ref.watch(packBootstrapProvider);
+    final ui = ref.watch(uiLanguageProvider);
+    final profile = ref.watch(readerProfileProvider).profile;
+    final kids = profile == ReaderProfile.kids;
     return Scaffold(
       appBar: AppBar(title: const Text('Nastavení')),
       body: ListView(
@@ -119,9 +127,74 @@ class SettingsScreen extends ConsumerWidget {
             'Znovu rozbalí příběhy přibalené v aplikaci. Stažené balíčky zůstanou.',
             style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
           ),
+          const SizedBox(height: 28),
+          Text(
+            tr(ui, 'settings.profile'),
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(height: 10),
+          ComicCard(
+            child: Row(
+              children: [
+                Icon(kids ? Icons.child_care_rounded : Icons.person_rounded),
+                const SizedBox(width: 10),
+                Expanded(
+                  child: Text(
+                    tr(ui, kids ? 'profile.kids' : 'profile.adults'),
+                    key: const ValueKey('settings-profile'),
+                    style: ComicFonts.ui(800),
+                  ),
+                ),
+                TextButton(
+                  key: const ValueKey('settings-switch-profile'),
+                  onPressed: () => chooseProfile(
+                    context,
+                    ref,
+                    kids ? ReaderProfile.adults : ReaderProfile.kids,
+                  ),
+                  child: Text(
+                    tr(ui, kids ? 'settings.toAdults' : 'settings.toKids'),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 28),
+          Text(
+            tr(ui, 'settings.purchases'),
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
+          const SizedBox(height: 10),
+          OutlinedButton.icon(
+            key: const ValueKey('restore-purchases'),
+            onPressed: () => _restore(context, ref, ui),
+            icon: const Icon(Icons.restore_page_outlined),
+            label: Text(tr(ui, 'settings.restore')),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            tr(ui, 'settings.restoreHint'),
+            style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
+          ),
         ],
       ),
     );
+  }
+
+  Future<void> _restore(BuildContext context, WidgetRef ref, String ui) async {
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    try {
+      await ref.read(shopProvider.notifier).restore();
+      messenger?.showSnackBar(
+        SnackBar(content: Text(tr(ui, 'settings.restored'))),
+      );
+    } catch (e) {
+      messenger?.showSnackBar(
+        SnackBar(
+          content: Text(tr(ui, 'settings.restoreFailed', {'error': '$e'})),
+        ),
+      );
+    }
   }
 
   Future<void> _reinstall(BuildContext context, WidgetRef ref) async {
