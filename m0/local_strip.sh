@@ -10,6 +10,7 @@
 #   m0/local_strip.sh -c scenar.md                                      # reference sheet per character (IP-Adapter)
 #   m0/local_strip.sh -a kids scenar.md                                 # kids adventure: adapt --audience kids, style clean_webtoon_noartist
 #   m0/local_strip.sh -P superhero scenar.md                            # a profile (rules/profiles): harlequin|kids|free|superhero
+#   m0/local_strip.sh -I -p render lx_k2_01_x__pixar_3d ...             # ids of existing data/stories/<id> (m0/restyle.sh)
 #
 # Gates instead of the clock: LLM phases wait until a 1-token chat to openclaw-default answers; ComfyUI phases wait
 # until ComfyUI answers AND the LLM does not (never both at once). Render stops at WEBTOON_DEADLINE (default 13:00).
@@ -25,10 +26,10 @@ LLM=${WEBTOON_LLM:-http://192.168.88.66:8080/v1}; MODEL=${WEBTOON_LLM_MODEL:-ope
 COMFY=${WEBTOON_COMFY:-http://192.168.88.66:8188}
 # the CLI build; /tmp/claude-501/webtoon is also the running `webtoon serve`, never overwrite that one
 if [ -x /tmp/claude-501/webtoon-cli ]; then BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon-cli}; else BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon}; fi
-STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=; PROFILE=
-while getopts "s:p:a:P:frc" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; P) PROFILE=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; *) exit 2 ;; esac; done
+STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=; PROFILE=; BYID=
+while getopts "s:p:a:P:frcI" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; P) PROFILE=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; I) BYID=1 ;; *) exit 2 ;; esac; done
 shift $((OPTIND - 1))
-[ $# -eq 0 ] && { sed -n 2,18p "$0"; exit 2; }
+[ $# -eq 0 ] && { sed -n 2,19p "$0"; exit 2; }
 # the profile: -P, else today's flags (-f → free, -a kids → kids, otherwise harlequin); -f / -a follow a -P
 if [ -z "$PROFILE" ]; then if [ -n "$FREE" ]; then PROFILE=free; elif [ "$AUD" = kids ]; then PROFILE=kids; else PROFILE=harlequin; fi; fi
 prof() { python3 m0/rules.py get "$PROFILE:$1"; }    # rules/base merged with rules/profiles/$PROFILE.yaml
@@ -49,8 +50,15 @@ wait_llm() { until llm_up; do echo "$(date +%H:%M) čekám na LLM"; sleep "$WAIT
 wait_comfy() { until comfy_up && ! llm_up; do echo "$(date +%H:%M) čekám na ComfyUI (a vypnuté LLM)"; sleep "$WAIT"; done; }
 
 # "path/scenar.md[:style]" → id lx_<slug> (lxf_<slug> with -f)
+# -I: the arguments are ids of existing story dirs (data/stories/<id> with world.json + storyboard.json, e.g. made
+# by m0/restyle.sh); the style is the world's style_id, the write phase has nothing to do.
 ids=(); srcs=(); styles=()
 for a in "$@"; do
+  if [ -n "$BYID" ]; then
+    [ -f "data/stories/$a/storyboard.json" ] || { echo "!! data/stories/$a/storyboard.json neexistuje"; exit 2; }
+    ids+=("$a"); srcs+=(""); styles+=("$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["style_id"])' "data/stories/$a/world.json")")
+    continue
+  fi
   f=${a%%:*}; st=$STYLE; [[ $a == *:* ]] && st=${a#*:}
   [ -f "$f" ] || { echo "!! $f neexistuje"; exit 2; }
   slug=$(python3 -c 'import re,sys,unicodedata as u; s=u.normalize("NFKD",sys.argv[1]).encode("ascii","ignore").decode().lower(); print(re.sub(r"[^a-z0-9]+","_",s).strip("_"))' "$(basename "${f%.*}")")
