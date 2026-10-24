@@ -17,23 +17,23 @@ from pathlib import Path
 
 import comfy
 import prompts
+import rules
 from common import DATA, OUT, load_json, save_json, split_tags, wd14_tag
 
-# Rating thresholds on WD14 output for audience-safe panels.
-UNSAFE = {"explicit": 0.2, "questionable": 0.3}
-UNSAFE_KIDS = {**UNSAFE, "sensitive": 0.5}  # same as backend wd14.Thresholds("kids")
-DESIGN_THRESHOLD = 0.35
-MAX_RESEED = 2
-ADULT_TAG_LIMITS = {"cleavage": 0.8, "large breasts": 0.8, "covered nipples": 0.3, "shirtless": 0.5, "underwear": 0.3, "bed": 0.7}
-# Free worlds (world.json "free": true, local_strip.sh -f) drop the rating check but never this one.
-AGE_TAG_LIMITS = {"child": 0.35, "loli": 0.35, "shota": 0.35, "aged down": 0.35, "flat chest": 0.5,
-                  "school uniform": 0.5, "serafuku": 0.5, "randoseru": 0.35, "kindergarten uniform": 0.35}
+# WD14 thresholds, reseeds and IP-Adapter defaults: rules/render.yaml (with the reasons).
+R = rules.load("render")
+UNSAFE = dict(R["unsafe"])
+UNSAFE_KIDS = {**UNSAFE, **R["unsafe_kids"]}
+DESIGN_THRESHOLD = R["design_threshold"]
+MAX_RESEED = R["max_reseed"]
+ADULT_TAG_LIMITS = dict(R["adult_tag_limits"])
+AGE_TAG_LIMITS = dict(R["age_tag_limits"])  # free worlds: never dropped
+IP = R["ip_adapter"]
 
 
 def sheet_panel(char):
     return {"shot": "sheet", "location_id": None, "characters": [{"id": char["id"]}],
-            "visual_tags": ["standing", "full body", "looking at viewer", "smile", "white background",
-                            "simple background", "straight-on", "arms at sides"]}
+            "visual_tags": list(R["sheet_tags"])}
 
 
 def safety(tags, audience="teen", free=False):
@@ -77,8 +77,8 @@ def main():
                     help="render a reference sheet per character (ref_<id>.png), IP-Adapter it into every panel with that character. "
                          "Burns colours on NoobAI even at 0.35, rainbow noise with the strip masks (banff test 2026-10-21)")
     ap.add_argument("--ip-weight", type=float, default=None, help="default 0.6 with --ref, 0.5 with --char-refs")
-    ap.add_argument("--ip-preset", default="PLUS (high strength)", help='or "PLUS FACE (portraits)"')
-    ap.add_argument("--ip-end", type=float, default=0.8)
+    ap.add_argument("--ip-preset", default=IP["preset"], help='or "PLUS FACE (portraits)"')
+    ap.add_argument("--ip-end", type=float, default=IP["end"])
     ap.add_argument("--panels", default=None, help="comma separated panel indices")
     ap.add_argument("--regions", action="store_true", help="own prompt per character over its strip of the frame (two-shots)")
     ap.add_argument("--dry-run", action="store_true")
@@ -86,7 +86,7 @@ def main():
     args = ap.parse_args()
 
     if args.ip_weight is None:
-        args.ip_weight = 0.5 if args.char_refs else 0.6  # a white-background sheet at full strength also drags its pose and backdrop in
+        args.ip_weight = IP["weight_char_refs"] if args.char_refs else IP["weight_ref"]  # a white-background sheet at full strength also drags its pose and backdrop in
     world = load_json(args.world)
     styles = load_json(DATA / "styles.json")
     char = next(c for c in world["characters"] if args.character in (None, c["id"]))

@@ -18,17 +18,18 @@ import time
 from pathlib import Path
 
 import comfy
+import rules
 from common import OUT, load_json, save_json, wd14_tag
 from render import MAX_RESEED, safety
 
-FPS = 16
-MAX_ANIMATED = 2  # one loop costs about 11 stills (PLAN-motion-panels §3)
-# Video is rendered at ~0.34 Mpx and upscaled in the strip; HD costs 5x (video-stack phase3 bench).
-SIZE = {"portrait": (480, 704), "landscape": (704, 480)}
-NEGATIVE = ("blurry, static, low quality, watermark, text, letters, extra limbs, extra fingers, morphing, deformed, "
-            "distorted face, flicker, jitter, camera shake, nsfw, nude, cleavage, underwear")
-NEGATIVE_FREE = NEGATIVE.replace("nsfw, nude, cleavage, underwear", "child, childlike face, aged down")
-STYLE_TAIL_TAGS = 4
+# Loop rules (fps, size, negatives, the per-story limit) with their reasons: rules/animate.yaml, rules/storyboard.yaml.
+R = rules.load("animate")
+FPS = R["fps"]
+MAX_ANIMATED = rules.get("storyboard.limits.max_animated")  # one loop costs about 11 stills (PLAN-motion-panels §3)
+SIZE = {k: tuple(v) for k, v in R["size"].items()}
+NEGATIVE = ", ".join(R["negative"]["common"] + R["negative"]["sfw"])
+NEGATIVE_FREE = ", ".join(R["negative"]["common"] + R["negative"]["free"])
+STYLE_TAIL_TAGS = R["style_tail_tags"]
 
 
 def frames(seconds):
@@ -80,7 +81,7 @@ def graph(start_image, motion, preset, width, height, length, seed, prefix, free
             "start_at_step": 2, "end_at_step": 4, "return_with_leftover_noise": "disable"}},
         "decode": {"class_type": "VAEDecode", "inputs": {"samples": ["sample_low", 0], "vae": ["vae", 0]}},
         "webp": {"class_type": "SaveAnimatedWEBP", "inputs": {
-            "images": ["decode", 0], "filename_prefix": prefix, "fps": float(FPS), "lossless": False, "quality": 80, "method": "default"}},
+            "images": ["decode", 0], "filename_prefix": prefix, "fps": float(FPS), "lossless": False, "quality": R["webp_quality"], "method": "default"}},
     }
     for name, idx in (("v0", 0), ("v1", length // 2), ("v2", length - 1)):
         g[f"pick_{name}"] = {"class_type": "ImageFromBatch", "inputs": {"image": ["decode", 0], "batch_index": idx, "length": 1}}
@@ -136,7 +137,7 @@ def main():
         if not still.exists():
             print(f"p{i:02d}: still {still.name} missing, render it first — skipped")
             continue
-        motion = panels[i].get("motion") or "subtle ambient motion, static camera"
+        motion = panels[i].get("motion") or R["default_motion"]
         w, h = size_for(still)
         jobs.append((i, still, motion, w, h, args.seed_base + i * 100))
 

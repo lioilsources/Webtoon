@@ -22,14 +22,17 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter
 
 import compose
+import rules
 from common import DATA, OUT, ROOT
 
-W, H, FPS = 1080, 1920, 30
-TOP = 200          # TikTok/Shorts top bar: no lettering above this
-FADE = 0.35        # crossfade between panels, seconds
-FONT_SCALE = 2.2   # compose.py letters for an 800 px strip; a phone frame wants them bigger
-END = {"cs": "Konec", "en": "The End", "de": "Ende", "fr": "Fin", "it": "Fine", "pl": "Koniec", "pt-BR": "Fim",
-       "ru": "Конец", "uk": "Кінець", "ja": "おわり", "ko": "끝", "vi": "Hết"}
+# Frame, timing and end texts with their reasons: rules/shorts.yaml.
+R = rules.load("shorts")
+W, H, FPS = R["frame"]["width"], R["frame"]["height"], R["frame"]["fps"]
+TOP = R["top"]                # TikTok/Shorts top bar: no lettering above this
+FADE = R["fade"]              # crossfade between panels, seconds
+FONT_SCALE = R["font_scale"]  # compose.py letters for an 800 px strip; a phone frame wants them bigger
+END = dict(R["end"]["texts"])
+DUR = R["panel_duration"]
 
 
 def slug(title):
@@ -55,7 +58,7 @@ def text_of(obj, key, lang):
 
 def bubbles_layer(bubbles, lang):
     """Transparent full-frame layer with the panel's bubbles, drawn by compose.draw_bubble."""
-    layer = Image.new("RGBA", (W, H - TOP - 380), (0, 0, 0, 0))  # bottom 380 px: caption and buttons
+    layer = Image.new("RGBA", (W, H - TOP - R["bottom"]), (0, 0, 0, 0))  # bottom: caption and buttons
     bs = [{**b, "text": (b.get("i18n") or {}).get(lang) or b["text"]} if lang != "cs" else b for b in bubbles]
     narr = [b for b in bs if b.get("kind") == "narration"]
     talk = [b for b in bs if b.get("kind") != "narration"]
@@ -99,7 +102,7 @@ class Segment:
 def panel_segment(p, media, lang):
     img = Image.open(media / p["image_url"].lstrip("/")).convert("RGB")
     words = sum(len(((b.get("i18n") or {}).get(lang) if lang != "cs" else None) or b["text"]) for b in p.get("bubbles") or [])
-    dur = min(6.0, max(2.5, 1.8 + 0.07 * words))
+    dur = min(DUR["max"], max(DUR["min"], DUR["base"] + DUR["per_char"] * words))
     layer = bubbles_layer(p.get("bubbles") or [], lang)
     landscape = img.width > img.height
     bg = blurred(img) if landscape else None
@@ -111,19 +114,19 @@ def panel_segment(p, media, lang):
             v.seek(i)
             f = v.convert("RGB")
             frames.append(on_blur(f, blurred(f)) if f.width > f.height else cover(f))
-        dur = max(dur, 4.0)  # at least two passes of a 2 s loop
+        dur = max(dur, R["loop"]["min_duration"])  # at least two passes of a 2 s loop
 
     def frame_at(t):
         if frames:
-            base = frames[int(t * 16) % len(frames)]  # Wan loops are 16 fps
+            base = frames[int(t * R["loop"]["fps"]) % len(frames)]  # Wan loops are 16 fps
         elif landscape:
-            z = 1 + 0.05 * t / dur
+            z = 1 + R["zoom"]["landscape"] * t / dur
             fg = img.resize((round(img.width * z), round(img.height * z)), Image.LANCZOS)
             fg = fg.crop(((fg.width - img.width) // 2, (fg.height - img.height) // 2,
                           (fg.width + img.width) // 2, (fg.height + img.height) // 2))
             base = on_blur(fg, bg)
         else:
-            base = cover(img, zoom=1 + 0.08 * t / dur)
+            base = cover(img, zoom=1 + R["zoom"]["portrait"] * t / dur)
         out = base.convert("RGBA")
         out.alpha_composite(layer)
         return out.convert("RGB")
@@ -131,7 +134,7 @@ def panel_segment(p, media, lang):
     return Segment(dur, frame_at)
 
 
-def card_segment(text, under, dur, size=96):
+def card_segment(text, under, dur, size=R["cards"]["title"]["size"]):
     bg = blurred(under)
     d = ImageDraw.Draw(bg)
     fnt = compose.font("narration", size)
@@ -160,7 +163,7 @@ def main():
                             'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -At -c "select c.world_id from episodes e '
                             f"join campaigns c on c.id=e.campaign_id where e.id='{args.episode}'\""],
                            capture_output=True, text=True).stdout.strip()
-    if world.startswith("w_lxf_"):
+    if world.startswith(rules.get("pack.forbidden_world_prefix")):
         raise SystemExit("free strips are never published")
     sb = DATA / "stories" / world.removeprefix("w_") / "storyboard.json"
     compose.FONT_SET = json.loads(sb.read_text()).get("fonts") if sb.exists() else "romance"
@@ -172,8 +175,9 @@ def main():
     first = Image.open(media / panels[0]["image_url"].lstrip("/")).convert("RGB")
     last = Image.open(media / panels[-1]["image_url"].lstrip("/")).convert("RGB")
     title = text_of(ep, "title", args.lang) or ep["title"]
-    segs = [card_segment(title, first, 1.8)] + [panel_segment(p, media, args.lang) for p in panels] \
-        + [card_segment(END.get(args.lang, "The End"), last, 2.0, size=120)]
+    C = R["cards"]
+    segs = [card_segment(title, first, C["title"]["duration"])] + [panel_segment(p, media, args.lang) for p in panels] \
+        + [card_segment(END.get(args.lang, R["end"]["default"]), last, C["end"]["duration"], size=C["end"]["size"])]
 
     out = Path(args.out or OUT / "shorts" / f"{world.removeprefix('w_')}-{slug(ep['title'])}_{args.lang}.mp4")
     out.parent.mkdir(parents=True, exist_ok=True)

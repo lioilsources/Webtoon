@@ -1,0 +1,29 @@
+# Safety and identity rules of m0/render.py (WD14 tagger over every drawn panel; animate.py reuses the safety check
+# on three frames of every loop). Mappings keep their order: a report lists the offending tags in this order.
+
+# WD14 rating thresholds for audience-safe panels: above any of them the panel is redrawn with a new seed.
+unsafe: {explicit: 0.2, questionable: 0.3}
+unsafe_kids: {sensitive: 0.5}   # added on top of `unsafe` for kids; same as backend wd14.Thresholds("kids")
+
+# adult (romance app): fashion is fine, a panel dominated by the neckline is not (general-tag confidence limits).
+adult_tag_limits: {cleavage: 0.8, large breasts: 0.8, covered nipples: 0.3, shirtless: 0.5, underwear: 0.3, bed: 0.7}
+
+# Free worlds (world.json "free": true, local_strip.sh -f) drop the rating check but never this one.
+age_tag_limits: {child: 0.35, loli: 0.35, shota: 0.35, aged down: 0.35, flat chest: 0.5, school uniform: 0.5,
+                 serafuku: 0.5, randoseru: 0.35, kindergarten uniform: 0.35}
+
+max_reseed: 2   # redraws after an unsafe panel; still unsafe → status "failed", local_strip.sh never imports the strip
+
+# Identity: recall of the character's in-frame design tags among WD14 tags at or above this confidence.
+design_threshold: 0.35
+
+# IP-Adapter (--ref / --char-refs). --char-refs burns colours on NoobAI even at 0.35, rainbow noise with the strip
+# masks (banff test 2026-10-21); see memory "IP-Adapter breaks NoobAI".
+ip_adapter:
+  weight_ref: 0.6         # --ref default
+  weight_char_refs: 0.5   # a white-background sheet at full strength also drags its pose and backdrop in
+  preset: PLUS (high strength)   # or "PLUS FACE (portraits)"
+  end: 0.8
+
+# Character reference sheet (render.py --sheet, --char-refs): the pose and backdrop tags.
+sheet_tags: [standing, full body, looking at viewer, smile, white background, simple background, straight-on, arms at sides]

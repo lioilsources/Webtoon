@@ -1,0 +1,23 @@
+# Timing and layout rules of m0/shorts.py (backend episode → 9:16 video for TikTok / YouTube Shorts).
+# Free strips are never published: the world prefix is rules/pack.yaml forbidden_world_prefix (shared with the packs).
+
+frame: {width: 1080, height: 1920, fps: 30}
+top: 200          # TikTok/Shorts top bar: no lettering above this
+bottom: 380       # caption and buttons: no lettering in the bottom 380 px
+fade: 0.35        # crossfade between panels, seconds
+font_scale: 2.2   # compose.py letters for an 800 px strip; a phone frame wants them bigger
+
+# Each panel stays up as long as its text takes to read: clamp(base + per_char × characters of its bubbles, min, max).
+panel_duration: {base: 1.8, per_char: 0.07, min: 2.5, max: 6.0}
+loop: {min_duration: 4.0, fps: 16}   # at least two passes of a 2 s loop; Wan loops are 16 fps
+zoom: {portrait: 0.08, landscape: 0.05}   # slow zoom over a panel's duration (portrait fills the frame)
+
+cards:
+  title: {duration: 1.8, size: 96}
+  end: {duration: 2.0, size: 120}
+
+# End card text by episode language; any other language gets `default`.
+end:
+  default: The End
+  texts: {cs: Konec, en: The End, de: Ende, fr: Fin, it: Fine, pl: Koniec, pt-BR: Fim, ru: Конец, uk: Кінець, ja: おわり,
+          ko: 끝, vi: Hết}

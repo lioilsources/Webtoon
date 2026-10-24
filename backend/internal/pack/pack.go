@@ -11,19 +11,14 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/db/dbq"
 )
 
+// Part size, WebP quality, cover size, the forbidden world prefix and the dropped episode fields are rules:
+// rules/pack.yaml (rules.go).
 const (
-	Schema   = 1  // pack.json / catalog.json schema
-	PartSize = 25 // stories per zip; a bigger pack is split into parts a, b, c…
-
-	coverWidth, coverHeight = 416, 608
-	webpQuality             = "85"
+	Schema = 1 // pack.json / catalog.json schema
 
 	// DefaultBaseURL is where the app downloads catalog.json and the zips from.
 	DefaultBaseURL = "https://lioilsources.github.io/webtoon-content/"
 )
-
-// forbiddenWorldPrefix: free strips are never published, whatever the selection says.
-const forbiddenWorldPrefix = "w_lxf_"
 
 var packIDRe = regexp.MustCompile(`^[a-z0-9-]+$`)
 

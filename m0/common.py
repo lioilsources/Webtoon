@@ -1,7 +1,7 @@
 """Shared helpers for the M0 spike: config, HTTP, LLM client, booru tag handling.
 
-Stdlib + Pillow only. Endpoints default to the Spark LAN addresses and can be
-overridden via env (WEBTOON_LLM, WEBTOON_COMFY, WEBTOON_WD14).
+Stdlib + Pillow + PyYAML (m0/requirements.txt; the rules live in rules/*.yaml, read by m0/rules.py).
+Endpoints default to the Spark LAN addresses and can be overridden via env (WEBTOON_LLM, WEBTOON_COMFY, WEBTOON_WD14).
 """
 
 import json

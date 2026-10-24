@@ -46,7 +46,7 @@ func TestEpisodeShape(t *testing.T) {
 	got := roundTrip(t, parts[0].Manifest.Episodes[0])
 
 	api := roundTrip(t, episodejson.EpisodeJSON(e.Row, e.Panels, w.Language, func(rel string) string { return "/media/" + rel }))
-	for _, k := range droppedEpisodeFields {
+	for _, k := range rule().DroppedEpisodeFields {
 		if _, ok := api[k]; !ok {
 			t.Fatalf("API shape lost %q; update PACK_FORMAT.md and droppedEpisodeFields", k)
 		}

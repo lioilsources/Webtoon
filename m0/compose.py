@@ -13,29 +13,29 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
+import rules
 from common import ROOT, load_json
 
-WIDTH = 800
-GAPS = {"small": 40, "medium": 140, "large": 320}
-FONTS = ROOT / "assets" / "fonts"
-BG = (255, 255, 255)
-INK = (20, 20, 24)
-
+# Layout rules (gaps, font sets, bubble sizing) with their reasons: rules/compose.yaml.
+R = rules.load("compose")
+WIDTH = R["width"]
+GAPS = dict(R["gaps"])
+FONTS = ROOT / R["fonts"]["default"]["dir"]
+BG = tuple(R["bg"])
+INK = tuple(R["ink"])
+B = R["bubble"]
 
 # Grown-up lettering for the romance stories (storyboard "fonts": "romance"); macOS system fonts, M0 is local.
-# Gill Sans on macOS lacks ě č ř ů ť ď ň, so speech uses Avenir Next (full Czech coverage).
-SYSTEM_FONTS = Path("/System/Library/Fonts")
-ROMANCE = {"speech": ("Avenir Next.ttc", 2), "thought": ("Avenir Next.ttc", 6), "shout": ("Supplemental/Futura.ttc", 2),
-           "narration": ("Supplemental/Baskerville.ttc", 2), "sfx": ("Supplemental/Futura.ttc", 4), "ui": ("Avenir Next.ttc", 5)}
+SYSTEM_FONTS = Path(R["fonts"]["romance"]["dir"])
+ROMANCE = {k: tuple(v) for k, v in R["fonts"]["romance"]["faces"].items()}
+DEFAULT_FACES = {k: (name, weight.encode()) for k, (name, weight) in R["fonts"]["default"]["faces"].items()}
 FONT_SET = None
 
 
 def font(kind, size):
     if FONT_SET == "romance" and (SYSTEM_FONTS / ROMANCE[kind][0]).exists():
         return ImageFont.truetype(str(SYSTEM_FONTS / ROMANCE[kind][0]), size, index=ROMANCE[kind][1])
-    name, weight = {"speech": ("Nunito-Variable.ttf", b"Bold"), "thought": ("Nunito-Italic-Variable.ttf", b"SemiBold"),
-                    "shout": ("DynaPuff-Variable.ttf", b"Bold"), "narration": ("Baloo2-Variable.ttf", b"Medium"),
-                    "sfx": ("DynaPuff-Variable.ttf", b"Bold"), "ui": ("Nunito-Variable.ttf", b"SemiBold")}[kind]
+    name, weight = DEFAULT_FACES[kind]
     f = ImageFont.truetype(str(FONTS / name), size)
     try:
         f.set_variation_by_name(weight)
@@ -62,13 +62,13 @@ def draw_bubble(img, bubble, slot, n_slots):
     d = ImageDraw.Draw(img)
     W, H = img.size
     kind = bubble.get("kind", "speech")
-    fnt = font(kind, 26 if kind != "shout" else 30)
-    max_w = int(W * (0.62 if kind != "narration" else 0.8))
-    lines = wrap(d, bubble["text"], fnt, max_w - 40)
-    lh = int(fnt.size * 1.25)
+    fnt = font(kind, B["font_size"] if kind != "shout" else B["shout_font_size"])
+    max_w = int(W * (B["max_width"] if kind != "narration" else B["narration_max_width"]))
+    lines = wrap(d, bubble["text"], fnt, max_w - B["text_inset"])
+    lh = int(fnt.size * B["line_height"])
     tw = max(d.textlength(l, font=fnt) for l in lines)
-    bw, bh = int(tw) + 44, lh * len(lines) + 30
-    margin = 22
+    bw, bh = int(tw) + B["pad"][0], lh * len(lines) + B["pad"][1]
+    margin = B["margin"]
     if kind == "narration":
         x, y = margin, margin + slot * (bh + 12)
     else:
@@ -83,7 +83,7 @@ def draw_bubble(img, bubble, slot, n_slots):
     box = (x, y, x + bw, y + bh)
 
     if kind == "narration":
-        d.rectangle(box, fill=(255, 248, 225), outline=INK, width=3)
+        d.rectangle(box, fill=tuple(B["narration_fill"]), outline=INK, width=3)
     else:
         cx, cy = x + bw / 2, y + bh
         tx, ty = cx + (40 if cx < W / 2 else -40), min(H - 20, y + bh + 48)
@@ -107,23 +107,24 @@ def draw_bubble(img, bubble, slot, n_slots):
 def draw_sfx(img, sfx, i):
     d = ImageDraw.Draw(img)
     W, H = img.size
-    fnt = font("sfx", 64)
+    fnt = font("sfx", R["sfx"]["size"])
     x, y = int(W * (0.55 if i % 2 == 0 else 0.1)), int(H * 0.68)
-    d.text((x, y), sfx["text"], font=fnt, fill=(255, 220, 60), stroke_width=6, stroke_fill=INK)
+    d.text((x, y), sfx["text"], font=fnt, fill=tuple(R["sfx"]["fill"]), stroke_width=R["sfx"]["stroke"], stroke_fill=INK)
 
 
 def end_block():
     img = Image.new("RGB", (WIDTH, 200), (245, 243, 250))
     d = ImageDraw.Draw(img)
     fnt = font("narration", 48)
-    d.text(((WIDTH - d.textlength("Konec", font=fnt)) / 2, 70), "Konec", font=fnt, fill=INK)
+    end = R["texts"]["end"]
+    d.text(((WIDTH - d.textlength(end, font=fnt)) / 2, 70), end, font=fnt, fill=INK)
     return img
 
 
 def choices_block(choices, title):
     img = Image.new("RGB", (WIDTH, 120 + 110 * len(choices)), (245, 243, 250))
     d = ImageDraw.Draw(img)
-    d.text((40, 40), "Co udělá dál?", font=font("narration", 40), fill=INK)
+    d.text((40, 40), R["texts"]["choices"], font=font("narration", 40), fill=INK)
     for i, c in enumerate(choices):
         y = 120 + i * 110
         free = c.get("kind") == "free"
@@ -160,13 +161,14 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
             draw_bubble(img, b, k + (1 if narr else 0), len(talk))
         for k, s in enumerate(p.get("sfx", [])):
             draw_sfx(img, s, k)
-        parts.append((img, GAPS.get(p.get("gap_after"), 140)))
+        parts.append((img, GAPS.get(p.get("gap_after"), R["default_gap"])))
 
-    tf = font("narration", 54)
+    tf = font("narration", R["title"]["size"])
     tlines = wrap(ImageDraw.Draw(Image.new("RGB", (1, 1))), sb["title"], tf, WIDTH - 80)
-    title = Image.new("RGB", (WIDTH, 100 + 66 * len(tlines)), BG)
+    tl = R["title"]["line"]
+    title = Image.new("RGB", (WIDTH, 100 + tl * len(tlines)), BG)
     for k, line in enumerate(tlines):
-        ImageDraw.Draw(title).text((40, 50 + 66 * k), line, font=tf, fill=INK)
+        ImageDraw.Draw(title).text((40, 50 + tl * k), line, font=tf, fill=INK)
     end = choices_block(sb["choices"], sb["title"]) if sb.get("choices") else end_block()
     total = title.height + sum(im.height + g for im, g in parts) + end.height
     strip = Image.new("RGB", (WIDTH, total), BG)

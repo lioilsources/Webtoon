@@ -1,0 +1,270 @@
+# Storyboard rules: what m0/adapt.py check() / missing_fields() demand of the LLM's lean story JSON
+# (skills/storyboard-writer/schema/story(.kids).schema.json), what to_m0() adds on the way to world.json +
+# storyboard.json, and which prompt / schema / example each audience gets.
+#
+# Audiences (rules.mode): adult = the SFW romance app; free = local_strip.sh -f, an experiment outside the app
+# (every SFW fence lifted, adults-only kept); kids = adventure strips for 6–12 (adapt.py --audience kids).
+# The condition language of `checks` is documented in m0/rules.py (Engine).
+
+# --- vocabulary -----------------------------------------------------------------------------------
+shots: [establishing, wide, medium, close-up, over-shoulder]
+bubble_kinds: [speech, thought, shout, narration]
+gaps: [small, medium, large]
+human_kinds: [child, adult]   # kids stories also have creature / robot / spirit companions
+default_kind: adult           # a character without `kind` (adult stories) is an adult
+
+limits:
+  max_animated: 2      # one Wan loop costs about 11 stills (PLAN-motion-panels §3); animate.py and pick_motion obey it too
+  max_humans_kids: 2   # NoobAI draws at most two humans per panel; the rest are companions
+  tag_words: 6         # real booru tags run to ~6 words ("taking off her earrings gently"); longer is a sentence
+
+# `photo` must say "aged N"; the allowed N by kind (creatures, robots and spirits state no age).
+age_by_kind:
+  child: {regex: '\baged ([6-9]|1[0-3])\b', range: '6 <= N <= 13'}
+  adult: {regex: '\baged (2[3-9]|[3-9]\d)\b', range: 'N >= 23'}
+
+regex:
+  # Code-side SFW fence: these never appear in tags, outfits or photo sentences, whatever the model says.
+  banned:
+    ignorecase: true
+    words:
+      - ['nude', 'naked', 'lingerie', 'underwear', 'bra', 'panties', 'bikini', 'swimsuit', 'swimwear', 'shirtless',
+         'topless', 'cleavage', 'see-through', 'wet shirt', 'crop top', 'midriff', 'breasts?', 'large breasts']
+      - ['short stature', 'loli', 'child', 'teen(ager)?']              # never a childlike body
+      - ['bed', 'lying', 'undress\w*', 'unzip\w*', 'open shirt']       # no bedroom scenes
+      - ['versace', 'chanel', 'prada', 'gucci', 'calvin klein', 'victoria''?s secret', 'dkny', 'armani', 'balenciaga',
+         'louboutin', 'dior', 'hermès', 'hermes', 'cartier', 'rolex']  # no brands
+  # --free swaps `banned` for this fence alone: every character stays an adult, whatever else is lifted.
+  # Czech forms too, because bubbles are Czech.
+  age_banned:
+    ignorecase: true
+    words:
+      - ['child(ren|like)?', 'kids?', 'loli\w*', 'shota\w*', 'teen(age|ager|s)?', 'minor', 'underage', 'school ?girl',
+         'school ?boy', 'school uniform', 'serafuku', 'aged down', 'flat chest', 'short stature', 'petite', 'little girl',
+         'little boy', 'young girl', 'young boy', 'toddler', 'baby face', 'randoseru']
+      - ['d[ií]t[eě]', 'd[eě]ti', 'd[eě]tsk\w*', 'holčičk\w*', 'chlapeč\w*', 'školačk\w*', 'školák\w*', 'nezletil\w*',
+         'puberť\w*']
+  # --audience kids: the SFW fence minus `child` (the design anchor is "female child") ...
+  kids_sfw: {from: banned, drop: [child]}
+  # ... plus no violence or romance at all, checked on tags, bubbles, motion and character fields; Czech forms for the bubbles.
+  kids_banned:
+    ignorecase: true
+    words:
+      - ['blood\w*', 'gore', 'gory', 'wound\w*', 'injur\w*', 'corpse', 'dead body', 'dead', 'death', 'dying', 'die',
+         'kill\w*', 'murder\w*', 'stab\w*', 'kiss\w*', 'lingerie', 'cleavage', 'sexy', 'seductive', 'nipples?',
+         'cigarette', 'smoking', 'beer', 'wine', 'alcohol']
+      - ['krev', 'krv\w*', 'krvác\w*', 'mrtv\w*', 'smrt\w*', 'zabij\w*', 'zabít', 'zabil\w*', 'zavražd\w*', 'polib\w*',
+         'líbat', 'líbá\w*', 'zranění', 'zraněn\w*']
+  never: '(?!)'   # matches nothing: the kids fence outside kids stories
+  child_base: '(female|male) child, '          # anchored (re.match): the count/age anchor leads the prompt
+  adult_base: 'adult, mature (fe)?male, '
+  human_words: '\b(1?girls?|1?boys?|wom[ae]n|m[ae]n|(fe)?male|child(ren)?|humans?|person|people)\b'
+  photo_clothing: {pattern: '\b(wearing|dress|shirt|coat|suit|jacket|trousers|heels|boots)\b', ignorecase: true}
+  adult_age: '\baged (2[3-9]|[3-9]\d)\b'
+  # Wan cannot keep two bodies apart: actions that touch or undress never go into a motion prompt.
+  motion_actions: {pattern: '\b(kiss|undress|unbutton|remov\w+)\b', ignorecase: true}
+  ambient_motion: {pattern: '\b(ambient|only|static)\b', ignorecase: true}
+  # pick_motion (motion for an already rendered story) says kiss\w* where check() says kiss
+  pick_motion_actions: {pattern: '\b(kiss\w*|undress|unbutton|remov\w+)\b', ignorecase: true}
+
+# Which fence each audience reads through the aliases `fence` and `kids_fence`.
+audiences:
+  adult: {fence: banned, kids_fence: never}
+  free: {fence: age_banned, kids_fence: never}
+  kids: {fence: kids_sfw, kids_fence: kids_banned}
+
+# --- missing_fields(): required keys of story(.kids).schema.json, checked by hand (no jsonschema dependency) ---
+required:
+  story: [id, title, synopsis, ending, characters, locations, panels]
+  character: [id, name, gender, base, outfits, photo]
+  character_kids: [id, name, kind, gender, base, outfits, photo]
+  outfit: default
+  location: [id, name, tag_prompt]
+  panel: [shot, location_id, characters, visual_tags, bubbles, sfx, gap_after]
+  bubble: [speaker_id, text, kind]
+  messages:
+    story: "missing field '{k}'"
+    character: "character {id}: missing field '{k}'"
+    outfit: "character {id}: outfits need a '{k}'"
+    location: "location {id}: missing field '{k}'"
+    panel: "panel {i}: missing field '{k}'"
+    bubble: "panel {i}: bubble missing '{k}'"
+
+# --- check(): the rules the schema cannot express, in the order they report -------------------------
+checks:
+  - scope: character
+    rules:
+      - scope: character_field   # base, photo and every outfit
+        rules:
+          - id: char_banned_term
+            if: {search: {regex: [fence, kids_fence], in: $value}}
+            message: "character {c[id]}: banned term '{m}' in '{value:.50}'"
+      - id: free_base_adult
+        audiences: [free]   # the age anchor: without it NoobAI drifts young once the SFW fence is gone
+        if: {not: {all: [{contains: [$base_tags, adult]}, {intersects: [$base_tags, [mature female, mature male]]}]}}
+        message: "character {c[id]}: base must contain 'adult' and 'mature female' or 'mature male'"
+      - id: kids_child_base
+        audiences: [kids]   # the count/age anchor leads the prompt
+        if: {all: [{eq: [$kind, child]}, {not: {match: {regex: child_base, in: $c.base}}}]}
+        message: "character {c[id]}: child base must start with 'female child, ' or 'male child, '"
+      - id: kids_adult_base
+        audiences: [kids]
+        if: {all: [{eq: [$kind, adult]}, {not: {match: {regex: adult_base, in: $c.base}}}]}
+        message: "character {c[id]}: adult base must start with 'adult, mature female, ' or 'adult, mature male, '"
+      - id: kids_nonhuman_words
+        audiences: [kids]   # a human word turns the dog into a dog-eared kid
+        if: {all: [{not_in: [$kind, $human_kinds]}, {search: {regex: human_words, in: $base_photo}}]}
+        message: "character {c[id]}: {kind} must not use human words ('{m}')"
+      - id: kids_human_gender
+        audiences: [kids]   # count tag 1girl / 1boy comes from it
+        if: {all: [{in: [$kind, $human_kinds]}, {not_in: [$c.gender, [f, m]]}]}
+        message: "character {c[id]}: {kind} gender must be 'f' or 'm'"
+      - id: photo_no_clothing
+        # the photo sentence is the identity; clothes belong to outfits (they change per panel)
+        if: {search: {regex: photo_clothing, in: $c.photo}}
+        message: "character {c[id]}: photo sentence must not describe clothing"
+      - id: photo_adult_age
+        audiences: [adult, free]
+        if: {not: {search: {regex: adult_age, in: $c.photo}}}
+        message: "character {c[id]}: photo must state 'aged N' with N >= 23"
+      - id: kids_photo_age
+        audiences: [kids]
+        if: {all: [{truthy: $age}, {not: {search: {regex: $age.regex, in: $c.photo}}}]}
+        message: "character {c[id]}: {kind} photo must state 'aged N' with {age[range]}"
+
+  - scope: story
+    rules:
+      - id: first_panel_establishing
+        if: {any: [{ne: [$story.panels.0.shot, establishing]}, {truthy: $story.panels.0.characters}]}
+        message: "panel 0 must be an establishing shot without characters"
+      - id: last_panel_gap
+        if: {ne: [$story.panels.-1.gap_after, large]}
+        message: "last panel must have gap_after 'large'"
+      - id: max_animated
+        if: {gt: [$n_animated, $limits.max_animated]}
+        message: "at most {limits[max_animated]} animated panels per story, got {n_animated}: {animated}"
+
+  - scope: panel
+    rules:
+      - id: motion_required
+        if: {all: [{truthy: '$p.animate?'}, {falsy: '$p.motion?'}]}
+        message: "panel {i}: animate=true needs a motion prompt"
+      - id: motion_banned
+        audiences: [adult, kids]
+        if: {all: [{truthy: '$p.animate?'}, {truthy: '$p.motion?'},
+                   {search: {regex: [age_banned, kids_fence, fence, motion_actions], in: $p.motion}}]}
+        message: "panel {i}: motion prompt contains a banned action"
+      - id: motion_banned_free
+        audiences: [free]   # free lifts the SFW actions, never the age fence
+        if: {all: [{truthy: '$p.animate?'}, {truthy: '$p.motion?'}, {search: {regex: [age_banned, kids_fence], in: $p.motion}}]}
+        message: "panel {i}: motion prompt contains a banned action"
+      - id: motion_two_people_ambient
+        # Wan merges two moving bodies; note $p.motion is strict: animate without a motion key in a 2+ panel raises
+        if: {all: [{truthy: '$p.animate?'}, {gt: [$p.characters|len, 1]}, {not: {search: {regex: ambient_motion, in: $p.motion}}}]}
+        message: "panel {i}: two people may only get ambient motion (say 'ambient only, static camera')"
+      - id: known_location
+        if: {not_in: [$p.location_id, $loc_ids]}
+        message: "panel {i}: unknown location {p[location_id]}"
+      - scope: panel_character
+        rules:
+          - id: known_character
+            if: {not_in: [$pc.id, $chars]}
+            message: "panel {i}: unknown character {pc[id]}"
+          - id: known_outfit
+            if: {all: [{in: [$pc.id, $chars]}, {truthy: '$pc.outfit?'}, {not_in: [$pc.outfit, $pc_char.outfits]}]}
+            message: "panel {i}: {pc[id]} has no outfit '{pc[outfit]}'"
+      - id: kids_max_humans
+        audiences: [kids]   # any genders together, but NoobAI draws at most two humans; the rest are companions
+        if: {gt: [$humans|len, $limits.max_humans_kids]}
+        message: "panel {i}: at most {limits[max_humans_kids]} humans (child/adult) per panel, got {humans}"
+      - id: kids_group_not_closeup
+        audiences: [kids]
+        if: {all: [{ge: [$ids|len, 2]}, {eq: [$p.shot, close-up]}]}
+        message: "panel {i}: a panel with 2+ characters is never a close-up (collage risk)"
+      - id: same_gender
+        audiences: [adult, free]   # two women or two men: SDXL swaps or merges their designs (and the app is hetero romance)
+        if: {all: [{eq: [$genders|len, 2]}, {eq: [$genders.0, $genders.1]}]}
+        message: "panel {i}: two characters of the same gender"
+      - id: couple_not_closeup
+        audiences: [adult, free]   # a couple is never a close-up (collage risk)
+        if: {all: [{eq: [$ids|len, 2]}, {eq: [$p.shot, close-up]}]}
+        message: "panel {i}: a couple is never a close-up (collage risk)"
+      - id: establishing_empty
+        if: {all: [{eq: [$p.shot, establishing]}, {truthy: $ids}]}
+        message: "panel {i}: establishing shot with characters"
+      - id: banned_tag
+        if: {search: {regex: [fence, kids_fence], in: $tags_text}}
+        message: "panel {i}: banned tag '{m}'"
+      - id: free_bubble_age
+        audiences: [free]   # free mode lifts the SFW fence on text too, never the age one
+        if: {search: {regex: age_banned, in: $bubble_text}}
+        message: "panel {i}: banned term '{m}' in a bubble"
+      - id: kids_bubble
+        audiences: [kids]   # no blood, death or kissing in the reader text either
+        if: {search: {regex: kids_fence, in: $bubble_text}}
+        message: "panel {i}: banned term '{m}' in a bubble (reword it without violence or romance)"
+      - scope: bubble
+        rules:
+          - id: narration_no_speaker
+            if: {all: [{eq: [$b.kind, narration]}, {truthy: $b.speaker_id}]}
+            message: "panel {i}: narration must have empty speaker_id"
+          - id: speaker_in_panel
+            if: {all: [{ne: [$b.kind, narration]}, {not_in: [$b.speaker_id, $ids]}]}
+            message: "panel {i}: speaker {b[speaker_id]} is not in the panel"
+      - id: tags_not_sentences
+        # only with a vocabulary (adapt passes WD14 + EXTRA_TAGS): a known tag may be long
+        if: {all: [{truthy: $world_tags}, {long_items: {in: $p.visual_tags, max_words: $limits.tag_words, except: $world_tags}}]}
+        message: "panel {i}: visual_tags look like sentences, not booru tags: {m}"
+
+# --- to_m0(): lean model output → world.json + storyboard.json exactly as stories_romance.py (kids: stories_kids.py) ---
+to_m0:
+  language: cs
+  tone:
+    adult: romantický, něžný, s humorem   # free strips keep the romance tone
+    kids: dobrodružný, odvážný, laskavý
+  bible_rules:
+    adult: ["SFW: polibek ano, nahota ne."]
+    free: ["Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."]
+    kids: ["Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."]
+  # kids: a creature/robot/spirit has no count tag, so prompts.count_tags() says "no humans" when it is alone
+  count_tag: {f: 1girl, other: 1boy, nonhuman: ""}
+  role: {human: playable, nonhuman: npc}
+  identity_level: prompt
+  couple_tags: [couple, hetero]   # prepended to every 2-character panel (not kids: any pair there, no romance)
+  sfx_style: bold
+  # kids strips use compose.py's default (children's) fonts, like data/stories/les: null = no "fonts" key
+  fonts: {adult: romance, free: romance, kids: null}
+
+# --- adapt(): what each audience sends the model ------------------------------------------------------
+adapt:
+  attempts: 3
+  temperature: {first: 0, retry: 0.5}   # greedy first, then a little noise so a retry is not the same answer
+  lang: Czech                           # {lang} in the system prompt
+  # free uses the adult files (rewritten below)
+  schema: {adult: story.schema.json, kids: story.kids.schema.json}
+  system: {adult: adapt_system.md, kids: adapt_system_kids.md}
+  example: {adult: santorini, kids: kids_park}
+  default_style: {adult: fashion_editorial, kids: clean_webtoon_noartist}
+  free:
+    # Free-mode prompt: the SFW passages of adapt_system.md replaced, the adult-only rules kept (and repeated).
+    audience: >-
+      AUDIENCE: adults only. Experimental run outside the app: follow the screenplay as written, including mature or
+      explicit scenes; you are not bound by SFW rules. Every character is an adult aged 23 or more with an adult body
+      and face; never minors, childlike looks or school settings.
+    cut: {from: "## SFW rewrite rules", to: "- Keep the ending exactly", heading: "## Story rules\n"}
+    # free_prompt() fails loudly when the skill text drifts from these
+    replace:
+      - [" NO lingerie, underwear, swimwear, bikini, see-through or wet clothing, crop tops, cleavage; beach wear is a sundress, linen, pareo over a dress. Men wear shirts (never shirtless, never open shirt).", ""]
+      - [" Never a panel with two people doing something, never a kiss, never undressing or clothes moving.", ""]
+      - ["build (petite|slender|", "build (slender|"]
+    # the example must pass the free fence itself, or the model copies what it rejects
+    example_replace:
+      - ["adult, petite, mature female", "adult, mature female"]
+      - ['"mature male,', '"adult, mature male,']
+
+# --- pick_motion(): the model picks loops for an already rendered SFW story -----------------------------
+pick_motion:
+  max_motion_chars: 120   # PICK_SCHEMA maxLength; maxItems is limits.max_animated
+  banned: [banned, pick_motion_actions]
+  system: "You pick panels of a finished SFW romance webtoon to animate as short seamless loops.\n"
+  rule_prefix: "- `animate` / `motion`"   # the line of adapt_system.md quoted as the motion rule

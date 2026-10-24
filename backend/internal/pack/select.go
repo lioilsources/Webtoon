@@ -33,8 +33,8 @@ func (s Selection) Validate() error {
 
 // checkWorld refuses the worlds that must never be published.
 func checkWorld(id string) error {
-	if strings.HasPrefix(id, forbiddenWorldPrefix) {
-		return fmt.Errorf("world %s: ids starting with %s are never exported", id, forbiddenWorldPrefix)
+	if p := rule().ForbiddenWorldPrefix; strings.HasPrefix(id, p) {
+		return fmt.Errorf("world %s: ids starting with %s are never exported", id, p)
 	}
 	return nil
 }

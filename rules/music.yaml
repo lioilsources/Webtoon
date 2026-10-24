@@ -1,0 +1,27 @@
+# Music library rules of m0/music.py (AiStack audio service, ACE-Step, container audio-music) for shorts.py.
+# Director's rules: only in the comfy window (audio is down while the big LLMs run), one job at a time, never start
+# the container yourself; if the model is not available, ask Director.
+
+length: 80   # s: ACE-Step returns 9–19 % short of this; the longest short is ~65 s, and shorts.py loops anyway
+window: {start: "07:05", end: "12:45"}   # HH:MM, inclusive; quoted (YAML would read 07:05 as a number)
+model: acestep-v15-turbo
+prompt_suffix: ", instrumental, no vocals"
+seed_base: 4200   # track k gets seed_base + k: a rerun redraws the same track
+
+# One track per mood; shorts.py --music data/music picks one per world (stable hash), so a series keeps its sound.
+moods:
+  lofi_1: lo-fi hip hop, warm rhodes piano, soft vinyl crackle, mellow drums, romantic, evening city
+  lofi_2: chill lo-fi beat, jazzy guitar, gentle bass, rainy cafe, tender
+  piano_1: solo piano, emotional, slow, romantic ballad, intimate
+  piano_2: piano and strings, hopeful, cinematic, gentle build
+  acoustic_1: acoustic guitar, fingerpicking, sunny, light percussion, summer romance
+  acoustic_2: ukulele and acoustic guitar, playful, cute, light claps
+  synth_1: dreamy synthpop, soft pads, slow tempo, night drive, neon, longing
+  synth_2: chillwave, warm analog synths, nostalgic, sunset
+  latin_1: bossa nova, nylon guitar, soft brushes, warm, seaside evening
+  latin_2: romantic latin guitar, light percussion, havana night, sensual but soft
+  strings_1: string quartet, bittersweet, slow, melancholic romance
+  strings_2: orchestral strings, swelling, happy ending, emotional
+  rnb_1: smooth r&b instrumental, soft keys, slow groove, late night
+  world_1: afrobeat instrumental, soft kalimba, warm groove, joyful
+  world_2: indian sitar and soft tabla, romantic, gentle, modern chill

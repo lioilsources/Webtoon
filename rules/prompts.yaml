@@ -1,0 +1,49 @@
+# Tag-building rules of m0/prompts.py (panel → positive/negative prompt). The style presets, shot tags, shot sizes
+# and the per-audience negative lists themselves stay in data/styles.json; this file holds the rules that pick
+# and filter them.
+
+regex:
+  # Design attributes owned by the character's tag_prompt; scene tags must not override them.
+  design: '\b(hair|eyes|skin|freckles|jacket|shirt|shorts|skirt|pantyhose|footwear|boots|dress|uniform)\b'
+  # Scene tags that mention hair/eyes but describe a moment, not the design ("closed eyes", "wet hair").
+  expression: '^(closed eyes|half-closed eyes|wet hair|hair blowing|messy hair|hand on cheek|tears)$|^looking '
+  # Design tags outside the frame of tighter shots; left in, they pull the camera back to full body.
+  # close-up drops `lower`, medium / over-shoulder drop `feet` (render.identity() scores the same way).
+  lower: '\b(shorts|skirt|pants|pantyhose|thighhighs|legwear|socks|footwear|boots|shoes)\b'
+  feet: '\b(footwear|boots|shoes|socks)\b'
+  # Colour is what tells two people apart; weighted so the style tags ("limited palette", monochrome) don't wash it out.
+  color:
+    wrap: '^({}) (hair|eyes)$'
+    words: ['black', 'brown', 'dark brown', 'light brown', 'blonde', 'platinum blonde', 'red', 'auburn', 'chestnut',
+            'white', 'grey', 'silver', 'pink', 'blue', 'green', 'purple', 'orange', 'aqua', 'hazel']
+
+color_weight: '({t}:1.2)'
+
+# The shared prompt of a regional two-shot still says who is adult (the design lives in the regions).
+age_anchor: [adult, mature female, mature male]
+
+# Count tags come from the characters (count_tags()); the storyboard's own are dropped from the scene.
+count_tags: [1girl, 1boy, 2girls, 2boys, 3girls, multiple girls, multiple boys, solo, no humans]
+
+# Free worlds (local_strip.sh -f) lose the SFW negatives, never the age ones.
+age_negative: [child, loli, shota, aged down, teenager, school uniform, serafuku, flat chest, petite, short stature,
+               childlike face, randoseru]
+
+# world.audience → the data/styles.json list added to the negative (others: none)
+audience_negative: {kids: kids_negative, adult: adult_negative}
+
+close_up_location_tags: 3   # a full scene description pulls the camera back to a medium shot
+default_size: [832, 1216]   # a shot missing from styles.json shot_size
+
+# Photoreal checkpoints (Juggernaut, RealVis, …) read sentences better than booru tags.
+natural:
+  drop_tags: [couple, hetero]   # the couple lead below says it in words
+  wearing: ', wearing {wear}'
+  # Photoreal models drop the second person unless the pair leads the prompt.
+  couple_lead: '(a romantic couple, two people, a woman and a man together in frame:1.3)'
+  couple_person: '({p}:1.2)'
+  one_lead: '(one person:1.1)'
+  one_person: '({p}:1.2)'
+  group_lead: '(a group of {n} people:1.2)'
+  group_person: '({p}:1.1)'
+  empty: no people, empty scene

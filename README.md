@@ -6,7 +6,7 @@ Plán: [`Prompts/00-WEBTOON_PLAN.md`](Prompts/00-WEBTOON_PLAN.md)
 
 | adresář | co to je |
 |---|---|
-| `m0/` | M0 spike v Pythonu (stdlib + Pillow): postava → booru tagy, storyboard + validátor, story state, ComfyUI render, WD14 kontrola obsahu a identity, skládání stripu |
+| `m0/` | M0 spike v Pythonu (stdlib + Pillow + PyYAML, `m0/requirements.txt`; pravidla v `rules/*.yaml`): postava → booru tagy, storyboard + validátor, story state, ComfyUI render, WD14 kontrola obsahu a identity, skládání stripu |
 | `backend/` | M1 Go backend: API, Postgres fronta (`SKIP LOCKED`), worker pipeline — viz `backend/README.md` |
 | `app/` | Flutter klient (čtečka + později editor autora) |
 | `data/` | testovací svět, style presety, slovník WD14 tagů |

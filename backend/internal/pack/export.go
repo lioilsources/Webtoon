@@ -15,6 +15,9 @@ import (
 // pool and writes the zip(s); in catalog mode it also writes covers/ and merges catalog.json.
 // The database is only read.
 func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Summary, error) {
+	if _, err := LoadRules(); err != nil {
+		return nil, err
+	}
 	if (opts.Starter == "") == (opts.OutDir == "") {
 		return nil, errors.New("give either -starter <zip> or -out <dir>")
 	}

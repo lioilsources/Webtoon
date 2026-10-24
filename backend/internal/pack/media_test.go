@@ -96,7 +96,7 @@ func TestConvertAndCover(t *testing.T) {
 		t.Fatal(err)
 	}
 	b, _ = os.ReadFile(filepath.Join(dir, "c.webp"))
-	if w, h := webpSize(t, b); w != coverWidth || h != coverHeight {
+	if w, h := webpSize(t, b); w != rule().Cover.Width || h != rule().Cover.Height {
 		t.Errorf("cover %dx%d", w, h)
 	}
 	if err := convertPNG(ctx, filepath.Join(dir, "missing.png"), filepath.Join(dir, "x.webp")); err == nil {
@@ -194,7 +194,7 @@ func TestBuildZip(t *testing.T) {
 	if w, h := webpSize(t, read("media/ep_a_1/p00.webp")); w != 48 || h != 72 {
 		t.Errorf("panel %dx%d", w, h)
 	}
-	if w, h := webpSize(t, read("covers/cp_a.webp")); w != coverWidth || h != coverHeight {
+	if w, h := webpSize(t, read("covers/cp_a.webp")); w != rule().Cover.Width || h != rule().Cover.Height {
 		t.Errorf("cover %dx%d", w, h)
 	}
 	if !bytes.Equal(read("media/ep_a_1/p00_loop.webp"), loopBytes) {

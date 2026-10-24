@@ -1,0 +1,43 @@
+# Layout rules of m0/compose.py (panels + bubbles → one vertical strip, the M0 stand-in for the Flutter overlay).
+# shorts.py draws its bubbles with the same code, scaled by shorts.yaml font_scale.
+
+width: 800   # strip width; every panel is scaled to it
+# storyboard gap_after → white space under the panel (the reading rhythm: large = a beat, the end of a scene)
+gaps: {small: 40, medium: 140, large: 320}
+default_gap: 140
+bg: [255, 255, 255]
+ink: [20, 20, 24]
+
+# Font sets by storyboard "fonts". `default`: the bundled children's fonts (variable fonts, named weight).
+# `romance`: grown-up lettering for the romance stories; macOS system fonts (M0 is local), [file, index in the .ttc];
+# a missing file falls back to `default`. Gill Sans on macOS lacks ě č ř ů ť ď ň, so speech uses Avenir Next
+# (full Czech coverage).
+fonts:
+  default:
+    dir: assets/fonts
+    faces: {speech: [Nunito-Variable.ttf, Bold], thought: [Nunito-Italic-Variable.ttf, SemiBold],
+            shout: [DynaPuff-Variable.ttf, Bold], narration: [Baloo2-Variable.ttf, Medium],
+            sfx: [DynaPuff-Variable.ttf, Bold], ui: [Nunito-Variable.ttf, SemiBold]}
+  romance:
+    dir: /System/Library/Fonts
+    faces: {speech: [Avenir Next.ttc, 2], thought: [Avenir Next.ttc, 6], shout: [Supplemental/Futura.ttc, 2],
+            narration: [Supplemental/Baskerville.ttc, 2], sfx: [Supplemental/Futura.ttc, 4], ui: [Avenir Next.ttc, 5]}
+
+# Bubble sizing (no bboxes in M0: alternate top corners, narration as a box at the top-left).
+bubble:
+  font_size: 26
+  shout_font_size: 30
+  max_width: 0.62             # of the panel width
+  narration_max_width: 0.8
+  text_inset: 40              # wrap width = max width - this
+  line_height: 1.25           # × font size
+  pad: [44, 30]               # box = text + pad (x, y)
+  margin: 22                  # from the panel edge
+  narration_fill: [255, 248, 225]
+
+sfx: {size: 64, fill: [255, 220, 60], stroke: 6}
+title: {size: 54, line: 66}
+
+texts:
+  end: Konec
+  choices: Co udělá dál?

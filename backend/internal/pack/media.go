@@ -22,7 +22,7 @@ func CheckCwebp() error {
 }
 
 func cwebp(ctx context.Context, args ...string) error {
-	cmd := exec.CommandContext(ctx, "cwebp", append([]string{"-quiet", "-q", webpQuality}, args...)...)
+	cmd := exec.CommandContext(ctx, "cwebp", append([]string{"-quiet", "-q", strconv.Itoa(rule().WebPQuality)}, args...)...)
 	var stderr bytes.Buffer
 	cmd.Stderr = &stderr
 	if err := cmd.Run(); err != nil {
@@ -31,12 +31,12 @@ func cwebp(ctx context.Context, args ...string) error {
 	return nil
 }
 
-// convertPNG encodes a panel PNG as WebP q85 with the same dimensions.
+// convertPNG encodes a panel PNG as WebP (rules webp_quality, 85) with the same dimensions.
 func convertPNG(ctx context.Context, src, dst string) error {
 	return cwebp(ctx, src, "-o", dst)
 }
 
-// makeCover crops the panel to the cover aspect (centered) and scales it to 416×608.
+// makeCover crops the panel to the cover aspect (centered) and scales it to the rules cover size (416×608).
 // cwebp applies -crop before -resize.
 func makeCover(ctx context.Context, src, dst string) error {
 	f, err := os.Open(src)
@@ -49,11 +49,13 @@ func makeCover(ctx context.Context, src, dst string) error {
 		return fmt.Errorf("%s: %w", src, err)
 	}
 	x, y, w, h := coverCrop(cfg.Width, cfg.Height)
-	return cwebp(ctx, "-crop", itoa(x), itoa(y), itoa(w), itoa(h), "-resize", itoa(coverWidth), itoa(coverHeight), src, "-o", dst)
+	c := rule().Cover
+	return cwebp(ctx, "-crop", itoa(x), itoa(y), itoa(w), itoa(h), "-resize", itoa(c.Width), itoa(c.Height), src, "-o", dst)
 }
 
 // coverCrop is the largest centered rectangle of the cover aspect inside a w×h image.
 func coverCrop(w, h int) (x, y, cw, ch int) {
+	coverWidth, coverHeight := rule().Cover.Width, rule().Cover.Height
 	if w*coverHeight > h*coverWidth { // too wide: keep the height
 		ch = h
 		cw = h * coverWidth / coverHeight

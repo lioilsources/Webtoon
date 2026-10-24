@@ -13,8 +13,9 @@
 # Gates instead of the clock: LLM phases wait until a 1-token chat to openclaw-default answers; ComfyUI phases wait
 # until ComfyUI answers AND the LLM does not (never both at once). Render stops at WEBTOON_DEADLINE (default 13:00).
 # Every phase skips what is already done, so a rerun resumes. Log: out/local/<id>.log
-# -f: no SFW rules for the LLM, no SFW negatives, no WD14 rating check; adults only stays enforced (adapt.py AGE_BANNED,
-# prompts.AGE_NEGATIVE, render.AGE_TAG_LIMITS). Ids lxf_, output out/local_free/, never imported, translated or published.
+# -f: no SFW rules for the LLM, no SFW negatives, no WD14 rating check; adults only stays enforced (rules/storyboard.yaml
+# age_banned, rules/prompts.yaml age_negative, rules/render.yaml age_tag_limits). Ids lxf_, output out/local_free/, never
+# imported, translated or published. Prefixes, days, default styles and the deadline: rules/pipeline.yaml.
 set -u
 cd "$(dirname "$0")/.."
 ROOT=$PWD
@@ -26,17 +27,20 @@ STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=
 while getopts "s:p:a:frc" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; *) exit 2 ;; esac; done
 shift $((OPTIND - 1))
 [ $# -eq 0 ] && { sed -n 2,17p "$0"; exit 2; }
+rule() { python3 m0/rules.py get "pipeline.strip.$1"; }  # rules/pipeline.yaml
 # -a kids: adapt.py --audience kids; the kids preset unless -s says otherwise
-if [ -z "$STYLE" ]; then if [ "$AUD" = kids ]; then STYLE=clean_webtoon_noartist; else STYLE=webtoon_romance; fi; fi
-if [ -n "$FREE" ]; then export WEBTOON_DAY=local_free; PREFIX=lxf_; else export WEBTOON_DAY=local; PREFIX=lx_; fi
+if [ -z "$STYLE" ]; then if [ "$AUD" = kids ]; then STYLE=$(rule default_style.kids); else STYLE=$(rule default_style.adult); fi; fi
+if [ -n "$FREE" ]; then MODE=free; else MODE=app; fi
+export WEBTOON_DAY=$(rule "day.$MODE"); PREFIX=$(rule "prefix.$MODE")
+WAIT=$(rule wait_seconds)
 OUTD=out/$WEBTOON_DAY
 mkdir -p "$OUTD"
 
 llm_up() { curl -s -m 60 "$LLM/chat/completions" -H 'Content-Type: application/json' \
   -d "{\"model\":\"$MODEL\",\"messages\":[{\"role\":\"user\",\"content\":\"ok\"}],\"max_tokens\":1}" | grep -q '"choices"'; }
 comfy_up() { curl -s -m 5 -o /dev/null -w '%{http_code}' "$COMFY/system_stats" | grep -q 200; }
-wait_llm() { until llm_up; do echo "$(date +%H:%M) čekám na LLM"; sleep 300; done; }
-wait_comfy() { until comfy_up && ! llm_up; do echo "$(date +%H:%M) čekám na ComfyUI (a vypnuté LLM)"; sleep 300; done; }
+wait_llm() { until llm_up; do echo "$(date +%H:%M) čekám na LLM"; sleep "$WAIT"; done; }
+wait_comfy() { until comfy_up && ! llm_up; do echo "$(date +%H:%M) čekám na ComfyUI (a vypnuté LLM)"; sleep "$WAIT"; done; }
 
 # "path/scenar.md[:style]" → id lx_<slug> (lxf_<slug> with -f)
 ids=(); srcs=(); styles=()
@@ -61,8 +65,9 @@ phase_render() {
   wait_comfy
   # morning window ends at 13:00; a slot Director grants later gets an hour (override: WEBTOON_DEADLINE=HH:MM)
   if [ -z "${WEBTOON_DEADLINE:-}" ]; then
-    if [ "$(date +%H)" -lt 13 ]; then WEBTOON_DEADLINE=13:00; else WEBTOON_DEADLINE=$(date -v+60M +%H:%M); fi
-    [[ $WEBTOON_DEADLINE < $(date +%H:%M) ]] && WEBTOON_DEADLINE=23:59  # no wrap past midnight (string compare)
+    if [ "$(date +%H)" -lt "$(rule deadline.window_end_hour)" ]; then WEBTOON_DEADLINE=$(rule deadline.window_end)
+    else WEBTOON_DEADLINE=$(date -v+"$(rule deadline.late_slot_minutes)"M +%H:%M); fi
+    [[ $WEBTOON_DEADLINE < $(date +%H:%M) ]] && WEBTOON_DEADLINE=$(rule deadline.no_wrap)  # no wrap past midnight (string compare)
   fi
   export WEBTOON_DEADLINE; echo "== render do $WEBTOON_DEADLINE"
   for id in "${ids[@]}"; do

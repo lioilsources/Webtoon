@@ -12,7 +12,6 @@ import (
 )
 
 // Fields of GET /episodes/{id} that a pack leaves out (PACK_FORMAT.md).
-var droppedEpisodeFields = []string{"error", "created_at", "updated_at"}
 
 // stripPanel clears the panel fields a pack leaves out: seed, identity_score, error, video_error,
 // estimate_seconds (all omitempty in the shared shape).
@@ -60,15 +59,16 @@ func coverPath(storyID string) string { return "covers/" + storyID + ".webp" }
 // hasLoop mirrors episodejson.PanelJSON: video_url exists only for a ready loop of an animated panel.
 func hasLoop(p dbq.Panel) bool { return p.Animate && p.VideoStatus == "ready" && p.VideoPath != "" }
 
-// SplitParts chunks stories into parts of PartSize (names a, b, c…). Up to PartSize stories, or
+// SplitParts chunks stories into parts of rules part_size (names a, b, c…). Up to that many stories, or
 // when single is set (the starter), everything goes into one unnamed part.
 func SplitParts(stories []Story, single bool) [][]Story {
-	if single || len(stories) <= PartSize {
+	size := rule().PartSize
+	if single || len(stories) <= size {
 		return [][]Story{stories}
 	}
 	var out [][]Story
-	for i := 0; i < len(stories); i += PartSize {
-		out = append(out, stories[i:min(i+PartSize, len(stories))])
+	for i := 0; i < len(stories); i += size {
+		out = append(out, stories[i:min(i+size, len(stories))])
 	}
 	return out
 }
@@ -194,7 +194,7 @@ func episodeEntry(mediaDir, worldLang string, e Episode) (map[string]any, []File
 	if len(missing) > 0 {
 		return nil, nil, 0, fmt.Errorf("episode %s: media %v not planned", e.Row.ID, missing)
 	}
-	for _, k := range droppedEpisodeFields {
+	for _, k := range rule().DroppedEpisodeFields {
 		delete(ej, k)
 	}
 	panels := ej["panels"].([]episodejson.Panel)
