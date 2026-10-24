@@ -27,6 +27,22 @@ def load_json(path):
         return json.load(f)
 
 
+FACE_PYTHON = Path(os.environ.get("WEBTOON_FACE_PYTHON", Path.home() / ".venvs/webtoon-faces/bin/python"))
+
+
+def faces_for(paths):
+    """Face boxes per image ([[x0, y0, x1, y1, conf]], normalized) from m0/faces.py's cache (out/faces/<sha1>.json);
+    misses are detected by running faces.py in its venv. Without the venv every image has no faces (old placement)."""
+    import hashlib
+    import subprocess
+    paths = [str(p) for p in paths]
+    cache = {p: OUT / "faces" / f"{hashlib.sha1(Path(p).read_bytes()).hexdigest()}.json" for p in paths}
+    miss = [p for p in paths if not cache[p].exists()]
+    if miss and FACE_PYTHON.exists():
+        subprocess.run([str(FACE_PYTHON), str(ROOT / "m0" / "faces.py"), *miss], check=False)
+    return {p: (load_json(c) if c.exists() else []) for p, c in cache.items()}
+
+
 def save_json(path, obj):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)

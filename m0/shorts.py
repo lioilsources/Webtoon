@@ -23,7 +23,7 @@ from PIL import Image, ImageDraw, ImageFilter
 
 import compose
 import rules
-from common import DATA, OUT, ROOT
+from common import DATA, OUT, ROOT, faces_for
 
 # Frame, timing and end texts with their reasons: rules/base/shorts.yaml.
 R = rules.load("shorts")
@@ -56,9 +56,11 @@ def text_of(obj, key, lang):
     return (obj.get(f"{key}_i18n") or obj.get("i18n") or {}).get(lang) if lang != "cs" else None
 
 
-def bubbles_layer(bubbles, lang):
-    """Transparent full-frame layer with the panel's bubbles, drawn by compose.draw_bubble."""
+def bubbles_layer(bubbles, lang, faces=()):
+    """Transparent full-frame layer with the panel's bubbles, drawn by compose.draw_bubble; faces = face boxes in
+    frame pixels, which the bubbles keep off."""
     layer = Image.new("RGBA", (W, H - TOP - R["bottom"]), (0, 0, 0, 0))  # bottom: caption and buttons
+    layer._faces = [(x0, y0 - TOP, x1, y1 - TOP) for x0, y0, x1, y1 in faces if y1 > TOP]
     bs = [{**b, "text": (b.get("i18n") or {}).get(lang) or b["text"]} if lang != "cs" else b for b in bubbles]
     narr = [b for b in bs if b.get("kind") == "narration"]
     talk = [b for b in bs if b.get("kind") != "narration"]
@@ -71,14 +73,34 @@ def bubbles_layer(bubbles, lang):
     return full
 
 
-def cover(img, zoom=1.0, focus_y=0.42):
-    """Crop to 9:16 (zoomed in by `zoom`) and scale to the frame; focus_y keeps faces in the upper part."""
-    iw, ih = img.size
+def cover_box(iw, ih, zoom=1.0, focus_y=0.42):
+    """The part of an iw×ih image that cover() shows: (x0, y0, x1, y1) in its pixels."""
     cw = min(iw, ih * W / H) / zoom
     ch = cw * H / W
     x = (iw - cw) / 2
     y = min(max(0, ih * focus_y - ch / 2), ih - ch)
-    return img.resize((W, H), Image.LANCZOS, box=(x, y, x + cw, y + ch))
+    return x, y, x + cw, y + ch
+
+
+def cover(img, zoom=1.0, focus_y=0.42):
+    """Crop to 9:16 (zoomed in by `zoom`) and scale to the frame; focus_y keeps faces in the upper part."""
+    return img.resize((W, H), Image.LANCZOS, box=cover_box(*img.size, zoom, focus_y))
+
+
+def faces_in_frame(boxes, iw, ih, landscape):
+    """Face boxes (normalized to the panel) → frame pixels, for the panel shown by cover() (at its mid zoom) or
+    on_blur()."""
+    out = []
+    for b in boxes:
+        if landscape:
+            fh = ih * W / iw
+            top = (H - round(fh)) // 2 + 120
+            out.append((b[0] * W, top + b[1] * fh, b[2] * W, top + b[3] * fh))
+        else:
+            x0, y0, x1, y1 = cover_box(iw, ih, zoom=1 + R["zoom"]["portrait"] / 2)
+            sx, sy = W / (x1 - x0), H / (y1 - y0)
+            out.append(((b[0] * iw - x0) * sx, (b[1] * ih - y0) * sy, (b[2] * iw - x0) * sx, (b[3] * ih - y0) * sy))
+    return [(max(0, a), max(0, b), min(W, c), min(H, d)) for a, b, c, d in out if c > 0 and d > 0 and a < W and b < H]
 
 
 def on_blur(img, bg):
@@ -100,11 +122,13 @@ class Segment:
 
 
 def panel_segment(p, media, lang):
-    img = Image.open(media / p["image_url"].lstrip("/")).convert("RGB")
+    src = media / p["image_url"].lstrip("/")
+    img = Image.open(src).convert("RGB")
     words = sum(len(((b.get("i18n") or {}).get(lang) if lang != "cs" else None) or b["text"]) for b in p.get("bubbles") or [])
     dur = min(DUR["max"], max(DUR["min"], DUR["base"] + DUR["per_char"] * words))
-    layer = bubbles_layer(p.get("bubbles") or [], lang)
     landscape = img.width > img.height
+    boxes = p["faces"] if p.get("faces") is not None else faces_for([src])[str(src)]
+    layer = bubbles_layer(p.get("bubbles") or [], lang, faces_in_frame(boxes, img.width, img.height, landscape))
     bg = blurred(img) if landscape else None
 
     frames = []
@@ -172,6 +196,7 @@ def main():
 
     media = ROOT / "backend"
     panels = [p for p in ep["panels"] if p.get("image_url")]
+    faces_for([media / p["image_url"].lstrip("/") for p in panels if p.get("faces") is None])  # one detector run
     first = Image.open(media / panels[0]["image_url"].lstrip("/")).convert("RGB")
     last = Image.open(media / panels[-1]["image_url"].lstrip("/")).convert("RGB")
     title = text_of(ep, "title", args.lang) or ep["title"]

@@ -18,11 +18,17 @@ def load(p):
         return json.load(f)
 
 
+# The stories the goldens were recorded on (data/stories of the snapshot revision); stories added later are new
+# data, not a change of behaviour, so they stay out of the comparison.
+GOLDEN_STORIES = set((Path(__file__).parent / "golden" / "stories.txt").read_text().split())
+
+
 def stories():
-    """[(id, world, storyboard)] for every data/stories/<id>, sorted."""
+    """[(id, world, storyboard)] for every data/stories/<id> of the golden set, sorted."""
     out = []
     for d in sorted(glob.glob(str(ROOT / "data" / "stories" / "*"))):
-        out.append((Path(d).name, load(Path(d) / "world.json"), load(Path(d) / "storyboard.json")))
+        if Path(d).name in GOLDEN_STORIES:
+            out.append((Path(d).name, load(Path(d) / "world.json"), load(Path(d) / "storyboard.json")))
     return out
 
 

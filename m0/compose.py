@@ -3,8 +3,9 @@
     python3 m0/compose.py --storyboard out/dev/storyboard_ep1.json --panels out/<day>/<run> [--variant 0] --out strip.png
     python3 m0/compose.py --storyboard ... --placeholder --out strip.png   # layout test without images
 
-Bubble placement heuristic (no bboxes in M0): alternate top corners, narration as a box at the top-left,
-tails point toward the panel centre.
+Bubble placement: with face boxes (storyboard panels[].faces or m0/faces.py's cache) each bubble takes the spot
+that covers the least of the faces, tail toward the nearest face; without faces the old heuristic: alternate top
+corners, narration as a box at the top-left, tails point toward the panel centre.
 """
 
 import argparse
@@ -14,7 +15,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 import rules
-from common import ROOT, load_json
+from common import ROOT, faces_for, load_json
 
 # Layout rules (gaps, font sets, bubble sizing) with their reasons: rules/base/compose.yaml.
 R = rules.load("compose")
@@ -58,6 +59,61 @@ def wrap(draw, text, fnt, max_w):
     return lines
 
 
+def place_off_faces(W, H, bw, bh, kind, slot, faces, placed, margin, sfx=()):
+    """Top-left corner for a bw×bh bubble that covers as little of the faces (pixel boxes, from m0/faces.py) as
+    possible. Candidates: the left and right column (and centre for talk) at every 12 px, never over an earlier
+    bubble and not above the previous one (reading order). Cost: covered share of each face (padded) dominates,
+    then of the panel's sound effects (sfx boxes), then height (higher is better) and the usual left/right alternation."""
+    F = R["faces"]
+    pad = F["pad"] * W
+    zones = [(f[0] - pad, f[1] - pad, f[2] + pad, f[3] + pad, F["cost"]["face"]) for f in faces]
+    zones += [(*b, F["cost"]["sfx"]) for b in sfx]
+    right_first = kind != "narration" and slot % 2 == 1
+    other = F["cost"]["other_side"]
+    xs = [(margin, 0 if not right_first else other), (W - bw - margin, other if not right_first else 0)]
+    if kind != "narration":
+        xs.append(((W - bw) // 2, F["cost"]["centre"]))
+    y0 = max(margin, placed[-1][1]) if placed else margin
+    best = None
+    for y in range(int(y0), int(max(y0, H - bh - margin)) + 1, F["step"]):
+        for x, side_cost in xs:
+            gap = F["bubble_gap"]
+            if any(x < p[2] + gap and p[0] - gap < x + bw and y < p[3] + gap and p[1] - gap < y + bh for p in placed):
+                continue
+            covered = 0.0
+            for z in zones:
+                ix = min(x + bw, z[2]) - max(x, z[0])
+                iy = min(y + bh, z[3]) - max(y, z[1])
+                if ix > 0 and iy > 0:
+                    covered += z[4] * ix * iy / ((z[2] - z[0]) * (z[3] - z[1]))
+            cost = covered + F["cost"]["height"] * y / H + side_cost
+            if best is None or cost < best[0]:
+                best = (cost, x, y)
+    if best is None:  # no free spot left: the caller's overlap rule stacks it below the previous bubble
+        return (margin, y0)
+    return best[1], best[2]
+
+
+def nearest_face(faces, x, y):
+    if not faces:
+        return None
+    return min(faces, key=lambda f: ((f[0] + f[2]) / 2 - x) ** 2 + ((f[1] + f[3]) / 2 - y) ** 2)
+
+
+def set_faces(img, boxes, crop=None):
+    """Attach face boxes (normalized to the source image) to img for draw_bubble, in img's pixels. crop =
+    (x0, y0, x1, y1) of the source shown in img, normalized (shorts.py zooms/crops panels)."""
+    cx0, cy0, cx1, cy1 = crop or (0, 0, 1, 1)
+    W, H = img.size
+    out = []
+    for b in boxes:
+        x0, y0 = (b[0] - cx0) / (cx1 - cx0) * W, (b[1] - cy0) / (cy1 - cy0) * H
+        x1, y1 = (b[2] - cx0) / (cx1 - cx0) * W, (b[3] - cy0) / (cy1 - cy0) * H
+        if x1 > 0 and y1 > 0 and x0 < W and y0 < H:
+            out.append((max(0, x0), max(0, y0), min(W, x1), min(H, y1)))
+    img._faces = out
+
+
 def draw_bubble(img, bubble, slot, n_slots):
     d = ImageDraw.Draw(img)
     W, H = img.size
@@ -69,7 +125,11 @@ def draw_bubble(img, bubble, slot, n_slots):
     tw = max(d.textlength(l, font=fnt) for l in lines)
     bw, bh = int(tw) + B["pad"][0], lh * len(lines) + B["pad"][1]
     margin = B["margin"]
-    if kind == "narration":
+    faces = getattr(img, "_faces", [])
+    if faces:
+        x, y = place_off_faces(W, H, bw, bh, kind, slot, faces, getattr(img, "_bubbles", []), margin,
+                               getattr(img, "_sfx", []))
+    elif kind == "narration":
         x, y = margin, margin + slot * (bh + 12)
     else:
         right = slot % 2 == 1
@@ -87,29 +147,50 @@ def draw_bubble(img, bubble, slot, n_slots):
     else:
         cx, cy = x + bw / 2, y + bh
         tx, ty = cx + (40 if cx < W / 2 else -40), min(H - 20, y + bh + 48)
+        face = nearest_face(faces, cx, y + bh / 2)
+        if face is not None:
+            # Tail toward the nearest face: from the edge facing it, stopping short of it so it doesn't cover it.
+            fx, fy = (face[0] + face[2]) / 2, (face[1] + face[3]) / 2
+            below = fy > y + bh / 2
+            cy = y + bh if below else y
+            edge = face[1] if below else face[3]
+            dx, dy = fx - cx, edge - cy
+            dist = max(1.0, (dx * dx + dy * dy) ** 0.5)
+            T = R["faces"]["tail"]
+            length = min(T["max"], max(T["min"], dist - T["short_of_face"]))
+            tx, ty = cx + dx / dist * length, cy + dy / dist * length
+            if (ty > cy) != below:  # face level with the bubble: a short tail down/up toward its side
+                ty = cy + (T["min"] if below else -T["min"])
+        s = 1 if ty >= cy else -1  # tail leaves the bottom edge (1) or the top edge (-1)
         if kind == "thought":
             for r, f in ((10, 0.35), (7, 0.65), (5, 0.9)):
                 px, py = cx + (tx - cx) * f, cy + (ty - cy) * f
                 d.ellipse((px - r, py - r, px + r, py + r), fill="white", outline=INK, width=2)
         else:
-            d.polygon([(cx - 22, cy - 4), (cx + 10, cy - 4), (tx, ty)], fill="white", outline=INK, width=3)
+            d.polygon([(cx - 22, cy - 4 * s), (cx + 10, cy - 4 * s), (tx, ty)], fill="white", outline=INK, width=3)
         if kind == "shout":
             d.rectangle(box, fill="white", outline=INK, width=5)
         else:
             d.rounded_rectangle(box, radius=min(bh // 2, 40), fill="white", outline=INK, width=3)
         if kind != "thought":
-            d.polygon([(cx - 19, cy - 6), (cx + 7, cy - 6), (tx - 1, ty - 9)], fill="white")
+            d.polygon([(cx - 19, cy - 6 * s), (cx + 7, cy - 6 * s), (tx - 1, ty - 9 * s)], fill="white")
     for i, line in enumerate(lines):
         lw = d.textlength(line, font=fnt)
         d.text((x + (bw - lw) / 2, y + 15 + i * lh), line, font=fnt, fill=INK)
 
 
-def draw_sfx(img, sfx, i):
-    d = ImageDraw.Draw(img)
+def sfx_box(img, sfx, i):
+    """Where draw_sfx letters sfx: (x, y, box) with box = its bounding box in img's pixels."""
     W, H = img.size
-    fnt = font("sfx", R["sfx"]["size"])
     x, y = int(W * (0.55 if i % 2 == 0 else 0.1)), int(H * 0.68)
-    d.text((x, y), sfx["text"], font=fnt, fill=tuple(R["sfx"]["fill"]), stroke_width=R["sfx"]["stroke"], stroke_fill=INK)
+    return x, y, ImageDraw.Draw(img).textbbox((x, y), sfx["text"], font=font("sfx", R["sfx"]["size"]),
+                                              stroke_width=R["sfx"]["stroke"])
+
+
+def draw_sfx(img, sfx, i):
+    x, y, _ = sfx_box(img, sfx, i)
+    ImageDraw.Draw(img).text((x, y), sfx["text"], font=font("sfx", R["sfx"]["size"]), fill=tuple(R["sfx"]["fill"]),
+                             stroke_width=R["sfx"]["stroke"], stroke_fill=INK)
 
 
 def end_block():
@@ -146,12 +227,19 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
     global FONT_SET
     FONT_SET = sb.get("fonts")
     parts = []
+    # face boxes of every panel in one detector run (faces.py loads its model once)
+    found = {} if use_placeholder else faces_for(
+        [Path(panel_dir) / f"p{i:02d}_s{variant}.png" for i, p in enumerate(sb["panels"]) if "faces" not in p])
     for i, p in enumerate(sb["panels"]):
         if use_placeholder:
             img = placeholder(p, i)
         else:
-            img = Image.open(Path(panel_dir) / f"p{i:02d}_s{variant}.png").convert("RGB")
+            src = Path(panel_dir) / f"p{i:02d}_s{variant}.png"
+            img = Image.open(src).convert("RGB")
         img = img.resize((WIDTH, round(img.height * WIDTH / img.width)), Image.LANCZOS)
+        if not use_placeholder:
+            set_faces(img, p["faces"] if "faces" in p else found.get(str(src), []))
+            img._sfx = [sfx_box(img, x, k)[2] for k, x in enumerate(p.get("sfx", []))]
         bubbles = p.get("bubbles", [])
         narr = [b for b in bubbles if b.get("kind") == "narration"]
         talk = [b for b in bubbles if b.get("kind") != "narration"]

@@ -23,7 +23,7 @@ fonts:
     faces: {speech: [Avenir Next.ttc, 2], thought: [Avenir Next.ttc, 6], shout: [Supplemental/Futura.ttc, 2],
             narration: [Supplemental/Baskerville.ttc, 2], sfx: [Supplemental/Futura.ttc, 4], ui: [Avenir Next.ttc, 5]}
 
-# Bubble sizing (no bboxes in M0: alternate top corners, narration as a box at the top-left).
+# Bubble sizing. Placement without face boxes: alternate top corners, narration as a box at the top-left.
 bubble:
   font_size: 26
   shout_font_size: 30
@@ -34,6 +34,18 @@ bubble:
   pad: [44, 30]               # box = text + pad (x, y)
   margin: 22                  # from the panel edge
   narration_fill: [255, 248, 225]
+
+# Placement with face boxes (m0/faces.py: storyboard panels[].faces or its cache). Every candidate spot (left and
+# right column, centre for talk, every `step` px, never over an earlier bubble nor above the previous one) is
+# scored; the cheapest wins. A face (padded by `pad` × panel width) costs face × the share of it covered, an sfx
+# the same with `sfx`; then height (× y / panel height: higher reads first) and leaving the usual column.
+faces:
+  pad: 0.04
+  step: 12
+  bubble_gap: 12
+  cost: {face: 1000, sfx: 400, height: 60, other_side: 8, centre: 14}
+  # tail toward the nearest face, stopping short of it so it doesn't cover it
+  tail: {min: 36, max: 90, short_of_face: 18}
 
 sfx: {size: 64, fill: [255, 220, 60], stroke: 6}
 title: {size: 54, line: 66}
