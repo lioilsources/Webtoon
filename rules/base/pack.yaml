@@ -9,3 +9,136 @@ cover: {width: 416, height: 608}   # story cover: p00 of the first episode, cent
 forbidden_world_prefix: w_lxf_
 # Episode API fields the pack drops: server state the offline reader has no use for.
 dropped_episode_fields: [error, created_at, updated_at]
+
+# ---- Store and catalog (PACK_FORMAT.md, catalog schema 2) --------------------------------------------------------
+# The app is free with a bundled starter; the stores sell only unlocks (non-consumable IAP). The content itself is
+# hosted outside the stores: catalog.json + covers on GitHub Pages, zips on GitHub Releases. The app composes a zip
+# URL from base_urls, so moving the zips (e.g. to Cloudflare R2) is a catalog change, not an app release.
+catalog_schema: 2
+base_urls:
+  pages: https://lioilsources.github.io/webtoon-content/
+  releases: https://github.com/lioilsources/webtoon-content/releases/download/
+  r2: null          # set to "https://cdn…/" and the app downloads zips from there instead of releases
+repo: lioilsources/webtoon-content   # `gh release create … --repo` (export-pack prints the command, never runs it)
+
+pack_size: 50       # stories per paid pack (0.99 USD); 2 zips of part_size each
+max_previews: 6     # story covers per pack shown as the store's cover grid
+
+# Names, filled with {type} {n} {version} {part}. Products and tags are permanent once created in the stores /
+# on GitHub, so the scheme must not change; a new pack version is a new release tag, the product stays.
+naming:
+  pack_id: "{type}-{n}"
+  product_id: "pack_{type}_{n}"
+  release_tag: "pack-{type}-{n}-v{version}"
+  asset: "{type}-{n}-{part}.zip"
+  gamebook_product: "gamebook_{id}"   # gamebook alone
+  kit_product: "kit_{id}"             # gamebook + editor kit (STUB: the gamebook reader is a later phase)
+
+# Price hints for docs/store-products.md and tools/products.csv; the app shows the store's localized price.
+# Apple now uses price points; `tier` is the equivalent of the old price tier (USD 0.99 = Tier 1).
+price_tiers:
+  pack:        {usd: 0.99, tier: 1}
+  gamebook:    {usd: 1.99, tier: 2}
+  bundle_type: {usd: 2.99, tier: 3}
+  kit:         {usd: 3.99, tier: 4}
+  bundle_all:  {usd: 6.99, tier: 7}
+
+# Pack types. Only `active` types go into catalog.json `types`; the others are reserved so ids, icons and names are
+# settled before their first pack. audience adult = hidden in the app's Kids profile. icon = Material icon name.
+types:
+  - id: kids
+    active: true
+    audience: kids
+    icon: child_care
+    title_i18n: {cs: Pro děti, en: Kids, de: Für Kinder, it: Per bambini, fr: Pour enfants, pl: Dla dzieci,
+                 pt-BR: Infantil, ja: キッズ, ko: 어린이, vi: Thiếu nhi, ru: Детям, uk: Дітям}
+  - id: harlequin
+    active: true
+    audience: adult
+    icon: favorite
+    title_i18n: {cs: Romantika, en: Romance, de: Romantik, it: Romantico, fr: Romance, pl: Romans,
+                 pt-BR: Romance, ja: ロマンス, ko: 로맨스, vi: Lãng mạn, ru: Романтика, uk: Романтика}
+  - id: superhero
+    active: true
+    audience: kids
+    icon: bolt
+    title_i18n: {cs: Superhrdinové, en: Superheroes, de: Superhelden, it: Supereroi, fr: Super-héros, pl: Superbohaterowie,
+                 pt-BR: Super-heróis, ja: スーパーヒーロー, ko: 슈퍼히어로, vi: Siêu anh hùng, ru: Супергерои, uk: Супергерої}
+  - id: spooky
+    active: false
+    audience: kids
+    icon: nightlight
+    title_i18n: {cs: Strašidelné, en: Spooky, de: Gruselig, it: Da brivido, fr: Frissons, pl: Straszne,
+                 pt-BR: Assustador, ja: こわい話, ko: 오싹한 이야기, vi: Rùng rợn, ru: Страшилки, uk: Страшилки}
+  - id: animals
+    active: false
+    audience: kids
+    icon: pets
+    title_i18n: {cs: Zvířátka, en: Animals, de: Tiere, it: Animali, fr: Animaux, pl: Zwierzęta,
+                 pt-BR: Animais, ja: どうぶつ, ko: 동물, vi: Động vật, ru: Животные, uk: Тварини}
+  - id: mystery
+    active: false
+    audience: kids
+    icon: search
+    title_i18n: {cs: Záhady, en: Mystery, de: Rätsel, it: Misteri, fr: Mystères, pl: Zagadki,
+                 pt-BR: Mistério, ja: ミステリー, ko: 미스터리, vi: Bí ẩn, ru: Загадки, uk: Загадки}
+  - id: scifi
+    active: false
+    audience: kids
+    icon: rocket_launch
+    title_i18n: {cs: Sci-fi, en: Sci-fi, de: Science-Fiction, it: Fantascienza, fr: Science-fiction, pl: Sci-fi,
+                 pt-BR: Ficção científica, ja: SF, ko: SF, vi: Khoa học viễn tưởng, ru: Фантастика, uk: Фантастика}
+  - id: fantasy
+    active: false
+    audience: kids
+    icon: castle
+    title_i18n: {cs: Fantasy, en: Fantasy, de: Fantasy, it: Fantasy, fr: Fantasy, pl: Fantasy,
+                 pt-BR: Fantasia, ja: ファンタジー, ko: 판타지, vi: Giả tưởng, ru: Фэнтези, uk: Фентезі}
+  - id: seasonal
+    active: false
+    audience: kids
+    icon: celebration
+    title_i18n: {cs: Svátky, en: Seasonal, de: Feiertage, it: Feste, fr: Fêtes, pl: Święta,
+                 pt-BR: Datas festivas, ja: 季節, ko: 시즌, vi: Lễ hội, ru: Праздники, uk: Свята}
+  - id: travel
+    active: false
+    audience: kids
+    icon: flight
+    title_i18n: {cs: Cestování, en: Travel, de: Reisen, it: Viaggi, fr: Voyages, pl: Podróże,
+                 pt-BR: Viagens, ja: 旅, ko: 여행, vi: Du lịch, ru: Путешествия, uk: Подорожі}
+
+# Default -type of export-pack: the world's profile (data/stories/<id>/world.json `profile`, else rules.world_profile
+# from audience), mapped here. Superhero worlds need world.json `profile: superhero` (audience alone says kids).
+type_from_profile: {kids: kids, harlequin: harlequin, superhero: superhero}
+type_from_audience: {kids: kids, adult: harlequin}
+
+# Bundles: one product unlocks every pack of the covered types, the current ones AND any added later (the app
+# resolves it from the catalog at runtime, so a new pack needs no new bundle product). `all` = every type.
+bundles:
+  - id: bundle_kids
+    product_id: bundle_kids
+    price_tier: bundle_type
+    covers: {types: [kids]}
+    title_i18n: {cs: Vše pro děti, en: All Kids stories, de: Alles für Kinder, it: Tutto per bambini, fr: Tout pour enfants,
+                 pl: Wszystko dla dzieci, pt-BR: Tudo infantil, ja: キッズ全部, ko: 어린이 전체, vi: Trọn bộ thiếu nhi,
+                 ru: Всё для детей, uk: Усе для дітей}
+  - id: bundle_harlequin
+    product_id: bundle_harlequin
+    price_tier: bundle_type
+    covers: {types: [harlequin]}
+    title_i18n: {cs: Všechna romantika, en: All Romance stories, de: Alle Romantik, it: Tutto romantico, fr: Toute la romance,
+                 pl: Cały romans, pt-BR: Todo o romance, ja: ロマンス全部, ko: 로맨스 전체, vi: Trọn bộ lãng mạn,
+                 ru: Вся романтика, uk: Уся романтика}
+  - id: bundle_superhero
+    product_id: bundle_superhero
+    price_tier: bundle_type
+    covers: {types: [superhero]}
+    title_i18n: {cs: Všichni superhrdinové, en: All Superhero stories, de: Alle Superhelden, it: Tutti i supereroi,
+                 fr: Tous les super-héros, pl: Wszyscy superbohaterowie, pt-BR: Todos os super-heróis, ja: ヒーロー全部,
+                 ko: 슈퍼히어로 전체, vi: Trọn bộ siêu anh hùng, ru: Все супергерои, uk: Усі супергерої}
+  - id: bundle_all
+    product_id: bundle_all
+    price_tier: bundle_all
+    covers: all
+    title_i18n: {cs: Úplně všechno, en: Everything, de: Alles, it: Tutto, fr: Tout, pl: Wszystko, pt-BR: Tudo,
+                 ja: すべて, ko: 전체, vi: Tất cả, ru: Всё, uk: Усе}

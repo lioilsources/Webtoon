@@ -32,7 +32,7 @@ Today's flags map onto profiles (`rules.profile_of`): `adapt.py` default / `--au
 | what | SFW romance (the app) | adventure 6–12 | experiment outside the app | superhero action 6–12 |
 | extends | – | – | – | kids |
 | world.json | audience adult | audience kids | audience adult, `free: true` | audience kids, `profile: superhero` |
-| style pool / adapt default / strip default | all / fashion_editorial / webtoon_romance | 6 flat kid styles / clean_webtoon_noartist ×2 | all / fashion_editorial / webtoon_romance | 6 comic styles / western_comic ×2 |
+| style pool / adapt default / strip default | all / fashion_editorial / webtoon_romance | 9 kid styles (6 flat + pixar_3d, ink_wash, pastel_shoujo for the showcase) / clean_webtoon_noartist ×2 | all / fashion_editorial / webtoon_romance | 8 comic styles (+ manga_mono, vintage_poster) / western_comic ×2 |
 | prompt, schema, example | adapt_system.md, story.schema.json, santorini | adapt_system_kids.md, story.kids.schema.json, kids_park | adapt_system.md rewritten (`rewrite`), santorini fixed | as kids + `addendum_superhero.md` with the action vocabulary |
 | `fence` (tags, outfits, photo) | banned | kids_sfw | age_banned | kids_sfw |
 | `kids_fence` (+ bubbles) | never | kids_banned | never | kids_banned |
@@ -46,7 +46,7 @@ Today's flags map onto profiles (`rules.profile_of`): `adapt.py` default / `--au
 | WD14 limits | rating (explicit .2, questionable .3) + neckline tags | rating + sensitive .5 | age tags only | as kids |
 | loop negative tail | nsfw, nude, cleavage, underwear | as harlequin | child, childlike face, aged down | as kids |
 | strip prefix / out day | lx_ / local | lx_ / local | lxf_ / local_free | lx_ / local |
-| pack | adult, exported | kids, exported | never exported (`forbidden_world_prefix`) | kids, exported |
+| pack | adult, exported, type harlequin | kids, exported, type kids | never exported (`forbidden_world_prefix`) | kids, exported, type superhero |
 
 ## base/storyboard.yaml — adapt.py `check()` / `missing_fields()` / `to_m0()`
 
@@ -191,3 +191,14 @@ Default styles: the profile's `styles.strip_default`.
 | cover | 416×608 centre crop | story cover aspect |
 | forbidden_world_prefix | w_lxf_ never exported (shorts.py too) | free strips are never published |
 | dropped_episode_fields | error, created_at, updated_at | server state the offline reader does not need |
+| catalog_schema, base_urls | catalog.json schema 2; pages (catalog, covers), releases (zips), r2 null | the app composes zip URLs, so a move to R2 is a catalog change |
+| repo | lioilsources/webtoon-content | target of the printed `gh release create` |
+| pack_size, max_previews | 50 stories per paid pack (2 zips), 6 covers in the store grid | one 0.99 USD unlock |
+| naming | pack `{type}-{n}`, product `pack_{type}_{n}`, tag `pack-{type}-{n}-v{version}`, asset `{type}-{n}-{part}.zip`, `gamebook_{id}`, `kit_{id}` | store products and tags are permanent |
+| price_tiers | pack 0.99 (T1), gamebook 1.99 (T2), bundle_type 2.99 (T3), kit 3.99 (T4), bundle_all 6.99 (T7) | hints for docs/store-products.md; the app shows the store price |
+| types | kids, harlequin, superhero active; spooky, animals, mystery, scifi, fantasy, seasonal, travel reserved; title_i18n in 12 languages, audience, Material icon | audience adult = hidden in the Kids reader profile |
+| type_from_profile / type_from_audience | world.json `profile` → type, else audience (kids → kids, adult → harlequin) | export-pack's default `-type`; superhero needs `profile: superhero` |
+| bundles | bundle_kids / _harlequin / _superhero (covers types), bundle_all (covers all) | a bundle unlocks current AND future packs of its types (resolved in the app); `webtoon catalog-bundles` writes them |
+
+Profiles carry `profile.pack.type` (kids, harlequin, superhero) as documentation of the same mapping. The kids and
+superhero style pools include the starter showcase styles (`data/starter_showcase.yaml`, `m0/restyle.sh`).

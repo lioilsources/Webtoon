@@ -5,9 +5,13 @@ profile:
   extends: kids
   description: superhero action for children 6–12
   styles:
-    pool: [western_comic, clean_webtoon_noartist, flat_anime_mema, fantasy_colorlines, anime_screencap, ligne_claire]
+    # manga_mono, vintage_poster (with anime_screencap, western_comic, fantasy_colorlines): the starter showcase
+    # styles (data/starter_showcase.yaml, m0/restyle.sh), one superhero story per style
+    pool: [western_comic, clean_webtoon_noartist, flat_anime_mema, fantasy_colorlines, anime_screencap, ligne_claire,
+           manga_mono, vintage_poster]
     default: western_comic
     strip_default: western_comic
+  pack: {type: superhero}
 
 storyboard:
   regex:

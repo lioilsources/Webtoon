@@ -9,7 +9,7 @@ profile:
   # adapt.py --style must be one of `pool` (all: any data/styles.json preset); `default` for adapt.py,
   # `strip_default` for local_strip.sh (the two defaults differ today: fashion_editorial vs webtoon_romance)
   styles: {pool: all, default: fashion_editorial, strip_default: webtoon_romance}
-  pack: {audience: adult, exported: true}   # export-pack labels a pack with its most restrictive world audience
+  pack: {audience: adult, exported: true, type: harlequin}   # type: export-pack -type default; export-pack labels a pack with its most restrictive world audience
 
 storyboard:
   fences:

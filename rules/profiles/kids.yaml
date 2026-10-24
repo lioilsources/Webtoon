@@ -5,10 +5,13 @@ profile:
   audience: kids
   free: false
   styles:
-    pool: [clean_webtoon_noartist, clean_webtoon, flat_anime_mema, minimal_flat, ligne_claire, watercolor_paris]
+    # pixar_3d, ink_wash, pastel_shoujo (with ligne_claire, watercolor_paris): the starter showcase styles
+    # (data/starter_showcase.yaml, m0/restyle.sh), one kids story per style
+    pool: [clean_webtoon_noartist, clean_webtoon, flat_anime_mema, minimal_flat, ligne_claire, watercolor_paris,
+           pixar_3d, ink_wash, pastel_shoujo]
     default: clean_webtoon_noartist
     strip_default: clean_webtoon_noartist
-  pack: {audience: kids, exported: true}
+  pack: {audience: kids, exported: true, type: kids}   # type: export-pack -type default (base/pack.yaml type_from_profile)
 
 storyboard:
   required:
