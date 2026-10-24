@@ -25,6 +25,7 @@ ROOT=$PWD
 LLM=${WEBTOON_LLM:-http://192.168.88.66:8080/v1}; MODEL=${WEBTOON_LLM_MODEL:-openclaw-default}
 COMFY=${WEBTOON_COMFY:-http://192.168.88.66:8188}
 # the CLI build; /tmp/claude-501/webtoon is also the running `webtoon serve`, never overwrite that one
+FACE_PY=${WEBTOON_FACE_PYTHON:-$HOME/.venvs/webtoon-faces/bin/python}
 if [ -x /tmp/claude-501/webtoon-cli ]; then BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon-cli}; else BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon}; fi
 STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=; PROFILE=; BYID=
 while getopts "s:p:a:P:frcI" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; P) PROFILE=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; I) BYID=1 ;; *) exit 2 ;; esac; done
@@ -113,6 +114,8 @@ phase_import() {
     # render.py keeps a panel that stayed unsafe after the reseeds (status "failed"); such a strip never goes in
     bad=$(python3 -c 'import json,sys; print(" ".join(r["file"] for r in json.load(open(sys.argv[1]))["images"] if r["status"] != "ok"))' "$o/meta.json")
     [ -n "$bad" ] && { echo "!! $id neprošel SFW kontrolou ($bad), neimportuju; přegeneruj: m0/fix_panels.sh"; continue; }
+    # face boxes into the storyboard (panels[].faces): the reader keeps bubbles off them (m0/faces.py, local venv)
+    [ -x "$FACE_PY" ] && "$FACE_PY" m0/faces.py --storyboard "$d/storyboard.json" --panels "$o" >> "$o.log" 2>&1
     (cd backend && "$BIN" seed -world "../$d/world.json" -owner author -visibility public >> "$ROOT/$o.log" 2>&1 \
       && "$BIN" import-demo -world "w_$id" -player player "../$d/storyboard.json" "../$o" 2>&1 | tee -a "$ROOT/$o.log" \
       | grep -o '"episode":"[^"]*"' | cut -d'"' -f4 > "$ROOT/$o/episode_id")
