@@ -15,7 +15,9 @@ rules/profiles/<name>.yaml    harlequin | kids | free | superhero, deep-merged o
 - Merge: mappings merge key by key, lists and values replace, `{extend: [...]}` appends to the inherited list,
   `{replace: ...}` replaces a mapping whole.
 - Proof that moving the rules changed nothing: `python3 -m unittest discover m0/tests` (golden results of the
-  code-only snapshot, `m0/tests/make_goldens.py`).
+  code-only snapshot, `m0/tests/make_goldens.py`). Deliberate changes since then are listed in
+  `m0/tests/test_golden.py` (taken out of both sides) and have their own tests: 2026-10-24 ambient-only loops
+  (`test_ambient.py`).
 
 ## Profiles
 
@@ -71,7 +73,8 @@ file order, so the errors come out in the order the old code produced them. A ru
 | max_animated | story | all | ≤ limits.max_animated (2) animated panels | one Wan loop ≈ 11 stills |
 | motion_required | panel | all | animate needs a motion prompt | – |
 | motion_banned | panel | all | no term of the profile's motion fence in motion | Wan cannot keep two bodies apart; no undressing |
-| motion_two_people_ambient | panel | all | 2+ characters: motion says ambient / only / static | Wan merges two moving bodies |
+| motion_two_people_ambient | panel | all | 2+ characters: motion starts "ambient only, characters still" (since 2026-10-24; before, any ambient / only / static passed) | Wan merges two moving bodies |
+| character_motion_verbs | panel | all | 2+ characters: no word that moves a character (dancing, running, jumps, turns, waving, rises, walks, …) | the loop moves the surroundings only |
 | known_location | panel | all | location_id exists | – |
 | known_character | panel_character | all | character id exists | – |
 | known_outfit | panel_character | all | a named outfit exists | – |
@@ -116,6 +119,7 @@ sfx style), `adapt` attempts / temperatures / language, and `pick_motion` (≤ 2
 | design_threshold | 0.35 confidence for identity recall | – |
 | ip_adapter | weights 0.6 (--ref) / 0.5 (--char-refs), preset, end 0.8 | a sheet at full strength drags pose and backdrop in; burns NoobAI colours |
 | sheet_tags | pose/backdrop of a character sheet | – |
+| wd14_tags | general tags ≥ 0.35, top 40, stored per panel in meta.json | animate.py builds the ambient loop from them |
 
 ## base/animate.yaml — animate.py
 
@@ -127,6 +131,8 @@ sfx style), `adapt` attempts / temperatures / language, and `pick_motion` (≤ 2
 | style_tail_tags | 4 aesthetic tags of the preset appended | the loop keeps the look |
 | default_motion | for --panels without a motion prompt | – |
 | webp_quality | 80 | – |
+| ambient.template / template_empty / template_single | 2+ characters: "ambient only, characters still, {ambient}, static camera"; establishing: "ambient only, {ambient}, static camera"; one character: storyboard motion + ambient | Wan swaps or merges two moving bodies |
+| ambient.from_tags / max_phrases / default | WD14 tag → phrase (rain → rain falling, night/starry sky → stars twinkling, fire/torch → flames flickering, water/ocean/river → water rippling, cloud/sky → clouds drifting slowly, tree/leaf/forest → leaves swaying, smoke → smoke swirling, glowing/aura/magic → soft glow pulsing, bubble → bubbles rising, …), ≤ 3, else "dust motes floating, light shifting" | the still's own features move; a run without meta.json wd14_tags keeps the storyboard motion |
 
 The per-story loop limit is `storyboard.limits.max_animated`.
 

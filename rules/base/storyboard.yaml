@@ -63,7 +63,16 @@ regex:
   photo_clothing: {pattern: '\b(wearing|dress|shirt|coat|suit|jacket|trousers|heels|boots)\b', ignorecase: true}
   # Wan cannot keep two bodies apart: actions that touch or undress never go into a motion prompt.
   motion_actions: {pattern: '\b(kiss|undress|unbutton|remov\w+)\b', ignorecase: true}
-  ambient_motion: {pattern: '\b(ambient|only|static)\b', ignorecase: true}
+  ambient_motion: {pattern: '\b(ambient|only|static)\b', ignorecase: true}   # the old loophole, unused since 2026-10-24
+  # A 2+ character loop moves only the surroundings: the prompt starts with this (rules/base/animate.yaml ambient.template)
+  ambient_prefix: {pattern: 'ambient only, characters still\b', ignorecase: true}   # anchored (re.match)
+  # ... and moves no character (ambient phrases like "bubbles rising", "leaves swaying" stay clear of these)
+  character_motion:
+    ignorecase: true
+    words: ['danc(e|es|ing)', 'run(s|ning)?', 'jump(s|ing)?', 'fad(es|ing)', 'turn(s|ing)?', 'wav(ing|es (a |her |his )?hands?)',
+            'spin(s|ning)?', 'flap(s|ping)?', 'rises', 'walk(s|ing)?', 'nod(s|ding)?', 'smil(es|ing)', 'kiss(es|ing)?',
+            'hug(s|ging)?', 'blink(s|ing)?', 'laugh(s|ing)?', 'talk(s|ing)?', 'rais(es|ing)', 'lift(s|ing)?',
+            'reach(es|ing)?', 'gestur(es|ing)', 'leans?', 'leaning', 'steps?', 'stepping']
   # pick_motion (motion for an already rendered story) says kiss\w* where check() says kiss
   pick_motion_actions: {pattern: '\b(kiss\w*|undress|unbutton|remov\w+)\b', ignorecase: true}
 
@@ -149,9 +158,13 @@ checks:
         if: {all: [{truthy: '$p.animate?'}, {truthy: '$p.motion?'}, {search: {regex: $fences.motion, in: $p.motion, mask: allow}}]}
         message: "panel {i}: motion prompt contains a banned action"
       - id: motion_two_people_ambient
-        # Wan merges two moving bodies; note $p.motion is strict: animate without a motion key in a 2+ panel raises
-        if: {all: [{truthy: '$p.animate?'}, {gt: [$p.characters|len, 1]}, {not: {search: {regex: ambient_motion, in: $p.motion}}}]}
-        message: "panel {i}: two people may only get ambient motion (say 'ambient only, static camera')"
+        # Wan merges two moving bodies: a 2+ panel loops its surroundings only (before 2026-10-24 any "static" passed);
+        # note $p.motion is strict: animate without a motion key in a 2+ panel raises
+        if: {all: [{truthy: '$p.animate?'}, {gt: [$p.characters|len, 1]}, {not: {match: {regex: ambient_prefix, in: $p.motion}}}]}
+        message: "panel {i}: two people may only get ambient motion (write 'ambient only, characters still, <ambient>, static camera')"
+      - id: character_motion_verbs
+        if: {all: [{truthy: '$p.animate?'}, {gt: [$p.characters|len, 1]}, {search: {regex: character_motion, in: $p.motion}}]}
+        message: "panel {i}: ambient motion must not move a character ('{m}')"
       - id: known_location
         if: {not_in: [$p.location_id, $loc_ids]}
         message: "panel {i}: unknown location {p[location_id]}"

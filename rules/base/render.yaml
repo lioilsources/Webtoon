@@ -23,3 +23,7 @@ ip_adapter:
 
 # Character reference sheet (render.py --sheet, --char-refs): the pose and backdrop tags.
 sheet_tags: [standing, full body, looking at viewer, smile, white background, simple background, straight-on, arms at sides]
+
+# WD14 general tags kept per panel in meta.json (images[].wd14_tags, highest score first): animate.py builds the
+# ambient loop of a panel from them (rules/base/animate.yaml ambient). The tagger already runs for the safety check.
+wd14_tags: {threshold: 0.35, max: 40}

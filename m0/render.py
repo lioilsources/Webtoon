@@ -46,6 +46,14 @@ def safety(tags, audience="teen", free=False, profile=None):
     return bad
 
 
+def top_tags(tags):
+    """WD14 general tags at or above rules wd14_tags.threshold, highest score first, at most .max (meta.json wd14_tags:
+    animate.py builds a panel's ambient loop from them)."""
+    W = R["wd14_tags"]
+    got = sorted(((t, round(c, 3)) for t, c in tags.get("general", {}).items() if c >= W["threshold"]), key=lambda x: -x[1])
+    return dict(got[:W["max"]])
+
+
 def identity(tags, char, shot=None):
     """Recall of the character's design tags (those in frame for the shot) among WD14-detected tags."""
     # "(brown hair:1.3)" → "brown hair": weights are prompt syntax, WD14 reports bare tags.
@@ -176,7 +184,7 @@ def main():
         rec["refs"] = [cid for cid in ids if cid in char_refs]
         name = f"p{i:02d}_s{k}.png"
         (outdir / name).write_bytes(png)
-        rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"))
+        rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"), wd14_tags=top_tags(tags))
         if char["id"] in {c["id"] for c in panels[i].get("characters", [])} or args.sheet:
             rec["identity"] = identity(tags, char, panels[i].get("shot"))
         # Every character in frame, so a drifting second lead shows up too (WD14 tags the whole image:

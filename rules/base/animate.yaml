@@ -16,3 +16,32 @@ negative:
 style_tail_tags: 4   # the preset's first aesthetic tags appended to the motion prompt, so the loop keeps the look
 default_motion: subtle ambient motion, static camera   # --panels given for a panel without a motion prompt
 webp_quality: 80
+
+# --- ambient-only loops ----------------------------------------------------------------------------
+# Wan merges or swaps two moving bodies, so a panel with 2+ characters (and an establishing panel) loops only its
+# surroundings: the characters hold still and the scene moves. The motion prompt of such a panel is built here from
+# the WD14 tags render.py stored for its still (meta.json images[].wd14_tags); storyboard check() demands the same
+# shape from the LLM (motion_two_people_ambient, character_motion_verbs). A run without wd14_tags (older meta.json)
+# keeps the storyboard motion unchanged.
+ambient:
+  template: "ambient only, characters still, {ambient}, static camera"   # 2+ characters
+  template_empty: "ambient only, {ambient}, static camera"               # establishing / no characters
+  template_single: "{motion}, {ambient}, static camera"   # one character: its storyboard subject motion + the ambient
+  max_phrases: 3
+  default: dust motes floating, light shifting   # no tag matched
+  # WD14 tag → phrase. A tag matches when it equals one of `tags` or has it as a whole word ("cloudy sky" → sky);
+  # the panel's tags are read by score, highest first, so the strongest feature of the still moves first.
+  from_tags:
+    - {tags: [rain], phrase: rain falling}
+    - {tags: [night sky, starry sky, star (sky)], phrase: stars twinkling}
+    - {tags: [fire, torch, candle, campfire], phrase: flames flickering}
+    - {tags: [water, ocean, river, sea, lake, waves], phrase: water rippling}
+    - {tags: [cloud, sky], phrase: clouds drifting slowly}
+    - {tags: [tree, leaf, forest, falling leaves], phrase: leaves swaying}
+    - {tags: [smoke, steam, fog], phrase: smoke swirling}
+    - {tags: [glowing, aura, magic], phrase: soft glow pulsing}
+    - {tags: [bubble], phrase: bubbles rising}
+    - {tags: [snow, snowing], phrase: snow falling}
+    - {tags: [petals, cherry blossoms], phrase: petals drifting}
+    - {tags: [neon lights, city lights, lights], phrase: lights flickering softly}
+    - {tags: [curtains], phrase: curtains swaying}

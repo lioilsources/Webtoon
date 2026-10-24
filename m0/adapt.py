@@ -286,7 +286,8 @@ def pick_motion(args):
                 errs.append(f"panel {g['n']} does not exist")
             elif any(ENGINE.re[k].search(g["motion"]) for k in PM["banned"]):
                 errs.append(f"panel {g['n']}: banned action in motion")
-            elif len(p["characters"]) > 1 and not ENGINE.re["ambient_motion"].search(g["motion"]):
+            elif len(p["characters"]) > 1 and (not ENGINE.re["ambient_prefix"].match(g["motion"])
+                                               or ENGINE.re["character_motion"].search(g["motion"])):
                 errs.append(f"panel {g['n']}: two people may only get ambient motion")
         if not errs:
             break

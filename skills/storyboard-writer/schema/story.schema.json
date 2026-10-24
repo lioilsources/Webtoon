@@ -230,7 +230,7 @@
           "motion": {
             "type": "string",
             "maxLength": 120,
-            "description": "Wan I2V motion prompt in English: subject motion + ambient + 'static camera'. Empty when animate is false."
+            "description": "Wan I2V motion prompt in English: subject motion + ambient + 'static camera'; a panel with 2+ characters: 'ambient only, characters still, <ambient>, static camera'. Empty when animate is false."
           }
         }
       }

@@ -1,7 +1,9 @@
 """rules/profiles: merge semantics, every profile valid, today's flags ↔ profiles, and the new superhero profile."""
 
 import argparse
+import contextlib
 import copy
+import io
 import json
 import sys
 import unittest
@@ -129,7 +131,8 @@ class Superhero(unittest.TestCase):
             adapt.save_json = lambda path, obj: None
             args = argparse.Namespace(id="lx_hero", style="western_comic", audience="kids", free=False, attempts=1,
                                       dry_run=False, profile="superhero", source=str(cases.EXAMPLES / "kids_park.input.md"))
-            adapt.adapt(args)
+            with contextlib.redirect_stdout(io.StringIO()):
+                adapt.adapt(args)
         finally:
             adapt.chat, adapt.save_json = orig
         system = calls[0][0]["content"]

@@ -14,6 +14,7 @@ import argparse
 import datetime
 import os
 import random
+import re
 import time
 from pathlib import Path
 
@@ -97,6 +98,47 @@ def graph(start_image, motion, preset, width, height, length, seed, prefix, free
     return g
 
 
+def ambient_phrases(wd14):
+    """meta.json wd14_tags {tag: score} → up to ambient.max_phrases loop phrases (rules/base/animate.yaml from_tags)."""
+    A = R["ambient"]
+    out = []
+    for tag, _ in sorted(wd14.items(), key=lambda x: -x[1]):
+        for e in A["from_tags"]:
+            if any(tag == k or re.search(rf"(?<!\S){re.escape(k)}(?!\S)", tag) for k in e["tags"]):
+                if e["phrase"] not in out:
+                    out.append(e["phrase"])
+                break
+        if len(out) >= A["max_phrases"]:
+            break
+    return out or [A["default"]]
+
+
+def loop_motion(panel, motion, wd14):
+    """The motion prompt a loop actually gets. Without wd14 tags (a run from before they were stored): the storyboard
+    motion unchanged. Establishing / empty panels and panels with 2+ characters: ambient only from the still's tags;
+    one character: its subject motion (from the storyboard) plus the tag-derived ambient."""
+    if wd14 is None:
+        return motion
+    A = R["ambient"]
+    n = len(panel.get("characters", []))
+    phrases = ambient_phrases(wd14)
+    if n >= 2:
+        return A["template"].format(ambient=", ".join(phrases))
+    if n == 0 or panel.get("shot") == "establishing":
+        return A["template_empty"].format(ambient=", ".join(phrases))
+    core = re.sub(r",?\s*static camera$", "", motion.strip().rstrip("."), flags=re.I)
+    extra = [p for p in phrases if p.lower() not in core.lower()]
+    return A["template_single"].format(motion=core, ambient=", ".join(extra)) if extra else motion
+
+
+def wd14_by_panel(meta_path):
+    """out/<day>/<run>/meta.json → {panel: wd14_tags} of the s0 stills (panels without them are left out)."""
+    if not meta_path.exists():
+        return {}
+    return {r["panel"]: r["wd14_tags"] for r in load_json(meta_path).get("images", [])
+            if r.get("variant") == 0 and r.get("wd14_tags") is not None}
+
+
 def select_panels(panels, explicit, force):
     if explicit:
         idx = [int(i) for i in explicit.split(",")]
@@ -141,13 +183,14 @@ def main():
         meta["videos"] = [r for r in meta["videos"] if (outdir / r["file"]).exists()]
         idx = [i for i in idx if not (outdir / f"p{i:02d}_video.webp").exists()]
 
+    wd14 = wd14_by_panel(outdir / "meta.json")  # render.py's WD14 tags of the stills (older runs: none)
     jobs = []
     for i in idx:
         still = outdir / f"p{i:02d}_s0.png"
         if not still.exists():
             print(f"p{i:02d}: still {still.name} missing, render it first — skipped")
             continue
-        motion = panels[i].get("motion") or R["default_motion"]
+        motion = loop_motion(panels[i], panels[i].get("motion") or R["default_motion"], wd14.get(i))
         w, h = size_for(still)
         jobs.append((i, still, motion, w, h, args.seed_base + i * 100))
 
