@@ -20,14 +20,14 @@ import prompts
 import rules
 from common import DATA, OUT, load_json, save_json, split_tags, wd14_tag
 
-# WD14 thresholds, reseeds and IP-Adapter defaults: rules/render.yaml (with the reasons).
+# WD14 thresholds, reseeds and IP-Adapter defaults: rules/base/render.yaml and the profiles (with the reasons).
 R = rules.load("render")
-UNSAFE = dict(R["unsafe"])
-UNSAFE_KIDS = {**UNSAFE, **R["unsafe_kids"]}
+UNSAFE = dict(R["rating_limits"])
+UNSAFE_KIDS = dict(rules.cfg("render", "kids")["rating_limits"])
 DESIGN_THRESHOLD = R["design_threshold"]
 MAX_RESEED = R["max_reseed"]
-ADULT_TAG_LIMITS = dict(R["adult_tag_limits"])
-AGE_TAG_LIMITS = dict(R["age_tag_limits"])  # free worlds: never dropped
+ADULT_TAG_LIMITS = dict(rules.cfg("render", "harlequin")["tag_limits"])
+AGE_TAG_LIMITS = dict(rules.cfg("render", "free")["tag_limits"])  # free worlds: never dropped
 IP = R["ip_adapter"]
 
 
@@ -36,16 +36,13 @@ def sheet_panel(char):
             "visual_tags": list(R["sheet_tags"])}
 
 
-def safety(tags, audience="teen", free=False):
-    g = tags.get("general", {})
-    if free:  # always an adult world
-        return {k: round(g[k], 3) for k, lim in AGE_TAG_LIMITS.items() if g.get(k, 0) > lim}
-    bad = {}
-    r = tags.get("rating", {})
-    limits = UNSAFE_KIDS if audience == "kids" else UNSAFE
-    bad.update({k: round(r.get(k, 0), 3) for k, lim in limits.items() if r.get(k, 0) > lim})
-    if audience == "adult":  # fashion is fine, a panel dominated by the neckline is not
-        bad.update({k: round(g[k], 3) for k, lim in ADULT_TAG_LIMITS.items() if g.get(k, 0) > lim})
+def safety(tags, audience="teen", free=False, profile=None):
+    """WD14 tags → {tag: score} over the profile's limits (empty = safe). The profile: given, else from audience /
+    free (a teen world has none: the base rating limits only). free: no rating check, the age limits never dropped."""
+    R = rules.cfg("render", profile or ("free" if free else rules.profile_of(False, audience)))
+    g, r = tags.get("general", {}), tags.get("rating", {})
+    bad = {k: round(r.get(k, 0), 3) for k, lim in R["rating_limits"].items() if r.get(k, 0) > lim}
+    bad.update({k: round(g[k], 3) for k, lim in R["tag_limits"].items() if g.get(k, 0) > lim})
     return bad
 
 
@@ -80,6 +77,7 @@ def main():
     ap.add_argument("--ip-preset", default=IP["preset"], help='or "PLUS FACE (portraits)"')
     ap.add_argument("--ip-end", type=float, default=IP["end"])
     ap.add_argument("--panels", default=None, help="comma separated panel indices")
+    ap.add_argument("--profile", choices=rules.profiles(), help="safety profile (default: the world's, rules.world_profile)")
     ap.add_argument("--regions", action="store_true", help="own prompt per character over its strip of the frame (two-shots)")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--skip-existing", action="store_true", help="resume: keep panels already on disk")
@@ -138,7 +136,7 @@ def main():
                                regions=p.get("regions"), refs=refs)
             png = comfy.run(g)[0]
             tags = wd14_tag(png)
-            bad = safety(tags, world.get("audience"), free=bool(world.get("free")))
+            bad = safety(tags, profile=args.profile or rules.world_profile(world))
             attempts.append({"seed": s, "unsafe": bad})
             if not bad:
                 break

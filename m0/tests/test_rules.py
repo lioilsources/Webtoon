@@ -30,16 +30,21 @@ class Rules(unittest.TestCase):
             rules.REQUIRED["music"].remove("no_such_key")
             rules.load.cache_clear()
 
-    def test_free_kids_refused(self):  # adapt.main() refuses --free --audience kids; the engine does too
+    def test_free_kids_refused(self):  # adapt.main() refuses --free --audience kids; the profile mapping does too
         with self.assertRaises(ValueError):
-            rules.mode(True, "kids")
+            rules.profile_of(True, "kids")
 
-    def test_local_strip_values(self):  # the literals local_strip.sh had before it read rules/pipeline.yaml
-        want = {"prefix.app": "lx_", "prefix.free": "lxf_", "day.app": "local", "day.free": "local_free",
-                "default_style.adult": "webtoon_romance", "default_style.kids": "clean_webtoon_noartist",
-                "wait_seconds": "300", "deadline.window_end_hour": "13", "deadline.window_end": "13:00",
-                "deadline.late_slot_minutes": "60", "deadline.no_wrap": "23:59"}
-        self.assertEqual({k: get("pipeline.strip." + k) for k in want}, want)
+    def test_local_strip_values(self):  # the literals local_strip.sh had before it read rules (base pipeline + profiles)
+        want = {"harlequin:pipeline.strip.prefix": "lx_", "free:pipeline.strip.prefix": "lxf_",
+                "kids:pipeline.strip.prefix": "lx_", "harlequin:pipeline.strip.day": "local",
+                "free:pipeline.strip.day": "local_free", "kids:pipeline.strip.day": "local",
+                "harlequin:profile.styles.strip_default": "webtoon_romance", "free:profile.styles.strip_default": "webtoon_romance",
+                "kids:profile.styles.strip_default": "clean_webtoon_noartist",
+                "free:profile.free": "True", "harlequin:profile.free": "False", "kids:profile.audience": "kids",
+                "pipeline.strip.wait_seconds": "300", "pipeline.strip.deadline.window_end_hour": "13",
+                "pipeline.strip.deadline.window_end": "13:00", "pipeline.strip.deadline.late_slot_minutes": "60",
+                "pipeline.strip.deadline.no_wrap": "23:59"}
+        self.assertEqual({k: get(k) for k in want}, want)
         subprocess.run(["bash", "-n", "m0/local_strip.sh"], cwd=ROOT, check=True)
 
     def test_shorts_free_prefix(self):  # shorts.py and the Go pack share it

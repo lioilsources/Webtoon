@@ -1,5 +1,5 @@
 # Timing and layout rules of m0/shorts.py (backend episode → 9:16 video for TikTok / YouTube Shorts).
-# Free strips are never published: the world prefix is rules/pack.yaml forbidden_world_prefix (shared with the packs).
+# Free strips are never published: the world prefix is rules/base/pack.yaml forbidden_world_prefix (shared with the packs).
 
 frame: {width: 1080, height: 1920, fps: 30}
 top: 200          # TikTok/Shorts top bar: no lettering above this

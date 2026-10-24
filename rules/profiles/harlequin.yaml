@@ -1,0 +1,32 @@
+# harlequin: the SFW romance app (today's adult audience: adapt.py default, local_strip.sh without -a / -f).
+# Deep-merged over rules/base/*.yaml: a mapping merges key by key, a list or a value replaces,
+# {extend: [...]} appends to the base list, {replace: ...} replaces a mapping whole.
+
+profile:
+  description: SFW romance for adults (the app's romance category)
+  audience: adult   # world.json audience: render thresholds, pack label
+  free: false
+  # adapt.py --style must be one of `pool` (all: any data/styles.json preset); `default` for adapt.py,
+  # `strip_default` for local_strip.sh (the two defaults differ today: fashion_editorial vs webtoon_romance)
+  styles: {pool: all, default: fashion_editorial, strip_default: webtoon_romance}
+  pack: {audience: adult, exported: true}   # export-pack labels a pack with its most restrictive world audience
+
+storyboard:
+  fences:
+    fence: banned        # the SFW fence on tags, outfits, photo sentences and motion
+    kids_fence: never
+    motion: [age_banned, banned, motion_actions]
+    allow: never
+  to_m0:
+    tone: romantický, něžný, s humorem
+    bible_rules: ["SFW: polibek ano, nahota ne."]
+    couple_tags: [couple, hetero]   # every 2-character panel is the couple
+    fonts: romance                  # compose.py grown-up lettering
+  adapt: {schema: story.schema.json, system: adapt_system.md, example: santorini, addendum: null, rewrite: null}
+
+prompts:
+  negative: {styles: adult_negative}
+
+render:
+  # fashion is fine, a panel dominated by the neckline is not (general-tag confidence limits)
+  tag_limits: {cleavage: 0.8, large breasts: 0.8, covered nipples: 0.3, shirtless: 0.5, underwear: 0.3, bed: 0.7}

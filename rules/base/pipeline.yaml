@@ -1,13 +1,12 @@
 # Rules of m0/local_strip.sh (screenplay → finished strip with no Claude in the loop). The script reads them with
-# `python3 m0/rules.py get pipeline.strip.<key>`.
+# `python3 m0/rules.py get <profile>:pipeline.strip.<key>` (the free profile overrides prefix and day).
 
 strip:
   # Strip ids get their own reader category: lx_ (app) / lxf_ (free experiment, never imported, translated or
   # published: backend export-pack and shorts.py refuse w_lxf_ worlds, rules/pack.yaml).
-  prefix: {app: lx_, free: lxf_}
-  day: {app: local, free: local_free}   # WEBTOON_DAY → out/<day>/<id>
-  # style when -s is not given (adapt.py has its own default for direct calls: storyboard.yaml adapt.default_style)
-  default_style: {adult: webtoon_romance, kids: clean_webtoon_noartist}
+  # (the free profile overrides both: lxf_, local_free)
+  prefix: lx_
+  day: local   # WEBTOON_DAY → out/<day>/<id>
   wait_seconds: 300   # poll interval while waiting for the LLM / ComfyUI window
   # Render stops at WEBTOON_DEADLINE: the morning ComfyUI window ends at 13:00; a slot Director grants later gets
   # an hour; never past midnight (the deadline is compared as an HH:MM string).

@@ -20,7 +20,7 @@ from common import DATA, http
 
 AUDIO_URL = os.environ.get("WEBTOON_AUDIO", "http://192.168.88.66:8093")
 LIB = DATA / "music"
-# Length, window, model and the moods: rules/music.yaml.
+# Length, window, model and the moods: rules/base/music.yaml.
 R = rules.load("music")
 LENGTH = R["length"]  # s: ACE-Step returns 9–19 % short of this; the longest short is ~65 s, and shorts.py loops anyway
 MOODS = dict(R["moods"])

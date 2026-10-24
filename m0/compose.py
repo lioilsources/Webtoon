@@ -16,7 +16,7 @@ from PIL import Image, ImageDraw, ImageFont
 import rules
 from common import ROOT, load_json
 
-# Layout rules (gaps, font sets, bubble sizing) with their reasons: rules/compose.yaml.
+# Layout rules (gaps, font sets, bubble sizing) with their reasons: rules/base/compose.yaml.
 R = rules.load("compose")
 WIDTH = R["width"]
 GAPS = dict(R["gaps"])

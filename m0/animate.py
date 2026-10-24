@@ -22,13 +22,21 @@ import rules
 from common import OUT, load_json, save_json, wd14_tag
 from render import MAX_RESEED, safety
 
-# Loop rules (fps, size, negatives, the per-story limit) with their reasons: rules/animate.yaml, rules/storyboard.yaml.
+# Loop rules (fps, size, negatives, the per-story limit) with their reasons: rules/base/animate.yaml (+ profiles),
+# rules/base/storyboard.yaml.
 R = rules.load("animate")
 FPS = R["fps"]
 MAX_ANIMATED = rules.get("storyboard.limits.max_animated")  # one loop costs about 11 stills (PLAN-motion-panels §3)
 SIZE = {k: tuple(v) for k, v in R["size"].items()}
-NEGATIVE = ", ".join(R["negative"]["common"] + R["negative"]["sfw"])
-NEGATIVE_FREE = ", ".join(R["negative"]["common"] + R["negative"]["free"])
+NEGATIVE = ", ".join(R["negative"]["common"] + R["negative"]["tail"])
+
+
+def negative(profile=None):
+    n = rules.cfg("animate", profile)["negative"]
+    return ", ".join(n["common"] + n["tail"])
+
+
+NEGATIVE_FREE = negative("free")
 STYLE_TAIL_TAGS = R["style_tail_tags"]
 
 
@@ -47,7 +55,7 @@ def style_tail(preset):
     return ", ".join(preset.get("aesthetic_tags", [])[:STYLE_TAIL_TAGS])
 
 
-def graph(start_image, motion, preset, width, height, length, seed, prefix, free=False):
+def graph(start_image, motion, preset, width, height, length, seed, prefix, free=False, profile=None):
     """FLF2V loop graph: same nodes and parameters as video-stack flf2v_lightning_portrait.json, plus
     SaveAnimatedWEBP and three SaveImage probes (first / middle / last frame) for the WD14 check."""
     positive = motion.strip().rstrip(".")
@@ -63,7 +71,7 @@ def graph(start_image, motion, preset, width, height, length, seed, prefix, free
         "shift_low": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_low", 0], "shift": 5.0}},
         "clip": {"class_type": "CLIPLoader", "inputs": {"clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default"}},
         "pos": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": positive}},
-        "neg": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": NEGATIVE_FREE if free else NEGATIVE}},
+        "neg": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": negative(profile) if profile else NEGATIVE_FREE if free else NEGATIVE}},
         "still": {"class_type": "LoadImage", "inputs": {"image": start_image}},
         "vae": {"class_type": "VAELoader", "inputs": {"vae_name": "wan_2.1_vae.safetensors"}},
         # start_image and end_image are the same still → the loop closes on itself.
@@ -109,6 +117,7 @@ def main():
     ap.add_argument("--seed-base", type=int, default=9000)
     ap.add_argument("--skip-existing", action="store_true", help="keep loops already on disk")
     ap.add_argument("--force", action="store_true", help=f"allow more than {MAX_ANIMATED} loops")
+    ap.add_argument("--profile", choices=rules.profiles(), help="negative and safety profile (default: the world's)")
     ap.add_argument("--dry-run", action="store_true", help="write the graphs to out/, call nothing")
     args = ap.parse_args()
 
@@ -117,6 +126,7 @@ def main():
     styles = load_json(Path(__file__).resolve().parent.parent / "data" / "styles.json")
     preset = styles["presets"][world["style_id"]]
     free = bool(world.get("free"))
+    profile = args.profile or rules.world_profile(world)
     panels = sb["panels"]
     idx = select_panels(panels, args.panels, args.force)
     day = os.environ.get("WEBTOON_DAY") or datetime.date.today().isoformat()
@@ -143,7 +153,7 @@ def main():
 
     if args.dry_run:
         for i, still, motion, w, h, seed in jobs:
-            g = graph(f"webtoon_{args.run}_p{i:02d}.png", motion, preset, w, h, length, seed, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free)
+            g = graph(f"webtoon_{args.run}_p{i:02d}.png", motion, preset, w, h, length, seed, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free, profile=profile)
             path = outdir / f"p{i:02d}_video_graph.json"
             save_json(path, g)
             print(f"[p{i:02d} {w}x{h} len={length} seed={seed}] + {g['pos']['inputs']['text']}\n  graph → {path}")
@@ -162,14 +172,14 @@ def main():
                 print(f"deadline {os.environ['WEBTOON_DEADLINE']} reached, stopping")
                 raise SystemExit(3)
             s = seed if attempt == 0 else random.randint(0, 2**31)
-            g = graph(name, motion, preset, w, h, length, s, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free)
+            g = graph(name, motion, preset, w, h, length, s, f"webtoon/{day}/{args.run}/p{i:02d}_video", free=free, profile=profile)
             outs = comfy.run_outputs(g, timeout=1800)
             webp = next((f for f in outs.get("webp", []) if f["filename"].lower().endswith(".webp")), None)
             if webp is None:
                 raise RuntimeError(f"p{i:02d}: SaveAnimatedWEBP produced no file: {list(outs)}")
             probes = {k: outs[f"save_{k}"][0]["bytes"] for k in ("v0", "v1", "v2")}
             tags = {k: wd14_tag(b) for k, b in probes.items()}
-            bad = {k: v for k, t in tags.items() for v in [safety(t, world.get("audience"), free=free)] if v}
+            bad = {k: v for k, t in tags.items() for v in [safety(t, profile=profile)] if v}
             rec["attempts"].append({"seed": s, "unsafe": bad})
             if not bad:
                 break

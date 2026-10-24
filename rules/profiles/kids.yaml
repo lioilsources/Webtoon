@@ -1,0 +1,33 @@
+# kids: adventure strips for 6–12 (today's --audience kids / local_strip.sh -a kids). Deep-merged over rules/base.
+
+profile:
+  description: adventure for children 6–12
+  audience: kids
+  free: false
+  styles:
+    pool: [clean_webtoon_noartist, clean_webtoon, flat_anime_mema, minimal_flat, ligne_claire, watercolor_paris]
+    default: clean_webtoon_noartist
+    strip_default: clean_webtoon_noartist
+  pack: {audience: kids, exported: true}
+
+storyboard:
+  required:
+    character: [id, name, kind, gender, base, outfits, photo]   # child, adult, creature, robot, spirit
+  fences:
+    fence: kids_sfw         # the SFW fence minus `child` (the design anchor is "female child")
+    kids_fence: kids_banned # no violence or romance, on tags, bubbles, motion and character fields
+    motion: [age_banned, kids_banned, kids_sfw, motion_actions]
+    allow: never
+  to_m0:
+    tone: dobrodružný, odvážný, laskavý
+    bible_rules: ["Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."]
+    couple_tags: []   # any pair together, no romance
+    fonts: null       # compose.py's default (children's) fonts, like data/stories/les: no "fonts" key
+  # own schema, prompt and few-shot (skills/storyboard-writer/{schema/story.kids.schema.json,prompts/adapt_system_kids.md,examples/kids_park.*})
+  adapt: {schema: story.kids.schema.json, system: adapt_system_kids.md, example: kids_park, addendum: null, rewrite: null}
+
+prompts:
+  negative: {styles: kids_negative}
+
+render:
+  rating_limits: {sensitive: 0.5}   # on top of the base explicit / questionable; same as backend wd14.Thresholds("kids")

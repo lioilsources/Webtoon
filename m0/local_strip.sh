@@ -9,13 +9,15 @@
 #   m0/local_strip.sh -r scenar.md                                      # own prompt per character in two-shots
 #   m0/local_strip.sh -c scenar.md                                      # reference sheet per character (IP-Adapter)
 #   m0/local_strip.sh -a kids scenar.md                                 # kids adventure: adapt --audience kids, style clean_webtoon_noartist
+#   m0/local_strip.sh -P superhero scenar.md                            # a profile (rules/profiles): harlequin|kids|free|superhero
 #
 # Gates instead of the clock: LLM phases wait until a 1-token chat to openclaw-default answers; ComfyUI phases wait
 # until ComfyUI answers AND the LLM does not (never both at once). Render stops at WEBTOON_DEADLINE (default 13:00).
 # Every phase skips what is already done, so a rerun resumes. Log: out/local/<id>.log
-# -f: no SFW rules for the LLM, no SFW negatives, no WD14 rating check; adults only stays enforced (rules/storyboard.yaml
-# age_banned, rules/prompts.yaml age_negative, rules/render.yaml age_tag_limits). Ids lxf_, output out/local_free/, never
-# imported, translated or published. Prefixes, days, default styles and the deadline: rules/pipeline.yaml.
+# -f (profile free): no SFW rules for the LLM, no SFW negatives, no WD14 rating check; adults only stays enforced
+# (rules/profiles/free.yaml: fences age_banned, prompts negative tags, render tag_limits). Ids lxf_, output
+# out/local_free/, never imported, translated or published. Prefixes, days and the deadline: rules/base/pipeline.yaml
+# (+ the profile), default styles: the profile's styles.strip_default.
 set -u
 cd "$(dirname "$0")/.."
 ROOT=$PWD
@@ -23,15 +25,19 @@ LLM=${WEBTOON_LLM:-http://192.168.88.66:8080/v1}; MODEL=${WEBTOON_LLM_MODEL:-ope
 COMFY=${WEBTOON_COMFY:-http://192.168.88.66:8188}
 # the CLI build; /tmp/claude-501/webtoon is also the running `webtoon serve`, never overwrite that one
 if [ -x /tmp/claude-501/webtoon-cli ]; then BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon-cli}; else BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon}; fi
-STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=
-while getopts "s:p:a:frc" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; *) exit 2 ;; esac; done
+STYLE=; PHASE=all; FREE=; REGIONS=; REFS=; AUD=; PROFILE=
+while getopts "s:p:a:P:frc" o; do case $o in s) STYLE=$OPTARG ;; p) PHASE=$OPTARG ;; a) AUD=$OPTARG ;; P) PROFILE=$OPTARG ;; f) FREE=1 ;; r) REGIONS=1 ;; c) REFS=1 ;; *) exit 2 ;; esac; done
 shift $((OPTIND - 1))
-[ $# -eq 0 ] && { sed -n 2,17p "$0"; exit 2; }
-rule() { python3 m0/rules.py get "pipeline.strip.$1"; }  # rules/pipeline.yaml
-# -a kids: adapt.py --audience kids; the kids preset unless -s says otherwise
-if [ -z "$STYLE" ]; then if [ "$AUD" = kids ]; then STYLE=$(rule default_style.kids); else STYLE=$(rule default_style.adult); fi; fi
-if [ -n "$FREE" ]; then MODE=free; else MODE=app; fi
-export WEBTOON_DAY=$(rule "day.$MODE"); PREFIX=$(rule "prefix.$MODE")
+[ $# -eq 0 ] && { sed -n 2,18p "$0"; exit 2; }
+# the profile: -P, else today's flags (-f → free, -a kids → kids, otherwise harlequin); -f / -a follow a -P
+if [ -z "$PROFILE" ]; then if [ -n "$FREE" ]; then PROFILE=free; elif [ "$AUD" = kids ]; then PROFILE=kids; else PROFILE=harlequin; fi; fi
+prof() { python3 m0/rules.py get "$PROFILE:$1"; }    # rules/base merged with rules/profiles/$PROFILE.yaml
+rule() { prof "pipeline.strip.$1"; }                 # rules/base/pipeline.yaml
+[ "$(prof profile.free)" = True ] && FREE=1 || FREE=
+AUD=$(prof profile.audience); [ "$AUD" = kids ] || AUD=
+# the profile's strip preset unless -s says otherwise
+[ -z "$STYLE" ] && STYLE=$(prof profile.styles.strip_default)
+export WEBTOON_DAY=$(rule day); PREFIX=$(rule prefix)
 WAIT=$(rule wait_seconds)
 OUTD=out/$WEBTOON_DAY
 mkdir -p "$OUTD"
@@ -56,7 +62,7 @@ phase_write() {
   for i in "${!ids[@]}"; do
     id=${ids[$i]}; [ -f "data/stories/$id/storyboard.json" ] && continue
     echo "== píše LLM: $id (${styles[$i]}) $(date +%H:%M)"
-    python3 m0/adapt.py --id "$id" --style "${styles[$i]}" ${FREE:+--free} ${AUD:+--audience "$AUD"} "${srcs[$i]}" >> "$OUTD/$id.log" 2>&1 \
+    python3 m0/adapt.py --id "$id" --style "${styles[$i]}" --profile "$PROFILE" "${srcs[$i]}" >> "$OUTD/$id.log" 2>&1 \
       || echo "!! $id: LLM storyboard nevalidní, viz $OUTD/$id.log"
   done
 }
@@ -74,7 +80,7 @@ phase_render() {
     d=data/stories/$id; [ -f "$d/storyboard.json" ] || continue
     [ -f "$OUTD/$id/strip.png" ] && continue
     echo "== kreslí ComfyUI: $id $(date +%H:%M)"
-    python3 m0/render.py --world "$d/world.json" --storyboard "$d/storyboard.json" --run "$id" --skip-existing ${REGIONS:+--regions} ${REFS:+--char-refs} >> "$OUTD/$id.log" 2>&1
+    python3 m0/render.py --world "$d/world.json" --storyboard "$d/storyboard.json" --run "$id" --profile "$PROFILE" --skip-existing ${REGIONS:+--regions} ${REFS:+--char-refs} >> "$OUTD/$id.log" 2>&1
     rc=$?; [ $rc -eq 3 ] && { echo "== konec okna ComfyUI, pokračuj zítra stejným příkazem"; exit 3; }
     [ $rc -ne 0 ] && { echo "!! $id render selhal"; continue; }
     python3 m0/compose.py --storyboard "$d/storyboard.json" --panels "$OUTD/$id" --out "$OUTD/$id/strip.png" >> "$OUTD/$id.log" 2>&1
@@ -85,7 +91,7 @@ phase_render() {
     d=data/stories/$id; [ -f "$OUTD/$id/strip.png" ] || continue
     grep -q '"animate": *true' "$d/storyboard.json" || continue
     echo "== hýbe: $id $(date +%H:%M)"
-    python3 m0/animate.py --world "$d/world.json" --storyboard "$d/storyboard.json" --run "$id" --skip-existing >> "$OUTD/$id.log" 2>&1 \
+    python3 m0/animate.py --world "$d/world.json" --storyboard "$d/storyboard.json" --run "$id" --profile "$PROFILE" --skip-existing >> "$OUTD/$id.log" 2>&1 \
       || echo "!! $id smyčky selhaly (okýnka zůstanou statická)"
   done
 }

@@ -6,13 +6,13 @@ Order: quality, count tags, character tag_prompt, artist/style preset, scene tag
 import rules
 from common import dedupe, split_tags
 
-# The rules (and why) live in rules/prompts.yaml; data/styles.json holds the presets they pick from.
+# The rules (and why) live in rules/base/prompts.yaml and the profiles; data/styles.json holds the presets they pick from.
 R = rules.load("prompts")
 _RE = rules.regexes(R["regex"])
 DESIGN_RE, EXPRESSION_RE, LOWER_RE, FEET_RE, COLOR_RE = (_RE[k] for k in ("design", "expression", "lower", "feet", "color"))
 AGE_ANCHOR = set(R["age_anchor"])
 COUNT_TAGS = set(R["count_tags"])
-AGE_NEGATIVE = list(R["age_negative"])
+AGE_NEGATIVE = list(rules.cfg("prompts", "free")["negative"]["tags"])
 NATURAL = R["natural"]
 
 
@@ -107,9 +107,9 @@ def weight(tags):
 def audience_negative(world, styles):
     if world.get("free"):
         return AGE_NEGATIVE
-    # free worlds (local_strip.sh -f) lose the SFW negatives, never the age ones
-    key = R["audience_negative"].get(world.get("audience"))
-    return styles.get(key, []) if key else []
+    # the world's profile: free worlds (local_strip.sh -f) lose the SFW negatives, never the age ones; teen: none
+    neg = rules.cfg("prompts", rules.world_profile(world))["negative"]
+    return list(neg["tags"]) if "tags" in neg else styles.get(neg["styles"], []) if "styles" in neg else []
 
 
 def _natural(panel, chars, design_of, locs, styles, preset, world, sfw):

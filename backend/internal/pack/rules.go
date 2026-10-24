@@ -9,7 +9,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-// Rules are the pack rules of rules/pack.yaml (part size, WebP quality, cover size, the never-exported world
+// Rules are the pack rules of rules/base/pack.yaml (part size, WebP quality, cover size, the never-exported world
 // prefix, the dropped episode fields); the reasons are commented there.
 type Rules struct {
 	PartSize             int                         `yaml:"part_size"`
@@ -25,30 +25,30 @@ var (
 	rulesErr  error
 )
 
-// RulesPath is $WEBTOON_RULES/pack.yaml, else rules/pack.yaml in the working directory or the nearest parent
+// RulesPath is $WEBTOON_RULES/base/pack.yaml, else rules/base/pack.yaml in the working directory or the nearest parent
 // that has one (the CLI runs from backend/, tests from backend/internal/pack).
 func RulesPath() (string, error) {
 	if d := os.Getenv("WEBTOON_RULES"); d != "" {
-		return filepath.Join(d, "pack.yaml"), nil
+		return filepath.Join(d, "base", "pack.yaml"), nil
 	}
 	dir, err := os.Getwd()
 	if err != nil {
 		return "", err
 	}
 	for {
-		p := filepath.Join(dir, "rules", "pack.yaml")
+		p := filepath.Join(dir, "rules", "base", "pack.yaml")
 		if _, err := os.Stat(p); err == nil {
 			return p, nil
 		}
 		parent := filepath.Dir(dir)
 		if parent == dir {
-			return "", fmt.Errorf("rules/pack.yaml not found from the working directory up (set WEBTOON_RULES)")
+			return "", fmt.Errorf("rules/base/pack.yaml not found from the working directory up (set WEBTOON_RULES)")
 		}
 		dir = parent
 	}
 }
 
-// LoadRules reads and validates rules/pack.yaml once.
+// LoadRules reads and validates rules/base/pack.yaml once.
 func LoadRules() (Rules, error) {
 	rulesOnce.Do(func() {
 		p, err := RulesPath()

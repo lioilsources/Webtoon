@@ -25,12 +25,9 @@ age_anchor: [adult, mature female, mature male]
 # Count tags come from the characters (count_tags()); the storyboard's own are dropped from the scene.
 count_tags: [1girl, 1boy, 2girls, 2boys, 3girls, multiple girls, multiple boys, solo, no humans]
 
-# Free worlds (local_strip.sh -f) lose the SFW negatives, never the age ones.
-age_negative: [child, loli, shota, aged down, teenager, school uniform, serafuku, flat chest, petite, short stature,
-               childlike face, randoseru]
-
-# world.audience → the data/styles.json list added to the negative (others: none)
-audience_negative: {kids: kids_negative, adult: adult_negative}
+# The audience negative added to every prompt: {styles: <data/styles.json list>} or {tags: [...]}; per profile
+# (harlequin adult_negative, kids kids_negative, free its age tags), none for a world without a profile (teen).
+negative: {}
 
 close_up_location_tags: 3   # a full scene description pulls the camera back to a medium shot
 default_size: [832, 1216]   # a shot missing from styles.json shot_size

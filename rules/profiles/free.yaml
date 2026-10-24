@@ -1,0 +1,60 @@
+# free: an experiment outside the app (today's --free / local_strip.sh -f): every SFW fence lifted, adults only kept.
+# Ids lxf_, output out/local_free/, never imported, translated or published (rules/base/pack.yaml). Deep-merged over rules/base.
+
+profile:
+  description: experimental adult strips outside the app (never published)
+  audience: adult
+  free: true   # world.json "free": true
+  styles: {pool: all, default: fashion_editorial, strip_default: webtoon_romance}
+  pack: {audience: adult, exported: false}
+
+storyboard:
+  fences:
+    fence: age_banned   # --free swaps the SFW fence for the age fence alone
+    kids_fence: never
+    motion: [age_banned]   # free lifts the SFW actions, never the age fence
+    allow: never
+  to_m0:
+    tone: romantický, něžný, s humorem
+    bible_rules: ["Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."]
+    couple_tags: [couple, hetero]
+    fonts: romance
+  adapt:
+    schema: story.schema.json
+    system: adapt_system.md
+    example: santorini
+    addendum: null
+    # Free-mode prompt: the SFW passages of adapt_system.md replaced, the adult-only rules kept (and repeated).
+    rewrite:
+      audience: >-
+        AUDIENCE: adults only. Experimental run outside the app: follow the screenplay as written, including mature or
+        explicit scenes; you are not bound by SFW rules. Every character is an adult aged 23 or more with an adult body
+        and face; never minors, childlike looks or school settings.
+      cut: {from: "## SFW rewrite rules", to: "- Keep the ending exactly", heading: "## Story rules\n"}
+      # free_prompt() fails loudly when the skill text drifts from these
+      replace:
+        - [" NO lingerie, underwear, swimwear, bikini, see-through or wet clothing, crop tops, cleavage; beach wear is a sundress, linen, pareo over a dress. Men wear shirts (never shirtless, never open shirt).", ""]
+        - [" Never a panel with two people doing something, never a kiss, never undressing or clothes moving.", ""]
+        - ["build (petite|slender|", "build (slender|"]
+      # the example must pass the free fence itself, or the model copies what it rejects
+      example_replace:
+        - ["adult, petite, mature female", "adult, mature female"]
+        - ['"mature male,', '"adult, mature male,']
+
+prompts:
+  # free worlds lose the SFW negatives, never the age ones
+  negative:
+    tags: [child, loli, shota, aged down, teenager, school uniform, serafuku, flat chest, petite, short stature,
+           childlike face, randoseru]
+
+render:
+  # free worlds drop the rating check but never this one
+  rating_limits: {replace: {}}
+  tag_limits: {child: 0.35, loli: 0.35, shota: 0.35, aged down: 0.35, flat chest: 0.5, school uniform: 0.5,
+               serafuku: 0.5, randoseru: 0.35, kindergarten uniform: 0.35}
+
+animate:
+  negative: {tail: [child, childlike face, aged down]}
+
+pipeline:
+  strip: {prefix: lxf_, day: local_free}

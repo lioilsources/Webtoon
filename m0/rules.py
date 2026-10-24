@@ -1,12 +1,19 @@
-"""rules/*.yaml: every rule the pipeline obeys, as data. One loader (cached, validated) and the storyboard rule engine.
+"""rules/: every rule the pipeline obeys, as data. One loader (cached, validated), the profiles and the storyboard engine.
 
-    import rules; rules.load("render")["max_reseed"]; rules.get("animate.fps")
-    python3 m0/rules.py get pipeline.strip.deadline.window_end      # one value for shell scripts
-    python3 m0/rules.py check                                         # load + validate every file
+    rules/base/<file>.yaml       shared rules (storyboard, prompts, render, animate, compose, shorts, music, pipeline, pack)
+    rules/profiles/<name>.yaml   harlequin | kids | free | superhero: deep-merged over base (or over the profile
+                                 named by `profile.extends`) — mappings merge key by key, lists and values replace,
+                                 {extend: [...]} appends to the inherited list, {replace: ...} replaces a mapping whole
+
+    import rules; rules.load("render")["max_reseed"]; rules.cfg("render", "kids")["rating_limits"]
+    python3 m0/rules.py get pipeline.strip.deadline.window_end      # one base value for shell scripts
+    python3 m0/rules.py get free:pipeline.strip.prefix              # the same, merged for a profile
+    python3 m0/rules.py check                                       # load + validate every file and profile
 
 WEBTOON_RULES=<dir> points at another rules directory (default: <repo>/rules). Needs PyYAML (m0/requirements.txt).
 """
 
+import copy
 import functools
 import json
 import os
@@ -17,15 +24,14 @@ from pathlib import Path
 import yaml
 
 RULES = Path(os.environ.get("WEBTOON_RULES") or Path(__file__).resolve().parent.parent / "rules")
+BASE, PROFILES = RULES / "base", RULES / "profiles"
 
-# Top-level keys each file must have: a typo or a lost section fails at load, not mid-render.
+# Top-level keys each base file must have: a typo or a lost section fails at load, not mid-render.
 REQUIRED = {
-    "storyboard": ["regex", "audiences", "limits", "human_kinds", "age_by_kind", "required", "checks", "to_m0", "adapt",
-                   "pick_motion"],
-    "prompts": ["regex", "age_anchor", "count_tags", "age_negative", "audience_negative", "close_up_location_tags",
-                "default_size", "color_weight", "natural"],
-    "render": ["unsafe", "unsafe_kids", "adult_tag_limits", "age_tag_limits", "design_threshold", "max_reseed",
-               "ip_adapter", "sheet_tags"],
+    "storyboard": ["regex", "limits", "human_kinds", "age_by_kind", "required", "checks", "to_m0", "adapt", "pick_motion"],
+    "prompts": ["regex", "age_anchor", "count_tags", "negative", "close_up_location_tags", "default_size", "color_weight",
+                "natural"],
+    "render": ["rating_limits", "tag_limits", "design_threshold", "max_reseed", "ip_adapter", "sheet_tags"],
     "animate": ["fps", "size", "negative", "style_tail_tags", "default_motion", "webp_quality"],
     "compose": ["width", "gaps", "default_gap", "bg", "ink", "fonts", "bubble", "sfx", "title", "texts"],
     "shorts": ["frame", "top", "bottom", "fade", "font_scale", "panel_duration", "cards", "zoom", "end"],
@@ -33,23 +39,103 @@ REQUIRED = {
     "pipeline": ["strip"],
     "pack": ["part_size", "webp_quality", "cover", "forbidden_world_prefix", "dropped_episode_fields"],
 }
+# What every profile must end up declaring (after merging).
+PROFILE_REQUIRED = {
+    "profile": ["description", "audience", "free", "styles", "pack"],
+    "storyboard": ["fences", "to_m0", "adapt"],
+}
+PROFILE_KEYS = {"storyboard": ["fences"], "storyboard.to_m0": ["tone", "bible_rules", "couple_tags", "fonts"],
+                "storyboard.adapt": ["schema", "system", "example", "addendum", "rewrite"],
+                "storyboard.fences": ["fence", "kids_fence", "motion", "allow"],
+                "profile.styles": ["pool", "default", "strip_default"], "profile.pack": ["audience", "exported"]}
+
+
+def _read(path):
+    with open(path, encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
 
 
 @functools.cache
 def load(name):
-    path = RULES / f"{name}.yaml"
-    with open(path, encoding="utf-8") as f:
-        data = yaml.safe_load(f)
-    missing = [k for k in REQUIRED.get(name, []) if k not in (data or {})]
+    """rules/base/<name>.yaml (shared by every profile)."""
+    path = BASE / f"{name}.yaml"
+    data = _read(path)
+    missing = [k for k in REQUIRED.get(name, []) if k not in data]
     if missing:
         raise KeyError(f"{path}: missing {', '.join(missing)}")
     return data
 
 
+def merge(base, over):
+    """Profile deep merge: mappings key by key, {extend: [...]} appends, {replace: x} is x, anything else replaces."""
+    if isinstance(over, dict):
+        if set(over) == {"replace"}:
+            return copy.deepcopy(over["replace"])
+        if set(over) == {"extend"}:
+            return list(base or []) + list(over["extend"])
+        out = dict(base) if isinstance(base, dict) else {}
+        for k, v in over.items():
+            out[k] = merge(out.get(k), v)
+        return out
+    return copy.deepcopy(over)
+
+
+def profiles():
+    return sorted(p.stem for p in PROFILES.glob("*.yaml"))
+
+
+@functools.cache
+def profile(name):
+    """{file: merged rules, "profile": meta, "lineage": [name, parent, ...]} for rules/profiles/<name>.yaml."""
+    path = PROFILES / f"{name}.yaml"
+    raw = _read(path)
+    parent = raw.get("profile", {}).get("extends")
+    if parent:
+        base = profile(parent)
+        lineage = [name] + base["lineage"]
+    else:
+        base = {"profile": {}, **{f: load(f) for f in REQUIRED}}
+        lineage = [name]
+    unknown = set(raw) - set(base)
+    if unknown:
+        raise KeyError(f"{path}: unknown sections {', '.join(sorted(unknown))}")
+    out = {k: merge(base[k], raw[k]) if k in raw else base[k] for k in base if k != "lineage"}
+    out["profile"].pop("extends", None)
+    out["lineage"] = lineage
+    for sec, keys in {**PROFILE_REQUIRED, **PROFILE_KEYS}.items():
+        node = out
+        for k in sec.split("."):
+            node = node[k]
+        missing = [k for k in keys if k not in node]
+        if missing:
+            raise KeyError(f"{path}: {sec} missing {', '.join(missing)}")
+    return out
+
+
+def cfg(name, prof=None):
+    """Rules of one file: merged for a profile, or the base file (prof None: e.g. a teen world)."""
+    return profile(prof)[name] if prof else load(name)
+
+
+def profile_of(free=False, audience=None, default=None):
+    """Today's audience flags → profile: --free → free, kids → kids, adult → harlequin; anything else → default.
+    free is adults only (adapt.main refuses --free with kids)."""
+    if free and audience == "kids":
+        raise ValueError("free mode is adults only, it cannot be combined with audience kids")
+    return "free" if free else {"kids": "kids", "adult": "harlequin"}.get(audience, default)
+
+
+def world_profile(world):
+    """The profile a world.json was written for: its "profile" key (superhero), else from audience / free;
+    None for a world no profile describes (audience "teen", world_m0.json). "free" wins over any audience."""
+    return world.get("profile") or ("free" if world.get("free") else profile_of(False, world.get("audience")))
+
+
 def get(key):
-    """'file.a.b' → rules/file.yaml [a][b] (list indices as numbers)."""
+    """'file.a.b' → rules/base/file.yaml [a][b]; 'prof:file.a.b' merged for a profile (list indices as numbers)."""
+    prof, _, key = key.rpartition(":")
     name, *path = key.split(".")
-    v = load(name)
+    v = profile(prof)[name] if prof else load(name)
     for k in path:
         v = v[int(k)] if isinstance(v, list) else v[k]
     return v
@@ -94,25 +180,19 @@ def regexes(specs):
 
 # --- storyboard rule engine ----------------------------------------------------------------------
 #
-# rules/storyboard.yaml `checks` is a list of groups {scope, rules: [...]}; a rule is {id, audiences, if, message}
-# or a nested group. Scopes: story (once), character (each story character), character_field (each of base, photo
+# rules/base/storyboard.yaml `checks` is a list of groups {scope, rules: [...]}; a rule is {id, profiles, if, message}
+# or a nested group; `profiles` (default: all) matches the active profile or one it extends. Scopes: story (once), character (each story character), character_field (each of base, photo
 # and the outfits of that character), panel (each panel), panel_character (each character entry of that panel),
 # bubble (each bubble of that panel). Rules run in file order, so errors come out in file order.
 #
 # `if` is the violation: a condition tree of {all|any: [...]}, {not: c}, {truthy|falsy: ref}, {eq|ne|in|not_in|gt|ge:
-# [a, b]}, {search|match: {regex, in}}, {contains: [set, item]}, {intersects: [set, items]},
+# [a, b]}, {search|match: {regex, in, mask}}, {contains: [set, item]}, {intersects: [set, items]},
 # {long_items: {in, max_words, except}}. A ref is "$name.key.0" (strict: a missing key raises, like the old code);
 # "?" after a key makes it optional (None), "|len" takes the length. search / match / long_items bind `m`
 # (the matched text / the offending items) for the message, a str.format template over the same names.
-
-MODES = ("adult", "free", "kids")
-
-
-def mode(free, audience):
-    """check(free=, audience=) → one of MODES. free is adults only (adapt.main refuses --free with kids)."""
-    if free and audience == "kids":
-        raise ValueError("free mode is adults only, it cannot be combined with audience kids")
-    return "free" if free else "kids" if audience == "kids" else "adult"
+# A regex is a name from `regex`, an alias from the profile's `fences` (fence, kids_fence, allow; a list alias like
+# `$fences.motion` is a list of names), or a ref to a pattern string. `mask: allow` blanks the profile's allowed
+# phrases (superhero: the action vocabulary) before searching; `never` (every other profile) leaves the text as is.
 
 
 class Ctx(dict):
@@ -160,15 +240,26 @@ def ref(ctx, v):
 
 
 class Engine:
-    def __init__(self, spec):
-        self.spec = spec
+    def __init__(self, spec, lineage):
+        self.spec, self.lineage = spec, set(lineage)
         self.re = regexes(spec["regex"])
+        self.fences = spec["fences"]
 
     def regex(self, ctx, name):
         if isinstance(name, str) and name.startswith("$"):
             return _compiled(ref(ctx, name))
-        alias = self.spec["audiences"][ctx["audience"]].get(name, name)
-        return self.re[alias]
+        alias = self.fences.get(name)
+        return self.re[alias if isinstance(alias, str) else name]
+
+    def regex_names(self, ctx, spec):
+        if isinstance(spec, str) and spec.startswith("$"):
+            v = ref(ctx, spec)
+            return v if isinstance(v, list) else [spec]
+        return spec if isinstance(spec, list) else [spec]
+
+    def mask(self, text):
+        allow = self.re[self.fences["allow"]]
+        return text if self.fences["allow"] == "never" else allow.sub(lambda m: " " * len(m.group(0)), text)
 
     def cond(self, ctx, c):
         (op, a), = c.items()
@@ -184,7 +275,9 @@ class Engine:
             return not ref(ctx, a)
         if op in ("search", "match"):
             text = ref(ctx, a["in"])
-            for name in (a["regex"] if isinstance(a["regex"], list) else [a["regex"]]):
+            if a.get("mask") == "allow":
+                text = self.mask(text)
+            for name in self.regex_names(ctx, a["regex"]):
                 m = getattr(self.regex(ctx, name), op)(text)
                 if m:
                     ctx["m"] = m.group(0)
@@ -219,7 +312,7 @@ class Engine:
             if "scope" in r:
                 for item in self.items(r["scope"], ctx):
                     self.run(r["rules"], item, errs)
-            elif ctx["audience"] in r.get("audiences", MODES) and self.cond(ctx, r["if"]):
+            elif ("profiles" not in r or self.lineage & set(r["profiles"])) and self.cond(ctx, r["if"]):
                 errs.append(r["message"].format_map(ctx))
 
     def items(self, scope, ctx):
@@ -256,12 +349,12 @@ class Engine:
         else:
             raise ValueError(f"unknown scope {scope}")
 
-    def missing_fields(self, story, kids=False):
+    def missing_fields(self, story):
         req, msg = self.spec["required"], self.spec["required"]["messages"]
         errs = [msg["story"].format(k=k) for k in req["story"] if k not in story]
         for c in story.get("characters", []):
             cid = c.get("id", "?")
-            errs += [msg["character"].format(id=cid, k=k) for k in req["character_kids" if kids else "character"] if k not in c]
+            errs += [msg["character"].format(id=cid, k=k) for k in req["character"] if k not in c]
             if req["outfit"] not in c.get("outfits", {}):
                 errs.append(msg["outfit"].format(id=cid, k=req["outfit"]))
         for l in story.get("locations", []):
@@ -272,13 +365,12 @@ class Engine:
                 errs += [msg["bubble"].format(i=i, k=k) for k in req["bubble"] if k not in b]
         return errs
 
-    def check(self, story, world_tags=None, free=False, audience="adult"):
-        aud = mode(free, audience)
-        errs = self.missing_fields(story, aud == "kids")
+    def check(self, story, world_tags=None):
+        errs = self.missing_fields(story)
         if errs:  # the schema was not enforced (no guided decoding): report instead of crashing on a missing key
             return errs
-        ctx = Ctx(story=story, audience=aud, world_tags=world_tags, limits=self.spec["limits"],
-                  human_kinds=set(self.spec["human_kinds"]),
+        ctx = Ctx(story=story, world_tags=world_tags, limits=self.spec["limits"], fences=self.fences,
+                  human_kinds=set(self.spec["human_kinds"]), age_by_kind=self.spec["age_by_kind"],
                   chars={c["id"]: c for c in story["characters"]}, loc_ids={l["id"] for l in story["locations"]})
         self.run(self.spec["checks"], ctx, errs)
         return errs
@@ -295,8 +387,10 @@ def split_tags(s):  # common.split_tags, imported late so rules.py stays usable 
 
 
 @functools.cache
-def storyboard():
-    return Engine(load("storyboard"))
+def storyboard(prof):
+    """The storyboard rule engine of a profile (adapt.check(): harlequin, kids, free, superhero)."""
+    p = profile(prof)
+    return Engine(p["storyboard"], p["lineage"])
 
 
 def main():
@@ -306,8 +400,9 @@ def main():
     elif sys.argv[1:] == ["check"]:
         for name in REQUIRED:
             load(name)
-        storyboard()
-        print(f"{RULES}: {len(REQUIRED)} files ok")
+        for name in profiles():
+            storyboard(name)
+        print(f"{RULES}: {len(REQUIRED)} base files, profiles {', '.join(profiles())} ok")
     else:
         sys.exit(__doc__)
 

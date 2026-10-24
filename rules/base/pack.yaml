@@ -1,5 +1,6 @@
 # Content pack rules of backend/internal/pack (`webtoon export-pack`, PACK_FORMAT.md), read with gopkg.in/yaml.v3.
-# The backend finds this file at $WEBTOON_RULES/pack.yaml, else rules/pack.yaml in the working directory or a parent.
+# The backend finds this file at $WEBTOON_RULES/base/pack.yaml, else rules/base/pack.yaml in the working directory or
+# a parent. A profile's `profile.pack` (audience label, exported) documents its packs; the Go side needs only this file.
 
 part_size: 25      # stories per zip; a bigger pack is split into parts a, b, c… (store download sizes)
 webp_quality: 85   # cwebp -q for panels (PNG → WebP, same size) and covers

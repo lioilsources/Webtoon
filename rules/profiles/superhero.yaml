@@ -1,0 +1,24 @@
+# superhero: kids with super powers. Extends kids (same fences, thresholds, schema, few-shot) and adds the action
+# vocabulary of superhero fights; still no blood, injury, death or kissing (kids_banned stays). Deep-merged over kids.
+
+profile:
+  extends: kids
+  description: superhero action for children 6–12
+  styles:
+    pool: [western_comic, clean_webtoon_noartist, flat_anime_mema, fantasy_colorlines, anime_screencap, ligne_claire]
+    default: western_comic
+    strip_default: western_comic
+
+storyboard:
+  regex:
+    # The action vocabulary of superhero fights: effects, not wounds. Masked before the fences are searched, so
+    # a fence word inside one of these phrases can never reject the action; listed in the prompt addendum too.
+    action:
+      ignorecase: true
+      words: [energy blast, punch, sword clash, explosion, motion lines, shield glowing, speed lines, impact,
+              flying kick, power aura, laser beam, force field, shockwave, dust cloud, sparks]
+  fences: {allow: action}
+  to_m0:
+    tone: akční, hrdinský, laskavý
+    bible_rules: ["Pro děti: superhrdinská akce bez krve, zranění a smrti; souboje končí porážkou nebo smírem, nikdo neumírá."]
+  adapt: {addendum: addendum_superhero.md}

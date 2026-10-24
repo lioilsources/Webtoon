@@ -12,7 +12,7 @@ import (
 )
 
 // Part size, WebP quality, cover size, the forbidden world prefix and the dropped episode fields are rules:
-// rules/pack.yaml (rules.go).
+// rules/base/pack.yaml (rules.go).
 const (
 	Schema = 1 // pack.json / catalog.json schema
 

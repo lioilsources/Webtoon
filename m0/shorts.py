@@ -25,7 +25,7 @@ import compose
 import rules
 from common import DATA, OUT, ROOT
 
-# Frame, timing and end texts with their reasons: rules/shorts.yaml.
+# Frame, timing and end texts with their reasons: rules/base/shorts.yaml.
 R = rules.load("shorts")
 W, H, FPS = R["frame"]["width"], R["frame"]["height"], R["frame"]["fps"]
 TOP = R["top"]                # TikTok/Shorts top bar: no lettering above this

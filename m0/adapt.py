@@ -6,7 +6,7 @@
 
 Model: any OpenAI-compatible chat endpoint (WEBTOON_LLM, WEBTOON_LLM_MODEL; CF Access headers when set).
 `response_format: json_schema` is sent for guided decoding (vLLM/xgrammar); the same schema plus the rule
-checks of rules/storyboard.yaml (engine: m0/rules.py) validate the answer locally. Writes data/stories/<id>/{world,storyboard}.json in the m0 format
+checks of rules/base/storyboard.yaml + the profile (engine: m0/rules.py) validate the answer locally. Writes data/stories/<id>/{world,storyboard}.json in the m0 format
 used by stories_romance.py, so render.py / run_romance.sh work unchanged.
 """
 
@@ -24,12 +24,13 @@ import rules
 from common import DATA, LLM_MODEL, LLM_URL, load_json, save_json, split_tags, vocab as common_vocab
 
 SKILL = Path(os.environ.get("WEBTOON_SKILL_DIR") or Path(__file__).resolve().parent.parent / "skills" / "storyboard-writer")
-# Every rule below lives in rules/storyboard.yaml (why each exists is commented there); the names stay for importers.
+# Every rule below lives in rules/base/storyboard.yaml and rules/profiles/<profile>.yaml `storyboard:` (why each
+# exists is commented there); the names stay for importers.
 R = rules.load("storyboard")
-ENGINE = rules.storyboard()
+ENGINE = rules.storyboard("harlequin")  # pick_motion: finished SFW romance strips
 SHOTS, KINDS, GAPS = R["shots"], R["bubble_kinds"], R["gaps"]
 BANNED, AGE_BANNED, KIDS_SFW, KIDS_BANNED = (ENGINE.re[k] for k in ("banned", "age_banned", "kids_sfw", "kids_banned"))
-FREE_AUDIENCE = R["adapt"]["free"]["audience"]
+FREE_AUDIENCE = rules.cfg("storyboard", "free")["adapt"]["rewrite"]["audience"]
 HUMAN_KINDS = set(R["human_kinds"])
 AGE_BY_KIND = {k: v["regex"] for k, v in R["age_by_kind"].items()}
 CF_ID, CF_SECRET = os.environ.get("WEBTOON_CF_ACCESS_ID"), os.environ.get("WEBTOON_CF_ACCESS_SECRET")
@@ -75,20 +76,26 @@ def chat(messages, schema=None, temperature=0.4, max_tokens=6000):
 
 # --- adaptation ---------------------------------------------------------------------------------
 
-def missing_fields(story, kids=False):
-    """Required keys from story(.kids).schema.json, checked by hand (no jsonschema dependency): rules/storyboard.yaml `required`."""
-    return ENGINE.missing_fields(story, kids)
+def story_profile(free=False, audience="adult", profile=None):
+    """The profile a story is checked and written for: --profile, else today's flags (adult → harlequin)."""
+    return profile or rules.profile_of(free, audience, "harlequin")
 
 
-def check(story, world_tags=None, free=False, audience="adult"):
-    """Rule checks the schema cannot express (rules/storyboard.yaml `checks`). Returns a list of problems (empty = ok)."""
-    return ENGINE.check(story, world_tags, free=free, audience=audience)
+def missing_fields(story, kids=False, profile=None):
+    """Required keys from story(.kids).schema.json, checked by hand (no jsonschema dependency): storyboard `required`."""
+    return rules.storyboard(profile or ("kids" if kids else "harlequin")).missing_fields(story)
 
 
-def to_m0(story, style, free=False, audience="adult"):
+def check(story, world_tags=None, free=False, audience="adult", profile=None):
+    """Rule checks the schema cannot express (storyboard `checks` of the profile). Returns a list of problems (empty = ok)."""
+    return rules.storyboard(story_profile(free, audience, profile)).check(story, world_tags)
+
+
+def to_m0(story, style, free=False, audience="adult", profile=None):
     """Lean model output → world.json + storyboard.json exactly as stories_romance.py (kids: stories_kids.py) writes them."""
-    aud = rules.mode(free, audience)
-    kids, M = aud == "kids", R["to_m0"]
+    prof = story_profile(free, audience, profile)
+    meta, M = rules.profile(prof)["profile"], rules.cfg("storyboard", prof)["to_m0"]
+    free, audience = meta["free"], audience if profile is None else meta["audience"]
     chars = []
     for c in story["characters"]:
         # kids: a creature/robot/spirit has no count tag, so prompts.count_tags() says "no humans" when it is alone
@@ -102,56 +109,62 @@ def to_m0(story, style, free=False, audience="adult"):
     locs = [{"id": l["id"], "name": l["name"], "description": l["name"], "tag_prompt": l["tag_prompt"], "mood": ""}
             for l in story["locations"]]
     world = {"id": "w_" + story["id"], "title": story["title"], "synopsis": story["synopsis"],
-             "tone": M["tone"]["kids" if kids else "adult"],
+             "tone": M["tone"],
              "audience": audience, "language": M["language"], "style_id": style,
-             "bible": {"rules": list(M["bible_rules"][aud]), "factions": []},
+             "bible": {"rules": list(M["bible_rules"]), "factions": []},
              **({"free": True} if free else {}),
+             # a profile today's audience / free flags do not name (superhero) is written down
+             **({"profile": prof} if prof != rules.profile_of(free, audience, "harlequin") else {}),
              "canon": {"nodes": [], "constraints": [story["ending"]]},
              "permissions": {"allowed_locations": [l["id"] for l in locs]},
              "characters": chars, "locations": locs}
     panels = []
     for p in story["panels"]:
         tags = list(p["visual_tags"])
-        if len(p["characters"]) == 2 and not kids:
+        if len(p["characters"]) == 2:  # the couple (kids: no couple tags, any pair)
             tags = list(M["couple_tags"]) + tags
         panels.append({"shot": p["shot"], "location_id": p["location_id"], "characters": p["characters"],
                        "visual_tags": tags, "bubbles": p["bubbles"],
                        "sfx": [{"text": s, "style": M["sfx_style"]} for s in p["sfx"]], "gap_after": p["gap_after"],
                        **({"animate": True, "motion": p["motion"]} if p.get("animate") and p.get("motion") else {})})
     # kids strips use compose.py's default (children's) fonts, like data/stories/les
-    fonts = M["fonts"][aud]
+    fonts = M["fonts"]
     return world, {"title": story["title"], **({"fonts": fonts} if fonts else {}), "panels": panels}
 
 
-def free_prompt(system):
+def free_prompt(system, rewrite=None):
     """adapt_system.md for --free: SFW passages out, adult-only rules in. Fails loudly when the skill text drifts."""
-    F = R["adapt"]["free"]
+    F = rewrite or rules.cfg("storyboard", "free")["adapt"]["rewrite"]
     lines = system.splitlines()
     i = next(n for n, l in enumerate(lines) if l.startswith("AUDIENCE:"))
-    lines[i] = FREE_AUDIENCE
+    lines[i] = F["audience"]
     out = "\n".join(lines)
     s, e = out.index(F["cut"]["from"]), out.index(F["cut"]["to"])
     out = out[:s] + F["cut"]["heading"] + out[e:]
     for old, new in F["replace"]:
-        assert old in out, f"adapt_system.md changed, update rules/storyboard.yaml adapt.free.replace: {old[:40]}"
+        assert old in out, f"adapt_system.md changed, update the profile's storyboard.adapt.rewrite.replace: {old[:40]}"
         out = out.replace(old, new)
     return out
 
 
 def adapt(args):
-    A = R["adapt"]
-    sel = "kids" if args.audience == "kids" else "adult"
+    prof = story_profile(args.free, args.audience, getattr(args, "profile", None))
+    SB = rules.cfg("storyboard", prof)
+    A = SB["adapt"]
     # kids: own schema, prompt and few-shot (skills/storyboard-writer/{schema/story.kids.schema.json,prompts/adapt_system_kids.md,examples/kids_park.*})
-    schema = load_json(SKILL / "schema" / A["schema"][sel])
-    system = (SKILL / "prompts" / A["system"][sel]).read_text().replace("{lang}", A["lang"])
-    if args.free:
-        system = free_prompt(system)
-    example = A["example"][sel]
+    schema = load_json(SKILL / "schema" / A["schema"])
+    system = (SKILL / "prompts" / A["system"]).read_text().replace("{lang}", A["lang"])
+    if A["rewrite"]:
+        system = free_prompt(system, A["rewrite"])
+    if A["addendum"]:  # superhero: a paragraph on top of the kids prompt, with the profile's action vocabulary
+        words = SB["regex"][SB["fences"]["allow"]]["words"]
+        system += "\n" + (SKILL / "prompts" / A["addendum"]).read_text().replace("{vocabulary}", ", ".join(f'"{w}"' for w in words))
+    example = A["example"]
     ex_in = (SKILL / "examples" / f"{example}.input.md").read_text()
     ex_json = load_json(SKILL / "examples" / f"{example}.output.json")
     ex_out = json.dumps(ex_json, ensure_ascii=False)
-    if args.free:  # the example must pass the free fence itself, or the model copies what it rejects
-        for old, new in A["free"]["example_replace"]:
+    if A["rewrite"]:  # the example must pass the free fence itself, or the model copies what it rejects
+        for old, new in A["rewrite"]["example_replace"]:
             ex_out = ex_out.replace(old, new)
     source = Path(args.source).read_text()
     messages = [
@@ -174,7 +187,7 @@ def adapt(args):
         story["id"] = args.id
         if os.environ.get("WEBTOON_ADAPT_DUMP"):  # keep every raw attempt for A/B analysis
             save_json(Path(os.environ["WEBTOON_ADAPT_DUMP"]) / f"{args.id}.a{attempt + 1}.json", story)
-        errs = check(story, vocab, free=args.free, audience=args.audience)
+        errs = check(story, vocab, profile=prof)
         if not errs:
             break
         print(f"attempt {attempt + 1}: {len(errs)} problems", *errs[:8], sep="\n  ")
@@ -182,7 +195,7 @@ def adapt(args):
                      {"role": "user", "content": "Fix these problems and return the full corrected JSON:\n- " + "\n- ".join(errs)}]
     else:
         sys.exit("gave up: output never passed validation")
-    world, sb = to_m0(story, args.style, free=args.free, audience=args.audience)
+    world, sb = to_m0(story, args.style, free=args.free, audience=args.audience, profile=getattr(args, "profile", None))
     d = DATA / "stories" / args.id
     save_json(d / "world.json", world)
     save_json(d / "storyboard.json", sb)
@@ -249,7 +262,7 @@ def pick_motion(args):
     """Existing (already rendered) storyboard → the model picks <= 2 panels to loop and writes their motion prompts."""
     d = DATA / "stories" / args.pick_motion
     sb = load_json(d / "storyboard.json")
-    prompt = (SKILL / "prompts" / R["adapt"]["system"]["adult"]).read_text()
+    prompt = (SKILL / "prompts" / rules.cfg("storyboard", "harlequin")["adapt"]["system"]).read_text()
     rule = next(l for l in prompt.splitlines() if l.startswith(PM["rule_prefix"]))
     panels = [{"n": i, "shot": p["shot"], "people": len(p["characters"]), "tags": p["visual_tags"],
                "text": " / ".join(b["text"] for b in p["bubbles"])} for i, p in enumerate(sb["panels"])]
@@ -294,6 +307,8 @@ def main():
     ap.add_argument("source", nargs="?", help="screenplay text file")
     ap.add_argument("--id", help="story id, e.g. rl_01_santorini")
     ap.add_argument("--style", help="preset from data/styles.json (default fashion_editorial; kids: clean_webtoon_noartist)")
+    ap.add_argument("--profile", choices=rules.profiles(), help="rules/profiles/<name>.yaml (default from --audience / --free: "
+                    "adult → harlequin, kids → kids, --free → free)")
     ap.add_argument("--audience", choices=["adult", "kids"], default="adult", help="kids: adventure strip for 6–12, story.kids.schema.json")
     ap.add_argument("--attempts", type=int, default=R["adapt"]["attempts"])
     ap.add_argument("--qa", help="rendered story dir (out/<day>/<id>) → visual QA instead of adaptation")
@@ -303,7 +318,13 @@ def main():
     args = ap.parse_args()
     if args.free and args.audience == "kids":
         ap.error("--free is adults only, it cannot be combined with --audience kids")
-    args.style = args.style or R["adapt"]["default_style"]["kids" if args.audience == "kids" else "adult"]
+    if args.profile:  # the profile decides; --audience / --free follow it
+        meta = rules.profile(args.profile)["profile"]
+        args.audience, args.free = meta["audience"], meta["free"]
+    styles = rules.profile(story_profile(args.free, args.audience, args.profile))["profile"]["styles"]
+    args.style = args.style or styles["default"]
+    if styles["pool"] != "all" and args.style not in styles["pool"]:
+        ap.error(f"style {args.style} is not in the profile's pool: {', '.join(styles['pool'])}")
     if args.pick_motion:
         pick_motion(args)
     elif args.qa:
