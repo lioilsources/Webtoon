@@ -13,6 +13,8 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
+	"image"
+	"image/png"
 	"io"
 	"net/http"
 	"net/http/httptest"
@@ -32,12 +34,14 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/comfy"
 	"github.com/ol1n/webtoon/backend/internal/db"
 	"github.com/ol1n/webtoon/backend/internal/db/dbq"
+	"github.com/ol1n/webtoon/backend/internal/demo"
 	"github.com/ol1n/webtoon/backend/internal/fakes"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/seed"
 	"github.com/ol1n/webtoon/backend/internal/store"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
 	"github.com/ol1n/webtoon/backend/internal/testutil"
+	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/wd14"
 	"github.com/ol1n/webtoon/backend/internal/worker"
 )
@@ -489,5 +493,54 @@ func TestClaimSkipLocked(t *testing.T) {
 	}
 	if n, _ := s.RequeueStaleJobs(ctx, time.Now().Add(time.Minute)); n != 1 {
 		t.Fatalf("requeued %d", n)
+	}
+}
+
+// A storyboard translated before rendering (webtoon translate -storyboard) imports as an episode
+// that is already translated: bubble/choice i18n, title_i18n and languages as the API serves them.
+func TestImportDemoKeepsTranslations(t *testing.T) {
+	e := setup(t)
+	ctx := context.Background()
+	raw, err := json.MarshalIndent(testutil.StoryboardEP1(t), "", "  ")
+	if err != nil {
+		t.Fatal(err)
+	}
+	lc := llm.New(e.llm.URL+"/v1", "m")
+	lc.RetryWait = time.Millisecond
+	sb, err := translate.ParseStoryboardFile(raw, "cs", nil)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if _, err := translate.TranslateStoryboard(ctx, lc, sb, []string{"en"}, false, nil); err != nil {
+		t.Fatal(err)
+	}
+	if raw, err = sb.Marshal(); err != nil {
+		t.Fatal(err)
+	}
+	panels := t.TempDir()
+	for i := range sb.Panels {
+		f, err := os.Create(filepath.Join(panels, fmt.Sprintf("p%02d_s0.png", i)))
+		if err != nil {
+			t.Fatal(err)
+		}
+		png.Encode(f, image.NewRGBA(image.Rect(0, 0, 8, 12))) //nolint:errcheck
+		f.Close()
+	}
+	res, err := demo.Import(ctx, e.s, demo.Options{Storyboard: raw, PanelDir: panels, MediaDir: e.media,
+		WorldID: "w_skyisles", PlayerID: "player"})
+	if err != nil {
+		t.Fatal(err)
+	}
+	got := e.do("GET", "/episodes/"+res.EpisodeID, "player", nil, 200)
+	if fmt.Sprint(got["languages"]) != "[en]" || got["title_i18n"].(map[string]any)["en"] != "[English] "+sb.Title {
+		t.Fatalf("languages %v title_i18n %v", got["languages"], got["title_i18n"])
+	}
+	b0 := got["panels"].([]any)[0].(map[string]any)["bubbles"].([]any)[0].(map[string]any)
+	if b0["i18n"].(map[string]any)["en"] != "[English] "+b0["text"].(string) {
+		t.Fatalf("bubble %v", b0)
+	}
+	ch := got["choices"].([]any)
+	if len(ch) == 0 || ch[0].(map[string]any)["i18n"].(map[string]any)["en"] == nil || ch[0].(map[string]any)["id"] != "c1" {
+		t.Fatalf("choices %v", ch)
 	}
 }

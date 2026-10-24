@@ -113,6 +113,12 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 	if len(sb.Panels) == 0 {
 		return nil, fmt.Errorf("storyboard has no panels")
 	}
+	// Translations made before rendering (webtoon translate -storyboard): bubbles[].i18n and
+	// choices[].i18n travel in the domain types, the title's sit next to it.
+	var extra struct {
+		TitleI18n map[string]string `json:"title_i18n"`
+	}
+	_ = json.Unmarshal(o.Storyboard, &extra)
 	worker.AssignChoiceIDs(sb.Choices)
 	images, err := FindPanels(o.PanelDir, len(sb.Panels), o.Variant)
 	if err != nil {
@@ -200,6 +206,13 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 			PanelsTotal: int32(len(sb.Panels)), CreditsCost: int32(len(sb.Panels)),
 		}); err != nil {
 			return err
+		}
+		if len(extra.TitleI18n) > 0 {
+			if err := q.SetEpisodeI18n(ctx, dbq.SetEpisodeI18nParams{
+				ID: e.ID, TitleI18n: store.MustJSON(extra.TitleI18n), Choices: store.MustJSON(sb.Choices),
+			}); err != nil {
+				return err
+			}
 		}
 		mediaDir = filepath.Join(o.MediaDir, "episodes", e.ID)
 		for i, p := range sb.Panels {

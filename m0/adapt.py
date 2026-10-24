@@ -1,6 +1,7 @@
 """Free-form screenplay → storyboard JSON via a local LLM (skills/storyboard-writer), or visual QA of a rendered story.
 
     python3 m0/adapt.py --id rl_01_santorini --style fashion_editorial scenare/santorini.md [--dry-run]
+    python3 m0/adapt.py --audience kids --id lx_k2_01 data/scripts/kids2/k2_01.md   # kids adventure (story.kids.schema.json)
     python3 m0/adapt.py --qa out/romance/rl_01_santorini          # contact sheet → list of panels to redo
 
 Model: any OpenAI-compatible chat endpoint (WEBTOON_LLM, WEBTOON_LLM_MODEL; CF Access headers when set).
@@ -39,6 +40,16 @@ AGE_BANNED = re.compile(r"\b(child(ren|like)?|kids?|loli\w*|shota\w*|teen(age|ag
 FREE_AUDIENCE = ("AUDIENCE: adults only. Experimental run outside the app: follow the screenplay as written, "
                  "including mature or explicit scenes; you are not bound by SFW rules. Every character is an adult "
                  "aged 23 or more with an adult body and face; never minors, childlike looks or school settings.")
+# --audience kids: the SFW fence minus `child` (the design anchor is "female child"), plus no violence or romance at all,
+# checked on tags, bubbles, motion and character fields; Czech forms for the bubbles.
+KIDS_SFW = re.compile(BANNED.pattern.replace("|child|", "|"), re.I)
+KIDS_BANNED = re.compile(r"\b(blood\w*|gore|gory|wound\w*|injur\w*|corpse|dead body|dead|death|dying|die|kill\w*|murder\w*|"
+                         r"stab\w*|kiss\w*|lingerie|cleavage|sexy|seductive|nipples?|cigarette|smoking|beer|wine|alcohol|"
+                         r"krev|krv\w*|krvác\w*|mrtv\w*|smrt\w*|zabij\w*|zabít|zabil\w*|zavražd\w*|polib\w*|líbat|líbá\w*|"
+                         r"zranění|zraněn\w*)\b", re.I)
+HUMAN_KINDS = {"child", "adult"}
+# `photo` must say "aged N"; the allowed N by kind (creatures, robots and spirits state no age).
+AGE_BY_KIND = {"child": r"\baged ([6-9]|1[0-3])\b", "adult": r"\baged (2[3-9]|[3-9]\d)\b"}
 CF_ID, CF_SECRET = os.environ.get("WEBTOON_CF_ACCESS_ID"), os.environ.get("WEBTOON_CF_ACCESS_SECRET")
 
 
@@ -82,10 +93,10 @@ def chat(messages, schema=None, temperature=0.4, max_tokens=6000):
 
 # --- adaptation ---------------------------------------------------------------------------------
 
-def missing_fields(story):
-    """Required keys from story.schema.json, checked by hand (no jsonschema dependency)."""
+def missing_fields(story, kids=False):
+    """Required keys from story(.kids).schema.json, checked by hand (no jsonschema dependency)."""
     req = {"story": ["id", "title", "synopsis", "ending", "characters", "locations", "panels"],
-           "character": ["id", "name", "gender", "base", "outfits", "photo"],
+           "character": ["id", "name", *(["kind"] if kids else []), "gender", "base", "outfits", "photo"],
            "location": ["id", "name", "tag_prompt"],
            "panel": ["shot", "location_id", "characters", "visual_tags", "bubbles", "sfx", "gap_after"]}
     errs = [f"missing field '{k}'" for k in req["story"] if k not in story]
@@ -102,26 +113,42 @@ def missing_fields(story):
     return errs
 
 
-def check(story, world_tags=None, free=False):
+def check(story, world_tags=None, free=False, audience="adult"):
     """Rule checks the schema cannot express. Returns a list of problems (empty = ok)."""
-    errs = missing_fields(story)
+    kids = audience == "kids"
+    errs = missing_fields(story, kids)
     if errs:  # the schema was not enforced (no guided decoding): report instead of crashing on a missing key
         return errs
-    fence = AGE_BANNED if free else BANNED
+    fence = AGE_BANNED if free else KIDS_SFW if kids else BANNED
+    kids_fence = KIDS_BANNED if kids else re.compile(r"(?!)")  # matches nothing
     chars = {c["id"]: c for c in story["characters"]}
     locs = {l["id"] for l in story["locations"]}
     for c in story["characters"]:
+        kind = c.get("kind", "adult")
         for field in (c["base"], c["photo"], *c["outfits"].values()):
-            m = fence.search(field)
+            m = fence.search(field) or kids_fence.search(field)
             if m:
                 errs.append(f"character {c['id']}: banned term '{m.group(0)}' in '{field[:50]}'")
         base = set(split_tags(c["base"]))
         if free and not ("adult" in base and base & {"mature female", "mature male"}):
             errs.append(f"character {c['id']}: base must contain 'adult' and 'mature female' or 'mature male'")
+        if kids:
+            if kind == "child" and not re.match(r"(female|male) child, ", c["base"]):
+                errs.append(f"character {c['id']}: child base must start with 'female child, ' or 'male child, '")
+            elif kind == "adult" and not re.match(r"adult, mature (fe)?male, ", c["base"]):
+                errs.append(f"character {c['id']}: adult base must start with 'adult, mature female, ' or 'adult, mature male, '")
+            elif kind not in HUMAN_KINDS:
+                m = re.search(r"\b(1?girls?|1?boys?|wom[ae]n|m[ae]n|(fe)?male|child(ren)?|humans?|person|people)\b", c["base"] + " " + c["photo"])
+                if m:
+                    errs.append(f"character {c['id']}: {kind} must not use human words ('{m.group(0)}')")
+            if kind in HUMAN_KINDS and c["gender"] not in ("f", "m"):
+                errs.append(f"character {c['id']}: {kind} gender must be 'f' or 'm'")
         if re.search(r"\b(wearing|dress|shirt|coat|suit|jacket|trousers|heels|boots)\b", c["photo"], re.I):
             errs.append(f"character {c['id']}: photo sentence must not describe clothing")
-        if not re.search(r"\baged (2[3-9]|[3-9]\d)\b", c["photo"]):
+        if not kids and not re.search(r"\baged (2[3-9]|[3-9]\d)\b", c["photo"]):
             errs.append(f"character {c['id']}: photo must state 'aged N' with N >= 23")
+        elif kids and kind in AGE_BY_KIND and not re.search(AGE_BY_KIND[kind], c["photo"]):
+            errs.append(f"character {c['id']}: {kind} photo must state 'aged N' with " + ("6 <= N <= 13" if kind == "child" else "N >= 23"))
     panels = story["panels"]
     if panels[0]["shot"] != "establishing" or panels[0]["characters"]:
         errs.append("panel 0 must be an establishing shot without characters")
@@ -134,8 +161,8 @@ def check(story, world_tags=None, free=False):
         if p.get("animate"):
             if not p.get("motion"):
                 errs.append(f"panel {i}: animate=true needs a motion prompt")
-            elif AGE_BANNED.search(p["motion"]) or not free and (
-                    BANNED.search(p["motion"]) or re.search(r"\b(kiss|undress|unbutton|remov\w+)\b", p["motion"], re.I)):
+            elif AGE_BANNED.search(p["motion"]) or kids_fence.search(p["motion"]) or not free and (
+                    fence.search(p["motion"]) or re.search(r"\b(kiss|undress|unbutton|remov\w+)\b", p["motion"], re.I)):
                 errs.append(f"panel {i}: motion prompt contains a banned action")
             if len(p["characters"]) > 1 and not re.search(r"\b(ambient|only|static)\b", p["motion"], re.I):
                 errs.append(f"panel {i}: two people may only get ambient motion (say 'ambient only, static camera')")
@@ -148,20 +175,31 @@ def check(story, world_tags=None, free=False):
             elif c.get("outfit") and c["outfit"] not in chars[c["id"]]["outfits"]:
                 errs.append(f"panel {i}: {c['id']} has no outfit '{c['outfit']}'")
         genders = [chars[c]["gender"] for c in ids if c in chars]
-        if len(genders) == 2 and genders[0] == genders[1]:
-            errs.append(f"panel {i}: two characters of the same gender")
-        if len(ids) == 2 and p["shot"] == "close-up":
-            errs.append(f"panel {i}: a couple is never a close-up (collage risk)")
+        if kids:  # kids: any genders together, but NoobAI draws at most two humans; the rest are companions
+            humans = [c for c in ids if c in chars and chars[c].get("kind") in HUMAN_KINDS]
+            if len(humans) > 2:
+                errs.append(f"panel {i}: at most 2 humans (child/adult) per panel, got {humans}")
+            if len(ids) >= 2 and p["shot"] == "close-up":
+                errs.append(f"panel {i}: a panel with 2+ characters is never a close-up (collage risk)")
+        else:
+            if len(genders) == 2 and genders[0] == genders[1]:
+                errs.append(f"panel {i}: two characters of the same gender")
+            if len(ids) == 2 and p["shot"] == "close-up":
+                errs.append(f"panel {i}: a couple is never a close-up (collage risk)")
         if p["shot"] == "establishing" and ids:
             errs.append(f"panel {i}: establishing shot with characters")
         joined = ", ".join(p["visual_tags"]) + " " + " ".join(b["text"] for b in p["bubbles"])
-        m = fence.search(", ".join(p["visual_tags"]))
+        m = fence.search(", ".join(p["visual_tags"])) or kids_fence.search(", ".join(p["visual_tags"]))
         if m:
             errs.append(f"panel {i}: banned tag '{m.group(0)}'")
         if free:  # free mode lifts the SFW fence on text too, never the age one
             m = AGE_BANNED.search(" ".join(b["text"] for b in p["bubbles"]))
             if m:
                 errs.append(f"panel {i}: banned term '{m.group(0)}' in a bubble")
+        if kids:  # no blood, death or kissing in the reader text either
+            m = kids_fence.search(" ".join(b["text"] for b in p["bubbles"]))
+            if m:
+                errs.append(f"panel {i}: banned term '{m.group(0)}' in a bubble (reword it without violence or romance)")
         for b in p["bubbles"]:
             if b["kind"] == "narration" and b["speaker_id"]:
                 errs.append(f"panel {i}: narration must have empty speaker_id")
@@ -174,20 +212,25 @@ def check(story, world_tags=None, free=False):
     return errs
 
 
-def to_m0(story, style, free=False):
-    """Lean model output → world.json + storyboard.json exactly as stories_romance.py writes them."""
+def to_m0(story, style, free=False, audience="adult"):
+    """Lean model output → world.json + storyboard.json exactly as stories_romance.py (kids: stories_kids.py) writes them."""
+    kids = audience == "kids"
     chars = []
     for c in story["characters"]:
-        chars.append({"id": c["id"], "name": c["name"], "role": "playable",
-                      "count_tag": "1girl" if c["gender"] == "f" else "1boy", "human": True,
+        # kids: a creature/robot/spirit has no count tag, so prompts.count_tags() says "no humans" when it is alone
+        human = c.get("kind", "adult") in HUMAN_KINDS
+        chars.append({"id": c["id"], "name": c["name"], "role": "playable" if human else "npc",
+                      "count_tag": ("1girl" if c["gender"] == "f" else "1boy") if human else "", "human": human,
                       "description": c["photo"], "base": c["base"], "outfits": c["outfits"], "photo": c["photo"],
                       "tag_prompt": c["base"] + ", " + c["outfits"]["default"],
                       "identity_level": "prompt", "reference_images": []})
     locs = [{"id": l["id"], "name": l["name"], "description": l["name"], "tag_prompt": l["tag_prompt"], "mood": ""}
             for l in story["locations"]]
     world = {"id": "w_" + story["id"], "title": story["title"], "synopsis": story["synopsis"],
-             "tone": "romantický, něžný, s humorem", "audience": "adult", "language": "cs", "style_id": style,
-             "bible": {"rules": ["Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."] if free
+             "tone": "dobrodružný, odvážný, laskavý" if kids else "romantický, něžný, s humorem",
+             "audience": audience, "language": "cs", "style_id": style,
+             "bible": {"rules": ["Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."] if kids
+                       else ["Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."] if free
                        else ["SFW: polibek ano, nahota ne."], "factions": []},
              **({"free": True} if free else {}),
              "canon": {"nodes": [], "constraints": [story["ending"]]},
@@ -196,13 +239,14 @@ def to_m0(story, style, free=False):
     panels = []
     for p in story["panels"]:
         tags = list(p["visual_tags"])
-        if len(p["characters"]) == 2:
+        if len(p["characters"]) == 2 and not kids:
             tags = ["couple", "hetero"] + tags
         panels.append({"shot": p["shot"], "location_id": p["location_id"], "characters": p["characters"],
                        "visual_tags": tags, "bubbles": p["bubbles"],
                        "sfx": [{"text": s, "style": "bold"} for s in p["sfx"]], "gap_after": p["gap_after"],
                        **({"animate": True, "motion": p["motion"]} if p.get("animate") and p.get("motion") else {})})
-    return world, {"title": story["title"], "fonts": "romance", "panels": panels}
+    # kids strips use compose.py's default (children's) fonts, like data/stories/les
+    return world, {"title": story["title"], **({} if kids else {"fonts": "romance"}), "panels": panels}
 
 
 def free_prompt(system):
@@ -223,18 +267,22 @@ def free_prompt(system):
 
 
 def adapt(args):
-    schema = load_json(SKILL / "schema" / "story.schema.json")
-    system = (SKILL / "prompts" / "adapt_system.md").read_text().replace("{lang}", "Czech")
+    kids = args.audience == "kids"
+    # kids: own schema, prompt and few-shot (skills/storyboard-writer/{schema/story.kids.schema.json,prompts/adapt_system_kids.md,examples/kids_park.*})
+    schema = load_json(SKILL / "schema" / ("story.kids.schema.json" if kids else "story.schema.json"))
+    system = (SKILL / "prompts" / ("adapt_system_kids.md" if kids else "adapt_system.md")).read_text().replace("{lang}", "Czech")
     if args.free:
         system = free_prompt(system)
-    ex_in = (SKILL / "examples" / "santorini.input.md").read_text()
-    ex_out = json.dumps(load_json(SKILL / "examples" / "santorini.output.json"), ensure_ascii=False)
+    example = "kids_park" if kids else "santorini"
+    ex_in = (SKILL / "examples" / f"{example}.input.md").read_text()
+    ex_json = load_json(SKILL / "examples" / f"{example}.output.json")
+    ex_out = json.dumps(ex_json, ensure_ascii=False)
     if args.free:  # the example must pass the free fence itself, or the model copies what it rejects
         ex_out = ex_out.replace("adult, petite, mature female", "adult, mature female").replace('"mature male,', '"adult, mature male,')
     source = Path(args.source).read_text()
     messages = [
         {"role": "system", "content": system},
-        {"role": "user", "content": f"id: rh_01_santorini\n\nSCREENPLAY:\n{ex_in}"},
+        {"role": "user", "content": f"id: {ex_json['id']}\n\nSCREENPLAY:\n{ex_in}"},
         {"role": "assistant", "content": ex_out},
         {"role": "user", "content": f"id: {args.id}\n\nSCREENPLAY:\n{source}"},
     ]
@@ -252,7 +300,7 @@ def adapt(args):
         story["id"] = args.id
         if os.environ.get("WEBTOON_ADAPT_DUMP"):  # keep every raw attempt for A/B analysis
             save_json(Path(os.environ["WEBTOON_ADAPT_DUMP"]) / f"{args.id}.a{attempt + 1}.json", story)
-        errs = check(story, vocab, free=args.free)
+        errs = check(story, vocab, free=args.free, audience=args.audience)
         if not errs:
             break
         print(f"attempt {attempt + 1}: {len(errs)} problems", *errs[:8], sep="\n  ")
@@ -260,7 +308,7 @@ def adapt(args):
                      {"role": "user", "content": "Fix these problems and return the full corrected JSON:\n- " + "\n- ".join(errs)}]
     else:
         sys.exit("gave up: output never passed validation")
-    world, sb = to_m0(story, args.style, free=args.free)
+    world, sb = to_m0(story, args.style, free=args.free, audience=args.audience)
     d = DATA / "stories" / args.id
     save_json(d / "world.json", world)
     save_json(d / "storyboard.json", sb)
@@ -368,13 +416,17 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("source", nargs="?", help="screenplay text file")
     ap.add_argument("--id", help="story id, e.g. rl_01_santorini")
-    ap.add_argument("--style", default="fashion_editorial", help="preset from data/styles.json")
+    ap.add_argument("--style", help="preset from data/styles.json (default fashion_editorial; kids: clean_webtoon_noartist)")
+    ap.add_argument("--audience", choices=["adult", "kids"], default="adult", help="kids: adventure strip for 6–12, story.kids.schema.json")
     ap.add_argument("--attempts", type=int, default=3)
     ap.add_argument("--qa", help="rendered story dir (out/<day>/<id>) → visual QA instead of adaptation")
     ap.add_argument("--pick-motion", help="story id: let the model pick <= 2 rendered panels to animate")
     ap.add_argument("--free", action="store_true", help="experimental run outside the app: no SFW rules, adults only")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+    if args.free and args.audience == "kids":
+        ap.error("--free is adults only, it cannot be combined with --audience kids")
+    args.style = args.style or ("clean_webtoon_noartist" if args.audience == "kids" else "fashion_editorial")
     if args.pick_motion:
         pick_motion(args)
     elif args.qa:

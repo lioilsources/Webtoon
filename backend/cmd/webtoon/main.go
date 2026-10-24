@@ -15,6 +15,7 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
@@ -22,6 +23,7 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strings"
 	"sync"
 	"syscall"
@@ -257,16 +259,26 @@ func runTranslate(ctx context.Context, cfg config.Config, args []string) error {
 	langsFlag := fs.String("langs", "", "comma-separated target languages (default WEBTOON_LANGS)")
 	force := fs.Bool("force", false, "retranslate languages that are already complete")
 	inline := fs.Bool("inline", false, "call the LLM now instead of enqueueing jobs")
+	sbFlag := fs.String("storyboard", "", "comma-separated storyboard.json paths (or positional args): translate the files in place, no database")
 	fs.Parse(args) //nolint:errcheck
-	if (*episode == "") == !*all {
-		return errors.New("translate needs -episode id or -all")
-	}
 	langs := cfg.Langs
 	if *langsFlag != "" {
 		langs = strings.Split(*langsFlag, ",")
 	}
 	if len(langs) == 0 {
 		return errors.New("no target languages (WEBTOON_LANGS=none and no -langs)")
+	}
+	if files := append(splitList(*sbFlag), fs.Args()...); *sbFlag != "" || len(files) > 0 {
+		if *episode != "" || *all {
+			return errors.New("translate takes -storyboard files or -episode/-all, not both")
+		}
+		if len(files) == 0 {
+			return errors.New("translate -storyboard needs at least one file")
+		}
+		return runTranslateStoryboards(ctx, cfg, files, langs, *force)
+	}
+	if (*episode == "") == !*all {
+		return errors.New("translate needs -episode id or -all (or -storyboard files)")
 	}
 	s, err := openStore(ctx, cfg)
 	if err != nil {
@@ -312,6 +324,85 @@ func runTranslate(ctx context.Context, cfg config.Config, args []string) error {
 	}
 	slog.Info("translate", "episodes", len(ids), "queued", queued, "skipped_complete", skipped, "translated_langs", translated)
 	return nil
+}
+
+// runTranslateStoryboards translates storyboard.json files in place before they are rendered
+// (world.json next to each gives the source language and speaker names). Files run one after
+// another; a failed file is reported and the rest still run. Each language is saved as soon as it
+// is done, so a rerun continues where an interrupted one stopped.
+func runTranslateStoryboards(ctx context.Context, cfg config.Config, files, langs []string, force bool) error {
+	lc := llm.New(cfg.LLMURL, cfg.LLMModel)
+	lc.AccessID, lc.AccessSecret = cfg.CFAccessID, cfg.CFAccessSecret
+	var failed []string
+	for i, path := range files {
+		if ctx.Err() != nil {
+			failed = append(failed, files[i:]...)
+			break
+		}
+		start := time.Now()
+		done, skipped, err := translateStoryboardFile(ctx, lc, path, langs, force)
+		if err != nil {
+			fmt.Printf("[%d/%d] FAIL %s: %v (translated %v before)\n", i+1, len(files), path, err, done)
+			failed = append(failed, path)
+			continue
+		}
+		if skipped {
+			fmt.Printf("[%d/%d] skip %s: already complete\n", i+1, len(files), path)
+			continue
+		}
+		fmt.Printf("[%d/%d] ok %s: %v in %s\n", i+1, len(files), path, done, time.Since(start).Round(time.Second))
+	}
+	fmt.Printf("translate -storyboard: %d files, %d failed\n", len(files), len(failed))
+	if len(failed) > 0 {
+		return fmt.Errorf("%d of %d storyboards failed: %v", len(failed), len(files), failed)
+	}
+	return nil
+}
+
+func translateStoryboardFile(ctx context.Context, c llm.JSONCaller, path string, langs []string, force bool) ([]string, bool, error) {
+	raw, err := os.ReadFile(path)
+	if err != nil {
+		return nil, false, err
+	}
+	var world struct {
+		Language   string `json:"language"`
+		Characters []struct {
+			ID   string `json:"id"`
+			Name string `json:"name"`
+		} `json:"characters"`
+	}
+	wpath := filepath.Join(filepath.Dir(path), "world.json")
+	if wraw, err := os.ReadFile(wpath); err == nil {
+		if err := json.Unmarshal(wraw, &world); err != nil {
+			return nil, false, fmt.Errorf("%s: %w", wpath, err)
+		}
+	} else if !errors.Is(err, os.ErrNotExist) {
+		return nil, false, err
+	}
+	names := map[string]string{}
+	for _, ch := range world.Characters {
+		names[ch.ID] = ch.Name
+	}
+	f, err := translate.ParseStoryboardFile(raw, world.Language, names)
+	if err != nil {
+		return nil, false, err
+	}
+	if !force && len(f.Missing(langs)) == 0 {
+		return nil, true, nil
+	}
+	save := func(lang string) error {
+		out, err := f.Marshal()
+		if err != nil {
+			return err
+		}
+		tmp := path + ".tmp"
+		if err := os.WriteFile(tmp, out, 0o644); err != nil {
+			return err
+		}
+		return os.Rename(tmp, path)
+	}
+	done, err := translate.TranslateStoryboard(ctx, c, f, langs, force, save)
+	return done, false, err
 }
 
 // missingLangs counts target languages (without the source) the episode is not complete in.

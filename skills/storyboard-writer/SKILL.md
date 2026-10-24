@@ -46,6 +46,9 @@ Pak jako dnes: `m0/run_romance.sh rl_01_santorini` (ComfyUI 07–13, max 1 job, 
 | `prompts/visual_qa.md` | prompt pro kontrolu kontaktního archu (vidění) |
 | `schema/story.schema.json` | JSON schema pro `response_format` (vLLM xgrammar) a lokální validaci |
 | `examples/santorini.input.md` + `.output.json` | few-shot: předloha ze sady H a výsledný storyboard, který se vykreslil bez oprav |
+| `prompts/adapt_system_kids.md` | `--audience kids`: dobrodružný strip pro děti 6–12 (hrdinové 8–12, společníci, roboti; bez krve, bez romantiky) |
+| `schema/story.kids.schema.json` | kids schema: 2–5 postav s `kind` child\|adult\|creature\|robot\|spirit, až 3 postavy v panelu (max 2 lidé) |
+| `examples/kids_park.input.md` + `.output.json` | kids few-shot odvozený z `data/stories/park` |
 | `../../m0/adapt.py` | runner: prompt → model → validace → `data/stories/<id>/` |
 
 ## Co model nedělá
