@@ -43,19 +43,29 @@ bere z prvního dílu, pokud má kampaň stejný název.
 
 ```sh
 # výběr příběhů: -campaigns cp_a,cp_b | -worlds w_x,w_y | -world-prefix w_rb_,w_rc_ (lze kombinovat worlds + prefix)
-# starter: jeden zip (bez dělení), katalogu se nedotkne
-go run ./cmd/webtoon export-pack -starter ../app/assets/packs/starter.zip -pack starter -title Starter \
-  -worlds w_les,w_more -world-prefix w_r_,w_ra_
-# placený balíček do checkoutu webtoon-content: packs/<id>-v<verze>[-a|-b…].zip, covers/, catalog.json (version++)
-go run ./cmd/webtoon export-pack -out ../../webtoon-content -pack romance-1 -title "Romance I" -version 1 \
-  -product pack_romance_1 -world-prefix w_rb_,w_rc_
+#                | -starter-pick ../data/starter_showcase.yaml (jen starter: svět → jeho první kampaň, kontrola stylu)
+# starter: jeden zip (bez dělení), katalogu se nedotkne; 15 příběhů výkladní skříně stylů
+go run ./cmd/webtoon export-pack -starter ../app/assets/packs/starter.zip -starter-pick ../data/starter_showcase.yaml
+# placený balíček do checkoutu webtoon-content: id kids-1, produkt pack_kids_1, release pack-kids-1-v1,
+# zipy releases/pack-kids-1-v1/kids-1-a.zip + -b.zip, covers/, catalog.json (schema 2, version++)
+go run ./cmd/webtoon export-pack -out ../../webtoon-content -type kids -n 1 -world-prefix w_lx_k2_
+# → vypíše (nespouští):
+#   gh release create 'pack-kids-1-v1' '…/releases/pack-kids-1-v1/kids-1-a.zip' '…/kids-1-b.zip' \
+#     --repo 'lioilsources/webtoon-content' --title 'Pro děti 1 v1' --notes 'kids-1 v1: 50 stories in 2 part(s), …'
+# bundly / typy / base_urls z ../rules/base/pack.yaml do katalogu (bez DB)
+go run ./cmd/webtoon catalog-bundles -out ../../webtoon-content
 ```
 
-Nad 25 příběhů se balíček dělí na části `a`, `b`, … po 25 (každá je samostatný zip se svým `pack.json`,
-stejné `id`, pole `part`). Existující zip se nepřepisuje (nová verze = `-version N+1`; `-force` přepíše).
-Další volby: `-free` místo `-product`, `-base-url` (výchozí `https://lioilsources.github.io/webtoon-content/`),
-`-workers` (výchozí počet CPU). Na konci vypíše za každou část počty příběhů/dílů/panelů/smyček, bajty a sha256,
-na stderr poznámky o zkrácených a vynechaných příbězích.
+Typ balíčku (`-type`, `../rules/base/pack.yaml types`) je jinak typ vybraných světů: klíč `profile` ve
+`data/stories/<id bez w_>/world.json` (superhero), jinak `audience` (kids → kids, adult → harlequin); světy
+různých typů bez `-type` export odmítne. `-n` odvodí id, produkt, název a release tag z `naming` v pack.yaml
+(explicitní `-pack`, `-product`, `-title`, `-release-tag` mají přednost). V katalogu se části jmenují vždy
+`a`, `b`, … po `part_size` (25) příběhů (každá je samostatný zip se svým `pack.json`, stejné `id`, pole `part`);
+placený balíček má `pack_size` (50) příběhů. Zipy jdou do `<out>/releases/<tag>/` — necommitují se, nahraje je
+vypsaný `gh release create` (export ho nikdy nespouští). Existující zip se nepřepisuje (nová verze =
+`-version N+1` = nový release tag; `-force` přepíše). Další volby: `-free` místo produktu, `-base-url`
+(přepíše `base_urls.pages`), `-workers` (výchozí počet CPU). Na konci vypíše za každou část počty
+příběhů/dílů/panelů/smyček, bajty a sha256, na stderr poznámky o zkrácených a vynechaných příbězích.
 
 ### Konfigurace (env)
 
@@ -235,7 +245,7 @@ vygenerovat znovu. `data/styles.json` je kopie `../data/styles.json` (musí být
 ## Struktura
 
 ```
-cmd/webtoon/            main: serve | migrate | seed | import-demo | translate | export-pack
+cmd/webtoon/            main: serve | migrate | seed | import-demo | translate | export-pack | catalog-bundles
 data/                   kopie ../data (world_m0, styles, wd14_tags), embedded
 internal/api/           HTTP handlery, auth stub, /media; authoring.go = nástroje autora (M3)
 internal/chargen/       tag_prompt postavy/lokace z popisu (port m0/gen_character.py)

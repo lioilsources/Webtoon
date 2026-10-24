@@ -1,0 +1,47 @@
+# The starter: 15 free stories bundled in the app (assets/packs/starter.zip), 5 kids + 5 superhero + 5 harlequin,
+# each story in a different style, so the free app is a showcase of what the paid packs look like.
+#
+#   cd backend && webtoon export-pack -starter ../app/assets/packs/starter.zip -starter-pick ../data/starter_showcase.yaml
+#
+# Picks are world ids (campaign ids are only known once a world is imported); export-pack takes the world's first
+# campaign (created_at order) unless `campaign:` names one, checks the world is drawn in `style`, and gives the
+# story `type`. Library order = this file's order (kids first: the Kids profile opens on them).
+#
+# The kids and superhero stories are drawn in clean_webtoon_noartist today, so their picks name a restyled copy
+# `<from>__<style>` that m0/restyle.sh makes (same storyboard and translations, new style_id), e.g.
+#
+#   m0/restyle.sh w_lx_k2_01_lia_planeta_tisice_mesicu:pixar_3d w_lx_k3_01_nova_vesmirna_galaxie:anime_screencap:superhero …
+#
+# (the full command is at the bottom). Until those are rendered and imported, the export stops at the first such
+# pick with the restyle.sh command to run. The harlequin picks are already in their styles.
+
+pack: {id: starter, title: Starter, version: 2}
+
+picks:
+  # kids (profile kids; pool in rules/profiles/kids.yaml)
+  - {world: w_lx_k2_01_lia_planeta_tisice_mesicu__pixar_3d, from: w_lx_k2_01_lia_planeta_tisice_mesicu, type: kids, style: pixar_3d}
+  - {world: w_lx_k2_02_eli_draci_dungeon__ligne_claire, from: w_lx_k2_02_eli_draci_dungeon, type: kids, style: ligne_claire}
+  - {world: w_lx_k2_03_maya_chram_ztraceneho_slunce__watercolor_paris, from: w_lx_k2_03_maya_chram_ztraceneho_slunce, type: kids, style: watercolor_paris}
+  - {world: w_lx_k2_04_nela_akademie_jednorozcu__pastel_shoujo, from: w_lx_k2_04_nela_akademie_jednorozcu, type: kids, style: pastel_shoujo}
+  - {world: w_lx_k2_10_rik_les_ktery_si_pamatuje__ink_wash, from: w_lx_k2_10_rik_les_ktery_si_pamatuje, type: kids, style: ink_wash}
+  # superhero (restyled with profile superhero; pool in rules/profiles/superhero.yaml)
+  - {world: w_lx_k3_01_nova_vesmirna_galaxie__anime_screencap, from: w_lx_k3_01_nova_vesmirna_galaxie, type: superhero, style: anime_screencap}
+  - {world: w_lx_k4_06_toby_pavouci_rytir__western_comic, from: w_lx_k4_06_toby_pavouci_rytir, type: superhero, style: western_comic}
+  - {world: w_lx_k4_03_viktorie_stribrny_mec__manga_mono, from: w_lx_k4_03_viktorie_stribrny_mec, type: superhero, style: manga_mono}
+  - {world: w_lx_k4_07_kai_ohnivy_drak__fantasy_colorlines, from: w_lx_k4_07_kai_ohnivy_drak, type: superhero, style: fantasy_colorlines}
+  - {world: w_lx_k4_10_max_octo_boy__vintage_poster, from: w_lx_k4_10_max_octo_boy, type: superhero, style: vintage_poster}
+  # harlequin (adult: hidden in the Kids profile)
+  - {world: w_rg_01_santorini, type: harlequin, style: photo_realvis_film}
+  - {world: w_ra_06_praha, type: harlequin, style: noir_mono}
+  - {world: w_ra_02_pariz, type: harlequin, style: art_nouveau_mucha}
+  - {world: w_rk_02_kyoto, type: harlequin, style: ukiyoe}
+  - {world: w_ri_05_soul, type: harlequin, style: retro_citypop}
+
+# Re-render of the 10 restyled stories (ComfyUI window only, ask Director for the go; not run by any tool):
+#   m0/restyle.sh \
+#     w_lx_k2_01_lia_planeta_tisice_mesicu:pixar_3d w_lx_k2_02_eli_draci_dungeon:ligne_claire \
+#     w_lx_k2_03_maya_chram_ztraceneho_slunce:watercolor_paris w_lx_k2_04_nela_akademie_jednorozcu:pastel_shoujo \
+#     w_lx_k2_10_rik_les_ktery_si_pamatuje:ink_wash \
+#     w_lx_k3_01_nova_vesmirna_galaxie:anime_screencap:superhero w_lx_k4_06_toby_pavouci_rytir:western_comic:superhero \
+#     w_lx_k4_03_viktorie_stribrny_mec:manga_mono:superhero w_lx_k4_07_kai_ohnivy_drak:fantasy_colorlines:superhero \
+#     w_lx_k4_10_max_octo_boy:vintage_poster:superhero

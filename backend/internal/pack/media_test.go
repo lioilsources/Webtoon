@@ -124,7 +124,7 @@ func TestBuildZip(t *testing.T) {
 		}
 	}
 	now := time.Date(2026, 10, 23, 8, 0, 0, 0, time.UTC)
-	opts := Options{ID: "demo", Title: "Demo", Version: 1, MediaDir: media, OutDir: out, Now: now, Workers: 2}
+	opts := Options{ID: "demo", Title: "Demo", Version: 1, MediaDir: media, OutDir: out, Now: now, Workers: 2, ReleaseTag: "pack-demo-v1"}
 	parts, err := Plan(opts, []Story{story(w, 1, e1), story(w, 1, e2)})
 	if err != nil {
 		t.Fatal(err)
@@ -133,7 +133,7 @@ func TestBuildZip(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	if ps.Path != filepath.Join(out, "packs", "demo-v1.zip") || ps.Stories != 2 || ps.Episodes != 2 || ps.Panels != 3 || ps.Loops != 2 || ps.Bytes == 0 || len(ps.SHA256) != 64 {
+	if ps.Path != filepath.Join(out, "releases", "pack-demo-v1", "demo-a.zip") || ps.Part != "a" || ps.Stories != 2 || ps.Episodes != 2 || ps.Panels != 3 || ps.Loops != 2 || ps.Bytes == 0 || len(ps.SHA256) != 64 {
 		t.Fatalf("summary %+v", ps)
 	}
 	if st, err := os.Stat(ps.Path); err != nil || st.Size() != ps.Bytes {

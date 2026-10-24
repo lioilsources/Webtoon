@@ -8,9 +8,13 @@
 //	                                    insert a ready episode from M0 outputs (no LLM/ComfyUI calls)
 //	webtoon translate [-episode id | -all] [-langs en,de] [-force] [-inline]
 //	                                    translate ready episodes' bubbles (enqueue jobs, or call the LLM right here)
-//	webtoon export-pack -pack id -title t [-version 1] (-out dir [-product id | -free] | -starter file.zip)
-//	                    (-campaigns a,b | -worlds w,x | -world-prefix w_r_,w_ra_)
-//	                                    build an offline content pack (PACK_FORMAT.md) from the DB + MEDIA_DIR
+//	webtoon export-pack (-type kids -n 1 | -pack id -title t) [-version 1] [-release-tag t]
+//	                    (-out dir [-product id | -free] | -starter file.zip)
+//	                    (-campaigns a,b | -worlds w,x | -world-prefix w_r_,w_ra_ | -starter-pick data/starter_showcase.yaml)
+//	                                    build an offline content pack (PACK_FORMAT.md) from the DB + MEDIA_DIR;
+//	                                    catalog mode writes releases/<tag>/<asset> + catalog.json and prints the
+//	                                    `gh release create` command (never runs it)
+//	webtoon catalog-bundles -out dir    rewrite catalog.json base_urls/types/bundles from rules/base/pack.yaml (no DB)
 package main
 
 import (
@@ -75,8 +79,10 @@ func main() {
 		err = runTranslate(ctx, cfg, args)
 	case "export-pack":
 		err = runExportPack(ctx, cfg, args)
+	case "catalog-bundles":
+		err = runCatalogBundles(args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -421,14 +427,18 @@ func missingLangs(et *worker.EpisodeText, langs []string) int {
 func runExportPack(ctx context.Context, cfg config.Config, args []string) error {
 	fs := flag.NewFlagSet("export-pack", flag.ExitOnError)
 	var o pack.Options
-	fs.StringVar(&o.ID, "pack", "", "pack id, [a-z0-9-] (required)")
-	fs.StringVar(&o.Title, "title", "", "pack title (required)")
-	fs.IntVar(&o.Version, "version", 1, "pack version; part of the zip name")
-	fs.StringVar(&o.ProductID, "product", "", "store product id of a paid pack")
+	fs.StringVar(&o.ID, "pack", "", "pack id, [a-z0-9-] (default with -type/-n: rules naming, e.g. kids-1)")
+	fs.StringVar(&o.Title, "title", "", "pack title (default with -type/-n: the type's title + n)")
+	fs.IntVar(&o.Version, "version", 0, "pack version; part of the release tag (default 1, or the pick file's)")
+	fs.StringVar(&o.ProductID, "product", "", "store product id of a paid pack (default with -n: pack_<type>_<n>)")
 	fs.BoolVar(&o.Free, "free", false, "free pack (no product)")
-	fs.StringVar(&o.OutDir, "out", "", "webtoon-content checkout: writes packs/, covers/ and merges catalog.json")
+	fs.StringVar(&o.Type, "type", "", "pack type, rules/base/pack.yaml types (default: the worlds' profile / audience)")
+	fs.IntVar(&o.N, "n", 0, "pack number within its type; derives id, product and release tag")
+	fs.StringVar(&o.ReleaseTag, "release-tag", "", "GitHub release of the zips (default: rules naming, pack-<type>-<n>-v<version>)")
+	fs.StringVar(&o.OutDir, "out", "", "webtoon-content checkout: writes releases/<tag>/, covers/ and merges catalog.json")
 	fs.StringVar(&o.Starter, "starter", "", "write this single zip (e.g. ../app/assets/packs/starter.zip) and touch no catalog")
-	fs.StringVar(&o.BaseURL, "base-url", pack.DefaultBaseURL, "catalog base_url")
+	fs.StringVar(&o.BaseURL, "base-url", "", "catalog base_urls.pages (default: rules/base/pack.yaml)")
+	pickFile := fs.String("starter-pick", "", "starter selection: yaml of world picks (data/starter_showcase.yaml)")
 	fs.IntVar(&o.Workers, "workers", 0, "parallel cwebp processes (default: CPUs)")
 	fs.BoolVar(&o.Force, "force", false, "overwrite an existing zip")
 	campaigns := fs.String("campaigns", "", "comma-separated campaign ids")
@@ -440,6 +450,29 @@ func runExportPack(ctx context.Context, cfg config.Config, args []string) error 
 	}
 	o.MediaDir = cfg.MediaDir
 	sel := pack.Selection{Campaigns: splitList(*campaigns), Worlds: splitList(*worlds), WorldPrefixes: splitList(*prefixes)}
+	if *pickFile != "" {
+		r, err := pack.LoadRules()
+		if err != nil {
+			return err
+		}
+		pf, err := pack.ReadPicks(*pickFile, r)
+		if err != nil {
+			return err
+		}
+		sel.Picks = pf.Picks
+		if o.ID == "" {
+			o.ID = pf.Pack.ID
+		}
+		if o.Title == "" {
+			o.Title = pf.Pack.Title
+		}
+		if o.Version == 0 {
+			o.Version = pf.Pack.Version
+		}
+	}
+	if o.Version == 0 {
+		o.Version = 1
+	}
 	if err := sel.Validate(); err != nil {
 		return err
 	}
@@ -468,7 +501,26 @@ func runExportPack(ctx context.Context, cfg config.Config, args []string) error 
 	}
 	if sum.CatalogPath != "" {
 		fmt.Printf("catalog %s  version %d\n", sum.CatalogPath, sum.CatalogVersion)
+		fmt.Printf("upload the zips (then commit catalog.json + covers/ of the Pages repo):\n  %s\n", sum.GhCommand)
 	}
+	return nil
+}
+
+// runCatalogBundles rewrites base_urls, types and bundles of catalog.json from rules/base/pack.yaml (a new bundle
+// or type needs no export). No database.
+func runCatalogBundles(args []string) error {
+	fs := flag.NewFlagSet("catalog-bundles", flag.ExitOnError)
+	out := fs.String("out", "", "webtoon-content checkout holding catalog.json (required)")
+	baseURL := fs.String("base-url", "", "catalog base_urls.pages (default: rules/base/pack.yaml)")
+	fs.Parse(args) //nolint:errcheck
+	if *out == "" || fs.NArg() != 0 {
+		return errors.New("usage: webtoon catalog-bundles -out <webtoon-content dir> [-base-url url]")
+	}
+	c, err := pack.RefreshCatalog(filepath.Join(*out, "catalog.json"), *baseURL, time.Now())
+	if err != nil {
+		return err
+	}
+	fmt.Printf("catalog %s  version %d  types %d  bundles %d\n", filepath.Join(*out, "catalog.json"), c.Version, len(c.Types), len(c.Bundles))
 	return nil
 }
 

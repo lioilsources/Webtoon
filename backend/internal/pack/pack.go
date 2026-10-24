@@ -13,12 +13,9 @@ import (
 
 // Part size, WebP quality, cover size, the forbidden world prefix and the dropped episode fields are rules:
 // rules/base/pack.yaml (rules.go).
-const (
-	Schema = 1 // pack.json / catalog.json schema
-
-	// DefaultBaseURL is where the app downloads catalog.json and the zips from.
-	DefaultBaseURL = "https://lioilsources.github.io/webtoon-content/"
-)
+// Schema is the pack.json schema (catalog.json has its own, CatalogSchema). Base URLs, naming, types and bundles
+// of the catalog are in rules/base/pack.yaml too.
+const Schema = 1
 
 var packIDRe = regexp.MustCompile(`^[a-z0-9-]+$`)
 
@@ -29,10 +26,16 @@ type Options struct {
 	Version   int    // ≥ 1; part of the zip file name (files are never overwritten in webtoon-content)
 	ProductID string // store product of a paid pack (catalog mode)
 	Free      bool   // free pack: no product (catalog mode)
-	BaseURL   string // catalog base_url; default DefaultBaseURL
+	BaseURL   string // catalog base_urls.pages override; default rules base_urls.pages
 	MediaDir  string // MEDIA_DIR of the backend (PNG panels, WebP loops)
 
-	OutDir  string // catalog mode: writes packs/<id>-v<n>[-<part>].zip, covers/, catalog.json under it
+	// Type is the pack type (rules types); default: the selected worlds' type (WorldType). N is the pack number
+	// of the type: with it the id, product and release tag come from rules naming (unless given).
+	Type       string
+	N          int
+	ReleaseTag string // GitHub release of the zips; default from rules naming
+
+	OutDir  string // catalog mode: writes releases/<tag>/<asset>, covers/, catalog.json under it
 	Starter string // starter mode: writes this one zip (no parts, no catalog)
 
 	Workers int       // cwebp processes in flight; default runtime.NumCPU()
@@ -45,6 +48,7 @@ type Story struct {
 	Campaign dbq.Campaign
 	World    dbq.World
 	Episodes []Episode
+	Type     string // pack type of the story (pick, -type or WorldType); "" when unknown
 }
 
 // Episode is one episode row with its panels in idx order.
@@ -75,6 +79,7 @@ type WorldJSON struct {
 	Audience string `json:"audience"`
 	Language string `json:"language"`
 	StyleID  string `json:"style_id"`
+	Type     string `json:"type,omitempty"`
 }
 
 // StoryJSON is one story (= campaign) of pack.json.
@@ -86,6 +91,7 @@ type StoryJSON struct {
 	Episodes  []string        `json:"episodes"`
 	Cover     string          `json:"cover"`
 	Languages []string        `json:"languages"`
+	Type      string          `json:"type,omitempty"`
 }
 
 // Summary is what Run reports.
@@ -95,6 +101,8 @@ type Summary struct {
 	// Catalog mode only.
 	CatalogPath    string
 	CatalogVersion int
+	ReleaseTag     string
+	GhCommand      string // `gh release create …` uploading the zips (printed, never run)
 }
 
 // PartSummary describes one written zip.

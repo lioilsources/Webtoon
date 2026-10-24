@@ -16,12 +16,19 @@ type Selection struct {
 	Campaigns     []string
 	Worlds        []string
 	WorldPrefixes []string
+	Picks         []Pick // -starter-pick: one story per world, in file order (PickFile)
 }
 
 func (s Selection) byWorld() bool { return len(s.Worlds) > 0 || len(s.WorldPrefixes) > 0 }
 
 // Validate checks that the selection names something and does not mix the two modes.
 func (s Selection) Validate() error {
+	if len(s.Picks) > 0 {
+		if len(s.Campaigns) > 0 || s.byWorld() {
+			return errors.New("-starter-pick is a selection of its own: no -campaigns/-worlds/-world-prefix")
+		}
+		return nil
+	}
 	if len(s.Campaigns) > 0 && s.byWorld() {
 		return errors.New("use either -campaigns or -worlds/-world-prefix, not both")
 	}
@@ -139,6 +146,9 @@ func describe(e Episode) string {
 func Load(ctx context.Context, q *dbq.Queries, sel Selection) ([]Story, error) {
 	if err := sel.Validate(); err != nil {
 		return nil, err
+	}
+	if len(sel.Picks) > 0 {
+		return loadPicks(ctx, q, sel.Picks)
 	}
 	var out []Story
 	if sel.byWorld() {

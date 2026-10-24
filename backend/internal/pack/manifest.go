@@ -73,8 +73,8 @@ func SplitParts(stories []Story, single bool) [][]Story {
 	return out
 }
 
-func partName(i, n int) string {
-	if n == 1 {
+func partName(i, n int, always bool) string {
+	if n == 1 && !always {
 		return ""
 	}
 	return string(rune('a' + i))
@@ -102,7 +102,8 @@ func Plan(opts Options, stories []Story) ([]Part, error) {
 	chunks := SplitParts(stories, opts.Starter != "")
 	parts := make([]Part, 0, len(chunks))
 	for i, chunk := range chunks {
-		p, err := planPart(opts, partName(i, len(chunks)), chunk, now)
+		// Catalog parts are always named (a, b, …): the release asset name carries the part.
+		p, err := planPart(opts, partName(i, len(chunks), opts.OutDir != ""), chunk, now)
 		if err != nil {
 			return nil, err
 		}
@@ -127,9 +128,9 @@ func planPart(opts Options, name string, stories []Story, now time.Time) (Part, 
 			worldsSeen[s.World.ID] = true
 			w := s.World
 			part.Manifest.Worlds = append(part.Manifest.Worlds, WorldJSON{ID: w.ID, Title: w.Title, Synopsis: w.Synopsis,
-				Tone: w.Tone, Audience: w.Audience, Language: w.Language, StyleID: w.StyleID})
+				Tone: w.Tone, Audience: w.Audience, Language: w.Language, StyleID: w.StyleID, Type: s.Type})
 		}
-		sj := StoryJSON{ID: s.Campaign.ID, WorldID: s.World.ID, Title: s.Campaign.Title,
+		sj := StoryJSON{ID: s.Campaign.ID, WorldID: s.World.ID, Title: s.Campaign.Title, Type: s.Type,
 			TitleI18n: json.RawMessage("{}"), Episodes: []string{}, Cover: coverPath(s.Campaign.ID)}
 		var langs []string
 		for i, e := range s.Episodes {
