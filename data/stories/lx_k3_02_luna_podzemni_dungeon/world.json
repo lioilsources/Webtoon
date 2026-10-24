@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_02_luna_podzemni_dungeon",
+  "title": "Luna a stínová čarodějnice",
+  "synopsis": "Luna se vydává do podzemního dungeonu, aby zastavila temnou čarodějnici a jejího stínového mazlíčka.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: čarodějnice se rozplynula, ale slíbila návrat."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_corridor",
+      "l_hall"
+    ]
+  },
+  "characters": [
+    {
+      "id": "luna",
+      "name": "Luna",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a magical Czech girl aged 9 with long silver hair and small translucent wings",
+      "base": "female child, long silver hair, blue eyes, fair skin, small wings",
+      "outfits": {
+        "default": "blue mage robe, silver staff, white boots"
+      },
+      "photo": "a magical Czech girl aged 9 with long silver hair and small translucent wings",
+      "tag_prompt": "female child, long silver hair, blue eyes, fair skin, small wings, blue mage robe, silver staff, white boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "witch",
+      "name": "Stínová čarodějnice",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall dark spirit with a flowing black cloak and glowing purple eyes",
+      "base": "ghost, transparent, floating, dark aura, long black hair",
+      "outfits": {
+        "default": "black cloak, glowing purple eyes"
+      },
+      "photo": "a tall dark spirit with a flowing black cloak and glowing purple eyes",
+      "tag_prompt": "ghost, transparent, floating, dark aura, long black hair, black cloak, glowing purple eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small black cat with glowing green eyes and a shadowy outline",
+      "base": "cat, small cat, black fur, glowing green eyes",
+      "outfits": {
+        "default": "dark shadow aura"
+      },
+      "photo": "a small black cat with glowing green eyes and a shadowy outline",
+      "tag_prompt": "cat, small cat, black fur, glowing green eyes, dark shadow aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_corridor",
+      "name": "Temný koridor",
+      "description": "Temný koridor",
+      "tag_prompt": "indoors, dungeon, stone corridor, torches, dripping water, dark, narrow",
+      "mood": ""
+    },
+    {
+      "id": "l_hall",
+      "name": "Síň",
+      "description": "Síň",
+      "tag_prompt": "indoors, dungeon hall, stone pillars, dark, magical atmosphere, purple light",
+      "mood": ""
+    }
+  ]
+}

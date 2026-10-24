@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_10_zane_planeta_astra",
+  "title": "Zane a planeta Astra",
+  "synopsis": "Zane a dráček Spark brání hvězdy před galaktickým démonem na planetě Astra.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: démon utekl do černé díry a hrozí návrat."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_astra",
+      "l_blackhole"
+    ]
+  },
+  "characters": [
+    {
+      "id": "zane",
+      "name": "Zane",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short black hair and determined blue eyes",
+      "base": "male child, black hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots, golden shield, glowing fists"
+      },
+      "photo": "a brave Czech boy aged 11 with short black hair and determined blue eyes",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, silver space helmet, white spacesuit, purple gloves, boots, golden shield, glowing fists",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green dragon with shiny scales and tiny wings",
+      "base": "dragon, small dragon, green scales, small wings, big eyes",
+      "outfits": {
+        "default": "small horn"
+      },
+      "photo": "a small green dragon with shiny scales and tiny wings",
+      "tag_prompt": "dragon, small dragon, green scales, small wings, big eyes, small horn",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demon",
+      "name": "Galaktický démon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red demon with big horns and fiery wings",
+      "base": "demon, red skin, large horns, bat wings, glowing yellow eyes, muscular",
+      "outfits": {
+        "default": "dark armor"
+      },
+      "photo": "a large red demon with big horns and fiery wings",
+      "tag_prompt": "demon, red skin, large horns, bat wings, glowing yellow eyes, muscular, dark armor",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_astra",
+      "name": "Planeta Astra",
+      "description": "Planeta Astra",
+      "tag_prompt": "outdoors, alien planet, purple sky, floating rocks, stars, nebula, night, sci-fi landscape",
+      "mood": ""
+    },
+    {
+      "id": "l_blackhole",
+      "name": "Černá díra",
+      "description": "Černá díra",
+      "tag_prompt": "outdoors, space, black hole, swirling purple and black vortex, stars, sci-fi",
+      "mood": ""
+    }
+  ]
+}

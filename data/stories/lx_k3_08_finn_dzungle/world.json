@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_08_finn_dzungle",
+  "title": "Finn a hadí čarodějnice",
+  "synopsis": "Finn a jeho kamarád Shell bojují v džungli proti hadí čarodějnici, která mění zvířata.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: džungle je v pořádku, ale čarodějnice utekla."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_clearing"
+    ]
+  },
+  "characters": [
+    {
+      "id": "finn",
+      "name": "Finn",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 9 with short blonde hair and blue eyes",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, athletic build",
+      "outfits": {
+        "default": "green tank top, khaki shorts, brown boots, water gun, bubble shield"
+      },
+      "photo": "a brave Czech boy aged 9 with short blonde hair and blue eyes",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, athletic build, green tank top, khaki shorts, brown boots, water gun, bubble shield",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "shell",
+      "name": "Shell",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red crab with big claws and a green bandana",
+      "base": "crab, large crab, red shell, big claws",
+      "outfits": {
+        "default": "small green bandana"
+      },
+      "photo": "a large red crab with big claws and a green bandana",
+      "tag_prompt": "crab, large crab, red shell, big claws, small green bandana",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sorceress",
+      "name": "Hadí čarodějnice",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall snake spirit with green skin, long green hair and a snake tail",
+      "base": "snake, green skin, long green hair, snake tail, glowing eyes, humanoid",
+      "outfits": {
+        "default": "dark green robes, snake scales pattern, magical staff"
+      },
+      "photo": "a tall snake spirit with green skin, long green hair and a snake tail",
+      "tag_prompt": "snake, green skin, long green hair, snake tail, glowing eyes, humanoid, dark green robes, snake scales pattern, magical staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Hustá džungle",
+      "description": "Hustá džungle",
+      "tag_prompt": "outdoors, dense jungle, large leaves, vines, sunlight filtering through canopy, humid, green",
+      "mood": ""
+    },
+    {
+      "id": "l_clearing",
+      "name": "Prostranství v džungli",
+      "description": "Prostranství v džungli",
+      "tag_prompt": "outdoors, jungle clearing, dirt ground, large rocks, sunlight, shadows",
+      "mood": ""
+    }
+  ]
+}

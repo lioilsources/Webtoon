@@ -1,0 +1,337 @@
+{
+  "title": "Luna a stínová čarodějnice",
+  "title_i18n": {
+    "de": "Luna und die Schattenhexe",
+    "en": "Luna and the Shadow Witch",
+    "fr": "Luna et la sorcière de l'ombre",
+    "it": "Luna e la strega dell'ombra",
+    "ja": "ルナと影の魔女",
+    "ko": "루나와 그림자 마녀",
+    "pl": "Luna i Czarownica Cienia",
+    "pt-BR": "Luna e a Feiticeira das Sombras",
+    "ru": "Луна и тёмная ведьма",
+    "uk": "Луна та чаклунка тіней",
+    "vi": "Luna và phù thủy bóng tối"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_corridor",
+      "characters": [],
+      "visual_tags": [
+        "stone walls",
+        "torchlight",
+        "dripping water",
+        "dark",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Temný koridor v hlubinách dungeonu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein dunkler Korridor in den Tiefen des Dungeons.",
+            "en": "A dark corridor deep within the dungeon.",
+            "fr": "Un couloir sombre dans les profondeurs du donjon.",
+            "it": "Un corridoio oscuro nelle profondità del dungeon.",
+            "ja": "ダンジョンの深みにある暗い廊下。",
+            "ko": "던전의 깊은 곳, 어두운 복도.",
+            "pl": "Mroczny korytarz w głębinach lochu.",
+            "pt-BR": "Um corredor sombrio nas profundezas da masmorra.",
+            "ru": "Тёмный коридор в глубинах подземелья.",
+            "uk": "Темний коридор у глибинах підземелля.",
+            "vi": "Hành lang tối tăm ở sâu trong hầm ngục."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, static camera",
+      "motion_llm": "water dripping from ceiling, torch flames flickering, static camera",
+      "wd14_tags": {
+        "solo": 0.842,
+        "1girl": 0.837,
+        "blue theme": 0.677,
+        "water": 0.672,
+        "indoors": 0.608,
+        "very wide shot": 0.552,
+        "scenery": 0.543,
+        "standing": 0.508,
+        "white dress": 0.503,
+        "dress": 0.498,
+        "pillar": 0.426,
+        "ripples": 0.384
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "luna"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "holding staff",
+        "looking forward",
+        "cat pointing",
+        "serious",
+        "glowing staff"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luna",
+          "text": "Shadowe, cítím zlo…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Shadowe, ich spüre das Böse…",
+            "en": "Shadowe, I feel evil...",
+            "fr": "Shadowe, je sens le mal…",
+            "it": "Shadowe, sento il male…",
+            "ja": "シャドウ、悪意を感じる…",
+            "ko": "샤도, 악기가 느껴져…",
+            "pl": "Shadowe, czuję zło…",
+            "pt-BR": "Shadowe, sinto maldade...",
+            "ru": "Шэдоу, я чувствую зло…",
+            "uk": "Шедоу, я відчуваю зло…",
+            "vi": "Shadowe, ta cảm thấy sự ác độc…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "cat meowing",
+        "open mouth",
+        "pointing paw",
+        "glowing eyes",
+        "dark fur"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "Mňau!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "luna"
+        },
+        {
+          "id": "witch"
+        }
+      ],
+      "visual_tags": [
+        "casting spell",
+        "ice shield",
+        "dark magic",
+        "attacking",
+        "glowing purple",
+        "flying"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luna",
+          "text": "Zmraz!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Erfrieren!",
+            "en": "Freeze!",
+            "fr": "Givre !",
+            "it": "Congela!",
+            "ja": "凍結！",
+            "ko": "얼어붙어!",
+            "pl": "Zamrznij!",
+            "pt-BR": "Congele!",
+            "ru": "Замри!",
+            "uk": "Заморозити!",
+            "vi": "Đóng băng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "luna"
+        }
+      ],
+      "visual_tags": [
+        "ice spikes",
+        "blocking",
+        "determined",
+        "glowing blue",
+        "staff raised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "witch"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "dissolving",
+        "smoke",
+        "fading",
+        "dark aura",
+        "floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "witch",
+          "text": "Vrátím se…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich werde zurückkehren…",
+            "en": "I'll be back...",
+            "fr": "Je reviendrai…",
+            "it": "Tornerò…",
+            "ja": "戻ってくる…",
+            "ko": "나는 돌아올 거야…",
+            "pl": "Wrócę…",
+            "pt-BR": "Eu voltarei...",
+            "ru": "Я вернусь…",
+            "uk": "Я повернуся…",
+            "vi": "Ta sẽ trở lại…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, dark smoke swirling and fading away, static camera",
+      "wd14_tags": {
+        "cat": 0.971,
+        "no humans": 0.97,
+        "black cat": 0.863,
+        "indoors": 0.711,
+        "window": 0.599,
+        "green eyes": 0.535,
+        "stairs": 0.501,
+        "solo": 0.465,
+        "animal": 0.457,
+        "animal focus": 0.428,
+        "looking at viewer": 0.427,
+        "shadow": 0.356
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "luna"
+        }
+      ],
+      "visual_tags": [
+        "standing firm",
+        "confident",
+        "holding staff",
+        "looking at smoke",
+        "blue eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "luna",
+          "text": "Budu připravená.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich werde bereit sein.",
+            "en": "I'll be ready.",
+            "fr": "Je serai prête.",
+            "it": "Sarò pronta.",
+            "ja": "準備はできてるわ。",
+            "ko": "준비할게.",
+            "pl": "Będę gotowa.",
+            "pt-BR": "Estarei pronta.",
+            "ru": "Я буду готова.",
+            "uk": "Я буду готова.",
+            "vi": "Ta sẽ sẵn sàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "luna"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "safe",
+        "dungeon quiet",
+        "torchlight",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Dungeon je klidný, ale hrozba zůstává.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Dungeon ist ruhig, doch die Gefahr bleibt.",
+            "en": "The dungeon is quiet, but the threat remains.",
+            "fr": "Le donjon est calme, mais la menace persiste.",
+            "it": "Il dungeon è tranquillo, ma la minaccia rimane.",
+            "ja": "ダンジョンは静かだが、脅威は消えていない。",
+            "ko": "던전은 고요하지만, 위협은 여전하다.",
+            "pl": "Loch jest spokojny, ale zagrożenie pozostaje.",
+            "pt-BR": "A masmorra está calma, mas a ameaça permanece.",
+            "ru": "Подземелье тихо, но угроза остаётся.",
+            "uk": "Підземелля спокійне, але загроза залишається.",
+            "vi": "Hầm ngục yên tĩnh, nhưng mối đe dọa vẫn còn đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

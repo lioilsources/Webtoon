@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_07_leo_stin_nad_mestem",
+  "title": "Leo a stín nad městem",
+  "synopsis": "Chytrý kluk Leo a jeho robotický netopýr Pix bojují proti tajemnému Mechanikovi, který paralyzuje město.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: Leo zmizí ve tmě a nechává za sebou jen symbol netopýra."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_roof",
+      "l_city",
+      "l_bench"
+    ]
+  },
+  "characters": [
+    {
+      "id": "leo",
+      "name": "Leo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a clever Czech boy aged 11 with short black hair and a determined expression",
+      "base": "male child, black hair, short hair, dark eyes, fair skin, determined face",
+      "outfits": {
+        "default": "black cape, black mask, dark hoodie, dark pants, utility belt, boots"
+      },
+      "photo": "a clever Czech boy aged 11 with short black hair and a determined expression",
+      "tag_prompt": "male child, black hair, short hair, dark eyes, fair skin, determined face, black cape, black mask, dark hoodie, dark pants, utility belt, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pix",
+      "name": "Pix",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small metallic robot bat with glowing blue eyes and folded wings",
+      "base": "robot, bat, small robot, metallic body, glowing blue eyes, wings",
+      "outfits": {
+        "default": "glowing blue visor, antenna"
+      },
+      "photo": "a small metallic robot bat with glowing blue eyes and folded wings",
+      "tag_prompt": "robot, bat, small robot, metallic body, glowing blue eyes, wings, glowing blue visor, antenna",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mechanik",
+      "name": "Mechanik",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large dark mecha robot with glowing red eyes",
+      "base": "robot, mecha, large robot, dark metal, red eyes, helmet",
+      "outfits": {
+        "default": "dark metal armor, glowing red eyes, large mechanical arms"
+      },
+      "photo": "a large dark mecha robot with glowing red eyes",
+      "tag_prompt": "robot, mecha, large robot, dark metal, red eyes, helmet, dark metal armor, glowing red eyes, large mechanical arms",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "policista",
+      "name": "Policista",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serious Czech police officer aged 40 with short hair and a mustache",
+      "base": "adult, mature male, police officer, short hair, mustache, uniform",
+      "outfits": {
+        "default": "police uniform, cap, flashlight, badge"
+      },
+      "photo": "a serious Czech police officer aged 40 with short hair and a mustache",
+      "tag_prompt": "adult, mature male, police officer, short hair, mustache, uniform, police uniform, cap, flashlight, badge",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, night, city skyline, moonlight, stars, tiles, chimney",
+      "mood": ""
+    },
+    {
+      "id": "l_city",
+      "name": "Město",
+      "description": "Město",
+      "tag_prompt": "outdoors, city street, night, dark, streetlights off, shadows, buildings",
+      "mood": ""
+    },
+    {
+      "id": "l_bench",
+      "name": "Lavička",
+      "description": "Lavička",
+      "tag_prompt": "outdoors, park, park bench, trees, flowers, sunlight, afternoon",
+      "mood": ""
+    }
+  ]
+}

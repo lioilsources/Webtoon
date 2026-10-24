@@ -1,0 +1,546 @@
+{
+  "title": "Eli a Dračí Dungeon",
+  "title_i18n": {
+    "de": "Eli und das Drachendungeon",
+    "en": "Eli and the Dragon Dungeon",
+    "fr": "Eli et le Donjon du Dragon",
+    "it": "Eli e il Dungeon del Drago",
+    "ja": "エリとドラゴンのダンジョン",
+    "ko": "엘리 및 드래곤 던전",
+    "pl": "Eli i Smoczy Loch",
+    "pt-BR": "Eli e a Masmorra do Dragão",
+    "ru": "Эли и Подземелье Драконов",
+    "uk": "Елі та Драконячий Підземелля",
+    "vi": "Eli và Mê Cung Rồng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dungeon_entrance",
+      "characters": [],
+      "visual_tags": [
+        "large stone doors",
+        "moss",
+        "vines",
+        "twilight",
+        "mysterious",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jen stateční smějí dál.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nur die Mutigen dürfen weiter.",
+            "en": "Only the brave may proceed.",
+            "fr": "Seuls les courageux peuvent continuer.",
+            "it": "Solo i coraggiosi possono andare avanti.",
+            "ja": "勇者だけが、先へ進める。",
+            "ko": "용감한 자만이 계속 나아갈 수 있다.",
+            "pl": "Tylko odważni mogą iść dalej.",
+            "pt-BR": "Só os corajosos podem seguir em frente.",
+            "ru": "Только смелые могут идти дальше.",
+            "uk": "Лише хоробрі сміють йти далі.",
+            "vi": "Chỉ những kẻ dũng cảm mới dám tiến bước."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "vines swaying slightly, torchlight flickering on stone, static camera",
+      "wd14_tags": {
+        "no humans": 0.973,
+        "outdoors": 0.872,
+        "scenery": 0.826,
+        "plant": 0.764,
+        "grass": 0.75,
+        "rock": 0.725,
+        "vines": 0.719,
+        "moss": 0.719,
+        "ruins": 0.594,
+        "sky": 0.575
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "eli"
+        },
+        {
+          "id": "bubla"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at door",
+        "nervous",
+        "holding staff",
+        "hiding behind cape"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bubla",
+          "text": "Bojím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab Angst.",
+            "en": "I'm scared.",
+            "fr": "J'ai peur.",
+            "it": "Ho paura.",
+            "ja": "怖いよ…",
+            "ko": "무서워.",
+            "pl": "Boję się.",
+            "pt-BR": "Estou com medo.",
+            "ru": "Мне страшно.",
+            "uk": "Мені страшно.",
+            "vi": "Con sợ lắm."
+          }
+        },
+        {
+          "speaker_id": "eli",
+          "text": "Já taky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich auch.",
+            "en": "Me too.",
+            "fr": "Moi aussi.",
+            "it": "Anch'io.",
+            "ja": "私も。",
+            "ko": "나도.",
+            "pl": "Ja też.",
+            "pt-BR": "Eu também.",
+            "ru": "Мне тоже.",
+            "uk": "Мені теж.",
+            "vi": "Tớ cũng vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "bubla"
+        }
+      ],
+      "visual_tags": [
+        "scared",
+        "big eyes",
+        "shivering",
+        "close up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "bubla",
+          "text": "Tak jdeme domů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann gehen wir nach Hause.",
+            "en": "Let's go home.",
+            "fr": "Alors, on rentre.",
+            "it": "Allora torniamo a casa.",
+            "ja": "帰ろうよ。",
+            "ko": "그럼 집에 가자.",
+            "pl": "Wróćmy więc do domu.",
+            "pt-BR": "Então vamos para casa.",
+            "ru": "Пойдём домой.",
+            "uk": "Тоді підемо додому.",
+            "vi": "Vậy về nhà thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "eli"
+        }
+      ],
+      "visual_tags": [
+        "determined",
+        "shaking head",
+        "holding staff",
+        "resolute"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eli",
+          "text": "Ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "ダメ。",
+            "ko": "아니.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_entrance",
+      "characters": [],
+      "visual_tags": [
+        "stone doors opening",
+        "darkness inside",
+        "dust",
+        "mysterious light"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "eli"
+        },
+        {
+          "id": "bubla"
+        },
+        {
+          "id": "goblin"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "goblins jumping",
+        "torchlight",
+        "shadows",
+        "surprised",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eli",
+          "text": "Bublo, bubliny!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Bubla, Blasen!",
+            "en": "Bubla, bubbles!",
+            "fr": "Bubla, des bulles !",
+            "it": "Bubla, bolle!",
+            "ja": "ブーラ、泡を！",
+            "ko": "불라, 거품!",
+            "pl": "Bublo, bańki!",
+            "pt-BR": "Bubla, bolhas!",
+            "ru": "Бубла, пузыри!",
+            "uk": "Бубло, бульбашки!",
+            "vi": "Bubla, bong bóng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "bubla"
+        }
+      ],
+      "visual_tags": [
+        "blowing",
+        "big bubble",
+        "glowing bubble",
+        "surprised",
+        "puffed cheeks"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BLUP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "goblin"
+        },
+        {
+          "id": "goblin"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "inside bubble",
+        "confused",
+        "bouncing",
+        "bubble"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "eli"
+        },
+        {
+          "id": "bubla"
+        }
+      ],
+      "visual_tags": [
+        "excited",
+        "pointing",
+        "smile",
+        "happy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eli",
+          "text": "Funguje to!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es funktioniert!",
+            "en": "It works!",
+            "fr": "Ça marche !",
+            "it": "Funziona!",
+            "ja": "できた！",
+            "ko": "통해!",
+            "pl": "Działa!",
+            "pt-BR": "Está funcionando!",
+            "ru": "Работает!",
+            "uk": "Працює!",
+            "vi": "Nó hiệu quả rồi!"
+          }
+        },
+        {
+          "speaker_id": "bubla",
+          "text": "Já říkal, že umím kouzla.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab doch gesagt, ich kann Zauber.",
+            "en": "I told you I knew spells.",
+            "fr": "Je t'avais dit que je savais faire des sorts.",
+            "it": "Te l'avevo detto che sapevo fare magie.",
+            "ja": "私、魔法使えるって言ったでしょ。",
+            "ko": "내가 마법을 쓸 줄 안다고 했잖아.",
+            "pl": "Mówiłem, że znam zaklęcia.",
+            "pt-BR": "Eu disse que sabia fazer magia.",
+            "ru": "Я же говорил, что умею колдовать.",
+            "uk": "Я ж казав, що вмію чарувати.",
+            "vi": "Tớ bảo mà, tớ biết phép thuật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_chamber",
+      "characters": [
+        {
+          "id": "stone_king"
+        },
+        {
+          "id": "eli"
+        }
+      ],
+      "visual_tags": [
+        "golem standing",
+        "tall",
+        "glowing eyes",
+        "looking down",
+        "hero looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "stone_king",
+          "text": "Kdo vstoupil do mého království?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer betritt mein Königreich?",
+            "en": "Who has entered my kingdom?",
+            "fr": "Qui a osé entrer dans mon royaume ?",
+            "it": "Chi ha varcato il mio regno?",
+            "ja": "わが国に誰が入った？",
+            "ko": "누가 내 왕국에 들어왔는가?",
+            "pl": "Kto wkroczył do mojego królestwa?",
+            "pt-BR": "Quem entrou no meu reino?",
+            "ru": "Кто осмелился войти в моё царство?",
+            "uk": "Хто увійшов у моє королівство?",
+            "vi": "Ai đã bước vào vương quốc của ta?"
+          }
+        },
+        {
+          "speaker_id": "eli",
+          "text": "Eli.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Eli.",
+            "en": "Eli.",
+            "fr": "Eli.",
+            "it": "Eli.",
+            "ja": "エリです。",
+            "ko": "엘리.",
+            "pl": "Eli.",
+            "pt-BR": "Eli.",
+            "ru": "Эли.",
+            "uk": "Елі.",
+            "vi": "Eli."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_chamber",
+      "characters": [
+        {
+          "id": "stone_king"
+        },
+        {
+          "id": "eli"
+        }
+      ],
+      "visual_tags": [
+        "golem thinking",
+        "hand on chin",
+        "hero standing firm",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eli",
+          "text": "Hledám ztracené děti.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich suche vermisste Kinder.",
+            "en": "I'm looking for lost children.",
+            "fr": "Je cherche des enfants perdus.",
+            "it": "Cerco bambini perduti.",
+            "ja": "行方不明の子供を探してるの。",
+            "ko": "잃어버린 아이들을 찾고 있어.",
+            "pl": "Szukam zaginionych dzieci.",
+            "pt-BR": "Procuro crianças perdidas.",
+            "ru": "Я ищу потерянных детей.",
+            "uk": "Я шукаю зниклих дітей.",
+            "vi": "Tớ đang tìm những đứa trẻ bị mất tích."
+          }
+        },
+        {
+          "speaker_id": "stone_king",
+          "text": "Pak nejsi můj nepřítel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann bist du kein Feind.",
+            "en": "Then you are not my enemy.",
+            "fr": "Tu n'es donc pas mon ennemi.",
+            "it": "Allora non sei mio nemico.",
+            "ja": "では、敵ではないな。",
+            "ko": "그렇다면 너는 내 적이 아니군.",
+            "pl": "To nie jesteś mój wróg.",
+            "pt-BR": "Então você não é meu inimigo.",
+            "ru": "Тогда ты не мой враг.",
+            "uk": "Тоді ти не мій ворог.",
+            "vi": "Vậy ngươi không phải kẻ thù của ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_secret_room",
+      "characters": [
+        {
+          "id": "eli"
+        }
+      ],
+      "visual_tags": [
+        "holding staff",
+        "casting spell",
+        "glowing light",
+        "magical effect",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "eli",
+          "text": "Lumina!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Lumina!",
+            "en": "Lumina!",
+            "fr": "Lumina !",
+            "it": "Lumina!",
+            "ja": "ルミナ！",
+            "ko": "루미나!",
+            "pl": "Lumina!",
+            "pt-BR": "Lumina!",
+            "ru": "Люмина!",
+            "uk": "Люміно!",
+            "vi": "Lumina!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SWISH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, flames flickering, static camera",
+      "motion_llm": "magic light swirls around the staff, static camera",
+      "wd14_tags": {
+        "1girl": 0.969,
+        "solo": 0.928,
+        "brown hair": 0.923,
+        "torch": 0.878,
+        "short hair": 0.871,
+        "belt": 0.843,
+        "holding": 0.832,
+        "cape": 0.815,
+        "staff": 0.709,
+        "red cape": 0.692,
+        "dress": 0.644,
+        "short sleeves": 0.626
+      }
+    }
+  ]
+}

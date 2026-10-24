@@ -1,0 +1,466 @@
+{
+  "title": "Lia a planeta tisíce měsíců",
+  "title_i18n": {
+    "de": "Lia und der Planet der tausend Monde",
+    "en": "Lia and the Planet of a Thousand Moons",
+    "fr": "Lia et la planète des mille lunes",
+    "it": "Lia e il pianeta dei mille lune",
+    "ja": "リアと千の月の惑星",
+    "ko": "리아와 천 개의 달이 있는 행성",
+    "pl": "Lia i planeta tysiąca księżyców",
+    "pt-BR": "Lia e o planeta de mil luas",
+    "ru": "Лия и планета тысячи лун",
+    "uk": "Лія та планета тисячі місяців",
+    "vi": "Lia và hành tinh ngàn mặt trăng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_space",
+      "characters": [],
+      "visual_tags": [
+        "spaceship window",
+        "moons",
+        "stars",
+        "blue planet",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kosmická loď proletí mezi tisíci měsíci.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein Raumschiff rast durch tausende Monde.",
+            "en": "The spaceship flies between a thousand moons.",
+            "fr": "Le vaisseau file entre les mille lunes.",
+            "it": "La nave spaziale sfreccia tra le mille lune.",
+            "ja": "宇宙船は千の月を縫うように通過した。",
+            "ko": "우주선이 천 개의 달 사이를 지나간다.",
+            "pl": "Statek przelatuje wśród tysiąca księżyców.",
+            "pt-BR": "A nave espacial passa entre mil luas.",
+            "ru": "Космический корабль пролетает среди тысяч лун.",
+            "uk": "Космічний корабель пролітає між тисячею місяців.",
+            "vi": "Con tàu vũ trụ lao vút qua giữa ngàn mặt trăng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "stars drifting slowly, moons rotating, static camera",
+      "wd14_tags": {
+        "no humans": 0.958,
+        "star (sky)": 0.911,
+        "blue theme": 0.871,
+        "scenery": 0.838,
+        "starry sky": 0.747,
+        "sky": 0.738,
+        "space": 0.707,
+        "planet": 0.508,
+        "night": 0.383,
+        "night sky": 0.367
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "lia"
+        },
+        {
+          "id": "komet"
+        }
+      ],
+      "visual_tags": [
+        "looking out window",
+        "pointing",
+        "fox pressing nose",
+        "excited",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lia",
+          "text": "Kometo, podívej!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Komet, schau!",
+            "en": "Comet, look!",
+            "fr": "Comète, regarde !",
+            "it": "Cometa, guarda!",
+            "ja": "彗星、見て！",
+            "ko": "코메토, 봐!",
+            "pl": "Kometo, spójrz!",
+            "pt-BR": "Cometa, olha!",
+            "ru": "Комета, смотри!",
+            "uk": "Комето, подивись!",
+            "vi": "Sao chổi, nhìn kìa!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_nira",
+      "characters": [
+        {
+          "id": "lia"
+        },
+        {
+          "id": "aron"
+        }
+      ],
+      "visual_tags": [
+        "standing on ground",
+        "looking up",
+        "red sky",
+        "explosion",
+        "dust cloud",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aron",
+          "text": "Planeta Nira.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Planet Nira.",
+            "en": "Planet Nira.",
+            "fr": "La planète Nira.",
+            "it": "Pianeta Nira.",
+            "ja": "惑星ニラ。",
+            "ko": "니라 행성.",
+            "pl": "Planeta Nira.",
+            "pt-BR": "Planeta Nira.",
+            "ru": "Планета Нира.",
+            "uk": "Планета Ніра.",
+            "vi": "Hành tinh Nira."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "mech_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "six arms",
+        "glowing red eyes",
+        "menacing",
+        "dust",
+        "from below"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mech_kral",
+          "text": "Veškerá energie bude moje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alle Energie wird mir gehören.",
+            "en": "All the energy will be mine.",
+            "fr": "Toute l'énergie sera à moi.",
+            "it": "Tutta l'energia sarà mia.",
+            "ja": "全てのエネルギーは私のものになる。",
+            "ko": "모든 에너지는 내 것이 될 거야.",
+            "pl": "Cała energia będzie moja.",
+            "pt-BR": "Toda a energia será minha.",
+            "ru": "Вся энергия будет моей.",
+            "uk": "Уся енергія буде моєю.",
+            "vi": "Mọi năng lượng sẽ thuộc về ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "robot's red eyes glowing brighter, dust settling, static camera",
+      "wd14_tags": {
+        "robot": 0.968,
+        "mecha": 0.964,
+        "no humans": 0.947,
+        "one-eyed": 0.84,
+        "glowing": 0.831,
+        "solo": 0.829,
+        "clenched hands": 0.79,
+        "science fiction": 0.74,
+        "glowing eye": 0.613,
+        "standing": 0.608,
+        "embers": 0.493
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "lia"
+        }
+      ],
+      "visual_tags": [
+        "holding shield",
+        "glowing shield",
+        "determined",
+        "defending",
+        "energy blast"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lia",
+          "text": "A co když řekneme ne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn wir nein sagen?",
+            "en": "What if we say no?",
+            "fr": "Et si on disait non ?",
+            "it": "E se dicessimo di no?",
+            "ja": "もし、断ったら？",
+            "ko": "그럼 안 된다고 하면 어때?",
+            "pl": "A co, jeśli powiemy nie?",
+            "pt-BR": "E se dissermos não?",
+            "ru": "А что, если мы скажем «нет»?",
+            "uk": "А що, якщо ми скажемо ні?",
+            "vi": "Còn nếu chúng ta nói không thì sao?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "komet"
+        },
+        {
+          "id": "mech_kral"
+        }
+      ],
+      "visual_tags": [
+        "dog jumping",
+        "blue bubble",
+        "robot leg",
+        "glowing bubble",
+        "action"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "POP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "aron"
+        }
+      ],
+      "visual_tags": [
+        "raising hands",
+        "magnetism",
+        "floating debris",
+        "metal pieces",
+        "concentrating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "aron",
+          "text": "Lio! Teď!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Lia! Jetzt!",
+            "en": "Lia! Now!",
+            "fr": "Lia ! Maintenant !",
+            "it": "Lia! Ora!",
+            "ja": "リア！今だ！",
+            "ko": "리아! 지금!",
+            "pl": "Lio! Teraz!",
+            "pt-BR": "Lia! Agora!",
+            "ru": "Лия! Сейчас!",
+            "uk": "Ліо! Тепер!",
+            "vi": "Lia! Bây giờ!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "lia"
+        },
+        {
+          "id": "mech_kral"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "holding sword",
+        "glowing sword",
+        "attacking",
+        "energy core",
+        "impact"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠVIH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "mech_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot kneeling",
+        "stopped",
+        "dim lights",
+        "confused",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mech_kral",
+          "text": "Proč… mě nezničíš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum… zerstörst du mich nicht?",
+            "en": "Why… won't you destroy me?",
+            "fr": "Pourquoi… tu ne me détruis pas ?",
+            "it": "Perché… non mi distruggi?",
+            "ja": "なぜ…私を壊さない？",
+            "ko": "왜… 나를 없애지 않아?",
+            "pl": "Dlaczego… nie zniszczysz mnie?",
+            "pt-BR": "Por que… você não me destrói?",
+            "ru": "Почему… ты не уничтожаешь меня?",
+            "uk": "Чому… ти не знищуєш мене?",
+            "vi": "Sao… ngươi không tiêu diệt ta?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "lia"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "gentle",
+        "hand out",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lia",
+          "text": "Protože možná nemusíš být nepřítel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil du vielleicht kein Feind sein musst.",
+            "en": "Because maybe you don't have to be the enemy.",
+            "fr": "Parce que tu n'es peut-être pas mon ennemi.",
+            "it": "Perché forse non devi essere un nemico.",
+            "ja": "だって、敵じゃなかったかもしれないから。",
+            "ko": "네가 적이 아닐 수도 있으니까.",
+            "pl": "Bo może nie musisz być wrogiem.",
+            "pt-BR": "Porque talvez você não precise ser inimigo.",
+            "ru": "Потому что, может, ты не враг.",
+            "uk": "Бо, можливо, ти не мій ворог.",
+            "vi": "Vì có lẽ ngươi không cần phải là kẻ thù."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "lia"
+        },
+        {
+          "id": "komet"
+        },
+        {
+          "id": "mech_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot smiling",
+        "fox on shoulder",
+        "hugging",
+        "happy",
+        "peaceful",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lia",
+          "text": "Pomáhat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Helfen.",
+            "en": "Help.",
+            "fr": "Aider.",
+            "it": "Aiutare.",
+            "ja": "助けるために。",
+            "ko": "도움을 줄 수 있는 존재라고.",
+            "pl": "Pomagać.",
+            "pt-BR": "Ajudar.",
+            "ru": "Помогать.",
+            "uk": "Допомогти.",
+            "vi": "Cùng giúp đỡ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "title": "Viktorie a stín stříbrného meče",
+  "title_i18n": {
+    "de": "Viktorie und der Schatten des silbernen Schwerts",
+    "en": "Victoria and the Shadow of the Silver Sword",
+    "fr": "Viktorie et l'ombre de l'épée d'argent",
+    "it": "Viktorie e l'ombra della spada d'argento",
+    "ja": "ヴィクトリアと銀剣の影",
+    "ko": "빅토리아와 은빛 검의 그림자",
+    "pl": "Wiktoria i cień srebrnego miecza",
+    "pt-BR": "Viktorie e a Sombra da Espada Prateada",
+    "ru": "Виктория и тень серебряного меча",
+    "uk": "Вікторія та тінь срібного меча",
+    "vi": "Viktorie và bóng kiếm bạc"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dungeon_entrance",
+      "characters": [],
+      "visual_tags": [
+        "stone walls",
+        "moss",
+        "darkness",
+        "torchlight",
+        "wet floor",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vlhké podzemní bludiště pod hradem.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Das feuchte Labyrinth unter der Burg.",
+            "en": "The damp underground labyrinth beneath the castle.",
+            "fr": "Le labyrinthe humide sous le château.",
+            "it": "L'umido labirinto sotterraneo sotto il castello.",
+            "ja": "城下の湿った地下迷宮。",
+            "ko": "성 아래 습한 지하 미로.",
+            "pl": "Wilgotne podziemne labirynty pod zamkiem.",
+            "pt-BR": "O labirinto úmido sob o castelo.",
+            "ru": "Влажные подземные лабиринты под замком.",
+            "uk": "Волога підземна лабіринтова система під замком.",
+            "vi": "Mê cung ẩm ướt dưới lòng đất, ngay bên dưới lâu đài."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "torch flames flickering, dust motes floating in light beams, static camera",
+      "wd14_tags": {
+        "no humans": 0.955,
+        "scenery": 0.857,
+        "stairs": 0.667,
+        "dark": 0.564,
+        "plant": 0.522,
+        "brick wall": 0.416,
+        "ruins": 0.406,
+        "indoors": 0.375,
+        "moss": 0.353
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "viktorie"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "carrying giant sword",
+        "sword on back",
+        "heavy boots",
+        "serious expression",
+        "dark corridor"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "step... step",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "viktorie"
+        },
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "shadow monsters",
+        "jumping",
+        "claws",
+        "glowing red eyes",
+        "attacking",
+        "dark smoke"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ROAR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_entrance",
+      "characters": [
+        {
+          "id": "viktorie"
+        }
+      ],
+      "visual_tags": [
+        "drawing sword",
+        "one hand",
+        "glowing sword",
+        "determined face",
+        "cold eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktorie",
+          "text": "Dnes večer se v tomhle dungeonu rozplyne každý z vás.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Heute Abend wird jeder von euch in diesem Dungeon verschwinden.",
+            "en": "Tonight, every one of you will vanish in this dungeon.",
+            "fr": "Ce soir, chacun de vous se dissipera dans ce donjon.",
+            "it": "Questa sera, nel dungeon, ognuno di voi si dissolverà.",
+            "ja": "今夜、このダンジョンで皆を消し去ってあげるわ",
+            "ko": "오늘 밤 이 던전에서 너희 모두는 사라질 거야.",
+            "pl": "Dzisiaj wieczorem każdy z was zniknie w tym lochu.",
+            "pt-BR": "Hoje à noite, cada um de vocês vai sumir nessa masmorra.",
+            "ru": "Сегодня вечером каждый из вас растворится в этом подземелье.",
+            "uk": "Цього вечора кожен з вас розчиниться в цьому підземеллі.",
+            "vi": "Tối nay, tất cả các ngươi sẽ tan biến trong dungeon này."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SHING!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "viktorie"
+        }
+      ],
+      "visual_tags": [
+        "spinning",
+        "sword slash",
+        "motion lines",
+        "sparks",
+        "fast movement",
+        "blur"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWISH! SWISH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the sword blade blurs in a spinning motion, soft glow pulsing, static camera",
+      "motion_llm": "the sword blade blurs in a spinning motion, sparks flying, static camera",
+      "wd14_tags": {
+        "weapon": 0.962,
+        "1girl": 0.95,
+        "solo": 0.944,
+        "blue eyes": 0.942,
+        "holding weapon": 0.921,
+        "sword": 0.918,
+        "holding": 0.906,
+        "holding sword": 0.899,
+        "armor": 0.884,
+        "white hair": 0.799,
+        "standing": 0.776,
+        "cape": 0.769
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "dissolving",
+        "black smoke",
+        "disappearing",
+        "claws fading",
+        "dark mist"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "POOF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "viktorie"
+        }
+      ],
+      "visual_tags": [
+        "sheathing sword",
+        "sword in scabbard",
+        "standing still",
+        "calm",
+        "looking forward"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CLICK",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "over-shoulder",
+      "location_id": "l_dungeon_hall",
+      "characters": [
+        {
+          "id": "viktorie"
+        }
+      ],
+      "visual_tags": [
+        "looking down corridor",
+        "dark path",
+        "determined",
+        "back view",
+        "cape flowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "viktorie",
+          "text": "To byl jen průzkum… Pravý pán temnoty na mě teprve čeká v hlubinách.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war nur eine Erkundung... Der wahre Herr der Dunkelheit wartet noch in den Tiefen auf mich.",
+            "en": "That was just a recon... The true Lord of Darkness awaits me in the depths.",
+            "fr": "Ce n'était qu'une reconnaissance… Le véritable Seigneur des Ténèbres m'attend au fond.",
+            "it": "Era solo un ricognizione… Il vero Signore delle Tenebre mi aspetta nelle profondità.",
+            "ja": "これは偵察だけ……真の闇の支配者は、まだ深部で待っているわ",
+            "ko": "그건 그냥 정찰일 뿐… 진정한 암흑의 주인은 아직 깊은 곳에서 나를 기다리고 있어.",
+            "pl": "To był tylko zwiad… Prawny Pan Ciemności czeka na mnie w głębinach.",
+            "pt-BR": "Foi só um reconhecimento... O verdadeiro Senhor das Trevas ainda me espera nas profundezas.",
+            "ru": "Это была лишь разведка... Настоящий Владыка Тьмы ждёт меня в глубинах.",
+            "uk": "Це була лише розвідка... Справжній Володар Темряви чекає на мене в глибинах.",
+            "vi": "Đó chỉ là cuộc thám thính… Chúa tể bóng tối đích thực đang chờ ta ở những tầng sâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

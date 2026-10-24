@@ -1,0 +1,277 @@
+{
+  "title": "Isis a probuzený faraon",
+  "title_i18n": {
+    "de": "Isis und der erwachte Pharao",
+    "en": "Isis and the Awakened Pharaoh",
+    "fr": "Isis, le pharaon réveillé",
+    "it": "Isis e il faraone risvegliato",
+    "ja": "目覚めたファラオ、イシス",
+    "ko": "이집트, 깨어난 파라오",
+    "pl": "Izida i obudzony faraon",
+    "pt-BR": "Ísis, a faraona desperta",
+    "ru": "Исида и пробудившийся фараон",
+    "uk": "Ісіда та пробуджений фараон",
+    "vi": "Isis và vị Pharaoh tỉnh giấc"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pyramid",
+      "characters": [],
+      "visual_tags": [
+        "stone walls",
+        "hieroglyphs",
+        "sand floor",
+        "torch light",
+        "ancient"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Uvnitř staré pyramidy.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Im Inneren einer alten Pyramide.",
+            "en": "Inside an ancient pyramid.",
+            "fr": "À l'intérieur d'une vieille pyramide.",
+            "it": "All'interno di un'antica piramide.",
+            "ja": "古いピラミッドの内部。",
+            "ko": "오래된 피라미드 내부.",
+            "pl": "W środku starej piramidy.",
+            "pt-BR": "Dentro da antiga pirâmide.",
+            "ru": "Внутри древней пирамиды.",
+            "uk": "Усередині стародавньої піраміди.",
+            "vi": "Bên trong kim tự tháp cổ xưa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, flames flickering, static camera",
+      "motion_llm": "torch flames flickering, dust motes floating, static camera",
+      "wd14_tags": {
+        "no humans": 0.921,
+        "torch": 0.912,
+        "scenery": 0.826,
+        "indoors": 0.691,
+        "light": 0.591,
+        "pillar": 0.422
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "isis"
+        }
+      ],
+      "visual_tags": [
+        "drawing sword",
+        "determined",
+        "looking up",
+        "gold armor",
+        "glowing sword"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isis",
+          "text": "Horusi, faraon se probral!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Horusi, der Pharao ist erwacht!",
+            "en": "Horus, the Pharaoh has awakened!",
+            "fr": "Horus, le pharaon s'est réveillé !",
+            "it": "Horus, il faraone si è risvegliato!",
+            "ja": "ホルス、ファラオが目覚めたわ！",
+            "ko": "호루스님, 파라오가 깨어났어요!",
+            "pl": "Horze, faraon się obudził!",
+            "pt-BR": "Hórus, o fara acordou!",
+            "ru": "Гор, фараон пробудился!",
+            "uk": "Гор, фараон прокинувся!",
+            "vi": "Horusi, Pharaoh đã tỉnh lại!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "horus"
+        }
+      ],
+      "visual_tags": [
+        "flying",
+        "wings spread",
+        "screaming",
+        "fast motion",
+        "blur"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KRIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_battle",
+      "characters": [
+        {
+          "id": "pharaoh"
+        },
+        {
+          "id": "isis"
+        }
+      ],
+      "visual_tags": [
+        "magic lightning",
+        "blue energy",
+        "holding staff",
+        "casting spell",
+        "dodging",
+        "jumping"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_battle",
+      "characters": [
+        {
+          "id": "isis"
+        }
+      ],
+      "visual_tags": [
+        "sword slash",
+        "dynamic pose",
+        "determined",
+        "gold armor",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isis",
+          "text": "Tvoje doba skončila!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Deine Zeit ist vorbei!",
+            "en": "Your time is over!",
+            "fr": "Ton règne est terminé !",
+            "it": "La tua era è finita!",
+            "ja": "あなたの時代は終わった！",
+            "ko": "당신의 시대는 끝났어!",
+            "pl": "Twój czas minął!",
+            "pt-BR": "Seu tempo acabou!",
+            "ru": "Твоя эпоха закончилась!",
+            "uk": "Твоя епоха закінчилася!",
+            "vi": "Thời của ngươi đã hết!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pyramid_battle",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "staff breaking",
+        "wood splinters",
+        "shock",
+        "glowing eyes fading",
+        "hands dropping"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_battle",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "turning to sand",
+        "dissolving",
+        "falling apart",
+        "sand pile",
+        "magic dust"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_battle",
+      "characters": [
+        {
+          "id": "isis"
+        }
+      ],
+      "visual_tags": [
+        "sheathing sword",
+        "smile",
+        "relieved",
+        "standing tall",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isis",
+          "text": "Pyramida je zase v klidu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Pyramide ist wieder ruhig.",
+            "en": "The pyramid is quiet again.",
+            "fr": "La pyramide est de nouveau calme.",
+            "it": "La piramide è di nuovo in pace.",
+            "ja": "ピラミッドもまた静かになった。",
+            "ko": "피라미드가 다시 평온해졌네.",
+            "pl": "Piramida znów jest spokojna.",
+            "pt-BR": "A pirâmide está em paz de novo.",
+            "ru": "Пирамида снова в тишине.",
+            "uk": "Піраміда знову спокійна.",
+            "vi": "Kim tự tháp lại trở về yên tĩnh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

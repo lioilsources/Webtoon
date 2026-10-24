@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k4_06_toby_pavouci_rytir",
+  "title": "Toby, pavoučí rytíř z Nocturna",
+  "synopsis": "Maskovaný hrdina Toby bojuje proti armádě zombie-klaunů a zachraňuje město Nocturno.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: padouchi spoutáni, město spí v klidu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_roof",
+      "l_street"
+    ]
+  },
+  "characters": [
+    {
+      "id": "toby",
+      "name": "Toby",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 10 with short black hair and a determined expression",
+      "base": "male child, black hair, short hair, dark eyes, fair skin, determined face",
+      "outfits": {
+        "default": "black and gold superhero suit, spider emblem on chest, black cape, black mask, gold boots, utility belt"
+      },
+      "photo": "a brave Czech boy aged 10 with short black hair and a determined expression",
+      "tag_prompt": "male child, black hair, short hair, dark eyes, fair skin, determined face, black and gold superhero suit, spider emblem on chest, black cape, black mask, gold boots, utility belt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sklebik",
+      "name": "Šklebík",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a scary zombie clown with pale skin and messy hair",
+      "base": "zombie, clown makeup, messy hair, pale skin, scary smile",
+      "outfits": {
+        "default": "torn purple suit, red bowtie, clown shoes"
+      },
+      "photo": "a scary zombie clown with pale skin and messy hair",
+      "tag_prompt": "zombie, clown makeup, messy hair, pale skin, scary smile, torn purple suit, red bowtie, clown shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zombie_clown",
+      "name": "Zombie-klaun",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a scary zombie clown with pale skin and messy hair",
+      "base": "zombie, clown makeup, messy hair, pale skin, scary",
+      "outfits": {
+        "default": "torn colorful clothes"
+      },
+      "photo": "a scary zombie clown with pale skin and messy hair",
+      "tag_prompt": "zombie, clown makeup, messy hair, pale skin, scary, torn colorful clothes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_roof",
+      "name": "Střecha mrakodrapu",
+      "description": "Střecha mrakodrapu",
+      "tag_prompt": "outdoors, city rooftop, night, rain, neon lights, wet surface, spider signal in sky",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "Ulice Nocturna",
+      "description": "Ulice Nocturna",
+      "tag_prompt": "outdoors, city street, night, rain, puddles, street lamp, broken car, dark atmosphere",
+      "mood": ""
+    }
+  ]
+}

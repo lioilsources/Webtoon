@@ -1,0 +1,471 @@
+{
+  "title": "Matej a pastýř planet",
+  "title_i18n": {
+    "de": "Matej und der Hirte der Planeten",
+    "en": "Matěj and the Shepherd of Planets",
+    "fr": "Matěj et le berger des planètes",
+    "it": "Matej e il pastore dei pianeti",
+    "ja": "マテーシュと惑星の牧人",
+    "ko": "마테이와 행성의 목동",
+    "pl": "Mateusz i pasterz planet",
+    "pt-BR": "Matej e o Pastor dos Planetas",
+    "ru": "Матей и пастух планет",
+    "uk": "Матеж і пастух планет",
+    "vi": "Matěj và Chàng Trai Chăn Sao"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_asteroid",
+      "characters": [],
+      "visual_tags": [
+        "asteroid field",
+        "comets",
+        "stars",
+        "deep space",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Prostředí: Sluneční soustava, pás asteroidů.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ort: Sonnensystem, Asteroidengürtel.",
+            "en": "Setting: The Solar System, the asteroid belt.",
+            "fr": "Lieu : Système solaire, ceinture d'astéroïdes.",
+            "it": "Ambiente: Sistema Solare, fascia degli asteroidi.",
+            "ja": "舞台：太陽系、小惑星帯。",
+            "ko": "배경: 태양계, 소행성대.",
+            "pl": "Scena: Układ Słoneczny, pas asteroidów.",
+            "pt-BR": "Cenário: Sistema Solar, cinturão de asteroides.",
+            "ru": "Место действия: Солнечная система, пояс астероидов.",
+            "uk": "Місце дії: Сонячна система, пояс астероїдів.",
+            "vi": "Bối cảnh: Hệ Mặt Trời, vành đai tiểu hành tinh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "comets drifting slowly, stars twinkling, static camera",
+      "wd14_tags": {
+        "sky": 0.956,
+        "star (sky)": 0.955,
+        "no humans": 0.944,
+        "starry sky": 0.912,
+        "scenery": 0.869,
+        "night sky": 0.823,
+        "night": 0.817,
+        "outdoors": 0.581,
+        "milky way": 0.56,
+        "space": 0.394,
+        "blue theme": 0.373
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "matej"
+        },
+        {
+          "id": "kralik"
+        }
+      ],
+      "visual_tags": [
+        "standing on rock",
+        "holding rope",
+        "rabbit sitting",
+        "counting",
+        "looking at distance",
+        "comets in background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "…sedm, osm, devět… Počkej. Kde je Klárka?",
+          "kind": "speech",
+          "i18n": {
+            "de": "…sieben, acht, neun… Moment. Wo ist Klárka?",
+            "en": "...seven, eight, nine... Wait. Where's Klárka?",
+            "fr": "…sept, huit, neuf… Attends. Où est Klárka ?",
+            "it": "…sette, otto, nove… Aspetta. Dov’è Klárka?",
+            "ja": "「……七、八、九……待って。クラルカはどこ？」",
+            "ko": "…일곱, 여덟, 아홉… 잠깐. 클라카는 어디 있지?",
+            "pl": "…siedem, osiem, dziewięć… Chwila. Gdzie Klárka?",
+            "pt-BR": "…sete, oito, nove… Espera. Onde está a Klárka?",
+            "ru": "…семь, восемь, девять… Стой. Где Кларка?",
+            "uk": "…сім, вісім, дев’ять… Зачекай. Де Кларка?",
+            "vi": "…bảy, tám, chín… Khoan đã. Klárka đâu rồi?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "matej"
+        },
+        {
+          "id": "kralik"
+        }
+      ],
+      "visual_tags": [
+        "rabbit pointing",
+        "paw pointing",
+        "looking at distance",
+        "matej looking",
+        "surprised",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kralik",
+          "text": "Pip! Pip-pip!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pip! Pip-pip!",
+            "en": "Pip! Pip-pip!",
+            "fr": "Pip ! Pip-pip !",
+            "it": "Pip! Pip-pip!",
+            "ja": "「ピッ！ ピッピッ！」",
+            "ko": "삐! 삐-삐!",
+            "pl": "Pip! Pip-pip!",
+            "pt-BR": "Pip! Pip-pip!",
+            "ru": "Пи-пи! Пи-пи-пи!",
+            "uk": "Піп! Піп-піп!",
+            "vi": "Pip! Pip-pip!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "matej"
+        },
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "large planet",
+        "swallowing small planet",
+        "glowing eyes",
+        "sad expression",
+        "mouth open",
+        "small planet entering mouth",
+        "matej watching"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "…Tohle ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "…Das ist was anderes.",
+            "en": "...Not this.",
+            "fr": "…Ça, c'est pas bon.",
+            "it": "…Questo no.",
+            "ja": "「……これはダメだ」",
+            "ko": "…이건 아니야.",
+            "pl": "…To nie to.",
+            "pt-BR": "…Isso não.",
+            "ru": "…Это не подходит.",
+            "uk": "…Це не те.",
+            "vi": "…Chuyện này không ổn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "planet face",
+        "glowing eyes",
+        "sad expression",
+        "mouth open",
+        "speaking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pozirac",
+          "text": "Odejdi, pastýři. Já žeru jen malé planety. Nikdo je nemá rád. Stejně jako mě.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verschwinde, Hirte. Ich frisse nur kleine Planeten. Niemand mag sie. Genauso wenig wie mich.",
+            "en": "Leave, shepherd. I only eat small planets. Nobody likes them. Just like me.",
+            "fr": "Va-t'en, berger. Je ne mange que les petites planètes. Personne ne les aime. Comme moi.",
+            "it": "Vattene, pastore. Io mangio solo pianeti piccoli. Nessuno li vuole. Come me.",
+            "ja": "「去け、牧人よ。俺は小さな惑星しか食わない。誰も好まないんだ。俺のように」",
+            "ko": "가라, 목동아. 나는 작은 행성만 먹는다. 아무도 나를 좋아하지 않아. 나처럼.",
+            "pl": "Zmykaj, pasterzu. Żrę tylko małe planety. Nikt ich nie lubi. Tak samo jak mnie.",
+            "pt-BR": "Vá embora, pastor. Eu só como planetas pequenos. Ninguém gosta deles. Assim como ninguém gosta de mim.",
+            "ru": "Уходи, пастух. Я ем только маленькие планеты. Никто их не любит. Как и меня.",
+            "uk": "Йди геть, пастух. Я їм лише маленькі планети. Ніхто їх не любить. Так само, як і мене.",
+            "vi": "Cút đi, chàng chăn sao. Ta chỉ ăn những hành tinh nhỏ. Không ai thích chúng. Cũng chẳng ai thích ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "matej"
+        }
+      ],
+      "visual_tags": [
+        "holding rope",
+        "looking at planet",
+        "serious",
+        "hands on hips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "Kdybys nebyl sám, žral bys planety?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wärst du nicht allein, würdest du Planeten fressen?",
+            "en": "If you weren't alone, would you still eat planets?",
+            "fr": "Si tu n'étais pas seul, tu mangerais des planètes ?",
+            "it": "Se non fossi solo, mangeresti i pianeti?",
+            "ja": "「一人じゃなかったら、惑星を食うのか？」",
+            "ko": "혼자가 아니라면 행성을 먹었겠어?",
+            "pl": "Gdybyś nie był sam, to byś żarł planety?",
+            "pt-BR": "Se você não estivesse sozinho, você comeria planetas?",
+            "ru": "Если бы ты не был одинок, ты бы ел планеты?",
+            "uk": "Якби ти не був сам, ти б їв планети?",
+            "vi": "Nếu cậu không cô đơn, cậu có ăn hành tinh không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "planet face",
+        "glowing eyes",
+        "sad expression",
+        "mouth open",
+        "speaking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pozirac",
+          "text": "Nežeru proto, že mám hlad. Žeru proto, abych měl s kým být.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich frisse nicht, weil ich Hunger habe. Ich frisse, um Gesellschaft zu haben.",
+            "en": "I don't eat because I'm hungry. I eat so I have someone to be with.",
+            "fr": "Je ne mange pas parce que j'ai faim. Je mange pour avoir quelqu'un avec qui être.",
+            "it": "Non mangio perché ho fame. Mangio per avere qualcuno con cui stare.",
+            "ja": "「お腹が空いて食うんじゃない。誰かと一緒にいたいから食うんだ」",
+            "ko": "배고파서 먹는 게 아니야. 함께 있고 싶어서 먹는 거지.",
+            "pl": "Nie żrę, bo jestem głodny. Żrę, żeby mieć z kim być.",
+            "pt-BR": "Não como por fome. Como para ter companhia.",
+            "ru": "Я ем не от голода. Я ем, чтобы мне было с кем быть.",
+            "uk": "Я не їм, бо голодний. Я їм, щоб було з ким бути.",
+            "vi": "Ta ăn không phải vì đói. Ta ăn để có ai đó ở bên."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "matej"
+        },
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "throwing rope",
+        "glowing rope",
+        "planet face",
+        "surprised",
+        "mouth open",
+        "energy effect"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "Nabízím obchod: ty vyplivneš planety, které jsi snědl, a já ti každý den přivedu jednu planetku na návštěvu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich biete einen Deal an: Du spuckst die Planeten aus, die du gefressen hast, und ich bringe dir jeden Tag einen Asteroiden zu Besuch.",
+            "en": "I'm making a deal: you spit out the planets you've eaten, and I'll bring you one asteroid to visit every day.",
+            "fr": "Je te propose un marché : tu craches les planètes que tu as avalées, et je t'amène chaque jour une petite planète te rendre visite.",
+            "it": "Ti propongo un affare: tu sputi fuori i pianeti che hai mangiato e io ti porto ogni giorno un piccolo pianeta in visita.",
+            "ja": "「取引だ。食った惑星を吐き出せば、俺が毎日惑星を一人訪ねてやろう」",
+            "ko": "거래하자. 네가 먹은 행성을 뱉어내고, 내가 매일 작은 행성 하나를 방문시켜 주마.",
+            "pl": "Proponuję interes: ty wyplujesz planety, które zjadłeś, a ja będę ci codziennie przyprowadzać na wizytę jedną planetoidę.",
+            "pt-BR": "Faço um acordo: você cospa os planetas que comeu e eu trago um planetinha para te visitar todo dia.",
+            "ru": "Предлагаю сделку: ты выплюнешь съеденные планеты, а я буду приводить тебе каждую день одну планету в гости.",
+            "uk": "Пропоную угоду: ти виплюнеш планети, яких з’їв, а я щодня приводитиму тобі одну планету в гості.",
+            "vi": "Ta đề nghị giao kèo: cậu nhả những hành tinh đã ăn ra, còn mỗi ngày ta sẽ dẫn một tiểu hành tinh đến thăm cậu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "planet face",
+        "glowing eyes",
+        "hopeful",
+        "mouth open",
+        "speaking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pozirac",
+          "text": "Návštěva? To funguje?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Besuch? Funktioniert das?",
+            "en": "A visit? Does that work?",
+            "fr": "Une visite ? Ça marche ?",
+            "it": "Una visita? Funziona?",
+            "ja": "「訪問？ それで通じるのか？」",
+            "ko": "방문? 그게 통할까?",
+            "pl": "Wizyta? To działa?",
+            "pt-BR": "Visita? Isso funciona?",
+            "ru": "В гости? Это работает?",
+            "uk": "Гості? Це спрацює?",
+            "vi": "Thăm hỏi? Việc này hiệu quả sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "matej"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "confident",
+        "holding rope",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "Na Zemi to funguje už milion let. Jmenuje se to kamarádství.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Auf der Erde funktioniert das seit einer Million Jahre. Man nennt es Freundschaft.",
+            "en": "It's worked on Earth for a million years. It's called friendship.",
+            "fr": "Sur Terre, ça marche depuis un million d'années. On appelle ça l'amitié.",
+            "it": "Sulla Terra funziona da un milione di anni. Si chiama amicizia.",
+            "ja": "「地球では百万年続いている。友情って言うんだ」",
+            "ko": "지구에서는 이미 백만 년째 통하고 있어. 친구라고 불러.",
+            "pl": "Na Ziemi działa od milionu lat. Nazywa się to przyjaźń.",
+            "pt-BR": "Na Terra funciona há um milhão de anos. Chama-se amizade.",
+            "ru": "На Земле это работает уже миллион лет. Называется это дружба.",
+            "uk": "На Землі це працює вже мільйон років. Це називається дружба.",
+            "vi": "Trên Trái Đất, việc này đã hiệu quả cả triệu năm rồi. Người ta gọi nó là tình bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pastvina",
+      "characters": [
+        {
+          "id": "matej"
+        },
+        {
+          "id": "kralik"
+        },
+        {
+          "id": "pozirac"
+        }
+      ],
+      "visual_tags": [
+        "planet glowing",
+        "small planets around planet",
+        "comets",
+        "stars",
+        "happy",
+        "smiling",
+        "rabbit sitting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "matej",
+          "text": "Přesně, králíku. Přesně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Genau, Hase. Genau.",
+            "en": "Exactly, rabbit. Exactly.",
+            "fr": "Exactement, lapin. Exactement.",
+            "it": "Proprio così, coniglio. Proprio così.",
+            "ja": "「その通りだ、ウサギよ。その通り」",
+            "ko": "맞아, 토끼야. 딱 그거야.",
+            "pl": "Dokładnie, króliczku. Dokładnie.",
+            "pt-BR": "Exatamente, coelho. Exatamente.",
+            "ru": "Точно, кролик. Точно.",
+            "uk": "Саме так, кролику. Саме так.",
+            "vi": "Chuẩn đấy, chú thỏ. Chuẩn xác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

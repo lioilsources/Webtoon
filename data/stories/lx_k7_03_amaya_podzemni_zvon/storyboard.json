@@ -1,0 +1,525 @@
+{
+  "title": "Amaya a podzemní zvon",
+  "title_i18n": {
+    "de": "Amaya und die unterirdische Glocke",
+    "en": "Amaya and the Underground Bell",
+    "fr": "Amaya et la cloche des souterrains",
+    "it": "Amaya e la campana sotterranea",
+    "ja": "アマヤと地下の鐘",
+    "ko": "아마야와 지하의 방울",
+    "pl": "Amaya i podziemny dzwon",
+    "pt-BR": "Amaya e o Sino Subterrâneo",
+    "ru": "Амая и подземный колокол",
+    "uk": "Амая та Підземний Дзвін",
+    "vi": "Amaya và chiếc chuông dưới lòng đất"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forge",
+      "characters": [],
+      "visual_tags": [
+        "crystal walls",
+        "glowing crystals",
+        "anvil",
+        "dark cave",
+        "blue light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Podzemní kovárna, kde krystaly slabě svítí.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die unterirdische Schmiede, in der die Kristalle schwach leuchten.",
+            "en": "The underground forge, where crystals glow faintly.",
+            "fr": "La forge souterraine, où les cristaux brillent faiblement.",
+            "it": "La fucina sotterranea, dove i cristalli brillano debolmente.",
+            "ja": "弱く光る結晶が点在する地下の鍛冶場。",
+            "ko": "약하게 빛나는 수정이 있는 지하 대장간.",
+            "pl": "Podziemna kuźnia, gdzie kryształy słabo świecą.",
+            "pt-BR": "A forja subterrânea, onde os cristais brilham fracamente.",
+            "ru": "Подземная кузница, где кристаллы слабо светятся.",
+            "uk": "Підземна кузня, де кристали слабко сяють.",
+            "vi": "Thợ rèn dưới lòng đất, nơi những tinh thể phát sáng mờ ảo."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "crystals pulsing with faint blue light, dust floating, static camera",
+      "wd14_tags": {
+        "blue theme": 0.981,
+        "crystal": 0.865,
+        "scenery": 0.808,
+        "no humans": 0.73,
+        "indoors": 0.642,
+        "cave": 0.439,
+        "pillar": 0.421
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forge",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "brokulda"
+        }
+      ],
+      "visual_tags": [
+        "holding giant sword",
+        "sword on back",
+        "standing",
+        "talking",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "brokulda",
+          "text": "Amayo! Podzemí ztrácí ODVAHU! Lidé se bojí spát, bojí se chodit. Lichkrál Zinul ji sbírá do jednoho krystalu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Amaya! Die Unterwelt verliert den MUT! Die Leute haben Angst zu schlafen, Angst zu gehen. Lichkönig Zinul sammelt sie in einem Kristall.",
+            "en": "Amaya! The Underworld is losing its GUTS! People are too scared to sleep, too scared to walk. Lich-King Zinul is collecting it all into one crystal.",
+            "fr": "Amaya ! Les souterrains perdent leur COURAGE ! Les gens ont peur de dormir, de marcher. Le Roi-Liche Zinul les rassemble tous dans un seul cristal.",
+            "it": "Amaya! Il sottosuolo sta perdendo il CORAGGIO! La gente ha paura di dormire, ha paura di uscire. Il Re Scheletro Zinul li raccoglie tutti in un unico cristallo.",
+            "ja": "アマヤ！地下の「勇気」が失われている！人々は眠るのも歩くのも恐れている。リッチロード・ジヌルがそれを一つの結晶に集めているんだ。",
+            "ko": "아마야! 지하가 용기를 잃었어! 사람들이 잠드는 게 무서워하고, 걷는 게 무서워해. 릭왕 지눌이 그걸 하나의 수정으로 모으고 있어.",
+            "pl": "Amayo! Podziemia tracą ODMĘ! Ludzie boją się spać, boją się chodzić. Król-Lich Zinul zbiera ją w jeden kryształ.",
+            "pt-BR": "Amaya! O subsolo está perdendo a CORAGEM! As pessoas têm medo de dormir, têm medo de andar. O Rei Lich Zinul está reunindo tudo em um único cristal.",
+            "ru": "Амая! Подземелье теряет СМЕЛОСТЬ! Люди боятся спать, боятся ходить. Лич-король Зинул собирает её в один кристалл.",
+            "uk": "Амайо! Підземля втрачає СМІЛИВІСТЬ! Люди бояться спати, бояться ходити. Ліцкороль Зінул збирає її в один кристал.",
+            "vi": "Amaya! Dưới lòng đất đang mất đi SỰ DŨNG CẢM! Mọi người sợ ngủ, sợ đi lại. Lich Vương Zinul đang gom chúng vào một tinh thể."
+          }
+        },
+        {
+          "speaker_id": "amaya",
+          "text": "Tak mu ji vrátíme. Pořádně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann geben wir sie ihm zurück. Richtig.",
+            "en": "Then we'll give it back. Properly.",
+            "fr": "On la lui rendra. Bien fait.",
+            "it": "Allora glielo restituiamo. A modo nostro.",
+            "ja": "じゃあ、返してあげましょう。しっかりとしたものを。",
+            "ko": "그럼 우리가 돌려줄게. 제대로.",
+            "pl": "Zwrócimy mu ją. Porządnie.",
+            "pt-BR": "Então vamos devolver a ele. Do jeito certo.",
+            "ru": "Вернём ему её. Как следует.",
+            "uk": "Тоді повернемо її йому. Як слід.",
+            "vi": "Vậy thì ta sẽ trả lại nó. Một cách đàng hoàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tunnel",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "hornik"
+        }
+      ],
+      "visual_tags": [
+        "hand on shoulder",
+        "comforting",
+        "trembling",
+        "holding lantern",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hornik",
+          "text": "Nemůžu jít dál. Ztratil jsem odvahu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich kann nicht weiter. Ich habe den Mut verloren.",
+            "en": "I can't go on. I've lost my courage.",
+            "fr": "Je ne peux plus avancer. J'ai perdu mon courage.",
+            "it": "Non posso andare avanti. Ho perso il coraggio.",
+            "ja": "これ以上進めない。勇気が失われたんだ。",
+            "ko": "더 이상 갈 수가 없어. 용기를 잃어버렸어.",
+            "pl": "Nie mogę iść dalej. Straciłem odwagę.",
+            "pt-BR": "Não consigo ir mais longe. Perdi minha coragem.",
+            "ru": "Не могу идти дальше. Я потерял смелость.",
+            "uk": "Я не можу йти далі. Я втратив сміливість.",
+            "vi": "Tôi không thể đi tiếp. Tôi đã mất hết can đảm."
+          }
+        },
+        {
+          "speaker_id": "amaya",
+          "text": "Půjčím ti ji. Na tři kroky. Pak uvidíš, že jsi ji měl celou dobu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich leihe ihn dir. Für drei Schritte. Dann siehst du, dass du ihn die ganze Zeit hattest.",
+            "en": "I'll lend it to you. For three steps. Then you'll see you had it all along.",
+            "fr": "Je te le prête. Pour trois pas. Ensuite, tu verras que tu l'as eu tout du long.",
+            "it": "Te lo prendo in prestito. Per tre passi. Poi vedrai che l'hai avuto sempre.",
+            "ja": "貸してあげる。三歩分だけ。そうすれば、ずっと持っていたことに気づくはずよ。",
+            "ko": "빌려줄게. 세 걸음 동안. 그럼 네가 처음부터 그걸 가지고 있었다는 걸 알게 될 거야.",
+            "pl": "Pożyczę ci ją. Na trzy kroki. Potem zobaczysz, że miałaś ją przez cały czas.",
+            "pt-BR": "Eu te empresto. Por três passos. Depois você vai ver que você sempre teve.",
+            "ru": "Займу тебе её. На три шага. Потом увидишь, что она была у тебя всё время.",
+            "uk": "Позичу тобі її. На три кроки. Потім побачиш, що вона була в тебе все це час.",
+            "vi": "Ta cho mượn tạm. Chỉ ba bước. Sau đó ngươi sẽ thấy, nó vẫn luôn ở đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_tunnel",
+      "characters": [
+        {
+          "id": "hornik"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "smile",
+        "relieved",
+        "lantern",
+        "walking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hornik",
+          "text": "Díky...",
+          "kind": "speech",
+          "i18n": {
+            "de": "Danke...",
+            "en": "Thanks...",
+            "fr": "Merci...",
+            "it": "Grazie...",
+            "ja": "ありがとう…",
+            "ko": "고마워...",
+            "pl": "Dzięki...",
+            "pt-BR": "Obrigado...",
+            "ru": "Спасибо...",
+            "uk": "Дякую...",
+            "vi": "Cảm ơn..."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tunnel",
+      "characters": [
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "confident",
+        "looking at viewer",
+        "sword on back"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Odvaha se nepůjčuje. Odvaha se připomíná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mut leiht man nicht. Man erinnert ihn.",
+            "en": "Courage isn't lent. It's reminded.",
+            "fr": "Le courage ne se prête pas. Il se rappelle.",
+            "it": "Il coraggio non si prende in prestito. Si ricorda.",
+            "ja": "勇気は貸すものじゃない。勇気は思い出させるもの。",
+            "ko": "용기는 빌려주는 게 아니야. 용기는 상기시키는 거지.",
+            "pl": "Odwagi się nie pożycza. Odwagę się przypominá.",
+            "pt-BR": "Coragem não se empresta. Coragem se lembra.",
+            "ru": "Смелость не дают в долг. Смелость напоминают.",
+            "uk": "Сміливість не позичають. Сміливість нагадують.",
+            "vi": "Can đảm không cho mượn. Can đảm là để nhắc nhở."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "zinul"
+        }
+      ],
+      "visual_tags": [
+        "throne",
+        "holding crystal",
+        "glowing crystal",
+        "standing",
+        "talking",
+        "dark room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zinul",
+          "text": "Přišla jsi pro krystal, Mečová? Já se nikdy NEBOJÍM.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Kommst du für den Kristall, Schwertträgerin? Ich habe mich NIE gefürchtet.",
+            "en": "You came for the crystal, Swordswoman? I never FEARED anything.",
+            "fr": "Tu es venue pour le cristal, Mečová ? Moi, je n'ai JAMAIS peur.",
+            "it": "Sei venuta per il cristallo, Mečová? Io non ho MAI paura.",
+            "ja": "結晶を取りに来たのか、メチョヴァ？ 私に恐怖などない。",
+            "ko": "수정 찾으러 왔지, 메치오바? 나는 절대 무서워하지 않아.",
+            "pl": "Przyszłaś po kryształ, Mečová? Ja się NIGDY NIE BOJĘ.",
+            "pt-BR": "Você veio pelo cristal, Mečová? Eu nunca TENHO MEDO.",
+            "ru": "Пришла за кристаллом, Мечовая? Я НИКОГДА не боюсь.",
+            "uk": "Ти прийшла за кристалом, Мечова? Я ніколи НЕ БОЮСЬ.",
+            "vi": "Ngươi đến lấy tinh thể sao, Kiếm Nữ? Ta chưa bao giờ SỢ HÃI."
+          }
+        },
+        {
+          "speaker_id": "amaya",
+          "text": "Strach bez radosti není odvaha. Strach je škola. Bez strachu se nikdy nenaučíš nic.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Angst ohne Freude ist kein Mut. Angst ist Schule. Ohne Angst lernst du nie etwas.",
+            "en": "Fear without joy isn't courage. Fear is a lesson. Without fear, you never learn anything.",
+            "fr": "La peur sans joie n'est pas du courage. La peur est une école. Sans peur, on n'apprend rien.",
+            "it": "La paura senza gioia non è coraggio. La paura è una scuola. Senza paura non imparerai mai nulla.",
+            "ja": "喜びのない恐怖は勇気じゃない。恐怖は学校よ。恐怖なしには、何も学べない。",
+            "ko": "기쁨 없는 두려움은 용기가 아니야. 두려움은 학교야. 두려움이 없으면 아무것도 배울 수 없어.",
+            "pl": "Strach bez radości to nie odwaga. Strach to szkoła. Bez strachu niczego się nie nauczysz.",
+            "pt-BR": "Medo sem alegria não é coragem. Medo é escola. Sem medo, você nunca aprende nada.",
+            "ru": "Страх без радости — не смелость. Страх — это школа. Без страха ты ничему не научишься.",
+            "uk": "Страх без радості — це не сміливість. Страх — це школа. Без страху ти нічому не навчишся.",
+            "vi": "Nỗi sợ mà không có niềm vui thì không gọi là can đảm. Nỗi sợ là trường học. Không có sợ hãi, ngươi sẽ chẳng học được gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "zinul"
+        }
+      ],
+      "visual_tags": [
+        "energy blast",
+        "black energy",
+        "raising sword",
+        "glowing sword",
+        "action pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Vlna odvahy!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Welle des Mutes!",
+            "en": "Wave of Courage!",
+            "fr": "Vague de courage !",
+            "it": "Ondata di coraggio!",
+            "ja": "勇気の波動！",
+            "ko": "용기의 파도!",
+            "pl": "Fala odwagi!",
+            "pt-BR": "Onda de Coragem!",
+            "ru": "Волна смелости!",
+            "uk": "Хвиля сміливості!",
+            "vi": "Sóng dũng khí!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, golden light pulsing from sword, black energy dissipating, static camera",
+      "wd14_tags": {
+        "long hair": 0.872,
+        "throne": 0.864,
+        "solo": 0.858,
+        "crown": 0.784,
+        "1girl": 0.745,
+        "red hair": 0.728,
+        "glowing": 0.652,
+        "red cape": 0.585,
+        "colored skin": 0.525,
+        "blue eyes": 0.482,
+        "glowing eyes": 0.458,
+        "pillar": 0.43
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "zinul"
+        },
+        {
+          "id": "metal_boy"
+        }
+      ],
+      "visual_tags": [
+        "crystal breaking",
+        "shards",
+        "light rainbow",
+        "falling",
+        "robot sitting",
+        "trembling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "metal_boy",
+          "text": "Já se bojím. Poprvé za sto let. A je to… úžasné?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe Angst. Zum ersten Mal seit hundert Jahren. Und es ist... erstaunlich?",
+            "en": "I'm scared. For the first time in a hundred years. And it's... amazing?",
+            "fr": "J'ai peur. Pour la première fois en cent ans. Et c'est... génial ?",
+            "it": "Ho paura. Per la prima volta in cento anni. Ed è... fantastico?",
+            "ja": "怖いんだ。百年ぶりに。そして…すごい？",
+            "ko": "나 무서워. 100년 만에 처음인데. 그리고 이게... 신기해?",
+            "pl": "Boję się. Po raz pierwszy od stu lat. I to... jest niesamowite?",
+            "pt-BR": "Estou com medo. Pela primeira vez em cem anos. E é... incrível?",
+            "ru": "Мне страшно. Впервые за сто лет. И это... потрясающе?",
+            "uk": "Я боюся. Вперше за сто років. І це... дивно?",
+            "vi": "Tôi sợ. Lần đầu tiên trong một trăm năm. Và nó... thật tuyệt vời?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "CRACK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "metal_boy"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "smile",
+        "kind smile",
+        "looking at robot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Vítej zpátky mezi živými. Bojíš se? Znamená to, že tě ještě něco má rádo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Willkommen zurück unter den Lebenden. Hast du Angst? Das bedeutet, dass dich noch etwas mag.",
+            "en": "Welcome back to the living. You're scared? That means something still loves you.",
+            "fr": "Bienvenue parmi les vivants. Tu as peur ? Ça veut dire que quelque chose tient encore à toi.",
+            "it": "Ben tornato tra i vivi. Hai paura? Significa che c'è ancora qualcosa che ti vuole bene.",
+            "ja": "生き返ったね。怖い？ それは、まだ誰かに愛されているってこと。",
+            "ko": "살아있는 자들 사이로 돌아온 걸 환영해. 무서워? 그것은 네가 아직 누군가에게 사랑받고 있다는 뜻이야.",
+            "pl": "Witaj z powrotem wśród żywych. Boisz się? To znaczy, że coś cię jeszcze lubi.",
+            "pt-BR": "Bem-vindo de volta aos vivos. Com medo? Significa que ainda há algo que te ama.",
+            "ru": "Добро пожаловать обратно к живым. Боишься? Значит, тебя всё ещё кто-то любит.",
+            "uk": "Ласкаво просимо назад до живих. Ти боїшся? Це означає, що щось ще тебе любить.",
+            "vi": "Chào mừng trở lại với người sống. Ngươi sợ ư? Có nghĩa là vẫn còn gì đó yêu mến ngươi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hall",
+      "characters": [
+        {
+          "id": "brokulda"
+        },
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "looking at broken crystal",
+        "sad smile",
+        "standing",
+        "dark background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "brokulda",
+          "text": "Krystal je prasklý. Ale jeden kousek odvahy se ztratil někde v podzemí. Jednoho dne ho najde dítě, které ho bude nejvíc potřebovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Kristall ist gesprungen. Aber ein Stück Mut ist irgendwo in der Unterwelt verloren gegangen. Eines Tages wird es ein Kind finden, das es am meisten braucht.",
+            "en": "The crystal is cracked. But a piece of courage was lost somewhere underground. One day, a child who needs it most will find it.",
+            "fr": "Le cristal est fissuré. Mais un morceau de courage s'est perdu dans les souterrains. Un jour, un enfant le trouvera, celui qui en aura le plus besoin.",
+            "it": "Il cristallo è crepato. Ma un pezzo di coraggio si è perso da qualche parte nel sottosuolo. Un giorno lo troverà un bambino che ne avrà più bisogno.",
+            "ja": "結晶は割れた。でも、勇気の欠片が一つ、地下のどこかで失われた。いつか、それを最も必要とする子供が見つかるだろう。",
+            "ko": "수정이 금이 갔어. 하지만 용기 조각 하나가 지하 어딘가에 잃어버렸지. 언젠가 가장 필요한 아이가 그것을 찾을 거야.",
+            "pl": "Kryształ jest pęknięty. Ale kawałek odwagi zgubił się gdzieś w podziemiach. Pewnego dnia znajdzie go dziecko, które będzie go najbardziej potrzebować.",
+            "pt-BR": "O cristal está rachado. Mas um pedaço de coragem se perdeu no subsolo. Um dia, uma criança o encontrará, aquela que mais precisará dele.",
+            "ru": "Кристалл треснул. Но кусочек смелости потерялся где-то в подземелье. Однажды его найдёт ребёнок, которому он нужнее всего.",
+            "uk": "Кристал тріснув. Але шматочок сміливості загубився десь у підземеллі. Одного дня його знайде дитина, якій він найбільше потрібен.",
+            "vi": "Tinh thể đã vỡ. Nhưng một mảnh can đảm đã bị thất lạc dưới lòng đất. Một ngày nào đó, một đứa trẻ sẽ tìm thấy nó, người cần nó nhất."
+          }
+        },
+        {
+          "speaker_id": "amaya",
+          "text": "Tak to je dobře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann ist das gut.",
+            "en": "Then that's good.",
+            "fr": "C'est tant mieux.",
+            "it": "Allora va bene così.",
+            "ja": "それなら大丈夫。",
+            "ko": "그럼 다행이네.",
+            "pl": "To dobrze.",
+            "pt-BR": "Então está tudo bem.",
+            "ru": "Ну и отлично.",
+            "uk": "Тоді це добре.",
+            "vi": "Vậy thì tốt quá."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

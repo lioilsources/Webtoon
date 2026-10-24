@@ -1,0 +1,306 @@
+{
+  "title": "Elara a starověký les",
+  "title_i18n": {
+    "de": "Elara und der uralte Wald",
+    "en": "Elara and the Ancient Forest",
+    "fr": "Elara et la forêt ancestrale",
+    "it": "Elara e la foresta antica",
+    "ja": "エララと太古の森",
+    "ko": "엘라라와 고대의 숲",
+    "pl": "Elara i pradawny las",
+    "pt-BR": "Elara e a floresta ancestral",
+    "ru": "Элара и древний лес",
+    "uk": "Елара та давній ліс",
+    "vi": "Elara và khu rừng cổ xưa"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "ancient trees",
+        "thick fog",
+        "moonlight",
+        "mysterious",
+        "dark green"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mlha a staré stromy v hlubokém lese.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nebel und alte Bäume im tiefen Wald.",
+            "en": "Mist and ancient trees in the deep forest.",
+            "fr": "Brouillard et vieux arbres dans la forêt profonde.",
+            "it": "Nebbia e alberi antichi nella foresta profonda.",
+            "ja": "霧と、深い森の古木たち。",
+            "ko": "안개와 깊은 숲속의 오래된 나무들.",
+            "pl": "Mgła i stare drzewa w głębi lasu.",
+            "pt-BR": "Neblina e árvores antigas na floresta profunda.",
+            "ru": "Туман и старые деревья в глубине леса.",
+            "uk": "Туман і старі дерева в глибокому лісі.",
+            "vi": "Sương mù và những cây cổ thụ trong khu rừng sâu thẳm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "fog drifting slowly between trees, moonlight filtering through leaves, static camera",
+      "wd14_tags": {
+        "forest": 0.972,
+        "nature": 0.97,
+        "no humans": 0.968,
+        "tree": 0.928,
+        "grass": 0.851,
+        "blue theme": 0.849,
+        "outdoors": 0.797,
+        "scenery": 0.76,
+        "monochrome": 0.661,
+        "green theme": 0.625,
+        "aqua theme": 0.499
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "elara"
+        },
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "holding staff",
+        "horse running",
+        "worried",
+        "open mouth",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elara",
+          "text": "Sparku, démon ničí magii!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Spark, ein Dämon zerstört die Magie!",
+            "en": "Spark, the demon is draining the magic!",
+            "fr": "Spark, le démon détruit la magie !",
+            "it": "Spark, il demone distrugge la magia!",
+            "ja": "スパーク、魔物が魔力を消し去ってる！",
+            "ko": "스파크, 마귀가 마법을 파괴하고 있어!",
+            "pl": "Sparku, demon niszczy magię!",
+            "pt-BR": "Sparku, o demônio está destruindo a magia!",
+            "ru": "Спарку, демон поглощает магию!",
+            "uk": "Спарку, демон руйнує магію!",
+            "vi": "Spark, con ác quỷ đang hủy diệt phép thuật!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "neighing",
+        "open mouth",
+        "ears back",
+        "running",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "NEEÍÍÍÍ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the unicorn gallops forward, leaves swaying gently, static camera",
+      "motion_llm": "the unicorn gallops forward, mane flowing in wind, static camera",
+      "wd14_tags": {
+        "no humans": 0.977,
+        "single horn": 0.977,
+        "horns": 0.849,
+        "animal focus": 0.794,
+        "nature": 0.739,
+        "forest": 0.681,
+        "animal": 0.644,
+        "unicorn": 0.592,
+        "solo": 0.586,
+        "realistic": 0.578,
+        "outdoors": 0.469,
+        "tree": 0.363
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "elara"
+        },
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "demon shooting fire",
+        "fireball",
+        "glowing shield",
+        "rainbow shield",
+        "blocking",
+        "intense",
+        "magical effects"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "elara"
+        }
+      ],
+      "visual_tags": [
+        "casting spell",
+        "holding staff up",
+        "glowing staff",
+        "concentrating",
+        "closed eyes",
+        "light particles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elara",
+          "text": "Léčivá vlna!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Heilwelle!",
+            "en": "Healing Wave!",
+            "fr": "Vague de guérison !",
+            "it": "Onda curativa!",
+            "ja": "治癒の波動！",
+            "ko": "치유의 물결!",
+            "pl": "Fala uzdrawiająca!",
+            "pt-BR": "Onda curativa!",
+            "ru": "Волна исцеления!",
+            "uk": "Лікувальна хвиля!",
+            "vi": "Sóng chữa lành!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "demon retreating",
+        "shield glowing",
+        "fire extinguished",
+        "smoke",
+        "weak",
+        "kneeling"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HSSSS!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "elara"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding staff",
+        "looking at shadows",
+        "serious",
+        "determined",
+        "forest background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "elara",
+          "text": "Ještě se vrátí… ale teď je les v bezpečí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Er kommt sicher zurück… aber jetzt ist der Wald in Sicherheit.",
+            "en": "It'll be back... but the forest is safe for now.",
+            "fr": "Il reviendra… mais la forêt est en sécurité, pour l'instant.",
+            "it": "Tornerà... ma ora la foresta è al sicuro.",
+            "ja": "また戻ってくるわ……でも、今は森が安全ね。",
+            "ko": "다시 올 거야… 하지만 지금은 숲이 안전해.",
+            "pl": "Wciąż wróci… ale teraz las jest bezpieczny.",
+            "pt-BR": "Ele vai voltar... mas agora a floresta está segura.",
+            "ru": "Он ещё вернётся… но сейчас лес в безопасности.",
+            "uk": "Він ще повернеться… але зараз ліс у безпеці.",
+            "vi": "Nó sẽ quay lại… nhưng giờ thì khu rừng đã an toàn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "elara"
+        },
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "looking at forest",
+        "calm",
+        "moonlight",
+        "peaceful",
+        "stars"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

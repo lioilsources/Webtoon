@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k5_08_boro_demon_v_lese",
+  "title": "Boro a démon v lese",
+  "synopsis": "Mladý bojovník Boro se vydává do chrámu, aby porazil démony a vrátil vesnici světlo.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Boro je uznán jako pravý bojovník a vesnice slaví."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_temple",
+      "l_village"
+    ]
+  },
+  "characters": [
+    {
+      "id": "boro",
+      "name": "Boro",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 10 with short black hair and an orange martial arts uniform",
+      "base": "male child, black hair, short hair, black eyes, fair skin, determined face",
+      "outfits": {
+        "default": "orange martial arts gi, black belt, wristbands"
+      },
+      "photo": "a determined Czech boy aged 10 with short black hair and an orange martial arts uniform",
+      "tag_prompt": "male child, black hair, short hair, black eyes, fair skin, determined face, orange martial arts gi, black belt, wristbands",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "yang",
+      "name": "Mistr Yang",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a wise Czech man aged 65 with long white hair, a beard and white monk robes",
+      "base": "adult, mature male, old man, white hair, long beard, kind eyes, wrinkles",
+      "outfits": {
+        "default": "white monk robes, wooden staff"
+      },
+      "photo": "a wise Czech man aged 65 with long white hair, a beard and white monk robes",
+      "tag_prompt": "adult, mature male, old man, white hair, long beard, kind eyes, wrinkles, white monk robes, wooden staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demon",
+      "name": "Démon Stínů",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a menacing shadow spirit with glowing red eyes and a dark aura",
+      "base": "ghost, shadow, dark aura, glowing red eyes, floating, jagged edges",
+      "outfits": {
+        "default": "dark smoke, glowing red eyes"
+      },
+      "photo": "a menacing shadow spirit with glowing red eyes and a dark aura",
+      "tag_prompt": "ghost, shadow, dark aura, glowing red eyes, floating, jagged edges, dark smoke, glowing red eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Džungle",
+      "description": "Džungle",
+      "tag_prompt": "outdoors, jungle, dense green foliage, vines, sunlight filtering through leaves, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_temple",
+      "name": "Chrám",
+      "description": "Chrám",
+      "tag_prompt": "outdoors, ancient stone temple, ruins, overgrown, dramatic lighting, day",
+      "mood": ""
+    },
+    {
+      "id": "l_village",
+      "name": "Vesnice",
+      "description": "Vesnice",
+      "tag_prompt": "outdoors, village square, wooden houses, festival decorations, bright sunlight, happy atmosphere",
+      "mood": ""
+    }
+  ]
+}

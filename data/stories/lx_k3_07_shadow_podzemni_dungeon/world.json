@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_07_shadow_podzemni_dungeon",
+  "title": "Shadow a stínový duch",
+  "synopsis": "Chlapec Shadow a jeho netopýr Echo prozkoumávají temné podzemí a čelí záhadnému duchu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: duch zmizel, ale zanechal varování."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dungeon",
+      "l_dungeon2"
+    ]
+  },
+  "characters": [
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a mysterious Czech boy aged 10 with messy black hair and a black hooded cloak",
+      "base": "male child, black hair, messy hair, dark eyes, pale skin",
+      "outfits": {
+        "default": "black cloak, hood, silver shield, throwing stars on belt, black boots"
+      },
+      "photo": "a mysterious Czech boy aged 10 with messy black hair and a black hooded cloak",
+      "tag_prompt": "male child, black hair, messy hair, dark eyes, pale skin, black cloak, hood, silver shield, throwing stars on belt, black boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "echo",
+      "name": "Echo",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small black bat with large ears and spread wings",
+      "base": "bat, small bat, black fur, big ears, wings",
+      "outfits": {
+        "default": "none"
+      },
+      "photo": "a small black bat with large ears and spread wings",
+      "tag_prompt": "bat, small bat, black fur, big ears, wings, none",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "shadow_spirit",
+      "name": "Stínový duch",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent ghost with long hair and glowing blue eyes",
+      "base": "ghost, transparent, floating, long hair, glowing eyes",
+      "outfits": {
+        "default": "chains, glowing blue aura"
+      },
+      "photo": "a translucent ghost with long hair and glowing blue eyes",
+      "tag_prompt": "ghost, transparent, floating, long hair, glowing eyes, chains, glowing blue aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dungeon",
+      "name": "Temná síň",
+      "description": "Temná síň",
+      "tag_prompt": "outdoors, dungeon, stone walls, torches, dark atmosphere, dust particles, night",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon2",
+      "name": "Podzemní chodba",
+      "description": "Podzemní chodba",
+      "tag_prompt": "outdoors, dungeon, stone corridor, shadows, dim light, ancient ruins",
+      "mood": ""
+    }
+  ]
+}

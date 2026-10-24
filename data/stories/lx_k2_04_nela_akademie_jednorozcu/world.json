@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_04_nela_akademie_jednorozcu",
+  "title": "Nela a Akademie Jednorožců",
+  "synopsis": "Nela hledá na kouzelné akademii svého jednorožce a společně s ním brání školu před Černou čarodějnicí Morgou.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Nela a Astra se stanou nejlepšími kamarádkami a akademie je v bezpečí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_academy",
+      "l_forest",
+      "l_battle"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nela",
+      "name": "Nela",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a magical Czech girl aged 9 with long pink hair and bright blue eyes",
+      "base": "female child, pink hair, long hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "blue wizard robe, silver star wand, black boots, white shirt"
+      },
+      "photo": "a magical Czech girl aged 9 with long pink hair and bright blue eyes",
+      "tag_prompt": "female child, pink hair, long hair, blue eyes, fair skin, determined face, blue wizard robe, silver star wand, black boots, white shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "astra",
+      "name": "Astra",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a majestic white unicorn with a flowing rainbow mane and a glowing horn",
+      "base": "unicorn, white fur, single horn, rainbow mane, large eyes",
+      "outfits": {
+        "default": "golden bridle, rainbow mane"
+      },
+      "photo": "a majestic white unicorn with a flowing rainbow mane and a glowing horn",
+      "tag_prompt": "unicorn, white fur, single horn, rainbow mane, large eyes, golden bridle, rainbow mane",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lyra",
+      "name": "Profesorka Lyra",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a stern Czech witch aged 45 with tall purple hair in a bun and sharp eyes",
+      "base": "adult, mature female, tall, purple hair, hair bun, glasses, stern face, wrinkles",
+      "outfits": {
+        "default": "dark purple wizard robe, silver staff, pointed hat"
+      },
+      "photo": "a stern Czech witch aged 45 with tall purple hair in a bun and sharp eyes",
+      "tag_prompt": "adult, mature female, tall, purple hair, hair bun, glasses, stern face, wrinkles, dark purple wizard robe, silver staff, pointed hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "morga",
+      "name": "Morga",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a scary witch with messy black hair, green skin and a jagged staff",
+      "base": "witch, black hair, messy hair, green skin, pointy nose, dark eyes",
+      "outfits": {
+        "default": "tattered black cloak, jagged staff, dark magic aura"
+      },
+      "photo": "a scary witch with messy black hair, green skin and a jagged staff",
+      "tag_prompt": "witch, black hair, messy hair, green skin, pointy nose, dark eyes, tattered black cloak, jagged staff, dark magic aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_academy",
+      "name": "Akademie",
+      "description": "Akademie",
+      "tag_prompt": "outdoors, floating castle, clouds, blue sky, magical architecture, stone walls, bright light",
+      "mood": ""
+    },
+    {
+      "id": "l_forest",
+      "name": "Les",
+      "description": "Les",
+      "tag_prompt": "outdoors, magical forest, trees, bushes, sunlight filtering through leaves, path",
+      "mood": ""
+    },
+    {
+      "id": "l_battle",
+      "name": "Bojové pole",
+      "description": "Bojové pole",
+      "tag_prompt": "outdoors, magical arena, dark clouds, storm, purple lightning, stone ground",
+      "mood": ""
+    }
+  ]
+}

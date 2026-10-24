@@ -1,0 +1,331 @@
+{
+  "title": "Finn a hadí čarodějnice",
+  "title_i18n": {
+    "de": "Finn und die Schlangenzauberin",
+    "en": "Finn and the Snake Witch",
+    "fr": "Finn et la sorcière des serpents",
+    "it": "Finn e la strega serpente",
+    "ja": "フィンと蛇の魔女",
+    "ko": "핀과 뱀 마녀",
+    "pl": "Finn i wężowa czarownica",
+    "pt-BR": "Finn e a feiticeira das cobras",
+    "ru": "Финн и змеиная ведьма",
+    "uk": "Фінн і чаклунка-змія",
+    "vi": "Finn và phù thủy rắn"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "dense jungle",
+        "large leaves",
+        "vines",
+        "sunlight",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hustá a vlhká džungle.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dichter, feuchter Dschungel.",
+            "en": "Dense, humid jungle.",
+            "fr": "Une jungle dense et humide.",
+            "it": "Una giungla fitta e umida.",
+            "ja": "鬱蒼とし、湿気たジャングル。",
+            "ko": "습하고 울창한 정글.",
+            "pl": "Gęsta i wilgotna dżungla.",
+            "pt-BR": "Selva densa e úmida.",
+            "ru": "Густые и влажные джунгли.",
+            "uk": "Густі й вологі джунглі.",
+            "vi": "Rừng rậm dày đặc và ẩm ướt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "leaves swaying in the wind, sunlight filtering through canopy, static camera",
+      "wd14_tags": {
+        "no humans": 0.98,
+        "plant": 0.941,
+        "leaf": 0.894,
+        "green theme": 0.886,
+        "scenery": 0.868,
+        "nature": 0.816,
+        "sunlight": 0.808,
+        "outdoors": 0.643,
+        "light rays": 0.494,
+        "forest": 0.444,
+        "day": 0.4
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "finn"
+        },
+        {
+          "id": "shell"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "holding water gun",
+        "crab walking",
+        "worried",
+        "looking back"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "finn",
+          "text": "Shelle, ta čarodějnice mění zvířata!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Shelle, die Zauberin verwandelt Tiere!",
+            "en": "Shelle, that witch is turning animals!",
+            "fr": "Shelle, ta sorcière transforme les animaux !",
+            "it": "Shelle, quella strega trasforma gli animali!",
+            "ja": "シェレ、あの魔女は動物を変身させるんだ！",
+            "ko": "셸리, 그 마녀가 동물을 변신시켜!",
+            "pl": "Shelle, ta czarownica zmienia zwierzęta!",
+            "pt-BR": "Shelle, a feiticeira está transformando os animais!",
+            "ru": "Шелли, эта ведьма превращает животных!",
+            "uk": "Шеллі, ця чаклунка перетворює тварин!",
+            "vi": "Shelle, con phù thủy đó đang biến động vật!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "shell"
+        }
+      ],
+      "visual_tags": [
+        "crab clapping",
+        "big claws",
+        "looking at viewer",
+        "alert"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLEPET! KLEP",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the crab claps its claws together, leaves swaying gently, static camera",
+      "motion_llm": "the crab claps its claws together, static camera",
+      "wd14_tags": {
+        "no humans": 0.973,
+        "solo": 0.854,
+        "pokemon (creature)": 0.824,
+        "plant": 0.712,
+        "outdoors": 0.712,
+        "leaf": 0.681
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "sorceress"
+        },
+        {
+          "id": "finn"
+        },
+        {
+          "id": "shell"
+        }
+      ],
+      "visual_tags": [
+        "snake spirit",
+        "casting spell",
+        "green slime",
+        "energy blast",
+        "running",
+        "jumping"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "finn"
+        }
+      ],
+      "visual_tags": [
+        "shooting water",
+        "holding water gun",
+        "jumping",
+        "dynamic pose",
+        "determined",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "finn",
+          "text": "Bublinový výbuch!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Blasenexplosion!",
+            "en": "Bubble Burst!",
+            "fr": "Explosion de bulles !",
+            "it": "Esplosione a bolle!",
+            "ja": "バブルバースト！",
+            "ko": "버블 폭발!",
+            "pl": "Bąbelkowy wybuch!",
+            "pt-BR": "Explosão de bolhas!",
+            "ru": "Пузырьковый взрыв!",
+            "uk": "Бульбашковий вибух!",
+            "vi": "Bùng nổ bong bóng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "finn"
+        },
+        {
+          "id": "sorceress"
+        }
+      ],
+      "visual_tags": [
+        "bubble shield",
+        "glowing shield",
+        "slime hitting shield",
+        "explosion",
+        "sparks",
+        "magic clash"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "sorceress"
+        }
+      ],
+      "visual_tags": [
+        "snake spirit",
+        "surprised",
+        "falling back",
+        "dust cloud",
+        "defeated",
+        "kneeling"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HUP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "finn"
+        },
+        {
+          "id": "shell"
+        }
+      ],
+      "visual_tags": [
+        "snake spirit running away",
+        "fleeing",
+        "motion lines",
+        "finn waving",
+        "shell waving"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "finn"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "hands on hips",
+        "smile",
+        "relieved",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "finn",
+          "text": "Džungle je zase v pořádku… zatím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Dschungel ist wieder in Ordnung … für jetzt.",
+            "en": "The jungle's back to normal... for now.",
+            "fr": "La jungle est de nouveau en ordre… pour l'instant.",
+            "it": "La giungla è di nuovo a posto… per ora.",
+            "ja": "ジャングルは元通り……とりあえず。",
+            "ko": "정글이 다시 평온해졌어… 일단.",
+            "pl": "Dżungla jest znowu w porządku… na razie.",
+            "pt-BR": "A selva está normal de novo… por enquanto.",
+            "ru": "Джунгли снова в порядке… пока что.",
+            "uk": "Джунглі знову в порядку… поки що.",
+            "vi": "Rừng lại bình thường… tạm thời."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

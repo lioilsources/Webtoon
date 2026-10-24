@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k7_10_ondra_draci_pest",
+  "title": "Ondra a Dračí Pěst",
+  "synopsis": "Mladý bojovník Ondra musí překonat svůj strach a použít sílu přátelství, aby osvobodil teplo kraje od osamělého démona.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Démon Král Nácho se stane přítelem vesnice a Ondra ovládl Dračí skok."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_temple",
+      "l_mountain",
+      "l_village"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ondra",
+      "name": "Ondra",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 10 with short black hair and a red headband",
+      "base": "male child, black hair, short hair, brown eyes, fair skin",
+      "outfits": {
+        "default": "red headband, white martial arts gi, black belt, red wristbands"
+      },
+      "photo": "a determined Czech boy aged 10 with short black hair and a red headband",
+      "tag_prompt": "male child, black hair, short hair, brown eyes, fair skin, red headband, white martial arts gi, black belt, red wristbands",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mistr_bambus",
+      "name": "Mistr Bambus",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a wise Czech monk aged 65 with a long white beard and green eyes",
+      "base": "adult, mature male, old man, white hair, long beard, green eyes, wrinkles",
+      "outfits": {
+        "default": "green monk robes, wooden sandals"
+      },
+      "photo": "a wise Czech monk aged 65 with a long white beard and green eyes",
+      "tag_prompt": "adult, mature male, old man, white hair, long beard, green eyes, wrinkles, green monk robes, wooden sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kral_nacho",
+      "name": "Král Nácho",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red demon with curved horns and glowing red eyes",
+      "base": "demon, large build, red skin, horns, sharp teeth, glowing red eyes",
+      "outfits": {
+        "default": "dark jagged armor, glowing red runes"
+      },
+      "photo": "a large red demon with curved horns and glowing red eyes",
+      "tag_prompt": "demon, large build, red skin, horns, sharp teeth, glowing red eyes, dark jagged armor, glowing red runes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_temple",
+      "name": "Chrám v bambusu",
+      "description": "Chrám v bambusu",
+      "tag_prompt": "outdoors, bamboo forest, ancient temple ruins, morning mist, soft light, green bamboo stalks",
+      "mood": ""
+    },
+    {
+      "id": "l_mountain",
+      "name": "Hora Krále Nácha",
+      "description": "Hora Krále Nácha",
+      "tag_prompt": "outdoors, snowy mountain peak, rocky cliffs, cave entrance, harsh sunlight, cold wind, snow particles",
+      "mood": ""
+    },
+    {
+      "id": "l_village",
+      "name": "Vesnice pod horou",
+      "description": "Vesnice pod horou",
+      "tag_prompt": "outdoors, village square, wooden houses, campfire, evening, warm firelight, stars appearing",
+      "mood": ""
+    }
+  ]
+}

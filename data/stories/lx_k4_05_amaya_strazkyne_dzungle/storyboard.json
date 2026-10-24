@@ -1,0 +1,295 @@
+{
+  "title": "Amaya a stínová hrozba",
+  "title_i18n": {
+    "de": "Amaya und die schattene Drohung",
+    "en": "Amaya and the Shadow Threat",
+    "fr": "Amaya et l'ombre menaçante",
+    "it": "Amaya e la minaccia ombrosa",
+    "ja": "アマヤと影の脅威",
+    "ko": "아마야와 그림자의 위협",
+    "pl": "Amaya i cieniowe zagrożenie",
+    "pt-BR": "Amaya e a Sombra",
+    "ru": "Амая и тень угрозы",
+    "uk": "Амая та тіньова загроза",
+    "vi": "Amaya và mối đe dọa bóng tối"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "jungle canopy",
+        "giant trees",
+        "glowing mushrooms",
+        "mist",
+        "magical light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hustá pralesní džungle v minulosti.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dichter Dschungel in der Vergangenheit.",
+            "en": "Deep in the jungle, long ago.",
+            "fr": "Une jungle dense, dans le passé.",
+            "it": "Una fitta giungla pluviale, nel passato.",
+            "ja": "昔々、濃い緑に包まれたジャングル。",
+            "ko": "과거, 밀림 속 정글.",
+            "pl": "Gęsta dżungla w przeszłości.",
+            "pt-BR": "A densa selva no passado.",
+            "ru": "Густые джунгли в прошлом.",
+            "uk": "Густі джунглі в минулому.",
+            "vi": "Rừng rậm nhiệt đới dày đặc trong quá khứ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "mist drifting slowly, glowing mushrooms pulsing softly, static camera",
+      "wd14_tags": {
+        "scenery": 0.955,
+        "nature": 0.948,
+        "no humans": 0.938,
+        "mushroom": 0.924,
+        "forest": 0.88,
+        "outdoors": 0.871,
+        "tree": 0.854,
+        "bug": 0.635,
+        "grass": 0.628,
+        "landscape": 0.458,
+        "butterfly": 0.402
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "witch"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "leaping",
+        "witch floating",
+        "black smoke",
+        "dark aura",
+        "surprised",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "witch",
+          "text": "Tato džungle zapomene na slunce! Stíny pohltí všechno živé!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Dieser Dschungel wird die Sonne vergessen! Schatten verschlingen alles Lebende!",
+            "en": "This jungle shall forget the sun! Shadows will devour all life!",
+            "fr": "Cette jungle oubliera le soleil ! Les ombres dévoreront toute vie !",
+            "it": "Questa giungla dimenticherà il sole! Le ombre ingoieranno ogni cosa viva!",
+            "ja": "このジャングルは太陽を忘れ去る！影が全ての命を飲み込む！",
+            "ko": "이 정글은 해를 잊게 될 거야! 그림자가 모든 생명을 삼켜!",
+            "pl": "Ta dżungla zapomni o słońcu! Cienie pochłoną wszystko, co żywe!",
+            "pt-BR": "Esta selva esquecerá o sol! As sombras devorarão tudo vivo!",
+            "ru": "Эти джунгли забудут солнце! Тени поглотят всё живое!",
+            "uk": "Ці джунглі забудуть сонце! Тіні поглинуть все живе!",
+            "vi": "Khu rừng này sẽ quên đi ánh nắng! Bóng tối sẽ nuốt chửng mọi sự sống!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "holding bow",
+        "aiming",
+        "glowing arrow",
+        "green light",
+        "determined",
+        "focused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Džungle má svou vlastní paměť a já jsem její hlas!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Dschungel hat sein eigenes Gedächtnis, und ich bin seine Stimme!",
+            "en": "The jungle has its own memory, and I am its voice!",
+            "fr": "La jungle a sa propre mémoire, et je suis sa voix !",
+            "it": "La giungla ha la sua memoria e io sono la sua voce!",
+            "ja": "ジャングルには独自の記憶があり、私はその声よ！",
+            "ko": "정글은 저마다의 기억을 가지고 있고, 나는 그 목소리야!",
+            "pl": "Dżungla ma swoją własną pamięć, a ja jestem jej głosem!",
+            "pt-BR": "A selva tem sua própria memória e eu sou sua voz!",
+            "ru": "У джунглей своя память, и я — её голос!",
+            "uk": "У джунглів є своя пам'ять, і я — її голос!",
+            "vi": "Khu rừng có ký ức riêng và ta là tiếng nói của nó!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "amaya"
+        },
+        {
+          "id": "witch"
+        }
+      ],
+      "visual_tags": [
+        "shooting arrow",
+        "energy blast",
+        "green light beams",
+        "ghosts fading",
+        "explosion of light",
+        "dynamic pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠVVVÍÍÍÍK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "witch"
+        }
+      ],
+      "visual_tags": [
+        "dissolving",
+        "turning to dust",
+        "fading away",
+        "dark smoke dispersing",
+        "defeated"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "landing",
+        "kneeling",
+        "catching breath",
+        "looking at horizon",
+        "worried",
+        "sweatdrop"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "looking at distance",
+        "dark cloud",
+        "horizon",
+        "determined",
+        "hero pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Tohle byl jen začátek.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war erst der Anfang.",
+            "en": "This was just the beginning.",
+            "fr": "Ce n'était que le début.",
+            "it": "Questo era solo l'inizio.",
+            "ja": "これはまだ序の口。",
+            "ko": "이건 시작일 뿐이야.",
+            "pl": "To był tylko początek.",
+            "pt-BR": "Isso foi só o começo.",
+            "ru": "Это было только начало.",
+            "uk": "Це був лише початок.",
+            "vi": "Đây chỉ mới là khởi đầu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "amaya"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "looking at distance",
+        "dark cloud",
+        "horizon",
+        "determined",
+        "hero pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amaya",
+          "text": "Tohle byl jen začátek.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war erst der Anfang.",
+            "en": "This was just the beginning.",
+            "fr": "Ce n'était que le début.",
+            "it": "Questo era solo l'inizio.",
+            "ja": "これはまだ序の口。",
+            "ko": "이건 시작일 뿐이야.",
+            "pl": "To był tylko początek.",
+            "pt-BR": "Isso foi só o começo.",
+            "ru": "Это было только начало.",
+            "uk": "Це був лише початок.",
+            "vi": "Đây chỉ mới là khởi đầu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

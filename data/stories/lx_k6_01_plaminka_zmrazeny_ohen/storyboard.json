@@ -1,0 +1,374 @@
+{
+  "title": "Plamínka a planeta zmrazeného ohně",
+  "title_i18n": {
+    "de": "Flammenherz und der Planet des gefrorenen Feuers",
+    "en": "Flame and the Planet of Frozen Fire",
+    "fr": "Plamínka et la planète du feu gelé",
+    "it": "Plamínka e il pianeta del fuoco ghiacciato",
+    "ja": "プラミンカと凍った炎の惑星",
+    "ko": "플라민카와 얼어붙은 불의 행성",
+    "pl": "Płomyk i planeta zamrożonego ognia",
+    "pt-BR": "Plamínka e o Planeta do Fogo Congelado",
+    "ru": "Пламя и планета замерзшего огня",
+    "uk": "Пламінка та планета замороженого вогню",
+    "vi": "Plamínka và Hành Tinh Lửa Đóng Băng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_magma",
+      "characters": [],
+      "visual_tags": [
+        "lava rivers",
+        "volcanic rocks",
+        "space background",
+        "red sky",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Planeta Magma Prime.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Planet Magma Prime.",
+            "en": "Planet Magma Prime.",
+            "fr": "Planète Magma Prime.",
+            "it": "Pianeta Magma Prime.",
+            "ja": "惑星マグマ・プライム。",
+            "ko": "마그마 프라임 행성.",
+            "pl": "Planeta Magma Prime.",
+            "pt-BR": "Planeta Magma Prime.",
+            "ru": "Планета Магма Прайм.",
+            "uk": "Планета Маґма Прайм.",
+            "vi": "Hành tinh Magma Prime."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, flames flickering, water rippling, leaves swaying gently, static camera",
+      "motion_llm": "lava bubbles rise slowly, stars twinkle in the background, static camera",
+      "wd14_tags": {
+        "no humans": 0.95,
+        "scenery": 0.866,
+        "outdoors": 0.772,
+        "red sky": 0.763,
+        "red theme": 0.686,
+        "sky": 0.671,
+        "fire": 0.652,
+        "lava": 0.648,
+        "water": 0.627,
+        "mountain": 0.565,
+        "volcano": 0.41,
+        "nature": 0.398
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_magma",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "zhana"
+        }
+      ],
+      "visual_tags": [
+        "flying",
+        "fire wings",
+        "holding scroll",
+        "smile",
+        "open mouth",
+        "fire trail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Paradoxy hasím já!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich lösche Paradoxy!",
+            "en": "I handle the paradoxes!",
+            "fr": "C'est moi qui éteins les paradoxes !",
+            "it": "Spegno io gli incendi!",
+            "ja": "火事は私が消すわ！",
+            "ko": "불은 내가 꺼질게!",
+            "pl": "Ja gaszę pożary!",
+            "pt-BR": "Eu apago os paradoxos!",
+            "ru": "Я тушу пожары!",
+            "uk": "Я гаситиму пожежі!",
+            "vi": "Ta sẽ dập tắt Paradoxy!"
+          }
+        },
+        {
+          "speaker_id": "zhana",
+          "text": "Hřej se, dokud můžeš!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wärme dich, solange du kannst!",
+            "en": "Warm up while you can!",
+            "fr": "Chauffe-toi tant que tu peux !",
+            "it": "Scaldati, finché puoi!",
+            "ja": "今だけ暖かさを味わって！",
+            "ko": "지금 따뜻하게 지내!",
+            "pl": "Ciesz się ciepłem, póki możesz!",
+            "pt-BR": "Aqueça-se enquanto pode!",
+            "ru": "Грейся, пока можешь!",
+            "uk": "Грійся, поки можеш!",
+            "vi": "Hãy sưởi ấm đi, khi còn có thể!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ohnenka",
+      "characters": [
+        {
+          "id": "pena"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding staff",
+        "ice magic",
+        "frowning",
+        "cold wind",
+        "snow particles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pena",
+          "text": "Oheň je neřád. Odteď všechno šustí sněhem!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Feuer ist ein Ungeheuer. Von nun an rauscht alles im Schnee!",
+            "en": "Fire is a menace. From now on, everything rustles with snow!",
+            "fr": "Le feu est un monstre. Désormais, tout scintille sous la neige !",
+            "it": "Il fuoco è un mostro. Da ora tutto scricchiola sotto la neve!",
+            "ja": "火は悪だ。これからはすべてが雪の音だけさ！",
+            "ko": "불은 악당. 이제 모든 것이 눈으로 뒤덮일 거야!",
+            "pl": "Ogień to potwór. Od teraz wszędzie będzie szumieć śnieg!",
+            "pt-BR": "O fogo é uma praga. De agora em diante, tudo vai estalar como neve!",
+            "ru": "Огонь — это зло. Теперь всё будет шуршать снегом!",
+            "uk": "Вогонь — це лиходій. Відтепер усе шелестітиме снігом!",
+            "vi": "Lửa là kẻ thù. Từ giờ mọi thứ sẽ phủ tuyết!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ohnenka",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "pena"
+        }
+      ],
+      "visual_tags": [
+        "facing each other",
+        "confident smile",
+        "ice staff pointing",
+        "fire aura",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Soutěžím. Ale já vždycky vyhraju, protože hřeju srdcem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich mache mit. Aber ich gewinne immer, weil ich mit Herz heize.",
+            "en": "I'm competing. But I always win, because I warm with my heart.",
+            "fr": "Je participe. Mais je gagne toujours, car je chauffe de cœur.",
+            "it": "Partecipo alla gara. Ma vinco sempre, perché scaldo col cuore.",
+            "ja": "競争してるけど、私はいつも勝つわ。心で温めるから。",
+            "ko": "나는 경쟁해. 하지만 나는 항상 이겨.因为我는 마음으로 따뜻하게 하니까.",
+            "pl": "Walczę. Ale zawsze wygrywam, bo grzeję sercem.",
+            "pt-BR": "Estou competindo. Mas eu sempre venci, porque aqueço com o coração.",
+            "ru": "Я участвую в соревновании. Но я всегда побеждаю, потому что грею сердцем.",
+            "uk": "Я змагаюся. Але я завжди перемагаю, бо грію серцем.",
+            "vi": "Ta đang thi đấu. Nhưng ta luôn thắng vì ta sưởi ấm bằng trái tim."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ohnenka",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "pena"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "fire swirls",
+        "spinning",
+        "ice staff melting",
+        "surprised",
+        "steam"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, static camera",
+      "motion_llm": "ambient only, characters still, flames flickering, steam rising from melting ice, static camera",
+      "wd14_tags": {
+        "1girl": 0.985,
+        "ice": 0.919,
+        "solo": 0.898,
+        "long hair": 0.815,
+        "blue eyes": 0.654,
+        "outdoors": 0.576,
+        "dress": 0.499,
+        "boots": 0.49,
+        "sky": 0.449,
+        "animal ears": 0.419,
+        "smile": 0.412,
+        "wide shot": 0.409
+      }
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ohnenka",
+      "characters": [
+        {
+          "id": "pena"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "tears of joy",
+        "soft expression",
+        "ice crown cracking",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pena",
+          "text": "Ty jsi… hřejivá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist … wärmend.",
+            "en": "You’re... warm.",
+            "fr": "Tu es… réconfortante.",
+            "it": "Tu sei... riscaldata.",
+            "ja": "あなたは…あたたかい。",
+            "ko": "너는… 따뜻해.",
+            "pl": "Ty jesteś... ciepła.",
+            "pt-BR": "Você é... acolhedora.",
+            "ru": "Ты… тёплая.",
+            "uk": "Ти… тепла.",
+            "vi": "Ngươi... ấm áp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_volcano",
+      "characters": [
+        {
+          "id": "pena"
+        },
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "magma glowing",
+        "ice melting",
+        "smile",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pena",
+          "text": "Nikdy jsem nevěděla, že zima může být tak osamělá. Promiň, hvězdy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wusste nie, dass Kälte so einsam sein kann. Verzeih mir, Sterne.",
+            "en": "I never knew winter could be so lonely. Sorry, stars.",
+            "fr": "Je n'avais jamais su que l'hiver pouvait être si solitaire. Pardonne-moi, étoiles.",
+            "it": "Non sapevo che l'inverno potesse essere così solitario. Scusami, stelle.",
+            "ja": "冬がこんなに孤独なものだとは、知らなかったわ。ごめんね、星たち。",
+            "ko": "추위가 이렇게 외로울 줄은 몰랐어. 미안해, 별들아.",
+            "pl": "Nigdy nie wiedziałam, że zima może być taka samotna. Przepraszam, gwiazdy.",
+            "pt-BR": "Nunca soube que o inverno podia ser tão solitário. Desculpe, estrelas.",
+            "ru": "Я никогда не знала, что зима может быть такой одинокой. Прости, звёзды.",
+            "uk": "Я ніколи не знала, що зима може бути такою самотньою. Вибач, зорі.",
+            "vi": "Ta chưa bao giờ biết mùa đông lại cô độc đến thế. Xin lỗi, các vì sao."
+          }
+        },
+        {
+          "speaker_id": "nela",
+          "text": "Nemusíš se měnit. Jen přidej ke sněhu trochu ohně. Jako v srdci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du musst dich nicht ändern. Gib dem Schnee nur etwas Feuer hinzu. Wie im Herzen.",
+            "en": "You don't have to change. Just add a little fire to the snow. Like in your heart.",
+            "fr": "Tu n'as pas à changer. Ajoute juste un peu de feu à la neige. Comme dans ton cœur.",
+            "it": "Non devi cambiare. Aggiungi solo un po' di fuoco alla neve. Come nel cuore.",
+            "ja": "変わらなくていいの。雪に少し火を足すだけ。心のように。",
+            "ko": "변할 필요 없어. 눈 위에 불꽃을 조금 더하면 돼. 마음처럼.",
+            "pl": "Nie musisz się zmieniać. Po prostu dodaj do śniegu odrobinę ognia. Jak w sercu.",
+            "pt-BR": "Não precisa mudar. Só adicione um pouco de fogo à neve. Como no coração.",
+            "ru": "Тебе не нужно меняться. Просто добавь к снегу немного огня. Как в сердце.",
+            "uk": "Не треба змінюватися. Просто додай до снігу трохи вогню. Як у серці.",
+            "vi": "Ngươi không cần thay đổi. Chỉ cần thêm một chút lửa vào tuyết. Như trong trái tim vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ohnenka",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "zhana"
+        }
+      ],
+      "visual_tags": [
+        "flying away",
+        "carrying ice cream",
+        "happy",
+        "confetti",
+        "celebration",
+        "fire wings"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k4_04_nela_morska_ochrankyne",
+  "title": "Nela Aqua a legenda o mořské ochránkyni",
+  "synopsis": "Nela Aqua chrání korálový útes před zlobivým robotem Kraken-botem s pomocí bublin a Jiskřičky.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: mořský domov je zachráněn a mořští tvorové slaví."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_reef",
+      "l_sand"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nela",
+      "name": "Nela",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 7 with blonde hair and blue eyes",
+      "base": "female child, blonde hair, long hair, blue eyes, fair skin, freckles",
+      "outfits": {
+        "default": "blue diving suit, silver helmet with antenna, bubble gun on back, flippers"
+      },
+      "photo": "a brave Czech girl aged 7 with blonde hair and blue eyes",
+      "tag_prompt": "female child, blonde hair, long hair, blue eyes, fair skin, freckles, blue diving suit, silver helmet with antenna, bubble gun on back, flippers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kraken_bot",
+      "name": "Kraken-bot",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large rusty octopus-like robot with glowing red eyes and metal tentacles",
+      "base": "robot, mecha, octopus, metal body, glowing red eyes, many arms",
+      "outfits": {
+        "default": "rusty metal plates, glowing red sensors, suction cups on arms"
+      },
+      "photo": "a large rusty octopus-like robot with glowing red eyes and metal tentacles",
+      "tag_prompt": "robot, mecha, octopus, metal body, glowing red eyes, many arms, rusty metal plates, glowing red sensors, suction cups on arms",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jiskricka",
+      "name": "Jiskřička",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small glowing yellow fish with electric sparks around it",
+      "base": "fish, small fish, yellow fur, glowing body, big eyes",
+      "outfits": {
+        "default": "glowing yellow stripes, electric sparks"
+      },
+      "photo": "a small glowing yellow fish with electric sparks around it",
+      "tag_prompt": "fish, small fish, yellow fur, glowing body, big eyes, glowing yellow stripes, electric sparks",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_reef",
+      "name": "Korálový útes",
+      "description": "Korálový útes",
+      "tag_prompt": "outdoors, underwater, coral reef, colorful corals, seaweed, sunlight rays, blue water, fish",
+      "mood": ""
+    },
+    {
+      "id": "l_sand",
+      "name": "Písečné dno",
+      "description": "Písečné dno",
+      "tag_prompt": "outdoors, underwater, sandy ocean floor, coral reef background, bubbles, sunlight rays",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,437 @@
+{
+  "title": "Béďa a dopis od kapitána",
+  "title_i18n": {
+    "de": "Béďa und der Brief des Kapitäns",
+    "en": "Beda and the Captain's Letter",
+    "fr": "Béďa et la lettre du capitaine",
+    "it": "Béďa e la lettera del capitano",
+    "ja": "ベーダと船長の手紙",
+    "ko": "베다와 선장의 편지",
+    "pl": "Béďa i list od kapitana",
+    "pt-BR": "Béďa e a carta do capitão",
+    "ru": "Бедя и письмо от капитана",
+    "uk": "Бедя та лист від капітана",
+    "vi": "Béďa và bức thư của thuyền trưởng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_underwater_city",
+      "characters": [],
+      "visual_tags": [
+        "coral city",
+        "bubbles",
+        "fish",
+        "blue water",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Korálové město hluboko pod hladinou.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Korallenstadt tief unter der Wasseroberfläche.",
+            "en": "Coral City, deep beneath the waves.",
+            "fr": "La ville corallienne, au fond des abysses.",
+            "it": "La città corallina, in profondità sotto la superficie.",
+            "ja": "海面の深く、珊瑚礁の街。",
+            "ko": "수면 아래 깊은 곳, 산호 도시.",
+            "pl": "Koralowe miasto głęboko pod powierzchnią.",
+            "pt-BR": "Cidade Coral, nas profundezas sob a superfície.",
+            "ru": "Коралловый город глубоко под водой.",
+            "uk": "Коралове місто глибоко під водою.",
+            "vi": "Thành phố san hô sâu dưới đáy biển."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera",
+      "motion_llm": "bubbles rising slowly, fish swimming in background, static camera",
+      "wd14_tags": {
+        "coral": 0.972,
+        "fish": 0.963,
+        "no humans": 0.931,
+        "scenery": 0.922,
+        "underwater": 0.903,
+        "tropical fish": 0.725,
+        "ocean": 0.542,
+        "water": 0.469,
+        "bubble": 0.43,
+        "light rays": 0.37,
+        "rock": 0.369,
+        "outdoors": 0.368
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_underwater_city",
+      "characters": [
+        {
+          "id": "queen"
+        },
+        {
+          "id": "beda"
+        }
+      ],
+      "visual_tags": [
+        "swimming",
+        "holding shield",
+        "worried",
+        "pointing",
+        "glowing shield"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Béďo! Na pláži vylézá z vody posádka ducha kapitána Bezkosta!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Béďo! An der Strandpromenade steigt die Besatzung des Geisterkapitäns Bezkost aus dem Wasser!",
+            "en": "Beda! The crew of Captain Boneless's ghost ship is crawling out of the water on the beach!",
+            "fr": "Béďo ! L'équipage du fantôme du capitaine Bezkost sort de l'eau sur la plage !",
+            "it": "Béďo! Sulla spiaggia emerge l'equipaggio del fantasma del capitano Bezkost!",
+            "ja": "ベーダ！ 浜辺で、船長ベコストの幽霊の乗組員が水から上がってきたわ！",
+            "ko": "베다야! 해변에서 무골 선장의 유령 선원들이 물 위로 올라와!",
+            "pl": "Béďo! Na plaży wyłania się z wody załoga ducha kapitana Bezkost!",
+            "pt-BR": "Béďo! Na praia, a tripulação do fantasma do capitão Bezkost está saindo da água!",
+            "ru": "Бедя! На пляже из воды вылезает команда призрака капитана Бескостого!",
+            "uk": "Бедю! На пляжі з води вилізає екіпаж привида капітана Безкістки!",
+            "vi": "Béďa! Trên bãi biển, thủy thủ đoàn của thuyền trưởng Không Xương đang trồi lên từ nước!"
+          }
+        },
+        {
+          "speaker_id": "beda",
+          "text": "Tak jim ho pomůžeme najít. Ale nejdřív si promluvím s kapitánem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann helfen wir ihm, ihn zu finden. Aber zuerst rede ich mit dem Kapitän.",
+            "en": "Then let's help them find it. But first, I'll talk to the captain.",
+            "fr": "Aide-les à le retrouver. Mais d'abord, je vais parler au capitaine.",
+            "it": "Allora lo aiuteremo a trovarlo. Ma prima parlo col capitano.",
+            "ja": "じゃあ、見つけてあげよう。でも、まずは船長と話してくるね。",
+            "ko": "찾아주자. 하지만 먼저 선장과 이야기해야 해.",
+            "pl": "Pomóżmy mu go znaleźć. Ale najpierw porozmawiam z kapitanem.",
+            "pt-BR": "Vamos ajudá-los a encontrá-lo. Mas primeiro vou falar com o capitão.",
+            "ru": "Поможем их найти. Но сначала поговорю с капитаном.",
+            "uk": "Допоможемо їм його знайти. Але спершу поговорю з капітаном.",
+            "vi": "Vậy ta sẽ giúp họ tìm. Nhưng trước hết, ta sẽ nói chuyện với thuyền trưởng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach_night",
+      "characters": [
+        {
+          "id": "captain"
+        },
+        {
+          "id": "beda"
+        }
+      ],
+      "visual_tags": [
+        "ghost standing",
+        "transparent",
+        "triangular hat",
+        "humanoid standing",
+        "moonlight",
+        "ocean waves"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "Kdo se opováží stát mezi mnou a pokladem?",
+          "kind": "shout",
+          "i18n": {
+            "de": "Wer wagt es, sich zwischen mich und den Schatz zu stellen?",
+            "en": "Who dares stand between me and my treasure?",
+            "fr": "Qui ose se placer entre moi et mon trésor ?",
+            "it": "Chi osa mettersi tra me e il tesoro?",
+            "ja": "俺と宝の間に入る者など、誰だ！",
+            "ko": "누가 감히 내 앞을 막고 보물 앞에 서느냐?",
+            "pl": "Kto śmie stanąć między mną a skarbem?",
+            "pt-BR": "Quem se atreve a ficar entre mim e o tesouro?",
+            "ru": "Кто смеет встать между мной и сокровищем?",
+            "uk": "Хто наважується стати між мною та скарбом?",
+            "vi": "Ai dám đứng giữa ta và kho báu?"
+          }
+        },
+        {
+          "speaker_id": "beda",
+          "text": "Já. Béďa Plž. Strážce pláže. A mám otázku, ne meč: jaký poklad, kapitáne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich. Béďa Schnecke. Strandwächter. Und ich habe eine Frage, kein Schwert: Welchen Schatz, Kapitän?",
+            "en": "Me. Beda Snail. Beach Guard. And I have a question, not a sword: what treasure, Captain?",
+            "fr": "Moi. Béďa l'Escargot. Gardien de la plage. Et j'ai une question, pas une épée : quel trésor, capitaine ?",
+            "it": "Io. Béďa Plž. Guardiano della spiaggia. E ho una domanda, non una spada: che tesoro, capitano?",
+            "ja": "俺だ。ベーダ・ザ・スラグ。浜の番人。そして、剣ではなく質問があるんだ。どんな宝さ、船長？",
+            "ko": "나야. 베다 달팽이. 해변의 수호자. 칼이 아니라 질문이 있어. 어떤 보물이지, 선장님?",
+            "pl": "Ja. Béďa Ślimak. Strażnik plaży. I mam pytanie, nie miecz: jaki skarb, kapitanie?",
+            "pt-BR": "Eu. Béďa Plž. Guardião da praia. E tenho uma pergunta, não uma espada: que tesouro, capitão?",
+            "ru": "Я. Бедя Улитка. Хранитель пляжа. И вопрос у меня, а не меч: какое сокровище, капитан?",
+            "uk": "Я. Бедя Гвинтик. Вартовий пляжі. І в мене запитання, а не меч: який скарб, капітане?",
+            "vi": "Ta đây. Béďa Plž. Người bảo vệ bãi biển. Và ta có một câu hỏi, không phải kiếm: kho báu gì vậy, thưa thuyền trưởng?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_beach_night",
+      "characters": [
+        {
+          "id": "captain"
+        }
+      ],
+      "visual_tags": [
+        "ghost looking sad",
+        "glowing eyes",
+        "transparent",
+        "holding hat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "Nešlo o zlato. Šlo o jednu věc, kterou jsem nechal jít ke dnu. Dopis od mé dcery.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ging nicht um Gold. Es ging um etwas, das ich den Grund des Meeres überlassen hatte. Einen Brief meiner Tochter.",
+            "en": "It wasn't gold. It was something I let sink. A letter from my daughter.",
+            "fr": "Ce n'était pas de l'or. C'était un objet que j'ai laissé couler. Une lettre de ma fille.",
+            "it": "Non era oro. Era una cosa che ho lasciato andare in fondo. Una lettera di mia figlia.",
+            "ja": "金貨のことじゃない。俺が海に沈めた、ある一つの物だ。娘からの手紙さ。",
+            "ko": "금화가 아니었어. 내가 바다 속으로 가라앉힌 한 가지 물건이었지. 내 딸의 편지였어.",
+            "pl": "Nie chodziło o złoto. Chodziło o jedną rzecz, którą puściłem na dno. List od mojej córki.",
+            "pt-BR": "Não era ouro. Era uma coisa que deixei afundar. Uma carta da minha filha.",
+            "ru": "Дело не в золоте. Это одно письмо, которое я уронил на дно. Письмо от дочери.",
+            "uk": "Йшлося не про золото. Йшлося про одну річ, яку я відпустив на дно. Лист від моєї доньки.",
+            "vi": "Không phải vàng. Là một thứ duy nhất ta đã để chìm xuống đáy. Bức thư của con gái ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shipwreck",
+      "characters": [
+        {
+          "id": "beda"
+        },
+        {
+          "id": "captain"
+        }
+      ],
+      "visual_tags": [
+        "diving",
+        "holding chest",
+        "wooden chest",
+        "open chest",
+        "paper",
+        "glowing light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "Tady je. Ale já už nemám komu psát.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hier ist er. Aber ich habe niemanden mehr, dem ich schreiben kann.",
+            "en": "Here it is. But I have no one left to write to.",
+            "fr": "Le voici. Mais je n'ai plus personne à qui écrire.",
+            "it": "Ecco qui. Ma non ho più nessuno a cui scrivere.",
+            "ja": "ここにある。でも、もう俺宛てに書く相手はいない。",
+            "ko": "여기 있군. 하지만 이제 쓸 사람이 없네.",
+            "pl": "Oto on. Ale już nie mam do kogo pisać.",
+            "pt-BR": "Aqui está. Mas já não tenho ninguém para quem escrever.",
+            "ru": "Вот оно. Но мне больше некому писать.",
+            "uk": "Ось він. Але мені вже нікому писати.",
+            "vi": "Nó đây. Nhưng ta không còn ai để viết cho nữa."
+          }
+        },
+        {
+          "speaker_id": "beda",
+          "text": "Tvoje vnučka žije na pobřeží. Já jí ten dopis odnesu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Deine Enkelin lebt an der Küste. Ich bringe ihr den Brief.",
+            "en": "Your granddaughter lives on the coast. I'll deliver this letter for you.",
+            "fr": "Ta petite-fille vit sur la côte. Je lui porterai cette lettre.",
+            "it": "Tua nipote vive sulla costa. Le porterò io questa lettera.",
+            "ja": "お孫さんは海岸に住んでるね。この手紙、届けてあげるよ。",
+            "ko": "할머니는 해안가에 살아. 내가 이 편지를 전해줄게.",
+            "pl": "Twoja wnuczka mieszka na wybrzeżu. Dostarczę jej ten list.",
+            "pt-BR": "Sua neta vive na costa. Eu levo essa carta para ela.",
+            "ru": "Твоя внучка живет на побережье. Я отнесу ей это письмо.",
+            "uk": "Твоя онука живе на узбережжі. Я віднесу їй цей лист.",
+            "vi": "Cháu gái ông sống trên bờ biển. Ta sẽ mang bức thư này đến cho bà ấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_shipwreck",
+      "characters": [
+        {
+          "id": "captain"
+        }
+      ],
+      "visual_tags": [
+        "ghost writing",
+        "holding pen",
+        "paper",
+        "sad expression",
+        "glowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "Milá Aničko. Odpovídám ti o sto let později. Miloval jsem tě celý život.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Liebe Anička. Ich antworte dir hundert Jahre später. Ich habe dich mein ganzes Leben geliebt.",
+            "en": "Dear Anicka. I'm answering you a hundred years late. I loved you all my life.",
+            "fr": "Chère Anička. Je te réponds avec un siècle de retard. Je t'ai aimée toute ma vie.",
+            "it": "Cara Anička. Ti rispondo con un secolo di ritardo. Ti ho amata per tutta la vita.",
+            "ja": "愛するアニャへ。百年遅れて返事する。俺は生涯、お前を愛していた。",
+            "ko": "사랑하는 아니체야. 백 년이 지난 지금 답장을 보네. 나는 평생 너를 사랑했노라.",
+            "pl": "Droga Aniu. Odpowiadam ci ze stuletnim opóźnieniem. Kochałem cię przez całe życie.",
+            "pt-BR": "Querida Anička. Respondo cem anos depois. Amei-te a vida toda.",
+            "ru": "Дорогая Аничка. Отвечаю тебе через сто лет. Я любил тебя всю жизнь.",
+            "uk": "Мила Анічко. Відповідаю тобі через сто років. Я кохав тебе все життя.",
+            "vi": "Anička thân yêu. Ta trả lời con sau một thế kỷ. Ta đã yêu con suốt cả đời."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_house_morning",
+      "characters": [
+        {
+          "id": "anicka"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "holding letter",
+        "reading",
+        "crying",
+        "tears",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anicka",
+          "text": "Můj dědeček. Sto let. A teď mi odpověděl.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mein Großvater. Hundert Jahre. Und jetzt antwortet er mir.",
+            "en": "My grandfather. A hundred years. And now he's answered me.",
+            "fr": "Mon grand-père. Cent ans. Et il me répond enfin.",
+            "it": "Mio nonno. Cent'anni. E ora mi ha risposto.",
+            "ja": "私の祖父。百年の時を経て… そして、返事が届いたの。",
+            "ko": "내 할아버지. 백 년이 지났는데, 이제야 답장을 받았어.",
+            "pl": "Mój dziadek. Sto lat. A teraz mi odpowiedział.",
+            "pt-BR": "Meu avô. Cem anos. E agora me respondeu.",
+            "ru": "Мой дедушка. Сто лет. И теперь он ответил.",
+            "uk": "Мій дідусь. Сто років. І тепер він відповів мені.",
+            "vi": "Ông nội của tôi. Một thế kỷ. Và giờ ông ấy đã trả lời tôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_beach_night",
+      "characters": [
+        {
+          "id": "captain"
+        }
+      ],
+      "visual_tags": [
+        "ghost fading",
+        "ocean waves",
+        "smile",
+        "triangular hat",
+        "sunrise",
+        "transparent"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the ghost slowly fades into the waves, stars twinkling, water rippling, static camera",
+      "motion_llm": "the ghost slowly fades into the waves, sunrise light changing, static camera",
+      "wd14_tags": {
+        "moon": 0.945,
+        "ocean": 0.908,
+        "sky": 0.897,
+        "night": 0.87,
+        "solo": 0.857,
+        "star (sky)": 0.84,
+        "hat": 0.737,
+        "outdoors": 0.703,
+        "beach": 0.691,
+        "night sky": 0.681,
+        "full moon": 0.674,
+        "water": 0.651
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_beach_night",
+      "characters": [
+        {
+          "id": "beda"
+        }
+      ],
+      "visual_tags": [
+        "standing on beach",
+        "looking at sea",
+        "holding shield",
+        "smile",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "beda",
+          "text": "Sbohem, kapitáne. Každý dopis, co najdu u moře, doručím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Auf Wiedersehen, Kapitän. Jeden Brief, den ich am Meer finde, bringe ich zu.",
+            "en": "Farewell, Captain. I deliver every letter I find by the sea.",
+            "fr": "Adieu, capitaine. Chaque lettre que je trouve sur la plage, je la livre.",
+            "it": "Addio, capitano. Ogni lettera che trovo in mare la consegnerò.",
+            "ja": "さようなら、船長。海辺で見つけた手紙は、必ず届ける。",
+            "ko": "안녕, 선장님. 바닷가에서 찾은 편지는 모두 전달할게.",
+            "pl": "Na razie, kapitanie. Każdy list, który znajdę nad morzem, dostarczę.",
+            "pt-BR": "Adeus, capitão. Entrego toda carta que encontro no mar.",
+            "ru": "Прощай, капитан. Каждое письмо, что найду у моря, доставлю.",
+            "uk": "Прощай, капітане. Кожен лист, який я знайду біля моря, я доставлю.",
+            "vi": "Tạm biệt, thuyền trưởng. Mọi bức thư ta tìm thấy ở biển, ta đều sẽ giao đến nơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

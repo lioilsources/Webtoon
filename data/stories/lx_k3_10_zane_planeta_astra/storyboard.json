@@ -1,0 +1,312 @@
+{
+  "title": "Zane a planeta Astra",
+  "title_i18n": {
+    "de": "Zane und der Planet Astra",
+    "en": "Zane and Planet Astra",
+    "fr": "Zane et la planète Astra",
+    "it": "Zane e il pianeta Astra",
+    "ja": "ゼインと惑星アストラ",
+    "ko": "제인과 아스트라 행성",
+    "pl": "Zane i planeta Astra",
+    "pt-BR": "Zane e o planeta Astra",
+    "ru": "Зейн и планета Астра",
+    "uk": "Зейн і планета Астра",
+    "vi": "Zane và hành tinh Astra"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_astra",
+      "characters": [],
+      "visual_tags": [
+        "alien landscape",
+        "purple sky",
+        "stars",
+        "floating rocks",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Planeta Astra, temná noc.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Planet Astra, dunkle Nacht.",
+            "en": "Planet Astra, dark night.",
+            "fr": "Planète Astra, nuit sombre.",
+            "it": "Pianeta Astra, notte fonda.",
+            "ja": "惑星アストラ、暗黒の夜。",
+            "ko": "아스트라 행성, 어두운 밤.",
+            "pl": "Planeta Astra, ciemna noc.",
+            "pt-BR": "Planeta Astra, noite escura.",
+            "ru": "Планета Астра. Тёмная ночь.",
+            "uk": "Планета Астра, темна ніч.",
+            "vi": "Hành tinh Astra, đêm đen tối."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, water rippling, clouds drifting slowly, static camera",
+      "motion_llm": "stars drifting slowly, nebula clouds shifting, static camera",
+      "wd14_tags": {
+        "scenery": 0.982,
+        "sky": 0.93,
+        "no humans": 0.917,
+        "star (sky)": 0.836,
+        "outdoors": 0.826,
+        "cloud": 0.769,
+        "starry sky": 0.624,
+        "horizon": 0.532,
+        "water": 0.522,
+        "purple sky": 0.47,
+        "landscape": 0.368,
+        "purple theme": 0.366
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "zane"
+        },
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking up",
+        "pointing",
+        "determined",
+        "dragon sitting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zane",
+          "text": "Sparku, démon chce pohltit hvězdy!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Spark, ein Dämon will die Sterne verschlingen!",
+            "en": "Spark, the demon wants to devour the stars!",
+            "fr": "Sparku, un démon veut avaler les étoiles !",
+            "it": "Sparku, il demone vuole ingoiare le stelle!",
+            "ja": "スパーク、悪魔が星を飲み込むぞ！",
+            "ko": "스파크, 악마가 별을 삼키려 해!",
+            "pl": "Sparku, demon chce pochłonąć gwiazdy!",
+            "pt-BR": "Sparku, o demônio quer devorar as estrelas!",
+            "ru": "Спарки, демон хочет поглотить звёзды!",
+            "uk": "Спарку, демон хоче поглинути зірки!",
+            "vi": "Sparku, con quỷ muốn nuốt chửng các vì sao!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "breathing fire",
+        "small flame",
+        "open mouth",
+        "ready",
+        "glowing eyes"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FWOOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "demon"
+        },
+        {
+          "id": "zane"
+        }
+      ],
+      "visual_tags": [
+        "demon attacking",
+        "flying",
+        "fire wings",
+        "zane blocking",
+        "holding shield",
+        "energy blast",
+        "impact"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "zane"
+        }
+      ],
+      "visual_tags": [
+        "punching",
+        "glowing fists",
+        "energy wave",
+        "shouting",
+        "open mouth",
+        "dynamic pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zane",
+          "text": "Energetická vlna!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Energiewelle!",
+            "en": "Energy wave!",
+            "fr": "Onde d'énergie !",
+            "it": "Onda energetica!",
+            "ja": "エネルギー波！",
+            "ko": "에너지 파동!",
+            "pl": "Fala energetyczna!",
+            "pt-BR": "Onda de energia!",
+            "ru": "Энергетическая волна!",
+            "uk": "Енергетична хвиля!",
+            "vi": "Sóng năng lượng!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ZAP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "demon recoiling",
+        "shield glowing",
+        "dust cloud",
+        "stumbling",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_blackhole",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "running away",
+        "black hole",
+        "swirling vortex",
+        "fleeing",
+        "dark background"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "WHOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "black hole vortex rotating slowly, stars twinkling, soft glow pulsing, static camera",
+      "motion_llm": "black hole vortex rotating slowly, static camera",
+      "wd14_tags": {
+        "horns": 0.866,
+        "wings": 0.846,
+        "star (sky)": 0.81,
+        "no humans": 0.782,
+        "sky": 0.762,
+        "tail": 0.686,
+        "space": 0.673,
+        "planet": 0.67,
+        "glowing": 0.591,
+        "starry sky": 0.505,
+        "solo": 0.476,
+        "yellow eyes": 0.466
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_astra",
+      "characters": [
+        {
+          "id": "zane"
+        },
+        {
+          "id": "spark"
+        }
+      ],
+      "visual_tags": [
+        "looking at black hole",
+        "worried",
+        "hands on hips",
+        "dragon looking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zane",
+          "text": "Hvězdy jsou v bezpečí… ale on se vrátí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Sterne sind sicher … aber er wird zurückkommen.",
+            "en": "The stars are safe... but he'll be back.",
+            "fr": "Les étoiles sont en sécurité… mais il reviendra.",
+            "it": "Le stelle sono al sicuro… ma lui tornerà.",
+            "ja": "星は安全だ……だが、彼は戻ってくる。",
+            "ko": "별들은 안전해… 하지만 그는 돌아올 거야.",
+            "pl": "Gwiazdy są bezpieczne… ale on wróci.",
+            "pt-BR": "As estrelas estão seguras... mas ele vai voltar.",
+            "ru": "Звёзды в безопасности… но он вернётся.",
+            "uk": "Зірки в безпеці… але він повернеться.",
+            "vi": "Các vì sao đã an toàn… nhưng nó sẽ quay lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

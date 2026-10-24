@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_07_kai_ohnivy_drak",
+  "title": "Kai a ohnivý drak z planety Vulkan",
+  "synopsis": "Kai se musí postavit démonickému drakovi na lávové planetě a prokázat svou sílu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Kai dokázal ovládnout svou sílu a drak byl poražen."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_crater",
+      "l_lava"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 9 with messy red hair and an ahoge",
+      "base": "male child, red hair, messy hair, ahoge, red eyes, fair skin",
+      "outfits": {
+        "default": "black martial arts gi, red sash, red wristbands, black boots"
+      },
+      "photo": "a determined Czech boy aged 9 with messy red hair and an ahoge",
+      "tag_prompt": "male child, red hair, messy hair, ahoge, red eyes, fair skin, black martial arts gi, red sash, red wristbands, black boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dragon",
+      "name": "Démonický drak",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large demonic dragon with purple scales and glowing yellow eyes",
+      "base": "dragon, large, purple skin, horns, sharp teeth, glowing yellow eyes",
+      "outfits": {
+        "default": "dark purple flames, shadow aura"
+      },
+      "photo": "a large demonic dragon with purple scales and glowing yellow eyes",
+      "tag_prompt": "dragon, large, purple skin, horns, sharp teeth, glowing yellow eyes, dark purple flames, shadow aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_crater",
+      "name": "Soptící kráter",
+      "description": "Soptící kráter",
+      "tag_prompt": "outdoors, volcano crater, lava river, red sky, floating rocks, smoke, fire, night",
+      "mood": ""
+    },
+    {
+      "id": "l_lava",
+      "name": "Lávová planeta",
+      "description": "Lávová planeta",
+      "tag_prompt": "outdoors, alien planet, lava fields, red atmosphere, floating debris, dramatic lighting",
+      "mood": ""
+    }
+  ]
+}

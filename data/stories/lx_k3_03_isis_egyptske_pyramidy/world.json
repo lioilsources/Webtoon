@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_03_isis_egyptske_pyramidy",
+  "title": "Isis a probuzený faraon",
+  "synopsis": "Isis a její sokolička Horus chrání pyramidu před magickým faraonem.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: faraon se rozpadne a pyramida je v klidu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pyramid",
+      "l_pyramid_battle"
+    ]
+  },
+  "characters": [
+    {
+      "id": "isis",
+      "name": "Isis",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 11 with long black hair and golden armor",
+      "base": "female child, black hair, long hair, brown eyes, fair skin",
+      "outfits": {
+        "default": "gold armor, golden helmet, cape, holding sword"
+      },
+      "photo": "a brave Czech girl aged 11 with long black hair and golden armor",
+      "tag_prompt": "female child, black hair, long hair, brown eyes, fair skin, gold armor, golden helmet, cape, holding sword",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pharaoh",
+      "name": "Probuzený Faraon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall mummy wrapped in bandages with glowing eyes and a golden staff",
+      "base": "mummy, bandages, tall, glowing eyes",
+      "outfits": {
+        "default": "golden staff, ancient egyptian jewelry"
+      },
+      "photo": "a tall mummy wrapped in bandages with glowing eyes and a golden staff",
+      "tag_prompt": "mummy, bandages, tall, glowing eyes, golden staff, ancient egyptian jewelry",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "horus",
+      "name": "Horus",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a majestic falcon with golden collar and sharp eyes",
+      "base": "falcon, bird, wings, sharp beak",
+      "outfits": {
+        "default": "golden collar"
+      },
+      "photo": "a majestic falcon with golden collar and sharp eyes",
+      "tag_prompt": "falcon, bird, wings, sharp beak, golden collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pyramid",
+      "name": "Pyramida",
+      "description": "Pyramida",
+      "tag_prompt": "indoors, pyramid interior, stone walls, hieroglyphs, sand floor, torch light, ancient",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid_battle",
+      "name": "Sál v pyramidě",
+      "description": "Sál v pyramidě",
+      "tag_prompt": "indoors, pyramid hall, stone pillars, sand, magical glow, dramatic lighting",
+      "mood": ""
+    }
+  ]
+}

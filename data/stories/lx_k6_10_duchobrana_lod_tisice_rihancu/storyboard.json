@@ -1,0 +1,431 @@
+{
+  "title": "Kubík a loď tisíce řihanců",
+  "title_i18n": {
+    "de": "Kubík und das Schiff der tausend Furzwinde",
+    "en": "Kubik and the Ship of a Thousand Farts",
+    "fr": "Kubík et le navire des mille rots",
+    "it": "Kubík e la nave delle mille ruzzate",
+    "ja": "クビークと千回のゲップ船",
+    "ko": "쿠빅과 천 번의 트림을 하는 배",
+    "pl": "Kubík i statek tysiąca burknięć",
+    "pt-BR": "Kubík e o Navio dos Mil Arrotos",
+    "ru": "Кубик и корабль тысячи икот",
+    "uk": "Кубік і корабель тисячі буркотунів",
+    "vi": "Kubík và con tàu nghìn tiếng ợ"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_ship",
+      "characters": [],
+      "visual_tags": [
+        "sunken ship",
+        "wooden planks",
+        "cobwebs",
+        "moonlight",
+        "dust",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Potopená loď v hlubinách Baltu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein gesunkenes Schiff in den Tiefen der Ostsee.",
+            "en": "A sunken ship in the depths of the Baltic.",
+            "fr": "Un navire coulé dans les profondeurs de la Baltique.",
+            "it": "Una nave affondata nelle profondità del Baltico.",
+            "ja": "バルト海の深みに沈んだ船。",
+            "ko": "발트해 심연에 가라앉은 배.",
+            "pl": "Zatopiony statek na dnie Bałtyku.",
+            "pt-BR": "Um navio afundado nas profundezas do Báltico.",
+            "ru": "Затонувший корабль в глубинах Балтики.",
+            "uk": "Потонувший корабель у глибинах Балтики.",
+            "vi": "Con tàu đắm dưới đáy biển Baltic."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "dust motes floating in moonlight, water dripping slowly, static camera",
+      "wd14_tags": {
+        "blue theme": 0.987,
+        "no humans": 0.958,
+        "scenery": 0.782,
+        "monochrome": 0.746,
+        "wooden floor": 0.675,
+        "indoors": 0.626
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ship",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "vacuum"
+        }
+      ],
+      "visual_tags": [
+        "pushing vacuum",
+        "determined",
+        "holding pizza box",
+        "entering",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kubik",
+          "text": "Duchobranná služba! Objednávka: jedno strašení, jedno smíření, extra sýr!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Geisterabwehr-Dienst! Bestellung: Ein Spuk, eine Versöhnung, extra Käse!",
+            "en": "Ghost Defense Service! Order: one scare, one reconciliation, extra cheese!",
+            "fr": "Service fantomatique ! Commande : une effraction, une réconciliation, extra-fromage !",
+            "it": "Servizio spettrale! Ordine: uno spavento, una riconciliazione, formaggio extra!",
+            "ja": "幽霊対策サービス！注文：幽霊体験一つ、和解一つ、チーズ追加！",
+            "ko": "유령 퇴치 서비스! 주문: 귀신 한 마리, 화해 한 번, 치즈 추가!",
+            "pl": "Służba straszenia! Zamówienie: jedno straszenie, jedno pojednanie, extra ser!",
+            "pt-BR": "Serviço de Assombração! Pedido: um susto, uma reconciliação, queijo extra!",
+            "ru": "Служба защиты от призраков! Заказ: одно пугание, одно примирение, сыр extra!",
+            "uk": "Служба боротьби зі страхами! Замовлення: одне лякання, одне примирення, додатковий сир!",
+            "vi": "Dịch vụ trừ tà! Đơn hàng: một lần dọa, một lần hòa giải, thêm phô mai!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ship",
+      "characters": [
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "ghost floating",
+        "angry",
+        "shouting",
+        "breaking through wall",
+        "cracks",
+        "glowing blue"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hnivous",
+          "text": "Odsaď! Anebo… boj? Výzva! Kdo vyleká koho!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Abhauen! Oder... Kampf? Herausforderung! Wer erschreckt wen!",
+            "en": "Back off! Or... fight? Challenge! Who scares whom!",
+            "fr": "Recule ! Ou alors… combat ? Défi ! Qui effraiera qui !",
+            "it": "Indietro! O... battaglia? Sfida! Chi spaventa chi!",
+            "ja": "離れろ！それとも…戦う？決闘だ！どちらが先に驚くか！",
+            "ko": "물러서! 안 그럼… 싸움? 결투! 누가 더 무서워할지!",
+            "pl": "Odsadź się! A może... walka? Wyzwanie! Kto kogo przestraszy!",
+            "pt-BR": "Tira o pé! Ou... briga? Desafio! Quem assusta quem!",
+            "ru": "Отвали! Или… драка? Вызов! Кто кого напугает!",
+            "uk": "Відступай! Або... бій? Виклик! Хто кого лякає!",
+            "vi": "Cút ra! Hay là… chiến? Thử thách! Ai dọa ai!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "CRASH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "kubik"
+        }
+      ],
+      "visual_tags": [
+        "looking around",
+        "surprised",
+        "mouth open",
+        "corridor turning into mouth",
+        "teeth walls",
+        "tongue floor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kubik",
+          "text": "Zubní pastu máš? …Nemáš! Já vítězím!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hast du Zahnpasta? ...Nein! Ich gewinne!",
+            "en": "Got toothpaste? ...Nope! I win!",
+            "fr": "Tu as du dentifrice ? …Non ! Je gagne !",
+            "it": "Hai il dentifricio? ...Non ce l'hai! Ho vinto io!",
+            "ja": "歯磨き粉持ってるか？…持ってねえな！俺の勝ちだ！",
+            "ko": "치약 있니? …없지! 내가 이겼어!",
+            "pl": "Masz pastę do zębów? ...Nie masz! Wygrywam!",
+            "pt-BR": "Tem pasta de dente? …Não tem! Eu ganhei!",
+            "ru": "Зубная паста есть? …Нет! Я победил!",
+            "uk": "Паста для зубів є? …Немає! Я перемагаю!",
+            "vi": "Có kem đánh răng không? …Không có! Ta thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "ghost screaming",
+        "wolf howling",
+        "sound waves",
+        "kubik eating chips",
+        "crunching",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kubik",
+          "text": "Svačina. Nejstrašidelnější věc světa – když ji slyšíš a nemůžeš ji mít.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mittagessen. Das Schrecklichste der Welt – wenn man es hört, aber nicht haben kann.",
+            "en": "Snack time. The scariest thing in the world—hearing it but not getting any.",
+            "fr": "Le goûter. La chose la plus terrifiante au monde – quand on l'entend mais qu'on ne peut pas l'avoir.",
+            "it": "Spuntino. La cosa più spaventosa del mondo: quando la senti e non puoi averla.",
+            "ja": "おやつ。世界で一番恐ろしいもの――聞こえても、手に入らないやつ。",
+            "ko": "간식. 세상에서 가장 무서운 것—들으면 갖고 싶지만 못 먹는 거.",
+            "pl": "Przekąska. Najstraszniejsza rzecz na świecie – gdy ją słyszysz, a nie możesz jej zjeść.",
+            "pt-BR": "Lanche. A coisa mais assustadora do mundo – quando você ouve e não pode ter.",
+            "ru": "Перекус. Самое жуткое в мире — когда слышишь, но не можешь получить.",
+            "uk": "Перекус. Найстрашніша річ у світі — коли ти її чуєш, але не можеш з'їсти.",
+            "vi": "Đồ ăn nhẹ. Thứ đáng sợ nhất thế giới – khi nghe thấy mà không thể ăn."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "CRUNCH! CRUN",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "ghost crying",
+        "tears",
+        "sad",
+        "transparent tears",
+        "hands on face"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SNIF",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_corridor",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "offering pizza slice",
+        "smiling",
+        "ghost reaching out",
+        "pizza slice",
+        "kind gesture"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "party balloons",
+        "confetti",
+        "ghost smiling",
+        "boy smiling",
+        "holding pizza",
+        "night sky",
+        "sea"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hnivous",
+          "text": "Já… jsem Kapitán Hněvivous. Ale kamarádi mi říkají… Hněvánek?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich... bin Kapitän Hněvivous. Aber die Freunde nennen mich... Hněvánek?",
+            "en": "I... am Captain Hněvivous. But friends call me... Hněvánek?",
+            "fr": "Je… suis le Capitaine Hněvivous. Mais les potes m'appellent… Hněvánek ?",
+            "it": "Io... sono il Capitano Hněvivous. Ma gli amici mi chiamano... Hněvánek?",
+            "ja": "俺は…キャプテン・フニヴィボウスだ。でも仲間は…フネヴァネクって呼んでる？",
+            "ko": "나… 나는 분노의 선장. 하지만 친구들은… 분노라고 불러?",
+            "pl": "Jestem Kapitan Gniewus. Ale przyjaciele mówią mi... Gniewek?",
+            "pt-BR": "Eu... sou o Capitão Hněvivous. Mas os amigos me chamam... Hněvánek?",
+            "ru": "Я… я Капитан Гневенос. Но друзья зовут… Гневашка?",
+            "uk": "Я… я Капітан Гнівус. Але друзі називають мене… Гніваек?",
+            "vi": "Ta… là Đại úy Hněvivous. Nhưng bạn bè gọi ta… Hněvánek?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "shaking hands",
+        "friendship",
+        "ghost hand",
+        "human hand",
+        "smiling",
+        "balloons"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kubik",
+          "text": "Vítám tě, Hněvánku. Pravidla: strašíme jen ty, kdo nám nevrátí pozvánku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Willkommen, Hněvánek. Regel: Wir spuken nur denen, die uns nicht einladen.",
+            "en": "Welcome, Hněvánek. Rules: we only scare those who don't return the invitation.",
+            "fr": "Bienvenue, Hněvánek. Règles : on effraie seulement ceux qui ne rendent pas l'invitation.",
+            "it": "Benvenuto, Hněvánek. Regole: spaventiamo solo chi non ci ricambia l'invito.",
+            "ja": "よう、フネヴァネク。ルールはこうだ。招待状を返さない奴だけ、怖がらせる。",
+            "ko": "환영해, 분노야. 규칙: 초대장 안 돌려준 놈만 무서워하게 해.",
+            "pl": "Witaj, Gniewku. Zasady: straszmy tylko tych, którzy nie odpiszą zaproszeniem.",
+            "pt-BR": "Seja bem-vindo, Hněvánek. Regras: só assustamos quem não devolve o convite.",
+            "ru": "Добро пожаловать, Гневашка. Правила: пугаем только тех, кто не вернул приглашение.",
+            "uk": "Ласкаво просимо, Гніваеку. Правила: лякаємо лише тих, хто не повернув запрошення.",
+            "vi": "Chào mừng, Hněvánek. Quy tắc: chỉ dọa những ai không mời lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "kubik"
+        },
+        {
+          "id": "hnivous"
+        }
+      ],
+      "visual_tags": [
+        "ship rising",
+        "water splashing",
+        "moonlight",
+        "flag waving",
+        "pizza oven",
+        "happy",
+        "celebration"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kubik",
+          "text": "Všichni jsou zváni!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alle sind eingeladen!",
+            "en": "Everyone is invited!",
+            "fr": "Tout le monde est invité !",
+            "it": "Tutti sono invitati!",
+            "ja": "全員招待だ！",
+            "ko": "모두 초대받았어!",
+            "pl": "Wszyscy są zaproszeni!",
+            "pt-BR": "Todos estão convidados!",
+            "ru": "Приглашаются все!",
+            "uk": "Запрошую всіх!",
+            "vi": "Mọi người đều được mời!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "WHOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, water rippling, static camera",
+      "motion_llm": "ambient only, characters still, stars twinkling, balloons swaying, water rippling, static camera",
+      "wd14_tags": {
+        "pirate hat": 0.941,
+        "hood": 0.873,
+        "smile": 0.871,
+        "hoodie": 0.866,
+        "orange hoodie": 0.842,
+        "solo": 0.841,
+        "water": 0.828,
+        "pants": 0.827,
+        "hat": 0.78,
+        "shoes": 0.765,
+        "colored skin": 0.709,
+        "1boy": 0.696
+      }
+    }
+  ]
+}

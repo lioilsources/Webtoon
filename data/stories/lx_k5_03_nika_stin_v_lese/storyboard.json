@@ -1,0 +1,380 @@
+{
+  "title": "Nika a stín v lese",
+  "title_i18n": {
+    "de": "Nika und der Schatten im Wald",
+    "en": "Nika and the Shadow in the Forest",
+    "fr": "Nika et l'ombre dans la forêt",
+    "it": "Nika e l'ombra nel bosco",
+    "ja": "ニカと森の影",
+    "ko": "니카와 숲의 그림자",
+    "pl": "Nika i cień w lesie",
+    "pt-BR": "Nika e a sombra na floresta",
+    "ru": "Ника и тень в лесу",
+    "uk": "Ніка і тінь у лісі",
+    "vi": "Nika và bóng ma trong rừng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_academy",
+      "characters": [],
+      "visual_tags": [
+        "rainbow bridge",
+        "floating islands",
+        "bright sun",
+        "magical sparkles",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kouzelná akademie za dne.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Magieakademie bei Tageslicht.",
+            "en": "The Magic Academy by day.",
+            "fr": "L'Académie magique en plein jour.",
+            "it": "Accademia magica di giorno.",
+            "ja": "魔法学院の日常。",
+            "ko": "마법 아카데미의 낮 시간.",
+            "pl": "Akademia magii w dzień.",
+            "pt-BR": "A Academia Mágica, nos dias de hoje.",
+            "ru": "Магическая академия днём.",
+            "uk": "Чарівна академія вдень.",
+            "vi": "Học viện phép thuật vào ban ngày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, clouds drifting slowly, city lights blinking, static camera",
+      "motion_llm": "rainbow light shimmering, clouds drifting slowly, static camera",
+      "wd14_tags": {
+        "scenery": 0.899,
+        "sky": 0.805,
+        "no humans": 0.72,
+        "cloud": 0.695,
+        "outdoors": 0.674,
+        "blue sky": 0.611,
+        "day": 0.543,
+        "building": 0.469,
+        "bridge": 0.368
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_academy",
+      "characters": [
+        {
+          "id": "nika"
+        },
+        {
+          "id": "jiskra"
+        }
+      ],
+      "visual_tags": [
+        "riding unicorn",
+        "flying",
+        "holding wand",
+        "worried",
+        "looking down",
+        "grey clouds"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nika",
+          "text": "Jiskro, les je nějaký šedý.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Funke, der Wald ist irgendwie grau.",
+            "en": "Spark, the forest looks kind of gray.",
+            "fr": "Jiskra, la forêt est toute grise.",
+            "it": "Scintilla, il bosco è un po' grigio.",
+            "ja": "ジシュカ、森が妙に灰色だね。",
+            "ko": "지스카, 숲이 좀 회색빛이야.",
+            "pl": "Iskro, las jest jakoś szary.",
+            "pt-BR": "Jiskra, a floresta está meio acinzentada.",
+            "ru": "Искра, лес какой-то серый.",
+            "uk": "Іскро, ліс якийсь сірий.",
+            "vi": "Jiskra, khu rừng trông xám xịt quá."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_academy",
+      "characters": [
+        {
+          "id": "jiskra"
+        }
+      ],
+      "visual_tags": [
+        "talking",
+        "open mouth",
+        "serious",
+        "glowing horn",
+        "looking at nika"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jiskra",
+          "text": "Morana krade barvy!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Morana stiehlt die Farben!",
+            "en": "Morana is stealing the colors!",
+            "fr": "Morana vole les couleurs !",
+            "it": "Morana ruba i colori!",
+            "ja": "モラナが色を奪ったの！",
+            "ko": "모라나가 색을 훔쳤어!",
+            "pl": "Morana kradnie kolory!",
+            "pt-BR": "A Morana está roubando as cores!",
+            "ru": "Морана крадёт цвета!",
+            "uk": "Морана краде кольори!",
+            "vi": "Morana đang đánh cắp màu sắc!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_moonlit",
+      "characters": [
+        {
+          "id": "morana"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "black cloak",
+        "holding staff",
+        "angry",
+        "glowing purple eyes",
+        "grey flowers",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "morana",
+          "text": "Barvy jsou moje!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Die Farben gehören mir!",
+            "en": "The colors are mine!",
+            "fr": "Les couleurs sont à moi !",
+            "it": "I colori sono miei!",
+            "ja": "色は私のもの！",
+            "ko": "색은 내 거야!",
+            "pl": "Kolory są moje!",
+            "pt-BR": "As cores são minhas!",
+            "ru": "Цвета — мои!",
+            "uk": "Кольори — мої!",
+            "vi": "Màu sắc là của ta!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moonlit",
+      "characters": [
+        {
+          "id": "nika"
+        },
+        {
+          "id": "jiskra"
+        }
+      ],
+      "visual_tags": [
+        "flying in",
+        "holding wand",
+        "determined",
+        "pointing",
+        "rainbow light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nika",
+          "text": "Barvy patří všem!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Farben gehören allen!",
+            "en": "Colors belong to everyone!",
+            "fr": "Les couleurs appartiennent à tous !",
+            "it": "I colori appartengono a tutti!",
+            "ja": "色はみんなのものよ！",
+            "ko": "색은 모두의 것이야!",
+            "pl": "Kolory należą do wszystkich!",
+            "pt-BR": "As cores pertencem a todos!",
+            "ru": "Цвета принадлежат всем!",
+            "uk": "Кольори належать усім!",
+            "vi": "Màu sắc thuộc về tất cả mọi người!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_moonlit",
+      "characters": [
+        {
+          "id": "nika"
+        },
+        {
+          "id": "jiskra"
+        },
+        {
+          "id": "morana"
+        }
+      ],
+      "visual_tags": [
+        "magic blast",
+        "rainbow beam",
+        "shield",
+        "blocking",
+        "surprised",
+        "energy clash",
+        "glowing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠVYK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moonlit",
+      "characters": [
+        {
+          "id": "morana"
+        }
+      ],
+      "visual_tags": [
+        "falling back",
+        "dropping staff",
+        "sad",
+        "crying",
+        "cloak torn",
+        "grey aura fading"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "morana",
+          "text": "Já… jsem jen chtěla být barevná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich ... wollte nur bunt sein.",
+            "en": "I... I just wanted to be colorful.",
+            "fr": "Je... je voulais juste être en couleur.",
+            "it": "Io... volevo solo essere colorata.",
+            "ja": "私……ただ、色っぽくなりたいだけだったの。",
+            "ko": "나… 그냥 색지고 싶었을 뿐인데.",
+            "pl": "Ja... chciałam tylko być kolorowa.",
+            "pt-BR": "Eu... eu só queria ser colorida.",
+            "ru": "Я… просто хотела быть цветной.",
+            "uk": "Я… просто хотіла бути кольоровою.",
+            "vi": "Ta... ta chỉ muốn được sống trong màu sắc thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moonlit",
+      "characters": [
+        {
+          "id": "nika"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "kind smile",
+        "offering hand",
+        "holding rainbow scarf",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nika",
+          "text": "Tak zůstaň. Naučíme tě, jak s barvami pracovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bleib dann. Wir bringen dir bei, mit Farben zu arbeiten.",
+            "en": "Then stay. We'll teach you how to use them.",
+            "fr": "Reste alors. On t'apprendra à les utiliser.",
+            "it": "Allora resta. Ti insegneremo a usarli.",
+            "ja": "なら留まって。色の扱い方、教えるわ。",
+            "ko": "그럼留下来. 색 다루는 법을 가르쳐 줄게.",
+            "pl": "Zostań więc. Nauczymy cię, jak pracować z kolorami.",
+            "pt-BR": "Então fique. Vamos te ensinar a usar as cores.",
+            "ru": "Тогда оставайся. Мы научим тебя работать с цветами.",
+            "uk": "Тоді залишайся. Навчимо тебе працювати з кольорами.",
+            "vi": "Vậy thì ở lại đi. Chúng ta sẽ dạy cách sử dụng màu sắc cho cậu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "morana"
+        },
+        {
+          "id": "nika"
+        },
+        {
+          "id": "jiskra"
+        }
+      ],
+      "visual_tags": [
+        "rainbow scarf",
+        "smiling",
+        "hugging",
+        "colorful forest",
+        "glowing plants",
+        "happy",
+        "moonlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, leaves swaying gently, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, colorful leaves swirling in the air, moonlight shimmering, static camera",
+      "wd14_tags": {
+        "1girl": 0.896,
+        "solo": 0.888,
+        "sky": 0.735,
+        "long hair": 0.723,
+        "scenery": 0.699,
+        "colorful": 0.62,
+        "outdoors": 0.549,
+        "star (sky)": 0.513,
+        "night": 0.498,
+        "glowing": 0.496,
+        "fantasy": 0.441,
+        "dress": 0.427
+      }
+    }
+  ]
+}

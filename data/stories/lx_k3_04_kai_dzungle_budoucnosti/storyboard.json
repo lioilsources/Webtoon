@@ -1,0 +1,420 @@
+{
+  "title": "Kai a mech-gorila",
+  "title_i18n": {
+    "de": "Kai und die Mech-Gorilla",
+    "en": "Kai and the Mech-Gorilla",
+    "fr": "Kai et le gorille-méca",
+    "it": "Kai e il gorilla meccanico",
+    "ja": "カイとメカゴリラ",
+    "ko": "카이와 메카 고릴라",
+    "pl": "Kai i goryla-mech",
+    "pt-BR": "Kai e o gorila-mecânico",
+    "ru": "Кай и мех-горилла",
+    "uk": "Кай та механічний горил",
+    "vi": "Kai và con khỉ cơ giới"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "neon plants",
+        "glowing flowers",
+        "rain",
+        "mist",
+        "dark background",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Neonová džungle v noci.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Neon-Dschungel bei Nacht.",
+            "en": "The neon jungle at night.",
+            "fr": "La jungle néon la nuit.",
+            "it": "La giungla neonata di notte.",
+            "ja": "夜のネオンジャングル。",
+            "ko": "밤의 네온 정글.",
+            "pl": "Neonowa dżungla w nocy.",
+            "pt-BR": "A selva de neon à noite.",
+            "ru": "Неоновые джунгли ночью.",
+            "uk": "Неонова джунглі вночі.",
+            "vi": "Rừng nhiệt đới neon về đêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, rain falling, leaves swaying gently, static camera",
+      "motion_llm": "rain falling, neon plants pulsing gently, static camera",
+      "wd14_tags": {
+        "no humans": 0.959,
+        "flower": 0.953,
+        "nature": 0.884,
+        "scenery": 0.865,
+        "outdoors": 0.735,
+        "rain": 0.721,
+        "plant": 0.697,
+        "tree": 0.632,
+        "green theme": 0.612,
+        "forest": 0.609,
+        "blue flower": 0.554,
+        "grass": 0.529
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        }
+      ],
+      "visual_tags": [
+        "pointing",
+        "worried",
+        "looking up",
+        "monkey on shoulder",
+        "glowing gauntlets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Pixele, ta gorila ničí stromy!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pixel, die Gorilla zerstört die Bäume!",
+            "en": "Pixel, that gorilla's destroying the trees!",
+            "fr": "Pixele, ce gorille détruit les arbres !",
+            "it": "Pixele, quel gorilla distrugge gli alberi!",
+            "ja": "ピクセル、ゴリラが木を壊してる！",
+            "ko": "픽셀, 그 고릴라가 나무를 망가뜨려!",
+            "pl": "Pixele, ta goryla niszczy drzewa!",
+            "pt-BR": "Pixele, esse gorila está destruindo as árvores!",
+            "ru": "Пиксель, эта горилла рубит деревья!",
+            "uk": "Пікселе, та горила руйнує дерева!",
+            "vi": "Pixie, con khỉ đó đang phá cây!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "gorila"
+        },
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "large size",
+        "punching",
+        "energy blast",
+        "jumping",
+        "dynamic pose",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Dvojitý skok!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Doppelsprung!",
+            "en": "Double jump!",
+            "fr": "Double saut !",
+            "it": "Doppio salto!",
+            "ja": "ダブルジャンプ！",
+            "ko": "더블 점프!",
+            "pl": "Podwójny skok!",
+            "pt-BR": "Pulo duplo!",
+            "ru": "Двойной прыжок!",
+            "uk": "Подвійний стрибок!",
+            "vi": "Nhảy đôi!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "robot falling",
+        "kneeling",
+        "sparks",
+        "glowing red eyes dimming",
+        "metallic sound"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "gentle smile",
+        "hand out",
+        "hopeful",
+        "soft lighting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Můžeme být kamarádi?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Können wir Freunde sein?",
+            "en": "Can we be friends?",
+            "fr": "On peut être copains ?",
+            "it": "Possiamo essere amici?",
+            "ja": "友達になれる？",
+            "ko": "친구 될 수 있을까?",
+            "pl": "Możemy być przyjaciółmi?",
+            "pt-BR": "Podemos ser amigos?",
+            "ru": "Мы можем быть друзьями?",
+            "uk": "Ми можемо бути друзями?",
+            "vi": "Chúng ta có thể làm bạn không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "glowing blue eyes",
+        "planting tree",
+        "helping",
+        "happy",
+        "neon lights",
+        "repairing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, rain falling, leaves swaying gently, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, robot eyes glowing blue, leaves swaying gently, static camera",
+      "wd14_tags": {
+        "glowing": 0.908,
+        "orange hoodie": 0.89,
+        "shorts": 0.864,
+        "green eyes": 0.829,
+        "1boy": 0.828,
+        "black hair": 0.812,
+        "robot": 0.81,
+        "hood": 0.806,
+        "male focus": 0.748,
+        "glowing eyes": 0.726,
+        "rain": 0.712,
+        "hoodie": 0.704
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "pixel"
+        },
+        {
+          "id": "gorila"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "hugging robot leg",
+        "happy",
+        "neon jungle",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

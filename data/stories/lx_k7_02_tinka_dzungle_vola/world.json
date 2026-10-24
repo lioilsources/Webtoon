@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k7_02_tinka_dzungle_vola",
+  "title": "Tinka a zlatá řeka",
+  "synopsis": "Tinka a její broučí přítel Barvouně musí zastavit zlatého obra, který mění řeku v kov, a naučit ho, že krása je v přirozenosti.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: zlatý obr Osika se stane strážcem řeky a součástí kmene."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_village",
+      "l_river",
+      "l_fire"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tinka",
+      "name": "Tinka Malá Listka",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 9 with long black hair and a leaf hair clip",
+      "base": "female child, black hair, long hair, brown eyes, tan skin, leaf hair clip",
+      "outfits": {
+        "default": "leaf skirt, vine belt, barefoot, leaf top"
+      },
+      "photo": "a brave Czech girl aged 9 with long black hair and a leaf hair clip",
+      "tag_prompt": "female child, black hair, long hair, brown eyes, tan skin, leaf hair clip, leaf skirt, vine belt, barefoot, leaf top",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "barvoun",
+      "name": "Barvouně",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large magical beetle with a shiny shell that changes color",
+      "base": "beetle, large beetle, shiny shell, antennae",
+      "outfits": {
+        "default": "shifting colors, blue shell, pink shell, rainbow shell"
+      },
+      "photo": "a large magical beetle with a shiny shell that changes color",
+      "tag_prompt": "beetle, large beetle, shiny shell, antennae, shifting colors, blue shell, pink shell, rainbow shell",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kvetinar",
+      "name": "Pan Květinář",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a kind Czech herbalist aged 65 with grey beard and round glasses",
+      "base": "adult, mature male, old man, grey hair, beard, glasses, wrinkles, kind face",
+      "outfits": {
+        "default": "green robe, herbal pouch, pot on head"
+      },
+      "photo": "a kind Czech herbalist aged 65 with grey beard and round glasses",
+      "tag_prompt": "adult, mature male, old man, grey hair, beard, glasses, wrinkles, kind face, green robe, herbal pouch, pot on head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "osika",
+      "name": "Kanec Osika",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a giant humanoid creature made of gold with glowing eyes",
+      "base": "giant, gold skin, muscular, tall, glowing eyes",
+      "outfits": {
+        "default": "gold dust, gold armor fragments"
+      },
+      "photo": "a giant humanoid creature made of gold with glowing eyes",
+      "tag_prompt": "giant, gold skin, muscular, tall, glowing eyes, gold dust, gold armor fragments",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_village",
+      "name": "Kmenová vesnice",
+      "description": "Kmenová vesnice",
+      "tag_prompt": "outdoors, jungle village, huts, trees, morning, sunlight, monkeys",
+      "mood": ""
+    },
+    {
+      "id": "l_river",
+      "name": "Řeka",
+      "description": "Řeka",
+      "tag_prompt": "outdoors, river, jungle, gold water, noon, bright sun, flowers",
+      "mood": ""
+    },
+    {
+      "id": "l_fire",
+      "name": "Ohniště",
+      "description": "Ohniště",
+      "tag_prompt": "outdoors, jungle night, campfire, drums, stars, fireflies, night",
+      "mood": ""
+    }
+  ]
+}

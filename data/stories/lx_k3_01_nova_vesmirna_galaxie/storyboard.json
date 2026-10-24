@@ -1,0 +1,312 @@
+{
+  "title": "Nova a Mechanický Král",
+  "title_i18n": {
+    "de": "Nova und der Mechanische König",
+    "en": "Nova and the Mechanical King",
+    "fr": "Nova et le Roi Mécanique",
+    "it": "Nova e il Re Meccanico",
+    "ja": "ノヴァと機械の王",
+    "ko": "노바와 기계왕",
+    "pl": "Nova i Mechaniczny Król",
+    "pt-BR": "Nova e o Rei Mecânico",
+    "ru": "Нова и Механический Король",
+    "uk": "Нова та Механічний Король",
+    "vi": "Nova và Cơ Giới Hoàng Đế"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_xylar",
+      "characters": [],
+      "visual_tags": [
+        "purple sky",
+        "crystals",
+        "alien landscape",
+        "stars",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Planeta Xylar, fialové nebe.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Planet Xylar, lila Himmel.",
+            "en": "Planet Xylar, under a violet sky.",
+            "fr": "Planète Xylar, ciel violet.",
+            "it": "Pianeta Xylar, cielo viola.",
+            "ja": "惑星ザイル、紫の空。",
+            "ko": "행성 자일라, 보라빛 하늘.",
+            "pl": "Planeta Xylar, fioletowe niebo.",
+            "pt-BR": "Planeta Xylar, céu roxo.",
+            "ru": "Планета Зилар, фиолетовое небо.",
+            "uk": "Планета Зілар, фіолетове небо.",
+            "vi": "Hành tinh Xylar, bầu trời tím thẫm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, water rippling, clouds drifting slowly, static camera",
+      "motion_llm": "stars drifting slowly, crystals glowing faintly, static camera",
+      "wd14_tags": {
+        "scenery": 0.982,
+        "no humans": 0.968,
+        "sky": 0.955,
+        "outdoors": 0.901,
+        "star (sky)": 0.85,
+        "starry sky": 0.71,
+        "cloud": 0.647,
+        "moon": 0.61,
+        "purple sky": 0.559,
+        "rock": 0.544,
+        "mountain": 0.537,
+        "landscape": 0.532
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xylar",
+      "characters": [
+        {
+          "id": "nova"
+        },
+        {
+          "id": "mechanicky_kral"
+        }
+      ],
+      "visual_tags": [
+        "holding shield",
+        "looking up",
+        "robot standing",
+        "large robot",
+        "determined",
+        "purple sky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nova",
+          "text": "Blaze, ten mech ničí hvězdy!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Blaze, der Mech zerstört Sterne!",
+            "en": "Blaze, that mech is destroying the stars!",
+            "fr": "Blaze, ce mécha détruit les étoiles !",
+            "it": "Blaze, quel mech distrugge le stelle!",
+            "ja": "ブレイズ、そのメカが星を破壊してる！",
+            "ko": "블레이즈, 그 메카가 별을 파괴하고 있어!",
+            "pl": "Blaze, ten mech niszczy gwiazdy!",
+            "pt-BR": "Blaze, esse mech está destruindo estrelas!",
+            "ru": "Блейз, этот мех уничтожает звёзды!",
+            "uk": "Блейз, цей мех руйнує зірки!",
+            "vi": "Blaze, cái mech đó đang phá hủy các ngôi sao!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xylar",
+      "characters": [
+        {
+          "id": "blaze"
+        }
+      ],
+      "visual_tags": [
+        "flying",
+        "dog flying",
+        "wings",
+        "happy",
+        "open mouth",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HAF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the dog flaps its ears and flies forward, stars twinkling, static camera",
+      "motion_llm": "the dog flaps its ears and flies forward, static camera",
+      "wd14_tags": {
+        "no humans": 0.953,
+        "pokemon (creature)": 0.887,
+        "sky": 0.865,
+        "flying": 0.847,
+        "star (sky)": 0.833,
+        "open mouth": 0.832,
+        "night": 0.821,
+        "solo": 0.793,
+        "smile": 0.739,
+        "outdoors": 0.695,
+        "purple eyes": 0.572,
+        "night sky": 0.534
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "nova"
+        },
+        {
+          "id": "mechanicky_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot shooting",
+        "laser beams",
+        "red laser",
+        "blocking",
+        "shield glowing",
+        "sparks",
+        "action"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nova",
+          "text": "Teď!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Jetzt!",
+            "en": "Now!",
+            "fr": "Maintenant !",
+            "it": "Adesso!",
+            "ja": "今だ！",
+            "ko": "지금!",
+            "pl": "Teraz!",
+            "pt-BR": "Agora!",
+            "ru": "Теперь!",
+            "uk": "Тепер!",
+            "vi": "Giờ này!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "PIU! PIU!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "nova"
+        }
+      ],
+      "visual_tags": [
+        "shooting",
+        "light beam",
+        "energy blast",
+        "pointing",
+        "determined",
+        "open mouth"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠVVV!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "mechanicky_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot falling",
+        "broken arm",
+        "sparks",
+        "metal debris",
+        "falling",
+        "dramatic"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "nova"
+        },
+        {
+          "id": "mechanicky_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot hanging",
+        "holding robot",
+        "saving",
+        "cliff edge",
+        "abyss",
+        "straining"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nova",
+          "text": "I roboti můžou být lepší.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Auch Roboter können besser sein.",
+            "en": "Even robots can be better.",
+            "fr": "Les robots peuvent aussi être meilleurs.",
+            "it": "Anche i robot possono essere migliori.",
+            "ja": "ロボットだって、もっと良くなれる。",
+            "ko": "로봇도 더 나아질 수 있어.",
+            "pl": "Roboty też mogą być lepsze.",
+            "pt-BR": "Robôs também podem ser melhores.",
+            "ru": "Даже роботы могут быть лучше.",
+            "uk": "Навіть роботам є ким стати.",
+            "vi": "Ngay cả robot cũng có thể trở nên tốt đẹp hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "mechanicky_kral"
+        }
+      ],
+      "visual_tags": [
+        "robot kneeling",
+        "bowing",
+        "metal plating",
+        "red eyes dim",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

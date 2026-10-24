@@ -1,0 +1,297 @@
+{
+  "title": "Rex a vesmírný zombie-král",
+  "title_i18n": {
+    "de": "Rex und der zombiehafte Weltraumkönig",
+    "en": "Rex and the Space Zombie King",
+    "fr": "Rex, le roi zombie de l'espace",
+    "it": "Rex e il re zombie dello spazio",
+    "ja": "レックスと宇宙のゾンビ王",
+    "ko": "렉스, 우주 좀비 왕",
+    "pl": "Rex i kosmiczny król zombie",
+    "pt-BR": "Rex, o Rei Zumbi do Espaço",
+    "ru": "Рекс и космический король-зомби",
+    "uk": "Рекс — космічний король-зомбі",
+    "vi": "Rex, vua zombie vũ trụ"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_moon",
+      "characters": [],
+      "visual_tags": [
+        "moon surface",
+        "craters",
+        "stars",
+        "earth in background",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tichý povrch Měsíce.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die stille Oberfläche des Mondes.",
+            "en": "The quiet surface of the Moon.",
+            "fr": "La surface silencieuse de la Lune.",
+            "it": "La silenziosa superficie della Luna.",
+            "ja": "静寂の月面。",
+            "ko": "고요한 달 표면.",
+            "pl": "Cicha powierzchnia Księżyca.",
+            "pt-BR": "A superfície silenciosa da Lua.",
+            "ru": "Тихая поверхность Луны.",
+            "uk": "Тиха поверхня Місяця.",
+            "vi": "Bề mặt Mặt Trăng yên tĩnh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, water rippling, static camera",
+      "motion_llm": "dust particles floating slowly in low gravity, static camera",
+      "wd14_tags": {
+        "moon": 0.935,
+        "sky": 0.889,
+        "star (sky)": 0.887,
+        "night": 0.861,
+        "scenery": 0.778,
+        "starry sky": 0.772,
+        "night sky": 0.756,
+        "full moon": 0.734,
+        "outdoors": 0.697,
+        "ocean": 0.388,
+        "planet": 0.387,
+        "blue theme": 0.362
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "rex"
+        },
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "flying",
+        "rocket backpack",
+        "pointing",
+        "worried",
+        "looking at station",
+        "metal structure"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rex",
+          "text": "Bolte, ten zombie ničí stanici!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bolte, der Zombie zerstört die Station!",
+            "en": "Bolt, that zombie's destroying the station!",
+            "fr": "Bolte, ce zombie détruit la station !",
+            "it": "Bolte, quello zombie distrugge la stazione!",
+            "ja": "ボルト、そのゾンビがステーションを破壊してる！",
+            "ko": "볼테, 그 좀비가 기지를 파괴하고 있어!",
+            "pl": "Bolte, ten zombie niszczy stację!",
+            "pt-BR": "Bolte, esse zumbi está destruindo a estação!",
+            "ru": "Болт, этот зомби уничтожает станцию!",
+            "uk": "Болте, той зомбі руйнує станцію!",
+            "vi": "Bolte, con zombie đang phá hủy trạm!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "robot dog",
+        "glowing eyes",
+        "laser emitter",
+        "ready",
+        "alert"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BZZZT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "zombie"
+        },
+        {
+          "id": "rex"
+        }
+      ],
+      "visual_tags": [
+        "zombie shooting",
+        "laser beams",
+        "red light",
+        "rex flying",
+        "dodging",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PIIIIIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "rex"
+        }
+      ],
+      "visual_tags": [
+        "punching",
+        "energy fist",
+        "glowing fist",
+        "angry",
+        "shouting",
+        "impact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rex",
+          "text": "Super úder!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Super-Schlag!",
+            "en": "Super Strike!",
+            "fr": "Super coup !",
+            "it": "Colpo super!",
+            "ja": "スーパーアタック！",
+            "ko": "슈퍼 펀치!",
+            "pl": "Super cios!",
+            "pt-BR": "Super golpe!",
+            "ru": "Супер удар!",
+            "uk": "Супер удар!",
+            "vi": "Siêu đòn!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "zombie"
+        }
+      ],
+      "visual_tags": [
+        "armor breaking",
+        "cracks",
+        "sparks",
+        "surprised",
+        "glowing eyes flickering"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "zombie"
+        }
+      ],
+      "visual_tags": [
+        "falling apart",
+        "dissolving",
+        "particles",
+        "defeated",
+        "floating"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "POOF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "rex"
+        },
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "landing",
+        "standing",
+        "thumbs up",
+        "happy",
+        "smile",
+        "dog wagging tail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rex",
+          "text": "Stanice je zachráněná!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Station ist gerettet!",
+            "en": "The station is saved!",
+            "fr": "La station est sauvée !",
+            "it": "La stazione è salva!",
+            "ja": "ステーション、無事だ！",
+            "ko": "기지 구조 완료!",
+            "pl": "Stacja jest uratowana!",
+            "pt-BR": "A estação está salva!",
+            "ru": "Станция спасена!",
+            "uk": "Станцію врятовано!",
+            "vi": "Trạm đã được cứu!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

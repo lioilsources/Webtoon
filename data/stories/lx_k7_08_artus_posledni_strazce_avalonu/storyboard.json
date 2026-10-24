@@ -1,0 +1,402 @@
+{
+  "title": "Artuš a poslední strážce Avalonu",
+  "title_i18n": {
+    "de": "Artus und der letzte Wächter von Avalon",
+    "en": "Arthur and the Last Guardian of Avalon",
+    "fr": "Artus et le dernier gardien d'Avalon",
+    "it": "Artù e l'ultimo guardiano di Avalon",
+    "ja": "アルトゥルとアヴァロンの最後の守護者",
+    "ko": "아르투스와 아발론의 마지막 수호자",
+    "pl": "Artur i ostatni strażnik Avalonu",
+    "pt-BR": "Artur e o Último Guardião de Avalon",
+    "ru": "Артур и последний страж Авалона",
+    "uk": "Артур і останній вартовий Авалону",
+    "vi": "Artuš và người bảo vệ cuối cùng của Avalon"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_avalon",
+      "characters": [],
+      "visual_tags": [
+        "white towers",
+        "silver forest",
+        "lake",
+        "fog",
+        "morning sun",
+        "mystical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ostrov Avalon v mlžném ránu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Insel Avalon im nebligen Morgengrauen.",
+            "en": "Avalon Island, shrouded in mist.",
+            "fr": "L'île d'Avalon, enveloppée de brume.",
+            "it": "L'isola di Avalon nella nebbia del mattino.",
+            "ja": "霧に包まれたアヴァロンの島。",
+            "ko": "안개 낀 아침의 아발론 섬.",
+            "pl": "Wyspa Avalon w mglistym poranku.",
+            "pt-BR": "A Ilha de Avalon envolta em névoa.",
+            "ru": "Остров Авалон в туманном рассвете.",
+            "uk": "Острів Авалон у туманному ранку.",
+            "vi": "Đảo Avalon trong sương mù buổi sáng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, static camera",
+      "motion_llm": "fog drifting slowly over the lake, static camera",
+      "wd14_tags": {
+        "no humans": 0.962,
+        "scenery": 0.927,
+        "outdoors": 0.869,
+        "mountain": 0.849,
+        "water": 0.762,
+        "castle": 0.725,
+        "lake": 0.685,
+        "blue theme": 0.68,
+        "sky": 0.662,
+        "day": 0.569,
+        "blue sky": 0.528
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_avalon",
+      "characters": [
+        {
+          "id": "artus"
+        },
+        {
+          "id": "jezerna"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding sword",
+        "glowing sword",
+        "floating spirit",
+        "talking",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jezerna",
+          "text": "Artuši. Noc neskončí. Někdo přivedl Stínovou Slepici.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Artus. Die Nacht endet nicht. Jemand hat die Schattenhühnerherde gebracht.",
+            "en": "Arthur. The night won't end. Someone brought the Shadow Hen.",
+            "fr": "Artus. La nuit ne finit pas. Quelqu'un a amené la Poule de l'Ombre.",
+            "it": "Artù. La notte non finisce. Qualcuno ha portato la Gallina d'Ombra.",
+            "ja": "アルトゥル。夜は終わらない。影の鶏が連れてこられたわ",
+            "ko": "아르투스. 밤이 끝나지 않아. 누군가 그림자 닭을 데려왔어.",
+            "pl": "Arturze. Noc się nie kończy. Ktoś przyprowadził Ciemną Kurę.",
+            "pt-BR": "Artur. A noite não acaba. Alguém trouxe a Galinha das Sombras.",
+            "ru": "Артур. Ночь не закончится. Кто-то привёл Теневую Куропатку.",
+            "uk": "Артуре. Ніч не закінчується. Хтось привів Тіньову Курку.",
+            "vi": "Artuš. Đêm chưa kết thúc. Ai đó đã dẫn Gà Mù Bóng Tối đến."
+          }
+        },
+        {
+          "speaker_id": "artus",
+          "text": "Tak ji najdu a zastavím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann finde ich sie und halte sie auf.",
+            "en": "Then I'll find her and stop her.",
+            "fr": "Je la trouverai et l'arrêterai.",
+            "it": "Allora la troverò e la fermerò.",
+            "ja": "見つけて止めるさ",
+            "ko": "그럼 찾아서 막을게.",
+            "pl": "To ją znajdę i powstrzymam.",
+            "pt-BR": "Vou encontrá-la e detê-la.",
+            "ru": "Тогда я найду её и остановлю.",
+            "uk": "Тоді я знайду її і зупиню.",
+            "vi": "Vậy ta sẽ tìm và ngăn hắn lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "stina"
+        }
+      ],
+      "visual_tags": [
+        "shadow monster",
+        "large",
+        "black smoke",
+        "many ears",
+        "scary",
+        "emerging from fog"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "stina",
+          "text": "Přicházíš mě porazit? Noc je jediná bezpečná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kommst, um mich zu besiegen? Die Nacht ist der einzige sichere Ort.",
+            "en": "You come to defeat me? The night is the only safe place.",
+            "fr": "Tu viens me vaincre ? La nuit est le seul refuge.",
+            "it": "Vieni a sconfiggermi? La notte è l'unica sicurezza.",
+            "ja": "倒しに来たの？夜こそが唯一の安全よ",
+            "ko": "나를 무찌르러 왔어? 밤만이 유일한 안전지대야.",
+            "pl": "Przychodzisz mnie pokonać? Noc jest jedynym bezpiecznym miejscem.",
+            "pt-BR": "Vens derrotar-me? A noite é o único refúgio.",
+            "ru": "Ты пришёл, чтобы победить меня? Ночь — единственное безопасное место.",
+            "uk": "Ти прийшов, щоб перемогти мене? Ніч — єдине безпечне місце.",
+            "vi": "Ngươi đến để đánh bại ta ư? Đêm là nơi an toàn duy nhất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "artus"
+        }
+      ],
+      "visual_tags": [
+        "lowering sword",
+        "calm face",
+        "looking at monster",
+        "heroic pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "artus",
+          "text": "Ty se bojíš dne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hast du Angst vor dem Tag?",
+            "en": "Are you afraid of the day?",
+            "fr": "Tu as peur du jour ?",
+            "it": "Hai paura del giorno?",
+            "ja": "昼が怖いのかい？",
+            "ko": "너는 낮을 두려워하는 거야?",
+            "pl": "Boisz się dnia?",
+            "pt-BR": "Tens medo do dia?",
+            "ru": "Ты боишься дня?",
+            "uk": "Ти боїшся дня?",
+            "vi": "Ngươi sợ ánh sáng ban ngày sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "stina"
+        },
+        {
+          "id": "mala"
+        }
+      ],
+      "visual_tags": [
+        "monster shrinking",
+        "small girl appearing",
+        "hiding knees",
+        "sad",
+        "fog clearing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mala",
+          "text": "Kdysi jsem byla dítě, které se bálo dne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Einmal war ich ein Kind, das Angst vor dem Tag hatte.",
+            "en": "I used to be a child who feared the day.",
+            "fr": "J'ai été une enfant qui craignait le jour.",
+            "it": "Una volta ero una bambina che temeva il giorno.",
+            "ja": "昔は昼が怖い子供だったわ",
+            "ko": "나도 예전엔 낮이 무서운 아이였어.",
+            "pl": "Kiedyś byłam dzieckiem, które bało się dnia.",
+            "pt-BR": "Já fui uma criança que temia o dia.",
+            "ru": "Когда-то я была ребёнком, который боялся дня.",
+            "uk": "Колись я була дитиною, яка боялася дня.",
+            "vi": "Ngày xưa, ta từng là đứa trẻ sợ ánh sáng ban ngày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "artus"
+        },
+        {
+          "id": "mala"
+        }
+      ],
+      "visual_tags": [
+        "looking at water",
+        "reflection",
+        "holding mirror",
+        "gentle",
+        "hopeful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "artus",
+          "text": "Neukážu ti světlo mečem. Ukážu ti světlo zrcadlem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich zeige dir das Licht nicht mit dem Schwert. Ich zeige es dir mit dem Spiegel.",
+            "en": "I won't show you light with a sword. I'll show you light with a mirror.",
+            "fr": "Je ne te montrerai pas la lumière avec mon épée. Je te la montrerai avec un miroir.",
+            "it": "Non ti mostrerò la luce con la spada. Ti mostrerò la luce con lo specchio.",
+            "ja": "剣で光を見せるんじゃない。鏡で光を見せるよ",
+            "ko": "칼로 빛을 보여주진 않을게. 거울로 빛을 보여주마.",
+            "pl": "Nie pokażę ci światła mieczem. Pokażę ci światło lustrem.",
+            "pt-BR": "Não te mostrarei a luz com a espada. Mostrarei a luz com um espelho.",
+            "ru": "Я не покажу тебе свет мечом. Я покажу его зеркалом.",
+            "uk": "Я не покажу тобі світло мечем. Я покажу тобі світло дзеркалом.",
+            "vi": "Ta không dùng kiếm để chiếu sáng cho ngươi. Ta dùng gương."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "mala"
+        }
+      ],
+      "visual_tags": [
+        "touching water",
+        "surprised",
+        "big ears",
+        "glowing eyes",
+        "reflection visible"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mala",
+          "text": "To jsem já? Já mám oči?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bin ich das? Habe ich Augen?",
+            "en": "Is that me? Do I have eyes?",
+            "fr": "C'est moi ? J'ai des yeux ?",
+            "it": "Sono io? Ho gli occhi?",
+            "ja": "これが私？私に目があるの？",
+            "ko": "이게 나야? 나한테 눈이 있어?",
+            "pl": "To ja? Mam oczy?",
+            "pt-BR": "Sou eu? Eu tenho olhos?",
+            "ru": "Это я? У меня есть глаза?",
+            "uk": "Це я? У мене є очі?",
+            "vi": "Đó là ta sao? Ta có đôi mắt ư?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "artus"
+        },
+        {
+          "id": "mala"
+        }
+      ],
+      "visual_tags": [
+        "sitting on tower",
+        "looking at stars",
+        "sunrise",
+        "smiling",
+        "peaceful",
+        "fireflies"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mala",
+          "text": "Děkuju, Artuši. Chtěla bych zůstat v noci – ale jako světluška.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Danke, Artus. Ich würde gerne in der Nacht bleiben – aber als Glühwürmchen.",
+            "en": "Thank you, Arthur. I'd like to stay in the night—but as a firefly.",
+            "fr": "Merci, Artus. Je voudrais rester dans la nuit... mais comme une luciole.",
+            "it": "Grazie, Artù. Vorrei restare nella notte... ma come lucciola.",
+            "ja": "ありがとう、アルトゥル。夜に留まりたい――でも、蛍として",
+            "ko": "고마워, 아르투스. 밤에 머물고 싶지만… 반딧불이로.",
+            "pl": "Dziękuję, Arturze. Chciałabym zostać w nocy – ale jako świetlika.",
+            "pt-BR": "Obrigada, Artur. Gostaria de ficar na noite... mas como um vagalume.",
+            "ru": "Спасибо, Артур. Я бы хотела остаться в ночи — но как светлячок.",
+            "uk": "Дякую, Артуре. Я б хотіла залишитися в ночі — але як світлячок.",
+            "vi": "Cảm ơn, Artuš. Ta muốn ở lại trong đêm – nhưng với tư cách là một con đom đóm."
+          }
+        },
+        {
+          "speaker_id": "artus",
+          "text": "Ideální práce pro někoho s velkýma ušima.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der perfekte Job für jemanden mit großen Ohren.",
+            "en": "Perfect job for someone with big ears.",
+            "fr": "Le boulot idéal pour quelqu'un avec de grandes oreilles.",
+            "it": "Il lavoro perfetto per qualcuno con grandi orecchie.",
+            "ja": "大きな耳を持つ者には最適な仕事だね",
+            "ko": "큰 귀를 가진 사람에게 딱 맞는 일이지.",
+            "pl": "Idealna praca dla kogoś z dużymi uszami.",
+            "pt-BR": "Trabalho ideal para quem tem orelhas grandes.",
+            "ru": "Идеальная работа для кого-то с большими ушами.",
+            "uk": "Ідеальна робота для когось із великими вухами.",
+            "vi": "Công việc lý tưởng cho ai đó có đôi tai lớn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, leaves swaying gently, static camera",
+      "motion_llm": "ambient only, characters still, fireflies drifting, sunlight slowly brightening, static camera",
+      "wd14_tags": {
+        "blonde hair": 0.921,
+        "blue eyes": 0.912,
+        "sitting": 0.865,
+        "armor": 0.853,
+        "outdoors": 0.845,
+        "cape": 0.828,
+        "1boy": 0.686,
+        "1girl": 0.655,
+        "brown footwear": 0.628,
+        "sky": 0.623,
+        "gauntlets": 0.557,
+        "short hair": 0.532
+      }
+    }
+  ]
+}

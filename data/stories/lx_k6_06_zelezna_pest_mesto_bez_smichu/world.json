@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k6_06_zelezna_pest_mesto_bez_smichu",
+  "title": "Max a město bez smíchu",
+  "synopsis": "Pilot Max v mecha Buďtěž vyzývá superpočítač Logikon k soutěži, kdo rozesměje město, a tím mu vrací radost.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Logikon se směje a město slaví Den Klopýtnutí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_mekanopolis",
+      "l_centrala"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Max",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short black hair and a silver pilot helmet",
+      "base": "male child, black hair, short hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots"
+      },
+      "photo": "a brave Czech boy aged 11 with short black hair and a silver pilot helmet",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, determined face, silver space helmet, white spacesuit, purple gloves, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "logikon",
+      "name": "Logikon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large metallic robot with a giant screen for a face and glowing blue lights",
+      "base": "robot, mecha, large screen, glowing blue eyes, metallic body",
+      "outfits": {
+        "default": "glowing blue visor, antenna, metal plating"
+      },
+      "photo": "a large metallic robot with a giant screen for a face and glowing blue lights",
+      "tag_prompt": "robot, mecha, large screen, glowing blue eyes, metallic body, glowing blue visor, antenna, metal plating",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mecha",
+      "name": "Buďtěž",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large silver and red armored mech with rocket launchers on shoulders",
+      "base": "robot, mecha, large, armored, red eyes, rocket launchers",
+      "outfits": {
+        "default": "silver armor, red thrusters, large fists"
+      },
+      "photo": "a large silver and red armored mech with rocket launchers on shoulders",
+      "tag_prompt": "robot, mecha, large, armored, red eyes, rocket launchers, silver armor, red thrusters, large fists",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_mekanopolis",
+      "name": "Mekanopolis",
+      "description": "Mekanopolis",
+      "tag_prompt": "outdoors, futuristic city, metal buildings, neon lights, gray sky, robots walking, no people",
+      "mood": ""
+    },
+    {
+      "id": "l_centrala",
+      "name": "Centrála",
+      "description": "Centrála",
+      "tag_prompt": "indoors, control room, large screens, wires, sparks, red alert lights, dark",
+      "mood": ""
+    }
+  ]
+}

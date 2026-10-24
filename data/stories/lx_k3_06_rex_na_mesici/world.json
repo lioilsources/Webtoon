@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_06_rex_na_mesici",
+  "title": "Rex a vesmírný zombie-král",
+  "synopsis": "Rex a jeho robotický pes Bolt musí zastavit zombie-krále na Měsíci a zachránit vesmírnou stanici.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: stanice je zachráněná a Rex je hrdina."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_moon",
+      "l_station"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rex",
+      "name": "Rex",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short black hair and a determined look",
+      "base": "male child, short black hair, blue eyes, fair skin, determined expression",
+      "outfits": {
+        "default": "red space helmet, white spacesuit, purple gloves, rocket backpack, boots"
+      },
+      "photo": "a brave Czech boy aged 11 with short black hair and a determined look",
+      "tag_prompt": "male child, short black hair, blue eyes, fair skin, determined expression, red space helmet, white spacesuit, purple gloves, rocket backpack, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small robot dog with a metal body and glowing blue eyes",
+      "base": "robot, dog, metal body, glowing blue eyes, antenna",
+      "outfits": {
+        "default": "red collar, laser emitter on back"
+      },
+      "photo": "a small robot dog with a metal body and glowing blue eyes",
+      "tag_prompt": "robot, dog, metal body, glowing blue eyes, antenna, red collar, laser emitter on back",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zombie",
+      "name": "Vesmírný Zombie-Král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall skeletal zombie king with glowing red eyes and tattered robes",
+      "base": "skeleton, zombie, tattered royal robes, glowing red eyes, crown",
+      "outfits": {
+        "default": "tattered purple robe, golden crown, glowing red eyes"
+      },
+      "photo": "a tall skeletal zombie king with glowing red eyes and tattered robes",
+      "tag_prompt": "skeleton, zombie, tattered royal robes, glowing red eyes, crown, tattered purple robe, golden crown, glowing red eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_moon",
+      "name": "Měsíc",
+      "description": "Měsíc",
+      "tag_prompt": "outdoors, moon surface, craters, grey dust, black sky, stars, earth in distance, low gravity",
+      "mood": ""
+    },
+    {
+      "id": "l_station",
+      "name": "Vesmírná stanice",
+      "description": "Vesmírná stanice",
+      "tag_prompt": "outdoors, space station exterior, metal panels, solar panels, stars, black sky",
+      "mood": ""
+    }
+  ]
+}

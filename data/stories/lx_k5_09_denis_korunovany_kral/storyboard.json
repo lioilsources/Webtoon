@@ -1,0 +1,370 @@
+{
+  "title": "Denis a korunovaný král",
+  "title_i18n": {
+    "de": "Denis und der gekrönte König",
+    "en": "Denis and the Crowned King",
+    "fr": "Denis, le roi couronné",
+    "it": "Denis e il re incoronato",
+    "ja": "デニスと冠された王",
+    "ko": "데니스와 왕관을 쓴 왕",
+    "pl": "Denis i Koronowany Król",
+    "pt-BR": "Denis, o Rei Coroad",
+    "ru": "Денис и коронованный король",
+    "uk": "Деніс і коронований король",
+    "vi": "Denis và vị vua được tôn phong"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "jungle path",
+        "dense trees",
+        "sunlight",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hustá džungle, kde se skrývá Temný král.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dichter Dschungel, in dem sich der Dunkle König verbirgt.",
+            "en": "A dense jungle where the Dark King hides.",
+            "fr": "Une jungle dense, où se cache le Roi Noir.",
+            "it": "Una fitta giungla, dove si nasconde il Re Oscuro.",
+            "ja": "闇の王が潜む、密林。",
+            "ko": "어둠의 왕이 숨어 있는 밀림.",
+            "pl": "Gęsta dżungla, w której kryje się Czarne Królestwo.",
+            "pt-BR": "Uma selva densa, onde se esconde o Rei Sombrio.",
+            "ru": "Густые джунгли, где скрывается Тёмный король.",
+            "uk": "Густі джунглі, де ховається Темний король.",
+            "vi": "Rừng rậm dày đặc, nơi ẩn náu của Hắc Vương."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "leaves rustling in the wind, sunlight shifting, static camera",
+      "wd14_tags": {
+        "no humans": 0.982,
+        "scenery": 0.967,
+        "nature": 0.908,
+        "outdoors": 0.903,
+        "green theme": 0.805,
+        "forest": 0.783,
+        "tree": 0.763,
+        "sunlight": 0.753,
+        "bush": 0.703,
+        "plant": 0.619,
+        "grass": 0.616,
+        "day": 0.526
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "denis"
+        },
+        {
+          "id": "lisak"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "looking around",
+        "fox running",
+        "determined face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lisak",
+          "text": "Denisi, Temný král ovládl zvířata!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Denis, der Dunkle König hat die Tiere übernommen!",
+            "en": "Denis, the Dark King has taken over the animals!",
+            "fr": "Denis, le Roi Noir a asservi les animaux !",
+            "it": "Denis, il Re Oscuro ha dominato gli animali!",
+            "ja": "デニス、闇の王が動物を支配したぞ！",
+            "ko": "데니스, 어둠의 왕이 동물들을 장악했어!",
+            "pl": "Denis, Czarne Królestwo przejęło kontrolę nad zwierzętami!",
+            "pt-BR": "Denis, o Rei Sombrio dominou os animais!",
+            "ru": "Денис, Тёмный король захватил животных!",
+            "uk": "Денісе, Темний король підкорив тварин!",
+            "vi": "Denis, Hắc Vương đã kiểm soát lũ thú!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "denis"
+        }
+      ],
+      "visual_tags": [
+        "fist pump",
+        "determined",
+        "open mouth",
+        "hero pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "denis",
+          "text": "Tak je osvobodíme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann befreien wir sie eben.",
+            "en": "Then we'll set them free.",
+            "fr": "On va les libérer, alors.",
+            "it": "Allora li libereremo.",
+            "ja": "じゃあ、解放してやろう。",
+            "ko": "그럼 구해 주자.",
+            "pl": "To je uwolnimy.",
+            "pt-BR": "Então vamos libertá-los.",
+            "ru": "Тогда мы их освободим.",
+            "uk": "Тоді ми їх звільнимо.",
+            "vi": "Vậy thì ta sẽ giải phóng chúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "temny_kral"
+        }
+      ],
+      "visual_tags": [
+        "sitting on throne",
+        "holding staff",
+        "menacing",
+        "glowing red eyes",
+        "dark aura"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "temny_kral",
+          "text": "Zvířata jsou moje!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Die Tiere gehören mir!",
+            "en": "The animals are mine!",
+            "fr": "Les animaux sont à moi !",
+            "it": "Gli animali sono miei!",
+            "ja": "動物は俺のものだ！",
+            "ko": "동물들은 내 거야!",
+            "pl": "Zwierzęta są moje!",
+            "pt-BR": "Os animais são meus!",
+            "ru": "Животные — мои!",
+            "uk": "Тварини — мої!",
+            "vi": "Lũ thú là của ta!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "denis"
+        }
+      ],
+      "visual_tags": [
+        "holding card",
+        "casting spell",
+        "glowing card",
+        "shouting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "denis",
+          "text": "Ne, jsou svobodná!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Nein, sie sind frei!",
+            "en": "No, they're free!",
+            "fr": "Non, ils sont libres !",
+            "it": "No, sono liberi!",
+            "ja": "違う、彼らは自由だ！",
+            "ko": "아니야, 그들은 자유로워!",
+            "pl": "Nie, są wolne!",
+            "pt-BR": "Não, são livres!",
+            "ru": "Нет, они свободны!",
+            "uk": "Ні, вони вільні!",
+            "vi": "Không, chúng tự do!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BLIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "temny_kral"
+        },
+        {
+          "id": "lisak"
+        }
+      ],
+      "visual_tags": [
+        "magic blast",
+        "wolf recoiling",
+        "fox barking",
+        "sparks",
+        "dynamic pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "denis"
+        },
+        {
+          "id": "lisak"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "holding fox",
+        "worried",
+        "fox sleeping",
+        "sunset"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "denis",
+          "text": "Lišáku!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Fuchs!",
+            "en": "Fox!",
+            "fr": "Renard !",
+            "it": "Volpe!",
+            "ja": "キツネ！",
+            "ko": "여우야!",
+            "pl": "Lisku!",
+            "pt-BR": "Raposa!",
+            "ru": "Лис!",
+            "uk": "Лисиче!",
+            "vi": "Cáo!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "lisak"
+        }
+      ],
+      "visual_tags": [
+        "sleeping",
+        "closed eyes",
+        "tired",
+        "soft fur"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lisak",
+          "text": "Jsem v pořádku. Jen… musím odpočívat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir geht’s gut. Nur… ich muss mich ausruhen.",
+            "en": "I'm fine. Just... need to rest.",
+            "fr": "Ça va. Je dois juste... me reposer.",
+            "it": "Sto bene. Solo… devo riposare.",
+            "ja": "大丈夫だ。ただ…休む必要があるんだ。",
+            "ko": "괜찮아. 그냥… 좀 쉬어야 해.",
+            "pl": "Jestem w porządku. Tylko... muszę odpocząć.",
+            "pt-BR": "Estou bem. Só... preciso descansar.",
+            "ru": "Я в порядке. Просто… мне нужно отдохнуть.",
+            "uk": "Я в порядку. Тільки… мені треба відпочити.",
+            "vi": "Tôi ổn. Chỉ là... tôi cần nghỉ ngơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lake",
+      "characters": [
+        {
+          "id": "denis"
+        },
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking back",
+        "sad smile",
+        "lake background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "denis",
+          "text": "Vrátím se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich komme zurück.",
+            "en": "I'll be back.",
+            "fr": "Je reviens.",
+            "it": "Torno indietro.",
+            "ja": "戻るよ。",
+            "ko": "돌아올게.",
+            "pl": "Wrócę.",
+            "pt-BR": "Vou voltar.",
+            "ru": "Я вернусь.",
+            "uk": "Я повернуся.",
+            "vi": "Tôi sẽ quay lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_05_amaya_strazkyne_dzungle",
+  "title": "Amaya a stínová hrozba",
+  "synopsis": "Amaya, strážkyně džungle, bojuje proti temné čarodějnici, která chce pohltit svět stíny.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: boj o džungli teprve začíná."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_clearing"
+    ]
+  },
+  "characters": [
+    {
+      "id": "amaya",
+      "name": "Amaya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a fierce jungle girl aged 11 with long brown hair and tan skin",
+      "base": "female child, brown hair, long hair, brown eyes, tan skin, athletic build",
+      "outfits": {
+        "default": "vines armor, runic stones, leaf skirt, barefoot, bow and arrow"
+      },
+      "photo": "a fierce jungle girl aged 11 with long brown hair and tan skin",
+      "tag_prompt": "female child, brown hair, long hair, brown eyes, tan skin, athletic build, vines armor, runic stones, leaf skirt, barefoot, bow and arrow",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "witch",
+      "name": "Temná čarodějnice",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a terrifying spirit with long black hair and a cloak of dark smoke",
+      "base": "ghost, transparent, floating, dark aura, long black hair, pale skin",
+      "outfits": {
+        "default": "black smoke cloak, glowing purple eyes"
+      },
+      "photo": "a terrifying spirit with long black hair and a cloak of dark smoke",
+      "tag_prompt": "ghost, transparent, floating, dark aura, long black hair, pale skin, black smoke cloak, glowing purple eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Srdce džungle",
+      "description": "Srdce džungle",
+      "tag_prompt": "outdoors, ancient jungle, giant trees, vines, glowing mushrooms, mist, magical atmosphere, day",
+      "mood": ""
+    },
+    {
+      "id": "l_clearing",
+      "name": "Mýtina",
+      "description": "Mýtina",
+      "tag_prompt": "outdoors, jungle clearing, grass, sunlight beams, magical green glow, night",
+      "mood": ""
+    }
+  ]
+}

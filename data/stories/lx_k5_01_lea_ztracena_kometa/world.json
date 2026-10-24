@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_01_lea_ztracena_kometa",
+  "title": "Lea a ztracená kometa",
+  "synopsis": "Lea a její létající přítel Kometa musí zastavit zlomyslné roboty, kteří kradou hvězdný prach z planety Kometa-9.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Lea obdrží medaili a odlétá s Kometou za dalším dobrodružstvím."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_station",
+      "l_planet",
+      "l_station_evening"
+    ]
+  },
+  "characters": [
+    {
+      "id": "lea",
+      "name": "Lea",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with long blonde hair and bright blue eyes",
+      "base": "female child, blonde hair, long hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "glowing blue cape, white space suit, silver boots, holding magic wand"
+      },
+      "photo": "a brave Czech girl aged 10 with long blonde hair and bright blue eyes",
+      "tag_prompt": "female child, blonde hair, long hair, blue eyes, fair skin, glowing blue cape, white space suit, silver boots, holding magic wand",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kometa",
+      "name": "Kometa",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small glowing fox-like creature with a fluffy tail and bright eyes",
+      "base": "fox, small fox, glowing fur, big ears, fluffy tail",
+      "outfits": {
+        "default": "glowing blue stripes"
+      },
+      "photo": "a small glowing fox-like creature with a fluffy tail and bright eyes",
+      "tag_prompt": "fox, small fox, glowing fur, big ears, fluffy tail, glowing blue stripes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "orb",
+      "name": "Kapitán Orb",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Czech man aged 35 with short hair and a serious expression",
+      "base": "adult, mature male, tall, muscular, short hair, serious face",
+      "outfits": {
+        "default": "blue space uniform, silver helmet, cape"
+      },
+      "photo": "a tall Czech man aged 35 with short hair and a serious expression",
+      "tag_prompt": "adult, mature male, tall, muscular, short hair, serious face, blue space uniform, silver helmet, cape",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mech",
+      "name": "Mech-králík",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small red robot rabbit with glowing eyes and metal ears",
+      "base": "robot, rabbit, metal, red eyes",
+      "outfits": {
+        "default": "red visor, antenna"
+      },
+      "photo": "a small red robot rabbit with glowing eyes and metal ears",
+      "tag_prompt": "robot, rabbit, metal, red eyes, red visor, antenna",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_station",
+      "name": "Vesmírná stanice",
+      "description": "Vesmírná stanice",
+      "tag_prompt": "indoors, space station, metal walls, windows with stars, neon lights, futuristic",
+      "mood": ""
+    },
+    {
+      "id": "l_planet",
+      "name": "Planeta Kometa-9",
+      "description": "Planeta Kometa-9",
+      "tag_prompt": "outdoors, alien planet, crater, glowing dust, purple sky, rocks, sci-fi",
+      "mood": ""
+    },
+    {
+      "id": "l_station_evening",
+      "name": "Stanice večer",
+      "description": "Stanice večer",
+      "tag_prompt": "indoors, space station, dim lighting, stars outside window, calm atmosphere",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k7_09_david_duch_z_hodin",
+  "title": "David a ztracené pondělí",
+  "synopsis": "David Tik-Tak vstupuje do světa hodin, aby zastavil bytost, která maže pondělí, a naučí ji, že i smutné dny patří k životu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: prázdné okénko v kalendáři čeká na rozhodnutí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_tower",
+      "l_gears"
+    ]
+  },
+  "characters": [
+    {
+      "id": "david",
+      "name": "David Tik-Tak",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serious Czech boy aged 13 with short brown hair and round glasses",
+      "base": "male child, brown hair, short hair, glasses, round glasses, fair skin, serious face",
+      "outfits": {
+        "default": "brown coat, white shirt, blue jeans, wristwatch, sneakers"
+      },
+      "photo": "a serious Czech boy aged 13 with short brown hair and round glasses",
+      "tag_prompt": "male child, brown hair, short hair, glasses, round glasses, fair skin, serious face, brown coat, white shirt, blue jeans, wristwatch, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ponocny",
+      "name": "Hodinář Ponocný",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a wise Czech grandfather aged 80 with white hair, a long beard and round glasses",
+      "base": "adult, mature male, old man, white hair, long beard, glasses, wrinkles, kind eyes",
+      "outfits": {
+        "default": "dark vest, white shirt, pocket watch chain, dark trousers"
+      },
+      "photo": "a wise Czech grandfather aged 80 with white hair, a long beard and round glasses",
+      "tag_prompt": "adult, mature male, old man, white hair, long beard, glasses, wrinkles, kind eyes, dark vest, white shirt, pocket watch chain, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "souboj",
+      "name": "Pan Souboj Hodin",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall transparent ghost with pale skin and a sad expression",
+      "base": "ghost, transparent, floating, sad expression, pale skin",
+      "outfits": {
+        "default": "grey cloak, hood, glowing grey aura"
+      },
+      "photo": "a tall transparent ghost with pale skin and a sad expression",
+      "tag_prompt": "ghost, transparent, floating, sad expression, pale skin, grey cloak, hood, glowing grey aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_tower",
+      "name": "Hodinová věž",
+      "description": "Hodinová věž",
+      "tag_prompt": "outdoors, clock tower, night, stars, moon, old architecture, stone walls, gears visible inside",
+      "mood": ""
+    },
+    {
+      "id": "l_gears",
+      "name": "Mezičas uvnitř hodin",
+      "description": "Mezičas uvnitř hodin",
+      "tag_prompt": "indoors, clock mechanism, giant gears, brass, copper, floating dust, magical light, surreal space",
+      "mood": ""
+    }
+  ]
+}

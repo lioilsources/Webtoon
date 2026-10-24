@@ -1,0 +1,367 @@
+{
+  "title": "Boro a démon v lese",
+  "title_i18n": {
+    "de": "Boro und der Dämon im Wald",
+    "en": "Boro and the Demon in the Jungle",
+    "fr": "Boro et le démon de la forêt",
+    "it": "Boro e il demone nella foresta",
+    "ja": "ボロと森の悪魔",
+    "ko": "숲속의 보로와 악마",
+    "pl": "Boro i demon w lesie",
+    "pt-BR": "Boro, o demônio na floresta",
+    "ru": "Боро и демон в лесу",
+    "uk": "Боро та демон у лісі",
+    "vi": "Boro và Ác Quỷ Trong Rừng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "jungle",
+        "sunlight",
+        "vines",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hustá džungle, kde se skrývá stín.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dichter Dschungel, wo der Schatten lauert.",
+            "en": "A dense jungle, hiding a shadow.",
+            "fr": "Une jungle dense, où se cache une ombre.",
+            "it": "Una fitta giungla, dove si nasconde un'ombra.",
+            "ja": "影が潜む、濃いジャングル。",
+            "ko": "그림자가 숨어 있는 밀림.",
+            "pl": "Gęsta dżungla, w której kryje się cień.",
+            "pt-BR": "Uma selva densa, onde se esconde uma sombra.",
+            "ru": "Густые джунгли, где скрывается тень.",
+            "uk": "Густі джунглі, де ховається тінь.",
+            "vi": "Khu rừng rậm rạp, nơi ẩn náu của bóng tối."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "leaves rustling in the wind, sunlight beams shifting, static camera",
+      "wd14_tags": {
+        "plant": 0.968,
+        "no humans": 0.961,
+        "green theme": 0.941,
+        "scenery": 0.906,
+        "nature": 0.875,
+        "sunlight": 0.797,
+        "outdoors": 0.715,
+        "vines": 0.679,
+        "leaf": 0.589,
+        "forest": 0.554,
+        "fern": 0.523,
+        "light rays": 0.511
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "boro"
+        },
+        {
+          "id": "yang"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "martial arts stance",
+        "holding staff",
+        "looking at each other",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "yang",
+          "text": "Boro, démon krade světlo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Boro, der Dämon stiehlt das Licht.",
+            "en": "Boro, the demon is stealing the light.",
+            "fr": "Boro, le démon dérobe la lumière.",
+            "it": "Boro, il demone ruba la luce.",
+            "ja": "ボロ、悪魔が光を奪っている。",
+            "ko": "보로, 악마가 빛을 훔쳤단다.",
+            "pl": "Boro, demon kradnie światło.",
+            "pt-BR": "Boro, um demônio está roubando a luz.",
+            "ru": "Боро, демон крадёт свет.",
+            "uk": "Боро, демон краде світло.",
+            "vi": "Boro, con ác quỷ đang đánh cắp ánh sáng."
+          }
+        },
+        {
+          "speaker_id": "boro",
+          "text": "Tak mu ho vezmu!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann nehme ich es ihm weg!",
+            "en": "Then I'll take it back!",
+            "fr": "Je vais la lui reprendre !",
+            "it": "Allora gliela prendo!",
+            "ja": "じゃあ、奪い返す！",
+            "ko": "그럼 내가 빼앗아 올게!",
+            "pl": "To mu je odbiorę!",
+            "pt-BR": "Então eu vou pegá-la de volta!",
+            "ru": "Тогда я заберу его!",
+            "uk": "Тоді я заберу його!",
+            "vi": "Vậy thì ta sẽ lấy lại nó!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "dark cloud",
+        "glowing red eyes",
+        "menacing",
+        "shadow aura"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "demon",
+          "text": "Světlo je moje!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Das Licht gehört mir!",
+            "en": "The light is mine!",
+            "fr": "La lumière est à moi !",
+            "it": "La luce è mia!",
+            "ja": "光は俺のものだ！",
+            "ko": "빛은 내 거야!",
+            "pl": "Światło jest moje!",
+            "pt-BR": "A luz é minha!",
+            "ru": "Свет — мой!",
+            "uk": "Світло — моє!",
+            "vi": "Ánh sáng là của ta!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "boro"
+        }
+      ],
+      "visual_tags": [
+        "punching",
+        "energy ball",
+        "glowing hands",
+        "determined",
+        "action pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "boro",
+          "text": "Tak mě poraz!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann schlag mich tot!",
+            "en": "Then defeat me!",
+            "fr": "Alors bats-moi !",
+            "it": "Allora battimi!",
+            "ja": "なら倒してみろ！",
+            "ko": "그럼 나를 이겨 봐!",
+            "pl": "To pokonaj mnie!",
+            "pt-BR": "Então me derrote!",
+            "ru": "Так победи меня!",
+            "uk": "Тоді перемож мене!",
+            "vi": "Vậy thì hãy đánh bại ta đi!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "boro"
+        },
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "energy blast",
+        "impact",
+        "demon fading",
+        "light explosion",
+        "shockwave"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "demon"
+        }
+      ],
+      "visual_tags": [
+        "dissolving",
+        "smoke clearing",
+        "fading away",
+        "defeated"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWISH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_village",
+      "characters": [
+        {
+          "id": "boro"
+        },
+        {
+          "id": "yang"
+        }
+      ],
+      "visual_tags": [
+        "village background",
+        "people dancing",
+        "confetti",
+        "smiling",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "yang",
+          "text": "Boro, jsi pravý bojovník.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Boro, du bist ein wahrer Krieger.",
+            "en": "Boro, you are a true warrior.",
+            "fr": "Boro, tu es un vrai guerrier.",
+            "it": "Boro, sei un vero guerriero.",
+            "ja": "ボロ、お前は立派な戦士だ。",
+            "ko": "보로, 너는 진정한 전사다.",
+            "pl": "Boro, jesteś prawdziwym wojownikiem.",
+            "pt-BR": "Boro, você é um verdadeiro guerreiro.",
+            "ru": "Боро, ты настоящий воин.",
+            "uk": "Боро, ти справжній воїн.",
+            "vi": "Boro, ngươi là một chiến binh đích thực."
+          }
+        },
+        {
+          "speaker_id": "boro",
+          "text": "A ty nejlepší učitel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du der beste Lehrer.",
+            "en": "And you, the best teacher.",
+            "fr": "Et toi, le meilleur des maîtres.",
+            "it": "E tu il miglior maestro.",
+            "ja": "お前こそ最高の師匠。",
+            "ko": "그리고 선생님은 최고의 스승이세요.",
+            "pl": "A ty najlepszym mistrzem.",
+            "pt-BR": "E você, o melhor mestre.",
+            "ru": "А ты — лучший учитель.",
+            "uk": "А ти — найкращий учитель.",
+            "vi": "Và thầy là người thầy giỏi nhất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_village",
+      "characters": [],
+      "visual_tags": [
+        "bright sun",
+        "blue sky",
+        "happy village",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Slunce opět svítí nad vesnicí.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Sonne scheint wieder über dem Dorf.",
+            "en": "The sun shines over the village once more.",
+            "fr": "Le soleil brille à nouveau sur le village.",
+            "it": "Il sole splende di nuovo sul villaggio.",
+            "ja": "太陽が再び村を照らす。",
+            "ko": "해가 다시 마을을 비추고 있었다.",
+            "pl": "Słońce znów świeci nad wsią.",
+            "pt-BR": "O sol brilha novamente sobre a aldeia.",
+            "ru": "Солнце снова светит над деревней.",
+            "uk": "Сонце знову світить над селом.",
+            "vi": "Mặt trời lại tỏa sáng trên ngôi làng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, city lights blinking, light rays shimmering, static camera",
+      "motion_llm": "sun rays shining brightly, clouds drifting slowly, static camera",
+      "wd14_tags": {
+        "scenery": 0.866,
+        "house": 0.805,
+        "outdoors": 0.793,
+        "chimney": 0.79,
+        "building": 0.759,
+        "flag": 0.704,
+        "no humans": 0.679,
+        "window": 0.639,
+        "cityscape": 0.627,
+        "day": 0.625,
+        "sky": 0.612,
+        "tree": 0.61
+      }
+    }
+  ]
+}

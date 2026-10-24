@@ -1,0 +1,416 @@
+{
+  "title": "Artur a meč v kameni",
+  "title_i18n": {
+    "de": "Artus und das Schwert im Stein",
+    "en": "Artur and the Sword in the Stone",
+    "fr": "Artus et l'épée dans la pierre",
+    "it": "Artù e la spada nella pietra",
+    "ja": "アルターと石の剣",
+    "ko": "아서와 돌의 검",
+    "pl": "Artur i miecz w kamieniu",
+    "pt-BR": "Artur e a Espada na Pedra",
+    "ru": "Артур и меч в камне",
+    "uk": "Артур і меч у камені",
+    "vi": "Artur và thanh gươm trong đá"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_avalon",
+      "characters": [],
+      "visual_tags": [
+        "fog",
+        "stone ruins",
+        "mystical atmosphere",
+        "morning light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mlha na ostrově Avalon.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nebel auf der Insel Avalon.",
+            "en": "Fog on the island of Avalon.",
+            "fr": "Le brouillard sur l'île d'Avalon.",
+            "it": "La nebbia sull'isola di Avalon.",
+            "ja": "アヴァロンの島に立ち込める霧。",
+            "ko": "아발론 섬의 안개.",
+            "pl": "Mgła na wyspie Avalon.",
+            "pt-BR": "A névoa na ilha de Avalon.",
+            "ru": "Туман над островом Авалон.",
+            "uk": "Туман над островом Авалон.",
+            "vi": "Sương mù bao phủ đảo Avalon."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, static camera",
+      "motion_llm": "fog drifting slowly over ancient stones, static camera",
+      "wd14_tags": {
+        "no humans": 0.96,
+        "blue theme": 0.905,
+        "scenery": 0.825,
+        "rock": 0.697,
+        "outdoors": 0.55,
+        "monochrome": 0.501,
+        "water": 0.442,
+        "sky": 0.39,
+        "blue background": 0.37
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_avalon",
+      "characters": [
+        {
+          "id": "artur"
+        },
+        {
+          "id": "excalibur"
+        }
+      ],
+      "visual_tags": [
+        "looking at sword",
+        "holding shield",
+        "glowing sword",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "excalibur",
+          "text": "Arture, jsem tady.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Artus, ich bin hier.",
+            "en": "Artur, I'm here.",
+            "fr": "Artus, je suis là.",
+            "it": "Artù, sono qui.",
+            "ja": "アルター、ここにいるよ。",
+            "ko": "아서, 여기 있어.",
+            "pl": "Arturze, jestem tutaj.",
+            "pt-BR": "Artur, estou aqui.",
+            "ru": "Артур, я здесь.",
+            "uk": "Артуре, я тут.",
+            "vi": "Artur, ta ở đây."
+          }
+        },
+        {
+          "speaker_id": "artur",
+          "text": "Excalibure!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Excalibur!",
+            "en": "Excalibur!",
+            "fr": "Excalibur !",
+            "it": "Excalibur!",
+            "ja": "エクスカリバー！",
+            "ko": "엑스칼리버!",
+            "pl": "Excaliburze!",
+            "pt-BR": "Excalibur!",
+            "ru": "Экскалибур!",
+            "uk": "Екскалібур!",
+            "vi": "Excalibur!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "morgana"
+        },
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "dark shadows",
+        "casting spell",
+        "glowing purple magic",
+        "angry face",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "morgana",
+          "text": "Meč je můj!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Das Schwert gehört mir!",
+            "en": "The sword is mine!",
+            "fr": "L'épée est à moi !",
+            "it": "La spada è mia!",
+            "ja": "この剣は私のもの！",
+            "ko": "검은 내 거야!",
+            "pl": "Miecz jest mój!",
+            "pt-BR": "A espada é minha!",
+            "ru": "Меч мой!",
+            "uk": "Меч мій!",
+            "vi": "Thanh gươm là của ta!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "holding shield",
+        "defending",
+        "determined",
+        "shield glowing",
+        "blocking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "artur",
+          "text": "Meč patří Avalonu!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Das Schwert gehört Avalon!",
+            "en": "The sword belongs to Avalon!",
+            "fr": "L'épée appartient à Avalon !",
+            "it": "La spada appartiene ad Avalon!",
+            "ja": "剣はアヴァロンのもの！",
+            "ko": "검은 아발론의 것이야!",
+            "pl": "Miecz należy do Avalonu!",
+            "pt-BR": "A espada pertence a Avalon!",
+            "ru": "Меч принадлежит Авалону!",
+            "uk": "Меч належить Авалону!",
+            "vi": "Thanh gươm thuộc về Avalon!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "morgana"
+        },
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "shadows disappearing",
+        "magic explosion",
+        "light burst",
+        "morgana retreating",
+        "artur standing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_castle",
+      "characters": [
+        {
+          "id": "kravna"
+        },
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "giving",
+        "smile",
+        "noble",
+        "standing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kravna",
+          "text": "Arture, jsi rytíř Avalonu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Artus, du bist ein Ritter Avalons.",
+            "en": "Artur, you are a knight of Avalon.",
+            "fr": "Artus, tu es un chevalier d'Avalon.",
+            "it": "Artù, sei un cavaliere di Avalon.",
+            "ja": "アルター、あなたはアヴァロンの騎士よ。",
+            "ko": "아서, 너는 아발론의 기사야.",
+            "pl": "Arturze, jesteś rycerzem Avalonu.",
+            "pt-BR": "Artur, você é o cavaleiro de Avalon.",
+            "ru": "Артур, ты рыцарь Авалона.",
+            "uk": "Артуре, ти лицар Авалону.",
+            "vi": "Artur, ngươi là hiệp sĩ của Avalon."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_castle",
+      "characters": [
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "worried",
+        "looking away",
+        "serious face",
+        "hand on sword"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "artur",
+          "text": "A Morgana?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und Morgana?",
+            "en": "And Morgana?",
+            "fr": "Et Morgana ?",
+            "it": "E Morgana?",
+            "ja": "モーガンは？",
+            "ko": "모르가나는?",
+            "pl": "A Morgana?",
+            "pt-BR": "E a Morgana?",
+            "ru": "А Морган?",
+            "uk": "А Морґана?",
+            "vi": "Còn Morgana thì sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_castle",
+      "characters": [
+        {
+          "id": "kravna"
+        }
+      ],
+      "visual_tags": [
+        "sad smile",
+        "looking at artur",
+        "mysterious",
+        "standing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kravna",
+          "text": "Ta se vrátí. Vždy se vrací.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die wird zurückkehren. Sie kommt immer wieder.",
+            "en": "She will return. She always returns.",
+            "fr": "Elle reviendra. Elle revient toujours.",
+            "it": "Tornerà. Torna sempre.",
+            "ja": "彼女は戻ってくるわ。いつもそうだから。",
+            "ko": "그녀는 돌아올 거야. 항상 돌아오지.",
+            "pl": "Ona wróci. Zawsze wraca.",
+            "pt-BR": "Ela voltará. Sempre volta.",
+            "ru": "Она вернётся. Она всегда возвращается.",
+            "uk": "Вона повернеться. Вона завжди повертається.",
+            "vi": "Nàng ấy sẽ trở lại. Nàng ấy luôn trở lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_castle",
+      "characters": [
+        {
+          "id": "artur"
+        }
+      ],
+      "visual_tags": [
+        "looking at fog",
+        "determined",
+        "hand on sword hilt",
+        "serious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_castle",
+      "characters": [
+        {
+          "id": "excalibur"
+        }
+      ],
+      "visual_tags": [
+        "glowing blue runes",
+        "floating",
+        "close up",
+        "mysterious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "excalibur",
+          "text": "Připrav se.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Mach dich bereit.",
+            "en": "Prepare yourself.",
+            "fr": "Prépare-toi.",
+            "it": "Preparati.",
+            "ja": "準備しろ。",
+            "ko": "준비해.",
+            "pl": "Bądź gotowy.",
+            "pt-BR": "Prepare-se.",
+            "ru": "Приготовься.",
+            "uk": "Готуйся.",
+            "vi": "Hãy chuẩn bị sẵn sàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the sword glows brighter and hums, static camera",
+      "wd14_tags": {
+        "1boy": 0.909,
+        "solo": 0.842,
+        "male focus": 0.831,
+        "weapon": 0.787,
+        "blue eyes": 0.762,
+        "armor": 0.761,
+        "sword": 0.695,
+        "helmet": 0.606,
+        "tokusatsu": 0.457,
+        "portrait": 0.382
+      }
+    }
+  ]
+}

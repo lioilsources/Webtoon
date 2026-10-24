@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_09_leo_budouci_mesto",
+  "title": "Leo a mech-drak",
+  "synopsis": "Chlapec s pavoučími schopnostmi bojuje s obřím robotem, který se nakonec ukáže jako starý strážce.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Leo a mech-drak se stanou partnery."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_city",
+      "l_building"
+    ]
+  },
+  "characters": [
+    {
+      "id": "leo",
+      "name": "Leo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 12 with short black hair and an athletic build",
+      "base": "male child, black hair, short hair, dark eyes, athletic build",
+      "outfits": {
+        "default": "black and red superhero suit, energy sword, wrist gauntlets"
+      },
+      "photo": "a brave Czech boy aged 12 with short black hair and an athletic build",
+      "tag_prompt": "male child, black hair, short hair, dark eyes, athletic build, black and red superhero suit, energy sword, wrist gauntlets",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "web",
+      "name": "Web",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small cute spider with big eyes and a tiny red scarf",
+      "base": "spider, small spider, black fur, big eyes",
+      "outfits": {
+        "default": "tiny red scarf"
+      },
+      "photo": "a small cute spider with big eyes and a tiny red scarf",
+      "tag_prompt": "spider, small spider, black fur, big eyes, tiny red scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mech_drak",
+      "name": "Mech-drak",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large mechanical dragon with red armor and glowing blue eyes",
+      "base": "robot, mecha, dragon, metal, glowing eyes",
+      "outfits": {
+        "default": "red armor, glowing blue core, large wings"
+      },
+      "photo": "a large mechanical dragon with red armor and glowing blue eyes",
+      "tag_prompt": "robot, mecha, dragon, metal, glowing eyes, red armor, glowing blue core, large wings",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_city",
+      "name": "Neonové město",
+      "description": "Neonové město",
+      "tag_prompt": "outdoors, futuristic city, neon lights, skyscrapers, night, rain, cyberpunk",
+      "mood": ""
+    },
+    {
+      "id": "l_building",
+      "name": "Stěna mrakodrapu",
+      "description": "Stěna mrakodrapu",
+      "tag_prompt": "outdoors, glass wall, skyscraper, night, neon reflection, rain",
+      "mood": ""
+    }
+  ]
+}

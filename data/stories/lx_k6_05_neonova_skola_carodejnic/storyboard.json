@@ -1,0 +1,431 @@
+{
+  "title": "Neonová a škola čarodějnic",
+  "title_i18n": {
+    "de": "Neon und die Hexenschule",
+    "en": "Neon and the Witch School",
+    "fr": "Néon et l'École des Sorcières",
+    "it": "Neon e la scuola di streghe",
+    "ja": "ネオンと魔女学校",
+    "ko": "네온과 마녀 학교",
+    "pl": "Neonka i szkoła czarownic",
+    "pt-BR": "Neon e a Escola de Bruxas",
+    "ru": "Неоновая и школа ведьм",
+    "uk": "Неонова та школа відьом",
+    "vi": "Neon và Trường Phép Thuật"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "dark forest",
+        "twisted trees",
+        "glowing mushrooms",
+        "fog",
+        "moonlight",
+        "mysterious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Temné Vřesoviště, kde stromy šeptají.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dunkles Heidegebiet, wo die Bäume flüstern.",
+            "en": "Dark Heath, where trees whisper.",
+            "fr": "Bruyères Sombres, où les arbres murmurent.",
+            "it": "Brughiera Oscura, dove gli alberi sussurrano.",
+            "ja": "木々が囁く、ダークヘースヴィシュチェ",
+            "ko": "나무들이 속삭이는 어둠의 브레소비체.",
+            "pl": "Ciemne Wrzosowisko, gdzie drzewa szepczą.",
+            "pt-BR": "Vale das Brumas, onde as árvores sussurram.",
+            "ru": "Тёмная Вересковая Поляна, где деревья шепчут.",
+            "uk": "Темне Вржовіще, де дерева шепочуть.",
+            "vi": "Thung Lũng U Tối, nơi những cái cây thì thầm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "fog drifting slowly between trees, mushrooms pulsing with light, static camera",
+      "wd14_tags": {
+        "nature": 0.989,
+        "forest": 0.984,
+        "no humans": 0.968,
+        "blue theme": 0.954,
+        "mushroom": 0.944,
+        "scenery": 0.92,
+        "tree": 0.887,
+        "outdoors": 0.828,
+        "monochrome": 0.555,
+        "night": 0.404
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        },
+        {
+          "id": "witch1"
+        },
+        {
+          "id": "witch2"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding wand",
+        "glowing wand",
+        "pointing",
+        "surprised",
+        "three witches",
+        "confronting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "neonova",
+          "text": "Přišla jsem na soutěž kouzel! Vyhrát má to nejkrásnější!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich bin zum Zauberkonkurrenz gekommen! Der Schönste gewinnt!",
+            "en": "I came to the magic contest! The prettiest one wins!",
+            "fr": "Je suis venue au concours de magie ! Le plus beau doit gagner !",
+            "it": "Sono qui per la gara di magia! Vince la più bella!",
+            "ja": "魔法コンテストに来たの！優勝するのは一番可愛い子よ！",
+            "ko": "마술 대회에 왔어! 가장 아름다운 게 이겨!",
+            "pl": "Przyjechałam na konkurs magii! Wygra ta najpiękniejsza!",
+            "pt-BR": "Vim para a competição de magia! A mais linda deve vencer!",
+            "ru": "Я пришла на конкурс магии! Побеждает самая красивая!",
+            "uk": "Я прийшла на чарівний конкурс! Перемогти має найкрасуня!",
+            "vi": "Tớ đến thi đấu phép thuật! Người đẹp nhất sẽ chiến thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "witch1"
+        },
+        {
+          "id": "witch2"
+        },
+        {
+          "id": "witch3"
+        }
+      ],
+      "visual_tags": [
+        "three witches",
+        "laughing",
+        "evil smile",
+        "holding staffs",
+        "glowing purple magic",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "witch1",
+          "text": "Souhlas! První kolo: proměň smutek!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Einverstanden! Runde eins: Verwandle Traurigkeit!",
+            "en": "Agreed! Round one: turn grief away!",
+            "fr": "D'accord ! Premier tour : transforme la tristesse !",
+            "it": "D’accordo! Primo turno: trasforma il dolore!",
+            "ja": "賛成！第一ラウンド：悲しみを変身！",
+            "ko": "동의! 첫 번째 라운드: 슬픔을 변신시켜!",
+            "pl": "Zgoda! Pierwsza runda: zamień smutek!",
+            "pt-BR": "Com certeza! Primeira fase: transformar a tristeza!",
+            "ru": "Согласен! Первый раунд: преврати печаль!",
+            "uk": "Згоден! Перший раунд: перетвори сум!",
+            "vi": "Đồng ý! Vòng một: biến đổi nỗi buồn!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        }
+      ],
+      "visual_tags": [
+        "casting spell",
+        "holding wand",
+        "butterflies",
+        "glowing light",
+        "happy",
+        "smile",
+        "magic particles"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "butterflies fluttering around the girl, leaves swaying gently, soft glow pulsing, static camera",
+      "motion_llm": "butterflies fluttering around the girl, wand glowing, static camera",
+      "wd14_tags": {
+        "1girl": 0.996,
+        "blonde hair": 0.966,
+        "blue eyes": 0.965,
+        "dress": 0.949,
+        "butterfly": 0.945,
+        "solo": 0.94,
+        "bug": 0.932,
+        "long hair": 0.92,
+        "crown": 0.908,
+        "smile": 0.896,
+        "holding": 0.891,
+        "pink dress": 0.887
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "witch1"
+        },
+        {
+          "id": "witch2"
+        },
+        {
+          "id": "witch3"
+        }
+      ],
+      "visual_tags": [
+        "casting spell",
+        "holding staffs",
+        "chains",
+        "purple magic",
+        "angry",
+        "frowning",
+        "dark magic"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "witch1",
+          "text": "Prohráváš, děvče. Naše kouzla drží déle.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verloren, Mädchen. Unsere Zauber halten länger.",
+            "en": "You lose, girl. Our spells last longer.",
+            "fr": "Tu perds, fille. Nos sorts durent plus longtemps.",
+            "it": "Hai perso, ragazza. Le nostre magie durano di più.",
+            "ja": "負けたわね、お嬢さん。私たちの魔法は長続きするの",
+            "ko": "졌어, 소녀야. 우리 마술이 더 오래 가.",
+            "pl": "Przegrywasz, dziewczyno. Nasze zaklęcia trwają dłużej.",
+            "pt-BR": "Você perdeu, garota. Nossos feitiços duram mais.",
+            "ru": "Проиграла, девочка. Наши чары держатся дольше.",
+            "uk": "Ти програєш, дівчинко. Наші чари тримаються довше.",
+            "vi": "Cậu thua rồi. Phép thuật của chúng tôi bền hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        }
+      ],
+      "visual_tags": [
+        "sad eyes",
+        "looking down",
+        "holding wand",
+        "determined",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "neonova",
+          "text": "Drží. Ale nikdo se k nim nechce vracet.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie halten. Aber niemand kehrt zu ihnen zurück.",
+            "en": "They do. But no one wants to go back to them.",
+            "fr": "Ils durent. Mais personne ne veut y revenir.",
+            "it": "Durano. Ma nessuno vuole tornarci.",
+            "ja": "確かにね。でも誰もそれに戻りたがらないわ",
+            "ko": "그렇지. 하지만 아무도 그걸 다시 찾지 않아.",
+            "pl": "Trwają. Ale nikt do nich nie wraca.",
+            "pt-BR": "Duram. Mas ninguém quer voltar a eles.",
+            "ru": "Держатся. Но никто к ним не возвращается.",
+            "uk": "Тримаються. Але ніхто до них не повертається.",
+            "vi": "Bền thật. Nhưng chẳng ai muốn quay lại với chúng cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        },
+        {
+          "id": "witch1"
+        },
+        {
+          "id": "witch2"
+        }
+      ],
+      "visual_tags": [
+        "sitting on ground",
+        "putting down wand",
+        "witches crying",
+        "tears",
+        "dark magic fading",
+        "empty air"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        },
+        {
+          "id": "witch3"
+        }
+      ],
+      "visual_tags": [
+        "handing out tissue",
+        "glowing tissue",
+        "crying witch",
+        "surprised",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "neonova",
+          "text": "Nemusíte být hodné. Stačí být první v něčem hezkém.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ihr müsst nicht nett sein. Nur die Erste in etwas Schönem sein.",
+            "en": "You don't have to be good. Just be first at something pretty.",
+            "fr": "Pas besoin d'être gentille. Suffit d'être la première en quelque chose de beau.",
+            "it": "Non dovete essere brave. Basta essere le prime in qualcosa di bello.",
+            "ja": "いい子である必要なんてないわ。何かで一番になればいいの",
+            "ko": "착할 필요 없어. 무언가 예쁜 것에서 첫 번째면 돼.",
+            "pl": "Nie musicie być grzeczne. Wystarczy być pierwszą w czymś pięknym.",
+            "pt-BR": "Não precisam ser boas. Basta ser a primeira em algo bonito.",
+            "ru": "Не обязательно быть хорошей. Достаточно быть первой в чём-то красивом.",
+            "uk": "Не обов’язково бути доброю. Достатньо бути першою в чомусь гарному.",
+            "vi": "Không cần phải ngoan. Chỉ cần là người đẹp nhất trong một điều gì đó là đủ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "witch3"
+        }
+      ],
+      "visual_tags": [
+        "shy",
+        "looking away",
+        "blushing",
+        "whispering",
+        "small witch"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "witch3",
+          "text": "Zůstaň. Nauč nás. …Ale my zlobit nezapomeneme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bleib. Lehr uns. …Aber wir werden nicht aufhören, zu zanken.",
+            "en": "Stay. Teach us. …But we won't forget how to misbehave.",
+            "fr": "Reste. Apprends-nous. …Mais on n'oubliera pas de faire des bêtises.",
+            "it": "Resta. Insegnaci. …Ma non smetteremo di fare i cattivi.",
+            "ja": "いて。教えて。……でも、いたずらは忘れないわ",
+            "ko": "남아. 우리한테 가르쳐 줘. …하지만 장난치는 건 잊지 않을게.",
+            "pl": "Zostań. Naucz nas. …Ale nie zapomnimy psocić.",
+            "pt-BR": "Fique. Nos ensine. …Mas não vamos esquecer de fazer travessuras.",
+            "ru": "Останься. Научи нас. …Но мы не забудем пакостить.",
+            "uk": "Залишся. Навчи нас. …Але ми не забудемо шкодити.",
+            "vi": "Ở lại đi. Dạy chúng tớ. …Nhưng chúng tớ sẽ không quên nghịch ngợm đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_clearing",
+      "characters": [
+        {
+          "id": "neonova"
+        },
+        {
+          "id": "witch1"
+        },
+        {
+          "id": "witch2"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "hugging",
+        "happy",
+        "glowing magic",
+        "friendship",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "neonova",
+          "text": "To je v pořádku. I mně se občas nechce. Pak si dáme kakao.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist okay. Mir geht es auch manchmal so. Dann trinken wir Kakao.",
+            "en": "That's fine. I don't always feel like it either. Then we'll have cocoa.",
+            "fr": "C'est pas grave. Moi aussi, ça m'arrive. On se fait du chocolat chaud.",
+            "it": "Va bene. A volte non ne ho voglia nemmeno io. Poi beviamo la cioccolata.",
+            "ja": "いいわ。私も時々なりたくないことあるから。そんな時はココアでも飲もうか",
+            "ko": "괜찮아. 나도 가끔은 그러거든. 그럼 카카오 마시자.",
+            "pl": "Spoko. Mnie też czasem nie chce się działać. Wtedy pijemy kakao.",
+            "pt-BR": "Tudo bem. Às vezes eu também não quero. Aí tomamos chocolate quente.",
+            "ru": "Ничего страшного. Мне тоже иногда не хочется. Тогда выпьем какао.",
+            "uk": "Це нормально. І мені іноді не хочеться. Тоді вип’ємо какао.",
+            "vi": "Không sao. Đôi khi tớ cũng không muốn. Thế là chúng ta cùng uống ca cao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

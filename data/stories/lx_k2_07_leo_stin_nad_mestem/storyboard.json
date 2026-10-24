@@ -1,0 +1,440 @@
+{
+  "title": "Leo a stín nad městem",
+  "title_i18n": {
+    "de": "Leo und der Schatten über der Stadt",
+    "en": "Leo and the Shadow Over the City",
+    "fr": "Leo et l'ombre sur la ville",
+    "it": "Leo e l'ombra sulla città",
+    "ja": "レオと街の影",
+    "ko": "레오와 도시 위의 그림자",
+    "pl": "Leo i cień nad miastem",
+    "pt-BR": "Leo e a Sombra sobre a Cidade",
+    "ru": "Лео и тень над городом",
+    "uk": "Лео та тінь над містом",
+    "vi": "Leo và bóng đen trên thành phố"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_city",
+      "characters": [],
+      "visual_tags": [
+        "city skyline",
+        "night",
+        "dark",
+        "moon",
+        "no lights",
+        "silhouettes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "V noci mizí elektřina.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nachts fällt der Strom aus.",
+            "en": "At night, the power goes out.",
+            "fr": "La nuit, le courant coupe.",
+            "it": "Di notte manca l'elettricità.",
+            "ja": "夜になると電気が止まる。",
+            "ko": "밤이 되면 전기가 끊긴다.",
+            "pl": "W nocy gaśnie prąd.",
+            "pt-BR": "À noite, a energia desaparece.",
+            "ru": "Ночью отключают электричество.",
+            "uk": "Вночі зникає електрика.",
+            "vi": "Đêm đến, điện tắt ngấm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, city lights blinking, static camera",
+      "motion_llm": "clouds drifting slowly across the moon, static camera",
+      "wd14_tags": {
+        "no humans": 0.981,
+        "night": 0.956,
+        "moon": 0.927,
+        "scenery": 0.922,
+        "building": 0.881,
+        "city": 0.848,
+        "outdoors": 0.829,
+        "sky": 0.825,
+        "road": 0.739,
+        "night sky": 0.674,
+        "full moon": 0.672,
+        "cityscape": 0.644
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "pix"
+        }
+      ],
+      "visual_tags": [
+        "standing on roof",
+        "looking down",
+        "pointing",
+        "glowing eyes",
+        "bat wings spread"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Pixi, najdi zdroj.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pixi, find die Quelle.",
+            "en": "Pixi, find the source.",
+            "fr": "Pixi, trouve la source.",
+            "it": "Pixi, trova la fonte.",
+            "ja": "ピクシ、電源を探して",
+            "ko": "픽시, 전원 위치를 찾아.",
+            "pl": "Pixi, znajdź źródło.",
+            "pt-BR": "Pixi, encontre a fonte.",
+            "ru": "Пикси, найди источник.",
+            "uk": "Пікс, знайди джерело.",
+            "vi": "Pixi, tìm nguồn điện."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "mechanik"
+        },
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "large mech",
+        "landing",
+        "dust cloud",
+        "glowing red eyes",
+        "menacing",
+        "city background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tak tohle bude problém.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das wird ein Problem.",
+            "en": "This is gonna be a problem.",
+            "fr": "Ça va être un problème.",
+            "it": "Questo sarà un problema.",
+            "ja": "これはまずいね",
+            "ko": "이건 좀 골치 아프군.",
+            "pl": "To będzie problem.",
+            "pt-BR": "Isso vai ser um problema.",
+            "ru": "Вот это да, проблема.",
+            "uk": "Оце вже проблема.",
+            "vi": "Chuyện này rắc rối đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "mechanik"
+        }
+      ],
+      "visual_tags": [
+        "shooting laser",
+        "energy beam",
+        "glowing red",
+        "aiming"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PŠŠŠT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "pix"
+        }
+      ],
+      "visual_tags": [
+        "dodging",
+        "jumping",
+        "motion lines",
+        "laser passing by",
+        "dynamic pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠVIH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "throwing rope",
+        "grappling hook",
+        "holding shield",
+        "glowing shield",
+        "throwing capsule",
+        "action"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "pix"
+        }
+      ],
+      "visual_tags": [
+        "flying close",
+        "glowing eyes",
+        "alarmed",
+        "wings flapping"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pix",
+          "text": "Nebezpečí!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Gefahr!",
+            "en": "Danger!",
+            "fr": "Danger !",
+            "it": "Pericolo!",
+            "ja": "危険だ！",
+            "ko": "위험해!",
+            "pl": "Niebezpieczeństwo!",
+            "pt-BR": "Perigo!",
+            "ru": "Опасность!",
+            "uk": "Небезпека!",
+            "vi": "Cảnh báo!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "the robot bat flaps its wings rapidly, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the robot bat flaps its wings rapidly, static camera",
+      "wd14_tags": {
+        "blue theme": 0.933,
+        "no humans": 0.792,
+        "solo": 0.758,
+        "open mouth": 0.636,
+        "smile": 0.589,
+        "monochrome": 0.581,
+        "pokemon (creature)": 0.573,
+        "blue background": 0.475,
+        "silhouette": 0.42
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "mechanik"
+        }
+      ],
+      "visual_tags": [
+        "standing firm",
+        "looking up",
+        "confident",
+        "shield raised",
+        "mecha looming"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mechanik",
+          "text": "Ty jsi jen dítě!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist doch nur ein Kind!",
+            "en": "You're just a kid!",
+            "fr": "Tu n'es qu'un enfant !",
+            "it": "Sei solo un bambino!",
+            "ja": "お前はただの子供だ！",
+            "ko": "넌 그냥 아이일 뿐이야!",
+            "pl": "Ty jesteś tylko dzieckiem!",
+            "pt-BR": "Você só é uma criança!",
+            "ru": "Ты просто ребёнок!",
+            "uk": "Ти ж лише дитина!",
+            "vi": "Cậu chỉ là đứa trẻ!"
+          }
+        },
+        {
+          "speaker_id": "leo",
+          "text": "A ty jsi jen člověk v plechovce.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du nur ein Typ in einer Dose.",
+            "en": "And you're just a guy in a can.",
+            "fr": "Et toi, juste un mec dans une boîte.",
+            "it": "E tu sei solo un uomo in una scatola.",
+            "ja": "お前もただの缶詰の人間だ",
+            "ko": "그리고 넌 깡통 속의 인간일 뿐이지.",
+            "pl": "A ty tylko człowiekiem w puszce.",
+            "pt-BR": "E você só é um humano numa lata.",
+            "ru": "А ты — просто человек в жестянке.",
+            "uk": "А ти — лише людина в консервній банці.",
+            "vi": "Còn cậu chỉ là người trong cái hộp sắt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "mechanik"
+        }
+      ],
+      "visual_tags": [
+        "mechanic stopping",
+        "smoke",
+        "sparks",
+        "defeated",
+        "kneeling"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "policista"
+        },
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "police officer pointing flashlight",
+        "shining light",
+        "looking at leo",
+        "leo turning away",
+        "mystery"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "policista",
+          "text": "Kdo jsi?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer bist du?",
+            "en": "Who are you?",
+            "fr": "Qui es-tu ?",
+            "it": "Chi sei?",
+            "ja": "お前は何者だ？",
+            "ko": "너는 누구냐?",
+            "pl": "Kim jesteś?",
+            "pt-BR": "Quem é você?",
+            "ru": "Кто ты?",
+            "uk": "Хто ти?",
+            "vi": "Cậu là ai?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "pix"
+        }
+      ],
+      "visual_tags": [
+        "running away",
+        "jumping off roof",
+        "silhouette",
+        "bat flying",
+        "night sky"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [],
+      "visual_tags": [
+        "bat symbol",
+        "graffiti",
+        "stone surface",
+        "moonlight",
+        "mystery"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

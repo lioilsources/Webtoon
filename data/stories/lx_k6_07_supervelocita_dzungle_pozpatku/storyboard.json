@@ -1,0 +1,445 @@
+{
+  "title": "Ben a džungle, která běží pozpátku",
+  "title_i18n": {
+    "de": "Ben und der rückwärts laufende Dschungel",
+    "en": "Ben and the Jungle That Runs Backwards",
+    "fr": "Ben et la jungle qui remonte le temps",
+    "it": "Ben e la giungla che corre all'indietro",
+    "ja": "ベンと逆走するジャングル",
+    "ko": "벤과 거꾸로 달리는 정글",
+    "pl": "Ben i dżungla, która biegnie do tyłu",
+    "pt-BR": "Ben e a selva que corre de trás para frente",
+    "ru": "Бен и джунгли, бегущие назад",
+    "uk": "Бен і джунглі, що йдуть у зворотному напрямку",
+    "vi": "Ben và khu rừng chạy ngược thời gian"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "jungle",
+        "river",
+        "sunlight",
+        "vines",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Džungle Selva Rychlá, kde čas spí.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Dschungel Selva Rychlá, wo die Zeit schläft.",
+            "en": "The Selva Rychla jungle, where time sleeps.",
+            "fr": "La jungle Selva Rychlá, où le temps dort.",
+            "it": "La giungla Selva Veloce, dove il tempo dorme.",
+            "ja": "時間が眠る、セルバ・リャーカジャングル。",
+            "ko": "시간이 잠드는 셀바 리치라 정글.",
+            "pl": "Dżungla Selva Rychła, gdzie czas śpi.",
+            "pt-BR": "A Selva Rápida, onde o tempo dorme.",
+            "ru": "Джунгли Сельва Рыхла, где время спит.",
+            "uk": "Джунглі Сельва Рихла, де час спить.",
+            "vi": "Khu rừng Selva Rychlá, nơi thời gian ngủ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "leaves swaying slowly, river flowing gently, static camera",
+      "wd14_tags": {
+        "no humans": 0.966,
+        "scenery": 0.944,
+        "nature": 0.92,
+        "outdoors": 0.899,
+        "tree": 0.84,
+        "forest": 0.778,
+        "sunlight": 0.76,
+        "plant": 0.695,
+        "water": 0.682,
+        "day": 0.403,
+        "green theme": 0.39,
+        "river": 0.385
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "ben"
+        },
+        {
+          "id": "opice"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "motion lines",
+        "pointing",
+        "laughing",
+        "monkey hanging",
+        "slow motion"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ben",
+          "text": "Promiň, opice, jak dlouho už visíš? Od úterý?! Já to stihl třikrát!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Entschuldigung, Affe, wie lange hängst du schon da? Seit Dienstag?! Ich war dreimal fertig!",
+            "en": "Sorry, monkey, how long have you been hanging there? Since Tuesday?! I've done it three times!",
+            "fr": "Désolé, singe, tu pends là depuis quand ? Depuis mardi ? J'en ai fait trois tours !",
+            "it": "Scusa, scimmia, da quanto tempo sei appeso? Da martedì?! Io l'ho fatto tre volte!",
+            "ja": "ごめん、サルさん。どれくらいぶら下がってるの？火曜日から！？俺、三回もクリアしたぞ！",
+            "ko": "미안, 원숭이. 얼마나 매달려 있었어? 화요일부터?! 나는 세 번이나 끝냈는데!",
+            "pl": "Przepraszaj, małpo, jak długo już wisisz? Od wtorku?! Ja to zrobiłem trzy razy!",
+            "pt-BR": "Desculpe, macaco, há quanto tempo você está pendurado? Desde terça?! Eu já fiz isso três vezes!",
+            "ru": "Извини, обезьяна, сколько ты уже висел? С вторника?! Я уже три раза успел!",
+            "uk": "Вибач, мавпо, як довго ти вже вісишся? З вівторка?! Я вже тричі це зробив!",
+            "vi": "Xin lỗi, khỉ, cậu treo mình từ bao giờ? Từ thứ Ba?! Tao đã làm xong ba lần rồi!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SWISH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "opice"
+        }
+      ],
+      "visual_tags": [
+        "hanging from vine",
+        "confused",
+        "slow blink",
+        "mouth opening slowly"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "opice",
+          "text": "Říkal něco? …To trvá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hat er was gesagt? …Das dauert.",
+            "en": "Did he say something? ...It takes time.",
+            "fr": "Il a dit quelque chose ? …Ça prend du temps.",
+            "it": "Ha detto qualcosa? …Ci vuole tempo.",
+            "ja": "何か言った？ ……まあ、時間がかかるよ。",
+            "ko": "뭐라고? …걸려.",
+            "pl": "Coś mówił? …To trwa.",
+            "pt-BR": "Ele disse algo? …Isso demora.",
+            "ru": "Что-то сказал? …Это долго.",
+            "uk": "Щось сказав? …Це триває.",
+            "vi": "Nó nói gì nhỉ? …Cũng lâu thật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "casoplot"
+        },
+        {
+          "id": "ben"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "pointing",
+        "pyramid of clocks",
+        "glowing",
+        "challenging pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "casoplot",
+          "text": "SOUTĚŽ, RYCHLÍKU! DOBĚHNI NA VRCHOL PŘED HODINOU, KTERÁ BĚŽÍ POZPÁTKU!",
+          "kind": "shout",
+          "i18n": {
+            "de": "WETTBEWERB, SCHNELLKOPF! ERREICHE DEN GIPFEL, BEVOR DIE STUNDE ZURÜCKLÄUFT!",
+            "en": "COMPETITION, SPEEDY! RACE TO THE TOP BEFORE THE HOUR THAT RUNS BACKWARDS!",
+            "fr": "COURSE, RAPIDE ! ATTEINS LE SOMMET AVANT QUE L'HEURE NE REMONTE !",
+            "it": "GARA, VELOCE! RAGGIUNGI LA VETTA PRIMA CHE SCOMPAIA L'ULTIMA ORA CHE CORRE ALL'INDIETRO!",
+            "ja": "競争だ、速い奴！逆回転する時計が止まる前に頂上へ駆け上がれ！",
+            "ko": "경쟁이다, 스피디! 거꾸로 가는 시간의 탑에 먼저 도달해라!",
+            "pl": "WYŚCIG, SZYBKUSIU! DOBIEGNIJ NA SZCZYT PRZED GODZINĄ, KTÓRA BIEGNIE DO TYŁU!",
+            "pt-BR": "CORRIDA, RÁPIDO! CHEGUE AO TOPO ANTES DA HORA QUE CORRE DE TRÁS PARA FRENTE!",
+            "ru": "ГОНКА, БЫСТРЯЧКА! ДОБЕРИСЬ ДО ВЕРШИНЫ ДО ЧАСА, ИДУЩЕГО НАЗАД!",
+            "uk": "ЗМАГАННЯ, ШВИДКУНУ! ДОБІЖИ НА ВЕРШИНУ ДО ГОДИНИ, ЩО ЙДЕ У ЗВОРОТНОМУ НАПРЯМКУ!",
+            "vi": "CUỘC THI, NHANH LÊN! CHẠY ĐẾN ĐỈNH TRƯỚC KHI GIỜ NÀY CHẠY NGƯỢC!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "ben"
+        }
+      ],
+      "visual_tags": [
+        "running in place",
+        "confused",
+        "clock hands spinning",
+        "motion blur",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ben",
+          "text": "Hej, hodino! Víš, co je horší než být pomalý? Být nudný!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hey, Uhr! Weißt du, was schlimmer ist als langsam zu sein? Langweilig zu sein!",
+            "en": "Hey, clock! You know what's worse than being slow? Being boring!",
+            "fr": "Hé, l'horloge ! Tu sais ce qui est pire que d'être lent ? D'être ennuyeux !",
+            "it": "Ehi, orologio! Sai cos'è peggio di essere lenti? Essere noiosi!",
+            "ja": "おい、時計さん！遅いことより、つまらないことの方が嫌だろ？",
+            "ko": "이봐, 시계야. 느린 것보다 더 나쁜 게 뭐야? 지루한 거지!",
+            "pl": "Hej, godzino! Wiesz, co gorsze niż bycie powolnym? Bycie nudnym!",
+            "pt-BR": "Ei, relógio! Sabe o que é pior do que ser lento? Ser chato!",
+            "ru": "Эй, часы! Знаешь, что хуже медленности? Скучность!",
+            "uk": "Гей, годиннику! Знаєш, що гірше, ніж бути повільним? Бути нудним!",
+            "vi": "Này, đồng hồ! Cậu biết gì tệ hơn chậm chạp không? Là nhàm chán!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "TIK TAK",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "casoplot"
+        },
+        {
+          "id": "ben"
+        }
+      ],
+      "visual_tags": [
+        "clock breaking",
+        "shards",
+        "sparks",
+        "angry ghost",
+        "running away",
+        "fast"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ben",
+          "text": "A ty tikáš jak pěkná nuda!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du tickst wie eine prima Langeweile!",
+            "en": "And you tick away like pure boredom!",
+            "fr": "Et toi, tu tiques comme une vraie emmerdeuse !",
+            "it": "E tu ticchettii come una noia mortale!",
+            "ja": "お前、鳴り方がすごく退屈だぜ！",
+            "ko": "너는 정말 지루하게 ticking ticking ticking!",
+            "pl": "A ty tikasz jak sama nuda!",
+            "pt-BR": "E você tica como um tédio!",
+            "ru": "А ты тикаешь, как настоящая скука!",
+            "uk": "А ти тикаєш, як справжня нудьга!",
+            "vi": "Và cậu kêu tích tắc như một sự nhàm chán đích thực!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "CRASH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "opice"
+        },
+        {
+          "id": "ben"
+        }
+      ],
+      "visual_tags": [
+        "monkey running fast",
+        "motion lines",
+        "blur",
+        "ben looking back",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "opice",
+          "text": "ŘÍKAL JSI NĚCO?!",
+          "kind": "shout",
+          "i18n": {
+            "de": "HAST DU ETWAS GESAGT?!",
+            "en": "DID YOU SAY SOMETHING?!",
+            "fr": "TU AS DIT QUOI ?!",
+            "it": "HAI DETTO QUALCOSA?!",
+            "ja": "何か言ったのか！？",
+            "ko": "내가 뭐라고 했어?!",
+            "pl": "CZY COŚ MÓWIŁEŚ?!",
+            "pt-BR": "VOCÊ DISSE ALGO?!",
+            "ru": "ТЫ ЧТО-ТО СКАЗАЛ?!",
+            "uk": "ТИ ЩОСЬ СКАЗАВ?!",
+            "vi": "CẬU NÓI GÌ?!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "WHOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "ben"
+        }
+      ],
+      "visual_tags": [
+        "winking",
+        "smirk",
+        "thumbs up",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ben",
+          "text": "Jen to nejlepší o tobě!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nur das Beste über dich!",
+            "en": "Only the best about you!",
+            "fr": "Juste le meilleur de toi !",
+            "it": "Solo le cose migliori su di te!",
+            "ja": "お前の最高のところさ！",
+            "ko": "너에 대한 최고의 말이지!",
+            "pl": "Tylko najlepsze o tobie!",
+            "pt-BR": "Só o melhor sobre você!",
+            "ru": "Только самое лучшее о тебе!",
+            "uk": "Лише найкраще про тебе!",
+            "vi": "Chỉ là những điều tốt đẹp nhất về cậu thôi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "casoplot"
+        }
+      ],
+      "visual_tags": [
+        "tied up",
+        "clock hands wrapping",
+        "frustrated",
+        "glowing red eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "casoplot",
+          "text": "Podváděl jsi!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast geschummelt!",
+            "en": "You cheated!",
+            "fr": "Tu as triché !",
+            "it": "Hai barato!",
+            "ja": "ずるをしたな！",
+            "ko": "속임수를 썼다!",
+            "pl": "Oszukujesz!",
+            "pt-BR": "Você trapaceou!",
+            "ru": "Ты жульничал!",
+            "uk": "Ти шахраював!",
+            "vi": "Cậu gian lận!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "ben"
+        },
+        {
+          "id": "casoplot"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "ghost tied up",
+        "jungle background",
+        "happy",
+        "thumbs up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ben",
+          "text": "Ne. Já jen mluvím rychleji, než ty myslíš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Ich rede nur schneller, als du denkst.",
+            "en": "No. I just speak faster than you think.",
+            "fr": "Non. Je parle juste plus vite que tu ne le penses.",
+            "it": "No. Parlo solo più velocemente di quanto tu pensi.",
+            "ja": "違う。お前の思考より、俺は速く喋るだけだ。",
+            "ko": "아니. 너의 생각보다 더 빨리 말했을 뿐이야.",
+            "pl": "Nie. Ja tylko mówię szybciej, niż myślisz.",
+            "pt-BR": "Não. Só falo mais rápido do que você pensa.",
+            "ru": "Нет. Я просто говорю быстрее, чем ты думаешь.",
+            "uk": "Ні. Я просто говорю швидше, ніж ти думаєш.",
+            "vi": "Không. Tao chỉ nói nhanh hơn cách cậu nghĩ mà thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

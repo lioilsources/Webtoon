@@ -1,0 +1,392 @@
+{
+  "title": "Péťa a zloděj perel",
+  "title_i18n": {
+    "de": "Petja und der Perlen Dieb",
+    "en": "Petja and the Pearl Thief",
+    "fr": "Petja et le voleur de perles",
+    "it": "Petja e il ladro di perle",
+    "ja": "ペーチャと真珠泥棒",
+    "ko": "페티와 진주 도둑",
+    "pl": "Petia i złodziej pereł",
+    "pt-BR": "Petja e o Ladrão de Pérolas",
+    "ru": "Петя и вор жемчуга",
+    "uk": "Петя і злодій перлів",
+    "vi": "Péťa và tên trộm ngọc trai"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_reef",
+      "characters": [],
+      "visual_tags": [
+        "coral reef",
+        "bubbles",
+        "fish swimming",
+        "sunlight rays",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Podmořské město na korálovém útesu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine Unterwasserstadt auf einem Korallenriff.",
+            "en": "An underwater city on a coral reef.",
+            "fr": "Une ville sous-marine sur un récif corallien.",
+            "it": "Una città sottomarina sulla barriera corallina.",
+            "ja": "サンゴ礁にある海底の街。",
+            "ko": "산호초 위에 있는 바다 속 도시.",
+            "pl": "Podwodne miasto na rafie koralowej.",
+            "pt-BR": "Uma cidade subaquática num recife de coral.",
+            "ru": "Подводный город на коралловом рифе.",
+            "uk": "Підводне місто на кораловому рифі.",
+            "vi": "Thành phố dưới biển nằm trên rặng san hô."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera",
+      "motion_llm": "bubbles rising, fish swimming slowly, light rays shifting, static camera",
+      "wd14_tags": {
+        "coral": 0.99,
+        "no humans": 0.958,
+        "scenery": 0.937,
+        "underwater": 0.933,
+        "fish": 0.929,
+        "bubble": 0.866,
+        "rock": 0.671,
+        "air bubble": 0.667,
+        "ocean": 0.561,
+        "sunlight": 0.507,
+        "water": 0.444,
+        "tropical fish": 0.432
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "peta"
+        },
+        {
+          "id": "skeble"
+        }
+      ],
+      "visual_tags": [
+        "holding frying pan",
+        "stirring",
+        "bubbles coming from pan",
+        "talking",
+        "worried expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "skeble",
+          "text": "Péťo, někdo ukradl perly!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Petja, jemand hat die Perlen gestohlen!",
+            "en": "Petja, someone stole the pearls!",
+            "fr": "Petja, on a volé les perles !",
+            "it": "Petja, qualcuno ha rubato le perle!",
+            "ja": "ペーチャ、真珠が盗まれたの！",
+            "ko": "페티야, 진주가 도둑맞았어!",
+            "pl": "Petio, ktoś ukradł perły!",
+            "pt-BR": "Petja, alguém roubou as pérolas!",
+            "ru": "Петя, кто-то украл жемчужины!",
+            "uk": "Петю, хтось украв перли!",
+            "vi": "Péťa, ai đó đã đánh cắp ngọc trai!"
+          }
+        },
+        {
+          "speaker_id": "peta",
+          "text": "Tak je najdeme. Bubliny, vzhůru!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann suchen wir sie eben. Blasen, los!",
+            "en": "Then let's find them. Bubbles, let's go!",
+            "fr": "On va les retrouver. Bulles, en route !",
+            "it": "Allora le ritroviamo. Bolle, su!",
+            "ja": "じゃあ探そう。泡、行こう！",
+            "ko": "그럼 찾아보자. 버블, 가자!",
+            "pl": "To je znajdziemy. Bąbelki, do góry!",
+            "pt-BR": "A gente as acha. Bolhas, vamos!",
+            "ru": "Тогда найдём их. Пузыри, поехали!",
+            "uk": "Тоді знайдемо. Бульбашки, вгору!",
+            "vi": "Vậy thì chúng ta sẽ tìm lại. Bong bóng, lên nào!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "krab"
+        }
+      ],
+      "visual_tags": [
+        "hiding",
+        "holding pearls",
+        "nervous",
+        "looking around",
+        "dark cave"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "krab",
+          "text": "Jsou moje! Chci je dát mamince.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die sind meine! Ich will sie Mama schenken.",
+            "en": "They're mine! I want to give them to Mom.",
+            "fr": "Elles sont à moi ! Je veux les donner à maman.",
+            "it": "Sono mie! Voglio darle a mamma.",
+            "ja": "俺のんだ！お母さんにあげたいから。",
+            "ko": "내 거야! 엄마한테 드릴 거야.",
+            "pl": "To moje! Chcę dać mamie.",
+            "pt-BR": "São minhas! Quero dar pra mamãe.",
+            "ru": "Это мои! Хочу подарить маме.",
+            "uk": "Вони мої! Хочу подарувати мамі.",
+            "vi": "Chúng là của tôi! Tôi muốn tặng mẹ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "peta"
+        },
+        {
+          "id": "krab"
+        }
+      ],
+      "visual_tags": [
+        "pointing",
+        "talking",
+        "concerned",
+        "crab holding pearls",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "peta",
+          "text": "Ale ostatní je potřebují taky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber die anderen brauchen sie auch.",
+            "en": "But the others need them too.",
+            "fr": "Mais les autres en ont aussi besoin.",
+            "it": "Ma anche gli altri ne hanno bisogno.",
+            "ja": "でも他の子も必要なのよ。",
+            "ko": "하지만 다른 친구들도 필요해.",
+            "pl": "Ale inni też ich potrzebują.",
+            "pt-BR": "Mas os outros também precisam delas.",
+            "ru": "Но другим они тоже нужны.",
+            "uk": "Але інші теж їх потребують.",
+            "vi": "Nhưng những người khác cũng cần chúng."
+          }
+        },
+        {
+          "speaker_id": "krab",
+          "text": "Tak si je vezmi.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann nimm sie halt.",
+            "en": "Then take them.",
+            "fr": "Eh bien, prends-les.",
+            "it": "Allora prendile.",
+            "ja": "じゃあ、持って行って。",
+            "ko": "그럼 가져가.",
+            "pl": "To weź je sobie.",
+            "pt-BR": "Toma então.",
+            "ru": "Так бери себе.",
+            "uk": "Тоді бери собі.",
+            "vi": "Vậy thì lấy đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "peta"
+        }
+      ],
+      "visual_tags": [
+        "thinking",
+        "hand on chin",
+        "idea",
+        "smile",
+        "bubbles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "peta",
+          "text": "Mám nápad!",
+          "kind": "thought",
+          "i18n": {
+            "de": "Ich hab eine Idee!",
+            "en": "I've got an idea!",
+            "fr": "J'ai une idée !",
+            "it": "Ho un'idea!",
+            "ja": "いい案が浮かんだ！",
+            "ko": "생각났다!",
+            "pl": "Mam pomysł!",
+            "pt-BR": "Tenho uma ideia!",
+            "ru": "У меня идея!",
+            "uk": "Маю ідею!",
+            "vi": "Tôi có ý tưởng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "starosta"
+        },
+        {
+          "id": "peta"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding medal",
+        "giving",
+        "smile",
+        "fish watching"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "starosta",
+          "text": "Péťo, jsi hrdinka!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Petja, du bist eine Heldin!",
+            "en": "Petja, you're a hero!",
+            "fr": "Petja, tu es une héroïne !",
+            "it": "Petja, sei un'eroina!",
+            "ja": "ペーチャ、すごい英雄だね！",
+            "ko": "페티야, 넌 영웅이야!",
+            "pl": "Petio, jesteś bohaterką!",
+            "pt-BR": "Petja, você é uma heroína!",
+            "ru": "Петя, ты героиня!",
+            "uk": "Петю, ти героїня!",
+            "vi": "Péťa, cô là nữ anh hùng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "peta"
+        },
+        {
+          "id": "krab"
+        }
+      ],
+      "visual_tags": [
+        "holding necklace",
+        "giving",
+        "happy",
+        "crab blushing",
+        "pearls"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "peta",
+          "text": "A Chlupatý krab dostane perlový náhrdelník pro maminku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und der Behaarte Krabbe bekommt eine Perlenkette für seine Mama.",
+            "en": "And the Hairy Crab gets a pearl necklace for Mom.",
+            "fr": "Et le Crabe velu aura un collier de perles pour maman.",
+            "it": "E il Granchio Peloso avrà una collana di perle per la mamma.",
+            "ja": "そしてタコザミくんはお母さんへの真珠のネックレスをもらうの。",
+            "ko": "털게시는 엄마를 위한 진주 목걸이를 받게 돼.",
+            "pl": "A Koszaty Krab dostanie naszyjnik z pereł dla mamy.",
+            "pt-BR": "E o Caranguejo Peludo ganha um colar de pérolas pra mamãe.",
+            "ru": "А Пушистый краб получит жемчужное ожерелье для мамы.",
+            "uk": "А Пухнастий краб отримає перлове намисто для мами.",
+            "vi": "Và Cua Lông sẽ nhận được một chiếc vòng ngọc trai cho mẹ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "peta"
+        },
+        {
+          "id": "skeble"
+        },
+        {
+          "id": "krab"
+        }
+      ],
+      "visual_tags": [
+        "dancing",
+        "bubbles",
+        "happy",
+        "celebrating",
+        "fish dancing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "YAY!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, bubbles rising, static camera",
+      "motion_llm": "ambient only, characters still, bubbles rising, light rays shimmering in water, static camera",
+      "wd14_tags": {
+        "1girl": 0.993,
+        "blue eyes": 0.914,
+        "blonde hair": 0.86,
+        "backpack": 0.859,
+        "solo": 0.853,
+        "crab": 0.852,
+        "barefoot": 0.786,
+        "coral": 0.779,
+        "fish": 0.778,
+        "bag": 0.766,
+        "short hair": 0.749,
+        "bubble": 0.721
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k4_01_maja_slunecni_krystal",
+  "title": "Maja Solaris a sluneční krystal",
+  "synopsis": "Maja Solaris chrání životodárný krystal před mechanickým tyrannosaurem v asteroidovém poli.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Maja zachránila krystal a vrací se na základnu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_asteroid",
+      "l_base"
+    ]
+  },
+  "characters": [
+    {
+      "id": "maja",
+      "name": "Maja Solaris",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with glowing blonde hair and an athletic build",
+      "base": "female child, blonde hair, long hair, glowing hair, yellow eyes, fair skin",
+      "outfits": {
+        "default": "silver armored suit, purple gloves, white boots, space helmet on back"
+      },
+      "photo": "a brave Czech girl aged 10 with glowing blonde hair and an athletic build",
+      "tag_prompt": "female child, blonde hair, long hair, glowing hair, yellow eyes, fair skin, silver armored suit, purple gloves, white boots, space helmet on back",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mecha_tyrannus",
+      "name": "Mecha-Tyrannus",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large mechanical tyrannosaurus with glowing red eyes and a laser cannon",
+      "base": "robot, mecha, dinosaur, tyrannosaurus, metal body, red eyes, glowing mouth",
+      "outfits": {
+        "default": "red laser cannon, glowing red eyes, metal plating"
+      },
+      "photo": "a large mechanical tyrannosaurus with glowing red eyes and a laser cannon",
+      "tag_prompt": "robot, mecha, dinosaur, tyrannosaurus, metal body, red eyes, glowing mouth, red laser cannon, glowing red eyes, metal plating",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "rox",
+      "name": "Kapitán Rox",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a cool Czech boy aged 9 with short black hair and a determined expression",
+      "base": "male child, black hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "blue pilot suit, blue helmet, flight jacket"
+      },
+      "photo": "a cool Czech boy aged 9 with short black hair and a determined expression",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, blue pilot suit, blue helmet, flight jacket",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_asteroid",
+      "name": "Asteroid XYLO",
+      "description": "Asteroid XYLO",
+      "tag_prompt": "outdoors, space, asteroid field, purple gas giant background, star dust, floating rocks, night, cosmic light",
+      "mood": ""
+    },
+    {
+      "id": "l_base",
+      "name": "Základna",
+      "description": "Základna",
+      "tag_prompt": "indoors, space station, metal walls, control panels, blue lights, clean, futuristic",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_08_tom_galaxie_ztracenych_tvoru",
+  "title": "Tom a galaxie ztracených tvorů",
+  "synopsis": "Tom a jeho robotický přítel Zipp zachrání spícího titána a rozhodnou se zůstat v nové galaxii.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: Tom a Zipp začínají nový život s osvobozenými tvory."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_space",
+      "l_moon",
+      "l_crater"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tom",
+      "name": "Tom",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 9 with short black hair and a red cap",
+      "base": "male child, black hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "red cap, blue jacket, grey pants, boots, backpack"
+      },
+      "photo": "a brave Czech boy aged 9 with short black hair and a red cap",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, red cap, blue jacket, grey pants, boots, backpack",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zipp",
+      "name": "Zipp",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small robotic fox with glowing blue eyes and metallic fur",
+      "base": "robot, fox shape, small size, metallic body",
+      "outfits": {
+        "default": "glowing blue eyes, antenna, electric sparks"
+      },
+      "photo": "a small robotic fox with glowing blue eyes and metallic fur",
+      "tag_prompt": "robot, fox shape, small size, metallic body, glowing blue eyes, antenna, electric sparks",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "rex",
+      "name": "Kapitán Rex",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a stern Czech man aged 35 with short hair and space armor",
+      "base": "adult, mature male, tall man, muscular build, short hair, stern face",
+      "outfits": {
+        "default": "space armor, helmet, laser rifle, cape"
+      },
+      "photo": "a stern Czech man aged 35 with short hair and space armor",
+      "tag_prompt": "adult, mature male, tall man, muscular build, short hair, stern face, space armor, helmet, laser rifle, cape",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "titan",
+      "name": "Starodávný Titán",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a colossal ancient creature made of rock and glowing crystals",
+      "base": "giant, rock skin, glowing veins, ancient, massive size",
+      "outfits": {
+        "default": "crystal core, moss patches, stone texture"
+      },
+      "photo": "a colossal ancient creature made of rock and glowing crystals",
+      "tag_prompt": "giant, rock skin, glowing veins, ancient, massive size, crystal core, moss patches, stone texture",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_space",
+      "name": "Vesmírná loď",
+      "description": "Vesmírná loď",
+      "tag_prompt": "outdoors, space, stars, planets, spaceship interior, control panel, neon lights, night",
+      "mood": ""
+    },
+    {
+      "id": "l_moon",
+      "name": "Oranžový měsíc",
+      "description": "Oranžový měsíc",
+      "tag_prompt": "outdoors, moon surface, orange sand, craters, sky with stars, low gravity, twilight",
+      "mood": ""
+    },
+    {
+      "id": "l_crater",
+      "name": "Kráter titána",
+      "description": "Kráter titána",
+      "tag_prompt": "outdoors, moon surface, large crater, dust, glowing crystals, dramatic lighting, wide angle",
+      "mood": ""
+    }
+  ]
+}

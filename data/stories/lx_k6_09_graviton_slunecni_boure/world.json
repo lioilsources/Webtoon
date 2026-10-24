@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k6_09_graviton_slunecni_boure",
+  "title": "Graviton a sluneční bouře",
+  "synopsis": "Adam Graviton zastaví piráty, kteří kradou světlo planet, a vrací Zemi krásný soumrak.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Graviton pluje dál, aby viděl všechny západy slunce soustavy."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_space",
+      "l_asteroid",
+      "l_neptune"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adam",
+      "name": "Adam „Graviton“",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 12 with short black hair and a futuristic silver helmet",
+      "base": "male child, black hair, short hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots, solar surfboard"
+      },
+      "photo": "a brave Czech boy aged 12 with short black hair and a futuristic silver helmet",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, determined face, silver space helmet, white spacesuit, purple gloves, boots, solar surfboard",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "captain",
+      "name": "Kapitánka Přízračná",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Czech woman aged 28 with long purple hair and glowing eyes",
+      "base": "adult, mature female, tall, slender, purple hair, long hair, glowing eyes, sharp features",
+      "outfits": {
+        "default": "dark purple pirate coat, silver armor plates, cape, space boots"
+      },
+      "photo": "a tall Czech woman aged 28 with long purple hair and glowing eyes",
+      "tag_prompt": "adult, mature female, tall, slender, purple hair, long hair, glowing eyes, sharp features, dark purple pirate coat, silver armor plates, cape, space boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pirate",
+      "name": "Pirát",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a green alien with three eyes and a large head",
+      "base": "alien, green skin, three eyes, large head, sharp teeth",
+      "outfits": {
+        "default": "tattered grey vest, metal belt, goggles"
+      },
+      "photo": "a green alien with three eyes and a large head",
+      "tag_prompt": "alien, green skin, three eyes, large head, sharp teeth, tattered grey vest, metal belt, goggles",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_space",
+      "name": "Mezi Zemí a Měsícem",
+      "description": "Mezi Zemí a Měsícem",
+      "tag_prompt": "outdoors, space, stars, earth, moon, nebula, deep blue, black, cosmic dust",
+      "mood": ""
+    },
+    {
+      "id": "l_asteroid",
+      "name": "Pásmo asteroidů",
+      "description": "Pásmo asteroidů",
+      "tag_prompt": "outdoors, space, asteroid field, rocks, floating debris, spaceship, engine glow, dark background",
+      "mood": ""
+    },
+    {
+      "id": "l_neptune",
+      "name": "Majáky na Neptunu",
+      "description": "Majáky na Neptunu",
+      "tag_prompt": "outdoors, space, blue planet, neptune, lighthouse beams, ice crystals, cold light",
+      "mood": ""
+    }
+  ]
+}

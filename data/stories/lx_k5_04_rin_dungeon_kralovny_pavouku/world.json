@@ -1,0 +1,109 @@
+{
+  "id": "w_lx_k5_04_rin_dungeon_kralovny_pavouku",
+  "title": "Rin a Královna pavouků",
+  "synopsis": "Hrdinka Rin bojuje v podzemí, aby zachránila vesnici, a musí obětovat vzpomínku na svého mluvícího meče.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: vesnice je zachráněna, ale Rin zapomene jméno svého meče."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dungeon",
+      "l_sil"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rin",
+      "name": "Rin",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 11 with short black hair and a determined expression",
+      "base": "female child, short black hair, black eyes, fair skin, determined face",
+      "outfits": {
+        "default": "red cape, silver armor, white shirt, black pants, boots"
+      },
+      "photo": "a brave Czech girl aged 11 with short black hair and a determined expression",
+      "tag_prompt": "female child, short black hair, black eyes, fair skin, determined face, red cape, silver armor, white shirt, black pants, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mec",
+      "name": "Meč",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a magical sword with glowing blue runes and a face on the hilt",
+      "base": "sword, anthropomorphic sword, glowing blue runes, hilt with face",
+      "outfits": {
+        "default": "glowing blue runes, silver blade"
+      },
+      "photo": "a magical sword with glowing blue runes and a face on the hilt",
+      "tag_prompt": "sword, anthropomorphic sword, glowing blue runes, hilt with face, glowing blue runes, silver blade",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kravna",
+      "name": "Královna pavouků",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large purple spider with multiple glowing eyes and fangs",
+      "base": "spider, large spider, purple fur, multiple eyes, fangs",
+      "outfits": {
+        "default": "purple chitin, glowing eyes"
+      },
+      "photo": "a large purple spider with multiple glowing eyes and fangs",
+      "tag_prompt": "spider, large spider, purple fur, multiple eyes, fangs, purple chitin, glowing eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zombie",
+      "name": "Zombie strážci",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a green zombie with tattered clothes and glowing eyes",
+      "base": "zombie, green skin, tattered clothes, glowing eyes",
+      "outfits": {
+        "default": "tattered green clothes"
+      },
+      "photo": "a green zombie with tattered clothes and glowing eyes",
+      "tag_prompt": "zombie, green skin, tattered clothes, glowing eyes, tattered green clothes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dungeon",
+      "name": "Dungeon chodba",
+      "description": "Dungeon chodba",
+      "tag_prompt": "indoors, dungeon, stone corridor, torches, dark, mist, ancient architecture",
+      "mood": ""
+    },
+    {
+      "id": "l_sil",
+      "name": "Pavučinový sál",
+      "description": "Pavučinový sál",
+      "tag_prompt": "indoors, dungeon hall, large room, spider webs, stone pillars, dim light, dust",
+      "mood": ""
+    }
+  ]
+}

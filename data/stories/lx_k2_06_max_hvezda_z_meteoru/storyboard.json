@@ -1,0 +1,425 @@
+{
+  "title": "Max a hvězda z meteoru",
+  "title_i18n": {
+    "de": "Max und der Stern vom Meteor",
+    "en": "Max and the Meteor Star",
+    "fr": "Max et l'étoile de la météorite",
+    "it": "Max e la stella della meteora",
+    "ja": "マックスと流星の星",
+    "ko": "맥스와 유성체 별",
+    "pl": "Max i gwiazda z meteorytu",
+    "pt-BR": "Max e a estrela do meteoro",
+    "ru": "Макс и звезда с метеора",
+    "uk": "Макс і зірка з метеорита",
+    "vi": "Max và ngôi sao từ thiên thạch"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_roof",
+      "characters": [],
+      "visual_tags": [
+        "night sky",
+        "stars",
+        "moon",
+        "city silhouette",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tichá noc na střeše.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stille Nacht auf dem Dach.",
+            "en": "A quiet night on the roof.",
+            "fr": "Nuit calme sur le toit.",
+            "it": "Notte silenziosa sul tetto.",
+            "ja": "屋根の上の静かな夜。",
+            "ko": "지붕 위의 고요한 밤.",
+            "pl": "Cicha noc na dachu.",
+            "pt-BR": "Noite silenciosa no telhado.",
+            "ru": "Тихая ночь на крыше.",
+            "uk": "Тиха ніч на даху.",
+            "vi": "Đêm yên tĩnh trên mái nhà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, city lights blinking, static camera",
+      "motion_llm": "stars twinkling, clouds drifting slowly, static camera",
+      "wd14_tags": {
+        "no humans": 0.971,
+        "scenery": 0.957,
+        "night": 0.945,
+        "sky": 0.937,
+        "moon": 0.935,
+        "cityscape": 0.839,
+        "blue theme": 0.811,
+        "night sky": 0.811,
+        "outdoors": 0.788,
+        "city": 0.741,
+        "star (sky)": 0.715,
+        "building": 0.665
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "looking up",
+        "pointing",
+        "surprised",
+        "open mouth",
+        "dog barking",
+        "falling object",
+        "light trail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Co to je?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist das?",
+            "en": "What's that?",
+            "fr": "C'est quoi, ça ?",
+            "it": "Cos'è?",
+            "ja": "あれは何？",
+            "ko": "저게 뭐야?",
+            "pl": "Co to jest?",
+            "pt-BR": "O que é isso?",
+            "ru": "Что это?",
+            "uk": "Що це?",
+            "vi": "Cái gì vậy?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "dog barking",
+        "open mouth",
+        "ears perked",
+        "glowing eyes",
+        "alert"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠTĚK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "holding glowing orb",
+        "glowing blue light",
+        "surprised",
+        "open mouth",
+        "hands cupped"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Tuhle?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die hier?",
+            "en": "This one?",
+            "fr": "Celui-là ?",
+            "it": "Questa qui?",
+            "ja": "これ？",
+            "ko": "이거?",
+            "pl": "Tę?",
+            "pt-BR": "Essa aqui?",
+            "ru": "Вот эту?",
+            "uk": "Ось тут?",
+            "vi": "Cái này à?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "kraken"
+        }
+      ],
+      "visual_tags": [
+        "standing tall",
+        "four arms",
+        "glowing red visor",
+        "dramatic pose",
+        "night",
+        "shadows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kraken",
+          "text": "Hledám hvězdu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich suche einen Stern.",
+            "en": "I'm looking for a star.",
+            "fr": "Je cherche une étoile.",
+            "it": "Cerco una stella.",
+            "ja": "星を探してるんだ。",
+            "ko": "별을 찾고 있어.",
+            "pl": "Szukam gwiazdy.",
+            "pt-BR": "Estou procurando uma estrela.",
+            "ru": "Ищу звезду.",
+            "uk": "Шукаю зірку.",
+            "vi": "Tôi đang tìm một ngôi sao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "kraken"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "facing each other",
+        "holding orb",
+        "determined",
+        "glowing orb"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Tak si ji nevezmeš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann nimm ihn halt nicht.",
+            "en": "Then don't take it.",
+            "fr": "Tu ne la prendras pas.",
+            "it": "Allora non la prendi.",
+            "ja": "じゃあ、取れないよ。",
+            "ko": "그럼 가져가지 마.",
+            "pl": "To jej nie weźmiesz.",
+            "pt-BR": "Então não vai pegá-la.",
+            "ru": "Тогда не забирай её.",
+            "uk": "Тоді ти її не візьмеш.",
+            "vi": "Thế thì đừng lấy nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "kraken"
+        },
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "punching",
+        "energy shield",
+        "glowing blue shield",
+        "impact",
+        "sparks",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "helping",
+        "dog nudging",
+        "determined",
+        "clenched fists",
+        "glowing hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Ale nevzdám se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber ich gebe nicht auf.",
+            "en": "But I won't give up.",
+            "fr": "Mais je n'abandonnerai pas.",
+            "it": "Ma non mi arrendo.",
+            "ja": "諦めない。",
+            "ko": "하지만 포기하지 않을 거야.",
+            "pl": "Ale nie poddaję się.",
+            "pt-BR": "Mas não vou desistir.",
+            "ru": "Но я не сдамся.",
+            "uk": "Але я не здамся.",
+            "vi": "Nhưng tôi sẽ không bỏ cuộc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "kraken"
+        }
+      ],
+      "visual_tags": [
+        "handing over orb",
+        "glowing orb",
+        "smiling",
+        "alien smiling",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Protože planeta je důležitější než vítězství.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Denn der Planet ist wichtiger als der Sieg.",
+            "en": "Because the planet matters more than winning.",
+            "fr": "Parce que la planète est plus importante que la victoire.",
+            "it": "Perché il pianeta è più importante della vittoria.",
+            "ja": "勝利より、惑星の方が大事だから。",
+            "ko": "승리보다 행성이 더 중요하니까.",
+            "pl": "Bo planeta jest ważniejsza niż zwycięstwo.",
+            "pt-BR": "Porque o planeta é mais importante que a vitória.",
+            "ru": "Потому что планета важнее победы.",
+            "uk": "Бо планета важливіша за перемогу.",
+            "vi": "Vì hành tinh quan trọng hơn chiến thắng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "licking face",
+        "dog tongue",
+        "happy",
+        "close up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the dog licks and wags tail, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the dog licks and wags tail, static camera",
+      "wd14_tags": {
+        "solo": 0.779,
+        "no humans": 0.751,
+        "dog": 0.721,
+        "blue theme": 0.516,
+        "outdoors": 0.486,
+        "looking at viewer": 0.431,
+        "pokemon (creature)": 0.391,
+        "animal focus": 0.374
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "bolt"
+        }
+      ],
+      "visual_tags": [
+        "looking up",
+        "night sky",
+        "new star",
+        "glowing star",
+        "silhouette",
+        "wonder"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

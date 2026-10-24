@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_06_max_duchove_zlodeji",
+  "title": "Max a duchové zloději",
+  "synopsis": "Max a robot Sova brání město před průhlednými zloději pomocí speciálního světla.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Max mizí ve stínech, město je v bezpečí, ale duchové jsou stále venku."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_roof",
+      "l_bank",
+      "l_bench"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Max",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short black hair and a determined expression",
+      "base": "male child, black hair, short hair, dark eyes, determined face",
+      "outfits": {
+        "default": "black cape, black mask, utility belt, black boots, black gloves"
+      },
+      "photo": "a brave Czech boy aged 11 with short black hair and a determined expression",
+      "tag_prompt": "male child, black hair, short hair, dark eyes, determined face, black cape, black mask, utility belt, black boots, black gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sova",
+      "name": "Sova",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small round robot with glowing blue eyes and a metal antenna",
+      "base": "robot, small robot, round body, glowing blue eyes, antenna",
+      "outfits": {
+        "default": "metal plating, glowing blue visor, small propeller"
+      },
+      "photo": "a small round robot with glowing blue eyes and a metal antenna",
+      "tag_prompt": "robot, small robot, round body, glowing blue eyes, antenna, metal plating, glowing blue visor, small propeller",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "novakova",
+      "name": "Komisařka Nováková",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a stern Czech policewoman aged 40 with black hair in a ponytail and glasses",
+      "base": "adult, mature female, tall woman, black hair, ponytail, glasses, serious face",
+      "outfits": {
+        "default": "police uniform, dark blue jacket, badge, cap"
+      },
+      "photo": "a stern Czech policewoman aged 40 with black hair in a ponytail and glasses",
+      "tag_prompt": "adult, mature female, tall woman, black hair, ponytail, glasses, serious face, police uniform, dark blue jacket, badge, cap",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ghost",
+      "name": "Duch",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent ghost with pale blue skin and glowing eyes",
+      "base": "ghost, transparent, floating, pale blue skin, long hair",
+      "outfits": {
+        "default": "transparent robe, glowing eyes"
+      },
+      "photo": "a translucent ghost with pale blue skin and glowing eyes",
+      "tag_prompt": "ghost, transparent, floating, pale blue skin, long hair, transparent robe, glowing eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, night, rain, wet tiles, city skyline, lightning, dark",
+      "mood": ""
+    },
+    {
+      "id": "l_bank",
+      "name": "Banka",
+      "description": "Banka",
+      "tag_prompt": "indoors, bank, night, dark, marble pillars, glass doors, rain outside",
+      "mood": ""
+    },
+    {
+      "id": "l_bench",
+      "name": "Lavička u banky",
+      "description": "Lavička u banky",
+      "tag_prompt": "outdoors, park bench, night, rain, city street, police car lights",
+      "mood": ""
+    }
+  ]
+}

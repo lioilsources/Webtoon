@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_10_artur_mec_v_kameni",
+  "title": "Artur a meč v kameni",
+  "synopsis": "Mladý Artur bojuje s temnými stíny a získává meč Excalibur, aby se stal rytířem Avalonu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Morgana se vrátí a Artur se připravuje na další bitvu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_avalon",
+      "l_forest",
+      "l_castle"
+    ]
+  },
+  "characters": [
+    {
+      "id": "artur",
+      "name": "Artur",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 12 with short blonde hair and blue eyes",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver cape, white tunic, leather belt, silver shield, holding sword"
+      },
+      "photo": "a brave Czech boy aged 12 with short blonde hair and blue eyes",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, determined face, silver cape, white tunic, leather belt, silver shield, holding sword",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "excalibur",
+      "name": "Excalibur",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a magical sword with a glowing blue blade and silver hilt",
+      "base": "robot, sword, glowing blue blade, metallic hilt, floating",
+      "outfits": {
+        "default": "glowing blue runes, silver metal"
+      },
+      "photo": "a magical sword with a glowing blue blade and silver hilt",
+      "tag_prompt": "robot, sword, glowing blue blade, metallic hilt, floating, glowing blue runes, silver metal",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "morgana",
+      "name": "Čarodějka Morgana",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a mysterious spirit with long black hair and a dark purple cloak",
+      "base": "ghost, long black hair, purple eyes, dark robes, floating",
+      "outfits": {
+        "default": "dark purple cloak, shadowy aura"
+      },
+      "photo": "a mysterious spirit with long black hair and a dark purple cloak",
+      "tag_prompt": "ghost, long black hair, purple eyes, dark robes, floating, dark purple cloak, shadowy aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kravna",
+      "name": "Královna Avalonu",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a wise Czech queen aged 35 with long blonde hair and a golden crown",
+      "base": "adult, mature female, tall, blonde hair, long hair, golden eyes, kind face",
+      "outfits": {
+        "default": "golden crown, white dress, gold jewelry"
+      },
+      "photo": "a wise Czech queen aged 35 with long blonde hair and a golden crown",
+      "tag_prompt": "adult, mature female, tall, blonde hair, long hair, golden eyes, kind face, golden crown, white dress, gold jewelry",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_avalon",
+      "name": "Ostrov Avalon",
+      "description": "Ostrov Avalon",
+      "tag_prompt": "outdoors, mystical island, stone ruins, fog, morning, misty, ancient stones",
+      "mood": ""
+    },
+    {
+      "id": "l_forest",
+      "name": "Mlžný les",
+      "description": "Mlžný les",
+      "tag_prompt": "outdoors, forest, trees, fog, dark shadows, moonlight, mysterious",
+      "mood": ""
+    },
+    {
+      "id": "l_castle",
+      "name": "Hrad",
+      "description": "Hrad",
+      "tag_prompt": "outdoors, castle courtyard, stone walls, banners, day, bright light",
+      "mood": ""
+    }
+  ]
+}

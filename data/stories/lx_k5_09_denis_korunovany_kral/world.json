@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_09_denis_korunovany_kral",
+  "title": "Denis a korunovaný král",
+  "synopsis": "Denis a jeho liščí parťák Lišák se vydávají do džungle, aby osvobodili zvířata od Temného krále.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: zvířata jsou svobodná, ale Lišák musí zůstat v jeskyni na odpočinek."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_cave",
+      "l_lake"
+    ]
+  },
+  "characters": [
+    {
+      "id": "denis",
+      "name": "Denis",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short brown hair and determined blue eyes",
+      "base": "male child, brown hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "blue t-shirt, green shorts, sneakers, magic card in hand"
+      },
+      "photo": "a brave Czech boy aged 11 with short brown hair and determined blue eyes",
+      "tag_prompt": "male child, brown hair, short hair, blue eyes, fair skin, blue t-shirt, green shorts, sneakers, magic card in hand",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "lisak",
+      "name": "Lišák",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small orange fox with a bushy tail and glowing blue collar",
+      "base": "fox, orange fur, white chest, big ears, bushy tail",
+      "outfits": {
+        "default": "glowing blue collar"
+      },
+      "photo": "a small orange fox with a bushy tail and glowing blue collar",
+      "tag_prompt": "fox, orange fur, white chest, big ears, bushy tail, glowing blue collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "temny_kral",
+      "name": "Temný král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large menacing black wolf with glowing red eyes and a golden crown",
+      "base": "wolf, large wolf, black fur, red eyes, sharp teeth, crown",
+      "outfits": {
+        "default": "dark purple cape, golden crown, jagged staff"
+      },
+      "photo": "a large menacing black wolf with glowing red eyes and a golden crown",
+      "tag_prompt": "wolf, large wolf, black fur, red eyes, sharp teeth, crown, dark purple cape, golden crown, jagged staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a caring Czech girl aged 13 with long brown hair and brown eyes",
+      "base": "female child, long brown hair, brown eyes, fair skin",
+      "outfits": {
+        "default": "purple t-shirt, jeans, sneakers"
+      },
+      "photo": "a caring Czech girl aged 13 with long brown hair and brown eyes",
+      "tag_prompt": "female child, long brown hair, brown eyes, fair skin, purple t-shirt, jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Džungle",
+      "description": "Džungle",
+      "tag_prompt": "outdoors, jungle, dense green foliage, vines, sunlight filtering through leaves, path",
+      "mood": ""
+    },
+    {
+      "id": "l_cave",
+      "name": "Jeskyně",
+      "description": "Jeskyně",
+      "tag_prompt": "indoors, cave, dark rocks, glowing crystals, throne made of bones, dim light",
+      "mood": ""
+    },
+    {
+      "id": "l_lake",
+      "name": "Jezero",
+      "description": "Jezero",
+      "tag_prompt": "outdoors, lake, calm water, trees, sunset, orange sky, peaceful",
+      "mood": ""
+    }
+  ]
+}

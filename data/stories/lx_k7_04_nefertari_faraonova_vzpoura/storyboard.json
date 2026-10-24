@@ -1,0 +1,471 @@
+{
+  "title": "Nefertari a Faraonův stín",
+  "title_i18n": {
+    "de": "Nefertari und der Schatten des Pharaos",
+    "en": "Nefertari and the Pharaoh's Shadow",
+    "fr": "Nefertari et l'ombre du Pharaon",
+    "it": "Nefertari e l'ombra del Faraone",
+    "ja": "ネフェルティとファラオの影",
+    "ko": "네페르타리와 파라오의 그림자",
+    "pl": "Nefertari i cień Faraona",
+    "pt-BR": "Nefertari, a Sombra do Faraó",
+    "ru": "Нефертари и тень фараона",
+    "uk": "Нефертарі та тінь фараона",
+    "vi": "Nefertari và Bóng Tối Của Hoàng Đế"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_desert",
+      "characters": [],
+      "visual_tags": [
+        "dunes",
+        "pyramids",
+        "orange sky",
+        "twilight",
+        "silhouettes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Soumrak v poušti u pyramid.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dämmerung in der Wüste bei den Pyramiden.",
+            "en": "Twilight in the desert, by the pyramids.",
+            "fr": "Crépuscule dans le désert, près des pyramides.",
+            "it": "Crepuscolo nel deserto, vicino alle piramidi.",
+            "ja": "ピラミッド近くの砂漠、夕暮れ時。",
+            "ko": "피라미드 근처 사막의 황혼.",
+            "pl": "Zmierzch w pustyni przy piramidach.",
+            "pt-BR": "Crepúsculo no deserto, perto das pirâmides.",
+            "ru": "Сумерки в пустыне у пирамид.",
+            "uk": "Сутінки в пустелі біля пірамід.",
+            "vi": "Hoàng hôn tại sa mạc, bên chân kim tự tháp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust drifting, static camera",
+      "motion_llm": "sand grains shifting in wind, clouds drifting slowly, static camera",
+      "wd14_tags": {
+        "outdoors": 0.874,
+        "mountain": 0.849,
+        "silhouette": 0.825,
+        "desert": 0.78,
+        "scenery": 0.778,
+        "solo": 0.775,
+        "orange theme": 0.715,
+        "mountainous horizon": 0.606,
+        "shadow": 0.593,
+        "standing": 0.568,
+        "1girl": 0.533,
+        "sky": 0.53
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_desert",
+      "characters": [
+        {
+          "id": "nefertari"
+        },
+        {
+          "id": "anubis"
+        }
+      ],
+      "visual_tags": [
+        "walking on dune",
+        "holding staff",
+        "running dog",
+        "looking at horizon",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anubis",
+          "text": "Tři vesnice už nezvedly lampy. Tohle není noc. Tohle je stín.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Drei Dörfer haben die Laternen nicht mehr entzündet. Das ist keine Nacht. Das ist ein Schatten.",
+            "en": "Three villages haven't lit their lamps. This isn't night. This is shadow.",
+            "fr": "Trois villages n'ont plus allumé leurs lampes. Ce n'est pas la nuit. C'est l'ombre.",
+            "it": "Tre villaggi non hanno più acceso le lanterne. Non è notte. È un'ombra.",
+            "ja": "もう三つの村が明かりを消した。これは夜じゃない。影だ。",
+            "ko": "세 마을이 이미 등불을 켜지 않았어. 이건 밤이 아니야. 그림자야.",
+            "pl": "Trzy wsie już nie zapalają lamp. To nie jest noc. To cień.",
+            "pt-BR": "Três vilas já não acenderam as lâmpadas. Isso não é noite. É sombra.",
+            "ru": "Три деревни уже не зажгли фонари. Это не ночь. Это тень.",
+            "uk": "Вже три села не запалили ліхтарів. Це не ніч. Це тінь.",
+            "vi": "Ba ngôi làng đã tắt đèn. Đây không phải đêm. Đây là bóng tối."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_desert",
+      "characters": [
+        {
+          "id": "nefertari"
+        }
+      ],
+      "visual_tags": [
+        "holding staff",
+        "glowing armbands",
+        "determined",
+        "pointing",
+        "magic glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nefertari",
+          "text": "Faraon Žebřík III. Myslí si, že když přikryje slunce, všichni se mu budou klanět.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pharao Leiter III. Er glaubt, wenn er die Sonne verdeckt, werden alle vor ihm knien.",
+            "en": "Pharaoh Ladder III. Thinks that by covering the sun, everyone will bow to him.",
+            "fr": "Le Pharaon Échelle III. Il croit que s'il cache le soleil, tout le monde s'inclinera devant lui.",
+            "it": "Il Faraone Scala III. Pensa che coprendo il sole, tutti si inchinino a lui.",
+            "ja": "ファラオ・ハシゴ三世は、太陽を隠せば皆が拝むと思っているのね。",
+            "ko": "파라오 사다리 3세는 해를 가리면 모두가 자신을 숭배할 거라 생각해.",
+            "pl": "Faraon Drabina III. Myśli, że jak zasłoni słońce, wszyscy mu będą się kłaniać.",
+            "pt-BR": "Faraó Escada III. Acha que, ao cobrir o sol, todos se curvarão a ele.",
+            "ru": "Фараон Жребий III. Думает, что если он закроет солнце, все будут ему кланяться.",
+            "uk": "Фараон Жребій III. Вважає, що якщо він закриє сонце, всі будуть йому поклонятися.",
+            "vi": "Hoàng Đế Thang Ba. Hắn nghĩ che khuất mặt trời là mọi người sẽ bái phục hắn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_golden_hall",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "sitting on throne",
+        "gold mask",
+        "gold statue",
+        "looking down",
+        "imposing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Kdo se odvažuje vstoupit BEZ darů?",
+          "kind": "shout",
+          "i18n": {
+            "de": "Wer wagt es, OHNE Gaben einzutreten?",
+            "en": "Who dares enter WITHOUT gifts?",
+            "fr": "Qui ose entrer SANS offrandes ?",
+            "it": "Chi osa entrare SENZA doni?",
+            "ja": "誰が贈り物なしで入る気だ！",
+            "ko": "누가 선물 없이 들어올 용기가 있단 말이야?",
+            "pl": "Kto śmie wejść BEZ darów?",
+            "pt-BR": "Quem ousa entrar SEM presentes?",
+            "ru": "Кто смеет входить БЕЗ даров?",
+            "uk": "Хто наважується увійти БЕЗ дарунків?",
+            "vi": "Ai dám bước vào mà KHÔNG mang lễ vật?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_golden_hall",
+      "characters": [
+        {
+          "id": "nefertari"
+        }
+      ],
+      "visual_tags": [
+        "standing calm",
+        "looking at pharaoh",
+        "holding staff",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nefertari",
+          "text": "Já jsem Nefertari Svítící. Přináším otázku: Faraone, kde jsou tvoji přátelé?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich bin Nefertari die Leuchtende. Ich bringe eine Frage: Pharao, wo sind deine Freunde?",
+            "en": "I am Nefertari the Shining. I bring a question: Pharaoh, where are your friends?",
+            "fr": "Je suis Nefertari la Lumineuse. Je pose une question : Pharaon, où sont tes amis ?",
+            "it": "Sono Nefertari la Luminosa. Porto una domanda: Faraone, dove sono i tuoi amici?",
+            "ja": "私は光るネフェルティ。質問があるわ。ファラオ、友達はどこ？",
+            "ko": "나는 빛나는 네페르타리. 질문이 있어. 파라오여, 당신의 친구들은 어디에?",
+            "pl": "Jestem Nefertari Świecąca. Przynoszę pytanie: Faraonie, gdzie są twoi przyjaciele?",
+            "pt-BR": "Sou Nefertari, a Brilhante. Trago uma pergunta: Faraó, onde estão seus amigos?",
+            "ru": "Я — Нефертари Светящаяся. Я с вопросом: Фараон, где твои друзья?",
+            "uk": "Я — Нефертарі Сяюча. Я принесла запитання: Фараоне, де твої друзі?",
+            "vi": "Ta là Nefertari Ánh Sáng. Ta đến với một câu hỏi: Hoàng Đế, bạn bè của ngươi đâu?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_golden_hall",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "gesturing",
+        "gold mask",
+        "proud",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Já mám ZLATO. Zlato neodejde, neodmlouvá, na nic se neptá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe GOLD. Gold geht nicht weg, widerspricht nicht, fragt nicht nach.",
+            "en": "I have GOLD. Gold doesn't leave, doesn't talk back, doesn't ask questions.",
+            "fr": "J'ai de l'OR. L'or ne part pas, ne répond pas, ne pose aucune question.",
+            "it": "Io ho l'ORO. L'oro non se ne va, non replica, non fa domande.",
+            "ja": "俺には金がある。金は去らない、口も利かない、何も聞かない。",
+            "ko": "나는 금이 있어. 금은 떠나지 않고, 말대꾸도 하지 않으며, 질문도 하지 않아.",
+            "pl": "Mam ZŁOTO. Złoto nie odchodzi, nie odpowiada, nie zadaje pytań.",
+            "pt-BR": "Tenho OURO. Ouro não vai embora, não responde, não faz perguntas.",
+            "ru": "У меня есть ЗОЛОТО. Золото не уходит, не перечит, ни о чём не спрашивает.",
+            "uk": "У мене є ЗОЛОТО. Золото не йде, не сперечається, ні про що не питає.",
+            "vi": "Ta có VÀNG. Vàng không đi đâu, không cãi lại, không hỏi gì cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_golden_hall",
+      "characters": [
+        {
+          "id": "nefertari"
+        },
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "looking around empty hall",
+        "gold statues",
+        "sad expression",
+        "empty room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nefertari",
+          "text": "Zlato jen stojí. A ty jsi poušť přikryl stínem, aby nikdo neviděl, jak je tady prázdno.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gold steht nur da. Und du hast die Wüste mit Schatten bedeckt, damit niemand sieht, wie leer es hier ist.",
+            "en": "Gold just sits there. And you've covered the desert in shadow so no one sees how empty it is here.",
+            "fr": "L'or reste immobile. Et tu as couvert le désert d'ombre pour que personne ne voie la vacuité ici.",
+            "it": "L'oro resta immobile. E tu hai coperto il deserto con un'ombra, perché nessuno veda quanto è vuoto qui.",
+            "ja": "金はただ立っているだけ。あなたは砂漠を影で覆い、ここが空虚だと誰も見えないようにした。",
+            "ko": "금은 그저 서 있을 뿐이죠. 당신은 사막을 그림자로 덮어 아무도 여기가 얼마나 비어 있는지 보지 못하게 했어요.",
+            "pl": "Złoto tylko stoi. A ty zasłoniłeś pustynię cieniem, żeby nikt nie widział, jak tu pusto.",
+            "pt-BR": "Ouro só fica parado. E você cobriu o deserto de sombra para ninguém ver o vazio aqui.",
+            "ru": "Золото просто стоит. А ты накрыл пустыню тенью, чтобы никто не видел, как здесь пусто.",
+            "uk": "Золото просто стоїть. А ти накрив пустеллю тінь, щоб ніхто не бачив, як тут порожньо.",
+            "vi": "Vàng chỉ đứng đó. Ngươi trùm bóng tối lên sa mạc để người ta không thấy sự trống rỗng nơi đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_top",
+      "characters": [
+        {
+          "id": "pharaoh"
+        },
+        {
+          "id": "nefertari"
+        }
+      ],
+      "visual_tags": [
+        "standing on roof",
+        "large golden disc shadow",
+        "night sky",
+        "looking at shadow",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Když jsem byl malý, nikdo nechodil na mé oslavy. Řekl jsem si: jednou budu mít tolik zlata, že si každý přijde sednout.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Als ich klein war, kam niemand zu meinen Feiern. Ich dachte: Wenn ich genug Gold habe, wird jeder kommen und Platz nehmen.",
+            "en": "When I was little, no one came to my parties. I thought: one day I'll have so much gold that everyone will come sit with me.",
+            "fr": "Petit, personne ne venait à mes fêtes. Je me suis dit : un jour, j'aurai assez d'or pour que chacun vienne s'asseoir.",
+            "it": "Da piccolo, nessuno veniva alle mie feste. Ho pensato: un giorno avrò tanto oro che tutti verranno a sedersi.",
+            "ja": "幼い頃、誰も俺のパーティーに来なかった。金があれば皆が座りに来ると思ったんだ。",
+            "ko": "어릴 때 누구도 내 파티에 오지 않았어. 생각했지. 금이 많으면 모두 와서 앉아줄 거라고.",
+            "pl": "Gdy byłem mały, nikt nie chodził na moje imprezy. Pomyślałem: kiedyś będę miał tyle złota, że każdy przyjdzie usiąść.",
+            "pt-BR": "Quando era criança, ninguém vinha às minhas festas. Pensei: terei ouro suficiente para que todos venham.",
+            "ru": "Когда я был маленьким, никто не ходил на мои праздники. Я подумал: однажды у меня будет столько золота, что все придут и сядут.",
+            "uk": "Коли я був малим, ніхто не ходив на мої свята. Я подумав: одного разу у мене буде стільки золота, що всі прийдуть сісти.",
+            "vi": "Khi còn nhỏ, chẳng ai đến dự tiệc của ta. Ta nghĩ: một ngày nào đó, ta sẽ có đủ vàng để ai cũng muốn đến ngồi cùng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_top",
+      "characters": [
+        {
+          "id": "nefertari"
+        }
+      ],
+      "visual_tags": [
+        "pointing staff at sky",
+        "determined",
+        "glowing staff",
+        "looking at pharaoh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nefertari",
+          "text": "Dej noc zpátky hvězdám. A otevři pyramidu. Ne jako pokladnici. Jako dům.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gib die Nacht zurück an die Sterne. Und öffne die Pyramide. Nicht als Schatzkammer. Als Haus.",
+            "en": "Give the night back to the stars. And open the pyramid. Not as a vault. As a home.",
+            "fr": "Rends la nuit aux étoiles. Ouvre la pyramide. Pas comme un trésor. Comme une maison.",
+            "it": "Rendi la notte alle stelle. E apri la piramide. Non come una cassaforte. Come una casa.",
+            "ja": "夜を星々に返して。ピラミドを開けて。金庫じゃなく、家として。",
+            "ko": "밤을 별들에게 돌려줘. 그리고 피라미드를 열어. 금고가 아니라 집처럼.",
+            "pl": "Oddaj noc gwiazdom. I otwórz piramidę. Nie jak skarbiec. Jak dom.",
+            "pt-BR": "Devolva a noite às estrelas. Abra a pirâmide. Não como cofre. Como casa.",
+            "ru": "Верни ночь звёздам. И открой пирамиду. Не как хранилище. Как дом.",
+            "uk": "Поверни ніч зіркам. І відкрий піраміду. Не як скарбницю. Як дім.",
+            "vi": "Hãy trả lại đêm cho những vì sao. Và mở cửa kim tự tháp. Không phải như kho báu. Mà như một ngôi nhà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, dust drifting, static camera",
+      "motion_llm": "staff glowing and pointing upwards, stars twinkling, static camera",
+      "wd14_tags": {
+        "1girl": 0.993,
+        "solo": 0.966,
+        "desert": 0.957,
+        "dark skin": 0.921,
+        "black hair": 0.917,
+        "long hair": 0.893,
+        "star (sky)": 0.883,
+        "yellow eyes": 0.882,
+        "sky": 0.881,
+        "white dress": 0.87,
+        "staff": 0.869,
+        "dress": 0.855
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_top",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "pushing golden disc",
+        "sunlight rays",
+        "opening sky",
+        "straining",
+        "effort"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Oni se dívají nahoru. Na mě?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie schauen nach oben. Zu mir?",
+            "en": "They're looking up. At me?",
+            "fr": "Ils regardent en haut. Vers moi ?",
+            "it": "Guardano in alto. Guardano me?",
+            "ja": "彼らは上を見ている。俺のこと？",
+            "ko": "그들이 위를 보고 있어. 나를?",
+            "pl": "Oni patrzą w górę. Na mnie?",
+            "pt-BR": "Eles olham para cima. Para mim?",
+            "ru": "Они смотрят вверх. На меня?",
+            "uk": "Вони дивляться вгору. На мене?",
+            "vi": "Họ đang nhìn lên. Nhìn ta sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pyramid_top",
+      "characters": [
+        {
+          "id": "nefertari"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "looking up",
+        "sunlight on face",
+        "hopeful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nefertari",
+          "text": "Dívají se na slunce. Jestli chceš, aby se dívali na tebe, musíš jim ukázat tvář, ne masku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie schauen zur Sonne. Wenn du willst, dass sie dich ansehen, musst du ihnen dein Gesicht zeigen, nicht die Maske.",
+            "en": "They're looking at the sun. If you want them to look at you, you have to show your face, not a mask.",
+            "fr": "Ils regardent le soleil. Si tu veux qu'ils te regardent, montre-leur ton visage, pas ton masque.",
+            "it": "Guardano il sole. Se vuoi che guardino te, devi mostrare il viso, non la maschera.",
+            "ja": "太陽を見ているの。彼らにあなたを見てほしければ、仮面ではなく顔を見せなきゃ。",
+            "ko": "그들은 해를 보고 있어. 그들이 당신을 보게 하려면, 가면이 아닌 얼굴을 보여줘야 해.",
+            "pl": "Patrzą na słońce. Jeśli chcesz, by patrzyli na ciebie, pokaż im twarz, nie maskę.",
+            "pt-BR": "Olham para o sol. Se quer que olhem para você, mostre o rosto, não a máscara.",
+            "ru": "Они смотрят на солнце. Если хочешь, чтобы они смотрели на тебя, покажи лицо, а не маску.",
+            "uk": "Вони дивляться на сонце. Якщо хочеш, щоб вони дивилися на тебе, покажи їм обличчя, а не маску.",
+            "vi": "Họ nhìn mặt trời. Nếu muốn họ nhìn ta, ngươi phải cho họ thấy gương mặt, không phải chiếc mặt nạ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

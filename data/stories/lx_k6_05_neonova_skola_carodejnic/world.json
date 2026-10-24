@@ -1,0 +1,109 @@
+{
+  "id": "w_lx_k6_05_neonova_skola_carodejnic",
+  "title": "Neonová a škola čarodějnic",
+  "synopsis": "Malá princezna Neonová se vydává do temného lesa, aby naučila zlé čarodějnice, že kouzla mají smysl, když se jimi dělí radost.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Neonová zůstává ve Vřesovišti učit trojčata, jak být první v něčem hezkém."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_clearing"
+    ]
+  },
+  "characters": [
+    {
+      "id": "neonova",
+      "name": "Karolína „Neonová“",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a cute Czech girl aged 9 with long blonde hair and a small golden crown",
+      "base": "female child, blonde hair, long hair, blue eyes, fair skin, crown",
+      "outfits": {
+        "default": "pink princess dress, white cape, holding magic wand, glowing wand"
+      },
+      "photo": "a cute Czech girl aged 9 with long blonde hair and a small golden crown",
+      "tag_prompt": "female child, blonde hair, long hair, blue eyes, fair skin, crown, pink princess dress, white cape, holding magic wand, glowing wand",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "witch1",
+      "name": "Vršek",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green-skinned witch with messy hair and a tattered purple robe",
+      "base": "witch, green skin, pointy ears, messy hair, small stature",
+      "outfits": {
+        "default": "tattered purple robe, pointy hat, holding staff"
+      },
+      "photo": "a small green-skinned witch with messy hair and a tattered purple robe",
+      "tag_prompt": "witch, green skin, pointy ears, messy hair, small stature, tattered purple robe, pointy hat, holding staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "witch2",
+      "name": "Vrtek",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green-skinned witch with braids and a tattered purple robe",
+      "base": "witch, green skin, pointy ears, braids, small stature",
+      "outfits": {
+        "default": "tattered purple robe, pointy hat, holding staff"
+      },
+      "photo": "a small green-skinned witch with braids and a tattered purple robe",
+      "tag_prompt": "witch, green skin, pointy ears, braids, small stature, tattered purple robe, pointy hat, holding staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "witch3",
+      "name": "Vrška",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green-skinned witch with short hair and a tattered purple robe",
+      "base": "witch, green skin, pointy ears, short hair, small stature",
+      "outfits": {
+        "default": "tattered purple robe, pointy hat, holding staff"
+      },
+      "photo": "a small green-skinned witch with short hair and a tattered purple robe",
+      "tag_prompt": "witch, green skin, pointy ears, short hair, small stature, tattered purple robe, pointy hat, holding staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Vřesoviště",
+      "description": "Vřesoviště",
+      "tag_prompt": "outdoors, dark forest, twisted trees, glowing mushrooms, moonlight, fog, magical atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_clearing",
+      "name": "Místo soutěže",
+      "description": "Místo soutěže",
+      "tag_prompt": "outdoors, forest clearing, ancient stones, magical runes on ground, moonlight, fog",
+      "mood": ""
+    }
+  ]
+}

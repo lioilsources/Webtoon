@@ -1,0 +1,488 @@
+{
+  "title": "Rik a les, který si pamatuje",
+  "title_i18n": {
+    "de": "Rik und der Wald, der sich erinnert",
+    "en": "Rik and the Forest That Remembers",
+    "fr": "Rik et la forêt qui se souvient",
+    "it": "Rik e il bosco che ricorda",
+    "ja": "リクと、記憶する森",
+    "ko": "기억하는 리크와 숲",
+    "pl": "Rik i las, który pamięta",
+    "pt-BR": "Rik e a floresta que se lembra",
+    "ru": "Рик и лес, который помнит",
+    "uk": "Рік і ліс, що пам’ятає",
+    "vi": "Rik và khu rừng biết nhớ"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "forest path",
+        "tall trees",
+        "sunlight",
+        "mist",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Tichý les. Slunce svítí skrz koruny.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stiller Wald. Die Sonne scheint durch die Kronen.",
+            "en": "A quiet forest. Sunlight filters through the canopy.",
+            "fr": "Une forêt silencieuse. Le soleil filtre à travers les cimes.",
+            "it": "Un bosco silenzioso. Il sole filtra tra le chiome.",
+            "ja": "静かな森。太陽が樹冠を抜け、差し込んでいる。",
+            "ko": "고요한 숲. 햇살이 수관을 뚫고 내려온다.",
+            "pl": "Cichy las. Słońce świeci przez korony.",
+            "pt-BR": "Floresta silenciosa. O sol brilha através das copas.",
+            "ru": "Тихий лес. Солнце пробивается сквозь кроны.",
+            "uk": "Тихий ліс. Сонце світить крізь крони.",
+            "vi": "Khu rừng yên tĩnh. Ánh nắng xuyên qua tán lá."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "sunlight filtering through leaves, mist drifting slowly, static camera",
+      "wd14_tags": {
+        "no humans": 0.984,
+        "outdoors": 0.957,
+        "nature": 0.953,
+        "tree": 0.946,
+        "forest": 0.929,
+        "grass": 0.918,
+        "scenery": 0.849,
+        "day": 0.671,
+        "road": 0.587,
+        "bush": 0.459,
+        "path": 0.424,
+        "shadow": 0.42
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "rik"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "listening",
+        "hand on ear",
+        "surprised",
+        "looking around"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rik",
+          "text": "Kdo to řekl?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer hat das gesagt?",
+            "en": "Who said that?",
+            "fr": "Qui a parlé ?",
+            "it": "Chi l'ha detto?",
+            "ja": "誰が言ったの？",
+            "ko": "누가 말했지?",
+            "pl": "Kto to powiedział?",
+            "pt-BR": "Quem disse isso?",
+            "ru": "Кто это сказал?",
+            "uk": "Хто це сказав?",
+            "vi": "Ai vừa nói vậy?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "mia"
+        }
+      ],
+      "visual_tags": [
+        "wolf standing",
+        "looking at viewer",
+        "calm",
+        "white fur"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mia",
+          "text": "Já.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich.",
+            "en": "I did.",
+            "fr": "Moi.",
+            "it": "Io.",
+            "ja": "私よ。",
+            "ko": "나야.",
+            "pl": "Ja.",
+            "pt-BR": "Eu.",
+            "ru": "Я.",
+            "uk": "Я.",
+            "vi": "Tớ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "rik"
+        }
+      ],
+      "visual_tags": [
+        "shocked",
+        "wide eyes",
+        "open mouth",
+        "stunned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rik",
+          "text": "Ty mluvíš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du sprichst.",
+            "en": "You're talking.",
+            "fr": "Tu parles.",
+            "it": "Tu parli.",
+            "ja": "あなた、話してるわ。",
+            "ko": "네가 말을 했어.",
+            "pl": "Ty mówisz.",
+            "pt-BR": "Você está falando.",
+            "ru": "Ты говоришь.",
+            "uk": "Ти говориш.",
+            "vi": "Cậu nói chuyện đấy à."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "rik"
+        },
+        {
+          "id": "mia"
+        }
+      ],
+      "visual_tags": [
+        "cave entrance",
+        "roots",
+        "dark",
+        "glowing moss",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pod kořeny je tajná jeskyně.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Unter den Wurzeln liegt eine geheime Höhle.",
+            "en": "Beneath the roots lies a secret cave.",
+            "fr": "Sous les racines, une grotte secrète.",
+            "it": "Sotto le radici c'è una grotta segreta.",
+            "ja": "根元の奥には、秘密の洞窟がある。",
+            "ko": "뿌리 아래에는 비밀 동굴이 있다.",
+            "pl": "Pod korzeniami jest tajna jaskinia.",
+            "pt-BR": "Sob as raízes há uma caverna secreta.",
+            "ru": "Под корнями — тайная пещера.",
+            "uk": "Під корінням таємна печера.",
+            "vi": "Dưới gốc cây là một hang động bí mật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "demons"
+        }
+      ],
+      "visual_tags": [
+        "monster sleeping",
+        "large",
+        "rock skin",
+        "glowing eyes",
+        "waking up",
+        "opening eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "demons",
+          "text": "Kdo mě probudil?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer hat mich geweckt?",
+            "en": "Who woke me?",
+            "fr": "Qui m'a réveillé ?",
+            "it": "Chi mi ha svegliato?",
+            "ja": "誰が私を起こした？",
+            "ko": "누가 나를 깨웠지?",
+            "pl": "Kto mnie obudził?",
+            "pt-BR": "Quem me acordou?",
+            "ru": "Кто меня разбудил?",
+            "uk": "Хто мене прокинув?",
+            "vi": "Ai đã đánh thức ta?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "GRUNN",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "rik"
+        },
+        {
+          "id": "demons"
+        }
+      ],
+      "visual_tags": [
+        "holding sword",
+        "defensive pose",
+        "wolf growling",
+        "tense",
+        "glowing eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "demons",
+          "text": "Lžeš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du lügst.",
+            "en": "You're lying.",
+            "fr": "Tu mens.",
+            "it": "Menti.",
+            "ja": "嘘をつくな。",
+            "ko": "거짓말이야.",
+            "pl": "Kłamiesz.",
+            "pt-BR": "Você mente.",
+            "ru": "Лжёшь.",
+            "uk": "Ти брешеш.",
+            "vi": "Cậu nói dối."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "strazce"
+        }
+      ],
+      "visual_tags": [
+        "ghost appearing",
+        "transparent",
+        "glowing",
+        "calm",
+        "floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "strazce",
+          "text": "Démon není nepřítel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Dämon ist kein Feind.",
+            "en": "The demon is not an enemy.",
+            "fr": "Le démon n'est pas un ennemi.",
+            "it": "Il demone non è un nemico.",
+            "ja": "魔物は敵ではない。",
+            "ko": "악마는 적이 아니야.",
+            "pl": "Demon to nie wróg.",
+            "pt-BR": "O demônio não é inimigo.",
+            "ru": "Демон — не враг.",
+            "uk": "Демон — не ворог.",
+            "vi": "Ác quỷ không phải kẻ thù."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "particles floating, leaves swaying gently, soft glow pulsing, static camera",
+      "motion_llm": "spirit glowing softly, particles floating, static camera",
+      "wd14_tags": {
+        "green theme": 0.942,
+        "no humans": 0.93,
+        "scenery": 0.829,
+        "glowing": 0.795,
+        "flower": 0.775,
+        "tree": 0.562,
+        "outdoors": 0.549,
+        "nature": 0.545,
+        "dark": 0.422,
+        "light": 0.392
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cave",
+      "characters": [
+        {
+          "id": "rik"
+        },
+        {
+          "id": "demons"
+        }
+      ],
+      "visual_tags": [
+        "handshake",
+        "monster hand",
+        "human hand",
+        "smile",
+        "friendly"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rik",
+          "text": "Takže můžeme být přátelé?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dürfen wir dann Freunde sein?",
+            "en": "So we can be friends?",
+            "fr": "Du coup, on peut être amis ?",
+            "it": "Allora possiamo essere amici?",
+            "ja": "じゃあ、友達になれる？",
+            "ko": "그럼 친구가 될 수 있어?",
+            "pl": "Czyli możemy się przyjaźnić?",
+            "pt-BR": "Então podemos ser amigos?",
+            "ru": "Значит, мы можем быть друзьями?",
+            "uk": "Тож ми можемо бути друзями?",
+            "vi": "Vậy thì chúng ta có thể làm bạn được chứ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "rik"
+        },
+        {
+          "id": "mia"
+        },
+        {
+          "id": "demons"
+        }
+      ],
+      "visual_tags": [
+        "walking away",
+        "back view",
+        "forest path",
+        "night",
+        "moonless sky",
+        "monster watching"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "demons",
+          "text": "Až přijde noc bez měsíce, vrať se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn die mondlose Nacht kommt, komm zurück.",
+            "en": "When the moonless night comes, return.",
+            "fr": "Quand viendra la nuit sans lune, reviens.",
+            "it": "Quando verrà la notte senza luna, torna.",
+            "ja": "月のない夜が来たら、また来なさい。",
+            "ko": "보름달 없는 밤이 오면 다시 와.",
+            "pl": "Gdy nadejdzie noc bez księżyca, wróć.",
+            "pt-BR": "Quando vier a noite sem lua, volte.",
+            "ru": "Когда наступит ночь без луны, возвращайся.",
+            "uk": "Коли настане ніч без місяця, повертайся.",
+            "vi": "Khi đêm không trăng đến, hãy quay lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "rik"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "determined",
+        "looking at viewer",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rik",
+          "text": "Já ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "I won't.",
+            "fr": "Moi, non.",
+            "it": "Io no.",
+            "ja": "私、やだ。",
+            "ko": "나는 안 해.",
+            "pl": "Nie ja.",
+            "pt-BR": "Eu não.",
+            "ru": "Я — нет.",
+            "uk": "Я — ні.",
+            "vi": "Tớ không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

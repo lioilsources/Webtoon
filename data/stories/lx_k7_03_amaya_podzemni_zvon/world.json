@@ -1,0 +1,133 @@
+{
+  "id": "w_lx_k7_03_amaya_podzemni_zvon",
+  "title": "Amaya a podzemní zvon",
+  "synopsis": "Amaya s mečem proniká do podzemí, aby vrátila odvahu lidem a porazila Lichkrále Zinula.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: odvaha je volná, ale jeden kousek chybí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forge",
+      "l_tunnel",
+      "l_hall"
+    ]
+  },
+  "characters": [
+    {
+      "id": "amaya",
+      "name": "Amaya Mečová",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 12 with long red flame-like hair and blue eyes",
+      "base": "female child, long red hair, flame hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver armor, red cape, heavy gauntlets, boots"
+      },
+      "photo": "a brave Czech girl aged 12 with long red flame-like hair and blue eyes",
+      "tag_prompt": "female child, long red hair, flame hair, blue eyes, fair skin, determined face, silver armor, red cape, heavy gauntlets, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "brokulda",
+      "name": "Brokulda",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a stout Czech dwarf with a thick beard and a blacksmith's apron",
+      "base": "dwarf, short, muscular, beard, blacksmith hat",
+      "outfits": {
+        "default": "leather apron, metal helmet, tool belt"
+      },
+      "photo": "a stout Czech dwarf with a thick beard and a blacksmith's apron",
+      "tag_prompt": "dwarf, short, muscular, beard, blacksmith hat, leather apron, metal helmet, tool belt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zinul",
+      "name": "Lichkrál Zinul",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall skeletal king with a golden crown and glowing blue eyes",
+      "base": "skeleton, skull, crown, glowing eyes, cape",
+      "outfits": {
+        "default": "dark robe, crown, holding crystal"
+      },
+      "photo": "a tall skeletal king with a golden crown and glowing blue eyes",
+      "tag_prompt": "skeleton, skull, crown, glowing eyes, cape, dark robe, crown, holding crystal",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "hornik",
+      "name": "Horník",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tired humanoid miner with a dusty face and a helmet",
+      "base": "humanoid, miner, beard, cap, lantern, dusty face",
+      "outfits": {
+        "default": "brown miner clothes, helmet, lantern"
+      },
+      "photo": "a tired humanoid miner with a dusty face and a helmet",
+      "tag_prompt": "humanoid, miner, beard, cap, lantern, dusty face, brown miner clothes, helmet, lantern",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "metal_boy",
+      "name": "Kovový chlapec",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small robot with exposed gears and glowing blue eyes",
+      "base": "robot, small, metal skin, glowing eyes, childlike proportions",
+      "outfits": {
+        "default": "exposed gears, small metal body"
+      },
+      "photo": "a small robot with exposed gears and glowing blue eyes",
+      "tag_prompt": "robot, small, metal skin, glowing eyes, childlike proportions, exposed gears, small metal body",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forge",
+      "name": "Podzemní kovárna",
+      "description": "Podzemní kovárna",
+      "tag_prompt": "indoors, underground forge, crystal walls, glowing crystals, anvil, dark, blue light",
+      "mood": ""
+    },
+    {
+      "id": "l_tunnel",
+      "name": "Tunely",
+      "description": "Tunely",
+      "tag_prompt": "indoors, underground tunnel, stone walls, dim light, narrow path, dust",
+      "mood": ""
+    },
+    {
+      "id": "l_hall",
+      "name": "Sál Lichkrále",
+      "description": "Sál Lichkrále",
+      "tag_prompt": "indoors, throne room, black metal walls, large throne, dark, purple ambient light",
+      "mood": ""
+    }
+  ]
+}

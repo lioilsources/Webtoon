@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k7_06_matej_pastyr_planet",
+  "title": "Matej a pastýř planet",
+  "synopsis": "Kosmický pastýř Matěj zachrání osamělou planetu Požírače pomocí gravitačního lana a přátelství.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Planeta Požírač má návštěvy a není už sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_asteroid",
+      "l_planet",
+      "l_pastvina"
+    ]
+  },
+  "characters": [
+    {
+      "id": "matej",
+      "name": "Matěj",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 11 with short brown hair and a futuristic ring helmet",
+      "base": "male child, brown hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "silver space helmet, ring-shaped helmet, white spacesuit, purple gloves, boots, holding rope"
+      },
+      "photo": "a brave Czech boy aged 11 with short brown hair and a futuristic ring helmet",
+      "tag_prompt": "male child, brown hair, short hair, blue eyes, fair skin, silver space helmet, ring-shaped helmet, white spacesuit, purple gloves, boots, holding rope",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kralik",
+      "name": "Měsíční Králík",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small white rabbit with long ears and a fluffy tail",
+      "base": "rabbit, white fur, long ears, big eyes, fluffy tail",
+      "outfits": {
+        "default": "small silver collar"
+      },
+      "photo": "a small white rabbit with long ears and a fluffy tail",
+      "tag_prompt": "rabbit, white fur, long ears, big eyes, fluffy tail, small silver collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pozirac",
+      "name": "Planeta Požírač",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large grey planet with craters, glowing blue eyes and a sad mouth",
+      "base": "planet, grey surface, craters, glowing eyes, mouth",
+      "outfits": {
+        "default": "cratered surface, glowing blue eyes, open mouth"
+      },
+      "photo": "a large grey planet with craters, glowing blue eyes and a sad mouth",
+      "tag_prompt": "planet, grey surface, craters, glowing eyes, mouth, cratered surface, glowing blue eyes, open mouth",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_asteroid",
+      "name": "Pás asteroidů",
+      "description": "Pás asteroidů",
+      "tag_prompt": "outdoors, space, asteroid belt, floating rocks, stars, nebula, deep space, night",
+      "mood": ""
+    },
+    {
+      "id": "l_planet",
+      "name": "Planeta Požírač",
+      "description": "Planeta Požírač",
+      "tag_prompt": "outdoors, space, close up of planet, grey surface, craters, stars in background, night",
+      "mood": ""
+    },
+    {
+      "id": "l_pastvina",
+      "name": "Kosmická pastvina",
+      "description": "Kosmická pastvina",
+      "tag_prompt": "outdoors, space, comet field, comets, stars, nebula, deep space, night",
+      "mood": ""
+    }
+  ]
+}

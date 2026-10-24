@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_05_elara_staroveky_les",
+  "title": "Elara a starověký les",
+  "synopsis": "Elara a její jednorožec Spark brání starověký les před ohnivým démonem pomocí léčivé magie.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Démon utekl, ale les je zatím v bezpečí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_battle"
+    ]
+  },
+  "characters": [
+    {
+      "id": "elara",
+      "name": "Elara",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a fantasy Czech girl aged 10 with long white hair, blue eyes and a small unicorn horn on her forehead",
+      "base": "female child, long white hair, straight hair, blue eyes, fair skin, unicorn horn on forehead",
+      "outfits": {
+        "default": "white mage robe, silver armor pieces, holding magic staff"
+      },
+      "photo": "a fantasy Czech girl aged 10 with long white hair, blue eyes and a small unicorn horn on her forehead",
+      "tag_prompt": "female child, long white hair, straight hair, blue eyes, fair skin, unicorn horn on forehead, white mage robe, silver armor pieces, holding magic staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a majestic white unicorn with a spiraled horn and gentle eyes",
+      "base": "unicorn, white fur, large eyes, long horn",
+      "outfits": {
+        "default": "golden bridle"
+      },
+      "photo": "a majestic white unicorn with a spiraled horn and gentle eyes",
+      "tag_prompt": "unicorn, white fur, large eyes, long horn, golden bridle",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demon",
+      "name": "Temný Démon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red demon with bat wings, large horns and glowing yellow eyes",
+      "base": "demon, red skin, large horns, bat wings, glowing yellow eyes, muscular",
+      "outfits": {
+        "default": "dark armor, glowing red markings"
+      },
+      "photo": "a large red demon with bat wings, large horns and glowing yellow eyes",
+      "tag_prompt": "demon, red skin, large horns, bat wings, glowing yellow eyes, muscular, dark armor, glowing red markings",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Starověký les",
+      "description": "Starověký les",
+      "tag_prompt": "outdoors, ancient forest, large trees, fog, mist, moonlight, magical atmosphere, dark green",
+      "mood": ""
+    },
+    {
+      "id": "l_battle",
+      "name": "Místo souboje",
+      "description": "Místo souboje",
+      "tag_prompt": "outdoors, ancient forest clearing, fog, magical energy, glowing particles, night",
+      "mood": ""
+    }
+  ]
+}

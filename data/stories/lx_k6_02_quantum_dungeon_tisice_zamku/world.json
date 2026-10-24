@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k6_02_quantum_dungeon_tisice_zamku",
+  "title": "Quantum a tisíce zámků",
+  "synopsis": "Geniální vynálezce Tereza čelí daemonovi, který zamkl město, a odhalí skrytého skřítka uvnitř jeho zámků.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: město je volné, ale trhlina je hlídaná."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_city",
+      "l_dungeon",
+      "l_portal"
+    ]
+  },
+  "characters": [
+    {
+      "id": "tereza",
+      "name": "Tereza",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a serious Czech girl aged 12 with short black hair and round glasses",
+      "base": "female child, short black hair, bob cut, blue eyes, fair skin, glasses",
+      "outfits": {
+        "default": "white lab coat, goggles on forehead, utility belt, dark pants, boots"
+      },
+      "photo": "a serious Czech girl aged 12 with short black hair and round glasses",
+      "tag_prompt": "female child, short black hair, bob cut, blue eyes, fair skin, glasses, white lab coat, goggles on forehead, utility belt, dark pants, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "qbit",
+      "name": "Q-Bit",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small floating cube robot with a single glowing blue eye",
+      "base": "robot, drone, cube shape, floating, glowing blue eye",
+      "outfits": {
+        "default": "glowing blue visor, antenna"
+      },
+      "photo": "a small floating cube robot with a single glowing blue eye",
+      "tag_prompt": "robot, drone, cube shape, floating, glowing blue eye, glowing blue visor, antenna",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zamkelom",
+      "name": "Zámeklom",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent ghost with a large metallic key for a head",
+      "base": "ghost, translucent, floating, key head, metallic texture",
+      "outfits": {
+        "default": "glowing blue stripes, metallic key head"
+      },
+      "photo": "a translucent ghost with a large metallic key for a head",
+      "tag_prompt": "ghost, translucent, floating, key head, metallic texture, glowing blue stripes, metallic key head",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "goblin",
+      "name": "Skřítek",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green goblin with big ears looking scared",
+      "base": "goblin, small, green skin, big ears, scared expression",
+      "outfits": {
+        "default": "tattered brown cloak"
+      },
+      "photo": "a small green goblin with big ears looking scared",
+      "tag_prompt": "goblin, small, green skin, big ears, scared expression, tattered brown cloak",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_city",
+      "name": "Dveřohrad",
+      "description": "Dveřohrad",
+      "tag_prompt": "outdoors, fantasy city, cobblestone street, many doors, closed doors, sunlight, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon",
+      "name": "Srdce Dungeonu",
+      "description": "Srdce Dungeonu",
+      "tag_prompt": "indoors, dungeon, chessboard floor, stone walls, dim light, mysterious atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_portal",
+      "name": "Trhlina",
+      "description": "Trhlina",
+      "tag_prompt": "indoors, dungeon, glowing rift in wall, stone arch, dark energy, sparks",
+      "mood": ""
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "title": "Stínová tlapka a probuzený faraon",
+  "title_i18n": {
+    "de": "Der Schattenpfote und der erwachte Pharaon",
+    "en": "The Shadow Paw and the Awakened Pharaoh",
+    "fr": "La patte d'ombre et le pharaon réveillé",
+    "it": "L'ombra della zampa e il faraone risvegliato",
+    "ja": "影の肉球と目覚めたファラオ",
+    "ko": "그림자 발톱과 각성한 파라오",
+    "pl": "Cień łapy i przebudzony faraon",
+    "pt-BR": "A Pata Sombria e o Faraó Desperto",
+    "ru": "Теневая лапа и пробуждённый фараон",
+    "uk": "Тінива лапа та пробуджений фараон",
+    "vi": "Bóng ma vuốt và Pharaoh thức tỉnh"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_giza",
+      "characters": [],
+      "visual_tags": [
+        "pyramids",
+        "night sky",
+        "stars",
+        "moon",
+        "sand dunes",
+        "silhouette"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noční Gíza pod hvězdami.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nachtliches Gizeh unter den Sternen.",
+            "en": "Nighttime Giza under the stars.",
+            "fr": "Gizeh de nuit sous les étoiles.",
+            "it": "Giza di notte sotto le stelle.",
+            "ja": "星空の下、ギザの夜。",
+            "ko": "별이 빛나는 밤의 기자.",
+            "pl": "Nocne Giza pod gwiazdami.",
+            "pt-BR": "Noite em Gizé sob as estrelas.",
+            "ru": "Ночной Гиза под звёздами.",
+            "uk": "Нічне Ґізо під зорями.",
+            "vi": "Giza ban đêm dưới bầu trời sao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, dust drifting, static camera",
+      "motion_llm": "stars drifting slowly, moonlight shimmering on sand, static camera",
+      "wd14_tags": {
+        "no humans": 0.985,
+        "sky": 0.965,
+        "moon": 0.96,
+        "desert": 0.958,
+        "star (sky)": 0.939,
+        "night": 0.932,
+        "night sky": 0.892,
+        "starry sky": 0.851,
+        "outdoors": 0.798,
+        "scenery": 0.781,
+        "full moon": 0.705,
+        "sand": 0.448
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_giza",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "luna"
+        }
+      ],
+      "visual_tags": [
+        "sitting on sand",
+        "holding flashlight",
+        "glowing eyes",
+        "looking up",
+        "whispering"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Luno, počet nemrtvých?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Luno, wie viele Untote?",
+            "en": "Luno, undead count?",
+            "fr": "Luno, le compte des morts-vivants ?",
+            "it": "Luno, quanti non morti?",
+            "ja": "ルナ、不死者の数は？",
+            "ko": "루노, 넌데드 수야?",
+            "pl": "Luno, ile nieumarłych?",
+            "pt-BR": "Luno, quantos mortos-vivos?",
+            "ru": "Луна, сколько нежити?",
+            "uk": "Луно, скільки нежиті?",
+            "vi": "Luno, đếm xem có bao nhiêu xác sống?"
+          }
+        },
+        {
+          "speaker_id": "luna",
+          "text": "Mňau-píp. Čtyři stovky. Plus jeden velmi sebevědomý.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Miau-Piep. Vierhundert. Plus einer, der ziemlich selbstbewusst ist.",
+            "en": "Meow-pip. Four hundred. Plus one very confident guy.",
+            "fr": "Miaou-pip. Quatre cents. Plus un très sûr de lui.",
+            "it": "Miao-pip. Quattrocento. Più uno molto sicuro di sé.",
+            "ja": "ニャーピッ。四百体。それに、かなり自信過剰なのが一人。",
+            "ko": "야옹-삑. 사백 마리. 그리고 아주 자신감 넘치는 하나.",
+            "pl": "Miau-pip. Cztery setki. Plus jeden bardzo pewny siebie.",
+            "pt-BR": "Miau-piu. Quatrocentos. Mais um bem confiante.",
+            "ru": "Мяу-пип. Четыре сотни. Плюс один очень самоуверенный.",
+            "uk": "Мяу-піп. Чотириста. Плюс один дуже впевнений.",
+            "vi": "Meo-píp. Bốn trăm. Cộng thêm một tên rất tự tin."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_giza",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "holding flashlight",
+        "determined",
+        "adjusting coat",
+        "serious face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Plášť, baterka, pravidla: nic z pyramid neodnášíme, nikoho nezraníme, když nezraní oni.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mantel, Taschenlampe, Regeln: Wir nehmen nichts aus der Pyramide mit, verletzen niemanden, solange sie uns nicht verletzen.",
+            "en": "Cloak, flashlight, rules: take nothing from the pyramid, hurt no one unless they hurt us first.",
+            "fr": "Manteau, lampe, règles : on ne prend rien de la pyramide, on blesse personne, sauf s'ils commencent.",
+            "it": "Mantello, torcia, regole: niente dalle piramidi, nessuno ferito, se non loro.",
+            "ja": "マント、懐中電灯、ルール：ピラミッドから何も持ち出さない、彼らが襲ってこない限り傷つけない。",
+            "ko": "망토, 손전등, 규칙: 피라미드에서 아무것도 가져가지 않고, 그들이 먼저 공격하지 않는 한 아무도 해치지 않아.",
+            "pl": "Płaszcz, latarka, zasady: nic z piramidy nie wynosimy, nikogo nie raniemy, jeśli oni nie zranią.",
+            "pt-BR": "Capa, lanterna, regras: nada da pirâmide, ninguém machucamos, se eles não machucarem.",
+            "ru": "Плащ, фонарик, правила: ничего не уносим из пирамид, никого не раним, если они не ранят нас.",
+            "uk": "Плащ, ліхтарик, правила: нічого з піраміди не забираємо, нікого не ранимо, якщо вони не ранять.",
+            "vi": "Áo choàng, pin, quy tắc: không lấy gì từ kim tự tháp, không làm ai bị thương trừ khi họ gây trước."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "khnum_tut"
+        }
+      ],
+      "visual_tags": [
+        "sitting on throne",
+        "stone throne",
+        "mummy",
+        "golden eyes",
+        "intimidating",
+        "stone walls",
+        "hieroglyphs"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "khnum_tut",
+          "text": "Soutěž, detektive! Uhádni, čeho se bojí král, který už nemůže zemřít – a ušetřím město!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Ein Wettbewerb, Detektiv! Rät, wovor der König Angst hat, der nicht mehr sterben kann – und ich verschone die Stadt!",
+            "en": "A contest, detective! Guess what the king who can't die fears most—and I'll spare the city!",
+            "fr": "Concours, détective ! Devine ce qui fait peur au roi qui ne peut plus mourir – et j'épargne la ville !",
+            "it": "Concorso, detective! Indovina cosa teme il re che non può morire – e salverò la città!",
+            "ja": "クイズだ、探偵！死んでもなお王が恐れるものを当てろ――そうすれば街を救ってやる！",
+            "ko": "퀴즈 시간, 탐정님! 죽지 못한 왕이 무언가를 두려워한다는 걸 맞춰보세요. 그럼 도시를 구해 드릴게요!",
+            "pl": "Zawody, detektywie! Zgadnij, czego boi się król, który nie może umrzeć – a ocalę miasto!",
+            "pt-BR": "Desafio, detetive! Adivinha o que o rei que não pode morrer tem medo – e salvo a cidade!",
+            "ru": "Соревнование, детектив! Угадай, чего боится царь, который уже не может умереть — и я пощажу город!",
+            "uk": "Змагання, детективе! Вгадай, чого боїться король, який уже не може померти — і я врятую місто!",
+            "vi": "Trò chơi, thám tử! Đoán xem vị vua bất tử sợ gì – và ta sẽ cứu thành phố!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "luna"
+        }
+      ],
+      "visual_tags": [
+        "glowing eyes",
+        "shining light",
+        "stone wall",
+        "painting",
+        "illuminating"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "khnum_tut"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at mummy",
+        "pointing",
+        "talking",
+        "stone wall background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Bojíš se zapomnění. Proto chceš ovládat živé – abys nebyl sám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hastcht die Vergessenheit. Deshalb willst du die Lebenden beherrschen – damit du nicht allein bist.",
+            "en": "You fear being forgotten. That's why you want to control the living—to never be alone.",
+            "fr": "Tu as peur d'être oublié. C'est pour ça que tu veux contrôler les vivants – pour ne pas être seul.",
+            "it": "Hai paura di essere dimenticato. Per questo vuoi controllare i vivi – per non essere solo.",
+            "ja": "君が恐れているのは、忘れられることだ。生きた人間を支配して、孤独になりたくないからな。",
+            "ko": "당신은 잊혀지는 게 두려워요. 그래서 살아있는 사람들을 지배하려는 거죠. 외로움을 떨쳐내기 위해.",
+            "pl": "Boisz się zapomnienia. Dlatego chcesz rządzić żywymi – żeby nie być samemu.",
+            "pt-BR": "Você tem medo do esquecimento. Por isso quer controlar os vivos – para não ficar sozinho.",
+            "ru": "Ты боишься забвения. Поэтому хочешь управлять живыми — чтобы не быть одному.",
+            "uk": "Ти боїшся забуття. Тому хочеш керувати живими — щоб не бути самотнім.",
+            "vi": "Ngươi sợ bị lãng quên. Nên ngươi muốn kiểm soát người sống – để khỏi cô đơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "extending hand",
+        "offering hand",
+        "kind smile",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Tvoje služba skončila. Semena se dávno vysadila. Podívej se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dein Dienst ist vorbei. Die Samen sind längst gesät. Schau nur hin.",
+            "en": "Your service is over. The seeds were sown long ago. Look.",
+            "fr": "Ton service est terminé. Les graines ont été semées il y a longtemps. Regarde.",
+            "it": "Il tuo servizio è finito. I semi sono stati seminati tempo fa. Guarda.",
+            "ja": "君の奉仕は終わった。種はもう昔に蒔かれた。見てごらん。",
+            "ko": "당신의 임무는 끝났어요. 씨앗은 이미 오래전에 뿌려졌죠. 보세요.",
+            "pl": "Twoja służba się skończyła. Ziarna dawno posiano. Spójrz.",
+            "pt-BR": "Seu serviço acabou. As sementes já foram plantadas. Olhe.",
+            "ru": "Твоя служба окончена. Семена давно посеяны. Посмотри.",
+            "uk": "Твоя служба закінчилася. Насіння давно посіяне. Подивись.",
+            "vi": "Nhiệm vụ của ngươi đã kết thúc. Hạt giống đã được gieo từ lâu. Hãy nhìn xem."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dawn",
+      "characters": [
+        {
+          "id": "khnum_tut"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "sunlight",
+        "glowing",
+        "dissolving",
+        "gold dust",
+        "smile",
+        "peaceful"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, dust drifting, static camera",
+      "motion_llm": "mummy dissolving into golden dust particles, sunlight rays moving, static camera",
+      "wd14_tags": {
+        "desert": 0.935,
+        "solo": 0.83,
+        "sitting": 0.778,
+        "glowing": 0.696,
+        "sand": 0.695,
+        "yellow eyes": 0.595,
+        "animal ears": 0.555,
+        "no humans": 0.528,
+        "alien": 0.447,
+        "outdoors": 0.434,
+        "egyptian": 0.386
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dawn",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "luna"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "watching",
+        "smile",
+        "closed eyes",
+        "peaceful",
+        "sunrise background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Klid, faraone. Vzpomínáme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ruhig, Pharaon. Wir erinnern uns.",
+            "en": "Calm down, Pharaoh. We remember.",
+            "fr": "Calme-toi, pharaon. On se souvient.",
+            "it": "Calma, faraone. Ricordiamo.",
+            "ja": "落ち着いて、ファラオ。私たちは記憶を辿るのだ。",
+            "ko": "진정하세요, 파라오. 우리는 기억하고 있어요.",
+            "pl": "Spokojnie, faraonie. Przypominamy.",
+            "pt-BR": "Calma, faraó. Estamos lembrando.",
+            "ru": "Тише, фараон. Мы помним.",
+            "uk": "Спокій, фараоне. Ми згадуємо.",
+            "vi": "Bình tĩnh, Pharaoh. Chúng ta đang nhớ về."
+          }
+        },
+        {
+          "speaker_id": "luna",
+          "text": "Mňau. A my si odnášíme jenom vzpomínku. Jako slušní lidé.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Miau. Und wir nehmen nur die Erinnerung mit. Wie anständige Menschen.",
+            "en": "Meow. And we only take memories. Like decent people.",
+            "fr": "Miaou. Et on ne repart qu'avec un souvenir. En gens bien.",
+            "it": "Miao. E noi portiamo via solo un ricordo. Come persone oneste.",
+            "ja": "ニャー。私たちは記憶だけを携えて帰るの。良識ある者として。",
+            "ko": "야옹. 그리고 우리는 기억만 가져갈 거예요. 정직한 사람처럼.",
+            "pl": "Miau. A my zabieramy tylko wspomnienie. Jak przyzwoici ludzie.",
+            "pt-BR": "Miau. E levamos apenas a memória. Como pessoas decentes.",
+            "ru": "Мяу. И мы уносим лишь воспоминание. Как приличные люди.",
+            "uk": "Мяу. І ми забираємо лише спогад. Як пристойні люди.",
+            "vi": "Meo. Và chúng ta chỉ mang theo ký ức. Như những người tử tế."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

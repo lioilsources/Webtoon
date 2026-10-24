@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k6_10_duchobrana_lod_tisice_rihancu",
+  "title": "Kubík a loď tisíce řihanců",
+  "synopsis": "Kubík s vysavačem-pizzou vstoupí do strašidelné lodi a místo boje nabídne duchovi kamarádství a svačinu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastně absurdní konec: duch Hněvánek se stane přítelem a loď vypluje na hladinu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_ship",
+      "l_corridor",
+      "l_deck"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kubik",
+      "name": "Kubík",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a confident Czech boy aged 10 with short black hair and bright blue eyes",
+      "base": "male child, black hair, short hair, blue eyes, fair skin, confident smile",
+      "outfits": {
+        "default": "yellow hoodie, blue jeans, sneakers, holding vacuum cleaner"
+      },
+      "photo": "a confident Czech boy aged 10 with short black hair and bright blue eyes",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, confident smile, yellow hoodie, blue jeans, sneakers, holding vacuum cleaner",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "hnivous",
+      "name": "Kapitán Hněvivous",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent blue ghost captain with a long white beard and an angry expression",
+      "base": "ghost, transparent, floating, blue skin, angry eyebrows, long white beard",
+      "outfits": {
+        "default": "pirate hat, tattered captain coat, glowing blue aura"
+      },
+      "photo": "a translucent blue ghost captain with a long white beard and an angry expression",
+      "tag_prompt": "ghost, transparent, floating, blue skin, angry eyebrows, long white beard, pirate hat, tattered captain coat, glowing blue aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "vacuum",
+      "name": "Vysavač",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a boxy yellow robot vacuum cleaner with a pizza-scent nozzle attached",
+      "base": "robot, vacuum cleaner, boxy, wheels, hose",
+      "outfits": {
+        "default": "pizza scent nozzle, yellow body, digital display"
+      },
+      "photo": "a boxy yellow robot vacuum cleaner with a pizza-scent nozzle attached",
+      "tag_prompt": "robot, vacuum cleaner, boxy, wheels, hose, pizza scent nozzle, yellow body, digital display",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_ship",
+      "name": "Potopená loď",
+      "description": "Potopená loď",
+      "tag_prompt": "outdoors, sunken ship interior, wooden planks, cobwebs, moonlight, eerie, blue tint, dust particles",
+      "mood": ""
+    },
+    {
+      "id": "l_corridor",
+      "name": "Chodba lodi",
+      "description": "Chodba lodi",
+      "tag_prompt": "outdoors, ship corridor, narrow, wooden walls, spooky atmosphere, shadows, moonlight",
+      "mood": ""
+    },
+    {
+      "id": "l_deck",
+      "name": "Paluba lodi",
+      "description": "Paluba lodi",
+      "tag_prompt": "outdoors, ship deck, night, moonlight, sea waves, stars, party balloons, confetti",
+      "mood": ""
+    }
+  ]
+}

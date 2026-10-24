@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_02_sofie_prokleta_pyramida",
+  "title": "Sofie a prokletá pyramida",
+  "synopsis": "Sofie s mluvícím amuletem proniká do pyramidy, aby vrátila ukradený poklad, a potkává duchovního strážce.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Sofie odchází se soškou, amulet naznačuje další dobrodružství."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_desert",
+      "l_pyramid",
+      "l_chamber"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sofie",
+      "name": "Sofie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 9 with long brown hair and a golden amulet",
+      "base": "female child, brown hair, long hair, brown eyes, fair skin",
+      "outfits": {
+        "default": "white dress, gold trim, gold belt, sandals"
+      },
+      "photo": "a brave Czech girl aged 9 with long brown hair and a golden amulet",
+      "tag_prompt": "female child, brown hair, long hair, brown eyes, fair skin, white dress, gold trim, gold belt, sandals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amulet",
+      "name": "Amulet",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small floating blue gemstone with glowing runes",
+      "base": "gemstone, floating rock, glowing blue runes, small",
+      "outfits": {
+        "default": "glowing blue runes"
+      },
+      "photo": "a small floating blue gemstone with glowing runes",
+      "tag_prompt": "gemstone, floating rock, glowing blue runes, small, glowing blue runes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pharaoh",
+      "name": "Faraon Rami",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a transparent ancient egyptian pharaoh spirit with a nemes headdress",
+      "base": "ghost, transparent, ancient egyptian pharaoh, nemes headdress, false beard, glowing eyes",
+      "outfits": {
+        "default": "transparent egyptian robes"
+      },
+      "photo": "a transparent ancient egyptian pharaoh spirit with a nemes headdress",
+      "tag_prompt": "ghost, transparent, ancient egyptian pharaoh, nemes headdress, false beard, glowing eyes, transparent egyptian robes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jackal",
+      "name": "Pískový šakal",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a spectral sand-colored jackal with glowing blue eyes",
+      "base": "jackal, sand color, glowing eyes, spectral",
+      "outfits": {
+        "default": "glowing blue eyes"
+      },
+      "photo": "a spectral sand-colored jackal with glowing blue eyes",
+      "tag_prompt": "jackal, sand color, glowing eyes, spectral, glowing blue eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_desert",
+      "name": "Poušť",
+      "description": "Poušť",
+      "tag_prompt": "outdoors, desert, sand dunes, pyramids, bright sun, blue sky, day",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid",
+      "name": "Pyramida",
+      "description": "Pyramida",
+      "tag_prompt": "indoors, ancient egyptian pyramid, stone walls, hieroglyphs, torches, dim light, dust",
+      "mood": ""
+    },
+    {
+      "id": "l_chamber",
+      "name": "Faraonova komnata",
+      "description": "Faraonova komnata",
+      "tag_prompt": "indoors, treasure room, golden sarcophagus, gold artifacts, torches, mysterious light",
+      "mood": ""
+    }
+  ]
+}

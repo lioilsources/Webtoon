@@ -1,0 +1,310 @@
+{
+  "title": "Sam a souboj s mechanickým faraonem",
+  "title_i18n": {
+    "de": "Sam und der Kampf mit dem mechanischen Pharaonen",
+    "en": "Sam and the Battle with the Mechanical Pharaoh",
+    "fr": "Sam et le combat contre le pharaon mécanique",
+    "it": "Sam e la sfida al faraone meccanico",
+    "ja": "サムと機械ファラオの決闘",
+    "ko": "샘과 기계 파라오의 대결",
+    "pl": "Sam i pojedynek z mechanicznym faraonem",
+    "pt-BR": "Sam e a batalha com o Faraó Mecânico",
+    "ru": "Сэм и битва с механическим фараоном",
+    "uk": "Сем і бій з механічним фараоном",
+    "vi": "Sam và cuộc chiến với Pharaoh cơ khí"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pyramid",
+      "characters": [],
+      "visual_tags": [
+        "gold walls",
+        "stone carvings",
+        "dust floating",
+        "dim light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mechanizovaný labyrint uvnitř obří pyramidy v roce 3000.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein mechanisiertes Labyrinth im Inneren einer riesigen Pyramide, im Jahr 3000.",
+            "en": "A mechanized labyrinth inside a giant pyramid, year 3000.",
+            "fr": "Un labyrinthe mécanisé à l'intérieur d'une pyramide géante, en l'an 3000.",
+            "it": "Un labirinto meccanizzato all'interno di una piramide gigante nell'anno 3000.",
+            "ja": "西暦3000年、巨大ピラミッド内部の機械化迷宮。",
+            "ko": "3000년, 거대 피라미드 내부의 기계화 미로.",
+            "pl": "Zmechanizowany labirynt wewnątrz gigantycznej piramidy w roku 3000.",
+            "pt-BR": "Um labirinto mecanizado dentro de uma pirâmide gigante no ano 3000.",
+            "ru": "Механизированный лабиринт внутри гигантской пирамиды. 3000 год.",
+            "uk": "Механізований лабіринт всередині гігантської піраміди у 3000 році.",
+            "vi": "Mê cung cơ giới bên trong kim tự tháp khổng lồ vào năm 3000."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, light rays shimmering, static camera",
+      "motion_llm": "dust particles floating in light beams, static camera",
+      "wd14_tags": {
+        "no humans": 0.958,
+        "scenery": 0.944,
+        "pillar": 0.85,
+        "indoors": 0.707,
+        "sunlight": 0.575,
+        "column": 0.513,
+        "arch": 0.442,
+        "light particles": 0.362,
+        "shadow": 0.355
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sam"
+        },
+        {
+          "id": "faraon"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "hero landing",
+        "looking up",
+        "tall robot",
+        "small hero",
+        "helmet visor closing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "faraon",
+          "text": "NARUŠITEL DETEKOVÁN. VYMAZAT Z HISTORIE!",
+          "kind": "speech",
+          "i18n": {
+            "de": "EINDRINGLING ERKANNT. AUS DER GESCHICHTE LÖSCHEN!",
+            "en": "INTRUDER DETECTED. ERASE FROM HISTORY!",
+            "fr": "INTRUS DÉTECTÉ. SUPPRIMER DE L'HISTOIRE !",
+            "it": "INTRUSO RILEVATO. ELIMINARE DALLA STORIA!",
+            "ja": "侵入者検知。歴史から抹消する！",
+            "ko": "침입자 감지. 역사에서 삭제!",
+            "pl": "WYKRYTO NARUSZYCIELA. USUNĄĆ Z HISTORII!",
+            "pt-BR": "INTRUSO DETECTADO. ELIMINAR DA HISTÓRIA!",
+            "ru": "НАРУШИТЕЛЬ ОБНАРУЖЕН. УДАЛИТЬ ИЗ ИСТОРИИ!",
+            "uk": "ВИЯВЛЕНО НАРУШНИКА. ВИДАЛИТИ З ІСТОРІЇ!",
+            "vi": "XÁC ĐỊNH KẺ XÂM NHẬP. XÓA KHỎI LỊCH SỬ!"
+          }
+        },
+        {
+          "speaker_id": "sam",
+          "text": "Zapomněl jsi na jednu věc, Faraone – technologie se neustále vyvíjí!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast eine Sache vergessen, Pharaone – die Technologie entwickelt sich ständig weiter!",
+            "en": "You forgot one thing, Pharaoh – technology keeps evolving!",
+            "fr": "Tu as oublié une chose, Pharaon – la technologie évolue sans cesse !",
+            "it": "Hai dimenticato una cosa, Faraone: la tecnologia non si ferma mai!",
+            "ja": "一つ忘れているぞファラオ、技術は常に進化しているんだ！",
+            "ko": "파라오, 하나 잊었잖아. 기술은 계속 진화해!",
+            "pl": "Zapomniałeś o jednej rzeczy, Faraonie – technologia ciągle się rozwija!",
+            "pt-BR": "Você esqueceu uma coisa, Faraó – a tecnologia nunca para de evoluir!",
+            "ru": "Ты забыл одну вещь, Фараон — технологии постоянно развиваются!",
+            "uk": "Ти забув одну річ, Фараоне — технології постійно розвиваються!",
+            "vi": "Ngươi quên mất một điều, Pharaoh – công nghệ luôn không ngừng phát triển!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sam"
+        }
+      ],
+      "visual_tags": [
+        "holding sword",
+        "laser sword",
+        "glowing blue blade",
+        "ready stance",
+        "determined",
+        "helmet visor down"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "VZZZT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the laser sword hums and glows brighter, static camera",
+      "wd14_tags": {
+        "weapon": 0.963,
+        "sword": 0.936,
+        "armor": 0.908,
+        "holding": 0.905,
+        "helmet": 0.893,
+        "solo": 0.863,
+        "holding weapon": 0.838,
+        "blue eyes": 0.817,
+        "holding sword": 0.788,
+        "purple gloves": 0.725,
+        "gloves": 0.63,
+        "1boy": 0.541
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "sam"
+        },
+        {
+          "id": "faraon"
+        }
+      ],
+      "visual_tags": [
+        "energy beam",
+        "dodging",
+        "jet boots",
+        "flying",
+        "sparks",
+        "explosion",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "sam"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "attacking",
+        "sword thrust",
+        "glowing core",
+        "intense",
+        "action pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "faraon"
+        }
+      ],
+      "visual_tags": [
+        "robot falling",
+        "eyes off",
+        "kneeling",
+        "debris falling",
+        "darkening",
+        "defeated"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CRASH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "sam"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "looking back",
+        "worried",
+        "falling ceiling",
+        "dust cloud",
+        "urgency"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sam",
+          "text": "A teď rychle ven!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Und jetzt schnell raus hier!",
+            "en": "Now, let's move!",
+            "fr": "Et maintenant, vite, dehors !",
+            "it": "E ora fuori, in fretta!",
+            "ja": "さっさと外に出ろ！",
+            "ko": "이제 빨리 나가!",
+            "pl": "A teraz szybko stąd!",
+            "pt-BR": "E agora, rápido, pra fora!",
+            "ru": "А теперь быстро вон!",
+            "uk": "А тепер швидко геть!",
+            "vi": "Giờ thì nhanh chân ra ngoài!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sam"
+        }
+      ],
+      "visual_tags": [
+        "running towards exit",
+        "light at end of tunnel",
+        "falling rocks",
+        "dust",
+        "silhouette"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "RUMBLE!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,414 @@
+{
+  "title": "Lea a ztracená kometa",
+  "title_i18n": {
+    "de": "Lea und der verlorene Komet",
+    "en": "Lea and the Lost Comet",
+    "fr": "Lea et la comète perdue",
+    "it": "Lea e la cometa perduta",
+    "ja": "リーアと迷子の彗星",
+    "ko": "리아와 잃어버린 혜성",
+    "pl": "Lea i zagubiona kometa",
+    "pt-BR": "Lea e o Cometa Perdido",
+    "ru": "Лия и потерянная комета",
+    "uk": "Лія та загублена комета",
+    "vi": "Lea và Chòm Sao Bị Mất Tích"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_station",
+      "characters": [],
+      "visual_tags": [
+        "space station interior",
+        "stars outside window",
+        "futuristic",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vesmírná stanice, den.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Raumstation, Tag.",
+            "en": "Space station. Daytime.",
+            "fr": "Station spatiale, jour.",
+            "it": "Stazione spaziale, giorno.",
+            "ja": "宇宙ステーション、昼間。",
+            "ko": "우주 정거장, 낮.",
+            "pl": "Stacja kosmiczna, dzień.",
+            "pt-BR": "Estação espacial, dia.",
+            "ru": "Космическая станция. День.",
+            "uk": "Космічна станція, день.",
+            "vi": "Trạm vũ trụ, ban ngày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "stars drifting slowly outside the window, static camera",
+      "wd14_tags": {
+        "no humans": 0.945,
+        "space": 0.874,
+        "star (sky)": 0.772,
+        "scenery": 0.699,
+        "tile floor": 0.53,
+        "starry sky": 0.508,
+        "blue theme": 0.47,
+        "indoors": 0.469,
+        "tiles": 0.416,
+        "window": 0.352
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "lea"
+        },
+        {
+          "id": "kometa"
+        }
+      ],
+      "visual_tags": [
+        "holding wand",
+        "fox flying",
+        "pointing",
+        "serious face",
+        "glowing wand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kometa",
+          "text": "Leo, Mech-králíci kradou prach z komety!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Leo, die Mech-Kaninchen stehlen Staub vom Kometen!",
+            "en": "Leo, the Mech-Rabbits are stealing dust from the comet!",
+            "fr": "Léo, les Lapins-mécanos piquent la poussière de la comète !",
+            "it": "Leo, i Coni-Meccanici rubano la polvere dalla cometa!",
+            "ja": "リーア、メカウサギが彗星のチリを盗んでる！",
+            "ko": "리아, 메카 토끼들이 혜성에서 먼지를 훔쳐!",
+            "pl": "Leo, mechaniczne króliki kradną pył z komety!",
+            "pt-BR": "Lea, os Coelhos-Mecânicos estão roubando o pó da cometa!",
+            "ru": "Лео, мех-кролики воруют пыль с кометы!",
+            "uk": "Ліо, мех-кролі крадуть пил з комети!",
+            "vi": "Leo, thỏ cơ khí đang ăn trộm bụi từ chòm sao!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "lea"
+        }
+      ],
+      "visual_tags": [
+        "holding wand",
+        "determined",
+        "glowing wand",
+        "ready"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lea",
+          "text": "Tak je zastavíme. Hvězdo, připrav štít!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann halten wir sie auf. Stern, aktiviere den Schild!",
+            "en": "Then we'll stop them. Star, activate the shield!",
+            "fr": "On les arrête. Étoile, active le bouclier !",
+            "it": "Allora fermiamoli. Stella, prepara lo scudo!",
+            "ja": "じゃあ止めましょう。スター、シールド準備！",
+            "ko": "그럼 막자. 별아, 방패 준비해!",
+            "pl": "Zatrzymajmy ich. Gwiazdo, przygotuj tarczę!",
+            "pt-BR": "Então vamos pará-los. Estrela, ative o escudo!",
+            "ru": "Тогда остановим их. Звёздочка, активируй щит!",
+            "uk": "Тоді зупинимо їх. Зірко, підніми щит!",
+            "vi": "Vậy thì chặn chúng lại. Star, chuẩn bị khiên!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "mech"
+        }
+      ],
+      "visual_tags": [
+        "robot rabbit",
+        "jumping",
+        "holding dust",
+        "glowing dust",
+        "crater"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mech",
+          "text": "Píp! Prach je náš!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Piep! Der Staub gehört uns!",
+            "en": "Beep! The dust is ours!",
+            "fr": "Bip ! La poussière est à nous !",
+            "it": "Bip! La polvere è nostra!",
+            "ja": "ピッ！チリは俺たちのもの！",
+            "ko": "삐! 먼지는 우리 거야!",
+            "pl": "Pip! Pył jest nasz!",
+            "pt-BR": "Bip! O pó é nosso!",
+            "ru": "Пи-пи! Пыль теперь наша!",
+            "uk": "Піп! Пил наш!",
+            "vi": "Bíp! Bụi là của chúng ta!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "PIP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "lea"
+        },
+        {
+          "id": "kometa"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "pointing",
+        "robot rabbit",
+        "glowing dust",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lea",
+          "text": "Prach patří celé galaxii!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Staub gehört der ganzen Galaxie!",
+            "en": "The dust belongs to the whole galaxy!",
+            "fr": "La poussière appartient à toute la galaxie !",
+            "it": "La polvere appartiene a tutta la galassia!",
+            "ja": "チリは銀河全員のものよ！",
+            "ko": "먼지는 은하 전체의 것이야!",
+            "pl": "Pył należy do całej galaktyki!",
+            "pt-BR": "O pó pertence a toda a galáxia!",
+            "ru": "Пыль принадлежит всей галактике!",
+            "uk": "Пил належить усій галактиці!",
+            "vi": "Bụi thuộc về cả thiên hà!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "lea"
+        }
+      ],
+      "visual_tags": [
+        "holding wand",
+        "glowing shield",
+        "magic effect",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SZÁR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the shield glows brightly and pulses, static camera",
+      "wd14_tags": {
+        "1girl": 0.99,
+        "blue eyes": 0.968,
+        "blonde hair": 0.966,
+        "solo": 0.927,
+        "long hair": 0.915,
+        "cape": 0.896,
+        "open mouth": 0.849,
+        "weapon": 0.83,
+        "holding": 0.812,
+        "bodysuit": 0.761,
+        "white bodysuit": 0.733,
+        "energy gun": 0.706
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_planet",
+      "characters": [
+        {
+          "id": "mech"
+        }
+      ],
+      "visual_tags": [
+        "robot rabbit",
+        "hitting shield",
+        "sparks",
+        "falling apart",
+        "screws",
+        "metal parts"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station_evening",
+      "characters": [
+        {
+          "id": "orb"
+        },
+        {
+          "id": "lea"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding medal",
+        "giving",
+        "smile",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "orb",
+          "text": "Leo, zachránila jsi hvězdy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Leo, du hast die Sterne gerettet.",
+            "en": "Leo, you saved the stars.",
+            "fr": "Léo, tu as sauvé les étoiles.",
+            "it": "Leo, hai salvato le stelle.",
+            "ja": "リーア、星を救ったね。",
+            "ko": "리아, 별들을 구했어.",
+            "pl": "Leo, uratowałaś gwiazdy.",
+            "pt-BR": "Lea, você salvou as estrelas.",
+            "ru": "Лео, ты спасла звёзды.",
+            "uk": "Ліо, ти врятувала зірки.",
+            "vi": "Leo, con đã cứu các vì sao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_station_evening",
+      "characters": [
+        {
+          "id": "lea"
+        }
+      ],
+      "visual_tags": [
+        "holding medal",
+        "smile",
+        "closed eyes",
+        "happy",
+        "glowing cape"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lea",
+          "text": "My všichni. Kometa je nejlepší parťák.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir alle. Der Komet ist der beste Partner.",
+            "en": "All of us. The comet is the best partner.",
+            "fr": "Nous tous. La comète est la meilleure partenaire.",
+            "it": "Tutti noi. La cometa è il miglior compagno.",
+            "ja": "私たちみんな。彗星は最高の相棒。",
+            "ko": "우리 모두지. 혜성이 최고 파트너야.",
+            "pl": "My wszyscy. Kometa to najlepszy partner.",
+            "pt-BR": "Todos nós. A cometa é a melhor parceira.",
+            "ru": "Мы все. Комета — лучший напарник.",
+            "uk": "Ми всі. Комета — найкращий друг.",
+            "vi": "Tất cả chúng ta. Chòm sao là người bạn đồng hành tuyệt nhất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station_evening",
+      "characters": [
+        {
+          "id": "lea"
+        },
+        {
+          "id": "kometa"
+        }
+      ],
+      "visual_tags": [
+        "fox flying",
+        "holding medal",
+        "smile",
+        "looking at viewer",
+        "glowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kometa",
+          "text": "A ty nejlepší hrdinka!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du die beste Heldin!",
+            "en": "And you're the best hero!",
+            "fr": "Et toi la meilleure héroïne !",
+            "it": "E tu la miglior eroina!",
+            "ja": "そして君は最高のヒロイン！",
+            "ko": "그리고 넌 최고 히어로!",
+            "pl": "A ty najlepsza bohaterko!",
+            "pt-BR": "E você a melhor heroína!",
+            "ru": "А ты — лучшая героиня!",
+            "uk": "А ти — найкраща героїня!",
+            "vi": "Và con là nữ anh hùng tuyệt nhất!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

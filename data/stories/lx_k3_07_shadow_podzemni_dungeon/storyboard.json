@@ -1,0 +1,329 @@
+{
+  "title": "Shadow a stínový duch",
+  "title_i18n": {
+    "de": "Shadow – Der Schattengeist",
+    "en": "Shadow: The Shadow Spirit",
+    "fr": "Shadow, l'âme d'ombre",
+    "it": "Shadow e lo spirito ombra",
+    "ja": "シャドウと影の幽霊",
+    "ko": "섀도, 그림자 영혼",
+    "pl": "Shadow i Cieniowy Duch",
+    "pt-BR": "Shadow, o Espírito Sombrio",
+    "ru": "Тень и призрачный дух",
+    "uk": "Shadow: Тіньовий дух",
+    "vi": "Shadow - Linh hồn bóng tối"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dungeon",
+      "characters": [],
+      "visual_tags": [
+        "stone walls",
+        "torches",
+        "dark atmosphere",
+        "dust",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Temná síň v hlubinách podzemí.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die dunkle Halle in den Tiefen der Unterwelt.",
+            "en": "A dark hall deep in the underworld.",
+            "fr": "Une salle sombre, au plus profond des souterrains.",
+            "it": "Una sala oscura nelle profondità del sottosuolo.",
+            "ja": "地底の深みにある暗黒の間。",
+            "ko": "지하 깊은 곳의 어둠의 홀.",
+            "pl": "Mroczna komnata w głębinach podziemi.",
+            "pt-BR": "Uma sala sombria nas profundezas do submundo.",
+            "ru": "Темный зал в глубинах подземелья.",
+            "uk": "Темна зала в глибинах підземелля.",
+            "vi": "Hầm tối tăm sâu thẳm dưới lòng đất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, water rippling, static camera",
+      "motion_llm": "torch flames flickering, dust motes floating, static camera",
+      "wd14_tags": {
+        "no humans": 0.976,
+        "blue theme": 0.94,
+        "scenery": 0.911,
+        "sky": 0.879,
+        "star (sky)": 0.851,
+        "night": 0.836,
+        "starry sky": 0.747,
+        "night sky": 0.725,
+        "outdoors": 0.684,
+        "monochrome": 0.663,
+        "horizon": 0.53,
+        "ocean": 0.461
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "shadow"
+        },
+        {
+          "id": "echo"
+        }
+      ],
+      "visual_tags": [
+        "bat flying",
+        "looking around",
+        "tense",
+        "holding shield",
+        "dark"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "shadow",
+          "text": "Duch bere duše…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Geist nimmt Seelen…",
+            "en": "The spirit takes souls…",
+            "fr": "L'âme dévore les âmes…",
+            "it": "Lo spirito porta via le anime…",
+            "ja": "幽霊は魂を奪う…",
+            "ko": "영혼을 삼키는 자…",
+            "pl": "Duch porywa dusze…",
+            "pt-BR": "O espírito leva as almas…",
+            "ru": "Дух забирает души…",
+            "uk": "Дух забирає душі…",
+            "vi": "Linh hồn thu thập linh hồn…"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "PIP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "invisible effect",
+        "fading out",
+        "glowing outline",
+        "determined",
+        "eyes only"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SHHHH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon2",
+      "characters": [
+        {
+          "id": "shadow_spirit"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "chains",
+        "attacking",
+        "chains flying",
+        "ghost floating",
+        "surprised",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWISH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon2",
+      "characters": [
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "throwing stars",
+        "holding shield",
+        "blocking",
+        "action pose",
+        "glowing stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "shadow",
+          "text": "Teď!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Jetzt!",
+            "en": "Now!",
+            "fr": "Maintenant !",
+            "it": "Adesso!",
+            "ja": "今だ！",
+            "ko": "지금!",
+            "pl": "Teraz!",
+            "pt-BR": "Agora!",
+            "ru": "Теперь!",
+            "uk": "Зараз!",
+            "vi": "Giờ này!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon2",
+      "characters": [
+        {
+          "id": "shadow_spirit"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "chains breaking",
+        "sparks",
+        "glowing shield",
+        "ghost recoiling",
+        "dynamic angle"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CRACK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon2",
+      "characters": [
+        {
+          "id": "shadow_spirit"
+        }
+      ],
+      "visual_tags": [
+        "fading away",
+        "transparent",
+        "glowing",
+        "sad expression",
+        "floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "shadow_spirit",
+          "text": "Budu čekat…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich werde warten…",
+            "en": "I'll be waiting…",
+            "fr": "J'attendrai…",
+            "it": "Aspetterò…",
+            "ja": "待ってる…",
+            "ko": "기다릴게…",
+            "pl": "Będę czekać…",
+            "pt-BR": "Vou esperar…",
+            "ru": "Буду ждать…",
+            "uk": "Я буду чекати…",
+            "vi": "Ta sẽ đợi…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "the ghost fades into mist, dust floating, static camera",
+      "wd14_tags": {
+        "solo": 0.859,
+        "blue theme": 0.841,
+        "1girl": 0.688,
+        "standing": 0.633,
+        "glowing": 0.427,
+        "indoors": 0.425,
+        "long hair": 0.375,
+        "looking at viewer": 0.363
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon2",
+      "characters": [
+        {
+          "id": "shadow"
+        },
+        {
+          "id": "echo"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at fading ghost",
+        "cautious",
+        "bat hovering",
+        "dark background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zmizel, ale zanechal vzkaz.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Er verschwand, hinterließ aber eine Nachricht.",
+            "en": "He vanished, but left a message.",
+            "fr": "Il a disparu, mais a laissé un message.",
+            "it": "È scomparso, ma ha lasciato un messaggio.",
+            "ja": "消えたが、メッセージを残した。",
+            "ko": "자취를 감췄지만, 메시지를 남겼다.",
+            "pl": "Zniknął, ale zostawił wiadomość.",
+            "pt-BR": "Ele desapareceu, mas deixou uma mensagem.",
+            "ru": "Он исчез, но оставил записку.",
+            "uk": "Зник, але залишив послання.",
+            "vi": "Nó biến mất, nhưng để lại lời nhắn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

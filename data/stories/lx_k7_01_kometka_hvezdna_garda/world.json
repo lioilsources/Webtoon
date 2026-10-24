@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k7_01_kometka_hvezdna_garda",
+  "title": "Kometka a Temný Mračný",
+  "synopsis": "Alenka Kometka letí do vesmíru, aby pomohla osamělému Temnému Mraku, který pohlcuje hvězdy ze zimy.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Temný Mračný se stane strážcem hvězd a Kometka má nového kamaráda."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_base",
+      "l_space",
+      "l_core"
+    ]
+  },
+  "characters": [
+    {
+      "id": "alenka",
+      "name": "Alenka",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with long blonde hair and a silver space helmet",
+      "base": "female child, blonde hair, long hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet with comet emblem, white spacesuit, purple gloves, boots, starry cape"
+      },
+      "photo": "a brave Czech girl aged 10 with long blonde hair and a silver space helmet",
+      "tag_prompt": "female child, blonde hair, long hair, blue eyes, fair skin, determined face, silver space helmet with comet emblem, white spacesuit, purple gloves, boots, starry cape",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "krtek",
+      "name": "Generál Krtek",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a short Czech general aged 50 with a stern face and a military cap",
+      "base": "adult, mature male, short man, bald, mustache, military uniform, stern face",
+      "outfits": {
+        "default": "dark blue military uniform, gold buttons, cap, medals"
+      },
+      "photo": "a short Czech general aged 50 with a stern face and a military cap",
+      "tag_prompt": "adult, mature male, short man, bald, mustache, military uniform, stern face, dark blue military uniform, gold buttons, cap, medals",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mrac",
+      "name": "Temný Mračný",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large black nebula spirit with glowing blue eyes and a swirling form",
+      "base": "ghost, transparent, floating, black smoke, nebula, glowing eyes",
+      "outfits": {
+        "default": "glowing blue core, starry aura"
+      },
+      "photo": "a large black nebula spirit with glowing blue eyes and a swirling form",
+      "tag_prompt": "ghost, transparent, floating, black smoke, nebula, glowing eyes, glowing blue core, starry aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_base",
+      "name": "Kosmická základna",
+      "description": "Kosmická základna",
+      "tag_prompt": "indoors, space station, metal walls, large window, nebula view, night, stars, map on wall",
+      "mood": ""
+    },
+    {
+      "id": "l_space",
+      "name": "Mezihvězdný prostor",
+      "description": "Mezihvězdný prostor",
+      "tag_prompt": "outdoors, deep space, stars, black nebula, cosmic dust, night, glowing effects",
+      "mood": ""
+    },
+    {
+      "id": "l_core",
+      "name": "Srdce Mračna",
+      "description": "Srdce Mračna",
+      "tag_prompt": "outdoors, inside nebula, dark purple, glowing lights, magical atmosphere, night",
+      "mood": ""
+    }
+  ]
+}

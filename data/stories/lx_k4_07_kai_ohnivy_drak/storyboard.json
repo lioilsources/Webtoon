@@ -1,0 +1,315 @@
+{
+  "title": "Kai a ohnivý drak z planety Vulkan",
+  "title_i18n": {
+    "de": "Kai und der feurige Drache vom Vulkan-Planet",
+    "en": "Kai and the Fire Dragon of Planet Vulkan",
+    "fr": "Kai et le dragon de feu de la planète Vulkan",
+    "it": "Kai e il drago di fuoco del pianeta Vulkan",
+    "ja": "カイと火のドラゴン、惑星ヴォルカンより",
+    "ko": "카이와 화염의 드래곤, 화성 행성에서",
+    "pl": "Kai i ognisty smok z planety Vulkan",
+    "pt-BR": "Kai e o dragão de fogo do planeta Vulkan",
+    "ru": "Кай и огненный дракон с планеты Вулкан",
+    "uk": "Кай та вогняний дракон з планети Вулкан",
+    "vi": "Kai và Rồng Lửa từ Hành Tinh Vulkan"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_crater",
+      "characters": [],
+      "visual_tags": [
+        "lava river",
+        "red sky",
+        "floating rocks",
+        "smoke",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Soptící kráter na lávové planetě.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein rauchender Krater auf dem Lavaplaneten.",
+            "en": "A smoking crater on a lava planet.",
+            "fr": "Un cratère fumant sur une planète de lave.",
+            "it": "Un cratere fumante su un pianeta lavico.",
+            "ja": "溶岩の惑星にある、煙を吐くクレーター。",
+            "ko": "용암 행성의 분화구.",
+            "pl": "Dymiący krater na planecie lawowej.",
+            "pt-BR": "Uma cratera fumegante em um planeta de lava.",
+            "ru": "Кратер, извергающий дым, на планете лавы.",
+            "uk": "Димлячий кратер на планеті лави.",
+            "vi": "Một miệng núi lửa im lìm trên hành tinh dung nham."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, flames flickering, water rippling, smoke and mist swirling slowly, static camera",
+      "motion_llm": "lava bubbling and flowing, smoke rising, floating rocks drifting, static camera",
+      "wd14_tags": {
+        "no humans": 0.954,
+        "lava": 0.9,
+        "scenery": 0.865,
+        "mountain": 0.763,
+        "outdoors": 0.719,
+        "red sky": 0.718,
+        "sky": 0.672,
+        "smoke": 0.664,
+        "volcano": 0.606,
+        "water": 0.605,
+        "fire": 0.589,
+        "rock": 0.571
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "dragon"
+        }
+      ],
+      "visual_tags": [
+        "standing on edge",
+        "dragon emerging",
+        "lava",
+        "roaring",
+        "open mouth",
+        "red aura",
+        "glowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Můj trénink na téhle planetě nebyl pro nic za nic! Vrať se do temnot, démonický draku!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mein Training auf diesem Planeten war nicht umsonst! Kehre zurück in die Dunkelheit, dämonischer Drache!",
+            "en": "My training on this planet wasn't for nothing! Go back to the darkness, demonic dragon!",
+            "fr": "Mon entraînement sur cette planète n'a pas été vain ! Remonte aux ténèbres, dragon démoniaque !",
+            "it": "Il mio allenamento su questo pianeta non è stato inutile! Torna nell'oscurità, drago demoniaco!",
+            "ja": "この惑星での修行は無駄じゃなかった！ 闇へ帰れ、悪魔のドラゴン！",
+            "ko": "이 행성에서의 내 훈련이 헛되지 않았어! 어둠 속으로 돌아가라, 악마의 드래곤!",
+            "pl": "Mój trening na tej planecie nie poszedł na marne! Wróć do ciemności, demoniczny smoku!",
+            "pt-BR": "Meu treino nesse planeta não foi em vão! Volte para as trevas, dragão demoníaco!",
+            "ru": "Мои тренировки на этой планете не прошли зря! Возвращайся во тьму, демонический дракон!",
+            "uk": "Мої тренування на цій планеті не були марними! Повертайся в темряву, демонічний драконе!",
+            "vi": "Bài tập của ta trên hành tinh này không hề vô ích! Hãy quay về bóng tối, rồng ác quỷ!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "dragon"
+        }
+      ],
+      "visual_tags": [
+        "dragon roaring",
+        "purple flames",
+        "angry",
+        "glowing eyes",
+        "sharp teeth",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "RRRRAAAR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lava",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "dragon"
+        }
+      ],
+      "visual_tags": [
+        "energy blast",
+        "purple fire beam",
+        "orange fire beam",
+        "collision",
+        "explosion",
+        "lava erupting",
+        "impact"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lava",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "hands together",
+        "charging energy",
+        "glowing hands",
+        "shouting",
+        "determined",
+        "red aura",
+        "intense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "KAI… VLNÁÁÁ!",
+          "kind": "shout",
+          "i18n": {
+            "de": "KAI… WELLEEEEN!",
+            "en": "KAI… WAVEEE!",
+            "fr": "KAI… ONDE DE FEU !",
+            "it": "KAI… ONDATA!",
+            "ja": "カイ…波紋波！",
+            "ko": "카이… 발랑!",
+            "pl": "KAI… FALAAAA!",
+            "pt-BR": "KAI… VOOOOO!",
+            "ru": "КАЙ… ВОЛНААА!",
+            "uk": "КАЙ… ХВИЛЯ!",
+            "vi": "KAI… SÓNG LỬA!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "energy swirling around Kai's hands, aura pulsing, flames flickering, static camera",
+      "motion_llm": "energy swirling around Kai's hands, aura pulsing, static camera",
+      "wd14_tags": {
+        "1boy": 0.977,
+        "male focus": 0.961,
+        "solo": 0.944,
+        "red hair": 0.905,
+        "fire": 0.843,
+        "looking at viewer": 0.781,
+        "open mouth": 0.773,
+        "portrait": 0.598,
+        "short hair": 0.506,
+        "red eyes": 0.491,
+        "hand up": 0.44,
+        "teeth": 0.425
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lava",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "dragon"
+        }
+      ],
+      "visual_tags": [
+        "orange beam",
+        "overpowering",
+        "purple beam fading",
+        "dragon recoiling",
+        "explosion",
+        "light"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lava",
+      "characters": [
+        {
+          "id": "dragon"
+        }
+      ],
+      "visual_tags": [
+        "dragon disappearing",
+        "smoke",
+        "dust cloud",
+        "defeated",
+        "fading"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "POOF!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "tired",
+        "panting",
+        "sweat",
+        "smile",
+        "victory",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Vyhrál jsem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe gewonnen.",
+            "en": "I won.",
+            "fr": "J'ai gagné.",
+            "it": "Ho vinto.",
+            "ja": "勝った。",
+            "ko": "내가 이겼어.",
+            "pl": "Wygrałem.",
+            "pt-BR": "Eu venci.",
+            "ru": "Я победил.",
+            "uk": "Я переміг.",
+            "vi": "Ta đã thắng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

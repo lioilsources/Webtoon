@@ -1,0 +1,530 @@
+{
+  "title": "Adam a časový meč",
+  "title_i18n": {
+    "de": "Adam und das Zeitschwert",
+    "en": "Adam and the Time Sword",
+    "fr": "Adam et l'épée temporelle",
+    "it": "Adam e la spada del tempo",
+    "ja": "アダムと時の剣",
+    "ko": "아담과 시간의 검",
+    "pl": "Adam i miecz czasu",
+    "pt-BR": "Adam e a Espada do Tempo",
+    "ru": "Адам и меч времени",
+    "uk": "Адам і меч часу",
+    "vi": "Adam và Thanh Kiếm Thời Gian"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_museum",
+      "characters": [],
+      "visual_tags": [
+        "glass case",
+        "old sword",
+        "dust",
+        "dim light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Adam se dotkne starého meče.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Adam berührt das alte Schwert.",
+            "en": "Adam touches an old sword.",
+            "fr": "Adam touche la vieille épée.",
+            "it": "Adam tocca l'antica spada.",
+            "ja": "アダムが古い剣に触れる。",
+            "ko": "아담이 오래된 검을 만진다.",
+            "pl": "Adam dotyka się starego miecza.",
+            "pt-BR": "Adam toca a espada antiga.",
+            "ru": "Адам касается древнего меча.",
+            "uk": "Адам торкається старого меча.",
+            "vi": "Adam chạm vào thanh kiếm cổ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "dust particles floating in the air, static camera",
+      "wd14_tags": {
+        "no humans": 0.974,
+        "scenery": 0.919,
+        "blue theme": 0.863,
+        "train station": 0.735,
+        "monochrome": 0.609,
+        "indoors": 0.491,
+        "light particles": 0.468
+      }
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_museum",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "touching sword",
+        "surprised",
+        "open mouth",
+        "glowing sword",
+        "electricity"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BLESK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at each other",
+        "stone pillars",
+        "mysterious light",
+        "robotic arm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Ty nejsi z tohoto času.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du gehörst nicht zu dieser Zeit.",
+            "en": "You're not from this time.",
+            "fr": "Tu n'es pas de cette époque.",
+            "it": "Tu non sei di questa epoca.",
+            "ja": "あなた、この時代の人じゃないわね",
+            "ko": "당신은 이 시대의 사람이 아니군요.",
+            "pl": "Nie jesteś z tego czasu.",
+            "pt-BR": "Você não é da nossa época.",
+            "ru": "Ты не из этого времени.",
+            "uk": "Ти не з цього часу.",
+            "vi": "Cậu không thuộc về thời đại này."
+          }
+        },
+        {
+          "speaker_id": "adam",
+          "text": "To je docela přesné.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ziemlich genau.",
+            "en": "That's pretty accurate.",
+            "fr": "C'est plutôt exact.",
+            "it": "È piuttosto preciso.",
+            "ja": "かなり正確だ",
+            "ko": "꽤 정확하네요.",
+            "pl": "To całkiem trafne.",
+            "pt-BR": "É bem isso.",
+            "ru": "Вполне точно.",
+            "uk": "Це досить точно.",
+            "vi": "Chính xác phết."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "pharaoh3000"
+        },
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "glowing red eyes",
+        "menacing",
+        "heroes looking up",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh3000",
+          "text": "Čas patří mně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Zeit gehört mir.",
+            "en": "Time belongs to me.",
+            "fr": "Le temps m'appartient.",
+            "it": "Il tempo appartiene a me.",
+            "ja": "時は私のもの",
+            "ko": "시간은 내 것이다.",
+            "pl": "Czas należy do mnie.",
+            "pt-BR": "O tempo me pertence.",
+            "ru": "Время принадлежит мне.",
+            "uk": "Час належить мені.",
+            "vi": "Thời gian thuộc về ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "nora"
+        },
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "holding shield",
+        "energy shield",
+        "glowing blue",
+        "determined",
+        "robotic arm",
+        "adam looking at nora"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Co uděláme?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was machen wir?",
+            "en": "What do we do?",
+            "fr": "On fait quoi ?",
+            "it": "Cosa facciamo?",
+            "ja": "どうする？",
+            "ko": "어떻게 할까?",
+            "pl": "Co zrobimy?",
+            "pt-BR": "O que fazemos?",
+            "ru": "Что делать?",
+            "uk": "Що робимо?",
+            "vi": "Ta phải làm gì đây?"
+          }
+        },
+        {
+          "speaker_id": "nora",
+          "text": "Utíkej.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Lauf.",
+            "en": "Run.",
+            "fr": "Cours.",
+            "it": "Scappa.",
+            "ja": "逃げて",
+            "ko": "도망쳐.",
+            "pl": "Uciekaj.",
+            "pt-BR": "Fuja.",
+            "ru": "Беги.",
+            "uk": "Втікай.",
+            "vi": "Chạy đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "confused",
+        "tilting head",
+        "holding sword",
+        "question mark",
+        "nora looking at adam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "To je plán?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ist das der Plan?",
+            "en": "That's the plan?",
+            "fr": "C'est le plan ?",
+            "it": "È questo il piano?",
+            "ja": "それだけ？",
+            "ko": "그게 계획이야?",
+            "pl": "To jest plan?",
+            "pt-BR": "Esse é o plano?",
+            "ru": "Это план?",
+            "uk": "Це план?",
+            "vi": "Đó là kế hoạch sao?"
+          }
+        },
+        {
+          "speaker_id": "nora",
+          "text": "Zatím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für jetzt.",
+            "en": "For now.",
+            "fr": "Pour l'instant.",
+            "it": "Per ora.",
+            "ja": "今はね",
+            "ko": "일단 그래.",
+            "pl": "Na razie.",
+            "pt-BR": "Por enquanto.",
+            "ru": "Пока что.",
+            "uk": "Поки що.",
+            "vi": "Chưa chắc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "shadow"
+        },
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "black smoke",
+        "glowing purple eyes",
+        "floating",
+        "heroes looking up",
+        "dark atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "shadow",
+          "text": "Všechny časy budou moje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alle Zeiten werden meine sein.",
+            "en": "All times will be mine.",
+            "fr": "Toutes les époques seront à moi.",
+            "it": "Tutti i tempi saranno miei.",
+            "ja": "全ての時代を我が物にする",
+            "ko": "모든 시간이 내 것이 될 거야.",
+            "pl": "Wszystkie czasy będą moje.",
+            "pt-BR": "Todos os tempos serão meus.",
+            "ru": "Все времена будут моими.",
+            "uk": "Усі часи будуть моїми.",
+            "vi": "Mọi thời đại sẽ thuộc về ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, black smoke swirling slowly, static camera",
+      "wd14_tags": {
+        "pillar": 0.919,
+        "1other": 0.857,
+        "blue theme": 0.825,
+        "hood": 0.744,
+        "ghost": 0.661,
+        "backpack": 0.651,
+        "standing": 0.568,
+        "hoodie": 0.566,
+        "bag": 0.543,
+        "indoors": 0.52,
+        "scenery": 0.488,
+        "solo": 0.488
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "holding sword",
+        "glowing sword",
+        "determined",
+        "blue light",
+        "time stop effect"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "nora moving",
+        "adam frozen",
+        "time stop",
+        "blue aura",
+        "droning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Dokázal jsi to.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast es geschafft.",
+            "en": "You did it.",
+            "fr": "Tu y es arrivé.",
+            "it": "Ce l'hai fatta.",
+            "ja": "やれたわ",
+            "ko": "네가 해냈어.",
+            "pl": "Udało ci się.",
+            "pt-BR": "Você conseguiu.",
+            "ru": "Ты справился.",
+            "uk": "Ти зміг це зробити.",
+            "vi": "Cậu đã làm được rồi."
+          }
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Teď ty.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Jetzt du.",
+            "en": "Your turn.",
+            "fr": "À ton tour.",
+            "it": "Ora tocca a te.",
+            "ja": "次は君だ",
+            "ko": "이제 네 차례야.",
+            "pl": "Teraz ty.",
+            "pt-BR": "Agora é com você.",
+            "ru": "Теперь твоя очередь.",
+            "uk": "Тепер твоя черга.",
+            "vi": "Giờ đến lượt cậu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_void",
+      "characters": [
+        {
+          "id": "nora"
+        },
+        {
+          "id": "shadow"
+        }
+      ],
+      "visual_tags": [
+        "drone",
+        "blue energy",
+        "trapping",
+        "black smoke",
+        "portal"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_void",
+      "characters": [
+        {
+          "id": "adam"
+        },
+        {
+          "id": "nora"
+        }
+      ],
+      "visual_tags": [
+        "shaking hands",
+        "sad",
+        "closed eyes",
+        "time portal opening",
+        "blue light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nora",
+          "text": "Možná se nikdy neuvidíme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht sehen wir uns nie wieder.",
+            "en": "We might never see each other again.",
+            "fr": "On ne se reverra peut-être jamais.",
+            "it": "Forse non ci rivedremo mai.",
+            "ja": "もう会えないかもしれない",
+            "ko": "다시 만날 수 없을지도 몰라.",
+            "pl": "Może się nigdy nie zobaczymy.",
+            "pt-BR": "Talvez nunca mais nos vejamos.",
+            "ru": "Мы, возможно, никогда не увидимся.",
+            "uk": "Може, ми ніколи більше не побачимося.",
+            "vi": "Có khi chúng ta sẽ không bao giờ gặp lại nhau."
+          }
+        },
+        {
+          "speaker_id": "adam",
+          "text": "Možná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht.",
+            "en": "Maybe.",
+            "fr": "Peut-être.",
+            "it": "Forse.",
+            "ja": "そうかもね",
+            "ko": "그럴지도.",
+            "pl": "Może.",
+            "pt-BR": "Talvez.",
+            "ru": "Возможно.",
+            "uk": "Може.",
+            "vi": "Có lẽ vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

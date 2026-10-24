@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_09_adam_casovy_mec",
+  "title": "Adam a časový meč",
+  "synopsis": "Adam s mečem zastavujícím čas a Nora z budoucnosti bojují proti Časovému stínu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Adam se vrací domů, ale Nora ho vidí v hologramu z budoucnosti."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_museum",
+      "l_temple",
+      "l_void"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adam",
+      "name": "Adam",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech boy aged 11 with short blue hair and blue eyes",
+      "base": "male child, blue hair, short hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "blue jacket, white t-shirt, jeans, sneakers"
+      },
+      "photo": "a Czech boy aged 11 with short blue hair and blue eyes",
+      "tag_prompt": "male child, blue hair, short hair, blue eyes, fair skin, blue jacket, white t-shirt, jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "nora",
+      "name": "Nora",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a Czech girl aged 12 with long black hair and green eyes",
+      "base": "female child, black hair, long hair, green eyes, fair skin",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots"
+      },
+      "photo": "a Czech girl aged 12 with long black hair and green eyes",
+      "tag_prompt": "female child, black hair, long hair, green eyes, fair skin, silver space helmet, white spacesuit, purple gloves, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pharaoh3000",
+      "name": "Faraon 3000",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large golden robot with glowing red eyes and an antenna",
+      "base": "robot, mecha, large, golden armor, glowing red eyes",
+      "outfits": {
+        "default": "golden armor, glowing red eyes, antenna"
+      },
+      "photo": "a large golden robot with glowing red eyes and an antenna",
+      "tag_prompt": "robot, mecha, large, golden armor, glowing red eyes, golden armor, glowing red eyes, antenna",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "shadow",
+      "name": "Časový stín",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a floating black smoke spirit with glowing purple eyes",
+      "base": "ghost, transparent, floating, black smoke, glowing purple eyes",
+      "outfits": {
+        "default": "black smoke, glowing purple eyes"
+      },
+      "photo": "a floating black smoke spirit with glowing purple eyes",
+      "tag_prompt": "ghost, transparent, floating, black smoke, glowing purple eyes, black smoke, glowing purple eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_museum",
+      "name": "Muzeum",
+      "description": "Muzeum",
+      "tag_prompt": "indoors, museum, glass case, old sword, dim light, dust particles",
+      "mood": ""
+    },
+    {
+      "id": "l_temple",
+      "name": "Chrámu",
+      "description": "Chrámu",
+      "tag_prompt": "indoors, ancient temple, stone pillars, hieroglyphs, mysterious light, fog",
+      "mood": ""
+    },
+    {
+      "id": "l_void",
+      "name": "Časová brána",
+      "description": "Časová brána",
+      "tag_prompt": "indoors, time portal, swirling blue energy, stars, dark background",
+      "mood": ""
+    }
+  ]
+}

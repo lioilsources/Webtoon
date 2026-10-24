@@ -1,0 +1,463 @@
+{
+  "title": "Vojta a pyramida mimo čas",
+  "title_i18n": {
+    "de": "Vojta und die Pyramide jenseits der Zeit",
+    "en": "Vojta and the Timeless Pyramid",
+    "fr": "Vojta et la pyramide hors du temps",
+    "it": "Vojta e la piramide fuori dal tempo",
+    "ja": "ヴォーヤと時空を越えたピラミッド",
+    "ko": "보야타와 시간 밖의 피라미드",
+    "pl": "Vojta i piramida spoza czasu",
+    "pt-BR": "Vojta e a pirâmide fora do tempo",
+    "ru": "Войта и пирамида вне времени",
+    "uk": "Войта та піраміда поза часом",
+    "vi": "Vojta và Kim tự ngoài thời gian"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pyramid_ext",
+      "characters": [],
+      "visual_tags": [
+        "pyramid construction",
+        "night sky",
+        "moonlight",
+        "sand dunes",
+        "stone blocks"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Egypt, noc. Stavba pyramidy.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ägypten, Nacht. Der Pyramidenbau.",
+            "en": "Egypt, night. The pyramid is under construction.",
+            "fr": "Égypte, nuit. Construction de la pyramide.",
+            "it": "Egitto, notte. Costruzione della piramide.",
+            "ja": "エジプト、夜。ピラミッド建設中。",
+            "ko": "이집트, 밤. 피라미드 건설 현장.",
+            "pl": "Egipt, noc. Budowa piramidy.",
+            "pt-BR": "Egito, noite. Construção da pirâmide.",
+            "ru": "Египет, ночь. Строительство пирамиды.",
+            "uk": "Єгипет, ніч. Будівництво піраміди.",
+            "vi": "Ai Cập, đêm. Công trường xây kim tự tháp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, dust drifting, static camera",
+      "motion_llm": "stars drifting slowly, moonlight shimmering on sand, static camera",
+      "wd14_tags": {
+        "no humans": 0.987,
+        "sky": 0.96,
+        "star (sky)": 0.947,
+        "scenery": 0.941,
+        "starry sky": 0.882,
+        "night": 0.844,
+        "night sky": 0.834,
+        "outdoors": 0.806,
+        "desert": 0.731,
+        "mountainous horizon": 0.626,
+        "mountain": 0.59
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_ext",
+      "characters": [
+        {
+          "id": "vojta"
+        },
+        {
+          "id": "worker"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding bow",
+        "looking at viewer",
+        "confused",
+        "stone in hand",
+        "moonlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vojta",
+          "text": "Ahoj! Jsem z budoucnosti. Někdo tahá za nitě dějin. …A taky jsem ztratil pas časoprostoru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hallo! Ich komme aus der Zukunft. Jemand zupft an den Fäden der Geschichte. …Und ich habe meinen Raumzeit-Pass verloren.",
+            "en": "Hey! I'm from the future. Someone's pulling the strings of history. ...And I lost my space-time passport.",
+            "fr": "Salut ! Je viens du futur. Quelqu'un tire les ficelles de l'histoire. …Et j'ai aussi perdu mon passe-temps spatial.",
+            "it": "Ciao! Vengo dal futuro. Qualcuno tira i fili della storia. …E ho anche perso il pass per lo spaziotempo.",
+            "ja": "やあ！ 未来から来たんだ。歴史の糸を引く誰かがいる……って、時空パスも失っちまったよ。",
+            "ko": "안녕! 나는 미래에서 왔어. 역사의 줄을 당기는 자가 있어. …그리고 시공간 여권도 잃어버렸고.",
+            "pl": "Cześć! Jestem z przyszłości. Ktoś szarpuje za nitki historii. …I zgubiłem pas czasoprzestrzeni.",
+            "pt-BR": "Oi! Sou do futuro. Alguém puxa as cordas da história. …E também perdi meu passaporte espaço-temporal.",
+            "ru": "Привет! Я из будущего. Кто-то дёргает нити истории. …И я потерял паспорт пространства-времени.",
+            "uk": "Привіт! Я з майбутнього. Хтось тягне за нитки історії. …І я втратив паспорт простору-часу.",
+            "vi": "Chào! Tôi đến từ tương lai. Có ai đó đang giật dây lịch sử. …Và tôi cũng đánh mất hộ chiếu không-thời gian."
+          }
+        },
+        {
+          "speaker_id": "worker",
+          "text": "Další šílenec. Včera jeden tvrdil, že kámen je z hvězd.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wieder ein Verrückter. Gestern meinte einer, der Stein käme von den Sternen.",
+            "en": "Another lunatic. Yesterday some guy claimed the stone came from the stars.",
+            "fr": "Un autre fou. Hier, un type disait que la pierre venait des étoiles.",
+            "it": "Un altro pazzo. Ieri uno giurava che la pietra veniva dalle stelle.",
+            "ja": "また変な奴か。昨日も石が星から来るとか言いやがって。",
+            "ko": "또 다른 미친놈. 어제 어떤 놈은 돌이 별에서 왔다고 했지.",
+            "pl": "Kolejny szaleniec. Wczoraj jeden twierdził, że kamień jest z gwiazd.",
+            "pt-BR": "Outro louco. Ontem um dizia que a pedra vinha das estrelas.",
+            "ru": "Ещё один сумасшедший. Вчера один утверждал, что камень — со звёзд.",
+            "uk": "Ще один божевільний. Вчора один твердив, що камінь з зірок.",
+            "vi": "Lại một kẻ điên. Hôm qua có gã còn nói đá là từ sao rơi xuống."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "pharaoh_spirit"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "golden mask",
+        "glowing eyes",
+        "mysterious",
+        "stone walls",
+        "glowing runes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh_spirit",
+          "text": "SOUTĚŽ, CESTOVATELI! UKAŽ NÁM BUDOUCNOST. JESTLI JE LEPŠÍ, SLOŽÍME ZBRANĚ. JESTLI HORŠÍ – PŘEPÍŠEME DĚJINY!",
+          "kind": "shout",
+          "i18n": {
+            "de": "WETTBEWERB, REISENDE! ZEIGT MIR DIE ZUKUNFT. IST SIE BESSER, LEGEN WIR DIE WAFFEN NIEDER. IST SIE SCHLECHTER – SCHREIBEN WIR DIE GESCHICHTE UM!",
+            "en": "COMPETITION, TRAVELERS! SHOW US THE FUTURE. IF IT'S BETTER, WE LAY DOWN OUR WEAPONS. IF IT'S WORSE – WE REWRITE HISTORY!",
+            "fr": "CONCOURS, VOYAGEURS ! MONTREZ-NOUS L'AVENIR. SI IL EST MEILLEUR, NOUS POSERONS LES ARMES. SI IL EST PIRE – NOUS RÉÉCRIRONS L'HISTOIRE !",
+            "it": "CONCORSO, VIAGGIATORI! MOSTRACI IL FUTURO. SE È MIGLIORE, LASCIAREMO LE ARMI. SE È PEGGIORE – RISCRIREMO LA STORIA!",
+            "ja": "旅人たちよ、未来を見せろ！ 未来が素晴らしいなら武器を捨てよう。最悪なら歴史を書き換えるぞ！",
+            "ko": "경쟁, 여행자들아! 우리에게 미래를 보여라. 더 나은다면 무기를 내려놓겠다. 더 나쁘다면 역사를 다시 쓰겠다!",
+            "pl": "ZAWODY, PODRÓŻNICZY! POKAŻCIE MI PRZYSZŁOŚĆ. JEŚLI JEST LEPSZA, ZŁOŻYM BROŃ. JEŚLI GORSZA – PRZEPISZEMY HISTORIĘ!",
+            "pt-BR": "CONCURSO, VIAJANTES! MOSTREM-NOS O FUTURO. SE FOR MELHOR, DEIXAREMOS AS ARMAS. SE FOR PIOR – REESCREVEREMOS A HISTÓRIA!",
+            "ru": "СОРЕВНОВАНИЕ, ПУТЕШЕСТВЕННИКИ! ПОКАЖИТЕ НАМ БУДУЩЕЕ. ЕСЛИ ЛУЧШЕ — СЛОЖИМ ОРУЖИЕ. ЕСЛИ ХУЖЕ — ПЕРЕПИШЕМ ИСТОРИЮ!",
+            "uk": "ЗМАГАННЯ, ПОДОРОЖНІ! ПОКАЖІТЬ НАМ МАЙБУТНЄ. ЯКЩО ВОНО КРАЩЕ — МИ СКЛАДЕМО ЗБРОЮ. ЯКЩО ГІРШЕ — ПЕРЕПИШЕМО ІСТОРІЮ!",
+            "vi": "CUỘC THI, CÁC NHÀ DU LỊCH! HÃY CHỨNG MINH TƯƠNG LAI CHO TA XEM. NẾU TỐT HƠN, CHÚNG TA SẼ BỎ VŨ KHÍ. NẾU KÉM HƠN – TA SẼ VIẾT LẠI LỊCH SỬ!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "vojta"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding bow",
+        "serious",
+        "determined",
+        "looking at ghost"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vojta",
+          "text": "Podmínka: žádné přepisování bez konzultace obyvatel. Včetně koček.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bedingung: Kein Um schreiben ohne Rücksprache mit der Bevölkerung. Inklusive Katzen.",
+            "en": "Condition: no rewriting without consulting the locals. Including the cats.",
+            "fr": "Condition : aucune réécriture sans consulter les habitants. Y compris les chats.",
+            "it": "Condizione: nessun riscrittura senza consultare gli abitanti. Gatti inclusi.",
+            "ja": "条件は、住民、猫も含めて、相談なしの歴史改変禁止。",
+            "ko": "조건: 주민들과 상의 없이 역사를 바꾸지 마. 고양이도 포함해서.",
+            "pl": "Warunek: żadne przepisywanie bez konsultacji z mieszkańcami. Włącznie z kotami.",
+            "pt-BR": "Condição: sem reescrever sem consultar os habitantes. Incluindo os gatos.",
+            "ru": "Условие: никаких переписываний без согласования с жителями. Включая котов.",
+            "uk": "Умова: жодного переписування без консультації з жителями. Включно з котами.",
+            "vi": "Điều kiện: không được phép viết lại lịch sử nếu chưa tham vấn dân chúng. Kèm cả mèo nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "vojta"
+        },
+        {
+          "id": "pharaoh_spirit"
+        }
+      ],
+      "visual_tags": [
+        "hologram",
+        "glowing blue light",
+        "airplanes",
+        "hospital",
+        "music notes",
+        "pizza",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, hologram glowing and flickering, dust motes floating in light beam, static camera",
+      "wd14_tags": {
+        "blue theme": 0.925,
+        "standing": 0.702,
+        "1boy": 0.627,
+        "indoors": 0.566,
+        "glowing": 0.5,
+        "short hair": 0.485,
+        "scenery": 0.434,
+        "floating": 0.385,
+        "1girl": 0.375,
+        "from behind": 0.354
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "pharaoh_spirit"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "thinking",
+        "hand on chin",
+        "golden mask",
+        "glowing aura"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh_spirit",
+          "text": "Budoucnost… není dokonalá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Zukunft … ist nicht perfekt.",
+            "en": "The future... isn't perfect.",
+            "fr": "Le futur… n'est pas parfait.",
+            "it": "Il futuro… non è perfetto.",
+            "ja": "未来……完璧じゃないな。",
+            "ko": "미래는… 완벽하지 않아.",
+            "pl": "Przyszłość… nie jest doskonała.",
+            "pt-BR": "O futuro… não é perfeito.",
+            "ru": "Будущее… не идеально.",
+            "uk": "Майбутнє… не досконале.",
+            "vi": "Tương lai… chẳng hoàn hảo."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "vojta"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "confident",
+        "holding bow",
+        "moonlight reflection in eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vojta",
+          "text": "Není. Ale je opravdová. Dokonalé věci se nelíbí ani jejich stavitelům.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Stimmt. Aber sie ist echt. Perfekte Dinge gefallen selbst ihren Machern nicht.",
+            "en": "It isn't. But it's real. Even the creators don't like perfect things.",
+            "fr": "Non. Mais il est réel. Les choses parfaites ne plaisent pas même à leurs créateurs.",
+            "it": "Non lo è. Ma è reale. Le cose perfette non piacciono nemmeno ai loro creatori.",
+            "ja": "確かにね。でも本物さ。完璧なものは、作り手ですら気に入らないんだから。",
+            "ko": "맞아. 하지만 진짜야. 완벽함은 그들을 지은 자들도 싫어하거든.",
+            "pl": "Nie jest. Ale jest prawdziwa. Doskonałe rzeczy nie podobały się nawet ich twórcom.",
+            "pt-BR": "Não é. Mas é real. Coisas perfeitas não agradam nem seus construtores.",
+            "ru": "Не идеально. Но настоящее. Идеальные вещи не нравятся даже их создателям.",
+            "uk": "Не є. Але воно справжнє. Досконалі речі не подобаються навіть їхнім творцям.",
+            "vi": "Đúng vậy. Nhưng nó là thật. Những thứ hoàn hảo thì ngay cả người tạo ra chúng cũng chẳng thích."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "pharaoh_spirit"
+        },
+        {
+          "id": "older_vojta"
+        }
+      ],
+      "visual_tags": [
+        "ghost fading",
+        "glowing particles",
+        "standing",
+        "golden mask",
+        "mysterious",
+        "stone walls"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "older_vojta",
+          "text": "Nesmíš to tady ukončit. Musíš nechat jednoho faraona zářit. Kdo jiný tě naučí střílet měsíčním světlem?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du darfst es hier nicht beenden. Du musst einen Pharao strahlen lassen. Wer sonst bringt dir bei, mit Mondlicht zu schießen?",
+            "en": "You can't end it here. You have to let one pharaoh shine. Who else will teach you to shoot with moonlight?",
+            "fr": "Tu ne dois pas mettre fin à tout ça. Tu dois laisser un pharaon briller. Qui d'autre t'aura appris à tirer à la lumière de la lune ?",
+            "it": "Non devi fermarti qui. Devi lasciare che un faraone splenda. Chi altro ti insegnerà a sparare con la luce della luna?",
+            "ja": "ここで終わるなよ。ファラオの一人を輝かせろ。月明かりの撃ち方を教えてくれるのは、他にいるか？",
+            "ko": "여기서 끝내면 안 돼. 파라오 한 명은 빛나게 해둬야 해. 누가 너에게 달빛 사격을 가르쳐 주겠니?",
+            "pl": "Nie możesz tu kończyć. Musisz pozwolić jednemu faraonowi błyszczeć. Kto inny nauczy cię strzelać księżycowym światłem?",
+            "pt-BR": "Não pode acabar aqui. Você tem que deixar um faraó brilhar. Quem mais te ensina a atirar com luz da lua?",
+            "ru": "Не заканчивай это здесь. Ты должен позволить одному фараону сиять. Кто ещё научит тебя стрелять лунным светом?",
+            "uk": "Ти не можеш закінчувати це тут. Ти маєш дозволити одному фараону сяяти. Хто інший навчить тебе стріляти місячним світлом?",
+            "vi": "Cậu không được chấm dứt chuyện này ở đây. Cậu phải để một vị Pharaoh tỏa sáng. Ai khác sẽ dạy cậu bắn bằng ánh trăng chứ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_int",
+      "characters": [
+        {
+          "id": "vojta"
+        },
+        {
+          "id": "older_vojta"
+        }
+      ],
+      "visual_tags": [
+        "looking at each other",
+        "surprised",
+        "open mouth",
+        "golden mask",
+        "bow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "vojta",
+          "text": "Ty jsi… já? Pak prohrávám, nebo vítězím?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist … ich? Verliere ich dann oder gewinne ich?",
+            "en": "You're... me? So am I losing or winning?",
+            "fr": "Tu es… moi ? Alors je perds ou je gagne ?",
+            "it": "Tu sei… io? Quindi sto perdendo o vincendo?",
+            "ja": "お前……俺？ じゃあ、俺は負けたのか、勝ったのか？",
+            "ko": "너는… 나? 그럼 내가 진 건가, 이긴 건가?",
+            "pl": "Ty jesteś… ja? Czy więc przegrywam, czy wygrywam?",
+            "pt-BR": "Você é… eu? Então estou perdendo ou vencendo?",
+            "ru": "Ты… я? Значит, я проигрываю или побеждаю?",
+            "uk": "Ти це… я? Тоді я програю чи виграю?",
+            "vi": "Ngươi là… ta? Vậy là ta thua hay thắng?"
+          }
+        },
+        {
+          "speaker_id": "older_vojta",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "うん。",
+            "ko": "그래.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Đúng vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_ext",
+      "characters": [
+        {
+          "id": "vojta"
+        },
+        {
+          "id": "pharaoh_spirit"
+        }
+      ],
+      "visual_tags": [
+        "walking away",
+        "back view",
+        "moonlight",
+        "pyramid silhouette",
+        "glowing aura",
+        "sand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vojta odchází s učitelem-faraonem. Pas zůstává v Egyptu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Vojta geht mit dem Lehrer-Pharao. Der Pass bleibt in Ägypten.",
+            "en": "Vojta leaves with the pharaoh-teacher. The passport stays in Egypt.",
+            "fr": "Vojta part avec le pharaon-enseignant. Le passe-temps reste en Égypte.",
+            "it": "Vojta se ne va con il suo maestro-faraone. Il pass resta in Egitto.",
+            "ja": "ヴォーヤはファラオの師と共に去り、パスはエジプトに残された。",
+            "ko": "보야타는 스승인 파라오와 함께 떠났다. 여권은 이집트에 남았다.",
+            "pl": "Vojta odchodzi z nauczycielem-faraonem. Pas zostaje w Egipcie.",
+            "pt-BR": "Vojta vai embora com o professor-faraó. O passaporte fica no Egito.",
+            "ru": "Войта уходит с фараоном-учителем. Паспорт остаётся в Египте.",
+            "uk": "Войта йде з фараоном-вчителем. Паспорт залишається в Єгипті.",
+            "vi": "Vojta rời đi cùng người thầy là Pharaoh. Hộ chiếu vẫn nằm lại Ai Cập."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

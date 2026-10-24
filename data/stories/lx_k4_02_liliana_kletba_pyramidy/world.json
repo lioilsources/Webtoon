@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k4_02_liliana_kletba_pyramidy",
+  "title": "Liliana a kletba pyramidy",
+  "synopsis": "Princezna Liliana a její kocí rádce Toto musí zlomit starou kletbu na faraona Ramsese v podzemní pyramidě.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: kletba je zlomena a pyramida svítí mírem."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pyramid",
+      "l_pyramid_center"
+    ]
+  },
+  "characters": [
+    {
+      "id": "liliana",
+      "name": "Liliana",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a magical fairy aged 8 with long pink hair and shimmering butterfly wings",
+      "base": "fairy, pink hair, long hair, butterfly wings, translucent wings, blue eyes, fair skin",
+      "outfits": {
+        "default": "silver magic wand, white dress, gold trim, fairy shoes"
+      },
+      "photo": "a magical fairy aged 8 with long pink hair and shimmering butterfly wings",
+      "tag_prompt": "fairy, pink hair, long hair, butterfly wings, translucent wings, blue eyes, fair skin, silver magic wand, white dress, gold trim, fairy shoes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ramses",
+      "name": "Faraon Ramzes",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "an ancient egyptian mummy king with green glowing eyes and a golden staff",
+      "base": "mummy, bandages, ancient egyptian, tall, muscular, green eyes, stern face",
+      "outfits": {
+        "default": "gold headdress, green glowing staff, ancient armor"
+      },
+      "photo": "an ancient egyptian mummy king with green glowing eyes and a golden staff",
+      "tag_prompt": "mummy, bandages, ancient egyptian, tall, muscular, green eyes, stern face, gold headdress, green glowing staff, ancient armor",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "toto",
+      "name": "Toto",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small mummified cat with green eyes and a gold collar",
+      "base": "cat, mummy cat, bandages, green eyes, small, fluffy tail",
+      "outfits": {
+        "default": "small gold collar, ancient egyptian markings"
+      },
+      "photo": "a small mummified cat with green eyes and a gold collar",
+      "tag_prompt": "cat, mummy cat, bandages, green eyes, small, fluffy tail, small gold collar, ancient egyptian markings",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pyramid",
+      "name": "Podzemní pyramida",
+      "description": "Podzemní pyramida",
+      "tag_prompt": "indoors, ancient egyptian pyramid, hieroglyphs, green flames, torches, stone walls, dark atmosphere, magical dust",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid_center",
+      "name": "Střed pyramidy",
+      "description": "Střed pyramidy",
+      "tag_prompt": "indoors, ancient egyptian pyramid, center chamber, glowing pink and gold light, floating dust, magical aura",
+      "mood": ""
+    }
+  ]
+}

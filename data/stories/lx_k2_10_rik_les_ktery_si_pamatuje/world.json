@@ -1,0 +1,109 @@
+{
+  "id": "w_lx_k2_10_rik_les_ktery_si_pamatuje",
+  "title": "Rik a les, který si pamatuje",
+  "synopsis": "Rik, chlapec rozumějící zvířatům, objeví tajný svět pod kořeny a přátelí se s chránitelem lesa.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Rik se vrátí do lesa, když nastane noc bez měsíce."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_cave"
+    ]
+  },
+  "characters": [
+    {
+      "id": "rik",
+      "name": "Rik",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech boy aged 10 with short brown hair and a wooden sword",
+      "base": "male child, brown hair, short hair, brown eyes, fair skin, calm expression",
+      "outfits": {
+        "default": "green tunic, brown belt, leather boots, wooden sword on back"
+      },
+      "photo": "a calm Czech boy aged 10 with short brown hair and a wooden sword",
+      "tag_prompt": "male child, brown hair, short hair, brown eyes, fair skin, calm expression, green tunic, brown belt, leather boots, wooden sword on back",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mia",
+      "name": "Mia",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a majestic white wolf with glowing blue eyes and a fluffy tail",
+      "base": "wolf, white fur, big ears, blue eyes, fluffy tail",
+      "outfits": {
+        "default": "glowing blue collar"
+      },
+      "photo": "a majestic white wolf with glowing blue eyes and a fluffy tail",
+      "tag_prompt": "wolf, white fur, big ears, blue eyes, fluffy tail, glowing blue collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "strazce",
+      "name": "Starý Strážce",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent spirit with a long beard and leaf cloak",
+      "base": "ghost, transparent, floating, long beard, old face, glowing, leaf cloak",
+      "outfits": {
+        "default": "leaf cloak, vine accessories, glowing aura"
+      },
+      "photo": "a translucent spirit with a long beard and leaf cloak",
+      "tag_prompt": "ghost, transparent, floating, long beard, old face, glowing, leaf cloak, leaf cloak, vine accessories, glowing aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demons",
+      "name": "Démon Kořenů",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large rock monster with glowing orange eyes and thick roots",
+      "base": "monster, large, rock skin, glowing orange eyes, roots, vines",
+      "outfits": {
+        "default": "glowing orange core, stone armor, thick roots"
+      },
+      "photo": "a large rock monster with glowing orange eyes and thick roots",
+      "tag_prompt": "monster, large, rock skin, glowing orange eyes, roots, vines, glowing orange core, stone armor, thick roots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Les",
+      "description": "Les",
+      "tag_prompt": "outdoors, forest, tall trees, sunlight, green leaves, path, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_cave",
+      "name": "Podzemní jeskyně",
+      "description": "Podzemní jeskyně",
+      "tag_prompt": "indoors, cave, roots, dark, glowing moss, underground, mysterious",
+      "mood": ""
+    }
+  ]
+}

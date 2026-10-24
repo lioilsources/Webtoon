@@ -1,0 +1,424 @@
+{
+  "title": "Quantum a tisíce zámků",
+  "title_i18n": {
+    "de": "Quantum und die tausend Schlösser",
+    "en": "Quantum and a Thousand Locks",
+    "fr": "Quantum et mille serrures",
+    "it": "Quantum e mille serrature",
+    "ja": "量子と千の鍵",
+    "ko": "천 개의 자물쇠와 양자",
+    "pl": "Quantum i tysiąc zamków",
+    "pt-BR": "Quantum e mil cadeados",
+    "ru": "Квант и тысяча замков",
+    "uk": "Квант і тисячі замків",
+    "vi": "Lượng tử và ngàn ổ khóa"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_city",
+      "characters": [],
+      "visual_tags": [
+        "fantasy city",
+        "many doors",
+        "cobblestone",
+        "sunlight",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Město Dveřohrad, kde jsou všechny dveře zamčené.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Stadt Türzburg, wo alle Türen verschlossen sind.",
+            "en": "The city of Dveřohrad, where every door is locked.",
+            "fr": "La ville de Dveřohrad, où toutes les portes sont verrouillées.",
+            "it": "La città di Dveřohrad, dove ogni porta è chiusa a chiave.",
+            "ja": "すべての扉が鍵で閉ざされた街、ドヴェルホグラード。",
+            "ko": "모든 문이 잠겨 있는 도시, 드베르오그라드.",
+            "pl": "Miasto Dveřohrad, gdzie wszystkie drzwi są zamknięte.",
+            "pt-BR": "A cidade de Dveřohrad, onde todas as portas estão trancadas.",
+            "ru": "Город Двероград, где все двери заперты на замок.",
+            "uk": "Місто Двероград, де всі двері замкнені.",
+            "vi": "Thành phố Dveřohrad, nơi mọi cánh cửa đều bị khóa chặt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, city lights blinking, static camera",
+      "motion_llm": "clouds drifting slowly, light flickering on doors, static camera",
+      "wd14_tags": {
+        "no humans": 0.965,
+        "scenery": 0.955,
+        "outdoors": 0.853,
+        "building": 0.818,
+        "road": 0.67,
+        "sky": 0.665,
+        "day": 0.664,
+        "window": 0.634,
+        "city": 0.536,
+        "arch": 0.532,
+        "street": 0.493,
+        "pavement": 0.489
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "tereza"
+        },
+        {
+          "id": "qbit"
+        }
+      ],
+      "visual_tags": [
+        "looking up",
+        "pointing",
+        "drone floating",
+        "serious face",
+        "goggles"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tereza",
+          "text": "Q-Bite, analýza!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Q-Bite, Analyse!",
+            "en": "Q-Bite, analyze!",
+            "fr": "Q-Bite, analyse !",
+            "it": "Q-Bite, analisi!",
+            "ja": "Q-Bite、解析して！",
+            "ko": "큐-바이트, 분석해!",
+            "pl": "Q-Bite, analiza!",
+            "pt-BR": "Q-Bite, análise!",
+            "ru": "К-Бит, анализ!",
+            "uk": "К-Байт, аналіз!",
+            "vi": "Q-Bite, phân tích!"
+          }
+        },
+        {
+          "speaker_id": "qbit",
+          "text": "Analýza: daemon s klíčovou hlavou. Doporučuji útěk.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Analyse: Dämon mit Schlüsselkopf. Ich empfehle Flucht.",
+            "en": "Analysis: daemon with a key head. I recommend fleeing.",
+            "fr": "Analyse : un daemon à tête de clé. Je recommande la fuite.",
+            "it": "Analisi: demone con testa da chiave. Consiglio la fuga.",
+            "ja": "解析：キーヘッドのデーモン。退避を推奨します。",
+            "ko": "분석: 열쇠 머리를 가진 데몬. 퇴각을 권합니다.",
+            "pl": "Analiza: daemon z kluczową głową. Zalecam ucieczkę.",
+            "pt-BR": "Análise: daemon com cabeça de chave. Recomendo fuga.",
+            "ru": "Анализ: демон с ключевой головой. Рекомендую бегство.",
+            "uk": "Аналіз: демон із ключовою головою. Рекомендую втечу.",
+            "vi": "Phân tích: daemon đầu khóa. Đề xuất rút lui."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "tereza"
+        }
+      ],
+      "visual_tags": [
+        "smirk",
+        "confident",
+        "adjusting glasses",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tereza",
+          "text": "Výborné číslo. Beru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gute Nummer. Nehme ich.",
+            "en": "Nice move. I'll take it.",
+            "fr": "Parfait. Je prends.",
+            "it": "Ottimo numero. Accetto.",
+            "ja": "上出来。了解。",
+            "ko": "좋아. 받아들일게.",
+            "pl": "Świetna liczba. Biorę.",
+            "pt-BR": "Ótimo número. Aceito.",
+            "ru": "Отличный ход. Принимаю.",
+            "uk": "Чудовий хід. Приймаю.",
+            "vi": "Con số tuyệt vời. Tôi nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "tereza"
+        },
+        {
+          "id": "zamkelom"
+        }
+      ],
+      "visual_tags": [
+        "chessboard floor",
+        "ghost floating",
+        "key head",
+        "laughing",
+        "open mouth",
+        "metallic"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "zamkelom",
+          "text": "Soutěž! Vyhraješ-li šachy o své město, odemknu vše.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wettbewerb! Wenn du im Schach deine Stadt gewinnst, mache ich alles auf.",
+            "en": "A contest! If you win the chess game for your city, I'll unlock everything.",
+            "fr": "Concours ! Si tu gagnes aux échecs pour ta ville, je déverrouille tout.",
+            "it": "Scommessa! Se vinci a scacchi la tua città, sbloccherò tutto.",
+            "ja": "勝負だ！将棋で街を勝ち取れば、すべてを解錠しよう。",
+            "ko": "경쟁이다! 체스에서 이기면 도시의 모든 자물쇠를 풀어주마.",
+            "pl": "Zawody! Jeśli wygrasz szachy o swoje miasto, otworzę wszystko.",
+            "pt-BR": "Competição! Se vencer o xadrez pela sua cidade, destranco tudo.",
+            "ru": "Ставка! Если выиграешь шахматы за свой город, я открою всё.",
+            "uk": "Змагання! Якщо переможеш у шахи за своє місто, я відкрию все.",
+            "vi": "Trò chơi! Nếu thắng cờ vua để cứu thành phố, ta sẽ mở tất cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "tereza"
+        }
+      ],
+      "visual_tags": [
+        "thinking",
+        "hand on chin",
+        "frowning",
+        "realization",
+        "looking at opponent"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tereza",
+          "text": "Ty nemáš rád hry. Ty máš rád moc.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du magst keine Spiele. Du magst Macht.",
+            "en": "You don't like games. You like power.",
+            "fr": "Tu n'aimes pas les jeux. Tu aimes le pouvoir.",
+            "it": "Non ti piacciono i giochi. Ti piace il potere.",
+            "ja": "君はゲームが好きじゃない。権力が好きなんだ。",
+            "ko": "너는 게임을 좋아하지 않아. 권력을 좋아할 뿐이지.",
+            "pl": "Nie lubisz gier. Lubisz władzę.",
+            "pt-BR": "Você não gosta de jogos. Você gosta de poder.",
+            "ru": "Ты не любишь игры. Ты любишь власть.",
+            "uk": "Ти не любиш ігри. Ти любиш владу.",
+            "vi": "Cậu không thích trò chơi. Cậu thích quyền lực."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "tereza"
+        },
+        {
+          "id": "zamkelom"
+        }
+      ],
+      "visual_tags": [
+        "shield transforming",
+        "giant key shape",
+        "glowing blue",
+        "energy blast",
+        "impact"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "goblin"
+        }
+      ],
+      "visual_tags": [
+        "scared",
+        "crying",
+        "small",
+        "green skin",
+        "big eyes",
+        "hiding"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "goblin"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "pointing at rift",
+        "serious",
+        "tattered cloak"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "goblin",
+          "text": "Zámeklom se vrátí. Až povyroste v něco horšího.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schlosselom kommt zurück. Wenn er zu etwas Schlimmerem herangewachsen ist.",
+            "en": "Zámeklom will return. Once he grows into something worse.",
+            "fr": "Zámeklom reviendra. Quand il aura grandi, en pire.",
+            "it": "Zámeklom tornerà. Quando sarà cresciuto in qualcosa di peggio.",
+            "ja": "ザメクロムは戻ってくる。もっと恐ろしい姿に進化してからな。",
+            "ko": "잠클롬이 돌아올 거야. 더 무서운 존재로 성장한 후에.",
+            "pl": "Zámeklom wróci. Gdy urośnie w coś gorszego.",
+            "pt-BR": "Zámeklom voltará. Quando crescer para algo pior.",
+            "ru": "Замоклом вернётся. Когда вырастет во что-то похуже.",
+            "uk": "Замеклом повернеться. Коли виросте в щось гірше.",
+            "vi": "Zámeklom sẽ trở lại. Khi nó lớn mạnh hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "tereza"
+        }
+      ],
+      "visual_tags": [
+        "standing tall",
+        "shield ready",
+        "determined",
+        "looking at rift"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tereza",
+          "text": "Až povyroste, vyrostu i já. Q-Bite – hlídej trhlinu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn er wächst, wachse ich auch. Q-Bite – behalte die Risse im Auge.",
+            "en": "When he grows, I'll grow too. Q-Bite—watch the crack.",
+            "fr": "Quand il grandira, je grandirai aussi. Q-Bite, garde l'ouverture.",
+            "it": "Quando crescerà, crescerò anch'io. Q-Bite, tieni d'occhio la crepa.",
+            "ja": "彼が進化するなら、私も成長する。Q-Bite、隙間を守って。",
+            "ko": "그가 성장하면 나도 성장할 거야. 큐-바이트, 균열을 지켜봐.",
+            "pl": "Gdy on urośnie, ja też urośnie. Q-Bite – pilnuj szczeliny.",
+            "pt-BR": "Quando ele crescer, eu também cresço. Q-Bite – vigie a fenda.",
+            "ru": "Когда он вырастет, вырасту и я. К-Бит, следи за трещиной.",
+            "uk": "Коли він виросте, виросту й я. К-Байт — стережи тріщину.",
+            "vi": "Khi nó lớn, ta cũng sẽ lớn. Q-Bite – canh giữ vết nứt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_portal",
+      "characters": [
+        {
+          "id": "qbit"
+        },
+        {
+          "id": "tereza"
+        }
+      ],
+      "visual_tags": [
+        "drone hovering",
+        "glowing rift",
+        "guarding",
+        "blue light",
+        "static pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "qbit",
+          "text": "Pravděpodobnost návratu 67 %. Rozkaz přijat. …Mimochodem, byla jste vynikající.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Rückkehrwahrscheinlichkeit 67 %. Befehl angenommen. …Übrigens, du warst hervorragend.",
+            "en": "Return probability: 67%. Order accepted. ...By the way, you were excellent.",
+            "fr": "Probabilité de retour : 67 %. Ordre reçu. …Au fait, tu étais excellente.",
+            "it": "Probabilità di ritorno: 67%. Ordine ricevuto. …Tra l'altro, sei stata eccellente.",
+            "ja": "帰還確率67％。了解。……それにしても、君は素晴らしいね。",
+            "ko": "귀환 확률 67%. 명령 수락. …그나저나, 정말 훌륭했어.",
+            "pl": "Prawdopodobieństwo powrotu 67%. Rozkaz przyjęty. …Przy okazji, byłaś wspaniała.",
+            "pt-BR": "Probabilidade de retorno: 67%. Ordem aceita. …Aliás, você foi excelente.",
+            "ru": "Вероятность возвращения 67%. Приказ принят. …Кстати, ты была великолепна.",
+            "uk": "Ймовірність повернення 67%. Розказ прийнято. …До речі, ти була чудовою.",
+            "vi": "Xác suất quay lại 67%. Nhận lệnh. …Nhân tiện, cậu xuất sắc lắm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "ambient only, characters still, rift pulsing with blue light, sparks floating, static camera",
+      "wd14_tags": {
+        "solo": 0.931,
+        "standing": 0.682,
+        "indoors": 0.588,
+        "black hair": 0.586,
+        "halo": 0.555,
+        "short hair": 0.522,
+        "boots": 0.506,
+        "white coat": 0.487,
+        "1girl": 0.476,
+        "long sleeves": 0.457,
+        "cube": 0.452,
+        "blue theme": 0.419
+      }
+    }
+  ]
+}

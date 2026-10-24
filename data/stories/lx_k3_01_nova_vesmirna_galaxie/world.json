@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k3_01_nova_vesmirna_galaxie",
+  "title": "Nova a Mechanický Král",
+  "synopsis": "Superhrdinka Nova bojuje s obřím mechem na planetě Xylar a zachrání svět i svého protivníka.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: planeta je v bezpečí a robot se stane spojencem."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_xylar",
+      "l_battle",
+      "l_cliff"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nova",
+      "name": "Nova",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with long purple hair and a determined expression",
+      "base": "female child, purple hair, long hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots, holding shield"
+      },
+      "photo": "a brave Czech girl aged 10 with long purple hair and a determined expression",
+      "tag_prompt": "female child, purple hair, long hair, blue eyes, fair skin, determined face, silver space helmet, white spacesuit, purple gloves, boots, holding shield",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mechanicky_kral",
+      "name": "Mechanický Král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red and silver robot with glowing red eyes and a menacing posture",
+      "base": "robot, mecha, large robot, red eyes, metal body",
+      "outfits": {
+        "default": "red glowing visor, antenna, metal plating"
+      },
+      "photo": "a large red and silver robot with glowing red eyes and a menacing posture",
+      "tag_prompt": "robot, mecha, large robot, red eyes, metal body, red glowing visor, antenna, metal plating",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "blaze",
+      "name": "Blaze",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small orange dog with big ears and a fluffy tail",
+      "base": "dog, small dog, orange fur, big ears, fluffy tail",
+      "outfits": {
+        "default": "small silver collar"
+      },
+      "photo": "a small orange dog with big ears and a fluffy tail",
+      "tag_prompt": "dog, small dog, orange fur, big ears, fluffy tail, small silver collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_xylar",
+      "name": "Planeta Xylar",
+      "description": "Planeta Xylar",
+      "tag_prompt": "outdoors, alien planet, purple sky, crystals, rocks, space, stars, night",
+      "mood": ""
+    },
+    {
+      "id": "l_battle",
+      "name": "Bojové pole",
+      "description": "Bojové pole",
+      "tag_prompt": "outdoors, alien planet, purple sky, crystals, rocks, laser beams, sparks, action",
+      "mood": ""
+    },
+    {
+      "id": "l_cliff",
+      "name": "Útes",
+      "description": "Útes",
+      "tag_prompt": "outdoors, alien planet, purple sky, cliff edge, deep abyss, stars, dramatic lighting",
+      "mood": ""
+    }
+  ]
+}

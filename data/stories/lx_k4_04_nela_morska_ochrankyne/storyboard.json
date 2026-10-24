@@ -1,0 +1,310 @@
+{
+  "title": "Nela Aqua a legenda o mořské ochránkyni",
+  "title_i18n": {
+    "de": "Nela Aqua und die Legende der Meereswächterin",
+    "en": "Nela Aqua and the Legend of the Sea Guardian",
+    "fr": "Nela Aqua et la légende de la gardienne de la mer",
+    "it": "Nela Aqua e la leggenda della protettrice del mare",
+    "ja": "ネラ・アクアと海の守護者の伝説",
+    "ko": "넬라 아쿠아와 바다 수호자의 전설",
+    "pl": "Nela Aqua i legenda o morskiej strażniczce",
+    "pt-BR": "Nela Aqua: A Guardiã dos Mares",
+    "ru": "Нела Аква и легенда о хранительнице моря",
+    "uk": "Нела Аква та легенда про морську захисницю",
+    "vi": "Nela Aqua và huyền thoại về Nữ hộ vệ Biển cả"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_reef",
+      "characters": [],
+      "visual_tags": [
+        "coral reef",
+        "colorful fish",
+        "seaweed",
+        "sunlight rays",
+        "underwater",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Barevný mořský svět plný podivných tvorů.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine bunte Welt unter Wasser, voller seltsamer Kreaturen.",
+            "en": "A colorful underwater world full of strange creatures.",
+            "fr": "Un monde marin coloré, plein de créatures étranges.",
+            "it": "Un mondo marino colorato pieno di creature strane.",
+            "ja": "奇妙な生き物に満ちた、色鮮やかな海の世界。",
+            "ko": "기묘한 생물들로 가득한 다채로운 바다 세계.",
+            "pl": "Kolorowy morski świat pełen dziwnych stworzeń.",
+            "pt-BR": "Um mundo marinho colorido, cheio de criaturas estranhas.",
+            "ru": "Цветной морской мир, полный странных существ.",
+            "uk": "Кольоровий морський світ, сповнений дивних істот.",
+            "vi": "Thế giới đại dương đầy màu sắc với những sinh vật kỳ lạ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera",
+      "motion_llm": "seaweed swaying gently, bubbles rising, sunlight filtering through water, static camera",
+      "wd14_tags": {
+        "coral": 0.994,
+        "fish": 0.977,
+        "no humans": 0.947,
+        "scenery": 0.942,
+        "tropical fish": 0.908,
+        "underwater": 0.899,
+        "clownfish": 0.831,
+        "ocean": 0.636,
+        "rock": 0.534,
+        "water": 0.487,
+        "outdoors": 0.454,
+        "bubble": 0.4
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "kraken_bot"
+        },
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "octopus robot",
+        "destroying coral",
+        "girl riding turtle",
+        "holding bubble gun",
+        "angry",
+        "shouting"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Nech naše mořské kamarády na pokoji, ty plechová chobotnice!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Lass unsere Meeresfreunde in Ruhe, du Blechoktopus!",
+            "en": "Leave our sea friends alone, you tin-can octopus!",
+            "fr": "Laisse nos amis de la mer tranquille, toi, pieuvre de tôle !",
+            "it": "Lascia in pace i nostri amici del mare, polpo di latta!",
+            "ja": "海の仲間たちを放っておいて！鉄のタコ！",
+            "ko": "바다 친구들 좀 내버려 둬, 너 이 철판 문어야!",
+            "pl": "Zostawcie nasze morskie kumple w spokoju, ty blaszana ośmiornico!",
+            "pt-BR": "Deixa nossos amigos do mar em paz, sua lula de lata!",
+            "ru": "Оставь наших морских друзей в покое, ты жестяная осьминожка!",
+            "uk": "Залиш наших морських друзів у спокої, жерстяна восьминоже!",
+            "vi": "Đừng động vào bạn bè biển của chúng tôi, con bạch tuộc sắt!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "shooting bubble",
+        "holding gun",
+        "determined",
+        "pointing",
+        "bubble forming"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FWOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "kraken_bot"
+        },
+        {
+          "id": "jiskricka"
+        }
+      ],
+      "visual_tags": [
+        "robot trapped in bubble",
+        "fish glowing",
+        "electric sparks",
+        "surprised",
+        "robot shaking"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ZAP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "happy",
+        "thumbs up",
+        "looking at robot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Jiskřičko, to byla bouře!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Funke, das war ein Sturm!",
+            "en": "Sparky, that was a storm!",
+            "fr": "Petite étincelle, c'était une tempête !",
+            "it": "Scintilla, è stata una tempesta!",
+            "ja": "イッシー、すごい嵐だったね！",
+            "ko": "지피, 진짜 폭풍이었어!",
+            "pl": "Iskierko, to był sztorm!",
+            "pt-BR": "Faísca, foi uma tempestade!",
+            "ru": "Искорка, это была буря!",
+            "uk": "Іскорко, це була буря!",
+            "vi": "Tinh Linh, đó là một cơn bão!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "jiskricka"
+        }
+      ],
+      "visual_tags": [
+        "fish jumping",
+        "happy fish",
+        "dancing",
+        "celebrating",
+        "smiling",
+        "closed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "YIPI!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, bubbles rising, static camera",
+      "motion_llm": "ambient only, characters still, bubbles rising, light rays shimmering in water, static camera",
+      "wd14_tags": {
+        "blonde hair": 0.942,
+        "underwater": 0.919,
+        "long hair": 0.887,
+        "closed eyes": 0.864,
+        "bubble": 0.858,
+        "smile": 0.839,
+        "open mouth": 0.837,
+        "air bubble": 0.809,
+        "holding": 0.721,
+        "water gun": 0.703,
+        "coral": 0.696,
+        "1girl": 0.669
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sand",
+      "characters": [
+        {
+          "id": "kraken_bot"
+        }
+      ],
+      "visual_tags": [
+        "robot sinking",
+        "buried in sand",
+        "eyes dimming",
+        "defeated",
+        "rusty"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Robot se hroutí do písku.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Roboter sackt in den Sand.",
+            "en": "The robot collapses into the sand.",
+            "fr": "Le robot s'effondre dans le sable.",
+            "it": "Il robot crolla nella sabbia.",
+            "ja": "ロボットが砂に崩れ落ちる。",
+            "ko": "로봇이 모래 속으로 무너져 내린다.",
+            "pl": "Robot zapada się w piasek.",
+            "pt-BR": "O robô desaba na areia.",
+            "ru": "Робот рушится в песок.",
+            "uk": "Робот падає в пісок.",
+            "vi": "Con robot sụp đổ xuống cát."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HUPP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_reef",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "jiskricka"
+        }
+      ],
+      "visual_tags": [
+        "hugging fish",
+        "happy",
+        "surrounded by fish",
+        "peaceful",
+        "smiling"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

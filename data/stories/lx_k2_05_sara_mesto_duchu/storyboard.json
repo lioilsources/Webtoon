@@ -1,0 +1,502 @@
+{
+  "title": "Sára a město duchů",
+  "title_i18n": {
+    "de": "Sára und die Stadt der Geister",
+    "en": "Sara and the City of Ghosts",
+    "fr": "Sára et la ville des fantômes",
+    "it": "Sára e la città dei fantasmi",
+    "ja": "サーラと幽霊の街",
+    "ko": "사라와 유령의 도시",
+    "pl": "Sára i miasto duchów",
+    "pt-BR": "Sara e a Cidade dos Fantasmas",
+    "ru": "Сара и город призраков",
+    "uk": "Сара та місто привидів",
+    "vi": "Sára và Thành phố Ma"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bedroom",
+      "characters": [],
+      "visual_tags": [
+        "bedroom",
+        "night",
+        "moonlight",
+        "quiet",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Celý dům je tichý.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Das ganze Haus ist still.",
+            "en": "The whole house is quiet.",
+            "fr": "Toute la maison est silencieuse.",
+            "it": "Tutta la casa è silenziosa.",
+            "ja": "家中は静まり返っている。",
+            "ko": "집 전체가 조용하다.",
+            "pl": "Cały dom jest cichy.",
+            "pt-BR": "A casa toda está em silêncio.",
+            "ru": "Весь дом молчит.",
+            "uk": "Весь будинок мовчить.",
+            "vi": "Cả ngôi nhà im ắng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "moonlight flickering through window, dust motes floating, static camera",
+      "wd14_tags": {
+        "blue theme": 0.973,
+        "window": 0.962,
+        "no humans": 0.917,
+        "monochrome": 0.846,
+        "bed": 0.811,
+        "indoors": 0.77,
+        "night": 0.751,
+        "door": 0.488,
+        "pillow": 0.459
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "sitting on pillow",
+        "looking at cat",
+        "cat sitting",
+        "glowing eyes",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Co chceš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was willst du?",
+            "en": "What do you want?",
+            "fr": "Tu veux quoi ?",
+            "it": "Cosa vuoi?",
+            "ja": "何の用？",
+            "ko": "무엇을 원해?",
+            "pl": "Co chcesz?",
+            "pt-BR": "O que você quer?",
+            "ru": "Чего тебе?",
+            "uk": "Чого ти хочеш?",
+            "vi": "Cậu muốn gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "cat walking through wall",
+        "transparent",
+        "glowing",
+        "mysterious",
+        "magic effect"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the cat glows and fades into the wall, shadows shifting, static camera",
+      "wd14_tags": {
+        "window": 0.958,
+        "cat": 0.951,
+        "no humans": 0.911,
+        "blue theme": 0.82,
+        "black cat": 0.809,
+        "indoors": 0.765,
+        "monochrome": 0.654,
+        "animal focus": 0.614,
+        "animal": 0.581,
+        "night": 0.538,
+        "bed": 0.479,
+        "pillow": 0.374
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking around",
+        "surprised",
+        "open mouth",
+        "fog",
+        "ruins",
+        "purple sky"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Najednou se ocitne v jiném městě.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Plötzlich findet sie sich in einer anderen Stadt wieder.",
+            "en": "Suddenly, she finds herself in another city.",
+            "fr": "Soudain, elle se retrouve dans une autre ville.",
+            "it": "All'improvviso si ritrova in un'altra città.",
+            "ja": "気が付けば、彼女は別の街にいた。",
+            "ko": "순간, 그녀는 다른 도시에 서 있게 된다.",
+            "pl": "Nagle znajduje się w innym mieście.",
+            "pt-BR": "De repente, ela se vê em outra cidade.",
+            "ru": "И вдруг она оказывается в другом городе.",
+            "uk": "Раптом вона опиняється в іншому місті.",
+            "vi": "Bỗng nhiên, cô xuất hiện ở một thành phố khác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "white_spirit"
+        },
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "ghost floating",
+        "pointing",
+        "serious face",
+        "sara looking up",
+        "foggy background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "white_spirit",
+          "text": "Živí sem nesmějí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Lebende haben hier nichts zu suchen.",
+            "en": "The living are not allowed here.",
+            "fr": "Les vivants n'ont pas le droit d'entrer.",
+            "it": "I vivi non hanno permesso di entrare.",
+            "ja": "生者は立ち入り禁止。",
+            "ko": "살아있는 자는 들어올 수 없다.",
+            "pl": "Żywi tu nie mają wstępu.",
+            "pt-BR": "Vivos não podem entrar aqui.",
+            "ru": "Живым здесь не место.",
+            "uk": "Живим сюди вхід заборонено.",
+            "vi": "Người sống không được phép vào đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "determined",
+        "hands on hips",
+        "serious face",
+        "looking at ghost"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Tak mě pošlete zpátky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann schickt mich zurück.",
+            "en": "Then send me back.",
+            "fr": "Alors renvoie-moi.",
+            "it": "Allora rimandami indietro.",
+            "ja": "なら帰らせて。",
+            "ko": "그럼 날 돌려보내.",
+            "pl": "Więc wyślij mnie z powrotem.",
+            "pt-BR": "Então me mande de volta.",
+            "ru": "Тогда отправь меня обратно.",
+            "uk": "Тоді відправте мене назад.",
+            "vi": "Vậy hãy đưa tôi về lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        },
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "queen sitting on throne",
+        "sara standing",
+        "dark purple light",
+        "shadows",
+        "tense atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Tvoje duše bude moje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Deine Seele wird meine sein.",
+            "en": "Your soul will be mine.",
+            "fr": "Ton âme sera à moi.",
+            "it": "La tua anima sarà mia.",
+            "ja": "あなたの魂は私のもの。",
+            "ko": "네 영혼은 내 것이 될 거야.",
+            "pl": "Twoja dusza będzie moja.",
+            "pt-BR": "Sua alma será minha.",
+            "ru": "Твоя душа будет моей.",
+            "uk": "Твоя душа буде моєю.",
+            "vi": "Linh hồn ngươi sẽ thuộc về ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "drawing sword",
+        "glowing sword",
+        "determined",
+        "magic aura",
+        "action pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Ne.",
+          "kind": "shout",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "嫌！",
+            "ko": "안 돼.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SZÁŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        },
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "queen looking sad",
+        "tears",
+        "shadows fading",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Ty nechceš být sama.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du willst nicht allein sein.",
+            "en": "You don't want to be alone.",
+            "fr": "Tu ne veux pas être seule.",
+            "it": "Non vuoi essere sola.",
+            "ja": "あなた、一人じゃ寂しいんでしょ。",
+            "ko": "너는 혼자가 싫어.",
+            "pl": "Nie chcesz być sama.",
+            "pt-BR": "Você não quer ficar sozinha.",
+            "ru": "Ты не хочешь быть одна.",
+            "uk": "Ти не хочеш бути сама.",
+            "vi": "Cậu không muốn cô đơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "holding hands",
+        "smile",
+        "gentle",
+        "light glowing",
+        "healing magic"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Pojď se mnou.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Komm mit mir.",
+            "en": "Come with me.",
+            "fr": "Viens avec moi.",
+            "it": "Vieni con me.",
+            "ja": "一緒に来なさい。",
+            "ko": "나랑 함께 가.",
+            "pl": "Pójdź ze mną.",
+            "pt-BR": "Vem comigo.",
+            "ru": "Пойдём со мной.",
+            "uk": "Піди зі мною.",
+            "vi": "Đi cùng tớ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "sitting on pillow",
+        "morning light",
+        "looking at table",
+        "black crown on table",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Takže to nebyl sen.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Also war es kein Traum.",
+            "en": "So it wasn't a dream.",
+            "fr": "Donc ce n'était pas un rêve.",
+            "it": "Quindi non era un sogno.",
+            "ja": "つまり、あれは夢じゃなかったんだ。",
+            "ko": "그래서 그건 꿈이 아니었어.",
+            "pl": "Więc to nie był sen.",
+            "pt-BR": "Então não foi um sonho.",
+            "ru": "Значит, это был не сон.",
+            "uk": "Отже, це не був сон.",
+            "vi": "Vậy thì đó không phải là mơ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "cat sleeping",
+        "sunlight",
+        "peaceful",
+        "crown on table in background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ne.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "そう。",
+            "ko": "맞아.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Не был.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

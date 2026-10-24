@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_05_peta_zlodej_perel",
+  "title": "Péťa a zloděj perel",
+  "synopsis": "Superhrdinka Péťa s bublinkovou pánví hledá zloděje perel a pomůže mu najít řešení.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Péťa je hrdinka a krab dostane perly pro maminku."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_reef",
+      "l_cave",
+      "l_city"
+    ]
+  },
+  "characters": [
+    {
+      "id": "peta",
+      "name": "Péťa",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 9 with short blonde hair and blue eyes",
+      "base": "female child, blonde hair, short hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "yellow diving suit, goggles, holding frying pan"
+      },
+      "photo": "a brave Czech girl aged 9 with short blonde hair and blue eyes",
+      "tag_prompt": "female child, blonde hair, short hair, blue eyes, fair skin, determined face, yellow diving suit, goggles, holding frying pan",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "skeble",
+      "name": "Škeble",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small white clam with large expressive eyes",
+      "base": "clam, shell, white shell, pink interior, eyes",
+      "outfits": {
+        "default": "small backpack"
+      },
+      "photo": "a small white clam with large expressive eyes",
+      "tag_prompt": "clam, shell, white shell, pink interior, eyes, small backpack",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "krab",
+      "name": "Chlupatý krab",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large orange crab with hairy claws and a shy expression",
+      "base": "crab, large crab, orange shell, hairy claws, big eyes",
+      "outfits": {
+        "default": "none"
+      },
+      "photo": "a large orange crab with hairy claws and a shy expression",
+      "tag_prompt": "crab, large crab, orange shell, hairy claws, big eyes, none",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "starosta",
+      "name": "Starosta Mořský koník",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a blue seahorse with a curly tail and a small crown on its head",
+      "base": "seahorse, blue seahorse, curly tail, crown",
+      "outfits": {
+        "default": "golden crown, sash"
+      },
+      "photo": "a blue seahorse with a curly tail and a small crown on its head",
+      "tag_prompt": "seahorse, blue seahorse, curly tail, crown, golden crown, sash",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_reef",
+      "name": "Korálový útes",
+      "description": "Korálový útes",
+      "tag_prompt": "outdoors, underwater, coral reef, colorful corals, fish, sunlight rays, blue water, day",
+      "mood": ""
+    },
+    {
+      "id": "l_cave",
+      "name": "Jeskyně",
+      "description": "Jeskyně",
+      "tag_prompt": "outdoors, underwater, cave, dark rocks, glowing crystals, shadows, blue water, day",
+      "mood": ""
+    },
+    {
+      "id": "l_city",
+      "name": "Město",
+      "description": "Město",
+      "tag_prompt": "outdoors, underwater, city, buildings made of shells and coral, flags, fish citizens, blue water, day",
+      "mood": ""
+    }
+  ]
+}

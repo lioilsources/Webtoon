@@ -1,0 +1,333 @@
+{
+  "title": "Maja Solaris a sluneční krystal",
+  "title_i18n": {
+    "de": "Maja Solaris und der Sonnenkristall",
+    "en": "Maja Solaris and the Solar Crystal",
+    "fr": "Maja Solaris et le cristal solaire",
+    "it": "Maja Solaris e il Cristallo Solare",
+    "ja": "マヤ・ソラリスと太陽のクリスタル",
+    "ko": "마야 솔라리스와 태양의 결정",
+    "pl": "Maja Solaris i Kryształ Słońca",
+    "pt-BR": "Maja Solaris e o Cristal Solar",
+    "ru": "Майя Соларис и Солнечный кристалл",
+    "uk": "Мая Соларіс та сонячний кристал",
+    "vi": "Maja Solaris và Tinh thể Mặt trời"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_asteroid",
+      "characters": [],
+      "visual_tags": [
+        "asteroid field",
+        "purple planet",
+        "stars",
+        "floating rocks",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Asteroidové pole na okraji sluneční soustavy.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein Asteroidengürtel am Rand des Sonnensystems.",
+            "en": "The asteroid belt at the edge of the solar system.",
+            "fr": "La ceinture d'astéroïdes, à la lisière du système solaire.",
+            "it": "La fascia di asteroidi al confine del sistema solare.",
+            "ja": "太陽系の果て、小惑星帯。",
+            "ko": "태양계 외곽의 소행성 대.",
+            "pl": "Pas asteroidów na obrzeżach Układu Słonecznego.",
+            "pt-BR": "Campo de asteroides na borda do sistema solar.",
+            "ru": "Пояс астероидов на краю Солнечной системы.",
+            "uk": "Пояс астероїдів на краю Сонячної системи.",
+            "vi": "Vành đai tiểu hành tinh ở rìa hệ mặt trời."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "stars drifting slowly, floating rocks rotating, static camera",
+      "wd14_tags": {
+        "no humans": 0.988,
+        "star (sky)": 0.939,
+        "sky": 0.873,
+        "scenery": 0.791,
+        "starry sky": 0.783,
+        "night sky": 0.601,
+        "moon": 0.582,
+        "constellation": 0.572,
+        "space": 0.532,
+        "night": 0.502,
+        "planet": 0.476
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "maja"
+        },
+        {
+          "id": "mecha_tyrannus"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "glowing hair",
+        "red eyes",
+        "menacing",
+        "large robot",
+        "small hero",
+        "contrast"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maja",
+          "text": "Tento krystal udržuje život na naší akademii, Mecha-Tyrannusi! Nedovolím ti ho zničit!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dieser Kristall erhält das Leben an unserer Akademie, Mecha-Tyrannus! Ich werde nicht zulassen, dass du ihn zerstörst!",
+            "en": "This crystal keeps our academy alive, Mecha-Tyrannus! I won't let you destroy it!",
+            "fr": "Ce cristal maintient la vie à notre académie, Mecha-Tyrannus ! Je ne te laisserai pas le détruire !",
+            "it": "Questo cristallo mantiene in vita la nostra accademia, Mecha-Tyrannus! Non ti permetterò di distruggerlo!",
+            "ja": "このクリスタルは、私の学園「メカ・ティラヌス」の生命を維持しているわ！壊させはしない！",
+            "ko": "이 결정이 우리 아카데미의 생명을 유지하고 있어요, 메카-티라누스! 절대 망가뜨리지 않겠어요!",
+            "pl": "Ten kryształ podtrzymuje życie na naszej akademii, Mecha-Tyrannie! Nie pozwolę ci go zniszczyć!",
+            "pt-BR": "Esse cristal mantém a vida na nossa academia, Mecha-Tyrannus! Não vou deixar você destruí-lo!",
+            "ru": "Этот кристалл поддерживает жизнь в нашей академии, Меха-Тирранус! Я не дам тебе его уничтожить!",
+            "uk": "Цей кристал підтримує життя в нашій академії, Меха-Тирани! Я не дозволю тобі його знищити!",
+            "vi": "Tinh thể này duy trì sự sống tại học viện của chúng ta, Mecha-Tyrannus! Ta không cho phép ngươi phá hủy nó!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "mecha_tyrannus"
+        }
+      ],
+      "visual_tags": [
+        "roaring",
+        "open mouth",
+        "glowing mouth",
+        "charging laser",
+        "red light",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mecha_tyrannus",
+          "text": "ROAAAAR! CÍL PODROBEN. ZASTAVIT HRDINKU!",
+          "kind": "shout",
+          "i18n": {
+            "de": "ROAAAAR! ZIEL UNTERWORFEN. STOPPT DIE HELDERIN!",
+            "en": "ROAAAAR! TARGET SUBJECTED. STOP THE HEROINE!",
+            "fr": "ROAAAAR ! CIBLE SOUMISE. ARRÊTEZ L'HÉROÏNE !",
+            "it": "ROAAAAR! BERSAGLIO SOTTOMESSO. FERMA L'EROINA!",
+            "ja": "ゴオオオオオッ！目標確保。ヒロインを阻止せよ！",
+            "ko": "으아아아악! 목표 확보. 영웅을 저지하라!",
+            "pl": "ROOOOAR! CEL ZNALEZIONY. POWSTRZYMAĆ BOHATERKĘ!",
+            "pt-BR": "ROAAAAR! ALVO SUBMETIDO. PARE A HEROÍNA!",
+            "ru": "РРРРР! ЦЕЛЬ ПОДКОРМЛЕНА. ОСТАНОВИТЬ ГЕРОИНЮ!",
+            "uk": "РОАААР! ЦІЛЬ ПІДКОРЕНА. ЗАТРИМАТИ ГЕРОЇНЮ!",
+            "vi": "ROAAAAR! MỤC TIÊU ĐÃ BỊ CHIẾM NGỤY. NGĂN CẢN NỮ HERO!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ROAAAAR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "maja"
+        },
+        {
+          "id": "mecha_tyrannus"
+        }
+      ],
+      "visual_tags": [
+        "energy blast",
+        "red laser beam",
+        "purple shield",
+        "crossed arms",
+        "blocking",
+        "explosion",
+        "impact"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "maja"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "flying",
+        "punching",
+        "glowing fist",
+        "dynamic pose",
+        "determined",
+        "hair floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maja",
+          "text": "SOLÁRNÍ ÚDER!",
+          "kind": "shout",
+          "i18n": {
+            "de": "SONNENSCHLAG!",
+            "en": "SOLAR STRIKE!",
+            "fr": "COUP SOLAIRE !",
+            "it": "COLPO SOLARE!",
+            "ja": "ソラーアアアック！",
+            "ko": "태양 광선!",
+            "pl": "SŁONECZNY UDERZENIE!",
+            "pt-BR": "ATAQUE SOLAR!",
+            "ru": "СОЛНЕЧНЫЙ УДАР!",
+            "uk": "СОНЯЧНИЙ УДАР!",
+            "vi": "TẤN CÔNG NĂNG LƯỢNG MẶT TRỜI!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ZAP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "Maja's hair floats in zero gravity, stars twinkling, static camera",
+      "motion_llm": "Maja's hair floats in zero gravity, fist glowing, static camera",
+      "wd14_tags": {
+        "1girl": 0.986,
+        "blonde hair": 0.962,
+        "yellow eyes": 0.93,
+        "solo": 0.909,
+        "long hair": 0.889,
+        "space": 0.874,
+        "helmet": 0.867,
+        "armor": 0.689,
+        "spacesuit": 0.48,
+        "power armor": 0.419,
+        "star (symbol)": 0.402,
+        "full body": 0.383
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "mecha_tyrannus"
+        }
+      ],
+      "visual_tags": [
+        "exploding",
+        "metal pieces flying",
+        "glowing core",
+        "defeated",
+        "falling apart",
+        "sparks"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "maja"
+        }
+      ],
+      "visual_tags": [
+        "kneeling",
+        "landing",
+        "smile",
+        "relieved",
+        "hands on knees",
+        "dust settling"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "maja"
+        },
+        {
+          "id": "rox"
+        }
+      ],
+      "visual_tags": [
+        "flying module",
+        "blue vehicle",
+        "pointing",
+        "happy",
+        "thumbs up",
+        "space background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rox",
+          "text": "Krystal je v bezpečí, Majo!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Kristall ist in Sicherheit, Maja!",
+            "en": "The crystal is safe, Maja!",
+            "fr": "Le cristal est en sécurité, Maja !",
+            "it": "Il cristallo è al sicuro, Maja!",
+            "ja": "クリスタルは無事だ、マヤ！",
+            "ko": "결정은 안전해, 마야!",
+            "pl": "Kryształ jest bezpieczny, Majo!",
+            "pt-BR": "O cristal está seguro, Maja!",
+            "ru": "Кристалл в безопасности, Майя!",
+            "uk": "Кристал у безпеці, Маю!",
+            "vi": "Tinh thể đã an toàn, Maja!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

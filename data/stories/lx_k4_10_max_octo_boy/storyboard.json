@@ -1,0 +1,495 @@
+{
+  "title": "Max Octo-Boy a bitva na mořském dně",
+  "title_i18n": {
+    "de": "Max Octo-Boy und die Schlacht am Meeresgrund",
+    "en": "Max Octo-Boy and the Battle on the Ocean Floor",
+    "fr": "Max Octo-Boy et la bataille des fonds marins",
+    "it": "Max Octo-Boy e la battaglia sul fondo del mare",
+    "ja": "マックス・オクトボーイと海底の戦い",
+    "ko": "맥스 옥토보이와 해저 전투",
+    "pl": "Max Okto-Chłopak i bitwa na dnie morskim",
+    "pt-BR": "Max Octo-Boy e a Batalha no Fundo do Mar",
+    "ru": "Макс Окто-Бой и битва на дне моря",
+    "uk": "Макс Окто-Бой і битва на дні моря",
+    "vi": "Max Octo-Boy và trận chiến dưới đáy biển"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_station",
+      "characters": [],
+      "visual_tags": [
+        "underwater",
+        "glass dome",
+        "sand floor",
+        "sharks",
+        "blue water",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Podmořská výzkumná stanice na dně Atlantiku.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Unterwasser-Forschungsstation am Grund des Atlantiks.",
+            "en": "An underwater research station on the Atlantic floor.",
+            "fr": "Station de recherche sous-marine au fond de l'Atlantique.",
+            "it": "Stazione di ricerca sottomarina sul fondo dell'Atlantico.",
+            "ja": "大西洋の海底にある海洋研究施設。",
+            "ko": "대서양 해저의 수중 연구 기지.",
+            "pl": "Podwodna stacja badawcza na dnie Atlantyku.",
+            "pt-BR": "Estação de pesquisa submarina no fundo do Atlântico.",
+            "ru": "Подводная исследовательская станция на дне Атлантики.",
+            "uk": "Підводна дослідна станція на дні Атлантики.",
+            "vi": "Trạm nghiên cứu dưới biển sâu ở đáy Đại Tây Dương."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, static camera",
+      "motion_llm": "sharks swimming slowly in background, bubbles rising, static camera",
+      "wd14_tags": {
+        "no humans": 0.948,
+        "blue theme": 0.931,
+        "scenery": 0.831,
+        "water": 0.75,
+        "ocean": 0.558,
+        "ripples": 0.408,
+        "outdoors": 0.387,
+        "sky": 0.369
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_station",
+      "characters": [
+        {
+          "id": "crab"
+        },
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "giant crab",
+        "claws hitting glass",
+        "running",
+        "superhero pose",
+        "mechanical tentacles",
+        "ready"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Hej, pane Krabe! Tohle sklo není na hranění! Čas na chobotničkový tanec!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Hey, Herr Krabbe! Dieses Glas ist kein Spielzeug! Zeit für den Tintenfisch-Tanz!",
+            "en": "Hey, Mr. Crab! That glass isn't for playing with! Time for the Octopus Dance!",
+            "fr": "Hé, Monsieur Crabe ! Ce verre n'est pas un jouet ! Place à la danse des tentacules !",
+            "it": "Ehi, signor Granchio! Questo vetro non è un giocattolo! È ora del ballo dei tentacoli!",
+            "ja": "おい、カニさん！そのガラスは遊んでるものじゃないよ！イカダンスの時間だ！",
+            "ko": "이봐, 게 아저씨! 그 유리는 장난감 아니야! 문어발 춤 시간!",
+            "pl": "Hej, Panie Krabie! To szkło nie jest do zabawy! Czas na taniec ośmiorniczy!",
+            "pt-BR": "Ei, Sr. Caranguejo! Isso não é brinquedo! Hora da dança do polvo!",
+            "ru": "Эй, мистер Краб! Это стекло не для игр! Время танца осьминожек!",
+            "uk": "Ей, пане Крабе! Це скло не для ігор! Час на танець восьминога!",
+            "vi": "Này, ông Cua! Cái kính này không phải để chơi đùa! Giờ là lúc nhảy múa như bạch tuộc!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "mechanical tentacles",
+        "wrapping claws",
+        "blue ink",
+        "spraying",
+        "dynamic pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠPLACH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "mechanical tentacles moving and spraying blue ink, stars twinkling, static camera",
+      "motion_llm": "mechanical tentacles moving and spraying blue ink, static camera",
+      "wd14_tags": {
+        "1boy": 0.979,
+        "blonde hair": 0.966,
+        "blue eyes": 0.951,
+        "male focus": 0.941,
+        "solo": 0.897,
+        "bodysuit": 0.806,
+        "space": 0.77,
+        "looking at viewer": 0.728,
+        "short hair": 0.666,
+        "gloves": 0.666,
+        "full body": 0.621,
+        "bright pupils": 0.543
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "crab"
+        },
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "crab tangled",
+        "crab falling",
+        "crab on back",
+        "flipping over",
+        "tentacles tied",
+        "ink splashes"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_interior",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing on crab",
+        "victory pose",
+        "fist up",
+        "smile",
+        "open mouth",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Chobotničkový tanec vyhrál!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Tintenfisch-Tanz hat gewonnen!",
+            "en": "The Octopus Dance wins!",
+            "fr": "La danse des tentacules a gagné !",
+            "it": "Ha vinto il ballo dei tentacoli!",
+            "ja": "イカダンス、勝ち！",
+            "ko": "문어발 춤 승리!",
+            "pl": "Taniec ośmiorniczy wygrał!",
+            "pt-BR": "A dança do polvo venceu!",
+            "ru": "Танец осьминожек победил!",
+            "uk": "Танець восьминога виграв!",
+            "vi": "Nhảy múa như bạch tuộc đã thắng!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

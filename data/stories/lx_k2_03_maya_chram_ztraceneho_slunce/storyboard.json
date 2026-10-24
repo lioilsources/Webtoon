@@ -1,0 +1,536 @@
+{
+  "title": "Maya a chrám ztraceného slunce",
+  "title_i18n": {
+    "de": "Maya und der Tempel der verlorenen Sonne",
+    "en": "Maya and the Lost Sun Temple",
+    "fr": "Maya et le temple du soleil perdu",
+    "it": "Maya e il tempio del sole perduto",
+    "ja": "マヤと失われた太陽の神殿",
+    "ko": "마야와 잃어버린 태양의 사원",
+    "pl": "Maya i zagubiona świątynia słońca",
+    "pt-BR": "Maya e o templo do sol perdido",
+    "ru": "Майя и храм потерянного солнца",
+    "uk": "Мая і храм втраченого сонця",
+    "vi": "Maya và Đền Mặt Trời Bị Mất"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_jungle",
+      "characters": [],
+      "visual_tags": [
+        "dense jungle",
+        "sunlight beams",
+        "vines",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hustá džungle.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Dichter Dschungel.",
+            "en": "Thick jungle.",
+            "fr": "Une jungle dense.",
+            "it": "Fitta giungla.",
+            "ja": "濃いジャングル。",
+            "ko": "울창한 정글.",
+            "pl": "Gęsta dżungla.",
+            "pt-BR": "Selva densa.",
+            "ru": "Густые джунгли.",
+            "uk": "Густі джунглі.",
+            "vi": "Rừng rậm dày đặc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, light rays shimmering, static camera",
+      "motion_llm": "leaves rustling in wind, sunlight shifting, static camera",
+      "wd14_tags": {
+        "no humans": 0.981,
+        "green theme": 0.973,
+        "nature": 0.957,
+        "scenery": 0.937,
+        "plant": 0.884,
+        "sunlight": 0.861,
+        "forest": 0.856,
+        "outdoors": 0.808,
+        "tree": 0.737,
+        "light rays": 0.642,
+        "fern": 0.491,
+        "day": 0.416
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "tiko"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "looking around",
+        "jaguar running",
+        "motion lines",
+        "forest path"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Pomalu!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Langsam!",
+            "en": "Slowly!",
+            "fr": "Doucement !",
+            "it": "Piano!",
+            "ja": "ゆっくりして！",
+            "ko": "천천히!",
+            "pl": "Powoli!",
+            "pt-BR": "Devagar!",
+            "ru": "Потише!",
+            "uk": "Повільніше!",
+            "vi": "Chậm lại!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "looking confused",
+        "calling out",
+        "hands near mouth",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Tiko?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Tiko?",
+            "en": "Tiko?",
+            "fr": "Tiko ?",
+            "it": "Tiko?",
+            "ja": "ティコ？",
+            "ko": "티코?",
+            "pl": "Tiko?",
+            "pt-BR": "Tiko?",
+            "ru": "Тико?",
+            "uk": "Тіко?",
+            "vi": "Tiko?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_jungle",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "falling",
+        "dust cloud",
+        "cracked ground",
+        "surprised",
+        "open mouth",
+        "motion lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FŮŮŮM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "tiko"
+        }
+      ],
+      "visual_tags": [
+        "standing before pyramid",
+        "looking up",
+        "stone walls",
+        "sun relief",
+        "awe"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Tady něco hledali.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hier hat jemand gesucht.",
+            "en": "They were looking for something here.",
+            "fr": "Ils ont cherché quelque chose ici.",
+            "it": "Qualcuno ha cercato qualcosa qui.",
+            "ja": "ここで彼らは何かを探していた。",
+            "ko": "여기서 무언가를 찾았어.",
+            "pl": "Tu coś szukali.",
+            "pt-BR": "Alguém procurou por aqui.",
+            "ru": "Здесь что-то искали.",
+            "uk": "Тут щось шукали.",
+            "vi": "Ở đây từng có người tìm kiếm thứ gì đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "guardian"
+        },
+        {
+          "id": "guardian"
+        }
+      ],
+      "visual_tags": [
+        "stone golems rising",
+        "glowing cracks",
+        "menacing pose",
+        "maya drawing bow",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "maya",
+          "text": "Tak dobře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Na gut.",
+            "en": "Alright then.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "よし。",
+            "ko": "좋아.",
+            "pl": "No dobrze.",
+            "pt-BR": "Tá bom.",
+            "ru": "Ну ладно.",
+            "uk": "Ну гаразд.",
+            "vi": "Vậy thì được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "holding bow",
+        "glowing arrow",
+        "aiming",
+        "determined",
+        "light effect"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "FŠŠŠT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the arrow glows and fades, dust motes floating, static camera",
+      "wd14_tags": {
+        "1girl": 0.994,
+        "solo": 0.942,
+        "brown hair": 0.878,
+        "arrow (projectile)": 0.821,
+        "holding": 0.739,
+        "belt": 0.731,
+        "looking at viewer": 0.652,
+        "dress": 0.593,
+        "brown eyes": 0.592,
+        "short hair": 0.564,
+        "serious": 0.503,
+        "outdoors": 0.501
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "amun"
+        },
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "ghost pharaoh floating",
+        "maya lowering bow",
+        "confused",
+        "talking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amun",
+          "text": "Proč bojuješ?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum kämpfst du?",
+            "en": "Why do you fight?",
+            "fr": "Pourquoi te bats-tu ?",
+            "it": "Perché combatti?",
+            "ja": "なぜ戦う？",
+            "ko": "왜 싸우는 거야?",
+            "pl": "Dlaczego walczysz?",
+            "pt-BR": "Por que você luta?",
+            "ru": "Зачем ты сражаешься?",
+            "uk": "Навіщо ти борешся?",
+            "vi": "Tại sao ngươi chiến đấu?"
+          }
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Protože jste mě napadli!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ihr mich angegriffen habt!",
+            "en": "Because you attacked me!",
+            "fr": "Parce que vous m'avez attaquée !",
+            "it": "Perché mi avete attaccato!",
+            "ja": "だって襲ってきたじゃない！",
+            "ko": "당신이 먼저 공격했으니까!",
+            "pl": "Boście na mnie napadli!",
+            "pt-BR": "Porque vocês me atacaram!",
+            "ru": "Потому что вы напали на меня!",
+            "uk": "Бо ви напали на мене!",
+            "vi": "Bởi vì các người đã tấn công tôi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "amun"
+        }
+      ],
+      "visual_tags": [
+        "ghost pharaoh floating",
+        "calm expression",
+        "pointing",
+        "transparent"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amun",
+          "text": "A přesto můžeš odejít.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und trotzdem kannst du gehen.",
+            "en": "And yet you may leave.",
+            "fr": "Et pourtant, tu peux partir.",
+            "it": "Eppure puoi andartene.",
+            "ja": "それでも、去ることができる。",
+            "ko": "그래도 너는 떠날 수 있어.",
+            "pl": "I tak możesz odejść.",
+            "pt-BR": "Mesmo assim, você pode ir embora.",
+            "ru": "И всё же ты можешь уйти.",
+            "uk": "І все ж ти можеш піти.",
+            "vi": "Nhưng ngươi vẫn có thể rời đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_altar",
+      "characters": [
+        {
+          "id": "amun"
+        },
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "holding golden sun",
+        "altar",
+        "glowing artifact",
+        "receiving",
+        "wonder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amun",
+          "text": "Tohle není poklad.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist kein Schatz.",
+            "en": "This isn't treasure.",
+            "fr": "Ce n'est pas un trésor.",
+            "it": "Questo non è un tesoro.",
+            "ja": "これは宝ではない。",
+            "ko": "이건 보물이 아니야.",
+            "pl": "To nie jest skarb.",
+            "pt-BR": "Isto não é um tesouro.",
+            "ru": "Это не сокровище.",
+            "uk": "Це не скарб.",
+            "vi": "Đây không phải là kho báu."
+          }
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Co tedy?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was dann?",
+            "en": "What is it, then?",
+            "fr": "Alors quoi ?",
+            "it": "Allora cos'è?",
+            "ja": "では何？",
+            "ko": "그럼 뭐지?",
+            "pl": "To więc co?",
+            "pt-BR": "O que é, então?",
+            "ru": "Что же тогда?",
+            "uk": "Що ж тоді?",
+            "vi": "Vậy thì là gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_altar",
+      "characters": [
+        {
+          "id": "amun"
+        },
+        {
+          "id": "maya"
+        },
+        {
+          "id": "tiko"
+        }
+      ],
+      "visual_tags": [
+        "placing artifact",
+        "altar",
+        "pyramid glowing",
+        "bright light",
+        "jaguar wagging tail"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amun",
+          "text": "Je to srdce džungle.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist das Herz des Dschungels.",
+            "en": "It's the heart of the jungle.",
+            "fr": "C'est le cœur de la jungle.",
+            "it": "È il cuore della giungla.",
+            "ja": "ジャングルの心臓だ。",
+            "ko": "정글의 심장이지.",
+            "pl": "To serce dżungli.",
+            "pt-BR": "É o coração da selva.",
+            "ru": "Это сердце джунглей.",
+            "uk": "Це серце джунглів.",
+            "vi": "Nó là trái tim của khu rừng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "maya"
+        },
+        {
+          "id": "amun"
+        }
+      ],
+      "visual_tags": [
+        "looking back",
+        "new passage opening",
+        "stone doors",
+        "mystery",
+        "adventure"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amun",
+          "text": "Tvá cesta teprve začíná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dein Weg fängt erst an.",
+            "en": "Your journey is only beginning.",
+            "fr": "Ton voyage ne fait que commencer.",
+            "it": "Il tuo viaggio sta appena iniziando.",
+            "ja": "あなたの旅は、始まったばかりだ。",
+            "ko": "너의 여정은 이제 시작일 뿐이야.",
+            "pl": "Twoja droga się dopiero zaczyna.",
+            "pt-BR": "Sua jornada só está começando.",
+            "ru": "Твой путь только начинается.",
+            "uk": "Твій шлях лише починається.",
+            "vi": "Hành trình của ngươi mới chỉ bắt đầu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

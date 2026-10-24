@@ -1,0 +1,479 @@
+{
+  "title": "Ema a ztracená křídla",
+  "title_i18n": {
+    "de": "Ema und die verlorenen Flügel",
+    "en": "Ema and the Lost Wings",
+    "fr": "Ema et les ailes perdues",
+    "it": "Ema e le aliene perdute",
+    "ja": "エマと失われた翼",
+    "ko": "에마와 잃어버린 날개",
+    "pl": "Ema i zagubione skrzydła",
+    "pt-BR": "Ema e as asas perdidas",
+    "ru": "Эма и потерянные крылья",
+    "uk": "Ема та втрачені крила",
+    "vi": "Ema và Đôi Cánh Bị Mất"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_academy",
+      "characters": [],
+      "visual_tags": [
+        "floating island",
+        "clouds",
+        "rainbow bridge",
+        "towers",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kouzelná akademie nad mraky.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die magische Akademie über den Wolken.",
+            "en": "The magical academy above the clouds.",
+            "fr": "L'Académie magique au-dessus des nuages.",
+            "it": "Accademia magica sopra le nuvole.",
+            "ja": "雲の上の魔法学園。",
+            "ko": "구름 위의 마법 아카데미.",
+            "pl": "Magyczna Akademia nad chmurami.",
+            "pt-BR": "Academia Mágica sobre as nuvens.",
+            "ru": "Волшебная академия над облаками.",
+            "uk": "Чарівна академія над хмарами.",
+            "vi": "Học viện Phép thuật trên mây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, clouds drifting slowly, leaves swaying gently, static camera",
+      "motion_llm": "clouds drifting slowly below, lanterns flickering, static camera",
+      "wd14_tags": {
+        "rainbow": 0.976,
+        "scenery": 0.968,
+        "outdoors": 0.952,
+        "no humans": 0.948,
+        "cloud": 0.934,
+        "sky": 0.927,
+        "day": 0.87,
+        "bridge": 0.868,
+        "castle": 0.837,
+        "waterfall": 0.808,
+        "water": 0.806,
+        "blue sky": 0.791
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_academy",
+      "characters": [
+        {
+          "id": "ema"
+        },
+        {
+          "id": "stribry"
+        },
+        {
+          "id": "hviezdanaka"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "unicorn flying",
+        "pointing",
+        "speech bubble",
+        "crowd in background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hviezdanaka",
+          "text": "Studenti! Dnes je Den Velké Zkoušky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Studenten! Heute ist der Große Test.",
+            "en": "Students! Today is the Great Exam.",
+            "fr": "Étudiants ! Aujourd'hui, c'est le Grand Examen.",
+            "it": "Studenti! Oggi è il Grande Esame.",
+            "ja": "生徒たち！今日は大試験の日だ。",
+            "ko": "학생들! 오늘은 대시험 날이야.",
+            "pl": "Studenci! Dzisiaj jest Wielki Egzamin.",
+            "pt-BR": "Alunos! Hoje é o Dia do Grande Exame.",
+            "ru": "Студенты! Сегодня День Большого Испытания.",
+            "uk": "Студенти! Сьогодні День Великого Испиту.",
+            "vi": "Các em học sinh! Hôm nay là Ngày Thi Trạng Nguyên."
+          }
+        },
+        {
+          "speaker_id": "ema",
+          "text": "Stříbrný! Ne do zvonice!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Silber! Nicht in den Glockenturm!",
+            "en": "Silver! Not the bell tower!",
+            "fr": "L'argent ! Pas dans le clocher !",
+            "it": "Argento! Non in campanile!",
+            "ja": "銀色！鐘楼には入らないで！",
+            "ko": "은종소! 종루로 가지 마!",
+            "pl": "Srebrny! Nie do dzwonnicy!",
+            "pt-BR": "Prata! Não para o sino!",
+            "ru": "Серебряный! Не в колокольню!",
+            "uk": "Срібний! Не дзвони!",
+            "vi": "Chùm bạc! Đừng vào nhà chuông!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HŘÍÍP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_academy",
+      "characters": [
+        {
+          "id": "hviezdanaka"
+        },
+        {
+          "id": "ema"
+        }
+      ],
+      "visual_tags": [
+        "whispering",
+        "leaning in",
+        "serious face",
+        "holding staff"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hviezdanaka",
+          "text": "Dnes v noci se ztratila všechna křídla jednorožců.",
+          "kind": "speech",
+          "i18n": {
+            "de": "In der Nacht sind alle Einhornflügel verschwunden.",
+            "en": "All the unicorn wings went missing last night.",
+            "fr": "Cette nuit, toutes les ailes des licornes ont disparu.",
+            "it": "Questa notte sono volate via tutte le ali degli unicorni.",
+            "ja": "昨夜、ユニコーンの翼がすべて消えた。",
+            "ko": "오늘 밤 유니콘의 날개들이 모두 사라졌어.",
+            "pl": "W nocy zaginęły wszystkie skrzydła jednorożców.",
+            "pt-BR": "Esta noite, todas as asas dos unicórnios desapareceram.",
+            "ru": "Ночью пропали все крылья единорогов.",
+            "uk": "Цієї ночі зникли всі крила єдинорогів.",
+            "vi": "Đêm nay, tất cả cánh của kỳ lân đều bị mất tích."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stable",
+      "characters": [
+        {
+          "id": "ema"
+        },
+        {
+          "id": "stribry"
+        }
+      ],
+      "visual_tags": [
+        "looking at ground",
+        "feathers on ground",
+        "black scarf on tree",
+        "sniffing",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ema",
+          "text": "Tahle vůně. Kouzlo osamělosti.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dieser Geruch. Der Zauber der Einsamkeit.",
+            "en": "This scent. The magic of loneliness.",
+            "fr": "Cette odeur... La magie de la solitude.",
+            "it": "Questo odore. Magia della solitudine.",
+            "ja": "この香り……孤独の呪い。",
+            "ko": "이 향기… 외로움의 마법.",
+            "pl": "Ten zapach. Czar samotności.",
+            "pt-BR": "Esse cheiro. Magia da solidão.",
+            "ru": "Этот запах. Магия одиночества.",
+            "uk": "Цей запах. Чарівність самотності.",
+            "vi": "Mùi này... Phép thuật cô độc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "ema"
+        },
+        {
+          "id": "stribry"
+        },
+        {
+          "id": "malvitna"
+        }
+      ],
+      "visual_tags": [
+        "flying backwards",
+        "sitting on cliff",
+        "black cloak",
+        "looking down",
+        "wind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "malvitna",
+          "text": "Přiletěla jsi mě porazit, studentko?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bist du hergeflogen, um mich zu besiegen, Studentin?",
+            "en": "Did you fly here to defeat me, student?",
+            "fr": "Tu es venue me vaincre, étudiante ?",
+            "it": "Sei venuta a sconfiggermi, studentessa?",
+            "ja": "倒しに来たのか、生徒の娘よ？",
+            "ko": "나를 무찌르러 날아왔나, 학생이여?",
+            "pl": "Przyleciałaś, by mnie pokonać, studentko?",
+            "pt-BR": "Você veio me derrotar, aluna?",
+            "ru": "Прилетела меня победить, студентка?",
+            "uk": "Ти прилетіла, щоб перемогти мене, студентко?",
+            "vi": "Ngươi bay đến để đánh bại ta sao, học sinh?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, clouds drifting slowly, static camera",
+      "motion_llm": "ambient only, characters still, clouds drifting slowly, soft light shifting, static camera",
+      "wd14_tags": {
+        "1girl": 0.983,
+        "brown hair": 0.919,
+        "sitting": 0.884,
+        "long hair": 0.843,
+        "sky": 0.796,
+        "socks": 0.762,
+        "outdoors": 0.756,
+        "skirt": 0.741,
+        "cloud": 0.734,
+        "school uniform": 0.715,
+        "wide shot": 0.654,
+        "kneehighs": 0.644
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "ema"
+        },
+        {
+          "id": "malvitna"
+        }
+      ],
+      "visual_tags": [
+        "sitting next to each other",
+        "talking",
+        "sad expression",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ema",
+          "text": "Proč jsi ukradla křídla?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum hast du die Flügel gestohlen?",
+            "en": "Why did you steal the wings?",
+            "fr": "Pourquoi as-tu volé les ailes ?",
+            "it": "Perché hai rubato le ali?",
+            "ja": "なぜ翼を盗んだの？",
+            "ko": "왜 날개를 훔쳤어?",
+            "pl": "Dlaczego skradłaś skrzydła?",
+            "pt-BR": "Por que você roubou as asas?",
+            "ru": "Зачем ты украла крылья?",
+            "uk": "Навіщо ти викрала крила?",
+            "vi": "Tại sao ngươi đánh cắp cánh?"
+          }
+        },
+        {
+          "speaker_id": "malvitna",
+          "text": "Když já nemůžu létat, nebudou létat ani oni.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn ich nicht fliegen kann, werden sie es auch nicht.",
+            "en": "If I can't fly, neither will they.",
+            "fr": "Si je ne peux pas voler, eux non plus.",
+            "it": "Se non posso volare, non voleranno nemmeno loro.",
+            "ja": "私が飛べないなら、彼らも飛べない。",
+            "ko": "내가 날 수 없다면, 그들도 날 수 없지.",
+            "pl": "Skoro ja nie mogę latać, to i one nie będą.",
+            "pt-BR": "Se eu não posso voar, eles também não vão.",
+            "ru": "Если я не могу летать, они тоже не будут.",
+            "uk": "Якщо я не можу літати, вони теж не будуть.",
+            "vi": "Khi ta không thể bay, chúng cũng sẽ không bay."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cliff",
+      "characters": [
+        {
+          "id": "malvitna"
+        }
+      ],
+      "visual_tags": [
+        "lifting cloak",
+        "glowing wings underneath",
+        "surprised face",
+        "hands holding wings"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "malvitna",
+          "text": "Nedokázala jsem si je nasadit.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich konnte sie nicht anlegen.",
+            "en": "I couldn't put them on.",
+            "fr": "Je n'arrivais pas à les mettre.",
+            "it": "Non sono riuscita a indossarle.",
+            "ja": "私には装着できなかったから。",
+            "ko": "내가 날개를 달 수 없었으니까.",
+            "pl": "Nie umiałam ich założyć.",
+            "pt-BR": "Não consegui colocá-las.",
+            "ru": "Я не смогла их надеть.",
+            "uk": "Я не змогла їх надіти.",
+            "vi": "Ta không thể gắn chúng lên."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_courtyard",
+      "characters": [
+        {
+          "id": "ema"
+        },
+        {
+          "id": "malvitna"
+        },
+        {
+          "id": "stribry"
+        }
+      ],
+      "visual_tags": [
+        "holding hand",
+        "smiling",
+        "unicorn landing",
+        "lanterns glowing",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ema",
+          "text": "Každý umí létat, když ho někdo naučí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Jeder kann fliegen, wenn man es ihm beibringt.",
+            "en": "Everyone can fly if someone teaches them.",
+            "fr": "Tout le monde sait voler si on nous apprend.",
+            "it": "Tutti sanno volare, se qualcuno li insegna.",
+            "ja": "誰かに教われば、誰でも飛べる。",
+            "ko": "누군가 가르쳐 주면 누구나 날 수 있어.",
+            "pl": "Każdy potrafi latać, jeśli go ktoś nauczy.",
+            "pt-BR": "Todo mundo sabe voar quando alguém ensina.",
+            "ru": "Каждый умеет летать, если его научат.",
+            "uk": "Кожен вміє літати, якщо його навчити.",
+            "vi": "Ai cũng biết bay nếu có người dạy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_courtyard",
+      "characters": [
+        {
+          "id": "hviezdanaka"
+        },
+        {
+          "id": "ema"
+        },
+        {
+          "id": "malvitna"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "stars in sky",
+        "happy",
+        "group shot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "hviezdanaka",
+          "text": "Velká Zkouška se dnes nekonala.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Große Test findet heute nicht statt.",
+            "en": "The Great Exam is canceled today.",
+            "fr": "Le Grand Examen n'aura pas lieu aujourd'hui.",
+            "it": "Il Grande Esame oggi non si terrà.",
+            "ja": "今日は大試験は中止だ。",
+            "ko": "오늘 대시험은 취소야.",
+            "pl": "Wielki Egzamin dzisiaj się nie odbył.",
+            "pt-BR": "O Grande Exame não aconteceu hoje.",
+            "ru": "Большое Испытание сегодня не состоялось.",
+            "uk": "Великий Испит сьогодні не відбувся.",
+            "vi": "Ngày Thi Trạng Nguyên hôm nay bị hủy."
+          }
+        },
+        {
+          "speaker_id": "hviezdanaka",
+          "text": "Příští pondělí, první hodina.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nächsten Montag, erste Stunde.",
+            "en": "Next Monday, first period.",
+            "fr": "Lundi prochain, première heure.",
+            "it": "Il prossimo lunedì, prima ora.",
+            "ja": "来週月曜日、最初の授業で。",
+            "ko": "다음 주 월요일, 첫 시간.",
+            "pl": "W przyszły poniedziałek, pierwsza lekcja.",
+            "pt-BR": "Na próxima segunda, na primeira aula.",
+            "ru": "В следующий понедельник, первый урок.",
+            "uk": "Наступного понеділка, перша пара.",
+            "vi": "Thứ Hai tuần sau, tiết học đầu tiên."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

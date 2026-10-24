@@ -1,0 +1,109 @@
+{
+  "id": "w_lx_k6_08_piskovy_sip_pyramida_mimo_cas",
+  "title": "Vojta a pyramida mimo čas",
+  "synopsis": "Cestovatel časem Vojta dorazí do starověkého Egypta, kde musí přesvědčit duchy faraonů, že budoucnost stojí za to, aniž by porušil pravidla o nezasahování do dějin.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Vojta odchází s učitelem-faraonem, pas zůstává v Egyptu a příběh pokračuje."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pyramid_ext",
+      "l_pyramid_int"
+    ]
+  },
+  "characters": [
+    {
+      "id": "vojta",
+      "name": "Vojta",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 13 with short black hair and an adventurer's outfit",
+      "base": "male child, black hair, short hair, dark eyes, fair skin, determined face",
+      "outfits": {
+        "default": "modern adventurer jacket, cargo pants, boots, quiver on back, holding bow"
+      },
+      "photo": "a determined Czech boy aged 13 with short black hair and an adventurer's outfit",
+      "tag_prompt": "male child, black hair, short hair, dark eyes, fair skin, determined face, modern adventurer jacket, cargo pants, boots, quiver on back, holding bow",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "older_vojta",
+      "name": "Starší Vojta",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall Czech man aged 30 with a serious face and a golden pharaoh mask",
+      "base": "adult, mature male, tall, athletic, black hair, serious face, golden mask",
+      "outfits": {
+        "default": "golden pharaoh mask, ancient egyptian robes, glowing staff"
+      },
+      "photo": "a tall Czech man aged 30 with a serious face and a golden pharaoh mask",
+      "tag_prompt": "adult, mature male, tall, athletic, black hair, serious face, golden mask, golden pharaoh mask, ancient egyptian robes, glowing staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pharaoh_spirit",
+      "name": "Faraon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a transparent ghostly figure with a golden pharaoh mask and a glowing aura",
+      "base": "ghost, transparent, floating, golden mask, ancient egyptian headdress",
+      "outfits": {
+        "default": "golden mask, translucent robes, glowing aura"
+      },
+      "photo": "a transparent ghostly figure with a golden pharaoh mask and a glowing aura",
+      "tag_prompt": "ghost, transparent, floating, golden mask, ancient egyptian headdress, golden mask, translucent robes, glowing aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "worker",
+      "name": "Dělník",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular ancient egyptian worker aged 35 with a white loincloth and headband",
+      "base": "adult, mature male, muscular, dark skin, short hair, beard",
+      "outfits": {
+        "default": "white linen loincloth, headband, carrying stone"
+      },
+      "photo": "a muscular ancient egyptian worker aged 35 with a white loincloth and headband",
+      "tag_prompt": "adult, mature male, muscular, dark skin, short hair, beard, white linen loincloth, headband, carrying stone",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pyramid_ext",
+      "name": "Pyramida – exteriér",
+      "description": "Pyramida – exteriér",
+      "tag_prompt": "outdoors, egypt, pyramid construction site, night, moonlight, stars, sand, stone blocks, mysterious atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid_int",
+      "name": "Komora faraonů",
+      "description": "Komora faraonů",
+      "tag_prompt": "indoors, ancient egypt, pyramid interior, stone walls, golden decorations, glowing runes, night, dim light",
+      "mood": ""
+    }
+  ]
+}

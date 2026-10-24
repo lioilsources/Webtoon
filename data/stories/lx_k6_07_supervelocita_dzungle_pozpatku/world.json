@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k6_07_supervelocita_dzungle_pozpatku",
+  "title": "Ben a džungle, která běží pozpátku",
+  "synopsis": "Rychlík Ben soutěží s magem Časoplotem v džungli, kde čas běží pozpátku, a svým humorem rozbije kouzlo.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: džungle je zase rychlá a Časoplot musí učit rychlé čtení."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_pyramid"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ben",
+      "name": "Ben",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a confident Czech boy aged 12 with short blonde hair and a red hoodie",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, confident smile",
+      "outfits": {
+        "default": "red hoodie, blue jeans, white sneakers, yellow scarf"
+      },
+      "photo": "a confident Czech boy aged 12 with short blonde hair and a red hoodie",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, confident smile, red hoodie, blue jeans, white sneakers, yellow scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "casoplot",
+      "name": "Mág Časoplot",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a transparent ghost wizard with a long white beard and a floating hourglass",
+      "base": "ghost, transparent, floating, long beard, wizard hat, glowing eyes",
+      "outfits": {
+        "default": "glowing blue robes, hourglass necklace, floating clock parts"
+      },
+      "photo": "a transparent ghost wizard with a long white beard and a floating hourglass",
+      "tag_prompt": "ghost, transparent, floating, long beard, wizard hat, glowing eyes, glowing blue robes, hourglass necklace, floating clock parts",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "opice",
+      "name": "Opice",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a brown monkey with large expressive eyes and a long tail",
+      "base": "monkey, brown fur, big eyes, long tail, expressive face",
+      "outfits": {
+        "default": "vines around waist"
+      },
+      "photo": "a brown monkey with large expressive eyes and a long tail",
+      "tag_prompt": "monkey, brown fur, big eyes, long tail, expressive face, vines around waist",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Selva Rychlá",
+      "description": "Selva Rychlá",
+      "tag_prompt": "outdoors, jungle, dense trees, vines, river, sunlight, tropical, morning",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid",
+      "name": "Pyramida z hodin",
+      "description": "Pyramida z hodin",
+      "tag_prompt": "outdoors, jungle clearing, pyramid made of clocks, gears, floating time fragments, magical light",
+      "mood": ""
+    }
+  ]
+}

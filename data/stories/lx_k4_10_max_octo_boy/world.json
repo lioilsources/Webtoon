@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_10_max_octo_boy",
+  "title": "Max Octo-Boy a bitva na mořském dně",
+  "synopsis": "Šestiletý Max s mechanickými chapadly porazí obřího mutanta kraba na dně oceánu.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: krab je zpacifikován a Max dostává medaili."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_station",
+      "l_interior"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Max",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a cute Czech boy aged 6 with short blonde hair and bright blue eyes",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, round face",
+      "outfits": {
+        "default": "blue superhero suit, silver backpack, black boots, white gloves"
+      },
+      "photo": "a cute Czech boy aged 6 with short blonde hair and bright blue eyes",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, round face, blue superhero suit, silver backpack, black boots, white gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "crab",
+      "name": "Mutant-Krab",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a giant red crab with jagged shell edges and glowing purple energy",
+      "base": "crab, giant crab, red shell, spiky shell, large claws",
+      "outfits": {
+        "default": "glowing purple aura, jagged shell edges"
+      },
+      "photo": "a giant red crab with jagged shell edges and glowing purple energy",
+      "tag_prompt": "crab, giant crab, red shell, spiky shell, large claws, glowing purple aura, jagged shell edges",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_station",
+      "name": "Podmořská stanice",
+      "description": "Podmořská stanice",
+      "tag_prompt": "outdoors, underwater, glass dome, ocean floor, sand, sharks swimming outside, blue water, bioluminescent lights, night",
+      "mood": ""
+    },
+    {
+      "id": "l_interior",
+      "name": "Interiér stanice",
+      "description": "Interiér stanice",
+      "tag_prompt": "indoors, underwater base, glass walls, control panels, colorful lights, blue water outside, futuristic",
+      "mood": ""
+    }
+  ]
+}

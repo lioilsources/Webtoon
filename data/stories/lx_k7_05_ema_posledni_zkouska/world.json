@@ -1,0 +1,125 @@
+{
+  "id": "w_lx_k7_05_ema_posledni_zkouska",
+  "title": "Ema a ztracená křídla",
+  "synopsis": "Ema a její létající jednorožec Stříbrný musí najít čarodějnici Malvitnu, která ukradla křídla, a naučit ji létat.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Malvitna se stává studentkou akademie."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_academy",
+      "l_stable",
+      "l_cliff",
+      "l_courtyard"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ema",
+      "name": "Ema Zvonková",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a cute Czech girl aged 10 with messy light brown hair and freckles",
+      "base": "female child, messy hair, light brown hair, blue eyes, fair skin, freckles",
+      "outfits": {
+        "default": "white academy uniform, blue ribbon, white boots"
+      },
+      "photo": "a cute Czech girl aged 10 with messy light brown hair and freckles",
+      "tag_prompt": "female child, messy hair, light brown hair, blue eyes, fair skin, freckles, white academy uniform, blue ribbon, white boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "stribry",
+      "name": "Stříbrný",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small white unicorn with large silver wings and a glowing horn",
+      "base": "unicorn, white fur, silver horn, large wings, blue eyes",
+      "outfits": {
+        "default": "silver wing harness"
+      },
+      "photo": "a small white unicorn with large silver wings and a glowing horn",
+      "tag_prompt": "unicorn, white fur, silver horn, large wings, blue eyes, silver wing harness",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "hviezdanaka",
+      "name": "Rektorka Hvězdanaka",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall Czech woman aged 45 with long blonde hair and a stern expression",
+      "base": "adult, mature female, tall, blonde hair, long hair, blue eyes, stern face",
+      "outfits": {
+        "default": "purple wizard robe, starry hat, staff"
+      },
+      "photo": "a tall Czech woman aged 45 with long blonde hair and a stern expression",
+      "tag_prompt": "adult, mature female, tall, blonde hair, long hair, blue eyes, stern face, purple wizard robe, starry hat, staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "malvitna",
+      "name": "Malvitna",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a pale witch aged 25 with black hair and a black cloak",
+      "base": "witch, black hair, pale skin, dark eyes, sharp features",
+      "outfits": {
+        "default": "black cloak, old school uniform underneath"
+      },
+      "photo": "a pale witch aged 25 with black hair and a black cloak",
+      "tag_prompt": "witch, black hair, pale skin, dark eyes, sharp features, black cloak, old school uniform underneath",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_academy",
+      "name": "Akademie",
+      "description": "Akademie",
+      "tag_prompt": "outdoors, magic academy, floating island, clouds, rainbow bridge, towers, bright day",
+      "mood": ""
+    },
+    {
+      "id": "l_stable",
+      "name": "Stáj",
+      "description": "Stáj",
+      "tag_prompt": "indoors, stable, wooden beams, hay, dim light, shadows",
+      "mood": ""
+    },
+    {
+      "id": "l_cliff",
+      "name": "Skála nad mraky",
+      "description": "Skála nad mraky",
+      "tag_prompt": "outdoors, cliff edge, clouds below, sunset, wind, dramatic lighting",
+      "mood": ""
+    },
+    {
+      "id": "l_courtyard",
+      "name": "Nádvoří",
+      "description": "Nádvoří",
+      "tag_prompt": "outdoors, academy courtyard, stone floor, lanterns, night, stars",
+      "mood": ""
+    }
+  ]
+}

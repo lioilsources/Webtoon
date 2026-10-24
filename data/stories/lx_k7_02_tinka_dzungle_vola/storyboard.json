@@ -1,0 +1,458 @@
+{
+  "title": "Tinka a zlatá řeka",
+  "title_i18n": {
+    "de": "Tinka und der Goldene Fluss",
+    "en": "Tinka and the Golden River",
+    "fr": "Tinka et la rivière d'or",
+    "it": "Tinka e il fiume d'oro",
+    "ja": "ティンカと黄金の川",
+    "ko": "팅카와 황금 강",
+    "pl": "Tinka i Złota Rzeka",
+    "pt-BR": "Tinka e o Rio de Ouro",
+    "ru": "Тинка и золотая река",
+    "uk": "Тінка та золота ріка",
+    "vi": "Tinka và dòng sông vàng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_village",
+      "characters": [],
+      "visual_tags": [
+        "jungle village",
+        "morning sun",
+        "monkeys in trees",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno v kmenové vesnici.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Morgen in der Stammesdorf.",
+            "en": "Morning in the tribal village.",
+            "fr": "Matin dans le village tribal.",
+            "it": "Mattina nel villaggio tribale.",
+            "ja": "部族の村の朝。",
+            "ko": "아침, 부족 마을.",
+            "pl": "Rano we wsi plemiennej.",
+            "pt-BR": "Manhã na aldeia tribal.",
+            "ru": "Утро в деревне племени.",
+            "uk": "Ранок у племенному селі.",
+            "vi": "Sáng sớm tại bản bộ lạc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, city lights blinking, static camera",
+      "motion_llm": "monkeys swinging in trees, sunlight filtering through leaves, static camera",
+      "wd14_tags": {
+        "tree": 0.955,
+        "scenery": 0.907,
+        "outdoors": 0.891,
+        "no humans": 0.872,
+        "nature": 0.842,
+        "forest": 0.803,
+        "house": 0.726,
+        "road": 0.578,
+        "bush": 0.435,
+        "day": 0.435,
+        "building": 0.421,
+        "grass": 0.411
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_village",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "barvoun"
+        }
+      ],
+      "visual_tags": [
+        "sitting on log",
+        "petting beetle",
+        "blue beetle",
+        "looking at beetle",
+        "curious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tinka",
+          "text": "Barvouni, cos našel?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bienen, was hast du gefunden?",
+            "en": "Buzz, what did you find?",
+            "fr": "Barvoun, qu'est-ce que tu as trouvé ?",
+            "it": "Pittore, cosa hai trovato?",
+            "ja": "バルヴォーン、何を見つけたの？",
+            "ko": "바르보우니, 뭐 찾았어?",
+            "pl": "Barvounie, co znalazłeś?",
+            "pt-BR": "Barvoun, o que você achou?",
+            "ru": "Бурбон, что ты нашёл?",
+            "uk": "Барвунчик, що ти знайшов?",
+            "vi": "Barvoun, cậu tìm thấy gì thế?"
+          }
+        },
+        {
+          "speaker_id": "barvoun",
+          "text": "Bzzz… řeka pláče…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bzzz… der Fluss weint…",
+            "en": "Bzzz... the river is crying...",
+            "fr": "Bzzz… la rivière pleure…",
+            "it": "Bzzz… il fiume piange…",
+            "ja": "ブズズ…川が泣いてる…",
+            "ko": "윙윙… 강이 울고 있어…",
+            "pl": "Bzzz… rzeka płacze…",
+            "pt-BR": "Bzzz… o rio está chorando…",
+            "ru": "Бззз… река плачет…",
+            "uk": "Бзз… ріка плаче…",
+            "vi": "Bzzz… dòng sông đang khóc…"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BZZZ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_village",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "kvetinar"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "pot on head",
+        "worried",
+        "open mouth",
+        "holding pot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kvetinar",
+          "text": "Tinko! Celá řeka se změnila na zlatou! Ryby neumí dýchat!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Tinka! Der ganze Fluss ist golden geworden! Die Fische können nicht mehr atmen!",
+            "en": "Tinka! The whole river turned gold! The fish can't breathe!",
+            "fr": "Tinka ! Toute la rivière est devenue dorée ! Les poissons ne peuvent plus respirer !",
+            "it": "Tinka! Tutto il fiume è diventato d'oro! I pesci non riescono a respirare!",
+            "ja": "ティンカ！川全体が黄金色に変わっちゃった！魚が息ができないよ！",
+            "ko": "팅카! 강 전체가 금빛으로 변했어! 물고기들이 숨을 못 쉬어!",
+            "pl": "Tinko! Cała rzeka zamieniła się w złoto! Ryby nie mogą oddychać!",
+            "pt-BR": "Tinka! O rio inteiro virou ouro! Os peixes não conseguem respirar!",
+            "ru": "Тинка! Вся река стала золотой! Рыбы не могут дышать!",
+            "uk": "Тінко! Вся ріка перетворилася на золоту! Риби не дихають!",
+            "vi": "Tinka! Cả dòng sông hóa thành vàng! Cá không thở được!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_village",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "barvoun"
+        }
+      ],
+      "visual_tags": [
+        "giant beetle",
+        "girl riding beetle",
+        "jumping",
+        "determined",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tinka",
+          "text": "Tak jedeme. Džungle volá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann los. Der Dschungel ruft.",
+            "en": "Let's go. The jungle is calling.",
+            "fr": "On y va. La jungle nous appelle.",
+            "it": "Allora partiamo. La giungla ci chiama.",
+            "ja": "じゃあ行くわ。ジャングルが呼んでるから。",
+            "ko": "그럼 가자. 정글이 우리를 부르고 있어.",
+            "pl": "No to jedziemy. Dżungla woła.",
+            "pt-BR": "Então vamos. A selva está chamando.",
+            "ru": "Поехали. Джунгли зовут.",
+            "uk": "Тоді рушаймо. Джунглі кличуть.",
+            "vi": "Thế là đi thôi. Rừng già đang gọi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "osika"
+        }
+      ],
+      "visual_tags": [
+        "giant gold creature",
+        "digging",
+        "gold dust",
+        "glowing water",
+        "standing by river",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "osika",
+          "text": "Džungle je nepřirozená! Když ji pokryju zlatem, bude DOKONALÁ!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Der Dschungel ist unnatürlich! Wenn ich ihn mit Gold überziehe, wird er VOLLKOMMEN!",
+            "en": "The jungle is unnatural! If I cover it in gold, it'll be PERFECT!",
+            "fr": "La jungle est contre-nature ! Si je la couvre d'or, elle sera PARFAITE !",
+            "it": "La giungla è innaturale! Se la ricopro d'oro, sarà PERFETTA!",
+            "ja": "ジャングルは不自然だ！黄金で覆えば完璧になる！",
+            "ko": "정글은 부자연스러워! 내가 금으로 덮으면 완벽해질 거야!",
+            "pl": "Dżungla jest nienaturalna! Jak ją pokryję złotem, będzie DOSKONAŁA!",
+            "pt-BR": "A selva é antinatural! Quando eu cobri-la de ouro, ficará PERFEITA!",
+            "ru": "Джунгли — это ненатурально! Когда я покрою их золотом, они будут ИДЕАЛЬНЫМИ!",
+            "uk": "Джунглі — це ненатурально! Коли я вкрию їх золотом, вони стануть ІДЕАЛЬНИМИ!",
+            "vi": "Rừng già là phi tự nhiên! Nếu phủ vàng lên, nó sẽ HOÀN HẢO!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "osika"
+        }
+      ],
+      "visual_tags": [
+        "girl on giant shoulder",
+        "pointing",
+        "gold shoulder",
+        "calm",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tinka",
+          "text": "Kdo ti řekl, že dokonalá je zlatá?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer hat dir gesagt, dass Gold perfekt ist?",
+            "en": "Who told you gold is perfect?",
+            "fr": "Qui t'a dit que l'or, c'est la perfection ?",
+            "it": "Chi ti ha detto che l'oro è perfetto?",
+            "ja": "誰が完璧なのは黄金だって言ったの？",
+            "ko": "누가 완벽함이 금빛이라고 했어?",
+            "pl": "Kto ci powiedział, że złoto to doskonałość?",
+            "pt-BR": "Quem te disse que ouro é perfeito?",
+            "ru": "Кто сказал, что идеальное — это золото?",
+            "uk": "Хто сказав тобі, що золота — це ідеальна?",
+            "vi": "Ai bảo vàng là hoàn hảo?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "tinka"
+        }
+      ],
+      "visual_tags": [
+        "pointing",
+        "purple orchid",
+        "flower",
+        "serious",
+        "looking at flower"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tinka",
+          "text": "Vidíš tu orchidej? Má flek. Ten flek ji dělá krásnou.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Siehst du diese Orchidee? Sie hat einen Fleck. Genau der macht sie schön.",
+            "en": "See this orchid? It has a spot. That spot makes it beautiful.",
+            "fr": "Tu vois cette orchidée ? Elle a une tache. Cette tache la rend belle.",
+            "it": "Vedi quell'orchidea? Ha una macchia. È quella macchia a renderla bella.",
+            "ja": "この蘭を見て。斑点があるでしょう？その斑点が美しさを引き立ててるの。",
+            "ko": "이 난초 봐? 얼룩이 있지. 그 얼룩이 이 꽃을 아름답게 해.",
+            "pl": "Widzisz tę orchideę? Ma plamę. To ją czyni piękną.",
+            "pt-BR": "Vê essa orquídea? Ela tem manchas. São elas que a tornam linda.",
+            "ru": "Видишь эту орхидею? У неё пятно. Именно оно делает её красивой.",
+            "uk": "Бачиш цю орхідею? В неї є пляма. Саме ця пляма робить її красивою.",
+            "vi": "Cụm lan kia kìa. Nó có đốm. Đốm ấy làm nó đẹp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "osika"
+        }
+      ],
+      "visual_tags": [
+        "looking at water",
+        "reflection",
+        "sad",
+        "kneeling",
+        "gold skin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "osika",
+          "text": "Oni nejsou zlatí. A přesto jsou krásní.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie sind nicht golden. Und trotzdem sind sie schön.",
+            "en": "They aren't gold. And yet, they are beautiful.",
+            "fr": "Ils ne sont pas dorés. Et pourtant, ils sont beaux.",
+            "it": "Loro non sono d'oro. Eppure sono belli.",
+            "ja": "彼らは黄金じゃない。それでも美しい。",
+            "ko": "그들은 금빛이 아니야. 그럼에도 아름답지.",
+            "pl": "Oni nie są złoti. A mimo to są piękni.",
+            "pt-BR": "Eles não são dourados. E mesmo assim são lindos.",
+            "ru": "Они не золотые. И всё же они прекрасны.",
+            "uk": "Вони не золоті. І все ж вони красиві.",
+            "vi": "Chúng không vàng. Nhưng vẫn đẹp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_river",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "barvoun"
+        },
+        {
+          "id": "osika"
+        }
+      ],
+      "visual_tags": [
+        "pink beetle",
+        "sitting by river",
+        "clearing water",
+        "smile",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tinka",
+          "text": "To je nejkrásnější práce v džungli. Vítej v rodině, Osiko.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist die schönste Arbeit im Dschungel. Willkommen in der Familie, Osika.",
+            "en": "That's the most beautiful work in the jungle. Welcome to the family, Osik.",
+            "fr": "C'est le plus beau travail de la jungle. Bienvenue dans la famille, Osika.",
+            "it": "È il lavoro più bello della giungla. Benvenuto in famiglia, Osika.",
+            "ja": "これがジャングルで一番美しい仕事よ。ようこそ、家族へ、オシコ。",
+            "ko": "이건 정글에서 가장 아름다운 일이야. 오시코, 가족에 오신 것을 환영해.",
+            "pl": "To najpiękniejsza praca w dżungli. Witaj w rodzinie, Osiko.",
+            "pt-BR": "Esse é o trabalho mais bonito da selva. Bem-vindo à família, Osika.",
+            "ru": "Это самая прекрасная работа в джунглях. Добро пожаловать в семью, Осик.",
+            "uk": "Це найкрасивіша робота в джунглях. Ласкаво просимо до родини, Осіко.",
+            "vi": "Đây là công việc đẹp nhất trong rừng. Chào mừng đến với gia đình, Osika."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_fire",
+      "characters": [
+        {
+          "id": "tinka"
+        },
+        {
+          "id": "barvoun"
+        },
+        {
+          "id": "osika"
+        }
+      ],
+      "visual_tags": [
+        "campfire",
+        "night",
+        "sleeping girl",
+        "rainbow beetle",
+        "drawing in sand",
+        "gold drawings",
+        "happy"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, leaves swaying gently, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, fireflies floating around campfire, flames flickering, static camera",
+      "wd14_tags": {
+        "star (sky)": 0.791,
+        "sky": 0.763,
+        "armor": 0.746,
+        "outdoors": 0.733,
+        "squatting": 0.694,
+        "1boy": 0.678,
+        "antennae": 0.579,
+        "starry sky": 0.574,
+        "sunset": 0.489,
+        "male focus": 0.466,
+        "solo": 0.434,
+        "sun": 0.419
+      }
+    }
+  ]
+}

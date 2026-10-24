@@ -1,0 +1,457 @@
+{
+  "title": "Nela a Akademie Jednorožců",
+  "title_i18n": {
+    "de": "Nela und die Einhorn-Akademie",
+    "en": "Nela and the Unicorn Academy",
+    "fr": "Nela et l'Académie des Licornes",
+    "it": "Nela e l'Accademia degli Unicorni",
+    "ja": "ネラとユニコーン学院",
+    "ko": "넬라와 유니콘 아카데미",
+    "pl": "Nela i Akademia Jednorożców",
+    "pt-BR": "A Academia de Unicórnios de Nela",
+    "ru": "Нела и Академия Единорогов",
+    "uk": "Нела та Академія Єдинорожців",
+    "vi": "Nela và Học Viện Kì Lân"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_academy",
+      "characters": [],
+      "visual_tags": [
+        "floating castle",
+        "clouds",
+        "bright sun",
+        "magical architecture",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Obrovský hrad plovoucí mezi mraky.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein riesiges Schloss, das zwischen den Wolken schwebt.",
+            "en": "A colossal castle floating among the clouds.",
+            "fr": "Un immense château flottant parmi les nuages.",
+            "it": "Un enorme castello fluttuante tra le nuvole.",
+            "ja": "雲間に浮かぶ巨大な城。",
+            "ko": "구름 사이에 떠 있는 거대한 성.",
+            "pl": "Ogromny zamek unoszący się między chmurami.",
+            "pt-BR": "Um castelo gigante flutuando entre as nuvens.",
+            "ru": "Огромный замок, парящий среди облаков.",
+            "uk": "Величезний замок, що плаває серед хмар.",
+            "vi": "Một tòa lâu đài khổng lồ trôi nổi giữa những đám mây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, clouds drifting slowly, city lights blinking, static camera",
+      "motion_llm": "clouds drifting slowly around the castle, static camera",
+      "wd14_tags": {
+        "cloud": 0.971,
+        "sky": 0.966,
+        "scenery": 0.937,
+        "no humans": 0.894,
+        "blue sky": 0.862,
+        "day": 0.833,
+        "outdoors": 0.829,
+        "fantasy": 0.599,
+        "tower": 0.567,
+        "castle": 0.543,
+        "moon": 0.527,
+        "building": 0.519
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_academy",
+      "characters": [
+        {
+          "id": "lyra"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding staff",
+        "pointing",
+        "stern face",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "lyra",
+          "text": "Každý student musí najít svého jednorožce.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Jeder Schüler muss sein eigenes Einhorn finden.",
+            "en": "Every student must find their unicorn.",
+            "fr": "Chaque élève doit trouver sa licorne.",
+            "it": "Ogni studente deve trovare il suo unicorno.",
+            "ja": "全員、相棒のユニコーンを見つけなきゃ。",
+            "ko": "모든 학생은 자신의 유니콘을 찾아야 해요.",
+            "pl": "Każdy uczeń musi znaleźć swojego jednorożca.",
+            "pt-BR": "Cada estudante precisa encontrar seu unicórnio.",
+            "ru": "Каждый студент должен найти своего единорога.",
+            "uk": "Кожен студент має знайти свого єдинорожця.",
+            "vi": "Mỗi học sinh đều phải tìm được con kì lân của mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "holding wand",
+        "looking around",
+        "curious",
+        "bushes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "astra"
+        }
+      ],
+      "visual_tags": [
+        "unicorn looking away",
+        "shy",
+        "ears back",
+        "close up face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astra",
+          "text": "Ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "いや。",
+            "ko": "아니.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "open mouth",
+        "hands on cheeks",
+        "looking at unicorn"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Ty mlužíš!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Du kannst sprechen!",
+            "en": "You can talk!",
+            "fr": "Tu parles !",
+            "it": "Parli!",
+            "ja": "喋った！",
+            "ko": "네가 말을 해!",
+            "pl": "Ty mówisz!",
+            "pt-BR": "Você está falando!",
+            "ru": "Ты говоришь!",
+            "uk": "Ти говориш!",
+            "vi": "Cậu nói gì cơ!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "morga"
+        }
+      ],
+      "visual_tags": [
+        "witch floating",
+        "dark magic",
+        "purple lightning",
+        "angry face",
+        "holding jagged staff"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "morga",
+          "text": "Všechna kouzla budou moje!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Alle Zauber gehören mir!",
+            "en": "All the magic will be mine!",
+            "fr": "Tous les sorts seront à moi !",
+            "it": "Tutti i miei incantesimi!",
+            "ja": "魔法は全部私のもの！",
+            "ko": "모든 마법은 내 거야!",
+            "pl": "Wszystkie zaklęcia będą moje!",
+            "pt-BR": "Todos os feitiços serão meus!",
+            "ru": "Все заклинания будут моими!",
+            "uk": "Усі чари будуть моїми!",
+            "vi": "Mọi phép thuật sẽ thuộc về ta!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "astra"
+        }
+      ],
+      "visual_tags": [
+        "rainbow shield",
+        "glowing magic",
+        "protecting",
+        "determined face",
+        "unicorn standing firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Astro!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Astra!",
+            "en": "Astra!",
+            "fr": "Astro !",
+            "it": "Astra!",
+            "ja": "アストラ！",
+            "ko": "아스트로!",
+            "pl": "Astro!",
+            "pt-BR": "Astra!",
+            "ru": "Астра!",
+            "uk": "Астро!",
+            "vi": "Astra!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, clouds drifting slowly, soft glow pulsing, static camera",
+      "motion_llm": "ambient only, characters still, rainbow shield glowing and pulsing with light, static camera",
+      "wd14_tags": {
+        "1girl": 0.971,
+        "pink hair": 0.939,
+        "long hair": 0.898,
+        "boots": 0.725,
+        "shield": 0.714,
+        "blue eyes": 0.689,
+        "unicorn": 0.669,
+        "standing": 0.65,
+        "sky": 0.572,
+        "magic": 0.546,
+        "cloak": 0.52,
+        "blue cloak": 0.488
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "nela"
+        },
+        {
+          "id": "astra"
+        }
+      ],
+      "visual_tags": [
+        "circle of light",
+        "other unicorns",
+        "holding hands",
+        "bright light",
+        "morga retreating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Nechci bojovat sama.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nicht allein kämpfen.",
+            "en": "I don't want to fight alone.",
+            "fr": "Je ne veux pas combattre seule.",
+            "it": "Non voglio combattere da sola.",
+            "ja": "一人で戦いたくない。",
+            "ko": "혼자 싸우고 싶지 않아.",
+            "pl": "Nie chcę walczyć sama.",
+            "pt-BR": "Não quero lutar sozinha.",
+            "ru": "Я не хочу сражаться одна.",
+            "uk": "Я не хочу битися сама.",
+            "vi": "Mình không muốn chiến đấu một mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "astra"
+        }
+      ],
+      "visual_tags": [
+        "unicorn looking at viewer",
+        "smile",
+        "soft eyes",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astra",
+          "text": "Tak dobře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann eben.",
+            "en": "Alright then.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "わかった。",
+            "ko": "그럼 좋겠네.",
+            "pl": "No to dobrze.",
+            "pt-BR": "Tá bom.",
+            "ru": "Ну ладно.",
+            "uk": "Ну й ладно.",
+            "vi": "Vậy thì được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "confused",
+        "tilting head",
+        "surprised",
+        "looking at unicorn"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "nela",
+          "text": "Co?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was?",
+            "en": "What?",
+            "fr": "Quoi ?",
+            "it": "Cosa?",
+            "ja": "え？",
+            "ko": "뭐?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ru": "Что?",
+            "uk": "Що?",
+            "vi": "Cái gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_battle",
+      "characters": [
+        {
+          "id": "astra"
+        },
+        {
+          "id": "nela"
+        }
+      ],
+      "visual_tags": [
+        "unicorn nuzzling girl",
+        "happy",
+        "smile",
+        "hugging",
+        "sunlight breaking through clouds"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "astra",
+          "text": "Možná jsi moje jezdkyně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht bist du meine Reiterin.",
+            "en": "Maybe you're my rider.",
+            "fr": "Peut-être que tu es ma cavalière.",
+            "it": "Forse sei la mia cavallerizza.",
+            "ja": "もしかして、私の相棒？",
+            "ko": "아마 네가 나의 기수일지도 몰라.",
+            "pl": "Może ty jesteś moją jeźdźczynią.",
+            "pt-BR": "Talvez você seja minha amazona.",
+            "ru": "Может, ты моя наездница.",
+            "uk": "Можливо, ти мій вершник.",
+            "vi": "Có lẽ cậu là kỵ sĩ của ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

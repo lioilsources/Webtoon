@@ -1,0 +1,395 @@
+{
+  "title": "Max a duchové zloději",
+  "title_i18n": {
+    "de": "Max und die Geisterdiebe",
+    "en": "Max and the Ghost Thieves",
+    "fr": "Max et les fantômes voleurs",
+    "it": "Max e i ladri fantasma",
+    "ja": "マックスと幽霊泥棒",
+    "ko": "맥스와 유령 도둑들",
+    "pl": "Max i duchowi złodzieje",
+    "pt-BR": "Max e os Ladrões Fantasmas",
+    "ru": "Макс и призрачные воры",
+    "uk": "Макс і привиди-злодії",
+    "vi": "Max và những kẻ trộm ma"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_roof",
+      "characters": [],
+      "visual_tags": [
+        "night sky",
+        "rain",
+        "city skyline",
+        "wet roof",
+        "dark"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noční město pod deštěm.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nachtstadt im Regen.",
+            "en": "A rainy night in the city.",
+            "fr": "La ville la nuit sous la pluie.",
+            "it": "La città di notte sotto la pioggia.",
+            "ja": "雨に濡れる夜の街。",
+            "ko": "비 내리는 밤의 도시.",
+            "pl": "Nocne miasto pod deszczem.",
+            "pt-BR": "A cidade à noite, sob a chuva.",
+            "ru": "Ночной город под дождём.",
+            "uk": "Нічне місто під дощем.",
+            "vi": "Thành phố về đêm dưới cơn mưa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, soft glow pulsing, city lights blinking, static camera",
+      "motion_llm": "rain falling heavily, lightning flashing in the distance, static camera",
+      "wd14_tags": {
+        "no humans": 0.963,
+        "scenery": 0.911,
+        "building": 0.854,
+        "cityscape": 0.841,
+        "night": 0.83,
+        "city": 0.814,
+        "sky": 0.738,
+        "blue theme": 0.729,
+        "outdoors": 0.674,
+        "lightning": 0.659,
+        "electricity": 0.513,
+        "skyscraper": 0.473
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "sova"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "jumping",
+        "cape flowing",
+        "robot flying",
+        "looking back",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sova",
+          "text": "Maxi, duchové v bance!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Maxi, Geister in der Bank!",
+            "en": "Max, ghosts at the bank!",
+            "fr": "Maxi, des fantômes à la banque !",
+            "it": "Maxi, fantasmi in banca!",
+            "ja": "マックス、銀行に幽霊が！",
+            "ko": "맥시, 은행에 유령이 있어!",
+            "pl": "Maxi, duchy w banku!",
+            "pt-BR": "Maxi, fantasmas no banco!",
+            "ru": "Макс, призраки в банке!",
+            "uk": "Максі, привиди в банку!",
+            "vi": "Maxi, ma trong ngân hàng!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "PIP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "nodding",
+        "determined",
+        "running",
+        "black cape",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Tak jdeme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann los.",
+            "en": "Let's go.",
+            "fr": "On y va.",
+            "it": "Allora andiamo.",
+            "ja": "じゃあ、行くよ。",
+            "ko": "그럼 가자.",
+            "pl": "No to lecimy.",
+            "pt-BR": "Vamos lá.",
+            "ru": "Пойдём.",
+            "uk": "Тож рушаймо.",
+            "vi": "Thế thì đi thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bank",
+      "characters": [
+        {
+          "id": "ghost"
+        }
+      ],
+      "visual_tags": [
+        "walking through wall",
+        "transparent",
+        "glowing",
+        "smirk",
+        "police station background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ghost",
+          "text": "Nikdo nás nechytí!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Niemand kriegt uns!",
+            "en": "No one can catch us!",
+            "fr": "Personne ne nous attrapera !",
+            "it": "Nessuno ci prenderà!",
+            "ja": "誰も捕まえられないよ！",
+            "ko": "우리 잡으러 올 수 없어!",
+            "pl": "Nikt nas nie złapie!",
+            "pt-BR": "Ninguém vai nos pegar!",
+            "ru": "Нас никто не поймает!",
+            "uk": "Нас ніхто не спіймає!",
+            "vi": "Không ai bắt được chúng ta đâu!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bank",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "holding flashlight",
+        "shining light",
+        "determined",
+        "black cape",
+        "glowing beam"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Ale já mám speciální světlo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber ich hab ein Speziallicht.",
+            "en": "But I have a special light.",
+            "fr": "Mais j'ai une lumière spéciale.",
+            "it": "Ma io ho una luce speciale.",
+            "ja": "でも、僕には特別なライトがあるんだ。",
+            "ko": "하지만 나는 특별한 빛을 가지고 있어.",
+            "pl": "Ale ja mam specjalne światło.",
+            "pt-BR": "Mas eu tenho uma luz especial.",
+            "ru": "Но у меня есть спец-фонарь.",
+            "uk": "Але в мене є спеціальне світло.",
+            "vi": "Nhưng mình có ánh sáng đặc biệt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bank",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "ghost"
+        }
+      ],
+      "visual_tags": [
+        "ghost frozen",
+        "glowing light on ghost",
+        "surprised",
+        "transparent",
+        "light beam"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ZÁŘ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "novakova"
+        },
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding badge",
+        "giving",
+        "police uniform",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "novakova",
+          "text": "Maxi, město je v bezpečí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Maxi, die Stadt ist sicher.",
+            "en": "Max, the city is safe.",
+            "fr": "Maxi, la ville est en sécurité.",
+            "it": "Maxi, la città è al sicuro.",
+            "ja": "マックス、街は安全だよ。",
+            "ko": "맥시, 도시는 안전해.",
+            "pl": "Maxi, miasto jest bezpieczne.",
+            "pt-BR": "Maxi, a cidade está segura.",
+            "ru": "Макс, город в безопасности.",
+            "uk": "Максі, місто в безпеці.",
+            "vi": "Maxi, thành phố đã an toàn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bench",
+      "characters": [
+        {
+          "id": "max"
+        }
+      ],
+      "visual_tags": [
+        "mask",
+        "determined",
+        "looking away",
+        "dark background",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Dokud budou duchové, budu tu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Solange Geister existieren, bin ich hier.",
+            "en": "As long as there are ghosts, I'll be here.",
+            "fr": "Tant qu'il y aura des fantômes, je serai là.",
+            "it": "Finché ci saranno fantasmi, io ci sarò.",
+            "ja": "幽霊がいる限り、僕はここにいるよ。",
+            "ko": "유령이 있는 한, 나는 여기 있을 거야.",
+            "pl": "Dopóki będą duchy, ja tu będę.",
+            "pt-BR": "Enquanto houver fantasmas, eu estarei aqui.",
+            "ru": "Пока есть призраки, я буду здесь.",
+            "uk": "Поки є привиди, я тут.",
+            "vi": "Chừng nào còn ma, mình sẽ ở đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "sova"
+        }
+      ],
+      "visual_tags": [
+        "disappearing",
+        "shadows",
+        "fading",
+        "cape",
+        "night",
+        "city lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sova",
+          "text": "Příště zase.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bis zum nächsten Mal.",
+            "en": "See you next time.",
+            "fr": "À la prochaine.",
+            "it": "La prossima volta.",
+            "ja": "またね。",
+            "ko": "다음에 또 봐.",
+            "pl": "Do następnego razu.",
+            "pt-BR": "Até a próxima.",
+            "ru": "До следующей встречи.",
+            "uk": "До наступного разу.",
+            "vi": "Hẹn gặp lại lần sau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, city lights blinking, static camera",
+      "motion_llm": "ambient only, characters still, rain falling, shadows shifting slowly, static camera",
+      "wd14_tags": {
+        "1boy": 0.929,
+        "solo": 0.868,
+        "male focus": 0.865,
+        "cape": 0.793,
+        "blue theme": 0.688,
+        "standing": 0.638,
+        "electricity": 0.624,
+        "lightning": 0.501,
+        "cityscape": 0.501,
+        "city": 0.476,
+        "bodysuit": 0.459,
+        "short hair": 0.455
+      }
+    }
+  ]
+}

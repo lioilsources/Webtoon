@@ -1,0 +1,461 @@
+{
+  "title": "Ondra a Dračí Pěst",
+  "title_i18n": {
+    "de": "Ondra und die Drachenfaust",
+    "en": "Ondra and the Dragon Fist",
+    "fr": "Ondra et le Poing du Dragon",
+    "it": "Ondra e il Pugno del Drago",
+    "ja": "オンドラと龍の拳",
+    "ko": "온드라와 용의 주먹",
+    "pl": "Ondra i Smoczy Pięść",
+    "pt-BR": "Ondra e o Punho do Dragão",
+    "ru": "Ондрей и Драконий Кулак",
+    "uk": "Ондра та Драконяча Кула",
+    "vi": "Ondra và Nắm đấm Rồng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_temple",
+      "characters": [],
+      "visual_tags": [
+        "bamboo forest",
+        "temple ruins",
+        "morning mist",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ranní mlha v chrámu mezi skalami.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Morgennebel im Tempel zwischen den Felsen.",
+            "en": "Morning mist in the temple among the rocks.",
+            "fr": "Brume matinale au temple, entre les rochers.",
+            "it": "Nebbia mattutina nel tempio tra le scogliere.",
+            "ja": "岩の間にある寺院の朝霧。",
+            "ko": "바위 사이 사원의 아침 안개.",
+            "pl": "Poranna mgła w świątyni wśród skał.",
+            "pt-BR": "Nevoa da manhã no templo entre as rochas.",
+            "ru": "Утренний туман в храме среди скал.",
+            "uk": "Ранковий туман у храмі серед скель.",
+            "vi": "Sương sớm trong đền thờ giữa những vách đá."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, leaves swaying gently, static camera",
+      "motion_llm": "mist drifting slowly through bamboo, static camera",
+      "wd14_tags": {
+        "no humans": 0.987,
+        "forest": 0.959,
+        "nature": 0.959,
+        "bamboo": 0.948,
+        "scenery": 0.91,
+        "bamboo forest": 0.882,
+        "outdoors": 0.87,
+        "rope": 0.836,
+        "shimenawa": 0.827,
+        "shrine": 0.787,
+        "shide": 0.688,
+        "day": 0.681
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "ondra"
+        },
+        {
+          "id": "mistr_bambus"
+        }
+      ],
+      "visual_tags": [
+        "martial arts pose",
+        "kicking air",
+        "sleeping",
+        "sitting cross-legged",
+        "bamboo stalk",
+        "determined face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ondra",
+          "text": "Mistře! Už tři dny mi nevychází Dračí skok!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Meister! Der Drachensprung will einfach nicht klappen!",
+            "en": "Master! I haven't been able to land the Dragon Leap for three days!",
+            "fr": "Maître ! Ça fait trois jours que je n'arrive pas à faire le Saut du Dragon !",
+            "it": "Maestro! Da tre giorni non riesco a fare il Salto del Drago!",
+            "ja": "師匠！ 龍の跳躍、三日間うまくいかないんです！",
+            "ko": "스승님! 사흘째 용 도약이 안 돼요!",
+            "pl": "Mistrzu! Trzy dni nie wychodzi mi Smoczy Skok!",
+            "pt-BR": "Mestre! Já faz três dias que não consigo fazer o Salto do Dragão!",
+            "ru": "Мастер! У меня уже три дня не получается Драконий Прыжок!",
+            "uk": "Майстре! Вже три дні у мене не виходить Драконячий Стрибок!",
+            "vi": "Thưa sư phụ! Ba ngày rồi mà con không thể thi triển Nhảy Rồng!"
+          }
+        },
+        {
+          "speaker_id": "mistr_bambus",
+          "text": "Drak se ukáže srdcem. Co tě trápí?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Drache zeigt sich durch das Herz. Was plagt dich?",
+            "en": "The dragon reveals itself through the heart. What troubles you?",
+            "fr": "Le dragon se révèle par le cœur. Qu'est-ce qui te tourmente ?",
+            "it": "Il drago si rivela col cuore. Cosa ti turba?",
+            "ja": "龍は心で現れる。何に悩んでいる？",
+            "ko": "용은 마음으로 나타나는 법. 무엇이 너를 괴롭히는가?",
+            "pl": "Smok objawia się sercem. Co cię trapi?",
+            "pt-BR": "O dragão se revela pelo coração. O que te aflige?",
+            "ru": "Дракон проявляется сердцем. Что тебя тревожит?",
+            "uk": "Дракон з’являється серцем. Що тебе турбує?",
+            "vi": "Rồng hiện ra bằng trái tim. Điều gì đang làm ngươi đau khổ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_temple",
+      "characters": [
+        {
+          "id": "ondra"
+        }
+      ],
+      "visual_tags": [
+        "sad face",
+        "looking down",
+        "hands on knees",
+        "worried"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ondra",
+          "text": "Démon Král Nácho bere kraji teplo. Lidé nemají oheň.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dämon König Nacho stiehlt der Gegend die Wärme. Die Menschen frieren.",
+            "en": "Demon King Nacho is stealing the region's warmth. People have no fire.",
+            "fr": "Le démon Roi Nacho vole la chaleur de la région. Les gens n'ont plus de feu.",
+            "it": "Il demone Re Nacho sta rubando il calore alla regione. La gente non ha fuoco.",
+            "ja": "悪魔の王ナホが、この地の温もりを奪っている。人々は火を持てない。",
+            "ko": "마왕 나초가 땅의 온기를 빼앗아 갔어요. 사람들이 불이 없어요.",
+            "pl": "Demon Król Nacho odbiera regionowi ciepło. Ludzie nie mają ognia.",
+            "pt-BR": "O Demônio Rei Nacho está roubando o calor da região. As pessoas não têm fogo.",
+            "ru": "Демон Король Начо забирает тепло у края. У людей нет огня.",
+            "uk": "Демон Король Начо забирає тепло краю. Люди не мають вогню.",
+            "vi": "Ác quỷ Vua Nácho đang hút đi hơi ấm của vùng đất. Người dân không còn lửa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "ondra"
+        },
+        {
+          "id": "kral_nacho"
+        }
+      ],
+      "visual_tags": [
+        "snowy mountain",
+        "cave entrance",
+        "steaming ground",
+        "standing",
+        "glowing red eyes",
+        "large demon",
+        "small boy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ondra",
+          "text": "Králi Nácho! Jdu si pro teplo kraje!",
+          "kind": "shout",
+          "i18n": {
+            "de": "König Nacho! Ich hole mir die Wärme der Gegend zurück!",
+            "en": "King Nacho! I'm coming for the region's warmth!",
+            "fr": "Roi Nacho ! Je viens chercher la chaleur de la région !",
+            "it": "Re Nacho! Vado a riprendermi il calore della terra!",
+            "ja": "王ナホ！ この地の温もりを取りに戻ってくる！",
+            "ko": "나초 왕! 땅의 온기를 찾아갈 거야!",
+            "pl": "Królu Nacho! Idę po ciepło regionu!",
+            "pt-BR": "Rei Nacho! Vou buscar o calor da região!",
+            "ru": "Король Начо! Я иду за теплом края!",
+            "uk": "Короче Начо! Я йду по тепло краю!",
+            "vi": "Vua Nácho! Ta đi lấy lại hơi ấm cho vùng đất!"
+          }
+        },
+        {
+          "speaker_id": "kral_nacho",
+          "text": "Vrať se. Sesbírám veškeré teplo – a pak mě nic nemůže zranit.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Geh zurück. Ich sammle alle Wärme ein – dann kann mich nichts mehr verletzen.",
+            "en": "Go back. I'll gather all the warmth—then nothing can hurt me.",
+            "fr": "Reviens. J'absorbe toute la chaleur – et ensuite, rien ne peut me blesser.",
+            "it": "Torna indietro. Raccoglierò tutto il calore... e poi nulla potrà ferirmi.",
+            "ja": "戻れ。すべての温もりを集めれば、誰も私を傷つけられない。",
+            "ko": "돌아가라. 나는 모든 온기를 모을 것이다. 그러면 아무도 나를 해칠 수 없다.",
+            "pl": "Wróć. Zgromadzę całe ciepło – i wtedy nic mnie nie zrani.",
+            "pt-BR": "Volte. Vou reunir todo o calor... e então nada poderá me machucar.",
+            "ru": "Возвращайся. Я соберу всё тепло — и тогда меня ничто не ранит.",
+            "uk": "Повертайся. Я зберу все тепло — і тоді мене ніхто не зможе поранити.",
+            "vi": "Quay về đi. Ta sẽ thu gom mọi hơi ấm – rồi chẳng gì có thể làm ta tổn thương."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "ondra"
+        }
+      ],
+      "visual_tags": [
+        "sitting on rock",
+        "calm face",
+        "hands on lap",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ondra",
+          "text": "Když máš teplo světa – objal tě někdo?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn du die Wärme der Welt hast – hat dich dann jemand umarmt?",
+            "en": "When you have the world's warmth—has anyone hugged you?",
+            "fr": "Quand on a la chaleur du monde, quelqu'un t'a-t-il serré dans ses bras ?",
+            "it": "Quando hai il calore del mondo... qualcuno ti ha abbracciato?",
+            "ja": "世界の温もりを持っても、誰かに抱かれたことはあるか？",
+            "ko": "세상의 온기를 가졌다면, 누군가 너를 안아주었는가?",
+            "pl": "Gdy masz ciepło świata – czy ktoś cię przytulił?",
+            "pt-BR": "Quando você tem o calor do mundo... alguém já te abraçou?",
+            "ru": "Когда у тебя тепло всего мира — обнимал ли тебя кто-нибудь?",
+            "uk": "Коли у тебе є тепло світу — чи обіймав тебе хтось?",
+            "vi": "Khi ngươi có hơi ấm của thế giới – ai đã ôm lấy ngươi?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "kral_nacho"
+        }
+      ],
+      "visual_tags": [
+        "surprised face",
+        "glowing red eyes",
+        "confused",
+        "large hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kral_nacho",
+          "text": "Démoni nejsou objímaní. …Nikdo to nezkusil.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dämonen werden nicht umarmt. …Niemand hat es versucht.",
+            "en": "Demons aren't hugged. …No one has tried.",
+            "fr": "Les démons ne sont pas étreints. …Personne n'a essayé.",
+            "it": "I demoni non vengono abbracciati. ...Nessuno l'ha mai provato.",
+            "ja": "悪魔は抱きしめられるものではない。……誰も試した者はいない。",
+            "ko": "마왕은 안기지 않는다. …누구도 시도하지 않았다.",
+            "pl": "Demony nie są przytulane. …Nikt tego nie próbował.",
+            "pt-BR": "Demônios não são abraçados. ...Ninguém tentou.",
+            "ru": "Демонов не обнимают. …Никто не пробовал.",
+            "uk": "Демонів не обіймають. …Ніхто цього не пробував.",
+            "vi": "Ác quỷ không được ôm ấp. …Chưa ai thử cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "ondra"
+        },
+        {
+          "id": "kral_nacho"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "fire dragon shadow",
+        "glowing shadow",
+        "dragon wings",
+        "hugging",
+        "warm light",
+        "no fire"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ondra",
+          "text": "Teplo, které rozdáš, se ti vrátí. Jsi nezlomitelný.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Wärme, die du gibst, kehrt zu dir zurück. Du bist unzerstörbar.",
+            "en": "The warmth you give comes back to you. You are unbreakable.",
+            "fr": "La chaleur que tu donnes te revient. Tu es indestructible.",
+            "it": "Il calore che doni ti torna indietro. Sei indistruttibile.",
+            "ja": "与えた温もりは必ず戻ってくる。お前は壊れない。",
+            "ko": "너가 나누는 온기는 다시 돌아온다. 너는 무적이다.",
+            "pl": "Ciepło, które rozdajesz, wraca do ciebie. Jesteś niezniszczalny.",
+            "pt-BR": "O calor que você dá volta para você. Você é inquebrável.",
+            "ru": "Тепло, которое ты отдашь, вернётся к тебе. Ты несокрушим.",
+            "uk": "Тепло, яке ти віддаєш, повертається до тебе. Ти незламний.",
+            "vi": "Hơi ấm ngươi trao đi sẽ trở lại với ngươi. Ngươi sẽ bất khả chiến bại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, snow falling, flames flickering, stars twinkling, static camera",
+      "motion_llm": "ambient only, characters still, fire dragon shadow glowing and pulsing, embers floating, static camera",
+      "wd14_tags": {
+        "1boy": 0.83,
+        "dragon": 0.797,
+        "sky": 0.718,
+        "male focus": 0.7,
+        "outdoors": 0.656,
+        "night": 0.644,
+        "pokemon (creature)": 0.628,
+        "snow": 0.617,
+        "fire": 0.589,
+        "mountain": 0.531,
+        "black hair": 0.512,
+        "flame-tipped tail": 0.506
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mountain",
+      "characters": [
+        {
+          "id": "kral_nacho"
+        }
+      ],
+      "visual_tags": [
+        "teary eyes",
+        "soft expression",
+        "hugging",
+        "red eyes wet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kral_nacho",
+          "text": "Tohle objetí… je krásné?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Diese Umarmung … ist sie schön?",
+            "en": "This hug… is it beautiful?",
+            "fr": "Cette étreinte… est-elle belle ?",
+            "it": "Questo abbraccio... è bello?",
+            "ja": "この抱擁…… 美しいのか？",
+            "ko": "이 포옹… 아름다운 것인가?",
+            "pl": "To przytulenie... jest piękne?",
+            "pt-BR": "Esse abraço... é bonito?",
+            "ru": "Это объятие… оно прекрасное?",
+            "uk": "Це обійми… вони прекрасні?",
+            "vi": "Cái ôm này… thật đẹp sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_village",
+      "characters": [
+        {
+          "id": "ondra"
+        },
+        {
+          "id": "mistr_bambus"
+        },
+        {
+          "id": "kral_nacho"
+        }
+      ],
+      "visual_tags": [
+        "campfire",
+        "evening",
+        "small demon",
+        "bear size",
+        "children drawing",
+        "smiling",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mistr_bambus",
+          "text": "Vidím, že drak se ukázal.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sehe, der Drache ist erschienen.",
+            "en": "I see the dragon has revealed itself.",
+            "fr": "Je vois que le dragon est apparu.",
+            "it": "Vedo che il drago si è mostrato.",
+            "ja": "龍が現れたな。",
+            "ko": "용이 모습을 드러냈구나.",
+            "pl": "Widzę, że smok się objawił.",
+            "pt-BR": "Vejo que o dragão se revelou.",
+            "ru": "Я вижу, дракон проявился.",
+            "uk": "Я бачу, що дракон з’явився.",
+            "vi": "Ta thấy rồng đã hiện ra."
+          }
+        },
+        {
+          "speaker_id": "ondra",
+          "text": "Já jsem ho jen pustil. Čekal, až přestanu bojovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe ihn nur losgelassen. Er wartete, bis ich aufhörte zu kämpfen.",
+            "en": "I just let go. I waited for him to stop fighting.",
+            "fr": "Je l'ai juste lâché. Il attendait que j'arrête de combattre.",
+            "it": "L'ho solo lasciato andare. Aspettava che smettessi di combattere.",
+            "ja": "私はただ放っただけ。戦うのをやめるのを待っていたんだ。",
+            "ko": "나는 그냥 놓아준 것뿐. 내가 싸움을 멈출 때까지 기다렸지.",
+            "pl": "Ja go tylko puściłem. Czekając, aż przestanie walczyć.",
+            "pt-BR": "Só soltei ele. Esperei ele parar de lutar.",
+            "ru": "Я просто отпустил его. Ждал, пока я перестану драться.",
+            "uk": "Я просто відпустив його. Чекав, поки він перестане боротися.",
+            "vi": "Ta chỉ buông tay. Nó chờ đến khi ta ngừng chiến đấu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

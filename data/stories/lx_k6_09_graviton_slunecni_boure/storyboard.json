@@ -1,0 +1,416 @@
+{
+  "title": "Graviton a sluneční bouře",
+  "title_i18n": {
+    "de": "Graviton und der Sonnensturm",
+    "en": "Graviton and the Solar Storm",
+    "fr": "Graviton et la tempête solaire",
+    "it": "Graviton e la tempesta solare",
+    "ja": "グラビトンと太陽嵐",
+    "ko": "그라비톤과 태양 폭풍",
+    "pl": "Graviton i burza słoneczna",
+    "pt-BR": "Graviton e a tempestade solar",
+    "ru": "Гравитон и солнечная буря",
+    "uk": "Гравітон і сонячна буря",
+    "vi": "Graviton và bão mặt trời"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_space",
+      "characters": [],
+      "visual_tags": [
+        "earth",
+        "moon",
+        "stars",
+        "solar flare",
+        "vast space",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mezi Zemí a Měsícem.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Zwischen Erde und Mond.",
+            "en": "Between Earth and the Moon.",
+            "fr": "Entre la Terre et la Lune.",
+            "it": "Tra la Terra e la Luna.",
+            "ja": "地球と月の間。",
+            "ko": "지구와 달 사이.",
+            "pl": "Między Ziemią a Księżycem.",
+            "pt-BR": "Entre a Terra e a Lua.",
+            "ru": "Между Землёй и Луной.",
+            "uk": "Між Землею та Місяцем.",
+            "vi": "Giữa Trái Đất và Mặt Trăng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "stars drifting slowly, earth rotating, static camera",
+      "wd14_tags": {
+        "no humans": 0.987,
+        "sky": 0.984,
+        "night": 0.966,
+        "star (sky)": 0.966,
+        "night sky": 0.949,
+        "moon": 0.946,
+        "starry sky": 0.909,
+        "blue theme": 0.747,
+        "scenery": 0.746,
+        "full moon": 0.64,
+        "outdoors": 0.616
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "surfing",
+        "standing on board",
+        "solar board",
+        "glowing board",
+        "pointing",
+        "determined",
+        "wind in hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Slunce hlásí krádež! Kdo kradl, ať se přihlásí! …Nikdo? Dobře, tak přijdu já.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Sonne meldet Diebstahl! Wer hat gestohlen, der möge sich melden! …Niemand? Gut, dann komme ich.",
+            "en": "The Sun reports a theft! Whoever stole it, come forward! …No one? Fine, I’ll handle it.",
+            "fr": "Le Soleil signale un vol ! Qui a volé, qu'il se manifeste ! …Personne ? D'accord, j'y vais.",
+            "it": "Il Sole segnala un furto! Chi ha rubato, si faccia avanti! …Nessuno? Bene, ci penso io.",
+            "ja": "太陽が盗難を報告！犯人は名乗り出ろ！……誰もいない？じゃあ、俺が行く。",
+            "ko": "태양에서 도난 신고! 누가 훔쳤는지 자수해라! …없나? 그럼 내가 가겠군.",
+            "pl": "Słońce zgłasza kradzież! Kto kradł, niech się ogłosi! …Nikt? No to ja idę.",
+            "pt-BR": "O Sol reporta um roubo! Quem roubou, que se apresente! …Ninguém? Tudo bem, eu vou.",
+            "ru": "Солнце сообщает о краже! Кто украл, пусть объявится! …Никто? Что ж, пойду я.",
+            "uk": "Сонце повідомляє про крадіжку! Хто вкрав, нехай заявиться! …Ніхто? Ну тоді я піду.",
+            "vi": "Mặt trời báo mất trộm! Ai lấy thì ra nhận! …Không ai ư? Được, vậy tôi sẽ đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "captain"
+        },
+        {
+          "id": "pirate"
+        }
+      ],
+      "visual_tags": [
+        "spaceship",
+        "floating",
+        "alien pirate",
+        "green skin",
+        "three eyes",
+        "laughing",
+        "open mouth",
+        "gesturing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "SOUTĚŽ, GRAVITONE! KLOPNI MOU LOĎ JEDNOU RUKOU – A SVĚTLO JE TVOJE!",
+          "kind": "shout",
+          "i18n": {
+            "de": "WETTBEWERB, GRAVITON! SCHLAG MIT EINER HAND AUF DEIN SCHIFF – UND DAS LICHT IST DEIN!",
+            "en": "COMPETITION, GRAVITON! HIT MY SHIP WITH ONE HAND – AND THE LIGHT IS YOURS!",
+            "fr": "COMPÉTITION, GRAVITON ! TOUCHE MON NAVIRE D'UNE SEULE MAIN – ET LA LUMIÈRE EST À TOI !",
+            "it": "GARA, GRAVITON! COLPISCI LA MIA NAVE CON UNA MANO – E LA LUCE È TUA!",
+            "ja": "競争だ、グラビトン！片手で船を叩け――光はお前のもの！",
+            "ko": "경쟁이야, 그라비톤! 배를 한 손으로 두드리면 – 빛이 네 것이 된다!",
+            "pl": "ZAWODY, GRAVITONIE! UDERZ SWOJĄ ŁODZIĄ JEDNĄ RĘKĄ – A ŚWIATŁO JEST TWOJE!",
+            "pt-BR": "COMPETIÇÃO, GRAVITON! BATA COM UMA MÃO NA PROA DO SEU NAVIO – E A LUZ É SUA!",
+            "ru": "СОРЕВНОВАНИЕ, ГРАВИТОН! УДАРИ МОЙ КОРАБЛЬ ОДНОЙ РУКОЙ — И СВЕТ СТАНЕТ ТВОИМ!",
+            "uk": "ЗМАГАННЯ, ГРАВІТОНЕ! УДАР СВОЇМ КОРАБЛЕМ ОДНІЄЮ РУКОЮ — І СВІТЛО СТАНЕ ТВОЇМ!",
+            "vi": "CUỘC THI, GRAVITON! ĐẬP TÀU BẰNG MỘT TAY – VÀ ÁNH SÁNG THUỘC VỀ BẠN!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "one hand up",
+        "floating rocks",
+        "gravity pull",
+        "motion lines",
+        "focused",
+        "glowing hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Jednou rukou. Druhou mám na srdci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit einer Hand. Die andere habe ich auf dem Herzen.",
+            "en": "One hand. The other’s on my heart.",
+            "fr": "D'une seule main. L'autre est sur mon cœur.",
+            "it": "Con una mano. L’altra l’ho sul cuore.",
+            "ja": "片手で。もう片方は胸に当てている。",
+            "ko": "한 손으로. 다른 한 손은 가슴에 얹었어.",
+            "pl": "Jedną ręką. Drugą trzymam na sercu.",
+            "pt-BR": "Com uma mão. A outra está no coração.",
+            "ru": "Одной рукой. Другую держу на сердце.",
+            "uk": "Однією рукою. Другу я тримаю на серці.",
+            "vi": "Một tay. Tay kia đang giữ trái tim."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "captain"
+        },
+        {
+          "id": "pirate"
+        }
+      ],
+      "visual_tags": [
+        "spaceship tangled",
+        "rocks surrounding",
+        "confused",
+        "surprised",
+        "open mouth",
+        "shock",
+        "energy swirl"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pirate",
+          "text": "To nedává fyzikální smysl!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Das ergibt physikalisch keinen Sinn!",
+            "en": "That makes no physical sense!",
+            "fr": "Ça n'a aucun sens physique !",
+            "it": "Questo non ha senso fisico!",
+            "ja": "物理的に意味が通じない！",
+            "ko": "물리적으로 말이 안 돼!",
+            "pl": "To nie ma sensu fizycznego!",
+            "pt-BR": "Isso não faz sentido físico!",
+            "ru": "Это не имеет физического смысла!",
+            "uk": "Це не має фізичного сенсу!",
+            "vi": "Điều đó vô lý về mặt vật lý!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_asteroid",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "confident",
+        "hands on chest",
+        "heart symbol",
+        "glowing eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Já jsem fyzikální smysl.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich bin der physikalische Sinn.",
+            "en": "I am physical sense.",
+            "fr": "Je suis le sens physique.",
+            "it": "Io sono il senso fisico.",
+            "ja": "俺こそが物理的意味だ。",
+            "ko": "내가 물리적 상식이야.",
+            "pl": "Ja jestem sensem fizycznym.",
+            "pt-BR": "Eu sou o sentido físico.",
+            "ru": "Я и есть физический смысл.",
+            "uk": "Я і є фізичний сенс.",
+            "vi": "Tôi chính là lý lẽ vật lý."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_neptune",
+      "characters": [
+        {
+          "id": "captain"
+        },
+        {
+          "id": "pirate"
+        }
+      ],
+      "visual_tags": [
+        "blue planet background",
+        "lighthouse beams",
+        "standing",
+        "sighing",
+        "tired",
+        "light beams"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "captain",
+          "text": "Prohráli jsme. Ale řekni – proč ses nesmál, když jsi vyhrával?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir haben verloren. Aber sag mal – warum hast du nicht gelacht, als du gewonnen hast?",
+            "en": "We lost. But tell me—why didn’t you laugh when you were winning?",
+            "fr": "On a perdu. Mais dis-moi – pourquoi tu n'as pas ri quand tu gagnais ?",
+            "it": "Abbiamo perso. Ma dimmi: perché non ridevi quando vincevi?",
+            "ja": "負けたわ。でも教えて――勝ってるとき、なぜ笑わなかったの？",
+            "ko": "우린 졌어. 그런데 말해, 이겼을 때 왜 웃지 않았어?",
+            "pl": "Przegraliśmy. Ale powiedz – dlaczego nie śmiałeś, gdy wygrywałeś?",
+            "pt-BR": "Perdemos. Mas me diga – por que você não riu quando estava ganhando?",
+            "ru": "Мы проиграли. Но скажи — почему ты не смеялся, когда выигрывал?",
+            "uk": "Ми програли. Але скажи — чому ти не сміявся, коли перемагав?",
+            "vi": "Chúng ta đã thua. Nhưng nói đi – sao bạn không cười khi thắng?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_neptune",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "calm",
+        "looking away",
+        "thoughtful",
+        "soft light",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adam",
+          "text": "Protože jsem ještě nevrátil světlo. Vítězství je jen průběh. Důvod se slaví na konci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich das Licht noch nicht zurückgegeben habe. Der Sieg ist nur der Verlauf. Der Grund wird am Ende gefeiert.",
+            "en": "Because I hadn’t returned the light yet. Victory is just the process. The reason is celebrated at the end.",
+            "fr": "Parce que je n'avais pas encore rendu la lumière. La victoire n'est qu'une étape. La raison se célèbre à la fin.",
+            "it": "Perché non avevo ancora restituito la luce. La vittoria è solo un passaggio. La festa si fa alla fine.",
+            "ja": "光をまだ返していないから。勝利は過程に過ぎない。祝うのは最後だよ。",
+            "ko": "빛을 아직 돌려주지 않았으니까. 승리는 과정일 뿐. 이유는 끝에서 축하하는 거야.",
+            "pl": "Bo jeszcze nie oddałem światła. Zwycięstwo to tylko etap. Powód świętuje się na końcu.",
+            "pt-BR": "Porque ainda não devolvi a luz. A vitória é só o processo. A razão se celebra no fim.",
+            "ru": "Потому что я ещё не вернул свет. Победа — это лишь процесс. Празднуют в конце.",
+            "uk": "Бо я ще не повернув світло. Перемога — це лише процес. Свято влаштовують у кінці.",
+            "vi": "Vì tôi chưa trả lại ánh sáng. Chiến thắng chỉ là quá trình. Lý do để ăn mừng nằm ở cuối."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "adam"
+        }
+      ],
+      "visual_tags": [
+        "earth sunset",
+        "orange sky",
+        "beautiful clouds",
+        "surfing away",
+        "comet",
+        "distance",
+        "heroic pose"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Země má nejdelší a nejkrásnější soumrak století.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Erde hat den längsten und schönsten Dämmerung des Jahrhunderts.",
+            "en": "Earth has the longest and most beautiful twilight of the century.",
+            "fr": "La Terre offre le plus long et le plus beau crépuscule du siècle.",
+            "it": "La Terra ha il crepuscolo più lungo e bello del secolo.",
+            "ja": "地球には、世紀で最も長く、美しい夕暮れがある。",
+            "ko": "지구는 세기 가장 길고 아름다운 황혼을 가지고 있다.",
+            "pl": "Ziemia ma najdłuższy i najpiękniejszy zmierzch stulecia.",
+            "pt-BR": "A Terra tem o crepúsculo mais longo e bonito do século.",
+            "ru": "У Земли самый долгий и красивый сумерек столетия.",
+            "uk": "Земля має найдовший і найкрасивіший присмерк століття.",
+            "vi": "Trái Đất có hoàng hôn dài và đẹp nhất thế kỷ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "earth sunset colors shifting, stars twinkling, clouds drifting slowly, static camera",
+      "motion_llm": "earth sunset colors shifting, comet tail glowing, static camera",
+      "wd14_tags": {
+        "spacesuit": 0.917,
+        "space helmet": 0.901,
+        "blue eyes": 0.87,
+        "solo": 0.867,
+        "1boy": 0.859,
+        "helmet": 0.816,
+        "black hair": 0.815,
+        "male focus": 0.801,
+        "sky": 0.784,
+        "star (sky)": 0.773,
+        "astronaut": 0.711,
+        "planet": 0.687
+      }
+    }
+  ]
+}

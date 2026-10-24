@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k2_06_max_hvezda_z_meteoru",
+  "title": "Max a hvězda z meteoru",
+  "synopsis": "Max najde záhadnou hvězdu, která přiláká mimozemského bojovníka Krakena, a musí se rozhodnout, zda ji ochrání, nebo jí pomůže.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: na obloze se objeví další hvězda."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_roof",
+      "l_street"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Max",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 10 with messy black hair and determined eyes",
+      "base": "male child, black hair, messy hair, brown eyes, fair skin",
+      "outfits": {
+        "default": "blue t-shirt, jeans, sneakers"
+      },
+      "photo": "a brave Czech boy aged 10 with messy black hair and determined eyes",
+      "tag_prompt": "male child, black hair, messy hair, brown eyes, fair skin, blue t-shirt, jeans, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "bolt",
+      "name": "Bolt",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small alien dog with blue fur and large ears",
+      "base": "dog, small dog, blue fur, big ears, fluffy tail, glowing eyes",
+      "outfits": {
+        "default": "glowing blue stripes"
+      },
+      "photo": "a small alien dog with blue fur and large ears",
+      "tag_prompt": "dog, small dog, blue fur, big ears, fluffy tail, glowing eyes, glowing blue stripes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kraken",
+      "name": "Kraken",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall green alien warrior with four arms and metallic armor",
+      "base": "alien, tall, muscular, green skin, four arms, sharp teeth, armor",
+      "outfits": {
+        "default": "metallic armor, glowing red visor"
+      },
+      "photo": "a tall green alien warrior with four arms and metallic armor",
+      "tag_prompt": "alien, tall, muscular, green skin, four arms, sharp teeth, armor, metallic armor, glowing red visor",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_roof",
+      "name": "Střecha",
+      "description": "Střecha",
+      "tag_prompt": "outdoors, rooftop, night, stars, moon, city silhouette, clear sky",
+      "mood": ""
+    },
+    {
+      "id": "l_street",
+      "name": "Ulice",
+      "description": "Ulice",
+      "tag_prompt": "outdoors, street, night, streetlights, shadows, dramatic lighting",
+      "mood": ""
+    }
+  ]
+}

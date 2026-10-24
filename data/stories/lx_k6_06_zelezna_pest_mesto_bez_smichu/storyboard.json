@@ -1,0 +1,383 @@
+{
+  "title": "Max a město bez smíchu",
+  "title_i18n": {
+    "de": "Max und die Stadt ohne Lachen",
+    "en": "Max and the City Without Laughter",
+    "fr": "Max et la ville sans rire",
+    "it": "Max e la città senza risate",
+    "ja": "マックスと笑わない街",
+    "ko": "맥스와 웃음을 잃은 도시",
+    "pl": "Max i miasto bez śmiechu",
+    "pt-BR": "Max e a cidade sem risadas",
+    "ru": "Макс и город без смеха",
+    "uk": "Макс і місто без сміху",
+    "vi": "Max và thành phố không tiếng cười"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_mekanopolis",
+      "characters": [],
+      "visual_tags": [
+        "futuristic city",
+        "metal buildings",
+        "robots walking",
+        "gray sky",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Mekanopolis, město, které zapomnělo smát se.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Mekanopolis, die Stadt, die das Lachen vergessen hat.",
+            "en": "Mekanopolis, the city that forgot how to laugh.",
+            "fr": "Mekanopolis, la ville qui a oublié de rire.",
+            "it": "Mekanopolis, la città che ha dimenticato di ridere.",
+            "ja": "メカノポリス。笑うことを忘れた街。",
+            "ko": "웃는 것을 잊어버린 도시, 메카노폴리스.",
+            "pl": "Mekanopolis, miasto, które zapomniało się śmiać.",
+            "pt-BR": "Mekanopolis, a cidade que esqueceu de rir.",
+            "ru": "Меканопольс — город, забывший смеяться.",
+            "uk": "Меканополіс — місто, що забуло сміятися.",
+            "vi": "Mekanopolis, thành phố đã quên mất tiếng cười."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, city lights blinking, static camera",
+      "motion_llm": "robots walking in perfect lines, neon lights flickering, static camera",
+      "wd14_tags": {
+        "scenery": 0.926,
+        "no humans": 0.926,
+        "cityscape": 0.865,
+        "building": 0.837,
+        "city": 0.784,
+        "outdoors": 0.717,
+        "sky": 0.527,
+        "road": 0.435
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mekanopolis",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "mecha"
+        }
+      ],
+      "visual_tags": [
+        "mecha standing",
+        "pilot inside",
+        "pointing",
+        "determined",
+        "looking at screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Test smíchu: ťuk, ťuk! Kdo tam? …Nikdo, protože je vše efektivní!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Lachtest: Klopf, klopf! Wer ist da? …Niemand, denn alles ist effizient!",
+            "en": "Laughter test: knock, knock! Who's there? …No one, because everything is efficient!",
+            "fr": "Test de rire : toc, toc ! Qui est là ? …Personne, tout est efficace !",
+            "it": "Test della risata: toc, toc! Chi c'è? …Nessuno, perché qui tutto è efficiente!",
+            "ja": "笑いテスト：トントン、トントン！ 誰だ？ …誰もいない、すべてが効率化されているからな！",
+            "ko": "웃음 테스트: 툭, 툭! 누구야? …없어, 다 효율적이니까!",
+            "pl": "Test śmiechu: stuk, stuk! Kto tam? …Nikt, bo wszystko jest efektywne!",
+            "pt-BR": "Teste de risada: toco, toco! Quem vai? …Ninguém, porque tudo é eficiente!",
+            "ru": "Проверка на смех: тук-тук! Кто там? …Никто, ведь всё должно быть эффективно!",
+            "uk": "Тест на сміх: тук-тук! Хто там? …Нікого, бо все має бути ефективно!",
+            "vi": "Kiểm tra tiếng cười: gõ, gõ! Ai đó không? …Không ai, vì mọi thứ đều hiệu quả!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mekanopolis",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "mecha"
+        }
+      ],
+      "visual_tags": [
+        "mecha tripping",
+        "falling",
+        "sparks",
+        "surprised",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Zapomenuté publikum. Beru město.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vergessenes Publikum. Ich nehme die Stadt.",
+            "en": "Forgotten audience. I'm taking over the city.",
+            "fr": "Public oublié. Je prends la ville.",
+            "it": "Un pubblico dimenticato. Mi prendo la città.",
+            "ja": "忘れられた観客。街を頂戴。",
+            "ko": "잊혀진 관객. 도시를 접수한다.",
+            "pl": "Zapomniana publiczność. Zabieram miasto.",
+            "pt-BR": "Público esquecido. Eu assumo a cidade.",
+            "ru": "Забытая аудитория. Город мой.",
+            "uk": "Забутий глядач. Захоплюю місто.",
+            "vi": "Khán giả bị lãng quên. Ta sẽ chinh phục thành phố này."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mekanopolis",
+      "characters": [
+        {
+          "id": "max"
+        },
+        {
+          "id": "mecha"
+        }
+      ],
+      "visual_tags": [
+        "mecha doing wheel",
+        "spinning",
+        "holding ice cream",
+        "ice cream upside down",
+        "robots looking",
+        "angry robots"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "max",
+          "text": "Fér. Ale varuju tě – mám pěsti a tátovy vtipy z roku 2009.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fair. Aber ich warne dich – ich habe Fäuste und Papas Witze von 2009.",
+            "en": "Fair enough. But fair warning—I’ve got fists and Dad’s 2009 jokes.",
+            "fr": "Équitable. Mais attention, j'ai des poings et les blagues de mon père de 2009.",
+            "it": "Giusto. Ma ti avverto: ho i pugni e le battute di papà del 2009.",
+            "ja": "公平だ。だが警告する――俺は拳と、父さんの2009年のジョークを持っているぞ。",
+            "ko": "공정하군. 하지만 경고한다 – 내 주먹과 아빠의 2009년 농담이 있으니까.",
+            "pl": "Fair. Ale ostrzegam – mam pięści i żarty taty z 2009 roku.",
+            "pt-BR": "Justo. Mas aviso: tenho punhos e as piadas do papai de 2009.",
+            "ru": "Честно. Но предупреждаю: у меня кулаки и папины шутки 2009 года.",
+            "uk": "Чесно. Але попереджаю — у мене кулаки та татові жарти 2009 року.",
+            "vi": "Công bằng. Nhưng cảnh báo nhé – ta có đấm tay và những trò đùa của bố từ năm 2009."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "VRRR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, city lights blinking, static camera",
+      "motion_llm": "ambient only, characters still, sparks flying, city lights blinking, static camera",
+      "wd14_tags": {
+        "mecha": 0.894,
+        "robot": 0.867,
+        "science fiction": 0.859,
+        "1girl": 0.852,
+        "blue eyes": 0.779,
+        "black hair": 0.728,
+        "city": 0.582,
+        "building": 0.538,
+        "gun": 0.437,
+        "weapon": 0.397,
+        "size difference": 0.38,
+        "outdoors": 0.358
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mekanopolis",
+      "characters": [
+        {
+          "id": "mecha"
+        }
+      ],
+      "visual_tags": [
+        "robot coughing",
+        "sparks",
+        "glitching",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mecha",
+          "text": "KHK-KHK!",
+          "kind": "shout",
+          "i18n": {
+            "de": "KHK-KHK!",
+            "en": "KHK-KHK!",
+            "fr": "KHK-KHK !",
+            "it": "KHK-KHK!",
+            "ja": "カハハハ！",
+            "ko": "크헉-크헉!",
+            "pl": "KHK-KHK!",
+            "pt-BR": "KHK-KHK!",
+            "ru": "ХХ-ХХ!",
+            "uk": "ХХ-ХХ!",
+            "vi": "KHK-KHK!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KHK-KHK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mekanopolis",
+      "characters": [
+        {
+          "id": "mecha"
+        }
+      ],
+      "visual_tags": [
+        "robots laughing",
+        "falling over",
+        "sparks",
+        "joy",
+        "motion lines",
+        "chaos"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mecha",
+          "text": "HA HA HA!",
+          "kind": "shout",
+          "i18n": {
+            "de": "HA HA HA!",
+            "en": "HA HA HA!",
+            "fr": "HA HA HA !",
+            "it": "HA HA HA!",
+            "ja": "ハハハ！",
+            "ko": "하하하!",
+            "pl": "HA HA HA!",
+            "pt-BR": "HA HA HA!",
+            "ru": "ГА ГА ГА!",
+            "uk": "ГА ГА ГА!",
+            "vi": "HA HA HA!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HA HA HA!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_centrala",
+      "characters": [
+        {
+          "id": "logikon"
+        }
+      ],
+      "visual_tags": [
+        "screen shaking",
+        "sparks",
+        "red lights",
+        "glitching",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "logikon",
+          "text": "CO… CO SE DĚJE S MÝMI OBVODY?",
+          "kind": "speech",
+          "i18n": {
+            "de": "WAS… WAS PASSIERT MIT MEINEN SCHALTUNGEN?",
+            "en": "WHAT… WHAT’S HAPPENING TO MY CIRCUITS?",
+            "fr": "QU'... QU'ARRIVE À MES CIRCUITS ?",
+            "it": "COS'… COSA SUCCEDE AI MIEI CIRCUITI?",
+            "ja": "何……何が起こっているんだ、俺の回路は！",
+            "ko": "내 회로가… 어떻게 된 거야?",
+            "pl": "CO… CO SIĘ DZIEJE Z MOIMI OBWODAMI?",
+            "pt-BR": "O QUE... O QUE ESTÁ ACONTECENDO COM MEUS CIRCUITOS?",
+            "ru": "ЧТО… ЧТО ПРОИСХОДИТ С МОИМИ ЦЕПЯМИ?",
+            "uk": "ЩО… ЩО СТАЄТЬСЯ З МОЇМИ КОНТУРАМИ?",
+            "vi": "Cái… cái gì đang xảy ra với các mạch của ta?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "ZZZT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_centrala",
+      "characters": [
+        {
+          "id": "logikon"
+        }
+      ],
+      "visual_tags": [
+        "screen smiling",
+        "glowing blue",
+        "happy",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "logikon",
+          "text": "Dohoda splněna. Ale zůstaň… jako poradce pro neefektivní programy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Abkommen erfüllt. Aber bleib… als Berater für ineffiziente Programme.",
+            "en": "Deal done. But stay… as a consultant for inefficient programs.",
+            "fr": "Marché conclu. Mais reste... comme conseiller pour les programmes inefficaces.",
+            "it": "Accordo rispettato. Ma resta… come consulente per programmi inefficienti.",
+            "ja": "契約は完了。だが残れ……非効率なプログラムのアドバイザーとして。",
+            "ko": "계약 이행. 하지만 남아서… 비효율적 프로그램의 고문으로 있어라.",
+            "pl": "Umowa spełniona. Ale zostań… jako doradca do nieefektywnych programów.",
+            "pt-BR": "Acordo cumprido. Mas fique... como consultor para programas ineficientes.",
+            "ru": "Сделка заключена. Но останься… как консультант по неэффективным программам.",
+            "uk": "Угода виконана. Але залишся… як радник з неефективних програм.",
+            "vi": "Hợp đồng hoàn thành. Nhưng hãy ở lại… như một cố vấn cho các chương trình kém hiệu quả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

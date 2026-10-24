@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_09_leo_zapisnik_osudu",
+  "title": "Leo a Zápisník Osudu",
+  "synopsis": "Geniální chlapec Leo používá zápisník osudu k poražení Krále kostlivých duchů v temné dimenzi.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: Leo zachránil svět, ale tajemství zápisníku ho navždy změnilo."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_shadow",
+      "l_ruins"
+    ]
+  },
+  "characters": [
+    {
+      "id": "leo",
+      "name": "Leo",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serious Czech boy aged 12 with short black hair, glasses and a pale complexion",
+      "base": "male child, black hair, short hair, black eyes, glasses, pale skin, serious face",
+      "outfits": {
+        "default": "black hooded coat, black shirt, dark pants, boots"
+      },
+      "photo": "a serious Czech boy aged 12 with short black hair, glasses and a pale complexion",
+      "tag_prompt": "male child, black hair, short hair, black eyes, glasses, pale skin, serious face, black hooded coat, black shirt, dark pants, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "king",
+      "name": "Král Kostlivých Duchů",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a towering skeletal ghost with glowing blue eyes and tattered dark robes",
+      "base": "ghost, skeleton, large size, floating, glowing blue eyes, tattered robes",
+      "outfits": {
+        "default": "glowing blue runes, spectral crown"
+      },
+      "photo": "a towering skeletal ghost with glowing blue eyes and tattered dark robes",
+      "tag_prompt": "ghost, skeleton, large size, floating, glowing blue eyes, tattered robes, glowing blue runes, spectral crown",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_shadow",
+      "name": "Dimenze Stínů",
+      "description": "Dimenze Stínů",
+      "tag_prompt": "outdoors, dark dimension, floating ruins, black clouds, storm, lightning, purple sky, night",
+      "mood": ""
+    },
+    {
+      "id": "l_ruins",
+      "name": "Zřícenina",
+      "description": "Zřícenina",
+      "tag_prompt": "outdoors, ancient ruins, stone pillars, dark ground, fog, moonlight",
+      "mood": ""
+    }
+  ]
+}

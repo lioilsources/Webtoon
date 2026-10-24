@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k6_01_plaminka_zmrazeny_ohen",
+  "title": "Plamínka a planeta zmrazeného ohně",
+  "synopsis": "Kouzelná víla Nela letí na zamrzlou planetu, aby rozehřála srdce Čarodějnice Bílé Pěny a zachránila oheň.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: planeta je teplá, Čarodějnice je nová hlídačka pramenů a Nela letí domů se zmrzlinou."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_magma",
+      "l_ohnenka",
+      "l_volcano"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nela",
+      "name": "Nela",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 11 with long orange hair and small glowing wings",
+      "base": "female child, orange hair, long hair, orange eyes, fair skin, small wings",
+      "outfits": {
+        "default": "fireproof leotard, flame pattern, wing harness, boots"
+      },
+      "photo": "a brave Czech girl aged 11 with long orange hair and small glowing wings",
+      "tag_prompt": "female child, orange hair, long hair, orange eyes, fair skin, small wings, fireproof leotard, flame pattern, wing harness, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "zhana",
+      "name": "Žháňa",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small red lizard with big eyes and a friendly expression",
+      "base": "lizard, small lizard, red scales, big eyes, tail",
+      "outfits": {
+        "default": "tiny scarf"
+      },
+      "photo": "a small red lizard with big eyes and a friendly expression",
+      "tag_prompt": "lizard, small lizard, red scales, big eyes, tail, tiny scarf",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pena",
+      "name": "Čarodějnice Bílá Pěna",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent spirit with white hair and an ice staff",
+      "base": "ghost, white hair, blue eyes, transparent, floating",
+      "outfits": {
+        "default": "ice crystal crown, frosty robe, ice staff"
+      },
+      "photo": "a translucent spirit with white hair and an ice staff",
+      "tag_prompt": "ghost, white hair, blue eyes, transparent, floating, ice crystal crown, frosty robe, ice staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_magma",
+      "name": "Magma Prime",
+      "description": "Magma Prime",
+      "tag_prompt": "outdoors, planet surface, lava rivers, volcanic rocks, red sky, space background, night",
+      "mood": ""
+    },
+    {
+      "id": "l_ohnenka",
+      "name": "Ohněnka",
+      "description": "Ohněnka",
+      "tag_prompt": "outdoors, frozen planet, ice plains, frozen volcanoes, snow, blue light, cold atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_volcano",
+      "name": "Srdce sopky",
+      "description": "Srdce sopky",
+      "tag_prompt": "outdoors, inside volcano, ice cave, glowing magma cracks, steam, blue and orange light",
+      "mood": ""
+    }
+  ]
+}

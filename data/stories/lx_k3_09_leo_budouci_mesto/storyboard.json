@@ -1,0 +1,307 @@
+{
+  "title": "Leo a mech-drak",
+  "title_i18n": {
+    "de": "Leo und der Mech-Drache",
+    "en": "Leo and the Mech-Dragon",
+    "fr": "Leo et le dragon-méca",
+    "it": "Leo e il drago meccanico",
+    "ja": "レオとメカドラゴン",
+    "ko": "레오와 기계 드래곤",
+    "pl": "Leo i mech-smok",
+    "pt-BR": "Leo, o dragão-mecânico",
+    "ru": "Лео и мех-дракон",
+    "uk": "Лео та мех-дракон",
+    "vi": "Leo và rồng cơ khí"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_city",
+      "characters": [],
+      "visual_tags": [
+        "futuristic city",
+        "neon lights",
+        "night",
+        "rain",
+        "skyscrapers",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Neonové mrakodrapy v noci.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Neonwolkenkratzer bei Nacht.",
+            "en": "Neon skyscrapers at night.",
+            "fr": "Les gratte-ciel néon la nuit.",
+            "it": "Grattacieli al neon di notte.",
+            "ja": "夜のネオン街。",
+            "ko": "밤의 네온 사인 skyscraper.",
+            "pl": "Neonowe wieżowce w nocy.",
+            "pt-BR": "Arranha-céus neon à noite.",
+            "ru": "Неоновые небоскрёбы ночью.",
+            "uk": "Неонові хмарочоси вночі.",
+            "vi": "Những tòa nhà chọc trời neon về đêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, rain falling, city lights blinking, static camera",
+      "motion_llm": "rain falling, neon lights flickering, static camera",
+      "wd14_tags": {
+        "scenery": 0.949,
+        "no humans": 0.941,
+        "city": 0.796,
+        "neon lights": 0.788,
+        "outdoors": 0.774,
+        "building": 0.767,
+        "night": 0.726,
+        "cityscape": 0.712,
+        "road": 0.7,
+        "rain": 0.697,
+        "sky": 0.642,
+        "sign": 0.622
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_building",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "web"
+        }
+      ],
+      "visual_tags": [
+        "climbing wall",
+        "holding spider",
+        "looking down",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Webe, drak útočí na město!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Webe, ein Drache greift die Stadt an!",
+            "en": "Webe, the dragon's attacking the city!",
+            "fr": "Webe, un dragon attaque la ville !",
+            "it": "Webe, un drago sta attaccando la città!",
+            "ja": "ウェーブ、ドラゴンが街を襲ってる！",
+            "ko": "웨브, 드래곤이 도시를 공격해!",
+            "pl": "Webe, smok atakuje miasto!",
+            "pt-BR": "Webe, um dragão está atacando a cidade!",
+            "ru": "Веб, дракон атакует город!",
+            "uk": "Вебе, дракон атакує місто!",
+            "vi": "Webe, rồng đang tấn công thành phố!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_building",
+      "characters": [
+        {
+          "id": "web"
+        }
+      ],
+      "visual_tags": [
+        "spider",
+        "piping",
+        "open mouth",
+        "looking at leo"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PIP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "mech_drak"
+        }
+      ],
+      "visual_tags": [
+        "robot dragon",
+        "flying",
+        "breathing fire",
+        "glowing eyes",
+        "large",
+        "from below"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HRRR!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the dragon flaps its wings and breathes fire, rain falling, flames flickering, soft glow pulsing, static camera",
+      "motion_llm": "the dragon flaps its wings and breathes fire, smoke rising, static camera",
+      "wd14_tags": {
+        "dragon": 0.911,
+        "rain": 0.877,
+        "city": 0.747,
+        "duel monster": 0.739,
+        "no humans": 0.721,
+        "wings": 0.706,
+        "flying": 0.705,
+        "fire": 0.656,
+        "glowing": 0.545,
+        "tail": 0.508,
+        "sky": 0.501,
+        "breathing fire": 0.493
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_building",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "jumping",
+        "energy sword",
+        "glowing sword",
+        "dynamic pose",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Pavoučí skok!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Spinnensprung!",
+            "en": "Spider leap!",
+            "fr": "Saut d'araignée !",
+            "it": "Salto da ragno!",
+            "ja": "スパイダージャンプ！",
+            "ko": "거미 점프!",
+            "pl": "Pajączy skok!",
+            "pt-BR": "Salto de aranha!",
+            "ru": "Паучий прыжок!",
+            "uk": "Павучий стрибок!",
+            "vi": "Nhảy nhện!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SZÁŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "mech_drak"
+        }
+      ],
+      "visual_tags": [
+        "cutting wing",
+        "sparks",
+        "metal debris",
+        "sword clash",
+        "action"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "mech_drak"
+        }
+      ],
+      "visual_tags": [
+        "robot kneeling",
+        "power off",
+        "glowing eyes dimming",
+        "smoke",
+        "defeated"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BZZZT...",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "hand on robot",
+        "smile",
+        "kind smile",
+        "looking at robot"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Můžeme spolupracovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir können zusammenarbeiten.",
+            "en": "We can work together.",
+            "fr": "On peut coopérer.",
+            "it": "Possiamo collaborare.",
+            "ja": "一緒にやろう。",
+            "ko": "우린 협력할 수 있어.",
+            "pl": "Możemy współpracować.",
+            "pt-BR": "Podemos trabalhar juntos.",
+            "ru": "Мы можем сотрудничать.",
+            "uk": "Ми можемо співпрацювати.",
+            "vi": "Chúng ta có thể hợp tác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

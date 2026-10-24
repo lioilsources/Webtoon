@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_03_viktorie_stribrny_mec",
+  "title": "Viktorie a stín stříbrného meče",
+  "synopsis": "Tichá bojovnice Viktorie proniká do podzemního dungeonu a odhání stínové démony svým obřím mečem.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: Viktorie pokračuje hlouběji do dungeonu za svým hlavním cílem."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dungeon_entrance",
+      "l_dungeon_hall"
+    ]
+  },
+  "characters": [
+    {
+      "id": "viktorie",
+      "name": "Viktorie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a serious Czech girl aged 12 with short silver hair and icy blue eyes",
+      "base": "female child, short hair, silver hair, blue eyes, pale skin, serious face",
+      "outfits": {
+        "default": "dark leather armor, black cape, heavy boots, fingerless gloves"
+      },
+      "photo": "a serious Czech girl aged 12 with short silver hair and icy blue eyes",
+      "tag_prompt": "female child, short hair, silver hair, blue eyes, pale skin, serious face, dark leather armor, black cape, heavy boots, fingerless gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demon",
+      "name": "Démon Mogor",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a shadowy monster made of black smoke with glowing red eyes and sharp claws",
+      "base": "shadow monster, black smoke, glowing red eyes, sharp claws, fangs, jagged teeth",
+      "outfits": {
+        "default": "black smoke, glowing red eyes"
+      },
+      "photo": "a shadowy monster made of black smoke with glowing red eyes and sharp claws",
+      "tag_prompt": "shadow monster, black smoke, glowing red eyes, sharp claws, fangs, jagged teeth, black smoke, glowing red eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dungeon_entrance",
+      "name": "Vstup do dungeonu",
+      "description": "Vstup do dungeonu",
+      "tag_prompt": "indoors, dungeon, stone walls, moss, dark, wet, torchlight, narrow corridor",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon_hall",
+      "name": "Středová hala",
+      "description": "Středová hala",
+      "tag_prompt": "indoors, dungeon, large hall, stone pillars, dark, sparks flying, dust particles",
+      "mood": ""
+    }
+  ]
+}

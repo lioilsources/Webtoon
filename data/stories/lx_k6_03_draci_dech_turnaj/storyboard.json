@@ -1,0 +1,463 @@
+{
+  "title": "Amálka a drakův turnaj",
+  "title_i18n": {
+    "de": "Amálka und das Drachenturnier",
+    "en": "Amálka and the Dragon's Tournament",
+    "fr": "Amálka et le tournoi des dragons",
+    "it": "Amálka e il torneo dei draghi",
+    "ja": "アマールカとドラゴンのトーナメント",
+    "ko": "아말카와 용의 토너먼트",
+    "pl": "Amálka i turniej smoków",
+    "pt-BR": "Amálka e o Torneio do Dragão",
+    "ru": "Амалка и турнир драконов",
+    "uk": "Амалка і турнір драконів",
+    "vi": "Amálka và giải đấu rồng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_arena",
+      "characters": [],
+      "visual_tags": [
+        "stadium",
+        "planet",
+        "space",
+        "neon lights",
+        "crowd",
+        "wide angle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Soutěžní stadion obíhá kolem planety Aréna.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Das Wettkampfstadion umkreist den Planeten Arena.",
+            "en": "The competition stadium orbits the planet Arena.",
+            "fr": "Le stade de compétition orbite autour de la planète Aréna.",
+            "it": "Lo stadio delle competizioni orbita attorno al pianeta Arena.",
+            "ja": "競技場は惑星『アリーナ』を周回している。",
+            "ko": "경기장은 아레나 행성 주위를 돌고 있다.",
+            "pl": "Stadion rywalizacji krąży wokół planety Arena.",
+            "pt-BR": "O estádio de competições orbita o planeta Arena.",
+            "ru": "Стадион для соревнований вращается вокруг планеты Арена.",
+            "uk": "Стадіон змагань обертається навколо планети Арена.",
+            "vi": "Sân vận động thi đấu quay quanh hành tinh Arena."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, city lights blinking, static camera",
+      "motion_llm": "stars drifting in the background, neon lights flickering, static camera",
+      "wd14_tags": {
+        "scenery": 0.926,
+        "cityscape": 0.696,
+        "blue theme": 0.689,
+        "building": 0.68,
+        "outdoors": 0.624,
+        "city": 0.607,
+        "no humans": 0.461
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_arena",
+      "characters": [
+        {
+          "id": "amalka"
+        },
+        {
+          "id": "mnam"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "determined",
+        "looking at stadium",
+        "happy",
+        "holding hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amalka",
+          "text": "Jdu si pro hvězdičku spravedlivého boje!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hol mir den Stern des fairen Kampfs!",
+            "en": "I'm going for the star of fair play!",
+            "fr": "Je vais chercher l'étoile de la loyauté !",
+            "it": "Vado a prendere la stella della lotta leale!",
+            "ja": "フェアプレイの星をもらいにいくわ！",
+            "ko": "공정함의 별따러 갈 거야!",
+            "pl": "Idę po gwiazdkę za uczciwą walkę!",
+            "pt-BR": "Vou buscar a estrela da luta justa!",
+            "ru": "Я за звездой честной борьбы!",
+            "uk": "Йду за зіркою чесної боротьби!",
+            "vi": "Tôi đi lấy ngôi sao của công bằng!"
+          }
+        },
+        {
+          "speaker_id": "mnam",
+          "text": "A já pro bufet!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und ich hol mir was zu essen!",
+            "en": "And I'm going for the snack bar!",
+            "fr": "Et moi, je vais au buffet !",
+            "it": "E io vado allo snack bar!",
+            "ja": "私はおやつをもらいに！",
+            "ko": "나는 뷔페로!",
+            "pl": "A ja po bufet!",
+            "pt-BR": "E eu vou pelo lanchonete!",
+            "ru": "А я за буфет!",
+            "uk": "А я — за буфет!",
+            "vi": "Còn tôi đi lấy quầy đồ ăn!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "robot standing",
+        "giant fists",
+        "glowing eyes",
+        "intimidating",
+        "from below"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pestiplan",
+          "text": "SOUTĚŽ! POSLEDNÍ NA NOHÁCH VYHRÁVÁ!",
+          "kind": "shout",
+          "i18n": {
+            "de": "WETTKAMPF! DER LETZTE STEHENDE GEWINNT!",
+            "en": "TOURNAMENT! LAST ONE STANDING WINS!",
+            "fr": "COMPÉTITION ! CELUI QUI RESTE DEBOUT GAGNE !",
+            "it": "TORNEO! VINCE CHI RESTA IN PIEDI!",
+            "ja": "トーナメント！ 最後まで立っている者が勝ち！",
+            "ko": "토너먼트! 마지막까지 서 있는 자가 승리!",
+            "pl": "ZAWODY! TEN, CO OSTATNI STOJI, WYGRYWA!",
+            "pt-BR": "COMPETIÇÃO! O ÚLTIMO EM PÉ VENCE!",
+            "ru": "ТУРНИР! ПОБЕЖДАЕТ ТОТ, КТО ОСТАЛСЯ НА НОГАХ!",
+            "uk": "ЗМАГАННЯ! ХТО ОСТАННІЙ НА НОГАХ — ТОЙ ВИГРАЄ!",
+            "vi": "THI ĐẤU! NGƯỜI CUỐI CÙNG ĐỨNG YÊN LÀ NGƯỜI THẮNG!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "amalka"
+        },
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "fighting stance",
+        "dodging",
+        "motion lines",
+        "robot punching",
+        "energy blast"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWISH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "mnam"
+        }
+      ],
+      "visual_tags": [
+        "eating",
+        "open mouth",
+        "chewing",
+        "robot panel",
+        "sparks"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CRUNCH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "robot falling",
+        "stumbling",
+        "confused",
+        "glitching",
+        "falling down"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CLANG! CRASH",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "amalka"
+        },
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "pointing",
+        "smile",
+        "robot on ground",
+        "helping hand",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amalka",
+          "text": "Podvádět umíš dobře. Padat umíš taky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Betrügen kannst du gut. Fallen kannst du auch.",
+            "en": "You're good at cheating. You're good at falling, too.",
+            "fr": "Tu sais tricher. Et tu sais aussi tomber.",
+            "it": "Sei brava a barare. E anche a cadere.",
+            "ja": "ずるをするのは上手ね。転ぶのも上手だし。",
+            "ko": "속임수는 잘 쓰네. 넘어지는 것도 잘하고.",
+            "pl": "Umiesz oszukiwać. Umiesz też padać.",
+            "pt-BR": "Você é bom em trapacear. E também em cair.",
+            "ru": "Ты хорошо жульничаешь. И падать умеешь.",
+            "uk": "Ти добре шахраюєш. І падати вмієш теж.",
+            "vi": "Cậu gian lận giỏi thật. Ngã cũng giỏi nốt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ring",
+      "characters": [
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "robot hand",
+        "holding hand",
+        "standing up",
+        "glowing eyes soft",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, soft glow pulsing, static camera",
+      "motion_llm": "the robot's eyes light up softly, static camera",
+      "wd14_tags": {
+        "mecha": 0.967,
+        "no humans": 0.954,
+        "robot": 0.946,
+        "solo": 0.915,
+        "single horn": 0.747,
+        "horns": 0.697,
+        "science fiction": 0.669,
+        "from side": 0.611,
+        "glowing": 0.61,
+        "looking ahead": 0.599,
+        "upper body": 0.553,
+        "red eyes": 0.504
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_arena",
+      "characters": [
+        {
+          "id": "moderator"
+        },
+        {
+          "id": "amalka"
+        }
+      ],
+      "visual_tags": [
+        "holding microphone",
+        "holding star",
+        "presenting",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "moderator",
+          "text": "Vítězka je Amálka!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Siegerin ist Amálka!",
+            "en": "The winner is Amálka!",
+            "fr": "La gagnante est Amálka !",
+            "it": "La vincitrice è Amálka!",
+            "ja": "優勝はアマールカ！",
+            "ko": "승자는 아말카!",
+            "pl": "Zwyciężczynią jest Amálka!",
+            "pt-BR": "A vencedora é Amálka!",
+            "ru": "Победительница — Амалка!",
+            "uk": "Переможниця — Амалка!",
+            "vi": "Người chiến thắng là Amálka!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_arena",
+      "characters": [
+        {
+          "id": "amalka"
+        },
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "giving star",
+        "robot chest",
+        "star on chest",
+        "smile",
+        "friendship"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amalka",
+          "text": "Dejte ji Pěstiplánovi. Právě poprvé vyhrál – ne soutěž, ale sám sebe.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gib sie Pěstiplán. Er hat zum ersten Mal gewonnen – nicht den Wettkampf, sondern sich selbst.",
+            "en": "Give it to Fistplan. He just won for the first time—not the tournament, but himself.",
+            "fr": "Donnez-la à Pěstiplán. Il gagne pour la première fois... pas le tournoi, mais lui-même.",
+            "it": "Dategliela a Pěstiplán. Ha vinto per la prima volta... non la gara, ma se stesso.",
+            "ja": "これをペシプランにあげて。彼も初めて勝ったの——大会じゃなく、自分自身に。",
+            "ko": "이걸 페스티플라노에게 줘. 그는 이제야 처음으로 이겼어. 대회도, 자기 자신도.",
+            "pl": "Dajcie ją Pięcoplanowi. Wygrał po raz pierwszy – nie zawody, ale samego siebie.",
+            "pt-BR": "Entreguem para o Pěstiplán. Ele venceu pela primeira vez... não a competição, mas a si mesmo.",
+            "ru": "Отдайте её Пестиплану. Он впервые победил — не в соревновании, а сам себя.",
+            "uk": "Віддайте її Кулакоплану. Вперше виграв — не змагання, а самого себе.",
+            "vi": "Hãy trao nó cho Pěstiplán. Lần đầu tiên anh ấy thắng – không phải giải đấu, mà là chính bản thân mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_arena",
+      "characters": [
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "robot looking down",
+        "star on chest",
+        "soft expression",
+        "glowing eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pestiplan",
+          "text": "999 výher. Žádní kamarádi. Teď jedna prohra… a jeden kamarád.",
+          "kind": "speech",
+          "i18n": {
+            "de": "999 Siege. Keine Freunde. Jetzt eine Niederlage… und ein Freund.",
+            "en": "999 wins. No friends. Now one loss... and one friend.",
+            "fr": "999 victoires. Aucun ami. Maintenant une défaite... et un ami.",
+            "it": "999 vittorie. Zero amici. Ora una sconfitta... e un amico.",
+            "ja": "999勝。友だちはゼロ。今、1敗……そして友だちが一人。",
+            "ko": "승리 999회. 친구는 없었지. 이제 패배 하나… 그리고 친구 하나.",
+            "pl": "999 zwycięstw. Żadnych przyjaciół. Teraz jedna porażka... i jeden przyjaciel.",
+            "pt-BR": "999 vitórias. Zero amigos. Agora uma derrota... e um amigo.",
+            "ru": "999 побед. Никаких друзей. Теперь одно поражение… и один друг.",
+            "uk": "999 перемог. Жодних друзів. Тепер одне поразка… і один друг.",
+            "vi": "999 chiến thắng. Không có bạn bè. Giờ là một thất bại… và một người bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_arena",
+      "characters": [
+        {
+          "id": "amalka"
+        },
+        {
+          "id": "mnam"
+        },
+        {
+          "id": "pestiplan"
+        }
+      ],
+      "visual_tags": [
+        "eating",
+        "sandwich",
+        "robot eating",
+        "happy",
+        "sitting together",
+        "sunlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,484 @@
+{
+  "title": "David a ztracené pondělí",
+  "title_i18n": {
+    "de": "David und der verlorene Montag",
+    "en": "David and the Lost Monday",
+    "fr": "David et le lundi perdu",
+    "it": "David e il lunedì perduto",
+    "ja": "デイヴィッドと失われた月曜日",
+    "ko": "데이비드와 잃어버린 월요일",
+    "pl": "David i zagubiony poniedziałek",
+    "pt-BR": "David e a segunda-feira perdida",
+    "ru": "Дэвид и потерянный понедельник",
+    "uk": "Девід і втрачений понеділок",
+    "vi": "David và Thứ Hai Bị Mất Tích"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_tower",
+      "characters": [],
+      "visual_tags": [
+        "clock tower",
+        "night sky",
+        "stars",
+        "moon",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Stará hodinová věž v noci.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Der alte Turmuhrturm bei Nacht.",
+            "en": "The old clock tower at night.",
+            "fr": "La vieille tour de l'horloge, la nuit.",
+            "it": "La vecchia torre dell'orologio di notte.",
+            "ja": "夜の古い時計塔。",
+            "ko": "밤의 오래된 시계탑.",
+            "pl": "Stara wieża zegarowa w nocy.",
+            "pt-BR": "A antiga torre do relógio à noite.",
+            "ru": "Старая часовая башня ночью.",
+            "uk": "Стара годинникова вежа вночі.",
+            "vi": "Tháp đồng hồ cũ vào ban đêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, city lights blinking, static camera",
+      "motion_llm": "stars drifting slowly, moonlight flickering, static camera",
+      "wd14_tags": {
+        "no humans": 0.979,
+        "night": 0.955,
+        "sky": 0.953,
+        "moon": 0.933,
+        "clock tower": 0.907,
+        "clock": 0.883,
+        "scenery": 0.878,
+        "night sky": 0.877,
+        "tower": 0.865,
+        "star (sky)": 0.864,
+        "outdoors": 0.8,
+        "starry sky": 0.77
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "ponocny"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "talking",
+        "gears in background",
+        "pointing",
+        "serious face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ponocny",
+          "text": "Davide. Přicházíš pozdě. Ale teď to nevadí – někdo maže pondělky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "David. Du kommst zu spät. Aber das ist egal – jemand löscht Montage.",
+            "en": "David. You're late. But it doesn't matter now—someone is erasing Mondays.",
+            "fr": "David. Tu es en retard. Mais peu importe – quelqu'un efface les lundis.",
+            "it": "Davide. Arrivi in ritardo. Ma ora non importa... qualcuno sta cancellando i lunedì.",
+            "ja": "デイヴィッド。遅刻だぞ。でも今は気にするな――月曜を消す者がいるんだ",
+            "ko": "데이비드. 네가 늦었어. 하지만 괜찮아 – 누군가 월요일을 지우고 있거든.",
+            "pl": "Davide. Spóźniasz się. Ale teraz to nieistotne – ktoś wymazuje poniedziałki.",
+            "pt-BR": "David. Você está atrasado. Mas agora não importa – alguém está apagando as segundas-feiras.",
+            "ru": "Дэвид. Ты опоздал. Но сейчас это не важно — кто-то стирает понедельники.",
+            "uk": "Девіде. Ти спізнився. Але зараз це не важливо – хтось стирає понеділки.",
+            "vi": "David. Cậu đến muộn rồi. Nhưng giờ thì không sao – có người đang xóa Thứ Hai."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "adjusting glasses",
+        "confused",
+        "furrowed brows",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Někdo dělá co?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Jemand macht was?",
+            "en": "Erasing what?",
+            "fr": "Quelqu'un fait quoi ?",
+            "it": "Cancella i lunedì? Che dici?",
+            "ja": "月曜を消すって？",
+            "ko": "누가 뭐라고?",
+            "pl": "Kto robi co?",
+            "pt-BR": "Alguém faz o quê?",
+            "ru": "Кто-то делает что?",
+            "uk": "Хтось робить що?",
+            "vi": "Ai xóa gì cơ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "david"
+        },
+        {
+          "id": "souboj"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "glowing cloak",
+        "standing",
+        "facing each other",
+        "giant gears",
+        "magical atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "souboj",
+          "text": "Ty jsi ten kluk, co zastavuje čas? Já ho taky zastavuju – ale trvale.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bist du der Typ, der die Zeit anhält? Ich tue das auch – aber für immer.",
+            "en": "You're the kid who stops time? I stop it too—but permanently.",
+            "fr": "Tu es le gars qui arrête le temps ? Moi aussi, je l'arrête – mais pour de bon.",
+            "it": "Sei tu il ragazzo che ferma il tempo? Anche io lo fermo... ma per sempre.",
+            "ja": "お前が時を止める少年か？ 俺も止めるんだ――完全にね",
+            "ko": "네가 시간을 멈추는 소년이지? 나도 멈추게 해 – 하지만 완전히.",
+            "pl": "Ty jesteś tym gościem, co zatrzymuje czas? Ja też go zatrzymuję – ale na stałe.",
+            "pt-BR": "Você é o garoto que para o tempo? Eu também paro – mas permanentemente.",
+            "ru": "Ты тот парень, что останавливает время? Я тоже его останавливаю — но навсегда.",
+            "uk": "Ти той хлопець, що зупиняє час? Я теж його зупиняю – назавжди.",
+            "vi": "Cậu là thằng nhóc làm dừng thời gian à? Tao cũng làm thế – nhưng vĩnh viễn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "souboj"
+        }
+      ],
+      "visual_tags": [
+        "sad expression",
+        "looking down",
+        "grey aura",
+        "melancholy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "souboj",
+          "text": "Jednoho pondělí se mi stalo něco smutného. Když nebude pondělí, nic smutného se nemůže stát.",
+          "kind": "speech",
+          "i18n": {
+            "de": "An einem Montag ist mir etwas Trauriges passiert. Wenn es keinen Montag gibt, kann nichts Trauriges passieren.",
+            "en": "Something sad happened to me on a Monday. If there's no Monday, nothing sad can happen.",
+            "fr": "Un lundi, il m'est arrivé quelque chose de triste. Si le lundi n'existe plus, rien de triste ne peut arriver.",
+            "it": "Un lunedì mi è successo qualcosa di triste. Se non ci sono lunedì, non può succedere nulla di brutto.",
+            "ja": "ある月曜日に悲しいことがあった。月曜がなければ、悲しいことは起きない",
+            "ko": "어느 월요일, 슬픈 일이 생겼어. 월요일이 없으면 슬픈 일도 못 일어나.",
+            "pl": "Pewnego poniedziałku stało się coś smutnego. Jeśli nie będzie poniedziałku, nic złego nie może się zdarzyć.",
+            "pt-BR": "Numa segunda-feira, algo triste me aconteceu. Se não houver segunda-feira, nada triste pode acontecer.",
+            "ru": "В один понедельник со мной случилось что-то грустное. Если понедельников не будет, ничего плохого не случится.",
+            "uk": "Одного понеділка зі мною сталося щось сумне. Якщо понеділка не буде, нічого сумного не станеться.",
+            "vi": "Một ngày Thứ Hai, tôi đã gặp chuyện buồn. Nếu không có Thứ Hai, chẳng có chuyện buồn nào xảy ra."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "david"
+        },
+        {
+          "id": "souboj"
+        }
+      ],
+      "visual_tags": [
+        "sitting on gear",
+        "talking",
+        "calm",
+        "gears rotating slowly",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Když smažeš pondělí, smažeš obojí. Smích i pomoc.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn du Montage löschst, löschst du beides. Lachen und Hilfe.",
+            "en": "If you erase Mondays, you erase both. Laughter and help.",
+            "fr": "Si tu effaces les lundis, tu effaces tout. Les rires et l'aide.",
+            "it": "Se cancelli i lunedì, cancelli tutto. Le risate e l'aiuto.",
+            "ja": "月曜を消せば、笑いも助けも消える。両方だ",
+            "ko": "월요일을 지우면 둘 다 지워져. 웃음도, 도움도.",
+            "pl": "Gdy wymażesz poniedziałki, wymażesz wszystko. Śmiech i pomoc.",
+            "pt-BR": "Se você apagar as segundas-feiras, apaga tudo. Alegria e ajuda.",
+            "ru": "Стирая понедельники, ты стираешь всё. И смех, и помощь.",
+            "uk": "Якщо ти стереш понеділки, ти стереш і те, і інше. І сміх, і допомогу.",
+            "vi": "Nếu xóa Thứ Hai, cậu xóa cả hai. Tiếng cười lẫn sự giúp đỡ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "david"
+        },
+        {
+          "id": "souboj"
+        }
+      ],
+      "visual_tags": [
+        "energy wave",
+        "grey light",
+        "stopping time",
+        "frozen motion",
+        "tense",
+        "glowing watch"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Vidíš? V téhle vteřině se nic nestalo. Nic smutného. Ale ani nic dobrého.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Siehst du? In dieser Sekunde ist nichts passiert. Nichts Trauriges. Aber auch nichts Gutes.",
+            "en": "See? Nothing happened in this second. Nothing sad. But nothing good either.",
+            "fr": "Tu vois ? À cette seconde, rien ne s'est passé. Rien de triste. Mais rien de bien non plus.",
+            "it": "Vedi? In questo istante non è successo nulla. Niente di triste. Ma nemmeno di bello.",
+            "ja": "見てごらん。この瞬間には何も起きない。悲しいことも、嬉しいことも",
+            "ko": "봐, 이 순간엔 아무 일도 안 일어났어. 슬픈 것도, 좋은 것도.",
+            "pl": "Widzisz? W tej sekundzie nic się nie stało. Nic smutnego. Ale też nic dobrego.",
+            "pt-BR": "Viu? Neste segundo, nada aconteceu. Nada triste. Mas também nada bom.",
+            "ru": "Видишь? В эту секунду ничего не произошло. Ничего плохого. Но и ничего хорошего.",
+            "uk": "Бачиш? У цю секунду нічого не сталося. Нічого сумного. Але й нічого доброго.",
+            "vi": "Thấy chưa? Trong khoảnh khắc này, chẳng có gì xảy ra. Không buồn, mà cũng chẳng có gì tốt đẹp."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "TIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "souboj"
+        }
+      ],
+      "visual_tags": [
+        "sitting on gear",
+        "sad",
+        "looking at hands",
+        "glowing aura dimmed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "souboj",
+          "text": "To pondělí jsem přišel o někoho. Myslel jsem, že když smažu pondělí, vrátí se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "An diesem Montag habe ich jemanden verloren. Ich dachte, wenn ich den Montag lösche, kommt er zurück.",
+            "en": "I lost someone on that Monday. I thought erasing Mondays would bring them back.",
+            "fr": "C'est ce lundi-là que j'ai perdu quelqu'un. Je pensais qu'en l'effaçant, il reviendrait.",
+            "it": "Quel lunedì ho perso qualcuno. Pensavo che cancellando il lunedì, sarebbe tornato.",
+            "ja": "あの月曜日に、大切な人を失った。月曜を消せば、彼が戻ると考えたんだ",
+            "ko": "그 월요일에 나는 누군가를 잃었어. 월요일을 지우면 그가 돌아올 줄 알았지.",
+            "pl": "W poniedziałek straciłem kogoś. Myślałem, że jak wymażę poniedziałki, to wróci.",
+            "pt-BR": "Foi numa segunda-feira que perdi alguém. Achei que, se apagasse a segunda-feira, ele voltaria.",
+            "ru": "В тот понедельник я потерял кого-то. Я думал, что если сотру понедельник, он вернётся.",
+            "uk": "Того понеділка я втратив когось. Я думав, що якщо стеру понеділок, він повернеться.",
+            "vi": "Chính ngày Thứ Hai đó, tôi đã mất ai đó. Tôi nghĩ nếu xóa Thứ Hai, họ sẽ trở lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_gears",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "smiling gently",
+        "hand on shoulder",
+        "comforting",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "Vzpomínky se dají vyprávět. Místo mazání, vyprávěj.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Erinnerungen kann man erzählen. Statt zu löschen, erzähl.",
+            "en": "Memories can be told. Instead of erasing, tell them.",
+            "fr": "Les souvenirs, on les raconte. Au lieu d'effacer, raconte.",
+            "it": "I ricordi si raccontano. Invece di cancellare, racconta.",
+            "ja": "思い出は語れる。消すんじゃなくて、話せばいい",
+            "ko": "기억은 이야기할 수 있어. 지우는 게 아니라, 말해.",
+            "pl": "Wspomnienia da się opowiedzieć. Zamiast wymazywać, opowiedz.",
+            "pt-BR": "Memórias podem ser contadas. Em vez de apagar, conte.",
+            "ru": "Воспоминания можно рассказывать. Не стирать, а рассказывать.",
+            "uk": "Про спогади можна розповідати. Замість того, щоб стирати – розкажи.",
+            "vi": "Ký ức có thể kể lại. Thay vì xóa, hãy kể đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "souboj"
+        },
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "sunrise",
+        "golden light",
+        "looking out window",
+        "holding calendar",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "souboj",
+          "text": "Vrátíme ho do kalendáře – nebo ho necháme prázdné?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Setzen wir ihn in den Kalender zurück – oder lassen wir ihn leer?",
+            "en": "Shall we put it back in the calendar—or leave it empty?",
+            "fr": "On le remet dans le calendrier – ou on le laisse vide ?",
+            "it": "Lo rimettiamo nel calendario... o lo lasciamo vuoto?",
+            "ja": "カレンダーに戻すのか――それとも空欄のままにするのか？",
+            "ko": "달력에 다시 넣을까, 아니면 비워둘까?",
+            "pl": "Wstawimy go z powrotem do kalendarza – czy zostawimy pustkę?",
+            "pt-BR": "Vamos colocá-la de volta no calendário – ou deixamos em branco?",
+            "ru": "Вернём его в календарь — или оставим пустым?",
+            "uk": "Повернемо його в календар – чи залишимо порожнім?",
+            "vi": "Ta sẽ đưa nó vào lịch – hay để trống?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, clouds drifting slowly, static camera",
+      "motion_llm": "ambient only, characters still, sun rays moving across the floor, dust motes floating in light, static camera",
+      "wd14_tags": {
+        "1boy": 0.952,
+        "moon": 0.883,
+        "glasses": 0.879,
+        "solo": 0.858,
+        "male focus": 0.84,
+        "watch": 0.832,
+        "clock": 0.824,
+        "sky": 0.813,
+        "outdoors": 0.808,
+        "sneakers": 0.773,
+        "shoes": 0.703,
+        "night": 0.659
+      }
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_tower",
+      "characters": [
+        {
+          "id": "david"
+        }
+      ],
+      "visual_tags": [
+        "looking at calendar",
+        "blank square",
+        "hand holding pen",
+        "hesitant",
+        "focus"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "david",
+          "text": "…Co byste udělal vy?",
+          "kind": "speech",
+          "i18n": {
+            "de": "…Was würdet ihr tun?",
+            "en": "...What would you do?",
+            "fr": "…Et vous, qu'auriez-vous fait ?",
+            "it": "...Cosa faresti tu?",
+            "ja": "……あなたならどうしますか？",
+            "ko": "…당신이라면 어떻게 할까요?",
+            "pl": "…Co byście zrobili?",
+            "pt-BR": "…O que você faria?",
+            "ru": "…Что бы вы сделали?",
+            "uk": "…Що б ви зробили?",
+            "vi": "…Cậu sẽ làm gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

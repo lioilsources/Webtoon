@@ -1,0 +1,125 @@
+{
+  "id": "w_lx_k7_08_artus_posledni_strazce_avalonu",
+  "title": "Artuš a poslední strážce Avalonu",
+  "synopsis": "Artuš se vydává do mlžného Avalonu, aby pomohl Stínové Slepici najít svou pravou podobu a světlo.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Malá se stává světluškou a chrání noc."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_avalon",
+      "l_forest",
+      "l_lake",
+      "l_tower"
+    ]
+  },
+  "characters": [
+    {
+      "id": "artus",
+      "name": "Artuš Malý Lev",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 12 with short blonde hair and blue eyes",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, heroic face",
+      "outfits": {
+        "default": "silver armor, white cape, holding glowing sword, holding shield"
+      },
+      "photo": "a brave Czech boy aged 12 with short blonde hair and blue eyes",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, heroic face, silver armor, white cape, holding glowing sword, holding shield",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jezerna",
+      "name": "Paní Jezerní",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "an ethereal spirit with long white hair and glowing blue eyes",
+      "base": "ghost, transparent, floating, long white hair, glowing eyes, ethereal",
+      "outfits": {
+        "default": "glowing blue mist, water droplets"
+      },
+      "photo": "an ethereal spirit with long white hair and glowing blue eyes",
+      "tag_prompt": "ghost, transparent, floating, long white hair, glowing eyes, ethereal, glowing blue mist, water droplets",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "stina",
+      "name": "Stínová Slepice",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large shadow monster made of black smoke with many ears and no eyes",
+      "base": "shadow monster, large, black smoke, many ears, no eyes, terrifying",
+      "outfits": {
+        "default": "dark smoke, glowing red eyes (hidden)"
+      },
+      "photo": "a large shadow monster made of black smoke with many ears and no eyes",
+      "tag_prompt": "shadow monster, large, black smoke, many ears, no eyes, terrifying, dark smoke, glowing red eyes (hidden)",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mala",
+      "name": "Malá",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a small sad Czech girl aged 9 with big ears and glowing eyes like fireflies",
+      "base": "female child, small, pale skin, big ears, glowing eyes, sad face",
+      "outfits": {
+        "default": "dark cloak, hiding face"
+      },
+      "photo": "a small sad Czech girl aged 9 with big ears and glowing eyes like fireflies",
+      "tag_prompt": "female child, small, pale skin, big ears, glowing eyes, sad face, dark cloak, hiding face",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_avalon",
+      "name": "Avalon",
+      "description": "Avalon",
+      "tag_prompt": "outdoors, island, white towers, silver forest, lake, fog, morning, mystical",
+      "mood": ""
+    },
+    {
+      "id": "l_forest",
+      "name": "Mlžný les",
+      "description": "Mlžný les",
+      "tag_prompt": "outdoors, forest, dark trees, fog, night, moonlight, scary",
+      "mood": ""
+    },
+    {
+      "id": "l_lake",
+      "name": "Jezero",
+      "description": "Jezero",
+      "tag_prompt": "outdoors, lake, water, reflection, dawn, sunrise, calm",
+      "mood": ""
+    },
+    {
+      "id": "l_tower",
+      "name": "Věž",
+      "description": "Věž",
+      "tag_prompt": "outdoors, tower top, stone, stars, sunrise, sky, peaceful",
+      "mood": ""
+    }
+  ]
+}

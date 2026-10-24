@@ -1,0 +1,345 @@
+{
+  "title": "Kai a pavučinový zápas",
+  "title_i18n": {
+    "de": "Kai und das Spinnennetz-Duell",
+    "en": "Kai and the Web Match",
+    "fr": "Kai et le combat d'araignée",
+    "it": "Kai e la battaglia della ragnatela",
+    "ja": "カイと蜘蛛の戦い",
+    "ko": "카이와 거미줄 싸움",
+    "pl": "Kai i pojedynek z pająkiem",
+    "pt-BR": "Kai e a luta de aranha",
+    "ru": "Кай и битва с пауком",
+    "uk": "Кай та павутинна битва",
+    "vi": "Kai và trận đấu nhện"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_city",
+      "characters": [],
+      "visual_tags": [
+        "skyscrapers",
+        "flying cars",
+        "neon lights",
+        "futuristic",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Futuristické město v den útoku.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Futuristische Stadt am Tag des Angriffs.",
+            "en": "A futuristic city on the day of the attack.",
+            "fr": "Une ville futuriste, le jour de l'attaque.",
+            "it": "Città futuristica, giorno dell'attacco.",
+            "ja": "攻撃の日、未来都市。",
+            "ko": "공격이 있던 날의 미래 도시.",
+            "pl": "Futurystyczne miasto w dniu ataku.",
+            "pt-BR": "Cidade futurista no dia do ataque.",
+            "ru": "Футуристический город в день нападения.",
+            "uk": "Місто майбутнього в день атаки.",
+            "vi": "Thành phố tương lai trong ngày tấn công."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, city lights blinking, static camera",
+      "motion_llm": "flying cars moving in the background, clouds drifting, static camera",
+      "wd14_tags": {
+        "scenery": 0.94,
+        "cityscape": 0.931,
+        "city": 0.914,
+        "no humans": 0.878,
+        "building": 0.822,
+        "outdoors": 0.613,
+        "sky": 0.592,
+        "skyscraper": 0.53,
+        "science fiction": 0.477
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "maya"
+        }
+      ],
+      "visual_tags": [
+        "standing on ledge",
+        "pointing",
+        "waving",
+        "superhero pose",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Tetoooo, jdu do akce!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Tetoooo, ich geh' los!",
+            "en": "Auntie, I'm going in!",
+            "fr": "Tetoooo, je fonce !",
+            "it": "Ziaaa, vado all'attacco!",
+            "ja": "テタ、行くぞ！",
+            "ko": "테타, 나 출격한다!",
+            "pl": "Hej, lecę w akcję!",
+            "pt-BR": "Tetoooo, bora pra cima!",
+            "ru": "Тётя, я в деле!",
+            "uk": "Тетко, я в ділі!",
+            "vi": "Tetoooo, tui đi đây!"
+          }
+        },
+        {
+          "speaker_id": "maya",
+          "text": "Opatrně!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pass auf!",
+            "en": "Be careful!",
+            "fr": "Fais gaffe !",
+            "it": "Attento!",
+            "ja": "気をつけて！",
+            "ko": "조심해!",
+            "pl": "Uważaj!",
+            "pt-BR": "Cuidado!",
+            "ru": "Будь осторожен!",
+            "uk": "Обережно!",
+            "vi": "Cẩn thận đấy!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_factory",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "mechboti"
+        }
+      ],
+      "visual_tags": [
+        "swinging",
+        "web line",
+        "web shooting",
+        "robot looking up",
+        "dynamic angle",
+        "from below"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Hej, plecháči!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Hey, Blechdose!",
+            "en": "Hey, tin can!",
+            "fr": "Hé, le bidon !",
+            "it": "Ehi, lattaio!",
+            "ja": "おい、鉄の塊！",
+            "ko": "hey, 깡통아!",
+            "pl": "Hej, blaszaku!",
+            "pt-BR": "Ei, lata-velha!",
+            "ru": "Эй, жестянка!",
+            "uk": "Ей, консервна банка!",
+            "vi": "Này, đồ sắt vụn!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_factory",
+      "characters": [
+        {
+          "id": "mechboti"
+        }
+      ],
+      "visual_tags": [
+        "robot trapped",
+        "web wrapped",
+        "struggling",
+        "red eyes glowing",
+        "metal arms bound"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_factory",
+      "characters": [
+        {
+          "id": "kai"
+        },
+        {
+          "id": "mechboti"
+        }
+      ],
+      "visual_tags": [
+        "web shooting",
+        "web net",
+        "robot covered",
+        "action pose",
+        "web lines"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_factory",
+      "characters": [
+        {
+          "id": "mechboti"
+        }
+      ],
+      "visual_tags": [
+        "robot kneeling",
+        "defeated",
+        "smoke",
+        "web wrapped",
+        "static"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "HUP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "starosta"
+        },
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "handing key",
+        "golden key",
+        "smile",
+        "hero landing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "starosta",
+          "text": "Kai, zachránil jsi budoucnost.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Kai, du hast die Zukunft gerettet.",
+            "en": "Kai, you saved the future.",
+            "fr": "Kai, tu as sauvé l'avenir.",
+            "it": "Kai, hai salvato il futuro.",
+            "ja": "カイ、お前は未来を救った。",
+            "ko": "카이, 넌 미래를 구했어.",
+            "pl": "Kai, ocaliłeś przyszłość.",
+            "pt-BR": "Kai, você salvou o futuro.",
+            "ru": "Кай, ты спас будущее.",
+            "uk": "Кай, ти врятував майбутнє.",
+            "vi": "Kai, ngươi đã cứu lấy tương lai."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "thumbs up",
+        "confident",
+        "superhero pose",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kai",
+          "text": "Budoucnost je v pořádku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Zukunft ist in Ordnung.",
+            "en": "The future's fine.",
+            "fr": "L'avenir est sauf.",
+            "it": "Il futuro è a posto.",
+            "ja": "未来は平気だ。",
+            "ko": "미래는 괜찮아.",
+            "pl": "Przyszłość jest bezpieczna.",
+            "pt-BR": "O futuro tá tranquilo.",
+            "ru": "С будущим всё в порядке.",
+            "uk": "Майбутнє в порядку.",
+            "vi": "Tương lai an toàn rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_city",
+      "characters": [
+        {
+          "id": "kai"
+        }
+      ],
+      "visual_tags": [
+        "swinging away",
+        "web line",
+        "back view",
+        "city background",
+        "leaving"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_01_lia_planeta_tisice_mesicu",
+  "title": "Lia a planeta tisíce měsíců",
+  "synopsis": "Lia, Komet a Aron přistávají na planetě Nira, kde musí zastavit Mech-Krále a přeměnit ho v přítele.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: mech se stane přítelem a pomáhá."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_space",
+      "l_nira",
+      "l_battle"
+    ]
+  },
+  "characters": [
+    {
+      "id": "lia",
+      "name": "Lia",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 9 with long purple hair and silver eyes",
+      "base": "female child, purple hair, long hair, silver eyes, fair skin",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots"
+      },
+      "photo": "a brave Czech girl aged 9 with long purple hair and silver eyes",
+      "tag_prompt": "female child, purple hair, long hair, silver eyes, fair skin, silver space helmet, white spacesuit, purple gloves, boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "komet",
+      "name": "Komet",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small blue fox-like alien with a fluffy tail and glowing eyes",
+      "base": "fox, blue fur, big ears, fluffy tail, glowing eyes",
+      "outfits": {
+        "default": "glowing blue stripes"
+      },
+      "photo": "a small blue fox-like alien with a fluffy tail and glowing eyes",
+      "tag_prompt": "fox, blue fur, big ears, fluffy tail, glowing eyes, glowing blue stripes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "aron",
+      "name": "Aron",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a clever Czech boy aged 10 with short brown hair and green eyes",
+      "base": "male child, brown hair, short hair, green eyes, fair skin",
+      "outfits": {
+        "default": "blue jacket, grey pants, sneakers"
+      },
+      "photo": "a clever Czech boy aged 10 with short brown hair and green eyes",
+      "tag_prompt": "male child, brown hair, short hair, green eyes, fair skin, blue jacket, grey pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mech_kral",
+      "name": "Mech-Král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large rusty robot with six mechanical arms and glowing red eyes",
+      "base": "robot, mecha, large size, metallic body, six arms, glowing red eyes",
+      "outfits": {
+        "default": "rusty armor, glowing red core"
+      },
+      "photo": "a large rusty robot with six mechanical arms and glowing red eyes",
+      "tag_prompt": "robot, mecha, large size, metallic body, six arms, glowing red eyes, rusty armor, glowing red core",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_space",
+      "name": "Kosmos",
+      "description": "Kosmos",
+      "tag_prompt": "outdoors, space, stars, moons, spaceship window, night, deep space",
+      "mood": ""
+    },
+    {
+      "id": "l_nira",
+      "name": "Planeta Nira",
+      "description": "Planeta Nira",
+      "tag_prompt": "outdoors, alien planet, blue ground, strange rocks, red sky, sunset, dust",
+      "mood": ""
+    },
+    {
+      "id": "l_battle",
+      "name": "Bojové pole",
+      "description": "Bojové pole",
+      "tag_prompt": "outdoors, alien planet, debris, dust cloud, sparks, dramatic lighting, night",
+      "mood": ""
+    }
+  ]
+}

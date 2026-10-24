@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_03_nika_stin_v_lese",
+  "title": "Nika a stín v lese",
+  "synopsis": "Nika a její létající jednorožec Jiskra musí zastavit čarodějnici Moranu, která krade barvy z kouzelného lesa.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Morana se stane studentkou akademie a les září barvami."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_academy",
+      "l_moonlit",
+      "l_forest"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nika",
+      "name": "Nika",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with long blonde hair and bright blue eyes",
+      "base": "female child, blonde hair, long hair, blue eyes, fair skin",
+      "outfits": {
+        "default": "rainbow dress, white boots, holding magic wand"
+      },
+      "photo": "a brave Czech girl aged 10 with long blonde hair and bright blue eyes",
+      "tag_prompt": "female child, blonde hair, long hair, blue eyes, fair skin, rainbow dress, white boots, holding magic wand",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jiskra",
+      "name": "Jiskra",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a majestic white unicorn with large wings and a spiraled horn",
+      "base": "unicorn, white fur, large horn, wings, glowing eyes",
+      "outfits": {
+        "default": "golden bridle"
+      },
+      "photo": "a majestic white unicorn with large wings and a spiraled horn",
+      "tag_prompt": "unicorn, white fur, large horn, wings, glowing eyes, golden bridle",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "morana",
+      "name": "Morana",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall witch with pale skin, dark hair and glowing purple eyes",
+      "base": "witch, pale skin, dark hair, sharp features, glowing purple eyes",
+      "outfits": {
+        "default": "black cloak, dark robes, holding staff"
+      },
+      "photo": "a tall witch with pale skin, dark hair and glowing purple eyes",
+      "tag_prompt": "witch, pale skin, dark hair, sharp features, glowing purple eyes, black cloak, dark robes, holding staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "vila",
+      "name": "Ředitelka Vila",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small green fairy with translucent leaf wings and a flower crown",
+      "base": "fairy, small, green skin, leaf wings, glowing",
+      "outfits": {
+        "default": "leaf dress, flower crown"
+      },
+      "photo": "a small green fairy with translucent leaf wings and a flower crown",
+      "tag_prompt": "fairy, small, green skin, leaf wings, glowing, leaf dress, flower crown",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_academy",
+      "name": "Akademie",
+      "description": "Akademie",
+      "tag_prompt": "outdoors, magical academy, rainbow bridges, floating islands, bright day, magical atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_moonlit",
+      "name": "Měsíční louka",
+      "description": "Měsíční louka",
+      "tag_prompt": "outdoors, moonlit meadow, night, moonlight, grey flowers, magical forest, mist",
+      "mood": ""
+    },
+    {
+      "id": "l_forest",
+      "name": "Les",
+      "description": "Les",
+      "tag_prompt": "outdoors, magical forest, night, moonlight, glowing plants, colorful leaves, mist",
+      "mood": ""
+    }
+  ]
+}

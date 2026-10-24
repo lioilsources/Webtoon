@@ -1,0 +1,321 @@
+{
+  "title": "Liliana a kletba pyramidy",
+  "title_i18n": {
+    "de": "Liliana und der Fluch der Pyramide",
+    "en": "Liliana and the Pyramid's Curse",
+    "fr": "Liliana et la malédiction de la pyramide",
+    "it": "Liliana e la maledizione della piramide",
+    "ja": "リリアナとピラミッドの呪い",
+    "ko": "릴리아나와 피라미드의 저주",
+    "pl": "Liliana i klątwa piramidy",
+    "pt-BR": "Liliana e a Maldição da Pirâmide",
+    "ru": "Лилиана и проклятие пирамиды",
+    "uk": "Ліліана та прокляття піраміди",
+    "vi": "Liliana và Lời Nguyền Kim Tự Tháp"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pyramid",
+      "characters": [],
+      "visual_tags": [
+        "ancient walls",
+        "hieroglyphs",
+        "green flames",
+        "torchlight",
+        "dark stone",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Staroegyptská pyramida v minulosti.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine altägyptische Pyramide, in der Vergangenheit.",
+            "en": "An ancient Egyptian pyramid, long ago.",
+            "fr": "Une pyramide de l'Égypte ancienne, dans le passé.",
+            "it": "Un'antica piramide egizia, nel passato.",
+            "ja": "古代エジプトのピラミッド、過去の話。",
+            "ko": "고대 이집트, 과거의 피라미드.",
+            "pl": "Starożytna piramida w Egipcie, dawne czasy.",
+            "pt-BR": "Uma pirâmide do Antigo Egito, no passado.",
+            "ru": "Древнеегипетская пирамида в прошлом.",
+            "uk": "Стародавня єгипетська піраміда в минулому.",
+            "vi": "Kim tự tháp Ai Cập cổ đại trong quá khứ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "green flames flickering on torches, dust motes floating in air, static camera",
+      "wd14_tags": {
+        "no humans": 0.889,
+        "scenery": 0.87,
+        "indoors": 0.786,
+        "pillar": 0.687,
+        "magic circle": 0.497,
+        "wooden floor": 0.486,
+        "carpet": 0.386
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "ramses"
+        },
+        {
+          "id": "liliana"
+        },
+        {
+          "id": "toto"
+        }
+      ],
+      "visual_tags": [
+        "mummy standing",
+        "holding staff",
+        "fairy floating",
+        "swinging wand",
+        "cat sitting",
+        "green magic",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ramses",
+          "text": "Tisíc let jsem spal! Žádná malá víla mě nezastaví!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Tausend Jahre habe ich geschlafen! Kein kleines Feenwesen hält mich auf!",
+            "en": "I've slept for a thousand years! No little fairy can stop me!",
+            "fr": "Je dormais depuis mille ans ! Aucune petite fée ne m'arrêtera !",
+            "it": "Ho dormito per mille anni! Nessuna piccola fata mi fermerà!",
+            "ja": "千年も眠っていた！小さな妖精が私を止めるものか！",
+            "ko": "천 년 동안이나 잤다! 작은 요정 하나쯤 막지 못해!",
+            "pl": "Spałem tysiąc lat! Żadna mała wróżka mnie nie powstrzyma!",
+            "pt-BR": "Dormi por mil anos! Nenhuma fadinha me parará!",
+            "ru": "Я спал тысячу лет! Никакая маленькая фея меня не остановит!",
+            "uk": "Я спав тисячу років! Жодна маленька фея мене не зупинить!",
+            "vi": "Ta đã ngủ suốt một ngàn năm! Không có tiên nữ nhỏ bé nào ngăn được ta!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "liliana"
+        }
+      ],
+      "visual_tags": [
+        "fairy floating",
+        "swinging wand",
+        "pink energy ball",
+        "determined",
+        "glowing wings"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "liliana",
+          "text": "Světlo přátelství rozpráší jakoukoliv temnotu, Faraone!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Licht der Freundschaft vertreibt jede Dunkelheit, Pharao!",
+            "en": "The light of friendship dispels all darkness, Pharaoh!",
+            "fr": "La lumière de l'amitié dissipe toute ténèbre, Pharaon !",
+            "it": "La luce dell'amicizia disperderà ogni oscurità, Faraone!",
+            "ja": "友情の光はどんな闇も晴らすわ、ファラオ様！",
+            "ko": "우정의 빛은 어떤 어둠도 물리친다, 파라오여!",
+            "pl": "Światło przyjaźni rozproszy każdy mrok, Faraonie!",
+            "pt-BR": "A luz da amizade dissipa qualquer escuridão, Faraó!",
+            "ru": "Свет дружбы развеет любую тьму, фараон!",
+            "uk": "Світло дружби розвіє будь-яку темряву, фараоне!",
+            "vi": "Ánh sáng tình bạn sẽ xua tan mọi bóng tối, thưa Pháp Lão!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "toto"
+        }
+      ],
+      "visual_tags": [
+        "cat pointing",
+        "looking at staff",
+        "serious",
+        "green eyes",
+        "paw raised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "toto",
+          "text": "Miř na berlu, Liliano!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ziel auf den Stab, Liliana!",
+            "en": "Aim for the staff, Liliana!",
+            "fr": "Vise le bâton, Liliana !",
+            "it": "Punta alla tua bastone, Liliana!",
+            "ja": "杖を狙って、リリアナ！",
+            "ko": "지팡이를 노려봐, 릴리아나!",
+            "pl": "Celuj w berło, Liliano!",
+            "pt-BR": "Aponte para o cetro, Liliana!",
+            "ru": "Целься в жезл, Лилиана!",
+            "uk": "Цілись у жезл, Ліліано!",
+            "vi": "Nhắm vào cây gậy quyền trượng đi, Liliana!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_center",
+      "characters": [
+        {
+          "id": "liliana"
+        },
+        {
+          "id": "ramses"
+        }
+      ],
+      "visual_tags": [
+        "fairy flying up",
+        "star projectiles",
+        "pink and gold light",
+        "mummy dodging",
+        "magical explosion",
+        "sparkles"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SZÁŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_center",
+      "characters": [
+        {
+          "id": "ramses"
+        }
+      ],
+      "visual_tags": [
+        "mummy falling",
+        "bandages falling off",
+        "turning to sand",
+        "kneeling",
+        "glowing light",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid_center",
+      "characters": [
+        {
+          "id": "ramses"
+        }
+      ],
+      "visual_tags": [
+        "old man",
+        "sitting on ground",
+        "smiling",
+        "peaceful",
+        "gold headdress",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ramses",
+          "text": "Děkuji, malá vílo. Konečně můžu odpočívat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Danke, kleines Feenwesen. Endlich kann ich ruhen.",
+            "en": "Thank you, little fairy. I can finally rest.",
+            "fr": "Merci, petite fée. Je peux enfin me reposer.",
+            "it": "Grazie, piccola fata. Finalmente posso riposare.",
+            "ja": "ありがとう、小さな妖精。ようやく休める。",
+            "ko": "고맙다, 작은 요정. 드디어 쉴 수 있군.",
+            "pl": "Dziękuję, mała wróżko. Wreszcie mogę odpocząć.",
+            "pt-BR": "Obrigado, pequena fada. Finalmente posso descansar.",
+            "ru": "Спасибо, маленькая фея. Наконец-то я могу отдохнуть.",
+            "uk": "Дякую, маленька фея. Нарешті можу відпочивати.",
+            "vi": "Cảm ơn em, tiên nữ nhỏ bé. Cuối cùng ta cũng có thể nghỉ ngơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid_center",
+      "characters": [
+        {
+          "id": "liliana"
+        },
+        {
+          "id": "toto"
+        }
+      ],
+      "visual_tags": [
+        "fairy landing",
+        "cat jumping",
+        "happy",
+        "hugging",
+        "glowing pyramid",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "liliana",
+          "text": "Je to hotovo! Pyramida svítí mírem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Geschafft! Die Pyramide strahlt in Frieden.",
+            "en": "It's done! The pyramid shines with peace.",
+            "fr": "C'est fait ! La pyramide rayonne de paix.",
+            "it": "È fatto! La piramide risplende di pace.",
+            "ja": "完了！ピラミッドは平和に輝いているわ。",
+            "ko": "끝났어! 피라미드가 평화로 빛나고 있어.",
+            "pl": "Gotowe! Piramida świeci pokojem.",
+            "pt-BR": "Está feito! A pirâmide brilha em paz.",
+            "ru": "Готово! Пирамида сияет миром.",
+            "uk": "Готово! Піраміда сяє миром.",
+            "vi": "Xong rồi! Kim tự tháp tỏa sáng trong hòa bình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

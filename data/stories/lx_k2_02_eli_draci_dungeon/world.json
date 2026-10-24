@@ -1,0 +1,125 @@
+{
+  "id": "w_lx_k2_02_eli_draci_dungeon",
+  "title": "Eli a Dračí Dungeon",
+  "synopsis": "Eli a její dráček Bubla vstoupí do temného dungeonu, aby zachránili ztracené děti a překonali strach.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nový strážce: Kamenný král se stane ochráncem dungeonu a Eli najde děti."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dungeon_entrance",
+      "l_dungeon_hall",
+      "l_dungeon_chamber",
+      "l_secret_room"
+    ]
+  },
+  "characters": [
+    {
+      "id": "eli",
+      "name": "Eli",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 8 with short brown hair and a red cape",
+      "base": "female child, brown hair, short hair, brown eyes, fair skin, determined face",
+      "outfits": {
+        "default": "red cape, white tunic, brown belt, leather boots, holding staff, holding round shield"
+      },
+      "photo": "a brave Czech girl aged 8 with short brown hair and a red cape",
+      "tag_prompt": "female child, brown hair, short hair, brown eyes, fair skin, determined face, red cape, white tunic, brown belt, leather boots, holding staff, holding round shield",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "bubla",
+      "name": "Bubla",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small round green dragon with big eyes and tiny wings",
+      "base": "dragon, small dragon, green scales, big eyes, small wings",
+      "outfits": {
+        "default": "small horns, cute expression"
+      },
+      "photo": "a small round green dragon with big eyes and tiny wings",
+      "tag_prompt": "dragon, small dragon, green scales, big eyes, small wings, small horns, cute expression",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "stone_king",
+      "name": "Kamenný Král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall ancient stone golem with glowing blue eyes and mossy armor",
+      "base": "golem, stone skin, tall, glowing blue eyes, ancient armor",
+      "outfits": {
+        "default": "cracked stone texture, moss patches, glowing runes"
+      },
+      "photo": "a tall ancient stone golem with glowing blue eyes and mossy armor",
+      "tag_prompt": "golem, stone skin, tall, glowing blue eyes, ancient armor, cracked stone texture, moss patches, glowing runes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "goblin",
+      "name": "Skřet",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small mischievous goblin with green skin and pointy ears",
+      "base": "goblin, small, green skin, pointy ears, mischievous grin",
+      "outfits": {
+        "default": "tattered brown tunic, leather belt"
+      },
+      "photo": "a small mischievous goblin with green skin and pointy ears",
+      "tag_prompt": "goblin, small, green skin, pointy ears, mischievous grin, tattered brown tunic, leather belt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dungeon_entrance",
+      "name": "Vchod do Dungeonu",
+      "description": "Vchod do Dungeonu",
+      "tag_prompt": "outdoors, ancient stone ruins, large stone doors, moss, vines, twilight, mysterious atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon_hall",
+      "name": "Chodba Dungeonu",
+      "description": "Chodba Dungeonu",
+      "tag_prompt": "indoors, dungeon corridor, stone walls, torches, shadows, narrow passage, dim light",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon_chamber",
+      "name": "Kamra Krále",
+      "description": "Kamra Krále",
+      "tag_prompt": "indoors, dungeon chamber, large stone room, pillars, ancient carvings, dim light, magical aura",
+      "mood": ""
+    },
+    {
+      "id": "l_secret_room",
+      "name": "Tajná Komnata",
+      "description": "Tajná Komnata",
+      "tag_prompt": "indoors, small stone room, barred window, dust motes, magical light, ancient furniture",
+      "mood": ""
+    }
+  ]
+}

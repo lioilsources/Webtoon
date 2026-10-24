@@ -1,0 +1,587 @@
+{
+  "title": "Kometka a Temný Mračný",
+  "title_i18n": {
+    "de": "Kometka und der Dunkle Nebel",
+    "en": "Comet and the Dark Cloud",
+    "fr": "La Comète et l'Épais Nuage Noir",
+    "it": "La Cometa e l'Ombra Oscura",
+    "ja": "彗星と暗黒の雲",
+    "ko": "혜성과 어두운 구름",
+    "pl": "Kometka i Ciemna Chmura",
+    "pt-BR": "Cometa e a Nuvem Sombria",
+    "ru": "Комета и Тёмное Облако",
+    "uk": "Комета і Темна Хмара",
+    "vi": "Sao Chổi và Mây Đen"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_base",
+      "characters": [],
+      "visual_tags": [
+        "space station interior",
+        "metal walls",
+        "window view",
+        "nebula",
+        "stars",
+        "map on wall"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kosmická základna v noci.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Weltraumbasis bei Nacht.",
+            "en": "Space base at night.",
+            "fr": "La base spatiale, la nuit.",
+            "it": "Base spaziale di notte.",
+            "ja": "夜のコスモベース。",
+            "ko": "밤의 우주 기지.",
+            "pl": "Kosmiczna baza nocą.",
+            "pt-BR": "Base espacial à noite.",
+            "ru": "Космическая база ночью.",
+            "uk": "Космічна база вночі.",
+            "vi": "Trạm vũ trụ vào ban đêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "stars drifting outside the window, nebula clouds slowly moving, static camera",
+      "wd14_tags": {
+        "no humans": 0.979,
+        "space": 0.914,
+        "scenery": 0.883,
+        "star (sky)": 0.844,
+        "blue theme": 0.73,
+        "sky": 0.585,
+        "starry sky": 0.565,
+        "indoors": 0.512,
+        "window": 0.411
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_base",
+      "characters": [
+        {
+          "id": "krtek"
+        },
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "pointing",
+        "sitting on pole",
+        "holding popcorn",
+        "serious face",
+        "map"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "krtek",
+          "text": "Kometko! Tři hvězdy zmizely. Z mapy. Ze světa.",
+          "kind": "shout",
+          "i18n": {
+            "de": "Kometka! Drei Sterne sind verschwunden. Von der Karte. Aus der Welt.",
+            "en": "Comet! Three stars are gone. Vanished. From the map. From the world.",
+            "fr": "Comète ! Trois étoiles ont disparu. De la carte. Du monde.",
+            "it": "Cometa! Tre stelle sono scomparse. Dalla mappa. Dal mondo.",
+            "ja": "彗星！ 三つの星が消えた。地図から、世界から。",
+            "ko": "혜성아! 별 세 개가 사라졌어. 지도에서, 세상에서.",
+            "pl": "Kometko! Trzy gwiazdy zniknęły. Z mapy. Ze świata.",
+            "pt-BR": "Cometa! Três estrelas desapareceram. Do mapa. Do mundo.",
+            "ru": "Комета! Три звезды исчезли. С карты. Со света.",
+            "uk": "Комето! Зникли три зорі. З карти. З усього світу.",
+            "vi": "Sao Chổi! Ba ngôi sao biến mất. Tắt ngấm. Không còn dấu vết."
+          }
+        },
+        {
+          "speaker_id": "alenka",
+          "text": "A kdo je viděl naposledy?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wer hat sie zuletzt gesehen?",
+            "en": "Who saw them last?",
+            "fr": "Et qui les a vues pour la dernière fois ?",
+            "it": "E chi le ha viste per l'ultima volta?",
+            "ja": "最後に目撃したのは誰？",
+            "ko": "마지막으로 본 사람은 누구야?",
+            "pl": "A kto je widział ostatnio?",
+            "pt-BR": "E quem as viu por último?",
+            "ru": "И кто видел их в последний раз?",
+            "uk": "А хто бачив їх останніми?",
+            "vi": "Ai là người cuối cùng nhìn thấy chúng?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_base",
+      "characters": [
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "reading map",
+        "surprised",
+        "open mouth",
+        "holding map",
+        "worried"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Bylo mi zima.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir war kalt.",
+            "en": "It was cold.",
+            "fr": "J'avais froid.",
+            "it": "Avevo freddo.",
+            "ja": "寒かったの。",
+            "ko": "추웠어.",
+            "pl": "Było mi zimno.",
+            "pt-BR": "Tive frio.",
+            "ru": "Мне было холодно.",
+            "uk": "Мені було холодно.",
+            "vi": "Em thấy lạnh."
+          }
+        },
+        {
+          "speaker_id": "alenka",
+          "text": "Generále. Tohle udělalo něco, čemu byla zima.",
+          "kind": "thought",
+          "i18n": {
+            "de": "General. Das hier hat etwas getan, dem kalt war.",
+            "en": "General. Something made it cold.",
+            "fr": "Général. Quelque chose qui avait froid a fait ça.",
+            "it": "Generale. Qualcosa che aveva freddo ha fatto questo.",
+            "ja": "将軍。寒さを感じたのは、何かだ。",
+            "ko": "장군님. 추위를 느끼는 무언가가 저지른 일이에요.",
+            "pl": "Generale. To zrobiło coś, czego nie boi się zimno.",
+            "pt-BR": "General. Algo que sentiu frio fez isso.",
+            "ru": "Генерал. Это было то, чего было холодно.",
+            "uk": "Генерале. Це зробило щось, чому було холодно.",
+            "vi": "Thưa tướng quân. Có thứ gì đó khiến em cảm thấy lạnh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "flying",
+        "speed lines",
+        "star trail",
+        "text trail",
+        "cape flowing",
+        "fast motion"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Jdu se podívat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich gehe nachsehen.",
+            "en": "I'll go check it out.",
+            "fr": "Je vais voir.",
+            "it": "Vado a controllare.",
+            "ja": "行ってきます。",
+            "ko": "확인하러 갈게.",
+            "pl": "Idę sprawdzić.",
+            "pt-BR": "Vou dar uma olhada.",
+            "ru": "Пойду посмотрю.",
+            "uk": "Я піду подивлюся.",
+            "vi": "Em đi xem sao."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "FWOOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, static camera",
+      "motion_llm": "the girl flies forward leaving a trail of glowing text, stars moving past, static camera",
+      "wd14_tags": {
+        "sky": 0.933,
+        "solo": 0.908,
+        "night": 0.886,
+        "star (sky)": 0.876,
+        "blonde hair": 0.851,
+        "night sky": 0.825,
+        "starry sky": 0.772,
+        "scenery": 0.713,
+        "1girl": 0.698,
+        "cape": 0.618,
+        "outdoors": 0.615,
+        "wide shot": 0.448
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "alenka"
+        },
+        {
+          "id": "mrac"
+        }
+      ],
+      "visual_tags": [
+        "black nebula",
+        "glowing eyes",
+        "floating",
+        "entering cloud",
+        "small figure",
+        "large spirit"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mrac",
+          "text": "Kdo se odvažuje vstoupit?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer wagt es, einzutreten?",
+            "en": "Who dares enter?",
+            "fr": "Qui ose entrer ?",
+            "it": "Chi osa entrare?",
+            "ja": "誰が踏み入れるという？",
+            "ko": "누가 감히 들어오려나?",
+            "pl": "Kto śmie wejść?",
+            "pt-BR": "Quem ousa entrar?",
+            "ru": "Кто осмелится войти?",
+            "uk": "Хто наважується увійти?",
+            "vi": "Ai dám bước vào?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "standing in space",
+        "holding slingshot",
+        "glowing star",
+        "calm face",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Bylo ti zima? Kolik hvězd jsi snědl? A chtělo by to jednoho kamaráda?",
+          "kind": "speech",
+          "i18n": {
+            "de": "War dir kalt? Wie viele Sterne hast du gefressen? Und brauchst du einen Kumpel?",
+            "en": "Were you cold? How many stars did you eat? Do you need a friend?",
+            "fr": "Tu avais froid ? Combien d'étoiles as-tu mangées ? Tu voudrais bien d'un ami ?",
+            "it": "Avevi freddo? Quante stelle hai mangiato? E ti serve un amico?",
+            "ja": "寒かった？ 何個星を食ったの？ 友達が一人欲しい？",
+            "ko": "추웠어? 별을 몇 개 먹었어? 친구가 필요해?",
+            "pl": "Było ci zimno? Ile gwiazd zjadłeś? A może potrzebujesz przyjaciela?",
+            "pt-BR": "Teve frio? Quantas estrelas você comeu? E precisava de um amigo?",
+            "ru": "Тебе было холодно? Сколько звёзд ты съел? И не хочешь ли ты друга?",
+            "uk": "Тобі було холодно? Скільки зір'їв ти? Чи хочеш ти друга?",
+            "vi": "Cậu thấy lạnh à? Cậu đã ăn mất bao nhiêu ngôi sao? Và cậu có muốn một người bạn không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "mrac"
+        }
+      ],
+      "visual_tags": [
+        "sad face",
+        "glowing eyes dim",
+        "floating",
+        "hands to chest",
+        "vulnerable"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mrac",
+          "text": "Narodil jsem se z černé díry. Nikdy jsem nezářil.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wurde aus einem Schwarzen Loch geboren. Ich habe nie geleuchtet.",
+            "en": "I was born from a black hole. I never shone.",
+            "fr": "Je suis né d'un trou noir. Je n'ai jamais brillé.",
+            "it": "Sono nato da un buco nero. Non ho mai brillato.",
+            "ja": "俺はブラックホールから生まれた。光ったことなどない。",
+            "ko": "나는 블랙홀에서 태어났어. 빛을 본 적 없지.",
+            "pl": "Urodziłem się z czarnej dziury. Nigdy nie świeciłem.",
+            "pt-BR": "Nasci de um buraco negro. Nunca brilhei.",
+            "ru": "Я родился из чёрной дыры. Я никогда не светил.",
+            "uk": "Я народився з чорної діри. Я ніколи не світив.",
+            "vi": "Ta sinh ra từ hố đen. Ta chưa bao giờ tỏa sáng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "pulling slingshot",
+        "glowing star",
+        "aiming",
+        "determined",
+        "bright light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Vezmi si ji jako naději.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nimm sie als Hoffnung.",
+            "en": "Take it as hope.",
+            "fr": "Prends-la comme espoir.",
+            "it": "Prendila come speranza.",
+            "ja": "これを希望として受け取って。",
+            "ko": "이걸 희망으로 가져.",
+            "pl": "Weź to jako nadzieję.",
+            "pt-BR": "Leve-a como esperança.",
+            "ru": "Возьми её как надежду.",
+            "uk": "Візьми це як надію.",
+            "vi": "Cứ lấy nó làm hy vọng đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "alenka"
+        },
+        {
+          "id": "mrac"
+        }
+      ],
+      "visual_tags": [
+        "star flying",
+        "nebula glowing",
+        "explosion of light",
+        "stars appearing",
+        "magical effect"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mrac",
+          "text": "Já… já cítím… světlo?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich... ich spüre... Licht?",
+            "en": "I... I feel... light?",
+            "fr": "Je... je ressens... de la lumière ?",
+            "it": "Io... sento... la luce?",
+            "ja": "俺… 俺は… 光を… 感じる？",
+            "ko": "나… 나 빛을… 느껴?",
+            "pl": "Ja... ja czuję... światło?",
+            "pt-BR": "Eu... eu sinto... luz?",
+            "ru": "Я... я чувствую... свет?",
+            "uk": "Я... я відчуваю... світло?",
+            "vi": "Ta... ta cảm thấy... ánh sáng?"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SHIMMER!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_core",
+      "characters": [
+        {
+          "id": "alenka"
+        },
+        {
+          "id": "mrac"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "happy",
+        "glowing spirit",
+        "peaceful",
+        "stars around"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Hvězdy jsou kamarádi, kteří zahřívají.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sterne sind Freunde, die wärmen.",
+            "en": "Stars are friends who keep you warm.",
+            "fr": "Les étoiles sont des amis qui réchauffent.",
+            "it": "Le stelle sono amici che scaldano.",
+            "ja": "星は、温めてくれる友達だよ。",
+            "ko": "별은 따뜻하게 해주는 친구야.",
+            "pl": "Gwiazdy to przyjaciele, którzy grzeją.",
+            "pt-BR": "Estrelas são amigos que aquecem.",
+            "ru": "Звёзды — это друзья, которые согревают.",
+            "uk": "Зорі — це друзі, які гріють.",
+            "vi": "Những ngôi sao là bạn bè, chúng sưởi ấm."
+          }
+        },
+        {
+          "speaker_id": "mrac",
+          "text": "Kometko. Já bych rád někomu zahřál.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Kometka. Ich würde gerne jemanden wärmen.",
+            "en": "Comet. I want to warm someone up too.",
+            "fr": "Comète. J'aimerais bien réchauffer quelqu'un.",
+            "it": "Cometa. Vorrei scaldare qualcuno.",
+            "ja": "彗星。俺も誰かを温めたい。",
+            "ko": "혜성아. 나도 누군가 따뜻하게 해주고 싶어.",
+            "pl": "Kometko. Ja też chciałbym kogoś ogrzać.",
+            "pt-BR": "Cometa. Eu gostaria de aquecer alguém.",
+            "ru": "Комета. Я бы хотел кого-то согреть.",
+            "uk": "Комето. Я хотів би когось зігріти.",
+            "vi": "Sao Chổi. Ta cũng muốn sưởi ấm cho ai đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_base",
+      "characters": [
+        {
+          "id": "krtek"
+        },
+        {
+          "id": "alenka"
+        }
+      ],
+      "visual_tags": [
+        "looking at map",
+        "confused",
+        "sitting on pole",
+        "holding popcorn",
+        "map glowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "krtek",
+          "text": "Kometko. Co jsi to udělala?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Kometka. Was hast du da gemacht?",
+            "en": "Comet. What did you do?",
+            "fr": "Comète. Qu'est-ce que tu as fait ?",
+            "it": "Cometa. Cosa hai fatto?",
+            "ja": "彗星。何をしたんだ？",
+            "ko": "혜성아. 너 뭐 한 거야?",
+            "pl": "Kometko. Coś ty narobiła?",
+            "pt-BR": "Cometa. O que você fez?",
+            "ru": "Комета. Что ты натворила?",
+            "uk": "Комето. Що ти натворила?",
+            "vi": "Sao Chổi. Con đã làm gì vậy?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_base",
+      "characters": [
+        {
+          "id": "alenka"
+        },
+        {
+          "id": "mrac"
+        }
+      ],
+      "visual_tags": [
+        "nebula outside window",
+        "protecting stars",
+        "peaceful",
+        "smiling",
+        "friendship"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "alenka",
+          "text": "Přidala do gardy jednoho nováčka.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe der Garde einen Neuling hinzugefügt.",
+            "en": "I added a rookie to the guard.",
+            "fr": "J'ai intégré une recrue dans la garde.",
+            "it": "Ho aggiunto un novizio alla guardia.",
+            "ja": "護衛に新人を一人加えました。",
+            "ko": "경비대에 새끼를 한 명 더 넣었어.",
+            "pl": "Dodałam do straży jednego nowacjusza.",
+            "pt-BR": "Adicionei um novato à guarda.",
+            "ru": "Я добавила в гвардию новичка.",
+            "uk": "Я додала в гвардію одного новачка.",
+            "vi": "Con đã thêm một tân binh vào đội ngũ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

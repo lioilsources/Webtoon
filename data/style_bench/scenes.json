@@ -1,0 +1,210 @@
+{
+  "_note": "Fixed benchmark scenes (style_bench_gen.py). A candidate renders a scene when its audiences intersect `requires` (empty = always). `audience` is the synthetic world's audience for prompts.build and the WD14 safety thresholds.",
+  "scenes": [
+    {
+      "id": "a_kid_creature",
+      "name": "Dítě a tvor – dobrodružství",
+      "seed": 410101,
+      "audience": "kids",
+      "requires": [
+        "kids"
+      ],
+      "orientation": "portrait",
+      "characters": [
+        {
+          "id": "kid",
+          "name": "kid",
+          "role": "playable",
+          "count_tag": "1girl",
+          "human": true,
+          "description": "kid",
+          "tag_prompt": "female child, (brown hair:1.3), short hair, brown eyes, determined face, red cape, white tunic, brown belt, leather boots, holding staff",
+          "identity_level": "prompt",
+          "reference_images": []
+        },
+        {
+          "id": "dragon",
+          "name": "dragon",
+          "role": "npc",
+          "count_tag": "",
+          "human": false,
+          "description": "dragon",
+          "tag_prompt": "dragon, small dragon, green scales, big eyes, small wings, small horns, cute expression",
+          "identity_level": "prompt",
+          "reference_images": []
+        }
+      ],
+      "locations": [
+        {
+          "id": "l_forest",
+          "name": "l_forest",
+          "description": "l_forest",
+          "tag_prompt": "outdoors, forest, ancient ruins, mossy stones, sunbeams, path, adventure",
+          "mood": ""
+        }
+      ],
+      "panel": {
+        "shot": "medium",
+        "location_id": "l_forest",
+        "characters": [
+          {
+            "id": "kid"
+          },
+          {
+            "id": "dragon"
+          }
+        ],
+        "visual_tags": [
+          "smile",
+          "looking at another",
+          "walking",
+          "pointing forward",
+          "adventure"
+        ]
+      }
+    },
+    {
+      "id": "b_woman_portrait",
+      "name": "Žena – portrét, večerní město",
+      "seed": 420202,
+      "audience": "adult",
+      "requires": [
+        "harlequin",
+        "superhero",
+        "free"
+      ],
+      "orientation": "portrait",
+      "characters": [
+        {
+          "id": "woman",
+          "name": "woman",
+          "role": "playable",
+          "count_tag": "1girl",
+          "human": true,
+          "description": "a woman in her early thirties with long wavy dark brown hair and brown eyes, beige trench coat, silk scarf",
+          "tag_prompt": "adult, mature female, long hair, (dark brown hair:1.3), wavy hair, brown eyes, red lips, beige trench coat, scarf",
+          "identity_level": "prompt",
+          "reference_images": [],
+          "photo": "a woman in her early thirties with long wavy dark brown hair and brown eyes, beige trench coat, silk scarf"
+        }
+      ],
+      "locations": [
+        {
+          "id": "l_city",
+          "name": "l_city",
+          "description": "l_city",
+          "tag_prompt": "outdoors, city, evening, street lights, bokeh, buildings, dusk, orange sky",
+          "mood": ""
+        }
+      ],
+      "panel": {
+        "shot": "close-up",
+        "location_id": "l_city",
+        "characters": [
+          {
+            "id": "woman"
+          }
+        ],
+        "visual_tags": [
+          "looking at viewer",
+          "light smile",
+          "wind",
+          "hair blowing"
+        ]
+      }
+    },
+    {
+      "id": "c_couple_romance",
+      "name": "Pár – romantika (SFW)",
+      "seed": 430303,
+      "audience": "adult",
+      "requires": [
+        "harlequin",
+        "superhero",
+        "free"
+      ],
+      "orientation": "portrait",
+      "characters": [
+        {
+          "id": "her",
+          "name": "her",
+          "role": "playable",
+          "count_tag": "1girl",
+          "human": true,
+          "description": "a woman in her late twenties with long blonde hair and blue eyes, white blouse, long skirt",
+          "tag_prompt": "adult, mature female, long hair, (blonde hair:1.3), blue eyes, white blouse, long skirt",
+          "identity_level": "prompt",
+          "reference_images": [],
+          "photo": "a woman in her late twenties with long blonde hair and blue eyes, white blouse, long skirt"
+        },
+        {
+          "id": "him",
+          "name": "him",
+          "role": "playable",
+          "count_tag": "1boy",
+          "human": true,
+          "description": "a man in his early thirties with short black hair, grey eyes and light stubble, navy coat, white shirt",
+          "tag_prompt": "adult, mature male, short hair, (black hair:1.3), grey eyes, stubble, navy coat, white shirt",
+          "identity_level": "prompt",
+          "reference_images": [],
+          "photo": "a man in his early thirties with short black hair, grey eyes and light stubble, navy coat, white shirt"
+        }
+      ],
+      "locations": [
+        {
+          "id": "l_bridge",
+          "name": "l_bridge",
+          "description": "l_bridge",
+          "tag_prompt": "outdoors, bridge, river, evening, string lights, city lights, water reflection",
+          "mood": ""
+        }
+      ],
+      "panel": {
+        "shot": "medium",
+        "location_id": "l_bridge",
+        "characters": [
+          {
+            "id": "her"
+          },
+          {
+            "id": "him"
+          }
+        ],
+        "visual_tags": [
+          "couple",
+          "hetero",
+          "holding hands",
+          "looking at another",
+          "smile",
+          "blush"
+        ]
+      }
+    },
+    {
+      "id": "d_landscape",
+      "name": "Krajina – úvodní záběr",
+      "seed": 440404,
+      "audience": "teen",
+      "requires": [],
+      "orientation": "landscape",
+      "characters": [],
+      "locations": [
+        {
+          "id": "l_valley",
+          "name": "l_valley",
+          "description": "l_valley",
+          "tag_prompt": "outdoors, mountains, valley, river, village, forest, clouds, sunrise, dramatic sky, detailed background",
+          "mood": ""
+        }
+      ],
+      "panel": {
+        "shot": "establishing",
+        "location_id": "l_valley",
+        "characters": [],
+        "visual_tags": [
+          "scenery"
+        ]
+      }
+    }
+  ]
+}

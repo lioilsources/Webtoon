@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k5_07_kai_pavouci_kluk_z_budoucnosti",
+  "title": "Kai a pavučinový zápas",
+  "synopsis": "Superhrdina Kai bojuje s roboty v budoucnosti a zachraňuje město.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: město je zachráněno a Kai je hrdinou."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_city",
+      "l_factory",
+      "l_square"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a brave Czech boy aged 12 with short black hair and a red superhero mask",
+      "base": "male child, black hair, short hair, blue eyes, fair skin, athletic build",
+      "outfits": {
+        "default": "red and blue superhero suit, red mask, white gloves, red boots"
+      },
+      "photo": "a brave Czech boy aged 12 with short black hair and a red superhero mask",
+      "tag_prompt": "male child, black hair, short hair, blue eyes, fair skin, athletic build, red and blue superhero suit, red mask, white gloves, red boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "maya",
+      "name": "Teta Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a supportive Czech woman aged 35 with long brown hair and a headset",
+      "base": "adult, mature female, brown hair, long hair, brown eyes, kind face",
+      "outfits": {
+        "default": "white lab coat, blue shirt, dark pants, headset"
+      },
+      "photo": "a supportive Czech woman aged 35 with long brown hair and a headset",
+      "tag_prompt": "adult, mature female, brown hair, long hair, brown eyes, kind face, white lab coat, blue shirt, dark pants, headset",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mechboti",
+      "name": "Mech-Boti",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large menacing robot with glowing red eyes and four mechanical legs",
+      "base": "robot, mecha, large robot, red eyes, metal body, four legs",
+      "outfits": {
+        "default": "rusty metal plates, glowing red eyes, smoke exhaust"
+      },
+      "photo": "a large menacing robot with glowing red eyes and four mechanical legs",
+      "tag_prompt": "robot, mecha, large robot, red eyes, metal body, four legs, rusty metal plates, glowing red eyes, smoke exhaust",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "starosta",
+      "name": "Starosta Budoucnosti",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a distinguished Czech man aged 60 with grey hair, glasses and a gold chain",
+      "base": "adult, mature male, grey hair, short hair, glasses, mustache, round face",
+      "outfits": {
+        "default": "purple mayor suit, gold chain, white shirt, black tie"
+      },
+      "photo": "a distinguished Czech man aged 60 with grey hair, glasses and a gold chain",
+      "tag_prompt": "adult, mature male, grey hair, short hair, glasses, mustache, round face, purple mayor suit, gold chain, white shirt, black tie",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_city",
+      "name": "Město",
+      "description": "Město",
+      "tag_prompt": "outdoors, futuristic city, skyscrapers, flying cars, neon lights, day, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_factory",
+      "name": "Továrna",
+      "description": "Továrna",
+      "tag_prompt": "outdoors, industrial area, metal structures, pipes, smoke, day, sunny",
+      "mood": ""
+    },
+    {
+      "id": "l_square",
+      "name": "Náměstí",
+      "description": "Náměstí",
+      "tag_prompt": "outdoors, city square, fountain, crowd, futuristic buildings, day, sunny",
+      "mood": ""
+    }
+  ]
+}

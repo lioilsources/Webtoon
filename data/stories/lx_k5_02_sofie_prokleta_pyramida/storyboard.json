@@ -1,0 +1,452 @@
+{
+  "title": "Sofie a prokletá pyramida",
+  "title_i18n": {
+    "de": "Sofie und die verfluchte Pyramide",
+    "en": "Sophie and the Cursed Pyramid",
+    "fr": "Sophie et la pyramide maudite",
+    "it": "Sofie e la piranha maledetta",
+    "ja": "ソフィーと呪われたピラミッド",
+    "ko": "소피와 저주받은 피라미드",
+    "pl": "Sofie i przeklęta piramida",
+    "pt-BR": "Sofie e a pirâmide amaldiçoada",
+    "ru": "Софи и проклятая пирамида",
+    "uk": "Софія та проклята піраміда",
+    "vi": "Sofie và lăng mộ bị nguyền rủa"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_desert",
+      "characters": [],
+      "visual_tags": [
+        "pyramid",
+        "sand dunes",
+        "bright sun",
+        "blue sky",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pyramida v poušti.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Pyramide in der Wüste.",
+            "en": "A pyramid in the desert.",
+            "fr": "Une pyramide dans le désert.",
+            "it": "La piramide nel deserto.",
+            "ja": "砂漠のピラミッド。",
+            "ko": "사막 속의 피라미드.",
+            "pl": "Piramida na pustyni.",
+            "pt-BR": "Uma pirâmide no deserto.",
+            "ru": "Пирамида в пустыне.",
+            "uk": "Піраміда в пустелі.",
+            "vi": "Kim tự tháp giữa sa mạc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust drifting, static camera",
+      "motion_llm": "sand grains shifting in the wind, heat haze shimmering, static camera",
+      "wd14_tags": {
+        "no humans": 0.939,
+        "desert": 0.904,
+        "scenery": 0.749,
+        "sky": 0.527,
+        "sand": 0.465,
+        "outdoors": 0.461,
+        "blue sky": 0.452,
+        "simple background": 0.446,
+        "day": 0.387
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_desert",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "amulet"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking at pyramid",
+        "floating amulet",
+        "worried expression",
+        "amulet floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amulet",
+          "text": "Sofie, tam uvnitř je duch. Já bych šel domů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sofie, da drinnen ist ein Geist. Ich würde nach Hause gehen.",
+            "en": "Sophie, there's a ghost inside. I'm heading home.",
+            "fr": "Sophie, il y a un fantôme à l'intérieur. Je rentrerais chez moi.",
+            "it": "Sofie, c'è uno spirito lì dentro. Io andrei a casa.",
+            "ja": "ソフィー、中にお化けがいるよ。帰ろうか。",
+            "ko": "소피, 안에 영혼이 있어. 나는 집에 갈래.",
+            "pl": "Sofie, tam w środku jest duch. Poszedłbym do domu.",
+            "pt-BR": "Sofie, tem um fantasma lá dentro. Eu ia embora.",
+            "ru": "Софи, внутри призрак. Я бы пошёл домой.",
+            "uk": "Софіє, всередині є дух. Я б краще пішов додому.",
+            "vi": "Sofie, bên trong có ma. Tao về nhà đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_desert",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "confident",
+        "looking at amulet",
+        "hand on hip"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Amulete, jsi kámen. Nemáš domov.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Amulett, du bist ein Stein. Du hast kein Zuhause.",
+            "en": "Amulet, you're a rock. You don't have a home.",
+            "fr": "Amulette, tu es une pierre. Tu n'as pas de maison.",
+            "it": "Amuleto, sei una pietra. Non hai una casa.",
+            "ja": "アミュレット、あなたは石よ。家なんてないわ。",
+            "ko": "부적아, 넌 돌이야. 집이 없어.",
+            "pl": "Amulecie, jesteś kamieniem. Nie masz domu.",
+            "pt-BR": "Amuleto, você é uma pedra. Não tem casa.",
+            "ru": "Амулет, ты камень. У тебя нет дома.",
+            "uk": "Амулете, ти камінь. У тебе немає дому.",
+            "vi": "Amulet, cậu là đá. Cậu chẳng có nhà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_desert",
+      "characters": [
+        {
+          "id": "amulet"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "annoyed expression",
+        "glowing runes",
+        "small"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amulet",
+          "text": "Tak bych šel do muzea.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann ginge ich ins Museum.",
+            "en": "Then I'll go to the museum.",
+            "fr": "Alors j'irais au musée.",
+            "it": "Allora andrei al museo.",
+            "ja": "なら博物館に行こうか。",
+            "ko": "그럼 박물관으로 가자.",
+            "pl": "To poszedłbym do muzeum.",
+            "pt-BR": "Então eu ia pro museu.",
+            "ru": "Тогда я бы пошёл в музей.",
+            "uk": "Тоді б я пішов до музею.",
+            "vi": "Vậy thì tao vào bảo tàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "amulet"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "torch light",
+        "hieroglyphs on walls",
+        "entering",
+        "dust particles"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "jackal"
+        }
+      ],
+      "visual_tags": [
+        "jackal emerging",
+        "stone wall",
+        "glowing eyes",
+        "surprised",
+        "sofie raising hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jackal",
+          "text": "Kdo ruší faraonův spánek?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer stört den Schlaf des Pharaos?",
+            "en": "Who disturbs the Pharaoh's sleep?",
+            "fr": "Qui trouble le sommeil du pharaon ?",
+            "it": "Chi disturba il sonno del faraone?",
+            "ja": "ファラオの眠りを妨げる者は誰だ？",
+            "ko": "파라오의 잠을 깨우는 자는 누구인가?",
+            "pl": "Kto budzi sen faraona?",
+            "pt-BR": "Quem perturba o sono do faraó?",
+            "ru": "Кто нарушает сон фараона?",
+            "uk": "Хто порушує спокій фараона?",
+            "vi": "Ai đang quấy rối giấc ngủ của Pharaoh?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pyramid",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "touching amulet",
+        "amulet glowing",
+        "stone shield forming",
+        "determined",
+        "magic effect"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Já, Sofie. A hledám poklad.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich, Sofie. Und ich suche den Schatz.",
+            "en": "Me, Sophie. And I'm looking for treasure.",
+            "fr": "C'est moi, Sophie. Je cherche un trésor.",
+            "it": "Sono io, Sofie. E cerco un tesoro.",
+            "ja": "私、ソフィー。宝を探してるの。",
+            "ko": "나야, 소피. 보물을 찾고 있어.",
+            "pl": "Ja, Sofie. Szukam skarbów.",
+            "pt-BR": "Sou eu, a Sofie. E procuro um tesouro.",
+            "ru": "Я, Софи. Ищу сокровище.",
+            "uk": "Я, Софія. І шукаю скарб.",
+            "vi": "Tớ đây, Sofie. Tớ đang tìm kho báu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "the amulet glows brighter and stone blocks float around sofie, static camera",
+      "wd14_tags": {
+        "1girl": 0.99,
+        "brown hair": 0.961,
+        "solo": 0.955,
+        "sandals": 0.936,
+        "long hair": 0.936,
+        "brown eyes": 0.842,
+        "dress": 0.834,
+        "looking at viewer": 0.822,
+        "shield": 0.811,
+        "brown footwear": 0.797,
+        "full body": 0.784,
+        "standing": 0.768
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chamber",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "pharaoh appearing",
+        "transparent",
+        "golden sarcophagus background",
+        "mysterious",
+        "glowing eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Odvážná dívko, proč jsi přišla?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mutiges Mädchen, warum bist du gekommen?",
+            "en": "Brave girl, why have you come?",
+            "fr": "Audacieuse jeune fille, pourquoi es-tu venue ?",
+            "it": "Coraggiosa fanciulla, perché sei venuta?",
+            "ja": "勇敢な娘よ、なぜここへ来た？",
+            "ko": "용감한 소녀여, 왜 왔는가?",
+            "pl": "Odwagą dziewczyno, po co przyszłaś?",
+            "pt-BR": "Corajosa garota, por que veio?",
+            "ru": "Отважная девушка, зачем ты пришла?",
+            "uk": "Смілива дівчинко, навіщо ти прийшла?",
+            "vi": "Cô gái dũng cảm, tại sao ngươi đến đây?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chamber",
+      "characters": [
+        {
+          "id": "sofie"
+        }
+      ],
+      "visual_tags": [
+        "standing tall",
+        "confident",
+        "looking at pharaoh",
+        "holding amulet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sofie",
+          "text": "Chci vrátit ukradený poklad lidem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will den gestohlenen Schatz den Menschen zurückgeben.",
+            "en": "I want to return the stolen treasure to the people.",
+            "fr": "Je veux rendre le trésor volé au peuple.",
+            "it": "Voglio restituire il tesoro rubato alla gente.",
+            "ja": "盗まれた宝を人々に返したいの。",
+            "ko": "도둑맞은 보물을 사람들에게 돌려주고 싶어요.",
+            "pl": "Chcę oddać skradzione skarby ludziom.",
+            "pt-BR": "Quero devolver o tesouro roubado ao povo.",
+            "ru": "Хочу вернуть украденное сокровище людям.",
+            "uk": "Я хочу повернути викрадений скарб людям.",
+            "vi": "Tớ muốn trả lại kho báu bị đánh cắp cho mọi người."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_chamber",
+      "characters": [
+        {
+          "id": "pharaoh"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "pointing",
+        "transparent",
+        "kind expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "pharaoh",
+          "text": "Tak si vezmi jen to, co potřebuješ.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann nimm nur, was du brauchst.",
+            "en": "Then take only what you need.",
+            "fr": "Prends alors seulement ce dont tu as besoin.",
+            "it": "Allora prendi solo ciò di cui hai bisogno.",
+            "ja": "なら必要なものだけ持って行け。",
+            "ko": "그렇다면 필요한 것만 가져가라.",
+            "pl": "To weź tylko to, czego potrzebujesz.",
+            "pt-BR": "Então pegue apenas o que precisa.",
+            "ru": "Тогда бери только то, что нужно.",
+            "uk": "Тоді бери лише те, що тобі потрібно.",
+            "vi": "Vậy thì cứ lấy những gì ngươi cần."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_chamber",
+      "characters": [
+        {
+          "id": "sofie"
+        },
+        {
+          "id": "amulet"
+        }
+      ],
+      "visual_tags": [
+        "walking away",
+        "holding small statue",
+        "pharaoh fading",
+        "torch light",
+        "exit"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "amulet",
+          "text": "Tak zase příště.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bis zum nächsten Mal.",
+            "en": "See you next time.",
+            "fr": "À la prochaine, alors.",
+            "it": "Alla prossima allora.",
+            "ja": "じゃあまた今度。",
+            "ko": "그럼 다음에 또 봐.",
+            "pl": "To do następnego razu.",
+            "pt-BR": "Até a próxima, então.",
+            "ru": "Ну, до следующего раза.",
+            "uk": "Отже, побачимось наступного разу.",
+            "vi": "Vậy hẹn gặp lại lần sau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

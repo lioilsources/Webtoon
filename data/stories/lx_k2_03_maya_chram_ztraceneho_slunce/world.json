@@ -1,0 +1,117 @@
+{
+  "id": "w_lx_k2_03_maya_chram_ztraceneho_slunce",
+  "title": "Maya a chrám ztraceného slunce",
+  "synopsis": "Maya a její jaguár Tiko objeví podzemní pyramidu, kde musí řešit hádanku faraona místo boje.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: nová cesta se otevírá za pyramidou."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_pyramid",
+      "l_altar"
+    ]
+  },
+  "characters": [
+    {
+      "id": "maya",
+      "name": "Maya",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with curly brown hair and an athletic build",
+      "base": "female child, brown hair, curly hair, brown eyes, tan skin, athletic build",
+      "outfits": {
+        "default": "green cloak, brown tunic, leather belt, boots, holding bow"
+      },
+      "photo": "a brave Czech girl aged 10 with curly brown hair and an athletic build",
+      "tag_prompt": "female child, brown hair, curly hair, brown eyes, tan skin, athletic build, green cloak, brown tunic, leather belt, boots, holding bow",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "tiko",
+      "name": "Tiko",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small orange jaguar with black spots and green eyes",
+      "base": "jaguar, small cat, orange fur, black spots, green eyes",
+      "outfits": {
+        "default": "small leather collar"
+      },
+      "photo": "a small orange jaguar with black spots and green eyes",
+      "tag_prompt": "jaguar, small cat, orange fur, black spots, green eyes, small leather collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "amun",
+      "name": "Faraon Amun",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent ancient egyptian pharaoh spirit with a gold headdress and long beard",
+      "base": "ghost, transparent, floating, ancient egyptian pharaoh, gold headdress, long beard",
+      "outfits": {
+        "default": "gold headdress, transparent robes, glowing aura"
+      },
+      "photo": "a translucent ancient egyptian pharaoh spirit with a gold headdress and long beard",
+      "tag_prompt": "ghost, transparent, floating, ancient egyptian pharaoh, gold headdress, long beard, gold headdress, transparent robes, glowing aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "guardian",
+      "name": "Píseční Strážci",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large stone golem with glowing orange cracks in its body",
+      "base": "stone golem, rock monster, humanoid, grey stone, glowing cracks",
+      "outfits": {
+        "default": "stone texture, glowing orange cracks"
+      },
+      "photo": "a large stone golem with glowing orange cracks in its body",
+      "tag_prompt": "stone golem, rock monster, humanoid, grey stone, glowing cracks, stone texture, glowing orange cracks",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Džungle",
+      "description": "Džungle",
+      "tag_prompt": "outdoors, jungle, dense trees, vines, sunlight filtering through leaves, humid, green",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid",
+      "name": "Pyramida",
+      "description": "Pyramida",
+      "tag_prompt": "outdoors, ancient pyramid, stone walls, hieroglyphs, sand, sunset, dramatic lighting",
+      "mood": ""
+    },
+    {
+      "id": "l_altar",
+      "name": "Oltář",
+      "description": "Oltář",
+      "tag_prompt": "outdoors, ancient temple interior, stone altar, golden artifacts, dust motes, magical light",
+      "mood": ""
+    }
+  ]
+}

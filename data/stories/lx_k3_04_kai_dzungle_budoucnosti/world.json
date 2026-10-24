@@ -1,0 +1,93 @@
+{
+  "id": "w_lx_k3_04_kai_dzungle_budoucnosti",
+  "title": "Kai a mech-gorila",
+  "synopsis": "Kai a její digitální mazlíček Pixel zastaví ztracenou robotickou gorilu v neonové džungli a najdou s ní přátelství.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Kai a mech-gorila společně opravují džungli."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_jungle",
+      "l_ruins"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 8 with short spiky black hair and glowing orange gauntlets",
+      "base": "female child, short black hair, spiky hair, green eyes, fair skin, determined face",
+      "outfits": {
+        "default": "orange hoodie, black shorts, white sneakers, backpack, glowing orange gauntlets"
+      },
+      "photo": "a brave Czech girl aged 8 with short spiky black hair and glowing orange gauntlets",
+      "tag_prompt": "female child, short black hair, spiky hair, green eyes, fair skin, determined face, orange hoodie, black shorts, white sneakers, backpack, glowing orange gauntlets",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pixel",
+      "name": "Pixel",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small digital monkey with neon blue fur and glitching pixels",
+      "base": "monkey, small monkey, digital glitch effect, neon blue fur, large eyes",
+      "outfits": {
+        "default": "digital aura, floating"
+      },
+      "photo": "a small digital monkey with neon blue fur and glitching pixels",
+      "tag_prompt": "monkey, small monkey, digital glitch effect, neon blue fur, large eyes, digital aura, floating",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "gorila",
+      "name": "Mech-gorila",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large rusty mechanical gorilla with glowing red eyes and metal plating",
+      "base": "robot, mecha, gorilla, large size, metallic body, glowing red eyes",
+      "outfits": {
+        "default": "rusty metal plates, glowing red visor, antenna"
+      },
+      "photo": "a large rusty mechanical gorilla with glowing red eyes and metal plating",
+      "tag_prompt": "robot, mecha, gorilla, large size, metallic body, glowing red eyes, rusty metal plates, glowing red visor, antenna",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_jungle",
+      "name": "Neonová džungle",
+      "description": "Neonová džungle",
+      "tag_prompt": "outdoors, jungle, neon plants, glowing flowers, rain, night, cyberpunk, bioluminescence, mist",
+      "mood": ""
+    },
+    {
+      "id": "l_ruins",
+      "name": "Zničená část džungle",
+      "description": "Zničená část džungle",
+      "tag_prompt": "outdoors, jungle, fallen trees, debris, neon lights, rain, dramatic lighting",
+      "mood": ""
+    }
+  ]
+}

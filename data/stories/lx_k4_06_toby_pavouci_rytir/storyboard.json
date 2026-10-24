@@ -1,0 +1,339 @@
+{
+  "title": "Toby, pavoučí rytíř z Nocturna",
+  "title_i18n": {
+    "de": "Toby, der Spinnenritter von Nocturn",
+    "en": "Toby, the Spider Knight of Nocturn",
+    "fr": "Toby, le chevalier arachnide de Nocturne",
+    "it": "Toby, il cavaliere ragno di Nocturn",
+    "ja": "ノクテルナの蜘蛛騎士トビー",
+    "ko": "노크터넘의 거미 기사 토비",
+    "pl": "Toby, pajączy rycerz z Nocturnum",
+    "pt-BR": "Toby, o Cavaleiro Aranha de Nocturno",
+    "ru": "Тоби, паучий рыцарь из Ноктерна",
+    "uk": "Тобі, павучий лицар з Ноктюрна",
+    "vi": "Toby, hiệp sĩ nhện từ Nocturn"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_roof",
+      "characters": [],
+      "visual_tags": [
+        "city skyline",
+        "night",
+        "rain",
+        "spider signal",
+        "wet roof",
+        "neon lights"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Deštivá noc v Nocturnu.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine regnerische Nacht in Nocturn.",
+            "en": "A rainy night in Nocturn.",
+            "fr": "Une nuit pluvieuse à Nocturne.",
+            "it": "Una notte piovosa a Nocturn.",
+            "ja": "ノクテルナ、雨の夜。",
+            "ko": "노크터넘의 비 오는 밤.",
+            "pl": "Deszczowa noc w Nocturnum.",
+            "pt-BR": "Uma noite chuvosa em Nocturno.",
+            "ru": "Дождливая ночь в Ноктерне.",
+            "uk": "Дощова ніч у Ноктюрні.",
+            "vi": "Một đêm mưa ở Nocturn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, rain falling, city lights blinking, static camera",
+      "motion_llm": "rain falling steadily, neon lights flickering, static camera",
+      "wd14_tags": {
+        "cityscape": 0.889,
+        "city": 0.879,
+        "scenery": 0.877,
+        "no humans": 0.867,
+        "building": 0.86,
+        "city lights": 0.758,
+        "night": 0.709,
+        "aircraft": 0.663,
+        "outdoors": 0.655,
+        "sky": 0.646,
+        "rain": 0.628,
+        "skyscraper": 0.606
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "toby"
+        },
+        {
+          "id": "sklebik"
+        },
+        {
+          "id": "zombie_clown"
+        }
+      ],
+      "visual_tags": [
+        "toby swinging",
+        "web line",
+        "landing",
+        "zombie clown standing",
+        "scary smile",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sklebik",
+          "text": "Kdo nám to sem přiskákal? Malý pavouček, co si hraje na netopýra?!",
+          "kind": "shout",
+          "i18n": {
+            "de": "Wer hüpft denn da rein? Ein kleines Spinnchen, das sich für eine Fledermaus hält?!",
+            "en": "Who jumped in here? A little spider playing bat?!",
+            "fr": "Qui nous a sauté dessus ? Un petit arachnide qui se prend pour une chauve-souris ?!",
+            "it": "Chi salta qui da noi? Un piccolo ragno che si crede pipistrello?!",
+            "ja": "誰がここへ飛び込んできた？コウモリ気取りの小さな蜘蛛め？！",
+            "ko": "누가 여기 뛰어왔어? 박쥐 흉내 내는 작은 거미새끼?!",
+            "pl": "Kto nam tu skacze? Mały pająk, co udaje nietoperza?!",
+            "pt-BR": "Quem é que pousou aqui? Um pequeno aranhinha que acha que é morcego?!",
+            "ru": "Кто это к нам прыгнул? Маленький паучок, что играет в летучую мышь?!",
+            "uk": "Хто це до нас стрибнув? Маленький павучок, що грається в кажана?!",
+            "vi": "Ai nhảy tưng tưng vào đây vậy? Nhện con giả làm dơi à?!"
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SPLASH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "toby"
+        }
+      ],
+      "visual_tags": [
+        "toby landing",
+        "crouching",
+        "holding batons",
+        "determined",
+        "glowing eyes",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "toby",
+          "text": "Město Nocturno patří spravedlnosti. A klauni patří do vězení!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Stadt Nocturn gehört der Gerechtigkeit. Und Clowns gehören ins Gefängnis!",
+            "en": "Nocturn belongs to justice. And clowns belong in jail!",
+            "fr": "La ville de Nocturne obéit à la justice. Et les clowns appartiennent à la prison !",
+            "it": "La città di Nocturn appartiene alla giustizia. E i clown vanno in prigione!",
+            "ja": "ノクテルナは正義の街。クローンは刑務所行きだ！",
+            "ko": "노크터넘은 정의의 땅이야. 광대들은 감옥에 가야 해!",
+            "pl": "Nocturnum należy do sprawiedliwości. A klauni trafiają do więzienia!",
+            "pt-BR": "A cidade de Nocturno pertence à justiça. E palhaços vão para a cadeia!",
+            "ru": "Город Ноктерн принадлежит справедливости. А клоуны должны сидеть в тюрьме!",
+            "uk": "Місто Ноктюрно належить справедливості. А клоуни мають бути в в'язниці!",
+            "vi": "Nocturn thuộc về công lý. Và những tên hề phải vào tù!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "toby"
+        }
+      ],
+      "visual_tags": [
+        "toby jumping",
+        "wall jump",
+        "dynamic pose",
+        "rain",
+        "motion lines",
+        "city background"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "WHOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "toby"
+        }
+      ],
+      "visual_tags": [
+        "toby shooting",
+        "web shooter",
+        "giant net",
+        "web flying",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "THWIP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "sklebik"
+        },
+        {
+          "id": "zombie_clown"
+        }
+      ],
+      "visual_tags": [
+        "zombie clowns trapped",
+        "giant net",
+        "struggling",
+        "tied up",
+        "rain"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "THUD!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "toby"
+        }
+      ],
+      "visual_tags": [
+        "toby throwing",
+        "acoustic bomb",
+        "explosion",
+        "sound waves",
+        "sklebik falling"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_street",
+      "characters": [
+        {
+          "id": "sklebik"
+        }
+      ],
+      "visual_tags": [
+        "sklebik tied up",
+        "under street lamp",
+        "unconscious",
+        "tied with web",
+        "sign"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_roof",
+      "characters": [
+        {
+          "id": "toby"
+        }
+      ],
+      "visual_tags": [
+        "toby running",
+        "leaping",
+        "cape flowing",
+        "city background",
+        "night",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "toby",
+          "text": "Dobrou noc, Nocturno.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gute Nacht, Nocturn.",
+            "en": "Good night, Nocturn.",
+            "fr": "Bonne nuit, Nocturne.",
+            "it": "Buonanotte, Nocturn.",
+            "ja": "おやすみ、ノクテルナ。",
+            "ko": "안녕, 노크터넘.",
+            "pl": "Dobranoc, Nocturnum.",
+            "pt-BR": "Boa noite, Nocturno.",
+            "ru": "Спокойной ночи, Ноктерн.",
+            "uk": "Спокійної ночі, Ноктюрно.",
+            "vi": "Chúc ngủ ngon, Nocturn."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "WHOOSH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, rain falling, static camera",
+      "motion_llm": "toby's cape flowing in the wind, rain falling, static camera",
+      "wd14_tags": {
+        "1boy": 0.971,
+        "male focus": 0.948,
+        "black hair": 0.934,
+        "superhero": 0.925,
+        "rain": 0.917,
+        "yellow footwear": 0.911,
+        "solo": 0.894,
+        "cape": 0.892,
+        "bodysuit": 0.819,
+        "mask": 0.73,
+        "boots": 0.671,
+        "black eyes": 0.541
+      }
+    }
+  ]
+}

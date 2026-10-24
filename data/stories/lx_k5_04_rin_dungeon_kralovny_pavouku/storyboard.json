@@ -1,0 +1,424 @@
+{
+  "title": "Rin a Královna pavouků",
+  "title_i18n": {
+    "de": "Rin und die Spinnenkönigin",
+    "en": "Rin and the Spider Queen",
+    "fr": "Rin, la Reine des Araignées",
+    "it": "Rin, la Regina dei Ragni",
+    "ja": "リンとクモの女王",
+    "ko": "거미 여왕 린",
+    "pl": "Rin i Królowa Pająków",
+    "pt-BR": "Rin e a Rainha das Aranhas",
+    "ru": "Рин и Королева пауков",
+    "uk": "Рін і Королева павуків",
+    "vi": "Rin và Nữ hoàng Nhện"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dungeon",
+      "characters": [],
+      "visual_tags": [
+        "stone corridor",
+        "torches",
+        "mist",
+        "dark",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Podzemní dungeon, kamenné chodby.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein unterirdischer Dungeon, steinerne Gänge.",
+            "en": "An underground dungeon, stone corridors.",
+            "fr": "Donjon souterrain, couloirs de pierre.",
+            "it": "Dungeon sotterraneo, corridoi di pietra.",
+            "ja": "地下ダンジョン、石造りの廊下。",
+            "ko": "지하 던전, 돌로 된 복도.",
+            "pl": "Podziemny loch, kamienne korytarze.",
+            "pt-BR": "Masmorra subterrânea, corredores de pedra.",
+            "ru": "Подземный данж, каменные коридоры.",
+            "uk": "Підземний данж, кам'яні коридори.",
+            "vi": "Dungeon ngầm, những hành lang đá."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "torch flames flickering, mist drifting slowly, static camera",
+      "wd14_tags": {
+        "no humans": 0.97,
+        "blue theme": 0.938,
+        "scenery": 0.735,
+        "stairs": 0.731,
+        "monochrome": 0.634,
+        "pillar": 0.55,
+        "indoors": 0.543,
+        "arch": 0.534
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "rin"
+        },
+        {
+          "id": "mec"
+        },
+        {
+          "id": "zombie"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "zombie crawling",
+        "holding sword",
+        "holding shield",
+        "surprised",
+        "motion lines"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mec",
+          "text": "Rin, za tebou.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Rin, hinter dir.",
+            "en": "Rin, behind you.",
+            "fr": "Rin, derrière toi.",
+            "it": "Rin, alle tue spalle.",
+            "ja": "リン、後ろだ",
+            "ko": "린, 너 뒤에.",
+            "pl": "Rin, za tobą.",
+            "pt-BR": "Rin, atrás de você.",
+            "ru": "Рин, позади тебя.",
+            "uk": "Рін, за тобою.",
+            "vi": "Rin, đằng sau cậu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dungeon",
+      "characters": [
+        {
+          "id": "rin"
+        }
+      ],
+      "visual_tags": [
+        "swinging sword",
+        "determined",
+        "glowing sword",
+        "dust cloud",
+        "action"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rin",
+          "text": "Vidím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sehe es.",
+            "en": "I see it.",
+            "fr": "Je vois.",
+            "it": "Lo vedo.",
+            "ja": "わかってる",
+            "ko": "알고 있어.",
+            "pl": "Widzę.",
+            "pt-BR": "Eu vejo.",
+            "ru": "Вижу.",
+            "uk": "Бачу.",
+            "vi": "Tôi thấy mà."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "SZÁŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "kravna"
+        },
+        {
+          "id": "rin"
+        }
+      ],
+      "visual_tags": [
+        "spider hanging",
+        "web",
+        "large spider",
+        "standing",
+        "looking up",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kravna",
+          "text": "Kdo vstoupil do mého sálu?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer hat meinen Saal betreten?",
+            "en": "Who entered my hall?",
+            "fr": "Qui a osé entrer dans ma salle ?",
+            "it": "Chi è entrato nel mio salone?",
+            "ja": "誰が私の広間に侵入した？",
+            "ko": "누가 내 홀에 들어왔지?",
+            "pl": "Kto wszedł do mojej sali?",
+            "pt-BR": "Quem entrou na minha sala?",
+            "ru": "Кто осмелился войти в мой зал?",
+            "uk": "Хто увійшов у мою залу?",
+            "vi": "Ai đã bước vào sảnh của ta?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "rin"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding sword",
+        "confident",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rin",
+          "text": "Rin. A hledám lék pro vesnici.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Rin. Und ich suche ein Heilmittel für das Dorf.",
+            "en": "Rin. I'm looking for a cure for the village.",
+            "fr": "Rin. Je cherche un remède pour le village.",
+            "it": "Rin. Cerco una cura per il villaggio.",
+            "ja": "リンよ。村の薬を探してるの",
+            "ko": "린. 마을을 위한 약을 찾고 있어.",
+            "pl": "Rin. Szukam lekarstwa dla wioski.",
+            "pt-BR": "Rin. E procuro um remédio para a vila.",
+            "ru": "Рин. Ищу лекарство для деревни.",
+            "uk": "Рін. І шукаю ліки для села.",
+            "vi": "Là Rin. Tôi đang tìm thuốc cho ngôi làng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "kravna"
+        },
+        {
+          "id": "rin"
+        }
+      ],
+      "visual_tags": [
+        "spider hissing",
+        "fangs",
+        "defensive stance",
+        "tense",
+        "web background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kravna",
+          "text": "Lék je můj poklad.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Heilmittel ist mein Schatz.",
+            "en": "The cure is my treasure.",
+            "fr": "Le remède est mon trésor.",
+            "it": "La cura è il mio tesoro.",
+            "ja": "薬は私の宝",
+            "ko": "약은 나의 보물.",
+            "pl": "Lekarstwo to mój skarb.",
+            "pt-BR": "O remédio é meu tesouro.",
+            "ru": "Лекарство — моя сокровищница.",
+            "uk": "Ліки — це моя скарбниця.",
+            "vi": "Thuốc là kho báu của ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "rin"
+        },
+        {
+          "id": "kravna"
+        }
+      ],
+      "visual_tags": [
+        "blocking",
+        "shield glowing",
+        "spider retreating",
+        "energy blast",
+        "action",
+        "dynamic pose"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BUM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "kravna"
+        }
+      ],
+      "visual_tags": [
+        "spider sitting",
+        "tired",
+        "looking at rin",
+        "web background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kravna",
+          "text": "Jsi statečná. Vezmi si lék. Ale zaplatíš vzpomínkou.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist mutig. Nimm das Heilmittel. Aber du zahlst mit einer Erinnerung.",
+            "en": "You're brave. Take the cure. But you'll pay with a memory.",
+            "fr": "Tu es courageuse. Prends le remède. Mais tu paieras en souvenir.",
+            "it": "Sei coraggiosa. Prendi la cura. Ma pagherai con un ricordo.",
+            "ja": "勇敢ね。薬をあげる。でも、思い出と引き換えよ",
+            "ko": "대단하군. 약을 가져가. 대신 기억을 대가로 내놔.",
+            "pl": "Jesteś odważna. Weź lekarstwo. Ale zapłacisz wspomnieniem.",
+            "pt-BR": "Você é corajosa. Pegue o remédio. Mas pague com uma lembrança.",
+            "ru": "Ты храбрая. Возьми лекарство. Но заплати воспоминанием.",
+            "uk": "Ти смілива. Візьми ліки. Але заплати спогадом.",
+            "vi": "Ngươi rất dũng cảm. Hãy lấy thuốc đi. Nhưng sẽ phải trả giá bằng một ký ức."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "rin"
+        }
+      ],
+      "visual_tags": [
+        "nodding",
+        "determined",
+        "holding potion",
+        "sad eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rin",
+          "text": "Beru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehme es.",
+            "en": "I accept.",
+            "fr": "J'accepte.",
+            "it": "Accetto.",
+            "ja": "いいわ",
+            "ko": "받아.",
+            "pl": "Biorę.",
+            "pt-BR": "Eu aceito.",
+            "ru": "Беру.",
+            "uk": "Беру.",
+            "vi": "Tôi nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sil",
+      "characters": [
+        {
+          "id": "mec"
+        }
+      ],
+      "visual_tags": [
+        "sword standing",
+        "glowing runes dimming",
+        "sad",
+        "close-up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "mec",
+          "text": "Já si tě pamatuju.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Ich werde dich nicht vergessen.",
+            "en": "I'll remember you.",
+            "fr": "Moi, je me souviens de toi.",
+            "it": "Io mi ricorderò di te.",
+            "ja": "お前は忘れない",
+            "ko": "내가 너를 기억해.",
+            "pl": "Ja cię pamiętam.",
+            "pt-BR": "Eu me lembro de você.",
+            "ru": "Я запомню тебя.",
+            "uk": "Я пам'ятаю тебе.",
+            "vi": "Ta sẽ nhớ về ngươi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "sword runes flickering weakly, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "sword runes flickering weakly, dust settling, static camera",
+      "wd14_tags": {
+        "weapon": 0.955,
+        "sword": 0.938,
+        "no humans": 0.93,
+        "pillar": 0.689,
+        "blue theme": 0.686,
+        "glowing weapon": 0.664,
+        "glowing sword": 0.635
+      }
+    }
+  ]
+}

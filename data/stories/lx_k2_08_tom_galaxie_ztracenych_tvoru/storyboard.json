@@ -1,0 +1,449 @@
+{
+  "title": "Tom a galaxie ztracených tvorů",
+  "title_i18n": {
+    "de": "Tom und die Galaxie der verlorenen Wesen",
+    "en": "Tom and the Galaxy of Lost Creatures",
+    "fr": "Tom et la galaxie des créatures perdues",
+    "it": "Tom e la galassia delle creature perdute",
+    "ja": "トムと失われた生物たちの銀河",
+    "ko": "톰과 잃어버린 생물들의 은하계",
+    "pl": "Tom i galakstra zaginionych stworów",
+    "pt-BR": "Tom e a galáxia das criaturas perdidas",
+    "ru": "Том и галактика потерянных существ",
+    "uk": "Том і галактика втрачених істот",
+    "vi": "Tom và hành tinh của những sinh vật bị lạc"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_space",
+      "characters": [],
+      "visual_tags": [
+        "spaceship",
+        "stars",
+        "planets",
+        "control panel",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Vesmírná loď letí mezi planetami.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Ein Raumschiff fliegt zwischen Planeten.",
+            "en": "A spaceship flies between planets.",
+            "fr": "Le vaisseau spatial survole les planètes.",
+            "it": "La nave spaziale vola tra i pianeti.",
+            "ja": "宇宙船が惑星間を航行している。",
+            "ko": "우주선이 행성 사이를 날아간다.",
+            "pl": "Statek kosmiczny leci między planetami.",
+            "pt-BR": "A nave espacial viaja entre os planetas.",
+            "ru": "Космический корабль летит среди планет.",
+            "uk": "Космічний корабель летить між планетами.",
+            "vi": "Con tàu vũ trụ bay giữa các hành tinh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, stars twinkling, city lights blinking, static camera",
+      "motion_llm": "stars drifting past the window, dashboard lights blinking, static camera",
+      "wd14_tags": {
+        "scenery": 0.963,
+        "no humans": 0.919,
+        "star (sky)": 0.813,
+        "blue theme": 0.801,
+        "sky": 0.718,
+        "starry sky": 0.564,
+        "night": 0.527,
+        "space": 0.522,
+        "science fiction": 0.496,
+        "outdoors": 0.474,
+        "building": 0.457,
+        "cityscape": 0.394
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_space",
+      "characters": [
+        {
+          "id": "tom"
+        },
+        {
+          "id": "zipp"
+        }
+      ],
+      "visual_tags": [
+        "looking at screen",
+        "pointing",
+        "curious",
+        "robot fox",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tom",
+          "text": "Myslíš, že tam někdo žije?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Glaubst du, da lebt jemand?",
+            "en": "Do you think anyone lives there?",
+            "fr": "Tu crois qu'il y a quelqu'un là-bas ?",
+            "it": "Credi che ci viva qualcuno?",
+            "ja": "もしかして、誰か住んでる？",
+            "ko": "거기에 누가 살고 있을까?",
+            "pl": "Myślisz, że ktoś tam mieszka?",
+            "pt-BR": "Acha que tem alguém morando lá?",
+            "ru": "Думаешь, там кто-то живёт?",
+            "uk": "Думаєш, там хтось живе?",
+            "vi": "Cậu nghĩ ở đó có ai sống không?"
+          }
+        },
+        {
+          "speaker_id": "zipp",
+          "text": "Pik!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Pik!",
+            "en": "Peep!",
+            "fr": "Pik !",
+            "it": "Pik!",
+            "ja": "ピッ！",
+            "ko": "삑!",
+            "pl": "Pik!",
+            "pt-BR": "Pik!",
+            "ru": "Пи-и-к!",
+            "uk": "Пік!",
+            "vi": "Pik!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_moon",
+      "characters": [
+        {
+          "id": "tom"
+        },
+        {
+          "id": "zipp"
+        },
+        {
+          "id": "rex"
+        }
+      ],
+      "visual_tags": [
+        "spaceship landing",
+        "dust cloud",
+        "soldier pointing",
+        "laser rifle",
+        "surprised",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "rex",
+          "text": "Vzácné tvory prodávám sběratelům.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Seltene Wesen verkaufe ich an Sammler.",
+            "en": "I sell rare creatures to collectors.",
+            "fr": "Je vends les créatures rares aux collectionneurs.",
+            "it": "Vendo le creature rare ai collezionisti.",
+            "ja": "希少な生物を収集家に売ってるんだ。",
+            "ko": "희귀 생물을 수집가들에게 팔아.",
+            "pl": "Sprzedaję rzadkie stworzenia kolekcjonerom.",
+            "pt-BR": "Vendo criaturas raras para colecionadores.",
+            "ru": "Редких существ я продаю коллекционерам.",
+            "uk": "Рідкісних істот я продаю колекціонерам.",
+            "vi": "Tôi bán những sinh vật quý hiếm cho các nhà sưu tầm."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "HUP!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moon",
+      "characters": [
+        {
+          "id": "tom"
+        }
+      ],
+      "visual_tags": [
+        "standing firm",
+        "protective pose",
+        "hands on hips",
+        "determined",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tom",
+          "text": "On není věc.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Er ist kein Ding.",
+            "en": "He's not an object.",
+            "fr": "Ce n'est pas un objet.",
+            "it": "Lui non è una cosa.",
+            "ja": "奴は物じゃない。",
+            "ko": "그건 물건이 아냐.",
+            "pl": "On nie jest przedmiotem.",
+            "pt-BR": "Ele não é uma coisa.",
+            "ru": "Он не вещь.",
+            "uk": "Він не річ.",
+            "vi": "Nó không phải là đồ vật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "titan"
+        }
+      ],
+      "visual_tags": [
+        "giant creature",
+        "standing up",
+        "dust cloud",
+        "glowing veins",
+        "crystal core",
+        "imposing",
+        "from below"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BOOOM!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "tom"
+        },
+        {
+          "id": "zipp"
+        }
+      ],
+      "visual_tags": [
+        "looking up",
+        "calm",
+        "holding hands",
+        "robot glowing",
+        "peaceful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tom",
+          "text": "Zippe, nezraníme ho.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zippe, wir verletzen ihn nicht.",
+            "en": "Zippe, we won't hurt him.",
+            "fr": "Zippe, on ne va pas le blesser.",
+            "it": "Zippe, non feriamolo.",
+            "ja": "ジップ、怪我させないで。",
+            "ko": "지피, 다치게 하지 마.",
+            "pl": "Zippe, nie zranimy go.",
+            "pt-BR": "Zippe, não vamos machucá-lo.",
+            "ru": "Зипп, мы его не раним.",
+            "uk": "Зіппе, не зашкодьмо йому.",
+            "vi": "Zippe, chúng ta đừng làm nó bị thương."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "zipp"
+        }
+      ],
+      "visual_tags": [
+        "electric sparks",
+        "blue light",
+        "emitting signal",
+        "focused",
+        "ears perked"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "PIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, dust motes floating, light shifting slowly, static camera",
+      "motion_llm": "electric sparks jumping from antenna, static camera",
+      "wd14_tags": {
+        "blue theme": 0.885,
+        "eye focus": 0.715,
+        "no humans": 0.622,
+        "solo": 0.61,
+        "close-up": 0.563,
+        "reflection": 0.428,
+        "robot": 0.405,
+        "science fiction": 0.395,
+        "blue eyes": 0.367,
+        "monochrome": 0.361
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_crater",
+      "characters": [
+        {
+          "id": "titan"
+        },
+        {
+          "id": "rex"
+        }
+      ],
+      "visual_tags": [
+        "titan calming",
+        "rex running away",
+        "fleeing",
+        "dust trail",
+        "relief"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BĚH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moon",
+      "characters": [
+        {
+          "id": "tom"
+        },
+        {
+          "id": "zipp"
+        }
+      ],
+      "visual_tags": [
+        "looking at horizon",
+        "many lights",
+        "smile",
+        "hopeful",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tom",
+          "text": "Můžeme letět domů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir können nach Hause fliegen.",
+            "en": "We can fly home.",
+            "fr": "On peut rentrer à la maison.",
+            "it": "Possiamo tornare a casa.",
+            "ja": "家に帰れるよ。",
+            "ko": "집으로 돌아갈 수 있어.",
+            "pl": "Możemy lecieć do domu.",
+            "pt-BR": "Podemos voltar para casa.",
+            "ru": "Можем лететь домой.",
+            "uk": "Ми можемо летіти додому.",
+            "vi": "Chúng ta có thể bay về nhà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_moon",
+      "characters": [
+        {
+          "id": "tom"
+        },
+        {
+          "id": "zipp"
+        }
+      ],
+      "visual_tags": [
+        "robot shaking head",
+        "robot nodding",
+        "hugging",
+        "happy",
+        "stars"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "tom",
+          "text": "Chceš zůstat?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Willst du bleiben?",
+            "en": "Do you want to stay?",
+            "fr": "Tu veux rester ?",
+            "it": "Vuoi restare?",
+            "ja": "残りたい？",
+            "ko": "남고 싶어?",
+            "pl": "Chcesz zostać?",
+            "pt-BR": "Quer ficar?",
+            "ru": "Хочешь остаться?",
+            "uk": "Хочеш залишитися?",
+            "vi": "Cậu muốn ở lại sao?"
+          }
+        },
+        {
+          "speaker_id": "tom",
+          "text": "Tak zůstaneme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann bleiben wir.",
+            "en": "Then we'll stay.",
+            "fr": "Alors on reste.",
+            "it": "Allora restiamo.",
+            "ja": "じゃあ、一緒にいよう。",
+            "ko": "그럼 남자.",
+            "pl": "To zostaniemy.",
+            "pt-BR": "Então ficamos.",
+            "ru": "Тогда останемся.",
+            "uk": "Тоді залишимося.",
+            "vi": "Vậy thì chúng ta ở lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

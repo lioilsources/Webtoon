@@ -1,0 +1,77 @@
+{
+  "id": "w_lx_k4_08_sam_mechanicky_faraon",
+  "title": "Sam a souboj s mechanickým faraonem",
+  "synopsis": "Mladý vynálezce Sam v mecha-brnění bojuje s prastarým robotickým faraonem uvnitř zlaté pyramidy.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: Sam musí bleskově najít cestu ven z hroutící se pyramidy."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pyramid",
+      "l_core"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sam",
+      "name": "Sam",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 11 with short black hair and blue eyes",
+      "base": "male child, short black hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots, mechanical armor plates, jet boots, rocket pack"
+      },
+      "photo": "a determined Czech boy aged 11 with short black hair and blue eyes",
+      "tag_prompt": "male child, short black hair, blue eyes, fair skin, determined face, silver space helmet, white spacesuit, purple gloves, boots, mechanical armor plates, jet boots, rocket pack",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "faraon",
+      "name": "Mecha-Faraon",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a towering golden robot pharaoh with glowing red eyes and a mechanical staff",
+      "base": "robot, mecha, tall, bulky, gold armor, steel joints, glowing red eyes, nemes headdress, holding staff",
+      "outfits": {
+        "default": "gold plating, steel joints, glowing red visor, energy staff"
+      },
+      "photo": "a towering golden robot pharaoh with glowing red eyes and a mechanical staff",
+      "tag_prompt": "robot, mecha, tall, bulky, gold armor, steel joints, glowing red eyes, nemes headdress, holding staff, gold plating, steel joints, glowing red visor, energy staff",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pyramid",
+      "name": "Zlatá pyramida",
+      "description": "Zlatá pyramida",
+      "tag_prompt": "indoors, ancient pyramid interior, gold walls, stone carvings, high tech elements, dim lighting, dust particles, cinematic",
+      "mood": ""
+    },
+    {
+      "id": "l_core",
+      "name": "Jádro pyramidy",
+      "description": "Jádro pyramidy",
+      "tag_prompt": "indoors, pyramid core chamber, glowing crystals, sparks, explosions, debris, dramatic lighting, smoke",
+      "mood": ""
+    }
+  ]
+}

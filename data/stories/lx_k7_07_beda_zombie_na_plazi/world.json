@@ -1,0 +1,125 @@
+{
+  "id": "w_lx_k7_07_beda_zombie_na_plazi",
+  "title": "Béďa a dopis od kapitána",
+  "synopsis": "Béďa Plž pomáhá duchu kapitána Bezkosta doručit dopis jeho vnučce, aby ukončil jeho stoleté puto.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hořkosladký konec: kapitán odpočívá, vnučka má odpověď a Béďa slibuje, že bude doručovat další dopisy."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_underwater_city",
+      "l_beach_night",
+      "l_shipwreck",
+      "l_house_morning"
+    ]
+  },
+  "characters": [
+    {
+      "id": "beda",
+      "name": "Béďa Plž",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a young humanoid snail with a large green spiral shell and large expressive eyes",
+      "base": "humanoid, snail, green shell, spiral shell, large eyes, kind face, young adult",
+      "outfits": {
+        "default": "large conch shell shield, glowing blue symbols, seaweed loincloth, bare feet"
+      },
+      "photo": "a young humanoid snail with a large green spiral shell and large expressive eyes",
+      "tag_prompt": "humanoid, snail, green shell, spiral shell, large eyes, kind face, young adult, large conch shell shield, glowing blue symbols, seaweed loincloth, bare feet",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "queen",
+      "name": "Královna Mořské Houby",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "an elegant mushroom humanoid with purple skin and flowing hair",
+      "base": "humanoid, mushroom, purple skin, gills, long hair, elegant",
+      "outfits": {
+        "default": "coral crown, flowing seaweed dress, pearl necklace"
+      },
+      "photo": "an elegant mushroom humanoid with purple skin and flowing hair",
+      "tag_prompt": "humanoid, mushroom, purple skin, gills, long hair, elegant, coral crown, flowing seaweed dress, pearl necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "captain",
+      "name": "Kapitán Bezkost",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a transparent ghost pirate with a triangular hat and glowing eyes",
+      "base": "ghost, transparent, pirate, triangular hat, long coat, skeletal face, glowing eyes",
+      "outfits": {
+        "default": "tattered pirate coat, triangular hat, cutlass"
+      },
+      "photo": "a transparent ghost pirate with a triangular hat and glowing eyes",
+      "tag_prompt": "ghost, transparent, pirate, triangular hat, long coat, skeletal face, glowing eyes, tattered pirate coat, triangular hat, cutlass",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "anicka",
+      "name": "Stará Paní Anička",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a kind Czech grandmother aged 80 with white hair and reading glasses",
+      "base": "adult, mature female, old woman, white hair, wrinkles, kind eyes",
+      "outfits": {
+        "default": "knitted cardigan, long skirt, reading glasses"
+      },
+      "photo": "a kind Czech grandmother aged 80 with white hair and reading glasses",
+      "tag_prompt": "adult, mature female, old woman, white hair, wrinkles, kind eyes, knitted cardigan, long skirt, reading glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_underwater_city",
+      "name": "Podmořské město",
+      "description": "Podmořské město",
+      "tag_prompt": "outdoors, underwater, coral city, colorful corals, fish, bubbles, blue water, bioluminescence",
+      "mood": ""
+    },
+    {
+      "id": "l_beach_night",
+      "name": "Pláž, noc",
+      "description": "Pláž, noc",
+      "tag_prompt": "outdoors, beach, sand, moon, night, stars, ocean waves, dark blue",
+      "mood": ""
+    },
+    {
+      "id": "l_shipwreck",
+      "name": "Vrak lodi",
+      "description": "Vrak lodi",
+      "tag_prompt": "outdoors, underwater, shipwreck, wooden ship, dark, dust particles, beams of light",
+      "mood": ""
+    },
+    {
+      "id": "l_house_morning",
+      "name": "Dům na pobřeží, ráno",
+      "description": "Dům na pobřeží, ráno",
+      "tag_prompt": "outdoors, coastal house, rocks, morning light, sunrise, calm sea",
+      "mood": ""
+    }
+  ]
+}

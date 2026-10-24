@@ -1,0 +1,488 @@
+{
+  "title": "Leo a Zápisník Osudu",
+  "title_i18n": {
+    "de": "Leo und das Schicksalsbuch",
+    "en": "Leo and the Notebook of Fate",
+    "fr": "Leo et le Cahier du Destin",
+    "it": "Leo e il Quaderno del Destino",
+    "ja": "レオと運命のノート",
+    "ko": "레오와 운명의 일기",
+    "pl": "Leo i Zeszyt Przeznaczenia",
+    "pt-BR": "Leo e o Diário do Destino",
+    "ru": "Лео и Записник Судьбы",
+    "uk": "Лео та Щоденник Судби",
+    "vi": "Leo và Cuốn Sổ Định Mệnh"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_shadow",
+      "characters": [],
+      "visual_tags": [
+        "floating ruins",
+        "black clouds",
+        "lightning",
+        "dark atmosphere",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Temná dimenze plná levitujících ruin.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine dunkle Dimension, voller schwebender Ruinen.",
+            "en": "A dark dimension filled with floating ruins.",
+            "fr": "Une dimension sombre remplie de ruines flottantes.",
+            "it": "Una dimensione oscura piena di rovine levitanti.",
+            "ja": "浮遊する廃墟に満ちた暗黒次元。",
+            "ko": "부유하는 폐허들로 가득한 어둠의 차원.",
+            "pl": "Mroczna wymiar pełen unoszących się ruin.",
+            "pt-BR": "Uma dimensão sombria repleta de ruínas flutuantes.",
+            "ru": "Тёмное измерение, полное парящих руин.",
+            "uk": "Темне вимір, сповнений левітуючих руїн.",
+            "vi": "Một chiều tối tăm đầy những tàn tích bay lơ lửng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, clouds drifting slowly, static camera",
+      "motion_llm": "black clouds drifting slowly, lightning flashing in distance, static camera",
+      "wd14_tags": {
+        "no humans": 0.924,
+        "scenery": 0.917,
+        "purple theme": 0.902,
+        "cloud": 0.885,
+        "sky": 0.878,
+        "outdoors": 0.772,
+        "purple sky": 0.741,
+        "cloudy sky": 0.728,
+        "water": 0.69,
+        "lightning": 0.626,
+        "ruins": 0.543
+      }
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        },
+        {
+          "id": "king"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding book",
+        "open book",
+        "pen",
+        "floating ghost",
+        "large monster",
+        "looking at each other",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "king",
+          "text": "Jsi jen malé dítě, Leo! Neznáš mé pravé jméno! Nemůžeš mě porazit!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist nur ein kleines Kind, Leo! Du kennst meinen wahren Namen nicht! Du kannst mich nicht besiegen!",
+            "en": "You're just a kid, Leo! You don't know my true name! You can't defeat me!",
+            "fr": "Tu n'es qu'un petit enfant, Leo ! Tu ne connais pas mon vrai nom ! Tu ne peux pas me vaincre !",
+            "it": "Sei solo un bambino, Leo! Non conosci il mio vero nome! Non puoi sconfiggermi!",
+            "ja": "お前はただの小さな子供だ、レオ！俺の本名など知らねえ！倒せるわけねえだろうが！",
+            "ko": "너는 그냥 어린애일 뿐이야, 레오! 내 진명을 모른다고! 나를 이길 수 없어!",
+            "pl": "Jesteś tylko małym dzieckiem, Leo! Nie znasz mojego prawdziwego imienia! Nie możesz mnie pokonać!",
+            "pt-BR": "Você só é uma criança, Leo! Você não conhece meu verdadeiro nome! Não pode me derrotar!",
+            "ru": "Ты всего лишь ребёнок, Лео! Ты не знаешь моего истинного имени! Ты не сможешь меня победить!",
+            "uk": "Ти лише маленька дитина, Лео! Ти не знаєш мого справжнього імені! Ти не зможеш мене перемогти!",
+            "vi": "Cậu chỉ là một đứa trẻ con, Leo! Cậu không biết tên thật của ta! Không thể đánh bại ta được đâu!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "adjusting glasses",
+        "smirk",
+        "cool smile",
+        "holding pen",
+        "confident",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Ale já tvoje jméno znám. Přečetl jsem si ho v prastarých svitcích knihovny!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Doch ich kenne deinen Namen. Ich habe ihn in den uralten Schriftrollen der Bibliothek gelesen!",
+            "en": "But I do know your name. I read it in the ancient scrolls of the library!",
+            "fr": "Si, je le connais. Je l'ai lu dans les vieux parchemins de la bibliothèque !",
+            "it": "Invece, il tuo nome lo conosco. L'ho letto nei rotoli antichi della biblioteca!",
+            "ja": "でも俺はお前の名前を知っている。古書庫の巻物で読んだんだ！",
+            "ko": "하지만 난 네 이름을 알고 있어. 고대의 두루마리에서 읽었거든!",
+            "pl": "Ale ja znam twoje imię. Przeczytałem je w pradawnych zwojach z biblioteki!",
+            "pt-BR": "Mas eu conheço seu nome. Li nos pergaminhos antigos da biblioteca!",
+            "ru": "Но я знаю твоё имя. Я прочитал его в древних свитках библиотеки!",
+            "uk": "Але я знаю твоє ім'я. Я прочитав його в давніх сувоях бібліотеки!",
+            "vi": "Nhưng ta biết tên cậu mà. Ta đã đọc nó trong những cuộn giấy cổ xưa của thư viện!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "writing",
+        "pen on paper",
+        "focused eyes",
+        "intense",
+        "book open"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠKRT!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "king"
+        }
+      ],
+      "visual_tags": [
+        "screaming",
+        "open mouth",
+        "dissolving",
+        "turning to dust",
+        "dark energy",
+        "spiraling",
+        "pain"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "AARGH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, water rippling, soft glow pulsing, static camera",
+      "motion_llm": "the ghost dissolves into swirling dark dust, static camera",
+      "wd14_tags": {
+        "skeleton": 0.979,
+        "pillar": 0.866,
+        "blue theme": 0.824,
+        "solo": 0.713,
+        "no humans": 0.684,
+        "ribs": 0.682,
+        "column": 0.485,
+        "glowing": 0.475,
+        "water": 0.412,
+        "ruins": 0.401,
+        "bone": 0.396
+      }
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "closing book",
+        "snap",
+        "standing tall",
+        "calm",
+        "wind blowing coat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tento svět patří živým.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Diese Welt gehört den Lebenden.",
+            "en": "This world belongs to the living.",
+            "fr": "Ce monde appartient aux vivants.",
+            "it": "Questo mondo appartiene ai vivi.",
+            "ja": "この世界は生きた者のものさ。",
+            "ko": "이 세계는 살아있는 자들의 것이다.",
+            "pl": "Ten świat należy do żywych.",
+            "pt-BR": "Este mundo pertence aos vivos.",
+            "ru": "Этот мир принадлежит живым.",
+            "uk": "Цей світ належить живим.",
+            "vi": "Thế giới này thuộc về người sống."
+          }
+        }
+      ],
+      "sfx": [
+        {
+          "text": "CVAK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ruins",
+      "characters": [
+        {
+          "id": "leo"
+        }
+      ],
+      "visual_tags": [
+        "looking at book",
+        "thoughtful",
+        "shadow on face",
+        "solemn",
+        "holding book close"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "leo",
+          "text": "Tajemství mě změní.",
+          "kind": "thought",
+          "i18n": {
+            "de": "Das Geheimnis wird mich verändern.",
+            "en": "The secret will change me.",
+            "fr": "Le secret va me changer.",
+            "it": "Il segreto mi cambierà.",
+            "ja": "この秘密が俺を変えてしまう。",
+            "ko": "비밀이 나를 바꿀 거야.",
+            "pl": "Tajemnica mnie zmieni.",
+            "pt-BR": "O segredo vai me mudar.",
+            "ru": "Тайна изменит меня.",
+            "uk": "Таємниця змінить мене.",
+            "vi": "Bí mật sẽ thay đổi ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

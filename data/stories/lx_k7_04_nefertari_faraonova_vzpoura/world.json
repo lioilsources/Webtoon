@@ -1,0 +1,101 @@
+{
+  "id": "w_lx_k7_04_nefertari_faraonova_vzpoura",
+  "title": "Nefertari a Faraonův stín",
+  "synopsis": "Nefertari Svítící a její vlk Anubis konfrontují osamělého Faraona, který zakryl slunce zlatem, a učí ho, že přátelství je cennější než poklady.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: Faraon zvedá zlatý kotouč a lidé se dívají nahoru, jeho tvář zůstává skryta."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_desert",
+      "l_golden_hall",
+      "l_pyramid_top"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nefertari",
+      "name": "Nefertari Svítící",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an ancient Egyptian girl aged 11 with long straight black hair and golden armbands",
+      "base": "female child, long black hair, straight hair, golden eyes, fair skin, ancient egyptian style",
+      "outfits": {
+        "default": "white linen dress, gold armbands, gold necklace, barefoot"
+      },
+      "photo": "an ancient Egyptian girl aged 11 with long straight black hair and golden armbands",
+      "tag_prompt": "female child, long black hair, straight hair, golden eyes, fair skin, ancient egyptian style, white linen dress, gold armbands, gold necklace, barefoot",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "anubis",
+      "name": "Anubis",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a tall black jackal with white chest fur and wise eyes",
+      "base": "jackal, anthropomorphic jackal, black fur, white chest patch, large ears, wise eyes",
+      "outfits": {
+        "default": "gold collar"
+      },
+      "photo": "a tall black jackal with white chest fur and wise eyes",
+      "tag_prompt": "jackal, anthropomorphic jackal, black fur, white chest patch, large ears, wise eyes, gold collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "pharaoh",
+      "name": "Faraon Žebřík III.",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a tall ancient Egyptian man aged 30 with a stern face and sharp features",
+      "base": "adult, mature male, tall, slender, ancient egyptian pharaoh, gold mask, nemes headdress",
+      "outfits": {
+        "default": "gold mask, gold nemes headdress, gold jewelry, white linen kilt"
+      },
+      "photo": "a tall ancient Egyptian man aged 30 with a stern face and sharp features",
+      "tag_prompt": "adult, mature male, tall, slender, ancient egyptian pharaoh, gold mask, nemes headdress, gold mask, gold nemes headdress, gold jewelry, white linen kilt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_desert",
+      "name": "Poušť u pyramid",
+      "description": "Poušť u pyramid",
+      "tag_prompt": "outdoors, desert, dunes, pyramids in background, orange sky, twilight, sand",
+      "mood": ""
+    },
+    {
+      "id": "l_golden_hall",
+      "name": "Zlatá síň pyramidy",
+      "description": "Zlatá síň pyramidy",
+      "tag_prompt": "indoors, pyramid interior, gold walls, gold statues, throne, dim light, dust",
+      "mood": ""
+    },
+    {
+      "id": "l_pyramid_top",
+      "name": "Vrchol pyramidy",
+      "description": "Vrchol pyramidy",
+      "tag_prompt": "outdoors, pyramid roof, night sky, stars, large golden disc shadow, desert below",
+      "mood": ""
+    }
+  ]
+}
