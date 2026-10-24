@@ -60,6 +60,7 @@ class PanelView extends StatelessWidget {
       size,
       panel.bubbles,
       characters: panel.characters,
+      faces: panel.faces,
       textScaler: scaler,
     );
     return Stack(

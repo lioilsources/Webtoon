@@ -266,6 +266,9 @@ type SBPanel struct {
 	Animate     bool   `json:"animate,omitempty"`
 	Motion      string `json:"motion,omitempty"`
 	LoopSeconds int    `json:"loop_seconds,omitempty"`
+	// Faces are the face boxes of the rendered image, [x0, y0, x1, y1] normalized (m0/faces.py), written after
+	// the render; the reader keeps bubbles off them.
+	Faces [][4]float64 `json:"faces,omitempty"`
 }
 
 type SBChar struct {

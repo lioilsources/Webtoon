@@ -215,14 +215,18 @@ FROM panels WHERE episode_id = $1;
 
 -- name: InsertPanel :exec
 INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags,
-                    animate, motion, loop_seconds, video_status)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13);
+                    animate, motion, loop_seconds, video_status, faces)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14);
 
 -- name: GetPanel :one
 SELECT * FROM panels WHERE episode_id = $1 AND idx = $2;
 
 -- name: ListPanels :many
 SELECT * FROM panels WHERE episode_id = $1 ORDER BY idx;
+
+-- Face boxes measured after the panel was imported (webtoon set-faces).
+-- name: SetPanelFaces :exec
+UPDATE panels SET faces = $3, updated_at = now() WHERE episode_id = $1 AND idx = $2;
 
 -- name: SetPanelStatus :exec
 UPDATE panels SET status = $3, error = $4, updated_at = now() WHERE episode_id = $1 AND idx = $2;

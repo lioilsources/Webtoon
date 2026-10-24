@@ -35,6 +35,8 @@ type Panel struct {
 	VideoURL        string `json:"video_url,omitempty"`
 	VideoError      string `json:"video_error,omitempty"`
 	EstimateSeconds int    `json:"estimate_seconds,omitempty"` // render-time hint for the editor
+	// Faces: face boxes of the image, [[x0, y0, x1, y1]] normalized; the reader keeps bubbles off them.
+	Faces json.RawMessage `json:"faces,omitempty"`
 }
 
 // MediaURL turns a path relative to MEDIA_DIR (panels.image_path / video_path) into the URL the
@@ -47,6 +49,9 @@ func PanelJSON(p dbq.Panel, mediaURL MediaURL) Panel {
 	out := Panel{Index: p.Idx, Status: p.Status, Shot: p.Shot, LocationID: p.LocationID, GapAfter: p.GapAfter,
 		Bubbles: RawOr(p.Bubbles, "[]"), SFX: RawOr(p.Sfx, "[]"), Characters: RawOr(p.Characters, "[]"),
 		Seed: p.Seed, IdentityScore: p.IdentityScore, Error: p.Error}
+	if f := RawOr(p.Faces, "[]"); string(f) != "[]" {
+		out.Faces = f
+	}
 	if p.Status == "ready" && p.ImagePath != "" {
 		out.ImageURL = mediaURL(p.ImagePath)
 		out.Width, out.Height = p.Width, p.Height

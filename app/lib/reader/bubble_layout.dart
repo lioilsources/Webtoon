@@ -82,10 +82,17 @@ typedef BubbleStyleFor = TextStyle Function(BubbleKind kind, double scale);
 /// (characters[].bbox, §5.4 postprocess) the bubble takes the corner that covers the fewest
 /// character boxes and its tail aims at the speaker's head. An explicit `anchor` on the
 /// bubble wins over both.
+///
+/// With [faces] (Panel.faces, normalized; m0/faces.py) every bubble instead takes the spot that
+/// covers the least of the faces, scored like compose.py (rules/base/compose.yaml `faces`): left
+/// and right column (and centre for talk) every 12 px, never over an earlier bubble nor above the
+/// previous one; covered share of a padded face ×1000, then height and leaving the usual column.
+/// Tails without a speaker box aim at the nearest face's edge.
 List<PlacedBubble> layoutBubbles(
   Size size,
   List<Bubble> bubbles, {
   List<PanelCharacter> characters = const [],
+  List<Rect> faces = const [],
   TextScaler textScaler = TextScaler.noScaling,
   BubbleStyleFor styleFor = bubbleTextStyle,
 }) {
@@ -145,6 +152,46 @@ List<PlacedBubble> layoutBubbles(
 
   final out = <PlacedBubble>[];
 
+  // Face zones in panel pixels, padded (compose.yaml faces.pad = 0.04 of the width).
+  final pad = 0.04 * w;
+  final zones = [
+    for (final f in faces)
+      Rect.fromLTRB(
+        f.left * w - pad,
+        f.top * h - pad,
+        f.right * w + pad,
+        f.bottom * h + pad,
+      ),
+  ];
+
+  /// Cheapest spot for a bubble of [sz] (see the doc comment); null = no free spot left.
+  Rect? offFaces(Size sz, {required bool narration, required int slot}) {
+    final rightFirst = !narration && slot.isOdd;
+    final xs = <(double, double)>[
+      (margin, rightFirst ? 8 : 0),
+      (w - margin - sz.width, rightFirst ? 0 : 8),
+      if (!narration) ((w - sz.width) / 2, 14),
+    ];
+    final y0 = out.isEmpty ? margin : math.max(margin, out.last.rect.top);
+    final yMax = math.max(y0, h - margin - sz.height);
+    (double, Rect)? best;
+    for (var y = y0; y <= yMax; y += 12 * s) {
+      for (final (x, sideCost) in xs) {
+        final r = Rect.fromLTWH(x, y, sz.width, sz.height);
+        if (out.any((o) => overlapArea(r, o.rect.inflate(12 * s)) > 0)) {
+          continue;
+        }
+        var covered = 0.0;
+        for (final z in zones) {
+          covered += 1000 * overlapArea(r, z) / (z.width * z.height);
+        }
+        final cost = covered + 60 * y / h + sideCost;
+        if (best == null || cost < best.$1) best = (cost, r);
+      }
+    }
+    return best?.$2;
+  }
+
   // --- narration: top-left stack -----------------------------------------------------
   var y = margin;
   for (var i = 0; i < bubbles.length; i++) {
@@ -152,7 +199,9 @@ List<PlacedBubble> layoutBubbles(
     if (!b.isNarration) continue;
     final style = fit(b, styleFor(b.kind, s));
     final sz = measure(b, style);
-    final rect = clampRect(Rect.fromLTWH(margin, y, sz.width, sz.height));
+    final rect =
+        (zones.isEmpty ? null : offFaces(sz, narration: true, slot: 0)) ??
+        clampRect(Rect.fromLTWH(margin, y, sz.width, sz.height));
     out.add(
       PlacedBubble(
         index: i,
@@ -211,7 +260,9 @@ List<PlacedBubble> layoutBubbles(
       final l = cover(at(false)), r = cover(at(true));
       if ((l - r).abs() > 1) right = r < l;
     }
-    final rect = at(right);
+    final rect =
+        (zones.isEmpty ? null : offFaces(sz, narration: false, slot: slot)) ??
+        at(right);
     if (right) {
       rightY = rect.bottom + 30 * s;
     } else {
@@ -221,6 +272,33 @@ List<PlacedBubble> layoutBubbles(
     Offset? target;
     if (b.anchor != null) {
       target = Offset(b.anchor!.dx * w, b.anchor!.dy * h);
+    } else if (speakerBox == null && zones.isNotEmpty) {
+      // Nearest face: aim at its near edge, so the tail stops short of it.
+      final fs = [
+        for (final f in faces)
+          Rect.fromLTRB(f.left * w, f.top * h, f.right * w, f.bottom * h),
+      ];
+      final face = fs.reduce(
+        (a, b) =>
+            (a.center - rect.center).distance <=
+                (b.center - rect.center).distance
+            ? a
+            : b,
+      );
+      if (face.top < rect.bottom && face.bottom > rect.top) {
+        // Face level with the bubble: a short tail down beside it, on the bubble's side.
+        final right = face.center.dx > rect.center.dx;
+        target = Offset(
+          right ? face.left - 8 * s : face.right + 8 * s,
+          rect.bottom + 48 * s,
+        );
+      } else {
+        final below = face.center.dy >= rect.center.dy;
+        target = Offset(
+          rect.center.dx.clamp(face.left, face.right),
+          below ? face.top : face.bottom,
+        );
+      }
     } else if (speakerBox != null) {
       // Aim at the head: upper part of the speaker's box, horizontally under the bubble if possible.
       target = Offset(
@@ -246,6 +324,11 @@ List<PlacedBubble> layoutBubbles(
     );
   }
   return out;
+}
+
+double overlapArea(Rect a, Rect b) {
+  final x = a.intersect(b);
+  return x.width > 0 && x.height > 0 ? x.width * x.height : 0;
 }
 
 /// Tail geometry. Without a target: compose.py — from the bottom centre, 48 px down and 40 px

@@ -60,6 +60,14 @@ func MustJSON(v any) json.RawMessage {
 	return b
 }
 
+// nonNilFaces: a panel without measured faces stores [] (the column is NOT NULL), never null.
+func nonNilFaces(f [][4]float64) [][4]float64 {
+	if f == nil {
+		return [][4]float64{}
+	}
+	return f
+}
+
 func unmarshalOr[T any](raw json.RawMessage, def T) T {
 	if len(raw) == 0 || string(raw) == "null" {
 		return def
@@ -285,6 +293,7 @@ func (s *Store) SaveStoryboard(ctx context.Context, episodeID string, sb *domain
 				Bubbles: MustJSON(p.Bubbles), Sfx: MustJSON(p.SFX), Characters: MustJSON(p.Characters),
 				VisualTags: MustJSON(p.VisualTags),
 				Animate:    p.Animate, Motion: p.Motion, LoopSeconds: int32(storyboard.LoopSecondsOr(p.LoopSeconds)), VideoStatus: videoStatus,
+				Faces: MustJSON(nonNilFaces(p.Faces)),
 			}); err != nil {
 				return err
 			}

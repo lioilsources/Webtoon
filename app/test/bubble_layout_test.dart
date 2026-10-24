@@ -363,6 +363,63 @@ void main() {
     await tester.tap(find.text('Vygenerovat znovu'));
     expect(regen, 1);
   });
+
+  group('faces', () {
+    // A close-up: the face fills the upper middle of the panel, where the corners used to go.
+    const face = Rect.fromLTRB(0.2, 0.05, 0.8, 0.45);
+    Rect px(Rect f) => Rect.fromLTRB(
+      f.left * portrait.width,
+      f.top * portrait.height,
+      f.right * portrait.width,
+      f.bottom * portrait.height,
+    );
+
+    test('bubbles keep off a face and stay in reading order', () {
+      final out = layoutBubbles(
+        portrait,
+        [narr, talk('Kdo to řekl?'), talk('Já.', who: 'c_mia')],
+        faces: const [face],
+      );
+      expect(out, hasLength(3));
+      for (final p in out) {
+        expect(overlaps(p.rect, px(face)), isFalse, reason: p.bubble.text);
+      }
+      for (var i = 1; i < out.length; i++) {
+        expect(out[i].rect.top, greaterThanOrEqualTo(out[i - 1].rect.top));
+        expect(overlaps(out[i].rect, out[i - 1].rect), isFalse);
+      }
+    });
+
+    test('the tail aims at the face edge, not into it', () {
+      final out = layoutBubbles(
+        portrait,
+        [talk('Ahoj!', who: 'nikdo')],
+        faces: const [face],
+      );
+      final tip = out.single.tailTip!;
+      expect(px(face).contains(tip), isFalse);
+    });
+
+    test('a small face far away leaves the top corners free', () {
+      const far = Rect.fromLTRB(0.45, 0.7, 0.5, 0.75);
+      final out = layoutBubbles(portrait, [talk('Haló?')], faces: const [far]);
+      expect(out.single.rect.top, lessThan(60));
+    });
+
+    test('Panel.faces parses normalized boxes and skips junk', () {
+      final p = Panel.fromJson({
+        'index': 0,
+        'faces': [
+          [0.1, 0.2, 0.3, 0.4],
+          [0.5],
+          'x',
+          [0.6, 0.6, 0.6, 0.9],
+        ],
+      });
+      expect(p.faces, [const Rect.fromLTRB(0.1, 0.2, 0.3, 0.4)]);
+      expect(Panel.fromJson({'index': 0}).faces, isEmpty);
+    });
+  });
 }
 
 final _png = Uri.parse(

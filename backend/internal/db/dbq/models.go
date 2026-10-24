@@ -141,6 +141,7 @@ type Panel struct {
 	VideoPath     string
 	VideoSeed     int64
 	VideoError    string
+	Faces         json.RawMessage
 }
 
 type Setting struct {

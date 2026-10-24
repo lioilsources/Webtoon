@@ -221,7 +221,7 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 				Bubbles: store.MustJSON(nonNil(p.Bubbles)), Sfx: store.MustJSON(nonNil(p.SFX)),
 				Characters: store.MustJSON(nonNil(p.Characters)), VisualTags: store.MustJSON(nonNil(p.VisualTags)),
 				Animate: p.Animate, Motion: p.Motion, LoopSeconds: int32(storyboard.LoopSecondsOr(p.LoopSeconds)),
-				VideoStatus: map[bool]string{true: "pending"}[p.Animate],
+				VideoStatus: map[bool]string{true: "pending"}[p.Animate], Faces: store.MustJSON(nonNil(p.Faces)),
 			}); err != nil {
 				return err
 			}

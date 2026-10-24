@@ -923,7 +923,7 @@ func (q *Queries) GetLocation(ctx context.Context, arg GetLocationParams) (Locat
 }
 
 const getPanel = `-- name: GetPanel :one
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 AND idx = $2
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error, faces FROM panels WHERE episode_id = $1 AND idx = $2
 `
 
 type GetPanelParams struct {
@@ -964,12 +964,13 @@ func (q *Queries) GetPanel(ctx context.Context, arg GetPanelParams) (Panel, erro
 		&i.VideoPath,
 		&i.VideoSeed,
 		&i.VideoError,
+		&i.Faces,
 	)
 	return i, err
 }
 
 const getPanelForUpdate = `-- name: GetPanelForUpdate :one
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error, faces FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE
 `
 
 type GetPanelForUpdateParams struct {
@@ -1010,6 +1011,7 @@ func (q *Queries) GetPanelForUpdate(ctx context.Context, arg GetPanelForUpdatePa
 		&i.VideoPath,
 		&i.VideoSeed,
 		&i.VideoError,
+		&i.Faces,
 	)
 	return i, err
 }
@@ -1104,8 +1106,8 @@ func (q *Queries) GetWorld(ctx context.Context, id string) (World, error) {
 
 const insertPanel = `-- name: InsertPanel :exec
 INSERT INTO panels (episode_id, idx, shot, location_id, gap_after, bubbles, sfx, characters, visual_tags,
-                    animate, motion, loop_seconds, video_status)
-VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13)
+                    animate, motion, loop_seconds, video_status, faces)
+VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
 `
 
 type InsertPanelParams struct {
@@ -1122,6 +1124,7 @@ type InsertPanelParams struct {
 	Motion      string
 	LoopSeconds int32
 	VideoStatus string
+	Faces       json.RawMessage
 }
 
 func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error {
@@ -1139,6 +1142,7 @@ func (q *Queries) InsertPanel(ctx context.Context, arg InsertPanelParams) error 
 		arg.Motion,
 		arg.LoopSeconds,
 		arg.VideoStatus,
+		arg.Faces,
 	)
 	return err
 }
@@ -1345,7 +1349,7 @@ func (q *Queries) ListLocations(ctx context.Context, worldID string) ([]Location
 }
 
 const listPanels = `-- name: ListPanels :many
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 ORDER BY idx
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error, faces FROM panels WHERE episode_id = $1 ORDER BY idx
 `
 
 func (q *Queries) ListPanels(ctx context.Context, episodeID string) ([]Panel, error) {
@@ -1387,6 +1391,7 @@ func (q *Queries) ListPanels(ctx context.Context, episodeID string) ([]Panel, er
 			&i.VideoPath,
 			&i.VideoSeed,
 			&i.VideoError,
+			&i.Faces,
 		); err != nil {
 			return nil, err
 		}
@@ -1399,7 +1404,7 @@ func (q *Queries) ListPanels(ctx context.Context, episodeID string) ([]Panel, er
 }
 
 const listPanelsForUpdate = `-- name: ListPanelsForUpdate :many
-SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error FROM panels WHERE episode_id = $1 ORDER BY idx FOR UPDATE
+SELECT episode_id, idx, status, shot, location_id, image_path, prompt, negative, seed, width, height, gap_after, bubbles, sfx, characters, visual_tags, rating, identity, identity_score, attempts, error, updated_at, animate, motion, loop_seconds, video_status, video_path, video_seed, video_error, faces FROM panels WHERE episode_id = $1 ORDER BY idx FOR UPDATE
 `
 
 func (q *Queries) ListPanelsForUpdate(ctx context.Context, episodeID string) ([]Panel, error) {
@@ -1441,6 +1446,7 @@ func (q *Queries) ListPanelsForUpdate(ctx context.Context, episodeID string) ([]
 			&i.VideoPath,
 			&i.VideoSeed,
 			&i.VideoError,
+			&i.Faces,
 		); err != nil {
 			return nil, err
 		}
@@ -1946,6 +1952,22 @@ type SetEpisodeStatusParams struct {
 
 func (q *Queries) SetEpisodeStatus(ctx context.Context, arg SetEpisodeStatusParams) error {
 	_, err := q.db.Exec(ctx, setEpisodeStatus, arg.ID, arg.Status, arg.Error)
+	return err
+}
+
+const setPanelFaces = `-- name: SetPanelFaces :exec
+UPDATE panels SET faces = $3, updated_at = now() WHERE episode_id = $1 AND idx = $2
+`
+
+type SetPanelFacesParams struct {
+	EpisodeID string
+	Idx       int32
+	Faces     json.RawMessage
+}
+
+// Face boxes measured after the panel was imported (webtoon set-faces).
+func (q *Queries) SetPanelFaces(ctx context.Context, arg SetPanelFacesParams) error {
+	_, err := q.db.Exec(ctx, setPanelFaces, arg.EpisodeID, arg.Idx, arg.Faces)
 	return err
 }
 

@@ -42,6 +42,7 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/db"
 	"github.com/ol1n/webtoon/backend/internal/db/dbq"
 	"github.com/ol1n/webtoon/backend/internal/demo"
+	"github.com/ol1n/webtoon/backend/internal/domain"
 	"github.com/ol1n/webtoon/backend/internal/imageq"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/pack"
@@ -81,8 +82,10 @@ func main() {
 		err = runExportPack(ctx, cfg, args)
 	case "catalog-bundles":
 		err = runCatalogBundles(args)
+	case "set-faces":
+		err = runSetFaces(ctx, cfg, args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles|set-faces)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -103,6 +106,55 @@ func openStore(ctx context.Context, cfg config.Config) (*store.Store, error) {
 		return nil, err
 	}
 	return store.New(pool), nil
+}
+
+// runSetFaces copies panels[].faces of a storyboard (m0/faces.py --storyboard) onto an episode that was imported
+// before its faces were measured. Panels without faces in the storyboard are left as they are.
+func runSetFaces(ctx context.Context, cfg config.Config, args []string) error {
+	fs := flag.NewFlagSet("set-faces", flag.ExitOnError)
+	episode := fs.String("episode", "", "episode id")
+	fs.Usage = func() {
+		fmt.Fprintln(fs.Output(), "usage: webtoon set-faces -episode <id> <storyboard.json>")
+		fs.PrintDefaults()
+	}
+	fs.Parse(args) //nolint:errcheck
+	if *episode == "" || fs.NArg() != 1 {
+		fs.Usage()
+		os.Exit(2)
+	}
+	raw, err := os.ReadFile(fs.Arg(0))
+	if err != nil {
+		return err
+	}
+	var sb domain.Storyboard
+	if err := json.Unmarshal(raw, &sb); err != nil {
+		return fmt.Errorf("%s: %w", fs.Arg(0), err)
+	}
+	s, err := openStore(ctx, cfg)
+	if err != nil {
+		return err
+	}
+	defer s.Pool.Close()
+	q := dbq.New(s.Pool)
+	panels, err := q.ListPanels(ctx, *episode)
+	if err != nil {
+		return err
+	}
+	if len(panels) != len(sb.Panels) {
+		return fmt.Errorf("episode %s has %d panels, the storyboard %d", *episode, len(panels), len(sb.Panels))
+	}
+	n := 0
+	for i, p := range sb.Panels {
+		if p.Faces == nil {
+			continue
+		}
+		if err := q.SetPanelFaces(ctx, dbq.SetPanelFacesParams{EpisodeID: *episode, Idx: int32(i), Faces: store.MustJSON(p.Faces)}); err != nil {
+			return err
+		}
+		n++
+	}
+	fmt.Printf("%s: faces of %d/%d panels\n", *episode, n, len(panels))
+	return nil
 }
 
 func runSeed(ctx context.Context, cfg config.Config, args []string) error {

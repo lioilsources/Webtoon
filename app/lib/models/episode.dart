@@ -186,6 +186,9 @@ class Panel {
   final List<Bubble> bubbles;
   final List<Sfx> sfx;
   final List<PanelCharacter> characters;
+
+  /// Face boxes of the image (m0/faces.py), normalized 0..1; bubbles keep off them. Empty = unknown.
+  final List<Rect> faces;
   final String error;
 
   /// Motion panel: a 1–3 s seamless loop rendered from the still (PLAN-motion-panels).
@@ -210,6 +213,7 @@ class Panel {
     this.bubbles = const [],
     this.sfx = const [],
     this.characters = const [],
+    this.faces = const [],
     this.error = '',
     this.animate = false,
     this.motion = '',
@@ -236,6 +240,7 @@ class Panel {
       characters: objList(j['characters'])
           .map((c) => PanelCharacter.fromJson(c, imageWidth: w, imageHeight: h))
           .toList(),
+      faces: parseFaces(j['faces']),
       error: str(j['error']),
       animate: j['animate'] == true,
       motion: str(j['motion']),
@@ -247,6 +252,20 @@ class Panel {
       videoError: str(j['video_error']),
       estimateSeconds: integer(j['estimate_seconds']),
     );
+  }
+
+  /// `faces`: [[x0, y0, x1, y1], …] normalized; malformed entries are skipped.
+  static List<Rect> parseFaces(Object? v) {
+    if (v is! List) return const [];
+    final out = <Rect>[];
+    for (final f in v) {
+      if (f is! List || f.length < 4) continue;
+      final c = [for (final x in f.take(4)) dbl(x)];
+      if (c.any((x) => x == null)) continue;
+      final r = Rect.fromLTRB(c[0]!, c[1]!, c[2]!, c[3]!);
+      if (r.width > 0 && r.height > 0) out.add(r);
+    }
+    return out;
   }
 
   bool get isReady => status == 'ready' && imageUrl != null;
@@ -282,6 +301,7 @@ class Panel {
     bubbles: bubbles ?? this.bubbles,
     sfx: sfx,
     characters: characters,
+    faces: faces,
     error: error,
     animate: animate,
     motion: motion,
