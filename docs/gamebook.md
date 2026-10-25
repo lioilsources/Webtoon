@@ -37,5 +37,17 @@ na backend v tailnetu. Beta editor proto běží offline nad tím, co je v zipu:
 4. **Odeslat autorovi**: export větve jako JSON přes systémové sdílení (žádný server). Autor ji může nechat
    nakreslit pipeline (beats → storyboard) a vydat v další verzi gamebooku.
 
+Větev od čtenáře → uzly knihy: `python3 m0/gamebook.py import-branch data/gamebooks/<id>/graph.yaml vetev.json
+--name t1` přidá uzly `t1_<n>` (beats = použitý obrázek + bubliny čtenáře, `origin.review: true`) a háčky čtenáře
+jako nové volby oficiálních uzlů (`next` se změní na volbu „Pokračovat“). Text je od čtenáře: autor ho přečte,
+smaže `review` a pak běží write / unify / render jen pro nové uzly; vyjde jako další verze gamebooku.
+
+## Aktualizace
+
+Nová verze = nový release `gamebook-<id>-v<N>`; katalog nese `node_ids` a `export-pack` odmítne verzi, která
+nějaký uzel vypustí nebo přejmenuje (postup i větve čtenářů na ně ukazují). Appka ukáže v Knihovně „Nová verze“
+a „Aktualizovat“; postup, nalezené konce a vlastní větve zůstanou; uzly přidané od prvního otevření mají na mapě
+štítek „Nové“, dokud je čtenář nenavštíví.
+
 Mimo betu: kreslení nových panelů z editoru (fronta na backendu), sdílení větví mezi čtenáři (moderace).
 Odemyká `kit_<id>`; v TestFlightu jsou nákupy sandbox (zdarma).

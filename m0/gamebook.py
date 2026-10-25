@@ -5,6 +5,7 @@
     python3 m0/gamebook.py unify   data/gamebooks/sara/graph.yaml   # the source world's characters and locations in every node
     m0/local_strip.sh -I -a kids gb_sara_n0 gb_sara_n1a ...          # render, loops, import (ids: `ids` below)
     python3 m0/gamebook.py ids     data/gamebooks/sara/graph.yaml
+    python3 m0/gamebook.py import-branch data/gamebooks/sara/graph.yaml vetev.json --name t1   # a reader's branch → nodes
 
 Every node is its own story gb_<id>_<node> (world w_gb_<id>_<node>), so render.py / local_strip.sh / import-demo work
 unchanged. `unify` is what keeps the gamebook one book: the LLM invents characters per node, unify swaps them for the
@@ -27,6 +28,7 @@ from common import DATA, ROOT, load_json, save_json
 def load(graph):
     g = yaml.safe_load(Path(graph).read_text())
     g["_dir"] = Path(graph).resolve().parent
+    g["_path"] = str(Path(graph).resolve())
     return g
 
 
@@ -144,12 +146,118 @@ def cmd_unify(g):
     print("\n".join(report))
 
 
+def episode_nodes(g):
+    """Exported episode id → (node, its storyboard): local_strip.sh leaves out/local/<story>/episode_id."""
+    out = {}
+    for node_id in g["nodes"]:
+        sid = story_id(g, node_id)
+        f = ROOT / "out" / "local" / sid / "episode_id"
+        sb = DATA / "stories" / sid / "storyboard.json"
+        if f.exists() and sb.exists():
+            out[f.read_text().strip()] = (node_id, load_json(sb))
+    return out
+
+
+def branch_beats(bn, eps, names):
+    """One beat per panel of a reader's branch node: the picture it reuses, then its bubbles."""
+    beats, loc = [], None
+    for bp in bn.get("panels", []):
+        src = eps.get(bp["episode"])
+        if src is None:
+            beats.append("(obraz z neznámé epizody) " + " / ".join(b["text"] for b in bp.get("bubbles", [])))
+            continue
+        node_id, sb = src
+        p = sb["panels"][bp["panel"]] if bp["panel"] < len(sb["panels"]) else {}
+        loc = loc or p.get("location_id")
+        who = ", ".join(names.get(c["id"], c["id"]) for c in p.get("characters", []))
+        pic = f"(obraz jako {node_id} p{bp['panel']:02d}: {p.get('shot', '')}; {who}; {', '.join(p.get('visual_tags', []))})"
+        said = [(f"{names.get(b.get('speaker_id'), b.get('speaker_id'))}: " if b.get("speaker_id") and b.get("kind") != "narration" else "")
+                + b["text"] for b in bp.get("bubbles", [])]
+        beats.append(pic + (" " + " / ".join(said) if said else ""))
+    return beats, loc
+
+
+def cmd_import_branch(g, path, name, out):
+    """A reader's "Odeslat autorovi" JSON → new nodes appended to graph.yaml (ids <name>_<n>), and the reader's
+    hooks as new choices of the official nodes. Each node keeps `origin` (review: true) until the author has read
+    it: the text comes from a reader and is drawn for children only after that review."""
+    br = json.loads(Path(path).read_text())
+    if br.get("gamebook") != g["id"]:
+        sys.exit(f"{path} is for gamebook {br.get('gamebook')!r}, not {g['id']!r}")
+    if not re.fullmatch(r"[a-z][a-z0-9]{0,7}", name):
+        sys.exit("--name: a short lowercase tag, e.g. t1")
+    names = {c["id"]: c["name"] for c in source_world(g)["characters"]}
+    eps = episode_nodes(g)
+    ids = {}
+    for i, bn in enumerate(br.get("nodes", []), 1):
+        nid = f"{name}_{i}"
+        if nid in g["nodes"]:
+            sys.exit(f"node {nid} exists already: pick another --name")
+        ids[bn["id"]] = nid
+    new = {}
+    for bn in br.get("nodes", []):
+        beats, loc = branch_beats(bn, eps, names)
+        node = {"title": bn.get("title") or ids[bn["id"]], "location": loc or g["nodes"][g["start"]].get("location"),
+                "panels": max(8, len(beats)), "beats": beats or ["(prázdný uzel)"],
+                "origin": {"kind": "reader-branch", "file": Path(path).name, "review": True}}
+        choices = [{"id": f"{ids[bn['id']]}_{k}", "text": c["text"], "to": ids.get(c["to"], c["to"])}
+                   for k, c in enumerate(bn.get("choices", []), 1)]
+        if choices:
+            node["choices"] = choices
+        else:
+            node["ending"] = "good"
+        new[ids[bn["id"]]] = node
+    hooks = []
+    for h in br.get("hooks", []):
+        to = ids.get(h["choice"]["to"], h["choice"]["to"])
+        if h["from"] in g["nodes"]:
+            hooks.append((h["from"], {"id": f"{to}_in", "text": h["choice"]["text"], "to": to}))
+    text = Path(g["_path"]).read_text()
+    for frm, ch in hooks:
+        text = add_choice(text, frm, ch)
+    text = text.rstrip("\n") + "\n\n  # větve čtenáře " + Path(path).name + " (" + name + "): před kreslením přečíst, pak smazat origin.review\n"
+    for nid, node in new.items():
+        block = yaml.safe_dump({nid: node}, allow_unicode=True, sort_keys=False, width=110)
+        text += "".join("  " + l + "\n" for l in block.splitlines())
+    yaml.safe_load(text)  # still YAML
+    Path(out or g["_path"]).write_text(text, encoding="utf-8")
+    print(f"{len(new)} nodes ({', '.join(new)}), {len(hooks)} hooks → {out or g['_path']}")
+    print("next: read the new nodes (they are a reader's text), drop origin.review, then write/unify/render as usual")
+
+
+def add_choice(text, node_id, choice):
+    """Inserts a flow-style choice into node_id's choices (a `next` becomes the choice "Pokračovat")."""
+    flow = "{" + ", ".join(f"{k}: {json.dumps(v, ensure_ascii=False) if k == 'text' else v}" for k, v in choice.items()) + "}"
+    lines = text.split("\n")
+    start = next(i for i, l in enumerate(lines) if l == f"  {node_id}:")
+    end = next((i for i in range(start + 1, len(lines)) if re.match(r"^  \S", lines[i])), len(lines))
+    body = lines[start + 1:end]
+    if any(l.strip() == "choices:" for l in body):
+        c = start + 1 + next(i for i, l in enumerate(body) if l.strip() == "choices:")
+        last = c
+        while last + 1 < end and lines[last + 1].startswith("      - "):
+            last += 1
+        lines.insert(last + 1, f"      - {flow}")
+    else:
+        n = start + 1 + next(i for i, l in enumerate(body) if l.startswith("    next: "))
+        target = lines[n].split(":", 1)[1].strip()
+        lines[n:n + 1] = ["    choices:", f"      - {{id: next, text: Pokračovat, to: {target}}}", f"      - {flow}"]
+    return "\n".join(lines)
+
+
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["scripts", "write", "unify", "ids"])
+    ap.add_argument("cmd", choices=["scripts", "write", "unify", "ids", "import-branch"])
     ap.add_argument("graph")
+    ap.add_argument("branches", nargs="?", help="import-branch: the JSON a reader sent (Odeslat autorovi)")
+    ap.add_argument("--name", default="r1", help="import-branch: id prefix of the new nodes")
+    ap.add_argument("--out", help="import-branch: write the graph here instead of over it")
     a = ap.parse_args()
     g = load(a.graph)
+    if a.cmd == "import-branch":
+        if not a.branches:
+            ap.error("import-branch needs the branches JSON")
+        return cmd_import_branch(g, a.branches, a.name, a.out)
     if a.cmd == "ids":
         print(" ".join(story_id(g, n) for n in g["nodes"]))
         return 0
