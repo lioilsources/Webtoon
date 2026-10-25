@@ -103,10 +103,14 @@ změna `base_urls` v katalogu, ne nová verze appky.
     { "id": "bundle_all", "product_id": "bundle_all", "price_tier": "bundle_all",
       "title_i18n": {…}, "covers": "all" }
   ],
-  "gamebooks": [                              // STUB: formát gamebooku (graf voleb, lore) se teprve navrhne
-    { "id": "drak", "product_id": "gamebook_drak", "kit_product_id": "kit_drak", "type": "kids",
-      "title_i18n": {…}, "audience": "kids", "cover": "covers/gb_drak.webp",
-      "status": "planned", "graph": null, "lore": null }
+  "gamebooks": [                              // docs/gamebook.md; export-pack -gamebook graph.yaml
+    { "id": "sara", "product_id": "gamebook_sara", "kit_product_id": "kit_sara", "type": "kids",
+      "title": "…", "title_i18n": {…}, "audience": "kids", "languages": ["cs"], "cover": "covers/cp_….webp",
+      "free": false, "status": "ready", "version": 1, "nodes": 10, "endings": 2, "bytes": …,
+      "graph": "gamebook.json", "lore": "gamebook.json",
+      "parts": [ { "release": "gamebook-sara-v1", "asset": "gamebook-sara.zip", "bytes": …, "sha256": "…",
+                   "stories": 10 } ] },
+    { "id": "drak", "product_id": "gamebook_drak", "status": "planned", … }   // ohlášený, bez zipu
   ],
   "stories": [                                // knihovna a obchod bez stažení balíčku
     { "id": "cp_…", "pack_id": "kids-1", "type": "kids", "world_id": "w_…", "title": "…",
@@ -126,7 +130,9 @@ Pravidla:
 - **Nárok** se počítá v appce z katalogu: balíček je odemčený, když je `free`, když vlastní jeho
   `product_id`, nebo bundle, jehož `covers.types` obsahuje `type` balíčku (`"all"` = všechny typy).
   Bundle tedy pokryje i balíčky, které v katalogu přibudou později. `gamebook_<id>` odemyká gamebook,
-  `kit_<id>` gamebook + editor kit.
+  `kit_<id>` gamebook + editor kit; bundly gamebooky neodemykají.
+- **Gamebook** je jeden zip (bez částí) s pack.json (příběh = uzel, jedna epizoda) a `gamebook.json`
+  (graf, příznaky, konce, lore). Jeho příběhy nejsou v `stories[]` katalogu ani v knihovně appky.
 - **Publikum**: profil čtenáře Děti skryje typy, balíčky, bundly a příběhy s `audience: "adult"`
   (bundle podle publika svých typů; `all` obsahuje dospělé typy). Zdarma obsah nikdy nejde přes obchod.
 - Zipy se do gitu repa nikdy necommitují (`releases/` je v .gitignore webtoon-content): `export-pack`

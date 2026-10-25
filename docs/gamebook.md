@@ -1,7 +1,9 @@
 # Gamebook a editor kit (beta)
 
-Stav: návrh. První gamebook je `data/gamebooks/sara/graph.yaml` (osnova ke schválení). Kód appky je zatím
-jen stub `app/lib/gamebook/gamebook.dart`; obchod a nároky (`gamebook_<id>`, `kit_<id>`) už existují.
+Stav: beta. První gamebook je `data/gamebooks/sara/graph.yaml` (osnova schválena 2026-10-25).
+Výroba: `m0/gamebook.py` (scénáře uzlů, adapt, unify) → `m0/local_strip.sh -I -a kids <ids>` (render, smyčky,
+import) → `webtoon export-pack -gamebook data/gamebooks/sara/graph.yaml -out <webtoon-content>`.
+Appka: `app/lib/gamebook/` (čtečka `gamebook_screen.dart`, editor `branch_editor_screen.dart`).
 
 ## Formát
 
