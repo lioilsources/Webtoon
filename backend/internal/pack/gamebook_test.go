@@ -60,3 +60,32 @@ func TestMergeGamebook(t *testing.T) {
 		t.Errorf("gamebook nodes must not become library stories: %v", c.Stories)
 	}
 }
+
+func TestCheckGamebookUpdate(t *testing.T) {
+	old := &CatalogGamebook{ID: "sara", Status: "ready", Version: 1, NodeIDs: []string{"n0", "n1", "end"}}
+	if err := CheckGamebookUpdate(old, CatalogGamebook{ID: "sara", Version: 2, NodeIDs: []string{"n0", "n1", "n2", "end"}}, ""); err != nil {
+		t.Errorf("adding a node: %v", err)
+	}
+	err := CheckGamebookUpdate(old, CatalogGamebook{ID: "sara", Version: 2, NodeIDs: []string{"n0", "end"}}, "")
+	if err == nil || !strings.Contains(err.Error(), "[n1]") {
+		t.Errorf("dropping n1: %v", err)
+	}
+	if err := CheckGamebookUpdate(old, CatalogGamebook{ID: "sara", Version: 0, NodeIDs: old.NodeIDs}, ""); err == nil {
+		t.Error("a lower version must fail")
+	}
+	if err := CheckGamebookUpdate(nil, CatalogGamebook{ID: "new", Version: 1}, ""); err != nil {
+		t.Errorf("first export: %v", err)
+	}
+	// an entry from before node_ids: the ids come from its zip
+	out := t.TempDir()
+	zipPath := filepath.Join(out, "releases", "gamebook-sara-v1", "gamebook-sara.zip")
+	body, _ := json.Marshal(GamebookJSON{Order: []string{"n0", "n1"}})
+	if _, _, err := writeZip(zipPath, Manifest{}, map[string][]byte{GamebookFile: body}, out, nil, time.Now()); err != nil {
+		t.Fatal(err)
+	}
+	legacy := &CatalogGamebook{ID: "sara", Status: "ready", Version: 1,
+		Parts: []CatalogPart{{Release: "gamebook-sara-v1", Asset: "gamebook-sara.zip"}}}
+	if err := CheckGamebookUpdate(legacy, CatalogGamebook{ID: "sara", Version: 2, NodeIDs: []string{"n0"}}, out); err == nil {
+		t.Error("dropping n1 of a legacy entry must fail")
+	}
+}

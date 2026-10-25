@@ -59,7 +59,25 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
     final known =
         pr != null &&
         (g.node(pr.node) != null || branches.node(pr.node) != null);
-    setState(() => _progress = known ? pr : GamebookProgress.start(g));
+    // A node an update removed (never on purpose: export-pack refuses it) restarts the book
+    // but keeps what was found.
+    final next = pr == null
+        ? GamebookProgress.start(g)
+        : (known ? pr : pr.restart(g)).withKnown(g);
+    setState(() => _progress = next);
+    final fresh = next.newNodes(g);
+    if (fresh.isNotEmpty && !widget.preview) {
+      ScaffoldMessenger.maybeOf(context)?.showSnackBar(
+        SnackBar(
+          key: const ValueKey('gamebook-new-nodes'),
+          content: Text(
+            fresh.length == 1
+                ? 'V knize přibyla nová část. Najdeš ji na mapě cesty.'
+                : 'V knize přibyly nové části (${fresh.length}). Najdeš je na mapě cesty.',
+          ),
+        ),
+      );
+    }
   }
 
   Future<void> _set(GamebookProgress pr) async {
@@ -231,8 +249,11 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
                     ? ComicColors.accent
                     : scheme.outlineVariant,
               ),
-              // unvisited nodes stay a secret
+              // unvisited nodes stay a secret; ones an update added say so
               title: Text(pr.visited.contains(id) ? g.node(id)!.title : '???'),
+              trailing: pr.newNodes(g).contains(id)
+                  ? const Tag('Nové', key: ValueKey('map-new'))
+                  : null,
             ),
           const SizedBox(height: 12),
           OutlinedButton.icon(

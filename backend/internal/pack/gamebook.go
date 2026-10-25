@@ -1,6 +1,7 @@
 package pack
 
 import (
+	"archive/zip"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -271,6 +272,7 @@ type CatalogGamebook struct {
 	Status       string            `json:"status"` // ready (planned = announced, no zip)
 	Version      int               `json:"version"`
 	Nodes        int               `json:"nodes"`
+	NodeIDs      []string          `json:"node_ids"` // every node id; a new version may only add to them
 	Endings      int               `json:"endings"`
 	Bytes        int64             `json:"bytes"`
 	Graph        string            `json:"graph"` // the graph's file inside the zip
@@ -342,11 +344,14 @@ func writeGamebookCatalog(opts Options, parts []Part, sum *Summary) error {
 	r := rule()
 	entry := CatalogGamebook{ID: g.ID, ProductID: opts.ProductID, KitProductID: Fill(r.Naming.KitProduct, map[string]string{"id": g.ID}),
 		Type: opts.Type, Title: opts.Title, TitleI18n: gb.TitleI18n, Audience: packAudience(parts), Languages: packLanguages(parts),
-		Cover: cover, Status: "ready", Version: opts.Version, Nodes: len(gb.Nodes), Endings: gb.Endings, Bytes: ps.Bytes,
+		Cover: cover, Status: "ready", Version: opts.Version, Nodes: len(gb.Nodes), NodeIDs: gb.Order, Endings: gb.Endings, Bytes: ps.Bytes,
 		Graph: GamebookFile, Lore: GamebookFile,
 		Parts: []CatalogPart{{Release: opts.ReleaseTag, Asset: filepath.Base(ps.Path), Bytes: ps.Bytes, SHA256: ps.SHA256, Stories: len(p.Manifest.Stories)}}}
 	if opts.Free {
 		entry.ProductID, entry.KitProductID, entry.Free = "", "", true
+	}
+	if err := CheckGamebookUpdate(cat.gamebook(g.ID), entry, opts.OutDir); err != nil {
+		return err
 	}
 	if err := cat.MergeGamebook(entry, opts.Now, opts.BaseURL); err != nil {
 		return err
@@ -355,5 +360,69 @@ func writeGamebookCatalog(opts Options, parts []Part, sum *Summary) error {
 		return err
 	}
 	sum.CatalogPath, sum.CatalogVersion = path, cat.Version
+	return nil
+}
+
+// gamebook is the catalog entry of id, nil when the catalog has none (or it does not parse).
+func (c *Catalog) gamebook(id string) *CatalogGamebook {
+	for _, raw := range c.Gamebooks {
+		var gb CatalogGamebook
+		if json.Unmarshal(raw, &gb) == nil && gb.ID == id {
+			return &gb
+		}
+	}
+	return nil
+}
+
+// CheckGamebookUpdate refuses a new version that drops or renames a node of the published one: readers'
+// progress (progress.json) and their own branches (hooks) point at node ids, so ids are only ever added.
+// It also refuses a lower version. An old entry without node_ids (exported before they existed) is read
+// from its zip under outDir/releases, when that is still there.
+func CheckGamebookUpdate(old *CatalogGamebook, next CatalogGamebook, outDir string) error {
+	if old == nil || old.Status != "ready" {
+		return nil
+	}
+	if next.Version < old.Version {
+		return fmt.Errorf("gamebook %s: version %d is lower than the published %d", next.ID, next.Version, old.Version)
+	}
+	ids := old.NodeIDs
+	if len(ids) == 0 && len(old.Parts) > 0 {
+		ids = zipNodeIDs(filepath.Join(outDir, "releases", old.Parts[0].Release, old.Parts[0].Asset))
+	}
+	var gone []string
+	for _, id := range ids {
+		if !slices.Contains(next.NodeIDs, id) {
+			gone = append(gone, id)
+		}
+	}
+	if len(gone) > 0 {
+		return fmt.Errorf("gamebook %s v%d drops nodes %v of v%d: node ids are only ever added (readers' progress and branches point at them)",
+			next.ID, next.Version, gone, old.Version)
+	}
+	return nil
+}
+
+// zipNodeIDs reads gamebook.json order out of a gamebook zip; nil when it cannot.
+func zipNodeIDs(path string) []string {
+	zr, err := zip.OpenReader(path)
+	if err != nil {
+		return nil
+	}
+	defer zr.Close()
+	for _, f := range zr.File {
+		if f.Name != GamebookFile {
+			continue
+		}
+		rc, err := f.Open()
+		if err != nil {
+			return nil
+		}
+		defer rc.Close()
+		var gb GamebookJSON
+		if json.NewDecoder(rc).Decode(&gb) != nil {
+			return nil
+		}
+		return gb.Order
+	}
 	return nil
 }

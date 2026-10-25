@@ -10,6 +10,7 @@ import '../providers/language_provider.dart';
 import '../profile/reader_profile.dart';
 import '../providers/providers.dart';
 import '../shop/shop_controller.dart' show packsRevisionProvider;
+import '../shop/update_banner.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
 import 'reader_screen.dart';
@@ -59,6 +60,7 @@ class LibraryScreen extends ConsumerWidget {
               key: const ValueKey('library-list'),
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 32),
               children: [
+                const UpdateBanner(),
                 if (gamebooks.isNotEmpty) GamebookShelf(gamebooks: gamebooks),
                 for (final w in worlds)
                   if (byWorld[w.id]?.isNotEmpty ?? false) ...[

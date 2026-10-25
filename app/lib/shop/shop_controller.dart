@@ -214,6 +214,23 @@ class ShopController extends StateNotifier<ShopState> {
 
   bool isInstalled(CatalogPack p) => installer.isInstalled(p);
 
+  /// Unlocked packs and gamebooks on the device in an older version than the catalog's.
+  List<CatalogPack> updates() {
+    final c = state.catalog;
+    if (c == null) return const [];
+    return [
+      for (final p in [
+        ...c.packs.where((p) => !p.bundled),
+        for (final g in c.gamebooks)
+          if (g.ready) g.asPack(),
+      ])
+        if (state.unlocked(p) &&
+            installer.hasAnyVersion(p) &&
+            !installer.isInstalled(p))
+          p,
+    ];
+  }
+
   Future<void> download(CatalogPack pack) async {
     final c = state.catalog;
     if (c == null || state.downloads.containsKey(pack.id)) return;

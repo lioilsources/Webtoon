@@ -56,37 +56,38 @@ void main() {
     await tester.pumpAndSettle();
   }
 
-  testWidgets('Knihovna: stories grouped by world, audience badge, no author tabs', (
-    tester,
-  ) async {
-    await tester.pumpWidget(app());
-    await tester.pumpAndSettle();
+  testWidgets(
+    'Knihovna: stories grouped by world, audience badge, no author tabs',
+    (tester) async {
+      await tester.pumpWidget(app());
+      await tester.pumpAndSettle();
 
-    expect(find.text('Knihovna'), findsWidgets); // app bar + tab
-    expect(find.text('Nastavení'), findsOneWidget);
-    expect(find.text('Tvořit'), findsNothing);
-    expect(find.text('Světy'), findsNothing);
-    expect(find.text('Kampaně'), findsNothing);
-    expect(find.byKey(const ValueKey('pack-splash')), findsNothing);
+      expect(find.text('Knihovna'), findsWidgets); // app bar + tab
+      expect(find.text('Nastavení'), findsOneWidget);
+      expect(find.text('Tvořit'), findsNothing);
+      expect(find.text('Světy'), findsNothing);
+      expect(find.text('Kampaně'), findsNothing);
+      expect(find.byKey(const ValueKey('pack-splash')), findsNothing);
 
-    expect(find.byKey(const ValueKey('library-world-w_les')), findsOneWidget);
-    expect(find.text('Les za humny'), findsOneWidget);
-    expect(find.byKey(const ValueKey('audience-w_les')), findsOneWidget);
-    expect(find.text('Pro děti'), findsOneWidget);
-    expect(find.byKey(const ValueKey('story-cp_jezek')), findsOneWidget);
-    expect(find.byKey(const ValueKey('story-cp_sova')), findsOneWidget);
-    expect(find.text('Ježek a lucerna'), findsOneWidget);
-    expect(find.text('2 díly'), findsOneWidget);
-    expect(find.text('1 díl'), findsOneWidget);
+      expect(find.byKey(const ValueKey('library-world-w_les')), findsOneWidget);
+      expect(find.text('Les za humny'), findsOneWidget);
+      expect(find.byKey(const ValueKey('audience-w_les')), findsOneWidget);
+      expect(find.text('Pro děti'), findsOneWidget);
+      expect(find.byKey(const ValueKey('story-cp_jezek')), findsOneWidget);
+      expect(find.byKey(const ValueKey('story-cp_sova')), findsOneWidget);
+      expect(find.text('Ježek a lucerna'), findsOneWidget);
+      expect(find.text('2 díly'), findsOneWidget);
+      expect(find.text('1 díl'), findsOneWidget);
 
-    // Tap → reader on episode 1 (not the latest).
-    await tester.tap(find.byKey(const ValueKey('story-cp_jezek')));
-    await tester.pumpAndSettle();
-    expect(find.text('DÍL 1'), findsOneWidget);
-    expect(find.text('Ztracené světlo'), findsOneWidget);
-    expect(tester.getRect(find.text('Ztracené světlo')).top, lessThan(200));
-    await tester.pumpWidget(const SizedBox());
-  });
+      // Tap → reader on episode 1 (not the latest).
+      await tester.tap(find.byKey(const ValueKey('story-cp_jezek')));
+      await tester.pumpAndSettle();
+      expect(find.text('DÍL 1'), findsOneWidget);
+      expect(find.text('Ztracené světlo'), findsOneWidget);
+      expect(tester.getRect(find.text('Ztracené světlo')).top, lessThan(200));
+      await tester.pumpWidget(const SizedBox());
+    },
+  );
 
   testWidgets('splash while the starter is extracting; retry on error', (
     tester,
@@ -126,7 +127,9 @@ void main() {
     'end of episode offline: recorded choice marked, others muted, Další díl; last → Konec + next story',
     (tester) async {
       await tester.pumpWidget(
-        app(home: const ReaderScreen(campaignId: 'cp_jezek', startAtFirst: true)),
+        app(
+          home: const ReaderScreen(campaignId: 'cp_jezek', startAtFirst: true),
+        ),
       );
       await tester.pumpAndSettle();
       expect(find.text('DÍL 1'), findsOneWidget);
@@ -185,24 +188,27 @@ void main() {
     },
   );
 
-  testWidgets('story with a single episode: Konec right away; no bubble editing', (
-    tester,
-  ) async {
-    await tester.pumpWidget(
-      app(home: const ReaderScreen(campaignId: 'cp_sova', startAtFirst: true)),
-    );
-    await tester.pumpAndSettle();
-    expect(find.text('Zase nespím.'), findsOneWidget);
-    await tester.longPress(find.text('Zase nespím.'));
-    await tester.pumpAndSettle();
-    expect(find.text('Upravit bublinu'), findsNothing);
+  testWidgets(
+    'story with a single episode: Konec right away; no bubble editing',
+    (tester) async {
+      await tester.pumpWidget(
+        app(
+          home: const ReaderScreen(campaignId: 'cp_sova', startAtFirst: true),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text('Zase nespím.'), findsOneWidget);
+      await tester.longPress(find.text('Zase nespím.'));
+      await tester.pumpAndSettle();
+      expect(find.text('Upravit bublinu'), findsNothing);
 
-    expect(find.byKey(const ValueKey('local-episode-end')), findsNothing);
-    await scrollTo(tester, find.byKey(const ValueKey('story-end')));
-    expect(find.text('Konec'), findsOneWidget);
-    expect(find.text('Ježek a lucerna'), findsOneWidget); // suggestion
-    await tester.pumpWidget(const SizedBox());
-  });
+      expect(find.byKey(const ValueKey('local-episode-end')), findsNothing);
+      await scrollTo(tester, find.byKey(const ValueKey('story-end')));
+      expect(find.text('Konec'), findsOneWidget);
+      expect(find.text('Ježek a lucerna'), findsOneWidget); // suggestion
+      await tester.pumpWidget(const SizedBox());
+    },
+  );
 
   testWidgets('Nastavení: language, storage, Obnovit starter', (tester) async {
     await tester.pumpWidget(app());

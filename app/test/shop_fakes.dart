@@ -214,6 +214,13 @@ class FakeInstaller implements PackInstaller {
   @override
   bool isInstalled(CatalogPack pack) => installed.contains(pack.id);
 
+  /// Packs on the device in an older version (update due).
+  final Set<String> outdated = {};
+
+  @override
+  bool hasAnyVersion(CatalogPack pack) =>
+      installed.contains(pack.id) || outdated.contains(pack.id);
+
   @override
   Future<void> remove(CatalogPack pack) async => installed.remove(pack.id);
 }

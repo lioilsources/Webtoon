@@ -26,15 +26,55 @@ class GamebookProgress {
   final Set<String> visited;
   final Set<String> endingsFound;
 
+  /// The book's nodes when the reader first opened it; nodes an update added since are "Nové"
+  /// until visited. Empty in progress saved before it existed (then nothing counts as new).
+  final Set<String> knownNodes;
+
   const GamebookProgress({
     required this.node,
     this.path = const [],
     this.visited = const {},
     this.endingsFound = const {},
+    this.knownNodes = const {},
   });
 
-  factory GamebookProgress.start(Gamebook g) =>
-      GamebookProgress(node: g.start, visited: {g.start});
+  factory GamebookProgress.start(Gamebook g) => GamebookProgress(
+    node: g.start,
+    visited: {g.start},
+    knownNodes: g.nodes.keys.toSet(),
+  );
+
+  /// Nodes an update added that the reader has not reached yet.
+  List<String> newNodes(Gamebook g) => knownNodes.isEmpty
+      ? const []
+      : [
+          for (final id in g.order)
+            if (!knownNodes.contains(id) && !visited.contains(id)) id,
+        ];
+
+  GamebookProgress _with({
+    required String node,
+    List<String>? path,
+    Set<String>? visited,
+    Set<String>? endingsFound,
+  }) => GamebookProgress(
+    node: node,
+    path: path ?? this.path,
+    visited: visited ?? this.visited,
+    endingsFound: endingsFound ?? this.endingsFound,
+    knownNodes: knownNodes,
+  );
+
+  /// [knownNodes] for progress saved before they existed: the book as it is now.
+  GamebookProgress withKnown(Gamebook g) => knownNodes.isNotEmpty
+      ? this
+      : GamebookProgress(
+          node: node,
+          path: path,
+          visited: visited,
+          endingsFound: endingsFound,
+          knownNodes: g.nodes.keys.toSet(),
+        );
 
   /// The flags in force at [node]: everything the path has set.
   Set<String> flags(Gamebook g) => {
@@ -42,55 +82,39 @@ class GamebookProgress {
   };
 
   /// Reads on to [to] (a choice or `next`).
-  GamebookProgress go(String to) => GamebookProgress(
-    node: to,
-    path: [...path, node],
-    visited: {...visited, to},
-    endingsFound: endingsFound,
-  );
+  GamebookProgress go(String to) =>
+      _with(node: to, path: [...path, node], visited: {...visited, to});
 
   /// One node back (no-op at the start).
   GamebookProgress back() => path.isEmpty
       ? this
-      : GamebookProgress(
-          node: path.last,
-          path: path.sublist(0, path.length - 1),
-          visited: visited,
-          endingsFound: endingsFound,
-        );
+      : _with(node: path.last, path: path.sublist(0, path.length - 1));
 
   /// A good ending counts once it is reached.
-  GamebookProgress found(String ending) => GamebookProgress(
-    node: node,
-    path: path,
-    visited: visited,
-    endingsFound: {...endingsFound, ending},
-  );
+  GamebookProgress found(String ending) =>
+      _with(node: node, endingsFound: {...endingsFound, ending});
 
   /// A retry ending: back to [to] as it was first reached (its path cut there), or from the
   /// start when the path never passed it.
   GamebookProgress retry(String to) {
     final i = path.lastIndexOf(to);
-    return GamebookProgress(
+    return _with(
       node: to,
       path: i < 0 ? const [] : path.sublist(0, i),
       visited: {...visited, to},
-      endingsFound: endingsFound,
     );
   }
 
   /// From the start again; visited nodes and found endings stay.
-  GamebookProgress restart(Gamebook g) => GamebookProgress(
-    node: g.start,
-    visited: {...visited, g.start},
-    endingsFound: endingsFound,
-  );
+  GamebookProgress restart(Gamebook g) =>
+      _with(node: g.start, path: const [], visited: {...visited, g.start});
 
   factory GamebookProgress.fromJson(Map<String, dynamic> j) => GamebookProgress(
     node: str(j['node']),
     path: strList(j['path']),
     visited: strList(j['visited']).toSet(),
     endingsFound: strList(j['endings_found']).toSet(),
+    knownNodes: strList(j['known_nodes']).toSet(),
   );
 
   Map<String, dynamic> toJson() => {
@@ -98,6 +122,7 @@ class GamebookProgress {
     'path': path,
     'visited': visited.toList(),
     'endings_found': endingsFound.toList(),
+    'known_nodes': knownNodes.toList(),
   };
 }
 

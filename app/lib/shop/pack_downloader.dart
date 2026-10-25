@@ -55,6 +55,9 @@ abstract class PackInstaller {
   /// All parts installed in (at least) the catalog's version.
   bool isInstalled(CatalogPack pack);
 
+  /// Some version of the pack is on the device (an older one = an update is due).
+  bool hasAnyVersion(CatalogPack pack);
+
   Future<void> remove(CatalogPack pack);
 }
 
@@ -91,6 +94,9 @@ class PackDownloader implements PackInstaller {
     final pk = store.installed(pack.id, part: part.part);
     return pk != null && pk.manifest.version >= pack.version;
   };
+
+  @override
+  bool hasAnyVersion(CatalogPack pack) => store.installed(pack.id) != null;
 
   @override
   Future<void> remove(CatalogPack pack) => store.remove(pack.id);

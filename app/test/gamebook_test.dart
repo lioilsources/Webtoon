@@ -22,6 +22,7 @@ import 'package:webtoon/providers/language_provider.dart';
 import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/shop/catalog.dart';
 import 'package:webtoon/shop/entitlements.dart';
+import 'package:webtoon/shop/update_banner.dart';
 
 import 'fake_api.dart' show kTinyPng;
 import 'pack_fixture.dart';
@@ -172,6 +173,31 @@ void main() {
     });
   });
 
+  test('nodes an update adds are new until visited', () {
+    final v1 = GamebookProgress.start(g);
+    final j = graphJson();
+    (j['order'] as List).add('extra');
+    (j['nodes'] as Map)['extra'] = {
+      'story': 'cp_jezek',
+      'episode': 'ep_j2',
+      'title': 'Nová kapitola',
+      'choices': [],
+      'sets': [],
+      'ending': 'good',
+    };
+    ((j['nodes'] as Map)['b'] as Map)['choices'] = [
+      {'id': 'back', 'text': 'Zpátky nahoru', 'to': 'a'},
+      {'id': 'more', 'text': 'Dál do tmy', 'to': 'extra'},
+    ];
+    final g2 = Gamebook.parse(j, packId: 'gamebook-test');
+    expect(v1.newNodes(g2), ['extra']);
+    expect(v1.go('b').go('extra').newNodes(g2), isEmpty);
+    // progress from before known_nodes: nothing is new, then it is pinned to the book
+    const legacy = GamebookProgress(node: 'a', visited: {'a'});
+    expect(legacy.newNodes(g2), isEmpty);
+    expect(legacy.withKnown(g).newNodes(g2), ['extra']);
+  });
+
   group('branches', () {
     test('hooks, removal and export', () {
       var b = const GamebookBranches();
@@ -281,6 +307,58 @@ void main() {
         );
       },
     );
+  });
+
+  testWidgets('library banner offers an update of an older installed version', (
+    tester,
+  ) async {
+    final installer = FakeInstaller()..outdated.add('gamebook-sara');
+    await tester.pumpWidget(
+      ProviderScope(
+        overrides: [
+          deviceLanguageProvider.overrideWithValue(null),
+          ...shopOverrides(
+            catalog: Catalog.parse({
+              'schema': 2,
+              'version': 11,
+              'base_urls': {
+                'pages': 'https://p.example',
+                'releases': 'https://r.example',
+              },
+              'types': [],
+              'packs': [],
+              'bundles': [],
+              'gamebooks': [
+                {
+                  'id': 'sara',
+                  'title': 'Sára a černá koruna',
+                  'free': true,
+                  'status': 'ready',
+                  'version': 2,
+                  'parts': [
+                    {
+                      'release': 'gamebook-sara-v2',
+                      'asset': 'gamebook-sara.zip',
+                      'bytes': 10,
+                      'sha256': 'ab',
+                    },
+                  ],
+                },
+              ],
+              'stories': [],
+            }),
+            installer: installer,
+          ),
+        ],
+        child: const MaterialApp(home: Scaffold(body: UpdateBanner())),
+      ),
+    );
+    await tester.pumpAndSettle();
+    expect(find.text('Sára a černá koruna'), findsOneWidget);
+    await tester.tap(find.byKey(const ValueKey('update-all')));
+    await tester.pumpAndSettle();
+    expect(installer.downloads, ['gamebook-sara']);
+    expect(find.byKey(const ValueKey('update-banner')), findsNothing);
   });
 
   group('pack store', () {

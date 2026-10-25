@@ -35,9 +35,11 @@ void main() {
       expect(File('${pk.dir.path}/pack.json').existsSync(), isTrue);
       expect(File('${pk.dir.path}/media/ep_j1/p00.webp').existsSync(), isTrue);
       expect(File('${pk.dir.path}/covers/cp_sova.webp').existsSync(), isTrue);
-      expect(Directory('${tmp.path}/packs').listSync().map((e) => e.path), [
-        '${tmp.path}/packs/fixture',
-      ], reason: 'no .tmp-* left behind');
+      expect(
+        Directory('${tmp.path}/packs').listSync().map((e) => e.path),
+        ['${tmp.path}/packs/fixture'],
+        reason: 'no .tmp-* left behind',
+      );
 
       expect(store.loaded, isTrue);
       expect(store.packs, hasLength(1));
@@ -45,46 +47,69 @@ void main() {
       expect(store.worlds.single.audience, 'kids');
       expect(store.stories.map((s) => s.id), ['cp_jezek', 'cp_sova']);
       expect(store.story('cp_jezek')!.episodeIds, ['ep_j1', 'ep_j2']);
-      expect(store.story('cp_jezek')!.titleIn('en'), 'The Hedgehog and the Lantern');
-      expect(store.story('cp_jezek')!.cover, '${pk.dir.path}/covers/cp_jezek.webp');
+      expect(
+        store.story('cp_jezek')!.titleIn('en'),
+        'The Hedgehog and the Lantern',
+      );
+      expect(
+        store.story('cp_jezek')!.cover,
+        '${pk.dir.path}/covers/cp_jezek.webp',
+      );
       expect(store.episode('ep_s1'), isNotNull);
       expect(store.episode('nope'), isNull);
     });
 
-    test('relative media paths become absolute files in the pack dir', () async {
-      await store.installFromFile(writeFixtureZip(tmp).path);
-      final ep = store.episode('ep_j1')!;
-      final dir = store.packs.single.dir.path;
-      expect(ep.panels[0].imageUrl, '$dir/media/ep_j1/p00.webp');
-      expect(ep.panels[0].videoUrl, '$dir/media/ep_j1/p00_loop.webp');
-      expect(ep.panels[0].hasVideo, isTrue);
-      expect(ep.panels[1].imageUrl, '$dir/media/ep_j1/p01.webp');
-      expect(ep.panels[1].videoUrl, isNull);
-      for (final p in ep.panels) {
-        expect(File(p.imageUrl!).existsSync(), isTrue, reason: p.imageUrl);
-      }
-      // Everything else is parsed by the existing models.
-      expect(ep.status, EpisodeStatus.ready);
-      expect(ep.needsPolling, isFalse);
-      expect(ep.panels[0].bubbles.single.textIn('en'), 'Where is my lantern?');
-      expect(ep.choices.map((c) => c.id), ['c1', 'c2', 'free']);
-      expect(ep.languages, ['en']);
-      expect(ep.displayLanguage('en'), 'en');
-      expect(store.episode('ep_j2')!.chosen!.choiceId, 'c2');
-    });
+    test(
+      'relative media paths become absolute files in the pack dir',
+      () async {
+        await store.installFromFile(writeFixtureZip(tmp).path);
+        final ep = store.episode('ep_j1')!;
+        final dir = store.packs.single.dir.path;
+        expect(ep.panels[0].imageUrl, '$dir/media/ep_j1/p00.webp');
+        expect(ep.panels[0].videoUrl, '$dir/media/ep_j1/p00_loop.webp');
+        expect(ep.panels[0].hasVideo, isTrue);
+        expect(ep.panels[1].imageUrl, '$dir/media/ep_j1/p01.webp');
+        expect(ep.panels[1].videoUrl, isNull);
+        for (final p in ep.panels) {
+          expect(File(p.imageUrl!).existsSync(), isTrue, reason: p.imageUrl);
+        }
+        // Everything else is parsed by the existing models.
+        expect(ep.status, EpisodeStatus.ready);
+        expect(ep.needsPolling, isFalse);
+        expect(
+          ep.panels[0].bubbles.single.textIn('en'),
+          'Where is my lantern?',
+        );
+        expect(ep.choices.map((c) => c.id), ['c1', 'c2', 'free']);
+        expect(ep.languages, ['en']);
+        expect(ep.displayLanguage('en'), 'en');
+        expect(store.episode('ep_j2')!.chosen!.choiceId, 'c2');
+      },
+    );
 
-    test('load() picks up what is on disk; a stale .tmp dir is removed', () async {
-      await store.installFromFile(writeFixtureZip(tmp).path);
-      Directory('${tmp.path}/packs/.tmp-fixture-1').createSync(recursive: true);
-      Directory('${tmp.path}/packs/junk').createSync(recursive: true);
+    test(
+      'load() picks up what is on disk; a stale .tmp dir is removed',
+      () async {
+        await store.installFromFile(writeFixtureZip(tmp).path);
+        Directory(
+          '${tmp.path}/packs/.tmp-fixture-1',
+        ).createSync(recursive: true);
+        Directory('${tmp.path}/packs/junk').createSync(recursive: true);
 
-      final again = PackStore(root: Directory('${tmp.path}/packs'));
-      expect(again.loaded, isFalse);
-      await again.load();
-      expect(again.packs.map((p) => p.id), ['fixture']);
-      expect(again.episode('ep_j1')!.panels[0].imageUrl, endsWith('p00.webp'));
-      expect(Directory('${tmp.path}/packs/.tmp-fixture-1').existsSync(), isFalse);
-    });
+        final again = PackStore(root: Directory('${tmp.path}/packs'));
+        expect(again.loaded, isFalse);
+        await again.load();
+        expect(again.packs.map((p) => p.id), ['fixture']);
+        expect(
+          again.episode('ep_j1')!.panels[0].imageUrl,
+          endsWith('p00.webp'),
+        );
+        expect(
+          Directory('${tmp.path}/packs/.tmp-fixture-1').existsSync(),
+          isFalse,
+        );
+      },
+    );
 
     test('sha256 is verified; a mismatch installs nothing', () async {
       final zip = writeFixtureZip(tmp);
@@ -100,136 +125,159 @@ void main() {
       expect(pk.id, 'fixture');
     });
 
-    test('rejects a wrong schema, a missing pack.json and path traversal', () async {
-      final bad = fixtureManifest()..['schema'] = 2;
-      await expectLater(
-        store.installFromBytes(fixtureZip(bad)),
-        throwsA(
-          isA<PackException>().having(
-            (e) => e.message,
-            'message',
-            contains('schema 2'),
+    test(
+      'rejects a wrong schema, a missing pack.json and path traversal',
+      () async {
+        final bad = fixtureManifest()..['schema'] = 2;
+        await expectLater(
+          store.installFromBytes(fixtureZip(bad)),
+          throwsA(
+            isA<PackException>().having(
+              (e) => e.message,
+              'message',
+              contains('schema 2'),
+            ),
           ),
-        ),
-      );
+        );
 
-      final noManifest = ZipEncoder().encodeBytes(
-        Archive()..addFile(ArchiveFile.string('readme.txt', 'hi')),
-      );
-      await expectLater(
-        store.installFromBytes(noManifest),
-        throwsA(isA<PackException>()),
-      );
+        final noManifest = ZipEncoder().encodeBytes(
+          Archive()..addFile(ArchiveFile.string('readme.txt', 'hi')),
+        );
+        await expectLater(
+          store.installFromBytes(noManifest),
+          throwsA(isA<PackException>()),
+        );
 
-      await expectLater(
-        store.installFromBytes(Uint8List.fromList(utf8.encode('not a zip'))),
-        throwsA(isA<PackException>()),
-      );
+        await expectLater(
+          store.installFromBytes(Uint8List.fromList(utf8.encode('not a zip'))),
+          throwsA(isA<PackException>()),
+        );
 
-      final evil = Archive()
-        ..addFile(ArchiveFile.string('pack.json', jsonEncode(fixtureManifest())))
-        ..addFile(ArchiveFile.string('../escape.txt', 'x'));
-      await expectLater(
-        store.installFromBytes(ZipEncoder().encodeBytes(evil)),
-        throwsA(isA<PackException>()),
-      );
-      expect(File('${tmp.path}/escape.txt').existsSync(), isFalse);
-      expect(File('${tmp.path}/packs/escape.txt').existsSync(), isFalse);
-      expect(Directory('${tmp.path}/packs').listSync(), isEmpty);
-    });
+        final evil = Archive()
+          ..addFile(
+            ArchiveFile.string('pack.json', jsonEncode(fixtureManifest())),
+          )
+          ..addFile(ArchiveFile.string('../escape.txt', 'x'));
+        await expectLater(
+          store.installFromBytes(ZipEncoder().encodeBytes(evil)),
+          throwsA(isA<PackException>()),
+        );
+        expect(File('${tmp.path}/escape.txt').existsSync(), isFalse);
+        expect(File('${tmp.path}/packs/escape.txt').existsSync(), isFalse);
+        expect(Directory('${tmp.path}/packs').listSync(), isEmpty);
+      },
+    );
 
-    test('reinstalling the same id replaces it; parts get their own dir', () async {
-      await store.installFromBytes(fixtureZip(fixtureManifest(version: 1)));
-      await store.installFromBytes(fixtureZip(fixtureManifest(version: 2)));
-      expect(store.packs.single.manifest.version, 2);
+    test(
+      'reinstalling the same id replaces it; parts get their own dir',
+      () async {
+        await store.installFromBytes(fixtureZip(fixtureManifest(version: 1)));
+        await store.installFromBytes(fixtureZip(fixtureManifest(version: 2)));
+        expect(store.packs.single.manifest.version, 2);
 
-      final partA = fixtureManifest(id: 'romance-1')..['part'] = 'a';
-      await store.installFromBytes(fixtureZip(partA));
-      expect(
-        Directory('${tmp.path}/packs').listSync().map((e) => e.path.split('/').last).toList()
-          ..sort(),
-        ['fixture', 'romance-1-a'],
-      );
-      expect(store.installed('romance-1', part: 'a'), isNotNull);
-      // Same story ids in both packs: the first pack wins, nothing is listed twice.
-      expect(store.stories.map((s) => s.id), ['cp_jezek', 'cp_sova']);
+        final partA = fixtureManifest(id: 'romance-1')..['part'] = 'a';
+        await store.installFromBytes(fixtureZip(partA));
+        expect(
+          Directory(
+            '${tmp.path}/packs',
+          ).listSync().map((e) => e.path.split('/').last).toList()..sort(),
+          ['fixture', 'romance-1-a'],
+        );
+        expect(store.installed('romance-1', part: 'a'), isNotNull);
+        // Same story ids in both packs: the first pack wins, nothing is listed twice.
+        expect(store.stories.map((s) => s.id), ['cp_jezek', 'cp_sova']);
 
-      await store.remove('romance-1');
-      expect(store.packs.map((p) => p.id), ['fixture']);
-    });
+        await store.remove('romance-1');
+        expect(store.packs.map((p) => p.id), ['fixture']);
+      },
+    );
 
-    test('ensureStarter: first launch extracts, same version does not, newer does', () async {
-      var version = 1;
-      var loads = 0;
-      final s = PackStore(
-        root: Directory('${tmp.path}/packs'),
-        loadAsset: (key) async {
-          loads++;
-          expect(key, PackStore.starterAsset);
-          return ByteData.sublistView(
-            fixtureZip(fixtureManifest(id: 'starter', version: version)),
-          );
-        },
-      );
-      final progress = <(int, int)>[];
-      expect(
-        await s.ensureStarter(onProgress: (d, t) => progress.add((d, t))),
-        isTrue,
-      );
-      expect(s.installed('starter')!.manifest.version, 1);
-      expect(progress, isNotEmpty);
-      expect(progress.last.$1, progress.last.$2);
-
-      expect(await s.ensureStarter(), isFalse, reason: 'same version');
-      expect(await s.ensureStarter(force: true), isTrue, reason: 'forced');
-
-      version = 2;
-      expect(await s.ensureStarter(), isTrue, reason: 'newer bundled');
-      expect(s.installed('starter')!.manifest.version, 2);
-      expect(await s.storageBytes(), greaterThan(0));
-      expect(loads, 4);
-    });
-
-    test('onProgress may capture unsendable objects (extraction runs in an isolate)', () async {
-      // In the app onProgress closes over the StateNotifier / widget tree, which cannot be
-      // sent to an isolate; the extraction closure must not capture it.
-      final unsendable = ReceivePort();
-      var calls = 0;
-      try {
-        await store.installFromBytes(
-          fixtureZip(fixtureManifest()),
-          onProgress: (d, t) {
-            calls++;
-            unsendable.sendPort; // keep the capture
+    test(
+      'ensureStarter: first launch extracts, same version does not, newer does',
+      () async {
+        var version = 1;
+        var loads = 0;
+        final s = PackStore(
+          root: Directory('${tmp.path}/packs'),
+          loadAsset: (key) async {
+            loads++;
+            expect(key, PackStore.starterAsset);
+            return ByteData.sublistView(
+              fixtureZip(fixtureManifest(id: 'starter', version: version)),
+            );
           },
         );
-      } finally {
-        unsendable.close();
-      }
-      expect(calls, greaterThan(0));
-      expect(store.packs, hasLength(1));
-    });
+        final progress = <(int, int)>[];
+        expect(
+          await s.ensureStarter(onProgress: (d, t) => progress.add((d, t))),
+          isTrue,
+        );
+        expect(s.installed('starter')!.manifest.version, 1);
+        expect(progress, isNotEmpty);
+        expect(progress.last.$1, progress.last.$2);
 
-    test('ensureStarter without a usable asset keeps what is installed', () async {
-      final s = PackStore(
-        root: Directory('${tmp.path}/packs'),
-        loadAsset: (_) async => throw Exception('asset not found'),
-      );
-      expect(await s.ensureStarter(), isFalse);
-      expect(s.loaded, isTrue);
-      expect(s.packs, isEmpty);
+        expect(await s.ensureStarter(), isFalse, reason: 'same version');
+        expect(await s.ensureStarter(force: true), isTrue, reason: 'forced');
 
-      final placeholder = PackStore(
-        root: Directory('${tmp.path}/packs'),
-        loadAsset: (_) async => ByteData.sublistView(
-          ZipEncoder().encodeBytes(
-            Archive()..addFile(ArchiveFile.string('pack.json', '{"schema": 1, "id": "starter", "version": 0}')),
+        version = 2;
+        expect(await s.ensureStarter(), isTrue, reason: 'newer bundled');
+        expect(s.installed('starter')!.manifest.version, 2);
+        expect(await s.storageBytes(), greaterThan(0));
+        expect(loads, 4);
+      },
+    );
+
+    test(
+      'onProgress may capture unsendable objects (extraction runs in an isolate)',
+      () async {
+        // In the app onProgress closes over the StateNotifier / widget tree, which cannot be
+        // sent to an isolate; the extraction closure must not capture it.
+        final unsendable = ReceivePort();
+        var calls = 0;
+        try {
+          await store.installFromBytes(
+            fixtureZip(fixtureManifest()),
+            onProgress: (d, t) {
+              calls++;
+              unsendable.sendPort; // keep the capture
+            },
+          );
+        } finally {
+          unsendable.close();
+        }
+        expect(calls, greaterThan(0));
+        expect(store.packs, hasLength(1));
+      },
+    );
+
+    test(
+      'ensureStarter without a usable asset keeps what is installed',
+      () async {
+        final s = PackStore(
+          root: Directory('${tmp.path}/packs'),
+          loadAsset: (_) async => throw Exception('asset not found'),
+        );
+        expect(await s.ensureStarter(), isFalse);
+        expect(s.loaded, isTrue);
+        expect(s.packs, isEmpty);
+
+        final placeholder = PackStore(
+          root: Directory('${tmp.path}/packs'),
+          loadAsset: (_) async => ByteData.sublistView(
+            ZipEncoder().encodeBytes(
+              Archive()..addFile(
+                ArchiveFile.string(
+                  'pack.json',
+                  '{"schema": 1, "id": "starter", "version": 0}',
+                ),
+              ),
+            ),
           ),
-        ),
-      );
-      expect(await placeholder.ensureStarter(), isTrue);
-      expect(placeholder.stories, isEmpty);
-    });
+        );
+        expect(await placeholder.ensureStarter(), isTrue);
+        expect(placeholder.stories, isEmpty);
+      },
+    );
   });
 
   group('LocalWebtoonApi', () {
