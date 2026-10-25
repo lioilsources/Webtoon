@@ -6,6 +6,7 @@ import '../models/author.dart';
 
 import '../models/campaign.dart';
 import '../models/episode.dart';
+import '../models/gamebook_graph.dart';
 import '../models/world.dart';
 
 /// Error from the backend (`{"error": "..."}`) or the network, with a Czech message for the UI.
@@ -108,6 +109,15 @@ abstract class WebtoonApi {
 
   /// GET /worlds/{id}/stats (owner only).
   Future<WorldStats> getWorldStats(String worldId);
+
+  /// GET /gamebooks — the gamebook graphs of the backend's repo (data/gamebooks/).
+  Future<List<GamebookSummary>> listGamebooks();
+
+  /// GET /gamebooks/{id}
+  Future<GamebookDoc> getGamebook(String id);
+
+  /// PUT /gamebooks/{id} {graph} — checked like an export; drawn nodes must stay.
+  Future<GamebookDoc> saveGamebook(String id, Map<String, dynamic> graph);
 
   /// POST /worlds/{id}/characters
   Future<Character> createCharacter(

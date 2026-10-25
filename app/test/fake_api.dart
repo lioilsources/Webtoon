@@ -6,6 +6,8 @@ import 'package:webtoon/api/webtoon_api.dart';
 import 'package:webtoon/models/author.dart';
 import 'package:webtoon/models/campaign.dart';
 import 'package:webtoon/models/episode.dart';
+import 'package:webtoon/models/gamebook_graph.dart';
+import 'package:webtoon/models/json.dart';
 import 'package:webtoon/models/world.dart';
 
 /// 1×1 transparent PNG.
@@ -340,6 +342,52 @@ class FakeWebtoonApi implements WebtoonApi {
   @override
   Future<WorldStats> getWorldStats(String worldId) async =>
       WorldStats.fromJson(statsJson);
+
+  /// Gamebook graphs (Studio's graph editor); a save keeps drawn nodes like the backend.
+  final Map<String, GamebookDoc> gamebooks = {};
+  final List<Map<String, dynamic>> savedGraphs = [];
+
+  @override
+  Future<List<GamebookSummary>> listGamebooks() async => [
+    for (final d in gamebooks.values)
+      GamebookSummary(
+        id: d.id,
+        title: str(d.graph['title']),
+        nodes: obj(d.graph['nodes']).length,
+        drawn: d.drawn.values.where((v) => v).length,
+      ),
+  ];
+
+  @override
+  Future<GamebookDoc> getGamebook(String id) async =>
+      gamebooks[id] ??
+      (throw const ApiException('Nenalezeno.', statusCode: 404));
+
+  @override
+  Future<GamebookDoc> saveGamebook(
+    String id,
+    Map<String, dynamic> graph,
+  ) async {
+    final old = await getGamebook(id);
+    final nodes = obj(graph['nodes']);
+    for (final e in old.drawn.entries) {
+      if (e.value && !nodes.containsKey(e.key)) {
+        throw ApiException(
+          'Chyba: node ${e.key} is drawn already and cannot be removed',
+          statusCode: 422,
+        );
+      }
+    }
+    savedGraphs.add(jsonDecode(jsonEncode(graph)) as Map<String, dynamic>);
+    return gamebooks[id] = GamebookDoc(
+      id: id,
+      graph: graph,
+      drawn: {for (final k in nodes.keys) k: old.drawn[k] ?? false},
+      characters: old.characters,
+      locations: old.locations,
+      drawCommand: old.drawCommand,
+    );
+  }
 
   Map<String, dynamic> _char(String worldId, String cid) {
     final j = _wj(worldId);

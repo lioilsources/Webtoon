@@ -9,6 +9,7 @@ import '../config.dart';
 import '../models/author.dart';
 import '../models/campaign.dart';
 import '../models/episode.dart';
+import '../models/gamebook_graph.dart';
 import '../models/json.dart';
 import '../models/world.dart';
 import 'webtoon_api.dart';
@@ -264,6 +265,24 @@ class HttpWebtoonApi implements WebtoonApi {
   @override
   Future<WorldStats> getWorldStats(String worldId) async =>
       WorldStats.fromJson(await _send('GET', '/worlds/${_e(worldId)}/stats'));
+
+  @override
+  Future<List<GamebookSummary>> listGamebooks() async {
+    final j = await _send('GET', '/gamebooks');
+    return objList(j['gamebooks']).map(GamebookSummary.fromJson).toList();
+  }
+
+  @override
+  Future<GamebookDoc> getGamebook(String id) async =>
+      GamebookDoc.fromJson(await _send('GET', '/gamebooks/${_e(id)}'));
+
+  @override
+  Future<GamebookDoc> saveGamebook(
+    String id,
+    Map<String, dynamic> graph,
+  ) async => GamebookDoc.fromJson(
+    await _send('PUT', '/gamebooks/${_e(id)}', body: {'graph': graph}),
+  );
 
   @override
   Future<Character> createCharacter(

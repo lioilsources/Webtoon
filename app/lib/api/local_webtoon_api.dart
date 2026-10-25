@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 import '../models/author.dart';
 import '../models/campaign.dart';
 import '../models/episode.dart';
+import '../models/gamebook_graph.dart';
 import '../models/world.dart';
 import '../packs/pack_store.dart';
 import 'webtoon_api.dart';
@@ -184,6 +185,17 @@ class LocalWebtoonApi implements WebtoonApi {
   @override
   Future<WorldStats> getWorldStats(String worldId) =>
       _unsupported('getWorldStats');
+
+  @override
+  Future<List<GamebookSummary>> listGamebooks() =>
+      _unsupported('listGamebooks');
+
+  @override
+  Future<GamebookDoc> getGamebook(String id) => _unsupported('getGamebook');
+
+  @override
+  Future<GamebookDoc> saveGamebook(String id, Map<String, dynamic> graph) =>
+      _unsupported('saveGamebook');
 
   @override
   Future<Character> createCharacter(

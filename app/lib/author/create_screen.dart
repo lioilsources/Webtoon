@@ -7,6 +7,7 @@ import '../providers/providers.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
 import 'author_widgets.dart';
+import 'gamebook_editor_screen.dart';
 import 'world_editor_screen.dart';
 
 /// Tab "Tvořit": the caller's own worlds (GET /worlds?owner=me) + "Nový svět".
@@ -17,7 +18,19 @@ class CreateScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final worlds = ref.watch(myWorldsProvider);
     return Scaffold(
-      appBar: AppBar(title: const Text('Tvořit')),
+      appBar: AppBar(
+        title: const Text('Tvořit'),
+        actions: [
+          IconButton(
+            key: const ValueKey('open-gamebooks'),
+            tooltip: 'Gamebooky',
+            icon: const Icon(Icons.account_tree_rounded),
+            onPressed: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const GamebooksScreen()),
+            ),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton.extended(
         key: const ValueKey('new-world'),
         onPressed: () => createWorldFlow(context, ref),

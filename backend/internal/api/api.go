@@ -88,6 +88,10 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("GET /episodes/{id}", s.requireUser(s.getEpisode))
 	mux.HandleFunc("PATCH /episodes/{id}/panels/{n}", s.requireUser(s.patchPanel))
 
+	mux.HandleFunc("GET /gamebooks", s.requireUser(s.listGamebooks))
+	mux.HandleFunc("GET /gamebooks/{id}", s.requireUser(s.getGamebook))
+	mux.HandleFunc("PUT /gamebooks/{id}", s.requireUser(s.putGamebook))
+
 	mux.HandleFunc("GET /media/{path...}", s.media)
 
 	return s.withCORS(s.withUser(s.logRequests(mux)))
