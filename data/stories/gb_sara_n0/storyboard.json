@@ -1,0 +1,244 @@
+{
+  "title": "Koruna, která šeptá",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bedroom",
+      "characters": [],
+      "visual_tags": [
+        "bedroom",
+        "night",
+        "moonlight",
+        "desk",
+        "crown glowing",
+        "dark atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Noc v Sářině pokoji. Koruna šeptá.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "purple glow pulsing from crown, moonlight shifting, static camera",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "leaning forward",
+        "looking at crown",
+        "intense eyes",
+        "whispering",
+        "hands on table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "(Šeptem) Sáro...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0267,
+          0.2453,
+          0.7914,
+          0.6918
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "ears back",
+        "worried",
+        "glowing eyes",
+        "looking at sara"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Město zhasíná. Bez Královny na trůnu ho jedí stíny.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "looking up",
+        "determined",
+        "holding crown",
+        "serious face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Kde je Královna?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3518,
+          0.1754,
+          0.6159,
+          0.3513
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "shaking head",
+        "sad",
+        "glowing eyes",
+        "floating"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Nikdo neví. Zmizela hned, jak ti dala korunu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "looking at mirror",
+        "mirror rippling",
+        "water effect",
+        "swirling",
+        "magical light",
+        "standing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, mirror surface rippling like water, purple light swirling, static camera",
+      "faces": [
+        [
+          0.4506,
+          0.3979,
+          0.5112,
+          0.4802
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "looking at mirror",
+        "hesitant",
+        "serious",
+        "hand raised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Musím se rozhodnout.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.503,
+          0.2708,
+          0.7685,
+          0.4499
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_mirror",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "ghost queen",
+        "long black hair",
+        "sad eyes",
+        "dark purple aura",
+        "floating",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "...",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

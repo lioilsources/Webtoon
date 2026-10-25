@@ -1,0 +1,237 @@
+{
+  "title": "Světlo se vrací",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_ghost_city",
+      "characters": [],
+      "visual_tags": [
+        "dark city",
+        "flickering lanterns",
+        "dark purple sky",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Město duchů zhasíná.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "lanterns flickering weakly, dark clouds drifting, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "handing over",
+        "sad expression",
+        "reaching out",
+        "black crown"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Tady, Královno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4231,
+          0.3638,
+          0.6105,
+          0.4968
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "hesitant",
+        "sad eyes",
+        "black crown",
+        "dark purple aura"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3537,
+          0.3549,
+          0.7054,
+          0.6039
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "wearing crown",
+        "crown glowing",
+        "silver crown",
+        "light burst",
+        "happy expression",
+        "aura changing"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "BLINK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the crown glows bright silver, light rays expanding, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "white_spirit"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "lanterns lighting up",
+        "bright light",
+        "floating",
+        "dancing",
+        "happy",
+        "confetti"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "SWISH!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "queen"
+        },
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "smiling",
+        "looking at city",
+        "peaceful",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Přijdeš zase? Každý úplněk?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3458,
+          0.1465,
+          0.6833,
+          0.3648
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "standing by window",
+        "looking out",
+        "moonlight",
+        "calm",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4427,
+          0.1992,
+          0.7945,
+          0.4376
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "looking at table",
+        "silver lantern",
+        "smile",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.1852,
+          0.1688,
+          0.9434,
+          0.6606
+        ]
+      ]
+    }
+  ]
+}

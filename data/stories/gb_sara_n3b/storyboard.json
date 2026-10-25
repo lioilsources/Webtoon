@@ -1,0 +1,210 @@
+{
+  "title": "Jezero vzpomínek",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_memory_lake",
+      "characters": [],
+      "visual_tags": [
+        "stone stairs",
+        "black water",
+        "glowing lilies",
+        "mist",
+        "moonlight",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jezero vzpomínek v noci.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "mist drifting over water, lilies glowing softly, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_memory_lake",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "standing on stairs",
+        "looking down",
+        "black water",
+        "glowing lilies",
+        "serious",
+        "floating"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.506,
+          0.1345,
+          0.5801,
+          0.2375
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mirror",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "looking at reflection",
+        "water surface",
+        "glowing eyes",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3004,
+          0.124,
+          0.6874,
+          0.3903
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_mirror",
+      "characters": [],
+      "visual_tags": [
+        "reflection",
+        "little girl",
+        "black hair",
+        "black cat",
+        "rain",
+        "sad",
+        "searching"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mirror",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "glowing eyes",
+        "looking at reflection",
+        "sad",
+        "floating",
+        "close up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Já jsem ji neopustil. Já se jen ztratil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "Murr's eyes glow brighter, mist swirling, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_memory_lake",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "reaching hand",
+        "touching water",
+        "ripples",
+        "determined",
+        "glowing lilies"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3489,
+          0.1548,
+          0.6408,
+          0.3353
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_mirror",
+      "characters": [],
+      "visual_tags": [
+        "reflection smiling",
+        "water surface",
+        "glowing",
+        "happy",
+        "lily pad"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_memory_lake",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "lily pad floating",
+        "pointing",
+        "glowing path",
+        "mystery",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.476,
+          0.217,
+          0.5475,
+          0.3175
+        ]
+      ]
+    }
+  ]
+}

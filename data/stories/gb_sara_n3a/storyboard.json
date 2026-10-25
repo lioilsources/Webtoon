@@ -1,0 +1,267 @@
+{
+  "title": "Zvonice zapomnění",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bell_tower",
+      "characters": [],
+      "visual_tags": [
+        "spiral staircase",
+        "dusty bells",
+        "moonlight",
+        "cobwebs",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Točité schody vedou nahoru do ticha.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "dust motes floating in moonlight, shadows shifting slowly, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking up",
+        "pointing",
+        "glowing eyes",
+        "curious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Podívej se na ten zvon, Murre.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3438,
+          0.4649,
+          0.4069,
+          0.5527
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "touching bell",
+        "close up",
+        "carving",
+        "girl drawing",
+        "gentle touch"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Je na něm kresba malé holčičky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3,
+          0.1294,
+          0.6766,
+          0.3892
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "ringing bell",
+        "hands on bell",
+        "sound waves",
+        "surprised",
+        "eyes wide"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "DŮŮŮŮŮŮŮŮŮŮŮ",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3533,
+          0.1723,
+          0.6372,
+          0.3675
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_memory",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "shadow play",
+        "silhouette",
+        "girl playing",
+        "cat silhouette",
+        "sepia tone",
+        "sad"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "shadow girl moves hand, cat shadow jumps, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_memory",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "shadow girl alone",
+        "looking down",
+        "empty space",
+        "sad silhouette",
+        "fading"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "glowing eyes",
+        "looking at sara",
+        "serious",
+        "mouth open"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "To jsem byl já.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "realization",
+        "hands on chest",
+        "sad smile",
+        "understanding",
+        "blue eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Královna nechtěla být sama.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3525,
+          0.127,
+          0.6761,
+          0.3397
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bell_tower",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "looking at each other",
+        "determined",
+        "standing together",
+        "bell tower background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Pojďme ji najít.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.517,
+          0.6593,
+          0.5462,
+          0.6971
+        ]
+      ]
+    }
+  ]
+}

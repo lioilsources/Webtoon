@@ -1,0 +1,254 @@
+{
+  "title": "Cesta zrcadlem",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_mirror_path",
+      "characters": [],
+      "visual_tags": [
+        "mirror surface",
+        "fog",
+        "reflections",
+        "surreal",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zrcadlová stezka v mlze.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "fog drifting slowly, ripples on mirror surface, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_mirror_path",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "walking",
+        "holding hands",
+        "cat floating",
+        "looking forward",
+        "determined",
+        "mirror reflection"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3551,
+          0.4672,
+          0.3941,
+          0.5249
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_mirror_path",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "looking at reflection",
+        "surprised",
+        "seeing child version",
+        "glowing",
+        "confused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Vidím sebe... mladší.",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.323,
+          0.1534,
+          0.6606,
+          0.3901
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "standing by stall",
+        "holding lantern",
+        "sad face",
+        "dark lanterns",
+        "dim light",
+        "fog"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "white_spirit",
+          "text": "Už nikdo nesvítí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "holding flashlight",
+        "lighting lantern",
+        "helping",
+        "kind smile",
+        "glowing flame"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "KLIK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, lantern flame flickering, light pulsing, static camera",
+      "faces": [
+        [
+          0.3834,
+          0.1653,
+          0.6394,
+          0.3397
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "holding lantern",
+        "happy",
+        "tears",
+        "glowing",
+        "looking at sara"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "white_spirit",
+          "text": "Ta nezhasne, dokud na ni myslíš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "small ghosts",
+        "gathering",
+        "glowing",
+        "happy",
+        "surrounded by light",
+        "murr floating"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.4988,
+          0.5387,
+          0.5309,
+          0.5891
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_lantern_market",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        },
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "holding lantern",
+        "small ghosts around",
+        "warm light",
+        "hopeful",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Město se probouzí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.4847,
+          0.4416,
+          0.5416,
+          0.5221
+        ]
+      ]
+    }
+  ]
+}

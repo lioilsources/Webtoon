@@ -1,0 +1,255 @@
+{
+  "title": "Studená koruna",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_throne",
+      "characters": [],
+      "visual_tags": [
+        "throne room",
+        "dark stone",
+        "ice crystals",
+        "cold light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Trůnní sál ztuhl v ledu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ice crystals growing slowly, cold mist drifting, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "queen"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "shouting",
+        "shadows frozen",
+        "ice spreading",
+        "surprised",
+        "frozen expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Stůjte!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [
+        {
+          "text": "KLANG!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.5523,
+          0.3676,
+          0.6048,
+          0.4421
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "shivering",
+        "tear",
+        "cold breath",
+        "pale face",
+        "ice on hands"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2884,
+          0.2224,
+          0.7828,
+          0.5556
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "worried",
+        "glowing eyes",
+        "looking at sara",
+        "mouth open"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Sáro! Takhle ne!",
+          "kind": "shout"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "taking off crown",
+        "dropping crown",
+        "regretful",
+        "hands shaking",
+        "ice breaking"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "CRACK!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, ice crystals shimmering, static camera",
+      "faces": [
+        [
+          0.4724,
+          0.4352,
+          0.525,
+          0.5113
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "waking up",
+        "sitting on ground",
+        "fog",
+        "lanterns",
+        "confused",
+        "looking around"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4721,
+          0.5978,
+          0.5165,
+          0.6574
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "concerned",
+        "looking at sara",
+        "glowing eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_square",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        },
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "determined",
+        "walking forward",
+        "town square",
+        "fog",
+        "lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Zkusím to znovu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.605,
+          0.1561,
+          0.6746,
+          0.2556
+        ]
+      ]
+    }
+  ]
+}

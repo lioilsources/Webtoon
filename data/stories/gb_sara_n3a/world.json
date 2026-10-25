@@ -1,0 +1,113 @@
+{
+  "id": "w_gb_sara_n3a",
+  "title": "Sára a černá koruna — Zvonice zapomnění",
+  "synopsis": "Sára se probudí v městě duchů, kde se musí vyrovnat s osamělou Královnou stínů a najde cestu domů.",
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "clean_webtoon_noartist",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: černá koruna na stole naznačuje, že dobrodružství teprve začíná."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bell_tower",
+      "l_memory"
+    ]
+  },
+  "characters": [
+    {
+      "id": "sara",
+      "name": "Sára",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a mysterious Czech girl aged 10 with long black hair and intense blue eyes",
+      "base": "female child, long black hair, straight hair, blue eyes, pale skin, serious face",
+      "outfits": {
+        "default": "long blue coat, white shirt, dark pants, boots, holding sword"
+      },
+      "photo": "a mysterious Czech girl aged 10 with long black hair and intense blue eyes",
+      "tag_prompt": "female child, long black hair, straight hair, blue eyes, pale skin, serious face, long blue coat, white shirt, dark pants, boots, holding sword",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "murr",
+      "name": "Murr",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a translucent black cat spirit with glowing blue eyes",
+      "base": "cat, black cat, glowing eyes, transparent, floating",
+      "outfits": {
+        "default": "glowing blue eyes"
+      },
+      "photo": "a translucent black cat spirit with glowing blue eyes",
+      "tag_prompt": "cat, black cat, glowing eyes, transparent, floating, glowing blue eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "white_spirit",
+      "name": "Bílý duch",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a classic white sheet ghost floating in the air",
+      "base": "ghost, white sheet, floating, faceless",
+      "outfits": {
+        "default": "white sheet"
+      },
+      "photo": "a classic white sheet ghost floating in the air",
+      "tag_prompt": "ghost, white sheet, floating, faceless, white sheet",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "queen",
+      "name": "Královna stínů",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a sad ghost queen with long black hair and a dark purple aura",
+      "base": "ghost, ghost queen, long black hair, purple aura, sad expression, crown",
+      "outfits": {
+        "default": "dark purple dress, crown"
+      },
+      "photo": "a sad ghost queen with long black hair and a dark purple aura",
+      "tag_prompt": "ghost, ghost queen, long black hair, purple aura, sad expression, crown, dark purple dress, crown",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bell_tower",
+      "name": "Zvonice zapomnění",
+      "description": "vysoká kamenná zvonice, zaprášené zvony, točité schody, měsíc v okně",
+      "tag_prompt": "outdoors, bell tower, tall stone structure, night, fog, dark atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_memory",
+      "name": "Vzpomínka",
+      "description": "Vzpomínka",
+      "tag_prompt": "outdoors, park, old style, sepia tone, shadow play effect, sad atmosphere",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "sara",
+    "node": "n3a"
+  }
+}

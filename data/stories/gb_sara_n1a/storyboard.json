@@ -1,0 +1,309 @@
+{
+  "title": "Koruna stínů",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_throne",
+      "characters": [],
+      "visual_tags": [
+        "throne room",
+        "purple swirl",
+        "shadows",
+        "dark",
+        "cold"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sára si nasadí korunu; pokoj se rozplyne ve fialovém víru.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "purple swirl rotating slowly, shadows creeping, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "raising hand",
+        "shadows stopping",
+        "shadows bowing",
+        "surprised",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Poslouchají mě?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4411,
+          0.355,
+          0.5123,
+          0.4527
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "sitting on throne",
+        "looking at viewer",
+        "unhappy",
+        "glowing eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Koruna ti dává moc. Ale bere teplo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "looking at hand",
+        "frost on sleeve",
+        "cold hands",
+        "worried",
+        "frost details"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.1428,
+          0.2185,
+          0.7103,
+          0.5806
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "looking out window",
+        "ghost floating",
+        "city view",
+        "dark city",
+        "extinguished lanterns"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Okny sálu je vidět, jak dole ve městě zhasínají lucerny.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, characters still, lanterns flickering out one by one, fog drifting, static camera",
+      "faces": [
+        [
+          0.4813,
+          0.7003,
+          0.5129,
+          0.7467
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "ghost queen",
+        "sad expression",
+        "dark purple aura",
+        "floating",
+        "looking at sara"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Město duchů zhasíná bez mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "standing together",
+        "determined",
+        "shadows surrounding",
+        "cold atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Zachráním město. I za cenu chladu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.0676,
+          0.5092,
+          0.1006,
+          0.5685
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "wearing crown",
+        "determined face",
+        "frost on hair",
+        "blue eyes glowing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Kdo jsi byla, Královno?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2102,
+          0.1825,
+          0.9212,
+          0.6566
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "sad smile",
+        "reaching out hand",
+        "fading away",
+        "purple smoke"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Byla jsem jako ty. Samotná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "looking at each other",
+        "cold wind",
+        "shadows retreating",
+        "determined"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "murr",
+          "text": "Je čas jít, Sáro.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.4873,
+          0.5005,
+          0.53,
+          0.5624
+        ]
+      ]
+    }
+  ]
+}

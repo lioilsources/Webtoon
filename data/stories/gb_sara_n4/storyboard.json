@@ -1,0 +1,241 @@
+{
+  "title": "Královna ve tmě",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_throne",
+      "characters": [],
+      "visual_tags": [
+        "throne room",
+        "swirling shadows",
+        "dark storm",
+        "floating lanterns",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Sára a Murr vstoupí do sálu, uprostřed se točí stínová bouře.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "shadows swirling in a vortex, lanterns flickering, static camera",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "queen sitting",
+        "huddled",
+        "no crown",
+        "sad face",
+        "looking away",
+        "dark aura",
+        "shadows rising"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Nechte mě. Když budu sama, nikdo mě nemůže ztratit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4391,
+          0.3389,
+          0.5221,
+          0.4611
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "shadows attacking",
+        "wave of darkness",
+        "cat standing",
+        "fur standing up",
+        "protective",
+        "glowing eyes",
+        "tension"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4929,
+          0.3263,
+          0.5537,
+          0.4102
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "murr"
+        }
+      ],
+      "visual_tags": [
+        "cat standing",
+        "fur standing up",
+        "glowing blue eyes",
+        "protective",
+        "hissing",
+        "open mouth"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "ŠŠŠŠ!",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "holding crown",
+        "black crown",
+        "determined face",
+        "looking at queen",
+        "blue eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2992,
+          0.2373,
+          0.6783,
+          0.4912
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ghost_city",
+      "characters": [],
+      "visual_tags": [
+        "gothic city",
+        "dim lanterns",
+        "dark sky",
+        "fog",
+        "gloomy"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bouře sílí, lucerny ve městě skoro zhasly.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "lanterns flickering and dimming, fog drifting, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "ghost floating",
+        "fading",
+        "transparent",
+        "scared",
+        "disappearing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "sara standing",
+        "holding crown out",
+        "queen looking up",
+        "sad face",
+        "tension",
+        "decision moment"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Poslední rozhodnutí.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.4509,
+          0.1698,
+          0.5285,
+          0.2795
+        ]
+      ]
+    }
+  ]
+}

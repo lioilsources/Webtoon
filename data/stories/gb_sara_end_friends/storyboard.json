@@ -1,0 +1,222 @@
+{
+  "title": "Kočka, která se vrátila",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_throne",
+      "characters": [],
+      "visual_tags": [
+        "throne room",
+        "dark stone",
+        "purple lighting",
+        "shadows",
+        "empty throne"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Trůnní sál Města duchů.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "shadows drifting slowly, purple light pulsing, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "sara"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "holding hands",
+        "looking at each other",
+        "sad queen",
+        "determined girl",
+        "close up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sara",
+          "text": "Murr tě nikdy neopustil. Ztratil se.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, characters still, purple light pulsing, static camera",
+      "faces": [
+        [
+          0.4112,
+          0.4529,
+          0.6172,
+          0.5927
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "murr"
+        },
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "cat jumping",
+        "landing on lap",
+        "queen smiling",
+        "first smile",
+        "glowing cat"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "putting on crown",
+        "black crown",
+        "glowing crown",
+        "happy",
+        "standing up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_ghost_city",
+      "characters": [
+        {
+          "id": "white_spirit"
+        }
+      ],
+      "visual_tags": [
+        "floating",
+        "ringing bells",
+        "magical lights",
+        "city glowing",
+        "fireflies",
+        "joyful"
+      ],
+      "bubbles": [],
+      "sfx": [
+        {
+          "text": "DZVON! DZVON",
+          "style": "bold"
+        }
+      ],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_throne",
+      "characters": [
+        {
+          "id": "queen"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "nostalgic",
+        "soft smile",
+        "hands on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "queen",
+          "text": "Měla jsem kamarádku a nevěděla jsem to.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4147,
+          0.2235,
+          0.6068,
+          0.3518
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "sitting by window",
+        "looking at windowsill",
+        "smiling",
+        "moonlight",
+        "black fur"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4003,
+          0.1785,
+          0.744,
+          0.4052
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "sara"
+        }
+      ],
+      "visual_tags": [
+        "smiling",
+        "happy",
+        "closed eyes",
+        "peaceful",
+        "moonlight on face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.2128,
+          0.1722,
+          0.926,
+          0.6505
+        ]
+      ]
+    }
+  ]
+}
