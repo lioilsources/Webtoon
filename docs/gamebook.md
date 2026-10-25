@@ -9,9 +9,9 @@ Appka: `app/lib/gamebook/` (čtečka `gamebook_screen.dart`, editor `branch_edit
 
 Zip jako balíček (PACK_FORMAT.md) s `gamebook.json` navíc:
 
-- `nodes{id: {episode_id, title, next?, choices[{id, text, i18n, to, if?}], sets[], ending?, retry_to?}}`
+- `nodes{id: {story, episode, title, next?, choices[{id, text, text_i18n?, to, if?}], sets[], ending?, retry_to?}}`
   — epizody a panely jsou v `pack.json` jako u balíčků, čtečka je kreslí stejně.
-- `start`, `flags[]`, `lore` = postavy, lokace a pravidla světa (z world.json) pro editor.
+- `start`, `order[]`, `flags[]`, `endings` (počet dobrých), `lore` = postavy, lokace a pravidla světa pro editor.
 - Podmínky `if` jsou jen `flag`, `a or b`, `a and b`, `not a` — žádný skriptovací jazyk.
 
 Vzniká ze `graph.yaml`: osnova → storyboard každého uzlu (adapt s `beats`, postavy a lokace ze světa) →
