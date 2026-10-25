@@ -1,0 +1,192 @@
+# Gamebook 1 — Sára a černá koruna (pokračování lx_k2_05_sara_mesto_duchu). OSNOVA ke schválení, nic se nekreslí.
+#
+# Návrh formátu (gamebook schema 1, zatím jen tenhle soubor; app/lib/gamebook/gamebook.dart je stub):
+#   nodes:  uzel = jedna epizoda (storyboard + panely jako v pack.json). `panels` = cílový počet panelů,
+#           `beats` = děj po panelech (z nich se píše storyboard), `sets` = příznaky po dočtení uzlu.
+#   next:   uzel bez volby pokračuje rovnou sem.
+#   choices: hrany; `to` = cílový uzel, `if` = podmínka na příznacích (volba se jinak nezobrazí).
+#   ending: good | retry (retry vrací čtenáře na uzel `retry_to` a smaže příznaky nastavené od něj).
+#   Volby jsou jen pevné (žádný volný text): celý graf je nakreslený dopředu a čte se offline.
+# Svět, postavy, styl a pravidla bere z data/stories/lx_k2_05_sara_mesto_duchu/world.json (`world`); nové
+# lokace jsou v `locations`. Pro děti: bez krve a zranění, souboje končí smírem (bible.rules světa).
+
+schema: 1
+id: sara
+title: Sára a černá koruna
+title_i18n: {en: Sara and the Black Crown}
+world: w_lx_k2_05_sara_mesto_duchu
+audience: kids
+language: cs            # beta jen česky; překlad bublin stejně jako u příběhů (translate -storyboard)
+style_id: clean_webtoon_noartist
+product_id: gamebook_sara
+start: n0
+
+premise: >
+  Královna stínů přijala Sářino přátelství a na stole po ní zůstala černá koruna. Bez královny na trůnu ale
+  Město duchů zhasíná: stíny pojídají světlo luceren a malí duchové se ztrácejí. Sára se vrací, aby město
+  zachránila a zjistila, kým Královna kdysi byla.
+
+characters: [sara, murr, white_spirit, queen]   # žádné nové postavy; malí duchové = prostěradlové duchy v pozadí
+
+locations:
+  - {id: l_mirror_path, name: Zrcadlová stezka, description: "stezka ze stříbrných zrcadel mezi světem živých a duchů, mlha, odlesky"}
+  - {id: l_lantern_market, name: Trh luceren, description: "noční tržiště duchů, stovky papírových luceren, některé zhaslé"}
+  - {id: l_bell_tower, name: Zvonice zapomnění, description: "vysoká kamenná zvonice, zaprášené zvony, točité schody, měsíc v okně"}
+  - {id: l_memory_lake, name: Jezero vzpomínek, description: "klidné černé jezero pod městem, hladina ukazuje obrazy minulosti, svítící lekníny"}
+  # + ze světa: l_bedroom, l_ghost_city, l_throne
+
+nodes:
+  n0:
+    title: Koruna, která šeptá
+    location: l_bedroom
+    panels: 8
+    beats:
+      - Noc v Sářině pokoji, černá koruna na stole slabě fialově svítí.
+      - Sára se k ní nakloní; koruna šeptá jejím jménem.
+      - Oknem proklouzne Murr, uši stažené.
+      - "Murr: Město zhasíná. Bez Královny na trůnu ho jedí stíny."
+      - "Sára: Kde je Královna?"
+      - "Murr: Nikdo neví. Zmizela hned, jak ti dala korunu."
+      - Zrcadlo na skříni se zavlní jako voda.
+      - Sára drží korunu a dívá se na zrcadlo — musí se rozhodnout, jak do města.
+    choices:
+      - {id: wear, text: Nasadit si korunu, to: n1a}
+      - {id: mirror, text: Projít zrcadlem s Murrem, to: n1b}
+
+  n1a:
+    title: Koruna stínů
+    next: n2
+    location: l_throne
+    panels: 7
+    sets: [crown_worn]
+    beats:
+      - Sára si nasadí korunu; pokoj se rozplyne ve fialovém víru.
+      - Stojí v prázdném Trůnním sále, stíny se k ní plazí.
+      - Sára zvedne ruku a stíny se zastaví a ukloní.
+      - "Sára (překvapeně): Poslouchají mě?"
+      - 'Murr se objeví na trůnu, nespokojený: "Koruna ti dává moc. Ale bere teplo."'
+      - Sára si všimne, že má studené prsty a jinovatku na rukávu.
+      - Okny sálu je vidět, jak dole ve městě zhasínají lucerny.
+
+  n1b:
+    title: Cesta zrcadlem
+    next: n2
+    location: l_mirror_path
+    panels: 7
+    sets: [lantern]
+    beats:
+      - Sára a Murr vstoupí do zrcadla, za nimi se hladina zavře.
+      - Zrcadlová stezka v mlze, v odlescích Sára vidí sebe mladší.
+      - Na konci stezky Trh luceren (l_lantern_market), polovina luceren je zhaslá.
+      - 'Bílý duch prodává lucerny, smutně: "Už nikdo nesvítí."'
+      - Sára mu pomůže zapálit jednu lucernu od své baterky.
+      - 'Bílý duch jí lucernu daruje: "Ta nezhasne, dokud na ni myslíš."'
+      - Malí duchové se kolem Sáry seběhnou ke světlu.
+
+  n2:
+    title: Zhasínající město
+    location: l_ghost_city
+    panels: 8
+    beats:
+      - Široký záběr na Město duchů, stíny jako inkoust stékají po střechách.
+      - Malý duch pláče, ztratil se ve tmě; Sára ho utěší.
+      - Bílý duch a Murr se přou, kam Královna mohla jít.
+      - "Bílý duch: Ve Zvonici zapomnění chodí ti, kdo chtějí, aby se na ně zapomnělo."
+      - "Murr: Ne. U Jezera vzpomínek chodí ti, kdo si chtějí vzpomenout."
+      - Sára si všimne, že koruna (nebo lucerna) slabě míří oběma směry.
+      - Nad městem se zvedá stínová bouře.
+      - Sára se rozhoduje.
+    choices:
+      - {id: tower, text: Vystoupat do Zvonice zapomnění, to: n3a}
+      - {id: lake, text: Sestoupit k Jezeru vzpomínek, to: n3b}
+
+  n3a:
+    title: Zvonice zapomnění
+    next: n4
+    location: l_bell_tower
+    panels: 7
+    sets: [memory_bell]
+    beats:
+      - Točité schody, každý schod je tišší než ten předchozí.
+      - Nahoře zaprášené zvony; na každém je vyryté jméno, které už nikdo nezná.
+      - Jeden zvon nemá jméno, jen kresbu malé holčičky s kočkou.
+      - Sára na zvon jemně zazvoní; tón ukáže vzpomínku jako stínové divadlo.
+      - Holčička s dlouhými černými vlasy si hraje s černou kočkou — byla sama, pak přišla o kočku.
+      - "Murr (tiše): To jsem byl já."
+      - Sára pochopí, proč Královna nechtěla být sama.
+
+  n3b:
+    title: Jezero vzpomínek
+    next: n4
+    location: l_memory_lake
+    panels: 7
+    sets: [memory_lake]
+    beats:
+      - Sára sestupuje po kamenných schodech k černému jezeru se svítícími lekníny.
+      - 'Na hladině se objeví obraz: malá holčička s dlouhými černými vlasy a černou kočkou.'
+      - Holčička kočku hledá v dešti a nemůže ji najít.
+      - Murr se na obraz dívá a jeho oči se rozzáří.
+      - "Murr: Já jsem ji neopustil. Já se jen ztratil."
+      - Sára položí ruku na hladinu, obraz se usměje.
+      - Leknín se zvedne a ukáže cestu k trůnu.
+
+  n4:
+    title: Královna ve tmě
+    location: l_throne
+    panels: 8
+    beats:
+      - Sára a Murr vstoupí do sálu, uprostřed se točí stínová bouře.
+      - Uprostřed bouře sedí Královna stínů schoulená na zemi, bez koruny.
+      - "Královna: Nechte mě. Když budu sama, nikdo mě nemůže ztratit."
+      - Stíny se zvednou proti Sáře jako vlna (akčně, bez zranění).
+      - Murr se postaví před Sáru, srst se mu zježí.
+      - Sára drží korunu a dívá se na Královnu.
+      - Bouře sílí, lucerny ve městě skoro zhasly.
+      - Poslední rozhodnutí.
+    choices:
+      - {id: give_crown, text: Vrátit Královně korunu, to: end_light}
+      - {id: friends, text: Podat Královně ruku a připomenout jí Murra, to: end_friends, if: "memory_bell or memory_lake"}
+      - {id: command, text: Rozkázat stínům korunou, to: end_cold, if: crown_worn}
+
+  end_light:
+    title: Světlo se vrací
+    ending: good
+    location: l_ghost_city
+    panels: 6
+    beats:
+      - Sára podá Královně korunu; Královna zaváhá a pak si ji nasadí.
+      - Koruna se z černé změní na stříbrnou, bouře se rozplyne.
+      - Lucerny v celém městě se znovu rozsvítí.
+      - Malí duchové tančí na Trhu luceren.
+      - "Královna: Přijdeš zase? Každý úplněk?"
+      - Sára se probudí doma, na stole místo koruny leží stříbrná lucerna.
+
+  end_friends:
+    title: Kočka, která se vrátila
+    ending: good
+    location: l_throne
+    panels: 7
+    beats:
+      - 'Sára podá Královně ruku: "Murr tě nikdy neopustil. Ztratil se."'
+      - Murr skočí Královně do náruče; ta se poprvé usměje.
+      - Stínová bouře se změní v roj světlušek.
+      - Královna si sama nasadí korunu, teď hřeje.
+      - Celé město se rozzáří a Bílý duch rozezvoní všechny zvony.
+      - "Královna: Měla jsem kamarádku a nevěděla jsem to."
+      - Doma Sára najde na polštáři černý chlup a usměje se.
+
+  end_cold:
+    title: Studená koruna
+    ending: retry
+    retry_to: n2
+    location: l_throne
+    panels: 5
+    beats:
+      - 'Sára zvedne korunu a přikáže stínům: "Stůjte!" Stíny zamrznou.'
+      - Ale zamrzne i sál, Královna, i Murr — všechno ztichne v ledu.
+      - Sára cítí, že jí koruna bere teplo; po tváři jí stéká slza.
+      - "Murr (z dálky): Sáro! Takhle ne!"
+      - Sára sundá korunu a probudí se na náměstí ve městě — ještě je čas to zkusit jinak.
+
+# Rozsah: 10 uzlů, 70 panelů (3 voleb/rozhodnutí, 2 dobré konce + 1 „zkus to znovu“), bez nových postav.
+# Cesty: wear|mirror × tower|lake × (give_crown | friends | command jen po wear) — každá cesta 4 uzly.
