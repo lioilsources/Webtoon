@@ -106,6 +106,9 @@ class Entitlements {
   bool unlocksPack(Catalog catalog, CatalogPack pack) {
     if (pack.free || pack.bundled) return true;
     if (pack.productId != null && ownsProduct(pack.productId!)) return true;
+    if (pack.gamebook) {
+      return pack.kitProductId != null && ownsProduct(pack.kitProductId!);
+    }
     return bundlesFor(catalog, pack).isNotEmpty;
   }
 
@@ -126,11 +129,12 @@ class Entitlements {
 
   /// `gamebook_<id>` or `kit_<id>` (the kit includes the gamebook).
   bool unlocksGamebook(CatalogGamebook g) =>
+      g.free ||
       ownsProduct(g.productId) ||
       (g.kitProductId != null && ownsProduct(g.kitProductId!));
 
   bool unlocksKit(CatalogGamebook g) =>
-      g.kitProductId != null && ownsProduct(g.kitProductId!);
+      g.free || (g.kitProductId != null && ownsProduct(g.kitProductId!));
 
   /// Packs a product unlocks in [catalog] (for "download after purchase").
   List<CatalogPack> packsOfProduct(Catalog catalog, String productId) {
@@ -144,6 +148,10 @@ class Entitlements {
     return [
       for (final p in catalog.packs)
         if (p.productId == productId) p,
+      for (final g in catalog.gamebooks)
+        if (g.ready &&
+            (g.productId == productId || g.kitProductId == productId))
+          g.asPack(),
     ];
   }
 }

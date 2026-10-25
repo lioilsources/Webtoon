@@ -142,6 +142,11 @@ class CatalogPack {
   final List<String> previews;
   final List<CatalogPart> parts;
 
+  /// The zip of a gamebook (CatalogGamebook.asPack): unlocked by its own product or its kit,
+  /// never by a bundle.
+  final bool gamebook;
+  final String? kitProductId;
+
   const CatalogPack({
     required this.id,
     required this.type,
@@ -159,6 +164,8 @@ class CatalogPack {
     this.cover,
     this.previews = const [],
     this.parts = const [],
+    this.gamebook = false,
+    this.kitProductId,
   });
 
   String titleIn(String? lang) => _pick(titleI18n, lang, title);
@@ -229,6 +236,16 @@ class CatalogGamebook {
   final String status;
   final Object? graph;
   final Object? lore;
+  final String title;
+  final bool free;
+  final int version;
+  final int nodes;
+  final int endings;
+  final int bytes;
+  final List<String> languages;
+
+  /// The one zip (pack.json + gamebook.json) once `status` is `ready`.
+  final List<CatalogPart> parts;
 
   const CatalogGamebook({
     required this.id,
@@ -241,9 +258,44 @@ class CatalogGamebook {
     this.status = 'planned',
     this.graph,
     this.lore,
+    this.title = '',
+    this.free = false,
+    this.version = 1,
+    this.nodes = 0,
+    this.endings = 0,
+    this.bytes = 0,
+    this.languages = const [],
+    this.parts = const [],
   });
 
-  String titleIn(String? lang) => _pick(titleI18n, lang, id);
+  String titleIn(String? lang) =>
+      _pick(titleI18n, lang, title.isNotEmpty ? title : id);
+
+  /// Downloadable: drawn and exported (`planned` ones are only announced).
+  bool get ready => status == 'ready' && parts.isNotEmpty;
+
+  /// Pack id of its zip (pack.json `id`).
+  String get packId => 'gamebook-$id';
+
+  /// The zip as a pack, so the store's buy / download / delete machinery serves it.
+  CatalogPack asPack() => CatalogPack(
+    id: packId,
+    type: type,
+    title: title.isNotEmpty ? title : id,
+    titleI18n: titleI18n,
+    free: free,
+    productId: free ? null : productId,
+    version: version,
+    stories: nodes,
+    bytes: bytes,
+    audience: audience,
+    languages: languages,
+    cover: cover,
+    previews: [?cover],
+    parts: parts,
+    gamebook: true,
+    kitProductId: kitProductId,
+  );
 
   factory CatalogGamebook.fromJson(Map<String, dynamic> j) {
     final id = str(j['id']);
@@ -258,6 +310,14 @@ class CatalogGamebook {
       status: str(j['status'], 'planned'),
       graph: j['graph'],
       lore: j['lore'],
+      title: str(j['title']),
+      free: j['free'] == true,
+      version: integer(j['version'], 1),
+      nodes: integer(j['nodes']),
+      endings: integer(j['endings']),
+      bytes: integer(j['bytes']),
+      languages: strList(j['languages']),
+      parts: objList(j['parts']).map(CatalogPart.fromJson).toList(),
     );
   }
 }

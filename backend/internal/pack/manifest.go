@@ -43,6 +43,7 @@ type Part struct {
 	Stories  []Story
 	Panels   int
 	Loops    int
+	Extra    map[string][]byte // more JSON next to pack.json (gamebook.json), deflated
 }
 
 // panelPath / loopPath / coverPath are the paths inside the zip (relative, as pack.json needs them).
@@ -99,11 +100,11 @@ func Plan(opts Options, stories []Story) ([]Part, error) {
 	if now.IsZero() {
 		now = time.Now()
 	}
-	chunks := SplitParts(stories, opts.Starter != "")
+	chunks := SplitParts(stories, opts.Starter != "" || opts.Gamebook != nil)
 	parts := make([]Part, 0, len(chunks))
 	for i, chunk := range chunks {
 		// Catalog parts are always named (a, b, …): the release asset name carries the part.
-		p, err := planPart(opts, partName(i, len(chunks), opts.OutDir != ""), chunk, now)
+		p, err := planPart(opts, partName(i, len(chunks), opts.OutDir != "" && opts.Gamebook == nil), chunk, now)
 		if err != nil {
 			return nil, err
 		}

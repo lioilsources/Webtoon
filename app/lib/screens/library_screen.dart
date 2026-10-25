@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../gamebook/gamebook_shelf.dart';
 import '../models/world.dart';
 import '../packs/pack_store.dart';
 import '../providers/language_provider.dart';
@@ -32,6 +33,7 @@ class LibraryScreen extends ConsumerWidget {
       for (final s in store.stories)
         if (storyVisibleIn(store, profile, s)) s,
     ];
+    final gamebooks = visibleGamebooks(ref);
     final worlds = store.worlds;
     final byWorld = <String, List<PackStory>>{};
     for (final s in stories) {
@@ -44,7 +46,7 @@ class LibraryScreen extends ConsumerWidget {
     ];
     return Scaffold(
       appBar: AppBar(title: const Text('Knihovna')),
-      body: stories.isEmpty
+      body: stories.isEmpty && gamebooks.isEmpty
           ? const EmptyState(
               key: ValueKey('library-empty'),
               icon: Icons.auto_stories_outlined,
@@ -57,6 +59,7 @@ class LibraryScreen extends ConsumerWidget {
               key: const ValueKey('library-list'),
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 32),
               children: [
+                if (gamebooks.isNotEmpty) GamebookShelf(gamebooks: gamebooks),
                 for (final w in worlds)
                   if (byWorld[w.id]?.isNotEmpty ?? false) ...[
                     _WorldHeader(world: w),

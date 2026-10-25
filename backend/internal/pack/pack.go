@@ -37,6 +37,8 @@ type Options struct {
 
 	OutDir  string // catalog mode: writes releases/<tag>/<asset>, covers/, catalog.json under it
 	Starter string // starter mode: writes this one zip (no parts, no catalog)
+	// Gamebook mode (-gamebook graph.yaml): the nodes' worlds in one zip with gamebook.json, catalog gamebooks[].
+	Gamebook *Graph
 
 	Workers int       // cwebp processes in flight; default runtime.NumCPU()
 	Force   bool      // overwrite an existing zip (the format says: new version = new name)

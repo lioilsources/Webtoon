@@ -491,6 +491,7 @@ func runExportPack(ctx context.Context, cfg config.Config, args []string) error 
 	fs.StringVar(&o.Starter, "starter", "", "write this single zip (e.g. ../app/assets/packs/starter.zip) and touch no catalog")
 	fs.StringVar(&o.BaseURL, "base-url", "", "catalog base_urls.pages (default: rules/base/pack.yaml)")
 	pickFile := fs.String("starter-pick", "", "starter selection: yaml of world picks (data/starter_showcase.yaml)")
+	graphFile := fs.String("gamebook", "", "gamebook graph (data/gamebooks/<id>/graph.yaml): its nodes' worlds, one zip, catalog gamebooks[]")
 	fs.IntVar(&o.Workers, "workers", 0, "parallel cwebp processes (default: CPUs)")
 	fs.BoolVar(&o.Force, "force", false, "overwrite an existing zip")
 	campaigns := fs.String("campaigns", "", "comma-separated campaign ids")
@@ -520,6 +521,16 @@ func runExportPack(ctx context.Context, cfg config.Config, args []string) error 
 		}
 		if o.Version == 0 {
 			o.Version = pf.Pack.Version
+		}
+	}
+	if *graphFile != "" {
+		g, err := pack.ReadGraph(*graphFile)
+		if err != nil {
+			return err
+		}
+		o.Gamebook = g
+		if len(sel.Campaigns) == 0 && len(sel.Worlds) == 0 && len(sel.WorldPrefixes) == 0 {
+			sel = g.Selection()
 		}
 	}
 	if o.Version == 0 {

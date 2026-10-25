@@ -50,6 +50,12 @@ class StoreView {
       if (packVisible(p)) p,
   ];
 
+  /// Drawn gamebooks (`planned` ones are not for sale yet).
+  List<CatalogGamebook> get gamebooks => [
+    for (final g in catalog.gamebooks)
+      if (g.ready && audienceVisible(profile, g.audience)) g,
+  ];
+
   /// A bundle is shown only when every type it covers is visible ("all" includes adult types).
   List<CatalogBundle> get bundles => [
     for (final b in catalog.bundles)
@@ -114,7 +120,8 @@ class StoreScreen extends ConsumerWidget {
       final view = StoreView(catalog, profile);
       final types = view.types;
       final bundles = view.bundles;
-      body = types.isEmpty && bundles.isEmpty
+      final gamebooks = view.gamebooks;
+      body = types.isEmpty && bundles.isEmpty && gamebooks.isEmpty
           ? EmptyState(
               key: const ValueKey('store-empty'),
               icon: Icons.storefront_outlined,
@@ -133,6 +140,14 @@ class StoreScreen extends ConsumerWidget {
                       title: t.titleIn(lang),
                     ),
                     _PackGrid(packs: view.packsOf(t.id)),
+                  ],
+                  if (gamebooks.isNotEmpty) ...[
+                    const _SectionHeader(
+                      key: ValueKey('store-gamebooks'),
+                      icon: Icons.alt_route_rounded,
+                      title: 'Gamebooky',
+                    ),
+                    for (final g in gamebooks) GamebookStoreCard(gamebook: g),
                   ],
                   if (bundles.isNotEmpty) ...[
                     _SectionHeader(
@@ -604,6 +619,82 @@ class PackDetailScreen extends ConsumerWidget {
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+/// A gamebook in Obchod: the book (buy / download like a pack) and its editor kit.
+class GamebookStoreCard extends ConsumerWidget {
+  final CatalogGamebook gamebook;
+  const GamebookStoreCard({super.key, required this.gamebook});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lang = ref.watch(uiLanguageProvider);
+    final shop = ref.watch(shopProvider);
+    final catalog = shop.catalog!;
+    final comic = ComicTheme.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    final g = gamebook;
+    final size = g.bytes > 0 ? ' · ${formatBytes(g.bytes)}' : '';
+    return Padding(
+      key: ValueKey('store-gamebook-${g.id}'),
+      padding: const EdgeInsets.only(bottom: 14),
+      child: Ink(
+        padding: const EdgeInsets.all(12),
+        decoration: comic.card(color: scheme.surface, radius: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: SizedBox(
+                    width: 96,
+                    height: 96,
+                    child: CoverMosaic(catalog: catalog, covers: [?g.cover]),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        g.titleIn(lang),
+                        style: ComicFonts.title().copyWith(fontSize: 18),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Gamebook · ${g.nodes} částí · ${g.endings} konce$size',
+                        style: ComicFonts.ui(700).copyWith(
+                          fontSize: 12,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 10),
+            PackAction(pack: g.asPack()),
+            if (g.kitProductId != null && !shop.entitlements.unlocksKit(g)) ...[
+              const SizedBox(height: 10),
+              Text(
+                'S editorem větví: piš vlastní odbočky z obrázků knihy.',
+                style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
+              ),
+              const SizedBox(height: 6),
+              BuyButton(
+                key: ValueKey('gamebook-kit-buy-${g.id}'),
+                productId: g.kitProductId,
+              ),
+            ],
+          ],
+        ),
       ),
     );
   }

@@ -2,6 +2,7 @@ package pack
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"os"
@@ -25,6 +26,9 @@ func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Sum
 	if len(sel.Picks) > 0 && opts.Starter == "" {
 		return nil, errors.New("-starter-pick builds the starter: give -starter <zip>")
 	}
+	if opts.Gamebook != nil && opts.OutDir == "" {
+		return nil, errors.New("-gamebook writes a catalog gamebook: give -out <dir>")
+	}
 	if opts.Now.IsZero() {
 		opts.Now = time.Now()
 	}
@@ -45,6 +49,9 @@ func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Sum
 		return nil, err
 	}
 	notes = append(notes, typeNotes...)
+	if g := opts.Gamebook; g != nil {
+		gamebookNames(&opts, r)
+	}
 	if opts.OutDir != "" {
 		if err := opts.ResolveNames(r); err != nil {
 			return nil, err
@@ -59,6 +66,17 @@ func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Sum
 	parts, err := Plan(opts, stories)
 	if err != nil {
 		return nil, err
+	}
+	if opts.Gamebook != nil {
+		gb, err := buildGamebook(ctx, q, opts.Gamebook, parts[0])
+		if err != nil {
+			return nil, err
+		}
+		body, err := json.Marshal(gb)
+		if err != nil {
+			return nil, err
+		}
+		parts[0].Extra = map[string][]byte{GamebookFile: body}
 	}
 	sum := &Summary{Notes: notes}
 	for i := range parts {
@@ -77,7 +95,11 @@ func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Sum
 	if opts.OutDir == "" {
 		return sum, nil
 	}
-	if err := writeCatalog(opts, parts, sum); err != nil {
+	write := writeCatalog
+	if opts.Gamebook != nil {
+		write = writeGamebookCatalog
+	}
+	if err := write(opts, parts, sum); err != nil {
 		return nil, err
 	}
 	sum.ReleaseTag = opts.ReleaseTag
@@ -118,7 +140,7 @@ func buildPart(ctx context.Context, opts Options, part Part) (PartSummary, error
 		return ps, err
 	}
 	tmp := ps.Path + ".tmp"
-	n, sha, err := writeZip(tmp, part.Manifest, stageDir, part.Files, opts.Now)
+	n, sha, err := writeZip(tmp, part.Manifest, part.Extra, stageDir, part.Files, opts.Now)
 	if err != nil {
 		os.Remove(tmp)
 		return ps, err

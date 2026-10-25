@@ -13,6 +13,7 @@ import 'package:flutter/services.dart' show ByteData, rootBundle;
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
+import '../gamebook/gamebook.dart';
 import '../models/episode.dart';
 import '../models/json.dart';
 import '../models/world.dart';
@@ -154,11 +155,13 @@ class PackManifest {
   }
 }
 
-/// A pack (or one part of a split pack) on disk.
+/// A pack (or one part of a split pack) on disk. [gamebook] is its `gamebook.json` when the
+/// pack is a gamebook: its stories are nodes, read through the gamebook, not the library.
 class InstalledPack {
   final Directory dir;
   final PackManifest manifest;
-  const InstalledPack(this.dir, this.manifest);
+  final Gamebook? gamebook;
+  const InstalledPack(this.dir, this.manifest, {this.gamebook});
 
   String get id => manifest.id;
 }
@@ -205,15 +208,46 @@ class PackStore {
     ];
   }
 
-  /// Stories across all packs, in pack order (= library order).
+  /// Stories across all packs, in pack order (= library order). Gamebook nodes are not stories.
   List<PackStory> get stories {
     final seen = <String>{};
     return [
       for (final pk in _packs)
-        for (final s in pk.manifest.stories)
-          if (seen.add(s.id)) s,
+        if (pk.gamebook == null)
+          for (final s in pk.manifest.stories)
+            if (seen.add(s.id)) s,
     ];
   }
+
+  /// Installed gamebooks, in pack order.
+  List<Gamebook> get gamebooks => [
+    for (final pk in _packs)
+      if (pk.gamebook != null) pk.gamebook!,
+  ];
+
+  Gamebook? gamebook(String id) {
+    for (final g in gamebooks) {
+      if (g.id == id) return g;
+    }
+    return null;
+  }
+
+  /// A node story of [g] (its cover and world); gamebook stories are not in [stories].
+  PackStory? gamebookStory(Gamebook g, String storyId) {
+    for (final pk in _packs) {
+      if (pk.id != g.packId) continue;
+      for (final s in pk.manifest.stories) {
+        if (s.id == storyId) return s;
+      }
+    }
+    return null;
+  }
+
+  /// Every episode of [packId] (all its parts), in pack.json order.
+  List<Episode> episodesOf(String packId) => [
+    for (final pk in _packs)
+      if (pk.id == packId) ...pk.manifest.episodes,
+  ];
 
   WorldSummary? world(String id) {
     for (final w in worlds) {
@@ -263,8 +297,16 @@ class PackStore {
         if (!await f.exists()) continue;
         try {
           final j = obj(jsonDecode(await f.readAsString()));
+          final manifest = PackManifest.parse(j, dir: d.path);
+          final gb = File(p.join(d.path, 'gamebook.json'));
+          final gamebook = await gb.exists()
+              ? Gamebook.parse(
+                  obj(jsonDecode(await gb.readAsString())),
+                  packId: manifest.id,
+                )
+              : null;
           packs.add(
-            InstalledPack(d as Directory, PackManifest.parse(j, dir: d.path)),
+            InstalledPack(d as Directory, manifest, gamebook: gamebook),
           );
         } on FormatException {
           continue;
