@@ -52,3 +52,28 @@ func TestFindPanels(t *testing.T) {
 		t.Error("non-PNG should fail")
 	}
 }
+
+func TestFindPanelsVideo(t *testing.T) {
+	dir := t.TempDir()
+	for i := range 3 {
+		writePNG(t, filepath.Join(dir, fmt.Sprintf("p%02d_s0.png", i)), 8, 8)
+	}
+	_ = os.WriteFile(filepath.Join(dir, "p00_video.webp"), []byte("RIFF"), 0o644)
+	_ = os.WriteFile(filepath.Join(dir, "p01_video.webp"), []byte("RIFF"), 0o644)
+	meta := `{"videos": [{"panel": 0, "file": "p00_video.webp", "seed": 9000, "status": "ok"},
+		{"panel": 1, "file": "p01_video.webp", "seed": 9100, "status": "unsafe"},
+		{"panel": 2, "file": "p02_video.webp", "seed": 9200, "status": "ok"}]}`
+	if err := os.WriteFile(filepath.Join(dir, "meta_video.json"), []byte(meta), 0o644); err != nil {
+		t.Fatal(err)
+	}
+	got, err := FindPanels(dir, 3, 0)
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got[0].Video != filepath.Join(dir, "p00_video.webp") || got[0].VideoSeed != 9000 {
+		t.Errorf("panel 0 = %+v", got[0])
+	}
+	if got[1].Video != "" || got[2].Video != "" {
+		t.Errorf("failed or missing loops must be skipped: %q %q", got[1].Video, got[2].Video)
+	}
+}

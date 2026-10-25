@@ -46,6 +46,17 @@ type PanelImage struct {
 	Seed             int64
 	Prompt, Negative string
 	Rating           map[string]float64
+	Video            string // pNN_video.webp of a passed loop (meta_video.json), "" = none
+	VideoSeed        int64
+}
+
+type metaVideoFile struct {
+	Videos []struct {
+		Panel  int    `json:"panel"`
+		File   string `json:"file"`
+		Seed   int64  `json:"seed"`
+		Status string `json:"status"`
+	} `json:"videos"`
 }
 
 type metaFile struct {
@@ -60,11 +71,16 @@ type metaFile struct {
 }
 
 // FindPanels locates pNN_s<variant>.png for each of n panels and reads their size (and, when
-// meta.json is present, seed/prompt/rating). Every panel must have an image.
+// meta.json is present, seed/prompt/rating; with meta_video.json, the panel's passed loop). Every panel
+// must have an image.
 func FindPanels(dir string, n, variant int) ([]PanelImage, error) {
 	var meta metaFile
 	if raw, err := os.ReadFile(filepath.Join(dir, "meta.json")); err == nil {
 		_ = json.Unmarshal(raw, &meta)
+	}
+	var metaVideo metaVideoFile
+	if raw, err := os.ReadFile(filepath.Join(dir, "meta_video.json")); err == nil {
+		_ = json.Unmarshal(raw, &metaVideo)
 	}
 	out := make([]PanelImage, n)
 	for i := range n {
@@ -84,6 +100,13 @@ func FindPanels(dir string, n, variant int) ([]PanelImage, error) {
 				pi.Seed, pi.Prompt, pi.Negative = m.Seed, m.Positive, m.Negative
 				if m.Rating != nil {
 					pi.Rating = m.Rating
+				}
+			}
+		}
+		for _, v := range metaVideo.Videos {
+			if v.Panel == i && v.Status == "ok" && v.File != "" {
+				if _, err := os.Stat(filepath.Join(dir, v.File)); err == nil {
+					pi.Video, pi.VideoSeed = filepath.Join(dir, v.File), v.Seed
 				}
 			}
 		}
@@ -236,6 +259,17 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 				Attempts: json.RawMessage("[]"),
 			}); err != nil {
 				return err
+			}
+			if p.Animate && img.Video != "" {
+				vrel := filepath.ToSlash(filepath.Join("episodes", e.ID, fmt.Sprintf("p%02d_video_%d.webp", i, img.VideoSeed)))
+				if err := copyFile(img.Video, filepath.Join(o.MediaDir, filepath.FromSlash(vrel))); err != nil {
+					return err
+				}
+				if err := q.SavePanelVideo(ctx, dbq.SavePanelVideoParams{
+					EpisodeID: e.ID, Idx: int32(i), VideoStatus: "ready", VideoPath: vrel, VideoSeed: img.VideoSeed,
+				}); err != nil {
+					return err
+				}
 			}
 		}
 		if _, err := q.RefreshPanelsReady(ctx, e.ID); err != nil {
