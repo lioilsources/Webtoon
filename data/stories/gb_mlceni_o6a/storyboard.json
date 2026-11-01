@@ -1,0 +1,467 @@
+{
+  "title": "Kdo koho zachraňuje",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Přinesla jsem vám něco.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1288,
+          0.2135,
+          0.6105,
+          0.5416
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Co to je?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4315,
+          0.1292,
+          0.6884,
+          0.3283
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Kniha.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0252,
+          0.09,
+          0.6654,
+          0.5174
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To vidím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2282,
+          0.0968,
+          0.4736,
+          0.2867
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Nečetla jsem ji.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1077,
+          0.0292,
+          0.7438,
+          0.4723
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Tak proč jste ji koupila?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4026,
+          0.1328,
+          0.6125,
+          0.3141
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Protože se mi líbila obálka.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3681,
+          0.1122,
+          0.8287,
+          0.4176
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To je dobrý důvod.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3127,
+          0.1359,
+          0.5314,
+          0.3083
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Vy jste zvláštní.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0,
+          0.103,
+          0.6667,
+          0.5869
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To už jste říkala.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2143,
+          0.1168,
+          0.4567,
+          0.3146
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "A pořád si to myslím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1593,
+          0.0556,
+          0.7553,
+          0.4289
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "closed book",
+        "book cover",
+        "hardcover",
+        "plain cover",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Chtěla jsem se vás na něco zeptat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2943,
+          0.1289,
+          0.6666,
+          0.378
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Poslouchám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.2456,
+          0.1904,
+          0.8891,
+          0.6525
+        ]
+      ]
+    }
+  ]
+}

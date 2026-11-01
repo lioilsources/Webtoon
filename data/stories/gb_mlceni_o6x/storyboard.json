@@ -1,0 +1,243 @@
+{
+  "title": "Zeptala jsem se první",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Proč se ptáte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.244,
+          0.169,
+          0.8838,
+          0.6585
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "To je odpověď z učebnice.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2683,
+          0.1756,
+          0.6334,
+          0.4209
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Je to důležitá otázka. Chci vědět, jestli o tom přemýšlíte vy.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3123,
+          0.1485,
+          0.703,
+          0.4911
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Zeptala jsem se první.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2938,
+          0.1665,
+          0.653,
+          0.4026
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "wall clock",
+        "clock hands",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "holding eyewear",
+        "tired",
+        "looking down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3639,
+          0.1712,
+          0.5516,
+          0.321
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "closed mouth",
+        "serious",
+        "looking down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3315,
+          0.1546,
+          0.6556,
+          0.375
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "holding eyewear",
+        "tired",
+        "looking down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.3395,
+          0.1473,
+          0.5329,
+          0.3038
+        ]
+      ]
+    }
+  ]
+}

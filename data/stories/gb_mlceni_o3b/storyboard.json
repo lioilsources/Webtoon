@@ -1,0 +1,582 @@
+{
+  "title": "Nepřítel",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A když žádná chyba není?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.244,
+          0.169,
+          0.8838,
+          0.6585
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Vždycky nějaká je.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2683,
+          0.1756,
+          0.6334,
+          0.4209
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To musí být vyčerpávající.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3123,
+          0.1485,
+          0.703,
+          0.4911
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Je to bezpečné.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2938,
+          0.1665,
+          0.653,
+          0.4026
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Bezpečné?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3225,
+          0.1208,
+          0.638,
+          0.3694
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Když všechno kontrolujete, nic vás nemůže překvapit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2645,
+          0.1439,
+          0.6565,
+          0.4163
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A co když vás překvapí vlastní tělo?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1493,
+          0.0438,
+          0.7807,
+          0.4893
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Tělo je nepřítel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3447,
+          0.1574,
+          0.6956,
+          0.3971
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Proč?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1742,
+          0.1,
+          0.7014,
+          0.5652
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Protože pořád něco chce. Má hlad, je unavené, chce spát, chce dotek, chce teplo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1492,
+          0.0981,
+          0.502,
+          0.3374
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Je jako malé dítě, které neumí přestat křičet.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1593,
+          0.0556,
+          0.7553,
+          0.4289
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A vy jste se rozhodla, že ho vychováte?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.5007,
+          0.1038,
+          0.7268,
+          0.2873
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Někdo to udělat musí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3058,
+          0.1325,
+          0.7076,
+          0.4045
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Kdo vychová vás?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3705,
+          0.1489,
+          0.6557,
+          0.3555
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Já.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0384,
+          0.1452,
+          0.6533,
+          0.5375
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A kdo se o vás postará?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3579,
+          0.1505,
+          0.6502,
+          0.3664
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Nepotřebuju, aby se o mě někdo staral.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.0016,
+          0.0,
+          1.0,
+          0.7117
+        ]
+      ]
+    }
+  ]
+}

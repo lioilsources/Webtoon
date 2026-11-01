@@ -1,0 +1,529 @@
+{
+  "title": "Nevědět",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna_obraz",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from side",
+        "standing",
+        "looking at painting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2725,
+          0.1675,
+          0.5758,
+          0.3763
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Pořád nevím, co představuje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3277,
+          0.1393,
+          0.8257,
+          0.4555
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To nevadí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4091,
+          0.1101,
+          0.6885,
+          0.356
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Ale už mi tolik nevadí, že to nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2092,
+          0.0946,
+          0.7581,
+          0.4603
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, soft light slowly moving, thin curtain swaying, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Myslíte, že se člověk může naučit být šťastný?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3048,
+          0.1514,
+          0.6634,
+          0.3937
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Nevím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2023,
+          0.0476,
+          0.7913,
+          0.4947
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Vy dnes nějak často nevíte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3501,
+          0.1601,
+          0.7039,
+          0.3992
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Možná jsem se to naučil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1387,
+          0.0945,
+          0.7258,
+          0.5508
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Co?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2152,
+          0.1781,
+          0.5664,
+          0.4247
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Nevědět.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1036,
+          0.1005,
+          0.6825,
+          0.5269
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "slight smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2697,
+          0.097,
+          0.5444,
+          0.3072
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Tak to já se budu muset ještě hodně učit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2978,
+          0.1536,
+          0.6359,
+          0.3842
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "long coat",
+        "standing",
+        "upper body",
+        "from side"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3782,
+          0.1361,
+          0.661,
+          0.3319
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Na shledanou.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1,
+          0.089,
+          0.7688,
+          0.5202
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Na shledanou, Anno.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3364,
+          0.1267,
+          0.6094,
+          0.3468
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "closed book",
+        "book cover",
+        "hardcover",
+        "plain cover",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

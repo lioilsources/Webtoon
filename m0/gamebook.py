@@ -2,6 +2,7 @@
 
     python3 m0/gamebook.py scripts data/gamebooks/sara/graph.yaml   # node screenplays → data/gamebooks/sara/scripts/<node>.md
     python3 m0/gamebook.py write   data/gamebooks/sara/graph.yaml   # adapt.py per node (LLM) → data/stories/gb_sara_<node>/
+    python3 m0/gamebook.py draft   data/gamebooks/mlceni/graph.yaml # no LLM, word for word: lines → bubbles, directions → pictures
     python3 m0/gamebook.py unify   data/gamebooks/sara/graph.yaml   # the source world's characters and locations in every node
     m0/local_strip.sh -I -a kids gb_sara_n0 gb_sara_n1a ...          # render, loops, import (ids: `ids` below)
     python3 m0/gamebook.py ids     data/gamebooks/sara/graph.yaml
@@ -90,6 +91,129 @@ def cmd_write(g):
         if r.returncode:
             failed.append(sid)
     print("failed: " + " ".join(failed) if failed else "all nodes written")
+    return 1 if failed else 0
+
+
+# stage direction → what the panel shows: first matching pattern wins (shot, location, who: "" / a / p / ap, tags, gap)
+DIRECTIONS = [
+    (r"Zhasnutí|Zhasne se", ("wide", "l_poradna", "", ["dark room", "lights off", "darkness", "night", "no humans", "empty armchairs"], "large")),
+    (r"zvuk hodin|^Hodiny|na hodiny", ("close-up", "l_poradna", "", ["wall clock", "clock hands", "no humans", "still life"], "medium")),
+    (r"Prázdný pohled z okna", ("wide", "l_poradna_okno", "", ["no humans", "scenery"], "medium")),
+    (r"z okna", ("medium", "l_poradna", "a", ["looking away", "from side", "window light"], "medium")),
+    (r"Prázdné křeslo", ("wide", "l_poradna", "", ["empty armchair", "no humans"], "large")),
+    (r"Detail sklenice|Sklenice se zastaví", ("close-up", "l_poradna", "", ["holding glass", "hand", "long sleeves", "glass of water"], "small")),
+    (r"podívá na sklenici", ("medium", "l_poradna", "p", ["looking down", "calm expression"], "small")),
+    (r"vrátí sklenici|Sklenici nechá|^Sklenice vody", ("close-up", "l_poradna", "", ["glass of water", "low table", "no humans", "still life"], "small")),
+    (r"nalévá vodu", ("medium", "l_poradna", "p", ["pouring water", "glass of water"], "small")),
+    (r"Obraz|obraz|stěně", ("medium", "l_poradna_obraz", "a", ["upper body", "from side", "standing", "looking at painting"], "medium")),
+    (r"První stránka", ("close-up", "l_poradna", "", ["blank notebook", "empty white pages", "white paper", "minimalist", "no humans", "still life"], "medium")),
+    (r"knihu na stolku|Kniha na stolku|ji pozoruje|zavře knihu|Položí knihu", ("close-up", "l_poradna", "", ["closed book", "book cover", "hardcover", "plain cover", "no humans", "still life"], "small")),
+    (r"s knihou", ("medium", "l_poradna", "a", ["standing", "holding book"], "small")),
+    (r"odejde|kabát", ("medium", "l_poradna", "a", ["long coat", "standing", "upper body", "from side"], "medium")),
+    (r"rukávy", ("close-up", "l_poradna", "", ["hands", "long sleeves", "sleeves past fingers"], "small")),
+    (r"kapesník", ("close-up", "l_poradna", "", ["hands", "long sleeves", "holding handkerchief"], "small")),
+    (r"pero", ("close-up", "l_poradna", "", ["hand", "pen", "notebook", "low table"], "small")),
+    (r"poznámky", ("medium", "l_poradna", "p", ["upper body", "sitting", "holding notebook", "looking down"], "small")),
+    (r"brýle", ("medium", "l_poradna", "p", ["holding eyewear", "tired", "looking down"], "medium")),
+    (r"ruce", ("close-up", "l_poradna", "", ["hands", "long sleeves", "looking at own hands"], "small")),
+    (r"rozrušená", ("medium", "l_poradna", "a", ["standing", "upset", "coat"], "small")),
+    (r"usměje", ("medium", "l_poradna", "p", ["upper body", "sitting", "slight smile"], "small")),
+    (r"^Psycholog", ("medium", "l_poradna", "p", ["closed mouth", "looking down", "calm expression"], "medium")),
+    (r"^Anna", ("medium", "l_poradna", "a", ["closed mouth", "serious", "looking down"], "medium")),
+    (r"Pauza|ticho", ("wide", "l_poradna", "", ["no humans", "scenery", "two armchairs", "low table", "small room"], "medium")),
+]
+FACES = {"anna": [["serious", "looking away"], ["looking down", "serious"], ["looking at another", "guarded"]],
+         "psycholog": [["calm expression", "looking at another"], ["tired", "slight smile"], ["looking at another", "thinking"]]}
+
+
+def node_lines(n):
+    """Beats → (speaker id or "" for narration, text) / (None, stage direction), in the order of the play."""
+    who = {"Psycholog": "psycholog", "Anna": "anna", "Vyprávění": ""}
+    for b in n["beats"]:
+        m = re.match(r"(Psycholog|Anna|Vyprávění): (.*)", b)
+        yield (who[m[1]], m[2].strip()) if m else (None, b)
+
+
+def direction_panel(text, alone, default_loc):
+    for pat, (shot, loc, cast, tags, gap) in DIRECTIONS:
+        if re.search(pat, text):
+            if alone:  # the last scene: he is alone in the room
+                cast = cast.replace("a", "")
+            if loc == "l_poradna":
+                loc = default_loc
+            return {"shot": shot, "location_id": loc, "characters": [{"id": {"a": "anna", "p": "psycholog"}[x]} for x in cast],
+                    "visual_tags": tags, "bubbles": [], "sfx": [], "gap_after": gap, "animate": False, "motion": ""}
+    sys.exit(f"no panel for the stage direction: {text}")
+
+
+def draft_story(g, node_id, src):
+    """Storyboard with no LLM: every line of the play is a bubble, word for word and in order; only the pictures are chosen."""
+    n, panels, turn = g["nodes"][node_id], [], 0
+    loc = n.get("location") or g["locations"][0]["id"]
+    if loc != "l_poradna" and node_id not in ("o3a", "o6e"):
+        loc = "l_poradna"
+    lines = list(node_lines(n))
+    alone = not any(s == "anna" for s, _ in lines)
+    bubble = lambda s, t: {"speaker_id": s, "text": t, "kind": "speech" if s else "narration"}
+
+    def spoken(chars, shot, tags, bubbles):
+        cast = [{"id": c} for c in chars]
+        # "l_poradna": the painting's tags end up printed on their clothes
+        panels.append({"shot": shot, "location_id": "l_poradna", "characters": cast, "visual_tags": tags, "bubbles": bubbles,
+                       "sfx": [], "gap_after": "small", "animate": False, "motion": ""})
+
+    panels.append({"shot": "establishing", "location_id": "l_poradna", "characters": [], "visual_tags": ["no humans", "scenery", "two armchairs", "low table", "small room"],
+                   "bubbles": [], "sfx": [], "gap_after": "medium", "animate": False, "motion": ""})
+    i = 0
+    while i < len(lines):
+        s, t = lines[i]
+        if s is None:
+            if re.match(r"Malá poradna|Další setkání|Jiné odpoledne|Další týden", t) and len(panels) == 1:
+                i += 1  # the establishing panel is this direction
+                continue
+            panels.append(direction_panel(t, alone, "l_poradna"))
+            i += 1
+        elif s == "":
+            if panels[-1]["characters"] or panels[-1]["bubbles"]:
+                panels.append(direction_panel("Pauza", alone, "l_poradna") if not alone else {**panels[0], "shot": "wide"})
+                panels[-1] = {**panels[-1], "bubbles": []}
+            panels[-1]["bubbles"] = panels[-1]["bubbles"] + [bubble("", t)]
+            i += 1
+        else:
+            nxt = lines[i + 1] if i + 1 < len(lines) else (None, "")
+            turn += 1  # every line in its speaker's own panel: never two people in one picture (Hassaku XL makes a couple of any two-shot)
+            shot = "close-up" if turn % 2 else "medium"
+            same = nxt[0] == s and len(t) + len(nxt[1]) < 110
+            spoken([s], shot, ["upper body", "from front", "sitting"] + FACES[s][turn % 3], [bubble(s, t)] + ([bubble(s, nxt[1])] if same else []))
+            i += 2 if same else 1
+    for p in panels:  # at most one ambient loop per node, and only in an empty picture
+        if not p["characters"] and "wall clock" not in p["visual_tags"] and p["shot"] == "wide" and "dark room" not in p["visual_tags"]:
+            p["animate"], p["motion"] = True, "ambient only, soft light slowly moving, thin curtain swaying, static camera"
+            break
+    panels[-1]["gap_after"] = "large"
+    locs = [l for l in src["locations"]]
+    return {"id": story_id(g, node_id), "title": n["title"], "synopsis": g["premise"].strip()[:230], "ending": src["canon"]["constraints"][0],
+            "characters": [{"id": c["id"], "name": c["name"], "gender": c["gender"], "base": c["base"], "outfits": c["outfits"], "photo": c["photo"]}
+                           for c in src["characters"]],
+            "locations": [{"id": l["id"], "name": l["name"], "tag_prompt": l["tag_prompt"]} for l in locs], "panels": panels}
+
+
+def cmd_draft(g):
+    """`write` for a text that must stay word for word (profile drama): no LLM, then `unify` as usual."""
+    sys.path.insert(0, str(ROOT / "m0"))
+    import adapt
+    src, style, failed = source_world(g), g["style_id"], False
+    for node_id in g["nodes"]:
+        story = draft_story(g, node_id, src)
+        errs = adapt.check(story, adapt.common_vocab(), profile=g["profile"])
+        if errs:
+            failed = True
+            print(node_id, *errs[:6], sep="\n  ")
+            continue
+        world, sb = adapt.to_m0(story, style, profile=g["profile"])
+        d = DATA / "stories" / story["id"]
+        save_json(d / "world.json", world)
+        save_json(d / "storyboard.json", sb)
     return 1 if failed else 0
 
 
@@ -247,7 +371,7 @@ def add_choice(text, node_id, choice):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["scripts", "write", "unify", "ids", "import-branch"])
+    ap.add_argument("cmd", choices=["scripts", "write", "draft", "unify", "ids", "import-branch"])
     ap.add_argument("graph")
     ap.add_argument("branches", nargs="?", help="import-branch: the JSON a reader sent (Odeslat autorovi)")
     ap.add_argument("--name", default="r1", help="import-branch: id prefix of the new nodes")
@@ -261,7 +385,7 @@ def main():
     if a.cmd == "ids":
         print(" ".join(story_id(g, n) for n in g["nodes"]))
         return 0
-    return {"scripts": cmd_scripts, "write": cmd_write, "unify": cmd_unify}[a.cmd](g) or 0
+    return {"scripts": cmd_scripts, "write": cmd_write, "draft": cmd_draft, "unify": cmd_unify}[a.cmd](g) or 0
 
 
 if __name__ == "__main__":

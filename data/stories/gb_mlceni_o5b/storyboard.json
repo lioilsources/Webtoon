@@ -1,0 +1,450 @@
+{
+  "title": "Zázračný lék",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A jaká jste?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.244,
+          0.169,
+          0.8838,
+          0.6585
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Nevím. Asi nic moc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2683,
+          0.1756,
+          0.6334,
+          0.4209
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To je váš názor, nebo jeho?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3123,
+          0.1485,
+          0.703,
+          0.4911
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Můj.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2938,
+          0.1665,
+          0.653,
+          0.4026
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A věříte mu?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3225,
+          0.1208,
+          0.638,
+          0.3694
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Víc než všem ostatním.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2645,
+          0.1439,
+          0.6565,
+          0.4163
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "To je možná část problému.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1493,
+          0.0438,
+          0.7807,
+          0.4893
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Vy si myslíte, že mě zachrání láska?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3447,
+          0.1574,
+          0.6956,
+          0.3971
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1742,
+          0.1,
+          0.7014,
+          0.5652
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Tak co?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1492,
+          0.0981,
+          0.502,
+          0.3374
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Myslím, že láska není zázračný lék.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1209,
+          0.0951,
+          0.6705,
+          0.4556
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "calm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "A také si nemyslím, že se můžete uzdravit tím, že se někdo jiný bude snažit milovat vás dostatečně za vás.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.5007,
+          0.1038,
+          0.7268,
+          0.2873
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking down",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Takže se musím naučit mít ráda sama sebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.3058,
+          0.1325,
+          0.7076,
+          0.4045
+        ]
+      ]
+    }
+  ]
+}

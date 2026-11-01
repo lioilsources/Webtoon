@@ -1,0 +1,218 @@
+{
+  "title": "Prázdné křeslo",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Ano. To je ta práce.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.244,
+          0.169,
+          0.8838,
+          0.6585
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Takže další úkol.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2683,
+          0.1756,
+          0.6334,
+          0.4209
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "hands",
+        "long sleeves",
+        "holding handkerchief"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "V tom budu dobrá. Uvidíte.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2156,
+          0.0933,
+          0.7639,
+          0.4608
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "long coat",
+        "standing",
+        "upper body",
+        "from side"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2858,
+          0.1504,
+          0.576,
+          0.3434
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "empty armchair",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "ambient only, soft light slowly moving, thin curtain swaying, static camera",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "glass of water",
+        "low table",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Někdy stačí jedna věta navíc. Zkus to znovu.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

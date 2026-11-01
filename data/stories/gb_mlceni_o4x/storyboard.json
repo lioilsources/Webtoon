@@ -1,0 +1,228 @@
+{
+  "title": "Nic nechci",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "Ne. Nic nechci.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.244,
+          0.169,
+          0.8838,
+          0.6585
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "slight smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4275,
+          0.1278,
+          0.6753,
+          0.3179
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "looking at another",
+        "guarded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Tak to je dobře.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2877,
+          0.1197,
+          0.6713,
+          0.3858
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "wall clock",
+        "clock hands",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "serious",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "anna",
+          "text": "Takže kdybych sem přestala chodit, nic by se nestalo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1656,
+          0.0895,
+          0.7789,
+          0.5112
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "closed mouth",
+        "looking down",
+        "calm expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.4663,
+          0.0992,
+          0.6776,
+          0.2882
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_poradna_obraz",
+      "characters": [
+        {
+          "id": "anna"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from side",
+        "standing",
+        "looking at painting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3371,
+          0.14,
+          0.6535,
+          0.3485
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "dark room",
+        "lights off",
+        "darkness",
+        "night",
+        "no humans",
+        "empty armchairs"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

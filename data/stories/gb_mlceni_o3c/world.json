@@ -1,0 +1,77 @@
+{
+  "id": "w_gb_mlceni_o3c",
+  "title": "Učit se mlčet — Vaše nic",
+  "synopsis": "Psychologická aktovka o dvou lidech, kteří se učí mlčet.",
+  "tone": "tichý, vážný, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "thin_paint",
+  "profile": "drama",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika mezi postavami.",
+      "Tělo se neukazuje jako téma: žádné hubnutí, váha ani jídlo v obraze."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Otevřený konec: nikdo nikoho nezachrání, oba se učí nevědět."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_poradna"
+    ]
+  },
+  "characters": [
+    {
+      "id": "psycholog",
+      "name": "Psycholog",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a thoughtful cultivated Czech man aged 50 with greying hair and glasses",
+      "base": "adult, mature male, greying short hair, short grey beard, glasses, tired kind eyes, wrinkles",
+      "outfits": {
+        "default": "dark grey cardigan, white shirt, dark trousers"
+      },
+      "photo": "a thoughtful cultivated Czech man aged 50 with greying short hair, short grey beard and glasses",
+      "tag_prompt": "adult, mature male, greying short hair, short grey beard, glasses, tired kind eyes, wrinkles, dark grey cardigan, white shirt, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "anna",
+      "name": "Anna",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an intelligent sensitive Czech woman aged 25 with shoulder-length dark blonde hair and a guarded look",
+      "base": "adult, mature female, shoulder-length dark blonde hair, straight hair, grey eyes, pale skin, serious face, no eyewear",
+      "outfits": {
+        "default": "long baggy oversized grey knit sweater, turtleneck, long sleeves, loose dark trousers"
+      },
+      "photo": "an intelligent sensitive Czech woman aged 25 with shoulder-length dark blonde hair, grey eyes and a guarded look",
+      "tag_prompt": "adult, mature female, shoulder-length dark blonde hair, straight hair, grey eyes, pale skin, serious face, no eyewear, long baggy oversized grey knit sweater, turtleneck, long sleeves, loose dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_poradna",
+      "name": "Poradna",
+      "description": "Malá poradna: dvě křesla, stolek, sklenice vody.",
+      "tag_prompt": "indoors, small cozy private office, wooden floor, bookshelf, beige wall, two armchairs, small round side table, soft afternoon light, muted colors",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "mlceni",
+    "node": "o3c"
+  }
+}

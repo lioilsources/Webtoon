@@ -1,0 +1,173 @@
+{
+  "title": "Na první stránce",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "closed book",
+        "book cover",
+        "hardcover",
+        "plain cover",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "closed book",
+        "book cover",
+        "hardcover",
+        "plain cover",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Na první stránce je napsáno:",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "no humans",
+        "scenery",
+        "two armchairs",
+        "low table",
+        "small room"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "„Pro toho, kdo mě nechtěl opravovat.“",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "ambient only, soft light slowly moving, thin curtain swaying, static camera",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "closed book",
+        "book cover",
+        "hardcover",
+        "plain cover",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "wall clock",
+        "clock hands",
+        "no humans",
+        "still life"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_poradna",
+      "characters": [
+        {
+          "id": "psycholog"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "tired",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "psycholog",
+          "text": "(tiše, pro sebe) Kolik lidí musí nejprve zmizet samo sobě, aby mohli uvěřit, že mají právo existovat?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2501,
+          0.1167,
+          0.7541,
+          0.476
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_poradna",
+      "characters": [],
+      "visual_tags": [
+        "dark room",
+        "lights off",
+        "darkness",
+        "night",
+        "no humans",
+        "empty armchairs"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

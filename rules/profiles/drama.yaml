@@ -22,8 +22,12 @@ prompts:
              cleavage, plunging neckline, covered nipples, skin tight, large breasts, midriff,
              couple, hetero, romance, kiss, hug, holding hands, blush,
              skinny, emaciated, underweight, gaunt, ribs, collarbone, thin arms, thin legs, bare arms, bare legs,
-             sleeveless, bandage, scar, blood, food, scale]
+             sleeveless, bandage, scar, blood, food, scale,
+             off shoulder, bare shoulders, strap slip, ass, from behind, looking back, thighs, tight pants, leather pants,
+             face to face, leaning, faces close, multiple clocks, corridor, hallway, 2girls, 2boys, multiple people, 1boy 1girl,
+             graffiti, tablecloth, sofa, couch, alcohol, wine, tattoo, necktie, pool, bed, bedroom, text, writing, handwriting, print shirt, t-shirt, graphic tee, mask, elf, pointy ears, ceiling light, fluorescent light]
 
 render:
   tag_limits: {cleavage: 0.8, large breasts: 0.8, covered nipples: 0.3, shirtless: 0.5, underwear: 0.3, bed: 0.7,
-               skinny: 0.3, ribs: 0.3, collarbone: 0.5}
+               skinny: 0.3, ribs: 0.3, collarbone: 0.5,
+               ass: 0.3, off shoulder: 0.3, bare shoulders: 0.3, kiss: 0.2, imminent kiss: 0.2, hug: 0.2, couple: 0.5, hetero: 0.3}
