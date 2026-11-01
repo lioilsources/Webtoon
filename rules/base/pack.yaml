@@ -64,6 +64,12 @@ types:
     icon: bolt
     title_i18n: {cs: Superhrdinové, en: Superheroes, de: Superhelden, it: Supereroi, fr: Super-héros, pl: Superbohaterowie,
                  pt-BR: Super-heróis, ja: スーパーヒーロー, ko: 슈퍼히어로, vi: Siêu anh hùng, ru: Супергерои, uk: Супергерої}
+  - id: drama              # gamebooks only (mlceni): no store category of its own, never shown as Romance
+    active: false
+    audience: adult
+    icon: theater_comedy
+    title_i18n: {cs: Drama, en: Drama, de: Drama, it: Dramma, fr: Drame, pl: Dramat,
+                 pt-BR: Drama, ja: ドラマ, ko: 드라마, vi: Chính kịch, ru: Драма, uk: Драма}
   - id: spooky
     active: false
     audience: kids
@@ -109,7 +115,7 @@ types:
 
 # Default -type of export-pack: the world's profile (data/stories/<id>/world.json `profile`, else rules.world_profile
 # from audience), mapped here. Superhero worlds need world.json `profile: superhero` (audience alone says kids).
-type_from_profile: {kids: kids, harlequin: harlequin, superhero: superhero}
+type_from_profile: {kids: kids, harlequin: harlequin, superhero: superhero, drama: drama}
 type_from_audience: {kids: kids, adult: harlequin}
 
 # Bundles: one product unlocks every pack of the covered types, the current ones AND any added later (the app
