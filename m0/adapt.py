@@ -157,7 +157,8 @@ def adapt(args):
     if A["rewrite"]:
         system = free_prompt(system, A["rewrite"])
     if A["addendum"]:  # superhero: a paragraph on top of the kids prompt, with the profile's action vocabulary
-        words = SB["regex"][SB["fences"]["allow"]]["words"]
+        allow = SB["regex"][SB["fences"]["allow"]]
+        words = allow["words"] if isinstance(allow, dict) else []  # drama: an addendum without a vocabulary
         system += "\n" + (SKILL / "prompts" / A["addendum"]).read_text().replace("{vocabulary}", ", ".join(f'"{w}"' for w in words))
     example = A["example"]
     ex_in = (SKILL / "examples" / f"{example}.input.md").read_text()

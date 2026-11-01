@@ -1,0 +1,29 @@
+# drama: chamber drama for adults (gamebook mlceni). Extends harlequin (SFW fences, adult schema and thresholds), but
+# nobody in it is a couple: a therapist and a patient must never get couple tags or romantic framing.
+
+profile:
+  extends: harlequin
+  description: adult chamber drama, no romance
+  styles: {pool: all, default: thin_paint, strip_default: thin_paint}
+
+storyboard:
+  to_m0:
+    tone: tichý, vážný, lidský
+    bible_rules: ["SFW. Žádná romantika mezi postavami. Tělo se neukazuje jako téma: žádné hubnutí, váha ani jídlo v obraze."]
+    couple_tags: []
+    fonts: null
+  adapt: {addendum: addendum_drama.md}
+
+prompts:
+  # adult_negative + the eating-disorder guard: the illness stays in the words, never in the picture
+  negative:
+    replace:
+      tags: [child, loli, shota, aged down, teenager, school uniform, nsfw, nude, topless, see-through, lingerie, swimsuit,
+             cleavage, plunging neckline, covered nipples, skin tight, large breasts, midriff,
+             couple, hetero, romance, kiss, hug, holding hands, blush,
+             skinny, emaciated, underweight, gaunt, ribs, collarbone, thin arms, thin legs, bare arms, bare legs,
+             sleeveless, bandage, scar, blood, food, scale]
+
+render:
+  tag_limits: {cleavage: 0.8, large breasts: 0.8, covered nipples: 0.3, shirtless: 0.5, underwear: 0.3, bed: 0.7,
+               skinny: 0.3, ribs: 0.3, collarbone: 0.5}

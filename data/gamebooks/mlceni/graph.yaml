@@ -1,0 +1,630 @@
+# Gamebook 2 — Učit se mlčet (pracovní název). Podle psychologické aktovky kamaráda; text obrazů je doslova jeho.
+# Čtenář hraje Psychologa a na několika místech volí, co udělá. Volby nikoho neléčí: vedlejší cesty ukazují tlak,
+# ne selhání Anny, a žádná nekončí jejím ohrožením.
+#
+# NOVÝ TEXT (není ze hry, čeká na schválení autorem): uzly o1x, o2x, o4x, o5x, o6x, o6g, upozornění v o1a a linka
+# pomoci v koncích. Všechno ostatní je doslova ze hry; bubliny musí zůstat beze změny (addendum_drama.md).
+
+schema: 1
+id: mlceni
+title: Učit se mlčet
+title_i18n: {en: Learning to Be Silent}
+world: w_mlceni
+audience: adult
+language: cs
+style_id: thin_paint
+profile: drama
+product_id: gamebook_mlceni
+start: o1a
+
+premise: >
+  Malá poradna, dvě křesla, sklenice vody, obraz, jehož význam není zřejmý. Psycholog kolem padesátky a Anna,
+  pětadvacetiletá anorektička, se učí, že ne na všechno se musí odpovídat. Čtenář je v Psychologově křesle.
+
+characters: [psycholog, anna]
+
+locations:
+  - {id: l_poradna, name: Poradna, description: "malá poradna, dvě křesla, stolek, sklenice vody, hodiny"}
+  - {id: l_poradna_okno, name: Poradna – okno, description: "okno poradny, město za ním"}
+  - {id: l_poradna_obraz, name: Poradna – obraz, description: "obraz na stěně, jehož význam není zřejmý"}
+
+nodes:
+  # ---- PRVNÍ OBRAZ: Přítomnost ----
+  o1a:
+    title: Přítomnost
+    location: l_poradna
+    panels: 9
+    beats:
+      - "Vyprávění: Tento příběh mluví o anorexii a myšlenkách na smrt."
+      - Malá poradna. Dvě křesla, stolek, sklenice vody, okno, obraz na stěně.
+      - Anna sedí v křesle. Psycholog si prohlíží poznámky. Nepůsobí uspěchaně.
+      - "Psycholog: Tak jak se dnes máte?"
+      - "Anna: To je otázka, na kterou se odpovídá podle toho, kolik času máte."
+      - "Psycholog: Máme padesát minut."
+      - "Anna: Tak to se mám špatně."
+      - Psycholog se usměje. Anna nikoliv.
+      - "Psycholog: Včera jste mi telefonovala."
+      - "Anna: Ano."
+      - "Psycholog: Chtěla jste něco říct?"
+      - "Anna: Už nevím."
+      - "Psycholog: To nevadí."
+      - "Anna: Vadí mi, že si nepamatuju, co jsem chtěla říct."
+      - "Psycholog: Možná to nebylo tak důležité."
+      - "Anna: A možná bylo."
+      - Pauza.
+    next: o1b
+  o1b:
+    title: Den
+    location: l_poradna
+    panels: 11
+    beats:
+      - "Psycholog: Jaká byla noc?"
+      - "Anna: Dlouhá."
+      - "Psycholog: Nemohla jste spát?"
+      - "Anna: Mohla. Jen jsem nechtěla."
+      - "Psycholog: Proč?"
+      - "Anna: Protože když usnu, ráno přijde zase."
+      - "Psycholog: Co?"
+      - "Anna: Den."
+      - Psycholog odloží pero.
+      - "Psycholog: A co je na něm tak nepříjemného?"
+      - "Anna: Že musím být."
+      - "Psycholog: Být?"
+      - "Anna: Přítomná. Odpovídat. Vstávat. Mluvit. Něco chtít. Něco nechtít."
+      - "Anna: Dělat, že mě zajímá, jak se mají ostatní."
+      - "Psycholog: A zajímá vás to?"
+      - "Anna: Někdy."
+      - "Psycholog: To je docela dobrý začátek."
+      - "Anna: Čeho?"
+      - "Psycholog: Nevědět přesně, co člověka zajímá."
+    next: o1c
+  o1c:
+    title: Povinnost
+    location: l_poradna
+    panels: 9
+    beats:
+      - Anna se podívá z okna.
+      - "Anna: Vy se nikdy nenudíte?"
+      - "Psycholog: Ale ano."
+      - "Anna: A co děláte, když se nudíte?"
+      - "Psycholog: Většinou nic."
+      - "Anna: To vás baví?"
+      - "Psycholog: Nemám povinnost každou chvíli svého života nějak využít."
+      - "Anna: Já ano."
+      - "Psycholog: Kdo vám ji uložil?"
+      - Anna neodpoví. Dlouhé ticho.
+      - "Anna: Maminka."
+      - "Psycholog: Co maminka?"
+      - "Anna: Nic."
+    choices:
+      - {id: pockat, text: "„Dobře.“", to: o1d}
+      - {id: naleh, text: "„Řekněte mi o ní.“", to: o1x}
+  o1d:
+    title: Až budete chtít
+    location: l_poradna
+    panels: 8
+    beats:
+      - "Psycholog: Dobře."
+      - Hodiny. Slyšet jsou jen tehdy, když oba mlčí.
+      - Prázdný pohled z okna.
+      - "Anna: Vy se mě na to nezeptáte?"
+      - "Psycholog: Na co?"
+      - "Anna: Co maminka."
+      - "Psycholog: Myslel jsem, že mi to řeknete, až budete chtít."
+      - Zhasnutí.
+    next: o2a
+  o1x:
+    title: Řekla jsem nic
+    location: l_poradna
+    panels: 8
+    sets: [zlom]
+    beats:
+      - "Psycholog: Řekněte mi o ní."
+      - "Anna: Řekla jsem nic."
+      - "Psycholog: Mně to jako nic nepřipadalo."
+      - Anna si přetáhne rukávy svetru přes ruce.
+      - "Anna: Vy máte padesát minut. Já mám maminku."
+      - Hodiny.
+      - Anna se dívá z okna a už nic neřekne.
+      - Zhasnutí.
+    next: o2a
+
+  # ---- DRUHÝ OBRAZ: Tělo ----
+  o2a:
+    title: Tělo
+    location: l_poradna
+    panels: 9
+    beats:
+      - Další setkání. Anna má na sobě dlouhý svetr. Psycholog nalévá vodu.
+      - "Anna: Nemusíte."
+      - "Psycholog: Co?"
+      - "Anna: Nalévat mi vodu."
+      - "Psycholog: Dobře."
+      - Sklenici nechá na stolku.
+      - "Anna: Vy si myslíte, že když mi nabídnete vodu, něco se změní?"
+      - "Psycholog: Ne."
+      - "Anna: Tak proč to děláte?"
+      - "Psycholog: Protože mám žízeň a napadlo mě, že byste také mohla mít."
+      - "Anna: Já nemám žízeň."
+      - "Psycholog: Dobře."
+      - Pauza.
+      - "Anna: Vy se pořád tak snadno vzdáváte?"
+      - "Psycholog: Nechci vás nutit pít vodu."
+      - "Anna: Ale chcete mě nutit jíst."
+    next: o2b
+  o2b:
+    title: Naučila jsem se nedívat
+    location: l_poradna
+    panels: 11
+    beats:
+      - "Psycholog: Ne. Chci, abyste byla v bezpečí."
+      - "Psycholog: A některé věci v tomhle ohledu nejsou otázkou naší vůle."
+      - "Psycholog: Proto je důležité, abyste měla také odpovídající lékařskou péči."
+      - "Anna: Všichni mluví o mém těle."
+      - "Psycholog: A o čem byste chtěla mluvit vy?"
+      - "Anna: O něčem jiném."
+      - "Psycholog: Tak o čem?"
+      - "Anna: Nevím."
+      - Chvíli se dívá na svoje ruce.
+      - "Anna: Když jsem byla malá, nesnášela jsem svoje tělo."
+      - "Psycholog: Pamatujete si, kdy to začalo?"
+      - "Anna: Ve škole. Děvčata se převlékala společně. Všechna se na sebe dívala."
+      - "Anna: Věděla, která je hezká, která je ošklivá, která má co ukázat."
+      - "Psycholog: A vy?"
+      - "Anna: Já jsem se naučila nedívat."
+      - "Psycholog: Na ostatní?"
+      - "Anna: Na sebe."
+    next: o2c
+  o2c:
+    title: Hezká věta
+    location: l_poradna
+    panels: 9
+    beats:
+      - Pauza.
+      - "Anna: Víte, co je zvláštní?"
+      - "Psycholog: Povídejte."
+      - "Anna: Že čím méně se mám ráda, tím víc času sama sobě věnuju."
+      - "Psycholog: Jak tomu rozumíte?"
+      - "Anna: Kontroluju se. Sleduju se. Pozoruju se. Všímám si každé změny."
+      - "Anna: Věnuju sama sobě víc pozornosti než komukoliv jinému."
+      - "Psycholog: A přitom se sama sobě vzdalujete."
+      - "Anna: To je hezká věta."
+      - "Psycholog: Nechtěl jsem, aby byla hezká."
+      - "Anna: Ale je."
+      - Anna se napije. Detail sklenice v její ruce, rukáv svetru.
+    choices:
+      - {id: nedivat, text: "Nedívat se", to: o3a}
+      - {id: divat, text: "Podívat se", to: o2x}
+  o2x:
+    title: Viděl jste to
+    location: l_poradna
+    panels: 8
+    sets: [zlom]
+    beats:
+      - Psycholog se podívá na sklenici v Anniných rukou.
+      - Anna si toho všimne.
+      - Sklenice se zastaví v půli cesty.
+      - "Anna: Zapíšete si to?"
+      - "Psycholog: Ne."
+      - "Anna: Ale viděl jste to."
+      - Anna vrátí sklenici na stolek.
+      - Hodiny.
+    next: o3a
+
+  # ---- TŘETÍ OBRAZ: Dokonalost ----
+  o3a:
+    title: Dokonalost
+    location: l_poradna_obraz
+    panels: 10
+    beats:
+      - Na stěně visí stále tentýž obraz. Anna stojí před ním.
+      - "Anna: Co to představuje?"
+      - "Psycholog: Nevím."
+      - "Anna: To je vaše?"
+      - "Psycholog: Ano."
+      - "Anna: A vy nevíte, co jste si pověsil na zeď?"
+      - "Psycholog: Vím, že se mi líbí."
+      - "Anna: To mi připadá málo."
+      - "Psycholog: Mně to zatím stačí."
+      - "Anna: Vy nepotřebujete věcem rozumět?"
+      - "Psycholog: Ne vždycky."
+      - "Anna: Já ano."
+      - "Psycholog: Všiml jsem si."
+      - "Anna: Musím vědět, proč něco dělám. Proč něco jím. Proč něco nejím."
+      - "Anna: Proč jsem něco řekla. Proč jsem něco neřekla."
+      - "Anna: Když něco pokazím, musím vědět, kde jsem udělala chybu."
+    next: o3b
+  o3b:
+    title: Nepřítel
+    location: l_poradna
+    panels: 10
+    beats:
+      - "Psycholog: A když žádná chyba není?"
+      - "Anna: Vždycky nějaká je."
+      - "Psycholog: To musí být vyčerpávající."
+      - "Anna: Je to bezpečné."
+      - "Psycholog: Bezpečné?"
+      - "Anna: Když všechno kontrolujete, nic vás nemůže překvapit."
+      - "Psycholog: A co když vás překvapí vlastní tělo?"
+      - "Anna: Tělo je nepřítel."
+      - "Psycholog: Proč?"
+      - "Anna: Protože pořád něco chce. Má hlad, je unavené, chce spát, chce dotek, chce teplo."
+      - "Anna: Je jako malé dítě, které neumí přestat křičet."
+      - "Psycholog: A vy jste se rozhodla, že ho vychováte?"
+      - "Anna: Někdo to udělat musí."
+      - "Psycholog: Kdo vychová vás?"
+      - "Anna: Já."
+      - "Psycholog: A kdo se o vás postará?"
+      - "Anna: Nepotřebuju, aby se o mě někdo staral."
+    next: o3c
+  o3c:
+    title: Vaše nic
+    location: l_poradna
+    panels: 11
+    beats:
+      - Psycholog mlčí.
+      - "Anna: Co je?"
+      - "Psycholog: Nic."
+      - "Anna: To vaše nic mě někdy rozčiluje."
+      - "Psycholog: Rozumím."
+      - "Anna: Ne, nerozumíte. Vy si můžete odejít domů a přestat na mě myslet."
+      - "Psycholog: Ano. A vy můžete odejít domů a dál na mě myslet."
+      - "Anna: To není fér."
+      - "Psycholog: Ne. Není."
+      - Dlouhé ticho.
+      - "Anna: Myslíte, že jsem nemocná?"
+      - "Psycholog: Ano."
+      - "Anna: A myslíte, že jsem blázen?"
+      - "Psycholog: Ne."
+      - "Anna: Jaký je v tom rozdíl?"
+      - "Psycholog: Velký. Ale nechci vám ho vysvětlovat jako definici z učebnice."
+      - "Anna: Proč?"
+      - "Psycholog: Protože bych raději, abyste ho jednou sama zažila."
+    next: o4a
+
+  # ---- ČTVRTÝ OBRAZ: Matka ----
+  o4a:
+    title: Matka
+    location: l_poradna
+    panels: 10
+    beats:
+      - Anna přichází pozdě. Je rozrušená.
+      - "Anna: Maminka zase plakala."
+      - "Psycholog: Co se stalo?"
+      - "Anna: Řekla mi, že ji ničím."
+      - "Psycholog: Co jste jí odpověděla?"
+      - "Anna: Že mě neměla mít."
+      - Psycholog chvíli mlčí.
+      - "Psycholog: To muselo bolet."
+      - "Anna: Ji?"
+      - "Psycholog: Vás obě."
+      - "Anna: Ona si myslí, že jsem nevděčná."
+      - "Psycholog: A jste?"
+      - "Anna: Nevím. Dala mi všechno."
+      - "Psycholog: Všechno?"
+      - "Anna: Co mohla."
+      - "Psycholog: A co jste potřebovala?"
+      - "Anna: Aby mě nechala být."
+      - "Psycholog: Jenom to?"
+      - "Anna: Aby mě nechala být, ale neopustila mě."
+    next: o4b
+  o4b:
+    title: Blízko a daleko
+    location: l_poradna
+    panels: 9
+    beats:
+      - Dlouhé ticho.
+      - "Anna: To je asi nemožné."
+      - "Psycholog: Proč?"
+      - "Anna: Protože člověk nemůže být současně blízko a daleko."
+      - "Psycholog: Myslíte?"
+      - "Anna: Když je někdo blízko, vidí vás. Když vás vidí, může vás soudit."
+      - "Anna: Když vás soudí, musíte se bránit."
+      - "Psycholog: A když vás nesoudí?"
+      - "Anna: To se mi nestává."
+      - "Psycholog: Nikdy?"
+      - "Anna: Ne."
+      - "Psycholog: Ani tady?"
+      - Anna se na něj podívá.
+      - "Anna: Tady je to jiné."
+      - "Psycholog: Čím?"
+      - "Anna: Vy ode mě nic nechcete."
+    choices:
+      - {id: pravda, text: "„To není tak docela pravda.“", to: o4c}
+      - {id: nic, text: "„Ne. Nic nechci.“", to: o4x}
+  o4c:
+    title: To je hodně
+    location: l_poradna
+    panels: 10
+    beats:
+      - "Psycholog: To není tak docela pravda."
+      - "Anna: Co chcete?"
+      - "Psycholog: Abychom hledali způsob, jak vám pomoci."
+      - "Psycholog: Abychom nezanedbali vaše zdraví."
+      - "Psycholog: A abyste nemusela na všechno být sama."
+      - "Anna: To je hodně."
+      - "Psycholog: Ano."
+      - Anna se posadí.
+      - "Anna: Možná jsem chtěla, aby mě maminka měla ráda i tehdy, když nic nedělám."
+      - "Psycholog: A měla vás?"
+      - "Anna: Nevím."
+      - "Psycholog: Možná by stálo za to se jí na to někdy zeptat."
+      - "Anna: Bojím se."
+      - "Psycholog: To chápu."
+      - "Anna: A co když řekne ne?"
+      - "Psycholog: Pak budeme muset hledat, jak žít s něčím, co jste si nezasloužila."
+    next: o5a
+  o4x:
+    title: Nic nechci
+    location: l_poradna
+    panels: 8
+    sets: [zlom]
+    beats:
+      - "Psycholog: Ne. Nic nechci."
+      - Anna se krátce usměje. Radost v tom není.
+      - "Anna: Tak to je dobře."
+      - Hodiny.
+      - "Anna: Takže kdybych sem přestala chodit, nic by se nestalo."
+      - Psycholog chce něco říct a neřekne.
+      - Anna se posadí a dívá se na obraz.
+      - Zhasnutí.
+    next: o5a
+
+  # ---- PÁTÝ OBRAZ: Hlad po lásce ----
+  o5a:
+    title: Hlad po lásce
+    location: l_poradna
+    panels: 10
+    beats:
+      - Anna sedí. V ruce drží kapesník.
+      - "Anna: Měla jsem přítele."
+      - "Psycholog: Vím."
+      - "Anna: Nevíte, jaký byl."
+      - "Psycholog: To je pravda."
+      - "Anna: Byl hodný. Někdy až moc."
+      - "Psycholog: A to vám vadilo?"
+      - "Anna: Nevěděla jsem, co s tím."
+      - "Psycholog: S čím?"
+      - "Anna: Když byl zlý, mohla jsem ho nenávidět. Když byl hodný, musela jsem se dívat na sebe."
+      - Pauza.
+      - "Anna: Chtěla jsem, aby mě miloval, ale nesnesla jsem, když se mě dotýkal."
+      - "Anna: Chtěla jsem, aby se mnou byl, ale nesnesla jsem, když se na mě díval."
+      - "Anna: Chtěla jsem, aby mě objal, ale bála jsem se, že mě ucítí."
+      - "Psycholog: Čeho jste se bála?"
+      - "Anna: Že ucítí, jaká jsem."
+    next: o5b
+  o5b:
+    title: Zázračný lék
+    location: l_poradna
+    panels: 9
+    beats:
+      - "Psycholog: A jaká jste?"
+      - "Anna: Nevím. Asi nic moc."
+      - "Psycholog: To je váš názor, nebo jeho?"
+      - "Anna: Můj."
+      - "Psycholog: A věříte mu?"
+      - "Anna: Víc než všem ostatním."
+      - "Psycholog: To je možná část problému."
+      - "Anna: Vy si myslíte, že mě zachrání láska?"
+      - "Psycholog: Ne."
+      - "Anna: Tak co?"
+      - "Psycholog: Myslím, že láska není zázračný lék."
+      - "Psycholog: A také si nemyslím, že se můžete uzdravit tím, že se někdo jiný bude snažit milovat vás dostatečně za vás."
+      - "Anna: Takže se musím naučit mít ráda sama sebe."
+    choices:
+      - {id: nerekl, text: "„To jsem neřekl.“", to: o5c}
+      - {id: ano, text: "„Ano. To je ta práce.“", to: o5x}
+  o5c:
+    title: Další disciplína
+    location: l_poradna
+    panels: 11
+    beats:
+      - "Psycholog: To jsem neřekl."
+      - "Anna: Ale všichni to říkají."
+      - "Psycholog: Možná jsme z lásky k sobě udělali další povinnost."
+      - "Psycholog: Další disciplínu, ve které můžete selhat."
+      - Anna zvedne hlavu.
+      - "Anna: Co tím myslíte?"
+      - "Psycholog: Že člověk, který se nemá rád, dostane další úkol. Musí se naučit mít rád sám sebe."
+      - "Psycholog: A když mu to nejde, má pocit, že selhal ještě jednou."
+      - "Anna: A co má tedy dělat?"
+      - "Psycholog: Nevím, jestli musí něco dělat."
+      - "Anna: To nemůžete myslet vážně."
+      - "Psycholog: Myslím. Možná se nejdřív potřebuje setkat s někým, vedle koho nemusí podávat žádný výkon."
+      - "Anna: A když takového člověka nenajde?"
+      - "Psycholog: Pak budeme hledat dál."
+      - "Anna: A když ho nenajde nikdy?"
+      - "Psycholog: Pak nesmíme dopustit, aby se z toho stal důkaz, že nestojí za lásku."
+    next: o5d
+  o5d:
+    title: Ještě chvíli
+    location: l_poradna
+    panels: 8
+    beats:
+      - Anna se dívá do země.
+      - "Anna: Já nechci být sama."
+      - "Psycholog: To je v pořádku."
+      - "Anna: Nechci být silná."
+      - "Psycholog: Nemusíte."
+      - "Anna: Nechci se pořád překonávat."
+      - "Psycholog: Tak se teď nepřekonávejte."
+      - Dlouhé ticho.
+      - "Anna: Můžu tu ještě chvíli sedět?"
+      - "Psycholog: Samozřejmě."
+      - Psycholog se nedívá na hodiny.
+    next: o6a
+  o5x:
+    title: Prázdné křeslo
+    location: l_poradna
+    panels: 8
+    ending: retry
+    retry_to: o5b
+    beats:
+      - "Psycholog: Ano. To je ta práce."
+      - "Anna: Takže další úkol."
+      - Anna složí kapesník na přesný čtverec.
+      - "Anna: V tom budu dobrá. Uvidíte."
+      - Anna si vezme kabát a odejde dřív, než skončí padesát minut.
+      - Další týden. Prázdné křeslo.
+      - Sklenice vody na stolku. Hodiny.
+      - "Vyprávění: Někdy stačí jedna věta navíc. Zkus to znovu."
+      - "Vyprávění: Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123."
+
+  # ---- ŠESTÝ OBRAZ: Kdo koho zachraňuje ----
+  o6a:
+    title: Kdo koho zachraňuje
+    location: l_poradna
+    panels: 8
+    beats:
+      - Jiné odpoledne. Anna přichází s knihou.
+      - "Anna: Přinesla jsem vám něco."
+      - "Psycholog: Co to je?"
+      - "Anna: Kniha."
+      - "Psycholog: To vidím."
+      - "Anna: Nečetla jsem ji."
+      - "Psycholog: Tak proč jste ji koupila?"
+      - "Anna: Protože se mi líbila obálka."
+      - "Psycholog: To je dobrý důvod."
+      - "Anna: Vy jste zvláštní."
+      - "Psycholog: To už jste říkala."
+      - "Anna: A pořád si to myslím."
+      - Položí knihu na stolek.
+      - "Anna: Chtěla jsem se vás na něco zeptat."
+      - "Psycholog: Poslouchám."
+    next: o6b
+  o6b:
+    title: Seděl naproti mně
+    location: l_poradna
+    panels: 9
+    beats:
+      - "Anna: Vy jste někdy potřeboval psychologa?"
+      - "Psycholog: Ano."
+      - "Anna: A chodil jste k němu?"
+      - "Psycholog: Nějakou dobu."
+      - "Anna: A pomohl vám?"
+      - "Psycholog: Ano."
+      - "Anna: Jak?"
+      - "Psycholog: Tím, že mě nepřesvědčoval o tom, že můj život má smysl."
+      - "Anna: A co dělal?"
+      - "Psycholog: Seděl naproti mně."
+      - "Anna: To je všechno?"
+      - "Psycholog: Někdy to stačilo."
+      - "Anna: A někdy ne?"
+      - "Psycholog: Někdy ne."
+      - Pauza.
+      - "Anna: Vy jste někdy chtěl umřít?"
+    choices:
+      - {id: ano, text: "Odpovědět", to: o6c}
+      - {id: proc, text: "„Proč se ptáte?“", to: o6x}
+  o6x:
+    title: Zeptala jsem se první
+    location: l_poradna
+    panels: 8
+    beats:
+      - "Psycholog: Proč se ptáte?"
+      - "Anna: To je odpověď z učebnice."
+      - "Psycholog: Je to důležitá otázka. Chci vědět, jestli o tom přemýšlíte vy."
+      - "Anna: Zeptala jsem se první."
+      - Hodiny.
+      - Psycholog sundá brýle a chvíli je drží v ruce.
+      - Anna čeká.
+      - Psycholog si brýle nasadí.
+    next: o6c
+  o6c:
+    title: Moje bolest
+    location: l_poradna
+    panels: 10
+    beats:
+      - Psycholog se na chvíli odmlčí.
+      - "Psycholog: Ano. Ale nechci z toho dělat důkaz, že vám rozumím."
+      - "Anna: Proč?"
+      - "Psycholog: Protože vaše bolest není moje."
+      - "Psycholog: A moje zkušenost mi nedává právo tvrdit, že vím, jaké to je být vámi."
+      - "Anna: To je poprvé, co mi někdo řekl něco takového."
+      - "Psycholog: Co?"
+      - "Anna: Že moje bolest je moje."
+      - "Psycholog: Ano."
+      - "Anna: A co když ji nechci?"
+      - "Psycholog: Pak budeme hledat, jak ji zmírnit."
+      - "Anna: Vy pořád používáte slovo hledat."
+      - "Psycholog: Protože nechci předstírat, že už jsme našli."
+      - Anna se zadívá na obraz.
+      - "Anna: Myslíte, že se někdy uzdravím?"
+      - "Psycholog: Myslím, že máte právo na život, ve kterém se nebudete muset každý den znovu rozhodovat, jestli si ho zasloužíte."
+      - "Psycholog: A budeme společně pracovat na tom, abyste k němu měla blíž."
+    next: o6d
+  o6d:
+    title: Výjimečná
+    location: l_poradna
+    panels: 10
+    beats:
+      - "Anna: To není odpověď."
+      - "Psycholog: Nechci vám slibovat něco, co nikdo nemůže zaručit."
+      - "Psycholog: Uzdravování může být dlouhé. Někdy se člověk vrací zpátky."
+      - "Psycholog: Ale nemusíte na to být sama."
+      - "Anna: Já se bojím."
+      - "Psycholog: Čeho?"
+      - "Anna: Že když se uzdravím, nebudu už ničím výjimečná."
+      - Psycholog chvíli mlčí.
+      - "Psycholog: A co když jste výjimečná právě tím, že nemusíte být výjimečná?"
+      - "Anna: To je hrozně nespravedlivé."
+      - "Psycholog: Co?"
+      - "Anna: Celý život se snažím být někým jiným a vy mi teď říkáte, že bych mohla být sama sebou."
+      - "Psycholog: Já vám to neříkám. Já se vás na to ptám."
+      - "Anna: A když nevím jak?"
+      - "Psycholog: Tak začneme tím, že nebudete muset vědět všechno hned."
+    next: o6e
+  o6e:
+    title: Nevědět
+    location: l_poradna_obraz
+    panels: 10
+    beats:
+      - Anna vstane. Přistoupí k obrazu.
+      - "Anna: Pořád nevím, co představuje."
+      - "Psycholog: To nevadí."
+      - "Anna: Ale už mi tolik nevadí, že to nevím."
+      - Dlouhé ticho.
+      - "Anna: Myslíte, že se člověk může naučit být šťastný?"
+      - "Psycholog: Nevím."
+      - "Anna: Vy dnes nějak často nevíte."
+      - "Psycholog: Možná jsem se to naučil."
+      - "Anna: Co?"
+      - "Psycholog: Nevědět."
+      - Anna se usměje.
+      - "Anna: Tak to já se budu muset ještě hodně učit."
+      - Vezme si kabát.
+      - "Anna: Na shledanou."
+      - "Psycholog: Na shledanou, Anno."
+      - Anna odejde. Psycholog zůstane sedět a podívá se na knihu na stolku.
+    choices:
+      - {id: kniha, text: "Otevřít knihu", to: o6f, if: "not zlom"}
+      - {id: kniha2, text: "Otevřít knihu", to: o6g, if: zlom}
+  o6f:
+    title: Na první stránce
+    location: l_poradna
+    panels: 8
+    ending: good
+    beats:
+      - Psycholog sedí sám. Kniha na stolku.
+      - Chvíli ji pozoruje. Pak ji otevře.
+      - "Vyprávění: Na první stránce je napsáno:"
+      - "Vyprávění: „Pro toho, kdo mě nechtěl opravovat.“"
+      - Psycholog zavře knihu.
+      - Z vedlejší místnosti se ozve tlumený zvuk hodin.
+      - "Psycholog: (tiše, pro sebe) Kolik lidí musí nejprve zmizet samo sobě, aby mohli uvěřit, že mají právo existovat?"
+      - Zhasne se.
+      - "Vyprávění: Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123."
+  o6g:
+    title: Prázdná stránka
+    location: l_poradna
+    panels: 8
+    ending: good
+    beats:
+      - Psycholog sedí sám. Kniha na stolku.
+      - Chvíli ji pozoruje. Pak ji otevře.
+      - První stránka je prázdná.
+      - Psycholog zavře knihu.
+      - Z vedlejší místnosti se ozve tlumený zvuk hodin.
+      - "Psycholog: (tiše, pro sebe) Kolik lidí musí nejprve zmizet samo sobě, aby mohli uvěřit, že mají právo existovat?"
+      - Zhasne se.
+      - "Vyprávění: Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123."

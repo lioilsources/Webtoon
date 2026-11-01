@@ -5,7 +5,7 @@ engine that reads these files; the reasons for each rule are the comments next t
 
 ```
 rules/base/<file>.yaml        shared rules: storyboard, prompts, render, animate, compose, shorts, music, pipeline, pack
-rules/profiles/<name>.yaml    harlequin | kids | free | superhero, deep-merged over base (or over `profile.extends`)
+rules/profiles/<name>.yaml    harlequin | kids | free | superhero | drama, deep-merged over base (or over `profile.extends`)
 ```
 
 - Loader: `m0/rules.py` (`rules.load(file)` base, `rules.cfg(file, profile)` merged, `rules.profile(name)`), cached,
@@ -47,6 +47,8 @@ Today's flags map onto profiles (`rules.profile_of`): `adapt.py` default / `--au
 | loop negative tail | nsfw, nude, cleavage, underwear | as harlequin | child, childlike face, aged down | as kids |
 | strip prefix / out day | lx_ / local | lx_ / local | lxf_ / local_free | lx_ / local |
 | pack | adult, exported, type harlequin | kids, exported, type kids | never exported (`forbidden_world_prefix`) | kids, exported, type superhero |
+
+**drama** (extends harlequin, `world.json` `profile: drama`): adult chamber drama, no couple tags, prompt addendum `addendum_drama.md` (text verbatim, the body is never a subject), own negative list, style `thin_paint`.
 
 ## base/storyboard.yaml — adapt.py `check()` / `missing_fields()` / `to_m0()`
 

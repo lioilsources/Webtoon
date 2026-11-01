@@ -35,7 +35,7 @@ class Merge(unittest.TestCase):
 
 class Profiles(unittest.TestCase):
     def test_all_valid(self):
-        self.assertEqual(rules.profiles(), ["free", "harlequin", "kids", "superhero"])
+        self.assertEqual(rules.profiles(), ["drama", "free", "harlequin", "kids", "superhero"])
         for name in rules.profiles():
             p = rules.profile(name)
             st = p["profile"]["styles"]
