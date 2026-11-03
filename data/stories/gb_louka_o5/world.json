@@ -1,0 +1,119 @@
+{
+  "id": "w_gb_louka_o5",
+  "title": "Rozkvetlá louka, která zšedla — Šedé sousedství a otevřený konec",
+  "synopsis": "Dvacet let jedné rodiny: rozkvetlá louka, ze které zbude šeď, a otec, který se nakonec vydá za dětmi ven.",
+  "tone": "něžný, smutný, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "akvarel_louka",
+  "profile": "akvarel",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika v obraze: Ol1n a Marcela nikdy spolu v jednom obraze.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n přestane bojovat a odejde za dětmi ven; Marcela zůstane ve své pevnosti."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dum_5",
+      "l_zahrada_5"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ol1n_44",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+      "base": "chibi, adult man, (short dark brown hair with grey streaks:1.3), (short beard:1.2), brown eyes",
+      "outfits": {
+        "default": "grey knitted sweater"
+      },
+      "photo": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+      "tag_prompt": "chibi, adult man, (short dark brown hair with grey streaks:1.3), (short beard:1.2), brown eyes, grey knitted sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcela_44",
+      "name": "Marcela",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a closed-off Czech woman aged 44 with short auburn hair and narrow green eyes",
+      "base": "chibi, woman, (flat chest:1.2), (short auburn hair:1.3), green eyes",
+      "outfits": {
+        "default": "oversized loose grey turtleneck sweater, reading glasses"
+      },
+      "photo": "a closed-off Czech woman aged 44 with short auburn hair and narrow green eyes",
+      "tag_prompt": "chibi, woman, (flat chest:1.2), (short auburn hair:1.3), green eyes, oversized loose grey turtleneck sweater, reading glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "laurinka_9",
+      "name": "Laurinka",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "base": "chibi, child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "lavender sweater, denim overalls, long pants, yellow rubber boots"
+      },
+      "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "chibi, child, girl, light brown hair, long braid, brown eyes, lavender sweater, denim overalls, long pants, yellow rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojcata_5",
+      "name": "Dvojčata",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "2girls",
+      "human": true,
+      "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "chibi, child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, laughing",
+      "outfits": {
+        "default": "matching pink and blue long-sleeved sweaters, long overalls, long pants, rubber boots"
+      },
+      "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "chibi, child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, laughing, matching pink and blue long-sleeved sweaters, long overalls, long pants, rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dum_5",
+      "name": "Dům – 5. obraz",
+      "description": "Šedivý dům, stůl s papíry, okno do zahrady.",
+      "tag_prompt": "(diffused grey watercolor wash:1.3), desaturated, monochrome grey, cold industrial grey, indoors, grey kitchen, table with papers, window, rain on the window, grey meadow outside",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_5",
+      "name": "Zahrada – 5. obraz",
+      "description": "Deštěm smytá zahrada; mezi mraky první modrý paprsek.",
+      "tag_prompt": "(diffused grey watercolor wash:1.3), desaturated, monochrome grey, cold industrial grey, outdoors, rain-washed garden, wet grass, grey clouds, (first ray of blue sky breaking through the clouds:1.2)",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "louka",
+    "node": "o5"
+  }
+}

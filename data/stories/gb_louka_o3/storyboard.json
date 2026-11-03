@@ -1,0 +1,411 @@
+{
+  "title": "Růžová krize",
+  "title_i18n": {
+    "de": "Rosarote Krise",
+    "en": "Pink Crisis",
+    "fr": "Crise rose",
+    "it": "Crisi rosa",
+    "ja": "ピンク色の危機",
+    "ko": "핑크 위기",
+    "pl": "Różowy kryzys",
+    "pt-BR": "Crise Rosa",
+    "ru": "Розовая криза",
+    "uk": "Рожева криза",
+    "vi": "Khủng hoảng màu hồng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pokoj_3",
+      "characters": [],
+      "visual_tags": [
+        "crib",
+        "pink toys",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "sickly pink light pulsing faintly, a mobile above the crib turning slowly",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "laurinka_0"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "crying",
+        "big round eyes",
+        "in a crib"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "laurinka_0",
+          "text": "Mami? Tati? Proč pláčete?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mama? Papa? Warum weint ihr?",
+            "en": "Mom? Dad? Why are you crying?",
+            "fr": "Maman ? Papa ? Pourquoi vous pleurez ?",
+            "it": "Mamma? Papà? Perché piangete?",
+            "ja": "ママ？パパ？ なんで泣いてるの？",
+            "ko": "엄마? 아빠? 왜 울어요?",
+            "pl": "Mamo? Tato? Dlaczego płaczecie?",
+            "pt-BR": "Mamãe? Papai? Por que vocês estão chorando?",
+            "ru": "Мама? Папа? Почему вы плачете?",
+            "uk": "Мамо? Тату? Чому ви плачете?",
+            "vi": "Mẹ? Bố? Sao mọi người khóc?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "holding baby",
+        "pink blanket",
+        "sweat",
+        "exhausted",
+        "dark circles under eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3109,
+          0.1885,
+          0.7848,
+          0.5084
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "holding baby",
+        "pink blanket",
+        "tired smile",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Nepláčeme, malá. Všechno je v pořádku. Táta je tady. Uděláme to hezké, podívej, máš růžové peřinky, růžové hračky… Všechno bude růžové.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir weinen nicht, Kleine. Alles ist gut. Papa ist da. Wir machen das schön, schau, du hast rosa Decken, rosa Spielzeug… Alles wird rosa sein.",
+            "en": "We're not crying, sweetie. Everything's okay. Daddy's here. We'll make it nice, look, you have pink blankets, pink toys… Everything will be pink.",
+            "fr": "On ne pleure pas, ma chérie. Tout va bien. Papa est là. On va arranger ça, regarde, tu as des couvertures roses, des jouets roses… Tout sera rose.",
+            "it": "Non piangiamo, piccola. Va tutto bene. Papà è qui. Renderemo tutto bello, guarda, hai lenzuola rosa, giocattoli rosa… Tutto sarà rosa.",
+            "ja": "泣いてないよ、坊や。大丈夫。パパがいる。きっと良くなるよ、ほら、ピンクの毛布もあるし、ピンクのおもちゃもある… 全部ピンクになるよ。",
+            "ko": "울지 않아, 아가. 괜찮아. 아빠 여기 있어. 예쁘게 해줄게, 봐봐, 핑크 이불이랑 핑크 장난감… 전부 핑크로 해줄게.",
+            "pl": "Nie płaczemy, kochanie. Wszystko w porządku. Tata jest tutaj. Zrobimy to ładnie, zobacz, masz różowe kołderki, różowe zabawki… Wszystko będzie różowe.",
+            "pt-BR": "Não estamos chorando, querida. Tá tudo bem. O papai está aqui. Vamos resolver isso, olha, você tem cobertores rosa, brinquedos rosa… Tudo vai ser rosa.",
+            "ru": "Мы не плачем, малышка. Всё хорошо. Папа здесь. Мы всё устроим, смотри, у тебя розовое одеяльце, розовые игрушки… Всё будет розовым.",
+            "uk": "Не плачемо, сонечко. Все гаразд. Тато тут. Зробимо все добре, дивись, у тебе рожева ковдра, рожеві іграшки… Все буде рожеве.",
+            "vi": "Không khóc đâu con. Mọi chuyện ổn cả. Bố ở đây này. Chúng ta sẽ làm mọi thứ tốt đẹp, xem này, con có chăn gối màu hồng, đồ chơi màu hồng… Mọi thứ đều sẽ màu hồng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "gently rocking the baby, a tired slow blink",
+      "faces": [
+        [
+          0.2764,
+          0.18,
+          0.6527,
+          0.4381
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "standing in the corner",
+        "crossed arms",
+        "dark circles under eyes",
+        "exhausted"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3268,
+          0.2028,
+          0.6421,
+          0.41
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "crossed arms",
+        "angry",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Růžové? Víš vůbec, kolik to stojí sil? Ty si myslíš, že stačí koupit růžové hračky a ono to půjde samo? Já nemůžu dýchat. Děsím se každé noci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Rosa? Hast du überhaupt eine Ahnung, was das kostet? Glaubst du, rosa Spielzeug zu kaufen löst das Problem? Ich kann nicht atmen. Ich habe jede Nacht Angst.",
+            "en": "Pink? Do you even know how much that costs? You think buying pink toys will fix everything? I can't breathe. I'm scared every night.",
+            "fr": "Rose ? Tu as idée du prix de tout ça ? Tu crois qu’acheter des jouets roses va tout régler ? Je n’arrive plus à respirer. J’ai peur chaque nuit.",
+            "it": "Rosa? Hai idea di quanto costi questa fissazione? Pensi davvero che basti comprare giocattoli rosa e tutto si aggiusti da solo? Non riesco a respirare. Ho paura ogni notte.",
+            "ja": "ピンク？ そんなのいくらかかるか知ってるの？ ピンクのおもちゃを買えば何でも丸く収まると思ってるの？ 息ができない。毎晩怯えてる。",
+            "ko": "핑크? 이거 얼마나 드는 줄 알아? 핑크 장난감만 사면 다 된다고 생각해? 숨 막혀. 매일 밤 무서워.",
+            "pl": "Różowe? Wiesz w ogóle, ile to kosztuje sił? Myślisz, że wystarczy kupić różowe zabawki i samo przejdzie? Nie mogę oddychać. Boję się każdej nocy.",
+            "pt-BR": "Rosa? Você tem ideia do quanto isso custa? Acha que só de comprar brinquedos rosa vai dar certo? Eu não consigo respirar. Tenho medo todas as noites.",
+            "ru": "Розовое? Ты хоть представляешь, во сколько это обходится? Ты думаешь, достаточно купить розовые игрушки, и всё само собой наладится? Я не могу дышать. Мне страшно каждую ночь.",
+            "uk": "Рожеве? Ти взагалі знаєш, скільки це коштує сил? Ти думаєш, достатньо купити рожеві іграшки, і все саме собою піде? Я не можу дихати. Я боюся кожної ночі.",
+            "vi": "Màu hồng? Anh có biết nó tốn kém thế nào không? Anh nghĩ mua đồ chơi màu hồng là xong à? Em không thở được. Em sợ hãi mỗi đêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2098,
+          0.5004,
+          0.7171,
+          0.7676
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "holding baby",
+        "pink blanket",
+        "exhausted",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Pomůžu ti. Vystřídám tě. Spal jsem dvě hodiny, ale zvládnu to…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich helfe dir. Ich übernehme. Ich hab zwei Stunden geschlafen, aber ich schaffe das…",
+            "en": "I'll help you. I'll take a shift. I slept for two hours, but I can do it…",
+            "fr": "Je vais t’aider. Je te remplace. J’ai dormi deux heures, mais je peux assurer…",
+            "it": "Ti aiuto io. Ti dò il cambio. Ho dormito due ore, ma ce la faccio…",
+            "ja": "手伝うよ。交代するよ。2時間しか寝てないけど、頑張れる…",
+            "ko": "내가 도와줄게. 내가 대신 해줄게. 두 시간 잤지만 괜찮아…",
+            "pl": "Pomogę ci. Zmienimy się. Spałem dwie godziny, ale dam radę…",
+            "pt-BR": "Eu te ajudo. Te substituo. Dormi duas horas, mas aguento…",
+            "ru": "Я тебе помогу. Я тебя сменю. Я поспал два часа, но справлюсь…",
+            "uk": "Я тобі допоможу. Позмінно посидимо. Я поспав дві години, але витримаю…",
+            "vi": "Anh sẽ giúp em. Anh sẽ thay ca cho em. Anh ngủ được hai tiếng rồi, anh chịu được…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2246,
+          0.3232,
+          0.8928,
+          0.7638
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "shouting",
+        "clenched fists",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Ty mi nemůžeš pomoct, protože sám nevíš, jak žít! Všechno je to na mně. Celá tahle tíha leží na mých bedrech!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kannst mir nicht helfen, weil du selbst nicht weißt, wie man lebt! Alles liegt an mir. Diese ganze Last liegt auf meinen Schultern!",
+            "en": "You can't help me because you don't even know how to live! It's all on me. All this weight is on my shoulders!",
+            "fr": "Tu ne peux pas m’aider parce que toi-même tu ne sais pas vivre ! Tout repose sur moi. Tout ce poids est sur mes épaules !",
+            "it": "Tu non puoi aiutarmi, perché non sai vivere tu stesso! È tutto sulle mie spalle. Tutto questo peso grava su di me!",
+            "ja": "あなたには手伝えない、だってあなた自身がどう生きていいかわからないでしょ！ 全部私にかかってるの。この重荷は全部私の肩にのしかかってるのよ！",
+            "ko": "당신은 나를 도울 수 없어, 당신은 어떻게 살아야 하는지도 모르잖아! 전부 다 내 몫이야. 이 모든 무게가 내 어깨에 짓눌려!",
+            "pl": "Ty mi nie możesz pomóc, bo sam nie wiesz, jak żyć! Wszystko spoczywa na mnie. Cała ta ciężkość leży na moich barkach!",
+            "pt-BR": "Você não pode me ajudar porque você mesmo não sabe como viver! Tudo é comigo. Todo esse peso está sobre meus ombros!",
+            "ru": "Ты мне не поможешь, потому что сам не знаешь, как жить! Всё на мне. Вся эта тяжесть на моих плечах!",
+            "uk": "Ти мені не допоможеш, бо сам не знаєш, як жити! Все на мені. Весь цей тягар на моїх плечах!",
+            "vi": "Anh không giúp được gì cho em đâu, vì chính anh còn không biết sống như thế nào! Mọi thứ đều đổ lên vai em. Gánh nặng này đè lên vai em hết rồi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2619,
+          0.2578,
+          0.593,
+          0.4711
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "pained expression",
+        "sad eyes",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Vždyť táhnu celou vahou s tebou… Proč do mě zase tepeš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich trage doch die ganze Last mit dir… Warum schlägst du mich immer wieder an?",
+            "en": "But I'm carrying all the weight with you… Why are you always attacking me?",
+            "fr": "Mais je porte tout le poids avec toi… Pourquoi tu me tapes encore ?",
+            "it": "Ma io sostengo tutto il peso con te… Perché continui a prendertela con me?",
+            "ja": "お前も一緒に重荷を背負ってるのに… なんでまた私を責めるんだ？",
+            "ko": "내가 당신이랑 같이 무게를 치고 있는데… 왜 또 나한테 화내는 거야?",
+            "pl": "Przecież dźwigam z tobą całą wagę… Czemu znowu na mnie napadasz?",
+            "pt-BR": "Mas eu tô carregando todo o peso com você… Por que você está me atacando de novo?",
+            "ru": "Да я же тяну всю тяжесть вместе с тобой… Почему ты опять на меня набрасываешься?",
+            "uk": "Та я ж тягну з тобою весь цей вантаж… Чому ти знову на мене накидаєшся?",
+            "vi": "Nhưng anh đang gánh hết mọi thứ cùng em mà… Sao em lại đánh anh?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "eyes glistening, lips trembling, pink light dimming",
+      "faces": [
+        [
+          0.1976,
+          0.2042,
+          0.7209,
+          0.5422
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pokoj_3",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "turning away",
+        "looking away",
+        "sad"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Protože mi nerozumíš. Nikdo mi nerozumí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil du mich nicht verstehst. Mich versteht niemand.",
+            "en": "Because you don't understand me. No one understands me.",
+            "fr": "Parce que tu ne me comprends pas. Personne ne me comprend.",
+            "it": "Perché non mi capisci. Nessuno mi capisce.",
+            "ja": "だってあなたは私の気持ちがわからないの。誰も私の気持ちを理解してくれない。",
+            "ko": "당신은 나를 이해하지 못해. 아무도 나를 이해하지 못해.",
+            "pl": "Bo mnie nie rozumiesz. Nikt mnie nie rozumie.",
+            "pt-BR": "Porque você não me entende. Ninguém me entende.",
+            "ru": "Потому что ты меня не понимаешь. Меня никто не понимает.",
+            "uk": "Бо ти мене не розумієш. Мене ніхто не розуміє.",
+            "vi": "Vì anh không hiểu em. Không ai hiểu em cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "she slowly turns her face away, shadows deepening",
+      "faces": [
+        [
+          0.1535,
+          0.247,
+          0.8126,
+          0.6177
+        ]
+      ]
+    }
+  ]
+}

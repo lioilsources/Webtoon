@@ -253,7 +253,10 @@ def cmd_draft(g):
     for node_id, n in g["nodes"].items():
         if "script" in n:
             story = script_story(g, node_id, src)
-            errs = adapt.check(story, adapt.common_vocab(), profile=g["profile"])
+            # max_animated guards the LLM's picks; loops written into the script are the author's choice
+            # (animate.py --force draws them all)
+            unlooped = {**story, "panels": [{**p, "animate": False} for p in story["panels"]]}
+            errs = adapt.check(unlooped, adapt.common_vocab(), profile=g["profile"])
             if errs:
                 failed = True
                 print(node_id, *errs[:8], sep="\n  ")

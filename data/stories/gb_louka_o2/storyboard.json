@@ -1,0 +1,396 @@
+{
+  "title": "Vybledlé neony",
+  "title_i18n": {
+    "de": "Verblasste Neonreklamen",
+    "en": "Faded Neons",
+    "fr": "Néons fanés",
+    "it": "Neon sbiaditi",
+    "ja": "色褪せたネオン",
+    "ko": "바랜 네온사인",
+    "pl": "Wybielone neony",
+    "pt-BR": "Neon Desbotado",
+    "ru": "Выцветшие неоны",
+    "uk": "Вицвілі неони",
+    "vi": "Ánh Neon Phai Màu"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dum_2",
+      "characters": [],
+      "visual_tags": [
+        "cardboard boxes",
+        "suitcases",
+        "sketchbooks",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "dust floating in pale light, light shifting slowly",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Zase se mi zdálo o tom městě. Že stojíme na té samé křižovatce a filtry zase selhávají. Marcelko, podívej se na mě…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab wieder von dieser Stadt geträumt. Dass wir an derselben Kreuzung stehen und die Filter schon wieder versagen. Marcela, schau mich an…",
+            "en": "I had that dream about the city again. Standing at the same intersection, filters failing again. Marcela, look at me…",
+            "fr": "Je rêve encore de cette ville. On est à la même intersection et les filtres lâchent encore. Marcela, regarde-moi…",
+            "it": "Ho fatto di nuovo quel sogno sulla città. Siamo di nuovo allo stesso incrocio e i filtri stanno di nuovo saltando. Marcela, guardami…",
+            "ja": "またあの街の夢を見た。同じ交差点に立って、フィルターがまた壊れていく。マルセル、こっちを見て…",
+            "ko": "또 그 도시 꿈을 꿨어. 그 교차로에 서 있는 꿈. 필터가 또 고장 나는 것 같아. 마르첼라, 나 좀 봐…",
+            "pl": "Znowu śniło mi się to miasto. Że stoimy na tym samym skrzyżowaniu i filtry znowu szwankują. Marcelko, spójrz na mnie…",
+            "pt-BR": "Tive de novo aquele sonho com a cidade. A gente parado no mesmo cruzamento e os filtros falhando de novo. Marcela, olha pra mim…",
+            "ru": "Мне опять приснился этот город. Мы стоим на том же перекрестке, и фильтры опять барахлят. Марсела, посмотри на меня…",
+            "uk": "Знову мені сниться те місто. Ніби стоїмо на тій самій перехресті, і фільтри знову барахлять. Марцело, подивись на мене…",
+            "vi": "Tôi lại mơ về thành phố đó. Chúng ta đứng ở ngã tư quen thuộc, rồi bộ lọc lại hỏng. Marcela, nhìn tôi này…"
+          }
+        },
+        {
+          "speaker_id": "ol1n_30",
+          "text": "kdy naposledy jsme se na sebe doopravdy usmáli, aniž bychom řešili, co zase vázne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wann haben wir uns das letzte Mal wirklich angelächelt, ohne uns zu fragen, was schon wieder nicht klappt?",
+            "en": "When was the last time we really smiled at each other without worrying about what's broken?",
+            "fr": "Quand est-ce qu'on s'est vraiment souri pour la dernière fois, sans se demander ce qui cloche ?",
+            "it": "Quando ci siamo sorrisi davvero l'ultima volta, senza pensare a cosa non va?",
+            "ja": "最後に、何か問題もなく、心から笑い合ったのはいつだったかな？",
+            "ko": "마지막으로 서로에게 진심으로 웃었던 게 언제였지? 뭐가 또 잘못됐는지 따지기 전에.",
+            "pl": "Kiedy ostatni raz naprawdę się uśmiechnęliśmy do siebie, bez zastanawiania się, co znowu się psuje?",
+            "pt-BR": "Quando foi a última vez que a gente sorriu de verdade um pro outro sem ter que resolver alguma coisa?",
+            "ru": "Когда мы в последний раз по-настоящему улыбнулись друг другу, не думая о том, что сломалось?",
+            "uk": "Коли ми востаннє щиро посміхнулися одне одному, не думаючи, що знову зламалося?",
+            "vi": "Khi nào chúng ta thực sự cười với nhau mà không phải lo lắng chuyện gì đang trục trặc?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0811,
+          0.2538,
+          0.8166,
+          0.7065
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "empty expression",
+        "staring ahead"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2672,
+          0.2674,
+          0.7584,
+          0.5759
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting",
+        "empty expression",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Nemám čas na sny, Ol1ne. Musím držet pohromadě tenhle dům. Všechno padá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab keine Zeit für Träumereien, Ol1n. Ich muss diesen Laden zusammenhalten. Alles bröckelt.",
+            "en": "I don't have time for dreams, Ol1n. I need to hold this house together. Everything's falling apart.",
+            "fr": "J'ai pas le temps pour les rêves, Ol1n. Faut que je tienne cette maison à bout de bras. Tout s'écroule.",
+            "it": "Non ho tempo per i sogni, Ol1n. Devo tenere in piedi questa casa. Tutto sta crollando.",
+            "ja": "夢を見てる暇はないの、オル1ン。この家をなんとかしなくちゃ。全てが崩れていく。",
+            "ko": "꿈 꿀 시간 없어, 올1n. 이 집만이라도 굴러가게 해야 해. 다 무너지고 있어.",
+            "pl": "Nie mam czasu na sny, Ol1nie. Muszę utrzymać ten dom w całości. Wszystko się wali.",
+            "pt-BR": "Não tenho tempo pra sonhos, Ol1n. Preciso manter essa casa de pé. Tá tudo desmoronando.",
+            "ru": "У меня нет времени на сны, Олин. Мне нужно хоть как-то удержать этот дом. Всё разваливается.",
+            "uk": "Мені нема часу на сни, Оліне. Я мушу тримати цей дім. Все розвалюється.",
+            "vi": "Tôi không có thời gian cho những giấc mơ, Ol1n. Tôi phải giữ căn nhà này ổn định. Mọi thứ đang sụp đổ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1393,
+          0.1854,
+          0.8729,
+          0.6665
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "hopeful expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Padá to proto, že se uzavíráme. Ale za dva měsíce odjedeme. Zase sedneme do auta, vyrazíme na západ, do těch amerických národních parků.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es bröckelt, weil wir uns abschotten. Aber in zwei Monaten fahren wir weg. Wir steigen wieder ins Auto, fahren nach Westen, in die amerikanischen Nationalparks.",
+            "en": "It's falling apart because we're shutting down. But in two months we're leaving. Back in the car, heading west, to those American national parks.",
+            "fr": "Ça s'écroule parce qu'on se renferme. Mais dans deux mois, on partira. On reprendra la voiture, direction l'ouest, dans les parcs nationaux américains.",
+            "it": "Crolla perché ci chiudiamo in noi stessi. Ma tra due mesi ce ne andremo. Torneremo in macchina, verso ovest, nei parchi nazionali americani.",
+            "ja": "崩れていくのは、私たちが閉じこもってるからだ。でも、二ヶ月後には出発する。また車に乗り、西へ、あのアメリカの国立公園へ。",
+            "ko": "무너지는 건 우리가 닫혀서 그래. 하지만 두 달 뒤면 떠날 거잖아. 다시 차에 타고 서쪽으로, 그 미국 국립공원들로.",
+            "pl": "Wali się, bo się zamykamy. Ale za dwa miesiące pojedziemy. Znowu wsiądziemy do auta, ruszymy na zachód, do tych amerykańskich parków narodowych.",
+            "pt-BR": "Tá desmoronando porque a gente se fecha. Mas em dois meses a gente vai embora. A gente entra no carro de novo, rumo ao oeste, pros parques nacionais americanos.",
+            "ru": "Разваливается, потому что мы закрываемся. Но через два месяца мы уедем. Снова сядем в машину, поедем на запад, в те американские национальные парки.",
+            "uk": "Все розвалюється, бо ми замикаємось в собі. Але через два місяці ми поїдемо. Знову сядемо в машину, поїдемо на захід, в ті американські національні парки.",
+            "vi": "Mọi thứ sụp đổ vì chúng ta khép mình lại. Nhưng sau hai tháng nữa chúng ta sẽ đi. Lại lên xe, hướng về phía tây, đến những công viên quốc gia ở Mỹ."
+          }
+        },
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Tam se ty barvy zase rozsvítí, vzpomínáš? Červené kaňony, obrovské nebe… Tam zase budeme my dva.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dort leuchten die Farben wieder auf, erinnerst du dich? Rote Schluchten, riesiger Himmel… Dort sind wir wieder die beiden.",
+            "en": "The colors will come back there, remember? Red canyons, huge skies… Just the two of us again.",
+            "fr": "Là-bas, les couleurs se rallumeront, tu te souviens ? Les canyons rouges, le ciel immense… Là-bas, on sera juste nous deux.",
+            "it": "Lì i colori si riaccenderanno, ricordi? Canyon rossi, cielo immenso… Lì saremo di nuovo solo noi due.",
+            "ja": "そこでまた色彩が蘇るだろう？赤い峡谷、広大な空…そこでまた二人になれる。",
+            "ko": "거기 가면 다시 색이 돌아올 거야, 기억해? 붉은 협곡, 거대한 하늘… 거기면 다시 우리 둘이 될 수 있어.",
+            "pl": "Tam te kolory znowu ożyją, pamiętasz? Czerwone kaniony, ogromne niebo… Tam znowu będziemy tylko my dwoje.",
+            "pt-BR": "Lá as cores vão brilhar de novo, lembra? Cânions vermelhos, céu enorme… Lá a gente vai ser só nós dois.",
+            "ru": "Там цвета снова заиграют, помнишь? Красные каньоны, огромное небо… Там снова будем только мы двое.",
+            "uk": "Там знову заграють кольори, пам’ятаєш? Червоні каньйони, безмежне небо… Там знову будемо ми двоє.",
+            "vi": "Ở đó màu sắc sẽ lại rực rỡ, em nhớ không? Những hẻm núi đỏ, bầu trời bao la… Ở đó sẽ lại là chúng ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0807,
+          0.248,
+          0.9246,
+          0.7846
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dum_2",
+      "characters": [],
+      "visual_tags": [
+        "red canyons",
+        "huge blue sky",
+        "desert road",
+        "dreamlike",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "clouds drifting slowly over red canyons, heat shimmer",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "bitter smile",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Jojo. Na dva týdny v roce. A pak se vrátíme sem a všechno je zase šedivé. Možná, že ty barvy existují jen tam v cizině. Tady ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja, ja. Für zwei Wochen im Jahr. Und dann kommen wir wieder hierher und alles ist wieder grau. Vielleicht existieren diese Farben nur dort, im Ausland. Nicht hier.",
+            "en": "Yeah. For two weeks a year. And then we come back here and everything's gray again. Maybe those colors only exist abroad. Not here.",
+            "fr": "Ouais. Pendant deux semaines par an. Et après, on revient ici et tout redevient gris. Peut-être que ces couleurs n'existent qu'à l'étranger. Pas ici.",
+            "it": "Sì, sì. Per due settimane all'anno. E poi torniamo qui ed è tutto di nuovo grigio. Forse quei colori esistono solo all'estero. Non qui.",
+            "ja": "ええ。年に二週間だけ。そしてまたここに戻ってきて、全てが灰色になる。もしかしたら、あの色彩は海外にしか存在しないのかも。ここではね。",
+            "ko": "그래. 일 년에 두 주 동안만. 그리고 다시 여기 돌아와서 모든 게 잿빛이 되잖아. 어쩌면 그 색깔은 외국에서만 존재하는 걸지도 몰라. 여기엔 없어.",
+            "pl": "Jasne. Na dwa tygodnie w roku. A potem wracamy tu i wszystko znów jest szare. Może te kolory istnieją tylko tam, za granicą. Nie tutaj.",
+            "pt-BR": "É. Por duas semanas no ano. E aí a gente volta pra cá e tudo fica cinza de novo. Talvez essas cores só existam lá fora. Não aqui.",
+            "ru": "Ага. На две недели в году. А потом вернемся сюда, и всё снова станет серым. Может, эти цвета существуют только там, за границей. Здесь нет.",
+            "uk": "Ага. На два тижні на рік. А потім повернемось сюди, і все знову буде сірим. Можливо, ті кольори існують лише там, за кордоном. Тут ні.",
+            "vi": "Ừ. Hai tuần mỗi năm. Rồi chúng ta lại về đây và mọi thứ lại xám xịt. Có lẽ những màu sắc đó chỉ tồn tại ở nước ngoài thôi. Chứ không phải ở đây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4217,
+          0.2024,
+          0.7018,
+          0.3893
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "ol1n_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "reaching out a hand",
+        "hopeful expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_30",
+          "text": "Můžeme je přivézt sem. Stačí jen…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir können sie hierherbringen. Wir müssen nur…",
+            "en": "We can bring them here. We just…",
+            "fr": "On peut les ramener ici. Il suffit juste de…",
+            "it": "Possiamo portarli qui. Basta solo…",
+            "ja": "ここにも持ってこれる。ただ…",
+            "ko": "여기 가져올 수 있어. 그럴 수만 있다면…",
+            "pl": "Możemy je tu przywieźć. Wystarczy tylko…",
+            "pt-BR": "A gente pode trazer elas pra cá. É só…",
+            "ru": "Мы можем привезти их сюда. Нужно только…",
+            "uk": "Ми можемо привезти їх сюди. Потрібно лише…",
+            "vi": "Chúng ta có thể mang chúng về đây. Chỉ cần…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1704,
+          0.1528,
+          0.935,
+          0.6485
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_2",
+      "characters": [
+        {
+          "id": "marcela_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sharp expression",
+        "frowning",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_30",
+          "text": "Nic nestačí. Přestaň si vymýšlet ideální světy, které neexistují. Jsi moc měkký. Pořád jen utíkáš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es reicht nichts. Hör auf, dir perfekte Welten auszudenken, die es nicht gibt. Du bist zu weich. Du flüchtest ständig.",
+            "en": "Nothing's enough. Stop making up perfect worlds that don't exist. You're too soft. You're always running away.",
+            "fr": "Ça ne suffit à rien. Arrête d'inventer des mondes parfaits qui n'existent pas. T'es trop mou. Tu fuis tout le temps.",
+            "it": "Non basta niente. Smettila di inventare mondi ideali che non esistono. Sei troppo debole. Scappi sempre.",
+            "ja": "もういい。存在しない理想の世界を空想するのをやめて。あなたは弱すぎる。いつも逃げてる。",
+            "ko": "아무것도 안 돼. 존재하지 않는 이상한 세상 지어내지 마. 넌 너무 나약해. 계속 도망치기만 해.",
+            "pl": "Nic nie wystarczy. Przestań wymyślać idealne światy, które nie istnieją. Jesteś za miękki. Ciągle uciekasz.",
+            "pt-BR": "Não adianta nada. Para de inventar mundos perfeitos que não existem. Você é muito mole. Só sabe fugir.",
+            "ru": "Ничего не нужно. Перестань придумывать идеальные миры, которых не существует. Ты слишком мягкий. Постоянно убегаешь.",
+            "uk": "Нічого не допоможе. Перестань вигадувати ідеальні світи, яких не існує. Ти занадто м’який. Постійно тікаєш.",
+            "vi": "Không có gì đủ cả. Đừng tự vẽ ra những thế giới hoàn hảo không tồn tại. Anh quá yếu đuối. Anh cứ trốn chạy mãi thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "cold narrow stare, a slow blink, pale light dimming",
+      "faces": [
+        [
+          0.2271,
+          0.1406,
+          0.6605,
+          0.3994
+        ],
+        [
+          0.7607,
+          0.7234,
+          0.9259,
+          0.8121
+        ]
+      ]
+    }
+  ]
+}

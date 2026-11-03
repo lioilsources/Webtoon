@@ -1,0 +1,143 @@
+# Gamebook 4 — Rozkvetlá louka, která zšedla. Divadelní hra o pěti obrazech; text replik je doslova autorův.
+# Jméno OLLIN a věky (20, 30, 36, 44) podle autora.
+# Lineární: pět uzlů, žádné volby, žádný nový text. Opravené překlepy v replikách: „sireny“ → „sirény“, „pryc“ → „pryč“
+# (1. obraz), „nestáčí“ → „nestačí“ (2.), „na chvíle“ → „na chvíli“ (4.), „Jdi mi s tím už očích“ → „Jdi mi s tím už
+# z očí“, „Odpočin“ → „Odpočiň“ (5.). Scénické poznámky se kreslí, nepíšou.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (Ol1n a Marcela nikdy spolu
+# v obraze), `see` = scénická poznámka jako obraz. Styl: chibi postavy, Botticelliho louka, průzračný akvarel, který
+# se obraz od obrazu rozpíjí do šedi (barvy nesou lokace l_*_N, preset akvarel_louka na Illustrious).
+
+schema: 1
+id: louka
+title: Rozkvetlá louka, která zšedla
+title_i18n: {en: The Blooming Meadow That Turned Grey, de: Die blühende Wiese, die grau wurde, fr: "La prairie en fleurs devenue grise", it: Il prato fiorito diventato grigio, ja: 灰色になった花咲く草原, ko: 잿빛이 된 꽃핀 들판, pl: Rozkwitła łąka, która poszarzała, pt-BR: O prado florido que ficou cinza, ru: Цветущий луг, ставший серым, uk: Квітучий луг, що посірів, vi: Đồng cỏ nở hoa đã hóa xám}
+world: w_louka
+audience: adult
+language: cs
+style_id: akvarel_louka
+profile: akvarel
+product_id: gamebook_louka
+start: o1
+
+premise: >
+  Dvacet let jedné rodiny. Ol1n a Marcela utečou z domova na rozkvetlou louku a slíbí si čistý, měkký svět.
+  Barvy obraz od obrazu blednou, narodí se Laurinka a dvojčata, Ol1n musí na dva roky odejít. Nakonec žijí
+  vedle sebe v šedém domě a Ol1n přestane bojovat a jde s dětmi ven.
+
+characters: [ol1n_20, ol1n_30, ol1n_36, ol1n_44, marcela_20, marcela_30, marcela_36, marcela_44, laurinka_0, laurinka_7, laurinka_9, dvojcata_5]
+
+locations:
+  - {id: l_louka_1, name: Louka – 1. obraz, description: "rozkvetlá louka, sytě růžové a blankytné světlo"}
+  - {id: l_dum_2, name: Dům – 2. obraz, description: "krabice, kufry, skicáře, vybledlé šmouhy barev"}
+  - {id: l_pokoj_3, name: Pokoj – 3. obraz, description: "tísnivá, nemocná růžová"}
+  - {id: l_dvere_4, name: Dveře – 4. obraz, description: "tma, studený kužel bílého světla"}
+  - {id: l_dum_5, name: Dům – 5. obraz, description: "šedivo, stůl s papíry, okno"}
+  - {id: l_zahrada_5, name: Zahrada – 5. obraz, description: "deštěm smytá zahrada, první modrý paprsek"}
+
+draft:
+  speakers: {Ol1n: ollin, Marcela: marcela, Laurinka: laurinka, Dvojčata: dvojcata}
+  faces:
+    ollin: [[hopeful expression, looking at another], [tired expression, looking down], [pained expression, looking at another]]
+    marcela: [[tense expression, looking away], [cold expression, looking at another], [frowning, crossed arms]]
+    laurinka: [[curious expression, looking up], [smile, looking at another], [worried expression, looking up]]
+    dvojcata: [[laughing, open mouth], [excited, looking up], [shouting, smile]]
+  speaking: [upper body, from front]
+
+nodes:
+  o1:
+    title: První nádech na louce
+    location: l_louka_1
+    cast: {ollin: ol1n_20, marcela: marcela_20}
+    next: o2
+    script:
+      - {see: "Louka zalitá sytě růžovým a blankytným světlem, jemný vánek.", shot: establishing, tags: [flower meadow, petals in the air, soft breeze, no humans], gap: medium, animate: "petals drifting in the breeze, flowers swaying gently, soft light shimmering"}
+      - {see: "Ol1n, mladší, s rozzářenýma očima, stojí uprostřed louky.", shot: medium, who: ollin, tags: [standing in the flower meadow, bright smile, shining eyes, looking at another], animate: "hair and shirt moving in the breeze, petals drifting past, slow happy blink"}
+      - {say: ollin, text: "Cítíš to ticho? Nikde žádné sirény, žádné vyčítavé pohledy, žádné věčné soudy. Jsme pryč.", tags: [eyes closed, smile, standing in the flower meadow]}
+      - {see: "Marcela hluboce vydechne, jako by shodila těžký batoh.", shot: wide, who: marcela, tags: [eyes closed, exhaling, relieved, standing in the flower meadow]}
+      - {say: marcela, text: "Úplně pryč. Jejich hlasy sem nedosáhnou. Jsou miliony kilometrů daleko. Jsme jenom my dva.", tags: [gentle smile, looking at another]}
+      - {say: ollin, text: "Budeme mít jiný svět. Uděláme si ho čistý. Všechno bude měkké, modré a růžové. Nic nás už svázat nemůže.", tags: [hopeful expression, open arms, looking at another]}
+      - {say: marcela, text: "Nikdy nedopustím, abychom byli jako oni. Slib mi to.", tags: [serious expression, looking at another]}
+      - {say: ollin, text: "Slibuju. Jsme svobodní.", tags: [gentle smile, looking at another], animate: "a warm smile, slow blink, petals drifting past his face"}
+      - {see: "Roztočí se v tanci, světla hrají všemi barvami dětství a naděje.", shot: wide, tags: [swirling petals, pastel rainbow light over the meadow, no humans], animate: "petals swirling in a slow spiral, pastel light shimmering over the meadow"}
+
+  o2:
+    title: Vybledlé neony
+    location: l_dum_2
+    cast: {ollin: ol1n_30, marcela: marcela_30}
+    next: o3
+    script:
+      - {see: "Světla zbledla. Krabice, kufry a skicáře; modrá a růžová jsou jen matné šmouhy na zdech.", shot: establishing, tags: [cardboard boxes, suitcases, sketchbooks, no humans], gap: medium, animate: "dust floating in pale light, light shifting slowly"}
+      - {say: ollin, text: "Zase se mi zdálo o tom městě. Že stojíme na té samé křižovatce a filtry zase selhávají. Marcelko, podívej se na mě… kdy naposledy jsme se na sebe doopravdy usmáli, aniž bychom řešili, co zase vázne?", tags: [tired expression, looking at another]}
+      - {see: "Marcela sedí opodál s prázdným výrazem v obličeji.", shot: medium, who: marcela, tags: [sitting, empty expression, staring ahead]}
+      - {say: marcela, text: "Nemám čas na sny, Ol1ne. Musím držet pohromadě tenhle dům. Všechno padá.", tags: [sitting, empty expression, looking away]}
+      - {say: ollin, text: "Padá to proto, že se uzavíráme. Ale za dva měsíce odjedeme. Zase sedneme do auta, vyrazíme na západ, do těch amerických národních parků. Tam se ty barvy zase rozsvítí, vzpomínáš? Červené kaňony, obrovské nebe… Tam zase budeme my dva.", tags: [hopeful expression, looking at another]}
+      - {see: "Červené kaňony, obrovské nebe.", shot: wide, tags: [red canyons, huge blue sky, desert road, dreamlike, no humans], animate: "clouds drifting slowly over red canyons, heat shimmer"}
+      - {say: marcela, text: "Jojo. Na dva týdny v roce. A pak se vrátíme sem a všechno je zase šedivé. Možná, že ty barvy existují jen tam v cizině. Tady ne.", tags: [bitter smile, looking away]}
+      - {say: ollin, text: "Můžeme je přivézt sem. Stačí jen…", tags: [reaching out a hand, hopeful expression]}
+      - {say: marcela, text: "Nic nestačí. Přestaň si vymýšlet ideální světy, které neexistují. Jsi moc měkký. Pořád jen utíkáš.", tags: [sharp expression, frowning, looking at another], animate: "cold narrow stare, a slow blink, pale light dimming"}
+
+  o3:
+    title: Růžová krize
+    location: l_pokoj_3
+    cast: {ollin: ol1n_30, marcela: marcela_30, laurinka: laurinka_0}
+    next: o4
+    script:
+      - {see: "Světla zhoustnou do tísnivé, nemocné růžové. Z dálky je slyšet tichý, naléhavý pláč miminka.", shot: establishing, tags: [crib, pink toys, no humans], gap: medium, animate: "sickly pink light pulsing faintly, a mobile above the crib turning slowly"}
+      - {say: laurinka, text: "Mami? Tati? Proč pláčete?", tags: [crying, big round eyes, in a crib]}
+      - {see: "Ol1n drží v náruči maličkou Laurinku, po tváři mu stéká pot a vyčerpání.", shot: medium, who: ollin, tags: [holding baby, pink blanket, sweat, exhausted, dark circles under eyes]}
+      - {say: ollin, text: "Nepláčeme, malá. Všechno je v pořádku. Táta je tady. Uděláme to hezké, podívej, máš růžové peřinky, růžové hračky… Všechno bude růžové.", tags: [holding baby, pink blanket, tired smile, looking down], animate: "gently rocking the baby, a tired slow blink"}
+      - {see: "Marcela stojí v koutě, ruce zkřížené na prsou, v obličeji hluboké stíny vyčerpání.", shot: medium, who: marcela, tags: [standing in the corner, crossed arms, dark circles under eyes, exhausted]}
+      - {say: marcela, text: "Růžové? Víš vůbec, kolik to stojí sil? Ty si myslíš, že stačí koupit růžové hračky a ono to půjde samo? Já nemůžu dýchat. Děsím se každé noci.", tags: [crossed arms, angry, looking at another]}
+      - {say: ollin, text: "Pomůžu ti. Vystřídám tě. Spal jsem dvě hodiny, ale zvládnu to…", tags: [holding baby, pink blanket, exhausted, looking at another]}
+      - {say: marcela, text: "Ty mi nemůžeš pomoct, protože sám nevíš, jak žít! Všechno je to na mně. Celá tahle tíha leží na mých bedrech!", tags: [shouting, clenched fists, angry]}
+      - {say: ollin, text: "Vždyť táhnu celou vahou s tebou… Proč do mě zase tepeš?", tags: [pained expression, sad eyes, looking at another], animate: "eyes glistening, lips trembling, pink light dimming"}
+      - {say: marcela, text: "Protože mi nerozumíš. Nikdo mi nerozumí.", tags: [turning away, looking away, sad], animate: "she slowly turns her face away, shadows deepening"}
+
+  o4:
+    title: Pád do tmy a dva roky samoty
+    location: l_dvere_4
+    cast: {ollin: ol1n_36, marcela: marcela_36, laurinka: laurinka_7, dvojcata: dvojcata_5}
+    next: o5
+    script:
+      - {see: "Světla téměř zhasla.", shot: establishing, tags: [dark room, front door, spotlight, no humans], gap: medium}
+      - {see: "Ostrý, studený kužel bílého světla dopadá na Ol1na stojícího s kufrem u dveří.", shot: wide, who: ollin, tags: [standing by the door, holding a suitcase, spotlight, dark room], animate: "cold light flickering faintly, dust drifting in the light cone"}
+      - {see: "V pozadí pobíhají dvojčata.", shot: medium, who: dvojcata, tags: [running, laughing, playing], animate: "the twins run in a small circle, pigtails bouncing"}
+      - {see: "Laurinka, která už je větší.", shot: medium, who: laurinka, tags: [standing, watching quietly, holding a doll]}
+      - {see: "Marcela stojí opodál se ztvrdlým výrazem.", shot: medium, who: marcela, tags: [hard expression, crossed arms, standing]}
+      - {say: dvojcata, text: "Tati! Kam jdeš? Kde budeš spát?", tags: [shouting, reaching out, looking up]}
+      - {say: ollin, text: "Tatínek musí na chvíli odejít, holčičky moje. Musím si srovnat hlavu a postavit pevnost, abych vás mohl chránit. Brzy se uvidíme.", tags: [kneeling, reaching out a hand, sad smile], animate: "his outstretched hand trembles, eyes glistening"}
+      - {say: marcela, text: "Běž. Tvoje rodina mě mezitím úplně zavrhla, všichni na mě ukazují prstem a ty nejsi schopen mě podržet. Už ti nevěřím, Ol1ne. Mezi námi se rozevřely nůžky, které už nejdou sešít. Vypadni. Na dva roky vypadni. Nemůžu tě tu už snést.", tags: [cold expression, standing, looking at another]}
+      - {say: ollin, text: "Dva roky? Chceš, abych odešel na dva roky ze života vlastních dětí?", tags: [shocked, wide eyes, looking at another]}
+      - {say: marcela, text: "Jinak to nejde. Tady už není místo pro tvoje kecy.", tags: [cold expression, looking away]}
+      - {see: "Ol1n pomalu zvedá kufr.", shot: medium, who: ollin, tags: [lifting a suitcase, head down, turning away]}
+      - {see: "Dvojčata za ním natahují ruce, ale on musí odejít.", shot: medium, who: dvojcata, tags: [reaching out with both arms, tears, sad], animate: "small arms reaching out, tears welling up"}
+      - {see: "Světlo na něj zhasne. Zůstává jen prázdná, šedá místnost.", shot: establishing, tags: [empty grey room, closed door, darkness, no humans]}
+      - {see: "Marcela drží v náruči křičící děti a přenáší na ně veškerý svůj skrytý hněv.", shot: medium, who: marcela, tags: [holding two crying little girls, clenched jaw, cold eyes]}
+
+  o5:
+    title: Šedé sousedství a otevřený konec
+    location: l_dum_5
+    cast: {ollin: ol1n_44, marcela: marcela_44, laurinka: laurinka_9, dvojcata: dvojcata_5}
+    ending: good
+    script:
+      - {see: "Současnost. Žijí ve stejném domě, ale každý v jiném vesmíru. Všude je šedivo.", shot: establishing, tags: [grey house, table with papers, rainy window, no humans], gap: medium, animate: "rain sliding down the window, grey light shifting"}
+      - {see: "Občas se z dálky ozve dětský smích.", shot: medium, who: dvojcata, tags: [laughing, playing, distant]}
+      - {see: "Ol1n stojí u okna.", shot: medium, who: ollin, tags: [standing at the window, from side, looking outside], animate: "rain shadows sliding over his face, a slow calm breath"}
+      - {see: "Marcela sedí u stolu, čte si papíry, obličej stažený do neprostupného krunýře.", shot: medium, who: marcela, tags: [sitting at the table, reading papers, closed expression]}
+      - {say: ollin, text: "Žijeme vedle sebe. Ne spolu. Děti rostou… Jsou to moji malí blázinci, miluju je víc než vlastní život. A ji… ji miluju pořád taky.", tags: [standing at the window, from side, quiet expression]}
+      - {say: marcela, text: "Zase tady blouzníš? Co zase chceš? Proč mi prostě nedáš pokoj?", tags: [reading papers, not looking up, cold expression]}
+      - {say: ollin, text: "Nic nechci, Marcelko. Jen jsem se díval ven.", tags: [turning around, calm, peaceful expression], animate: "a calm slow blink, a faint peaceful smile forming"}
+      - {say: marcela, text: "Tvoje pohledy nesnáším. Vždycky v nich vidím jen výčitku. Myslíš si, že jsi ten nejlepší, že všichni ostatní jsou špatní. Jsi neznámý člověk. Nenávidím to.", tags: [cold expression, frowning, looking at another]}
+      - {see: "Ol1n položí na stůl malé plastové srdíčko, stejné, jaké kdysi vytiskl na 3D tiskárně.", shot: close-up, tags: [(pink plastic heart toy:1.3), on a grey table, papers, no humans]}
+      - {say: ollin, text: "Vím. Chápu to.", tags: [gentle expression, looking at another]}
+      - {say: marcela, text: "Co to zase neseš za hlouposti? Jdi mi s tím už z očí.", tags: [scoffing, looking away, pushing away]}
+      - {say: ollin, text: "Máš pravdu, miláčku. Úplně ve všem. Odpočiň si.", tags: [warm smile, peaceful expression, looking at another], animate: "a warm quiet smile slowly forming, soft breathing"}
+      - {see: "Marcela na něj zmateně a nedůvěřivě pohlédne, čeká obvyklý výbuch.", shot: close-up, who: marcela, tags: [confused, suspicious stare]}
+      - {see: "Do pokoje přicházejí děti a smějí se.", shot: medium, who: laurinka, tags: [running in, laughing, open door]}
+      - {say: laurinka, text: "Tati, pojď ven, venku přestalo pršet!", tags: [excited smile, reaching out a hand, looking up]}
+      - {see: "Dvojčata táhnou Ol1na za ruku ven na deštěm smytou zahradu.", shot: medium, who: dvojcata, tags: [pulling, laughing, running, open door], animate: "the twins tug and bounce, pigtails swinging, laughing"}
+      - {say: ollin, text: "Už jdu, holky moji.", tags: [looking back, gentle smile, standing at the door]}
+      - {see: "Marcela zůstává sama ve své pevnosti.", shot: medium, who: marcela, tags: [sitting alone at the table, grey, small, looking down]}
+      - {see: "Na zemi zůstává osamělé plastové srdíčko.", shot: close-up, tags: [(pink plastic heart toy:1.3), on the floor, grey floorboards, no humans], animate: "faint light glinting on the plastic heart, dust drifting"}
+      - {see: "Venku za okny se mezi mraky pomalu, tiše prodírá první modrý paprsek.", shot: establishing, loc: l_zahrada_5, tags: [rain-washed garden, grey clouds, first ray of blue sky, no humans], animate: "a blue ray of light slowly widening through grey clouds, wet grass glistening"}

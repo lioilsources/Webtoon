@@ -1,0 +1,707 @@
+{
+  "title": "Šedé sousedství a otevřený konec",
+  "title_i18n": {
+    "de": "Graue Nachbarschaft und offenes Ende",
+    "en": "Gray Neighborhood and an Open Ending",
+    "fr": "Le quartier gris et une fin ouverte",
+    "it": "Un quartiere grigio e un finale aperto",
+    "ja": "灰色の近所と、開かれた結末",
+    "ko": "회색 동네와 열린 결말",
+    "pl": "Szare sąsiedztwo i otwarte zakończenie",
+    "pt-BR": "Vizinhança Cinzenta e um Final Aberto",
+    "ru": "Серые окрестности и открытый финал",
+    "uk": "Сіре сусідство та відкритий фінал",
+    "vi": "Khu dân cư xám xịt và một kết thúc mở"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dum_5",
+      "characters": [],
+      "visual_tags": [
+        "grey house",
+        "table with papers",
+        "rainy window",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain sliding down the window, grey light shifting",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "laughing",
+        "playing",
+        "distant"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3802,
+          0.1844,
+          0.75,
+          0.4566
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "standing at the window",
+        "from side",
+        "looking outside"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain shadows sliding over his face, a slow calm breath",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "sitting at the table",
+        "reading papers",
+        "closed expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2924,
+          0.3563,
+          0.7556,
+          0.6518
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing at the window",
+        "from side",
+        "quiet expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_44",
+          "text": "Žijeme vedle sebe. Ne spolu. Děti rostou… Jsou to moji malí blázinci, miluju je víc než vlastní život. A ji… ji miluju pořád taky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir leben nebeneinander. Nicht zusammen. Die Kinder wachsen… Sie sind meine kleinen Verrückten, ich liebe sie mehr als mein eigenes Leben. Und sie… ich liebe sie immer noch.",
+            "en": "We live side-by-side. Not together. The kids are growing up… They’re my little crazies, I love them more than life itself. And her… I still love her too.",
+            "fr": "On vit côte à côte. Pas ensemble. Les enfants grandissent… Ce sont mes petits fous, je les aime plus que ma propre vie. Et elle… je l’aime toujours aussi.",
+            "it": "Viviamo vicini. Non insieme. I bambini crescono… Sono i miei piccoli pazzi, li amo più della mia vita. E lei… la amo ancora tanto.",
+            "ja": "隣り合わせに生きている。一緒にじゃない。子供たちは大きくなる…僕の可愛い子たちだ。自分の命より大事に思ってる。そして彼女…彼女は今も愛してる。",
+            "ko": "우린 서로 옆에 살 뿐이야. 함께 사는 게 아니지. 아이들은 자라… 내 작은 미치광이들이야. 내 목숨보다 더 사랑해. 그리고 그녀… 그녀도 여전히 사랑해.",
+            "pl": "Żyjemy obok siebie. Nie razem. Dzieci rosną… To moje małe szaleńce, kocham je bardziej niż życie. A ją… wciąż ją kocham.",
+            "pt-BR": "A gente mora lado a lado. Não junto. As crianças crescem… São meus pequenos loucos, amo mais que a vida. E ela… ainda amo ela também.",
+            "ru": "Мы живём рядом. Не вместе. Дети растут… Мои маленькие сумасшедшие, люблю их больше жизни. И её… я всё ещё люблю её.",
+            "uk": "Ми живемо поруч. Не разом. Діти ростуть… Вони мої маленькі божевільні, я люблю їх більше за життя. А її… я все ще люблю її.",
+            "vi": "Chúng ta sống cạnh nhau. Không phải cùng nhau. Các con lớn rồi… Chúng là những đứa con điên của tôi, tôi yêu chúng hơn cả mạng sống. Còn cô ấy… tôi vẫn còn yêu cô ấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.485,
+          0.0565,
+          0.9228,
+          0.5868
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "reading papers",
+        "not looking up",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_44",
+          "text": "Zase tady blouzníš? Co zase chceš? Proč mi prostě nedáš pokoj?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wieder am Träumen? Was willst du denn schon wieder? Warum lässt du mich einfach nicht in Ruhe?",
+            "en": "You’re rambling again? What do you want now? Why can’t you just leave me alone?",
+            "fr": "Tu divagues encore ? Qu'est-ce que tu veux ? Pourquoi tu ne me laisses pas tranquille ?",
+            "it": "Ancora qui a delirare? Che vuoi di nuovo? Perché non mi lasci in pace?",
+            "ja": "また、何を言ってるの？一体、何が欲しいの？もう放っておいてくれない？",
+            "ko": "또 헛소리하는 거야? 또 뭘 원하는 건데? 왜 날 그냥 내버려두지 못해?",
+            "pl": "Znowu bredzisz? Czego chcesz? Dlaczego po prostu nie dasz mi spokoju?",
+            "pt-BR": "De novo com isso? O que você quer agora? Por que não me deixa em paz?",
+            "ru": "Опять бредишь? Чего тебе надо? Почему ты просто не оставишь меня в покое?",
+            "uk": "Знову мариш? Що тобі треба? Чому ти просто не даєш мені спокою?",
+            "vi": "Anh lại lảm nhảm nữa hả? Anh muốn gì? Sao anh không để tôi yên?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2362,
+          0.218,
+          0.6793,
+          0.5218
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "turning around",
+        "calm",
+        "peaceful expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_44",
+          "text": "Nic nechci, Marcelko. Jen jsem se díval ven.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nichts, Marcela. Ich habe nur aus dem Fenster geschaut.",
+            "en": "I don’t want anything, Marcela. Just looking out the window.",
+            "fr": "Je ne veux rien, Marcela. Je regardais juste dehors.",
+            "it": "Non voglio niente, Marcelka. Stavo solo guardando fuori.",
+            "ja": "何も、マルセラ。ただ外を見てただけだ。",
+            "ko": "아무것도 없어, 마르첼라. 그냥 창밖을 보고 있었어.",
+            "pl": "Nic nie chcę, Marcelko. Tylko patrzyłem za okno.",
+            "pt-BR": "Não quero nada, Marcela. Só estava olhando pra rua.",
+            "ru": "Мне ничего не нужно, Марсела. Просто смотрел в окно.",
+            "uk": "Я нічого не хочу, Марцелько. Просто дивився у вікно.",
+            "vi": "Tôi không muốn gì cả, Marcelko. Tôi chỉ nhìn ra ngoài thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a calm slow blink, a faint peaceful smile forming",
+      "faces": [
+        [
+          0.1383,
+          0.2119,
+          0.8725,
+          0.7052
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "frowning",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_44",
+          "text": "Tvoje pohledy nesnáším. Vždycky v nich vidím jen výčitku. Myslíš si, že jsi ten nejlepší, že všichni ostatní jsou špatní. Jsi neznámý člověk.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich kann deine Blicke nicht ertragen. Ich sehe darin immer nur Vorwürfe. Du denkst, du bist der Beste, alle anderen sind schlecht. Du bist ein Fremder.",
+            "en": "I hate your gaze. I always see accusations in it. You think you’re the best, that everyone else is wrong. You’re a stranger.",
+            "fr": "Je déteste tes regards. Je n'y vois que des reproches. Tu te crois supérieur, que tous les autres sont mauvais. Tu es un étranger.",
+            "it": "Odio i tuoi sguardi. Ci vedo sempre solo rimprovero. Credi di essere il migliore, che tutti gli altri siano sbagliati. Sei uno sconosciuto.",
+            "ja": "あなたの視線が嫌い。いつも非難しか見えない。自分が一番だと思って、他の皆が悪いと思ってるんでしょう？あなたは他人よ。",
+            "ko": "당신 시선이 싫어. 항상 비난만 보여. 당신이 최고고, 다른 모든 사람은 잘못됐다고 생각하는 거야. 당신은 낯선 사람이야.",
+            "pl": "Nienawidzę twojego spojrzenia. Zawsze widzę w nim wyrzuty. Myślisz, że jesteś najlepszy, że wszyscy inni są źli. Jesteś obcym człowiekiem.",
+            "pt-BR": "Eu odeio seus olhares. Sempre vejo só recriminação neles. Se acha o melhor, que todo mundo é ruim. Você é um estranho.",
+            "ru": "Ненавижу твои взгляды. В них всегда вижу только упрёк. Ты думаешь, что ты лучше всех, что все остальные плохие. Ты чужой.",
+            "uk": "Я терпіти не можу твої погляди. В них я завжди бачу лише докір. Ти думаєш, що ти найкращий, що всі інші – погані. Ти мені зовсім не знайомий.",
+            "vi": "Tôi ghét ánh mắt của anh. Tôi luôn thấy sự trách móc trong đó. Anh nghĩ anh là người tốt nhất, rằng tất cả mọi người khác đều tệ. Anh là một người xa lạ."
+          }
+        },
+        {
+          "speaker_id": "marcela_44",
+          "text": "Nenávidím to.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hasse das.",
+            "en": "I hate it.",
+            "fr": "Je déteste ça.",
+            "it": "Lo odio.",
+            "ja": "大嫌い。",
+            "ko": "이게 싫어.",
+            "pl": "Nienawidzę tego.",
+            "pt-BR": "Eu odeio isso.",
+            "ru": "Я ненавижу это.",
+            "uk": "Я ненавиджу це.",
+            "vi": "Tôi ghét điều đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3709,
+          0.4009,
+          0.6919,
+          0.6266
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [],
+      "visual_tags": [
+        "(pink plastic heart toy:1.3)",
+        "on a grey table",
+        "papers",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "gentle expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_44",
+          "text": "Vím. Chápu to.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß. Ich verstehe das.",
+            "en": "I know. I understand.",
+            "fr": "Je sais. Je comprends.",
+            "it": "Lo so. Capisco.",
+            "ja": "わかってる。わかってるよ。",
+            "ko": "알아. 이해해.",
+            "pl": "Wiem. Rozumiem.",
+            "pt-BR": "Eu sei. Entendo.",
+            "ru": "Я знаю. Я понимаю.",
+            "uk": "Я знаю. Я розумію.",
+            "vi": "Tôi biết. Tôi hiểu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2622,
+          0.1278,
+          0.8193,
+          0.5108
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "scoffing",
+        "looking away",
+        "pushing away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_44",
+          "text": "Co to zase neseš za hlouposti? Jdi mi s tím už z očí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was für einen Unsinn redest du denn jetzt? Verschwinde mir aus den Augen!",
+            "en": "What nonsense are you spouting now? Get out of my sight!",
+            "fr": "Quelles bêtises tu racontes encore ? Sors-moi ça de la vue.",
+            "it": "Che sciocchezze porti ancora? Sparisci dalla mia vista.",
+            "ja": "また、何を馬鹿なことを言ってるの？もう私の前から消えて！",
+            "ko": "또 무슨 헛소리를 하는 거야? 내 앞에서 당장 꺼져.",
+            "pl": "Co za głupoty znowu niesiesz? Zejdź mi z oczu.",
+            "pt-BR": "Que besteira é essa agora? Sai da minha frente com isso.",
+            "ru": "Что за глупости ты несёшь? Уйди с моих глаз!",
+            "uk": "Що за дурниці ти несеш? Зникни з моїх очей.",
+            "vi": "Anh nói những điều vô nghĩa gì vậy? Biến khỏi mắt tôi đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4004,
+          0.2832,
+          0.6836,
+          0.5194
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "warm smile",
+        "peaceful expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_44",
+          "text": "Máš pravdu, miláčku. Úplně ve všem. Odpočiň si.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast Recht, Liebling. In allem. Ruh dich aus.",
+            "en": "You’re right, darling. In everything. Get some rest.",
+            "fr": "Tu as raison, ma chérie. Sur tout. Repose-toi.",
+            "it": "Hai ragione, tesoro. In tutto. Riposati.",
+            "ja": "君が正しいよ、愛しい人。全部。ゆっくり休んで。",
+            "ko": "맞아, 자기야. 전부 다. 좀 쉬어.",
+            "pl": "Masz rację, kochanie. We wszystkim. Odpocznij.",
+            "pt-BR": "Você tem razão, querida. Em tudo. Descansa.",
+            "ru": "Ты права, милая. Во всём. Отдохни.",
+            "uk": "Ти права, кохана. У всьому. Відпочинь.",
+            "vi": "Anh nói đúng, em yêu. Hoàn toàn đúng về mọi thứ. Nghỉ ngơi đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a warm quiet smile slowly forming, soft breathing",
+      "faces": [
+        [
+          0.1485,
+          0.0385,
+          0.7476,
+          0.6245
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "confused",
+        "suspicious stare"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.215,
+          0.1605,
+          0.9012,
+          0.6167
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "laurinka_9"
+        }
+      ],
+      "visual_tags": [
+        "running in",
+        "laughing",
+        "open door"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "laurinka_9"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "excited smile",
+        "reaching out a hand",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "laurinka_9",
+          "text": "Tati, pojď ven, venku přestalo pršet!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, komm raus, draußen hat es aufgehört zu regnen!",
+            "en": "Daddy, come outside, it stopped raining!",
+            "fr": "Papa, viens dehors, la pluie a arrêté !",
+            "it": "Papà, vieni fuori, ha smesso di piovere!",
+            "ja": "パパ、外で遊ぼ！もう雨止んだよ！",
+            "ko": "아빠, 나가요! 비 그쳤어요!",
+            "pl": "Tato, chodź na dwór, przestało padać!",
+            "pt-BR": "Pai, vem cá, parou de chover lá fora!",
+            "ru": "Папа, пойдем на улицу, дождь перестал!",
+            "uk": "Тату, ходімо на вулицю, дощ перестав!",
+            "vi": "Ba ơi, ra ngoài chơi đi, mưa đã tạnh rồi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3873,
+          0.1879,
+          0.9643,
+          0.5549
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "pulling",
+        "laughing",
+        "running",
+        "open door"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the twins tug and bounce, pigtails swinging, laughing",
+      "faces": [
+        [
+          0.3618,
+          0.1255,
+          0.7186,
+          0.3684
+        ],
+        [
+          0.4357,
+          0.3416,
+          0.6279,
+          0.4751
+        ],
+        [
+          0.0689,
+          0.3402,
+          0.2455,
+          0.4555
+        ],
+        [
+          0.7675,
+          0.2907,
+          0.9327,
+          0.4036
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "ol1n_44"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking back",
+        "gentle smile",
+        "standing at the door"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_44",
+          "text": "Už jdu, holky moji.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich komme schon, meine Mädchen.",
+            "en": "Coming, my girls.",
+            "fr": "J'arrive, mes filles.",
+            "it": "Arrivo, bambine mie.",
+            "ja": "行くよ、僕の可愛い娘たち。",
+            "ko": "알았어, 내 딸들아.",
+            "pl": "Już idę, moje dziewczynki.",
+            "pt-BR": "Já vou, minhas meninas.",
+            "ru": "Уже иду, мои девочки.",
+            "uk": "Уже йду, мої дівчатка.",
+            "vi": "Ba ra ngay đây, các con gái của ba."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2093,
+          0.202,
+          0.8837,
+          0.6596
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dum_5",
+      "characters": [
+        {
+          "id": "marcela_44"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at the table",
+        "grey",
+        "small",
+        "looking down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3128,
+          0.3427,
+          0.6086,
+          0.5768
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dum_5",
+      "characters": [],
+      "visual_tags": [
+        "(pink plastic heart toy:1.3)",
+        "on the floor",
+        "grey floorboards",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "faint light glinting on the plastic heart, dust drifting",
+      "faces": []
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_5",
+      "characters": [],
+      "visual_tags": [
+        "rain-washed garden",
+        "grey clouds",
+        "first ray of blue sky",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "a blue ray of light slowly widening through grey clouds, wet grass glistening",
+      "faces": []
+    }
+  ]
+}

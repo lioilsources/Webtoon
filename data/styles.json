@@ -1295,6 +1295,100 @@
       "scheduler": "karras",
       "steps": 30,
       "cfg": 5.0
+    },
+    "akvarel_louka": {
+      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "prediction": "eps",
+      "artist_tags": [
+        "sandro botticelli (style)"
+      ],
+      "aesthetic_tags": [
+        "(chibi:1.4)",
+        "super deformed",
+        "big head",
+        "small body",
+        "(watercolor (medium):1.3)",
+        "traditional media",
+        "renaissance",
+        "flowing lines",
+        "soft translucent washes",
+        "paper texture",
+        "wet-on-wet soft edges"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "3d",
+        "photorealistic",
+        "cel shading",
+        "thick lineart"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": []
+    },
+    "akvarel_louka_hassaku": {
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
+      "prediction": "eps",
+      "artist_tags": [
+        "sandro botticelli (style)"
+      ],
+      "aesthetic_tags": [
+        "(chibi:1.4)",
+        "super deformed",
+        "big head",
+        "small body",
+        "(watercolor (medium):1.3)",
+        "traditional media",
+        "renaissance",
+        "flowing lines",
+        "soft translucent washes",
+        "paper texture",
+        "wet-on-wet soft edges"
+      ],
+      "quality_pos": [
+        "masterpiece",
+        "best quality",
+        "absurdres",
+        "highres"
+      ],
+      "quality_neg": [
+        "worst quality",
+        "low quality",
+        "normal quality",
+        "bad anatomy",
+        "bad hands",
+        "extra fingers",
+        "missing fingers",
+        "jpeg artifacts",
+        "blurry",
+        "lowres",
+        "3d",
+        "photorealistic",
+        "cel shading",
+        "thick lineart"
+      ],
+      "sampler": "euler_ancestral",
+      "scheduler": "normal",
+      "steps": 28,
+      "cfg": 5.5,
+      "loras": []
     }
   },
   "always_negative": [

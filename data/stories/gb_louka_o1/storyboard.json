@@ -1,0 +1,336 @@
+{
+  "title": "První nádech na louce",
+  "title_i18n": {
+    "de": "Erster Atemzug auf der Wiese",
+    "en": "First Breath in the Meadow",
+    "fr": "Premier souffle dans la prairie",
+    "it": "Il primo respiro nel prato",
+    "ja": "草原での最初の息吹",
+    "ko": "들판에서의 첫 숨결",
+    "pl": "Pierwszy oddech na łące",
+    "pt-BR": "Primeiro suspiro no campo",
+    "ru": "Первый вдох на лугу",
+    "uk": "Перший подих на лузі",
+    "vi": "Hơi thở đầu tiên trên đồng cỏ"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_louka_1",
+      "characters": [],
+      "visual_tags": [
+        "flower meadow",
+        "petals in the air",
+        "soft breeze",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "petals drifting in the breeze, flowers swaying gently, soft light shimmering",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "ol1n_20"
+        }
+      ],
+      "visual_tags": [
+        "standing in the flower meadow",
+        "bright smile",
+        "shining eyes",
+        "looking at another"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "hair and shirt moving in the breeze, petals drifting past, slow happy blink",
+      "faces": [
+        [
+          0.5007,
+          0.3016,
+          0.7588,
+          0.4783
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "ol1n_20"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "eyes closed",
+        "smile",
+        "standing in the flower meadow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_20",
+          "text": "Cítíš to ticho? Nikde žádné sirény, žádné vyčítavé pohledy, žádné věčné soudy. Jsme pryč.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Spürst du die Stille? Keine Sirenen, keine vorwurfsvollen Blicke, keine ewigen Urteile. Wir sind weg.",
+            "en": "Feel that silence? No sirens, no judging stares, no endless verdicts. We're gone.",
+            "fr": "Tu sens ce silence ? Plus de sirènes, plus de regards accusateurs, plus de jugements éternels. On est parties.",
+            "it": "Senti questo silenzio? Nessuna sirena, nessun sguardo accusatorio, nessun giudizio eterno. Siamo spariti.",
+            "ja": "この静寂、感じる？ サイレンも、非難の視線も、終わりのない審判も、どこにもない。私たちはここから逃げ出したんだ。",
+            "ko": "이 고요함 느껴져? 사이렌 소리도, 질책하는 눈빛도, 영원한 심판도 없어. 우린 이제 자유야.",
+            "pl": "Czujesz tę ciszę? Żadnych syren, żadnych wyrzutów, żadnych wiecznych osądów. Zniknęliśmy.",
+            "pt-BR": "Sente esse silêncio? Sem sirenes, sem olhares acusadores, sem julgamentos eternos. A gente sumiu.",
+            "ru": "Чувствуешь эту тишину? Никаких сирен, никаких укоризненных взглядов, никаких вечных судов. Мы ушли.",
+            "uk": "Відчуваєш цю тишу? Ні сирен, ні докоряючих поглядів, ні вічного засудження. Ми втекли.",
+            "vi": "Cậu có nghe thấy sự tĩnh lặng này không? Không còi báo động, không ánh mắt trách móc, không phán xét nào cả. Chúng ta đã đi rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2577,
+          0.4967,
+          0.4975,
+          0.6292
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "marcela_20"
+        }
+      ],
+      "visual_tags": [
+        "eyes closed",
+        "exhaling",
+        "relieved",
+        "standing in the flower meadow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3326,
+          0.2189,
+          0.6163,
+          0.5622
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "marcela_20"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "gentle smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_20",
+          "text": "Úplně pryč. Jejich hlasy sem nedosáhnou. Jsou miliony kilometrů daleko. Jsme jenom my dva.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Völlig weg. Ihre Stimmen erreichen uns nicht. Sie sind Millionen Kilometer entfernt. Wir sind nur wir beide.",
+            "en": "Completely gone. Their voices can't reach us here. They're millions of miles away. It's just you and me.",
+            "fr": "Complètement parties. Leurs voix ne nous atteindront pas. Elles sont à des millions de kilomètres. On n'est que toutes les deux.",
+            "it": "Completamente spariti. Le loro voci non ci raggiungeranno. Sono a milioni di chilometri di distanza. Siamo solo io e te.",
+            "ja": "完全に。彼らの声はここには届かない。何百万キロも離れてる。私たち二人だけ。",
+            "ko": "완전히 자유로워. 그들의 목소리는 여기까지 못 들려. 수백만 킬로미터나 떨어져 있잖아. 이제 우리 둘뿐이야.",
+            "pl": "Całkiem zniknęliśmy. Ich głosy tu nie dosięgną. Są miliony kilometrów stąd. Jesteśmy tylko my dwoje.",
+            "pt-BR": "Sumimos de vez. As vozes deles não chegam aqui. Estão a milhões de quilômetros. Somos só nós dois.",
+            "ru": "Полностью ушли. Их голоса сюда не дотянутся. Они за миллионы километров. Только мы вдвоём.",
+            "uk": "Повністю втекли. Їхні голоси сюди не долетять. Вони за мільйони кілометрів. Ми вдвох.",
+            "vi": "Hoàn toàn biến mất. Giọng họ không thể tới đây được. Chúng ở cách xa hàng triệu dặm. Chỉ có hai ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4091,
+          0.1644,
+          0.8524,
+          0.4595
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "ol1n_20"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "hopeful expression",
+        "open arms",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_20",
+          "text": "Budeme mít jiný svět. Uděláme si ho čistý. Všechno bude měkké, modré a růžové. Nic nás už svázat nemůže.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir werden eine andere Welt haben. Wir machen sie sauber. Alles wird weich, blau und rosa. Nichts kann uns mehr fesseln.",
+            "en": "We'll have a different world. We'll make it clean. Everything will be soft, blue, and pink. Nothing can bind us anymore.",
+            "fr": "On aura un autre monde. On le fera tout propre. Tout sera doux, bleu et rose. Plus rien ne pourra nous retenir.",
+            "it": "Avremo un mondo diverso. Lo renderemo puro. Tutto sarà morbido, blu e rosa. Niente potrà più legarci.",
+            "ja": "新しい世界を創ろう。綺麗にしてやる。全てが柔らかくて、青くて、ピンク色になる。もう誰も私たちを縛れない。",
+            "ko": "우린 새로운 세상을 만들 거야. 깨끗하게. 모든 게 부드럽고, 파랗고, 분홍색일 거야. 이제 아무것도 우리를 묶을 수 없어.",
+            "pl": "Stworzymy inny świat. Zrobimy go czystym. Wszystko będzie miękkie, niebieskie i różowe. Nic nas już nie zwiąże.",
+            "pt-BR": "A gente vai ter outro mundo. A gente vai fazer ele limpo. Tudo vai ser macio, azul e rosa. Nada mais pode nos prender.",
+            "ru": "У нас будет другой мир. Мы сами его создадим. Всё будет мягким, голубым и розовым. Ничто нас больше не свяжет.",
+            "uk": "Ми створимо інший світ. Зробимо його чистим. Все буде м’яким, блакитним і рожевим. Ніщо нас більше не зв’яже.",
+            "vi": "Chúng ta sẽ có một thế giới khác. Chúng ta sẽ làm nó trở nên tốt đẹp. Mọi thứ sẽ mềm mại, xanh và hồng. Không gì có thể trói buộc chúng ta nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3437,
+          0.2947,
+          0.4584,
+          0.3643
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "marcela_20"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_20",
+          "text": "Nikdy nedopustím, abychom byli jako oni. Slib mi to.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich lasse niemals zu, dass wir wie sie werden. Versprich es mir.",
+            "en": "I'll never let us become like them. Promise me.",
+            "fr": "Je ne laisserai jamais qu'on devienne comme eux. Promets-moi.",
+            "it": "Non permetterò mai che diventiamo come loro. Promettimelo.",
+            "ja": "絶対に、私たちを彼らのようにさせないで。約束して。",
+            "ko": "절대 그들처럼 되지 않을 거야. 약속해 줘.",
+            "pl": "Nigdy nie dopuszczę, żebyśmy byli tacy jak oni. Obiecaj mi to.",
+            "pt-BR": "Nunca vou deixar a gente virar igual a eles. Promete pra mim.",
+            "ru": "Я никогда не допущу, чтобы мы стали такими же, как они. Поклянись мне.",
+            "uk": "Я ніколи не дозволю нам стати такими, як вони. Поклянись мені в цьому.",
+            "vi": "Tớ sẽ không để chúng ta trở thành như họ đâu. Hứa với tớ đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3991,
+          0.1427,
+          0.7538,
+          0.3766
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_louka_1",
+      "characters": [
+        {
+          "id": "ol1n_20"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "gentle smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_20",
+          "text": "Slibuju. Jsme svobodní.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Versprochen. Wir sind frei.",
+            "en": "I promise. We're free.",
+            "fr": "Je te le promets. On est libres.",
+            "it": "Lo prometto. Siamo liberi.",
+            "ja": "約束する。私たちは自由だ。",
+            "ko": "약속해. 우린 자유야.",
+            "pl": "Obiecuję. Jesteśmy wolni.",
+            "pt-BR": "Prometo. A gente é livre.",
+            "ru": "Клянусь. Мы свободны.",
+            "uk": "Клянусь. Ми вільні.",
+            "vi": "Tớ hứa. Chúng ta tự do rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a warm smile, slow blink, petals drifting past his face",
+      "faces": [
+        [
+          0.2033,
+          0.1997,
+          0.9333,
+          0.7184
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_louka_1",
+      "characters": [],
+      "visual_tags": [
+        "swirling petals",
+        "pastel rainbow light over the meadow",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "petals swirling in a slow spiral, pastel light shimmering over the meadow",
+      "faces": []
+    }
+  ]
+}

@@ -23,7 +23,7 @@ limits:
 age_by_kind:
   child: {regex: '\baged ([6-9]|1[0-3])\b', range: '6 <= N <= 13'}
   adult: {regex: '\baged (2[3-9]|[3-9]\d)\b', range: 'N >= 23'}
-  any: {regex: '\baged \d+\b', range: 'any N'}   # profile noir (photo_any_age)
+  any: {regex: '\baged \d+\b', range: 'any N'}   # profiles noir, akvarel (photo_any_age)
 
 regex:
   # Code-side SFW fence: these never appear in tags, outfits or photo sentences, whatever the model says.
@@ -133,7 +133,7 @@ checks:
         if: {not: {search: {regex: $age_by_kind.adult.regex, in: $c.photo}}}
         message: "character {c[id]}: photo must state 'aged N' with N >= 23"
       - id: photo_any_age
-        profiles: [noir]   # a child in the early acts: any age, but always stated
+        profiles: [noir, akvarel]   # children in the story: any age, but always stated
         if: {not: {search: {regex: $age_by_kind.any.regex, in: $c.photo}}}
         message: "character {c[id]}: photo must state 'aged N'"
       - id: kids_photo_age

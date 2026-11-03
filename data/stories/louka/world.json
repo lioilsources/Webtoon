@@ -1,0 +1,283 @@
+{
+ "id": "w_louka",
+ "title": "Rozkvetlá louka, která zšedla",
+ "synopsis": "Dvacet let jedné rodiny: rozkvetlá louka, ze které zbude šeď, a otec, který se nakonec vydá za dětmi ven.",
+ "tone": "něžný, smutný, lidský",
+ "audience": "adult",
+ "language": "cs",
+ "style_id": "akvarel_louka",
+ "profile": "akvarel",
+ "bible": {
+  "rules": [
+   "SFW. Žádná romantika v obraze: Ol1n a Marcela nikdy spolu v jednom obraze.",
+   "Děti jen oblečené, nikdo jim v obraze neubližuje."
+  ],
+  "factions": []
+ },
+ "canon": {
+  "nodes": [],
+  "constraints": [
+   "Ol1n přestane bojovat a odejde za dětmi ven; Marcela zůstane ve své pevnosti."
+  ]
+ },
+ "permissions": {
+  "allowed_locations": [
+   "l_louka_1",
+   "l_dum_2",
+   "l_pokoj_3",
+   "l_dvere_4",
+   "l_dum_5",
+   "l_zahrada_5"
+  ]
+ },
+ "characters": [
+  {
+   "id": "ol1n_20",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a young Czech man aged 20 with messy dark brown hair and bright warm brown eyes",
+   "base": "chibi, adult, young man, (short dark brown hair:1.3), straight hair, brown eyes",
+   "outfits": {
+    "default": "light blue linen shirt, long sleeves, beige trousers"
+   },
+   "photo": "a young Czech man aged 20 with messy dark brown hair and bright warm brown eyes",
+   "tag_prompt": "chibi, adult, young man, (short dark brown hair:1.3), straight hair, brown eyes, light blue linen shirt, long sleeves, beige trousers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_30",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a tired Czech man aged 30 with short dark brown hair, light stubble and tired brown eyes",
+   "base": "chibi, adult man, (short dark brown hair:1.3), (stubble:1.2), brown eyes, tired eyes",
+   "outfits": {
+    "default": "faded blue shirt, grey cardigan"
+   },
+   "photo": "a tired Czech man aged 30 with short dark brown hair, light stubble and tired brown eyes",
+   "tag_prompt": "chibi, adult man, (short dark brown hair:1.3), (stubble:1.2), brown eyes, tired eyes, faded blue shirt, grey cardigan",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_36",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a worn Czech man aged 36 with dark brown hair, a short beard and sad brown eyes",
+   "base": "chibi, adult man, (short dark brown hair:1.3), (short beard:1.2), brown eyes",
+   "outfits": {
+    "default": "dark grey coat, long scarf"
+   },
+   "photo": "a worn Czech man aged 36 with dark brown hair, a short beard and sad brown eyes",
+   "tag_prompt": "chibi, adult man, (short dark brown hair:1.3), (short beard:1.2), brown eyes, dark grey coat, long scarf",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_44",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+   "base": "chibi, adult man, (short dark brown hair with grey streaks:1.3), (short beard:1.2), brown eyes",
+   "outfits": {
+    "default": "grey knitted sweater"
+   },
+   "photo": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+   "tag_prompt": "chibi, adult man, (short dark brown hair with grey streaks:1.3), (short beard:1.2), brown eyes, grey knitted sweater",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "marcela_20",
+   "name": "Marcela",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a young Czech woman aged 20 with long wavy auburn hair and shining green eyes",
+   "base": "chibi, young woman, (flat chest:1.2), long wavy auburn hair, green eyes",
+   "outfits": {
+    "default": "loose flowing white dress with small flowers, long sleeves, high neckline"
+   },
+   "photo": "a young Czech woman aged 20 with long wavy auburn hair and shining green eyes",
+   "tag_prompt": "chibi, young woman, (flat chest:1.2), long wavy auburn hair, green eyes, loose flowing white dress with small flowers, long sleeves, high neckline",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "marcela_30",
+   "name": "Marcela",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a tense Czech woman aged 30 with auburn hair in a tight bun and cold green eyes",
+   "base": "chibi, young woman, (flat chest:1.2), auburn hair, tight hair bun, green eyes",
+   "outfits": {
+    "default": "oversized loose grey knitted cardigan, buttoned white blouse, long dark trousers"
+   },
+   "photo": "a tense Czech woman aged 30 with auburn hair in a tight bun and cold green eyes",
+   "tag_prompt": "chibi, young woman, (flat chest:1.2), auburn hair, tight hair bun, green eyes, oversized loose grey knitted cardigan, buttoned white blouse, long dark trousers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "marcela_36",
+   "name": "Marcela",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a hardened Czech woman aged 36 with short auburn hair and icy green eyes",
+   "base": "chibi, woman, (flat chest:1.2), (short auburn hair:1.4), (red-brown hair:1.2), green eyes",
+   "outfits": {
+    "default": "loose dark high-collared coat"
+   },
+   "photo": "a hardened Czech woman aged 36 with short auburn hair and icy green eyes",
+   "tag_prompt": "chibi, woman, (flat chest:1.2), (short auburn hair:1.4), (red-brown hair:1.2), green eyes, loose dark high-collared coat",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "marcela_44",
+   "name": "Marcela",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a closed-off Czech woman aged 44 with short auburn hair and narrow green eyes",
+   "base": "chibi, woman, (flat chest:1.2), (short auburn hair:1.3), green eyes",
+   "outfits": {
+    "default": "oversized loose grey turtleneck sweater, reading glasses"
+   },
+   "photo": "a closed-off Czech woman aged 44 with short auburn hair and narrow green eyes",
+   "tag_prompt": "chibi, woman, (flat chest:1.2), (short auburn hair:1.3), green eyes, oversized loose grey turtleneck sweater, reading glasses",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "laurinka_0",
+   "name": "Laurinka",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "baby",
+   "human": true,
+   "description": "a tiny Czech baby girl aged 0 with a few wisps of light hair and big round eyes",
+   "base": "chibi, baby, infant, wisps of light hair, big round eyes",
+   "outfits": {
+    "default": "wrapped in a soft pink blanket"
+   },
+   "photo": "a tiny Czech baby girl aged 0 with a few wisps of light hair and big round eyes",
+   "tag_prompt": "chibi, baby, infant, wisps of light hair, big round eyes, wrapped in a soft pink blanket",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "laurinka_7",
+   "name": "Laurinka",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a quiet Czech girl aged 7 with a light brown braid and big attentive brown eyes",
+   "base": "chibi, child, little girl, light brown hair, single braid, brown eyes",
+   "outfits": {
+    "default": "lavender long-sleeved sweater, long trousers"
+   },
+   "photo": "a quiet Czech girl aged 7 with a light brown braid and big attentive brown eyes",
+   "tag_prompt": "chibi, child, little girl, light brown hair, single braid, brown eyes, lavender long-sleeved sweater, long trousers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "laurinka_9",
+   "name": "Laurinka",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "base": "chibi, child, girl, light brown hair, long braid, brown eyes",
+   "outfits": {
+    "default": "lavender sweater, denim overalls, long pants, yellow rubber boots"
+   },
+   "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "tag_prompt": "chibi, child, girl, light brown hair, long braid, brown eyes, lavender sweater, denim overalls, long pants, yellow rubber boots",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dvojcata_5",
+   "name": "Dvojčata",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "2girls",
+   "human": true,
+   "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "base": "chibi, child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, laughing",
+   "outfits": {
+    "default": "matching pink and blue long-sleeved sweaters, long overalls, long pants, rubber boots"
+   },
+   "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "tag_prompt": "chibi, child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, laughing, matching pink and blue long-sleeved sweaters, long overalls, long pants, rubber boots",
+   "identity_level": "prompt",
+   "reference_images": []
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_louka_1",
+   "name": "Louka – 1. obraz",
+   "description": "Rozkvetlá louka plná květin jako na Botticelliho Primaveře.",
+   "tag_prompt": "vivid clear watercolor, (sky blue, rose pink and violet:1.2), luminous colors, sunlight, outdoors, blooming flower meadow, field of flowers, cornflowers, roses, violets, botticelli primavera meadow, soft breeze, petals in the air",
+   "mood": ""
+  },
+  {
+   "id": "l_dum_2",
+   "name": "Dům – 2. obraz",
+   "description": "Pokoj s krabicemi, kufry a skicáři; modrá a růžová jen jako matné šmouhy na zdech.",
+   "tag_prompt": "faded pastel watercolor, washed-out blue and pink smudges, pale light, indoors, living room, cardboard boxes, suitcases, sketchbooks, faded blue and pink smudges on the walls, dried flowers in a vase",
+   "mood": ""
+  },
+  {
+   "id": "l_pokoj_3",
+   "name": "Pokoj – 3. obraz",
+   "description": "Dětský pokoj zalitý tísnivou růžovou.",
+   "tag_prompt": "(sickly heavy pink wash:1.2), oppressive pink, muddy shadows, indoors, nursery, pink baby blanket, pink toys, crib, wilting pink flowers, night",
+   "mood": ""
+  },
+  {
+   "id": "l_dvere_4",
+   "name": "Dveře – 4. obraz",
+   "description": "Téměř tmavá místnost, studený kužel bílého světla u dveří.",
+   "tag_prompt": "almost colorless watercolor, cold white light, dark grey washes, indoors, dark room, front door, cold spotlight cone from above, suitcase by the door, empty walls",
+   "mood": ""
+  },
+  {
+   "id": "l_dum_5",
+   "name": "Dům – 5. obraz",
+   "description": "Šedivý dům, stůl s papíry, okno do zahrady.",
+   "tag_prompt": "(diffused grey watercolor wash:1.3), desaturated, monochrome grey, cold industrial grey, indoors, grey kitchen, table with papers, window, rain on the window, grey meadow outside",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_5",
+   "name": "Zahrada – 5. obraz",
+   "description": "Deštěm smytá zahrada; mezi mraky první modrý paprsek.",
+   "tag_prompt": "(diffused grey watercolor wash:1.3), desaturated, monochrome grey, cold industrial grey, outdoors, rain-washed garden, wet grass, grey clouds, (first ray of blue sky breaking through the clouds:1.2)",
+   "mood": ""
+  }
+ ]
+}

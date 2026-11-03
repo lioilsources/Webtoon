@@ -1,0 +1,499 @@
+{
+  "title": "Pád do tmy a dva roky samoty",
+  "title_i18n": {
+    "de": "Sturz ins Dunkel und zwei Jahre Einsamkeit",
+    "en": "Falling into Darkness and Two Years of Solitude",
+    "fr": "Chute dans l'obscurité et deux ans de solitude",
+    "it": "Nella tenebra e due anni di solitudine",
+    "ja": "暗闇への落下と二年の孤独",
+    "ko": "어둠 속으로의 추락, 그리고 2년간의 고독",
+    "pl": "Spadek w ciemność i dwa lata samotności",
+    "pt-BR": "Queda na escuridão e dois anos de solidão",
+    "ru": "Падение во тьму и два года одиночества",
+    "uk": "Падіння в темряву та два роки самотності",
+    "vi": "Rơi vào bóng tối và hai năm cô đơn"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dvere_4",
+      "characters": [],
+      "visual_tags": [
+        "dark room",
+        "front door",
+        "spotlight",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "ol1n_36"
+        }
+      ],
+      "visual_tags": [
+        "standing by the door",
+        "holding a suitcase",
+        "spotlight",
+        "dark room"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "cold light flickering faintly, dust drifting in the light cone",
+      "faces": [
+        [
+          0.3863,
+          0.4221,
+          0.585,
+          0.7094
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "running",
+        "laughing",
+        "playing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the twins run in a small circle, pigtails bouncing",
+      "faces": [
+        [
+          0.0595,
+          0.076,
+          0.5608,
+          0.3964
+        ],
+        [
+          0.464,
+          0.6776,
+          0.939,
+          0.9966
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "laurinka_7"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "watching quietly",
+        "holding a doll"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2939,
+          0.1686,
+          0.7688,
+          0.48
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "marcela_36"
+        }
+      ],
+      "visual_tags": [
+        "hard expression",
+        "crossed arms",
+        "standing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.342,
+          0.1982,
+          0.713,
+          0.4405
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "shouting",
+        "reaching out",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojcata_5",
+          "text": "Tati! Kam jdeš? Kde budeš spát?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa! Wohin gehst du? Wo wirst du schlafen?",
+            "en": "Dad! Where are you going? Where will you sleep?",
+            "fr": "Papa ! Où vas-tu ? Où vas-tu dormir ?",
+            "it": "Papà! Dove vai? Dove dormirai?",
+            "ja": "パパ！どこ行くの？どこで寝るの？",
+            "ko": "아빠! 어디 가? 어디서 잘 거야?",
+            "pl": "Tato! Gdzie idziesz? Gdzie będziesz spał?",
+            "pt-BR": "Pai! Onde você vai? Onde vai dormir?",
+            "ru": "Папа! Куда ты идёшь? Где ты будешь спать?",
+            "uk": "Тату! Куди ти йдеш? Де ти спатимеш?",
+            "vi": "Bố ơi! Bố đi đâu? Bố sẽ ngủ ở đâu?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2098,
+          0.221,
+          0.8236,
+          0.6175
+        ],
+        [
+          0.4314,
+          0.6647,
+          0.8236,
+          0.9054
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "ol1n_36"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "kneeling",
+        "reaching out a hand",
+        "sad smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_36",
+          "text": "Tatínek musí na chvíli odejít, holčičky moje. Musím si srovnat hlavu a postavit pevnost, abych vás mohl chránit. Brzy se uvidíme.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa muss kurz weg, meine Mädchen. Ich muss klar denken und eine Festung bauen, um euch zu beschützen. Wir sehen uns bald.",
+            "en": "Daddy has to leave for a bit, my girls. I need to clear my head and build a fortress to protect you. I'll see you soon.",
+            "fr": "Papa doit s'absenter un instant, mes petites. Je dois me changer les idées et me préparer, pour pouvoir vous protéger. À bientôt.",
+            "it": "Papà deve andare via un attimo, bambine. Devo schiarirmi le idee e costruire una fortezza per proteggervi. Ci vediamo presto.",
+            "ja": "パパはちょっとだけ出かけるんだ、お嬢ちゃんたち。頭を整理して、君たちを守れるように砦を作らなきゃ。すぐに戻ってくるよ。",
+            "ko": "아빠 잠깐 나가 있어야 해, 아가들. 머리를 식히고 너희를 지킬 요새를 세워야 해. 곧 다시 볼 거야.",
+            "pl": "Tata musi na chwilę odejść, córeczki. Muszę poukładać sobie myśli i zbudować fortecę, żeby was chronić. Wkrótce się zobaczymy.",
+            "pt-BR": "O papai precisa sair um pouco, minhas meninas. Preciso colocar a cabeça no lugar e construir uma fortaleza pra proteger vocês. A gente se vê logo.",
+            "ru": "Папе нужно ненадолго уйти, девочки мои. Нужно собраться с мыслями и построить крепость, чтобы защитить вас. Скоро увидимся.",
+            "uk": "Татові треба трохи відійти, дівчатка мої. Потрібно мені все обдумати та збудувати фортецю, щоб захистити вас. Скоро побачимось.",
+            "vi": "Bố phải đi một lát, các con gái. Bố cần phải suy nghĩ lại và xây dựng một pháo đài để bảo vệ các con. Bố sẽ sớm quay lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "his outstretched hand trembles, eyes glistening",
+      "faces": [
+        [
+          0.322,
+          0.3165,
+          0.6665,
+          0.5913
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "marcela_36"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "standing",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_36",
+          "text": "Běž. Tvoje rodina mě mezitím úplně zavrhla, všichni na mě ukazují prstem a ty nejsi schopen mě podržet. Už ti nevěřím, Ol1ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Geh. Deine Familie hat mich inzwischen komplett verstoßen, alle zeigen mit dem Finger auf mich und du kannst mich nicht halten. Ich glaube dir nicht mehr, Ol1n.",
+            "en": "Just go. Your family has already completely rejected me, everyone points fingers at me, and you can't even support me. I don't trust you anymore, Ol1n.",
+            "fr": "Pars. Ta famille m'a déjà complètement rejetée, tout le monde me montre du doigt et tu n'es pas capable de me soutenir. Je ne te fais plus confiance, Ol1n.",
+            "it": "Vai via. La tua famiglia mi ha già completamente ripudiato, tutti mi indicano il dito e tu non sei capace di sostenermi. Non ti credo più, Ol1n.",
+            "ja": "さっさと行け。あなたの家族はもう完全に私を拒絶したわ、皆が私を指さして笑うの。あなたにはもう頼れない、Ol1n。",
+            "ko": "가. 네 가족은 나를 완전히 버렸고, 다들 나를 손가락질해. 넌 날 지지할 수도 없잖아. 이제 널 믿지 않아, Ol1n.",
+            "pl": "Idź. Twoja rodzina już mnie całkowicie odtrąciła, wszyscy palcami wskazują, a ty nie potrafisz mnie wesprzeć. Już ci nie wierzę, Ol1nie.",
+            "pt-BR": "Vai. Sua família já me rejeitou completamente, todo mundo aponta o dedo pra mim e você não consegue me dar apoio. Não confio mais em você, Ol1n.",
+            "ru": "Уходи. Твоя семья меня уже полностью отвергла, все тычут в меня пальцем, а ты не можешь меня поддержать. Я больше тебе не верю, Ол1н.",
+            "uk": "Йди. Твоя родина вже мене повністю відкинула, всі показують на мене пальцем, а ти не здатен мене підтримати. Я тобі більше не вірю, Ol1ne.",
+            "vi": "Anh đi đi. Gia đình anh đã hoàn toàn ruồng bỏ tôi, ai cũng chỉ trích tôi, còn anh thì không thể bảo vệ tôi. Tôi không tin anh nữa, Ol1n."
+          }
+        },
+        {
+          "speaker_id": "marcela_36",
+          "text": "Mezi námi se rozevřely nůžky, které už nejdou sešít. Vypadni. Na dva roky vypadni. Nemůžu tě tu už snést.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zwischen uns ist ein Graben entstanden, der nicht mehr zu überbrücken ist. Hau ab. Für zwei Jahre hau ab. Ich kann dich hier nicht mehr ertragen.",
+            "en": "A gap has opened between us that can't be sewn shut. Get out. Leave for two years. I can't stand you here anymore.",
+            "fr": "Un fossé s'est creusé entre nous, impossible à combler. Dégage. Pars pendant deux ans. Je ne peux plus te supporter ici.",
+            "it": "Tra noi si è aperto un baratro che non si può più colmare. Sparisci. Per due anni, sparisci. Non ti sopporto più qui.",
+            "ja": "私たちとの間に開いた溝はもう埋められない。出て行け。二年出て行け。もうあなたを見るのも嫌なの。",
+            "ko": "우리 사이에 이미 좁혀질 수 없는 간극이 생겼어. 꺼져. 2년 동안 꺼져. 이제 널 더 이상 참을 수 없어.",
+            "pl": "Rozeszliśmy się tak bardzo, że tego nie da się już zszyć. Wynoś się. Na dwa lata znikaj. Nie mogę cię tu już znieść.",
+            "pt-BR": "A distância entre nós ficou enorme, não dá mais pra consertar. Some daqui. Some por dois anos. Não aguento mais você aqui.",
+            "ru": "Между нами разрыв, который уже не сшить. Убирайся. На два года убирайся. Не могу тебя здесь больше видеть.",
+            "uk": "Між нами розійшлися ножиці, які вже неможливо зшити. Зникай. На два роки зникай. Я більше не можу тебе тут терпіти.",
+            "vi": "Khoảng cách giữa chúng ta đã quá lớn, không thể hàn gắn được nữa. Biến đi. Đi mất hai năm đi. Tôi không thể chịu đựng anh thêm được nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.0367,
+          0.1102,
+          0.8183,
+          0.6377
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "ol1n_36"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "shocked",
+        "wide eyes",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_36",
+          "text": "Dva roky? Chceš, abych odešel na dva roky ze života vlastních dětí?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zwei Jahre? Willst du, dass ich zwei Jahre aus dem Leben meiner Kinder gehe?",
+            "en": "Two years? You want me to leave my own children's lives for two years?",
+            "fr": "Deux ans ? Tu veux que je m'absente deux ans de la vie de mes enfants ?",
+            "it": "Due anni? Vuoi che mi allontani dalla vita dei miei figli per due anni?",
+            "ja": "二年？自分の子供たちの人生から二年もの間、いなくなれって言うのか？",
+            "ko": "2년? 내 아이들 인생에서 2년 동안 떠나 있으라는 거야?",
+            "pl": "Dwa lata? Chcesz, żebym odszedł na dwa lata z życia własnych dzieci?",
+            "pt-BR": "Dois anos? Quer que eu abandone meus filhos por dois anos?",
+            "ru": "Два года? Ты хочешь, чтобы я ушёл на два года из жизни собственных детей?",
+            "uk": "Два роки? Ти хочеш, щоб я покинув життя власних дітей на два роки?",
+            "vi": "Hai năm? Em muốn anh rời xa con gái hai năm?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1878,
+          0.2942,
+          0.7545,
+          0.6657
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "marcela_36"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "marcela_36",
+          "text": "Jinak to nejde. Tady už není místo pro tvoje kecy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es geht nicht anders. Hier ist kein Platz mehr für dein Gerede.",
+            "en": "There's no other way. There's no room for your nonsense here.",
+            "fr": "C'est la seule solution. Il n'y a plus de place pour tes bavardages ici.",
+            "it": "Non c'è altra scelta. Qui non c'è più posto per le tue chiacchiere.",
+            "ja": "他に方法はないの。もうあなたの口うるさい話は聞きたくない。",
+            "ko": "다른 방법 없어. 여기서 네 잔소리는 더 이상 듣고 싶지 않아.",
+            "pl": "Inaczej się nie da. Tutaj nie ma miejsca na twoje gadanie.",
+            "pt-BR": "Não tem outro jeito. Não tem mais espaço pra suas conversas.",
+            "ru": "Иначе никак. Здесь нет места для твоих разговоров.",
+            "uk": "Інакше не вийде. Тут вже немає місця твоїм балачкам.",
+            "vi": "Không còn cách nào khác. Ở đây không còn chỗ cho những lời nói vô nghĩa của anh nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1662,
+          0.1405,
+          0.8289,
+          0.5621
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "ol1n_36"
+        }
+      ],
+      "visual_tags": [
+        "lifting a suitcase",
+        "head down",
+        "turning away"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3816,
+          0.2489,
+          0.8293,
+          0.5092
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "reaching out with both arms",
+        "tears",
+        "sad"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "small arms reaching out, tears welling up",
+      "faces": [
+        [
+          0.8128,
+          0.0458,
+          0.9965,
+          0.1743
+        ],
+        [
+          0.2791,
+          0.1911,
+          0.7953,
+          0.5485
+        ]
+      ]
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_dvere_4",
+      "characters": [],
+      "visual_tags": [
+        "empty grey room",
+        "closed door",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dvere_4",
+      "characters": [
+        {
+          "id": "marcela_36"
+        }
+      ],
+      "visual_tags": [
+        "holding two crying little girls",
+        "clenched jaw",
+        "cold eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": [
+        [
+          0.3607,
+          0.2798,
+          0.7783,
+          0.5539
+        ]
+      ]
+    }
+  ]
+}

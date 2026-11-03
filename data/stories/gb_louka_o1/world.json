@@ -1,0 +1,77 @@
+{
+  "id": "w_gb_louka_o1",
+  "title": "Rozkvetlá louka, která zšedla — První nádech na louce",
+  "synopsis": "Dvacet let jedné rodiny: rozkvetlá louka, ze které zbude šeď, a otec, který se nakonec vydá za dětmi ven.",
+  "tone": "něžný, smutný, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "akvarel_louka",
+  "profile": "akvarel",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika v obraze: Ol1n a Marcela nikdy spolu v jednom obraze.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n přestane bojovat a odejde za dětmi ven; Marcela zůstane ve své pevnosti."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_louka_1"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ol1n_20",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a young Czech man aged 20 with messy dark brown hair and bright warm brown eyes",
+      "base": "chibi, adult, young man, (short dark brown hair:1.3), straight hair, brown eyes",
+      "outfits": {
+        "default": "light blue linen shirt, long sleeves, beige trousers"
+      },
+      "photo": "a young Czech man aged 20 with messy dark brown hair and bright warm brown eyes",
+      "tag_prompt": "chibi, adult, young man, (short dark brown hair:1.3), straight hair, brown eyes, light blue linen shirt, long sleeves, beige trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "marcela_20",
+      "name": "Marcela",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a young Czech woman aged 20 with long wavy auburn hair and shining green eyes",
+      "base": "chibi, young woman, (flat chest:1.2), long wavy auburn hair, green eyes",
+      "outfits": {
+        "default": "loose flowing white dress with small flowers, long sleeves, high neckline"
+      },
+      "photo": "a young Czech woman aged 20 with long wavy auburn hair and shining green eyes",
+      "tag_prompt": "chibi, young woman, (flat chest:1.2), long wavy auburn hair, green eyes, loose flowing white dress with small flowers, long sleeves, high neckline",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_louka_1",
+      "name": "Louka – 1. obraz",
+      "description": "Rozkvetlá louka plná květin jako na Botticelliho Primaveře.",
+      "tag_prompt": "vivid clear watercolor, (sky blue, rose pink and violet:1.2), luminous colors, sunlight, outdoors, blooming flower meadow, field of flowers, cornflowers, roses, violets, botticelli primavera meadow, soft breeze, petals in the air",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "louka",
+    "node": "o1"
+  }
+}

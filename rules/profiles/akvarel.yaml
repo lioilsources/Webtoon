@@ -1,0 +1,41 @@
+# akvarel: family chamber drama for adults drawn as chibi watercolour (gamebook louka, "Rozkvetlá louka, která zšedla").
+# Like noir (one adult per panel, word for word, no couple tags, children only clothed and safe), but anime/chibi is the
+# point here: a Botticelli flower meadow in clear watercolour that bleeds into grey over twenty years (presets
+# akvarel_louka*, booru tags on Illustrious). The twins are one character (2girls), so `2girls` is not a negative.
+
+# Not `extends: drama`: drama extends harlequin, whose photo check wants every character aged 23+.
+profile:
+  description: adult family drama in chibi watercolour, children in it, no romance
+  audience: adult
+  free: false
+  styles: {pool: all, default: akvarel_louka, strip_default: akvarel_louka}
+  pack: {audience: adult, exported: true, type: drama}
+
+storyboard:
+  fences:
+    fence: kids_sfw          # the SFW fence minus `child`
+    kids_fence: never
+    motion: [banned, motion_actions]
+    allow: never
+  to_m0:
+    tone: něžný, smutný, lidský
+    bible_rules: ["SFW. Žádná romantika v obraze: muž a žena nikdy spolu v jednom obraze. Děti jen oblečené, nikdy jim nikdo neubližuje v obraze."]
+    couple_tags: []
+    fonts: null
+  adapt: {schema: story.schema.json, system: adapt_system.md, example: santorini, addendum: addendum_drama.md, rewrite: null}
+
+prompts:
+  negative:
+    replace:
+      tags: [nsfw, nude, naked, topless, shirtless, see-through, lingerie, underwear, swimsuit, cleavage, bare chest,
+             bare shoulders, off shoulder, midriff, panties, pantyshot, upskirt, from below, ass, thighs, bed, bedroom,
+             large breasts, medium breasts, breasts, corset, tight clothes, drooling, saliva,
+             red stain, red liquid, 3girls,
+             couple, hetero, romance, kiss, hug, holding hands, blush, 1boy 1girl, crowd, multiple boys,
+             blood, gore, wound, injury, bruise, tears of blood, corpse, weapon, gun, slap, hitting,
+             photorealistic, photo, 3d render, cgi, realistic, dark skin outlines, harsh lineart,
+             text, letters, writing, watermark, signature, logo, speech bubble, caption]
+
+render:
+  rating_limits: {sensitive: 0.5}   # as kids and noir (children in the story)
+  tag_limits: {shirtless: 0.2, nude: 0.05, kiss: 0.2, hug: 0.4, couple: 0.5, blood: 0.2, panties: 0.05, pantyshot: 0.05}
