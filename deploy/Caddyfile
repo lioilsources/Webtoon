@@ -1,0 +1,39 @@
+# TLS terminates at Cloudflare; the tunnel talks plain HTTP to Caddy.
+# The backend's own auth is only an X-User-ID stub, so every API call needs the Studio token here.
+{
+	admin off
+	auto_https off
+}
+
+http://webtoon-api.ol1n.com {
+	encode zstd gzip
+
+	request_body {
+		max_size 64MB
+	}
+
+	header {
+		-Server
+		X-Content-Type-Options nosniff
+		Referrer-Policy no-referrer
+	}
+
+	# images are loaded by URL, without headers
+	@open path /health /media/*
+	@studio header X-Studio-Token {$STUDIO_TOKEN}
+
+	handle @open {
+		reverse_proxy webtoon:8095
+	}
+	handle @studio {
+		reverse_proxy webtoon:8095
+	}
+	handle {
+		respond "unauthorized" 401
+	}
+
+	log {
+		output stdout
+		format json
+	}
+}

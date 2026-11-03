@@ -34,6 +34,7 @@ class HttpWebtoonApi implements WebtoonApi {
   Map<String, String> get _headers => {
     'X-User-ID': config.userId,
     'Accept': 'application/json',
+    if (config.studioToken.isNotEmpty) 'X-Studio-Token': config.studioToken,
   };
 
   Uri _uri(String path, [Map<String, String>? query]) => Uri.parse(

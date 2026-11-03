@@ -22,6 +22,9 @@ class AppConfig {
   /// Sent as `X-User-ID` (the backend auth is a stub until Ol1nLLM accounts land).
   final String userId;
 
+  /// `WEBTOON_STUDIO_TOKEN`: the gate in front of the deployed backend (deploy/Caddyfile); empty on localhost.
+  final String studioToken;
+
   /// How often an episode that is still generating is polled.
   final Duration pollInterval;
 
@@ -31,6 +34,7 @@ class AppConfig {
   const AppConfig({
     required this.apiBase,
     required this.userId,
+    this.studioToken = '',
     this.pollInterval = const Duration(seconds: 2),
     this.openCampaign,
   });
@@ -41,10 +45,12 @@ class AppConfig {
       defaultValue: 'http://localhost:8095',
     );
     const user = String.fromEnvironment('WEBTOON_USER', defaultValue: 'player');
+    const token = String.fromEnvironment('WEBTOON_STUDIO_TOKEN');
     const open = String.fromEnvironment('WEBTOON_OPEN_CAMPAIGN');
     return AppConfig(
       apiBase: _trimSlash(api),
       userId: user,
+      studioToken: token,
       openCampaign: open.isEmpty ? null : open,
     );
   }

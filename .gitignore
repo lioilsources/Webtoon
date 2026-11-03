@@ -15,3 +15,7 @@ backend/media/
 
 # Content packs are build artifacts (webtoon export-pack), 90+ MB
 app/assets/packs/*.zip
+
+# JODA deploy: tunnel credentials stay on the server
+deploy/cloudflared/*.json
+deploy/cloudflared/config.yml

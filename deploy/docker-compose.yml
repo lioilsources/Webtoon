@@ -1,0 +1,69 @@
+# Webtoon Studio backend (JODA): API only behind Caddy, exposed via Cloudflare Tunnel as
+# https://webtoon-api.ol1n.com. No ports are published on the host. Run by deploy/deploy.sh.
+# MODE=api: no workers here. Generating needs the Spark GPU, and that goes through the spark-broker from the Mac.
+name: webtoon
+
+services:
+  db:
+    image: postgres:16
+    container_name: webtoon-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: webtoon
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?}
+      POSTGRES_DB: webtoon
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks: [webtoon]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U webtoon -d webtoon"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  webtoon:
+    build:
+      context: ../backend
+    image: webtoon-api:latest
+    container_name: webtoon-api
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    working_dir: /repo
+    environment:
+      DATABASE_URL: postgres://webtoon:${POSTGRES_PASSWORD}@db:5432/webtoon?sslmode=disable
+      MEDIA_DIR: /media
+      MEDIA_BASE_URL: /media
+      MODE: api
+      LISTEN_ADDR: ":8095"
+    volumes:
+      - ../media:/media
+      - ../rules:/repo/rules:ro
+      - ../data:/repo/data
+    networks: [webtoon]
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: webtoon-caddy
+    restart: unless-stopped
+    environment:
+      STUDIO_TOKEN: ${STUDIO_TOKEN:?}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    networks: [webtoon]
+
+  cloudflared:
+    image: cloudflare/cloudflared:2026.7.3
+    container_name: webtoon-cloudflared
+    restart: unless-stopped
+    command: tunnel --no-autoupdate --config /etc/cloudflared/config.yml run
+    volumes:
+      - ./cloudflared:/etc/cloudflared:ro
+    networks: [webtoon]
+
+volumes:
+  pgdata:
+
+networks:
+  webtoon:

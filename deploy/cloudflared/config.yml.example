@@ -1,0 +1,10 @@
+tunnel: <TUNNEL-ID>
+credentials-file: /etc/cloudflared/<TUNNEL-ID>.json
+
+ingress:
+  - hostname: webtoon-api.ol1n.com
+    service: http://caddy:80
+    originRequest:
+      connectTimeout: 30s
+      httpHostHeader: webtoon-api.ol1n.com
+  - service: http_status:404
