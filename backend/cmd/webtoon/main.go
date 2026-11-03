@@ -15,6 +15,13 @@
 //	                                    catalog mode writes releases/<tag>/<asset> + catalog.json and prints the
 //	                                    `gh release create` command (never runs it)
 //	webtoon catalog-bundles -out dir    rewrite catalog.json base_urls/types/bundles from rules/base/pack.yaml (no DB)
+//	webtoon preview -gamebook graph.yaml -out dir [-unit obraz] [-theme dark|light] [-lede text]
+//	                                    static web preview of a gamebook from data/stories + out/local (no DB):
+//	                                    panels, loops in place, bubbles in every translated language
+//	webtoon trailer -gamebook id -out x.mp4 [-music track.mp3]
+//	                                    9:16 trailer (TikTok/Shorts) from data/gamebooks/<id>/trailer.yaml (needs ffmpeg)
+//	webtoon music -prompt text -out x.mp3 [-seconds 70] [-seed n]
+//	                                    one instrumental track from the audio service on SPARK (lease audio-music first)
 package main
 
 import (
@@ -46,10 +53,12 @@ import (
 	"github.com/ol1n/webtoon/backend/internal/imageq"
 	"github.com/ol1n/webtoon/backend/internal/llm"
 	"github.com/ol1n/webtoon/backend/internal/pack"
+	"github.com/ol1n/webtoon/backend/internal/preview"
 	"github.com/ol1n/webtoon/backend/internal/seed"
 	"github.com/ol1n/webtoon/backend/internal/store"
 	"github.com/ol1n/webtoon/backend/internal/storyboard"
 	"github.com/ol1n/webtoon/backend/internal/tags"
+	"github.com/ol1n/webtoon/backend/internal/trailer"
 	"github.com/ol1n/webtoon/backend/internal/translate"
 	"github.com/ol1n/webtoon/backend/internal/wd14"
 	"github.com/ol1n/webtoon/backend/internal/worker"
@@ -84,8 +93,14 @@ func main() {
 		err = runCatalogBundles(args)
 	case "set-faces":
 		err = runSetFaces(ctx, cfg, args)
+	case "preview":
+		err = runPreview(args)
+	case "trailer":
+		err = runTrailer(args)
+	case "music":
+		err = runMusic(args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles|set-faces)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles|set-faces|preview|trailer|music)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -106,6 +121,91 @@ func openStore(ctx context.Context, cfg config.Config) (*store.Store, error) {
 		return nil, err
 	}
 	return store.New(pool), nil
+}
+
+// runPreview builds the static gamebook preview (internal/preview); paths default to the repo layout seen from
+// backend/ (data/stories, out/local, rules/base/compose.yaml one level up).
+func runPreview(args []string) error {
+	fs := flag.NewFlagSet("preview", flag.ExitOnError)
+	o := preview.Options{}
+	fs.StringVar(&o.Graph, "gamebook", "", "data/gamebooks/<id>/graph.yaml")
+	fs.StringVar(&o.Out, "out", "", "output directory (index.html, p/, l/)")
+	fs.StringVar(&o.Stories, "stories", "../data/stories", "storyboards: <dir>/gb_<id>_<node>/storyboard.json")
+	fs.StringVar(&o.Panels, "panels", "../out/local", "renders: <dir>/gb_<id>_<node>/pNN_s0.png, pNN_video.webp")
+	fs.StringVar(&o.Compose, "compose", "../rules/base/compose.yaml", "bubble layout rules")
+	fs.IntVar(&o.Width, "width", 640, "panel JPEG width")
+	fs.IntVar(&o.Quality, "quality", 82, "panel JPEG quality")
+	fs.StringVar(&o.Lang, "lang", "cs", "the storyboards' own language")
+	fs.StringVar(&o.Unit, "unit", "dějství", "what a node is called on the page")
+	fs.StringVar(&o.Theme, "theme", "dark", "dark | light")
+	fs.StringVar(&o.Lede, "lede", "", "a sentence under the title")
+	fs.Parse(args) //nolint:errcheck
+	if o.Graph == "" || o.Out == "" {
+		fs.Usage()
+		os.Exit(2)
+	}
+	panels, loops, err := preview.Build(o)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("preview %s: %d panels, %d loops\n", filepath.Join(o.Out, "index.html"), panels, loops)
+	return nil
+}
+
+// runTrailer renders a gamebook trailer (internal/trailer) from data/gamebooks/<id>/trailer.yaml.
+func runTrailer(args []string) error {
+	fs := flag.NewFlagSet("trailer", flag.ExitOnError)
+	o := trailer.Options{}
+	id := fs.String("gamebook", "", "gamebook id (data/gamebooks/<id>/trailer.yaml)")
+	fs.StringVar(&o.Out, "out", "", "output .mp4")
+	fs.StringVar(&o.Panels, "panels", "../out/local", "renders: <dir>/gb_<id>_<node>/pNN_s0.png, pNN_video.webp")
+	fs.StringVar(&o.Music, "music", "", "music track (looped, faded); empty = silent")
+	fs.Float64Var(&o.Volume, "volume", 0.9, "music volume")
+	fs.StringVar(&o.Font, "font", "/System/Library/Fonts/Avenir Next.ttc", "caption font")
+	fs.IntVar(&o.FontIdx, "font-index", 2, "face in a .ttc (Avenir Next 2 = Demi Bold)")
+	fs.StringVar(&o.Title, "title-font", "/System/Library/Fonts/Supplemental/Baskerville.ttc", "title font")
+	fs.IntVar(&o.TitleIdx, "title-index", 4, "face in a .ttc (Baskerville 4 = SemiBold)")
+	fs.StringVar(&o.FFmpeg, "ffmpeg", "ffmpeg", "ffmpeg binary")
+	fs.Parse(args) //nolint:errcheck
+	if *id == "" || o.Out == "" {
+		fs.Usage()
+		os.Exit(2)
+	}
+	o.ID = *id
+	o.Spec = filepath.Join("..", "data", "gamebooks", *id, "trailer.yaml")
+	d, err := trailer.Render(o)
+	if err != nil {
+		return err
+	}
+	fmt.Printf("trailer %s: %s\n", o.Out, d.Round(time.Millisecond))
+	return nil
+}
+
+// runMusic renders one track with the audio service (trailer.Music).
+func runMusic(args []string) error {
+	fs := flag.NewFlagSet("music", flag.ExitOnError)
+	base := fs.String("audio", envOr("WEBTOON_AUDIO", "http://192.168.88.66:8093"), "audio service")
+	prompt := fs.String("prompt", "", "style of the track")
+	secs := fs.Int("seconds", 70, "length (ACE-Step returns 9–19 % less)")
+	seed := fs.Int("seed", 4300, "seed")
+	out := fs.String("out", "", "output .mp3")
+	fs.Parse(args) //nolint:errcheck
+	if *prompt == "" || *out == "" {
+		fs.Usage()
+		os.Exit(2)
+	}
+	if err := trailer.Music(*base, *prompt, *secs, *seed, *out); err != nil {
+		return err
+	}
+	fmt.Println("music", *out)
+	return nil
+}
+
+func envOr(k, def string) string {
+	if v := os.Getenv(k); v != "" {
+		return v
+	}
+	return def
 }
 
 // runSetFaces copies panels[].faces of a storyboard (m0/faces.py --storyboard) onto an episode that was imported

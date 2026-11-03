@@ -1,0 +1,25 @@
+# TikTok / Shorts trailer (backend: webtoon trailer -gamebook mlceni). The storyboards have no English yet: the
+# captions are translated here, line for line from the play (main path o1a → o6f). The story is about anorexia and
+# thoughts of death: the title card says so and the end card points to help.
+title: Learning to Be Silent
+tagline: Fifty minutes. Two armchairs. A glass of water.
+note: This story deals with anorexia and thoughts of death.
+end: "A webtoon gamebook from a one-act play. If any of this touches you, talk to someone: findahelpline.com"
+title_at: {node: o1a, panel: 15}
+end_dur: 4.0
+shots:
+  - {node: o1a, panel: 15, dur: 3.2}
+  - {node: o1a, panel: 2, dur: 2.8, caption: "So how are you today?"}
+  - {node: o1a, panel: 3, dur: 3.6, caption: "That depends on how much time you have."}
+  - {node: o1a, panel: 4, dur: 2.6, caption: "We have fifty minutes."}
+  - {node: o1a, panel: 5, dur: 2.8, caption: "Then I'm doing badly."}
+  - {node: o2c, panel: 4, dur: 4.0, caption: "The less I like myself, the more time I spend on myself."}
+  - {node: o3c, panel: 10, dur: 2.8}
+  - {node: o4a, panel: 19, dur: 3.8, caption: "To leave me be. But not to leave me."}
+  - {node: o5b, panel: 11, dur: 3.4, caption: "I think love is not a miracle cure."}
+  - {node: o5d, panel: 8, dur: 2.6}
+  - {node: o5d, panel: 9, dur: 3.2, caption: "Can I sit here a little longer?"}
+  - {node: o6c, panel: 7, dur: 3.2, caption: "That my pain is mine."}
+  - {node: o6e, panel: 9, dur: 3.0, caption: "Maybe I've learned it."}
+  - {node: o6e, panel: 11, dur: 2.8, caption: "Not knowing."}
+  - {node: o6f, panel: 3, dur: 4.0, caption: "\"For the one who didn't want to fix me.\""}
