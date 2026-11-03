@@ -65,10 +65,10 @@ def graph(start_image, motion, preset, width, height, length, seed, prefix, free
         positive += ", " + tail
     g = {
         "unet_high": {"class_type": "UNETLoader", "inputs": {"unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors", "weight_dtype": "default"}},
-        "lora_high": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_high", 0], "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_high_noise_model.safetensors", "strength_model": 1.0}},
+        "lora_high": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_high", 0], "lora_name": os.environ.get("WEBTOON_WAN_LORA_HIGH", "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_high_noise_model.safetensors"), "strength_model": 1.0}},
         "shift_high": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_high", 0], "shift": 5.0}},
         "unet_low": {"class_type": "UNETLoader", "inputs": {"unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors", "weight_dtype": "default"}},
-        "lora_low": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_low", 0], "lora_name": "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_low_noise_model.safetensors", "strength_model": 1.0}},
+        "lora_low": {"class_type": "LoraLoaderModelOnly", "inputs": {"model": ["unet_low", 0], "lora_name": os.environ.get("WEBTOON_WAN_LORA_LOW", "Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1_low_noise_model.safetensors"), "strength_model": 1.0}},
         "shift_low": {"class_type": "ModelSamplingSD3", "inputs": {"model": ["lora_low", 0], "shift": 5.0}},
         "clip": {"class_type": "CLIPLoader", "inputs": {"clip_name": "umt5_xxl_fp8_e4m3fn_scaled.safetensors", "type": "wan", "device": "default"}},
         "pos": {"class_type": "CLIPTextEncode", "inputs": {"clip": ["clip", 0], "text": positive}},

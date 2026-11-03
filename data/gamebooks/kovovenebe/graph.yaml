@@ -1,0 +1,154 @@
+# Gamebook 3 — Kovové nebe nad námi. Divadelní hra o pěti dějstvích (od kamaráda); text replik je doslova jeho.
+# Lineární: pět uzlů, žádné volby, žádný nový text. Opravené překlepy v replikách: „niczę“ → „ničím“ (3. dějství),
+# „jes“ → „jsi“ (4. dějství). Poznámka „(ani a nevzhlednou tmu)“ v 1. dějství je čtená jako „ani nevzhlédne“.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (nikdy dva lidé v obraze),
+# `see` = scénická poznámka jako obraz. `cast` přiřazuje roli postavu světa podle věku v dějství.
+
+schema: 1
+id: kovovenebe
+title: Kovové nebe nad námi
+title_i18n: {en: Metal Sky Above Us, de: Metallhimmel über uns, fr: "Ciel de métal au-dessus de nous", it: Cielo di metallo sopra di noi, ja: 頭上の鋼鉄の空, ko: 우리 위의 금속 하늘, pl: Metalowe niebo nad nami, pt-BR: Céu de metal sobre nós, ru: Металлическое небо над нами, uk: Металеве небо над нами, vi: Bầu trời kim loại trên đầu}
+world: w_kovove_nebe
+audience: adult
+language: cs
+style_id: noir_graphic
+profile: noir
+product_id: gamebook_kovovenebe
+start: d1
+
+premise: >
+  Vybydlený poloautomatizovaný byt v megaměstě, kyselý déšť a neonové šero hologramů. Otec, který se nikdy nemýlí,
+  a syn, kterého sledujeme od osmi do padesáti let, než pochopí, že na svou záchranu byl celou dobu sám.
+
+characters: [otec_30, otec_37, otec_52, otec_62, otec_70, syn_8, syn_15, syn_30, syn_40, syn_50]
+
+locations:
+  - {id: l_byt_1, name: Byt – 1. dějství, description: "byt v megaměstě, ještě udržovaný"}
+  - {id: l_okno_1, name: Okno – 1. dějství, description: "sirény, těžký mastný déšť"}
+  - {id: l_byt_2, name: Byt – 2. dějství, description: "byt o sedm let později"}
+  - {id: l_okno_2, name: Okno – 2. dějství, description: "město v oranžové a purpurové záři"}
+  - {id: l_byt_3, name: Byt – 3. dějství, description: "zápach spálené elektroniky a zatuchliny"}
+  - {id: l_okno_3, name: Okno – 3. dějství, description: "neonové šero"}
+  - {id: l_byt_4, name: Byt – 4. dějství, description: "ticho, prach"}
+  - {id: l_okno_4, name: Okno – 4. dějství, description: "monotónní déšť"}
+  - {id: l_byt_5, name: Byt – 5. dějství, description: "byt po padesáti letech"}
+  - {id: l_okno_5, name: Okno – 5. dějství, description: "okno poprvé dokořán"}
+
+draft:
+  speakers: {Otec: otec, Syn: syn, Kluk: syn}
+  faces:
+    otec: [[stern expression, looking at another], [cold expression, looking down], [contemptuous expression, looking at another]]
+    syn: [[anxious expression, looking at another], [looking down, tense], [hurt expression, looking away]]
+  speaking: [upper body, from front]
+
+nodes:
+  d1:
+    title: Dědictví mlhy
+    location: l_byt_1
+    cast: {otec: otec_30, syn: syn_8}
+    next: d2
+    script:
+      - {see: "Venku vřeští sirény a padá těžký, mastný déšť.", shot: establishing, loc: l_okno_1, tags: [heavy oily rain, red siren lights, night], gap: medium}
+      - {see: "Otec sedí u stolu s rozebraným dýchacím filtrem.", shot: medium, who: otec, tags: [sitting at metal table, disassembled breathing filter on the table, focused, not looking up]}
+      - {see: "Malý kluk stojí vedle něj s příliš velkou, provizorně utaženou dýchací maskou, ze které ho bolí nos.", shot: medium, who: syn, tags: [standing, oversized breathing mask strapped too tight, uncomfortable, looking up]}
+      - {say: syn, text: "Tati… mně ta maska strašně dře. Nemůžu přes ni pořádně dýchat. Bolej mě plíce a venku lidi říkali, že vzduch je dneska jedovatý, že se tvoří ty fialové obláčky z chemičky…"}
+      - {say: otec, text: "Lidé, chlapče? Kteří lidé? Ti uřvaní darmožrouti na rohu, co neumějí ani spočítat kapacity filtrace? Podívej se na mě. Dýchám bez masky? Dýchám.", tags: [not looking up, working on the filter]}
+      - {say: syn, text: "No… ne. Ale ty jsi dospělý a já…"}
+      - {say: otec, text: "Maska tě nedře proto, že by byla špatná, ale proto, že neumíš správně dýchat. Jsi slabý. Povoluješ v pase, hrbíš se."}
+      - {say: otec, text: "Kdybych ti nedal ten nejlepší model na trhu, už bys dávno sípal v nemocnici. A ty mi tu budeš vykládat o fialových obláčcích? Já tě chráním před světem, který by tě sežral za syrova."}
+      - {see: "Kluk si tlačí řemínky hlouběji do otlačené kůže.", shot: close-up, who: syn, tags: [pulling the mask straps tighter, red pressure marks on cheeks, eyes down]}
+      - {say: syn, text: "Promiň… já jsem nechtěl. Já jenom… myslel jsem, že…", tags: [looking down, small voice]}
+      - {say: otec, text: "Nemysli. To je tvůj hlavní problém. Od toho jsem tady já. Vzduch je čistý, jenom ty jsi přecitlivělý."}
+      - {see: "Fialový obláček za oknem.", shot: wide, loc: l_okno_1, tags: [purple toxic cloud over the city, rain], gap: large, animate: "slow purple haze drifting, rain falling, neon flicker, static camera"}
+
+  d2:
+    title: Křehký krunýř
+    location: l_byt_2
+    cast: {otec: otec_37, syn: syn_15}
+    next: d3
+    script:
+      - {see: "O sedm let později. Město za okny pulzuje v agresivní oranžové a purpurové záři.", shot: establishing, loc: l_okno_2, tags: [aggressive orange and purple glow, pulsing neon], gap: medium}
+      - {see: "Syn je vyšší, v obličeji má rýhy únavy. V ruce drží tablet se záznamem venkovních senzorů.", shot: medium, who: syn, tags: [standing, holding a tablet, tired face]}
+      - {see: "Graf na tabletu.", shot: close-up, tags: [hands holding a tablet, red warning graph on screen, no readable text, no people faces]}
+      - {say: syn, text: "Tati, podívej se na tyhle hodnoty ze stanice v sektoru 4. Koncentrace benzenu překročila limit třikrát. Školu zavřeli, všichni odcházejí do krytů. Proč my tu sedíme s otevřenou ventilačkou?"}
+      - {see: "Otec klidně čistí optiku drona.", shot: medium, who: otec, tags: [sitting, cleaning a small drone lens, calm]}
+      - {say: otec, text: "Sektor 4 je plný hysteriků, kteří potřebují zápletku, aby nemuseli pracovat. Ty senzory jsou kalibrované čínským šrotem z devadesátých let. Ukazují nesmysly.", tags: [not looking up, cleaning drone lens]}
+      - {say: syn, text: "Ale já ty hodnoty vidím na vlastní oči! Mě pálí oči, když jdu ke křížení ulic. Není to lež, táto, já tam byl.", tags: [red irritated eyes, insistent]}
+      - {say: otec, text: "Ty jsi tam byl? A co jsi tam viděl? Vlastní strach. Vždycky jsi byl panikář po matce. Zase jsi podlehl té davové psychóze, co?", tags: [slow cold stare]}
+      - {say: otec, text: "Já v tomhle městě budoval infrastrukturu, když tvoji vrstevníci ještě tahali kačera. A ty mi teď budeš tvrdit, co je a není cítit?"}
+      - {say: syn, text: "Já netvrdím… já jen říkám, že data jasně ukazují…"}
+      - {say: otec, text: "Data? Ty jsi data! A rozbitá. Zase jsi mě zklamal. Myslel jsem, že z tebe něco bude, ale ty jen papouškuješ cizí paniku, abys nemusel čelit vlastní neschopnosti."}
+      - {say: otec, text: "Zavři to okno a přestaň mě zatahovat do svých halucinací."}
+      - {see: "Syn stojí rozpolcený, rty se mu chvějí, oči plní slzy vzdoru, které vzápětí polyká.", shot: close-up, who: syn, tags: [trembling lips, tears welling up, holding them back]}
+      - {say: syn, text: "…Dobře. Možná… možná se mi to jen zdálo.", tags: [looking down, defeated]}
+      - {see: "Zavřené okno.", shot: wide, loc: l_okno_2, tags: [closed window, condensation, orange glow], gap: large}
+
+  d3:
+    title: Bod zlomu
+    location: l_byt_3
+    cast: {otec: otec_52, syn: syn_30}
+    next: d4
+    script:
+      - {see: "O dalších patnáct let později. Byt je prosáklý zápachem spálené elektroniky a zatuchliny.", shot: establishing, loc: l_byt_3, tags: [scorched electronics, smoke stains, stale air, empty room], gap: medium}
+      - {see: "Syn stojí uprostřed pokoje, zády ke stěně.", shot: medium, who: syn, tags: [back against the wall, clenched fists]}
+      - {see: "Otec sedí v křesle, podepisuje stohy papírů.", shot: medium, who: otec, tags: [sitting in an armchair, signing a stack of papers, not looking up]}
+      - {say: syn, text: "Už dost. Stačilo. Čtyřicet let poslouchám, že všechno, co vidím, slyším a cítím, je moje chyba. Že já jsem ten nemocný, ten přecitlivělý, ten, kdo si vymýšlí realitu."}
+      - {say: otec, text: "Pořád to v sobě živíš, co? Tuhle utkvělou představu, že ti někdo ubližuje. Divíš se, že jsi sám, když každou normální konverzaci měníš v bitevní pole?", tags: [not looking up, signing papers]}
+      - {say: syn, text: "V bitevní pole? Já ti přinesl oficiální zprávu o stavu budovy! Strop ve třetím patře se propadá kvůli netěsnícímu potrubí, které jí třicet let odmítáš opravit! Všichni odsud odešli!", tags: [holding up a report, angry]}
+      - {say: otec, text: "Utíkají, protože jsou slabí. Stejně jako ty. Já jsem tenhle dům postavil, když tady byly jen trosky."}
+      - {say: otec, text: "Jestli se propadá strop, tak jen proto, že ho schválně podkopáváš svou negativní energií. Ty jsi ten, kdo ničí náš domov."}
+      - {say: syn, text: "Já ho ničím? Já tady žiju v plísni a toxických výparech, protože odmítáš připustit jedinou chybu! Jedinou věc v životě! Zkus se jednou, jen jedinkrát podívat na situaci očima někoho jiného!", tags: [furious, pleading]}
+      - {see: "Otec vstane, jeho hlas je ledový a absolutní.", shot: medium, who: otec, tags: [standing up from the armchair, towering, icy expression]}
+      - {say: otec, text: "Já se dívám na fakta. A fakt je ten, že jsi nevděčný parazit, který mi celá desetiletí vysává život z těla. Kdyby nebylo mě, hyneš v kanálu.", tags: [standing, icy expression]}
+      - {say: otec, text: "A ty mi tu budeš vykládat o chybách? Vypadni z mého obzoru, jestli na to máš nervy. Ale nezapomeň, že bez mé střechy jsi naprostá nula."}
+      - {say: syn, text: "Ty jsi lhář! Nejsi bůh, nejsi ochránce! Jsi jen nemocný člověk, který neumí unést vlastní selhání!", shot: close-up, tags: [shouting, rage and despair, tears]}
+      - {say: otec, text: "Vidíš se? Celý ty jsi. Hysterický cvok.", shot: close-up, tags: [cold smirk]}
+      - {see: "Papíry na stole.", shot: close-up, tags: [stack of papers, stained table, pen, smoke haze, no people], gap: large}
+
+  d4:
+    title: Mramorová koule
+    location: l_byt_4
+    cast: {otec: otec_62, syn: syn_40}
+    next: d5
+    script:
+      - {see: "O deset let později. Ticho. Zvenčí doléhá jen monotónní hučení deště.", shot: establishing, loc: l_okno_4, tags: [monotonous rain, grey haze, dim neon], gap: medium, animate: "rain streaming down the window, dim neon flicker, static camera"}
+      - {see: "Syn sedí na židli, civí do prázdna před sebou. V rukou drží starý dýchací přístroj. Na tváři už nemá ani vztek, jen prázdnotu.", shot: medium, who: syn, tags: [sitting on a chair, holding an old breathing apparatus, staring into nothing, empty expression]}
+      - {say: syn, text: "Čtyřicet let… Čtyřicet let jsem tahal tu mramorovou kouli na noze a myslel si, že když ti to konečně vysvětlím, tak ji odemkneš.", tags: [quiet, talking to himself, staring into nothing]}
+      - {see: "Otec vchází do místnosti, opírá se o hůl.", shot: medium, who: otec, tags: [walking in through a doorway, leaning on a cane]}
+      - {say: otec, text: "Zase tady mluvíš sám pro sebe. Co zase mumláš? Jestli zase řešíš ty svoje starý křivdy, tak věz, že já si víc než dobře pamatuju, jak jsi mi v patnácti vyhrožoval. Zničil jsi mi tím nervy.", tags: [leaning on a cane, stubborn]}
+      - {see: "Syn se na něj podívá. Žádný křik. Žádný pláč. Úplné ticho v očích.", shot: close-up, who: syn, tags: [looking at another, completely calm, silent eyes]}
+      - {say: otec, text: "No tak vidíš. Zase ticho. Nikdy jsi neměl argumenty. Jen ty tvoje hysterický scény. Kdybych s tebou neměl svatou trpělivost, tak skončíš pod mostem. Měl bys mi poděkovat."}
+      - {say: syn, text: "Jo. Děkuju, tati.", shot: close-up, tags: [quiet, calm]}
+      - {say: otec, text: "Hh… No konečně dostáváš rozum. Trvalo ti to, ale aspoň něco.", tags: [taken aback, surprised]}
+      - {say: syn, text: "Jo. Trvalo to. Vím, že nemáš nedůvěru vůči mně. To se mi jen tak jeví. Vím, že svět je v pořádku a já jsem ten rozbitý. Všechno je v pořádku.", tags: [looking through him, distant gaze]}
+      - {say: otec, text: "Nevím, co tím zase myslíš, ty tvoje ironický tóny…", tags: [frowning, suspicious]}
+      - {say: syn, text: "Nic nemyslím. Jdu se nadechnout ven.", tags: [standing up]}
+      - {see: "Prázdná židle a starý dýchací přístroj.", shot: wide, tags: [empty chair, breathing apparatus on the seat, rain light, no people], gap: large}
+
+  d5:
+    title: Otevřené nebe
+    location: l_byt_5
+    cast: {otec: otec_70, syn: syn_50}
+    ending: good
+    script:
+      - {see: "Byt po padesáti letech.", shot: establishing, loc: l_byt_5, tags: [decayed apartment, grey dust, old armchair, stacks of old papers], gap: medium}
+      - {see: "Otec sedí v křesle, zády k oknu, pod sebou deku. Je starý, seschlý, ale výraz v tváři má pořád stejný – neotřesitelná, kamenná pýcha.", shot: medium, who: otec, tags: [sitting in an armchair, blanket over his knees, stony proud expression]}
+      - {see: "Syn stojí u okna, které je poprvé v životě dokořán. Dovnitř vaně studený, šedivý, ale skutečný vzduch zvenčí.", shot: medium, who: syn, loc: l_okno_5, tags: [standing at the wide open window, from side, cold grey daylight, breathing in]}
+      - {see: "V ruce drží malé červené srdíčko – vytištěné na 3D tiskárně z levného plastu.", shot: close-up, tags: [hand holding small plastic heart, red plastic heart, close-up of hand]}
+      - {say: otec, text: "Venku fouká. Proč otevíráš to okno? Říkal jsem ti stokrát, že ty filtry v tomhle sektoru netěsní. Chceš, abychom tu všichni zkašlali?"}
+      - {say: otec, text: "Ty prostě nedáš na moje rady, nikdy jsi nedal. Kdyby sis raději sednul a udělal pořádek v těch papírech…"}
+      - {see: "Siluety mrakodrapů v kyselé mlze.", shot: establishing, loc: l_okno_5, tags: [skyscraper silhouettes in acid fog, cold grey sky]}
+      - {say: syn, text: "Venku je hezky, tati.", loc: l_okno_5, tags: [looking out of the window, holding a small red plastic heart, from side]}
+      - {say: otec, text: "Cože? Co by na tomhle hnusným smogu mělo být hezkého? Ty jsi úplně zmatenej. Zase blouzníš."}
+      - {say: otec, text: "Víš co? Dělej si, co chceš. Stejně na nic nedáš, co ti člověk řekne. Kvůli tobě jsem ztratil padesát let nervů."}
+      - {say: syn, text: "Padesát let. To je dlouhá doba.", tags: [turning around, strangely reconciled calm]}
+      - {say: otec, text: "A doteď jsi to nepochopil. Kdyby ses tenkrát choval jinak, nemuseli jsme tady takhle sedět."}
+      - {see: "Syn položí malé plastové srdíčko na stůl vedle štosu starých papírů.", shot: close-up, tags: [red plastic heart on table, stack of old yellowed papers, a hand withdrawing]}
+      - {say: syn, text: "Nemuseli. Ale stalo se."}
+      - {say: otec, text: "No vidíš. Kdybys konečně přiznal, že…"}
+      - {see: "Syn se lehce usměje a položí ruku na opěradlo jeho křesla – gesto naprosté svobody, ne podřízenosti.", shot: close-up, tags: [hand resting on an armchair backrest, close-up of hand, soft grey light]}
+      - {say: syn, text: "Máš pravdu, tati. Úplně ve všem. Odpočiň si.", shot: close-up, tags: [slight smile, calm, free]}
+      - {see: "Otec na něj chvíli zmateně a podezřívavě hledí, čeká na obvyklou hádku. Nic nepřichází.", shot: close-up, who: otec, tags: [confused, suspicious stare, waiting]}
+      - {see: "Syn se otočí a pomalu odchází k otevřenému oknu, kde déšť smývá prach z jeho dlaní.", shot: close-up, loc: l_okno_5, tags: [open palms in rain, rain washing dust off the hands, grey daylight]}
+      - {see: "Opona pomalu klesá za zvuku hučícího města a tiché, prázdné tmy.", shot: establishing, loc: l_okno_5, tags: [city at dusk fading into darkness, distant lights, empty], gap: large, animate: "the city slowly darkening, distant lights, light rain, static camera"}

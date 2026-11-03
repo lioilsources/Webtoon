@@ -1,0 +1,39 @@
+# noir: dark chamber drama for adults with a child in its first acts (gamebook kovove_nebe, "Kovové nebe nad námi").
+# Like drama (one person per panel, word for word, no couple tags), but the son is 8 and 15 in acts 1-2, so `child`
+# may appear in tags (kids_sfw fence, as the kids profile) and every SFW negative stays. Not anime: realistic people
+# drawn as a graphic novel (presets noir_graphic*, natural prompts).
+
+# Not `extends: drama`: drama extends harlequin, whose photo check wants every character aged 23+. The fields below
+# are drama's, restated; storyboard.yaml photo_any_age still makes every photo state its age.
+profile:
+  description: adult noir drama, a child in the early acts, no romance
+  audience: adult
+  free: false
+  styles: {pool: all, default: noir_graphic, strip_default: noir_graphic}
+  pack: {audience: adult, exported: true, type: drama}
+
+storyboard:
+  fences:
+    fence: kids_sfw          # the SFW fence minus `child`
+    kids_fence: never
+    motion: [banned, motion_actions]
+    allow: never
+  to_m0:
+    tone: temný, tíživý, lidský
+    bible_rules: ["SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze. Dítě jen oblečené, bez násilí na těle."]
+    couple_tags: []
+    fonts: null
+  adapt: {schema: story.schema.json, system: adapt_system.md, example: santorini, addendum: addendum_drama.md, rewrite: null}
+
+prompts:
+  negative:
+    replace:
+      tags: [nsfw, nude, naked, topless, shirtless, see-through, lingerie, underwear, swimsuit, cleavage, bare chest,
+             couple, hetero, romance, kiss, hug, holding hands, blush, two people, 2boys, multiple people, crowd,
+             blood, gore, wound, injury, bruise, corpse, weapon, gun,
+             anime, manga, chibi, kawaii, big eyes, cartoon, cel anime, 3d render, cgi, doll, plastic skin,
+             text, letters, writing, watermark, signature, logo, speech bubble, caption]
+
+render:
+  rating_limits: {sensitive: 0.5}
+  tag_limits: {shirtless: 0.3, nude: 0.1, kiss: 0.2, hug: 0.3, couple: 0.5, blood: 0.3}

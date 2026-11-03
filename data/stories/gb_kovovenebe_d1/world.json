@@ -1,0 +1,85 @@
+{
+  "id": "w_gb_kovovenebe_d1",
+  "title": "Kovové nebe nad námi — Dědictví mlhy",
+  "synopsis": "Otec a syn v bytě megaměsta, padesát let pod kovovým nebem.",
+  "tone": "temný, tíživý, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze.",
+      "Dítě jen oblečené, bez násilí na těle."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Syn pochopí, že na svou záchranu byl celou dobu sám; otec se nezmění."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_byt_1",
+      "l_okno_1"
+    ]
+  },
+  "characters": [
+    {
+      "id": "otec_30",
+      "name": "Otec",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a stern Czech man aged 30 with short slicked-back dark hair, a hard square jaw and cold grey eyes",
+      "base": "adult, mature male, short slicked-back dark hair, square jaw, cold grey eyes, clean-shaven",
+      "outfits": {
+        "default": "heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+      },
+      "photo": "a stern Czech man aged 30 with short slicked-back dark hair, a hard square jaw and cold grey eyes",
+      "tag_prompt": "adult, mature male, short slicked-back dark hair, square jaw, cold grey eyes, clean-shaven, heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "syn_8",
+      "name": "Syn",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "(a small thin Czech child aged 8:1.3), (little boy, 8 years old:1.3), short child body, round child face, messy dark hair and big frightened grey eyes",
+      "base": "child, boy, messy dark hair, grey eyes",
+      "outfits": {
+        "default": "worn grey child sweater, no hood, (oversized makeshift breathing mask strapped too tight over a small child face:1.2)"
+      },
+      "photo": "(a small thin Czech child aged 8:1.3), (little boy, 8 years old:1.3), short child body, round child face, messy dark hair and big frightened grey eyes",
+      "tag_prompt": "child, boy, messy dark hair, grey eyes, worn grey child sweater, no hood, (oversized makeshift breathing mask strapped too tight over a small child face:1.2)",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_byt_1",
+      "name": "Byt – 1. dějství",
+      "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+      "tag_prompt": "indoors, cramped apartment in a dystopian megacity, worn but tidy, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window",
+      "mood": ""
+    },
+    {
+      "id": "l_okno_1",
+      "name": "Okno – 1. dějství",
+      "description": "Okno bytu, za ním megaměsto.",
+      "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "kovovenebe",
+    "node": "d1"
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "title": "Křehký krunýř",
+  "title_i18n": {
+    "de": "Zerbrechliche Rüstung",
+    "en": "Fragile Shell",
+    "fr": "Coquille fragile",
+    "it": "Corazza fragile",
+    "ja": "脆い殻",
+    "ko": "깨지기 쉬운 갑옷",
+    "pl": "Kruchy pancerz",
+    "pt-BR": "Casca Frágil",
+    "ru": "Хрупкая броня",
+    "uk": "Крихкий панцир",
+    "vi": "Lớp Vỏ Mong Manh"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_okno_2",
+      "characters": [],
+      "visual_tags": [
+        "aggressive orange and purple glow",
+        "pulsing neon",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "holding a tablet",
+        "tired face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2412,
+          0.2131,
+          0.758,
+          0.6749
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [],
+      "visual_tags": [
+        "hands holding a tablet",
+        "red warning graph on screen",
+        "no readable text",
+        "no people faces"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.5245,
+          0.5175,
+          0.5856,
+          0.5803
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_15",
+          "text": "Tati, podívej se na tyhle hodnoty ze stanice v sektoru 4. Koncentrace benzenu překročila limit třikrát. Školu zavřeli, všichni odcházejí do krytů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, schau dir diese Werte von der Station in Sektor 4 an. Die Benzolkonzentration hat den Grenzwert dreimal überschritten. Die Schule ist geschlossen, alle gehen in die Bunker.",
+            "en": "Dad, look at these readings from Sector 4. Benzene levels are over the limit three times. They closed the school, everyone's heading to the shelters.",
+            "fr": "Papa, regarde ces valeurs de la station du secteur 4. La concentration de benzène a dépassé la limite trois fois. L'école est fermée, tout le monde va aux abris.",
+            "it": "Papà, guarda questi valori dalla stazione nel settore 4. La concentrazione di benzene ha superato il limite tre volte. Hanno chiuso la scuola, tutti vanno nei rifugi.",
+            "ja": "パパ、セクター4のステーションのデータを見て。ベンゼンの濃度が基準値の3倍だ。学校は閉鎖されて、みんなシェルターに避難してる。",
+            "ko": "아버지, 4구역 관측소 데이터 좀 봐요. 벤젠 농도가 기준치의 세 배를 넘었어요. 학교는 폐쇄됐고, 다들 대피소로 가고 있어요.",
+            "pl": "Tato, zobacz te wartości ze stacji w sektorze 4. Stężenie benzenu przekroczyło limit trzy razy. Zamknęli szkołę, wszyscy idą do schronów.",
+            "pt-BR": "Pai, olha esses valores da estação do setor 4. A concentração de benzeno ultrapassou o limite em três vezes. Fecharam a escola, todo mundo tá indo pros abrigos.",
+            "ru": "Пап, глянь на эти показатели со станции в секторе 4. Концентрация бензола превысила лимит в три раза. Школу закрыли, все уходят в укрытия.",
+            "uk": "Тату, глянь на ці показники зі станції в секторі 4. Концентрація бензену перевищила ліміт втричі. Школу закрили, всі йдуть в укриття.",
+            "vi": "Bố, nhìn mấy giá trị này từ trạm ở khu vực 4 xem. Nồng độ benzen vượt quá giới hạn gấp ba lần rồi. Trường học đóng cửa, mọi người đang chạy vào hầm trú ẩn."
+          }
+        },
+        {
+          "speaker_id": "syn_15",
+          "text": "Proč my tu sedíme s otevřenou ventilačkou?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum sitzen wir hier mit offenem Lüftungsschacht?",
+            "en": "Why are we sitting here with the vent open?",
+            "fr": "Pourquoi est-ce qu'on reste ici avec la ventilation ouverte ?",
+            "it": "Perché noi siamo qui seduti con la ventola aperta?",
+            "ja": "なんで僕らは換気口を開けたままここにいるんだ？",
+            "ko": "우린 왜 환풍구를 열고 앉아 있는 거죠?",
+            "pl": "Dlaczego my tu siedzimy z otwartą wentylacją?",
+            "pt-BR": "Por que a gente tá aqui sentado com a ventilação aberta?",
+            "ru": "Почему мы тут сидим с открытой вентиляцией?",
+            "uk": "Чому ми тут сидимо з відкритим вентилятором?",
+            "vi": "Sao chúng ta cứ ngồi đây với lỗ thông gió mở toác thế?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.189,
+          0.1918,
+          0.7161,
+          0.7078
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "cleaning a small drone lens",
+        "calm"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3168,
+          0.12,
+          0.595,
+          0.3788
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "not looking up",
+        "cleaning drone lens"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_37",
+          "text": "Sektor 4 je plný hysteriků, kteří potřebují zápletku, aby nemuseli pracovat. Ty senzory jsou kalibrované čínským šrotem z devadesátých let.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sektor 4 ist voller Hysteriker, die einen Aufreger brauchen, um nicht arbeiten zu müssen. Diese Sensoren sind mit chinesischem Schrott aus den Neunzigern kalibriert.",
+            "en": "Sector 4 is full of hysterics who need drama to avoid work. Those sensors are calibrated with nineties Chinese junk.",
+            "fr": "Le secteur 4 est plein d'hystériques qui ont besoin d'un scandale pour ne pas travailler. Ces capteurs sont calibrés avec de la camelote chinoise des années 90.",
+            "it": "Il settore 4 è pieno di isterici che hanno bisogno di un dramma per non lavorare. Quei sensori sono calibrati con cianfrusaglie cinesi degli anni '90.",
+            "ja": "セクター4はヒステリックな連中の集まりで、働かずに騒ぎを起こしたいだけさ。あのセンサーは90年代の中国製ジャンク品だ。",
+            "ko": "4구역 사람들은 일을 안 하려고 히스테리를 부리는 거야. 그 센서들은 90년대 중국산 싸구려로 보정된 거니까.",
+            "pl": "Sektor 4 to pełen panikarzy, którzy potrzebują dramatu, żeby nie pracować. Te czujniki są skalibrowane chińskim złomem z lat 90.",
+            "pt-BR": "O setor 4 tá cheio de histéricos que precisam de um drama pra não trabalhar. Esses sensores são calibrados com sucata chinesa dos anos 90.",
+            "ru": "В секторе 4 полно истеричек, которым нужен скандал, чтобы не работать. Эти сенсоры откалиброваны китайским барахлом девяностых.",
+            "uk": "Сектор 4 повний істериків, яким потрібен сюжет, щоб не працювати. Ці сенсори відкалібровані китайським мотлохом з дев'яностих.",
+            "vi": "Khu vực 4 đầy những kẻ hoang tưởng, cần một câu chuyện để trốn việc. Mấy cảm biến đó được hiệu chỉnh bằng đồ rác Trung Quốc từ những năm chín mươi."
+          }
+        },
+        {
+          "speaker_id": "otec_37",
+          "text": "Ukazují nesmysly.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die zeigen doch nur Unsinn.",
+            "en": "They show nonsense.",
+            "fr": "Ils affichent n'importe quoi.",
+            "it": "Mostrano solo assurdità.",
+            "ja": "デタラメな数値を表示してるだけだ。",
+            "ko": "엉터리란 뜻이죠.",
+            "pl": "Wykazują bzdury.",
+            "pt-BR": "Tão mostrando besteira.",
+            "ru": "Они показывают ерунду.",
+            "uk": "Вони показують нісенітницю.",
+            "vi": "Chúng chỉ toàn báo bậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2736,
+          0.177,
+          0.7153,
+          0.6243
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "red irritated eyes",
+        "insistent"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_15",
+          "text": "Ale já ty hodnoty vidím na vlastní oči! Mě pálí oči, když jdu ke křížení ulic. Není to lež, táto, já tam byl.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber ich sehe diese Werte doch mit eigenen Augen! Meine Augen brennen, wenn ich zur Kreuzung gehe. Das ist keine Lüge, Papa, ich war da.",
+            "en": "But I can see the readings with my own eyes! My eyes are burning when I go near the intersection. It's not a lie, Dad, I was there.",
+            "fr": "Mais je vois ces valeurs de mes propres yeux ! Mes yeux me brûlent quand je vais au carrefour. Ce n'est pas un mensonge, papa, j'y étais.",
+            "it": "Ma io vedo quei valori con i miei occhi! Mi bruciano gli occhi quando vado all'incrocio. Non è una bugia, papà, ci sono stato.",
+            "ja": "でも、僕は自分の目でその値を見たんだ！ 交差点に行くと目が痛むんだ。嘘じゃない、パパ、僕は行ったんだ。",
+            "ko": "하지만 제가 직접 그 값을 봤어요! 길거리에서 눈이 따가워요. 거짓말 아니에요, 아버지, 제가 직접 갔었어요.",
+            "pl": "Ale ja te wartości widzę na własne oczy! Piecze mnie w oczy, jak idę na skrzyżowanie. To nie kłamstwo, tato, ja tam byłem.",
+            "pt-BR": "Mas eu tô vendo esses valores com meus próprios olhos! Meus olhos ardem quando eu vou no cruzamento. Não é mentira, pai, eu estive lá.",
+            "ru": "Но я сам эти показатели вижу! У меня глаза слезятся, когда я иду к перекрестку. Это не ложь, пап, я там был.",
+            "uk": "Але я сам бачу ці показники! Мені пече в очах, коли я йду до перехрестя. Це не брехня, тату, я там був.",
+            "vi": "Nhưng con thấy mấy giá trị đó bằng mắt mình đây này! Mắt con cay xè khi con đi gần ngã tư. Không phải nói dối đâu, bố, con đã ở đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2104,
+          0.2028,
+          0.8318,
+          0.8027
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "slow cold stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_37",
+          "text": "Ty jsi tam byl? A co jsi tam viděl? Vlastní strach. Vždycky jsi byl panikář po matce. Zase jsi podlehl té davové psychóze, co?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du warst da? Und was hast du da gesehen? Deine eigene Angst. Du bist immer ein Nervenbündel gewesen, genau wie deine Mutter. Hast du dich wieder der Massenhysterie hingegeben, was?",
+            "en": "You were there? And what did you see? Your own fear. You've always been a worrywart, just like your mother. Gave in to the crowd again, huh?",
+            "fr": "Tu y étais ? Et qu'est-ce que tu y as vu ? Ta propre peur. Tu as toujours été un paniqueur comme ta mère. Tu as encore succombé à cette psychose collective, hein ?",
+            "it": "Ci sei stato tu? E cosa hai visto lì? La tua stessa paura. Sei sempre stato un fifone come tua madre. Ti sei lasciato prendere dalla psicosi di massa, eh?",
+            "ja": "お前は行ったのか？ で、何を見た？ 自分の恐怖を見たんだ。いつもお前は母親似でパニックになりやすい。また群集心理に流されたんだな？",
+            "ko": "네가 직접 갔다고? 그래서 뭘 봤는데? 네 자신의 두려움을. 넌 엄마 닮아 늘 겁이 많았지. 또 군중심리에 휩쓸린 거겠지?",
+            "pl": "Ty tam byłeś? I co tam widziałeś? Własny strach. Zawsze byłeś panikarz po matce. Znowu dałeś się ponieść psychologii tłumu, co?",
+            "pt-BR": "Você esteve lá? E o que você viu lá? Seu próprio medo. Você sempre foi um medroso como sua mãe. De novo você cedeu à psicose coletiva, né?",
+            "ru": "Ты там был? И что ты там видел? Собственный страх. Ты всегда был паникёром, как твоя мать. Снова поддался этой стадной психозе, что ли?",
+            "uk": "Ти там був? І що ти там бачив? Власний страх. Ти завжди був панікером, як мати. Знову піддався цій масовій психозі, так?",
+            "vi": "Con đã ở đó? Và con thấy gì ở đó? Nỗi sợ của chính con. Con luôn là kẻ hoảng loạn giống mẹ. Lại bị đám đông lôi kéo rồi đấy hả?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.298,
+          0.1606,
+          0.7474,
+          0.5912
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_37",
+          "text": "Já v tomhle městě budoval infrastrukturu, když tvoji vrstevníci ještě tahali kačera. A ty mi teď budeš tvrdit, co je a není cítit?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe in dieser Stadt die Infrastruktur aufgebaut, als deine Altersgenossen noch mit Enten gespielt haben. Und du willst mir jetzt sagen, was man riechen kann oder nicht?",
+            "en": "I built the infrastructure in this city while your peers were still pulling ducks' tails. And now you're going to tell me what does and doesn't smell?",
+            "fr": "Moi, j'ai construit l'infrastructure de cette ville quand tes camarades tiraient encore sur des canards. Et tu vas me dire ce qui se sent et ce qui ne se sent pas ?",
+            "it": "Io ho costruito le infrastrutture di questa città quando i tuoi coetanei tiravano ancora il papero. E adesso mi dici tu cosa si sente e cosa no?",
+            "ja": "俺は、お前の同級生がまだ遊びに夢中だった頃からこの街のインフラを築いてきたんだ。お前が何を嗅いだか、何を嗅がないかを俺に教えるのか？",
+            "ko": "나는 네 또래 애들이 까불 때 이 도시의 기반 시설을 건설했어. 네가 지금 뭘 느끼는지 안 느끼는지 나한테 가르쳐주겠다고?",
+            "pl": "Ja w tym mieście budowałem infrastrukturę, kiedy twoi rówieśnicy jeszcze ciągnęli kaczora. I ty mi teraz będziesz mówił, co jest, a czego nie czuć?",
+            "pt-BR": "Eu construí a infraestrutura dessa cidade quando seus colegas ainda puxavam o saco. E agora você vai me dizer o que é ou não é pra sentir?",
+            "ru": "Я в этом городе строил инфраструктуру, когда твои ровесники еще в песочнице копались. И ты мне будешь рассказывать, что чувствуется, а что нет?",
+            "uk": "Я в цьому місті будував інфраструктуру, коли твої однолітки ще качали качелі. І ти мені тепер будеш казати, що відчувати?",
+            "vi": "Ta đã xây dựng cơ sở hạ tầng cho thành phố này khi bằng tuổi con còn đang chơi trò kéo co. Và giờ con dám bảo ta cái gì là cảm nhận được?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.257,
+          0.1728,
+          0.6386,
+          0.4972
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "anxious expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_15",
+          "text": "Já netvrdím… já jen říkám, že data jasně ukazují…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nicht behaupten… ich sage nur, dass die Daten eindeutig zeigen…",
+            "en": "I'm not saying… I'm just saying the data clearly shows…",
+            "fr": "Je ne dis pas… je dis juste que les données montrent clairement…",
+            "it": "Io non sto dicendo… sto solo dicendo che i dati mostrano chiaramente…",
+            "ja": "僕はそう言ってるんじゃない… ただ、データは明らかに示してる…",
+            "ko": "제가 그런 게 아니라… 그냥 데이터가 분명히 보여서…",
+            "pl": "Ja nie twierdzę… ja tylko mówię, że dane wyraźnie pokazują…",
+            "pt-BR": "Eu não tô dizendo… eu só tô falando que os dados mostram claramente…",
+            "ru": "Я не утверждаю… я просто говорю, что данные чётко показывают…",
+            "uk": "Я не стверджую… я просто кажу, що дані чітко показують…",
+            "vi": "Con không có ý… con chỉ nói là dữ liệu cho thấy rõ ràng…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2967,
+          0.1372,
+          0.7512,
+          0.551
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_37",
+          "text": "Data? Ty jsi data! A rozbitá. Zase jsi mě zklamal.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Daten? Du bist die Daten! Und kaputt. Du hast mich mal wieder enttäuscht.",
+            "en": "Data? You are data! And broken. You've disappointed me again.",
+            "fr": "Des données ? Toi, tu es les données ! Et cassé. Tu m'as encore déçu.",
+            "it": "Dati? Tu sei un dato! E rotto. Mi hai deluso ancora.",
+            "ja": "データだと？ お前がデータだ！ そして壊れてる。また俺を失望させたな。",
+            "ko": "데이터? 네가 데이터지! 게다가 고장난. 또 실망시키네.",
+            "pl": "Dane? Ty jesteś dane! I zepsute. Znowu mnie zawiodłeś.",
+            "pt-BR": "Dados? Você é que é dado! E quebrado. Você me decepcionou de novo.",
+            "ru": "Данные? Ты и есть данные! И сломанные. Опять разочаровал.",
+            "uk": "Дані? Ти – дані! І зламані. Знову розчарував мене.",
+            "vi": "Dữ liệu? Con chính là dữ liệu! Và bị hỏng rồi. Con lại làm ta thất vọng."
+          }
+        },
+        {
+          "speaker_id": "otec_37",
+          "text": "Myslel jsem, že z tebe něco bude, ale ty jen papouškuješ cizí paniku, abys nemusel čelit vlastní neschopnosti.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich dachte, aus dir wird mal was, aber du wiederholst nur die Panik anderer, um dich nicht deiner eigenen Unfähigkeit stellen zu müssen.",
+            "en": "I thought you'd amount to something, but you just parrot other people's panic so you don't have to face your own inadequacy.",
+            "fr": "Je pensais que tu deviendrais quelqu'un, mais tu te contentes de répéter la panique des autres pour ne pas affronter ta propre incompétence.",
+            "it": "Pensavo che saresti diventato qualcosa, ma tu non fai altro che ripetere il panico degli altri per non affrontare la tua stessa incapacità.",
+            "ja": "お前に何かになれると思ってたんだが、ただ他人のパニックを繰り返してるだけじゃないか。自分の無能さに立ち向かうのが怖いからな。",
+            "ko": "기대를 했었는데, 넌 그냥 남의 공포를 앵무새처럼 따라하면서 자신의 무능함을 감추려고 하는구나.",
+            "pl": "Myślałem, że z ciebie coś będzie, ale ty tylko powtarzasz cudzą panikę, żeby nie musieć zmierzyć się z własną nieudolnością.",
+            "pt-BR": "Eu pensei que você ia ser alguém, mas você só repete o pânico alheio pra não encarar sua própria incapacidade.",
+            "ru": "Я думал, из тебя что-то выйдет, а ты просто повторяешь чужую панику, чтобы не сталкиваться со своей собственной несостоятельностью.",
+            "uk": "Я думав, що з тебе щось вийде, але ти лише повторюєш чужу паніку, щоб не стикатися з власною неспроможністю.",
+            "vi": "Ta tưởng con sẽ làm được gì đó, nhưng con chỉ huyên thuyên những nỗi sợ của người khác để trốn tránh sự bất tài của bản thân."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2343,
+          0.1338,
+          0.7794,
+          0.654
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "otec_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_37",
+          "text": "Zavři to okno a přestaň mě zatahovat do svých halucinací.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mach das Fenster zu und hör auf, mich in deine Halluzinationen zu verwickeln.",
+            "en": "Close the window and stop dragging me into your hallucinations.",
+            "fr": "Ferme cette fenêtre et arrête de m'impliquer dans tes hallucinations.",
+            "it": "Chiudi quella finestra e smetti di coinvolgermi nelle tue allucinazioni.",
+            "ja": "窓を閉めて、お前の幻覚に俺を巻き込まないでくれ。",
+            "ko": "창문 닫고 네 망상에 날 끌어들이지 마.",
+            "pl": "Zamknij to okno i przestań mnie wciągać w swoje halucynacje.",
+            "pt-BR": "Fecha essa janela e para de me arrastar pra suas alucinações.",
+            "ru": "Закрой окно и перестань втягивать меня в свои галлюцинации.",
+            "uk": "Закрий вікно і припини втягувати мене у свої галюцинації.",
+            "vi": "Đóng cửa sổ lại và đừng lôi ta vào mấy ảo giác của con nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3187,
+          0.1409,
+          0.7551,
+          0.5797
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "trembling lips",
+        "tears welling up",
+        "holding them back"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.346,
+          0.149,
+          0.7331,
+          0.4959
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_2",
+      "characters": [
+        {
+          "id": "syn_15"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "defeated"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_15",
+          "text": "…Dobře. Možná… možná se mi to jen zdálo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "…Okay. Vielleicht… vielleicht habe ich mich nur getäuscht.",
+            "en": "…Okay. Maybe… maybe I just imagined it.",
+            "fr": "…D'accord. Peut-être… peut-être que ce n'était qu'un rêve.",
+            "it": "…Va bene. Forse… forse me lo sono solo immaginato.",
+            "ja": "…わかった。たぶん…たぶん、ただの気のせいだったのかも。",
+            "ko": "…알겠어요. 어쩌면… 어쩌면 제가 착각한 걸지도 몰라요.",
+            "pl": "…Dobrze. Może… może mi się tylko wydawało.",
+            "pt-BR": "…Tá bom. Talvez… talvez eu só tenha imaginado.",
+            "ru": "…Хорошо. Может… может, мне просто показалось.",
+            "uk": "…Добре. Можливо… можливо, мені просто здалося.",
+            "vi": "…Được rồi. Có lẽ… có lẽ con chỉ là tưởng tượng thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2358,
+          0.1953,
+          0.7604,
+          0.7156
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_okno_2",
+      "characters": [],
+      "visual_tags": [
+        "closed window",
+        "condensation",
+        "orange glow",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

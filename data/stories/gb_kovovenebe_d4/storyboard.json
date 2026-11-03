@@ -1,0 +1,522 @@
+{
+  "title": "Mramorová koule",
+  "title_i18n": {
+    "de": "Marmorball",
+    "en": "Marble Ball",
+    "fr": "La bille de marbre",
+    "it": "La Sfera di Marmo",
+    "ja": "大理石の球",
+    "ko": "대리석 구슬",
+    "pl": "Marmurowa kula",
+    "pt-BR": "Esfera de Mármore",
+    "ru": "Мраморный шар",
+    "uk": "Мармурова куля",
+    "vi": "Quả cầu cẩm thạch"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_okno_4",
+      "characters": [],
+      "visual_tags": [
+        "monotonous rain",
+        "grey haze",
+        "dim neon",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain streaming down the window, dim neon flicker, static camera",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "sitting on a chair",
+        "holding an old breathing apparatus",
+        "staring into nothing",
+        "empty expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3862,
+          0.1275,
+          0.6364,
+          0.3535
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "talking to himself",
+        "staring into nothing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_40",
+          "text": "Čtyřicet let… Čtyřicet let jsem tahal tu mramorovou kouli na noze a myslel si, že když ti to konečně vysvětlím, tak ji odemkneš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vierzig Jahre… Vierzig Jahre hab ich diese Marmorkugel am Bein rumgeschleppt und gedacht, wenn ich dir das endlich erklär, löst sich das.",
+            "en": "Forty years… Forty years I’ve been dragging that marble ball around on my leg, thinking if I finally explained it to you, you’d unlock it.",
+            "fr": "Quarante ans… Quarante ans que je traîne cette bille de marbre à la jambe et que je me disais qu'en t’expliquant enfin, tu la déverrouillerais.",
+            "it": "Quaranta anni… Quaranta anni che trascino questa sfera di marmo al piede e pensavo che, spiegandotelo finalmente, tu l'avresti sbloccata.",
+            "ja": "40年… 40年間、足にあの石の球をぶら下げて、お前に説明すれば解き放たれると思ってたんだ。",
+            "ko": "사십 년… 사십 년 동안 다리에 대리석 구슬을 매달고 다녔는데, 네게 드디어 설명하면 풀릴 줄 알았어.",
+            "pl": "Czterdzieści lat… Czterdzieści lat ciągnąłem tę marmurową kulę u nogi i myślałem, że jak ci to w końcu wytłumaczę, to ją odblokujesz.",
+            "pt-BR": "Quarenta anos… Quarenta anos carregando essa bola de mármore na perna e achando que, quando finalmente te explicasse, você a destravaria.",
+            "ru": "Сорок лет… Сорок лет я таскал этот мраморный шар на ноге и думал, что когда тебе наконец всё объясню, ты его отпустишь.",
+            "uk": "Сорок років… Сорок років я тягнув цю мармурову кулю на нозі й думав, що коли тобі все нарешті поясню, ти її відкриєш.",
+            "vi": "Bốn mươi năm… Bốn mươi năm rồi ta kéo quả cầu cẩm thạch này theo mình và nghĩ rằng khi cuối cùng ta giải thích cho ngươi, ngươi sẽ mở nó ra."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2245,
+          0.1518,
+          0.7879,
+          0.7079
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "otec_62"
+        }
+      ],
+      "visual_tags": [
+        "walking in through a doorway",
+        "leaning on a cane"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2607,
+          0.1175,
+          0.7102,
+          0.5608
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "otec_62"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "leaning on a cane",
+        "stubborn"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_62",
+          "text": "Zase tady mluvíš sám pro sebe. Co zase mumláš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wieder redest du vor dich hin. Was murmelst du denn schon wieder?",
+            "en": "Here you go, talking to yourself again. What are you mumbling about now?",
+            "fr": "Tu parles encore tout seul. Qu’est-ce que tu marmonnes encore ?",
+            "it": "Di nuovo parli tra te e te. Cosa stai borbottando?",
+            "ja": "また独り言か。今度は何を呟いてるんだ？",
+            "ko": "또 혼잣말이야. 이번엔 또 무슨 중얼거림인데?",
+            "pl": "Znowu sam do siebie bredzisz. Co znowu mamrociesz?",
+            "pt-BR": "De novo falando sozinho. O que você está resmungando?",
+            "ru": "Опять сам с собой разговариваешь. Что там бормочешь?",
+            "uk": "Знову сам з собою розмовляєш. Що там бубониш?",
+            "vi": "Lại tự lẩm bẩm một mình đấy. Lại lảm nhảm cái gì thế?"
+          }
+        },
+        {
+          "speaker_id": "otec_62",
+          "text": "Jestli zase řešíš ty svoje starý křivdy, tak věz, že já si víc než dobře pamatuju, jak jsi mi v patnácti vyhrožoval. Zničil jsi mi tím nervy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn du schon wieder an deinen alten Geschichten rummäkelst, dann vergiss nicht, dass ich mir ganz genau erinnere, wie du mir mit fünfzehn gedroht hast. Das hat mich ganz schön fertig gemacht.",
+            "en": "If you’re bringing up your old grievances again, know that I remember perfectly well you threatening me when you were fifteen. You wrecked my nerves.",
+            "fr": "Si tu reviens à tes vieilles rancunes, sache que je me souviens très bien de tes menaces à quinze ans. Tu m’as ruiné les nerfs avec ça.",
+            "it": "Se ricominci con i tuoi vecchi rancori, sappi che io mi ricordo benissimo delle tue minacce a quindici anni. Mi hai rovinato i nervi.",
+            "ja": "また昔の恨みを蒸し返してるのか？覚えてろよ、15歳の時に脅されたこと、俺はよく覚えてる。あれで神経をすり減らされたんだ。",
+            "ko": "또 네 낡은 원한을 들추는 거면, 내가 열다섯 때 너한테 협박당한 건 나도 아주 잘 기억하고 있다는 걸 알아둬. 신경 곤두서게 만들었잖아.",
+            "pl": "Jeśli znowu grzebiesz stare urazy, to wiedz, że ja doskonale pamiętam, jak mi w wieku piętnastu lat groziłeś. Zrujnowałeś mi tym nerwy.",
+            "pt-BR": "Se for ficar remoendo suas mágoas de novo, saiba que eu lembro muito bem de como você me ameaçou aos quinze anos. Você me tirou do sério com isso.",
+            "ru": "Если опять копаешься в своих старых обидах, знай, я прекрасно помню, как ты мне в пятнадцать угрожал. Ты мне тогда нервы вымотал.",
+            "uk": "Якщо знову копаєшся у своїх старих образах, то знай, я чудово пам’ятаю, як ти мені погрожував у п’ятнадцять. Ти мені тоді всі нерви вимотав.",
+            "vi": "Nếu ngươi lại nhắc lại mấy chuyện cũ, thì hãy biết ta nhớ rất rõ chuyện ngươi đe dọa ta khi mười lăm tuổi. Ngươi làm ta mất ăn mất ngủ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3735,
+          0.1012,
+          0.6344,
+          0.3902
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "looking at another",
+        "completely calm",
+        "silent eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2971,
+          0.2256,
+          0.7765,
+          0.6646
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "otec_62"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "stern expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_62",
+          "text": "No tak vidíš. Zase ticho. Nikdy jsi neměl argumenty. Jen ty tvoje hysterický scény. Kdybych s tebou neměl svatou trpělivost, tak skončíš pod mostem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Siehst du. Wieder Stille. Du hattest nie richtige Argumente. Nur deine hysterischen Anfälle. Wäre ich nicht so geduldig, würdest du unter der Brücke landen.",
+            "en": "See? Silence again. You never have any arguments. Just your hysterical scenes. If I didn’t have the patience of a saint, you’d be under a bridge.",
+            "fr": "Tiens, voilà. Encore le silence. Tu n’as jamais eu d’arguments. Juste tes scènes hystériques. Si je n’avais pas une patience d’ange, tu finiras sous un pont.",
+            "it": "Ecco, vedi? Di nuovo il silenzio. Non hai mai avuto argomenti. Solo le tue scene isteriche. Se non avessi una santa pazienza, finiresti sotto un ponte.",
+            "ja": "ほらな。また黙り込んだ。お前には反論がないんだ。ただのヒステリーだ。忍耐強くなかったら、お前は橋の下で暮らしてるぞ。",
+            "ko": "봐, 그렇지? 또 조용하네. 변명거리가 없잖아. 그냥 네 히스테리한 몸부림일 뿐이야. 내가 널 참을성이 없었다면 다리 밑에 살고 있었을 거야.",
+            "pl": "No widzisz. Znowu cisza. Nigdy nie miałeś argumentów. Tylko te twoje histeryczne sceny. Gdybym nie miał świętej cierpliwości, to skończyłbyś pod mostem.",
+            "pt-BR": "Viu só. De novo em silêncio. Você nunca teve argumentos. Só seus ataques de histeria. Se eu não tivesse uma paciência de santo, você estaria morando debaixo de uma ponte.",
+            "ru": "Ну вот видишь. Опять молчишь. У тебя никогда не было аргументов. Только истерики. Если бы у меня не было ангельского терпения, ты бы уже под мостом жил.",
+            "uk": "Ось бачиш. Знову мовчки. У тебе ніколи не було аргументів. Тільки твої істерики. Якби в мене не було святого терпіння, ти б закінчив під мостом.",
+            "vi": "Thấy chưa. Lại im lặng. Ngươi chưa bao giờ có lý lẽ cả. Chỉ có mấy trò kịch tính của ngươi thôi. Nếu ta không kiên nhẫn, ngươi đã ở dưới gầm cầu rồi."
+          }
+        },
+        {
+          "speaker_id": "otec_62",
+          "text": "Měl bys mi poděkovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du solltest mir dankbar sein.",
+            "en": "You should thank me.",
+            "fr": "Tu devrais me remercier.",
+            "it": "Dovresti ringraziarmi.",
+            "ja": "感謝すべきだ。",
+            "ko": "고마워해야지.",
+            "pl": "Powinieneś mi podziękować.",
+            "pt-BR": "Você devia me agradecer.",
+            "ru": "Тебе бы спасибо сказать.",
+            "uk": "Тобі треба мені подякувати.",
+            "vi": "Ngươi nên cảm ơn ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2742,
+          0.1063,
+          0.8317,
+          0.6593
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_40",
+          "text": "Jo. Děkuju, tati.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Danke, Papa.",
+            "en": "Yeah. Thanks, Dad.",
+            "fr": "Oui. Merci, papa.",
+            "it": "Sì. Grazie, papà.",
+            "ja": "ああ。ありがとう、父さん。",
+            "ko": "응. 고마워, 아빠.",
+            "pl": "Tak. Dziękuję, tato.",
+            "pt-BR": "Sim. Obrigado, pai.",
+            "ru": "Да. Спасибо, папа.",
+            "uk": "Так. Дякую, тату.",
+            "vi": "Ừ. Cảm ơn bố."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2753,
+          0.1773,
+          0.7812,
+          0.6528
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "otec_62"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "taken aback",
+        "surprised"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_62",
+          "text": "Hh… No konečně dostáváš rozum. Trvalo ti to, ale aspoň něco.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hh… Na endlich wirst du vernünftig. Hat lange gedauert, aber immerhin.",
+            "en": "Hh… Finally getting some sense. It took you long enough, but at least something.",
+            "fr": "Hh… Enfin, tu commences à être raisonnable. Ça t’a pris du temps, mais au moins, c’est un début.",
+            "it": "Hh… Finalmente stai diventando ragionevole. Ci hai messo, ma almeno qualcosa.",
+            "ja": "ふん… ようやく常識が働いたか。時間がかかったが、まあ、それなりに。",
+            "ko": "흐… 드디어 정신을 차리는구나. 오래 걸렸지만 그래도 다행이야.",
+            "pl": "Hh… No w końcu zaczynasz myśleć. Długo to trwało, ale przynajmniej coś.",
+            "pt-BR": "Hh… Que bom que você está começando a ter juízo. Demorou, mas pelo menos alguma coisa.",
+            "ru": "Хм… Ну наконец-то проявил разум. Долго до тебя доходило, но хоть что-то.",
+            "uk": "Гм… Ну, нарешті почав розуміти. Тривало це довго, але хоч щось.",
+            "vi": "Hh… Cuối cùng cũng khôn ra rồi đấy. Mất một thời gian, nhưng ít ra cũng được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1943,
+          0.1853,
+          0.8101,
+          0.795
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking through him",
+        "distant gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_40",
+          "text": "Jo. Trvalo to. Vím, že nemáš nedůvěru vůči mně. To se mi jen tak jeví. Vím, že svět je v pořádku a já jsem ten rozbitý. Všechno je v pořádku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Es hat gedauert. Ich weiß, dass du mir nicht misstraust. Das scheint mir nur so. Ich weiß, dass die Welt in Ordnung ist und ich der Kaputte bin. Alles ist gut.",
+            "en": "Yeah. It took a while. I know you don’t distrust me. It just seems that way. I know the world is fine and I’m the broken one. Everything’s okay.",
+            "fr": "Oui. Ça a pris du temps. Je sais que tu n’as pas de méfiance envers moi. C’est juste une impression. Je sais que le monde va bien et que c’est moi qui suis brisé. Tout va bien.",
+            "it": "Sì. Ci ho messo. So che non hai diffidenza verso di me. È solo una mia impressione. So che il mondo è a posto e sono io quello rotto. Va tutto bene.",
+            "ja": "ああ。時間がかかった。お前は俺を信用してないんだ。そう見えるだけだ。世界は大丈夫で、俺だけが壊れてる。全部大丈夫だ。",
+            "ko": "응. 오래 걸렸어. 네가 나를 불신하지 않는다는 걸 알아. 그냥 그렇게 느껴질 뿐이야. 세상은 괜찮고, 내가 망가진 거라는 걸 알아. 괜찮아, 다.",
+            "pl": "Tak. To trwało. Wiem, że nie masz do mnie braku zaufania. Tylko mi się tak wydaje. Wiem, że świat jest w porządku, a ja jestem ten zepsuty. Wszystko jest w porządku.",
+            "pt-BR": "Sim. Demorou. Eu sei que você não tem desconfiança em mim. É só impressão minha. Eu sei que o mundo está bem e sou eu o quebrado. Está tudo bem.",
+            "ru": "Да. Долго доходило. Я знаю, что ты мне не доверяешь. Мне так только кажется. Я знаю, что с миром всё в порядке, и я сломан. Всё в порядке.",
+            "uk": "Так. Тривало. Я знаю, що ти не маєш до мене недовіри. Мені так здається. Я знаю, що зі світом все гаразд, і я – зламаний. Все добре.",
+            "vi": "Ừ. Mất một thời gian. Ta biết ngươi không nghi ngờ ta. Chỉ là ta cảm thấy vậy thôi. Ta biết thế giới vẫn ổn, chỉ có ta là đổ vỡ. Mọi thứ đều ổn cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2954,
+          0.1477,
+          0.7249,
+          0.5865
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "otec_62"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "frowning",
+        "suspicious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_62",
+          "text": "Nevím, co tím zase myslíš, ty tvoje ironický tóny…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht, was du damit meinst, diese ironischen Untertöne…",
+            "en": "I don’t know what you mean with those sarcastic tones…",
+            "fr": "Je ne sais pas ce que tu veux dire avec tes airs ironiques…",
+            "it": "Non capisco cosa vuoi dire con quei tuoi toni ironici…",
+            "ja": "また何を言ってるんだ、その皮肉っぽい口調は…",
+            "ko": "네 빈정거리는 말투는 또 무슨 뜻인지 모르겠네…",
+            "pl": "Nie wiem, co znowu masz na myśli, te twoje ironiczne tony…",
+            "pt-BR": "Não sei o que você quer dizer com esses seus tons irônicos…",
+            "ru": "Не понимаю, что ты опять имеешь в виду, эти твои ироничные нотки…",
+            "uk": "Не знаю, що ти знову маєш на увазі, ці твої іронічні нотки…",
+            "vi": "Ta không biết ngươi lại ý tứ gì với mấy giọng mỉa mai này…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2574,
+          0.1969,
+          0.737,
+          0.6275
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_4",
+      "characters": [
+        {
+          "id": "syn_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_40",
+          "text": "Nic nemyslím. Jdu se nadechnout ven.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich meine nichts. Ich geh mal kurz raus.",
+            "en": "I don’t mean anything. I’m going out for some air.",
+            "fr": "Je ne veux rien dire. Je vais prendre l’air.",
+            "it": "Non voglio dire niente. Vado a prendere un po' d'aria.",
+            "ja": "何も。ちょっと外で息を吸ってくる。",
+            "ko": "아무 뜻 없어. 바깥 공기 좀 쐬러 갈게.",
+            "pl": "Nic nie myślę. Idę się przewietrzyć.",
+            "pt-BR": "Não quero dizer nada. Vou tomar um ar lá fora.",
+            "ru": "Ничего не имею в виду. Пойду подышу на воздухе.",
+            "uk": "Нічого не маю на увазі. Піду подихаю свіжим повітрям.",
+            "vi": "Ta không có ý gì đâu. Ta đi ra ngoài hít thở một chút."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.4178,
+          0.1819,
+          0.7695,
+          0.4976
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_byt_4",
+      "characters": [],
+      "visual_tags": [
+        "empty chair",
+        "breathing apparatus on the seat",
+        "rain light",
+        "no people",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

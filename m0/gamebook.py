@@ -198,12 +198,80 @@ def draft_story(g, node_id, src):
             "locations": [{"id": l["id"], "name": l["name"], "tag_prompt": l["tag_prompt"]} for l in locs], "panels": panels}
 
 
+def split_line(t, limit=150):
+    """A long line → bubbles of whole sentences, word for word and in order (one speaker, one panel)."""
+    if len(t) <= limit:
+        return [t]
+    parts, cur = [], ""
+    for s in re.split(r"(?<=[.!?…])\s+", t):
+        if cur and len(cur) + 1 + len(s) > limit:
+            parts.append(cur)
+            cur = s
+        else:
+            cur = f"{cur} {s}".strip()
+    return parts + ([cur] if cur else [])
+
+
+def script_story(g, node_id, src):
+    """Storyboard from a node's structured `script` (graph `draft` section): `say` = a line in its speaker's own panel,
+    `see` = a stage direction as a picture. Every line word for word, never two people in one picture."""
+    n, d = g["nodes"][node_id], g["draft"]
+    cast, loc0, panels, turn = n["cast"], n["location"], [], 0
+    bubble = lambda s, t: {"speaker_id": s, "text": t, "kind": "speech" if s else "narration"}
+    for e in n["script"]:
+        loc = e.get("loc", loc0)
+        if "say" in e:
+            turn += 1
+            cid = cast[e["say"]]
+            shot = e.get("shot") or ("close-up" if turn % 2 else "medium")
+            tags = d["speaking"] + e.get("tags", d["faces"][e["say"]][turn % 3])
+            panels.append({"shot": shot, "location_id": loc, "characters": [{"id": cid}], "visual_tags": tags,
+                           "bubbles": [bubble(cid, t) for t in split_line(e["text"])], "sfx": [], "gap_after": e.get("gap", "small"),
+                           "animate": False, "motion": ""})
+        else:
+            who = [{"id": cast[e["who"]]}] if e.get("who") else []
+            tags = e.get("tags", []) + ([] if who else ["no humans"] if "hand" not in " ".join(e.get("tags", [])) else [])
+            panels.append({"shot": e.get("shot", "medium"), "location_id": loc, "characters": who, "visual_tags": tags,
+                           "bubbles": [], "sfx": [], "gap_after": e.get("gap", "medium"),
+                           "animate": bool(e.get("animate")), "motion": e.get("animate", "")})
+    panels[-1]["gap_after"] = "large"
+    used = {c["id"] for p in panels for c in p["characters"]}
+    chars = [c for c in src["characters"] if c["id"] in used]
+    return {"id": story_id(g, node_id), "title": n["title"], "synopsis": g["premise"].strip()[:230], "ending": src["canon"]["constraints"][0],
+            "characters": [{"id": c["id"], "name": c["name"], "gender": c["gender"], "base": c["base"], "outfits": c["outfits"], "photo": c["photo"]}
+                           for c in chars],
+            "locations": [{"id": l["id"], "name": l["name"], "tag_prompt": l["tag_prompt"]} for l in src["locations"]
+                          if l["id"] in {p["location_id"] for p in panels}], "panels": panels}
+
+
 def cmd_draft(g):
-    """`write` for a text that must stay word for word (profile drama): no LLM, then `unify` as usual."""
+    """`write` for a text that must stay word for word (profile drama): no LLM, then `unify` as usual.
+    Nodes with a `script` are complete here (their world uses the source world's characters by id; no unify)."""
     sys.path.insert(0, str(ROOT / "m0"))
     import adapt
     src, style, failed = source_world(g), g["style_id"], False
-    for node_id in g["nodes"]:
+    for node_id, n in g["nodes"].items():
+        if "script" in n:
+            story = script_story(g, node_id, src)
+            errs = adapt.check(story, adapt.common_vocab(), profile=g["profile"])
+            if errs:
+                failed = True
+                print(node_id, *errs[:8], sep="\n  ")
+                continue
+            world, sb = adapt.to_m0(story, style, profile=g["profile"])
+            used_c = {c["id"] for p in sb["panels"] for c in p["characters"]}
+            used_l = sorted({p["location_id"] for p in sb["panels"]})
+            world = {**src, "id": "w_" + story["id"], "title": f"{g['title']} — {n['title']}",
+                     "characters": [c for c in src["characters"] if c["id"] in used_c],
+                     "locations": [l for l in src["locations"] if l["id"] in used_l],
+                     "permissions": {**src.get("permissions", {}), "allowed_locations": used_l},
+                     "gamebook": {"id": g["id"], "node": node_id}}
+            sb["title"] = n["title"]
+            d = DATA / "stories" / story["id"]
+            save_json(d / "world.json", world)
+            save_json(d / "storyboard.json", sb)
+            print(f"{node_id}: {len(sb['panels'])} panels, {sum(len(p['bubbles']) for p in sb['panels'])} bubbles")
+            continue
         story = draft_story(g, node_id, src)
         errs = adapt.check(story, adapt.common_vocab(), profile=g["profile"])
         if errs:

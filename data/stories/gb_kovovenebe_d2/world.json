@@ -1,0 +1,85 @@
+{
+  "id": "w_gb_kovovenebe_d2",
+  "title": "Kovové nebe nad námi — Křehký krunýř",
+  "synopsis": "Otec a syn v bytě megaměsta, padesát let pod kovovým nebem.",
+  "tone": "temný, tíživý, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze.",
+      "Dítě jen oblečené, bez násilí na těle."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Syn pochopí, že na svou záchranu byl celou dobu sám; otec se nezmění."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_byt_2",
+      "l_okno_2"
+    ]
+  },
+  "characters": [
+    {
+      "id": "otec_37",
+      "name": "Otec",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a stern Czech man aged 37 with short slicked-back dark hair going grey at the temples, a hard jaw and cold grey eyes",
+      "base": "adult, mature male, short dark hair greying at temples, square jaw, cold grey eyes",
+      "outfits": {
+        "default": "heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+      },
+      "photo": "a stern Czech man aged 37 with short slicked-back dark hair going grey at the temples, a hard jaw and cold grey eyes",
+      "tag_prompt": "adult, mature male, short dark hair greying at temples, square jaw, cold grey eyes, heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "syn_15",
+      "name": "Syn",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "(a lanky Czech teenage boy aged 15:1.2), young adolescent face, shaggy dark hair, tired grey eyes and lines of fatigue on his face",
+      "base": "teenage boy, shaggy dark hair, tired grey eyes",
+      "outfits": {
+        "default": "faded dark jacket over a grey hoodie"
+      },
+      "photo": "(a lanky Czech teenage boy aged 15:1.2), young adolescent face, shaggy dark hair, tired grey eyes and lines of fatigue on his face",
+      "tag_prompt": "teenage boy, shaggy dark hair, tired grey eyes, faded dark jacket over a grey hoodie",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_byt_2",
+      "name": "Byt – 2. dějství",
+      "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+      "tag_prompt": "indoors, cramped apartment in a dystopian megacity, shabbier, cluttered, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window",
+      "mood": ""
+    },
+    {
+      "id": "l_okno_2",
+      "name": "Okno – 2. dějství",
+      "description": "Okno bytu, za ním megaměsto.",
+      "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "kovovenebe",
+    "node": "d2"
+  }
+}

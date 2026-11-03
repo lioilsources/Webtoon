@@ -1,0 +1,77 @@
+{
+  "id": "w_gb_kovovenebe_d3",
+  "title": "Kovové nebe nad námi — Bod zlomu",
+  "synopsis": "Otec a syn v bytě megaměsta, padesát let pod kovovým nebem.",
+  "tone": "temný, tíživý, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze.",
+      "Dítě jen oblečené, bez násilí na těle."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Syn pochopí, že na svou záchranu byl celou dobu sám; otec se nezmění."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_byt_3"
+    ]
+  },
+  "characters": [
+    {
+      "id": "otec_52",
+      "name": "Otec",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a hard Czech man aged 52 with grey receding hair, deep frown lines and cold grey eyes",
+      "base": "adult, mature male, grey receding hair, deep frown lines, cold grey eyes",
+      "outfits": {
+        "default": "worn heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+      },
+      "photo": "a hard Czech man aged 52 with grey receding hair, deep frown lines and cold grey eyes",
+      "tag_prompt": "adult, mature male, grey receding hair, deep frown lines, cold grey eyes, worn heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "syn_30",
+      "name": "Syn",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a lean Czech man aged 30 with short dark hair, stubble and exhausted grey eyes",
+      "base": "adult, male, short dark hair, stubble, tired grey eyes",
+      "outfits": {
+        "default": "dark work jacket, grey shirt"
+      },
+      "photo": "a lean Czech man aged 30 with short dark hair, stubble and exhausted grey eyes",
+      "tag_prompt": "adult, male, short dark hair, stubble, tired grey eyes, dark work jacket, grey shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_byt_3",
+      "name": "Byt – 3. dějství",
+      "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+      "tag_prompt": "indoors, cramped apartment in a dystopian megacity, stained, smoke-darkened, cluttered with papers, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window, light grime on the walls",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "kovovenebe",
+    "node": "d3"
+  }
+}

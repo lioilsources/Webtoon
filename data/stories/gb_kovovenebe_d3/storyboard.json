@@ -1,0 +1,629 @@
+{
+  "title": "Bod zlomu",
+  "title_i18n": {
+    "de": "Wendepunkt",
+    "en": "Breaking Point",
+    "fr": "Point de rupture",
+    "it": "Punto di rottura",
+    "ja": "転換点",
+    "ko": "결정적 순간",
+    "pl": "Punkt zwrotny",
+    "pt-BR": "Ponto de Ruptura",
+    "ru": "Точка невозврата",
+    "uk": "Точка неповернення",
+    "vi": "Điểm gãy"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_byt_3",
+      "characters": [],
+      "visual_tags": [
+        "scorched electronics",
+        "smoke stains",
+        "stale air",
+        "empty room",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "syn_30"
+        }
+      ],
+      "visual_tags": [
+        "back against the wall",
+        "clenched fists"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2851,
+          0.1659,
+          0.6193,
+          0.4497
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "sitting in an armchair",
+        "signing a stack of papers",
+        "not looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3132,
+          0.1529,
+          0.6275,
+          0.4461
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "syn_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_30",
+          "text": "Už dost. Stačilo. Čtyřicet let poslouchám, že všechno, co vidím, slyším a cítím, je moje chyba.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Genug. Es reicht. Vierzig Jahre lang höre ich, dass alles, was ich sehe, höre und fühle, meine Schuld ist.",
+            "en": "That's enough. I've had it. Forty years of hearing that everything I see, hear, and feel is my fault.",
+            "fr": "Ça suffit. Assez. Quarante ans que j'entends qu'absolument tout ce que je vois, entends et ressens, c'est de ma faute.",
+            "it": "Basta. È finita. Da quarant'anni sento che ogni cosa che vedo, sento e provo è colpa mia.",
+            "ja": "もういい。うんざりだ。40年間、俺が見て、聞いて、感じることは全部俺のせいだって聞かされてきた。",
+            "ko": "이제 그만 해. 질렸다. 40년 동안 내가 보는 것, 듣는 것, 느끼는 모든 게 내 잘못이라 들었어.",
+            "pl": "Dosyć. To już wystarczy. Od czterdziestu lat słyszę, że wszystko, co widzę, słyszę i czuję, to moja wina.",
+            "pt-BR": "Chega! Já tive o bastante. Quarenta anos ouvindo que tudo que eu vejo, ouço e sinto é minha culpa.",
+            "ru": "Хватит. Всё. Сорок лет я слышу, что во всём, что я вижу, слышу и чувствую, моя вина.",
+            "uk": "Досить. Все. Сорок років я слухаю, що все, що я бачу, чую і відчуваю – моя провина.",
+            "vi": "Đủ rồi. Thôi đi. Bốn mươi năm rồi, tôi toàn nghe rằng mọi thứ tôi thấy, nghe và cảm nhận đều là lỗi của tôi."
+          }
+        },
+        {
+          "speaker_id": "syn_30",
+          "text": "Že já jsem ten nemocný, ten přecitlivělý, ten, kdo si vymýšlí realitu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ich der Kranke bin, der Überempfindliche, der sich die Realität ausdenkt.",
+            "en": "That I'm the sick one, the oversensitive one, the one who makes up reality.",
+            "fr": "Que je suis malade, trop sensible, que je me fais des films.",
+            "it": "Che sono io il malato, l'ipersensibile, quello che si inventa la realtà.",
+            "ja": "俺が病んでる、繊細すぎる、現実をでっち上げてるんだって。",
+            "ko": "내가 아프고, 예민하고, 현실을 꾸며낸다며.",
+            "pl": "Że to ja jestem chory, przewrażliwiony, ten, który sobie dopowiada rzeczywistość.",
+            "pt-BR": "Que eu sou o doente, o sensível demais, aquele que inventa a realidade.",
+            "ru": "Что я больной, слишком чувствительный, тот, кто придумывает реальность.",
+            "uk": "Що я хворий, надто чутливий, той, хто вигадує реальність.",
+            "vi": "Rằng tôi là kẻ bệnh hoạn, quá nhạy cảm, kẻ tự tạo ra thực tại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2725,
+          0.2185,
+          0.7881,
+          0.7109
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "not looking up",
+        "signing papers"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "Pořád to v sobě živíš, co? Tuhle utkvělou představu, že ti někdo ubližuje. Divíš se, že jsi sám, když každou normální konverzaci měníš v bitevní pole?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hegst das immer noch in dir, was? Diese fixe Idee, dass dir jemand schadet. Wunderst du dich, dass du allein bist, wenn du jedes normale Gespräch in ein Schlachtfeld verwandelst?",
+            "en": "You're still holding onto this, aren't you? This fixed idea that someone's hurting you. You wonder why you're alone when you turn every normal conversation into a battlefield?",
+            "fr": "Tu nourris toujours ça, hein ? Cette idée fixe que quelqu'un te fait du mal. Tu t'étonnes d'être seul quand tu transformes chaque conversation normale en champ de bataille ?",
+            "it": "Ci tieni ancora dentro, eh? Questa fissazione che qualcuno ti stia facendo del male. Ti stupisci se sei solo, quando trasformi ogni normale conversazione in un campo di battaglia?",
+            "ja": "まだそのこと引きずってるのか？ 誰かに傷つけられてるって、そんな根っからの考えを。普通の会話を戦場に変えるから、孤独だって思うんだろ？",
+            "ko": "아직도 그걸 곱씹고 있나? 누가 널 괴롭힌다는 그 낡은 생각 말이야. 정상적인 대화를 전장으로 바꾸니, 혼자라고 생각하는 게 당연하지?",
+            "pl": "Wciąż to pielęgnujesz, co? Tę upartą myśl, że ktoś cię krzywdzi. Dziwisz się, że jesteś sam, skoro każdą normalną rozmowę zamieniasz w pole bitwy?",
+            "pt-BR": "Você ainda cultiva isso, não é? Essa ideia fixa de que alguém está te machucando. Se surpreende por estar sozinho quando transforma qualquer conversa normal em campo de batalha?",
+            "ru": "Ты всё ещё это в себе носишь, да? Это заезженную идею, что тебе кто-то причиняет боль. Удивляешься, что ты один, когда превращаешь любой нормальный разговор в поле боя?",
+            "uk": "Ти все одно це в собі підтримуєш, так? Цю зациклену думку, що тобі хтось шкодить. Дивуєшся, що ти сам, коли перетворюєш кожну нормальну розмову на поле бою?",
+            "vi": "Vẫn cứ nuôi dưỡng nó trong lòng, đúng không? Cái ý nghĩ cố chấp rằng ai đó đang làm hại cậu. Cậu ngạc nhiên khi mình cô đơn, khi biến mọi cuộc trò chuyện bình thường thành chiến trường?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3361,
+          0.1236,
+          0.6234,
+          0.4059
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "syn_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "holding up a report",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_30",
+          "text": "V bitevní pole? Já ti přinesl oficiální zprávu o stavu budovy!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein Schlachtfeld? Ich habe dir einen offiziellen Bericht über den Zustand des Gebäudes mitgebracht!",
+            "en": "A battlefield? I brought you an official report on the building's condition!",
+            "fr": "Un champ de bataille ? Je t'ai apporté le rapport officiel sur l'état de l'immeuble !",
+            "it": "In un campo di battaglia? Ti ho portato il rapporto ufficiale sullo stato dell'edificio!",
+            "ja": "戦場だって？ 建物の状態に関する公式な報告書を届けに来たんだ！",
+            "ko": "전장이라고? 건물 상태에 대한 공식 보고서를 가져왔다고!",
+            "pl": "W pole bitwy? Przecież przyniosłem ci oficjalny raport o stanie budynku!",
+            "pt-BR": "Em campo de batalha? Eu trouxe o relatório oficial sobre o estado do prédio!",
+            "ru": "В поле боя? Я тебе принёс официальный отчёт о состоянии здания!",
+            "uk": "На поле бою? Я тобі приніс офіційний звіт про стан будівлі!",
+            "vi": "Chiến trường? Tôi mang báo cáo chính thức về tình trạng tòa nhà đến cho ông!"
+          }
+        },
+        {
+          "speaker_id": "syn_30",
+          "text": "Strop ve třetím patře se propadá kvůli netěsnícímu potrubí, které jí třicet let odmítáš opravit! Všichni odsud odešli!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Decke im dritten Stock bricht wegen eines undichten Rohrs ein, das du seit dreißig Jahren ignorierst! Alle sind weggezogen!",
+            "en": "The ceiling on the third floor is collapsing because of a leaking pipe you've refused to fix for thirty years! Everyone's moved out!",
+            "fr": "Le plafond du troisième étage s'effondre à cause d'une fuite que tu refuses de réparer depuis trente ans ! Tout le monde est parti !",
+            "it": "Il soffitto al terzo piano sta cedendo a causa di una tubatura che perde da trent'anni e che ti rifiuti di riparare! Tutti se ne sono andati!",
+            "ja": "3階の天井が、30年間も修理を拒否してきた漏水パイプのせいで崩れかけてる！ みんなここから出て行ったんだ！",
+            "ko": "3층 천장이 누수되는 파이프 때문에 무너지고 있는데, 그걸 30년 동안 고치길 거부했잖아! 다들 떠났어!",
+            "pl": "Sufit na trzecim piętrze się zapada przez cieknące rury, które od trzydziestu lat odmawiasz naprawy! Wszyscy stąd się wyprowadzili!",
+            "pt-BR": "O teto do terceiro andar está cedendo por causa de um cano vazando que você se recusa a consertar há trinta anos! Todo mundo saiu daqui!",
+            "ru": "Потолок на третьем этаже проседает из-за протекающей трубы, которую ты отказываешься чинить тридцать лет! Все отсюда ушли!",
+            "uk": "Стеля на третьому поверсі просідає через протікаючу трубу, яку ти відмовляєшся ремонтувати тридцять років! Всі звідси виїхали!",
+            "vi": "Trần tầng ba đang sập vì đường ống bị rò rỉ mà ông đã từ chối sửa chữa suốt ba mươi năm! Mọi người đều đã dọn đi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3083,
+          0.2291,
+          0.7898,
+          0.6842
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "Utíkají, protože jsou slabí. Stejně jako ty. Já jsem tenhle dům postavil, když tady byly jen trosky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie fliehen, weil sie schwach sind. Genauso wie du. Ich habe dieses Haus gebaut, als hier nur noch Trümmer waren.",
+            "en": "They're running away because they're weak. Just like you. I built this house when there was nothing but rubble.",
+            "fr": "Ils s'enfuient parce qu'ils sont faibles. Comme toi. C'est moi qui ai construit cette maison quand il n'y avait que des ruines.",
+            "it": "Scappano perché sono deboli. Come te. Io ho costruito questa casa quando qui c'erano solo macerie.",
+            "ja": "逃げ出したのは、弱かったからだ。お前も同じだ。俺が瓦礫しかない時にこの家を建てたんだ。",
+            "ko": "떠나는 건 다들 약해서 그래. 너처럼. 내가 이 집을 지었어, 여기 폐허만 남았을 때.",
+            "pl": "Uciekają, bo są słabi. Tak jak ty. Ja zbudowałem ten dom, kiedy były tu tylko ruiny.",
+            "pt-BR": "Eles fogem porque são fracos. Assim como você. Eu construí essa casa quando só havia escombros.",
+            "ru": "Они убегают, потому что слабые. Как и ты. Я этот дом построил на одних руинах.",
+            "uk": "Тікають, бо слабкі. Так само, як і ти. Я цей дім збудував, коли тут були лише руїни.",
+            "vi": "Chúng bỏ đi vì chúng yếu đuối. Giống như cậu. Tôi đã xây căn nhà này khi ở đây chỉ toàn đống đổ nát."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.358,
+          0.1157,
+          0.7623,
+          0.5006
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "Jestli se propadá strop, tak jen proto, že ho schválně podkopáváš svou negativní energií. Ty jsi ten, kdo ničí náš domov.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn die Decke einstürzt, dann nur, weil du sie mit deiner negativen Energie untergräbst. Du bist es, der unser Zuhause zerstört.",
+            "en": "If the ceiling's collapsing, it's only because you're undermining it with your negative energy. You're the one destroying our home.",
+            "fr": "Si le plafond s'effondre, c'est juste parce que tu le mines avec ton énergie négative. C'est toi qui détruis notre foyer.",
+            "it": "Se il soffitto cede, è solo perché lo stai minando con la tua energia negativa. Sei tu che stai distruggendo la nostra casa.",
+            "ja": "天井が崩れるのは、お前のネガティブなエネルギーでわざと掘り起こしてるからだ。お前こそが、俺たちの家を壊してるんだ。",
+            "ko": "천장이 무너지는 건 네 부정적인 에너지로 일부러 파헤쳤기 때문이야. 우리 집을 망치는 건 너야.",
+            "pl": "Jeśli się zapada sufit, to tylko dlatego, że go celowo podkopujesz swoją negatywną energią. To ty niszczysz nasz dom.",
+            "pt-BR": "Se o teto está cedendo, é só porque você está minando ele com sua energia negativa. Você é quem está destruindo nosso lar.",
+            "ru": "Если потолок проседает, то только потому, что ты специально его подкапываешь своей негативной энергией. Ты тот, кто разрушает наш дом.",
+            "uk": "Якщо просідає стеля, то лише тому, що ти навмисно підриваєш її своєю негативною енергією. Ти той, хто руйнує наш дім.",
+            "vi": "Nếu trần sập, chỉ vì cậu cố tình phá hoại bằng năng lượng tiêu cực của mình thôi. Cậu mới là kẻ phá hủy ngôi nhà của chúng ta."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2352,
+          0.1835,
+          0.7623,
+          0.7078
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "syn_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "furious",
+        "pleading"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_30",
+          "text": "Já ho ničím? Já tady žiju v plísni a toxických výparech, protože odmítáš připustit jedinou chybu! Jedinou věc v životě!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich zerstöre es? Ich lebe hier in Schimmel und giftigen Dämpfen, weil du dich weigerst, auch nur einen einzigen Fehler zuzugeben! Eine einzige Sache in deinem Leben!",
+            "en": "I'm destroying it? I'm living in mold and toxic fumes because you refuse to admit even one mistake! One thing in your life!",
+            "fr": "Moi, je le détruis ? Je vis ici dans la moisissure et des vapeurs toxiques parce que tu refuses d'admettre la moindre erreur ! Une seule chose dans ta vie !",
+            "it": "Io la sto distruggendo? Io vivo qui nella muffa e tra fumi tossici perché ti rifiuti di ammettere un solo errore! Una sola cosa in vita tua!",
+            "ja": "俺が壊してる？ カビと有毒ガスの中で暮らしてるのは、たった一つの間違いも認めようとしないからだ！ 一生にたった一つのことだ！",
+            "ko": "내가 망쳐? 곰팡이랑 유독가스 속에서 살고 있는 건, 네가 단 하나의 잘못도 인정하려 하지 않아서야! 단 하나라도!",
+            "pl": "Ja go niszczę? Ja tu żyję w pleśni i toksycznych oparach, bo odmawiasz przyznania się do choćby jednego błędu! Do jednej rzeczy w życiu!",
+            "pt-BR": "Eu estou destruindo? Eu vivo aqui no mofo e em vapores tóxicos porque você se recusa a admitir um único erro! Uma única coisa na vida!",
+            "ru": "Я его разрушаю? Я здесь живу в плесени и токсичных испарениях, потому что ты отказываешься признать хоть одну ошибку! Единую вещь в жизни!",
+            "uk": "Я його руйную? Я тут живу в плісняві та токсичних випарах, бо ти відмовляєшся визнати хоч одну помилку! Хоч одну річ у житті!",
+            "vi": "Tôi phá hủy nó? Tôi sống trong nấm mốc và hơi độc hại vì ông từ chối thừa nhận dù chỉ một sai lầm! Một điều gì đó trong cuộc đời!"
+          }
+        },
+        {
+          "speaker_id": "syn_30",
+          "text": "Zkus se jednou, jen jedinkrát podívat na situaci očima někoho jiného!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Versuch doch mal, nur einmal die Situation mit den Augen eines anderen zu sehen!",
+            "en": "Try, just once, to look at the situation through someone else's eyes!",
+            "fr": "Essaie une fois, juste une seule fois, de voir les choses avec les yeux de quelqu'un d'autre !",
+            "it": "Prova, solo una volta, a guardare la situazione con gli occhi di qualcun altro!",
+            "ja": "一度だけでも、他の人の目を通して状況を見てみろ！",
+            "ko": "제발 딱 한 번만 다른 사람의 눈으로 상황을 봐봐!",
+            "pl": "Spróbuj raz, tylko raz spojrzeć na sytuację oczami kogoś innego!",
+            "pt-BR": "Tenta, só uma vez, olhar para a situação pelos olhos de outra pessoa!",
+            "ru": "Попробуй хоть раз, всего один раз посмотреть на ситуацию глазами другого человека!",
+            "uk": "Спробуй хоч раз, лише один раз подивитися на ситуацію очима іншої людини!",
+            "vi": "Hãy thử nhìn nhận tình hình qua con mắt của người khác, dù chỉ một lần!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2554,
+          0.1642,
+          0.6677,
+          0.5121
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "standing up from the armchair",
+        "towering",
+        "icy expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2667,
+          0.1158,
+          0.6975,
+          0.5472
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "icy expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "Já se dívám na fakta. A fakt je ten, že jsi nevděčný parazit, který mi celá desetiletí vysává život z těla. Kdyby nebylo mě, hyneš v kanálu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sehe die Fakten. Und die Tatsache ist, dass du ein undankbarer Parasit bist, der mir seit Jahrzehnten das Leben aussaugt. Ohne mich gäbe es dich nicht.",
+            "en": "I'm looking at facts. And the fact is, you're an ungrateful parasite who's been draining the life out of me for decades. Without me, you'd be in the gutter.",
+            "fr": "Je vois les faits. Et le fait, c'est que tu es un parasite ingrat qui me suce la vie depuis des décennies. Sans moi, tu finiras à la rue.",
+            "it": "Io guardo i fatti. E il fatto è che sei un parassita ingrato che mi succhia la vita da decenni. Se non ci fossi io, moriresti in un fosso.",
+            "ja": "俺は事実を見ている。そして事実は、お前が何十年も俺の命を吸い尽くす、恩知らずの寄生虫だということだ。俺がいなければ、お前は干からびて死んでいただろう。",
+            "ko": "나는 사실만 봐. 그리고 사실은 네가 수십 년 동안 내 생기를 빨아먹는 고마운 기생충이라는 거야. 내가 없었다면 진즉에 곤두박질쳤을 거다.",
+            "pl": "Ja patrzę na fakty. A fakt jest taki, że jesteś niewdzięcznym pasożytem, który od dziesięcioleci wysysa ze mnie życie. Gdyby nie ja, zginąłbyś w kanałach.",
+            "pt-BR": "Eu vejo os fatos. E o fato é que você é um parasita ingrato que suga minha vida há décadas. Se não fosse por mim, você estaria no esgoto.",
+            "ru": "Я смотрю на факты. А факт в том, что ты неблагодарный паразит, который высасывает из меня жизнь десятилетиями. Если бы не я, ты бы сдох в канаве.",
+            "uk": "Я дивлюся на факти. А факт в тому, що ти невдячний паразит, який висмоктує з мене життя цілі десятиліття. Якби не я, ти б загинув у канаві.",
+            "vi": "Tôi nhìn sự thật. Và sự thật là cậu là một kẻ ký sinh bất ing, hút cạn sinh lực của tôi suốt nhiều thập kỷ. Nếu không có tôi, cậu đã chết từ lâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2487,
+          0.1357,
+          0.7439,
+          0.6363
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "A ty mi tu budeš vykládat o chybách? Vypadni z mého obzoru, jestli na to máš nervy. Ale nezapomeň, že bez mé střechy jsi naprostá nula.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du willst mir hier von Fehlern erzählen? Verschwinde aus meinem Blickfeld, wenn du den Mut hast. Aber vergiss nicht, dass du ohne mein Dach ein Nichts bist.",
+            "en": "And you're going to lecture me about mistakes? Get out of my sight if you have the guts. But don't forget, without my roof over your head, you're nothing.",
+            "fr": "Et toi, tu vas me faire la leçon sur les erreurs ? Dégage de mon champ de vision si tu l'oses. Mais n'oublie pas, sans mon toit, tu ne vaux rien.",
+            "it": "E tu mi vieni a parlare di errori? Sparisci dalla mia vista, se hai il coraggio. Ma ricorda, senza il mio tetto sei un nessuno.",
+            "ja": "そしてお前が俺に間違いについて語るのか？ もし度胸があるなら、俺の視界から消えろ。だが忘れるな、俺の屋根がなければ、お前はただのゼロだ。",
+            "ko": "그런데 네가 나한테 잘못에 대해 가르쳐? 내 눈앞에서 사라져, 감당할 수 있다면. 하지만 내 지붕 없이는 아무것도 아니라는 걸 잊지 마.",
+            "pl": "A ty mi tu będziesz opowiadał o błędach? Znikaj mi z oczu, jeśli masz odwagę. Ale pamiętaj, że bez mojego dachu jesteś nikim.",
+            "pt-BR": "E você ainda vem me falar de erros? Suma da minha frente se tiver coragem. Mas não esqueça que sem meu teto você não é nada.",
+            "ru": "И ты мне будешь рассказывать об ошибках? Исчезни из моего поля зрения, если у тебя хватит духу. Но не забывай, что без моей крыши ты – полный ноль.",
+            "uk": "І ти мені тут будеш розповідати про помилки? Зникни з мого горизонту, якщо маєш на це сміливість. Але пам'ятай, що без мого даху ти – повний нуль.",
+            "vi": "Và cậu dám nói với tôi về sai lầm? Biến khỏi tầm mắt tôi nếu cậu đủ can đảm. Nhưng đừng quên, không có mái nhà của tôi, cậu chẳng là gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2935,
+          0.1507,
+          0.7275,
+          0.6202
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "syn_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "shouting",
+        "rage and despair",
+        "tears"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_30",
+          "text": "Ty jsi lhář! Nejsi bůh, nejsi ochránce! Jsi jen nemocný člověk, který neumí unést vlastní selhání!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist ein Lügner! Du bist kein Gott, kein Beschützer! Du bist nur ein kranker Mensch, der seine eigenen Fehler nicht ertragen kann!",
+            "en": "You're a liar! You're not a god, you're not a protector! You're just a sick man who can't handle his own failures!",
+            "fr": "Tu es un menteur ! Tu n'es pas un dieu, tu n'es pas un protecteur ! Tu es juste un homme malade qui ne supporte pas ses propres échecs !",
+            "it": "Tu sei un bugiardo! Non sei un dio, non sei un protettore! Sei solo un malato che non sa accettare i propri fallimenti!",
+            "ja": "お前は嘘つきだ！ 神でも、守護者でもない！ 自分の失敗を受け入れられない、ただの病んだ人間だ！",
+            "ko": "너 거짓말쟁이야! 넌 신도 아니고, 보호자도 아니야! 그냥 자신의 실패를 감당할 수 없는 병든 사람일 뿐이야!",
+            "pl": "Jesteś kłamcą! Nie jesteś bogiem, nie jesteś obrońcą! Jesteś tylko chorym człowiekiem, który nie potrafi znieść własnych porażek!",
+            "pt-BR": "Você é um mentiroso! Você não é um deus, não é um protetor! Você é só um doente que não consegue lidar com seus próprios fracassos!",
+            "ru": "Ты лжец! Ты не бог, ты не защитник! Ты просто больной человек, который не может вынести собственные неудачи!",
+            "uk": "Ти брехун! Ти не бог, ти не захисник! Ти просто хворий чоловік, який не може змиритися з власними провалами!",
+            "vi": "Ông là kẻ nói dối! Ông không phải thần, không phải người bảo vệ! Ông chỉ là một người bệnh không chịu nổi thất bại của mình!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3606,
+          0.128,
+          0.7818,
+          0.5217
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [
+        {
+          "id": "otec_52"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_52",
+          "text": "Vidíš se? Celý ty jsi. Hysterický cvok.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sieh dich an. Du bist doch ganz genau wie er. Ein hysterischer Verrückter.",
+            "en": "Look at yourself. You're the whole problem. A hysterical freak.",
+            "fr": "Regarde-toi. Tu es tout ça. Un fou hystérique.",
+            "it": "Guarda te stesso. Sei tutto te. Un isterico.",
+            "ja": "自分のことを見てみろよ。お前は全部そうだ。ヒステリックな狂人だ。",
+            "ko": "네 모습을 봐. 온통 너잖아. 히스테리컬한 녀석.",
+            "pl": "Popatrz na siebie. Cały ty. Histeryczny wariat.",
+            "pt-BR": "Se olha! Você é todo você. Um histérico.",
+            "ru": "Ты посмотри на себя! Ты весь такой. Истерик.",
+            "uk": "Ти подивись на себе? Ти весь такий. Істерик.",
+            "vi": "Nhìn cậu kìa? Toàn bộ là cậu đấy. Một kẻ điên cuồng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.231,
+          0.167,
+          0.8126,
+          0.7498
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_3",
+      "characters": [],
+      "visual_tags": [
+        "stack of papers",
+        "stained table",
+        "pen",
+        "smoke haze",
+        "no people",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "faces": []
+    }
+  ]
+}

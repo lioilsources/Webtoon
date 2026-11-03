@@ -3,6 +3,7 @@
 Order: quality, count tags, character tag_prompt, artist/style preset, scene tags, special.
 """
 
+import re
 import rules
 from common import dedupe, split_tags
 
@@ -132,7 +133,9 @@ def _natural(panel, chars, design_of, locs, styles, preset, world, sfw):
     elif people:
         lead = [NATURAL["group_lead"].format(n=len(people))] + action + [NATURAL["group_person"].format(p=p) for p in people]
     else:
-        lead = [NATURAL["empty"]] + action
+        # an insert of hands (no character in the panel): "no people" would erase the hands too
+        hands = any(re.search(r"\b(hands?|palms?)\b", t) for t in action)
+        lead = (["(close-up of hands:1.3)", "face not visible"] if hands else [NATURAL["empty"]]) + action
     pos = dedupe(preset["quality_pos"] + shot + lead
                  + (split_tags(loc["tag_prompt"]) if loc else []) + preset["aesthetic_tags"])
     neg = dedupe(preset["quality_neg"] + styles["always_negative"] + (styles["sfw_negative"] if sfw else [])

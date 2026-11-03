@@ -1,0 +1,477 @@
+{
+  "title": "Dědictví mlhy",
+  "title_i18n": {
+    "de": "Das Erbe des Nebels",
+    "en": "Legacy of Mist",
+    "fr": "L'héritage du brouillard",
+    "it": "L'eredità della nebbia",
+    "ja": "霧の遺産",
+    "ko": "안개의 유산",
+    "pl": "Dziedzictwo mgły",
+    "pt-BR": "A Herança da Névoa",
+    "ru": "Наследие тумана",
+    "uk": "Спадщина туману",
+    "vi": "Di sản sương mù"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_okno_1",
+      "characters": [],
+      "visual_tags": [
+        "heavy oily rain",
+        "red siren lights",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "otec_30"
+        }
+      ],
+      "visual_tags": [
+        "sitting at metal table",
+        "disassembled breathing filter on the table",
+        "focused",
+        "not looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.1686,
+          0.2618,
+          0.7458,
+          0.7747
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "syn_8"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "oversized breathing mask strapped too tight",
+        "uncomfortable",
+        "looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3163,
+          0.2298,
+          0.7268,
+          0.6181
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "syn_8"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_8",
+          "text": "Tati… mně ta maska strašně dře. Nemůžu přes ni pořádně dýchat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa… diese Maske schneidet mir so rein! Ich krieg kaum Luft.",
+            "en": "Dad… this mask is really chafing. I can't breathe properly through it.",
+            "fr": "Papa… ce masque me serre trop. J'arrive pas à bien respirer.",
+            "it": "Papà… questa maschera mi stringe troppo. Non riesco a respirare bene.",
+            "ja": "父さん… このマスク、マジで締め付けがキツい。全然息ができない…",
+            "ko": "아버지… 이 마스크가 너무 조여요. 숨을 제대로 쉴 수가 없어요.",
+            "pl": "Tato… ta maska strasznie mnie uwiera. Nie mogę przez nią normalnie oddychać.",
+            "pt-BR": "Pai… essa máscara tá me apertando demais. Não consigo respirar direito.",
+            "ru": "Пап… эта маска жутко давит. Я через неё почти не могу дышать.",
+            "uk": "Тату… ця маска жахливо врізається. Я не можу нормально дихати крізь неї.",
+            "vi": "Bố… cái mặt nạ này nó cứ cọ xát vào mặt con quá. Con thở không nổi."
+          }
+        },
+        {
+          "speaker_id": "syn_8",
+          "text": "Bolej mě plíce a venku lidi říkali, že vzduch je dneska jedovatý, že se tvoří ty fialové obláčky z chemičky…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Meine Lunge brennt und draußen sagen die Leute, die Luft sei heute giftig, wegen dieser violetten Wolken aus der Chemiefabrik…",
+            "en": "My lungs hurt, and people outside said the air is poisonous today, that those purple clouds are forming from the chemical plant…",
+            "fr": "J'ai mal aux poumons et dehors, les gens disaient que l'air est toxique aujourd'hui, qu'il y a ces nuages violets qui sortent de l'usine…",
+            "it": "Mi fanno male i polmoni e fuori la gente dice che l'aria è tossica oggi, che si formano quelle nuvole viola dalla fabbrica…",
+            "ja": "肺が痛いし、外の人たちは今日、空気が有毒だって言ってた。あの化学工場から紫色の雲ができてるって…",
+            "ko": "폐가 아프고, 밖에선 오늘 공기가 독하다고, 화학 공장에서 보라색 연기가 난다고 하던데요…",
+            "pl": "Płuca bolą, a ludzie na dworze mówili, że powietrze jest dzisiaj trujące, że tworzą się te fioletowe chmury z chemicznej fabryki…",
+            "pt-BR": "Meus pulmões estão doendo e lá fora as pessoas disseram que o ar tá tóxico hoje, que tão formando aquelas nuvens roxas da fábrica…",
+            "ru": "У меня болят лёгкие, а на улице люди говорили, что воздух сегодня отравлен, что эти фиолетовые облачка от завода…",
+            "uk": "У мене болять легені, а на вулиці люди казали, що повітря сьогодні отруйне, що утворюються ці фіолетові хмаринки з хімзаводу…",
+            "vi": "Lồng ngực con đau quá, rồi người ta bảo ngoài kia hôm nay không khí độc hại, có mấy đám mây tím từ nhà máy hóa chất…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2183,
+          0.2033,
+          0.7296,
+          0.6306
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "otec_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "not looking up",
+        "working on the filter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_30",
+          "text": "Lidé, chlapče? Kteří lidé? Ti uřvaní darmožrouti na rohu, co neumějí ani spočítat kapacity filtrace? Podívej se na mě. Dýchám bez masky? Dýchám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Leute, Junge? Welche Leute? Diese schreienden Taugenichtse an der Ecke, die nicht mal Filterkapazitäten ausrechnen können? Sieh mich an. Atme ich ohne Maske? Atme ich.",
+            "en": "People, boy? Which people? Those screeching layabouts on the corner who can't even calculate filter capacity? Look at me. Am I breathing without a mask? I am.",
+            "fr": "Des gens, mon garçon ? Quels gens ? Ces bavards qui ne savent même pas calculer la capacité des filtres ? Regarde-moi. Je respire sans masque ? Je respire.",
+            "it": "La gente, ragazzo? Che gente? Quei urlatori parassiti all'angolo che non sanno nemmeno calcolare la capacità dei filtri? Guardami. Io respiro senza maschera? Respiro.",
+            "ja": "人々だと？ どの人々だ？ ろくに濾過能力も計算できない、角の騒がしい寄生虫どもか？ 俺を見てみろ。俺はマスクなしで呼吸してるだろう？ 呼吸してるんだ",
+            "ko": "사람들이? 어떤 사람들이? 필터 용량도 제대로 못 세는 저 멍청이들이나? 날 봐. 나 마스크 안 쓰고 숨 쉬고 있잖아? 숨 쉬고 있다고.",
+            "pl": "Ludzie, chłopcze? Jacy ludzie? Ci wrzeszczący darmozjady z rogu, co nie umieją nawet policzyć przepustowości filtrów? Spójrz na mnie. Ja oddycham bez maski? Oddycham.",
+            "pt-BR": "Pessoas, garoto? Que pessoas? Aqueles gritões vagabundos da esquina que nem sabem calcular a capacidade dos filtros? Olha pra mim. Eu tô respirando sem máscara? Tô respirando.",
+            "ru": "Люди, мальчик? Какие люди? Эти вопящие дармоеды с угла, которые даже фильтры не умеют посчитать? Посмотри на меня. Я без маски дышу? Дышу.",
+            "uk": "Люди, хлопче? Які люди? Ті верескуни-дармоїди на розі, які навіть не вміють порахувати потужність фільтрів? Поглянь на мене. Я дихаю без маски? Дихаю.",
+            "vi": "Người ta? Những ai? Đám ồn ào vô dụng ở góc phố, đến cả công suất lọc cũng không tính được? Nhìn bố này. Bố thở được mà không cần mặt nạ? Bố thở đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2861,
+          0.1384,
+          0.6135,
+          0.4368
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "syn_8"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "anxious expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_8",
+          "text": "No… ne. Ale ty jsi dospělý a já…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Naja… nicht wirklich. Aber du bist erwachsen und ich…",
+            "en": "Well… no. But you're an adult and I…",
+            "fr": "Euh… non. Mais toi, t'es un adulte et moi…",
+            "it": "Beh… no. Ma tu sei un adulto e io…",
+            "ja": "う… うん。でも、あなたは大人だし、僕は…",
+            "ko": "음… 아니에요. 근데 아버지는 어른이고 저는…",
+            "pl": "No… nie. Ale ty jesteś dorosły, a ja…",
+            "pt-BR": "É… não. Mas você é adulto e eu…",
+            "ru": "Ну… нет. Но ты взрослый, а я…",
+            "uk": "Ну… ні. Але ти дорослий, а я…",
+            "vi": "Ờ… không. Nhưng bố là người lớn còn con…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1805,
+          0.1879,
+          0.6935,
+          0.6531
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "otec_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_30",
+          "text": "Maska tě nedře proto, že by byla špatná, ale proto, že neumíš správně dýchat. Jsi slabý. Povoluješ v pase, hrbíš se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Maske schneidet nicht, weil sie schlecht ist, sondern weil du nicht richtig atmest. Du bist schwach. Du lässt in der Hose nach, gehst krumm.",
+            "en": "The mask isn't chafing because it's bad, but because you don't know how to breathe properly. You're weak. You're letting your gut hang, you're slouching.",
+            "fr": "Le masque te serre pas parce qu'il est mauvais, mais parce que tu sais pas respirer correctement. T'es faible. Tu laisses trainer, tu te voûtes.",
+            "it": "La maschera ti stringe non perché sia sbagliata, ma perché non sai respirare correttamente. Sei debole. Ti rilassi troppo, ti curvi.",
+            "ja": "マスクがキツいのは、マスクが悪いからじゃない。お前が呼吸の仕方が下手なだけだ。弱いんだ。腹が緩んで、猫背になっている",
+            "ko": "마스크가 불편한 건 마스크가 나쁜 게 아니라, 네가 숨 쉬는 방법을 모르는 거다. 넌 약해. 허리가 굽고, 구부정하게 서 있잖아.",
+            "pl": "Maska cię uwiera nie dlatego, że jest zła, ale dlatego, że nie umiesz prawidłowo oddychać. Jesteś słaby. Rozluźniasz pas, garbisz się.",
+            "pt-BR": "A máscara tá te apertando não porque é ruim, mas porque você não sabe respirar direito. Você é fraco. Tá mole na cintura, curvado.",
+            "ru": "Маска давит не потому, что плохая, а потому что ты неправильно дышишь. Ты слабак. Живот втягиваешь, сутулишься.",
+            "uk": "Маска врізається не тому, що вона погана, а тому, що ти не вмієш правильно дихати. Ти слабкий. Розслаблюєшся в поясі, сутулишся.",
+            "vi": "Mặt nạ không cọ xát vì nó dở, mà vì con không biết thở đúng cách. Con yếu đuối. Eo con mềm nhũn, lưng con còng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3134,
+          0.1239,
+          0.7067,
+          0.4849
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "otec_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_30",
+          "text": "Kdybych ti nedal ten nejlepší model na trhu, už bys dávno sípal v nemocnici. A ty mi tu budeš vykládat o fialových obláčcích?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn ich dir nicht das beste Modell auf dem Markt gegeben hätte, wärst du schon längst im Krankenhaus. Und du willst mir jetzt was von violetten Wolken erzählen?",
+            "en": "If I hadn't given you the best model on the market, you'd be in the hospital already. And you'd be telling me about purple clouds?",
+            "fr": "Si je t'avais pas donné le meilleur modèle du marché, t'aurais déjà fini à l'hôpital. Et toi, tu vas m'parler de nuages violets ?",
+            "it": "Se non ti avessi dato il modello migliore sul mercato, saresti già collassato in ospedale. E tu mi vieni a parlare di nuvole viola?",
+            "ja": "もし俺がお前に市販の最高級モデルを与えてなければ、とっくに病院で苦しんでいたはずだ。お前が紫色の雲について話すとはな？",
+            "ko": "내가 네게 시장에서 제일 좋은 모델을 안 줬으면 벌써 병원에 실려 갔을 거다. 그리고 네가 나한테 보라색 연기 얘기를 할 거야?",
+            "pl": "Gdybym ci nie dał najlepszego modelu na rynku, już byś dawno leżał w szpitalu. A ty mi tu będziesz opowiadał o fioletowych chmurach?",
+            "pt-BR": "Se eu não tivesse te dado o melhor modelo do mercado, já estaria internado no hospital. E você vem me falar de nuvens roxas?",
+            "ru": "Если бы я тебе не дал лучшую модель на рынке, ты бы уже давно валялся в больнице. А ты мне тут рассказываешь про фиолетовые облачка?",
+            "uk": "Якби я тобі не дав найкращу модель на ринку, ти б вже давно лежав у лікарні. А ти мені тут будеш розповідати про фіолетові хмаринки?",
+            "vi": "Nếu bố không cho con cái loại tốt nhất trên thị trường, con đã phải nằm viện từ lâu rồi. Thế mà con dám nói với bố về mấy đám mây tím kia?"
+          }
+        },
+        {
+          "speaker_id": "otec_30",
+          "text": "Já tě chráním před světem, který by tě sežral za syrova.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich beschütze dich vor einer Welt, die dich lebendig verschlingen würde.",
+            "en": "I'm protecting you from a world that would devour you raw.",
+            "fr": "Je te protège du monde qui t'boufferait cru.",
+            "it": "Io ti proteggo da un mondo che ti divorerebbe vivo.",
+            "ja": "俺がお前を、生きたまま食い尽くす世界から守っているんだ",
+            "ko": "내가 널 세상으로부터 지키는 거다. 세상은 널 통째로 삼켜 버릴 테니까.",
+            "pl": "Ja cię chronię przed światem, który by cię zjadł na surowo.",
+            "pt-BR": "Eu tô te protegendo de um mundo que te engoliria vivo.",
+            "ru": "Я тебя защищаю от мира, который бы тебя живьём съел.",
+            "uk": "Я захищаю тебе від світу, який з’їсть тебе живим.",
+            "vi": "Bố bảo vệ con khỏi một thế giới sẽ nuốt chửng con sống sờ sờ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2829,
+          0.1854,
+          0.7708,
+          0.6536
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "syn_8"
+        }
+      ],
+      "visual_tags": [
+        "pulling the mask straps tighter",
+        "red pressure marks on cheeks",
+        "eyes down"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.249,
+          0.1846,
+          0.754,
+          0.6709
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "syn_8"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "small voice"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_8",
+          "text": "Promiň… já jsem nechtěl. Já jenom… myslel jsem, že…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Entschuldige… das wollte ich nicht. Ich dachte nur…",
+            "en": "Sorry… I didn't mean to. I just… I thought that…",
+            "fr": "Pardon… j'voulais pas. J'pensais juste que…",
+            "it": "Scusa… non volevo. Volevo solo… pensavo che…",
+            "ja": "ごめん… そういうつもりじゃなかった。ただ… そうだと思ってた…",
+            "ko": "죄송해요… 제가 그러려고 한 건 아니에요. 그냥… 그렇게 생각했어요…",
+            "pl": "Przepraszam… nie chciałem. Ja tylko… myślałem, że…",
+            "pt-BR": "Desculpa… eu não quis. Eu só… achei que…",
+            "ru": "Прости… я не хотел. Я просто… думал, что…",
+            "uk": "Вибач… я не хотів. Я просто… думав, що…",
+            "vi": "Xin lỗi… con không cố ý. Con chỉ… nghĩ là…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2573,
+          0.2604,
+          0.7312,
+          0.7146
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_1",
+      "characters": [
+        {
+          "id": "otec_30"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_30",
+          "text": "Nemysli. To je tvůj hlavní problém. Od toho jsem tady já. Vzduch je čistý, jenom ty jsi přecitlivělý.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Denk nicht. Das ist dein Hauptproblem. Dafür bin ich doch da. Die Luft ist sauber, du bist nur empfindlich geworden.",
+            "en": "Don't think. That's your main problem. That's what I'm here for. The air is clean, you're just being oversensitive.",
+            "fr": "Arrête de penser. C'est ton principal problème. C'est pour ça que je suis là. L'air est pur, t'es juste devenu trop sensible.",
+            "it": "Non pensare. È questo il tuo problema principale. Ci sono io per questo. L'aria è pulita, sei solo tu che sei troppo sensibile.",
+            "ja": "考えるな。それがお前の最大の欠点だ。だから俺がいるんだ。空気は綺麗だ。お前が神経質になっているだけだ",
+            "ko": "생각하지 마. 그게 네 가장 큰 문제야. 그건 내가 할 일이지. 공기는 깨끗하다. 넌 그냥 예민해진 것뿐이야.",
+            "pl": "Nie myśl. To twój główny problem. Od tego jestem ja. Powietrze jest czyste, tylko ty jesteś wyczulony.",
+            "pt-BR": "Não pense. Esse é o seu maior problema. Pra isso que eu tô aqui. O ar tá limpo, você que tá sensível demais.",
+            "ru": "Не думай. Это твоя главная проблема. Для этого я и есть. Воздух чистый, просто ты слишком чувствительный.",
+            "uk": "Не думай. Це твоя головна проблема. Для цього я тут. Повітря чисте, просто ти стаєш надто чутливим.",
+            "vi": "Đừng nghĩ. Đó là vấn đề lớn nhất của con. Để bố lo. Không khí sạch sẽ, chỉ là con quá nhạy cảm thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2772,
+          0.1621,
+          0.7176,
+          0.6005
+        ]
+      ]
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_okno_1",
+      "characters": [],
+      "visual_tags": [
+        "purple toxic cloud over the city",
+        "rain",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "slow purple haze drifting, rain falling, neon flicker, static camera",
+      "faces": []
+    }
+  ]
+}

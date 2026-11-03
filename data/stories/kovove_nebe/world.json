@@ -1,0 +1,281 @@
+{
+ "id": "w_kovove_nebe",
+ "title": "Kovové nebe nad námi",
+ "synopsis": "Otec a syn v bytě megaměsta, padesát let pod kovovým nebem.",
+ "tone": "temný, tíživý, lidský",
+ "audience": "adult",
+ "language": "cs",
+ "style_id": "noir_graphic",
+ "profile": "noir",
+ "bible": {
+  "rules": [
+   "SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze.",
+   "Dítě jen oblečené, bez násilí na těle."
+  ],
+  "factions": []
+ },
+ "canon": {
+  "nodes": [],
+  "constraints": [
+   "Syn pochopí, že na svou záchranu byl celou dobu sám; otec se nezmění."
+  ]
+ },
+ "permissions": {
+  "allowed_locations": [
+   "l_byt_1",
+   "l_okno_1",
+   "l_byt_2",
+   "l_okno_2",
+   "l_byt_3",
+   "l_okno_3",
+   "l_byt_4",
+   "l_okno_4",
+   "l_byt_5",
+   "l_okno_5"
+  ]
+ },
+ "characters": [
+  {
+   "id": "otec_30",
+   "name": "Otec",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a stern Czech man aged 30 with short slicked-back dark hair, a hard square jaw and cold grey eyes",
+   "base": "adult, mature male, short slicked-back dark hair, square jaw, cold grey eyes, clean-shaven",
+   "outfits": {
+    "default": "heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+   },
+   "photo": "a stern Czech man aged 30 with short slicked-back dark hair, a hard square jaw and cold grey eyes",
+   "tag_prompt": "adult, mature male, short slicked-back dark hair, square jaw, cold grey eyes, clean-shaven, heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "otec_37",
+   "name": "Otec",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a stern Czech man aged 37 with short slicked-back dark hair going grey at the temples, a hard jaw and cold grey eyes",
+   "base": "adult, mature male, short dark hair greying at temples, square jaw, cold grey eyes",
+   "outfits": {
+    "default": "heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+   },
+   "photo": "a stern Czech man aged 37 with short slicked-back dark hair going grey at the temples, a hard jaw and cold grey eyes",
+   "tag_prompt": "adult, mature male, short dark hair greying at temples, square jaw, cold grey eyes, heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "otec_52",
+   "name": "Otec",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a hard Czech man aged 52 with grey receding hair, deep frown lines and cold grey eyes",
+   "base": "adult, mature male, grey receding hair, deep frown lines, cold grey eyes",
+   "outfits": {
+    "default": "worn heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+   },
+   "photo": "a hard Czech man aged 52 with grey receding hair, deep frown lines and cold grey eyes",
+   "tag_prompt": "adult, mature male, grey receding hair, deep frown lines, cold grey eyes, worn heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "otec_62",
+   "name": "Otec",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a rigid old Czech man aged 62 with thin white hair, a lined stubborn face and cold grey eyes",
+   "base": "old man, thin white hair, wrinkled stubborn face, cold grey eyes",
+   "outfits": {
+    "default": "shabby heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2), walking cane"
+   },
+   "photo": "a rigid old Czech man aged 62 with thin white hair, a lined stubborn face and cold grey eyes",
+   "tag_prompt": "old man, thin white hair, wrinkled stubborn face, cold grey eyes, shabby heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2), walking cane",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "otec_70",
+   "name": "Otec",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a frail old Czech man aged 70 with sparse white hair, a gaunt proud face and cold grey eyes",
+   "base": "old man, elderly, sparse white hair, wrinkled proud face, cold grey eyes",
+   "outfits": {
+    "default": "old faded heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)"
+   },
+   "photo": "a frail old Czech man aged 70 with sparse white hair, a gaunt proud face and cold grey eyes",
+   "tag_prompt": "old man, elderly, sparse white hair, wrinkled proud face, cold grey eyes, old faded heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2)",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "syn_8",
+   "name": "Syn",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "(a small thin Czech child aged 8:1.3), (little boy, 8 years old:1.3), short child body, round child face, messy dark hair and big frightened grey eyes",
+   "base": "child, boy, messy dark hair, grey eyes",
+   "outfits": {
+    "default": "worn grey child sweater, no hood, (oversized makeshift breathing mask strapped too tight over a small child face:1.2)"
+   },
+   "photo": "(a small thin Czech child aged 8:1.3), (little boy, 8 years old:1.3), short child body, round child face, messy dark hair and big frightened grey eyes",
+   "tag_prompt": "child, boy, messy dark hair, grey eyes, worn grey child sweater, no hood, (oversized makeshift breathing mask strapped too tight over a small child face:1.2)",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "syn_15",
+   "name": "Syn",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "(a lanky Czech teenage boy aged 15:1.2), young adolescent face, shaggy dark hair, tired grey eyes and lines of fatigue on his face",
+   "base": "teenage boy, shaggy dark hair, tired grey eyes",
+   "outfits": {
+    "default": "faded dark jacket over a grey hoodie"
+   },
+   "photo": "(a lanky Czech teenage boy aged 15:1.2), young adolescent face, shaggy dark hair, tired grey eyes and lines of fatigue on his face",
+   "tag_prompt": "teenage boy, shaggy dark hair, tired grey eyes, faded dark jacket over a grey hoodie",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "syn_30",
+   "name": "Syn",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a lean Czech man aged 30 with short dark hair, stubble and exhausted grey eyes",
+   "base": "adult, male, short dark hair, stubble, tired grey eyes",
+   "outfits": {
+    "default": "dark work jacket, grey shirt"
+   },
+   "photo": "a lean Czech man aged 30 with short dark hair, stubble and exhausted grey eyes",
+   "tag_prompt": "adult, male, short dark hair, stubble, tired grey eyes, dark work jacket, grey shirt",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "syn_40",
+   "name": "Syn",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a gaunt Czech man aged 40 with dark hair going grey, an unshaven face and empty grey eyes",
+   "base": "adult, mature male, dark greying hair, unshaven, empty grey eyes",
+   "outfits": {
+    "default": "worn dark sweater"
+   },
+   "photo": "a gaunt Czech man aged 40 with dark hair going grey, an unshaven face and empty grey eyes",
+   "tag_prompt": "adult, mature male, dark greying hair, unshaven, empty grey eyes, worn dark sweater",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "syn_50",
+   "name": "Syn",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 50 with short grey hair, a short grey beard and quiet grey eyes",
+   "base": "adult, mature male, short grey hair, short grey beard, calm grey eyes",
+   "outfits": {
+    "default": "plain dark coat over a grey sweater"
+   },
+   "photo": "a calm Czech man aged 50 with short grey hair, a short grey beard and quiet grey eyes",
+   "tag_prompt": "adult, mature male, short grey hair, short grey beard, calm grey eyes, plain dark coat over a grey sweater",
+   "identity_level": "prompt",
+   "reference_images": []
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_byt_1",
+   "name": "Byt – 1. dějství",
+   "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+   "tag_prompt": "indoors, cramped apartment in a dystopian megacity, worn but tidy, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_1",
+   "name": "Okno – 1. dějství",
+   "description": "Okno bytu, za ním megaměsto.",
+   "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+   "mood": ""
+  },
+  {
+   "id": "l_byt_2",
+   "name": "Byt – 2. dějství",
+   "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+   "tag_prompt": "indoors, cramped apartment in a dystopian megacity, shabbier, cluttered, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_2",
+   "name": "Okno – 2. dějství",
+   "description": "Okno bytu, za ním megaměsto.",
+   "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+   "mood": ""
+  },
+  {
+   "id": "l_byt_3",
+   "name": "Byt – 3. dějství",
+   "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+   "tag_prompt": "indoors, cramped apartment in a dystopian megacity, stained, smoke-darkened, cluttered with papers, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window, light grime on the walls",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_3",
+   "name": "Okno – 3. dějství",
+   "description": "Okno bytu, za ním megaměsto.",
+   "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+   "mood": ""
+  },
+  {
+   "id": "l_byt_4",
+   "name": "Byt – 4. dějství",
+   "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+   "tag_prompt": "indoors, cramped apartment in a dystopian megacity, dim, dusty, decaying, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window, dirty walls, mould stains, scorched wiring",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_4",
+   "name": "Okno – 4. dějství",
+   "description": "Okno bytu, za ním megaměsto.",
+   "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+   "mood": ""
+  },
+  {
+   "id": "l_byt_5",
+   "name": "Byt – 5. dějství",
+   "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+   "tag_prompt": "indoors, cramped apartment in a dystopian megacity, decayed, grey with old dust, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window, heavy grime, peeling walls, mould, rusted ducts",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_5",
+   "name": "Okno – 5. dějství",
+   "description": "Okno bytu, za ním megaměsto.",
+   "tag_prompt": "view from an apartment window over a dystopian megacity, the window wide open, cold grey real daylight, skyscraper silhouettes in acid fog, towering skyscrapers, no people",
+   "mood": ""
+  }
+ ]
+}

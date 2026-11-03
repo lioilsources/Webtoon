@@ -1,0 +1,85 @@
+{
+  "id": "w_gb_kovovenebe_d4",
+  "title": "Kovové nebe nad námi — Mramorová koule",
+  "synopsis": "Otec a syn v bytě megaměsta, padesát let pod kovovým nebem.",
+  "tone": "temný, tíživý, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Otec a syn nikdy spolu v jednom obraze.",
+      "Dítě jen oblečené, bez násilí na těle."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Syn pochopí, že na svou záchranu byl celou dobu sám; otec se nezmění."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_byt_4",
+      "l_okno_4"
+    ]
+  },
+  "characters": [
+    {
+      "id": "otec_62",
+      "name": "Otec",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a rigid old Czech man aged 62 with thin white hair, a lined stubborn face and cold grey eyes",
+      "base": "old man, thin white hair, wrinkled stubborn face, cold grey eyes",
+      "outfits": {
+        "default": "shabby heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2), walking cane"
+      },
+      "photo": "a rigid old Czech man aged 62 with thin white hair, a lined stubborn face and cold grey eyes",
+      "tag_prompt": "old man, thin white hair, wrinkled stubborn face, cold grey eyes, shabby heavy dark rubberized industrial trench coat with buckles, (round dark goggles over the eyes:1.4), (small air filter cartridges on the goggles:1.2), walking cane",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "syn_40",
+      "name": "Syn",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech man aged 40 with dark hair going grey, an unshaven face and empty grey eyes",
+      "base": "adult, mature male, dark greying hair, unshaven, empty grey eyes",
+      "outfits": {
+        "default": "worn dark sweater"
+      },
+      "photo": "a gaunt Czech man aged 40 with dark hair going grey, an unshaven face and empty grey eyes",
+      "tag_prompt": "adult, mature male, dark greying hair, unshaven, empty grey eyes, worn dark sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_byt_4",
+      "name": "Byt – 4. dějství",
+      "description": "Vybydlený poloautomatizovaný byt v megaměstě.",
+      "tag_prompt": "indoors, cramped apartment in a dystopian megacity, dim, dusty, decaying, old humming ventilation filters, metal table, armchair, pipes and ducts on the ceiling, neon hologram glow through the window, dirty walls, mould stains, scorched wiring",
+      "mood": ""
+    },
+    {
+      "id": "l_okno_4",
+      "name": "Okno – 4. dějství",
+      "description": "Okno bytu, za ním megaměsto.",
+      "tag_prompt": "view from an apartment window over a dystopian megacity, rain-streaked window, neon advertising holograms outside, acid rain, purple toxic haze, towering skyscrapers, no people",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "kovovenebe",
+    "node": "d4"
+  }
+}

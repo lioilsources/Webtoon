@@ -1,0 +1,656 @@
+{
+  "title": "Otevřené nebe",
+  "title_i18n": {
+    "de": "Offener Himmel",
+    "en": "Open Sky",
+    "fr": "Ciel ouvert",
+    "it": "Cielo aperto",
+    "ja": "開かれた空",
+    "ko": "열린 하늘",
+    "pl": "Otwarte niebo",
+    "pt-BR": "Céu Aberto",
+    "ru": "Открытое небо",
+    "uk": "Відкрите небо",
+    "vi": "Bầu Trời Mở"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_byt_5",
+      "characters": [],
+      "visual_tags": [
+        "decayed apartment",
+        "grey dust",
+        "old armchair",
+        "stacks of old papers",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "sitting in an armchair",
+        "blanket over his knees",
+        "stony proud expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2693,
+          0.1376,
+          0.7727,
+          0.6396
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_5",
+      "characters": [
+        {
+          "id": "syn_50"
+        }
+      ],
+      "visual_tags": [
+        "standing at the wide open window",
+        "from side",
+        "cold grey daylight",
+        "breathing in"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.2746,
+          0.1168,
+          0.5659,
+          0.4031
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [],
+      "visual_tags": [
+        "hand holding small plastic heart",
+        "red plastic heart",
+        "close-up of hand"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "Venku fouká. Proč otevíráš to okno? Říkal jsem ti stokrát, že ty filtry v tomhle sektoru netěsní. Chceš, abychom tu všichni zkašlali?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Draußen weht's. Warum öffnest du das Fenster? Ich hab dir doch hundertmal gesagt, dass die Filter in diesem Sektor undicht sind. Willst du, dass wir alle husten?",
+            "en": "It's windy out there. Why are you opening that window? I've told you a hundred times those filters in this sector leak. Do you want us all to cough our lungs out?",
+            "fr": "Il y a du vent dehors. Pourquoi tu ouvres cette fenêtre ? Je te l'ai dit cent fois, les filtres de ce secteur ne sont pas étanches. Tu veux qu'on tousse tous ?",
+            "it": "C'è vento fuori. Perché apri quella finestra? Te l'ho detto mille volte che i filtri in questo settore non tengono. Vuoi che tossiamo tutti quanti?",
+            "ja": "外は風が強いぞ。なんで窓を開けるんだ？ 何度も言ってるだろ、この区画のフィルターは気密性が悪いって。 みんな風邪ひいてほしいのか？",
+            "ko": "바람이 세게 불어. 왜 창문을 열어? 필터가 이 구역에선 잘 막아주지 못한다고 몇 번이나 말했는데. 우리 모두 감기 걸리게 하고 싶어?",
+            "pl": "Na dworze wieje. Po co otwierasz to okno? Mówiłem ci sto razy, że te filtry w tym sektorze przeciekają. Chcesz, żebyśmy tu wszyscy kaszlali?",
+            "pt-BR": "Tá ventando lá fora. Por que você abre essa janela? Já te falei um milhão de vezes que os filtros nesse setor vazam. Quer que a gente tosse até morrer aqui?",
+            "ru": "На улице ветрено. Зачем ты открываешь окно? Я тебе сто раз говорил, что фильтры в этом секторе пропускают воздух. Хочешь, чтобы мы все тут закашлялись?",
+            "uk": "На вулиці вітер. Навіщо відкриваєш вікно? Я ж тобі сто разів казав, що фільтри в цьому секторі протікають. Хочеш, щоб ми всі тут захлинули?",
+            "vi": "Gió to quá. Sao con lại mở cửa sổ? Bố đã nói cả trăm lần rồi, mấy bộ lọc ở khu này không kín đâu. Con muốn cả nhà mình ho sặc sụa à?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3275,
+          0.1473,
+          0.7167,
+          0.5573
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "Ty prostě nedáš na moje rady, nikdy jsi nedal. Kdyby sis raději sednul a udělal pořádek v těch papírech…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hörst einfach nicht auf meine Ratschläge, hast noch nie drauf gehört. Du könntest auch mal sitzenbleiben und diese Papiere ordnen…",
+            "en": "You never listen to my advice, not once. You'd be better off sitting down and sorting through those papers…",
+            "fr": "Tu n'écoutes jamais mes conseils, jamais. Tu ferais mieux de t'asseoir et de ranger ces papiers…",
+            "it": "Non ascolti mai i miei consigli, mai lo hai fatto. Saresti meglio che ti sedessi e mettessi in ordine quei documenti…",
+            "ja": "お前の言うことなんて、いつも聞かないんだからな。 ちゃんと座って、その書類を整理したらどうだ？",
+            "ko": "넌 내 말을 듣지 않아, 항상 그랬지. 차라리 앉아서 서류 정리나 하는 게 낫겠어…",
+            "pl": "Po prostu nie słuchasz moich rad, nigdy nie słuchałeś. Lepiej byś usiadł i ogarnął te papiery…",
+            "pt-BR": "Você nunca ouve meus conselhos, nunca ouviu. Devia sentar e organizar esses papéis…",
+            "ru": "Ты просто не слушаешь моих советов, никогда не слушал. Лучше бы ты сел и разобрал эти бумаги…",
+            "uk": "Ти просто не слухаєш моїх порад, ніколи не слухав. Краще б посидів і розібрав ті папери…",
+            "vi": "Con cứ không nghe lời bố, từ trước đến giờ vẫn vậy. Thay vì ngồi đấy, con làm gọn mấy tờ giấy đi chứ…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2785,
+          0.1905,
+          0.6658,
+          0.5632
+        ]
+      ]
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_okno_5",
+      "characters": [],
+      "visual_tags": [
+        "skyscraper silhouettes in acid fog",
+        "cold grey sky",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_5",
+      "characters": [
+        {
+          "id": "syn_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking out of the window",
+        "holding a small red plastic heart",
+        "from side"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_50",
+          "text": "Venku je hezky, tati.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Draußen ist es schön, Papa.",
+            "en": "It's nice out, Dad.",
+            "fr": "Il fait beau, papa.",
+            "it": "Fa' bel tempo fuori, papà.",
+            "ja": "外は気持ちいいよ、パパ。",
+            "ko": "바깥이 좋잖아, 아빠.",
+            "pl": "Na dworze jest ładnie, tato.",
+            "pt-BR": "Tá bonito lá fora, pai.",
+            "ru": "На улице красиво, папа.",
+            "uk": "На вулиці гарно, тату.",
+            "vi": "Ngoài trời đẹp lắm, bố ạ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2351,
+          0.1495,
+          0.7081,
+          0.5976
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "Cože? Co by na tomhle hnusným smogu mělo být hezkého? Ty jsi úplně zmatenej. Zase blouzníš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was? Was soll an diesem ekelhaften Smog schön sein? Du bist doch ganz verwirrt. Träumst wohl wieder.",
+            "en": "What? What's nice about this awful smog? You're completely out of it. You're rambling again.",
+            "fr": "Quoi ? Qu'est-ce qu'il y a de beau dans ce smog affreux ? Tu es complètement perdu. Tu divagues encore.",
+            "it": "Cosa? Cosa c'è di bello in questo smog orribile? Sei confuso. Stai delirando di nuovo.",
+            "ja": "なんだと？ この汚いスモッグに、気持ちがいいところがあるのか？ まったく、お前は混乱してるな。 また何か言ってるのか？",
+            "ko": "뭐? 이 거지 같은 스모그에 뭐가 좋다는 거야? 완전히 헛소리하는군. 또 멍하니 있네.",
+            "pl": "Co? Co ma być ładnego w tym obrzydliwym smogu? Jesteś kompletnie zdezorientowany. Znowu bredzisz.",
+            "pt-BR": "O quê? O que tem de bonito nesse smog horrível? Você tá completamente fora da casinha. Tá delirando de novo.",
+            "ru": "Что? Что тут может быть красивого в этом отвратительном смоге? Ты совсем запутался. Опять бредишь.",
+            "uk": "Що? Що тут може бути гарного в цьому гидкому смогi? Ти зовсім затуманений. Знову мариш.",
+            "vi": "Cái gì? Đẹp ở chỗ nào của cái khói độc này? Con bị lẫn rồi đấy. Lại mơ màng nữa rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2913,
+          0.1559,
+          0.6424,
+          0.4827
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "contemptuous expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "Víš co? Dělej si, co chceš. Stejně na nic nedáš, co ti člověk řekne. Kvůli tobě jsem ztratil padesát let nervů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weißt du was? Mach, was du willst. Du hörst ja doch nie auf irgendwas. Wegen dir hab ich schon fünfzig Jahre meines Lebens verschwendet.",
+            "en": "You know what? Do whatever you want. You never listen to a word I say anyway. You've cost me fifty years of my life.",
+            "fr": "Tu sais quoi ? Fais ce que tu veux. De toute façon, tu ne tends jamais l'oreille à ce qu'on te dit. J'ai perdu cinquante ans de ma vie à cause de toi.",
+            "it": "Sai cosa? Fai quello che vuoi. Tanto non ascolti mai niente. Ho perso cinquant'anni della mia vita per colpa tua.",
+            "ja": "いい加減にしろ。どうでもいい。お前の言うことなんて、どうせ聞かないんだから。 お前のため、神経をすり減らしてきたんだぞ、50年も。",
+            "ko": "알았어? 네 맘대로 해. 어차피 남 말은 듣지도 않으면서. 너 때문에 신경 쓸 일만 50년이나 썼어.",
+            "pl": "Wiesz co? Rób, co chcesz. I tak nic nie posłuchasz, co człowiek mówi. Przez ciebie straciłem pięćdziesiąt lat nerwów.",
+            "pt-BR": "Sabe de uma coisa? Faz o que quiser. De qualquer jeito, você não escuta o que eu digo. Perdi cinquenta anos da minha vida com você.",
+            "ru": "Знаешь что? Делай, что хочешь. Всё равно ты не прислушиваешься к словам. Из-за тебя у меня ушло полжизни нервов.",
+            "uk": "Знаєш що? Роби, що хочеш. Все одно ти нічого не слухаєш, що тобі кажуть. Через тебе я втратив п'ятдесят років життя.",
+            "vi": "Thôi được rồi. Con muốn làm gì thì làm. Dù sao bố nói con cũng không nghe. Vì con, bố mất cả năm mươi năm tuổi thọ rồi đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1996,
+          0.1345,
+          0.663,
+          0.578
+        ]
+      ]
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "syn_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "turning around",
+        "strangely reconciled calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_50",
+          "text": "Padesát let. To je dlouhá doba.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fünfzig Jahre. Das ist eine lange Zeit.",
+            "en": "Fifty years. That's a long time.",
+            "fr": "Cinquante ans. C'est long.",
+            "it": "Cinquanta anni. È tanto tempo.",
+            "ja": "50年… 長い時間だね。",
+            "ko": "50년. 정말 긴 시간이네.",
+            "pl": "Pięćdziesiąt lat. To długo.",
+            "pt-BR": "Cinquenta anos. É muito tempo.",
+            "ru": "Полжизни. Это долгий срок.",
+            "uk": "П'ятдесят років. Це довгий термін.",
+            "vi": "Năm mươi năm. Thật là lâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.265,
+          0.1548,
+          0.7062,
+          0.5981
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "A doteď jsi to nepochopil. Kdyby ses tenkrát choval jinak, nemuseli jsme tady takhle sedět.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du hast es immer noch nicht kapiert. Wenn du dich damals anders verhalten hättest, müssten wir nicht hier sitzen.",
+            "en": "And you still don't get it. If you'd acted differently back then, we wouldn't be stuck here like this.",
+            "fr": "Et tu n'as toujours pas compris. Si tu t'étais comporté différemment à l'époque, on n'aurait pas été obligés de rester assis ici.",
+            "it": "E ancora non l'hai capito. Se ti fossi comportato diversamente allora, non saremmo dovuti stare qui così.",
+            "ja": "それでも、お前は理解してないんだな。 あの時、お前がちゃんと行動していれば、こんな風にここにいる必要はなかったんだ。",
+            "ko": "아직도 이해 못 했어? 그때 네가 좀 달랐더라면, 이렇게 앉아 있을 일은 없었을 거야.",
+            "pl": "A ty do dziś tego nie rozumiesz. Gdybyś wtedy postąpił inaczej, nie musielibyśmy tak tu siedzieć.",
+            "pt-BR": "E até agora você não entendeu. Se você tivesse agido diferente naquela época, não estaríamos aqui assim.",
+            "ru": "И ты до сих пор этого не понимаешь. Если бы ты тогда поступил иначе, нам не пришлось бы так сидеть.",
+            "uk": "І ти досі цього не зрозумів. Якби ти тоді поводився інакше, нам не довелося б тут так сидіти.",
+            "vi": "Mà con vẫn chưa hiểu. Nếu ngày đó con cư xử khác đi, chúng ta đã không phải ngồi đây như thế này."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.29,
+          0.1722,
+          0.7241,
+          0.6172
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [],
+      "visual_tags": [
+        "red plastic heart on table",
+        "stack of old yellowed papers",
+        "a hand withdrawing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "syn_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "hurt expression",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_50",
+          "text": "Nemuseli. Ale stalo se.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hätten nicht müssen. Aber es ist passiert.",
+            "en": "We wouldn't have. But it happened.",
+            "fr": "On n'aurait pas été obligés. Mais c'est arrivé.",
+            "it": "Non dovevamo. Ma è successo.",
+            "ja": "必要はなかったけど、起きてしまったことだ。",
+            "ko": "없었을 수도 있지. 하지만 일어났잖아.",
+            "pl": "Nie musieliśmy. Ale się stało.",
+            "pt-BR": "Não precisaríamos. Mas aconteceu.",
+            "ru": "Не пришлось. Но случилось.",
+            "uk": "Не довелося. Але сталося.",
+            "vi": "Đáng lẽ không phải. Nhưng đã xảy ra rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3389,
+          0.1568,
+          0.6786,
+          0.4982
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "stern expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "otec_70",
+          "text": "No vidíš. Kdybys konečně přiznal, že…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Siehst du. Wenn du endlich zugeben würdest, dass…",
+            "en": "See? If you'd just admit that…",
+            "fr": "Tu vois. Si tu admettais enfin que…",
+            "it": "Vedi. Se ammettessi finalmente che…",
+            "ja": "ほらな。やっと認めればいいんだ…",
+            "ko": "봐, 네가 드디어 인정하는구나…",
+            "pl": "No widzisz. Gdybyś w końcu przyznał, że…",
+            "pt-BR": "Viu só. Se você finalmente admitisse que…",
+            "ru": "Ну вот видишь. Если бы ты наконец признал, что…",
+            "uk": "Ну от. Якби ти нарешті визнав, що…",
+            "vi": "Thấy chưa. Nếu con chịu thừa nhận…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2466,
+          0.1636,
+          0.7624,
+          0.7068
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [],
+      "visual_tags": [
+        "hand resting on an armchair backrest",
+        "close-up of hand",
+        "soft grey light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.183,
+          0.2066,
+          0.351,
+          0.3626
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "syn_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "slight smile",
+        "calm",
+        "free"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "syn_50",
+          "text": "Máš pravdu, tati. Úplně ve všem. Odpočiň si.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast Recht, Papa. In allem. Ruh dich aus.",
+            "en": "You're right, Dad. About everything. Just rest.",
+            "fr": "Tu as raison, papa. Sur tout. Repose-toi.",
+            "it": "Hai ragione, papà. Su tutto. Riposati.",
+            "ja": "パパの言う通りだよ。 全部。 もう休んだ方がいいよ。",
+            "ko": "네 말이 맞아, 아빠. 전부 다. 좀 쉬어.",
+            "pl": "Masz rację, tato. We wszystkim. Odpocznij.",
+            "pt-BR": "Você tem razão, pai. Em tudo. Descanse um pouco.",
+            "ru": "Ты прав, папа. Во всём. Отдохни.",
+            "uk": "Ти маєш рацію, тату. У всьому. Відпочинь.",
+            "vi": "Bố nói đúng, bố ạ. Mọi chuyện bố nói đều đúng. Bố cứ nghỉ ngơi đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2727,
+          0.1676,
+          0.7546,
+          0.6413
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_byt_5",
+      "characters": [
+        {
+          "id": "otec_70"
+        }
+      ],
+      "visual_tags": [
+        "confused",
+        "suspicious stare",
+        "waiting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3061,
+          0.1427,
+          0.7457,
+          0.6337
+        ]
+      ]
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_5",
+      "characters": [],
+      "visual_tags": [
+        "open palms in rain",
+        "rain washing dust off the hands",
+        "grey daylight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_okno_5",
+      "characters": [],
+      "visual_tags": [
+        "city at dusk fading into darkness",
+        "distant lights",
+        "empty",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the city slowly darkening, distant lights, light rain, static camera",
+      "faces": []
+    }
+  ]
+}
