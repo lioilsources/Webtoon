@@ -289,7 +289,11 @@ class _ChoiceButton extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
           decoration: BoxDecoration(
             color: enabled
-                ? ComicColors.accent.withValues(alpha: 0.10)
+                // Opaque: a translucent fill lets the hard shadow show through and hides the text.
+                ? Color.alphaBlend(
+                    ComicColors.accent.withValues(alpha: 0.10),
+                    scheme.surface,
+                  )
                 : scheme.surfaceContainerHighest,
             borderRadius: BorderRadius.circular(16),
             border: Border.all(color: ComicColors.accent, width: 2.5),
