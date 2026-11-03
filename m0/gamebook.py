@@ -227,7 +227,7 @@ def script_story(g, node_id, src):
             tags = d["speaking"] + e.get("tags", d["faces"][e["say"]][turn % 3])
             panels.append({"shot": shot, "location_id": loc, "characters": [{"id": cid}], "visual_tags": tags,
                            "bubbles": [bubble(cid, t) for t in split_line(e["text"])], "sfx": [], "gap_after": e.get("gap", "small"),
-                           "animate": False, "motion": ""})
+                           "animate": bool(e.get("animate")), "motion": e.get("animate", "")})
         else:
             who = [{"id": cast[e["who"]]}] if e.get("who") else []
             tags = e.get("tags", []) + ([] if who else ["no humans"] if "hand" not in " ".join(e.get("tags", [])) else [])
