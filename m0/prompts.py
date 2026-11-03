@@ -21,11 +21,16 @@ def count_tags(chars):
     girls = sum(1 for c in chars if c.get("count_tag") == "1girl")
     boys = sum(1 for c in chars if c.get("count_tag") == "1boy")
     tags = []
+    # a character that is a group drawn as one (the twins: count_tag "2girls"), or a baby
+    other = [c["count_tag"] for c in chars if c.get("count_tag") not in (None, "", "1girl", "1boy")]
     if girls:
         tags.append("1girl" if girls == 1 else f"{girls}girls")
     if boys:
         tags.append("1boy" if boys == 1 else f"{boys}boys")
-    if not girls and not boys:
+    tags += other
+    if other and len(chars) == 1:
+        return tags
+    if not girls and not boys and not other:
         tags.append("no humans")  # empty panel, or animals only: keep the model from adding a girl
         if len(chars) == 1:
             tags.append("solo")  # one pet, not a litter
@@ -133,12 +138,19 @@ def _natural(panel, chars, design_of, locs, styles, preset, world, sfw):
     elif people:
         lead = [NATURAL["group_lead"].format(n=len(people))] + action + [NATURAL["group_person"].format(p=p) for p in people]
     else:
-        # an insert of hands (no character in the panel): "no people" would erase the hands too
-        hands = any(re.search(r"\b(hands?|palms?)\b", t) for t in action)
-        lead = (["(close-up of hands:1.3)", "face not visible"] if hands else [NATURAL["empty"]]) + action
-    pos = dedupe(preset["quality_pos"] + shot + lead
-                 + (split_tags(loc["tag_prompt"]) if loc else []) + preset["aesthetic_tags"])
+        lead = [NATURAL["empty"]] + action
+    loc_tags = split_tags(loc["tag_prompt"]) if loc else []
+    quality, extra_neg = preset["quality_pos"], []
+    # An insert of hands (no character in the panel): "no people", "close-up portrait, face in focus" and
+    # "detailed faces" paint a person (or an empty room) instead, and a full location pulls the camera back.
+    if not people and any(re.search(r"\b(hands?|palms?)\b", t) for t in action):
+        shot = ["extreme close-up", "(only hands in frame:1.3)"]
+        lead = ["(close-up of hands:1.3)"] + [f"({t}:1.25)" for t in action]
+        loc_tags = [t for t in loc_tags if "people" not in t][:R["close_up_location_tags"]]
+        quality = [t for t in quality if "face" not in t]
+        extra_neg = ["face", "head", "portrait", "person sitting", "old man"]
+    pos = dedupe(quality + shot + lead + loc_tags + preset["aesthetic_tags"])
     neg = dedupe(preset["quality_neg"] + styles["always_negative"] + (styles["sfw_negative"] if sfw else [])
-                 + audience_negative(world, styles))
+                 + audience_negative(world, styles) + extra_neg)
     w, h = styles["shot_size"].get(panel.get("shot"), R["default_size"])
     return {"positive": ", ".join(pos), "negative": ", ".join(neg), "width": w, "height": h, "preset": preset}
