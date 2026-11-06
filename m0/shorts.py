@@ -183,10 +183,8 @@ def main():
 
     req = urllib.request.Request(f"{args.api}/episodes/{args.episode}", headers={"X-User-ID": "player"})
     ep = json.load(urllib.request.urlopen(req))
-    world = subprocess.run(["docker", "exec", "webtoon-db-1", "sh", "-c",
-                            'psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" -At -c "select c.world_id from episodes e '
-                            f"join campaigns c on c.id=e.campaign_id where e.id='{args.episode}'\""],
-                           capture_output=True, text=True).stdout.strip()
+    req = urllib.request.Request(f"{args.api}/campaigns/{ep['campaign_id']}", headers={"X-User-ID": "player"})
+    world = json.load(urllib.request.urlopen(req))["world_id"]
     if world.startswith(rules.get("pack.forbidden_world_prefix")):
         raise SystemExit("free strips are never published")
     sb = DATA / "stories" / world.removeprefix("w_") / "storyboard.json"

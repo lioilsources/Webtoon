@@ -77,6 +77,14 @@ func main() {
 	cfg := config.Load()
 	var err error
 	switch cmd {
+	case "catalog-bundles", "preview", "trailer", "music": // no database
+	default:
+		if cfg.DatabaseURL == "" {
+			slog.Error("DATABASE_URL is not set: put it in backend/.env (Postgres on JODA, see README)")
+			os.Exit(1)
+		}
+	}
+	switch cmd {
 	case "serve":
 		err = serve(ctx, cfg)
 	case "migrate":

@@ -67,7 +67,7 @@ skutečný starter (`version ≥ 1`) ho při dalším startu nahradí.
 
 ```sh
 # backend (viz ../backend/README.md); jen API, bez workeru = nic negeneruje
-cd ../backend && docker compose up -d db
+cd ../backend                                          # DB na JODĚ přes backend/.env
 MODE=api WORKERS=0 go run ./cmd/webtoon serve            # :8095
 
 # demo díl z výstupů M0 (bez LLM / ComfyUI): vytvoří kampaň hráče "player" s hotovým dílem

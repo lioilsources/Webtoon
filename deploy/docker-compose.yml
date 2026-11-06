@@ -1,6 +1,7 @@
 # Webtoon Studio backend (JODA): API only behind Caddy, exposed via Cloudflare Tunnel as
 # https://webtoon-api.ol1n.com. No ports are published on the host. Run by deploy/deploy.sh.
 # MODE=api: no workers here. Generating needs the Spark GPU, and that goes through the spark-broker from the Mac.
+# The database here is the only one: the Mac connects to it over the LAN (backend/.env, DATABASE_URL).
 name: webtoon
 
 services:
@@ -14,6 +15,10 @@ services:
       POSTGRES_DB: webtoon
     volumes:
       - pgdata:/var/lib/postgresql/data
+    # The Mac (worker, CLI, integration tests) uses this database directly; no Postgres on the Mac.
+    # DB_BIND in .env = JODA's LAN address; default keeps it on loopback.
+    ports:
+      - "${DB_BIND:-127.0.0.1}:5434:5432"
     networks: [webtoon]
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U webtoon -d webtoon"]
