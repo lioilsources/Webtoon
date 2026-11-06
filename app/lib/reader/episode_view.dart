@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
 import '../models/world.dart';
 import '../providers/episode_provider.dart';
@@ -176,7 +177,7 @@ class _Frame extends StatelessWidget {
   );
 }
 
-class EpisodeHeader extends StatelessWidget {
+class EpisodeHeader extends ConsumerWidget {
   final Episode episode;
 
   /// Title language (null = original).
@@ -184,11 +185,15 @@ class EpisodeHeader extends StatelessWidget {
   const EpisodeHeader({super.key, required this.episode, this.language});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final title = episode.title.isNotEmpty
         ? episode.titleIn(language)
-        : (episode.status.inProgress ? 'Nový díl' : 'Bez názvu');
+        : tr(
+            ui,
+            episode.status.inProgress ? 'reader.newEpisode' : 'common.untitled',
+          );
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 36, 20, 22),
       child: Column(
@@ -201,7 +206,7 @@ class EpisodeHeader extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
             child: Text(
-              'DÍL ${episode.index}',
+              tr(ui, 'reader.episodeBadge', {'n': episode.index}),
               style: ComicFonts.ui(
                 900,
               ).copyWith(color: Colors.white, fontSize: 12, letterSpacing: 1.4),
@@ -375,13 +380,13 @@ class ChosenNote extends StatelessWidget {
   }
 }
 
-class _ErrorBox extends StatelessWidget {
+class _ErrorBox extends ConsumerWidget {
   final String message;
   final VoidCallback? onRetry;
   const _ErrorBox({required this.message, this.onRetry});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final scheme = Theme.of(context).colorScheme;
     return Column(
       mainAxisSize: MainAxisSize.min,
@@ -393,7 +398,10 @@ class _ErrorBox extends StatelessWidget {
         ),
         if (onRetry != null) ...[
           const SizedBox(height: 10),
-          OutlinedButton(onPressed: onRetry, child: const Text('Zkusit znovu')),
+          OutlinedButton(
+            onPressed: onRetry,
+            child: Text(tr(ref.watch(uiLanguageProvider), 'store.retry')),
+          ),
         ],
       ],
     );

@@ -4,6 +4,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:webtoon/api/webtoon_api.dart';
 import 'package:webtoon/config.dart';
 import 'package:webtoon/models/world.dart';
+import 'package:webtoon/providers/language_provider.dart';
 import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/screens/reader_screen.dart';
 
@@ -14,6 +15,7 @@ const poll = Duration(milliseconds: 100);
 Widget app(FakeWebtoonApi api, Widget home) => ProviderScope(
   overrides: [
     apiProvider.overrideWithValue(api),
+    deviceLanguageProvider.overrideWithValue(null), // Czech UI
     configProvider.overrideWithValue(
       const AppConfig(
         apiBase: 'http://test',

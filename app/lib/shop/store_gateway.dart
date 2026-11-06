@@ -7,6 +7,8 @@ import 'dart:async';
 
 import 'package:in_app_purchase/in_app_purchase.dart';
 
+import '../i18n/ui_strings.dart';
+
 /// `WEBTOON_FAKE_IAP=true`: purchases succeed instantly, nothing talks to a store.
 const bool kFakeIap = bool.fromEnvironment('WEBTOON_FAKE_IAP');
 
@@ -152,7 +154,7 @@ class InAppPurchaseGateway implements StoreGateway {
       await queryProducts({productId});
       d = _details[productId];
     }
-    if (d == null) throw StateError('Produkt $productId obchod nezná.');
+    if (d == null) throw UnknownProductException(productId);
     await _iap.buyNonConsumable(
       purchaseParam: PurchaseParam(productDetails: d),
     );
@@ -256,4 +258,17 @@ class FakeStoreGateway implements StoreGateway {
 
   @override
   void dispose() => _events.close();
+}
+
+/// [StoreGateway.buy] of a product the store does not list.
+class UnknownProductException implements Exception, Localizable {
+  final String productId;
+  const UnknownProductException(this.productId);
+
+  @override
+  String localized(String lang) =>
+      tr(lang, 'error.unknownProduct', {'id': productId});
+
+  @override
+  String toString() => localized('cs');
 }

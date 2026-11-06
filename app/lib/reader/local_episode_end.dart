@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../i18n/ui_strings.dart';
 
 import '../models/campaign.dart';
 import '../models/episode.dart';
@@ -8,7 +11,7 @@ import '../widgets/common.dart';
 /// End of an episode in the offline reader when the story goes on: the choices as they were
 /// offered, the one that was taken (`chosen` of the next episode) highlighted, the rest
 /// muted and not tappable, and "Další díl". Nothing here generates anything.
-class LocalEpisodeEnd extends StatelessWidget {
+class LocalEpisodeEnd extends ConsumerWidget {
   final List<Choice> choices;
   final Chosen? chosen;
   final VoidCallback onNext;
@@ -21,7 +24,8 @@ class LocalEpisodeEnd extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final comic = ComicTheme.of(context);
     final closed = choices.where((c) => !c.isFree).toList();
@@ -41,7 +45,7 @@ class LocalEpisodeEnd extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              'Co udělá dál?',
+              tr(ui, 'reader.whatNext'),
               style: ComicFonts.title().copyWith(fontSize: 28, height: 1.1),
             ),
             const SizedBox(height: 14),
@@ -66,7 +70,7 @@ class LocalEpisodeEnd extends StatelessWidget {
               key: const ValueKey('next-episode'),
               onPressed: onNext,
               icon: const Icon(Icons.arrow_downward_rounded),
-              label: const Text('Další díl'),
+              label: Text(tr(ui, 'reader.nextEpisode')),
             ),
           ],
         ),
@@ -128,14 +132,15 @@ class _RecordedChoice extends StatelessWidget {
 
 /// After the last episode of a story in the offline reader: "Konec" and another story to
 /// read next (same world when there is one).
-class LocalStoryEnd extends StatelessWidget {
+class LocalStoryEnd extends ConsumerWidget {
   final CampaignSummary? suggestion;
   final ValueChanged<CampaignSummary> onOpen;
 
   const LocalStoryEnd({super.key, this.suggestion, required this.onOpen});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final s = suggestion;
     return Padding(
@@ -146,20 +151,20 @@ class LocalStoryEnd extends StatelessWidget {
         children: [
           const SizedBox(height: 8),
           Text(
-            'Konec',
+            tr(ui, 'common.end'),
             textAlign: TextAlign.center,
             style: ComicFonts.title().copyWith(fontSize: 34),
           ),
           const SizedBox(height: 4),
           Text(
-            'Tady příběh končí.',
+            tr(ui, 'reader.storyEnds'),
             textAlign: TextAlign.center,
             style: TextStyle(color: scheme.onSurfaceVariant),
           ),
           if (s != null) ...[
             const SizedBox(height: 24),
             Text(
-              'Další příběh',
+              tr(ui, 'reader.nextStory'),
               style: ComicFonts.ui(
                 800,
               ).copyWith(fontSize: 13, color: scheme.onSurfaceVariant),

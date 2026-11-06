@@ -142,10 +142,10 @@ class StoreScreen extends ConsumerWidget {
                     _PackGrid(packs: view.packsOf(t.id)),
                   ],
                   if (gamebooks.isNotEmpty) ...[
-                    const _SectionHeader(
-                      key: ValueKey('store-gamebooks'),
+                    _SectionHeader(
+                      key: const ValueKey('store-gamebooks'),
                       icon: Icons.alt_route_rounded,
-                      title: 'Gamebooky',
+                      title: tr(lang, 'gamebook.shelf'),
                     ),
                     for (final g in gamebooks) GamebookStoreCard(gamebook: g),
                   ],
@@ -328,7 +328,7 @@ class PackCard extends ConsumerWidget {
 }
 
 String _meta(String lang, CatalogPack p) {
-  final size = p.totalBytes > 0 ? ' · ${formatBytes(p.totalBytes)}' : '';
+  final size = p.totalBytes > 0 ? ' · ${formatBytes(p.totalBytes, lang)}' : '';
   return '${storiesCount(lang, p.stories)}$size';
 }
 
@@ -637,7 +637,7 @@ class GamebookStoreCard extends ConsumerWidget {
     final comic = ComicTheme.of(context);
     final scheme = Theme.of(context).colorScheme;
     final g = gamebook;
-    final size = g.bytes > 0 ? ' · ${formatBytes(g.bytes)}' : '';
+    final size = g.bytes > 0 ? ' · ${formatBytes(g.bytes, lang)}' : '';
     return Padding(
       key: ValueKey('store-gamebook-${g.id}'),
       padding: const EdgeInsets.only(bottom: 14),
@@ -668,7 +668,7 @@ class GamebookStoreCard extends ConsumerWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Gamebook · ${g.nodes} částí · ${g.endings} konce$size',
+                        '${tr(lang, 'gamebook.storeInfo', {'parts': trPlural(lang, 'gamebook.parts', g.nodes), 'endings': trPlural(lang, 'gamebook.endings', g.endings)})}$size',
                         style: ComicFonts.ui(700).copyWith(
                           fontSize: 12,
                           color: scheme.onSurfaceVariant,
@@ -684,7 +684,7 @@ class GamebookStoreCard extends ConsumerWidget {
             if (g.kitProductId != null && !shop.entitlements.unlocksKit(g)) ...[
               const SizedBox(height: 10),
               Text(
-                'S editorem větví: piš vlastní odbočky z obrázků knihy.',
+                tr(lang, 'gamebook.kitHint'),
                 style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
               ),
               const SizedBox(height: 6),

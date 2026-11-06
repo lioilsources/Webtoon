@@ -108,6 +108,7 @@ class LocalWebtoonApi implements WebtoonApi {
       // The reader "is the player" of every story: the end-of-episode block is shown.
       playerId: userId,
       title: s.title,
+      titleI18n: s.titleI18n,
       status: 'ready',
       episodes: episodes,
     );

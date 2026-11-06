@@ -2,12 +2,20 @@
 // downloaded or bought. The store sells only unlocks; the content itself comes from the URLs
 // composed here out of `base_urls`, so moving the zips (GitHub Releases → R2) is a catalog change.
 
+import '../i18n/ui_strings.dart';
 import '../models/json.dart';
 
 /// Something is wrong with catalog.json (unknown schema, not an object, …).
-class CatalogException implements Exception {
-  final String message;
-  const CatalogException(this.message);
+/// [key] is a ui_strings key, like [PackException]'s.
+class CatalogException implements Exception, Localizable {
+  final String key;
+  final Map<String, Object> args;
+  const CatalogException(this.key, [this.args = const {}]);
+
+  String get message => tr('cs', key, args);
+
+  @override
+  String localized(String lang) => tr(lang, key, args);
 
   @override
   String toString() => message;
@@ -112,7 +120,7 @@ class CatalogPart {
       return '$host$release/$asset';
     }
     if (path != null) return base.page(path!);
-    throw const CatalogException('Část balíčku nemá adresu.');
+    throw const CatalogException('error.catalogNoUrl');
   }
 
   /// File name for the download (temp file, logs).
@@ -358,19 +366,58 @@ const _knownTypes = {
     id: 'kids',
     audience: 'kids',
     icon: 'child_care',
-    titleI18n: {'cs': 'Pro děti', 'en': 'Kids'},
+    titleI18n: {
+      'cs': 'Pro děti',
+      'en': 'Kids',
+      'de': 'Für Kinder',
+      'it': 'Per bambini',
+      'fr': 'Pour enfants',
+      'pl': 'Dla dzieci',
+      'pt-BR': 'Para crianças',
+      'ja': '子ども向け',
+      'ko': '어린이',
+      'vi': 'Cho trẻ em',
+      'ru': 'Для детей',
+      'uk': 'Для дітей',
+    },
   ),
   'harlequin': CatalogType(
     id: 'harlequin',
     audience: 'adult',
     icon: 'favorite',
-    titleI18n: {'cs': 'Romantika', 'en': 'Romance'},
+    titleI18n: {
+      'cs': 'Romantika',
+      'en': 'Romance',
+      'de': 'Romantik',
+      'it': 'Romantico',
+      'fr': 'Romance',
+      'pl': 'Romans',
+      'pt-BR': 'Romance',
+      'ja': '恋愛',
+      'ko': '로맨스',
+      'vi': 'Lãng mạn',
+      'ru': 'Романтика',
+      'uk': 'Романтика',
+    },
   ),
   'superhero': CatalogType(
     id: 'superhero',
     audience: 'kids',
     icon: 'bolt',
-    titleI18n: {'cs': 'Superhrdinové', 'en': 'Superheroes'},
+    titleI18n: {
+      'cs': 'Superhrdinové',
+      'en': 'Superheroes',
+      'de': 'Superhelden',
+      'it': 'Supereroi',
+      'fr': 'Super-héros',
+      'pl': 'Superbohaterowie',
+      'pt-BR': 'Super-heróis',
+      'ja': 'スーパーヒーロー',
+      'ko': '슈퍼히어로',
+      'vi': 'Siêu anh hùng',
+      'ru': 'Супергерои',
+      'uk': 'Супергерої',
+    },
   ),
 };
 
@@ -400,11 +447,11 @@ class Catalog {
   });
 
   static Catalog parse(Object? raw) {
-    if (raw is! Map) throw const CatalogException('Katalog není objekt.');
+    if (raw is! Map) throw const CatalogException('error.catalogNotObject');
     final j = obj(raw);
     final schema = integer(j['schema']);
     if (!supportedSchemas.contains(schema)) {
-      throw CatalogException('Nepodporovaná verze katalogu (schema $schema).');
+      throw CatalogException('error.catalogSchema', {'schema': '$schema'});
     }
     final base = schema == 1
         ? BaseUrls(pages: BaseUrls._slash(str(j['base_url'])))

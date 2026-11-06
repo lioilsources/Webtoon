@@ -99,7 +99,7 @@ class ShopController extends StateNotifier<ShopState> {
     _sub = gateway.purchases.listen(
       _onPurchase,
       onError: (Object e) {
-        _notify('store.purchaseFailed', {'error': '$e'});
+        _notify('store.purchaseFailed', {'error': e});
       },
     );
     final ents = await entitlementRepo.load();
@@ -162,7 +162,7 @@ class ShopController extends StateNotifier<ShopState> {
       await gateway.buy(productId);
     } catch (e) {
       state = state.copyWith(buying: {...state.buying}..remove(productId));
-      _notify('store.purchaseFailed', {'error': '$e'});
+      _notify('store.purchaseFailed', {'error': e});
     }
   }
 
@@ -258,7 +258,7 @@ class ShopController extends StateNotifier<ShopState> {
         downloads: {...state.downloads}..remove(pack.id),
         downloadErrors: {...state.downloadErrors, pack.id: '$e'},
       );
-      _notify('store.downloadFailed', {'error': '$e'});
+      _notify('store.downloadFailed', {'error': e});
     }
   }
 

@@ -12,6 +12,7 @@ import 'package:http/http.dart' as http;
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
+import '../i18n/ui_strings.dart';
 import '../packs/pack_store.dart';
 import 'catalog.dart';
 import 'entitlements.dart';
@@ -127,13 +128,13 @@ class PackDownloader implements PackInstaller {
     void Function(DownloadProgress) emit,
   ) async {
     if (pack.bundled) {
-      throw const PackException('Tento balíček je součástí aplikace.');
+      throw const PackException('error.packBundled');
     }
     if (!entitlements.unlocksPack(catalog, pack)) {
-      throw const PackException('Balíček není odemčený.');
+      throw const PackException('error.packLocked');
     }
     if (pack.parts.isEmpty) {
-      throw const PackException('Balíček v katalogu nemá žádnou část.');
+      throw const PackException('error.packNoParts');
     }
     final dir = await _dir();
     await dir.create(recursive: true);
@@ -170,9 +171,7 @@ class PackDownloader implements PackInstaller {
         final got = (await sha256.bind(file.openRead()).first).toString();
         if (got != part.sha256) {
           await file.delete();
-          throw const PackException(
-            'Stažený balíček je poškozený (kontrolní součet nesouhlasí).',
-          );
+          throw const PackException('error.packCorrupt');
         }
       }
       progress(DownloadPhase.installing, part.bytes);
@@ -210,7 +209,7 @@ class PackDownloader implements PackInstaller {
         rethrow;
       } catch (e) {
         if (attempt >= retries) {
-          throw PackException('Stahování se přerušilo: $e');
+          throw PackException('error.downloadInterrupted', {'error': e});
         }
       }
     }
@@ -245,7 +244,7 @@ class PackDownloader implements PackInstaller {
       have = 0;
     } else {
       await res.stream.drain<void>();
-      throw PackException('Stahování selhalo (HTTP ${res.statusCode}).');
+      throw PackException('error.downloadHttp', {'code': res.statusCode});
     }
     final sink = file.openWrite(mode: mode);
     var got = have;
@@ -261,7 +260,21 @@ class PackDownloader implements PackInstaller {
       await sink.close();
     }
     if (expected > 0 && got < expected) {
-      throw HttpException('spojení skončilo po $got z $expected B');
+      throw _ConnectionEnded(got, expected);
     }
   }
+}
+
+/// The server closed the stream before [expected] bytes; retried, then reported.
+class _ConnectionEnded implements IOException, Localizable {
+  final int got;
+  final int expected;
+  const _ConnectionEnded(this.got, this.expected);
+
+  @override
+  String localized(String lang) =>
+      tr(lang, 'error.connectionEnded', {'got': got, 'expected': expected});
+
+  @override
+  String toString() => localized('cs');
 }

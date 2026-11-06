@@ -97,6 +97,7 @@ void main() {
         overrides: [
           packStoreProvider.overrideWithValue(store),
           apiProvider.overrideWithValue(LocalWebtoonApi(store)),
+          deviceLanguageProvider.overrideWithValue(null),
           packBootstrapProvider.overrideWith(
             (ref) => PackBootstrap(
               store,
@@ -234,9 +235,12 @@ void main() {
     await tester.pumpAndSettle();
     await tester.tap(find.text('🇬🇧  English').last);
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Knihovna').last);
+    // … and so does the UI: the tabs and the library now speak English.
+    await tester.tap(find.text('Library').last);
     await tester.pumpAndSettle();
-    expect(find.text('The Hedgehog and the Lantern'), findsOneWidget);
+    // The story card and the world heading (the world has no title_i18n, so it borrows its story's).
+    expect(find.text('The Hedgehog and the Lantern'), findsNWidgets(2));
+    expect(find.text('Settings'), findsOneWidget);
     await tester.pumpWidget(const SizedBox());
   });
 }

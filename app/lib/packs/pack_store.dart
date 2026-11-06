@@ -14,14 +14,22 @@ import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
 import '../gamebook/gamebook.dart';
+import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
 import '../models/json.dart';
 import '../models/world.dart';
 
 /// Something is wrong with a pack (not a zip, bad schema, checksum mismatch, …).
-class PackException implements Exception {
-  final String message;
-  const PackException(this.message);
+/// [key] is a ui_strings key: [message] / `toString()` are Czech, [localized] any UI language.
+class PackException implements Exception, Localizable {
+  final String key;
+  final Map<String, Object> args;
+  const PackException(this.key, [this.args = const {}]);
+
+  String get message => tr('cs', key, args);
+
+  @override
+  String localized(String lang) => tr(lang, key, args);
 
   @override
   String toString() => message;
@@ -98,15 +106,15 @@ class PackManifest {
   static PackManifest parse(Map<String, dynamic> j, {required String dir}) {
     final schema = integer(j['schema']);
     if (schema != supportedSchema) {
-      throw PackException('Nepodporovaná verze balíčku (schema $schema).');
+      throw PackException('error.packSchema', {'schema': '$schema'});
     }
     final id = str(j['id']);
     if (!RegExp(r'^[a-z0-9-]+$').hasMatch(id)) {
-      throw PackException('Balíček má neplatné id „$id“.');
+      throw PackException('error.packId', {'id': id});
     }
     final part = strOrNull(j['part']);
     if (part != null && !RegExp(r'^[a-z0-9]+$').hasMatch(part)) {
-      throw PackException('Balíček má neplatnou část „$part“.');
+      throw PackException('error.packPart', {'part': part});
     }
     String? media(Object? v) {
       final s = strOrNull(v);
@@ -332,7 +340,9 @@ class PackStore {
     PackProgress? onProgress,
   }) async {
     final f = File(path);
-    if (!await f.exists()) throw PackException('Soubor $path neexistuje.');
+    if (!await f.exists()) {
+      throw PackException('error.fileMissing', {'path': path});
+    }
     return installFromBytes(
       await f.readAsBytes(),
       expectedSha256: expectedSha256,
@@ -360,9 +370,7 @@ class PackStore {
     if (expectedSha256 != null) {
       final got = sha256.convert(bytes).toString();
       if (got != expectedSha256.toLowerCase()) {
-        throw const PackException(
-          'Stažený balíček je poškozený (kontrolní součet nesouhlasí).',
-        );
+        throw const PackException('error.packCorrupt');
       }
     }
     final root = await rootDir();
@@ -381,7 +389,7 @@ class PackStore {
     } catch (e) {
       await tmp.delete(recursive: true);
       if (e is PackException) rethrow;
-      throw PackException('Balíček se nepodařilo rozbalit: $e');
+      throw PackException('error.packExtract', {'error': '$e'});
     }
     final target = Directory(p.join(root.path, manifest.dirName));
     if (await target.exists()) await target.delete(recursive: true);
@@ -466,17 +474,17 @@ class PackStore {
     try {
       archive = ZipDecoder().decodeBytes(bytes, verify: false);
     } catch (_) {
-      throw const PackException('Soubor není platný zip balíček.');
+      throw const PackException('error.packNotZip');
     }
     final entry = archive.files.where((f) => f.isFile && f.name == 'pack.json');
     if (entry.isEmpty) {
-      throw const PackException('V balíčku chybí pack.json.');
+      throw const PackException('error.packNoManifest');
     }
     final text = utf8.decode(entry.first.readBytes() ?? Uint8List(0));
     try {
       return obj(jsonDecode(text));
     } on FormatException {
-      throw const PackException('pack.json není platný JSON.');
+      throw const PackException('error.packBadJson');
     }
   }
 
@@ -517,7 +525,7 @@ class PackStore {
     for (final f in files) {
       final rel = p.posix.normalize(f.name);
       if (rel.startsWith('/') || rel == '..' || rel.startsWith('../')) {
-        throw PackException('Balíček obsahuje nepovolenou cestu „${f.name}“.');
+        throw PackException('error.packBadPath', {'path': f.name});
       }
       final out = File(p.joinAll([dir, ...p.posix.split(rel)]));
       out.parent.createSync(recursive: true);
@@ -531,11 +539,14 @@ class PackStore {
 }
 
 /// "12,3 MB" for the settings screen.
-String formatBytes(int bytes) {
+/// Size for the UI language [lang]: decimal point in en / ja / ko, decimal comma elsewhere.
+String formatBytes(int bytes, [String lang = 'cs']) {
+  String dec(String s) =>
+      const {'en', 'ja', 'ko'}.contains(lang) ? s : s.replaceAll('.', ',');
   if (bytes < 1024) return '$bytes B';
   final kb = bytes / 1024;
   if (kb < 1024) return '${kb.toStringAsFixed(0)} kB';
   final mb = kb / 1024;
-  if (mb < 1024) return '${mb.toStringAsFixed(1).replaceAll('.', ',')} MB';
-  return '${(mb / 1024).toStringAsFixed(2).replaceAll('.', ',')} GB';
+  if (mb < 1024) return '${dec(mb.toStringAsFixed(1))} MB';
+  return '${dec((mb / 1024).toStringAsFixed(2))} GB';
 }

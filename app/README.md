@@ -54,8 +54,10 @@ na iOS `Library/Application Support/packs/` v sandboxu aplikace. Další balíč
   `<app support>/downloads/*.part`, pokračuje přes HTTP `Range`, sha256 z katalogu, pak
   `PackStore.installFromFile`. Nákup balíčku ho rovnou stáhne; bundle a „Obnovit nákupy“ ne.
 - Profil a brána: `lib/profile/` (`reader_profile.dart`, `parental_gate.dart` — násobilka 3–9 ×
-  3–9 před každým nákupem a před přepnutím na Dospělí). Texty obchodu, profilu a brány jsou ve všech
-  12 jazycích čtečky (`lib/i18n/ui_strings.dart`) a řídí se jazykem bublin; zbytek UI je zatím česky.
+  3–9 před každým nákupem a před přepnutím na Dospělí). Všechny texty čtečky (knihovna, čtečka,
+  gamebooky a editor větví, obchod, nastavení, profil, brána, chyby balíčků) jsou ve všech 12 jazycích
+  (`lib/i18n/ui_strings.dart`, množná čísla přes `trPlural`) a řídí se jazykem bublin; česky zůstává
+  jen UI Studia.
 
 `assets/packs/starter.zip` vyrábí `webtoon export-pack -starter …` (backend). Bez něj je v repu jen
 zástupný prázdný balíček (`version: 0`, žádné příběhy) — appka naběhne s prázdnou knihovnou a jakýkoli

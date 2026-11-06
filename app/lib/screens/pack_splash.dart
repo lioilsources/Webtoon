@@ -1,26 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../i18n/ui_strings.dart';
 
 import '../packs/pack_bootstrap.dart';
 import '../theme.dart';
 
 /// Shown while the starter pack is being extracted on first launch (or re-extracted).
-class PackSplash extends StatelessWidget {
+class PackSplash extends ConsumerWidget {
   final PackBootstrapState state;
   final VoidCallback onRetry;
   const PackSplash({super.key, required this.state, required this.onRetry});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lang = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final error = state.phase == PackPhase.error;
     final label = switch (state.phase) {
-      PackPhase.loading => 'Načítám příběhy…',
+      PackPhase.loading => tr(lang, 'splash.loading'),
       PackPhase.extracting =>
         state.total > 0
-            ? 'Připravuji příběhy… ${state.done}/${state.total}'
-            : 'Připravuji příběhy…',
-      PackPhase.ready => 'Hotovo',
-      PackPhase.error => 'Příběhy se nepodařilo připravit',
+            ? tr(lang, 'splash.preparingN', {
+                'done': state.done,
+                'total': state.total,
+              })
+            : tr(lang, 'splash.preparing'),
+      PackPhase.ready => tr(lang, 'common.done'),
+      PackPhase.error => tr(lang, 'splash.failed'),
     };
     return Scaffold(
       body: Center(
@@ -59,7 +66,7 @@ class PackSplash extends StatelessWidget {
                   ),
                 if (error) ...[
                   Text(
-                    state.error ?? '',
+                    trError(lang, state.error),
                     textAlign: TextAlign.center,
                     style: TextStyle(color: scheme.error, fontSize: 13),
                   ),
@@ -67,7 +74,7 @@ class PackSplash extends StatelessWidget {
                   OutlinedButton(
                     key: const ValueKey('pack-splash-retry'),
                     onPressed: onRetry,
-                    child: const Text('Zkusit znovu'),
+                    child: Text(tr(lang, 'store.retry')),
                   ),
                 ],
               ],

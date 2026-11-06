@@ -87,6 +87,9 @@ class Campaign {
   final List<EpisodeSummary> episodes;
   final Map<String, dynamic> state;
 
+  /// Story title per reading language (offline packs: the story's `title_i18n`).
+  final Map<String, String> titleI18n;
+
   const Campaign({
     required this.id,
     required this.worldId,
@@ -96,7 +99,11 @@ class Campaign {
     this.playerCharacterId,
     this.episodes = const [],
     this.state = const {},
+    this.titleI18n = const {},
   });
+
+  String titleIn(String? lang) =>
+      lang == null ? title : (titleI18n[lang] ?? title);
 
   factory Campaign.fromJson(Map<String, dynamic> j) => Campaign(
     id: str(j['id']),
@@ -108,6 +115,7 @@ class Campaign {
     episodes: objList(j['episodes']).map(EpisodeSummary.fromJson).toList()
       ..sort((a, b) => a.index.compareTo(b.index)),
     state: obj(j['state']),
+    titleI18n: strMap(j['title_i18n']),
   );
 
   String? get currentLocation => strOrNull(state['current_location']);

@@ -79,10 +79,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     return _tabs(
       const [LibraryScreen(), StoreScreen(), SettingsScreen()],
       [
-        const NavigationDestination(
-          icon: Icon(Icons.auto_stories_outlined),
-          selectedIcon: Icon(Icons.auto_stories),
-          label: 'Knihovna',
+        NavigationDestination(
+          icon: const Icon(Icons.auto_stories_outlined),
+          selectedIcon: const Icon(Icons.auto_stories),
+          label: tr(lang, 'tab.library'),
         ),
         NavigationDestination(
           key: const ValueKey('tab-store'),
@@ -90,10 +90,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
           selectedIcon: const Icon(Icons.storefront),
           label: tr(lang, 'tab.store'),
         ),
-        const NavigationDestination(
-          icon: Icon(Icons.settings_outlined),
-          selectedIcon: Icon(Icons.settings),
-          label: 'Nastavení',
+        NavigationDestination(
+          icon: const Icon(Icons.settings_outlined),
+          selectedIcon: const Icon(Icons.settings),
+          label: tr(lang, 'tab.settings'),
         ),
       ],
     );

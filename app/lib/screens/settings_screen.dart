@@ -27,14 +27,17 @@ class SettingsScreen extends ConsumerWidget {
     final profile = ref.watch(readerProfileProvider).profile;
     final kids = profile == ReaderProfile.kids;
     return Scaffold(
-      appBar: AppBar(title: const Text('Nastavení')),
+      appBar: AppBar(title: Text(tr(ui, 'settings.title'))),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 32),
         children: [
-          Text('Jazyk bublin', style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            tr(ui, 'settings.language'),
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           const SizedBox(height: 4),
           Text(
-            'Díl se ukáže v tomhle jazyce, když je do něj přeložený; jinak v originále.',
+            tr(ui, 'settings.languageHint'),
             style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
           ),
           const SizedBox(height: 10),
@@ -42,7 +45,10 @@ class SettingsScreen extends ConsumerWidget {
             key: const ValueKey('settings-language'),
             initialValue: lang ?? '',
             items: [
-              const DropdownMenuItem(value: '', child: Text('Originál')),
+              DropdownMenuItem(
+                value: '',
+                child: Text(tr(ui, 'settings.original')),
+              ),
               for (final l in kReaderLanguages)
                 DropdownMenuItem(
                   value: l,
@@ -54,7 +60,10 @@ class SettingsScreen extends ConsumerWidget {
                 .select(v == null || v.isEmpty ? null : v),
           ),
           const SizedBox(height: 28),
-          Text('Úložiště', style: Theme.of(context).textTheme.titleLarge),
+          Text(
+            tr(ui, 'settings.storage'),
+            style: Theme.of(context).textTheme.titleLarge,
+          ),
           const SizedBox(height: 10),
           ComicCard(
             child: Column(
@@ -70,8 +79,11 @@ class SettingsScreen extends ConsumerWidget {
                       const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          'Balíčky zabírají '
-                          '${snap.hasData ? formatBytes(snap.data!) : '…'}',
+                          tr(ui, 'settings.storageUsed', {
+                            'size': snap.hasData
+                                ? formatBytes(snap.data!, ui)
+                                : '…',
+                          }),
                           key: const ValueKey('storage-used'),
                           style: ComicFonts.ui(700),
                         ),
@@ -96,7 +108,7 @@ class SettingsScreen extends ConsumerWidget {
                           ),
                           Text(
                             'v${pk.manifest.version} · '
-                            '${_stories(pk.manifest.stories.length)}',
+                            '${storiesCount(ui, pk.manifest.stories.length)}',
                             style: TextStyle(
                               color: scheme.onSurfaceVariant,
                               fontSize: 13,
@@ -108,7 +120,7 @@ class SettingsScreen extends ConsumerWidget {
                 ] else ...[
                   const SizedBox(height: 8),
                   Text(
-                    'Žádný balíček není nainstalovaný.',
+                    tr(ui, 'settings.noPacks'),
                     style: TextStyle(color: scheme.onSurfaceVariant),
                   ),
                 ],
@@ -118,13 +130,13 @@ class SettingsScreen extends ConsumerWidget {
           const SizedBox(height: 16),
           OutlinedButton.icon(
             key: const ValueKey('reinstall-starter'),
-            onPressed: boot.isReady ? () => _reinstall(context, ref) : null,
+            onPressed: boot.isReady ? () => _reinstall(context, ref, ui) : null,
             icon: const Icon(Icons.restore_rounded),
-            label: const Text('Obnovit starter'),
+            label: Text(tr(ui, 'settings.reinstall')),
           ),
           const SizedBox(height: 6),
           Text(
-            'Znovu rozbalí příběhy přibalené v aplikaci. Stažené balíčky zůstanou.',
+            tr(ui, 'settings.reinstallHint'),
             style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
           ),
           const SizedBox(height: 28),
@@ -197,7 +209,11 @@ class SettingsScreen extends ConsumerWidget {
     }
   }
 
-  Future<void> _reinstall(BuildContext context, WidgetRef ref) async {
+  Future<void> _reinstall(
+    BuildContext context,
+    WidgetRef ref,
+    String ui,
+  ) async {
     // Read before awaiting: while the starter extracts, the home screen shows the splash and
     // this screen is unmounted (its ref must not be used after that). The library reads the
     // store directly and the reader's providers are autoDispose, so nothing else needs an
@@ -206,19 +222,17 @@ class SettingsScreen extends ConsumerWidget {
     final ok = await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Obnovit starter?'),
-        content: const Text(
-          'Přibalené příběhy se znovu rozbalí z aplikace. Chvíli to potrvá.',
-        ),
+        title: Text(tr(ui, 'settings.reinstallTitle')),
+        content: Text(tr(ui, 'settings.reinstallBody')),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Zrušit'),
+            child: Text(tr(ui, 'store.cancel')),
           ),
           FilledButton(
             key: const ValueKey('reinstall-confirm'),
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Obnovit'),
+            child: Text(tr(ui, 'settings.reinstallConfirm')),
           ),
         ],
       ),
@@ -226,10 +240,4 @@ class SettingsScreen extends ConsumerWidget {
     if (ok != true) return;
     await boot.reinstallStarter();
   }
-
-  static String _stories(int n) => switch (n) {
-    1 => '1 příběh',
-    2 || 3 || 4 => '$n příběhy',
-    _ => '$n příběhů',
-  };
 }

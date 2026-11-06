@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart' show ScrollCacheExtent;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../i18n/languages.dart';
+import '../i18n/ui_strings.dart';
 import '../models/campaign.dart';
 import '../models/episode.dart';
 import '../providers/episode_provider.dart';
@@ -71,10 +72,11 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   Widget build(BuildContext context) {
     final st = ref.watch(readerProvider(widget.campaignId));
     final comic = ComicTheme.of(context);
+    final ui = ref.watch(uiLanguageProvider);
     final campaign = st.campaign;
     final title = campaign?.title.isNotEmpty == true
-        ? campaign!.title
-        : (st.world?.title ?? 'Čtečka');
+        ? campaign!.titleIn(ref.watch(readerLanguageProvider))
+        : (st.world?.title ?? tr(ui, 'reader.title'));
 
     return Scaffold(
       backgroundColor: comic.readerBackground,
@@ -90,7 +92,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
           if (st.episodes.isNotEmpty)
             IconButton(
               key: const ValueKey('history-button'),
-              tooltip: 'Historie dílů',
+              tooltip: tr(ui, 'reader.history'),
               icon: const Icon(Icons.format_list_numbered_rounded),
               onPressed: () => _showHistory(context, st),
             ),
@@ -101,13 +103,14 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   }
 
   Widget _body(BuildContext context, ReaderState st) {
+    final ui = ref.watch(uiLanguageProvider);
     if (st.campaign == null) {
       if (st.error != null) {
         return _Message(
           text: st.error!,
           action: OutlinedButton(
             onPressed: _notifier.load,
-            child: const Text('Zkusit znovu'),
+            child: Text(tr(ui, 'store.retry')),
           ),
         );
       }
@@ -119,7 +122,9 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     final local = !canEdit;
     if (eps.isEmpty) {
       return _Message(
-        text: local ? 'Příběh nemá žádný díl.' : 'Kampaň zatím nemá žádný díl.',
+        text: local
+            ? tr(ui, 'reader.noEpisodes')
+            : 'Kampaň zatím nemá žádný díl.',
         action: isPlayer
             ? FilledButton(
                 onPressed: st.submitting
@@ -199,6 +204,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   }
 
   void _showHistory(BuildContext context, ReaderState st) {
+    final ui = ref.read(uiLanguageProvider);
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
@@ -209,7 +215,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
               child: Text(
-                'Historie dílů',
+                tr(ui, 'reader.history'),
                 style: Theme.of(ctx).textTheme.headlineSmall,
               ),
             ),
@@ -224,11 +230,16 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 title: Text(
                   e.title.isNotEmpty
                       ? e.titleIn(ref.read(readerLanguageProvider))
-                      : 'Díl ${e.index}',
+                      : tr(ui, 'reader.episode', {'n': e.index}),
                 ),
                 subtitle: Text(
                   [
-                    episodeStatusLabel(e.status, e.panelsReady, e.panelsTotal),
+                    episodeStatusLabel(
+                      ui,
+                      e.status,
+                      e.panelsReady,
+                      e.panelsTotal,
+                    ),
                     if (e.chosen?.text.isNotEmpty == true)
                       '„${e.chosen!.text}“',
                   ].join(' · '),
@@ -248,13 +259,16 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   }
 }
 
-String episodeStatusLabel(EpisodeStatus s, int ready, int total) => switch (s) {
-  EpisodeStatus.queued => 'Ve frontě',
-  EpisodeStatus.generating =>
-    total > 0 ? 'Kreslí se $ready/$total' : 'Píše se scénář',
-  EpisodeStatus.ready => 'Hotovo',
-  EpisodeStatus.failed => 'Selhalo',
-};
+String episodeStatusLabel(String lang, EpisodeStatus s, int ready, int total) =>
+    switch (s) {
+      EpisodeStatus.queued => tr(lang, 'status.queued'),
+      EpisodeStatus.generating =>
+        total > 0
+            ? tr(lang, 'status.drawing', {'ready': ready, 'total': total})
+            : tr(lang, 'status.writing'),
+      EpisodeStatus.ready => tr(lang, 'status.ready'),
+      EpisodeStatus.failed => tr(lang, 'status.failed'),
+    };
 
 /// What follows the last episode: the choices (ready), nothing (still generating), or — when
 /// the last attempt failed — the previous ready episode's choices again.
@@ -412,6 +426,7 @@ class _LanguageMenu extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final current = ref.watch(readerLanguageProvider);
+    final ui = ref.watch(uiLanguageProvider);
     final source = focus?.sourceLanguage ?? 'cs';
     final available = focus?.languages ?? const <String>[];
     final shown = focus?.displayLanguage(current);
@@ -425,7 +440,7 @@ class _LanguageMenu extends ConsumerWidget {
         );
     return PopupMenuButton<String>(
       key: const ValueKey('language-button'),
-      tooltip: 'Jazyk bublin',
+      tooltip: tr(ui, 'settings.language'),
       icon: shown == null
           ? const Icon(Icons.translate_rounded)
           : Text(
@@ -436,7 +451,11 @@ class _LanguageMenu extends ConsumerWidget {
           .read(readerLanguageProvider.notifier)
           .select(v.isEmpty ? null : v),
       itemBuilder: (_) => [
-        item('', 'Originál (${langDisplayName(source)})', true),
+        item(
+          '',
+          tr(ui, 'reader.originalIn', {'lang': langDisplayName(source)}),
+          true,
+        ),
         const PopupMenuDivider(),
         for (final l in kReaderLanguages)
           if (l != source) item(l, langDisplayName(l), available.contains(l)),

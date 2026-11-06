@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/ui_strings.dart';
 import '../providers/language_provider.dart';
 import '../theme.dart';
 import 'shop_controller.dart';
@@ -18,6 +19,7 @@ class UpdateBanner extends ConsumerWidget {
     final updates = ctrl.updates();
     if (updates.isEmpty) return const SizedBox.shrink();
     final lang = ref.watch(readerLanguageProvider);
+    final ui = ref.watch(uiLanguageProvider);
     final busy = updates.any((p) => shop.downloads.containsKey(p.id));
     final scheme = Theme.of(context).colorScheme;
     final comic = ComicTheme.of(context);
@@ -39,7 +41,7 @@ class UpdateBanner extends ConsumerWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Nová verze',
+                    tr(ui, 'update.title'),
                     style: ComicFonts.ui(800).copyWith(fontSize: 15),
                   ),
                   Text(
@@ -65,7 +67,7 @@ class UpdateBanner extends ConsumerWidget {
                         ctrl.download(p);
                       }
                     },
-                    child: const Text('Aktualizovat'),
+                    child: Text(tr(ui, 'update.action')),
                   ),
           ],
         ),

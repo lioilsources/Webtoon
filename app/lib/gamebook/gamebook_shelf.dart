@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/ui_strings.dart';
 import '../profile/reader_profile.dart';
 import '../providers/language_provider.dart';
 import '../providers/providers.dart';
@@ -47,6 +48,7 @@ class GamebookShelf extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final lang = ref.watch(readerLanguageProvider);
+    final ui = ref.watch(uiLanguageProvider);
     final store = ref.watch(packStoreProvider);
     final api = ref.watch(apiProvider);
     final scheme = Theme.of(context).colorScheme;
@@ -60,7 +62,7 @@ class GamebookShelf extends ConsumerWidget {
               const Icon(Icons.alt_route_rounded),
               const SizedBox(width: 8),
               Text(
-                'Gamebooky',
+                tr(ui, 'gamebook.shelf'),
                 style: ComicFonts.title().copyWith(fontSize: 22),
               ),
             ],
@@ -109,7 +111,13 @@ class GamebookShelf extends ConsumerWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Ty rozhoduješ, jak příběh dopadne · ${g.endings} konce',
+                        tr(ui, 'gamebook.shelfInfo', {
+                          'endings': trPlural(
+                            ui,
+                            'gamebook.endings',
+                            g.endings,
+                          ),
+                        }),
                         style: TextStyle(color: scheme.onSurfaceVariant),
                       ),
                     ],

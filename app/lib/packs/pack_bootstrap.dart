@@ -9,7 +9,9 @@ class PackBootstrapState {
   final PackPhase phase;
   final int done;
   final int total;
-  final String? error;
+
+  /// What failed: a [PackException] (say it with `trError`) or any other error.
+  final Object? error;
 
   const PackBootstrapState({
     this.phase = PackPhase.loading,
@@ -66,7 +68,7 @@ class PackBootstrap extends StateNotifier<PackBootstrapState> {
     } catch (e, st) {
       debugPrint('packs: bootstrap failed: $e\n$st');
       if (mounted) {
-        state = PackBootstrapState(phase: PackPhase.error, error: '$e');
+        state = PackBootstrapState(phase: PackPhase.error, error: e);
       }
     }
   }

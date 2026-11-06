@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
 import '../providers/providers.dart';
 import '../reader/panel_view.dart';
@@ -30,23 +31,24 @@ class BranchEditorScreen extends ConsumerWidget {
     final g = ref.watch(packStoreProvider).gamebook(gamebookId);
     final branches = ref.watch(branchesProvider(gamebookId));
     final scheme = Theme.of(context).colorScheme;
+    final ui = ref.watch(uiLanguageProvider);
     if (g == null) {
       return Scaffold(
         appBar: AppBar(),
-        body: const EmptyState(
+        body: EmptyState(
           icon: Icons.menu_book_outlined,
-          title: 'Gamebook není stažený.',
+          title: tr(ui, 'gamebook.notDownloaded'),
         ),
       );
     }
     final notifier = ref.read(branchesProvider(gamebookId).notifier);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Moje větve'),
+        title: Text(tr(ui, 'gamebook.myBranches')),
         actions: [
           IconButton(
             key: const ValueKey('branches-export'),
-            tooltip: 'Odeslat autorovi',
+            tooltip: tr(ui, 'branches.export'),
             icon: const Icon(Icons.outbox_rounded),
             onPressed: branches.nodes.isEmpty
                 ? null
@@ -65,11 +67,7 @@ class BranchEditorScreen extends ConsumerWidget {
                     );
                     if (!context.mounted) return;
                     ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text(
-                          'Větve jsou zkopírované. Vlož je do e-mailu nebo zprávy autorovi.',
-                        ),
-                      ),
+                      SnackBar(content: Text(tr(ui, 'branches.copied'))),
                     );
                   },
           ),
@@ -77,26 +75,25 @@ class BranchEditorScreen extends ConsumerWidget {
       ),
       floatingActionButton: FloatingActionButton.extended(
         key: const ValueKey('branch-new'),
-        onPressed: () => _newBranch(context, ref, g, branches),
+        onPressed: () => _newBranch(context, ref, g, branches, ui),
         icon: const Icon(Icons.add_rounded),
-        label: const Text('Nová větev'),
+        label: Text(tr(ui, 'branches.new')),
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 96),
         children: [
           Text(
-            'Přidej do knihy vlastní odbočku: vyber, kde začne, poskládej ji z obrázků knihy '
-            'a napiš bubliny. Větve vidíš jen ty; autorovi je můžeš poslat.',
+            tr(ui, 'branches.intro'),
             style: TextStyle(color: scheme.onSurfaceVariant),
           ),
           const SizedBox(height: 16),
           if (branches.nodes.isEmpty)
-            const Padding(
-              padding: EdgeInsets.only(top: 48),
+            Padding(
+              padding: const EdgeInsets.only(top: 48),
               child: EmptyState(
                 icon: Icons.alt_route_rounded,
-                title: 'Zatím žádná větev',
-                subtitle: 'Začni tlačítkem „Nová větev“.',
+                title: tr(ui, 'branches.empty'),
+                subtitle: tr(ui, 'branches.emptyHint'),
               ),
             ),
           for (final h in branches.hooks)
@@ -107,13 +104,15 @@ class BranchEditorScreen extends ConsumerWidget {
                   branches.node(h.fromNode)?.title ??
                   h.fromNode,
               hook: h,
+              ui: ui,
               target: branches.node(h.choice.to),
               onEdit: () => _openNode(context, h.choice.to),
               onPlay: () => _play(context, h.choice.to),
               onDelete: () async {
                 if (!await _confirm(
                   context,
-                  'Smazat odbočku „${h.choice.text}“?',
+                  ui,
+                  tr(ui, 'branches.deleteHook', {'text': h.choice.text}),
                 )) {
                   return;
                 }
@@ -131,7 +130,7 @@ class BranchEditorScreen extends ConsumerWidget {
           if (branches.nodes.isNotEmpty) ...[
             const SizedBox(height: 16),
             Text(
-              'Moje uzly',
+              tr(ui, 'branches.myNodes'),
               style: ComicFonts.ui(
                 800,
               ).copyWith(fontSize: 13, color: scheme.onSurfaceVariant),
@@ -141,9 +140,12 @@ class BranchEditorScreen extends ConsumerWidget {
                 key: ValueKey('branch-node-${n.id}'),
                 contentPadding: EdgeInsets.zero,
                 leading: const Icon(Icons.edit_note_rounded),
-                title: Text(n.title.isEmpty ? 'Bez názvu' : n.title),
+                title: Text(
+                  n.title.isEmpty ? tr(ui, 'common.untitled') : n.title,
+                ),
                 subtitle: Text(
-                  '${n.panels.length} obr. · ${n.isEnding ? 'konec' : '${n.choices.length} volby'}',
+                  '${tr(ui, 'branches.imagesShort', {'n': n.panels.length})} · '
+                  '${n.isEnding ? tr(ui, 'branches.ending') : trPlural(ui, 'branches.choices', n.choices.length)}',
                 ),
                 trailing: const Icon(Icons.chevron_right_rounded),
                 onTap: () => _openNode(context, n.id),
@@ -177,10 +179,11 @@ class BranchEditorScreen extends ConsumerWidget {
     WidgetRef ref,
     Gamebook g,
     GamebookBranches branches,
+    String ui,
   ) async {
     final res = await showDialog<(String, String)>(
       context: context,
-      builder: (_) => _NewBranchDialog(gamebook: g),
+      builder: (_) => _NewBranchDialog(gamebook: g, ui: ui),
     );
     if (res == null) return;
     final (from, text) = res;
@@ -201,6 +204,7 @@ class BranchEditorScreen extends ConsumerWidget {
 class _HookCard extends StatelessWidget {
   final String from;
   final BranchHook hook;
+  final String ui;
   final BranchNode? target;
   final VoidCallback onEdit;
   final VoidCallback onPlay;
@@ -210,6 +214,7 @@ class _HookCard extends StatelessWidget {
     super.key,
     required this.from,
     required this.hook,
+    required this.ui,
     required this.target,
     required this.onEdit,
     required this.onPlay,
@@ -227,7 +232,7 @@ class _HookCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Za: $from',
+              tr(ui, 'branches.from', {'from': from}),
               style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
             ),
             const SizedBox(height: 4),
@@ -238,8 +243,8 @@ class _HookCard extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               target == null
-                  ? 'uzel chybí'
-                  : '${target!.panels.length} obrázků',
+                  ? tr(ui, 'branches.nodeMissing')
+                  : trPlural(ui, 'branches.images', target!.panels.length),
               style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
             ),
             Row(
@@ -248,10 +253,10 @@ class _HookCard extends StatelessWidget {
                 TextButton.icon(
                   onPressed: onPlay,
                   icon: const Icon(Icons.play_arrow_rounded),
-                  label: const Text('Zahrát'),
+                  label: Text(tr(ui, 'branches.play')),
                 ),
                 IconButton(
-                  tooltip: 'Smazat',
+                  tooltip: tr(ui, 'store.delete'),
                   onPressed: onDelete,
                   icon: const Icon(Icons.delete_outline_rounded),
                 ),
@@ -266,7 +271,8 @@ class _HookCard extends StatelessWidget {
 
 class _NewBranchDialog extends StatefulWidget {
   final Gamebook gamebook;
-  const _NewBranchDialog({required this.gamebook});
+  final String ui;
+  const _NewBranchDialog({required this.gamebook, required this.ui});
 
   @override
   State<_NewBranchDialog> createState() => _NewBranchDialogState();
@@ -290,8 +296,9 @@ class _NewBranchDialogState extends State<_NewBranchDialog> {
         if (!g.node(id)!.isEnding) g.node(id)!,
     ];
     final ok = _from != null && _text.text.trim().isNotEmpty;
+    final ui = widget.ui;
     return AlertDialog(
-      title: const Text('Nová větev'),
+      title: Text(tr(ui, 'branches.new')),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -300,7 +307,7 @@ class _NewBranchDialogState extends State<_NewBranchDialog> {
             key: const ValueKey('branch-from'),
             initialValue: _from,
             isExpanded: true,
-            decoration: const InputDecoration(labelText: 'Kde odbočí'),
+            decoration: InputDecoration(labelText: tr(ui, 'branches.where')),
             items: [
               for (final n in starts)
                 DropdownMenuItem(
@@ -315,9 +322,9 @@ class _NewBranchDialogState extends State<_NewBranchDialog> {
             key: const ValueKey('branch-choice'),
             controller: _text,
             maxLength: _maxChoiceChars,
-            decoration: const InputDecoration(
-              labelText: 'Nová volba',
-              hintText: 'např. Zeptat se Murra na tajemství',
+            decoration: InputDecoration(
+              labelText: tr(ui, 'branches.newChoice'),
+              hintText: tr(ui, 'branches.choiceExample'),
             ),
             onChanged: (_) => setState(() {}),
           ),
@@ -326,14 +333,14 @@ class _NewBranchDialogState extends State<_NewBranchDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Zrušit'),
+          child: Text(tr(ui, 'store.cancel')),
         ),
         FilledButton(
           key: const ValueKey('branch-create'),
           onPressed: ok
               ? () => Navigator.pop(context, (_from!, _text.text.trim()))
               : null,
-          child: const Text('Vytvořit'),
+          child: Text(tr(ui, 'common.create')),
         ),
       ],
     );
@@ -355,12 +362,13 @@ class NodeEditorScreen extends ConsumerWidget {
     final g = ref.watch(packStoreProvider).gamebook(gamebookId);
     final branches = ref.watch(branchesProvider(gamebookId));
     final node = branches.node(nodeId);
+    final ui = ref.watch(uiLanguageProvider);
     if (g == null || node == null) {
       return Scaffold(
         appBar: AppBar(),
-        body: const EmptyState(
+        body: EmptyState(
           icon: Icons.help_outline_rounded,
-          title: 'Uzel neexistuje.',
+          title: tr(ui, 'branches.nodeNotFound'),
         ),
       );
     }
@@ -371,11 +379,11 @@ class NodeEditorScreen extends ConsumerWidget {
     Future<void> save(BranchNode n) => notifier.update(branches.putNode(n));
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Upravit uzel'),
+        title: Text(tr(ui, 'branches.editNode')),
         actions: [
           IconButton(
             key: const ValueKey('node-play'),
-            tooltip: 'Zahrát',
+            tooltip: tr(ui, 'branches.play'),
             icon: const Icon(Icons.play_arrow_rounded),
             onPressed: () => Navigator.of(context).push(
               MaterialPageRoute<void>(
@@ -398,7 +406,9 @@ class NodeEditorScreen extends ConsumerWidget {
               key: ValueKey('node-title-$nodeId'),
               initialValue: node.title,
               maxLength: _maxChoiceChars,
-              decoration: const InputDecoration(labelText: 'Název uzlu'),
+              decoration: InputDecoration(
+                labelText: tr(ui, 'branches.nodeTitle'),
+              ),
               onChanged: (v) => save(node.copyWith(title: v)),
             ),
           ),
@@ -418,8 +428,11 @@ class NodeEditorScreen extends ConsumerWidget {
                     onPressed: () async {
                       final b = await showDialog<List<Bubble>>(
                         context: context,
-                        builder: (_) =>
-                            _BubblesDialog(lore: g.lore, bubbles: bp.bubbles),
+                        builder: (_) => _BubblesDialog(
+                          lore: g.lore,
+                          bubbles: bp.bubbles,
+                          ui: ui,
+                        ),
                       );
                       if (b == null) return;
                       await save(
@@ -432,11 +445,13 @@ class NodeEditorScreen extends ConsumerWidget {
                       );
                     },
                     icon: const Icon(Icons.chat_bubble_outline_rounded),
-                    label: Text('Bubliny (${bp.bubbles.length})'),
+                    label: Text(
+                      tr(ui, 'branches.bubblesN', {'n': bp.bubbles.length}),
+                    ),
                   ),
                   const Spacer(),
                   IconButton(
-                    tooltip: 'Výš',
+                    tooltip: tr(ui, 'branches.up'),
                     onPressed: i == 0
                         ? null
                         : () => save(
@@ -445,7 +460,7 @@ class NodeEditorScreen extends ConsumerWidget {
                     icon: const Icon(Icons.arrow_upward_rounded),
                   ),
                   IconButton(
-                    tooltip: 'Níž',
+                    tooltip: tr(ui, 'branches.down'),
                     onPressed: i == node.panels.length - 1
                         ? null
                         : () => save(
@@ -455,7 +470,7 @@ class NodeEditorScreen extends ConsumerWidget {
                   ),
                   IconButton(
                     key: ValueKey('remove-panel-$i'),
-                    tooltip: 'Odebrat',
+                    tooltip: tr(ui, 'common.remove'),
                     onPressed: () => save(
                       node.copyWith(panels: [...node.panels]..removeAt(i)),
                     ),
@@ -475,7 +490,7 @@ class NodeEditorScreen extends ConsumerWidget {
                 await save(node.copyWith(panels: [...node.panels, picked]));
               },
               icon: const Icon(Icons.add_photo_alternate_outlined),
-              label: const Text('Přidat obrázek z knihy'),
+              label: Text(tr(ui, 'branches.addImage')),
             ),
           ),
           const SizedBox(height: 24),
@@ -485,13 +500,13 @@ class NodeEditorScreen extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  'Na konci',
+                  tr(ui, 'branches.atEnd'),
                   style: ComicFonts.title().copyWith(fontSize: 22),
                 ),
                 const SizedBox(height: 4),
                 if (node.choices.isEmpty)
                   Text(
-                    'Bez voleb tady větev končí.',
+                    tr(ui, 'branches.noChoices'),
                     style: TextStyle(color: scheme.onSurfaceVariant),
                   ),
                 for (final c in node.choices)
@@ -519,9 +534,9 @@ class NodeEditorScreen extends ConsumerWidget {
                   key: const ValueKey('add-choice'),
                   onPressed: node.choices.length >= 3
                       ? null
-                      : () => _addChoice(context, ref, g, branches, node),
+                      : () => _addChoice(context, ref, g, branches, node, ui),
                   icon: const Icon(Icons.alt_route_rounded),
-                  label: const Text('Přidat volbu'),
+                  label: Text(tr(ui, 'branches.addChoice')),
                 ),
               ],
             ),
@@ -545,11 +560,12 @@ class NodeEditorScreen extends ConsumerWidget {
     Gamebook g,
     GamebookBranches branches,
     BranchNode node,
+    String ui,
   ) async {
     final res = await showDialog<(String, String?)>(
       context: context,
       builder: (_) =>
-          _ChoiceDialog(gamebook: g, branches: branches, self: node.id),
+          _ChoiceDialog(gamebook: g, branches: branches, self: node.id, ui: ui),
     );
     if (res == null) return;
     var (text, to) = res;
@@ -625,10 +641,12 @@ class _ChoiceDialog extends StatefulWidget {
   final Gamebook gamebook;
   final GamebookBranches branches;
   final String self;
+  final String ui;
   const _ChoiceDialog({
     required this.gamebook,
     required this.branches,
     required this.self,
+    required this.ui,
   });
 
   @override
@@ -649,8 +667,9 @@ class _ChoiceDialogState extends State<_ChoiceDialog> {
   @override
   Widget build(BuildContext context) {
     final g = widget.gamebook;
+    final ui = widget.ui;
     return AlertDialog(
-      title: const Text('Nová volba'),
+      title: Text(tr(ui, 'branches.newChoice')),
       content: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -659,25 +678,27 @@ class _ChoiceDialogState extends State<_ChoiceDialog> {
             key: const ValueKey('choice-text'),
             controller: _text,
             maxLength: _maxChoiceChars,
-            decoration: const InputDecoration(labelText: 'Text volby'),
+            decoration: InputDecoration(
+              labelText: tr(ui, 'branches.choiceText'),
+            ),
             onChanged: (_) => setState(() {}),
           ),
           DropdownButtonFormField<String>(
             key: const ValueKey('choice-target'),
             initialValue: _to,
             isExpanded: true,
-            decoration: const InputDecoration(labelText: 'Vede do'),
+            decoration: InputDecoration(labelText: tr(ui, 'branches.leadsTo')),
             items: [
-              const DropdownMenuItem(
+              DropdownMenuItem(
                 value: _newNode,
-                child: Text('+ nový uzel'),
+                child: Text(tr(ui, 'branches.newNode')),
               ),
               for (final n in widget.branches.nodes)
                 if (n.id != widget.self)
                   DropdownMenuItem(
                     value: n.id,
                     child: Text(
-                      'Moje: ${n.title}',
+                      tr(ui, 'branches.mine', {'title': n.title}),
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
@@ -697,7 +718,7 @@ class _ChoiceDialogState extends State<_ChoiceDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Zrušit'),
+          child: Text(tr(ui, 'store.cancel')),
         ),
         FilledButton(
           key: const ValueKey('choice-save'),
@@ -707,7 +728,7 @@ class _ChoiceDialogState extends State<_ChoiceDialog> {
                   _text.text.trim(),
                   _to == _newNode ? null : _to,
                 )),
-          child: const Text('Přidat'),
+          child: Text(tr(ui, 'common.add')),
         ),
       ],
     );
@@ -718,7 +739,12 @@ class _ChoiceDialogState extends State<_ChoiceDialog> {
 class _BubblesDialog extends StatefulWidget {
   final Lore lore;
   final List<Bubble> bubbles;
-  const _BubblesDialog({required this.lore, required this.bubbles});
+  final String ui;
+  const _BubblesDialog({
+    required this.lore,
+    required this.bubbles,
+    required this.ui,
+  });
 
   @override
   State<_BubblesDialog> createState() => _BubblesDialogState();
@@ -739,16 +765,17 @@ class _BubblesDialogState extends State<_BubblesDialog> {
   }
 
   static const _kinds = {
-    BubbleKind.speech: 'řeč',
-    BubbleKind.thought: 'myšlenka',
-    BubbleKind.shout: 'výkřik',
-    BubbleKind.narration: 'vyprávění',
+    BubbleKind.speech: 'branches.kindSpeech',
+    BubbleKind.thought: 'branches.kindThought',
+    BubbleKind.shout: 'branches.kindShout',
+    BubbleKind.narration: 'branches.kindNarration',
   };
 
   @override
   Widget build(BuildContext context) {
+    final ui = widget.ui;
     return AlertDialog(
-      title: const Text('Bubliny'),
+      title: Text(tr(ui, 'branches.bubbles')),
       content: SizedBox(
         width: 420,
         child: SingleChildScrollView(
@@ -764,11 +791,11 @@ class _BubblesDialogState extends State<_BubblesDialog> {
                         key: ValueKey('bubble-speaker-$i'),
                         value: kind == BubbleKind.narration ? null : speaker,
                         isExpanded: true,
-                        hint: const Text('Vypravěč'),
+                        hint: Text(tr(ui, 'branches.narrator')),
                         items: [
-                          const DropdownMenuItem<String?>(
+                          DropdownMenuItem<String?>(
                             value: null,
-                            child: Text('Vypravěč'),
+                            child: Text(tr(ui, 'branches.narrator')),
                           ),
                           for (final c in widget.lore.characters)
                             DropdownMenuItem<String?>(
@@ -795,7 +822,10 @@ class _BubblesDialogState extends State<_BubblesDialog> {
                       value: kind,
                       items: [
                         for (final e in _kinds.entries)
-                          DropdownMenuItem(value: e.key, child: Text(e.value)),
+                          DropdownMenuItem(
+                            value: e.key,
+                            child: Text(tr(ui, e.value)),
+                          ),
                       ],
                       onChanged: (v) => setState(() {
                         if (v == null) return;
@@ -807,7 +837,7 @@ class _BubblesDialogState extends State<_BubblesDialog> {
                       }),
                     ),
                     IconButton(
-                      tooltip: 'Odebrat',
+                      tooltip: tr(ui, 'common.remove'),
                       onPressed: () =>
                           setState(() => _rows.removeAt(i).$3.dispose()),
                       icon: const Icon(Icons.close_rounded),
@@ -820,7 +850,9 @@ class _BubblesDialogState extends State<_BubblesDialog> {
                   maxLength: _maxBubbleChars,
                   maxLines: 2,
                   minLines: 1,
-                  decoration: const InputDecoration(hintText: 'Text bubliny'),
+                  decoration: InputDecoration(
+                    hintText: tr(ui, 'branches.bubbleText'),
+                  ),
                 ),
                 const SizedBox(height: 8),
               ],
@@ -839,7 +871,7 @@ class _BubblesDialogState extends State<_BubblesDialog> {
                     )),
                   ),
                   icon: const Icon(Icons.add_comment_outlined),
-                  label: const Text('Přidat bublinu'),
+                  label: Text(tr(ui, 'branches.addBubble')),
                 ),
             ],
           ),
@@ -848,7 +880,7 @@ class _BubblesDialogState extends State<_BubblesDialog> {
       actions: [
         TextButton(
           onPressed: () => Navigator.pop(context),
-          child: const Text('Zrušit'),
+          child: Text(tr(ui, 'store.cancel')),
         ),
         FilledButton(
           key: const ValueKey('bubbles-save'),
@@ -857,14 +889,14 @@ class _BubblesDialogState extends State<_BubblesDialog> {
               if (ctl.text.trim().isNotEmpty)
                 Bubble(speakerId: speaker, text: ctl.text.trim(), kind: kind),
           ]),
-          child: const Text('Uložit'),
+          child: Text(tr(ui, 'common.save')),
         ),
       ],
     );
   }
 }
 
-Future<bool> _confirm(BuildContext context, String text) async =>
+Future<bool> _confirm(BuildContext context, String ui, String text) async =>
     await showDialog<bool>(
       context: context,
       builder: (ctx) => AlertDialog(
@@ -872,11 +904,11 @@ Future<bool> _confirm(BuildContext context, String text) async =>
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx, false),
-            child: const Text('Zrušit'),
+            child: Text(tr(ui, 'store.cancel')),
           ),
           FilledButton(
             onPressed: () => Navigator.pop(ctx, true),
-            child: const Text('Smazat'),
+            child: Text(tr(ui, 'store.delete')),
           ),
         ],
       ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../gamebook/gamebook_shelf.dart';
+import '../i18n/ui_strings.dart';
 import '../models/world.dart';
 import '../packs/pack_store.dart';
 import '../providers/language_provider.dart';
@@ -28,6 +29,7 @@ class LibraryScreen extends ConsumerWidget {
     ref.watch(packsRevisionProvider);
     final store = ref.watch(packStoreProvider);
     final lang = ref.watch(readerLanguageProvider);
+    final ui = ref.watch(uiLanguageProvider);
     // Kids profile: no adult worlds, no harlequin stories.
     final profile = ref.watch(readerProfileProvider.select((p) => p.profile));
     final stories = [
@@ -46,15 +48,13 @@ class LibraryScreen extends ConsumerWidget {
         if (!worlds.any((w) => w.id == s.worldId)) s,
     ];
     return Scaffold(
-      appBar: AppBar(title: const Text('Knihovna')),
+      appBar: AppBar(title: Text(tr(ui, 'library.title'))),
       body: stories.isEmpty && gamebooks.isEmpty
-          ? const EmptyState(
-              key: ValueKey('library-empty'),
+          ? EmptyState(
+              key: const ValueKey('library-empty'),
               icon: Icons.auto_stories_outlined,
-              title: 'Knihovna je prázdná',
-              subtitle:
-                  'Žádný balíček s příběhy není nainstalovaný. '
-                  'Zkus „Obnovit starter“ v Nastavení.',
+              title: tr(ui, 'library.empty'),
+              subtitle: tr(ui, 'library.emptyHint'),
             )
           : ListView(
               key: const ValueKey('library-list'),
@@ -62,13 +62,17 @@ class LibraryScreen extends ConsumerWidget {
               children: [
                 const UpdateBanner(),
                 if (gamebooks.isNotEmpty) GamebookShelf(gamebooks: gamebooks),
-                for (final w in worlds)
+                for (final w in _translatedFirst(worlds, byWorld, lang))
                   if (byWorld[w.id]?.isNotEmpty ?? false) ...[
-                    _WorldHeader(world: w),
+                    _WorldHeader(
+                      world: w,
+                      language: lang,
+                      stories: byWorld[w.id]!,
+                    ),
                     _StoryGrid(stories: byWorld[w.id]!, language: lang),
                   ],
                 if (orphan.isNotEmpty) ...[
-                  const _PlainHeader('Další příběhy'),
+                  _PlainHeader(tr(ui, 'library.otherStories')),
                   _StoryGrid(stories: orphan, language: lang),
                 ],
               ],
@@ -77,9 +81,49 @@ class LibraryScreen extends ConsumerWidget {
   }
 }
 
+/// Reading in another language than a world's own: worlds whose stories have a title in that
+/// language come first, untranslated ones after them (stable, otherwise the packs' order).
+List<WorldSummary> _translatedFirst(
+  List<WorldSummary> worlds,
+  Map<String, List<PackStory>> byWorld,
+  String? lang,
+) {
+  if (lang == null) return worlds;
+  bool translated(WorldSummary w) =>
+      lang == w.language ||
+      w.titleI18n.containsKey(lang) ||
+      (byWorld[w.id] ?? const []).any((s) => s.titleI18n.containsKey(lang));
+  return [
+    for (final w in worlds)
+      if (translated(w)) w,
+    for (final w in worlds)
+      if (!translated(w)) w,
+  ];
+}
+
 class _WorldHeader extends StatelessWidget {
   final WorldSummary world;
-  const _WorldHeader({required this.world});
+  final String? language;
+  final List<PackStory> stories;
+  const _WorldHeader({
+    required this.world,
+    required this.language,
+    required this.stories,
+  });
+
+  /// The world's own translation, else the title of its first story translated into the reading
+  /// language (worlds of today's packs carry no title_i18n; their stories do), else the original.
+  String get _title {
+    final lang = language;
+    if (lang == null || lang == world.language) return world.title;
+    final own = world.titleI18n[lang];
+    if (own != null) return own;
+    for (final s in stories) {
+      final t = s.titleI18n[lang];
+      if (t != null) return t;
+    }
+    return world.title;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +139,7 @@ class _WorldHeader extends StatelessWidget {
             children: [
               Expanded(
                 child: Text(
-                  world.title,
+                  _title,
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ),
@@ -106,10 +150,10 @@ class _WorldHeader extends StatelessWidget {
               ),
             ],
           ),
-          if (world.synopsis.isNotEmpty) ...[
+          if (world.synopsisIn(language)?.isNotEmpty ?? false) ...[
             const SizedBox(height: 4),
             Text(
-              world.synopsis,
+              world.synopsisIn(language)!,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: TextStyle(color: scheme.onSurfaceVariant, height: 1.3),
@@ -133,18 +177,23 @@ class _PlainHeader extends StatelessWidget {
 }
 
 /// `audience` of a world as a coloured tag (kids green, teen violet, adult red).
-class AudienceBadge extends StatelessWidget {
+class AudienceBadge extends ConsumerWidget {
   final String audience;
   const AudienceBadge({super.key, required this.audience});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final color = switch (audience) {
       'kids' => const Color(0xFF2E9E5B),
       'adult' => const Color(0xFFC84A3C),
       _ => ComicColors.accent,
     };
-    return Tag(audienceLabel(audience), color: color, textColor: Colors.white);
+    final label = switch (audience) {
+      'kids' || 'teen' || 'adult' => tr(ui, 'audience.$audience'),
+      _ => audienceLabel(audience),
+    };
+    return Tag(label, color: color, textColor: Colors.white);
   }
 }
 
@@ -176,13 +225,14 @@ class _StoryGrid extends StatelessWidget {
   );
 }
 
-class StoryCard extends StatelessWidget {
+class StoryCard extends ConsumerWidget {
   final PackStory story;
   final String? language;
   const StoryCard({super.key, required this.story, this.language});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final comic = ComicTheme.of(context);
     final n = story.episodeIds.length;
@@ -231,7 +281,7 @@ class StoryCard extends StatelessWidget {
             ),
             const SizedBox(height: 2),
             Text(
-              _episodes(n),
+              trPlural(ui, 'library.episodes', n),
               style: ComicFonts.ui(
                 700,
               ).copyWith(fontSize: 12, color: scheme.onSurfaceVariant),
@@ -249,10 +299,4 @@ class StoryCard extends StatelessWidget {
       color: scheme.onSurfaceVariant,
     ),
   );
-
-  static String _episodes(int n) => switch (n) {
-    1 => '1 díl',
-    2 || 3 || 4 => '$n díly',
-    _ => '$n dílů',
-  };
 }

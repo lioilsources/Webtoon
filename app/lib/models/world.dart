@@ -14,6 +14,10 @@ class WorldSummary {
   final String styleId;
   final String visibility;
 
+  /// Title and synopsis per reading language (`title_i18n` / `synopsis_i18n`; packs may leave them out).
+  final Map<String, String> titleI18n;
+  final Map<String, String> synopsisI18n;
+
   const WorldSummary({
     required this.id,
     this.ownerId = '',
@@ -24,7 +28,16 @@ class WorldSummary {
     this.language = 'cs',
     this.styleId = '',
     this.visibility = 'private',
+    this.titleI18n = const {},
+    this.synopsisI18n = const {},
   });
+
+  /// The synopsis in [lang]; null when it exists only in another language (a Czech
+  /// synopsis is not shown to a reader reading in English).
+  String? synopsisIn(String? lang) {
+    if (lang == null || lang == language) return synopsis;
+    return synopsisI18n[lang];
+  }
 
   factory WorldSummary.fromJson(Map<String, dynamic> j) => WorldSummary(
     id: str(j['id']),
@@ -36,6 +49,8 @@ class WorldSummary {
     language: str(j['language'], 'cs'),
     styleId: str(j['style_id']),
     visibility: str(j['visibility'], 'private'),
+    titleI18n: strMap(j['title_i18n']),
+    synopsisI18n: strMap(j['synopsis_i18n']),
   );
 
   bool isMine(String userId) => ownerId == userId;

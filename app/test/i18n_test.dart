@@ -3,7 +3,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:webtoon/config.dart';
 import 'package:webtoon/i18n/languages.dart';
+import 'package:webtoon/i18n/ui_strings.dart';
 import 'package:webtoon/models/episode.dart';
+import 'package:webtoon/packs/pack_store.dart';
 import 'package:webtoon/providers/language_provider.dart';
 import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/reader/bubble_layout.dart';
@@ -84,6 +86,48 @@ FakeWebtoonApi fakeApi() => FakeWebtoonApi(
 );
 
 void main() {
+  group('UI strings', () {
+    test('every UI language has exactly the Czech key set', () {
+      final cs = kUiStrings['cs']!.keys.toSet();
+      expect(kUiStrings.keys.toSet(), {...kReaderLanguages, 'cs'});
+      for (final lang in kUiStrings.keys) {
+        final keys = kUiStrings[lang]!.keys.toSet();
+        expect(cs.difference(keys), isEmpty, reason: '$lang is missing keys');
+        expect(keys.difference(cs), isEmpty, reason: '$lang has extra keys');
+        for (final k in keys) {
+          expect(kUiStrings[lang]![k], isNotEmpty, reason: '$lang $k');
+        }
+      }
+    });
+
+    test('translations keep the Czech placeholders', () {
+      final ph = RegExp(r'\{(\w+)\}');
+      Set<String> names(String s) =>
+          ph.allMatches(s).map((m) => m.group(1)!).toSet();
+      kUiStrings['cs']!.forEach((k, v) {
+        for (final lang in kUiStrings.keys) {
+          expect(names(kUiStrings[lang]![k]!), names(v), reason: '$lang $k');
+        }
+      });
+    });
+
+    test('plurals and localized errors', () {
+      expect(trPlural('cs', 'library.episodes', 1), '1 díl');
+      expect(trPlural('cs', 'library.episodes', 3), '3 díly');
+      expect(trPlural('cs', 'library.episodes', 5), '5 dílů');
+      expect(trPlural('ru', 'library.episodes', 22), '22 эпизода');
+      expect(trPlural('en', 'library.episodes', 1), '1 episode');
+      expect(trPlural('en', 'library.episodes', 2), '2 episodes');
+      const e = PackException('error.packPart', {'part': 'x'});
+      expect(e.message, 'Balíček má neplatnou část „x“.');
+      expect(trError('en', e), 'The pack has an invalid part “x”.');
+      expect(
+        tr('de', 'store.downloadFailed', {'error': e}),
+        'Download fehlgeschlagen: Das Paket hat einen ungültigen Teil „x“.',
+      );
+    });
+  });
+
   group('model fallback', () {
     final ep = Episode.fromJson(translatedEpisode());
 

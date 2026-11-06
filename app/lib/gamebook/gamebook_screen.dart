@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
 import '../providers/providers.dart';
 import '../providers/language_provider.dart';
@@ -66,14 +67,15 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
         : (known ? pr : pr.restart(g)).withKnown(g);
     setState(() => _progress = next);
     final fresh = next.newNodes(g);
+    final ui = ref.read(uiLanguageProvider);
     if (fresh.isNotEmpty && !widget.preview) {
       ScaffoldMessenger.maybeOf(context)?.showSnackBar(
         SnackBar(
           key: const ValueKey('gamebook-new-nodes'),
           content: Text(
             fresh.length == 1
-                ? 'V knize přibyla nová část. Najdeš ji na mapě cesty.'
-                : 'V knize přibyly nové části (${fresh.length}). Najdeš je na mapě cesty.',
+                ? tr(ui, 'gamebook.newNode')
+                : tr(ui, 'gamebook.newNodes', {'n': fresh.length}),
           ),
         ),
       );
@@ -94,12 +96,13 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
     final g = ref.watch(packStoreProvider).gamebook(widget.gamebookId);
     final branches = ref.watch(branchesProvider(widget.gamebookId));
     final pr = _progress;
+    final ui = ref.watch(uiLanguageProvider);
     if (g == null) {
       return Scaffold(
         appBar: AppBar(),
-        body: const EmptyState(
+        body: EmptyState(
           icon: Icons.menu_book_outlined,
-          title: 'Gamebook není stažený.',
+          title: tr(ui, 'gamebook.notDownloaded'),
         ),
       );
     }
@@ -109,28 +112,28 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          widget.preview ? 'Zkouška větve' : g.titleIn(lang),
+          widget.preview ? tr(ui, 'gamebook.preview') : g.titleIn(lang),
           overflow: TextOverflow.ellipsis,
         ),
         actions: [
           if (pr != null && pr.path.isNotEmpty)
             IconButton(
               key: const ValueKey('gamebook-back'),
-              tooltip: 'O krok zpět',
+              tooltip: tr(ui, 'gamebook.back'),
               icon: const Icon(Icons.undo_rounded),
               onPressed: () => _set(pr.back()),
             ),
           if (pr != null && !widget.preview)
             IconButton(
               key: const ValueKey('gamebook-map'),
-              tooltip: 'Moje cesta',
+              tooltip: tr(ui, 'gamebook.map'),
               icon: const Icon(Icons.map_outlined),
               onPressed: () => _showMap(context, g, pr),
             ),
           if (widget.kitUnlocked && !widget.preview)
             IconButton(
               key: const ValueKey('gamebook-editor'),
-              tooltip: 'Moje větve',
+              tooltip: tr(ui, 'gamebook.myBranches'),
               icon: const Icon(Icons.edit_note_rounded),
               onPressed: () => Navigator.of(context).push(
                 MaterialPageRoute<void>(
@@ -156,9 +159,9 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
                   BranchNodeView(gamebookId: g.id, node: own),
                   _end(g, branches, pr, own: own),
                 ] else
-                  const EmptyState(
+                  EmptyState(
                     icon: Icons.help_outline_rounded,
-                    title: 'Tahle část knihy chybí.',
+                    title: tr(ui, 'gamebook.missingNode'),
                   ),
               ],
             ),
@@ -220,6 +223,7 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
 
   void _showMap(BuildContext context, Gamebook g, GamebookProgress pr) {
     final scheme = Theme.of(context).colorScheme;
+    final ui = ref.read(uiLanguageProvider);
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
@@ -227,10 +231,18 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
         key: const ValueKey('gamebook-map-sheet'),
         padding: const EdgeInsets.fromLTRB(20, 0, 20, 24),
         children: [
-          Text('Moje cesta', style: ComicFonts.title().copyWith(fontSize: 24)),
+          Text(
+            tr(ui, 'gamebook.map'),
+            style: ComicFonts.title().copyWith(fontSize: 24),
+          ),
           const SizedBox(height: 4),
           Text(
-            'Nalezené konce: ${pr.endingsFound.where((id) => g.node(id)?.ending == GamebookEnding.good).length} z ${g.endings}',
+            tr(ui, 'gamebook.endingsFound', {
+              'found': pr.endingsFound
+                  .where((id) => g.node(id)?.ending == GamebookEnding.good)
+                  .length,
+              'total': g.endings,
+            }),
             style: TextStyle(color: scheme.onSurfaceVariant),
           ),
           const SizedBox(height: 12),
@@ -252,7 +264,7 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
               // unvisited nodes stay a secret; ones an update added say so
               title: Text(pr.visited.contains(id) ? g.node(id)!.title : '???'),
               trailing: pr.newNodes(g).contains(id)
-                  ? const Tag('Nové', key: ValueKey('map-new'))
+                  ? Tag(tr(ui, 'gamebook.new'), key: const ValueKey('map-new'))
                   : null,
             ),
           const SizedBox(height: 12),
@@ -263,7 +275,7 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
               _set(pr.restart(g));
             },
             icon: const Icon(Icons.replay_rounded),
-            label: const Text('Začít znovu'),
+            label: Text(tr(ui, 'gamebook.restart')),
           ),
         ],
       ),
@@ -286,6 +298,7 @@ class BranchNodeView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final api = ref.watch(apiProvider);
     final store = ref.watch(packStoreProvider);
+    final ui = ref.watch(uiLanguageProvider);
     return LayoutBuilder(
       builder: (context, c) => Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -294,11 +307,11 @@ class BranchNodeView extends ConsumerWidget {
             padding: const EdgeInsets.fromLTRB(16, 20, 16, 12),
             child: Row(
               children: [
-                const Tag('Moje větev'),
+                Tag(tr(ui, 'gamebook.myBranch')),
                 const SizedBox(width: 10),
                 Expanded(
                   child: Text(
-                    node.title.isEmpty ? 'Bez názvu' : node.title,
+                    node.title.isEmpty ? tr(ui, 'common.untitled') : node.title,
                     style: ComicFonts.title().copyWith(fontSize: 26),
                   ),
                 ),
@@ -331,7 +344,7 @@ Panel? sourcePanel(Episode? e, BranchPanel bp) {
 }
 
 /// End of a node: its choices (own ones marked), "Pokračovat" for a linear node, or an ending.
-class GamebookNodeEnd extends StatelessWidget {
+class GamebookNodeEnd extends ConsumerWidget {
   /// (choice, isOwn)
   final List<(GamebookChoice, bool)> choices;
   final String? language;
@@ -361,14 +374,15 @@ class GamebookNodeEnd extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ui = ref.watch(uiLanguageProvider);
     final scheme = Theme.of(context).colorScheme;
     final comic = ComicTheme.of(context);
     final children = <Widget>[];
     if (choices.isNotEmpty) {
       children.add(
         Text(
-          'Co uděláš?',
+          tr(ui, 'gamebook.whatNow'),
           style: ComicFonts.title().copyWith(fontSize: 28, height: 1.1),
         ),
       );
@@ -390,18 +404,18 @@ class GamebookNodeEnd extends StatelessWidget {
           key: const ValueKey('gamebook-next'),
           onPressed: () => onGo(next!),
           icon: const Icon(Icons.arrow_downward_rounded),
-          label: const Text('Pokračovat'),
+          label: Text(tr(ui, 'gate.continue')),
         ),
       );
     } else if (ending == GamebookEnding.retry) {
       children.addAll([
         Text(
-          'Tudy cesta nevede',
+          tr(ui, 'gamebook.deadEnd'),
           style: ComicFonts.title().copyWith(fontSize: 28),
         ),
         const SizedBox(height: 6),
         Text(
-          'Ještě není pozdě. Zkus to jinak.',
+          tr(ui, 'gamebook.deadEndHint'),
           style: TextStyle(color: scheme.onSurfaceVariant),
         ),
         const SizedBox(height: 14),
@@ -410,19 +424,19 @@ class GamebookNodeEnd extends StatelessWidget {
             key: const ValueKey('gamebook-retry'),
             onPressed: onRetry,
             icon: const Icon(Icons.replay_rounded),
-            label: const Text('Zkusit znovu'),
+            label: Text(tr(ui, 'store.retry')),
           ),
       ]);
     } else {
       children.addAll([
         Text(
-          ownEnding ? 'Konec tvé větve' : 'Konec',
+          tr(ui, ownEnding ? 'gamebook.branchEnd' : 'common.end'),
           style: ComicFonts.title().copyWith(fontSize: 32),
         ),
         if (!ownEnding && total > 0) ...[
           const SizedBox(height: 6),
           Text(
-            'Nalezené konce: $found z $total',
+            tr(ui, 'gamebook.endingsFound', {'found': found, 'total': total}),
             key: const ValueKey('gamebook-endings'),
             style: TextStyle(color: scheme.onSurfaceVariant),
           ),
@@ -437,7 +451,7 @@ class GamebookNodeEnd extends StatelessWidget {
             key: const ValueKey('gamebook-restart-end'),
             onPressed: onRestart,
             icon: const Icon(Icons.restart_alt_rounded),
-            label: const Text('Začít znovu'),
+            label: Text(tr(ui, 'gamebook.restart')),
           ),
         );
       }
@@ -446,7 +460,7 @@ class GamebookNodeEnd extends StatelessWidget {
           OutlinedButton(
             key: const ValueKey('gamebook-close'),
             onPressed: onClose,
-            child: const Text('Zpět do editoru'),
+            child: Text(tr(ui, 'gamebook.backToEditor')),
           ),
         );
       }
