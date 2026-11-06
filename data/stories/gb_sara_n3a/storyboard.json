@@ -1,5 +1,18 @@
 {
   "title": "Zvonice zapomnění",
+  "title_i18n": {
+    "de": "Der Glockenturm des Vergessens",
+    "en": "The Bell Tower of Forgetting",
+    "fr": "Le Clocher de l'Oubli",
+    "it": "Il Campanile dell'Oblio",
+    "ja": "わすれの かねの塔",
+    "ko": "망각의 종탑",
+    "pl": "Dzwonnica Zapomnienia",
+    "pt-BR": "O Campanário do Esquecimento",
+    "ru": "Колокольня забвения",
+    "uk": "Дзвіниця забуття",
+    "vi": "Tháp Chuông Lãng Quên"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Točité schody vedou nahoru do ticha.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Eine Wendeltreppe führt hinauf in die Stille.",
+            "en": "A spiral staircase leads up into the silence.",
+            "fr": "Un escalier en colimaçon monte dans le silence.",
+            "it": "Una scala a chiocciola sale nel silenzio.",
+            "ja": "らせん階段が しずかな 上へと つづく。",
+            "ko": "나선 계단이 고요 속으로 이어진다.",
+            "pl": "Kręte schody prowadzą w górę, w ciszę.",
+            "pt-BR": "Uma escada em espiral sobe para o silêncio.",
+            "ru": "Винтовая лестница ведёт вверх, в тишину.",
+            "uk": "Гвинтові сходи ведуть угору, в тишу.",
+            "vi": "Cầu thang xoắn dẫn lên nơi tĩnh lặng."
+          }
         }
       ],
       "sfx": [],
@@ -47,7 +73,20 @@
         {
           "speaker_id": "sara",
           "text": "Podívej se na ten zvon, Murre.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sieh dir die Glocke an, Murr.",
+            "en": "Look at that bell, Murr.",
+            "fr": "Regarde cette cloche, Murr.",
+            "it": "Guarda quella campana, Murr.",
+            "ja": "ムル、あの かねを 見て。",
+            "ko": "무르, 저 종 좀 봐.",
+            "pl": "Spójrz na ten dzwon, Murr.",
+            "pt-BR": "Olha esse sino, Murr.",
+            "ru": "Посмотри на этот колокол, Мурр.",
+            "uk": "Подивись на цей дзвін, Мурре.",
+            "vi": "Murr, nhìn cái chuông kia kìa."
+          }
         }
       ],
       "sfx": [],
@@ -80,7 +119,20 @@
         {
           "speaker_id": "sara",
           "text": "Je na něm kresba malé holčičky.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Darauf ist ein kleines Mädchen gemalt.",
+            "en": "There's a drawing of a little girl on it.",
+            "fr": "Il y a le dessin d'une petite fille dessus.",
+            "it": "C'è il disegno di una bambina.",
+            "ja": "ちいさな 女の子の えが かいてある。",
+            "ko": "작은 여자아이 그림이 있어.",
+            "pl": "Jest na nim rysunek małej dziewczynki.",
+            "pt-BR": "Tem o desenho de uma menininha nele.",
+            "ru": "На нём нарисована маленькая девочка.",
+            "uk": "На ньому намальована маленька дівчинка.",
+            "vi": "Trên đó có hình một cô bé."
+          }
         }
       ],
       "sfx": [],
@@ -188,7 +240,20 @@
         {
           "speaker_id": "murr",
           "text": "To jsem byl já.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war ich.",
+            "en": "That was me.",
+            "fr": "C'était moi.",
+            "it": "Quello ero io.",
+            "ja": "あれは ぼくだよ。",
+            "ko": "저건 나였어.",
+            "pl": "To byłem ja.",
+            "pt-BR": "Aquele era eu.",
+            "ru": "Это был я.",
+            "uk": "Це був я.",
+            "vi": "Đó là tớ."
+          }
         }
       ],
       "sfx": [],
@@ -214,7 +279,20 @@
         {
           "speaker_id": "sara",
           "text": "Královna nechtěla být sama.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Königin wollte nicht allein sein.",
+            "en": "The Queen didn't want to be alone.",
+            "fr": "La Reine ne voulait pas être seule.",
+            "it": "La Regina non voleva restare sola.",
+            "ja": "女王は ひとりに なりたくなかったんだ。",
+            "ko": "여왕은 혼자이고 싶지 않았던 거야.",
+            "pl": "Królowa nie chciała być sama.",
+            "pt-BR": "A Rainha não queria ficar sozinha.",
+            "ru": "Королева не хотела быть одна.",
+            "uk": "Королева не хотіла бути сама.",
+            "vi": "Nữ hoàng không muốn cô đơn."
+          }
         }
       ],
       "sfx": [],
@@ -249,7 +327,20 @@
         {
           "speaker_id": "sara",
           "text": "Pojďme ji najít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Komm, wir suchen sie.",
+            "en": "Let's go find her.",
+            "fr": "Allons la trouver.",
+            "it": "Andiamo a cercarla.",
+            "ja": "さがしに いこう。",
+            "ko": "그녀를 찾으러 가자.",
+            "pl": "Chodźmy ją znaleźć.",
+            "pt-BR": "Vamos encontrá-la.",
+            "ru": "Пойдём её найдём.",
+            "uk": "Ходімо її знайдемо.",
+            "vi": "Mình đi tìm bà ấy nào."
+          }
         }
       ],
       "sfx": [],

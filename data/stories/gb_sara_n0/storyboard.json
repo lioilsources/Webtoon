@@ -1,5 +1,18 @@
 {
   "title": "Koruna, která šeptá",
+  "title_i18n": {
+    "de": "Die flüsternde Krone",
+    "en": "The Whispering Crown",
+    "fr": "La couronne qui chuchote",
+    "it": "La corona che sussurra",
+    "ja": "ささやく かんむり",
+    "ko": "속삭이는 왕관",
+    "pl": "Szepcząca korona",
+    "pt-BR": "A coroa que sussurra",
+    "ru": "Шепчущая корона",
+    "uk": "Корона, що шепоче",
+    "vi": "Chiếc vương miện thì thầm"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -17,7 +30,20 @@
         {
           "speaker_id": "",
           "text": "Noc v Sářině pokoji. Koruna šeptá.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Nacht in Saras Zimmer. Die Krone flüstert.",
+            "en": "Night in Sara's room. The crown whispers.",
+            "fr": "La nuit, dans la chambre de Sara. La couronne chuchote.",
+            "it": "Notte nella stanza di Sara. La corona sussurra.",
+            "ja": "よるの サラの へや。かんむりが ささやく。",
+            "ko": "밤, 사라의 방. 왕관이 속삭인다.",
+            "pl": "Noc w pokoju Sary. Korona szepcze.",
+            "pt-BR": "Noite no quarto de Sara. A coroa sussurra.",
+            "ru": "Ночь в комнате Сары. Корона шепчет.",
+            "uk": "Ніч у кімнаті Сари. Корона шепоче.",
+            "vi": "Đêm trong phòng Sara. Vương miện thì thầm."
+          }
         }
       ],
       "sfx": [],
@@ -45,7 +71,20 @@
         {
           "speaker_id": "sara",
           "text": "(Šeptem) Sáro...",
-          "kind": "thought"
+          "kind": "thought",
+          "i18n": {
+            "de": "(Flüsternd) Sara...",
+            "en": "(Whispering) Sara...",
+            "fr": "(En chuchotant) Sara...",
+            "it": "(Sussurrando) Sara...",
+            "ja": "(ささやき声) サラ…",
+            "ko": "(속삭임) 사라…",
+            "pl": "(Szeptem) Saro...",
+            "pt-BR": "(Sussurrando) Sara...",
+            "ru": "(Шёпотом) Сара...",
+            "uk": "(Пошепки) Саро...",
+            "vi": "(Thì thầm) Sara..."
+          }
         }
       ],
       "sfx": [],
@@ -78,7 +117,20 @@
         {
           "speaker_id": "murr",
           "text": "Město zhasíná. Bez Královny na trůnu ho jedí stíny.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Stadt verlischt. Ohne Königin auf dem Thron fressen die Schatten sie auf.",
+            "en": "The city is fading. With no Queen on the throne, the shadows are eating it.",
+            "fr": "La ville s'éteint. Sans Reine sur le trône, les ombres la dévorent.",
+            "it": "La città si spegne. Senza la Regina sul trono, le ombre la divorano.",
+            "ja": "町が きえていく。女王が いないから、かげに たべられてるんだ。",
+            "ko": "도시가 꺼져 가. 왕좌에 여왕이 없어서 그림자가 삼키고 있어.",
+            "pl": "Miasto gaśnie. Bez Królowej na tronie pożerają je cienie.",
+            "pt-BR": "A cidade está se apagando. Sem a Rainha no trono, as sombras a devoram.",
+            "ru": "Город гаснет. Без Королевы на троне его съедают тени.",
+            "uk": "Місто згасає. Без Королеви на троні його їдять тіні.",
+            "vi": "Thành phố đang tắt dần. Không có Nữ hoàng trên ngai, bóng tối đang nuốt nó."
+          }
         }
       ],
       "sfx": [],
@@ -103,7 +155,20 @@
         {
           "speaker_id": "sara",
           "text": "Kde je Královna?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wo ist die Königin?",
+            "en": "Where is the Queen?",
+            "fr": "Où est la Reine ?",
+            "it": "Dov'è la Regina?",
+            "ja": "女王は どこ?",
+            "ko": "여왕은 어디 있어?",
+            "pl": "Gdzie jest Królowa?",
+            "pt-BR": "Cadê a Rainha?",
+            "ru": "Где Королева?",
+            "uk": "Де Королева?",
+            "vi": "Nữ hoàng đâu rồi?"
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +200,20 @@
         {
           "speaker_id": "murr",
           "text": "Nikdo neví. Zmizela hned, jak ti dala korunu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Niemand weiß es. Sie verschwand, sobald sie dir die Krone gab.",
+            "en": "No one knows. She vanished the moment she gave you the crown.",
+            "fr": "Personne ne sait. Elle a disparu dès qu'elle t'a donné la couronne.",
+            "it": "Nessuno lo sa. È sparita appena ti ha dato la corona.",
+            "ja": "だれも しらない。きみに かんむりを わたして すぐ きえたんだ。",
+            "ko": "아무도 몰라. 너한테 왕관을 주자마자 사라졌어.",
+            "pl": "Nikt nie wie. Zniknęła, gdy tylko dała ci koronę.",
+            "pt-BR": "Ninguém sabe. Ela sumiu assim que te deu a coroa.",
+            "ru": "Никто не знает. Она исчезла, как только отдала тебе корону.",
+            "uk": "Ніхто не знає. Вона зникла, щойно віддала тобі корону.",
+            "vi": "Không ai biết. Bà biến mất ngay khi trao cho cậu vương miện."
+          }
         }
       ],
       "sfx": [],
@@ -199,7 +277,20 @@
         {
           "speaker_id": "sara",
           "text": "Musím se rozhodnout.",
-          "kind": "thought"
+          "kind": "thought",
+          "i18n": {
+            "de": "Ich muss mich entscheiden.",
+            "en": "I have to decide.",
+            "fr": "Je dois choisir.",
+            "it": "Devo decidere.",
+            "ja": "きめなくちゃ。",
+            "ko": "결정해야 해.",
+            "pl": "Muszę zdecydować.",
+            "pt-BR": "Preciso decidir.",
+            "ru": "Я должна решить.",
+            "uk": "Я маю вирішити.",
+            "vi": "Mình phải quyết định."
+          }
         }
       ],
       "sfx": [],
@@ -233,7 +324,20 @@
         {
           "speaker_id": "queen",
           "text": "...",
-          "kind": "thought"
+          "kind": "thought",
+          "i18n": {
+            "de": "...",
+            "en": "...",
+            "fr": "...",
+            "it": "...",
+            "ja": "…",
+            "ko": "…",
+            "pl": "...",
+            "pt-BR": "...",
+            "ru": "...",
+            "uk": "...",
+            "vi": "..."
+          }
         }
       ],
       "sfx": [],

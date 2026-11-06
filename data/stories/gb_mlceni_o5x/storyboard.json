@@ -1,5 +1,18 @@
 {
   "title": "Prázdné křeslo",
+  "title_i18n": {
+    "de": "Der leere Sessel",
+    "en": "The Empty Chair",
+    "fr": "Le fauteuil vide",
+    "it": "La poltrona vuota",
+    "ja": "空いた椅子",
+    "ko": "빈 의자",
+    "pl": "Pusty fotel",
+    "pt-BR": "A poltrona vazia",
+    "ru": "Пустое кресло",
+    "uk": "Порожнє крісло",
+    "vi": "Chiếc ghế trống"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano. To je ta práce.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Das ist die Arbeit.",
+            "en": "Yes. That's the work.",
+            "fr": "Oui. C'est là le travail.",
+            "it": "Sì. È questo il lavoro.",
+            "ja": "ええ。それが、ここでの仕事です。",
+            "ko": "네. 그게 우리가 할 일이에요.",
+            "pl": "Tak. Na tym polega ta praca.",
+            "pt-BR": "Sim. É esse o trabalho.",
+            "ru": "Да. В этом и состоит работа.",
+            "uk": "Так. У цьому й полягає робота.",
+            "vi": "Phải. Đó chính là công việc."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Takže další úkol.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Also noch eine Aufgabe.",
+            "en": "So, another task.",
+            "fr": "Donc, une tâche de plus.",
+            "it": "Quindi un altro compito.",
+            "ja": "つまり、課題がもうひとつ。",
+            "ko": "그러니까 또 하나의 과제네요.",
+            "pl": "Czyli kolejne zadanie.",
+            "pt-BR": "Então, mais uma tarefa.",
+            "ru": "Значит, ещё одно задание.",
+            "uk": "Отже, ще одне завдання.",
+            "vi": "Vậy là thêm một nhiệm vụ."
+          }
         }
       ],
       "sfx": [],
@@ -116,7 +155,20 @@
         {
           "speaker_id": "anna",
           "text": "V tom budu dobrá. Uvidíte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Darin werde ich gut sein. Sie werden sehen.",
+            "en": "I'll be good at it. You'll see.",
+            "fr": "J'y serai bonne. Vous verrez.",
+            "it": "In questo sarò brava. Vedrà.",
+            "ja": "それなら、得意です。見ていてください。",
+            "ko": "그건 잘할 거예요. 두고 보세요.",
+            "pl": "W tym będę dobra. Zobaczy pan.",
+            "pt-BR": "Nisso eu vou ser boa. Você vai ver.",
+            "ru": "С этим я справлюсь. Увидите.",
+            "uk": "З цим я впораюся. Побачите.",
+            "vi": "Việc đó tôi sẽ làm giỏi. Ông xem."
+          }
         }
       ],
       "sfx": [],
@@ -185,7 +237,20 @@
         {
           "speaker_id": "",
           "text": "Někdy stačí jedna věta navíc. Zkus to znovu.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Manchmal genügt ein Satz zu viel. Versuch es noch einmal.",
+            "en": "Sometimes one sentence too many is all it takes. Try again.",
+            "fr": "Parfois, une phrase de trop suffit. Réessaie.",
+            "it": "A volte basta una frase di troppo. Riprova.",
+            "ja": "ときに、ひと言多いだけで十分なのだ。もう一度やってみよう。",
+            "ko": "때로는 한마디 더하는 것만으로 충분하다. 다시 해 보세요.",
+            "pl": "Czasem wystarczy jedno zdanie za dużo. Spróbuj jeszcze raz.",
+            "pt-BR": "Às vezes basta uma frase a mais. Tente de novo.",
+            "ru": "Иногда хватает одной лишней фразы. Попробуй ещё раз.",
+            "uk": "Іноді досить однієї зайвої фрази. Спробуй ще раз.",
+            "vi": "Đôi khi chỉ cần thừa một câu. Hãy thử lại."
+          }
         }
       ],
       "sfx": [],
@@ -207,7 +272,20 @@
         {
           "speaker_id": "",
           "text": "Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Wenn dich etwas aus dieser Geschichte betrifft: Ruf 116 123 an oder eine Krisenhotline in deiner Nähe.",
+            "en": "If anything in this story concerns you: call 116 123 or your local crisis line.",
+            "fr": "Si quelque chose dans cette histoire te concerne : appelle le 116 123 ou une ligne d'écoute près de chez toi.",
+            "it": "Se qualcosa di questa storia ti riguarda: chiama il 116 123 o una linea di ascolto del tuo paese.",
+            "ja": "この物語のどこかが自分のことのように感じられたら、お住まいの国の相談窓口へ（ヨーロッパでは116 123）。",
+            "ko": "이 이야기의 무언가가 당신의 이야기처럼 느껴진다면, 사는 나라의 위기 상담 전화에 연락하세요(유럽에서는 116 123).",
+            "pl": "Jeśli coś z tej historii cię dotyczy: telefon wsparcia 116 123 lub lokalny telefon zaufania.",
+            "pt-BR": "Se algo nesta história diz respeito a você: linha de apoio emocional 116 123 ou a linha de crise da sua região.",
+            "ru": "Если что-то в этой истории касается тебя: линия психологической помощи 116 123 или местный телефон доверия.",
+            "uk": "Якщо щось у цій історії стосується тебе: лінія психологічної допомоги 116 123 або місцевий телефон довіри.",
+            "vi": "Nếu điều gì trong câu chuyện này chạm đến bạn: hãy gọi đường dây hỗ trợ khủng hoảng ở nước bạn (ở châu Âu: 116 123)."
+          }
         }
       ],
       "sfx": [],

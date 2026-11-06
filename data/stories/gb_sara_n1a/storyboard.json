@@ -1,5 +1,18 @@
 {
   "title": "Koruna stínů",
+  "title_i18n": {
+    "de": "Krone der Schatten",
+    "en": "Crown of Shadows",
+    "fr": "La couronne des ombres",
+    "it": "La corona delle ombre",
+    "ja": "かげの かんむり",
+    "ko": "그림자의 왕관",
+    "pl": "Korona cieni",
+    "pt-BR": "A coroa das sombras",
+    "ru": "Корона теней",
+    "uk": "Корона тіней",
+    "vi": "Vương miện bóng tối"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Sára si nasadí korunu; pokoj se rozplyne ve fialovém víru.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Sara setzt die Krone auf; das Zimmer zerfließt in einem lila Wirbel.",
+            "en": "Sara puts on the crown; the room melts into a purple swirl.",
+            "fr": "Sara met la couronne ; la chambre fond dans un tourbillon violet.",
+            "it": "Sara indossa la corona; la stanza si scioglie in un vortice viola.",
+            "ja": "サラが かんむりを かぶると、へやが むらさきの うずに とける。",
+            "ko": "사라가 왕관을 쓰자, 방이 보랏빛 소용돌이 속으로 녹아든다.",
+            "pl": "Sara zakłada koronę; pokój rozpływa się w fioletowym wirze.",
+            "pt-BR": "Sara põe a coroa; o quarto se desfaz num redemoinho roxo.",
+            "ru": "Сара надевает корону; комната тает в фиолетовом вихре.",
+            "uk": "Сара одягає корону; кімната тане у фіолетовому вирі.",
+            "vi": "Sara đội vương miện; căn phòng tan vào vòng xoáy tím."
+          }
         }
       ],
       "sfx": [],
@@ -45,7 +71,20 @@
         {
           "speaker_id": "sara",
           "text": "Poslouchají mě?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie gehorchen mir?",
+            "en": "They obey me?",
+            "fr": "Ils m'obéissent ?",
+            "it": "Mi obbediscono?",
+            "ja": "いうことを きくの?",
+            "ko": "내 말을 듣는 거야?",
+            "pl": "Słuchają mnie?",
+            "pt-BR": "Eles me obedecem?",
+            "ru": "Они меня слушаются?",
+            "uk": "Вони мене слухаються?",
+            "vi": "Chúng nghe lời mình sao?"
+          }
         }
       ],
       "sfx": [],
@@ -77,7 +116,20 @@
         {
           "speaker_id": "murr",
           "text": "Koruna ti dává moc. Ale bere teplo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Krone gibt dir Macht. Aber sie nimmt dir die Wärme.",
+            "en": "The crown gives you power. But it takes your warmth.",
+            "fr": "La couronne te donne du pouvoir. Mais elle prend ta chaleur.",
+            "it": "La corona ti dà potere. Ma ti toglie il calore.",
+            "ja": "かんむりは ちからを くれる。でも あたたかさを うばうよ。",
+            "ko": "왕관은 힘을 줘. 하지만 따뜻함을 빼앗아.",
+            "pl": "Korona daje ci moc. Ale zabiera ciepło.",
+            "pt-BR": "A coroa te dá poder. Mas tira o seu calor.",
+            "ru": "Корона даёт тебе силу. Но забирает тепло.",
+            "uk": "Корона дає тобі силу. Але забирає тепло.",
+            "vi": "Vương miện cho cậu sức mạnh. Nhưng lấy đi hơi ấm."
+          }
         }
       ],
       "sfx": [],
@@ -133,7 +185,20 @@
         {
           "speaker_id": "",
           "text": "Okny sálu je vidět, jak dole ve městě zhasínají lucerny.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Durch die Fenster des Saals sieht man unten in der Stadt die Laternen verlöschen.",
+            "en": "Through the hall's windows, the lanterns in the city below are going out.",
+            "fr": "Par les fenêtres de la salle, on voit les lanternes s'éteindre en ville.",
+            "it": "Dalle finestre della sala si vedono spegnersi le lanterne nella città.",
+            "ja": "広間の まどから、下の 町の ちょうちんが きえていくのが 見える。",
+            "ko": "홀의 창문 너머로, 아래 도시의 등불이 하나둘 꺼진다.",
+            "pl": "Przez okna sali widać, jak w mieście gasną latarnie.",
+            "pt-BR": "Pelas janelas do salão, as lanternas da cidade lá embaixo se apagam.",
+            "ru": "В окна зала видно, как внизу в городе гаснут фонари.",
+            "uk": "Крізь вікна зали видно, як унизу в місті гаснуть ліхтарі.",
+            "vi": "Qua cửa sổ đại sảnh, những chiếc đèn lồng dưới thành phố đang tắt dần."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "queen",
           "text": "Město duchů zhasíná bez mě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Geisterstadt verlischt ohne mich.",
+            "en": "The City of Ghosts is fading without me.",
+            "fr": "La Cité des Fantômes s'éteint sans moi.",
+            "it": "La Città dei Fantasmi si spegne senza di me.",
+            "ja": "わたしが いないと、おばけの町は きえてしまう。",
+            "ko": "내가 없으면 유령의 도시는 꺼져 버려.",
+            "pl": "Miasto Duchów gaśnie beze mnie.",
+            "pt-BR": "A Cidade dos Fantasmas se apaga sem mim.",
+            "ru": "Без меня Город призраков гаснет.",
+            "uk": "Без мене Місто привидів згасає.",
+            "vi": "Thiếu ta, Thành phố Ma đang tắt dần."
+          }
         }
       ],
       "sfx": [],
@@ -199,7 +277,20 @@
         {
           "speaker_id": "sara",
           "text": "Zachráním město. I za cenu chladu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich rette die Stadt. Auch wenn mir kalt wird.",
+            "en": "I'll save the city. Even if it makes me cold.",
+            "fr": "Je sauverai la ville. Même si j'ai froid.",
+            "it": "Salverò la città. Anche a costo del freddo.",
+            "ja": "町を すくうよ。さむくなっても。",
+            "ko": "도시를 구할 거야. 차가워지더라도.",
+            "pl": "Uratuję miasto. Nawet za cenę chłodu.",
+            "pt-BR": "Vou salvar a cidade. Mesmo que eu fique fria.",
+            "ru": "Я спасу город. Даже если станет холодно.",
+            "uk": "Я врятую місто. Навіть ціною холоду.",
+            "vi": "Mình sẽ cứu thành phố. Dù có lạnh giá."
+          }
         }
       ],
       "sfx": [],
@@ -231,7 +322,20 @@
         {
           "speaker_id": "sara",
           "text": "Kdo jsi byla, Královno?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer warst du, Königin?",
+            "en": "Who were you, Queen?",
+            "fr": "Qui étais-tu, Reine ?",
+            "it": "Chi eri, Regina?",
+            "ja": "女王さま、むかしは だれだったの?",
+            "ko": "여왕님, 예전엔 누구였어요?",
+            "pl": "Kim byłaś, Królowo?",
+            "pt-BR": "Quem você era, Rainha?",
+            "ru": "Кем ты была, Королева?",
+            "uk": "Ким ти була, Королево?",
+            "vi": "Nữ hoàng ơi, trước đây người là ai?"
+          }
         }
       ],
       "sfx": [],
@@ -263,7 +367,20 @@
         {
           "speaker_id": "queen",
           "text": "Byla jsem jako ty. Samotná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich war wie du. Ganz allein.",
+            "en": "I was like you. All alone.",
+            "fr": "J'étais comme toi. Toute seule.",
+            "it": "Ero come te. Sola.",
+            "ja": "あなたと おなじ。ひとりぼっちだった。",
+            "ko": "너와 같았지. 혼자였어.",
+            "pl": "Byłam taka jak ty. Samotna.",
+            "pt-BR": "Eu era como você. Sozinha.",
+            "ru": "Я была как ты. Одна.",
+            "uk": "Я була як ти. Сама.",
+            "vi": "Ta từng giống cháu. Một mình."
+          }
         }
       ],
       "sfx": [],
@@ -291,7 +408,20 @@
         {
           "speaker_id": "murr",
           "text": "Je čas jít, Sáro.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Zeit zu gehen, Sara.",
+            "en": "Time to go, Sara.",
+            "fr": "Il est temps de partir, Sara.",
+            "it": "È ora di andare, Sara.",
+            "ja": "いこう、サラ。",
+            "ko": "이제 가야 해, 사라.",
+            "pl": "Czas iść, Saro.",
+            "pt-BR": "Hora de ir, Sara.",
+            "ru": "Пора идти, Сара.",
+            "uk": "Час іти, Саро.",
+            "vi": "Đến lúc đi rồi, Sara."
+          }
         }
       ],
       "sfx": [],

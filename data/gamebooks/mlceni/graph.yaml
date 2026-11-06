@@ -2,13 +2,13 @@
 # Čtenář hraje Psychologa a na několika místech volí, co udělá. Volby nikoho neléčí: vedlejší cesty ukazují tlak,
 # ne selhání Anny, a žádná nekončí jejím ohrožením.
 #
-# NOVÝ TEXT (není ze hry, čeká na schválení autorem): uzly o1x, o2x, o4x, o5x, o6x, o6g, upozornění v o1a a linka
+# NOVÝ TEXT (není ze hry, autor ho schválil 2026-11-05): uzly o1x, o2x, o4x, o5x, o6x, o6g, upozornění v o1a a linka
 # pomoci v koncích. Všechno ostatní je doslova ze hry; bubliny musí zůstat beze změny (addendum_drama.md).
 
 schema: 1
 id: mlceni
 title: Učit se mlčet
-title_i18n: {en: Learning to Be Silent}
+title_i18n: {de: "Schweigen lernen", en: "Learning to Be Silent", fr: "Apprendre à se taire", it: "Imparare a tacere", ja: "黙ることを学ぶ", ko: "침묵을 배우다", pl: "Nauczyć się milczeć", pt-BR: "Aprender a calar", ru: "Учиться молчать", uk: "Учитися мовчати", vi: "Học cách im lặng"}
 world: w_mlceni
 audience: adult
 language: cs
@@ -97,8 +97,8 @@ nodes:
       - "Psycholog: Co maminka?"
       - "Anna: Nic."
     choices:
-      - {id: pockat, text: "„Dobře.“", to: o1d}
-      - {id: naleh, text: "„Řekněte mi o ní.“", to: o1x}
+      - {id: pockat, text: "„Dobře.“", text_i18n: {de: "„Gut.“", en: "“All right.”", fr: "« D'accord. »", it: "«Va bene.»", ja: "「わかりました」", ko: "“알겠어요.”", pl: "„Dobrze.”", pt-BR: "“Tudo bem.”", ru: "«Хорошо.»", uk: "«Добре.»", vi: "“Được rồi.”"}, to: o1d}
+      - {id: naleh, text: "„Řekněte mi o ní.“", text_i18n: {de: "„Erzählen Sie mir von ihr.“", en: "“Tell me about her.”", fr: "« Parlez-moi d'elle. »", it: "«Mi parli di lei.»", ja: "「お母さんのことを、話してください」", ko: "“어머니 이야기를 해 주세요.”", pl: "„Proszę mi o niej opowiedzieć.”", pt-BR: "“Me fale dela.”", ru: "«Расскажите мне о ней.»", uk: "«Розкажіть мені про неї.»", vi: "“Hãy kể cho tôi về bà ấy.”"}, to: o1x}
   o1d:
     title: Až budete chtít
     location: l_poradna
@@ -193,8 +193,8 @@ nodes:
       - "Anna: Ale je."
       - Anna se napije. Detail sklenice v její ruce, rukáv svetru.
     choices:
-      - {id: nedivat, text: "Nedívat se", to: o3a}
-      - {id: divat, text: "Podívat se", to: o2x}
+      - {id: nedivat, text: "Nedívat se", text_i18n: {de: "Nicht hinsehen", en: "Don't look", fr: "Ne pas regarder", it: "Non guardare", ja: "見ない", ko: "보지 않기", pl: "Nie patrzeć", pt-BR: "Não olhar", ru: "Не смотреть", uk: "Не дивитися", vi: "Không nhìn"}, to: o3a}
+      - {id: divat, text: "Podívat se", text_i18n: {de: "Hinsehen", en: "Look", fr: "Regarder", it: "Guardare", ja: "見る", ko: "보기", pl: "Spojrzeć", pt-BR: "Olhar", ru: "Посмотреть", uk: "Подивитися", vi: "Nhìn"}, to: o2x}
   o2x:
     title: Viděl jste to
     location: l_poradna
@@ -330,8 +330,8 @@ nodes:
       - "Psycholog: Čím?"
       - "Anna: Vy ode mě nic nechcete."
     choices:
-      - {id: pravda, text: "„To není tak docela pravda.“", to: o4c}
-      - {id: nic, text: "„Ne. Nic nechci.“", to: o4x}
+      - {id: pravda, text: "„To není tak docela pravda.“", text_i18n: {de: "„Das stimmt nicht ganz.“", en: "“That's not entirely true.”", fr: "« Ce n'est pas tout à fait vrai. »", it: "«Non è del tutto vero.»", ja: "「それは、必ずしも本当ではありません」", ko: "“그건 꼭 맞는 말은 아니에요.”", pl: "„To nie do końca prawda.”", pt-BR: "“Isso não é bem verdade.”", ru: "«Это не совсем так.»", uk: "«Це не зовсім так.»", vi: "“Điều đó không hoàn toàn đúng.”"}, to: o4c}
+      - {id: nic, text: "„Ne. Nic nechci.“", text_i18n: {de: "„Nein. Ich will nichts.“", en: "“No. I want nothing.”", fr: "« Non. Je ne veux rien. »", it: "«No. Non voglio niente.»", ja: "「いいえ。何も求めていません」", ko: "“아니요. 아무것도 바라지 않아요.”", pl: "„Nie. Niczego nie chcę.”", pt-BR: "“Não. Não quero nada.”", ru: "«Нет. Ничего не хочу.»", uk: "«Ні. Нічого не хочу.»", vi: "“Không. Tôi chẳng muốn gì cả.”"}, to: o4x}
   o4c:
     title: To je hodně
     location: l_poradna
@@ -412,8 +412,8 @@ nodes:
       - "Psycholog: A také si nemyslím, že se můžete uzdravit tím, že se někdo jiný bude snažit milovat vás dostatečně za vás."
       - "Anna: Takže se musím naučit mít ráda sama sebe."
     choices:
-      - {id: nerekl, text: "„To jsem neřekl.“", to: o5c}
-      - {id: ano, text: "„Ano. To je ta práce.“", to: o5x}
+      - {id: nerekl, text: "„To jsem neřekl.“", text_i18n: {de: "„Das habe ich nicht gesagt.“", en: "“I didn't say that.”", fr: "« Je n'ai pas dit ça. »", it: "«Non l'ho detto.»", ja: "「そうは言っていません」", ko: "“그렇게 말하지 않았어요.”", pl: "„Tego nie powiedziałem.”", pt-BR: "“Eu não disse isso.”", ru: "«Этого я не говорил.»", uk: "«Цього я не казав.»", vi: "“Tôi không nói thế.”"}, to: o5c}
+      - {id: ano, text: "„Ano. To je ta práce.“", text_i18n: {de: "„Ja. Das ist die Arbeit.“", en: "“Yes. That's the work.”", fr: "« Oui. C'est là le travail. »", it: "«Sì. È questo il lavoro.»", ja: "「ええ。それが、ここでの仕事です」", ko: "“네. 그게 우리가 할 일이에요.”", pl: "„Tak. Na tym polega ta praca.”", pt-BR: "“Sim. É esse o trabalho.”", ru: "«Да. В этом и состоит работа.»", uk: "«Так. У цьому й полягає робота.»", vi: "“Phải. Đó chính là công việc.”"}, to: o5x}
   o5c:
     title: Další disciplína
     location: l_poradna
@@ -514,8 +514,8 @@ nodes:
       - Pauza.
       - "Anna: Vy jste někdy chtěl umřít?"
     choices:
-      - {id: ano, text: "Odpovědět", to: o6c}
-      - {id: proc, text: "„Proč se ptáte?“", to: o6x}
+      - {id: ano, text: "Odpovědět", text_i18n: {de: "Antworten", en: "Answer", fr: "Répondre", it: "Rispondere", ja: "答える", ko: "대답하기", pl: "Odpowiedzieć", pt-BR: "Responder", ru: "Ответить", uk: "Відповісти", vi: "Trả lời"}, to: o6c}
+      - {id: proc, text: "„Proč se ptáte?“", text_i18n: {de: "„Warum fragen Sie?“", en: "“Why do you ask?”", fr: "« Pourquoi cette question ? »", it: "«Perché me lo chiede?»", ja: "「なぜ、そんなことを訊くんですか？」", ko: "“왜 물어보세요?”", pl: "„Dlaczego pani pyta?”", pt-BR: "“Por que você pergunta?”", ru: "«Почему вы спрашиваете?»", uk: "«Чому ви питаєте?»", vi: "“Sao cô lại hỏi vậy?”"}, to: o6x}
   o6x:
     title: Zeptala jsem se první
     location: l_poradna
@@ -597,8 +597,8 @@ nodes:
       - "Psycholog: Na shledanou, Anno."
       - Anna odejde. Psycholog zůstane sedět a podívá se na knihu na stolku.
     choices:
-      - {id: kniha, text: "Otevřít knihu", to: o6f, if: "not zlom"}
-      - {id: kniha2, text: "Otevřít knihu", to: o6g, if: zlom}
+      - {id: kniha, text: "Otevřít knihu", text_i18n: {de: "Das Buch öffnen", en: "Open the book", fr: "Ouvrir le livre", it: "Aprire il libro", ja: "本を開く", ko: "책을 펼치기", pl: "Otworzyć książkę", pt-BR: "Abrir o livro", ru: "Открыть книгу", uk: "Відкрити книжку", vi: "Mở cuốn sách"}, to: o6f, if: "not zlom"}
+      - {id: kniha2, text: "Otevřít knihu", text_i18n: {de: "Das Buch öffnen", en: "Open the book", fr: "Ouvrir le livre", it: "Aprire il libro", ja: "本を開く", ko: "책을 펼치기", pl: "Otworzyć książkę", pt-BR: "Abrir o livro", ru: "Открыть книгу", uk: "Відкрити книжку", vi: "Mở cuốn sách"}, to: o6g, if: zlom}
   o6f:
     title: Na první stránce
     location: l_poradna

@@ -1,5 +1,18 @@
 {
   "title": "Královna ve tmě",
+  "title_i18n": {
+    "de": "Die Königin im Dunkeln",
+    "en": "The Queen in the Dark",
+    "fr": "La reine dans le noir",
+    "it": "La regina nel buio",
+    "ja": "くらやみの 女王",
+    "ko": "어둠 속의 여왕",
+    "pl": "Królowa w ciemności",
+    "pt-BR": "A rainha no escuro",
+    "ru": "Королева во тьме",
+    "uk": "Королева в темряві",
+    "vi": "Nữ hoàng trong bóng tối"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Sára a Murr vstoupí do sálu, uprostřed se točí stínová bouře.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Sara und Murr betreten den Saal; in der Mitte wirbelt ein Schattensturm.",
+            "en": "Sara and Murr enter the hall; a shadow storm whirls in the middle.",
+            "fr": "Sara et Murr entrent dans la salle ; au milieu tourbillonne une tempête d'ombres.",
+            "it": "Sara e Murr entrano nella sala; al centro turbina una tempesta d'ombre.",
+            "ja": "サラと ムルが 広間に 入る。まんなかで かげの あらしが うずまいている。",
+            "ko": "사라와 무르가 홀에 들어선다. 한가운데서 그림자 폭풍이 소용돌이친다.",
+            "pl": "Sara i Murr wchodzą do sali, pośrodku wiruje burza cieni.",
+            "pt-BR": "Sara e Murr entram no salão; no meio gira uma tempestade de sombras.",
+            "ru": "Сара и Мурр входят в зал, посередине кружится буря теней.",
+            "uk": "Сара й Мурр заходять до зали, посередині кружляє буря тіней.",
+            "vi": "Sara và Murr bước vào đại sảnh; giữa phòng, cơn bão bóng tối đang xoáy."
+          }
         }
       ],
       "sfx": [],
@@ -52,7 +78,20 @@
         {
           "speaker_id": "queen",
           "text": "Nechte mě. Když budu sama, nikdo mě nemůže ztratit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Lasst mich. Wenn ich allein bin, kann mich niemand verlieren.",
+            "en": "Leave me. If I'm alone, no one can lose me.",
+            "fr": "Laissez-moi. Si je suis seule, personne ne peut me perdre.",
+            "it": "Lasciatemi. Se sono sola, nessuno può perdermi.",
+            "ja": "ほうっておいて。ひとりなら、だれも わたしを なくさない。",
+            "ko": "날 내버려 둬. 혼자라면 아무도 날 잃을 수 없어.",
+            "pl": "Zostawcie mnie. Gdy jestem sama, nikt mnie nie straci.",
+            "pt-BR": "Me deixem. Se eu ficar sozinha, ninguém pode me perder.",
+            "ru": "Оставьте меня. Если я одна, никто не может меня потерять.",
+            "uk": "Залиште мене. Коли я сама, ніхто не може мене втратити.",
+            "vi": "Để ta yên. Nếu ta một mình, không ai có thể mất ta."
+          }
         }
       ],
       "sfx": [],
@@ -171,7 +210,20 @@
         {
           "speaker_id": "",
           "text": "Bouře sílí, lucerny ve městě skoro zhasly.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Sturm wird stärker, die Laternen der Stadt sind fast erloschen.",
+            "en": "The storm grows stronger; the city's lanterns have almost gone out.",
+            "fr": "La tempête grandit, les lanternes de la ville sont presque éteintes.",
+            "it": "La tempesta cresce, le lanterne della città sono quasi spente.",
+            "ja": "あらしが つよくなる。町の ちょうちんは ほとんど きえた。",
+            "ko": "폭풍이 거세진다. 도시의 등불이 거의 다 꺼졌다.",
+            "pl": "Burza się wzmaga, latarnie w mieście prawie zgasły.",
+            "pt-BR": "A tempestade aumenta; as lanternas da cidade quase se apagaram.",
+            "ru": "Буря крепнет, фонари в городе почти погасли.",
+            "uk": "Буря дужчає, ліхтарі в місті майже згасли.",
+            "vi": "Cơn bão mạnh dần, đèn lồng trong thành phố gần tắt hết."
+          }
         }
       ],
       "sfx": [],
@@ -223,7 +275,20 @@
         {
           "speaker_id": "",
           "text": "Poslední rozhodnutí.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Die letzte Entscheidung.",
+            "en": "The last choice.",
+            "fr": "Le dernier choix.",
+            "it": "L'ultima scelta.",
+            "ja": "さいごの せんたく。",
+            "ko": "마지막 선택.",
+            "pl": "Ostatnia decyzja.",
+            "pt-BR": "A última escolha.",
+            "ru": "Последний выбор.",
+            "uk": "Останній вибір.",
+            "vi": "Lựa chọn cuối cùng."
+          }
         }
       ],
       "sfx": [],

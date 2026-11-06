@@ -1,5 +1,18 @@
 {
   "title": "Viděl jste to",
+  "title_i18n": {
+    "de": "Sie haben es gesehen",
+    "en": "You Saw It",
+    "fr": "Vous l'avez vu",
+    "it": "L'ha visto",
+    "ja": "見ましたよね",
+    "ko": "보셨잖아요",
+    "pl": "Widział pan",
+    "pt-BR": "Você viu",
+    "ru": "Вы это видели",
+    "uk": "Ви це бачили",
+    "vi": "Nhưng ông đã thấy"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -100,7 +113,20 @@
         {
           "speaker_id": "anna",
           "text": "Zapíšete si to?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Notieren Sie das?",
+            "en": "Will you write that down?",
+            "fr": "Vous allez le noter ?",
+            "it": "Se lo annota?",
+            "ja": "メモしますか？",
+            "ko": "적으실 거예요?",
+            "pl": "Zapisze pan to sobie?",
+            "pt-BR": "Vai anotar isso?",
+            "ru": "Вы это запишете?",
+            "uk": "Ви це запишете?",
+            "vi": "Ông sẽ ghi lại à?"
+          }
         }
       ],
       "sfx": [],
@@ -133,7 +159,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
         }
       ],
       "sfx": [],
@@ -166,7 +205,20 @@
         {
           "speaker_id": "anna",
           "text": "Ale viděl jste to.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber Sie haben es gesehen.",
+            "en": "But you saw it.",
+            "fr": "Mais vous l'avez vu.",
+            "it": "Ma l'ha visto.",
+            "ja": "でも、見ましたよね。",
+            "ko": "그래도 보셨잖아요.",
+            "pl": "Ale pan to widział.",
+            "pt-BR": "Mas você viu.",
+            "ru": "Но вы это видели.",
+            "uk": "Але ви це бачили.",
+            "vi": "Nhưng ông đã thấy rồi."
+          }
         }
       ],
       "sfx": [],

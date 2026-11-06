@@ -1,5 +1,18 @@
 {
   "title": "Jezero vzpomínek",
+  "title_i18n": {
+    "de": "Der See der Erinnerungen",
+    "en": "The Lake of Memories",
+    "fr": "Le Lac des Souvenirs",
+    "it": "Il Lago dei Ricordi",
+    "ja": "おもいでの湖",
+    "ko": "추억의 호수",
+    "pl": "Jezioro Wspomnień",
+    "pt-BR": "O Lago das Lembranças",
+    "ru": "Озеро воспоминаний",
+    "uk": "Озеро спогадів",
+    "vi": "Hồ Ký Ức"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -17,7 +30,20 @@
         {
           "speaker_id": "",
           "text": "Jezero vzpomínek v noci.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Der See der Erinnerungen bei Nacht.",
+            "en": "The Lake of Memories at night.",
+            "fr": "Le Lac des Souvenirs, la nuit.",
+            "it": "Il Lago dei Ricordi di notte.",
+            "ja": "よるの おもいでの湖。",
+            "ko": "밤의 추억의 호수.",
+            "pl": "Jezioro Wspomnień nocą.",
+            "pt-BR": "O Lago das Lembranças à noite.",
+            "ru": "Озеро воспоминаний ночью.",
+            "uk": "Озеро спогадів уночі.",
+            "vi": "Hồ Ký Ức về đêm."
+          }
         }
       ],
       "sfx": [],
@@ -124,7 +150,20 @@
         {
           "speaker_id": "murr",
           "text": "Já jsem ji neopustil. Já se jen ztratil.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe sie nicht verlassen. Ich habe mich nur verirrt.",
+            "en": "I didn't leave her. I just got lost.",
+            "fr": "Je ne l'ai pas abandonnée. Je me suis juste perdu.",
+            "it": "Non l'ho abbandonata. Mi sono solo perso.",
+            "ja": "ぼくは すてたんじゃない。まいごに なっただけ。",
+            "ko": "난 그녀를 떠난 게 아니야. 길을 잃었을 뿐이야.",
+            "pl": "Nie opuściłem jej. Ja się tylko zgubiłem.",
+            "pt-BR": "Eu não a abandonei. Só me perdi.",
+            "ru": "Я её не бросал. Я просто потерялся.",
+            "uk": "Я її не покинув. Я просто загубився.",
+            "vi": "Tớ không bỏ rơi cô ấy. Tớ chỉ bị lạc thôi."
+          }
         }
       ],
       "sfx": [],

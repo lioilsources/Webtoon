@@ -1,5 +1,18 @@
 {
   "title": "Nepřítel",
+  "title_i18n": {
+    "de": "Der Feind",
+    "en": "The Enemy",
+    "fr": "L'ennemi",
+    "it": "Il nemico",
+    "ja": "敵",
+    "ko": "적",
+    "pl": "Wróg",
+    "pt-BR": "O inimigo",
+    "ru": "Враг",
+    "uk": "Ворог",
+    "vi": "Kẻ thù"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A když žádná chyba není?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn es keinen Fehler gibt?",
+            "en": "And if there is no mistake?",
+            "fr": "Et s'il n'y a pas d'erreur ?",
+            "it": "E se non c'è nessun errore?",
+            "ja": "間違いが、どこにもなかったら？",
+            "ko": "잘못이 아무 데도 없다면요?",
+            "pl": "A jeśli żadnego błędu nie ma?",
+            "pt-BR": "E se não houver erro nenhum?",
+            "ru": "А если никакой ошибки нет?",
+            "uk": "А якщо ніякої помилки немає?",
+            "vi": "Còn nếu chẳng có lỗi nào thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Vždycky nějaká je.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Es gibt immer einen.",
+            "en": "There always is one.",
+            "fr": "Il y en a toujours une.",
+            "it": "Ce n'è sempre uno.",
+            "ja": "必ず、どこかにあります。",
+            "ko": "늘 어딘가엔 있어요.",
+            "pl": "Zawsze jakiś jest.",
+            "pt-BR": "Sempre há algum.",
+            "ru": "Всегда какая-то есть.",
+            "uk": "Завжди якась є.",
+            "vi": "Lúc nào cũng có."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To musí být vyčerpávající.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das muss erschöpfend sein.",
+            "en": "That must be exhausting.",
+            "fr": "Ça doit être épuisant.",
+            "it": "Dev'essere estenuante.",
+            "ja": "それは、疲れ果てるでしょう。",
+            "ko": "그거 참 지치겠네요.",
+            "pl": "To musi być wyczerpujące.",
+            "pt-BR": "Isso deve ser exaustivo.",
+            "ru": "Это, должно быть, изматывает.",
+            "uk": "Це, мабуть, виснажує.",
+            "vi": "Chắc hẳn rất kiệt sức."
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "anna",
           "text": "Je to bezpečné.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist sicher.",
+            "en": "It's safe.",
+            "fr": "On est en sécurité.",
+            "it": "È sicuro.",
+            "ja": "安全なんです。",
+            "ko": "안전해요.",
+            "pl": "To jest bezpieczne.",
+            "pt-BR": "É seguro.",
+            "ru": "Это безопасно.",
+            "uk": "Це безпечно.",
+            "vi": "Nó an toàn."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Bezpečné?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sicher?",
+            "en": "Safe?",
+            "fr": "En sécurité ?",
+            "it": "Sicuro?",
+            "ja": "安全、ですか？",
+            "ko": "안전하다고요?",
+            "pl": "Bezpieczne?",
+            "pt-BR": "Seguro?",
+            "ru": "Безопасно?",
+            "uk": "Безпечно?",
+            "vi": "An toàn?"
+          }
         }
       ],
       "sfx": [],
@@ -201,7 +279,20 @@
         {
           "speaker_id": "anna",
           "text": "Když všechno kontrolujete, nic vás nemůže překvapit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn Sie alles kontrollieren, kann Sie nichts überraschen.",
+            "en": "When you control everything, nothing can surprise you.",
+            "fr": "Quand vous contrôlez tout, rien ne peut vous surprendre.",
+            "it": "Quando controlla tutto, niente può sorprenderla.",
+            "ja": "すべてを管理していれば、何にも驚かされずにすみます。",
+            "ko": "모든 걸 통제하면 아무것도 놀랄 일이 없거든요.",
+            "pl": "Kiedy wszystko jest pod kontrolą, nic nie może zaskoczyć.",
+            "pt-BR": "Quando você controla tudo, nada pode surpreender você.",
+            "ru": "Когда всё под контролем, ничто не может застать врасплох.",
+            "uk": "Коли все під контролем, ніщо не може заскочити зненацька.",
+            "vi": "Khi ta kiểm soát mọi thứ, chẳng gì có thể làm ta bất ngờ."
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A co když vás překvapí vlastní tělo?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn Ihr eigener Körper Sie überrascht?",
+            "en": "And what if your own body surprises you?",
+            "fr": "Et si votre propre corps vous surprend ?",
+            "it": "E se la sorprende il suo stesso corpo?",
+            "ja": "自分の体に驚かされたら？",
+            "ko": "자기 몸이 놀라게 하면요?",
+            "pl": "A jeśli zaskoczy panią własne ciało?",
+            "pt-BR": "E se o seu próprio corpo surpreender você?",
+            "ru": "А если вас застанет врасплох собственное тело?",
+            "uk": "А якщо вас заскочить власне тіло?",
+            "vi": "Thế nếu chính cơ thể cô làm cô bất ngờ?"
+          }
         }
       ],
       "sfx": [],
@@ -267,7 +371,20 @@
         {
           "speaker_id": "anna",
           "text": "Tělo je nepřítel.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Körper ist der Feind.",
+            "en": "The body is the enemy.",
+            "fr": "Le corps est l'ennemi.",
+            "it": "Il corpo è il nemico.",
+            "ja": "体は、敵です。",
+            "ko": "몸은 적이에요.",
+            "pl": "Ciało to wróg.",
+            "pt-BR": "O corpo é o inimigo.",
+            "ru": "Тело — враг.",
+            "uk": "Тіло — ворог.",
+            "vi": "Cơ thể là kẻ thù."
+          }
         }
       ],
       "sfx": [],
@@ -300,7 +417,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Proč?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum?",
+            "en": "Why?",
+            "fr": "Pourquoi ?",
+            "it": "Perché?",
+            "ja": "なぜですか？",
+            "ko": "왜요?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ru": "Почему?",
+            "uk": "Чому?",
+            "vi": "Vì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -333,7 +463,20 @@
         {
           "speaker_id": "anna",
           "text": "Protože pořád něco chce. Má hlad, je unavené, chce spát, chce dotek, chce teplo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil er immer etwas will. Er hat Hunger, ist müde, will schlafen, will Berührung, will Wärme.",
+            "en": "Because it always wants something. It's hungry, it's tired, it wants sleep, it wants touch, it wants warmth.",
+            "fr": "Parce qu'il veut toujours quelque chose. Il a faim, il est fatigué, il veut dormir, il veut qu'on le touche, il veut de la chaleur.",
+            "it": "Perché vuole sempre qualcosa. Ha fame, è stanco, vuole dormire, vuole essere toccato, vuole calore.",
+            "ja": "いつも何かを欲しがるからです。お腹をすかせて、疲れて、眠りたがって、触れられたがって、温もりを欲しがる。",
+            "ko": "늘 뭔가를 원하니까요. 배고프고, 피곤하고, 자고 싶어 하고, 손길을 원하고, 온기를 원해요.",
+            "pl": "Bo ciągle czegoś chce. Jest głodne, zmęczone, chce spać, chce dotyku, chce ciepła.",
+            "pt-BR": "Porque está sempre querendo alguma coisa. Tem fome, está cansado, quer dormir, quer toque, quer calor.",
+            "ru": "Потому что оно всё время чего-то хочет. Оно голодное, уставшее, хочет спать, хочет прикосновений, хочет тепла.",
+            "uk": "Бо воно весь час чогось хоче. Воно голодне, втомлене, хоче спати, хоче дотику, хоче тепла.",
+            "vi": "Vì nó lúc nào cũng đòi hỏi. Nó đói, nó mệt, nó muốn ngủ, muốn được chạm vào, muốn hơi ấm."
+          }
         }
       ],
       "sfx": [],
@@ -366,7 +509,20 @@
         {
           "speaker_id": "anna",
           "text": "Je jako malé dítě, které neumí přestat křičet.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Er ist wie ein kleines Kind, das nicht aufhören kann zu schreien.",
+            "en": "It's like a small child that can't stop screaming.",
+            "fr": "Il est comme un petit enfant qui ne sait pas s'arrêter de crier.",
+            "it": "È come un bambino piccolo che non sa smettere di urlare.",
+            "ja": "泣きやめない、小さな子どもみたいです。",
+            "ko": "울음을 그칠 줄 모르는 어린애 같아요.",
+            "pl": "Jest jak małe dziecko, które nie umie przestać krzyczeć.",
+            "pt-BR": "É como uma criança pequena que não consegue parar de gritar.",
+            "ru": "Оно как маленький ребёнок, который не может перестать кричать.",
+            "uk": "Воно як мала дитина, яка не вміє перестати кричати.",
+            "vi": "Nó như một đứa trẻ không biết ngừng khóc."
+          }
         }
       ],
       "sfx": [],
@@ -399,7 +555,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A vy jste se rozhodla, že ho vychováte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und Sie haben beschlossen, ihn zu erziehen?",
+            "en": "And you've decided to bring it up?",
+            "fr": "Et vous avez décidé de l'éduquer ?",
+            "it": "E lei ha deciso di educarlo?",
+            "ja": "それで、あなたがその子を躾けることにしたんですか？",
+            "ko": "그래서 안나 씨가 그 아이를 훈육하기로 했나요?",
+            "pl": "I postanowiła pani je wychować?",
+            "pt-BR": "E você decidiu educá-lo?",
+            "ru": "И вы решили его воспитать?",
+            "uk": "І ви вирішили його виховати?",
+            "vi": "Và cô quyết định sẽ dạy dỗ nó?"
+          }
         }
       ],
       "sfx": [],
@@ -432,7 +601,20 @@
         {
           "speaker_id": "anna",
           "text": "Někdo to udělat musí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Einer muss es ja tun.",
+            "en": "Someone has to.",
+            "fr": "Il faut bien que quelqu'un le fasse.",
+            "it": "Qualcuno deve pur farlo.",
+            "ja": "誰かがやらないといけませんから。",
+            "ko": "누군가는 해야 하니까요.",
+            "pl": "Ktoś musi to zrobić.",
+            "pt-BR": "Alguém tem que fazer isso.",
+            "ru": "Кто-то же должен.",
+            "uk": "Хтось же мусить.",
+            "vi": "Phải có ai đó làm chứ."
+          }
         }
       ],
       "sfx": [],
@@ -465,7 +647,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Kdo vychová vás?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer erzieht Sie?",
+            "en": "Who brings you up?",
+            "fr": "Et vous, qui vous éduque ?",
+            "it": "E chi educa lei?",
+            "ja": "では、あなたを躾けるのは？",
+            "ko": "그럼 안나 씨는 누가 훈육하죠?",
+            "pl": "Kto wychowa panią?",
+            "pt-BR": "Quem vai educar você?",
+            "ru": "Кто воспитает вас?",
+            "uk": "Хто виховає вас?",
+            "vi": "Ai dạy dỗ cô?"
+          }
         }
       ],
       "sfx": [],
@@ -498,7 +693,20 @@
         {
           "speaker_id": "anna",
           "text": "Já.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich.",
+            "en": "I do.",
+            "fr": "Moi.",
+            "it": "Io.",
+            "ja": "私です。",
+            "ko": "제가요.",
+            "pl": "Ja.",
+            "pt-BR": "Eu.",
+            "ru": "Я.",
+            "uk": "Я.",
+            "vi": "Tôi."
+          }
         }
       ],
       "sfx": [],
@@ -531,7 +739,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A kdo se o vás postará?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wer kümmert sich um Sie?",
+            "en": "And who will take care of you?",
+            "fr": "Et qui prendra soin de vous ?",
+            "it": "E chi si prenderà cura di lei?",
+            "ja": "では、あなたの世話をするのは？",
+            "ko": "그럼 안나 씨는 누가 돌봐 주죠?",
+            "pl": "A kto się panią zaopiekuje?",
+            "pt-BR": "E quem vai cuidar de você?",
+            "ru": "А кто позаботится о вас?",
+            "uk": "А хто подбає про вас?",
+            "vi": "Còn ai sẽ chăm sóc cô?"
+          }
         }
       ],
       "sfx": [],
@@ -564,7 +785,20 @@
         {
           "speaker_id": "anna",
           "text": "Nepotřebuju, aby se o mě někdo staral.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich brauche niemanden, der sich um mich kümmert.",
+            "en": "I don't need anyone to take care of me.",
+            "fr": "Je n'ai besoin de personne pour prendre soin de moi.",
+            "it": "Non ho bisogno che qualcuno si prenda cura di me.",
+            "ja": "誰かに世話をしてもらう必要はありません。",
+            "ko": "누가 절 돌봐 줄 필요는 없어요.",
+            "pl": "Nie potrzebuję, żeby ktoś się mną opiekował.",
+            "pt-BR": "Não preciso que ninguém cuide de mim.",
+            "ru": "Мне не нужно, чтобы обо мне кто-то заботился.",
+            "uk": "Мені не треба, щоб про мене хтось дбав.",
+            "vi": "Tôi không cần ai chăm sóc mình."
+          }
         }
       ],
       "sfx": [],

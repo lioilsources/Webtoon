@@ -1,5 +1,18 @@
 {
   "title": "Prázdná stránka",
+  "title_i18n": {
+    "de": "Die leere Seite",
+    "en": "The Blank Page",
+    "fr": "La page blanche",
+    "it": "La pagina bianca",
+    "ja": "白紙のページ",
+    "ko": "빈 페이지",
+    "pl": "Pusta strona",
+    "pt-BR": "A página em branco",
+    "ru": "Пустая страница",
+    "uk": "Порожня сторінка",
+    "vi": "Trang trống"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -119,7 +132,20 @@
         {
           "speaker_id": "psycholog",
           "text": "(tiše, pro sebe) Kolik lidí musí nejprve zmizet samo sobě, aby mohli uvěřit, že mají právo existovat?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "(leise, zu sich) Wie viele Menschen müssen sich erst selbst abhandenkommen, bevor sie glauben können, dass sie das Recht haben zu existieren?",
+            "en": "(quietly, to himself) How many people must first vanish from themselves before they can believe they have the right to exist?",
+            "fr": "(doucement, pour lui-même) Combien de gens doivent d'abord disparaître à leurs propres yeux pour pouvoir croire qu'ils ont le droit d'exister ?",
+            "it": "(piano, tra sé) Quante persone devono prima sparire a se stesse per poter credere di avere il diritto di esistere?",
+            "ja": "（静かに、独り言のように）存在していいのだと信じられるまでに、どれほど多くの人が、まず自分自身の前から消えなければならないのだろう。",
+            "ko": "(조용히, 혼잣말로) 얼마나 많은 사람이 먼저 스스로에게서 사라져야, 자신에게 존재할 권리가 있다고 믿을 수 있을까?",
+            "pl": "(cicho, do siebie) Ilu ludzi musi najpierw zniknąć dla samych siebie, żeby uwierzyć, że mają prawo istnieć?",
+            "pt-BR": "(baixinho, para si) Quantas pessoas precisam primeiro desaparecer para si mesmas, para poderem acreditar que têm o direito de existir?",
+            "ru": "(тихо, про себя) Скольким людям нужно сначала исчезнуть для самих себя, чтобы поверить, что они имеют право существовать?",
+            "uk": "(тихо, сам до себе) Скільком людям треба спершу зникнути для самих себе, щоб повірити, що вони мають право існувати?",
+            "vi": "(khẽ, tự nói với mình) Bao nhiêu người phải biến mất khỏi chính mình trước đã, mới có thể tin rằng mình có quyền được tồn tại?"
+          }
         }
       ],
       "sfx": [],
@@ -149,7 +175,20 @@
         {
           "speaker_id": "",
           "text": "Pokud se tě něco z tohoto příběhu týká: Linka první psychické pomoci 116 123.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Wenn dich etwas aus dieser Geschichte betrifft: Ruf 116 123 an oder eine Krisenhotline in deiner Nähe.",
+            "en": "If anything in this story concerns you: call 116 123 or your local crisis line.",
+            "fr": "Si quelque chose dans cette histoire te concerne : appelle le 116 123 ou une ligne d'écoute près de chez toi.",
+            "it": "Se qualcosa di questa storia ti riguarda: chiama il 116 123 o una linea di ascolto del tuo paese.",
+            "ja": "この物語のどこかが自分のことのように感じられたら、お住まいの国の相談窓口へ（ヨーロッパでは116 123）。",
+            "ko": "이 이야기의 무언가가 당신의 이야기처럼 느껴진다면, 사는 나라의 위기 상담 전화에 연락하세요(유럽에서는 116 123).",
+            "pl": "Jeśli coś z tej historii cię dotyczy: telefon wsparcia 116 123 lub lokalny telefon zaufania.",
+            "pt-BR": "Se algo nesta história diz respeito a você: linha de apoio emocional 116 123 ou a linha de crise da sua região.",
+            "ru": "Если что-то в этой истории касается тебя: линия психологической помощи 116 123 или местный телефон доверия.",
+            "uk": "Якщо щось у цій історії стосується тебе: лінія психологічної допомоги 116 123 або місцевий телефон довіри.",
+            "vi": "Nếu điều gì trong câu chuyện này chạm đến bạn: hãy gọi đường dây hỗ trợ khủng hoảng ở nước bạn (ở châu Âu: 116 123)."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Matka",
+  "title_i18n": {
+    "de": "Die Mutter",
+    "en": "Mother",
+    "fr": "La mère",
+    "it": "La madre",
+    "ja": "母",
+    "ko": "어머니",
+    "pl": "Matka",
+    "pt-BR": "A mãe",
+    "ru": "Мать",
+    "uk": "Мати",
+    "vi": "Mẹ"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -61,7 +74,20 @@
         {
           "speaker_id": "anna",
           "text": "Maminka zase plakala.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mama hat wieder geweint.",
+            "en": "Mum was crying again.",
+            "fr": "Maman a encore pleuré.",
+            "it": "La mamma ha pianto di nuovo.",
+            "ja": "母が、また泣きました。",
+            "ko": "엄마가 또 울었어요.",
+            "pl": "Mama znowu płakała.",
+            "pt-BR": "Minha mãe chorou de novo.",
+            "ru": "Мама опять плакала.",
+            "uk": "Мама знову плакала.",
+            "vi": "Mẹ tôi lại khóc."
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co se stalo?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist passiert?",
+            "en": "What happened?",
+            "fr": "Que s'est-il passé ?",
+            "it": "Che cos'è successo?",
+            "ja": "何があったんですか？",
+            "ko": "무슨 일이 있었어요?",
+            "pl": "Co się stało?",
+            "pt-BR": "O que aconteceu?",
+            "ru": "Что случилось?",
+            "uk": "Що сталося?",
+            "vi": "Đã có chuyện gì?"
+          }
         }
       ],
       "sfx": [],
@@ -127,7 +166,20 @@
         {
           "speaker_id": "anna",
           "text": "Řekla mi, že ji ničím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie hat gesagt, dass ich sie kaputtmache.",
+            "en": "She told me I'm destroying her.",
+            "fr": "Elle m'a dit que je la détruisais.",
+            "it": "Mi ha detto che la sto distruggendo.",
+            "ja": "私のせいで、自分はぼろぼろだ、と言われました。",
+            "ko": "제가 엄마를 망가뜨리고 있대요.",
+            "pl": "Powiedziała, że ją niszczę.",
+            "pt-BR": "Disse que eu estou acabando com ela.",
+            "ru": "Сказала, что я её гублю.",
+            "uk": "Сказала, що я її руйную.",
+            "vi": "Mẹ bảo tôi đang hủy hoại mẹ."
+          }
         }
       ],
       "sfx": [],
@@ -160,7 +212,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co jste jí odpověděla?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was haben Sie ihr geantwortet?",
+            "en": "What did you say to her?",
+            "fr": "Que lui avez-vous répondu ?",
+            "it": "E lei che cosa le ha risposto?",
+            "ja": "なんと答えましたか？",
+            "ko": "뭐라고 대답했어요?",
+            "pl": "Co jej pani odpowiedziała?",
+            "pt-BR": "O que você respondeu?",
+            "ru": "Что вы ей ответили?",
+            "uk": "Що ви їй відповіли?",
+            "vi": "Cô đã trả lời thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -193,7 +258,20 @@
         {
           "speaker_id": "anna",
           "text": "Že mě neměla mít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass sie mich nicht hätte bekommen sollen.",
+            "en": "That she shouldn't have had me.",
+            "fr": "Qu'elle n'aurait pas dû m'avoir.",
+            "it": "Che non avrebbe dovuto avermi.",
+            "ja": "私を産まなければよかったのに、って。",
+            "ko": "그럼 절 낳지 말았어야 했다고요.",
+            "pl": "Że nie powinna była mnie mieć.",
+            "pt-BR": "Que não devia ter me tido.",
+            "ru": "Что не надо было меня рожать.",
+            "uk": "Що не треба було мене народжувати.",
+            "vi": "Rằng lẽ ra mẹ không nên sinh ra tôi."
+          }
         }
       ],
       "sfx": [],
@@ -251,7 +329,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To muselo bolet.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das muss wehgetan haben.",
+            "en": "That must have hurt.",
+            "fr": "Ça a dû faire mal.",
+            "it": "Deve aver fatto male.",
+            "ja": "それは、痛かったでしょう。",
+            "ko": "아팠겠네요.",
+            "pl": "To musiało boleć.",
+            "pt-BR": "Isso deve ter doído.",
+            "ru": "Это, наверное, было больно.",
+            "uk": "Це, мабуть, було боляче.",
+            "vi": "Hẳn là đau lắm."
+          }
         }
       ],
       "sfx": [],
@@ -284,7 +375,20 @@
         {
           "speaker_id": "anna",
           "text": "Ji?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ihr?",
+            "en": "Her?",
+            "fr": "À elle ?",
+            "it": "A lei?",
+            "ja": "母が？",
+            "ko": "엄마가요?",
+            "pl": "Ją?",
+            "pt-BR": "Nela?",
+            "ru": "Ей?",
+            "uk": "Їй?",
+            "vi": "Mẹ tôi?"
+          }
         }
       ],
       "sfx": [],
@@ -317,7 +421,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Vás obě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ihnen beiden.",
+            "en": "Both of you.",
+            "fr": "À vous deux.",
+            "it": "A tutte e due.",
+            "ja": "おふたりとも。",
+            "ko": "두 분 다요.",
+            "pl": "Obie.",
+            "pt-BR": "Nas duas.",
+            "ru": "Вас обеих.",
+            "uk": "Вас обох.",
+            "vi": "Cả hai người."
+          }
         }
       ],
       "sfx": [],
@@ -350,7 +467,20 @@
         {
           "speaker_id": "anna",
           "text": "Ona si myslí, že jsem nevděčná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie glaubt, ich bin undankbar.",
+            "en": "She thinks I'm ungrateful.",
+            "fr": "Elle pense que je suis ingrate.",
+            "it": "Lei pensa che io sia un'ingrata.",
+            "ja": "母は、私を恩知らずだと思っています。",
+            "ko": "엄마는 제가 배은망덕하다고 생각해요.",
+            "pl": "Ona uważa, że jestem niewdzięczna.",
+            "pt-BR": "Ela acha que eu sou ingrata.",
+            "ru": "Она считает, что я неблагодарная.",
+            "uk": "Вона вважає, що я невдячна.",
+            "vi": "Mẹ nghĩ tôi vô ơn."
+          }
         }
       ],
       "sfx": [],
@@ -383,7 +513,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A jste?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und sind Sie es?",
+            "en": "And are you?",
+            "fr": "Et vous l'êtes ?",
+            "it": "E lo è?",
+            "ja": "そうなんですか？",
+            "ko": "그런가요?",
+            "pl": "A jest pani?",
+            "pt-BR": "E você é?",
+            "ru": "А это так?",
+            "uk": "А це так?",
+            "vi": "Cô có vô ơn không?"
+          }
         }
       ],
       "sfx": [],
@@ -416,7 +559,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevím. Dala mi všechno.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht. Sie hat mir alles gegeben.",
+            "en": "I don't know. She gave me everything.",
+            "fr": "Je ne sais pas. Elle m'a tout donné.",
+            "it": "Non lo so. Mi ha dato tutto.",
+            "ja": "わかりません。全部くれましたから。",
+            "ko": "모르겠어요. 엄마는 저한테 모든 걸 줬어요.",
+            "pl": "Nie wiem. Dała mi wszystko.",
+            "pt-BR": "Não sei. Ela me deu tudo.",
+            "ru": "Не знаю. Она дала мне всё.",
+            "uk": "Не знаю. Вона дала мені все.",
+            "vi": "Tôi không biết. Mẹ đã cho tôi tất cả."
+          }
         }
       ],
       "sfx": [],
@@ -449,7 +605,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Všechno?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Alles?",
+            "en": "Everything?",
+            "fr": "Tout ?",
+            "it": "Tutto?",
+            "ja": "全部、ですか？",
+            "ko": "모든 걸요?",
+            "pl": "Wszystko?",
+            "pt-BR": "Tudo?",
+            "ru": "Всё?",
+            "uk": "Усе?",
+            "vi": "Tất cả?"
+          }
         }
       ],
       "sfx": [],
@@ -482,7 +651,20 @@
         {
           "speaker_id": "anna",
           "text": "Co mohla.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was sie konnte.",
+            "en": "What she could.",
+            "fr": "Ce qu'elle pouvait.",
+            "it": "Quello che poteva.",
+            "ja": "できることは。",
+            "ko": "줄 수 있는 건요.",
+            "pl": "Co mogła.",
+            "pt-BR": "O que pôde.",
+            "ru": "Что могла.",
+            "uk": "Що могла.",
+            "vi": "Những gì mẹ có thể."
+          }
         }
       ],
       "sfx": [],
@@ -515,7 +697,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A co jste potřebovala?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was haben Sie gebraucht?",
+            "en": "And what did you need?",
+            "fr": "Et de quoi aviez-vous besoin ?",
+            "it": "E lei di che cosa aveva bisogno?",
+            "ja": "あなたには、何が必要でしたか？",
+            "ko": "안나 씨에게 필요했던 건 뭐였어요?",
+            "pl": "A czego pani potrzebowała?",
+            "pt-BR": "E do que você precisava?",
+            "ru": "А что было нужно вам?",
+            "uk": "А що було потрібно вам?",
+            "vi": "Còn cô đã cần gì?"
+          }
         }
       ],
       "sfx": [],
@@ -548,7 +743,20 @@
         {
           "speaker_id": "anna",
           "text": "Aby mě nechala být.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass sie mich in Ruhe lässt.",
+            "en": "For her to let me be.",
+            "fr": "Qu'elle me laisse en paix.",
+            "it": "Che mi lasciasse stare.",
+            "ja": "放っておいてほしかったです。",
+            "ko": "절 그냥 내버려 두는 거요.",
+            "pl": "Żeby dała mi spokój.",
+            "pt-BR": "Que ela me deixasse em paz.",
+            "ru": "Чтобы она оставила меня в покое.",
+            "uk": "Щоб вона дала мені спокій.",
+            "vi": "Để tôi yên."
+          }
         }
       ],
       "sfx": [],
@@ -581,7 +789,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Jenom to?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nur das?",
+            "en": "Only that?",
+            "fr": "Seulement ça ?",
+            "it": "Solo questo?",
+            "ja": "それだけですか？",
+            "ko": "그것뿐인가요?",
+            "pl": "Tylko tyle?",
+            "pt-BR": "Só isso?",
+            "ru": "Только это?",
+            "uk": "Тільки це?",
+            "vi": "Chỉ vậy thôi?"
+          }
         }
       ],
       "sfx": [],
@@ -614,7 +835,20 @@
         {
           "speaker_id": "anna",
           "text": "Aby mě nechala být, ale neopustila mě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass sie mich in Ruhe lässt, aber nicht verlässt.",
+            "en": "For her to let me be, but not leave me.",
+            "fr": "Qu'elle me laisse en paix, sans m'abandonner.",
+            "it": "Che mi lasciasse stare, ma senza lasciarmi.",
+            "ja": "放っておいて、でも、見捨てないでほしかったんです。",
+            "ko": "내버려 두되, 떠나지는 않는 거요.",
+            "pl": "Żeby dała mi spokój, ale mnie nie opuściła.",
+            "pt-BR": "Que me deixasse em paz, mas não me abandonasse.",
+            "ru": "Чтобы оставила меня в покое, но не бросала.",
+            "uk": "Щоб дала мені спокій, але не покидала.",
+            "vi": "Để tôi yên, nhưng đừng bỏ rơi tôi."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Vaše nic",
+  "title_i18n": {
+    "de": "Ihr Nichts",
+    "en": "Your Nothing",
+    "fr": "Votre rien",
+    "it": "Il suo niente",
+    "ja": "先生の「なんでもない」",
+    "ko": "선생님의 ‘아무것도’",
+    "pl": "Pana nic",
+    "pt-BR": "Esse seu nada",
+    "ru": "Ваше «ничего»",
+    "uk": "Ваше «нічого»",
+    "vi": "Cái “không có gì” của ông"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -61,7 +74,20 @@
         {
           "speaker_id": "anna",
           "text": "Co je?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist?",
+            "en": "What is it?",
+            "fr": "Qu'y a-t-il ?",
+            "it": "Che c'è?",
+            "ja": "何ですか？",
+            "ko": "왜요?",
+            "pl": "Co jest?",
+            "pt-BR": "O que foi?",
+            "ru": "Что такое?",
+            "uk": "Що таке?",
+            "vi": "Sao vậy?"
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nic.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nichts.",
+            "en": "Nothing.",
+            "fr": "Rien.",
+            "it": "Niente.",
+            "ja": "なんでもありません。",
+            "ko": "아무것도 아니에요.",
+            "pl": "Nic.",
+            "pt-BR": "Nada.",
+            "ru": "Ничего.",
+            "uk": "Нічого.",
+            "vi": "Không có gì."
+          }
         }
       ],
       "sfx": [],
@@ -127,7 +166,20 @@
         {
           "speaker_id": "anna",
           "text": "To vaše nic mě někdy rozčiluje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dieses Nichts von Ihnen regt mich manchmal auf.",
+            "en": "That nothing of yours drives me mad sometimes.",
+            "fr": "Votre rien m'exaspère parfois.",
+            "it": "Quel suo niente a volte mi irrita.",
+            "ja": "先生のその「なんでもない」に、ときどき苛々します。",
+            "ko": "선생님의 그 ‘아무것도 아니에요’가 가끔 짜증 나요.",
+            "pl": "To pana nic czasem mnie złości.",
+            "pt-BR": "Esse seu nada às vezes me irrita.",
+            "ru": "Это ваше «ничего» меня иногда раздражает.",
+            "uk": "Це ваше «нічого» мене іноді дратує.",
+            "vi": "Cái “không có gì” của ông đôi khi làm tôi bực mình."
+          }
         }
       ],
       "sfx": [],
@@ -160,7 +212,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Rozumím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich verstehe.",
+            "en": "I understand.",
+            "fr": "Je comprends.",
+            "it": "Capisco.",
+            "ja": "わかります。",
+            "ko": "이해해요.",
+            "pl": "Rozumiem.",
+            "pt-BR": "Entendo.",
+            "ru": "Понимаю.",
+            "uk": "Розумію.",
+            "vi": "Tôi hiểu."
+          }
         }
       ],
       "sfx": [],
@@ -193,7 +258,20 @@
         {
           "speaker_id": "anna",
           "text": "Ne, nerozumíte. Vy si můžete odejít domů a přestat na mě myslet.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein, Sie verstehen nicht. Sie können nach Hause gehen und aufhören, an mich zu denken.",
+            "en": "No, you don't. You can go home and stop thinking about me.",
+            "fr": "Non, vous ne comprenez pas. Vous, vous pouvez rentrer chez vous et cesser de penser à moi.",
+            "it": "No, non capisce. Lei può andare a casa e smettere di pensare a me.",
+            "ja": "いいえ、わかっていません。先生は家に帰って、私のことを考えるのをやめられるじゃないですか。",
+            "ko": "아니요, 이해 못 하세요. 선생님은 집에 가서 제 생각을 그만할 수 있잖아요.",
+            "pl": "Nie, nie rozumie pan. Pan może pójść do domu i przestać o mnie myśleć.",
+            "pt-BR": "Não, não entende. Você pode ir para casa e parar de pensar em mim.",
+            "ru": "Нет, не понимаете. Вы можете уйти домой и перестать обо мне думать.",
+            "uk": "Ні, не розумієте. Ви можете піти додому й перестати про мене думати.",
+            "vi": "Không, ông không hiểu. Ông có thể về nhà và thôi nghĩ về tôi."
+          }
         }
       ],
       "sfx": [],
@@ -226,7 +304,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano. A vy můžete odejít domů a dál na mě myslet.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Und Sie können nach Hause gehen und weiter an mich denken.",
+            "en": "Yes. And you can go home and keep thinking about me.",
+            "fr": "Oui. Et vous, vous pouvez rentrer chez vous et continuer à penser à moi.",
+            "it": "Sì. E lei può andare a casa e continuare a pensare a me.",
+            "ja": "ええ。そしてあなたは、家に帰っても、私のことを考え続けることができます。",
+            "ko": "네. 그리고 안나 씨는 집에 가서도 계속 제 생각을 할 수 있죠.",
+            "pl": "Tak. A pani może pójść do domu i dalej o mnie myśleć.",
+            "pt-BR": "Sim. E você pode ir para casa e continuar pensando em mim.",
+            "ru": "Да. А вы можете уйти домой и продолжать думать обо мне.",
+            "uk": "Так. А ви можете піти додому й далі думати про мене.",
+            "vi": "Phải. Còn cô có thể về nhà và tiếp tục nghĩ về tôi."
+          }
         }
       ],
       "sfx": [],
@@ -259,7 +350,20 @@
         {
           "speaker_id": "anna",
           "text": "To není fér.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist nicht fair.",
+            "en": "That's not fair.",
+            "fr": "Ce n'est pas juste.",
+            "it": "Non è giusto.",
+            "ja": "不公平です。",
+            "ko": "불공평해요.",
+            "pl": "To nie fair.",
+            "pt-BR": "Isso não é justo.",
+            "ru": "Это нечестно.",
+            "uk": "Це нечесно.",
+            "vi": "Thế là không công bằng."
+          }
         }
       ],
       "sfx": [],
@@ -292,7 +396,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne. Není.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Ist es nicht.",
+            "en": "No. It isn't.",
+            "fr": "Non. Ce n'est pas juste.",
+            "it": "No. Non lo è.",
+            "ja": "ええ。不公平です。",
+            "ko": "네. 불공평하죠.",
+            "pl": "Nie. Nie jest.",
+            "pt-BR": "Não. Não é.",
+            "ru": "Нет. Нечестно.",
+            "uk": "Ні. Нечесно.",
+            "vi": "Phải. Không công bằng."
+          }
         }
       ],
       "sfx": [],
@@ -343,7 +460,20 @@
         {
           "speaker_id": "anna",
           "text": "Myslíte, že jsem nemocná?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Glauben Sie, dass ich krank bin?",
+            "en": "Do you think I'm ill?",
+            "fr": "Vous pensez que je suis malade ?",
+            "it": "Pensa che io sia malata?",
+            "ja": "私は病気だと思いますか？",
+            "ko": "제가 아프다고 생각하세요?",
+            "pl": "Myśli pan, że jestem chora?",
+            "pt-BR": "Você acha que eu estou doente?",
+            "ru": "Вы думаете, я больна?",
+            "uk": "Ви думаєте, я хвора?",
+            "vi": "Ông có nghĩ tôi bị bệnh không?"
+          }
         }
       ],
       "sfx": [],
@@ -376,7 +506,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -409,7 +552,20 @@
         {
           "speaker_id": "anna",
           "text": "A myslíte, že jsem blázen?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und glauben Sie, dass ich verrückt bin?",
+            "en": "And do you think I'm mad?",
+            "fr": "Et vous pensez que je suis folle ?",
+            "it": "E pensa che io sia pazza?",
+            "ja": "じゃあ、私は狂っていると思いますか？",
+            "ko": "그럼 제가 미쳤다고 생각하세요?",
+            "pl": "A myśli pan, że jestem wariatką?",
+            "pt-BR": "E acha que eu sou louca?",
+            "ru": "А думаете, я сумасшедшая?",
+            "uk": "А думаєте, я божевільна?",
+            "vi": "Thế ông có nghĩ tôi bị điên không?"
+          }
         }
       ],
       "sfx": [],
@@ -442,7 +598,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
         }
       ],
       "sfx": [],
@@ -475,7 +644,20 @@
         {
           "speaker_id": "anna",
           "text": "Jaký je v tom rozdíl?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist der Unterschied?",
+            "en": "What's the difference?",
+            "fr": "Quelle est la différence ?",
+            "it": "Che differenza c'è?",
+            "ja": "何が違うんですか？",
+            "ko": "그게 무슨 차이예요?",
+            "pl": "Jaka to różnica?",
+            "pt-BR": "Qual é a diferença?",
+            "ru": "А в чём разница?",
+            "uk": "А яка різниця?",
+            "vi": "Khác nhau ở chỗ nào?"
+          }
         }
       ],
       "sfx": [],
@@ -508,7 +690,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Velký. Ale nechci vám ho vysvětlovat jako definici z učebnice.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein großer. Aber ich will ihn Ihnen nicht wie eine Lehrbuchdefinition erklären.",
+            "en": "A big one. But I don't want to explain it to you like a textbook definition.",
+            "fr": "Elle est grande. Mais je ne veux pas vous l'expliquer comme une définition de manuel.",
+            "it": "Grande. Ma non voglio spiegargliela come una definizione da manuale.",
+            "ja": "大きく違います。でも、教科書の定義のように説明したくはありません。",
+            "ko": "크게 달라요. 하지만 교과서 정의처럼 설명하고 싶진 않아요.",
+            "pl": "Duża. Ale nie chcę jej pani tłumaczyć jak definicji z podręcznika.",
+            "pt-BR": "Grande. Mas não quero explicá-la a você como uma definição de manual.",
+            "ru": "Большая. Но я не хочу объяснять её вам как определение из учебника.",
+            "uk": "Велика. Але я не хочу пояснювати її вам як визначення з підручника.",
+            "vi": "Khác nhiều. Nhưng tôi không muốn giải thích cho cô như một định nghĩa trong sách giáo khoa."
+          }
         }
       ],
       "sfx": [],
@@ -541,7 +736,20 @@
         {
           "speaker_id": "anna",
           "text": "Proč?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum?",
+            "en": "Why?",
+            "fr": "Pourquoi ?",
+            "it": "Perché?",
+            "ja": "なぜですか？",
+            "ko": "왜요?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ru": "Почему?",
+            "uk": "Чому?",
+            "vi": "Vì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -574,7 +782,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Protože bych raději, abyste ho jednou sama zažila.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich lieber möchte, dass Sie ihn eines Tages selbst erleben.",
+            "en": "Because I'd rather you experienced it yourself one day.",
+            "fr": "Parce que je préférerais qu'un jour vous en fassiez vous-même l'expérience.",
+            "it": "Perché preferirei che un giorno la provasse lei stessa.",
+            "ja": "いつか、あなた自身で、その違いを感じてほしいからです。",
+            "ko": "언젠가 안나 씨가 직접 그 차이를 겪어 보면 좋겠으니까요.",
+            "pl": "Bo wolałbym, żeby pani kiedyś sama jej doświadczyła.",
+            "pt-BR": "Porque eu preferiria que um dia você a sentisse por si mesma.",
+            "ru": "Потому что я бы предпочёл, чтобы вы однажды сами её почувствовали.",
+            "uk": "Бо я волів би, щоб ви колись самі її відчули.",
+            "vi": "Vì tôi mong một ngày nào đó chính cô sẽ cảm nhận được nó."
+          }
         }
       ],
       "sfx": [],

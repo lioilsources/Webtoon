@@ -1,5 +1,18 @@
 {
   "title": "Nic nechci",
+  "title_i18n": {
+    "de": "Ich will nichts",
+    "en": "I Want Nothing",
+    "fr": "Je ne veux rien",
+    "it": "Non voglio niente",
+    "ja": "何も求めない",
+    "ko": "아무것도 바라지 않아요",
+    "pl": "Niczego nie chcę",
+    "pt-BR": "Não quero nada",
+    "ru": "Ничего не хочу",
+    "uk": "Нічого не хочу",
+    "vi": "Tôi chẳng muốn gì"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne. Nic nechci.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Ich will nichts.",
+            "en": "No. I want nothing.",
+            "fr": "Non. Je ne veux rien.",
+            "it": "No. Non voglio niente.",
+            "ja": "いいえ。何も求めていません。",
+            "ko": "아니요. 아무것도 바라지 않아요.",
+            "pl": "Nie. Niczego nie chcę.",
+            "pt-BR": "Não. Não quero nada.",
+            "ru": "Нет. Ничего не хочу.",
+            "uk": "Ні. Нічого не хочу.",
+            "vi": "Không. Tôi chẳng muốn gì cả."
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "anna",
           "text": "Tak to je dobře.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Na, dann ist ja gut.",
+            "en": "Well, that's good.",
+            "fr": "Alors tant mieux.",
+            "it": "Allora va bene.",
+            "ja": "なら、よかったです。",
+            "ko": "그럼 다행이네요.",
+            "pl": "To dobrze.",
+            "pt-BR": "Então, que bom.",
+            "ru": "Ну и хорошо.",
+            "uk": "Ну й добре.",
+            "vi": "Vậy thì tốt."
+          }
         }
       ],
       "sfx": [],
@@ -142,7 +181,20 @@
         {
           "speaker_id": "anna",
           "text": "Takže kdybych sem přestala chodit, nic by se nestalo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn ich also nicht mehr herkäme, würde nichts passieren.",
+            "en": "So if I stopped coming here, nothing would happen.",
+            "fr": "Donc si j'arrêtais de venir ici, il ne se passerait rien.",
+            "it": "Quindi se smettessi di venire qui, non succederebbe niente.",
+            "ja": "じゃあ、私がここに来るのをやめても、何も起きないんですね。",
+            "ko": "그럼 제가 여기 그만 와도 아무 일도 없겠네요.",
+            "pl": "Czyli gdybym przestała tu przychodzić, nic by się nie stało.",
+            "pt-BR": "Então, se eu parasse de vir aqui, nada aconteceria.",
+            "ru": "Значит, если бы я перестала сюда ходить, ничего бы не случилось.",
+            "uk": "Отже, якби я перестала сюди ходити, нічого б не сталося.",
+            "vi": "Vậy nếu tôi thôi không đến đây nữa, cũng chẳng có gì xảy ra."
+          }
         }
       ],
       "sfx": [],

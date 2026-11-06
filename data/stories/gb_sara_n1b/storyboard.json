@@ -1,5 +1,18 @@
 {
   "title": "Cesta zrcadlem",
+  "title_i18n": {
+    "de": "Durch den Spiegel",
+    "en": "Through the Mirror",
+    "fr": "À travers le miroir",
+    "it": "Attraverso lo specchio",
+    "ja": "かがみの むこうへ",
+    "ko": "거울 속으로",
+    "pl": "Przez lustro",
+    "pt-BR": "Através do espelho",
+    "ru": "Сквозь зеркало",
+    "uk": "Крізь дзеркало",
+    "vi": "Đi qua tấm gương"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Zrcadlová stezka v mlze.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Spiegelpfad im Nebel.",
+            "en": "The Mirror Path in the mist.",
+            "fr": "Le Sentier des Miroirs dans la brume.",
+            "it": "Il Sentiero degli Specchi nella nebbia.",
+            "ja": "きりの なかの かがみの小道。",
+            "ko": "안개 속 거울 오솔길.",
+            "pl": "Lustrzana Ścieżka we mgle.",
+            "pt-BR": "A Trilha dos Espelhos na névoa.",
+            "ru": "Зеркальная тропа в тумане.",
+            "uk": "Дзеркальна стежка в тумані.",
+            "vi": "Lối Gương trong sương mù."
+          }
         }
       ],
       "sfx": [],
@@ -75,7 +101,20 @@
         {
           "speaker_id": "sara",
           "text": "Vidím sebe... mladší.",
-          "kind": "thought"
+          "kind": "thought",
+          "i18n": {
+            "de": "Ich sehe mich... jünger.",
+            "en": "I can see myself... but younger.",
+            "fr": "Je me vois... plus petite.",
+            "it": "Vedo me stessa... più piccola.",
+            "ja": "わたしが 見える… ちいさい ころの。",
+            "ko": "내가 보여… 더 어린 나.",
+            "pl": "Widzę siebie... młodszą.",
+            "pt-BR": "Estou me vendo... mais nova.",
+            "ru": "Я вижу себя... младше.",
+            "uk": "Я бачу себе... молодшою.",
+            "vi": "Mình thấy chính mình... lúc nhỏ hơn."
+          }
         }
       ],
       "sfx": [],
@@ -109,7 +148,20 @@
         {
           "speaker_id": "white_spirit",
           "text": "Už nikdo nesvítí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Niemand leuchtet mehr.",
+            "en": "No one shines anymore.",
+            "fr": "Plus personne ne brille.",
+            "it": "Nessuno brilla più.",
+            "ja": "もう だれも ひかってない。",
+            "ko": "이제 아무도 빛나지 않아.",
+            "pl": "Nikt już nie świeci.",
+            "pt-BR": "Ninguém mais brilha.",
+            "ru": "Больше никто не светит.",
+            "uk": "Ніхто вже не світить.",
+            "vi": "Chẳng còn ai tỏa sáng nữa."
+          }
         }
       ],
       "sfx": [],
@@ -172,7 +224,20 @@
         {
           "speaker_id": "white_spirit",
           "text": "Ta nezhasne, dokud na ni myslíš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Diese verlischt nicht, solange du an sie denkst.",
+            "en": "This one won't go out as long as you think of it.",
+            "fr": "Celle-ci ne s'éteindra pas tant que tu penses à elle.",
+            "it": "Questa non si spegne finché ci pensi.",
+            "ja": "きみが おもっている かぎり、これは きえないよ。",
+            "ko": "네가 생각하는 동안엔 이건 꺼지지 않아.",
+            "pl": "Ta nie zgaśnie, dopóki o niej myślisz.",
+            "pt-BR": "Esta não se apaga enquanto você pensar nela.",
+            "ru": "Этот не погаснет, пока ты о нём думаешь.",
+            "uk": "Цей не згасне, поки ти про нього думаєш.",
+            "vi": "Chiếc này sẽ không tắt khi cậu còn nghĩ về nó."
+          }
         }
       ],
       "sfx": [],
@@ -236,7 +301,20 @@
         {
           "speaker_id": "sara",
           "text": "Město se probouzí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Stadt erwacht.",
+            "en": "The city is waking up.",
+            "fr": "La ville se réveille.",
+            "it": "La città si sveglia.",
+            "ja": "町が めを さましていく。",
+            "ko": "도시가 깨어나고 있어.",
+            "pl": "Miasto się budzi.",
+            "pt-BR": "A cidade está acordando.",
+            "ru": "Город просыпается.",
+            "uk": "Місто прокидається.",
+            "vi": "Thành phố đang thức dậy."
+          }
         }
       ],
       "sfx": [],

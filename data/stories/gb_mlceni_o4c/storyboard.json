@@ -1,5 +1,18 @@
 {
   "title": "To je hodně",
+  "title_i18n": {
+    "de": "Das ist viel",
+    "en": "That's a Lot",
+    "fr": "C'est beaucoup",
+    "it": "È tanto",
+    "ja": "ずいぶん多い",
+    "ko": "많네요",
+    "pl": "To dużo",
+    "pt-BR": "É muito",
+    "ru": "Это много",
+    "uk": "Це багато",
+    "vi": "Nhiều thật"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To není tak docela pravda.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das stimmt nicht ganz.",
+            "en": "That's not entirely true.",
+            "fr": "Ce n'est pas tout à fait vrai.",
+            "it": "Non è del tutto vero.",
+            "ja": "それは、必ずしも本当ではありません。",
+            "ko": "그건 꼭 맞는 말은 아니에요.",
+            "pl": "To nie do końca prawda.",
+            "pt-BR": "Isso não é bem verdade.",
+            "ru": "Это не совсем так.",
+            "uk": "Це не зовсім так.",
+            "vi": "Điều đó không hoàn toàn đúng."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Co chcete?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was wollen Sie?",
+            "en": "What do you want?",
+            "fr": "Que voulez-vous ?",
+            "it": "Che cosa vuole?",
+            "ja": "何を求めているんですか？",
+            "ko": "뭘 바라시는데요?",
+            "pl": "Czego pan chce?",
+            "pt-BR": "O que você quer?",
+            "ru": "Чего вы хотите?",
+            "uk": "Чого ви хочете?",
+            "vi": "Ông muốn gì?"
+          }
         }
       ],
       "sfx": [],
@@ -102,12 +141,38 @@
         {
           "speaker_id": "psycholog",
           "text": "Abychom hledali způsob, jak vám pomoci.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass wir einen Weg suchen, Ihnen zu helfen.",
+            "en": "For us to search for a way to help you.",
+            "fr": "Que nous cherchions un moyen de vous aider.",
+            "it": "Che cerchiamo un modo per aiutarla.",
+            "ja": "あなたを助ける方法を、一緒に探すこと。",
+            "ko": "안나 씨를 도울 방법을 함께 찾는 거요.",
+            "pl": "Żebyśmy szukali sposobu, jak pani pomóc.",
+            "pt-BR": "Que procuremos um jeito de ajudar você.",
+            "ru": "Чтобы мы искали способ вам помочь.",
+            "uk": "Щоб ми шукали спосіб вам допомогти.",
+            "vi": "Rằng chúng ta cùng tìm cách giúp cô."
+          }
         },
         {
           "speaker_id": "psycholog",
           "text": "Abychom nezanedbali vaše zdraví.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass wir Ihre Gesundheit nicht vernachlässigen.",
+            "en": "For us not to neglect your health.",
+            "fr": "Que nous ne négligions pas votre santé.",
+            "it": "Che non trascuriamo la sua salute.",
+            "ja": "あなたの健康を、おろそかにしないこと。",
+            "ko": "건강을 소홀히 하지 않는 거요.",
+            "pl": "Żebyśmy nie zaniedbali pani zdrowia.",
+            "pt-BR": "Que não descuidemos da sua saúde.",
+            "ru": "Чтобы мы не запустили ваше здоровье.",
+            "uk": "Щоб ми не занедбали ваше здоров'я.",
+            "vi": "Rằng ta không bỏ bê sức khỏe của cô."
+          }
         }
       ],
       "sfx": [],
@@ -140,7 +205,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A abyste nemusela na všechno být sama.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und dass Sie nicht mit allem allein sein müssen.",
+            "en": "And for you not to have to face everything alone.",
+            "fr": "Et que vous n'ayez pas à tout affronter seule.",
+            "it": "E che lei non debba affrontare tutto da sola.",
+            "ja": "そして、何もかもひとりで抱えなくてすむこと。",
+            "ko": "그리고 모든 걸 혼자 감당하지 않아도 되는 거요.",
+            "pl": "I żeby nie musiała pani być ze wszystkim sama.",
+            "pt-BR": "E que você não precise enfrentar tudo sozinha.",
+            "ru": "И чтобы вы не оставались со всем одна.",
+            "uk": "І щоб вам не доводилося бути з усім самій.",
+            "vi": "Và rằng cô không phải một mình gánh mọi thứ."
+          }
         }
       ],
       "sfx": [],
@@ -173,7 +251,20 @@
         {
           "speaker_id": "anna",
           "text": "To je hodně.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist viel.",
+            "en": "That's a lot.",
+            "fr": "C'est beaucoup.",
+            "it": "È tanto.",
+            "ja": "ずいぶん、多いですね。",
+            "ko": "많네요.",
+            "pl": "To dużo.",
+            "pt-BR": "É muito.",
+            "ru": "Это много.",
+            "uk": "Це багато.",
+            "vi": "Thế là nhiều đấy."
+          }
         }
       ],
       "sfx": [],
@@ -206,7 +297,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -264,7 +368,20 @@
         {
           "speaker_id": "anna",
           "text": "Možná jsem chtěla, aby mě maminka měla ráda i tehdy, když nic nedělám.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht wollte ich, dass Mama mich auch dann liebhat, wenn ich nichts tue.",
+            "en": "Maybe I wanted Mum to love me even when I'm doing nothing.",
+            "fr": "Peut-être que je voulais que maman m'aime même quand je ne fais rien.",
+            "it": "Forse volevo che la mamma mi volesse bene anche quando non faccio niente.",
+            "ja": "何もしていなくても、母に好きでいてほしかったのかもしれません。",
+            "ko": "아무것도 안 할 때도 엄마가 절 사랑해 주길 바랐던 건지도 몰라요.",
+            "pl": "Może chciałam, żeby mama kochała mnie też wtedy, kiedy nic nie robię.",
+            "pt-BR": "Talvez eu quisesse que a minha mãe gostasse de mim mesmo quando eu não faço nada.",
+            "ru": "Может, я хотела, чтобы мама любила меня, даже когда я ничего не делаю.",
+            "uk": "Може, я хотіла, щоб мама любила мене, навіть коли я нічого не роблю.",
+            "vi": "Có lẽ tôi đã muốn mẹ thương tôi cả những lúc tôi chẳng làm gì."
+          }
         }
       ],
       "sfx": [],
@@ -297,7 +414,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A měla vás?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und hatte sie Sie lieb?",
+            "en": "And did she?",
+            "fr": "Et elle vous aimait ?",
+            "it": "E gliene voleva?",
+            "ja": "それで、好きでいてくれましたか？",
+            "ko": "그래서, 사랑해 주셨나요?",
+            "pl": "I kochała?",
+            "pt-BR": "E gostava?",
+            "ru": "И любила?",
+            "uk": "І любила?",
+            "vi": "Và mẹ có thương cô không?"
+          }
         }
       ],
       "sfx": [],
@@ -330,7 +460,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht.",
+            "en": "I don't know.",
+            "fr": "Je ne sais pas.",
+            "it": "Non lo so.",
+            "ja": "わかりません。",
+            "ko": "모르겠어요.",
+            "pl": "Nie wiem.",
+            "pt-BR": "Não sei.",
+            "ru": "Не знаю.",
+            "uk": "Не знаю.",
+            "vi": "Tôi không biết."
+          }
         }
       ],
       "sfx": [],
@@ -363,7 +506,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Možná by stálo za to se jí na to někdy zeptat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht wäre es gut, sie irgendwann danach zu fragen.",
+            "en": "Maybe it would be worth asking her some day.",
+            "fr": "Ça vaudrait peut-être la peine de le lui demander, un jour.",
+            "it": "Forse varrebbe la pena di chiederglielo, prima o poi.",
+            "ja": "いつか、お母さんに訊いてみる価値はあるかもしれません。",
+            "ko": "언젠가 어머니께 직접 물어볼 만할지도 몰라요.",
+            "pl": "Może warto by kiedyś ją o to zapytać.",
+            "pt-BR": "Talvez valesse a pena perguntar isso a ela algum dia.",
+            "ru": "Может быть, стоит когда-нибудь её об этом спросить.",
+            "uk": "Може, варто колись її про це спитати.",
+            "vi": "Có lẽ một lúc nào đó cũng đáng để hỏi mẹ điều ấy."
+          }
         }
       ],
       "sfx": [],
@@ -396,7 +552,20 @@
         {
           "speaker_id": "anna",
           "text": "Bojím se.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe Angst.",
+            "en": "I'm afraid.",
+            "fr": "J'ai peur.",
+            "it": "Ho paura.",
+            "ja": "怖いです。",
+            "ko": "무서워요.",
+            "pl": "Boję się.",
+            "pt-BR": "Tenho medo.",
+            "ru": "Боюсь.",
+            "uk": "Боюся.",
+            "vi": "Tôi sợ."
+          }
         }
       ],
       "sfx": [],
@@ -429,7 +598,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To chápu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das verstehe ich.",
+            "en": "I can understand that.",
+            "fr": "Je le comprends.",
+            "it": "Lo capisco.",
+            "ja": "わかります。",
+            "ko": "이해해요.",
+            "pl": "To rozumiem.",
+            "pt-BR": "Isso eu entendo.",
+            "ru": "Это я понимаю.",
+            "uk": "Це я розумію.",
+            "vi": "Tôi hiểu."
+          }
         }
       ],
       "sfx": [],
@@ -462,7 +644,20 @@
         {
           "speaker_id": "anna",
           "text": "A co když řekne ne?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn sie Nein sagt?",
+            "en": "And what if she says no?",
+            "fr": "Et si elle dit non ?",
+            "it": "E se dice di no?",
+            "ja": "もし、違うと言われたら？",
+            "ko": "만약 아니라고 하면요?",
+            "pl": "A jeśli powie, że nie?",
+            "pt-BR": "E se ela disser que não?",
+            "ru": "А если она скажет «нет»?",
+            "uk": "А якщо вона скаже «ні»?",
+            "vi": "Nếu mẹ nói không thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -495,7 +690,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Pak budeme muset hledat, jak žít s něčím, co jste si nezasloužila.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann müssen wir suchen, wie man mit etwas lebt, das Sie nicht verdient haben.",
+            "en": "Then we'll have to search for a way to live with something you didn't deserve.",
+            "fr": "Alors il faudra chercher comment vivre avec une chose que vous n'avez pas méritée.",
+            "it": "Allora dovremo cercare come vivere con qualcosa che non si è meritata.",
+            "ja": "そのときは、あなたが受けるいわれのなかったものと、どう生きるかを探さなければなりません。",
+            "ko": "그땐 안나 씨가 받아선 안 됐던 것과 함께 사는 법을 찾아야겠죠.",
+            "pl": "Wtedy będziemy musieli szukać, jak żyć z czymś, na co pani nie zasłużyła.",
+            "pt-BR": "Então vamos ter que procurar como viver com algo que você não mereceu.",
+            "ru": "Тогда нам придётся искать, как жить с тем, чего вы не заслужили.",
+            "uk": "Тоді нам доведеться шукати, як жити з тим, чого ви не заслужили.",
+            "vi": "Thì chúng ta sẽ phải tìm cách sống cùng một điều cô không đáng phải chịu."
+          }
         }
       ],
       "sfx": [],

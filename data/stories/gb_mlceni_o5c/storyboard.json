@@ -1,5 +1,18 @@
 {
   "title": "Další disciplína",
+  "title_i18n": {
+    "de": "Noch eine Disziplin",
+    "en": "Another Discipline",
+    "fr": "Une discipline de plus",
+    "it": "Un'altra disciplina",
+    "ja": "もうひとつの種目",
+    "ko": "또 하나의 종목",
+    "pl": "Kolejna dyscyplina",
+    "pt-BR": "Mais uma disciplina",
+    "ru": "Ещё одна дисциплина",
+    "uk": "Ще одна дисципліна",
+    "vi": "Thêm một môn thi"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To jsem neřekl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das habe ich nicht gesagt.",
+            "en": "I didn't say that.",
+            "fr": "Je n'ai pas dit ça.",
+            "it": "Non l'ho detto.",
+            "ja": "そうは言っていません。",
+            "ko": "그렇게 말하지 않았어요.",
+            "pl": "Tego nie powiedziałem.",
+            "pt-BR": "Eu não disse isso.",
+            "ru": "Этого я не говорил.",
+            "uk": "Цього я не казав.",
+            "vi": "Tôi không nói thế."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Ale všichni to říkají.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber alle sagen es.",
+            "en": "But everyone says it.",
+            "fr": "Mais tout le monde le dit.",
+            "it": "Ma lo dicono tutti.",
+            "ja": "でも、みんなそう言います。",
+            "ko": "하지만 다들 그렇게 말해요.",
+            "pl": "Ale wszyscy tak mówią.",
+            "pt-BR": "Mas todo mundo diz.",
+            "ru": "Но все так говорят.",
+            "uk": "Але всі так кажуть.",
+            "vi": "Nhưng ai cũng nói thế."
+          }
         }
       ],
       "sfx": [],
@@ -102,12 +141,38 @@
         {
           "speaker_id": "psycholog",
           "text": "Možná jsme z lásky k sobě udělali další povinnost.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht haben wir aus der Liebe zu sich selbst eine weitere Pflicht gemacht.",
+            "en": "Maybe we've turned loving ourselves into another duty.",
+            "fr": "Peut-être avons-nous fait de l'amour de soi un devoir de plus.",
+            "it": "Forse dell'amore per se stessi abbiamo fatto un altro dovere.",
+            "ja": "私たちは、自分を愛することを、もうひとつの義務にしてしまったのかもしれません。",
+            "ko": "어쩌면 우리는 자기 사랑을 또 하나의 의무로 만들어 버렸는지도 몰라요.",
+            "pl": "Może z miłości do siebie zrobiliśmy kolejny obowiązek.",
+            "pt-BR": "Talvez tenhamos feito do amor-próprio mais uma obrigação.",
+            "ru": "Возможно, мы сделали из любви к себе ещё одну обязанность.",
+            "uk": "Можливо, ми зробили з любові до себе ще один обов'язок.",
+            "vi": "Có lẽ chúng ta đã biến việc yêu bản thân thành thêm một bổn phận."
+          }
         },
         {
           "speaker_id": "psycholog",
           "text": "Další disciplínu, ve které můžete selhat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Eine weitere Disziplin, in der Sie versagen können.",
+            "en": "Another discipline you can fail at.",
+            "fr": "Une discipline de plus, où vous pouvez échouer.",
+            "it": "Un'altra disciplina in cui può fallire.",
+            "ja": "失敗しうる、もうひとつの種目に。",
+            "ko": "실패할 수 있는 또 하나의 종목으로요.",
+            "pl": "Kolejną dyscyplinę, w której może pani zawieść.",
+            "pt-BR": "Mais uma disciplina em que você pode fracassar.",
+            "ru": "Ещё одну дисциплину, в которой можно провалиться.",
+            "uk": "Ще одну дисципліну, в якій можна зазнати поразки.",
+            "vi": "Thêm một môn thi mà cô có thể trượt."
+          }
         }
       ],
       "sfx": [],
@@ -165,7 +230,20 @@
         {
           "speaker_id": "anna",
           "text": "Co tím myslíte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie meinen Sie das?",
+            "en": "What do you mean?",
+            "fr": "Que voulez-vous dire ?",
+            "it": "Che cosa intende?",
+            "ja": "どういう意味ですか？",
+            "ko": "무슨 뜻이에요?",
+            "pl": "Co pan ma na myśli?",
+            "pt-BR": "O que você quer dizer?",
+            "ru": "Что вы имеете в виду?",
+            "uk": "Що ви маєте на увазі?",
+            "vi": "Ý ông là sao?"
+          }
         }
       ],
       "sfx": [],
@@ -198,7 +276,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Že člověk, který se nemá rád, dostane další úkol. Musí se naučit mít rád sám sebe.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ein Mensch, der sich nicht mag, eine weitere Aufgabe bekommt. Er muss lernen, sich selbst zu lieben.",
+            "en": "That someone who doesn't love themselves gets one more task. They have to learn to love themselves.",
+            "fr": "Que celui qui ne s'aime pas reçoit une tâche de plus. Il doit apprendre à s'aimer lui-même.",
+            "it": "Che chi non si vuole bene riceve un altro compito. Deve imparare a voler bene a se stesso.",
+            "ja": "自分を好きになれない人に、またひとつ課題が増える。自分を好きになることを学ばなければならない。",
+            "ko": "자신을 사랑하지 못하는 사람에게 과제가 하나 더 생긴다는 거예요. 자신을 사랑하는 법을 배워야 한다는.",
+            "pl": "Że człowiek, który siebie nie kocha, dostaje kolejne zadanie. Musi nauczyć się kochać samego siebie.",
+            "pt-BR": "Que a pessoa que não se ama recebe mais uma tarefa. Precisa aprender a se amar.",
+            "ru": "Что человек, который себя не любит, получает ещё одно задание. Он должен научиться любить себя.",
+            "uk": "Що людина, яка себе не любить, отримує ще одне завдання. Вона мусить навчитися любити себе.",
+            "vi": "Rằng người không yêu bản thân lại nhận thêm một nhiệm vụ. Phải học cách yêu chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -231,7 +322,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A když mu to nejde, má pocit, že selhal ještě jednou.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn es ihm nicht gelingt, hat er das Gefühl, noch einmal versagt zu haben.",
+            "en": "And when they can't, they feel they've failed once again.",
+            "fr": "Et s'il n'y arrive pas, il a le sentiment d'avoir échoué une fois de plus.",
+            "it": "E se non ci riesce, ha l'impressione di aver fallito ancora una volta.",
+            "ja": "そして、それがうまくいかないと、もう一度失敗したと感じる。",
+            "ko": "그리고 그게 잘 안 되면, 또 한 번 실패했다고 느끼죠.",
+            "pl": "A kiedy mu nie wychodzi, czuje, że zawiódł jeszcze raz.",
+            "pt-BR": "E, quando não consegue, sente que fracassou mais uma vez.",
+            "ru": "А если у него не получается, ему кажется, что он провалился ещё раз.",
+            "uk": "А коли в неї не виходить, їй здається, що вона зазнала поразки ще раз.",
+            "vi": "Và khi không làm được, họ thấy mình thất bại thêm lần nữa."
+          }
         }
       ],
       "sfx": [],
@@ -264,7 +368,20 @@
         {
           "speaker_id": "anna",
           "text": "A co má tedy dělat?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was soll er dann tun?",
+            "en": "So what should they do?",
+            "fr": "Alors, que doit-il faire ?",
+            "it": "E allora che cosa deve fare?",
+            "ja": "じゃあ、どうすればいいんですか？",
+            "ko": "그럼 어떻게 해야 하는데요?",
+            "pl": "To co ma w takim razie robić?",
+            "pt-BR": "E o que ela deve fazer, então?",
+            "ru": "И что же ему делать?",
+            "uk": "І що ж їй робити?",
+            "vi": "Vậy thì họ phải làm gì?"
+          }
         }
       ],
       "sfx": [],
@@ -297,7 +414,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nevím, jestli musí něco dělat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht, ob er überhaupt etwas tun muss.",
+            "en": "I don't know if they have to do anything.",
+            "fr": "Je ne sais pas s'il doit faire quoi que ce soit.",
+            "it": "Non so se debba fare qualcosa.",
+            "ja": "何かをしなければならないのかどうか、わかりません。",
+            "ko": "꼭 뭔가를 해야 하는지 모르겠어요.",
+            "pl": "Nie wiem, czy musi cokolwiek robić.",
+            "pt-BR": "Não sei se ela precisa fazer alguma coisa.",
+            "ru": "Не знаю, должен ли он что-то делать.",
+            "uk": "Не знаю, чи мусить вона щось робити.",
+            "vi": "Tôi không biết họ có phải làm gì không."
+          }
         }
       ],
       "sfx": [],
@@ -330,7 +460,20 @@
         {
           "speaker_id": "anna",
           "text": "To nemůžete myslet vážně.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das können Sie nicht ernst meinen.",
+            "en": "You can't be serious.",
+            "fr": "Vous ne pouvez pas être sérieux.",
+            "it": "Non può dirlo sul serio.",
+            "ja": "本気じゃないですよね。",
+            "ko": "진심일 리가 없어요.",
+            "pl": "Pan chyba nie mówi poważnie.",
+            "pt-BR": "Você não pode estar falando sério.",
+            "ru": "Вы не можете говорить это всерьёз.",
+            "uk": "Ви не можете говорити це серйозно.",
+            "vi": "Ông không thể nói thật được."
+          }
         }
       ],
       "sfx": [],
@@ -363,7 +506,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Myslím. Možná se nejdřív potřebuje setkat s někým, vedle koho nemusí podávat žádný výkon.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Doch. Vielleicht muss er zuerst jemandem begegnen, neben dem er nichts leisten muss.",
+            "en": "I am. Maybe first they need to meet someone they don't have to perform for.",
+            "fr": "Si. Peut-être a-t-il d'abord besoin de rencontrer quelqu'un auprès de qui il n'a rien à prouver.",
+            "it": "Sì, invece. Forse prima ha bisogno di incontrare qualcuno accanto a cui non deve dare prova di niente.",
+            "ja": "本気です。まず、何の成果も見せなくていい誰かと、出会う必要があるのかもしれません。",
+            "ko": "진심이에요. 어쩌면 먼저, 곁에서 아무것도 증명하지 않아도 되는 누군가를 만나야 하는지도 몰라요.",
+            "pl": "Mówię poważnie. Może najpierw musi spotkać kogoś, przy kim nie musi się wykazywać.",
+            "pt-BR": "Estou. Talvez ela precise primeiro encontrar alguém ao lado de quem não tenha que provar nada.",
+            "ru": "Всерьёз. Может быть, сначала ему нужно встретить кого-то, рядом с кем не нужно ничего доказывать.",
+            "uk": "Серйозно. Можливо, спершу їй треба зустріти когось, поруч із ким не треба нічого доводити.",
+            "vi": "Tôi nói thật. Có lẽ trước hết họ cần gặp một người mà ở bên cạnh, họ không phải chứng tỏ gì cả."
+          }
         }
       ],
       "sfx": [],
@@ -396,7 +552,20 @@
         {
           "speaker_id": "anna",
           "text": "A když takového člověka nenajde?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn er so jemanden nicht findet?",
+            "en": "And if they don't find such a person?",
+            "fr": "Et s'il ne trouve pas une telle personne ?",
+            "it": "E se non trova una persona così?",
+            "ja": "そういう人が見つからなかったら？",
+            "ko": "그런 사람을 못 찾으면요?",
+            "pl": "A jeśli takiego człowieka nie znajdzie?",
+            "pt-BR": "E se não encontrar essa pessoa?",
+            "ru": "А если он такого человека не найдёт?",
+            "uk": "А якщо вона такої людини не знайде?",
+            "vi": "Nếu họ không tìm được người như thế?"
+          }
         }
       ],
       "sfx": [],
@@ -429,7 +598,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Pak budeme hledat dál.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann suchen wir weiter.",
+            "en": "Then we'll keep searching.",
+            "fr": "Alors nous chercherons encore.",
+            "it": "Allora continueremo a cercare.",
+            "ja": "それなら、探し続けましょう。",
+            "ko": "그럼 계속 찾아봐야죠.",
+            "pl": "Wtedy będziemy szukać dalej.",
+            "pt-BR": "Então vamos continuar procurando.",
+            "ru": "Тогда будем искать дальше.",
+            "uk": "Тоді шукатимемо далі.",
+            "vi": "Thì chúng ta sẽ tiếp tục tìm."
+          }
         }
       ],
       "sfx": [],
@@ -462,7 +644,20 @@
         {
           "speaker_id": "anna",
           "text": "A když ho nenajde nikdy?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn er ihn nie findet?",
+            "en": "And if they never find one?",
+            "fr": "Et s'il ne la trouve jamais ?",
+            "it": "E se non la trova mai?",
+            "ja": "一生、見つからなかったら？",
+            "ko": "끝내 못 찾으면요?",
+            "pl": "A jeśli nie znajdzie go nigdy?",
+            "pt-BR": "E se nunca encontrar?",
+            "ru": "А если не найдёт никогда?",
+            "uk": "А якщо не знайде ніколи?",
+            "vi": "Còn nếu mãi mãi không tìm được?"
+          }
         }
       ],
       "sfx": [],
@@ -495,7 +690,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Pak nesmíme dopustit, aby se z toho stal důkaz, že nestojí za lásku.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann dürfen wir nicht zulassen, dass das zum Beweis wird, dass er keine Liebe verdient.",
+            "en": "Then we mustn't let that become proof that they aren't worth loving.",
+            "fr": "Alors nous ne devons pas laisser cela devenir la preuve qu'il ne mérite pas d'être aimé.",
+            "it": "Allora non dobbiamo permettere che diventi la prova che non merita amore.",
+            "ja": "そのときは、それを、愛される価値がないという証拠にしてはいけません。",
+            "ko": "그때는 그게 사랑받을 자격이 없다는 증거가 되게 둬선 안 돼요.",
+            "pl": "Wtedy nie możemy dopuścić, żeby to stało się dowodem, że nie jest wart miłości.",
+            "pt-BR": "Então não podemos deixar que isso vire prova de que ela não merece amor.",
+            "ru": "Тогда нельзя допустить, чтобы это стало доказательством того, что он не достоин любви.",
+            "uk": "Тоді ми не можемо допустити, щоб це стало доказом того, що вона не варта любові.",
+            "vi": "Thì chúng ta không được để điều đó trở thành bằng chứng rằng họ không đáng được yêu."
+          }
         }
       ],
       "sfx": [],

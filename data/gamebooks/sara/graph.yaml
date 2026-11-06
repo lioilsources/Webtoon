@@ -13,7 +13,7 @@
 schema: 1
 id: sara
 title: Sára a černá koruna
-title_i18n: {en: Sara and the Black Crown}
+title_i18n: {de: "Sara und die schwarze Krone", en: "Sara and the Black Crown", fr: "Sara et la couronne noire", it: "Sara e la corona nera", ja: "サラと くろい かんむり", ko: "사라와 검은 왕관", pl: "Sara i czarna korona", pt-BR: "Sara e a coroa negra", ru: "Сара и чёрная корона", uk: "Сара і чорна корона", vi: "Sara và chiếc vương miện đen"}
 world: w_lx_k2_05_sara_mesto_duchu
 audience: kids
 language: cs            # beta jen česky; překlad bublin stejně jako u příběhů (translate -storyboard)
@@ -50,8 +50,8 @@ nodes:
       - Zrcadlo na skříni se zavlní jako voda.
       - Sára drží korunu a dívá se na zrcadlo — musí se rozhodnout, jak do města.
     choices:
-      - {id: wear, text: Nasadit si korunu, to: n1a}
-      - {id: mirror, text: Projít zrcadlem s Murrem, to: n1b}
+      - {id: wear, text: Nasadit si korunu, text_i18n: {de: "Die Krone aufsetzen", en: "Put on the crown", fr: "Mettre la couronne", it: "Indossa la corona", ja: "かんむりを かぶる", ko: "왕관을 쓴다", pl: "Załóż koronę", pt-BR: "Colocar a coroa", ru: "Надеть корону", uk: "Одягнути корону", vi: "Đội vương miện"}, to: n1a}
+      - {id: mirror, text: Projít zrcadlem s Murrem, text_i18n: {de: "Mit Murr durch den Spiegel gehen", en: "Go through the mirror with Murr", fr: "Traverser le miroir avec Murr", it: "Attraversa lo specchio con Murr", ja: "ムルと かがみを くぐる", ko: "무르와 거울을 지나간다", pl: "Przejdź z Murrem przez lustro", pt-BR: "Atravessar o espelho com Murr", ru: "Пройти сквозь зеркало с Мурром", uk: "Пройти крізь дзеркало з Мурром", vi: "Cùng Murr đi qua gương"}, to: n1b}
 
   n1a:
     title: Koruna stínů
@@ -97,8 +97,8 @@ nodes:
       - Nad městem se zvedá stínová bouře.
       - Sára se rozhoduje.
     choices:
-      - {id: tower, text: Vystoupat do Zvonice zapomnění, to: n3a}
-      - {id: lake, text: Sestoupit k Jezeru vzpomínek, to: n3b}
+      - {id: tower, text: Vystoupat do Zvonice zapomnění, text_i18n: {de: "Den Glockenturm des Vergessens hinaufsteigen", en: "Climb the Bell Tower of Forgetting", fr: "Monter au Clocher de l'Oubli", it: "Sali al Campanile dell'Oblio", ja: "わすれの かねの塔に のぼる", ko: "망각의 종탑에 오른다", pl: "Wejdź na Dzwonnicę Zapomnienia", pt-BR: "Subir ao Campanário do Esquecimento", ru: "Подняться на Колокольню забвения", uk: "Піднятися на Дзвіницю забуття", vi: "Leo lên Tháp Chuông Lãng Quên"}, to: n3a}
+      - {id: lake, text: Sestoupit k Jezeru vzpomínek, text_i18n: {de: "Zum See der Erinnerungen hinabsteigen", en: "Go down to the Lake of Memories", fr: "Descendre au Lac des Souvenirs", it: "Scendi al Lago dei Ricordi", ja: "おもいでの湖へ おりる", ko: "추억의 호수로 내려간다", pl: "Zejdź nad Jezioro Wspomnień", pt-BR: "Descer ao Lago das Lembranças", ru: "Спуститься к Озеру воспоминаний", uk: "Спуститися до Озера спогадів", vi: "Đi xuống Hồ Ký Ức"}, to: n3b}
 
   n3a:
     title: Zvonice zapomnění
@@ -144,9 +144,9 @@ nodes:
       - Bouře sílí, lucerny ve městě skoro zhasly.
       - Poslední rozhodnutí.
     choices:
-      - {id: give_crown, text: Vrátit Královně korunu, to: end_light}
-      - {id: friends, text: Podat Královně ruku a připomenout jí Murra, to: end_friends, if: "memory_bell or memory_lake"}
-      - {id: command, text: Rozkázat stínům korunou, to: end_cold, if: crown_worn}
+      - {id: give_crown, text: Vrátit Královně korunu, text_i18n: {de: "Der Königin die Krone zurückgeben", en: "Give the crown back to the Queen", fr: "Rendre la couronne à la Reine", it: "Restituisci la corona alla Regina", ja: "女王に かんむりを かえす", ko: "여왕에게 왕관을 돌려준다", pl: "Oddaj Królowej koronę", pt-BR: "Devolver a coroa à Rainha", ru: "Вернуть Королеве корону", uk: "Повернути Королеві корону", vi: "Trả vương miện cho Nữ hoàng"}, to: end_light}
+      - {id: friends, text: Podat Královně ruku a připomenout jí Murra, text_i18n: {de: "Der Königin die Hand reichen und sie an Murr erinnern", en: "Take the Queen's hand and remind her of Murr", fr: "Tendre la main à la Reine et lui rappeler Murr", it: "Prendi la mano della Regina e ricordale Murr", ja: "女王の 手を とって、ムルを おもいださせる", ko: "여왕의 손을 잡고 무르를 떠올리게 한다", pl: "Podaj Królowej rękę i przypomnij jej Murra", pt-BR: "Dar a mão à Rainha e lembrá-la de Murr", ru: "Подать Королеве руку и напомнить о Мурре", uk: "Подати Королеві руку й нагадати про Мурра", vi: "Nắm tay Nữ hoàng, nhắc về Murr"}, to: end_friends, if: "memory_bell or memory_lake"}
+      - {id: command, text: Rozkázat stínům korunou, text_i18n: {de: "Den Schatten mit der Krone befehlen", en: "Command the shadows with the crown", fr: "Commander les ombres avec la couronne", it: "Comanda le ombre con la corona", ja: "かんむりで かげに めいれいする", ko: "왕관으로 그림자에게 명령한다", pl: "Rozkaż cieniom koroną", pt-BR: "Comandar as sombras com a coroa", ru: "Приказать теням короной", uk: "Наказати тіням короною", vi: "Dùng vương miện ra lệnh cho bóng tối"}, to: end_cold, if: crown_worn}
 
   end_light:
     title: Světlo se vrací

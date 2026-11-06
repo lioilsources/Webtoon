@@ -1,5 +1,18 @@
 {
   "title": "Naučila jsem se nedívat",
+  "title_i18n": {
+    "de": "Ich habe gelernt, nicht hinzusehen",
+    "en": "I Learned Not to Look",
+    "fr": "J'ai appris à ne pas regarder",
+    "it": "Ho imparato a non guardare",
+    "ja": "見ないことを覚えた",
+    "ko": "보지 않는 법을 배웠어요",
+    "pl": "Nauczyłam się nie patrzeć",
+    "pt-BR": "Aprendi a não olhar",
+    "ru": "Я научилась не смотреть",
+    "uk": "Я навчилася не дивитися",
+    "vi": "Tôi đã học cách không nhìn"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,12 +49,38 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne. Chci, abyste byla v bezpečí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Ich will, dass Sie in Sicherheit sind.",
+            "en": "No. I want you to be safe.",
+            "fr": "Non. Je veux que vous soyez en sécurité.",
+            "it": "No. Voglio che lei sia al sicuro.",
+            "ja": "いいえ。あなたに、安全でいてほしいんです。",
+            "ko": "아니요. 안나 씨가 안전했으면 해요.",
+            "pl": "Nie. Chcę, żeby była pani bezpieczna.",
+            "pt-BR": "Não. Quero que você esteja segura.",
+            "ru": "Нет. Я хочу, чтобы вы были в безопасности.",
+            "uk": "Ні. Я хочу, щоб ви були в безпеці.",
+            "vi": "Không. Tôi muốn cô được an toàn."
+          }
         },
         {
           "speaker_id": "psycholog",
           "text": "A některé věci v tomhle ohledu nejsou otázkou naší vůle.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und manche Dinge sind dabei keine Frage unseres Willens.",
+            "en": "And some things, in this respect, are not a matter of our will.",
+            "fr": "Et certaines choses, à cet égard, ne dépendent pas de notre volonté.",
+            "it": "E certe cose, in questo, non dipendono dalla nostra volontà.",
+            "ja": "そして、この点では、意志だけではどうにもならないこともあります。",
+            "ko": "그리고 이 문제에선 우리 의지만으로 안 되는 일도 있어요.",
+            "pl": "A niektóre rzeczy w tej sprawie nie zależą od naszej woli.",
+            "pt-BR": "E algumas coisas, nisso, não dependem da nossa vontade.",
+            "ru": "А некоторые вещи здесь не зависят от нашей воли.",
+            "uk": "А деякі речі тут не залежать від нашої волі.",
+            "vi": "Và có những điều, ở khía cạnh này, không do ý chí của chúng ta quyết định."
+          }
         }
       ],
       "sfx": [],
@@ -74,7 +113,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Proto je důležité, abyste měla také odpovídající lékařskou péči.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Deshalb ist es wichtig, dass Sie auch die nötige ärztliche Betreuung haben.",
+            "en": "That's why it matters that you also have proper medical care.",
+            "fr": "C'est pourquoi il est important que vous ayez aussi un suivi médical adapté.",
+            "it": "Per questo è importante che abbia anche un'adeguata assistenza medica.",
+            "ja": "だから、きちんとした医療を受けることも大切です。",
+            "ko": "그래서 적절한 의학적 치료도 받는 게 중요해요.",
+            "pl": "Dlatego ważne jest, żeby miała pani też odpowiednią opiekę lekarską.",
+            "pt-BR": "Por isso é importante que você tenha também o acompanhamento médico adequado.",
+            "ru": "Поэтому важно, чтобы у вас была и надлежащая медицинская помощь.",
+            "uk": "Тому важливо, щоб у вас була й належна медична допомога.",
+            "vi": "Vì vậy, điều quan trọng là cô cũng được chăm sóc y tế phù hợp."
+          }
         }
       ],
       "sfx": [],
@@ -107,7 +159,20 @@
         {
           "speaker_id": "anna",
           "text": "Všichni mluví o mém těle.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Alle reden über meinen Körper.",
+            "en": "Everyone talks about my body.",
+            "fr": "Tout le monde parle de mon corps.",
+            "it": "Tutti parlano del mio corpo.",
+            "ja": "みんな、私の体の話ばかりします。",
+            "ko": "다들 제 몸 얘기만 해요.",
+            "pl": "Wszyscy mówią o moim ciele.",
+            "pt-BR": "Todo mundo fala do meu corpo.",
+            "ru": "Все говорят о моём теле.",
+            "uk": "Усі говорять про моє тіло.",
+            "vi": "Ai cũng nói về cơ thể tôi."
+          }
         }
       ],
       "sfx": [],
@@ -140,7 +205,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A o čem byste chtěla mluvit vy?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und worüber möchten Sie reden?",
+            "en": "And what would you like to talk about?",
+            "fr": "Et vous, de quoi voudriez-vous parler ?",
+            "it": "E lei di che cosa vorrebbe parlare?",
+            "ja": "あなたは、何の話をしたいですか？",
+            "ko": "안나 씨는 무슨 이야기를 하고 싶어요?",
+            "pl": "A o czym pani chciałaby mówić?",
+            "pt-BR": "E sobre o que você gostaria de falar?",
+            "ru": "А о чём хотели бы говорить вы?",
+            "uk": "А про що хотіли б говорити ви?",
+            "vi": "Còn cô muốn nói về điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -173,7 +251,20 @@
         {
           "speaker_id": "anna",
           "text": "O něčem jiném.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Über etwas anderes.",
+            "en": "Something else.",
+            "fr": "D'autre chose.",
+            "it": "D'altro.",
+            "ja": "ほかのことです。",
+            "ko": "다른 거요.",
+            "pl": "O czymś innym.",
+            "pt-BR": "Sobre outra coisa.",
+            "ru": "О другом.",
+            "uk": "Про інше.",
+            "vi": "Một điều gì khác."
+          }
         }
       ],
       "sfx": [],
@@ -206,7 +297,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tak o čem?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Worüber denn?",
+            "en": "Such as?",
+            "fr": "De quoi, alors ?",
+            "it": "Di che cosa, allora?",
+            "ja": "たとえば？",
+            "ko": "어떤 거요?",
+            "pl": "To znaczy o czym?",
+            "pt-BR": "Sobre o quê, então?",
+            "ru": "О чём же?",
+            "uk": "То про що?",
+            "vi": "Vậy là điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -239,7 +343,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht.",
+            "en": "I don't know.",
+            "fr": "Je ne sais pas.",
+            "it": "Non lo so.",
+            "ja": "わかりません。",
+            "ko": "모르겠어요.",
+            "pl": "Nie wiem.",
+            "pt-BR": "Não sei.",
+            "ru": "Не знаю.",
+            "uk": "Не знаю.",
+            "vi": "Tôi không biết."
+          }
         }
       ],
       "sfx": [],
@@ -286,7 +403,20 @@
         {
           "speaker_id": "anna",
           "text": "Když jsem byla malá, nesnášela jsem svoje tělo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Als ich klein war, habe ich meinen Körper gehasst.",
+            "en": "When I was little, I hated my body.",
+            "fr": "Quand j'étais petite, je détestais mon corps.",
+            "it": "Da piccola odiavo il mio corpo.",
+            "ja": "小さい頃、自分の体が大嫌いでした。",
+            "ko": "어렸을 때 제 몸이 너무 싫었어요.",
+            "pl": "Kiedy byłam mała, nie znosiłam swojego ciała.",
+            "pt-BR": "Quando eu era pequena, odiava o meu corpo.",
+            "ru": "Когда я была маленькой, я ненавидела своё тело.",
+            "uk": "Коли я була маленькою, я ненавиділа своє тіло.",
+            "vi": "Hồi nhỏ, tôi ghét cơ thể mình."
+          }
         }
       ],
       "sfx": [],
@@ -319,7 +449,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Pamatujete si, kdy to začalo?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wissen Sie noch, wann das anfing?",
+            "en": "Do you remember when it started?",
+            "fr": "Vous vous souvenez quand ça a commencé ?",
+            "it": "Si ricorda quando è cominciato?",
+            "ja": "いつ始まったか、覚えていますか？",
+            "ko": "언제부터였는지 기억나요?",
+            "pl": "Pamięta pani, kiedy to się zaczęło?",
+            "pt-BR": "Você lembra quando começou?",
+            "ru": "Вы помните, когда это началось?",
+            "uk": "Ви пам'ятаєте, коли це почалося?",
+            "vi": "Cô có nhớ chuyện đó bắt đầu từ khi nào không?"
+          }
         }
       ],
       "sfx": [],
@@ -352,7 +495,20 @@
         {
           "speaker_id": "anna",
           "text": "Ve škole. Děvčata se převlékala společně. Všechna se na sebe dívala.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "In der Schule. Die Mädchen zogen sich gemeinsam um. Alle sahen einander an.",
+            "en": "At school. The girls changed together. They all looked at each other.",
+            "fr": "À l'école. Les filles se changeaient ensemble. Toutes se regardaient.",
+            "it": "A scuola. Le ragazze si cambiavano insieme. Si guardavano tutte.",
+            "ja": "学校で。女の子たちは一緒に着替えていました。みんな、お互いを見ていました。",
+            "ko": "학교에서요. 여자애들은 같이 옷을 갈아입었어요. 다들 서로를 쳐다봤어요.",
+            "pl": "W szkole. Dziewczyny przebierały się razem. Wszystkie na siebie patrzyły.",
+            "pt-BR": "Na escola. As meninas se trocavam juntas. Todas se olhavam.",
+            "ru": "В школе. Девочки переодевались вместе. Все смотрели друг на друга.",
+            "uk": "У школі. Дівчата перевдягалися разом. Усі дивилися одна на одну.",
+            "vi": "Ở trường. Bọn con gái thay đồ chung. Đứa nào cũng nhìn nhau."
+          }
         }
       ],
       "sfx": [],
@@ -385,7 +541,20 @@
         {
           "speaker_id": "anna",
           "text": "Věděla, která je hezká, která je ošklivá, která má co ukázat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie wussten, welche hübsch war, welche hässlich, welche etwas zu zeigen hatte.",
+            "en": "They knew who was pretty, who was ugly, who had something to show.",
+            "fr": "Elles savaient laquelle était jolie, laquelle était laide, laquelle avait de quoi montrer.",
+            "it": "Sapevano chi era carina, chi era brutta, chi aveva qualcosa da mostrare.",
+            "ja": "誰がかわいくて、誰が醜くて、誰に見せるものがあるか、みんな知っていました。",
+            "ko": "누가 예쁜지, 누가 못생겼는지, 누가 보여 줄 게 있는지 다 알았어요.",
+            "pl": "Wiedziały, która jest ładna, która brzydka, która ma co pokazać.",
+            "pt-BR": "Sabiam qual era bonita, qual era feia, qual tinha o que mostrar.",
+            "ru": "Знали, кто красивая, кто некрасивая, кому есть что показать.",
+            "uk": "Знали, яка гарна, яка негарна, якій є що показати.",
+            "vi": "Biết đứa nào đẹp, đứa nào xấu, đứa nào có cái để khoe."
+          }
         }
       ],
       "sfx": [],
@@ -418,7 +587,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A vy?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und Sie?",
+            "en": "And you?",
+            "fr": "Et vous ?",
+            "it": "E lei?",
+            "ja": "あなたは？",
+            "ko": "안나 씨는요?",
+            "pl": "A pani?",
+            "pt-BR": "E você?",
+            "ru": "А вы?",
+            "uk": "А ви?",
+            "vi": "Còn cô?"
+          }
         }
       ],
       "sfx": [],
@@ -451,7 +633,20 @@
         {
           "speaker_id": "anna",
           "text": "Já jsem se naučila nedívat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe gelernt, nicht hinzusehen.",
+            "en": "I learned not to look.",
+            "fr": "Moi, j'ai appris à ne pas regarder.",
+            "it": "Io ho imparato a non guardare.",
+            "ja": "私は、見ないことを覚えました。",
+            "ko": "저는 보지 않는 법을 배웠어요.",
+            "pl": "Ja nauczyłam się nie patrzeć.",
+            "pt-BR": "Eu aprendi a não olhar.",
+            "ru": "А я научилась не смотреть.",
+            "uk": "А я навчилася не дивитися.",
+            "vi": "Tôi thì học cách không nhìn."
+          }
         }
       ],
       "sfx": [],
@@ -484,7 +679,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Na ostatní?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Bei den anderen?",
+            "en": "At the others?",
+            "fr": "Les autres ?",
+            "it": "Gli altri?",
+            "ja": "ほかの子を？",
+            "ko": "다른 사람들을요?",
+            "pl": "Na innych?",
+            "pt-BR": "Para as outras?",
+            "ru": "На других?",
+            "uk": "На інших?",
+            "vi": "Không nhìn người khác?"
+          }
         }
       ],
       "sfx": [],
@@ -517,7 +725,20 @@
         {
           "speaker_id": "anna",
           "text": "Na sebe.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Bei mir.",
+            "en": "At myself.",
+            "fr": "Moi.",
+            "it": "Me stessa.",
+            "ja": "自分を。",
+            "ko": "저 자신을요.",
+            "pl": "Na siebie.",
+            "pt-BR": "Para mim.",
+            "ru": "На себя.",
+            "uk": "На себе.",
+            "vi": "Không nhìn chính mình."
+          }
         }
       ],
       "sfx": [],

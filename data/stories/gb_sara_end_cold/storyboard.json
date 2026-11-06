@@ -1,5 +1,18 @@
 {
   "title": "Studená koruna",
+  "title_i18n": {
+    "de": "Die kalte Krone",
+    "en": "The Cold Crown",
+    "fr": "La couronne froide",
+    "it": "La corona fredda",
+    "ja": "つめたい かんむり",
+    "ko": "차가운 왕관",
+    "pl": "Zimna korona",
+    "pt-BR": "A coroa fria",
+    "ru": "Холодная корона",
+    "uk": "Холодна корона",
+    "vi": "Vương miện lạnh giá"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Trůnní sál ztuhl v ledu.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Thronsaal ist zu Eis erstarrt.",
+            "en": "The throne hall has frozen into ice.",
+            "fr": "La salle du trône est figée dans la glace.",
+            "it": "La sala del trono è congelata nel ghiaccio.",
+            "ja": "王座の間が こおりついた。",
+            "ko": "왕좌의 방이 얼음으로 굳어 버렸다.",
+            "pl": "Sala tronowa zastygła w lodzie.",
+            "pt-BR": "O salão do trono congelou no gelo.",
+            "ru": "Тронный зал застыл во льду.",
+            "uk": "Тронна зала застигла в кризі.",
+            "vi": "Phòng ngai vàng đóng băng."
+          }
         }
       ],
       "sfx": [],
@@ -51,7 +77,20 @@
         {
           "speaker_id": "sara",
           "text": "Stůjte!",
-          "kind": "shout"
+          "kind": "shout",
+          "i18n": {
+            "de": "Halt!",
+            "en": "Stop!",
+            "fr": "Arrêtez !",
+            "it": "Fermi!",
+            "ja": "とまれ!",
+            "ko": "멈춰!",
+            "pl": "Stójcie!",
+            "pt-BR": "Parem!",
+            "ru": "Стойте!",
+            "uk": "Стійте!",
+            "vi": "Dừng lại!"
+          }
         }
       ],
       "sfx": [
@@ -117,7 +156,20 @@
         {
           "speaker_id": "murr",
           "text": "Sáro! Takhle ne!",
-          "kind": "shout"
+          "kind": "shout",
+          "i18n": {
+            "de": "Sara! Nicht so!",
+            "en": "Sara! Not like this!",
+            "fr": "Sara ! Pas comme ça !",
+            "it": "Sara! Non così!",
+            "ja": "サラ! そうじゃない!",
+            "ko": "사라! 이건 아니야!",
+            "pl": "Saro! Nie tak!",
+            "pt-BR": "Sara! Assim não!",
+            "ru": "Сара! Не так!",
+            "uk": "Саро! Не так!",
+            "vi": "Sara! Không phải thế!"
+          }
         }
       ],
       "sfx": [],
@@ -237,7 +289,20 @@
         {
           "speaker_id": "sara",
           "text": "Zkusím to znovu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich versuche es noch einmal.",
+            "en": "I'll try again.",
+            "fr": "Je vais réessayer.",
+            "it": "Ci riprovo.",
+            "ja": "もう いちど やってみる。",
+            "ko": "다시 해 볼게.",
+            "pl": "Spróbuję jeszcze raz.",
+            "pt-BR": "Vou tentar de novo.",
+            "ru": "Я попробую снова.",
+            "uk": "Я спробую знову.",
+            "vi": "Mình sẽ thử lại."
+          }
         }
       ],
       "sfx": [],

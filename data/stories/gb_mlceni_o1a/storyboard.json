@@ -1,5 +1,18 @@
 {
   "title": "Přítomnost",
+  "title_i18n": {
+    "de": "Anwesenheit",
+    "en": "Presence",
+    "fr": "Présence",
+    "it": "Presenza",
+    "ja": "今",
+    "ko": "지금",
+    "pl": "Obecność",
+    "pt-BR": "Presença",
+    "ru": "Присутствие",
+    "uk": "Присутність",
+    "vi": "Hiện tại"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Tento příběh mluví o anorexii a myšlenkách na smrt.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Diese Geschichte handelt von Anorexie und Todesgedanken.",
+            "en": "This story deals with anorexia and thoughts of death.",
+            "fr": "Cette histoire parle d'anorexie et de pensées de mort.",
+            "it": "Questa storia parla di anoressia e di pensieri di morte.",
+            "ja": "この物語には、拒食症と、死を思う気持ちが描かれています。",
+            "ko": "이 이야기는 거식증과 죽음에 대한 생각을 다룹니다.",
+            "pl": "Ta historia mówi o anoreksji i myślach o śmierci.",
+            "pt-BR": "Esta história fala de anorexia e de pensamentos sobre a morte.",
+            "ru": "Эта история — об анорексии и мыслях о смерти.",
+            "uk": "Ця історія — про анорексію та думки про смерть.",
+            "vi": "Câu chuyện này nói về chứng chán ăn và những ý nghĩ về cái chết."
+          }
         }
       ],
       "sfx": [],
@@ -68,7 +94,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tak jak se dnes máte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nun, wie geht es Ihnen heute?",
+            "en": "So how are you today?",
+            "fr": "Alors, comment allez-vous aujourd'hui ?",
+            "it": "Allora, come sta oggi?",
+            "ja": "さて、今日はいかがですか？",
+            "ko": "자, 오늘은 좀 어떠세요?",
+            "pl": "Jak się pani dziś czuje?",
+            "pt-BR": "Então, como você está hoje?",
+            "ru": "Ну, как вы сегодня?",
+            "uk": "Ну, як ви сьогодні?",
+            "vi": "Vậy hôm nay cô thấy thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -101,7 +140,20 @@
         {
           "speaker_id": "anna",
           "text": "To je otázka, na kterou se odpovídá podle toho, kolik času máte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist eine Frage, die man je nachdem beantwortet, wie viel Zeit Sie haben.",
+            "en": "That's a question you answer depending on how much time you have.",
+            "fr": "C'est une question à laquelle on répond selon le temps dont vous disposez.",
+            "it": "È una domanda a cui si risponde a seconda di quanto tempo ha.",
+            "ja": "それは、先生にどれだけ時間があるかで答え方が変わる質問です。",
+            "ko": "그건 시간이 얼마나 있으신지에 따라 대답이 달라지는 질문이에요.",
+            "pl": "Na to pytanie odpowiada się zależnie od tego, ile ma pan czasu.",
+            "pt-BR": "Essa pergunta se responde conforme o tempo que você tem.",
+            "ru": "На этот вопрос отвечают в зависимости от того, сколько у вас времени.",
+            "uk": "На це питання відповідають залежно від того, скільки у вас часу.",
+            "vi": "Câu đó thì trả lời tùy vào việc ông có bao nhiêu thời gian."
+          }
         }
       ],
       "sfx": [],
@@ -134,7 +186,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Máme padesát minut.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir haben fünfzig Minuten.",
+            "en": "We have fifty minutes.",
+            "fr": "Nous avons cinquante minutes.",
+            "it": "Abbiamo cinquanta minuti.",
+            "ja": "五十分あります。",
+            "ko": "50분 있습니다.",
+            "pl": "Mamy pięćdziesiąt minut.",
+            "pt-BR": "Temos cinquenta minutos.",
+            "ru": "У нас пятьдесят минут.",
+            "uk": "У нас п'ятдесят хвилин.",
+            "vi": "Chúng ta có năm mươi phút."
+          }
         }
       ],
       "sfx": [],
@@ -167,7 +232,20 @@
         {
           "speaker_id": "anna",
           "text": "Tak to se mám špatně.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann geht es mir schlecht.",
+            "en": "Then I'm doing badly.",
+            "fr": "Alors je vais mal.",
+            "it": "Allora sto male.",
+            "ja": "それなら、よくありません。",
+            "ko": "그럼 안 좋아요.",
+            "pl": "To w takim razie czuję się źle.",
+            "pt-BR": "Então estou mal.",
+            "ru": "Тогда у меня всё плохо.",
+            "uk": "Тоді в мене все погано.",
+            "vi": "Vậy thì tôi không ổn."
+          }
         }
       ],
       "sfx": [],
@@ -225,7 +303,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Včera jste mi telefonovala.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie haben mich gestern angerufen.",
+            "en": "You phoned me yesterday.",
+            "fr": "Vous m'avez téléphoné hier.",
+            "it": "Ieri mi ha telefonato.",
+            "ja": "昨日、お電話をくださいましたね。",
+            "ko": "어제 전화하셨죠.",
+            "pl": "Wczoraj pani do mnie dzwoniła.",
+            "pt-BR": "Ontem você me ligou.",
+            "ru": "Вчера вы мне звонили.",
+            "uk": "Учора ви мені телефонували.",
+            "vi": "Hôm qua cô đã gọi cho tôi."
+          }
         }
       ],
       "sfx": [],
@@ -258,7 +349,20 @@
         {
           "speaker_id": "anna",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "はい。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Vâng."
+          }
         }
       ],
       "sfx": [],
@@ -291,7 +395,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Chtěla jste něco říct?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wollten Sie etwas sagen?",
+            "en": "Did you want to say something?",
+            "fr": "Vous vouliez dire quelque chose ?",
+            "it": "Voleva dirmi qualcosa?",
+            "ja": "何か、言いたいことがあったんですか？",
+            "ko": "하고 싶은 말이 있었나요?",
+            "pl": "Chciała pani coś powiedzieć?",
+            "pt-BR": "Você queria dizer alguma coisa?",
+            "ru": "Вы хотели что-то сказать?",
+            "uk": "Ви хотіли щось сказати?",
+            "vi": "Cô muốn nói điều gì à?"
+          }
         }
       ],
       "sfx": [],
@@ -324,7 +441,20 @@
         {
           "speaker_id": "anna",
           "text": "Už nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß es nicht mehr.",
+            "en": "I don't know any more.",
+            "fr": "Je ne sais plus.",
+            "it": "Non lo so più.",
+            "ja": "もう、わかりません。",
+            "ko": "이제는 모르겠어요.",
+            "pl": "Już nie wiem.",
+            "pt-BR": "Já não sei.",
+            "ru": "Уже не знаю.",
+            "uk": "Уже не знаю.",
+            "vi": "Giờ tôi không biết nữa."
+          }
         }
       ],
       "sfx": [],
@@ -357,7 +487,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To nevadí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist nicht schlimm.",
+            "en": "It doesn't matter.",
+            "fr": "Ce n'est pas grave.",
+            "it": "Non importa.",
+            "ja": "気にしなくていいですよ。",
+            "ko": "신경 쓰지 않아도 돼요.",
+            "pl": "Nie szkodzi.",
+            "pt-BR": "Não tem problema.",
+            "ru": "Это не страшно.",
+            "uk": "Це не страшно.",
+            "vi": "Cô đừng bận lòng."
+          }
         }
       ],
       "sfx": [],
@@ -390,7 +533,20 @@
         {
           "speaker_id": "anna",
           "text": "Vadí mi, že si nepamatuju, co jsem chtěla říct.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Für mich ist es schlimm, dass ich nicht mehr weiß, was ich sagen wollte.",
+            "en": "It matters to me that I can't remember what I wanted to say.",
+            "fr": "Pour moi, c'est grave de ne plus me souvenir de ce que je voulais dire.",
+            "it": "A me importa, non ricordare cosa volevo dire.",
+            "ja": "気になります。何を言いたかったのか、覚えていないことが。",
+            "ko": "전 신경 쓰여요. 무슨 말을 하려 했는지 기억이 안 나는 게.",
+            "pl": "Mnie przeszkadza, że nie pamiętam, co chciałam powiedzieć.",
+            "pt-BR": "Para mim tem, não lembrar o que eu queria dizer.",
+            "ru": "А меня беспокоит, что я не помню, что хотела сказать.",
+            "uk": "А мене турбує, що я не пам'ятаю, що хотіла сказати.",
+            "vi": "Tôi bận lòng chứ. Tôi không nhớ mình đã định nói gì."
+          }
         }
       ],
       "sfx": [],
@@ -423,7 +579,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Možná to nebylo tak důležité.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht war es nicht so wichtig.",
+            "en": "Maybe it wasn't that important.",
+            "fr": "Ce n'était peut-être pas si important.",
+            "it": "Forse non era così importante.",
+            "ja": "それほど大事なことではなかったのかもしれません。",
+            "ko": "그렇게 중요한 말은 아니었는지도 모르죠.",
+            "pl": "Może nie było to aż tak ważne.",
+            "pt-BR": "Talvez não fosse tão importante.",
+            "ru": "Может, это было не так уж важно.",
+            "uk": "Може, це було не таке вже й важливе.",
+            "vi": "Có lẽ điều đó không quan trọng lắm."
+          }
         }
       ],
       "sfx": [],
@@ -456,7 +625,20 @@
         {
           "speaker_id": "anna",
           "text": "A možná bylo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und vielleicht doch.",
+            "en": "And maybe it was.",
+            "fr": "Et peut-être que si.",
+            "it": "E forse sì.",
+            "ja": "大事だったのかもしれません。",
+            "ko": "중요했는지도 모르죠.",
+            "pl": "A może było.",
+            "pt-BR": "Ou talvez fosse.",
+            "ru": "А может, было.",
+            "uk": "А може, було.",
+            "vi": "Mà cũng có thể là có."
+          }
         }
       ],
       "sfx": [],

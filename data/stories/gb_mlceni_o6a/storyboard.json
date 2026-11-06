@@ -1,5 +1,18 @@
 {
   "title": "Kdo koho zachraňuje",
+  "title_i18n": {
+    "de": "Wer rettet wen",
+    "en": "Who Saves Whom",
+    "fr": "Qui sauve qui",
+    "it": "Chi salva chi",
+    "ja": "誰が誰を救うのか",
+    "ko": "누가 누구를 구하는가",
+    "pl": "Kto kogo ratuje",
+    "pt-BR": "Quem salva quem",
+    "ru": "Кто кого спасает",
+    "uk": "Хто кого рятує",
+    "vi": "Ai cứu ai"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "anna",
           "text": "Přinesla jsem vám něco.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe Ihnen etwas mitgebracht.",
+            "en": "I brought you something.",
+            "fr": "Je vous ai apporté quelque chose.",
+            "it": "Le ho portato una cosa.",
+            "ja": "先生に、持ってきたものがあります。",
+            "ko": "선생님께 드릴 게 있어요.",
+            "pl": "Przyniosłam panu coś.",
+            "pt-BR": "Eu trouxe uma coisa para você.",
+            "ru": "Я вам кое-что принесла.",
+            "uk": "Я вам дещо принесла.",
+            "vi": "Tôi mang cho ông một thứ."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co to je?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist das?",
+            "en": "What is it?",
+            "fr": "Qu'est-ce que c'est ?",
+            "it": "Che cos'è?",
+            "ja": "何ですか？",
+            "ko": "뭔가요?",
+            "pl": "Co to jest?",
+            "pt-BR": "O que é?",
+            "ru": "Что это?",
+            "uk": "Що це?",
+            "vi": "Gì vậy?"
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "anna",
           "text": "Kniha.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein Buch.",
+            "en": "A book.",
+            "fr": "Un livre.",
+            "it": "Un libro.",
+            "ja": "本です。",
+            "ko": "책이요.",
+            "pl": "Książka.",
+            "pt-BR": "Um livro.",
+            "ru": "Книга.",
+            "uk": "Книжка.",
+            "vi": "Một cuốn sách."
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To vidím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das sehe ich.",
+            "en": "I can see that.",
+            "fr": "Je vois.",
+            "it": "Lo vedo.",
+            "ja": "見ればわかります。",
+            "ko": "보이네요.",
+            "pl": "To widzę.",
+            "pt-BR": "Isso eu estou vendo.",
+            "ru": "Это я вижу.",
+            "uk": "Це я бачу.",
+            "vi": "Tôi thấy rồi."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "anna",
           "text": "Nečetla jsem ji.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe es nicht gelesen.",
+            "en": "I haven't read it.",
+            "fr": "Je ne l'ai pas lu.",
+            "it": "Non l'ho letto.",
+            "ja": "読んでいません。",
+            "ko": "읽어 보진 않았어요.",
+            "pl": "Nie czytałam jej.",
+            "pt-BR": "Eu não li.",
+            "ru": "Я её не читала.",
+            "uk": "Я її не читала.",
+            "vi": "Tôi chưa đọc."
+          }
         }
       ],
       "sfx": [],
@@ -201,7 +279,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tak proč jste ji koupila?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum haben Sie es dann gekauft?",
+            "en": "Then why did you buy it?",
+            "fr": "Alors pourquoi l'avez-vous acheté ?",
+            "it": "E allora perché l'ha comprato?",
+            "ja": "では、なぜ買ったんですか？",
+            "ko": "그럼 왜 샀어요?",
+            "pl": "To dlaczego ją pani kupiła?",
+            "pt-BR": "Então por que comprou?",
+            "ru": "Тогда зачем вы её купили?",
+            "uk": "Тоді навіщо ви її купили?",
+            "vi": "Vậy sao cô lại mua?"
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "anna",
           "text": "Protože se mi líbila obálka.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil mir der Umschlag gefallen hat.",
+            "en": "Because I liked the cover.",
+            "fr": "Parce que la couverture me plaisait.",
+            "it": "Perché mi piaceva la copertina.",
+            "ja": "表紙が気に入ったからです。",
+            "ko": "표지가 마음에 들어서요.",
+            "pl": "Bo spodobała mi się okładka.",
+            "pt-BR": "Porque gostei da capa.",
+            "ru": "Потому что мне понравилась обложка.",
+            "uk": "Бо мені сподобалася обкладинка.",
+            "vi": "Vì tôi thích cái bìa."
+          }
         }
       ],
       "sfx": [],
@@ -267,7 +371,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je dobrý důvod.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ein guter Grund.",
+            "en": "That's a good reason.",
+            "fr": "C'est une bonne raison.",
+            "it": "È un buon motivo.",
+            "ja": "いい理由です。",
+            "ko": "좋은 이유네요.",
+            "pl": "To dobry powód.",
+            "pt-BR": "É um bom motivo.",
+            "ru": "Хорошая причина.",
+            "uk": "Добра причина.",
+            "vi": "Đó là một lý do hay."
+          }
         }
       ],
       "sfx": [],
@@ -300,7 +417,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy jste zvláštní.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie sind seltsam.",
+            "en": "You're strange.",
+            "fr": "Vous êtes étrange.",
+            "it": "Lei è strano.",
+            "ja": "先生って、変わってますね。",
+            "ko": "선생님은 참 이상해요.",
+            "pl": "Pan jest dziwny.",
+            "pt-BR": "Você é estranho.",
+            "ru": "Вы странный.",
+            "uk": "Ви дивний.",
+            "vi": "Ông thật kỳ lạ."
+          }
         }
       ],
       "sfx": [],
@@ -333,7 +463,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To už jste říkala.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das haben Sie schon gesagt.",
+            "en": "You've said that before.",
+            "fr": "Vous me l'avez déjà dit.",
+            "it": "Me l'ha già detto.",
+            "ja": "前にも、そう言いましたね。",
+            "ko": "전에도 그렇게 말했죠.",
+            "pl": "Już pani to mówiła.",
+            "pt-BR": "Você já disse isso.",
+            "ru": "Вы это уже говорили.",
+            "uk": "Ви це вже казали.",
+            "vi": "Cô đã nói thế rồi."
+          }
         }
       ],
       "sfx": [],
@@ -366,7 +509,20 @@
         {
           "speaker_id": "anna",
           "text": "A pořád si to myslím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und ich finde es immer noch.",
+            "en": "And I still think so.",
+            "fr": "Et je le pense toujours.",
+            "it": "E lo penso ancora.",
+            "ja": "今でも、そう思っています。",
+            "ko": "지금도 그렇게 생각해요.",
+            "pl": "I nadal tak uważam.",
+            "pt-BR": "E continuo achando.",
+            "ru": "И до сих пор так думаю.",
+            "uk": "І досі так думаю.",
+            "vi": "Và tôi vẫn nghĩ vậy."
+          }
         }
       ],
       "sfx": [],
@@ -416,7 +572,20 @@
         {
           "speaker_id": "anna",
           "text": "Chtěla jsem se vás na něco zeptat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte Sie etwas fragen.",
+            "en": "I wanted to ask you something.",
+            "fr": "Je voulais vous demander quelque chose.",
+            "it": "Volevo chiederle una cosa.",
+            "ja": "先生に、訊きたいことがあったんです。",
+            "ko": "선생님께 여쭤보고 싶은 게 있었어요.",
+            "pl": "Chciałam pana o coś zapytać.",
+            "pt-BR": "Eu queria perguntar uma coisa a você.",
+            "ru": "Я хотела вас кое о чём спросить.",
+            "uk": "Я хотіла вас дещо спитати.",
+            "vi": "Tôi muốn hỏi ông một điều."
+          }
         }
       ],
       "sfx": [],
@@ -449,7 +618,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Poslouchám.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich höre.",
+            "en": "I'm listening.",
+            "fr": "Je vous écoute.",
+            "it": "La ascolto.",
+            "ja": "聞いていますよ。",
+            "ko": "말씀하세요.",
+            "pl": "Słucham.",
+            "pt-BR": "Estou ouvindo.",
+            "ru": "Слушаю.",
+            "uk": "Слухаю.",
+            "vi": "Tôi đang nghe."
+          }
         }
       ],
       "sfx": [],

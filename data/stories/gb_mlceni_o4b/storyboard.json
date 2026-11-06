@@ -1,5 +1,18 @@
 {
   "title": "Blízko a daleko",
+  "title_i18n": {
+    "de": "Nah und fern",
+    "en": "Near and Far",
+    "fr": "Près et loin",
+    "it": "Vicino e lontano",
+    "ja": "近くて、遠い",
+    "ko": "가까이, 그리고 멀리",
+    "pl": "Blisko i daleko",
+    "pt-BR": "Perto e longe",
+    "ru": "Близко и далеко",
+    "uk": "Близько й далеко",
+    "vi": "Gần và xa"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -54,7 +67,20 @@
         {
           "speaker_id": "anna",
           "text": "To je asi nemožné.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist wohl unmöglich.",
+            "en": "That's probably impossible.",
+            "fr": "C'est sans doute impossible.",
+            "it": "Probabilmente è impossibile.",
+            "ja": "たぶん、無理ですよね。",
+            "ko": "아마 불가능하겠죠.",
+            "pl": "To chyba niemożliwe.",
+            "pt-BR": "Isso deve ser impossível.",
+            "ru": "Это, наверное, невозможно.",
+            "uk": "Це, мабуть, неможливо.",
+            "vi": "Chắc là không thể."
+          }
         }
       ],
       "sfx": [],
@@ -87,7 +113,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Proč?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum?",
+            "en": "Why?",
+            "fr": "Pourquoi ?",
+            "it": "Perché?",
+            "ja": "なぜですか？",
+            "ko": "왜요?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ru": "Почему?",
+            "uk": "Чому?",
+            "vi": "Vì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -120,7 +159,20 @@
         {
           "speaker_id": "anna",
           "text": "Protože člověk nemůže být současně blízko a daleko.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil man nicht gleichzeitig nah und fern sein kann.",
+            "en": "Because you can't be near and far at the same time.",
+            "fr": "Parce qu'on ne peut pas être à la fois près et loin.",
+            "it": "Perché non si può essere vicini e lontani nello stesso momento.",
+            "ja": "人は、近くにいながら遠くにいることはできませんから。",
+            "ko": "사람은 가까이 있으면서 동시에 멀리 있을 수는 없으니까요.",
+            "pl": "Bo nie można być jednocześnie blisko i daleko.",
+            "pt-BR": "Porque não dá para estar perto e longe ao mesmo tempo.",
+            "ru": "Потому что нельзя быть одновременно близко и далеко.",
+            "uk": "Бо не можна бути водночас близько й далеко.",
+            "vi": "Vì người ta không thể vừa ở gần vừa ở xa."
+          }
         }
       ],
       "sfx": [],
@@ -153,7 +205,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Myslíte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Meinen Sie?",
+            "en": "You think so?",
+            "fr": "Vous croyez ?",
+            "it": "Dice?",
+            "ja": "そうでしょうか？",
+            "ko": "그럴까요?",
+            "pl": "Tak pani myśli?",
+            "pt-BR": "Você acha?",
+            "ru": "Думаете?",
+            "uk": "Думаєте?",
+            "vi": "Cô nghĩ vậy sao?"
+          }
         }
       ],
       "sfx": [],
@@ -186,12 +251,38 @@
         {
           "speaker_id": "anna",
           "text": "Když je někdo blízko, vidí vás. Když vás vidí, může vás soudit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn jemand nah ist, sieht er Sie. Wenn er Sie sieht, kann er Sie verurteilen.",
+            "en": "When someone is near, they see you. When they see you, they can judge you.",
+            "fr": "Quand quelqu'un est près, il vous voit. Quand il vous voit, il peut vous juger.",
+            "it": "Quando qualcuno è vicino, la vede. Quando la vede, può giudicarla.",
+            "ja": "誰かが近くにいれば、見られます。見られれば、裁かれることもあります。",
+            "ko": "누가 가까이 있으면 나를 보게 되죠. 보면, 판단할 수 있고요.",
+            "pl": "Kiedy ktoś jest blisko, to widzi. Kiedy widzi, może osądzać.",
+            "pt-BR": "Quando alguém está perto, vê você. Quando vê, pode julgar.",
+            "ru": "Когда кто-то близко, он вас видит. Когда видит, может судить.",
+            "uk": "Коли хтось близько, він вас бачить. Коли бачить, може судити.",
+            "vi": "Khi ai đó ở gần, họ nhìn thấy ta. Khi họ nhìn thấy ta, họ có thể phán xét ta."
+          }
         },
         {
           "speaker_id": "anna",
           "text": "Když vás soudí, musíte se bránit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn er Sie verurteilt, müssen Sie sich wehren.",
+            "en": "When they judge you, you have to defend yourself.",
+            "fr": "Quand il vous juge, vous devez vous défendre.",
+            "it": "Quando la giudica, deve difendersi.",
+            "ja": "裁かれたら、身を守らないといけません。",
+            "ko": "판단하면, 방어해야 하고요.",
+            "pl": "Kiedy osądza, trzeba się bronić.",
+            "pt-BR": "Quando julga, você precisa se defender.",
+            "ru": "Когда судит, приходится защищаться.",
+            "uk": "Коли судить, доводиться захищатися.",
+            "vi": "Khi họ phán xét ta, ta phải tự vệ."
+          }
         }
       ],
       "sfx": [],
@@ -224,7 +315,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A když vás nesoudí?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn er Sie nicht verurteilt?",
+            "en": "And if they don't judge you?",
+            "fr": "Et s'il ne vous juge pas ?",
+            "it": "E se non la giudica?",
+            "ja": "裁かれなかったら？",
+            "ko": "판단하지 않는다면요?",
+            "pl": "A jeśli nie osądza?",
+            "pt-BR": "E quando não julga?",
+            "ru": "А если не судит?",
+            "uk": "А якщо не судить?",
+            "vi": "Còn nếu họ không phán xét?"
+          }
         }
       ],
       "sfx": [],
@@ -257,7 +361,20 @@
         {
           "speaker_id": "anna",
           "text": "To se mi nestává.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das passiert mir nicht.",
+            "en": "That doesn't happen to me.",
+            "fr": "Ça ne m'arrive pas.",
+            "it": "A me non succede.",
+            "ja": "そんなこと、私には起きません。",
+            "ko": "그런 일은 저한테 안 일어나요.",
+            "pl": "Mnie się to nie zdarza.",
+            "pt-BR": "Isso não acontece comigo.",
+            "ru": "Со мной такого не бывает.",
+            "uk": "Зі мною такого не буває.",
+            "vi": "Chuyện đó không xảy ra với tôi."
+          }
         }
       ],
       "sfx": [],
@@ -290,7 +407,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nikdy?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nie?",
+            "en": "Never?",
+            "fr": "Jamais ?",
+            "it": "Mai?",
+            "ja": "一度も？",
+            "ko": "한 번도요?",
+            "pl": "Nigdy?",
+            "pt-BR": "Nunca?",
+            "ru": "Никогда?",
+            "uk": "Ніколи?",
+            "vi": "Chưa bao giờ?"
+          }
         }
       ],
       "sfx": [],
@@ -323,7 +453,20 @@
         {
           "speaker_id": "anna",
           "text": "Ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "ありません。",
+            "ko": "한 번도요.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Chưa."
+          }
         }
       ],
       "sfx": [],
@@ -356,7 +499,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ani tady?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nicht einmal hier?",
+            "en": "Not even here?",
+            "fr": "Même pas ici ?",
+            "it": "Neanche qui?",
+            "ja": "ここでも？",
+            "ko": "여기서도요?",
+            "pl": "Nawet tutaj?",
+            "pt-BR": "Nem aqui?",
+            "ru": "Даже здесь?",
+            "uk": "Навіть тут?",
+            "vi": "Kể cả ở đây?"
+          }
         }
       ],
       "sfx": [],
@@ -414,7 +570,20 @@
         {
           "speaker_id": "anna",
           "text": "Tady je to jiné.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Hier ist es anders.",
+            "en": "Here it's different.",
+            "fr": "Ici, c'est différent.",
+            "it": "Qui è diverso.",
+            "ja": "ここは、違います。",
+            "ko": "여긴 달라요.",
+            "pl": "Tutaj jest inaczej.",
+            "pt-BR": "Aqui é diferente.",
+            "ru": "Здесь по-другому.",
+            "uk": "Тут інакше.",
+            "vi": "Ở đây thì khác."
+          }
         }
       ],
       "sfx": [],
@@ -447,7 +616,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Čím?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Inwiefern?",
+            "en": "How?",
+            "fr": "En quoi ?",
+            "it": "In che cosa?",
+            "ja": "どう違うんですか？",
+            "ko": "어떻게요?",
+            "pl": "W czym?",
+            "pt-BR": "Em quê?",
+            "ru": "Чем?",
+            "uk": "Чим?",
+            "vi": "Khác ở đâu?"
+          }
         }
       ],
       "sfx": [],
@@ -480,7 +662,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy ode mě nic nechcete.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie wollen nichts von mir.",
+            "en": "You want nothing from me.",
+            "fr": "Vous ne voulez rien de moi.",
+            "it": "Lei non vuole niente da me.",
+            "ja": "先生は、私に何も求めませんから。",
+            "ko": "선생님은 저한테 아무것도 바라지 않으니까요.",
+            "pl": "Pan nic ode mnie nie chce.",
+            "pt-BR": "Você não quer nada de mim.",
+            "ru": "Вы от меня ничего не хотите.",
+            "uk": "Ви від мене нічого не хочете.",
+            "vi": "Ông chẳng muốn gì ở tôi."
+          }
         }
       ],
       "sfx": [],

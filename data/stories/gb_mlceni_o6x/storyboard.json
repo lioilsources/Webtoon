@@ -1,5 +1,18 @@
 {
   "title": "Zeptala jsem se první",
+  "title_i18n": {
+    "de": "Ich habe zuerst gefragt",
+    "en": "I Asked First",
+    "fr": "J'ai demandé la première",
+    "it": "Ho chiesto prima io",
+    "ja": "先に訊いたのは私",
+    "ko": "제가 먼저 물었어요",
+    "pl": "Ja zapytałam pierwsza",
+    "pt-BR": "Eu perguntei primeiro",
+    "ru": "Я спросила первой",
+    "uk": "Я спитала першою",
+    "vi": "Tôi hỏi trước"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Proč se ptáte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum fragen Sie?",
+            "en": "Why do you ask?",
+            "fr": "Pourquoi cette question ?",
+            "it": "Perché me lo chiede?",
+            "ja": "なぜ、そんなことを訊くんですか？",
+            "ko": "왜 물어보세요?",
+            "pl": "Dlaczego pani pyta?",
+            "pt-BR": "Por que você pergunta?",
+            "ru": "Почему вы спрашиваете?",
+            "uk": "Чому ви питаєте?",
+            "vi": "Sao cô lại hỏi vậy?"
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "To je odpověď z učebnice.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist eine Antwort aus dem Lehrbuch.",
+            "en": "That's a textbook answer.",
+            "fr": "C'est une réponse de manuel.",
+            "it": "È una risposta da manuale.",
+            "ja": "教科書どおりの答えですね。",
+            "ko": "교과서 같은 대답이네요.",
+            "pl": "To odpowiedź z podręcznika.",
+            "pt-BR": "Isso é resposta de manual.",
+            "ru": "Это ответ из учебника.",
+            "uk": "Це відповідь із підручника.",
+            "vi": "Câu trả lời đúng sách giáo khoa."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Je to důležitá otázka. Chci vědět, jestli o tom přemýšlíte vy.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist eine wichtige Frage. Ich will wissen, ob Sie darüber nachdenken.",
+            "en": "It's an important question. I want to know if you think about it.",
+            "fr": "C'est une question importante. Je veux savoir si vous, vous y pensez.",
+            "it": "È una domanda importante. Voglio sapere se lei ci pensa.",
+            "ja": "大事な質問です。あなたが、それを考えているのかどうか、知りたいんです。",
+            "ko": "중요한 질문이에요. 안나 씨가 그런 생각을 하고 있는지 알고 싶어요.",
+            "pl": "To ważne pytanie. Chcę wiedzieć, czy pani o tym myśli.",
+            "pt-BR": "É uma pergunta importante. Quero saber se você pensa nisso.",
+            "ru": "Это важный вопрос. Я хочу знать, думаете ли об этом вы.",
+            "uk": "Це важливе питання. Я хочу знати, чи думаєте про це ви.",
+            "vi": "Đó là câu hỏi quan trọng. Tôi muốn biết liệu cô có đang nghĩ đến chuyện đó không."
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "anna",
           "text": "Zeptala jsem se první.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe zuerst gefragt.",
+            "en": "I asked first.",
+            "fr": "J'ai demandé la première.",
+            "it": "Ho chiesto prima io.",
+            "ja": "先に訊いたのは、私です。",
+            "ko": "제가 먼저 물었어요.",
+            "pl": "Ja zapytałam pierwsza.",
+            "pt-BR": "Eu perguntei primeiro.",
+            "ru": "Я спросила первой.",
+            "uk": "Я спитала першою.",
+            "vi": "Tôi hỏi trước."
+          }
         }
       ],
       "sfx": [],

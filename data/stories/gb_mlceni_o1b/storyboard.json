@@ -1,5 +1,18 @@
 {
   "title": "Den",
+  "title_i18n": {
+    "de": "Der Tag",
+    "en": "The Day",
+    "fr": "Le jour",
+    "it": "Il giorno",
+    "ja": "一日",
+    "ko": "하루",
+    "pl": "Dzień",
+    "pt-BR": "O dia",
+    "ru": "День",
+    "uk": "День",
+    "vi": "Một ngày"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Jaká byla noc?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie war die Nacht?",
+            "en": "How was the night?",
+            "fr": "Comment était la nuit ?",
+            "it": "Com'è stata la notte?",
+            "ja": "夜は、どうでしたか？",
+            "ko": "밤은 어땠어요?",
+            "pl": "Jaka była noc?",
+            "pt-BR": "Como foi a noite?",
+            "ru": "Как прошла ночь?",
+            "uk": "Як минула ніч?",
+            "vi": "Đêm qua thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Dlouhá.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Lang.",
+            "en": "Long.",
+            "fr": "Longue.",
+            "it": "Lunga.",
+            "ja": "長かったです。",
+            "ko": "길었어요.",
+            "pl": "Długa.",
+            "pt-BR": "Longa.",
+            "ru": "Долгая.",
+            "uk": "Довга.",
+            "vi": "Dài."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nemohla jste spát?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Konnten Sie nicht schlafen?",
+            "en": "Couldn't you sleep?",
+            "fr": "Vous n'arriviez pas à dormir ?",
+            "it": "Non riusciva a dormire?",
+            "ja": "眠れなかったんですか？",
+            "ko": "잠을 못 잤어요?",
+            "pl": "Nie mogła pani spać?",
+            "pt-BR": "Não conseguiu dormir?",
+            "ru": "Не могли уснуть?",
+            "uk": "Не могли заснути?",
+            "vi": "Cô không ngủ được à?"
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "anna",
           "text": "Mohla. Jen jsem nechtěla.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Doch. Ich wollte nur nicht.",
+            "en": "I could. I just didn't want to.",
+            "fr": "Si. Je ne voulais pas, c'est tout.",
+            "it": "Ci riuscivo. Solo che non volevo.",
+            "ja": "眠れました。眠りたくなかっただけです。",
+            "ko": "잘 수 있었어요. 자기 싫었을 뿐이에요.",
+            "pl": "Mogłam. Tylko nie chciałam.",
+            "pt-BR": "Conseguia. Só não quis.",
+            "ru": "Могла. Просто не хотела.",
+            "uk": "Могла. Просто не хотіла.",
+            "vi": "Được chứ. Chỉ là tôi không muốn."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Proč?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum?",
+            "en": "Why?",
+            "fr": "Pourquoi ?",
+            "it": "Perché?",
+            "ja": "なぜですか？",
+            "ko": "왜요?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ru": "Почему?",
+            "uk": "Чому?",
+            "vi": "Vì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -201,7 +279,20 @@
         {
           "speaker_id": "anna",
           "text": "Protože když usnu, ráno přijde zase.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil er morgens wiederkommt, wenn ich einschlafe.",
+            "en": "Because if I fall asleep, in the morning it comes again.",
+            "fr": "Parce que si je m'endors, le matin, il revient.",
+            "it": "Perché se mi addormento, al mattino torna.",
+            "ja": "眠ったら、また朝が来るからです。",
+            "ko": "잠들면 또 아침이 오니까요.",
+            "pl": "Bo kiedy zasnę, rano znowu przyjdzie.",
+            "pt-BR": "Porque, se eu dormir, de manhã chega de novo.",
+            "ru": "Потому что, если усну, утром опять наступит.",
+            "uk": "Бо якщо засну, вранці знову настане.",
+            "vi": "Vì nếu tôi ngủ, sáng mai lại đến."
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer?",
+            "en": "What does?",
+            "fr": "Qui ?",
+            "it": "Cosa?",
+            "ja": "何がですか？",
+            "ko": "뭐가요?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ru": "Что?",
+            "uk": "Що?",
+            "vi": "Cái gì đến?"
+          }
         }
       ],
       "sfx": [],
@@ -267,7 +371,20 @@
         {
           "speaker_id": "anna",
           "text": "Den.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Tag.",
+            "en": "The day.",
+            "fr": "Le jour.",
+            "it": "Il giorno.",
+            "ja": "一日が。",
+            "ko": "하루가요.",
+            "pl": "Dzień.",
+            "pt-BR": "O dia.",
+            "ru": "День.",
+            "uk": "День.",
+            "vi": "Một ngày nữa."
+          }
         }
       ],
       "sfx": [],
@@ -315,7 +432,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A co je na něm tak nepříjemného?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was ist an ihm so unangenehm?",
+            "en": "And what's so unpleasant about it?",
+            "fr": "Et qu'a-t-il de si désagréable ?",
+            "it": "E che cosa c'è di così spiacevole?",
+            "ja": "その何が、そんなに嫌なんですか？",
+            "ko": "그 하루의 무엇이 그렇게 싫은가요?",
+            "pl": "A co jest w nim takiego nieprzyjemnego?",
+            "pt-BR": "E o que ele tem de tão desagradável?",
+            "ru": "А что в нём такого неприятного?",
+            "uk": "А що в ньому такого неприємного?",
+            "vi": "Có gì ở nó khiến cô khó chịu đến thế?"
+          }
         }
       ],
       "sfx": [],
@@ -348,7 +478,20 @@
         {
           "speaker_id": "anna",
           "text": "Že musím být.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ich sein muss.",
+            "en": "That I have to be.",
+            "fr": "Que je dois être.",
+            "it": "Che devo essere.",
+            "ja": "いなければならないことです。",
+            "ko": "있어야 한다는 거요.",
+            "pl": "Że muszę być.",
+            "pt-BR": "Que eu tenho que estar.",
+            "ru": "Что нужно быть.",
+            "uk": "Що треба бути.",
+            "vi": "Rằng tôi phải tồn tại."
+          }
         }
       ],
       "sfx": [],
@@ -381,7 +524,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Být?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sein?",
+            "en": "Be?",
+            "fr": "Être ?",
+            "it": "Essere?",
+            "ja": "いる、ですか？",
+            "ko": "있어야 한다고요?",
+            "pl": "Być?",
+            "pt-BR": "Estar?",
+            "ru": "Быть?",
+            "uk": "Бути?",
+            "vi": "Tồn tại?"
+          }
         }
       ],
       "sfx": [],
@@ -414,12 +570,38 @@
         {
           "speaker_id": "anna",
           "text": "Přítomná. Odpovídat. Vstávat. Mluvit. Něco chtít. Něco nechtít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Anwesend. Antworten. Aufstehen. Reden. Etwas wollen. Etwas nicht wollen.",
+            "en": "Present. Answer. Get up. Talk. Want something. Not want something.",
+            "fr": "Présente. Répondre. Me lever. Parler. Vouloir quelque chose. Ne pas vouloir quelque chose.",
+            "it": "Presente. Rispondere. Alzarmi. Parlare. Volere qualcosa. Non volere qualcosa.",
+            "ja": "その場にいる。答える。起きる。話す。何かを欲しがる。何かを欲しがらない。",
+            "ko": "그 자리에 있는 거요. 대답하고. 일어나고. 말하고. 뭔가를 원하고. 뭔가를 원하지 않고.",
+            "pl": "Obecna. Odpowiadać. Wstawać. Mówić. Czegoś chcieć. Czegoś nie chcieć.",
+            "pt-BR": "Presente. Responder. Levantar. Falar. Querer alguma coisa. Não querer alguma coisa.",
+            "ru": "Присутствовать. Отвечать. Вставать. Говорить. Чего-то хотеть. Чего-то не хотеть.",
+            "uk": "Присутньою. Відповідати. Вставати. Говорити. Чогось хотіти. Чогось не хотіти.",
+            "vi": "Có mặt. Trả lời. Thức dậy. Nói. Muốn một điều gì đó. Không muốn một điều gì đó."
+          }
         },
         {
           "speaker_id": "anna",
           "text": "Dělat, že mě zajímá, jak se mají ostatní.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "So tun, als interessierte es mich, wie es den anderen geht.",
+            "en": "Pretend I care how other people are.",
+            "fr": "Faire semblant que ça m'intéresse, comment vont les autres.",
+            "it": "Fingere che mi interessi come stanno gli altri.",
+            "ja": "ほかの人の近況に、興味があるふりをする。",
+            "ko": "남들이 어떻게 지내는지 관심 있는 척하는 거요.",
+            "pl": "Udawać, że obchodzi mnie, jak się mają inni.",
+            "pt-BR": "Fingir que me interessa como os outros estão.",
+            "ru": "Делать вид, что мне интересно, как дела у других.",
+            "uk": "Робити вигляд, що мені цікаво, як справи в інших.",
+            "vi": "Làm như tôi quan tâm người khác sống ra sao."
+          }
         }
       ],
       "sfx": [],
@@ -452,7 +634,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A zajímá vás to?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und interessiert es Sie?",
+            "en": "And do you care?",
+            "fr": "Et ça vous intéresse ?",
+            "it": "E le interessa?",
+            "ja": "実際、興味はあるんですか？",
+            "ko": "실제로 관심이 있나요?",
+            "pl": "A obchodzi to panią?",
+            "pt-BR": "E interessa?",
+            "ru": "А вам интересно?",
+            "uk": "А вам цікаво?",
+            "vi": "Thế cô có quan tâm không?"
+          }
         }
       ],
       "sfx": [],
@@ -485,7 +680,20 @@
         {
           "speaker_id": "anna",
           "text": "Někdy.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Manchmal.",
+            "en": "Sometimes.",
+            "fr": "Parfois.",
+            "it": "A volte.",
+            "ja": "ときどきは。",
+            "ko": "가끔은요.",
+            "pl": "Czasem.",
+            "pt-BR": "Às vezes.",
+            "ru": "Иногда.",
+            "uk": "Іноді.",
+            "vi": "Đôi khi."
+          }
         }
       ],
       "sfx": [],
@@ -518,7 +726,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je docela dobrý začátek.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ein ganz guter Anfang.",
+            "en": "That's quite a good beginning.",
+            "fr": "C'est un assez bon début.",
+            "it": "È un inizio niente male.",
+            "ja": "それは、なかなかいい始まりです。",
+            "ko": "꽤 괜찮은 시작이네요.",
+            "pl": "To całkiem dobry początek.",
+            "pt-BR": "É um bom começo.",
+            "ru": "Это неплохое начало.",
+            "uk": "Це непоганий початок.",
+            "vi": "Đó là một khởi đầu khá tốt."
+          }
         }
       ],
       "sfx": [],
@@ -551,7 +772,20 @@
         {
           "speaker_id": "anna",
           "text": "Čeho?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wovon?",
+            "en": "Of what?",
+            "fr": "De quoi ?",
+            "it": "Di cosa?",
+            "ja": "何のですか？",
+            "ko": "무슨 시작이요?",
+            "pl": "Czego?",
+            "pt-BR": "De quê?",
+            "ru": "Чего?",
+            "uk": "Чого?",
+            "vi": "Khởi đầu của cái gì?"
+          }
         }
       ],
       "sfx": [],
@@ -584,7 +818,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nevědět přesně, co člověka zajímá.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Davon, nicht genau zu wissen, was einen interessiert.",
+            "en": "Of not knowing exactly what you care about.",
+            "fr": "De ne pas savoir exactement ce qui nous intéresse.",
+            "it": "Del non sapere esattamente che cosa ci interessa.",
+            "ja": "自分が何に興味があるのか、はっきりわからないことの。",
+            "ko": "자기가 무엇에 관심 있는지 정확히 모른다는 것의요.",
+            "pl": "Nie wiedzieć dokładnie, co człowieka obchodzi.",
+            "pt-BR": "De não saber exatamente o que nos interessa.",
+            "ru": "Не знать точно, что человеку интересно.",
+            "uk": "Не знати напевно, що людину цікавить.",
+            "vi": "Của việc không biết rõ mình quan tâm đến điều gì."
+          }
         }
       ],
       "sfx": [],

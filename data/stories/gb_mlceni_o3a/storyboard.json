@@ -1,5 +1,18 @@
 {
   "title": "Dokonalost",
+  "title_i18n": {
+    "de": "Vollkommenheit",
+    "en": "Perfection",
+    "fr": "La perfection",
+    "it": "Perfezione",
+    "ja": "完璧",
+    "ko": "완벽",
+    "pl": "Doskonałość",
+    "pt-BR": "Perfeição",
+    "ru": "Совершенство",
+    "uk": "Досконалість",
+    "vi": "Hoàn hảo"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -62,7 +75,20 @@
         {
           "speaker_id": "anna",
           "text": "Co to představuje?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was stellt das dar?",
+            "en": "What does it represent?",
+            "fr": "Qu'est-ce que ça représente ?",
+            "it": "Che cosa rappresenta?",
+            "ja": "これは、何を表しているんですか？",
+            "ko": "이건 뭘 나타내는 거예요?",
+            "pl": "Co to przedstawia?",
+            "pt-BR": "O que isso representa?",
+            "ru": "Что это изображает?",
+            "uk": "Що це зображує?",
+            "vi": "Cái này thể hiện điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -95,7 +121,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht.",
+            "en": "I don't know.",
+            "fr": "Je ne sais pas.",
+            "it": "Non lo so.",
+            "ja": "わかりません。",
+            "ko": "모르겠어요.",
+            "pl": "Nie wiem.",
+            "pt-BR": "Não sei.",
+            "ru": "Не знаю.",
+            "uk": "Не знаю.",
+            "vi": "Tôi không biết."
+          }
         }
       ],
       "sfx": [],
@@ -128,7 +167,20 @@
         {
           "speaker_id": "anna",
           "text": "To je vaše?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ist das Ihres?",
+            "en": "Is it yours?",
+            "fr": "C'est à vous ?",
+            "it": "È suo?",
+            "ja": "先生のですか？",
+            "ko": "선생님 거예요?",
+            "pl": "To pana?",
+            "pt-BR": "É seu?",
+            "ru": "Это ваше?",
+            "uk": "Це ваше?",
+            "vi": "Của ông à?"
+          }
         }
       ],
       "sfx": [],
@@ -161,7 +213,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -194,7 +259,20 @@
         {
           "speaker_id": "anna",
           "text": "A vy nevíte, co jste si pověsil na zeď?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und Sie wissen nicht, was Sie sich an die Wand gehängt haben?",
+            "en": "And you don't know what you've hung on your wall?",
+            "fr": "Et vous ne savez pas ce que vous avez accroché à votre mur ?",
+            "it": "E lei non sa che cosa ha appeso al muro?",
+            "ja": "自分で壁に掛けたものが何か、わからないんですか？",
+            "ko": "벽에 직접 거신 게 뭔지 모르신다고요?",
+            "pl": "I nie wie pan, co sobie powiesił na ścianie?",
+            "pt-BR": "E você não sabe o que pendurou na sua parede?",
+            "ru": "И вы не знаете, что повесили у себя на стену?",
+            "uk": "І ви не знаєте, що повісили собі на стіну?",
+            "vi": "Ông không biết mình treo cái gì lên tường à?"
+          }
         }
       ],
       "sfx": [],
@@ -227,7 +305,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Vím, že se mi líbí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß, dass es mir gefällt.",
+            "en": "I know I like it.",
+            "fr": "Je sais qu'il me plaît.",
+            "it": "So che mi piace.",
+            "ja": "気に入っていることは、わかっています。",
+            "ko": "마음에 든다는 건 알아요.",
+            "pl": "Wiem, że mi się podoba.",
+            "pt-BR": "Sei que gosto dele.",
+            "ru": "Знаю, что она мне нравится.",
+            "uk": "Знаю, що вона мені подобається.",
+            "vi": "Tôi biết là tôi thích nó."
+          }
         }
       ],
       "sfx": [],
@@ -260,7 +351,20 @@
         {
           "speaker_id": "anna",
           "text": "To mi připadá málo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das kommt mir wenig vor.",
+            "en": "That doesn't seem like much.",
+            "fr": "Ça me paraît peu.",
+            "it": "Mi sembra poco.",
+            "ja": "それだけでは、足りない気がします。",
+            "ko": "그건 너무 적은 것 같은데요.",
+            "pl": "To mi się wydaje mało.",
+            "pt-BR": "Isso me parece pouco.",
+            "ru": "По-моему, этого мало.",
+            "uk": "Як на мене, цього мало.",
+            "vi": "Tôi thấy thế là ít."
+          }
         }
       ],
       "sfx": [],
@@ -293,7 +397,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Mně to zatím stačí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir genügt es vorerst.",
+            "en": "It's enough for me, for now.",
+            "fr": "Pour l'instant, ça me suffit.",
+            "it": "A me per ora basta.",
+            "ja": "私には、今はそれで十分です。",
+            "ko": "저한텐 아직은 그걸로 충분해요.",
+            "pl": "Mnie na razie wystarcza.",
+            "pt-BR": "Para mim, por enquanto, basta.",
+            "ru": "Мне пока хватает.",
+            "uk": "Мені поки що досить.",
+            "vi": "Với tôi, tạm thời thế là đủ."
+          }
         }
       ],
       "sfx": [],
@@ -326,7 +443,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy nepotřebujete věcem rozumět?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie müssen die Dinge nicht verstehen?",
+            "en": "You don't need to understand things?",
+            "fr": "Vous n'avez pas besoin de comprendre les choses ?",
+            "it": "Lei non ha bisogno di capire le cose?",
+            "ja": "先生は、物事を理解する必要がないんですか？",
+            "ko": "선생님은 뭔가를 이해할 필요가 없으세요?",
+            "pl": "Pan nie potrzebuje rozumieć rzeczy?",
+            "pt-BR": "Você não precisa entender as coisas?",
+            "ru": "Вам не нужно понимать вещи?",
+            "uk": "Вам не потрібно розуміти речі?",
+            "vi": "Ông không cần phải hiểu mọi thứ sao?"
+          }
         }
       ],
       "sfx": [],
@@ -359,7 +489,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne vždycky.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nicht immer.",
+            "en": "Not always.",
+            "fr": "Pas toujours.",
+            "it": "Non sempre.",
+            "ja": "いつもは、ありません。",
+            "ko": "항상은 아니에요.",
+            "pl": "Nie zawsze.",
+            "pt-BR": "Nem sempre.",
+            "ru": "Не всегда.",
+            "uk": "Не завжди.",
+            "vi": "Không phải lúc nào cũng cần."
+          }
         }
       ],
       "sfx": [],
@@ -392,7 +535,20 @@
         {
           "speaker_id": "anna",
           "text": "Já ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schon.",
+            "en": "I do.",
+            "fr": "Moi, si.",
+            "it": "Io sì.",
+            "ja": "私には、あります。",
+            "ko": "저는 필요해요.",
+            "pl": "Ja tak.",
+            "pt-BR": "Eu preciso.",
+            "ru": "А мне нужно.",
+            "uk": "А мені потрібно.",
+            "vi": "Tôi thì cần."
+          }
         }
       ],
       "sfx": [],
@@ -425,7 +581,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Všiml jsem si.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das habe ich bemerkt.",
+            "en": "I've noticed.",
+            "fr": "Je l'ai remarqué.",
+            "it": "L'ho notato.",
+            "ja": "気づいていました。",
+            "ko": "알고 있었어요.",
+            "pl": "Zauważyłem.",
+            "pt-BR": "Eu percebi.",
+            "ru": "Я заметил.",
+            "uk": "Я помітив.",
+            "vi": "Tôi có để ý."
+          }
         }
       ],
       "sfx": [],
@@ -458,12 +627,38 @@
         {
           "speaker_id": "anna",
           "text": "Musím vědět, proč něco dělám. Proč něco jím. Proč něco nejím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich muss wissen, warum ich etwas tue. Warum ich etwas esse. Warum ich etwas nicht esse.",
+            "en": "I have to know why I do something. Why I eat something. Why I don't eat something.",
+            "fr": "Je dois savoir pourquoi je fais une chose. Pourquoi je mange une chose. Pourquoi je ne la mange pas.",
+            "it": "Devo sapere perché faccio una cosa. Perché mangio una cosa. Perché non la mangio.",
+            "ja": "なぜそうするのか、わかっていないといけないんです。なぜ食べるのか。なぜ食べないのか。",
+            "ko": "왜 뭔가를 하는지 알아야 해요. 왜 뭔가를 먹는지. 왜 뭔가를 안 먹는지.",
+            "pl": "Muszę wiedzieć, dlaczego coś robię. Dlaczego coś jem. Dlaczego czegoś nie jem.",
+            "pt-BR": "Preciso saber por que faço uma coisa. Por que como algo. Por que não como.",
+            "ru": "Мне нужно знать, почему я что-то делаю. Почему что-то ем. Почему чего-то не ем.",
+            "uk": "Мені треба знати, чому я щось роблю. Чому щось їм. Чому чогось не їм.",
+            "vi": "Tôi phải biết vì sao mình làm điều gì đó. Vì sao ăn thứ gì đó. Vì sao không ăn."
+          }
         },
         {
           "speaker_id": "anna",
           "text": "Proč jsem něco řekla. Proč jsem něco neřekla.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum ich etwas gesagt habe. Warum ich etwas nicht gesagt habe.",
+            "en": "Why I said something. Why I didn't say something.",
+            "fr": "Pourquoi j'ai dit une chose. Pourquoi je ne l'ai pas dite.",
+            "it": "Perché ho detto una cosa. Perché non l'ho detta.",
+            "ja": "なぜ何かを言ったのか。なぜ言わなかったのか。",
+            "ko": "왜 그 말을 했는지. 왜 그 말을 안 했는지.",
+            "pl": "Dlaczego coś powiedziałam. Dlaczego czegoś nie powiedziałam.",
+            "pt-BR": "Por que disse algo. Por que não disse.",
+            "ru": "Почему что-то сказала. Почему чего-то не сказала.",
+            "uk": "Чому щось сказала. Чому чогось не сказала.",
+            "vi": "Vì sao tôi đã nói điều gì đó. Vì sao tôi đã không nói."
+          }
         }
       ],
       "sfx": [],
@@ -496,7 +691,20 @@
         {
           "speaker_id": "anna",
           "text": "Když něco pokazím, musím vědět, kde jsem udělala chybu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn mir etwas misslingt, muss ich wissen, wo ich den Fehler gemacht habe.",
+            "en": "When I get something wrong, I have to know where I made the mistake.",
+            "fr": "Quand je rate quelque chose, je dois savoir où j'ai fait l'erreur.",
+            "it": "Quando sbaglio qualcosa, devo sapere dove ho commesso l'errore.",
+            "ja": "何かをしくじったら、どこで間違えたのか、わからないといけないんです。",
+            "ko": "뭔가를 망치면 어디서 잘못했는지 알아야 해요.",
+            "pl": "Kiedy coś zepsuję, muszę wiedzieć, gdzie popełniłam błąd.",
+            "pt-BR": "Quando estrago alguma coisa, preciso saber onde errei.",
+            "ru": "Если я что-то испорчу, мне нужно знать, в чём была ошибка.",
+            "uk": "Якщо я щось зіпсую, мені треба знати, де була помилка.",
+            "vi": "Khi làm hỏng điều gì, tôi phải biết mình sai ở đâu."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Povinnost",
+  "title_i18n": {
+    "de": "Pflicht",
+    "en": "Duty",
+    "fr": "Le devoir",
+    "it": "Il dovere",
+    "ja": "義務",
+    "ko": "의무",
+    "pl": "Obowiązek",
+    "pt-BR": "Obrigação",
+    "ru": "Обязанность",
+    "uk": "Обов'язок",
+    "vi": "Bổn phận"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -61,7 +74,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy se nikdy nenudíte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Langweilen Sie sich nie?",
+            "en": "Don't you ever get bored?",
+            "fr": "Vous ne vous ennuyez jamais ?",
+            "it": "Lei non si annoia mai?",
+            "ja": "先生は、退屈することはないんですか？",
+            "ko": "선생님은 지루할 때 없어요?",
+            "pl": "Pan się nigdy nie nudzi?",
+            "pt-BR": "Você nunca se entedia?",
+            "ru": "Вам никогда не бывает скучно?",
+            "uk": "Вам ніколи не буває нудно?",
+            "vi": "Ông không bao giờ thấy chán à?"
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ale ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Doch.",
+            "en": "Oh, I do.",
+            "fr": "Mais si.",
+            "it": "Eccome.",
+            "ja": "ありますよ。",
+            "ko": "있죠.",
+            "pl": "Ależ tak.",
+            "pt-BR": "Claro que sim.",
+            "ru": "Бывает, конечно.",
+            "uk": "Аякже, буває.",
+            "vi": "Có chứ."
+          }
         }
       ],
       "sfx": [],
@@ -127,7 +166,20 @@
         {
           "speaker_id": "anna",
           "text": "A co děláte, když se nudíte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was tun Sie, wenn Sie sich langweilen?",
+            "en": "And what do you do when you're bored?",
+            "fr": "Et que faites-vous quand vous vous ennuyez ?",
+            "it": "E che cosa fa quando si annoia?",
+            "ja": "退屈なとき、何をするんですか？",
+            "ko": "지루할 땐 뭘 하세요?",
+            "pl": "A co pan robi, kiedy się nudzi?",
+            "pt-BR": "E o que você faz quando se entedia?",
+            "ru": "И что вы делаете, когда скучно?",
+            "uk": "І що ви робите, коли нудно?",
+            "vi": "Thế khi chán ông làm gì?"
+          }
         }
       ],
       "sfx": [],
@@ -160,7 +212,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Většinou nic.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Meistens nichts.",
+            "en": "Nothing, mostly.",
+            "fr": "Rien, la plupart du temps.",
+            "it": "Di solito niente.",
+            "ja": "たいてい、何もしません。",
+            "ko": "대개는 아무것도 안 해요.",
+            "pl": "Zwykle nic.",
+            "pt-BR": "Geralmente nada.",
+            "ru": "Обычно ничего.",
+            "uk": "Зазвичай нічого.",
+            "vi": "Thường là chẳng làm gì cả."
+          }
         }
       ],
       "sfx": [],
@@ -193,7 +258,20 @@
         {
           "speaker_id": "anna",
           "text": "To vás baví?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und das macht Ihnen Spaß?",
+            "en": "And you enjoy that?",
+            "fr": "Et ça vous plaît ?",
+            "it": "E le piace?",
+            "ja": "それが楽しいんですか？",
+            "ko": "그게 재밌어요?",
+            "pl": "I to pana bawi?",
+            "pt-BR": "E você gosta disso?",
+            "ru": "И вам это нравится?",
+            "uk": "І вам це подобається?",
+            "vi": "Thế mà ông thấy vui à?"
+          }
         }
       ],
       "sfx": [],
@@ -226,7 +304,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nemám povinnost každou chvíli svého života nějak využít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe nicht die Pflicht, jeden Augenblick meines Lebens irgendwie zu nutzen.",
+            "en": "I'm under no duty to make use of every moment of my life.",
+            "fr": "Je n'ai pas le devoir de mettre à profit chaque instant de ma vie.",
+            "it": "Non ho il dovere di sfruttare ogni momento della mia vita.",
+            "ja": "人生の一瞬一瞬を、何かに役立てる義務はありませんから。",
+            "ko": "인생의 모든 순간을 뭔가에 써야 할 의무는 없으니까요.",
+            "pl": "Nie mam obowiązku jakoś wykorzystać każdej chwili swojego życia.",
+            "pt-BR": "Não tenho a obrigação de aproveitar cada momento da minha vida.",
+            "ru": "У меня нет обязанности как-то использовать каждую минуту своей жизни.",
+            "uk": "У мене немає обов'язку якось використати кожну мить свого життя.",
+            "vi": "Tôi đâu có bổn phận phải tận dụng từng khoảnh khắc trong đời mình."
+          }
         }
       ],
       "sfx": [],
@@ -259,7 +350,20 @@
         {
           "speaker_id": "anna",
           "text": "Já ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schon.",
+            "en": "I am.",
+            "fr": "Moi, si.",
+            "it": "Io sì.",
+            "ja": "私には、あります。",
+            "ko": "저는 있어요.",
+            "pl": "A ja mam.",
+            "pt-BR": "Eu tenho.",
+            "ru": "А у меня есть.",
+            "uk": "А в мене є.",
+            "vi": "Tôi thì có."
+          }
         }
       ],
       "sfx": [],
@@ -292,7 +396,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Kdo vám ji uložil?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wer hat sie Ihnen auferlegt?",
+            "en": "Who placed it on you?",
+            "fr": "Qui vous l'a imposé ?",
+            "it": "Chi gliel'ha imposto?",
+            "ja": "誰が、それを課したんですか？",
+            "ko": "누가 그런 의무를 지웠나요?",
+            "pl": "Kto go pani nałożył?",
+            "pt-BR": "Quem a impôs a você?",
+            "ru": "Кто на вас её возложил?",
+            "uk": "Хто поклав його на вас?",
+            "vi": "Ai đã đặt bổn phận đó lên cô?"
+          }
         }
       ],
       "sfx": [],
@@ -350,7 +467,20 @@
         {
           "speaker_id": "anna",
           "text": "Maminka.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mama.",
+            "en": "Mum.",
+            "fr": "Maman.",
+            "it": "La mamma.",
+            "ja": "母です。",
+            "ko": "엄마요.",
+            "pl": "Mama.",
+            "pt-BR": "Minha mãe.",
+            "ru": "Мама.",
+            "uk": "Мама.",
+            "vi": "Mẹ."
+          }
         }
       ],
       "sfx": [],
@@ -383,7 +513,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co maminka?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist mit Mama?",
+            "en": "What about Mum?",
+            "fr": "Et maman ?",
+            "it": "E la mamma?",
+            "ja": "お母さんが、どうかしましたか？",
+            "ko": "어머니가 왜요?",
+            "pl": "Co z mamą?",
+            "pt-BR": "O que tem a sua mãe?",
+            "ru": "Что мама?",
+            "uk": "Що мама?",
+            "vi": "Mẹ thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -416,7 +559,20 @@
         {
           "speaker_id": "anna",
           "text": "Nic.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nichts.",
+            "en": "Nothing.",
+            "fr": "Rien.",
+            "it": "Niente.",
+            "ja": "なんでもありません。",
+            "ko": "아무것도 아니에요.",
+            "pl": "Nic.",
+            "pt-BR": "Nada.",
+            "ru": "Ничего.",
+            "uk": "Нічого.",
+            "vi": "Không có gì."
+          }
         }
       ],
       "sfx": [],

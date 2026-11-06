@@ -1,5 +1,18 @@
 {
   "title": "Řekla jsem nic",
+  "title_i18n": {
+    "de": "Ich sagte: nichts",
+    "en": "I Said Nothing",
+    "fr": "J'ai dit rien",
+    "it": "Ho detto niente",
+    "ja": "なんでもない、と",
+    "ko": "아무것도 아니라고 했어요",
+    "pl": "Powiedziałam: nic",
+    "pt-BR": "Eu disse: nada",
+    "ru": "Я сказала: ничего",
+    "uk": "Я сказала: нічого",
+    "vi": "Tôi đã nói là không có gì"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Řekněte mi o ní.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Erzählen Sie mir von ihr.",
+            "en": "Tell me about her.",
+            "fr": "Parlez-moi d'elle.",
+            "it": "Mi parli di lei.",
+            "ja": "お母さんのことを、話してください。",
+            "ko": "어머니 이야기를 해 주세요.",
+            "pl": "Proszę mi o niej opowiedzieć.",
+            "pt-BR": "Me fale dela.",
+            "ru": "Расскажите мне о ней.",
+            "uk": "Розкажіть мені про неї.",
+            "vi": "Hãy kể cho tôi về bà ấy."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Řekla jsem nic.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sagte: nichts.",
+            "en": "I said nothing.",
+            "fr": "J'ai dit : rien.",
+            "it": "Ho detto niente.",
+            "ja": "なんでもない、と言いました。",
+            "ko": "아무것도 아니라고 했어요.",
+            "pl": "Powiedziałam: nic.",
+            "pt-BR": "Eu disse: nada.",
+            "ru": "Я сказала: ничего.",
+            "uk": "Я сказала: нічого.",
+            "vi": "Tôi đã nói là không có gì."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Mně to jako nic nepřipadalo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir kam es nicht wie nichts vor.",
+            "en": "It didn't sound like nothing to me.",
+            "fr": "Ça ne m'a pas semblé être rien.",
+            "it": "A me non è sembrato un niente.",
+            "ja": "なんでもないようには、聞こえませんでした。",
+            "ko": "저한텐 아무것도 아닌 걸로 들리지 않았어요.",
+            "pl": "Mnie to nie brzmiało jak nic.",
+            "pt-BR": "Não me pareceu um nada.",
+            "ru": "Мне это не показалось «ничем».",
+            "uk": "Мені це не здалося «нічим».",
+            "vi": "Với tôi thì nghe không giống không có gì."
+          }
         }
       ],
       "sfx": [],
@@ -149,7 +201,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy máte padesát minut. Já mám maminku.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie haben fünfzig Minuten. Ich habe Mama.",
+            "en": "You have fifty minutes. I have Mum.",
+            "fr": "Vous avez cinquante minutes. Moi, j'ai maman.",
+            "it": "Lei ha cinquanta minuti. Io ho la mamma.",
+            "ja": "先生には五十分あります。私には、母がいます。",
+            "ko": "선생님한텐 50분이 있죠. 저한텐 엄마가 있어요.",
+            "pl": "Pan ma pięćdziesiąt minut. Ja mam mamę.",
+            "pt-BR": "Você tem cinquenta minutos. Eu tenho a minha mãe.",
+            "ru": "У вас пятьдесят минут. А у меня мама.",
+            "uk": "У вас п'ятдесят хвилин. А в мене мама.",
+            "vi": "Ông có năm mươi phút. Tôi thì có mẹ."
+          }
         }
       ],
       "sfx": [],

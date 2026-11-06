@@ -1,5 +1,18 @@
 {
   "title": "Ještě chvíli",
+  "title_i18n": {
+    "de": "Noch ein bisschen",
+    "en": "A While Longer",
+    "fr": "Encore un peu",
+    "it": "Ancora un po'",
+    "ja": "もう少しだけ",
+    "ko": "조금만 더",
+    "pl": "Jeszcze chwilę",
+    "pt-BR": "Mais um pouco",
+    "ru": "Ещё немного",
+    "uk": "Ще трохи",
+    "vi": "Thêm một lát"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -61,7 +74,20 @@
         {
           "speaker_id": "anna",
           "text": "Já nechci být sama.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nicht allein sein.",
+            "en": "I don't want to be alone.",
+            "fr": "Je ne veux pas être seule.",
+            "it": "Non voglio essere sola.",
+            "ja": "ひとりになりたくないです。",
+            "ko": "혼자이고 싶지 않아요.",
+            "pl": "Ja nie chcę być sama.",
+            "pt-BR": "Eu não quero ficar sozinha.",
+            "ru": "Я не хочу быть одна.",
+            "uk": "Я не хочу бути сама.",
+            "vi": "Tôi không muốn phải một mình."
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je v pořádku.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist in Ordnung.",
+            "en": "That's all right.",
+            "fr": "C'est normal.",
+            "it": "Va bene così.",
+            "ja": "それで、いいんです。",
+            "ko": "괜찮아요.",
+            "pl": "To w porządku.",
+            "pt-BR": "Está tudo bem.",
+            "ru": "Это нормально.",
+            "uk": "Це нормально.",
+            "vi": "Không sao cả."
+          }
         }
       ],
       "sfx": [],
@@ -127,7 +166,20 @@
         {
           "speaker_id": "anna",
           "text": "Nechci být silná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nicht stark sein.",
+            "en": "I don't want to be strong.",
+            "fr": "Je ne veux pas être forte.",
+            "it": "Non voglio essere forte.",
+            "ja": "強くなんか、なりたくないです。",
+            "ko": "강하고 싶지 않아요.",
+            "pl": "Nie chcę być silna.",
+            "pt-BR": "Não quero ser forte.",
+            "ru": "Не хочу быть сильной.",
+            "uk": "Не хочу бути сильною.",
+            "vi": "Tôi không muốn phải mạnh mẽ."
+          }
         }
       ],
       "sfx": [],
@@ -160,7 +212,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nemusíte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Müssen Sie nicht.",
+            "en": "You don't have to.",
+            "fr": "Vous n'êtes pas obligée.",
+            "it": "Non deve.",
+            "ja": "ならなくていいんです。",
+            "ko": "안 그래도 돼요.",
+            "pl": "Nie musi pani.",
+            "pt-BR": "Não precisa.",
+            "ru": "Вам и не нужно.",
+            "uk": "І не треба.",
+            "vi": "Cô không cần phải thế."
+          }
         }
       ],
       "sfx": [],
@@ -193,7 +258,20 @@
         {
           "speaker_id": "anna",
           "text": "Nechci se pořád překonávat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will mich nicht ständig überwinden.",
+            "en": "I don't want to keep pushing myself.",
+            "fr": "Je ne veux plus toujours me surpasser.",
+            "it": "Non voglio superarmi sempre.",
+            "ja": "いつも自分を乗り越えようとするのは、もう嫌です。",
+            "ko": "늘 저를 넘어서려고 애쓰고 싶지 않아요.",
+            "pl": "Nie chcę ciągle się przełamywać.",
+            "pt-BR": "Não quero ficar sempre me superando.",
+            "ru": "Не хочу всё время себя преодолевать.",
+            "uk": "Не хочу весь час себе долати.",
+            "vi": "Tôi không muốn lúc nào cũng phải vượt qua chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -226,7 +304,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tak se teď nepřekonávejte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann überwinden Sie sich jetzt nicht.",
+            "en": "Then don't push yourself now.",
+            "fr": "Alors ne vous surpassez pas, maintenant.",
+            "it": "Allora adesso non si superi.",
+            "ja": "では、今は、乗り越えないでください。",
+            "ko": "그럼 지금은 넘어서지 마세요.",
+            "pl": "To niech się pani teraz nie przełamuje.",
+            "pt-BR": "Então, agora, não se supere.",
+            "ru": "Тогда сейчас себя не преодолевайте.",
+            "uk": "Тоді зараз себе не долайте.",
+            "vi": "Vậy bây giờ cô đừng vượt nữa."
+          }
         }
       ],
       "sfx": [],
@@ -277,7 +368,20 @@
         {
           "speaker_id": "anna",
           "text": "Můžu tu ještě chvíli sedět?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Darf ich noch ein bisschen hier sitzen?",
+            "en": "May I sit here a while longer?",
+            "fr": "Je peux rester assise encore un peu ?",
+            "it": "Posso restare seduta qui ancora un po'?",
+            "ja": "もう少しだけ、ここに座っていてもいいですか？",
+            "ko": "조금만 더 여기 앉아 있어도 돼요?",
+            "pl": "Mogę tu jeszcze chwilę posiedzieć?",
+            "pt-BR": "Posso ficar sentada aqui mais um pouco?",
+            "ru": "Можно я ещё немного посижу?",
+            "uk": "Можна я ще трохи посиджу?",
+            "vi": "Tôi có thể ngồi đây thêm một lát không?"
+          }
         }
       ],
       "sfx": [],
@@ -310,7 +414,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Samozřejmě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Natürlich.",
+            "en": "Of course.",
+            "fr": "Bien sûr.",
+            "it": "Certo.",
+            "ja": "もちろんです。",
+            "ko": "물론이죠.",
+            "pl": "Oczywiście.",
+            "pt-BR": "Claro.",
+            "ru": "Конечно.",
+            "uk": "Звісно.",
+            "vi": "Tất nhiên."
+          }
         }
       ],
       "sfx": [],

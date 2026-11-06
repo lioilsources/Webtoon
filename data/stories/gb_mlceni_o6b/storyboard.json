@@ -1,5 +1,18 @@
 {
   "title": "Seděl naproti mně",
+  "title_i18n": {
+    "de": "Er saß mir gegenüber",
+    "en": "He Sat Across from Me",
+    "fr": "Il était assis en face de moi",
+    "it": "Mi sedeva di fronte",
+    "ja": "向かいに座っていた",
+    "ko": "제 맞은편에 앉아 있었어요",
+    "pl": "Siedział naprzeciwko mnie",
+    "pt-BR": "Sentado à minha frente",
+    "ru": "Он сидел напротив меня",
+    "uk": "Він сидів навпроти мене",
+    "vi": "Ông ấy ngồi đối diện tôi"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy jste někdy potřeboval psychologa?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Haben Sie je einen Psychologen gebraucht?",
+            "en": "Have you ever needed a psychologist?",
+            "fr": "Vous avez déjà eu besoin d'un psychologue ?",
+            "it": "Lei ha mai avuto bisogno di uno psicologo?",
+            "ja": "先生も、心理士が必要だったことはありますか？",
+            "ko": "선생님도 심리 상담가가 필요했던 적 있어요?",
+            "pl": "Czy pan kiedyś potrzebował psychologa?",
+            "pt-BR": "Você já precisou de um psicólogo?",
+            "ru": "Вам когда-нибудь был нужен психолог?",
+            "uk": "Вам колись був потрібен психолог?",
+            "vi": "Ông đã bao giờ cần đến nhà tâm lý chưa?"
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "anna",
           "text": "A chodil jste k němu?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und sind Sie zu einem gegangen?",
+            "en": "And did you go to one?",
+            "fr": "Et vous êtes allé en voir un ?",
+            "it": "E ci è andato?",
+            "ja": "通ったんですか？",
+            "ko": "그분한테 다니셨어요?",
+            "pl": "I chodził pan do niego?",
+            "pt-BR": "E você ia?",
+            "ru": "И вы к нему ходили?",
+            "uk": "І ви до нього ходили?",
+            "vi": "Và ông có đến gặp ông ấy không?"
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nějakou dobu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Eine Zeit lang.",
+            "en": "For a while.",
+            "fr": "Pendant un temps.",
+            "it": "Per un po'.",
+            "ja": "しばらくのあいだ。",
+            "ko": "한동안요.",
+            "pl": "Przez jakiś czas.",
+            "pt-BR": "Por um tempo.",
+            "ru": "Какое-то время.",
+            "uk": "Якийсь час.",
+            "vi": "Một thời gian."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "anna",
           "text": "A pomohl vám?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und hat er Ihnen geholfen?",
+            "en": "And did he help you?",
+            "fr": "Et il vous a aidé ?",
+            "it": "E l'ha aiutata?",
+            "ja": "助けになりましたか？",
+            "ko": "도움이 됐어요?",
+            "pl": "I pomógł panu?",
+            "pt-BR": "E ele ajudou você?",
+            "ru": "И он вам помог?",
+            "uk": "І він вам допоміг?",
+            "vi": "Ông ấy có giúp được ông không?"
+          }
         }
       ],
       "sfx": [],
@@ -201,7 +279,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "anna",
           "text": "Jak?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie?",
+            "en": "How?",
+            "fr": "Comment ?",
+            "it": "Come?",
+            "ja": "どんなふうにですか？",
+            "ko": "어떻게요?",
+            "pl": "Jak?",
+            "pt-BR": "Como?",
+            "ru": "Как?",
+            "uk": "Як?",
+            "vi": "Bằng cách nào?"
+          }
         }
       ],
       "sfx": [],
@@ -267,7 +371,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tím, že mě nepřesvědčoval o tom, že můj život má smysl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Indem er mich nicht davon überzeugen wollte, dass mein Leben einen Sinn hat.",
+            "en": "By not trying to convince me that my life had meaning.",
+            "fr": "En n'essayant pas de me convaincre que ma vie avait un sens.",
+            "it": "Non cercando di convincermi che la mia vita avesse un senso.",
+            "ja": "私の人生には意味がある、と説得しなかったことで。",
+            "ko": "제 삶에 의미가 있다고 설득하지 않음으로써요.",
+            "pl": "Tym, że nie przekonywał mnie, że moje życie ma sens.",
+            "pt-BR": "Não tentando me convencer de que a minha vida tinha sentido.",
+            "ru": "Тем, что не убеждал меня, что моя жизнь имеет смысл.",
+            "uk": "Тим, що не переконував мене, що моє життя має сенс.",
+            "vi": "Bằng cách không thuyết phục tôi rằng đời tôi có ý nghĩa."
+          }
         }
       ],
       "sfx": [],
@@ -300,7 +417,20 @@
         {
           "speaker_id": "anna",
           "text": "A co dělal?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was hat er getan?",
+            "en": "Then what did he do?",
+            "fr": "Et que faisait-il ?",
+            "it": "E che cosa faceva?",
+            "ja": "じゃあ、何をしたんですか？",
+            "ko": "그럼 뭘 했는데요?",
+            "pl": "A co robił?",
+            "pt-BR": "E o que ele fazia?",
+            "ru": "А что он делал?",
+            "uk": "А що він робив?",
+            "vi": "Vậy ông ấy đã làm gì?"
+          }
         }
       ],
       "sfx": [],
@@ -333,7 +463,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Seděl naproti mně.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Er saß mir gegenüber.",
+            "en": "He sat across from me.",
+            "fr": "Il était assis en face de moi.",
+            "it": "Mi sedeva di fronte.",
+            "ja": "私の向かいに、座っていました。",
+            "ko": "제 맞은편에 앉아 있었어요.",
+            "pl": "Siedział naprzeciwko mnie.",
+            "pt-BR": "Ficava sentado à minha frente.",
+            "ru": "Сидел напротив меня.",
+            "uk": "Сидів навпроти мене.",
+            "vi": "Ông ấy ngồi đối diện tôi."
+          }
         }
       ],
       "sfx": [],
@@ -366,7 +509,20 @@
         {
           "speaker_id": "anna",
           "text": "To je všechno?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist alles?",
+            "en": "That's all?",
+            "fr": "C'est tout ?",
+            "it": "Tutto qui?",
+            "ja": "それだけですか？",
+            "ko": "그게 다예요?",
+            "pl": "To wszystko?",
+            "pt-BR": "É tudo?",
+            "ru": "И всё?",
+            "uk": "І все?",
+            "vi": "Chỉ vậy thôi?"
+          }
         }
       ],
       "sfx": [],
@@ -399,7 +555,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Někdy to stačilo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Manchmal hat das gereicht.",
+            "en": "Sometimes it was enough.",
+            "fr": "Parfois, ça suffisait.",
+            "it": "A volte bastava.",
+            "ja": "ときには、それで足りました。",
+            "ko": "때로는 그걸로 충분했어요.",
+            "pl": "Czasem to wystarczało.",
+            "pt-BR": "Às vezes bastava.",
+            "ru": "Иногда этого хватало.",
+            "uk": "Іноді цього вистачало.",
+            "vi": "Đôi khi như thế là đủ."
+          }
         }
       ],
       "sfx": [],
@@ -432,7 +601,20 @@
         {
           "speaker_id": "anna",
           "text": "A někdy ne?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und manchmal nicht?",
+            "en": "And sometimes not?",
+            "fr": "Et parfois non ?",
+            "it": "E a volte no?",
+            "ja": "足りないときも？",
+            "ko": "충분하지 않을 때도요?",
+            "pl": "A czasem nie?",
+            "pt-BR": "E às vezes não?",
+            "ru": "А иногда нет?",
+            "uk": "А іноді ні?",
+            "vi": "Và đôi khi thì không?"
+          }
         }
       ],
       "sfx": [],
@@ -465,7 +647,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Někdy ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Manchmal nicht.",
+            "en": "Sometimes not.",
+            "fr": "Parfois non.",
+            "it": "A volte no.",
+            "ja": "足りないときも、ありました。",
+            "ko": "그렇지 않을 때도 있었죠.",
+            "pl": "Czasem nie.",
+            "pt-BR": "Às vezes não.",
+            "ru": "Иногда нет.",
+            "uk": "Іноді ні.",
+            "vi": "Đôi khi thì không."
+          }
         }
       ],
       "sfx": [],
@@ -516,7 +711,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy jste někdy chtěl umřít?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wollten Sie jemals sterben?",
+            "en": "Have you ever wanted to die?",
+            "fr": "Vous avez déjà voulu mourir ?",
+            "it": "Lei ha mai voluto morire?",
+            "ja": "先生は、死にたいと思ったことがありますか？",
+            "ko": "선생님은 죽고 싶었던 적 있어요?",
+            "pl": "Czy pan kiedyś chciał umrzeć?",
+            "pt-BR": "Você já quis morrer?",
+            "ru": "Вы когда-нибудь хотели умереть?",
+            "uk": "Ви колись хотіли померти?",
+            "vi": "Ông đã bao giờ muốn chết chưa?"
+          }
         }
       ],
       "sfx": [],

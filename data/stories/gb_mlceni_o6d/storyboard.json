@@ -1,5 +1,18 @@
 {
   "title": "Výjimečná",
+  "title_i18n": {
+    "de": "Außergewöhnlich",
+    "en": "Exceptional",
+    "fr": "Exceptionnelle",
+    "it": "Eccezionale",
+    "ja": "特別",
+    "ko": "특별한",
+    "pl": "Wyjątkowa",
+    "pt-BR": "Especial",
+    "ru": "Особенная",
+    "uk": "Особлива",
+    "vi": "Đặc biệt"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "anna",
           "text": "To není odpověď.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist keine Antwort.",
+            "en": "That's not an answer.",
+            "fr": "Ce n'est pas une réponse.",
+            "it": "Questa non è una risposta.",
+            "ja": "それは、答えになっていません。",
+            "ko": "그건 대답이 아니에요.",
+            "pl": "To nie jest odpowiedź.",
+            "pt-BR": "Isso não é resposta.",
+            "ru": "Это не ответ.",
+            "uk": "Це не відповідь.",
+            "vi": "Đó không phải câu trả lời."
+          }
         }
       ],
       "sfx": [],
@@ -69,12 +95,38 @@
         {
           "speaker_id": "psycholog",
           "text": "Nechci vám slibovat něco, co nikdo nemůže zaručit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will Ihnen nichts versprechen, was niemand garantieren kann.",
+            "en": "I don't want to promise you something no one can guarantee.",
+            "fr": "Je ne veux pas vous promettre ce que personne ne peut garantir.",
+            "it": "Non voglio prometterle qualcosa che nessuno può garantire.",
+            "ja": "誰にも保証できないことを、約束したくはありません。",
+            "ko": "아무도 보장할 수 없는 걸 약속하고 싶진 않아요.",
+            "pl": "Nie chcę pani obiecywać czegoś, czego nikt nie może zagwarantować.",
+            "pt-BR": "Não quero prometer a você algo que ninguém pode garantir.",
+            "ru": "Я не хочу обещать вам то, чего никто не может гарантировать.",
+            "uk": "Я не хочу обіцяти вам те, чого ніхто не може гарантувати.",
+            "vi": "Tôi không muốn hứa với cô điều mà không ai có thể bảo đảm."
+          }
         },
         {
           "speaker_id": "psycholog",
           "text": "Uzdravování může být dlouhé. Někdy se člověk vrací zpátky.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gesundwerden kann lange dauern. Manchmal fällt man zurück.",
+            "en": "Getting well can take a long time. Sometimes you slip back.",
+            "fr": "Guérir peut être long. Parfois, on revient en arrière.",
+            "it": "Guarire può richiedere tempo. A volte si torna indietro.",
+            "ja": "回復には、長い時間がかかることがあります。後戻りすることもあります。",
+            "ko": "회복은 오래 걸릴 수 있어요. 때로는 뒤로 돌아가기도 하고요.",
+            "pl": "Zdrowienie może trwać długo. Czasem człowiek się cofa.",
+            "pt-BR": "A recuperação pode ser longa. Às vezes se volta atrás.",
+            "ru": "Выздоровление может быть долгим. Иногда случаются шаги назад.",
+            "uk": "Одужання може бути довгим. Іноді бувають кроки назад.",
+            "vi": "Hồi phục có thể rất lâu. Đôi khi người ta lùi lại."
+          }
         }
       ],
       "sfx": [],
@@ -107,7 +159,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ale nemusíte na to být sama.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber Sie müssen dabei nicht allein sein.",
+            "en": "But you don't have to be alone in it.",
+            "fr": "Mais vous n'êtes pas obligée d'y être seule.",
+            "it": "Ma non deve affrontarlo da sola.",
+            "ja": "でも、ひとりで抱えなくていいんです。",
+            "ko": "하지만 혼자 감당하지 않아도 돼요.",
+            "pl": "Ale nie musi pani być z tym sama.",
+            "pt-BR": "Mas você não precisa enfrentar isso sozinha.",
+            "ru": "Но вам не нужно оставаться с этим одной.",
+            "uk": "Але вам не треба бути з цим самій.",
+            "vi": "Nhưng cô không phải một mình đối mặt với nó."
+          }
         }
       ],
       "sfx": [],
@@ -140,7 +205,20 @@
         {
           "speaker_id": "anna",
           "text": "Já se bojím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe Angst.",
+            "en": "I'm afraid.",
+            "fr": "J'ai peur.",
+            "it": "Ho paura.",
+            "ja": "私、怖いんです。",
+            "ko": "저 무서워요.",
+            "pl": "Ja się boję.",
+            "pt-BR": "Eu tenho medo.",
+            "ru": "Я боюсь.",
+            "uk": "Я боюся.",
+            "vi": "Tôi sợ."
+          }
         }
       ],
       "sfx": [],
@@ -173,7 +251,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Čeho?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wovor?",
+            "en": "Of what?",
+            "fr": "De quoi ?",
+            "it": "Di che cosa?",
+            "ja": "何がですか？",
+            "ko": "뭐가요?",
+            "pl": "Czego?",
+            "pt-BR": "De quê?",
+            "ru": "Чего?",
+            "uk": "Чого?",
+            "vi": "Sợ điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -206,7 +297,20 @@
         {
           "speaker_id": "anna",
           "text": "Že když se uzdravím, nebudu už ničím výjimečná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ich, wenn ich gesund werde, durch nichts mehr außergewöhnlich bin.",
+            "en": "That if I get well, there'll be nothing exceptional about me any more.",
+            "fr": "Qu'une fois guérie, je n'aurai plus rien d'exceptionnel.",
+            "it": "Che, se guarisco, non avrò più niente di eccezionale.",
+            "ja": "治ったら、私にはもう、特別なところが何もなくなるんじゃないかって。",
+            "ko": "나으면 더는 특별한 게 하나도 없는 사람이 될까 봐요.",
+            "pl": "Że kiedy wyzdrowieję, nie będę już niczym wyjątkowa.",
+            "pt-BR": "De que, se eu me curar, não vou mais ser especial em nada.",
+            "ru": "Что, если я выздоровею, во мне больше не будет ничего особенного.",
+            "uk": "Що, коли я одужаю, у мені вже не буде нічого особливого.",
+            "vi": "Rằng nếu tôi khỏi, tôi sẽ chẳng còn gì đặc biệt nữa."
+          }
         }
       ],
       "sfx": [],
@@ -264,7 +368,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A co když jste výjimečná právě tím, že nemusíte být výjimečná?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn Sie gerade dadurch außergewöhnlich sind, dass Sie nicht außergewöhnlich sein müssen?",
+            "en": "And what if you're exceptional precisely because you don't have to be exceptional?",
+            "fr": "Et si vous étiez exceptionnelle justement parce que vous n'avez pas besoin d'être exceptionnelle ?",
+            "it": "E se lei fosse eccezionale proprio perché non deve essere eccezionale?",
+            "ja": "特別でなくていいということこそが、あなたの特別さだとしたら？",
+            "ko": "특별하지 않아도 된다는 바로 그 점이 안나 씨를 특별하게 만든다면요?",
+            "pl": "A jeśli jest pani wyjątkowa właśnie dlatego, że nie musi pani być wyjątkowa?",
+            "pt-BR": "E se você for especial justamente por não precisar ser especial?",
+            "ru": "А что, если вы особенная именно тем, что вам не нужно быть особенной?",
+            "uk": "А що, як ви особлива саме тим, що вам не треба бути особливою?",
+            "vi": "Còn nếu chính việc không cần phải đặc biệt mới làm cô đặc biệt thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -297,7 +414,20 @@
         {
           "speaker_id": "anna",
           "text": "To je hrozně nespravedlivé.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist schrecklich ungerecht.",
+            "en": "That's terribly unfair.",
+            "fr": "C'est terriblement injuste.",
+            "it": "È terribilmente ingiusto.",
+            "ja": "それ、ひどく不公平です。",
+            "ko": "그건 너무 불공평해요.",
+            "pl": "To strasznie niesprawiedliwe.",
+            "pt-BR": "Isso é terrivelmente injusto.",
+            "ru": "Это ужасно несправедливо.",
+            "uk": "Це страшенно несправедливо.",
+            "vi": "Thế thì bất công kinh khủng."
+          }
         }
       ],
       "sfx": [],
@@ -330,7 +460,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was?",
+            "en": "What is?",
+            "fr": "Quoi ?",
+            "it": "Cosa?",
+            "ja": "何がですか？",
+            "ko": "뭐가요?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ru": "Что?",
+            "uk": "Що?",
+            "vi": "Cái gì?"
+          }
         }
       ],
       "sfx": [],
@@ -363,7 +506,20 @@
         {
           "speaker_id": "anna",
           "text": "Celý život se snažím být někým jiným a vy mi teď říkáte, že bych mohla být sama sebou.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mein ganzes Leben versuche ich, jemand anderes zu sein, und jetzt sagen Sie mir, ich könnte ich selbst sein.",
+            "en": "All my life I've tried to be someone else, and now you tell me I could be myself.",
+            "fr": "Toute ma vie, j'essaie d'être quelqu'un d'autre, et maintenant vous me dites que je pourrais être moi-même.",
+            "it": "Tutta la vita cerco di essere qualcun altro e adesso lei mi dice che potrei essere me stessa.",
+            "ja": "ずっと別の誰かになろうとしてきたのに、今さら、私のままでいいかもしれないって言うんですから。",
+            "ko": "평생 다른 사람이 되려고 애써 왔는데, 이제 와서 저 자신이어도 된다고 하시잖아요.",
+            "pl": "Całe życie staram się być kimś innym, a pan mi teraz mówi, że mogłabym być sobą.",
+            "pt-BR": "A vida inteira eu tento ser outra pessoa, e agora você me diz que eu poderia ser eu mesma.",
+            "ru": "Всю жизнь я стараюсь быть кем-то другим, а вы мне теперь говорите, что я могла бы быть собой.",
+            "uk": "Усе життя я намагаюся бути кимось іншим, а ви мені тепер кажете, що я могла б бути собою.",
+            "vi": "Cả đời tôi cố trở thành một người khác, và giờ ông lại bảo tôi có thể là chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -396,7 +552,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Já vám to neříkám. Já se vás na to ptám.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sage es Ihnen nicht. Ich frage Sie.",
+            "en": "I'm not telling you. I'm asking you.",
+            "fr": "Je ne vous le dis pas. Je vous le demande.",
+            "it": "Non glielo dico. Glielo chiedo.",
+            "ja": "言ってはいません。訊いているんです。",
+            "ko": "말하는 게 아니에요. 묻는 거예요.",
+            "pl": "Ja pani tego nie mówię. Ja panią o to pytam.",
+            "pt-BR": "Eu não estou dizendo. Estou perguntando.",
+            "ru": "Я вам этого не говорю. Я вас об этом спрашиваю.",
+            "uk": "Я вам цього не кажу. Я вас про це питаю.",
+            "vi": "Tôi không bảo cô. Tôi đang hỏi cô."
+          }
         }
       ],
       "sfx": [],
@@ -429,7 +598,20 @@
         {
           "speaker_id": "anna",
           "text": "A když nevím jak?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn ich nicht weiß, wie?",
+            "en": "And if I don't know how?",
+            "fr": "Et si je ne sais pas comment ?",
+            "it": "E se non so come?",
+            "ja": "どうすればいいか、わからなかったら？",
+            "ko": "어떻게 하는지 모르면요?",
+            "pl": "A jeśli nie wiem jak?",
+            "pt-BR": "E se eu não souber como?",
+            "ru": "А если я не знаю как?",
+            "uk": "А якщо я не знаю як?",
+            "vi": "Còn nếu tôi không biết làm thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -462,7 +644,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Tak začneme tím, že nebudete muset vědět všechno hned.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann fangen wir damit an, dass Sie nicht alles sofort wissen müssen.",
+            "en": "Then we'll start with this: you won't have to know everything at once.",
+            "fr": "Alors nous commencerons par ceci : vous n'aurez pas à tout savoir tout de suite.",
+            "it": "Allora cominceremo da qui: non dovrà sapere tutto subito.",
+            "ja": "では、すぐに全部わからなくてもいい、というところから始めましょう。",
+            "ko": "그럼 당장 모든 걸 알지 않아도 된다는 것부터 시작하죠.",
+            "pl": "To zaczniemy od tego, że nie będzie pani musiała wiedzieć wszystkiego od razu.",
+            "pt-BR": "Então vamos começar por você não precisar saber tudo agora.",
+            "ru": "Тогда начнём с того, что вам не нужно будет знать всё сразу.",
+            "uk": "Тоді почнемо з того, що вам не доведеться знати все одразу.",
+            "vi": "Thì ta bắt đầu từ chỗ: cô không cần phải biết hết mọi thứ ngay."
+          }
         }
       ],
       "sfx": [],

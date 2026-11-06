@@ -1,5 +1,18 @@
 {
   "title": "Zázračný lék",
+  "title_i18n": {
+    "de": "Wundermittel",
+    "en": "Miracle Cure",
+    "fr": "Remède miracle",
+    "it": "Cura miracolosa",
+    "ja": "特効薬",
+    "ko": "기적의 약",
+    "pl": "Cudowny lek",
+    "pt-BR": "Remédio milagroso",
+    "ru": "Чудодейственное лекарство",
+    "uk": "Чудодійні ліки",
+    "vi": "Thuốc tiên"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A jaká jste?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wie sind Sie?",
+            "en": "And what are you like?",
+            "fr": "Et vous êtes comment ?",
+            "it": "E lei com'è?",
+            "ja": "あなたは、どんな人ですか？",
+            "ko": "안나 씨는 어떤 사람인데요?",
+            "pl": "A jaka pani jest?",
+            "pt-BR": "E como você é?",
+            "ru": "А какая вы?",
+            "uk": "А яка ви?",
+            "vi": "Thế cô là người thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevím. Asi nic moc.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht. Nichts Besonderes.",
+            "en": "I don't know. Not much, probably.",
+            "fr": "Je ne sais pas. Pas grand-chose.",
+            "it": "Non lo so. Niente di che, credo.",
+            "ja": "わかりません。たぶん、大した人間じゃありません。",
+            "ko": "모르겠어요. 별거 아니겠죠.",
+            "pl": "Nie wiem. Chyba nic specjalnego.",
+            "pt-BR": "Não sei. Nada de mais, acho.",
+            "ru": "Не знаю. Наверное, так себе.",
+            "uk": "Не знаю. Мабуть, так собі.",
+            "vi": "Tôi không biết. Chắc chẳng ra gì."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je váš názor, nebo jeho?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ist das Ihre Meinung oder seine?",
+            "en": "Is that your opinion, or his?",
+            "fr": "C'est votre avis, ou le sien ?",
+            "it": "È un'opinione sua o di lui?",
+            "ja": "それは、あなたの意見ですか、それとも彼の？",
+            "ko": "그건 안나 씨 생각이에요, 아니면 그 사람 생각이에요?",
+            "pl": "To pani zdanie czy jego?",
+            "pt-BR": "Essa opinião é sua ou dele?",
+            "ru": "Это ваше мнение или его?",
+            "uk": "Це ваша думка чи його?",
+            "vi": "Đó là ý kiến của cô, hay của anh ta?"
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "anna",
           "text": "Můj.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Meine.",
+            "en": "Mine.",
+            "fr": "Le mien.",
+            "it": "Mia.",
+            "ja": "私のです。",
+            "ko": "제 생각이요.",
+            "pl": "Moje.",
+            "pt-BR": "Minha.",
+            "ru": "Моё.",
+            "uk": "Моя.",
+            "vi": "Của tôi."
+          }
         }
       ],
       "sfx": [],
@@ -168,7 +233,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A věříte mu?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und glauben Sie ihr?",
+            "en": "And do you believe it?",
+            "fr": "Et vous le croyez ?",
+            "it": "E le crede?",
+            "ja": "それを、信じていますか？",
+            "ko": "그 생각을 믿어요?",
+            "pl": "I wierzy mu pani?",
+            "pt-BR": "E você acredita nela?",
+            "ru": "И вы ему верите?",
+            "uk": "І ви їй вірите?",
+            "vi": "Và cô tin nó?"
+          }
         }
       ],
       "sfx": [],
@@ -201,7 +279,20 @@
         {
           "speaker_id": "anna",
           "text": "Víc než všem ostatním.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mehr als allen anderen.",
+            "en": "More than anyone else's.",
+            "fr": "Plus que tous les autres.",
+            "it": "Più che a tutti gli altri.",
+            "ja": "ほかの誰よりも。",
+            "ko": "다른 누구보다도요.",
+            "pl": "Bardziej niż wszystkim innym.",
+            "pt-BR": "Mais do que em todos os outros.",
+            "ru": "Больше, чем всем остальным.",
+            "uk": "Більше, ніж усім іншим.",
+            "vi": "Hơn tất cả những người khác."
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je možná část problému.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist vielleicht ein Teil des Problems.",
+            "en": "That may be part of the problem.",
+            "fr": "C'est peut-être une partie du problème.",
+            "it": "Forse è parte del problema.",
+            "ja": "それが、問題の一部なのかもしれません。",
+            "ko": "그게 문제의 일부일지도 몰라요.",
+            "pl": "To może być część problemu.",
+            "pt-BR": "Talvez isso seja parte do problema.",
+            "ru": "Возможно, в этом часть проблемы.",
+            "uk": "Можливо, у цьому частина проблеми.",
+            "vi": "Có lẽ đó là một phần của vấn đề."
+          }
         }
       ],
       "sfx": [],
@@ -267,7 +371,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy si myslíte, že mě zachrání láska?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Glauben Sie, dass mich die Liebe rettet?",
+            "en": "Do you think love will save me?",
+            "fr": "Vous pensez que l'amour va me sauver ?",
+            "it": "Lei pensa che mi salverà l'amore?",
+            "ja": "愛が私を救う、と思っているんですか？",
+            "ko": "사랑이 절 구해 줄 거라고 생각하세요?",
+            "pl": "Myśli pan, że uratuje mnie miłość?",
+            "pt-BR": "Você acha que o amor vai me salvar?",
+            "ru": "Вы думаете, меня спасёт любовь?",
+            "uk": "Ви думаєте, мене врятує любов?",
+            "vi": "Ông nghĩ tình yêu sẽ cứu tôi à?"
+          }
         }
       ],
       "sfx": [],
@@ -300,7 +417,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
         }
       ],
       "sfx": [],
@@ -333,7 +463,20 @@
         {
           "speaker_id": "anna",
           "text": "Tak co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was dann?",
+            "en": "Then what?",
+            "fr": "Alors quoi ?",
+            "it": "Allora cosa?",
+            "ja": "じゃあ、何ですか？",
+            "ko": "그럼 뭐요?",
+            "pl": "To co?",
+            "pt-BR": "Então o quê?",
+            "ru": "Тогда что?",
+            "uk": "А що тоді?",
+            "vi": "Vậy thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -366,7 +509,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Myslím, že láska není zázračný lék.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich glaube, Liebe ist kein Wundermittel.",
+            "en": "I think love is no miracle cure.",
+            "fr": "Je pense que l'amour n'est pas un remède miracle.",
+            "it": "Penso che l'amore non sia una cura miracolosa.",
+            "ja": "愛は、特効薬ではないと思っています。",
+            "ko": "사랑은 기적의 약이 아니라고 생각해요.",
+            "pl": "Myślę, że miłość nie jest cudownym lekiem.",
+            "pt-BR": "Acho que o amor não é um remédio milagroso.",
+            "ru": "Я думаю, любовь — не чудодейственное лекарство.",
+            "uk": "Я думаю, любов — не чудодійні ліки.",
+            "vi": "Tôi nghĩ tình yêu không phải thuốc tiên."
+          }
         }
       ],
       "sfx": [],
@@ -399,7 +555,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A také si nemyslím, že se můžete uzdravit tím, že se někdo jiný bude snažit milovat vás dostatečně za vás.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und ich glaube auch nicht, dass Sie gesund werden, indem jemand anders versucht, Sie an Ihrer Stelle genug zu lieben.",
+            "en": "Nor do I think you can heal by having someone else try to love you enough on your behalf.",
+            "fr": "Et je ne crois pas non plus que vous puissiez guérir parce que quelqu'un d'autre s'efforcera de vous aimer assez à votre place.",
+            "it": "E non penso nemmeno che lei possa guarire perché qualcun altro si sforza di amarla abbastanza al posto suo.",
+            "ja": "そして、誰かがあなたの代わりに、十分にあなたを愛そうと努力することで、あなたが治るとも思いません。",
+            "ko": "그리고 다른 누군가가 안나 씨 대신 안나 씨를 충분히 사랑하려고 애쓴다고 해서 나을 수 있다고도 생각하지 않아요.",
+            "pl": "I nie sądzę też, że może pani wyzdrowieć dzięki temu, że ktoś inny będzie się starał kochać panią wystarczająco za panią.",
+            "pt-BR": "E também não acho que você possa se curar porque outra pessoa vai se esforçar para amar você o bastante no seu lugar.",
+            "ru": "И не думаю, что вы выздоровеете оттого, что кто-то другой будет стараться любить вас достаточно за вас.",
+            "uk": "І я також не думаю, що ви можете одужати через те, що хтось інший намагатиметься любити вас достатньо замість вас.",
+            "vi": "Và tôi cũng không nghĩ cô có thể lành bệnh nhờ một người khác cố gắng yêu cô đủ nhiều thay cho cô."
+          }
         }
       ],
       "sfx": [],
@@ -432,7 +601,20 @@
         {
           "speaker_id": "anna",
           "text": "Takže se musím naučit mít ráda sama sebe.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Also muss ich lernen, mich selbst zu lieben.",
+            "en": "So I have to learn to love myself.",
+            "fr": "Donc je dois apprendre à m'aimer moi-même.",
+            "it": "Quindi devo imparare a volermi bene.",
+            "ja": "つまり、自分を好きになることを学ばないといけないんですね。",
+            "ko": "그러니까 제가 저 자신을 사랑하는 법을 배워야 한다는 거네요.",
+            "pl": "Czyli muszę nauczyć się kochać samą siebie.",
+            "pt-BR": "Então eu preciso aprender a me amar.",
+            "ru": "Значит, я должна научиться любить себя.",
+            "uk": "Отже, я маю навчитися любити себе.",
+            "vi": "Vậy là tôi phải học cách yêu bản thân."
+          }
         }
       ],
       "sfx": [],

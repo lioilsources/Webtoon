@@ -1,5 +1,18 @@
 {
   "title": "Zhasínající město",
+  "title_i18n": {
+    "de": "Die verlöschende Stadt",
+    "en": "The Fading City",
+    "fr": "La ville qui s'éteint",
+    "it": "La città che si spegne",
+    "ja": "きえていく 町",
+    "ko": "꺼져 가는 도시",
+    "pl": "Gasnące miasto",
+    "pt-BR": "A cidade que se apaga",
+    "ru": "Гаснущий город",
+    "uk": "Місто, що згасає",
+    "vi": "Thành phố tắt dần"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -17,7 +30,20 @@
         {
           "speaker_id": "",
           "text": "Město duchů zhasíná.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Geisterstadt verlischt.",
+            "en": "The City of Ghosts is fading.",
+            "fr": "La Cité des Fantômes s'éteint.",
+            "it": "La Città dei Fantasmi si spegne.",
+            "ja": "おばけの町が きえていく。",
+            "ko": "유령의 도시가 꺼져 가.",
+            "pl": "Miasto Duchów gaśnie.",
+            "pt-BR": "A Cidade dos Fantasmas está se apagando.",
+            "ru": "Город призраков гаснет.",
+            "uk": "Місто привидів згасає.",
+            "vi": "Thành phố Ma đang tắt dần."
+          }
         }
       ],
       "sfx": [],
@@ -48,7 +74,20 @@
         {
           "speaker_id": "sara",
           "text": "Koruna míří oběma směry.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Krone zeigt in beide Richtungen.",
+            "en": "The crown points both ways.",
+            "fr": "La couronne montre les deux chemins.",
+            "it": "La corona indica entrambe le strade.",
+            "ja": "かんむりは りょうほうを さしてる。",
+            "ko": "왕관이 양쪽을 다 가리켜.",
+            "pl": "Korona wskazuje w obie strony.",
+            "pt-BR": "A coroa aponta para os dois lados.",
+            "ru": "Корона указывает в обе стороны.",
+            "uk": "Корона вказує в обидва боки.",
+            "vi": "Vương miện chỉ về cả hai hướng."
+          }
         }
       ],
       "sfx": [],
@@ -85,12 +124,38 @@
         {
           "speaker_id": "white_spirit",
           "text": "Ve Zvonici zapomnění chodí ti, kdo chtějí, aby se na ně zapomnělo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "In den Glockenturm des Vergessens geht, wer vergessen werden will.",
+            "en": "Those who want to be forgotten go to the Bell Tower of Forgetting.",
+            "fr": "Au Clocher de l'Oubli vont ceux qui veulent être oubliés.",
+            "it": "Al Campanile dell'Oblio va chi vuole essere dimenticato.",
+            "ja": "わすれの かねの塔には、わすれられたい ものが いくんだ。",
+            "ko": "망각의 종탑에는 잊히고 싶은 이들이 가.",
+            "pl": "Do Dzwonnicy Zapomnienia chodzą ci, którzy chcą być zapomniani.",
+            "pt-BR": "Ao Campanário do Esquecimento vai quem quer ser esquecido.",
+            "ru": "В Колокольню забвения уходят те, кто хочет, чтобы их забыли.",
+            "uk": "До Дзвіниці забуття йдуть ті, хто хоче, щоб їх забули.",
+            "vi": "Ai muốn bị lãng quên thì đến Tháp Chuông Lãng Quên."
+          }
         },
         {
           "speaker_id": "murr",
           "text": "Ne. U Jezera vzpomínek chodí ti, kdo si chtějí vzpomenout.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. An den See der Erinnerungen geht, wer sich erinnern will.",
+            "en": "No. Those who want to remember go to the Lake of Memories.",
+            "fr": "Non. Au Lac des Souvenirs vont ceux qui veulent se souvenir.",
+            "it": "No. Al Lago dei Ricordi va chi vuole ricordare.",
+            "ja": "ちがう。おもいでの湖には、おもいだしたい ものが いくんだ。",
+            "ko": "아니야. 추억의 호수에는 기억하고 싶은 이들이 가.",
+            "pl": "Nie. Nad Jezioro Wspomnień chodzą ci, którzy chcą pamiętać.",
+            "pt-BR": "Não. Ao Lago das Lembranças vai quem quer lembrar.",
+            "ru": "Нет. К Озеру воспоминаний идут те, кто хочет вспомнить.",
+            "uk": "Ні. До Озера спогадів ідуть ті, хто хоче згадати.",
+            "vi": "Không. Ai muốn nhớ lại thì đến Hồ Ký Ức."
+          }
         }
       ],
       "sfx": [],
@@ -116,7 +181,20 @@
         {
           "speaker_id": "sara",
           "text": "Stínová bouře se blíží.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein Schattensturm zieht auf.",
+            "en": "A shadow storm is coming.",
+            "fr": "Une tempête d'ombres approche.",
+            "it": "Arriva una tempesta d'ombre.",
+            "ja": "かげの あらしが くる。",
+            "ko": "그림자 폭풍이 다가와.",
+            "pl": "Nadciąga burza cieni.",
+            "pt-BR": "Uma tempestade de sombras está chegando.",
+            "ru": "Приближается буря теней.",
+            "uk": "Наближається буря тіней.",
+            "vi": "Cơn bão bóng tối đang đến gần."
+          }
         }
       ],
       "sfx": [],
@@ -155,7 +233,20 @@
         {
           "speaker_id": "sara",
           "text": "Musím se rozhodnout.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich muss mich entscheiden.",
+            "en": "I have to decide.",
+            "fr": "Je dois choisir.",
+            "it": "Devo decidere.",
+            "ja": "きめなくちゃ。",
+            "ko": "결정해야 해.",
+            "pl": "Muszę zdecydować.",
+            "pt-BR": "Preciso decidir.",
+            "ru": "Я должна решить.",
+            "uk": "Я маю вирішити.",
+            "vi": "Mình phải quyết định."
+          }
         }
       ],
       "sfx": [],
@@ -166,279 +257,6 @@
           0.6273,
           0.5798,
           0.6658
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.4925,
-          0.5603,
-          0.5205,
-          0.5981
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.5729,
-          0.5119,
-          0.6264,
-          0.5857
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.607,
-          0.3511,
-          0.6594,
-          0.4305
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.4292,
-          0.2981,
-          0.4806,
-          0.3682
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.4905,
-          0.4004,
-          0.5532,
-          0.4926
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.4615,
-          0.3662,
-          0.5291,
-          0.4615
-        ]
-      ]
-    },
-    {
-      "shot": "wide",
-      "location_id": "l_ghost_city",
-      "characters": [
-        {
-          "id": "sara"
-        },
-        {
-          "id": "murr"
-        },
-        {
-          "id": "white_spirit"
-        }
-      ],
-      "visual_tags": [
-        "standing together",
-        "looking at storm",
-        "dark clouds",
-        "wind",
-        "determined"
-      ],
-      "bubbles": [
-        {
-          "speaker_id": "sara",
-          "text": "Musím se rozhodnout.",
-          "kind": "speech"
-        }
-      ],
-      "sfx": [],
-      "gap_after": "large",
-      "faces": [
-        [
-          0.4861,
-          0.5262,
-          0.5302,
-          0.5908
         ]
       ]
     }

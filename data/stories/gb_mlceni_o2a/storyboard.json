@@ -1,5 +1,18 @@
 {
   "title": "Tělo",
+  "title_i18n": {
+    "de": "Der Körper",
+    "en": "The Body",
+    "fr": "Le corps",
+    "it": "Il corpo",
+    "ja": "体",
+    "ko": "몸",
+    "pl": "Ciało",
+    "pt-BR": "O corpo",
+    "ru": "Тело",
+    "uk": "Тіло",
+    "vi": "Cơ thể"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "anna",
           "text": "Nemusíte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie müssen nicht.",
+            "en": "You don't have to.",
+            "fr": "Ce n'est pas la peine.",
+            "it": "Non deve.",
+            "ja": "しなくていいですよ。",
+            "ko": "안 그러셔도 돼요.",
+            "pl": "Nie musi pan.",
+            "pt-BR": "Não precisa.",
+            "ru": "Не надо.",
+            "uk": "Не треба.",
+            "vi": "Ông không cần đâu."
+          }
         }
       ],
       "sfx": [],
@@ -69,7 +95,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was?",
+            "en": "What?",
+            "fr": "Quoi ?",
+            "it": "Cosa?",
+            "ja": "何をですか？",
+            "ko": "뭘요?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ru": "Что?",
+            "uk": "Що?",
+            "vi": "Không cần gì?"
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "anna",
           "text": "Nalévat mi vodu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir Wasser einschenken.",
+            "en": "Pour me water.",
+            "fr": "Me servir de l'eau.",
+            "it": "Versarmi l'acqua.",
+            "ja": "お水を注ぐことです。",
+            "ko": "물 따라 주시는 거요.",
+            "pl": "Nalewać mi wody.",
+            "pt-BR": "Me servir água.",
+            "ru": "Наливать мне воду.",
+            "uk": "Наливати мені воду.",
+            "vi": "Rót nước cho tôi."
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Dobře.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gut.",
+            "en": "All right.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "わかりました。",
+            "ko": "알겠어요.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tudo bem.",
+            "ru": "Хорошо.",
+            "uk": "Добре.",
+            "vi": "Được rồi."
+          }
         }
       ],
       "sfx": [],
@@ -183,7 +248,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy si myslíte, že když mi nabídnete vodu, něco se změní?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Glauben Sie, wenn Sie mir Wasser anbieten, ändert sich etwas?",
+            "en": "Do you think offering me water will change anything?",
+            "fr": "Vous croyez qu'en m'offrant de l'eau, quelque chose va changer ?",
+            "it": "Pensa che se mi offre dell'acqua cambierà qualcosa?",
+            "ja": "水を勧めれば、何かが変わると思ってるんですか？",
+            "ko": "물을 권하면 뭔가 달라질 거라고 생각하세요?",
+            "pl": "Myśli pan, że jak zaproponuje mi pan wodę, coś się zmieni?",
+            "pt-BR": "Você acha que, se me oferecer água, alguma coisa vai mudar?",
+            "ru": "Вы думаете, если предложите мне воды, что-то изменится?",
+            "uk": "Ви думаєте, якщо запропонуєте мені води, щось зміниться?",
+            "vi": "Ông nghĩ mời tôi nước thì sẽ có gì thay đổi à?"
+          }
         }
       ],
       "sfx": [],
@@ -216,7 +294,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein.",
+            "en": "No.",
+            "fr": "Non.",
+            "it": "No.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ru": "Нет.",
+            "uk": "Ні.",
+            "vi": "Không."
+          }
         }
       ],
       "sfx": [],
@@ -249,7 +340,20 @@
         {
           "speaker_id": "anna",
           "text": "Tak proč to děláte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum tun Sie es dann?",
+            "en": "Then why do you do it?",
+            "fr": "Alors pourquoi le faites-vous ?",
+            "it": "Allora perché lo fa?",
+            "ja": "じゃあ、なぜそうするんですか？",
+            "ko": "그럼 왜 그러세요?",
+            "pl": "To po co pan to robi?",
+            "pt-BR": "Então por que faz isso?",
+            "ru": "Тогда зачем вы это делаете?",
+            "uk": "Тоді навіщо ви це робите?",
+            "vi": "Vậy sao ông làm thế?"
+          }
         }
       ],
       "sfx": [],
@@ -282,7 +386,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Protože mám žízeň a napadlo mě, že byste také mohla mít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich Durst habe und mir dachte, Sie hätten vielleicht auch welchen.",
+            "en": "Because I'm thirsty, and it occurred to me you might be too.",
+            "fr": "Parce que j'ai soif et je me suis dit que vous aussi, peut-être.",
+            "it": "Perché ho sete e ho pensato che potesse averne anche lei.",
+            "ja": "私が喉が渇いていて、あなたもそうかもしれないと思ったからです。",
+            "ko": "제가 목이 말라서요. 안나 씨도 그럴지 모른다고 생각했어요.",
+            "pl": "Bo chce mi się pić i pomyślałem, że pani też może.",
+            "pt-BR": "Porque estou com sede e pensei que você também pudesse estar.",
+            "ru": "Потому что мне хочется пить, и я подумал, что вам, может быть, тоже.",
+            "uk": "Бо мені хочеться пити, і я подумав, що вам, може, теж.",
+            "vi": "Vì tôi khát, và tôi nghĩ có thể cô cũng khát."
+          }
         }
       ],
       "sfx": [],
@@ -315,7 +432,20 @@
         {
           "speaker_id": "anna",
           "text": "Já nemám žízeň.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich habe keinen Durst.",
+            "en": "I'm not thirsty.",
+            "fr": "Je n'ai pas soif.",
+            "it": "Io non ho sete.",
+            "ja": "私は、渇いていません。",
+            "ko": "전 목 안 말라요.",
+            "pl": "Mnie się nie chce pić.",
+            "pt-BR": "Eu não estou com sede.",
+            "ru": "Мне не хочется пить.",
+            "uk": "Мені не хочеться пити.",
+            "vi": "Tôi không khát."
+          }
         }
       ],
       "sfx": [],
@@ -348,7 +478,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Dobře.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gut.",
+            "en": "All right.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "わかりました。",
+            "ko": "알겠어요.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tudo bem.",
+            "ru": "Хорошо.",
+            "uk": "Добре.",
+            "vi": "Được rồi."
+          }
         }
       ],
       "sfx": [],
@@ -399,7 +542,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy se pořád tak snadno vzdáváte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Geben Sie immer so leicht auf?",
+            "en": "Do you always give up so easily?",
+            "fr": "Vous abandonnez toujours aussi facilement ?",
+            "it": "Si arrende sempre così facilmente?",
+            "ja": "いつもそんなに簡単に諦めるんですか？",
+            "ko": "늘 그렇게 쉽게 포기하세요?",
+            "pl": "Pan się zawsze tak łatwo poddaje?",
+            "pt-BR": "Você sempre desiste assim tão fácil?",
+            "ru": "Вы всегда так легко сдаётесь?",
+            "uk": "Ви завжди так легко здаєтеся?",
+            "vi": "Ông lúc nào cũng dễ bỏ cuộc vậy sao?"
+          }
         }
       ],
       "sfx": [],
@@ -432,7 +588,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nechci vás nutit pít vodu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will Sie nicht zwingen, Wasser zu trinken.",
+            "en": "I don't want to force you to drink water.",
+            "fr": "Je ne veux pas vous forcer à boire de l'eau.",
+            "it": "Non voglio costringerla a bere l'acqua.",
+            "ja": "水を飲むことを、無理強いしたくはありません。",
+            "ko": "물을 억지로 마시게 하고 싶진 않아요.",
+            "pl": "Nie chcę pani zmuszać do picia wody.",
+            "pt-BR": "Não quero forçar você a beber água.",
+            "ru": "Я не хочу заставлять вас пить воду.",
+            "uk": "Я не хочу змушувати вас пити воду.",
+            "vi": "Tôi không muốn ép cô uống nước."
+          }
         }
       ],
       "sfx": [],
@@ -465,7 +634,20 @@
         {
           "speaker_id": "anna",
           "text": "Ale chcete mě nutit jíst.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber Sie wollen mich zwingen zu essen.",
+            "en": "But you want to force me to eat.",
+            "fr": "Mais vous voulez me forcer à manger.",
+            "it": "Ma vuole costringermi a mangiare.",
+            "ja": "でも、食べることは無理強いしたいんでしょう。",
+            "ko": "하지만 먹는 건 억지로 시키고 싶으시잖아요.",
+            "pl": "Ale chce mnie pan zmuszać do jedzenia.",
+            "pt-BR": "Mas quer me forçar a comer.",
+            "ru": "Но хотите заставить меня есть.",
+            "uk": "Але хочете змусити мене їсти.",
+            "vi": "Nhưng ông muốn ép tôi ăn."
+          }
         }
       ],
       "sfx": [],

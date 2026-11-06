@@ -1,5 +1,18 @@
 {
   "title": "Hlad po lásce",
+  "title_i18n": {
+    "de": "Hunger nach Liebe",
+    "en": "Hunger for Love",
+    "fr": "Faim d'amour",
+    "it": "Fame d'amore",
+    "ja": "愛への飢え",
+    "ko": "사랑에 대한 허기",
+    "pl": "Głód miłości",
+    "pt-BR": "Fome de amor",
+    "ru": "Голод по любви",
+    "uk": "Голод за любов'ю",
+    "vi": "Cơn đói yêu thương"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -50,7 +63,20 @@
         {
           "speaker_id": "anna",
           "text": "Měla jsem přítele.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hatte einen Freund.",
+            "en": "I had a boyfriend.",
+            "fr": "J'avais un copain.",
+            "it": "Avevo un ragazzo.",
+            "ja": "恋人がいました。",
+            "ko": "남자 친구가 있었어요.",
+            "pl": "Miałam chłopaka.",
+            "pt-BR": "Eu tive um namorado.",
+            "ru": "У меня был парень.",
+            "uk": "У мене був хлопець.",
+            "vi": "Tôi từng có bạn trai."
+          }
         }
       ],
       "sfx": [],
@@ -83,7 +109,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Vím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知っています。",
+            "ko": "알아요.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Знаю.",
+            "uk": "Знаю.",
+            "vi": "Tôi biết."
+          }
         }
       ],
       "sfx": [],
@@ -116,7 +155,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevíte, jaký byl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie wissen nicht, wie er war.",
+            "en": "You don't know what he was like.",
+            "fr": "Vous ne savez pas comment il était.",
+            "it": "Non sa com'era.",
+            "ja": "どんな人だったかは、知らないでしょう。",
+            "ko": "어떤 사람이었는지는 모르시잖아요.",
+            "pl": "Nie wie pan, jaki był.",
+            "pt-BR": "Você não sabe como ele era.",
+            "ru": "Вы не знаете, какой он был.",
+            "uk": "Ви не знаєте, яким він був.",
+            "vi": "Ông không biết anh ấy là người thế nào."
+          }
         }
       ],
       "sfx": [],
@@ -149,7 +201,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To je pravda.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das stimmt.",
+            "en": "That's true.",
+            "fr": "C'est vrai.",
+            "it": "È vero.",
+            "ja": "そのとおりです。",
+            "ko": "맞아요.",
+            "pl": "To prawda.",
+            "pt-BR": "É verdade.",
+            "ru": "Это правда.",
+            "uk": "Це правда.",
+            "vi": "Đúng vậy."
+          }
         }
       ],
       "sfx": [],
@@ -182,7 +247,20 @@
         {
           "speaker_id": "anna",
           "text": "Byl hodný. Někdy až moc.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Er war lieb. Manchmal zu lieb.",
+            "en": "He was kind. Sometimes too kind.",
+            "fr": "Il était gentil. Parfois trop.",
+            "it": "Era buono. A volte fin troppo.",
+            "ja": "優しい人でした。ときどき、優しすぎるくらい。",
+            "ko": "착했어요. 가끔은 너무.",
+            "pl": "Był dobry. Czasem aż za bardzo.",
+            "pt-BR": "Ele era bom. Às vezes, até demais.",
+            "ru": "Он был добрый. Иногда даже слишком.",
+            "uk": "Він був добрий. Іноді аж надто.",
+            "vi": "Anh ấy tốt. Đôi khi tốt quá."
+          }
         }
       ],
       "sfx": [],
@@ -215,7 +293,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A to vám vadilo?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und das hat Sie gestört?",
+            "en": "And that bothered you?",
+            "fr": "Et ça vous gênait ?",
+            "it": "E questo le dava fastidio?",
+            "ja": "それが、嫌だったんですか？",
+            "ko": "그게 싫었어요?",
+            "pl": "I to pani przeszkadzało?",
+            "pt-BR": "E isso incomodava você?",
+            "ru": "И это вам мешало?",
+            "uk": "І це вам заважало?",
+            "vi": "Và điều đó làm cô khó chịu?"
+          }
         }
       ],
       "sfx": [],
@@ -248,7 +339,20 @@
         {
           "speaker_id": "anna",
           "text": "Nevěděla jsem, co s tím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wusste nicht, wohin damit.",
+            "en": "I didn't know what to do with it.",
+            "fr": "Je ne savais pas quoi en faire.",
+            "it": "Non sapevo che farmene.",
+            "ja": "どうしていいか、わかりませんでした。",
+            "ko": "그걸 어떻게 해야 할지 몰랐어요.",
+            "pl": "Nie wiedziałam, co z tym zrobić.",
+            "pt-BR": "Eu não sabia o que fazer com isso.",
+            "ru": "Я не знала, что с этим делать.",
+            "uk": "Я не знала, що з цим робити.",
+            "vi": "Tôi không biết phải làm gì với nó."
+          }
         }
       ],
       "sfx": [],
@@ -281,7 +385,20 @@
         {
           "speaker_id": "psycholog",
           "text": "S čím?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Womit?",
+            "en": "With what?",
+            "fr": "De quoi ?",
+            "it": "Di che cosa?",
+            "ja": "何を、ですか？",
+            "ko": "뭘요?",
+            "pl": "Z czym?",
+            "pt-BR": "Com o quê?",
+            "ru": "С чем?",
+            "uk": "З чим?",
+            "vi": "Với cái gì?"
+          }
         }
       ],
       "sfx": [],
@@ -314,7 +431,20 @@
         {
           "speaker_id": "anna",
           "text": "Když byl zlý, mohla jsem ho nenávidět. Když byl hodný, musela jsem se dívat na sebe.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn er gemein war, konnte ich ihn hassen. Wenn er lieb war, musste ich mich selbst ansehen.",
+            "en": "When he was cruel, I could hate him. When he was kind, I had to look at myself.",
+            "fr": "Quand il était méchant, je pouvais le détester. Quand il était gentil, je devais me regarder.",
+            "it": "Quando era cattivo, potevo odiarlo. Quando era buono, dovevo guardare me stessa.",
+            "ja": "意地悪なときは、憎めました。優しいときは、自分を見なければなりませんでした。",
+            "ko": "그가 못되게 굴면 미워할 수 있었어요. 잘해 주면, 저 자신을 봐야 했어요.",
+            "pl": "Kiedy był zły, mogłam go nienawidzić. Kiedy był dobry, musiałam patrzeć na siebie.",
+            "pt-BR": "Quando ele era mau, eu podia odiá-lo. Quando era bom, eu tinha que olhar para mim.",
+            "ru": "Когда он был злым, я могла его ненавидеть. Когда был добрым, мне приходилось смотреть на себя.",
+            "uk": "Коли він був злим, я могла його ненавидіти. Коли був добрим, мені доводилося дивитися на себе.",
+            "vi": "Khi anh ấy tệ, tôi có thể ghét anh ấy. Khi anh ấy tốt, tôi phải nhìn vào chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -365,7 +495,20 @@
         {
           "speaker_id": "anna",
           "text": "Chtěla jsem, aby mě miloval, ale nesnesla jsem, když se mě dotýkal.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte, dass er mich liebt, aber ich ertrug es nicht, wenn er mich berührte.",
+            "en": "I wanted him to love me, but I couldn't bear it when he touched me.",
+            "fr": "Je voulais qu'il m'aime, mais je ne supportais pas qu'il me touche.",
+            "it": "Volevo che mi amasse, ma non sopportavo che mi toccasse.",
+            "ja": "愛してほしかった。でも、触れられるのは耐えられませんでした。",
+            "ko": "그가 절 사랑해 주길 바랐지만, 그가 만지는 건 견딜 수 없었어요.",
+            "pl": "Chciałam, żeby mnie kochał, ale nie znosiłam, kiedy mnie dotykał.",
+            "pt-BR": "Eu queria que ele me amasse, mas não suportava quando me tocava.",
+            "ru": "Я хотела, чтобы он меня любил, но не выносила, когда он ко мне прикасался.",
+            "uk": "Я хотіла, щоб він мене кохав, але не терпіла, коли він мене торкався.",
+            "vi": "Tôi muốn anh ấy yêu tôi, nhưng không chịu nổi khi anh ấy chạm vào tôi."
+          }
         }
       ],
       "sfx": [],
@@ -398,7 +541,20 @@
         {
           "speaker_id": "anna",
           "text": "Chtěla jsem, aby se mnou byl, ale nesnesla jsem, když se na mě díval.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte, dass er bei mir ist, aber ich ertrug es nicht, wenn er mich ansah.",
+            "en": "I wanted him with me, but I couldn't bear it when he looked at me.",
+            "fr": "Je voulais qu'il soit avec moi, mais je ne supportais pas qu'il me regarde.",
+            "it": "Volevo che stesse con me, ma non sopportavo che mi guardasse.",
+            "ja": "そばにいてほしかった。でも、見られるのは耐えられませんでした。",
+            "ko": "곁에 있어 주길 바랐지만, 그가 절 보는 건 견딜 수 없었어요.",
+            "pl": "Chciałam, żeby ze mną był, ale nie znosiłam, kiedy na mnie patrzył.",
+            "pt-BR": "Eu queria que ele estivesse comigo, mas não suportava quando me olhava.",
+            "ru": "Я хотела, чтобы он был со мной, но не выносила, когда он на меня смотрел.",
+            "uk": "Я хотіла, щоб він був зі мною, але не терпіла, коли він на мене дивився.",
+            "vi": "Tôi muốn anh ấy ở bên tôi, nhưng không chịu nổi khi anh ấy nhìn tôi."
+          }
         }
       ],
       "sfx": [],
@@ -431,7 +587,20 @@
         {
           "speaker_id": "anna",
           "text": "Chtěla jsem, aby mě objal, ale bála jsem se, že mě ucítí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte, dass er mich umarmt, aber ich hatte Angst, er würde mich spüren.",
+            "en": "I wanted him to hold me, but I was afraid he would sense me.",
+            "fr": "Je voulais qu'il me prenne dans ses bras, mais j'avais peur qu'il me sente.",
+            "it": "Volevo che mi abbracciasse, ma avevo paura che mi sentisse.",
+            "ja": "抱きしめてほしかった。でも、感じ取られるのが怖かったんです。",
+            "ko": "안아 주길 바랐지만, 그가 절 느낄까 봐 무서웠어요.",
+            "pl": "Chciałam, żeby mnie przytulił, ale bałam się, że mnie poczuje.",
+            "pt-BR": "Eu queria que ele me abraçasse, mas tinha medo de que ele me sentisse.",
+            "ru": "Я хотела, чтобы он меня обнял, но боялась, что он меня почувствует.",
+            "uk": "Я хотіла, щоб він мене обійняв, але боялася, що він мене відчує.",
+            "vi": "Tôi muốn anh ấy ôm tôi, nhưng lại sợ anh ấy cảm nhận được tôi."
+          }
         }
       ],
       "sfx": [],
@@ -464,7 +633,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Čeho jste se bála?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wovor hatten Sie Angst?",
+            "en": "What were you afraid of?",
+            "fr": "De quoi aviez-vous peur ?",
+            "it": "Di che cosa aveva paura?",
+            "ja": "何が怖かったんですか？",
+            "ko": "뭐가 무서웠어요?",
+            "pl": "Czego się pani bała?",
+            "pt-BR": "Do que você tinha medo?",
+            "ru": "Чего вы боялись?",
+            "uk": "Чого ви боялися?",
+            "vi": "Cô sợ điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -497,7 +679,20 @@
         {
           "speaker_id": "anna",
           "text": "Že ucítí, jaká jsem.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass er spürt, wie ich bin.",
+            "en": "That he would sense what I'm like.",
+            "fr": "Qu'il sente ce que je suis.",
+            "it": "Che sentisse come sono.",
+            "ja": "私がどんな人間か、感じ取られることが。",
+            "ko": "제가 어떤 사람인지 느낄까 봐요.",
+            "pl": "Że poczuje, jaka jestem.",
+            "pt-BR": "De que ele sentisse como eu sou.",
+            "ru": "Что он почувствует, какая я.",
+            "uk": "Що він відчує, яка я.",
+            "vi": "Sợ anh ấy cảm nhận được tôi là người thế nào."
+          }
         }
       ],
       "sfx": [],

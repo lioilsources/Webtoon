@@ -1,5 +1,18 @@
 {
   "title": "Světlo se vrací",
+  "title_i18n": {
+    "de": "Das Licht kehrt zurück",
+    "en": "The Light Returns",
+    "fr": "La lumière revient",
+    "it": "La luce ritorna",
+    "ja": "ひかりが もどる",
+    "ko": "빛이 돌아오다",
+    "pl": "Światło wraca",
+    "pt-BR": "A luz volta",
+    "ru": "Свет возвращается",
+    "uk": "Світло повертається",
+    "vi": "Ánh sáng trở lại"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -15,7 +28,20 @@
         {
           "speaker_id": "",
           "text": "Město duchů zhasíná.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Geisterstadt verlischt.",
+            "en": "The City of Ghosts is fading.",
+            "fr": "La Cité des Fantômes s'éteint.",
+            "it": "La Città dei Fantasmi si spegne.",
+            "ja": "おばけの町が きえていく。",
+            "ko": "유령의 도시가 꺼져 가.",
+            "pl": "Miasto Duchów gaśnie.",
+            "pt-BR": "A Cidade dos Fantasmas está se apagando.",
+            "ru": "Город призраков гаснет.",
+            "uk": "Місто привидів згасає.",
+            "vi": "Thành phố Ma đang tắt dần."
+          }
         }
       ],
       "sfx": [],
@@ -46,7 +72,20 @@
         {
           "speaker_id": "sara",
           "text": "Tady, Královno.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Hier, Königin.",
+            "en": "Here, Queen.",
+            "fr": "Tiens, ma Reine.",
+            "it": "Ecco, Regina.",
+            "ja": "はい、女王さま。",
+            "ko": "여기요, 여왕님.",
+            "pl": "Proszę, Królowo.",
+            "pt-BR": "Aqui, Rainha.",
+            "ru": "Вот, Королева.",
+            "uk": "Ось, Королево.",
+            "vi": "Đây, thưa Nữ hoàng."
+          }
         }
       ],
       "sfx": [],
@@ -166,7 +205,20 @@
         {
           "speaker_id": "queen",
           "text": "Přijdeš zase? Každý úplněk?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Kommst du wieder? Jeden Vollmond?",
+            "en": "Will you come again? Every full moon?",
+            "fr": "Tu reviendras ? À chaque pleine lune ?",
+            "it": "Tornerai? A ogni luna piena?",
+            "ja": "また きてくれる? まんげつの たびに?",
+            "ko": "또 와 줄래? 보름달이 뜰 때마다?",
+            "pl": "Przyjdziesz znowu? W każdą pełnię?",
+            "pt-BR": "Você volta? A cada lua cheia?",
+            "ru": "Ты придёшь снова? Каждое полнолуние?",
+            "uk": "Ти прийдеш знову? Кожної повні?",
+            "vi": "Cháu sẽ lại đến chứ? Mỗi đêm trăng tròn?"
+          }
         }
       ],
       "sfx": [],

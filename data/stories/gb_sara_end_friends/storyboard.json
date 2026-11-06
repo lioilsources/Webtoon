@@ -1,5 +1,18 @@
 {
   "title": "Kočka, která se vrátila",
+  "title_i18n": {
+    "de": "Der Kater, der zurückkam",
+    "en": "The Cat Who Came Back",
+    "fr": "Le chat qui est revenu",
+    "it": "Il gatto che tornò",
+    "ja": "かえってきた ねこ",
+    "ko": "돌아온 고양이",
+    "pl": "Kot, który wrócił",
+    "pt-BR": "O gato que voltou",
+    "ru": "Кот, который вернулся",
+    "uk": "Кіт, який повернувся",
+    "vi": "Chú mèo trở về"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Trůnní sál Města duchů.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Der Thronsaal der Geisterstadt.",
+            "en": "The throne hall of the City of Ghosts.",
+            "fr": "La salle du trône de la Cité des Fantômes.",
+            "it": "La sala del trono della Città dei Fantasmi.",
+            "ja": "おばけの町の 王座の間。",
+            "ko": "유령의 도시의 왕좌의 방.",
+            "pl": "Sala tronowa Miasta Duchów.",
+            "pt-BR": "O salão do trono da Cidade dos Fantasmas.",
+            "ru": "Тронный зал Города призраков.",
+            "uk": "Тронна зала Міста привидів.",
+            "vi": "Phòng ngai vàng của Thành phố Ma."
+          }
         }
       ],
       "sfx": [],
@@ -47,7 +73,20 @@
         {
           "speaker_id": "sara",
           "text": "Murr tě nikdy neopustil. Ztratil se.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Murr hat dich nie verlassen. Er hat sich verirrt.",
+            "en": "Murr never left you. He got lost.",
+            "fr": "Murr ne t'a jamais quittée. Il s'était perdu.",
+            "it": "Murr non ti ha mai lasciata. Si era perso.",
+            "ja": "ムルは あなたを すてたりしてない。まいごに なってたの。",
+            "ko": "무르는 당신을 떠난 적 없어요. 길을 잃었던 거예요.",
+            "pl": "Murr nigdy cię nie opuścił. Zgubił się.",
+            "pt-BR": "Murr nunca te abandonou. Ele se perdeu.",
+            "ru": "Мурр никогда тебя не бросал. Он потерялся.",
+            "uk": "Мурр ніколи тебе не покидав. Він загубився.",
+            "vi": "Murr chưa bao giờ bỏ người. Cậu ấy chỉ bị lạc."
+          }
         }
       ],
       "sfx": [],
@@ -150,7 +189,20 @@
         {
           "speaker_id": "queen",
           "text": "Měla jsem kamarádku a nevěděla jsem to.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hatte eine Freundin und wusste es nicht.",
+            "en": "I had a friend and I didn't even know it.",
+            "fr": "J'avais une amie et je ne le savais pas.",
+            "it": "Avevo un'amica e non lo sapevo.",
+            "ja": "わたしには ともだちが いたのね。しらなかった。",
+            "ko": "나에게 친구가 있었는데, 몰랐구나.",
+            "pl": "Miałam przyjaciółkę i nawet o tym nie wiedziałam.",
+            "pt-BR": "Eu tinha uma amiga e nem sabia.",
+            "ru": "У меня была подруга, а я и не знала.",
+            "uk": "У мене була подруга, а я й не знала.",
+            "vi": "Ta đã có một người bạn mà không hề biết."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Nevědět",
+  "title_i18n": {
+    "de": "Nicht wissen",
+    "en": "Not Knowing",
+    "fr": "Ne pas savoir",
+    "it": "Non sapere",
+    "ja": "わからないこと",
+    "ko": "모르는 것",
+    "pl": "Nie wiedzieć",
+    "pt-BR": "Não saber",
+    "ru": "Не знать",
+    "uk": "Не знати",
+    "vi": "Không biết"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -62,7 +75,20 @@
         {
           "speaker_id": "anna",
           "text": "Pořád nevím, co představuje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß immer noch nicht, was es darstellt.",
+            "en": "I still don't know what it represents.",
+            "fr": "Je ne sais toujours pas ce qu'il représente.",
+            "it": "Ancora non so che cosa rappresenta.",
+            "ja": "まだ、あれが何を表しているのか、わかりません。",
+            "ko": "아직도 저게 뭘 나타내는지 모르겠어요.",
+            "pl": "Nadal nie wiem, co przedstawia.",
+            "pt-BR": "Ainda não sei o que ele representa.",
+            "ru": "Я всё ещё не знаю, что на ней изображено.",
+            "uk": "Я досі не знаю, що на ній зображено.",
+            "vi": "Tôi vẫn không biết nó thể hiện điều gì."
+          }
         }
       ],
       "sfx": [],
@@ -95,7 +121,20 @@
         {
           "speaker_id": "psycholog",
           "text": "To nevadí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist nicht schlimm.",
+            "en": "It doesn't matter.",
+            "fr": "Ce n'est pas grave.",
+            "it": "Non importa.",
+            "ja": "気にしなくていいですよ。",
+            "ko": "신경 쓰지 않아도 돼요.",
+            "pl": "Nie szkodzi.",
+            "pt-BR": "Não tem problema.",
+            "ru": "Это не страшно.",
+            "uk": "Це не страшно.",
+            "vi": "Cô đừng bận lòng."
+          }
         }
       ],
       "sfx": [],
@@ -128,7 +167,20 @@
         {
           "speaker_id": "anna",
           "text": "Ale už mi tolik nevadí, že to nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber es ist nicht mehr so schlimm, es nicht zu wissen.",
+            "en": "But not knowing doesn't matter to me so much any more.",
+            "fr": "Mais ce n'est plus si grave, de ne pas le savoir.",
+            "it": "Ma non m'importa più così tanto di non saperlo.",
+            "ja": "でも、わからないことが、前ほど気にならなくなりました。",
+            "ko": "그래도 이제는 모른다는 게 그렇게 신경 쓰이지 않아요.",
+            "pl": "Ale już mi tak nie przeszkadza, że tego nie wiem.",
+            "pt-BR": "Mas já não é tanto problema não saber.",
+            "ru": "Но меня уже не так беспокоит, что я этого не знаю.",
+            "uk": "Але мене вже не так турбує, що я цього не знаю.",
+            "vi": "Nhưng giờ tôi không còn bận lòng lắm vì không biết."
+          }
         }
       ],
       "sfx": [],
@@ -179,7 +231,20 @@
         {
           "speaker_id": "anna",
           "text": "Myslíte, že se člověk může naučit být šťastný?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Glauben Sie, man kann lernen, glücklich zu sein?",
+            "en": "Do you think a person can learn to be happy?",
+            "fr": "Vous pensez qu'on peut apprendre à être heureux ?",
+            "it": "Pensa che si possa imparare a essere felici?",
+            "ja": "人は、幸せになることを学べると思いますか？",
+            "ko": "사람이 행복해지는 법을 배울 수 있다고 생각하세요?",
+            "pl": "Myśli pan, że można nauczyć się być szczęśliwym?",
+            "pt-BR": "Você acha que dá para aprender a ser feliz?",
+            "ru": "Вы думаете, можно научиться быть счастливым?",
+            "uk": "Ви думаєте, можна навчитися бути щасливим?",
+            "vi": "Ông có nghĩ người ta có thể học cách hạnh phúc không?"
+          }
         }
       ],
       "sfx": [],
@@ -212,7 +277,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nevím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß nicht.",
+            "en": "I don't know.",
+            "fr": "Je ne sais pas.",
+            "it": "Non lo so.",
+            "ja": "わかりません。",
+            "ko": "모르겠어요.",
+            "pl": "Nie wiem.",
+            "pt-BR": "Não sei.",
+            "ru": "Не знаю.",
+            "uk": "Не знаю.",
+            "vi": "Tôi không biết."
+          }
         }
       ],
       "sfx": [],
@@ -245,7 +323,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy dnes nějak často nevíte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie wissen heute auffallend oft nicht.",
+            "en": "There's a lot you don't know today.",
+            "fr": "Vous ne savez pas grand-chose, aujourd'hui.",
+            "it": "Oggi lei non sa molte cose.",
+            "ja": "今日は、なんだか「わからない」が多いですね。",
+            "ko": "오늘은 왠지 자주 모르시네요.",
+            "pl": "Pan dziś jakoś często nie wie.",
+            "pt-BR": "Hoje você vive não sabendo.",
+            "ru": "Вы сегодня как-то часто не знаете.",
+            "uk": "Ви сьогодні якось часто не знаєте.",
+            "vi": "Hôm nay ông hay không biết quá nhỉ."
+          }
         }
       ],
       "sfx": [],
@@ -278,7 +369,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Možná jsem se to naučil.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht habe ich es gelernt.",
+            "en": "Maybe I've learned it.",
+            "fr": "Peut-être que je l'ai appris.",
+            "it": "Forse l'ho imparato.",
+            "ja": "学んだのかもしれません。",
+            "ko": "배웠나 봐요.",
+            "pl": "Może się tego nauczyłem.",
+            "pt-BR": "Talvez eu tenha aprendido.",
+            "ru": "Может, я этому научился.",
+            "uk": "Може, я цього навчився.",
+            "vi": "Có lẽ tôi đã học được."
+          }
         }
       ],
       "sfx": [],
@@ -311,7 +415,20 @@
         {
           "speaker_id": "anna",
           "text": "Co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was?",
+            "en": "Learned what?",
+            "fr": "Quoi ?",
+            "it": "Cosa?",
+            "ja": "何をですか？",
+            "ko": "뭘요?",
+            "pl": "Czego?",
+            "pt-BR": "O quê?",
+            "ru": "Чему?",
+            "uk": "Чого?",
+            "vi": "Học gì?"
+          }
         }
       ],
       "sfx": [],
@@ -344,7 +461,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nevědět.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nicht zu wissen.",
+            "en": "Not knowing.",
+            "fr": "À ne pas savoir.",
+            "it": "A non sapere.",
+            "ja": "わからないことを。",
+            "ko": "모르는 걸요.",
+            "pl": "Nie wiedzieć.",
+            "pt-BR": "Não saber.",
+            "ru": "Не знать.",
+            "uk": "Не знати.",
+            "vi": "Không biết."
+          }
         }
       ],
       "sfx": [],
@@ -402,7 +532,20 @@
         {
           "speaker_id": "anna",
           "text": "Tak to já se budu muset ještě hodně učit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann muss ich noch viel lernen.",
+            "en": "Then I've still got a lot of learning to do.",
+            "fr": "Alors moi, j'ai encore beaucoup à apprendre.",
+            "it": "Allora io dovrò imparare ancora tanto.",
+            "ja": "それなら、私はまだまだ学ばないといけませんね。",
+            "ko": "그럼 저는 아직 한참 더 배워야겠네요.",
+            "pl": "To ja będę musiała się jeszcze dużo uczyć.",
+            "pt-BR": "Então eu ainda vou ter que aprender muito.",
+            "ru": "Тогда мне ещё долго придётся учиться.",
+            "uk": "Тоді мені ще довго доведеться вчитися.",
+            "vi": "Vậy thì tôi còn phải học nhiều lắm."
+          }
         }
       ],
       "sfx": [],
@@ -461,7 +604,20 @@
         {
           "speaker_id": "anna",
           "text": "Na shledanou.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Auf Wiedersehen.",
+            "en": "Goodbye.",
+            "fr": "Au revoir.",
+            "it": "Arrivederci.",
+            "ja": "さようなら。",
+            "ko": "안녕히 계세요.",
+            "pl": "Do widzenia.",
+            "pt-BR": "Até logo.",
+            "ru": "До свидания.",
+            "uk": "До побачення.",
+            "vi": "Tạm biệt ông."
+          }
         }
       ],
       "sfx": [],
@@ -494,7 +650,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Na shledanou, Anno.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Auf Wiedersehen, Anna.",
+            "en": "Goodbye, Anna.",
+            "fr": "Au revoir, Anna.",
+            "it": "Arrivederci, Anna.",
+            "ja": "さようなら、アンナさん。",
+            "ko": "안녕히 가세요, 안나 씨.",
+            "pl": "Do widzenia, pani Anno.",
+            "pt-BR": "Até logo, Anna.",
+            "ru": "До свидания, Анна.",
+            "uk": "До побачення, Анно.",
+            "vi": "Tạm biệt, Anna."
+          }
         }
       ],
       "sfx": [],

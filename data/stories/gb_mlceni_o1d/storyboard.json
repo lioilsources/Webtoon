@@ -1,5 +1,18 @@
 {
   "title": "Až budete chtít",
+  "title_i18n": {
+    "de": "Wenn Sie wollen",
+    "en": "Whenever You Want",
+    "fr": "Quand vous voudrez",
+    "it": "Quando vorrà",
+    "ja": "話したくなったら",
+    "ko": "원하실 때",
+    "pl": "Kiedy pani zechce",
+    "pt-BR": "Quando você quiser",
+    "ru": "Когда захотите",
+    "uk": "Коли захочете",
+    "vi": "Khi nào cô muốn"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -36,7 +49,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Dobře.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gut.",
+            "en": "All right.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "わかりました。",
+            "ko": "알겠어요.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tudo bem.",
+            "ru": "Хорошо.",
+            "uk": "Добре.",
+            "vi": "Được rồi."
+          }
         }
       ],
       "sfx": [],
@@ -99,7 +125,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy se mě na to nezeptáte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Fragen Sie mich nicht danach?",
+            "en": "Aren't you going to ask me?",
+            "fr": "Vous ne me posez pas la question ?",
+            "it": "Non me lo chiede?",
+            "ja": "訊かないんですか？",
+            "ko": "안 물어보세요?",
+            "pl": "Nie zapyta mnie pan o to?",
+            "pt-BR": "Você não vai me perguntar?",
+            "ru": "Вы меня об этом не спросите?",
+            "uk": "Ви мене про це не спитаєте?",
+            "vi": "Ông không hỏi tôi chuyện đó à?"
+          }
         }
       ],
       "sfx": [],
@@ -132,7 +171,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Na co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wonach?",
+            "en": "About what?",
+            "fr": "Laquelle ?",
+            "it": "Che cosa?",
+            "ja": "何をですか？",
+            "ko": "뭘요?",
+            "pl": "O co?",
+            "pt-BR": "O quê?",
+            "ru": "О чём?",
+            "uk": "Про що?",
+            "vi": "Chuyện gì?"
+          }
         }
       ],
       "sfx": [],
@@ -165,7 +217,20 @@
         {
           "speaker_id": "anna",
           "text": "Co maminka.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was mit Mama ist.",
+            "en": "What about Mum.",
+            "fr": "Et maman.",
+            "it": "E la mamma.",
+            "ja": "お母さんがどうかしたのか、って。",
+            "ko": "어머니가 왜냐고요.",
+            "pl": "Co z mamą.",
+            "pt-BR": "O que tem a minha mãe.",
+            "ru": "Что мама.",
+            "uk": "Що мама.",
+            "vi": "Mẹ thì sao."
+          }
         }
       ],
       "sfx": [],
@@ -198,7 +263,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Myslel jsem, že mi to řeknete, až budete chtít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich dachte, Sie erzählen es mir, wenn Sie wollen.",
+            "en": "I thought you'd tell me when you wanted to.",
+            "fr": "Je pensais que vous me le diriez quand vous le voudriez.",
+            "it": "Pensavo che me l'avrebbe detto quando avesse voluto.",
+            "ja": "話したくなったら、話してくれると思っていました。",
+            "ko": "원하실 때 말해 주실 거라고 생각했어요.",
+            "pl": "Myślałem, że powie mi pani, kiedy zechce.",
+            "pt-BR": "Achei que você me contaria quando quisesse.",
+            "ru": "Я думал, вы скажете, когда захотите.",
+            "uk": "Я думав, ви скажете, коли захочете.",
+            "vi": "Tôi nghĩ khi nào muốn, cô sẽ kể cho tôi."
+          }
         }
       ],
       "sfx": [],

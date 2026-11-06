@@ -1,5 +1,18 @@
 {
   "title": "Hezká věta",
+  "title_i18n": {
+    "de": "Ein schöner Satz",
+    "en": "A Pretty Sentence",
+    "fr": "Une belle phrase",
+    "it": "Una bella frase",
+    "ja": "きれいな言葉",
+    "ko": "예쁜 문장",
+    "pl": "Ładne zdanie",
+    "pt-BR": "Uma frase bonita",
+    "ru": "Красивая фраза",
+    "uk": "Гарна фраза",
+    "vi": "Một câu hay"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -54,7 +67,20 @@
         {
           "speaker_id": "anna",
           "text": "Víte, co je zvláštní?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wissen Sie, was seltsam ist?",
+            "en": "Do you know what's strange?",
+            "fr": "Vous savez ce qui est étrange ?",
+            "it": "Sa che cosa è strano?",
+            "ja": "何が変だか、わかりますか？",
+            "ko": "뭐가 이상한지 아세요?",
+            "pl": "Wie pan, co jest dziwne?",
+            "pt-BR": "Sabe o que é estranho?",
+            "ru": "Знаете, что странно?",
+            "uk": "Знаєте, що дивно?",
+            "vi": "Ông biết điều gì lạ không?"
+          }
         }
       ],
       "sfx": [],
@@ -87,7 +113,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Povídejte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Erzählen Sie.",
+            "en": "Go on.",
+            "fr": "Dites.",
+            "it": "Mi dica.",
+            "ja": "聞かせてください。",
+            "ko": "말해 보세요.",
+            "pl": "Proszę mówić.",
+            "pt-BR": "Diga.",
+            "ru": "Рассказывайте.",
+            "uk": "Розповідайте.",
+            "vi": "Cô cứ nói."
+          }
         }
       ],
       "sfx": [],
@@ -120,7 +159,20 @@
         {
           "speaker_id": "anna",
           "text": "Že čím méně se mám ráda, tím víc času sama sobě věnuju.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ich mir umso mehr Zeit widme, je weniger ich mich mag.",
+            "en": "That the less I like myself, the more time I devote to myself.",
+            "fr": "Que moins je m'aime, plus je me consacre de temps.",
+            "it": "Che meno mi voglio bene, più tempo dedico a me stessa.",
+            "ja": "自分を嫌いになるほど、自分に時間をかけていることです。",
+            "ko": "제가 저를 싫어할수록, 저한테 더 많은 시간을 쓴다는 거요.",
+            "pl": "Że im mniej siebie lubię, tym więcej czasu sobie poświęcam.",
+            "pt-BR": "Que quanto menos eu gosto de mim, mais tempo dedico a mim mesma.",
+            "ru": "Что чем меньше я себя люблю, тем больше времени себе уделяю.",
+            "uk": "Що чим менше я себе люблю, тим більше часу собі приділяю.",
+            "vi": "Là tôi càng ghét bản thân, tôi lại càng dành nhiều thời gian cho chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -153,7 +205,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Jak tomu rozumíte?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie verstehen Sie das?",
+            "en": "How do you understand that?",
+            "fr": "Comment le comprenez-vous ?",
+            "it": "Come lo interpreta?",
+            "ja": "どういうことだと思いますか？",
+            "ko": "그걸 어떻게 이해하세요?",
+            "pl": "Jak pani to rozumie?",
+            "pt-BR": "Como você entende isso?",
+            "ru": "Как вы это понимаете?",
+            "uk": "Як ви це розумієте?",
+            "vi": "Cô hiểu điều đó thế nào?"
+          }
         }
       ],
       "sfx": [],
@@ -186,7 +251,20 @@
         {
           "speaker_id": "anna",
           "text": "Kontroluju se. Sleduju se. Pozoruju se. Všímám si každé změny.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich kontrolliere mich. Ich beobachte mich. Ich mustere mich. Ich bemerke jede Veränderung.",
+            "en": "I check myself. I watch myself. I observe myself. I notice every change.",
+            "fr": "Je me contrôle. Je me surveille. Je m'observe. Je remarque chaque changement.",
+            "it": "Mi controllo. Mi sorveglio. Mi osservo. Noto ogni cambiamento.",
+            "ja": "自分をチェックする。見張る。観察する。どんな変化にも気づく。",
+            "ko": "저를 점검하고. 지켜보고. 관찰하고. 변화 하나하나를 다 알아채요.",
+            "pl": "Kontroluję się. Śledzę się. Obserwuję się. Zauważam każdą zmianę.",
+            "pt-BR": "Eu me controlo. Me vigio. Me observo. Noto cada mudança.",
+            "ru": "Я себя контролирую. Слежу за собой. Наблюдаю. Замечаю каждое изменение.",
+            "uk": "Я себе контролюю. Стежу за собою. Спостерігаю. Помічаю кожну зміну.",
+            "vi": "Tôi kiểm tra mình. Theo dõi mình. Quan sát mình. Để ý từng thay đổi."
+          }
         }
       ],
       "sfx": [],
@@ -219,7 +297,20 @@
         {
           "speaker_id": "anna",
           "text": "Věnuju sama sobě víc pozornosti než komukoliv jinému.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schenke mir mehr Aufmerksamkeit als irgendwem sonst.",
+            "en": "I pay more attention to myself than to anyone else.",
+            "fr": "Je m'accorde plus d'attention qu'à n'importe qui d'autre.",
+            "it": "Dedico a me stessa più attenzione che a chiunque altro.",
+            "ja": "ほかの誰よりも、自分に注意を向けています。",
+            "ko": "다른 누구보다 저 자신에게 더 신경을 써요.",
+            "pl": "Poświęcam sobie więcej uwagi niż komukolwiek innemu.",
+            "pt-BR": "Dou mais atenção a mim mesma do que a qualquer outra pessoa.",
+            "ru": "Я уделяю себе больше внимания, чем кому-либо другому.",
+            "uk": "Я приділяю собі більше уваги, ніж будь-кому іншому.",
+            "vi": "Tôi dành cho bản thân nhiều chú ý hơn bất kỳ ai khác."
+          }
         }
       ],
       "sfx": [],
@@ -252,7 +343,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A přitom se sama sobě vzdalujete.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und entfernen sich dabei von sich selbst.",
+            "en": "And all the while you're drifting away from yourself.",
+            "fr": "Et pourtant, vous vous éloignez de vous-même.",
+            "it": "E intanto si allontana da se stessa.",
+            "ja": "そうしながら、自分自身から遠ざかっているんですね。",
+            "ko": "그러면서 정작 자신에게서는 멀어지고 있군요.",
+            "pl": "A jednocześnie oddala się pani od samej siebie.",
+            "pt-BR": "E, ao mesmo tempo, se afasta de si mesma.",
+            "ru": "И при этом отдаляетесь от самой себя.",
+            "uk": "І водночас віддаляєтеся від самої себе.",
+            "vi": "Và đồng thời cô lại xa dần chính mình."
+          }
         }
       ],
       "sfx": [],
@@ -285,7 +389,20 @@
         {
           "speaker_id": "anna",
           "text": "To je hezká věta.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ein schöner Satz.",
+            "en": "That's a pretty sentence.",
+            "fr": "C'est une belle phrase.",
+            "it": "È una bella frase.",
+            "ja": "きれいな言葉ですね。",
+            "ko": "예쁜 문장이네요.",
+            "pl": "To ładne zdanie.",
+            "pt-BR": "É uma frase bonita.",
+            "ru": "Красивая фраза.",
+            "uk": "Гарна фраза.",
+            "vi": "Câu đó hay đấy."
+          }
         }
       ],
       "sfx": [],
@@ -318,7 +435,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Nechtěl jsem, aby byla hezká.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte nicht, dass er schön ist.",
+            "en": "I didn't mean it to be pretty.",
+            "fr": "Je ne voulais pas qu'elle soit belle.",
+            "it": "Non volevo che fosse bella.",
+            "ja": "きれいにするつもりはありませんでした。",
+            "ko": "예쁘게 말하려던 건 아니에요.",
+            "pl": "Nie chciałem, żeby była ładna.",
+            "pt-BR": "Não quis que fosse bonita.",
+            "ru": "Я не хотел, чтобы она была красивой.",
+            "uk": "Я не хотів, щоб вона була гарною.",
+            "vi": "Tôi không định cho nó hay."
+          }
         }
       ],
       "sfx": [],
@@ -351,7 +481,20 @@
         {
           "speaker_id": "anna",
           "text": "Ale je.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ist er aber.",
+            "en": "But it is.",
+            "fr": "Elle l'est, pourtant.",
+            "it": "Ma lo è.",
+            "ja": "でも、きれいです。",
+            "ko": "그래도 예뻐요.",
+            "pl": "Ale jest.",
+            "pt-BR": "Mas é.",
+            "ru": "А вышла красивой.",
+            "uk": "Але вона гарна.",
+            "vi": "Nhưng nó hay."
+          }
         }
       ],
       "sfx": [],

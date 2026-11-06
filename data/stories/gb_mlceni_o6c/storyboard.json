@@ -1,5 +1,18 @@
 {
   "title": "Moje bolest",
+  "title_i18n": {
+    "de": "Mein Schmerz",
+    "en": "My Pain",
+    "fr": "Ma douleur",
+    "it": "Il mio dolore",
+    "ja": "私の痛み",
+    "ko": "나의 아픔",
+    "pl": "Mój ból",
+    "pt-BR": "A minha dor",
+    "ru": "Моя боль",
+    "uk": "Мій біль",
+    "vi": "Nỗi đau của tôi"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -61,7 +74,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano. Ale nechci z toho dělat důkaz, že vám rozumím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Aber ich will daraus keinen Beweis machen, dass ich Sie verstehe.",
+            "en": "Yes. But I don't want to make it proof that I understand you.",
+            "fr": "Oui. Mais je ne veux pas en faire la preuve que je vous comprends.",
+            "it": "Sì. Ma non voglio farne la prova che la capisco.",
+            "ja": "ええ。でも、それを、あなたを理解している証拠にはしたくありません。",
+            "ko": "네. 하지만 그걸 제가 안나 씨를 이해한다는 증거로 삼고 싶진 않아요.",
+            "pl": "Tak. Ale nie chcę z tego robić dowodu, że panią rozumiem.",
+            "pt-BR": "Sim. Mas não quero fazer disso prova de que entendo você.",
+            "ru": "Да. Но я не хочу делать из этого доказательство, что я вас понимаю.",
+            "uk": "Так. Але я не хочу робити з цього доказ, що я вас розумію.",
+            "vi": "Có. Nhưng tôi không muốn biến điều đó thành bằng chứng rằng tôi hiểu cô."
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +120,20 @@
         {
           "speaker_id": "anna",
           "text": "Proč?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum?",
+            "en": "Why?",
+            "fr": "Pourquoi ?",
+            "it": "Perché?",
+            "ja": "なぜですか？",
+            "ko": "왜요?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ru": "Почему?",
+            "uk": "Чому?",
+            "vi": "Vì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -127,12 +166,38 @@
         {
           "speaker_id": "psycholog",
           "text": "Protože vaše bolest není moje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil Ihr Schmerz nicht meiner ist.",
+            "en": "Because your pain isn't mine.",
+            "fr": "Parce que votre douleur n'est pas la mienne.",
+            "it": "Perché il suo dolore non è il mio.",
+            "ja": "あなたの痛みは、私のものではないからです。",
+            "ko": "안나 씨의 아픔은 제 것이 아니니까요.",
+            "pl": "Bo pani ból nie jest mój.",
+            "pt-BR": "Porque a sua dor não é minha.",
+            "ru": "Потому что ваша боль — не моя.",
+            "uk": "Бо ваш біль — не мій.",
+            "vi": "Vì nỗi đau của cô không phải của tôi."
+          }
         },
         {
           "speaker_id": "psycholog",
           "text": "A moje zkušenost mi nedává právo tvrdit, že vím, jaké to je být vámi.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und meine Erfahrung gibt mir nicht das Recht zu behaupten, ich wüsste, wie es ist, Sie zu sein.",
+            "en": "And my experience doesn't give me the right to claim I know what it's like to be you.",
+            "fr": "Et mon expérience ne me donne pas le droit de prétendre savoir ce que c'est, d'être vous.",
+            "it": "E la mia esperienza non mi dà il diritto di dire che so cosa vuol dire essere lei.",
+            "ja": "そして私の経験は、あなたであるとはどういうことかを知っている、と言う権利を私に与えません。",
+            "ko": "그리고 제 경험이, 안나 씨로 산다는 게 어떤 건지 안다고 말할 권리를 주지는 않아요.",
+            "pl": "A moje doświadczenie nie daje mi prawa twierdzić, że wiem, jak to jest być panią.",
+            "pt-BR": "E a minha experiência não me dá o direito de afirmar que sei como é ser você.",
+            "ru": "И мой опыт не даёт мне права утверждать, что я знаю, каково это — быть вами.",
+            "uk": "І мій досвід не дає мені права стверджувати, що я знаю, як це — бути вами.",
+            "vi": "Và trải nghiệm của tôi không cho tôi quyền nói rằng tôi biết làm cô là như thế nào."
+          }
         }
       ],
       "sfx": [],
@@ -165,7 +230,20 @@
         {
           "speaker_id": "anna",
           "text": "To je poprvé, co mi někdo řekl něco takového.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist das erste Mal, dass mir jemand so etwas sagt.",
+            "en": "That's the first time anyone has said anything like that to me.",
+            "fr": "C'est la première fois qu'on me dit une chose pareille.",
+            "it": "È la prima volta che qualcuno mi dice una cosa del genere.",
+            "ja": "そんなことを言われたのは、初めてです。",
+            "ko": "누가 그런 말을 해 준 건 처음이에요.",
+            "pl": "Pierwszy raz ktoś mi powiedział coś takiego.",
+            "pt-BR": "É a primeira vez que alguém me diz uma coisa dessas.",
+            "ru": "Мне впервые кто-то такое сказал.",
+            "uk": "Мені вперше хтось таке сказав.",
+            "vi": "Đây là lần đầu có người nói với tôi điều như thế."
+          }
         }
       ],
       "sfx": [],
@@ -198,7 +276,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Co?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was?",
+            "en": "What?",
+            "fr": "Quoi ?",
+            "it": "Cosa?",
+            "ja": "何をですか？",
+            "ko": "어떤 말이요?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ru": "Что?",
+            "uk": "Що?",
+            "vi": "Điều gì?"
+          }
         }
       ],
       "sfx": [],
@@ -231,7 +322,20 @@
         {
           "speaker_id": "anna",
           "text": "Že moje bolest je moje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass mein Schmerz meiner ist.",
+            "en": "That my pain is mine.",
+            "fr": "Que ma douleur est la mienne.",
+            "it": "Che il mio dolore è mio.",
+            "ja": "私の痛みは、私のものだって。",
+            "ko": "제 아픔은 제 거라는 거요.",
+            "pl": "Że mój ból jest mój.",
+            "pt-BR": "Que a minha dor é minha.",
+            "ru": "Что моя боль — моя.",
+            "uk": "Що мій біль — мій.",
+            "vi": "Rằng nỗi đau của tôi là của tôi."
+          }
         }
       ],
       "sfx": [],
@@ -264,7 +368,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Ano.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yes.",
+            "fr": "Oui.",
+            "it": "Sì.",
+            "ja": "ええ。",
+            "ko": "네.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ru": "Да.",
+            "uk": "Так.",
+            "vi": "Phải."
+          }
         }
       ],
       "sfx": [],
@@ -297,7 +414,20 @@
         {
           "speaker_id": "anna",
           "text": "A co když ji nechci?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn ich ihn nicht will?",
+            "en": "And what if I don't want it?",
+            "fr": "Et si je n'en veux pas ?",
+            "it": "E se non lo voglio?",
+            "ja": "じゃあ、それが要らなかったら？",
+            "ko": "그런데 그걸 원하지 않으면요?",
+            "pl": "A jeśli go nie chcę?",
+            "pt-BR": "E se eu não a quiser?",
+            "ru": "А если я её не хочу?",
+            "uk": "А якщо я його не хочу?",
+            "vi": "Còn nếu tôi không muốn nó thì sao?"
+          }
         }
       ],
       "sfx": [],
@@ -330,7 +460,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Pak budeme hledat, jak ji zmírnit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann suchen wir, wie wir ihn lindern können.",
+            "en": "Then we'll search for a way to ease it.",
+            "fr": "Alors nous chercherons comment l'apaiser.",
+            "it": "Allora cercheremo come attenuarlo.",
+            "ja": "それなら、和らげる方法を探しましょう。",
+            "ko": "그럼 그걸 덜어 줄 방법을 찾아봐야죠.",
+            "pl": "Wtedy będziemy szukać, jak go złagodzić.",
+            "pt-BR": "Então vamos procurar como aliviá-la.",
+            "ru": "Тогда будем искать, как её облегчить.",
+            "uk": "Тоді шукатимемо, як його полегшити.",
+            "vi": "Thì chúng ta sẽ tìm cách làm nó dịu đi."
+          }
         }
       ],
       "sfx": [],
@@ -363,7 +506,20 @@
         {
           "speaker_id": "anna",
           "text": "Vy pořád používáte slovo hledat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie benutzen immer das Wort suchen.",
+            "en": "You keep using the word search.",
+            "fr": "Vous employez toujours le mot chercher.",
+            "it": "Lei usa sempre la parola cercare.",
+            "ja": "先生は、いつも「探す」という言葉を使いますね。",
+            "ko": "선생님은 늘 ‘찾는다’는 말을 쓰시네요.",
+            "pl": "Pan ciągle używa słowa „szukać”.",
+            "pt-BR": "Você vive usando a palavra “procurar”.",
+            "ru": "Вы всё время используете слово «искать».",
+            "uk": "Ви весь час вживаєте слово «шукати».",
+            "vi": "Ông cứ dùng mãi chữ “tìm”."
+          }
         }
       ],
       "sfx": [],
@@ -396,7 +552,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Protože nechci předstírat, že už jsme našli.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich nicht so tun will, als hätten wir schon gefunden.",
+            "en": "Because I don't want to pretend we've already found it.",
+            "fr": "Parce que je ne veux pas faire semblant d'avoir déjà trouvé.",
+            "it": "Perché non voglio fingere che abbiamo già trovato.",
+            "ja": "もう見つかったふりは、したくないからです。",
+            "ko": "이미 찾은 척하고 싶지 않으니까요.",
+            "pl": "Bo nie chcę udawać, że już znaleźliśmy.",
+            "pt-BR": "Porque não quero fingir que já encontramos.",
+            "ru": "Потому что не хочу притворяться, что мы уже нашли.",
+            "uk": "Бо не хочу вдавати, що ми вже знайшли.",
+            "vi": "Vì tôi không muốn giả vờ rằng ta đã tìm thấy."
+          }
         }
       ],
       "sfx": [],
@@ -455,7 +624,20 @@
         {
           "speaker_id": "anna",
           "text": "Myslíte, že se někdy uzdravím?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Glauben Sie, dass ich irgendwann gesund werde?",
+            "en": "Do you think I'll ever get well?",
+            "fr": "Vous pensez que je guérirai un jour ?",
+            "it": "Pensa che un giorno guarirò?",
+            "ja": "私、いつか治ると思いますか？",
+            "ko": "제가 언젠가 나을 거라고 생각하세요?",
+            "pl": "Myśli pan, że kiedyś wyzdrowieję?",
+            "pt-BR": "Você acha que um dia eu vou me curar?",
+            "ru": "Вы думаете, я когда-нибудь выздоровею?",
+            "uk": "Ви думаєте, я колись одужаю?",
+            "vi": "Ông có nghĩ có ngày tôi sẽ khỏi không?"
+          }
         }
       ],
       "sfx": [],
@@ -488,7 +670,20 @@
         {
           "speaker_id": "psycholog",
           "text": "Myslím, že máte právo na život, ve kterém se nebudete muset každý den znovu rozhodovat, jestli si ho zasloužíte.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich glaube, Sie haben ein Recht auf ein Leben, in dem Sie nicht jeden Tag neu entscheiden müssen, ob Sie es verdienen.",
+            "en": "I think you have a right to a life in which you won't have to decide again every day whether you deserve it.",
+            "fr": "Je pense que vous avez droit à une vie où vous n'aurez pas à décider chaque jour, à nouveau, si vous la méritez.",
+            "it": "Penso che lei abbia diritto a una vita in cui non dovrà decidere ogni giorno, di nuovo, se se la merita.",
+            "ja": "あなたには、それに値するかどうかを毎日あらためて決めなくていい人生への、権利があると思います。",
+            "ko": "안나 씨에게는, 그 삶을 누릴 자격이 있는지 매일 다시 결정하지 않아도 되는 삶을 살 권리가 있다고 생각해요.",
+            "pl": "Myślę, że ma pani prawo do życia, w którym nie będzie pani musiała codziennie na nowo decydować, czy na nie zasługuje.",
+            "pt-BR": "Acho que você tem direito a uma vida em que não precise decidir de novo, todo dia, se a merece.",
+            "ru": "Я думаю, вы имеете право на жизнь, в которой вам не придётся каждый день заново решать, заслуживаете ли вы её.",
+            "uk": "Я думаю, ви маєте право на життя, в якому вам не доведеться щодня заново вирішувати, чи ви на нього заслуговуєте.",
+            "vi": "Tôi nghĩ cô có quyền có một cuộc đời mà mỗi ngày cô không phải quyết định lại liệu mình có xứng đáng với nó hay không."
+          }
         }
       ],
       "sfx": [],
@@ -521,7 +716,20 @@
         {
           "speaker_id": "psycholog",
           "text": "A budeme společně pracovat na tom, abyste k němu měla blíž.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wir werden gemeinsam daran arbeiten, dass Sie ihm näherkommen.",
+            "en": "And together we'll work on bringing you closer to it.",
+            "fr": "Et nous travaillerons ensemble pour que vous vous en approchiez.",
+            "it": "E lavoreremo insieme perché lei ci si avvicini.",
+            "ja": "そして、そこへ近づけるように、一緒に取り組んでいきましょう。",
+            "ko": "그리고 안나 씨가 그 삶에 더 가까워지도록 함께 노력할 거예요.",
+            "pl": "I będziemy razem pracować nad tym, żeby była pani do niego bliżej.",
+            "pt-BR": "E vamos trabalhar juntos para que você fique mais perto dela.",
+            "ru": "И мы вместе будем работать над тем, чтобы вы стали к ней ближе.",
+            "uk": "І ми разом працюватимемо над тим, щоб ви були до нього ближче.",
+            "vi": "Và chúng ta sẽ cùng nhau làm việc để cô đến gần nó hơn."
+          }
         }
       ],
       "sfx": [],
