@@ -3,6 +3,7 @@
 
     python3 tools/gen_products.py                                  # pack 1 of every active type
     python3 tools/gen_products.py --packs kids=2,harlequin=3,superhero=1 --gamebook "drak:Drakova hora:Dragon Mountain"
+    python3 tools/gen_products.py --catalog                        # one product per paid pack of the live catalog.json
 
 Names and descriptions fit App Store Connect (display name ≤ 30, description ≤ 45 characters); Play allows more.
 Prices are the pack.yaml price_tiers hints (the stores convert them to local prices). Only rows that exist (or are
@@ -31,7 +32,6 @@ def fill(tmpl, **kw):
 def rows(rules, packs, gamebooks):
     types = {t["id"]: t for t in rules["types"]}
     tier = rules["price_tiers"]
-    size = rules["pack_size"]
     out = []
 
     def row(pid, typ, kind, tier_key, name_cs, name_en, desc_cs, desc_en):
@@ -47,7 +47,7 @@ def rows(rules, packs, gamebooks):
         for n in range(1, count + 1):
             row(fill(rules["naming"]["product_id"], type=typ, n=n), typ, "pack", "pack",
                 f"{t['title_i18n']['cs']} {n}", f"{t['title_i18n']['en']} {n}",
-                f"{size} komiksových příběhů, 12 jazyků", f"{size} comic stories in 12 languages")
+                "Balíček komiksových příběhů, 12 jazyků", "A pack of comic stories, 12 languages")  # packs differ in size (kids-1: 19)
     for b in rules["bundles"]:
         if b["covers"] == "all":
             typ, dcs, den = "all", "Všechny balíčky všech typů, i budoucí", "Every pack of every type, future too"
@@ -75,14 +75,34 @@ def table(rs):
     return "\n".join(lines)
 
 
+CATALOG = "https://lioilsources.github.io/webtoon-content/catalog.json"
+
+
+def catalog_packs(src):
+    """type → highest pack number of the paid packs in catalog.json (pack ids are <type>-<n>)."""
+    import json
+    import urllib.request
+    raw = urllib.request.urlopen(src, timeout=20).read() if src.startswith("http") else Path(src).read_bytes()
+    out = {}
+    for p in json.loads(raw)["packs"]:
+        if p.get("product_id") and not p.get("free"):
+            typ, n = p["id"].rsplit("-", 1)
+            out[typ] = max(out.get(typ, 0), int(n))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--packs", default="", help="type=count,… (default: 1 per active type)")
+    ap.add_argument("--catalog", nargs="?", const=CATALOG, help="count packs per type from this catalog.json (URL or file; "
+                    "default: the live one), so every pack the app sells has its product")
     ap.add_argument("--gamebook", action="append", default=[], help="id:czech title:english title")
     ap.add_argument("--check", action="store_true", help="fail when products.csv / the doc table are out of date")
     args = ap.parse_args()
     rules = yaml.safe_load(RULES.read_text(encoding="utf-8"))
     packs = {t["id"]: 1 for t in rules["types"] if t["active"]}
+    if args.catalog:
+        packs = catalog_packs(args.catalog)
     if args.packs:
         packs = {k: int(v) for k, v in (p.split("=") for p in args.packs.split(","))}
     gamebooks = [tuple(g.split(":", 2)) for g in args.gamebook]

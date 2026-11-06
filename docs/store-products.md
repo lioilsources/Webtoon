@@ -1,6 +1,7 @@
 # Store products (App Store + Google Play)
 
-The app is **free** (rating 12+) with 15 bundled starter stories. The stores sell only **unlocks**: every product
+The app is **free** (rating 16+ on the App Store, whatever IARC yields on Play, likely PEGI 12–16: decided 2026-11-05
+to keep the adult drama gamebooks) with 15 bundled starter stories and free gamebooks. The stores sell only **unlocks**: every product
 is a **non-consumable** in-app purchase. The content is not in the store: after a purchase the app downloads the
 pack's zips from GitHub Releases (`lioilsources/webtoon-content`), listed in `catalog.json` on GitHub Pages
 (PACK_FORMAT.md, catalog schema 2). Prices, names and the product scheme are declared in `rules/base/pack.yaml`
@@ -9,18 +10,19 @@ pack's zips from GitHub Releases (`lioilsources/webtoon-content`), listed in `ca
 ```sh
 python3 tools/gen_products.py                                   # pack 1 of every active type + bundles
 python3 tools/gen_products.py --packs kids=2,harlequin=3,superhero=1
-python3 tools/gen_products.py --check                           # CI: fail when out of date
+python3 tools/gen_products.py --catalog                         # every paid pack of the live catalog
+python3 tools/gen_products.py --catalog --check                 # fail when out of date
 ```
 
 ## Products
 
 | kind | product id | price | what it unlocks |
 |---|---|---|---|
-| pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: 50 stories, all 12 languages |
+| pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: up to 50 stories, all 12 languages |
 | type bundle | `bundle_<type>` (`bundle_kids`, `bundle_harlequin`, `bundle_superhero`) | 2.99 USD (Tier 3) | every pack of the type, **current and future** |
 | everything | `bundle_all` | 6.99 USD (Tier 7) | every pack of every type, current and future |
-| gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (STUB: reader not built yet) |
-| gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (STUB) |
+| gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (today's four gamebooks are free: no product) |
+| gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (a free gamebook includes its kit) |
 
 Tiers: Apple replaced price tiers with price points (USD base price, other storefronts derived); "Tier N" is the
 old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 6.99 = Tier 7).
@@ -36,16 +38,17 @@ Current list (generated; names ≤ 30 and descriptions ≤ 45 characters for App
 <!-- products:begin (tools/gen_products.py) -->
 | product id | kind | type | USD | tier | name cs | name en | description cs | description en |
 |---|---|---|---|---|---|---|---|---|
-| `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | 50 komiksových příběhů, 12 jazyků | 50 comic stories in 12 languages |
-| `pack_harlequin_1` | pack | harlequin | 0.99 | Tier 1 | Romantika 1 | Romance 1 | 50 komiksových příběhů, 12 jazyků | 50 comic stories in 12 languages |
-| `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | 50 komiksových příběhů, 12 jazyků | 50 comic stories in 12 languages |
+| `pack_harlequin_1` | pack | harlequin | 0.99 | Tier 1 | Romantika 1 | Romance 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
+| `pack_harlequin_2` | pack | harlequin | 0.99 | Tier 1 | Romantika 2 | Romance 2 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
+| `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
+| `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `bundle_kids` | bundle | kids | 2.99 | Tier 3 | Vše pro děti | All Kids stories | Všechny balíčky Pro děti, i budoucí | All Kids packs, future ones too |
 | `bundle_harlequin` | bundle | harlequin | 2.99 | Tier 3 | Všechna romantika | All Romance stories | Všechny balíčky Romantika, i budoucí | All Romance packs, future ones too |
 | `bundle_superhero` | bundle | superhero | 2.99 | Tier 3 | Všichni superhrdinové | All Superhero stories | Všechny balíčky Superhrdinové, i budoucí | All Superheroes packs, future ones too |
 | `bundle_all` | bundle | all | 6.99 | Tier 7 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
 <!-- products:end -->
 
-Gamebooks (later phase, not in the CSV until the gamebook reader ships), e.g. for a gamebook `drak`:
+Paid gamebooks (none yet: every published gamebook is free and needs no product), e.g. for a gamebook `drak`:
 
 | product id | kind | USD | tier | name cs | name en | description cs | description en |
 |---|---|---|---|---|---|---|---|
@@ -59,8 +62,11 @@ Gamebooks (later phase, not in the CSV until the gamebook reader ships), e.g. fo
 One-time:
 1. **Agreements, Tax, and Banking**: the Paid Apps agreement must be active (in-app purchases need it even in a
    free app).
-2. **App Information → Age Rating**: answer the questionnaire so the result is **12+** (romance stories:
-   "Infrequent/Mild Mature/Suggestive Themes"; no gambling, no unrestricted web). Do **not** put the app in the
+2. **App Information → Age Rating**: answer the questionnaire so the result is **16+** (Apple's age ratings since 2025: 4+, 9+, 13+, 16+, 18+; use Age
+   Rating Override to 16+ if the answers yield 13+) (romance stories:
+   "Infrequent/Mild Sexual Content or Nudity: none, Mature/Suggestive Themes"; the drama gamebooks: "Frequent/Intense
+   Mature/Suggestive Themes" and "Medical/Treatment Information" — an eating disorder and thoughts of death in
+   *Učit se mlčet*; no gambling, no unrestricted web). Answers in `store/age-rating.md`. Do **not** put the app in the
    Kids category: the Kids category forbids third-party content downloads and requires no external links;
    instead the app has a reader profile (Děti / Dospělí) and a **parental gate** before every purchase and before
    switching to the adult profile.
@@ -94,8 +100,8 @@ One-time:
 1. **Setup → Payments profile** linked (merchant account), otherwise products cannot be priced.
 2. Upload a build with the `com.android.vending.BILLING` permission (the `in_app_purchase` plugin adds it) to
    any track (internal testing is enough) — Play lets you create products only after that.
-3. **Policy → App content**: content rating questionnaire (IARC) → expected **Teen / PEGI 12**; **Target
-   audience and content**: 13+ (not "children"), so the app is **not** in the Designed for Families program; the
+3. **Policy → App content**: content rating questionnaire (IARC) → IARC decides (no override on Play; likely PEGI 12 or 16)
+   (answers in `store/age-rating.md`); **Target audience and content**: 16+ and older (not "children"), so the app is **not** in the Designed for Families program; the
    in-app parental gate still protects purchases and the adult profile. Data safety: no data collected.
 
 Per product (**Monetize → Products → In-app products → Create product**):
@@ -128,13 +134,17 @@ appear in Knihovna (Library). The list of packs (catalog.json) and covers come f
 content is executable; packs contain images and JSON text only.
 
 Reader profile: on first launch the app asks for Děti (Kids) or Dospělí (Adults). The Kids profile hides
-romance stories and packs. Every purchase and switching to Adults is behind a parental gate: a simple
+romance stories, packs and the adult drama gamebooks. Every purchase and switching to Adults is behind a parental gate: a simple
 arithmetic question (e.g. "Kolik je 7 × 8?" / "What is 7 × 8?") the parent must answer.
 
 Restore Purchases: Nastavení (Settings) tab → "Obnovit nákupy".
 
 To test a purchase: use a sandbox tester account (any pack, e.g. pack_kids_1), or the promo code we
 provide on request. The app works fully offline after the download.
+
+Gamebooks (Knihovna → Gamebooky) are free branching comics: the reader picks a choice at the end of a chapter.
+The adult dramas deal with mature themes (one with an eating disorder and thoughts of death, with a content
+note at the start and a crisis line at every ending); they are hidden in the Kids profile.
 ```
 
 ## Server receipt validation (later)
