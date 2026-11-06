@@ -1,7 +1,6 @@
 // Package integration runs the API + worker against a real Postgres with fake Spark services.
 //
-//	docker compose up -d db
-//	WEBTOON_TEST_DATABASE_URL=postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable go test ./internal/integration/
+//	WEBTOON_TEST_DATABASE_URL=$DATABASE_URL go test ./internal/integration/   # DATABASE_URL from backend/.env (Postgres on JODA)
 //
 // Each run creates (and drops) its own database, so the dev database is untouched.
 package integration
@@ -53,7 +52,7 @@ func freshDB(t *testing.T) string {
 	t.Helper()
 	base := os.Getenv(envURL)
 	if base == "" {
-		t.Skipf("%s not set; start Postgres with `docker compose up -d db`", envURL)
+		t.Skipf("%s not set; point it at the Postgres on JODA (see backend/README.md)", envURL)
 	}
 	ctx := context.Background()
 	admin, err := pgx.Connect(ctx, base)

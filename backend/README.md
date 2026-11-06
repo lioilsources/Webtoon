@@ -7,13 +7,22 @@ golden výstupy, které vznikly spuštěním Python funkcí (`internal/testdata/
 
 ## Spuštění
 
+Databáze je jen jedna, Postgres 16 na JODĚ (`deploy/docker-compose.yml`, kontejner `webtoon-db`). Mac se k ní
+připojuje po LAN, lokální Docker ani Postgres na Macu se nepoužívá (DevConventions: na M2 žádný Docker).
+`backend/.env` (gitignored, čte ho `config.Load`; proměnné prostředí mají přednost):
+
 ```sh
-docker compose up -d db                       # Postgres 16 na localhost:5434
+DATABASE_URL=postgres://webtoon:<POSTGRES_PASSWORD z JODA ~/deploy/Webtoon/deploy/.env>@<LAN adresa JODY>:5434/webtoon?sslmode=disable
+```
+
+```sh
 go run ./cmd/webtoon seed                     # import data/world_m0.json + styles.json (owner "seed")
 go run ./cmd/webtoon serve                    # API :8095 + 2 workery (MODE=all)
-# nebo všechno v Dockeru (seed při startu, owner "author"):
-docker compose up --build
+MODE=worker go run ./cmd/webtoon serve        # jen workery (API běží na JODĚ)
 ```
+
+Workery na Macu a API na JODĚ sdílejí tutéž DB (`SKIP LOCKED`), hotové díly jsou v API hned. Obrázky panelů
+zůstávají v `MEDIA_DIR` na Macu a na JODU je dostane `deploy/deploy.sh`.
 
 Příkazy binárky: `serve` (výchozí), `migrate`, `seed [-world f.json] [-styles f.json] [-owner id] [-visibility public]`,
 `import-demo [-campaign id | -world w_skyisles -player player] [-character id] [-variant 0] <storyboard.json> <panel_dir>`,
@@ -78,7 +87,7 @@ příběhů/dílů/panelů/smyček, bajty a sha256, na stderr poznámky o zkrác
 | `WEBTOON_IMAGE_API` | – | AiStack Image API (`https://llm.ol1n.com`); nastavené = místo `WEBTOON_COMFY` a `WEBTOON_WD14` |
 | `WEBTOON_CF_ACCESS_ID`, `WEBTOON_CF_ACCESS_SECRET` | – | service token Cloudflare Access pro Image API i LLM za `llm.ol1n.com` |
 | `WEBTOON_LANGS` | 12 jazyků Lexify | cílové jazyky překladu bublin (`en,de,…`, `none` = vypnuto); zdrojový jazyk světa se přeskočí |
-| `DATABASE_URL` | `postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable` | |
+| `DATABASE_URL` | – (povinné kromě `catalog-bundles`, `preview`, `trailer`, `music`) | Postgres na JODĚ, na Macu z `backend/.env` |
 | `MEDIA_DIR` | `./media` | sem se ukládají PNG panelů, servíruje `GET /media/...` |
 | `MEDIA_BASE_URL` | `/media` | prefix `image_url` v odpovědích (např. `https://webtoon.ol1n.com/media`) |
 | `WORKERS` | `2` | počet worker goroutin (0 = bez workeru) |
@@ -230,9 +239,8 @@ hráč může poslat novou volbu.
 
 ```sh
 go vet ./... && go test ./...                 # unit + e2e worker (in-memory store, httptest fakes)
-docker compose up -d db
-WEBTOON_TEST_DATABASE_URL='postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable' \
-  go test ./internal/integration/             # API + worker + Postgres (vlastní dočasná DB)
+WEBTOON_TEST_DATABASE_URL="$DATABASE_URL" \
+  go test ./internal/integration/             # API + worker + Postgres na JODĚ (vlastní dočasná DB, po testu smazaná)
 WEBTOON_LLM_SMOKE=1 go test -run Smoke -v ./internal/storyboard/   # 1 pokus proti reálnému LLM (≤3 volání)
 ```
 

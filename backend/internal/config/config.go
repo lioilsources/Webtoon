@@ -2,6 +2,7 @@
 package config
 
 import (
+	"bufio"
 	"os"
 	"strconv"
 	"strings"
@@ -67,7 +68,11 @@ func envDur(key string, fallback time.Duration) time.Duration {
 	return fallback
 }
 
+// Load reads the environment. A .env file in the working directory (backend/.env, gitignored) fills in
+// variables that are not set — on the Mac it holds DATABASE_URL pointing at the Postgres on JODA,
+// so no local Docker is needed. Containers set everything explicitly and have no .env.
 func Load() Config {
+	loadDotEnv(".env")
 	return Config{
 		LLMURL:         envOr("WEBTOON_LLM", "http://192.168.88.66:8080/v1"),
 		LLMModel:       envOr("WEBTOON_LLM_MODEL", "openclaw-default"),
@@ -76,7 +81,7 @@ func Load() Config {
 		ImageAPI:       os.Getenv("WEBTOON_IMAGE_API"),
 		CFAccessID:     os.Getenv("WEBTOON_CF_ACCESS_ID"),
 		CFAccessSecret: os.Getenv("WEBTOON_CF_ACCESS_SECRET"),
-		DatabaseURL:    envOr("DATABASE_URL", "postgres://webtoon:webtoon@localhost:5434/webtoon?sslmode=disable"),
+		DatabaseURL:    envOr("DATABASE_URL", ""),
 		MediaDir:       envOr("MEDIA_DIR", "./media"),
 		MediaBaseURL:   envOr("MEDIA_BASE_URL", "/media"),
 		CORSOrigins:    envList("WEBTOON_CORS_ORIGINS"),
@@ -88,6 +93,30 @@ func Load() Config {
 		Seed:           envOr("WEBTOON_SEED", "false") == "true",
 		SeedOwner:      envOr("WEBTOON_SEED_OWNER", "seed"),
 		Langs:          langs(),
+	}
+}
+
+// loadDotEnv sets KEY=VALUE lines from path for keys that are not already in the environment.
+func loadDotEnv(path string) {
+	f, err := os.Open(path)
+	if err != nil {
+		return
+	}
+	defer f.Close()
+	sc := bufio.NewScanner(f)
+	for sc.Scan() {
+		line := strings.TrimSpace(sc.Text())
+		if line == "" || strings.HasPrefix(line, "#") {
+			continue
+		}
+		k, v, ok := strings.Cut(strings.TrimPrefix(line, "export "), "=")
+		if !ok {
+			continue
+		}
+		k, v = strings.TrimSpace(k), strings.Trim(strings.TrimSpace(v), `"'`)
+		if _, set := os.LookupEnv(k); !set {
+			os.Setenv(k, v)
+		}
 	}
 }
 

@@ -2,7 +2,7 @@
 # Deploy from the Mac to JODA: ~/deploy/Webtoon/{backend,deploy,rules,data,media}. Idempotent: secrets, tunnel and DNS
 # are created only once; .env and cloudflared creds stay on JODA.
 #   deploy/deploy.sh          # code, rules, stories, media, compose up
-#   deploy/deploy.sh db       # also replace JODA's database with the Mac's (first deploy)
+# The database lives only on JODA (the Mac uses it over the LAN), so there is nothing to copy.
 set -euo pipefail
 ROOT=$(cd "$(dirname "$0")/.." && pwd)
 JODA=${JODA:-joda}
@@ -11,7 +11,7 @@ HOSTNAME_API=webtoon-api.ol1n.com
 ssh "$JODA" 'mkdir -p ~/deploy/Webtoon/data ~/deploy/Webtoon/media'
 rsync -a --delete --exclude .env --exclude 'cloudflared/*.json' --exclude cloudflared/config.yml \
   "$ROOT/deploy" "$JODA":deploy/Webtoon/
-rsync -a --delete --exclude /backend/media/ "$ROOT/backend" "$JODA":deploy/Webtoon/
+rsync -a --delete --exclude /backend/media/ --exclude /backend/.env "$ROOT/backend" "$JODA":deploy/Webtoon/
 rsync -a --delete "$ROOT/rules" "$JODA":deploy/Webtoon/
 rsync -a "$ROOT/data/gamebooks" "$ROOT/data/stories" "$JODA":deploy/Webtoon/data/
 rsync -a "$ROOT/backend/media/" "$JODA":deploy/Webtoon/media/
@@ -40,8 +40,4 @@ fi
 docker compose up -d --build db webtoon
 REMOTE
 
-if [ "${1:-}" = db ]; then
-  docker exec webtoon-db-1 pg_dump -U webtoon -d webtoon --clean --if-exists --no-owner \
-    | ssh "$JODA" 'cd ~/deploy/Webtoon/deploy && docker compose stop webtoon && docker compose exec -T db psql -q -U webtoon -d webtoon >/dev/null && docker compose start webtoon'
-fi
 ssh "$JODA" 'cd ~/deploy/Webtoon/deploy && docker compose up -d && docker compose ps --format "{{.Name}} {{.Status}}"'
