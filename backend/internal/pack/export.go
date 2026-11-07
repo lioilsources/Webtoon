@@ -49,6 +49,9 @@ func Run(ctx context.Context, q *dbq.Queries, opts Options, sel Selection) (*Sum
 		return nil, err
 	}
 	notes = append(notes, typeNotes...)
+	if err := AssignWorldI18n(stories, root); err != nil {
+		return nil, err
+	}
 	if g := opts.Gamebook; g != nil {
 		gamebookNames(&opts, r)
 	}

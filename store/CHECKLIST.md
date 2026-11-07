@@ -13,10 +13,11 @@ Changed in the repo on 2026-11-05, not in the live catalog yet:
 - Pack **superhero-1**: stories `lx_k4_09_leo_zapisnik_osudu` (12 → 7 panels) and `lx_k4_10_max_octo_boy` (12 → 5)
   ended with the same panel 6–7× in a row (paid content). Re-import and export superhero-1 v3.
   (`lx_k4_05_amaya_strazkyne_dzungle` had the same defect, 8 → 7; it is in no published pack.)
-- Starter pack (bundled, `starter-v1`): worlds have no `title_i18n` / `synopsis_i18n`, and 4 stories have no
-  `title_i18n` (Zahrada světlušek, Nebeské ostrovy, Záhada v lese (volba 2/3)). The app now borrows a story title
-  for the world heading and hides an untranslated synopsis, but these titles stay Czech for every reader until a
-  starter-v2 with the translations (needs an app build, the starter is bundled).
+- Starter pack (bundled): starter-v1 has no world `title_i18n` / `synopsis_i18n` and 4 untranslated story titles.
+  starter-v2 is `data/starter_showcase.yaml` (15 stories, version 2). Its 15 source worlds now carry `title_i18n` /
+  `synopsis_i18n` in `world.json` (restyle.sh copies them), and export-pack writes them into pack.json. Export it,
+  publish it as the `starter-v2` release, then tag a build: the release workflows take starter-v2 when it exists,
+  else starter-v1.
 
 ## Before either store
 

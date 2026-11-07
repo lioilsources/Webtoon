@@ -116,6 +116,31 @@ func WorldType(w dbq.World, root string, r Rules) (string, error) {
 	return t, nil
 }
 
+// AssignWorldI18n sets the stories' world title_i18n / synopsis_i18n from the repo's world.json (same file as
+// WorldType; a restyled copy carries its source's). A world without the file, or without the keys, gets none.
+func AssignWorldI18n(stories []Story, root string) error {
+	if root == "" {
+		return nil
+	}
+	for i := range stories {
+		s := &stories[i]
+		path := filepath.Join(root, "data", "stories", strings.TrimPrefix(s.World.ID, "w_"), "world.json")
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			continue
+		}
+		var wj struct {
+			TitleI18n    map[string]string `json:"title_i18n"`
+			SynopsisI18n map[string]string `json:"synopsis_i18n"`
+		}
+		if err := json.Unmarshal(raw, &wj); err != nil {
+			return fmt.Errorf("%s: %w", path, err)
+		}
+		s.WorldTitleI18n, s.WorldSynopsisI18n = wj.TitleI18n, wj.SynopsisI18n
+	}
+	return nil
+}
+
 // AssignTypes sets Story.Type: a pick's type stays, else -type, else WorldType. In catalog mode every story must
 // end up with one type, which becomes the pack's type when -type is not given; notes say where -type overrides a
 // world's own type. Starter mode tolerates unknown and mixed types.

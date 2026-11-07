@@ -28,7 +28,8 @@ Cesty v `pack.json` jsou relativní ke kořeni zipu. Soubory balíčku se nikdy 
   "generated_at": "2026-10-23T08:00:00Z",
   "worlds": [                      // jen světy, které mají v balíčku příběh
     { "id": "w_les", "title": "…", "synopsis": "…", "tone": "…", "audience": "kids|teen|adult",
-      "language": "cs", "style_id": "…" }
+      "language": "cs", "style_id": "…",
+      "title_i18n": {"en": "…"}, "synopsis_i18n": {"en": "…"} }   // z data/stories/<id>/world.json; chybí-li, appka vezme název příběhu a popis skryje
   ],
   "stories": [                     // příběh = kampaň; pořadí v poli = pořadí v knihovně
     { "id": "cp_…", "world_id": "w_les", "title": "…", "title_i18n": {"en": "…"},
