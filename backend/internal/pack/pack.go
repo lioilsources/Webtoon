@@ -51,6 +51,8 @@ type Story struct {
 	World    dbq.World
 	Episodes []Episode
 	Type     string // pack type of the story (pick, -type or WorldType); "" when unknown
+	// World title and synopsis per language from the repo's world.json (the worlds table has no i18n).
+	WorldTitleI18n, WorldSynopsisI18n map[string]string
 }
 
 // Episode is one episode row with its panels in idx order.
@@ -82,6 +84,9 @@ type WorldJSON struct {
 	Language string `json:"language"`
 	StyleID  string `json:"style_id"`
 	Type     string `json:"type,omitempty"`
+	// From data/stories/<id>/world.json; the app falls back to title / a story title and hides the synopsis.
+	TitleI18n    map[string]string `json:"title_i18n,omitempty"`
+	SynopsisI18n map[string]string `json:"synopsis_i18n,omitempty"`
 }
 
 // StoryJSON is one story (= campaign) of pack.json.

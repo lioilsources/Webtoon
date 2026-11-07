@@ -129,7 +129,8 @@ func planPart(opts Options, name string, stories []Story, now time.Time) (Part, 
 			worldsSeen[s.World.ID] = true
 			w := s.World
 			part.Manifest.Worlds = append(part.Manifest.Worlds, WorldJSON{ID: w.ID, Title: w.Title, Synopsis: w.Synopsis,
-				Tone: w.Tone, Audience: w.Audience, Language: w.Language, StyleID: w.StyleID, Type: s.Type})
+				Tone: w.Tone, Audience: w.Audience, Language: w.Language, StyleID: w.StyleID, Type: s.Type,
+				TitleI18n: s.WorldTitleI18n, SynopsisI18n: s.WorldSynopsisI18n})
 		}
 		sj := StoryJSON{ID: s.Campaign.ID, WorldID: s.World.ID, Title: s.Campaign.Title, Type: s.Type,
 			TitleI18n: json.RawMessage("{}"), Episodes: []string{}, Cover: coverPath(s.Campaign.ID)}

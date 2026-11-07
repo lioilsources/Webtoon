@@ -46,12 +46,13 @@ jobs:
 
       - name: Fetch starter pack
         # assets/packs/starter.zip is gitignored (93 MB artifact of `webtoon export-pack`);
-        # it ships as an asset of the starter-v1 GitHub release. Local difference from Distribution.
+        # it ships as an asset of the starter-v2 GitHub release (starter-v1 until v2 is published). Local difference from Distribution.
         env:
           GH_TOKEN: ${{ github.token }}
         # Without the release (not published yet) the build gets an empty placeholder pack, which PackStore ignores.
         run: |
-          gh release download starter-v1 -R ${{ github.repository }} -p starter.zip -D app/assets/packs --clobber \
+          gh release download starter-v2 -R ${{ github.repository }} -p starter.zip -D app/assets/packs --clobber \
+            || gh release download starter-v1 -R ${{ github.repository }} -p starter.zip -D app/assets/packs --clobber \
             || python3 -c "import zipfile,json; zipfile.ZipFile('app/assets/packs/starter.zip','w').writestr('pack.json', json.dumps({'schema':1,'id':'starter','title':'Starter','version':0,'worlds':[],'stories':[],'episodes':[]}))"
 
       - name: Build macOS (debug)
