@@ -30,6 +30,11 @@ type Options struct {
 	PlayerID          string
 	PlayerCharacterID string // default: first playable character
 	Title             string // campaign title, default: world title
+
+	// Replace re-imports the world's only story: its campaign (exactly one, with one episode) is deleted and
+	// created again under the same campaign and episode ids, so packs, gamebooks and readers' progress keep
+	// pointing at it. Media files of the episode that the new import does not use are removed afterwards.
+	Replace bool
 }
 
 type Result struct {
@@ -150,10 +155,38 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 
 	res := &Result{Panels: len(sb.Panels)}
 	var mediaDir string
+	used := map[string]bool{}
 	err = s.Tx(ctx, func(q *dbq.Queries) error {
 		var camp dbq.Campaign
 		var world *domain.World
 		next := 1
+		campID, epID := store.NewID("cp_"), store.NewID("ep_")
+		if o.Replace {
+			if o.CampaignID != "" {
+				return fmt.Errorf("-replace takes the world's only campaign, not -campaign")
+			}
+			cs, err := q.ListWorldCampaigns(ctx, o.WorldID)
+			if err != nil {
+				return err
+			}
+			if len(cs) != 1 {
+				return fmt.Errorf("replace: world %s has %d campaigns, want exactly 1", o.WorldID, len(cs))
+			}
+			eps, err := q.ListEpisodes(ctx, cs[0].ID)
+			if err != nil {
+				return err
+			}
+			if len(eps) != 1 {
+				return fmt.Errorf("replace: campaign %s has %d episodes, want exactly 1", cs[0].ID, len(eps))
+			}
+			campID, epID = cs[0].ID, eps[0].ID
+			if o.PlayerID == "" {
+				o.PlayerID = cs[0].PlayerID
+			}
+			if _, err := q.DeleteCampaign(ctx, campID); err != nil { // episodes and panels cascade
+				return err
+			}
+		}
 		if o.CampaignID != "" {
 			c, err := q.GetCampaignForUpdate(ctx, o.CampaignID)
 			if err != nil {
@@ -201,7 +234,7 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 				title = world.Title
 			}
 			camp, err = q.CreateCampaign(ctx, dbq.CreateCampaignParams{
-				ID: store.NewID("cp_"), WorldID: world.ID, PlayerID: o.PlayerID, Title: title, PlayerCharacterID: pcPtr,
+				ID: campID, WorldID: world.ID, PlayerID: o.PlayerID, Title: title, PlayerCharacterID: pcPtr,
 				State: store.MustJSON(state.Empty(world)), CanonProgress: json.RawMessage("[]"),
 			})
 			if err != nil {
@@ -214,7 +247,7 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 			premise = "(imported demo episode)"
 		}
 		e, err := q.CreateEpisode(ctx, dbq.CreateEpisodeParams{
-			ID: store.NewID("ep_"), CampaignID: camp.ID, Idx: int32(next), Premise: premise,
+			ID: epID, CampaignID: camp.ID, Idx: int32(next), Premise: premise,
 		})
 		if err != nil {
 			return err
@@ -237,7 +270,9 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 				return err
 			}
 		}
-		mediaDir = filepath.Join(o.MediaDir, "episodes", e.ID)
+		if !o.Replace {
+			mediaDir = filepath.Join(o.MediaDir, "episodes", e.ID) // removed again if the import fails
+		}
 		for i, p := range sb.Panels {
 			if err := q.InsertPanel(ctx, dbq.InsertPanelParams{
 				EpisodeID: e.ID, Idx: int32(i), Shot: p.Shot, LocationID: p.LocationID, GapAfter: p.GapAfter,
@@ -250,6 +285,7 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 			}
 			img := images[i]
 			rel := filepath.ToSlash(filepath.Join("episodes", e.ID, fmt.Sprintf("p%02d_%d.png", i, img.Seed)))
+			used[filepath.Base(rel)] = true
 			if err := copyFile(img.Path, filepath.Join(o.MediaDir, filepath.FromSlash(rel))); err != nil {
 				return err
 			}
@@ -262,6 +298,7 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 			}
 			if p.Animate && img.Video != "" {
 				vrel := filepath.ToSlash(filepath.Join("episodes", e.ID, fmt.Sprintf("p%02d_video_%d.webp", i, img.VideoSeed)))
+				used[filepath.Base(vrel)] = true
 				if err := copyFile(img.Video, filepath.Join(o.MediaDir, filepath.FromSlash(vrel))); err != nil {
 					return err
 				}
@@ -294,6 +331,17 @@ func Import(ctx context.Context, s *store.Store, o Options) (*Result, error) {
 			_ = os.RemoveAll(mediaDir)
 		}
 		return nil, err
+	}
+	if o.Replace {
+		// panels dropped from the storyboard and old seeds: nothing in the DB points at them any more
+		dir := filepath.Join(o.MediaDir, "episodes", res.EpisodeID)
+		if ents, err := os.ReadDir(dir); err == nil {
+			for _, f := range ents {
+				if !f.IsDir() && !used[f.Name()] {
+					_ = os.Remove(filepath.Join(dir, f.Name()))
+				}
+			}
+		}
 	}
 	return res, nil
 }

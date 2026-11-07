@@ -1,0 +1,104 @@
+{
+  "id": "w_lx_k4_07_kai_ohnivy_drak__fantasy_colorlines",
+  "title": "Kai a ohnivý drak z planety Vulkan",
+  "title_i18n": {
+    "en": "Kai and the Fire Dragon of Planet Vulkan",
+    "de": "Kai und der feurige Drache vom Vulkan-Planet",
+    "it": "Kai e il drago di fuoco del pianeta Vulkan",
+    "fr": "Kai et le dragon de feu de la planète Vulkan",
+    "pl": "Kai i ognisty smok z planety Vulkan",
+    "pt-BR": "Kai e o dragão de fogo do planeta Vulkan",
+    "ja": "カイと火のドラゴン、惑星ヴォルカンより",
+    "ko": "카이와 화염의 드래곤, 화성 행성에서",
+    "vi": "Kai và Rồng Lửa từ Hành Tinh Vulkan",
+    "ru": "Кай и огненный дракон с планеты Вулкан",
+    "uk": "Кай та вогняний дракон з планети Вулкан"
+  },
+  "synopsis": "Kai se musí postavit démonickému drakovi na lávové planetě a prokázat svou sílu.",
+  "synopsis_i18n": {
+    "en": "Kai must face a demonic dragon on a lava planet and prove his strength.",
+    "de": "Kai muss sich auf einem Lavaplaneten einem dämonischen Drachen stellen und seine Stärke beweisen.",
+    "it": "Kai deve affrontare un drago demoniaco su un pianeta di lava e dimostrare la sua forza.",
+    "fr": "Kai doit affronter un dragon démoniaque sur une planète de lave et prouver sa force.",
+    "pl": "Kai musi stawić czoła demonicznemu smokowi na planecie lawy i udowodnić swoją siłę.",
+    "pt-BR": "Kai precisa enfrentar um dragão demoníaco num planeta de lava e provar sua força.",
+    "ja": "カイは溶岩の惑星で悪魔の竜に立ち向かい、自分の力を証明しなければならない。",
+    "ko": "카이는 용암 행성에서 악마 같은 용에 맞서 자신의 힘을 증명해야 한다.",
+    "vi": "Kai phải đối đầu với con rồng quỷ trên hành tinh dung nham và chứng minh sức mạnh của mình.",
+    "ru": "Каю предстоит сразиться с демоническим драконом на лавовой планете и доказать свою силу.",
+    "uk": "Каєві належить стати проти демонічного дракона на лавовій планеті й довести свою силу."
+  },
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "fantasy_colorlines",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: Kai dokázal ovládnout svou sílu a drak byl poražen."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_crater",
+      "l_lava"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kai",
+      "name": "Kai",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a determined Czech boy aged 9 with messy red hair and an ahoge",
+      "base": "male child, red hair, messy hair, ahoge, red eyes, fair skin",
+      "outfits": {
+        "default": "black martial arts gi, red sash, red wristbands, black boots"
+      },
+      "photo": "a determined Czech boy aged 9 with messy red hair and an ahoge",
+      "tag_prompt": "male child, red hair, messy hair, ahoge, red eyes, fair skin, black martial arts gi, red sash, red wristbands, black boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dragon",
+      "name": "Démonický drak",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large demonic dragon with purple scales and glowing yellow eyes",
+      "base": "dragon, large, purple skin, horns, sharp teeth, glowing yellow eyes",
+      "outfits": {
+        "default": "dark purple flames, shadow aura"
+      },
+      "photo": "a large demonic dragon with purple scales and glowing yellow eyes",
+      "tag_prompt": "dragon, large, purple skin, horns, sharp teeth, glowing yellow eyes, dark purple flames, shadow aura",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_crater",
+      "name": "Soptící kráter",
+      "description": "Soptící kráter",
+      "tag_prompt": "outdoors, volcano crater, lava river, red sky, floating rocks, smoke, fire, night",
+      "mood": ""
+    },
+    {
+      "id": "l_lava",
+      "name": "Lávová planeta",
+      "description": "Lávová planeta",
+      "tag_prompt": "outdoors, alien planet, lava fields, red atmosphere, floating debris, dramatic lighting",
+      "mood": ""
+    }
+  ],
+  "profile": "superhero"
+}

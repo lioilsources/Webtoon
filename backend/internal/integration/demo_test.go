@@ -2,6 +2,7 @@ package integration
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"image"
 	"image/png"
@@ -85,5 +86,54 @@ func TestImportDemo(t *testing.T) {
 	}
 	if _, err := demo.Import(ctx, e.s, demo.Options{Storyboard: sb, PanelDir: dir, MediaDir: e.media, CampaignID: res.CampaignID}); err == nil {
 		t.Fatal("import into a campaign with a queued episode should fail")
+	}
+}
+
+// TestImportDemoReplace re-imports a trimmed storyboard: same campaign and episode ids, fewer panels, the
+// dropped panels' images gone from MEDIA_DIR.
+func TestImportDemoReplace(t *testing.T) {
+	e := setup(t)
+	ctx := context.Background()
+	raw, err := os.ReadFile("../testdata/storyboard_ep1.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	dir := t.TempDir()
+	for i := range 6 {
+		f, err := os.Create(filepath.Join(dir, fmt.Sprintf("p%02d_s0.png", i)))
+		if err != nil {
+			t.Fatal(err)
+		}
+		if err := png.Encode(f, image.NewRGBA(image.Rect(0, 0, 832, 1216))); err != nil {
+			t.Fatal(err)
+		}
+		f.Close()
+	}
+	first, err := demo.Import(ctx, e.s, demo.Options{Storyboard: raw, PanelDir: dir, MediaDir: e.media,
+		WorldID: "w_skyisles", PlayerID: "reader"})
+	if err != nil {
+		t.Fatal(err)
+	}
+	var sb map[string]any
+	if err := json.Unmarshal(raw, &sb); err != nil {
+		t.Fatal(err)
+	}
+	sb["panels"] = sb["panels"].([]any)[:4]
+	trimmed, _ := json.Marshal(sb)
+	again, err := demo.Import(ctx, e.s, demo.Options{Storyboard: trimmed, PanelDir: dir, MediaDir: e.media,
+		WorldID: "w_skyisles", PlayerID: "reader", Replace: true})
+	if err != nil {
+		t.Fatal(err)
+	}
+	if again.CampaignID != first.CampaignID || again.EpisodeID != first.EpisodeID || again.Panels != 4 {
+		t.Fatalf("replace %+v, first %+v", again, first)
+	}
+	files, _ := os.ReadDir(filepath.Join(e.media, "episodes", again.EpisodeID))
+	if len(files) != 4 {
+		t.Fatalf("media files after replace: %d, want 4", len(files))
+	}
+	ep := e.do("GET", "/episodes/"+again.EpisodeID, "reader", nil, 200)
+	if n := len(ep["panels"].([]any)); n != 4 {
+		t.Fatalf("episode panels %d, want 4", n)
 	}
 }

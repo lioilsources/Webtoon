@@ -398,5 +398,8 @@ SELECT * FROM panels WHERE episode_id = $1 AND idx = $2 FOR UPDATE;
 -- name: ListAllWorlds :many
 SELECT * FROM worlds ORDER BY id;
 
+-- name: DeleteCampaign :execrows
+DELETE FROM campaigns WHERE id = $1;
+
 -- name: ListWorldCampaigns :many
 SELECT * FROM campaigns WHERE world_id = $1 ORDER BY created_at, id;
