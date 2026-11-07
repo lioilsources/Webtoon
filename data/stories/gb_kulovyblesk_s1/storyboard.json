@@ -1,0 +1,743 @@
+{
+  "title": "Kulový blesk v neonovém zákopu",
+  "title_i18n": {
+    "de": "Kugelblitz im Neonschützengraben",
+    "en": "Ball Lightning in the Neon Trench",
+    "fr": "Foudre en boule dans la tranchée au néon",
+    "it": "Fulmine globulare nella trincea al neon",
+    "ja": "ネオンの塹壕に球電",
+    "ko": "네온 참호 속의 구전",
+    "pl": "Piorun kulisty w neonowym okopie",
+    "pt-BR": "Raio globular na trincheira de neon",
+    "ru": "Шаровая молния в неоновом окопе",
+    "uk": "Кульова блискавка в неоновому окопі",
+    "vi": "Sét hòn trong chiến hào neon"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_restaurace",
+      "characters": [],
+      "visual_tags": [
+        "futuristic restaurant interior",
+        "glowing neon signs",
+        "steam vents",
+        "ball-lightning orb lamp above a table",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon signs softly flickering, steam drifting, the ball-lightning lamp crackling gently, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a restaurant table",
+        "glass of cold beer",
+        "goulash",
+        "bread dumplings",
+        "steaming plate",
+        "content smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a restaurant table",
+        "holding a wine glass",
+        "white wine",
+        "long-stemmed glass",
+        "plate of spaghetti with grated parmesan",
+        "steam jets",
+        "quiet contempt"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [],
+      "visual_tags": [
+        "close-up of hands",
+        "fork",
+        "bread dumpling",
+        "goulash sauce",
+        "dipping",
+        "steam rising"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the dumpling slice dipped slowly into the sauce, steam rising"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "twirling spaghetti on a fork",
+        "precise",
+        "cold calm gaze",
+        "looking at another"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "slight smirk",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Víš, Oline, mně na tomhle světě fascinuje, jak si někteří lidé dokážou zromantizovat obyčejnou stagnaci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weißt du, Olin, was mich an dieser Welt fasziniert, ist, wie manche Leute es schaffen, gewöhnliche Stagnation zu romantisieren.",
+            "en": "You know, Olin, what fascinates me about this world is how some people manage to romanticise plain stagnation.",
+            "fr": "Tu sais, Olin, ce qui me fascine dans ce monde, c'est comme certains arrivent à romantiser une banale stagnation.",
+            "it": "Sai, Olin, quello che mi affascina di questo mondo è come certe persone riescano a romanticizzare la semplice stagnazione.",
+            "ja": "ねえオリン、この世界で私が不思議でならないのは、ただの停滞をロマンチックに飾れる人がいることよ。",
+            "ko": "있잖아, 올린. 이 세상에서 내가 신기한 건, 어떤 사람들은 그냥 정체된 걸 낭만으로 포장할 줄 안다는 거야.",
+            "pl": "Wiesz, Olinie, w tym świecie fascynuje mnie, jak niektórzy ludzie potrafią romantyzować zwykłą stagnację.",
+            "pt-BR": "Sabe, Olin, o que me fascina neste mundo é como certas pessoas conseguem romantizar a pura estagnação.",
+            "ru": "Знаешь, Олин, меня в этом мире поражает, как некоторые умудряются романтизировать обычный застой.",
+            "uk": "Знаєш, Оліне, мене в цьому світі вражає, як дехто вміє романтизувати звичайний застій.",
+            "vi": "Anh biết không, Olin, điều làm em thấy lạ ở thế giới này là có người lại thơ mộng hóa được cả sự trì trệ tầm thường."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Zatímco celá generace inovuje, ty si v roce 2026 s klidem v duši dál krájíš knedlík v podniku, kde světlo obstarávají reaktory na vyjetý olej.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Während eine ganze Generation innoviert, schneidest du 2026 seelenruhig weiter deinen Knödel, in einem Laden, wo das Licht von Reaktoren mit Altöl kommt.",
+            "en": "While a whole generation innovates, there you are in 2026, calmly cutting your dumpling in a place where the lights run on reactors burning used oil.",
+            "fr": "Pendant que toute une génération innove, toi, en 2026, tu continues tranquillement à couper ta quenelle dans un endroit éclairé par des réacteurs à l'huile usagée.",
+            "it": "Mentre un'intera generazione innova, tu nel 2026 continui serafico a tagliare il tuo knödel in un locale dove la luce la fanno reattori a olio esausto.",
+            "ja": "世代まるごとがイノベーションしているのに、あなたは2026年にもなって、廃油リアクターで明かりを灯す店で、平然とクネドリーキを切っている。",
+            "ko": "한 세대 전체가 혁신하는 동안 넌 2026년에도 폐유 원자로로 불을 밝히는 식당에서 태연하게 크네들리키나 자르고 있지.",
+            "pl": "Podczas gdy całe pokolenie wprowadza innowacje, ty w 2026 roku ze spokojem ducha dalej kroisz knedla w lokalu, gdzie światło dają reaktory na zużyty olej.",
+            "pt-BR": "Enquanto uma geração inteira inova, você, em 2026, segue cortando seu bolinho com a alma em paz, num lugar onde a luz vem de reatores a óleo usado.",
+            "ru": "Пока целое поколение внедряет инновации, ты в 2026 году с душевным покоем режешь свой кнедлик в заведении, где свет дают реакторы на отработанном масле.",
+            "uk": "Поки ціле покоління впроваджує інновації, ти у 2026 році зі спокійною душею й далі ріжеш свій кнедлик у закладі, де світло дають реактори на відпрацьованій олії.",
+            "vi": "Trong khi cả một thế hệ đổi mới, anh năm 2026 vẫn thản nhiên cắt bánh knedlík trong một quán mà đèn chạy bằng lò phản ứng dầu thải."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Úsporné, ekologické a hlavně... neuvěřitelně pohodlné.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sparsam, ökologisch und vor allem... unglaublich bequem.",
+            "en": "Economical, ecological and above all... unbelievably comfortable.",
+            "fr": "Économe, écologique et surtout... incroyablement confortable.",
+            "it": "Economico, ecologico e soprattutto... incredibilmente comodo.",
+            "ja": "節約的で、エコで、何より……信じられないくらい楽ちん。",
+            "ko": "알뜰하고, 친환경적이고, 무엇보다… 믿을 수 없을 만큼 편하지.",
+            "pl": "Oszczędne, ekologiczne, a przede wszystkim... niewiarygodnie wygodne.",
+            "pt-BR": "Econômico, ecológico e, acima de tudo... incrivelmente confortável.",
+            "ru": "Экономно, экологично и главное... невероятно удобно.",
+            "uk": "Ощадливо, екологічно, а головне... неймовірно зручно.",
+            "vi": "Tiết kiệm, sinh thái và trên hết là... thoải mái không tưởng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "wide smile",
+        "eyes half closed",
+        "blissful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_45",
+          "text": "Víš co je na tom nejkrásnější, Jani? Že ten knedlík prostě funguje. Nemusíš ho kompilovat, nemusíš ladit závislosti v konfiguračním souboru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weißt du, was daran das Schönste ist, Jana? Dass der Knödel einfach funktioniert. Du musst ihn nicht kompilieren, du musst keine Abhängigkeiten in einer Konfigurationsdatei debuggen.",
+            "en": "You know what's the most beautiful thing about it, Jana? That dumpling just works. You don't have to compile it, you don't have to debug dependencies in a config file.",
+            "fr": "Tu sais ce qu'il y a de plus beau, Jana ? Cette quenelle fonctionne, tout simplement. Pas besoin de la compiler, pas besoin de déboguer des dépendances dans un fichier de config.",
+            "it": "Sai qual è la cosa più bella, Jana? Che quel knödel funziona e basta. Non devi compilarlo, non devi sistemare le dipendenze in un file di configurazione.",
+            "ja": "一番すてきなところが何かわかる、ヤナ？　このクネドリーキはちゃんと動くってこと。コンパイルもいらないし、設定ファイルの依存関係をデバッグする必要もない。",
+            "ko": "제일 좋은 게 뭔지 알아, 야나? 이 크네들리키는 그냥 작동한다는 거야. 컴파일할 필요도, 설정 파일에서 의존성을 디버깅할 필요도 없어.",
+            "pl": "Wiesz, co jest w tym najpiękniejsze, Janka? Że ten knedel po prostu działa. Nie musisz go kompilować, nie musisz debugować zależności w pliku konfiguracyjnym.",
+            "pt-BR": "Sabe o que é mais bonito nisso, Jana? Que esse bolinho simplesmente funciona. Você não precisa compilá-lo, nem depurar dependências num arquivo de configuração.",
+            "ru": "Знаешь, что в этом самое прекрасное, Яна? Что этот кнедлик просто работает. Его не надо компилировать, не надо отлаживать зависимости в конфиге.",
+            "uk": "Знаєш, що в цьому найкраще, Яно? Що цей кнедлик просто працює. Його не треба компілювати, не треба налагоджувати залежності в конфігураційному файлі.",
+            "vi": "Em biết điều đẹp nhất là gì không, Jana? Là cái bánh knedlík này cứ thế mà chạy. Không cần biên dịch, không cần gỡ lỗi phụ thuộc trong tệp cấu hình."
+          }
+        },
+        {
+          "speaker_id": "olin_45",
+          "text": "Prostě existuje a dělá radost. Někdy je největší inovací nechat věci na pokoji.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Er existiert einfach und macht Freude. Manchmal ist die größte Innovation, die Dinge in Ruhe zu lassen.",
+            "en": "It simply exists and brings joy. Sometimes the greatest innovation is to leave things alone.",
+            "fr": "Elle existe, voilà tout, et elle fait plaisir. Parfois, la plus grande innovation, c'est de laisser les choses tranquilles.",
+            "it": "Esiste e basta, e mette allegria. A volte la più grande innovazione è lasciare le cose come stanno.",
+            "ja": "ただそこにあって、うれしくさせてくれる。ときには、何もいじらないのが最大のイノベーションなんだ。",
+            "ko": "그냥 존재하면서 기쁨을 줘. 때로는 그냥 내버려 두는 게 가장 큰 혁신이야.",
+            "pl": "Po prostu istnieje i sprawia radość. Czasem największą innowacją jest zostawić rzeczy w spokoju.",
+            "pt-BR": "Ele simplesmente existe e traz alegria. Às vezes a maior inovação é deixar as coisas em paz.",
+            "ru": "Он просто существует и радует. Иногда величайшая инновация — оставить всё как есть.",
+            "uk": "Він просто існує і тішить. Іноді найбільша інновація — залишити все як є.",
+            "vi": "Nó cứ thế tồn tại và mang lại niềm vui. Đôi khi đổi mới lớn nhất là để mọi thứ yên."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "raised eyebrow",
+        "looking down at her wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Nechat věci na pokoji není inovace, Oline. To je definice rezignace.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Dinge in Ruhe zu lassen ist keine Innovation, Olin. Das ist die Definition von Resignation.",
+            "en": "Leaving things alone isn't innovation, Olin. It's the definition of resignation.",
+            "fr": "Laisser les choses tranquilles, ce n'est pas de l'innovation, Olin. C'est la définition de la résignation.",
+            "it": "Lasciare le cose come stanno non è innovazione, Olin. È la definizione di rassegnazione.",
+            "ja": "いじらないのはイノベーションじゃないわ、オリン。それは諦めの定義よ。",
+            "ko": "내버려 두는 건 혁신이 아니야, 올린. 그건 체념의 정의지.",
+            "pl": "Zostawianie rzeczy w spokoju to nie innowacja, Olinie. To definicja rezygnacji.",
+            "pt-BR": "Deixar as coisas em paz não é inovação, Olin. É a definição de resignação.",
+            "ru": "Оставить всё как есть — это не инновация, Олин. Это определение смирения.",
+            "uk": "Залишити все як є — це не інновація, Оліне. Це визначення зневіри.",
+            "vi": "Để mọi thứ yên không phải là đổi mới, Olin. Đó là định nghĩa của sự buông xuôi."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Pokrok se nedělá tím, že budeme sedět se zkříženýma nohama a usmívat se na knedlík jako buddistský mnich na marihuanové plantáži.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fortschritt entsteht nicht, indem wir im Schneidersitz dasitzen und einen Knödel anlächeln wie ein buddhistischer Mönch auf einer Marihuana-Plantage.",
+            "en": "Progress isn't made by sitting cross-legged and smiling at a dumpling like a Buddhist monk on a marijuana plantation.",
+            "fr": "Le progrès ne se fait pas en restant assis en tailleur à sourire à une quenelle comme un moine bouddhiste dans une plantation de marijuana.",
+            "it": "Il progresso non si fa stando seduti a gambe incrociate a sorridere a un knödel come un monaco buddista in una piantagione di marijuana.",
+            "ja": "進歩っていうのは、大麻農園の仏僧みたいにあぐらをかいてクネドリーキに微笑んでいても生まれないの。",
+            "ko": "진보는 대마초 농장의 불교 승려처럼 가부좌를 틀고 크네들리키에 미소 짓는다고 이뤄지지 않아.",
+            "pl": "Postępu nie robi się, siedząc po turecku i uśmiechając się do knedla jak buddyjski mnich na plantacji marihuany.",
+            "pt-BR": "O progresso não se faz sentando de pernas cruzadas e sorrindo para um bolinho como um monge budista numa plantação de maconha.",
+            "ru": "Прогресс не делается так, что мы сидим, скрестив ноги, и улыбаемся кнедлику, как буддийский монах на плантации марихуаны.",
+            "uk": "Прогрес не робиться так, що ми сидимо схрестивши ноги й усміхаємося кнедлику, як буддійський чернець на плантації марихуани.",
+            "vi": "Tiến bộ không đến từ việc ngồi xếp bằng mỉm cười với cái bánh như một nhà sư trên đồn điền cần sa."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Pokrok vyžaduje systém, metriky a hlavně neustálou konfrontaci s chybami.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fortschritt braucht ein System, Kennzahlen und vor allem die ständige Konfrontation mit Fehlern.",
+            "en": "Progress needs a system, metrics and above all constant confrontation with mistakes.",
+            "fr": "Le progrès exige un système, des indicateurs et surtout une confrontation permanente avec les erreurs.",
+            "it": "Il progresso richiede un sistema, metriche e soprattutto un confronto continuo con gli errori.",
+            "ja": "進歩に必要なのはシステムと指標、そして何より、絶えず失敗と向き合うことよ。",
+            "ko": "진보에는 시스템과 지표, 그리고 무엇보다 끊임없이 실수와 맞서는 게 필요해.",
+            "pl": "Postęp wymaga systemu, metryk, a przede wszystkim nieustannej konfrontacji z błędami.",
+            "pt-BR": "O progresso exige sistema, métricas e, acima de tudo, confronto constante com os erros.",
+            "ru": "Прогресс требует системы, метрик и прежде всего постоянной конфронтации с ошибками.",
+            "uk": "Прогрес потребує системи, метрик і передусім постійної конфронтації з помилками.",
+            "vi": "Tiến bộ cần hệ thống, chỉ số và trên hết là không ngừng đối mặt với sai lầm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "slight nod",
+        "holding a glass of beer",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_45",
+          "text": "Jasně, metriky jsou fajn. Měřil jsem si radost z toho guláše a graf je konstantně nahoře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Klar, Kennzahlen sind toll. Ich habe meine Freude an dem Gulasch gemessen, und die Kurve bleibt konstant oben.",
+            "en": "Sure, metrics are nice. I measured my joy from this goulash and the graph stays constantly at the top.",
+            "fr": "Bien sûr, les indicateurs, c'est bien. J'ai mesuré ma joie devant ce goulash et la courbe reste constamment en haut.",
+            "it": "Certo, le metriche vanno bene. Ho misurato la mia gioia per questo gulasch e il grafico resta costantemente in alto.",
+            "ja": "もちろん、指標はいいね。このグヤーシュの喜びを測ってみたら、グラフはずっと天井に張りついてる。",
+            "ko": "그래, 지표 좋지. 이 굴라시가 주는 기쁨을 재봤는데 그래프가 계속 꼭대기야.",
+            "pl": "Jasne, metryki są fajne. Zmierzyłem sobie radość z tego gulaszu i wykres stale jest na górze.",
+            "pt-BR": "Claro, métricas são legais. Medi minha alegria com esse gulache e o gráfico está constantemente lá em cima.",
+            "ru": "Конечно, метрики — это здорово. Я измерил свою радость от этого гуляша, и график стабильно наверху.",
+            "uk": "Звісно, метрики — це класно. Я виміряв свою радість від цього гуляшу, і графік стабільно нагорі.",
+            "vi": "Ừ, chỉ số thì hay đấy. Anh đã đo niềm vui từ món goulash này và biểu đồ luôn ở đỉnh."
+          }
+        },
+        {
+          "speaker_id": "olin_45",
+          "text": "Zato tvoje špagety vypadají, že prošly přísnou iterací s nulovou přidanou hodnotou pro chuťové pohárky. Ale chápu, hlavní je, že to má správný KPI.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Deine Spaghetti dagegen sehen aus, als hätten sie eine strenge Iteration ohne jeden Mehrwert für die Geschmacksknospen durchlaufen. Aber ich verstehe, Hauptsache, der KPI stimmt.",
+            "en": "Your spaghetti, on the other hand, looks like it went through a strict iteration with zero added value for the taste buds. But I get it, the main thing is it has the right KPI.",
+            "fr": "Tes spaghetti, eux, ont l'air d'être passés par une itération stricte à valeur ajoutée nulle pour les papilles. Mais je comprends, l'essentiel, c'est d'avoir le bon KPI.",
+            "it": "I tuoi spaghetti invece sembrano usciti da un'iterazione rigorosa a valore aggiunto zero per le papille gustative. Ma capisco, l'importante è che abbiano il KPI giusto.",
+            "ja": "それに比べて君のスパゲッティは、味蕾への付加価値ゼロの厳しいイテレーションを経てきたみたいだ。でもわかるよ、大事なのは正しいKPIだもんね。",
+            "ko": "반면 네 스파게티는 미각에 대한 부가가치 제로인 엄격한 반복 과정을 거친 것 같아. 그래도 이해해, 중요한 건 KPI가 맞는 거니까.",
+            "pl": "Za to twoje spaghetti wyglądają, jakby przeszły surową iterację z zerową wartością dodaną dla kubków smakowych. Ale rozumiem, najważniejsze, że mają właściwy KPI.",
+            "pt-BR": "Já o seu espaguete parece ter passado por uma iteração rigorosa com valor agregado zero para as papilas gustativas. Mas eu entendo, o principal é ter o KPI certo.",
+            "ru": "Зато твои спагетти выглядят так, будто прошли строгую итерацию с нулевой добавленной стоимостью для вкусовых рецепторов. Но я понимаю, главное — правильный KPI.",
+            "uk": "Зате твої спагеті виглядають так, ніби пройшли сувору ітерацію з нульовою доданою вартістю для смакових рецепторів. Але я розумію, головне — правильний KPI.",
+            "vi": "Còn đĩa spaghetti của em trông như đã qua một vòng lặp nghiêm ngặt với giá trị gia tăng bằng không cho vị giác. Nhưng anh hiểu, quan trọng là nó có đúng KPI."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "narrowed eyes",
+        "holding a long-stemmed wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Moje špagety mají na rozdíl od tvého oběda jasnou strukturu a standardizovaný původ, Oline.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Im Gegensatz zu deinem Mittagessen haben meine Spaghetti eine klare Struktur und eine standardisierte Herkunft, Olin.",
+            "en": "Unlike your lunch, my spaghetti has a clear structure and a standardised origin, Olin.",
+            "fr": "Contrairement à ton déjeuner, mes spaghetti ont une structure claire et une origine standardisée, Olin.",
+            "it": "A differenza del tuo pranzo, i miei spaghetti hanno una struttura chiara e un'origine standardizzata, Olin.",
+            "ja": "あなたのお昼と違って、私のスパゲッティには明確な構造と標準化された出自があるの、オリン。",
+            "ko": "네 점심과 달리 내 스파게티는 명확한 구조와 표준화된 출처가 있어, 올린.",
+            "pl": "Moje spaghetti, w przeciwieństwie do twojego obiadu, mają jasną strukturę i standaryzowane pochodzenie, Olinie.",
+            "pt-BR": "Ao contrário do seu almoço, meu espaguete tem uma estrutura clara e uma origem padronizada, Olin.",
+            "ru": "В отличие от твоего обеда, у моих спагетти чёткая структура и стандартизированное происхождение, Олин.",
+            "uk": "На відміну від твого обіду, мої спагеті мають чітку структуру й стандартизоване походження, Оліне.",
+            "vi": "Khác với bữa trưa của anh, spaghetti của em có cấu trúc rõ ràng và nguồn gốc chuẩn hóa, Olin."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Kdybys aspoň jednou v životě koukal na data a ne na svý subjektivní pocity, tak víš, že italská gastronomie má globální dosah, kdežto ten tvůj guláš je lokální anomálie odsouzená k zániku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn du nur einmal im Leben auf die Daten schauen würdest statt auf deine subjektiven Gefühle, wüsstest du, dass die italienische Küche globale Reichweite hat, während dein Gulasch eine lokale Anomalie ist, die zum Aussterben verurteilt ist.",
+            "en": "If you looked at the data just once in your life instead of your subjective feelings, you'd know that Italian cuisine has global reach, while that goulash of yours is a local anomaly doomed to extinction.",
+            "fr": "Si tu regardais les données au moins une fois dans ta vie, et pas tes impressions subjectives, tu saurais que la gastronomie italienne a une portée mondiale, alors que ton goulash est une anomalie locale vouée à disparaître.",
+            "it": "Se almeno una volta nella vita guardassi i dati e non le tue sensazioni soggettive, sapresti che la cucina italiana ha una portata globale, mentre quel tuo gulasch è un'anomalia locale destinata all'estinzione.",
+            "ja": "一度でいいから主観じゃなくてデータを見てたら、わかるはずよ。イタリア料理は世界規模なのに、あなたのグヤーシュは絶滅寸前のローカルな異常値だって。",
+            "ko": "평생 한 번이라도 네 주관적인 느낌 말고 데이터를 봤다면 알 거야. 이탈리아 요리는 전 세계에 퍼져 있지만 네 굴라시는 멸종할 운명의 지역적 이상치라는 걸.",
+            "pl": "Gdybyś choć raz w życiu patrzył na dane, a nie na swoje subiektywne odczucia, to wiesz, że włoska gastronomia ma globalny zasięg, a ten twój gulasz to lokalna anomalia skazana na wymarcie.",
+            "pt-BR": "Se você olhasse pelo menos uma vez na vida para os dados e não para os seus sentimentos subjetivos, saberia que a gastronomia italiana tem alcance global, enquanto esse seu gulache é uma anomalia local condenada à extinção.",
+            "ru": "Если бы ты хоть раз в жизни смотрел на данные, а не на свои субъективные ощущения, то знал бы, что итальянская кухня имеет глобальный охват, а твой гуляш — локальная аномалия, обречённая на вымирание.",
+            "uk": "Якби ти хоч раз у житті дивився на дані, а не на свої суб'єктивні відчуття, то знав би, що італійська кухня має глобальне охоплення, а твій гуляш — локальна аномалія, приречена на зникнення.",
+            "vi": "Nếu một lần trong đời anh nhìn vào dữ liệu thay vì cảm xúc chủ quan, anh sẽ biết ẩm thực Ý có tầm ảnh hưởng toàn cầu, còn món goulash của anh là một dị biệt địa phương sắp tuyệt chủng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "the wine trembling slightly in the long-stemmed glass, eyes narrowing"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "laughing",
+        "calm",
+        "eyes half closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_45",
+          "text": "Anomálie, která zasytí duši. Vzácná věc v dnešním světě plném dashboardů. Víš, klid je nejlepší optimalizace.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Eine Anomalie, die die Seele satt macht. Eine Seltenheit in der heutigen Welt voller Dashboards. Weißt du, Ruhe ist die beste Optimierung.",
+            "en": "An anomaly that feeds the soul. A rare thing in today's world full of dashboards. You know, calm is the best optimisation.",
+            "fr": "Une anomalie qui nourrit l'âme. Chose rare dans le monde d'aujourd'hui, plein de tableaux de bord. Tu sais, le calme est la meilleure optimisation.",
+            "it": "Un'anomalia che sazia l'anima. Una cosa rara nel mondo di oggi, pieno di dashboard. Sai, la calma è la migliore ottimizzazione.",
+            "ja": "魂を満たす異常値。ダッシュボードだらけの今の世の中じゃ貴重だよ。ねえ、落ち着きこそ最高の最適化さ。",
+            "ko": "영혼을 배부르게 하는 이상치지. 대시보드로 가득한 요즘 세상엔 귀한 거야. 있잖아, 평온이 최고의 최적화야.",
+            "pl": "Anomalia, która syci duszę. Rzadkość w dzisiejszym świecie pełnym dashboardów. Wiesz, spokój to najlepsza optymalizacja.",
+            "pt-BR": "Uma anomalia que sacia a alma. Coisa rara no mundo de hoje, cheio de dashboards. Sabe, a calma é a melhor otimização.",
+            "ru": "Аномалия, которая насыщает душу. Редкость в нынешнем мире, полном дашбордов. Знаешь, спокойствие — лучшая оптимизация.",
+            "uk": "Аномалія, що насичує душу. Рідкість у сучасному світі, повному дашбордів. Знаєш, спокій — найкраща оптимізація.",
+            "vi": "Một dị biệt làm no lòng tâm hồn. Thứ hiếm hoi trong thế giới ngày nay đầy những bảng điều khiển. Em biết không, bình thản là cách tối ưu tốt nhất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "leaning forward over the table",
+        "chin forward",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Klid není optimalizace. Klid je jenom nedostatek podnětů, Oline. A jestli si myslíš, že pasivitou něco vyřešíš, tak žiješ v iluzi.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ruhe ist keine Optimierung. Ruhe ist nur ein Mangel an Reizen, Olin. Und wenn du glaubst, mit Passivität etwas zu lösen, lebst du in einer Illusion.",
+            "en": "Calm isn't optimisation. Calm is just a lack of stimuli, Olin. And if you think passivity solves anything, you're living in an illusion.",
+            "fr": "Le calme n'est pas une optimisation. Le calme, c'est juste un manque de stimuli, Olin. Et si tu crois régler quoi que ce soit par la passivité, tu vis dans une illusion.",
+            "it": "La calma non è ottimizzazione. La calma è solo mancanza di stimoli, Olin. E se pensi di risolvere qualcosa con la passività, vivi in un'illusione.",
+            "ja": "落ち着きは最適化じゃない。ただの刺激不足よ、オリン。受け身で何か解決できると思ってるなら、幻想の中で生きてるわ。",
+            "ko": "평온은 최적화가 아니야. 그냥 자극이 부족한 거지, 올린. 수동적으로 뭔가 해결된다고 생각한다면 넌 환상 속에 사는 거야.",
+            "pl": "Spokój to nie optymalizacja. Spokój to tylko brak bodźców, Olinie. A jeśli myślisz, że biernością coś rozwiążesz, to żyjesz w iluzji.",
+            "pt-BR": "Calma não é otimização. Calma é só falta de estímulos, Olin. E se você acha que resolve alguma coisa com passividade, vive numa ilusão.",
+            "ru": "Спокойствие — не оптимизация. Спокойствие — это просто нехватка стимулов, Олин. И если ты думаешь, что пассивностью что-то решишь, ты живёшь в иллюзии.",
+            "uk": "Спокій — не оптимізація. Спокій — це лише брак подразників, Оліне. І якщо ти думаєш, що пасивністю щось розв'яжеш, ти живеш в ілюзії.",
+            "vi": "Bình thản không phải là tối ưu. Bình thản chỉ là thiếu kích thích thôi, Olin. Và nếu anh nghĩ sự thụ động giải quyết được gì, anh đang sống trong ảo tưởng."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Pravda je taková, že bez systematického tlaku a nekompromisní kontroly se všechno rozsype. Já vím, o čem mluvím, protože já ty systémy denně řídím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Wahrheit ist: Ohne systematischen Druck und kompromisslose Kontrolle fällt alles auseinander. Ich weiß, wovon ich rede, denn ich leite diese Systeme jeden Tag.",
+            "en": "The truth is, without systematic pressure and uncompromising control everything falls apart. I know what I'm talking about, because I run those systems every day.",
+            "fr": "La vérité, c'est que sans pression systématique et sans contrôle intransigeant, tout s'effondre. Je sais de quoi je parle, parce que ces systèmes, je les pilote tous les jours.",
+            "it": "La verità è che senza una pressione sistematica e un controllo senza compromessi tutto va in pezzi. So di cosa parlo, perché quei sistemi li gestisco ogni giorno.",
+            "ja": "本当のところ、体系的な圧力と妥協のない管理がなければ、全部崩れるの。私はわかって言ってる。そういうシステムを毎日動かしてるのは私だから。",
+            "ko": "사실은, 체계적인 압박과 타협 없는 통제가 없으면 모든 게 무너져. 난 알고 하는 말이야. 그런 시스템을 매일 운영하는 게 나니까.",
+            "pl": "Prawda jest taka, że bez systematycznej presji i bezkompromisowej kontroli wszystko się rozsypie. Wiem, o czym mówię, bo ja tymi systemami codziennie zarządzam.",
+            "pt-BR": "A verdade é que, sem pressão sistemática e controle intransigente, tudo desmorona. Eu sei do que estou falando, porque comando esses sistemas todos os dias.",
+            "ru": "Правда в том, что без систематического давления и бескомпромиссного контроля всё развалится. Я знаю, о чём говорю, потому что я эти системы каждый день веду.",
+            "uk": "Правда в тому, що без систематичного тиску й безкомпромісного контролю все розсиплеться. Я знаю, про що кажу, бо я ці системи щодня веду.",
+            "vi": "Sự thật là không có áp lực có hệ thống và kiểm soát không khoan nhượng thì mọi thứ sẽ đổ vỡ. Em biết mình đang nói gì, vì em điều hành những hệ thống đó mỗi ngày."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Ty se na to jenom díváš a usmíváš se, jako by ti patřil vesmír.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schaust nur zu und lächelst, als gehöre dir das Universum.",
+            "en": "You just watch and smile, as if the universe belonged to you.",
+            "fr": "Toi, tu te contentes de regarder en souriant, comme si l'univers t'appartenait.",
+            "it": "Tu stai solo a guardare e sorridi, come se l'universo fosse tuo.",
+            "ja": "あなたは眺めて笑ってるだけ。まるで宇宙が自分のものみたいに。",
+            "ko": "넌 그냥 보면서 웃기만 하지. 마치 우주가 네 것인 것처럼.",
+            "pl": "Ty tylko się przyglądasz i uśmiechasz, jakby wszechświat należał do ciebie.",
+            "pt-BR": "Você só fica olhando e sorrindo, como se o universo fosse seu.",
+            "ru": "А ты только смотришь и улыбаешься, будто тебе принадлежит вселенная.",
+            "uk": "А ти лише дивишся й усміхаєшся, ніби тобі належить всесвіт.",
+            "vi": "Còn anh chỉ ngồi nhìn và mỉm cười, như thể cả vũ trụ là của anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "wiping mouth with a napkin",
+        "unwavering smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_45",
+          "text": "Vesmír mi sice nepatří, Jani, ale ten knedlík na mém talíři je v téhle chvíli naprosto dokonalý. A co je nejdůležitější?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Universum gehört mir zwar nicht, Jana, aber der Knödel auf meinem Teller ist in diesem Moment absolut perfekt. Und was am wichtigsten ist?",
+            "en": "The universe may not belong to me, Jana, but that dumpling on my plate is absolutely perfect right now. And what matters most?",
+            "fr": "L'univers ne m'appartient pas, Jana, mais cette quenelle dans mon assiette est absolument parfaite en ce moment. Et le plus important ?",
+            "it": "L'universo non sarà mio, Jana, ma quel knödel nel mio piatto in questo momento è assolutamente perfetto. E la cosa più importante?",
+            "ja": "宇宙は僕のものじゃないけど、ヤナ、この皿のクネドリーキは今この瞬間、完璧なんだ。で、一番大事なことは？",
+            "ko": "우주가 내 건 아니지만, 야나, 내 접시 위의 이 크네들리키는 지금 이 순간 완벽해. 그리고 제일 중요한 게 뭔지 알아?",
+            "pl": "Wszechświat co prawda do mnie nie należy, Janko, ale ten knedel na moim talerzu jest w tej chwili absolutnie doskonały. A co najważniejsze?",
+            "pt-BR": "O universo pode não ser meu, Jana, mas esse bolinho no meu prato está absolutamente perfeito neste momento. E o mais importante?",
+            "ru": "Вселенная мне, конечно, не принадлежит, Яна, но кнедлик на моей тарелке в эту минуту совершенно идеален. А что самое главное?",
+            "uk": "Всесвіт мені, звісно, не належить, Яно, але кнедлик на моїй тарілці цієї миті абсолютно досконалий. А що найважливіше?",
+            "vi": "Vũ trụ có thể không thuộc về anh, Jana, nhưng cái bánh knedlík trên đĩa anh lúc này thật hoàn hảo. Và điều quan trọng nhất là gì?"
+          }
+        },
+        {
+          "speaker_id": "olin_45",
+          "text": "Nikdo mě nenutí ho refaktoringovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Niemand zwingt mich, ihn zu refaktorieren.",
+            "en": "Nobody's forcing me to refactor it.",
+            "fr": "Personne ne m'oblige à la refactoriser.",
+            "it": "Nessuno mi obbliga a rifattorizzarlo.",
+            "ja": "誰にもリファクタリングを強制されないってことさ。",
+            "ko": "아무도 나한테 리팩터링하라고 안 한다는 거야.",
+            "pl": "Nikt mnie nie zmusza, żeby go refaktoryzować.",
+            "pt-BR": "Ninguém me obriga a refatorá-lo.",
+            "ru": "Никто не заставляет меня его рефакторить.",
+            "uk": "Ніхто не змушує мене його рефакторити.",
+            "vi": "Không ai bắt anh phải tái cấu trúc nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "triumphant expression",
+        "curt",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Protože ho sníš dřív, než bys stačil zjistit, že má špatnou architekturu, Oline. A tečka.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil du ihn aufisst, bevor du merken würdest, dass er eine schlechte Architektur hat, Olin. Punkt.",
+            "en": "Because you eat it before you'd even notice it has bad architecture, Olin. Full stop.",
+            "fr": "Parce que tu la manges avant d'avoir pu constater qu'elle a une mauvaise architecture, Olin. Point final.",
+            "it": "Perché lo mangi prima di accorgerti che ha un'architettura sbagliata, Olin. Punto.",
+            "ja": "設計が悪いって気づく前に食べちゃうからでしょ、オリン。以上。",
+            "ko": "아키텍처가 엉망이란 걸 알아채기도 전에 먹어 치우니까 그렇지, 올린. 끝.",
+            "pl": "Bo zjesz go, zanim zdążyłbyś zauważyć, że ma złą architekturę, Olinie. I kropka.",
+            "pt-BR": "Porque você come antes de perceber que ele tem uma arquitetura ruim, Olin. E ponto final.",
+            "ru": "Потому что ты его съешь раньше, чем успеешь заметить, что у него плохая архитектура, Олин. И точка.",
+            "uk": "Бо ти його з'їси раніше, ніж устигнеш помітити, що в нього погана архітектура, Оліне. І крапка.",
+            "vi": "Vì anh ăn hết trước khi kịp nhận ra nó có kiến trúc tồi, Olin. Hết chuyện."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "olin_45"
+        }
+      ],
+      "visual_tags": [
+        "raising beer mug",
+        "toast",
+        "smiling",
+        "silent",
+        "soft light on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "he slowly raises the beer mug in a quiet toast, calm smile, neon light flickering"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_restaurace",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a restaurant table",
+        "softer expression",
+        "tired eyes",
+        "honest",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Já si naopak o víkendu chci dát od technologií pokoj. Sedím u počítače x hodin denně, o víkendu se nechci do žádných účtů přihlašovat.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich dagegen will am Wochenende meine Ruhe vor der Technik. Ich sitze jeden Tag stundenlang am Computer, am Wochenende will ich mich in keine Konten einloggen.",
+            "en": "Me, on the other hand, I want a break from technology at the weekend. I sit at a computer for hours every day; at the weekend I don't want to log in to any accounts.",
+            "fr": "Moi, au contraire, le week-end, je veux qu'on me laisse tranquille avec la technologie. Je passe des heures chaque jour devant l'ordinateur ; le week-end, je ne veux me connecter à aucun compte.",
+            "it": "Io invece nel weekend voglio staccare dalla tecnologia. Sto al computer non so quante ore al giorno, nel weekend non voglio accedere a nessun account.",
+            "ja": "私は逆に、週末くらいテクノロジーから離れたいの。毎日何時間もパソコンの前にいるんだから、週末はどのアカウントにもログインしたくない。",
+            "ko": "난 반대로 주말엔 기술에서 좀 벗어나고 싶어. 매일 몇 시간씩 컴퓨터 앞에 앉아 있으니까, 주말엔 어떤 계정에도 로그인하고 싶지 않아.",
+            "pl": "Ja z kolei w weekend chcę odpocząć od technologii. Siedzę przy komputerze iks godzin dziennie, w weekend nie chcę się logować do żadnych kont.",
+            "pt-BR": "Eu, pelo contrário, quero dar um tempo da tecnologia no fim de semana. Passo sei lá quantas horas por dia no computador; no fim de semana não quero entrar em conta nenhuma.",
+            "ru": "А я, наоборот, хочу на выходных отдохнуть от технологий. Я сижу за компьютером кучу часов в день, на выходных не хочу входить ни в какие аккаунты.",
+            "uk": "А я, навпаки, хочу на вихідних відпочити від технологій. Я сиджу за комп'ютером хтозна-скільки годин на день, на вихідних не хочу входити в жодні акаунти.",
+            "vi": "Còn em thì ngược lại, cuối tuần muốn tạm xa công nghệ. Ngày nào em cũng ngồi máy tính bao nhiêu tiếng, cuối tuần em không muốn đăng nhập vào tài khoản nào cả."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "Vím, co už AI dokáže, chápu, že jsi do toho hodně investoval, fajn, fandím ti v tom, ale osobně to prostě neocením tak, jak asi potřebuješ.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß, was KI schon kann, ich verstehe, dass du viel hineingesteckt hast, schön, ich drücke dir die Daumen, aber ich persönlich werde es einfach nicht so würdigen, wie du es wahrscheinlich brauchst.",
+            "en": "I know what AI can do already, I get that you've invested a lot in it, fine, I'm rooting for you, but personally I just won't appreciate it the way you probably need me to.",
+            "fr": "Je sais ce que l'IA sait déjà faire, je comprends que tu y as beaucoup investi, d'accord, je suis de ton côté, mais personnellement, je ne l'apprécierai pas comme tu en as sans doute besoin.",
+            "it": "So cosa sa già fare l'IA, capisco che ci hai investito tanto, va bene, faccio il tifo per te, ma personalmente non lo apprezzerò come probabilmente ti serve.",
+            "ja": "AIに何ができるかは知ってる。あなたがすごく打ち込んできたのもわかる。いいと思うし、応援してる。でも私個人としては、たぶんあなたが望むようには評価できないの。",
+            "ko": "AI가 이미 뭘 할 수 있는지 알아. 네가 거기에 많이 투자한 것도 이해하고. 좋아, 응원해. 근데 개인적으로는 네가 아마 바라는 만큼 높이 평가하진 못할 거야.",
+            "pl": "Wiem, co już potrafi AI, rozumiem, że dużo w to zainwestowałeś, w porządku, kibicuję ci, ale osobiście po prostu nie docenię tego tak, jak pewnie potrzebujesz.",
+            "pt-BR": "Eu sei o que a IA já consegue fazer, entendo que você investiu muito nisso, tudo bem, torço por você, mas pessoalmente eu simplesmente não vou valorizar isso do jeito que você provavelmente precisa.",
+            "ru": "Я знаю, что ИИ уже умеет, понимаю, что ты в это много вложил, ладно, я за тебя болею, но лично я просто не оценю это так, как тебе, наверное, нужно.",
+            "uk": "Я знаю, що ШІ вже вміє, розумію, що ти багато в це вклав, гаразд, я за тебе вболіваю, але особисто я просто не оціню це так, як тобі, мабуть, потрібно.",
+            "vi": "Em biết AI giờ làm được những gì, em hiểu anh đã đầu tư rất nhiều vào nó, được thôi, em ủng hộ anh, nhưng cá nhân em thì không trân trọng nó theo cách mà có lẽ anh cần."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "she lowers the wine glass, her face softening, a tired honest look, slow blink"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul",
+      "characters": [],
+      "visual_tags": [
+        "glowing orb lamp",
+        "ball lightning",
+        "goulash plate",
+        "spaghetti plate",
+        "beer mug and wine glass",
+        "warm soft light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the ball-lightning orb slowly pulsing with soft light, steam rising from both plates, static camera"
+    }
+  ]
+}
