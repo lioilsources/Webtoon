@@ -1,0 +1,86 @@
+{
+  "id": "w_gb_kulovyblesk_s1",
+  "title": "Kulový blesk v neonovém zákopu — Kulový blesk v neonovém zákopu",
+  "synopsis": "Sourozenci Olin a Jana u jednoho stolu: on v zenu u guláše a piva, ona u špaget a vína, s potřebou mít poslední slovo. Dvě roviny, které se zatím míjejí.",
+  "tone": "klidný, ironický, s nadějí",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_ink",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba nosí brýle, oba jsou intelektuálové, mají rodinnou podobu (tmavé vlasy, hnědé oči); ne manga.",
+      "Není to temné: ironie a klid, žádná zloba. Spor tvorby jako řemesla a efektivity, kde každý mluví o něčem jiném."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Každý si obhájí svůj zákop a Jana má poslední slovo; ve světle mezi nimi prosvítá naděje, že si jednou porozumí."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_restaurace",
+      "l_stul"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_45",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serene Czech man aged 45 with short dark brown hair touched with grey, a short beard, round wire-rimmed glasses and a calm smile",
+      "base": "adult, mature male, short dark brown hair with grey streaks, short beard, (round wire-rimmed glasses:1.4), calm brown eyes, relaxed posture",
+      "outfits": {
+        "default": "dark linen shirt with rolled-up sleeves"
+      },
+      "photo": "a serene Czech man aged 45 with short dark brown hair touched with grey, a short beard, round wire-rimmed glasses and a calm smile",
+      "tag_prompt": "adult, mature male, short dark brown hair with grey streaks, short beard, (round wire-rimmed glasses:1.4), calm brown eyes, relaxed posture, dark linen shirt with rolled-up sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_40",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a sharp Czech woman aged 40 with a sleek chin-length dark brown bob, thin rectangular glasses, brown eyes and an intense, sceptical gaze",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, sceptical expression",
+      "outfits": {
+        "default": "tailored dark blazer over a high-collared blouse"
+      },
+      "photo": "a sharp Czech woman aged 40 with a sleek chin-length dark brown bob, thin rectangular glasses, brown eyes and an intense, sceptical gaze",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, sceptical expression, tailored dark blazer over a high-collared blouse",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_restaurace",
+      "name": "Neopunková restaurace",
+      "description": "Restaurace budoucnosti, neonové nápisy v azurové a purpurové, tichý cyberpunkový ambient.",
+      "tag_prompt": "indoors, futuristic neo-punk restaurant at night, glowing neon signs on the walls, a softly crackling ball-lightning orb lamp hanging above a small table, steam vents, polished metal surfaces, quiet cosy atmosphere",
+      "mood": ""
+    },
+    {
+      "id": "l_stul",
+      "name": "Stůl",
+      "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno.",
+      "tag_prompt": "small restaurant table under a glowing ball-lightning orb lamp, neon light reflections on the tabletop, steam rising",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "kulovyblesk",
+    "node": "s1"
+  }
+}
