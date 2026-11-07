@@ -62,7 +62,8 @@
         "water": 0.69,
         "lightning": 0.626,
         "ruins": 0.543
-      }
+      },
+      "faces": []
     },
     {
       "shot": "wide",
@@ -106,7 +107,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "medium"
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.344,
+          0.4675,
+          0.3952,
+          0.5387
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -145,7 +154,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "medium"
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.3185,
+          0.1706,
+          0.63,
+          0.3975
+        ]
+      ]
     },
     {
       "shot": "close-up",
@@ -169,7 +186,15 @@
           "style": "bold"
         }
       ],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1046,
+          0.2328,
+          0.9099,
+          0.7612
+        ]
+      ]
     },
     {
       "shot": "wide",
@@ -211,7 +236,15 @@
         "water": 0.412,
         "ruins": 0.401,
         "bone": 0.396
-      }
+      },
+      "faces": [
+        [
+          0.5029,
+          0.2289,
+          0.5404,
+          0.3118
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -254,7 +287,15 @@
           "style": "bold"
         }
       ],
-      "gap_after": "large"
+      "gap_after": "large",
+      "faces": [
+        [
+          0.3511,
+          0.164,
+          0.6444,
+          0.3583
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -292,7 +333,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "large"
+      "gap_after": "large",
+      "faces": [
+        [
+          0.3738,
+          0.362,
+          0.7223,
+          0.5741
+        ]
+      ]
     }
   ]
 }

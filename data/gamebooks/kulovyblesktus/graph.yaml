@@ -1,0 +1,65 @@
+# Tušová verze (noir_ink_brush, SDXL base + Chinese Ink LoRA) téhož příběhu jako data/gamebooks/kulovyblesk.
+# Gamebook 5 — Kulový blesk v neonovém zákopu. Jednoaktovka (od autora, Olin); text replik je doslova jeho.
+# Sourozenci Olin a Jana: dvě roviny, které se míjejí (tvorba jako řemeslo × nástroj na efektivitu). Není to temné:
+# ironie, klid, a v posledním obraze světlo, ve kterém prosvítá naděje, že si jednou porozumí. Teď ještě ne.
+# Lineární: jeden uzel, žádné volby, žádný nový text. Poslední slovo má Jana (replika doplněná autorem 2026-11-07).
+# Opravené překlepy: „Rychce“ → „Rychle“ ve scénické poznámce (poznámky se kreslí, nepíšou), „jsi to toho“ → „jsi do
+# toho“ v Janině poslední replice.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
+# v obraze), `see` = scénická poznámka jako obraz. Styl noir_ink: černobílá čínská tuš, filmové noir světlo,
+# realistické proporce (ne manga), neony jen jako bílé světlo. Oba nosí brýle.
+
+schema: 1
+id: kulovyblesktus
+title: Kulový blesk v neonovém zákopu (tuš)
+title_i18n: {de: "Kugelblitz im Neonschützengraben (Tusche)", en: "Ball Lightning in the Neon Trench (ink)", fr: "Foudre en boule dans la tranchée au néon (encre)", it: "Fulmine globulare nella trincea al neon (inchiostro)", ja: "ネオンの塹壕に球電（墨）", ko: "네온 참호 속의 구전 (수묵)", pl: "Piorun kulisty w neonowym okopie (tusz)", pt-BR: "Raio globular na trincheira de neon (nanquim)", ru: "Шаровая молния в неоновом окопе (тушь)", uk: "Кульова блискавка в неоновому окопі (туш)", vi: "Sét hòn trong chiến hào neon (mực tàu)"}
+world: w_kulovy_blesk
+audience: adult
+language: cs
+style_id: noir_ink_brush
+profile: noir
+product_id: gamebook_kulovyblesktus
+start: s1
+
+premise: >
+  Neopunková restaurace budoucnosti, neony v azurové a purpurové, tichý cyberpunkový ambient. Sourozenci Olin a Jana
+  u jednoho stolu: on v zenu nad gulášem a pivem, ona nad špagetami a bílým vínem, s potřebou mít poslední slovo.
+
+characters: [olin_45, jana_40]
+
+locations:
+  - {id: l_restaurace, name: Neopunková restaurace, description: "neony, pára, tichý ambient"}
+  - {id: l_stul, name: Stůl, description: "guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana}
+  faces:
+    olin: [[calm smile, looking at another], [eyes half closed, content smile], [gentle smile, relaxed]]
+    jana: [[smirk, looking at another], [raised eyebrow, sceptical], [narrowed eyes, intense stare]]
+  speaking: [upper body, from front, sitting at a restaurant table]
+
+nodes:
+  s1:
+    title: Kulový blesk v neonovém zákopu
+    location: l_restaurace
+    cast: {olin: olin_45, jana: jana_40}
+    ending: good
+    script:
+      - {see: "Neopunková restaurace budoucnosti. Všude blikají neonové nápisy, z reproduktorů hraje tichý cyberpunkový ambient.", shot: establishing, tags: [futuristic restaurant interior, glowing neon signs, steam vents, ball-lightning orb lamp above a table, night], gap: medium, animate: "neon signs softly flickering, steam drifting, the ball-lightning lamp crackling gently, static camera"}
+      - {see: "Olin sedí u stolu, upíjí poctivé studené pivo a před sebou má dýmící český guláš s nadýchaným knedlíkem.", shot: medium, who: olin, tags: [sitting at a restaurant table, glass of cold beer, goulash, bread dumplings, steaming plate, content smile]}
+      - {see: "Jana sedí naproti, drží skleničku bílého vína na dlouhé stopce a v tichém opovržení sleduje špagety s bohatou kopou parmazánu.", shot: medium, who: jana, tags: [sitting at a restaurant table, holding a wine glass, white wine, long-stemmed glass, plate of spaghetti with grated parmesan, steam jets, quiet contempt]}
+      - {see: "Olin si klidně ukrojí kousek knedlíku, namočí ho do omáčky a spokojeně se usměje.", shot: close-up, tags: [close-up of hands, fork, bread dumpling, goulash sauce, dipping, steam rising], animate: "the dumpling slice dipped slowly into the sauce, steam rising"}
+      - {see: "Jana si precizně namotá vidličkou tři špagety a s chladným klidem pohlédne na Olinův talíř.", shot: close-up, who: jana, tags: [twirling spaghetti on a fork, precise, cold calm gaze, looking at another]}
+      - {say: jana, text: "Víš, Oline, mně na tomhle světě fascinuje, jak si někteří lidé dokážou zromantizovat obyčejnou stagnaci. Zatímco celá generace inovuje, ty si v roce 2026 s klidem v duši dál krájíš knedlík v podniku, kde světlo obstarávají reaktory na vyjetý olej. Úsporné, ekologické a hlavně... neuvěřitelně pohodlné.", tags: [slight smirk, looking at another]}
+      - {say: olin, text: "Víš co je na tom nejkrásnější, Jani? Že ten knedlík prostě funguje. Nemusíš ho kompilovat, nemusíš ladit závislosti v konfiguračním souboru. Prostě existuje a dělá radost. Někdy je největší inovací nechat věci na pokoji.", tags: [wide smile, eyes half closed, blissful]}
+      - {say: jana, text: "Nechat věci na pokoji není inovace, Oline. To je definice rezignace. Pokrok se nedělá tím, že budeme sedět se zkříženýma nohama a usmívat se na knedlík jako buddistský mnich na marihuanové plantáži. Pokrok vyžaduje systém, metriky a hlavně neustálou konfrontaci s chybami.", tags: [raised eyebrow, looking down at her wine glass]}
+      - {say: olin, text: "Jasně, metriky jsou fajn. Měřil jsem si radost z toho guláše a graf je konstantně nahoře. Zato tvoje špagety vypadají, že prošly přísnou iterací s nulovou přidanou hodnotou pro chuťové pohárky. Ale chápu, hlavní je, že to má správný KPI.", tags: [slight nod, holding a glass of beer, gentle smile]}
+      - {say: jana, text: "Moje špagety mají na rozdíl od tvého oběda jasnou strukturu a standardizovaný původ, Oline. Kdybys aspoň jednou v životě koukal na data a ne na svý subjektivní pocity, tak víš, že italská gastronomie má globální dosah, kdežto ten tvůj guláš je lokální anomálie odsouzená k zániku.", tags: [narrowed eyes, holding a long-stemmed wine glass], animate: "the wine trembling slightly in the long-stemmed glass, eyes narrowing"}
+      - {say: olin, text: "Anomálie, která zasytí duši. Vzácná věc v dnešním světě plném dashboardů. Víš, klid je nejlepší optimalizace.", tags: [laughing, calm, eyes half closed]}
+      - {say: jana, text: "Klid není optimalizace. Klid je jenom nedostatek podnětů, Oline. A jestli si myslíš, že pasivitou něco vyřešíš, tak žiješ v iluzi. Pravda je taková, že bez systematického tlaku a nekompromisní kontroly se všechno rozsype. Já vím, o čem mluvím, protože já ty systémy denně řídím. Ty se na to jenom díváš a usmíváš se, jako by ti patřil vesmír.", tags: [leaning forward over the table, chin forward, intense stare]}
+      - {say: olin, text: "Vesmír mi sice nepatří, Jani, ale ten knedlík na mém talíři je v téhle chvíli naprosto dokonalý. A co je nejdůležitější? Nikdo mě nenutí ho refaktoringovat.", tags: [wiping mouth with a napkin, unwavering smile]}
+      - {say: jana, text: "Protože ho sníš dřív, než bys stačil zjistit, že má špatnou architekturu, Oline. A tečka.", shot: close-up, tags: [triumphant expression, curt, looking at another]}
+      - {see: "Olin zvedne půllitr, připije si na prázdno před sebou, dál se usmívá a raději nic neříká.", shot: medium, who: olin, tags: [raising beer mug, toast, smiling, silent, soft light on his face], animate: "he slowly raises the beer mug in a quiet toast, calm smile, neon light flickering"}
+      - {say: jana, text: "Já si naopak o víkendu chci dát od technologií pokoj. Sedím u počítače x hodin denně, o víkendu se nechci do žádných účtů přihlašovat. Vím, co už AI dokáže, chápu, že jsi do toho hodně investoval, fajn, fandím ti v tom, ale osobně to prostě neocením tak, jak asi potřebuješ.", tags: [softer expression, tired eyes, honest, looking at another], animate: "she lowers the wine glass, her face softening, a tired honest look, slow blink"}
+      - {see: "Kulový blesk nad stolem tiše svítí mezi dvěma talíři.", shot: wide, loc: l_stul, tags: [glowing orb lamp, ball lightning, goulash plate, spaghetti plate, beer mug and wine glass, warm soft light, no humans], gap: large, animate: "the ball-lightning orb slowly pulsing with soft light, steam rising from both plates, static camera"}

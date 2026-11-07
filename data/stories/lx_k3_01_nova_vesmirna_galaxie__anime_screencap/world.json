@@ -1,0 +1,128 @@
+{
+  "id": "w_lx_k3_01_nova_vesmirna_galaxie__anime_screencap",
+  "title": "Nova a Mechanický Král",
+  "title_i18n": {
+    "en": "Nova and the Mechanical King",
+    "de": "Nova und der Mechanische König",
+    "it": "Nova e il Re Meccanico",
+    "fr": "Nova et le Roi Mécanique",
+    "pl": "Nova i Mechaniczny Król",
+    "pt-BR": "Nova e o Rei Mecânico",
+    "ja": "ノヴァと機械の王",
+    "ko": "노바와 기계왕",
+    "vi": "Nova và Cơ Giới Hoàng Đế",
+    "ru": "Нова и Механический Король",
+    "uk": "Нова та Механічний Король"
+  },
+  "synopsis": "Superhrdinka Nova bojuje s obřím mechem na planetě Xylar a zachrání svět i svého protivníka.",
+  "synopsis_i18n": {
+    "en": "Superheroine Nova fights a giant mech on the planet Xylar and saves the world and her opponent too.",
+    "de": "Die Superheldin Nova kämpft auf dem Planeten Xylar gegen einen riesigen Mech und rettet die Welt und auch ihren Gegner.",
+    "it": "La supereroina Nova combatte un mech gigante sul pianeta Xylar e salva il mondo e anche il suo avversario.",
+    "fr": "La super-héroïne Nova affronte un méca géant sur la planète Xylar et sauve le monde comme son adversaire.",
+    "pl": "Superbohaterka Nova walczy z olbrzymim mechem na planecie Xylar i ratuje świat oraz swojego przeciwnika.",
+    "pt-BR": "A super-heroína Nova luta contra um mech gigante no planeta Xylar e salva o mundo e também seu adversário.",
+    "ja": "スーパーヒロインのノヴァは惑星ザイラーで巨大メカと戦い、世界も敵も救う。",
+    "ko": "슈퍼히어로 노바는 행성 자일라에서 거대한 메카와 싸우고 세상과 적까지 구한다.",
+    "vi": "Nữ siêu anh hùng Nova chiến đấu với một cỗ máy khổng lồ trên hành tinh Xylar và cứu cả thế giới lẫn đối thủ của mình.",
+    "ru": "Супергероиня Нова сражается с гигантским мехом на планете Ксилар и спасает мир и своего противника.",
+    "uk": "Супергероїня Нова б'ється з гігантським мехом на планеті Ксилар і рятує світ та свого суперника."
+  },
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "anime_screencap",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: planeta je v bezpečí a robot se stane spojencem."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_xylar",
+      "l_battle",
+      "l_cliff"
+    ]
+  },
+  "characters": [
+    {
+      "id": "nova",
+      "name": "Nova",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a brave Czech girl aged 10 with long purple hair and a determined expression",
+      "base": "female child, purple hair, long hair, blue eyes, fair skin, determined face",
+      "outfits": {
+        "default": "silver space helmet, white spacesuit, purple gloves, boots, holding shield"
+      },
+      "photo": "a brave Czech girl aged 10 with long purple hair and a determined expression",
+      "tag_prompt": "female child, purple hair, long hair, blue eyes, fair skin, determined face, silver space helmet, white spacesuit, purple gloves, boots, holding shield",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "mechanicky_kral",
+      "name": "Mechanický Král",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a large red and silver robot with glowing red eyes and a menacing posture",
+      "base": "robot, mecha, large robot, red eyes, metal body",
+      "outfits": {
+        "default": "red glowing visor, antenna, metal plating"
+      },
+      "photo": "a large red and silver robot with glowing red eyes and a menacing posture",
+      "tag_prompt": "robot, mecha, large robot, red eyes, metal body, red glowing visor, antenna, metal plating",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "blaze",
+      "name": "Blaze",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a small orange dog with big ears and a fluffy tail",
+      "base": "dog, small dog, orange fur, big ears, fluffy tail",
+      "outfits": {
+        "default": "small silver collar"
+      },
+      "photo": "a small orange dog with big ears and a fluffy tail",
+      "tag_prompt": "dog, small dog, orange fur, big ears, fluffy tail, small silver collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_xylar",
+      "name": "Planeta Xylar",
+      "description": "Planeta Xylar",
+      "tag_prompt": "outdoors, alien planet, purple sky, crystals, rocks, space, stars, night",
+      "mood": ""
+    },
+    {
+      "id": "l_battle",
+      "name": "Bojové pole",
+      "description": "Bojové pole",
+      "tag_prompt": "outdoors, alien planet, purple sky, crystals, rocks, laser beams, sparks, action",
+      "mood": ""
+    },
+    {
+      "id": "l_cliff",
+      "name": "Útes",
+      "description": "Útes",
+      "tag_prompt": "outdoors, alien planet, purple sky, cliff edge, deep abyss, stars, dramatic lighting",
+      "mood": ""
+    }
+  ],
+  "profile": "superhero"
+}

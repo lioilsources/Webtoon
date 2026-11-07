@@ -1,0 +1,104 @@
+{
+  "id": "w_lx_k4_10_max_octo_boy__vintage_poster",
+  "title": "Max Octo-Boy a bitva na mořském dně",
+  "title_i18n": {
+    "en": "Max Octo-Boy and the Battle on the Ocean Floor",
+    "de": "Max Octo-Boy und die Schlacht am Meeresgrund",
+    "it": "Max Octo-Boy e la battaglia sul fondo del mare",
+    "fr": "Max Octo-Boy et la bataille des fonds marins",
+    "pl": "Max Okto-Chłopak i bitwa na dnie morskim",
+    "pt-BR": "Max Octo-Boy e a Batalha no Fundo do Mar",
+    "ja": "マックス・オクトボーイと海底の戦い",
+    "ko": "맥스 옥토보이와 해저 전투",
+    "vi": "Max Octo-Boy và trận chiến dưới đáy biển",
+    "ru": "Макс Окто-Бой и битва на дне моря",
+    "uk": "Макс Окто-Бой і битва на дні моря"
+  },
+  "synopsis": "Šestiletý Max s mechanickými chapadly porazí obřího mutanta kraba na dně oceánu.",
+  "synopsis_i18n": {
+    "en": "Six-year-old Max, with mechanical tentacles, defeats a giant mutant crab on the ocean floor.",
+    "de": "Der sechsjährige Max mit mechanischen Tentakeln besiegt am Meeresgrund eine riesige Mutantenkrabbe.",
+    "it": "Max, sei anni e tentacoli meccanici, sconfigge un granchio mutante gigante sul fondo dell'oceano.",
+    "fr": "Max, six ans et des tentacules mécaniques, bat un crabe mutant géant au fond de l'océan.",
+    "pl": "Sześcioletni Max z mechanicznymi mackami pokonuje olbrzymiego kraba mutanta na dnie oceanu.",
+    "pt-BR": "Max, de seis anos e com tentáculos mecânicos, derrota um caranguejo mutante gigante no fundo do oceano.",
+    "ja": "機械の触手を持つ6歳のマックスが、海の底で巨大なミュータントガニを倒す。",
+    "ko": "기계 촉수를 가진 여섯 살 맥스가 바다 밑에서 거대한 돌연변이 게를 물리친다.",
+    "vi": "Cậu bé sáu tuổi Max với những xúc tu máy đánh bại con cua đột biến khổng lồ dưới đáy đại dương.",
+    "ru": "Шестилетний Макс с механическими щупальцами побеждает гигантского краба-мутанта на дне океана.",
+    "uk": "Шестирічний Макс із механічними щупальцями перемагає гігантського краба-мутанта на дні океану."
+  },
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "vintage_poster",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Šťastný konec: krab je zpacifikován a Max dostává medaili."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_station",
+      "l_interior"
+    ]
+  },
+  "characters": [
+    {
+      "id": "max",
+      "name": "Max",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a cute Czech boy aged 6 with short blonde hair and bright blue eyes",
+      "base": "male child, blonde hair, short hair, blue eyes, fair skin, round face",
+      "outfits": {
+        "default": "blue superhero suit, silver backpack, black boots, white gloves"
+      },
+      "photo": "a cute Czech boy aged 6 with short blonde hair and bright blue eyes",
+      "tag_prompt": "male child, blonde hair, short hair, blue eyes, fair skin, round face, blue superhero suit, silver backpack, black boots, white gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "crab",
+      "name": "Mutant-Krab",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a giant red crab with jagged shell edges and glowing purple energy",
+      "base": "crab, giant crab, red shell, spiky shell, large claws",
+      "outfits": {
+        "default": "glowing purple aura, jagged shell edges"
+      },
+      "photo": "a giant red crab with jagged shell edges and glowing purple energy",
+      "tag_prompt": "crab, giant crab, red shell, spiky shell, large claws, glowing purple aura, jagged shell edges",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_station",
+      "name": "Podmořská stanice",
+      "description": "Podmořská stanice",
+      "tag_prompt": "outdoors, underwater, glass dome, ocean floor, sand, sharks swimming outside, blue water, bioluminescent lights, night",
+      "mood": ""
+    },
+    {
+      "id": "l_interior",
+      "name": "Interiér stanice",
+      "description": "Interiér stanice",
+      "tag_prompt": "indoors, underwater base, glass walls, control panels, colorful lights, blue water outside, futuristic",
+      "mood": ""
+    }
+  ],
+  "profile": "superhero"
+}

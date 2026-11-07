@@ -60,7 +60,8 @@
         "ripples": 0.408,
         "outdoors": 0.387,
         "sky": 0.369
-      }
+      },
+      "faces": []
     },
     {
       "shot": "wide",
@@ -107,7 +108,15 @@
           "style": "bold"
         }
       ],
-      "gap_after": "medium"
+      "gap_after": "medium",
+      "faces": [
+        [
+          0.5518,
+          0.4439,
+          0.6264,
+          0.5397
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -149,7 +158,15 @@
         "gloves": 0.666,
         "full body": 0.621,
         "bright pupils": 0.543
-      }
+      },
+      "faces": [
+        [
+          0.4363,
+          0.1029,
+          0.76,
+          0.2958
+        ]
+      ]
     },
     {
       "shot": "wide",
@@ -177,7 +194,8 @@
           "style": "bold"
         }
       ],
-      "gap_after": "medium"
+      "gap_after": "medium",
+      "faces": []
     },
     {
       "shot": "medium",
@@ -216,7 +234,8 @@
         }
       ],
       "sfx": [],
-      "gap_after": "large"
+      "gap_after": "large",
+      "faces": []
     }
   ]
 }

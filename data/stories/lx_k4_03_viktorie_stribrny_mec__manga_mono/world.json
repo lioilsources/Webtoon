@@ -1,0 +1,104 @@
+{
+  "id": "w_lx_k4_03_viktorie_stribrny_mec__manga_mono",
+  "title": "Viktorie a stín stříbrného meče",
+  "title_i18n": {
+    "en": "Victoria and the Shadow of the Silver Sword",
+    "de": "Viktorie und der Schatten des silbernen Schwerts",
+    "it": "Viktorie e l'ombra della spada d'argento",
+    "fr": "Viktorie et l'ombre de l'épée d'argent",
+    "pl": "Wiktoria i cień srebrnego miecza",
+    "pt-BR": "Viktorie e a Sombra da Espada Prateada",
+    "ja": "ヴィクトリアと銀剣の影",
+    "ko": "빅토리아와 은빛 검의 그림자",
+    "vi": "Viktorie và bóng kiếm bạc",
+    "ru": "Виктория и тень серебряного меча",
+    "uk": "Вікторія та тінь срібного меча"
+  },
+  "synopsis": "Tichá bojovnice Viktorie proniká do podzemního dungeonu a odhání stínové démony svým obřím mečem.",
+  "synopsis_i18n": {
+    "en": "Quiet warrior Victoria descends into an underground dungeon and drives off the shadow demons with her giant sword.",
+    "de": "Die stille Kriegerin Victoria dringt in ein unterirdisches Verlies ein und vertreibt die Schattendämonen mit ihrem riesigen Schwert.",
+    "it": "La silenziosa guerriera Victoria penetra in un dungeon sotterraneo e scaccia i demoni d'ombra con la sua spada gigante.",
+    "fr": "La guerrière silencieuse Victoria s'enfonce dans un donjon souterrain et chasse les démons d'ombre avec son épée géante.",
+    "pl": "Cicha wojowniczka Wiktoria przenika do podziemnego lochu i przegania demony cienia swoim olbrzymim mieczem.",
+    "pt-BR": "A guerreira silenciosa Vitória invade uma masmorra subterrânea e afasta os demônios das sombras com sua espada gigante.",
+    "ja": "寡黙な戦士ヴィクトリアは地下のダンジョンに潜り、巨大な剣で影の悪魔たちを追い払う。",
+    "ko": "말 없는 전사 빅토리아는 지하 던전에 잠입해 거대한 검으로 그림자 악마들을 몰아낸다.",
+    "vi": "Nữ chiến binh lặng lẽ Victoria thâm nhập hầm ngục dưới lòng đất và xua đuổi lũ quỷ bóng tối bằng thanh kiếm khổng lồ.",
+    "ru": "Молчаливая воительница Виктория проникает в подземелье и прогоняет демонов тени своим огромным мечом.",
+    "uk": "Мовчазна воїтелька Вікторія проникає в підземелля й проганяє демонів тіні своїм величезним мечем."
+  },
+  "tone": "dobrodružný, odvážný, laskavý",
+  "audience": "kids",
+  "language": "cs",
+  "style_id": "manga_mono",
+  "bible": {
+    "rules": [
+      "Pro děti: bez krve a zranění, souboje jsou akční a končí smírem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Pokračování příště: Viktorie pokračuje hlouběji do dungeonu za svým hlavním cílem."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dungeon_entrance",
+      "l_dungeon_hall"
+    ]
+  },
+  "characters": [
+    {
+      "id": "viktorie",
+      "name": "Viktorie",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a serious Czech girl aged 12 with short silver hair and icy blue eyes",
+      "base": "female child, short hair, silver hair, blue eyes, pale skin, serious face",
+      "outfits": {
+        "default": "dark leather armor, black cape, heavy boots, fingerless gloves"
+      },
+      "photo": "a serious Czech girl aged 12 with short silver hair and icy blue eyes",
+      "tag_prompt": "female child, short hair, silver hair, blue eyes, pale skin, serious face, dark leather armor, black cape, heavy boots, fingerless gloves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "demon",
+      "name": "Démon Mogor",
+      "role": "npc",
+      "count_tag": "",
+      "human": false,
+      "description": "a shadowy monster made of black smoke with glowing red eyes and sharp claws",
+      "base": "shadow monster, black smoke, glowing red eyes, sharp claws, fangs, jagged teeth",
+      "outfits": {
+        "default": "black smoke, glowing red eyes"
+      },
+      "photo": "a shadowy monster made of black smoke with glowing red eyes and sharp claws",
+      "tag_prompt": "shadow monster, black smoke, glowing red eyes, sharp claws, fangs, jagged teeth, black smoke, glowing red eyes",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dungeon_entrance",
+      "name": "Vstup do dungeonu",
+      "description": "Vstup do dungeonu",
+      "tag_prompt": "indoors, dungeon, stone walls, moss, dark, wet, torchlight, narrow corridor",
+      "mood": ""
+    },
+    {
+      "id": "l_dungeon_hall",
+      "name": "Středová hala",
+      "description": "Středová hala",
+      "tag_prompt": "indoors, dungeon, large hall, stone pillars, dark, sparks flying, dust particles",
+      "mood": ""
+    }
+  ],
+  "profile": "superhero"
+}

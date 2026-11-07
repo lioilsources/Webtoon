@@ -578,6 +578,18 @@ func (q *Queries) DeferJob(ctx context.Context, arg DeferJobParams) error {
 	return err
 }
 
+const deleteCampaign = `-- name: DeleteCampaign :execrows
+DELETE FROM campaigns WHERE id = $1
+`
+
+func (q *Queries) DeleteCampaign(ctx context.Context, id string) (int64, error) {
+	result, err := q.db.Exec(ctx, deleteCampaign, id)
+	if err != nil {
+		return 0, err
+	}
+	return result.RowsAffected(), nil
+}
+
 const deleteCharacter = `-- name: DeleteCharacter :execrows
 DELETE FROM characters WHERE world_id = $1 AND id = $2
 `

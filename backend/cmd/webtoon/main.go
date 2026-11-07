@@ -4,7 +4,7 @@
 //	webtoon migrate                     apply migrations and exit
 //	webtoon seed [-world f] [-styles f] [-owner id] [-visibility v]
 //	                                    import the M0 world + style presets (embedded copies by default)
-//	webtoon import-demo [-campaign id | -world id -player id] [-character id] [-variant n] <storyboard.json> <panel_dir>
+//	webtoon import-demo [-campaign id | -world id -player id [-replace]] [-character id] [-variant n] <storyboard.json> <panel_dir>
 //	                                    insert a ready episode from M0 outputs (no LLM/ComfyUI calls)
 //	webtoon translate [-episode id | -all] [-langs en,de] [-force] [-inline]
 //	                                    translate ready episodes' bubbles (enqueue jobs, or call the LLM right here)
@@ -288,6 +288,7 @@ func runImportDemo(ctx context.Context, cfg config.Config, args []string) error 
 	character := fs.String("character", "", "player character (default: first playable)")
 	title := fs.String("title", "", "title of the new campaign (default: world title)")
 	variant := fs.Int("variant", 0, "image variant: pNN_s<variant>.png")
+	replace := fs.Bool("replace", false, "re-import the world's only story under the same campaign and episode ids")
 	fs.Usage = func() {
 		fmt.Fprintln(fs.Output(), "usage: webtoon import-demo [flags] <storyboard.json> <panel_dir>")
 		fs.PrintDefaults()
@@ -309,6 +310,7 @@ func runImportDemo(ctx context.Context, cfg config.Config, args []string) error 
 	res, err := demo.Import(ctx, s, demo.Options{
 		Storyboard: sb, PanelDir: fs.Arg(1), Variant: *variant, MediaDir: cfg.MediaDir,
 		CampaignID: *campaign, WorldID: *world, PlayerID: *player, PlayerCharacterID: *character, Title: *title,
+		Replace: *replace,
 	})
 	if err != nil {
 		return err
