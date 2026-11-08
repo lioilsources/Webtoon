@@ -31,7 +31,8 @@
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "a holographic menu flickering over the tables, chandelier glinting, static camera"
+      "motion": "a holographic menu flickering over the tables, chandelier glinting, static camera",
+      "faces": []
     },
     {
       "shot": "medium",
@@ -51,7 +52,8 @@
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "the robot glides in, its extra shoulder joint swinging, the cheese chalice glowing"
+      "motion": "the robot glides in, its extra shoulder joint swinging, the cheese chalice glowing",
+      "faces": []
     },
     {
       "shot": "close-up",
@@ -90,7 +92,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2328,
+          0.0849,
+          0.7597,
+          0.4572
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -128,7 +138,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3419,
+          0.2803,
+          0.6391,
+          0.4854
+        ]
+      ]
     },
     {
       "shot": "close-up",
@@ -166,7 +184,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.2731,
+          0.2052,
+          0.6633,
+          0.4742
+        ]
+      ]
     },
     {
       "shot": "close-up",
@@ -204,7 +230,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1693,
+          0.1669,
+          0.7101,
+          0.5479
+        ]
+      ]
     },
     {
       "shot": "close-up",
@@ -242,7 +276,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.1033,
+          0.1446,
+          0.8436,
+          0.6377
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -280,7 +322,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3279,
+          0.1684,
+          0.6183,
+          0.3795
+        ]
+      ]
     },
     {
       "shot": "close-up",
@@ -318,7 +368,15 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": [
+        [
+          0.3443,
+          0.234,
+          0.6987,
+          0.4834
+        ]
+      ]
     },
     {
       "shot": "medium",
@@ -338,7 +396,8 @@
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "the robot freezes mid-motion, eyes flickering between two states"
+      "motion": "the robot freezes mid-motion, eyes flickering between two states",
+      "faces": []
     },
     {
       "shot": "establishing",
@@ -368,7 +427,8 @@
         }
       ],
       "sfx": [],
-      "gap_after": "small"
+      "gap_after": "small",
+      "faces": []
     },
     {
       "shot": "close-up",
@@ -385,7 +445,8 @@
       ],
       "bubbles": [],
       "sfx": [],
-      "gap_after": "large"
+      "gap_after": "large",
+      "faces": []
     }
   ]
 }
