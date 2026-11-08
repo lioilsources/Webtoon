@@ -37,21 +37,23 @@ Panel loopPanel({String videoStatus = 'ready'}) => Panel.fromJson(
   ),
 );
 
-Widget panelApp(Panel p, {bool reduceMotion = false}) => MaterialApp(
-  home: MediaQuery(
-    data: MediaQueryData(disableAnimations: reduceMotion),
-    child: Scaffold(
-      body: SizedBox(
-        width: 400,
-        child: PanelView(
-          panel: p,
-          image: MemoryImage(kTinyPng),
-          video: p.videoUrl == null ? null : MemoryImage(kTinyPng),
+Widget panelApp(Panel p, {bool reduceMotion = false, VoidCallback? onMotion}) =>
+    MaterialApp(
+      home: MediaQuery(
+        data: MediaQueryData(disableAnimations: reduceMotion),
+        child: Scaffold(
+          body: SizedBox(
+            width: 400,
+            child: PanelView(
+              panel: p,
+              image: MemoryImage(kTinyPng),
+              video: p.videoUrl == null ? null : MemoryImage(kTinyPng),
+              onMotion: onMotion,
+            ),
+          ),
         ),
       ),
-    ),
-  ),
-);
+    );
 
 void main() {
   setUp(() {
@@ -78,11 +80,24 @@ void main() {
     expect(find.byKey(const ValueKey('loop-playing')), findsNothing);
   });
 
-  testWidgets('pending loop shows the still and a chip', (tester) async {
-    await tester.pumpWidget(panelApp(loopPanel(videoStatus: 'pending')));
+  testWidgets('pending loop in the Studio shows the still and a chip', (
+    tester,
+  ) async {
+    await tester.pumpWidget(
+      panelApp(loopPanel(videoStatus: 'pending'), onMotion: () {}),
+    );
     await tester.pump();
     expect(find.byKey(const ValueKey('panel-loop-pending-0')), findsOneWidget);
     expect(find.text('Rozhýbává se…'), findsOneWidget);
+    expect(find.byKey(const ValueKey('panel-loop-0')), findsNothing);
+  });
+
+  testWidgets('pending loop in the offline reader: still only, no spinner', (
+    tester,
+  ) async {
+    await tester.pumpWidget(panelApp(loopPanel(videoStatus: 'pending')));
+    await tester.pump();
+    expect(find.byKey(const ValueKey('panel-loop-pending-0')), findsNothing);
     expect(find.byKey(const ValueKey('panel-loop-0')), findsNothing);
   });
 

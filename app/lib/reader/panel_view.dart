@@ -111,7 +111,9 @@ class PanelView extends StatelessWidget {
               ),
             ),
           ),
-        if (panel.isVideoPending)
+        // Only in the Studio (onMotion set): there the loop is rendering on the server. Offline
+        // packs never fill it in, so the reader shows the still without a spinner.
+        if (panel.isVideoPending && onMotion != null)
           Positioned(
             left: 10,
             top: 10,

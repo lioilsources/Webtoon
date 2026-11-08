@@ -69,6 +69,12 @@ func TestEpisodeShape(t *testing.T) {
 		ap["image_url"] = fmt.Sprintf("media/%s/p%02d.webp", e.Row.ID, i)
 		if _, ok := ap["video_url"]; ok {
 			ap["video_url"] = fmt.Sprintf("media/%s/p%02d_loop.webp", e.Row.ID, i)
+		} else if ap["animate"] == true {
+			// no loop in the zip → shipped as a still (never "pending" offline)
+			ap["animate"] = false
+			for _, k := range []string{"motion", "loop_seconds", "video_status"} {
+				delete(ap, k)
+			}
 		}
 		if !reflect.DeepEqual(ap, gp) {
 			t.Errorf("panel %d\n got %v\nwant %v", i, gp, ap)

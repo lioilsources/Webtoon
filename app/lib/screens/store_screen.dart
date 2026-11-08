@@ -133,21 +133,35 @@ class StoreScreen extends ConsumerWidget {
                 key: const ValueKey('store-list'),
                 padding: const EdgeInsets.fromLTRB(16, 12, 16, 32),
                 children: [
-                  for (final t in types) ...[
-                    _SectionHeader(
-                      key: ValueKey('store-type-${t.id}'),
-                      icon: typeIcon(t.icon),
-                      title: t.titleIn(lang),
-                    ),
-                    _PackGrid(packs: view.packsOf(t.id)),
-                  ],
+                  // Pack types side by side on a tablet (each has a pack or two today).
+                  _CardColumns(
+                    children: [
+                      for (final t in types)
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            _SectionHeader(
+                              key: ValueKey('store-type-${t.id}'),
+                              icon: typeIcon(t.icon),
+                              title: t.titleIn(lang),
+                            ),
+                            _PackGrid(packs: view.packsOf(t.id)),
+                          ],
+                        ),
+                    ],
+                  ),
                   if (gamebooks.isNotEmpty) ...[
                     _SectionHeader(
                       key: const ValueKey('store-gamebooks'),
                       icon: Icons.alt_route_rounded,
                       title: tr(lang, 'gamebook.shelf'),
                     ),
-                    for (final g in gamebooks) GamebookStoreCard(gamebook: g),
+                    _CardColumns(
+                      children: [
+                        for (final g in gamebooks)
+                          GamebookStoreCard(gamebook: g),
+                      ],
+                    ),
                   ],
                   if (bundles.isNotEmpty) ...[
                     _SectionHeader(
@@ -155,7 +169,11 @@ class StoreScreen extends ConsumerWidget {
                       icon: Icons.inventory_2_rounded,
                       title: tr(lang, 'store.bundles'),
                     ),
-                    for (final b in bundles) _BundleCard(bundle: b),
+                    _CardColumns(
+                      children: [
+                        for (final b in bundles) _BundleCard(bundle: b),
+                      ],
+                    ),
                   ],
                 ],
               ),
@@ -185,6 +203,27 @@ class _SectionHeader extends StatelessWidget {
         ),
       ],
     ),
+  );
+}
+
+/// Wide cards (gamebooks, bundles) in one column on a phone and 2–3 side by side on a tablet
+/// (~360 px each), so a tablet is not a list of stretched rows.
+class _CardColumns extends StatelessWidget {
+  final List<Widget> children;
+  const _CardColumns({required this.children});
+
+  @override
+  Widget build(BuildContext context) => LayoutBuilder(
+    builder: (context, c) {
+      const gap = 14.0;
+      final columns = (c.maxWidth / 360).floor().clamp(1, 3);
+      if (columns == 1) return Column(children: children);
+      final width = (c.maxWidth - gap * (columns - 1)) / columns;
+      return Wrap(
+        spacing: gap,
+        children: [for (final w in children) SizedBox(width: width, child: w)],
+      );
+    },
   );
 }
 
