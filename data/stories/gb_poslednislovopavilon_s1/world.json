@@ -1,0 +1,103 @@
+{
+  "id": "w_gb_poslednislovopavilon_s1",
+  "title": "Poslední slovo (pavilon) — Pivo není rada",
+  "synopsis": "Venkovní restaurace v čínském pavilonu, prší na střechu. Olin u guláše a piva, Jana u špaget a vína, servisní dron s doporučeními. Nikdo se nehádá, a přesto chce Jana mít poslední slovo.",
+  "tone": "lehký, ironický, laskavý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "botticelli_pavilon",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba dospělí kolem padesátky, oba nosí brýle; Olin uvolněný a usměvavý, Jana elegantní a přesná. Kreslí se jako Botticelliho tempera v čínském pavilonu, ne manga.",
+      "Hra stojí na tvářích, rytmu a tichu, žádná velká gesta. Jana nikdy nevstane, ani jeden neopustí svůj zákop. Servisní dron je klidný až pasivně agresivní."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nevyhraje: Jana má poslední slovo a Olin ho nechá poslední tím, že mlčí a usmívá se."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pavilon",
+      "l_stul_pavilon"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_48",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a relaxed Czech man about 48 with short greying brown hair, a short beard and round glasses, smiling calmly with a spark in his eyes",
+      "base": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "loose dark green linen shirt"
+      },
+      "photo": "a relaxed Czech man about 48 with short greying brown hair, a short beard and round glasses, smiling calmly with a spark in his eyes",
+      "tag_prompt": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, loose dark green linen shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_46",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Czech woman about 46 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, precise movements",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant",
+      "outfits": {
+        "default": "cream silk blouse with a mandarin collar"
+      },
+      "photo": "an elegant Czech woman about 46 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, precise movements",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant, cream silk blouse with a mandarin collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dron",
+      "name": "Dron",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
+      "base": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
+      "tag_prompt": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pavilon",
+      "name": "Pavilon NEON GULÁŠ & PASTA",
+      "description": "Venkovní restaurace v čínském zahradním pavilonu: červené lakované sloupy, prohnutá střecha, lampiony, kvetoucí stromy, motýli, jezírko. Prší na střechu.",
+      "tag_prompt": "outdoors, chinese garden pavilion, restaurant, red lacquered columns, curved tiled roof, paper lanterns, flowering trees, butterflies, lotus pond, rain falling from the roof, flowers everywhere",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_pavilon",
+      "name": "Stůl v pavilonu",
+      "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno, kolem květy a motýli.",
+      "tag_prompt": "small round table in a chinese pavilion, flower petals on the table, butterflies, paper lanterns, rain in the background",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "poslednislovopavilon",
+    "node": "s1"
+  }
+}
