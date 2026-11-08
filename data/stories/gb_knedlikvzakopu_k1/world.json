@@ -33,15 +33,15 @@
       "name": "Olin",
       "role": "playable",
       "gender": "m",
-      "count_tag": "1boy",
-      "human": true,
-      "description": "a serene man about 46 rendered like a white marble statue, short curly greying hair, a short beard, round glasses, a calm godlike smile",
-      "base": "adult, mature male, middle-aged, marble statue style, white marble skin, short curly greying hair, short beard, (round glasses:1.4), calm smile, serene",
+      "count_tag": "no humans",
+      "human": false,
+      "description": "white marble greek theatre mask of a cheerful man, angular chiseled face, broad smile, (round glasses:1.4), short light blonde beard carved in marble, mask on a marble pedestal, no body",
+      "base": "no humans, white marble greek theatre mask of a cheerful man, angular chiseled face, broad smile, (round glasses:1.4), short light blonde beard carved in marble, mask on a marble pedestal, no body",
       "outfits": {
-        "default": "white toga draped over a dark shirt"
+        "default": ""
       },
-      "photo": "a serene man about 46 rendered like a white marble statue, short curly greying hair, a short beard, round glasses, a calm godlike smile",
-      "tag_prompt": "adult, mature male, middle-aged, marble statue style, white marble skin, short curly greying hair, short beard, (round glasses:1.4), calm smile, serene, white toga draped over a dark shirt",
+      "photo": "white marble greek theatre mask of a cheerful man, angular chiseled face, broad smile, (round glasses:1.4), short light blonde beard carved in marble, mask on a marble pedestal, no body",
+      "tag_prompt": "no humans, white marble greek theatre mask of a cheerful man, angular chiseled face, broad smile, (round glasses:1.4), short light blonde beard carved in marble, mask on a marble pedestal, no body",
       "identity_level": "prompt",
       "reference_images": []
     },
@@ -50,15 +50,15 @@
       "name": "Jana",
       "role": "playable",
       "gender": "f",
-      "count_tag": "1girl",
-      "human": true,
-      "description": "an elegant woman about 50 rendered like a white marble statue, a sleek chin-length bob, thin rectangular glasses, a cold sharp gaze",
-      "base": "adult, mature female, middle-aged, marble statue style, white marble skin, sleek chin-length bob, (thin rectangular glasses:1.4), sharp gaze, cold expression",
+      "count_tag": "no humans",
+      "human": false,
+      "description": "white marble greek theatre mask of an elegant woman, calm face framed by a carved marble veil, (thin rectangular glasses:1.4), cold sharp gaze, mask on a marble pedestal, no body",
+      "base": "no humans, white marble greek theatre mask of an elegant woman, calm face framed by a carved marble veil, (thin rectangular glasses:1.4), cold sharp gaze, mask on a marble pedestal, no body",
       "outfits": {
-        "default": "white chiton over a high-collared blouse"
+        "default": ""
       },
-      "photo": "an elegant woman about 50 rendered like a white marble statue, a sleek chin-length bob, thin rectangular glasses, a cold sharp gaze",
-      "tag_prompt": "adult, mature female, middle-aged, marble statue style, white marble skin, sleek chin-length bob, (thin rectangular glasses:1.4), sharp gaze, cold expression, white chiton over a high-collared blouse",
+      "photo": "white marble greek theatre mask of an elegant woman, calm face framed by a carved marble veil, (thin rectangular glasses:1.4), cold sharp gaze, mask on a marble pedestal, no body",
+      "tag_prompt": "no humans, white marble greek theatre mask of an elegant woman, calm face framed by a carved marble veil, (thin rectangular glasses:1.4), cold sharp gaze, mask on a marble pedestal, no body",
       "identity_level": "prompt",
       "reference_images": []
     }
