@@ -218,6 +218,14 @@ void main() {
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('settings-language')), findsOneWidget);
     expect(find.text('Jazyk bublin'), findsOneWidget);
+    expect(find.byKey(const ValueKey('settings-app-icon')), findsOneWidget);
+    // the icon picker pushes Úložiště below the fold
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('reinstall-starter')),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('storage-used')), findsOneWidget);
     expect(find.text('Fixture'), findsOneWidget);
     expect(find.text('v1 · 2 příběhy'), findsOneWidget);
@@ -231,6 +239,12 @@ void main() {
     expect(find.text('Obnovit starter?'), findsNothing);
 
     // Language change goes through readerLanguageProvider (Czech story has an English title).
+    await tester.scrollUntilVisible(
+      find.byKey(const ValueKey('settings-language')),
+      -300,
+      scrollable: find.byType(Scrollable).first,
+    );
+    await tester.pumpAndSettle();
     await tester.tap(find.byKey(const ValueKey('settings-language')));
     await tester.pumpAndSettle();
     await tester.tap(find.text('🇬🇧  English').last);

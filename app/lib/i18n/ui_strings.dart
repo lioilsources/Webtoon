@@ -168,6 +168,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Pro dospělé',
     'settings.title': 'Nastavení',
     'settings.language': 'Jazyk bublin',
+    'settings.appIcon': 'Ikona aplikace',
+    'settings.appIconHint': 'Vyber si, jak bude Toonfork vypadat na ploše.',
     'settings.languageHint':
         'Díl se ukáže v tomhle jazyce, když je do něj přeložený; jinak v originále.',
     'settings.original': 'Originál',
@@ -374,6 +376,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'For adults',
     'settings.title': 'Settings',
     'settings.language': 'Bubble language',
+    'settings.appIcon': 'App icon',
+    'settings.appIconHint': 'Choose how Toonfork looks on your home screen.',
     'settings.languageHint':
         'An episode is shown in this language when it has been translated into it; otherwise in the original.',
     'settings.original': 'Original',
@@ -581,6 +585,9 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Für Erwachsene',
     'settings.title': 'Einstellungen',
     'settings.language': 'Sprache der Sprechblasen',
+    'settings.appIcon': 'App-Symbol',
+    'settings.appIconHint':
+        'Wähle, wie Toonfork auf deinem Startbildschirm aussieht.',
     'settings.languageHint':
         'Eine Folge erscheint in dieser Sprache, wenn sie übersetzt ist; sonst im Original.',
     'settings.original': 'Original',
@@ -793,6 +800,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Per adulti',
     'settings.title': 'Impostazioni',
     'settings.language': 'Lingua dei fumetti',
+    'settings.appIcon': 'Icona dell\'app',
+    'settings.appIconHint': 'Scegli come appare Toonfork nella schermata Home.',
     'settings.languageHint':
         'Un episodio appare in questa lingua se è stato tradotto; altrimenti in originale.',
     'settings.original': 'Originale',
@@ -1005,6 +1014,9 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Pour adultes',
     'settings.title': 'Réglages',
     'settings.language': 'Langue des bulles',
+    'settings.appIcon': 'Icône de l\'app',
+    'settings.appIconHint':
+        'Choisissez l\'apparence de Toonfork sur l\'écran d\'accueil.',
     'settings.languageHint':
         'Un épisode s’affiche dans cette langue s’il y est traduit ; sinon en version originale.',
     'settings.original': 'Version originale',
@@ -1215,6 +1227,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Dla dorosłych',
     'settings.title': 'Ustawienia',
     'settings.language': 'Język dymków',
+    'settings.appIcon': 'Ikona aplikacji',
+    'settings.appIconHint': 'Wybierz, jak Toonfork wygląda na ekranie głównym.',
     'settings.languageHint':
         'Odcinek pojawi się w tym języku, jeśli został na niego przetłumaczony; w przeciwnym razie w oryginale.',
     'settings.original': 'Oryginał',
@@ -1426,6 +1440,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Para adultos',
     'settings.title': 'Configurações',
     'settings.language': 'Idioma dos balões',
+    'settings.appIcon': 'Ícone do app',
+    'settings.appIconHint': 'Escolha como o Toonfork aparece na tela inicial.',
     'settings.languageHint':
         'O episódio aparece neste idioma quando já foi traduzido; senão, no original.',
     'settings.original': 'Original',
@@ -1631,6 +1647,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': '大人向け',
     'settings.title': '設定',
     'settings.language': 'ふきだしの言語',
+    'settings.appIcon': 'アプリアイコン',
+    'settings.appIconHint': 'ホーム画面での Toonfork の見た目を選べます。',
     'settings.languageHint': 'この言語に翻訳されている話はこの言語で、そうでなければ原語で表示されます。',
     'settings.original': '原語',
     'settings.storage': 'ストレージ',
@@ -1827,6 +1845,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': '성인용',
     'settings.title': '설정',
     'settings.language': '말풍선 언어',
+    'settings.appIcon': '앱 아이콘',
+    'settings.appIconHint': '홈 화면에 보일 Toonfork 아이콘을 고르세요.',
     'settings.languageHint': '이 언어로 번역된 화는 이 언어로, 아니면 원문으로 보여요.',
     'settings.original': '원문',
     'settings.storage': '저장 공간',
@@ -2025,6 +2045,8 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Cho người lớn',
     'settings.title': 'Cài đặt',
     'settings.language': 'Ngôn ngữ bong bóng thoại',
+    'settings.appIcon': 'Biểu tượng ứng dụng',
+    'settings.appIconHint': 'Chọn giao diện của Toonfork trên màn hình chính.',
     'settings.languageHint':
         'Tập truyện sẽ hiện bằng ngôn ngữ này nếu đã được dịch; nếu chưa thì hiện bản gốc.',
     'settings.original': 'Bản gốc',
@@ -2232,6 +2254,9 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Для взрослых',
     'settings.title': 'Настройки',
     'settings.language': 'Язык реплик',
+    'settings.appIcon': 'Значок приложения',
+    'settings.appIconHint':
+        'Выберите, как Toonfork выглядит на главном экране.',
     'settings.languageHint':
         'Эпизод показывается на этом языке, если он на него переведён; иначе — в оригинале.',
     'settings.original': 'Оригинал',
@@ -2441,6 +2466,9 @@ const Map<String, Map<String, String>> kUiStrings = {
     'audience.adult': 'Для дорослих',
     'settings.title': 'Налаштування',
     'settings.language': 'Мова реплік',
+    'settings.appIcon': 'Іконка застосунку',
+    'settings.appIconHint':
+        'Оберіть, як Toonfork виглядає на головному екрані.',
     'settings.languageHint':
         'Епізод показується цією мовою, якщо його перекладено; інакше — в оригіналі.',
     'settings.original': 'Оригінал',

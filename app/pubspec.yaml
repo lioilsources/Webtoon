@@ -76,6 +76,8 @@ flutter:
     # Starter content pack (../PACK_FORMAT.md), produced by `webtoon export-pack -starter`;
     # extracted into <application support>/packs/starter/ on first launch (lib/packs).
     - assets/packs/starter.zip
+    # Icon picker thumbnails (Nastavení → Ikona aplikace), from tools/app_icons.py
+    - assets/icon/thumbs/
 
   # Bubble fonts (OFL, from cute_kid_fonts; copies of ../assets/fonts, licences alongside).
   fonts:

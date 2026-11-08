@@ -7,6 +7,7 @@ import '../packs/pack_store.dart';
 import '../profile/reader_profile.dart';
 import '../providers/language_provider.dart';
 import '../providers/providers.dart';
+import '../settings/app_icon.dart';
 import '../shop/shop_controller.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
@@ -59,6 +60,8 @@ class SettingsScreen extends ConsumerWidget {
                 .read(readerLanguageProvider.notifier)
                 .select(v == null || v.isEmpty ? null : v),
           ),
+          const SizedBox(height: 28),
+          const AppIconPicker(key: ValueKey('settings-app-icon')),
           const SizedBox(height: 28),
           Text(
             tr(ui, 'settings.storage'),
