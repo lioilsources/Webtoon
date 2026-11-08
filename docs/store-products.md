@@ -19,13 +19,12 @@ python3 tools/gen_products.py --catalog --check                 # fail when out 
 | kind | product id | price | what it unlocks |
 |---|---|---|---|
 | pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: up to 50 stories, all 12 languages |
-| type bundle | `bundle_<type>` (`bundle_kids`, `bundle_harlequin`, `bundle_superhero`) | 2.99 USD (Tier 3) | every pack of the type, **current and future** |
-| everything | `bundle_all` | 6.99 USD (Tier 7) | every pack of every type, current and future |
+| everything | `bundle_all` | 5.99 USD (Tier 6) | every pack of every type, current and future |
 | gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (today's four gamebooks are free: no product) |
 | gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (a free gamebook includes its kit) |
 
 Tiers: Apple replaced price tiers with price points (USD base price, other storefronts derived); "Tier N" is the
-old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 6.99 = Tier 7).
+old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 5.99 = Tier 6). No type bundles are sold (decided 2026-11-08): only `bundle_all`.
 In Play Console set the USD default price and let Play convert the other countries.
 
 Bundles never list their packs in the store: the app resolves a bundle against the catalog at runtime
@@ -42,10 +41,7 @@ Current list (generated; names ≤ 30 and descriptions ≤ 45 characters for App
 | `pack_harlequin_2` | pack | harlequin | 0.99 | Tier 1 | Romantika 2 | Romance 2 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
-| `bundle_kids` | bundle | kids | 2.99 | Tier 3 | Vše pro děti | All Kids stories | Všechny balíčky Pro děti, i budoucí | All Kids packs, future ones too |
-| `bundle_harlequin` | bundle | harlequin | 2.99 | Tier 3 | Všechna romantika | All Romance stories | Všechny balíčky Romantika, i budoucí | All Romance packs, future ones too |
-| `bundle_superhero` | bundle | superhero | 2.99 | Tier 3 | Všichni superhrdinové | All Superhero stories | Všechny balíčky Superhrdinové, i budoucí | All Superheroes packs, future ones too |
-| `bundle_all` | bundle | all | 6.99 | Tier 7 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
+| `bundle_all` | bundle | all | 5.99 | Tier 6 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
 <!-- products:end -->
 
 Paid gamebooks (none yet: every published gamebook is free and needs no product), e.g. for a gamebook `drak`:
@@ -75,7 +71,7 @@ One-time:
 Per product (Features → **In-App Purchases** → **+**):
 1. Type **Non-Consumable**; Reference Name = the product id (e.g. `pack_kids_1`); Product ID = the product id.
 2. **Availability**: all countries the app is in.
-3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 2.99 / 3.99 / 6.99 USD (table above);
+3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 3.99 / 5.99 USD (table above);
    accept the generated prices of the other storefronts.
 4. **App Store Localization**: add **Czech** and **English (U.S.)** (more later) with the display name and
    description from the table / `tools/products.csv`.
@@ -107,7 +103,7 @@ One-time:
 Per product (**Monetize → Products → In-app products → Create product**):
 1. Product ID = the product id (lower case, digits, `_` and `.` only: `pack_kids_1` is valid). Permanent.
 2. Name and description: English (default) and Czech from the table (Play allows 55 / 200 characters).
-3. Default price 0.99 / 1.99 / 2.99 / 3.99 / 6.99 USD → **Update exchange rates** fills the other countries.
+3. Default price 0.99 / 1.99 / 3.99 / 5.99 USD → **Update exchange rates** fills the other countries.
 4. **Activate**. (Play has no consumable flag; the app never consumes these purchases, which makes them
    non-consumable.)
 
@@ -125,8 +121,7 @@ install from the internal testing track. Promo codes: **Monetize → Promo codes
 ```
 Toonfork is a free offline webtoon reader. 15 stories are bundled in the app and are free (no account,
 no purchase). Additional story packs are optional non-consumable in-app purchases (Obchod tab):
-pack_<type>_<n> unlocks one pack of up to 50 stories, bundle_<type> unlocks every current and future pack of
-one type, bundle_all unlocks everything.
+pack_<type>_<n> unlocks one pack of up to 50 stories; bundle_all unlocks every current and future pack.
 
 After a purchase the app downloads the pack (zip files, ~50–150 MB) from GitHub Releases
 (github.com/lioilsources/webtoon-content), verifies its SHA-256 checksum and installs it; the stories then
