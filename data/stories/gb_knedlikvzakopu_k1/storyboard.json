@@ -1,0 +1,691 @@
+{
+  "title": "Hladina",
+  "title_i18n": {
+    "en": "Surface",
+    "de": "Oberfläche",
+    "it": "Superficie",
+    "fr": "Surface",
+    "pl": "Tafla",
+    "pt-BR": "Superfície",
+    "ja": "水面",
+    "ko": "수면",
+    "vi": "Mặt nước",
+    "ru": "Гладь",
+    "uk": "Гладь"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_olymp",
+      "characters": [],
+      "visual_tags": [
+        "marble restaurant",
+        "mount olympus",
+        "greek colonnade",
+        "above the clouds",
+        "distant city below",
+        "cold light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Jídlo je jen data s pachutí nostalgie.",
+          "kind": "narration",
+          "i18n": {
+            "en": "Food is just data with an aftertaste of nostalgia.",
+            "de": "Essen ist nur Daten mit einem Nachgeschmack von Nostalgie.",
+            "it": "Il cibo è solo dati con un retrogusto di nostalgia.",
+            "fr": "La nourriture n'est que des données avec un arrière-goût de nostalgie.",
+            "pl": "Jedzenie to tylko dane z posmakiem nostalgii.",
+            "pt-BR": "Comida é só dado com um gostinho de nostalgia.",
+            "ja": "食事とは、郷愁の後味がするデータにすぎない。",
+            "ko": "음식은 향수의 뒷맛이 남는 데이터일 뿐이다.",
+            "vi": "Đồ ăn chỉ là dữ liệu có dư vị hoài niệm.",
+            "ru": "Еда — это просто данные с привкусом ностальгии.",
+            "uk": "Їжа — це просто дані з присмаком ностальгії."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "clouds drifting slowly between the marble columns, faint lights of the city far below, static camera"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_mramorovy_stul",
+      "characters": [],
+      "visual_tags": [
+        "marble table",
+        "beer mug",
+        "wine glass",
+        "goulash",
+        "spaghetti",
+        "still surface",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the surfaces of the beer and the wine perfectly still, then a single tiny ripple, static camera"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smile",
+        "scooping goulash",
+        "spoon"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Tak. Příjemné ticho. Tohle je hezký večer.",
+          "kind": "speech",
+          "i18n": {
+            "en": "So. A pleasant silence. This is a nice evening.",
+            "de": "Tja. Angenehme Stille. Das ist ein schöner Abend.",
+            "it": "Ecco. Un silenzio piacevole. Che bella serata.",
+            "fr": "Voilà. Un silence agréable. C'est une belle soirée.",
+            "pl": "No. Przyjemna cisza. To jest miły wieczór.",
+            "pt-BR": "Pronto. Um silêncio agradável. Que noite boa.",
+            "ja": "まあね。心地いい静けさ。いい夜だ。",
+            "ko": "그렇지. 기분 좋은 고요함. 오늘 밤 좋네.",
+            "vi": "Thế đấy. Im lặng dễ chịu. Một buổi tối đẹp.",
+            "ru": "Ну вот. Приятная тишина. Хороший вечер.",
+            "uk": "Ну от. Приємна тиша. Гарний вечір."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "cold stare",
+        "holding a wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Neříkej „ticho“, když je ticho jen v tvé hlavě.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Don't say \"silence\" when the silence is only in your head.",
+            "de": "Sag nicht „Stille“, wenn die Stille nur in deinem Kopf ist.",
+            "it": "Non dire «silenzio» quando il silenzio è solo nella tua testa.",
+            "fr": "Ne dis pas « silence » quand le silence n'est que dans ta tête.",
+            "pl": "Nie mów „cisza”, kiedy cisza jest tylko w twojej głowie.",
+            "pt-BR": "Não diga \"silêncio\" quando o silêncio está só na sua cabeça.",
+            "ja": "静けさが自分の頭の中にしかないのに「静けさ」なんて言わないで。",
+            "ko": "고요함이 네 머릿속에만 있으면서 '고요함'이라고 하지 마.",
+            "vi": "Đừng nói \"im lặng\" khi sự im lặng chỉ có trong đầu anh.",
+            "ru": "Не говори «тишина», когда тишина только у тебя в голове.",
+            "uk": "Не кажи «тиша», коли тиша тільки в твоїй голові."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "eyes closed",
+        "serene smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "V mojí hlavě je zahradní jezírko. Kapříci. Hladina.",
+          "kind": "speech",
+          "i18n": {
+            "en": "In my head there's a garden pond. Little carp. A still surface.",
+            "de": "In meinem Kopf ist ein Gartenteich. Kleine Karpfen. Eine Oberfläche.",
+            "it": "Nella mia testa c'è un laghetto. Carpette. La superficie.",
+            "fr": "Dans ma tête, il y a un bassin. De petites carpes. Une surface lisse.",
+            "pl": "W mojej głowie jest oczko wodne. Karpiki. Tafla.",
+            "pt-BR": "Na minha cabeça tem um laguinho. Carpinhas. A superfície.",
+            "ja": "僕の頭の中には庭の池がある。小さな鯉。水面。",
+            "ko": "내 머릿속엔 정원 연못이 있어. 작은 잉어들. 수면.",
+            "vi": "Trong đầu anh là một cái ao vườn. Mấy con cá chép nhỏ. Mặt nước.",
+            "ru": "У меня в голове садовый прудик. Карпики. Гладь.",
+            "uk": "У моїй голові садовий ставочок. Коропчики. Гладь."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "deadpan",
+        "flat expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "V mojí hlavě je backlog.",
+          "kind": "speech",
+          "i18n": {
+            "en": "In my head there's a backlog.",
+            "de": "In meinem Kopf ist ein Backlog.",
+            "it": "Nella mia testa c'è un backlog.",
+            "fr": "Dans ma tête, il y a un backlog.",
+            "pl": "W mojej głowie jest backlog.",
+            "pt-BR": "Na minha cabeça tem um backlog.",
+            "ja": "私の頭の中にはバックログ。",
+            "ko": "내 머릿속엔 백로그가 있어.",
+            "vi": "Trong đầu em là backlog.",
+            "ru": "У меня в голове бэклог.",
+            "uk": "У моїй голові беклог."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "nodding",
+        "triumphant smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Tak.",
+          "kind": "speech",
+          "i18n": {
+            "en": "So.",
+            "de": "Tja.",
+            "it": "Ecco.",
+            "fr": "Voilà.",
+            "pl": "No.",
+            "pt-BR": "Pronto.",
+            "ja": "まあね。",
+            "ko": "그렇지.",
+            "vi": "Thế đấy.",
+            "ru": "Ну вот.",
+            "uk": "Ну от."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "pointing with fork",
+        "narrowed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Neříkej „tak“.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Don't say \"so\".",
+            "de": "Sag nicht „tja“.",
+            "it": "Non dire «ecco».",
+            "fr": "Ne dis pas « voilà ».",
+            "pl": "Nie mów „no”.",
+            "pt-BR": "Não diga \"pronto\".",
+            "ja": "「まあね」って言わないで。",
+            "ko": "'그렇지'라고 하지 마.",
+            "vi": "Đừng nói \"thế đấy\".",
+            "ru": "Не говори «ну вот».",
+            "uk": "Не кажи «ну от»."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smile",
+        "innocent expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Tak jsem neřekl.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I didn't say so.",
+            "de": "Tja, hab ich nicht gesagt.",
+            "it": "Ecco, non l'ho detto.",
+            "fr": "Voilà, je ne l'ai pas dit.",
+            "pl": "No, nie powiedziałem.",
+            "pt-BR": "Pronto, não disse.",
+            "ja": "まあね、とは言ってない。",
+            "ko": "그렇지, 라고는 안 했어.",
+            "vi": "Thế đấy, anh có nói đâu.",
+            "ru": "Ну вот, я не говорил.",
+            "uk": "Ну от, я не казав."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "leaning forward",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Právě že jsi řekl. A to „jako by jsi vyhrál“ — to ani nebylo potřeba komentovat. Víš přesně, co děláš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You did, actually. And that \"as if you'd won\" — that didn't even need a comment. You know exactly what you're doing.",
+            "de": "Doch, hast du. Und dieses „als hättest du gewonnen“ — das musste man nicht mal kommentieren. Du weißt genau, was du tust.",
+            "it": "E invece l'hai detto. E quel «come se avessi vinto» — non serviva nemmeno commentarlo. Sai benissimo cosa fai.",
+            "fr": "Justement, si. Et ce « comme si tu avais gagné » — pas besoin de le commenter. Tu sais très bien ce que tu fais.",
+            "pl": "Właśnie że powiedziałeś. A to „jakbyś wygrał” — tego nawet nie trzeba komentować. Dobrze wiesz, co robisz.",
+            "pt-BR": "Disse, sim. E esse \"como se tivesse ganhado\" — nem precisava comentar. Você sabe muito bem o que está fazendo.",
+            "ja": "言ったでしょ。それにあの「勝ったみたいな顔」——コメントするまでもない。自分が何してるか、ちゃんとわかってるくせに。",
+            "ko": "했거든. 그리고 그 '이긴 것처럼' — 그건 말할 필요도 없었어. 네가 뭘 하는지 정확히 알잖아.",
+            "vi": "Anh có nói đấy. Còn cái kiểu \"như thể vừa thắng\" — chẳng cần bình luận. Anh biết rõ mình đang làm gì.",
+            "ru": "Как раз сказал. И это «как будто выиграл» — даже комментировать не нужно. Ты прекрасно знаешь, что делаешь.",
+            "uk": "Якраз сказав. І це «ніби виграв» — навіть коментувати не треба. Ти чудово знаєш, що робиш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "scooping goulash",
+        "bread dumplings",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Dělám guláš. Jako generace přede mnou. Děkuju za recepturu.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm making goulash. Like the generations before me. Thanks for the recipe.",
+            "de": "Ich mache Gulasch. Wie die Generationen vor mir. Danke für das Rezept.",
+            "it": "Faccio gulasch. Come le generazioni prima di me. Grazie per la ricetta.",
+            "fr": "Je fais du goulash. Comme les générations avant moi. Merci pour la recette.",
+            "pl": "Robię gulasz. Jak pokolenia przede mną. Dziękuję za recepturę.",
+            "pt-BR": "Estou fazendo gulache. Como as gerações antes de mim. Obrigado pela receita.",
+            "ja": "グヤーシュをやってるだけ。先人たちと同じように。レシピに感謝。",
+            "ko": "난 굴라시를 하는 중이야. 앞선 세대들처럼. 레시피에 감사하며.",
+            "vi": "Anh đang làm goulash. Như bao thế hệ trước. Cảm ơn công thức.",
+            "ru": "Я делаю гуляш. Как поколения до меня. Спасибо за рецептуру.",
+            "uk": "Я роблю гуляш. Як покоління до мене. Дякую за рецептуру."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "raised eyebrow",
+        "sceptical",
+        "twirling spaghetti"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Opravdu. Guláš. V roce třicet sedm. S knedlíkem. Chováš se jako muzeum s žaludkem.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Really. Goulash. In thirty-seven. With a dumpling. You act like a museum with a stomach.",
+            "de": "Ernsthaft. Gulasch. Im Jahr siebenunddreißig. Mit Knödel. Du benimmst dich wie ein Museum mit Magen.",
+            "it": "Davvero. Gulasch. Nel trentasette. Con il canederlo. Ti comporti come un museo con lo stomaco.",
+            "fr": "Vraiment. Du goulash. En trente-sept. Avec un knödel. Tu te comportes comme un musée avec un estomac.",
+            "pl": "Serio. Gulasz. W trzydziestym siódmym. Z knedlem. Zachowujesz się jak muzeum z żołądkiem.",
+            "pt-BR": "Sério. Gulache. Em trinta e sete. Com bolinho. Você age como um museu com estômago.",
+            "ja": "本気で。グヤーシュ。三十七年に。クネドリーキ付きで。胃袋のついた博物館みたい。",
+            "ko": "진짜. 굴라시. 37년에. 크네들리키랑. 위장 달린 박물관 같아.",
+            "vi": "Thật luôn. Goulash. Năm ba mươi bảy. Với knedlík. Anh cư xử như một viện bảo tàng có dạ dày.",
+            "ru": "Серьёзно. Гуляш. В тридцать седьмом. С кнедликом. Ты ведёшь себя как музей с желудком.",
+            "uk": "Серйозно. Гуляш. У тридцять сьомому. З кнедликом. Ти поводишся як музей зі шлунком."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "gentle smile",
+        "raising beer mug"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "A ty máš špagety. S parmazánem. Italové by zaplakali, ale já jsem v zenu, tak jen říkám: dobrou chuť.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you've got spaghetti. With parmesan. The Italians would weep, but I'm in zen, so I'll just say: enjoy.",
+            "de": "Und du hast Spaghetti. Mit Parmesan. Die Italiener würden weinen, aber ich bin im Zen, also sage ich nur: guten Appetit.",
+            "it": "E tu hai gli spaghetti. Col parmigiano. Gli italiani piangerebbero, ma io sono zen, quindi dico solo: buon appetito.",
+            "fr": "Et toi, tu as des spaghetti. Au parmesan. Les Italiens pleureraient, mais je suis zen, alors je dis juste : bon appétit.",
+            "pl": "A ty masz spaghetti. Z parmezanem. Włosi by zapłakali, ale ja jestem w zenie, więc mówię tylko: smacznego.",
+            "pt-BR": "E você está com espaguete. Com parmesão. Os italianos chorariam, mas eu estou zen, então só digo: bom apetite.",
+            "ja": "そっちはスパゲッティ。パルメザン付き。イタリア人なら泣くだろうけど、僕は悟ってるから、ただこう言うよ。いただきます。",
+            "ko": "넌 스파게티. 파르메산 얹어서. 이탈리아 사람들이 울겠지만, 난 초연하니까 그냥 이렇게만 말할게. 맛있게 먹어.",
+            "vi": "Còn em thì spaghetti. Với parmesan. Người Ý chắc khóc mất, nhưng anh đang thiền, nên chỉ nói: ngon miệng nhé.",
+            "ru": "А у тебя спагетти. С пармезаном. Итальянцы бы заплакали, но я в дзене, так что просто скажу: приятного аппетита.",
+            "uk": "А в тебе спагеті. З пармезаном. Італійці б заплакали, але я в дзені, тож просто скажу: смачного."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "cold stare",
+        "holding a wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "To není totéž a víš to.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's not the same and you know it.",
+            "de": "Das ist nicht dasselbe, und das weißt du.",
+            "it": "Non è la stessa cosa e lo sai.",
+            "fr": "Ce n'est pas pareil et tu le sais.",
+            "pl": "To nie to samo i dobrze o tym wiesz.",
+            "pt-BR": "Não é a mesma coisa, e você sabe.",
+            "ja": "それとこれとは違うし、わかってるでしょ。",
+            "ko": "그건 같은 게 아니고, 너도 알잖아.",
+            "vi": "Đâu có giống nhau, anh biết mà.",
+            "ru": "Это не одно и то же, и ты это знаешь.",
+            "uk": "Це не одне й те саме, і ти це знаєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "serene smile",
+        "slight nod"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Souhlasím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I agree.",
+            "de": "Stimmt.",
+            "it": "Sono d'accordo.",
+            "fr": "Je suis d'accord.",
+            "pl": "Zgadzam się.",
+            "pt-BR": "Concordo.",
+            "ja": "同感。",
+            "ko": "동의해.",
+            "vi": "Anh đồng ý.",
+            "ru": "Согласен.",
+            "uk": "Згоден."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "narrowed eyes",
+        "tight lips"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Nesouhlasím, že souhlasíš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I don't agree that you agree.",
+            "de": "Ich stimme nicht zu, dass du zustimmst.",
+            "it": "Non sono d'accordo che tu sia d'accordo.",
+            "fr": "Je ne suis pas d'accord que tu sois d'accord.",
+            "pl": "Nie zgadzam się, że się zgadzasz.",
+            "pt-BR": "Não concordo que você concorda.",
+            "ja": "あなたが同感だってことに、同感しない。",
+            "ko": "네가 동의한다는 데 난 동의 안 해.",
+            "vi": "Em không đồng ý là anh đồng ý.",
+            "ru": "Я не согласна, что ты согласен.",
+            "uk": "Я не згодна, що ти згоден."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "deep breath",
+        "eyes closed",
+        "serene"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Můžu souhlasit i s tím, že nesouhlasíš. Já jsem elastický. Já jsem gumička.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I can agree that you disagree, too. I'm elastic. I'm a rubber band.",
+            "de": "Ich kann auch zustimmen, dass du nicht zustimmst. Ich bin elastisch. Ich bin ein Gummiband.",
+            "it": "Posso essere d'accordo anche sul fatto che tu non sia d'accordo. Sono elastico. Sono un elastico.",
+            "fr": "Je peux aussi être d'accord que tu ne sois pas d'accord. Je suis élastique. Je suis un élastique.",
+            "pl": "Mogę się zgodzić nawet z tym, że się nie zgadzasz. Jestem elastyczny. Jestem gumką.",
+            "pt-BR": "Posso concordar até que você não concorda. Sou elástico. Sou um elástico.",
+            "ja": "同感しないってことにも同感できる。僕は柔軟なんだ。輪ゴムなんだ。",
+            "ko": "네가 동의 안 한다는 것에도 동의할 수 있어. 난 유연해. 난 고무줄이야.",
+            "vi": "Anh còn đồng ý được cả việc em không đồng ý. Anh co giãn. Anh là sợi dây thun.",
+            "ru": "Я могу согласиться даже с тем, что ты не согласна. Я эластичный. Я резиночка.",
+            "uk": "Я можу погодитися навіть із тим, що ти не згодна. Я еластичний. Я гумка."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "he breathes in, closes his eyes, opens them again with a serene smile"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "exasperated",
+        "gesturing with fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Gumička. Skvělé. Takže si tu sedíme, dvě dospělé osoby, jedna z nich gumička, a místo aby si přiznala, že ji irituje, když má pravdu ona druhá—",
+          "kind": "speech",
+          "i18n": {
+            "en": "A rubber band. Great. So here we sit, two adults, one of them a rubber band, and instead of admitting it's irritating when the other one is right—",
+            "de": "Ein Gummiband. Toll. Da sitzen wir also, zwei Erwachsene, einer davon ein Gummiband, und statt zuzugeben, dass es nervt, wenn die andere recht hat—",
+            "it": "Un elastico. Fantastico. Quindi stiamo qui seduti, due adulti, uno dei quali è un elastico, e invece di ammettere che gli dà fastidio quando l'altra ha ragione—",
+            "fr": "Un élastique. Génial. Donc on est là, deux adultes, dont un élastique, et au lieu d'admettre que ça l'agace quand l'autre a raison—",
+            "pl": "Gumką. Świetnie. Czyli siedzimy tu, dwie dorosłe osoby, jedna z nich gumką, i zamiast przyznać, że ją irytuje, kiedy ta druga ma rację—",
+            "pt-BR": "Um elástico. Ótimo. Então estamos aqui, dois adultos, um deles um elástico, e em vez de admitir que irrita quando a outra tem razão—",
+            "ja": "輪ゴム。素敵。つまり大人が二人座ってて、一人は輪ゴムで、もう一人が正しいとイラッとするって認める代わりに——",
+            "ko": "고무줄. 대단하네. 그러니까 다 큰 어른 둘이 앉아 있는데, 그중 하나는 고무줄이고, 다른 쪽이 옳을 때 짜증 난다는 걸 인정하는 대신—",
+            "vi": "Dây thun. Tuyệt. Vậy là hai người lớn ngồi đây, một người là dây thun, và thay vì thừa nhận là bực khi người kia đúng—",
+            "ru": "Резиночка. Прекрасно. То есть сидим мы тут, двое взрослых, один из них резиночка, и вместо того чтобы признать, что его бесит, когда права другая—",
+            "uk": "Гумка. Чудово. Тобто сидимо ми тут, двоє дорослих, один із них гумка, і замість визнати, що його дратує, коли права інша—"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

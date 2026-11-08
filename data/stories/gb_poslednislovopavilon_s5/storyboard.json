@@ -1,0 +1,891 @@
+{
+  "title": "Poslední slovo",
+  "title_i18n": {
+    "en": "The Last Word",
+    "de": "Das letzte Wort",
+    "it": "L'ultima parola",
+    "fr": "Le dernier mot",
+    "pl": "Ostatnie słowo",
+    "pt-BR": "A última palavra",
+    "ja": "最後のひと言",
+    "ko": "마지막 한마디",
+    "vi": "Lời cuối cùng",
+    "ru": "Последнее слово",
+    "uk": "Останнє слово"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_stul_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "table",
+        "empty plates",
+        "beer mug",
+        "wine glass",
+        "heavy rain",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "drinking beer",
+        "beer mug"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "smug smile fading",
+        "frowning"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "her triumphant smile slowly fades into a frown"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "frowning",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Nemusíš se pořád usmívat.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You don't have to keep smiling.",
+            "de": "Du musst nicht ständig lächeln.",
+            "it": "Non devi sorridere sempre.",
+            "fr": "Tu n'es pas obligé de sourire tout le temps.",
+            "pl": "Nie musisz się ciągle uśmiechać.",
+            "pt-BR": "Você não precisa ficar sorrindo.",
+            "ja": "ずっと笑ってなくていいのよ。",
+            "ko": "계속 웃을 필요는 없잖아.",
+            "vi": "Anh không cần cứ cười mãi thế.",
+            "ru": "Тебе не обязательно всё время улыбаться.",
+            "uk": "Тобі не обов'язково весь час усміхатися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eyes half closed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Ich weiß.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "わかってる。",
+            "ko": "알아.",
+            "vi": "Biết mà.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Tak proč to děláš?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Then why are you doing it?",
+            "de": "Warum machst du's dann?",
+            "it": "Allora perché lo fai?",
+            "fr": "Alors pourquoi tu le fais ?",
+            "pl": "To czemu to robisz?",
+            "pt-BR": "Então por que está fazendo isso?",
+            "ja": "じゃあ、なんでやるの？",
+            "ko": "그럼 왜 그러는데?",
+            "vi": "Vậy sao anh cứ làm thế?",
+            "ru": "Тогда зачем ты это делаешь?",
+            "uk": "Тоді навіщо ти це робиш?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "serene smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Protože se nehádám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Because I'm not arguing.",
+            "de": "Weil ich nicht streite.",
+            "it": "Perché non sto litigando.",
+            "fr": "Parce que je ne me dispute pas.",
+            "pl": "Bo się nie kłócę.",
+            "pt-BR": "Porque eu não estou discutindo.",
+            "ja": "喧嘩してないから。",
+            "ko": "안 싸우니까.",
+            "vi": "Vì anh không cãi nhau.",
+            "ru": "Потому что я не спорю.",
+            "uk": "Бо я не сперечаюся."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "looking up",
+        "thinking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To je odpověď?",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's an answer?",
+            "de": "Das ist eine Antwort?",
+            "it": "Questa è una risposta?",
+            "fr": "C'est une réponse, ça ?",
+            "pl": "To jest odpowiedź?",
+            "pt-BR": "Isso é resposta?",
+            "ja": "それが答え？",
+            "ko": "그게 대답이야?",
+            "vi": "Đó là câu trả lời à?",
+            "ru": "Это ответ?",
+            "uk": "Це відповідь?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Yes.",
+            "de": "Ja.",
+            "it": "Sì.",
+            "fr": "Oui.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ja": "うん。",
+            "ko": "응.",
+            "vi": "Ừ.",
+            "ru": "Да.",
+            "uk": "Так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "tight lips",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "いいよ。",
+            "ko": "그래.",
+            "vi": "Được thôi.",
+            "ru": "Хорошо.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "closed mouth",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "deep frown",
+        "narrowed eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing at self",
+        "insistent"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To bylo moje poslední slovo.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That was my last word.",
+            "de": "Das war mein letztes Wort.",
+            "it": "Quella era la mia ultima parola.",
+            "fr": "C'était mon dernier mot.",
+            "pl": "To było moje ostatnie słowo.",
+            "pt-BR": "Essa foi a minha última palavra.",
+            "ja": "今のが私の最後のひと言。",
+            "ko": "그게 내 마지막 한마디였어.",
+            "vi": "Đó là lời cuối cùng của em.",
+            "ru": "Это было моё последнее слово.",
+            "uk": "Це було моє останнє слово."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Weiß ich.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "vi": "Biết rồi.",
+            "ru": "Знаю.",
+            "uk": "Знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "leaning forward",
+        "frowning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Tak proč nic neříkáš?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Then why aren't you saying anything?",
+            "de": "Warum sagst du dann nichts?",
+            "it": "Allora perché non dici niente?",
+            "fr": "Alors pourquoi tu ne dis rien ?",
+            "pl": "To czemu nic nie mówisz?",
+            "pt-BR": "Então por que não diz nada?",
+            "ja": "じゃあ、なんで何も言わないの？",
+            "ko": "그럼 왜 아무 말도 안 해?",
+            "vi": "Vậy sao anh không nói gì?",
+            "ru": "Тогда почему ты ничего не говоришь?",
+            "uk": "Тоді чому ти нічого не кажеш?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gentle smile",
+        "eyes sparkling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Aby zůstalo poslední.",
+          "kind": "speech",
+          "i18n": {
+            "en": "So it stays the last.",
+            "de": "Damit es das letzte bleibt.",
+            "it": "Perché resti l'ultima.",
+            "fr": "Pour qu'il reste le dernier.",
+            "pl": "Żeby zostało ostatnie.",
+            "pt-BR": "Pra ela continuar sendo a última.",
+            "ja": "最後のままにしておくためさ。",
+            "ko": "마지막으로 남게 하려고.",
+            "vi": "Để nó vẫn là lời cuối.",
+            "ru": "Чтобы оно осталось последним.",
+            "uk": "Щоб воно лишилося останнім."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gritted teeth",
+        "forced smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ty mě irituješ.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You're irritating me.",
+            "de": "Du nervst mich.",
+            "it": "Mi irriti.",
+            "fr": "Tu m'agaces.",
+            "pl": "Irytujesz mnie.",
+            "pt-BR": "Você me irrita.",
+            "ja": "イライラする。",
+            "ko": "오빠 때문에 짜증 나.",
+            "vi": "Anh làm em bực mình.",
+            "ru": "Ты меня раздражаешь.",
+            "uk": "Ти мене дратуєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eyes half closed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Ich weiß.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "わかってる。",
+            "ko": "알아.",
+            "vi": "Biết mà.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing",
+        "frowning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "A pořád se usmíváš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you keep smiling.",
+            "de": "Und du lächelst immer noch.",
+            "it": "E continui a sorridere.",
+            "fr": "Et tu continues de sourire.",
+            "pl": "I ciągle się uśmiechasz.",
+            "pt-BR": "E continua sorrindo.",
+            "ja": "しかもずっと笑ってる。",
+            "ko": "그리고 계속 웃잖아.",
+            "vi": "Mà anh cứ cười mãi.",
+            "ru": "И всё время улыбаешься.",
+            "uk": "І весь час усміхаєшся."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "wide smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Yes.",
+            "de": "Ja.",
+            "it": "Sì.",
+            "fr": "Oui.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ja": "うん。",
+            "ko": "응.",
+            "vi": "Ừ.",
+            "ru": "Да.",
+            "uk": "Так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raising wine glass",
+        "curt"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Dobrou chuť.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Enjoy your meal.",
+            "de": "Guten Appetit.",
+            "it": "Buon appetito.",
+            "fr": "Bon appétit.",
+            "pl": "Smacznego.",
+            "pt-BR": "Bom apetite.",
+            "ja": "いただきます。",
+            "ko": "맛있게 먹어.",
+            "vi": "Ăn ngon nhé.",
+            "ru": "Приятного аппетита.",
+            "uk": "Смачного."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raising beer mug",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Tobě taky.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You too.",
+            "de": "Dir auch.",
+            "it": "Anche a te.",
+            "fr": "Toi aussi.",
+            "pl": "Nawzajem.",
+            "pt-BR": "Pra você também.",
+            "ja": "君もね。",
+            "ko": "너도.",
+            "vi": "Em cũng vậy.",
+            "ru": "И тебе.",
+            "uk": "І тобі."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "looking at another"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "dron"
+        }
+      ],
+      "visual_tags": [
+        "flying away",
+        "heavy rain",
+        "paper lanterns",
+        "chinese pavilion"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the drone flies off into the rain, the rain grows heavier on the pavilion roof"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing",
+        "stern",
+        "wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "A už nic neříkej.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And don't say anything else.",
+            "de": "Und sag jetzt nichts mehr.",
+            "it": "E adesso non dire più niente.",
+            "fr": "Et ne dis plus rien.",
+            "pl": "I już nic nie mów.",
+            "pt-BR": "E não diga mais nada.",
+            "ja": "もう何も言わないで。",
+            "ko": "이제 아무 말도 하지 마.",
+            "vi": "Và đừng nói gì nữa.",
+            "ru": "И больше ничего не говори.",
+            "uk": "І більше нічого не кажи."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "closed mouth",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "raising wine glass",
+        "triumphant",
+        "twitching lip"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "she raises her glass in triumph, then the corner of her mouth twitches slightly"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "paper lanterns dimming",
+        "rain",
+        "empty table",
+        "dusk",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the lanterns dim one by one, only one glowing lantern and the sound of rain remain"
+    }
+  ]
+}

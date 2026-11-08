@@ -1,0 +1,1289 @@
+{
+  "title": "Guláš je nostalgie",
+  "title_i18n": {
+    "en": "Goulash Is Nostalgia",
+    "de": "Gulasch ist Nostalgie",
+    "it": "Il gulasch è nostalgia",
+    "fr": "Le goulash, c'est la nostalgie",
+    "pl": "Gulasz to nostalgia",
+    "pt-BR": "Gulache é nostalgia",
+    "ja": "グヤーシュはノスタルジー",
+    "ko": "굴라시는 향수야",
+    "vi": "Goulash là hoài niệm",
+    "ru": "Гуляш — это ностальгия",
+    "uk": "Гуляш — це ностальгія"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "chinese garden pavilion",
+        "rain",
+        "paper lanterns",
+        "butterflies",
+        "flowering trees",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "dron"
+        }
+      ],
+      "visual_tags": [
+        "hovering",
+        "rain",
+        "paper lanterns",
+        "butterflies"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the drone hovering and humming, rotors spinning, rain falling behind it"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "pointing with fork",
+        "looking at another",
+        "serious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing with fork",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Guláš je nostalgie.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Goulash is nostalgia.",
+            "de": "Gulasch ist Nostalgie.",
+            "it": "Il gulasch è nostalgia.",
+            "fr": "Le goulash, c'est de la nostalgie.",
+            "pl": "Gulasz to nostalgia.",
+            "pt-BR": "Gulache é nostalgia.",
+            "ja": "グヤーシュはノスタルジー。",
+            "ko": "굴라시는 향수야.",
+            "vi": "Goulash là hoài niệm.",
+            "ru": "Гуляш — это ностальгия.",
+            "uk": "Гуляш — це ностальгія."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A špagety jsou co?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And spaghetti is what?",
+            "de": "Und Spaghetti sind was?",
+            "it": "E gli spaghetti cosa sono?",
+            "fr": "Et les spaghetti, c'est quoi ?",
+            "pl": "A spaghetti to co?",
+            "pt-BR": "E espaguete é o quê?",
+            "ja": "じゃあスパゲッティは？",
+            "ko": "그럼 스파게티는 뭔데?",
+            "vi": "Thế spaghetti là gì?",
+            "ru": "А спагетти — это что?",
+            "uk": "А спагеті — це що?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "chin up",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Volba.",
+          "kind": "speech",
+          "i18n": {
+            "en": "A choice.",
+            "de": "Eine Wahl.",
+            "it": "Una scelta.",
+            "fr": "Un choix.",
+            "pl": "Wybór.",
+            "pt-BR": "Escolha.",
+            "ja": "選択。",
+            "ko": "선택.",
+            "vi": "Lựa chọn.",
+            "ru": "Выбор.",
+            "uk": "Вибір."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "spreading hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já si taky vybral.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I made a choice too.",
+            "de": "Ich hab auch gewählt.",
+            "it": "Anch'io ho scelto.",
+            "fr": "Moi aussi, j'ai choisi.",
+            "pl": "Ja też wybrałem.",
+            "pt-BR": "Eu também escolhi.",
+            "ja": "俺も選んだよ。",
+            "ko": "나도 골랐는데.",
+            "vi": "Anh cũng đã chọn mà.",
+            "ru": "Я тоже выбрал.",
+            "uk": "Я теж вибрав."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smirk",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ale nevědomě.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But unconsciously.",
+            "de": "Aber unbewusst.",
+            "it": "Ma inconsapevolmente.",
+            "fr": "Mais inconsciemment.",
+            "pl": "Ale nieświadomie.",
+            "pt-BR": "Mas sem perceber.",
+            "ja": "無意識にね。",
+            "ko": "무의식적으로.",
+            "vi": "Nhưng là vô thức.",
+            "ru": "Но неосознанно.",
+            "uk": "Але несвідомо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "grin",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Moje oblíbená volba.",
+          "kind": "speech",
+          "i18n": {
+            "en": "My favourite kind of choice.",
+            "de": "Meine Lieblingswahl.",
+            "it": "La mia scelta preferita.",
+            "fr": "Mon choix préféré.",
+            "pl": "Mój ulubiony wybór.",
+            "pt-BR": "Minha escolha favorita.",
+            "ja": "俺の好きな選び方だ。",
+            "ko": "내가 제일 좋아하는 선택이지.",
+            "vi": "Kiểu lựa chọn anh thích nhất.",
+            "ru": "Мой любимый выбор.",
+            "uk": "Мій улюблений вибір."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "leaning forward",
+        "gesturing",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Přesně. Vždycky si vybereš to, co už znáš, a tváříš se, že jsi nad věcí.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Exactly. You always pick what you already know and act like you're above it all.",
+            "de": "Genau. Du nimmst immer, was du schon kennst, und tust, als stündest du darüber.",
+            "it": "Appunto. Scegli sempre quello che conosci già e fai finta di essere al di sopra delle cose.",
+            "fr": "Exactement. Tu choisis toujours ce que tu connais déjà et tu fais comme si tu étais au-dessus de tout ça.",
+            "pl": "Właśnie. Zawsze wybierasz to, co już znasz, i udajesz, że jesteś ponad to.",
+            "pt-BR": "Exato. Você sempre escolhe o que já conhece e finge que está acima disso.",
+            "ja": "そう。いつも知ってるものを選んで、自分は超越してますって顔をする。",
+            "ko": "바로 그거야. 늘 아는 것만 고르면서 초연한 척하지.",
+            "vi": "Đúng thế. Anh lúc nào cũng chọn cái quen thuộc rồi làm như mình đứng trên mọi chuyện.",
+            "ru": "Именно. Ты всегда выбираешь то, что уже знаешь, и делаешь вид, что ты выше этого.",
+            "uk": "Саме так. Ти завжди обираєш те, що вже знаєш, і вдаєш, що ти понад це."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "serene smile",
+        "eyes half closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Jsem nad věcí.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I am above it all.",
+            "de": "Ich stehe darüber.",
+            "it": "Sono al di sopra delle cose.",
+            "fr": "Je suis au-dessus de tout ça.",
+            "pl": "Jestem ponad to.",
+            "pt-BR": "Eu estou acima disso.",
+            "ja": "超越してるからね。",
+            "ko": "초연한 거 맞아.",
+            "vi": "Anh đứng trên mọi chuyện thật mà.",
+            "ru": "Я выше этого.",
+            "uk": "Я понад це."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "thinking",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To říká každý, kdo se bojí přiznat, že je uvnitř.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's what everyone says who's afraid to admit they're right in it.",
+            "de": "Das sagt jeder, der sich nicht traut zuzugeben, dass er mittendrin steckt.",
+            "it": "Lo dice chiunque abbia paura di ammettere di esserci dentro.",
+            "fr": "C'est ce que dit quiconque a peur d'avouer qu'il est dedans.",
+            "pl": "Tak mówi każdy, kto boi się przyznać, że siedzi w środku.",
+            "pt-BR": "É o que diz todo mundo que tem medo de admitir que está no meio.",
+            "ja": "それは、中にいるって認めるのが怖い人が言うセリフ。",
+            "ko": "그건 자기가 그 안에 있다는 걸 인정하기 무서운 사람이 하는 말이야.",
+            "vi": "Ai sợ thừa nhận mình đang ở trong cuộc cũng nói thế.",
+            "ru": "Так говорит каждый, кто боится признать, что он внутри.",
+            "uk": "Так каже кожен, хто боїться визнати, що він усередині."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "thinking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Možná.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Maybe.",
+            "de": "Vielleicht.",
+            "it": "Forse.",
+            "fr": "Peut-être.",
+            "pl": "Może.",
+            "pt-BR": "Talvez.",
+            "ja": "かもね。",
+            "ko": "그럴지도.",
+            "vi": "Có lẽ.",
+            "ru": "Возможно.",
+            "uk": "Можливо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "„Možná“ je taky útěk.",
+          "kind": "speech",
+          "i18n": {
+            "en": "“Maybe” is running away too.",
+            "de": "„Vielleicht“ ist auch eine Flucht.",
+            "it": "Anche «forse» è una fuga.",
+            "fr": "« Peut-être », c'est aussi une fuite.",
+            "pl": "„Może” to też ucieczka.",
+            "pt-BR": "“Talvez” também é fuga.",
+            "ja": "「かもね」も逃げよ。",
+            "ko": "\"그럴지도\"도 도망이야.",
+            "vi": "“Có lẽ” cũng là chạy trốn.",
+            "ru": "«Возможно» — это тоже бегство.",
+            "uk": "«Можливо» — це теж утеча."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "same calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Možná.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Maybe.",
+            "de": "Vielleicht.",
+            "it": "Forse.",
+            "fr": "Peut-être.",
+            "pl": "Może.",
+            "pt-BR": "Talvez.",
+            "ja": "かもね。",
+            "ko": "그럴지도.",
+            "vi": "Có lẽ.",
+            "ru": "Возможно.",
+            "uk": "Можливо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "putting down fork",
+        "deep breath",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm",
+        "forced smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Nechci se hádat.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I don't want to argue.",
+            "de": "Ich will nicht streiten.",
+            "it": "Non voglio litigare.",
+            "fr": "Je ne veux pas me disputer.",
+            "pl": "Nie chcę się kłócić.",
+            "pt-BR": "Não quero discutir.",
+            "ja": "喧嘩したくない。",
+            "ko": "싸우고 싶지 않아.",
+            "vi": "Em không muốn cãi nhau.",
+            "ru": "Я не хочу ссориться.",
+            "uk": "Я не хочу сваритися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já taky ne.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Neither do I.",
+            "de": "Ich auch nicht.",
+            "it": "Nemmeno io.",
+            "fr": "Moi non plus.",
+            "pl": "Ja też nie.",
+            "pt-BR": "Nem eu.",
+            "ja": "俺もだよ。",
+            "ko": "나도.",
+            "vi": "Anh cũng vậy.",
+            "ru": "Я тоже.",
+            "uk": "Я теж."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Tak proč to děláš?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Then why are you doing it?",
+            "de": "Warum machst du's dann?",
+            "it": "Allora perché lo fai?",
+            "fr": "Alors pourquoi tu le fais ?",
+            "pl": "To czemu to robisz?",
+            "pt-BR": "Então por que está fazendo isso?",
+            "ja": "じゃあ、なんでやるの？",
+            "ko": "그럼 왜 그러는데?",
+            "vi": "Vậy sao anh cứ làm thế?",
+            "ru": "Тогда зачем ты это делаешь?",
+            "uk": "Тоді навіщо ти це робиш?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eating",
+        "goulash",
+        "bread dumpling",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já nic nedělám. Jím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm not doing anything. I'm eating.",
+            "de": "Ich mache gar nichts. Ich esse.",
+            "it": "Non sto facendo niente. Mangio.",
+            "fr": "Je ne fais rien. Je mange.",
+            "pl": "Nic nie robię. Jem.",
+            "pt-BR": "Não estou fazendo nada. Estou comendo.",
+            "ja": "何もしてない。食べてるだけ。",
+            "ko": "아무것도 안 해. 먹는 중이야.",
+            "vi": "Anh có làm gì đâu. Anh đang ăn.",
+            "ru": "Я ничего не делаю. Я ем.",
+            "uk": "Я нічого не роблю. Я їм."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing",
+        "accusing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Jíš a usmíváš se.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You're eating and smiling.",
+            "de": "Du isst und lächelst.",
+            "it": "Mangi e sorridi.",
+            "fr": "Tu manges et tu souris.",
+            "pl": "Jesz i się uśmiechasz.",
+            "pt-BR": "Está comendo e sorrindo.",
+            "ja": "食べながら笑ってる。",
+            "ko": "먹으면서 웃고 있잖아.",
+            "vi": "Anh vừa ăn vừa cười.",
+            "ru": "Ты ешь и улыбаешься.",
+            "uk": "Ти їси й усміхаєшся."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "chewing",
+        "smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "To je můj způsob, jak nejíst a usmívat se.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's my way of not eating and smiling.",
+            "de": "Das ist meine Art, nicht zu essen und zu lächeln.",
+            "it": "È il mio modo di non mangiare e sorridere.",
+            "fr": "C'est ma façon de ne pas manger et de sourire.",
+            "pl": "To mój sposób, żeby nie jeść i się uśmiechać.",
+            "pt-BR": "É o meu jeito de não comer e sorrir.",
+            "ja": "食べずに笑う、俺なりのやり方だよ。",
+            "ko": "그게 안 먹고 웃는 내 방식이야.",
+            "vi": "Đó là cách anh không ăn mà vẫn cười.",
+            "ru": "Это мой способ не есть и улыбаться.",
+            "uk": "Це мій спосіб не їсти й усміхатися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "confused",
+        "frowning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To nedává smysl.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That makes no sense.",
+            "de": "Das ergibt keinen Sinn.",
+            "it": "Non ha senso.",
+            "fr": "Ça n'a aucun sens.",
+            "pl": "To nie ma sensu.",
+            "pt-BR": "Isso não faz sentido.",
+            "ja": "意味わかんない。",
+            "ko": "말이 안 되잖아.",
+            "vi": "Chẳng có nghĩa gì cả.",
+            "ru": "Это бессмысленно.",
+            "uk": "Це не має сенсу."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "blissful smile",
+        "fork in mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Ale chutná.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But it tastes good.",
+            "de": "Aber es schmeckt.",
+            "it": "Però è buono.",
+            "fr": "Mais c'est bon.",
+            "pl": "Ale smakuje.",
+            "pt-BR": "Mas é gostoso.",
+            "ja": "でも、うまい。",
+            "ko": "근데 맛있어.",
+            "vi": "Nhưng ngon.",
+            "ru": "Зато вкусно.",
+            "uk": "Зате смачно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "eating",
+        "bread dumpling",
+        "fork",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "rain",
+        "chinese pavilion roof",
+        "paper lanterns",
+        "lotus pond",
+        "raindrops",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain dripping from the curved roof into the lotus pond, lanterns glowing softly"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking at another",
+        "wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Jen říkám, že tvoje volba je konzervativní.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm just saying your choice is conservative.",
+            "de": "Ich sag nur, deine Wahl ist konservativ.",
+            "it": "Dico solo che la tua scelta è conservatrice.",
+            "fr": "Je dis juste que ton choix est conservateur.",
+            "pl": "Mówię tylko, że twój wybór jest konserwatywny.",
+            "pt-BR": "Só estou dizendo que sua escolha é conservadora.",
+            "ja": "ただ、あなたの選択は保守的だって言ってるだけ。",
+            "ko": "그냥 오빠 선택이 보수적이라는 거야.",
+            "vi": "Em chỉ nói lựa chọn của anh bảo thủ thôi.",
+            "ru": "Я просто говорю, что твой выбор консервативный.",
+            "uk": "Я просто кажу, що твій вибір консервативний."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "open palm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A tvoje je…?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And yours is…?",
+            "de": "Und deine ist…?",
+            "it": "E la tua è…?",
+            "fr": "Et le tien est… ?",
+            "pl": "A twój jest…?",
+            "pt-BR": "E a sua é…?",
+            "ja": "で、君のは…？",
+            "ko": "그럼 네 건…?",
+            "vi": "Còn của em là…?",
+            "ru": "А твой…?",
+            "uk": "А твій…?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "chin up",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Otevřená.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Open.",
+            "de": "Offen.",
+            "it": "Aperta.",
+            "fr": "Ouvert.",
+            "pl": "Otwarty.",
+            "pt-BR": "Aberta.",
+            "ja": "開かれてる。",
+            "ko": "열려 있지.",
+            "vi": "Cởi mở.",
+            "ru": "Открытый.",
+            "uk": "Відкритий."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "thinking",
+        "amused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Takže špagety jsou otevřené a guláš je zavřený?",
+          "kind": "speech",
+          "i18n": {
+            "en": "So spaghetti is open and goulash is closed?",
+            "de": "Also sind Spaghetti offen und Gulasch verschlossen?",
+            "it": "Quindi gli spaghetti sono aperti e il gulasch è chiuso?",
+            "fr": "Donc les spaghetti sont ouverts et le goulash est fermé ?",
+            "pl": "Czyli spaghetti jest otwarte, a gulasz zamknięty?",
+            "pt-BR": "Então espaguete é aberto e gulache é fechado?",
+            "ja": "つまりスパゲッティは開かれてて、グヤーシュは閉じてる？",
+            "ko": "그러니까 스파게티는 열려 있고 굴라시는 닫혀 있다고?",
+            "vi": "Vậy spaghetti thì cởi mở còn goulash thì khép kín?",
+            "ru": "То есть спагетти открытые, а гуляш закрытый?",
+            "uk": "Тобто спагеті відкриті, а гуляш закритий?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "nodding",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Přesně.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Exactly.",
+            "de": "Genau.",
+            "it": "Esatto.",
+            "fr": "Exactement.",
+            "pl": "Właśnie.",
+            "pt-BR": "Exato.",
+            "ja": "その通り。",
+            "ko": "바로 그거야.",
+            "vi": "Chính xác.",
+            "ru": "Именно.",
+            "uk": "Саме так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing at beer mug",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A víno je otevřené a pivo zavřené?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And wine is open and beer is closed?",
+            "de": "Und Wein ist offen und Bier verschlossen?",
+            "it": "E il vino è aperto e la birra chiusa?",
+            "fr": "Et le vin est ouvert et la bière fermée ?",
+            "pl": "A wino jest otwarte, a piwo zamknięte?",
+            "pt-BR": "E vinho é aberto e cerveja é fechada?",
+            "ja": "で、ワインは開かれてて、ビールは閉じてる？",
+            "ko": "그럼 와인은 열려 있고 맥주는 닫혀 있고?",
+            "vi": "Còn rượu vang cởi mở, bia khép kín?",
+            "ru": "А вино открытое, а пиво закрытое?",
+            "uk": "А вино відкрите, а пиво закрите?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "wrinkled nose",
+        "sceptical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ne. Pivo je hlučné.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No. Beer is loud.",
+            "de": "Nein. Bier ist laut.",
+            "it": "No. La birra è rumorosa.",
+            "fr": "Non. La bière, c'est bruyant.",
+            "pl": "Nie. Piwo jest głośne.",
+            "pt-BR": "Não. Cerveja é barulhenta.",
+            "ja": "違う。ビールはうるさいの。",
+            "ko": "아니. 맥주는 시끄러워.",
+            "vi": "Không. Bia thì ồn ào.",
+            "ru": "Нет. Пиво шумное.",
+            "uk": "Ні. Пиво гучне."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrows",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A víno je tiché?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And wine is quiet?",
+            "de": "Und Wein ist leise?",
+            "it": "E il vino è silenzioso?",
+            "fr": "Et le vin est silencieux ?",
+            "pl": "A wino jest ciche?",
+            "pt-BR": "E vinho é silencioso?",
+            "ja": "で、ワインは静か？",
+            "ko": "그럼 와인은 조용하고?",
+            "vi": "Còn rượu vang thì yên lặng?",
+            "ru": "А вино тихое?",
+            "uk": "А вино тихе?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "holding a wine glass",
+        "looking at wine",
+        "precise"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Víno je přesné.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Wine is precise.",
+            "de": "Wein ist präzise.",
+            "it": "Il vino è preciso.",
+            "fr": "Le vin est précis.",
+            "pl": "Wino jest precyzyjne.",
+            "pt-BR": "Vinho é preciso.",
+            "ja": "ワインは正確なの。",
+            "ko": "와인은 정확해.",
+            "vi": "Rượu vang thì chính xác.",
+            "ru": "Вино точное.",
+            "uk": "Вино точне."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "nodding",
+        "content smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Tak to jo.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fair enough.",
+            "de": "Na dann.",
+            "it": "E va bene, allora.",
+            "fr": "Bon, d'accord alors.",
+            "pl": "No to jasne.",
+            "pt-BR": "Então tá.",
+            "ja": "なら、いいや。",
+            "ko": "그럼 됐네.",
+            "vi": "Thế thì được.",
+            "ru": "Ну тогда ладно.",
+            "uk": "Ну тоді гаразд."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

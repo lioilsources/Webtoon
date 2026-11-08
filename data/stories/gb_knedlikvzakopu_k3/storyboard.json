@@ -1,0 +1,657 @@
+{
+  "title": "Poslední slovo",
+  "title_i18n": {
+    "en": "The Last Word",
+    "de": "Das letzte Wort",
+    "it": "L'ultima parola",
+    "fr": "Le dernier mot",
+    "pl": "Ostatnie słowo",
+    "pt-BR": "A última palavra",
+    "ja": "最後の一言",
+    "ko": "마지막 말",
+    "vi": "Lời cuối cùng",
+    "ru": "Последнее слово",
+    "uk": "Останнє слово"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_olymp",
+      "characters": [],
+      "visual_tags": [
+        "sea of clouds",
+        "after the storm",
+        "marble colonnade",
+        "calm",
+        "cold light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "a calm sea of clouds after a storm, faint mist drifting between the columns, static camera"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "stifled laugh",
+        "hand over mouth",
+        "composing herself"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Nerozesmívej mě. To je faul. My se nesmíme smát, my se máme hádat.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Don't make me laugh. That's a foul. We're not allowed to laugh, we're supposed to argue.",
+            "de": "Bring mich nicht zum Lachen. Das ist ein Foul. Wir dürfen nicht lachen, wir sollen streiten.",
+            "it": "Non farmi ridere. È un fallo. Non possiamo ridere, dobbiamo litigare.",
+            "fr": "Ne me fais pas rire. C'est une faute. On n'a pas le droit de rire, on doit se disputer.",
+            "pl": "Nie rozśmieszaj mnie. To faul. Nie wolno nam się śmiać, mamy się kłócić.",
+            "pt-BR": "Não me faz rir. Isso é falta. A gente não pode rir, a gente tem que brigar.",
+            "ja": "笑わせないで。反則よ。私たちは笑っちゃいけないの、口論しなきゃ。",
+            "ko": "웃기지 마. 반칙이야. 우린 웃으면 안 돼, 싸워야 한다고.",
+            "vi": "Đừng chọc em cười. Phạm luật đấy. Mình không được cười, mình phải cãi nhau.",
+            "ru": "Не смеши меня. Это фол. Нам нельзя смеяться, мы должны спорить.",
+            "uk": "Не сміши мене. Це фол. Нам не можна сміятися, ми маємо сваритися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "she bursts into a sob of laughter and instantly composes herself"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "calm smile",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "My se nehádáme. My dva jednotlivci vykonáváme pohyb v blízkosti.",
+          "kind": "speech",
+          "i18n": {
+            "en": "We're not arguing. We two individuals are performing movement in proximity.",
+            "de": "Wir streiten nicht. Wir zwei Individuen vollführen Bewegung in Nähe.",
+            "it": "Non stiamo litigando. Noi due individui eseguiamo un movimento in prossimità.",
+            "fr": "On ne se dispute pas. Nous deux, individus, exécutons un mouvement à proximité.",
+            "pl": "My się nie kłócimy. My, dwie jednostki, wykonujemy ruch w pobliżu.",
+            "pt-BR": "A gente não está brigando. Nós dois, indivíduos, executamos um movimento em proximidade.",
+            "ja": "口論なんてしてない。僕たち二人の個体は、近距離で運動を実行してるだけ。",
+            "ko": "우린 싸우는 게 아니야. 우리 두 개체는 근접 상태에서 움직임을 수행하는 중이지.",
+            "vi": "Mình không cãi nhau. Hai cá thể chúng ta đang thực hiện chuyển động ở cự ly gần.",
+            "ru": "Мы не спорим. Мы, два индивида, совершаем движение в непосредственной близости.",
+            "uk": "Ми не сваримося. Ми, двоє індивідів, виконуємо рух у безпосередній близькості."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "serious",
+        "looking at another",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Takže tohle je pohyb. Fajn.",
+          "kind": "speech",
+          "i18n": {
+            "en": "So this is movement. Fine.",
+            "de": "Das hier ist also Bewegung. Schön.",
+            "it": "Quindi questo è movimento. Bene.",
+            "fr": "Donc ça, c'est du mouvement. Bien.",
+            "pl": "Czyli to jest ruch. Świetnie.",
+            "pt-BR": "Então isso é movimento. Ótimo.",
+            "ja": "じゃあこれは運動ってわけね。結構。",
+            "ko": "그러니까 이게 움직임이라고. 좋아.",
+            "vi": "Vậy đây là chuyển động. Được.",
+            "ru": "Значит, это движение. Ладно.",
+            "uk": "Отже, це рух. Гаразд."
+          }
+        },
+        {
+          "speaker_id": "jana_40",
+          "text": "A co je ta věc, když chceš, abych ocenila, kolik jsi do toho investoval, a já ti řeknu „fandím ti v tom“ a mám pocit, že ti to nestačí?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And what's the thing where you want me to appreciate how much you've put into it, and I tell you \"I'm rooting for you\" and feel it's not enough for you?",
+            "de": "Und was ist das, wenn du willst, dass ich würdige, wie viel du reingesteckt hast, ich sage „ich drück dir die Daumen“ und habe das Gefühl, es reicht dir nicht?",
+            "it": "E cos'è quella cosa per cui vuoi che apprezzi quanto ci hai investito, io ti dico «faccio il tifo per te» e ho la sensazione che non ti basti?",
+            "fr": "Et c'est quoi, ce truc où tu veux que j'apprécie combien tu y as investi, je te dis « je suis de ton côté » et j'ai l'impression que ça ne te suffit pas ?",
+            "pl": "A co to za rzecz, kiedy chcesz, żebym doceniła, ile w to włożyłeś, a ja ci mówię „kibicuję ci” i mam wrażenie, że ci to nie wystarcza?",
+            "pt-BR": "E o que é aquilo quando você quer que eu valorize o quanto investiu, eu digo \"torço por você\" e sinto que não basta pra você?",
+            "ja": "で、あなたがどれだけ注ぎ込んだかを私に認めてほしくて、私が「応援してる」って言うと、それじゃ足りないって感じるあれは何なの？",
+            "ko": "그리고 네가 얼마나 쏟아부었는지 내가 알아주길 바라는데, 내가 '응원해'라고 하면 그걸론 부족한 것 같은 그건 뭔데?",
+            "vi": "Còn cái chuyện anh muốn em ghi nhận anh đã đầu tư bao nhiêu, em nói \"em ủng hộ anh\" mà vẫn thấy như thế là chưa đủ với anh, thì là gì?",
+            "ru": "А что это за штука, когда ты хочешь, чтобы я оценила, сколько ты в это вложил, я говорю «болею за тебя» — и чувствую, что тебе этого мало?",
+            "uk": "А що це за штука, коли ти хочеш, щоб я оцінила, скільки ти в це вклав, я кажу «вболіваю за тебе» — і відчуваю, що тобі цього мало?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "small smile",
+        "soft expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "To se jmenuje bratr a sestra. To nemá řešení. To je guláš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's called brother and sister. It has no solution. It's goulash.",
+            "de": "Das nennt sich Bruder und Schwester. Dafür gibt es keine Lösung. Das ist Gulasch.",
+            "it": "Si chiama fratello e sorella. Non ha soluzione. È gulasch.",
+            "fr": "Ça s'appelle frère et sœur. Ça n'a pas de solution. C'est du goulash.",
+            "pl": "To się nazywa brat i siostra. To nie ma rozwiązania. To jest gulasz.",
+            "pt-BR": "Isso se chama irmão e irmã. Não tem solução. É gulache.",
+            "ja": "それは兄と妹っていうんだ。解決策はない。グヤーシュなんだよ。",
+            "ko": "그걸 남매라고 해. 해결책은 없어. 그게 굴라시야.",
+            "vi": "Cái đó gọi là anh em ruột. Không có lời giải. Đó là goulash.",
+            "ru": "Это называется брат и сестра. У этого нет решения. Это гуляш.",
+            "uk": "Це називається брат і сестра. Це не має розв'язку. Це гуляш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "long stare",
+        "looking at another",
+        "resigned"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "...Takže ty vlastně pořád vyhráváš. Takhle nečekaně, tím klidem. To je podlé.",
+          "kind": "speech",
+          "i18n": {
+            "en": "...So you're actually winning all along. Just like that, unexpectedly, with that calm. That's low.",
+            "de": "...Du gewinnst also eigentlich die ganze Zeit. So unerwartet, mit dieser Ruhe. Das ist fies.",
+            "it": "...Quindi in realtà vinci sempre tu. Così, inaspettatamente, con quella calma. È meschino.",
+            "fr": "...Donc en fait, tu gagnes tout le temps. Comme ça, à l'improviste, avec ce calme. C'est bas.",
+            "pl": "...Czyli tak naprawdę cały czas wygrywasz. Tak nieoczekiwanie, tym spokojem. To podłe.",
+            "pt-BR": "...Então na verdade você está sempre ganhando. Assim, do nada, com essa calma. Isso é baixo.",
+            "ja": "……つまり、結局ずっとあなたが勝ってるのね。思いがけず、その落ち着きで。ずるい。",
+            "ko": "...그러니까 결국 계속 네가 이기고 있는 거네. 이렇게 뜻밖에, 그 침착함으로. 비겁해.",
+            "vi": "...Vậy rốt cuộc anh vẫn luôn thắng. Bất ngờ như thế, bằng sự điềm tĩnh đó. Thật hèn.",
+            "ru": "...Значит, ты на самом деле всё время выигрываешь. Вот так, неожиданно, своим спокойствием. Это подло.",
+            "uk": "...Отже, ти насправді весь час виграєш. Отак, несподівано, своїм спокоєм. Це підло."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "serene smile",
+        "slight nod"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Souhlasím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I agree.",
+            "de": "Stimmt.",
+            "it": "Sono d'accordo.",
+            "fr": "Je suis d'accord.",
+            "pl": "Zgadzam się.",
+            "pt-BR": "Concordo.",
+            "ja": "同感。",
+            "ko": "동의해.",
+            "vi": "Anh đồng ý.",
+            "ru": "Согласен.",
+            "uk": "Згоден."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "open mouth",
+        "raised finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Nesouhlasím—",
+          "kind": "speech",
+          "i18n": {
+            "en": "I don't agree—",
+            "de": "Ich stimme nicht—",
+            "it": "Non sono d'accordo—",
+            "fr": "Je ne suis pas d'accord—",
+            "pl": "Nie zgadzam się—",
+            "pt-BR": "Não concordo—",
+            "ja": "同感しな——",
+            "ko": "동의 안—",
+            "vi": "Em không đồng—",
+            "ru": "Я не согласна—",
+            "uk": "Я не згодна—"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "warm smile",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Vím. A je to krásný.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know. And it's beautiful.",
+            "de": "Ich weiß. Und es ist schön.",
+            "it": "Lo so. Ed è bellissimo.",
+            "fr": "Je sais. Et c'est beau.",
+            "pl": "Wiem. I to jest piękne.",
+            "pt-BR": "Eu sei. E é lindo.",
+            "ja": "わかってる。それが美しいんだ。",
+            "ko": "알아. 그리고 그게 아름다워.",
+            "vi": "Anh biết. Và điều đó thật đẹp.",
+            "ru": "Знаю. И это прекрасно.",
+            "uk": "Знаю. І це прекрасно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "cold stare",
+        "crossed arms"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Nic není krásný.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Nothing is beautiful.",
+            "de": "Nichts ist schön.",
+            "it": "Niente è bellissimo.",
+            "fr": "Rien n'est beau.",
+            "pl": "Nic nie jest piękne.",
+            "pt-BR": "Nada é lindo.",
+            "ja": "美しいものなんて何もない。",
+            "ko": "아름다운 건 아무것도 없어.",
+            "vi": "Chẳng có gì đẹp cả.",
+            "ru": "Ничего не прекрасно.",
+            "uk": "Ніщо не прекрасне."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "raising beer mug",
+        "quiet joy",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Poslední slovo máš ty. Přesně jak jsi chtěla.",
+          "kind": "speech",
+          "i18n": {
+            "en": "The last word is yours. Exactly as you wanted.",
+            "de": "Das letzte Wort hast du. Genau wie du wolltest.",
+            "it": "L'ultima parola è tua. Proprio come volevi.",
+            "fr": "Le dernier mot est à toi. Exactement comme tu le voulais.",
+            "pl": "Ostatnie słowo masz ty. Dokładnie tak, jak chciałaś.",
+            "pt-BR": "A última palavra é sua. Do jeito que você queria.",
+            "ja": "最後の一言は君のものだ。望んだとおりに。",
+            "ko": "마지막 말은 네 거야. 네가 원하던 대로.",
+            "vi": "Lời cuối là của em. Đúng như em muốn.",
+            "ru": "Последнее слово за тобой. Как ты и хотела.",
+            "uk": "Останнє слово за тобою. Як ти й хотіла."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "he slowly raises the beer mug, quiet joy on his marble face"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "freezing",
+        "slow smile",
+        "realization"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "...Jsi hrozný.",
+          "kind": "speech",
+          "i18n": {
+            "en": "...You're terrible.",
+            "de": "...Du bist schrecklich.",
+            "it": "...Sei terribile.",
+            "fr": "...Tu es terrible.",
+            "pl": "...Jesteś okropny.",
+            "pt-BR": "...Você é terrível.",
+            "ja": "……ひどい人。",
+            "ko": "...너 진짜 끔찍해.",
+            "vi": "...Anh thật quá đáng.",
+            "ru": "...Ты ужасен.",
+            "uk": "...Ти жахливий."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "she freezes, realizes it, and very slowly smiles"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smile",
+        "slight bow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Děkuju.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Thank you.",
+            "de": "Danke.",
+            "it": "Grazie.",
+            "fr": "Merci.",
+            "pl": "Dziękuję.",
+            "pt-BR": "Obrigado.",
+            "ja": "ありがとう。",
+            "ko": "고마워.",
+            "vi": "Cảm ơn.",
+            "ru": "Спасибо.",
+            "uk": "Дякую."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "raised finger",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "To nebyl—",
+          "kind": "speech",
+          "i18n": {
+            "en": "That wasn't—",
+            "de": "Das war kein—",
+            "it": "Non era un—",
+            "fr": "Ce n'était pas un—",
+            "pl": "To nie był—",
+            "pt-BR": "Isso não foi um—",
+            "ja": "それは褒め——",
+            "ko": "그건 칭찬이—",
+            "vi": "Đó không phải—",
+            "ru": "Это был не—",
+            "uk": "Це був не—"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smile",
+        "silence",
+        "eyes half closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Ich weiß.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "わかってる。",
+            "ko": "알아.",
+            "vi": "Anh biết.",
+            "ru": "Знаю.",
+            "uk": "Знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "looking away",
+        "scooping goulash",
+        "clouds",
+        "colonnade",
+        "profile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "twirling spaghetti",
+        "looking away",
+        "clouds",
+        "colonnade",
+        "profile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_olymp",
+      "characters": [],
+      "visual_tags": [
+        "marble restaurant",
+        "above the clouds",
+        "distant city below",
+        "dusk",
+        "fading light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "light fading over the marble colonnade, clouds closing over the city below, slow fade to dark"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+# Gamebook — S knedlíkem v zákopu. Kulový blesk, verze „Kimi“: stejná dvojice, jiný text od autora (Olin,
+# 2026-11-08), text replik je doslova jeho. Styl podle obecné představy o modelu: nejmocnější, nejchytřejší, boží;
+# chladný a nekompromisní (preset marble_olymp: antický řecko-římský mramor). Prostředí autor přesunul do mramorové
+# restaurace na Olympu nad mraky s výhledem dolů na lidskou spodinu; „mrakodrapy“ ze scénických poznámek jsou to
+# vzdálené město hluboko pod mraky. Nápis na stěně se vysází jako titulek (caption), nekreslí se.
+# Tři lineární uzly, žádné volby. Úvodní obrazy uzlů 2 a 3 nesou doslovné věty z popisu osob („ČÍŠNÍK-ANDROID M-77 —
+# servíruje, reflektuje.“, „Klid moře po bouři, kterou sám vyvolal.“), protože každý uzel začíná záběrem bez postav. Scénické poznámky v závorkách se kreslí (tagy), nepíšou se do bublin.
+# Vynechaný závěrečný odstavec „Pokud chceš, můžu to zkrátit…“ (nabídka modelu, ne součást hry).
+# Opravy: „zvýší lahev“ → „zvedne lahev“ ve scénické poznámce (kreslí se jako zvednutý půllitr); zvýraznění *pocit*
+# bez hvězdiček. Ponecháno záměrně: „žumpuješ“ (slovní hříčka, kterou hra sama komentuje), Janino „jako by jsi
+# vyhrál“ (cituje poznámku hovorově), hovorové „krásný“.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
+# v obraze), `see` = scénická poznámka jako obraz. Profil comedy.
+
+schema: 1
+id: knedlikvzakopu
+title: S knedlíkem v zákopu
+title_i18n: {de: "Mit Knödel im Schützengraben", en: "With a Dumpling in the Trench", fr: "Un knödel dans la tranchée", it: "Con il canederlo in trincea", ja: "塹壕にクネドリーキ", ko: "참호 속의 크네들리키", pl: "Z knedlem w okopie", pt-BR: "Com um bolinho na trincheira", ru: "С кнедликом в окопе", uk: "З кнедликом в окопі", vi: "Với bánh knedlík trong chiến hào"}
+world: w_knedlik_v_zakopu
+audience: adult
+language: cs
+style_id: marble_olymp
+profile: comedy
+product_id: gamebook_knedlikvzakopu
+start: k1
+
+premise: >
+  Mramorová restaurace na Olympu nad mraky, hluboko dole lidská spodina. Olin u guláše s knedlíkem a piva, v zenu,
+  Jana u špaget s parmazánem a bílého vína, s potřebou mít pravdu a hlavně poslední slovo. Android M-77 servíruje.
+
+characters: [olin_42, jana_40, m77]
+
+locations:
+  - {id: l_olymp, name: Restaurace na Olympu, description: "mramor, kolonáda, mraky, hluboko dole lidské město"}
+  - {id: l_mramorovy_stul, name: Mramorový stůl, description: "guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana, M-77: m77}
+  faces:
+    olin: [[serene smile, looking at another], [eyes closed, calm smile], [godlike calm, slight smile]]
+    jana: [[cold stare, looking at another], [raised eyebrow, sceptical], [narrowed eyes, sharp]]
+    m77: [[expressionless, glowing eyes], [head tilt, glowing eyes], [standing still, glowing eyes]]
+  speaking:
+    olin: [upper body, from front, sitting at a marble table]
+    jana: [upper body, from front, sitting at a marble table]
+    m77: [upper body, from front, standing]
+    default: [upper body, from front]
+
+nodes:
+  k1:
+    title: Hladina
+    location: l_olymp
+    cast: {olin: olin_42, jana: jana_40, m77: m77}
+    next: k2
+    script:
+      - {see: "Neopunková restaurace budoucnosti. Neonové nápisy čínských firem na protějších mrakodrapech. Holografické menu plave nad stolem. Venku podzemní drony, uvnitř smogová romantika. Na stěně bliká nápis: „Jídlo je jen data s pachutí nostalgie.“", caption: "Jídlo je jen data s pachutí nostalgie.", shot: establishing, tags: [marble restaurant, mount olympus, greek colonnade, above the clouds, distant city below, cold light, no humans], gap: medium, animate: "clouds drifting slowly between the marble columns, faint lights of the city far below, static camera"}
+      - {see: "Večeře. Hladina piva. Hladina vína. Hlubší hladina napětí.", shot: close-up, loc: l_mramorovy_stul, tags: [marble table, beer mug, wine glass, goulash, spaghetti, still surface, no humans], animate: "the surfaces of the beer and the wine perfectly still, then a single tiny ripple, static camera"}
+      - {say: olin, text: "Tak. Příjemné ticho. Tohle je hezký večer.", tags: [smile, scooping goulash, spoon]}
+      - {say: jana, text: "Neříkej „ticho“, když je ticho jen v tvé hlavě.", tags: [cold stare, holding a wine glass]}
+      - {say: olin, text: "V mojí hlavě je zahradní jezírko. Kapříci. Hladina.", tags: [eyes closed, serene smile]}
+      - {say: jana, text: "V mojí hlavě je backlog.", shot: close-up, tags: [deadpan, flat expression]}
+      - {say: olin, text: "Tak.", shot: close-up, tags: [nodding, triumphant smile]}
+      - {say: jana, text: "Neříkej „tak“.", tags: [pointing with fork, narrowed eyes]}
+      - {say: olin, text: "Tak jsem neřekl.", tags: [smile, innocent expression]}
+      - {say: jana, text: "Právě že jsi řekl. A to „jako by jsi vyhrál“ — to ani nebylo potřeba komentovat. Víš přesně, co děláš.", tags: [leaning forward, sharp gaze]}
+      - {say: olin, text: "Dělám guláš. Jako generace přede mnou. Děkuju za recepturu.", tags: [scooping goulash, bread dumplings, calm smile]}
+      - {say: jana, text: "Opravdu. Guláš. V roce třicet sedm. S knedlíkem. Chováš se jako muzeum s žaludkem.", tags: [raised eyebrow, sceptical, twirling spaghetti]}
+      - {say: olin, text: "A ty máš špagety. S parmazánem. Italové by zaplakali, ale já jsem v zenu, tak jen říkám: dobrou chuť.", tags: [gentle smile, raising beer mug]}
+      - {say: jana, text: "To není totéž a víš to.", tags: [cold stare, holding a wine glass]}
+      - {say: olin, text: "Souhlasím.", shot: close-up, tags: [serene smile, slight nod]}
+      - {say: jana, text: "Nesouhlasím, že souhlasíš.", shot: close-up, tags: [narrowed eyes, tight lips]}
+      - {say: olin, text: "Můžu souhlasit i s tím, že nesouhlasíš. Já jsem elastický. Já jsem gumička.", tags: [deep breath, eyes closed, serene], animate: "he breathes in, closes his eyes, opens them again with a serene smile"}
+      - {say: jana, text: "Gumička. Skvělé. Takže si tu sedíme, dvě dospělé osoby, jedna z nich gumička, a místo aby si přiznala, že ji irituje, když má pravdu ona druhá—", tags: [exasperated, gesturing with fork]}
+  k2:
+    title: Pravda je služba
+    location: l_olymp
+    cast: {olin: olin_42, jana: jana_40, m77: m77}
+    next: k3
+    script:
+      - {see: "ČÍŠNÍK-ANDROID M-77 — servíruje, reflektuje.", shot: establishing, tags: [marble colonnade, above the clouds, silver tray on a marble table, cold light, no humans], gap: medium}
+      - {say: olin, text: "Nemáš pravdu. Máš pocit, že máš pravdu. To je jako rozdíl mezi gulášem a obrázkem guláše. Taky žumpuješ hlad.", tags: [calm smile, raised finger]}
+      - {say: jana, text: "„Žumpuješ“? Takže překládám AI výstupy. Takže jsem žumpa. Fajn. To je přesně ten překlep, který si nemusíš odpouštět, i když jsi v zenu.", shot: close-up, tags: [offended, wide eyes, sharp]}
+      - {say: olin, text: "Neřekl jsem, že jsi žumpa. Řekl jsem, že žumpuješ hlad. To je metafora. Máš ji přeložit, ne se jí vzdát.", tags: [calm smile, relaxed]}
+      - {say: jana, text: "Já se ničemu nevzdávám. To ty se vzdáváš — diskuze, všeho, jen sedíš, usmíváš se a děláš, že jsi nad věcí, ale ve skutečnosti jsi jen—", tags: [leaning forward, intense stare]}
+      - {say: olin, text: "V zenu. Děkuju, že to říkáš nahlas, lépe se to poslouchá.", tags: [eyes closed, serene smile]}
+      - {say: jana, text: "To není kompliment!", shot: close-up, tags: [annoyed, open mouth]}
+      - {say: olin, text: "V zenu i to není kompliment.", tags: [godlike calm, slight smile]}
+      - {say: jana, text: "Pane, přineste mi prosím vaše nejtvrdší víno. A jednu větu, která ho vyhraje.", tags: [looking to the side, raising hand, haughty]}
+      - {say: m77, text: "Zákazník má vždy pravdu, dokud nezaplatí.", tags: [head tilt, glowing eyes, holding a silver tray], animate: "the marble android pauses, its eye slits pulsing while it processes, then it speaks"}
+      - {say: jana, text: "Vidíš? I android chápe hierarchii.", tags: [smug, pointing]}
+      - {say: olin, text: "Android řekl „dokud nezaplatí“. Takže pravda je služba. Objednávám si pravdu: guláš byl dobrý.", tags: [smile, raised finger]}
+      - {say: jana, text: "To nebyla pravda, to byla recenze.", tags: [deadpan, holding a wine glass]}
+      - {say: olin, text: "Pravda je recenze, kterou nikdo nechtěl slyšet.", tags: [serene smile, looking at another]}
+      - {say: jana, text: "A ty jsi právě řekl, že pravda je služba, a teď že je to recenze — tak která?", tags: [raised eyebrow, tilted head]}
+      - {say: olin, text: "Obojí. Guláš je univerzální solvent.", shot: close-up, tags: [satisfied smile, eyes half closed]}
+  k3:
+    title: Poslední slovo
+    location: l_olymp
+    cast: {olin: olin_42, jana: jana_40, m77: m77}
+    ending: good
+    script:
+      - {see: "Klid moře po bouři, kterou sám vyvolal.", shot: establishing, tags: [sea of clouds, after the storm, marble colonnade, calm, cold light, no humans], gap: medium, animate: "a calm sea of clouds after a storm, faint mist drifting between the columns, static camera"}
+      - {say: jana, text: "Nerozesmívej mě. To je faul. My se nesmíme smát, my se máme hádat.", tags: [stifled laugh, hand over mouth, composing herself], animate: "she bursts into a sob of laughter and instantly composes herself"}
+      - {say: olin, text: "My se nehádáme. My dva jednotlivci vykonáváme pohyb v blízkosti.", tags: [calm smile, relaxed]}
+      - {say: jana, text: "Takže tohle je pohyb. Fajn. A co je ta věc, když chceš, abych ocenila, kolik jsi do toho investoval, a já ti řeknu „fandím ti v tom“ a mám pocit, že ti to nestačí?", tags: [serious, looking at another, quiet]}
+      - {say: olin, text: "To se jmenuje bratr a sestra. To nemá řešení. To je guláš.", shot: close-up, tags: [small smile, soft expression, looking down]}
+      - {say: jana, text: "...Takže ty vlastně pořád vyhráváš. Takhle nečekaně, tím klidem. To je podlé.", tags: [long stare, looking at another, resigned]}
+      - {say: olin, text: "Souhlasím.", tags: [serene smile, slight nod]}
+      - {say: jana, text: "Nesouhlasím—", shot: close-up, tags: [open mouth, raised finger]}
+      - {say: olin, text: "Vím. A je to krásný.", tags: [warm smile, eyes closed]}
+      - {say: jana, text: "Nic není krásný.", tags: [cold stare, crossed arms]}
+      - {say: olin, text: "Poslední slovo máš ty. Přesně jak jsi chtěla.", tags: [raising beer mug, quiet joy, gentle smile], animate: "he slowly raises the beer mug, quiet joy on his marble face"}
+      - {say: jana, text: "...Jsi hrozný.", shot: close-up, tags: [freezing, slow smile, realization], animate: "she freezes, realizes it, and very slowly smiles"}
+      - {say: olin, text: "Děkuju.", tags: [smile, slight bow]}
+      - {say: jana, text: "To nebyl—", tags: [raised finger, open mouth]}
+      - {say: olin, text: "Vím.", shot: close-up, tags: [smile, silence, eyes half closed]}
+      - {see: "Oba se dívají ven, na mrakodrapy. On nabírá guláš.", shot: medium, who: olin, tags: [looking away, scooping goulash, clouds, colonnade, profile]}
+      - {see: "Ona motá špagety. Nikdo neodchází ze svého zákopu. Nikdo nemusí.", shot: medium, who: jana, tags: [twirling spaghetti, looking away, clouds, colonnade, profile]}
+      - {see: "V téhle restauraci se platí časem a čas je právě ten jediný, co mají ještě společný. Tma.", shot: wide, tags: [marble restaurant, above the clouds, distant city below, dusk, fading light, no humans], gap: large, animate: "light fading over the marble colonnade, clouds closing over the city below, slow fade to dark"}

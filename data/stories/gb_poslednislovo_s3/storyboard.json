@@ -1,0 +1,699 @@
+{
+  "title": "Pokus o smír",
+  "title_i18n": {
+    "en": "An Attempt at Peace",
+    "de": "Ein Versöhnungsversuch",
+    "it": "Tentativo di riconciliazione",
+    "fr": "Tentative de réconciliation",
+    "pl": "Próba pojednania",
+    "pt-BR": "Tentativa de paz",
+    "ja": "和解の試み",
+    "ko": "화해의 시도",
+    "vi": "Nỗ lực làm hòa",
+    "ru": "Попытка примирения",
+    "uk": "Спроба примирення"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach restaurant",
+        "beach bar",
+        "neon sign",
+        "parasols",
+        "sunset",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "pouring wine",
+        "beer mug on tray",
+        "beach restaurant"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot waiter pours white wine, its screen face blinking"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "warning icon on screen",
+        "holding a tray"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robot",
+          "text": "Detekováno zvýšení napětí u stolu. Přejete si aktivovat režim mediace?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Rising tension detected at this table. Would you like to activate mediation mode?",
+            "de": "Erhöhte Spannung am Tisch erkannt. Möchten Sie den Mediationsmodus aktivieren?",
+            "it": "Rilevato aumento della tensione al tavolo. Desiderate attivare la modalità mediazione?",
+            "fr": "Hausse de tension détectée à la table. Souhaitez-vous activer le mode médiation ?",
+            "pl": "Wykryto wzrost napięcia przy stoliku. Czy włączyć tryb mediacji?",
+            "pt-BR": "Detectado aumento de tensão à mesa. Desejam ativar o modo de mediação?",
+            "ja": "テーブルの緊張上昇を検知しました。調停モードを起動しますか？",
+            "ko": "테이블의 긴장 상승이 감지되었습니다. 중재 모드를 활성화하시겠습니까?",
+            "vi": "Phát hiện căng thẳng gia tăng tại bàn. Quý khách có muốn bật chế độ hòa giải không?",
+            "ru": "Обнаружен рост напряжения за столом. Желаете активировать режим медиации?",
+            "uk": "Виявлено зростання напруги за столом. Бажаєте активувати режим медіації?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "deadpan",
+        "not looking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ne.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No.",
+            "de": "Nein.",
+            "it": "No.",
+            "fr": "Non.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "vi": "Không.",
+            "ru": "Нет.",
+            "uk": "Ні."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "cheerful smile",
+        "raising hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Klidně.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Sure.",
+            "de": "Gerne.",
+            "it": "Volentieri.",
+            "fr": "Volontiers.",
+            "pl": "Chętnie.",
+            "pt-BR": "Claro.",
+            "ja": "どうぞ。",
+            "ko": "좋아요.",
+            "vi": "Được thôi.",
+            "ru": "Давайте.",
+            "uk": "Залюбки."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "confused face on screen",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robot",
+          "text": "Rozpor v požadavcích. Doporučuji společnou komunikaci.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Conflicting requests. I recommend communicating together.",
+            "de": "Widersprüchliche Anforderungen. Ich empfehle gemeinsame Kommunikation.",
+            "it": "Richieste contraddittorie. Raccomando una comunicazione condivisa.",
+            "fr": "Demandes contradictoires. Je recommande une communication commune.",
+            "pl": "Sprzeczne polecenia. Zalecam wspólną komunikację.",
+            "pt-BR": "Solicitações conflitantes. Recomendo comunicação conjunta.",
+            "ja": "要求が矛盾しています。共同でのコミュニケーションを推奨します。",
+            "ko": "요청이 상충합니다. 공동 소통을 권장합니다.",
+            "vi": "Yêu cầu mâu thuẫn. Tôi khuyến nghị hai vị cùng trao đổi.",
+            "ru": "Противоречивые запросы. Рекомендую совместную коммуникацию.",
+            "uk": "Суперечливі запити. Рекомендую спільну комунікацію."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "pointing sideways",
+        "triumphant"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Vidíš? Dokonce i robot ví, že se musíme domluvit.",
+          "kind": "speech",
+          "i18n": {
+            "en": "See? Even the robot knows we have to talk it out.",
+            "de": "Siehst du? Sogar der Roboter weiß, dass wir uns einigen müssen.",
+            "it": "Vedi? Perfino il robot sa che dobbiamo metterci d'accordo.",
+            "fr": "Tu vois ? Même le robot sait qu'on doit se mettre d'accord.",
+            "pl": "Widzisz? Nawet robot wie, że musimy się dogadać.",
+            "pt-BR": "Viu? Até o robô sabe que a gente precisa se entender.",
+            "ja": "ほら。ロボットでさえ、話し合わなきゃって分かってる。",
+            "ko": "봐. 로봇도 우리가 합의해야 한다는 걸 알잖아.",
+            "vi": "Thấy chưa? Đến con robot cũng biết ta phải thống nhất.",
+            "ru": "Видишь? Даже робот знает, что нам надо договориться.",
+            "uk": "Бачиш? Навіть робот знає, що нам треба домовитися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile",
+        "shrugging"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nebo že se nemusíme.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Or that we don't have to.",
+            "de": "Oder dass wir es nicht müssen.",
+            "it": "O che non dobbiamo.",
+            "fr": "Ou qu'on n'est pas obligés.",
+            "pl": "Albo że nie musimy.",
+            "pt-BR": "Ou que não precisamos.",
+            "ja": "もしくは、しなくていいってことも。",
+            "ko": "아니면 안 해도 된다는 거지.",
+            "vi": "Hoặc là không cần.",
+            "ru": "Или что не обязательно.",
+            "uk": "Або що не мусимо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "pointing at another",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "To je přesně ono.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's exactly it.",
+            "de": "Genau das ist es.",
+            "it": "Ecco, proprio questo.",
+            "fr": "C'est exactement ça.",
+            "pl": "No właśnie o to chodzi.",
+            "pt-BR": "É exatamente isso.",
+            "ja": "まさにそれよ。",
+            "ko": "바로 그거야.",
+            "vi": "Chính là thế đấy.",
+            "ru": "Вот именно.",
+            "uk": "Ось воно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "innocent smile",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Co?",
+          "kind": "speech",
+          "i18n": {
+            "en": "What?",
+            "de": "Was?",
+            "it": "Cosa?",
+            "fr": "Quoi ?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ja": "何が？",
+            "ko": "뭐가?",
+            "vi": "Gì cơ?",
+            "ru": "Что?",
+            "uk": "Що?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "exasperated",
+        "hand gesture"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ty vždycky musíš mít nějakou chytrou odpověď.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You always have to have some clever answer.",
+            "de": "Du musst immer eine schlaue Antwort parat haben.",
+            "it": "Devi sempre avere una risposta furba.",
+            "fr": "Il faut toujours que tu aies une réponse maligne.",
+            "pl": "Ty zawsze musisz mieć jakąś mądrą odpowiedź.",
+            "pt-BR": "Você sempre tem que ter uma resposta esperta.",
+            "ja": "あなたはいつも気の利いた答えを用意してなきゃ気が済まない。",
+            "ko": "넌 항상 뭔가 똑똑한 대답을 해야 직성이 풀리지.",
+            "vi": "Anh lúc nào cũng phải có câu trả lời khôn khéo.",
+            "ru": "Тебе всегда нужно иметь какой-нибудь умный ответ.",
+            "uk": "Тобі завжди треба мати якусь розумну відповідь."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nemusím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I don't have to.",
+            "de": "Muss ich nicht.",
+            "it": "Non devo.",
+            "fr": "Pas forcément.",
+            "pl": "Nie muszę.",
+            "pt-BR": "Não tenho.",
+            "ja": "別に、なきゃいけないわけじゃない。",
+            "ko": "안 그래도 돼.",
+            "vi": "Đâu cần.",
+            "ru": "Не обязательно.",
+            "uk": "Не мушу."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "narrowed eyes",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ale máš ji.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But you do have one.",
+            "de": "Aber du hast eine.",
+            "it": "Però ce l'hai.",
+            "fr": "Mais tu en as une.",
+            "pl": "Ale ją masz.",
+            "pt-BR": "Mas você tem.",
+            "ja": "でも、あるじゃない。",
+            "ko": "근데 있잖아.",
+            "vi": "Nhưng anh có đấy.",
+            "ru": "Но он у тебя есть.",
+            "uk": "Але вона в тебе є."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smug smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Někdy.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Sometimes.",
+            "de": "Manchmal.",
+            "it": "A volte.",
+            "fr": "Parfois.",
+            "pl": "Czasem.",
+            "pt-BR": "Às vezes.",
+            "ja": "時々ね。",
+            "ko": "가끔.",
+            "vi": "Đôi khi.",
+            "ru": "Иногда.",
+            "uk": "Іноді."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "exasperated",
+        "open mouth",
+        "pointing at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A ještě se u toho usmíváš!",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you smile while you're at it!",
+            "de": "Und dabei lächelst du auch noch!",
+            "it": "E per giunta sorridi!",
+            "fr": "Et en plus, tu souris !",
+            "pl": "I jeszcze się przy tym uśmiechasz!",
+            "pt-BR": "E ainda sorri enquanto isso!",
+            "ja": "しかも笑ってるし！",
+            "ko": "그러면서 웃기까지 하고!",
+            "vi": "Lại còn cười nữa chứ!",
+            "ru": "И ещё при этом улыбаешься!",
+            "uk": "І ще й усміхаєшся при цьому!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "looking down",
+        "goulash",
+        "bread dumplings",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "content smile",
+        "holding fork",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Ten guláš je opravdu dobrý.",
+          "kind": "speech",
+          "i18n": {
+            "en": "This goulash is really good.",
+            "de": "Das Gulasch ist wirklich gut.",
+            "it": "Questo gulasch è davvero buono.",
+            "fr": "Ce goulash est vraiment bon.",
+            "pl": "Ten gulasz jest naprawdę dobry.",
+            "pt-BR": "Esse gulache está muito bom.",
+            "ja": "このグヤーシュ、本当においしい。",
+            "ko": "이 굴라시 정말 맛있다.",
+            "vi": "Món goulash này ngon thật.",
+            "ru": "Этот гуляш правда хороший.",
+            "uk": "Цей гуляш справді смачний."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "facepalm",
+        "frown"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Prosím tě, můžeš být chvíli vážný?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Oh please, can you be serious for a moment?",
+            "de": "Ich bitte dich, kannst du mal kurz ernst sein?",
+            "it": "Ti prego, puoi essere serio un attimo?",
+            "fr": "Je t'en prie, tu peux être sérieux deux minutes ?",
+            "pl": "Proszę cię, możesz być przez chwilę poważny?",
+            "pt-BR": "Por favor, dá pra ficar sério um instante?",
+            "ja": "お願いだから、ちょっとは真面目になれない？",
+            "ko": "제발, 잠깐이라도 진지할 수 없어?",
+            "vi": "Thôi mà, anh nghiêm túc một chút được không?",
+            "ru": "Умоляю, можешь хоть минуту побыть серьёзным?",
+            "uk": "Прошу тебе, можеш хоч хвилину бути серйозним?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "serious face",
+        "slight smile",
+        "holding fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Jsem vážný. Jen mám rád guláš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I am serious. I just like goulash.",
+            "de": "Ich bin ernst. Ich mag nur Gulasch.",
+            "it": "Sono serio. Mi piace solo il gulasch.",
+            "fr": "Je suis sérieux. J'aime juste le goulash.",
+            "pl": "Jestem poważny. Po prostu lubię gulasz.",
+            "pt-BR": "Estou sério. Só gosto de gulache.",
+            "ja": "真面目だよ。グヤーシュが好きなだけ。",
+            "ko": "진지해. 그냥 굴라시를 좋아할 뿐이야.",
+            "vi": "Anh nghiêm túc mà. Chỉ là anh thích goulash.",
+            "ru": "Я серьёзен. Просто люблю гуляш.",
+            "uk": "Я серйозний. Просто люблю гуляш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

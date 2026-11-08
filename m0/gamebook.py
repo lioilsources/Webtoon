@@ -224,15 +224,20 @@ def script_story(g, node_id, src):
             turn += 1
             cid = cast[e["say"]]
             shot = e.get("shot") or ("close-up" if turn % 2 else "medium")
-            tags = d["speaking"] + e.get("tags", d["faces"][e["say"]][turn % 3])
+            sp = d["speaking"]  # a list, or per speaker {speaker: [...], default: [...]} (a robot does not sit)
+            sp = sp.get(e["say"], sp.get("default", [])) if isinstance(sp, dict) else sp
+            sp = e.get("pose", sp)  # one line's own posture (he has just stood up)
+            tags = sp + e.get("tags", d["faces"][e["say"]][turn % 3])
             panels.append({"shot": shot, "location_id": loc, "characters": [{"id": cid}], "visual_tags": tags,
                            "bubbles": [bubble(cid, t) for t in split_line(e["text"])], "sfx": [], "gap_after": e.get("gap", "small"),
                            "animate": bool(e.get("animate")), "motion": e.get("animate", "")})
         else:
             who = [{"id": cast[e["who"]]}] if e.get("who") else []
             tags = e.get("tags", []) + ([] if who else ["no humans"] if "hand" not in " ".join(e.get("tags", [])) else [])
+            # `caption`: text the play shows on stage (a neon sign), lettered as narration, never drawn
             panels.append({"shot": e.get("shot", "medium"), "location_id": loc, "characters": who, "visual_tags": tags,
-                           "bubbles": [], "sfx": [], "gap_after": e.get("gap", "medium"),
+                           "bubbles": [bubble("", t) for t in split_line(e["caption"])] if e.get("caption") else [],
+                           "sfx": [], "gap_after": e.get("gap", "medium"),
                            "animate": bool(e.get("animate")), "motion": e.get("animate", "")})
     panels[-1]["gap_after"] = "large"
     used = {c["id"] for p in panels for c in p["characters"]}

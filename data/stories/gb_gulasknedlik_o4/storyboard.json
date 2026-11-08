@@ -1,0 +1,451 @@
+{
+  "title": "Hlavní chod",
+  "title_i18n": {
+    "de": "Hauptgang",
+    "en": "Main Course",
+    "fr": "Plat principal",
+    "it": "Portata principale",
+    "ja": "メインディッシュ",
+    "ko": "메인 요리",
+    "pl": "Danie główne",
+    "pt-BR": "Prato principal",
+    "ru": "Основное блюдо",
+    "uk": "Основна страва",
+    "vi": "Món chính"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "chandelier",
+        "ballerinas painted on the wall",
+        "pink and gold",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "eating spaghetti",
+        "elegant",
+        "searching gaze"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "eating goulash",
+        "half-empty plate",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "looking down at plate",
+        "sulking"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Nechápu, proč pořád musíš mít takovej klid.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich verstehe nicht, warum du immer so ruhig sein musst.",
+            "en": "I don't get why you always have to be so calm.",
+            "fr": "Je ne comprends pas pourquoi tu dois toujours être aussi calme.",
+            "it": "Non capisco perché tu debba sempre essere così calmo.",
+            "ja": "なんでいつもそんなに落ち着いてなきゃいけないのか分からない。",
+            "ko": "왜 맨날 그렇게 차분해야 하는지 모르겠어.",
+            "pl": "Nie rozumiem, czemu ty zawsze musisz mieć taki spokój.",
+            "pt-BR": "Não entendo por que você sempre tem que ser tão calmo.",
+            "ru": "Не понимаю, почему ты всегда должен быть таким спокойным.",
+            "uk": "Не розумію, чому ти завжди мусиш бути такий спокійний.",
+            "vi": "Em không hiểu sao lúc nào anh cũng phải bình thản thế."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Protože ho mám rád.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich sie mag.",
+            "en": "Because I like it.",
+            "fr": "Parce que j'aime ça.",
+            "it": "Perché mi piace.",
+            "ja": "好きだから。",
+            "ko": "좋으니까.",
+            "pl": "Bo go lubię.",
+            "pt-BR": "Porque eu gosto.",
+            "ru": "Потому что я его люблю.",
+            "uk": "Бо я його люблю.",
+            "vi": "Vì anh thích nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "raised eyebrow",
+        "sceptical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Já klid mám taky ráda. Ale nedělám z něj světový názor.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich mag Ruhe auch. Aber ich mache keine Weltanschauung daraus.",
+            "en": "I like calm too. But I don't make a worldview out of it.",
+            "fr": "Moi aussi j'aime le calme. Mais je n'en fais pas une vision du monde.",
+            "it": "Anche a me piace la calma. Ma non ne faccio una visione del mondo.",
+            "ja": "私も落ち着きは好き。でもそれを世界観にはしない。",
+            "ko": "나도 평온 좋아해. 근데 그걸 세계관으로 만들진 않아.",
+            "pl": "Ja też lubię spokój. Ale nie robię z niego światopoglądu.",
+            "pt-BR": "Eu também gosto de calma. Mas não faço dela uma visão de mundo.",
+            "ru": "Я тоже люблю спокойствие. Но не делаю из него мировоззрение.",
+            "uk": "Я теж люблю спокій. Але не роблю з нього світогляд.",
+            "vi": "Em cũng thích sự bình thản. Nhưng em không biến nó thành thế giới quan."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "adventurous smile",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "To není špatný nápad, že? Klid jako světový názor.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Keine schlechte Idee, oder? Ruhe als Weltanschauung.",
+            "en": "Not a bad idea, is it? Calm as a worldview.",
+            "fr": "Pas une mauvaise idée, hein ? Le calme comme vision du monde.",
+            "it": "Non è una cattiva idea, no? La calma come visione del mondo.",
+            "ja": "悪くないアイデアでしょ？世界観としての落ち着き。",
+            "ko": "나쁘지 않은 생각이지? 세계관으로서의 평온.",
+            "pl": "To niezły pomysł, nie? Spokój jako światopogląd.",
+            "pt-BR": "Não é uma má ideia, né? Calma como visão de mundo.",
+            "ru": "Неплохая идея, правда? Спокойствие как мировоззрение.",
+            "uk": "Непогана ідея, правда? Спокій як світогляд.",
+            "vi": "Ý hay đấy chứ nhỉ? Bình thản như một thế giới quan."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "hands up",
+        "playful outburst",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "NE, NE, NE, NE. To už je zase to samé. Já řeknu jednu věc, ty z toho uděláš esej o životě a pak se ještě usměješ, jako bys mě donutil vidět světlo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "NEIN, NEIN, NEIN, NEIN. Schon wieder dasselbe. Ich sage eine Sache, du machst einen Essay übers Leben daraus und lächelst dann noch, als hättest du mich gezwungen, das Licht zu sehen.",
+            "en": "NO, NO, NO, NO. Here we go again. I say one thing, you turn it into an essay on life and then you smile on top of it, as if you'd made me see the light.",
+            "fr": "NON, NON, NON, NON. On y revient encore. Je dis une chose, tu en fais un essai sur la vie et en plus tu souris, comme si tu m'avais forcée à voir la lumière.",
+            "it": "NO, NO, NO, NO. Di nuovo la stessa storia. Io dico una cosa, tu ne fai un saggio sulla vita e poi sorridi pure, come se mi avessi costretta a vedere la luce.",
+            "ja": "だめ、だめ、だめ、だめ。またそれ。私が一つ言うと、あなたは人生についてのエッセイにして、そのうえ私に光を見せてやったみたいに微笑むの。",
+            "ko": "아니, 아니, 아니, 아니. 또 그거야. 내가 하나 말하면 넌 그걸 인생 에세이로 만들고, 거기다 나한테 빛이라도 보여 준 것처럼 웃지.",
+            "pl": "NIE, NIE, NIE, NIE. Znowu to samo. Ja mówię jedną rzecz, ty robisz z tego esej o życiu, a potem jeszcze się uśmiechasz, jakbyś zmusił mnie do ujrzenia światła.",
+            "pt-BR": "NÃO, NÃO, NÃO, NÃO. Lá vem de novo. Eu digo uma coisa, você transforma num ensaio sobre a vida e ainda sorri, como se tivesse me obrigado a ver a luz.",
+            "ru": "НЕТ, НЕТ, НЕТ, НЕТ. Опять то же самое. Я говорю одно, ты делаешь из этого эссе о жизни, а потом ещё и улыбаешься, будто заставил меня узреть свет.",
+            "uk": "НІ, НІ, НІ, НІ. Знову те саме. Я кажу одне, ти робиш із цього есей про життя, а тоді ще й усміхаєшся, ніби змусив мене побачити світло.",
+            "vi": "KHÔNG, KHÔNG, KHÔNG, KHÔNG. Lại thế nữa rồi. Em nói một điều, anh biến nó thành bài luận về cuộc đời rồi còn mỉm cười, như thể đã bắt em nhìn thấy ánh sáng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "she throws up her hands in a playful outburst, glasses slipping"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "calm",
+        "serene smile",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Nevidím světlo. Vidím jenom, že světlo je všude.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sehe kein Licht. Ich sehe nur, dass das Licht überall ist.",
+            "en": "I don't see the light. I just see that the light is everywhere.",
+            "fr": "Je ne vois pas la lumière. Je vois seulement que la lumière est partout.",
+            "it": "Non vedo la luce. Vedo solo che la luce è dappertutto.",
+            "ja": "光が見えるんじゃない。光がどこにでもあるのが見えるだけ。",
+            "ko": "빛이 보이는 게 아니야. 빛이 어디에나 있다는 게 보일 뿐이지.",
+            "pl": "Nie widzę światła. Widzę tylko, że światło jest wszędzie.",
+            "pt-BR": "Eu não vejo a luz. Só vejo que a luz está em toda parte.",
+            "ru": "Я не вижу света. Я вижу только, что свет повсюду.",
+            "uk": "Я не бачу світла. Я бачу тільки, що світло всюди.",
+            "vi": "Anh không thấy ánh sáng. Anh chỉ thấy ánh sáng ở khắp nơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "venomous smile",
+        "narrowed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Věta jako z podtáckové sbírky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein Satz wie aus einer Bierdeckel-Sammlung.",
+            "en": "A line straight out of a beer-coaster collection.",
+            "fr": "Une phrase tout droit sortie d'une collection de sous-bocks.",
+            "it": "Una frase da collezione di sottobicchieri.",
+            "ja": "コースターの名言集みたいな台詞。",
+            "ko": "맥주 코스터 명언집에나 나올 문장이네.",
+            "pl": "Zdanie jak z kolekcji podstawek pod piwo.",
+            "pt-BR": "Uma frase de coleção de porta-copos.",
+            "ru": "Фраза как из коллекции пивных подставок.",
+            "uk": "Фраза як із колекції пивних підставок.",
+            "vi": "Câu nói như trong bộ sưu tập lót cốc bia."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "wide smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Díky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Danke.",
+            "en": "Thanks.",
+            "fr": "Merci.",
+            "it": "Grazie.",
+            "ja": "ありがとう。",
+            "ko": "고마워.",
+            "pl": "Dzięki.",
+            "pt-BR": "Obrigado.",
+            "ru": "Спасибо.",
+            "uk": "Дякую.",
+            "vi": "Cảm ơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "rolling eyes",
+        "exasperated"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Nebyla to poklona!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war kein Kompliment!",
+            "en": "That wasn't a compliment!",
+            "fr": "Ce n'était pas un compliment !",
+            "it": "Non era un complimento!",
+            "ja": "褒めてないから！",
+            "ko": "칭찬 아니었거든!",
+            "pl": "To nie był komplement!",
+            "pt-BR": "Não foi um elogio!",
+            "ru": "Это был не комплимент!",
+            "uk": "Це був не комплімент!",
+            "vi": "Đó không phải lời khen!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "A přece ji bereš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und trotzdem nimmst du es an.",
+            "en": "And yet you take it.",
+            "fr": "Et pourtant tu le prends.",
+            "it": "Eppure lo accetti.",
+            "ja": "それでも受け取るんだね。",
+            "ko": "그래도 받아들이잖아.",
+            "pl": "A jednak go przyjmujesz.",
+            "pt-BR": "E mesmo assim você aceita.",
+            "ru": "И всё же ты его принимаешь.",
+            "uk": "І все ж ти його приймаєш.",
+            "vi": "Vậy mà em vẫn nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+# Gamebook — Guláš s knedlíkem v neopunkové budoucnosti. Kulový blesk, verze „Le Chat“: stejná dvojice, jiný text od
+# autora (Olin, 2026-11-08), komorní komedie v šesti obrazech; text replik je doslova jeho. Styl podle obecné představy
+# o modelu: Francie, pařížská kavárna, casual, baletky a plakátové linky Toulouse-Lautreca, načančané a falešné,
+# 18. století, které by rádo bylo renesancí (preset lautrec_rococo). Restaurace U Tiché Loutny je proto načančaná
+# pařížská kavárna s rokokovým zlacením; scénické poznámky (doslova v `see`) se kreslí v ní, nepíšou se.
+# Lineární: šest uzlů (obrazy 1–6), žádné volby. Autorova poznámka na konci je režijní, nekreslí se. Každý uzel začíná
+# úvodním obrazem kavárny bez postav (pravidlo storyboardu); jeho `see` je nadpis obrazu („2. OBRAZ — Objednávka“).
+#
+# HLAS REPRODUKTORU je postava `reproduktor` (zlacený gramofonový trychtýř na zdi kavárny): jeho repliky mají vlastní
+# panel jako každý mluvčí. ČÍŠNÍK-ROBOT mluví jen přes reproduktor; v obraze je sám.
+# Janino „...“ v 6. obrazu (veď, k odchodu, ale nesmí to říct nahlas) je tichý obraz Jany (`see`), ne bublina s tečkami.
+# Poslední „Vážení hosté... vážení hosté... (pauza) ...dobrou chuť.“ jsou dvě bubliny (pauza mezi nimi), v prázdné kavárně.
+#
+# Opravené překlepy v replikách: „nastručte“ → „nastrouhejte“ (2.), „zadšťastnilo“ → „rozšťastnilo“, „gulašem“ →
+# „gulášem“ (3.), „světlíko“ → „světlo“, „z podkávové sbírky“ → „z podtáckové sbírky“ (4.; odhad: citát z pivního
+# podtácku, autor ať potvrdí), rovné uvozovky "vím" a "a co já s tím" → „vím“, „a co já s tím“ (2.).
+# Ve scénických poznámkách: „v jejím dlani“ → „v její dlani“ (1.), „na Jany“ → „na Janu“ (2., 6.), „Obě jí“ → „Oba jí“
+# (4.), „nad Jany špagetami“ → „nad Janinými špagetami“, „nezákaže“ → „nezakáže“, „raděi“ → „raději“ (5.); nejasné
+# „veď“ (6.) vypuštěno. Ponecháno záměrně: „poslední hangár“ (Olinův vtip, Jana ho opraví na „Slovo“), „Vážená hosto“
+# (robotí zdvořilost), „víry v správnost“, „kvůli který“, „takovej“ (mluvená čeština).
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
+# v obraze), `see` = scénická poznámka jako obraz. Profil comedy.
+
+schema: 1
+id: gulasknedlik
+title: Guláš s knedlíkem v neopunkové budoucnosti
+title_i18n: {de: "Gulasch mit Knödeln in einer Neo-Punk-Zukunft", en: "Goulash and Dumplings in a Neo-Punk Future", fr: "Goulash et knödels dans un futur néo-punk", it: "Gulasch con canederli in un futuro neo-punk", ja: "ネオパンクな未来のグヤーシュとクネドリーキ", ko: "네오펑크 미래의 굴라시와 크네들리키", pl: "Gulasz z knedlikami w neopunkowej przyszłości", pt-BR: "Gulache com bolinhos num futuro neopunk", ru: "Гуляш с кнедликами в неопанковом будущем", uk: "Гуляш із кнедликами в неопанковому майбутньому", vi: "Goulash với bánh knedlík trong tương lai tân punk"}
+world: w_gulas_knedlik
+audience: adult
+language: cs
+style_id: lautrec_rococo
+profile: comedy
+product_id: gamebook_gulasknedlik
+start: o1
+
+premise: >
+  Kavárna U Tiché Loutny v roce 2089, načančaná po pařížsku. Olin v zenu u guláše s knedlíkem a tmavého piva, jeho
+  sestra Jana u špaget s parmazánem a bílého vína, s potřebou mít poslední slovo. Číšník-robot má kloub navíc
+  a reproduktor hodnotí jejich ticho.
+
+characters: [olin_40, jana_35, robot, reproduktor]
+
+locations:
+  - {id: l_loutna, name: Kavárna U Tiché Loutny, description: "rokokové zlacení, Lautrecovy tanečnice, baletky, růžová a zlatá"}
+  - {id: l_stul_loutna, name: Stůl s židlemi, description: "mramorový stolek, dvě zlacené židle, které se přisouvají"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana, Robot: robot, Reproduktor: hlas}
+  faces:
+    olin: [[calm smile, looking at another], [eyes half closed, content smile], [gentle smile, relaxed]]
+    jana: [[smirk, looking at another], [raised eyebrow, sceptical], [narrowed eyes, sharp gaze]]
+    robot: [[glowing eyes, tilted head], [frozen pose], [bowing]]
+    hlas: [[gilded horn, glowing], [ornate horn, rococo wall], [gilded horn, golden light]]
+  speaking:
+    olin: [upper body, from front, sitting at a cafe table]
+    jana: [upper body, from front, sitting at a cafe table]
+    hlas: [close-up, gramophone horn on the wall]
+    default: [upper body, from front]
+
+nodes:
+  o1:
+    title: Objednáno
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    next: o2
+    script:
+      - {see: "Restaurace U Tiché Loutny v roce 2089.", shot: establishing, tags: [parisian cafe, rococo interior, gilded mirrors, cancan dancer posters, ballerinas, chandelier, no humans], gap: medium, animate: "chandelier crystals glinting, ballerinas on the posters seem to sway, soft golden light, static camera"}
+      - {see: "Stůl uprostřed. Dvě židle, které se občas samy přisunou blíž k sobě a zase couvnou, protože vycítily napětí a nevědí, čí je to úkol to řešit.", shot: medium, loc: l_stul_loutna, tags: [marble table, two gilded chairs, empty chairs, no humans], animate: "two empty gilded chairs inching closer to each other and backing away again"}
+      - {see: "OLIN a JANA sedí proti sobě. OLIN se usmívá do půllitru.", shot: medium, who: olin, tags: [sitting at a cafe table, holding a beer mug, dark beer, goulash, smile]}
+      - {see: "JANA si ovívá lístek jídelníčku, jako by z něj šlo teplo, které tam není.", shot: medium, who: jana, tags: [sitting at a cafe table, fanning herself with a menu, bored, elegant]}
+      - {say: jana, text: "Tak. A jsme tady.", tags: [pale, deep breath, looking at another]}
+      - {say: olin, text: "Jsme. To je dobrý start, ne?", tags: [calm, looking down at plate, goulash, smile]}
+      - {say: jana, text: "Ne. To není start. To je konstatování. My tady nikdy nic nezačínáme, my tady vždycky pokračujeme v něčem, co se stalo loni.", tags: [raised finger, sharp gaze]}
+      - {say: olin, text: "To je hezký způsob, jak říct, že si pamatuješ.", tags: [smile, looking at another]}
+      - {say: jana, text: "To je způsob, jak říct, že ty si taky pamatuješ, jen to vydáváš za klid.", tags: [narrowed eyes, smirk]}
+      - {see: "OLIN se usměje. Víc než předtím.", shot: close-up, who: olin, tags: [wide smile, eyes half closed]}
+      - {see: "Jana si toho všimne a víno v stopce se v její dlani zlehka rozvlní.", shot: close-up, who: jana, tags: [holding a wine glass, white wine, ripples in wine, suspicious glance], animate: "the wine in her long-stemmed glass trembling into small ripples"}
+      - {say: hlas, text: "Vážení hosté. Vaše knedlíky byly syntetizovány podle vzpomínky na rok 1987. Doporučujeme konzumovat pomalu, aby se vzpomínka neukvapila.", tags: [gilded horn, warm glow]}
+      - {say: olin, text: "Slyšels? Neukvapila.", tags: [happy, looking up, smile]}
+      - {say: jana, text: "On to říká guláši, ne tobě.", tags: [looking away, deadpan]}
+      - {see: "Pauza. Olin se usmívá. Jana zjistila, že zrovna dala Olinovi poslední slovo, a to jí nedá spát.", shot: close-up, who: jana, tags: [realization, wide eyes, frustrated]}
+  o2:
+    title: Objednávka
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    next: o3
+    script:
+      - {see: "2. OBRAZ — Objednávka", shot: establishing, tags: [parisian cafe, rococo interior, gilded mirrors, ballerina posters, holographic menu, no humans], gap: medium, animate: "a holographic menu flickering over the tables, chandelier glinting, static camera"}
+      - {see: "ČÍŠNÍK-ROBOT připluje s tácem. Má jeden ramenní kloub navíc a drží v něm grál s Parmesanem, ze kterého jen tak svítí.", shot: medium, who: robot, tags: [gliding, holding a glowing chalice, grated cheese, extra arm joint], gap: medium, animate: "the robot glides in, its extra shoulder joint swinging, the cheese chalice glowing"}
+      - {say: jana, text: "Ne. Parmazán mi nastrouhejte ručně. Ne počítačem.", tags: [waving hand, dismissive, looking up]}
+      - {say: olin, text: "Dejte jí počítačem. Ona si stejně vždycky nechá poslední hangár.", tags: [friendly smile, looking up]}
+      - {say: jana, text: "Slovo.", shot: close-up, tags: [deadpan, raised eyebrow]}
+      - {say: olin, text: "Vím.", shot: close-up, tags: [smile, eyes half closed]}
+      - {say: jana, text: "Poslední slovo. A neříkej „vím“, když se usmíváš, protože to pak nezní jako víš, ale jako „a co já s tím“.", tags: [pointing, exasperated]}
+      - {say: olin, text: "A co já s tím.", tags: [smile, shrugging]}
+      - {say: jana, text: "Ručně!", shot: close-up, tags: [shouting, looking up]}
+      - {see: "Robot se podívá na svět. Pak na Janu. Pak ztuhne v půli pohybu, jako by jeho operační systém dostal dvě rozporné objednávky lidské vůle a rozhodl se to neřešit.", shot: medium, who: robot, tags: [frozen pose, mid-motion, error, glitch], animate: "the robot freezes mid-motion, eyes flickering between two states"}
+      - {say: hlas, text: "Vážení hosté. Parmazán bude podán dvakrát, jednou ručně, jednou digitálně. Restaurace nenese odpovědnost za vzniklé víry v správnost.", tags: [gilded horn, relieved glow]}
+      - {see: "Robotovi se rozsvítí obě oční optiky najednou, jedna proti druhé. Odpluje.", shot: close-up, who: robot, tags: [glowing eyes, both eyes lit, gliding away]}
+  o3:
+    title: Předkrm
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    next: o4
+    script:
+      - {see: "3. OBRAZ — Předkrm", shot: establishing, tags: [parisian cafe, rococo interior, marble tables, cancan dancer posters, warm light, no humans], gap: medium}
+      - {see: "Jana si namotává špagetu na vidličku s precizností chirurga.", shot: close-up, who: jana, tags: [twirling spaghetti on a fork, precise, focused], gap: medium}
+      - {see: "Olin jí guláš, nepřetržitě se usmívá, i když má plnou pusu.", shot: medium, who: olin, tags: [eating goulash, mouth full, smile]}
+      - {say: jana, text: "Copak tě tolik rozšťastnilo?", tags: [suspicious, looking at another]}
+      - {say: olin, text: "Nic. Jsem nad věcí.", tags: [serene smile, eyes closed]}
+      - {say: jana, text: "Ty nejsi nad věcí. Ty jsi pod gulášem a vydáváš to za buddhismus.", tags: [smirk, pointing with fork]}
+      - {say: olin, text: "Věc se mnou nedokáže pracovat, když ji nechám být.", tags: [putting down spoon, calm]}
+      - {say: jana, text: "Tak to je přesně ten typ věty, kvůli který se lidi na tebe zlobí!", shot: close-up, tags: [almost shouting, clenched teeth]}
+      - {say: olin, text: "A přitom je pravdivá.", tags: [smile, looking at another]}
+      - {say: jana, text: "Nepravdivá! Mně docela dobře funguje, když se lidi zlobí, takže tvoje věta neplatí.", tags: [triumphant, firm, relieved]}
+      - {say: olin, text: "Tak vidíš. Každá věc je jiná.", tags: [laconic, half-closed eyes]}
+      - {see: "Jana se nadechne. Chce odpovědět. Otevře ústa. Zavře je. Znovu otevře. Ticho.", shot: close-up, who: jana, tags: [open mouth, speechless, frozen], animate: "she opens her mouth, closes it, opens it again, no words"}
+      - {see: "Pak se napije vína na stopce, jako by ta stopka byla jediná jistota v tomhle světě.", shot: medium, who: jana, tags: [drinking wine, long-stemmed glass, clutching the stem]}
+      - {say: jana, text: "Tyhle knedlíky mi jdou na nervy.", tags: [quiet, muttering, looking down]}
+      - {say: olin, text: "Špagety taky vypadají nervózně.", tags: [friendly smile, mischievous]}
+  o4:
+    title: Hlavní chod
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    next: o5
+    script:
+      - {see: "4. OBRAZ — Hlavní chod", shot: establishing, tags: [parisian cafe, rococo interior, chandelier, ballerinas painted on the wall, pink and gold, no humans], gap: medium}
+      - {see: "Odmlka. Oba jí. Jana pojídá špagety s vrozenou elegancí, jako by v nich hledala pravdu.", shot: medium, who: jana, tags: [eating spaghetti, elegant, searching gaze], gap: medium}
+      - {see: "Olin se usmívá, i když jí. Guláš se postupně zmenšuje, ale jeho úsměv ne.", shot: medium, who: olin, tags: [eating goulash, half-empty plate, smile]}
+      - {say: jana, text: "Nechápu, proč pořád musíš mít takovej klid.", tags: [looking down at plate, sulking]}
+      - {say: olin, text: "Protože ho mám rád.", tags: [smile, looking at another]}
+      - {say: jana, text: "Já klid mám taky ráda. Ale nedělám z něj světový názor.", tags: [raised eyebrow, sceptical]}
+      - {say: olin, text: "To není špatný nápad, že? Klid jako světový názor.", tags: [adventurous smile, raised eyebrows]}
+      - {say: jana, text: "NE, NE, NE, NE. To už je zase to samé. Já řeknu jednu věc, ty z toho uděláš esej o životě a pak se ještě usměješ, jako bys mě donutil vidět světlo.", tags: [hands up, playful outburst, laughing], animate: "she throws up her hands in a playful outburst, glasses slipping"}
+      - {say: olin, text: "Nevidím světlo. Vidím jenom, že světlo je všude.", tags: [calm, serene smile, soft light]}
+      - {say: jana, text: "Věta jako z podtáckové sbírky.", shot: close-up, tags: [venomous smile, narrowed eyes]}
+      - {say: olin, text: "Díky.", shot: close-up, tags: [wide smile]}
+      - {say: jana, text: "Nebyla to poklona!", tags: [rolling eyes, exasperated]}
+      - {say: olin, text: "A přece ji bereš.", tags: [smile, half-closed eyes]}
+  o5:
+    title: Sýr
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    next: o6
+    script:
+      - {see: "5. OBRAZ — Sýr", shot: establishing, tags: [parisian cafe, rococo interior, gilded gramophone horn on the wall, golden glow, no humans], gap: medium}
+      - {see: "ČÍŠNÍK-ROBOT se vrací. V držení drží grál s parmezánem. Nechá ho viset nad Janinými špagetami.", shot: medium, who: robot, tags: [holding a glowing chalice, cheese grater, hovering over a plate], gap: medium}
+      - {say: hlas, text: "Vážená hosto. Parmazán byl nastrouhán ručně. Systém nalezl v jeho struktuře stopu lidského dotyku, jehož genetický profil odpovídá vaší babičce z Matičních Hamrů.", tags: [gilded horn, festive glow]}
+      - {see: "Jana ztuhne.", shot: close-up, who: jana, tags: [frozen, wide eyes, surprised]}
+      - {see: "Robot nastrouhá sýr.", shot: close-up, who: robot, tags: [grating cheese, falling cheese, spaghetti], animate: "cheese falling in soft flakes onto the spaghetti"}
+      - {see: "Jana se dívá na špagety. Pak na Olina. Pak zpátky na špagety. Jako by jí do vína spadla vzpomínka, kterou si neobjednala.", shot: medium, who: jana, tags: [looking down at spaghetti, moved, nostalgic, wine glass]}
+      - {say: jana, text: "...já jsem tohle chtěla, ne?", tags: [quiet, soft expression, looking down]}
+      - {say: olin, text: "Chci jenom, aby sis to užila.", tags: [gentle, serious, no smile, looking at another]}
+      - {see: "Pauza. Velmi dlouhá. V pauze se stoly a židle samy přisunou o kousek blíž. Nikdo jim to nezakáže.", shot: wide, loc: l_stul_loutna, tags: [tables and chairs, chairs closer together, quiet cafe, no humans], animate: "tables and chairs slowly sliding a little closer together"}
+      - {say: jana, text: "...tady máš poslední slovo.", tags: [quiet, firm, looking down at spaghetti]}
+      - {say: olin, text: "Neberu si ho.", tags: [quiet, gentle]}
+      - {say: jana, text: "Tak si ho bereš, protože jsi ho nezakázal, a tím pádem je poslední tvoje!", tags: [head up, determined, pointing]}
+      - {say: olin, text: "A co mám říct, aby bylo poslední tvoje?", tags: [genuine smile, warm]}
+      - {say: jana, text: "Nic. Prostě nic. Řekni nic.", tags: [sincere, honest, soft smile]}
+      - {see: "Olin se napije piva. Ticho.", shot: medium, who: olin, tags: [drinking beer, beer mug, silent]}
+      - {see: "Jana vyčkává. Ticho se protahuje.", shot: close-up, who: jana, tags: [waiting, silent, looking at another]}
+      - {see: "Robot připluje, aby odnesl talíře, ale ticho ho zastaví v půli cesty a on se raději pomodlí k hologramovému jídelnímu lístku, jako by věděl, co se tu děje, ale nechtěl do toho mluvit.", shot: medium, who: robot, tags: [praying, hands together, holographic menu, stopped mid-way]}
+  o6:
+    title: Dessert
+    location: l_loutna
+    cast: {olin: olin_40, jana: jana_35, robot: robot, hlas: reproduktor}
+    ending: good
+    script:
+      - {see: "6. OBRAZ — Dessert", shot: establishing, tags: [parisian cafe, rococo interior, dim chandelier, empty dance floor, pink and gold, no humans], gap: medium, animate: "chandelier light slowly dimming, dust motes floating, static camera"}
+      - {see: "Ticho trvá. Jana dojí špagety.", shot: medium, who: jana, tags: [finishing spaghetti, empty plate, quiet], gap: medium}
+      - {see: "Olin dojí guláš.", shot: medium, who: olin, tags: [finishing goulash, empty plate, smile]}
+      - {see: "Nikdo nevyhrál. Nikdo nechtěl. Ale oba mají plné břicho a prázdnou munici.", shot: medium, loc: l_stul_loutna, tags: [empty plates, empty beer mug, empty wine glass, napkins, no humans]}
+      - {say: hlas, text: "Vážení hosté. Restaurace U Tiché Loutny si vás dovoluje informovat, že vaše vzájemné ticho bylo klasifikováno jako tiché ticho, což je nejvyšší stupeň souznění v naší nabídce. Cena: 0 kreditů.", tags: [gilded horn, solemn glow]}
+      - {see: "Jana se podívá na Olina.", shot: close-up, who: jana, tags: [looking at another, quiet]}
+      - {see: "Olin se podívá na Janu. Chvíli si to tak nechají.", shot: close-up, who: olin, tags: [looking at another, soft smile]}
+      - {say: jana, text: "To ti neberu jako poslední slovo, to si neber.", tags: [quiet, stubborn, slight smile]}
+      - {say: olin, text: "Já vím. Já taky ne.", tags: [friendly smile, nodding]}
+      - {see: "JANA mlčí: k odchodu, ale nesmí to říct nahlas.", shot: close-up, who: jana, tags: [silent, pressed lips, glancing at the door]}
+      - {see: "Oba vstanou. Olin zaplatí.", shot: medium, who: olin, tags: [standing, paying, smile]}
+      - {see: "Jana si vezme kabát, ale nechá si poslední slovo v kapse.", shot: medium, who: jana, tags: [standing, putting on a coat, hand in pocket]}
+      - {see: "Dveře se otevřou samy. Jdou každý jedněmi, ale tentokrát ze stejného důvodu.", shot: wide, tags: [two ornate doors opening, rococo doors, golden light, no humans], animate: "two gilded doors swinging open by themselves, golden light spilling in"}
+      - {say: hlas, text: "Vážení hosté... vážení hosté...", tags: [gilded horn, dim glow, empty cafe]}
+      - {say: hlas, text: "...dobrou chuť.", shot: wide, tags: [empty cafe, gilded horn, dim light], gap: large, animate: "the empty café, the chandelier dimming, chairs slowly drifting back together"}

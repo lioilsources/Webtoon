@@ -1,0 +1,414 @@
+{
+  "title": "Dessert",
+  "title_i18n": {
+    "de": "Dessert",
+    "en": "Dessert",
+    "fr": "Dessert",
+    "it": "Dessert",
+    "ja": "デザート",
+    "ko": "디저트",
+    "pl": "Deser",
+    "pt-BR": "Sobremesa",
+    "ru": "Десерт",
+    "uk": "Десерт",
+    "vi": "Tráng miệng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "dim chandelier",
+        "empty dance floor",
+        "pink and gold",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "chandelier light slowly dimming, dust motes floating, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "finishing spaghetti",
+        "empty plate",
+        "quiet"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "finishing goulash",
+        "empty plate",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stul_loutna",
+      "characters": [],
+      "visual_tags": [
+        "empty plates",
+        "empty beer mug",
+        "empty wine glass",
+        "napkins",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "gilded horn",
+        "solemn glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "Vážení hosté.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verehrte Gäste.",
+            "en": "Dear guests.",
+            "fr": "Chers clients.",
+            "it": "Gentili ospiti.",
+            "ja": "お客様。",
+            "ko": "손님 여러분.",
+            "pl": "Szanowni goście.",
+            "pt-BR": "Prezados clientes.",
+            "ru": "Уважаемые гости.",
+            "uk": "Шановні гості.",
+            "vi": "Kính thưa quý khách."
+          }
+        },
+        {
+          "speaker_id": "reproduktor",
+          "text": "Restaurace U Tiché Loutny si vás dovoluje informovat, že vaše vzájemné ticho bylo klasifikováno jako tiché ticho, což je nejvyšší stupeň souznění v naší nabídce.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Restaurant U Tiché Loutny erlaubt sich, Ihnen mitzuteilen, dass Ihr gegenseitiges Schweigen als stilles Schweigen eingestuft wurde, die höchste Stufe der Harmonie in unserem Angebot.",
+            "en": "The U Tiché Loutny restaurant is pleased to inform you that your mutual silence has been classified as silent silence, the highest grade of harmony on our menu.",
+            "fr": "Le restaurant U Tiché Loutny se permet de vous informer que votre silence mutuel a été classé silence silencieux, le plus haut degré d'harmonie de notre carte.",
+            "it": "Il ristorante U Tiché Loutny si permette di informarvi che il vostro silenzio reciproco è stato classificato come silenzio silenzioso, il più alto grado di armonia della nostra offerta.",
+            "ja": "レストラン「ウ・ティヘー・ロウトニ」よりお知らせいたします。お二人の沈黙は「静かな沈黙」に分類されました。当店メニューで最高ランクの心の通い合いです。",
+            "ko": "레스토랑 '우 티헤 로우트니'에서 알려 드립니다. 두 분의 침묵은 '고요한 침묵'으로 분류되었으며, 이는 저희 메뉴에서 가장 높은 단계의 교감입니다.",
+            "pl": "Restauracja U Tiché Loutny pozwala sobie poinformować, że wasze wzajemne milczenie zostało sklasyfikowane jako cicha cisza, najwyższy stopień harmonii w naszej ofercie.",
+            "pt-BR": "O restaurante U Tiché Loutny tem o prazer de informar que o silêncio mútuo de vocês foi classificado como silêncio silencioso, o mais alto grau de sintonia do nosso cardápio.",
+            "ru": "Ресторан «У Тихой лютни» имеет честь сообщить, что ваше взаимное молчание классифицировано как тихая тишина — высшая степень созвучия в нашем меню.",
+            "uk": "Ресторан «У Тихої лютні» має честь повідомити, що вашу взаємну мовчанку класифіковано як тиху тишу — найвищий ступінь співзвуччя в нашому меню.",
+            "vi": "Nhà hàng U Tiché Loutny xin trân trọng thông báo rằng sự im lặng giữa quý khách đã được xếp loại là im lặng tĩnh lặng, mức hòa hợp cao nhất trong thực đơn của chúng tôi."
+          }
+        },
+        {
+          "speaker_id": "reproduktor",
+          "text": "Cena: 0 kreditů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Preis: 0 Credits.",
+            "en": "Price: 0 credits.",
+            "fr": "Prix : 0 crédit.",
+            "it": "Prezzo: 0 crediti.",
+            "ja": "料金：0クレジット。",
+            "ko": "가격: 0크레딧.",
+            "pl": "Cena: 0 kredytów.",
+            "pt-BR": "Preço: 0 créditos.",
+            "ru": "Цена: 0 кредитов.",
+            "uk": "Ціна: 0 кредитів.",
+            "vi": "Giá: 0 tín dụng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "looking at another",
+        "quiet"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "looking at another",
+        "soft smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "quiet",
+        "stubborn",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "To ti neberu jako poslední slovo, to si neber.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das zähle ich nicht als dein letztes Wort, nimm es dir ja nicht.",
+            "en": "I'm not counting that as your last word, don't you take it.",
+            "fr": "Je ne te compte pas ça comme le dernier mot, ne le prends pas.",
+            "it": "Non te la conto come ultima parola, non prendertela.",
+            "ja": "それはあなたの最後の言葉には数えないから。取らないでよ。",
+            "ko": "그건 네 마지막 말로 안 쳐. 가져가지 마.",
+            "pl": "Nie liczę ci tego jako ostatniego słowa, nie bierz go sobie.",
+            "pt-BR": "Isso eu não conto como sua última palavra, não pega pra você.",
+            "ru": "Это я тебе за последнее слово не засчитываю, не бери.",
+            "uk": "Це я тобі за останнє слово не зараховую, не бери.",
+            "vi": "Em không tính đó là lời cuối của anh đâu, đừng có nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "friendly smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Já vím. Já taky ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß. Ich auch nicht.",
+            "en": "I know. Me neither.",
+            "fr": "Je sais. Moi non plus.",
+            "it": "Lo so. Nemmeno io.",
+            "ja": "分かってる。僕もだよ。",
+            "ko": "알아. 나도 아니야.",
+            "pl": "Wiem. Ja też nie.",
+            "pt-BR": "Eu sei. Nem eu.",
+            "ru": "Я знаю. Я тоже нет.",
+            "uk": "Я знаю. Я теж ні.",
+            "vi": "Anh biết. Anh cũng không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "silent",
+        "pressed lips",
+        "glancing at the door"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "paying",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "putting on a coat",
+        "hand in pocket"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "two ornate doors opening",
+        "rococo doors",
+        "golden light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "two gilded doors swinging open by themselves, golden light spilling in"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "gilded horn",
+        "dim glow",
+        "empty cafe"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "Vážení hosté... vážení hosté...",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verehrte Gäste... verehrte Gäste...",
+            "en": "Dear guests... dear guests...",
+            "fr": "Chers clients... chers clients...",
+            "it": "Gentili ospiti... gentili ospiti...",
+            "ja": "お客様……お客様……",
+            "ko": "손님 여러분... 손님 여러분...",
+            "pl": "Szanowni goście... szanowni goście...",
+            "pt-BR": "Prezados clientes... prezados clientes...",
+            "ru": "Уважаемые гости... уважаемые гости...",
+            "uk": "Шановні гості... шановні гості...",
+            "vi": "Kính thưa quý khách... kính thưa quý khách..."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "empty cafe",
+        "gilded horn",
+        "dim light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "...dobrou chuť.",
+          "kind": "speech",
+          "i18n": {
+            "de": "...guten Appetit.",
+            "en": "...enjoy your meal.",
+            "fr": "...bon appétit.",
+            "it": "...buon appetito.",
+            "ja": "……どうぞごゆっくり。",
+            "ko": "...맛있게 드세요.",
+            "pl": "...smacznego.",
+            "pt-BR": "...bom apetite.",
+            "ru": "...приятного аппетита.",
+            "uk": "...смачного.",
+            "vi": "...chúc ngon miệng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the empty café, the chandelier dimming, chairs slowly drifting back together"
+    }
+  ]
+}

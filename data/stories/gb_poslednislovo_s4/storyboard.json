@@ -1,0 +1,868 @@
+{
+  "title": "Poslední slovo",
+  "title_i18n": {
+    "en": "The Last Word",
+    "de": "Das letzte Wort",
+    "it": "L'ultima parola",
+    "fr": "Le dernier mot",
+    "pl": "Ostatnie słowo",
+    "pt-BR": "A última palavra",
+    "ja": "最後の一言",
+    "ko": "마지막 말",
+    "vi": "Lời cuối cùng",
+    "ru": "Последнее слово",
+    "uk": "Останнє слово"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach restaurant",
+        "empty tables",
+        "string lights",
+        "late sunset",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass",
+        "eyes closed",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "conciliatory smile",
+        "open hand",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Hele, já ti tvoje projekty neberu. Já ti fandím. Jenom prostě nejsem tvoje cílovka. To je celé.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Look, I'm not knocking your projects. I'm rooting for you. I'm just not your target audience. That's all.",
+            "de": "Hör mal, ich mache dir deine Projekte nicht madig. Ich drücke dir die Daumen. Ich bin nur nicht deine Zielgruppe. Das ist alles.",
+            "it": "Senti, non ti sminuisco i progetti. Faccio il tifo per te. Solo che non sono il tuo target. Tutto qui.",
+            "fr": "Écoute, je ne dénigre pas tes projets. Je suis de ton côté. Je ne suis juste pas ton public cible. C'est tout.",
+            "pl": "Słuchaj, nie umniejszam twoich projektów. Kibicuję ci. Po prostu nie jestem twoją grupą docelową. To wszystko.",
+            "pt-BR": "Olha, não estou desmerecendo seus projetos. Eu torço por você. Só não sou seu público-alvo. É só isso.",
+            "ja": "ねえ、あなたのプロジェクトを否定してるんじゃない。応援してる。ただ、私はターゲット層じゃないの。それだけ。",
+            "ko": "있잖아, 네 프로젝트를 깎아내리는 게 아니야. 응원해. 그냥 난 네 타깃층이 아닐 뿐이야. 그게 다야.",
+            "vi": "Này, em không chê dự án của anh. Em ủng hộ anh mà. Chỉ là em không phải đối tượng của anh. Thế thôi.",
+            "ru": "Слушай, я не обесцениваю твои проекты. Я за тебя болею. Просто я не твоя целевая аудитория. Вот и всё.",
+            "uk": "Слухай, я не применшую твої проєкти. Я за тебе вболіваю. Просто я не твоя цільова аудиторія. От і все."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "warm smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To je naprosto v pořádku.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's perfectly fine.",
+            "de": "Das ist völlig in Ordnung.",
+            "it": "Va benissimo.",
+            "fr": "C'est parfaitement normal.",
+            "pl": "To zupełnie w porządku.",
+            "pt-BR": "Tudo bem, de verdade.",
+            "ja": "それで全然かまわないよ。",
+            "ko": "전혀 괜찮아.",
+            "vi": "Hoàn toàn ổn mà.",
+            "ru": "Это совершенно нормально.",
+            "uk": "Це цілком нормально."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "satisfied smile",
+        "relieved"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Tak vidíš. Konečně se chápeme.",
+          "kind": "speech",
+          "i18n": {
+            "en": "There you go. We finally understand each other.",
+            "de": "Na siehst du. Endlich verstehen wir uns.",
+            "it": "Ecco, vedi. Finalmente ci capiamo.",
+            "fr": "Tu vois. Enfin, on se comprend.",
+            "pl": "No widzisz. Wreszcie się rozumiemy.",
+            "pt-BR": "Está vendo? Finalmente nos entendemos.",
+            "ja": "ほらね。やっとわかり合えた。",
+            "ko": "거 봐. 드디어 서로 이해하네.",
+            "vi": "Thấy chưa. Cuối cùng ta cũng hiểu nhau.",
+            "ru": "Вот видишь. Наконец-то мы понимаем друг друга.",
+            "uk": "Ну от бачиш. Нарешті ми розуміємо одне одного."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Yes.",
+            "de": "Ja.",
+            "it": "Sì.",
+            "fr": "Oui.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ja": "うん。",
+            "ko": "응.",
+            "vi": "Ừ.",
+            "ru": "Да.",
+            "uk": "Так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "raised finger",
+        "sceptical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A nemusíš mi pořád dokazovat, jak je AI úžasná.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you don't have to keep proving to me how amazing AI is.",
+            "de": "Und du musst mir nicht ständig beweisen, wie toll KI ist.",
+            "it": "E non devi continuare a dimostrarmi quanto sia fantastica l'IA.",
+            "fr": "Et tu n'as pas besoin de me prouver sans arrêt à quel point l'IA est géniale.",
+            "pl": "I nie musisz mi ciągle udowadniać, jak wspaniałe jest AI.",
+            "pt-BR": "E não precisa ficar me provando como a IA é incrível.",
+            "ja": "それに、AIがどれだけすごいか私に証明し続けなくていいから。",
+            "ko": "그리고 AI가 얼마나 대단한지 계속 증명할 필요 없어.",
+            "vi": "Và anh không cần cứ chứng minh AI tuyệt vời thế nào.",
+            "ru": "И не надо мне всё время доказывать, какой ИИ потрясающий.",
+            "uk": "І не треба мені весь час доводити, який ШІ дивовижний."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile",
+        "shaking head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nebudu.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I won't.",
+            "de": "Mach ich nicht.",
+            "it": "Non lo farò.",
+            "fr": "Promis.",
+            "pl": "Nie będę.",
+            "pt-BR": "Não vou.",
+            "ja": "しないよ。",
+            "ko": "안 할게.",
+            "vi": "Anh sẽ không.",
+            "ru": "Не буду.",
+            "uk": "Не буду."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "crossed arms",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Protože já o tom vím svoje.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Because I know a thing or two about it.",
+            "de": "Ich weiß da nämlich Bescheid.",
+            "it": "Perché io ne so qualcosa.",
+            "fr": "Parce que j'en sais quelque chose.",
+            "pl": "Bo ja swoje na ten temat wiem.",
+            "pt-BR": "Porque eu sei bem do que estou falando.",
+            "ja": "だって、それについては私なりに分かってるから。",
+            "ko": "나도 그쪽은 알 만큼 알거든.",
+            "vi": "Vì chuyện đó em biết rõ.",
+            "ru": "Потому что я об этом знаю своё.",
+            "uk": "Бо я про це знаю своє."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Určitě.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Sure.",
+            "de": "Bestimmt.",
+            "it": "Certo.",
+            "fr": "Sûrement.",
+            "pl": "Na pewno.",
+            "pt-BR": "Com certeza.",
+            "ja": "きっとね。",
+            "ko": "그렇겠지.",
+            "vi": "Chắc chắn rồi.",
+            "ru": "Конечно.",
+            "uk": "Безперечно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "looking away",
+        "chin up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A nemám potřebu se o tom dál bavit.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And I don't feel the need to talk about it any further.",
+            "de": "Und ich habe kein Bedürfnis, weiter darüber zu reden.",
+            "it": "E non sento il bisogno di parlarne ancora.",
+            "fr": "Et je n'ai pas besoin d'en parler davantage.",
+            "pl": "I nie mam potrzeby dalej o tym rozmawiać.",
+            "pt-BR": "E não sinto necessidade de falar mais disso.",
+            "ja": "これ以上話す必要も感じないし。",
+            "ko": "그리고 더 얘기할 필요도 못 느껴.",
+            "vi": "Và em không cần nói thêm về chuyện đó.",
+            "ru": "И у меня нет потребности дальше это обсуждать.",
+            "uk": "І я не маю потреби далі про це говорити."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "beaming smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Skvělé.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Great.",
+            "de": "Prima.",
+            "it": "Perfetto.",
+            "fr": "Super.",
+            "pl": "Świetnie.",
+            "pt-BR": "Ótimo.",
+            "ja": "いいね。",
+            "ko": "좋아.",
+            "vi": "Tuyệt.",
+            "ru": "Прекрасно.",
+            "uk": "Чудово."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_plaz",
+      "characters": [],
+      "visual_tags": [
+        "table on the sand",
+        "half-eaten goulash",
+        "spaghetti",
+        "beer mug",
+        "wine glass",
+        "waves",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "waves rolling softly, parasol fringe moving in the breeze, static camera"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "cutting bread dumpling",
+        "fork",
+        "goulash",
+        "content smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "narrowed eyes",
+        "raised finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Jenom abys věděl, že to neznamená, že s tebou souhlasím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Just so you know, that doesn't mean I agree with you.",
+            "de": "Nur damit du's weißt: Das heißt nicht, dass ich dir zustimme.",
+            "it": "Solo perché tu lo sappia, non vuol dire che sono d'accordo con te.",
+            "fr": "Juste pour que tu saches, ça ne veut pas dire que je suis d'accord avec toi.",
+            "pl": "Tylko żebyś wiedział: to nie znaczy, że się z tobą zgadzam.",
+            "pt-BR": "Só pra você saber: isso não quer dizer que eu concordo com você.",
+            "ja": "言っとくけど、あなたに同意したわけじゃないから。",
+            "ko": "그냥 알아 두라고, 그게 너한테 동의한다는 뜻은 아니야.",
+            "vi": "Chỉ để anh biết, thế không có nghĩa là em đồng ý với anh.",
+            "ru": "Просто чтобы ты знал: это не значит, что я с тобой согласна.",
+            "uk": "Просто щоб ти знав: це не означає, що я з тобою згодна."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "innocent smile",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To by mě ani nenapadlo.",
+          "kind": "speech",
+          "i18n": {
+            "en": "It wouldn't even cross my mind.",
+            "de": "Das käme mir nicht mal in den Sinn.",
+            "it": "Non mi sfiorerebbe nemmeno.",
+            "fr": "Ça ne me viendrait même pas à l'idée.",
+            "pl": "Nawet by mi to nie przyszło do głowy.",
+            "pt-BR": "Nem me passaria pela cabeça.",
+            "ja": "そんなこと思いもしないよ。",
+            "ko": "그런 생각은 하지도 않아.",
+            "vi": "Anh còn chẳng nghĩ tới.",
+            "ru": "Мне бы и в голову не пришло.",
+            "uk": "Мені б і на думку не спало."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "frown",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A nemusíš být ironický.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you don't have to be ironic.",
+            "de": "Und du musst nicht ironisch sein.",
+            "it": "E non c'è bisogno di fare l'ironico.",
+            "fr": "Et pas besoin d'être ironique.",
+            "pl": "I nie musisz być ironiczny.",
+            "pt-BR": "E não precisa ser irônico.",
+            "ja": "皮肉っぽくしなくていいから。",
+            "ko": "비꼴 필요는 없잖아.",
+            "vi": "Và anh không cần mỉa mai.",
+            "ru": "И не надо иронизировать.",
+            "uk": "І не треба іронізувати."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nejsem.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm not.",
+            "de": "Bin ich nicht.",
+            "it": "Non lo sono.",
+            "fr": "Je ne le suis pas.",
+            "pl": "Nie jestem.",
+            "pt-BR": "Não estou sendo.",
+            "ja": "してないよ。",
+            "ko": "안 그래.",
+            "vi": "Anh đâu có.",
+            "ru": "Я не иронизирую.",
+            "uk": "Я не іронізую."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "glare",
+        "pointing at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Jsi.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You are.",
+            "de": "Bist du.",
+            "it": "Sì, lo sei.",
+            "fr": "Si.",
+            "pl": "Jesteś.",
+            "pt-BR": "Está, sim.",
+            "ja": "してる。",
+            "ko": "그래.",
+            "vi": "Có đấy.",
+            "ru": "Иронизируешь.",
+            "uk": "Іронізуєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "gentle smile",
+        "shrugging"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "わかった。",
+            "ko": "알았어.",
+            "vi": "Được rồi.",
+            "ru": "Ладно.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "exasperated",
+        "leaning forward"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Neříkej dobře, když to tak nemyslíš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Don't say fine when you don't mean it.",
+            "de": "Sag nicht „gut“, wenn du es nicht so meinst.",
+            "it": "Non dire \"va bene\" se non lo pensi.",
+            "fr": "Ne dis pas « d'accord » si tu ne le penses pas.",
+            "pl": "Nie mów „dobrze”, kiedy tak nie myślisz.",
+            "pt-BR": "Não diga \"tá bom\" se não é o que pensa.",
+            "ja": "本気じゃないのに「わかった」って言わないで。",
+            "ko": "진심도 아니면서 알았다고 하지 마.",
+            "vi": "Đừng nói \"được rồi\" khi anh không nghĩ thế.",
+            "ru": "Не говори «ладно», если так не думаешь.",
+            "uk": "Не кажи «добре», якщо так не думаєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "drinking beer",
+        "beer mug",
+        "eyes closed",
+        "calm"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "he slowly lifts the beer mug and takes a long calm sip"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile",
+        "open hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Tak co mám říkat?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Then what should I say?",
+            "de": "Was soll ich dann sagen?",
+            "it": "E allora cosa dovrei dire?",
+            "fr": "Alors, qu'est-ce que je dois dire ?",
+            "pl": "To co mam mówić?",
+            "pt-BR": "Então o que devo dizer?",
+            "ja": "じゃあ、何て言えばいい？",
+            "ko": "그럼 뭐라고 해야 돼?",
+            "vi": "Vậy anh nên nói gì?",
+            "ru": "Тогда что мне говорить?",
+            "uk": "Тоді що мені казати?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "inhaling",
+        "open mouth",
+        "speechless",
+        "frozen"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "quiet smile",
+        "half-closed eyes",
+        "soft"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nic. To je taky možnost.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Nothing. That's an option too.",
+            "de": "Nichts. Das ist auch eine Möglichkeit.",
+            "it": "Niente. Anche questa è un'opzione.",
+            "fr": "Rien. C'est aussi une possibilité.",
+            "pl": "Nic. To też jest jakaś możliwość.",
+            "pt-BR": "Nada. Também é uma opção.",
+            "ja": "何も。それも一つの手だ。",
+            "ko": "아무 말도. 그것도 방법이지.",
+            "vi": "Không gì cả. Đó cũng là một lựa chọn.",
+            "ru": "Ничего. Это тоже вариант.",
+            "uk": "Нічого. Це теж варіант."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

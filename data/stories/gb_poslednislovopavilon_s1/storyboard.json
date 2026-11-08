@@ -1,0 +1,1063 @@
+{
+  "title": "Pivo není rada",
+  "title_i18n": {
+    "en": "A Beer Is Not Advice",
+    "de": "Ein Bier ist kein Rat",
+    "it": "Una birra non è un consiglio",
+    "fr": "Une bière n'est pas un conseil",
+    "pl": "Piwo to nie rada",
+    "pt-BR": "Cerveja não é conselho",
+    "ja": "ビールは助言じゃない",
+    "ko": "맥주는 조언이 아니야",
+    "vi": "Bia không phải lời khuyên",
+    "ru": "Пиво — не совет",
+    "uk": "Пиво — не порада"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "chinese garden pavilion",
+        "restaurant",
+        "rain",
+        "paper lanterns",
+        "flowering trees",
+        "butterflies",
+        "lotus pond",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain falling from the curved roof, paper lanterns swaying, butterflies fluttering, static camera"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "table",
+        "goulash",
+        "bread dumplings",
+        "beer mug",
+        "spaghetti",
+        "wine glass",
+        "empty chairs",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "dron"
+        }
+      ],
+      "visual_tags": [
+        "hovering",
+        "from front",
+        "flying",
+        "glowing eye",
+        "holding a tray"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dron",
+          "text": "Dobrou chuť. Přejete si něco doporučit?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Enjoy your meal. May I recommend something?",
+            "de": "Guten Appetit. Darf ich Ihnen etwas empfehlen?",
+            "it": "Buon appetito. Desiderate un consiglio?",
+            "fr": "Bon appétit. Puis-je vous recommander quelque chose ?",
+            "pl": "Smacznego. Czy mogę coś polecić?",
+            "pt-BR": "Bom apetite. Desejam alguma sugestão?",
+            "ja": "どうぞお召し上がりください。何かおすすめしましょうか？",
+            "ko": "맛있게 드세요. 추천해 드릴까요?",
+            "vi": "Chúc quý khách ngon miệng. Quý khách có muốn tôi gợi ý gì không?",
+            "ru": "Приятного аппетита. Желаете что-нибудь порекомендовать?",
+            "uk": "Смачного. Бажаєте, щоб я щось порекомендував?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "cold expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ne.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No.",
+            "de": "Nein.",
+            "it": "No.",
+            "fr": "Non.",
+            "pl": "Nie.",
+            "pt-BR": "Não.",
+            "ja": "いいえ。",
+            "ko": "아니요.",
+            "vi": "Không.",
+            "ru": "Нет.",
+            "uk": "Ні."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raising hand",
+        "smile",
+        "beer mug"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já bych si dal ještě pivo.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'll have another beer.",
+            "de": "Ich nehme noch ein Bier.",
+            "it": "Io prenderei un'altra birra.",
+            "fr": "Moi, je reprendrais bien une bière.",
+            "pl": "Ja bym wziął jeszcze piwo.",
+            "pt-BR": "Eu vou querer mais uma cerveja.",
+            "ja": "俺はビールをもう一杯。",
+            "ko": "난 맥주 한 잔 더요.",
+            "vi": "Cho tôi thêm một cốc bia.",
+            "ru": "А я бы взял ещё пива.",
+            "uk": "А я б узяв ще пива."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Vidíš?",
+          "kind": "speech",
+          "i18n": {
+            "en": "See?",
+            "de": "Siehst du?",
+            "it": "Visto?",
+            "fr": "Tu vois ?",
+            "pl": "Widzisz?",
+            "pt-BR": "Viu?",
+            "ja": "ほらね？",
+            "ko": "봐?",
+            "vi": "Thấy chưa?",
+            "ru": "Видишь?",
+            "uk": "Бачиш?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "innocent smile",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Co?",
+          "kind": "speech",
+          "i18n": {
+            "en": "What?",
+            "de": "Was?",
+            "it": "Cosa?",
+            "fr": "Quoi ?",
+            "pl": "Co?",
+            "pt-BR": "O quê?",
+            "ja": "何が？",
+            "ko": "뭐가?",
+            "vi": "Gì cơ?",
+            "ru": "Что?",
+            "uk": "Що?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Necháš si radit.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You let them advise you.",
+            "de": "Du lässt dich beraten.",
+            "it": "Ti fai consigliare.",
+            "fr": "Tu te laisses conseiller.",
+            "pl": "Dajesz sobie doradzać.",
+            "pt-BR": "Você se deixa aconselhar.",
+            "ja": "人に決めてもらうんだ。",
+            "ko": "남한테 조언을 받잖아.",
+            "vi": "Anh để người ta khuyên anh.",
+            "ru": "Ты позволяешь себе советовать.",
+            "uk": "Ти дозволяєш собі радити."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile",
+        "raised index finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já si nechám doporučit pivo. To není rada. To je služba.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I let them recommend a beer. That's not advice. That's service.",
+            "de": "Ich lasse mir ein Bier empfehlen. Das ist kein Rat. Das ist Service.",
+            "it": "Mi faccio consigliare una birra. Non è un consiglio. È un servizio.",
+            "fr": "Je me laisse recommander une bière. Ce n'est pas un conseil. C'est un service.",
+            "pl": "Daję sobie polecić piwo. To nie rada. To usługa.",
+            "pt-BR": "Eu deixo que me sugiram uma cerveja. Isso não é conselho. É serviço.",
+            "ja": "ビールをすすめてもらうだけ。それは助言じゃない。サービスだ。",
+            "ko": "맥주를 추천받는 거야. 그건 조언이 아니야. 서비스지.",
+            "vi": "Anh để người ta gợi ý bia thôi. Đó không phải lời khuyên. Đó là dịch vụ.",
+            "ru": "Я позволяю посоветовать мне пиво. Это не совет. Это сервис.",
+            "uk": "Я дозволяю порекомендувати мені пиво. Це не порада. Це сервіс."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "sceptical",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To je rozdíl?",
+          "kind": "speech",
+          "i18n": {
+            "en": "There's a difference?",
+            "de": "Ist das ein Unterschied?",
+            "it": "C'è differenza?",
+            "fr": "Il y a une différence ?",
+            "pl": "To jest różnica?",
+            "pt-BR": "Tem diferença?",
+            "ja": "違うの？",
+            "ko": "그게 달라?",
+            "vi": "Thế khác nhau à?",
+            "ru": "Есть разница?",
+            "uk": "Є різниця?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "serious smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Zásadní.",
+          "kind": "speech",
+          "i18n": {
+            "en": "A fundamental one.",
+            "de": "Ein grundlegender.",
+            "it": "Sostanziale.",
+            "fr": "Fondamentale.",
+            "pl": "Zasadnicza.",
+            "pt-BR": "Fundamental.",
+            "ja": "根本的にね。",
+            "ko": "근본적으로.",
+            "vi": "Khác hẳn.",
+            "ru": "Принципиальная.",
+            "uk": "Принципова."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "pointing at self"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To je moje věta.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's my line.",
+            "de": "Das ist mein Satz.",
+            "it": "Questa è una mia frase.",
+            "fr": "C'est ma réplique.",
+            "pl": "To moje zdanie.",
+            "pt-BR": "Essa frase é minha.",
+            "ja": "それ、私のセリフ。",
+            "ko": "그거 내 대사야.",
+            "vi": "Câu đó là của em.",
+            "ru": "Это моя фраза.",
+            "uk": "Це моя фраза."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "grin",
+        "open palm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Půjčil jsem si ji. Vrátím ji.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I borrowed it. I'll give it back.",
+            "de": "Ich hab ihn mir geliehen. Ich geb ihn zurück.",
+            "it": "L'ho presa in prestito. Te la restituisco.",
+            "fr": "Je te l'ai empruntée. Je te la rends.",
+            "pl": "Pożyczyłem je. Oddam.",
+            "pt-BR": "Peguei emprestada. Vou devolver.",
+            "ja": "借りただけ。返すよ。",
+            "ko": "빌린 거야. 돌려줄게.",
+            "vi": "Anh mượn thôi. Sẽ trả lại.",
+            "ru": "Я её одолжил. Верну.",
+            "uk": "Я її позичив. Поверну."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smirk",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Doufám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I hope so.",
+            "de": "Das hoffe ich.",
+            "it": "Lo spero.",
+            "fr": "J'espère bien.",
+            "pl": "Mam nadzieję.",
+            "pt-BR": "Espero que sim.",
+            "ja": "そう願うわ。",
+            "ko": "그러길 바라.",
+            "vi": "Mong là vậy.",
+            "ru": "Надеюсь.",
+            "uk": "Сподіваюся."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "drinking beer",
+        "beer mug"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "holding a fork",
+        "spaghetti on fork",
+        "staring at fork",
+        "not eating"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking at another",
+        "unimpressed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ty si fakt dáš guláš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You're really having goulash.",
+            "de": "Du nimmst echt Gulasch.",
+            "it": "Prendi davvero il gulasch.",
+            "fr": "Tu prends vraiment le goulash.",
+            "pl": "Ty serio bierzesz gulasz.",
+            "pt-BR": "Você vai mesmo de gulache.",
+            "ja": "本当にグヤーシュにするんだ。",
+            "ko": "정말 굴라시를 먹네.",
+            "vi": "Anh gọi goulash thật à.",
+            "ru": "Ты правда берёшь гуляш.",
+            "uk": "Ти справді береш гуляш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eating",
+        "goulash",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Yes.",
+            "de": "Ja.",
+            "it": "Sì.",
+            "fr": "Oui.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ja": "うん。",
+            "ko": "응.",
+            "vi": "Ừ.",
+            "ru": "Да.",
+            "uk": "Так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gesturing",
+        "looking at menu",
+        "sceptical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "V restauraci, kde mají osmnáct druhů fermentovaných řas.",
+          "kind": "speech",
+          "i18n": {
+            "en": "In a restaurant with eighteen kinds of fermented algae.",
+            "de": "In einem Restaurant mit achtzehn Sorten fermentierter Algen.",
+            "it": "In un ristorante con diciotto tipi di alghe fermentate.",
+            "fr": "Dans un restaurant qui a dix-huit sortes d'algues fermentées.",
+            "pl": "W restauracji, gdzie mają osiemnaście rodzajów fermentowanych alg.",
+            "pt-BR": "Num restaurante com dezoito tipos de algas fermentadas.",
+            "ja": "発酵藻が十八種類もある店で。",
+            "ko": "발효 해조류가 열여덟 가지나 있는 식당에서.",
+            "vi": "Ở một nhà hàng có mười tám loại tảo lên men.",
+            "ru": "В ресторане, где восемнадцать видов ферментированных водорослей.",
+            "uk": "У ресторані, де вісімнадцять видів ферментованих водоростей."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "thinking",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Mají i guláš. To je pokrok.",
+          "kind": "speech",
+          "i18n": {
+            "en": "They have goulash too. That's progress.",
+            "de": "Sie haben auch Gulasch. Das ist Fortschritt.",
+            "it": "Hanno anche il gulasch. Questo è progresso.",
+            "fr": "Ils ont aussi du goulash. C'est le progrès.",
+            "pl": "Mają też gulasz. To jest postęp.",
+            "pt-BR": "Eles têm gulache também. Isso é progresso.",
+            "ja": "グヤーシュもある。それが進歩だよ。",
+            "ko": "굴라시도 있어. 그게 진보지.",
+            "vi": "Họ có cả goulash. Thế là tiến bộ.",
+            "ru": "У них есть и гуляш. Это прогресс.",
+            "uk": "У них є й гуляш. Це прогрес."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "crossed arms",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To je kompromis.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's a compromise.",
+            "de": "Das ist ein Kompromiss.",
+            "it": "È un compromesso.",
+            "fr": "C'est un compromis.",
+            "pl": "To kompromis.",
+            "pt-BR": "Isso é um meio-termo.",
+            "ja": "それは妥協。",
+            "ko": "그건 타협이야.",
+            "vi": "Đó là thỏa hiệp.",
+            "ru": "Это компромисс.",
+            "uk": "Це компроміс."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A kompromis je pokrok.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And a compromise is progress.",
+            "de": "Und ein Kompromiss ist Fortschritt.",
+            "it": "E il compromesso è progresso.",
+            "fr": "Et le compromis, c'est le progrès.",
+            "pl": "A kompromis to postęp.",
+            "pt-BR": "E meio-termo é progresso.",
+            "ja": "で、妥協は進歩だ。",
+            "ko": "그리고 타협은 진보야.",
+            "vi": "Mà thỏa hiệp là tiến bộ.",
+            "ru": "А компромисс — это прогресс.",
+            "uk": "А компроміс — це прогрес."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "looking up",
+        "thinking",
+        "sharp smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ne. Kompromis je chyba, na které se dva lidi dohodnou.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No. A compromise is a mistake two people agree on.",
+            "de": "Nein. Ein Kompromiss ist ein Fehler, auf den sich zwei einigen.",
+            "it": "No. Il compromesso è un errore su cui due persone si mettono d'accordo.",
+            "fr": "Non. Un compromis, c'est une erreur sur laquelle deux personnes tombent d'accord.",
+            "pl": "Nie. Kompromis to błąd, na który zgadzają się dwie osoby.",
+            "pt-BR": "Não. Meio-termo é um erro com que duas pessoas concordam.",
+            "ja": "違う。妥協っていうのは、二人で合意した間違いのこと。",
+            "ko": "아니. 타협은 두 사람이 합의한 실수야.",
+            "vi": "Không. Thỏa hiệp là một sai lầm mà hai người cùng đồng ý.",
+            "ru": "Нет. Компромисс — это ошибка, о которой договорились двое.",
+            "uk": "Ні. Компроміс — це помилка, про яку домовилися двоє."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "smile",
+        "drinking beer",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "いいよ。",
+            "ko": "그래.",
+            "vi": "Được thôi.",
+            "ru": "Хорошо.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "pointing with fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "„Dobře“ není odpověď.",
+          "kind": "speech",
+          "i18n": {
+            "en": "“Fine” isn't an answer.",
+            "de": "„Gut“ ist keine Antwort.",
+            "it": "«Va bene» non è una risposta.",
+            "fr": "« D'accord », ce n'est pas une réponse.",
+            "pl": "„Dobrze” to nie odpowiedź.",
+            "pt-BR": "“Tá bom” não é resposta.",
+            "ja": "「いいよ」は答えじゃない。",
+            "ko": "\"그래\"는 대답이 아니야.",
+            "vi": "“Được thôi” không phải câu trả lời.",
+            "ru": "«Хорошо» — это не ответ.",
+            "uk": "«Добре» — це не відповідь."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gentle smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Je to odpověď, která tě nevyprovokuje.",
+          "kind": "speech",
+          "i18n": {
+            "en": "It's an answer that won't provoke you.",
+            "de": "Es ist eine Antwort, die dich nicht provoziert.",
+            "it": "È una risposta che non ti provoca.",
+            "fr": "C'est une réponse qui ne te provoque pas.",
+            "pl": "To odpowiedź, która cię nie sprowokuje.",
+            "pt-BR": "É uma resposta que não te provoca.",
+            "ja": "君を挑発しない答えだよ。",
+            "ko": "널 자극하지 않는 대답이지.",
+            "vi": "Đó là câu trả lời không khiêu khích em.",
+            "ru": "Это ответ, который тебя не провоцирует.",
+            "uk": "Це відповідь, яка тебе не провокує."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "cold smile",
+        "chin up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Mě neprovokuješ.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You don't provoke me.",
+            "de": "Du provozierst mich nicht.",
+            "it": "Tu non mi provochi.",
+            "fr": "Tu ne me provoques pas.",
+            "pl": "Nie prowokujesz mnie.",
+            "pt-BR": "Você não me provoca.",
+            "ja": "あなたに挑発なんかされない。",
+            "ko": "오빠는 날 자극 못 해.",
+            "vi": "Anh không khiêu khích được em đâu.",
+            "ru": "Ты меня не провоцируешь.",
+            "uk": "Ти мене не провокуєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eyes half closed",
+        "content smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Weiß ich.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "vi": "Biết rồi.",
+            "ru": "Знаю.",
+            "uk": "Знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gritted teeth",
+        "forced smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "To je právě to, co mě provokuje.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's exactly what provokes me.",
+            "de": "Genau das provoziert mich.",
+            "it": "È proprio questo che mi provoca.",
+            "fr": "C'est justement ça qui me provoque.",
+            "pl": "Właśnie to mnie prowokuje.",
+            "pt-BR": "É exatamente isso que me provoca.",
+            "ja": "それがまさに挑発なのよ。",
+            "ko": "바로 그게 날 자극해.",
+            "vi": "Chính điều đó mới khiêu khích em.",
+            "ru": "Вот это меня и провоцирует.",
+            "uk": "Саме це мене й провокує."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

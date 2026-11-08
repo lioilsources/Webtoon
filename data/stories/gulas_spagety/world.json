@@ -1,0 +1,125 @@
+{
+  "id": "w_gulas_spagety",
+  "title": "Guláš a špagety",
+  "title_i18n": {
+    "de": "Gulasch und Spaghetti",
+    "en": "Goulash and Spaghetti",
+    "fr": "Goulash et spaghetti",
+    "it": "Gulasch e spaghetti",
+    "ja": "グヤーシュとスパゲッティ",
+    "ko": "굴라시와 스파게티",
+    "pl": "Gulasz i spaghetti",
+    "pt-BR": "Gulache e espaguete",
+    "ru": "Гуляш и спагетти",
+    "uk": "Гуляш і спагеті",
+    "vi": "Goulash và spaghetti"
+  },
+  "synopsis": "Restaurace na palubě rakety na cestě na Měsíc. Olin u guláše a piva, Jana u špaget a vína. Oba se usmívají, ani jeden se nechce hádat. A přesto…",
+  "synopsis_i18n": {
+    "de": "Ein Restaurant an Bord einer Rakete auf dem Weg zum Mond. Olin bei Gulasch und Bier, Jana bei Spaghetti und Wein. Beide lächeln, keiner will streiten. Und trotzdem…",
+    "en": "A restaurant aboard a rocket on its way to the Moon. Olin over goulash and beer, Jana over spaghetti and wine. Both are smiling, neither wants to argue. And yet…",
+    "fr": "Un restaurant à bord d'une fusée en route vers la Lune. Olin devant un goulash et une bière, Jana devant des spaghetti et du vin. Ils sourient tous les deux, aucun n'a envie de se disputer. Et pourtant…",
+    "it": "Un ristorante a bordo di un razzo diretto sulla Luna. Olin davanti a gulasch e birra, Jana davanti a spaghetti e vino. Sorridono entrambi, nessuno dei due vuole litigare. Eppure…",
+    "ja": "月へ向かうロケットの中のレストラン。グヤーシュとビールのオリン、スパゲッティとワインのヤナ。二人とも笑顔で、どちらも言い争う気はない。それなのに…",
+    "ko": "달로 향하는 로켓 안의 레스토랑. 굴라시와 맥주 앞의 올린, 스파게티와 와인 앞의 야나. 둘 다 웃고 있고, 아무도 다투고 싶지 않다. 그런데도…",
+    "pl": "Restauracja na pokładzie rakiety lecącej na Księżyc. Olin nad gulaszem i piwem, Jana nad spaghetti i winem. Oboje się uśmiechają, żadne nie chce się kłócić. A jednak…",
+    "pt-BR": "Um restaurante a bordo de um foguete a caminho da Lua. Olin diante de gulache e cerveja, Jana diante de espaguete e vinho. Os dois sorriem, nenhum quer discutir. E mesmo assim…",
+    "ru": "Ресторан на борту ракеты, летящей на Луну. Олин над гуляшом и пивом, Яна над спагетти и вином. Оба улыбаются, никто не хочет спорить. И всё же…",
+    "uk": "Ресторан на борту ракети, що летить на Місяць. Олін над гуляшем і пивом, Яна над спагеті й вином. Обоє усміхаються, ніхто не хоче сперечатися. І все ж…",
+    "vi": "Một nhà hàng trên con tàu tên lửa đang bay lên Mặt Trăng. Olin bên goulash và bia, Jana bên spaghetti và rượu vang. Cả hai đều mỉm cười, chẳng ai muốn cãi nhau. Vậy mà…"
+  },
+  "tone": "drzý, rychlý, ironický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "neon_brat",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba dospělí kolem padesátky, oba nosí brýle; drzý karikaturní styl, sytě neonový, ne manga.",
+      "Ani jeden nevstane, ani jeden neustoupí. Automatický číšník na kolečkách jen syčí a skenuje."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ani jeden neustoupí; Jana má pravdu, že o víkendu se do žádného účtu přihlašovat nechce, a Olin jí to nechá."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_raketa",
+      "l_okno"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_50",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a grinning Czech man about 50 with short greying brown hair, a short beard and round glasses, cheeky and relaxed",
+      "base": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, grin, relaxed posture",
+      "outfits": {
+        "default": "black hoodie with a small rocket patch"
+      },
+      "photo": "a grinning Czech man about 50 with short greying brown hair, a short beard and round glasses, cheeky and relaxed",
+      "tag_prompt": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, grin, relaxed posture, black hoodie with a small rocket patch",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_50",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a sharp Czech woman about 50 with a sleek chin-length dark brown bob and thin rectangular glasses, amused and unimpressed",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, smirk",
+      "outfits": {
+        "default": "fitted black jacket over a silver top"
+      },
+      "photo": "a sharp Czech woman about 50 with a sleek chin-length dark brown bob and thin rectangular glasses, amused and unimpressed",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, smirk, fitted black jacket over a silver top",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
+      "base": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
+      "tag_prompt": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents, ",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_raketa",
+      "name": "Restaurace v raketě",
+      "description": "Restaurace na palubě rakety na cestě na Měsíc: matné sklo, chrom, tenké neonové trubice barvy staré mědi, za oknem vesmír a Měsíc.",
+      "tag_prompt": "indoors, restaurant inside a spaceship, rocket interior, frosted glass walls, chrome, thin neon tubes on the ceiling, copper neon light, magenta and cyan neon, porthole window, outer space, the moon in the window, stars",
+      "mood": ""
+    },
+    {
+      "id": "l_okno",
+      "name": "Okno rakety",
+      "description": "Okno u stolu: Měsíc roste, Země se vzdaluje, neony se odrážejí ve skle.",
+      "tag_prompt": "porthole window of a spaceship, the moon growing closer, earth in the distance, stars, neon reflections on the glass, no humans",
+      "mood": ""
+    }
+  ]
+}

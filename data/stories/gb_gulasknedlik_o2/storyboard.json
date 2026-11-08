@@ -1,0 +1,398 @@
+{
+  "title": "Objednávka",
+  "title_i18n": {
+    "de": "Die Bestellung",
+    "en": "The Order",
+    "fr": "La commande",
+    "it": "L'ordinazione",
+    "ja": "注文",
+    "ko": "주문",
+    "pl": "Zamówienie",
+    "pt-BR": "O pedido",
+    "ru": "Заказ",
+    "uk": "Замовлення",
+    "vi": "Gọi món"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "gilded mirrors",
+        "ballerina posters",
+        "holographic menu",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "a holographic menu flickering over the tables, chandelier glinting, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "gliding",
+        "holding a glowing chalice",
+        "grated cheese",
+        "extra arm joint"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot glides in, its extra shoulder joint swinging, the cheese chalice glowing"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "waving hand",
+        "dismissive",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Ne. Parmazán mi nastrouhejte ručně. Ne počítačem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Reiben Sie mir den Parmesan von Hand. Nicht per Computer.",
+            "en": "No. Grate my parmesan by hand. Not by computer.",
+            "fr": "Non. Râpez-moi le parmesan à la main. Pas par ordinateur.",
+            "it": "No. Il parmigiano me lo grattugi a mano. Non al computer.",
+            "ja": "いいえ。パルメザンは手で削って。コンピューターじゃなくて。",
+            "ko": "아니요. 파르메산은 손으로 갈아 주세요. 컴퓨터 말고요.",
+            "pl": "Nie. Parmezan proszę zetrzeć ręcznie. Nie komputerem.",
+            "pt-BR": "Não. Rale o parmesão à mão para mim. Não por computador.",
+            "ru": "Нет. Пармезан мне натрите вручную. Не компьютером.",
+            "uk": "Ні. Пармезан мені натріть вручну. Не комп'ютером.",
+            "vi": "Không. Bào phô mai parmesan cho tôi bằng tay. Đừng bằng máy tính."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "friendly smile",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Dejte jí počítačem. Ona si stejně vždycky nechá poslední hangár.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Machen Sie's per Computer. Sie behält sowieso immer den letzten Hangar.",
+            "en": "Do it by computer. She'll keep the last hangar anyway, she always does.",
+            "fr": "Faites-le par ordinateur. De toute façon, elle garde toujours le dernier hangar.",
+            "it": "Lo faccia al computer. Tanto lei si tiene sempre l'ultimo hangar.",
+            "ja": "コンピューターでどうぞ。どうせ彼女はいつも最後の格納庫を取るから。",
+            "ko": "컴퓨터로 해 주세요. 어차피 얘는 늘 마지막 격납고를 챙기니까.",
+            "pl": "Proszę jej komputerem. Ona i tak zawsze zostawi sobie ostatni hangar.",
+            "pt-BR": "Faz por computador. Ela sempre fica com o último hangar mesmo.",
+            "ru": "Дайте ей компьютером. Она всё равно всегда оставит за собой последний ангар.",
+            "uk": "Дайте їй комп'ютером. Вона все одно завжди залишить за собою останній ангар.",
+            "vi": "Cứ làm bằng máy tính. Dù sao cô ấy lúc nào cũng giữ cái nhà chứa máy bay cuối cùng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "deadpan",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Slovo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wort.",
+            "en": "Word.",
+            "fr": "Mot.",
+            "it": "Parola.",
+            "ja": "言葉。",
+            "ko": "말.",
+            "pl": "Słowo.",
+            "pt-BR": "Palavra.",
+            "ru": "Слово.",
+            "uk": "Слово.",
+            "vi": "Lời."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "eyes half closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weiß ich.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Знаю.",
+            "uk": "Знаю.",
+            "vi": "Anh biết."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "pointing",
+        "exasperated"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Poslední slovo. A neříkej „vím“, když se usmíváš, protože to pak nezní jako víš, ale jako „a co já s tím“.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das letzte Wort. Und sag nicht „weiß ich“, wenn du dabei lächelst, denn dann klingt es nicht nach Wissen, sondern nach „na und“.",
+            "en": "The last word. And don't say “I know” while you're smiling, because then it doesn't sound like you know, it sounds like “so what”.",
+            "fr": "Le dernier mot. Et ne dis pas « je sais » en souriant, parce qu'alors ça ne sonne pas comme tu sais, mais comme « et alors ».",
+            "it": "L'ultima parola. E non dire «lo so» mentre sorridi, perché allora non suona come lo sai, ma come «e allora?».",
+            "ja": "最後の言葉よ。それと、笑いながら「知ってる」って言わないで。知ってるじゃなくて「だから何」に聞こえるから。",
+            "ko": "마지막 말이라고. 그리고 웃으면서 \"알아\"라고 하지 마. 그럼 안다는 게 아니라 \"그래서 뭐\"로 들리니까.",
+            "pl": "Ostatnie słowo. I nie mów „wiem”, kiedy się uśmiechasz, bo wtedy to nie brzmi jak wiesz, tylko jak „i co z tego”.",
+            "pt-BR": "A última palavra. E não diga “eu sei” sorrindo, porque aí não soa como se você soubesse, soa como “e daí”.",
+            "ru": "Последнее слово. И не говори «знаю», когда улыбаешься, потому что тогда это звучит не как знаешь, а как «ну и что».",
+            "uk": "Останнє слово. І не кажи «знаю», коли всміхаєшся, бо тоді це звучить не як знаєш, а як «ну то й що».",
+            "vi": "Lời cuối cùng. Và đừng nói “anh biết” trong khi đang cười, vì như thế nghe không giống là biết, mà giống “thì sao nào”."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "shrugging"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "A co já s tím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Na und.",
+            "en": "So what.",
+            "fr": "Et alors.",
+            "it": "E allora.",
+            "ja": "だから何。",
+            "ko": "그래서 뭐.",
+            "pl": "I co z tego.",
+            "pt-BR": "E daí.",
+            "ru": "Ну и что.",
+            "uk": "Ну то й що.",
+            "vi": "Thì sao nào."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "shouting",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Ručně!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Von Hand!",
+            "en": "By hand!",
+            "fr": "À la main !",
+            "it": "A mano!",
+            "ja": "手で！",
+            "ko": "손으로요!",
+            "pl": "Ręcznie!",
+            "pt-BR": "À mão!",
+            "ru": "Вручную!",
+            "uk": "Вручну!",
+            "vi": "Bằng tay!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "frozen pose",
+        "mid-motion",
+        "error",
+        "glitch"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot freezes mid-motion, eyes flickering between two states"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "gilded horn",
+        "relieved glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "Vážení hosté. Parmazán bude podán dvakrát, jednou ručně, jednou digitálně. Restaurace nenese odpovědnost za vzniklé víry v správnost.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verehrte Gäste. Der Parmesan wird zweimal serviert, einmal von Hand, einmal digital. Das Restaurant haftet nicht für daraus entstehende Überzeugungen, recht zu haben.",
+            "en": "Dear guests. The parmesan will be served twice, once by hand, once digitally. The restaurant accepts no liability for any resulting beliefs in being right.",
+            "fr": "Chers clients. Le parmesan sera servi deux fois, une fois à la main, une fois numériquement. Le restaurant décline toute responsabilité quant aux certitudes d'avoir raison qui pourraient en résulter.",
+            "it": "Gentili ospiti. Il parmigiano sarà servito due volte, una a mano, una in digitale. Il ristorante non risponde di eventuali convinzioni di avere ragione.",
+            "ja": "お客様。パルメザンは二回、手作業で一回、デジタルで一回お出しします。それにより生じた「自分が正しい」という信念について、当店は責任を負いかねます。",
+            "ko": "손님 여러분. 파르메산은 두 번, 한 번은 손으로, 한 번은 디지털로 제공됩니다. 이로 인해 생기는 '내가 옳다'는 믿음에 대해 당 레스토랑은 책임지지 않습니다.",
+            "pl": "Szanowni goście. Parmezan zostanie podany dwa razy, raz ręcznie, raz cyfrowo. Restauracja nie ponosi odpowiedzialności za powstałe w ten sposób przekonania o własnej racji.",
+            "pt-BR": "Prezados clientes. O parmesão será servido duas vezes, uma à mão, uma digitalmente. O restaurante não se responsabiliza por eventuais crenças de estar certo.",
+            "ru": "Уважаемые гости. Пармезан будет подан дважды: один раз вручную, один раз цифровым способом. Ресторан не несёт ответственности за возникшую уверенность в своей правоте.",
+            "uk": "Шановні гості. Пармезан буде подано двічі: раз вручну, раз цифровим способом. Ресторан не несе відповідальності за впевненість у власній правоті, що з цього виникне.",
+            "vi": "Kính thưa quý khách. Phô mai parmesan sẽ được phục vụ hai lần, một lần bằng tay, một lần kỹ thuật số. Nhà hàng không chịu trách nhiệm về niềm tin mình đúng nảy sinh từ đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "glowing eyes",
+        "both eyes lit",
+        "gliding away"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

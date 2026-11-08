@@ -1,0 +1,1012 @@
+{
+  "title": "Klid jako útok",
+  "title_i18n": {
+    "en": "Calm as an Attack",
+    "de": "Ruhe als Angriff",
+    "it": "La calma come attacco",
+    "fr": "Le calme comme attaque",
+    "pl": "Spokój jako atak",
+    "pt-BR": "Calma como ataque",
+    "ja": "攻撃としての落ち着き",
+    "ko": "공격으로서의 평온",
+    "vi": "Bình thản như một đòn tấn công",
+    "ru": "Спокойствие как нападение",
+    "uk": "Спокій як напад"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_pavilon",
+      "characters": [],
+      "visual_tags": [
+        "paper lanterns",
+        "rain",
+        "lotus pond",
+        "chinese pavilion roof",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "twitching eyebrow",
+        "forced smile",
+        "clenched fists"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "her eyebrow twitches, the forced smile trembles, then a short exasperated exhale"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm",
+        "forced smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Nechci se hádat.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I don't want to argue.",
+            "de": "Ich will nicht streiten.",
+            "it": "Non voglio litigare.",
+            "fr": "Je ne veux pas me disputer.",
+            "pl": "Nie chcę się kłócić.",
+            "pt-BR": "Não quero discutir.",
+            "ja": "喧嘩したくない。",
+            "ko": "싸우고 싶지 않아.",
+            "vi": "Em không muốn cãi nhau.",
+            "ru": "Я не хочу ссориться.",
+            "uk": "Я не хочу сваритися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "eyes half closed",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Ich weiß.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "わかってる。",
+            "ko": "알아.",
+            "vi": "Biết mà.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing",
+        "frowning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ale ty mě nutíš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But you're making me.",
+            "de": "Aber du zwingst mich.",
+            "it": "Ma tu mi costringi.",
+            "fr": "Mais tu m'y obliges.",
+            "pl": "Ale ty mnie zmuszasz.",
+            "pt-BR": "Mas você me obriga.",
+            "ja": "でも、あなたがそうさせてる。",
+            "ko": "근데 오빠가 그렇게 만들어.",
+            "vi": "Nhưng anh ép em.",
+            "ru": "Но ты меня вынуждаешь.",
+            "uk": "Але ти мене змушуєш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "open palms",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já nic nedělám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm not doing anything.",
+            "de": "Ich mache gar nichts.",
+            "it": "Non sto facendo niente.",
+            "fr": "Je ne fais rien.",
+            "pl": "Nic nie robię.",
+            "pt-BR": "Não estou fazendo nada.",
+            "ja": "何もしてないよ。",
+            "ko": "아무것도 안 하는데.",
+            "vi": "Anh có làm gì đâu.",
+            "ru": "Я ничего не делаю.",
+            "uk": "Я нічого не роблю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Děláš. Tím svým klidem.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You are. With that calm of yours.",
+            "de": "Doch. Mit deiner Ruhe.",
+            "it": "Sì che lo fai. Con quella tua calma.",
+            "fr": "Si. Avec ton calme.",
+            "pl": "Robisz. Tym swoim spokojem.",
+            "pt-BR": "Está, sim. Com essa sua calma.",
+            "ja": "してる。その落ち着きで。",
+            "ko": "하고 있어. 그 평온함으로.",
+            "vi": "Có đấy. Bằng cái vẻ bình thản đó.",
+            "ru": "Делаешь. Своим спокойствием.",
+            "uk": "Робиш. Своїм спокоєм."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "thinking",
+        "amused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "To je nový. Klid jako útok.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's new. Calm as an attack.",
+            "de": "Das ist neu. Ruhe als Angriff.",
+            "it": "Questa è nuova. La calma come attacco.",
+            "fr": "Ça, c'est nouveau. Le calme comme attaque.",
+            "pl": "To coś nowego. Spokój jako atak.",
+            "pt-BR": "Essa é nova. Calma como ataque.",
+            "ja": "それは新しいな。攻撃としての落ち着き。",
+            "ko": "그건 처음 듣네. 공격으로서의 평온이라.",
+            "vi": "Cái này mới đấy. Bình thản như một đòn tấn công.",
+            "ru": "Это что-то новое. Спокойствие как нападение.",
+            "uk": "Це щось нове. Спокій як напад."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "nodding",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Přesně.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Exactly.",
+            "de": "Genau.",
+            "it": "Esatto.",
+            "fr": "Exactement.",
+            "pl": "Właśnie.",
+            "pt-BR": "Exato.",
+            "ja": "その通り。",
+            "ko": "바로 그거야.",
+            "vi": "Chính xác.",
+            "ru": "Именно.",
+            "uk": "Саме так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "いいよ。",
+            "ko": "그래.",
+            "vi": "Được thôi.",
+            "ru": "Хорошо.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gritted teeth",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Přestaň říkat „dobře“.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Stop saying “fine”.",
+            "de": "Hör auf, „gut“ zu sagen.",
+            "it": "Smettila di dire «va bene».",
+            "fr": "Arrête de dire « d'accord ».",
+            "pl": "Przestań mówić „dobrze”.",
+            "pt-BR": "Para de dizer “tá bom”.",
+            "ja": "「いいよ」って言うのやめて。",
+            "ko": "\"그래\" 좀 그만해.",
+            "vi": "Đừng nói “được thôi” nữa.",
+            "ru": "Перестань говорить «хорошо».",
+            "uk": "Перестань казати «добре»."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "wider calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "いいよ。",
+            "ko": "그래.",
+            "vi": "Được thôi.",
+            "ru": "Хорошо.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "deep breath",
+        "eyes closed",
+        "hand on chest"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "drinking beer",
+        "beer mug",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "dron"
+        }
+      ],
+      "visual_tags": [
+        "hovering",
+        "bill on tray",
+        "glowing eye"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "dron"
+        }
+      ],
+      "visual_tags": [
+        "hovering",
+        "from front",
+        "flying",
+        "glowing eye",
+        "bill on tray"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dron",
+          "text": "Platba?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Payment?",
+            "de": "Bezahlung?",
+            "it": "Pagamento?",
+            "fr": "Paiement ?",
+            "pl": "Płatność?",
+            "pt-BR": "Pagamento?",
+            "ja": "お支払いは？",
+            "ko": "계산은요?",
+            "vi": "Thanh toán ạ?",
+            "ru": "Оплата?",
+            "uk": "Оплата?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "firm",
+        "raised hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Rozdělíme.",
+          "kind": "speech",
+          "i18n": {
+            "en": "We'll split it.",
+            "de": "Wir teilen.",
+            "it": "Facciamo a metà.",
+            "fr": "On partage.",
+            "pl": "Dzielimy.",
+            "pt-BR": "Vamos dividir.",
+            "ja": "割り勘で。",
+            "ko": "나눠서 낼게요.",
+            "vi": "Chia đôi.",
+            "ru": "Пополам.",
+            "uk": "Навпіл."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "reaching for wallet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Já zaplatím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'll pay.",
+            "de": "Ich zahle.",
+            "it": "Pago io.",
+            "fr": "Je paie.",
+            "pl": "Ja zapłacę.",
+            "pt-BR": "Eu pago.",
+            "ja": "俺が払うよ。",
+            "ko": "내가 낼게.",
+            "vi": "Anh trả.",
+            "ru": "Я заплачу.",
+            "uk": "Я заплачу."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ne. Rozdělíme.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No. We'll split it.",
+            "de": "Nein. Wir teilen.",
+            "it": "No. Facciamo a metà.",
+            "fr": "Non. On partage.",
+            "pl": "Nie. Dzielimy.",
+            "pt-BR": "Não. Vamos dividir.",
+            "ja": "だめ。割り勘。",
+            "ko": "아니. 나눠서 내.",
+            "vi": "Không. Chia đôi.",
+            "ru": "Нет. Пополам.",
+            "uk": "Ні. Навпіл."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Fine.",
+            "de": "Gut.",
+            "it": "Va bene.",
+            "fr": "D'accord.",
+            "pl": "Dobrze.",
+            "pt-BR": "Tá bom.",
+            "ja": "いいよ。",
+            "ko": "그래.",
+            "vi": "Được thôi.",
+            "ru": "Хорошо.",
+            "uk": "Добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing",
+        "triumphant",
+        "exasperated"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Vidíš? Zase jsi to nechal na mně.",
+          "kind": "speech",
+          "i18n": {
+            "en": "See? You left it to me again.",
+            "de": "Siehst du? Wieder hast du es mir überlassen.",
+            "it": "Visto? Di nuovo l'hai lasciato a me.",
+            "fr": "Tu vois ? Tu m'as encore laissé décider.",
+            "pl": "Widzisz? Znowu zostawiłeś to mnie.",
+            "pt-BR": "Viu? De novo deixou pra mim.",
+            "ja": "ほらね？また私に任せた。",
+            "ko": "봐? 또 나한테 넘겼잖아.",
+            "vi": "Thấy chưa? Anh lại để em quyết.",
+            "ru": "Видишь? Опять оставил это мне.",
+            "uk": "Бачиш? Знову залишив це мені."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gentle smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Nechal. A ty jsi to rozhodla.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I did. And you decided.",
+            "de": "Hab ich. Und du hast entschieden.",
+            "it": "Sì. E tu hai deciso.",
+            "fr": "Oui. Et tu as décidé.",
+            "pl": "Zostawiłem. A ty zdecydowałaś.",
+            "pt-BR": "Deixei. E você decidiu.",
+            "ja": "任せた。で、君が決めた。",
+            "ko": "넘겼지. 그리고 네가 정했고.",
+            "vi": "Ừ. Và em đã quyết.",
+            "ru": "Оставил. И ты решила.",
+            "uk": "Залишив. І ти вирішила."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "chin up",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Ano.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Yes.",
+            "de": "Ja.",
+            "it": "Sì.",
+            "fr": "Oui.",
+            "pl": "Tak.",
+            "pt-BR": "Sim.",
+            "ja": "うん。",
+            "ko": "응.",
+            "vi": "Ừ.",
+            "ru": "Да.",
+            "uk": "Так."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "warm smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "A máš pravdu.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you're right.",
+            "de": "Und du hast recht.",
+            "it": "E hai ragione.",
+            "fr": "Et tu as raison.",
+            "pl": "I masz rację.",
+            "pt-BR": "E você tem razão.",
+            "ja": "で、君が正しい。",
+            "ko": "그리고 네가 맞아.",
+            "vi": "Và em đúng.",
+            "ru": "И ты права.",
+            "uk": "І ти маєш рацію."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smug smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I know.",
+            "de": "Weiß ich.",
+            "it": "Lo so.",
+            "fr": "Je sais.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "vi": "Biết rồi.",
+            "ru": "Знаю.",
+            "uk": "Знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "content smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "To je dobře.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's good.",
+            "de": "Das ist gut so.",
+            "it": "È un bene.",
+            "fr": "C'est bien.",
+            "pl": "To dobrze.",
+            "pt-BR": "Isso é bom.",
+            "ja": "それはよかった。",
+            "ko": "그거 잘됐네.",
+            "vi": "Thế là tốt.",
+            "ru": "Это хорошо.",
+            "uk": "Це добре."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "suspicious",
+        "raised eyebrow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Proč?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Why?",
+            "de": "Warum?",
+            "it": "Perché?",
+            "fr": "Pourquoi ?",
+            "pl": "Dlaczego?",
+            "pt-BR": "Por quê?",
+            "ja": "なんで？",
+            "ko": "왜?",
+            "vi": "Sao?",
+            "ru": "Почему?",
+            "uk": "Чому?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "olin_48"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "hand on own chin",
+        "smile",
+        "eyes sparkling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_48",
+          "text": "Protože pak máš poslední slovo.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Because then you have the last word.",
+            "de": "Weil du dann das letzte Wort hast.",
+            "it": "Perché così hai l'ultima parola.",
+            "fr": "Parce qu'alors tu as le dernier mot.",
+            "pl": "Bo wtedy masz ostatnie słowo.",
+            "pt-BR": "Porque aí você fica com a última palavra.",
+            "ja": "そうすれば最後のひと言は君のものだから。",
+            "ko": "그러면 마지막 한마디는 네 거니까.",
+            "vi": "Vì khi đó em có lời cuối cùng.",
+            "ru": "Потому что тогда последнее слово за тобой.",
+            "uk": "Бо тоді останнє слово за тобою."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_pavilon",
+      "characters": [
+        {
+          "id": "jana_46"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "triumphant smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_46",
+          "text": "Mám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I do.",
+            "de": "Hab ich.",
+            "it": "Ce l'ho.",
+            "fr": "Je l'ai.",
+            "pl": "Mam.",
+            "pt-BR": "Fico.",
+            "ja": "そうね。",
+            "ko": "그래, 내 거야.",
+            "vi": "Đúng vậy.",
+            "ru": "За мной.",
+            "uk": "За мною."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

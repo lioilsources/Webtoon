@@ -1,0 +1,38 @@
+# comedy: light adult comedy (gamebook poslednislovo, "Poslední slovo"). Like noir and drama, one person per panel,
+# word for word, no couple tags: Olin and Jana are siblings. Unlike noir, the picture is a cartoon on purpose
+# (preset cel_naive: naive cel shading, warm tint), so cartoon/cel words are not negatives; food and drink are the
+# props of the play, so they are not negatives either (drama bans them).
+
+profile:
+  description: light adult comedy, no romance, cartoon look
+  audience: adult
+  free: false
+  styles: {pool: all, default: cel_naive, strip_default: cel_naive}
+  pack: {audience: adult, exported: true, type: drama}
+
+storyboard:
+  fences:
+    fence: banned
+    kids_fence: never
+    motion: [age_banned, banned, motion_actions]
+    allow: never
+  to_m0:
+    tone: lehký, ironický, laskavý
+    bible_rules: ["SFW. Žádná romantika. Olin a Jana nikdy spolu v jednom obraze; robot číšník je v obraze sám nebo s jedním z nich."]
+    couple_tags: []
+    fonts: null
+  adapt: {schema: story.schema.json, system: adapt_system.md, example: santorini, addendum: addendum_drama.md, rewrite: null}
+
+prompts:
+  negative:
+    replace:
+      tags: [child, loli, shota, aged down, teenager, school uniform, nsfw, nude, naked, topless, shirtless, see-through,
+             lingerie, underwear, swimsuit, bikini, cleavage, bare chest, midriff,
+             couple, hetero, romance, kiss, hug, holding hands, blush, two people, 2boys, 2girls, 1boy 1girl,
+             multiple people, crowd, blood, gore, wound, weapon, gun,
+             photo, photorealistic, 3d render, cgi, plastic skin,
+             text, letters, writing, watermark, signature, logo, speech bubble, caption]
+
+render:
+  rating_limits: {sensitive: 0.5}
+  tag_limits: {shirtless: 0.3, nude: 0.1, kiss: 0.2, hug: 0.3, couple: 0.5, blood: 0.3, swimsuit: 0.3}

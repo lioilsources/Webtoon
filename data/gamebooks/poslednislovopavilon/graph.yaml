@@ -1,0 +1,244 @@
+# Gamebook — Poslední slovo (pavilon). Kulový blesk, verze „DeepSeek“: stejná dvojice, jiný text od autora (Olin,
+# 2026-11-08, „POSLEDNÍ SLOVO, divadelní hra pro Toonfork“), text replik je doslova jeho. Název s přívlastkem
+# „(pavilon)“, protože „Poslední slovo“ už nese verze „ChatGPT“ (obdoba „Kulový blesk (tuš)“).
+# Styl podle obecné představy o modelu: jednodušší, rychlý, „8B kvantizace“, přemýšlivý. Preset botticelli_pavilon
+# (Botticelliho tempera, retro, květiny a motýli) má schválně jen 16 kroků; tváře mají místy pózy přemýšlení
+# (ruka u brady, pohled vzhůru), bez jakéhokoli textu navíc. Prostředí autor přesunul do venkovní čínské restaurace
+# v zahradním pavilonu: scénické poznámky v `see` jsou doslova (déšť na skle, neon, reklamy), kreslí se ale pavilon,
+# déšť ze střechy a lampiony místo neonu.
+# Lineární: pět uzlů, žádné volby. Scénické poznámky se kreslí (tagy), nepíšou se do bublin; poznámka, ve které jsou
+# Olin i Jana, je rozdělená na dva obrazy (sourozenci nikdy spolu v obraze). Toonfork poznámka na konci hry je režijní
+# a nekreslí se. Uzly 2–5 začínají úvodním obrazem bez textu (pravidlo: první panel uzlu je establishing bez
+# postav); jeho `see` je v závorce, protože to není poznámka autora. Překlepy v replikách: žádné.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
+# jako obraz. Profil comedy (jídlo a pití v obraze smějí být).
+
+schema: 1
+id: poslednislovopavilon
+title: Poslední slovo (pavilon)
+title_i18n: {de: "Das letzte Wort (Pavillon)", en: "The Last Word (Pavilion)", fr: "Le dernier mot (pavillon)", it: "L'ultima parola (padiglione)", ja: "最後のひと言（東屋）", ko: "마지막 한마디 (정자)", pl: "Ostatnie słowo (pawilon)", pt-BR: "A última palavra (pavilhão)", ru: "Последнее слово (павильон)", uk: "Останнє слово (павільйон)", vi: "Lời cuối cùng (đình)"}
+world: w_posledni_slovo_pavilon
+audience: adult
+language: cs
+style_id: botticelli_pavilon
+profile: comedy
+product_id: gamebook_poslednislovopavilon
+start: s1
+
+premise: >
+  Restaurace „NEON GULÁŠ & PASTA“, tady venkovní, v čínském zahradním pavilonu, a prší. Olin u guláše s knedlíkem
+  a piva, Jana u špaget s parmazánem a bílého vína, servisní dron s doporučeními. Olin se rozhodl, že se hádat
+  nebude. Jana chce mít poslední slovo.
+
+characters: [olin_48, jana_46, dron]
+
+locations:
+  - {id: l_pavilon, name: Pavilon NEON GULÁŠ & PASTA, description: "čínský zahradní pavilon, lampiony, květiny, motýli, déšť"}
+  - {id: l_stul_pavilon, name: Stůl v pavilonu, description: "guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana, Dron: dron}
+  faces:
+    olin: [[calm smile, looking at another], [hand on own chin, thinking, smile], [eyes half closed, content smile]]
+    jana: [[raised eyebrow, looking at another], [hand on own chin, looking up, thinking], [narrowed eyes, sharp gaze]]
+    dron: [[glowing eye, hovering], [tilted, glowing eye], [glowing eye, holding a tray]]
+  speaking:
+    default: [upper body, from front, sitting at a table]
+    dron: [hovering, from front, flying]
+
+nodes:
+  s1:
+    title: Pivo není rada
+    location: l_pavilon
+    cast: {olin: olin_48, jana: jana_46, dron: dron}
+    next: s2
+    script:
+      - {see: "Restaurace „NEON GULÁŠ & PASTA“. Vysoké okno, za ním déšť a pulzující reklamy. Na stěně běží holografické menu: „Dnes: fermentované řasy, bioprintovaný guláš, špagety z marsovské pšenice.“", shot: establishing, tags: [chinese garden pavilion, restaurant, rain, paper lanterns, flowering trees, butterflies, lotus pond], gap: medium, animate: "rain falling from the curved roof, paper lanterns swaying, butterflies fluttering, static camera"}
+      - {see: "U stolu sedí Olin a Jana. Mezi nimi je ticho, které už začalo pracovat.", shot: wide, loc: l_stul_pavilon, tags: [table, goulash, bread dumplings, beer mug, spaghetti, wine glass, empty chairs]}
+      - {say: dron, text: "Dobrou chuť. Přejete si něco doporučit?", tags: [glowing eye, holding a tray]}
+      - {say: jana, text: "Ne.", shot: close-up, tags: [cold expression, looking at another]}
+      - {say: olin, text: "Já bych si dal ještě pivo.", tags: [raising hand, smile, beer mug]}
+      - {say: jana, text: "Vidíš?", tags: [raised eyebrow, pointing]}
+      - {say: olin, text: "Co?", shot: close-up, tags: [innocent smile, tilted head]}
+      - {say: jana, text: "Necháš si radit."}
+      - {say: olin, text: "Já si nechám doporučit pivo. To není rada. To je služba.", tags: [calm smile, raised index finger]}
+      - {say: jana, text: "To je rozdíl?", tags: [sceptical, raised eyebrow]}
+      - {say: olin, text: "Zásadní.", shot: close-up, tags: [serious smile, nodding]}
+      - {say: jana, text: "To je moje věta.", tags: [narrowed eyes, pointing at self]}
+      - {say: olin, text: "Půjčil jsem si ji. Vrátím ji.", tags: [grin, open palm]}
+      - {say: jana, text: "Doufám.", shot: close-up, tags: [smirk, looking away]}
+      - {see: "Olin se usměje. Napije se.", shot: medium, who: olin, tags: [smile, drinking beer, beer mug]}
+      - {see: "Jana si vezme špagety, ale nedá si je do úst. Jen je pozoruje.", shot: medium, who: jana, tags: [holding a fork, spaghetti on fork, staring at fork, not eating]}
+      - {say: jana, text: "Ty si fakt dáš guláš.", tags: [looking at another, unimpressed]}
+      - {say: olin, text: "Ano.", tags: [eating, goulash, smile]}
+      - {say: jana, text: "V restauraci, kde mají osmnáct druhů fermentovaných řas.", tags: [gesturing, looking at menu, sceptical]}
+      - {say: olin, text: "Mají i guláš. To je pokrok.", tags: [hand on own chin, thinking, smile]}
+      - {say: jana, text: "To je kompromis.", tags: [crossed arms, raised eyebrow]}
+      - {say: olin, text: "A kompromis je pokrok."}
+      - {say: jana, text: "Ne. Kompromis je chyba, na které se dva lidi dohodnou.", shot: close-up, tags: [hand on own chin, looking up, thinking, sharp smile]}
+      - {see: "Olin se usměje. Napije se.", shot: medium, who: olin, tags: [smile, drinking beer, eyes closed]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "„Dobře“ není odpověď.", tags: [narrowed eyes, pointing with fork]}
+      - {say: olin, text: "Je to odpověď, která tě nevyprovokuje.", tags: [gentle smile, looking at another]}
+      - {say: jana, text: "Mě neprovokuješ.", tags: [cold smile, chin up]}
+      - {say: olin, text: "Vím.", shot: close-up, tags: [eyes half closed, content smile]}
+      - {say: jana, text: "To je právě to, co mě provokuje.", shot: close-up, tags: [gritted teeth, forced smile]}
+
+  s2:
+    title: Guláš je nostalgie
+    location: l_pavilon
+    cast: {olin: olin_48, jana: jana_46, dron: dron}
+    next: s3
+    script:
+      - {see: "(Úvodní obraz uzlu, bez poznámky autora: pavilon v dešti.)", shot: establishing, tags: [chinese garden pavilion, rain, paper lanterns, butterflies, flowering trees], gap: medium}
+      - {see: "Pauza. Dron bzučí.", shot: medium, who: dron, tags: [hovering, rain, paper lanterns, butterflies], animate: "the drone hovering and humming, rotors spinning, rain falling behind it"}
+      - {see: "Jana ukáže vidličkou na Olinův talíř.", shot: medium, who: jana, tags: [pointing with fork, looking at another, serious]}
+      - {say: jana, text: "Guláš je nostalgie.", shot: close-up, tags: [pointing with fork, confident]}
+      - {say: olin, text: "A špagety jsou co?", tags: [smile, raised eyebrows]}
+      - {say: jana, text: "Volba.", shot: close-up, tags: [chin up, proud]}
+      - {say: olin, text: "Já si taky vybral.", tags: [smile, spreading hands]}
+      - {say: jana, text: "Ale nevědomě.", tags: [smirk, looking at another]}
+      - {say: olin, text: "Moje oblíbená volba.", shot: close-up, tags: [grin, eyes closed]}
+      - {say: jana, text: "Přesně. Vždycky si vybereš to, co už znáš, a tváříš se, že jsi nad věcí.", tags: [leaning forward, gesturing, intense stare]}
+      - {say: olin, text: "Jsem nad věcí.", tags: [serene smile, eyes half closed]}
+      - {say: jana, text: "To říká každý, kdo se bojí přiznat, že je uvnitř.", tags: [hand on own chin, thinking, sharp gaze]}
+      - {say: olin, text: "Možná.", shot: close-up, tags: [hand on own chin, thinking, smile]}
+      - {say: jana, text: "„Možná“ je taky útěk.", tags: [narrowed eyes, pointing]}
+      - {say: olin, text: "Možná.", shot: close-up, tags: [same calm smile]}
+      - {see: "Jana položí vidličku. Zhluboka se nadechne.", shot: medium, who: jana, tags: [putting down fork, deep breath, eyes closed]}
+      - {say: jana, text: "Nechci se hádat.", tags: [calm, forced smile]}
+      - {say: olin, text: "Já taky ne.", tags: [smile, nodding]}
+      - {say: jana, text: "Tak proč to děláš?", tags: [raised eyebrow, tilted head]}
+      - {say: olin, text: "Já nic nedělám. Jím.", tags: [eating, goulash, bread dumpling, smile]}
+      - {say: jana, text: "Jíš a usmíváš se.", tags: [pointing, accusing]}
+      - {say: olin, text: "To je můj způsob, jak nejíst a usmívat se.", tags: [chewing, smile, looking at another]}
+      - {say: jana, text: "To nedává smysl.", shot: close-up, tags: [confused, frowning]}
+      - {say: olin, text: "Ale chutná.", shot: close-up, tags: [blissful smile, fork in mouth]}
+      - {see: "Jana se napije vína.", shot: medium, who: jana, tags: [drinking wine, wine glass, eyes closed]}
+      - {see: "Olin si dá knedlík.", shot: close-up, who: olin, tags: [eating, bread dumpling, fork, smile]}
+      - {see: "Chvíli je slyšet jen déšť a vzdálený neon.", shot: wide, tags: [rain, chinese pavilion roof, paper lanterns, lotus pond, raindrops, no humans], animate: "rain dripping from the curved roof into the lotus pond, lanterns glowing softly"}
+      - {say: jana, text: "Jen říkám, že tvoje volba je konzervativní.", tags: [looking at another, wine glass]}
+      - {say: olin, text: "A tvoje je…?", tags: [smile, open palm]}
+      - {say: jana, text: "Otevřená.", shot: close-up, tags: [chin up, proud]}
+      - {say: olin, text: "Takže špagety jsou otevřené a guláš je zavřený?", tags: [hand on own chin, thinking, amused]}
+      - {say: jana, text: "Přesně.", tags: [nodding, confident]}
+      - {say: olin, text: "A víno je otevřené a pivo zavřené?", tags: [pointing at beer mug, smile]}
+      - {say: jana, text: "Ne. Pivo je hlučné.", tags: [wrinkled nose, sceptical]}
+      - {say: olin, text: "A víno je tiché?", tags: [raised eyebrows, smile]}
+      - {say: jana, text: "Víno je přesné.", shot: close-up, tags: [holding a wine glass, looking at wine, precise]}
+      - {say: olin, text: "Tak to jo.", tags: [nodding, content smile]}
+
+  s3:
+    title: Pivo, ne život
+    location: l_pavilon
+    cast: {olin: olin_48, jana: jana_46, dron: dron}
+    next: s4
+    script:
+      - {see: "(Úvodní obraz uzlu, bez poznámky autora: stůl v pavilonu, dvě sklenice.)", shot: establishing, loc: l_stul_pavilon, tags: [table, beer mug, wine glass, flower petals, butterflies], gap: medium}
+      - {see: "Dron přijede blíž.", shot: medium, who: dron, tags: [hovering, approaching, glowing eye, holding a tray]}
+      - {say: dron, text: "Přejete si doporučení k vínu?", tags: [glowing eye, wine bottle on tray]}
+      - {say: jana, text: "Ne.", shot: close-up, tags: [cold expression, looking at another]}
+      - {say: olin, text: "Já bych si dal.", tags: [raising hand, smile]}
+      - {say: jana, text: "Vidíš.", tags: [pointing, triumphant]}
+      - {say: olin, text: "Co?", shot: close-up, tags: [innocent smile, tilted head]}
+      - {say: jana, text: "Zase necháš rozhodnout někoho jiného.", tags: [leaning forward, accusing]}
+      - {say: olin, text: "Nechal jsem si doporučit pivo. Ne život.", tags: [calm smile, raised index finger]}
+      - {say: jana, text: "To je stejné.", shot: close-up, tags: [narrowed eyes]}
+      - {say: olin, text: "Není.", shot: close-up, tags: [smile, shaking head]}
+      - {say: jana, text: "Je.", shot: close-up, tags: [sharp gaze, chin up]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "Zase „dobře“.", tags: [eye roll, exasperated]}
+      - {say: olin, text: "Ano.", tags: [content smile, nodding]}
+      - {say: jana, text: "Ty mě irituješ.", tags: [gritted teeth, forced smile]}
+      - {say: olin, text: "Já vím.", tags: [eyes half closed, smile]}
+      - {say: jana, text: "A pořád se usmíváš.", tags: [pointing, frowning]}
+      - {say: olin, text: "Ano.", shot: close-up, tags: [wide smile]}
+      - {say: jana, text: "Proč?", shot: close-up, tags: [raised eyebrow, demanding]}
+      - {say: olin, text: "Protože se nehádám.", tags: [serene smile, looking at another]}
+      - {say: jana, text: "To je odpověď?", tags: [hand on own chin, looking up, thinking]}
+      - {say: olin, text: "Ano.", shot: close-up, tags: [smile, nodding]}
+      - {see: "Jana se nakloní dopředu.", shot: medium, who: jana, tags: [leaning forward, intense stare, hands on table]}
+      - {see: "Olin se nepohne. Úsměv mu nezmizí.", shot: close-up, who: olin, tags: [unmoving, steady smile, looking at another], animate: "he holds perfectly still, the smile never fading, a petal drifting past, rain behind him"}
+      - {say: jana, text: "Já mám pravdu.", shot: close-up, tags: [intense stare, confident]}
+      - {say: olin, text: "V čem?", tags: [smile, raised eyebrows]}
+      - {say: jana, text: "V tom, že máš strach přiznat, že nejsi nad věcí.", tags: [pointing, sharp gaze]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "To není „dobře“. To je „nevím, co říct“.", tags: [triumphant, pointing]}
+      - {say: olin, text: "Možná.", shot: close-up, tags: [hand on own chin, thinking, smile]}
+      - {say: jana, text: "Zase „možná“.", tags: [eye roll, exasperated]}
+      - {say: olin, text: "Ano.", tags: [content smile]}
+      - {say: jana, text: "Tak řekni něco jiného.", tags: [crossed arms, demanding]}
+      - {say: olin, text: "Něco jiného.", shot: close-up, tags: [deadpan, smile]}
+
+  s4:
+    title: Klid jako útok
+    location: l_pavilon
+    cast: {olin: olin_48, jana: jana_46, dron: dron}
+    next: s5
+    script:
+      - {see: "(Úvodní obraz uzlu, bez poznámky autora: lampiony a déšť nad jezírkem.)", shot: establishing, tags: [paper lanterns, rain, lotus pond, chinese pavilion roof], gap: medium}
+      - {see: "Pauza. Jana se snaží nenaštvat. Neuspěje.", shot: close-up, who: jana, tags: [twitching eyebrow, forced smile, clenched fists], animate: "her eyebrow twitches, the forced smile trembles, then a short exasperated exhale"}
+      - {say: jana, text: "Nechci se hádat.", tags: [calm, forced smile]}
+      - {say: olin, text: "Já vím.", tags: [eyes half closed, smile]}
+      - {say: jana, text: "Ale ty mě nutíš.", tags: [pointing, frowning]}
+      - {say: olin, text: "Já nic nedělám.", tags: [open palms, smile]}
+      - {say: jana, text: "Děláš. Tím svým klidem.", shot: close-up, tags: [narrowed eyes, sharp gaze]}
+      - {say: olin, text: "To je nový. Klid jako útok.", tags: [hand on own chin, thinking, amused]}
+      - {say: jana, text: "Přesně.", tags: [nodding, confident]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "Přestaň říkat „dobře“.", shot: close-up, tags: [gritted teeth, pointing]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [wider calm smile]}
+      - {see: "Jana se zhluboka nadechne.", shot: medium, who: jana, tags: [deep breath, eyes closed, hand on chest]}
+      - {see: "Olin se napije.", shot: medium, who: olin, tags: [drinking beer, beer mug, smile]}
+      - {see: "Dron přinese účet.", shot: medium, who: dron, tags: [hovering, bill on tray, glowing eye]}
+      - {say: dron, text: "Platba?", shot: close-up, tags: [glowing eye, bill on tray]}
+      - {say: jana, text: "Rozdělíme.", tags: [firm, raised hand]}
+      - {say: olin, text: "Já zaplatím.", tags: [smile, reaching for wallet]}
+      - {say: jana, text: "Ne. Rozdělíme.", shot: close-up, tags: [narrowed eyes, firm]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "Vidíš? Zase jsi to nechal na mně.", tags: [pointing, triumphant, exasperated]}
+      - {say: olin, text: "Nechal. A ty jsi to rozhodla.", tags: [gentle smile, nodding]}
+      - {say: jana, text: "Ano.", tags: [chin up, proud]}
+      - {say: olin, text: "A máš pravdu.", tags: [warm smile, looking at another]}
+      - {say: jana, text: "Vím.", shot: close-up, tags: [smug smile]}
+      - {say: olin, text: "To je dobře.", tags: [content smile]}
+      - {say: jana, text: "Proč?", shot: close-up, tags: [suspicious, raised eyebrow]}
+      - {say: olin, text: "Protože pak máš poslední slovo.", tags: [hand on own chin, smile, eyes sparkling]}
+      - {say: jana, text: "Mám.", shot: close-up, tags: [triumphant smile]}
+
+  s5:
+    title: Poslední slovo
+    location: l_pavilon
+    cast: {olin: olin_48, jana: jana_46, dron: dron}
+    ending: good
+    script:
+      - {see: "(Úvodní obraz uzlu, bez poznámky autora: talíře v pavilonu, déšť sílí.)", shot: establishing, loc: l_stul_pavilon, tags: [table, empty plates, beer mug, wine glass, heavy rain], gap: medium}
+      - {see: "Olin se usměje. Napije se.", shot: medium, who: olin, tags: [smile, drinking beer, beer mug]}
+      - {see: "Jana chvíli vítězí, pak se zamračí.", shot: close-up, who: jana, tags: [smug smile fading, frowning], animate: "her triumphant smile slowly fades into a frown"}
+      - {say: jana, text: "Nemusíš se pořád usmívat.", tags: [frowning, looking at another]}
+      - {say: olin, text: "Já vím.", tags: [eyes half closed, smile]}
+      - {say: jana, text: "Tak proč to děláš?", tags: [raised eyebrow, tilted head]}
+      - {say: olin, text: "Protože se nehádám.", tags: [serene smile]}
+      - {say: jana, text: "To je odpověď?", tags: [hand on own chin, looking up, thinking]}
+      - {say: olin, text: "Ano.", shot: close-up, tags: [smile, nodding]}
+      - {say: jana, text: "Dobře.", shot: close-up, tags: [tight lips, looking away]}
+      - {see: "Pauza. Olin nic.", shot: close-up, who: olin, tags: [silent, closed mouth, smile]}
+      - {see: "Jana se zamračí víc.", shot: close-up, who: jana, tags: [deep frown, narrowed eyes]}
+      - {say: jana, text: "To bylo moje poslední slovo.", tags: [pointing at self, insistent]}
+      - {say: olin, text: "Vím.", shot: close-up, tags: [calm smile]}
+      - {say: jana, text: "Tak proč nic neříkáš?", tags: [leaning forward, frowning]}
+      - {say: olin, text: "Aby zůstalo poslední.", shot: close-up, tags: [gentle smile, eyes sparkling]}
+      - {say: jana, text: "Ty mě irituješ.", tags: [gritted teeth, forced smile]}
+      - {say: olin, text: "Já vím.", tags: [eyes half closed, smile]}
+      - {say: jana, text: "A pořád se usmíváš.", tags: [pointing, frowning]}
+      - {say: olin, text: "Ano.", shot: close-up, tags: [wide smile]}
+      - {say: jana, text: "Dobrou chuť.", tags: [raising wine glass, curt]}
+      - {say: olin, text: "Tobě taky.", tags: [raising beer mug, smile]}
+      - {see: "Jana se napije.", shot: medium, who: jana, tags: [drinking wine, wine glass]}
+      - {see: "Olin se usměje.", shot: close-up, who: olin, tags: [smile, looking at another]}
+      - {see: "Oba zůstávají na místě. Dron odjíždí. Déšť na skle sílí.", shot: wide, who: dron, tags: [flying away, heavy rain, paper lanterns, chinese pavilion], animate: "the drone flies off into the rain, the rain grows heavier on the pavilion roof"}
+      - {say: jana, text: "A už nic neříkej.", shot: close-up, tags: [pointing, stern, wine glass]}
+      - {see: "Olin nic neřekne. Usměje se.", shot: close-up, who: olin, tags: [silent, closed mouth, smile]}
+      - {see: "Jana vítězoslavně zvedne sklenku. Pak se jí mírně zachvěje koutek.", shot: close-up, who: jana, tags: [raising wine glass, triumphant, twitching lip], animate: "she raises her glass in triumph, then the corner of her mouth twitches slightly"}
+      - {see: "Světla pomalu zhasínají. Zůstává jen neon a zvuk deště.", shot: wide, loc: l_stul_pavilon, tags: [paper lanterns dimming, rain, empty table, dusk, no humans], gap: large, animate: "the lanterns dim one by one, only one glowing lantern and the sound of rain remain"}

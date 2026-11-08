@@ -1,0 +1,1185 @@
+{
+  "title": "Guláš a špagety",
+  "title_i18n": {
+    "de": "Gulasch und Spaghetti",
+    "en": "Goulash and Spaghetti",
+    "fr": "Goulash et spaghetti",
+    "it": "Gulasch e spaghetti",
+    "ja": "グヤーシュとスパゲッティ",
+    "ko": "굴라시와 스파게티",
+    "pl": "Gulasz i spaghetti",
+    "pt-BR": "Gulache e espaguete",
+    "ru": "Гуляш и спагетти",
+    "uk": "Гуляш і спагеті",
+    "vi": "Goulash và spaghetti"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_raketa",
+      "characters": [],
+      "visual_tags": [
+        "restaurant inside a spaceship",
+        "neon tubes on the ceiling",
+        "chrome",
+        "frosted glass",
+        "porthole window",
+        "the moon outside",
+        "empty tables",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes flickering, the moon slowly drifting past the porthole, a robot waiter rolling by in the background, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a table",
+        "porthole window",
+        "goulash",
+        "bread dumplings",
+        "holding a beer mug",
+        "grin"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a table",
+        "porthole window",
+        "plate of spaghetti",
+        "grated parmesan",
+        "holding a wine glass",
+        "white wine",
+        "smirk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "scooping a dumpling with a fork",
+        "grin"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Hele… tohle všechno bych dřív dělal sto let.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hey… für das alles hätte ich früher hundert Jahre gebraucht.",
+            "en": "Hey… all of this would've taken me a hundred years before.",
+            "fr": "Hé… tout ça, avant, ça m'aurait pris cent ans.",
+            "it": "Ehi… tutto questo prima ci avrei messo cent'anni a farlo.",
+            "ja": "なあ…これ全部、昔なら百年かかってたよ。",
+            "ko": "있잖아… 이거 다 예전 같으면 백 년은 걸렸을 거야.",
+            "pl": "Ej… nad tym wszystkim siedziałbym kiedyś sto lat.",
+            "pt-BR": "Olha… tudo isso antes eu levaria cem anos pra fazer.",
+            "ru": "Слушай… на всё это у меня раньше ушло бы сто лет.",
+            "uk": "Слухай… на все це раніше в мене пішло б сто років.",
+            "vi": "Này… tất cả chỗ này ngày trước anh phải làm cả trăm năm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "leaning back in chair",
+        "holding a wine glass",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Já ti to neberu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das nehme ich dir ja nicht weg.",
+            "en": "I'm not taking that away from you.",
+            "fr": "Je ne te l'enlève pas.",
+            "it": "Non te lo tolgo mica.",
+            "ja": "それは否定しないよ。",
+            "ko": "그건 인정해.",
+            "pl": "Ja ci tego nie odbieram.",
+            "pt-BR": "Não estou tirando isso de você.",
+            "ru": "Я у тебя этого не отнимаю.",
+            "uk": "Я в тебе цього не забираю.",
+            "vi": "Em đâu có phủ nhận điều đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "nodding",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Jen říkám. Za půl roku. Sám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sag ja nur. In einem halben Jahr. Allein.",
+            "en": "Just saying. In six months. Alone.",
+            "fr": "Je dis juste. En six mois. Tout seul.",
+            "it": "Dico solo. In sei mesi. Da solo.",
+            "ja": "言ってるだけさ。半年で。一人で。",
+            "ko": "그냥 하는 말이야. 반년 만에. 혼자서.",
+            "pl": "Tylko mówię. W pół roku. Sam.",
+            "pt-BR": "Só tô dizendo. Em seis meses. Sozinho.",
+            "ru": "Я просто говорю. За полгода. Один.",
+            "uk": "Я просто кажу. За пів року. Сам.",
+            "vi": "Anh chỉ nói thôi. Trong nửa năm. Một mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "slight nod",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Fajn. Fandím ti.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schön. Ich drück dir die Daumen.",
+            "en": "Fine. I'm rooting for you.",
+            "fr": "D'accord. Je suis de ton côté.",
+            "it": "Va bene. Faccio il tifo per te.",
+            "ja": "いいね。応援してる。",
+            "ko": "그래. 응원해.",
+            "pl": "Spoko. Kibicuję ci.",
+            "pt-BR": "Beleza. Tô torcendo por você.",
+            "ru": "Ладно. Болею за тебя.",
+            "uk": "Гаразд. Вболіваю за тебе.",
+            "vi": "Được thôi. Em ủng hộ anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "leaning forward",
+        "smile",
+        "pointing with fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Není to o fandění. Je to o tom, že to funguje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es geht nicht ums Daumendrücken. Es geht darum, dass es funktioniert.",
+            "en": "It's not about rooting. It's about the fact that it works.",
+            "fr": "Il ne s'agit pas d'être de mon côté. Il s'agit du fait que ça marche.",
+            "it": "Non si tratta di fare il tifo. Si tratta del fatto che funziona.",
+            "ja": "応援とかじゃないんだ。ちゃんと動くってことなんだよ。",
+            "ko": "응원 얘기가 아니야. 그게 된다는 얘기지.",
+            "pl": "Nie chodzi o kibicowanie. Chodzi o to, że to działa.",
+            "pt-BR": "Não é questão de torcer. É que funciona.",
+            "ru": "Дело не в том, чтобы болеть. Дело в том, что это работает.",
+            "uk": "Річ не в тому, щоб вболівати. Річ у тому, що це працює.",
+            "vi": "Không phải chuyện ủng hộ. Mà là nó chạy được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "cutting spaghetti with a fork",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Já vím, že to funguje. Pracuju s tím každý den.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß, dass es funktioniert. Ich arbeite jeden Tag damit.",
+            "en": "I know it works. I work with it every day.",
+            "fr": "Je sais que ça marche. Je travaille avec tous les jours.",
+            "it": "Lo so che funziona. Ci lavoro tutti i giorni.",
+            "ja": "動くのは知ってる。毎日それで仕事してるから。",
+            "ko": "되는 거 알아. 나 매일 그걸로 일해.",
+            "pl": "Wiem, że to działa. Pracuję z tym codziennie.",
+            "pt-BR": "Eu sei que funciona. Trabalho com isso todo dia.",
+            "ru": "Я знаю, что работает. Я с этим каждый день работаю.",
+            "uk": "Я знаю, що працює. Я з цим щодня працюю.",
+            "vi": "Em biết là nó chạy được. Ngày nào em cũng làm việc với nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "wide grin",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Tak proč to teda překládáš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und warum übersetzt du es dann?",
+            "en": "So why do you translate it, then?",
+            "fr": "Alors pourquoi tu le traduis ?",
+            "it": "E allora perché lo traduci?",
+            "ja": "じゃあなんで訳してるの?",
+            "ko": "그럼 왜 그걸 번역하는데?",
+            "pl": "To czemu to w ogóle tłumaczysz?",
+            "pt-BR": "Então por que você traduz?",
+            "ru": "Тогда зачем ты это переводишь?",
+            "uk": "Тоді навіщо ти це перекладаєш?",
+            "vi": "Thế sao em còn dịch nó?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "pause",
+        "staring",
+        "deadpan"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Protože to po mně chtějí přeložené.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil sie es von mir übersetzt haben wollen.",
+            "en": "Because they want it translated by me.",
+            "fr": "Parce qu'ils le veulent traduit par moi.",
+            "it": "Perché lo vogliono tradotto da me.",
+            "ja": "私に訳してほしいって言われるから。",
+            "ko": "나한테 번역해 달라고 하니까.",
+            "pl": "Bo chcą to mieć przetłumaczone przeze mnie.",
+            "pt-BR": "Porque querem que eu traduza.",
+            "ru": "Потому что от меня хотят перевод.",
+            "uk": "Бо від мене хочуть переклад.",
+            "vi": "Vì người ta muốn em dịch."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "nodding slowly",
+        "enlightened expression",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Jasně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Klar.",
+            "en": "Sure.",
+            "fr": "Bien sûr.",
+            "it": "Certo.",
+            "ja": "なるほどね。",
+            "ko": "그렇구나.",
+            "pl": "Jasne.",
+            "pt-BR": "Claro.",
+            "ru": "Ясно.",
+            "uk": "Ясно.",
+            "vi": "Hiểu rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "raised eyebrow",
+        "unimpressed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Neříkám, že je to špatně. Jen že usnadnění a tvorba je rozdíl.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sag nicht, dass es falsch ist. Nur dass Erleichterung und Schaffen zwei verschiedene Dinge sind.",
+            "en": "I'm not saying it's wrong. Just that making it easier and creating are two different things.",
+            "fr": "Je ne dis pas que c'est mal. Juste que se faciliter la vie et créer, ce n'est pas pareil.",
+            "it": "Non dico che sia sbagliato. Solo che semplificare e creare sono due cose diverse.",
+            "ja": "悪いとは言ってない。楽をすることと創作は違うってだけ。",
+            "ko": "나쁘다는 게 아니야. 편해지는 거랑 창작은 다르다는 거지.",
+            "pl": "Nie mówię, że to źle. Tylko że ułatwienie i tworzenie to różnica.",
+            "pt-BR": "Não tô dizendo que é errado. Só que facilitar e criar são coisas diferentes.",
+            "ru": "Я не говорю, что это плохо. Просто облегчение и творчество — разные вещи.",
+            "uk": "Я не кажу, що це погано. Просто полегшення і творчість — різні речі.",
+            "vi": "Em không nói là sai. Chỉ là cho dễ việc và sáng tạo là hai chuyện khác nhau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "quiet smile",
+        "cheerful",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Pro některé lidi je tvorba s AI právě to usnadnění.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für manche Leute ist das Schaffen mit KI genau diese Erleichterung.",
+            "en": "For some people, creating with AI is exactly that making it easier.",
+            "fr": "Pour certains, créer avec l'IA, c'est justement ça, se faciliter la vie.",
+            "it": "Per alcune persone creare con l'IA è proprio quella semplificazione.",
+            "ja": "人によっては、AIで創ることがまさにその「楽」なんだよ。",
+            "ko": "어떤 사람들한테는 AI로 창작하는 게 바로 그 편해지는 거야.",
+            "pl": "Dla niektórych tworzenie z AI to właśnie jest to ułatwienie.",
+            "pt-BR": "Pra algumas pessoas, criar com IA é justamente essa facilidade.",
+            "ru": "Для некоторых творчество с ИИ — это как раз и есть облегчение.",
+            "uk": "Для декого творчість з ШІ — це якраз і є полегшення.",
+            "vi": "Với một số người, sáng tạo cùng AI chính là cái sự dễ việc đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "smile",
+        "sharp eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Já to nikomu neberu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehme das niemandem weg.",
+            "en": "I'm not taking it away from anyone.",
+            "fr": "Je ne l'enlève à personne.",
+            "it": "Non lo tolgo a nessuno.",
+            "ja": "誰のことも否定してないよ。",
+            "ko": "누구한테도 그걸 부정하지 않아.",
+            "pl": "Ja nikomu tego nie odbieram.",
+            "pt-BR": "Não tô tirando isso de ninguém.",
+            "ru": "Я ни у кого этого не отнимаю.",
+            "uk": "Я ні в кого цього не забираю.",
+            "vi": "Em có phủ nhận ai đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "smug smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю.",
+            "vi": "Anh biết."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "raised eyebrow",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Tak proč mi to furt vysvětluješ?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum erklärst du's mir dann ständig?",
+            "en": "Then why do you keep explaining it to me?",
+            "fr": "Alors pourquoi tu n'arrêtes pas de me l'expliquer ?",
+            "it": "Allora perché continui a spiegarmelo?",
+            "ja": "じゃあなんでいつも私に説明するの?",
+            "ko": "그럼 왜 자꾸 나한테 설명하는데?",
+            "pl": "To czemu ciągle mi to tłumaczysz?",
+            "pt-BR": "Então por que você fica me explicando isso?",
+            "ru": "Тогда почему ты мне это всё время объясняешь?",
+            "uk": "Тоді чому ти мені це весь час пояснюєш?",
+            "vi": "Thế sao anh cứ giải thích cho em mãi thế?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "shrugging",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Nevysvětluju. Jen předkládám názor.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich erkläre nicht. Ich lege nur eine Meinung vor.",
+            "en": "I'm not explaining. Just putting forward an opinion.",
+            "fr": "Je n'explique pas. Je soumets juste un avis.",
+            "it": "Non spiego. Propongo solo un'opinione.",
+            "ja": "説明してない。意見を出してるだけ。",
+            "ko": "설명하는 거 아니야. 그냥 의견을 내놓는 거지.",
+            "pl": "Nie tłumaczę. Tylko przedstawiam zdanie.",
+            "pt-BR": "Não tô explicando. Só tô apresentando uma opinião.",
+            "ru": "Я не объясняю. Я просто излагаю мнение.",
+            "uk": "Я не пояснюю. Я просто викладаю думку.",
+            "vi": "Anh đâu giải thích. Chỉ đưa ra ý kiến thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "putting down fork",
+        "exasperated",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A já ti ten názor neberu. Jen nechápu, proč mi ho předkládáš, když už jsem řekla, že to vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und ich nehme dir die Meinung nicht weg. Ich verstehe nur nicht, warum du sie mir vorlegst, wenn ich schon gesagt habe, dass ich es weiß.",
+            "en": "And I'm not taking that opinion away from you. I just don't get why you're putting it forward when I've already said I know.",
+            "fr": "Et cet avis, je ne te l'enlève pas. Je ne comprends juste pas pourquoi tu me le soumets alors que j'ai déjà dit que je le savais.",
+            "it": "E io quell'opinione non te la tolgo. Solo non capisco perché me la proponi, se ti ho già detto che lo so.",
+            "ja": "その意見を否定してるわけじゃない。もう知ってるって言ったのに、なんでわざわざ出してくるのかがわからないの。",
+            "ko": "그 의견을 부정하는 게 아니야. 이미 안다고 했는데 왜 자꾸 내놓는지 모르겠다는 거지.",
+            "pl": "A ja ci tego zdania nie odbieram. Tylko nie rozumiem, czemu mi je przedstawiasz, skoro już powiedziałam, że wiem.",
+            "pt-BR": "E eu não tô tirando essa opinião de você. Só não entendo por que você me apresenta, se eu já disse que sei.",
+            "ru": "А я у тебя это мнение не отнимаю. Я просто не понимаю, зачем ты мне его излагаешь, если я уже сказала, что знаю.",
+            "uk": "А я в тебе цю думку не забираю. Я просто не розумію, навіщо ти мені її викладаєш, якщо я вже сказала, що знаю.",
+            "vi": "Em có phủ nhận ý kiến đó đâu. Em chỉ không hiểu sao anh cứ đưa ra, khi em đã nói là em biết rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "she sets the fork down with a small clink, neon light flickering on her glasses"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "drinking beer",
+        "beer mug",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Protože mě to baví.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil es mir Spaß macht.",
+            "en": "Because I enjoy it.",
+            "fr": "Parce que ça m'amuse.",
+            "it": "Perché mi diverte.",
+            "ja": "楽しいから。",
+            "ko": "재밌으니까.",
+            "pl": "Bo mnie to bawi.",
+            "pt-BR": "Porque eu gosto.",
+            "ru": "Потому что мне это нравится.",
+            "uk": "Бо мені це подобається.",
+            "vi": "Vì anh thấy vui."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "deep breath",
+        "eyes closed",
+        "patient"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Mě to baví taky. Jen ne o víkendu. A ne takhle.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir macht es auch Spaß. Nur nicht am Wochenende. Und nicht so.",
+            "en": "I enjoy it too. Just not on weekends. And not like this.",
+            "fr": "Moi aussi, ça m'amuse. Juste pas le week-end. Et pas comme ça.",
+            "it": "Diverte anche me. Solo non nel weekend. E non così.",
+            "ja": "私も楽しいよ。週末じゃなければね。こういうのじゃなくて。",
+            "ko": "나도 재밌어. 주말만 아니면. 이런 식만 아니면.",
+            "pl": "Mnie też to bawi. Tylko nie w weekend. I nie tak.",
+            "pt-BR": "Eu também gosto. Só não no fim de semana. E não desse jeito.",
+            "ru": "Мне тоже нравится. Только не по выходным. И не так.",
+            "uk": "Мені теж подобається. Тільки не на вихідних. І не так.",
+            "vi": "Em cũng thấy vui. Chỉ là không phải cuối tuần. Và không phải kiểu này."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "nodding",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Beru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nehm ich so.",
+            "en": "I'll take that.",
+            "fr": "Je prends.",
+            "it": "Ci sta.",
+            "ja": "了解。",
+            "ko": "받아들일게.",
+            "pl": "Przyjmuję.",
+            "pt-BR": "Aceito.",
+            "ru": "Принято.",
+            "uk": "Приймаю.",
+            "vi": "Anh nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "pointing at viewer",
+        "narrowed eyes",
+        "sharp smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ne. Neber. Ty to nebereš. Ty se jen usmíváš a čekáš, až ti dám za pravdu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Nimm nicht. Du nimmst gar nichts. Du lächelst nur und wartest, bis ich dir recht gebe.",
+            "en": "No. Don't. You're not taking anything. You just smile and wait for me to say you're right.",
+            "fr": "Non. Ne prends pas. Tu ne prends rien. Tu souris et tu attends que je te donne raison.",
+            "it": "No. Non ci sta. Tu non accetti niente. Sorridi e aspetti che ti dia ragione.",
+            "ja": "違う。了解しないで。あなたは何も受け取ってない。ただ笑って、私がそっちが正しいって言うのを待ってるだけ。",
+            "ko": "아니. 받아들이지 마. 넌 아무것도 안 받아들여. 그냥 웃으면서 내가 네 말이 맞다고 하길 기다리는 거지.",
+            "pl": "Nie. Nie przyjmuj. Ty niczego nie przyjmujesz. Ty się tylko uśmiechasz i czekasz, aż przyznam ci rację.",
+            "pt-BR": "Não. Não aceita. Você não aceita nada. Você só sorri e espera eu te dar razão.",
+            "ru": "Нет. Не принято. Ты ничего не принимаешь. Ты просто улыбаешься и ждёшь, когда я признаю, что ты прав.",
+            "uk": "Ні. Не приймай. Ти нічого не приймаєш. Ти просто усміхаєшся і чекаєш, коли я визнаю, що ти маєш рацію.",
+            "vi": "Không. Đừng nhận. Anh có nhận gì đâu. Anh chỉ cười và chờ em công nhận anh đúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "very wide smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Já nečekám nic.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich warte auf gar nichts.",
+            "en": "I'm not waiting for anything.",
+            "fr": "Je n'attends rien.",
+            "it": "Io non aspetto niente.",
+            "ja": "何も待ってないよ。",
+            "ko": "난 아무것도 안 기다려.",
+            "pl": "Ja na nic nie czekam.",
+            "pt-BR": "Eu não tô esperando nada.",
+            "ru": "Я ничего не жду.",
+            "uk": "Я нічого не чекаю.",
+            "vi": "Anh chẳng chờ gì cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "leaning forward",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "To je právě ten problém. Ty jsi nad tím. Já jsem v tom.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Genau das ist das Problem. Du stehst drüber. Ich stecke drin.",
+            "en": "That's exactly the problem. You're above it. I'm in it.",
+            "fr": "C'est justement ça, le problème. Toi, tu es au-dessus. Moi, je suis dedans.",
+            "it": "È proprio questo il problema. Tu ci stai sopra. Io ci sto dentro.",
+            "ja": "それが問題なの。あなたは上にいて、私は中にいる。",
+            "ko": "바로 그게 문제야. 넌 그 위에 있고, 난 그 안에 있어.",
+            "pl": "No właśnie w tym problem. Ty jesteś ponad tym. Ja jestem w tym.",
+            "pt-BR": "Esse é justamente o problema. Você tá acima disso. Eu tô dentro.",
+            "ru": "Вот в этом и проблема. Ты над этим. А я в этом.",
+            "uk": "От у цьому й проблема. Ти над цим. А я в цьому.",
+            "vi": "Chính đó mới là vấn đề. Anh đứng trên nó. Em thì ở trong nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "soft smile",
+        "looking down",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Možná jsme oba v něčem jiném.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht stecken wir beide in etwas anderem.",
+            "en": "Maybe we're both in something different.",
+            "fr": "Peut-être qu'on est chacun dans autre chose.",
+            "it": "Forse ci stiamo dentro tutti e due, ma in cose diverse.",
+            "ja": "たぶん、二人とも別のものの中にいるんだよ。",
+            "ko": "어쩌면 우리 둘 다 서로 다른 것 안에 있는 걸지도.",
+            "pl": "Może oboje jesteśmy w czymś innym.",
+            "pt-BR": "Talvez a gente esteja cada um dentro de uma coisa diferente.",
+            "ru": "Может, мы оба в чём-то разном.",
+            "uk": "Може, ми обоє в чомусь різному.",
+            "vi": "Có lẽ cả hai ta đều ở trong những thứ khác nhau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "raising wine glass",
+        "confident"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Možná. Ale já mám pravdu v tom, že o víkendu se do žádného účtu přihlašovat nechci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht. Aber ich habe recht damit, dass ich mich am Wochenende in keinen Account einloggen will.",
+            "en": "Maybe. But I'm right that on weekends I don't want to log in to any account.",
+            "fr": "Peut-être. Mais j'ai raison sur un point : le week-end, je ne veux me connecter à aucun compte.",
+            "it": "Forse. Ma ho ragione sul fatto che nel weekend non voglio fare il login in nessun account.",
+            "ja": "かもね。でも、週末はどのアカウントにもログインしたくないってことに関しては、私が正しい。",
+            "ko": "그럴지도. 하지만 주말엔 어떤 계정에도 로그인하기 싫다는 건 내가 맞아.",
+            "pl": "Może. Ale mam rację co do tego, że w weekend nie chcę się logować do żadnego konta.",
+            "pt-BR": "Talvez. Mas eu tenho razão em não querer entrar em conta nenhuma no fim de semana.",
+            "ru": "Может быть. Но я права в том, что по выходным не хочу заходить ни в какие аккаунты.",
+            "uk": "Можливо. Але я маю рацію в тому, що на вихідних не хочу заходити в жодні акаунти.",
+            "vi": "Có thể. Nhưng em đúng ở chỗ cuối tuần em không muốn đăng nhập vào tài khoản nào hết."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "gentle smile",
+        "slight nod"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To máš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das hast du.",
+            "en": "That you are.",
+            "fr": "Ça, oui.",
+            "it": "Su questo sì.",
+            "ja": "それはそうだね。",
+            "ko": "그건 맞아.",
+            "pl": "To masz.",
+            "pt-BR": "Nisso você tem.",
+            "ru": "Тут ты права.",
+            "uk": "Тут ти маєш рацію.",
+            "vi": "Cái đó thì đúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "porthole window",
+        "last sharp smile",
+        "triumphant"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ano. Mám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Hab ich.",
+            "en": "Yes. I am.",
+            "fr": "Oui. J'ai raison.",
+            "it": "Sì. Ce l'ho.",
+            "ja": "そう。正しいの。",
+            "ko": "응. 맞아.",
+            "pl": "Tak. Mam.",
+            "pt-BR": "Sim. Tenho.",
+            "ru": "Да. Права.",
+            "uk": "Так. Маю.",
+            "vi": "Phải. Em đúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a last sharp smile, she takes a sip of wine, neon light gliding over her glasses"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "eating a dumpling",
+        "smiling",
+        "silent",
+        "neon light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "finishing wine",
+        "looking out the window",
+        "profile",
+        "neon reflections",
+        "quiet"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "scanning beam",
+        "table",
+        "empty plates",
+        "beer mug",
+        "wine glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot waiter rolls in, sweeps a scanning beam over the table and rolls away hissing, static camera"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_okno",
+      "characters": [],
+      "visual_tags": [
+        "porthole window",
+        "the moon",
+        "earth in the distance",
+        "stars",
+        "neon reflections",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the moon slowly growing in the porthole, stars drifting, neon reflections pulsing"
+    }
+  ]
+}

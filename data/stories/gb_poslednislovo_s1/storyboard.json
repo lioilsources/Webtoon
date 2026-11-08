@@ -1,0 +1,609 @@
+{
+  "title": "Večeře",
+  "title_i18n": {
+    "en": "Dinner",
+    "de": "Abendessen",
+    "it": "Cena",
+    "fr": "Le dîner",
+    "pl": "Kolacja",
+    "pt-BR": "Jantar",
+    "ja": "夕食",
+    "ko": "저녁 식사",
+    "vi": "Bữa tối",
+    "ru": "Ужин",
+    "uk": "Вечеря"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach restaurant",
+        "sand",
+        "parasols",
+        "neon sign",
+        "beach bar",
+        "holographic menu",
+        "river",
+        "city skyline",
+        "sunset",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "parasols swaying in the breeze, neon sign glowing, holographic menu flickering, gentle waves, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "rolling away",
+        "holding a tray",
+        "sand"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot waiter rolls away across the sand, tray wobbling"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a table",
+        "goulash",
+        "bread dumplings",
+        "fork",
+        "dipping",
+        "content smile",
+        "beer mug"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "twirling spaghetti",
+        "fork",
+        "plate of spaghetti",
+        "grated parmesan",
+        "wine glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "looking at another",
+        "raised eyebrow",
+        "holding fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Víš, co mi na tom AI vadí?",
+          "kind": "speech",
+          "i18n": {
+            "en": "You know what bothers me about AI?",
+            "de": "Weißt du, was mich an der KI stört?",
+            "it": "Sai cosa mi dà fastidio dell'IA?",
+            "fr": "Tu sais ce qui me dérange avec l'IA ?",
+            "pl": "Wiesz, co mi przeszkadza w tym AI?",
+            "pt-BR": "Sabe o que me incomoda nessa IA?",
+            "ja": "AIの何が嫌か、わかる？",
+            "ko": "내가 AI에서 뭐가 거슬리는지 알아?",
+            "vi": "Anh biết em khó chịu gì ở AI không?",
+            "ru": "Знаешь, что меня раздражает в этом ИИ?",
+            "uk": "Знаєш, що мене дратує в цьому ШІ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smile",
+        "looking at another",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Povídej.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Do tell.",
+            "de": "Erzähl.",
+            "it": "Racconta.",
+            "fr": "Raconte.",
+            "pl": "Mów.",
+            "pt-BR": "Conta.",
+            "ja": "聞かせて。",
+            "ko": "말해 봐.",
+            "vi": "Em nói đi.",
+            "ru": "Рассказывай.",
+            "uk": "Розповідай."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "counting on fingers",
+        "sceptical",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Že dneska každý generuje všechno. Obrázky, knížky, hudbu. A pak tomu říká tvorba.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That these days everyone generates everything. Pictures, books, music. And then they call it creating.",
+            "de": "Dass heute jeder alles generiert. Bilder, Bücher, Musik. Und das dann Schaffen nennt.",
+            "it": "Che oggi tutti generano tutto. Immagini, libri, musica. E poi lo chiamano creare.",
+            "fr": "Qu'aujourd'hui tout le monde génère tout. Des images, des livres, de la musique. Et après, on appelle ça créer.",
+            "pl": "Że dziś każdy wszystko generuje. Obrazki, książki, muzykę. A potem nazywa to tworzeniem.",
+            "pt-BR": "Que hoje todo mundo gera tudo. Imagens, livros, música. E depois chama isso de criação.",
+            "ja": "今は誰もが何でも生成するってこと。画像も、本も、音楽も。それを創作って呼ぶの。",
+            "ko": "요즘은 다들 뭐든 생성한다는 거. 그림, 책, 음악. 그러고는 그걸 창작이라고 부르지.",
+            "vi": "Là bây giờ ai cũng tạo sinh mọi thứ. Tranh, sách, nhạc. Rồi gọi đó là sáng tác.",
+            "ru": "Что сегодня все всё генерируют. Картинки, книги, музыку. А потом называют это творчеством.",
+            "uk": "Що сьогодні всі все генерують. Картинки, книжки, музику. А потім називають це творчістю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "gentle smile",
+        "head tilt"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "A co když to tvorba je?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And what if it is creating?",
+            "de": "Und wenn es doch Schaffen ist?",
+            "it": "E se fosse davvero creare?",
+            "fr": "Et si c'en était vraiment ?",
+            "pl": "A jeśli to jest tworzenie?",
+            "pt-BR": "E se for criação?",
+            "ja": "もしそれが創作だったら？",
+            "ko": "그게 창작이라면?",
+            "vi": "Lỡ đó đúng là sáng tác thì sao?",
+            "ru": "А если это и есть творчество?",
+            "uk": "А якщо це і є творчість?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "firm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Není. Usnadnění práce není totéž co tvorba.",
+          "kind": "speech",
+          "i18n": {
+            "en": "It isn't. Making work easier isn't the same as creating.",
+            "de": "Ist es nicht. Sich die Arbeit erleichtern ist nicht dasselbe wie schaffen.",
+            "it": "Non lo è. Facilitarsi il lavoro non è la stessa cosa che creare.",
+            "fr": "Non. Se faciliter le travail, ce n'est pas créer.",
+            "pl": "Nie jest. Ułatwienie pracy to nie to samo co tworzenie.",
+            "pt-BR": "Não é. Facilitar o trabalho não é o mesmo que criar.",
+            "ja": "違う。仕事を楽にするのと創作は別物よ。",
+            "ko": "아니야. 일을 쉽게 하는 거랑 창작은 같은 게 아니야.",
+            "vi": "Không phải. Làm việc dễ hơn không giống với sáng tác.",
+            "ru": "Нет. Облегчить работу — не то же самое, что творить.",
+            "uk": "Ні. Полегшити роботу — не те саме, що творити."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "nodding",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To máš pravdu. Není.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You're right. It isn't.",
+            "de": "Da hast du recht. Ist es nicht.",
+            "it": "Hai ragione. Non lo è.",
+            "fr": "Tu as raison. Ce n'est pas pareil.",
+            "pl": "Masz rację. Nie jest.",
+            "pt-BR": "Você tem razão. Não é.",
+            "ja": "その通り。違うね。",
+            "ko": "네 말이 맞아. 같지 않지.",
+            "vi": "Em nói đúng. Không giống.",
+            "ru": "Ты права. Не то же самое.",
+            "uk": "Твоя правда. Не те саме."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "blinking",
+        "frozen",
+        "holding fork"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smirk",
+        "satisfied"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Tak vidíš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "There you go.",
+            "de": "Na siehst du.",
+            "it": "Ecco, vedi.",
+            "fr": "Tu vois.",
+            "pl": "No widzisz.",
+            "pt-BR": "Está vendo?",
+            "ja": "ほらね。",
+            "ko": "거 봐.",
+            "vi": "Thấy chưa.",
+            "ru": "Вот видишь.",
+            "uk": "Ну от бачиш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile",
+        "open hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Jenom si myslím, že kreativní člověk může tvořit i s nástrojem.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I just think a creative person can create with a tool too.",
+            "de": "Ich finde nur, ein kreativer Mensch kann auch mit einem Werkzeug schaffen.",
+            "it": "Penso solo che una persona creativa possa creare anche con uno strumento.",
+            "fr": "Je pense juste qu'une personne créative peut aussi créer avec un outil.",
+            "pl": "Uważam tylko, że kreatywny człowiek może tworzyć także z narzędziem.",
+            "pt-BR": "Só acho que uma pessoa criativa pode criar também com uma ferramenta.",
+            "ja": "ただ、創造的な人は道具を使っても創作できると思うんだ。",
+            "ko": "그냥 창의적인 사람은 도구로도 창작할 수 있다고 생각할 뿐이야.",
+            "vi": "Anh chỉ nghĩ người sáng tạo cũng có thể sáng tác bằng công cụ.",
+            "ru": "Я просто думаю, что творческий человек может творить и с инструментом.",
+            "uk": "Я просто думаю, що творча людина може творити й з інструментом."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "frown",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ale to já přece nepopírám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But I'm not denying that.",
+            "de": "Aber das bestreite ich doch gar nicht.",
+            "it": "Ma io non lo nego mica.",
+            "fr": "Mais je ne le nie pas, voyons.",
+            "pl": "Ależ ja tego nie neguję.",
+            "pt-BR": "Mas eu não estou negando isso.",
+            "ja": "でも、それは否定してないでしょ。",
+            "ko": "그건 나도 부정 안 하잖아.",
+            "vi": "Nhưng em đâu có phủ nhận chuyện đó.",
+            "ru": "Но я же этого не отрицаю.",
+            "uk": "Але ж я цього не заперечую."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "wide smile",
+        "raising beer mug"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Výborně. Tak jsme zajedno.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Great. Then we agree.",
+            "de": "Wunderbar. Dann sind wir uns einig.",
+            "it": "Ottimo. Allora siamo d'accordo.",
+            "fr": "Parfait. Alors on est d'accord.",
+            "pl": "Świetnie. To jesteśmy zgodni.",
+            "pt-BR": "Ótimo. Então concordamos.",
+            "ja": "よかった。じゃあ意見は一致だ。",
+            "ko": "좋아. 그럼 우리 생각이 같네.",
+            "vi": "Tuyệt. Vậy là ta đồng ý.",
+            "ru": "Отлично. Значит, мы согласны.",
+            "uk": "Чудово. Тоді ми згодні."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "annoyed",
+        "narrowed eyes",
+        "pointing with fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Nejsme zajedno. Ty mi pořád vysvětluješ něco, co já dávno vím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "We don't agree. You keep explaining things to me I've known for ages.",
+            "de": "Sind wir nicht. Du erklärst mir ständig etwas, das ich längst weiß.",
+            "it": "Non siamo d'accordo. Continui a spiegarmi cose che so da una vita.",
+            "fr": "On n'est pas d'accord. Tu n'arrêtes pas de m'expliquer ce que je sais depuis longtemps.",
+            "pl": "Nie jesteśmy zgodni. Ciągle tłumaczysz mi coś, co wiem od dawna.",
+            "pt-BR": "Não concordamos. Você vive me explicando o que eu sei há muito tempo.",
+            "ja": "一致してない。あなたはずっと、私がとっくに知ってることを説明してくる。",
+            "ko": "같지 않아. 넌 내가 오래전부터 아는 걸 계속 설명하잖아.",
+            "vi": "Không đồng ý. Anh cứ giải thích cho em điều em biết từ lâu rồi.",
+            "ru": "Не согласны. Ты всё время объясняешь мне то, что я давно знаю.",
+            "uk": "Не згодні. Ти весь час пояснюєш мені те, що я давно знаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "drinking beer",
+        "beer mug",
+        "eyes closed",
+        "calm"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smug smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To je možné.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's possible.",
+            "de": "Das ist möglich.",
+            "it": "È possibile.",
+            "fr": "C'est possible.",
+            "pl": "To możliwe.",
+            "pt-BR": "É possível.",
+            "ja": "そうかもね。",
+            "ko": "그럴 수도.",
+            "vi": "Có thể lắm.",
+            "ru": "Возможно.",
+            "uk": "Можливо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

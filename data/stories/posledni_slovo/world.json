@@ -1,0 +1,125 @@
+{
+  "id": "w_posledni_slovo",
+  "title": "Poslední slovo",
+  "title_i18n": {
+    "en": "The Last Word",
+    "de": "Das letzte Wort",
+    "it": "L'ultima parola",
+    "fr": "Le dernier mot",
+    "pl": "Ostatnie słowo",
+    "pt-BR": "A última palavra",
+    "ja": "最後の一言",
+    "ko": "마지막 말",
+    "vi": "Lời cuối cùng",
+    "ru": "Последнее слово",
+    "uk": "Останнє слово"
+  },
+  "synopsis": "Restaurace FUTURE PORK na pláži, rok 2089. Olin u guláše a piva, Jana u špaget a vína, a robot číšník, který jim spočítá šanci na shodu: 0,3 %.",
+  "synopsis_i18n": {
+    "en": "The FUTURE PORK beach restaurant, 2089. Olin over goulash and beer, Jana over spaghetti and wine, and a robot waiter who works out their chance of agreement: 0.3%.",
+    "de": "Das Strandrestaurant FUTURE PORK, 2089. Olin bei Gulasch und Bier, Jana bei Spaghetti und Wein, und ein Roboterkellner, der ihre Chance auf Einigkeit ausrechnet: 0,3 %.",
+    "it": "Il ristorante sulla spiaggia FUTURE PORK, 2089. Olin con gulasch e birra, Jana con spaghetti e vino, e un cameriere robot che calcola le loro probabilità di accordo: 0,3 %.",
+    "fr": "Le restaurant de plage FUTURE PORK, 2089. Olin devant un goulash et une bière, Jana devant des spaghetti et du vin, et un serveur robot qui calcule leurs chances d'accord : 0,3 %.",
+    "pl": "Restauracja na plaży FUTURE PORK, rok 2089. Olin nad gulaszem i piwem, Jana nad spaghetti i winem, a robot kelner wylicza ich szansę na zgodę: 0,3%.",
+    "pt-BR": "O restaurante de praia FUTURE PORK, 2089. Olin com gulache e cerveja, Jana com espaguete e vinho, e um garçom robô que calcula a chance de os dois concordarem: 0,3%.",
+    "ja": "2089年、ビーチレストラン「FUTURE PORK」。グヤーシュとビールのオリン、スパゲッティとワインのヤナ、そして二人が合意する確率を弾き出すロボットのウェイター。答えは0.3%。",
+    "ko": "2089년, 해변 레스토랑 FUTURE PORK. 굴라시와 맥주 앞의 올린, 스파게티와 와인 앞의 야나, 그리고 두 사람의 합의 확률을 계산하는 로봇 웨이터. 결과는 0.3%.",
+    "vi": "Nhà hàng bãi biển FUTURE PORK, năm 2089. Olin bên goulash và bia, Jana bên spaghetti và rượu vang, cùng một robot phục vụ tính ra xác suất họ đồng ý với nhau: 0,3%.",
+    "ru": "Пляжный ресторан FUTURE PORK, 2089 год. Олин над гуляшом и пивом, Яна над спагетти и вином, и робот-официант, который подсчитывает их шансы на согласие: 0,3 %.",
+    "uk": "Пляжний ресторан FUTURE PORK, 2089 рік. Олін над гуляшем і пивом, Яна над спагеті й вином, і робот-офіціант, який рахує їхні шанси на згоду: 0,3 %."
+  },
+  "tone": "lehký, ironický, laskavý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "cel_naive",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba kolem padesátky, oba nosí brýle, oba jsou intelektuálové; kreslení jako naivní cel-shade v teplém světle, ne manga.",
+      "Groteska bez zloby: každý má pravdu podle svého hodnoticího systému. Robot číšník je přátelský a věcný."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo neustoupí, oba mají pravdu, jen ne ve stejnou chvíli; první shoda je na účtu, a i tu Jana popře."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_plaz",
+      "l_stul_plaz"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_50",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serene Czech man about 50 with short greying brown hair, a short grey-flecked beard, round glasses and a calm, slightly smug smile",
+      "base": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), calm brown eyes, relaxed posture, smug smile",
+      "outfits": {
+        "default": "light blue linen shirt with rolled-up sleeves"
+      },
+      "photo": "a serene Czech man about 50 with short greying brown hair, a short grey-flecked beard, round glasses and a calm, slightly smug smile",
+      "tag_prompt": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), calm brown eyes, relaxed posture, smug smile, light blue linen shirt with rolled-up sleeves",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_50",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Czech woman about 50 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, sharp eyes",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant",
+      "outfits": {
+        "default": "white linen blouse, thin gold necklace"
+      },
+      "photo": "an elegant Czech woman about 50 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, sharp eyes",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant, white linen blouse, thin gold necklace",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Robot",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
+      "base": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
+      "tag_prompt": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray, ",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_plaz",
+      "name": "Restaurace FUTURE PORK na pláži",
+      "description": "Plážová restaurace budoucnosti v Praze 2089: písek, slunečníky, neonový nápis nad barem, holografické menu.",
+      "tag_prompt": "outdoors, beach restaurant, sand, wooden deck, parasols, string lights, neon sign above a beach bar, holographic menu, river and city skyline in the distance, golden hour, sunset sky",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_plaz",
+      "name": "Stůl na pláži",
+      "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno.",
+      "tag_prompt": "small wooden table on the sand, beach restaurant, warm sunset light, parasol shade",
+      "mood": ""
+    }
+  ]
+}

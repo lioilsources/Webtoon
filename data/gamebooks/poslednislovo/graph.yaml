@@ -1,0 +1,181 @@
+# Gamebook 6 — Poslední slovo. Neopunková restaurační groteska v jednom dějství (od autora, Olin, 2026-11-08); text
+# replik je doslova jeho. Kulový blesk, verze „ChatGPT“: stejná dvojice sourozenců, jiný text. Styl a prostředí podle
+# obecné představy o modelu vybral autor: naivní cel-shade v teplém, nažloutlém světle (preset cel_naive) a restaurace
+# FUTURE PORK na pláži (Praha 2089, městská pláž u řeky, zlatá hodinka). Scénické poznámky jsou autorovy doslova
+# (mluví o betonu a neonech), kreslí se ale plážová verze; poznámky se kreslí, nepíšou.
+# Lineární: pět uzlů (scény 1–4 a epilog), žádné volby, žádný nový text. Poznámky v závorkách u replik („s úsměvem“,
+# „tiše“, „usměje se“) jsou tagy, ne text bublin. Úvodní obraz scén 2–5 nese jen nadpis scény (establishing shot). Neonový nápis na konci je titulek (caption), ne kresba.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (Olin a Jana nikdy spolu
+# v obraze, robot číšník sám), `see` = scénická poznámka jako obraz. Profil comedy.
+
+schema: 1
+id: poslednislovo
+title: Poslední slovo
+title_i18n: {de: "Das letzte Wort", en: "The Last Word", fr: "Le dernier mot", it: "L'ultima parola", ja: "最後の一言", ko: "마지막 말", pl: "Ostatnie słowo", pt-BR: "A última palavra", ru: "Последнее слово", uk: "Останнє слово", vi: "Lời cuối cùng"}
+world: w_posledni_slovo
+audience: adult
+language: cs
+style_id: cel_naive
+profile: comedy
+product_id: gamebook_poslednislovo
+start: s1
+
+premise: >
+  Restaurace FUTURE PORK na pláži, Praha, rok 2089. Olin u guláše s knedlíkem a piva, Jana u špaget s parmazánem
+  a bílého vína, robotický číšník, který měří napětí u stolu. Kdo bude mít poslední slovo?
+
+characters: [olin_50, jana_50, robot]
+
+locations:
+  - {id: l_plaz, name: Restaurace FUTURE PORK na pláži, description: "písek, slunečníky, neonový nápis nad barem, holografické menu"}
+  - {id: l_stul_plaz, name: Stůl na pláži, description: "guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana, Robot: robot}
+  faces:
+    olin: [[calm smile, looking at another], [smug smile, half-closed eyes], [gentle smile, relaxed]]
+    jana: [[raised eyebrow, looking at another], [smirk, sceptical], [frown, sharp gaze]]
+    robot: [[smiley face on screen], [neutral face on screen], [blinking screen face]]
+  speaking:
+    olin: [upper body, from front, sitting at a table, beach restaurant]
+    jana: [upper body, from front, sitting at a table, beach restaurant]
+    robot: [upper body, from front, standing, beach restaurant]
+    default: [upper body, from front]
+
+nodes:
+  s1:
+    title: Večeře
+    location: l_plaz
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    next: s2
+    script:
+      - {see: "Neopunková restaurace budoucnosti. Beton, rezavé kovové konstrukce, neonové nápisy, holografické menu a industriální techno v pozadí.", shot: establishing, tags: [beach restaurant, sand, parasols, neon sign, beach bar, holographic menu, river, city skyline, sunset, no humans], gap: medium, animate: "parasols swaying in the breeze, neon sign glowing, holographic menu flickering, gentle waves, static camera"}
+      - {see: "Robotický číšník právě odjíždí od stolu.", shot: medium, who: robot, tags: [robot waiter, rolling away, holding a tray, sand], animate: "the robot waiter rolls away across the sand, tray wobbling"}
+      - {see: "Olin si ukrojí knedlík, namočí ho do guláše a spokojeně se usměje.", shot: medium, who: olin, tags: [sitting at a table, goulash, bread dumplings, fork, dipping, content smile, beer mug]}
+      - {see: "Jana namotá špagety na vidličku.", shot: close-up, who: jana, tags: [twirling spaghetti, fork, plate of spaghetti, grated parmesan, wine glass]}
+      - {say: jana, text: "Víš, co mi na tom AI vadí?", tags: [looking at another, raised eyebrow, holding fork]}
+      - {say: olin, text: "Povídej.", tags: [smile, looking at another, relaxed]}
+      - {say: jana, text: "Že dneska každý generuje všechno. Obrázky, knížky, hudbu. A pak tomu říká tvorba.", tags: [counting on fingers, sceptical, looking at another]}
+      - {say: olin, text: "A co když to tvorba je?", tags: [gentle smile, head tilt]}
+      - {say: jana, text: "Není. Usnadnění práce není totéž co tvorba.", shot: close-up, tags: [firm expression, looking at another]}
+      - {say: olin, text: "To máš pravdu. Není.", tags: [nodding, calm smile]}
+      - {see: "Jana se zarazí. Čekala odpor.", shot: close-up, who: jana, tags: [surprised, blinking, frozen, holding fork]}
+      - {say: jana, text: "Tak vidíš.", tags: [smirk, satisfied]}
+      - {say: olin, text: "Jenom si myslím, že kreativní člověk může tvořit i s nástrojem.", tags: [calm smile, open hand]}
+      - {say: jana, text: "Ale to já přece nepopírám.", tags: [frown, hand on chest]}
+      - {say: olin, text: "Výborně. Tak jsme zajedno.", tags: [wide smile, raising beer mug]}
+      - {say: jana, text: "Nejsme zajedno. Ty mi pořád vysvětluješ něco, co já dávno vím.", shot: close-up, tags: [annoyed, narrowed eyes, pointing with fork]}
+      - {see: "Olin pomalu upije piva.", shot: medium, who: olin, tags: [drinking beer, beer mug, eyes closed, calm]}
+      - {say: olin, text: "To je možné.", shot: close-up, tags: [smug smile, half-closed eyes]}
+
+  s2:
+    title: Dva světonázory
+    location: l_plaz
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    next: s3
+    script:
+      - {see: "SCÉNA 2 – DVA SVĚTONÁZORY", shot: establishing, tags: [beach restaurant, table on the sand, parasols, golden hour, sea breeze, no humans], gap: medium}
+      - {see: "Jana si upraví ubrousek.", shot: medium, who: jana, tags: [adjusting napkin, sitting at a table, precise, composed]}
+      - {say: jana, text: "Já s AI pracuju každý den. Vím, co umí. Jen mě nebaví, jak se z toho všichni můžou zbláznit.", tags: [serious, looking at another, hands folded]}
+      - {say: olin, text: "Rozumím.", tags: [nodding, gentle smile]}
+      - {say: jana, text: "Ne, nerozumíš. Jinak bys mi to pořád nenabízel.", shot: close-up, tags: [shaking head, frown]}
+      - {say: olin, text: "Já ti nic nenabízím. Jen jsem ti ukázal, co jsem vytvořil.", tags: [open hands, calm smile]}
+      - {say: jana, text: "Ale proč?", tags: [raised eyebrow, puzzled]}
+      - {say: olin, text: "Protože jsem z toho měl radost.", tags: [happy smile, eyes closed]}
+      - {see: "Krátká pauza.", shot: wide, loc: l_stul_plaz, tags: [table on the sand, goulash, spaghetti, beer mug, wine glass, sunset, no humans], gap: medium}
+      - {say: jana, text: "No tak to je samozřejmě v pořádku.", tags: [polite smile, slight nod]}
+      - {say: olin, text: "Děkuju.", tags: [smile, slight bow]}
+      - {say: jana, text: "Ale nemusíš očekávat, že to budu obdivovat.", tags: [crossed arms, sceptical]}
+      - {say: olin, text: "To samozřejmě neočekávám.", tags: [calm smile, shaking head]}
+      - {say: jana, text: "Tak proč mi to ukazuješ?", shot: close-up, tags: [leaning forward, frown]}
+      - {see: "Olin se usměje ještě o něco víc.", shot: close-up, who: olin, tags: [wide smile, closed eyes, content]}
+      - {say: olin, text: "Protože jsem chtěl.", tags: [wide smile, relaxed]}
+      - {see: "Jana položí vidličku.", shot: close-up, who: jana, tags: [putting down fork, plate of spaghetti, hand], animate: "she sets the fork down beside the plate with a decisive click"}
+      - {say: jana, text: "Víš, co je na tobě zajímavé? Ty se vždycky tváříš, jako bys byl nad věcí.", tags: [narrowed eyes, looking at another]}
+      - {say: olin, text: "To je možné.", tags: [smug smile, half-closed eyes]}
+      - {say: jana, text: "To není možné. To je vidět.", shot: close-up, tags: [pointing at another, sharp gaze]}
+      - {say: olin, text: "Tak to jsem rád, že to vidíš.", shot: close-up, tags: [beaming smile, eyes closed]}
+
+  s3:
+    title: Pokus o smír
+    location: l_plaz
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    next: s4
+    script:
+      - {see: "SCÉNA 3 – POKUS O SMÍR", shot: establishing, tags: [beach restaurant, beach bar, neon sign, parasols, sunset, no humans], gap: medium}
+      - {see: "Robotický číšník přinese další pivo a dolije Janě víno. Jeho mechanický hlas oznámí:", shot: medium, who: robot, tags: [robot waiter, pouring wine, beer mug on tray, beach restaurant], animate: "the robot waiter pours white wine, its screen face blinking"}
+      - {say: robot, text: "Detekováno zvýšení napětí u stolu. Přejete si aktivovat režim mediace?", tags: [warning icon on screen, holding a tray]}
+      - {say: jana, text: "Ne.", shot: close-up, tags: [deadpan, not looking]}
+      - {say: olin, text: "Klidně.", shot: close-up, tags: [cheerful smile, raising hand]}
+      - {say: robot, text: "Rozpor v požadavcích. Doporučuji společnou komunikaci.", tags: [confused face on screen, tilted head]}
+      - {say: jana, text: "Vidíš? Dokonce i robot ví, že se musíme domluvit.", tags: [pointing sideways, triumphant]}
+      - {say: olin, text: "Nebo že se nemusíme.", tags: [calm smile, shrugging]}
+      - {say: jana, text: "To je přesně ono.", shot: close-up, tags: [pointing at another, sharp gaze]}
+      - {say: olin, text: "Co?", tags: [innocent smile, raised eyebrows]}
+      - {say: jana, text: "Ty vždycky musíš mít nějakou chytrou odpověď.", tags: [exasperated, hand gesture]}
+      - {say: olin, text: "Nemusím.", tags: [calm smile]}
+      - {say: jana, text: "Ale máš ji.", tags: [narrowed eyes, smirk]}
+      - {say: olin, text: "Někdy.", tags: [smug smile, half-closed eyes]}
+      - {say: jana, text: "A ještě se u toho usmíváš!", shot: close-up, tags: [exasperated, open mouth, pointing at another]}
+      - {see: "Olin se podívá na svůj guláš.", shot: close-up, who: olin, tags: [looking down, goulash, bread dumplings, smile]}
+      - {say: olin, text: "Ten guláš je opravdu dobrý.", tags: [content smile, holding fork, looking down]}
+      - {say: jana, text: "Prosím tě, můžeš být chvíli vážný?", tags: [facepalm, frown]}
+      - {say: olin, text: "Jsem vážný. Jen mám rád guláš.", shot: close-up, tags: [serious face, slight smile, holding fork]}
+
+  s4:
+    title: Poslední slovo
+    location: l_plaz
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    next: s5
+    script:
+      - {see: "SCÉNA 4 – POSLEDNÍ SLOVO", shot: establishing, tags: [beach restaurant, empty tables, string lights, late sunset, no humans], gap: medium}
+      - {see: "Jana se napije vína a rozhodne se rozhovor uzavřít.", shot: medium, who: jana, tags: [drinking wine, wine glass, eyes closed, determined]}
+      - {say: jana, text: "Hele, já ti tvoje projekty neberu. Já ti fandím. Jenom prostě nejsem tvoje cílovka. To je celé.", tags: [conciliatory smile, open hand, looking at another]}
+      - {say: olin, text: "To je naprosto v pořádku.", tags: [warm smile, nodding]}
+      - {say: jana, text: "Tak vidíš. Konečně se chápeme.", tags: [satisfied smile, relieved]}
+      - {say: olin, text: "Ano.", tags: [calm smile]}
+      - {say: jana, text: "A nemusíš mi pořád dokazovat, jak je AI úžasná.", tags: [raised finger, sceptical]}
+      - {say: olin, text: "Nebudu.", tags: [calm smile, shaking head]}
+      - {say: jana, text: "Protože já o tom vím svoje.", tags: [crossed arms, confident]}
+      - {say: olin, text: "Určitě.", tags: [smile, half-closed eyes]}
+      - {say: jana, text: "A nemám potřebu se o tom dál bavit.", tags: [looking away, chin up]}
+      - {say: olin, text: "Skvělé.", shot: close-up, tags: [beaming smile]}
+      - {see: "Ticho.", shot: wide, loc: l_stul_plaz, tags: [table on the sand, half-eaten goulash, spaghetti, beer mug, wine glass, waves, no humans], gap: medium, animate: "waves rolling softly, parasol fringe moving in the breeze, static camera"}
+      - {see: "Olin ukrojí další knedlík.", shot: close-up, who: olin, tags: [cutting bread dumpling, fork, goulash, content smile]}
+      - {say: jana, text: "Jenom abys věděl, že to neznamená, že s tebou souhlasím.", tags: [narrowed eyes, raised finger]}
+      - {say: olin, text: "To by mě ani nenapadlo.", tags: [innocent smile, raised eyebrows]}
+      - {say: jana, text: "A nemusíš být ironický.", tags: [frown, sharp gaze]}
+      - {say: olin, text: "Nejsem.", tags: [calm smile]}
+      - {say: jana, text: "Jsi.", shot: close-up, tags: [glare, pointing at another]}
+      - {say: olin, text: "Dobře.", shot: close-up, tags: [gentle smile, shrugging]}
+      - {say: jana, text: "Neříkej dobře, když to tak nemyslíš.", tags: [exasperated, leaning forward]}
+      - {see: "Olin se pomalu napije piva.", shot: medium, who: olin, tags: [drinking beer, beer mug, eyes closed, calm], animate: "he slowly lifts the beer mug and takes a long calm sip"}
+      - {say: olin, text: "Tak co mám říkat?", tags: [calm smile, open hands]}
+      - {see: "Jana se nadechne, ale nenachází odpověď.", shot: close-up, who: jana, tags: [inhaling, open mouth, speechless, frozen]}
+      - {say: olin, text: "Nic. To je taky možnost.", shot: close-up, tags: [quiet smile, half-closed eyes, soft]}
+
+  s5:
+    title: Epilog – Umělá inteligence
+    location: l_plaz
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    ending: good
+    script:
+      - {see: "EPILOG – UMĚLÁ INTELIGENCE", shot: establishing, tags: [beach restaurant, beach bar, neon sign, dusk, string lights, no humans], gap: medium}
+      - {see: "Robotický číšník se vrátí.", shot: medium, who: robot, tags: [robot waiter, rolling in, sand, sunset]}
+      - {say: robot, text: "Vaše konverzace byla analyzována. Výsledek: oba účastníci mají pravdu podle vlastního hodnoticího systému. Pravděpodobnost dosažení konsenzu: 0,3 %.", tags: [chart on screen, holding a tray], animate: "a tiny bar chart flickers across the robot's screen face"}
+      - {say: jana, text: "To je nesmysl. Já přece neříkám, že mám vždycky pravdu.", tags: [indignant, hand on chest]}
+      - {say: olin, text: "Samozřejmě.", tags: [smile, half-closed eyes]}
+      - {say: jana, text: "A ty se zase tváříš, že jsi vyhrál.", tags: [narrowed eyes, pointing at another]}
+      - {say: olin, text: "Já jsem nevěděl, že soutěžíme.", shot: close-up, tags: [innocent smile, raised eyebrows]}
+      - {see: "Jana se na něj podívá.", shot: close-up, who: jana, tags: [staring, looking at another, unimpressed]}
+      - {see: "Olin dojí poslední knedlík.", shot: close-up, who: olin, tags: [eating, last bread dumpling, empty plate, content smile]}
+      - {say: robot, text: "Přejete si účet rozdělit, nebo společně?", tags: [receipt, holding a tray, smiley face on screen]}
+      - {say: jana, text: "Každý zvlášť.", shot: close-up, tags: [firm, raised finger]}
+      - {say: olin, text: "Společně.", shot: close-up, tags: [smile, raising hand]}
+      - {see: "Robot se zastaví.", shot: medium, who: robot, tags: [robot waiter, frozen, loading icon on screen]}
+      - {say: robot, text: "Výborně. První shoda za posledních 47 minut.", tags: [happy face on screen, confetti on screen]}
+      - {say: jana, text: "To není shoda. Já jsem řekla každý zvlášť.", tags: [indignant, frown, looking at another]}
+      - {see: "Olin se zvedne, stále s úsměvem.", shot: medium, who: olin, tags: [standing up, smile, beach restaurant, sunset]}
+      - {say: olin, text: "Tak to máme vyřešené.", pose: [upper body, from front, standing], tags: [calm smile, looking at another]}
+      - {see: "Světla zhasnou. Neonový nápis nad barem zabliká:", caption: "V BUDOUCNOSTI BUDE MÍT KAŽDÝ PRAVDU. JEN NE VE STEJNOU CHVÍLI.", shot: wide, tags: [beach bar, glowing neon sign, dusk, empty beach, parasols, no humans], gap: large, animate: "the lights go out one by one, the neon sign above the bar blinks, waves in the dusk"}

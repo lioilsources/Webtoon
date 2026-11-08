@@ -1,0 +1,593 @@
+{
+  "title": "Epilog – Umělá inteligence",
+  "title_i18n": {
+    "en": "Epilogue – Artificial Intelligence",
+    "de": "Epilog – Künstliche Intelligenz",
+    "it": "Epilogo – Intelligenza artificiale",
+    "fr": "Épilogue – Intelligence artificielle",
+    "pl": "Epilog – Sztuczna inteligencja",
+    "pt-BR": "Epílogo – Inteligência artificial",
+    "ja": "エピローグ――人工知能",
+    "ko": "에필로그 – 인공지능",
+    "vi": "Phần kết – Trí tuệ nhân tạo",
+    "ru": "Эпилог – Искусственный интеллект",
+    "uk": "Епілог – Штучний інтелект"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach restaurant",
+        "beach bar",
+        "neon sign",
+        "dusk",
+        "string lights",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "rolling in",
+        "sand",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "chart on screen",
+        "holding a tray"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robot",
+          "text": "Vaše konverzace byla analyzována. Výsledek: oba účastníci mají pravdu podle vlastního hodnoticího systému. Pravděpodobnost dosažení konsenzu: 0,3 %.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Your conversation has been analysed. Result: both participants are right by their own rating system. Probability of consensus: 0.3%.",
+            "de": "Ihr Gespräch wurde analysiert. Ergebnis: Beide haben nach ihrem eigenen Bewertungssystem recht. Wahrscheinlichkeit eines Konsenses: 0,3 %.",
+            "it": "Conversazione analizzata. Risultato: entrambi hanno ragione secondo il proprio sistema di valutazione. Probabilità di consenso: 0,3 %.",
+            "fr": "Conversation analysée. Résultat : chacun a raison selon son propre système d'évaluation. Probabilité de consensus : 0,3 %.",
+            "pl": "Rozmowa przeanalizowana. Wynik: obaj uczestnicy mają rację według własnego systemu ocen. Szansa na konsensus: 0,3%.",
+            "pt-BR": "Conversa analisada. Resultado: os dois têm razão pelo próprio sistema de avaliação. Probabilidade de consenso: 0,3%.",
+            "ja": "会話を分析しました。結果：両者とも自らの評価基準において正しい。合意に至る確率：0.3%。",
+            "ko": "대화 분석이 완료되었습니다. 결과: 두 분 모두 각자의 평가 체계에 따르면 옳습니다. 합의 도달 확률: 0.3%.",
+            "vi": "Đã phân tích cuộc trò chuyện. Kết quả: cả hai đều đúng theo hệ thống đánh giá của riêng mình. Xác suất đồng thuận: 0,3%.",
+            "ru": "Ваш разговор проанализирован. Итог: оба участника правы по собственной системе оценки. Вероятность консенсуса: 0,3 %.",
+            "uk": "Вашу розмову проаналізовано. Підсумок: обидва учасники мають рацію за власною системою оцінювання. Імовірність консенсусу: 0,3 %."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a tiny bar chart flickers across the robot's screen face"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "indignant",
+        "hand on chest"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "To je nesmysl. Já přece neříkám, že mám vždycky pravdu.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's nonsense. I never say I'm always right.",
+            "de": "Das ist Unsinn. Ich sage doch nicht, dass ich immer recht habe.",
+            "it": "Che assurdità. Non dico mica di avere sempre ragione.",
+            "fr": "C'est absurde. Je ne dis pas que j'ai toujours raison, moi.",
+            "pl": "To bzdura. Przecież nie mówię, że zawsze mam rację.",
+            "pt-BR": "Que absurdo. Eu não digo que sempre tenho razão.",
+            "ja": "ばかばかしい。私はいつも正しいなんて言ってないでしょ。",
+            "ko": "말도 안 돼. 난 내가 항상 옳다고 하지 않잖아.",
+            "vi": "Vô lý. Em đâu có nói em lúc nào cũng đúng.",
+            "ru": "Чушь. Я же не говорю, что я всегда права.",
+            "uk": "Дурниці. Я ж не кажу, що завжди маю рацію."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Samozřejmě.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Of course.",
+            "de": "Natürlich.",
+            "it": "Certo.",
+            "fr": "Évidemment.",
+            "pl": "Oczywiście.",
+            "pt-BR": "Claro.",
+            "ja": "もちろん。",
+            "ko": "물론이지.",
+            "vi": "Dĩ nhiên.",
+            "ru": "Разумеется.",
+            "uk": "Звісно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "narrowed eyes",
+        "pointing at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "A ty se zase tváříš, že jsi vyhrál.",
+          "kind": "speech",
+          "i18n": {
+            "en": "And there you go again, looking like you've won.",
+            "de": "Und du tust schon wieder so, als hättest du gewonnen.",
+            "it": "E tu di nuovo con la faccia di chi ha vinto.",
+            "fr": "Et toi, tu prends encore l'air de celui qui a gagné.",
+            "pl": "A ty znowu masz minę, jakbyś wygrał.",
+            "pt-BR": "E você de novo com essa cara de quem ganhou.",
+            "ja": "で、あなたはまた勝ったみたいな顔してる。",
+            "ko": "그리고 넌 또 이긴 것 같은 표정이고.",
+            "vi": "Còn anh lại làm ra vẻ mình thắng.",
+            "ru": "А ты опять делаешь вид, что победил.",
+            "uk": "А ти знову вдаєш, що переміг."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "innocent smile",
+        "raised eyebrows"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Já jsem nevěděl, že soutěžíme.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I didn't know we were competing.",
+            "de": "Ich wusste nicht, dass wir einen Wettkampf haben.",
+            "it": "Non sapevo che fosse una gara.",
+            "fr": "Je ne savais pas qu'on était en compétition.",
+            "pl": "Nie wiedziałem, że rywalizujemy.",
+            "pt-BR": "Eu não sabia que era uma competição.",
+            "ja": "勝負してるなんて知らなかったよ。",
+            "ko": "우리가 시합하는 줄 몰랐네.",
+            "vi": "Anh đâu biết là ta đang thi.",
+            "ru": "Я не знал, что мы соревнуемся.",
+            "uk": "Я не знав, що ми змагаємося."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "staring",
+        "looking at another",
+        "unimpressed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "eating",
+        "last bread dumpling",
+        "empty plate",
+        "content smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "receipt",
+        "holding a tray",
+        "smiley face on screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robot",
+          "text": "Přejete si účet rozdělit, nebo společně?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Would you like separate bills or one together?",
+            "de": "Möchten Sie getrennt oder zusammen zahlen?",
+            "it": "Desiderate pagare separatamente o insieme?",
+            "fr": "Souhaitez-vous payer séparément ou ensemble ?",
+            "pl": "Rachunek osobno czy razem?",
+            "pt-BR": "Desejam dividir a conta ou pagar juntos?",
+            "ja": "お会計は別々になさいますか、ご一緒になさいますか？",
+            "ko": "계산은 따로 하시겠습니까, 같이 하시겠습니까?",
+            "vi": "Quý khách muốn tách hóa đơn hay trả chung?",
+            "ru": "Желаете разделить счёт или вместе?",
+            "uk": "Бажаєте розділити рахунок чи разом?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "firm",
+        "raised finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Každý zvlášť.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Separately.",
+            "de": "Getrennt.",
+            "it": "Separatamente.",
+            "fr": "Séparément.",
+            "pl": "Osobno.",
+            "pt-BR": "Separado.",
+            "ja": "別々で。",
+            "ko": "따로요.",
+            "vi": "Riêng.",
+            "ru": "Раздельно.",
+            "uk": "Окремо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smile",
+        "raising hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Společně.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Together.",
+            "de": "Zusammen.",
+            "it": "Insieme.",
+            "fr": "Ensemble.",
+            "pl": "Razem.",
+            "pt-BR": "Junto.",
+            "ja": "一緒で。",
+            "ko": "같이요.",
+            "vi": "Chung.",
+            "ru": "Вместе.",
+            "uk": "Разом."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "frozen",
+        "loading icon on screen"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "happy face on screen",
+        "confetti on screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robot",
+          "text": "Výborně. První shoda za posledních 47 minut.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Excellent. The first agreement in the last 47 minutes.",
+            "de": "Ausgezeichnet. Die erste Übereinstimmung seit 47 Minuten.",
+            "it": "Ottimo. Primo accordo negli ultimi 47 minuti.",
+            "fr": "Excellent. Premier accord depuis 47 minutes.",
+            "pl": "Doskonale. Pierwsza zgoda od 47 minut.",
+            "pt-BR": "Excelente. Primeiro acordo nos últimos 47 minutos.",
+            "ja": "素晴らしい。この47分間で初めての合意です。",
+            "ko": "훌륭합니다. 최근 47분 만의 첫 합의입니다.",
+            "vi": "Tuyệt vời. Lần đồng thuận đầu tiên trong 47 phút qua.",
+            "ru": "Превосходно. Первое согласие за последние 47 минут.",
+            "uk": "Чудово. Перша згода за останні 47 хвилин."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "indignant",
+        "frown",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "To není shoda. Já jsem řekla každý zvlášť.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's not agreement. I said separately.",
+            "de": "Das ist keine Übereinstimmung. Ich habe getrennt gesagt.",
+            "it": "Non è un accordo. Io ho detto separatamente.",
+            "fr": "Ce n'est pas un accord. J'ai dit séparément.",
+            "pl": "To nie jest zgoda. Powiedziałam osobno.",
+            "pt-BR": "Isso não é acordo. Eu disse separado.",
+            "ja": "合意じゃない。私は別々って言ったの。",
+            "ko": "합의 아니에요. 난 따로라고 했어요.",
+            "vi": "Đó không phải đồng thuận. Em đã nói là riêng.",
+            "ru": "Это не согласие. Я сказала — раздельно.",
+            "uk": "Це не згода. Я сказала — окремо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "standing up",
+        "smile",
+        "beach restaurant",
+        "sunset"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "calm smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Tak to máme vyřešené.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Well, that's settled then.",
+            "de": "Dann wäre das ja geklärt.",
+            "it": "Allora è risolto.",
+            "fr": "Bon, c'est réglé.",
+            "pl": "No to mamy to załatwione.",
+            "pt-BR": "Então está resolvido.",
+            "ja": "じゃあ、これで解決だね。",
+            "ko": "그럼 해결됐네.",
+            "vi": "Vậy là xong chuyện rồi.",
+            "ru": "Ну вот и решили.",
+            "uk": "Ну от і вирішили."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach bar",
+        "glowing neon sign",
+        "dusk",
+        "empty beach",
+        "parasols",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "V BUDOUCNOSTI BUDE MÍT KAŽDÝ PRAVDU. JEN NE VE STEJNOU CHVÍLI.",
+          "kind": "narration",
+          "i18n": {
+            "en": "IN THE FUTURE EVERYONE WILL BE RIGHT. JUST NOT AT THE SAME TIME.",
+            "de": "IN DER ZUKUNFT WIRD JEDER RECHT HABEN. NUR NICHT ZUR GLEICHEN ZEIT.",
+            "it": "IN FUTURO OGNUNO AVRÀ RAGIONE. SOLO NON NELLO STESSO MOMENTO.",
+            "fr": "DANS LE FUTUR, CHACUN AURA RAISON. MAIS PAS AU MÊME MOMENT.",
+            "pl": "W PRZYSZŁOŚCI KAŻDY BĘDZIE MIAŁ RACJĘ. TYLKO NIE W TEJ SAMEJ CHWILI.",
+            "pt-BR": "NO FUTURO, TODO MUNDO TERÁ RAZÃO. SÓ QUE NÃO AO MESMO TEMPO.",
+            "ja": "未来では誰もが正しい。ただし、同時にではない。",
+            "ko": "미래에는 모두가 옳을 것이다. 다만 같은 순간은 아니다.",
+            "vi": "TRONG TƯƠNG LAI AI CŨNG ĐÚNG. CHỈ LÀ KHÔNG CÙNG MỘT LÚC.",
+            "ru": "В БУДУЩЕМ КАЖДЫЙ БУДЕТ ПРАВ. ТОЛЬКО НЕ В ОДНО И ТО ЖЕ ВРЕМЯ.",
+            "uk": "У МАЙБУТНЬОМУ КОЖЕН МАТИМЕ РАЦІЮ. ТІЛЬКИ НЕ ВОДНОЧАС."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the lights go out one by one, the neon sign above the bar blinks, waves in the dusk"
+    }
+  ]
+}

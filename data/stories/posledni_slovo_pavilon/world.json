@@ -1,0 +1,125 @@
+{
+  "id": "w_posledni_slovo_pavilon",
+  "title": "Poslední slovo (pavilon)",
+  "title_i18n": {
+    "en": "The Last Word (Pavilion)",
+    "de": "Das letzte Wort (Pavillon)",
+    "it": "L'ultima parola (padiglione)",
+    "fr": "Le dernier mot (pavillon)",
+    "pl": "Ostatnie słowo (pawilon)",
+    "pt-BR": "A última palavra (pavilhão)",
+    "ja": "最後のひと言（東屋）",
+    "ko": "마지막 한마디 (정자)",
+    "vi": "Lời cuối cùng (đình)",
+    "ru": "Последнее слово (павильон)",
+    "uk": "Останнє слово (павільйон)"
+  },
+  "synopsis": "Venkovní restaurace v čínském pavilonu, prší na střechu. Olin u guláše a piva, Jana u špaget a vína, servisní dron s doporučeními. Nikdo se nehádá, a přesto chce Jana mít poslední slovo.",
+  "synopsis_i18n": {
+    "en": "An open-air restaurant in a Chinese pavilion, rain on the roof. Olin over goulash and beer, Jana over spaghetti and wine, a service drone full of recommendations. Nobody is arguing, and yet Jana wants the last word.",
+    "de": "Ein Gartenrestaurant in einem chinesischen Pavillon, Regen auf dem Dach. Olin bei Gulasch und Bier, Jana bei Spaghetti und Wein, dazu eine Servicedrohne voller Empfehlungen. Niemand streitet, und doch will Jana das letzte Wort.",
+    "it": "Un ristorante all'aperto in un padiglione cinese, pioggia sul tetto. Olin con gulasch e birra, Jana con spaghetti e vino, un drone di servizio pieno di consigli. Nessuno litiga, eppure Jana vuole l'ultima parola.",
+    "fr": "Un restaurant en plein air dans un pavillon chinois, la pluie sur le toit. Olin devant un goulash et une bière, Jana devant des spaghetti et du vin, un drone de service plein de recommandations. Personne ne se dispute, et pourtant Jana veut le dernier mot.",
+    "pl": "Restauracja pod gołym niebem w chińskim pawilonie, deszcz na dachu. Olin nad gulaszem i piwem, Jana nad spaghetti i winem, dron obsługi pełen rekomendacji. Nikt się nie kłóci, a jednak Jana chce mieć ostatnie słowo.",
+    "pt-BR": "Um restaurante ao ar livre num pavilhão chinês, chuva no telhado. Olin com gulache e cerveja, Jana com espaguete e vinho, um drone de serviço cheio de sugestões. Ninguém está discutindo, e mesmo assim Jana quer a última palavra.",
+    "ja": "雨の降る中国風の東屋のテラスレストラン。グヤーシュとビールのオリン、スパゲッティとワインのヤナ、そしておすすめばかりの給仕ドローン。誰も口論していない。それでもヤナは最後のひと言が欲しい。",
+    "ko": "지붕 위로 비가 내리는 중국식 정자의 야외 식당. 굴라시와 맥주 앞의 올린, 스파게티와 와인 앞의 야나, 추천을 쏟아내는 서빙 드론. 아무도 다투지 않는다. 그런데도 야나는 마지막 한마디를 원한다.",
+    "vi": "Một quán ăn ngoài trời trong ngôi đình kiểu Trung Hoa, mưa rơi trên mái. Olin bên goulash và bia, Jana bên spaghetti và rượu vang, cùng một drone phục vụ đầy gợi ý. Không ai cãi nhau, vậy mà Jana vẫn muốn nói câu cuối cùng.",
+    "ru": "Ресторан под открытым небом в китайском павильоне, дождь стучит по крыше. Олин над гуляшом и пивом, Яна над спагетти и вином, сервисный дрон с рекомендациями. Никто не спорит, и всё же Яне нужно последнее слово.",
+    "uk": "Ресторан просто неба в китайському павільйоні, дощ стукає по даху. Олін над гуляшем і пивом, Яна над спагеті й вином, сервісний дрон із рекомендаціями. Ніхто не сперечається, і все ж Яні потрібне останнє слово."
+  },
+  "tone": "lehký, ironický, laskavý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "botticelli_pavilon",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba dospělí kolem padesátky, oba nosí brýle; Olin uvolněný a usměvavý, Jana elegantní a přesná. Kreslí se jako Botticelliho tempera v čínském pavilonu, ne manga.",
+      "Hra stojí na tvářích, rytmu a tichu, žádná velká gesta. Jana nikdy nevstane, ani jeden neopustí svůj zákop. Servisní dron je klidný až pasivně agresivní."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nevyhraje: Jana má poslední slovo a Olin ho nechá poslední tím, že mlčí a usmívá se."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_pavilon",
+      "l_stul_pavilon"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_48",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a relaxed Czech man about 48 with short greying brown hair, a short beard and round glasses, smiling calmly with a spark in his eyes",
+      "base": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "loose dark green linen shirt"
+      },
+      "photo": "a relaxed Czech man about 48 with short greying brown hair, a short beard and round glasses, smiling calmly with a spark in his eyes",
+      "tag_prompt": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, loose dark green linen shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_46",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Czech woman about 46 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, precise movements",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant",
+      "outfits": {
+        "default": "cream silk blouse with a mandarin collar"
+      },
+      "photo": "an elegant Czech woman about 46 with a sleek chin-length dark brown bob, thin rectangular glasses and quick, precise movements",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, elegant, cream silk blouse with a mandarin collar",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dron",
+      "name": "Dron",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
+      "base": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
+      "tag_prompt": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_pavilon",
+      "name": "Pavilon NEON GULÁŠ & PASTA",
+      "description": "Venkovní restaurace v čínském zahradním pavilonu: červené lakované sloupy, prohnutá střecha, lampiony, kvetoucí stromy, motýli, jezírko. Prší na střechu.",
+      "tag_prompt": "outdoors, chinese garden pavilion, restaurant, red lacquered columns, curved tiled roof, paper lanterns, flowering trees, butterflies, lotus pond, rain falling from the roof, flowers everywhere",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_pavilon",
+      "name": "Stůl v pavilonu",
+      "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno, kolem květy a motýli.",
+      "tag_prompt": "small round table in a chinese pavilion, flower petals on the table, butterflies, paper lanterns, rain in the background",
+      "mood": ""
+    }
+  ]
+}
