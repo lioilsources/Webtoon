@@ -245,11 +245,36 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
             }),
             style: TextStyle(color: scheme.onSurfaceVariant),
           ),
+          if (pr.visited.length > 1) ...[
+            const SizedBox(height: 2),
+            Text(
+              tr(ui, 'gamebook.revisitHint'),
+              style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
+            ),
+          ],
           const SizedBox(height: 12),
           for (final id in g.order)
             ListTile(
               key: ValueKey('map-node-$id'),
               dense: true,
+              // a chapter already read opens again, read-only: the progress stays where it is
+              onTap: pr.visited.contains(id)
+                  ? () {
+                      Navigator.pop(ctx);
+                      Navigator.of(context).push(
+                        MaterialPageRoute<void>(
+                          builder: (_) => GamebookRevisitScreen(
+                            gamebookId: g.id,
+                            chapters: [
+                              for (final n in g.order)
+                                if (pr.visited.contains(n)) n,
+                            ],
+                            start: id,
+                          ),
+                        ),
+                      );
+                    }
+                  : null,
               leading: Icon(
                 id == pr.node
                     ? Icons.place_rounded
@@ -276,6 +301,85 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
             },
             icon: const Icon(Icons.replay_rounded),
             label: Text(tr(ui, 'gamebook.restart')),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Re-reading the chapters already unlocked ("Moje cesta" → a visited chapter): one chapter at a
+/// time with previous / next among the visited ones, in the book's order. Read-only: no choices,
+/// and the saved progress is not touched.
+class GamebookRevisitScreen extends ConsumerStatefulWidget {
+  final String gamebookId;
+  final List<String> chapters;
+  final String start;
+  const GamebookRevisitScreen({
+    super.key,
+    required this.gamebookId,
+    required this.chapters,
+    required this.start,
+  });
+
+  @override
+  ConsumerState<GamebookRevisitScreen> createState() =>
+      _GamebookRevisitScreenState();
+}
+
+class _GamebookRevisitScreenState extends ConsumerState<GamebookRevisitScreen> {
+  late int _i = widget.chapters.indexOf(widget.start).clamp(0, 1 << 30);
+
+  @override
+  Widget build(BuildContext context) {
+    final g = ref.watch(packStoreProvider).gamebook(widget.gamebookId);
+    final ui = ref.watch(uiLanguageProvider);
+    final node = g?.node(widget.chapters[_i]);
+    if (g == null || node == null) {
+      return Scaffold(
+        appBar: AppBar(),
+        body: EmptyState(
+          icon: Icons.menu_book_outlined,
+          title: tr(ui, 'gamebook.missingNode'),
+        ),
+      );
+    }
+    final hasPrev = _i > 0, hasNext = _i < widget.chapters.length - 1;
+    return Scaffold(
+      appBar: AppBar(title: Text(node.title, overflow: TextOverflow.ellipsis)),
+      body: ListView(
+        key: ValueKey('revisit-${node.id}'),
+        padding: const EdgeInsets.only(bottom: 24),
+        children: [
+          EpisodeView(
+            key: ValueKey('revisit-episode-${node.episodeId}'),
+            episodeId: node.episodeId,
+            footer: (_) => Padding(
+              padding: const EdgeInsets.fromLTRB(16, 20, 16, 8),
+              child: Row(
+                children: [
+                  if (hasPrev)
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        key: const ValueKey('revisit-prev'),
+                        onPressed: () => setState(() => _i--),
+                        icon: const Icon(Icons.chevron_left_rounded),
+                        label: Text(tr(ui, 'gamebook.prevChapter')),
+                      ),
+                    ),
+                  if (hasPrev && hasNext) const SizedBox(width: 12),
+                  if (hasNext)
+                    Expanded(
+                      child: FilledButton.icon(
+                        key: const ValueKey('revisit-next'),
+                        onPressed: () => setState(() => _i++),
+                        icon: const Icon(Icons.chevron_right_rounded),
+                        label: Text(tr(ui, 'gamebook.nextChapter')),
+                      ),
+                    ),
+                ],
+              ),
+            ),
           ),
         ],
       ),

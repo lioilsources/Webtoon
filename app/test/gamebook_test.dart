@@ -484,6 +484,34 @@ void main() {
       expect(find.text('Moje chodba'), findsOneWidget);
       expect(find.text('Konec tvé větve'), findsOneWidget);
     });
+
+    testWidgets('Moje cesta: a read chapter opens again, progress untouched', (
+      tester,
+    ) async {
+      final repo = MemoryGamebookRepository();
+      await tester.pumpWidget(
+        app(repo, const GamebookScreen(gamebookId: 'test')),
+      );
+      await tester.pumpAndSettle();
+      await tapChoice(tester, 'to_b');
+      expect(repo.progress['test']!.node, 'b');
+      await tester.tap(find.byKey(const ValueKey('gamebook-map')));
+      await tester.pumpAndSettle();
+      expect(
+        find.text('Klepni na přečtenou kapitolu a přečti si ji znovu'),
+        findsOneWidget,
+      );
+      await tester.tap(find.byKey(const ValueKey('map-node-a')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('revisit-a')), findsOneWidget);
+      await show(tester, find.byKey(const ValueKey('revisit-next')));
+      expect(find.byKey(const ValueKey('revisit-prev')), findsNothing);
+      await tester.tap(find.byKey(const ValueKey('revisit-next')));
+      await tester.pumpAndSettle();
+      expect(find.byKey(const ValueKey('revisit-b')), findsOneWidget);
+      // read-only: the saved place in the book did not move
+      expect(repo.progress['test']!.node, 'b');
+    });
   });
 }
 
