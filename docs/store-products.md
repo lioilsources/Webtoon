@@ -113,8 +113,8 @@ Per product (**Monetize → Products → In-app products → Create product**):
 
 Bulk: **In-app products → Import** accepts a CSV in Play's own format (`Product ID,Published State,Purchase
 Type,Auto Translate,Locale; Title; Description,Auto Fill Prices,Price,Pricing Template ID`). Convert
-`tools/products.csv`: `pack_kids_1,published,managed_by_android,false,en_US; Kids 1; 50 comic stories in 12
-languages; cs_CZ; Pro děti 1; 50 komiksových příběhů, 12 jazyků,true,990000,` (price in micros of the default
+`tools/products.csv`: `pack_kids_1,published,managed_by_android,false,en_US; Kids 1; A pack of comic stories, 12
+languages; cs_CZ; Pro děti 1; Balíček komiksových příběhů, 12 jazyků,true,990000,` (price in micros of the default
 currency). Or use the Play Developer API (`inappproducts.insert` / `monetization.onetimeproducts`).
 
 Testing: **Setup → License testing** → add tester Gmail accounts (test purchases are free and auto-refunded);
@@ -125,7 +125,7 @@ install from the internal testing track. Promo codes: **Monetize → Promo codes
 ```
 Toonfork is a free offline webtoon reader. 15 stories are bundled in the app and are free (no account,
 no purchase). Additional story packs are optional non-consumable in-app purchases (Obchod tab):
-pack_<type>_<n> unlocks one pack of 50 stories, bundle_<type> unlocks every current and future pack of
+pack_<type>_<n> unlocks one pack of up to 50 stories, bundle_<type> unlocks every current and future pack of
 one type, bundle_all unlocks everything.
 
 After a purchase the app downloads the pack (zip files, ~50–150 MB) from GitHub Releases

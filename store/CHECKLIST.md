@@ -6,24 +6,14 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
 
 ## Data to republish (Direktor on M2) before the store release
 
-Changed in the repo on 2026-11-05, not in the live catalog yet:
-- Gamebooks **sara** (translations into 11 languages; node `n2` trimmed from 12 to 5 panels: panels 5–11 repeated
-  panel 4) and **mlceni** (translations into 11 languages), **louka** (`title_i18n` was cut at commas by YAML).
-  Re-import their storyboards and export new versions (node ids unchanged, so the update check passes).
-- Pack **superhero-1**: stories `lx_k4_09_leo_zapisnik_osudu` (12 → 7 panels) and `lx_k4_10_max_octo_boy` (12 → 5)
-  ended with the same panel 6–7× in a row (paid content). Re-import and export superhero-1 v3.
-  (`lx_k4_05_amaya_strazkyne_dzungle` had the same defect, 8 → 7; it is in no published pack.)
-- Starter pack (bundled): starter-v1 has no world `title_i18n` / `synopsis_i18n` and 4 untranslated story titles.
-  starter-v2 is `data/starter_showcase.yaml` (15 stories, version 2). Its 15 source worlds now carry `title_i18n` /
-  `synopsis_i18n` in `world.json` (restyle.sh copies them), and export-pack writes them into pack.json. Export it,
-  publish it as the `starter-v2` release, then tag a build: the release workflows take starter-v2 when it exists,
-  else starter-v1.
+- [x] Done 2026-11-07: gamebooks sara, mlceni, louka re-exported; superhero-1 v3; `starter-v2` released (15 stories,
+      52 MB); new gamebooks kulovyblesk and kulovyblesktus; catalog webtoon-content v26; build `v0.6.1-alpha`.
 
 ## Before either store
 
 - [x] Privacy policy filled in (ol1n, oldrich.vorechovsky.jr@gmail.com, effective 2026-11-05) and written as
       `docs/privacy.html`, with `docs/support.html` and `docs/index.html` (same layout as MirrorBooth / Kiran).
-- [ ] Publish them: merge to `main`, then GitHub Pages for this repo from `main` `/docs`. URLs:
+- [x] Publish them (live, HTTP 200): merge to `main`, then GitHub Pages for this repo from `main` `/docs`. URLs:
       privacy https://lioilsources.github.io/Webtoon/privacy.html · support https://lioilsources.github.io/Webtoon/support.html
       · marketing https://lioilsources.github.io/Webtoon/ (optional on the App Store)
 - [ ] Decide whether to keep "Webtoon" out of the texts. It is a registered trademark (NAVER WEBTOON), so the listings
@@ -31,9 +21,8 @@ Changed in the repo on 2026-11-05, not in the live catalog yet:
 - [ ] The app UI is only partly translated. The store, profile and gate texts are in 12 languages; the rest is in Czech
       (`app/README.md`), and the UI translation is still in progress. The listings promise only that the **stories and
       gamebooks** are in 12 languages; they do not claim a translated interface. Add that line once the UI ships.
-- [ ] All four gamebooks are translated into 12 languages, and the listings say so. Run the **catalog export** before
-      release so that the live `catalog.json` carries the new languages of Sára and Učit se mlčet and Louka's fixed
-      `title_i18n`. Today the live catalog still lists them as Czech only, with truncated de/pl/ru/uk titles of Louka.
+- [x] All gamebooks are translated into 12 languages, and the listings say so. The live catalog (v26) lists all six
+      (sara, mlceni, kovovenebe, louka, kulovyblesk, kulovyblesktus) with 12 languages and full titles.
 
 ## App Store Connect
 
@@ -73,5 +62,5 @@ Changed in the repo on 2026-11-05, not in the live catalog yet:
 - [ ] In-app products: the same 8 ids as above (incl. `pack_harlequin_2`), activated, after a build with BILLING is on a
       track.
 - [ ] Payments profile linked; license testers added.
-- [ ] Countries; release on internal → closed testing. New personal developer accounts need a 12-tester, 14-day closed
-      test before production **[?]: check whether this applies to the account**.
+- [ ] Countries; internal testing (for the products), then **production**. The Play account is a **company**
+      (organization) account: no mandatory 12-tester, 14-day closed test.
