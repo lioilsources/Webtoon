@@ -1,0 +1,501 @@
+{
+  "title": "Sýr",
+  "title_i18n": {
+    "de": "Käse",
+    "en": "Cheese",
+    "fr": "Fromage",
+    "it": "Formaggio",
+    "ja": "チーズ",
+    "ko": "치즈",
+    "pl": "Ser",
+    "pt-BR": "Queijo",
+    "ru": "Сыр",
+    "uk": "Сир",
+    "vi": "Phô mai"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "gilded gramophone horn on the wall",
+        "golden glow",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "holding a glowing chalice",
+        "cheese grater",
+        "hovering over a plate"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "gilded horn",
+        "festive glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "Vážená hosto. Parmazán byl nastrouhán ručně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verehrte Gästin. Der Parmesan wurde von Hand gerieben.",
+            "en": "Dear guestess. The parmesan has been grated by hand.",
+            "fr": "Chère cliente invitée. Le parmesan a été râpé à la main.",
+            "it": "Gentile ospita. Il parmigiano è stato grattugiato a mano.",
+            "ja": "お客様奥様。パルメザンは手作業で削りました。",
+            "ko": "손님 여사님. 파르메산은 손으로 갈았습니다.",
+            "pl": "Szanowna gościni. Parmezan został starty ręcznie.",
+            "pt-BR": "Prezada convidada-cliente. O parmesão foi ralado à mão.",
+            "ru": "Уважаемая гостица. Пармезан натёрт вручную.",
+            "uk": "Шановна гостице. Пармезан натерто вручну.",
+            "vi": "Kính thưa quý bà khách. Phô mai parmesan đã được bào bằng tay."
+          }
+        },
+        {
+          "speaker_id": "reproduktor",
+          "text": "Systém nalezl v jeho struktuře stopu lidského dotyku, jehož genetický profil odpovídá vaší babičce z Matičních Hamrů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das System hat in seiner Struktur eine Spur menschlicher Berührung gefunden, deren genetisches Profil Ihrer Großmutter aus Matiční Hamry entspricht.",
+            "en": "The system has found in its structure a trace of human touch whose genetic profile matches your grandmother from Matiční Hamry.",
+            "fr": "Le système a détecté dans sa structure la trace d'un toucher humain dont le profil génétique correspond à votre grand-mère de Matiční Hamry.",
+            "it": "Il sistema ha trovato nella sua struttura una traccia di tocco umano il cui profilo genetico corrisponde a sua nonna di Matiční Hamry.",
+            "ja": "システムはその構造に人の手の痕跡を検出しました。遺伝子プロファイルは、マティチニー・ハムリにお住まいのお祖母様と一致します。",
+            "ko": "시스템이 그 구조에서 사람 손길의 흔적을 찾아냈습니다. 유전자 프로필이 마티치니 함리에 사시는 할머님과 일치합니다.",
+            "pl": "System znalazł w jego strukturze ślad ludzkiego dotyku, którego profil genetyczny odpowiada pani babci z Matičních Hamrů.",
+            "pt-BR": "O sistema encontrou em sua estrutura um vestígio de toque humano cujo perfil genético corresponde à sua avó de Matiční Hamry.",
+            "ru": "Система обнаружила в его структуре след человеческого прикосновения, генетический профиль которого совпадает с вашей бабушкой из Матичных Гамров.",
+            "uk": "Система виявила в його структурі слід людського дотику, генетичний профіль якого збігається з вашою бабусею з Матичних Гамрів.",
+            "vi": "Hệ thống đã tìm thấy trong cấu trúc của nó dấu vết bàn tay người, với hồ sơ gen trùng khớp với bà của quý khách ở Matiční Hamry."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "frozen",
+        "wide eyes",
+        "surprised"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "grating cheese",
+        "falling cheese",
+        "spaghetti"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "cheese falling in soft flakes onto the spaghetti"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "looking down at spaghetti",
+        "moved",
+        "nostalgic",
+        "wine glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "quiet",
+        "soft expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "...já jsem tohle chtěla, ne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "...das wollte ich doch, oder?",
+            "en": "...this is what I wanted, isn't it?",
+            "fr": "...c'est ce que je voulais, non ?",
+            "it": "...è questo che volevo, no?",
+            "ja": "……これが欲しかったんだよね、私？",
+            "ko": "...내가 원한 게 이거였지, 그치?",
+            "pl": "...przecież tego chciałam, nie?",
+            "pt-BR": "...era isso que eu queria, não era?",
+            "ru": "...я ведь этого хотела, да?",
+            "uk": "...я ж цього хотіла, так?",
+            "vi": "...em đã muốn thế này mà, phải không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "gentle",
+        "serious",
+        "no smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Chci jenom, aby sis to užila.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will nur, dass du es genießt.",
+            "en": "I just want you to enjoy it.",
+            "fr": "Je veux juste que tu en profites.",
+            "it": "Voglio solo che te lo goda.",
+            "ja": "ただ楽しんでほしいだけだよ。",
+            "ko": "그냥 네가 즐겼으면 해.",
+            "pl": "Chcę tylko, żebyś się tym nacieszyła.",
+            "pt-BR": "Só quero que você aproveite.",
+            "ru": "Я просто хочу, чтобы ты получила удовольствие.",
+            "uk": "Я просто хочу, щоб ти насолодилася.",
+            "vi": "Anh chỉ muốn em được tận hưởng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_loutna",
+      "characters": [],
+      "visual_tags": [
+        "tables and chairs",
+        "chairs closer together",
+        "quiet cafe",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "tables and chairs slowly sliding a little closer together"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "quiet",
+        "firm",
+        "looking down at spaghetti"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "...tady máš poslední slovo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "...da hast du das letzte Wort.",
+            "en": "...here, you have the last word.",
+            "fr": "...tiens, à toi le dernier mot.",
+            "it": "...ecco, l'ultima parola è tua.",
+            "ja": "……はい、最後の言葉はあなたにあげる。",
+            "ko": "...자, 마지막 말은 네 거야.",
+            "pl": "...masz tu ostatnie słowo.",
+            "pt-BR": "...pronto, a última palavra é sua.",
+            "ru": "...вот тебе последнее слово.",
+            "uk": "...ось тобі останнє слово.",
+            "vi": "...đây, lời cuối cùng là của anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "quiet",
+        "gentle"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Neberu si ho.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehme es nicht.",
+            "en": "I'm not taking it.",
+            "fr": "Je ne le prends pas.",
+            "it": "Non la prendo.",
+            "ja": "受け取らないよ。",
+            "ko": "안 받을게.",
+            "pl": "Nie biorę go.",
+            "pt-BR": "Eu não vou pegar.",
+            "ru": "Я его не беру.",
+            "uk": "Я його не беру.",
+            "vi": "Anh không nhận đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "head up",
+        "determined",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Tak si ho bereš, protože jsi ho nezakázal, a tím pádem je poslední tvoje!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann nimmst du es doch, weil du es nicht verboten hast, und damit ist das letzte deins!",
+            "en": "Then you're taking it, because you didn't forbid it, which makes the last one yours!",
+            "fr": "Alors tu le prends, parce que tu ne l'as pas interdit, et du coup le dernier est à toi !",
+            "it": "Allora te la prendi, perché non l'hai vietato, e quindi l'ultima è tua!",
+            "ja": "じゃあ受け取ってる。禁止しなかったんだから、最後のはあなたのものよ！",
+            "ko": "그럼 받은 거야. 금지 안 했으니까, 마지막 말은 네 거라고!",
+            "pl": "To go bierzesz, bo nie zabroniłeś, a w takim razie ostatnie jest twoje!",
+            "pt-BR": "Então você está pegando, porque não proibiu, e portanto a última é sua!",
+            "ru": "Значит, берёшь, потому что не запретил, а значит, последнее — твоё!",
+            "uk": "Отже, береш, бо не заборонив, а отже, останнє — твоє!",
+            "vi": "Vậy là anh nhận rồi, vì anh không cấm, nên lời cuối là của anh!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "genuine smile",
+        "warm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "A co mám říct, aby bylo poslední tvoje?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und was muss ich sagen, damit das letzte deins ist?",
+            "en": "And what do I have to say for the last one to be yours?",
+            "fr": "Et qu'est-ce que je dois dire pour que le dernier soit à toi ?",
+            "it": "E cosa devo dire perché l'ultima sia tua?",
+            "ja": "じゃあ、最後のを君のものにするには、何て言えばいい？",
+            "ko": "그럼 마지막 말이 네 것이 되려면 내가 뭐라고 해야 해?",
+            "pl": "A co mam powiedzieć, żeby ostatnie było twoje?",
+            "pt-BR": "E o que eu tenho que dizer pra última ser sua?",
+            "ru": "А что мне сказать, чтобы последнее было твоим?",
+            "uk": "А що мені сказати, щоб останнє було твоїм?",
+            "vi": "Vậy anh phải nói gì để lời cuối là của em?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "sincere",
+        "honest",
+        "soft smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Nic. Prostě nic. Řekni nic.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nichts. Einfach nichts. Sag nichts.",
+            "en": "Nothing. Just nothing. Say nothing.",
+            "fr": "Rien. Juste rien. Ne dis rien.",
+            "it": "Niente. Proprio niente. Non dire niente.",
+            "ja": "何も。本当に何も。何も言わないで。",
+            "ko": "아무것도. 그냥 아무것도. 아무 말도 하지 마.",
+            "pl": "Nic. Po prostu nic. Nic nie mów.",
+            "pt-BR": "Nada. Simplesmente nada. Não diga nada.",
+            "ru": "Ничего. Просто ничего. Скажи ничего.",
+            "uk": "Нічого. Просто нічого. Скажи нічого.",
+            "vi": "Không gì cả. Chẳng gì hết. Đừng nói gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "drinking beer",
+        "beer mug",
+        "silent"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "waiting",
+        "silent",
+        "looking at another"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "praying",
+        "hands together",
+        "holographic menu",
+        "stopped mid-way"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

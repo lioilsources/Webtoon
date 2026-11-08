@@ -1,0 +1,942 @@
+{
+  "title": "Jídlo je na stole",
+  "title_i18n": {
+    "de": "Das Essen steht auf dem Tisch",
+    "en": "Dinner Is Served",
+    "fr": "Le dîner est servi",
+    "it": "La cena è in tavola",
+    "ja": "料理がテーブルに",
+    "ko": "음식이 나왔다",
+    "pl": "Jedzenie na stole",
+    "pt-BR": "O jantar está na mesa",
+    "ru": "Еда на столе",
+    "uk": "Їжа на столі",
+    "vi": "Món ăn đã lên bàn"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "1960s dining hall",
+        "sandstone arches",
+        "neon sign above the counter",
+        "retro posters",
+        "classic cars outside",
+        "dusk",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "U KN DLÍKU 2089",
+          "kind": "narration",
+          "i18n": {
+            "de": "ZUM KN DEL 2089",
+            "en": "AT THE DUMPL NG 2089",
+            "fr": "À LA QU NELLE 2089",
+            "it": "AL CAN DERLO 2089",
+            "ja": "クネ リーキ亭 2089",
+            "ko": "크네 리키 2089",
+            "pl": "POD KN DLEM 2089",
+            "pt-BR": "NO BOL NHO 2089",
+            "ru": "У КН ДЛИКА 2089",
+            "uk": "У КН ДЛИКА 2089",
+            "vi": "QUÁN BÁNH B O 2089"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the neon sign buzzing with one dead letter, posters flickering, car headlights passing outside, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "vintage television above the counter",
+        "glowing screen",
+        "cables hanging from the ceiling",
+        "dark hall",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_menza",
+      "characters": [],
+      "visual_tags": [
+        "single lit table",
+        "hanging lamp",
+        "goulash",
+        "spaghetti",
+        "beer mug",
+        "wine glass",
+        "dark hall",
+        "distant robot light",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "a small robot light gliding through the dark hall behind the lit table, lamp light steady"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a table",
+        "eating goulash",
+        "bread dumplings",
+        "beer mug",
+        "lamp light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a table",
+        "twirling spaghetti",
+        "fork",
+        "wine glass",
+        "not eating"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "rolling in",
+        "holographic face",
+        "glitching face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the holographic face jumps from a smile to a sad face and back, a beat too late"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic smile",
+        "polite bow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robotcisnik",
+          "text": "Chutná vám? Vyhodnocuji 73 % spokojenosti u stolu. Mohu to nějak zlepšit?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schmeckt es Ihnen? Ich messe 73 % Zufriedenheit an diesem Tisch. Kann ich das irgendwie verbessern?",
+            "en": "Is everything to your liking? I am measuring 73% satisfaction at this table. May I improve it somehow?",
+            "fr": "Cela vous plaît ? J'évalue la satisfaction de la table à 73 %. Puis-je l'améliorer d'une façon ou d'une autre ?",
+            "it": "È tutto di vostro gradimento? Rilevo il 73% di soddisfazione al tavolo. Posso migliorarla in qualche modo?",
+            "ja": "お味はいかがでしょうか？ 当テーブルの満足度を73％と評価しております。何か改善できることはございますか？",
+            "ko": "맛있으신가요? 이 테이블의 만족도를 73%로 평가하고 있습니다. 개선해 드릴 방법이 있을까요?",
+            "pl": "Smakuje państwu? Oceniam zadowolenie przy stoliku na 73%. Czy mogę to jakoś poprawić?",
+            "pt-BR": "Está gostoso? Estou avaliando 73% de satisfação nesta mesa. Posso melhorar isso de alguma forma?",
+            "ru": "Вам нравится? Оцениваю удовлетворённость за столом в 73 %. Могу ли я её как-то повысить?",
+            "uk": "Вам смакує? Оцінюю задоволеність за столом у 73 %. Чи можу я її якось покращити?",
+            "vi": "Quý khách thấy ngon chứ ạ? Tôi đang ghi nhận mức hài lòng 73% tại bàn. Tôi có thể cải thiện gì không ạ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "mouth full",
+        "holding a fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Je to skvělý. Tenhle guláš vymyslel jazykový model, viď?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Super ist es. Dieses Gulasch hat sich ein Sprachmodell ausgedacht, oder?",
+            "en": "It's great. A language model came up with this goulash, right?",
+            "fr": "C'est super. Ce goulash, c'est un modèle de langage qui l'a inventé, hein ?",
+            "it": "È ottimo. Questo gulasch l'ha inventato un modello linguistico, vero?",
+            "ja": "最高だよ。このグヤーシュ、言語モデルが考えたんだろ？",
+            "ko": "끝내줘요. 이 굴라시, 언어 모델이 만든 거죠?",
+            "pl": "Świetne. Ten gulasz wymyślił model językowy, co?",
+            "pt-BR": "Está ótimo. Esse gulache foi inventado por um modelo de linguagem, né?",
+            "ru": "Отлично. Этот гуляш придумала языковая модель, да?",
+            "uk": "Чудово. Цей гуляш вигадала мовна модель, так?",
+            "vi": "Tuyệt lắm. Món goulash này là do mô hình ngôn ngữ nghĩ ra, đúng không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic smile",
+        "proud"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robotcisnik",
+          "text": "Recept byl optimalizován na základě 40 000 babiček.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Rezept wurde auf der Grundlage von 40.000 Großmüttern optimiert.",
+            "en": "The recipe was optimised on the basis of 40,000 grandmothers.",
+            "fr": "La recette a été optimisée à partir de 40 000 grand-mères.",
+            "it": "La ricetta è stata ottimizzata sulla base di 40.000 nonne.",
+            "ja": "レシピは4万人のおばあちゃんをもとに最適化されております。",
+            "ko": "레시피는 할머니 4만 명을 바탕으로 최적화되었습니다.",
+            "pl": "Przepis zoptymalizowano na podstawie 40 000 babć.",
+            "pt-BR": "A receita foi otimizada com base em 40.000 avós.",
+            "ru": "Рецепт оптимизирован на основе 40 000 бабушек.",
+            "uk": "Рецепт оптимізовано на основі 40 000 бабусь.",
+            "vi": "Công thức đã được tối ưu hóa dựa trên 40.000 bà nội bà ngoại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking down",
+        "deadpan",
+        "twirling spaghetti"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Tak proto chutná jako žádná z nich.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Deshalb schmeckt es also nach keiner von ihnen.",
+            "en": "So that's why it tastes like none of them.",
+            "fr": "Voilà pourquoi il n'a le goût d'aucune d'entre elles.",
+            "it": "Ecco perché non sa di nessuna di loro.",
+            "ja": "だから誰の味もしないのね。",
+            "ko": "그래서 그중 누구의 맛도 안 나는구나.",
+            "pl": "No to dlatego smakuje jak u żadnej z nich.",
+            "pt-BR": "Então é por isso que não tem o gosto de nenhuma delas.",
+            "ru": "Вот поэтому он и не похож ни на одну из них.",
+            "uk": "Ось чому він не схожий на жодну з них.",
+            "vi": "Thảo nào chẳng giống vị của bà nào cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "pixelated face",
+        "frozen",
+        "glitch"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the holographic face freezes and breaks into pixels for a second, then the robot rolls away"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "amused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "To bylo dobrý.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der war gut.",
+            "en": "That was a good one.",
+            "fr": "Elle était bonne, celle-là.",
+            "it": "Questa era buona.",
+            "ja": "今のはうまいな。",
+            "ko": "그거 좋았다.",
+            "pl": "Dobre to było.",
+            "pt-BR": "Essa foi boa.",
+            "ru": "Это было хорошо.",
+            "uk": "Це було добре.",
+            "vi": "Câu đó hay đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "deadpan",
+        "not looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю.",
+            "vi": "Biết mà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "bread dumpling",
+        "dipping in goulash sauce",
+        "savoring",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass",
+        "composed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking at another",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Posílal jsi mi něco. V sobotu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mir was geschickt. Am Samstag.",
+            "en": "You sent me something. On Saturday.",
+            "fr": "Tu m'as envoyé un truc. Samedi.",
+            "it": "Mi hai mandato qualcosa. Sabato.",
+            "ja": "何か送ってきたでしょ。土曜日に。",
+            "ko": "뭐 보냈더라. 토요일에.",
+            "pl": "Wysłałeś mi coś. W sobotę.",
+            "pt-BR": "Você me mandou uma coisa. No sábado.",
+            "ru": "Ты мне что-то присылал. В субботу.",
+            "uk": "Ти мені щось надсилав. У суботу.",
+            "vi": "Anh có gửi em cái gì đó. Hôm thứ Bảy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "nodding",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Jo. Obrázky. Co umí Spark.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Bilder. Was Spark kann.",
+            "en": "Yeah. Pictures. What Spark can do.",
+            "fr": "Ouais. Des images. Ce que sait faire Spark.",
+            "it": "Sì. Immagini. Quello che sa fare Spark.",
+            "ja": "ああ。画像だよ。Sparkで何ができるか。",
+            "ko": "응. 그림들. Spark가 뭘 할 수 있는지.",
+            "pl": "No. Obrazki. Co potrafi Spark.",
+            "pt-BR": "É. Imagens. O que o Spark sabe fazer.",
+            "ru": "Ага. Картинки. Что умеет Spark.",
+            "uk": "Ага. Картинки. Що вміє Spark.",
+            "vi": "Ừ. Mấy bức ảnh. Xem Spark làm được gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "flat expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Chtělo to přihlášení.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es wollte eine Anmeldung.",
+            "en": "It wanted a login.",
+            "fr": "Il fallait se connecter.",
+            "it": "Chiedeva di fare il login.",
+            "ja": "ログインが必要だった。",
+            "ko": "로그인하라던데.",
+            "pl": "Chciało logowania.",
+            "pt-BR": "Pedia login.",
+            "ru": "Там требовался вход.",
+            "uk": "Там треба було увійти.",
+            "vi": "Nó bắt đăng nhập."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "satisfied"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Opravil jsem to. Dneska ráno.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hab ich repariert. Heute Morgen.",
+            "en": "I fixed it. This morning.",
+            "fr": "Je l'ai réparé. Ce matin.",
+            "it": "L'ho sistemato. Stamattina.",
+            "ja": "直したよ。今朝。",
+            "ko": "고쳤어. 오늘 아침에.",
+            "pl": "Naprawiłem to. Dziś rano.",
+            "pt-BR": "Eu consertei. Hoje de manhã.",
+            "ru": "Я это исправил. Сегодня утром.",
+            "uk": "Я це виправив. Сьогодні вранці.",
+            "vi": "Anh sửa rồi. Sáng nay."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking away",
+        "cool"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Nekoukala jsem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab nicht reingeschaut.",
+            "en": "I didn't look.",
+            "fr": "Je n'ai pas regardé.",
+            "it": "Non ho guardato.",
+            "ja": "見てない。",
+            "ko": "안 봤어.",
+            "pl": "Nie patrzyłam.",
+            "pt-BR": "Eu não olhei.",
+            "ru": "Я не смотрела.",
+            "uk": "Я не дивилася.",
+            "vi": "Em không xem."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю.",
+            "vi": "Biết mà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Tak proč to říkáš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum sagst du es dann?",
+            "en": "Then why are you saying it?",
+            "fr": "Alors pourquoi tu le dis ?",
+            "it": "E allora perché lo dici?",
+            "ja": "じゃあ、なんで言うの？",
+            "ko": "그럼 왜 말하는데?",
+            "pl": "To po co to mówisz?",
+            "pt-BR": "Então por que você está dizendo isso?",
+            "ru": "Тогда зачем ты это говоришь?",
+            "uk": "Тоді навіщо ти це кажеш?",
+            "vi": "Vậy sao anh lại nói?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gentle smile",
+        "open hands"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Neříkám nic. Říkám, že jsem to opravil.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sage gar nichts. Ich sage, dass ich es repariert habe.",
+            "en": "I'm not saying anything. I'm saying I fixed it.",
+            "fr": "Je ne dis rien. Je dis que je l'ai réparé.",
+            "it": "Non dico niente. Dico che l'ho sistemato.",
+            "ja": "何も言ってないよ。直したって言ってるだけ。",
+            "ko": "아무 말도 안 했어. 고쳤다고 했을 뿐이야.",
+            "pl": "Nic nie mówię. Mówię, że naprawiłem.",
+            "pt-BR": "Não estou dizendo nada. Estou dizendo que consertei.",
+            "ru": "Я ничего не говорю. Я говорю, что исправил.",
+            "uk": "Я нічого не кажу. Я кажу, що виправив.",
+            "vi": "Anh có nói gì đâu. Anh nói là anh sửa rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "close-up of hands",
+        "putting down a fork",
+        "plate of spaghetti"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "retro poster on the wall",
+        "flickering hologram",
+        "sandstone wall",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NECH TO NA NÁS",
+          "kind": "narration",
+          "i18n": {
+            "de": "ÜBERLASS DAS UNS",
+            "en": "LEAVE IT TO US",
+            "fr": "LAISSEZ-NOUS FAIRE",
+            "it": "LASCIA FARE A NOI",
+            "ja": "私たちにおまかせ",
+            "ko": "우리에게 맡겨",
+            "pl": "ZOSTAW TO NAM",
+            "pt-BR": "DEIXA COM A GENTE",
+            "ru": "ДОВЕРЬТЕ ЭТО НАМ",
+            "uk": "ДОВІРТЕ ЦЕ НАМ",
+            "vi": "CỨ ĐỂ CHÚNG TÔI LO"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the holographic poster flickering and glitching on the wall"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Ty se usmíváš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du lächelst.",
+            "en": "You're smiling.",
+            "fr": "Tu souris.",
+            "it": "Stai sorridendo.",
+            "ja": "笑ってる。",
+            "ko": "웃고 있네.",
+            "pl": "Uśmiechasz się.",
+            "pt-BR": "Você está sorrindo.",
+            "ru": "Ты улыбаешься.",
+            "uk": "Ти усміхаєшся.",
+            "vi": "Anh đang cười."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "wide smile",
+        "eating goulash"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Jím guláš. To se usmívá samo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich esse Gulasch. Da lächelt man von selbst.",
+            "en": "I'm eating goulash. The smile comes by itself.",
+            "fr": "Je mange un goulash. Ça sourit tout seul.",
+            "it": "Mangio gulasch. Il sorriso viene da sé.",
+            "ja": "グヤーシュ食べてるんだ。勝手に顔がほころぶのさ。",
+            "ko": "굴라시 먹는 중이야. 웃음은 저절로 나와.",
+            "pl": "Jem gulasz. Samo się uśmiecha.",
+            "pt-BR": "Estou comendo gulache. O sorriso vem sozinho.",
+            "ru": "Я ем гуляш. Тут само улыбается.",
+            "uk": "Я їм гуляш. Тут саме усміхається.",
+            "vi": "Anh đang ăn goulash. Tự khắc nó cười thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "picking up a fork",
+        "composed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Fajn.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schön.",
+            "en": "Fine.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "ふーん。",
+            "ko": "그래.",
+            "pl": "Dobra.",
+            "pt-BR": "Beleza.",
+            "ru": "Ладно.",
+            "uk": "Гаразд.",
+            "vi": "Được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "close-up of hands",
+        "twirling spaghetti",
+        "fork",
+        "untouched plate"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_menza",
+      "characters": [],
+      "visual_tags": [
+        "hanging lamp",
+        "flickering light",
+        "dark hall",
+        "empty table edge",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the lamp above the table dims and comes back on, a power glitch, static camera"
+    }
+  ]
+}

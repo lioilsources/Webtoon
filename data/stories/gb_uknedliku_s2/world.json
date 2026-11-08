@@ -1,0 +1,103 @@
+{
+  "id": "w_gb_uknedliku_s2",
+  "title": "U Knedlíku 2089 — AI slop, nebo umění",
+  "synopsis": "Univerzitní menza v roce 2089 jako ze šedesátých let. Olin u guláše a piva, jeho sestra Jana, překladatelka, u špaget a vína. Hádka, která se nikdy nestane, a robotčíšník, který neumí určit, kdo měl pravdu.",
+  "tone": "intelektuální, odměřený, suchý humor",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "pinup_60s",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba nosí brýle, oba jsou intelektuálové; kreslení jako americká pin-up ilustrace šedesátých let, staré bouráky za okny, ne manga.",
+      "Žádný křik: napětí je v tempu replik a v pauzách. Komedie, která bolí, protože oba mají pravdu. Robotčíšník je přehnaně zdvořilý a jeho tvář mění výraz o vteřinu později."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hádka, která se nikdy nestane: Jana má poslední slovo a nic jí to nedává, Olin se usmívá; robot neumí určit, kdo měl pravdu, a oba řeknou „Já“."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_menza",
+      "l_stul_menza"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_40",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man about 40 with short dark brown hair, a short beard and round glasses, always smiling, in a hoodie",
+      "base": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "grey hoodie"
+      },
+      "photo": "a calm Czech man about 40 with short dark brown hair, a short beard and round glasses, always smiling, in a hoodie",
+      "tag_prompt": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, grey hoodie",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_37",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a precise Czech woman about 37, a translator, with a sleek chin-length dark brown bob, thin rectangular glasses and quick sharp eyes",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, composed expression",
+      "outfits": {
+        "default": "fitted cardigan over a crisp white blouse"
+      },
+      "photo": "a precise Czech woman about 37, a translator, with a sleek chin-length dark brown bob, thin rectangular glasses and quick sharp eyes",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, composed expression, fitted cardigan over a crisp white blouse",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robotcisnik",
+      "name": "Robotčíšník",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
+      "base": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
+      "tag_prompt": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_menza",
+      "name": "Menza U Knedlíku 2089",
+      "description": "Univerzitní menza jako na Stanfordu v šedesátých letech: pískovcové oblouky, dlouhé dřevěné stoly, neonový nápis nad výdejem s vypadlým E, holografické plakáty, za okny staré americké bouráky.",
+      "tag_prompt": "indoors, 1960s university dining hall, sandstone arches, arched windows, long wooden tables, serving counter, neon sign above the counter, retro posters on the wall, classic american cars outside the windows, palm trees, warm evening light, empty tables in the dark",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_menza",
+      "name": "Osvětlený stůl",
+      "description": "Jediný osvětlený stůl: guláš s knedlíkem a pivo v půllitru, špagety s parmazánem a bílé víno na stopce.",
+      "tag_prompt": "single wooden table under a hanging lamp, pool of warm light, dark dining hall around, 1960s",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "uknedliku",
+    "node": "s2"
+  }
+}

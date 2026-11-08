@@ -1,0 +1,609 @@
+{
+  "title": "Pravda je služba",
+  "title_i18n": {
+    "en": "Truth Is a Service",
+    "de": "Wahrheit ist ein Service",
+    "it": "La verità è un servizio",
+    "fr": "La vérité est un service",
+    "pl": "Prawda jest usługą",
+    "pt-BR": "A verdade é um serviço",
+    "ja": "真実はサービス",
+    "ko": "진실은 서비스",
+    "vi": "Sự thật là dịch vụ",
+    "ru": "Правда — это услуга",
+    "uk": "Правда — це послуга"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_olymp",
+      "characters": [],
+      "visual_tags": [
+        "marble colonnade",
+        "above the clouds",
+        "silver tray on a marble table",
+        "cold light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "calm smile",
+        "raised finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Nemáš pravdu. Máš pocit, že máš pravdu. To je jako rozdíl mezi gulášem a obrázkem guláše. Taky žumpuješ hlad.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You're not right. You feel you're right. That's like the difference between goulash and a picture of goulash. You're cesspooling your hunger, too.",
+            "de": "Du hast nicht recht. Du hast das Gefühl, recht zu haben. Das ist wie der Unterschied zwischen Gulasch und einem Bild von Gulasch. Du jauchst auch deinen Hunger.",
+            "it": "Non hai ragione. Hai la sensazione di avere ragione. È come la differenza tra un gulasch e la foto di un gulasch. E poi fognizzi la fame.",
+            "fr": "Tu n'as pas raison. Tu as l'impression d'avoir raison. C'est comme la différence entre un goulash et une image de goulash. Et tu égouttes ta faim.",
+            "pl": "Nie masz racji. Masz poczucie, że masz rację. To jak różnica między gulaszem a obrazkiem gulaszu. I jeszcze szambujesz głód.",
+            "pt-BR": "Você não tem razão. Você tem a sensação de que tem razão. É como a diferença entre gulache e a foto de um gulache. E ainda fica fossando a fome.",
+            "ja": "君は正しくない。正しいと感じてるだけ。グヤーシュとグヤーシュの絵の違いみたいなもの。それに空腹を肥溜めってる。",
+            "ko": "넌 옳지 않아. 옳다고 느낄 뿐이지. 굴라시랑 굴라시 그림의 차이 같은 거야. 게다가 배고픔을 똥통질하고 있어.",
+            "vi": "Em không đúng. Em chỉ cảm thấy là mình đúng. Như khác biệt giữa goulash và bức tranh goulash. Em còn đang hầm-cầu cơn đói nữa.",
+            "ru": "Ты не права. Тебе кажется, что ты права. Это как разница между гуляшом и картинкой гуляша. И ещё ты выгребаешь голод.",
+            "uk": "Ти не права. Тобі здається, що ти права. Це як різниця між гуляшем і картинкою гуляшу. І ще ти вигрібаєш голод."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "offended",
+        "wide eyes",
+        "sharp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "„Žumpuješ“? Takže překládám AI výstupy. Takže jsem žumpa. Fajn. To je přesně ten překlep, který si nemusíš odpouštět, i když jsi v zenu.",
+          "kind": "speech",
+          "i18n": {
+            "en": "\"Cesspooling\"? So I translate AI output. So I'm a cesspool. Fine. That's exactly the kind of slip you don't have to forgive yourself, even in zen.",
+            "de": "„Jauchst“? Ich übersetze also KI-Ausgaben. Also bin ich eine Jauchegrube. Schön. Genau so ein Versprecher, den du dir nicht verzeihen musst, auch im Zen.",
+            "it": "«Fognizzi»? Quindi traduco output di IA. Quindi sono una fogna. Bene. È proprio il tipo di refuso che non devi perdonarti, anche se sei zen.",
+            "fr": "« Égouttes » ? Donc je traduis des sorties d'IA. Donc je suis un égout. Bien. C'est exactement le lapsus que tu n'as pas à te pardonner, même zen.",
+            "pl": "„Szambujesz”? Czyli tłumaczę wyniki AI. Czyli jestem szambem. Świetnie. To dokładnie ta literówka, której nie musisz sobie darować, nawet w zenie.",
+            "pt-BR": "\"Fossando\"? Então eu traduzo saída de IA. Então eu sou uma fossa. Ótimo. É exatamente o deslize que você não precisa se perdoar, mesmo zen.",
+            "ja": "「肥溜めってる」？つまり私はAIの出力を翻訳してる。つまり私は肥溜め。結構。悟ってても、自分を許さなくていいたぐいの言い間違いね。",
+            "ko": "'똥통질'? 그러니까 난 AI 출력물을 번역하지. 그러니까 내가 똥통이라고. 좋아. 초연하다면서도 굳이 참을 필요 없는 바로 그런 말실수네.",
+            "vi": "\"Hầm cầu\"? Vậy là em dịch đầu ra của AI. Vậy em là hầm cầu. Được. Đúng là kiểu lỡ lời mà anh chẳng cần tự tha thứ, dù đang thiền.",
+            "ru": "«Выгребаешь»? Значит, я перевожу выдачу ИИ. Значит, я выгребная яма. Отлично. Именно такую оговорку можно себе не прощать, даже в дзене.",
+            "uk": "«Вигрібаєш»? Отже, я перекладаю видачу ШІ. Отже, я вигрібна яма. Чудово. Саме таку обмовку можна собі не прощати, навіть у дзені."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "calm smile",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Neřekl jsem, že jsi žumpa. Řekl jsem, že žumpuješ hlad. To je metafora. Máš ji přeložit, ne se jí vzdát.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I didn't say you're a cesspool. I said you're cesspooling your hunger. It's a metaphor. You're supposed to translate it, not give up on it.",
+            "de": "Ich habe nicht gesagt, dass du eine Jauchegrube bist. Ich sagte, du jauchst deinen Hunger. Das ist eine Metapher. Du sollst sie übersetzen, nicht aufgeben.",
+            "it": "Non ho detto che sei una fogna. Ho detto che fognizzi la fame. È una metafora. Devi tradurla, non arrenderti.",
+            "fr": "Je n'ai pas dit que tu étais un égout. J'ai dit que tu égouttes ta faim. C'est une métaphore. Tu dois la traduire, pas y renoncer.",
+            "pl": "Nie powiedziałem, że jesteś szambem. Powiedziałem, że szambujesz głód. To metafora. Masz ją przetłumaczyć, a nie się poddać.",
+            "pt-BR": "Eu não disse que você é uma fossa. Eu disse que você está fossando a fome. É uma metáfora. Era pra traduzir, não desistir dela.",
+            "ja": "君が肥溜めだなんて言ってない。空腹を肥溜めってるって言ったんだ。比喩だよ。訳すもので、諦めるものじゃない。",
+            "ko": "네가 똥통이라고 안 했어. 배고픔을 똥통질한다고 했지. 은유야. 번역하라고 있는 거지, 포기하라고 있는 게 아니야.",
+            "vi": "Anh không nói em là hầm cầu. Anh nói em đang hầm-cầu cơn đói. Đó là ẩn dụ. Em phải dịch nó, chứ đừng bỏ cuộc.",
+            "ru": "Я не говорил, что ты выгребная яма. Я сказал, что ты выгребаешь голод. Это метафора. Её надо перевести, а не сдаться.",
+            "uk": "Я не казав, що ти вигрібна яма. Я сказав, що ти вигрібаєш голод. Це метафора. Її треба перекласти, а не здатися."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "leaning forward",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Já se ničemu nevzdávám. To ty se vzdáváš — diskuze, všeho, jen sedíš, usmíváš se a děláš, že jsi nad věcí, ale ve skutečnosti jsi jen—",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm not giving up on anything. You're the one giving up — on the discussion, on everything, you just sit there, smile and act above it all, but really you're just—",
+            "de": "Ich gebe nichts auf. Du gibst auf — die Diskussion, alles, du sitzt nur da, lächelst und tust, als stündest du drüber, aber in Wahrheit bist du nur—",
+            "it": "Io non mi arrendo a niente. Sei tu che ti arrendi — alla discussione, a tutto, stai lì seduto, sorridi e fai finta di essere al di sopra, ma in realtà sei solo—",
+            "fr": "Je ne renonce à rien. C'est toi qui renonces — à la discussion, à tout, tu restes assis, tu souris et tu fais comme si tu étais au-dessus, mais en fait tu es juste—",
+            "pl": "Ja się niczemu nie poddaję. To ty się poddajesz — dyskusji, wszystkiemu, tylko siedzisz, uśmiechasz się i udajesz, że jesteś ponad, a tak naprawdę jesteś tylko—",
+            "pt-BR": "Eu não desisto de nada. Quem desiste é você — da discussão, de tudo, só fica sentado, sorrindo, fingindo estar acima, mas na verdade você só está—",
+            "ja": "私は何も諦めてない。諦めてるのはそっち——議論も、何もかも。座って、笑って、超越したふりしてるけど、本当はただ——",
+            "ko": "난 아무것도 포기 안 해. 포기하는 건 너지 — 토론도, 전부 다. 그냥 앉아서 웃고 초연한 척하지만, 실은 그냥—",
+            "vi": "Em chẳng bỏ cuộc gì cả. Anh mới là người bỏ — bỏ tranh luận, bỏ hết, chỉ ngồi đó, cười và làm như mình ở trên mọi thứ, nhưng thật ra anh chỉ—",
+            "ru": "Я ничему не сдаюсь. Это ты сдаёшься — дискуссии, всему, только сидишь, улыбаешься и делаешь вид, что выше этого, а на самом деле ты просто—",
+            "uk": "Я нічому не здаюся. Це ти здаєшся — дискусії, всьому, тільки сидиш, усміхаєшся і вдаєш, що вище цього, а насправді ти просто—"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "eyes closed",
+        "serene smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "V zenu. Děkuju, že to říkáš nahlas, lépe se to poslouchá.",
+          "kind": "speech",
+          "i18n": {
+            "en": "In zen. Thanks for saying it out loud, it sounds better that way.",
+            "de": "Im Zen. Danke, dass du es laut sagst, so hört es sich besser an.",
+            "it": "Zen. Grazie di dirlo ad alta voce, suona meglio.",
+            "fr": "Zen. Merci de le dire à voix haute, ça sonne mieux.",
+            "pl": "W zenie. Dzięki, że mówisz to na głos, lepiej się tego słucha.",
+            "pt-BR": "Zen. Obrigado por dizer em voz alta, soa melhor.",
+            "ja": "悟ってる。声に出してくれてありがとう、そのほうが聞こえがいい。",
+            "ko": "초연한 거지. 소리 내서 말해줘서 고마워, 그게 더 듣기 좋네.",
+            "vi": "Đang thiền. Cảm ơn em nói to ra, nghe hay hơn hẳn.",
+            "ru": "В дзене. Спасибо, что говоришь это вслух, так приятнее слушать.",
+            "uk": "У дзені. Дякую, що кажеш це вголос, так приємніше слухати."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "annoyed",
+        "open mouth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "To není kompliment!",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's not a compliment!",
+            "de": "Das ist kein Kompliment!",
+            "it": "Non è un complimento!",
+            "fr": "Ce n'est pas un compliment !",
+            "pl": "To nie komplement!",
+            "pt-BR": "Isso não é um elogio!",
+            "ja": "褒めてないから！",
+            "ko": "칭찬 아니거든!",
+            "vi": "Đó không phải lời khen!",
+            "ru": "Это не комплимент!",
+            "uk": "Це не комплімент!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "godlike calm",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "V zenu i to není kompliment.",
+          "kind": "speech",
+          "i18n": {
+            "en": "In zen, even that isn't a compliment.",
+            "de": "Im Zen ist auch das kein Kompliment.",
+            "it": "Nello zen, anche quello non è un complimento.",
+            "fr": "Dans le zen, même ça n'est pas un compliment.",
+            "pl": "W zenie nawet to nie jest komplementem.",
+            "pt-BR": "No zen, nem isso é elogio.",
+            "ja": "悟りの境地では、それも褒め言葉じゃない。",
+            "ko": "초연함 속에선 그것도 칭찬이 아니야.",
+            "vi": "Trong thiền, cả điều đó cũng không phải lời khen.",
+            "ru": "В дзене и это не комплимент.",
+            "uk": "У дзені й це не комплімент."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "looking to the side",
+        "raising hand",
+        "haughty"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Pane, přineste mi prosím vaše nejtvrdší víno. A jednu větu, která ho vyhraje.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Sir, please bring me your hardest wine. And one sentence that wins it.",
+            "de": "Herr Ober, bringen Sie mir bitte Ihren härtesten Wein. Und einen Satz, der es gewinnt.",
+            "it": "Signore, mi porti il vostro vino più duro. E una frase che la vinca.",
+            "fr": "Monsieur, apportez-moi votre vin le plus dur, s'il vous plaît. Et une phrase qui la gagne.",
+            "pl": "Proszę pana, poproszę wasze najtwardsze wino. I jedno zdanie, które to wygra.",
+            "pt-BR": "Moço, me traga o seu vinho mais duro, por favor. E uma frase que vença isso.",
+            "ja": "すみません、一番きついワインを。それと、これに勝てる一文を。",
+            "ko": "저기요, 가장 독한 와인 주세요. 그리고 이걸 이길 문장 하나도요.",
+            "vi": "Anh ơi, mang cho tôi loại vang mạnh nhất. Và một câu thắng được chuyện này.",
+            "ru": "Будьте добры, принесите мне ваше самое крепкое вино. И одну фразу, которая это выиграет.",
+            "uk": "Будь ласка, принесіть мені ваше найміцніше вино. І одну фразу, яка це виграє."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "m77"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "head tilt",
+        "glowing eyes",
+        "holding a silver tray"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "m77",
+          "text": "Zákazník má vždy pravdu, dokud nezaplatí.",
+          "kind": "speech",
+          "i18n": {
+            "en": "The customer is always right, until they pay.",
+            "de": "Der Kunde hat immer recht, bis er bezahlt.",
+            "it": "Il cliente ha sempre ragione, finché non paga.",
+            "fr": "Le client a toujours raison, jusqu'à ce qu'il paie.",
+            "pl": "Klient ma zawsze rację, dopóki nie zapłaci.",
+            "pt-BR": "O cliente tem sempre razão, até pagar.",
+            "ja": "お客様は常に正しい。支払いが済むまでは。",
+            "ko": "고객은 언제나 옳습니다. 계산하기 전까지는.",
+            "vi": "Khách hàng luôn đúng, cho đến khi trả tiền.",
+            "ru": "Клиент всегда прав, пока не заплатит.",
+            "uk": "Клієнт завжди правий, поки не заплатить."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "the marble android pauses, its eye slits pulsing while it processes, then it speaks"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smug",
+        "pointing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "Vidíš? I android chápe hierarchii.",
+          "kind": "speech",
+          "i18n": {
+            "en": "See? Even the android understands hierarchy.",
+            "de": "Siehst du? Sogar der Android versteht Hierarchie.",
+            "it": "Vedi? Perfino l'androide capisce la gerarchia.",
+            "fr": "Tu vois ? Même l'androïde comprend la hiérarchie.",
+            "pl": "Widzisz? Nawet android rozumie hierarchię.",
+            "pt-BR": "Viu? Até o androide entende hierarquia.",
+            "ja": "ほらね？アンドロイドでさえ序列がわかってる。",
+            "ko": "봤지? 안드로이드도 위계를 알아.",
+            "vi": "Thấy chưa? Đến android còn hiểu thứ bậc.",
+            "ru": "Видишь? Даже андроид понимает иерархию.",
+            "uk": "Бачиш? Навіть андроїд розуміє ієрархію."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "smile",
+        "raised finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Android řekl „dokud nezaplatí“. Takže pravda je služba. Objednávám si pravdu: guláš byl dobrý.",
+          "kind": "speech",
+          "i18n": {
+            "en": "The android said \"until they pay\". So truth is a service. I'm ordering the truth: the goulash was good.",
+            "de": "Der Android sagte „bis er bezahlt“. Also ist Wahrheit ein Service. Ich bestelle Wahrheit: Das Gulasch war gut.",
+            "it": "L'androide ha detto «finché non paga». Quindi la verità è un servizio. Ordino la verità: il gulasch era buono.",
+            "fr": "L'androïde a dit « jusqu'à ce qu'il paie ». Donc la vérité est un service. Je commande la vérité : le goulash était bon.",
+            "pl": "Android powiedział „dopóki nie zapłaci”. Czyli prawda to usługa. Zamawiam prawdę: gulasz był dobry.",
+            "pt-BR": "O androide disse \"até pagar\". Então a verdade é um serviço. Peço a verdade: o gulache estava bom.",
+            "ja": "アンドロイドは「支払いが済むまで」と言った。つまり真実はサービス。真実を注文するよ。グヤーシュはうまかった。",
+            "ko": "안드로이드가 '계산하기 전까지'라고 했어. 그러니까 진실은 서비스야. 진실 하나 주문할게. 굴라시 맛있었어.",
+            "vi": "Android nói \"cho đến khi trả tiền\". Vậy sự thật là dịch vụ. Anh gọi một phần sự thật: món goulash ngon.",
+            "ru": "Андроид сказал «пока не заплатит». Значит, правда — это услуга. Заказываю правду: гуляш был хорош.",
+            "uk": "Андроїд сказав «поки не заплатить». Отже, правда — це послуга. Замовляю правду: гуляш був добрий."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "deadpan",
+        "holding a wine glass"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "To nebyla pravda, to byla recenze.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That wasn't the truth, that was a review.",
+            "de": "Das war nicht die Wahrheit, das war eine Rezension.",
+            "it": "Quella non era la verità, era una recensione.",
+            "fr": "Ce n'était pas la vérité, c'était une critique.",
+            "pl": "To nie była prawda, to była recenzja.",
+            "pt-BR": "Isso não foi verdade, foi uma resenha.",
+            "ja": "それは真実じゃなくて、レビュー。",
+            "ko": "그건 진실이 아니라 리뷰였어.",
+            "vi": "Đó không phải sự thật, đó là bài đánh giá.",
+            "ru": "Это была не правда, это был отзыв.",
+            "uk": "Це була не правда, це був відгук."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "serene smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Pravda je recenze, kterou nikdo nechtěl slyšet.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Truth is a review nobody wanted to hear.",
+            "de": "Wahrheit ist eine Rezension, die niemand hören wollte.",
+            "it": "La verità è una recensione che nessuno voleva sentire.",
+            "fr": "La vérité, c'est une critique que personne ne voulait entendre.",
+            "pl": "Prawda to recenzja, której nikt nie chciał usłyszeć.",
+            "pt-BR": "A verdade é uma resenha que ninguém queria ouvir.",
+            "ja": "真実とは、誰も聞きたくなかったレビューだ。",
+            "ko": "진실은 아무도 듣고 싶지 않았던 리뷰야.",
+            "vi": "Sự thật là bài đánh giá không ai muốn nghe.",
+            "ru": "Правда — это отзыв, который никто не хотел слышать.",
+            "uk": "Правда — це відгук, який ніхто не хотів чути."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "jana_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "raised eyebrow",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_40",
+          "text": "A ty jsi právě řekl, že pravda je služba, a teď že je to recenze — tak která?",
+          "kind": "speech",
+          "i18n": {
+            "en": "And you just said truth is a service, and now it's a review — so which is it?",
+            "de": "Und du hast gerade gesagt, Wahrheit ist ein Service, und jetzt eine Rezension — also was denn nun?",
+            "it": "E hai appena detto che la verità è un servizio, e ora che è una recensione — allora quale?",
+            "fr": "Et tu viens de dire que la vérité est un service, et maintenant une critique — alors, lequel ?",
+            "pl": "A ty właśnie powiedziałeś, że prawda to usługa, a teraz, że recenzja — to w końcu co?",
+            "pt-BR": "E você acabou de dizer que a verdade é um serviço, e agora que é uma resenha — afinal, qual é?",
+            "ja": "さっき真実はサービスって言ったのに、今度はレビュー——で、どっちなの？",
+            "ko": "방금 진실은 서비스라더니, 이젠 리뷰라고 — 그래서 뭔데?",
+            "vi": "Anh vừa nói sự thật là dịch vụ, giờ lại là bài đánh giá — rốt cuộc là cái nào?",
+            "ru": "Ты только что сказал, что правда — услуга, а теперь что это отзыв — так что из двух?",
+            "uk": "Ти щойно сказав, що правда — послуга, а тепер що це відгук — то що з двох?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "olin_42"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a marble table",
+        "satisfied smile",
+        "eyes half closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_42",
+          "text": "Obojí. Guláš je univerzální solvent.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Both. Goulash is a universal solvent.",
+            "de": "Beides. Gulasch ist ein universelles Lösungsmittel.",
+            "it": "Entrambe. Il gulasch è un solvente universale.",
+            "fr": "Les deux. Le goulash est un solvant universel.",
+            "pl": "Jedno i drugie. Gulasz to uniwersalny rozpuszczalnik.",
+            "pt-BR": "Os dois. Gulache é um solvente universal.",
+            "ja": "両方。グヤーシュは万能溶媒なんだ。",
+            "ko": "둘 다. 굴라시는 만능 용매거든.",
+            "vi": "Cả hai. Goulash là dung môi vạn năng.",
+            "ru": "И то и другое. Гуляш — универсальный растворитель.",
+            "uk": "І те, і те. Гуляш — універсальний розчинник."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "w_gb_gulasspagety_s1",
+  "title": "Guláš a špagety — Guláš a špagety",
+  "synopsis": "Restaurace na palubě rakety na cestě na Měsíc. Olin u guláše a piva, Jana u špaget a vína. Oba se usmívají, ani jeden se nechce hádat. A přesto…",
+  "tone": "drzý, rychlý, ironický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "neon_brat",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba dospělí kolem padesátky, oba nosí brýle; drzý karikaturní styl, sytě neonový, ne manga.",
+      "Ani jeden nevstane, ani jeden neustoupí. Automatický číšník na kolečkách jen syčí a skenuje."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ani jeden neustoupí; Jana má pravdu, že o víkendu se do žádného účtu přihlašovat nechce, a Olin jí to nechá."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_okno",
+      "l_raketa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_50",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a grinning Czech man about 50 with short greying brown hair, a short beard and round glasses, cheeky and relaxed",
+      "base": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, grin, relaxed posture",
+      "outfits": {
+        "default": "black hoodie with a small rocket patch"
+      },
+      "photo": "a grinning Czech man about 50 with short greying brown hair, a short beard and round glasses, cheeky and relaxed",
+      "tag_prompt": "adult, mature male, short greying brown hair, short beard, (round glasses:1.4), brown eyes, grin, relaxed posture, black hoodie with a small rocket patch",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_50",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a sharp Czech woman about 50 with a sleek chin-length dark brown bob and thin rectangular glasses, amused and unimpressed",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, smirk",
+      "outfits": {
+        "default": "fitted black jacket over a silver top"
+      },
+      "photo": "a sharp Czech woman about 50 with a sleek chin-length dark brown bob and thin rectangular glasses, amused and unimpressed",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, smirk, fitted black jacket over a silver top",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
+      "base": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
+      "tag_prompt": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents, ",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_raketa",
+      "name": "Restaurace v raketě",
+      "description": "Restaurace na palubě rakety na cestě na Měsíc: matné sklo, chrom, tenké neonové trubice barvy staré mědi, za oknem vesmír a Měsíc.",
+      "tag_prompt": "indoors, restaurant inside a spaceship, rocket interior, frosted glass walls, chrome, thin neon tubes on the ceiling, copper neon light, magenta and cyan neon, porthole window, outer space, the moon in the window, stars",
+      "mood": ""
+    },
+    {
+      "id": "l_okno",
+      "name": "Okno rakety",
+      "description": "Okno u stolu: Měsíc roste, Země se vzdaluje, neony se odrážejí ve skle.",
+      "tag_prompt": "porthole window of a spaceship, the moon growing closer, earth in the distance, stars, neon reflections on the glass, no humans",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "gulasspagety",
+    "node": "s1"
+  }
+}

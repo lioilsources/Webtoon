@@ -1,0 +1,120 @@
+{
+  "id": "w_gb_gulasknedlik_o5",
+  "title": "Guláš s knedlíkem v neopunkové budoucnosti — Sýr",
+  "synopsis": "Kavárna U Tiché Loutny, rok 2089. Olin v zenu u guláše a tmavého piva, jeho sestra Jana u špaget a vína, s potřebou mít poslední slovo. Robot servíruje parmazán dvakrát a reproduktor hodnotí jejich ticho.",
+  "tone": "hravý, načančaný, ironický, laskavý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "lautrec_rococo",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Olin kolem čtyřiceti, Jana kolem pětatřiceti, oba nosí brýle, oba jsou intelektuálové; ne manga.",
+      "Načančaná pařížská kavárna: plakátové linky Toulouse-Lautreca, baletky, rokokové zlacení, falešné 18. století, které chce být renesancí. Hlas reproduktoru je zlacený gramofonový trychtýř."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nevyhrál, nikdo nechtěl; ticho mezi nimi je nejvyšší stupeň souznění a odcházejí každý jedněmi dveřmi, ale ze stejného důvodu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_loutna",
+      "l_stul_loutna"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_40",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serene Czech man about 40 with short dark brown hair, a short beard, round glasses and a constant calm smile",
+      "base": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "casual cream linen jacket over a striped shirt"
+      },
+      "photo": "a serene Czech man about 40 with short dark brown hair, a short beard, round glasses and a constant calm smile",
+      "tag_prompt": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, casual cream linen jacket over a striped shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_35",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Czech woman about 35 with dark brown hair in a neat chignon, thin cat-eye glasses and sharp, quick eyes",
+      "base": "adult, mature female, dark brown hair in a neat chignon, (thin cat-eye glasses:1.4), brown eyes, sharp gaze, elegant",
+      "outfits": {
+        "default": "pastel pink silk blouse with a ruffled collar, pearl earrings"
+      },
+      "photo": "an elegant Czech woman about 35 with dark brown hair in a neat chignon, thin cat-eye glasses and sharp, quick eyes",
+      "tag_prompt": "adult, mature female, dark brown hair in a neat chignon, (thin cat-eye glasses:1.4), brown eyes, sharp gaze, elegant, pastel pink silk blouse with a ruffled collar, pearl earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník-robot",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "base": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "tag_prompt": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "reproduktor",
+      "name": "Hlas reproduktoru",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "an ornate gilded gramophone horn on the café wall, the voice of the restaurant",
+      "base": "no humans, ornate gilded gramophone horn, loudspeaker horn mounted on the wall, rococo ornaments, gold",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "an ornate gilded gramophone horn on the café wall, the voice of the restaurant",
+      "tag_prompt": "no humans, ornate gilded gramophone horn, loudspeaker horn mounted on the wall, rococo ornaments, gold",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_loutna",
+      "name": "Kavárna U Tiché Loutny",
+      "description": "Načančaná pařížská kavárna, rok 2089: rokokové zlacení, plakáty s tanečnicemi à la Toulouse-Lautrec, baletky, pastelová růžová a zlatá. Falešné 18. století, které by rádo bylo renesancí.",
+      "tag_prompt": "indoors, parisian cafe, rococo interior, gilded ornaments, gilded mirrors, poster of cancan dancers on the wall, ballerinas in the background, pastel pink and gold, marble tables, potted plants, chandelier",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_loutna",
+      "name": "Stůl s židlemi",
+      "description": "Stůl uprostřed kavárny a dvě židle, které se samy přisouvají a zase couvají.",
+      "tag_prompt": "small marble cafe table, two ornate gilded chairs, rococo cafe, pastel pink and gold, soft light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "gulasknedlik",
+    "node": "o5"
+  }
+}

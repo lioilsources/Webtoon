@@ -1,0 +1,125 @@
+{
+  "id": "w_u_knedliku",
+  "title": "U Knedlíku 2089",
+  "title_i18n": {
+    "de": "Zum Knödel 2089",
+    "en": "At the Dumpling 2089",
+    "fr": "À la Quenelle 2089",
+    "it": "Al Canederlo 2089",
+    "ja": "クネドリーキ亭 2089",
+    "ko": "크네들리키 2089",
+    "pl": "Pod Knedlem 2089",
+    "pt-BR": "No Bolinho 2089",
+    "ru": "У Кнедлика 2089",
+    "uk": "У Кнедлика 2089",
+    "vi": "Quán Bánh Bao 2089"
+  },
+  "synopsis": "Univerzitní menza v roce 2089 jako ze šedesátých let. Olin u guláše a piva, jeho sestra Jana, překladatelka, u špaget a vína. Hádka, která se nikdy nestane, a robotčíšník, který neumí určit, kdo měl pravdu.",
+  "synopsis_i18n": {
+    "de": "Eine Universitätsmensa im Jahr 2089, wie aus den Sechzigern. Olin bei Gulasch und Bier, seine Schwester Jana, Übersetzerin, bei Spaghetti und Wein. Ein Streit, der nie stattfindet, und ein Roboterkellner, der nicht feststellen kann, wer recht hatte.",
+    "en": "A university dining hall in 2089, straight out of the sixties. Olin with goulash and beer, his sister Jana, a translator, with spaghetti and wine. An argument that never happens, and a robot waiter that can't tell who was right.",
+    "fr": "Un restaurant universitaire en 2089, tout droit sorti des années soixante. Olin devant un goulash et une bière, sa sœur Jana, traductrice, devant des spaghetti et du vin. Une dispute qui n'a jamais lieu, et un robot serveur incapable de dire qui avait raison.",
+    "it": "Una mensa universitaria nel 2089, uscita dagli anni Sessanta. Olin con gulasch e birra, sua sorella Jana, traduttrice, con spaghetti e vino. Un litigio che non avviene mai e un cameriere robot che non sa stabilire chi avesse ragione.",
+    "ja": "2089年、まるで60年代のような大学の学食。グヤーシュとビールのオリンと、翻訳者の妹ヤナはスパゲッティとワイン。決して起こらない口論と、どちらが正しかったのか判定できないロボットウェイター。",
+    "ko": "2089년, 60년대에서 튀어나온 듯한 대학 식당. 굴라시와 맥주 앞의 올린, 스파게티와 와인 앞의 여동생이자 번역가 야나. 결코 일어나지 않는 말다툼, 그리고 누가 옳았는지 판정하지 못하는 로봇 웨이터.",
+    "pl": "Uniwersytecka stołówka w 2089 roku, jak z lat sześćdziesiątych. Olin przy gulaszu i piwie, jego siostra Jana, tłumaczka, przy spaghetti i winie. Kłótnia, która nigdy nie wybucha, i robot kelner, który nie potrafi ustalić, kto miał rację.",
+    "pt-BR": "Um refeitório universitário em 2089, saído dos anos sessenta. Olin com gulache e cerveja, sua irmã Jana, tradutora, com espaguete e vinho. Uma briga que nunca acontece e um robô garçom que não consegue decidir quem tinha razão.",
+    "ru": "Университетская столовая в 2089 году, будто из шестидесятых. Олин за гуляшом и пивом, его сестра Яна, переводчица, за спагетти и вином. Ссора, которая так и не случается, и робот-официант, который не может определить, кто был прав.",
+    "uk": "Університетська їдальня у 2089 році, ніби з шістдесятих. Олін за гуляшем і пивом, його сестра Яна, перекладачка, за спагеті й вином. Сварка, яка так і не стається, і робот-офіціант, що не може визначити, хто мав рацію.",
+    "vi": "Một nhà ăn đại học năm 2089, như bước ra từ thập niên sáu mươi. Olin với goulash và bia, em gái Jana, một dịch giả, với spaghetti và rượu vang. Một cuộc cãi vã không bao giờ xảy ra, và một robot phục vụ không xác định nổi ai đúng."
+  },
+  "tone": "intelektuální, odměřený, suchý humor",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "pinup_60s",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba nosí brýle, oba jsou intelektuálové; kreslení jako americká pin-up ilustrace šedesátých let, staré bouráky za okny, ne manga.",
+      "Žádný křik: napětí je v tempu replik a v pauzách. Komedie, která bolí, protože oba mají pravdu. Robotčíšník je přehnaně zdvořilý a jeho tvář mění výraz o vteřinu později."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hádka, která se nikdy nestane: Jana má poslední slovo a nic jí to nedává, Olin se usmívá; robot neumí určit, kdo měl pravdu, a oba řeknou „Já“."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_menza",
+      "l_stul_menza"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_40",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man about 40 with short dark brown hair, a short beard and round glasses, always smiling, in a hoodie",
+      "base": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "grey hoodie"
+      },
+      "photo": "a calm Czech man about 40 with short dark brown hair, a short beard and round glasses, always smiling, in a hoodie",
+      "tag_prompt": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, grey hoodie",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_37",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a precise Czech woman about 37, a translator, with a sleek chin-length dark brown bob, thin rectangular glasses and quick sharp eyes",
+      "base": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, composed expression",
+      "outfits": {
+        "default": "fitted cardigan over a crisp white blouse"
+      },
+      "photo": "a precise Czech woman about 37, a translator, with a sleek chin-length dark brown bob, thin rectangular glasses and quick sharp eyes",
+      "tag_prompt": "adult, mature female, sleek chin-length dark brown bob, (thin rectangular glasses:1.4), brown eyes, sharp gaze, composed expression, fitted cardigan over a crisp white blouse",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robotcisnik",
+      "name": "Robotčíšník",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
+      "base": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
+      "tag_prompt": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_menza",
+      "name": "Menza U Knedlíku 2089",
+      "description": "Univerzitní menza jako na Stanfordu v šedesátých letech: pískovcové oblouky, dlouhé dřevěné stoly, neonový nápis nad výdejem s vypadlým E, holografické plakáty, za okny staré americké bouráky.",
+      "tag_prompt": "indoors, 1960s university dining hall, sandstone arches, arched windows, long wooden tables, serving counter, neon sign above the counter, retro posters on the wall, classic american cars outside the windows, palm trees, warm evening light, empty tables in the dark",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_menza",
+      "name": "Osvětlený stůl",
+      "description": "Jediný osvětlený stůl: guláš s knedlíkem a pivo v půllitru, špagety s parmazánem a bílé víno na stopce.",
+      "tag_prompt": "single wooden table under a hanging lamp, pool of warm light, dark dining hall around, 1960s",
+      "mood": ""
+    }
+  ]
+}

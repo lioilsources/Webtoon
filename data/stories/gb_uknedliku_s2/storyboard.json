@@ -1,0 +1,1437 @@
+{
+  "title": "AI slop, nebo umění",
+  "title_i18n": {
+    "de": "KI-Schrott oder Kunst",
+    "en": "AI Slop or Art",
+    "fr": "Bouillie d'IA ou art",
+    "it": "Spazzatura IA o arte",
+    "ja": "AIのゴミか、芸術か",
+    "ko": "AI 쓰레기냐, 예술이냐",
+    "pl": "AI-szlam czy sztuka",
+    "pt-BR": "Lixo de IA ou arte",
+    "ru": "ИИ-шлак или искусство",
+    "uk": "ШІ-мотлох чи мистецтво",
+    "vi": "Rác AI hay nghệ thuật"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_stul_menza",
+      "characters": [],
+      "visual_tags": [
+        "table close-up",
+        "half-eaten goulash",
+        "full plate of spaghetti",
+        "beer mug",
+        "wine glass",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "pouring white wine",
+        "wine bottle",
+        "holographic smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the robot tops up the wine glass unasked, its face smiling a beat late"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic face",
+        "warning sign on screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "robotcisnik",
+          "text": "Dolévám preventivně. Detekuji konflikt.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schenke vorsorglich nach. Konflikt erkannt.",
+            "en": "Topping up as a precaution. Conflict detected.",
+            "fr": "Je ressers à titre préventif. Conflit détecté.",
+            "it": "Rabbocco per precauzione. Rilevo un conflitto.",
+            "ja": "予防的にお注ぎいたします。対立を検知しました。",
+            "ko": "예방 차원에서 더 따르겠습니다. 갈등이 감지되었습니다.",
+            "pl": "Dolewam prewencyjnie. Wykryto konflikt.",
+            "pt-BR": "Completando por precaução. Conflito detectado.",
+            "ru": "Подливаю превентивно. Обнаружен конфликт.",
+            "uk": "Доливаю превентивно. Виявлено конфлікт.",
+            "vi": "Tôi rót thêm để phòng ngừa. Phát hiện xung đột."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "cool expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Není žádný konflikt.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es gibt keinen Konflikt.",
+            "en": "There is no conflict.",
+            "fr": "Il n'y a aucun conflit.",
+            "it": "Non c'è nessun conflitto.",
+            "ja": "対立なんてないわ。",
+            "ko": "갈등 같은 거 없어.",
+            "pl": "Nie ma żadnego konfliktu.",
+            "pt-BR": "Não tem conflito nenhum.",
+            "ru": "Нет никакого конфликта.",
+            "uk": "Немає жодного конфлікту.",
+            "vi": "Chẳng có xung đột nào cả."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Vůbec žádný.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Überhaupt keinen.",
+            "en": "None whatsoever.",
+            "fr": "Absolument aucun.",
+            "it": "Proprio nessuno.",
+            "ja": "まったくね。",
+            "ko": "전혀 없지.",
+            "pl": "Żadnego.",
+            "pt-BR": "Nenhum mesmo.",
+            "ru": "Совсем никакого.",
+            "uk": "Зовсім жодного.",
+            "vi": "Hoàn toàn không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "rolling away",
+        "from behind",
+        "dark hall"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "looking at another",
+        "measured"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Jenom řeknu, že mi to přijde ujetý. Ne tobě. Tomu všemu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich sag nur, dass ich das irre finde. Nicht dich. Das alles.",
+            "en": "I'll just say it seems unhinged to me. Not you. All of it.",
+            "fr": "Je dis juste que je trouve ça délirant. Pas toi. Tout ça.",
+            "it": "Dico solo che mi sembra una follia. Non tu. Tutto quanto.",
+            "ja": "ただ、どうかしてると思うの。あなたじゃなくて。全部が。",
+            "ko": "그냥 좀 미친 것 같다는 거야. 오빠 말고. 이 모든 게.",
+            "pl": "Powiem tylko, że to mi się wydaje odjechane. Nie ty. To wszystko.",
+            "pt-BR": "Só vou dizer que acho isso surreal. Não você. Tudo isso.",
+            "ru": "Я только скажу, что мне это кажется диким. Не ты. Всё это.",
+            "uk": "Я лише скажу, що мені це здається диким. Не ти. Усе це.",
+            "vi": "Em chỉ nói là em thấy nó điên rồ. Không phải anh. Tất cả những thứ đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "nodding",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Můžeš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Darfst du.",
+            "en": "Go ahead.",
+            "fr": "Tu peux.",
+            "it": "Puoi dirlo.",
+            "ja": "いいよ。",
+            "ko": "그래도 돼.",
+            "pl": "Możesz.",
+            "pt-BR": "Pode falar.",
+            "ru": "Можешь.",
+            "uk": "Можеш.",
+            "vi": "Cứ nói."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "gesturing with a fork",
+        "tired eyes",
+        "sharp"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Já to překládám celý týden. „V jakých všech stylech ti to vygeneruje obrázek.“ „Napiš knížku za den.“ A pak ji někdo vydá jako svoji.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich übersetze das die ganze Woche. „In welchen Stilen es dir überall ein Bild generiert.“ „Schreib ein Buch an einem Tag.“ Und dann gibt es jemand als sein eigenes heraus.",
+            "en": "I translate this all week. “All the styles it'll generate you a picture in.” “Write a book in a day.” And then someone publishes it as their own.",
+            "fr": "Je traduis ça toute la semaine. « Dans combien de styles il te génère une image. » « Écris un livre en un jour. » Et ensuite quelqu'un le publie comme le sien.",
+            "it": "Traduco questa roba tutta la settimana. «In quanti stili ti genera un'immagine.» «Scrivi un libro in un giorno.» E poi qualcuno lo pubblica come suo.",
+            "ja": "一週間ずっとそれを翻訳してるの。「いろんなスタイルで画像を生成してくれる」「一日で本を書こう」。で、それを誰かが自分の作品として出すわけ。",
+            "ko": "나는 일주일 내내 그걸 번역해. '어떤 스타일로든 그림을 생성해 줍니다.' '하루 만에 책을 쓰세요.' 그러면 누군가 그걸 자기 책으로 내지.",
+            "pl": "Tłumaczę to cały tydzień. „W jakich wszystkich stylach wygeneruje ci obrazek.” „Napisz książkę w jeden dzień.” A potem ktoś ją wydaje jako swoją.",
+            "pt-BR": "Eu traduzo isso a semana inteira. “Em quantos estilos ele gera uma imagem pra você.” “Escreva um livro em um dia.” E depois alguém publica como se fosse seu.",
+            "ru": "Я это перевожу всю неделю. «В каких только стилях он сгенерирует тебе картинку». «Напиши книгу за день». А потом кто-то издаёт её как свою.",
+            "uk": "Я це перекладаю цілий тиждень. «У яких тільки стилях він згенерує тобі картинку». «Напиши книжку за день». А потім хтось видає її як свою.",
+            "vi": "Em dịch mấy thứ đó cả tuần. “Nó tạo ảnh cho bạn theo đủ mọi phong cách.” “Viết một cuốn sách trong một ngày.” Rồi có người xuất bản nó như của mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "shrugging",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Lidi si chtěj usnadnit práci.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Leute wollen sich die Arbeit erleichtern.",
+            "en": "People want to make their work easier.",
+            "fr": "Les gens veulent se faciliter le travail.",
+            "it": "La gente vuole semplificarsi il lavoro.",
+            "ja": "みんな仕事を楽にしたいんだよ。",
+            "ko": "사람들은 일을 쉽게 하고 싶어 해.",
+            "pl": "Ludzie chcą sobie ułatwić pracę.",
+            "pt-BR": "As pessoas querem facilitar o trabalho.",
+            "ru": "Люди хотят облегчить себе работу.",
+            "uk": "Люди хочуть полегшити собі роботу.",
+            "vi": "Người ta muốn công việc nhẹ nhàng hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "firm expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Usnadnění není tvorba.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Erleichterung ist kein Schaffen.",
+            "en": "Making it easier isn't creating.",
+            "fr": "Se faciliter la tâche, ce n'est pas créer.",
+            "it": "Semplificare non è creare.",
+            "ja": "楽をすることは創作じゃない。",
+            "ko": "쉽게 하는 건 창작이 아니야.",
+            "pl": "Ułatwienie to nie tworzenie.",
+            "pt-BR": "Facilitar não é criar.",
+            "ru": "Облегчение — это не творчество.",
+            "uk": "Полегшення — це не творчість.",
+            "vi": "Làm cho dễ hơn không phải là sáng tạo."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "pointing with a fork",
+        "dumpling on fork",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Pro kreativní lidi je tvorba s AI usnadnění jejich kreativní práce.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für kreative Menschen ist das Schaffen mit KI eine Erleichterung ihrer kreativen Arbeit.",
+            "en": "For creative people, creating with AI makes their creative work easier.",
+            "fr": "Pour les gens créatifs, créer avec l'IA facilite leur travail créatif.",
+            "it": "Per le persone creative, creare con l'IA semplifica il loro lavoro creativo.",
+            "ja": "クリエイティブな人にとって、AIでの創作は創作活動を楽にしてくれるものなんだ。",
+            "ko": "창의적인 사람들에게 AI와 함께하는 창작은 그들의 창작 작업을 쉽게 해 주는 거야.",
+            "pl": "Dla kreatywnych ludzi tworzenie z AI to ułatwienie ich kreatywnej pracy.",
+            "pt-BR": "Para pessoas criativas, criar com IA facilita o trabalho criativo delas.",
+            "ru": "Для творческих людей творчество с ИИ — это облегчение их творческой работы.",
+            "uk": "Для творчих людей творчість зі ШІ — це полегшення їхньої творчої роботи.",
+            "vi": "Với người sáng tạo, sáng tạo cùng AI giúp công việc sáng tạo của họ nhẹ nhàng hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "dry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "To je věta z tvýho webu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ein Satz von deiner Website.",
+            "en": "That's a line from your website.",
+            "fr": "C'est une phrase de ton site.",
+            "it": "È una frase del tuo sito.",
+            "ja": "それ、あなたのサイトの一文でしょ。",
+            "ko": "그거 오빠 웹사이트에 있는 문장이잖아.",
+            "pl": "To zdanie z twojej strony.",
+            "pt-BR": "Essa é uma frase do seu site.",
+            "ru": "Это фраза с твоего сайта.",
+            "uk": "Це фраза з твого сайту.",
+            "vi": "Đó là câu trên trang web của anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Je to pravda.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist wahr.",
+            "en": "It's true.",
+            "fr": "C'est vrai.",
+            "it": "È vero.",
+            "ja": "本当のことだよ。",
+            "ko": "사실이야.",
+            "pl": "To prawda.",
+            "pt-BR": "É verdade.",
+            "ru": "Это правда.",
+            "uk": "Це правда.",
+            "vi": "Đó là sự thật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "deadpan",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Je to věta.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist ein Satz.",
+            "en": "It's a line.",
+            "fr": "C'est une phrase.",
+            "it": "È una frase.",
+            "ja": "ただの一文よ。",
+            "ko": "그냥 문장이야.",
+            "pl": "To zdanie.",
+            "pt-BR": "É uma frase.",
+            "ru": "Это фраза.",
+            "uk": "Це фраза.",
+            "vi": "Đó là một câu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "wide smile",
+        "glasses glint"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass",
+        "eyes closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "vintage television above the counter",
+        "glowing screen",
+        "muted broadcast",
+        "retro tv set",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the vintage TV screen flickering with an enthusiastic silent broadcast"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "thoughtful smile",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Možná nejde o usnadnění. Možná jde o zefektivnění.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht geht es nicht ums Erleichtern. Vielleicht geht es ums Effizientermachen.",
+            "en": "Maybe it isn't about making it easier. Maybe it's about making it efficient.",
+            "fr": "Peut-être qu'il ne s'agit pas de faciliter. Peut-être qu'il s'agit d'optimiser.",
+            "it": "Forse non si tratta di semplificare. Forse si tratta di rendere più efficiente.",
+            "ja": "楽をするってことじゃないのかもな。効率化ってことかも。",
+            "ko": "쉽게 하는 게 문제가 아닐지도 몰라. 효율화가 문제일지도.",
+            "pl": "Może nie chodzi o ułatwienie. Może chodzi o usprawnienie.",
+            "pt-BR": "Talvez não seja sobre facilitar. Talvez seja sobre tornar mais eficiente.",
+            "ru": "Может, дело не в облегчении. Может, дело в повышении эффективности.",
+            "uk": "Може, річ не в полегшенні. Може, річ у підвищенні ефективності.",
+            "vi": "Có lẽ không phải là cho dễ hơn. Có lẽ là cho hiệu quả hơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "narrowed eyes",
+        "tilted head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "A proč mi to vysvětluješ?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und warum erklärst du mir das?",
+            "en": "And why are you explaining it to me?",
+            "fr": "Et pourquoi tu me l'expliques ?",
+            "it": "E perché me lo spieghi?",
+            "ja": "で、なんで私に説明するの？",
+            "ko": "근데 왜 나한테 그걸 설명해?",
+            "pl": "A po co mi to tłumaczysz?",
+            "pt-BR": "E por que você está me explicando isso?",
+            "ru": "А зачем ты мне это объясняешь?",
+            "uk": "А навіщо ти мені це пояснюєш?",
+            "vi": "Thế sao anh lại giải thích cho em?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "shrugging",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Nevysvětluju. Předkládám názor.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich erkläre nicht. Ich lege eine Meinung vor.",
+            "en": "I'm not explaining. I'm putting forward an opinion.",
+            "fr": "Je n'explique pas. J'avance une opinion.",
+            "it": "Non spiego. Espongo un'opinione.",
+            "ja": "説明してないよ。意見を述べてるだけ。",
+            "ko": "설명하는 거 아니야. 의견을 제시하는 거지.",
+            "pl": "Nie tłumaczę. Przedstawiam opinię.",
+            "pt-BR": "Não estou explicando. Estou apresentando uma opinião.",
+            "ru": "Я не объясняю. Я излагаю мнение.",
+            "uk": "Я не пояснюю. Я висловлюю думку.",
+            "vi": "Anh không giải thích. Anh nêu quan điểm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "leaning forward",
+        "controlled"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Tak mi předkládáš názor na věc, se kterou pracuju každý den.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du legst mir also eine Meinung über eine Sache vor, mit der ich jeden Tag arbeite.",
+            "en": "So you're putting forward an opinion on a thing I work with every day.",
+            "fr": "Donc tu m'avances une opinion sur un truc avec lequel je travaille tous les jours.",
+            "it": "Quindi mi esponi un'opinione su una cosa con cui lavoro ogni giorno.",
+            "ja": "つまり、私が毎日扱ってるものについて意見を述べてるわけね。",
+            "ko": "그러니까 내가 매일 다루는 일에 대해 의견을 제시하시는 거네.",
+            "pl": "Czyli przedstawiasz mi opinię o czymś, z czym pracuję codziennie.",
+            "pt-BR": "Então você está me apresentando uma opinião sobre uma coisa com que eu trabalho todo dia.",
+            "ru": "То есть ты излагаешь мне мнение о вещи, с которой я работаю каждый день.",
+            "uk": "Тобто ти висловлюєш мені думку про річ, з якою я працюю щодня.",
+            "vi": "Vậy là anh nêu quan điểm với em về thứ em làm việc cùng mỗi ngày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Jo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja.",
+            "en": "Yeah.",
+            "fr": "Ouais.",
+            "it": "Sì.",
+            "ja": "うん。",
+            "ko": "응.",
+            "pl": "No.",
+            "pt-BR": "É.",
+            "ru": "Ага.",
+            "uk": "Ага.",
+            "vi": "Ừ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "flat expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Fajn.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schön.",
+            "en": "Fine.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "ふーん。",
+            "ko": "그래.",
+            "pl": "Dobra.",
+            "pt-BR": "Beleza.",
+            "ru": "Ладно.",
+            "uk": "Гаразд.",
+            "vi": "Được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Fajn.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schön.",
+            "en": "Fine.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "ふーん。",
+            "ko": "그래.",
+            "pl": "Dobra.",
+            "pt-BR": "Beleza.",
+            "ru": "Ладно.",
+            "uk": "Гаразд.",
+            "vi": "Được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_stul_menza",
+      "characters": [],
+      "visual_tags": [
+        "table close-up",
+        "goulash being eaten",
+        "spaghetti twirled on a fork",
+        "beer mug",
+        "wine glass",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "neon sign above the counter",
+        "dead letter",
+        "dark hall",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the neon sign buzzing and flickering, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "proud smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Všechno, co je na olin.now, bych dřív dělal sto let.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alles, was auf olin.now ist, hätte ich früher hundert Jahre lang gemacht.",
+            "en": "Everything on olin.now would have taken me a hundred years before.",
+            "fr": "Tout ce qu'il y a sur olin.now, avant, ça m'aurait pris cent ans.",
+            "it": "Tutto quello che c'è su olin.now, prima ci avrei messo cent'anni.",
+            "ja": "olin.nowにあるもの全部、昔なら百年かかってたよ。",
+            "ko": "olin.now에 있는 거 전부, 예전 같으면 백 년은 걸렸을 거야.",
+            "pl": "Wszystko, co jest na olin.now, robiłbym kiedyś sto lat.",
+            "pt-BR": "Tudo o que está no olin.now, antes eu levaria cem anos para fazer.",
+            "ru": "Всё, что есть на olin.now, раньше я бы делал сто лет.",
+            "uk": "Усе, що є на olin.now, раніше я б робив сто років.",
+            "vi": "Mọi thứ trên olin.now, trước đây anh phải làm cả trăm năm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "calm",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Já ti to neberu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehm dir das nicht weg.",
+            "en": "I'm not taking that away from you.",
+            "fr": "Je ne te l'enlève pas.",
+            "it": "Non te lo tolgo.",
+            "ja": "それは否定しないわ。",
+            "ko": "그건 인정해.",
+            "pl": "Nie odbieram ci tego.",
+            "pt-BR": "Eu não tiro isso de você.",
+            "ru": "Я у тебя этого не отнимаю.",
+            "uk": "Я в тебе цього не забираю.",
+            "vi": "Em không phủ nhận điều đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Půl roku. Nebylo to snadný.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ein halbes Jahr. Es war nicht leicht.",
+            "en": "Half a year. It wasn't easy.",
+            "fr": "Six mois. Ce n'était pas facile.",
+            "it": "Sei mesi. Non è stato facile.",
+            "ja": "半年だよ。楽じゃなかった。",
+            "ko": "반년이야. 쉽지 않았어.",
+            "pl": "Pół roku. Nie było łatwo.",
+            "pt-BR": "Meio ano. Não foi fácil.",
+            "ru": "Полгода. Это было непросто.",
+            "uk": "Пів року. Це було непросто.",
+            "vi": "Nửa năm. Không dễ đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "sincere",
+        "slight frown"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Já ti to neberu. Fakt ne.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehm dir das nicht weg. Echt nicht.",
+            "en": "I'm not taking it away from you. Really, I'm not.",
+            "fr": "Je ne te l'enlève pas. Vraiment pas.",
+            "it": "Non te lo tolgo. Davvero.",
+            "ja": "否定しないって。本当に。",
+            "ko": "인정한다니까. 진짜로.",
+            "pl": "Nie odbieram ci tego. Naprawdę nie.",
+            "pt-BR": "Eu não tiro isso de você. Sério, não.",
+            "ru": "Я у тебя этого не отнимаю. Правда нет.",
+            "uk": "Я в тебе цього не забираю. Справді ні.",
+            "vi": "Em không phủ nhận. Thật đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Já vím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "知ってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Я знаю.",
+            "uk": "Я знаю.",
+            "vi": "Biết mà."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "raised eyebrow",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Tak proč to říkáš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum sagst du es dann?",
+            "en": "Then why are you saying it?",
+            "fr": "Alors pourquoi tu le dis ?",
+            "it": "E allora perché lo dici?",
+            "ja": "じゃあ、なんで言うの？",
+            "ko": "그럼 왜 말하는데?",
+            "pl": "To po co to mówisz?",
+            "pt-BR": "Então por que você está dizendo isso?",
+            "ru": "Тогда зачем ты это говоришь?",
+            "uk": "Тоді навіщо ти це кажеш?",
+            "vi": "Vậy sao anh lại nói?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "slow smile",
+        "warm eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Protože mi to dělá radost.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil es mir Freude macht.",
+            "en": "Because it makes me happy.",
+            "fr": "Parce que ça me fait plaisir.",
+            "it": "Perché mi fa piacere.",
+            "ja": "嬉しいからさ。",
+            "ko": "기쁘니까.",
+            "pl": "Bo sprawia mi to radość.",
+            "pt-BR": "Porque isso me deixa feliz.",
+            "ru": "Потому что мне это приятно.",
+            "uk": "Бо мені це приємно.",
+            "vi": "Vì nó làm anh vui."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a slow, warm smile spreading, glasses catching the lamp light"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "open mouth",
+        "speechless",
+        "glasses"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "she opens her mouth, closes it again, no words"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "close-up of hands",
+        "fork on plate edge",
+        "precise",
+        "tablecloth edge"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "polite smile",
+        "cool eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "To je hezký.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist schön.",
+            "en": "That's nice.",
+            "fr": "C'est bien.",
+            "it": "Che bello.",
+            "ja": "それは素敵ね。",
+            "ko": "그거 좋네.",
+            "pl": "To miłe.",
+            "pt-BR": "Que bom.",
+            "ru": "Это мило.",
+            "uk": "Це мило.",
+            "vi": "Hay đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "nodding"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Díky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Danke.",
+            "en": "Thanks.",
+            "fr": "Merci.",
+            "it": "Grazie.",
+            "ja": "ありがとう。",
+            "ko": "고마워.",
+            "pl": "Dzięki.",
+            "pt-BR": "Obrigado.",
+            "ru": "Спасибо.",
+            "uk": "Дякую.",
+            "vi": "Cảm ơn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "flat expression",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_37",
+          "text": "Mně to radost nedělá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir macht es keine Freude.",
+            "en": "It doesn't make me happy.",
+            "fr": "Moi, ça ne me fait pas plaisir.",
+            "it": "A me non fa piacere.",
+            "ja": "私は嬉しくない。",
+            "ko": "나는 안 기뻐.",
+            "pl": "Mnie to radości nie sprawia.",
+            "pt-BR": "A mim não deixa feliz.",
+            "ru": "Мне это не приятно.",
+            "uk": "Мені це не приємно.",
+            "vi": "Em thì không vui."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "smile",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Taky dobře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Auch gut.",
+            "en": "That's fine too.",
+            "fr": "C'est bien aussi.",
+            "it": "Va bene lo stesso.",
+            "ja": "それもいいさ。",
+            "ko": "그것도 괜찮아.",
+            "pl": "Też dobrze.",
+            "pt-BR": "Tudo bem também.",
+            "ru": "Тоже хорошо.",
+            "uk": "Теж добре.",
+            "vi": "Thế cũng được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "jana_37"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "wine glass"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "eating the last dumpling",
+        "content smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "neon sign",
+        "dead letter",
+        "flickering",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "U KN DLÍKU",
+          "kind": "narration",
+          "i18n": {
+            "de": "ZUM KN DEL",
+            "en": "AT THE DUMPL NG",
+            "fr": "À LA QU NELLE",
+            "it": "AL CAN DERLO",
+            "ja": "クネ リーキ亭",
+            "ko": "크네 리키",
+            "pl": "POD KN DLEM",
+            "pt-BR": "NO BOL NHO",
+            "ru": "У КН ДЛИКА",
+            "uk": "У КН ДЛИКА",
+            "vi": "QUÁN BÁNH B O"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the neon sign flickering, one letter dying"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [],
+      "visual_tags": [
+        "neon sign",
+        "another dead letter",
+        "flickering",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "U K EDLÍKU",
+          "kind": "narration",
+          "i18n": {
+            "de": "ZUM K ÖDEL",
+            "en": "AT THE DUMP ING",
+            "fr": "À LA Q ENELLE",
+            "it": "AL CA EDERLO",
+            "ja": "ク ドリーキ亭",
+            "ko": "크 들리키",
+            "pl": "POD K EDLEM",
+            "pt-BR": "NO BO INHO",
+            "ru": "У К ЕДЛИКА",
+            "uk": "У К ЕДЛИКА",
+            "vi": "QUÁN B NH BAO"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the dead letter jumps to another place in the neon sign"
+    }
+  ]
+}

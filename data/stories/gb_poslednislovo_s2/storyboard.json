@@ -1,0 +1,732 @@
+{
+  "title": "Dva světonázory",
+  "title_i18n": {
+    "en": "Two Worldviews",
+    "de": "Zwei Weltanschauungen",
+    "it": "Due visioni del mondo",
+    "fr": "Deux visions du monde",
+    "pl": "Dwa światopoglądy",
+    "pt-BR": "Duas visões de mundo",
+    "ja": "二つの世界観",
+    "ko": "두 개의 세계관",
+    "vi": "Hai thế giới quan",
+    "ru": "Два мировоззрения",
+    "uk": "Два світогляди"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_plaz",
+      "characters": [],
+      "visual_tags": [
+        "beach restaurant",
+        "table on the sand",
+        "parasols",
+        "golden hour",
+        "sea breeze",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "adjusting napkin",
+        "sitting at a table",
+        "precise",
+        "composed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "serious",
+        "looking at another",
+        "hands folded"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Já s AI pracuju každý den. Vím, co umí. Jen mě nebaví, jak se z toho všichni můžou zbláznit.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I work with AI every day. I know what it can do. I'm just tired of everyone going crazy over it.",
+            "de": "Ich arbeite jeden Tag mit KI. Ich weiß, was sie kann. Mich nervt nur, wie alle deswegen durchdrehen.",
+            "it": "Io lavoro con l'IA ogni giorno. So cosa sa fare. Mi stanca solo come tutti ci vadano fuori di testa.",
+            "fr": "Je travaille avec l'IA tous les jours. Je sais ce qu'elle sait faire. Ça me lasse juste de voir tout le monde s'emballer.",
+            "pl": "Pracuję z AI codziennie. Wiem, co potrafi. Męczy mnie tylko, jak wszyscy od tego wariują.",
+            "pt-BR": "Eu trabalho com IA todo dia. Sei o que ela faz. Só cansei de ver todo mundo enlouquecer com isso.",
+            "ja": "私は毎日AIで仕事してる。何ができるかも知ってる。ただ、みんながそれに夢中になるのにうんざりなの。",
+            "ko": "난 매일 AI로 일해. 뭘 할 수 있는지도 알아. 그냥 다들 그거에 미쳐 가는 게 지겨울 뿐이야.",
+            "vi": "Ngày nào em cũng làm việc với AI. Em biết nó làm được gì. Em chỉ chán cảnh ai cũng phát cuồng vì nó.",
+            "ru": "Я работаю с ИИ каждый день. Знаю, что он умеет. Мне просто надоело, как все от этого сходят с ума.",
+            "uk": "Я працюю з ШІ щодня. Знаю, що він уміє. Мені просто набридло, як усі від цього божеволіють."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "nodding",
+        "gentle smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Rozumím.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I understand.",
+            "de": "Verstehe.",
+            "it": "Capisco.",
+            "fr": "Je comprends.",
+            "pl": "Rozumiem.",
+            "pt-BR": "Entendo.",
+            "ja": "わかるよ。",
+            "ko": "이해해.",
+            "vi": "Anh hiểu.",
+            "ru": "Понимаю.",
+            "uk": "Розумію."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "shaking head",
+        "frown"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ne, nerozumíš. Jinak bys mi to pořád nenabízel.",
+          "kind": "speech",
+          "i18n": {
+            "en": "No, you don't. Or you wouldn't keep offering it to me.",
+            "de": "Nein, verstehst du nicht. Sonst würdest du es mir nicht ständig anbieten.",
+            "it": "No, non capisci. Sennò non continueresti a propormelo.",
+            "fr": "Non, tu ne comprends pas. Sinon, tu n'arrêterais pas de me le proposer.",
+            "pl": "Nie, nie rozumiesz. Inaczej nie proponowałbyś mi tego w kółko.",
+            "pt-BR": "Não, não entende. Senão não ficaria me oferecendo isso o tempo todo.",
+            "ja": "いいえ、わかってない。でなきゃ何度も勧めてこないでしょ。",
+            "ko": "아니, 이해 못 해. 그랬으면 나한테 계속 권하지 않겠지.",
+            "vi": "Không, anh không hiểu. Không thì anh đã chẳng cứ mời em mãi.",
+            "ru": "Нет, не понимаешь. Иначе ты бы мне это всё время не предлагал.",
+            "uk": "Ні, не розумієш. Інакше ти б мені це постійно не пропонував."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "open hands",
+        "calm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Já ti nic nenabízím. Jen jsem ti ukázal, co jsem vytvořil.",
+          "kind": "speech",
+          "i18n": {
+            "en": "I'm not offering you anything. I just showed you what I made.",
+            "de": "Ich biete dir gar nichts an. Ich habe dir nur gezeigt, was ich gemacht habe.",
+            "it": "Non ti propongo niente. Ti ho solo mostrato quello che ho creato.",
+            "fr": "Je ne te propose rien. Je t'ai juste montré ce que j'ai créé.",
+            "pl": "Niczego ci nie proponuję. Pokazałem ci tylko, co stworzyłem.",
+            "pt-BR": "Não estou te oferecendo nada. Só te mostrei o que eu criei.",
+            "ja": "何も勧めてないよ。作ったものを見せただけ。",
+            "ko": "아무것도 권하지 않아. 내가 만든 걸 보여 줬을 뿐이야.",
+            "vi": "Anh có mời gì đâu. Anh chỉ cho em xem cái anh đã làm.",
+            "ru": "Я тебе ничего не предлагаю. Я просто показал, что я создал.",
+            "uk": "Я тобі нічого не пропоную. Я просто показав, що створив."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "raised eyebrow",
+        "puzzled"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ale proč?",
+          "kind": "speech",
+          "i18n": {
+            "en": "But why?",
+            "de": "Aber warum?",
+            "it": "Ma perché?",
+            "fr": "Mais pourquoi ?",
+            "pl": "Ale po co?",
+            "pt-BR": "Mas por quê?",
+            "ja": "でも、なんで？",
+            "ko": "근데 왜?",
+            "vi": "Nhưng để làm gì?",
+            "ru": "Но зачем?",
+            "uk": "Але навіщо?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "happy smile",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Protože jsem z toho měl radost.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Because it made me happy.",
+            "de": "Weil ich mich darüber gefreut habe.",
+            "it": "Perché ne ero contento.",
+            "fr": "Parce que ça me faisait plaisir.",
+            "pl": "Bo się z tego cieszyłem.",
+            "pt-BR": "Porque fiquei feliz com isso.",
+            "ja": "嬉しかったからさ。",
+            "ko": "기뻤으니까.",
+            "vi": "Vì anh thấy vui.",
+            "ru": "Потому что я этому радовался.",
+            "uk": "Бо я з того радів."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_stul_plaz",
+      "characters": [],
+      "visual_tags": [
+        "table on the sand",
+        "goulash",
+        "spaghetti",
+        "beer mug",
+        "wine glass",
+        "sunset",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "polite smile",
+        "slight nod"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "No tak to je samozřejmě v pořádku.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Well, that's perfectly fine, of course.",
+            "de": "Na, das ist natürlich in Ordnung.",
+            "it": "Be', allora va benissimo, ovvio.",
+            "fr": "Bon, alors c'est très bien, évidemment.",
+            "pl": "No to oczywiście w porządku.",
+            "pt-BR": "Bom, aí é claro que tudo bem.",
+            "ja": "まあ、それならもちろんいいけど。",
+            "ko": "뭐, 그럼 당연히 괜찮지.",
+            "vi": "À, thế thì dĩ nhiên là ổn.",
+            "ru": "Ну, тогда это, конечно, нормально.",
+            "uk": "Ну, тоді це, звісно, нормально."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smile",
+        "slight bow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Děkuju.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Thank you.",
+            "de": "Danke.",
+            "it": "Grazie.",
+            "fr": "Merci.",
+            "pl": "Dziękuję.",
+            "pt-BR": "Obrigado.",
+            "ja": "ありがとう。",
+            "ko": "고마워.",
+            "vi": "Cảm ơn em.",
+            "ru": "Спасибо.",
+            "uk": "Дякую."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "crossed arms",
+        "sceptical"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Ale nemusíš očekávat, že to budu obdivovat.",
+          "kind": "speech",
+          "i18n": {
+            "en": "But don't expect me to admire it.",
+            "de": "Aber erwarte nicht, dass ich es bewundere.",
+            "it": "Ma non aspettarti che lo ammiri.",
+            "fr": "Mais ne t'attends pas à ce que je l'admire.",
+            "pl": "Ale nie oczekuj, że będę to podziwiać.",
+            "pt-BR": "Mas não espere que eu vá admirar.",
+            "ja": "でも、私が感心するとは期待しないで。",
+            "ko": "하지만 내가 감탄할 거라곤 기대하지 마.",
+            "vi": "Nhưng đừng mong em sẽ trầm trồ.",
+            "ru": "Но не жди, что я буду этим восхищаться.",
+            "uk": "Але не чекай, що я цим захоплюватимусь."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "calm smile",
+        "shaking head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To samozřejmě neočekávám.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Of course I don't expect that.",
+            "de": "Das erwarte ich natürlich nicht.",
+            "it": "Certo che non me lo aspetto.",
+            "fr": "Bien sûr que je ne m'y attends pas.",
+            "pl": "Oczywiście, że tego nie oczekuję.",
+            "pt-BR": "Claro que não espero.",
+            "ja": "もちろん期待してないよ。",
+            "ko": "당연히 기대 안 해.",
+            "vi": "Dĩ nhiên anh không mong thế.",
+            "ru": "Конечно, не жду.",
+            "uk": "Звісно, не чекаю."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "leaning forward",
+        "frown"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Tak proč mi to ukazuješ?",
+          "kind": "speech",
+          "i18n": {
+            "en": "Then why are you showing it to me?",
+            "de": "Warum zeigst du es mir dann?",
+            "it": "Allora perché me lo fai vedere?",
+            "fr": "Alors pourquoi tu me le montres ?",
+            "pl": "To czemu mi to pokazujesz?",
+            "pt-BR": "Então por que está me mostrando?",
+            "ja": "じゃあ、なんで見せるの？",
+            "ko": "그럼 왜 나한테 보여 줘?",
+            "vi": "Vậy sao anh cho em xem?",
+            "ru": "Тогда зачем ты мне это показываешь?",
+            "uk": "Тоді навіщо ти мені це показуєш?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "wide smile",
+        "closed eyes",
+        "content"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "wide smile",
+        "relaxed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Protože jsem chtěl.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Because I wanted to.",
+            "de": "Weil ich wollte.",
+            "it": "Perché volevo.",
+            "fr": "Parce que j'en avais envie.",
+            "pl": "Bo chciałem.",
+            "pt-BR": "Porque eu quis.",
+            "ja": "見せたかったから。",
+            "ko": "그러고 싶었으니까.",
+            "vi": "Vì anh muốn thế.",
+            "ru": "Потому что хотел.",
+            "uk": "Бо хотів."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "putting down fork",
+        "plate of spaghetti",
+        "hand"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "she sets the fork down beside the plate with a decisive click"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "narrowed eyes",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "Víš, co je na tobě zajímavé? Ty se vždycky tváříš, jako bys byl nad věcí.",
+          "kind": "speech",
+          "i18n": {
+            "en": "You know what's interesting about you? You always act like you're above it all.",
+            "de": "Weißt du, was an dir interessant ist? Du tust immer so, als stündest du über den Dingen.",
+            "it": "Sai cosa c'è di interessante in te? Fai sempre finta di essere al di sopra di tutto.",
+            "fr": "Tu sais ce qui est intéressant chez toi ? Tu fais toujours comme si tu étais au-dessus de tout ça.",
+            "pl": "Wiesz, co jest w tobie ciekawe? Zawsze udajesz, że jesteś ponad tym.",
+            "pt-BR": "Sabe o que é interessante em você? Você sempre age como se estivesse acima de tudo.",
+            "ja": "あなたの面白いところ、わかる？いつも自分は超越してるって顔してる。",
+            "ko": "너한테서 흥미로운 게 뭔지 알아? 넌 늘 초연한 척해.",
+            "vi": "Anh biết điều gì thú vị ở anh không? Anh lúc nào cũng làm như mình đứng trên mọi chuyện.",
+            "ru": "Знаешь, что в тебе интересно? Ты всегда делаешь вид, будто ты выше всего этого.",
+            "uk": "Знаєш, що в тобі цікаве? Ти завжди вдаєш, ніби ти вище за все це."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "smug smile",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "To je možné.",
+          "kind": "speech",
+          "i18n": {
+            "en": "That's possible.",
+            "de": "Das ist möglich.",
+            "it": "È possibile.",
+            "fr": "C'est possible.",
+            "pl": "To możliwe.",
+            "pt-BR": "É possível.",
+            "ja": "そうかもね。",
+            "ko": "그럴 수도.",
+            "vi": "Có thể lắm.",
+            "ru": "Возможно.",
+            "uk": "Можливо."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "jana_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "pointing at another",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_50",
+          "text": "To není možné. To je vidět.",
+          "kind": "speech",
+          "i18n": {
+            "en": "It's not \"possible\". It's visible.",
+            "de": "Nicht „möglich“. Offensichtlich.",
+            "it": "Non è \"possibile\". È evidente.",
+            "fr": "Ce n'est pas « possible ». C'est visible.",
+            "pl": "Nie „możliwe”. To widać.",
+            "pt-BR": "Não é \"possível\". É visível.",
+            "ja": "「かも」じゃない。見ればわかる。",
+            "ko": "그럴 수도가 아니야. 딱 보여.",
+            "vi": "Không phải \"có thể\". Nhìn là thấy.",
+            "ru": "Не «возможно». Это видно.",
+            "uk": "Не «можливо». Це видно."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "olin_50"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a table",
+        "beach restaurant",
+        "beaming smile",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_50",
+          "text": "Tak to jsem rád, že to vidíš.",
+          "kind": "speech",
+          "i18n": {
+            "en": "Well, I'm glad you can see it.",
+            "de": "Dann freut es mich, dass du es siehst.",
+            "it": "Allora sono contento che tu lo veda.",
+            "fr": "Alors je suis content que tu le voies.",
+            "pl": "To cieszę się, że to widzisz.",
+            "pt-BR": "Então fico feliz que você veja.",
+            "ja": "じゃあ、見えてて嬉しいよ。",
+            "ko": "그럼 네가 봐 줘서 기쁘네.",
+            "vi": "Vậy anh mừng là em thấy được.",
+            "ru": "Тогда я рад, что ты это видишь.",
+            "uk": "Тоді я радий, що ти це бачиш."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

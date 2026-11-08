@@ -1,0 +1,182 @@
+# Gamebook — U Knedlíku 2089. Kulový blesk, verze „Claude“: stejná dvojice, jiný text od autora (Olin, 2026-11-08),
+# krátká komorní hra o třech scénách; text replik je doslova jeho. Hra nemá vlastní název, název je jméno restaurace.
+# Styl podle obecné představy o modelu: intelektuální, odměřený. Prostředí autor přesunul do univerzitní menzy jako na
+# Stanfordu v šedesátých letech: pin-up ilustrace staré Ameriky, za okny staré bouráky (preset pinup_60s). Neonový
+# nápis, holografické plakáty a AI zpravodajství ze scénických poznámek se kreslí do té menzy (nápis nad výdejem).
+# Lineární: tři uzly, žádné volby, žádný nový text. Scénické poznámky v závorkách se kreslí (tagy), nepíšou se.
+# Nápisy, které hra ukazuje na scéně („U KN DLÍKU 2089“, „NECH TO NA NÁS“, „U KN DLÍKU“, „U K EDLÍKU“,
+# „U KNEDLÍKU 2089“), jsou `caption` (písmo vypravěče), nekreslí se do obrazu.
+# „OLIN a JANA (současně): Já.“ jsou dva rychlé panely za sebou, Olin „Já.“ a Jana „Já.“ (sourozenci nikdy spolu
+# v obraze). Překlepy v replikách nejsou; hovorové tvary („skvělý“, „chtěj“, „tvýho“, „jiný hry“) zůstávají, ve
+# scénických poznámkách zůstává i „šířej“ a zkratka „Hol. plakát“.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
+# jako obraz (dlouhé poznámky rozdělené na panely doslova, po větách). Profil comedy (jídlo a pití v obraze smějí být).
+
+schema: 1
+id: uknedliku
+title: U Knedlíku 2089
+title_i18n: {de: "Zum Knödel 2089", en: "At the Dumpling 2089", fr: "À la Quenelle 2089", it: "Al Canederlo 2089", ja: "クネドリーキ亭 2089", ko: "크네들리키 2089", pl: "Pod Knedlem 2089", pt-BR: "No Bolinho 2089", ru: "У Кнедлика 2089", uk: "У Кнедлика 2089", vi: "Quán Bánh Bao 2089"}
+world: w_u_knedliku
+audience: adult
+language: cs
+style_id: pinup_60s
+profile: comedy
+product_id: gamebook_uknedliku
+start: s1
+
+premise: >
+  Univerzitní menza v roce 2089, jako ze šedesátých let. U jediného osvětleného stolu Olin s gulášem, knedlíkem
+  a pivem a jeho sestra Jana, překladatelka, se špagetami a bílým vínem. Hádka, která se nikdy nestane.
+
+characters: [olin_40, jana_37, robotcisnik]
+
+locations:
+  - {id: l_menza, name: Menza U Knedlíku 2089, description: "pískovcové oblouky, dlouhé stoly, neon nad výdejem, staré bouráky za okny"}
+  - {id: l_stul_menza, name: Osvětlený stůl, description: "guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana, Robotčíšník: robot}
+  faces:
+    olin: [[calm smile, looking at another], [smile, half-closed eyes], [gentle smile, relaxed]]
+    jana: [[composed expression, looking at another], [raised eyebrow, sceptical], [narrowed eyes, sharp gaze]]
+    robot: [[holographic smile], [holographic sad face], [glitching face]]
+  speaking:
+    default: [upper body, from front, sitting at a table]
+    robot: [upper body, from front, robot waiter, holding a tray]
+
+nodes:
+  s1:
+    title: Jídlo je na stole
+    location: l_menza
+    cast: {olin: olin_40, jana: jana_37, robot: robotcisnik}
+    next: s2
+    script:
+      - {see: "Neopunková restaurace budoucnosti. Cihlové zdi polepené holografickými plakáty, které blikají a glitchují. Neonový nápis „U KNEDLÍKU 2089“ s vypadlým písmenem E.", caption: "U KN DLÍKU 2089", shot: establishing, tags: [1960s dining hall, sandstone arches, neon sign above the counter, retro posters, classic cars outside, dusk], gap: medium, animate: "the neon sign buzzing with one dead letter, posters flickering, car headlights passing outside, static camera"}
+      - {see: "Nad barem běží na obrazovce nečitelný zpravodajský kanál, celý generovaný AI. Ze stropu visí kabely jako liány.", shot: medium, tags: [vintage television above the counter, glowing screen, cables hanging from the ceiling, dark hall]}
+      - {see: "U jediného osvětleného stolu sedí Olin a Jana proti sobě. Zbytek restaurace je ve tmě, jen občas projede světlo robota se zapomenutým tácem.", shot: wide, loc: l_stul_menza, tags: [single lit table, hanging lamp, goulash, spaghetti, beer mug, wine glass, dark hall, distant robot light], animate: "a small robot light gliding through the dark hall behind the lit table, lamp light steady"}
+      - {see: "Světlo jen nad stolem. Olin už jí.", shot: medium, who: olin, tags: [sitting at a table, eating goulash, bread dumplings, beer mug, lamp light]}
+      - {see: "Jana točí vidličkou špagety, ale nejí.", shot: medium, who: jana, tags: [sitting at a table, twirling spaghetti, fork, wine glass, not eating]}
+      - {see: "Robotčíšník přijíždí, tvář mu přeskočí z úsměvu na smutek a zpět.", shot: medium, who: robot, tags: [robot waiter, rolling in, holographic face, glitching face], animate: "the holographic face jumps from a smile to a sad face and back, a beat too late"}
+      - {say: robot, text: "Chutná vám? Vyhodnocuji 73 % spokojenosti u stolu. Mohu to nějak zlepšit?", tags: [holographic smile, polite bow]}
+      - {say: olin, text: "Je to skvělý. Tenhle guláš vymyslel jazykový model, viď?", tags: [smile, mouth full, holding a fork]}
+      - {say: robot, text: "Recept byl optimalizován na základě 40 000 babiček.", tags: [holographic smile, proud]}
+      - {say: jana, text: "Tak proto chutná jako žádná z nich.", shot: close-up, tags: [looking down, deadpan, twirling spaghetti]}
+      - {see: "Robot ztuhne, tvář se mu na vteřinu rozpixeluje. Odjede.", shot: close-up, who: robot, tags: [robot waiter, pixelated face, frozen, glitch], animate: "the holographic face freezes and breaks into pixels for a second, then the robot rolls away"}
+      - {say: olin, text: "To bylo dobrý.", tags: [smile, amused]}
+      - {say: jana, text: "Já vím.", tags: [deadpan, not looking up]}
+      - {see: "Pauza. Olin nabírá knedlík, namáčí ho, vychutnává.", shot: close-up, who: olin, tags: [bread dumpling, dipping in goulash sauce, savoring, eyes closed]}
+      - {see: "Jana se napije vína.", shot: medium, who: jana, tags: [drinking wine, wine glass, composed]}
+      - {say: jana, text: "Posílal jsi mi něco. V sobotu.", tags: [looking at another, calm]}
+      - {say: olin, text: "Jo. Obrázky. Co umí Spark.", tags: [nodding, smile]}
+      - {say: jana, text: "Chtělo to přihlášení.", tags: [raised eyebrow, flat expression]}
+      - {say: olin, text: "Opravil jsem to. Dneska ráno.", shot: close-up, tags: [smile, satisfied]}
+      - {say: jana, text: "Nekoukala jsem.", tags: [looking away, cool]}
+      - {say: olin, text: "Já vím.", tags: [smile, calm]}
+      - {say: jana, text: "Tak proč to říkáš?", shot: close-up, tags: [narrowed eyes, looking at another]}
+      - {say: olin, text: "Neříkám nic. Říkám, že jsem to opravil.", tags: [gentle smile, open hands]}
+      - {see: "Jana položí vidličku.", shot: close-up, who: jana, tags: [close-up of hands, putting down a fork, plate of spaghetti]}
+      - {see: "Hol. plakát na zdi za ní zabliká: „NECH TO NA NÁS“.", caption: "NECH TO NA NÁS", shot: medium, tags: [retro poster on the wall, flickering hologram, sandstone wall], animate: "the holographic poster flickering and glitching on the wall"}
+      - {say: jana, text: "Ty se usmíváš.", tags: [narrowed eyes, sharp gaze]}
+      - {say: olin, text: "Jím guláš. To se usmívá samo.", tags: [wide smile, eating goulash]}
+      - {say: jana, text: "Fajn.", tags: [picking up a fork, composed]}
+      - {see: "Točí špagety. Nejí.", shot: close-up, who: jana, tags: [close-up of hands, twirling spaghetti, fork, untouched plate]}
+      - {see: "Světlo lehce zhasne a zase naběhne – výpadek v síti.", shot: wide, loc: l_stul_menza, tags: [hanging lamp, flickering light, dark hall, empty table edge], gap: large, animate: "the lamp above the table dims and comes back on, a power glitch, static camera"}
+
+  s2:
+    title: AI slop, nebo umění
+    location: l_menza
+    cast: {olin: olin_40, jana: jana_37, robot: robotcisnik}
+    next: s3
+    script:
+      - {see: "Stejný stůl. Olin má půl guláše. Jana pořád celé špagety.", shot: establishing, loc: l_stul_menza, tags: [table close-up, half-eaten goulash, full plate of spaghetti, beer mug, wine glass]}
+      - {see: "Robotčíšník dolévá víno, aniž by ho kdo žádal.", shot: medium, who: robot, tags: [robot waiter, pouring white wine, wine bottle, holographic smile], animate: "the robot tops up the wine glass unasked, its face smiling a beat late"}
+      - {say: robot, text: "Dolévám preventivně. Detekuji konflikt.", tags: [holographic face, warning sign on screen]}
+      - {say: jana, text: "Není žádný konflikt.", tags: [cool expression, looking at another]}
+      - {say: olin, text: "Vůbec žádný.", tags: [smile, relaxed]}
+      - {see: "Robot odjede. Pauza.", shot: wide, who: robot, tags: [robot waiter, rolling away, from behind, dark hall]}
+      - {say: jana, text: "Jenom řeknu, že mi to přijde ujetý. Ne tobě. Tomu všemu.", tags: [looking at another, measured]}
+      - {say: olin, text: "Můžeš.", tags: [nodding, smile]}
+      - {say: jana, text: "Já to překládám celý týden. „V jakých všech stylech ti to vygeneruje obrázek.“ „Napiš knížku za den.“ A pak ji někdo vydá jako svoji.", tags: [gesturing with a fork, tired eyes, sharp]}
+      - {say: olin, text: "Lidi si chtěj usnadnit práci.", tags: [shrugging, smile]}
+      - {say: jana, text: "Usnadnění není tvorba.", shot: close-up, tags: [firm expression, looking at another]}
+      - {say: olin, text: "Pro kreativní lidi je tvorba s AI usnadnění jejich kreativní práce.", tags: [pointing with a fork, dumpling on fork, smile]}
+      - {say: jana, text: "To je věta z tvýho webu.", tags: [raised eyebrow, dry]}
+      - {say: olin, text: "Je to pravda.", tags: [smile, calm]}
+      - {say: jana, text: "Je to věta.", shot: close-up, tags: [deadpan, sharp gaze]}
+      - {see: "Olin se usměje šířej.", shot: close-up, who: olin, tags: [wide smile, glasses glint]}
+      - {see: "Jana se napije.", shot: medium, who: jana, tags: [drinking wine, wine glass, eyes closed]}
+      - {see: "Na obrazovce nad barem AI moderátor říká něco s nadšením a bez zvuku.", shot: medium, tags: [vintage television above the counter, glowing screen, muted broadcast, retro tv set], animate: "the vintage TV screen flickering with an enthusiastic silent broadcast"}
+      - {say: olin, text: "Možná nejde o usnadnění. Možná jde o zefektivnění.", tags: [thoughtful smile, looking up]}
+      - {say: jana, text: "A proč mi to vysvětluješ?", tags: [narrowed eyes, tilted head]}
+      - {say: olin, text: "Nevysvětluju. Předkládám názor.", tags: [shrugging, gentle smile]}
+      - {say: jana, text: "Tak mi předkládáš názor na věc, se kterou pracuju každý den.", tags: [leaning forward, controlled]}
+      - {say: olin, text: "Jo.", shot: close-up, tags: [smile, nodding]}
+      - {say: jana, text: "Fajn.", shot: close-up, tags: [flat expression]}
+      - {say: olin, text: "Fajn.", shot: close-up, tags: [smile, eyes closed]}
+      - {see: "Oba jí. Olin opravdu, Jana jen namotává.", shot: close-up, loc: l_stul_menza, tags: [table close-up, goulash being eaten, spaghetti twirled on a fork, beer mug, wine glass]}
+      - {see: "Dlouhá pauza, do které bzučí neon.", shot: medium, tags: [neon sign above the counter, dead letter, dark hall], animate: "the neon sign buzzing and flickering, static camera"}
+      - {say: olin, text: "Všechno, co je na olin.now, bych dřív dělal sto let.", tags: [proud smile, looking at another]}
+      - {say: jana, text: "Já ti to neberu.", tags: [calm, looking at another]}
+      - {say: olin, text: "Půl roku. Nebylo to snadný.", tags: [smile, nodding]}
+      - {say: jana, text: "Já ti to neberu. Fakt ne.", tags: [sincere, slight frown]}
+      - {say: olin, text: "Já vím.", tags: [smile, calm]}
+      - {say: jana, text: "Tak proč to říkáš?", shot: close-up, tags: [raised eyebrow, sharp gaze]}
+      - {say: olin, text: "Protože mi to dělá radost.", shot: close-up, tags: [slow smile, warm eyes], animate: "a slow, warm smile spreading, glasses catching the lamp light"}
+      - {see: "Jana otevře pusu. Zavře ji. Tohle nemá jak přebít.", shot: close-up, who: jana, tags: [open mouth, speechless, glasses], animate: "she opens her mouth, closes it again, no words"}
+      - {see: "Odloží vidličku na okraj talíře, přesně rovnoběžně s hranou stolu.", shot: close-up, who: jana, tags: [close-up of hands, fork on plate edge, precise, tablecloth edge]}
+      - {say: jana, text: "To je hezký.", tags: [polite smile, cool eyes]}
+      - {say: olin, text: "Díky.", tags: [smile, nodding]}
+      - {say: jana, text: "Mně to radost nedělá.", tags: [flat expression, looking at another]}
+      - {say: olin, text: "Taky dobře.", tags: [smile, relaxed]}
+      - {see: "Jana se znovu napije.", shot: medium, who: jana, tags: [drinking wine, wine glass]}
+      - {see: "Olin dojí knedlík.", shot: medium, who: olin, tags: [eating the last dumpling, content smile]}
+      - {see: "Neon za nimi na vteřinu ukáže „U KN DLÍKU“", caption: "U KN DLÍKU", shot: close-up, tags: [neon sign, dead letter, flickering], animate: "the neon sign flickering, one letter dying"}
+      - {see: "a pak „U K EDLÍKU“, jako by taky nevěděl, kde má stát.", caption: "U K EDLÍKU", shot: close-up, tags: [neon sign, another dead letter, flickering], gap: large, animate: "the dead letter jumps to another place in the neon sign"}
+
+  s3:
+    title: Zákopy
+    location: l_menza
+    cast: {olin: olin_40, jana: jana_37, robot: robotcisnik}
+    ending: good
+    script:
+      - {see: "Olin má prázdný talíř. Jana má špagety studené, parmazán se slil do jednoho kusu.", shot: establishing, loc: l_stul_menza, tags: [table close-up, empty plate, cold spaghetti, clumped parmesan, empty beer mug, wine glass]}
+      - {see: "Robotčíšník stojí opodál a nenápadně nahrává.", shot: medium, who: robot, tags: [robot waiter, standing aside, recording light, holographic face]}
+      - {say: robot, text: "Mohu vám nabídnout dezert? Nebo mediátora? Obojí je v ceně.", tags: [holographic smile, polite bow]}
+      - {say: olin, text: "Dezert.", shot: close-up, tags: [smile, raised hand]}
+      - {say: jana, text: "Účet.", shot: close-up, tags: [flat expression, looking at another]}
+      - {say: robot, text: "…zpracovávám.", shot: close-up, tags: [frozen face, glitch, two expressions], animate: "the holographic face stuck between two expressions, flickering"}
+      - {see: "Odjede dozadu a nevrátí se. Pauza.", shot: wide, who: robot, tags: [robot waiter, rolling away, dark hall, from behind]}
+      - {say: olin, text: "Nevečeřela jsi.", tags: [smile, looking at her plate]}
+      - {say: jana, text: "Večeřela jsem víno.", tags: [holding a wine glass, dry]}
+      - {say: olin, text: "To se počítá.", tags: [smile, nodding]}
+      - {say: jana, text: "Všechno se u tebe počítá.", tags: [raised eyebrow, sharp]}
+      - {say: olin, text: "Jo.", shot: close-up, tags: [smile, calm]}
+      - {see: "Jana se opře. Poprvé za celou hru se na něj dívá přímo.", shot: close-up, who: jana, tags: [leaning back, looking at viewer, direct gaze], animate: "she leans back and looks straight ahead, steady"}
+      - {say: jana, text: "Víš, co je na tobě nejhorší?", shot: close-up, tags: [looking at viewer, serious]}
+      - {say: olin, text: "Řekni.", tags: [smile, curious]}
+      - {say: jana, text: "Že se nehádáš. Nejde s tebou vyhrát, protože nehraješ.", tags: [looking at viewer, quiet intensity]}
+      - {say: olin, text: "Hraju. Jen jiný hry.", tags: [smile, relaxed]}
+      - {say: jana, text: "To je přesně to, co by řekl někdo, kdo prohrává.", tags: [sharp smile, triumphant]}
+      - {say: olin, text: "Možná.", shot: close-up, tags: [wide smile]}
+      - {say: jana, text: "Ne možná. Určitě.", shot: close-up, tags: [firm, narrowed eyes]}
+      - {say: olin, text: "Tak určitě.", tags: [smile, eyes closed]}
+      - {see: "Jana chce něco dodat. Zjistí, že už není co. Má poslední slovo a nic jí to nedává.", shot: close-up, who: jana, tags: [open mouth, hesitating, empty expression]}
+      - {see: "Olin to ví.", shot: close-up, who: olin, tags: [quiet smile, knowing look]}
+      - {see: "Ona ví, že to ví.", shot: close-up, who: jana, tags: [narrowed eyes, knowing look]}
+      - {say: jana, text: "Ten login jsi fakt opravil?", tags: [quiet, looking down, soft voice]}
+      - {say: olin, text: "Jo.", tags: [gentle smile]}
+      - {say: jana, text: "Hm.", shot: close-up, tags: [looking down, neutral]}
+      - {say: olin, text: "Nemusíš koukat.", tags: [gentle smile, relaxed]}
+      - {say: jana, text: "Já vím, že nemusím.", tags: [looking at another, composed]}
+      - {say: olin, text: "Já vím, že víš.", shot: close-up, tags: [smile, half-closed eyes]}
+      - {see: "Jana si přitáhne talíř a začne jíst studené špagety.", shot: medium, who: jana, tags: [eating spaghetti, pulling plate closer, cold spaghetti]}
+      - {see: "Olin dopije pivo.", shot: medium, who: olin, tags: [drinking beer, beer mug, last sip]}
+      - {see: "Robotčíšník se vrátí s jedním dezertem a jedním účtem a položí obojí přesně doprostřed stolu.", shot: medium, who: robot, tags: [robot waiter, dessert plate, bill, placing on table center], animate: "the robot sets one dessert and one bill exactly in the middle of the table"}
+      - {say: robot, text: "Nepodařilo se mi určit, kdo z vás měl pravdu. Omlouvám se. Model je ještě ve vývoji.", tags: [holographic sad face, apologetic bow]}
+      - {say: olin, text: "Já.", shot: close-up, tags: [smile, raised hand]}
+      - {say: jana, text: "Já.", shot: close-up, tags: [raised hand, firm expression]}
+      - {see: "Podívají se na sebe. Ona nehne brvou.", shot: close-up, who: jana, tags: [looking at another, expressionless, steady gaze]}
+      - {see: "On se usmívá.", shot: close-up, who: olin, tags: [smile, looking at another]}
+      - {see: "Neon nad barem konečně naskočí celý: „U KNEDLÍKU 2089“.", caption: "U KNEDLÍKU 2089", shot: medium, tags: [neon sign above the counter, fully lit, glowing letters, dark hall], animate: "the neon sign finally lights up complete, glowing"}
+      - {see: "A hned zase vypadne. Tma.", shot: wide, loc: l_stul_menza, tags: [dark hall, lamp off, faint outlines of a table, darkness], gap: large, animate: "the neon dies, the last light fades to darkness"}

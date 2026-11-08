@@ -1,0 +1,125 @@
+{
+  "id": "w_knedlik_v_zakopu",
+  "title": "S knedlíkem v zákopu",
+  "title_i18n": {
+    "en": "With a Dumpling in the Trench",
+    "de": "Mit Knödel im Schützengraben",
+    "it": "Con il canederlo in trincea",
+    "fr": "Un knödel dans la tranchée",
+    "pl": "Z knedlem w okopie",
+    "pt-BR": "Com um bolinho na trincheira",
+    "ja": "塹壕にクネドリーキ",
+    "ko": "참호 속의 크네들리키",
+    "vi": "Với bánh knedlík trong chiến hào",
+    "ru": "С кнедликом в окопе",
+    "uk": "З кнедликом в окопі"
+  },
+  "synopsis": "Mramorová restaurace na Olympu, hluboko dole lidská spodina. Olin u guláše a piva v zenu, Jana u špaget a vína s potřebou posledního slova, a android M-77, který podává pravdu jako službu.",
+  "synopsis_i18n": {
+    "en": "A marble restaurant on Olympus, the human dregs far below. Olin in zen over goulash and beer, Jana over spaghetti and wine, needing the last word, and android M-77, who serves truth as a service.",
+    "de": "Ein Marmorrestaurant auf dem Olymp, tief unten der menschliche Bodensatz. Olin in Zen-Ruhe bei Gulasch und Bier, Jana bei Spaghetti und Wein, mit dem Drang zum letzten Wort, und Android M-77, der Wahrheit als Service serviert.",
+    "it": "Un ristorante di marmo sull'Olimpo, giù in basso la feccia umana. Olin zen davanti a gulasch e birra, Jana davanti a spaghetti e vino, con il bisogno dell'ultima parola, e l'androide M-77, che serve la verità come un servizio.",
+    "fr": "Un restaurant de marbre sur l'Olympe, la lie de l'humanité tout en bas. Olin, zen devant un goulash et une bière, Jana devant des spaghetti et du vin, avide du dernier mot, et l'androïde M-77, qui sert la vérité comme un service.",
+    "pl": "Marmurowa restauracja na Olimpie, daleko w dole ludzka hołota. Olin w zenie nad gulaszem i piwem, Jana nad spaghetti i winem, z potrzebą ostatniego słowa, i android M-77, który podaje prawdę jak usługę.",
+    "pt-BR": "Um restaurante de mármore no Olimpo, a escória humana lá embaixo. Olin, zen, diante de gulache e cerveja; Jana, diante de espaguete e vinho, precisando da última palavra; e o androide M-77, que serve a verdade como um serviço.",
+    "ja": "オリンポスの大理石のレストラン。はるか下には人間のどん底。グヤーシュとビールを前に悟りきったオリン、スパゲッティとワインを前に最後の一言にこだわるヤナ、そして真実をサービスとして給仕するアンドロイドM-77。",
+    "ko": "올림포스의 대리석 레스토랑, 저 아래에는 인간의 밑바닥. 굴라시와 맥주 앞에서 초연한 올린, 스파게티와 와인 앞에서 마지막 말을 해야 하는 야나, 그리고 진실을 서비스로 내오는 안드로이드 M-77.",
+    "vi": "Một nhà hàng cẩm thạch trên đỉnh Olympus, tận dưới xa là cặn bã loài người. Olin thản nhiên bên goulash và bia, Jana bên spaghetti và rượu vang, luôn cần nói câu cuối, và android M-77 phục vụ sự thật như một dịch vụ.",
+    "ru": "Мраморный ресторан на Олимпе, далеко внизу человеческое дно. Олин в дзене над гуляшом и пивом, Яна над спагетти и вином, ей нужно последнее слово, и андроид M-77, который подаёт правду как услугу.",
+    "uk": "Мармуровий ресторан на Олімпі, далеко внизу людське дно. Олін у дзені над гуляшем і пивом, Яна над спагеті й вином, їй потрібне останнє слово, і андроїд M-77, що подає правду як послугу."
+  },
+  "tone": "chladný, nekompromisní, ironický",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "marble_olymp",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Oba kolem čtyřicítky, oba nosí brýle, oba intelektuálové; kreslení jako antické mramorové sochy v řízách přes moderní oblečení, nikdy odhalená hruď; ne manga.",
+      "Chladné, nekompromisní, božské: bohové na Olympu, kteří se přou o guláš. Android M-77 servíruje a reflektuje."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo neodchází ze svého zákopu; Jana dostane poslední slovo darem a Olin si ho stejně vezme."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_olymp",
+      "l_mramorovy_stul"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_42",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serene man about 42 rendered like a white marble statue, short curly greying hair, a short beard, round glasses, a calm godlike smile",
+      "base": "adult, mature male, marble statue style, white marble skin, short curly greying hair, short beard, (round glasses:1.4), calm smile, serene",
+      "outfits": {
+        "default": "white toga draped over a dark shirt"
+      },
+      "photo": "a serene man about 42 rendered like a white marble statue, short curly greying hair, a short beard, round glasses, a calm godlike smile",
+      "tag_prompt": "adult, mature male, marble statue style, white marble skin, short curly greying hair, short beard, (round glasses:1.4), calm smile, serene, white toga draped over a dark shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_40",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant woman about 40 rendered like a white marble statue, a sleek chin-length bob, thin rectangular glasses, a cold sharp gaze",
+      "base": "adult, mature female, marble statue style, white marble skin, sleek chin-length bob, (thin rectangular glasses:1.4), sharp gaze, cold expression",
+      "outfits": {
+        "default": "white chiton over a high-collared blouse"
+      },
+      "photo": "an elegant woman about 40 rendered like a white marble statue, a sleek chin-length bob, thin rectangular glasses, a cold sharp gaze",
+      "tag_prompt": "adult, mature female, marble statue style, white marble skin, sleek chin-length bob, (thin rectangular glasses:1.4), sharp gaze, cold expression, white chiton over a high-collared blouse",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "m77",
+      "name": "M-77",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "an android waiter carved from polished marble, smooth featureless face with glowing eye slits, a silver tray",
+      "base": "robot, no humans, android waiter, polished marble body, smooth featureless face, glowing eye slits, holding a silver tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "an android waiter carved from polished marble, smooth featureless face with glowing eye slits, a silver tray",
+      "tag_prompt": "robot, no humans, android waiter, polished marble body, smooth featureless face, glowing eye slits, holding a silver tray",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_olymp",
+      "name": "Restaurace na Olympu",
+      "description": "Mramorová restaurace na Olympu nad mraky, kolonáda, hluboko dole skrz mraky špinavé lidské město.",
+      "tag_prompt": "outdoors, marble restaurant on a mountain top, above the clouds, greek colonnade, marble columns, marble floor, cold light, distant grimy city far below, seen through the clouds",
+      "mood": ""
+    },
+    {
+      "id": "l_mramorovy_stul",
+      "name": "Mramorový stůl",
+      "description": "Mramorový stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno.",
+      "tag_prompt": "marble table, white marble, greek colonnade, clouds, cold light",
+      "mood": ""
+    }
+  ]
+}

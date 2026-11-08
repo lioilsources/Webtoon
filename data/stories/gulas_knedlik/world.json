@@ -1,0 +1,142 @@
+{
+  "id": "w_gulas_knedlik",
+  "title": "Guláš s knedlíkem v neopunkové budoucnosti",
+  "title_i18n": {
+    "de": "Gulasch mit Knödeln in einer Neo-Punk-Zukunft",
+    "en": "Goulash and Dumplings in a Neo-Punk Future",
+    "fr": "Goulash et knödels dans un futur néo-punk",
+    "it": "Gulasch con canederli in un futuro neo-punk",
+    "ja": "ネオパンクな未来のグヤーシュとクネドリーキ",
+    "ko": "네오펑크 미래의 굴라시와 크네들리키",
+    "pl": "Gulasz z knedlikami w neopunkowej przyszłości",
+    "pt-BR": "Gulache com bolinhos num futuro neopunk",
+    "ru": "Гуляш с кнедликами в неопанковом будущем",
+    "uk": "Гуляш із кнедликами в неопанковому майбутньому",
+    "vi": "Goulash với bánh knedlík trong tương lai tân punk"
+  },
+  "synopsis": "Kavárna U Tiché Loutny, rok 2089. Olin v zenu u guláše a tmavého piva, jeho sestra Jana u špaget a vína, s potřebou mít poslední slovo. Robot servíruje parmazán dvakrát a reproduktor hodnotí jejich ticho.",
+  "synopsis_i18n": {
+    "de": "Café U Tiché Loutny, 2089. Olin in Zen-Ruhe bei Gulasch und dunklem Bier, seine Schwester Jana bei Spaghetti und Wein, mit dem Drang zum letzten Wort. Der Roboter serviert den Parmesan zweimal, der Lautsprecher bewertet ihr Schweigen.",
+    "en": "Café U Tiché Loutny, 2089. Olin in zen over goulash and dark beer, his sister Jana over spaghetti and wine, needing the last word. The robot serves the parmesan twice and the loudspeaker grades their silence.",
+    "fr": "Café U Tiché Loutny, 2089. Olin, zen devant un goulash et une bière brune, sa sœur Jana devant des spaghetti et du vin, avec le besoin d'avoir le dernier mot. Le robot sert le parmesan deux fois et le haut-parleur note leur silence.",
+    "it": "Caffè U Tiché Loutny, 2089. Olin zen davanti a gulasch e birra scura, sua sorella Jana davanti a spaghetti e vino, con il bisogno dell'ultima parola. Il robot serve il parmigiano due volte e l'altoparlante valuta il loro silenzio.",
+    "ja": "2089年、カフェ「ウ・ティヘー・ロウトニ」。グヤーシュと黒ビールを前に悟りきったオリンと、スパゲッティとワインを前に最後の一言にこだわる妹のヤナ。ロボットはパルメザンを二度出し、スピーカーは二人の沈黙を採点する。",
+    "ko": "2089년, 카페 '우 티헤 로우트니'. 굴라시와 흑맥주 앞에서 초연한 올린, 스파게티와 와인 앞에서 마지막 말을 해야 하는 여동생 야나. 로봇은 파르메산을 두 번 내오고, 스피커는 둘의 침묵을 평가한다.",
+    "pl": "Kawiarnia U Tiché Loutny, rok 2089. Olin w zenie nad gulaszem i ciemnym piwem, jego siostra Jana nad spaghetti i winem, z potrzebą ostatniego słowa. Robot podaje parmezan dwa razy, a głośnik ocenia ich milczenie.",
+    "pt-BR": "Café U Tiché Loutny, 2089. Olin, zen diante de gulache e cerveja escura; a irmã, Jana, diante de espaguete e vinho, precisando da última palavra. O robô serve o parmesão duas vezes e o alto-falante avalia o silêncio deles.",
+    "ru": "Кафе «У Тихой лютни», 2089 год. Олин в дзене над гуляшом и тёмным пивом, его сестра Яна над спагетти и вином, ей нужно последнее слово. Робот подаёт пармезан дважды, а громкоговоритель оценивает их молчание.",
+    "uk": "Кафе «У Тихої лютні», 2089 рік. Олін у дзені над гуляшем і темним пивом, його сестра Яна над спагеті й вином, їй потрібне останнє слово. Робот подає пармезан двічі, а гучномовець оцінює їхню мовчанку.",
+    "vi": "Quán cà phê U Tiché Loutny, năm 2089. Olin thản nhiên bên goulash và bia đen, em gái Jana bên spaghetti và rượu vang, luôn cần nói câu cuối cùng. Rô-bốt phục vụ phô mai parmesan hai lần, còn loa thì chấm điểm sự im lặng của họ."
+  },
+  "tone": "hravý, načančaný, ironický, laskavý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "lautrec_rococo",
+  "profile": "comedy",
+  "bible": {
+    "rules": [
+      "SFW. Olin a Jana jsou sourozenci: žádná romantika, nikdy spolu v jednom obraze.",
+      "Olin kolem čtyřiceti, Jana kolem pětatřiceti, oba nosí brýle, oba jsou intelektuálové; ne manga.",
+      "Načančaná pařížská kavárna: plakátové linky Toulouse-Lautreca, baletky, rokokové zlacení, falešné 18. století, které chce být renesancí. Hlas reproduktoru je zlacený gramofonový trychtýř."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nevyhrál, nikdo nechtěl; ticho mezi nimi je nejvyšší stupeň souznění a odcházejí každý jedněmi dveřmi, ale ze stejného důvodu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_loutna",
+      "l_stul_loutna"
+    ]
+  },
+  "characters": [
+    {
+      "id": "olin_40",
+      "name": "Olin",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a serene Czech man about 40 with short dark brown hair, a short beard, round glasses and a constant calm smile",
+      "base": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture",
+      "outfits": {
+        "default": "casual cream linen jacket over a striped shirt"
+      },
+      "photo": "a serene Czech man about 40 with short dark brown hair, a short beard, round glasses and a constant calm smile",
+      "tag_prompt": "adult, mature male, short dark brown hair, short beard, (round glasses:1.4), brown eyes, calm smile, relaxed posture, casual cream linen jacket over a striped shirt",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "jana_35",
+      "name": "Jana",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "an elegant Czech woman about 35 with dark brown hair in a neat chignon, thin cat-eye glasses and sharp, quick eyes",
+      "base": "adult, mature female, dark brown hair in a neat chignon, (thin cat-eye glasses:1.4), brown eyes, sharp gaze, elegant",
+      "outfits": {
+        "default": "pastel pink silk blouse with a ruffled collar, pearl earrings"
+      },
+      "photo": "an elegant Czech woman about 35 with dark brown hair in a neat chignon, thin cat-eye glasses and sharp, quick eyes",
+      "tag_prompt": "adult, mature female, dark brown hair in a neat chignon, (thin cat-eye glasses:1.4), brown eyes, sharp gaze, elegant, pastel pink silk blouse with a ruffled collar, pearl earrings",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník-robot",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "base": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "tag_prompt": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "reproduktor",
+      "name": "Hlas reproduktoru",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "",
+      "human": false,
+      "description": "an ornate gilded gramophone horn on the café wall, the voice of the restaurant",
+      "base": "no humans, ornate gilded gramophone horn, loudspeaker horn mounted on the wall, rococo ornaments, gold",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "an ornate gilded gramophone horn on the café wall, the voice of the restaurant",
+      "tag_prompt": "no humans, ornate gilded gramophone horn, loudspeaker horn mounted on the wall, rococo ornaments, gold",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_loutna",
+      "name": "Kavárna U Tiché Loutny",
+      "description": "Načančaná pařížská kavárna, rok 2089: rokokové zlacení, plakáty s tanečnicemi à la Toulouse-Lautrec, baletky, pastelová růžová a zlatá. Falešné 18. století, které by rádo bylo renesancí.",
+      "tag_prompt": "indoors, parisian cafe, rococo interior, gilded ornaments, gilded mirrors, poster of cancan dancers on the wall, ballerinas in the background, pastel pink and gold, marble tables, potted plants, chandelier",
+      "mood": ""
+    },
+    {
+      "id": "l_stul_loutna",
+      "name": "Stůl s židlemi",
+      "description": "Stůl uprostřed kavárny a dvě židle, které se samy přisouvají a zase couvají.",
+      "tag_prompt": "small marble cafe table, two ornate gilded chairs, rococo cafe, pastel pink and gold, soft light",
+      "mood": ""
+    }
+  ]
+}

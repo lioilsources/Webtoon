@@ -1,0 +1,80 @@
+# Gamebook 7 — Guláš a špagety (Toonfork – scéna). Kulový blesk, verze „Grok“: stejná dvojice, jiný text od autora
+# (Olin, 2026-11-08), text replik je doslova jeho. Styl podle obecné představy o modelu: drzý, puberťácký, sytě
+# neonový (preset neon_brat, karikatura s tlustými obrysy). Postavy jsou dospělé (kolem padesátky), „nezletilý“ je
+# tón kreslení, ne věk. Prostředí autor přesunul do restaurace v raketě na cestě na Měsíc (matné sklo, chrom,
+# neonové trubice barvy staré mědi, za oknem Měsíc).
+# Lineární: jeden uzel, žádné volby. Scénické poznámky v závorkách se kreslí (tagy), nepíšou se do bublin.
+# Opravený překlep ve scénické poznámce: „nahnne“ → „nahne“.
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
+# v obraze), `see` = scénická poznámka jako obraz. Profil comedy (jídlo a pití v obraze smějí být, karikatura je záměr).
+
+schema: 1
+id: gulasspagety
+title: Guláš a špagety
+title_i18n: {de: "Gulasch und Spaghetti", en: "Goulash and Spaghetti", fr: "Goulash et spaghetti", it: "Gulasch e spaghetti", ja: "グヤーシュとスパゲッティ", ko: "굴라시와 스파게티", pl: "Gulasz i spaghetti", pt-BR: "Gulache e espaguete", ru: "Гуляш и спагетти", uk: "Гуляш і спагеті", vi: "Goulash và spaghetti"}
+world: w_gulas_spagety
+audience: adult
+language: cs
+style_id: neon_brat
+profile: comedy
+product_id: gamebook_gulasspagety
+start: s1
+
+premise: >
+  Restaurace na palubě rakety na cestě na Měsíc: matné sklo, chrom, neonové trubice barvy staré mědi. Olin u guláše
+  s knedlíkem a piva, Jana u špaget a bílého vína. Oba se usmívají, ani jeden nemá chuť se hádat. A přesto…
+
+characters: [olin_50, jana_50, robot]
+
+locations:
+  - {id: l_raketa, name: Restaurace v raketě, description: "matné sklo, chrom, neonové trubice barvy staré mědi"}
+  - {id: l_okno, name: Okno rakety, description: "Měsíc za oknem, neony ve skle"}
+
+draft:
+  speakers: {Olin: olin, Jana: jana}
+  faces:
+    olin: [[grin, looking at another], [smug smile, half-closed eyes], [cheeky smile, raised eyebrows]]
+    jana: [[smirk, looking at another], [raised eyebrow, unimpressed], [narrowed eyes, sharp smile]]
+  speaking: [upper body, from front, sitting at a table, porthole window]
+
+nodes:
+  s1:
+    title: Guláš a špagety
+    location: l_raketa
+    cast: {olin: olin_50, jana: jana_50, robot: robot}
+    ending: good
+    script:
+      - {see: "Neopunková restaurace budoucnosti. Stěny z matného skla a chromu, strop protkán tenkými neonovými trubicemi v barvě staré mědi. Vzduch voní po smaženém oleji, ionizovaném prachu a drahém víně. V pozadí tiše hukot klimatizace a občasné zasyčení automatického číšníka na kolečkách.", shot: establishing, tags: [restaurant inside a spaceship, neon tubes on the ceiling, chrome, frosted glass, porthole window, the moon outside, empty tables], gap: medium, animate: "neon tubes flickering, the moon slowly drifting past the porthole, a robot waiter rolling by in the background, static camera"}
+      - {see: "U malého stolu u okna sedí Olin, před sebou hluboký talíř guláše s knedlíkem, v ruce půllitr piva. Usmívá se.", shot: medium, who: olin, tags: [sitting at a table, porthole window, goulash, bread dumplings, holding a beer mug, grin]}
+      - {see: "Naproti Jana se špagetami s parmazánem a bílým vínem na vysoké stopce. Taky se usmívá. Ani jeden nemá chuť se hádat. A přesto…", shot: medium, who: jana, tags: [sitting at a table, porthole window, plate of spaghetti, grated parmesan, holding a wine glass, white wine, smirk]}
+      - {say: olin, text: "Hele… tohle všechno bych dřív dělal sto let.", tags: [scooping a dumpling with a fork, grin]}
+      - {say: jana, text: "Já ti to neberu.", tags: [leaning back in chair, holding a wine glass, relaxed]}
+      - {say: olin, text: "Jen říkám. Za půl roku. Sám.", tags: [nodding, smile]}
+      - {say: jana, text: "Fajn. Fandím ti.", tags: [slight nod, smirk]}
+      - {say: olin, text: "Není to o fandění. Je to o tom, že to funguje.", tags: [leaning forward, smile, pointing with fork]}
+      - {say: jana, text: "Já vím, že to funguje. Pracuju s tím každý den.", tags: [cutting spaghetti with a fork, looking down]}
+      - {say: olin, text: "Tak proč to teda překládáš?", shot: close-up, tags: [wide grin, raised eyebrows]}
+      - {say: jana, text: "Protože to po mně chtějí přeložené.", shot: close-up, tags: [pause, staring, deadpan]}
+      - {say: olin, text: "Jasně.", tags: [nodding slowly, enlightened expression, eyes closed]}
+      - {say: jana, text: "Neříkám, že je to špatně. Jen že usnadnění a tvorba je rozdíl."}
+      - {say: olin, text: "Pro některé lidi je tvorba s AI právě to usnadnění.", tags: [quiet smile, cheerful, relaxed]}
+      - {say: jana, text: "Já to nikomu neberu.", tags: [smile, sharp eyes]}
+      - {say: olin, text: "Já vím."}
+      - {say: jana, text: "Tak proč mi to furt vysvětluješ?", tags: [raised eyebrow, tilted head]}
+      - {say: olin, text: "Nevysvětluju. Jen předkládám názor.", tags: [shrugging, smile]}
+      - {say: jana, text: "A já ti ten názor neberu. Jen nechápu, proč mi ho předkládáš, když už jsem řekla, že to vím.", tags: [putting down fork, exasperated, looking at another], animate: "she sets the fork down with a small clink, neon light flickering on her glasses"}
+      - {say: olin, text: "Protože mě to baví.", tags: [drinking beer, beer mug, calm]}
+      - {say: jana, text: "Mě to baví taky. Jen ne o víkendu. A ne takhle.", tags: [deep breath, eyes closed, patient]}
+      - {say: olin, text: "Beru.", tags: [nodding, smile]}
+      - {say: jana, text: "Ne. Neber. Ty to nebereš. Ty se jen usmíváš a čekáš, až ti dám za pravdu.", shot: close-up, tags: [pointing at viewer, narrowed eyes, sharp smile]}
+      - {say: olin, text: "Já nečekám nic.", shot: close-up, tags: [very wide smile, half-closed eyes]}
+      - {say: jana, text: "To je právě ten problém. Ty jsi nad tím. Já jsem v tom.", tags: [leaning forward, intense stare]}
+      - {say: olin, text: "Možná jsme oba v něčem jiném.", tags: [soft smile, looking down, quiet]}
+      - {say: jana, text: "Možná. Ale já mám pravdu v tom, že o víkendu se do žádného účtu přihlašovat nechci.", tags: [raising wine glass, confident]}
+      - {say: olin, text: "To máš.", tags: [gentle smile, slight nod]}
+      - {say: jana, text: "Ano. Mám.", shot: close-up, tags: [last sharp smile, triumphant], animate: "a last sharp smile, she takes a sip of wine, neon light gliding over her glasses"}
+      - {see: "Dlouhá ticha. Olin jí knedlík a dál se usmívá.", shot: medium, who: olin, tags: [eating a dumpling, smiling, silent, neon light]}
+      - {see: "Jana dopije víno a dívá se z okna na neonovou ulici. Ani jeden nevstane. Ani jeden neustoupí.", shot: medium, who: jana, tags: [finishing wine, looking out the window, profile, neon reflections, quiet]}
+      - {see: "Automatický číšník přijede, naskenuje stůl a tiše odjede.", shot: medium, who: robot, tags: [robot waiter, scanning beam, table, empty plates, beer mug, wine glass], animate: "the robot waiter rolls in, sweeps a scanning beam over the table and rolls away hissing, static camera"}
+      - {see: "Konec scény. Za oknem roste Měsíc.", shot: wide, loc: l_okno, tags: [porthole window, the moon, earth in the distance, stars, neon reflections, no humans], gap: large, animate: "the moon slowly growing in the porthole, stars drifting, neon reflections pulsing"}

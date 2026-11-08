@@ -1,0 +1,487 @@
+{
+  "title": "Předkrm",
+  "title_i18n": {
+    "de": "Vorspeise",
+    "en": "Starter",
+    "fr": "Entrée",
+    "it": "Antipasto",
+    "ja": "前菜",
+    "ko": "전채",
+    "pl": "Przystawka",
+    "pt-BR": "Entrada",
+    "ru": "Закуска",
+    "uk": "Закуска",
+    "vi": "Món khai vị"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "marble tables",
+        "cancan dancer posters",
+        "warm light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "twirling spaghetti on a fork",
+        "precise",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "eating goulash",
+        "mouth full",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "suspicious",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Copak tě tolik rozšťastnilo?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was hat dich denn so glücklich gemacht?",
+            "en": "What's made you so happy?",
+            "fr": "Qu'est-ce qui t'a rendu si heureux ?",
+            "it": "Che cosa ti ha reso così felice?",
+            "ja": "何がそんなに嬉しいの？",
+            "ko": "뭐가 그렇게 좋은데?",
+            "pl": "Co cię tak uszczęśliwiło?",
+            "pt-BR": "O que te deixou tão feliz?",
+            "ru": "Что это тебя так осчастливило?",
+            "uk": "Що це тебе так ощасливило?",
+            "vi": "Có gì làm anh vui thế?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "serene smile",
+        "eyes closed"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Nic. Jsem nad věcí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nichts. Ich stehe drüber.",
+            "en": "Nothing. I'm above it all.",
+            "fr": "Rien. Je suis au-dessus de tout ça.",
+            "it": "Niente. Sono al di sopra delle cose.",
+            "ja": "何も。超越してるだけ。",
+            "ko": "아무것도. 난 초월했어.",
+            "pl": "Nic. Jestem ponad to.",
+            "pt-BR": "Nada. Estou acima disso.",
+            "ru": "Ничего. Я выше этого.",
+            "uk": "Нічого. Я понад цим.",
+            "vi": "Chẳng gì cả. Anh ở trên mọi chuyện."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smirk",
+        "pointing with fork"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Ty nejsi nad věcí. Ty jsi pod gulášem a vydáváš to za buddhismus.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du stehst nicht drüber. Du liegst unterm Gulasch und gibst es als Buddhismus aus.",
+            "en": "You're not above it. You're under the goulash and passing it off as Buddhism.",
+            "fr": "Tu n'es pas au-dessus. Tu es sous le goulash et tu fais passer ça pour du bouddhisme.",
+            "it": "Tu non sei al di sopra. Sei sotto il gulasch e lo spacci per buddhismo.",
+            "ja": "超越なんかしてない。グヤーシュの下敷きになって、それを仏教だって言い張ってるだけ。",
+            "ko": "초월은 무슨. 굴라시 밑에 깔려 놓고 그걸 불교라고 우기는 거지.",
+            "pl": "Nie jesteś ponad to. Jesteś pod gulaszem i udajesz, że to buddyzm.",
+            "pt-BR": "Você não está acima. Está debaixo do gulache e chama isso de budismo.",
+            "ru": "Ты не выше. Ты под гуляшом и выдаёшь это за буддизм.",
+            "uk": "Ти не понад. Ти під гуляшем і видаєш це за буддизм.",
+            "vi": "Anh chẳng ở trên gì cả. Anh nằm dưới đĩa goulash rồi gọi đó là đạo Phật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "putting down spoon",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Věc se mnou nedokáže pracovat, když ji nechám být.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Eine Sache kann nichts mit mir machen, wenn ich sie lasse.",
+            "en": "A thing can't work on me if I leave it be.",
+            "fr": "Une chose ne peut rien sur moi si je la laisse tranquille.",
+            "it": "Una cosa non può lavorare su di me se la lascio stare.",
+            "ja": "放っておけば、物事は僕をどうにもできない。",
+            "ko": "내가 내버려 두면, 일은 나를 어쩌지 못해.",
+            "pl": "Rzecz nie może ze mną nic zrobić, jeśli dam jej spokój.",
+            "pt-BR": "Uma coisa não consegue mexer comigo se eu deixar ela em paz.",
+            "ru": "Вещь не может со мной ничего сделать, если я оставлю её в покое.",
+            "uk": "Річ нічого не може зі мною зробити, якщо я дам їй спокій.",
+            "vi": "Nếu anh để yên, sự việc chẳng làm gì được anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "almost shouting",
+        "clenched teeth"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Tak to je přesně ten typ věty, kvůli který se lidi na tebe zlobí!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Genau das ist die Art Satz, wegen der die Leute sauer auf dich sind!",
+            "en": "That is exactly the kind of sentence that makes people angry with you!",
+            "fr": "C'est exactement le genre de phrase qui fait que les gens s'énervent contre toi !",
+            "it": "Ecco, è proprio il tipo di frase per cui la gente si arrabbia con te!",
+            "ja": "そういう一言のせいで、みんなあなたに怒るのよ！",
+            "ko": "바로 그런 말 때문에 사람들이 너한테 화내는 거야!",
+            "pl": "No to jest właśnie ten typ zdania, przez który ludzie się na ciebie złoszczą!",
+            "pt-BR": "É exatamente esse tipo de frase que faz as pessoas ficarem bravas com você!",
+            "ru": "Вот именно из-за таких фраз люди на тебя и злятся!",
+            "uk": "Ось саме через такі фрази люди на тебе й сердяться!",
+            "vi": "Chính kiểu câu đó làm người ta bực anh đấy!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "A přitom je pravdivá.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und trotzdem stimmt er.",
+            "en": "And yet it's true.",
+            "fr": "Et pourtant elle est vraie.",
+            "it": "Eppure è vera.",
+            "ja": "でも本当のことだよ。",
+            "ko": "그래도 사실이잖아.",
+            "pl": "A przecież jest prawdziwe.",
+            "pt-BR": "E mesmo assim é verdade.",
+            "ru": "И при этом она правдива.",
+            "uk": "І при цьому вона правдива.",
+            "vi": "Vậy mà nó đúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "triumphant",
+        "firm",
+        "relieved"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Nepravdivá! Mně docela dobře funguje, když se lidi zlobí, takže tvoje věta neplatí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Stimmt nicht! Bei mir funktioniert es ganz gut, wenn die Leute sauer sind, also gilt dein Satz nicht.",
+            "en": "Not true! It works quite well for me when people get angry, so your sentence doesn't hold.",
+            "fr": "Fausse ! Moi, ça me réussit plutôt bien quand les gens s'énervent, donc ta phrase ne tient pas.",
+            "it": "Falsa! A me funziona benissimo quando la gente si arrabbia, quindi la tua frase non vale.",
+            "ja": "本当じゃない！人が怒ってくれると私はけっこう調子いいの。だからその一言は成り立たない。",
+            "ko": "사실 아니야! 난 사람들이 화내면 꽤 잘 풀리거든. 그러니까 네 말은 틀렸어.",
+            "pl": "Nieprawdziwe! Mnie całkiem dobrze wychodzi, kiedy ludzie się złoszczą, więc twoje zdanie nie obowiązuje.",
+            "pt-BR": "Mentira! Pra mim funciona muito bem quando as pessoas ficam bravas, então sua frase não vale.",
+            "ru": "Неправда! У меня всё прекрасно работает, когда люди злятся, так что твоя фраза не годится.",
+            "uk": "Неправда! У мене все чудово працює, коли люди сердяться, тож твоя фраза не діє.",
+            "vi": "Sai! Em thì thấy khá ổn khi người ta bực, nên câu của anh không đúng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "laconic",
+        "half-closed eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Tak vidíš. Každá věc je jiná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Na siehst du. Jede Sache ist anders.",
+            "en": "There you go. Every thing is different.",
+            "fr": "Tu vois. Chaque chose est différente.",
+            "it": "Visto? Ogni cosa è diversa.",
+            "ja": "ほらね。物事はそれぞれ違うんだ。",
+            "ko": "거봐. 일마다 다 다른 거야.",
+            "pl": "No widzisz. Każda rzecz jest inna.",
+            "pt-BR": "Tá vendo? Cada coisa é diferente.",
+            "ru": "Вот видишь. Каждая вещь разная.",
+            "uk": "От бачиш. Кожна річ інша.",
+            "vi": "Thấy chưa. Mỗi chuyện mỗi khác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "open mouth",
+        "speechless",
+        "frozen"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "she opens her mouth, closes it, opens it again, no words"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "drinking wine",
+        "long-stemmed glass",
+        "clutching the stem"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "quiet",
+        "muttering",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Tyhle knedlíky mi jdou na nervy.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Diese Knödel gehen mir auf die Nerven.",
+            "en": "These dumplings are getting on my nerves.",
+            "fr": "Ces knödels me tapent sur les nerfs.",
+            "it": "Questi canederli mi danno sui nervi.",
+            "ja": "このクネドリーキ、イライラする。",
+            "ko": "저 크네들리키 신경 거슬려.",
+            "pl": "Te knedliki działają mi na nerwy.",
+            "pt-BR": "Esses bolinhos estão me dando nos nervos.",
+            "ru": "Эти кнедлики действуют мне на нервы.",
+            "uk": "Ці кнедлики діють мені на нерви.",
+            "vi": "Mấy cái bánh knedlík này làm em phát cáu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "friendly smile",
+        "mischievous"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Špagety taky vypadají nervózně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Spaghetti sehen auch nervös aus.",
+            "en": "The spaghetti looks nervous too.",
+            "fr": "Les spaghetti ont l'air nerveux aussi.",
+            "it": "Anche gli spaghetti sembrano nervosi.",
+            "ja": "スパゲッティも神経質そうだね。",
+            "ko": "스파게티도 신경이 곤두선 것 같은데.",
+            "pl": "Spaghetti też wyglądają na nerwowe.",
+            "pt-BR": "O espaguete também parece nervoso.",
+            "ru": "Спагетти тоже выглядят нервными.",
+            "uk": "Спагеті теж виглядають нервовими.",
+            "vi": "Mì spaghetti trông cũng căng thẳng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

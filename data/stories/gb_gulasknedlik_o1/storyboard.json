@@ -1,0 +1,451 @@
+{
+  "title": "Objednáno",
+  "title_i18n": {
+    "de": "Bestellt",
+    "en": "Ordered",
+    "fr": "Commandé",
+    "it": "Ordinato",
+    "ja": "注文済み",
+    "ko": "주문 완료",
+    "pl": "Zamówione",
+    "pt-BR": "Pedido feito",
+    "ru": "Заказано",
+    "uk": "Замовлено",
+    "vi": "Đã gọi món"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_loutna",
+      "characters": [],
+      "visual_tags": [
+        "parisian cafe",
+        "rococo interior",
+        "gilded mirrors",
+        "cancan dancer posters",
+        "ballerinas",
+        "chandelier",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "chandelier crystals glinting, ballerinas on the posters seem to sway, soft golden light, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_stul_loutna",
+      "characters": [],
+      "visual_tags": [
+        "marble table",
+        "two gilded chairs",
+        "empty chairs",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "two empty gilded chairs inching closer to each other and backing away again"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a cafe table",
+        "holding a beer mug",
+        "dark beer",
+        "goulash",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a cafe table",
+        "fanning herself with a menu",
+        "bored",
+        "elegant"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "pale",
+        "deep breath",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Tak. A jsme tady.",
+          "kind": "speech",
+          "i18n": {
+            "de": "So. Und da sind wir.",
+            "en": "Right. And here we are.",
+            "fr": "Bon. Et nous y voilà.",
+            "it": "Bene. Eccoci qua.",
+            "ja": "さて。来たわね。",
+            "ko": "자. 왔네.",
+            "pl": "No. I jesteśmy.",
+            "pt-BR": "Pronto. Cá estamos.",
+            "ru": "Так. Вот мы и здесь.",
+            "uk": "Отже. Ось ми й тут.",
+            "vi": "Rồi. Tới nơi rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "calm",
+        "looking down at plate",
+        "goulash",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Jsme. To je dobrý start, ne?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Sind wir. Ein guter Anfang, oder?",
+            "en": "We are. That's a good start, isn't it?",
+            "fr": "On y est. C'est un bon début, non ?",
+            "it": "Ci siamo. È un buon inizio, no?",
+            "ja": "来たね。いいスタートじゃない？",
+            "ko": "왔지. 좋은 시작 아니야?",
+            "pl": "Jesteśmy. To dobry początek, nie?",
+            "pt-BR": "Estamos. É um bom começo, não é?",
+            "ru": "Здесь. Хорошее начало, да?",
+            "uk": "Тут. Добрий початок, хіба ні?",
+            "vi": "Tới rồi. Khởi đầu tốt đấy chứ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "raised finger",
+        "sharp gaze"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "Ne. To není start. To je konstatování. My tady nikdy nic nezačínáme, my tady vždycky pokračujeme v něčem, co se stalo loni.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Das ist kein Anfang. Das ist eine Feststellung. Wir fangen hier nie etwas an, wir machen hier immer nur mit etwas weiter, das letztes Jahr passiert ist.",
+            "en": "No. That's not a start. That's a statement. We never start anything here, we always just carry on with something that happened last year.",
+            "fr": "Non. Ce n'est pas un début. C'est un constat. Ici, on ne commence jamais rien, on continue toujours quelque chose qui s'est passé l'an dernier.",
+            "it": "No. Non è un inizio. È una constatazione. Qui non cominciamo mai niente, qui continuiamo sempre qualcosa che è successo l'anno scorso.",
+            "ja": "違う。それはスタートじゃない。ただの確認。私たちはここで何も始めない。いつも去年起きたことの続きをしてるだけ。",
+            "ko": "아니. 그건 시작이 아니야. 그냥 확인이지. 우린 여기서 아무것도 시작 안 해. 늘 작년에 있었던 일을 이어갈 뿐이야.",
+            "pl": "Nie. To nie początek. To stwierdzenie. My tu nigdy niczego nie zaczynamy, my tu zawsze ciągniemy coś, co się stało w zeszłym roku.",
+            "pt-BR": "Não. Isso não é começo. É constatação. A gente nunca começa nada aqui, a gente sempre continua algo que aconteceu no ano passado.",
+            "ru": "Нет. Это не начало. Это констатация. Мы здесь никогда ничего не начинаем, мы здесь всегда продолжаем то, что случилось в прошлом году.",
+            "uk": "Ні. Це не початок. Це констатація. Ми тут ніколи нічого не починаємо, ми тут завжди продовжуємо те, що сталося торік.",
+            "vi": "Không. Đó không phải khởi đầu. Đó là một nhận xét. Ở đây ta chẳng bao giờ bắt đầu gì cả, ta chỉ luôn tiếp tục chuyện đã xảy ra từ năm ngoái."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "smile",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "To je hezký způsob, jak říct, že si pamatuješ.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist eine nette Art zu sagen, dass du dich erinnerst.",
+            "en": "That's a nice way of saying you remember.",
+            "fr": "C'est une jolie façon de dire que tu te souviens.",
+            "it": "È un bel modo per dire che ti ricordi.",
+            "ja": "覚えてるって、きれいに言うとそうなるんだね。",
+            "ko": "기억한다는 걸 참 예쁘게 말하네.",
+            "pl": "To ładny sposób, żeby powiedzieć, że pamiętasz.",
+            "pt-BR": "É um jeito bonito de dizer que você lembra.",
+            "ru": "Красивый способ сказать, что ты помнишь.",
+            "uk": "Гарний спосіб сказати, що ти пам'ятаєш.",
+            "vi": "Một cách nói hay rằng em vẫn nhớ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "narrowed eyes",
+        "smirk"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "To je způsob, jak říct, že ty si taky pamatuješ, jen to vydáváš za klid.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist eine Art zu sagen, dass du dich auch erinnerst, du gibst es nur als Gelassenheit aus.",
+            "en": "It's a way of saying that you remember too, you just pass it off as calm.",
+            "fr": "C'est une façon de dire que toi aussi tu te souviens, sauf que tu fais passer ça pour du calme.",
+            "it": "È un modo per dire che anche tu ti ricordi, solo che lo spacci per calma.",
+            "ja": "あなたも覚えてるってこと。ただそれを落ち着きのふりでごまかしてるだけ。",
+            "ko": "너도 기억한다는 뜻이야. 그걸 평온한 척으로 포장할 뿐이지.",
+            "pl": "To sposób, żeby powiedzieć, że ty też pamiętasz, tylko udajesz, że to spokój.",
+            "pt-BR": "É um jeito de dizer que você também lembra, só que faz passar por calma.",
+            "ru": "Это способ сказать, что ты тоже помнишь, просто выдаёшь это за спокойствие.",
+            "uk": "Це спосіб сказати, що ти теж пам'ятаєш, просто видаєш це за спокій.",
+            "vi": "Là cách nói rằng anh cũng nhớ, chỉ là anh giả vờ đó là sự bình thản."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "wide smile",
+        "eyes half closed"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "holding a wine glass",
+        "white wine",
+        "ripples in wine",
+        "suspicious glance"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the wine in her long-stemmed glass trembling into small ripples"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "reproduktor"
+        }
+      ],
+      "visual_tags": [
+        "close-up",
+        "gramophone horn on the wall",
+        "gilded horn",
+        "warm glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "reproduktor",
+          "text": "Vážení hosté. Vaše knedlíky byly syntetizovány podle vzpomínky na rok 1987. Doporučujeme konzumovat pomalu, aby se vzpomínka neukvapila.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Verehrte Gäste. Ihre Knödel wurden nach einer Erinnerung an das Jahr 1987 synthetisiert. Wir empfehlen, langsam zu essen, damit sich die Erinnerung nicht überstürzt.",
+            "en": "Dear guests. Your dumplings were synthesised from a memory of the year 1987. We recommend eating slowly, so the memory doesn't rush.",
+            "fr": "Chers clients. Vos knödels ont été synthétisés d'après un souvenir de l'année 1987. Nous vous recommandons de manger lentement, pour que le souvenir ne se précipite pas.",
+            "it": "Gentili ospiti. I vostri canederli sono stati sintetizzati dal ricordo dell'anno 1987. Vi consigliamo di mangiare lentamente, perché il ricordo non abbia fretta.",
+            "ja": "お客様。クネドリーキは1987年の記憶をもとに合成されました。記憶が急がないよう、ゆっくりお召し上がりください。",
+            "ko": "손님 여러분. 크네들리키는 1987년의 기억을 바탕으로 합성되었습니다. 기억이 서두르지 않도록 천천히 드시기를 권합니다.",
+            "pl": "Szanowni goście. Wasze knedliki zsyntetyzowano na podstawie wspomnienia z roku 1987. Zalecamy jeść powoli, żeby wspomnienie się nie pospieszyło.",
+            "pt-BR": "Prezados clientes. Seus bolinhos foram sintetizados a partir de uma lembrança do ano de 1987. Recomendamos comer devagar, para que a lembrança não se apresse.",
+            "ru": "Уважаемые гости. Ваши кнедлики синтезированы по воспоминанию о 1987 годе. Рекомендуем есть медленно, чтобы воспоминание не торопилось.",
+            "uk": "Шановні гості. Ваші кнедлики синтезовано за спогадом про 1987 рік. Радимо їсти повільно, щоб спогад не поспішав.",
+            "vi": "Kính thưa quý khách. Bánh knedlík của quý khách được tổng hợp theo ký ức về năm 1987. Xin hãy ăn chậm, để ký ức không vội vàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "olin_40"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "happy",
+        "looking up",
+        "smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "olin_40",
+          "text": "Slyšels? Neukvapila.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Hast du's gehört? Nicht überstürzt.",
+            "en": "Hear that? Doesn't rush.",
+            "fr": "T'as entendu ? Qu'il ne se précipite pas.",
+            "it": "Hai sentito? Non abbia fretta.",
+            "ja": "聞いた？急がないように、だって。",
+            "ko": "들었어? 서두르지 않도록, 이래.",
+            "pl": "Słyszałaś? Żeby się nie pospieszyło.",
+            "pt-BR": "Ouviu? Não se apresse.",
+            "ru": "Слышала? Не торопилось.",
+            "uk": "Чула? Не поспішав.",
+            "vi": "Nghe chưa? Đừng vội vàng."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a cafe table",
+        "looking away",
+        "deadpan"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "jana_35",
+          "text": "On to říká guláši, ne tobě.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das sagt er dem Gulasch, nicht dir.",
+            "en": "It's saying that to the goulash, not to you.",
+            "fr": "Il dit ça au goulash, pas à toi.",
+            "it": "Lo dice al gulasch, non a te.",
+            "ja": "それはグヤーシュに言ってるの、あなたにじゃない。",
+            "ko": "그건 굴라시한테 하는 말이지, 너한테가 아니야.",
+            "pl": "On to mówi do gulaszu, nie do ciebie.",
+            "pt-BR": "Ele está dizendo isso pro gulache, não pra você.",
+            "ru": "Это он гуляшу говорит, а не тебе.",
+            "uk": "Це він гуляшу каже, а не тобі.",
+            "vi": "Nó nói với món goulash, đâu phải với anh."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "jana_35"
+        }
+      ],
+      "visual_tags": [
+        "realization",
+        "wide eyes",
+        "frustrated"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}
