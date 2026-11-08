@@ -38,8 +38,8 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
       (the TikTok trailers from `webtoon trailer` can be cut to 15–30 s).
 - [ ] In-app purchases (non-consumable; name ≤ 30, description ≤ 45; cs + en at least, ideally all 12 from the
       catalog `title_i18n`): `pack_kids_1`, `pack_harlequin_1`, **`pack_harlequin_2`** (the catalog already sells it;
-      it is now in `tools/products.csv`), `pack_superhero_1`, `bundle_kids`,
-      `bundle_harlequin`, `bundle_superhero`, `bundle_all`. Each needs a review screenshot and price. Family Sharing on.
+      it is now in `tools/products.csv`), `pack_superhero_1`, `bundle_all`
+      (5.99 USD; no type bundles). Each needs a review screenshot and price. Family Sharing on.
       Submit them **with** version 1.0.
 - [ ] Paid Apps agreement, tax and banking active.
 - [ ] Review notes from `docs/store-products.md` (add the four free gamebooks and the 16+ content of the dramas); a
@@ -59,7 +59,7 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
       `age-rating.md`. **Target audience**: 16+ (or 13+), no children's groups. **News app**: No. **Government app**:
       No. **Financial features**: none. **Health**: No **[?]** (the drama mentions health but the app has no health
       features).
-- [ ] In-app products: the same 8 ids as above (incl. `pack_harlequin_2`), activated, after a build with BILLING is on a
+- [ ] In-app products: the same 5 ids as above (incl. `pack_harlequin_2`), activated, after a build with BILLING is on a
       track.
 - [ ] Payments profile linked; license testers added.
 - [ ] Countries; internal testing (for the products), then **production**. The Play account is a **company**

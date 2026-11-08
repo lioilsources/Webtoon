@@ -72,16 +72,12 @@ func TestCatalogMerge(t *testing.T) {
 		t.Errorf("types %v", typeIDs)
 	}
 	bundles := generic["bundles"].([]any)
-	if len(bundles) != 4 {
+	if len(bundles) != 1 {
 		t.Fatalf("bundles %v", bundles)
 	}
-	last := bundles[3].(map[string]any)
+	last := bundles[0].(map[string]any)
 	if last["id"] != "bundle_all" || last["covers"] != "all" || last["price_tier"] != "bundle_all" {
 		t.Errorf("bundle_all %v", last)
-	}
-	first := bundles[0].(map[string]any)["covers"].(map[string]any)["types"].([]any)
-	if len(first) != 1 || first[0] != "kids" {
-		t.Errorf("bundle_kids covers %v", first)
 	}
 	if g, ok := generic["gamebooks"].([]any); !ok || len(g) != 0 {
 		t.Errorf("gamebooks %v", generic["gamebooks"])
@@ -174,7 +170,7 @@ func TestRefreshCatalog(t *testing.T) {
 	if strings.Join(ids, " ") != "kids harlequin superhero animals" {
 		t.Errorf("types %v", ids)
 	}
-	if len(c.Bundles) != 4 || c.Bundles[0].ID != "bundle_kids" || !c.Bundles[3].Covers.All || c.Bundles[0].TitleI18n["en"] == "" {
+	if len(c.Bundles) != 1 || c.Bundles[0].ID != "bundle_all" || !c.Bundles[0].Covers.All || c.Bundles[0].TitleI18n["en"] == "" {
 		t.Errorf("bundles %+v", c.Bundles)
 	}
 	if len(c.Gamebooks) != 1 || !strings.Contains(string(c.Gamebooks[0]), "kit_drak") || len(c.Packs) != 1 {

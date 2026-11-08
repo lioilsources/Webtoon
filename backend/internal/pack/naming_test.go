@@ -25,7 +25,7 @@ func TestStoreRules(t *testing.T) {
 	if r.PackSize != 50 || r.Repo != "lioilsources/webtoon-content" || r.BaseURLs.R2 != nil || r.MaxPreviews != 6 {
 		t.Fatalf("store rules %+v", r)
 	}
-	for k, want := range map[string]float64{"pack": 0.99, "bundle_type": 2.99, "bundle_all": 6.99, "gamebook": 1.99, "kit": 3.99} {
+	for k, want := range map[string]float64{"pack": 0.99, "bundle_type": 2.99, "bundle_all": 5.99, "gamebook": 1.99, "kit": 3.99} {
 		if r.PriceTiers[k].USD != want {
 			t.Errorf("price %s = %v", k, r.PriceTiers[k].USD)
 		}

@@ -39,9 +39,9 @@ naming:
 price_tiers:
   pack:        {usd: 0.99, tier: 1}
   gamebook:    {usd: 1.99, tier: 2}
-  bundle_type: {usd: 2.99, tier: 3}
+  bundle_type: {usd: 2.99, tier: 3}   # no type bundle is sold (decided 2026-11-08): only bundle_all
   kit:         {usd: 3.99, tier: 4}
-  bundle_all:  {usd: 6.99, tier: 7}
+  bundle_all:  {usd: 5.99, tier: 6}
 
 # Pack types. Only `active` types go into catalog.json `types`; the others are reserved so ids, icons and names are
 # settled before their first pack. audience adult = hidden in the app's Kids profile. icon = Material icon name.
@@ -121,27 +121,6 @@ type_from_audience: {kids: kids, adult: harlequin}
 # Bundles: one product unlocks every pack of the covered types, the current ones AND any added later (the app
 # resolves it from the catalog at runtime, so a new pack needs no new bundle product). `all` = every type.
 bundles:
-  - id: bundle_kids
-    product_id: bundle_kids
-    price_tier: bundle_type
-    covers: {types: [kids]}
-    title_i18n: {cs: Vše pro děti, en: All Kids stories, de: Alles für Kinder, it: Tutto per bambini, fr: Tout pour enfants,
-                 pl: Wszystko dla dzieci, pt-BR: Tudo infantil, ja: キッズ全部, ko: 어린이 전체, vi: Trọn bộ thiếu nhi,
-                 ru: Всё для детей, uk: Усе для дітей}
-  - id: bundle_harlequin
-    product_id: bundle_harlequin
-    price_tier: bundle_type
-    covers: {types: [harlequin]}
-    title_i18n: {cs: Všechna romantika, en: All Romance stories, de: Alle Romantik, it: Tutto romantico, fr: Toute la romance,
-                 pl: Cały romans, pt-BR: Todo o romance, ja: ロマンス全部, ko: 로맨스 전체, vi: Trọn bộ lãng mạn,
-                 ru: Вся романтика, uk: Уся романтика}
-  - id: bundle_superhero
-    product_id: bundle_superhero
-    price_tier: bundle_type
-    covers: {types: [superhero]}
-    title_i18n: {cs: Všichni superhrdinové, en: All Superhero stories, de: Alle Superhelden, it: Tutti i supereroi,
-                 fr: Tous les super-héros, pl: Wszyscy superbohaterowie, pt-BR: Todos os super-heróis, ja: ヒーロー全部,
-                 ko: 슈퍼히어로 전체, vi: Trọn bộ siêu anh hùng, ru: Все супергерои, uk: Усі супергерої}
   - id: bundle_all
     product_id: bundle_all
     price_tier: bundle_all
