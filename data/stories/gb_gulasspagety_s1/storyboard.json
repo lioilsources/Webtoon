@@ -1141,26 +1141,24 @@
       "gap_after": "medium"
     },
     {
-      "shot": "medium",
+      "shot": "establishing",
       "location_id": "l_raketa",
-      "characters": [
-        {
-          "id": "robot"
-        }
-      ],
+      "characters": [],
       "visual_tags": [
-        "robot waiter",
-        "scanning beam",
-        "table",
-        "empty plates",
-        "beer mug",
-        "wine glass"
+        "restaurant inside a spaceship",
+        "neon tubes on the ceiling",
+        "chrome",
+        "frosted glass",
+        "porthole window",
+        "the moon outside",
+        "empty tables",
+        "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "the robot waiter rolls in, sweeps a scanning beam over the table and rolls away hissing, static camera"
+      "motion": "neon tubes flickering, the moon slowly drifting past the porthole, a robot waiter rolling by in the background, static camera"
     },
     {
       "shot": "wide",

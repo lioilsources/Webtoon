@@ -32,40 +32,34 @@
       "gap_after": "medium"
     },
     {
-      "shot": "medium",
+      "shot": "establishing",
       "location_id": "l_plaz",
-      "characters": [
-        {
-          "id": "robot"
-        }
-      ],
+      "characters": [],
       "visual_tags": [
-        "robot waiter",
-        "pouring wine",
-        "beer mug on tray",
-        "beach restaurant"
+        "beach restaurant",
+        "beach bar",
+        "neon sign",
+        "parasols",
+        "sunset",
+        "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "the robot waiter pours white wine, its screen face blinking"
+      "motion": "slow ambient light change, static camera"
     },
     {
-      "shot": "close-up",
+      "shot": "establishing",
       "location_id": "l_plaz",
-      "characters": [
-        {
-          "id": "robot"
-        }
-      ],
+      "characters": [],
       "visual_tags": [
-        "upper body",
-        "from front",
-        "standing",
         "beach restaurant",
-        "warning icon on screen",
-        "holding a tray"
+        "beach bar",
+        "neon sign",
+        "parasols",
+        "sunset",
+        "no humans"
       ],
       "bubbles": [
         {
@@ -169,20 +163,16 @@
       "gap_after": "small"
     },
     {
-      "shot": "medium",
+      "shot": "establishing",
       "location_id": "l_plaz",
-      "characters": [
-        {
-          "id": "robot"
-        }
-      ],
+      "characters": [],
       "visual_tags": [
-        "upper body",
-        "from front",
-        "standing",
         "beach restaurant",
-        "confused face on screen",
-        "tilted head"
+        "beach bar",
+        "neon sign",
+        "parasols",
+        "sunset",
+        "no humans"
       ],
       "bubbles": [
         {
