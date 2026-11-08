@@ -115,7 +115,7 @@ types:
 
 # Default -type of export-pack: the world's profile (data/stories/<id>/world.json `profile`, else rules.world_profile
 # from audience), mapped here. Superhero worlds need world.json `profile: superhero` (audience alone says kids).
-type_from_profile: {kids: kids, harlequin: harlequin, superhero: superhero, drama: drama, noir: drama, akvarel: drama}
+type_from_profile: {kids: kids, harlequin: harlequin, superhero: superhero, drama: drama, noir: drama, akvarel: drama, comedy: drama}
 type_from_audience: {kids: kids, adult: harlequin}
 
 # Bundles: one product unlocks every pack of the covered types, the current ones AND any added later (the app
