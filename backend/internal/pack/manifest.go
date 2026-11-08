@@ -17,6 +17,11 @@ import (
 // estimate_seconds (all omitempty in the shared shape).
 func stripPanel(p episodejson.Panel) episodejson.Panel {
 	p.Seed, p.IdentityScore, p.Error, p.VideoError, p.EstimateSeconds = 0, nil, "", "", 0
+	// A pack is offline: a loop that is not in the zip (pending, rendering, failed) will never
+	// arrive, so the panel ships as a still instead of an endless "Rozhýbává se…" in the reader.
+	if p.Animate && p.VideoURL == "" {
+		p.Animate, p.Motion, p.LoopSeconds, p.VideoStatus = false, "", 0, ""
+	}
 	return p
 }
 

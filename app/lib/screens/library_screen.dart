@@ -62,15 +62,14 @@ class LibraryScreen extends ConsumerWidget {
               children: [
                 const UpdateBanner(),
                 if (gamebooks.isNotEmpty) GamebookShelf(gamebooks: gamebooks),
-                for (final w in _translatedFirst(worlds, byWorld, lang))
-                  if (byWorld[w.id]?.isNotEmpty ?? false) ...[
-                    _WorldHeader(
-                      world: w,
-                      language: lang,
-                      stories: byWorld[w.id]!,
-                    ),
-                    _StoryGrid(stories: byWorld[w.id]!, language: lang),
+                ..._worldSections(
+                  [
+                    for (final w in _translatedFirst(worlds, byWorld, lang))
+                      if (byWorld[w.id]?.isNotEmpty ?? false) w,
                   ],
+                  byWorld,
+                  lang,
+                ),
                 if (orphan.isNotEmpty) ...[
                   _PlainHeader(tr(ui, 'library.otherStories')),
                   _StoryGrid(stories: orphan, language: lang),
@@ -79,6 +78,86 @@ class LibraryScreen extends ConsumerWidget {
             ),
     );
   }
+}
+
+/// A world with several stories keeps its own section (header + grid). Runs of worlds with a
+/// single story share one grid of world cards instead, so a tablet is not a column of lone covers
+/// with an empty right half.
+List<Widget> _worldSections(
+  List<WorldSummary> worlds,
+  Map<String, List<PackStory>> byWorld,
+  String? lang,
+) {
+  // All single-story worlds first, in one grid (a run broken by a multi-story world would leave
+  // half a tablet row empty), then the multi-story worlds with their own sections.
+  final singles = [
+    for (final w in worlds)
+      if (byWorld[w.id]!.length == 1) w,
+  ];
+  return [
+    if (singles.isNotEmpty)
+      _WorldCardGrid(worlds: singles, byWorld: byWorld, language: lang),
+    for (final w in worlds)
+      if (byWorld[w.id]!.length > 1) ...[
+        _WorldHeader(world: w, language: lang, stories: byWorld[w.id]!),
+        _StoryGrid(stories: byWorld[w.id]!, language: lang),
+      ],
+  ];
+}
+
+/// Single-story worlds as cover cards (world title, audience tag on the cover), as many columns
+/// as fit (~170 px each, 2 to 6).
+class _WorldCardGrid extends StatelessWidget {
+  final List<WorldSummary> worlds;
+  final Map<String, List<PackStory>> byWorld;
+  final String? language;
+  const _WorldCardGrid({
+    required this.worlds,
+    required this.byWorld,
+    required this.language,
+  });
+
+  @override
+  Widget build(BuildContext context) => Padding(
+    padding: const EdgeInsets.only(top: 16),
+    child: LayoutBuilder(
+      builder: (context, c) {
+        final columns = (c.maxWidth / 170).floor().clamp(2, 6);
+        return GridView.builder(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          padding: const EdgeInsets.only(bottom: 8),
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: columns,
+            mainAxisSpacing: 18,
+            crossAxisSpacing: 14,
+            childAspectRatio: 416 / (608 + 210),
+          ),
+          itemCount: worlds.length,
+          itemBuilder: (_, i) {
+            final w = worlds[i];
+            final stories = byWorld[w.id]!;
+            return KeyedSubtree(
+              key: ValueKey('library-world-${w.id}'),
+              child: StoryCard(
+                story: stories.first,
+                language: language,
+                title: _WorldHeader(
+                  world: w,
+                  language: language,
+                  stories: stories,
+                )._title,
+                badge: AudienceBadge(
+                  key: ValueKey('audience-${w.id}'),
+                  audience: w.audience,
+                ),
+              ),
+            );
+          },
+        );
+      },
+    ),
+  );
 }
 
 /// Reading in another language than a world's own: worlds whose stories have a title in that
@@ -228,7 +307,19 @@ class _StoryGrid extends StatelessWidget {
 class StoryCard extends ConsumerWidget {
   final PackStory story;
   final String? language;
-  const StoryCard({super.key, required this.story, this.language});
+
+  /// Shown instead of the story title (a single-story world card shows its world's title).
+  final String? title;
+
+  /// Overlaid on the cover's top-right corner (the world's audience tag).
+  final Widget? badge;
+  const StoryCard({
+    super.key,
+    required this.story,
+    this.language,
+    this.title,
+    this.badge,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -260,21 +351,26 @@ class StoryCard extends ConsumerWidget {
                 ),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(12),
-                  child: SizedBox.expand(
-                    child: story.cover == null
-                        ? _noCover(scheme)
-                        : Image.file(
-                            File(story.cover!),
-                            fit: BoxFit.cover,
-                            errorBuilder: (_, _, _) => _noCover(scheme),
-                          ),
+                  child: Stack(
+                    fit: StackFit.expand,
+                    children: [
+                      story.cover == null
+                          ? _noCover(scheme)
+                          : Image.file(
+                              File(story.cover!),
+                              fit: BoxFit.cover,
+                              errorBuilder: (_, _, _) => _noCover(scheme),
+                            ),
+                      if (badge != null)
+                        Positioned(top: 8, right: 8, child: badge!),
+                    ],
                   ),
                 ),
               ),
             ),
             const SizedBox(height: 8),
             Text(
-              story.titleIn(language),
+              title ?? story.titleIn(language),
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: ComicFonts.title().copyWith(fontSize: 16, height: 1.15),
