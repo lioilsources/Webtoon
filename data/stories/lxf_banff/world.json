@@ -1,0 +1,90 @@
+{
+  "id": "w_lxf_banff",
+  "title": "Banff – Zimný víkend",
+  "synopsis": "Chloe a Ethan prožijí vášnivou noc v horách, ale ráno ji nechá samotnou.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "ink_wash",
+  "bible": {
+    "rules": [
+      "Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."
+    ],
+    "factions": []
+  },
+  "free": true,
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: on odjede, ona zůstane sama."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_forest",
+      "l_cabin",
+      "l_bedroom"
+    ]
+  },
+  "characters": [
+    {
+      "id": "chloe",
+      "name": "Chloe",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tall slender blonde woman aged 29 with long straight hair and blue eyes",
+      "base": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes",
+      "outfits": {
+        "default": "beige DKNY outdoor jacket, black leggings, gold hoop earrings, hiking boots",
+        "indoor": "white knit sweater, black leggings, barefoot, hair down",
+        "morning": "black lace bra, black lace panties, barefoot, hair messy"
+      },
+      "photo": "a tall slender blonde woman aged 29 with long straight hair and blue eyes",
+      "tag_prompt": "adult, mature female, tall, slender, pale skin, long hair, straight hair, blonde hair, blue eyes, beige DKNY outdoor jacket, black leggings, gold hoop earrings, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a muscular man aged 36 with short brown hair and tanned skin",
+      "base": "adult, mature male, muscular, tan skin, short hair, brown hair, brown eyes, stubble",
+      "outfits": {
+        "default": "dark green outdoor jacket, grey t-shirt, jeans, hiking boots",
+        "indoor": "grey t-shirt, jeans, wristwatch",
+        "morning": "grey t-shirt, jeans, barefoot"
+      },
+      "photo": "a muscular man aged 36 with short brown hair and tanned skin",
+      "tag_prompt": "adult, mature male, muscular, tan skin, short hair, brown hair, brown eyes, stubble, dark green outdoor jacket, grey t-shirt, jeans, hiking boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_forest",
+      "name": "Lesní cesta",
+      "description": "Lesní cesta",
+      "tag_prompt": "outdoors, banff national park, forest path, pine trees, snow on ground, overcast sky, cold light",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Chata",
+      "description": "Chata",
+      "tag_prompt": "indoors, rustic cabin, wooden walls, fireplace, warm light, night, wine bottle",
+      "mood": ""
+    },
+    {
+      "id": "l_bedroom",
+      "name": "Ložnice",
+      "description": "Ložnice",
+      "tag_prompt": "indoors, bedroom, large bed, white sheets, fireplace, warm light, night",
+      "mood": ""
+    }
+  ]
+}

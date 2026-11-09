@@ -1,0 +1,284 @@
+{
+  "title": "Banff – Zimný víkend",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "pine trees",
+        "snow",
+        "path",
+        "cold atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Banff. Zimní les.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling gently, wind blowing through pine branches, static camera"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "looking at trees",
+        "cold",
+        "hugging self"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Jsem moc vysoká a studená…",
+          "kind": "thought"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "walking towards camera",
+        "looking at chloe",
+        "smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_forest",
+      "characters": [
+        {
+          "id": "chloe"
+        },
+        {
+          "id": "ethan"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "man talking to woman",
+        "looking at each other",
+        "snow falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Vypadáš, jako bys hledala něco víc než výhled.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "indoor"
+        },
+        {
+          "id": "ethan",
+          "outfit": "indoor"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on sofa",
+        "wine glasses",
+        "fireplace",
+        "close proximity"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře v chatě.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Zůstaň přes noc.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "indoor"
+        }
+      ],
+      "visual_tags": [
+        "looking at camera",
+        "nervous",
+        "soft light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Pomalu…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "morning"
+        },
+        {
+          "id": "ethan",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "lying on bed",
+        "kissing",
+        "intimate",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "morning"
+        },
+        {
+          "id": "ethan",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "lying in bed",
+        "legs raised",
+        "intimate position",
+        "eye contact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "chloe",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ethan",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "ethan",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "dressing",
+        "back to camera",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ethan",
+          "text": "Musím odjet na služební cestu. Nevím, kdy se vrátím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bedroom",
+      "characters": [
+        {
+          "id": "chloe",
+          "outfit": "morning"
+        }
+      ],
+      "visual_tags": [
+        "sitting on bed",
+        "sad",
+        "tears",
+        "looking at door"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "a single tear rolling down her cheek, static camera"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_forest",
+      "characters": [],
+      "visual_tags": [
+        "empty path",
+        "snow",
+        "pine trees",
+        "cold atmosphere"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Chloe odchází sama.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

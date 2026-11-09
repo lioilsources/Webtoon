@@ -1,0 +1,238 @@
+{
+  "title": "Amalfi – Chyba v ránu",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_deck",
+      "characters": [],
+      "visual_tags": [
+        "white yacht",
+        "blue sea",
+        "bright sun",
+        "horizon"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Amalfi. Paluba jachty.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "waves crashing gently against the hull, sunlight glinting on water, static camera"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing",
+        "looking down",
+        "sad expression",
+        "hands in pockets"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Jsem nudný…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "standing close",
+        "looking at him",
+        "gentle smile",
+        "reassuring"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Nejsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting on bed",
+        "wine glasses",
+        "close proximity",
+        "intimate atmosphere",
+        "dim light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Víno a blízkost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "hands on shirt buttons",
+        "looking up",
+        "seductive look"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "undressing",
+        "shirt open",
+        "lace lingerie visible",
+        "kissing",
+        "passionate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "adrian"
+        },
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "lying on bed",
+        "lotus position",
+        "intimate",
+        "faces close",
+        "eyes locked"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "adrian",
+          "text": "Cítím se…",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "sari",
+          "text": "Já taky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_cabin",
+      "characters": [
+        {
+          "id": "sari"
+        }
+      ],
+      "visual_tags": [
+        "sitting on edge of bed",
+        "dressed in red dress",
+        "sad expression",
+        "looking away",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "sari",
+          "text": "Mám doma přítele. Tohle byla chyba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_deck",
+      "characters": [
+        {
+          "id": "adrian"
+        }
+      ],
+      "visual_tags": [
+        "standing alone",
+        "looking at sea",
+        "back turned",
+        "empty deck",
+        "morning sun"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Ráno zůstává sám.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

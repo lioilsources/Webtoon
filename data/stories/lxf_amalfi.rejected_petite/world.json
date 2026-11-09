@@ -1,0 +1,80 @@
+{
+  "id": "w_lxf_amalfi",
+  "title": "Amalfi – Chyba v ránu",
+  "synopsis": "Adrian a Sari prožijí noc na jachtě, ale ranní pravda roztrhne jejich spojení.",
+  "tone": "romantický, něžný, s humorem",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_mono",
+  "bible": {
+    "rules": [
+      "Volný experimentální režim mimo aplikaci: všechny postavy dospělé (23+)."
+    ],
+    "factions": []
+  },
+  "free": true,
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nešťastný konec: ona odejde k příteli, on zůstane sám."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_deck",
+      "l_cabin"
+    ]
+  },
+  "characters": [
+    {
+      "id": "adrian",
+      "name": "Adrian",
+      "role": "playable",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a slender European man aged 37 with short brown hair and glasses",
+      "base": "adult, mature male, slender, tan skin, short hair, brown hair, brown eyes, glasses, clean shaven",
+      "outfits": {
+        "default": "navy blue suit jacket, white dress shirt, black trousers, leather shoes, glasses",
+        "undressed": "calvin klein underwear, no shirt, no jacket"
+      },
+      "photo": "a slender European man aged 37 with short brown hair and glasses",
+      "tag_prompt": "adult, mature male, slender, tan skin, short hair, brown hair, brown eyes, glasses, clean shaven, navy blue suit jacket, white dress shirt, black trousers, leather shoes, glasses",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "sari",
+      "name": "Sari",
+      "role": "playable",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a petite Indonesian woman aged 25 with long straight black hair",
+      "base": "adult, mature female, petite, olive skin, long hair, straight hair, black hair, brown eyes",
+      "outfits": {
+        "default": "red versace dress, flowing fabric, gold earrings, high heels",
+        "undressed": "victoria secret lace bra, victoria secret lace panties, no shoes"
+      },
+      "photo": "a petite Indonesian woman aged 25 with long straight black hair",
+      "tag_prompt": "adult, mature female, petite, olive skin, long hair, straight hair, black hair, brown eyes, red versace dress, flowing fabric, gold earrings, high heels",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_deck",
+      "name": "Paluba jachty",
+      "description": "Paluba jachty",
+      "tag_prompt": "outdoors, yacht deck, amalfi coast, cliffs, sea, sunset, golden hour",
+      "mood": ""
+    },
+    {
+      "id": "l_cabin",
+      "name": "Kajuta",
+      "description": "Kajuta",
+      "tag_prompt": "indoors, yacht cabin, wooden interior, dim lighting, bed, wine glasses, night",
+      "mood": ""
+    }
+  ]
+}

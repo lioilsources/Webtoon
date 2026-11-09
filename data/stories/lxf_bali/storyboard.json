@@ -1,0 +1,243 @@
+{
+  "title": "Bali – Muž, který je jeho",
+  "fonts": "romance",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_rice",
+      "characters": [],
+      "visual_tags": [
+        "rice terraces",
+        "green fields",
+        "tropical plants",
+        "sunlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Bali. Rýžová pole.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "leaves rustling in the wind, sunlight filtering through trees, static camera"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "diego"
+        },
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing",
+        "looking at each other",
+        "serious expression",
+        "green background"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Ring je všechno…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_rice",
+      "characters": [
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "confident",
+        "shaking head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Ne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "dinner"
+        },
+        {
+          "id": "diego",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "sitting at table",
+        "wine glasses",
+        "kiss",
+        "warm light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Večeře. Polibky.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "dinner"
+        },
+        {
+          "id": "diego",
+          "outfit": "dinner"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "standing",
+        "man taking off shirt",
+        "woman taking off dress",
+        "intimate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Pomalu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "lingerie",
+        "black lace",
+        "looking at viewer",
+        "seductive"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "lying on bed",
+        "woman on top",
+        "reverse cowgirl",
+        "intimate",
+        "night"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "diego",
+          "text": "Cítím se jako muž.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella"
+        }
+      ],
+      "visual_tags": [
+        "looking at viewer",
+        "smile",
+        "intimate"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "isabella",
+          "text": "Protože jsi.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_villa",
+      "characters": [
+        {
+          "id": "isabella",
+          "outfit": "morning"
+        },
+        {
+          "id": "diego"
+        }
+      ],
+      "visual_tags": [
+        "couple",
+        "hetero",
+        "lying in bed",
+        "hugging",
+        "sleeping",
+        "morning light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zůstávají.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}
