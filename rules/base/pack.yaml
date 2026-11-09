@@ -41,7 +41,7 @@ price_tiers:
   gamebook:    {usd: 1.99, tier: 2}
   bundle_type: {usd: 2.99, tier: 3}   # no type bundle is sold (decided 2026-11-08): only bundle_all
   kit:         {usd: 3.99, tier: 4}
-  bundle_all:  {usd: 5.99, tier: 6}
+  bundle_all:  {usd: 4.99, tier: 5}
 
 # Pack types. Only `active` types go into catalog.json `types`; the others are reserved so ids, icons and names are
 # settled before their first pack. audience adult = hidden in the app's Kids profile. icon = Material icon name.

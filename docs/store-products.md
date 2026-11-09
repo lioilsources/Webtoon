@@ -19,12 +19,12 @@ python3 tools/gen_products.py --catalog --check                 # fail when out 
 | kind | product id | price | what it unlocks |
 |---|---|---|---|
 | pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: up to 50 stories, all 12 languages |
-| everything | `bundle_all` | 5.99 USD (Tier 6) | every pack of every type, current and future |
+| everything | `bundle_all` | 4.99 USD (Tier 5) | every pack of every type, current and future |
 | gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (today's four gamebooks are free: no product) |
 | gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (a free gamebook includes its kit) |
 
 Tiers: Apple replaced price tiers with price points (USD base price, other storefronts derived); "Tier N" is the
-old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 5.99 = Tier 6). No type bundles are sold (decided 2026-11-08): only `bundle_all`.
+old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 4.99 = Tier 5). No type bundles are sold (decided 2026-11-08): only `bundle_all`.
 In Play Console set the USD default price and let Play convert the other countries.
 
 Bundles never list their packs in the store: the app resolves a bundle against the catalog at runtime
@@ -41,7 +41,7 @@ Current list (generated; names ≤ 30 and descriptions ≤ 45 characters for App
 | `pack_harlequin_2` | pack | harlequin | 0.99 | Tier 1 | Romantika 2 | Romance 2 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
-| `bundle_all` | bundle | all | 5.99 | Tier 6 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
+| `bundle_all` | bundle | all | 4.99 | Tier 5 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
 <!-- products:end -->
 
 Paid gamebooks (none yet: every published gamebook is free and needs no product), e.g. for a gamebook `drak`:
@@ -71,7 +71,7 @@ One-time:
 Per product (Features → **In-App Purchases** → **+**):
 1. Type **Non-Consumable**; Reference Name = the product id (e.g. `pack_kids_1`); Product ID = the product id.
 2. **Availability**: all countries the app is in.
-3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 3.99 / 5.99 USD (table above);
+3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 3.99 / 4.99 USD (table above);
    accept the generated prices of the other storefronts.
 4. **App Store Localization**: add **Czech** and **English (U.S.)** (more later) with the display name and
    description from the table / `tools/products.csv`.
@@ -103,7 +103,7 @@ One-time:
 Per product (**Monetize → Products → In-app products → Create product**):
 1. Product ID = the product id (lower case, digits, `_` and `.` only: `pack_kids_1` is valid). Permanent.
 2. Name and description: English (default) and Czech from the table (Play allows 55 / 200 characters).
-3. Default price 0.99 / 1.99 / 3.99 / 5.99 USD → **Update exchange rates** fills the other countries.
+3. Default price 0.99 / 1.99 / 3.99 / 4.99 USD → **Update exchange rates** fills the other countries.
 4. **Activate**. (Play has no consumable flag; the app never consumes these purchases, which makes them
    non-consumable.)
 

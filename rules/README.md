@@ -197,7 +197,7 @@ Default styles: the profile's `styles.strip_default`.
 | repo | lioilsources/webtoon-content | target of the printed `gh release create` |
 | pack_size, max_previews | 50 stories per paid pack (2 zips), 6 covers in the store grid | one 0.99 USD unlock |
 | naming | pack `{type}-{n}`, product `pack_{type}_{n}`, tag `pack-{type}-{n}-v{version}`, asset `{type}-{n}-{part}.zip`, `gamebook_{id}`, `kit_{id}` | store products and tags are permanent |
-| price_tiers | pack 0.99 (T1), gamebook 1.99 (T2), bundle_type 2.99 (T3), kit 3.99 (T4), bundle_all 5.99 (T6) | hints for docs/store-products.md; the app shows the store price |
+| price_tiers | pack 0.99 (T1), gamebook 1.99 (T2), bundle_type 2.99 (T3), kit 3.99 (T4), bundle_all 4.99 (T5) | hints for docs/store-products.md; the app shows the store price |
 | types | kids, harlequin, superhero active; spooky, animals, mystery, scifi, fantasy, seasonal, travel reserved; title_i18n in 12 languages, audience, Material icon | audience adult = hidden in the Kids reader profile |
 | type_from_profile / type_from_audience | world.json `profile` → type, else audience (kids → kids, adult → harlequin) | export-pack's default `-type`; superhero needs `profile: superhero` |
 | bundles | bundle_all (covers all); type bundles (covers types) are supported but none is sold (2026-11-08) | a bundle unlocks current AND future packs of its types (resolved in the app); `webtoon catalog-bundles` writes them |
