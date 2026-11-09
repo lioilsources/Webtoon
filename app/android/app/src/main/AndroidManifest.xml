@@ -23,11 +23,38 @@
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
               />
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+            <!-- No launcher filter here: the launcher entries are the .Icon_* aliases below (one enabled at a
+                 time, switched by the icon picker in Nastavení via MainActivity's "toonfork/app_icon" channel). -->
         </activity>
+        <!-- app icons (tools/app_icons.py) -->
+        <activity-alias android:name=".Icon_stargirl" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher" android:enabled="true" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_noirgirl" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_noirgirl" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_comicgirl" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_comicgirl" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_noirboy2" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_noirboy2" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_stargirl2" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_stargirl2" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_classic" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_classic" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_panelsstar" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_panelsstar" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_panelsnoir2" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_panelsnoir2" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <activity-alias android:name=".Icon_panelsnoir" android:targetActivity=".MainActivity" android:icon="@mipmap/ic_launcher_panelsnoir" android:enabled="false" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity-alias>
+        <!-- /app icons -->
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

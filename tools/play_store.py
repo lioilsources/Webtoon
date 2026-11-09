@@ -1,5 +1,7 @@
+#!/usr/bin/env python3
 """Toonfork on Google Play: upload a build and set up the in-app products (after Kaceny/tool/play_store.py).
 
+    ./tools/play_store.py                                             # both steps; AAB of the newest v* release
     AAB=path/to/app-release.aab python3 tools/play_store.py bundle    # internal testing track, draft release
     python3 tools/play_store.py iap                                   # tools/products.csv → one-time products, active
 
@@ -73,8 +75,21 @@ class Edit:
             api("DELETE", self.base, ok=(404,))
 
 
+def newest_aab():
+    """app-release.aab of the newest v* GitHub release (gh CLI), downloaded to a temp dir."""
+    import subprocess
+    import tempfile
+    tags = subprocess.run(["gh", "release", "list", "-L", "20", "--json", "tagName", "-q", ".[].tagName"],
+                          cwd=ROOT, capture_output=True, text=True, check=True).stdout.split()
+    tag = next(t for t in tags if t.startswith("v"))
+    d = Path(tempfile.mkdtemp(prefix="toonfork-aab-"))
+    subprocess.run(["gh", "release", "download", tag, "-p", "app-release.aab", "-D", str(d)], cwd=ROOT, check=True)
+    print(f"  {tag}: {d / 'app-release.aab'}")
+    return d / "app-release.aab"
+
+
 def step_bundle():
-    path = Path(os.environ["AAB"])
+    path = Path(os.environ["AAB"]) if os.environ.get("AAB") else newest_aab()
     with Edit() as edit:
         bundle = api("POST", f"{UPLOAD}/edits/{edit.id}/bundles?uploadType=media", raw=path.read_bytes(),
                      ctype="application/octet-stream")
@@ -108,6 +123,6 @@ def step_iap():
 STEPS = {"bundle": step_bundle, "iap": step_iap}
 
 if __name__ == "__main__":
-    for name in sys.argv[1:]:
+    for name in sys.argv[1:] or ["bundle", "iap"]:
         print(name)
         STEPS[name]()

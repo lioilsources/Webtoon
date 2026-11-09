@@ -39,7 +39,7 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
 - [ ] In-app purchases (non-consumable; name ≤ 30, description ≤ 45; cs + en at least, ideally all 12 from the
       catalog `title_i18n`): `pack_kids_1`, `pack_harlequin_1`, **`pack_harlequin_2`** (the catalog already sells it;
       it is now in `tools/products.csv`), `pack_superhero_1`, `bundle_all`
-      (5.99 USD; no type bundles). Each needs a review screenshot and price. Family Sharing on.
+      (4.99 USD; no type bundles). Each needs a review screenshot and price. Family Sharing on.
       Submit them **with** version 1.0.
 - [ ] Paid Apps agreement, tax and banking active.
 - [ ] Review notes from `docs/store-products.md` (add the four free gamebooks and the 16+ content of the dramas); a
