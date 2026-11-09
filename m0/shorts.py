@@ -178,12 +178,13 @@ def main():
     ap.add_argument("--music", default=None, help="audio file or directory of tracks (one per world)")
     ap.add_argument("--volume", type=float, default=0.8)
     ap.add_argument("--api", default="http://localhost:8095")
+    ap.add_argument("--user", default="player", help="X-User-ID of the episode's owner")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
-    req = urllib.request.Request(f"{args.api}/episodes/{args.episode}", headers={"X-User-ID": "player"})
+    req = urllib.request.Request(f"{args.api}/episodes/{args.episode}", headers={"X-User-ID": args.user})
     ep = json.load(urllib.request.urlopen(req))
-    req = urllib.request.Request(f"{args.api}/campaigns/{ep['campaign_id']}", headers={"X-User-ID": "player"})
+    req = urllib.request.Request(f"{args.api}/campaigns/{ep['campaign_id']}", headers={"X-User-ID": args.user})
     world = json.load(urllib.request.urlopen(req))["world_id"]
     if world.startswith(rules.get("pack.forbidden_world_prefix")):
         raise SystemExit("free strips are never published")

@@ -36,6 +36,7 @@ def main():
     ap.add_argument("--lang", default="cs")
     ap.add_argument("--music", default=None, help="audio file or directory, passed to shorts.py")
     ap.add_argument("--api", default="http://localhost:8095")
+    ap.add_argument("--user", default="player", help="X-User-ID that owns the imported episodes")
     ap.add_argument("--out", default=str(ROOT / "out" / "shorts" / "gulas"))
     args = ap.parse_args()
     models = args.models or list(GULAS)
@@ -55,7 +56,7 @@ def main():
                     sys.exit(f"{gid}/{node}: {f.relative_to(ROOT)} missing (the gamebook is not imported on this machine)")
                 part = Path(tmp) / f"{len(parts):02d}.mp4"
                 cmd = [sys.executable, str(ROOT / "m0/shorts.py"), f.read_text().strip(), "--lang", args.lang,
-                       "--api", args.api, "--out", str(part)]
+                       "--api", args.api, "--user", args.user, "--out", str(part)]
                 if args.music:
                     cmd += ["--music", args.music]
                 subprocess.run(cmd, check=True)
