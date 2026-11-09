@@ -13,6 +13,7 @@ SFW app episodes only: free strips (lxf_) are never published.
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import unicodedata
@@ -33,6 +34,29 @@ FADE = R["fade"]              # crossfade between panels, seconds
 FONT_SCALE = R["font_scale"]  # compose.py letters for an 800 px strip; a phone frame wants them bigger
 END = dict(R["end"]["texts"])
 DUR = R["panel_duration"]
+
+
+def api_get(api, path, user=None):
+    """GET from the backend. JODA sits behind Caddy: /media is open, everything else needs X-Studio-Token
+    (WEBTOON_STUDIO_TOKEN = STUDIO_TOKEN in JODA's deploy/.env). Cloudflare refuses urllib's default agent."""
+    h = {"User-Agent": "toonfork-shorts"}
+    if user:
+        h["X-User-ID"] = user
+    if os.environ.get("WEBTOON_STUDIO_TOKEN"):
+        h["X-Studio-Token"] = os.environ["WEBTOON_STUDIO_TOKEN"]
+    return urllib.request.urlopen(urllib.request.Request(api.rstrip("/") + path, headers=h))
+
+
+def media_file(rel, api):
+    """backend/<rel> when this machine has the media, otherwise downloaded from the API once (out/shorts/_media)."""
+    local = ROOT / "backend" / rel.lstrip("/")
+    if local.exists():
+        return local
+    cached = OUT / "shorts" / "_media" / rel.lstrip("/")
+    if not cached.exists():
+        cached.parent.mkdir(parents=True, exist_ok=True)
+        cached.write_bytes(api_get(api, "/" + rel.lstrip("/")).read())
+    return cached
 
 
 def slug(title):
@@ -121,8 +145,8 @@ class Segment:
         self.dur, self.frame_at = dur, frame_at
 
 
-def panel_segment(p, media, lang):
-    src = media / p["image_url"].lstrip("/")
+def panel_segment(p, api, lang):
+    src = media_file(p["image_url"], api)
     img = Image.open(src).convert("RGB")
     words = sum(len(((b.get("i18n") or {}).get(lang) if lang != "cs" else None) or b["text"]) for b in p.get("bubbles") or [])
     dur = min(DUR["max"], max(DUR["min"], DUR["base"] + DUR["per_char"] * words))
@@ -133,7 +157,7 @@ def panel_segment(p, media, lang):
 
     frames = []
     if p.get("video_url") and p.get("video_status", "ready") == "ready":
-        v = Image.open(media / p["video_url"].lstrip("/"))
+        v = Image.open(media_file(p["video_url"], api))
         for i in range(v.n_frames):
             v.seek(i)
             f = v.convert("RGB")
@@ -177,14 +201,13 @@ def main():
     ap.add_argument("--lang", default="cs")
     ap.add_argument("--music", default=None, help="audio file or directory of tracks (one per world)")
     ap.add_argument("--volume", type=float, default=0.8)
-    ap.add_argument("--api", default="http://localhost:8095")
+    ap.add_argument("--api", default=os.environ.get("WEBTOON_API", "https://webtoon-api.ol1n.com"), help="backend; default JODA via the tunnel")
+    ap.add_argument("--user", default="player", help="X-User-ID of the episode's owner")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
 
-    req = urllib.request.Request(f"{args.api}/episodes/{args.episode}", headers={"X-User-ID": "player"})
-    ep = json.load(urllib.request.urlopen(req))
-    req = urllib.request.Request(f"{args.api}/campaigns/{ep['campaign_id']}", headers={"X-User-ID": "player"})
-    world = json.load(urllib.request.urlopen(req))["world_id"]
+    ep = json.load(api_get(args.api, f"/episodes/{args.episode}", args.user))
+    world = json.load(api_get(args.api, f"/campaigns/{ep['campaign_id']}", args.user))["world_id"]
     if world.startswith(rules.get("pack.forbidden_world_prefix")):
         raise SystemExit("free strips are never published")
     sb = DATA / "stories" / world.removeprefix("w_") / "storyboard.json"
@@ -192,14 +215,13 @@ def main():
     base_font = compose.font
     compose.font = lambda kind, size: base_font(kind, round(size * FONT_SCALE))
 
-    media = ROOT / "backend"
     panels = [p for p in ep["panels"] if p.get("image_url")]
-    faces_for([media / p["image_url"].lstrip("/") for p in panels if p.get("faces") is None])  # one detector run
-    first = Image.open(media / panels[0]["image_url"].lstrip("/")).convert("RGB")
-    last = Image.open(media / panels[-1]["image_url"].lstrip("/")).convert("RGB")
+    faces_for([media_file(p["image_url"], args.api) for p in panels if p.get("faces") is None])  # one detector run
+    first = Image.open(media_file(panels[0]["image_url"], args.api)).convert("RGB")
+    last = Image.open(media_file(panels[-1]["image_url"], args.api)).convert("RGB")
     title = text_of(ep, "title", args.lang) or ep["title"]
     C = R["cards"]
-    segs = [card_segment(title, first, C["title"]["duration"])] + [panel_segment(p, media, args.lang) for p in panels] \
+    segs = [card_segment(title, first, C["title"]["duration"])] + [panel_segment(p, args.api, args.lang) for p in panels] \
         + [card_segment(END.get(args.lang, R["end"]["default"]), last, C["end"]["duration"], size=C["end"]["size"])]
 
     out = Path(args.out or OUT / "shorts" / f"{world.removeprefix('w_')}-{slug(ep['title'])}_{args.lang}.mp4")
