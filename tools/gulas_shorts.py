@@ -13,6 +13,7 @@ Images and loops are downloaded from /media into out/shorts/_media. Needs ffmpeg
 
 import argparse
 import os
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -65,7 +66,7 @@ def main():
                 parts.append(part)
             target = out / f"{name}-{model}.mp4"
             if len(parts) == 1:
-                parts[0].replace(target)
+                shutil.move(parts[0], target)  # the temp dir may be on another volume (os.replace fails there)
             else:  # same encoder settings for every part, so the streams can be joined without re-encoding
                 lst = Path(tmp) / "list.txt"
                 lst.write_text("".join(f"file '{p}'\n" for p in parts))
