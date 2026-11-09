@@ -7,10 +7,12 @@
 
 Every node (chapter) of a gamebook is an episode: m0/shorts.py renders each one (episode id from
 out/local/gb_<id>_<node>/episode_id, left by the import), then the nodes are joined in graph order into one file.
-Needs the backend running with the media of these gamebooks (backend/media), ffmpeg and the shorts.py deps.
+Backend = JODA (https://webtoon-api.ol1n.com); its token: export WEBTOON_STUDIO_TOKEN=<STUDIO_TOKEN from JODA ~/deploy/Webtoon/deploy/.env>.
+Images and loops are downloaded from /media into out/shorts/_media. Needs ffmpeg and the shorts.py deps.
 """
 
 import argparse
+import os
 import subprocess
 import sys
 import tempfile
@@ -35,7 +37,7 @@ def main():
     ap.add_argument("models", nargs="*", help=f"any of {', '.join(GULAS)} (default: all)")
     ap.add_argument("--lang", default="cs")
     ap.add_argument("--music", default=None, help="audio file or directory, passed to shorts.py")
-    ap.add_argument("--api", default="http://localhost:8095")
+    ap.add_argument("--api", default=os.environ.get("WEBTOON_API", "https://webtoon-api.ol1n.com"), help="backend (JODA via the tunnel)")
     ap.add_argument("--user", default="player", help="X-User-ID that owns the imported episodes")
     ap.add_argument("--out", default=str(ROOT / "out" / "shorts" / "gulas"))
     args = ap.parse_args()
