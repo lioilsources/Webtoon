@@ -210,6 +210,9 @@ GET    /media/{path}                    soubory z MEDIA_DIR
 GET    /health
 ```
 
+Vlastní hlas hráče appky Toonfork (`/v1/player/*` s tokenem zařízení, `/v1/worker/*` pro worker na SPARKu,
+`webtoon voice-worker`) popisuje [`../docs/voice-backend.md`](../docs/voice-backend.md).
+
 Postavy a lokace v odpovědích mají navíc `reference_urls` (URL k `reference_images`). `tag_prompt` se při
 uložení normalizuje (booru zápis, bez prázdných a duplicitních tagů).
 
@@ -272,6 +275,8 @@ internal/store/         Postgres store (implementuje worker.Store)
 internal/tags/          booru tagy, WD14 slovník, překlad frází (port m0/common.py)
 internal/wd14/          WD14 klient, safety, identity recall
 internal/worker/        job loop, episode/panel joby, backoff
+internal/voice/         vlastní hlas hráče: zařízení, vzorek (šifrovaně), řádky, kvóty, úklid; receipt/ = App Store + Play
+internal/voiceworker/   worker na SPARKu: fronta na JODĚ → lease brokeru `tts` → AiStack audio, trim + loudnorm
 internal/fakes/, testutil/, testdata/, integration/   testy
 ```
 

@@ -7,6 +7,8 @@ package dbq
 import (
 	"encoding/json"
 	"time"
+
+	"github.com/jackc/pgx/v5/pgtype"
 )
 
 type Campaign struct {
@@ -144,6 +146,58 @@ type Panel struct {
 	Faces         json.RawMessage
 }
 
+type PlayerDevice struct {
+	ID         string
+	TokenHash  string
+	Platform   string
+	CreatedAt  time.Time
+	LastSeenAt time.Time
+}
+
+type PlayerLine struct {
+	VoiceID   string
+	Hash      string
+	Lang      string
+	File      string
+	Bytes     int32
+	DurationS float32
+	CreatedAt time.Time
+}
+
+type PlayerQuotum struct {
+	DeviceID string
+	Day      pgtype.Date
+	Lines    int32
+}
+
+type PlayerVoice struct {
+	ID                   string
+	DeviceID             *string
+	Status               string
+	Error                string
+	SampleFile           string
+	SampleExt            string
+	SampleBytes          int32
+	SampleDurationS      float32
+	ReceiptPlatform      string
+	ReceiptOriginalID    string
+	ReceiptTransactionID string
+	CreatedAt            time.Time
+	UpdatedAt            time.Time
+	LastUsedAt           time.Time
+}
+
+type PlayerVoiceConsent struct {
+	VoiceID        string
+	DeviceID       string
+	ConsentText    string
+	ConsentSha256  string
+	ConsentVersion string
+	ConsentedAt    time.Time
+	DeletedAt      *time.Time
+	DeleteReason   string
+}
+
 type Setting struct {
 	Key       string
 	Value     json.RawMessage
@@ -154,6 +208,26 @@ type StylePreset struct {
 	ID        string
 	Data      json.RawMessage
 	UpdatedAt time.Time
+}
+
+type VoiceTask struct {
+	ID         string
+	Kind       string
+	VoiceID    string
+	DeviceID   string
+	Lang       string
+	Lines      json.RawMessage
+	IdemKey    string
+	Priority   int32
+	Status     string
+	Error      string
+	Attempts   int32
+	Worker     string
+	RunAfter   time.Time
+	LeaseUntil *time.Time
+	CreatedAt  time.Time
+	UpdatedAt  time.Time
+	FinishedAt *time.Time
 }
 
 type World struct {

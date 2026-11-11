@@ -29,7 +29,11 @@ type Config struct {
 	Vocab        *tags.Vocab    // WD14 vocabulary for the tag repair pass
 	CORSOrigins  []string       // browser origins allowed to call the API (Flutter web); empty = no CORS headers
 	Langs        []string       // translation targets; a bubble edit re-enqueues translation (empty = off)
+	Player       Registrar      // player voice API (/v1/player/*, /v1/worker/*), internal/voice; nil = not mounted
 }
+
+// Registrar adds its own routes to the mux (internal/voice.Server).
+type Registrar interface{ Register(mux *http.ServeMux) }
 
 type Server struct {
 	cfg   Config
@@ -93,6 +97,10 @@ func (s *Server) Handler() http.Handler {
 	mux.HandleFunc("PUT /gamebooks/{id}", s.requireUser(s.putGamebook))
 
 	mux.HandleFunc("GET /media/{path...}", s.media)
+
+	if s.cfg.Player != nil {
+		s.cfg.Player.Register(mux)
+	}
 
 	return s.withCORS(s.withUser(s.logRequests(mux)))
 }

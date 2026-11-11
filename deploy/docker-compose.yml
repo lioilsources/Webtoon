@@ -42,10 +42,25 @@ services:
       MEDIA_BASE_URL: /media
       MODE: api
       LISTEN_ADDR: ":8095"
+      # Player voice (docs/voice-backend.md). The key and the worker token come from .env, made by
+      # deploy.sh. Samples are encrypted files in ../voice-data, never in the repo or the database.
+      VOICE_DATA_DIR: /voice-data
+      VOICE_DATA_KEY: ${VOICE_DATA_KEY:-}
+      VOICE_WORKER_TOKEN: ${VOICE_WORKER_TOKEN:-}
+      VOICE_PUBLIC_URL: https://webtoon-api.ol1n.com
+      VOICE_RECEIPT_MODE: ${VOICE_RECEIPT_MODE:-store}
+      VOICE_APPLE_BUNDLE_ID: ${VOICE_APPLE_BUNDLE_ID:-com.ol1n.webtoon}
+      VOICE_GOOGLE_PACKAGE: ${VOICE_GOOGLE_PACKAGE:-com.ol1n.webtoon}
+      # Missing file = Play purchases fail closed (receipt_verification_unavailable).
+      VOICE_GOOGLE_SERVICE_ACCOUNT_FILE: /secrets/play-service-account.json
+      VOICE_RETENTION_DAYS: ${VOICE_RETENTION_DAYS:-180}
+      VOICE_DAILY_LINES: ${VOICE_DAILY_LINES:-300}
     volumes:
       - ../media:/media
       - ../rules:/repo/rules:ro
       - ../data:/repo/data
+      - ../voice-data:/voice-data
+      - ../secrets:/secrets:ro
     networks: [webtoon]
 
   caddy:

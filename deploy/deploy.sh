@@ -8,7 +8,7 @@ ROOT=$(cd "$(dirname "$0")/.." && pwd)
 JODA=${JODA:-joda}
 HOSTNAME_API=webtoon-api.ol1n.com
 
-ssh "$JODA" 'mkdir -p ~/deploy/Webtoon/data ~/deploy/Webtoon/media'
+ssh "$JODA" 'mkdir -p ~/deploy/Webtoon/data ~/deploy/Webtoon/media && mkdir -p -m 700 ~/deploy/Webtoon/voice-data ~/deploy/Webtoon/secrets'
 rsync -a --delete --exclude .env --exclude 'cloudflared/*.json' --exclude cloudflared/config.yml \
   "$ROOT/deploy" "$JODA":deploy/Webtoon/
 rsync -a --delete --exclude /backend/media/ --exclude /backend/.env "$ROOT/backend" "$JODA":deploy/Webtoon/
@@ -24,6 +24,10 @@ if [ ! -f .env ]; then
   chmod 600 .env
   echo "created .env"
 fi
+# Player voice secrets: added once, never printed (docs/voice-backend.md).
+for k in VOICE_DATA_KEY VOICE_WORKER_TOKEN; do
+  grep -q "^$k=" .env || { printf '%s=%s\n' "$k" "$(openssl rand -hex 32)" >> .env; echo "added $k to .env"; }
+done
 if [ ! -f cloudflared/config.yml ]; then
   # --config /dev/null: never fall back to ~/.cloudflared/config.yml (another tunnel).
   cf() { cloudflared tunnel --config /dev/null --origincert ~/.cloudflared/cert.pem "$@" 2>/dev/null; }
