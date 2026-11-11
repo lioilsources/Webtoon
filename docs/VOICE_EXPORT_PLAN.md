@@ -30,7 +30,7 @@ Free episodes and every bought pack can be exported. Free strips (`lxf_`) never 
 
 ## Phase 2: Your voice (IAP)
 
-- Product `voice_clone` (non-consumable, Tier 5 / 4.99 USD), added to tools/products.csv, App Store Connect and
+- Product `voice_clone` (non-consumable, Tier 1 / 0.99 USD like a pack), added to tools/products.csv, App Store Connect and
   Play.
 - Recording screen, ported from Hajánek (`features/voice/record_voice_screen.dart`, package `record`):
   - consent checkbox, with the consent sentence read first on the teleprompter;

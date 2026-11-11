@@ -108,8 +108,8 @@ def main():
         packs = {k: int(v) for k, v in (p.split("=") for p in args.packs.split(","))}
     gamebooks = [tuple(g.split(":", 2)) for g in args.gamebook]
     rs = rows(rules, packs, gamebooks)
-    if args.voice:  # not a pack: the app's own feature, priced like the bundle
-        t = rules["price_tiers"]["bundle_all"]
+    if args.voice:  # not a pack: the app's own feature, priced like a pack
+        t = rules["price_tiers"]["pack"]
         rs.append(dict(product_id="voice_clone", type="voice", kind="feature", price_usd=f"{t['usd']:.2f}", tier=t["tier"],
                        name_cs="Můj hlas", name_en="My voice",
                        description_cs="Postava ve videích mluví tvým hlasem", description_en="Your character speaks in your voice"))
