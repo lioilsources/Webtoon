@@ -20,10 +20,21 @@ http://webtoon-api.ol1n.com {
 
 	# images are loaded by URL, without headers
 	@open path /health /media/*
+	# Toonfork player voice: the backend authenticates these itself (device token, signed line
+	# URLs, VOICE_WORKER_TOKEN), so they skip the Studio token. Samples are at most 5 MB.
+	@player path /v1/player/* /v1/worker/*
 	@studio header X-Studio-Token {$STUDIO_TOKEN}
 
 	handle @open {
 		reverse_proxy webtoon:8095
+	}
+	handle @player {
+		request_body {
+			max_size 6MB
+		}
+		reverse_proxy webtoon:8095 {
+			header_up X-Real-IP {http.request.header.CF-Connecting-IP}
+		}
 	}
 	handle @studio {
 		reverse_proxy webtoon:8095

@@ -19,3 +19,8 @@ app/assets/packs/*.zip
 # JODA deploy: tunnel credentials stay on the server
 deploy/cloudflared/*.json
 deploy/cloudflared/config.yml
+
+# Player voice: encrypted samples/lines and store credentials live only on JODA, the worker env only on Spark
+voice-data/
+secrets/
+deploy/voice-worker/worker.env

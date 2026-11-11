@@ -22,6 +22,8 @@
 //	                                    9:16 trailer (TikTok/Shorts) from data/gamebooks/<id>/trailer.yaml (needs ffmpeg)
 //	webtoon music -prompt text -out x.mp3 [-seconds 70] [-seed n]
 //	                                    one instrumental track from the audio service on SPARK (lease audio-music first)
+//	webtoon voice-worker [-once]        Spark worker of the player voice: JODA queue → spark-broker lease (tts) →
+//	                                    AiStack audio (docs/voice-backend.md; no DB)
 package main
 
 import (
@@ -77,7 +79,7 @@ func main() {
 	cfg := config.Load()
 	var err error
 	switch cmd {
-	case "catalog-bundles", "preview", "trailer", "music": // no database
+	case "catalog-bundles", "preview", "trailer", "music", "voice-worker": // no database
 	default:
 		if cfg.DatabaseURL == "" {
 			slog.Error("DATABASE_URL is not set: put it in backend/.env (Postgres on JODA, see README)")
@@ -107,8 +109,10 @@ func main() {
 		err = runTrailer(args)
 	case "music":
 		err = runMusic(args)
+	case "voice-worker":
+		err = runVoiceWorker(ctx, args)
 	default:
-		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles|set-faces|preview|trailer|music)", cmd)
+		err = fmt.Errorf("unknown command %q (serve|migrate|seed|import-demo|translate|export-pack|catalog-bundles|set-faces|preview|trailer|music|voice-worker)", cmd)
 	}
 	if err != nil {
 		slog.Error("fatal", "cmd", cmd, "err", err)
@@ -400,9 +404,15 @@ func serve(ctx context.Context, cfg config.Config) error {
 		if wk != nil {
 			waker = wk
 		}
+		var player api.Registrar
+		if vs := newVoiceServer(s.Pool); vs != nil {
+			player = vs
+			wg.Add(1)
+			go func() { defer wg.Done(); vs.RunPurge(ctx, time.Hour) }()
+		}
 		srv := &http.Server{Addr: cfg.ListenAddr, ReadHeaderTimeout: 10 * time.Second,
 			Handler: api.New(api.Config{MediaDir: cfg.MediaDir, MediaBaseURL: cfg.MediaBaseURL, MaxAttempts: cfg.MaxAttempts,
-				LLM: llmClient, Vocab: vocab, CORSOrigins: cfg.CORSOrigins, Langs: cfg.Langs}, s, waker).Handler()}
+				LLM: llmClient, Vocab: vocab, CORSOrigins: cfg.CORSOrigins, Langs: cfg.Langs, Player: player}, s, waker).Handler()}
 		go func() {
 			<-ctx.Done()
 			shut, cancel := context.WithTimeout(context.Background(), 10*time.Second)
