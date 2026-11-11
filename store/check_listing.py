@@ -12,7 +12,13 @@ import sys
 import unicodedata
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "listing")
-LOCALES = ["cs", "en-US", "de-DE", "it", "fr-FR", "pl", "pt-BR", "ja", "ko", "vi", "ru", "uk"]
+LOCALES = [
+    "cs", "en-US", "de-DE", "it", "fr-FR", "pl", "pt-BR", "ja", "ko", "vi", "ru", "uk",
+    # the interface languages without translated stories (machine translations)
+    "ar-SA", "bn-BD", "ca", "da", "el", "es-ES", "fi", "gu-IN", "he", "hi", "hr", "hu", "id",
+    "kn-IN", "ml-IN", "mr-IN", "ms", "nl-NL", "no", "or-IN", "pa-IN", "pt-PT", "ro", "sk",
+    "sl-SI", "sv", "ta-IN", "te-IN", "th", "tr", "ur-PK", "zh-Hans", "zh-Hant",
+]
 
 # file -> (limit, unit)
 LIMITS = {

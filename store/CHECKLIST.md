@@ -18,9 +18,13 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
       · marketing https://lioilsources.github.io/Webtoon/ (optional on the App Store)
 - [ ] Decide whether to keep "Webtoon" out of the texts. It is a registered trademark (NAVER WEBTOON), so the listings
       say "vertical comics" and the keywords do not contain "webtoon" or "웹툰".
-- [ ] The app UI is only partly translated. The store, profile and gate texts are in 12 languages; the rest is in Czech
-      (`app/README.md`), and the UI translation is still in progress. The listings promise only that the **stories and
-      gamebooks** are in 12 languages; they do not claim a translated interface. Add that line once the UI ships.
+- [x] The app UI is translated into 45 languages (`app/lib/i18n/ui_strings*.dart`; 33 of them machine translations
+      for native speakers to review). Stories and gamebooks stay in 12 languages, and every listing now says both.
+- [ ] Locales beyond the first 12 (`listing/<locale>/`, 45 in total, Apple codes): ar-SA bn-BD ca da el es-ES fi gu-IN
+      he hi hr hu id kn-IN ml-IN mr-IN ms nl-NL no or-IN pa-IN pt-PT ro sk sl-SI sv ta-IN te-IN th tr ur-PK zh-Hans
+      zh-Hant. Play codes for them: ar bn-BD ca da-DK el-GR es-ES fi-FI gu hi-IN hr hu-HU id iw-IL kn-IN ml-IN mr-IN
+      ms nl-NL no-NO pa pt-PT ro sk sl sv-SE ta-IN te-IN th tr-TR ur zh-CN zh-TW (Play has no Odia, `or-IN` is App
+      Store only). Texts are machine translations, upload by hand; the limits are checked by `check_listing.py`.
 - [x] All gamebooks are translated into 12 languages, and the listings say so. The live catalog (v26) lists all six
       (sara, mlceni, kovovenebe, louka, kulovyblesk, kulovyblesktus) with 12 languages and full titles.
 
