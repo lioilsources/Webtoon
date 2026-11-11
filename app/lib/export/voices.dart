@@ -7,12 +7,17 @@ import 'package:toonfork_export/toonfork_export.dart';
 import '../models/world.dart';
 import 'export_plan.dart';
 
+/// [CastVoice.voiceId] of the player's own cloned voice (lib/voice), fetched from the server.
+const kMyVoiceId = '__my_voice__';
+
 class CastVoice {
   /// System voice id, or null = the language's default voice.
   final String? voiceId;
   final double rate;
   final double pitch;
   final bool robot;
+
+  bool get mine => voiceId == kMyVoiceId;
 
   /// The pitch this speaker has as a person (kept while it is a robot, for switching back).
   final double personPitch;

@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/providers.dart';
+import '../voice/voice_api.dart' show kVoiceCloning, kVoiceProduct;
 import 'catalog.dart';
 import 'catalog_repository.dart';
 import 'entitlements.dart';
@@ -138,7 +139,10 @@ class ShopController extends StateNotifier<ShopState> {
     try {
       final ok = await gateway.isAvailable();
       final products = ok
-          ? await gateway.queryProducts(c.productIds)
+          ? await gateway.queryProducts({
+              ...c.productIds,
+              if (kVoiceCloning) kVoiceProduct,
+            })
           : <String, StoreProduct>{};
       if (mounted) {
         state = state.copyWith(products: products, storeAvailable: ok);

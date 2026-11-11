@@ -97,6 +97,7 @@ def main():
     ap.add_argument("--catalog", nargs="?", const=CATALOG, help="count packs per type from this catalog.json (URL or file; "
                     "default: the live one), so every pack the app sells has its product")
     ap.add_argument("--gamebook", action="append", default=[], help="id:czech title:english title")
+    ap.add_argument("--voice", action="store_true", help="also voice_clone, the 'Your voice' IAP (docs/VOICE_EXPORT_PLAN.md)")
     ap.add_argument("--check", action="store_true", help="fail when products.csv / the doc table are out of date")
     args = ap.parse_args()
     rules = yaml.safe_load(RULES.read_text(encoding="utf-8"))
@@ -107,6 +108,11 @@ def main():
         packs = {k: int(v) for k, v in (p.split("=") for p in args.packs.split(","))}
     gamebooks = [tuple(g.split(":", 2)) for g in args.gamebook]
     rs = rows(rules, packs, gamebooks)
+    if args.voice:  # not a pack: the app's own feature, priced like the bundle
+        t = rules["price_tiers"]["bundle_all"]
+        rs.append(dict(product_id="voice_clone", type="voice", kind="feature", price_usd=f"{t['usd']:.2f}", tier=t["tier"],
+                       name_cs="Můj hlas", name_en="My voice",
+                       description_cs="Postava ve videích mluví tvým hlasem", description_en="Your character speaks in your voice"))
     buf = io.StringIO()
     w = csv.DictWriter(buf, COLUMNS, lineterminator="\n")
     w.writeheader()

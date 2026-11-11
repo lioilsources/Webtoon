@@ -13,6 +13,8 @@ import '../models/campaign.dart';
 import '../models/episode.dart';
 import '../models/world.dart';
 import '../providers/providers.dart';
+import '../voice/voice_api.dart' show kVoiceCloning;
+import '../voice/voice_controller.dart';
 import 'export_plan.dart';
 import 'video_exporter.dart';
 import 'voices.dart';
@@ -152,6 +154,15 @@ class _ExportSheetState extends ConsumerState<ExportSheet> {
           cast: cast,
           endText: tr(ui, 'export.end'),
           fileName: 'toonfork-${eps.first.id}${_story ? '-story' : ''}.mp4',
+          fetchMyVoice: (lines, dir, onProgress, cancelled) => ref
+              .read(voiceProvider.notifier)
+              .fetchLines(
+                'cs',
+                lines,
+                dir,
+                onProgress: onProgress,
+                cancelled: cancelled,
+              ),
         ),
         (p) {
           if (mounted) setState(() => _progress = p);
@@ -203,6 +214,9 @@ class _ExportSheetState extends ConsumerState<ExportSheet> {
   Widget build(BuildContext context) {
     final ui = ref.watch(uiLanguageProvider);
     final busy = _progress != null && _result == null;
+    // the own voice speaks Czech only (chatterbox-cs on the server)
+    final myVoice =
+        kVoiceCloning && ref.watch(voiceProvider).ready && _speakLang == 'cs';
     final cast = _cast;
     return SafeArea(
       child: Padding(
@@ -288,6 +302,11 @@ class _ExportSheetState extends ConsumerState<ExportSheet> {
                                 value: null,
                                 child: Text(tr(ui, 'export.defaultVoice')),
                               ),
+                              if (myVoice)
+                                DropdownMenuItem(
+                                  value: kMyVoiceId,
+                                  child: Text(tr(ui, 'export.myVoice')),
+                                ),
                               for (final v in _voices)
                                 DropdownMenuItem(
                                   value: v.id,

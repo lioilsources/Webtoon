@@ -44,6 +44,15 @@ class ExportOptions {
   final String endText;
   final FrameSpec spec;
   final String fileName;
+
+  /// Lines (key → text) in the player's own voice → key → audio file; null without one (lib/voice).
+  final Future<Map<String, String>> Function(
+    Map<String, String> lines,
+    Directory dir,
+    void Function(int done, int total) onProgress,
+    bool Function() cancelled,
+  )?
+  fetchMyVoice;
   const ExportOptions({
     required this.episodes,
     required this.lang,
@@ -54,6 +63,7 @@ class ExportOptions {
     required this.endText,
     required this.fileName,
     this.spec = const FrameSpec(),
+    this.fetchMyVoice,
   });
 }
 
@@ -93,13 +103,42 @@ class VideoExporter {
     ];
     final spoken = <String, Float32List>{};
     if (o.dub) {
+      // the player's own voice first: the server may take a while (it waits for the GPU)
+      final mine = {
+        for (final l in lines)
+          if (o.cast.voiceFor(l).mine) l.key: _speakable(l.text),
+      };
+      if (mine.isNotEmpty && o.fetchMyVoice != null) {
+        try {
+          final files = await o.fetchMyVoice!(
+            mine,
+            work,
+            (d, t) => onProgress(
+              ExportProgress(ExportPhase.voices, d / math.max(1, t) * 0.5),
+            ),
+            () => _cancel,
+          );
+          for (final e in files.entries) {
+            final wav = await ToonforkExport.decode(e.value, '${e.value}.wav');
+            final x = trimSilence(await readWav(wav));
+            if (x.isNotEmpty) spoken[e.key] = x;
+          }
+        } catch (e) {
+          debugPrint(
+            'export: own voice unavailable, system voices instead: $e',
+          );
+        }
+      }
       for (var i = 0; i < lines.length; i++) {
         _check();
         onProgress(
           ExportProgress(ExportPhase.voices, i / math.max(1, lines.length)),
         );
         final l = lines[i];
-        final v = o.cast.voiceFor(l);
+        if (spoken.containsKey(l.key)) continue;
+        var v = o.cast.voiceFor(l);
+        // a line the server could not make: the default voice
+        if (v.mine) v = v.withVoice(null);
         final path = p.join(work.path, 'line_$i.wav');
         try {
           await ToonforkExport.synth(
