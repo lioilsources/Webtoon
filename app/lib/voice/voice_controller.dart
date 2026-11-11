@@ -156,14 +156,21 @@ class VoiceController extends StateNotifier<VoiceState> {
     }
   }
 
-  /// Deletes the voice and the device on the server (sample, clone and lines), then here.
+  /// Deletes the voice on the server (sample, clone and lines) and here; the device token stays, so the
+  /// daily quota keeps counting (DELETE /devices/me would be "delete all my data").
   Future<void> delete() async {
+    final v = state.voice;
     state = state.copyWith(busy: true, clearError: true);
     try {
       final t = await secrets.read(_tokenKey);
-      if (t != null) await api.deleteDevice(t);
+      if (t != null && v != null) {
+        try {
+          await api.deleteVoice(t, v.id);
+        } on VoiceApiError catch (e) {
+          if (e.status != 404) rethrow; // already gone on the server
+        }
+      }
       await secrets.write(_voiceKey, null);
-      await secrets.write(_tokenKey, null);
       _poll?.cancel();
       if (mounted) state = state.copyWith(busy: false, clearVoice: true);
     } catch (e) {

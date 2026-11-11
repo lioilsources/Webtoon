@@ -62,7 +62,7 @@ class _Server {
           ],
           if (done) 'missing': ['b'],
         });
-      case ('DELETE', '/v1/player/devices/me'):
+      case ('DELETE', '/v1/player/voices/v1'):
         return http.Response('', 204);
       case ('GET', '/a.m4a'):
         return http.Response('m4a-bytes', 200);
@@ -163,7 +163,7 @@ void main() {
   );
 
   test(
-    'delete removes the device on the server and the secrets here',
+    'delete removes the voice on the server, keeps the device token',
     () async {
       secrets.m['voice_device_token'] = 'tok';
       secrets.m['voice_id'] = 'v1';
@@ -171,8 +171,9 @@ void main() {
       final c = VoiceController(api, secrets, () => null);
       await settle();
       await c.delete();
-      expect(server.calls, contains('DELETE /v1/player/devices/me'));
-      expect(secrets.m, isEmpty);
+      expect(server.calls, contains('DELETE /v1/player/voices/v1'));
+      expect(server.calls, isNot(contains('DELETE /v1/player/devices/me')));
+      expect(secrets.m.keys, ['voice_device_token']);
       expect(c.state.voice, isNull);
       c.dispose();
     },
