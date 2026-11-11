@@ -11,7 +11,7 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
 
 ## Before either store
 
-- [x] Privacy policy filled in (ol1n, oldrich.vorechovsky.jr@gmail.com, effective 2026-11-05) and written as
+- [x] Privacy policy filled in (ol1n, business@olin.now, effective 2026-11-05) and written as
       `docs/privacy.html`, with `docs/support.html` and `docs/index.html` (same layout as MirrorBooth / Kiran).
 - [x] Publish them (live, HTTP 200): merge to `main`, then GitHub Pages for this repo from `main` `/docs`. URLs:
       privacy https://lioilsources.github.io/Webtoon/privacy.html · support https://lioilsources.github.io/Webtoon/support.html
