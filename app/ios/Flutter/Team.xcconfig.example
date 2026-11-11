@@ -1,0 +1,3 @@
+// Copy to Team.xcconfig (gitignored) and fill in your Apple Developer Team ID
+// for local signed builds. CI passes DEVELOPMENT_TEAM from a secret.
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
