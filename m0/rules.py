@@ -35,7 +35,7 @@ REQUIRED = {
     "animate": ["fps", "size", "negative", "style_tail_tags", "default_motion", "webp_quality", "ambient"],
     "compose": ["width", "gaps", "default_gap", "bg", "ink", "fonts", "bubble", "sfx", "title", "texts"],
     "shorts": ["frame", "top", "bottom", "fade", "font_scale", "panel_duration", "cards", "zoom", "end"],
-    "music": ["length", "window", "model", "prompt_suffix", "seed_base", "moods"],
+    "music": ["length", "model", "prompt_suffix", "seed_base", "moods"],
     "pipeline": ["strip"],
     "pack": ["part_size", "webp_quality", "cover", "forbidden_world_prefix", "dropped_episode_fields"],
 }

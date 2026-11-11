@@ -3,7 +3,7 @@
     python3 m0/music.py [--only lofi_1]          # WEBTOON_AUDIO overrides the Spark LAN endpoint
     → data/music/<name>.mp3, one per MOODS entry; existing tracks are skipped
 
-Director's rules: only in the comfy window 07:05–12:45 (audio is down while the big LLMs run), one job at a time,
+On demand: runs whenever AiStack reports the model available; one job at a time,
 never start the container yourself; if the model is not available, ask Director.
 shorts.py --music data/music picks one track per world, so a series keeps its sound.
 """
@@ -13,14 +13,13 @@ import json
 import os
 import time
 import urllib.request
-from datetime import datetime
 
 import rules
 from common import DATA, http
 
 AUDIO_URL = os.environ.get("WEBTOON_AUDIO", "http://192.168.88.66:8093")
 LIB = DATA / "music"
-# Length, window, model and the moods: rules/base/music.yaml.
+# Length, model and the moods: rules/base/music.yaml.
 R = rules.load("music")
 LENGTH = R["length"]  # s: ACE-Step returns 9–19 % short of this; the longest short is ~65 s, and shorts.py loops anyway
 MOODS = dict(R["moods"])
@@ -41,10 +40,6 @@ def render(name, prompt, seed):
 
 
 def check_ready():
-    now = datetime.now().strftime("%H:%M")
-    start, end = R["window"]["start"], R["window"]["end"]
-    if not start <= now <= end:
-        raise SystemExit(f"{now}: audio runs only {start}–{end}")
     models = json.loads(http("GET", f"{AUDIO_URL}/v1/audio/models"))
     ace = [m for m in models if m["name"] == R["model"]]
     if not (ace and ace[0].get("available")):
