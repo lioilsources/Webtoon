@@ -41,7 +41,7 @@ dub:
     # takes: XTTS garbles line ends or babbles on, so up to this many takes are checked by Whisper (WEBTOON_ASR_PYTHON
     # = an interpreter with mlx-whisper) and the best is cut after its last word; without Whisper, tail_rate (s per
     # character, a slow estimate) is the fallback: the first pause after that much speech ends the line
-    - {match: olin, engine: xtts, voice: "custom:ol1n-mikes", takes: 4, tail_rate: 0.07}
+    - {match: olin, engine: xtts, voice: "custom:ol1n-mikes", takes: 8, tail_rate: 0.07}
     - {match: jana, engine: piper, voice: "piper:cs_CZ-kasandra-medium"}
     - match: "*"
       engine: piper
