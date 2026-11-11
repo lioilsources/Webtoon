@@ -55,9 +55,13 @@ na iOS `Library/Application Support/packs/` v sandboxu aplikace. Další balíč
   `PackStore.installFromFile`. Nákup balíčku ho rovnou stáhne; bundle a „Obnovit nákupy“ ne.
 - Profil a brána: `lib/profile/` (`reader_profile.dart`, `parental_gate.dart` — násobilka 3–9 ×
   3–9 před každým nákupem a před přepnutím na Dospělí). Všechny texty čtečky (knihovna, čtečka,
-  gamebooky a editor větví, obchod, nastavení, profil, brána, chyby balíčků) jsou ve všech 12 jazycích
-  (`lib/i18n/ui_strings.dart`, množná čísla přes `trPlural`) a řídí se jazykem bublin; česky zůstává
-  jen UI Studia.
+  gamebooky a editor větví, obchod, nastavení, profil, brána, chyby balíčků) jsou ve 45 jazycích:
+  12 jazyků čtečky (`lib/i18n/ui_strings.dart`) a 33 dalších (`lib/i18n/ui_strings_more.dart`,
+  strojové překlady). Množná čísla jdou přes `trPlural` (ar, he a sl mají i tvar `.two`). Rozhraní
+  se řídí jazykem bublin; když je v „Originálu“ nebo zařízení mluví jazykem mimo čtečku, jde podle
+  jazyka zařízení (`deviceUiLanguageProvider`), jinak česky. Příběhy a gamebooky jsou přeložené jen
+  do 12 jazyků čtečky. ar/he/ur zrcadlí rozhraní, komiksové panely zůstávají zleva doprava.
+  Česky zůstává jen UI Studia.
 
 `assets/packs/starter.zip` vyrábí `webtoon export-pack -starter …` (backend). Bez něj je v repu jen
 zástupný prázdný balíček (`version: 0`, žádné příběhy) — appka naběhne s prázdnou knihovnou a jakýkoli
@@ -175,7 +179,7 @@ lib/
                                shop_controller (stav obchodu + providery)
   profile/                     reader_profile (Děti/Dospělí, filtr publika), parental_gate
   gamebook/gamebook.dart       STUB: gamebooky (formát + čtečka později)
-  i18n/ui_strings.dart         texty obchodu/profilu/brány ve 12 jazycích
+  i18n/ui_strings*.dart        texty rozhraní ve 45 jazycích (12 čtečky + 33)
   packs/pack_bootstrap.dart    stav startu (načítání / rozbalování k/n / hotovo / chyba) pro splash
   models/                      world (+ kánon, frakce, reference, ip_adapter), campaign, episode,
                                author (style presety, návrh tagů, character sheet, stats); lenient JSON

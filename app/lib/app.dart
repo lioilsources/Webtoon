@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'author/create_screen.dart';
 import 'packs/pack_bootstrap.dart';
+import 'i18n/languages.dart';
 import 'i18n/ui_strings.dart';
 import 'profile/reader_profile.dart';
 import 'providers/providers.dart';
@@ -16,18 +18,30 @@ import 'screens/store_screen.dart';
 import 'screens/worlds_screen.dart';
 import 'theme.dart';
 
-class WebtoonApp extends StatelessWidget {
+class WebtoonApp extends ConsumerWidget {
   const WebtoonApp({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-    title: 'Toonfork',
-    debugShowCheckedModeBanner: false,
-    theme: buildTheme(Brightness.light),
-    darkTheme: buildTheme(Brightness.dark),
-    themeMode: ThemeMode.system,
-    home: const HomeScreen(),
-  );
+  Widget build(BuildContext context, WidgetRef ref) {
+    // The interface language drives the system widgets (back button, dialogs) and the text
+    // direction: ar / he / ur mirror, and every comic panel keeps its own left-to-right layout.
+    final lang = ref.watch(uiLanguageProvider);
+    return MaterialApp(
+      title: 'Toonfork',
+      debugShowCheckedModeBanner: false,
+      theme: buildTheme(Brightness.light),
+      darkTheme: buildTheme(Brightness.dark),
+      themeMode: ThemeMode.system,
+      locale: localeOfUi(lang),
+      supportedLocales: [for (final l in kUiLanguages) localeOfUi(l)],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      home: const HomeScreen(),
+    );
+  }
 }
 
 /// Two shapes, decided by [WebtoonApi.canEdit]:

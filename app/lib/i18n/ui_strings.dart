@@ -10,11 +10,15 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/language_provider.dart';
 import 'languages.dart';
+import 'ui_strings_more.dart';
 
-/// UI language: the reader language when it is one of ours, else Czech.
+/// UI language: the reader language when it is one of ours (the 12 reader languages); else
+/// the device language when the interface is translated into it ([kUiLanguages], the other 33);
+/// else Czech.
 final uiLanguageProvider = Provider<String>((ref) {
   final l = ref.watch(readerLanguageProvider);
-  return l != null && kReaderLanguages.contains(l) ? l : 'cs';
+  if (l != null && kReaderLanguages.contains(l)) return l;
+  return ref.watch(deviceUiLanguageProvider) ?? 'cs';
 });
 
 /// A message (an exception) that can say itself in any UI language; [tr] args and [trError]
@@ -38,16 +42,30 @@ String tr(String lang, String key, [Map<String, Object> args = const {}]) {
   return s;
 }
 
-/// `tr(lang, '$key.one' | '.few' | '.many', {n, ...args})` by the language's plural rule.
+/// `tr(lang, '$key.one' | '.few' | '.many' | '.two' | '.zero', {n, ...args})` by the language's
+/// plural rule. `.two` and `.zero` exist only in languages that have them (ar, he, sl); the
+/// others fall back to `.few` / `.many`.
 String trPlural(
   String lang,
   String key,
   int n, [
   Map<String, Object> args = const {},
 ]) {
-  const forms = ['one', 'few', 'many'];
-  return tr(lang, '$key.${forms[_pluralIndex(lang, n)]}', {'n': n, ...args});
+  final i = _pluralIndex(lang, n);
+  final order = switch (i) {
+    3 => const ['two', 'few', 'many'],
+    4 => const ['zero', 'many'],
+    _ => [_forms[i]],
+  };
+  final table = kUiStrings[lang];
+  final form = order.firstWhere(
+    (f) => table?.containsKey('$key.$f') ?? false,
+    orElse: () => order.last,
+  );
+  return tr(lang, '$key.$form', {'n': n, ...args});
 }
+
+const _forms = ['one', 'few', 'many', 'two', 'zero'];
 
 /// An error in [lang] when it knows how, else its (Czech) text.
 String trError(String lang, Object? e) =>
@@ -56,26 +74,60 @@ String trError(String lang, Object? e) =>
 /// "5 příběhů" / "5 stories" with the language's plural form.
 String storiesCount(String lang, int n) {
   final forms = _storyForms[lang] ?? _storyForms['en']!;
-  return '$n ${forms[_pluralIndex(lang, n)]}';
+  final i = _pluralIndex(lang, n);
+  return '$n ${forms[i < forms.length ? i : forms.length - 1]}';
 }
 
-/// 0 = one, 1 = few, 2 = many (Slavic); one/other elsewhere (index 0 / 2).
+/// Index into [_forms]: 0 = one, 1 = few, 2 = many / other, 3 = two, 4 = zero. The Slavic
+/// languages use one / few / many; ar, he and sl also use two (ar zero); one/other elsewhere.
 int _pluralIndex(String lang, int n) {
+  final d = n % 10, h = n % 100;
   switch (lang) {
     case 'cs':
+    case 'sk':
       return n == 1 ? 0 : (n >= 2 && n <= 4 ? 1 : 2);
     case 'pl':
       if (n == 1) return 0;
-      final d = n % 10, h = n % 100;
       return d >= 2 && d <= 4 && (h < 12 || h > 14) ? 1 : 2;
     case 'ru':
     case 'uk':
-      final d = n % 10, h = n % 100;
+    case 'hr':
       if (d == 1 && h != 11) return 0;
       return d >= 2 && d <= 4 && (h < 12 || h > 14) ? 1 : 2;
+    case 'sl':
+      if (h == 1) return 0;
+      if (h == 2) return 3;
+      return h == 3 || h == 4 ? 1 : 2;
+    case 'ro':
+      if (n == 1) return 0;
+      return n == 0 || (h >= 2 && h <= 19) ? 1 : 2;
+    case 'he':
+      if (n == 1) return 0;
+      return n == 2 ? 3 : 2;
+    case 'ar':
+      if (n == 0) return 4;
+      if (n == 1) return 0;
+      if (n == 2) return 3;
+      if (h >= 3 && h <= 10) return 1;
+      return 2;
     case 'fr':
     case 'pt-BR':
+    case 'pt-PT':
+    case 'hi':
+    case 'bn':
+    case 'gu':
+    case 'kn':
+    case 'pa':
       return n <= 1 ? 0 : 2;
+    case 'ja':
+    case 'ko':
+    case 'vi':
+    case 'id':
+    case 'ms':
+    case 'th':
+    case 'zh-Hans':
+    case 'zh-Hant':
+      return 2; // no plural forms: every key carries the same text
     default:
       return n == 1 ? 0 : 2;
   }
@@ -94,9 +146,43 @@ const _storyForms = {
   'vi': ['truyện', 'truyện', 'truyện'],
   'ru': ['история', 'истории', 'историй'],
   'uk': ['історія', 'історії', 'історій'],
+  'ar': ['قصة', 'قصص', 'قصة', 'قصتين', 'قصة'],
+  'bn': ['গল্প', 'গল্প', 'গল্প'],
+  'ca': ['història', 'històries', 'històries'],
+  'da': ['historie', 'historier', 'historier'],
+  'el': ['ιστορία', 'ιστορίες', 'ιστορίες'],
+  'es': ['historia', 'historias', 'historias'],
+  'fi': ['tarina', 'tarinaa', 'tarinaa'],
+  'gu': ['વાર્તા', 'વાર્તા', 'વાર્તા'],
+  'he': ['סיפור', 'סיפורים', 'סיפורים', 'סיפורים'],
+  'hi': ['कहानी', 'कहानी', 'कहानियाँ'],
+  'hr': ['priča', 'priče', 'priča'],
+  'hu': ['történet', 'történet', 'történet'],
+  'id': ['cerita', 'cerita', 'cerita'],
+  'kn': ['ಕಥೆ', 'ಕಥೆಗಳು', 'ಕಥೆಗಳು'],
+  'ml': ['കഥ', 'കഥകൾ', 'കഥകൾ'],
+  'mr': ['गोष्ट', 'गोष्टी', 'गोष्टी'],
+  'ms': ['cerita', 'cerita', 'cerita'],
+  'nb': ['historie', 'historier', 'historier'],
+  'nl': ['verhaal', 'verhalen', 'verhalen'],
+  'or': ['କାହାଣୀ', 'କାହାଣୀ', 'କାହାଣୀ'],
+  'pa': ['ਕਹਾਣੀ', 'ਕਹਾਣੀਆਂ', 'ਕਹਾਣੀਆਂ'],
+  'pt-PT': ['história', 'histórias', 'histórias'],
+  'ro': ['poveste', 'povești', 'de povești'],
+  'sk': ['príbeh', 'príbehy', 'príbehov'],
+  'sl': ['zgodba', 'zgodbe', 'zgodb', 'zgodbi'],
+  'sv': ['berättelse', 'berättelser', 'berättelser'],
+  'ta': ['கதை', 'கதைகள்', 'கதைகள்'],
+  'te': ['కథ', 'కథలు', 'కథలు'],
+  'th': ['เรื่อง', 'เรื่อง', 'เรื่อง'],
+  'tr': ['hikâye', 'hikâye', 'hikâye'],
+  'ur': ['کہانی', 'کہانیاں', 'کہانیاں'],
+  'zh-Hans': ['个故事', '个故事', '个故事'],
+  'zh-Hant': ['個故事', '個故事', '個故事'],
 };
 
 const Map<String, Map<String, String>> kUiStrings = {
+  ...kMoreUiStrings,
   'cs': {
     'tab.store': 'Obchod',
     'store.title': 'Obchod',
