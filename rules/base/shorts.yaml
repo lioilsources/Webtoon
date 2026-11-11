@@ -34,9 +34,14 @@ dub:
   lead: 0.25     # s from the panel's start to its first line
   gap: 0.3       # s between lines
   tail: 0.5      # s after the last line
+  asr_accept: 0.92   # Whisper similarity at which a take is good enough (no more takes)
+  asr_margin: 0.12   # s kept after Whisper's end of the last word (it ends words a little early)
   music_duck: 0.35   # music volume under a dubbed video (gulas_shorts --music auto ducks it further while someone speaks)
   voices:
-    - {match: olin, engine: xtts, voice: "custom:ol1n-mikes"}
+    # takes: XTTS garbles line ends or babbles on, so up to this many takes are checked by Whisper (WEBTOON_ASR_PYTHON
+    # = an interpreter with mlx-whisper) and the best is cut after its last word; without Whisper, tail_rate (s per
+    # character, a slow estimate) is the fallback: the first pause after that much speech ends the line
+    - {match: olin, engine: xtts, voice: "custom:ol1n-mikes", takes: 4, tail_rate: 0.07}
     - {match: jana, engine: piper, voice: "piper:cs_CZ-kasandra-medium"}
     - match: "*"
       engine: piper
