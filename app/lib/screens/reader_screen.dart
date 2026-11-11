@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show ScrollCacheExtent;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../export/export_sheet.dart';
 import '../i18n/languages.dart';
 import '../i18n/ui_strings.dart';
 import '../models/campaign.dart';
@@ -88,6 +89,19 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
               focus: ref
                   .watch(episodeProvider(st.episodes[st.focusIndex].id))
                   .episode,
+            ),
+          if (st.episodes.isNotEmpty && canExport(st.world))
+            IconButton(
+              key: const ValueKey('export-button'),
+              tooltip: tr(ui, 'export.button'),
+              icon: const Icon(Icons.movie_creation_outlined),
+              onPressed: () => showExportSheet(
+                context,
+                episodes: st.episodes,
+                focusId: st.episodes[st.focusIndex].id,
+                world: st.world,
+                lang: ref.read(readerLanguageProvider),
+              ),
             ),
           if (st.episodes.isNotEmpty)
             IconButton(
