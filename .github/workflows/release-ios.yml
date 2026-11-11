@@ -3,7 +3,8 @@
 # WEBTOON_API (the app/lib/config.dart default is localhost), the Flutter
 # version is not pinned to 3.41 (app needs Dart ^3.12), and on Android a
 # missing keystore secret fails the run and Firebase runs only once
-# FIREBASE_ANDROID_APP_ID is set.
+# FIREBASE_ANDROID_APP_ID is set. A manual run can switch on features still
+# behind flags (input `features`: video export + Your voice) for TestFlight.
 
 name: Release iOS
 
@@ -12,6 +13,11 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      features:
+        description: 'Turn on EXPORT_VIDEO + VOICE_CLONING (TestFlight test build)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -25,6 +31,7 @@ jobs:
       # in app/lib/config.dart. Repository variable, not a secret: it ships
       # inside the app anyway.
       WEBTOON_API: ${{ vars.WEBTOON_API }}
+      FEATURE_DEFINES: ${{ inputs.features && '--dart-define=EXPORT_VIDEO=true --dart-define=VOICE_CLONING=true' || '' }}
 
     steps:
       - name: Checkout
@@ -125,7 +132,7 @@ jobs:
 
       - name: Build Flutter iOS (no codesign)
         working-directory: app
-        run: flutter build ios --release --no-codesign --dart-define=WEBTOON_API=$WEBTOON_API
+        run: flutter build ios --release --no-codesign --dart-define=WEBTOON_API=$WEBTOON_API $FEATURE_DEFINES
 
       - name: Archive with manual signing
         env:
