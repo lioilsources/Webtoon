@@ -45,6 +45,8 @@ def main():
     ap.add_argument("--volume", type=float, default=0.8)
     ap.add_argument("--remux", action="store_true",
                     help="with --music auto: only put the track on the existing <out>/<name>-<model>.mp4, no rendering")
+    ap.add_argument("--dub", action="store_true", help="Czech voices + subtitles instead of bubbles (shorts.py --dub)")
+    ap.add_argument("--subtitles", action="store_true", help="subtitles instead of bubbles, silent (shorts.py --subtitles)")
     ap.add_argument("--api", default=os.environ.get("WEBTOON_API", "https://webtoon-api.ol1n.com"), help="backend (JODA via the tunnel)")
     ap.add_argument("--user", default="player", help="X-User-ID that owns the imported episodes")
     ap.add_argument("--out", default=str(ROOT / "out" / "shorts" / "gulas"))
@@ -60,6 +62,8 @@ def main():
         sys.exit(f"no track for {missing}: python3 m0/music.py --only {' '.join('gulas_' + m for m in missing)}")
     if args.remux and not auto:
         sys.exit("--remux needs --music auto")
+    # under the voices the music is quieter (rules/base/shorts.yaml dub.music_duck) and the voice track is kept
+    volume = yaml.safe_load((ROOT / "rules/base/shorts.yaml").read_text())["dub"]["music_duck"] if args.dub else args.volume
 
     for model in models:
         gid, name = GULAS[model]
@@ -67,7 +71,7 @@ def main():
         if args.remux:
             if not target.exists():
                 sys.exit(f"{target} missing: render it first (without --remux)")
-            add_music(target, ROOT / "data/music" / f"gulas_{model}.mp3", args.volume)
+            add_music(target, ROOT / "data/music" / f"gulas_{model}.mp3", volume, keep_voice=args.dub)
             print(f"{model}: {target} + music")
             continue
         nodes = list(yaml.safe_load((ROOT / "data/gamebooks" / gid / "graph.yaml").read_text())["nodes"])
@@ -82,6 +86,10 @@ def main():
                        "--api", args.api, "--user", args.user, "--out", str(part)]
                 if node != nodes[-1]:
                     cmd.append("--no-end")  # "The End" only after the last chapter
+                if args.dub:
+                    cmd.append("--dub")
+                elif args.subtitles:
+                    cmd.append("--subtitles")
                 if args.music and not auto:
                     cmd += ["--music", args.music, "--volume", str(args.volume)]
                 subprocess.run(cmd, check=True)
@@ -94,18 +102,21 @@ def main():
                 subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
                                 "-c", "copy", "-movflags", "+faststart", str(target)], check=True)
             if auto:
-                add_music(target, ROOT / "data/music" / f"gulas_{model}.mp3", args.volume)
+                add_music(target, ROOT / "data/music" / f"gulas_{model}.mp3", volume, keep_voice=args.dub)
             print(f"{model}: {target}")
 
 
-def add_music(video, track, volume):
-    """Replace the audio of video with track: looped to the full length, faded in and out; picture is copied."""
+def add_music(video, track, volume, keep_voice=False):
+    """Put track under video: looped to the full length, faded in and out; picture is copied. keep_voice mixes it
+    under the video's own audio (the dub) instead of replacing that."""
     total = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                                   str(video)], check=True, capture_output=True, text=True).stdout)
     tmp = video.with_suffix(".music.mp4")
+    music = f"volume={volume},afade=t=in:d=0.5,afade=t=out:st={max(total - 2, 0):.2f}:d=2"
+    audio = (["-filter_complex", f"[1:a]{music}[m];[0:a][m]amix=inputs=2:duration=first:normalize=0[a]", "-map", "[a]"]
+             if keep_voice else ["-map", "1:a", "-af", music])
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-stream_loop", "-1", "-i", str(track),
-                    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-                    "-af", f"volume={volume},afade=t=in:d=0.5,afade=t=out:st={max(total - 2, 0):.2f}:d=2",
+                    "-map", "0:v", *audio, "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
                     "-t", f"{total:.3f}", "-movflags", "+faststart", str(tmp)], check=True)
     tmp.replace(video)
 

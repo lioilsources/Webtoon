@@ -21,3 +21,25 @@ end:
   default: The End
   texts: {cs: Konec, en: The End, de: Ende, fr: Fin, it: Fine, pl: Koniec, pt-BR: Fim, ru: Конец, uk: Кінець, ja: おわり,
           ko: 끝, vi: Hết}
+
+# --subtitles: the bubbles' text as subtitles above the bottom bar instead of bubbles in the picture.
+subtitles: {size: 30, margin: 40, box_alpha: 150, colors: {speech: [255, 255, 255], narration: [255, 222, 130], machine: [150, 225, 255]}}
+
+# --dub: every bubble spoken by the TTS service (AiStack audio, Spark); first matching speaker_id prefix wins,
+# "*" = everyone else (machines, narration). engine: xtts | chatterbox | piper | kokoro (Spark) or say (macOS).
+# fx = ffmpeg audio filter on the line. Licences: xtts output is non-commercial (Coqui CPML),
+# piper jirka is unclear, piper kasandra needs the attribution "Hlas Kasandra © Ondřej Šimek, CC BY 4.0".
+dub:
+  url: http://192.168.88.66:8093
+  lead: 0.25     # s from the panel's start to its first line
+  gap: 0.3       # s between lines
+  tail: 0.5      # s after the last line
+  music_duck: 0.35   # music volume under a dubbed video (gulas_shorts --music auto ducks it further while someone speaks)
+  voices:
+    - {match: olin, engine: xtts, voice: "custom:ol1n-mikes"}
+    - {match: jana, engine: piper, voice: "piper:cs_CZ-kasandra-medium"}
+    - match: "*"
+      engine: piper
+      voice: "piper:cs_CZ-jirka-medium"
+      fx: "asetrate=48000*0.8,aresample=48000,atempo=1.25,afftfilt=real='hypot(re,im)*sin(0)':imag='hypot(re,im)*cos(0)':win_size=512:overlap=0.75,aecho=0.8:0.5:20:0.25,volume=1.5"
+  mute: ["U KN DLÍKU 2089"]   # neon sign with a dead letter: shown, never read out
