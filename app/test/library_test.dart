@@ -9,8 +9,10 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 import 'package:webtoon/api/local_webtoon_api.dart';
 import 'package:webtoon/app.dart';
+import 'package:webtoon/i18n/languages.dart';
 import 'package:webtoon/packs/pack_bootstrap.dart';
 import 'package:webtoon/packs/pack_store.dart';
+import 'package:webtoon/reader/panel_view.dart';
 import 'package:webtoon/providers/language_provider.dart';
 import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/screens/reader_screen.dart';
@@ -88,6 +90,87 @@ void main() {
       await tester.pumpWidget(const SizedBox());
     },
   );
+
+  testWidgets(
+    'device language outside the reader set: interface in it and mirrored, panels stay left to right',
+    (tester) async {
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            packStoreProvider.overrideWithValue(store),
+            apiProvider.overrideWithValue(LocalWebtoonApi(store)),
+            packBootstrapProvider.overrideWith(
+              (ref) => PackBootstrap.ready(store),
+            ),
+            deviceLanguageProvider.overrideWithValue(null),
+            deviceUiLanguageProvider.overrideWithValue('ar'),
+            ...shopOverrides(),
+          ],
+          child: const WebtoonApp(),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(find.text('المكتبة'), findsWidgets);
+      expect(find.text('الإعدادات'), findsOneWidget);
+      expect(find.text('Knihovna'), findsNothing);
+      final shell = tester.element(find.byKey(const ValueKey('library-list')));
+      expect(Directionality.of(shell), TextDirection.rtl);
+      expect(Localizations.localeOf(shell).languageCode, 'ar');
+
+      await tester.tap(find.byKey(const ValueKey('story-cp_jezek')));
+      await tester.pumpAndSettle();
+      final panel = find
+          .descendant(
+            of: find.byType(PanelView),
+            matching: find.byType(AspectRatio),
+          )
+          .first;
+      expect(
+        Directionality.of(tester.element(panel)),
+        TextDirection.ltr,
+        reason: 'comic panels keep their layout when the interface mirrors',
+      );
+      await tester.pumpWidget(const SizedBox());
+    },
+  );
+
+  for (final lang in kUiLanguages) {
+    testWidgets('library, store and settings lay out in $lang', (tester) async {
+      tester.view.physicalSize = const Size(1100, 2200);
+      tester.view.devicePixelRatio = 2;
+      addTearDown(tester.view.reset);
+      final reader = kReaderLanguages.contains(lang);
+      await tester.pumpWidget(
+        ProviderScope(
+          overrides: [
+            packStoreProvider.overrideWithValue(store),
+            apiProvider.overrideWithValue(LocalWebtoonApi(store)),
+            packBootstrapProvider.overrideWith(
+              (ref) => PackBootstrap.ready(store),
+            ),
+            deviceLanguageProvider.overrideWithValue(reader ? lang : null),
+            deviceUiLanguageProvider.overrideWithValue(reader ? null : lang),
+            ...shopOverrides(),
+          ],
+          child: const WebtoonApp(),
+        ),
+      );
+      await tester.pumpAndSettle();
+      expect(tester.takeException(), isNull, reason: '$lang library');
+      final tabs = find.byType(NavigationDestination);
+      for (final i in [1, 2]) {
+        await tester.tap(tabs.at(i));
+        await tester.pumpAndSettle();
+        expect(tester.takeException(), isNull, reason: '$lang tab $i');
+      }
+      final ctx = tester.element(find.byType(NavigationBar));
+      expect(
+        Directionality.of(ctx),
+        kRtlLanguages.contains(lang) ? TextDirection.rtl : TextDirection.ltr,
+      );
+      await tester.pumpWidget(const SizedBox());
+    });
+  }
 
   testWidgets('splash while the starter is extracting; retry on error', (
     tester,

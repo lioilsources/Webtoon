@@ -17,7 +17,7 @@ import urllib.request
 import rules
 from common import DATA, http
 
-AUDIO_URL = os.environ.get("WEBTOON_AUDIO", "http://192.168.88.66:8093")
+AUDIO_URL = os.environ.get("WEBTOON_AUDIO", "http://localhost:8093")
 LIB = DATA / "music"
 # Length, model and the moods: rules/base/music.yaml.
 R = rules.load("music")

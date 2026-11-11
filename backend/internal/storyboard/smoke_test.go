@@ -25,7 +25,7 @@ func TestSmokeRealLLM(t *testing.T) {
 	}
 	url := os.Getenv("WEBTOON_LLM")
 	if url == "" {
-		url = "http://192.168.88.66:8080/v1"
+		url = "http://localhost:8080/v1"
 	}
 	model := os.Getenv("WEBTOON_LLM_MODEL")
 	if model == "" {

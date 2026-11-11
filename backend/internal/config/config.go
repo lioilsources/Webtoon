@@ -74,10 +74,10 @@ func envDur(key string, fallback time.Duration) time.Duration {
 func Load() Config {
 	loadDotEnv(".env")
 	return Config{
-		LLMURL:         envOr("WEBTOON_LLM", "http://192.168.88.66:8080/v1"),
+		LLMURL:         envOr("WEBTOON_LLM", "http://localhost:8080/v1"),
 		LLMModel:       envOr("WEBTOON_LLM_MODEL", "openclaw-default"),
-		ComfyURL:       envOr("WEBTOON_COMFY", "http://192.168.88.66:8188"),
-		WD14URL:        envOr("WEBTOON_WD14", "http://192.168.88.66:8097"),
+		ComfyURL:       envOr("WEBTOON_COMFY", "http://localhost:8188"),
+		WD14URL:        envOr("WEBTOON_WD14", "http://localhost:8097"),
 		ImageAPI:       os.Getenv("WEBTOON_IMAGE_API"),
 		CFAccessID:     os.Getenv("WEBTOON_CF_ACCESS_ID"),
 		CFAccessSecret: os.Getenv("WEBTOON_CF_ACCESS_SECRET"),

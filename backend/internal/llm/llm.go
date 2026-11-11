@@ -28,7 +28,7 @@ type SchemaCaller interface {
 }
 
 type Client struct {
-	URL       string // base, e.g. http://192.168.88.66:8080/v1
+	URL       string // base, e.g. http://<spark-host>:8080/v1
 	Model     string
 	MaxTokens int
 	Retries   int // extra attempts when the reply is not valid JSON (prototype: 2)

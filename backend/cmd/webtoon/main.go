@@ -192,7 +192,7 @@ func runTrailer(args []string) error {
 // runMusic renders one track with the audio service (trailer.Music).
 func runMusic(args []string) error {
 	fs := flag.NewFlagSet("music", flag.ExitOnError)
-	base := fs.String("audio", envOr("WEBTOON_AUDIO", "http://192.168.88.66:8093"), "audio service")
+	base := fs.String("audio", envOr("WEBTOON_AUDIO", "http://localhost:8093"), "audio service")
 	prompt := fs.String("prompt", "", "style of the track")
 	secs := fs.Int("seconds", 70, "length (ACE-Step returns 9–19 % less)")
 	seed := fs.Int("seed", 4300, "seed")

@@ -41,15 +41,20 @@ class PanelView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: panel.aspect,
-      child: LayoutBuilder(
-        builder: (context, c) {
-          final size = Size(c.maxWidth, c.maxHeight);
-          if (panel.isFailed) return _failed(context, size);
-          if (!panel.isReady || image == null) return _pending(context, size);
-          return _ready(context, size);
-        },
+    // A panel is a picture with absolutely placed bubbles: it keeps its left-to-right layout
+    // when the interface mirrors for ar / he / ur.
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: AspectRatio(
+        aspectRatio: panel.aspect,
+        child: LayoutBuilder(
+          builder: (context, c) {
+            final size = Size(c.maxWidth, c.maxHeight);
+            if (panel.isFailed) return _failed(context, size);
+            if (!panel.isReady || image == null) return _pending(context, size);
+            return _ready(context, size);
+          },
+        ),
       ),
     );
   }

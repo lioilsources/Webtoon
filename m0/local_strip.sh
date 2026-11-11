@@ -22,8 +22,8 @@
 set -u
 cd "$(dirname "$0")/.."
 ROOT=$PWD
-LLM=${WEBTOON_LLM:-http://192.168.88.66:8080/v1}; MODEL=${WEBTOON_LLM_MODEL:-openclaw-default}
-COMFY=${WEBTOON_COMFY:-http://192.168.88.66:8188}
+LLM=${WEBTOON_LLM:-http://localhost:8080/v1}; MODEL=${WEBTOON_LLM_MODEL:-openclaw-default}
+COMFY=${WEBTOON_COMFY:-http://localhost:8188}
 # the CLI build; /tmp/claude-501/webtoon is also the running `webtoon serve`, never overwrite that one
 FACE_PY=${WEBTOON_FACE_PYTHON:-$HOME/.venvs/webtoon-faces/bin/python}
 if [ -x /tmp/claude-501/webtoon-cli ]; then BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon-cli}; else BIN=${WEBTOON_BIN:-/tmp/claude-501/webtoon}; fi

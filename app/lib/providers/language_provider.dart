@@ -42,6 +42,13 @@ final deviceLanguageProvider = Provider<String?>(
   (ref) => readerLanguageFor(PlatformDispatcher.instance.locale),
 );
 
+/// Device language for the interface when it is translated but is not a reader language
+/// (stories stay in the original then); null otherwise.
+final deviceUiLanguageProvider = Provider<String?>((ref) {
+  final l = uiLanguageFor(PlatformDispatcher.instance.locale);
+  return l == null || kReaderLanguages.contains(l) ? null : l;
+});
+
 /// The language the reader wants bubbles in; null = original. Each episode shows it only
 /// when it is fully translated (Episode.displayLanguage), otherwise its original.
 final readerLanguageProvider =

@@ -44,7 +44,7 @@ jiného žádné osobní údaje nesbíráme.
 ## Vaše práva
 
 Protože o vás žádné osobní údaje nezpracováváme, nemáme co zpřístupnit, opravit ani vymazat. Data uložená v zařízení máte
-plně pod kontrolou. S dotazy se obracejte na oldrich.vorechovsky.jr@gmail.com. Máte také právo podat stížnost u dozorového úřadu (v Česku
+plně pod kontrolou. S dotazy se obracejte na business@olin.now. Máte také právo podat stížnost u dozorového úřadu (v Česku
 Úřad pro ochranu osobních údajů, www.uoou.cz).
 
 ## Změny
@@ -53,7 +53,7 @@ Pokud se tyto zásady změní, zveřejníme novou verzi na této stránce s nov�
 
 ## Kontakt
 
-ol1n, oldrich.vorechovsky.jr@gmail.com
+ol1n, business@olin.now
 
 ---
 
@@ -103,7 +103,7 @@ no personal data from children or from anyone else.
 ## Your rights
 
 Because we process no personal data about you, there is nothing for us to access, correct or delete. You fully control
-the data stored on your device. For questions, contact oldrich.vorechovsky.jr@gmail.com. You may also lodge a complaint with a data
+the data stored on your device. For questions, contact business@olin.now. You may also lodge a complaint with a data
 protection authority (in the Czech Republic: Úřad pro ochranu osobních údajů, www.uoou.cz).
 
 ## Changes
@@ -112,4 +112,4 @@ If this policy changes, we will publish the new version on this page with a new 
 
 ## Contact
 
-ol1n, oldrich.vorechovsky.jr@gmail.com
+ol1n, business@olin.now

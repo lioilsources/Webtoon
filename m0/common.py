@@ -16,10 +16,10 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 OUT = ROOT / "out"
 
-LLM_URL = os.environ.get("WEBTOON_LLM", "http://192.168.88.66:8080/v1")
+LLM_URL = os.environ.get("WEBTOON_LLM", "http://localhost:8080/v1")
 LLM_MODEL = os.environ.get("WEBTOON_LLM_MODEL", "openclaw-default")
-COMFY_URL = os.environ.get("WEBTOON_COMFY", "http://192.168.88.66:8188")
-WD14_URL = os.environ.get("WEBTOON_WD14", "http://192.168.88.66:8097")
+COMFY_URL = os.environ.get("WEBTOON_COMFY", "http://localhost:8188")
+WD14_URL = os.environ.get("WEBTOON_WD14", "http://localhost:8097")
 
 
 def load_json(path):

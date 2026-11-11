@@ -87,13 +87,24 @@ FakeWebtoonApi fakeApi() => FakeWebtoonApi(
 
 void main() {
   group('UI strings', () {
-    test('every UI language has exactly the Czech key set', () {
+    test('every UI language has the Czech key set', () {
       final cs = kUiStrings['cs']!.keys.toSet();
-      expect(kUiStrings.keys.toSet(), {...kReaderLanguages, 'cs'});
+      expect(kUiStrings.keys.toSet(), kUiLanguages.toSet());
+      expect(kUiLanguages.length, 45);
+      expect(kUiLanguages, containsAll(kReaderLanguages));
       for (final lang in kUiStrings.keys) {
         final keys = kUiStrings[lang]!.keys.toSet();
         expect(cs.difference(keys), isEmpty, reason: '$lang is missing keys');
-        expect(keys.difference(cs), isEmpty, reason: '$lang has extra keys');
+        // only the extra plural forms of ar / he / sl may go beyond the Czech set
+        final extra = keys.difference(cs);
+        expect(
+          extra.every((k) => k.endsWith('.two') || k.endsWith('.zero')),
+          isTrue,
+          reason: '$lang has extra keys: $extra',
+        );
+        if (extra.isNotEmpty) {
+          expect({'ar', 'he', 'sl'}, contains(lang), reason: '$lang extras');
+        }
         for (final k in keys) {
           expect(kUiStrings[lang]![k], isNotEmpty, reason: '$lang $k');
         }
@@ -106,9 +117,76 @@ void main() {
           ph.allMatches(s).map((m) => m.group(1)!).toSet();
       kUiStrings['cs']!.forEach((k, v) {
         for (final lang in kUiStrings.keys) {
-          expect(names(kUiStrings[lang]![k]!), names(v), reason: '$lang $k');
+          final got = names(kUiStrings[lang]![k]!);
+          if (k.endsWith('.one')) {
+            // "one" may spell the number out ("حلقة واحدة")
+            expect(names(v), containsAll(got), reason: '$lang $k');
+          } else {
+            expect(got, names(v), reason: '$lang $k');
+          }
         }
       });
+    });
+
+    test('every plural form of every language mentions the number', () {
+      for (final lang in kUiLanguages) {
+        for (final n in [0, 1, 2, 3, 5, 11, 12, 21, 22, 100, 101, 102]) {
+          final s = trPlural(lang, 'library.episodes', n);
+          expect(s, isNotEmpty, reason: '$lang $n');
+          expect(s, isNot(contains('{')), reason: '$lang $n');
+          if (n >= 3 && n != 100 && n != 101 && n != 102 || lang == 'en') {
+            expect(s, contains('$n'), reason: '$lang $n');
+          }
+        }
+      }
+    });
+
+    test('plural rules of the new languages', () {
+      expect(trPlural('ar', 'library.episodes', 0), '0 حلقة');
+      expect(trPlural('ar', 'library.episodes', 1), 'حلقة واحدة');
+      expect(trPlural('ar', 'library.episodes', 2), 'حلقتان');
+      expect(trPlural('ar', 'library.episodes', 7), '7 حلقات');
+      expect(trPlural('ar', 'library.episodes', 25), '25 حلقة');
+      expect(trPlural('he', 'library.episodes', 1), 'פרק אחד');
+      expect(trPlural('he', 'library.episodes', 2), 'שני פרקים');
+      expect(trPlural('he', 'library.episodes', 5), '5 פרקים');
+      expect(trPlural('sl', 'library.episodes', 101), '101 epizoda');
+      expect(trPlural('sl', 'library.episodes', 102), '102 epizodi');
+      expect(trPlural('sl', 'library.episodes', 3), '3 epizode');
+      expect(trPlural('sl', 'library.episodes', 5), '5 epizod');
+      expect(trPlural('hr', 'library.episodes', 22), '22 epizode');
+      expect(trPlural('hr', 'library.episodes', 11), '11 epizoda');
+      expect(trPlural('sk', 'library.episodes', 4), '4 diely');
+      expect(trPlural('ro', 'library.episodes', 5), '5 episoade');
+      expect(trPlural('ro', 'library.episodes', 25), '25 de episoade');
+      expect(trPlural('fr', 'library.episodes', 0), '0 épisode');
+      expect(trPlural('hi', 'library.episodes', 0), '0 एपिसोड');
+      expect(trPlural('ja', 'library.episodes', 5), '全5話');
+      expect(storiesCount('ar', 3), '3 قصص');
+      expect(storiesCount('sl', 2), '2 zgodbi');
+      expect(storiesCount('zh-Hans', 4), '4 个故事');
+    });
+
+    test('device locale → interface language', () {
+      expect(uiLanguageFor(const Locale('ar', 'EG')), 'ar');
+      expect(uiLanguageFor(const Locale('pt', 'PT')), 'pt-PT');
+      expect(uiLanguageFor(const Locale('pt', 'BR')), 'pt-BR');
+      expect(uiLanguageFor(const Locale('no')), 'nb');
+      expect(uiLanguageFor(const Locale('iw')), 'he');
+      expect(uiLanguageFor(const Locale('in')), 'id');
+      expect(uiLanguageFor(const Locale('zh', 'TW')), 'zh-Hant');
+      expect(
+        uiLanguageFor(
+          const Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hant'),
+        ),
+        'zh-Hant',
+      );
+      expect(uiLanguageFor(const Locale('zh', 'CN')), 'zh-Hans');
+      expect(uiLanguageFor(const Locale('sw')), isNull);
+      expect(localeOfUi('zh-Hant').scriptCode, 'Hant');
+      expect(localeOfUi('pt-PT').countryCode, 'PT');
+      expect(localeOfUi('ar').languageCode, 'ar');
+      expect(kRtlLanguages, {'ar', 'he', 'ur'});
     });
 
     test('plurals and localized errors', () {

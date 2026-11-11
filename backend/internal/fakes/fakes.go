@@ -1,7 +1,7 @@
 // Package fakes provides httptest stand-ins for the Spark services: an OpenAI-compatible
 // LLM, ComfyUI (/prompt, /history, /view, /upload/image, /system_stats), the WD14 tagger
 // and the AiStack Image API (/v1/image/*).
-// Tests never talk to the real 192.168.88.66 hosts.
+// Tests never talk to the real GPU hosts.
 package fakes
 
 import (

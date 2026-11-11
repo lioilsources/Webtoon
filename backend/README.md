@@ -80,10 +80,10 @@ příběhů/dílů/panelů/smyček, bajty a sha256, na stderr poznámky o zkrác
 
 | proměnná | výchozí | |
 |---|---|---|
-| `WEBTOON_LLM` | `http://192.168.88.66:8080/v1` | OpenAI-kompatibilní endpoint (LiteLLM/vLLM) |
+| `WEBTOON_LLM` | `http://localhost:8080/v1` (na SPARKu `http://<spark-host>:8080/v1`) | OpenAI-kompatibilní endpoint (LiteLLM/vLLM) |
 | `WEBTOON_LLM_MODEL` | `openclaw-default` | |
-| `WEBTOON_COMFY` | `http://192.168.88.66:8188` | ComfyUI. Služba ho **nikdy nespouští**, jen se ptá `/system_stats` |
-| `WEBTOON_WD14` | `http://192.168.88.66:8097` | WD14 tagger (`POST /tag`) |
+| `WEBTOON_COMFY` | `http://localhost:8188` | ComfyUI. Služba ho **nikdy nespouští**, jen se ptá `/system_stats` |
+| `WEBTOON_WD14` | `http://localhost:8097` | WD14 tagger (`POST /tag`) |
 | `WEBTOON_IMAGE_API` | – | AiStack Image API (`https://llm.ol1n.com`); nastavené = místo `WEBTOON_COMFY` a `WEBTOON_WD14` |
 | `WEBTOON_CF_ACCESS_ID`, `WEBTOON_CF_ACCESS_SECRET` | – | service token Cloudflare Access pro Image API i LLM za `llm.ol1n.com` |
 | `WEBTOON_LANGS` | 12 jazyků Lexify | cílové jazyky překladu bublin (`en,de,…`, `none` = vypnuto); zdrojový jazyk světa se přeskočí |
