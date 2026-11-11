@@ -204,6 +204,7 @@ def main():
     ap.add_argument("--api", default=os.environ.get("WEBTOON_API", "https://webtoon-api.ol1n.com"), help="backend; default JODA via the tunnel")
     ap.add_argument("--user", default="player", help="X-User-ID of the episode's owner")
     ap.add_argument("--out", default=None)
+    ap.add_argument("--no-end", action="store_true", help="no end card (a chapter that is followed by another one)")
     args = ap.parse_args()
 
     ep = json.load(api_get(args.api, f"/episodes/{args.episode}", args.user))
@@ -221,8 +222,9 @@ def main():
     last = Image.open(media_file(panels[-1]["image_url"], args.api)).convert("RGB")
     title = text_of(ep, "title", args.lang) or ep["title"]
     C = R["cards"]
-    segs = [card_segment(title, first, C["title"]["duration"])] + [panel_segment(p, args.api, args.lang) for p in panels] \
-        + [card_segment(END.get(args.lang, R["end"]["default"]), last, C["end"]["duration"], size=C["end"]["size"])]
+    segs = [card_segment(title, first, C["title"]["duration"])] + [panel_segment(p, args.api, args.lang) for p in panels]
+    if not args.no_end:
+        segs.append(card_segment(END.get(args.lang, R["end"]["default"]), last, C["end"]["duration"], size=C["end"]["size"]))
 
     out = Path(args.out or OUT / "shorts" / f"{world.removeprefix('w_')}-{slug(ep['title'])}_{args.lang}.mp4")
     out.parent.mkdir(parents=True, exist_ok=True)

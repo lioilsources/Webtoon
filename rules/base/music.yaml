@@ -1,9 +1,8 @@
 # Music library rules of m0/music.py (AiStack audio service, ACE-Step, container audio-music) for shorts.py.
-# Director's rules: only in the comfy window (audio is down while the big LLMs run), one job at a time, never start
-# the container yourself; if the model is not available, ask Director.
+# On demand: the model is used whenever AiStack reports it available (it fits next to the running profile); one job
+# at a time, never start the container yourself; if it is not available, ask Director to bring it up.
 
 length: 80   # s: ACE-Step returns 9–19 % short of this; the longest short is ~65 s, and shorts.py loops anyway
-window: {start: "07:05", end: "12:45"}   # HH:MM, inclusive; quoted (YAML would read 07:05 as a number)
 model: acestep-v15-turbo
 prompt_suffix: ", instrumental, no vocals"
 seed_base: 4200   # track k gets seed_base + k: a rerun redraws the same track
@@ -25,3 +24,10 @@ moods:
   rnb_1: smooth r&b instrumental, soft keys, slow groove, late night
   world_1: afrobeat instrumental, soft kalimba, warm groove, joyful
   world_2: indian sitar and soft tabla, romantic, gentle, modern chill
+  # Kulový blesk guláš shorts (tools/gulas_shorts.py --music auto): one track per LLM that wrote the gamebook.
+  gulas_grok: driving trance, metallic percussion, industrial clangs, deep space ambience, cosmic noise, pulsing synths
+  gulas_lechat: smoky jazz club, tenor saxophone lead, upright bass, brushed drums, piano comping
+  gulas_chatgpt: slow electric blues, bending guitar, harmonica, shuffle drums, walking bass
+  gulas_deepseek: traditional chinese music, guzheng and erhu, bamboo flute, pentatonic, cinematic
+  gulas_kimi: baroque organ fugue in the style of bach, pipe organ, cathedral reverb, majestic counterpoint
+  gulas_claude: upbeat country, banjo picking, fiddle, acoustic guitar, stomping rhythm
