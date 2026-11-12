@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.0+2
+version: 1.0.1+2
 
 environment:
   sdk: ^3.12.2
@@ -45,6 +45,13 @@ dependencies:
   crypto: ^3.0.7
   path: ^1.9.1
   in_app_purchase: ^3.3.1
+  share_plus: ^13.3.1
+  # Your voice (lib/voice): recording and the device token, as in Hajánek
+  record: ^7.1.2
+  flutter_secure_storage: ^11.2.0
+  # Native half of the video export (system TTS, audio decode, mp4 encoder): packages/toonfork_export
+  toonfork_export:
+    path: packages/toonfork_export
 
 dev_dependencies:
   flutter_test:
@@ -78,6 +85,8 @@ flutter:
     - assets/packs/starter.zip
     # Icon picker thumbnails (Nastavení → Ikona aplikace), from tools/app_icons.py
     - assets/icon/thumbs/
+    # Music under exported videos (lib/export/video_exporter.dart kExportMusic), ACE-Step via m0/music.py
+    - assets/music/
 
   # Bubble fonts (OFL, from cute_kid_fonts; copies of ../assets/fonts, licences alongside).
   fonts:

@@ -10,6 +10,8 @@ import '../providers/providers.dart';
 import '../settings/app_icon.dart';
 import '../shop/shop_controller.dart';
 import '../theme.dart';
+import '../voice/voice_api.dart' show kVoiceCloning;
+import '../voice/voice_screen.dart';
 import '../widgets/common.dart';
 import 'profile_chooser_screen.dart';
 
@@ -63,6 +65,23 @@ class SettingsScreen extends ConsumerWidget {
           const SizedBox(height: 28),
           const AppIconPicker(key: ValueKey('settings-app-icon')),
           const SizedBox(height: 28),
+          // Your voice (IAP): adults only, never in the kids profile
+          if (kVoiceCloning && !kids) ...[
+            ComicCard(
+              child: ListTile(
+                key: const ValueKey('settings-voice'),
+                contentPadding: EdgeInsets.zero,
+                leading: const Icon(Icons.record_voice_over_rounded),
+                title: Text(tr(ui, 'voice.title'), style: ComicFonts.ui(800)),
+                subtitle: Text(tr(ui, 'voice.settingsHint')),
+                trailing: const Icon(Icons.chevron_right_rounded),
+                onTap: () => Navigator.of(context).push(
+                  MaterialPageRoute<void>(builder: (_) => const VoiceScreen()),
+                ),
+              ),
+            ),
+            const SizedBox(height: 28),
+          ],
           Text(
             tr(ui, 'settings.storage'),
             style: Theme.of(context).textTheme.titleLarge,

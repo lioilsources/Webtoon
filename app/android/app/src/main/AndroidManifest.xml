@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Your voice (lib/voice): recorded only on the player's request. RECORD_AUDIO implies a microphone;
+         required="false" keeps the app on devices without one (TV, some tablets). -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
     <!-- usesCleartextTraffic: the dev backend runs on plain http (WEBTOON_API). -->
     <application
         android:label="Toonfork"

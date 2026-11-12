@@ -1,0 +1,23 @@
+name: toonfork_export
+description: "Toonfork video export: system TTS, audio decoding and an mp4 encoder (AVFoundation / MediaCodec)."
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ^3.9.0
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.ol1n.toonfork_export
+        pluginClass: ToonforkExportPlugin
+      ios:
+        pluginClass: ToonforkExportPlugin
+      macos:
+        pluginClass: ToonforkExportPlugin
