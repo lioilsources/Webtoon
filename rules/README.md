@@ -173,6 +173,7 @@ Free worlds are refused by `base/pack.yaml forbidden_world_prefix` (shared with 
 | model | acestep-v15-turbo must be available | never start audio-music yourself; ask Director |
 | prompt_suffix, seed_base | ", instrumental, no vocals", seed 4200 + k | instrumental only; stable reruns |
 | moods | 15 mood prompts | shorts.py picks one per world (a series keeps its sound) |
+| gamebooks | gamebook id → {seed, prompt} | its own track, data/music/trailers/<id>.mp3, outside the moods pool |
 
 ## base/pipeline.yaml — local_strip.sh
 

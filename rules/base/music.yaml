@@ -24,10 +24,16 @@ moods:
   rnb_1: smooth r&b instrumental, soft keys, slow groove, late night
   world_1: afrobeat instrumental, soft kalimba, warm groove, joyful
   world_2: indian sitar and soft tabla, romantic, gentle, modern chill
-  # Kulový blesk guláš shorts (tools/gulas_shorts.py --music auto): one track per LLM that wrote the gamebook.
-  gulas_grok: driving trance, metallic percussion, industrial clangs, deep space ambience, cosmic noise, pulsing synths
-  gulas_lechat: smoky jazz club, tenor saxophone lead, upright bass, brushed drums, piano comping
-  gulas_chatgpt: slow electric blues, bending guitar, harmonica, shuffle drums, walking bass
-  gulas_deepseek: traditional chinese music, guzheng and erhu, bamboo flute, pentatonic, cinematic
-  gulas_kimi: baroque organ fugue in the style of bach, pipe organ, cathedral reverb, majestic counterpoint
-  gulas_claude: upbeat country, banjo picking, fiddle, acoustic guitar, stomping rhythm
+
+# One track per gamebook: its trailer (webtoon trailer) and its full short (tools/gulas_shorts.py --music auto) share it.
+# → data/music/trailers/<gamebook id>.mp3, outside the moods pool above, so shorts.py --music data/music never picks
+# a book's own track for another world. An existing file is kept (louka, kovovenebe, mlceni came from webtoon music).
+# seed: fixed per book (these were moods 15–20 before, seed_base + k), so a rerun redraws the same track.
+gamebooks:
+  # Kulový blesk guláš: one sound per LLM that wrote the gamebook
+  gulasspagety: {seed: 4215, prompt: "driving trance, metallic percussion, industrial clangs, deep space ambience, cosmic noise, pulsing synths"}   # grok
+  gulasknedlik: {seed: 4216, prompt: "smoky jazz club, tenor saxophone lead, upright bass, brushed drums, piano comping"}   # le chat
+  poslednislovo: {seed: 4217, prompt: "slow electric blues, bending guitar, harmonica, shuffle drums, walking bass"}   # chatgpt
+  poslednislovopavilon: {seed: 4218, prompt: "traditional chinese music, guzheng and erhu, bamboo flute, pentatonic, cinematic"}   # deepseek
+  knedlikvzakopu: {seed: 4219, prompt: "baroque organ fugue in the style of bach, pipe organ, cathedral reverb, majestic counterpoint"}   # kimi
+  uknedliku: {seed: 4220, prompt: "upbeat country, banjo picking, fiddle, acoustic guitar, stomping rhythm"}   # claude
