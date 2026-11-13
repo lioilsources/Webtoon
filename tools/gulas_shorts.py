@@ -40,6 +40,7 @@ BOOKS = {
     "kimi": ("knedlikvzakopu", "s-knedlikem-v-zakopu-kimi"),
     "louka": ("louka", "rozkvetla-louka"),
     "kovovenebe": ("kovovenebe", "kovove-nebe"),
+    "archion": ("archion", "archion"),
 }
 GULAS = ["chatgpt", "grok", "deepseek", "claude", "lechat", "kimi"]
 CROSSFADE = 3.0  # s between two plays of a looped track
