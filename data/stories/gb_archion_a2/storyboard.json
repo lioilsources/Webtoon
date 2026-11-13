@@ -1,0 +1,339 @@
+{
+  "title": "Pozdní léto: Peníze",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_2",
+      "characters": [],
+      "visual_tags": [
+        "yellowing leaves",
+        "a few leaves falling",
+        "low evening sun",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "yellow leaves slowly falling, warm low sun flickering through the branches"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "standing at the garden table",
+        "holding a smartphone",
+        "focused",
+        "looking at the phone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dcera_5"
+        }
+      ],
+      "visual_tags": [
+        "tugging at someone's trouser leg",
+        "looking up",
+        "pouting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dcera_5"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking up",
+        "pouting",
+        "tugging at a trouser leg"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_5",
+          "text": "Tati, já mám hlad!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the smartphone",
+        "focused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jak to máš s tím příjmem? Koukám, že mi pořád dlužíš. Teď by se mi něco hodilo zpátky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "empty energy drink cans",
+        "frowning at a monitor"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "talking to himself",
+        "rubbing his face",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Zase peníze. Nemám ani na nájem. Všechno jsem vrazil do Nebulonu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing",
+        "defensive expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tolik ti určitě nedlužím, spíš míň. Všechno šlo do Nebulonu a teď ani nevím, co vlastně chci dělat. Příjem nemám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "glancing down at someone",
+        "apologetic smile",
+        "phone in hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Za chvíli vám uvařím, zlatíčka, jen tohle vyřídím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the smartphone",
+        "resolute expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "O penězích na release Nebulonu, který se nikdy neuskutečnil, raději ani mluvit nebudu.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Beru to tak, že mi za ně dáváš svolení vydat vlastní projekt inspirovaný Nebulonem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "slamming fist on the desk",
+        "energy drink cans jumping",
+        "neon light flickering"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "fist hitting the desk, cans rattling, neon light stuttering"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "furious",
+        "shouting at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To teda ne! Kvůli tobě jsem to celý přepisoval. Ten koncept má cenu, ne tvoje rychlovky.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing furiously",
+        "contemptuous expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Chceš Nebulon vydat po svým? Můžeme se domluvit. Ale takhle ne. Kámo, fuck off!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "slight smile",
+        "typing on the smartphone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Teď sis to poprvé trefil! Kámo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a slight calm smile, falling leaves behind him"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_2",
+      "characters": [],
+      "visual_tags": [
+        "harsh hard light",
+        "sharp shadows",
+        "empty desk chair",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

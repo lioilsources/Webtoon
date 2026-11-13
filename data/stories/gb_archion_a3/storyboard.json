@@ -1,0 +1,299 @@
+{
+  "title": "Podzim: Zákopová válka",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "almost bare trees",
+        "brown leaves blowing",
+        "grey sky",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "brown leaves blown across the grass by a cold wind, bare branches swaying"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dum_3",
+      "characters": [],
+      "visual_tags": [
+        "warm lit window at dusk",
+        "shadows of children behind the curtain",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "gesturing wildly at the monitor",
+        "agitated",
+        "red light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing dramatically",
+        "wide eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Asi to pořádně nechápeš. Nebulon a celý ten herní koncept jsou moje. Můžu to doložit. Nemáš na něj nárok.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "mocking laugh",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nabídl jsem ti dohodu a tys ji odmávl. Nevěřím vlastním očím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting at the garden table",
+        "typing on a laptop",
+        "cold wind in his hair",
+        "cold expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi peníze. Nesplnil jsi podmínky mojí půjčky. Dlužíš mi server… Dlužíš mi omluvu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "firm",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Začněme penězi: do Vánoc chci vrátit první část. Projekt přejmenuju na Archion. Nemáš na něm žádný podíl, jenom hejty.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "red warning light",
+        "red lighting",
+        "rage",
+        "wide eyes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "red warning light pulsing on his face, heavy breathing"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "shouting",
+        "red light on his face"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tohle je krádež! Krádež mýho snu! Jak to uvidím v obchodech, jdu s tím za každým, kdo mě vyslechne.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "jabbing a finger at the monitor",
+        "furious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "A teď tě blokuju!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "breathing in deeply",
+        "looking towards the house",
+        "from side",
+        "cold wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "he breathes in slowly, wind moving his hair and jacket"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "calm",
+        "tired expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak psychopat. A v tomhle vím přesně, o čem mluvím. Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen",
+        "red warning icon",
+        "no readable text",
+        "dry leaves on the table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

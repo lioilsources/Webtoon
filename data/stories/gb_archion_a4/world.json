@@ -1,0 +1,111 @@
+{
+  "id": "w_gb_archion_a4",
+  "title": "Archion: Konec jednoho přátelství — Zima: Konec a ticho",
+  "synopsis": "Jeden podzim dvou kamarádů: snílek v neonovém bunkru a táta na zahradě plné dětí. Spor o peníze a o hru, kterou chtěli udělat spolu, skončí tichem.",
+  "tone": "hořký, ironický, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: bunkr a zahrada jsou dvě poloviny jeviště.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; Ol1n zavře notebook a jde za dětmi, Kosmovi zhasne poslední pixel."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bunkr_4",
+      "l_okno_4",
+      "l_zahrada_4"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech loner aged 40 with messy shoulder-length dark hair, stubble, dark circles under restless eyes, pale from monitor light",
+      "base": "adult, mature male, messy shoulder-length dark hair, stubble, dark circles under the eyes, pale skin",
+      "outfits": {
+        "default": "faded black hoodie with the hood down, worn headphones around the neck"
+      },
+      "photo": "a gaunt Czech loner aged 40 with messy shoulder-length dark hair, stubble, dark circles under restless eyes, pale from monitor light",
+      "tag_prompt": "adult, mature male, messy shoulder-length dark hair, stubble, dark circles under the eyes, pale skin, faded black hoodie with the hood down, worn headphones around the neck",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_zima",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes, in a warm knitted sweater indoors",
+      "base": "adult, mature male, short dark brown hair with grey streaks, short beard, brown eyes",
+      "outfits": {
+        "default": "thick grey knitted sweater"
+      },
+      "photo": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+      "tag_prompt": "adult, mature male, short dark brown hair with grey streaks, short beard, brown eyes, thick grey knitted sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojcata_zima",
+      "name": "Dvojčata",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "2girls",
+      "human": true,
+      "description": "two identical Czech twin girls aged 5 with blonde pigtails under knitted hats, rosy cheeks and laughing blue eyes, in winter clothes",
+      "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "matching pink and blue winter snowsuits, knitted hats, mittens, snow boots"
+      },
+      "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue winter snowsuits, knitted hats, mittens, snow boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bunkr_4",
+      "name": "Bunkr – 4. dějství",
+      "description": "Hlavní neony zhasnuté, jen tlumené nouzové světlo.",
+      "tag_prompt": "indoors, dark underground bunker room, neon tubes switched off, dim green emergency light, switched-off monitors, silent computers, dust, almost total darkness",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_4",
+      "name": "Zahrada – 4. dějství",
+      "description": "První sníh na zahradě, sněhulák.",
+      "tag_prompt": "outdoors, family garden under the first snow, white snow on the grass and branches, a half-built snowman, soft winter daylight, cosy house in the background",
+      "mood": ""
+    },
+    {
+      "id": "l_okno_4",
+      "name": "Okno – 4. dějství",
+      "description": "Teplý pokoj u okna, venku sníh.",
+      "tag_prompt": "indoors, warm cosy living room by a window, snowy garden outside, laptop on a table, soft warm lamp light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion",
+    "node": "a4"
+  }
+}

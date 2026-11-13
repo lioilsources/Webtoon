@@ -1,0 +1,316 @@
+{
+  "title": "Zima: Konec a ticho",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "first snow",
+        "snowy garden",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snowflakes slowly falling over the garden"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "dvojcata_zima"
+        }
+      ],
+      "visual_tags": [
+        "building a snowman",
+        "laughing",
+        "snow on the ground"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the girls patting snow onto the snowman, snowflakes falling"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "standing by the window",
+        "holding a steaming mug of tea",
+        "looking down at a laptop"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "steam rising from the mug, snow falling outside the window"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "back turned",
+        "dark monitor",
+        "from behind",
+        "dim emergency light",
+        "silence"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [],
+      "visual_tags": [
+        "hands typing on a laptop",
+        "mug of tea beside it",
+        "snowy window light",
+        "no readable text"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "quiet",
+        "relieved"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Kámo, chybět mi nebudeš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "pained expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Když jsem byl ve svém životě nejvíc v hajzlu a hledal u tebe útočiště, vyhodils mě po dvou dnech jak největšího fakana. To se nezapomíná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "disgusted expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "To, co jedeš teď, z toho se mi chce blít!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Nikdys mě nenechal udělat ti nabídku na 50/50 revenue split, kterou jsem vždy považoval za samozřejmost. (Ta nabídka pořád platí.)",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "final",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "R.I.P.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "mug of tea",
+        "snowy window light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop lid slowly closing, steam from the mug"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "dvojcata_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "waving",
+        "laughing",
+        "snow on their hats",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojcata_zima",
+          "text": "Tati, pojď ven, tati!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "warm smile",
+        "turning towards the door"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Už jdu, holky!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "walking away towards a doorway",
+        "from behind",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_4",
+      "characters": [],
+      "visual_tags": [
+        "dark monitor",
+        "tiny blue light",
+        "total darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "one tiny blue light on the dark monitor flickers and goes out"
+    }
+  ]
+}

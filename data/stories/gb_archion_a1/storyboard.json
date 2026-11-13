@@ -1,0 +1,381 @@
+{
+  "title": "Jaro: Budu ti chybět",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bunkr_1",
+      "characters": [],
+      "visual_tags": [
+        "flickering neon tubes",
+        "stacks of graphics cards",
+        "cooling fans",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes flickering, cooling fans spinning, monitor light pulsing"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "blossoming fruit trees",
+        "bees",
+        "sunny spring garden",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blossom petals drifting, bees buzzing between the flowers, leaves swaying"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "typing furiously on a keyboard",
+        "hunched over",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "his fingers hammering the keyboard, monitor light flickering on his face"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a wooden garden table",
+        "laptop on his lap",
+        "sunlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "crouching in the grass",
+        "ladybug",
+        "leaf",
+        "looking down",
+        "pointing",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "ladybug",
+        "pointing",
+        "excited",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojcata_5",
+          "text": "Tati! Podívej, beruška! Na listu!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking up from the laptop",
+        "warm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Hned jsem u vás, holky, vydržte vteřinu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "hands on a laptop keyboard",
+        "glowing chat window on the screen",
+        "no readable text",
+        "garden table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "calm expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Blb seš ty. Dál to „rozebírat“ nemusíš. Nestojím o to.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "standing up from the chair",
+        "slamming fist on the desk",
+        "furious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "he slams the desk, cans and cables shaking, neon flicker"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "shouting at the monitor",
+        "furious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "On vůbec nechápe, o co jde! Vleze mi do práce, něco tam přilepí a ještě si připadá chytrej!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing fast",
+        "smug bitter smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "O čem to mluvíš? Mimochodem, svoje věci ti už ukazovat nebudu. Dobrý video chce dobrý záběry, a ty je ode mě nedostaneš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dcera_9"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing in the garden",
+        "hands on hips",
+        "pouting",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9",
+          "text": "Tati, ty zas jenom ťukáš do počítače. Kdy půjdeme stavět tu základnu z větví?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "sighing",
+        "eyes on the laptop screen",
+        "sunlight on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Budu ti chybět ;)",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "reading the monitor",
+        "clenched fists",
+        "blue monitor glow on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blue monitor glow on his face, jaw clenching, slow breath"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "clenched fists",
+        "bitter expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Chybět? Bere mi deset let snění. Nebulon je to jediný, co mám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_1",
+      "characters": [],
+      "visual_tags": [
+        "lights going out",
+        "servers glowing in the dark",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the lights dying one by one, server LEDs blinking in the dark"
+    }
+  ]
+}

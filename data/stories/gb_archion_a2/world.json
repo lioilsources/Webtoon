@@ -1,0 +1,103 @@
+{
+  "id": "w_gb_archion_a2",
+  "title": "Archion: Konec jednoho přátelství — Pozdní léto: Peníze",
+  "synopsis": "Jeden podzim dvou kamarádů: snílek v neonovém bunkru a táta na zahradě plné dětí. Spor o peníze a o hru, kterou chtěli udělat spolu, skončí tichem.",
+  "tone": "hořký, ironický, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: bunkr a zahrada jsou dvě poloviny jeviště.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; Ol1n zavře notebook a jde za dětmi, Kosmovi zhasne poslední pixel."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bunkr_2",
+      "l_zahrada_2"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech loner aged 40 with messy shoulder-length dark hair, stubble, dark circles under restless eyes, pale from monitor light",
+      "base": "adult, mature male, messy shoulder-length dark hair, stubble, dark circles under the eyes, pale skin",
+      "outfits": {
+        "default": "faded black hoodie with the hood down, worn headphones around the neck"
+      },
+      "photo": "a gaunt Czech loner aged 40 with messy shoulder-length dark hair, stubble, dark circles under restless eyes, pale from monitor light",
+      "tag_prompt": "adult, mature male, messy shoulder-length dark hair, stubble, dark circles under the eyes, pale skin, faded black hoodie with the hood down, worn headphones around the neck",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes, in an autumn jacket",
+      "base": "adult, mature male, short dark brown hair with grey streaks, short beard, brown eyes",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm Czech man aged 44 with dark brown hair touched with grey, a short beard and quiet brown eyes",
+      "tag_prompt": "adult, mature male, short dark brown hair with grey streaks, short beard, brown eyes, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_5",
+      "name": "Nejmladší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech girl aged 5 with blonde pigtails, rosy cheeks and blue eyes, in an autumn jacket",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "yellow autumn jacket, long pants, rubber boots"
+      },
+      "photo": "a little Czech girl aged 5 with blonde pigtails, rosy cheeks and blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, yellow autumn jacket, long pants, rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bunkr_2",
+      "name": "Bunkr – 2. dějství",
+      "description": "Bunkr plný plechovek od energetických nápojů.",
+      "tag_prompt": "indoors, dark underground bunker room, neon tubes, stacks of computers, desk littered with empty energy drink cans, monitor glow, cables, stale air",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_2",
+      "name": "Zahrada – 2. dějství",
+      "description": "Listí žloutne a pomalu opadává.",
+      "tag_prompt": "outdoors, family garden in late summer, yellowing leaves on the trees, a few leaves falling, wooden garden table, warm low evening sun",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion",
+    "node": "a2"
+  }
+}
