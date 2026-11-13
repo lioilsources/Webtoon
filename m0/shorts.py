@@ -16,6 +16,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import tempfile
 import unicodedata
 import urllib.request
@@ -91,9 +92,11 @@ def bubbles_layer(bubbles, lang, faces=()):
     narr = [b for b in bs if b.get("kind") == "narration"]
     talk = [b for b in bs if b.get("kind") != "narration"]
     for k, b in enumerate(narr):
-        compose.draw_bubble(layer, b, k, len(narr))
+        compose.draw_bubble(layer, b, k, len(narr), later=narr[k + 1:] + talk)
     for k, b in enumerate(talk):
-        compose.draw_bubble(layer, b, k + (1 if narr else 0), len(talk))
+        compose.draw_bubble(layer, b, k + (1 if narr else 0), len(talk), later=talk[k + 1:])
+    if any(y1 > layer.height for _, _, _, y1 in getattr(layer, "_bubbles", [])):
+        print(f"!! bubble cut off at the bottom: {bs[0]['text'][:40]}…", file=sys.stderr)
     full = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     full.paste(layer, (0, TOP))
     return full
