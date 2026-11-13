@@ -1,0 +1,22 @@
+# Kubík a loď tisíce řihanců: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_10_duchobrana_lod_tisice_rihancu
+kind: strip
+title: Kubík a loď tisíce řihanců
+world: w_lx_k6_10_duchobrana_lod_tisice_rihancu
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_ship, tags: [sunken ship, wooden planks, cobwebs, moonlight, dust, no humans], bubbles: [{speaker_id: '', text: Potopená loď v hlubinách Baltu., kind: narration}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_ship, who: [kubik, vacuum], tags: [pushing vacuum, determined, holding pizza box, entering, confident], bubbles: [{speaker_id: kubik, text: 'Duchobranná služba! Objednávka: jedno strašení, jedno smíření, extra sýr!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_ship, who: [hnivous], tags: [ghost floating, angry, shouting, breaking through wall, cracks, glowing blue], bubbles: [{speaker_id: hnivous, text: 'Odsaď! Anebo… boj? Výzva! Kdo vyleká koho!', kind: shout}], sfx: [{text: CRASH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_corridor, who: [kubik], tags: [looking around, surprised, mouth open, corridor turning into mouth, teeth walls, tongue floor], bubbles: [{speaker_id: kubik, text: 'Zubní pastu máš? …Nemáš! Já vítězím!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_corridor, who: [kubik, hnivous], tags: [ghost screaming, wolf howling, sound waves, kubik eating chips, crunching, motion lines], bubbles: [{speaker_id: kubik, text: Svačina. Nejstrašidelnější věc světa – když ji slyšíš a nemůžeš ji mít., kind: speech}], sfx: [{text: CRUNCH! CRUN, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_corridor, who: [hnivous], tags: [ghost crying, tears, sad, transparent tears, hands on face], sfx: [{text: SNIF, style: bold}], gap: medium}
+  - {shot: medium, loc: l_corridor, who: [kubik, hnivous], tags: [offering pizza slice, smiling, ghost reaching out, pizza slice, kind gesture], gap: medium}
+  - {shot: wide, loc: l_deck, who: [kubik, hnivous], tags: [party balloons, confetti, ghost smiling, boy smiling, holding pizza, night sky, sea], bubbles: [{speaker_id: hnivous, text: 'Já… jsem Kapitán Hněvivous. Ale kamarádi mi říkají… Hněvánek?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [kubik, hnivous], tags: [shaking hands, friendship, ghost hand, human hand, smiling, balloons], bubbles: [{speaker_id: kubik, text: 'Vítám tě, Hněvánku. Pravidla: strašíme jen ty, kdo nám nevrátí pozvánku.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_deck, who: [kubik, hnivous], tags: [ship rising, water splashing, moonlight, flag waving, pizza oven, happy, celebration], bubbles: [{speaker_id: kubik, text: Všichni jsou zváni!, kind: speech}], sfx: [{text: WHOOSH!, style: bold}], gap: large, animate: 'ambient only, characters still, stars twinkling, water rippling, static camera'}

@@ -1,0 +1,24 @@
+# Budapešť – Lázně a druhá šance: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_08_budapest
+kind: strip
+title: Budapešť – Lázně a druhá šance
+world: w_rf_08_budapest
+audience: adult
+language: cs
+style_id: art_nouveau_mucha
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_baths, tags: [ornate thermal bath, steam, columns], bubbles: [{speaker_id: '', text: Budapešť. Lázně., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_baths, who: [peter], tags: [sitting on bench by pool, alone, thoughtful], gap: medium}
+  - {shot: medium, loc: l_baths, who: [peter, anna], tags: [couple, hetero, woman placing towel on bench next to him, man pointing at towel], bubbles: [{speaker_id: peter, text: 'Myslím, že tohle je moje.', kind: speech}, {speaker_id: anna, text: Tak si ho vezměte., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_baths, who: [peter, anna], tags: [couple, hetero, man smiling, woman smiling], bubbles: [{speaker_id: peter, text: 'A co když si raději nechám společnost?', kind: speech}], gap: large}
+  - {shot: wide, loc: l_city, who: [{peter: city}, {anna: city}], tags: [couple, hetero, walking along danube, chain bridge, evening lights], bubbles: [{speaker_id: anna, text: 'Proč jste přijel sám?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_city, who: [{peter: city}, {anna: city}], tags: [couple, hetero, stopping on bridge, looking at each other], bubbles: [{speaker_id: peter, text: 'Potřeboval jsem zjistit, jestli ještě dokážu něco cítit.', kind: speech}, {speaker_id: anna, text: 'A?', kind: speech}, {speaker_id: peter, text: Ano., kind: speech}], gap: large}
+  - {shot: medium, loc: l_balcony, who: [{peter: evening}, {anna: evening}], tags: [couple, hetero, sitting on balcony, man taking her hand], bubbles: [{speaker_id: peter, text: 'Mohu tě políbit?', kind: speech}, {speaker_id: anna, text: Ano., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_balcony, who: [{peter: evening}, {anna: evening}], tags: [couple, hetero, kiss, city lights], gap: small}
+  - {shot: medium, loc: l_balcony, who: [{peter: evening}, {anna: evening}], tags: [couple, hetero, woman leaning head on his shoulder, night], gap: large}
+  - {shot: medium, loc: l_lobby, who: [{peter: city}, {anna: city}], tags: [couple, hetero, woman handing small photograph, man with suitcase], bubbles: [{speaker_id: anna, text: Aby ses nezapomněl vrátit., kind: speech}, {speaker_id: peter, text: Vrátím., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_city, who: [{peter: city}], tags: [walking toward bridge with flowers], bubbles: [{speaker_id: '', text: Tentokrát svůj slib dodrží., kind: narration}], gap: large}

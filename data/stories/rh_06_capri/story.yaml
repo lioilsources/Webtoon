@@ -1,0 +1,24 @@
+# Capri – Víc než svaly: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_06_capri
+kind: strip
+title: Capri – Víc než svaly
+world: w_rh_06_capri
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_rocks, tags: [faraglioni rocks, cliffs, blue sea], bubbles: [{speaker_id: '', text: Capri., kind: narration}], gap: medium, animate: 'waves crashing on cliffs, static camera'}
+  - {shot: medium, loc: l_rocks, who: [marcus], tags: [standing on cliff path, looking at sea, sad], bubbles: [{speaker_id: marcus, text: Chtějí jen tělo…, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_rocks, who: [lila], tags: [walking on cliff path, wind, holding sunglasses], gap: medium, animate: 'woman walking, hair blowing in wind, static camera'}
+  - {shot: medium, loc: l_rocks, who: [marcus, lila], tags: [couple, hetero, woman stopping beside man, looking up, smile, man surprised], bubbles: [{speaker_id: lila, text: Já chci tebe., kind: speech}], gap: large}
+  - {shot: wide, loc: l_dinner, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, dinner, laughing, string lights, lemon trees], bubbles: [{speaker_id: '', text: Večeře., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_dinner, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, kiss across table, candlelight], gap: small}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, woman taking off her high heels, man holding her hand, smile], bubbles: [{speaker_id: marcus, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, embrace, kiss, her hands on his shoulders, candlelight], gap: medium}
+  - {shot: medium, loc: l_villa, tags: [balcony door, curtain in wind, moonlit sea, no humans], bubbles: [{speaker_id: '', text: Závěs zavane. Dveře se zavřou., kind: narration}], gap: large}
+  - {shot: medium, loc: l_villa, who: [marcus, {lila: morning}], tags: [couple, hetero, morning, coffee on balcony, hugging, sea view], bubbles: [{speaker_id: marcus, text: Cítím se víc než svaly., kind: speech}, {speaker_id: lila, text: Protože jsi., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_rocks, who: [marcus, {lila: morning}], tags: [couple, hetero, walking hand in hand on cliff path, sunshine], bubbles: [{speaker_id: '', text: Zůstávají., kind: narration}], gap: large}

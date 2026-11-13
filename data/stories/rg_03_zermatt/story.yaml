@@ -1,0 +1,22 @@
+# Ztraceni ve švýcarských Alpách: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_03_zermatt
+kind: strip
+title: Ztraceni ve švýcarských Alpách
+world: w_rg_03_zermatt
+audience: adult
+language: cs
+style_id: hassaku_soft
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_storm, tags: [snowstorm, lonely chalet, glowing window], bubbles: [{speaker_id: '', text: Zermatt. Venku zuří sněhová bouře., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_hut, who: [clara], tags: [taking off ski jacket, snow on shoulders, cheeks red from cold], gap: small}
+  - {shot: medium, loc: l_hut, who: [{lukas: flannel}], tags: [adding logs to fireplace, kneeling, looking over shoulder, fire light], gap: medium}
+  - {shot: close-up, loc: l_hut, who: [{clara: sweater}], tags: [pulling off knit cap, blush, looking away, firelight], bubbles: [{speaker_id: clara, text: 'Vždycky jsem se styděla za to, jak moc jsem nápadná. Muži se mi většinou dívají jen na postavu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_hut, who: [{clara: sweater}, {lukas: flannel}], tags: [couple, hetero, man holding her face in his hands, gentle, looking into eyes, firelight], bubbles: [{speaker_id: lukas, text: 'Já se dívám do tvých očí, Claro. Jsi ta nejkrásnější žena, jakou tyhle hory kdy spatřily.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_hut, who: [{clara: sweater}, {lukas: flannel}], tags: [couple, hetero, sitting together on sheepskin rug by fireplace, wrapped in blanket, mugs of tea], bubbles: [{speaker_id: '', text: Bouře nepolevuje. Nikdo z nich to nelituje., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_hut, who: [{clara: sweater}, {lukas: flannel}], tags: [couple, hetero, kiss, his hand in her red hair, firelight, eyes closed], bubbles: [{speaker_id: lukas, text: Zůstaň se mnou... Dneska i navždy., kind: speech}], gap: small}
+  - {shot: wide, loc: l_hut, tags: [fireplace embers glowing, dark room, snow falling outside window, night], bubbles: [{speaker_id: '', text: Oheň dohasíná. Sníh padá až do rána., kind: narration}], gap: large}
+  - {shot: wide, loc: l_morning, who: [clara, lukas], tags: [couple, hetero, standing on terrace, holding hands, fresh snow, morning sun, smiling], bubbles: [{speaker_id: clara, text: Bouře skončila., kind: speech}, {speaker_id: lukas, text: Tak zůstaň kvůli výhledu. A kvůli mně., kind: speech}], gap: large}

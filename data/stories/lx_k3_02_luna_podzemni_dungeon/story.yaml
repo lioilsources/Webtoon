@@ -1,0 +1,20 @@
+# Luna a stínová čarodějnice: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_02_luna_podzemni_dungeon
+kind: strip
+title: Luna a stínová čarodějnice
+world: w_lx_k3_02_luna_podzemni_dungeon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_corridor, tags: [stone walls, torchlight, dripping water, dark, no humans], bubbles: [{speaker_id: '', text: Temný koridor v hlubinách dungeonu., kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, static camera'}
+  - {shot: medium, loc: l_corridor, who: [luna, shadow], tags: [holding staff, looking forward, cat pointing, serious, glowing staff], bubbles: [{speaker_id: luna, text: 'Shadowe, cítím zlo…', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_corridor, who: [shadow], tags: [cat meowing, open mouth, pointing paw, glowing eyes, dark fur], sfx: [{text: Mňau!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_hall, who: [luna, witch], tags: [casting spell, ice shield, dark magic, attacking, glowing purple, flying], bubbles: [{speaker_id: luna, text: Zmraz!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_hall, who: [luna], tags: [ice spikes, blocking, determined, glowing blue, staff raised], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_hall, who: [witch, shadow], tags: [dissolving, smoke, fading, dark aura, floating], bubbles: [{speaker_id: witch, text: Vrátím se…, kind: speech}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_hall, who: [luna], tags: [standing firm, confident, holding staff, looking at smoke, blue eyes], bubbles: [{speaker_id: luna, text: Budu připravená., kind: speech}], gap: large}
+  - {shot: wide, loc: l_hall, who: [luna, shadow], tags: [standing together, safe, dungeon quiet, torchlight, looking at viewer], bubbles: [{speaker_id: '', text: 'Dungeon je klidný, ale hrozba zůstává.', kind: narration}], gap: large}

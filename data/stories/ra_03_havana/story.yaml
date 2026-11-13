@@ -1,0 +1,23 @@
+# Karibské rytmy: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_03_havana
+kind: strip
+title: Karibské rytmy
+world: w_ra_03_havana
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_street, tags: [colorful buildings, vintage car, music], bubbles: [{speaker_id: '', text: Stará Havana. Odevšad zní rumba a salsa., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_street, who: [bea], tags: [walking, people turning heads, embarrassed, hand on chest, holding hat], gap: medium}
+  - {shot: close-up, loc: l_street, who: [bea], tags: [sigh, embarrassed, looking down], bubbles: [{speaker_id: bea, text: 'Proč musím všude tak svítit? Zrzavé vlasy, postava, kterou nepřehlédneš...', kind: thought}], gap: small}
+  - {shot: medium, loc: l_street, who: [bea], tags: [looking up, wistful, sad smile], bubbles: [{speaker_id: bea, text: Přála bych si být pro jednou neviditelná., kind: thought}], gap: large}
+  - {shot: medium, loc: l_plaza, who: [baptista], tags: [playing guitar, smile, closed eyes], bubbles: [{speaker_id: '', text: Náměstíčko před starou katedrálou., kind: narration}], gap: small}
+  - {shot: wide, loc: l_plaza, who: [manny], tags: [dancing, salsa, crowd, dynamic pose, smile], gap: medium}
+  - {shot: medium, loc: l_plaza, who: [bea, manny], tags: [couple, hetero, man bowing, offering hand, woman standing aside, surprised], bubbles: [{speaker_id: manny, text: 'Krásná seňorita tu stojí sama? V Havaně se na hudbu nesmutní. Smím prosit?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_plaza, who: [bea], tags: [stepping back, nervous, hand on chest, blush], bubbles: [{speaker_id: bea, text: Já... já neumím tancovat. A všichni se budou dívat., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_plaza, who: [bea, manny], tags: [couple, hetero, man holding her hand, pulling her close, faces close, looking at each other], bubbles: [{speaker_id: manny, text: 'Ať se dívají. Bude to tím, že v celém městě není nikdo tak nádherný jako vy.', kind: speech}], gap: small}
+  - {shot: wide, loc: l_plaza, who: [bea, manny], tags: [couple, hetero, dancing together, salsa, twirling, laughing, dress flowing], bubbles: [{speaker_id: manny, text: 'Věřte mi, chytím vás.', kind: speech}], gap: large}

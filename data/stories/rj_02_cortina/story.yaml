@@ -1,0 +1,24 @@
+# Hory nad Cortinou: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_02_cortina
+kind: strip
+title: Hory nad Cortinou
+world: w_rj_02_cortina
+audience: adult
+language: cs
+style_id: manga_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_lift, tags: [snowy peaks, skiers, chairlift], bubbles: [{speaker_id: '', text: Cortina d'Ampezzo. Lyžařská sezóna., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_lift, who: [klara], tags: [standing in queue, goggles on head, determined, looking ahead], bubbles: [{speaker_id: klara, text: Rok jsem se učila lyžovat. Kvůli jednomu úsměvu., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_lift, who: [klara, matteo], tags: [couple, hetero, man approaching, bright smile, woman lifting goggles], bubbles: [{speaker_id: matteo, text: 'Signora. Jste tu poprvé? Ten postoj na lyžích je na vás vidět.', kind: speech}, {speaker_id: klara, text: 'Druhý rok. Lyžuju kvůli instruktorovi, který mě loni naučil první oblouk a pak se neozval.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_lift, who: [matteo], tags: [awkward smile, surprised], bubbles: [{speaker_id: matteo, text: To musel být hlupák., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_lift, who: [klara], tags: [cool smile, red lips], bubbles: [{speaker_id: klara, text: Byl. Ale měl krásný úsměv. Ten si pamatuju přesně., kind: speech}], gap: large}
+  - {shot: wide, loc: l_chalet, who: [{klara: chalet}, {matteo: chalet}], tags: [couple, hetero, sitting by fireplace, holding small glasses, firelight], bubbles: [{speaker_id: matteo, text: Chtěl jsem zavolat. Ale já nejsem člověk pro telefonáty. Jsem člověk pro hory., kind: speech}, {speaker_id: klara, text: 'A co jsi za člověka, Matteo, když nejsi na hoře?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_chalet, who: [{matteo: chalet}], tags: [looking down, silent, firelight, shadow], bubbles: [{speaker_id: matteo, text: 'Bojím se, že když z hory sestoupím, nic ze mě nezbude.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_terrace, who: [{klara: chalet}, {matteo: chalet}], tags: [couple, hetero, kiss, kissing, embrace, snow falling, night], gap: small}
+  - {shot: medium, loc: l_terrace, who: [{klara: chalet}, {matteo: chalet}], tags: [couple, hetero, man pulling away, hands on her shoulders, pained expression], bubbles: [{speaker_id: matteo, text: 'Kláro, nemůžu. Ty nejsi jen jedna ze sezón. A já neumím slíbit, že budu existovat, až sníh roztaje.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_terrace, who: [{klara: coat}], tags: [putting on coat, small smile, calm, snow], bubbles: [{speaker_id: klara, text: Před rokem bych plakala. Dneska si vezmu kabát a pojedu domů., kind: speech}, {speaker_id: klara, text: 'Byls můj krásný mýtus, Matteo. Mýty patří do hor. Já patřím dolů.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_terrace, who: [{matteo: chalet}], tags: [standing alone on terrace, snow on shoulders, from behind, valley lights], bubbles: [{speaker_id: '', text: Sníh mu padá na ramena. Poprvé si ho nevšímá., kind: narration}], gap: large}

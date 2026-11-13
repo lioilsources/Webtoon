@@ -1,0 +1,20 @@
+# Elara a starověký les: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_05_elara_staroveky_les
+kind: strip
+title: Elara a starověký les
+world: w_lx_k3_05_elara_staroveky_les
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [ancient trees, thick fog, moonlight, mysterious, dark green], bubbles: [{speaker_id: '', text: Mlha a staré stromy v hlubokém lese., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, static camera'}
+  - {shot: wide, loc: l_forest, who: [elara, spark], tags: [running, holding staff, horse running, worried, open mouth, motion lines], bubbles: [{speaker_id: elara, text: 'Sparku, démon ničí magii!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [spark], tags: [neighing, open mouth, ears back, running, determined], sfx: [{text: NEEÍÍÍÍ!, style: bold}], gap: medium, animate: 'the unicorn gallops forward, leaves swaying gently, static camera'}
+  - {shot: wide, loc: l_battle, who: [elara, demon], tags: [demon shooting fire, fireball, glowing shield, rainbow shield, blocking, intense, magical effects], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [elara], tags: [casting spell, holding staff up, glowing staff, concentrating, closed eyes, light particles], bubbles: [{speaker_id: elara, text: Léčivá vlna!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [demon], tags: [demon retreating, shield glowing, fire extinguished, smoke, weak, kneeling], sfx: [{text: HSSSS!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [elara], tags: [standing, holding staff, looking at shadows, serious, determined, forest background], bubbles: [{speaker_id: elara, text: Ještě se vrátí… ale teď je les v bezpečí., kind: speech}], gap: large}
+  - {shot: wide, loc: l_forest, who: [elara, spark], tags: [standing together, looking at forest, calm, moonlight, peaceful, stars], gap: large}

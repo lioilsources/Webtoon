@@ -1,0 +1,23 @@
+# Monte Carlo – Muž, který si vybral špatně: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_06_montecarlo
+kind: strip
+title: Monte Carlo – Muž, který si vybral špatně
+world: w_rf_06_montecarlo
+audience: adult
+language: cs
+style_id: photo_cyberreal_night
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [yacht party, lights, harbor at night], bubbles: [{speaker_id: '', text: Monte Carlo. Victor pořádá večírek., kind: narration}], gap: medium}
+  - {shot: full body, loc: l_deck, who: [claire], tags: [arriving, walking, gown shimmering, guests looking], gap: medium}
+  - {shot: medium, loc: l_deck, who: [sofia], tags: [holding camera, photographing, from side, looking at someone in distance], bubbles: [{speaker_id: '', text: Sofia na palubě fotografuje., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [victor, claire], tags: [couple, hetero, dancing, close, string lights], bubbles: [{speaker_id: claire, text: Díváš se na mě jako na ženu svého života., kind: speech}, {speaker_id: victor, text: Možná jsi., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_deck, who: [sofia], tags: [lowering camera, sad, looking away], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{victor: day}], tags: [reading documents, realization, frowning], bubbles: [{speaker_id: '', text: 'Později Victor zjistí, že Claire chce hlavně jeho peníze a postavení.', kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_cabin, who: [{victor: day}], tags: [holding photograph, reading back of photograph], bubbles: [{speaker_id: '', text: '„Některé věci člověk pozná, až když je ztratí.“', kind: narration}], gap: large}
+  - {shot: wide, loc: l_port, who: [{victor: day}, {sofia: travel}], tags: [couple, hetero, running toward car, woman by car door], bubbles: [{speaker_id: victor, text: Počkej., kind: speech}, {speaker_id: sofia, text: 'Proč?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_port, who: [{victor: day}, {sofia: travel}], tags: [couple, hetero, facing each other, woman calm, man desperate], bubbles: [{speaker_id: victor, text: Protože jsem udělal chybu., kind: speech}, {speaker_id: sofia, text: A já nechci být tvoje druhá volba., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_port, who: [{victor: day}], tags: [standing alone, car driving away, blue hour], bubbles: [{speaker_id: '', text: Odjede. Victor zůstane stát., kind: narration}], gap: large}

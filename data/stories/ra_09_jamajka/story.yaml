@@ -1,0 +1,23 @@
+# Záře nad tropickým rájem: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_09_jamajka
+kind: strip
+title: Záře nad tropickým rájem
+world: w_ra_09_jamajka
+audience: adult
+language: cs
+style_id: vintage_poster
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_terrace, tags: [mist, mountains, coffee plantation, light rays], bubbles: [{speaker_id: '', text: 'Blue Mountains, Jamajka.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_terrace, who: [alex], tags: [sitting at terrace table, holding tablet, charts, mountain view], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [alex], tags: [sighing, closing tablet], bubbles: [{speaker_id: alex, text: 'Práce, čísla, tabulky... Přijel jsem na druhý konec světa, ale pořád jsem jen ten nudný muž z kanceláře.', kind: thought}], gap: small}
+  - {shot: close-up, loc: l_terrace, who: [alex], tags: [melancholy, looking at mountains], bubbles: [{speaker_id: alex, text: 'Kdo by chtěl sdílet život s chlapem bez špetky spontánnosti?', kind: thought}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [zara], tags: [tripping over bag, stumbling, surprised], bubbles: [{speaker_id: '', text: Malá horská kavárna. Hraje jemné reggae., kind: narration}], gap: small}
+  - {shot: medium, loc: l_cafe, who: [zara, alex], tags: [couple, hetero, man catching woman by shoulders, eye contact, faces close], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [zara], tags: [laughing, hand on chest], bubbles: [{speaker_id: zara, text: Woah! Děkuji za záchranu!, kind: speech}, {speaker_id: zara, text: 'Vy máte ale pevný stisk na někoho, kdo vypadá, že celý den jen sedí u počítače!', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [alex], tags: [smile, taking off glasses, holding eyewear], bubbles: [{speaker_id: alex, text: To byla náhoda... Většinou se držím jen klávesnice. Jsem Alex., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [zara, alex], tags: [couple, hetero, woman sitting at his table, chin on hands, smiling], bubbles: [{speaker_id: zara, text: 'Nudný? Ani náhodou. Alexi, máte v očích hluboký klid.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_cafe, who: [zara, alex], tags: [couple, hetero, coffee cups, smiling at each other, warm light], bubbles: [{speaker_id: zara, text: A tenhle ostrov vás naučí tancovat. Začněme společným šálkem zdejší kávové speciality!, kind: speech}], gap: large}

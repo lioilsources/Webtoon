@@ -1,0 +1,22 @@
+# Rin a Královna pavouků: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_04_rin_dungeon_kralovny_pavouku
+kind: strip
+title: Rin a Královna pavouků
+world: w_lx_k5_04_rin_dungeon_kralovny_pavouku
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_dungeon, tags: [stone corridor, torches, mist, dark, no humans], bubbles: [{speaker_id: '', text: 'Podzemní dungeon, kamenné chodby.', kind: narration}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_dungeon, who: [rin, mec, zombie], tags: [walking, zombie crawling, holding sword, holding shield, surprised, motion lines], bubbles: [{speaker_id: mec, text: 'Rin, za tebou.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_dungeon, who: [rin], tags: [swinging sword, determined, glowing sword, dust cloud, action], bubbles: [{speaker_id: rin, text: Vidím., kind: speech}], sfx: [{text: SZÁŠ!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_sil, who: [kravna, rin], tags: [spider hanging, web, large spider, standing, looking up, tense], bubbles: [{speaker_id: kravna, text: 'Kdo vstoupil do mého sálu?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_sil, who: [rin], tags: [standing, holding sword, confident, looking up], bubbles: [{speaker_id: rin, text: Rin. A hledám lék pro vesnici., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_sil, who: [kravna, rin], tags: [spider hissing, fangs, defensive stance, tense, web background], bubbles: [{speaker_id: kravna, text: Lék je můj poklad., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_sil, who: [rin, kravna], tags: [blocking, shield glowing, spider retreating, energy blast, action, dynamic pose], sfx: [{text: BUM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_sil, who: [kravna], tags: [spider sitting, tired, looking at rin, web background], bubbles: [{speaker_id: kravna, text: Jsi statečná. Vezmi si lék. Ale zaplatíš vzpomínkou., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sil, who: [rin], tags: [nodding, determined, holding potion, sad eyes], bubbles: [{speaker_id: rin, text: Beru., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_sil, who: [mec], tags: [sword standing, glowing runes dimming, sad, close-up], bubbles: [{speaker_id: mec, text: Já si tě pamatuju., kind: thought}], gap: large, animate: 'sword runes flickering weakly, dust motes floating, light shifting slowly, static camera'}

@@ -1,0 +1,24 @@
+# Tokio – Módní týden: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_01_tokio
+kind: strip
+title: Tokio – Módní týden
+world: w_ri_01_tokio
+audience: adult
+language: cs
+style_id: photo_cyberreal_night
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_backstage, tags: [fashion week, gold dresses on racks, hairspray mist], bubbles: [{speaker_id: '', text: Tokio. Týden módy., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_backstage, who: [{klara: work}], tags: [holding makeup brush, doing makeup, concentrated, mirror lights], bubbles: [{speaker_id: klara, text: Mezi modelkami jsem jen ta malá s štětcem., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_backstage, who: [haruto], tags: [holding documents, looking around, polite, lost], bubbles: [{speaker_id: haruto, text: 'Promiňte, nevíte, kde je pan Tanaka?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_backstage, who: [{klara: work}, haruto], tags: [couple, hetero, talking, woman pointing to the left, man smiling], bubbles: [{speaker_id: klara, text: Já jsem jen vizážistka. Ale zkuste chodbu vlevo., kind: speech}, {speaker_id: haruto, text: Vy nejste jen vizážistka. Máte nejklidnější ruce v celé místnosti., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bar, who: [{klara: evening}, {haruto: nojacket}], tags: [couple, hetero, sitting at bar, cocktail glasses, city view, talking], bubbles: [{speaker_id: klara, text: V Tokiu si připadám moc kulatá., kind: speech}, {speaker_id: haruto, text: A já moc nudný. Přesto tu sedíme spolu., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bar, who: [{klara: evening}], tags: [small smile, looking down, glass in hand], bubbles: [{speaker_id: klara, text: To je pravda., kind: speech}], gap: large}
+  - {shot: wide, loc: l_shibuya, who: [klara, haruto], tags: [couple, hetero, rain, man holding umbrella over woman, neon reflections], bubbles: [{speaker_id: haruto, text: 'Kláro, můžu vás pozvat zítra? Na procházku a večeři.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_shibuya, who: [klara], tags: [smile, rain, neon light on face, under umbrella], bubbles: [{speaker_id: klara, text: Ano. Ale vezmu si kozačky., kind: speech}], gap: large}
+  - {shot: medium, loc: l_room, who: [{klara: evening}, {haruto: nojacket}], tags: [couple, hetero, standing at door, embrace, looking at each other, night], bubbles: [{speaker_id: '', text: 'Druhý večer. Trenčkot zůstane na věšáku, kozačky u dveří.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_room, who: [{klara: evening}, {haruto: nojacket}], tags: [couple, hetero, kiss, closed eyes, tender, dim light], gap: small}
+  - {shot: establishing, loc: l_room, tags: [closed door, light under door, dark corridor, night], bubbles: [{speaker_id: '', text: Dveře se zavřou. Tokio svítí dál., kind: narration}], gap: large}

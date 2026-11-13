@@ -1,0 +1,20 @@
+# Kai a ohnivý drak z planety Vulkan: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_07_kai_ohnivy_drak
+kind: strip
+title: Kai a ohnivý drak z planety Vulkan
+world: w_lx_k4_07_kai_ohnivy_drak
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_crater, tags: [lava river, red sky, floating rocks, smoke, no humans], bubbles: [{speaker_id: '', text: Soptící kráter na lávové planetě., kind: narration}], gap: medium, animate: 'ambient only, characters still, flames flickering, water rippling, smoke and mist swirling slowly, static camera'}
+  - {shot: wide, loc: l_crater, who: [kai, dragon], tags: [standing on edge, dragon emerging, lava, roaring, open mouth, red aura, glowing], bubbles: [{speaker_id: kai, text: 'Můj trénink na téhle planetě nebyl pro nic za nic! Vrať se do temnot, démonický draku!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_crater, who: [dragon], tags: [dragon roaring, purple flames, angry, glowing eyes, sharp teeth, motion lines], sfx: [{text: RRRRAAAR!, style: bold}], gap: small}
+  - {shot: wide, loc: l_lava, who: [kai, dragon], tags: [energy blast, purple fire beam, orange fire beam, collision, explosion, lava erupting, impact], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_lava, who: [kai], tags: [hands together, charging energy, glowing hands, shouting, determined, red aura, intense], bubbles: [{speaker_id: kai, text: KAI… VLNÁÁÁ!, kind: shout}], gap: medium, animate: 'energy swirling around Kai''s hands, aura pulsing, flames flickering, static camera'}
+  - {shot: wide, loc: l_lava, who: [kai, dragon], tags: [orange beam, overpowering, purple beam fading, dragon recoiling, explosion, light], sfx: [{text: SWOOSH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_lava, who: [dragon], tags: [dragon disappearing, smoke, dust cloud, defeated, fading], sfx: [{text: POOF!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_crater, who: [kai], tags: [standing alone, tired, panting, sweat, smile, victory, calm], bubbles: [{speaker_id: kai, text: Vyhrál jsem., kind: speech}], gap: large}

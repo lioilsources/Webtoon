@@ -1,0 +1,20 @@
+# Sam a souboj s mechanickým faraonem: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_08_sam_mechanicky_faraon
+kind: strip
+title: Sam a souboj s mechanickým faraonem
+world: w_lx_k4_08_sam_mechanicky_faraon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_pyramid, tags: [gold walls, stone carvings, dust floating, dim light, no humans], bubbles: [{speaker_id: '', text: Mechanizovaný labyrint uvnitř obří pyramidy v roce 3000., kind: narration}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, light rays shimmering, static camera'}
+  - {shot: wide, loc: l_pyramid, who: [sam, faraon], tags: [robot standing, hero landing, looking up, tall robot, small hero, helmet visor closing], bubbles: [{speaker_id: faraon, text: NARUŠITEL DETEKOVÁN. VYMAZAT Z HISTORIE!, kind: speech}, {speaker_id: sam, text: 'Zapomněl jsi na jednu věc, Faraone – technologie se neustále vyvíjí!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [sam], tags: [holding sword, laser sword, glowing blue blade, ready stance, determined, helmet visor down], sfx: [{text: VZZZT!, style: bold}], gap: small, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_core, who: [sam, faraon], tags: [energy beam, dodging, jet boots, flying, sparks, explosion, motion lines], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_core, who: [sam], tags: [jumping, attacking, sword thrust, glowing core, intense, action pose], sfx: [{text: KLANG!, style: bold}], gap: small}
+  - {shot: wide, loc: l_core, who: [faraon], tags: [robot falling, eyes off, kneeling, debris falling, darkening, defeated], sfx: [{text: CRASH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_core, who: [sam], tags: [running, looking back, worried, falling ceiling, dust cloud, urgency], bubbles: [{speaker_id: sam, text: A teď rychle ven!, kind: shout}], gap: large}
+  - {shot: wide, loc: l_pyramid, who: [sam], tags: [running towards exit, light at end of tunnel, falling rocks, dust, silhouette], sfx: [{text: RUMBLE!, style: bold}], gap: large}

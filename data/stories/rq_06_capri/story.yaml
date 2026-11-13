@@ -1,0 +1,23 @@
+# Capri – Víc než jen svaly: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_06_capri
+kind: strip
+title: Capri – Víc než jen svaly
+world: w_rq_06_capri
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_rocks, tags: [cliffs, blue water, bright sun, coastline], bubbles: [{speaker_id: '', text: Capri. Skály u pobřeží., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_rocks, who: [marcus], tags: [standing, looking at sea, serious expression, wind in shirt], bubbles: [{speaker_id: marcus, text: Chtějí jen tělo…, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_rocks, who: [marcus, lila], tags: [couple, hetero, walking, smiling, eye contact, sunny day], bubbles: [{speaker_id: lila, text: Já chci tebe., kind: speech}], gap: large}
+  - {shot: medium, loc: l_restaurant, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, sitting close, holding hands, whispering, romantic atmosphere], bubbles: [{speaker_id: '', text: Večer. Blízkost u večeře., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, kiss, closed eyes, soft lighting, tender], gap: large}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, undoing buttons, standing, intense gaze, warm light], bubbles: [{speaker_id: marcus, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, removing clothes, embrace, tender, warm light], gap: small}
+  - {shot: medium, loc: l_villa, tags: [curtain, wind, moonlight, empty room, warm lamp], bubbles: [{speaker_id: '', text: Vila utichla v objetí noci., kind: narration}], gap: large}
+  - {shot: medium, loc: l_villa, who: [marcus, lila], tags: [couple, hetero, fully dressed, cuddling, kissing shoulder, soft light], bubbles: [{speaker_id: marcus, text: Cítím se víc než svaly., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_villa, who: [lila], tags: [smiling, blushing, looking at partner, tender], bubbles: [{speaker_id: lila, text: Protože jsi., kind: speech}], gap: large}

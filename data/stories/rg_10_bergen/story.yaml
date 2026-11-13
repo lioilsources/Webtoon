@@ -1,0 +1,24 @@
+# Zimní samota v norských fjordech: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_10_bergen
+kind: strip
+title: Zimní samota v norských fjordech
+world: w_rg_10_bergen
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_glass, tags: [glass house on cliff above fjord, snowstorm, glowing windows], bubbles: [{speaker_id: '', text: Bergen. Nad fjordem zuří vichřice., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_glass, who: [ned], tags: [sitting by wood stove, whittling wood with knife, calm], gap: medium}
+  - {shot: wide, loc: l_glass, who: [elena], tags: [standing in doorway, snow on coat, shivering, wind], bubbles: [{speaker_id: elena, text: 'Promiňte... Můžu se tu schovat, než vichřice přejde?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_glass, who: [elena, ned], tags: [couple, hetero, man taking her snowy coat, warm stove light], bubbles: [{speaker_id: ned, text: 'Pojďte dál, než vás vítr odnese. Kamna hřejí pro dva.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_aurora, who: [{elena: indoor}, ned], tags: [couple, hetero, sitting together on sofa under glass roof, wrapped in blanket, green aurora above], bubbles: [{speaker_id: '', text: Bouře utichne a nebe se rozsvítí zeleně., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_aurora, who: [{elena: indoor}], tags: [looking up at aurora, red hair glowing in green light, wonder], gap: medium}
+  - {shot: medium, loc: l_aurora, who: [{elena: indoor}, ned], tags: [couple, hetero, kiss, aurora light, eyes closed], gap: small}
+  - {shot: wide, loc: l_aurora, tags: [aurora borealis over glass roof, dark room, stove embers], bubbles: [{speaker_id: '', text: Polární záře tančí až do rána., kind: narration}], gap: large}
+  - {shot: wide, loc: l_port, who: [{elena: coat}, ned], tags: [couple, hetero, standing at ferry gangway, holding both his hands, snow, ferry horn], bubbles: [{speaker_id: elena, text: 'Můj život je v Kyjevě, Nede... Ty patříš těmhle horám. Ta noc byla zázrak, ale naše světy jsou moc daleko.', kind: speech}], sfx: [{text: HÚÚÚ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_port, who: [{elena: coat}, ned], tags: [couple, hetero, kiss on her forehead, letting go of her hands, snow], bubbles: [{speaker_id: ned, text: 'Budeš moje polární záře, na kterou budu vzpomínat každou zimu. Šťastnou cestu, Eleno.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_port, who: [ned], tags: [standing alone on pier, ferry sailing away into fjord, snow, from behind], gap: large}

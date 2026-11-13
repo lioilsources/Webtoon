@@ -1,0 +1,21 @@
+# Ondra a Dračí Pěst: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_10_ondra_draci_pest
+kind: strip
+title: Ondra a Dračí Pěst
+world: w_lx_k7_10_ondra_draci_pest
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_temple, tags: [bamboo forest, temple ruins, morning mist, no humans], bubbles: [{speaker_id: '', text: Ranní mlha v chrámu mezi skalami., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, static camera'}
+  - {shot: wide, loc: l_temple, who: [ondra, mistr_bambus], tags: [martial arts pose, kicking air, sleeping, sitting cross-legged, bamboo stalk, determined face], bubbles: [{speaker_id: ondra, text: Mistře! Už tři dny mi nevychází Dračí skok!, kind: shout}, {speaker_id: mistr_bambus, text: 'Drak se ukáže srdcem. Co tě trápí?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_temple, who: [ondra], tags: [sad face, looking down, hands on knees, worried], bubbles: [{speaker_id: ondra, text: Démon Král Nácho bere kraji teplo. Lidé nemají oheň., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_mountain, who: [ondra, kral_nacho], tags: [snowy mountain, cave entrance, steaming ground, standing, glowing red eyes, large demon, small boy], bubbles: [{speaker_id: ondra, text: Králi Nácho! Jdu si pro teplo kraje!, kind: shout}, {speaker_id: kral_nacho, text: Vrať se. Sesbírám veškeré teplo – a pak mě nic nemůže zranit., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_mountain, who: [ondra], tags: [sitting on rock, calm face, hands on lap, looking up], bubbles: [{speaker_id: ondra, text: 'Když máš teplo světa – objal tě někdo?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_mountain, who: [kral_nacho], tags: [surprised face, glowing red eyes, confused, large hand], bubbles: [{speaker_id: kral_nacho, text: Démoni nejsou objímaní. …Nikdo to nezkusil., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_mountain, who: [ondra, kral_nacho], tags: [jumping, fire dragon shadow, glowing shadow, dragon wings, hugging, warm light, no fire], bubbles: [{speaker_id: ondra, text: 'Teplo, které rozdáš, se ti vrátí. Jsi nezlomitelný.', kind: speech}], gap: medium, animate: 'ambient only, characters still, snow falling, flames flickering, stars twinkling, static camera'}
+  - {shot: medium, loc: l_mountain, who: [kral_nacho], tags: [teary eyes, soft expression, hugging, red eyes wet], bubbles: [{speaker_id: kral_nacho, text: 'Tohle objetí… je krásné?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_village, who: [ondra, mistr_bambus, kral_nacho], tags: [campfire, evening, small demon, bear size, children drawing, smiling, warm light], bubbles: [{speaker_id: mistr_bambus, text: 'Vidím, že drak se ukázal.', kind: speech}, {speaker_id: ondra, text: 'Já jsem ho jen pustil. Čekal, až přestanu bojovat.', kind: speech}], gap: large}

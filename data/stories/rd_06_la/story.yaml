@@ -1,0 +1,23 @@
+# Kovboj a malířka z Chinatownu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_06_la
+kind: strip
+title: Kovboj a malířka z Chinatownu
+world: w_rd_06_la
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_studio, who: [amara], tags: [standing in front of canvas, painting, holding brush], bubbles: [{speaker_id: '', text: 'Los Angeles, Chinatown. Jaro.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_studio, who: [jake], tags: [holding hat, looking around, doorway], bubbles: [{speaker_id: jake, text: 'Promiňte — tohle je galerie, nebo dílna?', kind: speech}, {speaker_id: amara, text: 'Obojí. Záleží na tom, jestli kupujete, nebo koukáte.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_studio, who: [jake], tags: [pointing at painting, prairie sunset painting], bubbles: [{speaker_id: jake, text: Tenhle je tichý. Slyším v něm vítr přes trávu., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_studio, who: [amara], tags: [surprised, turning around], bubbles: [{speaker_id: amara, text: '…To je název, který jsem hledala měsíc.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_studio, who: [jake, amara], tags: [couple, hetero, cleaning up studio, talking, holding rag], bubbles: [{speaker_id: '', text: O týden později., kind: narration}, {speaker_id: jake, text: 'V Montaně jsem měl sto důvodů, proč být sám. Ale žádný, proč ráno vstát.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_studio, who: [amara], tags: [soft expression, looking down], bubbles: [{speaker_id: amara, text: 'Já vím, jak to je. Měsíce jsem neměla důvod vstát.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_roof, who: [jake, amara], tags: [couple, hetero, sitting on blanket, sunset, pizza], bubbles: [{speaker_id: jake, text: 'V Montaně má západ slunce osm barev. Tady jen tři, ale víc světel.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_roof, who: [jake, amara], tags: [couple, hetero, brushing hair from her forehead, looking at each other], gap: small}
+  - {shot: close-up, loc: l_roof, who: [jake, amara], tags: [couple, hetero, kiss, closed eyes, sunset], gap: small}
+  - {shot: medium, loc: l_roof, who: [jake, amara], tags: [couple, hetero, hug, head on chest, smile], bubbles: [{speaker_id: amara, text: Že jsme si našli důvod ráno vstát., kind: speech}], gap: large}

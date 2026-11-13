@@ -1,0 +1,23 @@
+# Maledivy - Přesně to, co jsem hledal: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rl_03_maledivy
+kind: strip
+title: Maledivy - Přesně to, co jsem hledal
+world: w_rl_03_maledivy
+audience: adult
+language: cs
+style_id: flat_anime_mema
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bungalow_ext, tags: [overwater bungalow, turquoise water, sunset, palm trees], bubbles: [{speaker_id: '', text: Maledivy. Exteriér bungalovu., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bungalow_ext, who: [aisha], tags: [standing on balcony, looking at reflection, sad, holding dress], bubbles: [{speaker_id: aisha, text: Moje prsa jsou moc malá…, kind: thought}], gap: small}
+  - {shot: wide, loc: l_bungalow_ext, who: [aisha, kai], tags: [couple, hetero, man approaching, woman looking up, smile, sunset], bubbles: [{speaker_id: kai, text: 'Ty jsi přesně to, co jsem hledal.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{aisha: evening}, {kai: evening}], tags: [couple, hetero, sitting at table, wine glasses, candles, laughing, holding hands], bubbles: [{speaker_id: '', text: Večeře na pláži., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [{aisha: evening}, {kai: evening}], tags: [couple, hetero, kiss, eyes closed, romantic, sunset light], gap: large}
+  - {shot: medium, loc: l_bungalow_int, who: [{aisha: evening}, {kai: evening}], tags: [couple, hetero, man removing earrings, standing, faces close, warm light], bubbles: [{speaker_id: kai, text: Nech mě se na tebe dívat., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bungalow_int, who: [{aisha: evening}, {kai: evening}], tags: [couple, hetero, embrace, kiss, eyes closed, warm light], bubbles: [{speaker_id: aisha, text: Cítím se ženská., kind: speech}], gap: small}
+  - {shot: medium, loc: l_bungalow_int, who: [{aisha: evening}, {kai: evening}], tags: [couple, hetero, hugging, sitting on sofa, eye contact, smile], bubbles: [{speaker_id: kai, text: Protože jsi., kind: speech}], gap: small}
+  - {shot: medium, loc: l_bungalow_int, tags: [lamp going out, curtains blowing, moonlight, no humans], bubbles: [{speaker_id: '', text: Lampa zhasne. Noc začíná., kind: narration}], gap: large}
+  - {shot: wide, loc: l_bungalow_ext, who: [{aisha: morning}, kai], tags: [couple, hetero, morning, coffee cups, hugging, looking at sea, smile], bubbles: [{speaker_id: '', text: Zůstávají spolu další dny., kind: narration}], gap: large}

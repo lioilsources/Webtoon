@@ -1,0 +1,23 @@
+# Toulky po plážích Bali: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_04_bali
+kind: strip
+title: Toulky po plážích Bali
+world: w_rg_04_bali
+audience: adult
+language: cs
+style_id: retro_citypop
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_cliff, tags: [sunset over ocean, cliffs, waves], bubbles: [{speaker_id: '', text: Uluwatu. Slunce zapadá nad útesem., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_cliff, who: [meiling], tags: [walking along beach path, sundress blowing in wind, sunset], gap: medium}
+  - {shot: medium, loc: l_road, who: [daniel], tags: [sitting on motor scooter, grinning, offering spare helmet], bubbles: [{speaker_id: daniel, text: 'Chceš vidět nejhezčí vodopád na ostrově? Naskoč.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_road, who: [meiling, daniel], tags: [couple, hetero, riding motor scooter together, woman holding his waist, laughing, wind], gap: small}
+  - {shot: wide, loc: l_waterfall, who: [meiling, daniel], tags: [couple, hetero, standing at waterfall, mist, holding hands, sunlight], bubbles: [{speaker_id: meiling, text: Tohle je jako sen., kind: speech}, {speaker_id: daniel, text: Sny jsou na Bali zadarmo., kind: speech}], gap: large}
+  - {shot: medium, loc: l_villa, who: [{meiling: evening}, daniel], tags: [couple, hetero, candlelit villa, standing close, faces close, warm light, night], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{meiling: evening}, daniel], tags: [couple, hetero, kiss, candlelight, eyes closed], gap: small}
+  - {shot: wide, loc: l_villa, tags: [candles burning down, sheer curtain blowing in wind, jungle night], bubbles: [{speaker_id: '', text: Závěs se vlní v nočním větru. Svíčky dohořívají., kind: narration}], gap: large}
+  - {shot: wide, loc: l_terrace, who: [meiling], tags: [dawn, standing alone on terrace, finding note and crumpled banknote on table], gap: medium}
+  - {shot: close-up, loc: l_terrace, who: [meiling], tags: [reading note, tears in eyes, holding paper, dawn light], bubbles: [{speaker_id: '', text: '„Bylo to skvělé, ale já nehledám závazky. Šťastnou cestu, D.“', kind: narration}, {speaker_id: meiling, text: 'Myslela jsem, že to znamenalo něco víc.', kind: speech}], gap: large}

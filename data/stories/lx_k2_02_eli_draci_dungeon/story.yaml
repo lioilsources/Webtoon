@@ -1,0 +1,24 @@
+# Eli a Dračí Dungeon: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_02_eli_draci_dungeon
+kind: strip
+title: Eli a Dračí Dungeon
+world: w_lx_k2_02_eli_draci_dungeon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_dungeon_entrance, tags: [large stone doors, moss, vines, twilight, mysterious, no humans], bubbles: [{speaker_id: '', text: Jen stateční smějí dál., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, static camera'}
+  - {shot: medium, loc: l_dungeon_entrance, who: [eli, bubla], tags: [standing, looking at door, nervous, holding staff, hiding behind cape], bubbles: [{speaker_id: bubla, text: Bojím., kind: speech}, {speaker_id: eli, text: Já taky., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_dungeon_entrance, who: [bubla], tags: [scared, big eyes, shivering, close up], bubbles: [{speaker_id: bubla, text: Tak jdeme domů., kind: speech}], gap: small}
+  - {shot: medium, loc: l_dungeon_entrance, who: [eli], tags: [determined, shaking head, holding staff, resolute], bubbles: [{speaker_id: eli, text: Ne., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dungeon_entrance, tags: [stone doors opening, darkness inside, dust, mysterious light], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_dungeon_hall, who: [eli, bubla, goblin], tags: [running, goblins jumping, torchlight, shadows, surprised, motion lines], bubbles: [{speaker_id: eli, text: 'Bublo, bubliny!', kind: shout}], gap: small}
+  - {shot: medium, loc: l_dungeon_hall, who: [bubla], tags: [blowing, big bubble, glowing bubble, surprised, puffed cheeks], sfx: [{text: BLUP!, style: bold}], gap: small}
+  - {shot: wide, loc: l_dungeon_hall, who: [goblin, goblin], tags: [floating, inside bubble, confused, bouncing, bubble], gap: medium}
+  - {shot: medium, loc: l_dungeon_hall, who: [eli, bubla], tags: [excited, pointing, smile, happy], bubbles: [{speaker_id: eli, text: Funguje to!, kind: speech}, {speaker_id: bubla, text: 'Já říkal, že umím kouzla.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_dungeon_chamber, who: [stone_king, eli], tags: [golem standing, tall, glowing eyes, looking down, hero looking up], bubbles: [{speaker_id: stone_king, text: 'Kdo vstoupil do mého království?', kind: speech}, {speaker_id: eli, text: Eli., kind: speech}], gap: small}
+  - {shot: medium, loc: l_dungeon_chamber, who: [stone_king, eli], tags: [golem thinking, hand on chin, hero standing firm, talking], bubbles: [{speaker_id: eli, text: Hledám ztracené děti., kind: speech}, {speaker_id: stone_king, text: Pak nejsi můj nepřítel., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_secret_room, who: [eli], tags: [holding staff, casting spell, glowing light, magical effect, determined], bubbles: [{speaker_id: eli, text: Lumina!, kind: shout}], sfx: [{text: SWISH!, style: bold}], gap: large, animate: 'ambient only, characters still, flames flickering, static camera'}

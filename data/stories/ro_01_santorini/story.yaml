@@ -1,0 +1,22 @@
+# Santorini – Ta, která se nedá přehlédnout: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ro_01_santorini
+kind: strip
+title: Santorini – Ta, která se nedá přehlédnout
+world: w_ro_01_santorini
+audience: adult
+language: cs
+style_id: fashion_editorial
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_terrace, tags: [whitewashed houses, blue domes, caldera, sea, sunlight], bubbles: [{speaker_id: '', text: Santorini. Terasa s výhledem na kalderu., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_terrace, who: [elena], tags: [standing at railing, looking at sea, wind in hair, alone], gap: medium}
+  - {shot: close-up, loc: l_terrace, who: [elena], tags: [sad, looking down, insecure, soft light], bubbles: [{speaker_id: elena, text: Všichni tady jsou dokonalí… já jsem jen malá., kind: thought}], gap: small}
+  - {shot: medium, loc: l_terrace, who: [nikos, elena], tags: [couple, hetero, man walking, woman standing, smile, sunlight, hand reaching], bubbles: [{speaker_id: nikos, text: 'Ty jsi ta, která se nedá přehlédnout.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_yacht, who: [{elena: dinner}, {nikos: dinner}], tags: [couple, hetero, deck, wine glasses, sunset, candlelight, table], bubbles: [{speaker_id: '', text: Večer. Večeře na jachtě., kind: narration}, {speaker_id: nikos, text: 'Přijela jsi hledat něco skutečného?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_yacht, who: [{elena: dinner}], tags: [soft smile, sunset glow, looking at viewer], bubbles: [{speaker_id: elena, text: Ano., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [{nikos: dinner}, {elena: dinner}], tags: [couple, hetero, cozy cabin, warm lamp light, hand holding, gentle kiss], bubbles: [{speaker_id: nikos, text: Nech mě tě obejmout… pomalu., kind: speech}, {speaker_id: elena, text: Cítím se… hezká., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, tags: [lamp off, potted plant, moonlight through porthole, empty], bubbles: [{speaker_id: '', text: Lampa zhasne. Moře šumí dál., kind: narration}], gap: large}
+  - {shot: wide, loc: l_terrace, who: [{elena: morning}, {nikos: morning}], tags: [couple, hetero, morning light, coffee cups, hugging, sea view], bubbles: [{speaker_id: nikos, text: Jsi. A jsi moje., kind: speech}, {speaker_id: '', text: Ráno zůstávají., kind: narration}], gap: large}

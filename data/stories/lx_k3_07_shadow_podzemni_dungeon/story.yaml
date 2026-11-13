@@ -1,0 +1,20 @@
+# Shadow a stínový duch: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_07_shadow_podzemni_dungeon
+kind: strip
+title: Shadow a stínový duch
+world: w_lx_k3_07_shadow_podzemni_dungeon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_dungeon, tags: [stone walls, torches, dark atmosphere, dust, no humans], bubbles: [{speaker_id: '', text: Temná síň v hlubinách podzemí., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, water rippling, static camera'}
+  - {shot: medium, loc: l_dungeon, who: [shadow, echo], tags: [bat flying, looking around, tense, holding shield, dark], bubbles: [{speaker_id: shadow, text: Duch bere duše…, kind: speech}], sfx: [{text: PIP!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_dungeon, who: [shadow], tags: [invisible effect, fading out, glowing outline, determined, eyes only], sfx: [{text: SHHHH, style: bold}], gap: medium}
+  - {shot: wide, loc: l_dungeon2, who: [shadow_spirit, shadow], tags: [chains, attacking, chains flying, ghost floating, surprised, motion lines], sfx: [{text: SWISH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_dungeon2, who: [shadow], tags: [throwing stars, holding shield, blocking, action pose, glowing stars], bubbles: [{speaker_id: shadow, text: Teď!, kind: shout}], sfx: [{text: KLANG!, style: bold}], gap: small}
+  - {shot: wide, loc: l_dungeon2, who: [shadow_spirit, shadow], tags: [chains breaking, sparks, glowing shield, ghost recoiling, dynamic angle], sfx: [{text: CRACK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_dungeon2, who: [shadow_spirit], tags: [fading away, transparent, glowing, sad expression, floating], bubbles: [{speaker_id: shadow_spirit, text: Budu čekat…, kind: speech}], gap: large, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: wide, loc: l_dungeon2, who: [shadow, echo], tags: [standing, looking at fading ghost, cautious, bat hovering, dark background], bubbles: [{speaker_id: '', text: 'Zmizel, ale zanechal vzkaz.', kind: narration}], gap: large}

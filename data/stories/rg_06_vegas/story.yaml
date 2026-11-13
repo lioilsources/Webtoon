@@ -1,0 +1,23 @@
+# Noc v kasinu v Las Vegas: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_06_vegas
+kind: strip
+title: Noc v kasinu v Las Vegas
+world: w_rg_06_vegas
+audience: adult
+language: cs
+style_id: vintage_poster
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_casino, tags: [glittering casino, roulette, lights], bubbles: [{speaker_id: '', text: 'Las Vegas. Zlato, křišťál a štěstí na prodej.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bar, who: [jack], tags: [sitting at bar, ordering bourbon, adjusting suit jacket, alone], gap: medium}
+  - {shot: medium, loc: l_bar, who: [jack, veronica], tags: [couple, hetero, woman sitting down next to him, dazzling smile, crystal chandeliers], bubbles: [{speaker_id: jack, text: 'Co hledá taková mladá dáma u starého chlapíka z ranče?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bar, who: [veronica], tags: [hand on his shoulder, seductive smile, red lips], bubbles: [{speaker_id: veronica, text: 'Hledám opravdového muže, ne kluky z Instagramu.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_casino, who: [jack, veronica], tags: [couple, hetero, roulette table, woman cheering, man placing chips, laughing], bubbles: [{speaker_id: '', text: Kolo rulety se točí. Jack vyhrává a ona tleská., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_suite, who: [jack, veronica], tags: [couple, hetero, standing at window, fountains show outside, embrace, night], gap: medium}
+  - {shot: medium, loc: l_suite, who: [jack, veronica], tags: [couple, hetero, kiss, city lights, night], gap: small}
+  - {shot: wide, loc: l_suite, tags: [closed suite door, do not disturb sign, hotel corridor, night], bubbles: [{speaker_id: '', text: Dveře apartmá se zavřou., kind: narration}], gap: large}
+  - {shot: wide, loc: l_suite, who: [{jack: morning}], tags: [morning light through curtains, empty nightstand, sitting in armchair, alone], gap: medium}
+  - {shot: close-up, loc: l_suite, who: [{jack: morning}], tags: [bitter smile, looking at bare wrist, morning light], bubbles: [{speaker_id: '', text: Hodinky i peněženka jsou pryč. Veronica taky., kind: narration}, {speaker_id: jack, text: Starý naivní blázen... Nalítl jsi na lesk Vegas., kind: speech}], gap: large}

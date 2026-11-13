@@ -1,0 +1,25 @@
+# Maledivy – Žena, která nevěřila na krásu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_03_maledivy
+kind: strip
+title: Maledivy – Žena, která nevěřila na krásu
+world: w_rf_03_maledivy
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_resort, tags: [overwater villas, lanterns, sunset], bubbles: [{speaker_id: '', text: Maledivy. Luxusní resort., kind: narration}], gap: medium}
+  - {shot: full body, loc: l_resort, who: [sofia], tags: [walking, evening gown, looking down, insecure], bubbles: [{speaker_id: sofia, text: Navrhuju šaty pro krásné ženy. Sama mezi ně nepatřím., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_resort, who: [sofia, leon], tags: [couple, hetero, man approaching, slight bow, woman turning], bubbles: [{speaker_id: leon, text: Promiňte., kind: speech}, {speaker_id: sofia, text: 'Ano?', kind: speech}, {speaker_id: leon, text: 'Jen jsem chtěl říct, že vám ty šaty sluší.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_resort, who: [sofia, leon], tags: [couple, hetero, woman raising eyebrow, man embarrassed smile], bubbles: [{speaker_id: sofia, text: 'To je všechno?', kind: speech}, {speaker_id: leon, text: Ne. Ale první větu jsem už pokazil., kind: speech}], gap: large}
+  - {shot: medium, loc: l_beach, who: [{sofia: day}, {leon: day}], tags: [couple, hetero, meeting on beach, woman laughing, sun hat], bubbles: [{speaker_id: sofia, text: 'Vy mě sledujete?', kind: speech}, {speaker_id: leon, text: 'Ne. Doufám, že se mi to podaří náhodou každý den.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_night, who: [{sofia: dance}, leon], tags: [couple, hetero, dancing on beach, barefoot, holding shoes, torches], bubbles: [{speaker_id: leon, text: 'Můžu tě obejmout?', kind: speech}, {speaker_id: sofia, text: Už to děláš., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_night, who: [{sofia: dance}, leon], tags: [couple, hetero, kiss, embrace, torchlight], gap: large}
+  - {shot: medium, loc: l_terrace, who: [{sofia: dance}], tags: [sitting, taking off earrings, placing earrings on table, soft smile], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{sofia: dance}, leon], tags: [couple, hetero, man kissing woman on forehead, eyes closed, candlelight], gap: large}
+  - {shot: medium, loc: l_beach, who: [{sofia: day}], tags: [reading phone, shocked, worried], bubbles: [{speaker_id: '', text: Ráno přijde zpráva. Její firma zkrachovala., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [{sofia: day}, {leon: day}], tags: [couple, hetero, man holding woman's hands, serious, determined], bubbles: [{speaker_id: leon, text: 'Co se stalo?', kind: speech}, {speaker_id: sofia, text: Musím domů., kind: speech}, {speaker_id: leon, text: Pojedu s tebou., kind: speech}, {speaker_id: sofia, text: 'Proč?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_beach, who: [{leon: day}], tags: [gentle smile, looking at viewer], bubbles: [{speaker_id: leon, text: 'Protože nechci, aby náš příběh skončil tam, kde začal.', kind: speech}], gap: large}

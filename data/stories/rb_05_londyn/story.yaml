@@ -1,0 +1,21 @@
+# Londýn – Tichá krása: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_05_londyn
+kind: strip
+title: Londýn – Tichá krása
+world: w_rb_05_londyn
+audience: adult
+language: cs
+style_id: manga_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_park, who: [mei], tags: [sitting on bench, alone, falling leaves], bubbles: [{speaker_id: mei, text: Nikdo si mě nevšimne…, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_park, who: [oliver], tags: [hurrying, dropping documents, papers flying], sfx: [{text: ŠUST!, style: bold}], gap: small}
+  - {shot: medium, loc: l_park, who: [mei, oliver], tags: [couple, hetero, picking up papers, kneeling, looking at each other], bubbles: [{speaker_id: oliver, text: 'Omlouvám se… jste v pořádku?', kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [mei, oliver], tags: [couple, hetero, sitting at table, coffee cups], bubbles: [{speaker_id: oliver, text: 'Pracuju ve financích. A vy?', kind: speech}, {speaker_id: mei, text: Přijela jsem z Jakarty. Hledám… víc než práci., kind: speech}], gap: large}
+  - {shot: medium, loc: l_thames, who: [mei, oliver], tags: [couple, hetero, kiss on forehead, closed eyes, evening], gap: medium}
+  - {shot: close-up, loc: l_thames, who: [mei, oliver], tags: [couple, hetero, kiss, closed eyes], bubbles: [{speaker_id: oliver, text: 'Jsi tichá, ale tvá přítomnost je silná.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [{mei: dinner}], tags: [sitting, gentle smile, candlelight], bubbles: [{speaker_id: mei, text: Poprvé se cítím viděná., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [oliver], tags: [looking at viewer, soft smile], bubbles: [{speaker_id: oliver, text: 'A já chci, abys byla viděná jen mnou.', kind: speech}], gap: large}

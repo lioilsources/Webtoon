@@ -1,0 +1,21 @@
+# Amalfi Coast – nešťastný konec: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ro_09_amalfi
+kind: strip
+title: Amalfi Coast – nešťastný konec
+world: w_ro_09_amalfi
+audience: adult
+language: cs
+style_id: webtoon_romance
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [blue sea, steep cliffs, yacht deck, morning light], bubbles: [{speaker_id: '', text: Amalfi Coast – jachta., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_deck, who: [adrian], tags: [standing at rail, looking out, wind in hair, thoughtful], bubbles: [{speaker_id: adrian, text: Jsem nudný…, kind: thought}], gap: small}
+  - {shot: medium, loc: l_deck, who: [adrian, sari], tags: [couple, hetero, woman approaching, man turning, sunlight on faces, smile], bubbles: [{speaker_id: adrian, text: Jsem nudný…, kind: speech}, {speaker_id: sari, text: Nejsi., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cabin, who: [adrian, sari], tags: [couple, hetero, candlelit, wine glass, small table, intimate, soft light], bubbles: [{speaker_id: '', text: 'Večer v kajutě, víno a blízkost.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [adrian, sari], tags: [couple, hetero, holding hand, gentle smile, dim lamp, close faces], bubbles: [{speaker_id: adrian, text: Pomalu., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [adrian, sari], tags: [couple, hetero, eyes locked, candle flicker, soft smile, intimate], bubbles: [{speaker_id: adrian, text: Cítím se…, kind: speech}, {speaker_id: sari, text: Já taky., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, tags: [closed door, lamp fading, night, moonlight, water], bubbles: [{speaker_id: '', text: 'Noc se chýlí, ticho v kajutě.', kind: narration}], gap: large}
+  - {shot: wide, loc: l_deck, who: [adrian], tags: [sitting, deck chair, sunrise, coffee cup, lonely], bubbles: [{speaker_id: '', text: 'Ráno zůstává sám, Sari odešla.', kind: narration}], gap: large}

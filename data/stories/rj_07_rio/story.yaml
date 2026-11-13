@@ -1,0 +1,24 @@
+# Copacabana: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_07_rio
+kind: strip
+title: Copacabana
+world: w_rj_07_rio
+audience: adult
+language: cs
+style_id: webtoon_romance_artist
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_stand, tags: [beach, football players, music], bubbles: [{speaker_id: '', text: Rio de Janeiro. Copacabana., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_stand, who: [thiago], tags: [holding coconut, grin, calling out], bubbles: [{speaker_id: thiago, text: 'Kokosovou vodu pro anděla?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_stand, who: [beatriz], tags: [walking, wind in dress, lowering sunglasses, small smile], bubbles: [{speaker_id: beatriz, text: To říkáte každé., kind: speech}, {speaker_id: thiago, text: Každé. Ale vám zadarmo., kind: speech}], gap: small}
+  - {shot: medium, loc: l_stand, who: [beatriz, thiago], tags: [couple, hetero, man handing two coconuts, woman taking them, looking at each other], bubbles: [{speaker_id: beatriz, text: 'Dejte mi dva. Jeden pro mě a jeden pro to, co mi chcete říct.', kind: speech}, {speaker_id: thiago, text: 'Dva kokosy. A jedna otázka: proč jste smutná?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_stand, who: [beatriz], tags: [silent, looking at sea, sad eyes, wind], bubbles: [{speaker_id: '', text: Na módním týdnu se jí na to nikdo nezeptal., kind: narration}], gap: large}
+  - {shot: wide, loc: l_bar, who: [{beatriz: night}, {thiago: night}], tags: [couple, hetero, sitting at table, caipirinhas, string lights], bubbles: [{speaker_id: beatriz, text: Za tři dny São Paulo. Pak Milán. Pak New York. Móda je kolotoč a já se bojím vystoupit., kind: speech}, {speaker_id: thiago, text: 'A co byste dělala, kdybyste vystoupila?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bar, who: [{thiago: night}], tags: [warm smile, string lights], bubbles: [{speaker_id: thiago, text: Prodávám kokosy. Ale sním o baru. A dneska i o ženě se smutnýma očima., kind: speech}], gap: large}
+  - {shot: medium, loc: l_sand, who: [{beatriz: night}, {thiago: night}], tags: [couple, hetero, kiss, kissing, moonlight, wind in hair], gap: small}
+  - {shot: medium, loc: l_sand, who: [{beatriz: night}, {thiago: night}], tags: [couple, hetero, woman stepping back, hand on his chest, sad], bubbles: [{speaker_id: beatriz, text: Ve čtyři ráno letím. Mám smlouvu. Smlouvy jsou jako řetězy., kind: speech}, {speaker_id: thiago, text: Zůstaň., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sand, who: [{beatriz: night}], tags: [tears, looking up, moonlight], bubbles: [{speaker_id: beatriz, text: 'Poprvé jsem se necítila jako modelka, ale jako žena. To mě děsí víc než celý Milán.', kind: speech}, {speaker_id: beatriz, text: Nemůžu. Je mi to líto., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_sand, who: [{thiago: night}], tags: [standing alone, holding two coconuts, empty beach, from behind], bubbles: [{speaker_id: '', text: 'Na písku zůstane jeden kokos, který nikdo nedopil.', kind: narration}], gap: large}

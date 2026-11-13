@@ -1,0 +1,22 @@
+# Amalfi – Chvíle v paradise: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_09_amalfi
+kind: strip
+title: Amalfi – Chvíle v paradise
+world: w_rq_09_amalfi
+audience: adult
+language: cs
+style_id: webtoon_romance
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [amalfi coast, cliffs, luxury yacht, sunny day], bubbles: [{speaker_id: '', text: Amalfi. Paluba luxusní jachty., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [adrian, sari], tags: [couple, hetero, standing, looking at sea, serious expression, wind in hair], bubbles: [{speaker_id: adrian, text: Jsem nudný…, kind: speech}], gap: small}
+  - {shot: close-up, loc: l_deck, who: [sari], tags: [smile, looking at adrian, tender expression], bubbles: [{speaker_id: sari, text: Nejsi., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cabin, who: [{adrian: casual}, sari], tags: [couple, hetero, sitting on sofa, wine glasses, close proximity, soft lighting], bubbles: [{speaker_id: '', text: Večer v kajutě., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{adrian: casual}, sari], tags: [couple, hetero, removing glasses, touching chest, intimacy, blush], bubbles: [{speaker_id: adrian, text: Pomalu…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [{adrian: casual}, sari], tags: [couple, hetero, embrace, kiss, eyes closed, warm light], bubbles: [{speaker_id: adrian, text: Cítím se…, kind: speech}, {speaker_id: sari, text: Já taky., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, tags: [curtain, wind, moonlight, night], bubbles: [{speaker_id: '', text: Noc plynula v tichu., kind: narration}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{sari: morning}, {adrian: casual}], tags: [couple, hetero, sitting, looking away, sad expression, morning light], bubbles: [{speaker_id: sari, text: Mám doma přítele. Tohle byla chyba., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_deck, who: [{adrian: casual}], tags: [standing alone, looking at horizon, back to camera, melancholy, bright sun], bubbles: [{speaker_id: '', text: Adrian zůstává sám., kind: narration}], gap: large}

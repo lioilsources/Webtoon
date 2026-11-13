@@ -1,0 +1,22 @@
+# Vojta a pyramida mimo čas: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_08_piskovy_sip_pyramida_mimo_cas
+kind: strip
+title: Vojta a pyramida mimo čas
+world: w_lx_k6_08_piskovy_sip_pyramida_mimo_cas
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_pyramid_ext, tags: [pyramid construction, night sky, moonlight, sand dunes, stone blocks], bubbles: [{speaker_id: '', text: 'Egypt, noc. Stavba pyramidy.', kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, dust drifting, static camera'}
+  - {shot: wide, loc: l_pyramid_ext, who: [vojta, worker], tags: [standing, holding bow, looking at viewer, confused, stone in hand, moonlight], bubbles: [{speaker_id: vojta, text: Ahoj! Jsem z budoucnosti. Někdo tahá za nitě dějin. …A taky jsem ztratil pas časoprostoru., kind: speech}, {speaker_id: worker, text: 'Další šílenec. Včera jeden tvrdil, že kámen je z hvězd.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid_int, who: [pharaoh_spirit], tags: [floating, golden mask, glowing eyes, mysterious, stone walls, glowing runes], bubbles: [{speaker_id: pharaoh_spirit, text: 'SOUTĚŽ, CESTOVATELI! UKAŽ NÁM BUDOUCNOST. JESTLI JE LEPŠÍ, SLOŽÍME ZBRANĚ. JESTLI HORŠÍ – PŘEPÍŠEME DĚJINY!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_pyramid_int, who: [vojta], tags: [standing, holding bow, serious, determined, looking at ghost], bubbles: [{speaker_id: vojta, text: 'Podmínka: žádné přepisování bez konzultace obyvatel. Včetně koček.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid_int, who: [vojta, pharaoh_spirit], tags: [hologram, glowing blue light, airplanes, hospital, music notes, pizza, surprised, open mouth], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_pyramid_int, who: [pharaoh_spirit], tags: [floating, thinking, hand on chin, golden mask, glowing aura], bubbles: [{speaker_id: pharaoh_spirit, text: Budoucnost… není dokonalá., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pyramid_int, who: [vojta], tags: [smile, confident, holding bow, moonlight reflection in eyes], bubbles: [{speaker_id: vojta, text: Není. Ale je opravdová. Dokonalé věci se nelíbí ani jejich stavitelům., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid_int, who: [pharaoh_spirit, older_vojta], tags: [ghost fading, glowing particles, standing, golden mask, mysterious, stone walls], bubbles: [{speaker_id: older_vojta, text: 'Nesmíš to tady ukončit. Musíš nechat jednoho faraona zářit. Kdo jiný tě naučí střílet měsíčním světlem?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid_int, who: [vojta, older_vojta], tags: [looking at each other, surprised, open mouth, golden mask, bow], bubbles: [{speaker_id: vojta, text: 'Ty jsi… já? Pak prohrávám, nebo vítězím?', kind: speech}, {speaker_id: older_vojta, text: Ano., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid_ext, who: [vojta, pharaoh_spirit], tags: [walking away, back view, moonlight, pyramid silhouette, glowing aura, sand], bubbles: [{speaker_id: '', text: Vojta odchází s učitelem-faraonem. Pas zůstává v Egyptu., kind: narration}], gap: large}

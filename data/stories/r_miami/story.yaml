@@ -1,0 +1,27 @@
+# Miami – Dívka v letních šatech: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_miami
+kind: strip
+title: Miami – Dívka v letních šatech
+world: w_r_miami
+audience: adult
+language: cs
+style_id: western_comic
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_sunrise, who: [camila], tags: [holding camera, taking photo, sun hat], gap: medium}
+  - {shot: medium, loc: l_sunrise, who: [camila], tags: [wind, hat flying away, surprised, reaching out], sfx: [{text: FŮŮ!, style: bold}], gap: small}
+  - {shot: medium, loc: l_sunrise, who: [jack], tags: [catching hat, holding sun hat, smile], bubbles: [{speaker_id: jack, text: 'Myslím, že tenhle patří vám.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_sunrise, who: [camila, jack], tags: [couple, hetero, man handing hat, smile], bubbles: [{speaker_id: camila, text: Děkuju., kind: speech}, {speaker_id: jack, text: 'Fotíte?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sunrise, who: [camila], tags: [embarrassed smile, holding camera], bubbles: [{speaker_id: camila, text: Snažím se., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sunrise, who: [jack], tags: [grin], bubbles: [{speaker_id: jack, text: Tak tohle bych si rád prohlédl., kind: speech}], gap: large}
+  - {shot: wide, loc: l_surf, who: [{camila: surf}], tags: [falling off surfboard, splash, water], bubbles: [{speaker_id: camila, text: 'Tohle mělo být romantické?', kind: shout}], sfx: [{text: ŠPLOUCH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_surf, who: [{jack: surf}], tags: [laughing, standing in water, holding surfboard], bubbles: [{speaker_id: jack, text: Ještě jsem nezačal., kind: speech}], gap: large}
+  - {shot: medium, loc: l_restaurant, who: [{camila: night}], tags: [sitting, candle, looking down, shy smile], bubbles: [{speaker_id: camila, text: 'Nikdy jsem si nemyslela, že se do někoho zamiluju tak daleko od domova.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{jack: dinner}], tags: [serious, looking at viewer], bubbles: [{speaker_id: jack, text: 'A jsi zamilovaná?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{camila: night}, {jack: dinner}], tags: [couple, hetero, smiling at each other, sitting across table], bubbles: [{speaker_id: camila, text: Možná., kind: speech}, {speaker_id: jack, text: Já určitě., kind: speech}], gap: large}
+  - {shot: wide, loc: l_night, who: [{camila: night}, {jack: dinner}], tags: [couple, hetero, sitting on sand, arm around shoulder, moonlight], bubbles: [{speaker_id: camila, text: 'Ještě pořád si myslím, že nejsem dost hezká.', kind: speech}, {speaker_id: jack, text: Tak se na mě podívej., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_night, who: [{camila: night}, {jack: dinner}], tags: [couple, hetero, looking at each other, faces close, moonlight], bubbles: [{speaker_id: jack, text: 'Vidíš, co vidím já?', kind: speech}], gap: small}
+  - {shot: wide, loc: l_night, who: [{camila: night}, {jack: dinner}], tags: [couple, hetero, kiss, closed eyes, waves, moonlight], gap: large}

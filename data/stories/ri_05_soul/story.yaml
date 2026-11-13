@@ -1,0 +1,22 @@
+# Soul – Kavárna a deska: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_05_soul
+kind: strip
+title: Soul – Kavárna a deska
+world: w_ri_05_soul
+audience: adult
+language: cs
+style_id: retro_citypop
+fonts: romance
+music: pool
+panels:
+  - {shot: medium, loc: l_cafe, who: [jana], tags: [typing on laptop, tea cup, concentrated, glasses], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [jana, minho], tags: [couple, hetero, man standing at table, woman looking up], bubbles: [{speaker_id: minho, text: 'Můžeš mi doporučit?', kind: speech}, {speaker_id: jana, text: Já piju jen čaj., kind: speech}, {speaker_id: minho, text: Tak mi doporuč čaj., kind: speech}], gap: large}
+  - {shot: wide, loc: l_roof, who: [{jana: casual}, {minho: bruised}], tags: [couple, hetero, sitting on rooftop, city skyline, evening], gap: medium}
+  - {shot: medium, loc: l_roof, who: [{jana: casual}, {minho: bruised}], tags: [couple, hetero, woman pointing at his black eye, both laughing], bubbles: [{speaker_id: jana, text: Boxer s monoklem., kind: speech}, {speaker_id: minho, text: A ty s brýlemi. Sedíme si., kind: speech}], gap: large}
+  - {shot: wide, loc: l_market, who: [jana, minho], tags: [couple, hetero, eating street food, lanterns, smiling], gap: medium}
+  - {shot: medium, loc: l_market, who: [jana, minho], tags: [couple, hetero, man giving rose, woman holding rose, blush], bubbles: [{speaker_id: minho, text: 'Jano, zůstaň se mnou.', kind: speech}, {speaker_id: jana, text: Zůstanu., kind: speech}], gap: large}
+  - {shot: medium, loc: l_door, who: [jana, minho], tags: [couple, hetero, embrace, apartment entrance, coat on hook, boots by door], bubbles: [{speaker_id: '', text: 'Kabát na věšák, kozačky ke dveřím.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_door, who: [jana, minho], tags: [couple, hetero, kiss, closed eyes, warm lamp], gap: small}
+  - {shot: establishing, loc: l_door, tags: [city lights through window, night, seoul, lamp off], bubbles: [{speaker_id: '', text: Soul za oknem svítí dál., kind: narration}], gap: large}

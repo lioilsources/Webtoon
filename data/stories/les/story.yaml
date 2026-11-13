@@ -1,0 +1,26 @@
+# Záhada v lese: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: les
+kind: strip
+title: Záhada v lese
+world: w_les
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: wide, loc: l_path, who: [terezka, misa], tags: [walking, looking down, footprints, curious, cat walking ahead], bubbles: [{speaker_id: terezka, text: 'Míšo, někdo tu nechal stopy. Pojďme je sledovat!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_path, who: [misa], tags: [cat walking, meowing, open mouth, tail up, looking back], sfx: [{text: MŇAU, style: bold}], gap: small}
+  - {shot: medium, loc: l_stump, who: [terezka], tags: [squatting, holding scarf, red scarf, small scarf, curious, head tilt], bubbles: [{speaker_id: terezka, text: 'Komu patří?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_stump, who: [sova], tags: [owl on branch, perched, tree branch, looking at viewer, wise], bubbles: [{speaker_id: sova, text: 'Húú… tomu, kdo se bojí být sám.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_stump, who: [skritek], tags: [peeking out, climbing out of tree stump, teary eyes, sad, reaching out], bubbles: [{speaker_id: skritek, text: Můj šátek! Děkuju. Ztratil jsem se., kind: speech}], sfx: [{text: ŠUST, style: bold}], gap: small}
+  - {shot: medium, loc: l_stump, who: [terezka], tags: [kneeling, holding out red scarf, offering, gentle smile, kind, looking down], bubbles: [{speaker_id: terezka, text: Neboj se. Míša a já tě dovedeme domů., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_stump, who: [misa], tags: [cat rubbing, nuzzling, closed eyes, happy, purring], sfx: [{text: PRRR, style: bold}], gap: large}
+  - {shot: medium, loc: l_house, who: [skritek], tags: [standing in front of tiny house, holding basket of berries, red scarf, happy, smile, waving], bubbles: [{speaker_id: skritek, text: Jste nejlepší kamarádky. Tady máte lesní bobule., kind: speech}], gap: small}
+  - {shot: wide, loc: l_path, who: [terezka, misa], tags: [holding basket, berries, smile, happy, cat, walking home, sunset], bubbles: [{speaker_id: terezka, text: Rádi jsme pomohli!, kind: speech}], gap: large}
+choices:
+  - {kind: closed, text: Jít se skřítkem do jeho domečku pod kořeny.}
+  - {kind: closed, text: 'Zeptat se sovy, kudy vede cesta k zářícímu jezírku.'}
+  - {kind: closed, text: Poslat Míšu stopovat neznámé stopy v mechu.}
+  - {kind: free, text: 'Nebo napiš, co uděláš…'}

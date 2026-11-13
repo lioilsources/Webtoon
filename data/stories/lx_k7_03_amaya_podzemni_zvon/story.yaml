@@ -1,0 +1,22 @@
+# Amaya a podzemní zvon: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_03_amaya_podzemni_zvon
+kind: strip
+title: Amaya a podzemní zvon
+world: w_lx_k7_03_amaya_podzemni_zvon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_forge, tags: [crystal walls, glowing crystals, anvil, dark cave, blue light], bubbles: [{speaker_id: '', text: 'Podzemní kovárna, kde krystaly slabě svítí.', kind: narration}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_forge, who: [amaya, brokulda], tags: [holding giant sword, sword on back, standing, talking, determined], bubbles: [{speaker_id: brokulda, text: 'Amayo! Podzemí ztrácí ODVAHU! Lidé se bojí spát, bojí se chodit. Lichkrál Zinul ji sbírá do jednoho krystalu.', kind: speech}, {speaker_id: amaya, text: Tak mu ji vrátíme. Pořádně., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_tunnel, who: [amaya, hornik], tags: [hand on shoulder, comforting, trembling, holding lantern, sad], bubbles: [{speaker_id: hornik, text: Nemůžu jít dál. Ztratil jsem odvahu., kind: speech}, {speaker_id: amaya, text: 'Půjčím ti ji. Na tři kroky. Pak uvidíš, že jsi ji měl celou dobu.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_tunnel, who: [hornik], tags: [walking, smile, relieved, lantern, walking away], bubbles: [{speaker_id: hornik, text: Díky..., kind: speech}], gap: small}
+  - {shot: medium, loc: l_tunnel, who: [amaya], tags: [smile, confident, looking at viewer, sword on back], bubbles: [{speaker_id: amaya, text: Odvaha se nepůjčuje. Odvaha se připomíná., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_hall, who: [amaya, zinul], tags: [throne, holding crystal, glowing crystal, standing, talking, dark room], bubbles: [{speaker_id: zinul, text: 'Přišla jsi pro krystal, Mečová? Já se nikdy NEBOJÍM.', kind: speech}, {speaker_id: amaya, text: Strach bez radosti není odvaha. Strach je škola. Bez strachu se nikdy nenaučíš nic., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_hall, who: [amaya, zinul], tags: [energy blast, black energy, raising sword, glowing sword, action pose], bubbles: [{speaker_id: amaya, text: Vlna odvahy!, kind: shout}], sfx: [{text: BOOM!, style: bold}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: wide, loc: l_hall, who: [zinul, metal_boy], tags: [crystal breaking, shards, light rainbow, falling, robot sitting, trembling], bubbles: [{speaker_id: metal_boy, text: 'Já se bojím. Poprvé za sto let. A je to… úžasné?', kind: speech}], sfx: [{text: CRACK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_hall, who: [amaya, metal_boy], tags: [kneeling, smile, kind smile, looking at robot], bubbles: [{speaker_id: amaya, text: 'Vítej zpátky mezi živými. Bojíš se? Znamená to, že tě ještě něco má rádo.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_hall, who: [brokulda, amaya], tags: [looking at broken crystal, sad smile, standing, dark background], bubbles: [{speaker_id: brokulda, text: 'Krystal je prasklý. Ale jeden kousek odvahy se ztratil někde v podzemí. Jednoho dne ho najde dítě, které ho bude nejvíc potřebovat.', kind: speech}, {speaker_id: amaya, text: Tak to je dobře., kind: speech}], gap: large}

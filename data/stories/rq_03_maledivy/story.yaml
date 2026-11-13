@@ -1,0 +1,23 @@
+# Malé Maledivy – Přesně to, co jsem hledal: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_03_maledivy
+kind: strip
+title: Malé Maledivy – Přesně to, co jsem hledal
+world: w_rq_03_maledivy
+audience: adult
+language: cs
+style_id: flat_anime_mema
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bungalow, tags: [overwater bungalow, turquoise sea, sunny, tropical paradise], bubbles: [{speaker_id: '', text: Malé Maledivy. Overwater bungalov., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_bungalow, who: [aisha], tags: [standing on deck, looking at water, pensive, wind in hair], bubbles: [{speaker_id: aisha, text: Moje prsa jsou moc malá…, kind: thought}], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [kai], tags: [arriving on kayak, smiling, looking up, sunlight], gap: small}
+  - {shot: medium, loc: l_bungalow, who: [aisha, kai], tags: [couple, hetero, eye contact, blush, smiling, facing each other], bubbles: [{speaker_id: kai, text: 'Ty jsi přesně to, co jsem hledal.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{aisha: dinner}, {kai: dinner}], tags: [couple, hetero, sitting at table, sunset, holding hands, laughing, wine glasses], bubbles: [{speaker_id: '', text: Večeře na pláži pod hvězdami., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [{aisha: dinner}, {kai: dinner}], tags: [couple, hetero, kissing, closed eyes, romantic, sunset light], gap: large}
+  - {shot: medium, loc: l_bedroom, who: [{aisha: dinner}, {kai: dinner}], tags: [couple, hetero, touching shoulder, standing, intimate, warm light], bubbles: [{speaker_id: kai, text: Nech mě tě obdivovat., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{aisha: dinner}, {kai: dinner}], tags: [couple, hetero, embrace, kissing neck, closed eyes, soft lighting], gap: small}
+  - {shot: medium, loc: l_bedroom, tags: [curtain, wind, moonlight, empty room, romantic atmosphere], bubbles: [{speaker_id: '', text: Noc se pomalu rozprostírá nad oceánem., kind: narration}], gap: large}
+  - {shot: medium, loc: l_bedroom, who: [{aisha: morning}, kai], tags: [couple, hetero, cuddling, forehead kiss, smiling, morning light], bubbles: [{speaker_id: aisha, text: Cítím se ženská., kind: speech}, {speaker_id: kai, text: Protože jsi., kind: speech}], gap: large}

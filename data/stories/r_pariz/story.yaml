@@ -1,0 +1,26 @@
+# Paříž – Zrzka a muž v modrém saku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_pariz
+kind: strip
+title: Paříž – Zrzka a muž v modrém saku
+world: w_r_pariz
+audience: adult
+language: cs
+style_id: watercolor_paris
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_montmartre, who: [sofie], tags: [walking up stairs, wind, hair blowing, holding sketchbook], gap: medium}
+  - {shot: medium, loc: l_montmartre, who: [sofie], tags: [sketchbook flying, paper flying, surprised, reaching out], sfx: [{text: FÍÍÍ, style: bold}], gap: small}
+  - {shot: medium, loc: l_montmartre, who: [mathieu], tags: [catching sketchbook, holding sketchbook, smile], bubbles: [{speaker_id: mathieu, text: 'Tohle hledáte?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_montmartre, who: [sofie, mathieu], tags: [couple, hetero, man handing sketchbook, looking at each other], bubbles: [{speaker_id: sofie, text: Ano., kind: speech}, {speaker_id: mathieu, text: Máte krásné kresby., kind: speech}, {speaker_id: sofie, text: 'To říkáte každé cizince?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_montmartre, who: [mathieu], tags: [smirk, gentle eyes], bubbles: [{speaker_id: mathieu, text: 'Ne. Jen těm, které mě zaujmou.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_gallery, who: [sofie, mathieu], tags: [couple, hetero, walking, looking at painting], bubbles: [{speaker_id: '', text: Sofie dostane práci v malé galerii., kind: narration}, {speaker_id: sofie, text: Vždycky jsem chtěla žít v Paříži., kind: speech}, {speaker_id: mathieu, text: 'A teď?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gallery, who: [sofie], tags: [looking away, worried], bubbles: [{speaker_id: sofie, text: 'Teď se bojím, že sem nepatřím.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gallery, who: [mathieu], tags: [turning, looking at viewer, smile], bubbles: [{speaker_id: mathieu, text: Paříž není klub s členskou kartou., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bistro, who: [{sofie: red_dress}], tags: [sitting at table, candle, blush, looking away], bubbles: [{speaker_id: sofie, text: 'Co je?', kind: speech}, {speaker_id: mathieu, text: 'Přemýšlím, proč se pořád snažíš být méně nápadná.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bistro, who: [{sofie: red_dress}], tags: [sad smile, candlelight], bubbles: [{speaker_id: sofie, text: Protože jsem celý život byla příliš nápadná., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bistro, who: [mathieu], tags: [looking at viewer, gentle smile, candlelight], bubbles: [{speaker_id: mathieu, text: Mně se líbíš přesně taková., kind: speech}], gap: large}
+  - {shot: wide, loc: l_seine, who: [{sofie: red_dress}, mathieu], tags: [couple, hetero, holding hands, walking, night], bubbles: [{speaker_id: mathieu, text: 'Mohu tě políbit?', kind: speech}, {speaker_id: sofie, text: Tentokrát se nemusíš ptát., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_seine, who: [{sofie: red_dress}, mathieu], tags: [couple, hetero, kiss, closed eyes, eiffel tower in background, night], gap: large}

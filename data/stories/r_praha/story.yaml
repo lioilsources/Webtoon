@@ -1,0 +1,28 @@
+# Praha – Muž, který nevěřil na lásku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_praha
+kind: strip
+title: Praha – Muž, který nevěřil na lásku
+world: w_r_praha
+audience: adult
+language: cs
+style_id: webtoon_romance
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_garage, who: [nina], tags: [standing by car, arms crossed], bubbles: [{speaker_id: adam, text: 'Co se stalo?', kind: speech}, {speaker_id: nina, text: Auto přestalo poslouchat., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_garage, who: [adam], tags: [wiping hands, rag, smirk], bubbles: [{speaker_id: adam, text: 'A vy?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_garage, who: [nina], tags: [smile, confident], bubbles: [{speaker_id: nina, text: Já poslouchám vždycky., kind: speech}], gap: large}
+  - {shot: medium, loc: l_garage, who: [adam], tags: [talking on phone, holding phone, smile], bubbles: [{speaker_id: adam, text: Auto je hotové., kind: speech}, {speaker_id: nina, text: 'Kolik dlužím?', kind: speech}, {speaker_id: adam, text: Jednu kávu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bridge, who: [nina], tags: [holding phone, laughing], bubbles: [{speaker_id: nina, text: To je velmi drahá oprava., kind: speech}, {speaker_id: adam, text: Byl to složitý problém., kind: speech}], gap: large}
+  - {shot: wide, loc: l_bridge, who: [nina, {adam: walk}], tags: [couple, hetero, walking, old town], bubbles: [{speaker_id: nina, text: 'Víš, co je můj problém?', kind: speech}, {speaker_id: adam, text: 'Jaký?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bridge, who: [nina], tags: [looking down, vulnerable], bubbles: [{speaker_id: nina, text: 'Vždycky čekám, že mě někdo odmítne, ještě než mě pozná.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bridge, who: [nina, {adam: walk}], tags: [couple, hetero, holding hands], bubbles: [{speaker_id: adam, text: Tak mě nech poznat tě., kind: speech}], gap: large}
+  - {shot: medium, loc: l_restaurant, who: [{nina: black_dress}], tags: [sitting, surprised, smile], bubbles: [{speaker_id: nina, text: 'Nikdy bych neřekla, že automechanik může vypadat takhle.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{adam: jacket}], tags: [smile, leaning forward], bubbles: [{speaker_id: adam, text: 'A já nikdy neřekl, že fotografka může být tak nebezpečná.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{nina: black_dress}], tags: [laughing], bubbles: [{speaker_id: nina, text: 'Nebezpečná?', kind: speech}, {speaker_id: adam, text: Ukradla jsi mi srdce., kind: speech}], gap: large}
+  - {shot: wide, loc: l_night, who: [{nina: black_dress}, {adam: jacket}], tags: [couple, hetero, hug, night, city lights], bubbles: [{speaker_id: nina, text: 'Myslíš, že tohle vydrží?', kind: speech}, {speaker_id: adam, text: Nevím., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_night, who: [{nina: black_dress}], tags: [pout, amused], bubbles: [{speaker_id: nina, text: To není moc romantické., kind: speech}, {speaker_id: adam, text: Tak jinak., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_night, who: [{nina: black_dress}, {adam: jacket}], tags: [couple, hetero, kiss, closed eyes, night], gap: small}
+  - {shot: medium, loc: l_night, who: [{nina: black_dress}, {adam: jacket}], tags: [couple, hetero, hug, smile, closed eyes], bubbles: [{speaker_id: adam, text: 'Chci zjistit, jestli ano.', kind: speech}], gap: large}

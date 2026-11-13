@@ -1,0 +1,23 @@
+# Mastné ruce, čisté srdce: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_08_miami
+kind: strip
+title: Mastné ruce, čisté srdce
+world: w_re_08_miami
+audience: adult
+language: cs
+style_id: western_comic
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_garage, who: [diego], tags: [lying under car, only legs visible, tools], gap: medium}
+  - {shot: medium, loc: l_garage, who: [carmen], tags: [hurrying, holding briefcase, worried], bubbles: [{speaker_id: carmen, text: Pane mechaniku. Moje auto umřelo a já mám jednu hodinu na případ zbytku života., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_garage, who: [diego], tags: [crawling out from under car, greasy, grin, talking to car], bubbles: [{speaker_id: diego, text: 'Hola, bonita. Probouzíme se.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_garage, who: [carmen], tags: [laughing, surprised], bubbles: [{speaker_id: carmen, text: 'Vy s auty mluvíte španělsky?', kind: speech}, {speaker_id: diego, text: Všechno dobré na světě mluví španělsky., kind: speech}], sfx: [{text: VRRRM, style: bold}], gap: large}
+  - {shot: medium, loc: l_coffee, who: [carmen], tags: [holding coffee cup, soft smile], bubbles: [{speaker_id: carmen, text: Všichni mě vidí jako advokátku. Vy jste řekl ‚žena ve spěchu‘. To bylo… lidské., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_coffee, who: [diego], tags: [holding coffee cup, wiping forehead with handkerchief], bubbles: [{speaker_id: diego, text: 'Hledal jsem ženu, která pozná, že mastné ruce můžou být čisté.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{diego: clean}], tags: [walking on sand, clean, hair down, evening], bubbles: [{speaker_id: carmen, text: Vypadáte jinak., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_beach, who: [{carmen: evening}], tags: [smile, wind in hair], bubbles: [{speaker_id: carmen, text: Jsem zvyklá vyhrávat spory. Ale s vámi nechci vyhrát. Chci remízu. Napořád., kind: speech}], gap: small}
+  - {shot: medium, loc: l_beach, who: [{carmen: evening}, {diego: clean}], tags: [couple, hetero, hug, careful embrace, closed eyes], gap: medium}
+  - {shot: wide, loc: l_beach, who: [{carmen: evening}, {diego: clean}], tags: [couple, hetero, kiss, sand, ocean, storm clouds on horizon], bubbles: [{speaker_id: '', text: 'Na obzoru bouřka, která se rozhodne počkat.', kind: narration}], gap: large}

@@ -1,0 +1,21 @@
+# Jakarta – Muž z kanceláře: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_09_jakarta
+kind: strip
+title: Jakarta – Muž z kanceláře
+world: w_rb_09_jakarta
+audience: adult
+language: cs
+style_id: photo_cyberreal_night
+fonts: romance
+music: pool
+panels:
+  - {shot: medium, loc: l_cafe, who: [adrian], tags: [sitting, coffee cup, laptop, tired, alone], bubbles: [{speaker_id: adrian, text: Všichni chtějí dobrodružství… já jsem jen čísla., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [{sari: tray}], tags: [carrying tray, smile, looking at viewer], bubbles: [{speaker_id: sari, text: 'Vypadáte, jako byste potřeboval něco silnějšího než kávu.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [adrian], tags: [surprised, small smile], gap: large}
+  - {shot: wide, loc: l_market, who: [sari, adrian], tags: [couple, hetero, walking through market, street food, lights], bubbles: [{speaker_id: sari, text: 'Pracuju tady. A vy?', kind: speech}, {speaker_id: adrian, text: 'Přijel jsem z Londýna. Hledám něco, co není v tabulkách.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_canal, who: [sari, adrian], tags: [couple, hetero, walking along canal, night, lanterns], gap: medium}
+  - {shot: close-up, loc: l_canal, who: [sari, adrian], tags: [couple, hetero, kiss, closed eyes, gentle], bubbles: [{speaker_id: adrian, text: Ty mě vidíš jinak., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [adrian], tags: [sitting, city lights, relaxed smile, no tie], bubbles: [{speaker_id: adrian, text: Poprvé se necítím nudný., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [sari, adrian], tags: [couple, hetero, holding hands across table, smile, neon lights], bubbles: [{speaker_id: sari, text: Protože nejsi., kind: speech}], gap: large}

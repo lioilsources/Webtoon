@@ -1,0 +1,24 @@
+# Capri – Zlato a sůl: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_01_capri
+kind: strip
+title: Capri – Zlato a sůl
+world: w_rk_01_capri
+audience: adult
+language: cs
+style_id: photo_juggernaut
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_marina, tags: [yachts, harbor, lemon trees, cliffs, sunset], bubbles: [{speaker_id: '', text: 'Capri. Jachty cinkají, citronovníky voní.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_marina, who: [valentina], tags: [walking along harbor, holding scarf, confident smile, wind], bubbles: [{speaker_id: valentina, text: Rozvod oslavím tím nejlepším jídlem života., kind: thought}], gap: medium}
+  - {shot: close-up, loc: l_marina, who: [valentina], tags: [silk scarf flying in wind, surprised, hand reaching], sfx: [{text: FÍÍ!, style: bold}], gap: small}
+  - {shot: medium, loc: l_marina, who: [mathias], tags: [sitting at cafe table, cocktail glass with silk scarf inside, amused, raised eyebrow], bubbles: [{speaker_id: mathias, text: 'Buď je tohle nejlepší seznamka v Evropě, nebo se větru zalíbil můj drink.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_marina, who: [valentina, mathias], tags: [couple, hetero, woman laughing, man handing back scarf, cafe table, sunset], bubbles: [{speaker_id: valentina, text: Větru. Ale vám nechám spropitné za inscenaci., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_boat, who: [{valentina: sea}, mathias], tags: [couple, hetero, sitting on stern of boat, feet in water, sunset, faraglioni rocks], bubbles: [{speaker_id: '', text: Plavba kolem Faraglioni., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_boat, who: [{valentina: sea}], tags: [bare foot touching sea water, gold anklet, ripples], gap: small}
+  - {shot: medium, loc: l_boat, who: [{valentina: sea}, mathias], tags: [couple, hetero, kiss, sunset backlight, eyes closed, wind in hair], bubbles: [{speaker_id: '', text: 'Polibek při západu slunce. Slaný, pomalý.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [valentina, mathias], tags: [couple, hetero, standing in doorway, man embracing woman from behind, chin on her shoulder, moonlight], bubbles: [{speaker_id: valentina, text: Dnes žádné spěchání. Dnes si tě vychutnám jako večeři., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_villa, tags: [closed door, lamp turned off, sheer curtains moving, moonlight on sea, no humans], bubbles: [{speaker_id: '', text: Dveře se zavřou. Lampa zhasne. Moře doplétá příběh dál., kind: narration}], gap: large}
+  - {shot: wide, loc: l_boat, who: [{valentina: wedding}, {mathias: wedding}], tags: [couple, hetero, wedding on boat, holding hands, flowers, smiling, sunset, yachts], bubbles: [{speaker_id: '', text: O rok později se na stejné lodi berou., kind: narration}, {speaker_id: mathias, text: Jachty pořád cinkají., kind: speech}], gap: medium}

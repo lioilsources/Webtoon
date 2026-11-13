@@ -1,0 +1,22 @@
+# Pařížský kovboj: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_04_pariz
+kind: strip
+title: Pařížský kovboj
+world: w_rc_04_pariz
+audience: adult
+language: cs
+style_id: art_nouveau_mucha
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_seine, who: [priya], tags: [sitting, drawing in sketchbook, riverbank], gap: medium}
+  - {shot: medium, loc: l_seine, who: [logan], tags: [holding map, confused, cowboy hat], bubbles: [{speaker_id: logan, text: 'Promiňte, nevíte, kde je výstaviště?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_seine, who: [priya, logan], tags: [couple, hetero, looking up at man, smile, sketchbook], bubbles: [{speaker_id: priya, text: 'Vy jste kovboj v Paříži?', kind: speech}, {speaker_id: logan, text: 'A vy jste princezna, která kreslí?', kind: speech}, {speaker_id: priya, text: 'Já? Princezna? Ani ne.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_fair, who: [logan], tags: [swinging lasso, lasso, crowd watching], bubbles: [{speaker_id: logan, text: Tady si připadám jako atrakce., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_fair, who: [priya], tags: [holding camera, taking photo, small smile], bubbles: [{speaker_id: priya, text: A já si tady připadám moc malá., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_fair, who: [logan], tags: [gentle smile, tipping hat], bubbles: [{speaker_id: logan, text: Mně nepřipadáte malá. Připadáte mi akorát., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [priya, {logan: nohat}], tags: [couple, hetero, sitting across table, rain on window, man holding hat], bubbles: [{speaker_id: logan, text: 'Priyo, můžu tě pozvat na večeři? Neumím francouzsky, ale umím mlčet.', kind: speech}, {speaker_id: priya, text: To je nabídka k nezaplacení., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bridge, who: [priya, logan], tags: [couple, hetero, man giving small sheriff star badge, holding badge, night], bubbles: [{speaker_id: logan, text: Pro mou múzu., kind: speech}, {speaker_id: priya, text: Pro mého kovboje., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_bridge, who: [priya, logan], tags: [couple, hetero, hug, kiss, closed eyes, night, city lights], gap: large}
