@@ -114,6 +114,9 @@ def set_faces(img, boxes, crop=None):
     img._faces = out
 
 
+STACK_GAP = 50  # a bubble stacked below the previous one starts this far under it
+
+
 def measure(d, W, bubble):
     """Font, wrapped lines, line height and the bw×bh box of a bubble on a W-wide image."""
     kind = bubble.get("kind", "speech")
@@ -135,7 +138,7 @@ def draw_bubble(img, bubble, slot, n_slots, later=()):
     margin = B["margin"]
     faces = getattr(img, "_faces", [])
     if faces:
-        reserve = sum(measure(d, W, b)[4] + R["faces"]["bubble_gap"] for b in later)
+        reserve = sum(measure(d, W, b)[4] + STACK_GAP for b in later)
         x, y = place_off_faces(W, max(H - reserve, bh + 2 * margin), bw, bh, kind, slot, faces,
                                getattr(img, "_bubbles", []), margin, getattr(img, "_sfx", []))
     elif kind == "narration":
@@ -147,7 +150,7 @@ def draw_bubble(img, bubble, slot, n_slots, later=()):
     # Two long bubbles would overlap side by side: put the later one below the previous.
     for px0, py0, px1, py1 in getattr(img, "_bubbles", []):
         if x < px1 and px0 < x + bw and y < py1 + 30 and py0 < y + bh:
-            y = py1 + 50
+            y = py1 + STACK_GAP
     img._bubbles = getattr(img, "_bubbles", []) + [(x, y, x + bw, y + bh)]
     box = (x, y, x + bw, y + bh)
 
