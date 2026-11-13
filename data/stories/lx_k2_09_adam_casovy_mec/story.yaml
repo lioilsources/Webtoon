@@ -1,0 +1,23 @@
+# Adam a časový meč: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_09_adam_casovy_mec
+kind: strip
+title: Adam a časový meč
+world: w_lx_k2_09_adam_casovy_mec
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_museum, tags: [glass case, old sword, dust, dim light, no humans], bubbles: [{speaker_id: '', text: Adam se dotkne starého meče., kind: narration}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: close-up, loc: l_museum, who: [adam], tags: [touching sword, surprised, open mouth, glowing sword, electricity], sfx: [{text: BLESK!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_temple, who: [adam, nora], tags: [standing, looking at each other, stone pillars, mysterious light, robotic arm], bubbles: [{speaker_id: nora, text: Ty nejsi z tohoto času., kind: speech}, {speaker_id: adam, text: To je docela přesné., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_temple, who: [pharaoh3000, adam, nora], tags: [robot standing, glowing red eyes, menacing, heroes looking up, surprised], bubbles: [{speaker_id: pharaoh3000, text: Čas patří mně., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_temple, who: [nora, adam], tags: [holding shield, energy shield, glowing blue, determined, robotic arm, adam looking at nora], bubbles: [{speaker_id: adam, text: 'Co uděláme?', kind: speech}, {speaker_id: nora, text: Utíkej., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_temple, who: [adam, nora], tags: [confused, tilting head, holding sword, question mark, nora looking at adam], bubbles: [{speaker_id: adam, text: 'To je plán?', kind: speech}, {speaker_id: nora, text: Zatím., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_temple, who: [shadow, adam, nora], tags: [black smoke, glowing purple eyes, floating, heroes looking up, dark atmosphere], bubbles: [{speaker_id: shadow, text: Všechny časy budou moje., kind: speech}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_temple, who: [adam], tags: [holding sword, glowing sword, determined, blue light, time stop effect], gap: medium}
+  - {shot: wide, loc: l_temple, who: [adam, nora], tags: [nora moving, adam frozen, time stop, blue aura, droning], bubbles: [{speaker_id: nora, text: Dokázal jsi to., kind: speech}, {speaker_id: adam, text: Teď ty., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_void, who: [nora, shadow], tags: [drone, blue energy, trapping, black smoke, portal], gap: medium}
+  - {shot: medium, loc: l_void, who: [adam, nora], tags: [shaking hands, sad, closed eyes, time portal opening, blue light], bubbles: [{speaker_id: nora, text: Možná se nikdy neuvidíme., kind: speech}, {speaker_id: adam, text: Možná., kind: speech}], gap: large}

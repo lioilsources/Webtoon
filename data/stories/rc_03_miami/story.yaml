@@ -1,0 +1,23 @@
+# Miamské zastavení: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_03_miami
+kind: strip
+title: Miamské zastavení
+world: w_rc_03_miami
+audience: adult
+language: cs
+style_id: western_comic
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_gas, who: [roisin], tags: [standing by car, smoke, annoyed, holding hat], gap: medium}
+  - {shot: medium, loc: l_gas, who: [carlos], tags: [leaning out of pickup truck window, smile], bubbles: [{speaker_id: carlos, text: 'Potřebujete pomoct?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_gas, who: [roisin, carlos], tags: [couple, hetero, man walking to car, woman arms crossed, smirk], bubbles: [{speaker_id: roisin, text: Jen když umíte opravit auto a nezírat přitom., kind: speech}, {speaker_id: carlos, text: Umím obojí. Teda to první., kind: speech}], gap: large}
+  - {shot: medium, loc: l_shop, who: [roisin], tags: [sitting on chair, looking down, sad], bubbles: [{speaker_id: roisin, text: 'V Miami si připadám, že mám špatnou postavu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_shop, who: [carlos], tags: [repairing car, dirty hands, smile, looking back], bubbles: [{speaker_id: carlos, text: Já mám špinavé ruce a taky se tím netrápím., kind: speech}, {speaker_id: roisin, text: To je jiné., kind: speech}, {speaker_id: carlos, text: Každý má něco. Vy máte krásný klobouk., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [rosa], tags: [holding tray, pastries, grin], bubbles: [{speaker_id: rosa, text: 'Carlosi, představ mi tu slečnu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [roisin, {carlos: clean}], tags: [couple, hetero, sitting at table, coffee cups, laughing], bubbles: [{speaker_id: carlos, text: 'Teto, to je Róisín. Opravuju jí auto.', kind: speech}, {speaker_id: rosa, text: 'A už jsi jí řekl, že jsi nejlepší tanečník v ulici?', kind: speech}, {speaker_id: roisin, text: To bych ráda viděla., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cafe, who: [roisin, {carlos: clean}], tags: [couple, hetero, dancing together, salsa, laughing, holding hands], gap: large}
+  - {shot: wide, loc: l_shore, who: [roisin, {carlos: clean}], tags: [couple, hetero, walking along sea, evening], bubbles: [{speaker_id: carlos, text: Zítra přijdu s hotovým autem. A s kytkou., kind: speech}, {speaker_id: roisin, text: To je hodně oprav., kind: speech}, {speaker_id: carlos, text: Nejlepší investice., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_shore, who: [roisin, {carlos: clean}], tags: [couple, hetero, kiss, under street lamp, closed eyes, night], gap: large}

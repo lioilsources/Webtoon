@@ -1,0 +1,23 @@
+# Londýnský déšť a horký čaj: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_04_londyn
+kind: strip
+title: Londýnský déšť a horký čaj
+world: w_ra_04_londyn
+audience: adult
+language: cs
+style_id: pastel_shoujo
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_station, tags: [glass roof, iron arches, rain], bubbles: [{speaker_id: '', text: Nádraží St. Pancras. Venku leje jako z konve., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_station, who: [mayumi], tags: [pulling huge suitcase, oversized suitcase, struggling, tired], gap: medium}
+  - {shot: medium, loc: l_station, who: [mayumi], tags: [out of breath, sweatdrop, holding suitcase handle], bubbles: [{speaker_id: mayumi, text: 'Proč jsem si nabalila tolik věcí?', kind: thought}], gap: small}
+  - {shot: close-up, loc: l_station, who: [mayumi], tags: [sad, lonely, looking down], bubbles: [{speaker_id: mayumi, text: Jsem tu tak ztracená... Malá holka ve velkém městě., kind: thought}], gap: large}
+  - {shot: medium, loc: l_tea, who: [mayumi], tags: [sitting at table, stirring tea, teacup, quiet], bubbles: [{speaker_id: '', text: Tradiční londýnská čajovna., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_tea, who: [jack], tags: [sitting down, cowboy hat bumping flower vase, vase tipping, surprised], gap: small}
+  - {shot: medium, loc: l_tea, who: [{jack: hatless}], tags: [taking off hat, apologizing, embarrassed], bubbles: [{speaker_id: jack, text: 'Proboha, ma''am, moc se omlouvám! Jsem v tomhle městě velký jako slon v porcelánu.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_tea, who: [mayumi], tags: [small smile, shy, looking up], bubbles: [{speaker_id: mayumi, text: 'To nic není... Já si tu zase připadám tak malá, že mě lidé přehlížejí.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_tea, who: [mayumi, {jack: hatless}], tags: [couple, hetero, sitting at same table, height difference, gentle gaze, teacups, fireplace], bubbles: [{speaker_id: jack, text: 'Přehlédnout někoho s tak kouzelným úsměvem? To by musel být člověk slepý.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_tea, who: [mayumi, {jack: hatless}], tags: [couple, hetero, smiling at each other, blush, rain on window, warm light], bubbles: [{speaker_id: jack, text: 'Mohu vám nabídnout společnost, než venku přestane pršet?', kind: speech}], gap: large}

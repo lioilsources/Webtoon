@@ -1,0 +1,23 @@
+# David a ztracené pondělí: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_09_david_duch_z_hodin
+kind: strip
+title: David a ztracené pondělí
+world: w_lx_k7_09_david_duch_z_hodin
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_tower, tags: [clock tower, night sky, stars, moon, no humans], bubbles: [{speaker_id: '', text: Stará hodinová věž v noci., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, city lights blinking, static camera'}
+  - {shot: medium, loc: l_tower, who: [ponocny, david], tags: [standing, talking, gears in background, pointing, serious face], bubbles: [{speaker_id: ponocny, text: Davide. Přicházíš pozdě. Ale teď to nevadí – někdo maže pondělky., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_tower, who: [david], tags: [adjusting glasses, confused, furrowed brows, looking up], bubbles: [{speaker_id: david, text: 'Někdo dělá co?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gears, who: [david, souboj], tags: [floating, glowing cloak, standing, facing each other, giant gears, magical atmosphere], bubbles: [{speaker_id: souboj, text: 'Ty jsi ten kluk, co zastavuje čas? Já ho taky zastavuju – ale trvale.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gears, who: [souboj], tags: [sad expression, looking down, grey aura, melancholy], bubbles: [{speaker_id: souboj, text: 'Jednoho pondělí se mi stalo něco smutného. Když nebude pondělí, nic smutného se nemůže stát.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_gears, who: [david, souboj], tags: [sitting on gear, talking, calm, gears rotating slowly, soft light], bubbles: [{speaker_id: david, text: 'Když smažeš pondělí, smažeš obojí. Smích i pomoc.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_gears, who: [david, souboj], tags: [energy wave, grey light, stopping time, frozen motion, tense, glowing watch], bubbles: [{speaker_id: david, text: 'Vidíš? V téhle vteřině se nic nestalo. Nic smutného. Ale ani nic dobrého.', kind: speech}], sfx: [{text: TIK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_gears, who: [souboj], tags: [sitting on gear, sad, looking at hands, glowing aura dimmed], bubbles: [{speaker_id: souboj, text: 'To pondělí jsem přišel o někoho. Myslel jsem, že když smažu pondělí, vrátí se.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gears, who: [david], tags: [smiling gently, hand on shoulder, comforting, warm light], bubbles: [{speaker_id: david, text: 'Vzpomínky se dají vyprávět. Místo mazání, vyprávěj.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_tower, who: [souboj, david], tags: [sunrise, golden light, looking out window, holding calendar, peaceful], bubbles: [{speaker_id: souboj, text: 'Vrátíme ho do kalendáře – nebo ho necháme prázdné?', kind: speech}], gap: medium, animate: 'ambient only, characters still, stars twinkling, clouds drifting slowly, static camera'}
+  - {shot: close-up, loc: l_tower, who: [david], tags: [looking at calendar, blank square, hand holding pen, hesitant, focus], bubbles: [{speaker_id: david, text: '…Co byste udělal vy?', kind: speech}], gap: large}

@@ -1,0 +1,24 @@
+# Romantika u jezera Como: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_08_como
+kind: strip
+title: Romantika u jezera Como
+world: w_rg_08_como
+audience: adult
+language: cs
+style_id: semireal_25d
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_gala, tags: [villa garden, lanterns, moonlight on lake], bubbles: [{speaker_id: '', text: Jezero Como. Dobročinný galavečer., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_gala, who: [max], tags: [standing alone holding champagne glass, bored, looking at watch], gap: medium}
+  - {shot: medium, loc: l_gala, who: [max, aurelia], tags: [couple, hetero, woman approaching, smiling, lanterns, man turning], bubbles: [{speaker_id: aurelia, text: 'Vypadáte, že počítáte minuty do konce.', kind: speech}, {speaker_id: max, text: 'Počítal. Teď počítám, kolik jich zbývá s vámi.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gala, who: [aurelia], tags: [laughing, green eyes, pearl earrings, lantern light], bubbles: [{speaker_id: aurelia, text: 'Tak je nepočítejte, Maxi.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_gala, who: [max, aurelia], tags: [couple, hetero, walking along terrace by the lake, moonlight, talking, close], bubbles: [{speaker_id: '', text: 'Mluví o knihách, o hvězdách, o všem kromě zítřka.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_suite, who: [max, aurelia], tags: [couple, hetero, standing on balcony, embrace, moonlight on lake], bubbles: [{speaker_id: max, text: 'Miluju tě, Aurelie.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_suite, who: [max, aurelia], tags: [couple, hetero, kiss, moonlight, eyes closed], gap: medium}
+  - {shot: wide, loc: l_suite, tags: [balcony curtains moving in the wind, moonlight on lake, night], bubbles: [{speaker_id: '', text: Záclony se vlní. Jezero mlčí., kind: narration}], gap: large}
+  - {shot: medium, loc: l_breakfast, who: [{aurelia: morning}, fiance], tags: [couple, hetero, older man entering terrace, stern, woman standing up, shocked], gap: medium}
+  - {shot: close-up, loc: l_breakfast, who: [{aurelia: morning}], tags: [tears in eyes, looking back, whisper], bubbles: [{speaker_id: aurelia, text: 'Odpusť mi, Maxe... Tahle noc byla můj sen. Ale můj život patří mé rodině.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_breakfast, who: [{max: morning}], tags: [alone, leaning on railing, looking at cold lake, from behind, morning mist], gap: large}

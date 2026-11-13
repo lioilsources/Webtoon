@@ -1,0 +1,25 @@
+# Kjóto – Déšť mezi sakurami: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_02_kyoto
+kind: strip
+title: Kjóto – Déšť mezi sakurami
+world: w_rf_02_kyoto
+audience: adult
+language: cs
+style_id: ink_wash
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_street, tags: [cherry blossoms, narrow street, petals falling], bubbles: [{speaker_id: '', text: Kjóto. Jaro., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_street, who: [maya], tags: [riding bicycle, coat flowing, petals], gap: medium}
+  - {shot: medium, loc: l_street, who: [adrian], tags: [crashing bicycle into bike rack, falling, surprised], sfx: [{text: BÁC!, style: bold}], gap: small}
+  - {shot: medium, loc: l_street, who: [maya, adrian], tags: [couple, hetero, woman bending over man, concerned, man smiling sheepishly], bubbles: [{speaker_id: maya, text: 'Jste v pořádku?', kind: speech}, {speaker_id: adrian, text: Ano. Jen jsem se snažil sledovat vás., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_street, who: [maya], tags: [blush, looking away, adjusting glasses], gap: large}
+  - {shot: wide, loc: l_forest, who: [{maya: rain}, {adrian: rain}], tags: [couple, hetero, hiking, rain, running to shelter], bubbles: [{speaker_id: '', text: Výlet do hor. Déšť., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [{maya: rain}, {adrian: rain}], tags: [couple, hetero, under shelter, man handing towel, woman holding wet coat], bubbles: [{speaker_id: adrian, text: Jsi nádherná., kind: speech}, {speaker_id: maya, text: 'To říkáš jen proto, že prší.', kind: speech}, {speaker_id: adrian, text: Právě proto., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [{maya: rain}, {adrian: rain}], tags: [couple, hetero, kiss, rain, eyes closed], gap: large}
+  - {shot: medium, loc: l_ryokan, who: [{maya: silk}, adrian], tags: [couple, hetero, sitting side by side on tatami, embrace, paper lamp], bubbles: [{speaker_id: maya, text: Zítra odjíždíš., kind: speech}, {speaker_id: adrian, text: Ano., kind: speech}, {speaker_id: maya, text: Tak na zítřek nemysleme., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_ryokan, tags: [paper lamp turned off, shoji screen, two silhouettes embracing behind shoji, dark], bubbles: [{speaker_id: '', text: Zhasnou lampu., kind: narration}], gap: large}
+  - {shot: medium, loc: l_station, who: [maya, {adrian: travel}], tags: [couple, hetero, platform, man holding suitcase, facing each other], bubbles: [{speaker_id: adrian, text: Počkej na mě., kind: speech}, {speaker_id: maya, text: 'Jak dlouho?', kind: speech}, {speaker_id: adrian, text: Nevím., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_station, who: [maya], tags: [standing alone on platform, train leaving, from behind], bubbles: [{speaker_id: '', text: Vlak odjíždí. Maya zůstane stát., kind: narration}], gap: large}

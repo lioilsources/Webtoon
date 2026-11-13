@@ -1,0 +1,21 @@
+# Jakarta – Bombaj: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_09_jakarta
+kind: strip
+title: Jakarta – Bombaj
+world: w_rc_09_jakarta
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_market, who: [ravi], tags: [lost, looking around, holding briefcase], gap: medium}
+  - {shot: medium, loc: l_market, who: [ravi, ayu], tags: [couple, hetero, woman serving coffee, man holding cup], bubbles: [{speaker_id: ravi, text: 'Prosím, kávu. A cestu k hotelu.', kind: speech}, {speaker_id: ayu, text: Kávu dostanete. Cestu vám ukážu., kind: speech}, {speaker_id: ravi, text: To je moc milé., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [ravi], tags: [writing notes, notebook, sigh], bubbles: [{speaker_id: ravi, text: Celý život jsem v kanceláři. Připadám si nudný., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [ayu], tags: [smile, leaning on counter], bubbles: [{speaker_id: ayu, text: Nudný člověk by se neptal na cestu. Jen by bloudil., kind: speech}], gap: large}
+  - {shot: wide, loc: l_bombay, who: [{ayu: travel}], tags: [walking, sea, evening, looking around], bubbles: [{speaker_id: '', text: O měsíc později. Bombaj., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bombay, who: [ravi, {ayu: travel}], tags: [couple, hetero, surprised, meeting, smile], bubbles: [{speaker_id: ayu, text: Tak jsme se našli., kind: speech}, {speaker_id: ravi, text: Já jsem doufal., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [ravi, {ayu: travel}], tags: [couple, hetero, sitting at table, candles, laughing], bubbles: [{speaker_id: ravi, text: 'Ayu, můžu tě pozvat na procházku?', kind: speech}, {speaker_id: ayu, text: Ano. A pak znovu., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [ravi, {ayu: travel}], tags: [couple, hetero, kiss, closed eyes, candlelight], gap: large}

@@ -1,0 +1,23 @@
+# Indická noc pod hvězdami: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_10_mumbaj
+kind: strip
+title: Indická noc pod hvězdami
+world: w_ra_10_mumbaj
+audience: adult
+language: cs
+style_id: retro_citypop
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_market, tags: [spice stalls, colorful, lights, auto rickshaw], bubbles: [{speaker_id: '', text: Tržnice v Mumbaji., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_market, who: [rhoan], tags: [walking, backpack, wiping sweat from forehead, dodging auto rickshaw], gap: medium}
+  - {shot: close-up, loc: l_market, who: [rhoan], tags: [tired, sad smile, dirty hands], bubbles: [{speaker_id: rhoan, text: Svět plný barev a exotiky... A já jsem jen kluk z dílny s rukama od šmíru., kind: thought}], gap: small}
+  - {shot: medium, loc: l_market, who: [rhoan], tags: [looking around, lonely, spice stalls], bubbles: [{speaker_id: rhoan, text: Tady žádnou princeznu nenajdu., kind: thought}], gap: large}
+  - {shot: wide, loc: l_drive, who: [priya], tags: [broken down car, smoke from car hood, standing by car, night], bubbles: [{speaker_id: '', text: 'Marine Drive, „Královnin náhrdelník“. Noc.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_drive, who: [rhoan], tags: [leaning over open hood, repairing engine, focused], gap: small}
+  - {shot: medium, loc: l_drive, who: [priya], tags: [stepping out of car, sparkling eyes, excited, smile], bubbles: [{speaker_id: priya, text: Vy jste neuvěřitelný! Volala jsem odtahovku a vy jste to spravil za pět minut!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_drive, who: [rhoan], tags: [wiping hands with handkerchief, shy smile], bubbles: [{speaker_id: rhoan, text: 'Motory jsou to jediné, čemu rozumím, slečno. Nic víc neumím.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_drive, who: [priya, rhoan], tags: [couple, hetero, woman holding his dirty hand, looking into his eyes], bubbles: [{speaker_id: priya, text: 'Rozumíte věcem, které dávají věci do pohybu. A právě jste zachránil můj večer.', kind: speech}], gap: small}
+  - {shot: wide, loc: l_drive, who: [priya, rhoan], tags: [couple, hetero, sitting in convertible, driving along the sea, night, city lights, smile], bubbles: [{speaker_id: priya, text: 'Projížďka podél moře s mým záchranářem je to nejmenší, jak vám mohu poděkovat.', kind: speech}], gap: large}

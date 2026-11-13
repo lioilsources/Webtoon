@@ -1,0 +1,21 @@
+# Nairobské ráno: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_10_nairobi
+kind: strip
+title: Nairobské ráno
+world: w_rc_10_nairobi
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_market, who: [baraka], tags: [walking through market, looking around, carrying bag], gap: medium}
+  - {shot: medium, loc: l_market, who: [wanjiku], tags: [standing at fabric stall, folding fabric, surprised], bubbles: [{speaker_id: baraka, text: 'Promiňte, nevíte, kde mají autodíly?', kind: speech}, {speaker_id: wanjiku, text: 'Vy jste Baraka? Kamauův bratr?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_market, who: [baraka, wanjiku], tags: [couple, hetero, smile, fabric stall], bubbles: [{speaker_id: baraka, text: Ano. Přijel jsem po dlouhé době., kind: speech}, {speaker_id: wanjiku, text: Tak vítejte doma., kind: speech}], gap: large}
+  - {shot: medium, loc: l_shop, who: [baraka], tags: [repairing car, under hood, wiping hands], bubbles: [{speaker_id: baraka, text: 'V Londýně jsem si zvykl, že mě nikdo nezná.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_shop, who: [baraka, wanjiku], tags: [couple, hetero, woman holding cup of tea, giving tea], bubbles: [{speaker_id: wanjiku, text: Tady vás znají. To není špatné., kind: speech}, {speaker_id: baraka, text: 'Někdy mám strach, že už sem nepatřím.', kind: speech}, {speaker_id: wanjiku, text: Patříte. Jen jste zapomněl., kind: speech}], gap: large}
+  - {shot: wide, loc: l_park, who: [{baraka: evening}, wanjiku], tags: [couple, hetero, walking, man holding flower, giving flower], bubbles: [{speaker_id: baraka, text: 'Wanjiku, můžu vás pozvat na večeři?', kind: speech}, {speaker_id: wanjiku, text: 'Ano. Ale nejdřív mi ukážete, jak opravit kolo.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [{baraka: evening}, wanjiku], tags: [couple, hetero, sitting at table, smile, warm light], bubbles: [{speaker_id: baraka, text: Našel jsem v Nairobi svou múzu., kind: speech}, {speaker_id: wanjiku, text: A já svého mechanika., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [{baraka: evening}, wanjiku], tags: [couple, hetero, hug, kiss, closed eyes], gap: large}

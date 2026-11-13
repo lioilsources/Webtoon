@@ -1,0 +1,21 @@
+# Kai a pavučinový zápas: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_07_kai_pavouci_kluk_z_budoucnosti
+kind: strip
+title: Kai a pavučinový zápas
+world: w_lx_k5_07_kai_pavouci_kluk_z_budoucnosti
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_city, tags: [skyscrapers, flying cars, neon lights, futuristic, no humans], bubbles: [{speaker_id: '', text: Futuristické město v den útoku., kind: narration}], gap: medium, animate: 'ambient only, characters still, city lights blinking, static camera'}
+  - {shot: wide, loc: l_city, who: [kai, maya], tags: [standing on ledge, pointing, waving, superhero pose, looking down], bubbles: [{speaker_id: kai, text: 'Tetoooo, jdu do akce!', kind: speech}, {speaker_id: maya, text: Opatrně!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_factory, who: [kai, mechboti], tags: [swinging, web line, web shooting, robot looking up, dynamic angle, from below], bubbles: [{speaker_id: kai, text: 'Hej, plecháči!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_factory, who: [mechboti], tags: [robot trapped, web wrapped, struggling, red eyes glowing, metal arms bound], sfx: [{text: KLANG!, style: bold}], gap: small}
+  - {shot: wide, loc: l_factory, who: [kai, mechboti], tags: [web shooting, web net, robot covered, action pose, web lines], sfx: [{text: ŠŠŠK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_factory, who: [mechboti], tags: [robot kneeling, defeated, smoke, web wrapped, static], sfx: [{text: HUP!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_square, who: [starosta, kai], tags: [standing, handing key, golden key, smile, hero landing], bubbles: [{speaker_id: starosta, text: 'Kai, zachránil jsi budoucnost.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_square, who: [kai], tags: [smiling, thumbs up, confident, superhero pose, looking at viewer], bubbles: [{speaker_id: kai, text: Budoucnost je v pořádku., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_city, who: [kai], tags: [swinging away, web line, back view, city background, leaving], sfx: [{text: ŠŠŠK!, style: bold}], gap: large}

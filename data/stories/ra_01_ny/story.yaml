@@ -1,0 +1,22 @@
+# Nečekaná inspirace v Manhattanu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_01_ny
+kind: strip
+title: Nečekaná inspirace v Manhattanu
+world: w_ra_01_ny
+audience: adult
+language: cs
+style_id: photo_lightning
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_fifth, tags: [rain, crowd with umbrellas, yellow taxi, traffic], bubbles: [{speaker_id: '', text: Pátá Avenue. Prší., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_fifth, who: [nina], tags: [standing in front of shop window, looking at mannequins, from side, rain, sad], gap: medium}
+  - {shot: medium, loc: l_fifth, who: [nina], tags: [adjusting sweater, sigh, looking down, reflection in window], bubbles: [{speaker_id: nina, text: Městské dívky z obálek časopisů..., kind: thought}, {speaker_id: nina, text: Já v tomhle městě plném modelek splývám s šedivým chodníkem., kind: thought}], gap: large}
+  - {shot: wide, loc: l_cafe, who: [nina], tags: [carrying paper cup, tripping, stumbling, falling forward, surprised], bubbles: [{speaker_id: '', text: Útulná kavárnička v SoHo., kind: narration}], gap: small}
+  - {shot: medium, loc: l_cafe, who: [nina, julian], tags: [couple, hetero, man catching woman, hand on waist, faces close, looking at each other, blush], bubbles: [{speaker_id: julian, text: 'Opatrně... Měl bych obrovskou škodu, kdyby se tak krásné dámě něco stalo.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [nina], tags: [blush, flustered, embarrassed, looking away], bubbles: [{speaker_id: nina, text: 'Krásné? Já... já jsem spíš jen nešikovná.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_cafe, who: [julian], tags: [gentle smile, looking at viewer], bubbles: [{speaker_id: julian, text: Někdy ten nejhezčí moment dne přichází bez varování., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [nina, julian], tags: [couple, hetero, man still holding her, smile, warm light, rain on window], bubbles: [{speaker_id: julian, text: 'Dovolíte mi koupit vám novou kávu a sednout si k vám?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_cafe, who: [nina, julian], tags: [couple, hetero, sitting at table, two coffee cups, smiling at each other, blush], gap: large}

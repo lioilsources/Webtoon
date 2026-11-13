@@ -1,0 +1,22 @@
+# Quantum a tisíce zámků: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_02_quantum_dungeon_tisice_zamku
+kind: strip
+title: Quantum a tisíce zámků
+world: w_lx_k6_02_quantum_dungeon_tisice_zamku
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_city, tags: [fantasy city, many doors, cobblestone, sunlight, no humans], bubbles: [{speaker_id: '', text: 'Město Dveřohrad, kde jsou všechny dveře zamčené.', kind: narration}], gap: medium, animate: 'ambient only, characters still, city lights blinking, static camera'}
+  - {shot: medium, loc: l_city, who: [tereza, qbit], tags: [looking up, pointing, drone floating, serious face, goggles], bubbles: [{speaker_id: tereza, text: 'Q-Bite, analýza!', kind: speech}, {speaker_id: qbit, text: 'Analýza: daemon s klíčovou hlavou. Doporučuji útěk.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_city, who: [tereza], tags: [smirk, confident, adjusting glasses, determined], bubbles: [{speaker_id: tereza, text: Výborné číslo. Beru., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dungeon, who: [tereza, zamkelom], tags: [chessboard floor, ghost floating, key head, laughing, open mouth, metallic], bubbles: [{speaker_id: zamkelom, text: 'Soutěž! Vyhraješ-li šachy o své město, odemknu vše.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_dungeon, who: [tereza], tags: [thinking, hand on chin, frowning, realization, looking at opponent], bubbles: [{speaker_id: tereza, text: Ty nemáš rád hry. Ty máš rád moc., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dungeon, who: [tereza, zamkelom], tags: [shield transforming, giant key shape, glowing blue, energy blast, impact], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_dungeon, who: [goblin], tags: [scared, crying, small, green skin, big eyes, hiding], gap: medium}
+  - {shot: medium, loc: l_dungeon, who: [goblin], tags: [standing, pointing at rift, serious, tattered cloak], bubbles: [{speaker_id: goblin, text: Zámeklom se vrátí. Až povyroste v něco horšího., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_dungeon, who: [tereza], tags: [standing tall, shield ready, determined, looking at rift], bubbles: [{speaker_id: tereza, text: 'Až povyroste, vyrostu i já. Q-Bite – hlídej trhlinu.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_portal, who: [qbit, tereza], tags: [drone hovering, glowing rift, guarding, blue light, static pose], bubbles: [{speaker_id: qbit, text: 'Pravděpodobnost návratu 67 %. Rozkaz přijat. …Mimochodem, byla jste vynikající.', kind: speech}], gap: large, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}

@@ -1,0 +1,24 @@
+# Toskánsko – Chyba v lesích: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rl_04_toskansko
+kind: strip
+title: Toskánsko – Chyba v lesích
+world: w_rl_04_toskansko
+audience: adult
+language: cs
+style_id: ligne_claire
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vineyard, tags: [rows of grapes, golden sun, quiet, empty road], bubbles: [{speaker_id: '', text: Toskánsko. Vinice pod poledním sluncem., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_vineyard, who: [{giulia: vines}], tags: [walking alone, looking at ground, sad, wind in hair], gap: medium}
+  - {shot: close-up, loc: l_vineyard, who: [{giulia: vines}], tags: [touching chest, insecure, looking down, freckles visible], bubbles: [{speaker_id: giulia, text: Všichni se dívají jen na… tohle., kind: thought}], gap: small}
+  - {shot: medium, loc: l_vineyard, who: [{luca: vines}], tags: [standing by car, watching, hands in pockets, gentle smile], gap: medium}
+  - {shot: medium, loc: l_vineyard, who: [{giulia: vines}, {luca: vines}], tags: [couple, hetero, man approaching woman, woman looking up, surprised, eye contact], bubbles: [{speaker_id: luca, text: Dívám se na tebe celou., kind: speech}], gap: large}
+  - {shot: wide, loc: l_barn, who: [{giulia: vines}, {luca: vines}], tags: [couple, hetero, standing close, wine bottle, hay bales, dust in light, tension], bubbles: [{speaker_id: '', text: Stodola. Ticho a vůně sena., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_barn, who: [{giulia: vines}, {luca: vines}], tags: [couple, hetero, man removing jewelry, woman closing eyes, intimate, warm light], bubbles: [{speaker_id: giulia, text: Pomalu…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_barn, who: [{giulia: vines}, {luca: vines}], tags: [couple, hetero, kiss, embrace, hands on waist, passionate], bubbles: [{speaker_id: luca, text: Já taky., kind: speech}], gap: small}
+  - {shot: medium, loc: l_barn, tags: [lamp going out, hay bales, darkness, no humans], bubbles: [{speaker_id: '', text: Lampa zhasne. Noc přichází., kind: narration}], gap: large}
+  - {shot: wide, loc: l_road, who: [{giulia: morning}, {luca: vines}], tags: [couple, hetero, morning, standing apart, man looking away, woman crying, sad], bubbles: [{speaker_id: luca, text: Mám doma přítelkyni. Byla to chyba., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_road, who: [{giulia: morning}], tags: [tears, looking away, walking away, back view], bubbles: [{speaker_id: '', text: Giulia odchází se slzami., kind: narration}], gap: large}

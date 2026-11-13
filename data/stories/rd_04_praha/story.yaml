@@ -1,0 +1,23 @@
+# Praha v mlze: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_04_praha
+kind: strip
+title: Praha v mlze
+world: w_rd_04_praha
+audience: adult
+language: cs
+style_id: manga_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_bridge, who: [tereza], tags: [camera on tripod, taking photo, fog], bubbles: [{speaker_id: '', text: Mlha nad Vltavou. Sochy jako přízraky., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bridge, who: [filip], tags: [bumping into tripod, surprised], bubbles: [{speaker_id: filip, text: 'Pardon, ta mlha je dnes hustá jako—', kind: speech}], sfx: [{text: BUM, style: bold}], gap: small}
+  - {shot: medium, loc: l_bridge, who: [tereza, filip], tags: [couple, hetero, kneeling, holding camera, looking at each other, fog], bubbles: [{speaker_id: tereza, text: 'Jen ho prosím nedotkněte, je starší než vy.', kind: speech}, {speaker_id: filip, text: Mně je třicet., kind: speech}, {speaker_id: tereza, text: Tak možná mladší. Ale dražší., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [filip], tags: [holding tablet, showing sketches], bubbles: [{speaker_id: filip, text: Architektura je poslouchání kamene., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [tereza], tags: [smile, looking at viewer], bubbles: [{speaker_id: tereza, text: 'Řekla bych, že posloucháte víc než lidi.', kind: speech}, {speaker_id: filip, text: Lidé lžou. Kámen ne., kind: speech}, {speaker_id: tereza, text: Já nelžu. Jen dlouho nic neříkám., kind: speech}], gap: large}
+  - {shot: wide, loc: l_tower, who: [tereza, filip], tags: [couple, hetero, standing at railing, looking at camera screen, night, fog], bubbles: [{speaker_id: tereza, text: 'Ta mlha. Vypadá, jako by most dýchal.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_tower, who: [filip], tags: [looking at her, soft expression], bubbles: [{speaker_id: filip, text: Terezo… vy nefotíte město. Vy ho milujete., kind: speech}, {speaker_id: tereza, text: 'A vy?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_tower, who: [filip], tags: [gentle smile, city lights], bubbles: [{speaker_id: filip, text: 'Mám pocit, že jsem přišel domů. A nemyslím Prahu. Myslím vás.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_tower, who: [tereza, filip], tags: [couple, hetero, kiss, closed eyes, fog, night], gap: small}
+  - {shot: medium, loc: l_tower, who: [tereza, filip], tags: [couple, hetero, hug, smile, night], bubbles: [{speaker_id: tereza, text: Tak tedy. Město dnes poslouchalo dva., kind: speech}], gap: large}

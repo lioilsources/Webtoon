@@ -1,0 +1,23 @@
+# Sofie a prokletá pyramida: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_02_sofie_prokleta_pyramida
+kind: strip
+title: Sofie a prokletá pyramida
+world: w_lx_k5_02_sofie_prokleta_pyramida
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_desert, tags: [pyramid, sand dunes, bright sun, blue sky, no humans], bubbles: [{speaker_id: '', text: Pyramida v poušti., kind: narration}], gap: medium, animate: 'ambient only, characters still, dust drifting, static camera'}
+  - {shot: medium, loc: l_desert, who: [sofie, amulet], tags: [standing, looking at pyramid, floating amulet, worried expression, amulet floating], bubbles: [{speaker_id: amulet, text: 'Sofie, tam uvnitř je duch. Já bych šel domů.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_desert, who: [sofie], tags: [smile, confident, looking at amulet, hand on hip], bubbles: [{speaker_id: sofie, text: 'Amulete, jsi kámen. Nemáš domov.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_desert, who: [amulet], tags: [floating, annoyed expression, glowing runes, small], bubbles: [{speaker_id: amulet, text: Tak bych šel do muzea., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [sofie, amulet], tags: [walking, torch light, hieroglyphs on walls, entering, dust particles], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [sofie, jackal], tags: [jackal emerging, stone wall, glowing eyes, surprised, sofie raising hand], bubbles: [{speaker_id: jackal, text: 'Kdo ruší faraonův spánek?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_pyramid, who: [sofie], tags: [touching amulet, amulet glowing, stone shield forming, determined, magic effect], bubbles: [{speaker_id: sofie, text: 'Já, Sofie. A hledám poklad.', kind: speech}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: medium, loc: l_chamber, who: [pharaoh], tags: [pharaoh appearing, transparent, golden sarcophagus background, mysterious, glowing eyes], bubbles: [{speaker_id: pharaoh, text: 'Odvážná dívko, proč jsi přišla?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_chamber, who: [sofie], tags: [standing tall, confident, looking at pharaoh, holding amulet], bubbles: [{speaker_id: sofie, text: Chci vrátit ukradený poklad lidem., kind: speech}], gap: small}
+  - {shot: medium, loc: l_chamber, who: [pharaoh], tags: [smiling, pointing, transparent, kind expression], bubbles: [{speaker_id: pharaoh, text: 'Tak si vezmi jen to, co potřebuješ.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_chamber, who: [sofie, amulet], tags: [walking away, holding small statue, pharaoh fading, torch light, exit], bubbles: [{speaker_id: amulet, text: Tak zase příště., kind: speech}], gap: large}

@@ -1,0 +1,23 @@
+# Ztraceni v deštném pralese na Kostarice: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_09_kostarika
+kind: strip
+title: Ztraceni v deštném pralese na Kostarice
+world: w_rg_09_kostarika
+audience: adult
+language: cs
+style_id: photo_lightning
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bungalow, tags: [rainforest, volcano, rain], bubbles: [{speaker_id: '', text: Kostarika. Pod sopkou Arenal prší., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_bungalow, who: [leo], tags: [leaning into jeep engine, open hood, oil stains, rain], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [sophie, leo], tags: [couple, hetero, woman holding drink, offering towel, man wiping hands, smile], bubbles: [{speaker_id: sophie, text: 'Jsi neuvěřitelně zručný... Ve světě, ze kterého pocházím, muži neumí zatlouct ani hřebík.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bungalow, who: [leo], tags: [grin, smudge of oil on cheek], bubbles: [{speaker_id: leo, text: 'Já zase neumím mluvit na večírcích. Ale vím, jak dát věci do pořádku.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bungalow, who: [sophie, leo], tags: [couple, hetero, engine running, smoke, cheering, high five], sfx: [{text: BRRUM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_spring, who: [{sophie: evening}, {leo: clean}], tags: [couple, hetero, sitting on stone edge of hot spring, feet in warm water, steam, lanterns, rain on palms], bubbles: [{speaker_id: '', text: Večer u termálního jezírka. Na palmy bubnuje déšť., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_spring, who: [{sophie: evening}, {leo: clean}], tags: [couple, hetero, her head on his shoulder, steam, lanterns], bubbles: [{speaker_id: sophie, text: 'Nikdy jsem nechtěla, aby déšť přestal.', kind: speech}, {speaker_id: leo, text: Tak ať prší celou noc., kind: speech}], gap: small}
+  - {shot: medium, loc: l_spring, who: [{sophie: evening}, {leo: clean}], tags: [couple, hetero, kiss, rain drops, lantern glow], gap: medium}
+  - {shot: wide, loc: l_bungalow, tags: [bungalow window light switching off, rain, rainforest night], bubbles: [{speaker_id: '', text: Světlo v bungalovu zhasne. Prší až do rána., kind: narration}], gap: large}
+  - {shot: wide, loc: l_road, who: [sophie, {leo: clean}], tags: [couple, hetero, driving jeep together, morning sun, laughing, rainforest road], bubbles: [{speaker_id: sophie, text: 'Kam teď?', kind: speech}, {speaker_id: leo, text: Kamkoli. Džíp i já jsme opravení., kind: speech}], gap: large}

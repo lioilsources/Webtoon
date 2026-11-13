@@ -1,0 +1,24 @@
+# Jakarta, angličtina za deště: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_10_jakarta
+kind: strip
+title: Jakarta, angličtina za deště
+world: w_rd_10_jakarta
+audience: adult
+language: cs
+style_id: clean_webtoon_noartist
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_port, who: [bram], tags: [sitting under shelter, reading book, rain], bubbles: [{speaker_id: '', text: Jakarta. Tropický déšť., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_port, who: [maya], tags: [wet, broken umbrella, running under shelter], bubbles: [{speaker_id: maya, text: 'Promiňte — můžu se schovat?', kind: speech}, {speaker_id: bram, text: Yes. You can… stay., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_port, who: [maya, bram], tags: [couple, hetero, sitting under shelter, showing book], bubbles: [{speaker_id: bram, text: Učím se. Chci jednou studovat univerzitu., kind: speech}, {speaker_id: maya, text: Já jsem lékařka. Možná bych vám mohla pomoct., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [maya], tags: [holding textbook, strict teacher, smile], bubbles: [{speaker_id: '', text: O týden později., kind: narration}, {speaker_id: maya, text: 'Přeložte: ‚I love you.‘', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [bram], tags: [serious, looking down], bubbles: [{speaker_id: bram, text: 'Tohle slovo se neučím. Až ho řeknu, musím vědět, že je pravda.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [maya], tags: [soft expression, blush], bubbles: [{speaker_id: maya, text: To slovo se neučí. To slovo se cítí., kind: speech}], gap: large}
+  - {shot: wide, loc: l_quay, who: [{maya: dress}, bram], tags: [couple, hetero, walking, night, wet ground, city lights], bubbles: [{speaker_id: bram, text: Chci říct jednu větu. Učil jsem se ji celý den., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_quay, who: [bram], tags: [nervous smile, looking at viewer], bubbles: [{speaker_id: bram, text: You… are… my sunshine in the rain., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_quay, who: [{maya: dress}], tags: [laughing, tears, happy tears], gap: small}
+  - {shot: close-up, loc: l_quay, who: [{maya: dress}, bram], tags: [couple, hetero, kiss, closed eyes, night], gap: small}
+  - {shot: medium, loc: l_quay, who: [{maya: dress}, bram], tags: [couple, hetero, hug, head on chest], bubbles: [{speaker_id: maya, text: To slovo už jsi řekl. A já jsem mu rozuměla bez překladu., kind: speech}], gap: large}

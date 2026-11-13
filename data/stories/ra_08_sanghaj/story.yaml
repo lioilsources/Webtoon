@@ -1,0 +1,23 @@
+# Ztraceni v zahradě Yuyuan: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_08_sanghaj
+kind: strip
+title: Ztraceni v zahradě Yuyuan
+world: w_ra_08_sanghaj
+audience: adult
+language: cs
+style_id: ink_wash
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_garden, tags: [red pavilion, stone bridge, koi pond], bubbles: [{speaker_id: '', text: 'Zahrada Yuyuan, Šanghaj.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_garden, who: [david], tags: [ducking under low roof, bending, narrow alley, too tall], gap: medium}
+  - {shot: medium, loc: l_garden, who: [david], tags: [whispering, sad, looking at tourists], bubbles: [{speaker_id: david, text: 'Jsem tu jako medvěd v bambusovém lese... Vypadám strašidelně, lidé ze mě mají respekt.', kind: thought}], gap: small}
+  - {shot: close-up, loc: l_garden, who: [david], tags: [lonely, looking away], bubbles: [{speaker_id: david, text: 'Kde bych tady našel někoho, kdo by se mě nezalekl?', kind: thought}], gap: large}
+  - {shot: wide, loc: l_pond, who: [meiling], tags: [leaning over water, feeding fish, koi, lanterns, scarf falling into water], bubbles: [{speaker_id: '', text: Most devíti zatáček., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_pond, who: [david], tags: [reaching out long arm, catching scarf, splash], gap: small}
+  - {shot: medium, loc: l_pond, who: [{meiling: noscarf}], tags: [clasped hands on chest, surprised, smile], bubbles: [{speaker_id: meiling, text: 'Ó, děkuji vám! Máte tak rychlé reflexy!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pond, who: [{meiling: noscarf}, david], tags: [couple, hetero, man handing wet scarf, embarrassed, height difference], bubbles: [{speaker_id: david, text: 'Pardon... Jsem starý boxer. Reflexy mi zůstaly, i když vizáž mám spíš jako zápasník.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pond, who: [{meiling: noscarf}, david], tags: [couple, hetero, woman holding his sleeve, looking up into his eyes, admiration, lanterns], bubbles: [{speaker_id: meiling, text: Pod tou drsnou slupkou vidím velmi jemné a dobré srdce., kind: speech}], gap: small}
+  - {shot: medium, loc: l_pond, who: [{meiling: noscarf}, david], tags: [couple, hetero, walking together, lanterns, smile], bubbles: [{speaker_id: meiling, text: 'Smím vám ukázat ty nejkrásnější čajovny v zahradě?', kind: speech}], gap: large}

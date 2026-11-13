@@ -1,0 +1,24 @@
+# Capri – Já chci tebe: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ro_06_capri
+kind: strip
+title: Capri – Já chci tebe
+world: w_ro_06_capri
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_cliffs, tags: [rocky cliffs, blue sea, white houses, bright sun], bubbles: [{speaker_id: '', text: Capri – skalnaté útesy., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_cliffs, who: [marcus], tags: [standing on rocks, open linen shirt, shirt fluttering, hands on hips, confident], gap: medium}
+  - {shot: close-up, loc: l_cliffs, who: [marcus], tags: [thoughtful, looking away, sunlight on face], bubbles: [{speaker_id: marcus, text: Chtějí jen tělo…, kind: thought}], gap: small}
+  - {shot: medium, loc: l_cliffs, who: [lila], tags: [walking past, silhouette, hair blowing, soft smile], gap: medium}
+  - {shot: medium, loc: l_cliffs, who: [marcus, lila], tags: [couple, hetero, woman facing man, man turning, blush, sunset glow], bubbles: [{speaker_id: lila, text: Já chci tebe., kind: speech}], gap: large}
+  - {shot: wide, loc: l_terrace_dinner, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, table, wine glasses, candlelight, sunset sky, close conversation], bubbles: [{speaker_id: '', text: Večeře pod hvězdami., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_terrace_dinner, who: [{lila: dinner}], tags: [soft smile, wine glass raised, eyes sparkling], bubbles: [{speaker_id: '', text: Blízkost a polibky., kind: narration}], gap: small}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, pulling shirt, gentle, soft lamp light, intimate], bubbles: [{speaker_id: marcus, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, embrace, kiss, eyes closed, warm glow], bubbles: [{speaker_id: marcus, text: Cítím se víc než svaly., kind: speech}, {speaker_id: lila, text: Protože jsi., kind: speech}], gap: small}
+  - {shot: establishing, loc: l_morning_terrace, tags: [sunrise, mist over sea, empty chairs, gentle light], bubbles: [{speaker_id: '', text: Ráno na terase., kind: narration}], gap: large}
+  - {shot: wide, loc: l_morning_terrace, who: [{marcus: morning}, {lila: morning}], tags: [couple, hetero, hugging, coffee cups, smile, sea view], bubbles: [{speaker_id: '', text: Zůstávají spolu., kind: narration}], gap: large}

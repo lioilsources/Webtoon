@@ -1,0 +1,25 @@
+# Marrákeš – Spa: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_04_marrakes
+kind: strip
+title: Marrákeš – Spa
+world: w_ri_04_marrakes
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_souk, who: [sara], tags: [looking at jewelry stall, holding necklace], gap: medium}
+  - {shot: medium, loc: l_souk, who: [karim], tags: [repairing scooter, kneeling, wrench, looking up], gap: medium}
+  - {shot: medium, loc: l_souk, who: [sara, karim], tags: [couple, hetero, talking, man standing up, wiping hands], bubbles: [{speaker_id: sara, text: 'Nevíte, kde je spa?', kind: speech}, {speaker_id: karim, text: Vím. Ale nejdřív si dejte čaj., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_souk, who: [sara, karim], tags: [couple, hetero, mint tea glasses, smiling, playful], bubbles: [{speaker_id: sara, text: To je vydírání., kind: speech}, {speaker_id: karim, text: To je pohostinnost., kind: speech}], gap: large}
+  - {shot: medium, loc: l_spa, who: [{sara: robe}], tags: [sitting, steam, relaxed, mosaic tiles], bubbles: [{speaker_id: karim, text: 'Proč tady vlastně jste?', kind: speech}, {speaker_id: sara, text: Hledám klid., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_spa, who: [karim], tags: [leaning at arch, holding wrench, smile], bubbles: [{speaker_id: karim, text: 'Opravuju skútr majitele. A vy?', kind: speech}], gap: large}
+  - {shot: wide, loc: l_pool, who: [{sara: night}, {karim: evening}], tags: [couple, hetero, sitting by pool, lanterns, talking, woman laughing], gap: medium}
+  - {shot: close-up, loc: l_pool, who: [{karim: evening}], tags: [serious, lantern light], bubbles: [{speaker_id: karim, text: 'Sáro, jsi krásná.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pool, who: [{sara: night}], tags: [teasing smile, lantern light], bubbles: [{speaker_id: sara, text: 'To říkáš každé turistce?', kind: speech}, {speaker_id: karim, text: Ne. Ale ty odjíždíš., kind: speech}], gap: large}
+  - {shot: medium, loc: l_door, who: [{sara: night}, {karim: evening}], tags: [couple, hetero, kiss, embrace, carved door, lanterns], gap: small}
+  - {shot: establishing, loc: l_door, tags: [carved wooden door closed, lantern, night], bubbles: [{speaker_id: '', text: Dveře se zavřou., kind: narration}], gap: large}
+  - {shot: wide, loc: l_street, who: [sara, karim], tags: [couple, hetero, woman in taxi window, man waving from distance, morning], bubbles: [{speaker_id: '', text: Ráno Sára odjíždí. Karim mává z dálky. Nedá se nic dělat., kind: narration}], gap: large}

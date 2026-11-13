@@ -1,0 +1,24 @@
+# Leo a stín nad městem: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_07_leo_stin_nad_mestem
+kind: strip
+title: Leo a stín nad městem
+world: w_lx_k2_07_leo_stin_nad_mestem
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_city, tags: [city skyline, night, dark, moon, no lights, silhouettes], bubbles: [{speaker_id: '', text: V noci mizí elektřina., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, city lights blinking, static camera'}
+  - {shot: medium, loc: l_roof, who: [leo, pix], tags: [standing on roof, looking down, pointing, glowing eyes, bat wings spread], bubbles: [{speaker_id: leo, text: 'Pixi, najdi zdroj.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_roof, who: [mechanik, leo], tags: [large mech, landing, dust cloud, glowing red eyes, menacing, city background], bubbles: [{speaker_id: leo, text: Tak tohle bude problém., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [mechanik], tags: [shooting laser, energy beam, glowing red, aiming], sfx: [{text: PŠŠŠT!, style: bold}], gap: small}
+  - {shot: wide, loc: l_roof, who: [leo, pix], tags: [dodging, jumping, motion lines, laser passing by, dynamic pose], sfx: [{text: ŠVIH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [leo], tags: [throwing rope, grappling hook, holding shield, glowing shield, throwing capsule, action], gap: medium}
+  - {shot: close-up, loc: l_roof, who: [pix], tags: [flying close, glowing eyes, alarmed, wings flapping], bubbles: [{speaker_id: pix, text: Nebezpečí!, kind: shout}], gap: small, animate: 'the robot bat flaps its wings rapidly, dust motes floating, light shifting slowly, static camera'}
+  - {shot: medium, loc: l_roof, who: [leo, mechanik], tags: [standing firm, looking up, confident, shield raised, mecha looming], bubbles: [{speaker_id: mechanik, text: Ty jsi jen dítě!, kind: speech}, {speaker_id: leo, text: A ty jsi jen člověk v plechovce., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_roof, who: [mechanik], tags: [mechanic stopping, smoke, sparks, defeated, kneeling], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [policista, leo], tags: [police officer pointing flashlight, shining light, looking at leo, leo turning away, mystery], bubbles: [{speaker_id: policista, text: 'Kdo jsi?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_roof, who: [leo, pix], tags: [running away, jumping off roof, silhouette, bat flying, night sky], sfx: [{text: ŠŠŠ!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_roof, tags: [bat symbol, graffiti, stone surface, moonlight, mystery], gap: large}

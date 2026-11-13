@@ -1,0 +1,21 @@
+# Béďa a dopis od kapitána: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_07_beda_zombie_na_plazi
+kind: strip
+title: Béďa a dopis od kapitána
+world: w_lx_k7_07_beda_zombie_na_plazi
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_underwater_city, tags: [coral city, bubbles, fish, blue water, no humans], bubbles: [{speaker_id: '', text: Korálové město hluboko pod hladinou., kind: narration}], gap: medium, animate: 'ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera'}
+  - {shot: medium, loc: l_underwater_city, who: [queen, beda], tags: [swimming, holding shield, worried, pointing, glowing shield], bubbles: [{speaker_id: queen, text: Béďo! Na pláži vylézá z vody posádka ducha kapitána Bezkosta!, kind: speech}, {speaker_id: beda, text: Tak jim ho pomůžeme najít. Ale nejdřív si promluvím s kapitánem., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_beach_night, who: [captain, beda], tags: [ghost standing, transparent, triangular hat, humanoid standing, moonlight, ocean waves], bubbles: [{speaker_id: captain, text: 'Kdo se opováží stát mezi mnou a pokladem?', kind: shout}, {speaker_id: beda, text: 'Já. Béďa Plž. Strážce pláže. A mám otázku, ne meč: jaký poklad, kapitáne?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_beach_night, who: [captain], tags: [ghost looking sad, glowing eyes, transparent, holding hat], bubbles: [{speaker_id: captain, text: 'Nešlo o zlato. Šlo o jednu věc, kterou jsem nechal jít ke dnu. Dopis od mé dcery.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_shipwreck, who: [beda, captain], tags: [diving, holding chest, wooden chest, open chest, paper, glowing light], bubbles: [{speaker_id: captain, text: Tady je. Ale já už nemám komu psát., kind: speech}, {speaker_id: beda, text: Tvoje vnučka žije na pobřeží. Já jí ten dopis odnesu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_shipwreck, who: [captain], tags: [ghost writing, holding pen, paper, sad expression, glowing], bubbles: [{speaker_id: captain, text: Milá Aničko. Odpovídám ti o sto let později. Miloval jsem tě celý život., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_house_morning, who: [anicka], tags: [sitting, holding letter, reading, crying, tears, sunlight], bubbles: [{speaker_id: anicka, text: Můj dědeček. Sto let. A teď mi odpověděl., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_beach_night, who: [captain], tags: [ghost fading, ocean waves, smile, triangular hat, sunrise, transparent], gap: medium, animate: 'the ghost slowly fades into the waves, stars twinkling, water rippling, static camera'}
+  - {shot: medium, loc: l_beach_night, who: [beda], tags: [standing on beach, looking at sea, holding shield, smile, determined], bubbles: [{speaker_id: beda, text: 'Sbohem, kapitáne. Každý dopis, co najdu u moře, doručím.', kind: speech}], gap: large}

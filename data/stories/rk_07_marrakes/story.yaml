@@ -1,0 +1,24 @@
+# Marrákeš – Zahrada, která spí: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_07_marrakes
+kind: strip
+title: Marrákeš – Zahrada, která spí
+world: w_rk_07_marrakes
+audience: adult
+language: cs
+style_id: ink_wash
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_medina, tags: [medina alley, fabrics, lanterns], bubbles: [{speaker_id: '', text: Medína. Ráj a bludiště., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_medina, who: [celeste], tags: [lost, looking at phone, confused, crowd blur], bubbles: [{speaker_id: celeste, text: Mapa tady nefunguje., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_medina, who: [omar], tags: [gesturing the way, polite distance, fabric stall], gap: medium}
+  - {shot: wide, loc: l_riad, who: [celeste, omar], tags: [couple, hetero, walking into courtyard, fountain, orange trees, woman amazed], gap: medium}
+  - {shot: medium, loc: l_riad, who: [celeste], tags: [removing hat, looking at him, serious], bubbles: [{speaker_id: celeste, text: 'Na blogu mám sto tisíc lidí, kteří mě vidí každý den. Ty se na mě díváš, jako bych byla jediná v místnosti. To je nebezpečné.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_riad, who: [omar], tags: [calm grey eyes, quiet], bubbles: [{speaker_id: omar, text: Ne. Nebezpečné je být viděn stokrát a pochopen nikdy., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_roof, who: [{celeste: night}, {omar: night}], tags: [couple, hetero, sitting on rooftop, mint tea, stars, lanterns], bubbles: [{speaker_id: '', text: Pomalé večery. Čaj., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [{celeste: night}, {omar: night}], tags: [couple, hetero, man kissing woman's hand, gentle, lantern light], bubbles: [{speaker_id: '', text: 'Políbil jí ruku – dávno předtím, než políbil její rty.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_airport, who: [{celeste: airport}], tags: [standing alone with suitcase, looking around, departure board], gap: medium}
+  - {shot: close-up, loc: l_airport, who: [{celeste: airport}], tags: [reading phone message, shocked, sad], bubbles: [{speaker_id: '', text: 'SMS od Omara: „Můj otec umřel. Musím vést rodinu. Nemohu tě vzít do života, který jsem nezvolil. Odpusť, že jsem ti ukázal zahradu.“', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_airport, who: [{celeste: airport}], tags: [looking out window at plane, phone lowered, quiet], bubbles: [{speaker_id: '', text: Ve stories nezveřejní nic. Některé zahrady nepatří na internet., kind: narration}], gap: large}

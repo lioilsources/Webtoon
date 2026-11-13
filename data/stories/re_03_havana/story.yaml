@@ -1,0 +1,23 @@
+# Havana ve 4/4 taktu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_03_havana
+kind: strip
+title: Havana ve 4/4 taktu
+world: w_re_03_havana
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_terraza, tags: [vintage car, pastel houses, salsa music], bubbles: [{speaker_id: '', text: Havana. Ze dveří zní salsa., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_terraza, who: [lucia], tags: [standing at entrance, hesitant, hand on chest], gap: medium}
+  - {shot: medium, loc: l_terraza, who: [alejandro], tags: [offering hand, smile, standing in doorway], bubbles: [{speaker_id: alejandro, text: 'Máte dvě možnosti. Jít domů. Nebo tančit se mnou a pak mi vyprávět, proč váháte.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_terraza, who: [lucia, alejandro], tags: [couple, hetero, smile, taking his hand], bubbles: [{speaker_id: lucia, text: 'A jsou ty možnosti seřazené podle doporučení?', kind: speech}, {speaker_id: alejandro, text: Ano. Druhá. Vždy druhá., kind: speech}], gap: large}
+  - {shot: wide, loc: l_club, who: [lucia, alejandro], tags: [couple, hetero, dancing, salsa, twirling, dress flowing, motion blur], gap: medium}
+  - {shot: close-up, loc: l_club, who: [alejandro], tags: [smile, looking at her, warm light], bubbles: [{speaker_id: alejandro, text: 'Vy tančíte jako Havana. Trochu zchátralé, úplně krásné, plné příběhů.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_club, who: [lucia], tags: [laughing, blush], bubbles: [{speaker_id: lucia, text: 'To je nejromantičtější urážka, co jsem kdy dostala.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_malecon, who: [lucia, alejandro], tags: [couple, hetero, sitting on seawall, legs dangling, man's jacket on her shoulders, waves], bubbles: [{speaker_id: lucia, text: 'Říkala jsem si, že romantika umřela. Že všichni jen koukají do telefonů.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_malecon, who: [alejandro], tags: [soft smile, moonlight], bubbles: [{speaker_id: alejandro, text: Na Kubě telefony vypadávají. Zůstávají jen lidé. A tanec. A ty., kind: speech}], gap: small}
+  - {shot: medium, loc: l_malecon, who: [lucia, alejandro], tags: [couple, hetero, kiss, closed eyes, waves, moonlight, dress in breeze], bubbles: [{speaker_id: '', text: 'Kapitola jedna: Havana. Kapitola dvě: celý život.', kind: narration}], gap: large}

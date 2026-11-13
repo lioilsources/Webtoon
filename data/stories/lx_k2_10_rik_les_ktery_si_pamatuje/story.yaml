@@ -1,0 +1,23 @@
+# Rik a les, který si pamatuje: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_10_rik_les_ktery_si_pamatuje
+kind: strip
+title: Rik a les, který si pamatuje
+world: w_lx_k2_10_rik_les_ktery_si_pamatuje
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [forest path, tall trees, sunlight, mist, no humans], bubbles: [{speaker_id: '', text: Tichý les. Slunce svítí skrz koruny., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, light rays shimmering, static camera'}
+  - {shot: medium, loc: l_forest, who: [rik], tags: [standing, listening, hand on ear, surprised, looking around], bubbles: [{speaker_id: rik, text: 'Kdo to řekl?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [mia], tags: [wolf standing, looking at viewer, calm, white fur], bubbles: [{speaker_id: mia, text: Já., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [rik], tags: [shocked, wide eyes, open mouth, stunned], bubbles: [{speaker_id: rik, text: Ty mluvíš., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cave, who: [rik, mia], tags: [cave entrance, roots, dark, glowing moss, looking down], bubbles: [{speaker_id: '', text: Pod kořeny je tajná jeskyně., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_cave, who: [demons], tags: [monster sleeping, large, rock skin, glowing eyes, waking up, opening eyes], bubbles: [{speaker_id: demons, text: 'Kdo mě probudil?', kind: speech}], sfx: [{text: GRUNN, style: bold}], gap: medium}
+  - {shot: medium, loc: l_cave, who: [rik, demons], tags: [holding sword, defensive pose, wolf growling, tense, glowing eyes], bubbles: [{speaker_id: demons, text: Lžeš., kind: speech}], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_cave, who: [strazce], tags: [ghost appearing, transparent, glowing, calm, floating], bubbles: [{speaker_id: strazce, text: Démon není nepřítel., kind: speech}], gap: medium, animate: 'particles floating, leaves swaying gently, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_cave, who: [rik, demons], tags: [handshake, monster hand, human hand, smile, friendly], bubbles: [{speaker_id: rik, text: 'Takže můžeme být přátelé?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [rik, mia, demons], tags: [walking away, back view, forest path, night, moonless sky, monster watching], bubbles: [{speaker_id: demons, text: 'Až přijde noc bez měsíce, vrať se.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [rik], tags: [smiling, determined, looking at viewer, night], bubbles: [{speaker_id: rik, text: Já ne., kind: speech}], gap: large}

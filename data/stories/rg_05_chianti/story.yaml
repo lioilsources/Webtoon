@@ -1,0 +1,23 @@
+# Cyklovýlet po vinicích Toskánska: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_05_chianti
+kind: strip
+title: Cyklovýlet po vinicích Toskánska
+world: w_rg_05_chianti
+audience: adult
+language: cs
+style_id: watercolor_paris
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vines, tags: [rolling hills, vineyards, cypress], bubbles: [{speaker_id: '', text: 'Chianti. Kopce, víno a cypřiše.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_vines, who: [isabella], tags: [standing next to bicycle, broken chain, frustrated, hands on hips], sfx: [{text: CVAK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_vines, who: [gabriele], tags: [riding vintage bicycle, stopping, smiling], bubbles: [{speaker_id: gabriele, text: 'Řetěz? To se spraví. Toskánsko vás jen chce zdržet.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_vines, who: [isabella, gabriele], tags: [couple, hetero, man kneeling, fixing bicycle chain, woman watching, smile], bubbles: [{speaker_id: isabella, text: 'Vy opravujete kola i v košili?', kind: speech}, {speaker_id: gabriele, text: 'Jsem architekt. Opravuju všechno, co drží pohromadě.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_cellar, who: [{isabella: evening}, {gabriele: evening}], tags: [couple, hetero, wine tasting, raising glasses, candlelight, laughing], bubbles: [{speaker_id: '', text: Večer. Degustace ve starém sklípku., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cellar, who: [{isabella: evening}], tags: [slipping off heels, sitting on bench, relaxed smile], bubbles: [{speaker_id: isabella, text: Celý den v sedle a teď ještě podpatky..., kind: speech}], gap: small}
+  - {shot: medium, loc: l_pergola, who: [{isabella: evening}, {gabriele: evening}], tags: [couple, hetero, standing under pergola, string lights, holding hands, dusk], bubbles: [{speaker_id: gabriele, text: 'Našel jsem v tobě čistotu, kterou jsem v městském shonu dlouho hledal.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pergola, who: [{isabella: evening}, {gabriele: evening}], tags: [couple, hetero, kiss, string lights, warm glow], gap: small}
+  - {shot: wide, loc: l_pergola, tags: [villa window light turning off, string lights, starry night over hills], bubbles: [{speaker_id: '', text: Světla vily zhasnou. Nad kopci se rozsvítí hvězdy., kind: narration}], gap: large}
+  - {shot: wide, loc: l_vines, who: [isabella, gabriele], tags: [couple, hetero, morning, riding bicycles side by side, vineyard road, sunlight, smiling], bubbles: [{speaker_id: isabella, text: 'Pojedeš se mnou až do Sieny?', kind: speech}, {speaker_id: gabriele, text: Pojedu s tebou kamkoli., kind: speech}], gap: large}

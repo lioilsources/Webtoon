@@ -1,0 +1,20 @@
+# Isis a probuzený faraon: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_03_isis_egyptske_pyramidy
+kind: strip
+title: Isis a probuzený faraon
+world: w_lx_k3_03_isis_egyptske_pyramidy
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_pyramid, tags: [stone walls, hieroglyphs, sand floor, torch light, ancient], bubbles: [{speaker_id: '', text: Uvnitř staré pyramidy., kind: narration}], gap: medium, animate: 'ambient only, characters still, flames flickering, static camera'}
+  - {shot: medium, loc: l_pyramid, who: [isis], tags: [drawing sword, determined, looking up, gold armor, glowing sword], bubbles: [{speaker_id: isis, text: 'Horusi, faraon se probral!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [horus], tags: [flying, wings spread, screaming, fast motion, blur], sfx: [{text: KRIK!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_pyramid_battle, who: [pharaoh, isis], tags: [magic lightning, blue energy, holding staff, casting spell, dodging, jumping], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_pyramid_battle, who: [isis], tags: [sword slash, dynamic pose, determined, gold armor, motion lines], bubbles: [{speaker_id: isis, text: Tvoje doba skončila!, kind: shout}], gap: medium}
+  - {shot: close-up, loc: l_pyramid_battle, who: [pharaoh], tags: [staff breaking, wood splinters, shock, glowing eyes fading, hands dropping], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_pyramid_battle, who: [pharaoh], tags: [turning to sand, dissolving, falling apart, sand pile, magic dust], sfx: [{text: ŠŠŠŠ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_pyramid_battle, who: [isis], tags: [sheathing sword, smile, relieved, standing tall, peaceful], bubbles: [{speaker_id: isis, text: Pyramida je zase v klidu., kind: speech}], gap: large}

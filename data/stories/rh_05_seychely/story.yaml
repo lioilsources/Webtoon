@@ -1,0 +1,23 @@
+# Seychely – Hlasité ticho: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_05_seychely
+kind: strip
+title: Seychely – Hlasité ticho
+world: w_rh_05_seychely
+audience: adult
+language: cs
+style_id: pastel_shoujo
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_beach, tags: [granite boulders, palm trees, turquoise sea], bubbles: [{speaker_id: '', text: Seychely., kind: narration}], gap: medium, animate: 'palm trees swaying in wind, waves crashing, static camera'}
+  - {shot: medium, loc: l_beach, who: [mei], tags: [walking alone on beach, holding sandals, looking down, quiet], bubbles: [{speaker_id: mei, text: Jsem moc tichá…, kind: thought}], gap: medium, animate: 'woman turns head slightly, hair moves in breeze, static camera'}
+  - {shot: wide, loc: l_beach, who: [oliver], tags: [walking on beach, hands in pockets, noticing someone], gap: medium}
+  - {shot: medium, loc: l_beach, who: [mei, oliver], tags: [couple, hetero, walking side by side, woman looking up surprised, man smiling], bubbles: [{speaker_id: oliver, text: Tvoje ticho je hlasité., kind: speech}], gap: large}
+  - {shot: wide, loc: l_yacht, who: [{mei: dinner}, {oliver: dinner}], tags: [couple, hetero, dinner on yacht, talking, sunset], bubbles: [{speaker_id: '', text: Večeře na jachtě., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_yacht, who: [{mei: dinner}, {oliver: dinner}], tags: [couple, hetero, fingers touching on table, blush, candlelight], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{mei: dinner}, {oliver: dinner}], tags: [couple, hetero, man taking off her glasses gently, faces close], bubbles: [{speaker_id: oliver, text: Nech mě tě vidět., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{mei: dinner}, {oliver: dinner}], tags: [couple, hetero, foreheads touching, kiss, eyes closed], bubbles: [{speaker_id: mei, text: Cítím se viděná., kind: speech}, {speaker_id: oliver, text: A milovaná., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, tags: [porthole, moon over sea, lamp off, no humans], bubbles: [{speaker_id: '', text: Měsíc nad mořem., kind: narration}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{mei: morning}, oliver], tags: [couple, hetero, morning, walking hand in hand on beach, smile], bubbles: [{speaker_id: '', text: Zůstávají spolu., kind: narration}], gap: large}

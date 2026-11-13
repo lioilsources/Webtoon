@@ -1,0 +1,21 @@
+# Havana – Boxer na Malecónu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_07_havana
+kind: strip
+title: Havana – Boxer na Malecónu
+world: w_rb_07_havana
+audience: adult
+language: cs
+style_id: ligne_claire
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_malecon, who: [diego], tags: [sitting on seawall, sunset, alone], bubbles: [{speaker_id: diego, text: 'Ring je jediné, co znám…', kind: thought}], gap: medium}
+  - {shot: medium, loc: l_malecon, who: [isabella], tags: [walking, stopping, smile, wind in hair], bubbles: [{speaker_id: isabella, text: 'Krásný výhled, že?', kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [isabella, diego], tags: [couple, hetero, sitting at counter, coffee cups], bubbles: [{speaker_id: isabella, text: Přijela jsem z Miami. Hledám něco opravdového., kind: speech}, {speaker_id: diego, text: Já taky., kind: speech}], gap: large}
+  - {shot: wide, loc: l_street, who: [isabella, diego], tags: [couple, hetero, dancing, man holding woman, twirling, music], gap: medium}
+  - {shot: close-up, loc: l_street, who: [isabella, diego], tags: [couple, hetero, faces close, looking at each other], bubbles: [{speaker_id: diego, text: 'Smím tě políbit?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_street, who: [isabella, diego], tags: [couple, hetero, kiss, closed eyes, string lights], gap: large}
+  - {shot: medium, loc: l_rest, who: [{diego: dinner}], tags: [sitting, band in background, smile], bubbles: [{speaker_id: diego, text: 'Poprvé se cítím jako muž, ne jen boxer.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [isabella, {diego: dinner}], tags: [couple, hetero, holding hands, smile, candlelight], bubbles: [{speaker_id: isabella, text: Protože jsi obojí., kind: speech}], gap: large}

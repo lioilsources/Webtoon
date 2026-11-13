@@ -1,0 +1,23 @@
+# Bali – Ring není všechno: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_08_bali
+kind: strip
+title: Bali – Ring není všechno
+world: w_rh_08_bali
+audience: adult
+language: cs
+style_id: anime_screencap
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_rice, tags: [rice terraces, palm trees, morning mist], bubbles: [{speaker_id: '', text: Bali., kind: narration}], gap: medium, animate: morning mist drifting through palm trees static camera}
+  - {shot: medium, loc: l_rice, who: [diego], tags: [shadow boxing on path, sweat, serious], bubbles: [{speaker_id: diego, text: Ring je všechno…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rice, who: [diego, isabella], tags: [couple, hetero, woman standing in path, hands on hips, smile, man stopping], bubbles: [{speaker_id: isabella, text: Ne., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_rice, who: [isabella], tags: [playful smile, straw hat, sunlight], bubbles: [{speaker_id: isabella, text: Ring je jen místo. Ty jsi víc., kind: speech}], gap: large, animate: playful smile forming in sunlight static camera}
+  - {shot: wide, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, dinner by pool, lanterns, laughing], bubbles: [{speaker_id: '', text: Večeře ve vile., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, kiss, lantern light, pool reflections], gap: small}
+  - {shot: medium, loc: l_room, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, woman taking off her earrings, man holding her waist, standing], bubbles: [{speaker_id: diego, text: Pomalu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_room, tags: [lantern flame dimming, mosquito net, jungle night, no humans], bubbles: [{speaker_id: '', text: Lucerny dohoří., kind: narration}], gap: large}
+  - {shot: medium, loc: l_villa, who: [diego, {isabella: morning}], tags: [couple, hetero, morning, sitting by pool, her head on his shoulder], bubbles: [{speaker_id: diego, text: Cítím se jako muž., kind: speech}, {speaker_id: isabella, text: Protože jsi., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_rice, who: [diego, {isabella: morning}], tags: [couple, hetero, walking together through rice terraces, holding hands], bubbles: [{speaker_id: '', text: Zůstávají., kind: narration}], gap: large}

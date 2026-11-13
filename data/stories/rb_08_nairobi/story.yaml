@@ -1,0 +1,21 @@
+# Nairobi – Běžec a fotografka: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_08_nairobi
+kind: strip
+title: Nairobi – Běžec a fotografka
+world: w_rb_08_nairobi
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_park, who: [jabari], tags: [running, stopping, looking at view, breathing], bubbles: [{speaker_id: jabari, text: 'Vždycky běžím… ale od čeho?', kind: thought}], gap: medium}
+  - {shot: medium, loc: l_park, who: [elena], tags: [holding camera, taking photo, smile], bubbles: [{speaker_id: elena, text: 'Omlouvám se, že vás ruším. Jste nádherný v pohybu.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_park, who: [jabari], tags: [surprised, shy smile], gap: large}
+  - {shot: medium, loc: l_lodge, who: [elena, jabari], tags: [couple, hetero, sitting on terrace, tea cups], bubbles: [{speaker_id: elena, text: Přijela jsem z Prahy. Hledám klid., kind: speech}, {speaker_id: jabari, text: Já taky., kind: speech}], gap: large}
+  - {shot: wide, loc: l_sunset, who: [elena, jabari], tags: [couple, hetero, hug, embrace, sunset, silhouette], gap: medium}
+  - {shot: close-up, loc: l_sunset, who: [jabari], tags: [gentle smile, sunset light], bubbles: [{speaker_id: jabari, text: Ty nechceš medaile. Chceš mě., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sunset, who: [elena, jabari], tags: [couple, hetero, kiss, closed eyes, sunset], gap: large}
+  - {shot: wide, loc: l_dinner, who: [elena, {jabari: dinner}], tags: [couple, hetero, sitting at table, lanterns, stars, smile], bubbles: [{speaker_id: jabari, text: Poprvé se cítím doma., kind: speech}, {speaker_id: elena, text: I já., kind: speech}], gap: large}

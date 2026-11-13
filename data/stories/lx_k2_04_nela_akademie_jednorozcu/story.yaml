@@ -1,0 +1,23 @@
+# Nela a Akademie Jednorožců: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_04_nela_akademie_jednorozcu
+kind: strip
+title: Nela a Akademie Jednorožců
+world: w_lx_k2_04_nela_akademie_jednorozcu
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_academy, tags: [floating castle, clouds, bright sun, magical architecture, no humans], bubbles: [{speaker_id: '', text: Obrovský hrad plovoucí mezi mraky., kind: narration}], gap: medium, animate: 'ambient only, characters still, clouds drifting slowly, city lights blinking, static camera'}
+  - {shot: medium, loc: l_academy, who: [lyra], tags: [standing, holding staff, pointing, stern face, looking at viewer], bubbles: [{speaker_id: lyra, text: Každý student musí najít svého jednorožce., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [nela], tags: [walking, holding wand, looking around, curious, bushes], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [astra], tags: [unicorn looking away, shy, ears back, close up face], bubbles: [{speaker_id: astra, text: Ne., kind: speech}], gap: small}
+  - {shot: medium, loc: l_forest, who: [nela], tags: [surprised, open mouth, hands on cheeks, looking at unicorn], bubbles: [{speaker_id: nela, text: Ty mlužíš!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [morga], tags: [witch floating, dark magic, purple lightning, angry face, holding jagged staff], bubbles: [{speaker_id: morga, text: Všechna kouzla budou moje!, kind: shout}], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [nela, astra], tags: [rainbow shield, glowing magic, protecting, determined face, unicorn standing firm], bubbles: [{speaker_id: nela, text: Astro!, kind: shout}], gap: medium, animate: 'ambient only, characters still, clouds drifting slowly, soft glow pulsing, static camera'}
+  - {shot: wide, loc: l_battle, who: [nela, astra], tags: [circle of light, other unicorns, holding hands, bright light, morga retreating], bubbles: [{speaker_id: nela, text: Nechci bojovat sama., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [astra], tags: [unicorn looking at viewer, smile, soft eyes, peaceful], bubbles: [{speaker_id: astra, text: Tak dobře., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_battle, who: [nela], tags: [confused, tilting head, surprised, looking at unicorn], bubbles: [{speaker_id: nela, text: 'Co?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [astra, nela], tags: [unicorn nuzzling girl, happy, smile, hugging, sunlight breaking through clouds], bubbles: [{speaker_id: astra, text: Možná jsi moje jezdkyně., kind: speech}], gap: large}

@@ -1,0 +1,24 @@
+# Mlha na Šumavě: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_05_sumava
+kind: strip
+title: Mlha na Šumavě
+world: w_rj_05_sumava
+audience: adult
+language: cs
+style_id: hassaku_soft
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [fog between trees, golden leaves], bubbles: [{speaker_id: '', text: Šumava. Podzim., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [vendula], tags: [holding map, looking at phone, confused, cold, standing at signpost], bubbles: [{speaker_id: vendula, text: Žádný signál. A boty jsou až moc nové., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [jachym], tags: [walking out of fog, backpack, calm], bubbles: [{speaker_id: jachym, text: 'Ztracená?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_forest, who: [vendula, jachym], tags: [couple, hetero, facing each other, woman nervous smile, man faint smile], bubbles: [{speaker_id: vendula, text: 'Ne. Jen nevím, kde jsem. To je rozdíl.', kind: speech}, {speaker_id: jachym, text: Jedna varianta končí v chatě s čajem. Druhá v záchraně., kind: speech}, {speaker_id: vendula, text: Tak tu s čajem., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [jachym], tags: [first smile, slight smile], bubbles: [{speaker_id: jachym, text: Medvědi tu nejsou. Jen ztracené fitness trenérky., kind: speech}], gap: large}
+  - {shot: wide, loc: l_cabin, who: [{vendula: cabin}, {jachym: cabin}], tags: [couple, hetero, woman sitting by fireplace, man making tea, back turned], bubbles: [{speaker_id: vendula, text: Celou hodinu mlčíte. Jako byste mlčel s někým., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{vendula: cabin}, {jachym: cabin}], tags: [couple, hetero, handing mug of tea, fingers touching, warm light], bubbles: [{speaker_id: jachym, text: 'Večer tady mlčení znamená: jsem tady, mám čas a nechci být nikde jinde.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cabin, who: [{vendula: cabin}], tags: [holding mug, soft expression, firelight], bubbles: [{speaker_id: vendula, text: 'Přijela jsem utéct. Od práce, od lidí, od jednoho muže.', kind: speech}, {speaker_id: jachym, text: Já utéct nechci. Jen se nevracet sám., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bench, who: [{vendula: night}, {jachym: cabin}], tags: [couple, hetero, sitting on bench under one blanket, stars], bubbles: [{speaker_id: vendula, text: 'Co když zjistím, že les byl jen krásný výlet, a ne začátek?', kind: speech}, {speaker_id: jachym, text: 'Tak výlet prodloužíme. Do pondělí. A pak celý život, jestli na mě najdeš čas.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bench, who: [{vendula: night}, {jachym: cabin}], tags: [couple, hetero, kiss, kissing, under blanket, starry night], gap: small}
+  - {shot: wide, loc: l_bench, tags: [cabin door closed, warm window, two pairs of boots by the door, folded map, morning light], bubbles: [{speaker_id: '', text: 'Ráno u dveří stojí dvoje boty. A mapa, do které už nikdo nemusí koukat.', kind: narration}], gap: large}

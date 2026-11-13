@@ -1,0 +1,23 @@
+# Safari srdce: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_05_nairobi
+kind: strip
+title: Safari srdce
+world: w_ra_05_nairobi
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_savanna, tags: [elephants, sunset, acacia tree], bubbles: [{speaker_id: '', text: Národní park u Nairobi. Západ slunce., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_savanna, who: [amara], tags: [standing by jeep, looking through binoculars, elephants], gap: medium}
+  - {shot: medium, loc: l_savanna, who: [amara], tags: [stretching, looking down at self, sigh, sad], bubbles: [{speaker_id: amara, text: 'Vypadám spíš jako atletický chlapec než jako žena, která by někoho okouzlila...', kind: thought}], gap: small}
+  - {shot: close-up, loc: l_savanna, who: [amara], tags: [melancholy, looking at sunset], bubbles: [{speaker_id: amara, text: Láska je pro jiné., kind: thought}], gap: large}
+  - {shot: wide, loc: l_camp, who: [amara, marcus], tags: [couple, hetero, man walking toward woman, holding two mugs, campfire], bubbles: [{speaker_id: '', text: Kemp pod akácií., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_camp, who: [amara, marcus], tags: [couple, hetero, handing mug, hands touching, big hand, small hand, steam], gap: small}
+  - {shot: medium, loc: l_camp, who: [marcus], tags: [gentle look, soft smile, holding mug], bubbles: [{speaker_id: marcus, text: Sleduji tě celý den. Máš v sobě takovou sílu a vznešenost... Připomínáš mi gazelu na obzoru., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_camp, who: [amara], tags: [surprised, blinking, holding mug, blush], bubbles: [{speaker_id: amara, text: 'Já? Myslela jsem, že boxerskému šampionovi se líbí úplně jiné typy žen.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_camp, who: [amara, marcus], tags: [couple, hetero, hand on her shoulder, standing close, looking at each other, sunset], bubbles: [{speaker_id: marcus, text: 'Když strávíš život v ringu, naučíš se poznat pravou krásu a ryzost.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_camp, who: [amara, marcus], tags: [couple, hetero, faces close, smile, blush, sunset glow], bubbles: [{speaker_id: marcus, text: 'A ty jsi ta nejkrásnější žena, jakou jsem kdy potkal.', kind: speech}], gap: large}

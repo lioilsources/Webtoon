@@ -1,0 +1,23 @@
+# Fjordy – Zastav se: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_07_fjordy
+kind: strip
+title: Fjordy – Zastav se
+world: w_rh_07_fjordy
+audience: adult
+language: cs
+style_id: noir_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_trail, tags: [fjord, cliffs, low clouds], bubbles: [{speaker_id: '', text: Norské fjordy., kind: narration}], gap: medium, animate: 'low clouds drifting slowly over fjord, static camera'}
+  - {shot: wide, loc: l_trail, who: [erik], tags: [running on trail, sweat, determined, motion blur], bubbles: [{speaker_id: erik, text: Vždycky běžím…, kind: thought}], gap: medium}
+  - {shot: medium, loc: l_trail, who: [erik, sofia], tags: [couple, hetero, woman standing on trail, raising hand, man stopping, breathing hard], bubbles: [{speaker_id: sofia, text: Zastav se., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{erik: dinner}, {sofia: dinner}], tags: [couple, hetero, dinner by fireplace, candles, talking], bubbles: [{speaker_id: '', text: Večer v chatě., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_cabin, who: [{sofia: dinner}], tags: [taking off earrings, soft smile, firelight], gap: medium, animate: 'soft smile forming, hair swaying slightly, static camera'}
+  - {shot: medium, loc: l_cabin, who: [{erik: dinner}, {sofia: dinner}], tags: [couple, hetero, kiss, embrace, firelight, shadows], bubbles: [{speaker_id: erik, text: Pomalu., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, tags: [candle smoke, extinguished candle, window, night, no humans], bubbles: [{speaker_id: '', text: Svíčka zhasne., kind: narration}], gap: large}
+  - {shot: medium, loc: l_dock, who: [{sofia: leave}], tags: [standing with suitcase, looking away, fog], bubbles: [{speaker_id: sofia, text: Musím domů. Bylo to krásné… ale jen dovolenkové., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_dock, who: [erik], tags: [silent, hurt, fog, looking down], gap: small}
+  - {shot: wide, loc: l_dock, who: [erik], tags: [standing alone on dock, ferry leaving in fog, from behind], bubbles: [{speaker_id: '', text: Erik zůstává sám., kind: narration}], gap: large}

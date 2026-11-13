@@ -1,0 +1,24 @@
+# Ztracený luxus na jachtě u Santorini: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_01_santorini
+kind: strip
+title: Ztracený luxus na jachtě u Santorini
+world: w_rg_01_santorini
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [yacht anchored below cliffs, other yachts, sunset], bubbles: [{speaker_id: '', text: Santorini. Jachta kotví pod útesy., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_deck, who: [elena], tags: [standing at railing, looking at other yachts, from side, sunset, wind in hair], gap: medium}
+  - {shot: medium, loc: l_deck, who: [{elena: nosun}], tags: [taking off sunglasses, sigh, insecure, looking down], bubbles: [{speaker_id: elena, text: Všechny ženy tady vypadají jako z mola v Miláně... Já v těchhle šatech jen zkouším zapadnout., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [{elena: nosun}, marcus], tags: [couple, hetero, man offering champagne glass, woman turning, surprised, sunset], bubbles: [{speaker_id: marcus, text: Modelky jsou jen věšáky na šaty., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_deck, who: [marcus], tags: [warm smile, looking at viewer, sunset light], bubbles: [{speaker_id: marcus, text: 'Vy máte v sobě ženskost, ze které se mi tají dech.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_deck, who: [{elena: nosun}], tags: [blush, shy smile, holding champagne glass], gap: large}
+  - {shot: wide, loc: l_dinner, who: [{elena: evening}, {marcus: evening}], tags: [couple, hetero, sitting at candlelit table, laughing, champagne, night], bubbles: [{speaker_id: '', text: Večeře na palubě. Šampaňské a smích., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{elena: evening}, {marcus: evening}], tags: [couple, hetero, standing at cabin door, embrace, faces close, warm light], bubbles: [{speaker_id: marcus, text: 'Jsi dokonalá. Taková, jaká jsi.', kind: speech}, {speaker_id: elena, text: 'Zůstaň se mnou, Marcusi. Až do rána.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [{elena: evening}, {marcus: evening}], tags: [couple, hetero, kiss, closed eyes, hand on cheek, dim light], gap: medium}
+  - {shot: wide, loc: l_cabin, tags: [closed cabin door, porthole, moonlight on waves, night, empty corridor], bubbles: [{speaker_id: '', text: Dveře kajuty se zavřou. Za okénkem šumí moře., kind: narration}], gap: large}
+  - {shot: medium, loc: l_deck, who: [elena, marcus], tags: [couple, hetero, morning, sitting together on deck, coffee cups, her head on his shoulder, soft sunlight], bubbles: [{speaker_id: elena, text: Poprvé se tu necítím navíc., kind: speech}, {speaker_id: marcus, text: 'Protože jsi přesně tam, kam patříš.', kind: speech}], gap: large}

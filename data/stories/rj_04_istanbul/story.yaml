@@ -1,0 +1,24 @@
+# Koberce v Istanbulu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_04_istanbul
+kind: strip
+title: Koberce v Istanbulu
+world: w_rj_04_istanbul
+audience: adult
+language: cs
+style_id: art_nouveau_mucha
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bazaar, tags: [labyrinth of shops, lanterns, gold], bubbles: [{speaker_id: '', text: Istanbul. Velký bazar., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bazaar, who: [selma], tags: [leading tourists, raised hand, confident, walking], gap: medium}
+  - {shot: medium, loc: l_bazaar, who: [can], tags: [standing before carpet shop, calm, arms crossed, looking at viewer], bubbles: [{speaker_id: can, text: Madam. Průvodkyně tu mívají v očích únavu. Vy máte v očích moře., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bazaar, who: [selma], tags: [surprised, slight smile], bubbles: [{speaker_id: selma, text: 'Moře?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_bazaar, who: [selma, can], tags: [couple, hetero, facing each other, carpets behind, lantern light], bubbles: [{speaker_id: can, text: 'Hluboké. S ostrovem, ke kterému se nikomu nechce plavat.', kind: speech}, {speaker_id: selma, text: 'Vy byste se odvážil?', kind: speech}, {speaker_id: can, text: 'Přijďte večer. Ukážu vám koberec, který se nedá koupit penězi. Bospor.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_bosphorus, who: [{selma: evening}, {can: evening}], tags: [couple, hetero, sitting on deck, tea glasses, bridge lights], bubbles: [{speaker_id: selma, text: Čtu pravdu ve vzorech. I v očích. Je to moje pracovní deformace., kind: speech}, {speaker_id: can, text: Tak si ve mně přečtěte pravdu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bosphorus, who: [{selma: evening}, {can: evening}], tags: [couple, hetero, kiss, kissing, city lights, night wind], gap: large}
+  - {shot: medium, loc: l_shop, who: [{selma: evening}, {can: evening}], tags: [couple, hetero, man giving small jewelry box, woman opening it, lamp light], bubbles: [{speaker_id: selma, text: 'Canu… tohle je z obchodní kolekce?', kind: speech}, {speaker_id: can, text: Dárek pro dobrou zákaznici., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_shop, who: [{selma: evening}], tags: [pained smile, holding necklace box, eyes glistening], bubbles: [{speaker_id: selma, text: 'Ta krabička má razítko vašeho zboží. A tohle zboží dáváte každé, která vám uvěří o Bosporu.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_shop, who: [selma], tags: [putting on coat, straightening earrings, cold expression, walking between carpets], bubbles: [{speaker_id: selma, text: 'Vy nechcete ostrov, Canu. Vy chcete prodej.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_shop, who: [{can: evening}], tags: [sitting alone among carpets, head down, single lamp], bubbles: [{speaker_id: '', text: Bohatý na všechno. Kromě jedné věci., kind: narration}], gap: large}

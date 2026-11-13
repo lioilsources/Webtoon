@@ -1,0 +1,22 @@
+# Bali – Plážový resort: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_07_bali
+kind: strip
+title: Bali – Plážový resort
+world: w_ri_07_bali
+audience: adult
+language: cs
+style_id: watercolor_paris
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_rice, who: [david], tags: [lost, holding phone, looking around, rain starting], gap: medium}
+  - {shot: medium, loc: l_rice, who: [ayu, david], tags: [couple, hetero, woman holding big banana leaf over man, rain], bubbles: [{speaker_id: ayu, text: 'Vy jste z resortu?', kind: speech}, {speaker_id: david, text: 'Ano. A vy?', kind: speech}, {speaker_id: ayu, text: Já jsem tady doma., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{ayu: dance}], tags: [dancing, bonfire, torches, night], gap: medium}
+  - {shot: medium, loc: l_beach, who: [{ayu: dance}, {david: evening}], tags: [couple, hetero, woman taking man's hands, dancing, awkward, laughing], bubbles: [{speaker_id: david, text: Já neumím tančit., kind: speech}, {speaker_id: ayu, text: Já tě naučím., kind: speech}], gap: large}
+  - {shot: medium, loc: l_resto, who: [ayu, {david: evening}], tags: [couple, hetero, man giving flower, candles, smile], bubbles: [{speaker_id: david, text: 'Ayu, zůstaň se mnou do konce týdne.', kind: speech}, {speaker_id: ayu, text: Zůstanu., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bungalow, who: [ayu, {david: evening}], tags: [couple, hetero, kiss, embrace, lanterns, night], gap: small}
+  - {shot: establishing, loc: l_bungalow, tags: [closed bungalow door, lanterns, palm leaves, night], bubbles: [{speaker_id: '', text: Dveře se zavřou., kind: narration}], gap: large}
+  - {shot: medium, loc: l_morning, who: [{ayu: travel}, {david: evening}], tags: [couple, hetero, woman with straw bag leaving, man standing on terrace, morning], bubbles: [{speaker_id: '', text: Ráno Ayu odjíždí za rodinou., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_morning, who: [{david: evening}], tags: [holding seashell, sad smile, ocean], gap: large}

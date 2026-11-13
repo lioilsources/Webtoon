@@ -1,0 +1,23 @@
+# Nefertari a Faraonův stín: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_04_nefertari_faraonova_vzpoura
+kind: strip
+title: Nefertari a Faraonův stín
+world: w_lx_k7_04_nefertari_faraonova_vzpoura
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_desert, tags: [dunes, pyramids, orange sky, twilight, silhouettes], bubbles: [{speaker_id: '', text: Soumrak v poušti u pyramid., kind: narration}], gap: medium, animate: 'ambient only, characters still, dust drifting, static camera'}
+  - {shot: wide, loc: l_desert, who: [nefertari, anubis], tags: [walking on dune, holding staff, running dog, looking at horizon, serious], bubbles: [{speaker_id: anubis, text: Tři vesnice už nezvedly lampy. Tohle není noc. Tohle je stín., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_desert, who: [nefertari], tags: [holding staff, glowing armbands, determined, pointing, magic glow], bubbles: [{speaker_id: nefertari, text: 'Faraon Žebřík III. Myslí si, že když přikryje slunce, všichni se mu budou klanět.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_golden_hall, who: [pharaoh], tags: [sitting on throne, gold mask, gold statue, looking down, imposing], bubbles: [{speaker_id: pharaoh, text: 'Kdo se odvažuje vstoupit BEZ darů?', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_golden_hall, who: [nefertari], tags: [standing calm, looking at pharaoh, holding staff, confident], bubbles: [{speaker_id: nefertari, text: 'Já jsem Nefertari Svítící. Přináším otázku: Faraone, kde jsou tvoji přátelé?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_golden_hall, who: [pharaoh], tags: [standing up, gesturing, gold mask, proud, angry], bubbles: [{speaker_id: pharaoh, text: 'Já mám ZLATO. Zlato neodejde, neodmlouvá, na nic se neptá.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_golden_hall, who: [nefertari, pharaoh], tags: [looking around empty hall, gold statues, sad expression, empty room], bubbles: [{speaker_id: nefertari, text: 'Zlato jen stojí. A ty jsi poušť přikryl stínem, aby nikdo neviděl, jak je tady prázdno.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid_top, who: [pharaoh, nefertari], tags: [standing on roof, large golden disc shadow, night sky, looking at shadow, sad], bubbles: [{speaker_id: pharaoh, text: 'Když jsem byl malý, nikdo nechodil na mé oslavy. Řekl jsem si: jednou budu mít tolik zlata, že si každý přijde sednout.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid_top, who: [nefertari], tags: [pointing staff at sky, determined, glowing staff, looking at pharaoh], bubbles: [{speaker_id: nefertari, text: Dej noc zpátky hvězdám. A otevři pyramidu. Ne jako pokladnici. Jako dům., kind: speech}], gap: medium, animate: 'ambient only, characters still, stars twinkling, dust drifting, static camera'}
+  - {shot: wide, loc: l_pyramid_top, who: [pharaoh], tags: [pushing golden disc, sunlight rays, opening sky, straining, effort], bubbles: [{speaker_id: pharaoh, text: 'Oni se dívají nahoru. Na mě?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pyramid_top, who: [nefertari], tags: [smiling, looking up, sunlight on face, hopeful], bubbles: [{speaker_id: nefertari, text: 'Dívají se na slunce. Jestli chceš, aby se dívali na tebe, musíš jim ukázat tvář, ne masku.', kind: speech}], gap: large}

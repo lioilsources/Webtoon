@@ -1,0 +1,24 @@
+# Podzimní vystřízlivění v Tokiu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rg_02_tokio
+kind: strip
+title: Podzimní vystřízlivění v Tokiu
+world: w_rg_02_tokio
+audience: adult
+language: cs
+style_id: manga_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_shibuya, tags: [neon signs, rain, crowd, scramble crossing], bubbles: [{speaker_id: '', text: Tokio. Šibuja v dešti., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_shibuya, who: [sophia], tags: [walking alone on wet pavement, stiletto boots, neon reflections, umbrella], gap: medium}
+  - {shot: close-up, loc: l_shibuya, who: [sophia], tags: [looking around, lonely, rain, neon light on face], bubbles: [{speaker_id: sophia, text: 'Můj život je jen shon. Hledám někoho, s kým bych mohla prostě zpomalit...', kind: thought}], gap: large}
+  - {shot: medium, loc: l_gallery, who: [sophia, kenji], tags: [couple, hetero, man speaking to woman under gallery awning, rain, confident smile], bubbles: [{speaker_id: kenji, text: 'Taky utíkáte před deštěm? Bydlím kousek odsud. Výhled na město vám ten déšť vynahradí.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gallery, who: [sophia], tags: [hesitant, small smile, rain drops], bubbles: [{speaker_id: sophia, text: Jen na chvíli., kind: speech}], gap: large}
+  - {shot: wide, loc: l_apartment, who: [sophia, kenji], tags: [couple, hetero, standing at window, city lights, night, looking at skyline together], bubbles: [{speaker_id: '', text: Roppongi. Město pod nimi svítí do noci., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_apartment, who: [sophia, kenji], tags: [couple, hetero, kiss by the window, city lights behind, night], gap: small}
+  - {shot: wide, loc: l_apartment, tags: [city lights through window, lamp switched off, dark room, night], bubbles: [{speaker_id: '', text: Lampa zhasne. Tokio svítí dál., kind: narration}], gap: large}
+  - {shot: medium, loc: l_apartment, who: [{kenji: morning}], tags: [morning, standing, fastening wristwatch, not looking, cold expression], gap: medium}
+  - {shot: medium, loc: l_apartment, who: [{sophia: morning}, {kenji: morning}], tags: [couple, hetero, woman standing by window holding coffee cup, man fastening wristwatch by the door, fully clothed, morning light], bubbles: [{speaker_id: sophia, text: 'A... co bude teď, Kenji? Uvidíme se zítra?', kind: speech}, {speaker_id: kenji, text: 'Byla to hezká noc, Sophio. Ale já zítra odlétám do Londýna. Nehledej v tom nic víc.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_apartment, who: [{sophia: morning}], tags: [alone, face in hands, single tear, morning light, empty room], gap: large}

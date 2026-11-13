@@ -1,0 +1,22 @@
+# Švýcarské Alpy – Horská chata: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_06_alpy
+kind: strip
+title: Švýcarské Alpy – Horská chata
+world: w_ri_06_alpy
+audience: adult
+language: cs
+style_id: fantasy_colorlines
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_gondola, tags: [cable car over snowy mountains, alps], bubbles: [{speaker_id: '', text: Švýcarské Alpy., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_gondola, who: [marek, elise], tags: [couple, hetero, sitting in cable car, looking at each other], bubbles: [{speaker_id: marek, text: 'Nevypadám tu trochu jako medvěd?', kind: speech}, {speaker_id: elise, text: 'Jako medvěd, který se nebojí výšek.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gondola, who: [elise], tags: [teasing smile], bubbles: [{speaker_id: marek, text: 'To je kompliment?', kind: speech}, {speaker_id: elise, text: To je fakt., kind: speech}], gap: large}
+  - {shot: medium, loc: l_chalet, who: [{marek: sweater}], tags: [playing guitar, fireplace, warm light], gap: medium}
+  - {shot: medium, loc: l_chalet, who: [{marek: sweater}, {elise: evening}], tags: [couple, hetero, sitting by fireplace, wine glasses, looking at each other], bubbles: [{speaker_id: elise, text: 'Mareku, zůstaň do zítra.', kind: speech}, {speaker_id: marek, text: Zůstanu., kind: speech}], gap: large}
+  - {shot: wide, loc: l_slope, who: [marek, {elise: ski}], tags: [couple, hetero, snow, woman handing glove, smiling], bubbles: [{speaker_id: elise, text: Naučím tě lyžovat., kind: speech}, {speaker_id: marek, text: 'A já tě naučím, jak se nebát.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_door, who: [{marek: sweater}, {elise: evening}], tags: [couple, hetero, embrace, wooden door, lamp light], bubbles: [{speaker_id: '', text: 'Bunda, kozačky a šperky zůstanou v předsíni.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_door, who: [{marek: sweater}, {elise: evening}], tags: [couple, hetero, kiss, closed eyes, tender], gap: small}
+  - {shot: establishing, loc: l_door, tags: [snowy window, night, stars over alps, lamp off], bubbles: [{speaker_id: '', text: Nad Alpami se rozsvítí hvězdy., kind: narration}], gap: large}
