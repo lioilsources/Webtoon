@@ -57,8 +57,10 @@ def asc_create(rows, apply):
             continue
         iap = asc.call("/v2/inAppPurchases", "POST", {"data": {
             "type": "inAppPurchases",
-            "attributes": {"name": pid, "productId": pid, "inAppPurchaseType": "NON_CONSUMABLE", "familySharable": True},
+            "attributes": {"name": pid, "productId": pid, "inAppPurchaseType": "NON_CONSUMABLE"},
             "relationships": {"app": {"data": {"type": "apps", "id": app}}}}})["data"]["id"]
+        asc.call(f"/v2/inAppPurchases/{iap}", "PATCH", {"data": {  # Family Sharing: not allowed on create
+            "type": "inAppPurchases", "id": iap, "attributes": {"familySharable": True}}})
         for locale, name, desc in (("cs", p["name_cs"], p["description_cs"]), ("en-US", p["name_en"], p["description_en"])):
             asc.call("/v1/inAppPurchaseLocalizations", "POST", {"data": {
                 "type": "inAppPurchaseLocalizations", "attributes": {"locale": locale, "name": name, "description": desc},
