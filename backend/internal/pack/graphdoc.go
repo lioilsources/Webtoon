@@ -93,8 +93,8 @@ func GamebooksDir() (string, error) {
 
 // GraphPath is data/gamebooks/<id>/graph.yaml under the repo.
 func GraphPath(id string) (string, error) {
-	if !packIDRe.MatchString(id) {
-		return "", fmt.Errorf("gamebook id %q: use [a-z0-9-]", id)
+	if !gamebookIDRe.MatchString(id) {
+		return "", fmt.Errorf("gamebook id %q: use [a-z0-9_-]", id)
 	}
 	dir, err := GamebooksDir()
 	if err != nil {

@@ -89,8 +89,12 @@ func partName(i, n int, always bool) string {
 // Plan lays out the zips of a pack: stories are already filtered (Filter). Media sources are
 // resolved against mediaDir; nothing is read from disk here.
 func Plan(opts Options, stories []Story) ([]Part, error) {
-	if !packIDRe.MatchString(opts.ID) {
-		return nil, fmt.Errorf("pack id %q: use [a-z0-9-]", opts.ID)
+	re := packIDRe
+	if opts.Gamebook != nil {
+		re = gamebookIDRe
+	}
+	if !re.MatchString(opts.ID) {
+		return nil, fmt.Errorf("pack id %q: use %s", opts.ID, re)
 	}
 	if opts.Title == "" {
 		return nil, fmt.Errorf("pack title is empty")
