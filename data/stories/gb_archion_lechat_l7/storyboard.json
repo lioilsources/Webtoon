@@ -1,5 +1,18 @@
 {
   "title": "Epilog",
+  "title_i18n": {
+    "de": "Epilog",
+    "en": "Epilogue",
+    "fr": "Épilogue",
+    "it": "Epilogo",
+    "ja": "エピローグ",
+    "ko": "에필로그",
+    "pl": "Epilog",
+    "pt-BR": "Epílogo",
+    "ru": "Эпилог",
+    "uk": "Епілог",
+    "vi": "Phần kết"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -14,7 +27,20 @@
         {
           "speaker_id": "",
           "text": "Píp.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Piep.",
+            "en": "Beep.",
+            "fr": "Bip.",
+            "it": "Bip.",
+            "ja": "ピッ。",
+            "ko": "삐.",
+            "pl": "Pip.",
+            "pt-BR": "Bip.",
+            "ru": "Пип.",
+            "uk": "Піп.",
+            "vi": "Bíp."
+          }
         }
       ],
       "sfx": [],
@@ -40,7 +66,20 @@
         {
           "speaker_id": "kosmo",
           "text": "…hokej můžem probrat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "…über Eishockey können wir reden.",
+            "en": "…we can talk hockey.",
+            "fr": "…on peut parler hockey.",
+            "it": "…di hockey possiamo parlare.",
+            "ja": "…ホッケーの話ならできる。",
+            "ko": "…하키 얘기는 할 수 있잖아.",
+            "pl": "…o hokeju możemy pogadać.",
+            "pt-BR": "…dá pra falar de hóquei.",
+            "ru": "…про хоккей можем поговорить.",
+            "uk": "…про хокей можемо поговорити.",
+            "vi": "…chuyện khúc côn cầu thì vẫn nói được."
+          }
         }
       ],
       "sfx": [],
@@ -65,7 +104,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "…budu ti chybět.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "…du wirst mich vermissen.",
+            "en": "…you'll miss me.",
+            "fr": "…je vais te manquer.",
+            "it": "…ti mancherò.",
+            "ja": "…俺がいなくて寂しくなるぞ。",
+            "ko": "…내가 그리울 거야.",
+            "pl": "…będziesz za mną tęsknić.",
+            "pt-BR": "…você vai sentir minha falta.",
+            "ru": "…ты будешь по мне скучать.",
+            "uk": "…ти сумуватимеш за мною.",
+            "vi": "…mày sẽ nhớ tao."
+          }
         }
       ],
       "sfx": [],
@@ -85,7 +137,20 @@
         {
           "speaker_id": "",
           "text": "Píp.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Piep.",
+            "en": "Beep.",
+            "fr": "Bip.",
+            "it": "Bip.",
+            "ja": "ピッ。",
+            "ko": "삐.",
+            "pl": "Pip.",
+            "pt-BR": "Bip.",
+            "ru": "Пип.",
+            "uk": "Піп.",
+            "vi": "Bíp."
+          }
         }
       ],
       "sfx": [],
@@ -111,7 +176,20 @@
         {
           "speaker_id": "kosmo",
           "text": "…vydal jsi to beze mě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "…du hast es ohne mich rausgebracht.",
+            "en": "…you released it without me.",
+            "fr": "…tu l'as sorti sans moi.",
+            "it": "…l'hai pubblicato senza di me.",
+            "ja": "…俺抜きで出しやがったな。",
+            "ko": "…나 없이 냈구나.",
+            "pl": "…wydałeś to beze mnie.",
+            "pt-BR": "…você lançou sem mim.",
+            "ru": "…ты выпустил это без меня.",
+            "uk": "…ти випустив це без мене.",
+            "vi": "…mày phát hành mà không có tao."
+          }
         }
       ],
       "sfx": [],
@@ -136,7 +214,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Ty jsi to nikdy nevydal.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast es nie rausgebracht.",
+            "en": "You never released it.",
+            "fr": "Toi, tu l'as jamais sorti.",
+            "it": "Tu non l'hai mai pubblicato.",
+            "ja": "お前は一度も出さなかった。",
+            "ko": "넌 끝내 안 냈잖아.",
+            "pl": "Ty nigdy tego nie wydałeś.",
+            "pt-BR": "Você nunca lançou.",
+            "ru": "А ты так и не выпустил.",
+            "uk": "А ти так і не випустив.",
+            "vi": "Còn mày thì chưa bao giờ phát hành."
+          }
         }
       ],
       "sfx": [],

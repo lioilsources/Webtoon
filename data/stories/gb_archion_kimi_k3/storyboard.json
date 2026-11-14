@@ -1,5 +1,18 @@
 {
   "title": "Demontáž",
+  "title_i18n": {
+    "de": "Demontage",
+    "en": "Teardown",
+    "fr": "Démontage",
+    "it": "Smontaggio",
+    "ja": "解体",
+    "ko": "해체",
+    "pl": "Demontaż",
+    "pt-BR": "Desmonte",
+    "ru": "Демонтаж",
+    "uk": "Демонтаж",
+    "vi": "Tháo dỡ"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -32,7 +45,20 @@
         {
           "speaker_id": "",
           "text": "Inzerát: Server, 64 GB RAM, Xeon, 2× SSD + HDD pole. Plně funkční. Cena dohodou.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Inserat: Server, 64 GB RAM, Xeon, 2× SSD + HDD-Array. Voll funktionsfähig. Preis VB.",
+            "en": "Listing: Server, 64 GB RAM, Xeon, 2× SSD + HDD array. Fully working. Price negotiable.",
+            "fr": "Annonce : Serveur, 64 GB RAM, Xeon, 2× SSD + grappe HDD. Entièrement fonctionnel. Prix à débattre.",
+            "it": "Annuncio: Server, 64 GB RAM, Xeon, 2× SSD + array HDD. Perfettamente funzionante. Prezzo trattabile.",
+            "ja": "出品:サーバー、64 GB RAM, Xeon、2× SSD + HDDアレイ。完動品。価格は応相談。",
+            "ko": "판매글: 서버, 64 GB RAM, Xeon, 2× SSD + HDD 어레이. 완벽 작동. 가격 협의.",
+            "pl": "Ogłoszenie: Serwer, 64 GB RAM, Xeon, 2× SSD + macierz HDD. W pełni sprawny. Cena do negocjacji.",
+            "pt-BR": "Anúncio: Servidor, 64 GB RAM, Xeon, 2× SSD + array de HDD. Funcionando perfeitamente. Preço a combinar.",
+            "ru": "Объявление: Сервер, 64 GB RAM, Xeon, 2× SSD + HDD-массив. Полностью рабочий. Цена договорная.",
+            "uk": "Оголошення: Сервер, 64 GB RAM, Xeon, 2× SSD + HDD-масив. Повністю робочий. Ціна договірна.",
+            "vi": "Tin rao: Server, 64 GB RAM, Xeon, 2× SSD + dàn HDD. Hoạt động tốt. Giá thương lượng."
+          }
         }
       ],
       "sfx": [],
@@ -59,7 +85,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Víte, čí byly ty disky? Jeho. Celá ta pole. Vyndal jsem je, pole jsem prodal, disky… disky jsou taky někde. Nejsou ve stroji. To je jediný, co vím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wisst ihr, wem die Platten gehört haben? Ihm. Die ganzen Arrays. Ich hab sie rausgenommen, die Arrays verkauft, die Platten… die Platten sind auch irgendwo. Nicht in der Maschine. Mehr weiß ich nicht.",
+            "en": "You know whose drives those were? His. The whole arrays. I pulled them out, sold the arrays, the drives… the drives are somewhere too. Not in the machine. That's all I know.",
+            "fr": "Vous savez à qui étaient ces disques ? À lui. Toutes ces grappes. Je les ai sortis, j'ai vendu les grappes, les disques… les disques sont quelque part aussi. Pas dans la machine. C'est tout ce que je sais.",
+            "it": "Sapete di chi erano quei dischi? Suoi. Tutti quegli array. Li ho tolti, gli array li ho venduti, i dischi… anche i dischi sono da qualche parte. Non nella macchina. È l'unica cosa che so.",
+            "ja": "あのディスク、誰のだったか知ってるか?あいつのだ。アレイ丸ごと。俺が抜いて、アレイは売った、ディスクは…ディスクもどこかにある。マシンの中にはない。俺にわかるのはそれだけだ。",
+            "ko": "그 디스크가 누구 건지 알아요? 걔 거예요. 어레이 전부. 내가 빼서, 어레이는 팔았고, 디스크는… 디스크도 어딘가 있어요. 기계 안엔 없어요. 내가 아는 건 그것뿐이에요.",
+            "pl": "Wiecie, czyje były te dyski? Jego. Całe te macierze. Wyjąłem je, macierze sprzedałem, dyski… dyski też gdzieś są. Nie ma ich w maszynie. Tylko tyle wiem.",
+            "pt-BR": "Sabem de quem eram esses discos? Dele. Os arrays inteiros. Eu tirei, vendi os arrays, os discos… os discos também tão em algum lugar. Não na máquina. É só o que eu sei.",
+            "ru": "Знаете, чьи это были диски? Его. Все эти массивы. Я их вынул, массивы продал, диски… диски тоже где-то есть. Не в машине. Это всё, что я знаю.",
+            "uk": "Знаєте, чиї то були диски? Його. Усі ці масиви. Я їх вийняв, масиви продав, диски… диски теж десь є. Не в машині. Це все, що я знаю.",
+            "vi": "Biết mấy cái ổ đó của ai không? Của nó. Cả mấy dàn đó. Tôi tháo ra, dàn thì bán, ổ thì… ổ cũng ở đâu đó. Không ở trong máy. Tôi chỉ biết vậy."
+          }
         }
       ],
       "sfx": [],
@@ -120,7 +159,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Dlužíš mi server, na kterém jsem pracoval stovky hodin, aby ses na něm naučil Linux.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir einen Server, an dem ich Hunderte Stunden gearbeitet hab, damit du darauf Linux lernst.",
+            "en": "You owe me a server I spent hundreds of hours on so you could learn Linux.",
+            "fr": "Tu me dois un serveur sur lequel j'ai bossé des centaines d'heures pour que t'apprennes Linux.",
+            "it": "Mi devi un server su cui ho lavorato centinaia di ore perché ci imparassi Linux.",
+            "ja": "お前がLinuxを覚えられるように、俺が何百時間もかけたサーバー、その借りがあるだろ。",
+            "ko": "네가 Linux 배우라고 내가 수백 시간 들여 작업한 서버, 너 그거 빚졌어.",
+            "pl": "Wisisz mi serwer, nad którym pracowałem setki godzin, żebyś się na nim nauczył Linuksa.",
+            "pt-BR": "Você me deve um servidor em que eu trabalhei centenas de horas pra você aprender Linux.",
+            "ru": "Ты мне должен сервер, над которым я работал сотни часов, чтобы ты на нём выучил Linux.",
+            "uk": "Ти мені винен сервер, над яким я працював сотні годин, щоб ти на ньому вивчив Linux.",
+            "vi": "Mày nợ tao một cái server mà tao đã bỏ ra hàng trăm giờ để mày học Linux trên đó."
+          }
         }
       ],
       "sfx": [],
@@ -146,7 +198,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Ty jsi z něj vykradl moje disky…",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast meine Platten aus ihm geklaut…",
+            "en": "You stripped my drives out of it…",
+            "fr": "T'en as pillé mes disques…",
+            "it": "Gli hai rubato i miei dischi…",
+            "ja": "お前はそこから俺のディスクを抜き取って…",
+            "ko": "넌 거기서 내 디스크를 빼 갔고…",
+            "pl": "Wyszabrowałeś z niego moje dyski…",
+            "pt-BR": "Você saqueou meus discos dele…",
+            "ru": "Ты выдрал из него мои диски…",
+            "uk": "Ти видер із нього мої диски…",
+            "vi": "Mày moi trộm ổ của tao ra khỏi nó…"
+          }
         }
       ],
       "sfx": [],
@@ -172,7 +237,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "…a navíc sis ho zpeněžil.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "…und ihn obendrein zu Geld gemacht.",
+            "en": "…and on top of that, you cashed it in.",
+            "fr": "…et en plus, tu l'as revendu.",
+            "it": "…e per giunta l'hai monetizzato.",
+            "ja": "…おまけに金に換えやがった。",
+            "ko": "…게다가 그걸 돈으로 바꿨지.",
+            "pl": "…a do tego jeszcze go spieniężyłeś.",
+            "pt-BR": "…e ainda por cima vendeu.",
+            "ru": "…и вдобавок его продал.",
+            "uk": "…і до того ж його продав.",
+            "vi": "…rồi còn đem nó đi bán lấy tiền."
+          }
         }
       ],
       "sfx": [],
@@ -216,12 +294,38 @@
         {
           "speaker_id": "kosmo",
           "text": "A víte, co je na tom nejhorší? Že já jsem tenkrát fakt chtěl. Seděl jsem u toho stroje tři noci. Četl jsem jeho návody.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wisst ihr, was das Schlimmste ist? Dass ich damals echt wollte. Ich saß drei Nächte an der Kiste. Ich hab seine Anleitungen gelesen.",
+            "en": "And you know the worst part? Back then I really wanted it. I sat at that machine for three nights. I read his guides.",
+            "fr": "Et vous savez le pire ? C'est qu'à l'époque, je voulais vraiment. Je suis resté trois nuits devant cette machine. J'ai lu ses tutos.",
+            "it": "E sapete qual è la cosa peggiore? Che all'epoca volevo davvero. Sono stato tre notti davanti a quella macchina. Ho letto le sue guide.",
+            "ja": "で、一番最悪なのは何か知ってるか?あの頃、俺は本気でやりたかったんだ。あのマシンの前に三晩座ってた。あいつのマニュアルを読んだ。",
+            "ko": "그리고 제일 최악이 뭔지 알아요? 그때 난 진짜 하고 싶었다는 거예요. 그 기계 앞에 사흘 밤을 앉아 있었어요. 걔가 쓴 가이드를 읽었어요.",
+            "pl": "I wiecie, co jest w tym najgorsze? Że ja wtedy naprawdę chciałem. Siedziałem przy tej maszynie trzy noce. Czytałem jego poradniki.",
+            "pt-BR": "E sabem qual é a pior parte? Que naquela época eu queria de verdade. Fiquei três noites na frente daquela máquina. Li os tutoriais dele.",
+            "ru": "И знаете, что хуже всего? Что я тогда правда хотел. Я сидел у этой машины три ночи. Читал его инструкции.",
+            "uk": "І знаєте, що найгірше? Що я тоді справді хотів. Я сидів біля тієї машини три ночі. Читав його інструкції.",
+            "vi": "Mà biết điều tệ nhất là gì không? Là hồi đó tôi thật sự muốn. Tôi ngồi bên cái máy ấy ba đêm liền. Tôi đọc hướng dẫn của nó."
+          }
         },
         {
           "speaker_id": "kosmo",
           "text": "Chtěl jsem být ten člověk, kterýho on viděl. Ten vývojář.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wollte der Mensch sein, den er in mir sah. Der Entwickler.",
+            "en": "I wanted to be the person he saw. That developer.",
+            "fr": "Je voulais être celui qu'il voyait en moi. Ce développeur.",
+            "it": "Volevo essere la persona che vedeva lui. Lo sviluppatore.",
+            "ja": "あいつが見てた俺になりたかった。あの開発者に。",
+            "ko": "걔가 봤던 그 사람이 되고 싶었어요. 그 개발자.",
+            "pl": "Chciałem być tym człowiekiem, którego on widział. Tym developerem.",
+            "pt-BR": "Eu queria ser a pessoa que ele via. Aquele desenvolvedor.",
+            "ru": "Я хотел быть тем человеком, которого он видел. Тем разработчиком.",
+            "uk": "Я хотів бути тією людиною, яку він бачив. Тим розробником.",
+            "vi": "Tôi muốn trở thành con người mà nó nhìn thấy. Người lập trình viên ấy."
+          }
         }
       ],
       "sfx": [],
@@ -247,7 +351,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Jenže jsem zjistil, že… že být někdo jiný je práce. A já měl svůj Nebulon. Deset let. Windows. Okýnka. Můj svět.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nur hab ich gemerkt, dass… dass jemand anderes zu sein Arbeit ist. Und ich hatte mein Nebulon. Zehn Jahre. Windows. Fensterchen. Meine Welt.",
+            "en": "But I found out that… that being someone else is work. And I had my Nebulon. Ten years. Windows. Little windows. My world.",
+            "fr": "Sauf que j'ai découvert que… qu'être quelqu'un d'autre, c'est du boulot. Et moi, j'avais mon Nebulon. Dix ans. Windows. Les petites fenêtres. Mon monde.",
+            "it": "Solo che ho scoperto che… che essere qualcun altro è fatica. E io avevo il mio Nebulon. Dieci anni. Windows. Finestrelle. Il mio mondo.",
+            "ja": "でもわかったんだ…別の誰かになるのは大変なんだって。それに俺にはNebulonがあった。十年。Windows。ウィンドウ。俺の世界。",
+            "ko": "근데 알게 됐어요… 다른 사람이 된다는 게 일이라는 걸. 그리고 나한텐 내 Nebulon이 있었어요. 10년. Windows. 창들. 내 세상.",
+            "pl": "Tylko że odkryłem, że… że bycie kimś innym to robota. A ja miałem swój Nebulon. Dziesięć lat. Windows. Okienka. Mój świat.",
+            "pt-BR": "Só que eu descobri que… que ser outra pessoa dá trabalho. E eu tinha o meu Nebulon. Dez anos. Windows. Janelinhas. Meu mundo.",
+            "ru": "Только я понял, что… что быть кем-то другим — это работа. А у меня был мой Nebulon. Десять лет. Windows. Окошки. Мой мир.",
+            "uk": "Тільки я зрозумів, що… що бути кимось іншим — це робота. А в мене був мій Nebulon. Десять років. Windows. Віконця. Мій світ.",
+            "vi": "Nhưng rồi tôi nhận ra… làm một người khác là cả một công việc. Còn tôi đã có Nebulon. Mười năm. Windows. Những ô cửa sổ. Thế giới của tôi."
+          }
         }
       ],
       "sfx": [],
@@ -273,7 +390,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Můj svět měl být naším světem.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Meine Welt sollte unsere Welt sein.",
+            "en": "My world was supposed to be our world.",
+            "fr": "Mon monde devait être notre monde.",
+            "it": "Il mio mondo doveva essere il nostro mondo.",
+            "ja": "俺の世界は、俺たちの世界になるはずだった。",
+            "ko": "내 세상은 우리 세상이 될 거였어.",
+            "pl": "Mój świat miał być naszym światem.",
+            "pt-BR": "Meu mundo era pra ser o nosso mundo.",
+            "ru": "Мой мир должен был стать нашим миром.",
+            "uk": "Мій світ мав стати нашим світом.",
+            "vi": "Thế giới của tao lẽ ra phải là thế giới của chúng ta."
+          }
         }
       ],
       "sfx": [],
@@ -295,7 +425,20 @@
         {
           "speaker_id": "",
           "text": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "en": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "fr": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "it": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "ja": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "ko": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "pl": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "pt-BR": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "ru": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "uk": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+            "vi": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK"
+          }
         }
       ],
       "sfx": [],
@@ -322,7 +465,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Dlužíš mi poděkování za tvoji webovou prezentaci, která u mě pořád běží.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir ein Dankeschön für deine Website, die immer noch bei mir läuft.",
+            "en": "You owe me a thank-you for your website that's still running on my server.",
+            "fr": "Tu me dois un merci pour ton site web qui tourne toujours chez moi.",
+            "it": "Mi devi un grazie per il tuo sito web che gira ancora da me.",
+            "ja": "今も俺のとこで動いてるお前のウェブサイトの分、礼くらい言えよ。",
+            "ko": "아직도 내 서버에서 돌아가는 네 웹사이트, 고맙다는 말은 해야지.",
+            "pl": "Wisisz mi podziękowanie za twoją stronę, która dalej u mnie działa.",
+            "pt-BR": "Você me deve um obrigado pelo seu site, que ainda roda no meu servidor.",
+            "ru": "Ты мне должен спасибо за свой сайт, который до сих пор крутится у меня.",
+            "uk": "Ти мені винен подяку за свій сайт, який досі крутиться в мене.",
+            "vi": "Mày nợ tao một lời cảm ơn vì cái trang web của mày vẫn đang chạy trên máy tao."
+          }
         }
       ],
       "sfx": [],
@@ -384,7 +540,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Krádež. Říkal jsem mu krádež.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Diebstahl. Ich hab's Diebstahl genannt.",
+            "en": "Theft. I called it theft.",
+            "fr": "Du vol. Je lui ai dit que c'était du vol.",
+            "it": "Furto. L'ho chiamato furto.",
+            "ja": "盗みだ。俺はあいつに盗みだって言った。",
+            "ko": "도둑질. 난 걔한테 도둑질이라고 했어요.",
+            "pl": "Kradzież. Powiedziałem mu, że to kradzież.",
+            "pt-BR": "Roubo. Eu chamei de roubo.",
+            "ru": "Кража. Я назвал это кражей.",
+            "uk": "Крадіжка. Я назвав це крадіжкою.",
+            "vi": "Ăn cắp. Tôi đã gọi đó là ăn cắp."
+          }
         }
       ],
       "sfx": [],
@@ -411,7 +580,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Pusť to znovu, jo? Ať to běží. Někde musí být něco, co běží.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Spiel's nochmal ab, ja? Lass es laufen. Irgendwo muss es was geben, das läuft.",
+            "en": "Play it again, okay? Let it run. Somewhere there has to be something that runs.",
+            "fr": "Remets-le, d'accord ? Que ça tourne. Il doit bien y avoir quelque chose quelque part qui tourne.",
+            "it": "Rimettilo, eh? Che giri. Da qualche parte ci dev'essere qualcosa che gira.",
+            "ja": "もう一回流してくれ、な?動かしとけ。どこかに、動いてるものがあるはずなんだ。",
+            "ko": "다시 틀어 줘, 응? 돌아가게 둬. 어딘가엔 돌아가는 게 있어야 해.",
+            "pl": "Puść to jeszcze raz, co? Niech to działa. Gdzieś musi być coś, co działa.",
+            "pt-BR": "Põe de novo, tá? Deixa rodar. Em algum lugar tem que ter alguma coisa rodando.",
+            "ru": "Включи ещё раз, а? Пусть крутится. Где-то должно быть что-то, что работает.",
+            "uk": "Увімкни ще раз, га? Хай крутиться. Десь має бути щось, що працює.",
+            "vi": "Bật lại đi, nhé? Cho nó chạy. Ở đâu đó phải có thứ gì còn đang chạy."
+          }
         }
       ],
       "sfx": [],

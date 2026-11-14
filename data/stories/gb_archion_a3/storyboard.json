@@ -1,5 +1,18 @@
 {
   "title": "Podzim: Zákopová válka",
+  "title_i18n": {
+    "de": "Herbst: Grabenkrieg",
+    "en": "Autumn: Trench Warfare",
+    "fr": "Automne : Guerre de tranchées",
+    "it": "Autunno: Guerra di trincea",
+    "ja": "秋:塹壕戦",
+    "ko": "가을: 참호전",
+    "pl": "Jesień: Wojna okopowa",
+    "pt-BR": "Outono: Guerra de trincheiras",
+    "ru": "Осень: Окопная война",
+    "uk": "Осінь: Окопна війна",
+    "vi": "Mùa thu: Chiến tranh chiến hào"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -67,7 +80,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Asi to pořádně nechápeš. Nebulon a celý ten herní koncept jsou moje. Můžu to doložit. Nemáš na něj nárok.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kapierst es wohl nicht richtig. Nebulon und das ganze Spielkonzept gehören mir. Ich kann's beweisen. Du hast keinen Anspruch darauf.",
+            "en": "I guess you don't really get it. Nebulon and the whole game concept are mine. I can prove it. You have no claim to it.",
+            "fr": "T'as pas l'air de bien piger. Nebulon et tout le concept du jeu sont à moi. Je peux le prouver. T'as aucun droit dessus.",
+            "it": "Forse non hai capito bene. Nebulon e tutto il concept del gioco sono miei. Posso dimostrarlo. Non hai nessun diritto.",
+            "ja": "お前、ちゃんとわかってないだろ。Nebulonもゲームのコンセプトも全部俺のもんだ。証明もできる。お前に権利はねえ。",
+            "ko": "너 제대로 이해 못 하나 본데. Nebulon이랑 그 게임 콘셉트 전부 내 거야. 증명도 할 수 있어. 넌 아무 권리 없어.",
+            "pl": "Chyba nie do końca rozumiesz. Nebulon i cały ten koncept gry są moje. Mogę to udowodnić. Nie masz do niego prawa.",
+            "pt-BR": "Acho que você não tá entendendo direito. Nebulon e todo o conceito do jogo são meus. Posso provar. Você não tem direito nenhum.",
+            "ru": "Ты, похоже, не до конца понимаешь. Nebulon и вся эта игровая концепция — мои. Я могу это доказать. У тебя на него нет прав.",
+            "uk": "Ти, схоже, не до кінця розумієш. Nebulon і вся ця ігрова концепція — мої. Я можу це довести. Ти не маєш на нього права.",
+            "vi": "Chắc mày chưa hiểu rõ. Nebulon và toàn bộ ý tưởng game là của tao. Tao chứng minh được. Mày không có quyền gì với nó."
+          }
         }
       ],
       "sfx": [],
@@ -92,7 +118,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Nabídl jsem ti dohodu a tys ji odmávl. Nevěřím vlastním očím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir einen Deal angeboten, und du hast abgewunken. Ich trau meinen Augen nicht.",
+            "en": "I offered you a deal and you waved it off. I can't believe my eyes.",
+            "fr": "Je t'ai proposé un accord et tu l'as balayé d'un revers de main. J'en crois pas mes yeux.",
+            "it": "Ti ho offerto un accordo e l'hai liquidato con un gesto. Non credo ai miei occhi.",
+            "ja": "取引を持ちかけたのに、お前は鼻であしらった。自分の目が信じられねえよ。",
+            "ko": "내가 합의를 제안했는데 넌 손사래를 쳤지. 내 눈을 못 믿겠다.",
+            "pl": "Zaproponowałem ci układ, a ty go olałeś. Nie wierzę własnym oczom.",
+            "pt-BR": "Te ofereci um acordo e você fez pouco caso. Não acredito no que tô vendo.",
+            "ru": "Я предложил тебе сделку, а ты отмахнулся. Глазам своим не верю.",
+            "uk": "Я запропонував тобі угоду, а ти відмахнувся. Очам своїм не вірю.",
+            "vi": "Tao đề nghị thỏa thuận mà mày gạt phăng đi. Tao không tin vào mắt mình."
+          }
         }
       ],
       "sfx": [],
@@ -134,7 +173,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Dlužíš mi peníze. Nesplnil jsi podmínky mojí půjčky. Dlužíš mi server… Dlužíš mi omluvu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir Geld. Du hast die Bedingungen meines Kredits nicht erfüllt. Du schuldest mir einen Server… Du schuldest mir eine Entschuldigung.",
+            "en": "You owe me money. You broke the terms of my loan. You owe me a server… You owe me an apology.",
+            "fr": "Tu me dois de l'argent. T'as pas respecté les conditions de mon prêt. Tu me dois un serveur… Tu me dois des excuses.",
+            "it": "Mi devi dei soldi. Non hai rispettato le condizioni del mio prestito. Mi devi un server… Mi devi delle scuse.",
+            "ja": "お前は俺に金を借りてる。俺の貸した金の条件も守らなかった。サーバーの借りもある…謝罪の借りもな。",
+            "ko": "너 나한테 돈 빚졌어. 내 대출 조건도 안 지켰고. 서버도 빚졌지… 사과도 빚졌어.",
+            "pl": "Wisisz mi kasę. Nie dotrzymałeś warunków mojej pożyczki. Wisisz mi serwer… Wisisz mi przeprosiny.",
+            "pt-BR": "Você me deve dinheiro. Não cumpriu as condições do meu empréstimo. Você me deve um servidor… Você me deve um pedido de desculpas.",
+            "ru": "Ты мне должен деньги. Ты не выполнил условия моего займа. Ты мне должен сервер… Ты мне должен извинение.",
+            "uk": "Ти винен мені гроші. Ти не виконав умов моєї позики. Ти винен мені сервер… Ти винен мені вибачення.",
+            "vi": "Mày nợ tao tiền. Mày không giữ đúng điều kiện khoản vay của tao. Mày nợ tao một cái server… Mày nợ tao một lời xin lỗi."
+          }
         }
       ],
       "sfx": [],
@@ -159,7 +211,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Začněme penězi: do Vánoc chci vrátit první část. Projekt přejmenuju na Archion. Nemáš na něm žádný podíl, jenom hejty.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Fangen wir mit dem Geld an: Bis Weihnachten will ich den ersten Teil zurück. Ich benenne das Projekt in Archion um. Du hast keinen Anteil daran, nur Hass.",
+            "en": "Let's start with the money: I want the first part back by Christmas. I'm renaming the project Archion. You've got no stake in it, just hate.",
+            "fr": "Commençons par l'argent : je veux une première partie d'ici Noël. Je renomme le projet Archion. T'as aucune part dedans, juste de la haine.",
+            "it": "Cominciamo dai soldi: entro Natale voglio indietro la prima parte. Rinomino il progetto Archion. Non ne hai nessuna quota, solo odio.",
+            "ja": "まず金からだ。クリスマスまでに最初の分を返せ。プロジェクトはArchionに改名する。お前の取り分はねえ、あるのはヘイトだけだ。",
+            "ko": "돈부터 시작하자. 크리스마스까지 첫 번째 몫 갚아. 프로젝트 이름은 Archion으로 바꿀 거야. 네 지분은 없어, 악플만 있을 뿐.",
+            "pl": "Zacznijmy od kasy: do świąt chcę z powrotem pierwszą część. Zmieniam nazwę projektu na Archion. Nie masz w nim żadnego udziału, tylko hejty.",
+            "pt-BR": "Vamos começar pelo dinheiro: até o Natal quero a primeira parte de volta. Vou renomear o projeto para Archion. Você não tem participação nenhuma, só hate.",
+            "ru": "Начнём с денег: к Рождеству хочу получить первую часть. Проект я переименую в Archion. У тебя в нём нет никакой доли, только хейт.",
+            "uk": "Почнімо з грошей: до Різдва хочу назад першу частину. Проєкт я перейменую на Archion. У тебе в ньому жодної частки, тільки хейт.",
+            "vi": "Bắt đầu từ tiền đi: trước Giáng sinh tao muốn lấy lại phần đầu tiên. Tao sẽ đổi tên dự án thành Archion. Mày không có phần nào trong đó, chỉ có hate thôi."
+          }
         }
       ],
       "sfx": [],
@@ -204,7 +269,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Tohle je krádež! Krádež mýho snu! Jak to uvidím v obchodech, jdu s tím za každým, kdo mě vyslechne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist Diebstahl! Diebstahl meines Traums! Sobald ich das in den Stores sehe, geh ich damit zu jedem, der mir zuhört.",
+            "en": "This is theft! Theft of my dream! The moment I see it in the stores, I'm taking it to anyone who'll listen.",
+            "fr": "C'est du vol ! Le vol de mon rêve ! Dès que je le vois dans les stores, j'en parle à tous ceux qui voudront m'écouter.",
+            "it": "Questo è un furto! Il furto del mio sogno! Appena lo vedo negli store, lo racconto a chiunque mi ascolti.",
+            "ja": "これは盗みだ!俺の夢を盗んだんだ!ストアで見かけたら、聞いてくれる奴みんなに言いふらしてやる。",
+            "ko": "이건 도둑질이야! 내 꿈을 훔친 거라고! 스토어에서 보이기만 하면, 들어 줄 사람 누구한테든 다 말할 거야.",
+            "pl": "To kradzież! Kradzież mojego marzenia! Jak zobaczę to w sklepach, pójdę z tym do każdego, kto zechce mnie wysłuchać.",
+            "pt-BR": "Isso é roubo! Roubo do meu sonho! Quando eu vir isso nas lojas, vou contar pra todo mundo que quiser me ouvir.",
+            "ru": "Это кража! Кража моей мечты! Как только увижу это в магазинах, пойду с этим к каждому, кто станет слушать.",
+            "uk": "Це крадіжка! Крадіжка моєї мрії! Щойно побачу це в магазинах, піду з цим до кожного, хто захоче слухати.",
+            "vi": "Đây là ăn cắp! Ăn cắp giấc mơ của tao! Thấy nó trên store là tao đi kể với bất cứ ai chịu nghe."
+          }
         }
       ],
       "sfx": [],
@@ -229,7 +307,20 @@
         {
           "speaker_id": "kosmo",
           "text": "A teď tě blokuju!",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und jetzt blockier ich dich!",
+            "en": "And now I'm blocking you!",
+            "fr": "Et maintenant, je te bloque !",
+            "it": "E adesso ti blocco!",
+            "ja": "今からお前をブロックする!",
+            "ko": "그리고 이제 너 차단한다!",
+            "pl": "A teraz cię blokuję!",
+            "pt-BR": "E agora eu vou te bloquear!",
+            "ru": "А теперь я тебя блокирую!",
+            "uk": "А тепер я тебе блокую!",
+            "vi": "Và giờ tao block mày!"
+          }
         }
       ],
       "sfx": [],
@@ -274,7 +365,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Chováš se jak psychopat. A v tomhle vím přesně, o čem mluvím. Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du benimmst dich wie ein Psychopath. Und da weiß ich genau, wovon ich rede. Schreib mir lieber, wann du mir das Geld schickst. Ich schulde dir nichts.",
+            "en": "You're acting like a psycho. And on that I know exactly what I'm talking about. Just text me when you're sending the money. I don't owe you a thing.",
+            "fr": "Tu te comportes comme un psychopathe. Et là-dessus, je sais exactement de quoi je parle. Écris-moi plutôt quand tu m'envoies l'argent. Moi, je te dois rien.",
+            "it": "Ti comporti da psicopatico. E su questo so esattamente di cosa parlo. Scrivimi piuttosto quando mi mandi i soldi. Io non ti devo niente.",
+            "ja": "お前、サイコパスみたいだぞ。それについちゃ俺はよくわかってる。それより、いつ金を送るのか連絡しろ。俺はお前に何の借りもねえ。",
+            "ko": "너 사이코패스처럼 굴고 있어. 그건 내가 정확히 알고 하는 말이야. 그보다 돈 언제 보낼지나 문자해. 난 너한테 빚진 거 하나도 없어.",
+            "pl": "Zachowujesz się jak psychopata. I akurat na tym dokładnie się znam. Napisz mi lepiej, kiedy wyślesz mi tę kasę. Ja tobie nic nie wiszę.",
+            "pt-BR": "Você tá agindo feito um psicopata. E disso eu entendo muito bem. Me manda mensagem dizendo quando vai mandar o dinheiro. Eu não te devo nada.",
+            "ru": "Ты ведёшь себя как психопат. И в этом я точно знаю, о чём говорю. Лучше напиши, когда пришлёшь деньги. Я тебе ничего не должен.",
+            "uk": "Ти поводишся як психопат. І в цьому я точно знаю, про що кажу. Краще напиши, коли надішлеш гроші. Я тобі нічого не винен.",
+            "vi": "Mày cư xử như thằng tâm thần. Mà chuyện này tao biết rõ mình đang nói gì. Nhắn cho tao biết bao giờ mày gửi tiền thì hơn. Tao chẳng nợ mày gì cả."
+          }
         }
       ],
       "sfx": [],

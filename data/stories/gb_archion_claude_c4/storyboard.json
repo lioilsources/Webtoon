@@ -1,5 +1,18 @@
 {
   "title": "Podzim: Krádež",
+  "title_i18n": {
+    "de": "Herbst: Diebstahl",
+    "en": "Autumn: Theft",
+    "fr": "Automne : Le Vol",
+    "it": "Autunno: Il furto",
+    "ja": "秋：盗み",
+    "ko": "가을: 도둑질",
+    "pl": "Jesień: Kradzież",
+    "pt-BR": "Outono: Roubo",
+    "ru": "Осень: Кража",
+    "uk": "Осінь: Крадіжка",
+    "vi": "Mùa thu: Ăn cắp"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Obraz třetí: Krádež",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Drittes Bild: Diebstahl",
+            "en": "Scene Three: Theft",
+            "fr": "Tableau trois : Le Vol",
+            "it": "Quadro terzo: Il furto",
+            "ja": "第三場：盗み",
+            "ko": "제3장: 도둑질",
+            "pl": "Obraz trzeci: Kradzież",
+            "pt-BR": "Cena três: Roubo",
+            "ru": "Картина третья: Кража",
+            "uk": "Картина третя: Крадіжка",
+            "vi": "Cảnh ba: Ăn cắp"
+          }
         }
       ],
       "sfx": [],
@@ -61,7 +87,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Nebulon je to, co po mně zůstane. Nabídl jsem ti dohodu a tys ji přešel. Bereš si to silou, přede všema. Tohle je krádež. Mezi náma je konec.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nebulon ist das, was von mir bleibt. Ich hab dir einen Deal angeboten und du bist drübergegangen. Du nimmst es dir mit Gewalt, vor allen. Das ist Diebstahl. Zwischen uns ist Schluss.",
+            "en": "Nebulon is what I'll leave behind. I offered you a deal and you walked right over it. You're taking it by force, in front of everyone. That's theft. We're done.",
+            "fr": "Nebulon, c'est ce qui restera de moi. Je t'ai proposé un accord et tu l'as piétiné. Tu le prends de force, devant tout le monde. C'est du vol. Entre nous, c'est fini.",
+            "it": "Nebulon è ciò che resterà di me. Ti ho offerto un accordo e l'hai scavalcato. Te lo prendi con la forza, davanti a tutti. Questo è furto. Tra noi è finita.",
+            "ja": "Nebulonは俺が遺すものだ。取引を持ちかけたのに、お前は無視した。みんなの前で力ずくで奪ってる。これは盗みだ。俺たちはもう終わりだ。",
+            "ko": "Nebulon은 내가 남길 전부야. 합의하자고 했는데 넌 무시했어. 다들 보는 앞에서 힘으로 빼앗는 거야. 이건 도둑질이야. 우린 끝이야.",
+            "pl": "Nebulon to to, co po mnie zostanie. Zaproponowałem ci układ, a ty go olałeś. Bierzesz to siłą, na oczach wszystkich. To kradzież. Między nami koniec.",
+            "pt-BR": "O Nebulon é o que vai ficar de mim. Te ofereci um acordo e você passou por cima. Tá tomando à força, na frente de todo mundo. Isso é roubo. Entre nós acabou.",
+            "ru": "Nebulon — это то, что после меня останется. Я предложил тебе сделку, а ты на неё наплевал. Берёшь силой, у всех на глазах. Это кража. Между нами всё кончено.",
+            "uk": "Nebulon — це те, що після мене залишиться. Я запропонував тобі угоду, а ти на неї наплював. Береш силою, у всіх на очах. Це крадіжка. Між нами все скінчено.",
+            "vi": "Nebulon là thứ tao để lại trên đời. Tao đề nghị thỏa thuận, mày gạt phăng đi. Mày cướp nó bằng vũ lực, trước mặt mọi người. Đó là ăn cắp. Giữa tao với mày hết rồi."
+          }
         }
       ],
       "sfx": [],
@@ -104,7 +143,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Dlužíš mi peníze.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir Geld.",
+            "en": "You owe me money.",
+            "fr": "Tu me dois de l'argent.",
+            "it": "Mi devi dei soldi.",
+            "ja": "金を返せ。",
+            "ko": "너 나한테 돈 빚졌어.",
+            "pl": "Wisisz mi kasę.",
+            "pt-BR": "Você me deve dinheiro.",
+            "ru": "Ты должен мне деньги.",
+            "uk": "Ти винен мені гроші.",
+            "vi": "Mày nợ tao tiền."
+          }
         }
       ],
       "sfx": [],
@@ -144,7 +196,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Dlužíš mi server.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir einen Server.",
+            "en": "You owe me a server.",
+            "fr": "Tu me dois un serveur.",
+            "it": "Mi devi un server.",
+            "ja": "サーバーの貸しもある。",
+            "ko": "서버도 빚졌고.",
+            "pl": "Wisisz mi serwer.",
+            "pt-BR": "Você me deve um servidor.",
+            "ru": "Ты должен мне сервер.",
+            "uk": "Ти винен мені сервер.",
+            "vi": "Mày nợ tao cái server."
+          }
         }
       ],
       "sfx": [],
@@ -183,7 +248,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Dlužíš mi poděkování za web, který u mě pořád běží. Dlužíš mi omluvu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir ein Danke für die Website, die immer noch bei mir läuft. Du schuldest mir eine Entschuldigung.",
+            "en": "You owe me thanks for the website that's still running on my end. You owe me an apology.",
+            "fr": "Tu me dois un merci pour le site qui tourne toujours chez moi. Tu me dois des excuses.",
+            "it": "Mi devi un grazie per il sito che gira ancora da me. Mi devi delle scuse.",
+            "ja": "まだ俺のとこで動いてるサイトの礼もない。謝罪もだ。",
+            "ko": "아직 내 쪽에서 돌아가는 웹사이트에 대한 고맙단 말도 빚졌어. 사과도 빚졌고.",
+            "pl": "Wisisz mi podziękowanie za stronę, która wciąż u mnie działa. Wisisz mi przeprosiny.",
+            "pt-BR": "Você me deve um obrigado pelo site que ainda roda comigo. Você me deve desculpas.",
+            "ru": "Ты должен мне спасибо за сайт, который до сих пор крутится у меня. Ты должен мне извинения.",
+            "uk": "Ти винен мені дякую за сайт, який досі крутиться в мене. Ти винен мені вибачення.",
+            "vi": "Mày nợ tao lời cảm ơn cho cái web vẫn chạy chỗ tao. Mày nợ tao một lời xin lỗi."
+          }
         }
       ],
       "sfx": [],
@@ -226,12 +304,38 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Do Vánoc první část. V březnu druhou. V srpnu zbytek. Ze stránek mažu všechno, co na tebe odkazuje. Hra se bude jmenovat Archion.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Bis Weihnachten der erste Teil. Im März der zweite. Im August der Rest. Von der Website lösch ich alles, was auf dich verweist. Das Spiel wird Archion heißen.",
+            "en": "First part by Christmas. Second in March. The rest in August. I'm deleting everything on the site that links to you. The game will be called Archion.",
+            "fr": "La première partie avant Noël. La deuxième en mars. Le reste en août. J'efface du site tout ce qui renvoie à toi. Le jeu s'appellera Archion.",
+            "it": "Entro Natale la prima parte. A marzo la seconda. Ad agosto il resto. Dal sito cancello tutto ciò che rimanda a te. Il gioco si chiamerà Archion.",
+            "ja": "クリスマスまでに第一部。三月に第二部。八月に残り。サイトからお前に繋がるものは全部消す。ゲームの名前はArchionだ。",
+            "ko": "크리스마스까지 1부. 3월에 2부. 8월에 나머지. 사이트에서 너랑 연결된 건 다 지울 거야. 게임 이름은 Archion이야.",
+            "pl": "Do Świąt pierwsza część. W marcu druga. W sierpniu reszta. Ze strony kasuję wszystko, co odsyła do ciebie. Gra będzie się nazywać Archion.",
+            "pt-BR": "Até o Natal a primeira parte. Em março a segunda. Em agosto o resto. Do site eu apago tudo que aponta pra você. O jogo vai se chamar Archion.",
+            "ru": "К Рождеству первая часть. В марте вторая. В августе остальное. С сайта удаляю всё, что ведёт к тебе. Игра будет называться Archion.",
+            "uk": "До Різдва перша частина. У березні друга. У серпні решта. Із сайту видаляю все, що веде до тебе. Гра називатиметься Archion.",
+            "vi": "Trước Giáng sinh phần một. Tháng Ba phần hai. Tháng Tám phần còn lại. Tao xóa hết mọi thứ trên web dẫn tới mày. Game sẽ tên là Archion."
+          }
         },
         {
           "speaker_id": "ol1n_podzim",
           "text": "Nemáš na ní žádný podíl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast keinen Anteil daran.",
+            "en": "You have no share in it.",
+            "fr": "T'as aucune part dedans.",
+            "it": "Non ne hai nessuna quota.",
+            "ja": "お前の取り分はない。",
+            "ko": "넌 지분 하나도 없어.",
+            "pl": "Nie masz w niej żadnego udziału.",
+            "pt-BR": "Você não tem parte nenhuma nele.",
+            "ru": "У тебя в ней нет никакой доли.",
+            "uk": "У тебе в ній немає жодної частки.",
+            "vi": "Mày không có phần nào trong đó."
+          }
         }
       ],
       "sfx": [],
@@ -251,7 +355,20 @@
         {
           "speaker_id": "",
           "text": "NEBULON → ARCHION",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "NEBULON → ARCHION",
+            "en": "NEBULON → ARCHION",
+            "fr": "NEBULON → ARCHION",
+            "it": "NEBULON → ARCHION",
+            "ja": "NEBULON → ARCHION",
+            "ko": "NEBULON → ARCHION",
+            "pl": "NEBULON → ARCHION",
+            "pt-BR": "NEBULON → ARCHION",
+            "ru": "NEBULON → ARCHION",
+            "uk": "NEBULON → ARCHION",
+            "vi": "NEBULON → ARCHION"
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Instalace",
+  "title_i18n": {
+    "de": "Installation",
+    "en": "Installation",
+    "fr": "Installation",
+    "it": "Installazione",
+    "ja": "インストール",
+    "ko": "설치",
+    "pl": "Instalacja",
+    "pt-BR": "Instalação",
+    "ru": "Установка",
+    "uk": "Встановлення",
+    "vi": "Cài đặt"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -76,7 +89,20 @@
         {
           "speaker_id": "ol1n_terasa",
           "text": "Tak. Debian netinst. Stáhni ISO, vypal, nabootuj. Já ti připravil celou konfiguraci, všechno je to v repu, na GitHubu. Vidíš to tam?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "So. Debian netinst. ISO runterladen, brennen, booten. Ich hab dir die ganze Konfiguration vorbereitet, alles im Repo, auf GitHub. Siehst du's da?",
+            "en": "Okay. Debian netinst. Download the ISO, burn it, boot it. I've set up the whole config for you, it's all in the repo, on GitHub. See it there?",
+            "fr": "Bon. Debian netinst. Télécharge l'ISO, grave-la, boote dessus. Je t'ai préparé toute la config, tout est dans le repo, sur GitHub. Tu le vois ?",
+            "it": "Allora. Debian netinst. Scarica la ISO, masterizzala, fai il boot. Ti ho preparato tutta la configurazione, è tutto nel repo, su GitHub. Lo vedi?",
+            "ja": "よし。Debian netinst。ISOを落として、焼いて、ブートしろ。設定は全部用意しといた、全部リポジトリに入ってる、GitHubにな。見えるか?",
+            "ko": "자. Debian netinst. ISO 받아서 굽고 부팅해. 설정은 내가 다 준비해 놨어, 전부 레포에 있어, GitHub에. 거기 보여?",
+            "pl": "No. Debian netinst. Ściągnij ISO, wypal, zbootuj. Przygotowałem ci całą konfigurację, wszystko jest w repo, na GitHubie. Widzisz to tam?",
+            "pt-BR": "Pronto. Debian netinst. Baixa a ISO, grava, dá boot. Preparei toda a configuração pra você, tá tudo no repo, no GitHub. Tá vendo ali?",
+            "ru": "Так. Debian netinst. Качаешь ISO, записываешь, грузишься. Я тебе подготовил весь конфиг, всё в репе, на GitHub. Видишь там?",
+            "uk": "Так. Debian netinst. Качаєш ISO, записуєш, завантажуєшся. Я тобі підготував увесь конфіг, усе в репо, на GitHub. Бачиш там?",
+            "vi": "Rồi. Debian netinst. Tải ISO, ghi ra đĩa, boot lên. Tao chuẩn bị sẵn toàn bộ cấu hình cho mày rồi, tất cả trong repo, trên GitHub. Thấy chưa?"
+          }
         }
       ],
       "sfx": [],
@@ -96,7 +122,20 @@
         {
           "speaker_id": "",
           "text": "git clone git@github.com:kosmo/nebulon-server.git",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "git clone git@github.com:kosmo/nebulon-server.git",
+            "en": "git clone git@github.com:kosmo/nebulon-server.git",
+            "fr": "git clone git@github.com:kosmo/nebulon-server.git",
+            "it": "git clone git@github.com:kosmo/nebulon-server.git",
+            "ja": "git clone git@github.com:kosmo/nebulon-server.git",
+            "ko": "git clone git@github.com:kosmo/nebulon-server.git",
+            "pl": "git clone git@github.com:kosmo/nebulon-server.git",
+            "pt-BR": "git clone git@github.com:kosmo/nebulon-server.git",
+            "ru": "git clone git@github.com:kosmo/nebulon-server.git",
+            "uk": "git clone git@github.com:kosmo/nebulon-server.git",
+            "vi": "git clone git@github.com:kosmo/nebulon-server.git"
+          }
         }
       ],
       "sfx": [],
@@ -122,7 +161,20 @@
         {
           "speaker_id": "kosmo",
           "text": "On mi stavěl svět. Zálohovaný. Verzovaný. S historií.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Er hat mir eine Welt gebaut. Gesichert. Versioniert. Mit Geschichte.",
+            "en": "He was building me a world. Backed up. Versioned. With a history.",
+            "fr": "Il me construisait un monde. Sauvegardé. Versionné. Avec un historique.",
+            "it": "Mi stava costruendo un mondo. Con i backup. Versionato. Con una storia.",
+            "ja": "あいつは俺に世界を作ってくれてた。バックアップ付き。バージョン管理付き。履歴付き。",
+            "ko": "걔는 나한테 세상을 만들어 주고 있었어. 백업되고. 버전 관리되고. 히스토리까지 있는.",
+            "pl": "On budował mi świat. Z kopią zapasową. Wersjonowany. Z historią.",
+            "pt-BR": "Ele tava construindo um mundo pra mim. Com backup. Versionado. Com histórico.",
+            "ru": "Он строил мне мир. С бэкапами. С версиями. С историей.",
+            "uk": "Він будував мені світ. З бекапами. З версіями. З історією.",
+            "vi": "Nó xây cho tao một thế giới. Có sao lưu. Có phiên bản. Có lịch sử."
+          }
         }
       ],
       "sfx": [],
@@ -147,7 +199,20 @@
         {
           "speaker_id": "ol1n_terasa",
           "text": "SSH klíče máš vygenerovaný. Heslo si změň. Teď to patří tobě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Deine SSH-Schlüssel sind generiert. Ändere dein Passwort. Jetzt gehört es dir.",
+            "en": "Your SSH keys are generated. Change your password. Now it's yours.",
+            "fr": "Tes clés SSH sont générées. Change ton mot de passe. Maintenant, c'est à toi.",
+            "it": "Le chiavi SSH sono generate. Cambiati la password. Adesso è tuo.",
+            "ja": "SSHキーは生成済みだ。パスワードは変えとけ。もうお前のもんだ。",
+            "ko": "SSH 키는 생성해 놨어. 비밀번호는 바꿔. 이제 네 거야.",
+            "pl": "Klucze SSH masz wygenerowane. Zmień sobie hasło. Teraz to należy do ciebie.",
+            "pt-BR": "Suas chaves SSH já estão geradas. Troca a senha. Agora é seu.",
+            "ru": "SSH-ключи у тебя сгенерированы. Пароль поменяй. Теперь это твоё.",
+            "uk": "SSH-ключі в тебе згенеровані. Пароль зміни. Тепер це твоє.",
+            "vi": "Khóa SSH của mày tạo xong rồi. Đổi mật khẩu đi. Giờ nó là của mày."
+          }
         }
       ],
       "sfx": [],
@@ -188,7 +253,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Patřilo. To je ono, patřilo. Dal mi stroj, na kterým jsem měl vyrůst. A já na něm…",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gehörte. Das ist es, gehörte. Er gab mir eine Maschine, an der ich wachsen sollte. Und ich hab darauf…",
+            "en": "It was. That's it, it was. He gave me a machine I was supposed to grow up on. And on it I…",
+            "fr": "C'était. Voilà, c'était. Il m'a donné une machine sur laquelle j'étais censé grandir. Et moi, dessus…",
+            "it": "Era. Ecco, era. Mi ha dato una macchina su cui dovevo crescere. E io ci ho…",
+            "ja": "だった。そう、だったんだ。あいつは俺が成長するためのマシンをくれた。なのに俺はそれで…",
+            "ko": "거였지. 바로 그거야, 거였어. 걔는 내가 성장할 기계를 줬어. 그런데 난 그걸로…",
+            "pl": "Należało. No właśnie, należało. Dał mi maszynę, na której miałem dorosnąć. A ja na niej…",
+            "pt-BR": "Era. É isso, era. Ele me deu uma máquina onde eu devia crescer. E eu nela…",
+            "ru": "Было. Вот именно, было. Он дал мне машину, на которой я должен был вырасти. А я на ней…",
+            "uk": "Було. Отож-бо, було. Він дав мені машину, на якій я мав вирости. А я на ній…",
+            "vi": "Đã từng. Đúng thế, đã từng là của tao. Nó cho tao một cỗ máy để tao trưởng thành. Còn tao thì trên đó…"
+          }
         }
       ],
       "sfx": [],
@@ -207,7 +285,20 @@
         {
           "speaker_id": "",
           "text": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "en": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "fr": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "it": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "ja": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "ko": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "pl": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "pt-BR": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "ru": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "uk": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+            "vi": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo"
+          }
         }
       ],
       "sfx": [],
@@ -234,7 +325,20 @@
         {
           "speaker_id": "ol1n_terasa",
           "text": "Tak. Teď ti to ukážu. Celý vesmír je teď v terminálu. Zapomeň na okýnka. Tady nic neklikáš. Tady víš, co děláš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "So. Jetzt zeig ich's dir. Das ganze Universum ist jetzt im Terminal. Vergiss die Fensterchen. Hier klickst du nichts. Hier weißt du, was du tust.",
+            "en": "Okay. Now I'll show you. The whole universe is in the terminal now. Forget windows. You don't click anything here. Here you know what you're doing.",
+            "fr": "Bon. Maintenant je te montre. Tout l'univers est dans le terminal. Oublie les petites fenêtres. Ici, tu cliques sur rien. Ici, tu sais ce que tu fais.",
+            "it": "Allora. Adesso ti faccio vedere. Tutto l'universo ora sta nel terminale. Scordati le finestrelle. Qui non clicchi niente. Qui sai quello che fai.",
+            "ja": "よし。じゃあ見せてやる。今は宇宙全体がターミナルの中だ。ウィンドウなんか忘れろ。ここじゃ何もクリックしない。ここでは自分が何をしてるかわかってるんだ。",
+            "ko": "자. 이제 보여 줄게. 이제 우주 전체가 터미널 안에 있어. 창 같은 건 잊어. 여기선 아무것도 클릭 안 해. 여기선 네가 뭘 하는지 알아.",
+            "pl": "No. Teraz ci pokażę. Cały wszechświat jest teraz w terminalu. Zapomnij o okienkach. Tu nic nie klikasz. Tu wiesz, co robisz.",
+            "pt-BR": "Pronto. Agora vou te mostrar. O universo inteiro agora tá no terminal. Esquece as janelinhas. Aqui você não clica em nada. Aqui você sabe o que tá fazendo.",
+            "ru": "Так. Теперь покажу. Вся вселенная теперь в терминале. Забудь про окошки. Тут ты ничего не кликаешь. Тут ты знаешь, что делаешь.",
+            "uk": "Так. Тепер покажу. Увесь всесвіт тепер у терміналі. Забудь про віконця. Тут ти нічого не клацаєш. Тут ти знаєш, що робиш.",
+            "vi": "Rồi. Giờ tao chỉ cho. Cả vũ trụ giờ nằm trong terminal. Quên mấy cái cửa sổ đi. Ở đây không click gì hết. Ở đây mày biết mình đang làm gì."
+          }
         }
       ],
       "sfx": [],
@@ -272,7 +376,20 @@
         {
           "speaker_id": "",
           "text": "Holky (z domu): cp, mv, rm! cp, mv, rm!",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Die Mädels (aus dem Haus): cp, mv, rm! cp, mv, rm!",
+            "en": "The girls (from the house): cp, mv, rm! cp, mv, rm!",
+            "fr": "Les filles (depuis la maison) : cp, mv, rm! cp, mv, rm!",
+            "it": "Le bambine (da casa): cp, mv, rm! cp, mv, rm!",
+            "ja": "娘たち(家の中から):cp, mv, rm! cp, mv, rm!",
+            "ko": "딸들(집 안에서): cp, mv, rm! cp, mv, rm!",
+            "pl": "Dziewczynki (z domu): cp, mv, rm! cp, mv, rm!",
+            "pt-BR": "As meninas (de dentro de casa): cp, mv, rm! cp, mv, rm!",
+            "ru": "Девчонки (из дома): cp, mv, rm! cp, mv, rm!",
+            "uk": "Дівчата (з дому): cp, mv, rm! cp, mv, rm!",
+            "vi": "Mấy đứa con gái (từ trong nhà): cp, mv, rm! cp, mv, rm!"
+          }
         }
       ],
       "sfx": [],
@@ -297,7 +414,20 @@
         {
           "speaker_id": "ol1n_terasa",
           "text": "Vím, co děláš. To jsi nikdy neřekl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "„Ich weiß, was ich tue.“ Das hast du nie gesagt.",
+            "en": "“I know what I'm doing.” You never said that.",
+            "fr": "« Je sais ce que je fais. » Ça, tu l'as jamais dit.",
+            "it": "«So quello che faccio.» Non l'hai mai detto.",
+            "ja": "「自分が何をしてるかわかってる」。お前は一度もそう言わなかった。",
+            "ko": "‘내가 뭘 하는지 알아.’ 넌 그 말을 한 번도 안 했어.",
+            "pl": "„Wiem, co robię”. Tego nigdy nie powiedziałeś.",
+            "pt-BR": "“Eu sei o que tô fazendo.” Isso você nunca disse.",
+            "ru": "«Я знаю, что делаю». Этого ты никогда не говорил.",
+            "uk": "«Я знаю, що роблю». Цього ти ніколи не казав.",
+            "vi": "“Tao biết mình đang làm gì.” Câu đó mày chưa bao giờ nói."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Intermezzo: Sázka na jistotu",
+  "title_i18n": {
+    "de": "Intermezzo: Auf Nummer sicher",
+    "en": "Intermezzo: A Safe Bet",
+    "fr": "Intermezzo : Pari sûr",
+    "it": "Intermezzo: Una scommessa sicura",
+    "ja": "インテルメッツォ：堅い賭け",
+    "ko": "인터메조: 확실한 베팅",
+    "pl": "Intermezzo: Pewny zakład",
+    "pt-BR": "Intermezzo: Aposta segura",
+    "ru": "Интермеццо: Беспроигрышная ставка",
+    "uk": "Інтермецо: Беспрограшна ставка",
+    "vi": "Intermezzo: Ván cược chắc ăn"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -16,7 +29,20 @@
         {
           "speaker_id": "",
           "text": "Kdysi. Jaro.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Damals. Frühling.",
+            "en": "Once. Spring.",
+            "fr": "Autrefois. Printemps.",
+            "it": "Un tempo. Primavera.",
+            "ja": "かつて。春。",
+            "ko": "예전. 봄.",
+            "pl": "Kiedyś. Wiosna.",
+            "pt-BR": "Antigamente. Primavera.",
+            "ru": "Когда-то. Весна.",
+            "uk": "Колись. Весна.",
+            "vi": "Ngày trước. Mùa xuân."
+          }
         }
       ],
       "sfx": [],
@@ -56,7 +82,20 @@
         {
           "speaker_id": "ol1n_mlady",
           "text": "Naposled, co ti půjčuju na něco, co nemá plán. Ale release máš na dosah, to má smysl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das letzte Mal, dass ich dir was für etwas ohne Plan leihe. Aber der Release ist zum Greifen nah, das ergibt Sinn.",
+            "en": "Last time I lend you money for something with no plan. But the release is within reach, that makes sense.",
+            "fr": "C'est la dernière fois que je te prête pour un truc sans plan. Mais la sortie est à portée de main, ça a du sens.",
+            "it": "È l'ultima volta che ti presto soldi per qualcosa senza un piano. Ma il release è a portata di mano, ha senso.",
+            "ja": "計画のないもんに貸すのはこれが最後だぞ。でもリリースは目の前だ、それなら意味がある。",
+            "ko": "계획 없는 거에 빌려주는 건 이번이 마지막이야. 근데 릴리스가 코앞이니까, 그건 의미 있지.",
+            "pl": "Ostatni raz pożyczam ci na coś bez planu. Ale release masz na wyciągnięcie ręki, to ma sens.",
+            "pt-BR": "Última vez que te empresto pra algo sem plano. Mas o lançamento tá logo ali, isso faz sentido.",
+            "ru": "Последний раз одалживаю тебе на что-то без плана. Но релиз у тебя на носу, это имеет смысл.",
+            "uk": "Останній раз позичаю тобі на щось без плану. Але реліз у тебе на носі, це має сенс.",
+            "vi": "Lần cuối tao cho mày mượn tiền làm thứ không có kế hoạch. Nhưng ra mắt tới nơi rồi, vậy thì đáng."
+          }
         }
       ],
       "sfx": [],
@@ -99,7 +138,20 @@
         {
           "speaker_id": "kosmo_mlady",
           "text": "Vyjde to. Balancuje to. Menu, achievementy, store page… měsíc a máme to venku. Pak ti to vrátím z prvního výdělku a budem se smát.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das klappt. Es ist ausbalanciert. Menü, Achievements, Store-Page… ein Monat und es ist draußen. Dann zahl ich's dir vom ersten Verdienst zurück und wir lachen drüber.",
+            "en": "It'll work. It's balanced. Menu, achievements, store page… a month and it's out. Then I pay you back from the first earnings and we laugh about it.",
+            "fr": "Ça va marcher. C'est équilibré. Menu, succès, page store… un mois et c'est dehors. Après je te rembourse avec les premiers gains et on en rigolera.",
+            "it": "Funzionerà. È bilanciato. Menu, achievement, pagina dello store… un mese ed è fuori. Poi ti ridò tutto coi primi guadagni e ci facciamo una risata.",
+            "ja": "うまくいくって。バランスも取れてる。メニュー、実績、ストアページ…1か月で出せる。そしたら最初の稼ぎで返すから、二人で笑い話にしようぜ。",
+            "ko": "될 거야. 밸런스 잡혔어. 메뉴, 업적, 스토어 페이지… 한 달이면 나와. 그럼 첫 수익으로 갚을게, 같이 웃자고.",
+            "pl": "Wyjdzie. Jest zbalansowane. Menu, achievementy, store page… miesiąc i mamy to na zewnątrz. Potem oddam ci z pierwszego zarobku i będziemy się śmiać.",
+            "pt-BR": "Vai dar certo. Tá balanceado. Menu, conquistas, página na loja… um mês e tá no ar. Aí te pago com o primeiro lucro e a gente ri disso.",
+            "ru": "Всё получится. Баланс есть. Меню, ачивки, страница в сторе… месяц — и выпустим. Потом верну тебе с первых денег, и посмеёмся.",
+            "uk": "Усе вийде. Баланс є. Меню, ачівки, сторінка в сторі… місяць — і випустимо. Потім поверну тобі з перших грошей, і посміємося.",
+            "vi": "Sẽ ổn thôi. Cân bằng rồi. Menu, thành tựu, trang store… một tháng là ra. Rồi tao trả mày từ tiền kiếm đầu tiên, hai đứa cười một trận."
+          }
         }
       ],
       "sfx": [],
@@ -123,7 +175,20 @@
         {
           "speaker_id": "ol1n_mlady",
           "text": "A co kdybys to prostě vydal napůl se mnou? Kdysi jsem ti to chtěl nabídnout. Padesát na padesát.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wenn du's einfach halbe-halbe mit mir rausbringst? Das wollte ich dir mal anbieten. Fifty-fifty.",
+            "en": "And what if you just released it half-and-half with me? I meant to offer you that once. Fifty-fifty.",
+            "fr": "Et si tu le sortais simplement moitié-moitié avec moi ? J'avais voulu te le proposer. Cinquante-cinquante.",
+            "it": "E se lo pubblicassi semplicemente a metà con me? Una volta volevo proportelo. Cinquanta e cinquanta.",
+            "ja": "なあ、いっそ俺と半々で出したらどうだ？前から言おうと思ってたんだ。フィフティ・フィフティで。",
+            "ko": "아니면 그냥 나랑 반반으로 내는 건 어때? 예전에 제안하려고 했었어. 50 대 50.",
+            "pl": "A gdybyś po prostu wydał to pół na pół ze mną? Kiedyś chciałem ci to zaproponować. Pięćdziesiąt na pięćdziesiąt.",
+            "pt-BR": "E se você lançasse meio a meio comigo? Uma vez eu quis te oferecer isso. Cinquenta-cinquenta.",
+            "ru": "А что, если просто выпустить это пополам со мной? Я когда-то хотел тебе это предложить. Пятьдесят на пятьдесят.",
+            "uk": "А що, як просто випустити це навпіл зі мною? Я колись хотів тобі це запропонувати. П'ятдесят на п'ятдесят.",
+            "vi": "Hay là mày cứ phát hành chia đôi với tao? Hồi trước tao định đề nghị rồi. Năm mươi – năm mươi."
+          }
         }
       ],
       "sfx": [],
@@ -148,7 +213,20 @@
         {
           "speaker_id": "kosmo_mlady",
           "text": "Ne, ne. To je moje. Ty mi pomáháš, to je jiný. Tohle je moje dědictví, kámo. Ty budeš v titulcích. To je taky něco.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein, nein. Das ist meins. Du hilfst mir, das ist was anderes. Das ist mein Vermächtnis, Alter. Du kommst in den Abspann. Das ist doch auch was.",
+            "en": "No, no. It's mine. You're helping me, that's different. This is my legacy, buddy. You'll be in the credits. That's something too.",
+            "fr": "Non, non. C'est à moi. Toi tu m'aides, c'est différent. C'est mon héritage, mec. Tu seras dans le générique. C'est déjà quelque chose.",
+            "it": "No, no. È mio. Tu mi aiuti, è diverso. Questa è la mia eredità, amico. Sarai nei titoli di coda. È pur sempre qualcosa.",
+            "ja": "いや、いや。これは俺のだ。お前は手伝ってくれてる、それとは別だ。これは俺の遺産なんだよ。お前はクレジットに載る。それだって大したもんだろ。",
+            "ko": "아니, 아니. 이건 내 거야. 넌 날 도와주는 거고, 그건 다르지. 이건 내 유산이야, 친구. 넌 크레딧에 나올 거야. 그것도 뭔가잖아.",
+            "pl": "Nie, nie. To moje. Ty mi pomagasz, to co innego. To moje dziedzictwo, stary. Będziesz w napisach. To też coś.",
+            "pt-BR": "Não, não. Isso é meu. Você me ajuda, é diferente. Esse é meu legado, mano. Você vai estar nos créditos. Já é alguma coisa.",
+            "ru": "Не, не. Это моё. Ты мне помогаешь, это другое. Это моё наследие, братан. Ты будешь в титрах. Это тоже кое-что.",
+            "uk": "Ні, ні. Це моє. Ти мені допомагаєш, це інше. Це моя спадщина, друже. Ти будеш у титрах. Це теж дещо.",
+            "vi": "Không, không. Cái này của tao. Mày giúp tao, thế là khác. Đây là di sản của tao, ông bạn. Mày sẽ có tên trong phần credit. Thế cũng là gì đó rồi."
+          }
         }
       ],
       "sfx": [],
@@ -190,7 +268,20 @@
         {
           "speaker_id": "ol1n_mlady",
           "text": "Dobře. V titulcích.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Okay. Im Abspann.",
+            "en": "Fine. In the credits.",
+            "fr": "D'accord. Dans le générique.",
+            "it": "Va bene. Nei titoli di coda.",
+            "ja": "分かった。クレジットにな。",
+            "ko": "알았어. 크레딧에.",
+            "pl": "Dobra. W napisach.",
+            "pt-BR": "Beleza. Nos créditos.",
+            "ru": "Ладно. В титрах.",
+            "uk": "Гаразд. У титрах.",
+            "vi": "Được. Trong phần credit."
+          }
         }
       ],
       "sfx": [],
@@ -209,7 +300,20 @@
         {
           "speaker_id": "",
           "text": "NEBULON – COMING SOON",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "NEBULON – COMING SOON",
+            "en": "NEBULON – COMING SOON",
+            "fr": "NEBULON – COMING SOON",
+            "it": "NEBULON – COMING SOON",
+            "ja": "NEBULON – COMING SOON",
+            "ko": "NEBULON – COMING SOON",
+            "pl": "NEBULON – COMING SOON",
+            "pt-BR": "NEBULON – COMING SOON",
+            "ru": "NEBULON – COMING SOON",
+            "uk": "NEBULON – COMING SOON",
+            "vi": "NEBULON – COMING SOON"
+          }
         }
       ],
       "sfx": [],
@@ -229,7 +333,20 @@
         {
           "speaker_id": "",
           "text": "30 dní… 29… 28…",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "30 Tage… 29… 28…",
+            "en": "30 days… 29… 28…",
+            "fr": "30 jours… 29… 28…",
+            "it": "30 giorni… 29… 28…",
+            "ja": "30日…29…28…",
+            "ko": "30일… 29… 28…",
+            "pl": "30 dni… 29… 28…",
+            "pt-BR": "30 dias… 29… 28…",
+            "ru": "30 дней… 29… 28…",
+            "uk": "30 днів… 29… 28…",
+            "vi": "30 ngày… 29… 28…"
+          }
         }
       ],
       "sfx": [],
@@ -248,7 +365,20 @@
         {
           "speaker_id": "",
           "text": "12 měsíců… 24… 60… 120…",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "12 Monate… 24… 60… 120…",
+            "en": "12 months… 24… 60… 120…",
+            "fr": "12 mois… 24… 60… 120…",
+            "it": "12 mesi… 24… 60… 120…",
+            "ja": "12か月…24…60…120…",
+            "ko": "12개월… 24… 60… 120…",
+            "pl": "12 miesięcy… 24… 60… 120…",
+            "pt-BR": "12 meses… 24… 60… 120…",
+            "ru": "12 месяцев… 24… 60… 120…",
+            "uk": "12 місяців… 24… 60… 120…",
+            "vi": "12 tháng… 24… 60… 120…"
+          }
         }
       ],
       "sfx": [],
@@ -292,7 +422,20 @@
         {
           "speaker_id": "kosmo",
           "text": "„O penězích na release, který se nikdy neuskutečnil, snad raději ani mluvit nebudu.“",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "„Über das Geld für den Release, der nie stattgefunden hat, red ich lieber gar nicht erst.“",
+            "en": "“As for the money for the release that never happened, I'd rather not even go there.”",
+            "fr": "« L'argent pour la sortie qui n'a jamais eu lieu, je préfère même pas en parler. »",
+            "it": "«Dei soldi per il release che non c'è mai stato, preferisco non parlare nemmeno.»",
+            "ja": "「一度も出なかったリリースの資金の話は、もうしないでおくわ。」",
+            "ko": "“한 번도 안 나온 릴리스 돈 얘기는 차라리 꺼내지도 않을게.”",
+            "pl": "„O kasie na release, który nigdy się nie odbył, wolę nawet nie mówić.”",
+            "pt-BR": "“Do dinheiro pro lançamento que nunca aconteceu, prefiro nem falar.”",
+            "ru": "«О деньгах на релиз, которого так и не было, я лучше вообще промолчу».",
+            "uk": "«Про гроші на реліз, якого так і не було, я краще взагалі змовчу».",
+            "vi": "“Còn tiền cho vụ ra mắt chưa bao giờ diễn ra thì thôi, tao chẳng buồn nhắc.”"
+          }
         }
       ],
       "sfx": [],
@@ -317,7 +460,20 @@
         {
           "speaker_id": "ol1n_podzim",
           "text": "Beru to tak, že mi za to dáváš svolení releasnout svůj vlastní projekt.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehm das mal so, dass du mir dafür die Erlaubnis gibst, mein eigenes Projekt zu releasen.",
+            "en": "I'll take it that in return you're giving me permission to release my own project.",
+            "fr": "Je considère qu'en échange tu me donnes le feu vert pour sortir mon propre projet.",
+            "it": "La prendo come se in cambio mi dessi il permesso di rilasciare il mio progetto.",
+            "ja": "その代わり、俺が自分のプロジェクトをリリースしていいってことだと受け取っとく。",
+            "ko": "그 대신 내 프로젝트를 릴리스해도 된다고 허락한 걸로 알게.",
+            "pl": "Traktuję to tak, że w zamian dajesz mi zgodę na release mojego własnego projektu.",
+            "pt-BR": "Vou entender que, em troca, você me dá permissão pra lançar meu próprio projeto.",
+            "ru": "Считаю, что взамен ты даёшь мне добро зарелизить мой собственный проект.",
+            "uk": "Вважаю, що натомість ти даєш мені дозвіл зарелізити мій власний проєкт.",
+            "vi": "Tao coi như đổi lại mày cho phép tao ra mắt dự án của chính tao."
+          }
         }
       ],
       "sfx": [],
@@ -342,7 +498,20 @@
         {
           "speaker_id": "kosmo",
           "text": "To teda ne.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ganz sicher nicht.",
+            "en": "Hell no.",
+            "fr": "Certainement pas.",
+            "it": "Col cavolo.",
+            "ja": "冗談じゃねえ。",
+            "ko": "절대 아니지.",
+            "pl": "No chyba nie.",
+            "pt-BR": "Nem a pau.",
+            "ru": "Ну уж нет.",
+            "uk": "Ну вже ні.",
+            "vi": "Còn lâu."
+          }
         }
       ],
       "sfx": [],
@@ -361,7 +530,20 @@
         {
           "speaker_id": "",
           "text": "RELEASE DATE: —",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "RELEASE DATE: —",
+            "en": "RELEASE DATE: —",
+            "fr": "RELEASE DATE: —",
+            "it": "RELEASE DATE: —",
+            "ja": "RELEASE DATE: —",
+            "ko": "RELEASE DATE: —",
+            "pl": "RELEASE DATE: —",
+            "pt-BR": "RELEASE DATE: —",
+            "ru": "RELEASE DATE: —",
+            "uk": "RELEASE DATE: —",
+            "vi": "RELEASE DATE: —"
+          }
         }
       ],
       "sfx": [],

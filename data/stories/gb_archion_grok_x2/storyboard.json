@@ -1,5 +1,18 @@
 {
   "title": "Zima: Žádné právo veta",
+  "title_i18n": {
+    "de": "Winter: Kein Vetorecht",
+    "en": "Winter: No Veto",
+    "fr": "Hiver : Aucun droit de veto",
+    "it": "Inverno: Nessun diritto di veto",
+    "ja": "冬：拒否権はない",
+    "ko": "겨울: 거부권은 없다",
+    "pl": "Zima: Żadnego prawa weta",
+    "pt-BR": "Inverno: Nenhum direito de veto",
+    "ru": "Зима: Никакого права вето",
+    "uk": "Зима: Жодного права вето",
+    "vi": "Mùa đông: Không có quyền phủ quyết"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -72,12 +85,38 @@
         {
           "speaker_id": "kosmo",
           "text": "Pustil jsem tě k sobě a ukázal ti svůj svět, protože jsem ti věřil jako člověku.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dich an mich rangelassen und dir meine Welt gezeigt, weil ich dir als Mensch vertraut hab.",
+            "en": "I let you in and showed you my world, because I trusted you as a person.",
+            "fr": "Je t'ai laissé entrer et je t'ai montré mon monde, parce que je te faisais confiance.",
+            "it": "Ti ho fatto entrare e ti ho mostrato il mio mondo, perché mi fidavo di te come persona.",
+            "ja": "お前を懐に入れて、オレの世界を見せたんだ。人として信じてたからな。",
+            "ko": "널 내 곁에 들이고 내 세계를 보여줬어. 사람으로서 널 믿었으니까.",
+            "pl": "Wpuściłem cię do siebie i pokazałem ci swój świat, bo ufałem ci jako człowiekowi.",
+            "pt-BR": "Eu te deixei entrar e te mostrei o meu mundo, porque confiava em você como pessoa.",
+            "ru": "Я впустил тебя к себе и показал тебе свой мир, потому что доверял тебе как человеку.",
+            "uk": "Я пустив тебе до себе й показав тобі свій світ, бо довіряв тобі як людині.",
+            "vi": "Tao cho mày vào nhà, cho mày thấy thế giới của tao, vì tao tin mày như một con người."
+          }
         },
         {
           "speaker_id": "kosmo",
           "text": "V každý firmě by sis za takový zneužití a remake bez svolení vyžral pořádnej právní průšvih.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "In jeder Firma hättest du für so 'nen Missbrauch und ein Remake ohne Erlaubnis richtig juristischen Ärger an der Backe.",
+            "en": "At any company, abuse like that and a remake without permission would land you in deep legal trouble.",
+            "fr": "Dans n'importe quelle boîte, un abus pareil et un remake sans autorisation, ça t'aurait valu une sacrée galère juridique.",
+            "it": "In qualsiasi azienda, per un abuso del genere e un remake senza permesso ti saresti beccato un bel casino legale.",
+            "ja": "どこの会社でも、そんな悪用と無断リメイクをやったら、ガチで法的にヤバいことになってるぞ。",
+            "ko": "어느 회사에서든 그런 식으로 악용하고 허락 없이 리메이크했으면 제대로 법적 문제 터졌을 거다.",
+            "pl": "W każdej firmie za takie nadużycie i remake bez zgody miałbyś niezłe kłopoty prawne.",
+            "pt-BR": "Em qualquer empresa, um abuso desses e um remake sem autorização iam te render uma baita encrenca jurídica.",
+            "ru": "В любой фирме за такое злоупотребление и ремейк без разрешения ты бы огрёб серьёзные юридические проблемы.",
+            "uk": "У будь-якій фірмі за таке зловживання й ремейк без дозволу ти б огріб серйозні юридичні проблеми.",
+            "vi": "Ở bất kỳ công ty nào, lạm dụng kiểu đó rồi làm lại khi chưa được phép thì mày đã dính rắc rối pháp lý to rồi."
+          }
         }
       ],
       "sfx": [],
@@ -102,7 +141,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Kradeš mi duševní vlastnictví a hraješ nečistou hru. Pro mě jsi skončil. Blokuju tě.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du klaust mein geistiges Eigentum und spielst ein unfaires Spiel. Für mich bist du gestorben. Ich blockier dich.",
+            "en": "You're stealing my intellectual property and playing dirty. You're dead to me. I'm blocking you.",
+            "fr": "Tu me voles ma propriété intellectuelle et tu joues pas franc-jeu. Pour moi, t'es fini. Je te bloque.",
+            "it": "Mi rubi la proprietà intellettuale e giochi sporco. Per me hai chiuso. Ti blocco.",
+            "ja": "オレの知的財産を盗んで、汚い真似しやがって。お前とはもう終わりだ。ブロックする。",
+            "ko": "넌 내 지적 재산을 훔치고 더러운 수작을 부리고 있어. 나한텐 끝난 놈이야. 차단한다.",
+            "pl": "Kradniesz moją własność intelektualną i grasz nieczysto. Dla mnie jesteś skończony. Blokuję cię.",
+            "pt-BR": "Você tá roubando minha propriedade intelectual e jogando sujo. Pra mim você acabou. Tô te bloqueando.",
+            "ru": "Ты крадёшь мою интеллектуальную собственность и играешь нечестно. Для меня ты кончился. Я тебя блокирую.",
+            "uk": "Ти крадеш мою інтелектуальну власність і граєш нечесно. Для мене ти скінчився. Я тебе блокую.",
+            "vi": "Mày ăn cắp sở hữu trí tuệ của tao và chơi bẩn. Với tao, mày hết rồi. Tao chặn mày."
+          }
         }
       ],
       "sfx": [],
@@ -127,7 +179,20 @@
         {
           "speaker_id": "kosmo",
           "text": "A jak tvůj plagiát uvidím v obchodech, posílám svoje důkazy rovnou lidem, co v Googlu a Applu schvalujou aplikace.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und sobald ich dein Plagiat in den Stores seh, schick ich meine Beweise direkt an die Leute, die bei Google und Apple die Apps freigeben.",
+            "en": "And the moment I see your knockoff in the stores, I'm sending my evidence straight to the people at Google and Apple who approve apps.",
+            "fr": "Et dès que je vois ton plagiat dans les stores, j'envoie mes preuves direct aux gens qui valident les applis chez Google et Apple.",
+            "it": "E appena vedo il tuo plagio negli store, mando le mie prove dritte a quelli che approvano le app da Google e Apple.",
+            "ja": "お前の盗作がストアに並んだら、証拠をGoogleとAppleのアプリ審査の連中に直接送ってやる。",
+            "ko": "네 표절작이 스토어에 올라오는 순간, 구글이랑 애플에서 앱 심사하는 사람들한테 내 증거를 바로 보낼 거야.",
+            "pl": "A jak tylko zobaczę twój plagiat w sklepach, wysyłam swoje dowody prosto do ludzi, którzy w Google'u i Apple'u zatwierdzają aplikacje.",
+            "pt-BR": "E assim que eu vir o seu plágio nas lojas, mando minhas provas direto pro pessoal que aprova apps no Google e na Apple.",
+            "ru": "И как только увижу твой плагиат в магазинах, отправлю свои доказательства прямо тем, кто в Google и Apple одобряет приложения.",
+            "uk": "І щойно побачу твій плагіат у магазинах, надішлю свої докази просто тим, хто в Google і Apple схвалює застосунки.",
+            "vi": "Và hễ thấy bản đạo nhái của mày trên cửa hàng, tao sẽ gửi bằng chứng thẳng cho mấy người duyệt ứng dụng ở Google với Apple."
+          }
         }
       ],
       "sfx": [],
@@ -167,7 +232,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Pojďme to rozebrat přesně, když už to otevíráš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Gehen wir das genau durch, wenn du schon damit anfängst.",
+            "en": "Let's break this down precisely, since you're bringing it up.",
+            "fr": "Décortiquons ça précisément, puisque tu remets ça sur le tapis.",
+            "it": "Analizziamolo con precisione, visto che tiri fuori l'argomento.",
+            "ja": "お前が持ち出したんだから、正確に整理しよう。",
+            "ko": "네가 꺼냈으니까, 정확하게 따져 보자.",
+            "pl": "Rozłóżmy to dokładnie, skoro już to poruszasz.",
+            "pt-BR": "Vamos destrinchar isso direito, já que você tocou no assunto.",
+            "ru": "Давай разберём точно, раз уж ты это поднял.",
+            "uk": "Давай розберемо точно, раз уже ти це підняв.",
+            "vi": "Đã mày khơi ra thì mình phân tích cho chính xác."
+          }
         }
       ],
       "sfx": [],
@@ -193,7 +271,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Nekalá soutěž předpokládá, že používám tvé jméno, tvé logo, tvé assety, nebo že vytvářím záměrný zmatek na trhu. Nic z toho nedělám.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Unlauterer Wettbewerb setzt voraus, dass ich deinen Namen, dein Logo, deine Assets verwende oder bewusst eine Verwechslungsgefahr am Markt schaffe. Nichts davon tue ich.",
+            "en": "Unfair competition requires that I use your name, your logo, your assets, or that I deliberately create confusion in the market. I'm doing none of that.",
+            "fr": "La concurrence déloyale suppose que j'utilise ton nom, ton logo, tes assets, ou que je crée délibérément un risque de confusion sur le marché. Je ne fais rien de tout ça.",
+            "it": "La concorrenza sleale presuppone che io usi il tuo nome, il tuo logo, i tuoi asset, o che crei deliberatamente confusione sul mercato. Non faccio niente di tutto questo.",
+            "ja": "不正競争ってのは、オレがお前の名前やロゴやアセットを使うか、市場で意図的に混同を生じさせることが前提だ。オレはどれもしてない。",
+            "ko": "부정경쟁이 성립하려면 내가 네 이름, 네 로고, 네 에셋을 쓰거나, 시장에서 고의로 혼동을 일으켜야 해. 난 그중 아무것도 안 해.",
+            "pl": "Czyn nieuczciwej konkurencji zakłada, że używam twojej nazwy, twojego logo, twoich assetów albo celowo wprowadzam rynek w błąd. Nic z tego nie robię.",
+            "pt-BR": "Concorrência desleal pressupõe que eu use o seu nome, o seu logo, os seus assets, ou que eu crie confusão deliberada no mercado. Não faço nada disso.",
+            "ru": "Недобросовестная конкуренция предполагает, что я использую твоё имя, твой логотип, твои ассеты или намеренно создаю смешение на рынке. Ничего из этого я не делаю.",
+            "uk": "Недобросовісна конкуренція передбачає, що я використовую твоє ім'я, твій логотип, твої асети або навмисно створюю змішування на ринку. Нічого з цього я не роблю.",
+            "vi": "Cạnh tranh không lành mạnh đòi hỏi tao dùng tên mày, logo của mày, asset của mày, hoặc cố ý gây nhầm lẫn trên thị trường. Tao không làm điều nào trong số đó."
+          }
         }
       ],
       "sfx": [],
@@ -218,7 +309,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Hra se jmenuje jinak. Běží na jiné platformě. Má jiný bojový systém. A ty jsi ji deset let nevydal.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Spiel heißt anders. Es läuft auf einer anderen Plattform. Es hat ein anderes Kampfsystem. Und du hast deins zehn Jahre lang nicht veröffentlicht.",
+            "en": "The game has a different name. It runs on a different platform. It has a different combat system. And you haven't released yours in ten years.",
+            "fr": "Le jeu porte un autre nom. Il tourne sur une autre plateforme. Il a un autre système de combat. Et toi, t'as pas sorti le tien en dix ans.",
+            "it": "Il gioco ha un altro nome. Gira su un'altra piattaforma. Ha un altro sistema di combattimento. E tu il tuo non l'hai pubblicato in dieci anni.",
+            "ja": "ゲームの名前は違う。別のプラットフォームで動く。戦闘システムも違う。それにお前は、十年間自分のを出してない。",
+            "ko": "게임 이름이 달라. 다른 플랫폼에서 돌아가. 전투 시스템도 달라. 그리고 넌 10년 동안 네 걸 출시도 안 했지.",
+            "pl": "Gra nazywa się inaczej. Działa na innej platformie. Ma inny system walki. A ty swojej przez dziesięć lat nie wydałeś.",
+            "pt-BR": "O jogo tem outro nome. Roda em outra plataforma. Tem outro sistema de combate. E você passou dez anos sem lançar o seu.",
+            "ru": "Игра называется иначе. Работает на другой платформе. У неё другая боевая система. А ты свою десять лет так и не выпустил.",
+            "uk": "Гра називається інакше. Працює на іншій платформі. Має іншу бойову систему. А ти свою десять років так і не випустив.",
+            "vi": "Trò chơi tên khác. Chạy trên nền tảng khác. Có hệ thống chiến đấu khác. Còn mày thì mười năm chưa phát hành cái của mày."
+          }
         }
       ],
       "sfx": [],
@@ -243,12 +347,38 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Co se týče „složky s důkazy“ – pokud v ní máš zdrojový kód, který jsem nikdy neviděl, tak ji klidně pošli.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was die „Beweismappe“ angeht – wenn da Quellcode drin ist, den ich nie gesehen hab, dann schick sie ruhig.",
+            "en": "As for the “evidence folder” – if it contains source code I've never seen, go ahead and send it.",
+            "fr": "Quant au « dossier de preuves » – s'il contient du code source que j'ai jamais vu, envoie-le, je t'en prie.",
+            "it": "Quanto alla «cartella delle prove» – se dentro c'è codice sorgente che non ho mai visto, mandala pure.",
+            "ja": "「証拠フォルダ」についてだが――オレが見たこともないソースコードが入ってるなら、遠慮なく送れよ。",
+            "ko": "“증거 폴더” 말인데 – 내가 한 번도 본 적 없는 소스 코드가 들어 있으면, 얼마든지 보내.",
+            "pl": "Co do „teczki z dowodami” – jeśli masz w niej kod źródłowy, którego nigdy nie widziałem, to śmiało ją wyślij.",
+            "pt-BR": "Quanto à “pasta de provas” – se nela tiver código-fonte que eu nunca vi, pode mandar à vontade.",
+            "ru": "Что касается «папки с доказательствами» – если там есть исходный код, которого я никогда не видел, смело отправляй.",
+            "uk": "Щодо «теки з доказами» – якщо там є вихідний код, якого я ніколи не бачив, сміливо надсилай.",
+            "vi": "Còn về “thư mục bằng chứng” – nếu trong đó có mã nguồn mà tao chưa từng thấy, cứ việc gửi."
+          }
         },
         {
           "speaker_id": "ol1n_kabat",
           "text": "Pokud v ní máš jen ten dokument s pravidly a naše staré zprávy, tak je to důkaz o tom, že jsi mi ta pravidla sám poskytl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn da nur das Regeldokument und unsere alten Nachrichten drin sind, dann ist das der Beweis, dass du mir die Regeln selbst überlassen hast.",
+            "en": "If all it has is that rules document and our old messages, then it's proof that you handed me those rules yourself.",
+            "fr": "S'il contient juste le document de règles et nos vieux messages, c'est la preuve que tu m'as fourni ces règles toi-même.",
+            "it": "Se dentro ci sono solo il documento con le regole e i nostri vecchi messaggi, allora è la prova che quelle regole me le hai fornite tu.",
+            "ja": "中身がルールの文書とオレたちの昔のメッセージだけなら、それはお前が自分でルールをオレに渡したって証拠だ。",
+            "ko": "거기 그 규칙 문서랑 우리 옛날 메시지밖에 없으면, 그건 네가 직접 나한테 규칙을 넘겼다는 증거야.",
+            "pl": "Jeśli masz w niej tylko ten dokument z zasadami i nasze stare wiadomości, to jest to dowód, że sam mi te zasady udostępniłeś.",
+            "pt-BR": "Se nela tiver só aquele documento com as regras e nossas mensagens antigas, então é a prova de que foi você mesmo quem me passou as regras.",
+            "ru": "Если там только тот документ с правилами и наши старые сообщения, то это доказательство того, что ты сам мне эти правила предоставил.",
+            "uk": "Якщо там лише той документ із правилами й наші старі повідомлення, то це доказ того, що ти сам надав мені ці правила.",
+            "vi": "Nếu trong đó chỉ có tài liệu luật chơi với tin nhắn cũ của bọn mình, thì đó là bằng chứng chính mày đã đưa luật cho tao."
+          }
         }
       ],
       "sfx": [],
@@ -273,7 +403,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "A pravidla hry nejsou autorské dílo v tom smyslu, jak si myslíš. Chráněný je konkrétní text. Ne systém, který popisuje. Ne mechaniky. Ne idea.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und Spielregeln sind kein urheberrechtlich geschütztes Werk in dem Sinn, wie du denkst. Geschützt ist der konkrete Text. Nicht das System, das er beschreibt. Nicht die Mechaniken. Nicht die Idee.",
+            "en": "And game rules aren't a copyrighted work in the sense you think. What's protected is the specific text. Not the system it describes. Not the mechanics. Not the idea.",
+            "fr": "Et les règles d'un jeu ne sont pas une œuvre protégée au sens où tu l'entends. Ce qui est protégé, c'est le texte concret. Pas le système qu'il décrit. Pas les mécaniques. Pas l'idée.",
+            "it": "E le regole di un gioco non sono un'opera protetta nel senso che pensi tu. È protetto il testo concreto. Non il sistema che descrive. Non le meccaniche. Non l'idea.",
+            "ja": "それにゲームのルールは、お前が思ってるような意味での著作物じゃない。保護されるのは具体的なテキストだ。それが説明するシステムじゃない。メカニクスでもない。アイデアでもない。",
+            "ko": "그리고 게임 규칙은 네가 생각하는 그런 의미의 저작물이 아니야. 보호받는 건 구체적인 텍스트야. 그게 설명하는 시스템이 아니라. 메커니즘도 아니고. 아이디어도 아니고.",
+            "pl": "A zasady gry nie są utworem w takim sensie, jak myślisz. Chroniony jest konkretny tekst. Nie system, który opisuje. Nie mechaniki. Nie idea.",
+            "pt-BR": "E regras de jogo não são obra protegida no sentido que você pensa. O que é protegido é o texto concreto. Não o sistema que ele descreve. Não as mecânicas. Não a ideia.",
+            "ru": "И правила игры — не объект авторского права в том смысле, как ты думаешь. Охраняется конкретный текст. Не система, которую он описывает. Не механики. Не идея.",
+            "uk": "І правила гри — не об'єкт авторського права в тому сенсі, як ти думаєш. Охороняється конкретний текст. Не система, яку він описує. Не механіки. Не ідея.",
+            "vi": "Và luật chơi không phải là tác phẩm có bản quyền theo nghĩa mày nghĩ. Được bảo hộ là văn bản cụ thể. Không phải hệ thống nó mô tả. Không phải cơ chế. Không phải ý tưởng."
+          }
         }
       ],
       "sfx": [],
@@ -299,7 +442,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Ty jsi věděl, že to je moje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du wusstest, dass es meins ist.",
+            "en": "You knew it was mine.",
+            "fr": "Tu savais que c'était à moi.",
+            "it": "Sapevi che era mio.",
+            "ja": "オレのだってわかってたくせに。",
+            "ko": "내 거라는 거 알았잖아.",
+            "pl": "Wiedziałeś, że to moje.",
+            "pt-BR": "Você sabia que era meu.",
+            "ru": "Ты знал, что это моё.",
+            "uk": "Ти знав, що це моє.",
+            "vi": "Mày biết đó là của tao."
+          }
         }
       ],
       "sfx": [],
@@ -324,7 +480,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Věděl jsem, že máš nepublikovaný koncept. Věděl jsem, že jsi mi nedal kód. A věděl jsem, že mi dlužíš peníze.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wusste, dass du ein unveröffentlichtes Konzept hast. Ich wusste, dass du mir keinen Code gegeben hast. Und ich wusste, dass du mir Geld schuldest.",
+            "en": "I knew you had an unpublished concept. I knew you hadn't given me any code. And I knew you owed me money.",
+            "fr": "Je savais que t'avais un concept non publié. Je savais que tu m'avais pas donné de code. Et je savais que tu me devais de l'argent.",
+            "it": "Sapevo che avevi un concept inedito. Sapevo che non mi avevi dato il codice. E sapevo che mi dovevi dei soldi.",
+            "ja": "知ってたのは、お前が未発表のコンセプトを持ってるってこと。コードをくれてないってこと。それと、オレに金を借りてるってことだ。",
+            "ko": "내가 안 건, 네가 미발표 콘셉트를 갖고 있다는 거야. 나한테 코드를 안 줬다는 거. 그리고 나한테 돈을 빚졌다는 거.",
+            "pl": "Wiedziałem, że masz niepublikowany koncept. Wiedziałem, że nie dałeś mi kodu. I wiedziałem, że jesteś mi winien pieniądze.",
+            "pt-BR": "Eu sabia que você tinha um conceito não publicado. Sabia que você não tinha me dado o código. E sabia que você me devia dinheiro.",
+            "ru": "Я знал, что у тебя есть неопубликованный концепт. Знал, что ты не дал мне код. И знал, что ты должен мне деньги.",
+            "uk": "Я знав, що в тебе є неопублікований концепт. Знав, що ти не дав мені коду. І знав, що ти винен мені гроші.",
+            "vi": "Tao biết mày có một ý tưởng chưa công bố. Tao biết mày không đưa tao mã. Và tao biết mày nợ tiền tao."
+          }
         }
       ],
       "sfx": [],
@@ -349,12 +518,38 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím. Ani omluvu za to, že jsem si postavil vlastní hru. Ani podíl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Schreib mir lieber, wann du mir das Geld schickst. Ich schulde dir nichts. Keine Entschuldigung dafür, dass ich mein eigenes Spiel gebaut hab. Keinen Anteil.",
+            "en": "Better write and tell me when you're sending the money. I owe you nothing. Not an apology for building my own game. Not a share.",
+            "fr": "Écris-moi plutôt quand tu m'envoies l'argent. Moi, je te dois rien. Ni des excuses pour avoir construit mon propre jeu. Ni une part.",
+            "it": "Scrivimi piuttosto quando mi mandi i soldi. Io non ti devo niente. Né delle scuse per essermi costruito il mio gioco. Né una quota.",
+            "ja": "それより、いつ金を送るのか書いてこい。オレはお前に何も借りはない。自分のゲームを作ったことへの謝罪も。取り分も。",
+            "ko": "차라리 언제 돈 보낼 건지나 적어 보내. 난 너한테 빚진 거 없어. 내 게임 만든 거에 대한 사과도. 지분도.",
+            "pl": "Napisz mi lepiej, kiedy wyślesz mi te pieniądze. Ja tobie nic nie jestem winien. Ani przeprosin za to, że zbudowałem własną grę. Ani udziału.",
+            "pt-BR": "Melhor me escrever dizendo quando vai mandar o dinheiro. Eu não te devo nada. Nem desculpas por ter construído meu próprio jogo. Nem participação.",
+            "ru": "Лучше напиши, когда пришлёшь мне деньги. Я тебе ничего не должен. Ни извинений за то, что построил свою игру. Ни доли.",
+            "uk": "Краще напиши, коли надішлеш мені гроші. Я тобі нічого не винен. Ні вибачень за те, що збудував власну гру. Ні частки.",
+            "vi": "Tốt hơn mày nhắn cho tao khi nào mày gửi tiền. Tao chẳng nợ mày gì. Không nợ lời xin lỗi vì đã tự xây trò chơi của mình. Không nợ phần chia."
+          }
         },
         {
           "speaker_id": "ol1n_kabat",
           "text": "Ani právo veta nad tím, co smím a nesmím vydat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und kein Vetorecht darüber, was ich veröffentlichen darf und was nicht.",
+            "en": "And no veto over what I may and may not release.",
+            "fr": "Ni un droit de veto sur ce que j'ai le droit de sortir ou pas.",
+            "it": "Né un diritto di veto su cosa posso o non posso pubblicare.",
+            "ja": "オレが何を出していいか、いけないかに対する拒否権もな。",
+            "ko": "내가 뭘 출시해도 되고 안 되는지에 대한 거부권도.",
+            "pl": "Ani prawa weta co do tego, co wolno mi wydać, a czego nie.",
+            "pt-BR": "Nem direito de veto sobre o que eu posso ou não posso lançar.",
+            "ru": "Ни права вето на то, что мне можно выпускать, а что нельзя.",
+            "uk": "Ні права вето на те, що мені можна випускати, а що ні.",
+            "vi": "Không nợ quyền phủ quyết về những gì tao được hay không được phát hành."
+          }
         }
       ],
       "sfx": [],
@@ -397,7 +592,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Kámo… chybět mi nebudeš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Kumpel… vermissen werd ich dich nicht.",
+            "en": "Buddy… I won't miss you.",
+            "fr": "Mon pote… tu vas pas me manquer.",
+            "it": "Amico… non mi mancherai.",
+            "ja": "相棒…お前がいなくなっても、別に寂しくねえよ。",
+            "ko": "친구야… 네가 그립진 않을 거야.",
+            "pl": "Stary… nie będę za tobą tęsknił.",
+            "pt-BR": "Parceiro… não vou sentir sua falta.",
+            "ru": "Братан… скучать по тебе не буду.",
+            "uk": "Друже… сумувати за тобою не буду.",
+            "vi": "Ông bạn… tao sẽ không nhớ mày đâu."
+          }
         }
       ],
       "sfx": [],
@@ -422,7 +630,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Když jsem byl ve svém životě nejvíc v hajzlu a hledal u tebe útočiště, vyhodils mě po dvou dnech jak největšího fakana. To se nezapomíná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Als ich in meinem Leben am tiefsten in der Scheiße saß und bei dir Zuflucht gesucht hab, hast du mich nach zwei Tagen rausgeschmissen wie den letzten Rotzlöffel. So was vergisst man nicht.",
+            "en": "When I was in the deepest shit of my life and came to you for shelter, you kicked me out after two days like some snot-nosed brat. You don't forget that.",
+            "fr": "Quand j'étais dans la merde comme jamais dans ma vie et que je suis venu chercher refuge chez toi, tu m'as foutu dehors au bout de deux jours comme le dernier des morveux. Ça s'oublie pas.",
+            "it": "Quando ero nella merda più totale della mia vita e cercavo rifugio da te, mi hai sbattuto fuori dopo due giorni come l'ultimo dei mocciosi. Queste cose non si dimenticano.",
+            "ja": "人生で一番どん底のクソみたいな時に、お前のところに逃げ込んだら、二日で叩き出したよな。最低のガキみたいに。あれは忘れねえ。",
+            "ko": "내 인생에서 제일 엿 같았을 때 너한테 피신했더니, 이틀 만에 최악의 애새끼처럼 내쫓았지. 그건 안 잊혀.",
+            "pl": "Kiedy byłem w największej dupie w życiu i szukałem u ciebie schronienia, wywaliłeś mnie po dwóch dniach jak ostatniego gówniarza. Tego się nie zapomina.",
+            "pt-BR": "Quando eu tava na pior merda da minha vida e fui buscar abrigo com você, você me chutou depois de dois dias como o pior dos moleques. Isso não se esquece.",
+            "ru": "Когда я был в самой глубокой жопе в своей жизни и искал у тебя убежища, ты выгнал меня через два дня, как последнего сопляка. Такое не забывается.",
+            "uk": "Коли я був у найглибшій дупі в житті й шукав у тебе притулку, ти вигнав мене через два дні, як останнього шмаркача. Таке не забувається.",
+            "vi": "Lúc đời tao khốn nạn nhất, tao tìm đến mày để nương nhờ, vậy mà sau hai ngày mày tống cổ tao ra như thằng nhãi ranh mạt hạng. Chuyện đó không quên được đâu."
+          }
         }
       ],
       "sfx": [],
@@ -447,7 +668,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Nikdys mě nenechal udělat ti nabídku na padesát na padesát, kterou jsem vždycky považoval za samozřejmost. Ta nabídka pořád platí. I teď.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mich nie ein Fifty-fifty-Angebot machen lassen, das für mich immer selbstverständlich war. Das Angebot steht noch. Auch jetzt.",
+            "en": "You never let me make you the fifty-fifty offer I always took for granted. That offer still stands. Even now.",
+            "fr": "Tu m'as jamais laissé te faire l'offre moitié-moitié que j'ai toujours considérée comme une évidence. Cette offre tient toujours. Même maintenant.",
+            "it": "Non mi hai mai lasciato farti l'offerta al cinquanta e cinquanta che ho sempre dato per scontata. Quell'offerta vale ancora. Anche adesso.",
+            "ja": "オレがずっと当然だと思ってた五分五分の提案を、お前は一度もさせてくれなかった。その提案は今も有効だ。今でもな。",
+            "ko": "내가 늘 당연하다고 생각했던 반반 제안, 넌 한 번도 하게 해 주지 않았어. 그 제안은 아직 유효해. 지금도.",
+            "pl": "Nigdy nie pozwoliłeś mi złożyć ci oferty pół na pół, którą zawsze uważałem za oczywistość. Ta oferta wciąż jest aktualna. Nawet teraz.",
+            "pt-BR": "Você nunca me deixou te fazer a proposta de meio a meio que eu sempre achei óbvia. Essa proposta continua de pé. Mesmo agora.",
+            "ru": "Ты так и не дал мне сделать тебе предложение пятьдесят на пятьдесят, которое я всегда считал само собой разумеющимся. Это предложение всё ещё в силе. Даже сейчас.",
+            "uk": "Ти так і не дав мені зробити тобі пропозицію п'ятдесят на п'ятдесят, яку я завжди вважав чимось само собою зрозумілим. Ця пропозиція досі чинна. Навіть зараз.",
+            "vi": "Mày chưa bao giờ để tao đưa ra lời đề nghị chia đôi năm mươi năm mươi, điều mà tao luôn coi là đương nhiên. Lời đề nghị đó vẫn còn. Kể cả bây giờ."
+          }
         }
       ],
       "sfx": [],
@@ -472,7 +706,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "Ale ty sis vybral cestu výhrůžek a blokování.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Aber du hast dich für Drohungen und Blockieren entschieden.",
+            "en": "But you chose the path of threats and blocking.",
+            "fr": "Mais toi, t'as choisi la voie des menaces et du blocage.",
+            "it": "Ma tu hai scelto la strada delle minacce e dei blocchi.",
+            "ja": "でもお前は、脅しとブロックの道を選んだ。",
+            "ko": "근데 넌 협박이랑 차단의 길을 택했지.",
+            "pl": "Ale ty wybrałeś drogę gróźb i blokowania.",
+            "pt-BR": "Mas você escolheu o caminho das ameaças e do bloqueio.",
+            "ru": "Но ты выбрал путь угроз и блокировок.",
+            "uk": "Але ти обрав шлях погроз і блокувань.",
+            "vi": "Nhưng mày đã chọn con đường đe dọa và chặn."
+          }
         }
       ],
       "sfx": [],
@@ -498,7 +745,20 @@
         {
           "speaker_id": "ol1n_kabat",
           "text": "R.I.P.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "R.I.P.",
+            "en": "R.I.P.",
+            "fr": "R.I.P.",
+            "it": "R.I.P.",
+            "ja": "R.I.P.",
+            "ko": "R.I.P.",
+            "pl": "R.I.P.",
+            "pt-BR": "R.I.P.",
+            "ru": "R.I.P.",
+            "uk": "R.I.P.",
+            "vi": "R.I.P."
+          }
         }
       ],
       "sfx": [],

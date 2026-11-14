@@ -1,5 +1,18 @@
 {
   "title": "Prolog: Útočiště",
+  "title_i18n": {
+    "de": "Prolog: Zuflucht",
+    "en": "Prologue: Shelter",
+    "fr": "Prologue : Le refuge",
+    "it": "Prologo: Il rifugio",
+    "ja": "プロローグ：避難所",
+    "ko": "프롤로그: 피난처",
+    "pl": "Prolog: Schronienie",
+    "pt-BR": "Prólogo: Refúgio",
+    "ru": "Пролог: Убежище",
+    "uk": "Пролог: Притулок",
+    "vi": "Mở đầu: Nơi trú ẩn"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -56,7 +69,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Tak pojď. Tady tě nikdo nenajde.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Na komm. Hier findet dich keiner.",
+            "en": "Come on in. Nobody'll find you here.",
+            "fr": "Allez, viens. Personne te trouvera ici.",
+            "it": "Dai, vieni. Qui non ti trova nessuno.",
+            "ja": "ほら、入れよ。ここなら誰にも見つからない。",
+            "ko": "자, 들어와. 여긴 아무도 못 찾아.",
+            "pl": "No chodź. Tu cię nikt nie znajdzie.",
+            "pt-BR": "Vem, entra. Aqui ninguém te acha.",
+            "ru": "Ну заходи. Тут тебя никто не найдёт.",
+            "uk": "Ну заходь. Тут тебе ніхто не знайде.",
+            "vi": "Vào đi. Ở đây chẳng ai tìm ra mày đâu."
+          }
         }
       ],
       "sfx": [],
@@ -81,7 +107,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Vyhodila mě z bytu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Sie hat mich rausgeworfen.",
+            "en": "She kicked me out of the flat.",
+            "fr": "Elle m'a viré de l'appart.",
+            "it": "Mi ha buttato fuori di casa.",
+            "ja": "あいつに部屋を追い出された。",
+            "ko": "그 여자가 나 집에서 쫓아냈어.",
+            "pl": "Wywaliła mnie z mieszkania.",
+            "pt-BR": "Ela me expulsou de casa.",
+            "ru": "Она выгнала меня из квартиры.",
+            "uk": "Вона вигнала мене з квартири.",
+            "vi": "Cô ấy đuổi tao ra khỏi nhà."
+          }
         }
       ],
       "sfx": [],
@@ -106,7 +145,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Já vím. Psals to.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß. Hast du geschrieben.",
+            "en": "I know. You wrote me.",
+            "fr": "Je sais. Tu me l'as écrit.",
+            "it": "Lo so. Me l'hai scritto.",
+            "ja": "知ってる。メールで読んだ。",
+            "ko": "알아. 문자 했잖아.",
+            "pl": "Wiem. Pisałeś.",
+            "pt-BR": "Eu sei. Você escreveu.",
+            "ru": "Знаю. Ты писал.",
+            "uk": "Знаю. Ти писав.",
+            "vi": "Tao biết. Mày nhắn rồi."
+          }
         }
       ],
       "sfx": [],
@@ -130,7 +182,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Nepotřebuju nic. Jenom klid. Pár dní.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich brauch nichts. Nur Ruhe. Ein paar Tage.",
+            "en": "I don't need anything. Just quiet. A few days.",
+            "fr": "J'ai besoin de rien. Juste du calme. Quelques jours.",
+            "it": "Non mi serve niente. Solo pace. Qualche giorno.",
+            "ja": "何もいらない。静かならいい。数日だけ。",
+            "ko": "아무것도 필요 없어. 조용하면 돼. 며칠만.",
+            "pl": "Nic nie potrzebuję. Tylko spokoju. Kilka dni.",
+            "pt-BR": "Não preciso de nada. Só sossego. Uns dias.",
+            "ru": "Мне ничего не надо. Только тишина. Пару дней.",
+            "uk": "Мені нічого не треба. Тільки спокій. Кілька днів.",
+            "vi": "Tao không cần gì. Chỉ cần yên tĩnh. Vài ngày thôi."
+          }
         }
       ],
       "sfx": [],
@@ -155,7 +220,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Klidu tu mám, že bych ho mohl prodávat. Hotel to není. Ale beton drží.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ruhe hab ich hier so viel, ich könnt sie verkaufen. Kein Hotel. Aber der Beton hält.",
+            "en": "I've got so much quiet I could sell it. It's no hotel. But the concrete holds.",
+            "fr": "Du calme, j'en ai à revendre. C'est pas l'hôtel. Mais le béton tient.",
+            "it": "Di pace ne ho da vendere. Non è un albergo. Ma il cemento regge.",
+            "ja": "静けさなら売るほどある。ホテルじゃないけど、コンクリートは頑丈だ。",
+            "ko": "조용한 건 팔아도 될 만큼 있어. 호텔은 아니야. 그래도 콘크리트는 튼튼해.",
+            "pl": "Spokoju mam tu na sprzedaż. Hotel to nie jest. Ale beton trzyma.",
+            "pt-BR": "Sossego aqui tem de sobra, dava pra vender. Não é hotel. Mas o concreto aguenta.",
+            "ru": "Тишины тут столько, хоть продавай. Не отель. Но бетон держит.",
+            "uk": "Спокою тут стільки, хоч продавай. Не готель. Але бетон тримає.",
+            "vi": "Yên tĩnh thì tao có thừa, bán được luôn. Không phải khách sạn. Nhưng bê tông chắc."
+          }
         }
       ],
       "sfx": [],
@@ -195,7 +273,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Chceš něco vidět?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Willst du was sehen?",
+            "en": "Wanna see something?",
+            "fr": "Tu veux voir un truc ?",
+            "it": "Vuoi vedere una cosa?",
+            "ja": "見たいもんがあるか？",
+            "ko": "뭐 하나 볼래?",
+            "pl": "Chcesz coś zobaczyć?",
+            "pt-BR": "Quer ver uma coisa?",
+            "ru": "Хочешь кое-что покажу?",
+            "uk": "Хочеш дещо покажу?",
+            "vi": "Muốn xem cái này không?"
+          }
         }
       ],
       "sfx": [],
@@ -235,7 +326,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Co to je?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist das?",
+            "en": "What's that?",
+            "fr": "C'est quoi ?",
+            "it": "Cos'è?",
+            "ja": "これ何だ？",
+            "ko": "이게 뭐야?",
+            "pl": "Co to jest?",
+            "pt-BR": "O que é isso?",
+            "ru": "Что это?",
+            "uk": "Що це?",
+            "vi": "Cái gì đây?"
+          }
         }
       ],
       "sfx": [],
@@ -260,7 +364,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Nebulon. Ještě to není hotový.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nebulon. Ist noch nicht fertig.",
+            "en": "Nebulon. It's not finished yet.",
+            "fr": "Nebulon. C'est pas encore fini.",
+            "it": "Nebulon. Non è ancora finito.",
+            "ja": "Nebulon。まだ完成してない。",
+            "ko": "Nebulon. 아직 덜 됐어.",
+            "pl": "Nebulon. Jeszcze nieskończony.",
+            "pt-BR": "Nebulon. Ainda não tá pronto.",
+            "ru": "Nebulon. Ещё не доделан.",
+            "uk": "Nebulon. Ще не доробив.",
+            "vi": "Nebulon. Chưa xong đâu."
+          }
         }
       ],
       "sfx": [],
@@ -285,7 +402,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "To je dobrý. To je fakt dobrý.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist gut. Das ist echt gut.",
+            "en": "That's good. That's really good.",
+            "fr": "C'est bien. C'est vraiment bien.",
+            "it": "È bello. È davvero bello.",
+            "ja": "いいな。マジでいい。",
+            "ko": "좋다. 진짜 좋아.",
+            "pl": "Dobre to. Naprawdę dobre.",
+            "pt-BR": "Isso é bom. É bom mesmo.",
+            "ru": "Это круто. Реально круто.",
+            "uk": "Це круто. Реально круто.",
+            "vi": "Hay đấy. Hay thật sự."
+          }
         }
       ],
       "sfx": [],
@@ -375,7 +505,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Víš, proč jsem šel zrovna sem?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weißt du, warum ich ausgerechnet hierher gekommen bin?",
+            "en": "Know why I came here of all places?",
+            "fr": "Tu sais pourquoi je suis venu ici, justement ?",
+            "it": "Sai perché sono venuto proprio qui?",
+            "ja": "なんでわざわざここに来たかわかるか？",
+            "ko": "내가 왜 하필 여기 왔는지 알아?",
+            "pl": "Wiesz, czemu przyszedłem akurat tutaj?",
+            "pt-BR": "Sabe por que eu vim justo pra cá?",
+            "ru": "Знаешь, почему я пришёл именно сюда?",
+            "uk": "Знаєш, чому я прийшов саме сюди?",
+            "vi": "Biết sao tao lại đến đúng chỗ này không?"
+          }
         }
       ],
       "sfx": [],
@@ -400,7 +543,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Protože mám nejtlustší dveře v republice.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil ich die dicksten Türen im ganzen Land hab.",
+            "en": "Because I've got the thickest doors in the country.",
+            "fr": "Parce que j'ai les portes les plus épaisses du pays.",
+            "it": "Perché ho le porte più spesse del paese.",
+            "ja": "国でいちばん分厚いドアがあるからだろ。",
+            "ko": "내가 이 나라에서 제일 두꺼운 문을 갖고 있으니까.",
+            "pl": "Bo mam najgrubsze drzwi w kraju.",
+            "pt-BR": "Porque eu tenho as portas mais grossas do país.",
+            "ru": "Потому что у меня самые толстые двери в стране.",
+            "uk": "Бо в мене найтовщі двері в країні.",
+            "vi": "Vì tao có cánh cửa dày nhất cả nước."
+          }
         }
       ],
       "sfx": [],
@@ -425,7 +581,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Protože tady není slyšet nic zvenčí. Můžu ti něco říct? O tátovi.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weil man hier nichts von draußen hört. Kann ich dir was erzählen? Über meinen Vater.",
+            "en": "Because you can't hear anything from outside here. Can I tell you something? About my dad.",
+            "fr": "Parce qu'ici on n'entend rien du dehors. Je peux te dire un truc ? Sur mon père.",
+            "it": "Perché qui non si sente niente da fuori. Posso dirti una cosa? Su mio padre.",
+            "ja": "ここは外の音が何も聞こえないからだ。話していいか？親父のこと。",
+            "ko": "여긴 밖에서 아무 소리도 안 들리니까. 얘기 하나 해도 돼? 우리 아빠 얘기.",
+            "pl": "Bo tu nic nie słychać z zewnątrz. Mogę ci coś powiedzieć? O ojcu.",
+            "pt-BR": "Porque aqui não se ouve nada lá de fora. Posso te contar uma coisa? Sobre o meu pai.",
+            "ru": "Потому что сюда снаружи ничего не слышно. Можно тебе кое-что рассказать? Про отца.",
+            "uk": "Бо сюди ззовні нічого не чути. Можна тобі дещо розповісти? Про батька.",
+            "vi": "Vì ở đây không nghe thấy gì bên ngoài. Tao kể mày nghe chuyện này được không? Về bố tao."
+          }
         }
       ],
       "sfx": [],
@@ -450,7 +619,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Povídej.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Erzähl.",
+            "en": "Go on.",
+            "fr": "Vas-y.",
+            "it": "Racconta.",
+            "ja": "話せよ。",
+            "ko": "말해 봐.",
+            "pl": "Mów.",
+            "pt-BR": "Conta.",
+            "ru": "Рассказывай.",
+            "uk": "Розповідай.",
+            "vi": "Kể đi."
+          }
         }
       ],
       "sfx": [],
@@ -476,7 +658,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Můj otec je člověk, který…",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mein Vater ist ein Mensch, der…",
+            "en": "My father is a man who…",
+            "fr": "Mon père, c'est un homme qui…",
+            "it": "Mio padre è uno che…",
+            "ja": "親父ってのは、そういう…",
+            "ko": "우리 아빠는 어떤 사람이냐면…",
+            "pl": "Mój ojciec to człowiek, który…",
+            "pt-BR": "Meu pai é um homem que…",
+            "ru": "Мой отец — человек, который…",
+            "uk": "Мій батько — людина, яка…",
+            "vi": "Bố tao là người mà…"
+          }
         }
       ],
       "sfx": [],
@@ -551,7 +746,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "…a proto potřebuju místo, kam se nedostane.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "…und deshalb brauch ich einen Ort, wo er nicht hinkommt.",
+            "en": "…and that's why I need a place he can't get to.",
+            "fr": "…et c'est pour ça qu'il me faut un endroit où il peut pas venir.",
+            "it": "…ed è per questo che mi serve un posto dove non può arrivare.",
+            "ja": "…だから、あいつが来られない場所が要るんだ。",
+            "ko": "…그래서 그 사람이 못 오는 곳이 필요해.",
+            "pl": "…i dlatego potrzebuję miejsca, gdzie on nie dotrze.",
+            "pt-BR": "…e por isso eu preciso de um lugar onde ele não chegue.",
+            "ru": "…и поэтому мне нужно место, куда он не доберётся.",
+            "uk": "…і тому мені треба місце, куди він не дістанеться.",
+            "vi": "…nên tao cần một chỗ mà ông ấy không tới được."
+          }
         }
       ],
       "sfx": [],
@@ -577,7 +785,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Jo. Tak… jo. Zkus spát.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja. Also… ja. Versuch zu schlafen.",
+            "en": "Yeah. So… yeah. Try to sleep.",
+            "fr": "Ouais. Bon… ouais. Essaie de dormir.",
+            "it": "Sì. Allora… sì. Prova a dormire.",
+            "ja": "ああ。そっか…うん。寝てみろ。",
+            "ko": "그래. 음… 그래. 자 봐.",
+            "pl": "No. To… no. Spróbuj zasnąć.",
+            "pt-BR": "É. Então… é. Tenta dormir.",
+            "ru": "Ага. Ну… ага. Попробуй поспать.",
+            "uk": "Ага. Ну… ага. Спробуй поспати.",
+            "vi": "Ừ. Thế… ừ. Ngủ thử đi."
+          }
         }
       ],
       "sfx": [],
@@ -669,7 +890,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Tady se spí jak v hrobě. V dobrým smyslu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Hier schläft man wie im Grab. Im guten Sinne.",
+            "en": "You sleep like the dead down here. In a good way.",
+            "fr": "On dort comme dans une tombe ici. Dans le bon sens.",
+            "it": "Qui si dorme come in una tomba. In senso buono.",
+            "ja": "ここ、墓の中みたいによく眠れるな。いい意味で。",
+            "ko": "여기선 무덤 속처럼 잠이 와. 좋은 뜻으로.",
+            "pl": "Tu się śpi jak w grobie. W dobrym sensie.",
+            "pt-BR": "Aqui se dorme feito defunto. No bom sentido.",
+            "ru": "Тут спится как в могиле. В хорошем смысле.",
+            "uk": "Тут спиться як у могилі. У доброму сенсі.",
+            "vi": "Ở đây ngủ như trong mộ. Theo nghĩa tốt."
+          }
         }
       ],
       "sfx": [],
@@ -695,7 +929,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Měl jsem sen.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hatte einen Traum.",
+            "en": "I had a dream.",
+            "fr": "J'ai fait un rêve.",
+            "it": "Ho fatto un sogno.",
+            "ja": "夢を見た。",
+            "ko": "꿈을 꿨어.",
+            "pl": "Miałem sen.",
+            "pt-BR": "Eu tive um sonho.",
+            "ru": "Мне приснился сон.",
+            "uk": "Мені наснився сон.",
+            "vi": "Tao nằm mơ."
+          }
         }
       ],
       "sfx": [],
@@ -720,7 +967,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Jo?",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ja?",
+            "en": "Yeah?",
+            "fr": "Ah ouais ?",
+            "it": "Ah sì?",
+            "ja": "へえ？",
+            "ko": "그래?",
+            "pl": "Tak?",
+            "pt-BR": "É?",
+            "ru": "Да?",
+            "uk": "Так?",
+            "vi": "Thế à?"
+          }
         }
       ],
       "sfx": [],
@@ -745,7 +1005,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Že se do mýho pokoje dobýval démon. Bušil na dveře. Na tyhle. Celou noc.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Dass ein Dämon in mein Zimmer wollte. Er hat an die Tür gehämmert. An die hier. Die ganze Nacht.",
+            "en": "A demon was trying to get into my room. Pounding on the door. This one. All night.",
+            "fr": "Qu'un démon voulait entrer dans ma chambre. Il cognait à la porte. Celle-là. Toute la nuit.",
+            "it": "Che un demone cercava di entrare in camera mia. Batteva alla porta. Questa. Tutta la notte.",
+            "ja": "悪魔が俺の部屋に押し入ろうとしてた。ドアを叩いてた。このドアを。一晩中。",
+            "ko": "악마가 내 방에 들어오려고 했어. 문을 두드렸어. 이 문을. 밤새.",
+            "pl": "Że do mojego pokoju dobijał się demon. Walił w drzwi. W te. Całą noc.",
+            "pt-BR": "Que um demônio tentava entrar no meu quarto. Batendo na porta. Nesta. A noite toda.",
+            "ru": "Что ко мне в комнату ломился демон. Колотил в дверь. В эту. Всю ночь.",
+            "uk": "Що до моєї кімнати ломився демон. Гатив у двері. У ці. Цілу ніч.",
+            "vi": "Có một con quỷ cố xông vào phòng tao. Đập cửa. Cánh cửa này. Suốt đêm."
+          }
         }
       ],
       "sfx": [],
@@ -770,7 +1043,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "To byl sen.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das war ein Traum.",
+            "en": "It was a dream.",
+            "fr": "C'était un rêve.",
+            "it": "Era un sogno.",
+            "ja": "夢だろ。",
+            "ko": "꿈이잖아.",
+            "pl": "To był sen.",
+            "pt-BR": "Foi um sonho.",
+            "ru": "Это был сон.",
+            "uk": "Це був сон.",
+            "vi": "Mơ thôi mà."
+          }
         }
       ],
       "sfx": [],
@@ -795,7 +1081,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Já vím, že to byl sen.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß, dass es ein Traum war.",
+            "en": "I know it was a dream.",
+            "fr": "Je sais que c'était un rêve.",
+            "it": "Lo so che era un sogno.",
+            "ja": "夢なのはわかってる。",
+            "ko": "꿈인 거 알아.",
+            "pl": "Wiem, że to był sen.",
+            "pt-BR": "Eu sei que foi um sonho.",
+            "ru": "Я знаю, что это был сон.",
+            "uk": "Я знаю, що це був сон.",
+            "vi": "Tao biết là mơ."
+          }
         }
       ],
       "sfx": [],
@@ -820,7 +1119,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Potřeboval bych, abys odešel.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich bräuchte, dass du gehst.",
+            "en": "I need you to leave.",
+            "fr": "J'aurais besoin que tu partes.",
+            "it": "Avrei bisogno che te ne andassi.",
+            "ja": "出てってほしいんだ。",
+            "ko": "네가 나가 줬으면 해.",
+            "pl": "Potrzebowałbym, żebyś wyszedł.",
+            "pt-BR": "Eu precisava que você fosse embora.",
+            "ru": "Мне нужно, чтобы ты ушёл.",
+            "uk": "Мені треба, щоб ти пішов.",
+            "vi": "Tao cần mày đi đi."
+          }
         }
       ],
       "sfx": [],
@@ -844,7 +1156,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Jsem tu dva dny.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich bin seit zwei Tagen hier.",
+            "en": "I've been here two days.",
+            "fr": "Ça fait deux jours que je suis là.",
+            "it": "Sono qui da due giorni.",
+            "ja": "まだ二日だぞ。",
+            "ko": "나 여기 온 지 이틀이야.",
+            "pl": "Jestem tu dwa dni.",
+            "pt-BR": "Faz dois dias que eu tô aqui.",
+            "ru": "Я тут два дня.",
+            "uk": "Я тут два дні.",
+            "vi": "Tao mới ở đây hai ngày."
+          }
         }
       ],
       "sfx": [],
@@ -869,7 +1194,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Já vím.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich weiß.",
+            "en": "I know.",
+            "fr": "Je sais.",
+            "it": "Lo so.",
+            "ja": "わかってる。",
+            "ko": "알아.",
+            "pl": "Wiem.",
+            "pt-BR": "Eu sei.",
+            "ru": "Знаю.",
+            "uk": "Знаю.",
+            "vi": "Tao biết."
+          }
         }
       ],
       "sfx": [],
@@ -893,7 +1231,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Řekl jsem ti včera věci, který jsem neřekl nikomu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir gestern Sachen erzählt, die ich noch keinem erzählt hab.",
+            "en": "Yesterday I told you things I've never told anyone.",
+            "fr": "Hier je t'ai dit des trucs que j'ai jamais dits à personne.",
+            "it": "Ieri ti ho detto cose che non ho mai detto a nessuno.",
+            "ja": "昨日、誰にも言ったことないことを話したんだぞ。",
+            "ko": "어제 아무한테도 안 한 얘기를 너한테 했잖아.",
+            "pl": "Powiedziałem ci wczoraj rzeczy, których nie mówiłem nikomu.",
+            "pt-BR": "Ontem eu te contei coisas que nunca contei pra ninguém.",
+            "ru": "Я вчера рассказал тебе то, чего не говорил никому.",
+            "uk": "Я вчора розповів тобі те, чого не казав нікому.",
+            "vi": "Hôm qua tao kể mày nghe những chuyện tao chưa kể ai."
+          }
         }
       ],
       "sfx": [],
@@ -919,7 +1270,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Právě proto. Tohle je jediný místo, kde mám klid. A tys sem něco přinesl.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Genau deshalb. Das ist der einzige Ort, wo ich Ruhe hab. Und du hast was hier reingebracht.",
+            "en": "That's exactly why. This is the only place I have peace. And you brought something in.",
+            "fr": "Justement. C'est le seul endroit où j'ai la paix. Et toi, t'as apporté un truc ici.",
+            "it": "Proprio per questo. È l'unico posto dove ho pace. E tu ci hai portato qualcosa.",
+            "ja": "だからだよ。ここは俺が落ち着ける唯一の場所なんだ。お前はそこに何かを持ち込んだ。",
+            "ko": "그러니까. 여긴 내가 편할 수 있는 유일한 곳이야. 근데 네가 뭘 들고 들어왔어.",
+            "pl": "Właśnie dlatego. To jedyne miejsce, gdzie mam spokój. A ty coś tu przyniosłeś.",
+            "pt-BR": "Por isso mesmo. É o único lugar onde eu tenho paz. E você trouxe uma coisa pra cá.",
+            "ru": "Именно поэтому. Это единственное место, где мне спокойно. А ты сюда что-то принёс.",
+            "uk": "Саме тому. Це єдине місце, де мені спокійно. А ти сюди щось приніс.",
+            "vi": "Chính vì thế. Đây là chỗ duy nhất tao được yên. Còn mày mang thứ gì đó vào đây."
+          }
         }
       ],
       "sfx": [],
@@ -943,7 +1307,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Já jsem sem přinesl tašku.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab eine Tasche reingebracht.",
+            "en": "I brought a bag.",
+            "fr": "J'ai apporté un sac.",
+            "it": "Ho portato una borsa.",
+            "ja": "俺が持ち込んだのはカバンだけだ。",
+            "ko": "내가 들고 온 건 가방이야.",
+            "pl": "Ja tu przyniosłem torbę.",
+            "pt-BR": "Eu trouxe uma mala.",
+            "ru": "Я принёс сумку.",
+            "uk": "Я приніс сумку.",
+            "vi": "Tao mang vào cái túi."
+          }
         }
       ],
       "sfx": [],
@@ -1001,7 +1378,20 @@
         {
           "speaker_id": "ol1n_prolog",
           "text": "Ta hra je dobrá. Dodělej ji.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Spiel ist gut. Mach es fertig.",
+            "en": "The game's good. Finish it.",
+            "fr": "Ton jeu est bon. Finis-le.",
+            "it": "Il gioco è bello. Finiscilo.",
+            "ja": "あのゲーム、いいよ。完成させろ。",
+            "ko": "그 게임 좋아. 완성해.",
+            "pl": "Ta gra jest dobra. Skończ ją.",
+            "pt-BR": "O jogo é bom. Termina ele.",
+            "ru": "Игра хорошая. Доделай её.",
+            "uk": "Гра добра. Дороби її.",
+            "vi": "Game đó hay. Làm cho xong đi."
+          }
         }
       ],
       "sfx": [],
@@ -1044,7 +1434,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Promiň.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Tut mir leid.",
+            "en": "Sorry.",
+            "fr": "Pardon.",
+            "it": "Scusa.",
+            "ja": "悪い。",
+            "ko": "미안.",
+            "pl": "Przepraszam.",
+            "pt-BR": "Desculpa.",
+            "ru": "Прости.",
+            "uk": "Пробач.",
+            "vi": "Xin lỗi."
+          }
         }
       ],
       "sfx": [],

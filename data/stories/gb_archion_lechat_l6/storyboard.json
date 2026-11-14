@@ -1,5 +1,18 @@
 {
   "title": "Zima: R.I.P.",
+  "title_i18n": {
+    "de": "Winter: R.I.P.",
+    "en": "Winter: R.I.P.",
+    "fr": "Hiver : R.I.P.",
+    "it": "Inverno: R.I.P.",
+    "ja": "冬：R.I.P.",
+    "ko": "겨울: R.I.P.",
+    "pl": "Zima: R.I.P.",
+    "pt-BR": "Inverno: R.I.P.",
+    "ru": "Зима: R.I.P.",
+    "uk": "Зима: R.I.P.",
+    "vi": "Mùa đông: R.I.P."
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -52,7 +65,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Kámo, chybět mi nebudeš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter, vermissen werd ich dich nicht.",
+            "en": "Buddy, I won't miss you.",
+            "fr": "Mec, tu me manqueras pas.",
+            "it": "Amico, non mi mancherai.",
+            "ja": "おい、お前がいなくても寂しくなんかねえよ。",
+            "ko": "야, 너 안 그리울 거야.",
+            "pl": "Stary, tęsknić za tobą nie będę.",
+            "pt-BR": "Mano, não vou sentir sua falta.",
+            "ru": "Братан, скучать по тебе я не буду.",
+            "uk": "Друже, сумувати за тобою я не буду.",
+            "vi": "Ông bạn, tao sẽ không nhớ mày đâu."
+          }
         }
       ],
       "sfx": [],
@@ -90,7 +116,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Když jsem byl ve svém životě nejhůř a hledal u tebe útočiště, vyhodil jsi mě po dvou dnech jak největšího fakana. To se nezapomíná.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Als es mir im Leben am dreckigsten ging und ich bei dir Zuflucht gesucht hab, hast du mich nach zwei Tagen rausgeschmissen wie den letzten Rotzlöffel. Das vergisst man nicht.",
+            "en": "When I was at my lowest in life and came to you for shelter, you threw me out after two days like the worst little punk. You don't forget that.",
+            "fr": "Quand j'étais au fond du trou et que je cherchais refuge chez toi, tu m'as jeté dehors au bout de deux jours comme le dernier des morveux. Ça s'oublie pas.",
+            "it": "Quando stavo peggio in vita mia e cercavo rifugio da te, mi hai sbattuto fuori dopo due giorni come l'ultimo dei mocciosi. Queste cose non si dimenticano.",
+            "ja": "人生で一番どん底の時にお前んとこに逃げ込んだら、二日で最低のクソガキみたいに追い出しやがった。あれは忘れねえ。",
+            "ko": "내 인생 최악일 때 너한테 기댈 곳 찾아갔더니, 이틀 만에 최악의 양아치처럼 쫓아냈지. 그건 안 잊혀.",
+            "pl": "Kiedy było ze mną w życiu najgorzej i szukałem u ciebie schronienia, wywaliłeś mnie po dwóch dniach jak ostatniego gnoja. Tego się nie zapomina.",
+            "pt-BR": "Quando eu tava no pior momento da vida e procurei abrigo com você, me expulsou depois de dois dias feito o pior moleque. Isso não se esquece.",
+            "ru": "Когда мне в жизни было хуже всего и я искал у тебя убежища, ты выгнал меня через два дня как последнего сопляка. Такое не забывается.",
+            "uk": "Коли мені в житті було найгірше і я шукав у тебе притулку, ти вигнав мене через два дні як останнього шмаркача. Таке не забувається.",
+            "vi": "Lúc đời tao tệ nhất, tao tìm đến mày nương nhờ, mày đuổi tao sau hai ngày như đuổi thằng ranh mạt hạng. Chuyện đó không quên được."
+          }
         }
       ],
       "sfx": [],
@@ -116,7 +155,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Ty umíš jen rozebrat člověku práci na kousky. A když jsi mi řekl, ať zahodím i ty čtyři roky vývoje, bylo mi jasný, co jsi zač.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kannst die Arbeit eines Menschen nur in Stücke zerlegen. Und als du mir gesagt hast, ich soll auch die vier Jahre Entwicklung wegwerfen, war mir klar, was du für einer bist.",
+            "en": "All you can do is pick a person's work to pieces. And when you told me to throw away those four years of dev too, I knew exactly what you were.",
+            "fr": "Toi, tu sais juste démolir le travail des gens morceau par morceau. Et quand tu m'as dit de jeter aussi ces quatre ans de dev, j'ai compris qui t'étais.",
+            "it": "Tu sai solo fare a pezzi il lavoro degli altri. E quando mi hai detto di buttare anche quei quattro anni di sviluppo, ho capito che razza di persona sei.",
+            "ja": "お前は人の仕事をバラバラにすることしかできねえ。あの4年分の開発も捨てろって言われた時、お前がどんな奴か分かったよ。",
+            "ko": "넌 남의 작업을 조각조각 뜯어내는 것밖에 못 해. 그 4년 개발도 버리라고 했을 때, 네가 어떤 놈인지 알았어.",
+            "pl": "Ty umiesz tylko rozebrać człowiekowi robotę na kawałki. A jak mi powiedziałeś, żebym wywalił też te cztery lata devu, było dla mnie jasne, kim jesteś.",
+            "pt-BR": "Você só sabe desmontar o trabalho dos outros em pedaços. E quando me disse pra jogar fora até os quatro anos de desenvolvimento, ficou claro quem você é.",
+            "ru": "Ты умеешь только разбирать чужую работу по кусочкам. А когда ты сказал мне выкинуть и эти четыре года разработки, мне стало ясно, что ты за человек.",
+            "uk": "Ти вмієш лише розбирати чужу роботу на шматки. А коли ти сказав мені викинути й ті чотири роки розробки, мені стало ясно, що ти за людина.",
+            "vi": "Mày chỉ giỏi xé vụn công sức người khác. Lúc mày bảo tao vứt luôn bốn năm phát triển, tao biết mày là loại người gì."
+          }
         }
       ],
       "sfx": [],
@@ -141,7 +193,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Nikdy jsi mě nenechal udělat nabídku na 50/50 revenue split, kterou jsem vždycky považoval za samozřejmost.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mich nie das Angebot eines 50/50-Revenue-Splits machen lassen, das für mich immer selbstverständlich war.",
+            "en": "You never let me make the 50/50 revenue split offer, which I always took for granted.",
+            "fr": "Tu m'as jamais laissé te faire l'offre d'un partage des revenus à 50/50, que j'ai toujours considéré comme une évidence.",
+            "it": "Non mi hai mai lasciato fare l'offerta di un revenue split 50/50, che ho sempre dato per scontata.",
+            "ja": "俺がずっと当たり前だと思ってた50/50の収益分配の提案、お前は一度もさせてくれなかった。",
+            "ko": "내가 늘 당연하게 여겼던 50/50 수익 분배 제안, 넌 한 번도 하게 두지 않았어.",
+            "pl": "Nigdy nie pozwoliłeś mi złożyć oferty revenue splitu 50/50, który zawsze uważałem za oczywistość.",
+            "pt-BR": "Você nunca me deixou fazer a oferta de dividir a receita 50/50, que eu sempre achei óbvia.",
+            "ru": "Ты ни разу не дал мне предложить раздел выручки 50/50, который я всегда считал само собой разумеющимся.",
+            "uk": "Ти жодного разу не дав мені запропонувати поділ виручки 50/50, який я завжди вважав чимось само собою зрозумілим.",
+            "vi": "Mày chưa bao giờ để tao đưa ra đề nghị chia doanh thu 50/50, thứ tao luôn coi là đương nhiên."
+          }
         }
       ],
       "sfx": [],
@@ -166,7 +231,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "Ta nabídka pořád platí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Angebot steht immer noch.",
+            "en": "The offer still stands.",
+            "fr": "L'offre tient toujours.",
+            "it": "L'offerta è ancora valida.",
+            "ja": "その提案はまだ有効だ。",
+            "ko": "그 제안은 아직 유효해.",
+            "pl": "Ta oferta wciąż jest aktualna.",
+            "pt-BR": "A oferta continua de pé.",
+            "ru": "Предложение всё ещё в силе.",
+            "uk": "Пропозиція досі в силі.",
+            "vi": "Lời đề nghị đó vẫn còn."
+          }
         }
       ],
       "sfx": [],
@@ -186,7 +264,20 @@
         {
           "speaker_id": "",
           "text": "NEBULON — R.I.P.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "NEBULON — R.I.P.",
+            "en": "NEBULON — R.I.P.",
+            "fr": "NEBULON — R.I.P.",
+            "it": "NEBULON — R.I.P.",
+            "ja": "NEBULON — R.I.P.",
+            "ko": "NEBULON — R.I.P.",
+            "pl": "NEBULON — R.I.P.",
+            "pt-BR": "NEBULON — R.I.P.",
+            "ru": "NEBULON — R.I.P.",
+            "uk": "NEBULON — R.I.P.",
+            "vi": "NEBULON — R.I.P."
+          }
         }
       ],
       "sfx": [],
@@ -211,7 +302,20 @@
         {
           "speaker_id": "ol1n_zima",
           "text": "R.I.P.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "R.I.P.",
+            "en": "R.I.P.",
+            "fr": "R.I.P.",
+            "it": "R.I.P.",
+            "ja": "R.I.P.",
+            "ko": "R.I.P.",
+            "pl": "R.I.P.",
+            "pt-BR": "R.I.P.",
+            "ru": "R.I.P.",
+            "uk": "R.I.P.",
+            "vi": "R.I.P."
+          }
         }
       ],
       "sfx": [],

@@ -1,5 +1,18 @@
 {
   "title": "Čas, který nejde vrátit",
+  "title_i18n": {
+    "de": "Zeit, die man nicht zurückholt",
+    "en": "Time You Can't Get Back",
+    "fr": "Le temps qu'on ne rattrape pas",
+    "it": "Il tempo che non torna",
+    "ja": "取り戻せない時間",
+    "ko": "되돌릴 수 없는 시간",
+    "pl": "Czas, którego nie da się cofnąć",
+    "pt-BR": "O tempo que não volta",
+    "ru": "Время, которое не вернуть",
+    "uk": "Час, який не повернути",
+    "vi": "Thời gian không thể quay lại"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -34,7 +47,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Víš, co je zvláštní? Když se podívám zpátky, vlastně nevím, kdy jsem měl naposledy opravdu klid.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Weißt du, was seltsam ist? Wenn ich zurückschaue, weiß ich eigentlich nicht, wann ich das letzte Mal wirklich Ruhe hatte.",
+            "en": "You know what's strange? When I look back, I don't actually know when I last had any real peace.",
+            "fr": "Tu sais ce qui est bizarre ? Quand je regarde en arrière, je ne sais même pas quand j'ai été vraiment tranquille pour la dernière fois.",
+            "it": "Sai cos'è strano? Se mi guardo indietro, non so nemmeno quando ho avuto davvero pace l'ultima volta.",
+            "ja": "不思議だよな。振り返ってみても、最後に本当に落ち着けたのがいつだったか、わからないんだ。",
+            "ko": "이상한 게 뭔지 알아? 돌아보면, 마지막으로 진짜 편했던 게 언제였는지 모르겠어.",
+            "pl": "Wiesz, co jest dziwne? Kiedy patrzę wstecz, właściwie nie wiem, kiedy ostatnio miałem naprawdę spokój.",
+            "pt-BR": "Sabe o que é estranho? Quando olho pra trás, nem sei quando foi a última vez que tive paz de verdade.",
+            "ru": "Знаешь, что странно? Оглядываюсь назад и не могу понять, когда у меня в последний раз был настоящий покой.",
+            "uk": "Знаєш, що дивно? Озираюся назад і не можу збагнути, коли в мене востаннє був справжній спокій.",
+            "vi": "Cậu biết điều gì lạ không? Nhìn lại, tớ chẳng biết lần cuối mình thực sự được yên là khi nào."
+          }
         }
       ],
       "sfx": [],
@@ -54,7 +80,20 @@
         {
           "speaker_id": "",
           "text": "2016. Narodila se dcera. 2018. Deset let práce skončilo.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "2016. Eine Tochter wurde geboren. 2018. Zehn Jahre Arbeit waren vorbei.",
+            "en": "2016. A daughter was born. 2018. Ten years of work came to an end.",
+            "fr": "2016. Une fille est née. 2018. Dix ans de travail ont pris fin.",
+            "it": "2016. È nata una figlia. 2018. Dieci anni di lavoro sono finiti.",
+            "ja": "2016年。娘が生まれた。2018年。十年の仕事が終わった。",
+            "ko": "2016년. 딸이 태어났다. 2018년. 10년 일한 직장이 끝났다.",
+            "pl": "2016. Urodziła się córka. 2018. Dziesięć lat pracy dobiegło końca.",
+            "pt-BR": "2016. Nasceu uma filha. 2018. Dez anos de trabalho chegaram ao fim.",
+            "ru": "2016. Родилась дочь. 2018. Десять лет работы закончились.",
+            "uk": "2016. Народилася донька. 2018. Десять років роботи скінчилися.",
+            "vi": "2016. Con gái chào đời. 2018. Mười năm làm việc khép lại."
+          }
         }
       ],
       "sfx": [],
@@ -74,7 +113,20 @@
         {
           "speaker_id": "",
           "text": "Pak další práce. Půl roku. Pak covid. Pak dvojčata.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Dann der nächste Job. Ein halbes Jahr. Dann Corona. Dann die Zwillinge.",
+            "en": "Then another job. Six months. Then covid. Then the twins.",
+            "fr": "Puis un autre boulot. Six mois. Puis le covid. Puis les jumelles.",
+            "it": "Poi un altro lavoro. Sei mesi. Poi il covid. Poi le gemelle.",
+            "ja": "それから次の仕事。半年。それからコロナ。それから双子。",
+            "ko": "그다음 또 다른 직장. 반년. 그다음 코로나. 그다음 쌍둥이.",
+            "pl": "Potem kolejna praca. Pół roku. Potem covid. Potem bliźniaczki.",
+            "pt-BR": "Depois outro emprego. Seis meses. Depois a covid. Depois as gêmeas.",
+            "ru": "Потом другая работа. Полгода. Потом ковид. Потом близнецы.",
+            "uk": "Потім інша робота. Пів року. Потім ковід. Потім близнючки.",
+            "vi": "Rồi công việc khác. Nửa năm. Rồi covid. Rồi cặp song sinh."
+          }
         }
       ],
       "sfx": [],
@@ -94,7 +146,20 @@
         {
           "speaker_id": "",
           "text": "Pak byt, který se rok rekonstruoval za provozu. Sbíječky, prach, křik, práce, domácnost.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Dann eine Wohnung, die ein Jahr lang im laufenden Betrieb renoviert wurde. Presslufthämmer, Staub, Geschrei, Arbeit, Haushalt.",
+            "en": "Then a flat renovated for a whole year while we lived in it. Jackhammers, dust, shouting, work, housework.",
+            "fr": "Puis un appart rénové pendant un an alors qu'on y vivait. Marteaux-piqueurs, poussière, cris, boulot, ménage.",
+            "it": "Poi un appartamento ristrutturato per un anno mentre ci vivevamo. Martelli pneumatici, polvere, urla, lavoro, casa.",
+            "ja": "それから、住みながら一年かけてリフォームした部屋。削岩機、ほこり、叫び声、仕事、家事。",
+            "ko": "그다음, 사는 채로 1년 동안 공사한 집. 착암기, 먼지, 고함, 일, 집안일.",
+            "pl": "Potem mieszkanie remontowane przez rok, kiedy w nim mieszkaliśmy. Młoty, pył, krzyki, praca, dom.",
+            "pt-BR": "Depois um apartamento reformado por um ano com a gente morando dentro. Britadeiras, poeira, gritaria, trabalho, casa.",
+            "ru": "Потом квартира, которую целый год ремонтировали, пока мы в ней жили. Перфораторы, пыль, крики, работа, быт.",
+            "uk": "Потім квартира, яку цілий рік ремонтували, поки ми в ній жили. Перфоратори, пил, крики, робота, побут.",
+            "vi": "Rồi căn hộ sửa suốt một năm trong lúc vẫn ở. Máy khoan, bụi, la hét, công việc, việc nhà."
+          }
         }
       ],
       "sfx": [],
@@ -113,7 +178,20 @@
         {
           "speaker_id": "",
           "text": "A pak další práce. Čtyři roky. A konec.",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Und dann der nächste Job. Vier Jahre. Und Schluss.",
+            "en": "And then another job. Four years. And the end.",
+            "fr": "Et puis un autre boulot. Quatre ans. Et fini.",
+            "it": "E poi un altro lavoro. Quattro anni. E la fine.",
+            "ja": "そしてまた次の仕事。四年。そして終わり。",
+            "ko": "그리고 또 다른 직장. 4년. 그리고 끝.",
+            "pl": "A potem kolejna praca. Cztery lata. I koniec.",
+            "pt-BR": "E depois outro emprego. Quatro anos. E o fim.",
+            "ru": "А потом ещё одна работа. Четыре года. И конец.",
+            "uk": "А потім ще одна робота. Чотири роки. І кінець.",
+            "vi": "Rồi lại công việc khác. Bốn năm. Và hết."
+          }
         }
       ],
       "sfx": [],
@@ -138,7 +216,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Člověk si pořád říká, že až se něco vyřeší, bude líp.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Man sagt sich ständig, wenn erst mal was geklärt ist, wird's besser.",
+            "en": "You keep telling yourself that once something gets sorted out, it'll get better.",
+            "fr": "On se dit toujours que, quand un truc sera réglé, ça ira mieux.",
+            "it": "Ti ripeti sempre che, quando una cosa si sistema, andrà meglio.",
+            "ja": "何かが片付けば楽になるって、ずっと自分に言い聞かせてた。",
+            "ko": "뭔가 해결되기만 하면 나아질 거라고 계속 생각하게 돼.",
+            "pl": "Człowiek ciągle sobie powtarza, że jak coś się rozwiąże, będzie lepiej.",
+            "pt-BR": "A gente vive dizendo que, quando tal coisa se resolver, vai melhorar.",
+            "ru": "Всё время говоришь себе: вот решится это — и станет легче.",
+            "uk": "Весь час кажеш собі: от вирішиться це — і стане легше.",
+            "vi": "Mình cứ tự nhủ, giải quyết xong chuyện này thì sẽ khá hơn."
+          }
         }
       ],
       "sfx": [],
@@ -162,7 +253,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Až bude dítě větší. Až najdu práci. Až skončí rekonstrukce. Až bude doma klid. Až bude trochu času.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn das Kind größer ist. Wenn ich einen Job finde. Wenn die Renovierung vorbei ist. Wenn zu Hause Ruhe ist. Wenn ich ein bisschen Zeit habe.",
+            "en": "When the kid's bigger. When I find a job. When the renovation's over. When it's quiet at home. When there's a bit of time.",
+            "fr": "Quand la petite sera plus grande. Quand j'aurai trouvé un boulot. Quand les travaux seront finis. Quand ce sera calme à la maison. Quand j'aurai un peu de temps.",
+            "it": "Quando la bimba sarà più grande. Quando troverò lavoro. Quando finirà la ristrutturazione. Quando a casa ci sarà pace. Quando avrò un po' di tempo.",
+            "ja": "子どもが大きくなったら。仕事が見つかったら。リフォームが終わったら。家が静かになったら。少し時間ができたら。",
+            "ko": "애가 좀 크면. 일자리 구하면. 공사 끝나면. 집이 조용해지면. 시간이 좀 생기면.",
+            "pl": "Jak dziecko podrośnie. Jak znajdę pracę. Jak skończy się remont. Jak w domu będzie spokój. Jak będzie trochę czasu.",
+            "pt-BR": "Quando a criança crescer. Quando eu arrumar emprego. Quando a reforma acabar. Quando tiver paz em casa. Quando sobrar um tempinho.",
+            "ru": "Когда ребёнок подрастёт. Когда найду работу. Когда закончится ремонт. Когда дома будет тихо. Когда появится немного времени.",
+            "uk": "Коли дитина підросте. Коли знайду роботу. Коли закінчиться ремонт. Коли вдома буде тихо. Коли з'явиться трохи часу.",
+            "vi": "Khi con lớn hơn. Khi tìm được việc. Khi sửa nhà xong. Khi nhà yên ổn. Khi có chút thời gian."
+          }
         }
       ],
       "sfx": [],
@@ -186,7 +290,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Jenže ono se vždycky objeví něco dalšího.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Nur taucht immer gleich das Nächste auf.",
+            "en": "But something else always shows up.",
+            "fr": "Sauf qu'il y a toujours autre chose qui arrive.",
+            "it": "Solo che salta sempre fuori qualcos'altro.",
+            "ja": "でも、いつだって次の何かが出てくるんだ。",
+            "ko": "근데 늘 또 다른 게 생기더라.",
+            "pl": "Tylko że zawsze pojawia się coś następnego.",
+            "pt-BR": "Só que sempre aparece outra coisa.",
+            "ru": "Только всегда появляется что-то ещё.",
+            "uk": "Тільки завжди з'являється щось іще.",
+            "vi": "Nhưng lúc nào cũng có chuyện khác xuất hiện."
+          }
         }
       ],
       "sfx": [],
@@ -226,7 +343,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "A pak jsem si sedl k počítači. Protože tam jsem mohl něco dokončit.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und dann hab ich mich an den Computer gesetzt. Weil ich dort etwas fertig machen konnte.",
+            "en": "And then I sat down at the computer. Because there I could finish something.",
+            "fr": "Et puis je me suis assis devant l'ordi. Parce que là, je pouvais finir quelque chose.",
+            "it": "E allora mi sedevo al computer. Perché lì potevo finire qualcosa.",
+            "ja": "それで、パソコンの前に座った。そこでなら何かを終わらせられたから。",
+            "ko": "그래서 컴퓨터 앞에 앉았어. 거기서는 뭔가를 끝낼 수 있었으니까.",
+            "pl": "I wtedy siadałem do komputera. Bo tam mogłem coś skończyć.",
+            "pt-BR": "E aí eu sentava no computador. Porque ali eu conseguia terminar alguma coisa.",
+            "ru": "И тогда я садился за компьютер. Потому что там я мог что-то довести до конца.",
+            "uk": "І тоді я сідав за комп'ютер. Бо там я міг щось довести до кінця.",
+            "vi": "Rồi tớ ngồi vào máy tính. Vì ở đó tớ có thể hoàn thành được một thứ gì đó."
+          }
         }
       ],
       "sfx": [],
@@ -250,7 +380,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Když jsem napsal funkci, fungovala. Když jsem opravil chybu, zmizela. Když něco nešlo, mohl jsem zjistit proč.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn ich eine Funktion schrieb, funktionierte sie. Wenn ich einen Bug fixte, war er weg. Wenn was nicht ging, konnte ich rausfinden, warum.",
+            "en": "When I wrote a function, it worked. When I fixed a bug, it was gone. When something didn't work, I could find out why.",
+            "fr": "Quand j'écrivais une fonction, elle marchait. Quand je corrigeais un bug, il disparaissait. Quand un truc ne marchait pas, je pouvais trouver pourquoi.",
+            "it": "Quando scrivevo una funzione, funzionava. Quando correggevo un bug, spariva. Quando qualcosa non andava, potevo capire perché.",
+            "ja": "関数を書けば動いた。バグを直せば消えた。うまくいかなければ、原因を突き止められた。",
+            "ko": "함수를 짜면 돌아갔어. 버그를 고치면 사라졌고. 뭐가 안 되면 왜 그런지 알아낼 수 있었어.",
+            "pl": "Kiedy napisałem funkcję, działała. Kiedy poprawiłem błąd, znikał. Kiedy coś nie szło, mogłem sprawdzić dlaczego.",
+            "pt-BR": "Quando eu escrevia uma função, ela funcionava. Quando corrigia um bug, ele sumia. Quando algo não dava certo, eu podia descobrir o porquê.",
+            "ru": "Если я писал функцию, она работала. Если исправлял баг, он исчезал. Если что-то не шло, я мог выяснить почему.",
+            "uk": "Якщо я писав функцію, вона працювала. Якщо виправляв баг, він зникав. Якщо щось не йшло, я міг з'ясувати чому.",
+            "vi": "Viết một hàm, nó chạy. Sửa một lỗi, nó biến mất. Có gì không chạy, tớ tìm ra được lý do."
+          }
         }
       ],
       "sfx": [],
@@ -274,7 +417,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "V životě to takhle nefungovalo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Im Leben lief das so nicht.",
+            "en": "Life didn't work like that.",
+            "fr": "Dans la vie, ça ne marchait pas comme ça.",
+            "it": "Nella vita non funzionava così.",
+            "ja": "人生は、そうはいかなかった。",
+            "ko": "인생은 그렇게 돌아가지 않았어.",
+            "pl": "W życiu to tak nie działało.",
+            "pt-BR": "Na vida não funcionava assim.",
+            "ru": "В жизни так не работало.",
+            "uk": "У житті так не працювало.",
+            "vi": "Ngoài đời thì không như vậy."
+          }
         }
       ],
       "sfx": [],
@@ -315,7 +471,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "A pak jsem potkal někoho, kdo deset let stavěl svůj vlastní svět. Myslel jsem, že mu pomůžu dostat ho ven.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und dann traf ich jemanden, der zehn Jahre lang seine eigene Welt gebaut hatte. Ich dachte, ich helfe ihm, sie rauszubringen.",
+            "en": "And then I met someone who'd spent ten years building his own world. I thought I'd help him get it out there.",
+            "fr": "Et puis j'ai rencontré quelqu'un qui construisait son propre monde depuis dix ans. Je pensais l'aider à le sortir.",
+            "it": "E poi ho incontrato qualcuno che da dieci anni costruiva il suo mondo. Pensavo di aiutarlo a farlo uscire.",
+            "ja": "そして、十年かけて自分の世界を作ってきた奴に出会った。それを世に出す手伝いをするつもりだった。",
+            "ko": "그러다 10년 동안 자기만의 세계를 만들어 온 사람을 만났어. 그걸 세상에 내놓게 도와주려고 했지.",
+            "pl": "A potem poznałem kogoś, kto przez dziesięć lat budował swój własny świat. Myślałem, że pomogę mu go wypuścić.",
+            "pt-BR": "E aí conheci alguém que passou dez anos construindo o próprio mundo. Achei que ia ajudar ele a lançar isso.",
+            "ru": "А потом я встретил человека, который десять лет строил свой собственный мир. Я думал, что помогу ему выпустить его.",
+            "uk": "А потім я зустрів людину, яка десять років будувала свій власний світ. Я думав, що допоможу йому його випустити.",
+            "vi": "Rồi tớ gặp một người đã dành mười năm xây thế giới của riêng mình. Tớ tưởng mình sẽ giúp anh ấy đưa nó ra mắt."
+          }
         }
       ],
       "sfx": [],
@@ -339,7 +508,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Možná jsem jen potřeboval postavit něco vlastního. Něco, co mi nikdo nevezme.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Vielleicht musste ich einfach etwas Eigenes bauen. Etwas, das mir niemand wegnimmt.",
+            "en": "Maybe I just needed to build something of my own. Something no one can take from me.",
+            "fr": "Peut-être que j'avais juste besoin de construire quelque chose à moi. Quelque chose que personne ne me prendra.",
+            "it": "Forse avevo solo bisogno di costruire qualcosa di mio. Qualcosa che nessuno mi porterà via.",
+            "ja": "たぶん俺は、自分のものを作りたかっただけなんだ。誰にも奪われないものを。",
+            "ko": "어쩌면 난 그냥 나만의 걸 만들어야 했던 건지도 몰라. 아무도 못 뺏어 가는 걸.",
+            "pl": "Może po prostu potrzebowałem zbudować coś własnego. Coś, czego nikt mi nie odbierze.",
+            "pt-BR": "Talvez eu só precisasse construir algo meu. Algo que ninguém tira de mim.",
+            "ru": "Может, мне просто нужно было построить что-то своё. То, что у меня никто не отнимет.",
+            "uk": "Може, мені просто треба було збудувати щось своє. Те, чого в мене ніхто не відбере.",
+            "vi": "Có lẽ tớ chỉ cần xây một thứ của riêng mình. Thứ không ai lấy mất được."
+          }
         }
       ],
       "sfx": [],
@@ -360,7 +542,20 @@
         {
           "speaker_id": "",
           "text": "Když já jsem ti pomáhal stavět tvůj svět, kdo mezitím pomáhal stavět ten můj?",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "Während ich dir geholfen habe, deine Welt zu bauen – wer hat mir inzwischen geholfen, meine zu bauen?",
+            "en": "While I was helping you build your world, who was helping me build mine?",
+            "fr": "Pendant que je t'aidais à construire ton monde, qui m'aidait à construire le mien ?",
+            "it": "Mentre io ti aiutavo a costruire il tuo mondo, chi aiutava me a costruire il mio?",
+            "ja": "俺がお前の世界作りを手伝ってた間、俺の世界は誰が手伝ってくれてた？",
+            "ko": "내가 네 세계를 만드는 걸 돕는 동안, 내 세계는 누가 같이 만들어 줬을까?",
+            "pl": "Kiedy ja pomagałem ci budować twój świat, kto w tym czasie pomagał budować mój?",
+            "pt-BR": "Enquanto eu te ajudava a construir o seu mundo, quem estava me ajudando a construir o meu?",
+            "ru": "Пока я помогал тебе строить твой мир, кто тем временем помогал строить мой?",
+            "uk": "Поки я допомагав тобі будувати твій світ, хто тим часом допомагав будувати мій?",
+            "vi": "Khi tớ giúp cậu xây thế giới của cậu, thì ai giúp tớ xây thế giới của tớ?"
+          }
         }
       ],
       "sfx": [],
@@ -385,7 +580,20 @@
         {
           "speaker_id": "ol1n_zahrada",
           "text": "Tak pojďme na to.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Also, legen wir los.",
+            "en": "Okay. Let's do this.",
+            "fr": "Bon. Allons-y.",
+            "it": "Allora, cominciamo.",
+            "ja": "よし、始めるか。",
+            "ko": "자, 시작하자.",
+            "pl": "No to do roboty.",
+            "pt-BR": "Então, bora lá.",
+            "ru": "Ну что, поехали.",
+            "uk": "Ну що, поїхали.",
+            "vi": "Nào, bắt đầu thôi."
+          }
         }
       ],
       "sfx": [],
@@ -405,7 +613,20 @@
         {
           "speaker_id": "",
           "text": "ARCHION – BUILD STARTED",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "ARCHION – BUILD STARTED",
+            "en": "ARCHION – BUILD STARTED",
+            "fr": "ARCHION – BUILD STARTED",
+            "it": "ARCHION – BUILD STARTED",
+            "ja": "ARCHION – BUILD STARTED",
+            "ko": "ARCHION – BUILD STARTED",
+            "pl": "ARCHION – BUILD STARTED",
+            "pt-BR": "ARCHION – BUILD STARTED",
+            "ru": "ARCHION – BUILD STARTED",
+            "uk": "ARCHION – BUILD STARTED",
+            "vi": "ARCHION – BUILD STARTED"
+          }
         }
       ],
       "sfx": [],

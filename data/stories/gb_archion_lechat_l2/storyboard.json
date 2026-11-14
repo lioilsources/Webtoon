@@ -1,5 +1,18 @@
 {
   "title": "Léto: V titulcích",
+  "title_i18n": {
+    "de": "Sommer: Im Abspann",
+    "en": "Summer: In the Credits",
+    "fr": "Été : Dans le générique",
+    "it": "Estate: Nei titoli di coda",
+    "ja": "夏：クレジットに",
+    "ko": "여름: 크레딧에",
+    "pl": "Lato: W napisach",
+    "pt-BR": "Verão: Nos créditos",
+    "ru": "Лето: В титрах",
+    "uk": "Літо: У титрах",
+    "vi": "Mùa hè: Trong phần credit"
+  },
   "panels": [
     {
       "shot": "establishing",
@@ -54,7 +67,20 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "Jak to máš s tím příjmem? Koukám, že mi furt visíš peníze. Teď by se mi něco hodilo zpátky.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie sieht's bei dir mit Einkommen aus? Du schuldest mir ja immer noch Geld. Ich könnte gerade was davon zurück gebrauchen.",
+            "en": "How's the income thing going? Looks like you still owe me money. I could use some of it back right now.",
+            "fr": "T'en es où côté revenus ? Je vois que tu me dois toujours de l'argent. Là, j'en récupérerais bien un peu.",
+            "it": "Come va con le entrate? Vedo che mi devi ancora dei soldi. Adesso me ne servirebbe indietro un po'.",
+            "ja": "収入のほうはどうなんだ？まだ俺に金借りっぱなしだよな。今ちょっと返してもらえると助かるんだけど。",
+            "ko": "수입은 좀 어때? 보니까 너 아직 나한테 돈 빚졌더라. 지금 좀 돌려받으면 좋겠는데.",
+            "pl": "Jak tam z dochodem? Widzę, że dalej wisisz mi kasę. Teraz przydałoby mi się coś z powrotem.",
+            "pt-BR": "Como tá a grana entrando? Vejo que você ainda me deve. Agora viria bem uma parte de volta.",
+            "ru": "Как у тебя с доходом? Смотрю, ты мне всё ещё должен. Сейчас бы мне что-нибудь вернуть.",
+            "uk": "Як у тебе з доходом? Бачу, ти мені досі винен гроші. Зараз би мені щось повернути.",
+            "vi": "Thu nhập của mày sao rồi? Tao thấy mày vẫn nợ tao tiền. Giờ tao đang cần lấy lại ít."
+          }
         }
       ],
       "sfx": [],
@@ -93,7 +119,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Cože? Tolik to určitě není, spíš míň. Však sám jsi mi tenkrát dal strop. Všechno šlo do Nebulonu a teď nevím, co vlastně chci dělat.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Was? So viel ist es bestimmt nicht, eher weniger. Du hast mir damals doch selbst ein Limit gesetzt. Alles ging in Nebulon, und jetzt weiß ich nicht, was ich eigentlich machen will.",
+            "en": "What? It's definitely not that much, less if anything. You set me a cap yourself back then. Everything went into Nebulon and now I don't know what I even want to do.",
+            "fr": "Quoi ? C'est sûrement pas autant, plutôt moins. C'est toi qui m'avais fixé un plafond à l'époque. Tout est passé dans Nebulon et maintenant je sais pas ce que je veux faire.",
+            "it": "Cosa? Non è certo così tanto, semmai meno. Il tetto me l'avevi messo tu, all'epoca. È finito tutto in Nebulon e ora non so cosa voglio fare.",
+            "ja": "は？そんなにあるわけないだろ、もっと少ない。あの時お前が上限決めたんじゃん。全部Nebulonにつぎ込んで、今は自分が何したいのかも分かんねえ。",
+            "ko": "뭐? 그렇게 많을 리가 없어, 오히려 적지. 그때 네가 한도 정해줬잖아. 전부 Nebulon에 들어갔고 이제 뭘 하고 싶은지도 모르겠어.",
+            "pl": "Co? Na pewno nie tyle, raczej mniej. Sam mi wtedy dałeś limit. Wszystko poszło w Nebulon i teraz nie wiem, co właściwie chcę robić.",
+            "pt-BR": "Quê? Com certeza não é tudo isso, é menos. Você mesmo me deu um teto na época. Foi tudo pro Nebulon e agora nem sei o que quero fazer.",
+            "ru": "Что? Точно не столько, скорее меньше. Ты же сам мне тогда поставил потолок. Всё ушло в Nebulon, и теперь я не знаю, чем вообще хочу заниматься.",
+            "uk": "Що? Точно не стільки, радше менше. Ти ж сам мені тоді поставив стелю. Усе пішло в Nebulon, і тепер я не знаю, чим узагалі хочу займатися.",
+            "vi": "Hả? Chắc chắn không nhiều thế, còn ít hơn. Hồi đó chính mày đặt giới hạn cho tao mà. Tất cả đổ vào Nebulon rồi, giờ tao chả biết mình muốn làm gì."
+          }
         }
       ],
       "sfx": [],
@@ -117,7 +156,20 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "Nepospíchám, jen mě zajímá, jestli to řešíš.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab's nicht eilig, mich interessiert nur, ob du dich drum kümmerst.",
+            "en": "No rush, I just want to know if you're dealing with it.",
+            "fr": "Je suis pas pressé, je veux juste savoir si tu t'en occupes.",
+            "it": "Non ho fretta, voglio solo sapere se te ne stai occupando.",
+            "ja": "急いでねえよ。ちゃんと考えてるのか知りたいだけ。",
+            "ko": "급한 건 아니야. 그냥 해결할 생각은 있는지 궁금해서.",
+            "pl": "Nie spieszy mi się, tylko ciekawi mnie, czy się tym zajmujesz.",
+            "pt-BR": "Não tô com pressa, só quero saber se você tá resolvendo.",
+            "ru": "Я не тороплю, просто интересно, ты этим занимаешься или нет.",
+            "uk": "Я не поспішаю, просто цікаво, чи ти цим займаєшся.",
+            "vi": "Tao không vội, chỉ muốn biết mày có đang lo vụ đó không."
+          }
         }
       ],
       "sfx": [],
@@ -135,7 +187,20 @@
         {
           "speaker_id": "",
           "text": "DLUHY",
-          "kind": "narration"
+          "kind": "narration",
+          "i18n": {
+            "de": "SCHULDEN",
+            "en": "DEBTS",
+            "fr": "DETTES",
+            "it": "DEBITI",
+            "ja": "借金",
+            "ko": "빚",
+            "pl": "DŁUGI",
+            "pt-BR": "DÍVIDAS",
+            "ru": "ДОЛГИ",
+            "uk": "БОРГИ",
+            "vi": "NỢ NẦN"
+          }
         }
       ],
       "sfx": [],
@@ -160,7 +225,20 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "Jednou. Podruhé. Potřetí.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Einmal. Zweimal. Dreimal.",
+            "en": "Once. Twice. Three times.",
+            "fr": "Une fois. Deux fois. Trois fois.",
+            "it": "Una volta. Due. Tre.",
+            "ja": "一回。二回。三回。",
+            "ko": "한 번. 두 번. 세 번.",
+            "pl": "Raz. Drugi. Trzeci.",
+            "pt-BR": "Uma vez. Duas. Três.",
+            "ru": "Раз. Второй. Третий.",
+            "uk": "Раз. Удруге. Утретє.",
+            "vi": "Một lần. Hai lần. Ba lần."
+          }
         }
       ],
       "sfx": [],
@@ -196,7 +274,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Zkusím najít, co jsme si tehdy psali. Bylo by fajn to uzavřít.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich such mal raus, was wir uns damals geschrieben haben. Wär gut, das abzuschließen.",
+            "en": "I'll try to dig up what we wrote back then. Be good to close this out.",
+            "fr": "Je vais essayer de retrouver ce qu'on s'était écrit. Ce serait bien de clore ça.",
+            "it": "Provo a ritrovare quello che ci eravamo scritti. Sarebbe bello chiuderla.",
+            "ja": "あの時やり取りしたの探してみるわ。ケリつけられたらいいな。",
+            "ko": "그때 우리가 주고받은 거 찾아볼게. 정리하면 좋겠다.",
+            "pl": "Spróbuję znaleźć, co sobie wtedy pisaliśmy. Fajnie by było to zamknąć.",
+            "pt-BR": "Vou tentar achar o que a gente escreveu na época. Seria bom encerrar isso.",
+            "ru": "Попробую найти, что мы тогда друг другу писали. Хорошо бы это закрыть.",
+            "uk": "Спробую знайти, що ми тоді одне одному писали. Добре б це закрити.",
+            "vi": "Để tao tìm lại mấy cái hồi đó mình nhắn. Chốt vụ này cho xong thì tốt."
+          }
         }
       ],
       "sfx": [],
@@ -221,12 +312,38 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "O penězích na release Nebulonu, který se nikdy neuskutečnil, snad raději ani mluvit nebudu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Über das Geld für den Nebulon-Release, der nie stattgefunden hat, red ich lieber gar nicht erst.",
+            "en": "As for the money for the Nebulon release that never happened, I'd rather not even go there.",
+            "fr": "L'argent pour la sortie de Nebulon qui n'a jamais eu lieu, je préfère même pas en parler.",
+            "it": "Dei soldi per il release di Nebulon, che non c'è mai stato, preferisco non parlare nemmeno.",
+            "ja": "一度も出なかったNebulonのリリース資金の話は、もうしないでおくわ。",
+            "ko": "한 번도 안 나온 Nebulon 릴리스 돈 얘기는 차라리 꺼내지도 않을게.",
+            "pl": "O kasie na release Nebulonu, który nigdy się nie odbył, wolę nawet nie mówić.",
+            "pt-BR": "Do dinheiro pro lançamento do Nebulon, que nunca aconteceu, prefiro nem falar.",
+            "ru": "О деньгах на релиз Nebulon, которого так и не было, я лучше вообще промолчу.",
+            "uk": "Про гроші на реліз Nebulon, якого так і не було, я краще взагалі змовчу.",
+            "vi": "Còn tiền cho vụ ra mắt Nebulon chưa bao giờ diễn ra thì thôi, tao chẳng buồn nhắc."
+          }
         },
         {
           "speaker_id": "ol1n_leto",
           "text": "Beru to tak, že mi za to dáváš svolení releasnout svůj vlastní projekt.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehm das mal so, dass du mir dafür die Erlaubnis gibst, mein eigenes Projekt zu releasen.",
+            "en": "I'll take it that in return you're giving me permission to release my own project.",
+            "fr": "Je considère qu'en échange tu me donnes le feu vert pour sortir mon propre projet.",
+            "it": "La prendo come se in cambio mi dessi il permesso di rilasciare il mio progetto.",
+            "ja": "その代わり、俺が自分のプロジェクトをリリースしていいってことだと受け取っとく。",
+            "ko": "그 대신 내 프로젝트를 릴리스해도 된다고 허락한 걸로 알게.",
+            "pl": "Traktuję to tak, że w zamian dajesz mi zgodę na release mojego własnego projektu.",
+            "pt-BR": "Vou entender que, em troca, você me dá permissão pra lançar meu próprio projeto.",
+            "ru": "Считаю, что взамен ты даёшь мне добро зарелизить мой собственный проект.",
+            "uk": "Вважаю, що натомість ти даєш мені дозвіл зарелізити мій власний проєкт.",
+            "vi": "Tao coi như đổi lại mày cho phép tao ra mắt dự án của chính tao."
+          }
         }
       ],
       "sfx": [],
@@ -268,12 +385,38 @@
         {
           "speaker_id": "kosmo",
           "text": "To teda ne. Přepisovat jsi to začal ty, z vlastní hlavy. Dal jsi mi pár korun na rozjezd, na hru je to nic. Koncept má mnohem větší cenu.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ganz sicher nicht. Umschreiben hast du angefangen, aus eigenem Kopf. Du hast mir ein paar Kröten zum Anschub gegeben, für ein Spiel ist das nichts. Das Konzept ist viel mehr wert.",
+            "en": "Hell no. You started rewriting it, off your own bat. You gave me a few bucks to get going, that's nothing for a game. The concept is worth way more.",
+            "fr": "Certainement pas. C'est toi qui as commencé à le réécrire, de ton propre chef. Tu m'as filé quelques sous pour démarrer, pour un jeu c'est rien. Le concept vaut bien plus.",
+            "it": "Col cavolo. A riscriverlo hai cominciato tu, di testa tua. Mi hai dato due spiccioli per partire, per un gioco sono niente. Il concept vale molto di più.",
+            "ja": "冗談じゃねえ。書き直し始めたのはお前だろ、勝手に。立ち上げに小銭くれただけで、ゲームにとっちゃ何でもない。コンセプトの方がずっと価値がある。",
+            "ko": "절대 아니지. 다시 짜기 시작한 건 너야, 네 맘대로. 시작하라고 푼돈 좀 준 거잖아, 게임 하나에 그건 아무것도 아니야. 콘셉트가 훨씬 값어치 있어.",
+            "pl": "No chyba nie. Przepisywać zacząłeś ty, z własnej głowy. Dałeś mi parę groszy na rozruch, na grę to nic. Koncept jest wart dużo więcej.",
+            "pt-BR": "Nem a pau. Quem começou a reescrever foi você, por conta própria. Você me deu uns trocados pra começar, pra um jogo isso é nada. O conceito vale muito mais.",
+            "ru": "Ну уж нет. Переписывать начал ты, сам, из своей головы. Дал мне пару копеек на старт, для игры это ничто. Концепт стоит гораздо больше.",
+            "uk": "Ну вже ні. Переписувати почав ти, сам, зі своєї голови. Дав мені кілька копійок на старт, для гри це ніщо. Концепт вартий набагато більше.",
+            "vi": "Còn lâu. Chính mày bắt đầu viết lại, tự ý. Mày đưa tao mấy đồng khởi động, với một game thì chả là gì. Ý tưởng mới đáng giá hơn nhiều."
+          }
         },
         {
           "speaker_id": "kosmo",
           "text": "A nebyl jsi v tom sám.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Und du warst nicht der Einzige.",
+            "en": "And you weren't the only one.",
+            "fr": "Et t'étais pas le seul.",
+            "it": "E non eri l'unico.",
+            "ja": "それにお前一人じゃなかった。",
+            "ko": "그리고 너 혼자도 아니었고.",
+            "pl": "I nie byłeś w tym sam.",
+            "pt-BR": "E você não era o único.",
+            "ru": "И ты был не один.",
+            "uk": "І ти був не сам.",
+            "vi": "Mà mày cũng đâu phải người duy nhất."
+          }
         }
       ],
       "sfx": [],
@@ -312,7 +455,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Jestli chceš Nebulon vydat, můžeme se nějak domluvit. Na to máš právo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn du Nebulon rausbringen willst, können wir uns irgendwie einigen. Das Recht hast du.",
+            "en": "If you want to put Nebulon out, we can work something out. You've got the right.",
+            "fr": "Si tu veux sortir Nebulon, on peut s'arranger. T'en as le droit.",
+            "it": "Se vuoi pubblicare Nebulon, possiamo metterci d'accordo. Ne hai il diritto.",
+            "ja": "Nebulonを出したいなら、何とか話はつけられる。お前にはその権利がある。",
+            "ko": "Nebulon 내고 싶으면 어떻게든 합의할 수 있어. 너한테 그럴 권리는 있지.",
+            "pl": "Jak chcesz wydać Nebulon, możemy się jakoś dogadać. Masz do tego prawo.",
+            "pt-BR": "Se você quer lançar o Nebulon, a gente pode chegar num acordo. Você tem direito.",
+            "ru": "Если хочешь выпустить Nebulon, можем как-то договориться. Право у тебя есть.",
+            "uk": "Якщо хочеш випустити Nebulon, можемо якось домовитися. Право в тебе є.",
+            "vi": "Nếu mày muốn phát hành Nebulon thì mình thỏa thuận kiểu gì đó. Mày có quyền mà."
+          }
         }
       ],
       "sfx": [],
@@ -337,7 +493,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Mě to celý stálo strašný peníze. A to jsem ještě skromnej.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Mich hat das alles ein Schweinegeld gekostet. Und da bin ich noch bescheiden.",
+            "en": "The whole thing cost me a shitload of money. And I'm being modest.",
+            "fr": "Moi, tout ça m'a coûté une fortune. Et je reste modeste.",
+            "it": "A me tutto questo è costato un sacco di soldi. E sono pure modesto.",
+            "ja": "俺には全部でとんでもない金がかかったんだ。これでも控えめに言ってる。",
+            "ko": "나한텐 이거 전부 엄청난 돈이 들었어. 이것도 겸손하게 말한 거야.",
+            "pl": "Mnie to wszystko kosztowało kupę kasy. A i tak jestem skromny.",
+            "pt-BR": "Pra mim tudo isso custou uma grana absurda. E olha que tô sendo modesto.",
+            "ru": "Мне всё это стоило кучу бабла. И это я ещё скромничаю.",
+            "uk": "Мені все це коштувало купу грошей. І це я ще скромничаю.",
+            "vi": "Tao thì tốn cả đống tiền cho vụ này. Mà tao còn nói khiêm tốn đấy."
+          }
         }
       ],
       "sfx": [],
@@ -377,7 +546,20 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "Asi tě dám jenom do titulků, sorry.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schreib dich wohl nur in den Abspann, sorry.",
+            "en": "Guess I'll just put you in the credits, sorry.",
+            "fr": "Je crois que je vais juste te mettre dans le générique, désolé.",
+            "it": "Credo che ti metterò solo nei titoli di coda, sorry.",
+            "ja": "お前はクレジットに載せるだけにしとくわ、悪いな。",
+            "ko": "넌 그냥 크레딧에만 넣을게, 미안.",
+            "pl": "Chyba dam cię tylko do napisów, sorry.",
+            "pt-BR": "Acho que vou só te colocar nos créditos, foi mal.",
+            "ru": "Пожалуй, просто впишу тебя в титры, сорян.",
+            "uk": "Мабуть, просто впишу тебе в титри, сорі.",
+            "vi": "Chắc tao chỉ cho mày vào phần credit thôi, xin lỗi."
+          }
         }
       ],
       "sfx": [],
@@ -402,7 +584,20 @@
         {
           "speaker_id": "kosmo",
           "text": "Kámo, jdi do háje.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter, hau ab.",
+            "en": "Buddy, get lost.",
+            "fr": "Mec, va te faire voir.",
+            "it": "Amico, vai al diavolo.",
+            "ja": "おい、消えろ。",
+            "ko": "야, 꺼져.",
+            "pl": "Stary, idź do diabła.",
+            "pt-BR": "Mano, vai pro inferno.",
+            "ru": "Братан, иди к чёрту.",
+            "uk": "Друже, йди до біса.",
+            "vi": "Ông bạn, biến đi."
+          }
         }
       ],
       "sfx": [],
@@ -427,7 +622,20 @@
         {
           "speaker_id": "ol1n_leto",
           "text": "Teď sis to poprvé trefil, kámo.",
-          "kind": "speech"
+          "kind": "speech",
+          "i18n": {
+            "de": "Zum ersten Mal hast du's getroffen, Alter.",
+            "en": "First time you've nailed it, buddy.",
+            "fr": "Pour une fois, t'as visé juste, mec.",
+            "it": "Per la prima volta ci hai preso, amico.",
+            "ja": "初めて的を射たな、おい。",
+            "ko": "이번엔 처음으로 제대로 맞혔네, 야.",
+            "pl": "Pierwszy raz trafiłeś, stary.",
+            "pt-BR": "Pela primeira vez você acertou, mano.",
+            "ru": "Первый раз в точку, братан.",
+            "uk": "Уперше влучив, друже.",
+            "vi": "Lần đầu mày nói trúng đấy, ông bạn."
+          }
         }
       ],
       "sfx": [],
