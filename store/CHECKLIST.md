@@ -11,7 +11,7 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
 
 ## Before either store
 
-- [x] Privacy policy filled in (ol1n, oldrich.vorechovsky.jr@gmail.com, effective 2026-11-05) and written as
+- [x] Privacy policy filled in (ol1n, business@olin.now, effective 2026-11-05) and written as
       `docs/privacy.html`, with `docs/support.html` and `docs/index.html` (same layout as MirrorBooth / Kiran).
 - [x] Publish them (live, HTTP 200): merge to `main`, then GitHub Pages for this repo from `main` `/docs`. URLs:
       privacy https://lioilsources.github.io/Webtoon/privacy.html · support https://lioilsources.github.io/Webtoon/support.html
@@ -30,7 +30,9 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
       pt-BR, ja, ko, vi, ru, uk). Primary language: decide between cs and en-US.
 - [ ] Category: Books (primary) and Entertainment (secondary). **Not** Kids.
 - [ ] Age Rating questionnaire per `age-rating.md` → 16+ (override if needed). Made for Kids: No.
-- [ ] App Privacy: "Data Not Collected".
+- [ ] App Privacy: per `privacy-answers.md` (anonymous statistics: Usage Data → Product Interaction and
+      Diagnostics → Performance Data, Analytics, not linked, no tracking). Until the statistics are switched on
+      (`TELEMETRY_KEY` set) the old answer "Data Not Collected" stays true; change it before the first build with a key.
 - [ ] Version page per locale: description, keywords, promotional text, release notes ("What's New" is hidden on the
       first version; keep the text for 1.0.1), support URL.
 - [ ] Screenshots: **iPhone 6.9"** (1320×2868 or 1290×2796 portrait), 3–10 per locale (the localized UI matters most
@@ -53,8 +55,9 @@ Texts: `listing/<locale>/` (check with `python3 store/check_listing.py`). Rating
       at least 1080 px on the short side recommended); **7" tablet** and **10" tablet** screenshots (needed for the
       tablet listing).
 - [ ] Category: Comics. Tags: comics, books, interactive stories.
-- [ ] App content: privacy policy URL; **Data safety**: "No data collected", "No data shared". Data is not encrypted in
-      transit to us because nothing is sent to us, and there is no account to delete. **Ads**: No. **App access**: all
+- [ ] App content: privacy policy URL; **Data safety** per `privacy-answers.md` (App activity → App interactions,
+      App info and performance → Diagnostics; collected, not shared, optional, Analytics, encrypted in transit; no
+      account to delete). Until the statistics are switched on, "No data collected" stays true. **Ads**: No. **App access**: all
       functionality available without special access (put the review notes there). **Content rating** (IARC) per
       `age-rating.md`. **Target audience**: 16+ (or 13+), no children's groups. **News app**: No. **Government app**:
       No. **Financial features**: none. **Health**: No **[?]** (the drama mentions health but the app has no health
