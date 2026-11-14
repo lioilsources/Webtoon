@@ -2068,19 +2068,17 @@
       "prediction": "eps",
       "artist_tags": [],
       "aesthetic_tags": [
-        "pixel art",
-        "(16-bit pixel art:1.2)",
-        "dithering",
+        "anime illustration",
+        "clean lineart",
+        "retro game cutscene art",
+        "simple shapes",
+        "flat colors",
         "limited palette",
-        "crisp pixels",
-        "retro game scene",
         "lighting and colours from the location"
       ],
       "quality_pos": [
         "masterpiece",
         "best quality",
-        "absurdres",
-        "highres",
         "adult proportions",
         "detailed faces"
       ],
@@ -2214,21 +2212,19 @@
       "cfg": 5.0
     },
     "archion_ligne": {
-      "checkpoint": "Illustrious-XL-v2.0.safetensors",
+      "checkpoint": "HassakuXL_Illustrious_v3.4.safetensors",
       "prediction": "eps",
       "artist_tags": [
-        "(ligne claire:1.35)",
-        "(herge style:1.1)"
+        "(bande dessinee:1.3)",
+        "(watercolor (medium):1.2)"
       ],
       "aesthetic_tags": [
-        "ligne claire",
+        "traditional media",
+        "ink outlines",
         "european comics",
-        "bande dessinee",
-        "flat color",
-        "clean lineart",
-        "uniform line weight",
-        "no hatching",
-        "bright colors"
+        "soft watercolor washes",
+        "realistic proportions",
+        "lighting and colours from the location"
       ],
       "quality_pos": [
         "masterpiece",
@@ -2260,7 +2256,10 @@
         "big eyes",
         "shading",
         "gradient",
-        "cel shading"
+        "cel shading",
+        "moe",
+        "chibi",
+        "bishounen"
       ],
       "sampler": "euler_ancestral",
       "scheduler": "normal",
@@ -2273,11 +2272,11 @@
       "natural": true,
       "artist_tags": [],
       "aesthetic_tags": [
-        "(courtroom sketch:1.5)",
-        "(loose pastel sketch on toned paper:1.3)",
-        "quick confident strokes",
-        "visible paper texture",
-        "unfinished edges",
+        "(rough courtroom sketch:1.5)",
+        "quick loose pastel and charcoal lines",
+        "large areas of bare paper",
+        "unfinished sketchy edges",
+        "gestural strokes",
         "lighting and colours from the location"
       ],
       "quality_pos": [
@@ -2312,12 +2311,16 @@
         "oil painting",
         "finished painting",
         "smooth rendering",
-        "digital painting"
+        "digital painting",
+        "photograph",
+        "photorealistic",
+        "detailed rendering",
+        "finished artwork"
       ],
       "sampler": "dpmpp_2m",
       "scheduler": "karras",
       "steps": 30,
-      "cfg": 5.0
+      "cfg": 4.0
     }
   },
   "always_negative": [
