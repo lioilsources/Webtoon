@@ -1,0 +1,224 @@
+{
+ "id": "w_archion",
+ "title": "Archion: Konec jednoho přátelství",
+ "synopsis": "Jeden podzim dvou kamarádů: snílek v neonovém bunkru a táta na zahradě plné dětí. Spor o peníze a o hru, kterou chtěli udělat spolu, skončí tichem.",
+ "tone": "hořký, ironický, lidský",
+ "audience": "adult",
+ "language": "cs",
+ "style_id": "noir_graphic",
+ "profile": "noir",
+ "bible": {
+  "rules": [
+   "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: bunkr a zahrada jsou dvě poloviny jeviště.",
+   "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+   "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách."
+  ],
+  "factions": []
+ },
+ "canon": {
+  "nodes": [],
+  "constraints": [
+   "Přátelství skončí; Ol1n zavře notebook a jde za dětmi, Kosmovi zhasne poslední pixel."
+  ]
+ },
+ "permissions": {
+  "allowed_locations": [
+   "l_bunkr_1", "l_zahrada_1", "l_bunkr_2", "l_zahrada_2", "l_bunkr_3", "l_zahrada_3", "l_dum_3",
+   "l_bunkr_4", "l_zahrada_4", "l_okno_4"
+  ]
+ },
+ "characters": [
+  {
+   "id": "kosmo",
+   "name": "Kosmo",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, messy tousled blond hair sticking out, stubble, unkempt, tired eyes, pale skin",
+   "outfits": {"default": "worn chunky wool sweater, faded old trousers"},
+   "photo": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, messy tousled blond hair sticking out, stubble, unkempt, tired eyes, pale skin, worn chunky wool sweater, faded old trousers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_jaro",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in a light shirt in spring sun",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses",
+   "outfits": {"default": "light linen shirt with rolled-up sleeves, jeans"},
+   "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses, light linen shirt with rolled-up sleeves, jeans",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_podzim",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in an autumn jacket",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses",
+   "outfits": {"default": "dark green zip-up field jacket over a grey sweater, jeans"},
+   "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses, dark green zip-up field jacket over a grey sweater, jeans",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_zima",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in a warm knitted sweater indoors",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses",
+   "outfits": {"default": "thick grey knitted sweater"},
+   "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses, thick grey knitted sweater",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dcera_9",
+   "name": "Nejstarší dcera",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "base": "child, girl, light brown hair, long braid, brown eyes",
+   "outfits": {"default": "lavender long-sleeved t-shirt, denim overalls, long pants, sneakers"},
+   "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, lavender long-sleeved t-shirt, denim overalls, long pants, sneakers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dcera_5",
+   "name": "Nejmladší dcera",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a little Czech girl aged 5 with blonde pigtails, rosy cheeks and blue eyes, in an autumn jacket",
+   "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+   "outfits": {"default": "yellow autumn jacket, long pants, rubber boots"},
+   "photo": "a little Czech girl aged 5 with blonde pigtails, rosy cheeks and blue eyes",
+   "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, yellow autumn jacket, long pants, rubber boots",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dvojcata_5",
+   "name": "Dvojčata",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "2girls",
+   "human": true,
+   "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+   "outfits": {"default": "matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers"},
+   "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dvojcata_zima",
+   "name": "Dvojčata",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "2girls",
+   "human": true,
+   "description": "two identical Czech twin girls aged 5 with blonde pigtails under knitted hats, rosy cheeks and laughing blue eyes, in winter clothes",
+   "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+   "outfits": {"default": "matching pink and blue winter snowsuits, knitted hats, mittens, snow boots"},
+   "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue winter snowsuits, knitted hats, mittens, snow boots",
+   "identity_level": "prompt",
+   "reference_images": []
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_bunkr_1",
+   "name": "Bunkr – 1. dějství",
+   "description": "Podzemní místnost, blikající neony, hučící ventilátory, hromady grafických karet.",
+   "tag_prompt": "indoors, dark underground bunker room, flickering blue and magenta neon tubes, humming cooling fans, stacks of graphics cards and old computers, old discs, piles of electronic parts, cables everywhere, heavy stale air, monitor glow, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_1",
+   "name": "Zahrada – 1. dějství",
+   "description": "Prosluněná zahrada, rozkvetlé stromy, bzučení včel.",
+   "tag_prompt": "outdoors, sunny family garden in spring, blossoming fruit trees, fresh green grass, bees, wooden garden table, bright warm daylight, soft shadows",
+   "mood": ""
+  },
+  {
+   "id": "l_bunkr_2",
+   "name": "Bunkr – 2. dějství",
+   "description": "Bunkr plný plechovek od energetických nápojů.",
+   "tag_prompt": "indoors, dark underground bunker room, neon tubes, stacks of computers, desk littered with empty energy drink cans, monitor glow, cables, stale air, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_2",
+   "name": "Zahrada – 2. dějství",
+   "description": "Listí žloutne a pomalu opadává.",
+   "tag_prompt": "outdoors, family garden in late summer, yellowing leaves on the trees, a few leaves falling, wooden garden table, warm low evening sun",
+   "mood": ""
+  },
+  {
+   "id": "l_bunkr_3",
+   "name": "Bunkr – 3. dějství",
+   "description": "Bunkr v rudé záři výstražné LED.",
+   "tag_prompt": "indoors, dark underground bunker room, red warning LED light, harsh red glow, monitors, tangled cables, deep shadows, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_3",
+   "name": "Zahrada – 3. dějství",
+   "description": "Zahrada skoro bez listí, studený vítr.",
+   "tag_prompt": "outdoors, family garden in late autumn, almost bare trees, fallen brown leaves blowing in a cold wind, grey overcast sky, wooden garden table",
+   "mood": ""
+  },
+  {
+   "id": "l_dum_3",
+   "name": "Dům – 3. dějství",
+   "description": "Rozsvícené okno domu, za ním stíny dětí.",
+   "tag_prompt": "outdoors, family house at dusk seen from the garden, warm lit window, shadows of children playing behind the curtain, bare tree branches",
+   "mood": ""
+  },
+  {
+   "id": "l_bunkr_4",
+   "name": "Bunkr – 4. dějství",
+   "description": "Hlavní neony zhasnuté, jen tlumené nouzové světlo.",
+   "tag_prompt": "indoors, dark underground bunker room, neon tubes switched off, dim green emergency light, switched-off monitors, silent computers, dust, almost total darkness, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_4",
+   "name": "Zahrada – 4. dějství",
+   "description": "První sníh na zahradě, sněhulák.",
+   "tag_prompt": "outdoors, family garden under the first snow, white snow on the grass and branches, a half-built snowman, soft winter daylight, cosy house in the background",
+   "mood": ""
+  },
+  {
+   "id": "l_okno_4",
+   "name": "Okno – 4. dějství",
+   "description": "Teplý pokoj u okna, venku sníh.",
+   "tag_prompt": "indoors, warm cosy living room by a window, snowy garden outside, laptop on a table, soft warm lamp light",
+   "mood": ""
+  }
+ ]
+}

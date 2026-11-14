@@ -1,0 +1,93 @@
+{
+  "id": "w_gb_archion_grok_x2",
+  "title": "Archion: Idea versus vyjádření — Zima: Žádné právo veta",
+  "synopsis": "Pozdní podzim a zima. Kosmo v krytu plném vytištěných papírů skládá složku s důkazy, Ol1n na zahradě odpovídá paragrafy: nápad nikdo nevlastní, chráněné je jen vyjádření.",
+  "tone": "věcný, tvrdý, soudní",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_courtroom",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: kryt a zahrada jsou dvě poloviny jeviště.",
+      "Obrazovky a papíry bez čitelného textu; zprávy a Hlas jsou jen v bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n zavře notebook a odejde do domu; Kosmovi zhasne monitor."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_xdum_4",
+      "l_xkryt_4",
+      "l_xzahrada_4"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an unkempt Czech loner aged 34 with messy tousled blond hair sticking out, stubble, in a worn chunky wool sweater, who does not care about his looks",
+      "base": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "worn chunky wool sweater, old jeans"
+      },
+      "photo": "an unkempt Czech loner aged 34 with messy tousled blond hair sticking out and stubble, who does not care about his looks",
+      "tag_prompt": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles, worn chunky wool sweater, old jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_kabat",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm, warm Czech man aged 36 with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes, in a winter coat in the snow",
+      "base": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "dark wool winter coat, grey scarf, jeans"
+      },
+      "photo": "a calm, warm Czech man aged 36 with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes",
+      "tag_prompt": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, dark wool winter coat, grey scarf, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_xkryt_4",
+      "name": "Kryt – tma",
+      "description": "Tma, jen jeden monitor.",
+      "tag_prompt": "indoors, dark underground shelter, total darkness except one cold monitor glow, piles of paper, dust, tarot cards scattered on the desk, an Egyptian papyrus and a brass ankh, a small alien figurine, archaeology books, a pyramid poster on the concrete wall",
+      "mood": ""
+    },
+    {
+      "id": "l_xzahrada_4",
+      "name": "Zahrada – zimní noc",
+      "description": "Sníh, noc, stůl pod sněhem.",
+      "tag_prompt": "outdoors, family garden at night in winter, heavy falling snow, snow-covered garden table, dark sky, house lights in the distance, breath steaming in the cold",
+      "mood": ""
+    },
+    {
+      "id": "l_xdum_4",
+      "name": "Dům – dveře",
+      "description": "Dveře domu, teplé světlo.",
+      "tag_prompt": "outdoors, snowy garden at night, open front door of a family house, warm light spilling onto the snow",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_grok",
+    "node": "x2"
+  }
+}

@@ -26,6 +26,31 @@ func TestReadGraphSara(t *testing.T) {
 	}
 }
 
+func TestGraphVariantSharedProduct(t *testing.T) {
+	root, err := RepoRoot()
+	if err != nil {
+		t.Fatal(err)
+	}
+	g, err := ReadGraph(filepath.Join(root, "data", "gamebooks", "archion", "graph.yaml"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := g.Variant("oil"); err != nil {
+		t.Fatal(err)
+	}
+	if g.ID != "archion_oil" || g.NodeWorld("a1") != "w_gb_archion_a1_oil" {
+		t.Errorf("variant = %s, node world %s", g.ID, g.NodeWorld("a1"))
+	}
+	o := Options{Gamebook: g, Version: 1}
+	gamebookNames(&o, rule())
+	if o.ProductID != "gamebook_archion" || o.ID != "gamebook-archion_oil" || o.ReleaseTag != "gamebook-archion-oil-v1" {
+		t.Errorf("names = %s %s %s", o.ProductID, o.ID, o.ReleaseTag)
+	}
+	if err := g.Variant("Oil"); err == nil {
+		t.Error("variant Oil accepted")
+	}
+}
+
 func TestReadGraphErrors(t *testing.T) {
 	cases := map[string]string{
 		"unknown target": "nodes:\n  a: {choices: [{id: x, text: X, to: nope}]}\n",

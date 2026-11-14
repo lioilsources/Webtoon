@@ -1,0 +1,94 @@
+{
+  "id": "w_gb_archion_kimi_k2",
+  "title": "Archion: Server — Výuka",
+  "synopsis": "Vzpomínka na stroj, který Ol1n postavil kamarádovi, aby se na něm naučil Linux. Instalace, noci výuky, a pak šroubovák, baterka a inzerát. Jen web běží dál.",
+  "tone": "nostalgický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_pixel",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Server je rozebraný a prodaný; jen Kosmova webová prezentace na Ol1nově stroji pořád odpovídá HTTP 200 OK."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_serverovna_2",
+      "l_serverovna_2_tma",
+      "l_terasa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 34, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 34, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_terasa",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, healthy, calm, warm",
+      "outfits": {
+        "default": "grey hoodie, jeans"
+      },
+      "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes",
+      "tag_prompt": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, healthy, calm, warm, grey hoodie, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_terasa",
+      "name": "Terasa – večer v minulosti",
+      "description": "Večer na terase, děti spí, notebook na stole.",
+      "tag_prompt": "outdoors, wooden terrace of a family house at night, a laptop on a garden table, a desk lamp, dark garden beyond, warm yellow lamp light, crickets",
+      "mood": ""
+    },
+    {
+      "id": "l_serverovna_2",
+      "name": "Kryt – výuka",
+      "description": "Noc za nocí, server hučí vedle starého počítače s okýnky.",
+      "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, night, a humming tower server with blinking LEDs ignored next to an old windows desktop computer, a neon tube, blue screen glow, coffee mugs, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_serverovna_2_tma",
+      "name": "Kryt – server zhasl",
+      "description": "Tma, jen baterka.",
+      "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, total darkness, the server switched off, a single flashlight beam, dust in the beam, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_kimi",
+    "node": "k2"
+  }
+}

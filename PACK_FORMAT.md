@@ -131,7 +131,11 @@ Pravidla:
 - **Nárok** se počítá v appce z katalogu: balíček je odemčený, když je `free`, když vlastní jeho
   `product_id`, nebo bundle, jehož `covers.types` obsahuje `type` balíčku (`"all"` = všechny typy).
   Bundle tedy pokryje i balíčky, které v katalogu přibudou později. `gamebook_<id>` odemyká gamebook,
-  `kit_<id>` gamebook + editor kit; bundly gamebooky neodemykají.
+  `kit_<id>` gamebook + editor kit; bundly gamebooky neodemykají. Víc gamebooků smí sdílet jeden
+  `product_id` (např. `gamebook_archion`): obchod je ukáže jako jednu kartu s jednou cenou a koupě
+  odemkne všechny. Prázdné nebo chybějící `kit_product_id` = gamebook nemá kit (obchod ho nenabízí).
+  Gamebook, který čtenář nainstaloval, dokud ho katalog měl `free`, zůstane odemčený i poté, co ho
+  novější katalog zpoplatní (appka si to při instalaci a při startu nad cachovaným katalogem uloží).
 - **Gamebook** je jeden zip (bez částí) s pack.json (příběh = uzel, jedna epizoda) a `gamebook.json`
   (graf, příznaky, konce, lore). Jeho příběhy nejsou v `stories[]` katalogu ani v knihovně appky.
 - **Publikum**: profil čtenáře Děti skryje typy, balíčky, bundly a příběhy s `audience: "adult"`
@@ -140,7 +144,7 @@ Pravidla:
   je zapíše do `<out>/releases/<tag>/<asset>` a vypíše příkaz `gh release create …`, který je nahraje.
 - Soubory se nepřepisují: nová verze balíčku = nový release tag (`-v2`), katalog se přepne až po nahrání.
 - `price_tier` je jen nápověda pro docs/store-products.md (cenu ukazuje appka z obchodu):
-  `pack` 0.99 USD, `bundle_all` 4.99 (`bundle_type` 2.99 is reserved, no type bundle is sold), `gamebook` 1.99, `kit` 3.99.
+  `pack` 0.99 USD, `bundle_all` 4.99 (`bundle_type` 2.99 is reserved, no type bundle is sold), `gamebook` 0.99, `kit` 3.99.
 
 ### Schema 1 (čte se dál)
 

@@ -1,0 +1,305 @@
+# Gamebook — Archion: Zahrada uprostřed hluku. Verze „ChatGPT“: samostatná linka hry o Kosmovi a Ol1novi, scénář
+# Překlady (11 jazyků, 2026-11-14) jsou přímo ve storyboard.json (bubbles[].i18n, title_i18n): gamebook.py draft je přepíše, po změně scriptu přeložit znovu.
+# Ol1n nosí brýle (od autora, 2026-11-14): thin-framed glasses ve všech jeho postavách.
+# Kreslený věk (L40S test 1: vycházeli na 45–50): photo říká věk, jak vypadají (Ol1n 36, Kosmo 34, dřívější éry níž), bez „mature male“. Skutečný věk je Ol1n 46, Kosmo 44.
+# napsal model ChatGPT (od Ol1na). Život v režimu přerušení 2016–2023, pak zahrada 2024–2025 a závěrečný monolog.
+# Lineární, sedm uzlů g1–g7, bez voleb.
+# Smyšlená verze: druhá strana je smyšlená postava Kosmo a jeho hra Nebulon (Dreamer → Kosmo, Orbitron → Nebulon,
+# „Dreamer Lucky is online“ → „Kosmo je online“). Bez skutečných jmen: Marcela → Partnerka, Avast → „firma“ (zmínka
+# vypuštěna, zbylo „po čtyřech letech“). Kosmovy repliky jsou ChatGPT vymyšlené, ne citace ze skutečného chatu. Roky
+# 2016–2023 zůstávají jako titulky kapitol (Ol1nův vlastní život). Vypuštěné: vložené popisky obrázků z vyhledávání
+# („laid off after promotion…“, „Жилинспекция…“, „Aluguel de Marteletes…“, „Práce z chalupy…“ aj.) a režijní klíč.
+# Hlasy bez těla (Partnerka za dveřmi, Kolega a Nadřízený z reproduktoru notebooku, Kosmovy zprávy, HLAS OL1Na,
+# projekce BUILD FAILED / CONNECTION LOST) jsou titulky (`caption`). Monolog: vzpomínky jako titulky nad prázdnými
+# místy minulých let, zbytek Ol1novy bubliny. Otázka z režijní poznámky („Když já jsem ti pomáhal stavět tvůj svět…“)
+# je Ol1nův poslední titulek před „Tak pojďme na to.“ a BUILD STARTED. Dvě vzpomínky (2016, 2018) v monologu sloučené
+# do jedné bubliny. „Dítě 1/2/3“ v rekonstrukci = jeden titulek „Tati! Tati! Tatiiiii!“ (děti mimo obraz).
+# Postavy podle autora (2026-11-14): Ol1n je blond s plnovousem a vypadá mladší, než je (2016: 36, vypadá na konec
+# dvacítky; 2020–2023: vyhublý, zarostlý, propadlé oči — pozvolný rozpad osobnosti, ChatGPTova linka je přesně tohle
+# období; zahrada 2024: zdravý, klidný, návrat k životu). Odloučení od dětí se do dialogu nepíše, nese ho jen obraz:
+# Ol1n se v Mezihře vrací do zahrady. Kosmo blond, rozcuchaný, vlněný svetr, v jeho pokoji tarot, papyrus, ankh,
+# figurka mimozemšťana, knihy o archeologii, plakát pyramidy.
+#
+# Styl: archion_charcoal — uhel a grafit, reportážní skicy na šedém papíře; barvu nesou jen lokace zahrady (první
+# dotek akvarelu), byty a kanceláře jsou šedé. Prostředí: malý byt s postýlkou, open space pod zářivkami, home office
+# s hračkami, dvě postýlky, byt v rekonstrukci (plachty, prach, sbíječka), pak zahrada.
+# Hudba (L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
+#   archion_chatgpt: "glitchy lo-fi, stuttering broken beat, tape stops, interrupted melancholic electric piano, baby monitor static"
+
+schema: 1
+id: archion_chatgpt
+title: "Archion: Zahrada uprostřed hluku"
+title_i18n: {en: "Archion: A Garden in the Middle of the Noise", de: "Archion: Ein Garten mitten im Lärm", fr: "Archion : un jardin au milieu du bruit", it: "Archion: un giardino in mezzo al rumore", ja: "アルキオン：騒音の中の庭", ko: "아르키온: 소음 한가운데의 정원", pl: "Archion: Ogród pośród hałasu", pt-BR: "Archion: Um jardim no meio do barulho", ru: "Архион: Сад посреди шума", uk: "Архіон: Сад посеред шуму", vi: "Archion: Khu vườn giữa tiếng ồn"}
+world: w_archion_chatgpt
+audience: adult
+language: cs
+style_id: archion_charcoal
+profile: archion
+product_id: gamebook_archion  # jeden balík Archion: jeden nákup odemkne všech 8 variant (Olin, 2026-11-14)
+start: g1
+
+premise: >
+  Sedm let, kdy se Ol1novi rozpadá jedna jistota za druhou: dítě, výpovědi, covid, dvojčata, rok rekonstrukce za
+  provozu. Programuje v každé mezeře mezi pláčem, porady a sbíječkou a pomáhá kamarádovi Kosmovi stavět jeho svět.
+  Až na zahradě poprvé najde ticho a spustí vlastní build.
+
+characters: [ol1n_mlady, ol1n_doma, ol1n_zahrada, kosmo, partnerka, dcera_8, dvojcata_3]
+
+locations:
+  - {id: l_byt_2016, name: Byt – 2016, description: "malý byt, notebook, postýlka"}
+  - {id: l_byt_2017, name: Byt – 2017, description: "večer, monitor, pootevřené dveře"}
+  - {id: l_kancelar, name: Kancelář, description: "open space, zářivky"}
+  - {id: l_kancelar_2, name: Nová kancelář, description: "nový stůl, nový monitor"}
+  - {id: l_pred_budovou, name: Před budovou, description: "šedá budova, chodník"}
+  - {id: l_homeoffice, name: Home office – 2020, description: "notebook, sluchátka, hračky"}
+  - {id: l_kuchyne, name: Kuchyň, description: "nádobí, prádlo"}
+  - {id: l_postylky, name: Dvě postýlky – 2021, description: "dvě postýlky, lahvičky, notebook"}
+  - {id: l_rekonstrukce, name: Byt v rekonstrukci – 2022, description: "plachty, prach, nářadí"}
+  - {id: l_kosmo_pokoj, name: Kosmův pokoj, description: "přítmí, jediný monitor"}
+  - {id: l_zahrada_jaro, name: Zahrada – jaro, description: "ticho, první barva"}
+  - {id: l_zahrada_leto, name: Zahrada – léto, description: "plná zahrada"}
+  - {id: l_zahrada_podzim, name: Zahrada – podzim, description: "padá listí"}
+  - {id: l_zahrada_zima, name: Zahrada – zima, description: "sníh"}
+  - {id: l_noc, name: Noc u notebooku, description: "tma, světlo obrazovky"}
+
+draft:
+  speakers: {Ol1n: ol1n, Partnerka: partnerka, Kosmo: kosmo, Dcera: dcera, Dvojčata: dvojcata}
+  faces:
+    ol1n: [[tired expression, looking at a laptop screen], [distracted, looking away], [exhausted, looking down]]
+    partnerka: [[tired, serious expression], [frustrated, looking at another], [arms crossed, serious]]
+    kosmo: [[intense stare, face lit by monitor glow], [smug smile, typing], [looking at a monitor]]
+    dcera: [[curious expression, looking up], [pouting, looking up], [smile, looking at another]]
+    dvojcata: [[laughing, open mouth], [excited, looking up], [curious, looking up]]
+  speaking: {default: [upper body, from front]}
+
+nodes:
+  g1:
+    title: "2016–2017: Build failed"
+    location: l_byt_2016
+    cast: {ol1n: ol1n_mlady, partnerka: partnerka, kosmo: kosmo}
+    next: g2
+    script:
+      - {see: "Jaro. Na stole notebook, vedle dětská postýlka. Na monitoru svítí vývojové prostředí.", caption: "2016", shot: establishing, tags: [laptop on a desk, baby crib beside the desk, glowing screen, no readable text, small flat], gap: medium}
+      - {see: "Ol1n drží v náručí malou dceru. Dívá se na ni. Pak na počítač.", shot: medium, who: ol1n, tags: [holding a swaddled newborn baby, looking down at the baby, tender, laptop in the background]}
+      - {say: ol1n, text: "Tak. Tak tohle je teď všechno jinak.", tags: [holding a swaddled baby, soft smile, looking down]}
+      - {see: "Dítě pláče. Ol1n přechází po místnosti a uklidňuje ho.", shot: medium, who: ol1n, tags: [walking around the room, rocking a crying baby, swaddled baby, worried], animate: "he rocks the baby slowly, pacing, lamp light swaying"}
+      - {say: ol1n, text: "Já vím. Já vím.", tags: [rocking a swaddled baby, whispering, tired]}
+      - {see: "Na obrazovce bliká nedokončený řádek kódu.", shot: close-up, tags: [laptop screen, blinking cursor, glowing code editor, no readable text, baby crib in the background]}
+      - {say: ol1n, text: "Kde jsem to skončil?", tags: [sitting at the desk, leaning to the laptop, rubbing his eyes]}
+      - {see: "Z vedlejší místnosti je slyšet partnerku.", caption: "Partnerka: Můžeš mi s něčím pomoct?", shot: medium, tags: [half-open door, dark next room, light under the door, hallway]}
+      - {say: ol1n, text: "Jo, hned.", tags: [eyes still on the laptop screen, not moving, typing]}
+      - {see: "Nejde nikam. Ještě chvíli se dívá na monitor. Světlo pomalu pohasíná.", caption: "Člověk si myslí, že když se narodí dítě, svět se rozšíří. A on se opravdu rozšíří. Jenomže některé věci se přitom začnou vzdalovat.", shot: wide, tags: [dim small flat, empty baby crib, glowing laptop, lamp slowly fading], gap: medium}
+      - {see: "Na projekci nápis.", caption: "2016 – BUILD FAILED", shot: close-up, tags: [laptop screen glowing red, darkness, no readable text], gap: large}
+      - {see: "Zima. Malý byt, večer. Ol1n sedí u počítače.", caption: "2017", shot: establishing, loc: l_byt_2017, tags: [winter night outside the window, small flat, computer monitor glow], gap: medium}
+      - {say: partnerka, text: "Ty jsi zase u počítače?", loc: l_byt_2017, tags: [standing in a doorway, arms crossed, tired, serious expression]}
+      - {say: ol1n, text: "Ještě něco dodělám.", loc: l_byt_2017, pose: [upper body, sitting at a desk, from front], tags: [not looking up, typing, face lit by monitor glow]}
+      - {say: partnerka, text: "Ty pořád něco doděláváš.", loc: l_byt_2017, tags: [leaning on the door frame, frustrated, looking at another]}
+      - {say: ol1n, text: "Když to neudělám teď, nebude to hotové nikdy.", loc: l_byt_2017, pose: [upper body, sitting at a desk, from front], tags: [glancing over his shoulder, defensive, tired]}
+      - {say: partnerka, text: "A kdy budeš tady?", loc: l_byt_2017, tags: [quiet, sad eyes, looking at another]}
+      - {see: "Ol1n neodpoví.", shot: close-up, who: ol1n, loc: l_byt_2017, tags: [silent, closed mouth, staring at a monitor, face lit by monitor glow]}
+      - {see: "Na monitoru se objeví zpráva od Kosma.", caption: "Kosmo: Tak co? Máš čas?", shot: close-up, loc: l_byt_2017, tags: [monitor screen, chat window glowing, no readable text, dark room]}
+      - {say: ol1n, text: "Jo. Teď jo.", loc: l_byt_2017, tags: [typing, glancing towards the next room]}
+      - {see: "Kosmo daleko ve svém pokoji.", caption: "Kosmo: Mám nový nápad k Nebulonu.", shot: medium, who: kosmo, loc: l_kosmo_pokoj, tags: [sitting at a desk, typing, excited grin, face lit by monitor glow]}
+      - {say: ol1n, text: "Povídej.", loc: l_byt_2017, tags: [leaning towards the monitor, slight smile]}
+      - {see: "Z vedlejší místnosti se ozve zavření dveří.", shot: medium, loc: l_byt_2017, tags: [closed door, dark hallway, light under the door]}
+      - {see: "Ol1n nasadí sluchátka.", shot: close-up, who: ol1n, loc: l_byt_2017, tags: [putting on headphones, face lit by monitor glow, alone], gap: large}
+
+  g2:
+    title: "2018–2019: Connection lost"
+    location: l_kancelar
+    cast: {ol1n: ol1n_mlady, partnerka: partnerka}
+    next: g3
+    script:
+      - {see: "Otevřená kancelář. Studené zářivky.", caption: "2018. Deset let pracovního života.", shot: establishing, tags: [open-plan office, rows of desks, cold fluorescent lights, empty chairs], gap: medium}
+      - {see: "Ol1n sedí u pracovního počítače.", shot: medium, who: ol1n, tags: [sitting at an office desk, working at a computer, focused]}
+      - {see: "Hlas nadřízeného.", caption: "Nadřízený: Máme pro tebe změnu.", shot: medium, tags: [glass meeting room door, empty office chair, cold fluorescent light]}
+      - {say: ol1n, text: "Jakou?", tags: [looking up from the computer, surprised]}
+      - {see: "Hlas nadřízeného.", caption: "Nadřízený: Bohužel končíme spolupráci.", shot: wide, tags: [empty meeting room, long table, cold light]}
+      - {say: ol1n, text: "Po deseti letech?", shot: close-up, tags: [stunned, frozen expression, looking at another]}
+      - {see: "Hlas nadřízeného.", caption: "Nadřízený: Rozhodnutí je konečné.", shot: medium, tags: [office door closing, cold light]}
+      - {see: "Ol1n pomalu zavře notebook.", shot: close-up, tags: [hands slowly closing a laptop, office desk, cold light], animate: "the laptop lid slowly closing, fluorescent light flickering"}
+      - {see: "Světlo kanceláře zhasne.", shot: wide, tags: [dark empty open-plan office, lights off], gap: medium}
+      - {see: "Doma se rozsvítí monitor.", caption: "Kosmo: Čau, jak se máš?", shot: close-up, loc: l_byt_2017, tags: [monitor lighting up, dark room, chat window glowing, no readable text]}
+      - {say: ol1n, text: "Dobrý.", loc: l_byt_2017, tags: [sitting in the dark, face lit by monitor glow, blank expression]}
+      - {see: "Další zpráva.", caption: "Kosmo: Děje se něco?", shot: close-up, loc: l_byt_2017, tags: [monitor screen, chat window, no readable text, dark room]}
+      - {say: ol1n, text: "Ne. V pohodě.", loc: l_byt_2017, tags: [forced calm, face lit by monitor glow]}
+      - {see: "Otevře editor. Píše. Na projekci nápis.", caption: "2018 – CONNECTION LOST", shot: close-up, loc: l_byt_2017, tags: [hands typing on a keyboard, darkness, glowing code editor, no readable text], gap: large}
+      - {see: "Nové pracovní místo. Nový stůl. Nový monitor.", caption: "2019", shot: establishing, loc: l_kancelar_2, tags: [small new office, clean empty desk, new monitor], gap: medium}
+      - {see: "Ol1n sedí naproti počítači. Vypadá unaveně.", shot: medium, who: ol1n, loc: l_kancelar_2, tags: [sitting at a new desk, tired expression, looking at a monitor]}
+      - {see: "Zvuk zavírajících se dveří.", caption: "Půl roku.", shot: medium, loc: l_kancelar_2, tags: [office door swinging shut, empty desk, cold light]}
+      - {see: "Ol1n stojí venku před budovou. Vytáhne telefon a dívá se na kontakty.", shot: medium, who: ol1n, loc: l_pred_budovou, tags: [standing outside an office building, holding a smartphone, looking at the phone, overcast]}
+      - {say: ol1n, text: "Tak zase.", loc: l_pred_budovou, tags: [standing, holding a smartphone, bitter half smile]}
+      - {see: "Nikomu nezavolá.", shot: close-up, loc: l_pred_budovou, tags: [hand holding a smartphone, thumb hovering over the screen, no readable text, pavement]}
+      - {say: partnerka, text: "Co se stalo?", loc: l_byt_2017, tags: [standing in the kitchen doorway, worried, looking at another]}
+      - {say: ol1n, text: "Skončil jsem.", loc: l_byt_2017, tags: [standing, coat still on, looking down]}
+      - {say: partnerka, text: "Zase?", loc: l_byt_2017, tags: [arms crossed, disappointed, serious]}
+      - {see: "Ol1n mlčí.", shot: close-up, who: ol1n, loc: l_byt_2017, tags: [silent, closed mouth, looking down]}
+      - {say: ol1n, text: "Najdu něco jiného.", loc: l_byt_2017, tags: [quiet, tired expression, looking away]}
+      - {see: "Otevírá notebook. Na obrazovce prázdný dokument.", shot: close-up, loc: l_byt_2017, tags: [hands opening a laptop, empty white screen glow, no readable text, dark room], gap: large}
+
+  g3:
+    title: "2020–2021: Home office"
+    location: l_homeoffice
+    cast: {ol1n: ol1n_doma, partnerka: partnerka}
+    next: g4
+    script:
+      - {see: "Jeden stůl. Notebook, sluchátka, hrnek a dětské hračky.", caption: "2020", shot: establishing, tags: [kitchen table with a laptop, headset, coffee mug, children's toys], gap: medium}
+      - {see: "Na monitoru běží pracovní videohovor.", caption: "Kolega: Ol1ne, slyšíme tě?", shot: medium, who: ol1n, tags: [sitting at a kitchen table, wearing a headset, video call on the laptop, no readable text]}
+      - {say: ol1n, text: "Jo, slyšíte.", pose: [upper body, sitting at a table, from front], tags: [wearing a headset, forced smile, looking at a laptop screen]}
+      - {see: "V pozadí někdo něco shodí.", shot: close-up, tags: [toy blocks crashing to the floor, toy falling off a shelf], animate: "toy blocks tumbling across the floor"}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Co to bylo?", shot: close-up, tags: [laptop screen, video call grid, no readable text, toys on the table]}
+      - {say: ol1n, text: "Nic, domácnost.", pose: [upper body, sitting at a table, from front], tags: [wearing a headset, embarrassed smile]}
+      - {say: partnerka, text: "Můžeš na chvíli?", loc: l_kuchyne, tags: [standing in a busy kitchen, holding a laundry basket, frustrated]}
+      - {say: ol1n, text: "Mám meeting!", pose: [upper body, sitting at a table, from front], tags: [covering the microphone, half turned, stressed]}
+      - {say: partnerka, text: "Já taky nemůžu všechno dělat sama!", loc: l_kuchyne, tags: [angry, tired, looking at another]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Ol1ne, můžeme pokračovat?", shot: close-up, tags: [laptop screen, video call, no readable text]}
+      - {say: ol1n, text: "Jasně. Promiňte.", pose: [upper body, sitting at a table, from front], tags: [wearing a headset, apologetic]}
+      - {say: ol1n, text: "Takže zpátky k tomu deploymentu…", pose: [upper body, sitting at a table, from front], tags: [wearing a headset, talking, looking at a laptop screen]}
+      - {see: "Znovu křik. Ol1n vypne mikrofon.", shot: close-up, tags: [hand pressing a headset mute button, laptop, toys]}
+      - {say: ol1n, text: "Deployment. Jasně. Všechno se někam nasazuje. Jenom já nemám kam.", shot: close-up, pose: [upper body, sitting at a table, from front], tags: [talking to himself, hollow eyes, bitter smile]}
+      - {see: "Na obrazovce se objeví oznámení.", caption: "Kosmo je online.", shot: close-up, tags: [laptop screen, small notification glowing in the corner, no readable text]}
+      - {see: "Zpráva.", caption: "Kosmo: Mám další nápad.", shot: medium, who: ol1n, tags: [sitting at a kitchen table, glancing at the laptop, headset around the neck]}
+      - {say: ol1n, text: "Povídej.", pose: [upper body, sitting at a table, from front], tags: [typing, tired, slight smile]}
+      - {see: "V místnosti začne další hluk. Ol1n si nasadí sluchátka.", shot: close-up, who: ol1n, tags: [putting the headset on, eyes closed for a moment], gap: large}
+      - {see: "Dvě dětské postýlky. Zvuk dvou současně plačících kojenců.", caption: "2021", shot: establishing, loc: l_postylky, tags: [two baby cribs side by side, baby blankets, night lamp, work laptop blinking], gap: medium, animate: "the work laptop light blinking, night lamp flickering"}
+      - {see: "Ol1n stojí mezi postýlkami. V jedné ruce telefon, v druhé lahvička.", shot: medium, who: ol1n, loc: l_postylky, tags: [standing between two baby cribs, holding a smartphone, holding a baby bottle, exhausted]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Ol1ne? Jsi tam?", shot: close-up, loc: l_postylky, tags: [laptop on a table blinking, baby bottle beside it, no readable text]}
+      - {say: ol1n, text: "Jo.", loc: l_postylky, tags: [phone at his ear, exhausted, looking at a crib]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Potřebujeme to dneska dokončit.", shot: close-up, loc: l_postylky, tags: [smartphone on a table, baby monitor, no readable text]}
+      - {say: ol1n, text: "Jasně.", loc: l_postylky, tags: [phone at his ear, eyes closed, exhausted]}
+      - {say: ol1n, text: "Moment.", loc: l_postylky, tags: [leaning over a crib, phone in hand, stressed]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Můžeme tě na chvíli ztlumit?", shot: close-up, loc: l_postylky, tags: [smartphone screen, no readable text, crib bars]}
+      - {say: ol1n, text: "To bych ocenil.", loc: l_postylky, tags: [dry tired smile, phone in hand]}
+      - {see: "Položí telefon. Zvedne jedno dítě. Druhé pláče dál.", shot: medium, who: ol1n, loc: l_postylky, tags: [holding a swaddled baby, second crib beside him, looking down, exhausted]}
+      - {say: partnerka, text: "Musíme to nějak zvládnout.", loc: l_postylky, tags: [standing by a crib, holding a baby bottle, tired, serious]}
+      - {say: ol1n, text: "Já vím.", loc: l_postylky, tags: [holding a swaddled baby, quiet, hollow eyes]}
+      - {see: "Chvíli stojí. Pak se podívá na notebook.", shot: medium, who: ol1n, loc: l_postylky, tags: [holding a swaddled baby, looking at a laptop]}
+      - {say: ol1n, text: "Ještě tohle.", loc: l_postylky, tags: [whispering, baby in his arms, looking at a laptop]}
+      - {see: "Na projekci dvě nové položky.", caption: "CHILD_02 – ONLINE. CHILD_03 – ONLINE.", shot: close-up, loc: l_postylky, tags: [laptop screen glowing in the dark, two cribs reflected, no readable text]}
+      - {see: "Obrazovka se na okamžik zasekne.", shot: close-up, loc: l_postylky, tags: [frozen glitched laptop screen, digital noise, dark room], gap: large, animate: "the screen glitching and freezing, static noise"}
+
+  g4:
+    title: "2022: Rekonstrukce"
+    location: l_rekonstrukce
+    cast: {ol1n: ol1n_doma, partnerka: partnerka}
+    next: g5
+    script:
+      - {see: "Byt je rozestavěný. Plachty, prach, kabely. Hračky mezi stavebním nářadím.", caption: "2022", shot: establishing, tags: [flat under renovation, plastic sheets, dust in the air, children's toys among power tools], gap: medium, animate: "dust slowly drifting, plastic sheets moving"}
+      - {see: "Ol1n sedí u notebooku.", shot: medium, who: ol1n, tags: [sitting on a cardboard box, plastic sheets, laptop on his knees, dusty]}
+      - {see: "Z reproduktoru se ozve sbíječka.", caption: "BRRRRRRR!", shot: close-up, tags: [jackhammer drilling into a wall, dust cloud, broken plaster], animate: "the drill shaking, plaster dust bursting out"}
+      - {say: ol1n, text: "…", tags: [frozen, eyes closed, jaw clenched]}
+      - {see: "Ol1n si nasadí sluchátka. Sbíječka zesílí.", caption: "BRRRRRRRRRRRR!", shot: medium, who: ol1n, tags: [pressing headphones to his ears, wincing, dust]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Ol1ne, nějak tě neslyšíme.", shot: close-up, tags: [dusty laptop screen, video call, no readable text]}
+      - {say: ol1n, text: "Já vás slyším.", pose: [upper body, sitting, from front], tags: [shouting into a headset, dust on his shoulders]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Máš tam nějaký hluk.", shot: close-up, tags: [laptop screen, dust on the keyboard, no readable text]}
+      - {say: ol1n, text: "Jo. Rekonstrukce.", pose: [upper body, sitting, from front], tags: [hollow eyes, unkempt, dry voice]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Nemůžeš si někam zalézt?", shot: close-up, tags: [laptop screen, plastic sheet behind it, no readable text]}
+      - {see: "Ol1n se rozhlédne.", shot: wide, who: ol1n, tags: [looking around, plastic sheets and tools, nowhere to go, from behind]}
+      - {say: ol1n, text: "Kam?", shot: close-up, tags: [hollow eyes, bewildered, unkempt beard]}
+      - {see: "Sbíječka.", caption: "BRRRRRRR!", shot: close-up, tags: [jackhammer, cracks spreading in the wall, dust]}
+      - {say: partnerka, text: "Ol1ne! Potřebuju pomoct s tímhle!", tags: [holding a heavy bag of plaster, dust in her hair, shouting]}
+      - {see: "Děti volají.", caption: "Tati! Tati! Tatiiiii!", shot: medium, tags: [children's toys among construction tools, small shoes in the dust, doorway]}
+      - {see: "Kolega z reproduktoru.", caption: "Kolega: Ol1ne, jsi tam?", shot: close-up, tags: [laptop screen, no readable text, dust]}
+      - {say: ol1n, text: "Jsem.", pose: [upper body, standing, from front], tags: [standing up, laptop in hand, dazed]}
+      - {see: "Sbíječka.", caption: "BRRRRRRR!", shot: close-up, tags: [jackhammer, falling plaster]}
+      - {say: ol1n, text: "Jsem tady.", pose: [upper body, standing, from front], tags: [standing in the room, trembling]}
+      - {see: "Další sbíječka.", caption: "BRRRRRRRRRRRR!", shot: close-up, tags: [two drills on the wall, dust explosion]}
+      - {say: ol1n, text: "JSEM TADY!", shot: close-up, pose: [upper body, standing, from front], tags: [shouting, wild eyes, veins on the neck, unkempt beard]}
+      - {see: "Najednou naprosté ticho. Ol1n zůstane stát uprostřed místnosti.", shot: wide, who: ol1n, tags: [standing alone in a dusty room, silence, plastic sheets, from behind], animate: "dust slowly settling in total stillness"}
+      - {say: ol1n, text: "Tak. Kde jsme skončili?", pose: [upper body, sitting, from front], tags: [sitting back down at the laptop, empty calm, hollow eyes]}
+      - {see: "V chatu svítí zpráva od Kosma.", caption: "Kosmo: Máš chvilku? Potřebuju s tebou probrat Nebulon.", shot: close-up, tags: [dusty laptop screen, chat window glowing, no readable text]}
+      - {see: "Ol1n se dlouze dívá na obrazovku.", shot: close-up, who: ol1n, tags: [staring at a laptop screen, face lit by screen glow, dust]}
+      - {say: ol1n, text: "Jo.", tags: [quiet, typing, hollow eyes], gap: large}
+
+  g5:
+    title: "2023: Konec"
+    location: l_rekonstrukce
+    cast: {ol1n: ol1n_doma, kosmo: kosmo}
+    next: g6
+    script:
+      - {see: "Jeviště je rozděleno. Vlevo kancelářský videohovor, vpravo rozestavěný byt.", caption: "2023", shot: establishing, tags: [half-renovated flat, laptop on a box, video call glow, plastic sheets], gap: medium}
+      - {see: "Hlas nadřízeného z notebooku.", caption: "Nadřízený: Ol1ne, máme pro tebe nepříjemnou zprávu.", shot: close-up, tags: [laptop screen, video call, no readable text, dust on the keyboard]}
+      - {say: ol1n, text: "Dobře.", tags: [looking into the laptop camera, gaunt, hollow eyes]}
+      - {see: "Hlas nadřízeného.", caption: "Nadřízený: Po čtyřech letech ukončujeme tvoji pracovní pozici.", shot: close-up, tags: [laptop screen, video call, no readable text]}
+      - {see: "Pauza.", shot: close-up, who: ol1n, tags: [motionless, staring, face lit by screen glow]}
+      - {say: ol1n, text: "Rozumím.", tags: [calm voice, empty eyes]}
+      - {see: "Hlas nadřízeného.", caption: "Nadřízený: Děkujeme za tvoji práci.", shot: close-up, tags: [laptop screen, video call, no readable text]}
+      - {see: "Hovor skončí.", shot: close-up, tags: [laptop screen going dark, call ended, dust], animate: "the video call window closing, screen dimming"}
+      - {see: "Ol1n zůstane sedět.", shot: wide, who: ol1n, tags: [sitting alone among plastic sheets, laptop on a box, still]}
+      - {see: "Z vedlejší místnosti křik.", caption: "Tati! … Ol1ne!", shot: medium, tags: [doorway to another room, children's toys, plastic sheet]}
+      - {see: "Na obrazovce editor a vedle něj okno chatu.", caption: "Kosmo je online.", shot: close-up, tags: [laptop screen, code editor and a chat window, no readable text]}
+      - {see: "Kosmo ve svém pokoji.", caption: "Kosmo: Čau. Jak pokračuješ?", shot: medium, who: kosmo, loc: l_kosmo_pokoj, tags: [sitting at a desk, typing, relaxed, tarot cards beside the keyboard, face lit by monitor glow]}
+      - {see: "Ol1n dlouho neodpovídá.", shot: close-up, who: ol1n, tags: [not typing, hands in his lap, staring at a laptop]}
+      - {see: "Další zpráva.", caption: "Kosmo: Jsi tam?", shot: close-up, tags: [laptop screen, chat window, no readable text]}
+      - {say: ol1n, text: "Jo.", tags: [typing slowly, hollow eyes]}
+      - {see: "Zpráva.", caption: "Kosmo: Mám něco k Nebulonu.", shot: medium, who: kosmo, loc: l_kosmo_pokoj, tags: [leaning back in a chair, self-confident smile, alien figurine on the desk]}
+      - {say: ol1n, text: "Povídej.", tags: [typing, exhausted]}
+      - {see: "Kosmo začne psát.", shot: close-up, who: kosmo, loc: l_kosmo_pokoj, tags: [typing fast, face lit by monitor glow, excited]}
+      - {see: "Ol1n si sundá sluchátka. Podívá se na děti. Na byt. Na notebook.", shot: medium, who: ol1n, tags: [taking off headphones, looking around the dusty flat, lost]}
+      - {say: ol1n, text: "Ještě jednu věc.", shot: close-up, tags: [whispering, eyes on the laptop, unkempt beard]}
+      - {see: "Zhasnutí.", shot: wide, tags: [darkness, glowing laptop, plastic sheets], gap: large}
+
+  g6:
+    title: "2024–2025: Zahrada"
+    location: l_zahrada_jaro
+    cast: {ol1n: ol1n_zahrada, dcera: dcera_8, dvojcata: dvojcata_3, kosmo: kosmo}
+    next: g7
+    script:
+      - {see: "Čas se zrychlí. Na scéně se objeví zahrada. Venku zpívají ptáci.", caption: "2024", shot: establishing, tags: [quiet spring garden, blossoming tree, wooden garden table, birds], gap: medium, animate: "blossom petals drifting, birds hopping on the grass"}
+      - {see: "Ol1n se vrací do zahrady a přenese notebook ven. Poprvé má kolem sebe prostor.", shot: wide, who: ol1n, tags: [walking into a garden, carrying a laptop, open space, calm, sunlight]}
+      - {see: "Otevře počítač.", shot: medium, who: ol1n, tags: [sitting at a wooden garden table, opening a laptop, calm expression]}
+      - {say: ol1n, text: "Tak. Tady by to šlo.", tags: [sitting at a garden table, calm smile, sunlight]}
+      - {see: "Položí hrnek na stůl. Poprvé není slyšet sbíječka.", shot: close-up, tags: [steaming mug, wooden garden table, laptop, blossom petals, sunlight]}
+      - {say: dcera, text: "Tati, co děláš?", tags: [standing by the garden table, curious expression, looking up]}
+      - {say: ol1n, text: "Programuju.", tags: [warm smile, looking at another]}
+      - {say: dcera, text: "Zase?", tags: [hands on hips, teasing, looking up]}
+      - {say: ol1n, text: "Zase.", tags: [laughing softly, looking at another]}
+      - {say: dvojcata, text: "A co to bude?", tags: [peeking over the garden table, curious, looking up]}
+      - {say: ol1n, text: "Hra.", tags: [smile, looking at another]}
+      - {say: dvojcata, text: "A můžu si ji zahrát?", tags: [excited, looking up]}
+      - {say: ol1n, text: "Až bude hotová.", tags: [warm smile, sunlight]}
+      - {say: dvojcata, text: "A kdy bude hotová?", tags: [curious, tilted heads, looking up]}
+      - {say: ol1n, text: "To ještě nevím.", tags: [honest smile, shrugging]}
+      - {say: dvojcata, text: "Tati, pojď se podívat na květiny!", tags: [pointing at flowers, laughing, open mouth]}
+      - {say: ol1n, text: "Hned.", tags: [calm, smiling, looking at another]}
+      - {see: "Všechny tři odběhnou.", shot: wide, tags: [empty garden path, flowers swaying, small footprints in the grass]}
+      - {see: "Na monitoru se objeví zpráva.", caption: "Kosmo: Tak co? Jak pokračuješ?", shot: close-up, tags: [laptop screen in sunlight, chat window, no readable text, blossom petal on the keyboard]}
+      - {say: ol1n, text: "Dobrý. Pracuju na tom.", tags: [typing, relaxed]}
+      - {see: "Kosmo pořád ve stejném pokoji.", caption: "Kosmo: Já ti říkal, že ten koncept má potenciál.", shot: medium, who: kosmo, loc: l_kosmo_pokoj, tags: [sitting at a desk, smug smile, face lit by monitor glow, pyramid poster behind him]}
+      - {say: ol1n, text: "Jo.", tags: [typing, neutral]}
+      - {see: "Další zpráva.", caption: "Kosmo: Deset let práce.", shot: close-up, tags: [laptop screen, chat window, no readable text, garden table]}
+      - {say: ol1n, text: "Já vím.", tags: [typing, slight sigh]}
+      - {see: "Ol1n se podívá na zahradu.", shot: medium, who: ol1n, tags: [looking out over the garden, from side, calm, sunlight]}
+      - {say: ol1n, text: "Víš, já jsem posledních několik let vlastně neměl kde pracovat.", tags: [typing, quiet, thoughtful]}
+      - {see: "Zpráva.", caption: "Kosmo: Jak to myslíš?", shot: close-up, tags: [laptop screen, chat window, no readable text]}
+      - {say: ol1n, text: "To je jedno. Už je to lepší.", tags: [gentle smile, typing]}
+      - {see: "Znovu začne psát. Střídá se léto.", shot: wide, who: ol1n, loc: l_zahrada_leto, tags: [working at a garden table, summer, sunflowers]}
+      - {see: "Podzim.", shot: wide, loc: l_zahrada_podzim, tags: [garden table with a laptop, falling orange leaves], animate: "orange leaves falling over the table"}
+      - {see: "Zima.", shot: wide, loc: l_zahrada_zima, tags: [snow on the garden, lit windows, garden table under snow]}
+      - {see: "V krytu sedí Kosmo stále na stejném místě.", shot: medium, who: kosmo, loc: l_kosmo_pokoj, tags: [sitting at the same desk, same pose, face lit by monitor glow, alone], gap: large}
+
+  g7:
+    title: "Čas, který nejde vrátit"
+    location: l_noc
+    cast: {ol1n: ol1n_zahrada}
+    ending: good
+    script:
+      - {see: "Tma. Zůstává jen světlo notebooku.", shot: establishing, tags: [night garden, glowing open laptop on a table], gap: medium}
+      - {say: ol1n, text: "Víš, co je zvláštní? Když se podívám zpátky, vlastně nevím, kdy jsem měl naposledy opravdu klid.", tags: [sitting at a garden table, night, face lit by laptop glow, thoughtful]}
+      - {see: "Postýlka.", caption: "2016. Narodila se dcera. 2018. Deset let práce skončilo.", shot: medium, loc: l_byt_2016, tags: [empty baby crib, laptop on a desk, still]}
+      - {see: "Kancelář.", caption: "Pak další práce. Půl roku. Pak covid. Pak dvojčata.", shot: wide, loc: l_postylky, tags: [two empty baby cribs, night lamp, still]}
+      - {see: "Plachty.", caption: "Pak byt, který se rok rekonstruoval za provozu. Sbíječky, prach, křik, práce, domácnost.", shot: wide, loc: l_rekonstrukce, tags: [empty flat under renovation, plastic sheets, dust in still air]}
+      - {see: "Prázdná kancelář.", caption: "A pak další práce. Čtyři roky. A konec.", shot: wide, loc: l_kancelar, tags: [dark empty open-plan office, lights off]}
+      - {say: ol1n, text: "Člověk si pořád říká, že až se něco vyřeší, bude líp.", tags: [face lit by laptop glow, quiet, looking down]}
+      - {say: ol1n, text: "Až bude dítě větší. Až najdu práci. Až skončí rekonstrukce. Až bude doma klid. Až bude trochu času.", tags: [counting softly, faint smile]}
+      - {say: ol1n, text: "Jenže ono se vždycky objeví něco dalšího.", tags: [tired smile, looking away]}
+      - {see: "Pauza.", shot: wide, tags: [night garden, bare trees, laptop glowing on the table], gap: medium, animate: "the laptop glow pulsing softly, branches moving in the night breeze"}
+      - {say: ol1n, text: "A pak jsem si sedl k počítači. Protože tam jsem mohl něco dokončit.", tags: [hands on the laptop, calm]}
+      - {say: ol1n, text: "Když jsem napsal funkci, fungovala. Když jsem opravil chybu, zmizela. Když něco nešlo, mohl jsem zjistit proč.", tags: [face lit by laptop glow, gentle certainty]}
+      - {say: ol1n, text: "V životě to takhle nefungovalo.", shot: close-up, tags: [looking down, quiet]}
+      - {see: "Podívá se na obrazovku.", shot: close-up, who: ol1n, tags: [looking at a laptop screen, face lit by its glow, night]}
+      - {say: ol1n, text: "A pak jsem potkal někoho, kdo deset let stavěl svůj vlastní svět. Myslel jsem, že mu pomůžu dostat ho ven.", tags: [thoughtful, looking at a laptop screen]}
+      - {say: ol1n, text: "Možná jsem jen potřeboval postavit něco vlastního. Něco, co mi nikdo nevezme.", tags: [quiet resolve, looking at a laptop screen]}
+      - {see: "Dlouhé ticho.", caption: "Když já jsem ti pomáhal stavět tvůj svět, kdo mezitím pomáhal stavět ten můj?", shot: wide, tags: [night garden, empty chair, laptop glowing on the table, stars]}
+      - {say: ol1n, text: "Tak pojďme na to.", tags: [small smile, hands on the keyboard, calm]}
+      - {see: "Klikne na Build.", caption: "ARCHION – BUILD STARTED", shot: close-up, tags: [finger pressing a laptop key, screen glow in the dark, no readable text], gap: large, animate: "the screen glow brightening as the build starts"}

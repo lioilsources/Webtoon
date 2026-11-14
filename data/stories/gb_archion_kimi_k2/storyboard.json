@@ -1,0 +1,309 @@
+{
+  "title": "Výuka",
+  "title_i18n": {
+    "de": "Unterricht",
+    "en": "Lessons",
+    "fr": "Leçons",
+    "it": "Lezioni",
+    "ja": "レッスン",
+    "ko": "수업",
+    "pl": "Lekcje",
+    "pt-BR": "Aulas",
+    "ru": "Уроки",
+    "uk": "Уроки",
+    "vi": "Bài học"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_serverovna_2",
+      "characters": [],
+      "visual_tags": [
+        "humming tower server",
+        "blinking LEDs",
+        "neon tube",
+        "night",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "server LEDs blinking, neon tube buzzing, night after night"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [],
+      "visual_tags": [
+        "laptop on a terrace table",
+        "night",
+        "lamp light",
+        "terminal glow",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "git add .\ngit commit -m \"wip\"\ngit push",
+          "kind": "narration",
+          "i18n": {
+            "de": "git add .\ngit commit -m \"wip\"\ngit push",
+            "en": "git add .\ngit commit -m \"wip\"\ngit push",
+            "fr": "git add .\ngit commit -m \"wip\"\ngit push",
+            "it": "git add .\ngit commit -m \"wip\"\ngit push",
+            "ja": "git add .\ngit commit -m \"wip\"\ngit push",
+            "ko": "git add .\ngit commit -m \"wip\"\ngit push",
+            "pl": "git add .\ngit commit -m \"wip\"\ngit push",
+            "pt-BR": "git add .\ngit commit -m \"wip\"\ngit push",
+            "ru": "git add .\ngit commit -m \"wip\"\ngit push",
+            "uk": "git add .\ngit commit -m \"wip\"\ngit push",
+            "vi": "git add .\ngit commit -m \"wip\"\ngit push"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "patient teacher",
+        "warm lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "Tohle je historie. Každá změna je navždy. Není „přepsal jsem a je to pryč“. Je „commit“. Je to tam. Uvidíš sám, co jsi dělal před rokem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist Geschichte. Jede Änderung ist für immer. Es gibt kein „Ich hab's überschrieben und es ist weg“. Es gibt „commit“. Es ist drin. Du siehst selbst, was du vor einem Jahr gemacht hast.",
+            "en": "This is history. Every change is forever. There's no “I rewrote it and it's gone.” There's “commit.” It's in there. You'll see for yourself what you were doing a year ago.",
+            "fr": "Ça, c'est l'historique. Chaque changement est pour toujours. Il n'y a pas de « j'ai réécrit et c'est parti ». Il y a « commit ». C'est dedans. Tu verras toi-même ce que tu faisais il y a un an.",
+            "it": "Questa è la storia. Ogni modifica è per sempre. Non esiste «ho riscritto ed è sparito». Esiste il «commit». È lì. Vedrai da solo cosa facevi un anno fa.",
+            "ja": "これが履歴だ。変更は全部永遠に残る。「上書きしたから消えた」なんてない。あるのは「commit」だ。そこに残ってる。一年前に自分が何をしてたか、自分で見られる。",
+            "ko": "이게 히스토리야. 모든 변경은 영원히 남아. ‘덮어썼더니 없어졌어’ 같은 건 없어. ‘commit’이 있을 뿐이야. 거기 남아 있어. 1년 전에 네가 뭘 했는지 직접 보게 될 거야.",
+            "pl": "To jest historia. Każda zmiana jest na zawsze. Nie ma „przepisałem i nie ma”. Jest „commit”. To tam jest. Sam zobaczysz, co robiłeś rok temu.",
+            "pt-BR": "Isso aqui é histórico. Cada mudança é pra sempre. Não existe “reescrevi e sumiu”. Existe “commit”. Tá lá. Você mesmo vai ver o que fazia um ano atrás.",
+            "ru": "Это история. Каждое изменение — навсегда. Нет никакого «переписал, и нету». Есть «commit». Оно там. Сам увидишь, что ты делал год назад.",
+            "uk": "Це історія. Кожна зміна — назавжди. Нема ніякого «переписав, і нема». Є «commit». Воно там. Сам побачиш, що ти робив рік тому.",
+            "vi": "Đây là lịch sử. Mọi thay đổi là mãi mãi. Không có chuyện “viết đè là mất”. Chỉ có “commit”. Nó nằm đó. Mày sẽ tự thấy một năm trước mày đã làm gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "wry smile",
+        "guilty expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Dal mi git. Říkal: teď už nikdy nic neztratíš. Deset let vývoje. Commituj. Pushuj. Nikdy jsem nepushnul.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Er gab mir git. Sagte: Jetzt verlierst du nie wieder was. Zehn Jahre Entwicklung. Commiten. Pushen. Ich hab nie gepusht.",
+            "en": "He gave me git. Said: now you'll never lose anything again. Ten years of development. Commit. Push. I never pushed once.",
+            "fr": "Il m'a donné git. Il disait : maintenant, tu perdras plus jamais rien. Dix ans de développement. Commite. Pushe. J'ai jamais pushé.",
+            "it": "Mi ha dato git. Diceva: adesso non perderai mai più niente. Dieci anni di sviluppo. Committa. Pusha. Non ho mai pushato.",
+            "ja": "あいつは俺にgitをくれた。言ってた、もう二度と何も失わないって。開発十年。コミットしろ。プッシュしろ。俺は一度もプッシュしなかった。",
+            "ko": "걔는 나한테 git을 줬어. 그랬지, 이제 다시는 아무것도 안 잃어버릴 거라고. 10년의 개발. 커밋해. 푸시해. 난 한 번도 푸시 안 했어.",
+            "pl": "Dał mi gita. Mówił: teraz już nigdy nic nie stracisz. Dziesięć lat developmentu. Commituj. Pushuj. Nigdy nic nie pushnąłem.",
+            "pt-BR": "Ele me deu o git. Disse: agora você nunca mais vai perder nada. Dez anos de desenvolvimento. Commita. Dá push. Eu nunca dei push.",
+            "ru": "Он дал мне git. Говорил: теперь ты больше никогда ничего не потеряешь. Десять лет разработки. Коммить. Пушь. Я ни разу не запушил.",
+            "uk": "Він дав мені git. Казав: тепер ти ніколи нічого не втратиш. Десять років розробки. Коміть. Пушь. Я жодного разу не запушив.",
+            "vi": "Nó cho tao git. Nó bảo: giờ mày sẽ không bao giờ mất gì nữa. Mười năm phát triển. Commit đi. Push đi. Tao chưa push lần nào."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "clicking a mouse",
+        "ignoring a humming server beside him",
+        "tarot cards on the desk",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "patient",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "A tenhle problém vyřešíš jedním příkazem. Pojď, zkus to přes SSH. Ne klikat, psát.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und dieses Problem löst du mit einem Befehl. Komm, versuch's über SSH. Nicht klicken, tippen.",
+            "en": "And this problem you solve with one command. Come on, try it over SSH. Not clicking, typing.",
+            "fr": "Et ce problème-là, tu le règles en une commande. Vas-y, essaie en SSH. Pas cliquer, taper.",
+            "it": "E questo problema lo risolvi con un comando. Dai, prova via SSH. Non cliccare, scrivere.",
+            "ja": "で、この問題はコマンド一発で解決する。ほら、SSHでやってみろ。クリックじゃない、打つんだ。",
+            "ko": "그리고 이 문제는 명령어 하나로 해결돼. 자, SSH로 해 봐. 클릭 말고, 타이핑.",
+            "pl": "A ten problem rozwiążesz jedną komendą. Chodź, spróbuj przez SSH. Nie klikać, pisać.",
+            "pt-BR": "E esse problema você resolve com um comando. Vem, tenta por SSH. Nada de clicar, digitar.",
+            "ru": "А эту проблему решишь одной командой. Давай, попробуй через SSH. Не кликать, а писать.",
+            "uk": "А цю проблему розв'яжеш однією командою. Давай, спробуй через SSH. Не клацати, а писати.",
+            "vi": "Còn vấn đề này mày giải bằng một lệnh. Nào, thử qua SSH đi. Không click, mà gõ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_2",
+      "characters": [],
+      "visual_tags": [
+        "chat window glowing on a monitor",
+        "no readable text",
+        "dark room",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kosmo: Když se ti něco nehodí, řekneš mi, ať to smažu. A pak, ať zahodím i ty čtyři roky.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Kosmo: Wenn dir was nicht passt, sagst du mir, ich soll es löschen. Und dann, ich soll auch die vier Jahre wegwerfen.",
+            "en": "Kosmo: When something doesn't suit you, you tell me to delete it. And then to throw away those four years too.",
+            "fr": "Kosmo : Quand un truc te plaît pas, tu me dis de l'effacer. Et ensuite de jeter aussi ces quatre ans.",
+            "it": "Kosmo: Quando qualcosa non ti va, mi dici di cancellarlo. E poi di buttare via anche quei quattro anni.",
+            "ja": "Kosmo:気に入らないことがあると、消せって言うんだよな。で、その後はその四年も捨てろって。",
+            "ko": "Kosmo: 뭔가 마음에 안 들면 나한테 지우라고 하잖아. 그다음엔 그 4년까지 버리라고.",
+            "pl": "Kosmo: Jak ci coś nie pasuje, każesz mi to skasować. A potem wyrzucić też te cztery lata.",
+            "pt-BR": "Kosmo: Quando algo não te convém, você me manda apagar. E depois jogar fora esses quatro anos também.",
+            "ru": "Kosmo: Когда тебе что-то не нравится, ты говоришь мне это удалить. А потом выбросить и эти четыре года.",
+            "uk": "Kosmo: Коли тобі щось не підходить, ти кажеш мені це видалити. А потім викинути й ці чотири роки.",
+            "vi": "Kosmo: Hễ có gì không vừa ý, mày bảo tao xóa. Rồi bảo tao vứt luôn cả bốn năm đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [],
+      "visual_tags": [
+        "server switched off",
+        "darkness",
+        "single flashlight beam",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the server LEDs die, a flashlight beam switches on"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a flashlight",
+        "face lit from below",
+        "flat expression",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Windows mi stačí. Vždycky stačily.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mir reicht Windows. Hat mir immer gereicht.",
+            "en": "Windows is enough for me. It always was.",
+            "fr": "Windows me suffit. Ça m'a toujours suffi.",
+            "it": "A me basta Windows. Mi è sempre bastato.",
+            "ja": "俺はWindowsで十分だ。ずっとそうだった。",
+            "ko": "난 Windows면 충분해. 늘 그랬어.",
+            "pl": "Mnie wystarcza Windows. Zawsze wystarczał.",
+            "pt-BR": "Pra mim o Windows basta. Sempre bastou.",
+            "ru": "Мне хватает Windows. Всегда хватало.",
+            "uk": "Мені вистачає Windows. Завжди вистачало.",
+            "vi": "Tao dùng Windows là đủ. Lúc nào cũng đủ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [],
+      "visual_tags": [
+        "screwdriver unscrewing a server case",
+        "flashlight beam",
+        "loose screws",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

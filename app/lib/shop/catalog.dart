@@ -282,8 +282,11 @@ class CatalogGamebook {
   /// Downloadable: drawn and exported (`planned` ones are only announced).
   bool get ready => status == 'ready' && parts.isNotEmpty;
 
+  /// Prefix of a gamebook's pack id.
+  static const packPrefix = 'gamebook-';
+
   /// Pack id of its zip (pack.json `id`).
-  String get packId => 'gamebook-$id';
+  String get packId => '$packPrefix$id';
 
   /// The zip as a pack, so the store's buy / download / delete machinery serves it.
   CatalogPack asPack() => CatalogPack(

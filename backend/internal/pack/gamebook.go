@@ -7,7 +7,9 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"regexp"
 	"slices"
+	"strings"
 	"time"
 
 	"gopkg.in/yaml.v3"
@@ -34,8 +36,17 @@ type Graph struct {
 	Characters []string          `yaml:"characters"`
 	Locations  []GraphLocation   `yaml:"locations"`
 	Nodes      map[string]Node   `yaml:"nodes"`
-	order      []string          // node ids in file order
+	// ProductID is the store product of a paid gamebook; several gamebooks may share one (one purchase unlocks
+	// them all). KitProductID is its editor kit; with a shared product there is no kit unless it is named here.
+	ProductID    string   `yaml:"product_id"`
+	KitProductID string   `yaml:"kit_product_id"`
+	order        []string // node ids in file order
+	nodeBase     string   // graph id the nodes were imported under (differs from ID for a variant)
+	worldSuffix  string   // _<variant> of the node worlds
 }
+
+// gamebookIDRe is a gamebook id: like a pack id, plus "_" (m0/gamebook.py story ids gb_<id>_<node>).
+var gamebookIDRe = regexp.MustCompile(`^[a-z0-9_-]+$`)
 
 type GraphLocation struct {
 	ID          string `yaml:"id" json:"id"`
@@ -81,8 +92,8 @@ func ReadGraph(path string) (*Graph, error) {
 			g.order = append(g.order, doc.Nodes.Content[i].Value)
 		}
 	}
-	if g.ID == "" || !packIDRe.MatchString(g.ID) {
-		return nil, fmt.Errorf("%s: gamebook id %q: use [a-z0-9-]", path, g.ID)
+	if g.ID == "" || !gamebookIDRe.MatchString(g.ID) {
+		return nil, fmt.Errorf("%s: gamebook id %q: use [a-z0-9_-]", path, g.ID)
 	}
 	if _, ok := g.Nodes[g.Start]; !ok {
 		return nil, fmt.Errorf("%s: start %q is not a node", path, g.Start)
@@ -129,8 +140,25 @@ func ReadGraph(path string) (*Graph, error) {
 	return g, nil
 }
 
-// NodeWorld is the world a node was imported as (m0/gamebook.py story id gb_<id>_<node>).
-func (g *Graph) NodeWorld(node string) string { return "w_gb_" + g.ID + "_" + node }
+// NodeWorld is the world a node was imported as (m0/gamebook.py story id gb_<id>_<node>, a variant
+// gb_<id>_<node>_<variant>).
+func (g *Graph) NodeWorld(node string) string {
+	base := g.ID
+	if g.nodeBase != "" {
+		base = g.nodeBase
+	}
+	return "w_gb_" + base + "_" + node + g.worldSuffix
+}
+
+// Variant makes the graph the gamebook <id>_<variant>: the same nodes drawn again in another style and imported as
+// worlds w_gb_<id>_<node>_<variant> (Archion oil / semireal).
+func (g *Graph) Variant(v string) error {
+	if !gamebookIDRe.MatchString(v) {
+		return fmt.Errorf("variant %q: use [a-z0-9_-]", v)
+	}
+	g.nodeBase, g.ID, g.worldSuffix = g.ID, g.ID+"_"+v, "_"+v
+	return nil
+}
 
 // Selection is every node's world.
 func (g *Graph) Selection() Selection {
@@ -315,10 +343,13 @@ func gamebookNames(o *Options, r Rules) {
 		o.Title = g.Title
 	}
 	if o.ProductID == "" && !o.Free {
+		o.ProductID = g.ProductID
+	}
+	if o.ProductID == "" && !o.Free {
 		o.ProductID = Fill(r.Naming.GamebookProduct, vars)
 	}
 	if o.ReleaseTag == "" {
-		o.ReleaseTag = fmt.Sprintf("gamebook-%s-v%d", g.ID, o.Version)
+		o.ReleaseTag = fmt.Sprintf("gamebook-%s-v%d", strings.ReplaceAll(g.ID, "_", "-"), o.Version) // tags take no "_"
 	}
 	if o.Type == "" {
 		o.Type = g.Type
@@ -341,8 +372,11 @@ func writeGamebookCatalog(opts Options, parts []Part, sum *Summary) error {
 	if n, ok := gb.Nodes[gb.Start]; ok {
 		cover = coverPath(n.Story)
 	}
-	r := rule()
-	entry := CatalogGamebook{ID: g.ID, ProductID: opts.ProductID, KitProductID: Fill(r.Naming.KitProduct, map[string]string{"id": g.ID}),
+	kit := g.KitProductID
+	if g.ProductID == "" {
+		kit = Fill(rule().Naming.KitProduct, map[string]string{"id": g.ID})
+	}
+	entry := CatalogGamebook{ID: g.ID, ProductID: opts.ProductID, KitProductID: kit,
 		Type: opts.Type, Title: opts.Title, TitleI18n: gb.TitleI18n, Audience: packAudience(parts), Languages: packLanguages(parts),
 		Cover: cover, Status: "ready", Version: opts.Version, Nodes: len(gb.Nodes), NodeIDs: gb.Order, Endings: gb.Endings, Bytes: ps.Bytes,
 		Graph: GamebookFile, Lore: GamebookFile,

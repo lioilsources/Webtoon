@@ -1,0 +1,94 @@
+{
+  "id": "w_gb_archion_a3",
+  "title": "Archion: Konec jednoho přátelství — Podzim: Zákopová válka",
+  "synopsis": "Jeden podzim dvou kamarádů: snílek v neonovém bunkru a táta na zahradě plné dětí. Spor o peníze a o hru, kterou chtěli udělat spolu, skončí tichem.",
+  "tone": "hořký, ironický, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "noir_graphic",
+  "profile": "noir",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: bunkr a zahrada jsou dvě poloviny jeviště.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; Ol1n zavře notebook a jde za dětmi, Kosmovi zhasne poslední pixel."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_bunkr_3",
+      "l_dum_3",
+      "l_zahrada_3"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+      "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, messy tousled blond hair sticking out, stubble, unkempt, tired eyes, pale skin",
+      "outfits": {
+        "default": "worn chunky wool sweater, faded old trousers"
+      },
+      "photo": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+      "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, messy tousled blond hair sticking out, stubble, unkempt, tired eyes, pale skin, worn chunky wool sweater, faded old trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in an autumn jacket",
+      "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+      "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_bunkr_3",
+      "name": "Bunkr – 3. dějství",
+      "description": "Bunkr v rudé záři výstražné LED.",
+      "tag_prompt": "indoors, dark underground bunker room, red warning LED light, harsh red glow, monitors, tangled cables, deep shadows, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_3",
+      "name": "Zahrada – 3. dějství",
+      "description": "Zahrada skoro bez listí, studený vítr.",
+      "tag_prompt": "outdoors, family garden in late autumn, almost bare trees, fallen brown leaves blowing in a cold wind, grey overcast sky, wooden garden table",
+      "mood": ""
+    },
+    {
+      "id": "l_dum_3",
+      "name": "Dům – 3. dějství",
+      "description": "Rozsvícené okno domu, za ním stíny dětí.",
+      "tag_prompt": "outdoors, family house at dusk seen from the garden, warm lit window, shadows of children playing behind the curtain, bare tree branches",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion",
+    "node": "a3"
+  }
+}

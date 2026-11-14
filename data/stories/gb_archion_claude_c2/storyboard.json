@@ -1,0 +1,768 @@
+{
+  "title": "Léto: Smaž to",
+  "title_i18n": {
+    "de": "Sommer: Lösch es",
+    "en": "Summer: Delete It",
+    "fr": "Été : Efface-le",
+    "it": "Estate: Cancellalo",
+    "ja": "夏：消せよ",
+    "ko": "여름: 지워",
+    "pl": "Lato: Skasuj to",
+    "pt-BR": "Verão: Apaga isso",
+    "ru": "Лето: Удали это",
+    "uk": "Літо: Видали це",
+    "vi": "Mùa hè: Xóa đi"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_2",
+      "characters": [],
+      "visual_tags": [
+        "roses",
+        "tall sunflowers",
+        "inflatable paddling pool",
+        "garden hose",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "sunflowers nodding, water rippling in the paddling pool, heat shimmer"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "sitting under a sun umbrella",
+        "laptop on the table",
+        "beaming smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting among cardboard boxes",
+        "tired",
+        "slumped",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing excitedly",
+        "beaming"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Koukni na tohle. Přepsal jsem to. Jiná platforma, celé od nuly, podle tvých pravidel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schau dir das an. Ich hab's neu geschrieben. Andere Plattform, komplett von null, nach deinen Regeln.",
+            "en": "Check this out. I rewrote it. Different platform, from scratch, by your rules.",
+            "fr": "Regarde ça. Je l'ai réécrit. Autre plateforme, tout de zéro, selon tes règles.",
+            "it": "Guarda qua. L'ho riscritto. Altra piattaforma, tutto da zero, con le tue regole.",
+            "ja": "これ見ろよ。書き直した。別プラットフォームで、ゼロから、お前のルール通りに。",
+            "ko": "이거 봐. 다시 짰어. 다른 플랫폼에서 처음부터, 네 규칙대로.",
+            "pl": "Patrz na to. Przepisałem to. Inna platforma, od zera, według twoich zasad.",
+            "pt-BR": "Olha isso. Eu reescrevi. Outra plataforma, do zero, pelas tuas regras.",
+            "ru": "Глянь. Я переписал. Другая платформа, всё с нуля, по твоим правилам.",
+            "uk": "Глянь. Я переписав. Інша платформа, усе з нуля, за твоїми правилами.",
+            "vi": "Xem này. Tao viết lại rồi. Nền tảng khác, làm từ đầu, theo luật của mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "proud expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "A doplnil jsem realtime battle. Tys ji neměl dotaženou, tak jsem ji udělal po svém.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und ich hab den Realtime-Battle ergänzt. Du hattest ihn nicht fertig, also hab ich ihn auf meine Art gemacht.",
+            "en": "And I added the realtime battle. You never finished it, so I did it my way.",
+            "fr": "Et j'ai ajouté le combat en temps réel. Tu l'avais pas fini, alors je l'ai fait à ma façon.",
+            "it": "E ho aggiunto la battaglia in tempo reale. Tu non l'avevi finita, così l'ho fatta a modo mio.",
+            "ja": "リアルタイムバトルも足した。お前が仕上げてなかったから、俺のやり方で作った。",
+            "ko": "실시간 전투도 넣었어. 네가 마무리 안 했길래 내 방식대로 만들었어.",
+            "pl": "I dorobiłem realtime battle. Ty jej nie skończyłeś, więc zrobiłem ją po swojemu.",
+            "pt-BR": "E acrescentei a batalha em tempo real. Você não tinha terminado, então fiz do meu jeito.",
+            "ru": "И добавил битву в реальном времени. Ты её не доделал, так что я сделал по-своему.",
+            "uk": "І додав битву в реальному часі. Ти її не доробив, тож я зробив по-своєму.",
+            "vi": "Tao thêm cả trận đánh realtime. Mày chưa làm xong nên tao làm theo kiểu tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_2",
+      "characters": [],
+      "visual_tags": [
+        "hand hovering over a mouse",
+        "hesitating",
+        "monitor glow",
+        "no readable text"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "face hardening",
+        "staring at a monitor",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tohle není Nebulon.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist nicht Nebulon.",
+            "en": "This isn't Nebulon.",
+            "fr": "C'est pas Nebulon.",
+            "it": "Questo non è Nebulon.",
+            "ja": "これはNebulonじゃない。",
+            "ko": "이건 Nebulon이 아니야.",
+            "pl": "To nie jest Nebulon.",
+            "pt-BR": "Isso não é o Nebulon.",
+            "ru": "Это не Nebulon.",
+            "uk": "Це не Nebulon.",
+            "vi": "Đây không phải Nebulon."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "blunt expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Je to hratelný. To tvůj po deseti letech není.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist spielbar. Deins ist das nach zehn Jahren nicht.",
+            "en": "It's playable. Yours isn't, after ten years.",
+            "fr": "C'est jouable. Le tien l'est pas, après dix ans.",
+            "it": "È giocabile. Il tuo, dopo dieci anni, no.",
+            "ja": "遊べるだろ。お前のは十年経っても遊べない。",
+            "ko": "플레이는 되잖아. 네 건 십 년째 안 되고.",
+            "pl": "Da się w to grać. W twoje po dziesięciu latach nie.",
+            "pt-BR": "Dá pra jogar. O teu, depois de dez anos, não dá.",
+            "ru": "Зато играбельно. Твой за десять лет — нет.",
+            "uk": "Зате грабельно. Твій за десять років — ні.",
+            "vi": "Chơi được đấy. Cái của mày mười năm rồi vẫn chưa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "angry",
+        "typing hard"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty vůbec nevíš, o čem ta hra je. Nahážeš do ní svoje kusy a myslíš si, žes ji pochopil.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast keine Ahnung, worum es in dem Spiel geht. Du schmeißt deine Teile rein und denkst, du hast es kapiert.",
+            "en": "You have no idea what the game is about. You throw your own bits in and think you get it.",
+            "fr": "T'as aucune idée de ce que raconte ce jeu. Tu y balances tes trucs et tu crois l'avoir compris.",
+            "it": "Non hai idea di cosa parli il gioco. Ci butti dentro i tuoi pezzi e pensi di averlo capito.",
+            "ja": "お前はこのゲームが何なのか全然わかってない。自分のパーツ突っ込んで、わかった気になってるだけだ。",
+            "ko": "넌 이 게임이 뭔지 전혀 몰라. 네 것들 쑤셔 넣고 이해했다고 생각하지.",
+            "pl": "Ty w ogóle nie wiesz, o czym jest ta gra. Wrzucasz do niej swoje kawałki i myślisz, że ją zrozumiałeś.",
+            "pt-BR": "Você não faz ideia do que é esse jogo. Joga teus pedaços nele e acha que entendeu.",
+            "ru": "Ты вообще не понимаешь, о чём эта игра. Накидал туда своих кусков и думаешь, что понял.",
+            "uk": "Ти взагалі не розумієш, про що ця гра. Накидав туди своїх шматків і думаєш, що зрозумів.",
+            "vi": "Mày chẳng hiểu game này nói về cái gì. Nhét mấy thứ của mày vào rồi tưởng là hiểu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Tak to smaž a udělej znovu. I ty čtyři roky. Někdy je to nejrychlejší cesta.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dann lösch es und mach's neu. Auch die vier Jahre. Manchmal ist das der schnellste Weg.",
+            "en": "Then delete it and start over. The four years too. Sometimes it's the fastest way.",
+            "fr": "Alors efface et refais. Les quatre ans aussi. Parfois c'est le plus rapide.",
+            "it": "Allora cancellalo e rifallo. Anche i quattro anni. A volte è la via più veloce.",
+            "ja": "なら消して作り直せ。その四年分もな。それが一番早いこともある。",
+            "ko": "그럼 지우고 다시 해. 그 4년도. 그게 제일 빠를 때도 있어.",
+            "pl": "To skasuj i zrób od nowa. Te cztery lata też. Czasem to najszybsza droga.",
+            "pt-BR": "Então apaga e faz de novo. Os quatro anos também. Às vezes é o caminho mais rápido.",
+            "ru": "Так удали и сделай заново. И те четыре года тоже. Иногда так быстрее всего.",
+            "uk": "То видали й зроби заново. І ті чотири роки теж. Іноді так найшвидше.",
+            "vi": "Thế thì xóa đi làm lại. Cả bốn năm đó. Đôi khi đó là đường nhanh nhất."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_2",
+      "characters": [],
+      "visual_tags": [
+        "one neon tube going dark",
+        "cardboard boxes",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "one neon tube flickers and goes dark"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "whispering to himself",
+        "staring into nothing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Čtyři roky. Smaž.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vier Jahre. Lösch.",
+            "en": "Four years. Delete.",
+            "fr": "Quatre ans. Efface.",
+            "it": "Quattro anni. Cancella.",
+            "ja": "四年。消せ、か。",
+            "ko": "4년. 지워.",
+            "pl": "Cztery lata. Skasuj.",
+            "pt-BR": "Quatro anos. Apaga.",
+            "ru": "Четыре года. Удали.",
+            "uk": "Чотири роки. Видали.",
+            "vi": "Bốn năm. Xóa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dvojce_2"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "holding a garden hose",
+        "splashing water",
+        "laughing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_2",
+          "text": "Tati, ty jsi mokrej!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, du bist ja nass!",
+            "en": "Daddy, you're all wet!",
+            "fr": "Papa, t'es tout mouillé !",
+            "it": "Papà, sei tutto bagnato!",
+            "ja": "パパ、びしょびしょー！",
+            "ko": "아빠, 다 젖었어!",
+            "pl": "Tato, jesteś mokry!",
+            "pt-BR": "Papai, você tá molhado!",
+            "ru": "Папа, ты мокрый!",
+            "uk": "Тату, ти мокрий!",
+            "vi": "Bố ơi, bố ướt hết rồi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a laptop above his head",
+        "laughing",
+        "wet t-shirt",
+        "water splashes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Notebook ne! Notebook je posvátnej!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nicht der Laptop! Der Laptop ist heilig!",
+            "en": "Not the laptop! The laptop is sacred!",
+            "fr": "Pas l'ordi ! L'ordi est sacré !",
+            "it": "Il portatile no! Il portatile è sacro!",
+            "ja": "パソコンはダメ！パソコンは神聖なんだ！",
+            "ko": "노트북은 안 돼! 노트북은 신성해!",
+            "pl": "Tylko nie laptop! Laptop jest święty!",
+            "pt-BR": "O notebook não! O notebook é sagrado!",
+            "ru": "Только не ноутбук! Ноутбук — святое!",
+            "uk": "Тільки не ноутбук! Ноутбук — святе!",
+            "vi": "Đừng có laptop! Laptop là bất khả xâm phạm!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dcera_9"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking up at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9",
+          "text": "Ty se směješ, ale máš smutný oči.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du lachst, aber deine Augen sind traurig.",
+            "en": "You're laughing, but your eyes are sad.",
+            "fr": "Tu ris, mais t'as les yeux tristes.",
+            "it": "Ridi, ma hai gli occhi tristi.",
+            "ja": "パパ笑ってるけど、目が悲しそう。",
+            "ko": "아빠 웃는데, 눈은 슬퍼 보여.",
+            "pl": "Śmiejesz się, ale masz smutne oczy.",
+            "pt-BR": "Você tá rindo, mas teus olhos tão tristes.",
+            "ru": "Ты смеёшься, а глаза грустные.",
+            "uk": "Ти смієшся, а очі сумні.",
+            "vi": "Bố cười nhưng mắt bố buồn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [],
+      "visual_tags": [
+        "hands on a laptop keyboard",
+        "wet garden table",
+        "sunflowers behind",
+        "no readable text"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "curious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "A co server? Jede?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und der Server? Läuft er?",
+            "en": "And the server? Is it running?",
+            "fr": "Et le serveur ? Il tourne ?",
+            "it": "E il server? Gira?",
+            "ja": "で、サーバーは？動いてる？",
+            "ko": "서버는? 돌아가?",
+            "pl": "A serwer? Chodzi?",
+            "pt-BR": "E o servidor? Tá rodando?",
+            "ru": "А сервер? Работает?",
+            "uk": "А сервер? Працює?",
+            "vi": "Còn server? Chạy không?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "flat expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Server už nemám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Den Server hab ich nicht mehr.",
+            "en": "I don't have the server anymore.",
+            "fr": "J'ai plus le serveur.",
+            "it": "Il server non ce l'ho più.",
+            "ja": "サーバーはもうない。",
+            "ko": "서버 이제 없어.",
+            "pl": "Serwera już nie mam.",
+            "pt-BR": "Não tenho mais o servidor.",
+            "ru": "Сервера у меня больше нет.",
+            "uk": "Сервера в мене вже нема.",
+            "vi": "Server tao không còn nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "frowning",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Jak nemáš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie, nicht mehr?",
+            "en": "What do you mean, you don't?",
+            "fr": "Comment ça, t'as plus ?",
+            "it": "In che senso non ce l'hai?",
+            "ja": "ないって、どういうことだ？",
+            "ko": "없다니?",
+            "pl": "Jak to nie masz?",
+            "pt-BR": "Como assim não tem?",
+            "ru": "Как это нет?",
+            "uk": "Як це нема?",
+            "vi": "Không còn là sao?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "avoiding eye contact",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Potřeboval jsem peníze.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich brauchte Geld.",
+            "en": "I needed money.",
+            "fr": "J'avais besoin d'argent.",
+            "it": "Mi servivano soldi.",
+            "ja": "金が要ったんだ。",
+            "ko": "돈이 필요했어.",
+            "pl": "Potrzebowałem kasy.",
+            "pt-BR": "Eu precisava de dinheiro.",
+            "ru": "Мне нужны были деньги.",
+            "uk": "Мені потрібні були гроші.",
+            "vi": "Tao cần tiền."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_leto"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "shocked",
+        "angry expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_leto",
+          "text": "Byly v něm moje disky. Stovky hodin práce.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Da waren meine Platten drin. Hunderte Stunden Arbeit.",
+            "en": "My drives were in it. Hundreds of hours of work.",
+            "fr": "Il y avait mes disques dedans. Des centaines d'heures de boulot.",
+            "it": "C'erano dentro i miei dischi. Centinaia di ore di lavoro.",
+            "ja": "俺のディスクが入ってたんだぞ。何百時間分の作業が。",
+            "ko": "거기 내 디스크 들어 있었어. 수백 시간 작업이.",
+            "pl": "Były w nim moje dyski. Setki godzin pracy.",
+            "pt-BR": "Meus discos tavam nele. Centenas de horas de trabalho.",
+            "ru": "Там были мои диски. Сотни часов работы.",
+            "uk": "Там були мої диски. Сотні годин роботи.",
+            "vi": "Trong đó có ổ cứng của tao. Hàng trăm giờ làm việc."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "flat expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Disky jsem vyndal.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Platten hab ich rausgenommen.",
+            "en": "I took the drives out.",
+            "fr": "J'ai sorti les disques.",
+            "it": "I dischi li ho tolti.",
+            "ja": "ディスクは抜いといた。",
+            "ko": "디스크는 빼놨어.",
+            "pl": "Dyski wyjąłem.",
+            "pt-BR": "Os discos eu tirei.",
+            "ru": "Диски я вынул.",
+            "uk": "Диски я вийняв.",
+            "vi": "Ổ cứng tao tháo ra rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "wet garden table",
+        "sunlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop lid closing, water drops sparkling"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dvojce_1"
+        }
+      ],
+      "visual_tags": [
+        "pulling someone by the hand",
+        "paddling pool",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "laying out tarot cards",
+        "waiting",
+        "alone",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

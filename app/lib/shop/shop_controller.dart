@@ -110,7 +110,24 @@ class ShopController extends StateNotifier<ShopState> {
       catalog: cached,
       loading: cached == null,
     );
+    // Before the refresh may replace it: the cached catalog is the one the installs were made
+    // under (on the first start of a new app version, the one the old version left on disk).
+    await _grandfather(cached);
     await refresh();
+  }
+
+  /// Remembers the installed gamebooks that [catalog] has `free`, so they stay unlocked when a
+  /// later catalog makes them paid. The pack store is loaded before the shop starts (the app
+  /// waits for the pack bootstrap), so installs of an older app version count too.
+  Future<void> _grandfather(Catalog? catalog) async {
+    if (catalog == null) return;
+    final ids = [
+      for (final g in catalog.gamebooks)
+        if (g.free && installer.hasAnyVersion(g.asPack())) g.id,
+    ];
+    if (ids.isEmpty) return;
+    final ents = await entitlementRepo.grandfather(ids);
+    if (mounted) state = state.copyWith(entitlements: ents);
   }
 
   /// Re-downloads catalog.json (when online) and the product prices.
@@ -124,6 +141,7 @@ class ShopController extends StateNotifier<ShopState> {
       final c = await catalogs.refresh();
       if (!mounted) return;
       state = state.copyWith(catalog: c, loading: false);
+      await _grandfather(c);
     } catch (e) {
       debugPrint('shop: catalog refresh failed: $e');
       if (!mounted) return;
@@ -251,6 +269,7 @@ class ShopController extends StateNotifier<ShopState> {
       }
       if (!mounted) return;
       state = state.copyWith(downloads: {...state.downloads}..remove(pack.id));
+      if (pack.gamebook && pack.free) await _grandfather(c);
       onPacksChanged();
     } catch (e) {
       if (!mounted) return;

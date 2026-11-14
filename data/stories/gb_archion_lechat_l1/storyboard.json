@@ -1,0 +1,376 @@
+{
+  "title": "Jaro: Budu ti chybět",
+  "title_i18n": {
+    "de": "Frühling: Du wirst mich vermissen",
+    "en": "Spring: You'll Miss Me",
+    "fr": "Printemps : Je vais te manquer",
+    "it": "Primavera: Ti mancherò",
+    "ja": "春：俺がいなくて寂しくなるぞ",
+    "ko": "봄: 내가 그리울 거야",
+    "pl": "Wiosna: Będziesz za mną tęsknić",
+    "pt-BR": "Primavera: Você vai sentir minha falta",
+    "ru": "Весна: Ты будешь по мне скучать",
+    "uk": "Весна: Ти сумуватимеш за мною",
+    "vi": "Mùa xuân: Mày sẽ nhớ tao"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_sklep_1",
+      "characters": [],
+      "visual_tags": [
+        "vaulted stone cellar",
+        "racks of graphics cards",
+        "blue and violet neon",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes humming and flickering"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "french potager in bloom",
+        "zinc garden table",
+        "laptop",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blossom petals drifting over the vegetable beds"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "stacking terracotta flower pots",
+        "tower of pots",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a desk",
+        "face lit by monitor glow",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing slowly",
+        "flat voice",
+        "looking at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Netuším, o čem mluvíš. Na dobrý video jsou potřeba dobrý záběry, to jo. Ale ať je jasno: o vývoji už s tebou mluvit nebudu. Nejsem na sdílení.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Keine Ahnung, wovon du redest. Für ein gutes Video braucht man gute Aufnahmen, klar. Aber damit das klar ist: Über die Entwicklung rede ich mit dir nicht mehr. Ich bin nicht so fürs Teilen.",
+            "en": "No idea what you're on about. A good video needs good shots, sure. But let's be clear: I'm not talking dev with you anymore. I'm not the sharing type.",
+            "fr": "Je vois pas de quoi tu parles. Pour une bonne vidéo, il faut de bons plans, d'accord. Mais que ce soit clair : je ne parle plus du dev avec toi. Je ne suis pas du genre à partager.",
+            "it": "Non so di cosa parli. Per un bel video servono belle riprese, ok. Ma sia chiaro: dello sviluppo con te non parlo più. Non sono tipo da condividere.",
+            "ja": "何の話だか分かんねえな。いい動画にはいい素材が要る、それはそうだ。でもはっきり言っとく。開発の話はもうお前とはしない。俺は共有するタイプじゃないんだ。",
+            "ko": "무슨 소린지 모르겠다. 좋은 영상엔 좋은 장면이 필요하지, 그건 맞아. 근데 확실히 해두자. 개발 얘기는 이제 너랑 안 해. 난 공유하는 타입이 아니야.",
+            "pl": "Nie mam pojęcia, o czym mówisz. Do dobrego filmu trzeba dobrych ujęć, jasne. Ale żeby było jasne: o devie już z tobą nie gadam. Nie jestem od dzielenia się.",
+            "pt-BR": "Não faço ideia do que você tá falando. Pra um vídeo bom precisa de boas cenas, tá. Mas fica claro: não falo mais de desenvolvimento com você. Não sou de compartilhar.",
+            "ru": "Без понятия, о чём ты. Для хорошего видео нужны хорошие кадры, да. Но чтоб было ясно: о разработке я с тобой больше не говорю. Я не из тех, кто делится.",
+            "uk": "Гадки не маю, про що ти. Для гарного відео потрібні гарні кадри, так. Але щоб було ясно: про розробку я з тобою більше не говорю. Я не з тих, хто ділиться.",
+            "vi": "Tao chả hiểu mày nói gì. Video hay thì cần cảnh quay tốt, đúng. Nhưng nói rõ luôn: chuyện phát triển tao không bàn với mày nữa. Tao không phải kiểu hay chia sẻ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a table",
+        "from front",
+        "shooing children from the keyboard",
+        "typing",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Já sdílím rád, ale nemysli si, pochopil jsem, že ty to máš z nějakého důvodu nastavené jinak.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich teile gern, aber glaub nicht, ich hätte nicht kapiert, dass du das aus irgendeinem Grund anders siehst.",
+            "en": "I like sharing, but don't think I haven't figured out you're wired differently for some reason.",
+            "fr": "Moi, j'aime partager, mais crois pas que j'ai pas compris que toi, pour une raison ou une autre, t'es réglé autrement.",
+            "it": "Io condivido volentieri, ma non pensare che non abbia capito che tu, per qualche motivo, sei fatto diversamente.",
+            "ja": "俺は共有するの好きだけどな。でも勘違いすんなよ、お前が何か理由があって違う考えなのは分かってるから。",
+            "ko": "난 공유하는 거 좋아해. 근데 착각하지 마, 넌 무슨 이유로든 다르게 생겨먹었다는 거 알아.",
+            "pl": "Ja chętnie się dzielę, ale nie myśl, że nie załapałem, że ty z jakiegoś powodu masz to ustawione inaczej.",
+            "pt-BR": "Eu gosto de compartilhar, mas não pensa que eu não saquei que você, por algum motivo, funciona diferente.",
+            "ru": "Я делиться люблю, но не думай, я понял, что у тебя это почему-то устроено иначе.",
+            "uk": "Я ділитися люблю, але не думай, я зрозумів, що в тебе це чомусь налаштовано інакше.",
+            "vi": "Tao thì thích chia sẻ, nhưng đừng tưởng tao không hiểu là mày vì lý do gì đó lại khác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "dcera_9"
+        }
+      ],
+      "visual_tags": [
+        "holding out a crayon drawing",
+        "hopeful",
+        "looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "crayon drawing on a zinc table",
+        "laptop beside it",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter expression",
+        "looking down",
+        "monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Spolupráce nám nevyšla. Štvalo mě to. A něco z toho bolí pořád.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Zusammenarbeit hat nicht geklappt. Das hat mich angepisst. Und manches davon tut immer noch weh.",
+            "en": "Working together didn't pan out. It pissed me off. And some of it still hurts.",
+            "fr": "Notre collaboration n'a pas marché. Ça m'a gonflé. Et une partie fait encore mal.",
+            "it": "La collaborazione non ha funzionato. Mi ha fatto incazzare. E certe cose fanno ancora male.",
+            "ja": "一緒にやるのはうまくいかなかった。ムカついたよ。今でも痛いところがある。",
+            "ko": "같이 하는 건 잘 안 됐지. 짜증 났어. 아직도 좀 아픈 데가 있고.",
+            "pl": "Współpraca nam nie wyszła. Wkurzało mnie to. I część z tego wciąż boli.",
+            "pt-BR": "A parceria não deu certo. Aquilo me irritou. E uma parte ainda dói.",
+            "ru": "Сотрудничество у нас не сложилось. Меня это бесило. И кое-что до сих пор болит.",
+            "uk": "Співпраця в нас не склалася. Мене це бісило. І дещо досі болить.",
+            "vi": "Hợp tác không thành. Tao cay lắm. Có mấy chuyện giờ vẫn còn đau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "turning to the children",
+        "apologetic smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Půjdu za minutu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich geh gleich.",
+            "en": "I'll head out in a minute.",
+            "fr": "J'y vais dans une minute.",
+            "it": "Tra un minuto vado.",
+            "ja": "もうすぐ行くわ。",
+            "ko": "나 금방 갈게.",
+            "pl": "Za minutę idę.",
+            "pt-BR": "Já, já eu vou.",
+            "ru": "Сейчас пойду.",
+            "uk": "За хвилину піду.",
+            "vi": "Một phút nữa tao đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "slight smile",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Budu ti chybět.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du wirst mich vermissen.",
+            "en": "You'll miss me.",
+            "fr": "Je vais te manquer.",
+            "it": "Ti mancherò.",
+            "ja": "俺がいなくて寂しくなるぞ。",
+            "ko": "내가 그리울 거야.",
+            "pl": "Będziesz za mną tęsknić.",
+            "pt-BR": "Você vai sentir minha falta.",
+            "ru": "Ты будешь по мне скучать.",
+            "uk": "Ти сумуватимеш за мною.",
+            "vi": "Mày sẽ nhớ tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "motionless",
+        "staring at a monitor",
+        "blue light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "shrugging",
+        "looking away from the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nevím. Hokej můžem probrat, a jiný věci taky. Není to tak černý.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Weiß nicht. Über Eishockey können wir reden, und über andere Sachen auch. So schwarz ist es nicht.",
+            "en": "Dunno. We can talk hockey, and other stuff too. It's not that bleak.",
+            "fr": "Sais pas. On peut parler hockey, et d'autres trucs aussi. C'est pas si noir.",
+            "it": "Boh. Di hockey possiamo parlare, e anche di altro. Non è così nero.",
+            "ja": "さあな。ホッケーの話ならできるし、他のこともな。そこまで真っ暗じゃねえよ。",
+            "ko": "글쎄. 하키 얘기는 할 수 있잖아, 다른 얘기도. 그렇게 암울하진 않아.",
+            "pl": "Nie wiem. O hokeju możemy pogadać, i o innych rzeczach też. Nie jest tak czarno.",
+            "pt-BR": "Sei lá. Dá pra falar de hóquei, e de outras coisas também. Não é tão sombrio.",
+            "ru": "Не знаю. Про хоккей можем поговорить, и про другое тоже. Не всё так мрачно.",
+            "uk": "Не знаю. Про хокей можемо поговорити, і про інше теж. Не все так чорно.",
+            "vi": "Không biết. Chuyện khúc côn cầu thì vẫn nói được, chuyện khác cũng vậy. Không đến nỗi u ám thế đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "single blossom falling",
+        "zinc table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "one blossom slowly falling past the laptop"
+    }
+  ]
+}

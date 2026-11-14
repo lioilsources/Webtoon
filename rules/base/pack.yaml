@@ -38,7 +38,7 @@ naming:
 # Apple now uses price points; `tier` is the equivalent of the old price tier (USD 0.99 = Tier 1).
 price_tiers:
   pack:        {usd: 0.99, tier: 1}
-  gamebook:    {usd: 1.99, tier: 2}
+  gamebook:    {usd: 0.99, tier: 1}   # every in-app pack is 0.99 (Olin, 2026-11-14)
   bundle_type: {usd: 2.99, tier: 3}   # no type bundle is sold (decided 2026-11-08): only bundle_all
   kit:         {usd: 3.99, tier: 4}
   bundle_all:  {usd: 4.99, tier: 5}

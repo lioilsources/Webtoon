@@ -1,0 +1,120 @@
+{
+  "id": "w_gb_archion_claude_c3",
+  "title": "Archion: Hra o čtyřech ročních obdobích — Podzim: Nesdílný a Dluh",
+  "synopsis": "Dva kamarádi, kteří se znají dvacet let: jeden žije v protiatomovém krytu, kde se nemění čas, druhý na zahradě, kde se střídají roční období. Dvě noci útočiště, jedna hra a rok zpráv přes plátno.",
+  "tone": "lyrický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_linocut",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; zpráva o padesáti na padesát už nebude doručena, v krytu zhasne poslední neon a Ol1n odejde s dcerami k domu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kryt_3",
+      "l_zahrada_3"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 32 with a boyish face, messy tousled sandy blond hair sticking out, no grey hair, light stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, young adult male, messy tousled sandy blond hair sticking out, no grey hair, light stubble, unkempt, boyish face, looks early thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 32 with a boyish face, messy tousled sandy blond hair sticking out, no grey hair, light stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, young adult male, messy tousled sandy blond hair sticking out, no grey hair, light stubble, unkempt, boyish face, looks early thirties, smooth skin, no wrinkles, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, healthy, calm, warm",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, a wool blanket over the shoulders, jeans"
+      },
+      "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and blue-grey eyes",
+      "tag_prompt": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, healthy, calm, warm, dark green zip-up field jacket over a grey sweater, a wool blanket over the shoulders, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_9_podzim",
+      "name": "Nejstarší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "base": "child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "red puffer jacket, knitted hat, long pants, rubber boots"
+      },
+      "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, red puffer jacket, knitted hat, long pants, rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojce_1_podzim",
+      "name": "Pětiletá první",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "pink autumn jacket, long pants, rubber boots"
+      },
+      "photo": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, pink autumn jacket, long pants, rubber boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kryt_3",
+      "name": "Kryt – podzim",
+      "description": "Svítí už jen polovina neonů.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, half of the neon tubes switched off, dim teal light, long shadows, monitor glow, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_3",
+      "name": "Zahrada – podzim",
+      "description": "Zrezivělé listí, hromada listí.",
+      "tag_prompt": "outdoors, family garden in autumn, rust red and orange leaves falling, a big pile of raked leaves, leaves on the garden table, grey afternoon light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_claude",
+    "node": "c3"
+  }
+}

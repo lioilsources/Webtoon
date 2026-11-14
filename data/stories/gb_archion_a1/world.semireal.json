@@ -1,0 +1,120 @@
+{
+ "id": "w_gb_archion_a1",
+ "title": "Archion: Konec jednoho přátelství — Jaro: Budu ti chybět",
+ "synopsis": "Jeden podzim dvou kamarádů: snílek v neonovém bunkru a táta na zahradě plné dětí. Spor o peníze a o hru, kterou chtěli udělat spolu, skončí tichem.",
+ "tone": "hořký, ironický, lidský",
+ "audience": "adult",
+ "language": "cs",
+ "style_id": "archion_semireal",
+ "profile": "archion",
+ "bible": {
+  "rules": [
+   "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: bunkr a zahrada jsou dvě poloviny jeviště.",
+   "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+   "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách."
+  ],
+  "factions": []
+ },
+ "canon": {
+  "nodes": [],
+  "constraints": [
+   "Přátelství skončí; Ol1n zavře notebook a jde za dětmi, Kosmovi zhasne poslední pixel."
+  ]
+ },
+ "permissions": {
+  "allowed_locations": [
+   "l_bunkr_1",
+   "l_zahrada_1"
+  ]
+ },
+ "characters": [
+  {
+   "id": "kosmo",
+   "name": "Kosmo",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, (blond hair:1.4), (messy tousled light blond hair:1.2), sticking out, (light blond stubble:1.1), unkempt, tired eyes, pale skin",
+   "outfits": {
+    "default": "worn chunky wool sweater, faded old trousers"
+   },
+   "photo": "an unkempt Czech loner aged 34, with messy tousled blond hair sticking out in all directions, stubble and tired restless eyes, pale from monitor light",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, (blond hair:1.4), (messy tousled light blond hair:1.2), sticking out, (light blond stubble:1.1), unkempt, tired eyes, pale skin, worn chunky wool sweater, faded old trousers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_jaro",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in a light shirt in spring sun",
+   "base": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses",
+   "outfits": {
+    "default": "light linen shirt with rolled-up sleeves, jeans"
+   },
+   "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+   "tag_prompt": "adult, young adult male, youthful face, looks mid thirties, smooth skin, no wrinkles, short blond hair, full blond beard, blue-grey eyes, glasses, light linen shirt with rolled-up sleeves, jeans",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dcera_9",
+   "name": "Nejstarší dcera",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "base": "child, girl, light brown hair, long braid, brown eyes",
+   "outfits": {
+    "default": "lavender long-sleeved t-shirt, denim overalls, long pants, sneakers"
+   },
+   "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, lavender long-sleeved t-shirt, denim overalls, long pants, sneakers",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dvojcata_5",
+   "name": "Dvojčata",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "2girls",
+   "human": true,
+   "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+   "outfits": {
+    "default": "matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers"
+   },
+   "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+   "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers",
+   "identity_level": "prompt",
+   "reference_images": []
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_bunkr_1",
+   "name": "Bunkr – 1. dějství",
+   "description": "Podzemní místnost, blikající neony, hučící ventilátory, hromady grafických karet.",
+   "tag_prompt": "indoors, dark underground bunker room, flickering blue and magenta neon tubes, humming cooling fans, stacks of graphics cards and old computers, old discs, piles of electronic parts, cables everywhere, heavy stale air, monitor glow, tarot cards spread on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books and old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_1",
+   "name": "Zahrada – 1. dějství",
+   "description": "Prosluněná zahrada, rozkvetlé stromy, bzučení včel.",
+   "tag_prompt": "outdoors, sunny family garden in spring, blossoming fruit trees, fresh green grass, bees, wooden garden table, bright warm daylight, soft shadows",
+   "mood": ""
+  }
+ ],
+ "gamebook": {
+  "id": "archion",
+  "node": "a1"
+ }
+}

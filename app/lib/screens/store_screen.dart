@@ -56,6 +56,16 @@ class StoreView {
       if (g.ready && audienceVisible(profile, g.audience)) g,
   ];
 
+  /// [gamebooks] by store product, in catalog order: gamebooks sharing a product id are sold
+  /// together (one card, one price).
+  List<List<CatalogGamebook>> get gamebookGroups {
+    final groups = <String, List<CatalogGamebook>>{};
+    for (final g in gamebooks) {
+      (groups[g.productId] ??= []).add(g);
+    }
+    return groups.values.toList();
+  }
+
   /// A bundle is shown only when every type it covers is visible ("all" includes adult types).
   List<CatalogBundle> get bundles => [
     for (final b in catalog.bundles)
@@ -158,8 +168,10 @@ class StoreScreen extends ConsumerWidget {
                     ),
                     _CardColumns(
                       children: [
-                        for (final g in gamebooks)
-                          GamebookStoreCard(gamebook: g),
+                        for (final group in view.gamebookGroups)
+                          group.length == 1
+                              ? GamebookStoreCard(gamebook: group.first)
+                              : GamebookProductCard(gamebooks: group),
                       ],
                     ),
                   ],
@@ -735,6 +747,158 @@ class GamebookStoreCard extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Several gamebooks sold as one store product: one price, and inside the card each book with
+/// its own download / delete once unlocked.
+class GamebookProductCard extends ConsumerWidget {
+  /// Ready gamebooks sharing one product id (at least two).
+  final List<CatalogGamebook> gamebooks;
+  const GamebookProductCard({super.key, required this.gamebooks});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lang = ref.watch(uiLanguageProvider);
+    final shop = ref.watch(shopProvider);
+    final catalog = shop.catalog!;
+    final comic = ComicTheme.of(context);
+    final scheme = Theme.of(context).colorScheme;
+    final productId = gamebooks.first.productId;
+    final locked = [
+      for (final g in gamebooks)
+        if (!shop.unlocked(g.asPack())) g,
+    ];
+    final bytes = gamebooks.fold<int>(0, (a, g) => a + g.bytes);
+    final size = bytes > 0 ? ' · ${formatBytes(bytes, lang)}' : '';
+    return Padding(
+      key: ValueKey('store-gamebook-product-$productId'),
+      padding: const EdgeInsets.only(bottom: 14),
+      child: Ink(
+        padding: const EdgeInsets.all(12),
+        decoration: comic.card(color: scheme.surface, radius: 16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: SizedBox(
+                    width: 96,
+                    height: 96,
+                    child: CoverMosaic(
+                      catalog: catalog,
+                      covers: [for (final g in gamebooks) ?g.cover],
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        trPlural(lang, 'gamebook.set', gamebooks.length),
+                        style: ComicFonts.title().copyWith(fontSize: 18),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        '${tr(lang, 'gamebook.setInfo')}$size',
+                        style: ComicFonts.ui(700).copyWith(
+                          fontSize: 12,
+                          color: scheme.onSurfaceVariant,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            if (locked.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              BuyButton(
+                key: ValueKey('gamebook-product-buy-$productId'),
+                productId: productId,
+              ),
+            ],
+            for (final g in gamebooks) ...[
+              const SizedBox(height: 10),
+              _GamebookRow(gamebook: g, locked: locked.contains(g)),
+            ],
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// One gamebook inside a [GamebookProductCard]: cover, title, and (once unlocked) its download
+/// or delete; the purchase is the card's.
+class _GamebookRow extends ConsumerWidget {
+  final CatalogGamebook gamebook;
+  final bool locked;
+  const _GamebookRow({required this.gamebook, required this.locked});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final lang = ref.watch(uiLanguageProvider);
+    final shop = ref.watch(shopProvider);
+    final catalog = shop.catalog!;
+    final scheme = Theme.of(context).colorScheme;
+    final g = gamebook;
+    return Column(
+      key: ValueKey('store-gamebook-${g.id}'),
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Row(
+          children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: SizedBox(
+                width: 48,
+                height: 48,
+                child: CoverMosaic(catalog: catalog, covers: [?g.cover]),
+              ),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    g.titleIn(lang),
+                    style: ComicFonts.ui(800).copyWith(fontSize: 15),
+                  ),
+                  Text(
+                    tr(lang, 'gamebook.storeInfo', {
+                      'parts': trPlural(lang, 'gamebook.parts', g.nodes),
+                      'endings': trPlural(lang, 'gamebook.endings', g.endings),
+                    }),
+                    style: ComicFonts.ui(
+                      700,
+                    ).copyWith(fontSize: 12, color: scheme.onSurfaceVariant),
+                  ),
+                ],
+              ),
+            ),
+            if (locked)
+              Icon(Icons.lock_outline_rounded, color: scheme.onSurfaceVariant),
+          ],
+        ),
+        if (!locked) ...[
+          const SizedBox(height: 6),
+          PackAction(pack: g.asPack()),
+        ],
+        if (g.kitProductId != null && !shop.entitlements.unlocksKit(g)) ...[
+          const SizedBox(height: 6),
+          BuyButton(
+            key: ValueKey('gamebook-kit-buy-${g.id}'),
+            productId: g.kitProductId,
+          ),
+        ],
+      ],
     );
   }
 }

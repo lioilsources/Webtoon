@@ -1,0 +1,812 @@
+{
+  "title": "Zima: Zpráva nebyla doručena",
+  "title_i18n": {
+    "de": "Winter: Nachricht nicht zugestellt",
+    "en": "Winter: Message Not Delivered",
+    "fr": "Hiver : Message non distribué",
+    "it": "Inverno: Messaggio non consegnato",
+    "ja": "冬：メッセージは届きませんでした",
+    "ko": "겨울: 메시지가 전송되지 않았습니다",
+    "pl": "Zima: Wiadomość niedostarczona",
+    "pt-BR": "Inverno: Mensagem não entregue",
+    "ru": "Зима: Сообщение не доставлено",
+    "uk": "Зима: Повідомлення не доставлено",
+    "vi": "Mùa đông: Tin nhắn chưa được gửi"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "deep snow",
+        "black bare trees like lines",
+        "a snow-covered garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling softly over the white garden"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a snowy garden table",
+        "winter coat",
+        "laptop glow",
+        "breath vapour"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "one last neon tube lit",
+        "a single monitor glow",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "reading from a sheet of paper",
+        "stiff posture",
+        "formal",
+        "cold expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a sheet of paper",
+        "formal",
+        "cold"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ukázal jsem ti svůj svět, protože jsem ti věřil jako člověku. Ty jsi tu důvěru proměnil v loupež. Pro mě jsi skončil. Blokuju tě.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir meine Welt gezeigt, weil ich dir als Mensch vertraut hab. Du hast dieses Vertrauen in einen Raubzug verwandelt. Für mich bist du erledigt. Ich blockier dich.",
+            "en": "I showed you my world because I trusted you as a person. You turned that trust into a robbery. You're done to me. I'm blocking you.",
+            "fr": "Je t'ai montré mon monde parce que j'avais confiance en toi. T'as transformé cette confiance en braquage. Pour moi, t'es fini. Je te bloque.",
+            "it": "Ti ho mostrato il mio mondo perché mi fidavo di te come persona. Hai trasformato quella fiducia in una rapina. Per me hai chiuso. Ti blocco.",
+            "ja": "お前を人として信じてたから、俺の世界を見せた。お前はその信頼を強奪に変えた。お前とはもう終わりだ。ブロックする。",
+            "ko": "널 사람으로 믿었으니까 내 세계를 보여 준 거야. 넌 그 믿음을 강도질로 바꿨어. 나한텐 넌 끝났어. 차단할게.",
+            "pl": "Pokazałem ci swój świat, bo ufałem ci jako człowiekowi. Ty zamieniłeś to zaufanie w grabież. Dla mnie skończyłeś się. Blokuję cię.",
+            "pt-BR": "Te mostrei meu mundo porque confiava em você como pessoa. Você transformou essa confiança num assalto. Pra mim você acabou. Vou te bloquear.",
+            "ru": "Я показал тебе свой мир, потому что доверял тебе как человеку. Ты превратил это доверие в грабёж. Для меня ты кончился. Блокирую.",
+            "uk": "Я показав тобі свій світ, бо довіряв тобі як людині. Ти перетворив цю довіру на грабіж. Для мене ти скінчився. Блокую.",
+            "vi": "Tao cho mày xem thế giới của tao vì tao tin mày như một con người. Mày biến lòng tin đó thành vụ cướp. Với tao, mày hết rồi. Tao chặn mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "hand frozen above a mouse",
+        "sheet of paper on the desk",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "whispering to himself",
+        "staring into nothing",
+        "monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Dvacet let.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zwanzig Jahre.",
+            "en": "Twenty years.",
+            "fr": "Vingt ans.",
+            "it": "Vent'anni.",
+            "ja": "二十年だぞ。",
+            "ko": "이십 년.",
+            "pl": "Dwadzieścia lat.",
+            "pt-BR": "Vinte anos.",
+            "ru": "Двадцать лет.",
+            "uk": "Двадцять років.",
+            "vi": "Hai mươi năm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "cold expression",
+        "snow on his shoulders"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Chováš se jak psychopat. Napiš mi radši, kdy pošleš ty peníze. Já tobě nic nedlužím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du benimmst dich wie ein Psychopath. Schreib mir lieber, wann du das Geld schickst. Ich schulde dir nichts.",
+            "en": "You're acting like a psycho. Just tell me when you're sending the money. I owe you nothing.",
+            "fr": "Tu te comportes comme un psychopathe. Dis-moi plutôt quand tu m'envoies l'argent. Moi, je te dois rien.",
+            "it": "Ti comporti da psicopatico. Scrivimi piuttosto quando mandi i soldi. Io non ti devo niente.",
+            "ja": "サイコかよ。それより金をいつ送るか書け。俺はお前に何の借りもない。",
+            "ko": "사이코처럼 구네. 차라리 돈 언제 보낼지나 말해. 난 너한테 빚진 거 없어.",
+            "pl": "Zachowujesz się jak psychopata. Napisz mi lepiej, kiedy wyślesz kasę. Ja ci nic nie wiszę.",
+            "pt-BR": "Você tá agindo feito psicopata. Me diz é quando vai mandar o dinheiro. Eu não te devo nada.",
+            "ru": "Ведёшь себя как психопат. Лучше напиши, когда пришлёшь деньги. Я тебе ничего не должен.",
+            "uk": "Поводишся як психопат. Краще напиши, коли надішлеш гроші. Я тобі нічого не винен.",
+            "vi": "Mày cư xử như thằng tâm thần. Nhắn tao khi nào gửi tiền thì hơn. Tao chẳng nợ mày gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a snowy table",
+        "night",
+        "laptop glow",
+        "falling snow",
+        "dark house"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling through the laptop light"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "snow on his hands",
+        "face lit by laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Kámo, chybět mi nebudeš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter, fehlen wirst du mir nicht.",
+            "en": "Mate, I won't miss you.",
+            "fr": "Mon pote, tu vas pas me manquer.",
+            "it": "Amico, non mi mancherai.",
+            "ja": "相棒、お前がいなくても寂しくねえよ。",
+            "ko": "야, 너 안 보고 싶을 거야.",
+            "pl": "Stary, nie będzie mi ciebie brakowało.",
+            "pt-BR": "Mano, não vou sentir tua falta.",
+            "ru": "Братан, скучать по тебе не буду.",
+            "uk": "Друже, сумувати за тобою не буду.",
+            "vi": "Bạn ơi, tao sẽ không nhớ mày đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "pained expression",
+        "typing",
+        "snow on his hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Když jsem byl v životě nejvíc na dně a hledal u tebe útočiště, vyhodils mě po dvou dnech. To se nezapomíná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Als ich ganz unten war und bei dir Zuflucht gesucht hab, hast du mich nach zwei Tagen rausgeworfen. Das vergisst man nicht.",
+            "en": "When I was at rock bottom and came to you for shelter, you threw me out after two days. You don't forget that.",
+            "fr": "Quand j'étais au fond du trou et que je suis venu chercher refuge chez toi, tu m'as viré au bout de deux jours. Ça s'oublie pas.",
+            "it": "Quando ero nella merda più totale e cercavo rifugio da te, mi hai buttato fuori dopo due giorni. Non si dimentica.",
+            "ja": "人生のどん底で、お前に逃げ場を求めたのに、二日で追い出したよな。忘れねえよ。",
+            "ko": "내 인생 제일 바닥일 때 너한테 피난처를 찾았는데, 넌 이틀 만에 날 쫓아냈어. 그건 안 잊혀.",
+            "pl": "Kiedy byłem na samym dnie i szukałem u ciebie schronienia, wywaliłeś mnie po dwóch dniach. Tego się nie zapomina.",
+            "pt-BR": "Quando eu tava no fundo do poço e fui buscar refúgio contigo, você me botou pra fora em dois dias. Isso não se esquece.",
+            "ru": "Когда я был на самом дне и искал у тебя убежища, ты выгнал меня через два дня. Такое не забывается.",
+            "uk": "Коли я був на самому дні й шукав у тебе притулку, ти вигнав мене через два дні. Таке не забувається.",
+            "vi": "Lúc tao tận đáy cuộc đời, tìm đến mày để trú thân, mày đuổi tao đi sau hai ngày. Chuyện đó không quên được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting motionless in the dark",
+        "tarot cards spread on the desk",
+        "unreadable expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired",
+        "typing",
+        "snow falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Nikdys mě nenechal udělat ti nabídku. Padesát na padesát. Vždycky jsem to považoval za samozřejmost. Ta nabídka pořád platí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mich nie ein Angebot machen lassen. Fünfzig zu fünfzig. Für mich war das immer selbstverständlich. Das Angebot steht noch.",
+            "en": "You never let me make you an offer. Fifty-fifty. I always took it for granted. The offer still stands.",
+            "fr": "Tu m'as jamais laissé te faire une offre. Cinquante-cinquante. Pour moi, ça allait de soi. L'offre tient toujours.",
+            "it": "Non mi hai mai lasciato farti un'offerta. Cinquanta e cinquanta. L'ho sempre dato per scontato. L'offerta è ancora valida.",
+            "ja": "お前は一度も俺に提案させなかった。フィフティ・フィフティ。当たり前だと思ってた。その提案はまだ生きてる。",
+            "ko": "넌 나한테 제안할 기회를 한 번도 안 줬어. 50 대 50. 난 늘 당연하다고 생각했어. 그 제안 아직 유효해.",
+            "pl": "Nigdy nie dałeś mi złożyć ci oferty. Pięćdziesiąt na pięćdziesiąt. Zawsze uważałem to za oczywiste. Oferta wciąż jest aktualna.",
+            "pt-BR": "Você nunca me deixou te fazer uma proposta. Cinquenta-cinquenta. Sempre achei óbvio. A proposta continua de pé.",
+            "ru": "Ты ни разу не дал мне сделать тебе предложение. Пятьдесят на пятьдесят. Я всегда считал это само собой разумеющимся. Предложение в силе.",
+            "uk": "Ти жодного разу не дав мені зробити тобі пропозицію. П'ятдесят на п'ятдесят. Я завжди вважав це само собою зрозумілим. Пропозиція в силі.",
+            "vi": "Mày chưa bao giờ để tao đưa ra đề nghị. Năm mươi năm mươi. Tao luôn coi đó là lẽ đương nhiên. Đề nghị đó vẫn còn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen glowing",
+        "snowy night",
+        "no readable text",
+        "snowflakes",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Půl na půl. Padesát na padesát. Vždycky jsem to tak bral.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Halbe-halbe. Fünfzig zu fünfzig. So hab ich's immer gesehen.",
+            "en": "Half and half. Fifty-fifty. That's how I always saw it.",
+            "fr": "Moitié-moitié. Cinquante-cinquante. Je l'ai toujours vu comme ça.",
+            "it": "Metà e metà. Cinquanta e cinquanta. L'ho sempre vista così.",
+            "ja": "半々。フィフティ・フィフティ。ずっとそう思ってた。",
+            "ko": "반반. 50 대 50. 난 늘 그렇게 생각했어.",
+            "pl": "Pół na pół. Pięćdziesiąt na pięćdziesiąt. Zawsze tak to widziałem.",
+            "pt-BR": "Meio a meio. Cinquenta-cinquenta. Sempre vi assim.",
+            "ru": "Пополам. Пятьдесят на пятьдесят. Я всегда так считал.",
+            "uk": "Навпіл. П'ятдесят на п'ятдесят. Я завжди так вважав.",
+            "vi": "Chia đôi. Năm mươi năm mươi. Tao luôn nghĩ vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "small grey notice on a screen",
+        "no readable text",
+        "snow on the keyboard",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zpráva nebyla doručena.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Nachricht nicht zugestellt.",
+            "en": "Message not delivered.",
+            "fr": "Message non distribué.",
+            "it": "Messaggio non consegnato.",
+            "ja": "メッセージは届きませんでした。",
+            "ko": "메시지가 전송되지 않았습니다.",
+            "pl": "Wiadomość niedostarczona.",
+            "pt-BR": "Mensagem não entregue.",
+            "ru": "Сообщение не доставлено.",
+            "uk": "Повідомлення не доставлено.",
+            "vi": "Tin nhắn chưa được gửi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "final",
+        "face lit by laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "R.I.P.",
+          "kind": "speech",
+          "i18n": {
+            "de": "R.I.P.",
+            "en": "R.I.P.",
+            "fr": "R.I.P.",
+            "it": "R.I.P.",
+            "ja": "R.I.P.",
+            "ko": "R.I.P.",
+            "pl": "R.I.P.",
+            "pt-BR": "R.I.P.",
+            "ru": "R.I.P.",
+            "uk": "R.I.P.",
+            "vi": "R.I.P."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "the last neon tube going out",
+        "total darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the last neon tube dies, then the monitor fades to black"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "running out into the snow",
+        "pyjamas under winter jackets",
+        "laughing",
+        "dawn light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojce_1_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "surprised",
+        "looking up",
+        "breath vapour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_1_zima",
+          "text": "Tati, tys byl venku celou noc?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, warst du die ganze Nacht draußen?",
+            "en": "Daddy, were you outside all night?",
+            "fr": "Papa, t'es resté dehors toute la nuit ?",
+            "it": "Papà, sei stato fuori tutta la notte?",
+            "ja": "パパ、ひとばんじゅうお外にいたの？",
+            "ko": "아빠, 밤새 밖에 있었어?",
+            "pl": "Tato, byłeś na dworze całą noc?",
+            "pt-BR": "Papai, você ficou lá fora a noite toda?",
+            "ru": "Папа, ты всю ночь был на улице?",
+            "uk": "Тату, ти всю ніч був надворі?",
+            "vi": "Bố ơi, bố ở ngoài cả đêm à?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojce_2_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "laughing",
+        "pointing up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_2_zima",
+          "text": "Máš sníh na hlavě!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast Schnee auf dem Kopf!",
+            "en": "You've got snow on your head!",
+            "fr": "T'as de la neige sur la tête !",
+            "it": "Hai la neve in testa!",
+            "ja": "あたまに雪のってるー！",
+            "ko": "머리에 눈 있어!",
+            "pl": "Masz śnieg na głowie!",
+            "pt-BR": "Você tá com neve na cabeça!",
+            "ru": "У тебя снег на голове!",
+            "uk": "У тебе сніг на голові!",
+            "vi": "Bố có tuyết trên đầu kìa!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking to the side",
+        "breath vapour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "S kým sis psal?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit wem hast du geschrieben?",
+            "en": "Who were you texting?",
+            "fr": "T'écrivais à qui ?",
+            "it": "Con chi scrivevi?",
+            "ja": "だれとメールしてたの？",
+            "ko": "누구랑 문자 했어?",
+            "pl": "Z kim pisałeś?",
+            "pt-BR": "Com quem você tava falando?",
+            "ru": "С кем ты переписывался?",
+            "uk": "З ким ти листувався?",
+            "vi": "Bố nhắn với ai thế?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired",
+        "snow in his hair",
+        "looking down at someone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "S kamarádem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit einem Freund.",
+            "en": "A friend.",
+            "fr": "Un copain.",
+            "it": "Con un amico.",
+            "ja": "友達だよ。",
+            "ko": "친구랑.",
+            "pl": "Z kolegą.",
+            "pt-BR": "Com um amigo.",
+            "ru": "С другом.",
+            "uk": "З другом.",
+            "vi": "Với một người bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking up at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "S tím, co bydlí pod zemí?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit dem, der unter der Erde wohnt?",
+            "en": "The one who lives underground?",
+            "fr": "Celui qui habite sous la terre ?",
+            "it": "Quello che abita sottoterra?",
+            "ja": "地面の下に住んでる人？",
+            "ko": "땅속에 사는 친구?",
+            "pl": "Z tym, co mieszka pod ziemią?",
+            "pt-BR": "Aquele que mora debaixo da terra?",
+            "ru": "С тем, который живёт под землёй?",
+            "uk": "З тим, що живе під землею?",
+            "vi": "Cái chú sống dưới lòng đất ạ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "snowy table",
+        "dawn light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop lid closing, snow settling on it"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "looking up at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "A kde je teď?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und wo ist er jetzt?",
+            "en": "And where is he now?",
+            "fr": "Et il est où, maintenant ?",
+            "it": "E adesso dov'è?",
+            "ja": "その人、いまどこにいるの？",
+            "ko": "그 친구 지금 어디 있어?",
+            "pl": "A gdzie on jest teraz?",
+            "pt-BR": "E onde ele tá agora?",
+            "ru": "А где он сейчас?",
+            "uk": "А де він зараз?",
+            "vi": "Thế giờ chú ấy ở đâu?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "looking into the distance",
+        "from side",
+        "snow in his hair",
+        "long stare"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "walking towards an open house door",
+        "from behind",
+        "holding hands up",
+        "snow",
+        "dawn"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [],
+      "visual_tags": [
+        "small snowball on a closed laptop",
+        "mittens",
+        "dawn light",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "falling snow",
+        "darkness",
+        "an empty snowy garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

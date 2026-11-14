@@ -133,6 +133,9 @@ def _natural(panel, chars, design_of, locs, styles, preset, world, sfw):
     if len(people) == 2:
         # Photoreal models drop the second person unless the pair leads the prompt.
         lead = [NATURAL["couple_lead"]] + action + [NATURAL["couple_person"].format(p=p) for p in people]
+    elif len(people) == 1 and chars[0].get("count_tag") in ("2girls", "2boys"):
+        # One character drawn as two (twins): the pair leads, never "one person".
+        lead = [NATURAL["group_lead"].format(n=2), NATURAL["one_person"].format(p=people[0])] + action
     elif len(people) == 1:
         lead = [NATURAL["one_lead"], NATURAL["one_person"].format(p=people[0])] + action
     elif people:

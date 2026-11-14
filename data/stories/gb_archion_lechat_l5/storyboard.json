@@ -1,0 +1,301 @@
+{
+  "title": "Pozdní podzim: Blokace",
+  "title_i18n": {
+    "de": "Spätherbst: Blockiert",
+    "en": "Late Autumn: Blocked",
+    "fr": "Fin d'automne : Bloqué",
+    "it": "Tardo autunno: Bloccato",
+    "ja": "晩秋：ブロック",
+    "ko": "늦가을: 차단",
+    "pl": "Późna jesień: Blokada",
+    "pt-BR": "Fim do outono: Bloqueio",
+    "ru": "Поздняя осень: Блокировка",
+    "uk": "Пізня осінь: Блокування",
+    "vi": "Cuối thu: Chặn"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "grey rainy potager",
+        "umbrella over a zinc table",
+        "lit house windows",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain falling into puddles, umbrella dripping"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting on a single chair",
+        "heap of graphics cards",
+        "half the neons dark"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "addressing the monitor like a judge",
+        "stiff",
+        "formal"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Věřil jsem ti jako člověku, proto jsem tě pustil k sobě a ukázal ti svůj svět. V každé firmě by za takovou kopii bez svolení byl pořádný průšvih.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir als Mensch vertraut, deshalb hab ich dich an mich rangelassen und dir meine Welt gezeigt. In jeder Firma gäb's für so eine Kopie ohne Erlaubnis richtig Ärger.",
+            "en": "I trusted you as a person, that's why I let you in and showed you my world. In any company, a copy like that without permission would be serious trouble.",
+            "fr": "Je te faisais confiance en tant qu'être humain, c'est pour ça que je t'ai laissé entrer et que je t'ai montré mon monde. Dans n'importe quelle boîte, une copie pareille sans autorisation, ça ferait un sacré scandale.",
+            "it": "Mi fidavo di te come persona, per questo ti ho fatto entrare e ti ho mostrato il mio mondo. In qualsiasi azienda una copia così senza permesso sarebbe un bel casino.",
+            "ja": "人として信じてたから、お前を近くに入れて俺の世界を見せたんだ。どこの会社でも、無断でこんなコピーしたら大問題だぞ。",
+            "ko": "사람으로서 믿었으니까 널 가까이 들이고 내 세계를 보여준 거야. 어느 회사에서든 허락 없이 이런 복제하면 큰일 나.",
+            "pl": "Ufałem ci jako człowiekowi, dlatego cię do siebie dopuściłem i pokazałem ci mój świat. W każdej firmie za taką kopię bez zgody byłaby niezła afera.",
+            "pt-BR": "Eu confiava em você como pessoa, por isso te deixei chegar perto e te mostrei meu mundo. Em qualquer empresa, uma cópia dessas sem permissão dava um baita problema.",
+            "ru": "Я доверял тебе как человеку, поэтому подпустил к себе и показал свой мир. В любой фирме за такую копию без разрешения был бы серьёзный скандал.",
+            "uk": "Я довіряв тобі як людині, тому підпустив до себе й показав свій світ. У будь-якій фірмі за таку копію без дозволу був би серйозний скандал.",
+            "vi": "Tao tin mày như một con người, nên mới cho mày lại gần và cho mày xem thế giới của tao. Ở công ty nào, sao chép kiểu này không xin phép là to chuyện đấy."
+          }
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Kradeš, co jsem vymyslel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du klaust, was ich mir ausgedacht hab.",
+            "en": "You're stealing what I came up with.",
+            "fr": "Tu voles ce que j'ai inventé.",
+            "it": "Stai rubando quello che ho inventato io.",
+            "ja": "お前は俺が考えたものを盗んでる。",
+            "ko": "넌 내가 생각해낸 걸 훔치고 있어.",
+            "pl": "Kradniesz to, co wymyśliłem.",
+            "pt-BR": "Você tá roubando o que eu criei.",
+            "ru": "Ты крадёшь то, что я придумал.",
+            "uk": "Ти крадеш те, що я вигадав.",
+            "vi": "Mày đang ăn cắp thứ tao nghĩ ra."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "cold stare",
+        "finger over a mouse button"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pro mě jsi skončil, blokuju tě. A jestli tvoji kopii uvidím v obchodech, všechno, co mám, pošlu Googlu i Applu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für mich bist du erledigt, ich blockier dich. Und wenn ich deine Kopie in den Stores sehe, schick ich alles, was ich hab, an Google und Apple.",
+            "en": "You're dead to me, I'm blocking you. And if I see your copy in the stores, I'm sending everything I've got to Google and Apple.",
+            "fr": "Pour moi t'es fini, je te bloque. Et si je vois ta copie dans les stores, j'envoie tout ce que j'ai à Google et Apple.",
+            "it": "Per me hai chiuso, ti blocco. E se vedo la tua copia negli store, mando tutto quello che ho a Google e ad Apple.",
+            "ja": "お前とはもう終わりだ、ブロックする。お前のコピーがストアに出てたら、手元にあるもん全部GoogleとAppleに送るからな。",
+            "ko": "넌 나한테 끝났어, 차단할게. 네 복제품이 스토어에 보이면 내가 가진 거 전부 구글이랑 애플에 보낼 거야.",
+            "pl": "Dla mnie skończyłeś, blokuję cię. A jak zobaczę twoją kopię w sklepach, wszystko, co mam, wyślę do Google'a i Apple'a.",
+            "pt-BR": "Pra mim você acabou, vou te bloquear. E se eu vir sua cópia nas lojas, mando tudo o que tenho pro Google e pra Apple.",
+            "ru": "Для меня ты кончился, блокирую тебя. И если увижу твою копию в сторах, всё, что у меня есть, отправлю в Google и Apple.",
+            "uk": "Для мене ти скінчився, блокую тебе. І якщо побачу твою копію в магазинах, усе, що маю, надішлю в Google і Apple.",
+            "vi": "Với tao mày hết rồi, tao chặn mày. Mà nếu thấy bản sao của mày trên store, tao gửi hết mọi thứ tao có cho Google và Apple."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sklep_4",
+      "characters": [],
+      "visual_tags": [
+        "neon tubes going dark",
+        "cellar vault",
+        "heap of cards",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes going out one after another"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "typing under an umbrella",
+        "rain",
+        "laptop on a zinc table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing under an umbrella",
+        "tired",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak psychopat. V tomhle vím přesně, o čem mluvím. Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du benimmst dich wie ein Psychopath. Da weiß ich genau, wovon ich rede. Schreib mir lieber, wann du mir das Geld schickst. Ich schulde dir nichts.",
+            "en": "You're acting like a psychopath. On that I know exactly what I'm talking about. Better tell me when you're sending the money. I owe you nothing.",
+            "fr": "Tu te comportes comme un psychopathe. Là-dessus, je sais exactement de quoi je parle. Dis-moi plutôt quand tu m'envoies l'argent. Moi, je te dois rien.",
+            "it": "Ti comporti da psicopatico. Su questo so esattamente di cosa parlo. Scrivimi piuttosto quando mi mandi i soldi. Io non ti devo niente.",
+            "ja": "サイコパスみたいな真似しやがって。それについちゃ俺はよく分かってる。それより、いつ金を送るか書いてこい。俺はお前に何の借りもない。",
+            "ko": "너 사이코패스처럼 굴어. 이건 내가 정확히 알고 하는 소리야. 차라리 돈 언제 보낼지나 말해. 난 너한테 빚진 거 없어.",
+            "pl": "Zachowujesz się jak psychopata. W tym temacie wiem dokładnie, o czym mówię. Napisz mi lepiej, kiedy przelejesz kasę. Ja ci nic nie wiszę.",
+            "pt-BR": "Você tá agindo feito um psicopata. Disso eu sei exatamente do que tô falando. Me diz logo quando vai mandar o dinheiro. Eu não te devo nada.",
+            "ru": "Ведёшь себя как психопат. Тут я точно знаю, о чём говорю. Лучше напиши, когда пришлёшь деньги. Я тебе ничего не должен.",
+            "uk": "Поводишся як психопат. Тут я точно знаю, про що говорю. Краще напиши, коли надішлеш гроші. Я тобі нічого не винен.",
+            "vi": "Mày cư xử như thằng tâm thần. Chuyện này tao biết rõ tao đang nói gì. Nhắn tao khi nào mày gửi tiền thì hơn. Tao chẳng nợ mày gì."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen in the rain",
+        "website glow",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "ARCHION",
+          "kind": "narration",
+          "i18n": {
+            "de": "ARCHION",
+            "en": "ARCHION",
+            "fr": "ARCHION",
+            "it": "ARCHION",
+            "ja": "ARCHION",
+            "ko": "ARCHION",
+            "pl": "ARCHION",
+            "pt-BR": "ARCHION",
+            "ru": "ARCHION",
+            "uk": "ARCHION",
+            "vi": "ARCHION"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "looking at the garden",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Hotovo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Erledigt.",
+            "en": "Done.",
+            "fr": "C'est fait.",
+            "it": "Fatto.",
+            "ja": "完了。",
+            "ko": "끝.",
+            "pl": "Gotowe.",
+            "pt-BR": "Pronto.",
+            "ru": "Готово.",
+            "uk": "Готово.",
+            "vi": "Xong."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "hands covering a laptop",
+        "jacket",
+        "heavy rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}
