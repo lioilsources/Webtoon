@@ -18,17 +18,17 @@ Data Collection: **Yes, we collect data from this app.**
 |---|---|---|---|
 | Usage Data → **Product Interaction** | Analytics | No | No |
 | Diagnostics → **Performance Data** (doba načtení balíčků při startu) | Analytics | No | No |
+| Location → **Coarse Location** (jen země; odvodí ji příjemce z IP, IP se neukládá) | Analytics | No | No |
 
-Ostatní typy (Contact Info, Identifiers, Location, User Content, Purchases, Browsing History, Search History,
+Ostatní typy (Contact Info, Identifiers, Precise Location, User Content, Purchases, Browsing History, Search History,
 Sensitive Info, Health, Financial, Contacts, Other) **nesbírá**. Nákupy zpracovává Apple a appka si nárok drží
 jen v zařízení; to se jako „collected“ neuvádí.
 
 Shoduje se s `app/ios/Runner/PrivacyInfo.xcprivacy` a `app/macos/Runner/PrivacyInfo.xcprivacy`
 (`NSPrivacyTracking` false, žádné tracking domény).
 
-**Otevřená otázka pro Olina:** země z připojení. Kirian ji v App Privacy uvádí jako Location → Coarse Location
-(Analytics, nepropojeno). Tady je vynechaná, protože ji neposílá appka, ale odvodí ji příjemce z IP. Pokud chceš
-stejný postup jako Kirian, přidej Coarse Location sem i do obou `PrivacyInfo.xcprivacy`.
+Země: appka ji neposílá, odvodí ji příjemce z IP adresy a uloží jen zemi, IP ne. Podle rozhodnutí vlastníka se
+deklaruje ve všech appkách jako Coarse Location (stejně jako Kirian).
 
 ## Google Play Console → Data safety
 
@@ -46,8 +46,9 @@ Data types:
 |---|---|---|---|---|---|
 | App activity → **App interactions** | Yes | No | No | **Optional** (users can turn it off) | Analytics |
 | App info and performance → **Diagnostics** (doba načtení) | Yes | No | No | **Optional** | Analytics |
+| Location → **Approximate location** (jen země z IP; IP se neukládá) | Yes | No | No | **Optional** | Analytics |
 
-Nic dalšího (Location, Personal info, Financial info, Messages, Photos, Files, Device or other IDs, …) se
+Nic dalšího (Precise location, Personal info, Financial info, Messages, Photos, Files, Device or other IDs, …) se
 nesbírá ani nesdílí. Platby zpracovává Google Play.
 
 Target audience zůstává 16+ (appka není v Designed for Families); dětský profil se neměří.

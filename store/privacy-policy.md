@@ -21,7 +21,7 @@ Aplikaci Toonfork (dále „aplikace“) vydává ol1n (dále „my“). Tyto z�
 
 **V dětském profilu ne.** Když je zvolený dětský profil, nic se nezaznamenává ani neposílá, ani to, že se aplikace otevřela. Totéž platí při prvním spuštění, dokud není profil vybraný. Měření začne jen v profilu pro dospělé, který chrání rodičovský zámek.
 
-**Kdo je dostává a kde.** Statistiky přijímáme a ukládáme my, vývojář, na vlastním serveru v EU (Česko). Nikdo další je nedostane; žádná analytická služba třetí strany se nepoužívá. Při odeslání, jako při každém připojení k internetu, uvidí náš server vaši IP adresu. Použije se jen k určení země a neukládá se ani nezapisuje do logů. Země je jediný údaj o poloze, který se uchovává.
+**Kdo je dostává a kde.** Statistiky přijímáme a ukládáme my, vývojář, na vlastním serveru v EU (Česko). Nikdo další je nedostane; žádná analytická služba třetí strany se nepoužívá. Při odeslání, jako při každém připojení k internetu, uvidí náš server vaši IP adresu. Použije se jen k určení země a hned se zahodí: IP adresa se nikdy neukládá ani nezapisuje do logů. Ke statistikám se ukládá jen země (například CZ) a je to jediný údaj o poloze, který se uchovává.
 
 **Jak dlouho.** Statistiky uchováváme 12 měsíců, pak je mažeme.
 
@@ -89,7 +89,7 @@ Toonfork (the "app") is published by ol1n ("we"). This policy explains how the a
 
 **Not in the Kids profile.** While the Kids profile is chosen, nothing is recorded or sent, not even that the app was opened. The same applies on the first launch until a profile is chosen. Measuring starts only in the Adults profile, which is behind the parental gate.
 
-**Who receives them, and where.** The statistics are received and stored by us, the developer, on our own server in the EU (Czech Republic). No one else receives them; no third-party analytics service is involved. Sending them, like any internet connection, reveals your IP address to our server; it is used only to derive your country and is neither stored nor logged. Your country is the only location information kept.
+**Who receives them, and where.** The statistics are received and stored by us, the developer, on our own server in the EU (Czech Republic). No one else receives them; no third-party analytics service is involved. Sending them, like any internet connection, reveals your IP address to our server. It is used only to look up your country and is then discarded: the IP address is never stored or logged. Only the country (for example CZ) is stored with the statistics, and it is the only location information kept.
 
 **How long.** Statistics are kept for 12 months and then deleted.
 

@@ -3,7 +3,8 @@
 <!--
   Toonfork's own privacy manifest. The collected data types match the App Store Connect
   App Privacy answers in store/privacy-answers.md and the anonymous statistics in
-  docs/telemetry.md: product interaction and performance data (start-up load time), for
+  docs/telemetry.md: product interaction, performance data (start-up load time) and coarse location (only
+  the country, derived by the receiver from the connection; the IP is not stored), for
   analytics only, not linked to the user, not used for tracking. Nothing is collected in the
   Kids profile. Plugins ship their own manifests for the APIs they use.
 -->
@@ -30,6 +31,18 @@
 		<dict>
 			<key>NSPrivacyCollectedDataType</key>
 			<string>NSPrivacyCollectedDataTypePerformanceData</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeCoarseLocation</string>
 			<key>NSPrivacyCollectedDataTypeLinked</key>
 			<false/>
 			<key>NSPrivacyCollectedDataTypeTracking</key>
