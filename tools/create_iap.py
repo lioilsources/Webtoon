@@ -8,7 +8,7 @@
 env: APP_STORE_CONNECT_API_KEY_PATH (fastlane api_key json, key with write access),
      SUPPLY_JSON_KEY (Play service account json). ASC client: tools/asc.py; Play helper: Store/store-ops/scripts/play_pull.py.
 In CI: .github/workflows/store-iap.yml (Actions → Store IAP → Run; apply=false is the dry run).
-ASC: NON_CONSUMABLE, Family Sharing on, cs + en-US localization, every territory, USD base price from the CSV.
+ASC: NON_CONSUMABLE (Family Sharing: the API refuses it, switch it on by hand), cs + en-US localization, every territory, USD base price from the CSV.
 The review screenshot (docs/store-products.md step 5) still has to be added by hand before submitting.
 Play: managed product, en-US + cs-CZ listing, USD default price, other countries converted, active.
 """
@@ -42,26 +42,37 @@ def asc_create(rows, apply):
     app = asc.app_id(BUNDLE)
     for v in asc.call(f"/v1/apps/{app}/appStoreVersions?limit=5")["data"]:
         print(f"asc version {v['attributes']['platform']} {v['attributes']['versionString']}: {v['attributes']['appStoreState']}")
-    existing, url = set(), f"/v1/apps/{app}/inAppPurchasesV2?limit=200"
+    existing, url = {}, f"/v1/apps/{app}/inAppPurchasesV2?limit=200"
     while url:
         r = asc.call(url)
-        existing |= {x["attributes"]["productId"] for x in r["data"]}
+        existing |= {x["attributes"]["productId"]: x["id"] for x in r["data"]}
         url = r.get("links", {}).get("next")
     for p in rows:
         pid = p["product_id"]
-        if pid in existing:
-            print(f"asc {pid}: exists, skipped")
-            continue
-        print(f"asc {pid}: create NON_CONSUMABLE {p['price_usd']} USD, cs '{p['name_cs']}', en '{p['name_en']}'")
+        iap = existing.get(pid)
+        if iap:  # finish one a failed run left half made (no localization / availability / price)
+            locs = {x["attributes"]["locale"] for x in asc.call(f"/v2/inAppPurchases/{iap}/inAppPurchaseLocalizations")["data"]}
+            try:
+                has_avail = bool(asc.call(f"/v2/inAppPurchases/{iap}/iapPriceSchedule").get("data"))
+            except RuntimeError:
+                has_avail = False
+            if {"cs", "en-US"} <= locs and has_avail:
+                print(f"asc {pid}: exists, skipped")
+                continue
+            print(f"asc {pid}: exists ({iap}), finishing: localizations {sorted(locs)}, price schedule {has_avail}")
+        else:
+            locs = set()
+            print(f"asc {pid}: create NON_CONSUMABLE {p['price_usd']} USD, cs '{p['name_cs']}', en '{p['name_en']}'")
         if not apply:
             continue
-        iap = asc.call("/v2/inAppPurchases", "POST", {"data": {
-            "type": "inAppPurchases",
-            "attributes": {"name": pid, "productId": pid, "inAppPurchaseType": "NON_CONSUMABLE"},
-            "relationships": {"app": {"data": {"type": "apps", "id": app}}}}})["data"]["id"]
-        asc.call(f"/v2/inAppPurchases/{iap}", "PATCH", {"data": {  # Family Sharing: not allowed on create
-            "type": "inAppPurchases", "id": iap, "attributes": {"familySharable": True}}})
+        if not iap:
+            iap = asc.call("/v2/inAppPurchases", "POST", {"data": {
+                "type": "inAppPurchases",
+                "attributes": {"name": pid, "productId": pid, "inAppPurchaseType": "NON_CONSUMABLE"},
+                "relationships": {"app": {"data": {"type": "apps", "id": app}}}}})["data"]["id"]
         for locale, name, desc in (("cs", p["name_cs"], p["description_cs"]), ("en-US", p["name_en"], p["description_en"])):
+            if locale in locs:
+                continue
             asc.call("/v1/inAppPurchaseLocalizations", "POST", {"data": {
                 "type": "inAppPurchaseLocalizations", "attributes": {"locale": locale, "name": name, "description": desc},
                 "relationships": {"inAppPurchaseV2": {"data": {"type": "inAppPurchases", "id": iap}}}}})
