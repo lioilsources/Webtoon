@@ -114,21 +114,33 @@ def set_faces(img, boxes, crop=None):
     img._faces = out
 
 
-def draw_bubble(img, bubble, slot, n_slots):
-    d = ImageDraw.Draw(img)
-    W, H = img.size
+STACK_GAP = 50  # a bubble stacked below the previous one starts this far under it
+
+
+def measure(d, W, bubble):
+    """Font, wrapped lines, line height and the bw×bh box of a bubble on a W-wide image."""
     kind = bubble.get("kind", "speech")
     fnt = font(kind, B["font_size"] if kind != "shout" else B["shout_font_size"])
     max_w = int(W * (B["max_width"] if kind != "narration" else B["narration_max_width"]))
     lines = wrap(d, bubble["text"], fnt, max_w - B["text_inset"])
     lh = int(fnt.size * B["line_height"])
     tw = max(d.textlength(l, font=fnt) for l in lines)
-    bw, bh = int(tw) + B["pad"][0], lh * len(lines) + B["pad"][1]
+    return fnt, lines, lh, int(tw) + B["pad"][0], lh * len(lines) + B["pad"][1]
+
+
+def draw_bubble(img, bubble, slot, n_slots, later=()):
+    """later = the panel's bubbles still to be drawn after this one (reading order): with faces, this one is placed
+    high enough to leave them room below, so the last bubble is not pushed off the bottom of the panel."""
+    d = ImageDraw.Draw(img)
+    W, H = img.size
+    kind = bubble.get("kind", "speech")
+    fnt, lines, lh, bw, bh = measure(d, W, bubble)
     margin = B["margin"]
     faces = getattr(img, "_faces", [])
     if faces:
-        x, y = place_off_faces(W, H, bw, bh, kind, slot, faces, getattr(img, "_bubbles", []), margin,
-                               getattr(img, "_sfx", []))
+        reserve = sum(measure(d, W, b)[4] + STACK_GAP for b in later)
+        x, y = place_off_faces(W, max(H - reserve, bh + 2 * margin), bw, bh, kind, slot, faces,
+                               getattr(img, "_bubbles", []), margin, getattr(img, "_sfx", []))
     elif kind == "narration":
         x, y = margin, margin + slot * (bh + 12)
     else:
@@ -138,7 +150,7 @@ def draw_bubble(img, bubble, slot, n_slots):
     # Two long bubbles would overlap side by side: put the later one below the previous.
     for px0, py0, px1, py1 in getattr(img, "_bubbles", []):
         if x < px1 and px0 < x + bw and y < py1 + 30 and py0 < y + bh:
-            y = py1 + 50
+            y = py1 + STACK_GAP
     img._bubbles = getattr(img, "_bubbles", []) + [(x, y, x + bw, y + bh)]
     box = (x, y, x + bw, y + bh)
 
@@ -244,9 +256,9 @@ def compose(sb, panel_dir=None, variant=0, use_placeholder=False):
         narr = [b for b in bubbles if b.get("kind") == "narration"]
         talk = [b for b in bubbles if b.get("kind") != "narration"]
         for k, b in enumerate(narr):
-            draw_bubble(img, b, k, len(narr))
+            draw_bubble(img, b, k, len(narr), later=narr[k + 1:] + talk)
         for k, b in enumerate(talk):
-            draw_bubble(img, b, k + (1 if narr else 0), len(talk))
+            draw_bubble(img, b, k + (1 if narr else 0), len(talk), later=talk[k + 1:])
         for k, s in enumerate(p.get("sfx", [])):
             draw_sfx(img, s, k)
         parts.append((img, GAPS.get(p.get("gap_after"), R["default_gap"])))

@@ -24,10 +24,27 @@ moods:
   rnb_1: smooth r&b instrumental, soft keys, slow groove, late night
   world_1: afrobeat instrumental, soft kalimba, warm groove, joyful
   world_2: indian sitar and soft tabla, romantic, gentle, modern chill
-  # Kulový blesk guláš shorts (tools/gulas_shorts.py --music auto): one track per LLM that wrote the gamebook.
-  gulas_grok: driving trance, metallic percussion, industrial clangs, deep space ambience, cosmic noise, pulsing synths
-  gulas_lechat: smoky jazz club, tenor saxophone lead, upright bass, brushed drums, piano comping
-  gulas_chatgpt: slow electric blues, bending guitar, harmonica, shuffle drums, walking bass
-  gulas_deepseek: traditional chinese music, guzheng and erhu, bamboo flute, pentatonic, cinematic
-  gulas_kimi: baroque organ fugue in the style of bach, pipe organ, cathedral reverb, majestic counterpoint
-  gulas_claude: upbeat country, banjo picking, fiddle, acoustic guitar, stomping rhythm
+
+# One track per gamebook: its trailer (webtoon trailer) and its full short (tools/gulas_shorts.py --music auto) share it.
+# → data/music/trailers/<gamebook id>.mp3, outside the moods pool above, so shorts.py --music data/music never picks
+# a book's own track for another world. An existing file is kept (louka, kovovenebe, mlceni came from webtoon music).
+# seed: fixed per book (these were moods 15–20 before, seed_base + k), so a rerun redraws the same track.
+gamebooks:
+  # Kulový blesk guláš: one sound per LLM that wrote the gamebook
+  gulasspagety: {seed: 4215, prompt: "driving trance, metallic percussion, industrial clangs, deep space ambience, cosmic noise, pulsing synths"}   # grok
+  gulasknedlik: {seed: 4216, prompt: "smoky jazz club, tenor saxophone lead, upright bass, brushed drums, piano comping"}   # le chat
+  poslednislovo: {seed: 4217, prompt: "slow electric blues, bending guitar, harmonica, shuffle drums, walking bass"}   # chatgpt
+  poslednislovopavilon: {seed: 4218, prompt: "traditional chinese music, guzheng and erhu, bamboo flute, pentatonic, cinematic"}   # deepseek
+  knedlikvzakopu: {seed: 4219, prompt: "baroque organ fugue in the style of bach, pipe organ, cathedral reverb, majestic counterpoint"}   # kimi
+  uknedliku: {seed: 4220, prompt: "upbeat country, banjo picking, fiddle, acoustic guitar, stomping rhythm"}   # claude
+  # other gamebooks: their own track for the trailer and the TikTok video
+  archion: {seed: 4221, prompt: "minimal techno, hypnotic four-on-the-floor kick, dry clicks, deep sub bass, sparse modular synth stabs, cold and repetitive"}   # gemini
+  # Archion in six more model variants: one sound per LLM that wrote the play
+  # These six were drawn on L40S with ComfyUI ACE-Step v1 3.5B (same prompt, seed, length), not acestep-v15-turbo:
+  # a rerun through music.py on AiStack gives a different track for the same seed.
+  archion_claude: {seed: 4222, prompt: "baroque chamber strings, vivaldi four seasons slowed down, harpsichord, melancholic, intimate"}   # claude
+  archion_kimi: {seed: 4223, prompt: "slow melancholic chiptune, 8-bit arpeggios, soft square-wave lead, server fan hum, dial-up modem noise"}   # kimi
+  archion_deepseek: {seed: 4224, prompt: "solo guqin, sparse plucked notes, cold electronic drone underneath, data hum, clinical and meditative"}   # deepseek
+  archion_chatgpt: {seed: 4225, prompt: "glitchy lo-fi, stuttering broken beat, tape stops, interrupted melancholic electric piano, baby monitor static"}   # chatgpt
+  archion_lechat: {seed: 4226, prompt: "french musette waltz, melancholic accordion, slow, nylon guitar, rainy paris evening"}   # le chat
+  archion_grok: {seed: 4227, prompt: "tense legal thriller score, staccato strings, ticking clock, low brass hits, timpani"}   # grok
