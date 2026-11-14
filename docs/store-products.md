@@ -42,6 +42,8 @@ Current list (generated; names ≤ 30 and descriptions ≤ 45 characters for App
 | `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `bundle_all` | bundle | all | 4.99 | Tier 5 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
+| `gamebook_archion` | gamebook | gamebook | 0.99 | Tier 1 | Gamebook: Archion | Gamebook: Archion | Interaktivní příběh s volbami | Interactive branching story |
+| `gamebook_gulasspagety` | gamebook | gamebook | 0.99 | Tier 1 | Gamebook: Guláš a špagety | Gamebook: Goulash & Spaghetti | Interaktivní příběh s volbami | Interactive branching story |
 <!-- products:end -->
 
 Paid gamebooks (none yet: every published gamebook is free and needs no product), e.g. for a gamebook `drak`:
