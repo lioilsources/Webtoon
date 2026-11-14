@@ -131,7 +131,11 @@ Pravidla:
 - **Nárok** se počítá v appce z katalogu: balíček je odemčený, když je `free`, když vlastní jeho
   `product_id`, nebo bundle, jehož `covers.types` obsahuje `type` balíčku (`"all"` = všechny typy).
   Bundle tedy pokryje i balíčky, které v katalogu přibudou později. `gamebook_<id>` odemyká gamebook,
-  `kit_<id>` gamebook + editor kit; bundly gamebooky neodemykají.
+  `kit_<id>` gamebook + editor kit; bundly gamebooky neodemykají. Víc gamebooků smí sdílet jeden
+  `product_id` (např. `gamebook_archion`): obchod je ukáže jako jednu kartu s jednou cenou a koupě
+  odemkne všechny. Prázdné nebo chybějící `kit_product_id` = gamebook nemá kit (obchod ho nenabízí).
+  Gamebook, který čtenář nainstaloval, dokud ho katalog měl `free`, zůstane odemčený i poté, co ho
+  novější katalog zpoplatní (appka si to při instalaci a při startu nad cachovaným katalogem uloží).
 - **Gamebook** je jeden zip (bez částí) s pack.json (příběh = uzel, jedna epizoda) a `gamebook.json`
   (graf, příznaky, konce, lore). Jeho příběhy nejsou v `stories[]` katalogu ani v knihovně appky.
 - **Publikum**: profil čtenáře Děti skryje typy, balíčky, bundly a příběhy s `audience: "adult"`

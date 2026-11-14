@@ -158,14 +158,16 @@ Catalog testCatalog({
   List<Map<String, dynamic>>? extraPacks,
 }) => Catalog.parse(catalogJson(version: version, extraPacks: extraPacks));
 
-/// No disk, no network: [catalog] is "downloaded"; null = offline with an empty cache.
+/// No disk, no network: [catalog] is "downloaded"; null = offline. [cachedCatalog] is the copy
+/// a previous run left on disk (none by default).
 class FakeCatalogRepository extends CatalogRepository {
   Catalog? catalog;
+  Catalog? cachedCatalog;
   int refreshes = 0;
-  FakeCatalogRepository(this.catalog);
+  FakeCatalogRepository(this.catalog, {this.cachedCatalog});
 
   @override
-  Future<Catalog?> loadCached() async => null;
+  Future<Catalog?> loadCached() async => cachedCatalog;
 
   @override
   Future<Catalog> refresh() async {
