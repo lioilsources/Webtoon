@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart' show ScrollCacheExtent;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/languages.dart';
 import '../i18n/ui_strings.dart';
@@ -13,7 +14,11 @@ import '../providers/reader_provider.dart';
 import '../reader/episode_end_block.dart';
 import '../reader/episode_view.dart';
 import '../reader/local_episode_end.dart';
+import '../telemetry/telemetry_setup.dart';
 import '../theme.dart';
+
+/// Route name of the reader (anonymous statistics: screen `reader`).
+const kReaderRoute = RouteSettings(name: '/reader');
 
 /// The webtoon reader for one campaign: one vertical scroll of every episode. The view is
 /// anchored on the focused episode (default: the latest) — earlier episodes are above it,
@@ -27,10 +32,14 @@ class ReaderScreen extends ConsumerStatefulWidget {
   /// Open on episode 1 instead of the latest (the library).
   final bool startAtFirst;
 
+  /// What opened it, for the statistics: `library` or `next_story`.
+  final String openedFrom;
+
   const ReaderScreen({
     super.key,
     required this.campaignId,
     this.startAtFirst = false,
+    this.openedFrom = 'library',
   });
 
   @override
@@ -40,6 +49,11 @@ class ReaderScreen extends ConsumerStatefulWidget {
 class _ReaderScreenState extends ConsumerState<ReaderScreen> {
   final _scroll = ScrollController();
   String? _anchoredOn;
+
+  // Offline reader only: how far each episode is read (docs/telemetry.md, `episode_read`).
+  final _reading = EpisodeReading();
+  late String _focusFrom = widget.openedFrom;
+  String? _readingFocus;
 
   @override
   void initState() {
@@ -51,6 +65,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
 
   @override
   void dispose() {
+    _reading.close();
     _scroll.dispose();
     super.dispose();
   }
@@ -139,6 +154,10 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
     final f = st.focusIndex;
     _jumpToFocusIfChanged(eps[f].id);
     final last = eps.last;
+    if (local && _readingFocus != eps[f].id) {
+      _readingFocus = eps[f].id;
+      _reading.open(eps[f].index, _focusFrom);
+    }
 
     // Refresh the campaign's episode list when the latest episode finishes.
     ref.listen(episodeProvider(last.id), (prev, next) {
@@ -158,13 +177,20 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
         editable: isPlayer,
         nextChosenText: local ? null : next?.chosen?.text,
         footer: local && next != null
-            ? (ep) => LocalEpisodeEnd(
-                choices: [
-                  for (final c in ep.choices)
-                    c.localized(ep.displayLanguage(lang)),
-                ],
-                chosen: next.chosen,
-                onNext: () => _notifier.focus(next.id),
+            ? (ep) => whenSeen(
+                ValueKey('seen-end-${eps[i].id}'),
+                LocalEpisodeEnd(
+                  choices: [
+                    for (final c in ep.choices)
+                      c.localized(ep.displayLanguage(lang)),
+                  ],
+                  chosen: next.chosen,
+                  onNext: () {
+                    _focusFrom = 'continue';
+                    _notifier.focus(next.id);
+                  },
+                ),
+                () => _reading.reachedEnd(eps[i].index, last: false),
               )
             : null,
       );
@@ -193,7 +219,11 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
           ),
           SliverToBoxAdapter(
             child: local
-                ? _LocalEnd(campaign: st.campaign!)
+                ? whenSeen(
+                    const ValueKey('seen-story-end'),
+                    _LocalEnd(campaign: st.campaign!),
+                    () => _reading.reachedEnd(last.index, last: true),
+                  )
                 : isPlayer
                 ? _EndOfCampaign(st: st, notifier: _notifier)
                 : null,
@@ -205,6 +235,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
 
   void _showHistory(BuildContext context, ReaderState st) {
     final ui = ref.read(uiLanguageProvider);
+    Telemetry.feature('history');
     showModalBottomSheet<void>(
       context: context,
       showDragHandle: true,
@@ -249,6 +280,7 @@ class _ReaderScreenState extends ConsumerState<ReaderScreen> {
                 selected: e.id == st.episodes[st.focusIndex].id,
                 onTap: () {
                   Navigator.pop(ctx);
+                  _focusFrom = 'history';
                   _notifier.focus(e.id);
                 },
               ),
@@ -382,8 +414,12 @@ class _LocalEnd extends ConsumerWidget {
           suggestion: suggestion,
           onOpen: (s) => Navigator.of(context).pushReplacement(
             MaterialPageRoute<void>(
-              builder: (_) =>
-                  ReaderScreen(campaignId: s.id, startAtFirst: true),
+              settings: kReaderRoute,
+              builder: (_) => ReaderScreen(
+                campaignId: s.id,
+                startAtFirst: true,
+                openedFrom: 'next_story',
+              ),
             ),
           ),
         ),
@@ -447,9 +483,10 @@ class _LanguageMenu extends ConsumerWidget {
               '${langFlag(shown)} ${shown.toUpperCase()}',
               style: ComicFonts.ui(900).copyWith(fontSize: 13),
             ),
-      onSelected: (v) => ref
-          .read(readerLanguageProvider.notifier)
-          .select(v.isEmpty ? null : v),
+      onSelected: (v) {
+        Telemetry.feature('bubble_language');
+        ref.read(readerLanguageProvider.notifier).select(v.isEmpty ? null : v);
+      },
       itemBuilder: (_) => [
         item(
           '',

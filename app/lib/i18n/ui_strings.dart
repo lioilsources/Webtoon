@@ -146,6 +146,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Vrátí zakoupené balíčky na tomto zařízení (stejný účet App Store / Google Play).',
     'settings.restored': 'Nákupy obnoveny.',
     'settings.restoreFailed': 'Obnovení se nepodařilo: {error}',
+    'settings.stats': 'Anonymní statistiky',
+    'settings.statsHint':
+        'Pomáhají zjistit, co v appce funguje a kde se čtenáři ztrácí. Bez jména, účtu a obsahu příběhů. Vypnutím se hned smaže i to, co čeká v zařízení.',
     'common.save': 'Uložit',
     'common.add': 'Přidat',
     'common.create': 'Vytvořit',
@@ -354,6 +357,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Brings back purchased packs on this device (same App Store / Google Play account).',
     'settings.restored': 'Purchases restored.',
     'settings.restoreFailed': 'Restore failed: {error}',
+    'settings.stats': 'Anonymous statistics',
+    'settings.statsHint':
+        'They show what works in the app and where readers get lost. No name, no account, nothing from the stories. Turning them off also deletes what is waiting on this device.',
     'common.save': 'Save',
     'common.add': 'Add',
     'common.create': 'Create',
@@ -563,6 +569,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Holt gekaufte Pakete auf dieses Gerät zurück (gleiches App-Store-/Google-Play-Konto).',
     'settings.restored': 'Käufe wiederhergestellt.',
     'settings.restoreFailed': 'Wiederherstellen fehlgeschlagen: {error}',
+    'settings.stats': 'Anonyme Statistiken',
+    'settings.statsHint':
+        'Sie zeigen, was in der App funktioniert und wo Leser hängen bleiben. Ohne Namen, Konto oder Inhalte der Geschichten. Beim Ausschalten wird auch gelöscht, was noch auf dem Gerät wartet.',
     'common.save': 'Speichern',
     'common.add': 'Hinzufügen',
     'common.create': 'Erstellen',
@@ -778,6 +787,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Riporta i pacchetti acquistati su questo dispositivo (stesso account App Store / Google Play).',
     'settings.restored': 'Acquisti ripristinati.',
     'settings.restoreFailed': 'Ripristino non riuscito: {error}',
+    'settings.stats': 'Statistiche anonime',
+    'settings.statsHint':
+        'Mostrano cosa funziona nell\'app e dove i lettori si perdono. Nessun nome, nessun account, niente delle storie. Disattivandole si cancella anche ciò che è in attesa sul dispositivo.',
     'common.save': 'Salva',
     'common.add': 'Aggiungi',
     'common.create': 'Crea',
@@ -992,6 +1004,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Récupère les packs achetés sur cet appareil (même compte App Store / Google Play).',
     'settings.restored': 'Achats restaurés.',
     'settings.restoreFailed': 'Échec de la restauration : {error}',
+    'settings.stats': 'Statistiques anonymes',
+    'settings.statsHint':
+        'Elles montrent ce qui marche dans l\'app et où les lecteurs se perdent. Sans nom, sans compte, rien des histoires. Les désactiver efface aussi ce qui attend sur l\'appareil.',
     'common.save': 'Enregistrer',
     'common.add': 'Ajouter',
     'common.create': 'Créer',
@@ -1205,6 +1220,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Przywraca kupione pakiety na tym urządzeniu (to samo konto App Store / Google Play).',
     'settings.restored': 'Zakupy przywrócone.',
     'settings.restoreFailed': 'Przywracanie nie powiodło się: {error}',
+    'settings.stats': 'Anonimowe statystyki',
+    'settings.statsHint':
+        'Pokazują, co działa w aplikacji i gdzie czytelnicy się gubią. Bez imienia, konta i treści historii. Wyłączenie usuwa też to, co czeka na urządzeniu.',
     'common.save': 'Zapisz',
     'common.add': 'Dodaj',
     'common.create': 'Utwórz',
@@ -1418,6 +1436,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Traz de volta os pacotes comprados neste aparelho (mesma conta App Store / Google Play).',
     'settings.restored': 'Compras restauradas.',
     'settings.restoreFailed': 'A restauração falhou: {error}',
+    'settings.stats': 'Estatísticas anônimas',
+    'settings.statsHint':
+        'Mostram o que funciona no app e onde os leitores se perdem. Sem nome, sem conta, nada das histórias. Desativar também apaga o que está aguardando no aparelho.',
     'common.save': 'Salvar',
     'common.add': 'Adicionar',
     'common.create': 'Criar',
@@ -1626,6 +1647,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'このデバイスで購入済みのパックを復元します（同じ App Store / Google Play アカウント）。',
     'settings.restored': '購入を復元しました。',
     'settings.restoreFailed': '復元できませんでした：{error}',
+    'settings.stats': '匿名の統計',
+    'settings.statsHint':
+        'アプリで何がうまくいき、どこで読者が迷うかを知るためのものです。名前やアカウント、物語の内容は含みません。オフにすると端末で送信待ちのデータも削除されます。',
     'common.save': '保存',
     'common.add': '追加',
     'common.create': '作成',
@@ -1824,6 +1848,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         '이 기기에서 구매한 팩을 되돌립니다 (같은 App Store / Google Play 계정).',
     'settings.restored': '구매를 복원했어요.',
     'settings.restoreFailed': '복원 실패: {error}',
+    'settings.stats': '익명 통계',
+    'settings.statsHint':
+        '앱에서 무엇이 잘 되고 독자가 어디서 막히는지 알려 줍니다. 이름, 계정, 이야기 내용은 없습니다. 끄면 기기에서 대기 중인 데이터도 바로 삭제됩니다.',
     'common.save': '저장',
     'common.add': '추가',
     'common.create': '만들기',
@@ -2023,6 +2050,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Lấy lại các gói đã mua trên thiết bị này (cùng tài khoản App Store / Google Play).',
     'settings.restored': 'Đã khôi phục giao dịch mua.',
     'settings.restoreFailed': 'Khôi phục thất bại: {error}',
+    'settings.stats': 'Thống kê ẩn danh',
+    'settings.statsHint':
+        'Giúp biết điều gì trong ứng dụng hiệu quả và người đọc bị lạc ở đâu. Không có tên, tài khoản hay nội dung truyện. Tắt đi sẽ xóa luôn dữ liệu đang chờ trên thiết bị.',
     'common.save': 'Lưu',
     'common.add': 'Thêm',
     'common.create': 'Tạo',
@@ -2232,6 +2262,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Возвращает купленные пакеты на это устройство (тот же аккаунт App Store / Google Play).',
     'settings.restored': 'Покупки восстановлены.',
     'settings.restoreFailed': 'Не удалось восстановить: {error}',
+    'settings.stats': 'Анонимная статистика',
+    'settings.statsHint':
+        'Показывает, что в приложении работает и где читатели теряются. Без имени, аккаунта и содержания историй. Отключение сразу удаляет и то, что ждёт отправки на устройстве.',
     'common.save': 'Сохранить',
     'common.add': 'Добавить',
     'common.create': 'Создать',
@@ -2444,6 +2477,9 @@ const Map<String, Map<String, String>> kUiStrings = {
         'Повертає придбані пакети на цей пристрій (той самий обліковий запис App Store / Google Play).',
     'settings.restored': 'Покупки відновлено.',
     'settings.restoreFailed': 'Не вдалося відновити: {error}',
+    'settings.stats': 'Анонімна статистика',
+    'settings.statsHint':
+        'Показує, що в застосунку працює і де читачі губляться. Без імені, облікового запису та змісту історій. Вимкнення одразу видаляє й те, що чекає на пристрої.',
     'common.save': 'Зберегти',
     'common.add': 'Додати',
     'common.create': 'Створити',

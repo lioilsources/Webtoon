@@ -57,7 +57,7 @@ jobs:
 
       - name: Build macOS (debug)
         working-directory: app
-        run: flutter build macos --debug --dart-define=WEBTOON_API=$WEBTOON_API
+        run: flutter build macos --debug --dart-define=WEBTOON_API=$WEBTOON_API --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Package as ZIP
         run: |

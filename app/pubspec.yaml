@@ -45,6 +45,11 @@ dependencies:
   crypto: ^3.0.7
   path: ^1.9.1
   in_app_purchase: ^3.3.1
+  # Anonymous usage statistics (docs/telemetry.md); silent without TELEMETRY_KEY.
+  ol1n_telemetry:
+    git:
+      url: https://github.com/lioilsources/Ol1nTelemetry.git
+      ref: v0.1.0
 
 dev_dependencies:
   flutter_test:

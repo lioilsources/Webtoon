@@ -6,6 +6,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
+import 'package:ol1n_telemetry/testing.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 import 'package:webtoon/api/local_webtoon_api.dart';
 import 'package:webtoon/app.dart';
@@ -14,6 +16,8 @@ import 'package:webtoon/packs/pack_store.dart';
 import 'package:webtoon/providers/language_provider.dart';
 import 'package:webtoon/providers/providers.dart';
 import 'package:webtoon/screens/reader_screen.dart';
+import 'package:webtoon/telemetry/telemetry_dictionary.dart';
+import 'package:webtoon/telemetry/telemetry_setup.dart';
 
 import 'pack_fixture.dart';
 import 'shop_fakes.dart';
@@ -257,4 +261,69 @@ void main() {
     expect(find.text('Settings'), findsOneWidget);
     await tester.pumpWidget(const SizedBox());
   });
+
+  testWidgets(
+    'measured session (docs/telemetry.md): screens, episode_read, activation, switch',
+    (tester) async {
+      Telemetry.resetForTest();
+      addTearDown(Telemetry.resetForTest);
+      ToonforkScreenObserver.home = 'splash';
+      await tester.runAsync(
+        () => Telemetry.init(
+          app: kTelemetryApp,
+          appVersion: kAppVersion,
+          dictionary: toonforkDictionary,
+          store: MemoryTelemetryStore(),
+          lang: () => 'cs',
+          common: () => telemetryCommon(null),
+          sink: FakeSink(),
+          startTimer: false,
+          observeLifecycle: false,
+        ),
+      );
+      await tester.pumpWidget(app());
+      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('story-cp_jezek')));
+      await tester.pumpAndSettle();
+      await scrollTo(tester, find.byKey(const ValueKey('local-episode-end')));
+      await tester.tap(find.byKey(const ValueKey('next-episode')));
+      await tester.pumpAndSettle();
+      await scrollTo(tester, find.byKey(const ValueKey('story-end')));
+      await tester.pageBack();
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Nastavení'));
+      await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(
+        find.byKey(const ValueKey('settings-stats')),
+        300,
+        scrollable: find.byType(Scrollable).first,
+      );
+
+      String line(TelemetryEvent e) => switch (e.name) {
+        'screen_view' => 'screen_view:${e.props['screen']}',
+        'episode_read_start' => 'start:${e.props['index']}',
+        'episode_read_end' =>
+          'end:${e.props['index']}:${e.props['result']}:${e.props['last']}',
+        _ => e.name,
+      };
+      final names = [
+        for (final e in Telemetry.debugQueue)
+          if (e.name != 'screen_leave') line(e),
+      ];
+      expect(names, [
+        'app_open',
+        'screen_view:splash', // until the saved profile is read
+        'screen_view:library',
+        'screen_view:reader',
+        'start:1',
+        'end:1:ok:false',
+        'activation',
+        'start:2',
+        'end:2:ok:true',
+        'screen_view:library',
+        'screen_view:settings',
+      ]);
+      await tester.pumpWidget(const SizedBox());
+    },
+  );
 }

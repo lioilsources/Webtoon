@@ -85,11 +85,11 @@ jobs:
 
       - name: Build release AAB
         working-directory: app
-        run: flutter build appbundle --release --dart-define=WEBTOON_API=$WEBTOON_API
+        run: flutter build appbundle --release --dart-define=WEBTOON_API=$WEBTOON_API --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Build release APK
         working-directory: app
-        run: flutter build apk --release --dart-define=WEBTOON_API=$WEBTOON_API
+        run: flutter build apk --release --dart-define=WEBTOON_API=$WEBTOON_API --dart-define=TELEMETRY_KEY=${{ secrets.TELEMETRY_KEY }} --dart-define=TELEMETRY_HOST=${{ secrets.TELEMETRY_HOST }}
 
       - name: Verify APK signing certificate
         run: |

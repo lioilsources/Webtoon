@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/ui_strings.dart';
 import '../packs/pack_store.dart' show formatBytes;
@@ -323,6 +324,7 @@ class PackCard extends ConsumerWidget {
         borderRadius: BorderRadius.circular(14),
         onTap: () => Navigator.of(context).push(
           MaterialPageRoute<void>(
+            settings: const RouteSettings(name: '/pack'),
             builder: (_) => PackDetailScreen(packId: pack.id),
           ),
         ),
@@ -479,7 +481,9 @@ class PackAction extends ConsumerWidget {
         ],
       ),
     );
-    if (ok == true) await ref.read(shopProvider.notifier).remove(pack);
+    if (ok != true) return;
+    Telemetry.feature('pack_delete');
+    await ref.read(shopProvider.notifier).remove(pack);
   }
 }
 
@@ -501,7 +505,10 @@ class BuyButton extends ConsumerWidget {
             ? null
             : () async {
                 final ctrl = ref.read(shopProvider.notifier);
-                if (!await showParentalGate(context, ref)) return;
+                final passed = await showParentalGate(context, ref);
+                // whether the gate was passed, nothing about the question or the answer
+                Telemetry.track('purchase_gate', {'passed': passed});
+                if (!passed) return;
                 await ctrl.buy(product.id);
               },
         child: busy
