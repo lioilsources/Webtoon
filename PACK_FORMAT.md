@@ -140,7 +140,7 @@ Pravidla:
   je zapíše do `<out>/releases/<tag>/<asset>` a vypíše příkaz `gh release create …`, který je nahraje.
 - Soubory se nepřepisují: nová verze balíčku = nový release tag (`-v2`), katalog se přepne až po nahrání.
 - `price_tier` je jen nápověda pro docs/store-products.md (cenu ukazuje appka z obchodu):
-  `pack` 0.99 USD, `bundle_all` 4.99 (`bundle_type` 2.99 is reserved, no type bundle is sold), `gamebook` 1.99, `kit` 3.99.
+  `pack` 0.99 USD, `bundle_all` 4.99 (`bundle_type` 2.99 is reserved, no type bundle is sold), `gamebook` 0.99, `kit` 3.99.
 
 ### Schema 1 (čte se dál)
 

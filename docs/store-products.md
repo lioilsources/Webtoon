@@ -20,7 +20,7 @@ python3 tools/gen_products.py --catalog --check                 # fail when out 
 |---|---|---|---|
 | pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: up to 50 stories, all 12 languages |
 | everything | `bundle_all` | 4.99 USD (Tier 5) | every pack of every type, current and future |
-| gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (today's four gamebooks are free: no product) |
+| gamebook | `gamebook_<id>` | 0.99 USD (Tier 1) | one gamebook, or one story family (Archion, Guláš a špagety: every variant shares the product) |
 | gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (a free gamebook includes its kit) |
 
 Tiers: Apple replaced price tiers with price points (USD base price, other storefronts derived); "Tier N" is the
@@ -48,7 +48,7 @@ Paid gamebooks (none yet: every published gamebook is free and needs no product)
 
 | product id | kind | USD | tier | name cs | name en | description cs | description en |
 |---|---|---|---|---|---|---|---|
-| `gamebook_drak` | gamebook | 1.99 | Tier 2 | Gamebook: Drakova hora | Gamebook: Dragon Mountain | Interaktivní příběh s volbami | Interactive branching story |
+| `gamebook_drak` | gamebook | 0.99 | Tier 1 | Gamebook: Drakova hora | Gamebook: Dragon Mountain | Interaktivní příběh s volbami | Interactive branching story |
 | `kit_drak` | kit | 3.99 | Tier 4 | Drakova hora + editor | Dragon Mountain + editor kit | Gamebook a sada pro vlastní úpravy | The gamebook plus its editor kit |
 
 (`python3 tools/gen_products.py --gamebook "drak:Drakova hora:Dragon Mountain"` adds them to the CSV.)
@@ -71,7 +71,7 @@ One-time:
 Per product (Features → **In-App Purchases** → **+**):
 1. Type **Non-Consumable**; Reference Name = the product id (e.g. `pack_kids_1`); Product ID = the product id.
 2. **Availability**: all countries the app is in.
-3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 3.99 / 4.99 USD (table above);
+3. **Price Schedule**: base country United States, price 0.99 / 3.99 / 4.99 USD (table above);
    accept the generated prices of the other storefronts.
 4. **App Store Localization**: add **Czech** and **English (U.S.)** (more later) with the display name and
    description from the table / `tools/products.csv`.
@@ -103,7 +103,7 @@ One-time:
 Per product (**Monetize → Products → In-app products → Create product**):
 1. Product ID = the product id (lower case, digits, `_` and `.` only: `pack_kids_1` is valid). Permanent.
 2. Name and description: English (default) and Czech from the table (Play allows 55 / 200 characters).
-3. Default price 0.99 / 1.99 / 3.99 / 4.99 USD → **Update exchange rates** fills the other countries.
+3. Default price 0.99 / 3.99 / 4.99 USD → **Update exchange rates** fills the other countries.
 4. **Activate**. (Play has no consumable flag; the app never consumes these purchases, which makes them
    non-consumable.)
 
