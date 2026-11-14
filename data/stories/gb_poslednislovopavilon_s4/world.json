@@ -68,13 +68,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
-      "base": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
       "outfits": {
         "default": ""
       },
       "photo": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
-      "tag_prompt": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "tag_prompt": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -85,6 +85,13 @@
       "name": "Pavilon NEON GULÁŠ & PASTA",
       "description": "Venkovní restaurace v čínském zahradním pavilonu: červené lakované sloupy, prohnutá střecha, lampiony, kvetoucí stromy, motýli, jezírko. Prší na střechu.",
       "tag_prompt": "outdoors, chinese garden pavilion, restaurant, red lacquered columns, curved tiled roof, paper lanterns, flowering trees, butterflies, lotus pond, rain falling from the roof, flowers everywhere",
+      "mood": ""
+    },
+    {
+      "id": "l_vyhled",
+      "name": "Velká čínská zeď",
+      "description": "Zklidňující výhled: Velká čínská zeď.",
+      "tag_prompt": "the great wall of china winding over misty green mountains, watchtowers, light rain, no humans",
       "mood": ""
     }
   ],

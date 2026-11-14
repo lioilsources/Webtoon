@@ -43,14 +43,36 @@
       "location_id": "l_vyhled",
       "characters": [],
       "visual_tags": [
+        "scenery",
         "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "palm leaves swaying, waves rolling in, the sun sinking, static camera",
+      "motion": "the liner drifting slowly on the horizon, gentle waves, palm leaves swaying, static camera",
       "faces": []
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "robot waiter",
+        "rolling away",
+        "holding a tray",
+        "sand"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "faces": [],
+      "motion": "the robot waiter rolls away across the sand, tray wobbling"
     },
     {
       "shot": "medium",

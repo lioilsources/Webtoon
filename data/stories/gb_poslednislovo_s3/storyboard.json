@@ -37,21 +37,52 @@
       "location_id": "l_vyhled",
       "characters": [],
       "visual_tags": [
+        "scenery",
         "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "palm leaves swaying, waves rolling in, the sun sinking, static camera",
+      "motion": "the liner drifting slowly on the horizon, gentle waves, palm leaves swaying, static camera",
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "pouring wine",
+        "beer mug on tray",
+        "beach restaurant"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "faces": [],
+      "motion": "the robot waiter pours white wine, its screen face blinking"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "warning icon on screen",
+        "holding a tray"
       ],
       "bubbles": [
         {
@@ -75,7 +106,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",
@@ -172,11 +204,20 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_plaz",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "standing",
+        "beach restaurant",
+        "confused face on screen",
+        "tilted head"
       ],
       "bubbles": [
         {
@@ -200,7 +241,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",

@@ -36,6 +36,21 @@
       "faces": []
     },
     {
+      "shot": "establishing",
+      "location_id": "l_vyhled",
+      "characters": [],
+      "visual_tags": [
+        "scenery",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "saturn slowly turning, stars twinkling, static camera",
+      "faces": []
+    },
+    {
       "shot": "medium",
       "location_id": "l_raketa",
       "characters": [
@@ -1382,18 +1397,27 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_raketa",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "scanning beam",
+        "table",
+        "empty plates",
+        "beer mug",
+        "wine glass"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "the moon surface drifting slowly past the window, stars twinkling, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the robot waiter rolls in, sweeps a scanning beam over the table and rolls away hissing, static camera"
     },
     {
       "shot": "wide",

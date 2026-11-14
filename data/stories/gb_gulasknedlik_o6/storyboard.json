@@ -34,6 +34,21 @@
       "faces": []
     },
     {
+      "shot": "establishing",
+      "location_id": "l_vyhled",
+      "characters": [],
+      "visual_tags": [
+        "scenery",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "clouds drifting over the rooftops, static camera",
+      "faces": []
+    },
+    {
       "shot": "medium",
       "location_id": "l_loutna",
       "characters": [
@@ -101,15 +116,24 @@
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "glowing eyes",
+        "polite bow"
       ],
       "bubbles": [
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "Vážení hosté.",
           "kind": "speech",
           "i18n": {
@@ -127,7 +151,7 @@
           }
         },
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "Restaurace U Tiché Loutny si vás dovoluje informovat, že vaše vzájemné ticho bylo klasifikováno jako tiché ticho, což je nejvyšší stupeň souznění v naší nabídce.",
           "kind": "speech",
           "i18n": {
@@ -145,7 +169,7 @@
           }
         },
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "Cena: 0 kreditů.",
           "kind": "speech",
           "i18n": {
@@ -165,7 +189,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",
@@ -402,15 +427,23 @@
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "standing alone",
+        "empty cafe",
+        "dim light",
+        "glowing eyes"
       ],
       "bubbles": [
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "Vážení hosté... vážení hosté...",
           "kind": "speech",
           "i18n": {
@@ -430,18 +463,28 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "wide",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "glowing eyes",
+        "polite bow"
       ],
       "bubbles": [
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "...dobrou chuť.",
           "kind": "speech",
           "i18n": {
@@ -462,8 +505,8 @@
       "sfx": [],
       "gap_after": "large",
       "animate": true,
-      "motion": "light shimmering over the white rooftops, clouds drifting behind the eiffel tower, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the empty café, the chandelier dimming, chairs slowly drifting back together"
     }
   ]
 }

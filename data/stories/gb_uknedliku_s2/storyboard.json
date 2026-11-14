@@ -36,21 +36,52 @@
       "location_id": "l_vyhled",
       "characters": [],
       "visual_tags": [
+        "scenery",
         "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "chrome glinting, palm trees swaying, sunset light shifting, static camera",
+      "motion": "chrome spheres glinting, pastel clouds drifting, static camera",
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "pouring white wine",
+        "wine bottle",
+        "holographic smile"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "faces": [],
+      "motion": "the robot tops up the wine glass unasked, its face smiling a beat late"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic face",
+        "warning sign on screen"
       ],
       "bubbles": [
         {
@@ -74,7 +105,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "medium",
@@ -169,16 +201,24 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "wide",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "rolling away",
+        "from behind",
+        "dark hall"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "medium",

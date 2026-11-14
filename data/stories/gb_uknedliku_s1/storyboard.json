@@ -54,6 +54,21 @@
       "faces": []
     },
     {
+      "shot": "establishing",
+      "location_id": "l_vyhled",
+      "characters": [],
+      "visual_tags": [
+        "scenery",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "chrome spheres glinting, pastel clouds drifting, static camera",
+      "faces": []
+    },
+    {
       "shot": "medium",
       "location_id": "l_menza",
       "characters": [],
@@ -146,25 +161,41 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "rolling in",
+        "holographic face",
+        "glitching face"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "chrome glinting, palm trees swaying, sunset light shifting, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the holographic face jumps from a smile to a sad face and back, a beat too late"
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic smile",
+        "polite bow"
       ],
       "bubbles": [
         {
@@ -188,7 +219,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "medium",
@@ -238,11 +270,20 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic smile",
+        "proud"
       ],
       "bubbles": [
         {
@@ -266,7 +307,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",
@@ -316,18 +358,25 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "pixelated face",
+        "frozen",
+        "glitch"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "chrome glinting, palm trees swaying, sunset light shifting, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the holographic face freezes and breaks into pixels for a second, then the robot rolls away"
     },
     {
       "shot": "close-up",

@@ -94,13 +94,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
-      "base": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray",
+      "description": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, rounded white robot body, single wheel, round screen face, simple smiley face on screen, mechanical arms, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
-      "tag_prompt": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray, ",
+      "tag_prompt": "solo, robot, robot waiter, rounded white robot body, single wheel, round screen face, simple smiley face on screen, mechanical arms, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -115,9 +115,9 @@
     },
     {
       "id": "l_vyhled",
-      "name": "Pláž",
+      "name": "Titanic na obzoru",
       "description": "Pláž s palmami, moře a západ slunce.",
-      "tag_prompt": "outdoors, tropical beach, palm trees, calm sea, sunset, sun on the horizon, golden sky, gentle waves, wet sand, no humans",
+      "tag_prompt": "the titanic ocean liner on the horizon, four funnels, calm sea, tropical beach, palm trees, sunset, no humans",
       "mood": ""
     }
   ],

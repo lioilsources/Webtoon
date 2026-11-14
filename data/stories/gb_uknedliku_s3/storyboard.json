@@ -37,19 +37,51 @@
       "location_id": "l_vyhled",
       "characters": [],
       "visual_tags": [
+        "scenery",
         "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
+      "animate": true,
+      "motion": "chrome spheres glinting, pastel clouds drifting, static camera",
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "standing aside",
+        "recording light",
+        "holographic face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": [],
+      "animate": false
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic smile",
+        "polite bow"
       ],
       "bubbles": [
         {
@@ -73,7 +105,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",
@@ -168,11 +201,21 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "frozen face",
+        "glitch",
+        "two expressions"
       ],
       "bubbles": [
         {
@@ -197,20 +240,28 @@
       "sfx": [],
       "gap_after": "small",
       "animate": true,
-      "motion": "chrome glinting, palm trees swaying, sunset light shifting, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the holographic face stuck between two expressions, flickering"
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "wide",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "rolling away",
+        "dark hall",
+        "from behind"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",
@@ -1236,25 +1287,41 @@
       ]
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "dessert plate",
+        "bill",
+        "placing on table center"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
       "animate": true,
-      "motion": "chrome glinting, palm trees swaying, sunset light shifting, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the robot sets one dessert and one bill exactly in the middle of the table"
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_menza",
+      "characters": [
+        {
+          "id": "robotcisnik"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "robot waiter",
+        "holding a tray",
+        "holographic sad face",
+        "apologetic bow"
       ],
       "bubbles": [
         {
@@ -1278,7 +1345,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",

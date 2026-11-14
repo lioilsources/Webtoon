@@ -35,6 +35,21 @@
       "faces": []
     },
     {
+      "shot": "establishing",
+      "location_id": "l_vyhled",
+      "characters": [],
+      "visual_tags": [
+        "scenery",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "clouds drifting over the rooftops, static camera",
+      "faces": []
+    },
+    {
       "shot": "medium",
       "location_id": "l_loutna",
       "characters": [
@@ -400,15 +415,23 @@
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "medium",
+      "location_id": "l_loutna",
+      "characters": [
+        {
+          "id": "robot"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "robot waiter",
+        "standing alone",
+        "empty cafe",
+        "dim light",
+        "glowing eyes"
       ],
       "bubbles": [
         {
-          "speaker_id": "reproduktor",
+          "speaker_id": "robot",
           "text": "Vážení hosté. Parmazán bude podán dvakrát, jednou ručně, jednou digitálně. Restaurace nenese odpovědnost za vzniklé víry v správnost.",
           "kind": "speech",
           "i18n": {
@@ -428,7 +451,8 @@
       ],
       "sfx": [],
       "gap_after": "small",
-      "faces": []
+      "faces": [],
+      "animate": false
     },
     {
       "shot": "close-up",

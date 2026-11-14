@@ -95,13 +95,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
-      "base": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
       "outfits": {
         "default": ""
       },
       "photo": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
-      "tag_prompt": "robot, no humans, service drone, round body, four small rotors, glowing lantern eye, hanging tray, hovering",
+      "tag_prompt": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -119,6 +119,13 @@
       "name": "Stůl v pavilonu",
       "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno, kolem květy a motýli.",
       "tag_prompt": "small round table in a chinese pavilion, flower petals on the table, butterflies, paper lanterns, rain in the background",
+      "mood": ""
+    },
+    {
+      "id": "l_vyhled",
+      "name": "Velká čínská zeď",
+      "description": "Zklidňující výhled: Velká čínská zeď.",
+      "tag_prompt": "the great wall of china winding over misty green mountains, watchtowers, light rain, no humans",
       "mood": ""
     }
   ]

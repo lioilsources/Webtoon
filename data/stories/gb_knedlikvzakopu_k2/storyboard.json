@@ -15,20 +15,38 @@
   },
   "panels": [
     {
-      "shot": "establishing",
+      "shot": "medium",
       "location_id": "l_olymp",
-      "characters": [],
+      "characters": [
+        {
+          "id": "m77"
+        }
+      ],
       "visual_tags": [
+        "robot waiter",
         "marble colonnade",
         "above the clouds",
-        "silver tray on a marble table",
-        "cold light",
-        "no humans",
+        "holding a silver tray",
+        "cold light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "faces": []
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_vyhled",
+      "characters": [],
+      "visual_tags": [
+        "scenery",
         "no humans"
       ],
       "bubbles": [],
       "sfx": [],
       "gap_after": "medium",
+      "animate": true,
+      "motion": "clouds drifting slowly below the temple, static camera",
       "faces": []
     },
     {
@@ -367,11 +385,20 @@
       "faces": []
     },
     {
-      "shot": "establishing",
-      "location_id": "l_vyhled",
-      "characters": [],
+      "shot": "close-up",
+      "location_id": "l_olymp",
+      "characters": [
+        {
+          "id": "m77"
+        }
+      ],
       "visual_tags": [
-        "no humans"
+        "upper body",
+        "from front",
+        "standing",
+        "head tilt",
+        "glowing eyes",
+        "holding a silver tray"
       ],
       "bubbles": [
         {
@@ -396,8 +423,8 @@
       "sfx": [],
       "gap_after": "small",
       "animate": true,
-      "motion": "clouds drifting past the temple, olive leaves trembling, static camera",
-      "faces": []
+      "faces": [],
+      "motion": "the marble android pauses, its eye slits pulsing while it processes, then it speaks"
     },
     {
       "shot": "medium",

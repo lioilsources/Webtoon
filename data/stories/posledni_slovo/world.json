@@ -95,13 +95,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
-      "base": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray",
+      "description": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, rounded white robot body, single wheel, round screen face, simple smiley face on screen, mechanical arms, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "a friendly retro-futuristic robot waiter: rounded white body on one wheel, a round screen face with a simple smile, a tray",
-      "tag_prompt": "robot, no humans, robot waiter, rounded white body, single wheel, round screen face, simple smiley face on screen, holding a tray, ",
+      "tag_prompt": "solo, robot, robot waiter, rounded white robot body, single wheel, round screen face, simple smiley face on screen, mechanical arms, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -119,6 +119,13 @@
       "name": "Stůl na pláži",
       "description": "Stůl mezi nimi: guláš s knedlíkem a pivo, špagety s parmazánem a bílé víno.",
       "tag_prompt": "small wooden table on the sand, beach restaurant, warm sunset light, parasol shade",
+      "mood": ""
+    },
+    {
+      "id": "l_vyhled",
+      "name": "Titanic na obzoru",
+      "description": "Zklidňující výhled: Titanic na obzoru.",
+      "tag_prompt": "the titanic ocean liner on the horizon, four funnels, calm sea, tropical beach, palm trees, sunset, no humans",
       "mood": ""
     }
   ]

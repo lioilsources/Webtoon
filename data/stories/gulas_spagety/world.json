@@ -95,13 +95,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
-      "base": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents",
+      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, alien, biomechanical alien waiter, chrome exoskeleton, four arms, glowing scanner visor, steam vents, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
-      "tag_prompt": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents, ",
+      "tag_prompt": "solo, alien, biomechanical alien waiter, chrome exoskeleton, four arms, glowing scanner visor, steam vents, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -119,6 +119,13 @@
       "name": "Okno rakety",
       "description": "Okno u stolu: Měsíc roste, Země se vzdaluje, neony se odrážejí ve skle.",
       "tag_prompt": "porthole window of a spaceship, the moon growing closer, earth in the distance, stars, neon reflections on the glass, no humans",
+      "mood": ""
+    },
+    {
+      "id": "l_vyhled",
+      "name": "Saturn za oknem",
+      "description": "Zklidňující výhled: Saturn za oknem.",
+      "tag_prompt": "planet saturn with its rings seen through a round rocket porthole, stars, black space, window frame in the foreground, no humans",
       "mood": ""
     }
   ]

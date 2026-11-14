@@ -69,13 +69,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
-      "base": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents",
+      "description": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, alien, biomechanical alien waiter, chrome exoskeleton, four arms, glowing scanner visor, steam vents, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "an automatic waiter on wheels: a chrome trash-can-shaped robot with a scanner visor and hissing vents",
-      "tag_prompt": "robot, no humans, robot waiter on wheels, chrome body, glowing scanner visor, steam vents, ",
+      "tag_prompt": "solo, alien, biomechanical alien waiter, chrome exoskeleton, four arms, glowing scanner visor, steam vents, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -97,9 +97,9 @@
     },
     {
       "id": "l_vyhled",
-      "name": "Vesmír",
+      "name": "Saturn za oknem",
       "description": "Pohled z okénka rakety SpaceX na měsíční krátery.",
-      "tag_prompt": "view through a round rocket porthole window, moon craters close up, grey lunar surface, black space, stars, window frame in the foreground, no humans",
+      "tag_prompt": "planet saturn with its rings seen through a round rocket porthole, stars, black space, window frame in the foreground, no humans",
       "mood": ""
     }
   ],

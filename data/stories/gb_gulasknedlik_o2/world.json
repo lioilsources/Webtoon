@@ -68,13 +68,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
-      "base": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
-      "tag_prompt": "robot, no humans, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "tag_prompt": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     },
@@ -106,7 +106,7 @@
     },
     {
       "id": "l_vyhled",
-      "name": "Francie",
+      "name": "Eiffelovka",
       "description": "Eiffelovka v dálce bílé Paříže.",
       "tag_prompt": "paris skyline, white haussmann buildings, rooftops, eiffel tower in the distance, bright sky, no humans",
       "mood": ""

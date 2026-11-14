@@ -68,13 +68,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "an android waiter carved from polished marble, smooth featureless face with glowing eye slits, a silver tray",
-      "base": "robot, no humans, android waiter, polished marble body, smooth featureless face, glowing eye slits, holding a silver tray",
+      "description": "an android waiter carved from polished marble, smooth featureless face with glowing eye slits, a silver tray. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, android, marble android waiter, polished white marble body, smooth featureless face, glowing eye slits, holding a silver tray",
       "outfits": {
         "default": ""
       },
       "photo": "an android waiter carved from polished marble, smooth featureless face with glowing eye slits, a silver tray",
-      "tag_prompt": "robot, no humans, android waiter, polished marble body, smooth featureless face, glowing eye slits, holding a silver tray",
+      "tag_prompt": "solo, android, marble android waiter, polished white marble body, smooth featureless face, glowing eye slits, holding a silver tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -89,9 +89,9 @@
     },
     {
       "id": "l_vyhled",
-      "name": "Olymp",
+      "name": "Parthenón",
       "description": "Řecký chrám na kopci.",
-      "tag_prompt": "greek temple on a hill, white marble columns, parthenon, blue sky, white clouds, olive trees, no humans",
+      "tag_prompt": "the parthenon on the acropolis, greek temple on a hill, seen from above the clouds, sea of clouds, cold light, no humans",
       "mood": ""
     }
   ],

@@ -95,13 +95,13 @@
       "gender": "other",
       "count_tag": "",
       "human": false,
-      "description": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
-      "base": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "description": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, 1960s retro chrome robot, rolling chrome stand, holographic screen face, mechanical arms, holding a tray",
       "outfits": {
         "default": ""
       },
       "photo": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
-      "tag_prompt": "robot, no humans, robot waiter, rolling chrome stand, holographic face, glowing screen face, tray",
+      "tag_prompt": "solo, robot, robot waiter, 1960s retro chrome robot, rolling chrome stand, holographic screen face, mechanical arms, holding a tray",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -119,6 +119,13 @@
       "name": "Osvětlený stůl",
       "description": "Jediný osvětlený stůl: guláš s knedlíkem a pivo v půllitru, špagety s parmazánem a bílé víno na stopce.",
       "tag_prompt": "single wooden table under a hanging lamp, pool of warm light, dark dining hall around, 1960s",
+      "mood": ""
+    },
+    {
+      "id": "l_vyhled",
+      "name": "Atomium",
+      "description": "Zklidňující výhled: Atomium.",
+      "tag_prompt": "the atomium monument in brussels, giant chrome spheres, retro futuristic, 1960s cadillac with tail fins in front, pastel sunset sky, no humans",
       "mood": ""
     }
   ]
