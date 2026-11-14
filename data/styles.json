@@ -2051,7 +2051,12 @@
         "lowres",
         "jpeg artifacts",
         "text",
-        "watermark"
+        "watermark",
+        "old man",
+        "elderly",
+        "wrinkles",
+        "grey hair",
+        "white hair"
       ],
       "sampler": "dpmpp_2m",
       "scheduler": "karras",
@@ -2104,7 +2109,11 @@
       "sampler": "euler_ancestral",
       "scheduler": "normal",
       "steps": 28,
-      "cfg": 5.5
+      "cfg": 5.5,
+      "pixelate": {
+        "factor": 6,
+        "colors": 32
+      }
     },
     "archion_cyanotype": {
       "checkpoint": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
@@ -2207,7 +2216,10 @@
     "archion_ligne": {
       "checkpoint": "Illustrious-XL-v2.0.safetensors",
       "prediction": "eps",
-      "artist_tags": [],
+      "artist_tags": [
+        "(ligne claire:1.35)",
+        "(herge style:1.1)"
+      ],
       "aesthetic_tags": [
         "ligne claire",
         "european comics",
@@ -2221,10 +2233,7 @@
       "quality_pos": [
         "masterpiece",
         "best quality",
-        "absurdres",
-        "highres",
-        "adult proportions",
-        "detailed faces"
+        "adult proportions"
       ],
       "quality_neg": [
         "worst quality",
@@ -2246,7 +2255,12 @@
         "sketch",
         "painterly",
         "neon",
-        "horror"
+        "horror",
+        "anime",
+        "big eyes",
+        "shading",
+        "gradient",
+        "cel shading"
       ],
       "sampler": "euler_ancestral",
       "scheduler": "normal",
@@ -2259,10 +2273,10 @@
       "natural": true,
       "artist_tags": [],
       "aesthetic_tags": [
-        "(courtroom sketch:1.35)",
-        "pastel and coloured pencil",
+        "(courtroom sketch:1.5)",
+        "(loose pastel sketch on toned paper:1.3)",
         "quick confident strokes",
-        "toned paper",
+        "visible paper texture",
         "unfinished edges",
         "lighting and colours from the location"
       ],
@@ -2294,7 +2308,11 @@
         "lowres",
         "jpeg artifacts",
         "text",
-        "watermark"
+        "watermark",
+        "oil painting",
+        "finished painting",
+        "smooth rendering",
+        "digital painting"
       ],
       "sampler": "dpmpp_2m",
       "scheduler": "karras",
