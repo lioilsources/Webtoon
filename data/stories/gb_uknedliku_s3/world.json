@@ -70,12 +70,12 @@
       "count_tag": "solo",
       "human": false,
       "description": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late. Speaks in a flat synthetic robotic voice.",
-      "base": "solo, robot, robot waiter, 1960s retro chrome robot, rolling chrome stand, holographic screen face, mechanical arms, holding a tray",
+      "base": "solo, (robot waiter:1.2), retro tin toy robot, teal and cream painted metal body, round dome head, (smiley face on round screen:1.1), mechanical arms, holding a tray, wheels",
       "outfits": {
         "default": ""
       },
       "photo": "a robot waiter: a rolling chrome stand with a holographic face screen that changes expression a second too late",
-      "tag_prompt": "solo, robot, robot waiter, 1960s retro chrome robot, rolling chrome stand, holographic screen face, mechanical arms, holding a tray",
+      "tag_prompt": "solo, (robot waiter:1.2), retro tin toy robot, teal and cream painted metal body, round dome head, (smiley face on round screen:1.1), mechanical arms, holding a tray, wheels",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -99,7 +99,7 @@
       "id": "l_vyhled",
       "name": "Atomium",
       "description": "Cadillac z šedesátých let.",
-      "tag_prompt": "the atomium monument in brussels, giant chrome spheres, retro futuristic, 1960s cadillac with tail fins in front, pastel sunset sky, no humans",
+      "tag_prompt": "(atomium monument:1.4), (giant silver spheres connected by tubes:1.3), brussels, small 1960s car with tail fins in the foreground, pastel sunset sky, no humans",
       "mood": ""
     }
   ],

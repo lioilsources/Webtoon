@@ -70,12 +70,12 @@
       "count_tag": "solo",
       "human": false,
       "description": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it. Speaks in a flat synthetic robotic voice.",
-      "base": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
+      "base": "solo, no humans, (flying robot:1.4), (large flying robot waiter:1.3), (round brass and jade robot body:1.2), four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering in the air",
       "outfits": {
         "default": ""
       },
       "photo": "a small round service drone with four little rotors, a lantern-like glowing eye and a tray hanging beneath it",
-      "tag_prompt": "solo, robot, flying robot waiter, round brass and jade body, four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering",
+      "tag_prompt": "solo, no humans, (flying robot:1.4), (large flying robot waiter:1.3), (round brass and jade robot body:1.2), four rotors, glowing lantern eye, two mechanical arms, holding a tray, hovering in the air",
       "identity_level": "prompt",
       "reference_images": []
     }
@@ -99,7 +99,7 @@
       "id": "l_vyhled",
       "name": "Velká čínská zeď",
       "description": "Zklidňující výhled: Velká čínská zeď.",
-      "tag_prompt": "the great wall of china winding over misty green mountains, watchtowers, light rain, no humans",
+      "tag_prompt": "(the great wall of china:1.4), (long stone wall with watchtowers winding over mountain ridges:1.3), misty green mountains, light rain, no humans",
       "mood": ""
     }
   ],
