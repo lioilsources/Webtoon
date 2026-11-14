@@ -1,0 +1,572 @@
+{
+  "title": "Zima: Žádné právo veta",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_xkryt_4",
+      "characters": [],
+      "visual_tags": [
+        "darkness",
+        "one cold monitor glow",
+        "piles of paper",
+        "pyramid poster on the wall",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_xzahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "snowy garden at night",
+        "snow-covered garden table",
+        "glowing laptop",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling steadily over the garden table"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a snowy garden table",
+        "laptop",
+        "breath steaming",
+        "snowflakes"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "quiet",
+        "sharp",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pustil jsem tě k sobě a ukázal ti svůj svět, protože jsem ti věřil jako člověku.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "V každý firmě by sis za takový zneužití a remake bez svolení vyžral pořádnej právní průšvih.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "cold",
+        "contemptuous expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Kradeš mi duševní vlastnictví a hraješ nečistou hru. Pro mě jsi skončil. Blokuju tě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "tapping an evidence folder",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "A jak tvůj plagiát uvidím v obchodech, posílám svoje důkazy rovnou lidem, co v Googlu a Applu schvalujou aplikace.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen",
+        "red block icon",
+        "no readable text",
+        "snow on the keyboard",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "breath steaming"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Pojďme to rozebrat přesně, když už to otevíráš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Nekalá soutěž předpokládá, že používám tvé jméno, tvé logo, tvé assety, nebo že vytvářím záměrný zmatek na trhu. Nic z toho nedělám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Hra se jmenuje jinak. Běží na jiné platformě. Má jiný bojový systém. A ty jsi ji deset let nevydal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "slight smile",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Co se týče „složky s důkazy“ – pokud v ní máš zdrojový kód, který jsem nikdy neviděl, tak ji klidně pošli.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Pokud v ní máš jen ten dokument s pravidly a naše staré zprávy, tak je to důkaz o tom, že jsi mi ta pravidla sám poskytl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "A pravidla hry nejsou autorské dílo v tom smyslu, jak si myslíš. Chráněný je konkrétní text. Ne systém, který popisuje. Ne mechaniky. Ne idea.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "hurt",
+        "bitter expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty jsi věděl, že to je moje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "tired expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Věděl jsem, že máš nepublikovaný koncept. Věděl jsem, že jsi mi nedal kód. A věděl jsem, že mi dlužíš peníze.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "firm",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím. Ani omluvu za to, že jsem si postavil vlastní hru. Ani podíl.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Ani právo veta nad tím, co smím a nesmím vydat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xzahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "heavy snowfall at night",
+        "snow-covered garden",
+        "house lights far away",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "heavy snow falling in the dark garden"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "quiet",
+        "snowflakes on his beard",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Kámo… chybět mi nebudeš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "pained expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Když jsem byl ve svém životě nejvíc v hajzlu a hledal u tebe útočiště, vyhodils mě po dvou dnech jak největšího fakana. To se nezapomíná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Nikdys mě nenechal udělat ti nabídku na padesát na padesát, kterou jsem vždycky považoval za samozřejmost. Ta nabídka pořád platí. I teď.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "sad",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "Ale ty sis vybral cestu výhrůžek a blokování.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "final",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_kabat",
+          "text": "R.I.P.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "snow on the lid",
+        "breath steaming"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xdum_4",
+      "characters": [
+        {
+          "id": "ol1n_kabat"
+        }
+      ],
+      "visual_tags": [
+        "walking towards an open door",
+        "from behind",
+        "footprints in the snow",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting still",
+        "face lit by monitor glow",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xkryt_4",
+      "characters": [],
+      "visual_tags": [
+        "monitor switched off",
+        "total darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the last monitor glow fading to black"
+    }
+  ]
+}

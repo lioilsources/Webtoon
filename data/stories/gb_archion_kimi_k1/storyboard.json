@@ -1,0 +1,307 @@
+{
+  "title": "Instalace",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_serverovna_1",
+      "characters": [],
+      "visual_tags": [
+        "empty open server chassis",
+        "pink antistatic bags",
+        "cardboard boxes",
+        "warm white light",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "dust motes floating in the warm light around the empty server chassis"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "walking around a server chassis",
+        "looking at it tenderly",
+        "hands in pockets",
+        "from side"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a garden table",
+        "night",
+        "laptop",
+        "desk lamp",
+        "focused",
+        "warm lamp light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on a laptop",
+        "routine",
+        "happy expert smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "Tak. Debian netinst. Stáhni ISO, vypal, nabootuj. Já ti připravil celou konfiguraci, všechno je to v repu, na GitHubu. Vidíš to tam?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_1",
+      "characters": [],
+      "visual_tags": [
+        "glowing terminal window on a monitor",
+        "no readable text",
+        "keyboard",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "git clone git@github.com:kosmo/nebulon-server.git",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "quiet",
+        "wistful expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "On mi stavěl svět. Zálohovaný. Verzovaný. S historií.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "calm",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "SSH klíče máš vygenerovaný. Heslo si změň. Teď to patří tobě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [],
+      "visual_tags": [
+        "laptop glowing on a dark terrace",
+        "lamp light",
+        "crickets",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "bitter smile",
+        "short laugh"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Patřilo. To je ono, patřilo. Dal mi stroj, na kterým jsem měl vyrůst. A já na něm…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_1",
+      "characters": [],
+      "visual_tags": [
+        "hands typing on a keyboard",
+        "terminal glow",
+        "no readable text"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "fingers tapping the keys like rain, terminal light flickering"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "enthusiastic",
+        "warm lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "Tak. Teď ti to ukážu. Celý vesmír je teď v terminálu. Zapomeň na okýnka. Tady nic neklikáš. Tady víš, co děláš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_serverovna_1_bezi",
+      "characters": [],
+      "visual_tags": [
+        "tower server powering on",
+        "green and blue status LEDs",
+        "spinning fans",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "status LEDs lighting up one by one, fans spinning up"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_terasa",
+      "characters": [],
+      "visual_tags": [
+        "dark house behind the terrace",
+        "one lit window",
+        "night",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Holky (z domu): cp, mv, rm! cp, mv, rm!",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "to himself",
+        "face lit by laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "Vím, co děláš. To jsi nikdy neřekl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

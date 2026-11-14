@@ -1,0 +1,162 @@
+{
+  "title": "Epilog",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_hranice",
+      "characters": [],
+      "visual_tags": [
+        "dark stage",
+        "two distant glowing screens",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Píp.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hranice",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "in darkness",
+        "face lit by a screen",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "…hokej můžem probrat.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hranice",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "in darkness",
+        "face lit by a screen",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "…budu ti chybět.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hranice",
+      "characters": [],
+      "visual_tags": [
+        "dark stage",
+        "two screens",
+        "silence",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Píp.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hranice",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "in darkness",
+        "realization",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "…vydal jsi to beze mě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_hranice",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "in darkness",
+        "calm",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Ty jsi to nikdy nevydal.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_hranice",
+      "characters": [],
+      "visual_tags": [
+        "empty torn envelope",
+        "line on the floor",
+        "spotlight",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the torn envelope edge trembling in a draft"
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "title": "Pozdní podzim: Blokace",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "grey rainy potager",
+        "umbrella over a zinc table",
+        "lit house windows",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rain falling into puddles, umbrella dripping"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting on a single chair",
+        "heap of graphics cards",
+        "half the neons dark"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "addressing the monitor like a judge",
+        "stiff",
+        "formal"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Věřil jsem ti jako člověku, proto jsem tě pustil k sobě a ukázal ti svůj svět. V každé firmě by za takovou kopii bez svolení byl pořádný průšvih.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Kradeš, co jsem vymyslel.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "cold stare",
+        "finger over a mouse button"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pro mě jsi skončil, blokuju tě. A jestli tvoji kopii uvidím v obchodech, všechno, co mám, pošlu Googlu i Applu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sklep_4",
+      "characters": [],
+      "visual_tags": [
+        "neon tubes going dark",
+        "cellar vault",
+        "heap of cards",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes going out one after another"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "typing under an umbrella",
+        "rain",
+        "laptop on a zinc table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing under an umbrella",
+        "tired",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak psychopat. V tomhle vím přesně, o čem mluvím. Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen in the rain",
+        "website glow",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "ARCHION",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_dest",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "looking at the garden",
+        "rain"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Hotovo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_dest",
+      "characters": [],
+      "visual_tags": [
+        "hands covering a laptop",
+        "jacket",
+        "heavy rain"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

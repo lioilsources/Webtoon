@@ -1,0 +1,516 @@
+{
+  "title": "Jaro: Startovní peníze",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "white cherry tree in full blossom",
+        "tulips",
+        "garden table with a laptop",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "cherry petals drifting, tulips swaying in a light breeze"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "soldering a circuit board",
+        "soldering iron",
+        "smoke",
+        "buzzing neon above",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [],
+      "visual_tags": [
+        "glowing file icon on a screen",
+        "no readable text",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NebulonTactics.md",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing",
+        "proud expression",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Posílám ti to. Pravidla. Celý Nebulon na třech a půl kilobajtech.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "reading the laptop",
+        "smiling",
+        "sitting at a garden table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Deset let práce a vejde se to do jednoho souboru.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "gesturing around at the shelves",
+        "possessive expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pravidla jo. Zbytek je tady. Kód ti nedám. Ten patří mně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "calm expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Nechci tvůj kód. Chci, aby to konečně vyšlo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_1"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tugging at a sleeve",
+        "excited",
+        "looking up",
+        "ladybug on a finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_1",
+          "text": "Tati, beruška! Pojď se podívat na berušku!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down at someone",
+        "warm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Hned, zlato. Píšu si s kamarádem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_2"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "curious expression",
+        "head tilted",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_2",
+          "text": "S jakým kamarádem?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "playful smile",
+        "looking down at someone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "S tím, co bydlí pod zemí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_2"
+        }
+      ],
+      "visual_tags": [
+        "running away across the spring grass",
+        "laughing",
+        "tulips"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the twins running off laughing through the tulips"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "generous expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Pošlu ti peníze. Na release. Ať to máš z čeho dotáhnout.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "staring at a monitor",
+        "moved",
+        "silent",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "touched",
+        "quiet smile",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Kámo, to je start, o jakým se mi ani nesnilo. Na to nezapomenu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "grinning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "A ještě něco. Stavím ti server. Naučíš se na něm Linux.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "laughing",
+        "shaking his head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty jsi blázen.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "laughing",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Známe se dvacet let. Blázni jsme oba.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "dandelion wreath on a laptop keyboard",
+        "sunlight",
+        "garden table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "lifting his head",
+        "looking up",
+        "as if feeling a draft",
+        "cold light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "dreamy expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Až to vyjde, bude to velký.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "slight smile",
+        "looking at the dandelion wreath"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Až to vyjde.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "golden evening light",
+        "blossoming garden",
+        "empty garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

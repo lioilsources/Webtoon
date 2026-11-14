@@ -1,0 +1,417 @@
+{
+  "title": "Čas, který nejde vrátit",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_noc",
+      "characters": [],
+      "visual_tags": [
+        "night garden",
+        "glowing open laptop on a table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "sitting at a garden table",
+        "night",
+        "face lit by laptop glow",
+        "thoughtful"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Víš, co je zvláštní? Když se podívám zpátky, vlastně nevím, kdy jsem měl naposledy opravdu klid.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_byt_2016",
+      "characters": [],
+      "visual_tags": [
+        "empty baby crib",
+        "laptop on a desk",
+        "still",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "2016. Narodila se dcera. 2018. Deset let práce skončilo.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_postylky",
+      "characters": [],
+      "visual_tags": [
+        "two empty baby cribs",
+        "night lamp",
+        "still",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pak další práce. Půl roku. Pak covid. Pak dvojčata.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_rekonstrukce",
+      "characters": [],
+      "visual_tags": [
+        "empty flat under renovation",
+        "plastic sheets",
+        "dust in still air",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Pak byt, který se rok rekonstruoval za provozu. Sbíječky, prach, křik, práce, domácnost.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kancelar",
+      "characters": [],
+      "visual_tags": [
+        "dark empty open-plan office",
+        "lights off",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "A pak další práce. Čtyři roky. A konec.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "face lit by laptop glow",
+        "quiet",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Člověk si pořád říká, že až se něco vyřeší, bude líp.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "counting softly",
+        "faint smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Až bude dítě větší. Až najdu práci. Až skončí rekonstrukce. Až bude doma klid. Až bude trochu času.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired smile",
+        "looking away"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Jenže ono se vždycky objeví něco dalšího.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_noc",
+      "characters": [],
+      "visual_tags": [
+        "night garden",
+        "bare trees",
+        "laptop glowing on the table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop glow pulsing softly, branches moving in the night breeze"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "hands on the laptop",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "A pak jsem si sedl k počítači. Protože tam jsem mohl něco dokončit.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "face lit by laptop glow",
+        "gentle certainty"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Když jsem napsal funkci, fungovala. Když jsem opravil chybu, zmizela. Když něco nešlo, mohl jsem zjistit proč.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "V životě to takhle nefungovalo.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "looking at a laptop screen",
+        "face lit by its glow",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "thoughtful",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "A pak jsem potkal někoho, kdo deset let stavěl svůj vlastní svět. Myslel jsem, že mu pomůžu dostat ho ven.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet resolve",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Možná jsem jen potřeboval postavit něco vlastního. Něco, co mi nikdo nevezme.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_noc",
+      "characters": [],
+      "visual_tags": [
+        "night garden",
+        "empty chair",
+        "laptop glowing on the table",
+        "stars",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Když já jsem ti pomáhal stavět tvůj svět, kdo mezitím pomáhal stavět ten můj?",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_noc",
+      "characters": [
+        {
+          "id": "ol1n_zahrada"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "small smile",
+        "hands on the keyboard",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zahrada",
+          "text": "Tak pojďme na to.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_noc",
+      "characters": [],
+      "visual_tags": [
+        "finger pressing a laptop key",
+        "screen glow in the dark",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "ARCHION – BUILD STARTED",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the screen glow brightening as the build starts"
+    }
+  ]
+}

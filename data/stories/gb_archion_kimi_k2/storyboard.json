@@ -1,0 +1,218 @@
+{
+  "title": "Výuka",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_serverovna_2",
+      "characters": [],
+      "visual_tags": [
+        "humming tower server",
+        "blinking LEDs",
+        "neon tube",
+        "night",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "server LEDs blinking, neon tube buzzing, night after night"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [],
+      "visual_tags": [
+        "laptop on a terrace table",
+        "night",
+        "lamp light",
+        "terminal glow",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "git add .\ngit commit -m \"wip\"\ngit push",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "patient teacher",
+        "warm lamp light"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "Tohle je historie. Každá změna je navždy. Není „přepsal jsem a je to pryč“. Je „commit“. Je to tam. Uvidíš sám, co jsi dělal před rokem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "wry smile",
+        "guilty expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Dal mi git. Říkal: teď už nikdy nic neztratíš. Deset let vývoje. Commituj. Pushuj. Nikdy jsem nepushnul.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "clicking a mouse",
+        "ignoring a humming server beside him",
+        "tarot cards on the desk",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_terasa",
+      "characters": [
+        {
+          "id": "ol1n_terasa"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "patient",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_terasa",
+          "text": "A tenhle problém vyřešíš jedním příkazem. Pojď, zkus to přes SSH. Ne klikat, psát.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_2",
+      "characters": [],
+      "visual_tags": [
+        "chat window glowing on a monitor",
+        "no readable text",
+        "dark room",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Kosmo: Když se ti něco nehodí, řekneš mi, ať to smažu. A pak, ať zahodím i ty čtyři roky.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [],
+      "visual_tags": [
+        "server switched off",
+        "darkness",
+        "single flashlight beam",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the server LEDs die, a flashlight beam switches on"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a flashlight",
+        "face lit from below",
+        "flat expression",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Windows mi stačí. Vždycky stačily.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_2_tma",
+      "characters": [],
+      "visual_tags": [
+        "screwdriver unscrewing a server case",
+        "flashlight beam",
+        "loose screws",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "title": "Jaro: Budu ti chybět",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_sklep_1",
+      "characters": [],
+      "visual_tags": [
+        "vaulted stone cellar",
+        "racks of graphics cards",
+        "blue and violet neon",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes humming and flickering"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "french potager in bloom",
+        "zinc garden table",
+        "laptop",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blossom petals drifting over the vegetable beds"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "stacking terracotta flower pots",
+        "tower of pots",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a desk",
+        "face lit by monitor glow",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing slowly",
+        "flat voice",
+        "looking at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Netuším, o čem mluvíš. Na dobrý video jsou potřeba dobrý záběry, to jo. Ale ať je jasno: o vývoji už s tebou mluvit nebudu. Nejsem na sdílení.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a table",
+        "from front",
+        "shooing children from the keyboard",
+        "typing",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Já sdílím rád, ale nemysli si, pochopil jsem, že ty to máš z nějakého důvodu nastavené jinak.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "dcera_9"
+        }
+      ],
+      "visual_tags": [
+        "holding out a crayon drawing",
+        "hopeful",
+        "looking up"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "crayon drawing on a zinc table",
+        "laptop beside it",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter expression",
+        "looking down",
+        "monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Spolupráce nám nevyšla. Štvalo mě to. A něco z toho bolí pořád.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "turning to the children",
+        "apologetic smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Půjdu za minutu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "slight smile",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Budu ti chybět.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "motionless",
+        "staring at a monitor",
+        "blue light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "shrugging",
+        "looking away from the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nevím. Hokej můžem probrat, a jiný věci taky. Není to tak černý.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_jaro",
+      "characters": [],
+      "visual_tags": [
+        "single blossom falling",
+        "zinc table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "one blossom slowly falling past the laptop"
+    }
+  ]
+}

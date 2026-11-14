@@ -1,0 +1,164 @@
+{
+ "id": "w_archion_kimi",
+ "title": "Archion: Server",
+ "synopsis": "Vzpomínka na stroj, který Ol1n postavil kamarádovi, aby se na něm naučil Linux. Instalace, noci výuky, a pak šroubovák, baterka a inzerát. Jen web běží dál.",
+ "tone": "nostalgický, hořký, tichý",
+ "audience": "adult",
+ "language": "cs",
+ "style_id": "archion_pixel",
+ "profile": "archion",
+ "bible": {
+  "rules": [
+   "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+   "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+   "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+  ],
+  "factions": []
+ },
+ "canon": {
+  "nodes": [],
+  "constraints": [
+   "Server je rozebraný a prodaný; jen Kosmova webová prezentace na Ol1nově stroji pořád odpovídá HTTP 200 OK."
+  ]
+ },
+ "permissions": {
+  "allowed_locations": [
+   "l_serverovna_1",
+   "l_serverovna_1_bezi",
+   "l_terasa",
+   "l_serverovna_2",
+   "l_serverovna_2_tma",
+   "l_serverovna_3",
+   "l_zahrada_zima",
+   "l_web"
+  ]
+ },
+ "characters": [
+  {
+   "id": "kosmo",
+   "name": "Kosmo",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+   "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+   "outfits": {
+    "default": "worn chunky wool sweater"
+   },
+   "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+   "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_terasa",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+   "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+   "outfits": {
+    "default": "grey hoodie, jeans"
+   },
+   "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+   "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, grey hoodie, jeans",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "ol1n_zima",
+   "name": "Ol1n",
+   "role": "playable",
+   "gender": "m",
+   "count_tag": "1boy",
+   "human": true,
+   "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+   "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+   "outfits": {
+    "default": "long dark winter coat, knitted scarf, jeans"
+   },
+   "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+   "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, long dark winter coat, knitted scarf, jeans",
+   "identity_level": "prompt",
+   "reference_images": []
+  },
+  {
+   "id": "dcera_9_zima",
+   "name": "Nejstarší dcera",
+   "role": "playable",
+   "gender": "f",
+   "count_tag": "1girl",
+   "human": true,
+   "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "base": "child, girl, light brown hair, long braid, brown eyes",
+   "outfits": {
+    "default": "red winter jacket, knitted hat, long pants, snow boots"
+   },
+   "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+   "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, red winter jacket, knitted hat, long pants, snow boots",
+   "identity_level": "prompt",
+   "reference_images": []
+  }
+ ],
+ "locations": [
+  {
+   "id": "l_serverovna_1",
+   "name": "Kryt – instalace",
+   "description": "Čistý, světlý kryt plný naděje, uprostřed holá skříň serveru.",
+   "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, bright and clean for once, warm white light, unopened computer components, cardboard boxes, pink antistatic bags, an empty open server chassis standing in the middle like an empty throne, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_serverovna_1_bezi",
+   "name": "Kryt – server běží",
+   "description": "Server se poprvé spustí, svítí diody.",
+   "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, a tower server running for the first time, green and blue status LEDs, spinning fans, warm light, a terminal glow on a monitor, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_terasa",
+   "name": "Terasa – večer v minulosti",
+   "description": "Večer na terase, děti spí, notebook na stole.",
+   "tag_prompt": "outdoors, wooden terrace of a family house at night, a laptop on a garden table, a desk lamp, dark garden beyond, warm yellow lamp light, crickets",
+   "mood": ""
+  },
+  {
+   "id": "l_serverovna_2",
+   "name": "Kryt – výuka",
+   "description": "Noc za nocí, server hučí vedle starého počítače s okýnky.",
+   "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, night, a humming tower server with blinking LEDs ignored next to an old windows desktop computer, a neon tube, blue screen glow, coffee mugs, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_serverovna_2_tma",
+   "name": "Kryt – server zhasl",
+   "description": "Tma, jen baterka.",
+   "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, total darkness, the server switched off, a single flashlight beam, dust in the beam, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_serverovna_3",
+   "name": "Kryt – demontáž",
+   "description": "Rozebraná skříň serveru, baterka, monitor s inzerátem.",
+   "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, darkness, a disassembled server chassis on the floor, loose screws, a screwdriver, a flashlight beam, one monitor glowing with a sale listing, no readable text, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+   "mood": ""
+  },
+  {
+   "id": "l_zahrada_zima",
+   "name": "Zahrada – zima",
+   "description": "Zimní zahrada, vánoční řetěz světel.",
+   "tag_prompt": "outdoors, family garden in winter, snow on the ground, bare trees, a chain of colourful christmas lights strung along the fence, cold blue evening, warm windows of the house",
+   "mood": ""
+  },
+  {
+   "id": "l_web",
+   "name": "Běžící web",
+   "description": "Jedna obrazovka s běžící webovou prezentací.",
+   "tag_prompt": "a single glowing monitor in darkness showing a simple website, server LEDs blinking, no readable text",
+   "mood": ""
+  }
+ ]
+}

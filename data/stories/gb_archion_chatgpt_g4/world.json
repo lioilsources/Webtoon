@@ -1,0 +1,78 @@
+{
+  "id": "w_gb_archion_chatgpt_g4",
+  "title": "Archion: Zahrada uprostřed hluku — 2022: Rekonstrukce",
+  "synopsis": "Sedm let života v režimu přerušení: dítě, výpovědi, covid, dvojčata, rekonstrukce za provozu. Ol1n mezitím pomáhá kamarádovi Kosmovi stavět jeho svět, až konečně najde kus ticha na zahradě a spustí vlastní build.",
+  "tone": "civilní, unavený, tiše hořký, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_charcoal",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Nikdy dva dospělí v jednom obraze: Ol1n, partnerka a Kosmo mají každý svůj panel.",
+      "Děti jen oblečené, miminka v dečkách a postýlkách, nikdo jim neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; hlasy z reproduktoru a zprávy jsou jen v titulcích a bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n nikdy nedokončí větu, dokud nenajde zahradu; hra končí spuštěním buildu Archionu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_rekonstrukce"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ol1n_doma",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech man aged 40 who looks early thirties, with overgrown blond hair, an unkempt full blond beard and hollow blue-grey eyes, worn out by years at home",
+      "base": "adult, mature male, overgrown messy blond hair, unkempt full blond beard, blue-grey eyes, gaunt face, hollow eyes, dark circles under the eyes, youthful face under the exhaustion, looks early thirties",
+      "outfits": {
+        "default": "stained worn navy t-shirt, baggy grey sweatpants, headset around the neck"
+      },
+      "photo": "a gaunt Czech man aged 40 who looks early thirties, with overgrown blond hair, an unkempt full blond beard and hollow blue-grey eyes, worn out by years at home",
+      "tag_prompt": "adult, mature male, overgrown messy blond hair, unkempt full blond beard, blue-grey eyes, gaunt face, hollow eyes, dark circles under the eyes, youthful face under the exhaustion, looks early thirties, stained worn navy t-shirt, baggy grey sweatpants, headset around the neck",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "partnerka",
+      "name": "Partnerka",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tired Czech woman aged 33 with brown hair in a loose bun and a serious face",
+      "base": "adult, mature female, brown hair, loose messy bun, serious face, tired eyes",
+      "outfits": {
+        "default": "oversized beige cardigan, long sleeves, dark trousers"
+      },
+      "photo": "a tired Czech woman aged 33 with brown hair in a loose bun and a serious face",
+      "tag_prompt": "adult, mature female, brown hair, loose messy bun, serious face, tired eyes, oversized beige cardigan, long sleeves, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_rekonstrukce",
+      "name": "Byt v rekonstrukci – 2022",
+      "description": "Plachty, prach, kabely, stavební materiál, hračky mezi nářadím.",
+      "tag_prompt": "indoors, flat under renovation, plastic sheets over furniture, dust in the air, cables, bags of plaster, power tools, children's toys among construction tools, furniture pushed to the walls, grey charcoal tones, cold muted light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_chatgpt",
+    "node": "g4"
+  }
+}

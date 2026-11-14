@@ -1,0 +1,102 @@
+{
+  "id": "w_gb_archion_claude_c0",
+  "title": "Archion: Hra o čtyřech ročních obdobích — Prolog: Útočiště",
+  "synopsis": "Dva kamarádi, kteří se znají dvacet let: jeden žije v protiatomovém krytu, kde se nemění čas, druhý na zahradě, kde se střídají roční období. Dvě noci útočiště, jedna hra a rok zpráv přes plátno.",
+  "tone": "lyrický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_linocut",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; zpráva o padesáti na padesát už nebude doručena, v krytu zhasne poslední neon a Ol1n odejde s dcerami k domu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kryt_0",
+      "l_kryt_0_noc",
+      "l_kryt_0_rano",
+      "l_tma"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_prolog",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech man aged about 44 who looks under 40, with short blond hair, an unkempt overgrown blond beard and hollow blue-grey eyes, at the end of a long breakdown, with a single bag over his shoulder",
+      "base": "adult, mature male, short blond hair, unkempt overgrown blond beard, gaunt, hollow eyes, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "dark worn jacket, grey hoodie, jeans, a canvas bag over the shoulder"
+      },
+      "photo": "a gaunt Czech man aged about 44 who looks under 40, with short blond hair, an unkempt overgrown blond beard and hollow blue-grey eyes, at the end of a long breakdown",
+      "tag_prompt": "adult, mature male, short blond hair, unkempt overgrown blond beard, gaunt, hollow eyes, blue-grey eyes, youthful face, looks late thirties, dark worn jacket, grey hoodie, jeans, a canvas bag over the shoulder",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kryt_0",
+      "name": "Kryt – prolog",
+      "description": "Protiatomový kryt, všechny neony svítí, karimatka mezi regály.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, all neon tubes lit, cold teal and white light, a sleeping mat between the shelves, a glowing monitor, humming fans, heavy stale air, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_kryt_0_noc",
+      "name": "Kryt – druhá noc",
+      "description": "Ztlumené neony, dva hrnky, krabice od pizzy.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, dimmed neon tubes, two mugs and a pizza box on the desk, deep teal shadows, only the monitor glowing, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_kryt_0_rano",
+      "name": "Kryt – ráno",
+      "description": "Otevřené dveře, pás denního světla rozřízne kryt napůl.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, the steel blast door standing open, a single sharp strip of warm daylight cutting across the concrete floor, cold teal darkness on both sides, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_tma",
+      "name": "Prázdná polovina jeviště",
+      "description": "Tma, v níž začne růst zahrada.",
+      "tag_prompt": "outdoors, empty dark ground at night, black void, first green shoots in the soil, faint dawn light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_claude",
+    "node": "c0"
+  }
+}

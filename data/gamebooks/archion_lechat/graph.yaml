@@ -1,0 +1,220 @@
+# Gamebook — Archion: Dva světy. Verze „Le Chat“: hra o pěti dějstvích s intermezzem a epilogem, scénář napsal model
+# Le Chat (od Ol1na). Páteř je obálka s penězi na release, který se nikdy nekonal. Lineární, sedm uzlů l1–l7.
+# Smyšlená verze: druhá strana je smyšlená postava Kosmo a jeho hra Nebulon (Dreamer/Lukáš → Kosmo, Orbitron/Orbi →
+# Nebulon, OrbitronTactics → NebulonTactics). Kosmovy repliky, které Le Chat přebral ze skutečného chatu, jsou
+# přepsané vlastními slovy (smysl zůstal, nejsou to citace); repliky, které si Le Chat vymyslel (intermezzo,
+# „Tři a půl kilobajtu…“, epilog), zůstaly. Ol1novy repliky jsou doslova, bez částek a dat: data v hlavičkách dějství
+# vypuštěná (zůstala roční období), „furt mi visíš 30 000“ → „furt mi visíš peníze“, litanie dluhů bez částek a měsíců
+# („Jednou. Podruhé. Potřetí.“), „Šedesát.“ v intermezzu vypuštěno, „90 tisíc“ → „peníze“, splátky „do Vánoc první
+# část, v březnu další, v srpnu zbytek“, „těch 30 000“ → „ty peníze“, štítek krabice „ORBITRON 2006–2026 R.I.P.“ →
+# „NEBULON — R.I.P.“. Emoji vypuštěné. Věta „O těch 60K, které jsi mi dal…“ je jako v archion a2 („O penězích na
+# release Nebulonu…“), protože peníze dal Ol1n Kosmovi, ne naopak.
+# Opravené překlepy: „Hoto“ → „Hotovo“, „stalo“ → „stálo“ (v přepsané Kosmově replice), „Teď si to“ → „Teď sis to“,
+# „si ho zpeněžil“ → „sis ho zpeněžil“, „Nikdy jsi mi nenechal“ → „Nikdy jsi mě nenechal“, „vydal i napůl s tebou“ →
+# „vydal napůl se mnou“, „fakána“ → „fakana“ (jako v archion a4).
+# Intermezzo Le Chat uvádí „před rokem“, ale odpočet běží roky (12, 24, 60, 120 měsíců) a hraje ho „dva mladší muži“:
+# titulek je proto „Kdysi. Jaro.“. Kosmo a Ol1n ani v intermezzu nejsou v jednom obraze, každý má svůj panel.
+# Postavy podle autora (2026-11-14): Ol1n 46, vypadá pod čtyřicet, krátké blond vlasy, plnovous; Kosmo 44, vypadá pod
+# čtyřicet, rozcuchané blond vlasy trčící do stran, strniště, ošoupaný vlněný svetr, na vzhledu mu nezáleží.
+# V intermezzu oba mladší (vypadají na třicet), Kosmo sebevědomý, s ankhem na krku. Ve sklepě jeho zájmy jako rekvizity:
+# tarot, egyptský papyrus a ankh, figurka mimozemšťana, knihy o archeologii, plakát pyramidy.
+#
+# Styl: archion_ligne — francouzská ligne claire (bande dessinée): Le Chat je od Mistralu, francouzský.
+# Prostředí: kryt je klenutý kamenný sklep pod městem s regály grafických karet a modrofialovými neony; zahrada je
+# francouzská zelinářská zahrádka (potager) se zinkovým stolkem. Intermezzo v teplém oranžovém světle, odpočet
+# „NEBULON – COMING SOON“ v titulcích, obálka se rozpadne na prach. Epilog: prázdná roztržená obálka na čáře mezi
+# oběma polovinami. Rekvizity: karty padají jako listí, kytička v květináči u notebooku, karty v krabicích.
+# Hudba (L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
+#   archion_lechat: "french musette waltz, melancholic accordion, slow, nylon guitar, rainy paris evening"
+
+schema: 1
+id: archion_lechat
+title: "Archion: Dva světy"
+title_i18n: {en: "Archion: Two Worlds", de: "Archion: Zwei Welten", fr: "Archion : deux mondes", it: "Archion: due mondi", ja: "アルキオン：ふたつの世界", ko: "아르키온: 두 개의 세계", pl: "Archion: Dwa światy", pt-BR: "Archion: Dois mundos", ru: "Архион: Два мира", uk: "Архіон: Два світи", vi: "Archion: Hai thế giới"}
+world: w_archion_lechat
+audience: adult
+language: cs
+style_id: archion_ligne
+profile: archion
+product_id: gamebook_archion_lechat
+start: l1
+
+premise: >
+  Pět ročních dob a jedna obálka s penězi. Kosmo deset let sní o hře Nebulon v klenutém sklepě pod městem, Ol1n píše
+  kód na zahradě plné dětí. Kdysi stačilo jedno přikývnutí, „dobře, v titulcích“, a z něj vyrostl celý spor.
+
+characters: [kosmo, kosmo_mlady, ol1n_mlady, ol1n_jaro, ol1n_leto, ol1n_podzim, ol1n_zima, dcera_9, dvojcata_5]
+
+locations:
+  - {id: l_sklep_1, name: Sklep – jaro, description: "klenutý sklep, modrofialové neony"}
+  - {id: l_sklep_2, name: Sklep – léto, description: "karty jako balíček"}
+  - {id: l_sklep_3, name: Sklep – podzim, description: "karty na zemi"}
+  - {id: l_sklep_4, name: Sklep – pozdní podzim, description: "jediná židle, půlka neonů"}
+  - {id: l_sklep_5, name: Sklep – zima, description: "krabice s kartami"}
+  - {id: l_sklep_kdysi, name: Sklep – kdysi, description: "oranžové světlo, obálka"}
+  - {id: l_potager_jaro, name: Zahrada – jaro, description: "potager v květu"}
+  - {id: l_potager_leto, name: Zahrada – léto, description: "slunce, cikády"}
+  - {id: l_potager_podzim, name: Zahrada – podzim, description: "barevné listí, vítr"}
+  - {id: l_potager_dest, name: Zahrada – déšť, description: "šedo, deštník"}
+  - {id: l_potager_zima, name: Zahrada – zima, description: "sníh, noc"}
+  - {id: l_hranice, name: Hranice, description: "dvě obrazovky, čára"}
+
+draft:
+  speakers: {Kosmo: kosmo, Ol1n: ol1n, Dcera: dcera, Dvojčata: dvojcata}
+  faces:
+    kosmo: [[intense stare, face lit by monitor glow], [bitter expression, looking down], [smug smile, typing]]
+    ol1n: [[calm expression, looking at a laptop screen], [slight smile, looking at another], [tired expression, looking down]]
+    dcera: [[curious expression, looking up], [smile, looking at another], [pouting, looking up]]
+    dvojcata: [[laughing, open mouth], [excited, looking up], [smile]]
+    kosmo_ted: [[bitter expression, looking down], [staring at a monitor], [cold stare]]
+    ol1n_ted: [[calm expression, looking at a laptop screen], [tired expression], [looking down]]
+  speaking: {kosmo: [upper body, sitting at a desk, from front], kosmo_ted: [upper body, sitting at a desk, from front], default: [upper body, from front]}
+
+nodes:
+  l1:
+    title: "Jaro: Budu ti chybět"
+    location: l_potager_jaro
+    cast: {kosmo: kosmo, ol1n: ol1n_jaro, dcera: dcera_9, dvojcata: dvojcata_5}
+    next: l2
+    script:
+      - {see: "Levá polovina: klenutý sklep pod městem, regály grafických karet, kabely jako liány.", shot: establishing, loc: l_sklep_1, tags: [vaulted stone cellar, racks of graphics cards, blue and violet neon], gap: medium, animate: "neon tubes humming and flickering"}
+      - {see: "Pravá polovina: zahrada v plném květu.", shot: establishing, tags: [french potager in bloom, zinc garden table, laptop], gap: medium, animate: "blossom petals drifting over the vegetable beds"}
+      - {see: "Dvě pětiletky staví věž z květináčů.", shot: medium, who: dvojcata, tags: [stacking terracotta flower pots, tower of pots, laughing]}
+      - {see: "Kosmo sedí sám, monitor osvětluje jen jeho obličej. Pípnutí.", shot: medium, who: kosmo, loc: l_sklep_1, tags: [sitting alone at a desk, face lit by monitor glow, tarot cards on the desk]}
+      - {say: kosmo, text: "Netuším, o čem mluvíš. Na dobrý video jsou potřeba dobrý záběry, to jo. Ale ať je jasno: o vývoji už s tebou mluvit nebudu. Nejsem na sdílení.", loc: l_sklep_1, tags: [typing slowly, flat voice, looking at a monitor]}
+      - {say: ol1n, text: "Já sdílím rád, ale nemysli si, pochopil jsem, že ty to máš z nějakého důvodu nastavené jinak.", pose: [upper body, sitting at a table, from front], tags: [shooing children from the keyboard, typing, calm]}
+      - {see: "Devítiletá mu strčí pod nos kresbu. Ol1n ji bez pohledu položí na stůl.", shot: medium, who: dcera, tags: [holding out a crayon drawing, hopeful, looking up]}
+      - {see: "Kresba leží na zinkovém stolku vedle notebooku.", shot: close-up, tags: [crayon drawing on a zinc table, laptop beside it]}
+      - {say: kosmo, text: "Spolupráce nám nevyšla. Štvalo mě to. A něco z toho bolí pořád.", loc: l_sklep_1, tags: [bitter expression, looking down, monitor glow]}
+      - {say: ol1n, text: "Půjdu za minutu.", tags: [turning to the children, apologetic smile]}
+      - {say: ol1n, text: "Budu ti chybět.", tags: [typing, slight smile, looking at a laptop screen]}
+      - {see: "Dlouhá pauza ve sklepě.", shot: close-up, who: kosmo, loc: l_sklep_1, tags: [motionless, staring at a monitor, blue light]}
+      - {say: kosmo, text: "Nevím. Hokej můžem probrat, a jiný věci taky. Není to tak černý.", loc: l_sklep_1, tags: [shrugging, looking away from the monitor]}
+      - {see: "Oba se dívají do svých obrazovek. V zahradě opadá jeden květ. Nikdo si toho nevšimne.", shot: close-up, tags: [single blossom falling, zinc table], gap: large, animate: "one blossom slowly falling past the laptop"}
+
+  l2:
+    title: "Léto: V titulcích"
+    location: l_potager_leto
+    cast: {kosmo: kosmo, ol1n: ol1n_leto, dcera: dcera_9, dvojcata: dvojcata_5}
+    next: l3
+    script:
+      - {see: "Zahrada v plném slunci, cikády. Děti stříkají vodou.", shot: establishing, tags: [french potager in full sun, water sprinkler, sunflowers], gap: medium, animate: "water arcs from the sprinkler, sunflowers swaying"}
+      - {see: "Ve sklepě Kosmo přehazuje grafické karty jako karty v balíčku.", shot: medium, who: kosmo, loc: l_sklep_2, tags: [shuffling graphics cards like playing cards, bored, neon light]}
+      - {say: ol1n, text: "Jak to máš s tím příjmem? Koukám, že mi furt visíš peníze. Teď by se mi něco hodilo zpátky.", pose: [upper body, sitting, from front], tags: [laptop on his knees, calm, typing]}
+      - {see: "Dlouhá tma. Jen pípnutí.", shot: close-up, loc: l_sklep_2, tags: [dark monitor, tiny notification light]}
+      - {say: kosmo, text: "Cože? Tolik to určitě není, spíš míň. Však sám jsi mi tenkrát dal strop. Všechno šlo do Nebulonu a teď nevím, co vlastně chci dělat.", loc: l_sklep_2, tags: [defensive, rubbing his neck, looking at a monitor]}
+      - {say: ol1n, text: "Nepospíchám, jen mě zajímá, jestli to řešíš.", tags: [typing, neutral expression]}
+      - {see: "Ol1n vytáhne z kapsy papírek s nadpisem.", caption: "DLUHY", shot: close-up, tags: [hand holding a small folded note, sunlight]}
+      - {say: ol1n, text: "Jednou. Podruhé. Potřetí.", tags: [reading a small paper note, quiet, ashamed]}
+      - {see: "Papírek schová, jako by se za něj styděl.", shot: close-up, tags: [hand pushing a note into pocket]}
+      - {say: kosmo, text: "Zkusím najít, co jsme si tehdy psali. Bylo by fajn to uzavřít.", loc: l_sklep_2, pose: [upper body, sitting, from front], tags: [talking aloud to the monitor, half sincere]}
+      - {say: ol1n, text: "O penězích na release Nebulonu, který se nikdy neuskutečnil, snad raději ani mluvit nebudu. Beru to tak, že mi za to dáváš svolení releasnout svůj vlastní projekt.", tags: [typing, children tugging at his sleeve, firm]}
+      - {see: "Kosmo poprvé vstane. Udělá krok k monitoru.", shot: medium, who: kosmo, loc: l_sklep_2, tags: [standing up from the chair, stepping towards the monitor, tense]}
+      - {say: kosmo, text: "To teda ne. Přepisovat jsi to začal ty, z vlastní hlavy. Dal jsi mi pár korun na rozjezd, na hru je to nic. Koncept má mnohem větší cenu. A nebyl jsi v tom sám.", loc: l_sklep_2, pose: [upper body, standing, from front], tags: [pointing at the monitor, indignant]}
+      - {see: "Pauza. Cikády utichnou.", shot: wide, tags: [still summer garden, no wind, empty zinc table]}
+      - {say: kosmo, text: "Jestli chceš Nebulon vydat, můžeme se nějak domluvit. Na to máš právo.", loc: l_sklep_2, pose: [upper body, standing, from front], tags: [forced smile, looking at a monitor]}
+      - {say: kosmo, text: "Mě to celý stálo strašný peníze. A to jsem ještě skromnej.", loc: l_sklep_2, pose: [upper body, standing, from front], tags: [smile freezing on his lips, bitter]}
+      - {see: "Ol1n napíše jednu větu. Pak druhou. Podívá se na to, co napsal, a stejně to pošle.", shot: close-up, who: ol1n, tags: [hesitating over the keyboard, looking at a laptop screen]}
+      - {say: ol1n, text: "Asi tě dám jenom do titulků, sorry.", tags: [typing, blank expression]}
+      - {say: kosmo, text: "Kámo, jdi do háje.", loc: l_sklep_2, shot: close-up, pose: [upper body, standing, from front], tags: [furious, glaring at the monitor]}
+      - {say: ol1n, text: "Teď sis to poprvé trefil, kámo.", tags: [talking to himself, quiet, sad smile]}
+      - {see: "Devítiletá mu podá kytku.", shot: medium, who: dcera, tags: [holding out a small flower, smile, looking up]}
+      - {see: "Ol1n neví, co s ní. Postaví ji do květináče vedle notebooku.", shot: close-up, tags: [small flower in a terracotta pot, laptop on a zinc table], gap: large}
+
+  l3:
+    title: "Intermezzo: Sázka na jistotu"
+    location: l_sklep_kdysi
+    cast: {kosmo: kosmo_mlady, ol1n: ol1n_mlady, kosmo_ted: kosmo, ol1n_ted: ol1n_podzim}
+    next: l4
+    script:
+      - {see: "Neony ve sklepě svítí tepleji, oranžově, poprvé a naposledy. U jednoho počítače dva mladší muži.", caption: "Kdysi. Jaro.", shot: establishing, tags: [warm orange light, one computer, two chairs, envelope on the desk], gap: medium, animate: "warm orange neon glow breathing softly"}
+      - {see: "Na stole mezi nimi leží obálka s penězi.", shot: close-up, tags: [thick envelope on a desk, warm orange light]}
+      - {say: ol1n, text: "Naposled, co ti půjčuju na něco, co nemá plán. Ale release máš na dosah, to má smysl.", tags: [sitting, sliding an envelope across a desk, serious]}
+      - {see: "Kosmo bere obálku, jako by ji ani nebral do ruky.", shot: medium, who: kosmo, tags: [taking an envelope casually, self-confident grin, ankh pendant]}
+      - {say: kosmo, text: "Vyjde to. Balancuje to. Menu, achievementy, store page… měsíc a máme to venku. Pak ti to vrátím z prvního výdělku a budem se smát.", tags: [leaning back in a chair, cocky grin, gesturing]}
+      - {say: ol1n, text: "A co kdybys to prostě vydal napůl se mnou? Kdysi jsem ti to chtěl nabídnout. Padesát na padesát.", tags: [hopeful, looking at another]}
+      - {say: kosmo, text: "Ne, ne. To je moje. Ty mi pomáháš, to je jiný. Tohle je moje dědictví, kámo. Ty budeš v titulcích. To je taky něco.", pose: [upper body, sitting at a desk, from front], tags: [waving a hand dismissively, pushing an envelope into a pocket]}
+      - {see: "Dlouhá pauza. Ol1n přikývne. V tom přikývnutí je celá budoucí hra.", shot: close-up, who: ol1n, tags: [nodding slowly, closed mouth, warm light]}
+      - {say: ol1n, text: "Dobře. V titulcích.", tags: [quiet, slight smile, looking down]}
+      - {see: "Oba se dívají do jednoho monitoru.", caption: "NEBULON – COMING SOON", shot: close-up, tags: [glowing monitor in warm light, no readable text]}
+      - {see: "Odpočítávání.", caption: "30 dní… 29… 28…", shot: close-up, tags: [monitor glow, countdown light, no readable text]}
+      - {see: "Čísla běží rychleji a rychleji, roky.", caption: "12 měsíců… 24… 60… 120…", shot: close-up, tags: [monitor glow turning cold blue, no readable text], animate: "the monitor light flickering faster and faster"}
+      - {see: "Obálka na stole se rozpadá na prach. Světlo z oranžové zpátky do studené modré.", shot: close-up, loc: l_sklep_4, tags: [envelope crumbling into dust, cold blue light], animate: "the envelope crumbling into drifting dust"}
+      - {say: kosmo_ted, text: "„O penězích na release, který se nikdy neuskutečnil, snad raději ani mluvit nebudu.“", loc: l_sklep_4, tags: [older, alone, reading the monitor aloud, cold blue light]}
+      - {say: ol1n_ted, text: "Beru to tak, že mi za to dáváš svolení releasnout svůj vlastní projekt.", loc: l_hranice, tags: [in darkness, face lit by a laptop, calm]}
+      - {say: kosmo_ted, text: "To teda ne.", loc: l_sklep_4, shot: close-up, tags: [bitter expression, staring at a monitor]}
+      - {see: "Tma. Odpočítávání doběhne.", caption: "RELEASE DATE: —", shot: close-up, loc: l_sklep_4, tags: [lone monitor glowing in darkness, no readable text], gap: large}
+
+  l4:
+    title: "Podzim: Tři a půl kilobajtu"
+    location: l_potager_podzim
+    cast: {kosmo: kosmo, ol1n: ol1n_podzim}
+    next: l5
+    script:
+      - {see: "Zahrada v barevném listí, vítr.", shot: establishing, tags: [french potager in autumn, colourful falling leaves, wind], gap: medium, animate: "colourful leaves whirling across the beds"}
+      - {see: "Kosmo sedí na zemi mezi kartami, klávesnici má na kolenou.", shot: medium, who: kosmo, loc: l_sklep_3, tags: [sitting on a stone floor, keyboard on his knees, graphics cards around]}
+      - {say: kosmo, text: "Asi ti to nedochází. Nebulon i celý ten koncept jsou můj majetek a můžu to doložit. Ty na to nárok nemáš. Nabídl jsem ti dohodu a tys ji přešel. Nevěřím vlastním očím.", loc: l_sklep_3, pose: [upper body, sitting, from front], tags: [typing hard, wide eyes]}
+      - {say: ol1n, text: "Chováš se jak hovado. Nevěřím svým očima.", tags: [typing, cold expression, wind in his hair]}
+      - {see: "Ol1n přetáhne soubor.", shot: close-up, tags: [laptop on a zinc table, file being sent, no readable text, leaves]}
+      - {see: "Světlo v krytu problikne fialově.", shot: wide, loc: l_sklep_3, tags: [violet neon flash, cellar vault, scattered cards]}
+      - {say: ol1n, text: "Teď už s tebou bude mluvit jen moje superinteligence, pokud nezměníš přístup a tón.", tags: [typing, calm, firm]}
+      - {say: kosmo, text: "Tři a půl kilobajtu. Třicet pět set bajtů.", loc: l_sklep_3, pose: [upper body, sitting, from front], tags: [reading a monitor, hollow voice]}
+      - {say: kosmo, text: "To je celé moje dědictví? Třicet pět set bajtů?", loc: l_sklep_3, pose: [upper body, standing, from front], tags: [standing up, staring at a monitor, disbelief]}
+      - {say: kosmo, text: "Podívej. Tohle je to, co po mně zůstane, a ty to nechceš respektovat. Bereš si to silou. Mezi námi je konec. Navždy. Okrádáš mě a ani se neschováváš.", loc: l_sklep_3, pose: [upper body, standing, from front], tags: [typing furiously, shaking with anger]}
+      - {see: "Ol1n v zahradě píše. Děti ho nepřerušují, poprvé v celé hře. To je nejhorší znamení.", shot: wide, who: ol1n, tags: [alone at a zinc table, empty garden, no children]}
+      - {say: ol1n, text: "Dlužíš mi peníze. Nesplnil jsi podmínky mojí půjčky. Dlužíš mi server, na kterém jsem pracoval stovky hodin. Ty jsi z něj vykrad moje disky a navíc sis ho zpeněžil.", tags: [typing, cold, matter-of-fact]}
+      - {say: ol1n, text: "Dlužíš mi poděkování za tvojí webovou prezentaci, která u mě pořád běží. Dlužíš mi omluvu.", tags: [typing, cold, matter-of-fact]}
+      - {see: "Pauza. Listí opadá.", shot: close-up, tags: [leaves falling on a laptop keyboard]}
+      - {say: ol1n, text: "Začněme penězi. Do Vánoc chci vrátit první část. V březnu další. V srpnu zbytek.", tags: [typing, firm, looking at a laptop screen]}
+      - {say: ol1n, text: "Ze stránek NebulonTactics mažu všechny odkazy na tebe a tvůj projekt. Projekt přejmenuju na Archion. Nemáš na něm žádný podíl, jenom hejty.", tags: [typing, final, cold expression]}
+      - {see: "Kosmo dlouze kouká na monitor. Pak jednou rukou shodí stojan s kartami.", shot: medium, who: kosmo, loc: l_sklep_3, tags: [sweeping a rack over, falling graphics cards], animate: "graphics cards falling through the air like leaves"}
+      - {see: "Karty padají na zem jako listí. V zahradě v tu chvíli padá listí taky.", shot: wide, tags: [leaves falling over the garden, empty zinc table], gap: large, animate: "leaves falling in the same rhythm as the cards"}
+
+  l5:
+    title: "Pozdní podzim: Blokace"
+    location: l_potager_dest
+    cast: {kosmo: kosmo, ol1n: ol1n_podzim}
+    next: l6
+    script:
+      - {see: "Zahrada šedá, déšť. Holky už nehrají venku, jejich hlasy zní jen z domu.", shot: establishing, tags: [grey rainy potager, umbrella over a zinc table, lit house windows], gap: medium, animate: "rain falling into puddles, umbrella dripping"}
+      - {see: "Ve sklepě sedí Kosmo na jediné židli uprostřed hromady karet.", shot: wide, who: kosmo, loc: l_sklep_4, tags: [sitting on a single chair, heap of graphics cards, half the neons dark]}
+      - {say: kosmo, text: "Věřil jsem ti jako člověku, proto jsem tě pustil k sobě a ukázal ti svůj svět. V každé firmě by za takovou kopii bez svolení byl pořádný průšvih. Kradeš, co jsem vymyslel.", loc: l_sklep_4, pose: [upper body, sitting, from front], tags: [addressing the monitor like a judge, stiff, formal]}
+      - {say: kosmo, text: "Pro mě jsi skončil, blokuju tě. A jestli tvoji kopii uvidím v obchodech, všechno, co mám, pošlu Googlu i Applu.", loc: l_sklep_4, pose: [upper body, sitting, from front], tags: [cold stare, finger over a mouse button]}
+      - {see: "Pípnutí. Kontakt zablokován. Ve sklepě zhasne část neonů.", shot: wide, loc: l_sklep_4, tags: [neon tubes going dark, cellar vault, heap of cards], animate: "neon tubes going out one after another"}
+      - {see: "Ol1n píše pod deštníkem. Zpráva už stejně nedojde, ale napíše ji.", shot: medium, who: ol1n, tags: [typing under an umbrella, rain, laptop on a zinc table]}
+      - {say: ol1n, text: "Chováš se jak psychopat. V tomhle vím přesně, o čem mluvím. Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím.", tags: [typing under an umbrella, tired, firm]}
+      - {see: "Otevře prohlížeč. Kde dřív byl Nebulon, je teď prázdné místo.", caption: "ARCHION", shot: close-up, tags: [laptop screen in the rain, website glow, no readable text]}
+      - {say: ol1n, text: "Hotovo.", tags: [quiet, looking at the garden, rain]}
+      - {see: "Déšť zesílí. Ol1n přikryje notebook bundou.", shot: close-up, tags: [hands covering a laptop, jacket, heavy rain], gap: large}
+
+  l6:
+    title: "Zima: R.I.P."
+    location: l_potager_zima
+    cast: {kosmo: kosmo, ol1n: ol1n_zima}
+    next: l7
+    script:
+      - {see: "Zahrada pod sněhem, tma, jen svit notebooku. Holky spí, jejich přítomnost je jen pár světýlek v okně.", shot: establishing, tags: [snowy potager at night, glowing laptop, small lights in windows], gap: medium, animate: "snow falling in the laptop glow"}
+      - {see: "Ve sklepě Kosmo v bundě skládá kartu po kartě do krabice.", shot: medium, who: kosmo, loc: l_sklep_5, tags: [packing graphics cards into a box, breath vapour, cold]}
+      - {say: ol1n, text: "Kámo, chybět mi nebudeš.", tags: [typing in the snow, quiet]}
+      - {see: "Pauza. Sníh.", shot: close-up, tags: [snowflakes settling on a zinc table, laptop glow]}
+      - {say: ol1n, text: "Když jsem byl ve svém životě nejhůř a hledal u tebe útočiště, vyhodil jsi mě po dvou dnech jak největšího fakana. To se nezapomíná.", tags: [typing, pained expression, snow on his hat]}
+      - {say: kosmo, text: "Ty umíš jen rozebrat člověku práci na kousky. A když jsi mi řekl, ať zahodím i ty čtyři roky vývoje, bylo mi jasný, co jsi zač.", loc: l_sklep_5, pose: [upper body, standing, from front], tags: [holding a graphics card, talking to the dark, bitter]}
+      - {say: ol1n, text: "Nikdy jsi mě nenechal udělat nabídku na 50/50 revenue split, kterou jsem vždycky považoval za samozřejmost.", tags: [typing, tired, looking at a laptop screen]}
+      - {say: ol1n, text: "Ta nabídka pořád platí.", shot: close-up, tags: [talking to himself, quiet, snow falling]}
+      - {see: "Kosmo zavře krabici a fixem na ni napíše jméno.", caption: "NEBULON — R.I.P.", shot: close-up, loc: l_sklep_5, tags: [closed cardboard box, marker pen, last neon light]}
+      - {say: ol1n, text: "R.I.P.", tags: [hands still on the keyboard, not sending, calm]}
+      - {see: "Obě poloviny zhasínají. Jako poslední svítí obě obrazovky stejnou modří. Pak zhasne i ta.", shot: wide, loc: l_hranice, tags: [two screens glowing the same blue, darkness], gap: large, animate: "both screens fading out together"}
+
+  l7:
+    title: "Epilog"
+    location: l_hranice
+    cast: {kosmo: kosmo, ol1n: ol1n_zima}
+    ending: good
+    script:
+      - {see: "Temno. Jen dvě světýlka obrazovek, každé na své straně pódia.", caption: "Píp.", shot: establishing, tags: [dark stage, two distant glowing screens], gap: medium}
+      - {say: kosmo, text: "…hokej můžem probrat.", tags: [in darkness, face lit by a screen, quiet]}
+      - {say: ol1n, text: "…budu ti chybět.", tags: [in darkness, face lit by a screen, quiet]}
+      - {see: "Pípnutí. Nikdo neodpoví. Dlouhá pauza.", caption: "Píp.", shot: wide, tags: [dark stage, two screens, silence]}
+      - {say: kosmo, text: "…vydal jsi to beze mě.", tags: [in darkness, realization, looking down]}
+      - {say: ol1n, text: "Ty jsi to nikdy nevydal.", tags: [in darkness, calm, tired]}
+      - {see: "Na scéně zbývá jen obálka, prázdná a roztrhaná, přesně na hranici mezi oběma polovinami pódia.", shot: close-up, tags: [empty torn envelope, line on the floor, spotlight], gap: large, animate: "the torn envelope edge trembling in a draft"}

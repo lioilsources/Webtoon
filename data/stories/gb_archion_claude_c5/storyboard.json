@@ -1,0 +1,604 @@
+{
+  "title": "Zima: Zpráva nebyla doručena",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "deep snow",
+        "black bare trees like lines",
+        "a snow-covered garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling softly over the white garden"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a snowy garden table",
+        "winter coat",
+        "laptop glow",
+        "breath vapour"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "one last neon tube lit",
+        "a single monitor glow",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "reading from a sheet of paper",
+        "stiff posture",
+        "formal",
+        "cold expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a sheet of paper",
+        "formal",
+        "cold"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ukázal jsem ti svůj svět, protože jsem ti věřil jako člověku. Ty jsi tu důvěru proměnil v loupež. Pro mě jsi skončil. Blokuju tě.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "hand frozen above a mouse",
+        "sheet of paper on the desk",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "whispering to himself",
+        "staring into nothing",
+        "monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Dvacet let.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "cold expression",
+        "snow on his shoulders"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Chováš se jak psychopat. Napiš mi radši, kdy pošleš ty peníze. Já tobě nic nedlužím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a snowy table",
+        "night",
+        "laptop glow",
+        "falling snow",
+        "dark house"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling through the laptop light"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "snow on his hands",
+        "face lit by laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Kámo, chybět mi nebudeš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "pained expression",
+        "typing",
+        "snow on his hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Když jsem byl v životě nejvíc na dně a hledal u tebe útočiště, vyhodils mě po dvou dnech. To se nezapomíná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting motionless in the dark",
+        "tarot cards spread on the desk",
+        "unreadable expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired",
+        "typing",
+        "snow falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Nikdys mě nenechal udělat ti nabídku. Padesát na padesát. Vždycky jsem to považoval za samozřejmost. Ta nabídka pořád platí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "laptop screen glowing",
+        "snowy night",
+        "no readable text",
+        "snowflakes",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Půl na půl. Padesát na padesát. Vždycky jsem to tak bral.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "small grey notice on a screen",
+        "no readable text",
+        "snow on the keyboard",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Zpráva nebyla doručena.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "final",
+        "face lit by laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "R.I.P.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_4",
+      "characters": [],
+      "visual_tags": [
+        "the last neon tube going out",
+        "total darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the last neon tube dies, then the monitor fades to black"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "running out into the snow",
+        "pyjamas under winter jackets",
+        "laughing",
+        "dawn light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojce_1_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "surprised",
+        "looking up",
+        "breath vapour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_1_zima",
+          "text": "Tati, tys byl venku celou noc?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojce_2_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "laughing",
+        "pointing up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_2_zima",
+          "text": "Máš sníh na hlavě!",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking to the side",
+        "breath vapour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "S kým sis psal?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tired",
+        "snow in his hair",
+        "looking down at someone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "S kamarádem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "serious expression",
+        "looking up at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "S tím, co bydlí pod zemí?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "snowy table",
+        "dawn light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop lid closing, snow settling on it"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "looking up at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_zima",
+          "text": "A kde je teď?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "looking into the distance",
+        "from side",
+        "snow in his hair",
+        "long stare"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "walking towards an open house door",
+        "from behind",
+        "holding hands up",
+        "snow",
+        "dawn"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_4_svitani",
+      "characters": [],
+      "visual_tags": [
+        "small snowball on a closed laptop",
+        "mittens",
+        "dawn light",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4_noc",
+      "characters": [],
+      "visual_tags": [
+        "falling snow",
+        "darkness",
+        "an empty snowy garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

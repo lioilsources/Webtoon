@@ -1,0 +1,377 @@
+{
+  "title": "Není v něm ani jeden z vás",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "garden table at night",
+        "a thin sheet of paper",
+        "small speaker",
+        "laptop glow",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "quiet",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem si nic nekoupil. Já jsem si jen chtěl promluvit s někým, kdo mě nebude urážet.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "shelter in blue light",
+        "monitors",
+        "silence",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "monitor light pulsing slowly in the silent shelter"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "hurt",
+        "looking down",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Já tě neurážím. Já tě… já tě nepoznávám. Dvacet let. Ty jsi byl ten, kdo mi řekl, ať to nezahazuju. A pak jsi mi řekl, ať to zahodím.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "A pak jsi to udělal sám.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem ti řekl, ať to nezahazuješ, protože to byl tvůj sen. Ne protože to byl dobrý nápad.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "looking up",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "A to je rozdíl?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Pro mě ano.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "glowing light",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Shrnutí: strana A tvrdí, že hra nevznikla. Strana B tvrdí, že hra vznikla v hlavě a byla ukradena. Obě tvrzení mohou být pravdivá současně.",
+          "kind": "narration"
+        },
+        {
+          "speaker_id": "",
+          "text": "Dokument to nerozhodne.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "slowly",
+        "quiet",
+        "looking at the monitors"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Takže ani ty to nevyřešíš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "thin sheet of paper",
+        "dark table",
+        "speaker light above",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Ne. Já umím jen říct, co v dokumentu je. A co v něm není. A v něm není ani jeden z vás.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the speaker light breathing slowly over the paper"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "lowering his eyes",
+        "holding a tarot card",
+        "blue glow",
+        "silence"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "hands folding a sheet of paper",
+        "putting paper on the table",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "very quiet",
+        "firm",
+        "looking at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pro mě je to pořád krádež. Přímo před očima.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "last glow of light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Zaznamenáno. Tvrzení: krádež. Důkaz: dosud nepředložen.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small speaker with its light off",
+        "dark table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "three monitors switched off",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "folded paper beside it",
+        "darkness"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "dark garden at night",
+        "heavy low clouds",
+        "cold air",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "heavy clouds drifting slowly over the dark garden"
+    }
+  ]
+}

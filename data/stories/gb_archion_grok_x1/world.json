@@ -1,0 +1,93 @@
+{
+  "id": "w_gb_archion_grok_x1",
+  "title": "Archion: Idea versus vyjádření — Pozdní podzim: Krádež čeho přesně?",
+  "synopsis": "Pozdní podzim a zima. Kosmo v krytu plném vytištěných papírů skládá složku s důkazy, Ol1n na zahradě odpovídá paragrafy: nápad nikdo nevlastní, chráněné je jen vyjádření.",
+  "tone": "věcný, tvrdý, soudní",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_courtroom",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: kryt a zahrada jsou dvě poloviny jeviště.",
+      "Obrazovky a papíry bez čitelného textu; zprávy a Hlas jsou jen v bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n zavře notebook a odejde do domu; Kosmovi zhasne monitor."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_xdum_3",
+      "l_xkryt_3",
+      "l_xzahrada_3"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an unkempt Czech loner aged 44 who looks under 40 with messy tousled blond hair sticking out, stubble, in a worn chunky wool sweater, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater, old jeans"
+      },
+      "photo": "an unkempt Czech loner aged 44 who looks under 40 with messy tousled blond hair sticking out and stubble, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater, old jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm, warm Czech man aged 46 who looks under 40 with short blond hair, a full blond beard and blue-grey eyes, in an autumn jacket",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm, warm Czech man aged 46 who looks under 40 with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_xkryt_3",
+      "name": "Kryt – válečná porada",
+      "description": "Skoro všechna světla zhasla, jeden studený monitor, stohy papírů, složka s důkazy.",
+      "tag_prompt": "indoors, underground shelter turned into a legal war room, one cold glowing monitor, stacks of printed paper, a thick evidence folder, binders, dust in the air, most lights off, tarot cards scattered on the desk, an Egyptian papyrus and a brass ankh, a small alien figurine, archaeology books, a pyramid poster on the concrete wall",
+      "mood": ""
+    },
+    {
+      "id": "l_xzahrada_3",
+      "name": "Zahrada – pozdní podzim",
+      "description": "Holé stromy, šedé nebe, stůl na zahradě.",
+      "tag_prompt": "outdoors, family garden in late autumn, bare trees, fallen brown leaves, grey overcast sky, wooden garden table, cold",
+      "mood": ""
+    },
+    {
+      "id": "l_xdum_3",
+      "name": "Dům – okno",
+      "description": "Rozsvícené okno, za ním děti.",
+      "tag_prompt": "outdoors, family house at dusk seen from the garden, warm lit window, shadows of children behind the curtain, bare branches",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_grok",
+    "node": "x1"
+  }
+}

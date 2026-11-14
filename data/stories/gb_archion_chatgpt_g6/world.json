@@ -1,0 +1,144 @@
+{
+  "id": "w_gb_archion_chatgpt_g6",
+  "title": "Archion: Zahrada uprostřed hluku — 2024–2025: Zahrada",
+  "synopsis": "Sedm let života v režimu přerušení: dítě, výpovědi, covid, dvojčata, rekonstrukce za provozu. Ol1n mezitím pomáhá kamarádovi Kosmovi stavět jeho svět, až konečně najde kus ticha na zahradě a spustí vlastní build.",
+  "tone": "civilní, unavený, tiše hořký, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_charcoal",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Nikdy dva dospělí v jednom obraze: Ol1n, partnerka a Kosmo mají každý svůj panel.",
+      "Děti jen oblečené, miminka v dečkách a postýlkách, nikdo jim neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; hlasy z reproduktoru a zprávy jsou jen v titulcích a bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n nikdy nedokončí větu, dokud nenajde zahradu; hra končí spuštěním buildu Archionu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kosmo_pokoj",
+      "l_zahrada_jaro",
+      "l_zahrada_leto",
+      "l_zahrada_podzim",
+      "l_zahrada_zima"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ol1n_zahrada",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a healthy calm Czech man aged 44 who looks mid-thirties, with short blond hair, a full blond beard and warm blue-grey eyes, back to life in his garden",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, healthy, calm face, youthful face, looks mid-thirties",
+      "outfits": {
+        "default": "light linen shirt with rolled-up sleeves, jeans"
+      },
+      "photo": "a healthy calm Czech man aged 44 who looks mid-thirties, with short blond hair, a full blond beard and warm blue-grey eyes, back to life in his garden",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, healthy, calm face, youthful face, looks mid-thirties, light linen shirt with rolled-up sleeves, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_8",
+      "name": "Nejstarší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 8 with a long light brown braid and big attentive brown eyes",
+      "base": "child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "lavender long-sleeved t-shirt, denim overalls, long pants, sneakers"
+      },
+      "photo": "a bright Czech girl aged 8 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, lavender long-sleeved t-shirt, denim overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojcata_3",
+      "name": "Dvojčata",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "2girls",
+      "human": true,
+      "description": "two identical Czech twin girls aged 3 with short blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, twins, two little girls, identical twins, toddlers, short blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers"
+      },
+      "photo": "two identical Czech twin girls aged 3 with short blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, twins, two little girls, identical twins, toddlers, short blonde pigtails, rosy cheeks, blue eyes, matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kosmo_pokoj",
+      "name": "Kosmův pokoj",
+      "description": "Vzdálená přítmím zalitá místnost, jen monitor.",
+      "tag_prompt": "indoors, distant dim room, single glowing monitor, piles of computer parts, tarot cards on the table, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, deep shadows, grey charcoal tones, cold muted light",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_jaro",
+      "name": "Zahrada – jaro",
+      "description": "Zahrada, poprvé prostor a ticho; první barva.",
+      "tag_prompt": "outdoors, quiet family garden in spring, blossoming fruit tree, wooden garden table, birds, the first soft touches of green and pale yellow watercolour, warm daylight",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_leto",
+      "name": "Zahrada – léto",
+      "description": "Plná letní zahrada.",
+      "tag_prompt": "outdoors, family garden in summer, full green trees, sunflowers, wooden garden table with a laptop, soft green and gold watercolour washes",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_podzim",
+      "name": "Zahrada – podzim",
+      "description": "Listí opadává.",
+      "tag_prompt": "outdoors, family garden in autumn, falling orange leaves, wooden garden table, soft rust and ochre watercolour washes",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_zima",
+      "name": "Zahrada – zima",
+      "description": "Sníh na zahradě.",
+      "tag_prompt": "outdoors, family garden under snow, bare trees, snow on the garden table, pale blue watercolour washes, lit house windows",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_chatgpt",
+    "node": "g6"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "title": "Zima: R.I.P.",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_zima",
+      "characters": [],
+      "visual_tags": [
+        "snowy potager at night",
+        "glowing laptop",
+        "small lights in windows",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snow falling in the laptop glow"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_5",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "packing graphics cards into a box",
+        "breath vapour",
+        "cold"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing in the snow",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Kámo, chybět mi nebudeš.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_zima",
+      "characters": [],
+      "visual_tags": [
+        "snowflakes settling on a zinc table",
+        "laptop glow",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "pained expression",
+        "snow on his hat"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Když jsem byl ve svém životě nejhůř a hledal u tebe útočiště, vyhodil jsi mě po dvou dnech jak největšího fakana. To se nezapomíná.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_5",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "holding a graphics card",
+        "talking to the dark",
+        "bitter"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty umíš jen rozebrat člověku práci na kousky. A když jsi mi řekl, ať zahodím i ty čtyři roky vývoje, bylo mi jasný, co jsi zač.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "tired",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Nikdy jsi mě nenechal udělat nabídku na 50/50 revenue split, kterou jsem vždycky považoval za samozřejmost.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "talking to himself",
+        "quiet",
+        "snow falling"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Ta nabídka pořád platí.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_5",
+      "characters": [],
+      "visual_tags": [
+        "closed cardboard box",
+        "marker pen",
+        "last neon light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NEBULON — R.I.P.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "hands still on the keyboard",
+        "not sending",
+        "calm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "R.I.P.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_hranice",
+      "characters": [],
+      "visual_tags": [
+        "two screens glowing the same blue",
+        "darkness",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "both screens fading out together"
+    }
+  ]
+}

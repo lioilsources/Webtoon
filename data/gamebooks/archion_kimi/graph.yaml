@@ -1,0 +1,124 @@
+# Gamebook — Archion: Server. Verze „Kimi“: vložený obraz k Archionu, scénář napsal model Kimi (od Ol1na). Vzpomínka,
+# kterou spustí Ol1nova věta „Dlužíš mi server“: instalace, výuka, demontáž. Lineární, tři uzly, bez voleb.
+# Smyšlená verze: druhá strana sporu je smyšlená postava Kosmo a jeho hra Nebulon. Kosmovy repliky, které odpovídají
+# skutečným zprávám, jsou přepsané (ozvěna chatu o „smazání“ a „čtyřech letech“ je jeho vlastními slovy, bez času);
+# Kosmovy monology do publika si model vymyslel, zůstaly, jen bez skutečného jména („Lukáši“ vypuštěno) a uhlazené.
+# Ol1novy repliky doslova, bez dat (zpráva „20. října, 14:03“ je bez data). Repo v příkazu: kosmo/nebulon-server.
+# Opravené překlepy: „tichom“ (scénické poznámky), „vykrad“ → „vykradl“, „si ho zpeněžil“ → „sis ho zpeněžil“,
+# „tvojí webovou“ → „tvoji webovou“, „ve krytu“ → „v krytu“, „Věděl jste“ → „Víte“.
+#
+# Prostředí: kryt jako serverovna. Nejdřív čistý a světlý, uprostřed holá skříň serveru jako prázdný trůn,
+# antistatické sáčky; pak noci výuky (server hučí ignorovaný vedle počítače s okýnky); nakonec tma, baterka,
+# šroubovák a inzerát na jediném monitoru. Ol1n na terase v noci (minulost), na konci zimní zahrada s vánočním řetězem.
+# DISCORD a příkazy (git, apt, HTTP 200 OK) jsou titulky, nikdy text v obraze. Holky jen zdálky (titulek) a devítiletá
+# s hrnkem na konci (tři dívky v jednom obraze profil archion nekreslí).
+# Postavy (autor, 2026-11-14): Ol1n 46, vypadá pod 40, blond, plnovous, zdravý a klidný. Kosmo 44, vypadá pod 40,
+# rozcuchané trčící blond vlasy, obnošený vlněný svetr; v krytu jeho zájmy jako rekvizity (tarot, papyrus a ankh,
+# figurka mimozemšťana, knihy o archeologii, mapy, plakát pyramidy), bez nových replik o nich.
+# Styl: archion_pixel (16bitový pixel art): hra je o serveru a terminálu, svět, který se dá složit z bodů.
+# Hudba (pro L40S, ACE-Step, položka `gamebooks:` v rules/base/music.yaml na větvi fix/gamebook-music):
+#   archion_kimi: "slow melancholic chiptune, 8-bit arpeggios, soft square-wave lead, server fan hum, dial-up modem noise"
+#
+# Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
+# jako obraz, `caption` = DISCORD, příkaz nebo hlas bez těla. Kosmo a Ol1n nikdy v jednom obraze.
+
+schema: 1
+id: archion_kimi
+title: "Archion: Server"
+title_i18n: {en: "Archion: The Server", de: "Archion: Der Server", fr: "Archion : le serveur", it: "Archion: il server", ja: "アルキオン：サーバー", ko: "아르키온: 서버", pl: "Archion: Serwer", pt-BR: "Archion: O servidor", ru: "Архион: Сервер", uk: "Архіон: Сервер", vi: "Archion: Máy chủ"}
+world: w_archion_kimi
+audience: adult
+language: cs
+style_id: archion_pixel
+profile: archion
+product_id: gamebook_archion_kimi
+start: k1
+
+premise: >
+  Ol1n kdysi postavil kamarádovi Kosmovi server, aby se na něm naučil Linux: zálohovaný, verzovaný, s historií.
+  Noci výuky přes chat, příkazy místo okýnek. Pak baterka, šroubovák a inzerát. Na Ol1nově stroji běží jen Kosmův web.
+
+characters: [kosmo, ol1n_terasa, ol1n_zima, dcera_9_zima]
+
+locations:
+  - {id: l_serverovna_1, name: Kryt – instalace, description: "světlý kryt, holá skříň serveru"}
+  - {id: l_serverovna_1_bezi, name: Kryt – server běží, description: "diody, ventilátory"}
+  - {id: l_terasa, name: Terasa – večer v minulosti, description: "noc, lampa, notebook"}
+  - {id: l_serverovna_2, name: Kryt – výuka, description: "server hučí vedle počítače s okýnky"}
+  - {id: l_serverovna_2_tma, name: Kryt – server zhasl, description: "tma, baterka"}
+  - {id: l_serverovna_3, name: Kryt – demontáž, description: "rozebraná skříň, inzerát"}
+  - {id: l_zahrada_zima, name: Zahrada – zima, description: "sníh, vánoční řetěz"}
+  - {id: l_web, name: Běžící web, description: "jediná obrazovka s webem"}
+
+draft:
+  speakers: {Kosmo: kosmo, Ol1n: ol1n, Dcera: dcera}
+  faces:
+    kosmo: [[looking at viewer, wistful expression], [bitter smile, looking at viewer], [tired expression, looking down]]
+    ol1n: [[calm expression, looking at a laptop screen], [slight smile, typing on a laptop], [tired expression, looking down]]
+    dcera: [[smile, looking up], [curious expression, looking up], [gentle expression, looking at another]]
+  speaking: {kosmo: [upper body, standing, from front], default: [upper body, from front]}
+
+nodes:
+  k1:
+    title: "Instalace"
+    location: l_serverovna_1
+    cast: {kosmo: kosmo, ol1n: ol1n_terasa}
+    next: k2
+    script:
+      - {see: "Kryt, ale jiný než obvykle: čistý, světlý, plný naděje. Na stole krabice a antistatické sáčky, uprostřed holá skříň serveru jako prázdný trůn.", shot: establishing, tags: [empty open server chassis, pink antistatic bags, cardboard boxes, warm white light, no humans], gap: medium, animate: "dust motes floating in the warm light around the empty server chassis"}
+      - {see: "Kosmo kolem ní chodí. Poprvé není u svého monitoru. Dívá se na stroj jako na mimino.", shot: medium, who: kosmo, tags: [walking around a server chassis, looking at it tenderly, hands in pockets, from side]}
+      - {see: "Ol1n večer na terase, děti už spí. Drží návod.", shot: medium, who: ol1n, loc: l_terasa, tags: [sitting at a garden table, night, laptop, desk lamp, focused, warm lamp light]}
+      - {say: ol1n, text: "Tak. Debian netinst. Stáhni ISO, vypal, nabootuj. Já ti připravil celou konfiguraci, všechno je to v repu, na GitHubu. Vidíš to tam?", loc: l_terasa, tags: [typing on a laptop, routine, happy expert smile]}
+      - {see: "Chat.", shot: close-up, loc: l_serverovna_1, caption: "git clone git@github.com:kosmo/nebulon-server.git", tags: [glowing terminal window on a monitor, no readable text, keyboard]}
+      - {say: kosmo, text: "On mi stavěl svět. Zálohovaný. Verzovaný. S historií.", tags: [looking at viewer, quiet, wistful expression]}
+      - {say: ol1n, text: "SSH klíče máš vygenerovaný. Heslo si změň. Teď to patří tobě.", loc: l_terasa, tags: [typing, calm, slight smile]}
+      - {see: "Ztichne. To slovo visí ve vzduchu.", shot: close-up, loc: l_terasa, tags: [laptop glowing on a dark terrace, lamp light, crickets, no humans]}
+      - {say: kosmo, text: "Patřilo. To je ono, patřilo. Dal mi stroj, na kterým jsem měl vyrůst. A já na něm…", tags: [looking at viewer, bitter smile, short laugh]}
+      - {see: "DISCORD: klávesy zní jako déšť, jako kód, který někdo píše celou noc.", shot: close-up, caption: "apt update && apt upgrade\nuseradd -m -s /bin/bash kosmo\nusermod -aG sudo kosmo", tags: [hands typing on a keyboard, terminal glow, no readable text], animate: "fingers tapping the keys like rain, terminal light flickering"}
+      - {say: ol1n, text: "Tak. Teď ti to ukážu. Celý vesmír je teď v terminálu. Zapomeň na okýnka. Tady nic neklikáš. Tady víš, co děláš.", loc: l_terasa, tags: [typing, enthusiastic, warm lamp light]}
+      - {see: "Server v krytu se poprvé spustí. Ventilátory. Zvuk, který je v celé hře nejbližší hudbě.", shot: wide, loc: l_serverovna_1_bezi, tags: [tower server powering on, green and blue status LEDs, spinning fans, no humans], animate: "status LEDs lighting up one by one, fans spinning up"}
+      - {see: "Z domu, z dálky, jako dětská říkadla.", shot: wide, loc: l_terasa, caption: "Holky (z domu): cp, mv, rm! cp, mv, rm!", tags: [dark house behind the terrace, one lit window, night, no humans]}
+      - {say: ol1n, text: "Vím, co děláš. To jsi nikdy neřekl.", loc: l_terasa, shot: close-up, tags: [quiet, to himself, face lit by laptop], gap: large}
+
+  k2:
+    title: "Výuka"
+    location: l_serverovna_2
+    cast: {kosmo: kosmo, ol1n: ol1n_terasa}
+    next: k3
+    script:
+      - {see: "Kalendář listuje. Server běží. Noc za nocí: u Ol1na noční lampa, u Kosmy neon.", shot: establishing, tags: [humming tower server, blinking LEDs, neon tube, night, no humans], gap: medium, animate: "server LEDs blinking, neon tube buzzing, night after night"}
+      - {see: "DISCORD: dva hlasy, Ol1n učí, Kosmo opakuje.", shot: close-up, loc: l_terasa, caption: "git add .\ngit commit -m \"wip\"\ngit push", tags: [laptop on a terrace table, night, lamp light, terminal glow, no readable text]}
+      - {say: ol1n, text: "Tohle je historie. Každá změna je navždy. Není „přepsal jsem a je to pryč“. Je „commit“. Je to tam. Uvidíš sám, co jsi dělal před rokem.", loc: l_terasa, tags: [typing, patient teacher, warm lamp light]}
+      - {say: kosmo, text: "Dal mi git. Říkal: teď už nikdy nic neztratíš. Deset let vývoje. Commituj. Pushuj. Nikdy jsem nepushnul.", tags: [looking at viewer, wry smile, guilty expression]}
+      - {see: "Kosmo sedí u svého počítače s okýnky. Server vedle něj běží ignorovaný, jen žhavý a hučící. Kosmo kliká myší.", shot: medium, who: kosmo, tags: [sitting at a desk, clicking a mouse, ignoring a humming server beside him, tarot cards on the desk, monitor glow]}
+      - {say: ol1n, text: "A tenhle problém vyřešíš jedním příkazem. Pojď, zkus to přes SSH. Ne klikat, psát.", loc: l_terasa, tags: [typing, patient, slight smile]}
+      - {see: "Do toho prolne čas pozdější zpráva.", shot: close-up, caption: "Kosmo: Když se ti něco nehodí, řekneš mi, ať to smažu. A pak, ať zahodím i ty čtyři roky.", tags: [chat window glowing on a monitor, no readable text, dark room]}
+      - {see: "Náhlé ticho ventilátorů. Server zhasne, jen tak, mezi dvěma větami. Rozsvítí se baterka.", shot: wide, loc: l_serverovna_2_tma, tags: [server switched off, darkness, single flashlight beam, no humans], animate: "the server LEDs die, a flashlight beam switches on"}
+      - {say: kosmo, text: "Windows mi stačí. Vždycky stačily.", loc: l_serverovna_2_tma, tags: [holding a flashlight, face lit from below, flat expression, looking at viewer]}
+      - {see: "Pod světlem baterky začíná rozebírat skříň. Cvak. Cvak. Šroubovák. Pitva.", shot: close-up, loc: l_serverovna_2_tma, tags: [screwdriver unscrewing a server case, flashlight beam, loose screws], gap: large}
+
+  k3:
+    title: "Demontáž"
+    location: l_serverovna_3
+    cast: {kosmo: kosmo, ol1n: ol1n_zima, dcera: dcera_9_zima}
+    ending: good
+    script:
+      - {see: "Tma. Jen baterka a jediný monitor, na kterém běží prodejní inzerát. Kosmo píše cenu.", shot: establishing, tags: [disassembled server chassis, flashlight beam, one glowing monitor, sale listing, no readable text, no humans], gap: medium}
+      - {see: "Inzerát.", shot: close-up, caption: "Inzerát: Server, 64 GB RAM, Xeon, 2× SSD + HDD pole. Plně funkční. Cena dohodou.", tags: [monitor glowing in darkness, web page, no readable text]}
+      - {say: kosmo, text: "Víte, čí byly ty disky? Jeho. Celá ta pole. Vyndal jsem je, pole jsem prodal, disky… disky jsou taky někde. Nejsou ve stroji. To je jediný, co vím.", tags: [looking at viewer, calm, as if explaining the weather, flashlight]}
+      - {see: "Zvuk odeslání inzerátu.", shot: close-up, tags: [a finger pressing a key, monitor glow, darkness, no readable text]}
+      - {see: "Rozsvítí se zahrada, jako by někdo škrtl zápalkou. Ol1n stojí v zimě, notebook v ruce, neotevřený.", shot: medium, who: ol1n, loc: l_zahrada_zima, tags: [standing in a snowy garden, holding a closed laptop, christmas lights behind, staring at one point], animate: "christmas lights twinkling, breath vapour, snow drifting"}
+      - {say: ol1n, text: "Dlužíš mi server, na kterém jsem pracoval stovky hodin, aby ses na něm naučil Linux.", loc: l_zahrada_zima, pose: [upper body, standing, from front], tags: [slow, almost liturgical, holding a closed laptop]}
+      - {say: ol1n, text: "Ty jsi z něj vykradl moje disky…", loc: l_zahrada_zima, pose: [upper body, standing, from front], tags: [pause, tired expression, looking down]}
+      - {say: ol1n, text: "…a navíc sis ho zpeněžil.", loc: l_zahrada_zima, shot: close-up, pose: [upper body, standing, from front], tags: [quiet, hurt expression, breath vapour]}
+      - {see: "Kosmo se zvedá z rozložené skříně. Ještě drží šroubovák a obrátí se k publiku.", shot: medium, who: kosmo, tags: [standing up from a dismantled server, holding a screwdriver, facing the viewer]}
+      - {say: kosmo, text: "A víte, co je na tom nejhorší? Že já jsem tenkrát fakt chtěl. Seděl jsem u toho stroje tři noci. Četl jsem jeho návody. Chtěl jsem být ten člověk, kterýho on viděl. Ten vývojář.", tags: [looking at viewer, holding a screwdriver, honest, sad expression]}
+      - {say: kosmo, text: "Jenže jsem zjistil, že… že být někdo jiný je práce. A já měl svůj Nebulon. Deset let. Windows. Okýnka. Můj svět.", tags: [looking at viewer, searching for words, bitter smile]}
+      - {say: ol1n, text: "Můj svět měl být naším světem.", loc: l_zahrada_zima, pose: [upper body, standing, from front], tags: [quiet, firm, christmas lights behind]}
+      - {see: "Na obou polovinách jeviště se rozsvítí jedna obrazovka: Kosmova webová prezentace. Běží klidně, nenápadně, spolehlivě.", shot: wide, loc: l_web, caption: "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK", tags: [single glowing monitor, simple website, server LEDs, darkness, no humans], animate: "the website glowing steadily, server LEDs pulsing like a heartbeat"}
+      - {say: ol1n, text: "Dlužíš mi poděkování za tvoji webovou prezentaci, která u mě pořád běží.", loc: l_zahrada_zima, tags: [closing a laptop, not looking up, cold expression]}
+      - {see: "Ol1n jde od scény. Devítiletá ho v zimě čeká s hrnkem něčeho horkého.", shot: medium, who: dcera, loc: l_zahrada_zima, tags: [holding a steaming mug, waiting in the snow, smile, christmas lights]}
+      - {see: "V krytu zůstane Kosmo sám se šroubovákem. Dívá se na běžící web. Pak zvedne hlavu, k publiku.", shot: medium, who: kosmo, tags: [alone in the dark, holding a screwdriver, lit by a monitor, looking at viewer]}
+      - {say: kosmo, text: "Krádež. Říkal jsem mu krádež.", shot: close-up, tags: [whispering, looking at viewer, monitor glow]}
+      - {say: kosmo, text: "Pusť to znovu, jo? Ať to běží. Někde musí být něco, co běží.", tags: [into the darkness, quiet, pleading, looking at viewer]}
+      - {see: "Ztichne. Vánoční řetěz na zahradě blikne jednou, jako terminál, který odpovídá.", shot: wide, loc: l_zahrada_zima, tags: [christmas lights on a fence, snowy garden, night, no humans], gap: large, animate: "the christmas light chain blinks once"}

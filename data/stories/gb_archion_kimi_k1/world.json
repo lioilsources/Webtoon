@@ -1,0 +1,94 @@
+{
+  "id": "w_gb_archion_kimi_k1",
+  "title": "Archion: Server — Instalace",
+  "synopsis": "Vzpomínka na stroj, který Ol1n postavil kamarádovi, aby se na něm naučil Linux. Instalace, noci výuky, a pak šroubovák, baterka a inzerát. Jen web běží dál.",
+  "tone": "nostalgický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_pixel",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Server je rozebraný a prodaný; jen Kosmova webová prezentace na Ol1nově stroji pořád odpovídá HTTP 200 OK."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_serverovna_1",
+      "l_serverovna_1_bezi",
+      "l_terasa"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_terasa",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+      "outfits": {
+        "default": "grey hoodie, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, grey hoodie, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_serverovna_1",
+      "name": "Kryt – instalace",
+      "description": "Čistý, světlý kryt plný naděje, uprostřed holá skříň serveru.",
+      "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, bright and clean for once, warm white light, unopened computer components, cardboard boxes, pink antistatic bags, an empty open server chassis standing in the middle like an empty throne, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_serverovna_1_bezi",
+      "name": "Kryt – server běží",
+      "description": "Server se poprvé spustí, svítí diody.",
+      "tag_prompt": "indoors, underground bunker server room, rack shelves, cables, concrete walls, a tower server running for the first time, green and blue status LEDs, spinning fans, warm light, a terminal glow on a monitor, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_terasa",
+      "name": "Terasa – večer v minulosti",
+      "description": "Večer na terase, děti spí, notebook na stole.",
+      "tag_prompt": "outdoors, wooden terrace of a family house at night, a laptop on a garden table, a desk lamp, dark garden beyond, warm yellow lamp light, crickets",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_kimi",
+    "node": "k1"
+  }
+}

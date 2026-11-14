@@ -1,0 +1,137 @@
+{
+  "id": "w_gb_archion_claude_c2",
+  "title": "Archion: Hra o čtyřech ročních obdobích — Léto: Smaž to",
+  "synopsis": "Dva kamarádi, kteří se znají dvacet let: jeden žije v protiatomovém krytu, kde se nemění čas, druhý na zahradě, kde se střídají roční období. Dvě noci útočiště, jedna hra a rok zpráv přes plátno.",
+  "tone": "lyrický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_linocut",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; zpráva o padesáti na padesát už nebude doručena, v krytu zhasne poslední neon a Ol1n odejde s dcerami k domu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kryt_2",
+      "l_zahrada_2"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_leto",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+      "outfits": {
+        "default": "plain white t-shirt, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, plain white t-shirt, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_9",
+      "name": "Nejstarší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "base": "child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "lavender long-sleeved t-shirt, denim overalls, long pants, sneakers"
+      },
+      "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, lavender long-sleeved t-shirt, denim overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojce_1",
+      "name": "Pětiletá první",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "pink long-sleeved t-shirt, long overalls, long pants, sneakers"
+      },
+      "photo": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, pink long-sleeved t-shirt, long overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojce_2",
+      "name": "Pětiletá druhá",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "blue long-sleeved t-shirt, long overalls, long pants, sneakers"
+      },
+      "photo": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, blue long-sleeved t-shirt, long overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kryt_2",
+      "name": "Kryt – léto",
+      "description": "Přibylo krabic, jeden neon zhasíná.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, more cardboard boxes piled up, one neon tube dark, cold teal light, tired monitor glow, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_2",
+      "name": "Zahrada – léto",
+      "description": "Růže, slunečnice, nafukovací bazének, slunečník.",
+      "tag_prompt": "outdoors, lush family garden in high summer, roses, tall sunflowers, an inflatable paddling pool, a garden hose, a sun umbrella over a garden table, golden hot sunlight",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_claude",
+    "node": "c2"
+  }
+}

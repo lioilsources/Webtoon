@@ -1,0 +1,438 @@
+{
+  "title": "Demontáž",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_serverovna_3",
+      "characters": [],
+      "visual_tags": [
+        "disassembled server chassis",
+        "flashlight beam",
+        "one glowing monitor",
+        "sale listing",
+        "no readable text",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_3",
+      "characters": [],
+      "visual_tags": [
+        "monitor glowing in darkness",
+        "web page",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Inzerát: Server, 64 GB RAM, Xeon, 2× SSD + HDD pole. Plně funkční. Cena dohodou.",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "calm",
+        "as if explaining the weather",
+        "flashlight"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Víte, čí byly ty disky? Jeho. Celá ta pole. Vyndal jsem je, pole jsem prodal, disky… disky jsou taky někde. Nejsou ve stroji. To je jediný, co vím.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_3",
+      "characters": [],
+      "visual_tags": [
+        "a finger pressing a key",
+        "monitor glow",
+        "darkness",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "standing in a snowy garden",
+        "holding a closed laptop",
+        "christmas lights behind",
+        "staring at one point"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "christmas lights twinkling, breath vapour, snow drifting"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "slow",
+        "almost liturgical",
+        "holding a closed laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Dlužíš mi server, na kterém jsem pracoval stovky hodin, aby ses na něm naučil Linux.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "pause",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Ty jsi z něj vykradl moje disky…",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "quiet",
+        "hurt expression",
+        "breath vapour"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "…a navíc sis ho zpeněžil.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "standing up from a dismantled server",
+        "holding a screwdriver",
+        "facing the viewer"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "holding a screwdriver",
+        "honest",
+        "sad expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "A víte, co je na tom nejhorší? Že já jsem tenkrát fakt chtěl. Seděl jsem u toho stroje tři noci. Četl jsem jeho návody.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Chtěl jsem být ten člověk, kterýho on viděl. Ten vývojář.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "looking at viewer",
+        "searching for words",
+        "bitter smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Jenže jsem zjistil, že… že být někdo jiný je práce. A já měl svůj Nebulon. Deset let. Windows. Okýnka. Můj svět.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "quiet",
+        "firm",
+        "christmas lights behind"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Můj svět měl být naším světem.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_web",
+      "characters": [],
+      "visual_tags": [
+        "single glowing monitor",
+        "simple website",
+        "server LEDs",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "HTTP 200 OK\nHTTP 200 OK\nHTTP 200 OK",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the website glowing steadily, server LEDs pulsing like a heartbeat"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "closing a laptop",
+        "not looking up",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Dlužíš mi poděkování za tvoji webovou prezentaci, která u mě pořád běží.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_zima",
+      "characters": [
+        {
+          "id": "dcera_9_zima"
+        }
+      ],
+      "visual_tags": [
+        "holding a steaming mug",
+        "waiting in the snow",
+        "smile",
+        "christmas lights"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "alone in the dark",
+        "holding a screwdriver",
+        "lit by a monitor",
+        "looking at viewer"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "whispering",
+        "looking at viewer",
+        "monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Krádež. Říkal jsem mu krádež.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_serverovna_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "into the darkness",
+        "quiet",
+        "pleading",
+        "looking at viewer"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pusť to znovu, jo? Ať to běží. Někde musí být něco, co běží.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_zima",
+      "characters": [],
+      "visual_tags": [
+        "christmas lights on a fence",
+        "snowy garden",
+        "night",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the christmas light chain blinks once"
+    }
+  ]
+}

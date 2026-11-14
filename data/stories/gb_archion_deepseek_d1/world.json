@@ -1,0 +1,86 @@
+{
+  "id": "w_gb_archion_deepseek_d1",
+  "title": "Archion: Protokol (3,56 KB) — Tři a půl kilobajtu",
+  "synopsis": "Jedna noc. Ol1n postaví na zahradní stůl malý reproduktor, svou „superinteligenci“, a nechá ji přečíst tři a půl kilobajtu pravidel Nebulonu. Rozhodčí ale nepíská pro nikoho.",
+  "tone": "chladný, přesný, smutný",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_cyanotype",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze: kryt a zahrada jsou dvě poloviny jeviště.",
+      "Obrazovky a papíry bez čitelného textu; zprávy a Hlas jsou jen v bublinách.",
+      "Hlas nemá tělo: kreslí se jen reproduktor se světélkem."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Hlas zhasne, oba prostory jsou ve stejné tmě; sníh ještě nepadá, ale přijde."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_dkryt",
+      "l_dzahrada"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "an unkempt Czech loner aged 44 who looks under 40 with messy tousled blond hair sticking out, stubble, in a worn chunky wool sweater, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater, old jeans"
+      },
+      "photo": "an unkempt Czech loner aged 44 who looks under 40 with messy tousled blond hair sticking out and stubble, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater, old jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm, warm Czech man aged 46 who looks under 40 with short blond hair, a full blond beard and blue-grey eyes, in an autumn jacket",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm, warm Czech man aged 46 who looks under 40 with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_dzahrada",
+      "name": "Zahrada v noci",
+      "description": "Tmavá zahrada, svit notebooku, papír a malý reproduktor na stole.",
+      "tag_prompt": "outdoors, family garden at night, cold blue light, wooden garden table, glowing laptop, a thin sheet of paper, a small round smart speaker with a blinking light, bare branches, dark sky",
+      "mood": ""
+    },
+    {
+      "id": "l_dkryt",
+      "name": "Kryt – tři monitory",
+      "description": "Kryt osvětlený třemi monitory, studená modř.",
+      "tag_prompt": "indoors, underground concrete shelter at night, three glowing monitors, cold blue light, cables, computer parts on metal shelves, deep blue shadows, tarot cards scattered on the desk, an Egyptian papyrus and a brass ankh, a small alien figurine, archaeology books, a pyramid poster on the concrete wall",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_deepseek",
+    "node": "d1"
+  }
+}

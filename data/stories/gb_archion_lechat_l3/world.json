@@ -1,0 +1,128 @@
+{
+  "id": "w_gb_archion_lechat_l3",
+  "title": "Archion: Dva světy — Intermezzo: Sázka na jistotu",
+  "synopsis": "Pět ročních dob, jedna obálka s penězi. Kosmo deset let sní o hře Nebulon ve sklepě pod městem, Ol1n píše kód na zahradě plné dětí. Kdysi jedno přikývnutí, „dobře, v titulcích“, a z něj celý spor.",
+  "tone": "hořký, ironický, něžný",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_ligne",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani ve vzpomínce.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky bez čitelného textu; nápisy (COMING SOON, štítek krabice) jsou jen v titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nic nevydal spolu; na hranici obou světů zůstane prázdná roztržená obálka."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_hranice",
+      "l_sklep_4",
+      "l_sklep_kdysi"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "kosmo_mlady",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a self-confident Czech man aged 36 who looks about thirty, with messy tousled blond hair sticking out, light stubble and a cocky grin, careless about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, light stubble, self-confident grin, youthful face, looks about thirty",
+      "outfits": {
+        "default": "worn chunky wool sweater, a small ankh pendant"
+      },
+      "photo": "a self-confident Czech man aged 36 who looks about thirty, with messy tousled blond hair sticking out, light stubble and a cocky grin, careless about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, light stubble, self-confident grin, youthful face, looks about thirty, worn chunky wool sweater, a small ankh pendant",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_mlady",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a neat Czech man aged 38 who looks about thirty, with short blond hair, a trimmed full blond beard and blue-grey eyes",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, trimmed beard, youthful face, looks about thirty",
+      "outfits": {
+        "default": "clean dark grey hoodie over a t-shirt, jeans"
+      },
+      "photo": "a neat Czech man aged 38 who looks about thirty, with short blond hair, a trimmed full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, trimmed beard, youthful face, looks about thirty, clean dark grey hoodie over a t-shirt, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes, in an autumn jacket",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_sklep_4",
+      "name": "Sklep – pozdní podzim",
+      "description": "Jediná židle uprostřed hromady karet, část neonů zhasla.",
+      "tag_prompt": "indoors, vaulted stone cellar, tarot cards, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, single chair in the middle of a heap of graphics cards, half of the neon tubes dark, cold blue light",
+      "mood": ""
+    },
+    {
+      "id": "l_sklep_kdysi",
+      "name": "Sklep – kdysi",
+      "description": "Tentýž sklep v teplém oranžovém světle, jeden počítač, obálka na stole.",
+      "tag_prompt": "indoors, vaulted stone cellar in warm orange light, tarot cards, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, one computer with one monitor on a desk, an envelope on the desk, two chairs, hopeful warm glow",
+      "mood": ""
+    },
+    {
+      "id": "l_hranice",
+      "name": "Hranice",
+      "description": "Temné jeviště, dvě vzdálené obrazovky, mezi nimi čára.",
+      "tag_prompt": "dark empty stage, two small glowing screens far apart on the left and right, a thin line on the floor between them, blue light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_lechat",
+    "node": "l3"
+  }
+}

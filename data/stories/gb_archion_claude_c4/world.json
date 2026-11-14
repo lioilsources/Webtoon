@@ -1,0 +1,86 @@
+{
+  "id": "w_gb_archion_claude_c4",
+  "title": "Archion: Hra o čtyřech ročních obdobích — Podzim: Krádež",
+  "synopsis": "Dva kamarádi, kteří se znají dvacet let: jeden žije v protiatomovém krytu, kde se nemění čas, druhý na zahradě, kde se střídají roční období. Dvě noci útočiště, jedna hra a rok zpráv přes plátno.",
+  "tone": "lyrický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_linocut",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; zpráva o padesáti na padesát už nebude doručena, v krytu zhasne poslední neon a Ol1n odejde s dcerami k domu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kryt_3",
+      "l_zahrada_3_vecer"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, a wool blanket over the shoulders, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, dark green zip-up field jacket over a grey sweater, a wool blanket over the shoulders, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kryt_3",
+      "name": "Kryt – podzim",
+      "description": "Svítí už jen polovina neonů.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, half of the neon tubes switched off, dim teal light, long shadows, monitor glow, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_3_vecer",
+      "name": "Zahrada – podzimní večer",
+      "description": "Holé stromy, za oknem svítí kuchyně.",
+      "tag_prompt": "outdoors, family garden on an autumn evening, almost bare trees, strong wind, a warm lit kitchen window of the house behind, cold blue dusk",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_claude",
+    "node": "c4"
+  }
+}

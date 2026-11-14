@@ -1,0 +1,263 @@
+{
+  "title": "Podzim: Krádež",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [],
+      "visual_tags": [
+        "almost bare trees",
+        "a warm lit kitchen window",
+        "wind",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Obraz třetí: Krádež",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "bare branches swaying, warm kitchen light flickering"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a garden table",
+        "dusk",
+        "blanket over the shoulders",
+        "laptop glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "face lit by monitor glow",
+        "cold fury"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nebulon je to, co po mně zůstane. Nabídl jsem ti dohodu a tys ji přešel. Bereš si to silou, přede všema. Tohle je krádež. Mezi náma je konec.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "standing up at a garden table",
+        "typing standing",
+        "wind in his hair",
+        "determined"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "typing standing",
+        "hard expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi peníze.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_3",
+      "characters": [],
+      "visual_tags": [
+        "a neon tube going dark",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a neon tube going dark"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "typing standing",
+        "hard expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi server.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [],
+      "visual_tags": [
+        "another neon tube going dark",
+        "darker shelter",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "typing standing",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi poděkování za web, který u mě pořád běží. Dlužíš mi omluvu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "reading a monitor",
+        "darkness growing around him",
+        "frozen"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "typing",
+        "final",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Do Vánoc první část. V březnu druhou. V srpnu zbytek. Ze stránek mažu všechno, co na tebe odkazuje. Hra se bude jmenovat Archion.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Nemáš na ní žádný podíl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_3_vecer",
+      "characters": [],
+      "visual_tags": [
+        "wind carrying the last leaves away",
+        "a glowing laptop",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NEBULON → ARCHION",
+          "kind": "narration"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "strong wind sweeping the last leaves off the table"
+    }
+  ]
+}

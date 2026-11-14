@@ -1,0 +1,116 @@
+# Gamebook — Archion: Idea versus vyjádření. Verze „Grok“: rozšířená právní rovina (autorskoprávní status herních
+# mechanik), scénář napsal model Grok (od Ol1na), lineární, bez voleb, dvě dějství.
+# Smyšlená verze: druhá strana sporu je smyšlená postava Kosmo a jeho hra Nebulon. Kosmovy repliky, které opakují
+# skutečné zprávy, jsou přepsané (smysl stejný, nejsou citace); „Ty jsi věděl, že to je moje…“ je Grokova a zůstává.
+# Ol1novy repliky jsou doslova, bez částek a dat („devadesát tisíc“ → „peníze“, splátky → první část / druhou / zbytek).
+# Grokovy veršované krátké řádky jsou spojené do souvislých bublin.
+# Opravené překlepy: „Aní“ → „Ani“, „ty jsi si vybral“ → „ty sis vybral“, „zpeněžil“ s „sis“ ponechán.
+# Postavy podle autora (2026-11-14): Ol1n 46 let, krátké blond vlasy, plnovous, klidný. Kosmo 44 (o dva roky mladší); oba vypadají pod 40, rozcuchané
+# trčící blond vlasy, strniště, obnošený vlněný svetr, nedbá na vzhled; v krytu tarot, egyptský papyrus a ankh, figurka
+# mimozemšťana, knihy o archeologii, plakát pyramidy (jeho zájmy, bez nových replik).
+#
+# Styl: archion_courtroom (soudní kresba pastelem a pastelkou na tónovaném papíře): Grok z hádky udělal soudní při,
+# tak ji kreslíme jako soudní kreslíř.
+# Prostředí: kryt jako válečná porada (jeden studený monitor, stohy vytištěných papírů, složka s důkazy, prach);
+# holá zahrada v pozdním podzimu, pak zasněžená zahrada v noci, dech se sráží.
+# Hudba (pro L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
+#   archion_grok: "tense legal thriller score, staccato strings, ticking clock, low brass hits, timpani"
+
+schema: 1
+id: archion_grok
+title: "Archion: Idea versus vyjádření"
+title_i18n: {en: "Archion: Idea versus Expression", de: "Archion: Idee gegen Ausdruck", fr: "Archion : l'idée contre l'expression", it: "Archion: idea contro espressione", ja: "アルキオン：アイデアと表現", ko: "아르키온: 아이디어 대 표현", pl: "Archion: Idea kontra wyrażenie", pt-BR: "Archion: Ideia versus expressão", ru: "Архион: Идея против выражения", uk: "Архіон: Ідея проти вираження", vi: "Archion: Ý tưởng và cách thể hiện"}
+world: w_archion_grok
+audience: adult
+language: cs
+style_id: archion_courtroom
+profile: archion
+product_id: gamebook_archion_grok
+start: x1
+
+premise: >
+  Pozdní podzim a první sníh. Kosmo v krytu plném vytištěných papírů skládá složku s důkazy a mluví o krádeži.
+  Ol1n mu ze zahrady odpovídá jako u soudu: nápad nikdo nevlastní, chráněné je jen vyjádření. A pak řekne i to,
+  co v žádném paragrafu není.
+
+characters: [kosmo, ol1n_podzim, ol1n_kabat]
+
+locations:
+  - {id: l_xkryt_3, name: Kryt – válečná porada, description: "jeden monitor, papíry, složka s důkazy"}
+  - {id: l_xzahrada_3, name: Zahrada – pozdní podzim, description: "holé stromy"}
+  - {id: l_xdum_3, name: Dům – okno, description: "děti uvnitř"}
+  - {id: l_xkryt_4, name: Kryt – tma, description: "jen jeden monitor"}
+  - {id: l_xzahrada_4, name: Zahrada – zimní noc, description: "sníh, dech se sráží"}
+  - {id: l_xdum_4, name: Dům – dveře, description: "teplé světlo"}
+
+draft:
+  speakers: {Kosmo: kosmo, Ol1n: ol1n}
+  faces:
+    kosmo: [[intense stare, face lit by monitor glow], [angry expression, staring at a monitor], [bitter expression, looking down]]
+    ol1n: [[calm expression, looking at a laptop screen], [serious, matter-of-fact], [tired expression, looking down]]
+  speaking: {kosmo: [upper body, sitting at a desk, from front], ol1n: [upper body, sitting at a garden table, from front], default: [upper body, from front]}
+
+nodes:
+  x1:
+    title: "Pozdní podzim: Krádež čeho přesně?"
+    location: l_xzahrada_3
+    cast: {kosmo: kosmo, ol1n: ol1n_podzim}
+    next: x2
+    script:
+      - {see: "Kryt. Skoro všechna světla zhasla, zbývá jeden studený monitor. Vzduch je těžký a prašný.", shot: establishing, loc: l_xkryt_3, tags: [one cold monitor, stacks of printed paper, thick evidence folder, dust in the air, no humans], gap: medium, animate: "dust drifting through the cold monitor light"}
+      - {see: "Zahrada. Stromy holé. Holčičky jsou uvnitř domu.", shot: establishing, loc: l_xdum_3, tags: [warm lit window, shadows of children, bare branches, no humans], gap: medium}
+      - {see: "Ol1n sedí sám u stolu v bundě, notebook na kolenou.", shot: medium, who: ol1n, tags: [sitting alone at a garden table, laptop on his lap, bare trees, cold]}
+      - {see: "Kosmo sedí těsně u obrazovky, kolem něj stohy papírů a tarotové karty.", shot: medium, who: kosmo, loc: l_xkryt_3, tags: [hunched close to the monitor, stacks of printed paper, tarot cards on the desk]}
+      - {say: kosmo, text: "Asi ti to pořád nedochází. Nebulon není jen nějaký nápad. Je to můj majetek a umím to doložit. Deset let práce, dokumentace, celý herní systém. Nemáš na něj žádný nárok.", loc: l_xkryt_3, tags: [jabbing a finger at the monitor, intense stare]}
+      - {say: kosmo, text: "Nabídl jsem ti dohodu a tys ji přešel mlčením.", loc: l_xkryt_3, tags: [bitter expression, staring at a monitor]}
+      - {say: ol1n, text: "Chováš se jak hovado. Ale pojďme to konečně říct přesně.", tags: [cold expression, typing on the laptop]}
+      - {say: ol1n, text: "Ty jsi mi nikdy nedal zdrojový kód. Ani jeden asset. Poslal jsi mi dokument s pravidly. Tři a půl kilobajtu textu.", tags: [serious, matter-of-fact]}
+      - {say: ol1n, text: "Já jsem postavil úplně novou hru. Jiná platforma. Jiná architektura. Vlastní realtime bojový systém, protože ten tvůj nebyl dotažený.", tags: [calm expression, looking at a laptop screen]}
+      - {see: "Kosmo listuje složkou s důkazy.", shot: close-up, loc: l_xkryt_3, tags: [hands flipping through an evidence folder, printed pages, no readable text, monitor glow]}
+      - {say: kosmo, text: "Je to dědictví celýho mýho života. Na pravidla, co k tomu patří, kašleš. Bereš si to silou. Pro mě je to krádež přímo před očima.", loc: l_xkryt_3, tags: [angry expression, clutching an evidence folder]}
+      - {say: ol1n, text: "Krádež čeho přesně?", shot: close-up, tags: [raised eyebrow, calm, looking at a laptop screen]}
+      - {say: ol1n, text: "Autorské právo nechrání nápady, systémy ani herní mechaniky. Chrání jen konkrétní vyjádření. To je základní princip – dichotomie idea versus expression. Platí to v Česku, v Evropě i v Americe.", tags: [serious, matter-of-fact, typing on the laptop]}
+      - {say: ol1n, text: "Ty jsi mi dal text pravidel. Ten text jako literární dílo chráněný je. Ale herní systém, který popisuje, chráněný není.", tags: [calm expression, looking at a laptop screen]}
+      - {say: ol1n, text: "Nikdo nevlastní mechaniku. Nikdo nevlastní „karty se líčí“, „hráči se střídají“ nebo „souboj probíhá v reálném čase“. Stejně jako nikdo nevlastní myšlenku deck-buildingu nebo rogueliku.", tags: [slight smile, typing on the laptop]}
+      - {see: "Na stole v krytu leží tarotové karty, papyrus a figurka mimozemšťana mezi papíry.", shot: close-up, loc: l_xkryt_3, tags: [tarot cards, egyptian papyrus, small alien figurine, printed paper, monitor glow], animate: "monitor glow flickering over the tarot cards"}
+      - {say: kosmo, text: "Ty jsi věděl, že to je moje. Věděl jsi, že to má hodnotu. A stejně jsi to vzal a přepsal si to podle sebe.", loc: l_xkryt_3, tags: [hurt, bitter expression, looking at the monitor]}
+      - {say: ol1n, text: "Věděl jsem, že máš koncept, který jsi deset let nedokázal vydat. Věděl jsem, že jsi mi nikdy nedal kód. A věděl jsem, že mi dlužíš peníze.", tags: [cold expression, typing on the laptop]}
+      - {say: ol1n, text: "Když někdo postaví vlastní implementaci na jiné platformě, s vlastní architekturou a vlastními systémy, nejde o odvozené dílo. Jde o nezávislé vytvoření.", tags: [serious, matter-of-fact]}
+      - {say: ol1n, text: "To, co ty teď děláš, je pokus tvrdit, že vlastnictví nápadu se rovná vlastnictví všech budoucích implementací. Tak to v autorském právu nefunguje.", tags: [calm expression, looking at a laptop screen]}
+      - {see: "Ol1n se odmlčí. Pak pokračuje klidněji.", shot: close-up, who: ol1n, tags: [pausing, breathing out, looking at the bare trees, cold wind]}
+      - {say: ol1n, text: "Dlužíš mi peníze. Nesplnil jsi podmínky půjčky. Dlužíš mi server, na kterém jsem pracoval stovky hodin. Ty jsi z něj vykradl moje disky a ještě sis ho zpeněžil. Dlužíš mi poděkování za web, který u mě pořád běží.", tags: [firm, typing on the laptop]}
+      - {say: ol1n, text: "Začneme penězi. Do Vánoc první část. Do března druhou. Do srpna zbytek.", tags: [matter-of-fact, cold expression]}
+      - {say: ol1n, text: "Ze stránek mažu všechny odkazy na tebe. Projekt se jmenuje Archion. Nemáš na něm žádný podíl.", tags: [calm, final, looking at a laptop screen]}
+      - {see: "Vítr odnáší poslední listí ze stolu.", shot: wide, tags: [last brown leaves, wind over the table, bare trees, grey sky, no humans], gap: large, animate: "the last leaves blown off the garden table by a cold wind"}
+
+  x2:
+    title: "Zima: Žádné právo veta"
+    location: l_xzahrada_4
+    cast: {kosmo: kosmo, ol1n: ol1n_kabat}
+    ending: good
+    script:
+      - {see: "Kryt. Tma, svítí už jen jeden monitor.", shot: establishing, loc: l_xkryt_4, tags: [darkness, one cold monitor glow, piles of paper, pyramid poster on the wall, no humans], gap: medium}
+      - {see: "Sníh. Ol1n sedí venku, dech se mu sráží ve vzduchu.", shot: establishing, tags: [snowy garden at night, snow-covered garden table, glowing laptop, no humans], gap: medium, animate: "snow falling steadily over the garden table"}
+      - {see: "Ol1n v kabátě u zasněženého stolu.", shot: medium, who: ol1n, tags: [sitting at a snowy garden table, laptop, breath steaming, snowflakes]}
+      - {say: kosmo, text: "Pustil jsem tě k sobě a ukázal ti svůj svět, protože jsem ti věřil jako člověku. V každý firmě by sis za takový zneužití a remake bez svolení vyžral pořádnej právní průšvih.", loc: l_xkryt_4, tags: [quiet, sharp, face lit by monitor glow]}
+      - {say: kosmo, text: "Kradeš mi duševní vlastnictví a hraješ nečistou hru. Pro mě jsi skončil. Blokuju tě.", loc: l_xkryt_4, tags: [cold, contemptuous expression]}
+      - {say: kosmo, text: "A jak tvůj plagiát uvidím v obchodech, posílám svoje důkazy rovnou lidem, co v Googlu a Applu schvalujou aplikace.", loc: l_xkryt_4, tags: [tapping an evidence folder, intense stare]}
+      - {see: "Na Ol1nově obrazovce svítí ikona blokování.", shot: close-up, tags: [laptop screen, red block icon, no readable text, snow on the keyboard]}
+      - {say: ol1n, text: "Pojďme to rozebrat přesně, když už to otevíráš.", tags: [calm expression, breath steaming]}
+      - {say: ol1n, text: "Nekalá soutěž předpokládá, že používám tvé jméno, tvé logo, tvé assety, nebo že vytvářím záměrný zmatek na trhu. Nic z toho nedělám.", tags: [serious, matter-of-fact, typing on the laptop]}
+      - {say: ol1n, text: "Hra se jmenuje jinak. Běží na jiné platformě. Má jiný bojový systém. A ty jsi ji deset let nevydal.", tags: [cold expression, looking at a laptop screen]}
+      - {say: ol1n, text: "Co se týče „složky s důkazy“ – pokud v ní máš zdrojový kód, který jsem nikdy neviděl, tak ji klidně pošli. Pokud v ní máš jen ten dokument s pravidly a naše staré zprávy, tak je to důkaz o tom, že jsi mi ta pravidla sám poskytl.", tags: [slight smile, typing on the laptop]}
+      - {say: ol1n, text: "A pravidla hry nejsou autorské dílo v tom smyslu, jak si myslíš. Chráněný je konkrétní text. Ne systém, který popisuje. Ne mechaniky. Ne idea.", tags: [serious, matter-of-fact]}
+      - {say: kosmo, text: "Ty jsi věděl, že to je moje.", loc: l_xkryt_4, shot: close-up, tags: [hurt, bitter expression, looking down]}
+      - {say: ol1n, text: "Věděl jsem, že máš nepublikovaný koncept. Věděl jsem, že jsi mi nedal kód. A věděl jsem, že mi dlužíš peníze.", tags: [tired expression, looking at a laptop screen]}
+      - {say: ol1n, text: "Napiš mi raději, kdy mi pošleš ty peníze. Já tobě nic nedlužím. Ani omluvu za to, že jsem si postavil vlastní hru. Ani podíl. Ani právo veta nad tím, co smím a nesmím vydat.", tags: [firm, cold expression]}
+      - {see: "Dlouhá pauza. Sníh padá hustě.", shot: wide, tags: [heavy snowfall at night, snow-covered garden, house lights far away, no humans], animate: "heavy snow falling in the dark garden"}
+      - {say: ol1n, text: "Kámo… chybět mi nebudeš.", shot: close-up, tags: [quiet, snowflakes on his beard, looking down]}
+      - {say: ol1n, text: "Když jsem byl ve svém životě nejvíc v hajzlu a hledal u tebe útočiště, vyhodils mě po dvou dnech jak největšího fakana. To se nezapomíná.", tags: [pained expression, looking at a laptop screen]}
+      - {say: ol1n, text: "Nikdys mě nenechal udělat ti nabídku na padesát na padesát, kterou jsem vždycky považoval za samozřejmost. Ta nabídka pořád platí. I teď.", tags: [tired expression, looking down]}
+      - {say: ol1n, text: "Ale ty sis vybral cestu výhrůžek a blokování.", tags: [sad, calm]}
+      - {say: ol1n, text: "R.I.P.", shot: close-up, tags: [calm, final, looking at a laptop screen]}
+      - {see: "Ol1n zavře notebook.", shot: close-up, tags: [hands closing a laptop, snow on the lid, breath steaming]}
+      - {see: "Vstane a odejde do domu.", shot: wide, who: ol1n, loc: l_xdum_4, tags: [walking towards an open door, from behind, footprints in the snow, warm light]}
+      - {see: "V krytu Kosmo zůstane sedět. Monitor ještě chvíli svítí.", shot: medium, who: kosmo, loc: l_xkryt_4, tags: [sitting still, face lit by monitor glow, tarot cards on the desk]}
+      - {see: "Pak zhasne. Tma.", shot: wide, loc: l_xkryt_4, tags: [monitor switched off, total darkness, no humans], gap: large, animate: "the last monitor glow fading to black"}

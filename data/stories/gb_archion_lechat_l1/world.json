@@ -1,0 +1,120 @@
+{
+  "id": "w_gb_archion_lechat_l1",
+  "title": "Archion: Dva světy — Jaro: Budu ti chybět",
+  "synopsis": "Pět ročních dob, jedna obálka s penězi. Kosmo deset let sní o hře Nebulon ve sklepě pod městem, Ol1n píše kód na zahradě plné dětí. Kdysi jedno přikývnutí, „dobře, v titulcích“, a z něj celý spor.",
+  "tone": "hořký, ironický, něžný",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_ligne",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani ve vzpomínce.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky bez čitelného textu; nápisy (COMING SOON, štítek krabice) jsou jen v titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nic nevydal spolu; na hranici obou světů zůstane prázdná roztržená obálka."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_potager_jaro",
+      "l_sklep_1"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_jaro",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes, in spring sun",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "light linen shirt with rolled-up sleeves, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes, in spring sun",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, light linen shirt with rolled-up sleeves, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_9",
+      "name": "Nejstarší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "base": "child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "lavender long-sleeved t-shirt, denim overalls, long pants, sneakers"
+      },
+      "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, lavender long-sleeved t-shirt, denim overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojcata_5",
+      "name": "Dvojčata",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "2girls",
+      "human": true,
+      "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers"
+      },
+      "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_sklep_1",
+      "name": "Sklep – jaro",
+      "description": "Klenutý kamenný sklep pod městem, regály grafických karet, modrofialové neony.",
+      "tag_prompt": "indoors, vaulted stone cellar under the city, tarot cards, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, racks of graphics cards, flickering blue and violet neon tubes, cables like vines, one monitor, two chairs, cold light, damp stone walls",
+      "mood": ""
+    },
+    {
+      "id": "l_potager_jaro",
+      "name": "Zahrada – jaro",
+      "description": "Francouzská zelinářská zahrádka v květu, zinkový stolek.",
+      "tag_prompt": "outdoors, french potager kitchen garden in spring, blossoming tree, neat vegetable beds, small zinc garden table with a laptop, terracotta flower pots, warm daylight",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_lechat",
+    "node": "l1"
+  }
+}

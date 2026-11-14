@@ -1,0 +1,94 @@
+{
+  "id": "w_gb_archion_lechat_l6",
+  "title": "Archion: Dva světy — Zima: R.I.P.",
+  "synopsis": "Pět ročních dob, jedna obálka s penězi. Kosmo deset let sní o hře Nebulon ve sklepě pod městem, Ol1n píše kód na zahradě plné dětí. Kdysi jedno přikývnutí, „dobře, v titulcích“, a z něj celý spor.",
+  "tone": "hořký, ironický, něžný",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_ligne",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani ve vzpomínce.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky bez čitelného textu; nápisy (COMING SOON, štítek krabice) jsou jen v titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nic nevydal spolu; na hranici obou světů zůstane prázdná roztržená obálka."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_hranice",
+      "l_potager_zima",
+      "l_sklep_5"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_zima",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes, in a winter coat",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties",
+      "outfits": {
+        "default": "dark winter coat with a scarf, knitted hat"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and quiet blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, dark winter coat with a scarf, knitted hat",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_sklep_5",
+      "name": "Sklep – zima",
+      "description": "Karty v krabicích, poslední neony.",
+      "tag_prompt": "indoors, vaulted stone cellar, tarot cards, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, cardboard boxes full of graphics cards, last blue neon tube, breath vapour in the cold, dark",
+      "mood": ""
+    },
+    {
+      "id": "l_potager_zima",
+      "name": "Zahrada – zima, noc",
+      "description": "Zahrada pod sněhem, tma, jen svit notebooku, světýlka v oknech.",
+      "tag_prompt": "outdoors at night, french potager under snow, darkness, only the glow of a laptop on a small zinc table, a few small lights in the house windows",
+      "mood": ""
+    },
+    {
+      "id": "l_hranice",
+      "name": "Hranice",
+      "description": "Temné jeviště, dvě vzdálené obrazovky, mezi nimi čára.",
+      "tag_prompt": "dark empty stage, two small glowing screens far apart on the left and right, a thin line on the floor between them, blue light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_lechat",
+    "node": "l6"
+  }
+}

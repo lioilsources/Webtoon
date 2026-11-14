@@ -1,0 +1,595 @@
+{
+  "title": "Pozdní podzim: Krádež čeho přesně?",
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "one cold monitor",
+        "stacks of printed paper",
+        "thick evidence folder",
+        "dust in the air",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "dust drifting through the cold monitor light"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_xdum_3",
+      "characters": [],
+      "visual_tags": [
+        "warm lit window",
+        "shadows of children",
+        "bare branches",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a garden table",
+        "laptop on his lap",
+        "bare trees",
+        "cold"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "hunched close to the monitor",
+        "stacks of printed paper",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "jabbing a finger at the monitor",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Asi ti to pořád nedochází. Nebulon není jen nějaký nápad. Je to můj majetek a umím to doložit. Deset let práce, dokumentace, celý herní systém.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Nemáš na něj žádný nárok.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nabídl jsem ti dohodu a tys ji přešel mlčením.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak hovado. Ale pojďme to konečně říct přesně.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi mi nikdy nedal zdrojový kód. Ani jeden asset. Poslal jsi mi dokument s pravidly. Tři a půl kilobajtu textu.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem postavil úplně novou hru. Jiná platforma. Jiná architektura. Vlastní realtime bojový systém, protože ten tvůj nebyl dotažený.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "hands flipping through an evidence folder",
+        "printed pages",
+        "no readable text",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "angry expression",
+        "clutching an evidence folder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Je to dědictví celýho mýho života. Na pravidla, co k tomu patří, kašleš. Bereš si to silou. Pro mě je to krádež přímo před očima.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "raised eyebrow",
+        "calm",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Krádež čeho přesně?",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Autorské právo nechrání nápady, systémy ani herní mechaniky. Chrání jen konkrétní vyjádření.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "To je základní princip – dichotomie idea versus expression. Platí to v Česku, v Evropě i v Americe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi mi dal text pravidel. Ten text jako literární dílo chráněný je. Ale herní systém, který popisuje, chráněný není.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "slight smile",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Nikdo nevlastní mechaniku. Nikdo nevlastní „karty se líčí“, „hráči se střídají“ nebo „souboj probíhá v reálném čase“.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Stejně jako nikdo nevlastní myšlenku deck-buildingu nebo rogueliku.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "tarot cards",
+        "egyptian papyrus",
+        "small alien figurine",
+        "printed paper",
+        "monitor glow",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "monitor glow flickering over the tarot cards"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "hurt",
+        "bitter expression",
+        "looking at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty jsi věděl, že to je moje. Věděl jsi, že to má hodnotu. A stejně jsi to vzal a přepsal si to podle sebe.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Věděl jsem, že máš koncept, který jsi deset let nedokázal vydat. Věděl jsem, že jsi mi nikdy nedal kód. A věděl jsem, že mi dlužíš peníze.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Když někdo postaví vlastní implementaci na jiné platformě, s vlastní architekturou a vlastními systémy, nejde o odvozené dílo.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jde o nezávislé vytvoření.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "To, co ty teď děláš, je pokus tvrdit, že vlastnictví nápadu se rovná vlastnictví všech budoucích implementací. Tak to v autorském právu nefunguje.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "pausing",
+        "breathing out",
+        "looking at the bare trees",
+        "cold wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "firm",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi peníze. Nesplnil jsi podmínky půjčky. Dlužíš mi server, na kterém jsem pracoval stovky hodin.",
+          "kind": "speech"
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi z něj vykradl moje disky a ještě sis ho zpeněžil. Dlužíš mi poděkování za web, který u mě pořád běží.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "matter-of-fact",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Začneme penězi. Do Vánoc první část. Do března druhou. Do srpna zbytek.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "final",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ze stránek mažu všechny odkazy na tebe. Projekt se jmenuje Archion. Nemáš na něm žádný podíl.",
+          "kind": "speech"
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xzahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "last brown leaves",
+        "wind over the table",
+        "bare trees",
+        "grey sky",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the last leaves blown off the garden table by a cold wind"
+    }
+  ]
+}

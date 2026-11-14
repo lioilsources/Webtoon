@@ -1,0 +1,170 @@
+{
+  "id": "w_gb_archion_claude_c5",
+  "title": "Archion: Hra o čtyřech ročních obdobích — Zima: Zpráva nebyla doručena",
+  "synopsis": "Dva kamarádi, kteří se znají dvacet let: jeden žije v protiatomovém krytu, kde se nemění čas, druhý na zahradě, kde se střídají roční období. Dvě noci útočiště, jedna hra a rok zpráv přes plátno.",
+  "tone": "lyrický, hořký, tichý",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_linocut",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani v prologu, kdy sdílejí kryt.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; zprávy jsou jen v bublinách a titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Přátelství skončí; zpráva o padesáti na padesát už nebude doručena, v krytu zhasne poslední neon a Ol1n odejde s dcerami k domu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_kryt_4",
+      "l_zahrada_4",
+      "l_zahrada_4_noc",
+      "l_zahrada_4_svitani"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks, pale from monitor light",
+      "base": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 44 who looks under 40, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, mature male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks late thirties, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_zima",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes, healthy, calm and warm",
+      "base": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm",
+      "outfits": {
+        "default": "long dark winter coat, knitted scarf, jeans"
+      },
+      "photo": "a calm Czech man aged 46 who looks under 40, with short blond hair, a full blond beard and blue-grey eyes",
+      "tag_prompt": "adult, mature male, short blond hair, full blond beard, blue-grey eyes, youthful face, looks late thirties, healthy, calm, warm, long dark winter coat, knitted scarf, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dcera_9_zima",
+      "name": "Nejstarší dcera",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "base": "child, girl, light brown hair, long braid, brown eyes",
+      "outfits": {
+        "default": "pink pyjamas under a red winter jacket, knitted hat, snow boots"
+      },
+      "photo": "a bright Czech girl aged 9 with a long light brown braid and big attentive brown eyes",
+      "tag_prompt": "child, girl, light brown hair, long braid, brown eyes, pink pyjamas under a red winter jacket, knitted hat, snow boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojce_1_zima",
+      "name": "Pětiletá první",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "pyjamas under a pink winter jacket, knitted hat, snow boots"
+      },
+      "photo": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, pyjamas under a pink winter jacket, knitted hat, snow boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojce_2_zima",
+      "name": "Pětiletá druhá",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, little girl, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "pyjamas under a blue winter jacket, knitted hat, snow boots"
+      },
+      "photo": "a little Czech twin girl aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, little girl, blonde pigtails, rosy cheeks, blue eyes, pyjamas under a blue winter jacket, knitted hat, snow boots",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "dvojcata_5",
+      "name": "Dvojčata",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "2girls",
+      "human": true,
+      "description": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "base": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes",
+      "outfits": {
+        "default": "matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers"
+      },
+      "photo": "two identical Czech twin girls aged 5 with blonde pigtails, rosy cheeks and laughing blue eyes",
+      "tag_prompt": "child, twins, two little girls, identical twins, blonde pigtails, rosy cheeks, blue eyes, matching pink and blue long-sleeved t-shirts, long overalls, long pants, sneakers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_kryt_4",
+      "name": "Kryt – zima",
+      "description": "Svítí poslední neon a monitor.",
+      "tag_prompt": "indoors, Cold War concrete atomic shelter, heavy steel blast door, raw concrete walls, metal shelves full of computer parts, stacks of graphics cards, thick cables running across the floor like roots, only the last neon tube lit, everything else dark, a single monitor glow, cold teal darkness, tarot cards laid out on the desk, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, old maps, a pyramid poster",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_4",
+      "name": "Zahrada – zima",
+      "description": "Zasněžený stůl, sněhulák, černé stromy.",
+      "tag_prompt": "outdoors, family garden under deep snow, a snow-covered garden table with a laptop, black bare trees like lines, a snowman, quiet white light",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_4_noc",
+      "name": "Zahrada – zimní noc",
+      "description": "Tři ráno, sněží, svítí jen notebook.",
+      "tag_prompt": "outdoors, snowy family garden at three in the morning, falling snow, darkness, the only light is a laptop screen on a snowy table, dark house behind",
+      "mood": ""
+    },
+    {
+      "id": "l_zahrada_4_svitani",
+      "name": "Zahrada – svítání",
+      "description": "Svítá nad sněhem.",
+      "tag_prompt": "outdoors, snowy family garden at dawn, pale pink sunrise over the snow, falling snow, the house door open with warm light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_claude",
+    "node": "c5"
+  }
+}
