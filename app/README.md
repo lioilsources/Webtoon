@@ -63,6 +63,14 @@ na iOS `Library/Application Support/packs/` v sandboxu aplikace. Další balíč
 zástupný prázdný balíček (`version: 0`, žádné příběhy) — appka naběhne s prázdnou knihovnou a jakýkoli
 skutečný starter (`version ≥ 1`) ho při dalším startu nahradí.
 
+### Anonymní statistiky
+
+Čtečka posílá anonymní události přes `ol1n_telemetry` na vlastního příjemce (StoreMetrics). Slovník
+a pravidla jsou v [`../docs/telemetry.md`](../docs/telemetry.md), kód v `lib/telemetry/`. Bez
+`--dart-define=TELEMETRY_KEY=…` a `TELEMETRY_HOST=…` (release workflow je berou ze secrets) build nic
+neposílá a vypínač v Nastavení se neukáže. Dětský profil a Studio se neměří nikdy. Ruční kontrola:
+`flutter run --dart-define=TELEMETRY_DEBUG=true` vypisuje události do konzole.
+
 ### Studio (proti backendu)
 
 ```sh

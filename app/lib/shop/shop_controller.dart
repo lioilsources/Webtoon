@@ -5,8 +5,10 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../providers/providers.dart';
+import '../telemetry/telemetry_dictionary.dart' show productKind;
 import 'catalog.dart';
 import 'catalog_repository.dart';
 import 'entitlements.dart';
@@ -86,6 +88,9 @@ class ShopController extends StateNotifier<ShopState> {
   StreamSubscription<PurchaseEvent>? _sub;
   int _notices = 0;
 
+  /// Open `purchase` flows by product id (anonymous statistics).
+  final Map<String, TelemetryFlow> _purchases = {};
+
   ShopController({
     required this.gateway,
     required this.catalogs,
@@ -127,6 +132,8 @@ class ShopController extends StateNotifier<ShopState> {
     } catch (e) {
       debugPrint('shop: catalog refresh failed: $e');
       if (!mounted) return;
+      // Obchod shows the error only when there is no cached catalog either.
+      if (state.catalog == null) Telemetry.errorShown('catalog');
       state = state.copyWith(loading: false, catalogError: '$e');
     }
     await _loadProducts();
@@ -150,6 +157,12 @@ class ShopController extends StateNotifier<ShopState> {
   }
 
   void _notify(String key, [Map<String, Object> args = const {}]) {
+    switch (key) {
+      case 'store.purchaseFailed':
+        Telemetry.errorShown('purchase');
+      case 'store.downloadFailed':
+        Telemetry.errorShown('download');
+    }
     if (mounted) {
       state = state.copyWith(notice: ShopNotice(++_notices, key, args));
     }
@@ -158,9 +171,14 @@ class ShopController extends StateNotifier<ShopState> {
   /// Starts a purchase; the caller has shown the parental gate.
   Future<void> buy(String productId) async {
     state = state.copyWith(buying: {...state.buying, productId});
+    _purchases.remove(productId)?.end('cancel');
+    _purchases[productId] = Telemetry.flow('purchase', {
+      'product': productKind(productId),
+    });
     try {
       await gateway.buy(productId);
     } catch (e) {
+      _purchases.remove(productId)?.end('error');
       state = state.copyWith(buying: {...state.buying}..remove(productId));
       _notify('store.purchaseFailed', {'error': e});
     }
@@ -175,6 +193,11 @@ class ShopController extends StateNotifier<ShopState> {
     if (mounted) {
       state = state.copyWith(buying: {...state.buying}..remove(e.productId));
     }
+    _purchases.remove(e.productId)?.end(switch (e.state) {
+      PurchaseState.failed => 'error',
+      PurchaseState.cancelled => 'cancel',
+      _ => 'ok',
+    });
     switch (e.state) {
       case PurchaseState.failed:
         _notify('store.purchaseFailed', {'error': e.error ?? '?'});
@@ -244,15 +267,21 @@ class ShopController extends StateNotifier<ShopState> {
       },
       downloadErrors: {...state.downloadErrors}..remove(pack.id),
     );
+    final flow = Telemetry.flow('pack_download', {
+      'kind': pack.gamebook ? 'gamebook' : 'pack',
+      'update': installer.hasAnyVersion(pack),
+    });
     try {
       await for (final p in installer.download(c, pack, state.entitlements)) {
-        if (!mounted) return;
+        if (!mounted) return flow.end('cancel');
         state = state.copyWith(downloads: {...state.downloads, pack.id: p});
       }
+      flow.end('ok');
       if (!mounted) return;
       state = state.copyWith(downloads: {...state.downloads}..remove(pack.id));
       onPacksChanged();
     } catch (e) {
+      flow.end('error');
       if (!mounted) return;
       state = state.copyWith(
         downloads: {...state.downloads}..remove(pack.id),

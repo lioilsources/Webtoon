@@ -1,4 +1,5 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../api/webtoon_api.dart';
 import '../models/campaign.dart';
@@ -107,6 +108,7 @@ class ReaderNotifier extends StateNotifier<ReaderState> {
       );
     } on ApiException catch (e) {
       if (!mounted) return;
+      Telemetry.errorShown('reader_load');
       state = state.copyWith(loading: false, error: e.message);
     }
   }

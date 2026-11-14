@@ -5,6 +5,8 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../telemetry/telemetry_setup.dart';
+
 enum ReaderProfile { kids, adults }
 
 /// Whether content of [audience] is shown to [profile]. Kids see kids and teen content, adults
@@ -87,13 +89,16 @@ class ReaderProfileNotifier extends StateNotifier<ProfileState> {
   ReaderProfileNotifier(this._store) : super(const ProfileState()) {
     _store.load().then((p) {
       if (mounted && !state.loaded) {
+        telemetryProfile(adults: p == ReaderProfile.adults);
         state = ProfileState(loaded: true, profile: p);
       }
     });
   }
 
-  /// The caller has already passed the parental gate when switching to adults.
+  /// The caller has already passed the parental gate when switching to adults. Measuring
+  /// follows the profile: suspended for Kids before anything of theirs is shown (plan §4.14).
   Future<void> select(ReaderProfile profile) async {
+    telemetryProfile(adults: profile == ReaderProfile.adults);
     state = ProfileState(loaded: true, profile: profile);
     await _store.save(profile);
   }

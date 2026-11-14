@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/languages.dart';
 import '../i18n/ui_strings.dart';
@@ -56,9 +57,12 @@ class SettingsScreen extends ConsumerWidget {
                   child: Text('${langFlag(l)}  ${langDisplayName(l)}'),
                 ),
             ],
-            onChanged: (v) => ref
-                .read(readerLanguageProvider.notifier)
-                .select(v == null || v.isEmpty ? null : v),
+            onChanged: (v) {
+              Telemetry.feature('bubble_language');
+              ref
+                  .read(readerLanguageProvider.notifier)
+                  .select(v == null || v.isEmpty ? null : v);
+            },
           ),
           const SizedBox(height: 28),
           const AppIconPicker(key: ValueKey('settings-app-icon')),
@@ -191,6 +195,12 @@ class SettingsScreen extends ConsumerWidget {
             tr(ui, 'settings.restoreHint'),
             style: TextStyle(color: scheme.onSurfaceVariant, fontSize: 13),
           ),
+          // Anonymous statistics (docs/telemetry.md): only in builds that can send them, and
+          // not in the Kids profile, which is never measured.
+          if (Telemetry.isConfigured && !kids) ...[
+            const SizedBox(height: 28),
+            const _StatsSwitch(),
+          ],
         ],
       ),
     );
@@ -198,12 +208,14 @@ class SettingsScreen extends ConsumerWidget {
 
   Future<void> _restore(BuildContext context, WidgetRef ref, String ui) async {
     final messenger = ScaffoldMessenger.maybeOf(context);
+    Telemetry.feature('restore_purchases');
     try {
       await ref.read(shopProvider.notifier).restore();
       messenger?.showSnackBar(
         SnackBar(content: Text(tr(ui, 'settings.restored'))),
       );
     } catch (e) {
+      Telemetry.errorShown('restore');
       messenger?.showSnackBar(
         SnackBar(
           content: Text(tr(ui, 'settings.restoreFailed', {'error': '$e'})),
@@ -241,6 +253,35 @@ class SettingsScreen extends ConsumerWidget {
       ),
     );
     if (ok != true) return;
+    Telemetry.feature('reinstall_starter');
     await boot.reinstallStarter();
+  }
+}
+
+/// "Anonymní statistiky": on by default; off wipes what waits on the device at once.
+class _StatsSwitch extends ConsumerStatefulWidget {
+  const _StatsSwitch();
+
+  @override
+  ConsumerState<_StatsSwitch> createState() => _StatsSwitchState();
+}
+
+class _StatsSwitchState extends ConsumerState<_StatsSwitch> {
+  @override
+  Widget build(BuildContext context) {
+    final ui = ref.watch(uiLanguageProvider);
+    return ComicCard(
+      child: SwitchListTile(
+        key: const ValueKey('settings-stats'),
+        contentPadding: EdgeInsets.zero,
+        title: Text(tr(ui, 'settings.stats'), style: ComicFonts.ui(800)),
+        subtitle: Text(tr(ui, 'settings.statsHint')),
+        value: Telemetry.isEnabled,
+        onChanged: (on) async {
+          await Telemetry.setEnabled(on);
+          if (mounted) setState(() {});
+        },
+      ),
+    );
   }
 }
