@@ -78,6 +78,23 @@
       "tag_prompt": "no humans, ornate gilded gramophone horn, loudspeaker horn mounted on the wall, rococo ornaments, gold",
       "identity_level": "prompt",
       "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník-robot",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "solo",
+      "human": false,
+      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "tag_prompt": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "identity_level": "prompt",
+      "reference_images": []
     }
   ],
   "locations": [

@@ -60,6 +60,23 @@
       "tag_prompt": "adult, mature female, middle-aged, chestnut brown hair in a neat chignon, (thin cat-eye glasses:1.4), brown eyes, sharp gaze, elegant, pastel pink silk blouse with a ruffled collar, pearl earrings",
       "identity_level": "prompt",
       "reference_images": []
+    },
+    {
+      "id": "robot",
+      "name": "Číšník-robot",
+      "role": "npc",
+      "gender": "other",
+      "count_tag": "solo",
+      "human": false,
+      "description": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics. Speaks in a flat synthetic robotic voice.",
+      "base": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "outfits": {
+        "default": ""
+      },
+      "photo": "a waiter robot in a powdered wig and a gilded waistcoat, one extra shoulder joint, two round eye optics",
+      "tag_prompt": "solo, robot, robot waiter, powdered wig, gilded waistcoat, extra shoulder joint, two round glowing eye optics, holding a tray",
+      "identity_level": "prompt",
+      "reference_images": []
     }
   ],
   "locations": [
