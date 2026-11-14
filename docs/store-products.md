@@ -66,7 +66,8 @@ One-time:
    Kids category: the Kids category forbids third-party content downloads and requires no external links;
    instead the app has a reader profile (Děti / Dospělí) and a **parental gate** before every purchase and before
    switching to the adult profile.
-3. **App Privacy**: no data collected (purchases are handled by Apple; the app stores entitlements on device).
+3. **App Privacy**: per `store/privacy-answers.md`: anonymous usage statistics (Product Interaction, Performance Data;
+   Analytics, not linked, no tracking); purchases are handled by Apple and the app stores entitlements on device.
 
 Per product (Features → **In-App Purchases** → **+**):
 1. Type **Non-Consumable**; Reference Name = the product id (e.g. `pack_kids_1`); Product ID = the product id.
@@ -98,7 +99,8 @@ One-time:
    any track (internal testing is enough) — Play lets you create products only after that.
 3. **Policy → App content**: content rating questionnaire (IARC) → IARC decides (no override on Play; likely PEGI 12 or 16)
    (answers in `store/age-rating.md`); **Target audience and content**: 16+ and older (not "children"), so the app is **not** in the Designed for Families program; the
-   in-app parental gate still protects purchases and the adult profile. Data safety: no data collected.
+   in-app parental gate still protects purchases and the adult profile. Data safety: per `store/privacy-answers.md` (anonymous app interactions
+   and diagnostics, not shared, optional).
 
 Per product (**Monetize → Products → In-app products → Create product**):
 1. Product ID = the product id (lower case, digits, `_` and `.` only: `pack_kids_1` is valid). Permanent.
