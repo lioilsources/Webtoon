@@ -1,5 +1,4 @@
 # Gamebook — Archion: Protokol (3,56 KB). Verze „DeepSeek“: mezihra ke hře Archion, scénář napsal model DeepSeek (od Ol1na),
-# Název bez „(3,56 KB)“ (Olin, 2026-11-15): v obchodě a na review screenshotu vypadal jako velikost souboru.
 # Překlady (11 jazyků, 2026-11-14) jsou přímo ve storyboard.json (bubbles[].i18n, title_i18n): gamebook.py draft je přepíše, po změně scriptu přeložit znovu.
 # Ol1n nosí brýle (od autora, 2026-11-14): thin-framed glasses ve všech jeho postavách.
 # Kreslený věk (L40S test 1: vycházeli na 45–50): photo říká věk, jak vypadají (Ol1n 36, Kosmo 34, dřívější éry níž), bez „mature male“. Skutečný věk je Ol1n 46, Kosmo 44.
@@ -19,11 +18,13 @@
 # Prostředí: zahrada v noci (Ol1n v bundě, papír, malý chytrý reproduktor s blikajícím světlem), kryt se třemi monitory.
 # Hudba (pro L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
 #   archion_deepseek: "solo guqin, sparse plucked notes, cold electronic drone underneath, data hum, clinical and meditative"
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
+# Název bez „(3,56 KB)“ (Olin, 2026-11-15): v obchodě a na review screenshotu vypadal jako velikost souboru.
 
 schema: 1
 id: archion_deepseek
-title: "Archion: Protokol"
-title_i18n: {en: "Archion: Protocol", de: "Archion: Protokoll", fr: "Archion : Protocole", it: "Archion: Protocollo", ja: "アルキオン：プロトコル", ko: "아르키온: 프로토콜", pl: "Archion: Protokół", pt-BR: "Archion: Protocolo", ru: "Архион: Протокол", uk: "Архіон: Протокол", vi: "Archion: Giao thức"}
+title: "Archion: Protokol (DeepSeek)"
+title_i18n: {en: "Archion: Protocol (DeepSeek)", de: "Archion: Protokoll (DeepSeek)", fr: "Archion : Protocole (DeepSeek)", it: "Archion: Protocollo (DeepSeek)", ja: "アルキオン：プロトコル（DeepSeek）", ko: "아르키온: 프로토콜 (DeepSeek)", pl: "Archion: Protokół (DeepSeek)", pt-BR: "Archion: Protocolo (DeepSeek)", ru: "Архион: Протокол (DeepSeek)", uk: "Архіон: Протокол (DeepSeek)", vi: "Archion: Giao thức (DeepSeek)"}
 world: w_archion_deepseek
 audience: adult
 language: cs

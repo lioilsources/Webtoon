@@ -18,11 +18,12 @@
 # holá zahrada v pozdním podzimu, pak zasněžená zahrada v noci, dech se sráží.
 # Hudba (pro L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
 #   archion_grok: "tense legal thriller score, staccato strings, ticking clock, low brass hits, timpani"
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: archion_grok
-title: "Archion: Idea versus vyjádření"
-title_i18n: {en: "Archion: Idea versus Expression", de: "Archion: Idee gegen Ausdruck", fr: "Archion : l'idée contre l'expression", it: "Archion: idea contro espressione", ja: "アルキオン：アイデアと表現", ko: "아르키온: 아이디어 대 표현", pl: "Archion: Idea kontra wyrażenie", pt-BR: "Archion: Ideia versus expressão", ru: "Архион: Идея против выражения", uk: "Архіон: Ідея проти вираження", vi: "Archion: Ý tưởng và cách thể hiện"}
+title: "Archion: Idea versus vyjádření (Grok)"
+title_i18n: {en: "Archion: Idea versus Expression (Grok)", de: "Archion: Idee gegen Ausdruck (Grok)", fr: "Archion : l'idée contre l'expression (Grok)", it: "Archion: idea contro espressione (Grok)", ja: "アルキオン：アイデアと表現（Grok）", ko: "아르키온: 아이디어 대 표현 (Grok)", pl: "Archion: Idea kontra wyrażenie (Grok)", pt-BR: "Archion: Ideia versus expressão (Grok)", ru: "Архион: Идея против выражения (Grok)", uk: "Архіон: Ідея проти вираження (Grok)", vi: "Archion: Ý tưởng và cách thể hiện (Grok)"}
 world: w_archion_grok
 audience: adult
 language: cs

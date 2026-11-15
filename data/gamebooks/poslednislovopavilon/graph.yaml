@@ -14,11 +14,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
 # jako obraz. Profil comedy (jídlo a pití v obraze smějí být).
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: poslednislovopavilon
-title: Poslední slovo (pavilon)
-title_i18n: {de: "Das letzte Wort (Pavillon)", en: "The Last Word (Pavilion)", fr: "Le dernier mot (pavillon)", it: "L'ultima parola (padiglione)", ja: "最後のひと言（東屋）", ko: "마지막 한마디 (정자)", pl: "Ostatnie słowo (pawilon)", pt-BR: "A última palavra (pavilhão)", ru: "Последнее слово (павильон)", uk: "Останнє слово (павільйон)", vi: "Lời cuối cùng (đình)"}
+title: "Poslední slovo (pavilon, DeepSeek)"
+title_i18n: {de: "Das letzte Wort (Pavillon, DeepSeek)", en: "The Last Word (Pavilion, DeepSeek)", fr: "Le dernier mot (pavillon, DeepSeek)", it: "L'ultima parola (padiglione, DeepSeek)", ja: "最後のひと言（東屋、DeepSeek）", ko: "마지막 한마디 (정자, DeepSeek)", pl: "Ostatnie słowo (pawilon, DeepSeek)", pt-BR: "A última palavra (pavilhão, DeepSeek)", ru: "Последнее слово (павильон, DeepSeek)", uk: "Останнє слово (павільйон, DeepSeek)", vi: "Lời cuối cùng (đình, DeepSeek)"}
 world: w_posledni_slovo_pavilon
 audience: adult
 language: cs

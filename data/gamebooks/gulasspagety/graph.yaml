@@ -9,11 +9,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
 # v obraze), `see` = scénická poznámka jako obraz. Profil comedy (jídlo a pití v obraze smějí být, karikatura je záměr).
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: gulasspagety
-title: Guláš a špagety
-title_i18n: {de: "Gulasch und Spaghetti", en: "Goulash and Spaghetti", fr: "Goulash et spaghetti", it: "Gulasch e spaghetti", ja: "グヤーシュとスパゲッティ", ko: "굴라시와 스파게티", pl: "Gulasz i spaghetti", pt-BR: "Gulache e espaguete", ru: "Гуляш и спагетти", uk: "Гуляш і спагеті", vi: "Goulash và spaghetti"}
+title: "Guláš a špagety (Grok)"
+title_i18n: {de: "Gulasch und Spaghetti (Grok)", en: "Goulash and Spaghetti (Grok)", fr: "Goulash et spaghetti (Grok)", it: "Gulasch e spaghetti (Grok)", ja: "グヤーシュとスパゲッティ（Grok）", ko: "굴라시와 스파게티 (Grok)", pl: "Gulasz i spaghetti (Grok)", pt-BR: "Gulache e espaguete (Grok)", ru: "Гуляш и спагетти (Grok)", uk: "Гуляш і спагеті (Grok)", vi: "Goulash và spaghetti (Grok)"}
 world: w_gulas_spagety
 audience: adult
 language: cs

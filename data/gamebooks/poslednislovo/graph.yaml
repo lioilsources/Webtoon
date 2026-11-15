@@ -9,11 +9,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (Olin a Jana nikdy spolu
 # v obraze, robot číšník sám), `see` = scénická poznámka jako obraz. Profil comedy.
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: poslednislovo
-title: Poslední slovo
-title_i18n: {de: "Das letzte Wort", en: "The Last Word", fr: "Le dernier mot", it: "L'ultima parola", ja: "最後の一言", ko: "마지막 말", pl: "Ostatnie słowo", pt-BR: "A última palavra", ru: "Последнее слово", uk: "Останнє слово", vi: "Lời cuối cùng"}
+title: "Poslední slovo (ChatGPT)"
+title_i18n: {de: "Das letzte Wort (ChatGPT)", en: "The Last Word (ChatGPT)", fr: "Le dernier mot (ChatGPT)", it: "L'ultima parola (ChatGPT)", ja: "最後の一言（ChatGPT）", ko: "마지막 말 (ChatGPT)", pl: "Ostatnie słowo (ChatGPT)", pt-BR: "A última palavra (ChatGPT)", ru: "Последнее слово (ChatGPT)", uk: "Останнє слово (ChatGPT)", vi: "Lời cuối cùng (ChatGPT)"}
 world: w_posledni_slovo
 audience: adult
 language: cs

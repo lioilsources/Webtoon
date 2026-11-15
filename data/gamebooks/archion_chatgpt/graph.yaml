@@ -25,11 +25,12 @@
 # s hračkami, dvě postýlky, byt v rekonstrukci (plachty, prach, sbíječka), pak zahrada.
 # Hudba (L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
 #   archion_chatgpt: "glitchy lo-fi, stuttering broken beat, tape stops, interrupted melancholic electric piano, baby monitor static"
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: archion_chatgpt
-title: "Archion: Zahrada uprostřed hluku"
-title_i18n: {en: "Archion: A Garden in the Middle of the Noise", de: "Archion: Ein Garten mitten im Lärm", fr: "Archion : un jardin au milieu du bruit", it: "Archion: un giardino in mezzo al rumore", ja: "アルキオン：騒音の中の庭", ko: "아르키온: 소음 한가운데의 정원", pl: "Archion: Ogród pośród hałasu", pt-BR: "Archion: Um jardim no meio do barulho", ru: "Архион: Сад посреди шума", uk: "Архіон: Сад посеред шуму", vi: "Archion: Khu vườn giữa tiếng ồn"}
+title: "Archion: Zahrada uprostřed hluku (ChatGPT)"
+title_i18n: {en: "Archion: A Garden in the Middle of the Noise (ChatGPT)", de: "Archion: Ein Garten mitten im Lärm (ChatGPT)", fr: "Archion : un jardin au milieu du bruit (ChatGPT)", it: "Archion: un giardino in mezzo al rumore (ChatGPT)", ja: "アルキオン：騒音の中の庭（ChatGPT）", ko: "아르키온: 소음 한가운데의 정원 (ChatGPT)", pl: "Archion: Ogród pośród hałasu (ChatGPT)", pt-BR: "Archion: Um jardim no meio do barulho (ChatGPT)", ru: "Архион: Сад посреди шума (ChatGPT)", uk: "Архіон: Сад посеред шуму (ChatGPT)", vi: "Archion: Khu vườn giữa tiếng ồn (ChatGPT)"}
 world: w_archion_chatgpt
 audience: adult
 language: cs

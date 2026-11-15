@@ -31,11 +31,12 @@
 # oběma polovinami. Rekvizity: karty padají jako listí, kytička v květináči u notebooku, karty v krabicích.
 # Hudba (L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
 #   archion_lechat: "french musette waltz, melancholic accordion, slow, nylon guitar, rainy paris evening"
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: archion_lechat
-title: "Archion: Dva světy"
-title_i18n: {en: "Archion: Two Worlds", de: "Archion: Zwei Welten", fr: "Archion : deux mondes", it: "Archion: due mondi", ja: "アルキオン：ふたつの世界", ko: "아르키온: 두 개의 세계", pl: "Archion: Dwa światy", pt-BR: "Archion: Dois mundos", ru: "Архион: Два мира", uk: "Архіон: Два світи", vi: "Archion: Hai thế giới"}
+title: "Archion: Dva světy (Le Chat)"
+title_i18n: {en: "Archion: Two Worlds (Le Chat)", de: "Archion: Zwei Welten (Le Chat)", fr: "Archion : deux mondes (Le Chat)", it: "Archion: due mondi (Le Chat)", ja: "アルキオン：ふたつの世界（Le Chat）", ko: "아르키온: 두 개의 세계 (Le Chat)", pl: "Archion: Dwa światy (Le Chat)", pt-BR: "Archion: Dois mundos (Le Chat)", ru: "Архион: Два мира (Le Chat)", uk: "Архіон: Два світи (Le Chat)", vi: "Archion: Hai thế giới (Le Chat)"}
 world: w_archion_lechat
 audience: adult
 language: cs

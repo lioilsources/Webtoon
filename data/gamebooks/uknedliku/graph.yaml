@@ -13,11 +13,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
 # jako obraz (dlouhé poznámky rozdělené na panely doslova, po větách). Profil comedy (jídlo a pití v obraze smějí být).
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: uknedliku
-title: U Knedlíku 2089
-title_i18n: {de: "Zum Knödel 2089", en: "At the Dumpling 2089", fr: "À la Quenelle 2089", it: "Al Canederlo 2089", ja: "クネドリーキ亭 2089", ko: "크네들리키 2089", pl: "Pod Knedlem 2089", pt-BR: "No Bolinho 2089", ru: "У Кнедлика 2089", uk: "У Кнедлика 2089", vi: "Quán Bánh Bao 2089"}
+title: "U Knedlíku 2089 (Claude)"
+title_i18n: {de: "Zum Knödel 2089 (Claude)", en: "At the Dumpling 2089 (Claude)", fr: "À la Quenelle 2089 (Claude)", it: "Al Canederlo 2089 (Claude)", ja: "クネドリーキ亭 2089（Claude）", ko: "크네들리키 2089 (Claude)", pl: "Pod Knedlem 2089 (Claude)", pt-BR: "No Bolinho 2089 (Claude)", ru: "У Кнедлика 2089 (Claude)", uk: "У Кнедлика 2089 (Claude)", vi: "Quán Bánh Bao 2089 (Claude)"}
 world: w_u_knedliku
 audience: adult
 language: cs

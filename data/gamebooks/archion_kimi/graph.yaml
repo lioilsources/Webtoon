@@ -24,11 +24,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího, `see` = scénická poznámka
 # jako obraz, `caption` = DISCORD, příkaz nebo hlas bez těla. Kosmo a Ol1n nikdy v jednom obraze.
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: archion_kimi
-title: "Archion: Server"
-title_i18n: {en: "Archion: The Server", de: "Archion: Der Server", fr: "Archion : le serveur", it: "Archion: il server", ja: "アルキオン：サーバー", ko: "아르키온: 서버", pl: "Archion: Serwer", pt-BR: "Archion: O servidor", ru: "Архион: Сервер", uk: "Архіон: Сервер", vi: "Archion: Máy chủ"}
+title: "Archion: Server (Kimi)"
+title_i18n: {en: "Archion: The Server (Kimi)", de: "Archion: Der Server (Kimi)", fr: "Archion : le serveur (Kimi)", it: "Archion: il server (Kimi)", ja: "アルキオン：サーバー（Kimi）", ko: "아르키온: 서버 (Kimi)", pl: "Archion: Serwer (Kimi)", pt-BR: "Archion: O servidor (Kimi)", ru: "Архион: Сервер (Kimi)", uk: "Архіон: Сервер (Kimi)", vi: "Archion: Máy chủ (Kimi)"}
 world: w_archion_kimi
 audience: adult
 language: cs

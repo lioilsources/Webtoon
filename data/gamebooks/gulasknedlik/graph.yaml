@@ -22,11 +22,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
 # v obraze), `see` = scénická poznámka jako obraz. Profil comedy.
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: gulasknedlik
-title: Guláš s knedlíkem v neopunkové budoucnosti
-title_i18n: {de: "Gulasch mit Knödeln in einer Neo-Punk-Zukunft", en: "Goulash and Dumplings in a Neo-Punk Future", fr: "Goulash et knödels dans un futur néo-punk", it: "Gulasch con canederli in un futuro neo-punk", ja: "ネオパンクな未来のグヤーシュとクネドリーキ", ko: "네오펑크 미래의 굴라시와 크네들리키", pl: "Gulasz z knedlikami w neopunkowej przyszłości", pt-BR: "Gulache com bolinhos num futuro neopunk", ru: "Гуляш с кнедликами в неопанковом будущем", uk: "Гуляш із кнедликами в неопанковому майбутньому", vi: "Goulash với bánh knedlík trong tương lai tân punk"}
+title: "Guláš s knedlíkem v neopunkové budoucnosti (Le Chat)"
+title_i18n: {de: "Gulasch mit Knödeln in einer Neo-Punk-Zukunft (Le Chat)", en: "Goulash and Dumplings in a Neo-Punk Future (Le Chat)", fr: "Goulash et knödels dans un futur néo-punk (Le Chat)", it: "Gulasch con canederli in un futuro neo-punk (Le Chat)", ja: "ネオパンクな未来のグヤーシュとクネドリーキ（Le Chat）", ko: "네오펑크 미래의 굴라시와 크네들리키 (Le Chat)", pl: "Gulasz z knedlikami w neopunkowej przyszłości (Le Chat)", pt-BR: "Gulache com bolinhos num futuro neopunk (Le Chat)", ru: "Гуляш с кнедликами в неопанковом будущем (Le Chat)", uk: "Гуляш із кнедликами в неопанковому майбутньому (Le Chat)", vi: "Goulash với bánh knedlík trong tương lai tân punk (Le Chat)"}
 world: w_gulas_knedlik
 audience: adult
 language: cs

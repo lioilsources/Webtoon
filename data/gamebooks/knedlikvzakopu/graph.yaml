@@ -13,11 +13,12 @@
 #
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
 # v obraze), `see` = scénická poznámka jako obraz. Profil comedy.
+# Model v názvu (Olin, 2026-11-15): všech 14 gamebooků Archionu a guláše má v názvu model, který je napsal.
 
 schema: 1
 id: knedlikvzakopu
-title: S knedlíkem v zákopu
-title_i18n: {de: "Mit Knödel im Schützengraben", en: "With a Dumpling in the Trench", fr: "Un knödel dans la tranchée", it: "Con il canederlo in trincea", ja: "塹壕にクネドリーキ", ko: "참호 속의 크네들리키", pl: "Z knedlem w okopie", pt-BR: "Com um bolinho na trincheira", ru: "С кнедликом в окопе", uk: "З кнедликом в окопі", vi: "Với bánh knedlík trong chiến hào"}
+title: "S knedlíkem v zákopu (Kimi)"
+title_i18n: {de: "Mit Knödel im Schützengraben (Kimi)", en: "With a Dumpling in the Trench (Kimi)", fr: "Un knödel dans la tranchée (Kimi)", it: "Con il canederlo in trincea (Kimi)", ja: "塹壕にクネドリーキ（Kimi）", ko: "참호 속의 크네들리키 (Kimi)", pl: "Z knedlem w okopie (Kimi)", pt-BR: "Com um bolinho na trincheira (Kimi)", ru: "С кнедликом в окопе (Kimi)", uk: "З кнедликом в окопі (Kimi)", vi: "Với bánh knedlík trong chiến hào (Kimi)"}
 world: w_knedlik_v_zakopu
 audience: adult
 language: cs
