@@ -9,17 +9,18 @@
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
 # v obraze), `see` = scénická poznámka jako obraz. Styl noir_ink: černobílá čínská tuš, filmové noir světlo,
 # realistické proporce (ne manga), neony jen jako bílé světlo. Oba nosí brýle.
+# Model a styl v názvu, balík Guláš a špagety (Olin, 2026-11-15): napsal Gemini, varianty noir a tuš; podle katalogu v66.
 
 schema: 1
 id: kulovyblesktus
-title: Kulový blesk v neonovém zákopu (tuš)
-title_i18n: {de: "Kugelblitz im Neonschützengraben (Tusche)", en: "Ball Lightning in the Neon Trench (ink)", fr: "Foudre en boule dans la tranchée au néon (encre)", it: "Fulmine globulare nella trincea al neon (inchiostro)", ja: "ネオンの塹壕に球電（墨）", ko: "네온 참호 속의 구전 (수묵)", pl: "Piorun kulisty w neonowym okopie (tusz)", pt-BR: "Raio globular na trincheira de neon (nanquim)", ru: "Шаровая молния в неоновом окопе (тушь)", uk: "Кульова блискавка в неоновому окопі (туш)", vi: "Sét hòn trong chiến hào neon (mực tàu)"}
+title: "Kulový blesk v neonovém zákopu (Gemini, tuš)"
+title_i18n: {de: "Kugelblitz im Neonschützengraben (Gemini, Tusche)", en: "Ball Lightning in the Neon Trench (Gemini, ink)", fr: "Foudre en boule dans la tranchée au néon (Gemini, encre)", it: "Fulmine globulare nella trincea al neon (Gemini, inchiostro)", ja: "ネオンの塹壕に球電（Gemini、墨）", ko: "네온 참호 속의 구전 (Gemini, 수묵)", pl: "Piorun kulisty w neonowym okopie (Gemini, tusz)", pt-BR: "Raio globular na trincheira de neon (Gemini, nanquim)", ru: "Шаровая молния в неоновом окопе (Gemini, тушь)", uk: "Кульова блискавка в неоновому окопі (Gemini, туш)", vi: "Sét hòn trong chiến hào neon (Gemini, mực tàu)"}
 world: w_kulovy_blesk
 audience: adult
 language: cs
 style_id: noir_ink_brush
 profile: noir
-product_id: gamebook_kulovyblesktus
+product_id: gamebook_gulasspagety  # balík Guláš a špagety (Olin, 2026-11-15); už ne zdarma
 start: s1
 
 premise: >

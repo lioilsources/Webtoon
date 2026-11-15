@@ -8,18 +8,18 @@
 # Kreslí se z `script` (m0/gamebook.py draft): `say` = replika ve vlastním panelu mluvčího (sourozenci nikdy spolu
 # v obraze), `see` = scénická poznámka jako obraz. Styl noir_ink: černobílá čínská tuš, filmové noir světlo,
 # realistické proporce (ne manga), neony jen jako bílé světlo. Oba nosí brýle.
-# Model v názvu a balík Guláš a špagety (Olin, 2026-11-15): napsal Gemini; tušová verze kulovyblesktus zůstává zdarma.
+# Model a styl v názvu, balík Guláš a špagety (Olin, 2026-11-15): napsal Gemini, varianty noir a tuš; podle katalogu v66.
 
 schema: 1
 id: kulovyblesk
-title: "Kulový blesk v neonovém zákopu (Gemini)"
-title_i18n: {de: "Kugelblitz im Neonschützengraben (Gemini)", en: "Ball Lightning in the Neon Trench (Gemini)", fr: "Foudre en boule dans la tranchée au néon (Gemini)", it: "Fulmine globulare nella trincea al neon (Gemini)", ja: "ネオンの塹壕に球電（Gemini）", ko: "네온 참호 속의 구전 (Gemini)", pl: "Piorun kulisty w neonowym okopie (Gemini)", pt-BR: "Raio globular na trincheira de neon (Gemini)", ru: "Шаровая молния в неоновом окопе (Gemini)", uk: "Кульова блискавка в неоновому окопі (Gemini)", vi: "Sét hòn trong chiến hào neon (Gemini)"}
+title: "Kulový blesk v neonovém zákopu (Gemini, noir)"
+title_i18n: {de: "Kugelblitz im Neonschützengraben (Gemini, noir)", en: "Ball Lightning in the Neon Trench (Gemini, noir)", fr: "Foudre en boule dans la tranchée au néon (Gemini, noir)", it: "Fulmine globulare nella trincea al neon (Gemini, noir)", ja: "ネオンの塹壕に球電（Gemini、ノワール）", ko: "네온 참호 속의 구전 (Gemini, 누아르)", pl: "Piorun kulisty w neonowym okopie (Gemini, noir)", pt-BR: "Raio globular na trincheira de neon (Gemini, noir)", ru: "Шаровая молния в неоновом окопе (Gemini, нуар)", uk: "Кульова блискавка в неоновому окопі (Gemini, нуар)", vi: "Sét hòn trong chiến hào neon (Gemini, noir)"}
 world: w_kulovy_blesk
 audience: adult
 language: cs
 style_id: noir_ink
 profile: noir
-product_id: gamebook_gulasspagety  # 7. verze balíku Guláš a špagety (Olin, 2026-11-15); už ne zdarma
+product_id: gamebook_gulasspagety  # balík Guláš a špagety (Olin, 2026-11-15); už ne zdarma
 start: s1
 
 premise: >
