@@ -1,4 +1,5 @@
 # Gamebook — Archion: Protokol (3,56 KB). Verze „DeepSeek“: mezihra ke hře Archion, scénář napsal model DeepSeek (od Ol1na),
+# Název bez „(3,56 KB)“ (Olin, 2026-11-15): v obchodě a na review screenshotu vypadal jako velikost souboru.
 # Překlady (11 jazyků, 2026-11-14) jsou přímo ve storyboard.json (bubbles[].i18n, title_i18n): gamebook.py draft je přepíše, po změně scriptu přeložit znovu.
 # Ol1n nosí brýle (od autora, 2026-11-14): thin-framed glasses ve všech jeho postavách.
 # Kreslený věk (L40S test 1: vycházeli na 45–50): photo říká věk, jak vypadají (Ol1n 36, Kosmo 34, dřívější éry níž), bez „mature male“. Skutečný věk je Ol1n 46, Kosmo 44.
@@ -21,8 +22,8 @@
 
 schema: 1
 id: archion_deepseek
-title: "Archion: Protokol (3,56 KB)"
-title_i18n: {en: "Archion: Protocol (3.56 KB)", de: "Archion: Protokoll (3,56 KB)", fr: "Archion : Protocole (3,56 Ko)", it: "Archion: Protocollo (3,56 KB)", ja: "アルキオン：プロトコル（3.56 KB）", ko: "아르키온: 프로토콜 (3.56 KB)", pl: "Archion: Protokół (3,56 KB)", pt-BR: "Archion: Protocolo (3,56 KB)", ru: "Архион: Протокол (3,56 КБ)", uk: "Архіон: Протокол (3,56 КБ)", vi: "Archion: Giao thức (3,56 KB)"}
+title: "Archion: Protokol"
+title_i18n: {en: "Archion: Protocol", de: "Archion: Protokoll", fr: "Archion : Protocole", it: "Archion: Protocollo", ja: "アルキオン：プロトコル", ko: "아르키온: 프로토콜", pl: "Archion: Protokół", pt-BR: "Archion: Protocolo", ru: "Архион: Протокол", uk: "Архіон: Протокол", vi: "Archion: Giao thức"}
 world: w_archion_deepseek
 audience: adult
 language: cs
