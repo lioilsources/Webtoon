@@ -238,8 +238,8 @@ void main() {
       expect(find.text('Zdarma · Stáhnout'), findsOneWidget); // superhero-1
       expect(find.text('50 příběhů · 2 kB'), findsNWidgets(3));
       expect(find.byKey(const ValueKey('store-bundles')), findsOneWidget);
-      expect(find.text(r'$2.99'), findsNWidgets(2));
-      expect(find.text(r'$6.99'), findsOneWidget);
+      expect(find.text(r'$1.99'), findsNWidgets(2));
+      expect(find.text(r'$4.99'), findsOneWidget);
       expect(
         find.text('Všechny současné i budoucí balíčky: Pro děti'),
         findsOneWidget,
