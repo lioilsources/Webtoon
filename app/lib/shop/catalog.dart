@@ -578,6 +578,8 @@ class Catalog {
     for (final p in packs)
       if (!p.free && p.productId != null) p.productId!,
     for (final b in bundles) b.productId,
-    for (final g in gamebooks) ...[g.productId, ?g.kitProductId],
+    // A free gamebook (and its kit) sells nothing: its default gamebook_<id> is not a store product.
+    for (final g in gamebooks)
+      if (!g.free) ...[g.productId, ?g.kitProductId],
   };
 }
