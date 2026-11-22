@@ -38,11 +38,13 @@ type Graph struct {
 	Nodes      map[string]Node   `yaml:"nodes"`
 	// ProductID is the store product of a paid gamebook; several gamebooks may share one (one purchase unlocks
 	// them all). KitProductID is its editor kit; with a shared product there is no kit unless it is named here.
-	ProductID    string   `yaml:"product_id"`
-	KitProductID string   `yaml:"kit_product_id"`
-	order        []string // node ids in file order
-	nodeBase     string   // graph id the nodes were imported under (differs from ID for a variant)
-	worldSuffix  string   // _<variant> of the node worlds
+	ProductID    string `yaml:"product_id"`
+	KitProductID string `yaml:"kit_product_id"`
+	// Free gamebooks (and their kits) sell nothing: the export makes them free without the -free flag.
+	Free        bool     `yaml:"free"`
+	order       []string // node ids in file order
+	nodeBase    string   // graph id the nodes were imported under (differs from ID for a variant)
+	worldSuffix string   // _<variant> of the node worlds
 }
 
 // gamebookIDRe is a gamebook id: like a pack id, plus "_" (m0/gamebook.py story ids gb_<id>_<node>).
@@ -336,6 +338,9 @@ func (c *Catalog) MergeGamebook(gb CatalogGamebook, now time.Time, pagesURL stri
 func gamebookNames(o *Options, r Rules) {
 	g := o.Gamebook
 	vars := map[string]string{"id": g.ID}
+	if g.Free {
+		o.Free = true
+	}
 	if o.ID == "" {
 		o.ID = "gamebook-" + g.ID
 	}
