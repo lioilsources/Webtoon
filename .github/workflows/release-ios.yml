@@ -19,7 +19,7 @@ permissions:
 jobs:
   build-ios:
     name: Build & Release iOS
-    runs-on: macos-26
+    runs-on: xcode-27
     env:
       # A release talks to the deployed backend, not the localhost default
       # in app/lib/config.dart. Repository variable, not a secret: it ships
