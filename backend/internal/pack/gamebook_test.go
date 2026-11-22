@@ -26,6 +26,25 @@ func TestReadGraphSara(t *testing.T) {
 	}
 }
 
+func TestGraphFreeNeedsNoFlag(t *testing.T) {
+	root, err := RepoRoot()
+	if err != nil {
+		t.Fatal(err)
+	}
+	// Free gamebooks (Olin 2026-11-22: Kulový blesk out of gamebook_gulasspagety) must stay free on re-export.
+	for _, id := range []string{"sara", "mlceni", "kovovenebe", "louka", "kulovyblesk", "kulovyblesktus"} {
+		g, err := ReadGraph(filepath.Join(root, "data", "gamebooks", id, "graph.yaml"))
+		if err != nil {
+			t.Fatal(err)
+		}
+		o := Options{Gamebook: g, Version: 1}
+		gamebookNames(&o, rule())
+		if !o.Free || o.ProductID != "" {
+			t.Errorf("%s: free=%v product=%q", id, o.Free, o.ProductID)
+		}
+	}
+}
+
 func TestGraphVariantSharedProduct(t *testing.T) {
 	root, err := RepoRoot()
 	if err != nil {

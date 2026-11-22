@@ -89,6 +89,18 @@ void main() {
       });
     });
 
+    test('free gamebooks are not queried in the store', () {
+      // The live catalog: free gamebooks have an empty product_id, which falls back to gamebook_<id>; Play has
+      // no such product.
+      final live = shopCatalog(gulasFree: true);
+      expect(live.productIds, {
+        'bundle_all',
+        'gamebook_archion',
+        'gamebook_sara',
+        'kit_sara',
+      });
+    });
+
     test('one purchase unlocks every gamebook of the product', () {
       final ents = const Entitlements().grant(r('gamebook_archion'));
       for (final g in catalog.gamebooks) {
