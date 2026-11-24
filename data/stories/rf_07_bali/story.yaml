@@ -1,0 +1,24 @@
+# Bali – Cyklista a žena z džungle: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_07_bali
+kind: strip
+title: Bali – Cyklista a žena z džungle
+world: w_rf_07_bali
+audience: adult
+language: cs
+style_id: fantasy_colorlines
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_road, tags: [rice terraces, mountain road, jungle], bubbles: [{speaker_id: '', text: Bali. Horská cesta dolů., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_road, who: [ethan, sari], tags: [couple, hetero, riding bicycles downhill side by side, speed lines], bubbles: [{speaker_id: sari, text: Pomaleji!, kind: speech}, {speaker_id: ethan, text: 'Bojíš se?', kind: speech}, {speaker_id: sari, text: O tebe., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_road, who: [ethan], tags: [grinning, wind], gap: large}
+  - {shot: wide, loc: l_hut, tags: [storm, lightning, rain on jungle, small hut], sfx: [{text: BUM!, style: bold}], gap: small}
+  - {shot: medium, loc: l_hut, who: [{ethan: rain}, {sari: rain}], tags: [couple, hetero, woman handing towel, man taking off wet jacket, rain outside], bubbles: [{speaker_id: sari, text: 'Jsi pořád přesvědčený, že rychleji je lepší?', kind: speech}, {speaker_id: ethan, text: Ne., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_hut, who: [{ethan: rain}], tags: [looking at viewer, soft expression], bubbles: [{speaker_id: ethan, text: 'Teď chci, aby tenhle okamžik trval co nejdéle.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_falls, who: [ethan, {sari: waterfall}], tags: [couple, hetero, standing at waterfall, mist, rainbow], gap: medium}
+  - {shot: medium, loc: l_falls, who: [ethan, {sari: waterfall}], tags: [couple, hetero, kiss, waterfall mist], bubbles: [{speaker_id: ethan, text: 'Tohle bylo za co?', kind: speech}, {speaker_id: sari, text: 'Za to, že jsi konečně zpomalil.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_airport, who: [{ethan: travel}, {sari: waterfall}], tags: [couple, hetero, holding hands, sad, evening], bubbles: [{speaker_id: sari, text: 'Vrátíš se?', kind: speech}, {speaker_id: ethan, text: Ano., kind: speech}, {speaker_id: sari, text: 'Slibuješ?', kind: speech}, {speaker_id: ethan, text: Slibuju., kind: speech}], gap: large}
+  - {shot: wide, loc: l_road, who: [ethan], tags: [riding bicycle on same road, smile], bubbles: [{speaker_id: '', text: O rok později jede Ethan stejnou cestou., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_falls, who: [{sari: waterfall}], tags: [waiting at waterfall, smiling, turning around], bubbles: [{speaker_id: '', text: Sari čeká u vodopádu., kind: narration}], gap: large}

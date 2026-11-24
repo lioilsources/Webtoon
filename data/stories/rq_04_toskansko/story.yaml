@@ -1,0 +1,24 @@
+# Toskánsko – Pohled na celou: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_04_toskansko
+kind: strip
+title: Toskánsko – Pohled na celou
+world: w_rq_04_toskansko
+audience: adult
+language: cs
+style_id: ligne_claire
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vineyard, tags: [vineyard, rolling hills, sunlight, tuscany], bubbles: [{speaker_id: '', text: Toskánsko. Mezi nekonečnými vinicemi., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_vineyard, who: [giulia], tags: [standing among vines, looking at viewer, pensive, wind in hair], bubbles: [{speaker_id: giulia, text: Všichni se dívají jen na… tohle., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_vineyard, who: [giulia, luca], tags: [couple, hetero, facing each other, eye contact, smile, sunlight], bubbles: [{speaker_id: luca, text: Dívám se na tebe celou., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_barn, who: [giulia, luca], tags: [couple, hetero, standing in barn, holding wine glasses, close proximity, flirting], bubbles: [{speaker_id: '', text: Stodola v horkém odpoledni., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_barn, who: [giulia, luca], tags: [couple, hetero, kissing, holding waist, passion, warm light], gap: medium}
+  - {shot: medium, loc: l_barn, who: [giulia, luca], tags: [couple, hetero, touching shoulder, closing eyes, tender, hay background], bubbles: [{speaker_id: giulia, text: Pomalu…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_barn, who: [giulia, luca], tags: [couple, hetero, embrace, deep kiss, passion, shadows], bubbles: [{speaker_id: giulia, text: Cítím se…, kind: speech}, {speaker_id: luca, text: Já taky., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_barn, tags: [empty hay bale, dust in light, morning sun, quiet], bubbles: [{speaker_id: '', text: Ráno přišla pravda., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_barn, who: [{luca: morning}], tags: [looking away, guilty expression, rubbing neck, standing], bubbles: [{speaker_id: luca, text: Mám doma přítelkyni. Tohle byla chyba., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_barn, who: [{giulia: morning}], tags: [crying, tears, heartbroken, looking down], gap: medium}
+  - {shot: wide, loc: l_road, who: [{giulia: morning}], tags: [walking away, back to camera, lonely, dusty road, cypress trees], gap: large}

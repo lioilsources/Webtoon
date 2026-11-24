@@ -1,0 +1,28 @@
+# New York – Dívka z Prahy a muž z Manhattanu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_ny
+kind: strip
+title: New York – Dívka z Prahy a muž z Manhattanu
+world: w_r_ny
+audience: adult
+language: cs
+style_id: photo_juggernaut
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_street, tags: [busy street, people walking, city noise], bubbles: [{speaker_id: '', text: New York kolem ní hučí., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_street, who: [eliska], tags: [standing, holding suitcase, looking up, determined, small smile], bubbles: [{speaker_id: eliska, text: Tak dobře. Nový život., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_street, who: [eliska], tags: [open suitcase, suitcase fallen on sidewalk, clothes spilled, surprised, open mouth], bubbles: [{speaker_id: '', text: Kufr se převrátí. Obsah se vysype na chodník., kind: narration}], sfx: [{text: BUM!, style: bold}], gap: small}
+  - {shot: medium, loc: l_street, who: [daniel], tags: [holding coat, offering coat, looking down, calm], bubbles: [{speaker_id: daniel, text: 'Potřebujete pomoct?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_street, who: [eliska, daniel], tags: [couple, hetero, kneeling woman looking up, man holding coat, blush, embarrassed], bubbles: [{speaker_id: eliska, text: Já… děkuju., kind: speech}, {speaker_id: daniel, text: New York vás právě přivítal., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_street, who: [daniel], tags: [first smile, gentle smile], gap: large}
+  - {shot: medium, loc: l_cafe, who: [eliska], tags: [sitting by window, coffee cup, alone, looking outside], bubbles: [{speaker_id: '', text: O několik dní později., kind: narration}, {speaker_id: daniel, text: Takže jste přežila první týden., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [eliska, {daniel: suit}], tags: [couple, hetero, sitting across table, two coffee cups, smile], bubbles: [{speaker_id: eliska, text: Těsně., kind: speech}, {speaker_id: daniel, text: 'Káva?', kind: speech}, {speaker_id: eliska, text: 'Tohle je moje první americké rande?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [{daniel: suit}], tags: [smile, warm eyes], bubbles: [{speaker_id: daniel, text: 'Já doufal, že je to moje první americké rande.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_river, who: [eliska, daniel], tags: [couple, hetero, walking side by side, evening, looking at skyline], bubbles: [{speaker_id: eliska, text: 'Víš, co je zvláštní? V Praze jsem si připadala obyčejná.', kind: speech}, {speaker_id: daniel, text: 'A tady?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_river, who: [eliska], tags: [looking down, sad smile], bubbles: [{speaker_id: eliska, text: Tady si připadám ještě obyčejnější., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_river, who: [daniel], tags: [looking at viewer, gentle smile], bubbles: [{speaker_id: daniel, text: Já tě vidím úplně jinak., kind: speech}, {speaker_id: eliska, text: 'Jak?', kind: speech}, {speaker_id: daniel, text: 'Jako někoho, koho chci poznat.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_awning, who: [{eliska: rain}, daniel], tags: [couple, hetero, rain, under awning, man brushing wet hair from her face, hand on cheek, looking at each other], bubbles: [{speaker_id: daniel, text: 'Můžu?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_awning, who: [{eliska: rain}, daniel], tags: [couple, hetero, kiss, closed eyes, rain, tender], gap: small}
+  - {shot: medium, loc: l_awning, who: [{eliska: rain}, daniel], tags: [couple, hetero, smiling at each other, blush, rain], bubbles: [{speaker_id: eliska, text: Tohle nebylo v mém plánu., kind: speech}, {speaker_id: daniel, text: Naštěstí., kind: speech}], gap: large}

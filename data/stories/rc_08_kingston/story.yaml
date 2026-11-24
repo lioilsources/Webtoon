@@ -1,0 +1,21 @@
+# Kingston – Havana: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_08_kingston
+kind: strip
+title: Kingston – Havana
+world: w_rc_08_kingston
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_stadium, who: [andre], tags: [running, sprinting, motion blur, determined], gap: medium}
+  - {shot: medium, loc: l_stadium, who: [camila], tags: [holding camera, taking photo, smile], bubbles: [{speaker_id: camila, text: 'Můžu tě vyfotit po závodě?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_stadium, who: [andre, camila], tags: [couple, hetero, man out of breath, woman holding camera], bubbles: [{speaker_id: andre, text: Já jsem jen běžec., kind: speech}, {speaker_id: camila, text: A já jen fotografka. Tak se shodneme., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [andre, camila], tags: [couple, hetero, walking on sand, barefoot], bubbles: [{speaker_id: andre, text: Lidi vidí jen čas na stopkách., kind: speech}, {speaker_id: camila, text: 'Já vidím, jak se usmíváš, když doběhneš.', kind: speech}, {speaker_id: andre, text: To je poprvé., kind: speech}], gap: large}
+  - {shot: wide, loc: l_malecon, who: [{andre: evening}, camila], tags: [couple, hetero, walking along seawall, sunset], bubbles: [{speaker_id: '', text: Mezizastávka v Havaně., kind: narration}, {speaker_id: camila, text: 'Tady jsem doma. A ty?', kind: speech}, {speaker_id: andre, text: Teď taky trochu., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [luis], tags: [playing guitar, singing, smile], gap: medium}
+  - {shot: medium, loc: l_rest, who: [{andre: evening}, camila], tags: [couple, hetero, man giving flower, holding flower, smile], bubbles: [{speaker_id: andre, text: 'Camilo, můžu tě pozvat na procházku? A pak znovu.', kind: speech}, {speaker_id: camila, text: Ano., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_rest, who: [{andre: evening}, camila], tags: [couple, hetero, kiss, under lanterns, closed eyes], gap: large}

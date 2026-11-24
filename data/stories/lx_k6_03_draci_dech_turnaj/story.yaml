@@ -1,0 +1,24 @@
+# Amálka a drakův turnaj: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_03_draci_dech_turnaj
+kind: strip
+title: Amálka a drakův turnaj
+world: w_lx_k6_03_draci_dech_turnaj
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_arena, tags: [stadium, planet, space, neon lights, crowd, wide angle], bubbles: [{speaker_id: '', text: Soutěžní stadion obíhá kolem planety Aréna., kind: narration}], gap: medium, animate: 'ambient only, characters still, city lights blinking, static camera'}
+  - {shot: wide, loc: l_arena, who: [amalka, mnam], tags: [walking, determined, looking at stadium, happy, holding hands], bubbles: [{speaker_id: amalka, text: Jdu si pro hvězdičku spravedlivého boje!, kind: speech}, {speaker_id: mnam, text: A já pro bufet!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_ring, who: [pestiplan], tags: [robot standing, giant fists, glowing eyes, intimidating, from below], bubbles: [{speaker_id: pestiplan, text: SOUTĚŽ! POSLEDNÍ NA NOHÁCH VYHRÁVÁ!, kind: shout}], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_ring, who: [amalka, pestiplan], tags: [fighting stance, dodging, motion lines, robot punching, energy blast], sfx: [{text: SWISH!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_ring, who: [mnam], tags: [eating, open mouth, chewing, robot panel, sparks], sfx: [{text: CRUNCH!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_ring, who: [pestiplan], tags: [robot falling, stumbling, confused, glitching, falling down], sfx: [{text: CLANG! CRASH, style: bold}], gap: medium}
+  - {shot: medium, loc: l_ring, who: [amalka, pestiplan], tags: [pointing, smile, robot on ground, helping hand, surprised], bubbles: [{speaker_id: amalka, text: Podvádět umíš dobře. Padat umíš taky., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_ring, who: [pestiplan], tags: [robot hand, holding hand, standing up, glowing eyes soft, surprised], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_arena, who: [moderator, amalka], tags: [holding microphone, holding star, presenting, smile], bubbles: [{speaker_id: moderator, text: Vítězka je Amálka!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_arena, who: [amalka, pestiplan], tags: [giving star, robot chest, star on chest, smile, friendship], bubbles: [{speaker_id: amalka, text: 'Dejte ji Pěstiplánovi. Právě poprvé vyhrál – ne soutěž, ale sám sebe.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_arena, who: [pestiplan], tags: [robot looking down, star on chest, soft expression, glowing eyes], bubbles: [{speaker_id: pestiplan, text: 999 výher. Žádní kamarádi. Teď jedna prohra… a jeden kamarád., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_arena, who: [amalka, mnam, pestiplan], tags: [eating, sandwich, robot eating, happy, sitting together, sunlight], gap: large}

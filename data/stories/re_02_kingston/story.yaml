@@ -1,0 +1,23 @@
+# Rytmus Kingstonu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_02_kingston
+kind: strip
+title: Rytmus Kingstonu
+world: w_re_02_kingston
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_corner, who: [aisha], tags: [holding guidebook, lost, standing on corner], gap: medium}
+  - {shot: wide, loc: l_corner, who: [aisha], tags: [dancing, happy, children dancing, music notes], sfx: [{text: BUM-TSS, style: bold}], gap: medium}
+  - {shot: medium, loc: l_corner, who: [rohan], tags: [holding guitar, stopped playing, smile], bubbles: [{speaker_id: rohan, text: Slečno. Vy jste mi rozbila písničku., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_corner, who: [aisha, rohan], tags: [couple, hetero, laughing, man offering hand], bubbles: [{speaker_id: aisha, text: Promiňte. Tanec se prostě stane., kind: speech}, {speaker_id: rohan, text: To nebyla stížnost. To byla žádost o ruku. Na tanec. Hned., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [aisha, rohan], tags: [couple, hetero, dancing together, teaching dance steps, barefoot], bubbles: [{speaker_id: aisha, text: 'Řekni: ‚Tu es belle.‘ — Jsi krásná.', kind: speech}, {speaker_id: rohan, text: Tů é bél…, kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_beach, who: [aisha], tags: [blush, smile], bubbles: [{speaker_id: rohan, text: ‚Mi soon come.‘ — Hned jsem tady., kind: speech}, {speaker_id: aisha, text: Mi soon come., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [aisha], tags: [laughing loudly, seagulls flying away, head back], sfx: [{text: HAHA!, style: bold}], gap: large}
+  - {shot: medium, loc: l_fire, who: [rohan], tags: [sitting by bonfire, playing guitar, looking at viewer], bubbles: [{speaker_id: rohan, text: 'Hledal jsem ženu, která má rytmus v kostech. Pak jste roztancovala ulice, na kterých tančím celý život.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_fire, who: [aisha], tags: [smile, firelight, hand on chest], bubbles: [{speaker_id: aisha, text: 'Rozesmál jste mě, roztančil a pak mi ukradl srdce. To je krádež, pane.', kind: speech}, {speaker_id: rohan, text: Zatkněte mě., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_fire, who: [aisha, rohan], tags: [couple, hetero, kiss, under palm tree, bonfire, stars, closed eyes], gap: large}

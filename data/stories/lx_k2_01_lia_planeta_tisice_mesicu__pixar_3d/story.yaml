@@ -1,0 +1,23 @@
+# Lia a planeta tisíce měsíců: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_01_lia_planeta_tisice_mesicu__pixar_3d
+kind: strip
+title: Lia a planeta tisíce měsíců
+world: w_lx_k2_01_lia_planeta_tisice_mesicu__pixar_3d
+audience: kids
+language: cs
+style_id: pixar_3d
+music: pool
+panels:
+  - {shot: establishing, loc: l_space, tags: [spaceship window, moons, stars, blue planet, no humans], bubbles: [{speaker_id: '', text: Kosmická loď proletí mezi tisíci měsíci., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: medium, loc: l_space, who: [lia, komet], tags: [looking out window, pointing, fox pressing nose, excited, smile], bubbles: [{speaker_id: lia, text: 'Kometo, podívej!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_nira, who: [lia, aron], tags: [standing on ground, looking up, red sky, explosion, dust cloud, surprised], bubbles: [{speaker_id: aron, text: Planeta Nira., kind: speech}], sfx: [{text: BOOOM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [mech_kral], tags: [robot standing, six arms, glowing red eyes, menacing, dust, from below], bubbles: [{speaker_id: mech_kral, text: Veškerá energie bude moje., kind: speech}], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_battle, who: [lia], tags: [holding shield, glowing shield, determined, defending, energy blast], bubbles: [{speaker_id: lia, text: 'A co když řekneme ne?', kind: speech}], sfx: [{text: KLANG!, style: bold}], gap: small}
+  - {shot: wide, loc: l_battle, who: [komet, mech_kral], tags: [dog jumping, blue bubble, robot leg, glowing bubble, action], sfx: [{text: POP!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [aron], tags: [raising hands, magnetism, floating debris, metal pieces, concentrating], bubbles: [{speaker_id: aron, text: Lio! Teď!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [lia, mech_kral], tags: [running, holding sword, glowing sword, attacking, energy core, impact], sfx: [{text: ŠVIH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [mech_kral], tags: [robot kneeling, stopped, dim lights, confused, looking down], bubbles: [{speaker_id: mech_kral, text: 'Proč… mě nezničíš?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [lia], tags: [smiling, gentle, hand out, peaceful], bubbles: [{speaker_id: lia, text: Protože možná nemusíš být nepřítel., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [lia, komet, mech_kral], tags: [robot smiling, fox on shoulder, hugging, happy, peaceful, stars], bubbles: [{speaker_id: lia, text: Pomáhat., kind: speech}], gap: large}

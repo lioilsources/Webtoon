@@ -1,0 +1,24 @@
+# Kuchař a architektka: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_10_seychely
+kind: strip
+title: Kuchař a architektka
+world: w_rj_10_seychely
+audience: adult
+language: cs
+style_id: anime_screencap
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_kitchen, tags: [open kitchen, steam, ocean beyond window], bubbles: [{speaker_id: '', text: 'Seychely, La Digue.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_kitchen, who: [freja], tags: [holding tablet, professional, cool expression], bubbles: [{speaker_id: freja, text: Vy jste šéfkuchař. Mám tu tři problémy s projektem vaší nové kuchyně., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kitchen, who: [elias], tags: [cooking at stove, not turning, smiling], bubbles: [{speaker_id: elias, text: 'A já tři s tím vaším. Všechno krásné, ale není tam místo pro lidi. Kuchyň má mít okno na moře.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_kitchen, who: [freja, elias], tags: [couple, hetero, man offering spoon with sauce, woman tasting, surprised], bubbles: [{speaker_id: elias, text: Ochutnejte. Tohle je chutná kritika., kind: speech}, {speaker_id: freja, text: 'To je nejlepší věc, co jsem tady měla.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_kitchen, who: [elias], tags: [grin], bubbles: [{speaker_id: elias, text: Pak máte o tři problémy méně., kind: speech}], gap: large}
+  - {shot: wide, loc: l_rocks, who: [{freja: evening}, {elias: evening}], tags: [couple, hetero, sitting on blanket among boulders, plates of fish and mango, sunset], bubbles: [{speaker_id: freja, text: 'Umím navrhnout dokonalý pokoj. Ale nedokázala bych říct, co dělá místo domovem.', kind: speech}, {speaker_id: elias, text: 'Chutě. Vůně. Lidi, co tam vaří. Bez nich je to jen krabice.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rocks, who: [{freja: evening}], tags: [warm eyes, soft smile, sunset light], bubbles: [{speaker_id: elias, text: 'Já lidi krmím, vy jim stavíte střechu. Stejná práce. Já chutí, vy betonem.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_terrace, who: [{freja: night}, {elias: evening}], tags: [couple, hetero, facing each other, foreheads touching, moonlight], bubbles: [{speaker_id: freja, text: 'Bojím se, že si to budu pamatovat jako návrh. Ne jako život.', kind: speech}, {speaker_id: elias, text: 'Tak nech navrhnout život. Já přidám chuť, ty linku.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{freja: night}, {elias: evening}], tags: [couple, hetero, kiss, kissing, moonlight, ocean], gap: small}
+  - {shot: wide, loc: l_terrace, tags: [lantern going out, house door closed, moon over ocean, waves on granite], bubbles: [{speaker_id: '', text: Oceán dýchá dál. Nic neprozradí., kind: narration}], gap: small}
+  - {shot: medium, loc: l_terrace, who: [freja, elias], tags: [couple, hetero, morning, two coffee cups, tablet with pencil line drawn across plan, smiling], bubbles: [{speaker_id: '', text: 'Ráno je v plánu nová čára tužkou: okno na moře.', kind: narration}], gap: large}

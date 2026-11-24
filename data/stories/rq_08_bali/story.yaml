@@ -1,0 +1,23 @@
+# Bali – Více než jen ring: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_08_bali
+kind: strip
+title: Bali – Více než jen ring
+world: w_rq_08_bali
+audience: adult
+language: cs
+style_id: anime_screencap
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_fields, tags: [rice terraces, palm trees, morning mist, greenery], bubbles: [{speaker_id: '', text: Bali. Rýžová pole v ranní mlze., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_fields, who: [diego, isabella], tags: [couple, hetero, standing, facing each other, tropical background, serious expression], bubbles: [{speaker_id: diego, text: Ring je všechno…, kind: speech}], gap: small}
+  - {shot: close-up, loc: l_fields, who: [isabella], tags: [looking at viewer, determined, slight smile], bubbles: [{speaker_id: isabella, text: Ne., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, sitting at table, candlelight, tropical plants, holding hands], bubbles: [{speaker_id: '', text: Večer na vile., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, kissing, standing, embracing, warm light], gap: large}
+  - {shot: medium, loc: l_bedroom, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, pulling clothes, standing, close contact, intense look], bubbles: [{speaker_id: diego, text: Pomalu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, embracing, eyes closed, warm light, touching], gap: small}
+  - {shot: medium, loc: l_bedroom, tags: [white curtains, blowing in wind, moonlight, empty room], bubbles: [{speaker_id: '', text: V pokojích zůstala jen tichá noc., kind: narration}], gap: large}
+  - {shot: medium, loc: l_bedroom, who: [diego, {isabella: morning}], tags: [couple, hetero, sitting, embracing, foreheads touching, soft morning light], bubbles: [{speaker_id: diego, text: Cítím se jako muž., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_bedroom, who: [{isabella: morning}], tags: [smiling, tender look, looking at viewer], bubbles: [{speaker_id: isabella, text: Protože jsi., kind: speech}], gap: large}

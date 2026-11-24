@@ -1,0 +1,22 @@
+# Dubaj – Jachta: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_08_dubaj
+kind: strip
+title: Dubaj – Jachta
+world: w_ri_08_dubaj
+audience: adult
+language: cs
+style_id: western_comic
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_marina, tags: [yachts, skyscrapers, sunny], bubbles: [{speaker_id: '', text: Dubaj. Marina., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_marina, who: [omar], tags: [looking around, holding paper, confused, sunglasses], gap: medium}
+  - {shot: medium, loc: l_marina, who: [lila, omar], tags: [couple, hetero, woman stepping out of luxury car, man turning to her], bubbles: [{speaker_id: omar, text: 'Nevíte, kde je jachta pana Hamada?', kind: speech}, {speaker_id: lila, text: 'Vím. Ale nejdřív mi řekněte, proč máte na veletrh tak dokonalou košili.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_marina, who: [omar], tags: [grin, confident], bubbles: [{speaker_id: omar, text: Protože mi sluší., kind: speech}], gap: large}
+  - {shot: medium, loc: l_yacht, who: [{lila: evening}, {omar: evening}], tags: [couple, hetero, champagne glasses, city lights, smiling], bubbles: [{speaker_id: lila, text: 'Omare, zůstaň na večeři.', kind: speech}, {speaker_id: omar, text: Zůstanu., kind: speech}], gap: large}
+  - {shot: wide, loc: l_deck, who: [{lila: evening}, {omar: evening}], tags: [couple, hetero, man giving rose, stars, skyline], bubbles: [{speaker_id: omar, text: 'Lilo, jsi nejkrásnější žena v Dubaji.', kind: speech}, {speaker_id: lila, text: A ty nejlepší mechanik., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{lila: evening}, {omar: evening}], tags: [couple, hetero, embrace, cabin door, warm light], bubbles: [{speaker_id: '', text: 'Brýle, lodičky a šperky na stolku.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{lila: evening}, {omar: evening}], tags: [couple, hetero, kiss, closed eyes], gap: small}
+  - {shot: establishing, loc: l_deck, tags: [dubai skyline at night, yacht lights, calm water], bubbles: [{speaker_id: '', text: Dubaj svítí až do rána., kind: narration}], gap: large}

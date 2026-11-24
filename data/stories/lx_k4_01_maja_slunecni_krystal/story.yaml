@@ -1,0 +1,20 @@
+# Maja Solaris a sluneční krystal: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_01_maja_slunecni_krystal
+kind: strip
+title: Maja Solaris a sluneční krystal
+world: w_lx_k4_01_maja_slunecni_krystal
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_asteroid, tags: [asteroid field, purple planet, stars, floating rocks, no humans], bubbles: [{speaker_id: '', text: Asteroidové pole na okraji sluneční soustavy., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: wide, loc: l_asteroid, who: [maja, mecha_tyrannus], tags: [standing, glowing hair, red eyes, menacing, large robot, small hero, contrast], bubbles: [{speaker_id: maja, text: 'Tento krystal udržuje život na naší akademii, Mecha-Tyrannusi! Nedovolím ti ho zničit!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_asteroid, who: [mecha_tyrannus], tags: [roaring, open mouth, glowing mouth, charging laser, red light, angry], bubbles: [{speaker_id: mecha_tyrannus, text: ROAAAAR! CÍL PODROBEN. ZASTAVIT HRDINKU!, kind: shout}], sfx: [{text: ROAAAAR!, style: bold}], gap: small}
+  - {shot: wide, loc: l_asteroid, who: [maja, mecha_tyrannus], tags: [energy blast, red laser beam, purple shield, crossed arms, blocking, explosion, impact], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_asteroid, who: [maja], tags: [jumping, flying, punching, glowing fist, dynamic pose, determined, hair floating], bubbles: [{speaker_id: maja, text: SOLÁRNÍ ÚDER!, kind: shout}], sfx: [{text: ZAP!, style: bold}], gap: small, animate: 'Maja''s hair floats in zero gravity, stars twinkling, static camera'}
+  - {shot: wide, loc: l_asteroid, who: [mecha_tyrannus], tags: [exploding, metal pieces flying, glowing core, defeated, falling apart, sparks], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_asteroid, who: [maja], tags: [kneeling, landing, smile, relieved, hands on knees, dust settling], gap: medium}
+  - {shot: wide, loc: l_asteroid, who: [maja, rox], tags: [flying module, blue vehicle, pointing, happy, thumbs up, space background], bubbles: [{speaker_id: rox, text: 'Krystal je v bezpečí, Majo!', kind: speech}], gap: large}

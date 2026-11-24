@@ -1,0 +1,26 @@
+# Zábavný zmatek v kuchyni: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: kuchyne
+kind: strip
+title: Zábavný zmatek v kuchyni
+world: w_kuchyne
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: wide, loc: l_kitchen, who: [lucka], tags: [baking, mixing, holding whisk, smile, happy, flour on table], gap: medium}
+  - {shot: close-up, loc: l_kitchen, who: [puntik], tags: [hamster in bowl, sitting, cute, mixing bowl, looking up], bubbles: [{speaker_id: lucka, text: 'Puntíku, ty budeš ochutnávač!', kind: speech}], gap: small}
+  - {shot: medium, loc: l_kitchen, who: [puntik], tags: ['(covered in flour:1.3)', '(cloud of flour:1.3)', white powder, flour explosion, hamster jumping into flour, mess, motion lines], sfx: [{text: PUF!, style: bold}], gap: small}
+  - {shot: medium, loc: l_kitchen, who: [lucka], tags: ['(flour on face:1.2)', flour on clothes, shocked, open mouth, hands up, mess], bubbles: [{speaker_id: lucka, text: Puntíku!!, kind: shout}], gap: small}
+  - {shot: medium, loc: l_kitchen, who: [honzik], tags: [laughing, pointing, closed eyes, open mouth, happy], bubbles: [{speaker_id: honzik, text: 'Haha, sněhulák!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kitchen, who: [mama, lucka], tags: [standing in doorway, surprised, hands on hips, embarrassed, sweatdrop], bubbles: [{speaker_id: mama, text: 'Co se tady stalo?!', kind: shout}, {speaker_id: lucka, text: Puntík chtěl pomoct…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kitchen, who: [lucka], tags: [wiping table, holding cloth, cleaning, careful, gentle smile, cookie dough], bubbles: [{speaker_id: lucka, text: Teď už jen opatrně., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kitchen, who: [puntik], tags: [hamster eating, holding cookie crumb, sitting on table, cute, happy, cheeks full], sfx: [{text: CHROUP, style: bold}], gap: large}
+  - {shot: medium, loc: l_kitchen, who: [mama, lucka], tags: [sitting at table, plate of cookies, laughing, happy, hug], bubbles: [{speaker_id: mama, text: Nejlepší pečení je to společné., kind: speech}, {speaker_id: lucka, text: A nejlepší pomocník je Puntík!, kind: speech}], gap: large}
+choices:
+  - {kind: closed, text: Upéct s mámou a Honzíkem dort pro Puntíka.}
+  - {kind: closed, text: Postavit Puntíkovi bludiště z krabiček.}
+  - {kind: closed, text: Pozvat kamarády na ochutnávku sušenek.}
+  - {kind: free, text: 'Nebo napiš, co uděláš…'}

@@ -1,0 +1,21 @@
+# Graviton a sluneční bouře: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_09_graviton_slunecni_boure
+kind: strip
+title: Graviton a sluneční bouře
+world: w_lx_k6_09_graviton_slunecni_boure
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_space, tags: [earth, moon, stars, solar flare, vast space, no humans], bubbles: [{speaker_id: '', text: Mezi Zemí a Měsícem., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: wide, loc: l_space, who: [adam], tags: [surfing, standing on board, solar board, glowing board, pointing, determined, wind in hair], bubbles: [{speaker_id: adam, text: 'Slunce hlásí krádež! Kdo kradl, ať se přihlásí! …Nikdo? Dobře, tak přijdu já.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_asteroid, who: [captain, pirate], tags: [spaceship, floating, alien pirate, green skin, three eyes, laughing, open mouth, gesturing], bubbles: [{speaker_id: captain, text: 'SOUTĚŽ, GRAVITONE! KLOPNI MOU LOĎ JEDNOU RUKOU – A SVĚTLO JE TVOJE!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_asteroid, who: [adam], tags: [one hand up, floating rocks, gravity pull, motion lines, focused, glowing hands], bubbles: [{speaker_id: adam, text: Jednou rukou. Druhou mám na srdci., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_asteroid, who: [captain, pirate], tags: [spaceship tangled, rocks surrounding, confused, surprised, open mouth, shock, energy swirl], bubbles: [{speaker_id: pirate, text: To nedává fyzikální smysl!, kind: shout}], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_asteroid, who: [adam], tags: [smiling, confident, hands on chest, heart symbol, glowing eyes], bubbles: [{speaker_id: adam, text: Já jsem fyzikální smysl., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_neptune, who: [captain, pirate], tags: [blue planet background, lighthouse beams, standing, sighing, tired, light beams], bubbles: [{speaker_id: captain, text: 'Prohráli jsme. Ale řekni – proč ses nesmál, když jsi vyhrával?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_neptune, who: [adam], tags: [floating, calm, looking away, thoughtful, soft light, peaceful], bubbles: [{speaker_id: adam, text: Protože jsem ještě nevrátil světlo. Vítězství je jen průběh. Důvod se slaví na konci., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_space, who: [adam], tags: [earth sunset, orange sky, beautiful clouds, surfing away, comet, distance, heroic pose], bubbles: [{speaker_id: '', text: Země má nejdelší a nejkrásnější soumrak století., kind: narration}], gap: large, animate: 'earth sunset colors shifting, stars twinkling, clouds drifting slowly, static camera'}

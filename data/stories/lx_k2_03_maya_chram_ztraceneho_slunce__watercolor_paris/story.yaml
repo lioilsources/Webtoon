@@ -1,0 +1,24 @@
+# Maya a chrám ztraceného slunce: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_03_maya_chram_ztraceneho_slunce__watercolor_paris
+kind: strip
+title: Maya a chrám ztraceného slunce
+world: w_lx_k2_03_maya_chram_ztraceneho_slunce__watercolor_paris
+audience: kids
+language: cs
+style_id: watercolor_paris
+music: pool
+panels:
+  - {shot: establishing, loc: l_jungle, tags: [dense jungle, sunlight beams, vines, no humans], bubbles: [{speaker_id: '', text: Hustá džungle., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, light rays shimmering, static camera'}
+  - {shot: wide, loc: l_jungle, who: [maya, tiko], tags: [walking, looking around, jaguar running, motion lines, forest path], bubbles: [{speaker_id: maya, text: Pomalu!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_jungle, who: [maya], tags: [looking confused, calling out, hands near mouth, surprised], bubbles: [{speaker_id: maya, text: 'Tiko?', kind: speech}], gap: small}
+  - {shot: wide, loc: l_jungle, who: [maya], tags: [falling, dust cloud, cracked ground, surprised, open mouth, motion lines], sfx: [{text: FŮŮŮM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [maya, tiko], tags: [standing before pyramid, looking up, stone walls, sun relief, awe], bubbles: [{speaker_id: maya, text: Tady něco hledali., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [maya, guardian, guardian], tags: [stone golems rising, glowing cracks, menacing pose, maya drawing bow, tense], bubbles: [{speaker_id: maya, text: Tak dobře., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [maya], tags: [holding bow, glowing arrow, aiming, determined, light effect], sfx: [{text: FŠŠŠT!, style: bold}], gap: small, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: medium, loc: l_pyramid, who: [amun, maya], tags: [ghost pharaoh floating, maya lowering bow, confused, talking], bubbles: [{speaker_id: amun, text: 'Proč bojuješ?', kind: speech}, {speaker_id: maya, text: Protože jste mě napadli!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [amun], tags: [ghost pharaoh floating, calm expression, pointing, transparent], bubbles: [{speaker_id: amun, text: A přesto můžeš odejít., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_altar, who: [amun, maya], tags: [holding golden sun, altar, glowing artifact, receiving, wonder], bubbles: [{speaker_id: amun, text: Tohle není poklad., kind: speech}, {speaker_id: maya, text: 'Co tedy?', kind: speech}], gap: small}
+  - {shot: wide, loc: l_altar, who: [amun, maya, tiko], tags: [placing artifact, altar, pyramid glowing, bright light, jaguar wagging tail], bubbles: [{speaker_id: amun, text: Je to srdce džungle., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [maya, amun], tags: [looking back, new passage opening, stone doors, mystery, adventure], bubbles: [{speaker_id: amun, text: Tvá cesta teprve začíná., kind: speech}], gap: large}

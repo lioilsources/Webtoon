@@ -1,0 +1,30 @@
+# Jakarta – Mechanik a dívka v červených šatech: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_jakarta
+kind: strip
+title: Jakarta – Mechanik a dívka v červených šatech
+world: w_r_jakarta
+audience: adult
+language: cs
+style_id: retro_citypop
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_shop, who: [maya], tags: [standing by car, confident], gap: medium}
+  - {shot: medium, loc: l_shop, who: [maya], tags: [hand on hip, smile], bubbles: [{speaker_id: maya, text: Prý jste nejlepší mechanik v Jakartě., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_shop, who: [rafi], tags: [wiping hands, rag, shy], bubbles: [{speaker_id: rafi, text: To říká Budi., kind: speech}], gap: small}
+  - {shot: medium, loc: l_shop, who: [budi], tags: [grin, thumbs up], bubbles: [{speaker_id: budi, text: A taky to říká tvoje máma., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_shop, who: [rafi], tags: [rolling eyes, annoyed], gap: large}
+  - {shot: wide, loc: l_shop, who: [rafi], tags: [repairing engine, leaning over car, focused], gap: medium}
+  - {shot: medium, loc: l_shop, who: [maya], tags: [sitting on chair, watching, curious], bubbles: [{speaker_id: maya, text: 'Vždycky jste tak soustředěný?', kind: speech}, {speaker_id: rafi, text: 'Když něco opravuju, ano.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_shop, who: [maya], tags: [smile], bubbles: [{speaker_id: maya, text: 'A lidi?', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_shop, who: [rafi], tags: [surprised, pause], bubbles: [{speaker_id: rafi, text: Lidi jsou složitější., kind: speech}], gap: large}
+  - {shot: wide, loc: l_party, who: [{maya: red_dress}], tags: [standing, elegant], bubbles: [{speaker_id: '', text: Maya pozve Rafiho na večírek., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_party, who: [{rafi: suit}], tags: [nervous, adjusting collar], bubbles: [{speaker_id: rafi, text: Tohle je chyba., kind: speech}, {speaker_id: maya, text: 'Co?', kind: speech}, {speaker_id: rafi, text: Že jsem sem přišel., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_party, who: [{maya: red_dress}], tags: [puzzled, head tilt], bubbles: [{speaker_id: maya, text: 'Proč?', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_party, who: [{rafi: suit}], tags: [looking at viewer, blush], bubbles: [{speaker_id: rafi, text: Protože teď už nedokážu myslet na nic jiného., kind: speech}], gap: large}
+  - {shot: wide, loc: l_roof, who: [{maya: red_dress}, {rafi: suit}], tags: [couple, hetero, sitting on rooftop, night skyline], bubbles: [{speaker_id: maya, text: 'Víš, co jsem si o tobě myslela?', kind: speech}, {speaker_id: rafi, text: 'Co?', kind: speech}, {speaker_id: maya, text: Že jsi jen mechanik., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_roof, who: [{maya: red_dress}], tags: [soft smile, blush], bubbles: [{speaker_id: rafi, text: 'A teď?', kind: speech}, {speaker_id: maya, text: 'Teď vím, že jsi muž, do kterého se můžu zamilovat.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [{maya: red_dress}, {rafi: suit}], tags: [couple, hetero, holding hands], bubbles: [{speaker_id: rafi, text: Já už se zamiloval., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_roof, who: [{maya: red_dress}, {rafi: suit}], tags: [couple, hetero, kiss, closed eyes, city lights], gap: large}

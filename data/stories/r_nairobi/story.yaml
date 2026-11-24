@@ -1,0 +1,30 @@
+# Nairobi – Muž v obleku a žena z parku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_nairobi
+kind: strip
+title: Nairobi – Muž v obleku a žena z parku
+world: w_r_nairobi
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_office, who: [david], tags: [sitting at desk, alone, looking out window], gap: medium}
+  - {shot: medium, loc: l_office, who: [jonas], tags: [placing two tickets on desk, grin], bubbles: [{speaker_id: jonas, text: V sobotu jdeš ven., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_office, who: [david], tags: [sitting at desk, tired], bubbles: [{speaker_id: david, text: Nemůžu., kind: speech}, {speaker_id: jonas, text: Můžeš., kind: speech}, {speaker_id: david, text: Mám práci., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_office, who: [jonas], tags: [smirk, pointing], bubbles: [{speaker_id: jonas, text: 'Práce ti nikdy neřekne, že tě miluje.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_office, who: [david], tags: [laughing], gap: large}
+  - {shot: wide, loc: l_park, who: [amara], tags: [kneeling, injured dog, small dog, bandage], gap: medium}
+  - {shot: medium, loc: l_park, who: [{david: coat}], tags: [standing, looking down, concerned], bubbles: [{speaker_id: david, text: 'Potřebujete pomoc?', kind: speech}, {speaker_id: amara, text: Pokud umíte držet psa., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_park, who: [{david: coat}], tags: [taking off coat, kneeling], bubbles: [{speaker_id: amara, text: 'Vy jste přišel z kanceláře?', kind: speech}, {speaker_id: david, text: 'Je to tak vidět?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_park, who: [amara, david], tags: [couple, hetero, kneeling together, holding dog, dog licking hand, smile], bubbles: [{speaker_id: amara, text: Trochu., kind: speech}], gap: large}
+  - {shot: medium, loc: l_restaurant, who: [{amara: blue_dress}], tags: [walking, smile], bubbles: [{speaker_id: '', text: O několik dní později., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_restaurant, who: [david], tags: [surprised, speechless, open mouth], bubbles: [{speaker_id: amara, text: 'Je něco špatně?', kind: speech}, {speaker_id: david, text: Ne., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{amara: blue_dress}], tags: [sitting, head tilt, smile], bubbles: [{speaker_id: amara, text: 'Tak proč se tak díváte?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [david], tags: [gentle smile, sitting], bubbles: [{speaker_id: david, text: 'Protože jsem právě zjistil, že můj oblíbený pohled není výhled z kanceláře.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_city, who: [{amara: blue_dress}, david], tags: [couple, hetero, walking, night], bubbles: [{speaker_id: amara, text: Ty pořád přemýšlíš., kind: speech}, {speaker_id: david, text: Je to moje práce., kind: speech}, {speaker_id: amara, text: 'A kdy přestaneš?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_city, who: [david], tags: [stopping, soft determined look], bubbles: [{speaker_id: david, text: Teď., kind: speech}], gap: small}
+  - {shot: medium, loc: l_city, who: [{amara: blue_dress}, david], tags: [couple, hetero, kiss, holding hands, closed eyes, night], gap: small}
+  - {shot: close-up, loc: l_city, who: [{amara: blue_dress}], tags: [smile, laughing], bubbles: [{speaker_id: amara, text: Tohle už vypadá jako dobrá změna kariéry., kind: speech}], gap: large}

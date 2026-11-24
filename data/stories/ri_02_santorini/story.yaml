@@ -1,0 +1,24 @@
+# Santorini – Resort: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_02_santorini
+kind: strip
+title: Santorini – Resort
+world: w_ri_02_santorini
+audience: adult
+language: cs
+style_id: photo_juggernaut
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_beach, who: [nora], tags: [sitting under beach umbrella, reading book, straw hat], gap: medium}
+  - {shot: medium, loc: l_beach, who: [nikos], tags: [running, reaching out, apologetic smile], bubbles: [{speaker_id: nikos, text: 'Promiň! Můžeš hodit?', kind: speech}], sfx: [{text: BUM, style: bold}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [nora, nikos], tags: [couple, hetero, woman holding ball, playful smile, man standing], bubbles: [{speaker_id: nora, text: 'Jen když mi řekneš, kde je nejlepší gyros.', kind: speech}, {speaker_id: nikos, text: To ti ukážu sám., kind: speech}], gap: large}
+  - {shot: wide, loc: l_terrace, who: [{nora: sunset}, {nikos: evening}], tags: [couple, hetero, sitting at table, wine glasses, sunset, caldera], bubbles: [{speaker_id: nora, text: Za týden odjíždím., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_terrace, who: [{nikos: evening}], tags: [honest, soft smile, sunset light], bubbles: [{speaker_id: nikos, text: 'Já vím. Nechci to pokazit tím, že si budu hrát na něco trvalého.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_terrace, who: [{nora: sunset}], tags: [smile, gold earrings, sunset], bubbles: [{speaker_id: nora, text: Tak to nehrajme., kind: speech}], gap: large}
+  - {shot: wide, loc: l_nightbeach, who: [{nora: night}, {nikos: evening}], tags: [couple, hetero, walking, holding hands, barefoot, stars], bubbles: [{speaker_id: nikos, text: 'Noro, jsi nejkrásnější člověk, kterého jsem tu potkal.', kind: speech}, {speaker_id: nora, text: A ty nejlepší plavčík., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [{nora: night}, {nikos: evening}], tags: [couple, hetero, kiss, embrace, lantern light, night], gap: small}
+  - {shot: establishing, loc: l_bungalow, tags: [closed door, lantern, night, bougainvillea], bubbles: [{speaker_id: '', text: Dveře bungalovu se zavřou., kind: narration}], gap: large}
+  - {shot: medium, loc: l_morning, who: [{nora: night}], tags: [sitting, holding seashell, reading note, morning light, bittersweet smile], bubbles: [{speaker_id: '', text: Ráno je jeho strana prázdná. Na polštáři lastura a vzkaz., kind: narration}, {speaker_id: '', text: „Bylo to krásné. Nikos.“, kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_morning, who: [{nora: night}], tags: [smile, tear, holding seashell, sea view], gap: large}

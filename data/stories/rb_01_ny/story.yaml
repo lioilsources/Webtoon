@@ -1,0 +1,23 @@
+# New York – Malá brunetka a boxer: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_01_ny
+kind: strip
+title: New York – Malá brunetka a boxer
+world: w_rb_01_ny
+audience: adult
+language: cs
+style_id: webtoon_romance
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_park, who: [sofia], tags: [sitting on bench, holding compact mirror, looking at mirror, sad], bubbles: [{speaker_id: '', text: Central Park. Podzimní odpoledne., kind: narration}, {speaker_id: sofia, text: Proč bych někoho zajímala… jsem moc malá a…, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_park, who: [james], tags: [running, jogging, tripping over backpack, falling, surprised], sfx: [{text: BUCH!, style: bold}], gap: small}
+  - {shot: medium, loc: l_park, who: [sofia, james], tags: [couple, hetero, man sitting on ground next to bench, embarrassed, laughing], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [james], tags: [sitting, apologetic smile, holding two coffee cups], bubbles: [{speaker_id: james, text: Omlouvám se. Jsem James. Trénuju na zápas., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [sofia], tags: [shy, looking down, holding coffee cup], bubbles: [{speaker_id: sofia, text: 'Sofia. Právě jsem přijela z Miami… a pořád si myslím, že sem nepatřím.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [james], tags: [smile, warm eyes], bubbles: [{speaker_id: james, text: Patříš. A ta tvoje energie je silnější než jakýkoliv úder., kind: speech}], gap: large}
+  - {shot: wide, loc: l_lake, who: [sofia, james], tags: [couple, hetero, walking, holding hands, evening], bubbles: [{speaker_id: james, text: 'Smím tě políbit?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_lake, who: [sofia, james], tags: [couple, hetero, kiss, closed eyes, slow, tender], gap: small}
+  - {shot: medium, loc: l_lake, who: [sofia, james], tags: [couple, hetero, hug, head on chest, closed eyes, smile], gap: large}
+  - {shot: medium, loc: l_rest, who: [{sofia: dinner}, {james: dinner}], tags: [couple, hetero, sitting at table, city view, smiling at each other], bubbles: [{speaker_id: sofia, text: Poprvé se cítím… hezká., kind: speech}, {speaker_id: james, text: 'Jsi. A já chci být ten, kdo ti to bude říkat každý den.', kind: speech}], gap: large}

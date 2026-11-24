@@ -1,0 +1,25 @@
+# Banff – Ledová řeka, horké koleno: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_05_banff
+kind: strip
+title: Banff – Ledová řeka, horké koleno
+world: w_rk_05_banff
+audience: adult
+language: cs
+style_id: clean_webtoon_noartist
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_trail, tags: [forest trail, mountains, stream], bubbles: [{speaker_id: '', text: Banff. Lesní stezka., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_trail, who: [freya], tags: [falling off bicycle into stream, splash, surprised], sfx: [{text: ŠPLOUCH!, style: bold}], gap: small}
+  - {shot: medium, loc: l_trail, who: [{freya: wet}, callum], tags: [couple, hetero, man pulling woman out of water by hand, rocks, wet], bubbles: [{speaker_id: callum, text: 'V Norsku vás učí plavat v ledovci?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_trail, who: [{freya: wet}], tags: [teeth chattering, wearing his leather jacket, defiant smile], bubbles: [{speaker_id: freya, text: Ne. Učí nás vypadat dobře při umírání., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cabin, tags: [socks thrown across room, wet sweater drying by fire, door ajar, no humans], bubbles: [{speaker_id: '', text: Mokré vrstvy za dveřmi. Smích. Létající ponožky., kind: narration}], sfx: [{text: HA HA!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{freya: cabin}, {callum: cabin}], tags: [couple, hetero, sitting by fireplace, holding tea mugs, wrapped in blanket, comfortable silence], bubbles: [{speaker_id: '', text: 'Dlouhé ticho, které není trapné.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{freya: cabin}, {callum: cabin}], tags: [couple, hetero, forehead touch, firelight, eyes closed], gap: small}
+  - {shot: wide, loc: l_cabin, tags: [fire glowing embers, dark cabin, night, no humans], gap: large}
+  - {shot: medium, loc: l_terrace, who: [{callum: cabin}], tags: [holding two coffee mugs, pink mountains behind], bubbles: [{speaker_id: callum, text: Zůstaň ještě den., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{freya: cabin}], tags: [wrapped in blanket, teasing look], bubbles: [{speaker_id: freya, text: 'A pak?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{callum: cabin}], tags: [grin, eagle in sky], bubbles: [{speaker_id: callum, text: 'Pak tě naučím, že Skotsko je hezčí než Norsko. Bude to trvat. Roky.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_terrace, who: [{freya: cabin}, {callum: cabin}], tags: [couple, hetero, hug at sunrise, hair blowing loose, mountains], bubbles: [{speaker_id: freya, text: Dobře. Začni dnes., kind: speech}], gap: large}

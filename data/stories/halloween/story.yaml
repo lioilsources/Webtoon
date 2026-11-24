@@ -1,0 +1,26 @@
+# Halloweenská noc: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: halloween
+kind: strip
+title: Halloweenská noc
+world: w_halloween
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: wide, loc: l_street, who: [natalka, sofie], tags: [walking, holding lantern, smile, confident, night], bubbles: [{speaker_id: natalka, text: 'Stínku, dnes budeme stateční!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_street, who: [stinek], tags: ['(front view:1.2)', full body, dog standing, growling, alert, ears up, '(white stripe on chest:1.2)', night, pumpkin], sfx: [{text: VRRR, style: bold}], gap: small}
+  - {shot: establishing, loc: l_door, tags: [door opening, creaking, spooky], bubbles: [{speaker_id: duch, text: búú…, kind: thought}], sfx: [{text: VRZZ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_door, who: [sofie], tags: [scared, trembling, hands on own cheeks, wide eyes], bubbles: [{speaker_id: sofie, text: Jééé… to je strašidelné!, kind: speech}], gap: small}
+  - {shot: medium, loc: l_door, who: [natalka], tags: [brave, smile, pointing at door, confident], bubbles: [{speaker_id: natalka, text: Pojďme se podívat. Stínek nás ochrání., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_hall, who: [duch], tags: ['(cute ghost:1.3)', '(close to viewer:1.2)', floating, sad, teary eyes, candlelight], bubbles: [{speaker_id: duch, text: Nebojte se… jen jsem ztratil svou dýni., kind: speech}], gap: small}
+  - {shot: medium, loc: l_hall, who: [natalka], tags: [smile, determined, raising fist, brave], bubbles: [{speaker_id: natalka, text: My ti pomůžeme ji najít!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_hall, who: [stinek], tags: ['(front view:1.2)', full body, dog barking, open mouth, '(white stripe on chest:1.2)', sitting next to pumpkin, jack-o'-lantern, under table, found], sfx: [{text: HAF!, style: bold}], gap: large}
+  - {shot: wide, loc: l_street, who: [natalka, sofie], tags: [holding lantern, candy, holding candy, laughing, happy, pumpkin, night], bubbles: [{speaker_id: duch, text: 'Děkuji, statečné holky a pejsku. Šťastný Halloween!', kind: speech}, {speaker_id: natalka, text: 'Vidíš, Stínku? I duchové můžou být kamarádi.', kind: speech}], gap: large}
+choices:
+  - {kind: closed, text: Jít s duchem na jeho halloweenský večírek.}
+  - {kind: closed, text: Vyřezat s Sofií novou dýni pro celou ulici.}
+  - {kind: closed, text: 'Sledovat Stínka, který něco větří u starého plotu.'}
+  - {kind: free, text: 'Nebo napiš, co uděláš…'}

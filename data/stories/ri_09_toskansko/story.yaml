@@ -1,0 +1,22 @@
+# Toskánsko – Cyklistická trasa: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_09_toskansko
+kind: strip
+title: Toskánsko – Cyklistická trasa
+world: w_ri_09_toskansko
+audience: adult
+language: cs
+style_id: semireal_25d
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_path, who: [jakub], tags: [kneeling by bicycle, flat tire, frustrated], gap: medium}
+  - {shot: medium, loc: l_path, who: [giulia, jakub], tags: [couple, hetero, woman on bicycle stopping, man looking up], bubbles: [{speaker_id: giulia, text: 'Potřebuješ pumpu?', kind: speech}, {speaker_id: jakub, text: Potřebuju hlavně vodu., kind: speech}, {speaker_id: giulia, text: Tak pojď., kind: speech}], gap: large}
+  - {shot: medium, loc: l_inn, who: [{giulia: evening}, {jakub: evening}], tags: [couple, hetero, sitting at table, pasta, wine, warm light], bubbles: [{speaker_id: jakub, text: Zítra jedu dál., kind: speech}, {speaker_id: giulia, text: Já vím. Ale dnes zůstaň., kind: speech}], gap: large}
+  - {shot: wide, loc: l_vineyard, who: [{giulia: evening}, {jakub: evening}], tags: [couple, hetero, walking, holding hands, moonlight], gap: medium}
+  - {shot: medium, loc: l_vineyard, who: [{giulia: evening}, {jakub: evening}], tags: [couple, hetero, kiss, moonlight], gap: small}
+  - {shot: medium, loc: l_vineyard, who: [{giulia: evening}, {jakub: evening}], tags: [couple, hetero, looking at each other, sad], bubbles: [{speaker_id: giulia, text: 'Jakube, nechceš zůstat?', kind: speech}, {speaker_id: jakub, text: Musím jet., kind: speech}], gap: large}
+  - {shot: establishing, loc: l_door, tags: [wooden door closed, lamp, stone corridor, night], bubbles: [{speaker_id: '', text: Ještě jedna noc., kind: narration}], gap: large}
+  - {shot: wide, loc: l_morning, who: [jakub, giulia], tags: [couple, hetero, man riding bicycle away, woman waving, morning mist], bubbles: [{speaker_id: '', text: Ráno Jakub odjíždí. Giulia mává., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_morning, who: [giulia], tags: [sad smile, tear, morning light], gap: large}

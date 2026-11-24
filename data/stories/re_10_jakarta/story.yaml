@@ -1,0 +1,23 @@
+# Boxerův deník: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_10_jakarta
+kind: strip
+title: Boxerův deník
+world: w_re_10_jakarta
+audience: adult
+language: cs
+style_id: clean_webtoon
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_gym, who: [arjun], tags: [punching bag, boxing, sweat], sfx: [{text: BUM! BUM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_gym, who: [sari], tags: [standing in doorway, holding notebook, calm], bubbles: [{speaker_id: sari, text: 'Arjun Mehta? Vím, že jste se rozhodl nemluvit. Proto jsem přišla mluvit první.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gym, who: [arjun], tags: [stops punching, turning around, wary], bubbles: [{speaker_id: arjun, text: Novinářky mluví. Boxeři drží stráž., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gym, who: [sari], tags: [slight smile, holding diary], bubbles: [{speaker_id: sari, text: 'Vstával jste sedmkrát. Váš deník jste nechal v knihovně v Bombaji. Špatně skrývaný, výborně psaný.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_canal, who: [{arjun: evening}], tags: [embarrassed, blush, hand on neck], bubbles: [{speaker_id: arjun, text: To bylo soukromé. I to o ‚ní‘., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_canal, who: [sari], tags: [soft smile, string lights], bubbles: [{speaker_id: sari, text: O ní jste psal osmnáct stran. Nejstatečnější a nejsmutnější čtení mého roku., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_canal, who: [{arjun: evening}], tags: [looking at viewer, earnest], bubbles: [{speaker_id: arjun, text: 'Psal jsem o ženě, která existuje jen v hlavě. A pak jste vešla s mým deníkem.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_roof, who: [{arjun: evening}], tags: [holding new diary, writing, dusk], bubbles: [{speaker_id: arjun, text: 'Deník jedna: ‚Záznamy o ní.‘ Deník dva: ‚Záznamy s ní.‘ Rozdíl je celý život.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [sari, {arjun: evening}], tags: [couple, hetero, looking at diary together, skyline], bubbles: [{speaker_id: sari, text: 'První záznam?', kind: speech}, {speaker_id: arjun, text: 'Dnes jsem prohrál rány, ale vyhrál večer. Vstal jsem poosmé.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_roof, who: [sari, {arjun: evening}], tags: [couple, hetero, kiss, closed eyes, dusk, skyline], bubbles: [{speaker_id: sari, text: To bude titul., kind: thought}], gap: large}

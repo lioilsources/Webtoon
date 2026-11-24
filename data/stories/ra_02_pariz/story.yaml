@@ -1,0 +1,23 @@
+# Pod pařížskými lucernami: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_02_pariz
+kind: strip
+title: Pod pařížskými lucernami
+world: w_ra_02_pariz
+audience: adult
+language: cs
+style_id: art_nouveau_mucha
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_seine, tags: [street lamps, eiffel tower, evening, couples in distance], bubbles: [{speaker_id: '', text: Večerní nábřeží Seiny., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_seine, who: [klara], tags: [walking, hugging own arms, looking at couples, painting stall], gap: medium}
+  - {shot: close-up, loc: l_seine, who: [klara], tags: [sigh, sad, looking away], bubbles: [{speaker_id: klara, text: Všichni tu vypadají jako z romantického filmu. A já si připadám jako přerostlý věšák na kabáty..., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_seine, who: [klara], tags: [looking up at sky, wistful], bubbles: [{speaker_id: klara, text: 'Kde je moje múza?', kind: thought}], gap: large}
+  - {shot: wide, loc: l_square, who: [jeanluc], tags: [emerging from under car hood, vintage car, wiping hand, oil stains], bubbles: [{speaker_id: '', text: Montmartre., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_square, who: [{klara: nobaret}], tags: [wind, hair blowing, reaching out, surprised, beret flying away], gap: small}
+  - {shot: medium, loc: l_square, who: [jeanluc], tags: [holding beret, smile, charmed], bubbles: [{speaker_id: jeanluc, text: 'Pardon, mademoiselle... Myslím, že vám vítr seslal z nebe něco, co patří nejvznešenější dámě v Paříži.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_square, who: [{klara: nobaret}, jeanluc], tags: [couple, hetero, man handing beret, woman looking down, blush], bubbles: [{speaker_id: klara, text: Děkuji... Ale nemusíte přehánět. Jsem jen obyčejná vysoká holka., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_square, who: [{klara: nobaret}, jeanluc], tags: [couple, hetero, holding hands, man gently holding her hand, looking at each other], bubbles: [{speaker_id: jeanluc, text: 'Obyčejná? Vaše elegance bere dech.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_square, who: [klara, jeanluc], tags: [couple, hetero, walking together, smile, bistro sign, warm light], bubbles: [{speaker_id: jeanluc, text: 'Pojďte, nedaleko je malé bistro. Dlužíte mi rozečtený rozhovor za záchranu vašeho klobouku.', kind: speech}], gap: large}

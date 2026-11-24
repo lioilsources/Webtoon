@@ -1,0 +1,20 @@
+# Max a město bez smíchu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_06_zelezna_pest_mesto_bez_smichu
+kind: strip
+title: Max a město bez smíchu
+world: w_lx_k6_06_zelezna_pest_mesto_bez_smichu
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_mekanopolis, tags: [futuristic city, metal buildings, robots walking, gray sky, no humans], bubbles: [{speaker_id: '', text: 'Mekanopolis, město, které zapomnělo smát se.', kind: narration}], gap: medium, animate: 'ambient only, characters still, city lights blinking, static camera'}
+  - {shot: wide, loc: l_mekanopolis, who: [max, mecha], tags: [mecha standing, pilot inside, pointing, determined, looking at screen], bubbles: [{speaker_id: max, text: 'Test smíchu: ťuk, ťuk! Kdo tam? …Nikdo, protože je vše efektivní!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_mekanopolis, who: [max, mecha], tags: [mecha tripping, falling, sparks, surprised, motion lines], bubbles: [{speaker_id: max, text: Zapomenuté publikum. Beru město., kind: speech}], sfx: [{text: BUM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_mekanopolis, who: [max, mecha], tags: [mecha doing wheel, spinning, holding ice cream, ice cream upside down, robots looking, angry robots], bubbles: [{speaker_id: max, text: Fér. Ale varuju tě – mám pěsti a tátovy vtipy z roku 2009., kind: speech}], sfx: [{text: VRRR!, style: bold}], gap: medium, animate: 'ambient only, characters still, city lights blinking, static camera'}
+  - {shot: medium, loc: l_mekanopolis, who: [mecha], tags: [robot coughing, sparks, glitching, surprised, open mouth], bubbles: [{speaker_id: mecha, text: KHK-KHK!, kind: shout}], sfx: [{text: KHK-KHK!, style: bold}], gap: small}
+  - {shot: wide, loc: l_mekanopolis, who: [mecha], tags: [robots laughing, falling over, sparks, joy, motion lines, chaos], bubbles: [{speaker_id: mecha, text: HA HA HA!, kind: shout}], sfx: [{text: HA HA HA!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_centrala, who: [logikon], tags: [screen shaking, sparks, red lights, glitching, surprised], bubbles: [{speaker_id: logikon, text: 'CO… CO SE DĚJE S MÝMI OBVODY?', kind: speech}], sfx: [{text: ZZZT!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_centrala, who: [logikon], tags: [screen smiling, glowing blue, happy, soft light], bubbles: [{speaker_id: logikon, text: Dohoda splněna. Ale zůstaň… jako poradce pro neefektivní programy., kind: speech}], gap: large}

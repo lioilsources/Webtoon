@@ -1,0 +1,22 @@
+# Ben a džungle, která běží pozpátku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_07_supervelocita_dzungle_pozpatku
+kind: strip
+title: Ben a džungle, která běží pozpátku
+world: w_lx_k6_07_supervelocita_dzungle_pozpatku
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_jungle, tags: [jungle, river, sunlight, vines, no humans], bubbles: [{speaker_id: '', text: 'Džungle Selva Rychlá, kde čas spí.', kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, leaves swaying gently, light rays shimmering, static camera'}
+  - {shot: wide, loc: l_jungle, who: [ben, opice], tags: [running, motion lines, pointing, laughing, monkey hanging, slow motion], bubbles: [{speaker_id: ben, text: 'Promiň, opice, jak dlouho už visíš? Od úterý?! Já to stihl třikrát!', kind: speech}], sfx: [{text: SWISH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_jungle, who: [opice], tags: [hanging from vine, confused, slow blink, mouth opening slowly], bubbles: [{speaker_id: opice, text: 'Říkal něco? …To trvá.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [casoplot, ben], tags: [floating, pointing, pyramid of clocks, glowing, challenging pose], bubbles: [{speaker_id: casoplot, text: 'SOUTĚŽ, RYCHLÍKU! DOBĚHNI NA VRCHOL PŘED HODINOU, KTERÁ BĚŽÍ POZPÁTKU!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [ben], tags: [running in place, confused, clock hands spinning, motion blur, surprised], bubbles: [{speaker_id: ben, text: 'Hej, hodino! Víš, co je horší než být pomalý? Být nudný!', kind: speech}], sfx: [{text: TIK TAK, style: bold}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [casoplot, ben], tags: [clock breaking, shards, sparks, angry ghost, running away, fast], bubbles: [{speaker_id: ben, text: A ty tikáš jak pěkná nuda!, kind: speech}], sfx: [{text: CRASH!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_jungle, who: [opice, ben], tags: [monkey running fast, motion lines, blur, ben looking back, surprised], bubbles: [{speaker_id: opice, text: 'ŘÍKAL JSI NĚCO?!', kind: shout}], sfx: [{text: WHOOSH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_jungle, who: [ben], tags: [winking, smirk, thumbs up, confident], bubbles: [{speaker_id: ben, text: Jen to nejlepší o tobě!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [casoplot], tags: [tied up, clock hands wrapping, frustrated, glowing red eyes], bubbles: [{speaker_id: casoplot, text: Podváděl jsi!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [ben, casoplot], tags: [laughing, ghost tied up, jungle background, happy, thumbs up], bubbles: [{speaker_id: ben, text: 'Ne. Já jen mluvím rychleji, než ty myslíš.', kind: speech}], gap: large}

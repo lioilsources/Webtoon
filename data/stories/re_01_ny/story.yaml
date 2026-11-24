@@ -1,0 +1,24 @@
+# Šátek nad Brooklynem: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_01_ny
+kind: strip
+title: Šátek nad Brooklynem
+world: w_re_01_ny
+audience: adult
+language: cs
+style_id: photo_juggernaut
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_street, tags: [autumn, bridge, cloudy sky], bubbles: [{speaker_id: '', text: 'Brooklyn, podzim. Kafe stojí sedm dolarů.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_street, who: [nikol], tags: [holding map upside down, wind, red scarf flying away, surprised], sfx: [{text: FŮŮ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_street, who: [gabriel], tags: [picking up red scarf, clay on face, smile], gap: medium}
+  - {shot: medium, loc: l_street, who: [nikol, gabriel], tags: [couple, hetero, blush, embarrassed, man holding red scarf], bubbles: [{speaker_id: nikol, text: 'To je můj šátek. Teda byl. Teda je. Promiň, mluvím česky, když se stydím.', kind: speech}, {speaker_id: gabriel, text: 'Pak se styďte dál. Česky je to nejhezčí, co jsem dnes slyšel.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_street, who: [nikol, gabriel], tags: [couple, hetero, man tying scarf around her neck, gentle, looking at each other], bubbles: [{speaker_id: gabriel, text: Teď patříte k Brooklynu. Odhlasováno., kind: speech}], gap: large}
+  - {shot: medium, loc: l_studio, who: [nikol], tags: [touching unfinished sculpture, surprised, sculpture of woman's head], bubbles: [{speaker_id: nikol, text: 'Proč má ta socha můj nos?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_studio, who: [gabriel], tags: [standing among sculptures, shy smile], bubbles: [{speaker_id: gabriel, text: Protože jsem ho viděl v metru před třemi dny. A pak jsem ho nemohl přestat vymýšlet., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_studio, who: [nikol, gabriel], tags: [couple, hetero, handshake, holding hands, clay on hands, smile], bubbles: [{speaker_id: nikol, text: 'To je… skoro děsivé. A trochu to nejromantičtější, co jsem slyšela.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_roof, who: [nikol, {gabriel: evening}], tags: [couple, hetero, sitting on blanket, paper cups, city lights], bubbles: [{speaker_id: gabriel, text: 'Pochybovala jste o své kráse. Proč?', kind: speech}, {speaker_id: nikol, text: Protože jsem malá a kulatá a v metru mě lidé přehlížejí., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_roof, who: [{gabriel: evening}], tags: [looking at viewer, soft smile, city lights], bubbles: [{speaker_id: gabriel, text: Newyorčané se neumí dívat. Já umím. Dívám se pořád., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_roof, who: [nikol, {gabriel: evening}], tags: [couple, hetero, kiss, closed eyes, first star in sky, dusk], gap: large}

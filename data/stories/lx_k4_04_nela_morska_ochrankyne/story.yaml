@@ -1,0 +1,20 @@
+# Nela Aqua a legenda o mořské ochránkyni: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_04_nela_morska_ochrankyne
+kind: strip
+title: Nela Aqua a legenda o mořské ochránkyni
+world: w_lx_k4_04_nela_morska_ochrankyne
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_reef, tags: [coral reef, colorful fish, seaweed, sunlight rays, underwater, no humans], bubbles: [{speaker_id: '', text: Barevný mořský svět plný podivných tvorů., kind: narration}], gap: medium, animate: 'ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera'}
+  - {shot: wide, loc: l_reef, who: [kraken_bot, nela], tags: [octopus robot, destroying coral, girl riding turtle, holding bubble gun, angry, shouting], bubbles: [{speaker_id: nela, text: 'Nech naše mořské kamarády na pokoji, ty plechová chobotnice!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_reef, who: [nela], tags: [shooting bubble, holding gun, determined, pointing, bubble forming], sfx: [{text: FWOOM!, style: bold}], gap: small}
+  - {shot: wide, loc: l_sand, who: [kraken_bot, jiskricka], tags: [robot trapped in bubble, fish glowing, electric sparks, surprised, robot shaking], sfx: [{text: ZAP!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_sand, who: [nela], tags: [smiling, happy, thumbs up, looking at robot], bubbles: [{speaker_id: nela, text: 'Jiskřičko, to byla bouře!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_sand, who: [nela, jiskricka], tags: [fish jumping, happy fish, dancing, celebrating, smiling, closed eyes], sfx: [{text: YIPI!, style: bold}], gap: large, animate: 'ambient only, characters still, bubbles rising, static camera'}
+  - {shot: wide, loc: l_sand, who: [kraken_bot], tags: [robot sinking, buried in sand, eyes dimming, defeated, rusty], bubbles: [{speaker_id: '', text: Robot se hroutí do písku., kind: narration}], sfx: [{text: HUPP!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_reef, who: [nela, jiskricka], tags: [hugging fish, happy, surrounded by fish, peaceful, smiling], gap: large}

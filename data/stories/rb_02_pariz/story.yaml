@@ -1,0 +1,22 @@
+# Paříž – Vysoká blondýnka: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_02_pariz
+kind: strip
+title: Paříž – Vysoká blondýnka
+world: w_rb_02_pariz
+audience: adult
+language: cs
+style_id: watercolor_paris
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_seine, who: [emma], tags: [standing at riverside, looking at water, lonely], bubbles: [{speaker_id: emma, text: Všichni tady jsou malí a roztomilí… já jsem jako věž., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_seine, who: [luc], tags: [jogging, stopping, smile, slightly out of breath], bubbles: [{speaker_id: luc, text: 'Pardon… hledám cestu k Notre-Dame. A ty vypadáš, jako bys věděla, kam jít.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_seine, who: [emma], tags: [surprised, slight smile], gap: large}
+  - {shot: medium, loc: l_cafe, who: [emma, luc], tags: [couple, hetero, sitting at small table, coffee cups, looking at each other], bubbles: [{speaker_id: emma, text: Přijela jsem z Londýna. Hledám… něco. Někoho., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [luc], tags: [gentle smile], bubbles: [{speaker_id: luc, text: Možná jsi právě našla., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bridge, who: [emma, luc], tags: [couple, hetero, hug, night, under bridge], bubbles: [{speaker_id: luc, text: 'Jsi krásná přesně taková, jaká jsi.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bridge, who: [emma, luc], tags: [couple, hetero, kiss, closed eyes, smile, night], gap: large}
+  - {shot: medium, loc: l_rest, who: [{emma: dinner}], tags: [sitting, smile, eiffel tower behind window], bubbles: [{speaker_id: emma, text: Poprvé se necítím moc vysoká., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [{emma: dinner}, {luc: dinner}], tags: [couple, hetero, standing face to face, same height, smiling], bubbles: [{speaker_id: luc, text: Protože jsi přesně na mou výšku., kind: speech}], gap: large}

@@ -1,0 +1,26 @@
+# Saint-Tropez – Léto, které mělo trvat navždy: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_01_sainttropez
+kind: strip
+title: Saint-Tropez – Léto, které mělo trvat navždy
+world: w_rf_01_sainttropez
+audience: adult
+language: cs
+style_id: fashion_editorial
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_port, tags: [convertible car, yachts, sunny harbor], bubbles: [{speaker_id: '', text: Saint-Tropez. Léto., kind: narration}], gap: medium}
+  - {shot: full body, loc: l_port, who: [valerie], tags: [stepping out of convertible, holding hat, sunglasses, confident], bubbles: [{speaker_id: valerie, text: Tentokrát nikoho hledat nebudu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_port, who: [valerie], tags: [wind, hat flying away, reaching out, surprised, hair blowing], sfx: [{text: FÍÍ!, style: bold}], gap: small}
+  - {shot: medium, loc: l_port, who: [nicolas], tags: [catching straw hat, holding hat, smile, looking at viewer], bubbles: [{speaker_id: nicolas, text: Možná vás hledá on., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_yacht, who: [{valerie: evening}, {nicolas: evening}], tags: [couple, hetero, standing at bow, sunset, champagne glasses, wind in hair], bubbles: [{speaker_id: nicolas, text: 'Jste šťastná?', kind: speech}, {speaker_id: valerie, text: Právě teď ano., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_yacht, who: [{valerie: evening}, {nicolas: evening}], tags: [couple, hetero, hands touching, holding hands on railing, sunset], gap: large}
+  - {shot: medium, loc: l_hotel, who: [{valerie: evening}], tags: [taking off earrings, vanity table, mirror, soft smile], bubbles: [{speaker_id: '', text: Odloží náušnice. Pak hodinky., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_hotel, who: [{valerie: evening}, {nicolas: evening}], tags: [couple, hetero, standing by door, looking at each other, tension], bubbles: [{speaker_id: valerie, text: Neměl bys zůstat., kind: speech}, {speaker_id: nicolas, text: Vím., kind: speech}], gap: small}
+  - {shot: medium, loc: l_hotel, who: [{valerie: evening}, {nicolas: evening}], tags: [couple, hetero, kiss, embrace, eyes closed], gap: medium}
+  - {shot: wide, loc: l_hotel, tags: [closed curtains, city lights outside window, lamp off, dark room], bubbles: [{speaker_id: '', text: Světla města zůstanou za oknem., kind: narration}], gap: large}
+  - {shot: medium, loc: l_hotel, who: [{valerie: day}, {nicolas: travel}], tags: [couple, hetero, morning light, plane ticket on table, serious], bubbles: [{speaker_id: nicolas, text: Musím odjet., kind: speech}, {speaker_id: valerie, text: 'Na jak dlouho?', kind: speech}, {speaker_id: nicolas, text: Nevím., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_hotel, who: [{valerie: day}], tags: [looking away, sad smile], bubbles: [{speaker_id: nicolas, text: Vrátím se., kind: speech}, {speaker_id: valerie, text: To říkají všichni., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{valerie: beach}], tags: [walking along shoreline, from behind, tears, smile], bubbles: [{speaker_id: '', text: O tři měsíce později. Nicolas nepřijel., kind: narration}, {speaker_id: valerie, text: Aspoň jsem jednou opravdu milovala., kind: speech}], gap: large}

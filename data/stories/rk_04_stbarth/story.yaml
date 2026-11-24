@@ -1,0 +1,24 @@
+# St. Barthélemy – Jachta Nedočkavost: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_04_stbarth
+kind: strip
+title: St. Barthélemy – Jachta Nedočkavost
+world: w_rk_04_stbarth
+audience: adult
+language: cs
+style_id: fashion_editorial
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [yacht, champagne, golden hour, sea], bubbles: [{speaker_id: '', text: 'St. Barth. Šampaňské, koktejly, ego.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [isabelle], tags: [holding champagne glass, leaning on railing, wind in dress, confident], bubbles: [{speaker_id: isabelle, text: 'Po rozchodu si musím dokázat, že ještě umím chtít.', kind: thought}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [viktor], tags: [arms spread, showing off, smug smile, sunset], bubbles: [{speaker_id: viktor, text: 'Všechno, co vidíš, je moje. Včetně západu slunce – koupil jsem si ho tím směrem.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_deck, who: [isabelle], tags: [raised eyebrow, sipping champagne], bubbles: [{speaker_id: isabelle, text: Západ slunce si nekoupíš. Jen si můžeš pronajmout stín., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_salon, who: [{isabelle: night}, viktor], tags: [couple, hetero, passionate kiss, lamp light, night], bubbles: [{speaker_id: '', text: Noc. Rychlá jako bouřka., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_salon, tags: [lamp turned off, porthole moonlight, dark salon, no humans], gap: large}
+  - {shot: wide, loc: l_break, who: [{isabelle: morning}, {viktor: morning}], tags: [couple, hetero, breakfast table, man reading phone, woman holding coffee], bubbles: [{speaker_id: '', text: Ráno jachta kotví u jiného ostrova., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_break, who: [{viktor: morning}], tags: [not looking up, buttering croissant, casual], bubbles: [{speaker_id: viktor, text: Vysadím tě v Gustavii. Letí mi žena., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_break, who: [{isabelle: morning}], tags: [calmly removing gold earring, placing it on table, cold stare], gap: medium}
+  - {shot: medium, loc: l_break, who: [{isabelle: morning}], tags: [standing up, composed], bubbles: [{speaker_id: isabelle, text: Loď si zaplatím sama. Ty si zaplatíš rozvod. Západ slunce ti nechám., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pier, who: [{isabelle: morning}], tags: [walking on pier, head held high, sunglasses, wind, from behind], bubbles: [{speaker_id: '', text: Vystoupí na molo – a jde s hlavou vzhůru., kind: narration}], gap: large}

@@ -1,0 +1,21 @@
+# Max a duchové zloději: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_06_max_duchove_zlodeji
+kind: strip
+title: Max a duchové zloději
+world: w_lx_k5_06_max_duchove_zlodeji
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_roof, tags: [night sky, rain, city skyline, wet roof, dark], bubbles: [{speaker_id: '', text: Noční město pod deštěm., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, soft glow pulsing, city lights blinking, static camera'}
+  - {shot: wide, loc: l_roof, who: [max, sova], tags: [running, jumping, cape flowing, robot flying, looking back, motion lines], bubbles: [{speaker_id: sova, text: 'Maxi, duchové v bance!', kind: speech}], sfx: [{text: PIP!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [max], tags: [nodding, determined, running, black cape, night], bubbles: [{speaker_id: max, text: Tak jdeme., kind: speech}], gap: small}
+  - {shot: wide, loc: l_bank, who: [ghost], tags: [walking through wall, transparent, glowing, smirk, police station background], bubbles: [{speaker_id: ghost, text: Nikdo nás nechytí!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bank, who: [max], tags: [holding flashlight, shining light, determined, black cape, glowing beam], bubbles: [{speaker_id: max, text: Ale já mám speciální světlo., kind: speech}], gap: small}
+  - {shot: wide, loc: l_bank, who: [max, ghost], tags: [ghost frozen, glowing light on ghost, surprised, transparent, light beam], sfx: [{text: ZÁŘ!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_bench, who: [novakova, max], tags: [standing, holding badge, giving, police uniform, smile], bubbles: [{speaker_id: novakova, text: 'Maxi, město je v bezpečí.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_bench, who: [max], tags: [mask, determined, looking away, dark background, rain], bubbles: [{speaker_id: max, text: 'Dokud budou duchové, budu tu.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_roof, who: [max, sova], tags: [disappearing, shadows, fading, cape, night, city lights], bubbles: [{speaker_id: sova, text: Příště zase., kind: speech}], gap: large, animate: 'ambient only, characters still, soft glow pulsing, city lights blinking, static camera'}

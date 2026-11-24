@@ -1,0 +1,22 @@
+# Artur a meč v kameni: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_10_artur_mec_v_kameni
+kind: strip
+title: Artur a meč v kameni
+world: w_lx_k5_10_artur_mec_v_kameni
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_avalon, tags: [fog, stone ruins, mystical atmosphere, morning light, no humans], bubbles: [{speaker_id: '', text: Mlha na ostrově Avalon., kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, static camera'}
+  - {shot: medium, loc: l_avalon, who: [artur, excalibur], tags: [looking at sword, holding shield, glowing sword, surprised, open mouth], bubbles: [{speaker_id: excalibur, text: 'Arture, jsem tady.', kind: speech}, {speaker_id: artur, text: Excalibure!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [morgana, artur], tags: [dark shadows, casting spell, glowing purple magic, angry face, pointing], bubbles: [{speaker_id: morgana, text: Meč je můj!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [artur], tags: [holding shield, defending, determined, shield glowing, blocking], bubbles: [{speaker_id: artur, text: Meč patří Avalonu!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [morgana, artur], tags: [shadows disappearing, magic explosion, light burst, morgana retreating, artur standing], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_castle, who: [kravna, artur], tags: [holding crown, giving, smile, noble, standing], bubbles: [{speaker_id: kravna, text: 'Arture, jsi rytíř Avalonu.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_castle, who: [artur], tags: [worried, looking away, serious face, hand on sword], bubbles: [{speaker_id: artur, text: 'A Morgana?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_castle, who: [kravna], tags: [sad smile, looking at artur, mysterious, standing], bubbles: [{speaker_id: kravna, text: Ta se vrátí. Vždy se vrací., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_castle, who: [artur], tags: [looking at fog, determined, hand on sword hilt, serious], gap: medium}
+  - {shot: close-up, loc: l_castle, who: [excalibur], tags: [glowing blue runes, floating, close up, mysterious], bubbles: [{speaker_id: excalibur, text: Připrav se., kind: thought}], gap: large, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}

@@ -1,0 +1,20 @@
+# Péťa a zloděj perel: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_05_peta_zlodej_perel
+kind: strip
+title: Péťa a zloděj perel
+world: w_lx_k5_05_peta_zlodej_perel
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_reef, tags: [coral reef, bubbles, fish swimming, sunlight rays, no humans], bubbles: [{speaker_id: '', text: Podmořské město na korálovém útesu., kind: narration}], gap: medium, animate: 'ambient only, characters still, bubbles rising, water rippling, light rays shimmering, static camera'}
+  - {shot: medium, loc: l_reef, who: [peta, skeble], tags: [holding frying pan, stirring, bubbles coming from pan, talking, worried expression], bubbles: [{speaker_id: skeble, text: 'Péťo, někdo ukradl perly!', kind: speech}, {speaker_id: peta, text: 'Tak je najdeme. Bubliny, vzhůru!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cave, who: [krab], tags: [hiding, holding pearls, nervous, looking around, dark cave], bubbles: [{speaker_id: krab, text: Jsou moje! Chci je dát mamince., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cave, who: [peta, krab], tags: [pointing, talking, concerned, crab holding pearls, open mouth], bubbles: [{speaker_id: peta, text: Ale ostatní je potřebují taky., kind: speech}, {speaker_id: krab, text: Tak si je vezmi., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cave, who: [peta], tags: [thinking, hand on chin, idea, smile, bubbles], bubbles: [{speaker_id: peta, text: Mám nápad!, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_city, who: [starosta, peta], tags: [standing, holding medal, giving, smile, fish watching], bubbles: [{speaker_id: starosta, text: 'Péťo, jsi hrdinka!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_city, who: [peta, krab], tags: [holding necklace, giving, happy, crab blushing, pearls], bubbles: [{speaker_id: peta, text: A Chlupatý krab dostane perlový náhrdelník pro maminku., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_city, who: [peta, skeble, krab], tags: [dancing, bubbles, happy, celebrating, fish dancing], sfx: [{text: YAY!, style: bold}], gap: large, animate: 'ambient only, characters still, bubbles rising, static camera'}

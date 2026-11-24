@@ -1,0 +1,23 @@
+# Nairobi, zvuk savany: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_09_nairobi
+kind: strip
+title: Nairobi, zvuk savany
+world: w_rd_09_nairobi
+audience: adult
+language: cs
+style_id: vintage_poster
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_garage, who: [kwame], tags: [lying under car, legs visible, tools], bubbles: [{speaker_id: '', text: 'Nairobi, období dešťů.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_garage, who: [zuri], tags: [kneeling, worried, jeep], bubbles: [{speaker_id: zuri, text: 'Pes ještě dýchá, ale potřebuju mechanika dřív než zavírací hodinu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_garage, who: [kwame], tags: [sitting on floor, dog on lap, gentle], bubbles: [{speaker_id: kwame, text: 'Pak pes první, auto druhé.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_garage, who: [zuri], tags: [laughing, sitting on tire], bubbles: [{speaker_id: zuri, text: 'Máte psa raději než motor?', kind: speech}, {speaker_id: kwame, text: 'Motor neví, co je strach. Pes ano.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_clinic, who: [kwame], tags: [standing by wall, awkward, hands in pockets], bubbles: [{speaker_id: zuri, text: Pes bude žít., kind: speech}, {speaker_id: kwame, text: 'Dobře. Dobře. A vy — jak se máte?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_clinic, who: [zuri], tags: [tired smile, lab coat], bubbles: [{speaker_id: kwame, text: Sny nejsou dědictví. Sny jsou vlastní., kind: speech}], gap: large}
+  - {shot: wide, loc: l_park, who: [kwame, zuri], tags: [couple, hetero, sitting on car hood, sunset, savanna], bubbles: [{speaker_id: zuri, text: 'Řeknu to rovnou: Líbíte se mi.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_park, who: [kwame], tags: [smile, sunset light], bubbles: [{speaker_id: kwame, text: 'Tak to je první zápas, který jsem kdy vyhrál bez jediné rány.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_park, who: [kwame, zuri], tags: [couple, hetero, kiss, closed eyes, sunset], gap: small}
+  - {shot: medium, loc: l_park, who: [kwame, zuri], tags: [couple, hetero, hug, smile, savanna], bubbles: [{speaker_id: zuri, text: 'Proč mě objímáte?', kind: speech}, {speaker_id: kwame, text: Protože auto neumí slovo ‚miluju‘., kind: speech}], gap: large}

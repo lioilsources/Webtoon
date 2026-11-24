@@ -1,0 +1,25 @@
+# Bora Bora – Voda nad zlatem: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_08_borabora
+kind: strip
+title: Bora Bora – Voda nad zlatem
+world: w_rk_08_borabora
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bungalow, tags: [overwater bungalows, turquoise lagoon], bubbles: [{speaker_id: '', text: Bora Bora., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [margaux], tags: [sitting on deck edge, hat, tired, looking at water], bubbles: [{speaker_id: margaux, text: Přijela jsem zaplatit dluh sama sobě., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [teva], tags: [pointing at sharks in clear water, smiling, standing on deck], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [margaux, teva], tags: [couple, hetero, woman laughing for the first time, man smiling], bubbles: [{speaker_id: margaux, text: Zachraňuji kůži lidí. Na vlastní jsem zapomněla., kind: speech}, {speaker_id: teva, text: Tady nikdo nespěchá. Voda si vzpomene na všechno za tebe., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_kayak, who: [margaux, teva], tags: [couple, hetero, sitting in kayak, dusk, glowing water], bubbles: [{speaker_id: '', text: Kajak za soumraku. Hvězdy v moři., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_kayak, who: [margaux, teva], tags: [couple, hetero, hands in glowing blue water, palms on palms, bioluminescence], bubbles: [{speaker_id: teva, text: 'U nás se říká: kdo se dotkne světla moře společně, nesmí lhát.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kayak, who: [margaux], tags: [honest, tears in eyes, blue glow on face], bubbles: [{speaker_id: margaux, text: 'Pak řeknu pravdu. Přestala jsem věřit, že si zasloužím klid.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kayak, who: [teva], tags: [calm, gentle], bubbles: [{speaker_id: teva, text: 'Klid není odměna. Je to moře. Přijde, když přestaneš bojovat proti proudu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{margaux: night}, {teva: night}], tags: [couple, hetero, woman slowly taking off hat, eye contact, moonlight], gap: medium}
+  - {shot: medium, loc: l_terrace, who: [{margaux: night}, {teva: night}], tags: [couple, hetero, kiss, moonlight], gap: small}
+  - {shot: wide, loc: l_terrace, tags: [moon reflection on lagoon, lanterns, no humans], gap: large}
+  - {shot: medium, loc: l_bungalow, who: [{margaux: morning}], tags: [typing on laptop, smiling, sunny morning], bubbles: [{speaker_id: '', text: 'Ráno píše výpověď do nemocnice v Bruselu. Adresa pro odpověď: Bora Bora.', kind: narration}], gap: large}

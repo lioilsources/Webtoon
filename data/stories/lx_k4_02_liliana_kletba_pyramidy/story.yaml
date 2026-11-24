@@ -1,0 +1,20 @@
+# Liliana a kletba pyramidy: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_02_liliana_kletba_pyramidy
+kind: strip
+title: Liliana a kletba pyramidy
+world: w_lx_k4_02_liliana_kletba_pyramidy
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_pyramid, tags: [ancient walls, hieroglyphs, green flames, torchlight, dark stone, no humans], bubbles: [{speaker_id: '', text: Staroegyptská pyramida v minulosti., kind: narration}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_pyramid, who: [ramses, liliana, toto], tags: [mummy standing, holding staff, fairy floating, swinging wand, cat sitting, green magic, tense], bubbles: [{speaker_id: ramses, text: Tisíc let jsem spal! Žádná malá víla mě nezastaví!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [liliana], tags: [fairy floating, swinging wand, pink energy ball, determined, glowing wings], bubbles: [{speaker_id: liliana, text: 'Světlo přátelství rozpráší jakoukoliv temnotu, Faraone!', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pyramid, who: [toto], tags: [cat pointing, looking at staff, serious, green eyes, paw raised], bubbles: [{speaker_id: toto, text: 'Miř na berlu, Liliano!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid_center, who: [liliana, ramses], tags: [fairy flying up, star projectiles, pink and gold light, mummy dodging, magical explosion, sparkles], sfx: [{text: SZÁŠ!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_pyramid_center, who: [ramses], tags: [mummy falling, bandages falling off, turning to sand, kneeling, glowing light, surprised], sfx: [{text: ŠŠŠŠ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_pyramid_center, who: [ramses], tags: [old man, sitting on ground, smiling, peaceful, gold headdress, soft light], bubbles: [{speaker_id: ramses, text: 'Děkuji, malá vílo. Konečně můžu odpočívat.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_pyramid_center, who: [liliana, toto], tags: [fairy landing, cat jumping, happy, hugging, glowing pyramid, peaceful], bubbles: [{speaker_id: liliana, text: Je to hotovo! Pyramida svítí mírem., kind: speech}], gap: large}

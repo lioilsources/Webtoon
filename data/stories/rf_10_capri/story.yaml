@@ -1,0 +1,24 @@
+# Capri – Láska, která přišla příliš pozdě: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_10_capri
+kind: strip
+title: Capri – Láska, která přišla příliš pozdě
+world: w_rf_10_capri
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_rest, tags: [lemon trees, sea view, terrace], bubbles: [{speaker_id: '', text: Capri., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [elena, antonio], tags: [couple, hetero, man leading woman to table, terrace], bubbles: [{speaker_id: antonio, text: 'Jste sama?', kind: speech}, {speaker_id: elena, text: Ano., kind: speech}, {speaker_id: antonio, text: Já také., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [elena], tags: [small smile], gap: large}
+  - {shot: medium, loc: l_rest, who: [elena, antonio], tags: [couple, hetero, man placing dessert plate, woman surprised], bubbles: [{speaker_id: elena, text: To jsem si neobjednala., kind: speech}, {speaker_id: antonio, text: Já vím., kind: speech}, {speaker_id: elena, text: 'Tak proč?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [antonio], tags: [warm smile, looking at viewer], bubbles: [{speaker_id: antonio, text: Protože jste se dnes poprvé usmála., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [{elena: evening}, {antonio: evening}], tags: [couple, hetero, walking along coast, sunset, faraglioni], bubbles: [{speaker_id: elena, text: Kdybych tě potkala před dvaceti lety…, kind: speech}, {speaker_id: antonio, text: Byli bychom jiní lidé., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [{elena: evening}, {antonio: evening}], tags: [couple, hetero, stopping, looking at each other, sunset], bubbles: [{speaker_id: elena, text: Možná bych tě milovala., kind: speech}, {speaker_id: antonio, text: Možná bych tě neuměl milovat správně., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [{elena: evening}, {antonio: evening}], tags: [couple, hetero, sitting on terrace, woman's head on his shoulder, candles, night], gap: medium}
+  - {shot: medium, loc: l_rest, who: [{elena: evening}, {antonio: evening}], tags: [couple, hetero, kiss, candlelight], bubbles: [{speaker_id: '', text: 'Oba vědí, že ráno odjíždějí každý jinam.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [{elena: evening}, {antonio: evening}], tags: [couple, hetero, sitting close, looking at sea, night], bubbles: [{speaker_id: elena, text: 'Proč některé krásné věci trvají tak krátce?', kind: speech}, {speaker_id: antonio, text: Abychom si je pamatovali., kind: speech}], gap: large}
+  - {shot: wide, loc: l_street, who: [antonio], tags: [standing in front of restaurant, watching taxi drive away, morning], bubbles: [{speaker_id: '', text: Ráno Elena odjíždí., kind: narration}], gap: large}

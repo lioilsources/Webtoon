@@ -1,0 +1,25 @@
+# Toskánsko – Úroda: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_10_toskansko
+kind: strip
+title: Toskánsko – Úroda
+world: w_rk_10_toskansko
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vineyard, tags: [vineyard, cypress trees, farmhouse], bubbles: [{speaker_id: '', text: Chianti. Říjen., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_vineyard, who: [petra], tags: [stumbling between vine rows in heels, holding folder, surprised], sfx: [{text: AU!, style: bold}], gap: small}
+  - {shot: medium, loc: l_vineyard, who: [petra, lorenzo], tags: [couple, hetero, man catching woman by the arm, steady, close], bubbles: [{speaker_id: petra, text: Já jsem tu pracovně. Usedlost se prodává., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_vineyard, who: [lorenzo], tags: [dry humor, slight smile], bubbles: [{speaker_id: lorenzo, text: 'Usedlost ne. Já ano. Ale jen s pozemkem, kočkou a špatným humorem.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_vineyard, who: [{petra: harvest}], tags: [picking grapes, basket, laughing, sunlight], bubbles: [{speaker_id: '', text: Sklizeň. Týdny., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_yard, who: [{petra: harvest}, lorenzo], tags: [couple, hetero, dancing under fig tree, string lights, laughing], gap: medium}
+  - {shot: medium, loc: l_cellar, who: [{lorenzo: evening}], tags: [handing wine glass, lantern light], bubbles: [{speaker_id: '', text: Noc svatého Martina., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cellar, who: [{lorenzo: evening}], tags: [speaking softly, holding glass], bubbles: [{speaker_id: lorenzo, text: 'V Toskánsku se říká: dobré víno potřebuje trpělivost. Já čekal tři roky. Ty jsi přišla v říjnu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cellar, who: [{petra: night}], tags: [setting glass down on barrel, taking his hand, smile], bubbles: [{speaker_id: petra, text: Pak se napij pomalu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cellar, who: [{petra: night}, {lorenzo: evening}], tags: [couple, hetero, kiss, lantern light, barrels], gap: small}
+  - {shot: wide, loc: l_cellar, tags: [lantern blown out by the barrel, dark cellar, wisp of smoke, no humans], gap: large}
+  - {shot: medium, loc: l_yard, who: [{petra: night}], tags: [on phone, morning light, smiling, fig tree], bubbles: [{speaker_id: petra, text: 'Usedlost stahuju z prodeje. Důvod? Osobní. Velmi osobní.', kind: speech}], gap: large}

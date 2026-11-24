@@ -1,0 +1,23 @@
+# Londýnská mlha, varšavské srdce: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_05_londyn
+kind: strip
+title: Londýnská mlha, varšavské srdce
+world: w_re_05_londyn
+audience: adult
+language: cs
+style_id: noir_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_market, tags: [fog, market stalls], bubbles: [{speaker_id: '', text: 'Londýn, Borough Market. Mlha a vůně koření.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_market, who: [zofia], tags: [umbrella turned inside out, wind, annoyed, rain], sfx: [{text: PRÁSK, style: bold}], gap: medium}
+  - {shot: medium, loc: l_market, who: [daniel], tags: [running out of bistro, apron, smile], bubbles: [{speaker_id: daniel, text: 'Váš deštník právě zemřel. Pojďte dovnitř, než skončíte jako on.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_market, who: [zofia], tags: [stubborn, blush], bubbles: [{speaker_id: zofia, text: 'Já zvládnu cokoliv. Jen ne deštníky. A ne muže, kteří vaří, protože pak nechci odejít.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bistro, who: [daniel], tags: [cooking, holding spices, steam, smile], bubbles: [{speaker_id: daniel, text: 'Kardamom je tichá dáma. Chilli je moje sestra. Hlučná, ale bez ní by svět stál.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bistro, who: [zofia], tags: [sitting at counter, chin on hand, curious], bubbles: [{speaker_id: zofia, text: 'A co jste vy?', kind: speech}, {speaker_id: daniel, text: 'Já jsem sůl. Nepoznáte mě, dokud chybím.', kind: speech}], gap: large}
+  - {shot: close-up, loc: l_bridge, who: [zofia], tags: [glasses fixed with string, smile, fog], bubbles: [{speaker_id: '', text: 'Daniel jí opravil brýle provázkem — „dočasné řešení, trvalý úmysl“.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bridge, who: [daniel], tags: [looking at viewer, fog, street lamp], bubbles: [{speaker_id: daniel, text: Bojovala jste s deštníkem a vyhrála jste. Zamiloval jsem se do vítěze., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bridge, who: [zofia], tags: [sad smile, fog], bubbles: [{speaker_id: zofia, text: Já jsem jen Polka s rozbitýma brýlema., kind: speech}, {speaker_id: daniel, text: Pak se Anglie mýlí a já ne., kind: speech}], gap: small}
+  - {shot: medium, loc: l_bridge, who: [zofia, daniel], tags: [couple, hetero, kiss, shared scarf around both, closed eyes, streetlight], gap: large}

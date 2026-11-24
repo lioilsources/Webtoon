@@ -1,0 +1,24 @@
+# Kai a mech-gorila: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_04_kai_dzungle_budoucnosti
+kind: strip
+title: Kai a mech-gorila
+world: w_lx_k3_04_kai_dzungle_budoucnosti
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_jungle, tags: [neon plants, glowing flowers, rain, mist, dark background, no humans], bubbles: [{speaker_id: '', text: Neonová džungle v noci., kind: narration}], gap: medium, animate: 'ambient only, characters still, rain falling, leaves swaying gently, static camera'}
+  - {shot: medium, loc: l_jungle, who: [kai, pixel], tags: [pointing, worried, looking up, monkey on shoulder, glowing gauntlets], bubbles: [{speaker_id: kai, text: 'Pixele, ta gorila ničí stromy!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_ruins, who: [gorila, kai], tags: [robot standing, large size, punching, energy blast, jumping, dynamic pose, motion lines], bubbles: [{speaker_id: kai, text: Dvojitý skok!, kind: shout}], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_ruins, who: [gorila], tags: [robot falling, kneeling, sparks, glowing red eyes dimming, metallic sound], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: close-up, loc: l_ruins, who: [kai], tags: [gentle smile, hand out, hopeful, soft lighting], bubbles: [{speaker_id: kai, text: 'Můžeme být kamarádi?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [robot standing, glowing blue eyes, planting tree, helping, happy, neon lights, repairing], gap: large, animate: 'ambient only, characters still, rain falling, leaves swaying gently, soft glow pulsing, static camera'}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}
+  - {shot: wide, loc: l_jungle, who: [kai, pixel, gorila], tags: [standing together, smiling, hugging robot leg, happy, neon jungle, peaceful], gap: large}

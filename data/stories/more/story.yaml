@@ -1,0 +1,27 @@
+# Dobrodružství u moře: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: more
+kind: strip
+title: Dobrodružství u moře
+world: w_more
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: wide, loc: l_beach, who: [eliska, rybka], tags: [walking, carrying basket, '(rabbit in basket:1.3)', wicker basket, smile, happy], bubbles: [{speaker_id: eliska, text: 'Rybko, dnes najdeme nejkrásnější mušli!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [rybka], tags: ['(rabbit in basket:1.2)', wicker basket, grooming, paw on ear, '(black spot on ear:1.2)', cute, front view], gap: small}
+  - {shot: medium, loc: l_shore, who: [eliska], tags: [squatting, picking up seashell, holding seashell, smile], gap: medium}
+  - {shot: wide, loc: l_shore, who: [rybka], tags: [jumping, hopping, rabbit running, toward waves, splash], sfx: [{text: HOP HOP, style: bold}], gap: small}
+  - {shot: medium, loc: l_shore, who: [eliska], tags: [worried, open mouth, reaching out, outstretched arm], bubbles: [{speaker_id: eliska, text: Ne! Voda není pro králíky!, kind: shout}], gap: small}
+  - {shot: medium, loc: l_beach, who: [racek], tags: ['(bird focus:1.4)', '(seagull:1.4)', '(close to viewer:1.2)', white bird, yellow beak, '(seashell in beak:1.3)', standing on sand, wings spread], sfx: [{text: KRÁÁ!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_shore, who: [eliska], tags: [worried, pointing, shouting, looking back], bubbles: [{speaker_id: eliska, text: 'Dědo, pomoz! Rybka chce plavat!', kind: shout}], gap: small}
+  - {shot: medium, loc: l_shore, who: [deda], tags: [holding fishing net, walking, kind smile, calm], bubbles: [{speaker_id: deda, text: 'Pojď sem, malý hrdino.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_shore, who: [deda, rybka], tags: [holding rabbit, gentle, hands, rabbit, scared, wet fur], gap: large}
+  - {shot: wide, loc: l_fire, who: [eliska, rybka], tags: [sitting, holding rabbit, rabbit on lap, holding seashell, big seashell, smile, campfire], bubbles: [{speaker_id: eliska, text: 'Vidíš? I bez plavání jsme našli poklad.', kind: speech}], gap: large}
+choices:
+  - {kind: closed, text: Postavit s dědečkem největší hrad z písku na pláži.}
+  - {kind: closed, text: Jít s Rybkou po stopách racka k majáku.}
+  - {kind: closed, text: Hledat v jeskyni u skal další mušle.}
+  - {kind: free, text: 'Nebo napiš, co uděláš…'}

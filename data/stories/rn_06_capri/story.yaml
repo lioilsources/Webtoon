@@ -1,0 +1,22 @@
+# Capri – Já chci tebe: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rn_06_capri
+kind: strip
+title: Capri – Já chci tebe
+world: w_rn_06_capri
+audience: adult
+language: cs
+style_id: photo_glossy
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_cliffs, tags: [limestone cliffs, blue sea, white buildings, sunny day], bubbles: [{speaker_id: '', text: Capri. Skály nad mořem., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_cliffs, who: [marcus], tags: [standing on cliff, looking at sea, sad], bubbles: [{speaker_id: marcus, text: Chtějí jen tělo…, kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cliffs, who: [lila], tags: [walking past, looking at him, smile, wind in hair], bubbles: [{speaker_id: lila, text: Já chci tebe., kind: speech}], gap: large}
+  - {shot: wide, loc: l_restaurant, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, sitting at table, candlelight, wine glasses, close, smiling], bubbles: [{speaker_id: '', text: Večeře na terase., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [{marcus: dinner}, {lila: dinner}], tags: [couple, hetero, kiss, leaning in, eyes closed, candlelight], gap: small}
+  - {shot: wide, loc: l_villa, who: [{lila: villa}, {marcus: villa}], tags: [couple, hetero, unbuttoning shirt, standing, faces close, warm light], bubbles: [{speaker_id: lila, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{lila: villa}, {marcus: villa}], tags: [couple, hetero, embrace, kiss, eyes closed, warm light, hug], bubbles: [{speaker_id: marcus, text: Cítím se víc než svaly., kind: speech}], gap: small}
+  - {shot: medium, loc: l_villa, tags: [lamp going out, moonlight through window, sea view, no humans], bubbles: [{speaker_id: '', text: Lampa zhasne. Ticho., kind: narration}], gap: large}
+  - {shot: wide, loc: l_cliffs, who: [marcus, lila], tags: [couple, hetero, morning, hugging, looking at sea, smile, sunrise], bubbles: [{speaker_id: '', text: Ráno zůstávají., kind: narration}], gap: large}

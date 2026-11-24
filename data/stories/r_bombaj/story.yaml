@@ -1,0 +1,29 @@
+# Bombaj – Muž, který čekal na múzu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_bombaj
+kind: strip
+title: Bombaj – Muž, který čekal na múzu
+world: w_r_bombaj
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_gallery, who: [arjun], tags: [standing, from behind, blank canvas], gap: medium}
+  - {shot: medium, loc: l_gallery, who: [dev], tags: [arms crossed, concerned], bubbles: [{speaker_id: dev, text: Už tři měsíce jsi nic nenafotil., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_gallery, who: [arjun], tags: [looking away, calm], bubbles: [{speaker_id: arjun, text: Čekám., kind: speech}, {speaker_id: dev, text: 'Na co?', kind: speech}, {speaker_id: arjun, text: Na múzu., kind: speech}], gap: large}
+  - {shot: wide, loc: l_rain, who: [priya], tags: [running, rain, umbrella falling, wet hair], bubbles: [{speaker_id: '', text: Prudký monzunový déšť., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_rain, who: [arjun], tags: [offering umbrella, holding umbrella, rain], gap: small}
+  - {shot: medium, loc: l_rain, who: [priya, arjun], tags: [couple, hetero, woman holding umbrella, man in rain, wet], bubbles: [{speaker_id: priya, text: 'A vy?', kind: speech}, {speaker_id: arjun, text: Já déšť přežiju., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rain, who: [priya], tags: [wet hair, looking up], bubbles: [{speaker_id: priya, text: 'A já?', kind: speech}, {speaker_id: arjun, text: 'Vy vypadáte, že přežijete všechno.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_rain, who: [priya], tags: [smile, rain], gap: large}
+  - {shot: medium, loc: l_studio, who: [priya], tags: [standing, shy, hands together], bubbles: [{speaker_id: priya, text: Nejsem fotogenická., kind: speech}, {speaker_id: arjun, text: 'To říkají lidé, kteří nevědí, co na nich hledat.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_studio, who: [arjun], tags: [holding camera, taking photo], sfx: [{text: CVAK, style: bold}], gap: small}
+  - {shot: close-up, loc: l_studio, who: [arjun], tags: [looking at camera screen, silent, surprised], bubbles: [{speaker_id: dev, text: 'Našel jsi ji?', kind: speech}, {speaker_id: arjun, text: Ano., kind: speech}], gap: large}
+  - {shot: wide, loc: l_marina, who: [priya, arjun], tags: [couple, hetero, sitting by sea, sunset], bubbles: [{speaker_id: priya, text: 'Takže jsem tvoje múza?', kind: speech}, {speaker_id: arjun, text: Ne., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_marina, who: [priya], tags: [surprised], gap: small}
+  - {shot: close-up, loc: l_marina, who: [arjun], tags: [gentle smile], bubbles: [{speaker_id: arjun, text: 'Jsi důvod, proč zase vidím svět.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_marina, who: [priya, arjun], tags: [couple, hetero, holding hands, woman looking down, blush], gap: small}
+  - {shot: close-up, loc: l_marina, who: [priya, arjun], tags: [couple, hetero, kiss, closed eyes, sunset], gap: large}

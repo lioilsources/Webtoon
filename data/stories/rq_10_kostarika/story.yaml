@@ -1,0 +1,23 @@
+# Kostarika – Cítím se doma: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_10_kostarika
+kind: strip
+title: Kostarika – Cítím se doma
+world: w_rq_10_kostarika
+audience: adult
+language: cs
+style_id: photo_lightning
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_beach, tags: [palm trees, white sand, ocean waves, sunny day], bubbles: [{speaker_id: '', text: Kostarika. Bělostná pláž v objetí džungle., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_beach, who: [cole, amara], tags: [couple, hetero, standing on sand, eye contact, ocean background, windy], bubbles: [{speaker_id: cole, text: Jsem jen venkovan…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_beach, who: [amara], tags: [smiling, looking up, hand on chest, affectionate], bubbles: [{speaker_id: amara, text: Jsi víc., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_bungalow, who: [{cole: dinner}, {amara: dinner}], tags: [couple, hetero, sitting at table, tropical fruits, candle light, holding hands], bubbles: [{speaker_id: '', text: Večer v bungalovu., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bungalow, who: [{cole: dinner}, {amara: dinner}], tags: [couple, hetero, kissing, standing, embracing, warm glow], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{cole: dinner}, {amara: dinner}], tags: [couple, hetero, removing shirt, helping, eye contact, soft light], bubbles: [{speaker_id: cole, text: Pomalu., kind: speech}], gap: small}
+  - {shot: medium, loc: l_bedroom, who: [{cole: dinner}, {amara: dinner}], tags: [couple, hetero, removing dress, gentle touch, blushing, romantic], gap: medium}
+  - {shot: medium, loc: l_bedroom, tags: [curtain, wind, moonlight, empty room, romantic atmosphere], bubbles: [{speaker_id: '', text: V noci se spojili v tichu tropů., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [cole, amara], tags: [couple, hetero, white linen clothes, spooning, sleeping, hand on stomach, peaceful], bubbles: [{speaker_id: cole, text: Cítím se doma., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_bedroom, who: [amara], tags: [smiling, eyes closed, peaceful expression, soft light], bubbles: [{speaker_id: amara, text: Protože jsi se mnou., kind: speech}], gap: large}

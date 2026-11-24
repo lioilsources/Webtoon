@@ -1,0 +1,23 @@
+# Banff – Zimní odchod: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rl_02_banff
+kind: strip
+title: Banff – Zimní odchod
+world: w_rl_02_banff
+audience: adult
+language: cs
+style_id: clean_webtoon_noartist
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [pine trees, snow, path, winter light], bubbles: [{speaker_id: '', text: Banff. Lesní cesta., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [{chloe: hiking}], tags: [walking alone, looking around, cold, hands in pockets], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [{chloe: hiking}], tags: [sad, looking down, shivering], bubbles: [{speaker_id: chloe, text: Jsem moc vysoká a studená…, kind: thought}], gap: small}
+  - {shot: medium, loc: l_forest, who: [{chloe: hiking}, ethan], tags: [couple, hetero, man standing, woman standing, looking at her, smile, snow falling], bubbles: [{speaker_id: ethan, text: 'Vypadáš, jako bys hledala něco víc než výhled.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_cabin, who: [chloe, {ethan: indoor}], tags: [couple, hetero, sitting on sofa, wine glasses, fireplace, close proximity, warm light], bubbles: [{speaker_id: '', text: Večer v chatě., kind: narration}, {speaker_id: ethan, text: Zůstaň přes noc., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [chloe, {ethan: indoor}], tags: [couple, hetero, man removing jacket, standing, faces close, tension], bubbles: [{speaker_id: chloe, text: Pomalu…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_bedroom, who: [chloe, {ethan: indoor}], tags: [couple, hetero, kiss, embrace, eyes closed, soft light], gap: medium}
+  - {shot: medium, loc: l_bedroom, tags: [lamp going out, curtain blowing, dark room, no humans], bubbles: [{speaker_id: '', text: Ticho. Jen dýchání., kind: narration}], gap: large}
+  - {shot: wide, loc: l_bedroom, who: [{chloe: morning}, {ethan: indoor}], tags: [couple, hetero, morning light, adjusting jacket, sitting on sofa, sad, looking away], bubbles: [{speaker_id: ethan, text: Musím odjet. Nechci tě bolet., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [{chloe: hiking}], tags: [walking away, back view, snow, lonely], bubbles: [{speaker_id: '', text: Zůstává sama., kind: narration}], gap: large}

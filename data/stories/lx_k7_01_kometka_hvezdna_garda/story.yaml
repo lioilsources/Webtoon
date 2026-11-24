@@ -1,0 +1,24 @@
+# Kometka a Temný Mračný: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_01_kometka_hvezdna_garda
+kind: strip
+title: Kometka a Temný Mračný
+world: w_lx_k7_01_kometka_hvezdna_garda
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_base, tags: [space station interior, metal walls, window view, nebula, stars, map on wall], bubbles: [{speaker_id: '', text: Kosmická základna v noci., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: medium, loc: l_base, who: [krtek, alenka], tags: [standing, pointing, sitting on pole, holding popcorn, serious face, map], bubbles: [{speaker_id: krtek, text: Kometko! Tři hvězdy zmizely. Z mapy. Ze světa., kind: shout}, {speaker_id: alenka, text: 'A kdo je viděl naposledy?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_base, who: [alenka], tags: [reading map, surprised, open mouth, holding map, worried], bubbles: [{speaker_id: alenka, text: Bylo mi zima., kind: speech}, {speaker_id: alenka, text: 'Generále. Tohle udělalo něco, čemu byla zima.', kind: thought}], gap: medium}
+  - {shot: wide, loc: l_space, who: [alenka], tags: [flying, speed lines, star trail, text trail, cape flowing, fast motion], bubbles: [{speaker_id: alenka, text: Jdu se podívat., kind: speech}], sfx: [{text: FWOOOSH!, style: bold}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: wide, loc: l_space, who: [alenka, mrac], tags: [black nebula, glowing eyes, floating, entering cloud, small figure, large spirit], bubbles: [{speaker_id: mrac, text: 'Kdo se odvažuje vstoupit?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_space, who: [alenka], tags: [standing in space, holding slingshot, glowing star, calm face, pointing], bubbles: [{speaker_id: alenka, text: 'Bylo ti zima? Kolik hvězd jsi snědl? A chtělo by to jednoho kamaráda?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_space, who: [mrac], tags: [sad face, glowing eyes dim, floating, hands to chest, vulnerable], bubbles: [{speaker_id: mrac, text: Narodil jsem se z černé díry. Nikdy jsem nezářil., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_space, who: [alenka], tags: [pulling slingshot, glowing star, aiming, determined, bright light], bubbles: [{speaker_id: alenka, text: Vezmi si ji jako naději., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_core, who: [alenka, mrac], tags: [star flying, nebula glowing, explosion of light, stars appearing, magical effect], bubbles: [{speaker_id: mrac, text: 'Já… já cítím… světlo?', kind: speech}], sfx: [{text: SHIMMER!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_core, who: [alenka, mrac], tags: [smiling, happy, glowing spirit, peaceful, stars around], bubbles: [{speaker_id: alenka, text: 'Hvězdy jsou kamarádi, kteří zahřívají.', kind: speech}, {speaker_id: mrac, text: Kometko. Já bych rád někomu zahřál., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_base, who: [krtek, alenka], tags: [looking at map, confused, sitting on pole, holding popcorn, map glowing], bubbles: [{speaker_id: krtek, text: 'Kometko. Co jsi to udělala?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_base, who: [alenka, mrac], tags: [nebula outside window, protecting stars, peaceful, smiling, friendship], bubbles: [{speaker_id: alenka, text: Přidala do gardy jednoho nováčka., kind: speech}], gap: large}

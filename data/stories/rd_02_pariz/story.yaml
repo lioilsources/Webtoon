@@ -1,0 +1,22 @@
+# Paříž, polévka a odvaha: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_02_pariz
+kind: strip
+title: Paříž, polévka a odvaha
+world: w_rd_02_pariz
+audience: adult
+language: cs
+style_id: ligne_claire
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_bistro, who: [chloe], tags: [sitting alone by window, writing, coffee cup], bubbles: [{speaker_id: '', text: 'Montmartre, zima.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bistro, who: [etienne], tags: [placing soup bowl on table, calm], bubbles: [{speaker_id: chloe, text: Já jsem si objednala jen kávu., kind: speech}, {speaker_id: etienne, text: Vím. Ale píšete už dvě hodiny a nejíte., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bistro, who: [chloe], tags: [holding notebook, smirk], bubbles: [{speaker_id: chloe, text: Právě jste dostal do recenze hvězdičku., kind: speech}, {speaker_id: etienne, text: 'Připište, že polévka je zdarma pro každého, kdo se tváří smutně.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bistro, who: [chloe], tags: [placing book on counter, evening], bubbles: [{speaker_id: '', text: O týden později., kind: narration}, {speaker_id: chloe, text: Tu jste zapomněl., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bistro, who: [etienne], tags: [sitting at table, looking at viewer, gentle], bubbles: [{speaker_id: etienne, text: 'Já nic nezapomněl. Čekal jsem, jestli se vrátíte.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bistro, who: [chloe, etienne], tags: [couple, hetero, sitting across table, looking at each other], bubbles: [{speaker_id: etienne, text: 'A ta recenze je dobrá?', kind: speech}, {speaker_id: chloe, text: 'Nejlepší, co jsem kdy napsala.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_stairs, who: [chloe, {etienne: coat}], tags: [couple, hetero, walking up stairs, fog, breath, night], bubbles: [{speaker_id: chloe, text: 'Bála jsem se. Že kdybych měla ráda, musela bych přestat psát.', kind: speech}, {speaker_id: etienne, text: 'Psát jinak. Psát jako někdo, kdo má rád.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_stairs, who: [chloe, {etienne: coat}], tags: [couple, hetero, kiss, standing on step, closed eyes, fog], gap: small}
+  - {shot: medium, loc: l_stairs, who: [chloe, {etienne: coat}], tags: [couple, hetero, hug, smile], bubbles: [{speaker_id: chloe, text: Do recenze přidám hvězdičku., kind: speech}, {speaker_id: etienne, text: 'Proč?', kind: speech}, {speaker_id: chloe, text: Za chuť., kind: speech}], gap: large}

@@ -1,0 +1,23 @@
+# Anděl z pláže South Beach: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ra_07_miami
+kind: strip
+title: Anděl z pláže South Beach
+world: w_ra_07_miami
+audience: adult
+language: cs
+style_id: western_comic
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_ocean, tags: [art deco buildings, palm trees, people roller skating], bubbles: [{speaker_id: '', text: 'Ocean Drive, Miami.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_ocean, who: [lucas], tags: [sitting on bench, adjusting glasses, watching people, sad], gap: medium}
+  - {shot: close-up, loc: l_ocean, who: [lucas], tags: [sigh, pushing up glasses, melancholy], bubbles: [{speaker_id: lucas, text: Celé dny trávím u počítače., kind: thought}], gap: small}
+  - {shot: medium, loc: l_ocean, who: [lucas], tags: [slouching on bench, looking down], bubbles: [{speaker_id: lucas, text: V tomhle městě plném slunce a dokonale opálených lidí jsem jako duch z jiné planety., kind: thought}], gap: large}
+  - {shot: wide, loc: l_beach, who: [camila], tags: [running, tripping over driftwood, falling, motion lines], gap: small}
+  - {shot: medium, loc: l_beach, who: [camila, lucas], tags: [couple, hetero, man running to help, kneeling, woman sitting on sand, concerned], bubbles: [{speaker_id: lucas, text: 'Jste v pořádku? Nenařízla jste si nohu?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [camila], tags: [sitting on sand, smile, brushing sand off knee], bubbles: [{speaker_id: camila, text: Jen trocha písku! Ale děkuji... Vy jste tak pozorný., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_beach, who: [camila], tags: [warm smile, laughing], bubbles: [{speaker_id: camila, text: Většina kluků tady jen předvádí bicepsy a ani by si nevšimla., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_beach, who: [lucas], tags: [blush, embarrassed, looking away], bubbles: [{speaker_id: lucas, text: Já nejsem žádný sportovec... Jen obyčejný klučina z kanceláře., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [camila, lucas], tags: [couple, hetero, standing up, woman holding his hand, warm smile, ocean], bubbles: [{speaker_id: camila, text: 'Právě proto jste výjimečný. Pojďte, pozvu vás na čerstvý kokosový džus jako poděkování!', kind: speech}], gap: large}

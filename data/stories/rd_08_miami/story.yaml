@@ -1,0 +1,23 @@
+# Miami, boxer a píseň: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_08_miami
+kind: strip
+title: Miami, boxer a píseň
+world: w_rd_08_miami
+audience: adult
+language: cs
+style_id: retro_citypop
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_gym, who: [solange], tags: [wet, running inside, broken umbrella, rain], bubbles: [{speaker_id: solange, text: 'Promiňte — mohla bych se schovat? Prší jako na Haiti.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gym, who: [rafa], tags: [holding towel, offering towel, smile], bubbles: [{speaker_id: rafa, text: 'Tady schováváme boxery, ale dámy s rozbitým deštníkem taky.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_gym, who: [solange], tags: [drying hair with towel, smile], bubbles: [{speaker_id: solange, text: 'Vy jste ten boxer, ne?', kind: speech}, {speaker_id: rafa, text: Byl. Lepší je učit dětské rány než rozdávat vlastní., kind: speech}], gap: large}
+  - {shot: wide, loc: l_beach, who: [solange], tags: [singing, eyes closed, sunset], sfx: [{text: ♪, style: bold}], gap: small}
+  - {shot: medium, loc: l_beach, who: [rafa], tags: [sitting on sand, listening, moved], bubbles: [{speaker_id: rafa, text: Můj táta takhle zpíval. Ta píseň — zpívala jste ji úplně stejně., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_beach, who: [rafa, solange], tags: [couple, hetero, sitting together on sand, sunset], bubbles: [{speaker_id: rafa, text: 'Říkali mi, že musím být kamenný.', kind: speech}, {speaker_id: solange, text: 'Kamenný muž, který se nebojí měkkosti. To je v Miami vzácné.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_harbor, who: [{rafa: dinner}], tags: [sitting at table, candles, nervous], bubbles: [{speaker_id: rafa, text: Nikdy jsem nebyl zamilovaný. A teď rozumím každému slovu o lásce., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_harbor, who: [solange], tags: [smile, candlelight], bubbles: [{speaker_id: solange, text: 'Tak to bude první polibek, který v životě dáte?', kind: speech}, {speaker_id: rafa, text: Ano., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_harbor, who: [{rafa: dinner}, solange], tags: [couple, hetero, kiss, closed eyes, candlelight], gap: small}
+  - {shot: medium, loc: l_harbor, who: [{rafa: dinner}, solange], tags: [couple, hetero, hug, head on chest, night], bubbles: [{speaker_id: solange, text: 'Skládám píseň pro chlapce z tělocvičny, který se nebojí být měkký.', kind: speech}], gap: large}

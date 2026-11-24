@@ -1,0 +1,21 @@
+# Stínová tlapka a probuzený faraon: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_04_stinova_tlapka_faraon
+kind: strip
+title: Stínová tlapka a probuzený faraon
+world: w_lx_k6_04_stinova_tlapka_faraon
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_giza, tags: [pyramids, night sky, stars, moon, sand dunes, silhouette], bubbles: [{speaker_id: '', text: Noční Gíza pod hvězdami., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, dust drifting, static camera'}
+  - {shot: medium, loc: l_giza, who: [sofie, luna], tags: [sitting on sand, holding flashlight, glowing eyes, looking up, whispering], bubbles: [{speaker_id: sofie, text: 'Luno, počet nemrtvých?', kind: speech}, {speaker_id: luna, text: Mňau-píp. Čtyři stovky. Plus jeden velmi sebevědomý., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_giza, who: [sofie], tags: [holding flashlight, determined, adjusting coat, serious face], bubbles: [{speaker_id: sofie, text: 'Plášť, baterka, pravidla: nic z pyramid neodnášíme, nikoho nezraníme, když nezraní oni.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pyramid, who: [khnum_tut], tags: [sitting on throne, stone throne, mummy, golden eyes, intimidating, stone walls, hieroglyphs], bubbles: [{speaker_id: khnum_tut, text: 'Soutěž, detektive! Uhádni, čeho se bojí král, který už nemůže zemřít – a ušetřím město!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [luna], tags: [glowing eyes, shining light, stone wall, painting, illuminating], gap: medium}
+  - {shot: medium, loc: l_pyramid, who: [sofie, khnum_tut], tags: [standing, looking at mummy, pointing, talking, stone wall background], bubbles: [{speaker_id: sofie, text: Bojíš se zapomnění. Proto chceš ovládat živé – abys nebyl sám., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pyramid, who: [sofie], tags: [extending hand, offering hand, kind smile, peaceful], bubbles: [{speaker_id: sofie, text: Tvoje služba skončila. Semena se dávno vysadila. Podívej se., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dawn, who: [khnum_tut], tags: [sitting, sunlight, glowing, dissolving, gold dust, smile, peaceful], gap: medium, animate: 'ambient only, characters still, soft glow pulsing, dust drifting, static camera'}
+  - {shot: medium, loc: l_dawn, who: [sofie, luna], tags: [standing, watching, smile, closed eyes, peaceful, sunrise background], bubbles: [{speaker_id: sofie, text: 'Klid, faraone. Vzpomínáme.', kind: speech}, {speaker_id: luna, text: Mňau. A my si odnášíme jenom vzpomínku. Jako slušní lidé., kind: speech}], gap: large}

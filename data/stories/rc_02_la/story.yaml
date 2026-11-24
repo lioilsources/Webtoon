@@ -1,0 +1,23 @@
+# Zlatý obzor: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_02_la
+kind: strip
+title: Zlatý obzor
+world: w_rc_02_la
+audience: adult
+language: cs
+style_id: photo_lightning
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_beach, who: [astrid], tags: [taking photo, holding camera, volleyball rolling at feet], gap: medium}
+  - {shot: medium, loc: l_beach, who: [mateo], tags: [waving, running, smile], bubbles: [{speaker_id: mateo, text: 'Promiň! Můžeš mi ho hodit?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_beach, who: [astrid, mateo], tags: [couple, hetero, woman holding volleyball, man catching ball, smile], bubbles: [{speaker_id: astrid, text: 'Můžu. Ale nejdřív mi řekni, jestli tady někde nepotkám skutečného prince.', kind: speech}, {speaker_id: mateo, text: Já jsem jen volejbalista. Ale můžu tě vzít na nejlepší smoothie v LA., kind: speech}], gap: large}
+  - {shot: wide, loc: l_walk, who: [astrid, mateo], tags: [couple, hetero, walking side by side, holding smoothie cups], bubbles: [{speaker_id: astrid, text: 'Lidi si myslí, že vysoká blondýna je automaticky sebevědomá.', kind: speech}, {speaker_id: mateo, text: 'A není?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_walk, who: [astrid], tags: [looking away, sad smile], bubbles: [{speaker_id: astrid, text: 'Někdy si připadám jako věž, která překáží.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_walk, who: [mateo], tags: [grin, looking at viewer], bubbles: [{speaker_id: mateo, text: 'Mně nepřekážíš. Naopak. Jsi první, kdo mě dnes porazil v hádce o míč.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_cliff, who: [{astrid: evening}, {mateo: evening}], tags: [couple, hetero, woman holding camera, man holding camera, sunset], bubbles: [{speaker_id: mateo, text: 'Můžu tě poprosit o jednu fotku? Ne mě. Tebe.', kind: speech}, {speaker_id: astrid, text: Já jsem za objektivem., kind: speech}, {speaker_id: mateo, text: Jednou., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cliff, who: [{astrid: evening}, {mateo: evening}], tags: [couple, hetero, kiss, arm around shoulder, sunset, closed eyes], gap: large}
+  - {shot: medium, loc: l_rest, who: [{astrid: evening}, {mateo: evening}], tags: [couple, hetero, man giving flower, holding flower, smile], bubbles: [{speaker_id: mateo, text: 'Astrid, ty nejsi věž. Jsi maják.', kind: speech}, {speaker_id: astrid, text: To je nejlepší kompliment od volejbalisty., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [{astrid: evening}, {mateo: evening}], tags: [couple, hetero, laughing, looking at each other, city lights], bubbles: [{speaker_id: mateo, text: A příště tě naučím hrát., kind: speech}, {speaker_id: astrid, text: A já tě naučím fotit., kind: speech}], gap: large}

@@ -1,0 +1,22 @@
+# Jamajka – Kovboj v Negrilu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_10_jamaica
+kind: strip
+title: Jamajka – Kovboj v Negrilu
+world: w_rb_10_jamaica
+audience: adult
+language: cs
+style_id: clean_webtoon
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_beach, who: [cole], tags: [sitting on sand, alone, cowboy hat], bubbles: [{speaker_id: cole, text: Tady jsem cizinec…, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_beach, who: [amara], tags: [dancing, barefoot, twirling, happy], gap: medium}
+  - {shot: medium, loc: l_beach, who: [amara, cole], tags: [couple, hetero, woman stopping, pointing at hat, smile], bubbles: [{speaker_id: amara, text: 'Klobouk ti sluší. Jsi z Ameriky?', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bar, who: [amara, cole], tags: [couple, hetero, sitting at bar, drinks, laughing], bubbles: [{speaker_id: amara, text: 'Žiju tady. A ty?', kind: speech}, {speaker_id: cole, text: 'Přijel jsem hledat něco, co ranch nemá.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_sunset, who: [amara, cole], tags: [couple, hetero, hug, embrace, sunset, waves], gap: medium}
+  - {shot: close-up, loc: l_sunset, who: [cole], tags: [gentle smile, sunset light], bubbles: [{speaker_id: cole, text: Ty mě nevidíš jako kovboje. Vidíš mě., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_sunset, who: [amara, cole], tags: [couple, hetero, kiss, closed eyes, sea breeze], gap: large}
+  - {shot: medium, loc: l_rest, who: [{cole: dinner}], tags: [sitting, hat on table, smile], bubbles: [{speaker_id: cole, text: Poprvé se cítím doma i daleko od domova., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [amara, {cole: dinner}], tags: [couple, hetero, holding hands across table, candlelight, smile], bubbles: [{speaker_id: amara, text: Protože jsi tady se mnou., kind: speech}], gap: large}

@@ -1,0 +1,24 @@
+# Queenstown – Poslední sjezd: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_09_queenstown
+kind: strip
+title: Queenstown – Poslední sjezd
+world: w_rf_09_queenstown
+audience: adult
+language: cs
+style_id: anime_screencap
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_slope, tags: [snowy mountains, ski slope, lake below], bubbles: [{speaker_id: '', text: Queenstown. Hory., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_slope, who: [nora, liam], tags: [couple, hetero, standing at top of slope, man smirking], bubbles: [{speaker_id: liam, text: 'Nebojíš se?', kind: speech}, {speaker_id: nora, text: Ne., kind: speech}, {speaker_id: liam, text: Lžeš., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_slope, who: [nora], tags: [laughing, snow], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{nora: cabin}, {liam: cabin}], tags: [couple, hetero, sitting by fireplace, mugs, warm light], bubbles: [{speaker_id: liam, text: 'Proč jsi přijela sama?', kind: speech}, {speaker_id: nora, text: Protože jsem potřebovala začít znovu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{nora: cabin}, {liam: cabin}], tags: [couple, hetero, kiss, firelight], bubbles: [{speaker_id: liam, text: Tak začni., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{nora: coat}], tags: [holding phone, worried, shocked], bubbles: [{speaker_id: '', text: Poslední den zavolají z domova. Otec je nemocný., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{nora: coat}, {liam: cabin}], tags: [couple, hetero, facing each other, man stepping forward], bubbles: [{speaker_id: liam, text: Pojedu s tebou., kind: speech}, {speaker_id: nora, text: Nemůžeš., kind: speech}, {speaker_id: liam, text: 'Proč?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{nora: coat}, {liam: cabin}], tags: [couple, hetero, hug, sad], bubbles: [{speaker_id: nora, text: Protože jsme se znali jen týden., kind: speech}], gap: large}
+  - {shot: medium, loc: l_house, who: [{liam: home}], tags: [opening door, surprised], bubbles: [{speaker_id: '', text: O několik měsíců později., kind: narration}], gap: small}
+  - {shot: medium, loc: l_house, who: [{nora: coat}, {liam: home}], tags: [couple, hetero, woman standing on porch with suitcase, smiling], bubbles: [{speaker_id: liam, text: 'Říkal jsem si, jestli přijdeš.', kind: speech}, {speaker_id: nora, text: Já taky., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_house, who: [{nora: coat}, {liam: home}], tags: [couple, hetero, embrace, smiling, eyes closed], gap: large}

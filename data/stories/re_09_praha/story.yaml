@@ -1,0 +1,23 @@
+# Klobouk v Praze: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_09_praha
+kind: strip
+title: Klobouk v Praze
+world: w_re_09_praha
+audience: adult
+language: cs
+style_id: ink_wash
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_river, who: [sean], tags: [holding map, lost, cowboy hat, looking around], gap: medium}
+  - {shot: medium, loc: l_river, who: [petra], tags: [shaping clay, looking up, amused], bubbles: [{speaker_id: petra, text: Pane. Klobouk dovnitř nenosíme. Praha je vysoká., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_river, who: [sean], tags: [confused, scratching head], bubbles: [{speaker_id: sean, text: 'Nejdřív jsem šel rovně. Teď jsem tady. Kde je tady?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_river, who: [petra], tags: [smile, clay on hands], bubbles: [{speaker_id: petra, text: 'Nejhezčí místo, které jste mohl ztratit. Sedněte si.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_workshop, who: [sean], tags: [using potter's wheel, clay splashing on hat, clumsy], bubbles: [{speaker_id: sean, text: V Irsku hlína poslouchá., kind: speech}], sfx: [{text: ČVACHT, style: bold}], gap: medium}
+  - {shot: medium, loc: l_workshop, who: [petra], tags: [standing by fireplace, arms crossed, smile], bubbles: [{speaker_id: petra, text: Hlína nikde neposlouchá. Hlína naslouchá. Zkuste to znovu. Pomaleji., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_workshop, who: [sean], tags: [holding small ugly bowl, moved, proud], bubbles: [{speaker_id: sean, text: 'První věc, kterou jsem v životě vyrobil rukama.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_bridge, who: [petra, sean], tags: [couple, hetero, walking, statues, dusk, man holding hat in hand], bubbles: [{speaker_id: petra, text: Sundal jste klobouk., kind: speech}, {speaker_id: sean, text: Řekl jsem skoro nikdy. Jste ten rozdíl mezi skoro a vždycky., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bridge, who: [sean], tags: [looking at viewer, gentle], bubbles: [{speaker_id: sean, text: 'Hledal jsem ženu, která mě naučí dělat věci pomalu. Našel jsem tři najednou. Všechny se jmenují Petra.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_bridge, who: [petra, sean], tags: [couple, hetero, kiss, statues, dusk, cowboy hat on ground, closed eyes], gap: large}

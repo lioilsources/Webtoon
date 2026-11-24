@@ -1,0 +1,28 @@
+# Londýn – Kovboj v dešti: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_londyn2
+kind: strip
+title: Londýn – Kovboj v dešti
+world: w_r_londyn
+audience: adult
+language: cs
+style_id: manga_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_station, tags: [rain, heavy rain, puddles], bubbles: [{speaker_id: '', text: Londýn. Déšť., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_station, who: [emily], tags: [broken umbrella, holding umbrella, wet, rain, annoyed], sfx: [{text: KŘUP, style: bold}], gap: small}
+  - {shot: medium, loc: l_station, who: [oliver], tags: [holding umbrella, smile, rain], bubbles: [{speaker_id: oliver, text: 'Potřebujete zachránit?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_station, who: [emily, oliver], tags: [couple, hetero, sharing umbrella, rain], bubbles: [{speaker_id: emily, text: 'Můj deštník nebo mě?', kind: speech}, {speaker_id: oliver, text: Podle situace obojí., kind: speech}], gap: large}
+  - {shot: medium, loc: l_pub, who: [emily, oliver], tags: [couple, hetero, sitting at bar, beer], bubbles: [{speaker_id: emily, text: 'Všichni tady vypadají, jako by se narodili v Londýně.', kind: speech}, {speaker_id: oliver, text: Já ne., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_pub, who: [oliver], tags: [deadpan, holding pint glass], bubbles: [{speaker_id: emily, text: Ty ano., kind: speech}, {speaker_id: oliver, text: Narodil jsem se ve Walesu., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_pub, who: [emily], tags: [laughing, closed eyes], gap: large}
+  - {shot: wide, loc: l_farm, who: [emily], tags: [petting horse, smile, happy], bubbles: [{speaker_id: '', text: 'Oliver zjistí, že Emily miluje koně.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_farm, who: [emily, oliver], tags: [couple, hetero, leaning on fence, horse in background], bubbles: [{speaker_id: emily, text: Takže ty nejsi kovboj., kind: speech}, {speaker_id: oliver, text: Ne., kind: speech}, {speaker_id: emily, text: Škoda., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_farm, who: [oliver], tags: [smile, holding cowboy hat], bubbles: [{speaker_id: oliver, text: Můžu se to naučit., kind: speech}], gap: large}
+  - {shot: medium, loc: l_platform, who: [emily], tags: [holding plane ticket, looking down], bubbles: [{speaker_id: oliver, text: 'Kdy odlétáš?', kind: speech}, {speaker_id: emily, text: Za dva dny., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_platform, who: [oliver], tags: [worried, sad], gap: small}
+  - {shot: medium, loc: l_platform, who: [emily], tags: [small smile, looking at viewer], bubbles: [{speaker_id: emily, text: Ale možná ji nepoužiju., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_platform, who: [emily, oliver], tags: [couple, hetero, hug, smile], bubbles: [{speaker_id: emily, text: Tohle je rozhodně lepší než londýnský deštník., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_platform, who: [emily, oliver], tags: [couple, hetero, kiss, closed eyes], gap: large}

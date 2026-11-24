@@ -1,0 +1,23 @@
+# Bombajská čajová pauza: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_05_bombaj
+kind: strip
+title: Bombajská čajová pauza
+world: w_rd_05_bombaj
+audience: adult
+language: cs
+style_id: hassaku_soft
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_stall, who: [priya], tags: [running, rain, wet, under tin roof], bubbles: [{speaker_id: '', text: Období monzunů., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_stall, who: [arjun], tags: [pouring tea, offering cup, smile], bubbles: [{speaker_id: arjun, text: 'Silný, s kardamomem. Vypadáte jako člověk, který dnes potřebuje silný čaj.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_stall, who: [priya], tags: [holding tea cup, laughing, wet hair], bubbles: [{speaker_id: priya, text: Tohle je nejlepší čaj v celém Bombaji., kind: speech}, {speaker_id: arjun, text: Vím. Proto vám ho dávám zdarma., kind: speech}], gap: large}
+  - {shot: medium, loc: l_stall, who: [otec], tags: [standing, arms crossed, stern], bubbles: [{speaker_id: '', text: O dva týdny později., kind: narration}, {speaker_id: otec, text: 'Priyo. Proč stojíte pod tím stánkem každé ráno?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_stall, who: [priya], tags: [determined, holding cup], bubbles: [{speaker_id: priya, text: 'Protože mi tady někdo připravuje den tak, že se nebojím ho začít.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_stall, who: [arjun], tags: [respectful, hand on chest], bubbles: [{speaker_id: arjun, text: 'Odešel jsem, protože matka onemocněla. Vařil jsem čaj, abych ji uživil.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_marine, who: [priya, arjun], tags: [couple, hetero, sitting on seawall, two tea cups, night], bubbles: [{speaker_id: arjun, text: 'Nejsem bohatý. Mám jen čaj a ruce, které umějí pracovat.', kind: speech}, {speaker_id: priya, text: 'Máte ruce, které dělají lidem den lepší.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_marine, who: [priya, arjun], tags: [couple, hetero, holding hands, close-up of hands], gap: small}
+  - {shot: close-up, loc: l_marine, who: [priya, arjun], tags: [couple, hetero, kiss, closed eyes, rain], gap: small}
+  - {shot: medium, loc: l_marine, who: [priya, arjun], tags: [couple, hetero, hug, rain, smile], bubbles: [{speaker_id: priya, text: 'Zítra ráno. Stejný čas?', kind: speech}, {speaker_id: arjun, text: 'Každé ráno. Silný, s kardamomem.', kind: speech}], gap: large}

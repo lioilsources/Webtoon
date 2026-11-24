@@ -1,0 +1,22 @@
+# Lea a ztracená kometa: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_01_lea_ztracena_kometa
+kind: strip
+title: Lea a ztracená kometa
+world: w_lx_k5_01_lea_ztracena_kometa
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_station, tags: [space station interior, stars outside window, futuristic, no humans], bubbles: [{speaker_id: '', text: 'Vesmírná stanice, den.', kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: medium, loc: l_station, who: [lea, kometa], tags: [holding wand, fox flying, pointing, serious face, glowing wand], bubbles: [{speaker_id: kometa, text: 'Leo, Mech-králíci kradou prach z komety!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_station, who: [lea], tags: [holding wand, determined, glowing wand, ready], bubbles: [{speaker_id: lea, text: 'Tak je zastavíme. Hvězdo, připrav štít!', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_planet, who: [mech], tags: [robot rabbit, jumping, holding dust, glowing dust, crater], bubbles: [{speaker_id: mech, text: Píp! Prach je náš!, kind: speech}], sfx: [{text: PIP!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_planet, who: [lea, kometa], tags: [standing, pointing, robot rabbit, glowing dust, determined], bubbles: [{speaker_id: lea, text: Prach patří celé galaxii!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [lea], tags: [holding wand, glowing shield, magic effect, surprised, open mouth], sfx: [{text: SZÁR!, style: bold}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_planet, who: [mech], tags: [robot rabbit, hitting shield, sparks, falling apart, screws, metal parts], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_station_evening, who: [orb, lea], tags: [standing, holding medal, giving, smile, proud], bubbles: [{speaker_id: orb, text: 'Leo, zachránila jsi hvězdy.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_station_evening, who: [lea], tags: [holding medal, smile, closed eyes, happy, glowing cape], bubbles: [{speaker_id: lea, text: My všichni. Kometa je nejlepší parťák., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_station_evening, who: [lea, kometa], tags: [fox flying, holding medal, smile, looking at viewer, glowing], bubbles: [{speaker_id: kometa, text: A ty nejlepší hrdinka!, kind: speech}], gap: large}

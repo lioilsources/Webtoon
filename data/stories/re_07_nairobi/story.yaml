@@ -1,0 +1,23 @@
+# Nairobské slunce: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_07_nairobi
+kind: strip
+title: Nairobské slunce
+world: w_re_07_nairobi
+audience: adult
+language: cs
+style_id: painterly_oil
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_park, who: [mo], tags: [sprinting, coaching, shouting, sweat, sunny], bubbles: [{speaker_id: mo, text: Ještě jednou! Rychleji!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_park, who: [wanjiru], tags: [holding camera, water splash on camera, surprised], sfx: [{text: ŠPLÍCH, style: bold}], gap: medium}
+  - {shot: medium, loc: l_park, who: [mo], tags: [apologizing, hands up, embarrassed], bubbles: [{speaker_id: mo, text: 'Promiňte! Zaplatím! Jsem trenér, ne ničitel!', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_park, who: [wanjiru], tags: [smirk, looking at camera screen], bubbles: [{speaker_id: wanjiru, text: Klid. Mám to na fotce. Zlato. Smůla vám sluší., kind: speech}, {speaker_id: mo, text: To je nejhorší kompliment… a chci druhý., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [{mo: evening}], tags: [holding folder of poems, nervous, trembling hands], bubbles: [{speaker_id: mo, text: Básničky. Jsem svalovec s básněmi. Ve fitku o tom nikdo neví., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [wanjiru], tags: [gentle smile, photos on table], bubbles: [{speaker_id: wanjiru, text: 'Každý správný muž má šuplík, který nikdo neotevře. Ale čtěte nahlas.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [{mo: evening}], tags: [reading aloud, eyes closed, soft], bubbles: [{speaker_id: '', text: 'Hlas, který křičí na stadionu, teď šeptá slova o slunci, které se učí plavat.', kind: narration}], gap: large}
+  - {shot: wide, loc: l_hills, who: [wanjiru, {mo: evening}], tags: [couple, hetero, standing on hill, wind, sunset, valley], bubbles: [{speaker_id: wanjiru, text: 'Hledala jsem muže, který je silný, ale ne tvrdý. Který zvedne činku i mé pochybnosti.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_hills, who: [{mo: evening}], tags: [looking at viewer, gentle, golden light], bubbles: [{speaker_id: mo, text: 'A já hledal ženu, která opravdu vidí. Uvidíte mě i v den, kdy nesvedu ani úsměv.', kind: speech}], gap: small}
+  - {shot: wide, loc: l_hills, who: [wanjiru, {mo: evening}], tags: [couple, hetero, kiss, wind, sunset, silhouette], sfx: [{text: CVAK, style: bold}], gap: large}

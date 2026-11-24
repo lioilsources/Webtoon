@@ -1,0 +1,20 @@
+# Boro a démon v lese: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_08_boro_demon_v_lese
+kind: strip
+title: Boro a démon v lese
+world: w_lx_k5_08_boro_demon_v_lese
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_jungle, tags: [jungle, sunlight, vines, no humans], bubbles: [{speaker_id: '', text: 'Hustá džungle, kde se skrývá stín.', kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, light rays shimmering, static camera'}
+  - {shot: medium, loc: l_jungle, who: [boro, yang], tags: [standing, martial arts stance, holding staff, looking at each other, serious], bubbles: [{speaker_id: yang, text: 'Boro, démon krade světlo.', kind: speech}, {speaker_id: boro, text: Tak mu ho vezmu!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_temple, who: [demon], tags: [floating, dark cloud, glowing red eyes, menacing, shadow aura], bubbles: [{speaker_id: demon, text: Světlo je moje!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_temple, who: [boro], tags: [punching, energy ball, glowing hands, determined, action pose], bubbles: [{speaker_id: boro, text: Tak mě poraz!, kind: speech}], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_temple, who: [boro, demon], tags: [energy blast, impact, demon fading, light explosion, shockwave], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_temple, who: [demon], tags: [dissolving, smoke clearing, fading away, defeated], sfx: [{text: SWISH, style: bold}], gap: medium}
+  - {shot: wide, loc: l_village, who: [boro, yang], tags: [village background, people dancing, confetti, smiling, peaceful], bubbles: [{speaker_id: yang, text: 'Boro, jsi pravý bojovník.', kind: speech}, {speaker_id: boro, text: A ty nejlepší učitel., kind: speech}], gap: medium}
+  - {shot: establishing, loc: l_village, tags: [bright sun, blue sky, happy village, no humans], bubbles: [{speaker_id: '', text: Slunce opět svítí nad vesnicí., kind: narration}], gap: large, animate: 'ambient only, characters still, leaves swaying gently, city lights blinking, light rays shimmering, static camera'}

@@ -1,0 +1,22 @@
+# Neonová a škola čarodějnic: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k6_05_neonova_skola_carodejnic
+kind: strip
+title: Neonová a škola čarodějnic
+world: w_lx_k6_05_neonova_skola_carodejnic
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [dark forest, twisted trees, glowing mushrooms, fog, moonlight, mysterious], bubbles: [{speaker_id: '', text: 'Temné Vřesoviště, kde stromy šeptají.', kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, static camera'}
+  - {shot: wide, loc: l_clearing, who: [neonova, witch1, witch2], tags: [standing, holding wand, glowing wand, pointing, surprised, three witches, confronting], bubbles: [{speaker_id: neonova, text: Přišla jsem na soutěž kouzel! Vyhrát má to nejkrásnější!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_clearing, who: [witch1, witch2, witch3], tags: [three witches, laughing, evil smile, holding staffs, glowing purple magic, pointing], bubbles: [{speaker_id: witch1, text: 'Souhlas! První kolo: proměň smutek!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_clearing, who: [neonova], tags: [casting spell, holding wand, butterflies, glowing light, happy, smile, magic particles], gap: small, animate: 'butterflies fluttering around the girl, leaves swaying gently, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_clearing, who: [witch1, witch2, witch3], tags: [casting spell, holding staffs, chains, purple magic, angry, frowning, dark magic], bubbles: [{speaker_id: witch1, text: 'Prohráváš, děvče. Naše kouzla drží déle.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_clearing, who: [neonova], tags: [sad eyes, looking down, holding wand, determined, gentle smile], bubbles: [{speaker_id: neonova, text: Drží. Ale nikdo se k nim nechce vracet., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_clearing, who: [neonova, witch1, witch2], tags: [sitting on ground, putting down wand, witches crying, tears, dark magic fading, empty air], gap: medium}
+  - {shot: medium, loc: l_clearing, who: [neonova, witch3], tags: [handing out tissue, glowing tissue, crying witch, surprised, soft light], bubbles: [{speaker_id: neonova, text: Nemusíte být hodné. Stačí být první v něčem hezkém., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_clearing, who: [witch3], tags: [shy, looking away, blushing, whispering, small witch], bubbles: [{speaker_id: witch3, text: Zůstaň. Nauč nás. …Ale my zlobit nezapomeneme., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_clearing, who: [neonova, witch1, witch2], tags: [smiling, hugging, happy, glowing magic, friendship, warm light], bubbles: [{speaker_id: neonova, text: To je v pořádku. I mně se občas nechce. Pak si dáme kakao., kind: speech}], gap: large}

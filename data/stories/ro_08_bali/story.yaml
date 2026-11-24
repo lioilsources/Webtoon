@@ -1,0 +1,22 @@
+# Bali – Když se setkají dva světy: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ro_08_bali
+kind: strip
+title: Bali – Když se setkají dva světy
+world: w_ro_08_bali
+audience: adult
+language: cs
+style_id: anime_screencap
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_rice, tags: [green rice terraces, mist, mountain silhouettes, early morning light], bubbles: [{speaker_id: '', text: Bali – rýžová pole při úsvitu., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_rice, who: [diego], tags: [standing among rice, hands in pockets, thoughtful pose, sunrise glow], gap: medium}
+  - {shot: close-up, loc: l_rice, who: [diego], tags: [serious expression, eyes distant, soft sunrise lighting], bubbles: [{speaker_id: diego, text: Ring je všechno…, kind: thought}], gap: small}
+  - {shot: medium, loc: l_rice, who: [isabella], tags: [walking into frame, soft smile, blonde hair fluttering, sunlit field], bubbles: [{speaker_id: isabella, text: Ne., kind: speech}], gap: large}
+  - {shot: establishing, loc: l_villa, tags: [elegant dining room, candlelight, large window, garden view, evening shadows], bubbles: [{speaker_id: '', text: Villa – večeře při západu slunce., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, sitting at table, wine glasses, soft lighting, mutual smiles], bubbles: [{speaker_id: diego, text: 'Jsem rád, že jsi tady.', kind: speech}, {speaker_id: isabella, text: Já taky., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_villa, who: [{diego: dinner}, {isabella: dinner}], tags: [couple, hetero, standing close, hand on shoulder, gentle gaze, warm candle glow], bubbles: [{speaker_id: diego, text: Pomalu., kind: speech}, {speaker_id: isabella, text: Jsem s tebou., kind: speech}], gap: large}
+  - {shot: medium, loc: l_bedroom, tags: [dim lamp, soft blankets, closed door, night hush], bubbles: [{speaker_id: '', text: 'Noc se snáší, jejich srdce bijí v tichu.', kind: narration}], gap: medium}
+  - {shot: wide, loc: l_balcony, who: [{diego: morning}, {isabella: morning}], tags: [couple, hetero, balcony, sea view, sunrise, embracing, smiles, gentle breeze], bubbles: [{speaker_id: diego, text: Cítím se jako muž., kind: speech}, {speaker_id: isabella, text: Protože jsi., kind: speech}, {speaker_id: '', text: Zůstávají spolu., kind: narration}], gap: large}

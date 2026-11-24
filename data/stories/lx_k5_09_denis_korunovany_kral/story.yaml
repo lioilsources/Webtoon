@@ -1,0 +1,21 @@
+# Denis a korunovaný král: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_09_denis_korunovany_kral
+kind: strip
+title: Denis a korunovaný král
+world: w_lx_k5_09_denis_korunovany_kral
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_jungle, tags: [jungle path, dense trees, sunlight, no humans], bubbles: [{speaker_id: '', text: 'Hustá džungle, kde se skrývá Temný král.', kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, leaves swaying gently, light rays shimmering, static camera'}
+  - {shot: wide, loc: l_jungle, who: [denis, lisak], tags: [walking, looking around, fox running, determined face], bubbles: [{speaker_id: lisak, text: 'Denisi, Temný král ovládl zvířata!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_jungle, who: [denis], tags: [fist pump, determined, open mouth, hero pose], bubbles: [{speaker_id: denis, text: Tak je osvobodíme., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_cave, who: [temny_kral], tags: [sitting on throne, holding staff, menacing, glowing red eyes, dark aura], bubbles: [{speaker_id: temny_kral, text: Zvířata jsou moje!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_cave, who: [denis], tags: [holding card, casting spell, glowing card, shouting], bubbles: [{speaker_id: denis, text: 'Ne, jsou svobodná!', kind: shout}], sfx: [{text: BLIK!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_cave, who: [temny_kral, lisak], tags: [magic blast, wolf recoiling, fox barking, sparks, dynamic pose], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_lake, who: [denis, lisak], tags: [kneeling, holding fox, worried, fox sleeping, sunset], bubbles: [{speaker_id: denis, text: Lišáku!, kind: shout}], gap: medium}
+  - {shot: close-up, loc: l_lake, who: [lisak], tags: [sleeping, closed eyes, tired, soft fur], bubbles: [{speaker_id: lisak, text: Jsem v pořádku. Jen… musím odpočívat., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_lake, who: [denis, maya], tags: [standing, looking back, sad smile, lake background], bubbles: [{speaker_id: denis, text: Vrátím se., kind: speech}], gap: large}

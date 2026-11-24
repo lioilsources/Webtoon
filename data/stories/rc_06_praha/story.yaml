@@ -1,0 +1,22 @@
+# Pražské mosty: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_06_praha
+kind: strip
+title: Pražské mosty
+world: w_rc_06_praha
+audience: adult
+language: cs
+style_id: pastel_shoujo
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_kampa, who: [lucie], tags: [sitting, drawing in sketchbook, riverbank], gap: medium}
+  - {shot: medium, loc: l_kampa, who: [tunde], tags: [jogging, stopping, slightly out of breath, smile], bubbles: [{speaker_id: tunde, text: 'Promiňte, nevíte, kde je výstaviště?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_kampa, who: [lucie, tunde], tags: [couple, hetero, woman looking up, holding sketchbook, man leaning], bubbles: [{speaker_id: lucie, text: 'A vy jste z expa? Podle tracksuitu.', kind: speech}, {speaker_id: tunde, text: 'Ano. A vy kreslíte?', kind: speech}, {speaker_id: lucie, text: Jen si hraju., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_kampa, who: [tunde], tags: [warm smile], bubbles: [{speaker_id: tunde, text: To je nejlepší důvod., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [tunde], tags: [sitting at table, serious, hands together], bubbles: [{speaker_id: tunde, text: 'Lidi si myslí, že když mám svaly, nemám city.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [lucie], tags: [sitting, looking down, blush], bubbles: [{speaker_id: lucie, text: 'Já si myslím, že když mám kulaté boky, nejsem dost elegantní.', kind: speech}, {speaker_id: tunde, text: Mně připadáte velmi elegantní., kind: speech}], gap: large}
+  - {shot: wide, loc: l_bridge, who: [lucie, tunde], tags: [couple, hetero, man offering hand, holding hands, evening], bubbles: [{speaker_id: tunde, text: 'Lucie, můžu vás pozvat na večeři? A pak na procházku.', kind: speech}, {speaker_id: lucie, text: To zní jako plán., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [{lucie: evening}, {tunde: evening}], tags: [couple, hetero, sitting at table, candles, laughing], bubbles: [{speaker_id: lucie, text: 'Tak co, svalovče, našel jsi v Praze svou múzu?', kind: speech}, {speaker_id: tunde, text: 'Myslím, že ano.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_kampa, who: [{lucie: evening}, {tunde: evening}], tags: [couple, hetero, kiss, goodbye kiss, night, front door, street lamp], bubbles: [{speaker_id: '', text: Polibek na rozloučenou před jejím domem., kind: narration}], gap: large}

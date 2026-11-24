@@ -1,0 +1,22 @@
+# Tom a galaxie ztracených tvorů: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k2_08_tom_galaxie_ztracenych_tvoru
+kind: strip
+title: Tom a galaxie ztracených tvorů
+world: w_lx_k2_08_tom_galaxie_ztracenych_tvoru
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_space, tags: [spaceship, stars, planets, control panel, no humans], bubbles: [{speaker_id: '', text: Vesmírná loď letí mezi planetami., kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, city lights blinking, static camera'}
+  - {shot: medium, loc: l_space, who: [tom, zipp], tags: [looking at screen, pointing, curious, robot fox, smile], bubbles: [{speaker_id: tom, text: 'Myslíš, že tam někdo žije?', kind: speech}, {speaker_id: zipp, text: Pik!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_moon, who: [tom, zipp, rex], tags: [spaceship landing, dust cloud, soldier pointing, laser rifle, surprised, tense], bubbles: [{speaker_id: rex, text: Vzácné tvory prodávám sběratelům., kind: speech}], sfx: [{text: HUP!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_moon, who: [tom], tags: [standing firm, protective pose, hands on hips, determined, looking at viewer], bubbles: [{speaker_id: tom, text: On není věc., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_crater, who: [titan], tags: [giant creature, standing up, dust cloud, glowing veins, crystal core, imposing, from below], sfx: [{text: BOOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_crater, who: [tom, zipp], tags: [looking up, calm, holding hands, robot glowing, peaceful], bubbles: [{speaker_id: tom, text: 'Zippe, nezraníme ho.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_crater, who: [zipp], tags: [electric sparks, blue light, emitting signal, focused, ears perked], sfx: [{text: PIK!, style: bold}], gap: medium, animate: 'ambient only, characters still, dust motes floating, light shifting slowly, static camera'}
+  - {shot: wide, loc: l_crater, who: [titan, rex], tags: [titan calming, rex running away, fleeing, dust trail, relief], sfx: [{text: BĚH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_moon, who: [tom, zipp], tags: [looking at horizon, many lights, smile, hopeful, stars], bubbles: [{speaker_id: tom, text: Můžeme letět domů., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_moon, who: [tom, zipp], tags: [robot shaking head, robot nodding, hugging, happy, stars], bubbles: [{speaker_id: tom, text: 'Chceš zůstat?', kind: speech}, {speaker_id: tom, text: Tak zůstaneme., kind: speech}], gap: large}

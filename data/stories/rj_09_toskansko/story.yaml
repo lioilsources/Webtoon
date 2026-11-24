@@ -1,0 +1,24 @@
+# Kola v Toskánsku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_09_toskansko
+kind: strip
+title: Kola v Toskánsku
+world: w_rj_09_toskansko
+audience: adult
+language: cs
+style_id: flat_anime_mema
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vineyard, tags: [golden hills, mist, cypresses], bubbles: [{speaker_id: '', text: Toskánsko., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_vineyard, who: [marco], tags: [standing by bicycles, arms open, bright smile], bubbles: [{speaker_id: marco, text: 'Signora Hana! Dvacet kilometrů, tři kopce a oběd, na který se nezapomíná.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_vineyard, who: [hana], tags: [putting on helmet, skeptical, raised eyebrow], bubbles: [{speaker_id: hana, text: 'A průvodce, na kterého se nezapomíná? Slyšela jsem. Každá skupina má jednu, co vám na týden uvěří.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_vineyard, who: [marco], tags: [grin, playful], bubbles: [{speaker_id: marco, text: 'A každá skupina má jednu, co se mi snaží nesmát. Ta je vždycky nejzajímavější.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_lunch, who: [{hana: lunch}, {marco: lunch}], tags: [couple, hetero, sitting at long table alone, wine, cicadas], bubbles: [{speaker_id: hana, text: 'Mám jeden slib: zamiluju se jen do sebe. Žádné „ciao bella“, žádné loučení na letišti.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_lunch, who: [{marco: lunch}], tags: [serious, no smile], bubbles: [{speaker_id: marco, text: 'Poznám, kdy se žena směje doopravdy. Vy jste se smála třikrát. Naposledy teď, když jste řekla, že se nezamilujete.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_lunch, who: [{hana: lunch}], tags: [blush, wine glass trembling, flustered], bubbles: [{speaker_id: hana, text: To není fér., kind: speech}], gap: large}
+  - {shot: medium, loc: l_hill, who: [hana, marco], tags: [couple, hetero, kiss, kissing, sunset, bicycles], gap: small}
+  - {shot: medium, loc: l_hill, who: [hana, marco], tags: [couple, hetero, woman pulling away, breathing hard, hand raised], bubbles: [{speaker_id: hana, text: 'Loni jsem tady podlehla jinému průvodci. V listopadu napsal, že má přítelkyni. Řekla jsem si: už nikdy.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_hill, who: [hana, marco], tags: [couple, hetero, woman zipping up jacket, man pained], bubbles: [{speaker_id: marco, text: 'To není matematika. To je strach, kterému říkáte rozum.', kind: speech}, {speaker_id: hana, text: 'Možná. Ale rozum je jediné, co mě drží na kole.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_hill, who: [marco], tags: [standing alone beside bicycle, sunset, woman cycling away in distance], bubbles: [{speaker_id: '', text: 'V každé další skupině bude jedna, která se mu pokusí nesmát.', kind: narration}], gap: large}

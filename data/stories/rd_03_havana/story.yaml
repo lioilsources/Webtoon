@@ -1,0 +1,24 @@
+# Salsa na Havaně: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_03_havana
+kind: strip
+title: Salsa na Havaně
+world: w_rd_03_havana
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_malecon, who: [rosario], tags: [dancing, teaching salsa, hands on hips], bubbles: [{speaker_id: rosario, text: 'Salsa není v nohou, salsa je v bocích!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_malecon, who: [diego], tags: [holding trumpet, lowering trumpet, smirk], bubbles: [{speaker_id: diego, text: 'Nemáte rytmus, Rosario.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_malecon, who: [rosario], tags: [hands on hips, raised eyebrow], bubbles: [{speaker_id: rosario, text: 'Promiňte?', kind: speech}, {speaker_id: rosario, text: Tak pojďte. Ukažte mi., kind: speech}], gap: large}
+  - {shot: wide, loc: l_malecon, who: [rosario, diego], tags: [couple, hetero, dancing together, salsa, sunset], bubbles: [{speaker_id: '', text: Po západu slunce., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_malecon, who: [rosario, diego], tags: [couple, hetero, dancing, close, looking at each other], bubbles: [{speaker_id: diego, text: 'Tančíte, jako byste se bála, že by to mohlo být skutečné.', kind: speech}, {speaker_id: rosario, text: 'Cože?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_malecon, who: [rosario], tags: [serious, looking at viewer, wind in hair], gap: large}
+  - {shot: medium, loc: l_restaurant, who: [rosario, diego], tags: [couple, hetero, sitting at table, candles, reaching across table], bubbles: [{speaker_id: rosario, text: Bála jsem se. Ten poslední odešel před pěti lety., kind: speech}, {speaker_id: diego, text: 'Tohle je poprvé, co bych chtěl hrát pro někoho.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_restaurant, who: [diego], tags: [playing trumpet, eyes closed], bubbles: [{speaker_id: rosario, text: Tak hrajte. Já budu poslouchat. A neodejdu., kind: speech}], sfx: [{text: ♪, style: bold}], gap: large}
+  - {shot: wide, loc: l_dawn, who: [rosario, diego], tags: [couple, hetero, dancing slowly, dawn], gap: small}
+  - {shot: close-up, loc: l_dawn, who: [rosario, diego], tags: [couple, hetero, kiss, closed eyes, golden light], gap: small}
+  - {shot: medium, loc: l_dawn, who: [rosario, diego], tags: [couple, hetero, hug, smile], bubbles: [{speaker_id: diego, text: Tak tedy jste zůstala., kind: speech}, {speaker_id: rosario, text: Nezůstala. Přišla jsem domů., kind: speech}], gap: large}

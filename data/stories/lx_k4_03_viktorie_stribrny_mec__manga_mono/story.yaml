@@ -1,0 +1,21 @@
+# Viktorie a stín stříbrného meče: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_03_viktorie_stribrny_mec__manga_mono
+kind: strip
+title: Viktorie a stín stříbrného meče
+world: w_lx_k4_03_viktorie_stribrny_mec__manga_mono
+audience: kids
+language: cs
+style_id: manga_mono
+profile: superhero
+music: pool
+panels:
+  - {shot: establishing, loc: l_dungeon_entrance, tags: [stone walls, moss, darkness, torchlight, wet floor, no humans], bubbles: [{speaker_id: '', text: Vlhké podzemní bludiště pod hradem., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, static camera'}
+  - {shot: wide, loc: l_dungeon_entrance, who: [viktorie], tags: [walking, carrying giant sword, sword on back, heavy boots, serious expression, dark corridor], sfx: [{text: step... step, style: bold}], gap: medium}
+  - {shot: wide, loc: l_dungeon_entrance, who: [viktorie, demon], tags: [shadow monsters, jumping, claws, glowing red eyes, attacking, dark smoke], sfx: [{text: ROAR!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_dungeon_entrance, who: [viktorie], tags: [drawing sword, one hand, glowing sword, determined face, cold eyes], bubbles: [{speaker_id: viktorie, text: Dnes večer se v tomhle dungeonu rozplyne každý z vás., kind: speech}], sfx: [{text: SHING!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_dungeon_hall, who: [viktorie], tags: [spinning, sword slash, motion lines, sparks, fast movement, blur], sfx: [{text: SWISH! SWISH, style: bold}], gap: medium, animate: 'the sword blade blurs in a spinning motion, soft glow pulsing, static camera'}
+  - {shot: wide, loc: l_dungeon_hall, who: [demon], tags: [dissolving, black smoke, disappearing, claws fading, dark mist], sfx: [{text: POOF!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_dungeon_hall, who: [viktorie], tags: [sheathing sword, sword in scabbard, standing still, calm, looking forward], sfx: [{text: CLICK, style: bold}], gap: medium}
+  - {shot: over-shoulder, loc: l_dungeon_hall, who: [viktorie], tags: [looking down corridor, dark path, determined, back view, cape flowing], bubbles: [{speaker_id: viktorie, text: To byl jen průzkum… Pravý pán temnoty na mě teprve čeká v hlubinách., kind: speech}], gap: large}

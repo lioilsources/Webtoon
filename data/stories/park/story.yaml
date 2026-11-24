@@ -1,0 +1,26 @@
+# Veselý den v parku: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: park
+kind: strip
+title: Veselý den v parku
+world: w_park
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: wide, loc: l_park, who: [anicka, maxik], tags: [running, holding leash, leash, smile, open mouth, dog running], bubbles: [{speaker_id: anicka, text: 'Maxíku, dnes bude nejlepší den! Pojďme hledat poklad!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_park, who: [maxik], tags: [barking, open mouth, wagging tail, happy, looking at viewer], sfx: [{text: HAF! HAF!, style: bold}], gap: small}
+  - {shot: medium, loc: l_sand, who: [anicka], tags: [kneeling, digging, holding shovel, toy shovel, sand on face, excited, open mouth], bubbles: [{speaker_id: anicka, text: Tohle je mapa! Tady je X!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_park, who: [anicka, maxik], tags: [dog running, squirrel, pulled by dog, holding leash, surprised, motion lines, running], sfx: [{text: FRRR!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_park, who: [anicka, tomas], tags: [collision, ice cream, ice cream cone, dropping, surprised, open mouth, motion lines, falling], bubbles: [{speaker_id: tomas, text: Ááá! Moje zmrzlina!, kind: shout}], sfx: [{text: BUM!, style: bold}], gap: small}
+  - {shot: medium, loc: l_park, who: [anicka], tags: [apologizing, embarrassed, sweatdrop, hands together, bowing], bubbles: [{speaker_id: anicka, text: Promiň! Maxík jen hledal poklad!, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_park, who: [maxik], tags: ['(dog focus:1.3)', '(close to viewer:1.2)', full body, dog licking ice cream, '(ice cream cone on ground:1.2)', melting ice cream, wagging tail, happy, grass], sfx: [{text: LÍZ LÍZ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_bench, who: [novakova, anicka], tags: [sitting on bench, holding cookie, giving, smile, kind smile], bubbles: [{speaker_id: novakova, text: Tady máte sušenku pro statečného lovce pokladů., kind: speech}], gap: small}
+  - {shot: wide, loc: l_bench, who: [anicka, maxik], tags: [hugging dog, laughing, closed eyes, happy, dog eating, cookie], bubbles: [{speaker_id: anicka, text: 'Díky! Maxíku, jsi nejlepší pes na světě!', kind: speech}], gap: large}
+choices:
+  - {kind: closed, text: 'Ukázat poklad paní Novákové a zeptat se, komu patří.'}
+  - {kind: closed, text: Vyrazit s Tomášem a Maxíkem hledat další poklad u rybníka.}
+  - {kind: closed, text: Pozvat všechny na piknik pod velkým dubem.}
+  - {kind: free, text: 'Nebo napiš, co uděláš…'}

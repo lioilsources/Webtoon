@@ -1,0 +1,21 @@
+# Toby, pavoučí rytíř z Nocturna: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_06_toby_pavouci_rytir
+kind: strip
+title: Toby, pavoučí rytíř z Nocturna
+world: w_lx_k4_06_toby_pavouci_rytir
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_roof, tags: [city skyline, night, rain, spider signal, wet roof, neon lights], bubbles: [{speaker_id: '', text: Deštivá noc v Nocturnu., kind: narration}], gap: medium, animate: 'ambient only, characters still, rain falling, city lights blinking, static camera'}
+  - {shot: wide, loc: l_roof, who: [toby, sklebik, zombie_clown], tags: [toby swinging, web line, landing, zombie clown standing, scary smile, rain], bubbles: [{speaker_id: sklebik, text: 'Kdo nám to sem přiskákal? Malý pavouček, co si hraje na netopýra?!', kind: shout}], sfx: [{text: SPLASH!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_roof, who: [toby], tags: [toby landing, crouching, holding batons, determined, glowing eyes, rain], bubbles: [{speaker_id: toby, text: Město Nocturno patří spravedlnosti. A klauni patří do vězení!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_street, who: [toby], tags: [toby jumping, wall jump, dynamic pose, rain, motion lines, city background], sfx: [{text: WHOOSH!, style: bold}], gap: small}
+  - {shot: medium, loc: l_street, who: [toby], tags: [toby shooting, web shooter, giant net, web flying, determined], sfx: [{text: THWIP!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_street, who: [sklebik, zombie_clown], tags: [zombie clowns trapped, giant net, struggling, tied up, rain], sfx: [{text: THUD!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_street, who: [toby], tags: [toby throwing, acoustic bomb, explosion, sound waves, sklebik falling], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_street, who: [sklebik], tags: [sklebik tied up, under street lamp, unconscious, tied with web, sign], gap: medium}
+  - {shot: wide, loc: l_roof, who: [toby], tags: [toby running, leaping, cape flowing, city background, night, rain], bubbles: [{speaker_id: toby, text: 'Dobrou noc, Nocturno.', kind: speech}], sfx: [{text: WHOOSH!, style: bold}], gap: large, animate: 'ambient only, characters still, rain falling, static camera'}

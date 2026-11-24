@@ -1,0 +1,22 @@
+# Tinka a zlatá řeka: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_02_tinka_dzungle_vola
+kind: strip
+title: Tinka a zlatá řeka
+world: w_lx_k7_02_tinka_dzungle_vola
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_village, tags: [jungle village, morning sun, monkeys in trees, no humans], bubbles: [{speaker_id: '', text: Ráno v kmenové vesnici., kind: narration}], gap: medium, animate: 'ambient only, characters still, leaves swaying gently, city lights blinking, static camera'}
+  - {shot: medium, loc: l_village, who: [tinka, barvoun], tags: [sitting on log, petting beetle, blue beetle, looking at beetle, curious], bubbles: [{speaker_id: tinka, text: 'Barvouni, cos našel?', kind: speech}, {speaker_id: barvoun, text: Bzzz… řeka pláče…, kind: speech}], sfx: [{text: BZZZ, style: bold}], gap: medium}
+  - {shot: medium, loc: l_village, who: [tinka, kvetinar], tags: [running, pot on head, worried, open mouth, holding pot], bubbles: [{speaker_id: kvetinar, text: Tinko! Celá řeka se změnila na zlatou! Ryby neumí dýchat!, kind: shout}], gap: medium}
+  - {shot: wide, loc: l_village, who: [tinka, barvoun], tags: [giant beetle, girl riding beetle, jumping, determined, motion lines], bubbles: [{speaker_id: tinka, text: Tak jedeme. Džungle volá., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_river, who: [osika], tags: [giant gold creature, digging, gold dust, glowing water, standing by river, angry], bubbles: [{speaker_id: osika, text: 'Džungle je nepřirozená! Když ji pokryju zlatem, bude DOKONALÁ!', kind: shout}], gap: medium}
+  - {shot: medium, loc: l_river, who: [tinka, osika], tags: [girl on giant shoulder, pointing, gold shoulder, calm, confident], bubbles: [{speaker_id: tinka, text: 'Kdo ti řekl, že dokonalá je zlatá?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_river, who: [tinka], tags: [pointing, purple orchid, flower, serious, looking at flower], bubbles: [{speaker_id: tinka, text: 'Vidíš tu orchidej? Má flek. Ten flek ji dělá krásnou.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_river, who: [osika], tags: [looking at water, reflection, sad, kneeling, gold skin], bubbles: [{speaker_id: osika, text: Oni nejsou zlatí. A přesto jsou krásní., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_river, who: [tinka, barvoun, osika], tags: [pink beetle, sitting by river, clearing water, smile, peaceful], bubbles: [{speaker_id: tinka, text: 'To je nejkrásnější práce v džungli. Vítej v rodině, Osiko.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_fire, who: [tinka, barvoun, osika], tags: [campfire, night, sleeping girl, rainbow beetle, drawing in sand, gold drawings, happy], gap: large, animate: 'ambient only, characters still, stars twinkling, leaves swaying gently, soft glow pulsing, static camera'}

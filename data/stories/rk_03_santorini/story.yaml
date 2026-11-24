@@ -1,0 +1,25 @@
+# Santorini – Bílé stěny, modrá krev: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_03_santorini
+kind: strip
+title: Santorini – Bílé stěny, modrá krev
+world: w_rk_03_santorini
+audience: adult
+language: cs
+style_id: clean_webtoon
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_road, tags: [caldera, white houses, blue domes, sea], bubbles: [{speaker_id: '', text: Santorini. Silnice po hraně kaldery., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_road, who: [chloe], tags: [standing next to bicycle with flat tire, hands on hips, annoyed], sfx: [{text: PSSS!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_road, who: [chloe], tags: [looking around, empty road, sigh], bubbles: [{speaker_id: chloe, text: Uprostřed ničeho. Skvělé., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_road, who: [nikos], tags: [leaning out of old van window, grinning], bubbles: [{speaker_id: nikos, text: 'Turistko, tady nejezdí autobusy. Jen osud. A ten dnes vypadá jako já.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_road, who: [chloe, nikos], tags: [couple, hetero, loading bicycle into van, laughing, sunny], gap: medium}
+  - {shot: wide, loc: l_winery, who: [{chloe: evening}, {nikos: evening}], tags: [couple, hetero, wine tasting, holding wine glasses, barrels, lanterns], bubbles: [{speaker_id: '', text: Degustace. Z dálky buzuki., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_winery, who: [{chloe: evening}, {nikos: evening}], tags: [couple, hetero, dancing between barrels, man spinning woman, dress swirling, laughing], sfx: [{text: ♪, style: bold}], gap: medium}
+  - {shot: medium, loc: l_dome, who: [{chloe: evening}], tags: [slowly removing headscarf, hair in wind, city lights, looking back], gap: medium}
+  - {shot: medium, loc: l_dome, who: [{nikos: evening}], tags: [hands in pockets, respectful, soft gaze], bubbles: [{speaker_id: nikos, text: 'Můžu?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_dome, who: [{chloe: evening}], tags: [playful smile, night], bubbles: [{speaker_id: chloe, text: Můžeš. Ale zítra mě svezeš na kole dolů. Na zadním sedadle., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dome, who: [{chloe: evening}, {nikos: evening}], tags: [couple, hetero, kiss under blue dome, stars, silhouette], gap: small}
+  - {shot: wide, loc: l_dome, tags: [starry sky over santorini, no humans], bubbles: [{speaker_id: '', text: Zůstala. Vinárna má teď francouzský název a řecké srdce., kind: narration}], gap: large}

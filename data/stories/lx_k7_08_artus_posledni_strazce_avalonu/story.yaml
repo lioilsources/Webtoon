@@ -1,0 +1,20 @@
+# Artuš a poslední strážce Avalonu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_08_artus_posledni_strazce_avalonu
+kind: strip
+title: Artuš a poslední strážce Avalonu
+world: w_lx_k7_08_artus_posledni_strazce_avalonu
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_avalon, tags: [white towers, silver forest, lake, fog, morning sun, mystical], bubbles: [{speaker_id: '', text: Ostrov Avalon v mlžném ránu., kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, static camera'}
+  - {shot: wide, loc: l_avalon, who: [artus, jezerna], tags: [standing, holding sword, glowing sword, floating spirit, talking, serious], bubbles: [{speaker_id: jezerna, text: Artuši. Noc neskončí. Někdo přivedl Stínovou Slepici., kind: speech}, {speaker_id: artus, text: Tak ji najdu a zastavím., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [stina], tags: [shadow monster, large, black smoke, many ears, scary, emerging from fog], bubbles: [{speaker_id: stina, text: 'Přicházíš mě porazit? Noc je jediná bezpečná.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_forest, who: [artus], tags: [lowering sword, calm face, looking at monster, heroic pose], bubbles: [{speaker_id: artus, text: 'Ty se bojíš dne?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [stina, mala], tags: [monster shrinking, small girl appearing, hiding knees, sad, fog clearing], bubbles: [{speaker_id: mala, text: 'Kdysi jsem byla dítě, které se bálo dne.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_lake, who: [artus, mala], tags: [looking at water, reflection, holding mirror, gentle, hopeful], bubbles: [{speaker_id: artus, text: Neukážu ti světlo mečem. Ukážu ti světlo zrcadlem., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_lake, who: [mala], tags: [touching water, surprised, big ears, glowing eyes, reflection visible], bubbles: [{speaker_id: mala, text: 'To jsem já? Já mám oči?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_tower, who: [artus, mala], tags: [sitting on tower, looking at stars, sunrise, smiling, peaceful, fireflies], bubbles: [{speaker_id: mala, text: 'Děkuju, Artuši. Chtěla bych zůstat v noci – ale jako světluška.', kind: speech}, {speaker_id: artus, text: Ideální práce pro někoho s velkýma ušima., kind: speech}], gap: large, animate: 'ambient only, characters still, stars twinkling, leaves swaying gently, static camera'}

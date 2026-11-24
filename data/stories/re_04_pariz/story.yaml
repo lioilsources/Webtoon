@@ -1,0 +1,23 @@
+# Tiše v Paříži: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: re_04_pariz
+kind: strip
+title: Tiše v Paříži
+world: w_re_04_pariz
+audience: adult
+language: cs
+style_id: watercolor_paris
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_rain, who: [meilin], tags: [standing under awning, holding umbrella, rain, hesitant], gap: medium}
+  - {shot: medium, loc: l_rain, who: [henri], tags: [opening door, smile, gesturing inside], bubbles: [{speaker_id: henri, text: 'Knihkupectví je jediné místo, kde se nesmí mlčet. Ale můžete začít knihou.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rain, who: [meilin], tags: [shy, looking down, rain], bubbles: [{speaker_id: meilin, text: 'Já… jsem moc tichá. Hledám si v knihách odvahu, kterou nemám.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_books, who: [henri], tags: [pointing at bookshelf, smile], bubbles: [{speaker_id: henri, text: 'Pak jste přišla správně. Odvaha je na policích. Levá strana, druhá řada.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_books, who: [meilin, henri], tags: [couple, hetero, browsing books, man pretending to sort books], bubbles: [{speaker_id: henri, text: Mluvíte málo. Já mluvím moc. Jsme kompletní rozhovor., kind: speech}, {speaker_id: meilin, text: 'V Číně říkáme: nejhlasitější slovo je to, které čeká.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_books, who: [meilin], tags: [full smile, holding book], gap: medium}
+  - {shot: close-up, loc: l_books, who: [henri], tags: [stunned, open mouth, blush], gap: large}
+  - {shot: wide, loc: l_seine, who: [meilin, henri], tags: [couple, hetero, sitting on bench, croissants, sunset], bubbles: [{speaker_id: henri, text: 'Máte ráda Paříž?', kind: speech}, {speaker_id: meilin, text: 'Dnes mi připadá tichá. Protože někdo mi naslouchá, jako by ticho byla hudba.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_seine, who: [henri], tags: [gentle smile, sunset light], bubbles: [{speaker_id: henri, text: Ticho je hudba. Vy jste mi to dnes dokázala., kind: speech}], gap: small}
+  - {shot: medium, loc: l_seine, who: [meilin, henri], tags: [couple, hetero, hug, kiss on head, closed eyes, sunset], gap: large}

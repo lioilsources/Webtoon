@@ -1,0 +1,20 @@
+# Leo a mech-drak: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_09_leo_budouci_mesto
+kind: strip
+title: Leo a mech-drak
+world: w_lx_k3_09_leo_budouci_mesto
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_city, tags: [futuristic city, neon lights, night, rain, skyscrapers, no humans], bubbles: [{speaker_id: '', text: Neonové mrakodrapy v noci., kind: narration}], gap: medium, animate: 'ambient only, characters still, rain falling, city lights blinking, static camera'}
+  - {shot: wide, loc: l_building, who: [leo, web], tags: [climbing wall, holding spider, looking down, surprised, open mouth], bubbles: [{speaker_id: leo, text: 'Webe, drak útočí na město!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_building, who: [web], tags: [spider, piping, open mouth, looking at leo], sfx: [{text: PIP!, style: bold}], gap: small}
+  - {shot: wide, loc: l_city, who: [mech_drak], tags: [robot dragon, flying, breathing fire, glowing eyes, large, from below], sfx: [{text: HRRR!, style: bold}], gap: medium, animate: 'the dragon flaps its wings and breathes fire, rain falling, flames flickering, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_building, who: [leo], tags: [jumping, energy sword, glowing sword, dynamic pose, determined], bubbles: [{speaker_id: leo, text: Pavoučí skok!, kind: shout}], sfx: [{text: SZÁŠ!, style: bold}], gap: small}
+  - {shot: wide, loc: l_city, who: [leo, mech_drak], tags: [cutting wing, sparks, metal debris, sword clash, action], sfx: [{text: KLANG!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_city, who: [mech_drak], tags: [robot kneeling, power off, glowing eyes dimming, smoke, defeated], sfx: [{text: BZZZT..., style: bold}], gap: medium}
+  - {shot: close-up, loc: l_city, who: [leo], tags: [hand on robot, smile, kind smile, looking at robot], bubbles: [{speaker_id: leo, text: Můžeme spolupracovat., kind: speech}], gap: large}

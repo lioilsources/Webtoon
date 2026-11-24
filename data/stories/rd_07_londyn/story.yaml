@@ -1,0 +1,23 @@
+# Londýn, jedna bota u Temže: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rd_07_londyn
+kind: strip
+title: Londýn, jedna bota u Temže
+world: w_rd_07_londyn
+audience: adult
+language: cs
+style_id: photo_cyberreal_night
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_southbank, who: [oliver], tags: [sitting on bench, one shoe off, shoe on bench, night], bubbles: [{speaker_id: '', text: 'Southbank, podzim.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_southbank, who: [ivy], tags: [holding cello case, holding shoe, laughing], bubbles: [{speaker_id: ivy, text: 'Tohle je… vaše?', kind: speech}, {speaker_id: oliver, text: Ano. Puchýř. Omlouvám se za nepořádek., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_southbank, who: [oliver], tags: [standing, embarrassed, smile], bubbles: [{speaker_id: oliver, text: Oblek má systém. Život má systém. Puchýř systém nemá., kind: speech}, {speaker_id: ivy, text: 'A co máte rád, když systém neplatí?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_southbank, who: [oliver], tags: [looking at viewer, quiet], bubbles: [{speaker_id: oliver, text: Nevím. Nikdy jsem to nezkoušel., kind: speech}], gap: large}
+  - {shot: wide, loc: l_southbank, who: [ivy], tags: [playing cello, street performance, crowd, night], bubbles: [{speaker_id: '', text: O týden později., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_southbank, who: [oliver], tags: [standing in crowd, moved, teary eyes], bubbles: [{speaker_id: oliver, text: Poslouchám čísla celý den. A tohle bylo živé., kind: speech}, {speaker_id: ivy, text: 'Vždycky se ptají, proč nehraju v sále. Bojím se sálů.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_eye, who: [ivy, oliver], tags: [couple, hetero, sitting facing each other, night skyline], bubbles: [{speaker_id: ivy, text: Dnes jsem se rozhodla hrát v sále., kind: speech}, {speaker_id: oliver, text: 'Proč?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_eye, who: [ivy], tags: [looking at him, city lights], bubbles: [{speaker_id: ivy, text: 'Víc se bojím, že tohle — co cítím teď — zůstane jen náhodou.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_eye, who: [ivy, oliver], tags: [couple, hetero, kiss, closed eyes, london skyline], gap: small}
+  - {shot: medium, loc: l_eye, who: [ivy, oliver], tags: [couple, hetero, hug, smile], bubbles: [{speaker_id: oliver, text: 'Tohle je první věc v životě, kde žádný systém nechci.', kind: speech}], gap: large}

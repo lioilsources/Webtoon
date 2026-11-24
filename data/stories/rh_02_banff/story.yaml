@@ -1,0 +1,24 @@
+# Banff – Jen výhled: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_02_banff
+kind: strip
+title: Banff – Jen výhled
+world: w_rh_02_banff
+audience: adult
+language: cs
+style_id: clean_webtoon_noartist
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_trail, tags: [turquoise lake, pine forest, mountains], bubbles: [{speaker_id: '', text: Banff. Kanadské hory., kind: narration}], gap: medium, animate: snow falling outside window static camera}
+  - {shot: medium, loc: l_trail, who: [chloe], tags: [walking alone, hands in pockets, looking at lake], bubbles: [{speaker_id: chloe, text: Jsem moc vysoká a studená…, kind: thought}], gap: medium}
+  - {shot: wide, loc: l_trail, who: [chloe, ethan], tags: [couple, hetero, man coming down trail, meeting, both stopping, smile], gap: medium}
+  - {shot: close-up, loc: l_trail, who: [ethan], tags: [smile, looking at viewer, curious], bubbles: [{speaker_id: ethan, text: 'Vypadáš, jako bys hledala něco víc než výhled.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{chloe: dinner}, {ethan: dinner}], tags: [couple, hetero, sitting by fireplace, wine glasses, laughing, close], bubbles: [{speaker_id: '', text: Večer v chatě., kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_cabin, who: [{ethan: dinner}], tags: [serious, soft gaze, firelight], bubbles: [{speaker_id: ethan, text: Zůstaň přes noc., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [{chloe: dinner}, {ethan: dinner}], tags: [couple, hetero, forehead to forehead, kiss, embrace, firelight], bubbles: [{speaker_id: chloe, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, tags: [fireplace embers, snow falling outside window, no humans], bubbles: [{speaker_id: '', text: Oheň dohoří. Venku tiše sněží., kind: narration}], gap: large}
+  - {shot: medium, loc: l_porch, who: [{ethan: leave}], tags: [standing on porch, looking away, guilty, morning mist], bubbles: [{speaker_id: ethan, text: 'Musím odjet. Služební cesta. Nevím, kdy se vrátím.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_porch, who: [{chloe: morning}], tags: [sad, holding back tears, cold breath], bubbles: [{speaker_id: chloe, text: Já taky ne., kind: speech}], gap: small}
+  - {shot: wide, loc: l_trail, who: [{chloe: morning}], tags: [walking away alone, backpack, from behind, mountains, mist], bubbles: [{speaker_id: '', text: Chloe odchází sama. Tiše a bolestivě., kind: narration}], gap: large, animate: walking away alone static camera}

@@ -1,0 +1,20 @@
+# Nova a Mechanický Král: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k3_01_nova_vesmirna_galaxie
+kind: strip
+title: Nova a Mechanický Král
+world: w_lx_k3_01_nova_vesmirna_galaxie
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_xylar, tags: [purple sky, crystals, alien landscape, stars, no humans], bubbles: [{speaker_id: '', text: 'Planeta Xylar, fialové nebe.', kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, water rippling, clouds drifting slowly, static camera'}
+  - {shot: wide, loc: l_xylar, who: [nova, mechanicky_kral], tags: [holding shield, looking up, robot standing, large robot, determined, purple sky], bubbles: [{speaker_id: nova, text: 'Blaze, ten mech ničí hvězdy!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_xylar, who: [blaze], tags: [flying, dog flying, wings, happy, open mouth, motion lines], sfx: [{text: HAF!, style: bold}], gap: medium, animate: 'the dog flaps its ears and flies forward, stars twinkling, static camera'}
+  - {shot: wide, loc: l_battle, who: [nova, mechanicky_kral], tags: [robot shooting, laser beams, red laser, blocking, shield glowing, sparks, action], bubbles: [{speaker_id: nova, text: Teď!, kind: shout}], sfx: [{text: PIU! PIU!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_battle, who: [nova], tags: [shooting, light beam, energy blast, pointing, determined, open mouth], sfx: [{text: ŠVVV!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_battle, who: [mechanicky_kral], tags: [robot falling, broken arm, sparks, metal debris, falling, dramatic], sfx: [{text: BOOM!, style: bold}], gap: medium}
+  - {shot: wide, loc: l_cliff, who: [nova, mechanicky_kral], tags: [robot hanging, holding robot, saving, cliff edge, abyss, straining], bubbles: [{speaker_id: nova, text: I roboti můžou být lepší., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cliff, who: [mechanicky_kral], tags: [robot kneeling, bowing, metal plating, red eyes dim, peaceful], gap: large}

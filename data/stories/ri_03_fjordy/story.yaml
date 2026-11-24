@@ -1,0 +1,23 @@
+# Norské fjordy – Jachta: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_03_fjordy
+kind: strip
+title: Norské fjordy – Jachta
+world: w_ri_03_fjordy
+audience: adult
+language: cs
+style_id: thin_paint
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_deck, tags: [yacht on fjord, cliffs, waterfall], bubbles: [{speaker_id: '', text: Norské fjordy., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_deck, who: [tamara], tags: [holding camera, taking photo, wind, hair blowing], gap: medium}
+  - {shot: medium, loc: l_deck, who: [tamara, erik], tags: [couple, hetero, man at steering wheel, woman lowering camera, looking at each other], bubbles: [{speaker_id: tamara, text: 'Nevypadám tu trochu jako věž?', kind: speech}, {speaker_id: erik, text: Vypadáš jako maják. A já se podle tebe orientuju., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_deck, who: [tamara], tags: [laughing, wind], bubbles: [{speaker_id: tamara, text: To je hodně kapitánská odpověď., kind: speech}], gap: large}
+  - {shot: medium, loc: l_salon, who: [{erik: evening}], tags: [playing guitar, sitting, warm lamp light], gap: medium}
+  - {shot: medium, loc: l_salon, who: [{tamara: cozy}, {erik: evening}], tags: [couple, hetero, sitting on sofa, blanket, wine glasses, looking at each other], bubbles: [{speaker_id: erik, text: 'Tamaro, zůstaň ještě den. Nebo dva.', kind: speech}, {speaker_id: tamara, text: Mám letenku., kind: speech}, {speaker_id: erik, text: Já mám loď., kind: speech}], gap: large}
+  - {shot: wide, loc: l_fog, who: [{tamara: cozy}, erik], tags: [couple, hetero, morning fog, man handing coffee mug, steam], bubbles: [{speaker_id: tamara, text: Tak jo. Zůstávám., kind: speech}, {speaker_id: erik, text: To je nejlepší zpráva pro kapitána., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{tamara: dinner}, {erik: evening}], tags: [couple, hetero, embrace, standing at cabin door, warm lamp], bubbles: [{speaker_id: '', text: 'Kabát na háčku, kozačky pod lavicí.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{tamara: dinner}, {erik: evening}], tags: [couple, hetero, kiss, closed eyes, porthole, night], gap: small}
+  - {shot: establishing, loc: l_cabin, tags: [porthole, moonlight on fjord, lamp turned off, darkness], bubbles: [{speaker_id: '', text: Lampa zhasne., kind: narration}], gap: large}

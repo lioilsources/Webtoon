@@ -1,0 +1,25 @@
+# Jachta u Saint-Tropez: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rj_01_sainttropez
+kind: strip
+title: Jachta u Saint-Tropez
+world: w_rj_01_sainttropez
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_port, tags: [yachts, sparkling sea, sunny], bubbles: [{speaker_id: '', text: Saint-Tropez. Pozdní léto., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_port, who: [valentina], tags: [standing on pier, holding martini glass, looking at sea, wind], bubbles: [{speaker_id: valentina, text: Pět let bez dovolené. Tohle martini si zasloužím., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_port, who: [luca], tags: [standing on yacht deck, calling out, waving, smile], bubbles: [{speaker_id: luca, text: 'Madame! Jste jediná v přístavu, kdo se dívá na moře. Ostatní koukají na jachty.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_port, who: [valentina], tags: [amused smile, raised eyebrow, looking up], bubbles: [{speaker_id: valentina, text: 'A vy se díváte na mě. Tak kdo z nás dvou se tu nepředvádí?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_port, who: [valentina, luca], tags: [couple, hetero, man leaning over railing, woman on pier, looking at each other], bubbles: [{speaker_id: luca, text: 'Já. Ale jen abych vás pozval na večerní plavbu. Žádný přístav, žádní lidé. Jen vítr a víno.', kind: speech}, {speaker_id: valentina, text: 'Pozvání na útěk je nejlepší lichotka. V osm?', kind: speech}], gap: large}
+  - {shot: wide, loc: l_deck, who: [{valentina: evening}, {luca: evening}], tags: [couple, hetero, sitting at table, facing each other, pouring wine, candlelight], bubbles: [{speaker_id: valentina, text: 'Pět let jsem dělala PR pro cizí sny. Zapomněla jsem, jaké jsou moje.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_deck, who: [{luca: evening}], tags: [gentle smile, reaching across table], bubbles: [{speaker_id: luca, text: 'Tuhle loď jsem koupil po rozchodu. Myslel jsem, že kupuju útěk. Kupoval jsem čekání.', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_deck, who: [{valentina: evening}], tags: [soft smile, looking at viewer, candlelight], bubbles: [{speaker_id: valentina, text: 'Na co?', kind: speech}, {speaker_id: luca, text: 'Na někoho, kdo se zeptá, na co se dívám, a nechá mi čas na odpověď.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bow, who: [{valentina: evening}, {luca: evening}], tags: [couple, hetero, standing at railing side by side, moonlight, woman holding his collar], bubbles: [{speaker_id: valentina, text: 'Luco. Já se nechci vrátit do přístavu. Ani zítra, ani pozítří.', kind: speech}, {speaker_id: luca, text: Tak zůstaň. Loď má místo pro dva., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bow, who: [{valentina: evening}, {luca: evening}], tags: [couple, hetero, kiss, kissing, embrace, moonlight, wind in hair], gap: small}
+  - {shot: wide, loc: l_cabin, tags: [closed cabin door, warm light under door, moonlight on water through porthole], bubbles: [{speaker_id: '', text: Dveře kajuty se zavřou. Zůstane jen měsíc na vodě., kind: narration}], gap: large}
+  - {shot: medium, loc: l_deck, who: [{valentina: morning}, luca], tags: [couple, hetero, morning, sunrise, sharing coffee on deck, smiling, leaning on shoulder], bubbles: [{speaker_id: '', text: Ráno nikdo nemíří do přístavu., kind: narration}], gap: medium}

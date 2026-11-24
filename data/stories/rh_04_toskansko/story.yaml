@@ -1,0 +1,23 @@
+# Toskánsko – Celá: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rh_04_toskansko
+kind: strip
+title: Toskánsko – Celá
+world: w_rh_04_toskansko
+audience: adult
+language: cs
+style_id: ligne_claire
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_vine, tags: [rolling hills, vineyard rows, cypress], bubbles: [{speaker_id: '', text: Toskánsko. Vinice., kind: narration}], gap: medium, animate: 'cypress trees swaying in wind, static camera'}
+  - {shot: medium, loc: l_vine, who: [giulia], tags: [walking on road, adjusting dress, annoyed, looking away], bubbles: [{speaker_id: giulia, text: Všichni se dívají jen na… tohle., kind: thought}], gap: medium}
+  - {shot: wide, loc: l_vine, who: [luca], tags: [leaning on old truck, wiping hands with rag, watching], gap: medium}
+  - {shot: medium, loc: l_vine, who: [giulia, luca], tags: [couple, hetero, man walking up to woman, woman crossing arms, suspicious], bubbles: [{speaker_id: luca, text: Dívám se na tebe celou., kind: speech}], gap: large}
+  - {shot: medium, loc: l_barn, who: [{giulia: barn}, {luca: evening}], tags: [couple, hetero, sitting on hay bale, wine glasses, lantern, laughing], bubbles: [{speaker_id: '', text: Večer ve staré stodole., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_barn, who: [{giulia: barn}, {luca: evening}], tags: [couple, hetero, kiss, embrace, lantern light], bubbles: [{speaker_id: giulia, text: Pomalu…, kind: speech}], gap: medium}
+  - {shot: medium, loc: l_barn, tags: [lantern flame going out, hay, darkness, no humans], bubbles: [{speaker_id: '', text: Lucerna zhasne., kind: narration}], gap: large}
+  - {shot: medium, loc: l_road, who: [luca], tags: [standing by truck, looking down, guilty, dawn], bubbles: [{speaker_id: luca, text: Musím ti něco říct. Doma mám přítelkyni. Tohle byla chyba., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_road, who: [{giulia: morning}], tags: [tears, shocked, dawn light], bubbles: [{speaker_id: giulia, text: Chyba…, kind: speech}], gap: small, animate: 'tears welling up, static camera'}
+  - {shot: wide, loc: l_road, who: [{giulia: morning}], tags: [walking away on dirt road, from behind, mist, cypress], bubbles: [{speaker_id: '', text: Giulia odchází se slzami v očích., kind: narration}], gap: large}

@@ -1,0 +1,21 @@
+# Nika a stín v lese: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k5_03_nika_stin_v_lese
+kind: strip
+title: Nika a stín v lese
+world: w_lx_k5_03_nika_stin_v_lese
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_academy, tags: [rainbow bridge, floating islands, bright sun, magical sparkles, no humans], bubbles: [{speaker_id: '', text: Kouzelná akademie za dne., kind: narration}], gap: medium, animate: 'ambient only, characters still, clouds drifting slowly, city lights blinking, static camera'}
+  - {shot: wide, loc: l_academy, who: [nika, jiskra], tags: [riding unicorn, flying, holding wand, worried, looking down, grey clouds], bubbles: [{speaker_id: nika, text: 'Jiskro, les je nějaký šedý.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_academy, who: [jiskra], tags: [talking, open mouth, serious, glowing horn, looking at nika], bubbles: [{speaker_id: jiskra, text: Morana krade barvy!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_moonlit, who: [morana], tags: [standing, black cloak, holding staff, angry, glowing purple eyes, grey flowers, moonlight], bubbles: [{speaker_id: morana, text: Barvy jsou moje!, kind: shout}], gap: medium}
+  - {shot: medium, loc: l_moonlit, who: [nika, jiskra], tags: [flying in, holding wand, determined, pointing, rainbow light], bubbles: [{speaker_id: nika, text: Barvy patří všem!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_moonlit, who: [nika, jiskra, morana], tags: [magic blast, rainbow beam, shield, blocking, surprised, energy clash, glowing], sfx: [{text: ŠVYK!, style: bold}], gap: medium}
+  - {shot: medium, loc: l_moonlit, who: [morana], tags: [falling back, dropping staff, sad, crying, cloak torn, grey aura fading], bubbles: [{speaker_id: morana, text: Já… jsem jen chtěla být barevná., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_moonlit, who: [nika], tags: [smiling, kind smile, offering hand, holding rainbow scarf, gentle], bubbles: [{speaker_id: nika, text: 'Tak zůstaň. Naučíme tě, jak s barvami pracovat.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [morana, nika, jiskra], tags: [rainbow scarf, smiling, hugging, colorful forest, glowing plants, happy, moonlight], gap: large, animate: 'ambient only, characters still, stars twinkling, leaves swaying gently, soft glow pulsing, static camera'}

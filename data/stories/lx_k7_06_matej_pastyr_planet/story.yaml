@@ -1,0 +1,23 @@
+# Matej a pastýř planet: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k7_06_matej_pastyr_planet
+kind: strip
+title: Matej a pastýř planet
+world: w_lx_k7_06_matej_pastyr_planet
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_asteroid, tags: [asteroid field, comets, stars, deep space, no humans], bubbles: [{speaker_id: '', text: 'Prostředí: Sluneční soustava, pás asteroidů.', kind: narration}], gap: medium, animate: 'ambient only, characters still, stars twinkling, static camera'}
+  - {shot: wide, loc: l_asteroid, who: [matej, kralik], tags: [standing on rock, holding rope, rabbit sitting, counting, looking at distance, comets in background], bubbles: [{speaker_id: matej, text: '…sedm, osm, devět… Počkej. Kde je Klárka?', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_asteroid, who: [matej, kralik], tags: [rabbit pointing, paw pointing, looking at distance, matej looking, surprised, motion lines], bubbles: [{speaker_id: kralik, text: Pip! Pip-pip!, kind: speech}], gap: medium}
+  - {shot: wide, loc: l_planet, who: [matej, pozirac], tags: [large planet, swallowing small planet, glowing eyes, sad expression, mouth open, small planet entering mouth, matej watching], bubbles: [{speaker_id: matej, text: …Tohle ne., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [pozirac], tags: [planet face, glowing eyes, sad expression, mouth open, speaking], bubbles: [{speaker_id: pozirac, text: 'Odejdi, pastýři. Já žeru jen malé planety. Nikdo je nemá rád. Stejně jako mě.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [matej], tags: [holding rope, looking at planet, serious, hands on hips], bubbles: [{speaker_id: matej, text: 'Kdybys nebyl sám, žral bys planety?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [pozirac], tags: [planet face, glowing eyes, sad expression, mouth open, speaking], bubbles: [{speaker_id: pozirac, text: 'Nežeru proto, že mám hlad. Žeru proto, abych měl s kým být.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_planet, who: [matej, pozirac], tags: [throwing rope, glowing rope, planet face, surprised, mouth open, energy effect], bubbles: [{speaker_id: matej, text: 'Nabízím obchod: ty vyplivneš planety, které jsi snědl, a já ti každý den přivedu jednu planetku na návštěvu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [pozirac], tags: [planet face, glowing eyes, hopeful, mouth open, speaking], bubbles: [{speaker_id: pozirac, text: 'Návštěva? To funguje?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_planet, who: [matej], tags: [smiling, confident, holding rope, pointing], bubbles: [{speaker_id: matej, text: Na Zemi to funguje už milion let. Jmenuje se to kamarádství., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_pastvina, who: [matej, kralik, pozirac], tags: [planet glowing, small planets around planet, comets, stars, happy, smiling, rabbit sitting], bubbles: [{speaker_id: matej, text: 'Přesně, králíku. Přesně.', kind: speech}], gap: large}

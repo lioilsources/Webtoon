@@ -1,0 +1,22 @@
+# Miami – Dívka, kterou je třeba vidět: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rb_04_miami
+kind: strip
+title: Miami – Dívka, kterou je třeba vidět
+world: w_rb_04_miami
+audience: adult
+language: cs
+style_id: vintage_poster
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_beach, who: [aisha], tags: [sitting on sand, hugging knees, sunset, lonely], bubbles: [{speaker_id: aisha, text: Všichni tady mají… víc. Já jsem jako kluk., kind: thought}], gap: medium}
+  - {shot: wide, loc: l_beach, who: [carlos], tags: [riding bicycle, stopping, cowboy hat], gap: medium}
+  - {shot: medium, loc: l_beach, who: [aisha, carlos], tags: [couple, hetero, man standing with bicycle, tipping hat, smile], bubbles: [{speaker_id: carlos, text: 'Hezký večer. Nechceš společnost?', kind: speech}], gap: large}
+  - {shot: medium, loc: l_bar, who: [aisha, carlos], tags: [couple, hetero, sitting at bar, drinks, talking], bubbles: [{speaker_id: carlos, text: 'Přijel jsem na rodeo. A ty?', kind: speech}, {speaker_id: aisha, text: 'Hledám někoho, kdo mě uvidí.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_pier, who: [aisha, carlos], tags: [couple, hetero, hug, embrace, wind, dusk], gap: medium}
+  - {shot: close-up, loc: l_pier, who: [carlos], tags: [looking at her, gentle], bubbles: [{speaker_id: carlos, text: Vidím tě. A jsi dokonalá., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_pier, who: [aisha, carlos], tags: [couple, hetero, kiss, closed eyes, sea breeze], gap: large}
+  - {shot: medium, loc: l_rest, who: [{aisha: dinner}], tags: [sitting, smile, candlelight, ocean view], bubbles: [{speaker_id: aisha, text: Poprvé se cítím dost ženská., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_rest, who: [{aisha: dinner}, {carlos: dinner}], tags: [couple, hetero, holding hands across table, smile], bubbles: [{speaker_id: carlos, text: Protože jsi., kind: speech}], gap: large}

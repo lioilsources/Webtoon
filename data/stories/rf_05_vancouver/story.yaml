@@ -1,0 +1,26 @@
+# Vancouver – Muž, který našel lásku v horách: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rf_05_vancouver
+kind: strip
+title: Vancouver – Muž, který našel lásku v horách
+world: w_rf_05_vancouver
+audience: adult
+language: cs
+style_id: thin_paint
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_trail, tags: [mountains, hiking group in distance], bubbles: [{speaker_id: '', text: Hory nad Vancouverem., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_trail, who: [elena], tags: [tripping on rock, falling, surprised], sfx: [{text: UPS!, style: bold}], gap: small}
+  - {shot: medium, loc: l_trail, who: [elena, marcus], tags: [couple, hetero, man offering hand, woman sitting on ground, embarrassed laugh], bubbles: [{speaker_id: marcus, text: 'V pořádku?', kind: speech}, {speaker_id: elena, text: Moje důstojnost je mrtvá., kind: speech}, {speaker_id: marcus, text: Tu můžeme pohřbít nahoře., kind: speech}], gap: large}
+  - {shot: medium, loc: l_forest, who: [elena, marcus], tags: [couple, hetero, walking side by side, sunbeams, talking], bubbles: [{speaker_id: elena, text: 'Proč ses nikdy neoženil?', kind: speech}, {speaker_id: marcus, text: Čekal jsem., kind: speech}, {speaker_id: elena, text: 'Na co?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [marcus], tags: [gentle smile, looking at viewer], bubbles: [{speaker_id: marcus, text: 'Na ženu, která se mě zeptá na něco jiného než na počasí.', kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{elena: cabin}, {marcus: cabin}], tags: [couple, hetero, man handing mug, fireplace, woman wrapped in sweater], bubbles: [{speaker_id: marcus, text: 'Je ti zima?', kind: speech}, {speaker_id: elena, text: Trochu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{elena: cabin}, {marcus: cabin}], tags: [couple, hetero, man pulling her close, sitting by fire, embrace], bubbles: [{speaker_id: elena, text: Teď už ne., kind: speech}], gap: small}
+  - {shot: medium, loc: l_cabin, who: [{elena: cabin}, {marcus: cabin}], tags: [couple, hetero, kiss, firelight, eyes closed], gap: large}
+  - {shot: medium, loc: l_valley, who: [elena, marcus], tags: [couple, hetero, woman holding phone, crying, man concerned], bubbles: [{speaker_id: '', text: Ráno zavolají z Mexico City. Nabízejí jí práci., kind: narration}, {speaker_id: marcus, text: To je skvělá zpráva., kind: speech}, {speaker_id: marcus, text: 'Tak proč pláčeš?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_valley, who: [elena, marcus], tags: [couple, hetero, hug, tears], bubbles: [{speaker_id: elena, text: 'Protože jsem právě našla něco, co nechci opustit.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_lake, who: [{elena: wedding}], tags: [arriving on bicycle, white dress, lakeside], bubbles: [{speaker_id: '', text: O rok později., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_lake, who: [{elena: wedding}, {marcus: wedding}], tags: [couple, hetero, wedding arch, smiling, holding hands], bubbles: [{speaker_id: elena, text: 'Přišla jsem pozdě?', kind: speech}, {speaker_id: marcus, text: O rok., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_lake, who: [{elena: wedding}, {marcus: wedding}], tags: [couple, hetero, kiss, flowers, sunny], gap: large}

@@ -1,0 +1,22 @@
+# Kapské Město – Les a hora: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: ri_10_kapske_mesto
+kind: strip
+title: Kapské Město – Les a hora
+world: w_ri_10_kapske_mesto
+audience: adult
+language: cs
+style_id: minimal_flat
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_forest, who: [michaela], tags: [holding camera, taking photo, forest trail], gap: medium}
+  - {shot: medium, loc: l_forest, who: [thabo], tags: [running, stopping, looking at viewer], gap: medium}
+  - {shot: medium, loc: l_forest, who: [michaela, thabo], tags: [couple, hetero, talking, man pointing along trail], bubbles: [{speaker_id: thabo, text: 'Neztratila ses?', kind: speech}, {speaker_id: michaela, text: Ne. Jen hledám cestu., kind: speech}, {speaker_id: thabo, text: 'Tak pojď, ukážu ti ji.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_mountain, who: [michaela, thabo], tags: [couple, hetero, viewpoint, man handing water bottle, sunset, ocean], bubbles: [{speaker_id: thabo, text: 'Michaelo, zůstaň na večeři.', kind: speech}, {speaker_id: michaela, text: Zůstanu., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cabin, who: [{thabo: evening}], tags: [playing drum, fireplace, smile], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{michaela: evening}, {thabo: evening}], tags: [couple, hetero, sitting by fireplace, smiling at each other], bubbles: [{speaker_id: thabo, text: Jsi nejkrásnější turistka., kind: speech}, {speaker_id: michaela, text: A ty nejlepší průvodce., kind: speech}], gap: large}
+  - {shot: medium, loc: l_door, who: [{michaela: evening}, {thabo: evening}], tags: [couple, hetero, embrace, cabin door, lamp light], bubbles: [{speaker_id: '', text: 'Kabát, kozačky a brýle zůstanou u krbu.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_door, who: [{michaela: evening}, {thabo: evening}], tags: [couple, hetero, kiss, closed eyes], gap: small}
+  - {shot: establishing, loc: l_cabin, tags: [fireplace embers, dark cabin, night window, stars], bubbles: [{speaker_id: '', text: V krbu dohasíná oheň., kind: narration}], gap: large}

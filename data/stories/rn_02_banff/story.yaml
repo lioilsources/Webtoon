@@ -1,0 +1,23 @@
+# Banff – Vysoká a studená: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rn_02_banff
+kind: strip
+title: Banff – Vysoká a studená
+world: w_rn_02_banff
+audience: adult
+language: cs
+style_id: clean_webtoon_noartist
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_forest, tags: [pine forest, mountain trail, morning mist, soft light], bubbles: [{speaker_id: '', text: Banff. Lesní cesta v kanadských horách., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_forest, who: [chloe], tags: [standing on trail, looking down, hands in pockets, alone], gap: medium}
+  - {shot: close-up, loc: l_forest, who: [chloe], tags: [sad, looking away, cold breath visible], bubbles: [{speaker_id: chloe, text: Jsem moc vysoká a studená…, kind: thought}], gap: small}
+  - {shot: medium, loc: l_forest, who: [ethan], tags: [walking on trail, stopping, looking at viewer, smile], gap: medium}
+  - {shot: medium, loc: l_forest, who: [chloe, ethan], tags: [couple, hetero, man approaching woman, woman turning, surprised, blush], bubbles: [{speaker_id: ethan, text: 'Vypadáš, jako bys hledala něco víc než výhled.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_cabin, who: [{chloe: dinner}, {ethan: dinner}], tags: [couple, hetero, sitting by fireplace, wine glasses, talking, smile, warm light], bubbles: [{speaker_id: '', text: Večeře v chatě., kind: narration}, {speaker_id: ethan, text: Zůstaň přes noc., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{chloe: dinner}, {ethan: dinner}], tags: [couple, hetero, taking off jacket, standing, woman watching, soft light], bubbles: [{speaker_id: ethan, text: Nech mě se na tebe dívat… pomalu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{chloe: dinner}, {ethan: dinner}], tags: [couple, hetero, kiss, embrace, eyes closed, warm light], bubbles: [{speaker_id: chloe, text: Cítím se…, kind: speech}], gap: small}
+  - {shot: medium, loc: l_bedroom, tags: [lamp going out, moonlight through window, no humans], bubbles: [{speaker_id: '', text: Lampa zhasne. Ticho v pokoji., kind: narration}], gap: large}
+  - {shot: wide, loc: l_forest, who: [chloe, ethan], tags: [couple, hetero, morning, backpacks, walking apart, woman looking back, man looking ahead], bubbles: [{speaker_id: '', text: 'Ráno Ethan říká, že musí odjet na služební cestu a neví, kdy se vrátí.', kind: narration}, {speaker_id: chloe, text: Chloe odchází sama., kind: speech}], gap: large}

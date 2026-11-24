@@ -1,0 +1,21 @@
+# Šanghajský čaj: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_07_sanghaj
+kind: strip
+title: Šanghajský čaj
+world: w_rc_07_sanghaj
+audience: adult
+language: cs
+style_id: ink_wash
+fonts: romance
+music: pool
+panels:
+  - {shot: medium, loc: l_tea, who: [samuel], tags: [holding menu, confused, glasses], gap: medium}
+  - {shot: medium, loc: l_tea, who: [wei], tags: [smile, pointing at menu], bubbles: [{speaker_id: wei, text: Doporučuji jasmínový., kind: speech}], gap: small}
+  - {shot: medium, loc: l_tea, who: [samuel, wei], tags: [couple, hetero, sitting at table, tea cups, smile], bubbles: [{speaker_id: samuel, text: Děkuji. Já jsem tu poprvé., kind: speech}, {speaker_id: wei, text: 'To poznám. Ale nebojte, Šanghaj je milá, když se nepospíchá.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_bund, who: [samuel, wei], tags: [couple, hetero, walking along river, man holding umbrella, dusk], bubbles: [{speaker_id: samuel, text: Celý den jsem mluvil o číslech. Připadám si nudný., kind: speech}, {speaker_id: wei, text: Čísla nejsou nuda. Jen je třeba je říct jako příběh., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bund, who: [wei], tags: [gentle smile], bubbles: [{speaker_id: samuel, text: 'A vy umíte příběhy?', kind: speech}, {speaker_id: wei, text: Učím jógu. To je taky příběh., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [samuel, wei], tags: [couple, hetero, woman ordering, man laughing, dishes], bubbles: [{speaker_id: samuel, text: 'Wei, můžu vás pozvat znovu? Třeba na procházku.', kind: speech}, {speaker_id: wei, text: Ano. Ale tentokrát bez deštníku., kind: speech}], gap: large}
+  - {shot: wide, loc: l_garden, who: [samuel, wei], tags: [couple, hetero, hug, lanterns, night], bubbles: [{speaker_id: samuel, text: Našel jsem v Šanghaji múzu., kind: speech}, {speaker_id: wei, text: A já prince v obleku., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_garden, who: [samuel, wei], tags: [couple, hetero, kiss, closed eyes, lanterns], gap: large}

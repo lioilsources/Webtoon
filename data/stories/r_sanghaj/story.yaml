@@ -1,0 +1,30 @@
+# Šanghaj – Cizinec, který zůstal: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_sanghaj
+kind: strip
+title: Šanghaj – Cizinec, který zůstal
+world: w_r_sanghaj
+audience: adult
+language: cs
+style_id: photo_cyberreal_night
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_tower, tags: [shanghai skyline, skyscrapers], gap: medium}
+  - {shot: medium, loc: l_tower, who: [thomas], tags: [holding phone, looking up, lost], bubbles: [{speaker_id: thomas, text: Nikdo mě tady nezná., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_tower, who: [lin], tags: [smile, hands in pockets], bubbles: [{speaker_id: lin, text: To může být někdy výhoda., kind: speech}], gap: small}
+  - {shot: medium, loc: l_tower, who: [thomas, lin], tags: [couple, hetero, man turning around, surprised], bubbles: [{speaker_id: lin, text: 'Ztratil jste se?', kind: speech}, {speaker_id: thomas, text: Ano., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_tower, who: [lin], tags: [smirk], bubbles: [{speaker_id: lin, text: Tak jste začal správně., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [thomas], tags: [concentrating, talking, coffee cup], bubbles: [{speaker_id: '', text: Lin mu pomáhá orientovat se ve městě., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [lin], tags: [laughing, coffee cup], bubbles: [{speaker_id: lin, text: Skoro., kind: speech}, {speaker_id: thomas, text: 'Skoro?', kind: speech}], gap: small}
+  - {shot: close-up, loc: l_cafe, who: [lin], tags: [amused smile], bubbles: [{speaker_id: lin, text: Řekl jste ‚chci kočku‘ místo ‚chci kávu‘., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_cafe, who: [thomas], tags: [laughing, closed eyes], sfx: [{text: PFFF!, style: bold}], gap: large}
+  - {shot: wide, loc: l_bund, who: [thomas, lin], tags: [couple, hetero, walking along river, night skyline], bubbles: [{speaker_id: thomas, text: 'Celý život jsem hledal místo, kam budu patřit.', kind: speech}, {speaker_id: lin, text: 'A našel jste ho?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bund, who: [thomas], tags: [looking at her, soft], bubbles: [{speaker_id: thomas, text: Možná., kind: speech}, {speaker_id: lin, text: 'Kde?', kind: speech}, {speaker_id: thomas, text: Tady., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_bund, who: [lin], tags: [smile, blush, city lights], gap: large}
+  - {shot: medium, loc: l_station, who: [lin], tags: [standing on platform, sad], bubbles: [{speaker_id: '', text: Thomas má odjet zpět do Londýna., kind: narration}, {speaker_id: lin, text: Takže tohle je sbohem., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_station, who: [thomas], tags: [holding ticket, tearing ticket], bubbles: [{speaker_id: thomas, text: Ne., kind: speech}, {speaker_id: lin, text: 'Ne?', kind: speech}, {speaker_id: thomas, text: Změnil jsem rezervaci., kind: speech}], sfx: [{text: TRRR, style: bold}], gap: medium}
+  - {shot: medium, loc: l_station, who: [lin], tags: [laughing, happy], bubbles: [{speaker_id: thomas, text: Zůstávám., kind: speech}], gap: small}
+  - {shot: medium, loc: l_station, who: [thomas, lin], tags: [couple, hetero, hug, embrace, closed eyes], gap: small}
+  - {shot: wide, loc: l_station, who: [thomas, lin], tags: [couple, hetero, kiss, train passing, motion blur], gap: large}

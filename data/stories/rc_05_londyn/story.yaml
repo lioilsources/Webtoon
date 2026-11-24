@@ -1,0 +1,22 @@
+# Londýnský déšť: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_05_londyn
+kind: strip
+title: Londýnský déšť
+world: w_rc_05_londyn
+audience: adult
+language: cs
+style_id: noir_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_gym, who: [mei], tags: [standing in rain, no umbrella, wet hair, hugging self], bubbles: [{speaker_id: '', text: Londýn. Prší., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_gym, who: [marcus], tags: [walking out of door, holding umbrella], bubbles: [{speaker_id: marcus, text: 'Potřebujete deštník?', kind: speech}], gap: small}
+  - {shot: medium, loc: l_gym, who: [mei, marcus], tags: [couple, hetero, sharing umbrella, rain, shy], bubbles: [{speaker_id: mei, text: Já… ano. Ale nechci zdržovat., kind: speech}, {speaker_id: marcus, text: Já zrovna končím. Můžu vás doprovodit., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [mei], tags: [holding cup, hot chocolate, looking down], bubbles: [{speaker_id: mei, text: 'Lidi si myslí, že když jsem tichá, nemám názor.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [marcus], tags: [smile, holding cup], bubbles: [{speaker_id: marcus, text: Já mluvím hlavně pěstmi. Ale taky mám názor., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_cafe, who: [mei], tags: [laughing, closed eyes], bubbles: [{speaker_id: mei, text: 'To je poprvé, co mi to někdo řekl takhle.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_park, who: [mei, marcus], tags: [couple, hetero, walking, wet grass, squirrel], bubbles: [{speaker_id: marcus, text: 'Zítra mám zápas. Přijdeš?', kind: speech}, {speaker_id: mei, text: Nikdy jsem box neviděla., kind: speech}, {speaker_id: marcus, text: Tak to bude tvůj první. A pak tě vezmu na večeři., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [{mei: evening}, {marcus: evening}], tags: [couple, hetero, sitting across table, candle, smile], bubbles: [{speaker_id: mei, text: 'Vyhrál jsi?', kind: speech}, {speaker_id: marcus, text: Ale ty jsi tu. To je výhra., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_rest, who: [{mei: evening}, {marcus: evening}], tags: [couple, hetero, hug, kiss, closed eyes], gap: large}

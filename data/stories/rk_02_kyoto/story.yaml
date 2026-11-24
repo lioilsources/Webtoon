@@ -1,0 +1,24 @@
+# Kjóto – Deštivé duby: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rk_02_kyoto
+kind: strip
+title: Kjóto – Deštivé duby
+world: w_rk_02_kyoto
+audience: adult
+language: cs
+style_id: ukiyoe
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bamboo, tags: [bamboo forest, rain, mist, empty path], bubbles: [{speaker_id: '', text: Arašijama. Bambusový les v dešti., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bamboo, who: [hana], tags: [taking photo, wet hair, raindrops, foggy glasses, focused], gap: medium}
+  - {shot: medium, loc: l_bamboo, who: [hana, ethan], tags: [couple, hetero, man holding umbrella over woman, rain, looking at each other], bubbles: [{speaker_id: ethan, text: 'Vypadáš jako báseň, kterou jsem zapomněl napsat.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bamboo, who: [hana], tags: [wiping glasses, wry smile, rain], bubbles: [{speaker_id: hana, text: 'Spisovatelé milují ženy, dokud je nemusejí číst do konce.', kind: speech}], gap: medium}
+  - {shot: wide, loc: l_ryokan, who: [{hana: robe}, {ethan: evening}], tags: [couple, hetero, sitting at low table, sake cups, laughing, paper lantern], bubbles: [{speaker_id: '', text: 'Ryokan. Víno, smích.', kind: narration}], gap: medium}
+  - {shot: medium, loc: l_ryokan, who: [{hana: robe}, {ethan: evening}], tags: [couple, hetero, kiss, lantern light, eyes closed], gap: small}
+  - {shot: wide, loc: l_ryokan, tags: [paper lantern blown out, shoji closed, rain on window, no humans], bubbles: [{speaker_id: '', text: Lucerna zhasne., kind: narration}], gap: large}
+  - {shot: medium, loc: l_room, who: [{hana: robe}], tags: [sitting alone, holding small paper note, morning light, empty room, sad], bubbles: [{speaker_id: '', text: 'Ráno je Ethan pryč. Na polštáři lísteček:', kind: narration}, {speaker_id: '', text: „Příběh je silnější bez šťastného konce. Odpusť.“, kind: narration}], gap: medium}
+  - {shot: close-up, loc: l_room, who: [{hana: robe}], tags: [looking at empty room, tears held back, determined], bubbles: [{speaker_id: hana, text: 'Nenapsal jsi příběh, Ethane. Ukradl jsi mi jen kapitolu.', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_room, who: [{hana: dawn}], tags: [tying scarf, picking up camera, standing up], gap: medium}
+  - {shot: wide, loc: l_river, who: [{hana: dawn}], tags: [walking on bridge, taking photo of sunrise, mist, alone, calm], bubbles: [{speaker_id: '', text: Jde fotit východ slunce. Zamyšlená. Silnější., kind: narration}], gap: large}

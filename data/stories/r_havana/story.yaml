@@ -1,0 +1,29 @@
+# Havana – Boxer, který přijel zapomenout: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: r_havana
+kind: strip
+title: Havana – Boxer, který přijel zapomenout
+world: w_r_havana
+audience: adult
+language: cs
+style_id: photo_realvis_film
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_bus, tags: [vintage cars, colonial buildings], bubbles: [{speaker_id: '', text: Havana., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_bus, who: [mateo], tags: [holding suitcase, getting off bus, serious], gap: medium}
+  - {shot: medium, loc: l_bus, who: [raul], tags: [arms crossed, smile], bubbles: [{speaker_id: raul, text: Takže ses opravdu vrátil., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bus, who: [mateo], tags: [serious, looking away], bubbles: [{speaker_id: mateo, text: 'Potřeboval jsem místo, kde mě nikdo nezná.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_bus, who: [raul], tags: [laughing, pointing], bubbles: [{speaker_id: raul, text: Havana tě vždycky pozná., kind: speech}], gap: large}
+  - {shot: medium, loc: l_cafe, who: [isabel], tags: [placing coffee cup on counter, smile, behind counter], bubbles: [{speaker_id: isabel, text: Dvě cukrové., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_cafe, who: [mateo], tags: [sitting at counter, coffee cup, puzzled], bubbles: [{speaker_id: mateo, text: Já si nedávám cukr., kind: speech}, {speaker_id: isabel, text: Já vím., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_cafe, who: [isabel], tags: [teasing smile, leaning on counter], bubbles: [{speaker_id: mateo, text: 'Jak to víš?', kind: speech}, {speaker_id: isabel, text: Protože tě pozoruju už týden., kind: speech}], gap: small}
+  - {shot: close-up, loc: l_cafe, who: [mateo], tags: [laughing, first smile], gap: large}
+  - {shot: wide, loc: l_dance, who: [{isabel: dance}], tags: [dancing, salsa, twirling, dress flowing], gap: medium}
+  - {shot: medium, loc: l_dance, who: [{isabel: dance}, mateo], tags: [couple, hetero, woman reaching out hand, man standing shy], bubbles: [{speaker_id: isabel, text: 'Ty netančíš?', kind: speech}, {speaker_id: mateo, text: Já boxuju., kind: speech}, {speaker_id: isabel, text: To není odpověď., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_dance, who: [{isabel: dance}, mateo], tags: [couple, hetero, dancing together, salsa, holding hands, laughing], bubbles: [{speaker_id: isabel, text: Bojuješ s hudbou., kind: speech}, {speaker_id: mateo, text: Hudba začala první., kind: speech}], gap: large}
+  - {shot: wide, loc: l_malecon, who: [isabel, mateo], tags: [couple, hetero, sitting on seawall, sunset], bubbles: [{speaker_id: mateo, text: 'Myslel jsem, že jsem přijel do Havany, abych zapomněl.', kind: speech}, {speaker_id: isabel, text: 'A podařilo se?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_malecon, who: [mateo], tags: [looking at her, soft expression], bubbles: [{speaker_id: mateo, text: Ne., kind: speech}, {speaker_id: mateo, text: Potkal jsem tebe., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_malecon, who: [isabel], tags: [smile, sunset light], bubbles: [{speaker_id: isabel, text: To zní jako docela dobrý důvod nezapomenout., kind: speech}], gap: small}
+  - {shot: medium, loc: l_malecon, who: [isabel, mateo], tags: [couple, hetero, kiss, embrace, sunset, closed eyes], gap: large}

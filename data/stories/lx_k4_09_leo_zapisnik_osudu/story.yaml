@@ -1,0 +1,19 @@
+# Leo a Zápisník Osudu: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: lx_k4_09_leo_zapisnik_osudu
+kind: strip
+title: Leo a Zápisník Osudu
+world: w_lx_k4_09_leo_zapisnik_osudu
+audience: kids
+language: cs
+style_id: clean_webtoon_noartist
+music: pool
+panels:
+  - {shot: establishing, loc: l_shadow, tags: [floating ruins, black clouds, lightning, dark atmosphere, no humans], bubbles: [{speaker_id: '', text: Temná dimenze plná levitujících ruin., kind: narration}], gap: medium, animate: 'ambient only, characters still, water rippling, clouds drifting slowly, static camera'}
+  - {shot: wide, loc: l_ruins, who: [leo, king], tags: [standing, holding book, open book, pen, floating ghost, large monster, looking at each other, tense], bubbles: [{speaker_id: king, text: 'Jsi jen malé dítě, Leo! Neznáš mé pravé jméno! Nemůžeš mě porazit!', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_ruins, who: [leo], tags: [adjusting glasses, smirk, cool smile, holding pen, confident, looking up], bubbles: [{speaker_id: leo, text: Ale já tvoje jméno znám. Přečetl jsem si ho v prastarých svitcích knihovny!, kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_ruins, who: [leo], tags: [writing, pen on paper, focused eyes, intense, book open], sfx: [{text: ŠKRT!, style: bold}], gap: small}
+  - {shot: wide, loc: l_ruins, who: [king], tags: [screaming, open mouth, dissolving, turning to dust, dark energy, spiraling, pain], sfx: [{text: AARGH!, style: bold}], gap: medium, animate: 'ambient only, characters still, water rippling, soft glow pulsing, static camera'}
+  - {shot: medium, loc: l_ruins, who: [leo], tags: [closing book, snap, standing tall, calm, wind blowing coat], bubbles: [{speaker_id: leo, text: Tento svět patří živým., kind: speech}], sfx: [{text: CVAK!, style: bold}], gap: large}
+  - {shot: medium, loc: l_ruins, who: [leo], tags: [looking at book, thoughtful, shadow on face, solemn, holding book close], bubbles: [{speaker_id: leo, text: Tajemství mě změní., kind: thought}], gap: large}

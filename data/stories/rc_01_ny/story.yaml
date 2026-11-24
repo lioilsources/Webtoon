@@ -1,0 +1,23 @@
+# Newyorské písmeno: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rc_01_ny
+kind: strip
+title: Newyorské písmeno
+world: w_rc_01_ny
+audience: adult
+language: cs
+style_id: webtoon_romance_artist
+fonts: romance
+music: pool
+panels:
+  - {shot: wide, loc: l_street, who: [eliska], tags: [walking, pulling suitcase, looking around, nervous smile], bubbles: [{speaker_id: '', text: 'Manhattan. Pára z kanálů, žluté taxíky.', kind: narration}, {speaker_id: eliska, text: Tak jsem tady. Malá holka z Brna v největším městě světa., kind: thought}], gap: medium}
+  - {shot: medium, loc: l_street, who: [maya], tags: [talking on phone, walking, smile], bubbles: [{speaker_id: maya, text: 'Danieli, neboj se. Je to jen podpis smlouvy.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_books, who: [daniel], tags: [looking at bookshelf, holding book, glasses], bubbles: [{speaker_id: daniel, text: 'Promiňte, nevíte, kde mají místopis?', kind: speech}], gap: medium}
+  - {shot: medium, loc: l_books, who: [eliska, daniel], tags: [couple, hetero, standing between bookshelves, pointing, holding book], bubbles: [{speaker_id: eliska, text: 'Já? Já jsem tu poprvé. Ale zkusila bych tu polici vzadu.', kind: speech}, {speaker_id: daniel, text: 'Díky. Jste tu nová? Podle kufru.', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_books, who: [daniel], tags: [gentle smile, looking at viewer], bubbles: [{speaker_id: eliska, text: Přijela jsem na kurz. Asi vypadám ztraceně., kind: speech}, {speaker_id: daniel, text: 'Ne. Vypadáte, že něco hledáte. Já taky.', kind: speech}], gap: large}
+  - {shot: wide, loc: l_bridge, who: [eliska, daniel], tags: [couple, hetero, walking side by side, man carrying suitcase, wind, hair blowing], bubbles: [{speaker_id: eliska, text: 'Vždycky jsem si myslela, že na tohle město nemám postavu.', kind: speech}, {speaker_id: daniel, text: 'Jakou postavu?', kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_bridge, who: [eliska], tags: [looking down, embarrassed, blush], bubbles: [{speaker_id: eliska, text: 'No… malou, kulatou. Tady jsou všichni vysocí a elegantní.', kind: speech}], gap: small}
+  - {shot: medium, loc: l_bridge, who: [eliska, daniel], tags: [couple, hetero, laughing, looking at each other, sunset], bubbles: [{speaker_id: daniel, text: Já jsem taky spíš kancelářský a nudný. A přesto tu jsem., kind: speech}, {speaker_id: eliska, text: Vy nejste nudný., kind: speech}], gap: large}
+  - {shot: medium, loc: l_rest, who: [eliska, daniel], tags: [couple, hetero, sitting across table, candle, man clearing throat, shy], bubbles: [{speaker_id: daniel, text: 'Eliško, můžu vás pozvat znovu? Třeba do knihovny. A pak na kávu.', kind: speech}, {speaker_id: eliska, text: To zní jako velmi newyorské rande., kind: speech}, {speaker_id: daniel, text: Doufám., kind: speech}], gap: medium}
+  - {shot: close-up, loc: l_street, who: [eliska, daniel], tags: [couple, hetero, kiss, short kiss, hug, night, city lights, closed eyes], gap: large}

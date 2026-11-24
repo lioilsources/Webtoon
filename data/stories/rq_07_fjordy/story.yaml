@@ -1,0 +1,23 @@
+# Norské fjordy – Krátký okamžik: strip definition reverse-engineered from world.json + storyboard.json (tools/story_defs.py).
+# Characters, locations and the bible: world.json. Translations, faces and WD14 tags are derived and left out.
+schema: 2
+id: rq_07_fjordy
+kind: strip
+title: Norské fjordy – Krátký okamžik
+world: w_rq_07_fjordy
+audience: adult
+language: cs
+style_id: noir_mono
+fonts: romance
+music: pool
+panels:
+  - {shot: establishing, loc: l_trail, tags: [steep mountains, fjord, mist, coniferous forest], bubbles: [{speaker_id: '', text: Norské fjordy. Mlha nad hory., kind: narration}], gap: medium}
+  - {shot: wide, loc: l_trail, who: [erik], tags: [running, athletic pose, breathing hard, from side], bubbles: [{speaker_id: erik, text: Vždycky běžím…, kind: thought}], gap: medium}
+  - {shot: medium, loc: l_trail, who: [erik, sofia], tags: [couple, hetero, stopping, facing each other, eye contact, windy], bubbles: [{speaker_id: sofia, text: Zastav se., kind: speech}], gap: large}
+  - {shot: wide, loc: l_cabin, who: [{erik: cabin}, {sofia: evening}], tags: [couple, hetero, sitting by fireplace, dinner plates, wine glasses, warm glow, talking], bubbles: [{speaker_id: '', text: Večer v horské chatě., kind: narration}], gap: medium}
+  - {shot: medium, loc: l_cabin, who: [{erik: cabin}, {sofia: evening}], tags: [couple, hetero, holding hands, close proximity, intense gaze, smiling], gap: small}
+  - {shot: medium, loc: l_bedroom, who: [{erik: cabin}, {sofia: evening}], tags: [couple, hetero, removing jacket, helping, standing, soft light], bubbles: [{speaker_id: erik, text: Pomalu., kind: speech}], gap: medium}
+  - {shot: medium, loc: l_bedroom, who: [{erik: cabin}, {sofia: evening}], tags: [couple, hetero, embrace, kiss, eyes closed, passion], bubbles: [{speaker_id: erik, text: Cítím se…, kind: speech}, {speaker_id: sofia, text: Já taky., kind: speech}], gap: small}
+  - {shot: medium, loc: l_bedroom, tags: [curtain, wind, morning light, cold atmosphere], bubbles: [{speaker_id: '', text: Noc plynula příliš rychle., kind: narration}], gap: large}
+  - {shot: wide, loc: l_bedroom, who: [{erik: cabin}, sofia], tags: [couple, hetero, standing by door, sitting, distance, sad expression], bubbles: [{speaker_id: sofia, text: Musím odjet domů. Tohle bylo jen dovolenkové., kind: speech}], gap: medium}
+  - {shot: wide, loc: l_bedroom, who: [{erik: cabin}], tags: [sitting alone, looking at window, melancholy, empty room], bubbles: [{speaker_id: '', text: Erik zůstává sám., kind: narration}], gap: large}
