@@ -14,10 +14,19 @@ import 'screens/reader_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/store_screen.dart';
 import 'screens/worlds_screen.dart';
+import 'telemetry/telemetry_setup.dart';
 import 'theme.dart';
 
-class WebtoonApp extends StatelessWidget {
+class WebtoonApp extends StatefulWidget {
   const WebtoonApp({super.key});
+
+  @override
+  State<WebtoonApp> createState() => _WebtoonAppState();
+}
+
+class _WebtoonAppState extends State<WebtoonApp> {
+  // Anonymous statistics: screens by route name (no-op unless measuring, docs/telemetry.md).
+  final _screens = ToonforkScreenObserver();
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -26,6 +35,7 @@ class WebtoonApp extends StatelessWidget {
     theme: buildTheme(Brightness.light),
     darkTheme: buildTheme(Brightness.dark),
     themeMode: ThemeMode.system,
+    navigatorObservers: [_screens],
     home: const HomeScreen(),
   );
 }
@@ -65,6 +75,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     if (ref.watch(apiProvider).canEdit) return _studio();
     final boot = ref.watch(packBootstrapProvider);
     if (!boot.isReady) {
+      reportHomeScreen(context, 'splash');
       return PackSplash(
         state: boot,
         onRetry: () => ref.read(packBootstrapProvider.notifier).start(),
@@ -72,9 +83,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     }
     final profile = ref.watch(readerProfileProvider);
     if (!profile.loaded) {
+      reportHomeScreen(context, 'splash');
       return PackSplash(state: const PackBootstrapState(), onRetry: () {});
     }
-    if (profile.profile == null) return const ProfileChooserScreen();
+    if (profile.profile == null) {
+      reportHomeScreen(context, 'profile_chooser');
+      return const ProfileChooserScreen();
+    }
+    reportHomeScreen(
+      context,
+      const ['library', 'store', 'settings'][_tab.clamp(0, 2)],
+    );
     final lang = ref.watch(uiLanguageProvider);
     return _tabs(
       const [LibraryScreen(), StoreScreen(), SettingsScreen()],

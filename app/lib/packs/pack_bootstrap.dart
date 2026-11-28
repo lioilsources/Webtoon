@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import 'pack_store.dart';
 
@@ -47,6 +48,7 @@ class PackBootstrap extends StateNotifier<PackBootstrapState> {
 
   Future<void> _run({required bool force}) async {
     state = const PackBootstrapState();
+    final clock = Stopwatch()..start();
     try {
       final installed = await store.ensureStarter(
         force: force,
@@ -64,9 +66,16 @@ class PackBootstrap extends StateNotifier<PackBootstrapState> {
         '${store.packs.length} pack(s), ${store.stories.length} stories '
         'in ${(await store.rootDir()).path}',
       );
+      if (!force) {
+        Telemetry.track('packs_ready', {
+          'ms': clock.elapsedMilliseconds.clamp(0, 600000),
+          'extracted': installed,
+        });
+      }
       if (mounted) state = PackBootstrapState.ready;
     } catch (e, st) {
       debugPrint('packs: bootstrap failed: $e\n$st');
+      Telemetry.errorShown('pack_load');
       if (mounted) {
         state = PackBootstrapState(phase: PackPhase.error, error: e);
       }

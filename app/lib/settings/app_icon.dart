@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/ui_strings.dart';
 import '../theme.dart';
@@ -60,6 +61,7 @@ class _AppIconPickerState extends ConsumerState<AppIconPicker> {
   }
 
   Future<void> _pick(String key) async {
+    Telemetry.feature('app_icon');
     final ok = await ref.read(appIconServiceProvider).set(key);
     if (ok && mounted) setState(() => _current = key);
   }

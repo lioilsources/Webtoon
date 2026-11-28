@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
@@ -37,6 +38,10 @@ class GamebookScreen extends ConsumerStatefulWidget {
 class _GamebookScreenState extends ConsumerState<GamebookScreen> {
   GamebookProgress? _progress;
 
+  /// The ending last reported to the statistics (node + path length), so a rebuild does not
+  /// report it again.
+  String? _endingReported;
+
   Gamebook? get _book =>
       ref.read(packStoreProvider).gamebook(widget.gamebookId);
 
@@ -66,6 +71,12 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
         ? GamebookProgress.start(g)
         : (known ? pr : pr.restart(g)).withKnown(g);
     setState(() => _progress = next);
+    if (!widget.preview) {
+      Telemetry.track('gamebook_open', {
+        'resume': pr != null && pr.path.isNotEmpty,
+        'found': _goodFound(g, next.endingsFound).clamp(0, 100),
+      });
+    }
     final fresh = next.newNodes(g);
     final ui = ref.read(uiLanguageProvider);
     if (fresh.isNotEmpty && !widget.preview) {
@@ -80,6 +91,38 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
         ),
       );
     }
+  }
+
+  static int _goodFound(Gamebook g, Set<String> found) =>
+      found.where((id) => g.node(id)?.ending == GamebookEnding.good).length;
+
+  /// A choice, an own branch or "Pokračovat" was taken: the node was read (activation).
+  void _went(GamebookProgress pr, String kind) {
+    if (widget.preview) return;
+    Telemetry.track('gamebook_choice', {
+      'kind': kind,
+      'step': (pr.path.length + 1).clamp(0, 10000),
+    });
+    Telemetry.activation();
+  }
+
+  /// An ending card is shown (once per reaching it).
+  void _reportEnding(
+    Gamebook g,
+    GamebookProgress pr,
+    String ending,
+    int found,
+  ) {
+    final key = '${pr.node}#${pr.path.length}';
+    if (widget.preview || _endingReported == key) return;
+    _endingReported = key;
+    Telemetry.track('gamebook_ending', {
+      'ending': ending,
+      'first': ending == 'good' && !pr.endingsFound.contains(pr.node),
+      'found': found.clamp(0, 100),
+      'total': g.endings.clamp(0, 100),
+    });
+    Telemetry.activation();
   }
 
   Future<void> _set(GamebookProgress pr) async {
@@ -121,7 +164,10 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
               key: const ValueKey('gamebook-back'),
               tooltip: tr(ui, 'gamebook.back'),
               icon: const Icon(Icons.undo_rounded),
-              onPressed: () => _set(pr.back()),
+              onPressed: () {
+                if (!widget.preview) Telemetry.feature('gamebook_back');
+                _set(pr.back());
+              },
             ),
           if (pr != null && !widget.preview)
             IconButton(
@@ -135,11 +181,15 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
               key: const ValueKey('gamebook-editor'),
               tooltip: tr(ui, 'gamebook.myBranches'),
               icon: const Icon(Icons.edit_note_rounded),
-              onPressed: () => Navigator.of(context).push(
-                MaterialPageRoute<void>(
-                  builder: (_) => BranchEditorScreen(gamebookId: g.id),
-                ),
-              ),
+              onPressed: () {
+                Telemetry.feature('branch_editor');
+                Navigator.of(context).push(
+                  MaterialPageRoute<void>(
+                    settings: const RouteSettings(name: '/branches'),
+                    builder: (_) => BranchEditorScreen(gamebookId: g.id),
+                  ),
+                );
+              },
             ),
         ],
       ),
@@ -194,6 +244,27 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
         if (mounted && _progress?.node == pr.node) _set(pr.found(pr.node));
       });
     }
+    final found = {
+      ...pr.endingsFound,
+      if (official?.ending == GamebookEnding.good) pr.node,
+    }.where((id) => g.node(id)?.ending == GamebookEnding.good).length;
+    final ending =
+        official?.ending ??
+        (own != null && own.isEnding && choices.isEmpty
+            ? GamebookEnding.good
+            : GamebookEnding.none);
+    if (choices.isEmpty &&
+        official?.next == null &&
+        ending != GamebookEnding.none) {
+      final kind = own != null
+          ? 'own'
+          : (ending == GamebookEnding.retry ? 'retry' : 'good');
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted && _progress?.node == pr.node) {
+          _reportEnding(g, pr, kind, found);
+        }
+      });
+    }
     return GamebookNodeEnd(
       choices: [
         for (final c in choices)
@@ -201,27 +272,34 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
       ],
       language: lang,
       next: official?.next,
-      ending:
-          official?.ending ??
-          (own != null && own.isEnding && choices.isEmpty
-              ? GamebookEnding.good
-              : GamebookEnding.none),
+      ending: ending,
       ownEnding: own != null,
-      found: {
-        ...pr.endingsFound,
-        if (official?.ending == GamebookEnding.good) pr.node,
-      }.where((id) => g.node(id)?.ending == GamebookEnding.good).length,
+      found: found,
       total: g.endings,
-      onGo: (to) => _set(pr.go(to)),
+      onGo: (to) {
+        _went(
+          pr,
+          choices.isEmpty
+              ? 'next'
+              : (branches.node(to) != null || own != null ? 'own' : 'choice'),
+        );
+        _set(pr.go(to));
+      },
       onRetry: official?.retryTo == null
           ? null
           : () => _set(pr.retry(official!.retryTo!)),
-      onRestart: widget.preview ? null : () => _set(pr.restart(g)),
+      onRestart: widget.preview
+          ? null
+          : () {
+              Telemetry.feature('gamebook_restart');
+              _set(pr.restart(g));
+            },
       onClose: widget.preview ? () => Navigator.of(context).pop() : null,
     );
   }
 
   void _showMap(BuildContext context, Gamebook g, GamebookProgress pr) {
+    Telemetry.feature('gamebook_map');
     final scheme = Theme.of(context).colorScheme;
     final ui = ref.read(uiLanguageProvider);
     showModalBottomSheet<void>(
@@ -261,8 +339,12 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
               onTap: pr.visited.contains(id)
                   ? () {
                       Navigator.pop(ctx);
+                      Telemetry.feature('gamebook_revisit');
                       Navigator.of(context).push(
                         MaterialPageRoute<void>(
+                          settings: const RouteSettings(
+                            name: '/gamebook/revisit',
+                          ),
                           builder: (_) => GamebookRevisitScreen(
                             gamebookId: g.id,
                             chapters: [
@@ -297,6 +379,7 @@ class _GamebookScreenState extends ConsumerState<GamebookScreen> {
             key: const ValueKey('gamebook-restart'),
             onPressed: () {
               Navigator.pop(ctx);
+              Telemetry.feature('gamebook_restart');
               _set(pr.restart(g));
             },
             icon: const Icon(Icons.replay_rounded),

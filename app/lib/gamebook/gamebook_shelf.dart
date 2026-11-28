@@ -73,6 +73,7 @@ class GamebookShelf extends ConsumerWidget {
             key: ValueKey('gamebook-${g.id}'),
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute<void>(
+                settings: const RouteSettings(name: '/gamebook'),
                 builder: (_) => GamebookScreen(
                   gamebookId: g.id,
                   kitUnlocked: kitUnlocked(ref, g),

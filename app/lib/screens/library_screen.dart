@@ -334,6 +334,7 @@ class StoryCard extends ConsumerWidget {
         borderRadius: BorderRadius.circular(14),
         onTap: () => Navigator.of(context).push(
           MaterialPageRoute<void>(
+            settings: kReaderRoute,
             builder: (_) =>
                 ReaderScreen(campaignId: story.id, startAtFirst: true),
           ),

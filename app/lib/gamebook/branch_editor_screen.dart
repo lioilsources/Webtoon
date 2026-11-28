@@ -6,6 +6,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ol1n_telemetry/ol1n_telemetry.dart';
 
 import '../i18n/ui_strings.dart';
 import '../models/episode.dart';
@@ -20,6 +21,10 @@ import 'gamebook_state.dart';
 const _maxBubbles = 3;
 const _maxBubbleChars = 120;
 const _maxChoiceChars = 60;
+
+/// Anonymous statistics: which editor action was used (never what was written).
+void _action(String action) =>
+    Telemetry.track('branch_edit', {'action': action});
 
 /// "Moje větve": the reader's branches of one gamebook.
 class BranchEditorScreen extends ConsumerWidget {
@@ -60,6 +65,7 @@ class BranchEditorScreen extends ConsumerWidget {
                             ?.manifest
                             .version ??
                         0;
+                    _action('export');
                     await Clipboard.setData(
                       ClipboardData(
                         text: branches.exportFor(g, version: version),
@@ -124,6 +130,7 @@ class BranchEditorScreen extends ConsumerWidget {
                       (n) => n.choices.any((c) => c.to == h.choice.to),
                     );
                 if (!still) b = b.removeNode(h.choice.to);
+                _action('delete_branch');
                 await notifier.update(b);
               },
             ),
@@ -159,19 +166,21 @@ class BranchEditorScreen extends ConsumerWidget {
   void _openNode(BuildContext context, String nodeId) =>
       Navigator.of(context).push(
         MaterialPageRoute<void>(
+          settings: const RouteSettings(name: '/branches/node'),
           builder: (_) =>
               NodeEditorScreen(gamebookId: gamebookId, nodeId: nodeId),
         ),
       );
 
-  void _play(BuildContext context, String nodeId) => Navigator.of(context).push(
-    MaterialPageRoute<void>(
-      builder: (_) => GamebookScreen(
-        gamebookId: gamebookId,
-        startAt: nodeId,
-        preview: true,
-      ),
-    ),
+  void _play(BuildContext context, String nodeId) {
+    _action('play');
+    Navigator.of(context).push(_previewRoute(nodeId));
+  }
+
+  Route<void> _previewRoute(String nodeId) => MaterialPageRoute<void>(
+    settings: const RouteSettings(name: '/gamebook/preview'),
+    builder: (_) =>
+        GamebookScreen(gamebookId: gamebookId, startAt: nodeId, preview: true),
   );
 
   Future<void> _newBranch(
@@ -196,6 +205,7 @@ class BranchEditorScreen extends ConsumerWidget {
             choice: GamebookChoice(id: 'c_$id', text: text, to: id),
           ),
         );
+    _action('new_branch');
     await ref.read(branchesProvider(gamebookId).notifier).update(b);
     if (context.mounted) _openNode(context, id);
   }
@@ -385,15 +395,19 @@ class NodeEditorScreen extends ConsumerWidget {
             key: const ValueKey('node-play'),
             tooltip: tr(ui, 'branches.play'),
             icon: const Icon(Icons.play_arrow_rounded),
-            onPressed: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => GamebookScreen(
-                  gamebookId: gamebookId,
-                  startAt: nodeId,
-                  preview: true,
+            onPressed: () {
+              _action('play');
+              Navigator.of(context).push(
+                MaterialPageRoute<void>(
+                  settings: const RouteSettings(name: '/gamebook/preview'),
+                  builder: (_) => GamebookScreen(
+                    gamebookId: gamebookId,
+                    startAt: nodeId,
+                    preview: true,
+                  ),
                 ),
-              ),
-            ),
+              );
+            },
           ),
         ],
       ),
@@ -435,6 +449,7 @@ class NodeEditorScreen extends ConsumerWidget {
                         ),
                       );
                       if (b == null) return;
+                      _action('bubbles');
                       await save(
                         node.copyWith(
                           panels: [
@@ -454,26 +469,39 @@ class NodeEditorScreen extends ConsumerWidget {
                     tooltip: tr(ui, 'branches.up'),
                     onPressed: i == 0
                         ? null
-                        : () => save(
-                            node.copyWith(panels: _swap(node.panels, i, i - 1)),
-                          ),
+                        : () {
+                            _action('move_image');
+                            save(
+                              node.copyWith(
+                                panels: _swap(node.panels, i, i - 1),
+                              ),
+                            );
+                          },
                     icon: const Icon(Icons.arrow_upward_rounded),
                   ),
                   IconButton(
                     tooltip: tr(ui, 'branches.down'),
                     onPressed: i == node.panels.length - 1
                         ? null
-                        : () => save(
-                            node.copyWith(panels: _swap(node.panels, i, i + 1)),
-                          ),
+                        : () {
+                            _action('move_image');
+                            save(
+                              node.copyWith(
+                                panels: _swap(node.panels, i, i + 1),
+                              ),
+                            );
+                          },
                     icon: const Icon(Icons.arrow_downward_rounded),
                   ),
                   IconButton(
                     key: ValueKey('remove-panel-$i'),
                     tooltip: tr(ui, 'common.remove'),
-                    onPressed: () => save(
-                      node.copyWith(panels: [...node.panels]..removeAt(i)),
-                    ),
+                    onPressed: () {
+                      _action('remove_image');
+                      save(
+                        node.copyWith(panels: [...node.panels]..removeAt(i)),
+                      );
+                    },
                     icon: const Icon(Icons.delete_outline_rounded),
                   ),
                 ],
@@ -487,6 +515,7 @@ class NodeEditorScreen extends ConsumerWidget {
               onPressed: () async {
                 final picked = await _pickPanel(context, ref, g);
                 if (picked == null) return;
+                _action('add_image');
                 await save(node.copyWith(panels: [...node.panels, picked]));
               },
               icon: const Icon(Icons.add_photo_alternate_outlined),
@@ -519,14 +548,17 @@ class NodeEditorScreen extends ConsumerWidget {
                     ),
                     trailing: IconButton(
                       icon: const Icon(Icons.close_rounded),
-                      onPressed: () => save(
-                        node.copyWith(
-                          choices: [
-                            for (final x in node.choices)
-                              if (x.id != c.id) x,
-                          ],
-                        ),
-                      ),
+                      onPressed: () {
+                        _action('remove_choice');
+                        save(
+                          node.copyWith(
+                            choices: [
+                              for (final x in node.choices)
+                                if (x.id != c.id) x,
+                            ],
+                          ),
+                        );
+                      },
                     ),
                   ),
                 const SizedBox(height: 8),
@@ -584,6 +616,7 @@ class NodeEditorScreen extends ConsumerWidget {
         ],
       ),
     );
+    _action('add_choice');
     await ref.read(branchesProvider(gamebookId).notifier).update(b);
   }
 
