@@ -1,0 +1,482 @@
+{
+  "title": "Pozdní léto: Peníze",
+  "title_i18n": {
+    "de": "Spätsommer: Geld",
+    "en": "Late Summer: Money",
+    "fr": "Fin d'été : L'argent",
+    "it": "Fine estate: I soldi",
+    "ja": "晩夏:金",
+    "ko": "늦여름: 돈",
+    "pl": "Późne lato: Pieniądze",
+    "pt-BR": "Fim de verão: Dinheiro",
+    "ru": "Конец лета: Деньги",
+    "uk": "Кінець літа: Гроші",
+    "vi": "Cuối hè: Tiền"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_2",
+      "characters": [],
+      "visual_tags": [
+        "yellowing leaves",
+        "a few leaves falling",
+        "low evening sun",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "yellow leaves slowly falling, warm low sun flickering through the branches"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "standing at the garden table",
+        "holding a smartphone",
+        "focused",
+        "looking at the phone"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dcera_5"
+        }
+      ],
+      "visual_tags": [
+        "tugging at someone's trouser leg",
+        "looking up",
+        "pouting"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "dcera_5"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking up",
+        "pouting",
+        "tugging at a trouser leg"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_5",
+          "text": "Tati, já mám hlad!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, ich hab Hunger!",
+            "en": "Daddy, I'm hungry!",
+            "fr": "Papa, j'ai faim !",
+            "it": "Papà, ho fame!",
+            "ja": "パパ、おなかすいたー!",
+            "ko": "아빠, 배고파!",
+            "pl": "Tato, jestem głodna!",
+            "pt-BR": "Pai, tô com fome!",
+            "ru": "Папа, я есть хочу!",
+            "uk": "Тату, я їсти хочу!",
+            "vi": "Bố ơi, con đói!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the smartphone",
+        "focused"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jak to máš s tím příjmem? Koukám, že mi pořád dlužíš. Teď by se mi něco hodilo zpátky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie sieht's mit deinem Einkommen aus? Du schuldest mir ja immer noch was. Ich könnte jetzt was davon zurück gebrauchen.",
+            "en": "So how's that income going? Looks like you still owe me. I could use some of it back now.",
+            "fr": "Alors, ces revenus, ça donne quoi ? Je vois que tu me dois toujours de l'argent. Là, j'en récupérerais bien un peu.",
+            "it": "Come va con le entrate? Vedo che mi devi ancora dei soldi. Adesso qualcosa indietro mi farebbe comodo.",
+            "ja": "収入のほうはどうなってんだ?まだ俺に借りがあるよな。今ちょっと返してもらえると助かるんだけど。",
+            "ko": "수입은 어떻게 돼 가? 보니까 아직도 나한테 빚졌던데. 지금 좀 돌려받으면 좋겠는데.",
+            "pl": "Jak tam z tym dochodem? Widzę, że dalej wisisz mi kasę. Teraz by mi się coś przydało z powrotem.",
+            "pt-BR": "E aí, como tá essa renda? Vejo que você ainda me deve. Agora eu bem que precisava de um pouco de volta.",
+            "ru": "Как у тебя там с доходом? Смотрю, ты мне всё ещё должен. Сейчас бы мне что-нибудь вернуть.",
+            "uk": "Як у тебе там із доходом? Бачу, ти мені досі винен. Зараз мені щось повернути не завадило б.",
+            "vi": "Thu nhập của mày sao rồi? Thấy mày vẫn còn nợ tao. Giờ tao cũng cần lấy lại ít."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "empty energy drink cans",
+        "frowning at a monitor"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "talking to himself",
+        "rubbing his face",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Zase peníze. Nemám ani na nájem. Všechno jsem vrazil do Nebulonu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schon wieder Geld. Ich hab nicht mal die Miete. Ich hab alles in Nebulon gesteckt.",
+            "en": "Money again. I can't even make rent. I sank everything into Nebulon.",
+            "fr": "Encore l'argent. J'ai même pas de quoi payer le loyer. J'ai tout mis dans Nebulon.",
+            "it": "Di nuovo i soldi. Non ho neanche per l'affitto. Ho messo tutto in Nebulon.",
+            "ja": "また金かよ。家賃すら払えねえんだ。全部Nebulonにつぎ込んだ。",
+            "ko": "또 돈 얘기야. 월세 낼 돈도 없어. 전부 Nebulon에 쏟아부었다고.",
+            "pl": "Znowu kasa. Nie mam nawet na czynsz. Wszystko władowałem w Nebulon.",
+            "pt-BR": "Dinheiro de novo. Não tenho nem pro aluguel. Enfiei tudo no Nebulon.",
+            "ru": "Опять деньги. Мне за квартиру платить нечем. Я всё вбухал в Nebulon.",
+            "uk": "Знову гроші. Мені нема чим платити за квартиру. Я все вгатив у Nebulon.",
+            "vi": "Lại tiền. Tao còn chẳng đủ tiền thuê nhà. Tao dồn hết vào Nebulon rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing",
+        "defensive expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tolik ti určitě nedlužím, spíš míň. Všechno šlo do Nebulonu a teď ani nevím, co vlastně chci dělat. Příjem nemám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "So viel schulde ich dir bestimmt nicht, eher weniger. Alles ging in Nebulon, und jetzt weiß ich nicht mal, was ich eigentlich machen will. Ich hab kein Einkommen.",
+            "en": "I sure don't owe you that much, less if anything. It all went into Nebulon and now I don't even know what I want to do. I've got no income.",
+            "fr": "Je te dois sûrement pas autant, plutôt moins. Tout est parti dans Nebulon et maintenant je sais même plus ce que je veux faire. J'ai pas de revenus.",
+            "it": "Di sicuro non ti devo così tanto, semmai meno. È andato tutto in Nebulon e adesso non so neanche cosa voglio fare. Non ho entrate.",
+            "ja": "そんなに借りてねえよ、むしろもっと少ないはずだ。全部Nebulonに消えて、今は自分が何をしたいのかもわかんねえ。収入なんてねえよ。",
+            "ko": "그렇게 많이 빚지진 않았어, 오히려 더 적을걸. 전부 Nebulon에 들어갔고 이젠 내가 뭘 하고 싶은지도 모르겠어. 수입도 없어.",
+            "pl": "Na pewno nie wiszę ci aż tyle, raczej mniej. Wszystko poszło na Nebulon, a teraz nawet nie wiem, co właściwie chcę robić. Nie mam dochodu.",
+            "pt-BR": "Com certeza não te devo tanto, é até menos. Foi tudo pro Nebulon e agora nem sei o que eu quero fazer. Não tenho renda.",
+            "ru": "Столько я тебе точно не должен, скорее меньше. Всё ушло в Nebulon, и теперь я даже не знаю, чем вообще хочу заниматься. Дохода у меня нет.",
+            "uk": "Стільки я тобі точно не винен, радше менше. Усе пішло в Nebulon, і тепер я навіть не знаю, чим узагалі хочу займатися. Доходу в мене нема.",
+            "vi": "Tao chắc chắn không nợ mày nhiều thế, ít hơn thì có. Tất cả đổ vào Nebulon và giờ tao còn chẳng biết mình muốn làm gì. Tao không có thu nhập."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "glancing down at someone",
+        "apologetic smile",
+        "phone in hand"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Za chvíli vám uvařím, zlatíčka, jen tohle vyřídím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich koch euch gleich was, ihr Süßen, ich muss nur das hier klären.",
+            "en": "I'll cook for you in a minute, sweethearts, just let me sort this out.",
+            "fr": "Je vous fais à manger dans une minute, mes chéries, je règle juste ça.",
+            "it": "Tra un attimo vi preparo da mangiare, tesori, sistemo solo questa cosa.",
+            "ja": "すぐメシ作ってやるからな、お前たち。これだけ片付けさせてくれ。",
+            "ko": "금방 밥해 줄게, 우리 강아지들, 이것만 처리하고.",
+            "pl": "Zaraz wam coś ugotuję, skarby, tylko to załatwię.",
+            "pt-BR": "Já já faço comida pra vocês, meus amores, só resolvo isso aqui.",
+            "ru": "Сейчас приготовлю вам поесть, солнышки, только с этим разберусь.",
+            "uk": "Зараз зварю вам їсти, сонечка, тільки з цим розберуся.",
+            "vi": "Lát bố nấu cho các con ăn nhé, cục cưng, để bố xử lý cái này đã."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the smartphone",
+        "resolute expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "O penězích na release Nebulonu, který se nikdy neuskutečnil, raději ani mluvit nebudu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Über das Geld für den Nebulon-Release, der nie stattgefunden hat, red ich lieber gar nicht erst.",
+            "en": "Let's not even talk about the money for the Nebulon release that never happened.",
+            "fr": "L'argent pour la sortie de Nebulon, qui n'a jamais eu lieu, je préfère même pas en parler.",
+            "it": "Dei soldi per il lancio di Nebulon, che non c'è mai stato, preferisco non parlare nemmeno.",
+            "ja": "一度も出なかったNebulonのリリース用の金の話は、もうしないでおくよ。",
+            "ko": "한 번도 안 나온 Nebulon 출시용 돈 얘기는 아예 안 할게.",
+            "pl": "O kasie na premierę Nebulonu, która nigdy się nie odbyła, wolę nawet nie mówić.",
+            "pt-BR": "Do dinheiro pro lançamento do Nebulon, que nunca aconteceu, prefiro nem falar.",
+            "ru": "О деньгах на релиз Nebulon, который так и не состоялся, я лучше вообще промолчу.",
+            "uk": "Про гроші на реліз Nebulon, який так і не відбувся, я краще взагалі змовчу.",
+            "vi": "Còn tiền cho bản phát hành Nebulon chưa bao giờ ra mắt thì tao thôi khỏi nói."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Beru to tak, že mi za ně dáváš svolení vydat vlastní projekt inspirovaný Nebulonem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nehm's so, dass du mir dafür erlaubst, mein eigenes, von Nebulon inspiriertes Projekt rauszubringen.",
+            "en": "I'll take it as you giving me permission to release my own project inspired by Nebulon.",
+            "fr": "Je considère qu'en échange tu me donnes le droit de sortir mon propre projet inspiré de Nebulon.",
+            "it": "Lo prendo come il tuo permesso di pubblicare un mio progetto ispirato a Nebulon.",
+            "ja": "その代わり、Nebulonにインスパイアされた俺自身のプロジェクトを出す許可をもらったってことにしとく。",
+            "ko": "그 대신 Nebulon에서 영감받은 내 프로젝트를 내도 된다고 허락한 걸로 알게.",
+            "pl": "Uznaję, że w zamian dajesz mi zgodę na wydanie mojego własnego projektu inspirowanego Nebulonem.",
+            "pt-BR": "Vou entender que, em troca, você me dá permissão pra lançar meu próprio projeto inspirado no Nebulon.",
+            "ru": "Считаю, что взамен ты даёшь мне разрешение выпустить свой проект по мотивам Nebulon.",
+            "uk": "Вважаю, що натомість ти даєш мені дозвіл випустити власний проєкт, натхненний Nebulon.",
+            "vi": "Tao coi như đổi lại, mày cho phép tao phát hành dự án riêng lấy cảm hứng từ Nebulon."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "slamming fist on the desk",
+        "energy drink cans jumping",
+        "neon light flickering"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "fist hitting the desk, cans rattling, neon light stuttering"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "furious",
+        "shouting at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To teda ne! Kvůli tobě jsem to celý přepisoval. Ten koncept má cenu, ne tvoje rychlovky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Auf keinen Fall! Wegen dir hab ich das ganze Ding neu geschrieben. Das Konzept ist was wert, nicht deine Schnellschüsse.",
+            "en": "No way! I rewrote the whole thing because of you. The concept is what's worth something, not your quick hacks.",
+            "fr": "Certainement pas ! À cause de toi, j'ai tout réécrit. C'est le concept qui a de la valeur, pas tes trucs bâclés.",
+            "it": "Col cavolo! Per colpa tua ho riscritto tutto. È il concept che vale, non le tue robe fatte di fretta.",
+            "ja": "冗談じゃねえ!お前のせいで全部書き直したんだぞ。価値があるのはコンセプトだ、お前のやっつけ仕事じゃねえ。",
+            "ko": "절대 안 돼! 너 때문에 전부 다시 썼어. 가치 있는 건 콘셉트지, 네 날림 작업이 아니야.",
+            "pl": "No chyba nie! Przez ciebie przepisywałem wszystko od nowa. Wartość ma koncept, a nie twoje szybkie prowizorki.",
+            "pt-BR": "Nem a pau! Por sua causa eu reescrevi tudo. O que tem valor é o conceito, não essas suas gambiarras.",
+            "ru": "Ну уж нет! Из-за тебя я всё переписывал. Ценность в концепции, а не в твоих поделках на скорую руку.",
+            "uk": "Ну вже ні! Через тебе я все переписував. Цінність у концепції, а не в твоїх поробках нашвидкуруч.",
+            "vi": "Không đời nào! Vì mày mà tao phải viết lại toàn bộ. Cái có giá trị là ý tưởng, chứ không phải mấy thứ làm vội của mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_2",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing furiously",
+        "contemptuous expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Chceš Nebulon vydat po svým? Můžeme se domluvit. Ale takhle ne. Kámo, fuck off!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du willst Nebulon auf deine Art rausbringen? Darüber können wir reden. Aber nicht so. Kumpel, fuck off!",
+            "en": "You want to release Nebulon your way? We can work something out. But not like this. Buddy, fuck off!",
+            "fr": "Tu veux sortir Nebulon à ta façon ? On peut s'arranger. Mais pas comme ça. Mon pote, fuck off !",
+            "it": "Vuoi pubblicare Nebulon a modo tuo? Possiamo metterci d'accordo. Ma non così. Amico, fuck off!",
+            "ja": "Nebulonをお前のやり方で出したいのか?話し合いはできる。でもこんなやり方はねえだろ。相棒、fuck off!",
+            "ko": "Nebulon을 네 방식대로 내고 싶다고? 얘기해 볼 순 있어. 근데 이렇게는 아니지. 친구야, fuck off!",
+            "pl": "Chcesz wydać Nebulon po swojemu? Możemy się dogadać. Ale nie tak. Stary, fuck off!",
+            "pt-BR": "Quer lançar o Nebulon do seu jeito? A gente pode conversar. Mas assim não. Cara, fuck off!",
+            "ru": "Хочешь выпустить Nebulon по-своему? Можем договориться. Но не так. Братан, fuck off!",
+            "uk": "Хочеш випустити Nebulon по-своєму? Можемо домовитися. Але не так. Друже, fuck off!",
+            "vi": "Mày muốn phát hành Nebulon theo kiểu của mày à? Mình có thể thỏa thuận. Nhưng không phải thế này. Ông bạn, fuck off!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_2",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "slight smile",
+        "typing on the smartphone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Teď sis to poprvé trefil! Kámo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zum ersten Mal hast du's getroffen! Kumpel.",
+            "en": "First time you've ever got it right! Buddy.",
+            "fr": "Pour une fois, t'as visé juste ! Mon pote.",
+            "it": "Per la prima volta ci hai preso! Amico.",
+            "ja": "初めて的を射たな!相棒。",
+            "ko": "처음으로 제대로 맞혔네! 친구야.",
+            "pl": "Pierwszy raz trafiłeś! Stary.",
+            "pt-BR": "Pela primeira vez você acertou! Cara.",
+            "ru": "Первый раз в точку! Братан.",
+            "uk": "Уперше влучив! Друже.",
+            "vi": "Lần đầu tiên mày nói trúng! Ông bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small",
+      "animate": true,
+      "motion": "a slight calm smile, falling leaves behind him"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_2",
+      "characters": [],
+      "visual_tags": [
+        "harsh hard light",
+        "sharp shadows",
+        "empty desk chair",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,737 @@
+{
+  "title": "Jaro: Startovní peníze",
+  "title_i18n": {
+    "de": "Frühling: Startkapital",
+    "en": "Spring: Seed Money",
+    "fr": "Printemps : L'argent du départ",
+    "it": "Primavera: I soldi per partire",
+    "ja": "春：スタート資金",
+    "ko": "봄: 출발 자금",
+    "pl": "Wiosna: Pieniądze na start",
+    "pt-BR": "Primavera: Dinheiro inicial",
+    "ru": "Весна: Стартовые деньги",
+    "uk": "Весна: Стартові гроші",
+    "vi": "Mùa xuân: Tiền khởi đầu"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "white cherry tree in full blossom",
+        "tulips",
+        "garden table with a laptop",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "cherry petals drifting, tulips swaying in a light breeze"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "soldering a circuit board",
+        "soldering iron",
+        "smoke",
+        "buzzing neon above",
+        "focused"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [],
+      "visual_tags": [
+        "glowing file icon on a screen",
+        "no readable text",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NebulonTactics.md",
+          "kind": "narration",
+          "i18n": {
+            "de": "NebulonTactics.md",
+            "en": "NebulonTactics.md",
+            "fr": "NebulonTactics.md",
+            "it": "NebulonTactics.md",
+            "ja": "NebulonTactics.md",
+            "ko": "NebulonTactics.md",
+            "pl": "NebulonTactics.md",
+            "pt-BR": "NebulonTactics.md",
+            "ru": "NebulonTactics.md",
+            "uk": "NebulonTactics.md",
+            "vi": "NebulonTactics.md"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing",
+        "proud expression",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Posílám ti to. Pravidla. Celý Nebulon na třech a půl kilobajtech.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schick's dir. Die Regeln. Ganz Nebulon auf dreieinhalb Kilobyte.",
+            "en": "Sending it to you. The rules. All of Nebulon in three and a half kilobytes.",
+            "fr": "Je te l'envoie. Les règles. Tout Nebulon en trois kilo-octets et demi.",
+            "it": "Te lo mando. Le regole. Tutto Nebulon in tre kilobyte e mezzo.",
+            "ja": "送るよ。ルールだ。Nebulonの全部が3.5キロバイトに入ってる。",
+            "ko": "보낼게. 규칙이야. Nebulon 전부가 3.5킬로바이트에 들어 있어.",
+            "pl": "Wysyłam ci. Zasady. Cały Nebulon w trzech i pół kilobajta.",
+            "pt-BR": "Tô te mandando. As regras. O Nebulon inteiro em três kilobytes e meio.",
+            "ru": "Отправляю. Правила. Весь Nebulon в трёх с половиной килобайтах.",
+            "uk": "Надсилаю. Правила. Увесь Nebulon у трьох з половиною кілобайтах.",
+            "vi": "Tao gửi mày đây. Luật chơi. Cả Nebulon trong ba kilobyte rưỡi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "reading the laptop",
+        "smiling",
+        "sitting at a garden table"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Deset let práce a vejde se to do jednoho souboru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zehn Jahre Arbeit und es passt in eine Datei.",
+            "en": "Ten years of work and it fits in one file.",
+            "fr": "Dix ans de boulot et ça tient dans un fichier.",
+            "it": "Dieci anni di lavoro e ci sta in un file.",
+            "ja": "十年の仕事が、ファイル一個に収まるのか。",
+            "ko": "십 년 작업이 파일 하나에 들어가네.",
+            "pl": "Dziesięć lat pracy i mieści się w jednym pliku.",
+            "pt-BR": "Dez anos de trabalho e cabe num arquivo só.",
+            "ru": "Десять лет работы — и влезает в один файл.",
+            "uk": "Десять років роботи — і влазить в один файл.",
+            "vi": "Mười năm làm việc mà vừa trong một file."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "gesturing around at the shelves",
+        "possessive expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pravidla jo. Zbytek je tady. Kód ti nedám. Ten patří mně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Die Regeln schon. Der Rest ist hier. Den Code kriegst du nicht. Der gehört mir.",
+            "en": "The rules do. The rest is in here. You're not getting the code. That's mine.",
+            "fr": "Les règles, oui. Le reste est là. Le code, je te le donne pas. Il est à moi.",
+            "it": "Le regole sì. Il resto è qui. Il codice non te lo do. È mio.",
+            "ja": "ルールはな。残りはここだ。コードは渡さない。あれは俺のもんだ。",
+            "ko": "규칙은 그렇지. 나머진 여기 있어. 코드는 안 줘. 그건 내 거야.",
+            "pl": "Zasady tak. Reszta jest tutaj. Kodu ci nie dam. Jest mój.",
+            "pt-BR": "As regras, sim. O resto tá aqui. O código eu não te dou. É meu.",
+            "ru": "Правила — да. Остальное тут. Код не дам. Он мой.",
+            "uk": "Правила — так. Решта тут. Код не дам. Він мій.",
+            "vi": "Luật thì vừa. Phần còn lại ở đây. Code thì tao không đưa. Của tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "calm expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Nechci tvůj kód. Chci, aby to konečně vyšlo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich will deinen Code nicht. Ich will, dass es endlich rauskommt.",
+            "en": "I don't want your code. I want it to finally come out.",
+            "fr": "Je veux pas ton code. Je veux que ça sorte enfin.",
+            "it": "Non voglio il tuo codice. Voglio che esca finalmente.",
+            "ja": "コードなんかいらない。いい加減リリースしてほしいだけだ。",
+            "ko": "네 코드 필요 없어. 드디어 나왔으면 하는 거지.",
+            "pl": "Nie chcę twojego kodu. Chcę, żeby to wreszcie wyszło.",
+            "pt-BR": "Não quero teu código. Quero que finalmente saia.",
+            "ru": "Не нужен мне твой код. Я хочу, чтобы оно наконец вышло.",
+            "uk": "Не треба мені твій код. Я хочу, щоб воно нарешті вийшло.",
+            "vi": "Tao không cần code của mày. Tao muốn nó ra mắt cho rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_1"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "tugging at a sleeve",
+        "excited",
+        "looking up",
+        "ladybug on a finger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_1",
+          "text": "Tati, beruška! Pojď se podívat na berušku!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, ein Marienkäfer! Komm, guck mal den Marienkäfer!",
+            "en": "Daddy, a ladybug! Come look at the ladybug!",
+            "fr": "Papa, une coccinelle ! Viens voir la coccinelle !",
+            "it": "Papà, una coccinella! Vieni a vedere la coccinella!",
+            "ja": "パパ、テントウムシ！テントウムシ見て見て！",
+            "ko": "아빠, 무당벌레! 무당벌레 보러 와!",
+            "pl": "Tato, biedronka! Chodź zobaczyć biedronkę!",
+            "pt-BR": "Papai, uma joaninha! Vem ver a joaninha!",
+            "ru": "Папа, божья коровка! Иди посмотри на божью коровку!",
+            "uk": "Тату, сонечко! Йди подивись на сонечко!",
+            "vi": "Bố ơi, bọ rùa! Lại xem bọ rùa nè!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking down at someone",
+        "warm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Hned, zlato. Píšu si s kamarádem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gleich, Schatz. Ich schreib mit einem Freund.",
+            "en": "In a sec, sweetie. I'm texting a friend.",
+            "fr": "J'arrive, ma puce. J'écris à un copain.",
+            "it": "Subito, tesoro. Sto scrivendo a un amico.",
+            "ja": "すぐ行くよ。友達とやりとりしてるんだ。",
+            "ko": "금방 갈게, 우리 딸. 친구랑 얘기 중이야.",
+            "pl": "Zaraz, kochanie. Piszę z kolegą.",
+            "pt-BR": "Já vou, filha. Tô falando com um amigo.",
+            "ru": "Сейчас, солнышко. Я с другом переписываюсь.",
+            "uk": "Зараз, сонечко. Я з другом листуюся.",
+            "vi": "Bố ra ngay, con yêu. Bố đang nhắn với bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_2"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "curious expression",
+        "head tilted",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_2",
+          "text": "S jakým kamarádem?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit welchem Freund?",
+            "en": "What friend?",
+            "fr": "Quel copain ?",
+            "it": "Quale amico?",
+            "ja": "どのおともだち？",
+            "ko": "무슨 친구?",
+            "pl": "Z jakim kolegą?",
+            "pt-BR": "Que amigo?",
+            "ru": "С каким другом?",
+            "uk": "З яким другом?",
+            "vi": "Bạn nào ạ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "playful smile",
+        "looking down at someone"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "S tím, co bydlí pod zemí.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Mit dem, der unter der Erde wohnt.",
+            "en": "The one who lives underground.",
+            "fr": "Celui qui habite sous la terre.",
+            "it": "Quello che abita sottoterra.",
+            "ja": "地面の下に住んでるやつだよ。",
+            "ko": "땅속에 사는 친구.",
+            "pl": "Z tym, co mieszka pod ziemią.",
+            "pt-BR": "Aquele que mora debaixo da terra.",
+            "ru": "С тем, который живёт под землёй.",
+            "uk": "З тим, що живе під землею.",
+            "vi": "Cái chú sống dưới lòng đất ấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojce_2"
+        }
+      ],
+      "visual_tags": [
+        "running away across the spring grass",
+        "laughing",
+        "tulips"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the twins running off laughing through the tulips"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "generous expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Pošlu ti peníze. Na release. Ať to máš z čeho dotáhnout.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich schick dir Geld. Für den Release. Damit du's zu Ende bringen kannst.",
+            "en": "I'll send you money. For the release. So you've got something to finish it with.",
+            "fr": "Je t'envoie de l'argent. Pour la sortie. Que t'aies de quoi finir.",
+            "it": "Ti mando dei soldi. Per il rilascio. Così hai con cosa finirlo.",
+            "ja": "金を送るよ。リリース用に。仕上げる資金にしろ。",
+            "ko": "돈 보낼게. 출시용으로. 마무리할 돈은 있어야지.",
+            "pl": "Wyślę ci kasę. Na release. Żebyś miał za co to dociągnąć.",
+            "pt-BR": "Vou te mandar uma grana. Pro lançamento. Pra você ter como terminar.",
+            "ru": "Я пришлю тебе денег. На релиз. Чтобы было на что доделать.",
+            "uk": "Я надішлю тобі грошей. На реліз. Щоб було за що доробити.",
+            "vi": "Tao gửi mày ít tiền. Cho bản phát hành. Để có cái mà làm cho xong."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "staring at a monitor",
+        "moved",
+        "silent",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "touched",
+        "quiet smile",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Kámo, to je start, o jakým se mi ani nesnilo. Na to nezapomenu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter, das ist ein Start, von dem ich nicht mal geträumt hab. Das vergess ich dir nie.",
+            "en": "Mate, that's a start I never even dreamed of. I won't forget this.",
+            "fr": "Mon pote, c'est un départ dont j'osais même pas rêver. J'oublierai pas.",
+            "it": "Amico, è una partenza che non avevo nemmeno sognato. Non lo dimenticherò.",
+            "ja": "相棒、夢にも見なかったスタートだよ。この恩は忘れない。",
+            "ko": "야, 꿈도 못 꾼 출발이야. 이건 안 잊을게.",
+            "pl": "Stary, o takim starcie nawet nie marzyłem. Nie zapomnę ci tego.",
+            "pt-BR": "Mano, é um começo que eu nem sonhava. Não vou esquecer isso.",
+            "ru": "Братан, о таком старте я даже не мечтал. Я этого не забуду.",
+            "uk": "Друже, про такий старт я навіть не мріяв. Я цього не забуду.",
+            "vi": "Bạn ơi, khởi đầu thế này tao còn chẳng dám mơ. Tao không quên đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "grinning"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "A ještě něco. Stavím ti server. Naučíš se na něm Linux.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und noch was. Ich bau dir einen Server. Darauf lernst du Linux.",
+            "en": "And one more thing. I'm building you a server. You'll learn Linux on it.",
+            "fr": "Et autre chose. Je te monte un serveur. Tu vas apprendre Linux dessus.",
+            "it": "E un'altra cosa. Ti monto un server. Ci imparerai Linux.",
+            "ja": "それともう一つ。サーバー組んでやる。それでLinux覚えろ。",
+            "ko": "그리고 하나 더. 서버 만들어 줄게. 그걸로 리눅스 배워.",
+            "pl": "I jeszcze coś. Stawiam ci serwer. Nauczysz się na nim Linuksa.",
+            "pt-BR": "E mais uma coisa. Vou montar um servidor pra você. Nele você aprende Linux.",
+            "ru": "И ещё. Я соберу тебе сервер. На нём выучишь Linux.",
+            "uk": "І ще. Я зберу тобі сервер. На ньому вивчиш Linux.",
+            "vi": "Còn nữa. Tao dựng cho mày một server. Học Linux trên đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "laughing",
+        "shaking his head"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty jsi blázen.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist verrückt.",
+            "en": "You're crazy.",
+            "fr": "T'es dingue.",
+            "it": "Sei pazzo.",
+            "ja": "お前、イカれてるな。",
+            "ko": "너 미쳤구나.",
+            "pl": "Ty jesteś szalony.",
+            "pt-BR": "Você é louco.",
+            "ru": "Ты псих.",
+            "uk": "Ти божевільний.",
+            "vi": "Mày điên rồi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "laughing",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Známe se dvacet let. Blázni jsme oba.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wir kennen uns seit zwanzig Jahren. Verrückt sind wir beide.",
+            "en": "We've known each other twenty years. We're both crazy.",
+            "fr": "On se connaît depuis vingt ans. On est dingues tous les deux.",
+            "it": "Ci conosciamo da vent'anni. Pazzi lo siamo tutti e due.",
+            "ja": "二十年の付き合いだぞ。イカれてんのはお互い様だ。",
+            "ko": "우리 이십 년 친구야. 미친 건 둘 다지.",
+            "pl": "Znamy się dwadzieścia lat. Szaleni jesteśmy obaj.",
+            "pt-BR": "A gente se conhece há vinte anos. Loucos somos os dois.",
+            "ru": "Мы знакомы двадцать лет. Психи мы оба.",
+            "uk": "Ми знайомі двадцять років. Божевільні ми обидва.",
+            "vi": "Quen nhau hai mươi năm rồi. Điên thì cả hai đứa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "dandelion wreath on a laptop keyboard",
+        "sunlight",
+        "garden table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "lifting his head",
+        "looking up",
+        "as if feeling a draft",
+        "cold light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "dreamy expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Až to vyjde, bude to velký.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn's rauskommt, wird's groß.",
+            "en": "When it comes out, it'll be big.",
+            "fr": "Quand ça sortira, ça va être énorme.",
+            "it": "Quando esce, sarà una cosa grossa.",
+            "ja": "出たら、でかいことになるぞ。",
+            "ko": "이거 나오면 대박 날 거야.",
+            "pl": "Jak to wyjdzie, będzie wielkie.",
+            "pt-BR": "Quando sair, vai ser grande.",
+            "ru": "Когда выйдет, это будет бомба.",
+            "uk": "Коли вийде, це буде бомба.",
+            "vi": "Khi nó ra mắt, sẽ to lắm đấy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "slight smile",
+        "looking at the dandelion wreath"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Až to vyjde.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn's rauskommt.",
+            "en": "When it comes out.",
+            "fr": "Quand ça sortira.",
+            "it": "Quando esce.",
+            "ja": "出たらな。",
+            "ko": "나오면.",
+            "pl": "Jak wyjdzie.",
+            "pt-BR": "Quando sair.",
+            "ru": "Когда выйдет.",
+            "uk": "Коли вийде.",
+            "vi": "Khi nó ra mắt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "golden evening light",
+        "blossoming garden",
+        "empty garden table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

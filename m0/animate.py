@@ -19,6 +19,7 @@ import time
 from pathlib import Path
 
 import comfy
+import pixelate
 import rules
 from common import OUT, load_json, save_json, wd14_tag
 from render import MAX_RESEED, safety
@@ -226,6 +227,10 @@ def main():
             rec["attempts"].append({"seed": s, "unsafe": bad})
             if not bad:
                 break
+        if px := pixelate.spec(preset):  # pixel-art preset: every frame as its still (m0/pixelate.py)
+            webp = {**webp, "bytes": pixelate.webp(webp["bytes"], px)}
+            probes = {k: pixelate.png(b, px) for k, b in probes.items()}
+            rec["pixelate"] = px
         (outdir / f"p{i:02d}_video.webp").write_bytes(webp["bytes"])
         for k, b in probes.items():
             (outdir / f"p{i:02d}_{k}.png").write_bytes(b)

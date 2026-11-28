@@ -193,10 +193,10 @@ class FakeStoreGateway implements StoreGateway {
     : owned = owned ?? {};
 
   static String priceFor(String id) {
-    if (id == 'bundle_all') return r'$6.99';
-    if (id.startsWith('bundle_')) return r'$2.99';
-    if (id.startsWith('kit_')) return r'$3.99';
-    if (id.startsWith('gamebook_')) return r'$1.99';
+    if (id == 'bundle_all') return r'$4.99';
+    if (id.startsWith('bundle_')) return r'$1.99';
+    if (id.startsWith('kit_')) return r'$0.99';
+    if (id.startsWith('gamebook_')) return r'$0.99';
     return r'$0.99';
   }
 

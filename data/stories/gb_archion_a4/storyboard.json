@@ -1,0 +1,420 @@
+{
+  "title": "Zima: Konec a ticho",
+  "title_i18n": {
+    "de": "Winter: Das Ende und die Stille",
+    "en": "Winter: The End and Silence",
+    "fr": "Hiver : La fin et le silence",
+    "it": "Inverno: La fine e il silenzio",
+    "ja": "冬:終わりと沈黙",
+    "ko": "겨울: 끝, 그리고 침묵",
+    "pl": "Zima: Koniec i cisza",
+    "pt-BR": "Inverno: O fim e o silêncio",
+    "ru": "Зима: Конец и тишина",
+    "uk": "Зима: Кінець і тиша",
+    "vi": "Mùa đông: Kết thúc và im lặng"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_4",
+      "characters": [],
+      "visual_tags": [
+        "first snow",
+        "snowy garden",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "snowflakes slowly falling over the garden"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "dvojcata_zima"
+        }
+      ],
+      "visual_tags": [
+        "building a snowman",
+        "laughing",
+        "snow on the ground"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the girls patting snow onto the snowman, snowflakes falling"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "standing by the window",
+        "holding a steaming mug of tea",
+        "looking down at a laptop"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "steam rising from the mug, snow falling outside the window"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_4",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting",
+        "back turned",
+        "dark monitor",
+        "from behind",
+        "dim emergency light",
+        "silence"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [],
+      "visual_tags": [
+        "hands typing on a laptop",
+        "mug of tea beside it",
+        "snowy window light",
+        "no readable text"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "quiet",
+        "relieved"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Kámo, chybět mi nebudeš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Kumpel, vermissen werd ich dich nicht.",
+            "en": "Buddy, I won't miss you.",
+            "fr": "Mon pote, tu vas pas me manquer.",
+            "it": "Amico, non mi mancherai.",
+            "ja": "相棒、お前がいなくても寂しくねえよ。",
+            "ko": "친구야, 너 안 보고 싶을 거야.",
+            "pl": "Stary, nie będę za tobą tęsknił.",
+            "pt-BR": "Cara, não vou sentir sua falta.",
+            "ru": "Братан, скучать по тебе я не буду.",
+            "uk": "Друже, сумувати за тобою я не буду.",
+            "vi": "Ông bạn, tao sẽ không nhớ mày đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "pained expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Když jsem byl ve svém životě nejvíc v hajzlu a hledal u tebe útočiště, vyhodils mě po dvou dnech jak největšího fakana. To se nezapomíná.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Als ich in meinem Leben am tiefsten in der Scheiße saß und bei dir Zuflucht gesucht hab, hast du mich nach zwei Tagen rausgeschmissen wie den letzten Rotzlöffel. So was vergisst man nicht.",
+            "en": "When I was in the deepest shit of my life and came to you for shelter, you threw me out after two days like the worst little punk. You don't forget that.",
+            "fr": "Quand j'étais dans la merde comme jamais dans ma vie et que je suis venu chercher refuge chez toi, tu m'as viré au bout de deux jours comme le dernier des morveux. Ça s'oublie pas.",
+            "it": "Quando ero nella merda più nera della mia vita e cercavo rifugio da te, mi hai cacciato dopo due giorni come l'ultimo dei mocciosi. Queste cose non si dimenticano.",
+            "ja": "人生で一番どん底のクソみたいな時に、お前のとこに逃げ込んだら、二日で追い出しやがったよな、最低のクソガキみたいに。あれは忘れねえ。",
+            "ko": "내 인생에서 제일 밑바닥, 완전 똥통에 빠져서 너한테 피난처를 찾아갔을 때, 넌 이틀 만에 날 최악의 양아치처럼 쫓아냈지. 그건 안 잊혀.",
+            "pl": "Kiedy byłem w największym gównie w życiu i szukałem u ciebie schronienia, wywaliłeś mnie po dwóch dniach jak ostatniego gnoja. Tego się nie zapomina.",
+            "pt-BR": "Quando eu tava na pior merda da minha vida e fui buscar abrigo com você, você me chutou depois de dois dias como o pior moleque. Isso não se esquece.",
+            "ru": "Когда я был в полной жопе и искал у тебя убежища, ты выгнал меня через два дня, как последнего сопляка. Такое не забывается.",
+            "uk": "Коли я був у повній дупі й шукав у тебе притулку, ти вигнав мене через два дні, як останнього шмаркача. Таке не забувається.",
+            "vi": "Lúc đời tao khốn nạn nhất và tìm đến mày nương nhờ, mày đuổi tao đi sau hai ngày như đuổi một thằng ranh mạt hạng. Chuyện đó không quên được đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "disgusted expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "To, co jedeš teď, z toho se mi chce blít!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was du jetzt abziehst, da kommt's mir hoch!",
+            "en": "What you're pulling now makes me want to puke!",
+            "fr": "Ce que tu fais maintenant, ça me donne envie de gerber !",
+            "it": "Quello che stai combinando adesso mi fa venire da vomitare!",
+            "ja": "お前が今やってること、マジで吐き気がする!",
+            "ko": "네가 지금 하는 짓, 토 나올 것 같아!",
+            "pl": "To, co teraz odstawiasz, aż chce mi się rzygać!",
+            "pt-BR": "Isso que você tá aprontando agora me dá vontade de vomitar!",
+            "ru": "От того, что ты сейчас творишь, меня блевать тянет!",
+            "uk": "Від того, що ти зараз утинаєш, мене аж блювати тягне!",
+            "vi": "Cái trò mày đang làm bây giờ khiến tao muốn ói!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Nikdys mě nenechal udělat ti nabídku na 50/50 revenue split, kterou jsem vždy považoval za samozřejmost. (Ta nabídka pořád platí.)",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mich nie den 50/50 revenue split anbieten lassen, den ich immer für selbstverständlich hielt. (Das Angebot steht noch.)",
+            "en": "You never let me offer you the 50/50 revenue split I always took for granted. (The offer still stands.)",
+            "fr": "Tu m'as jamais laissé te proposer le partage des revenus 50/50, que j'ai toujours trouvé évident. (L'offre tient toujours.)",
+            "it": "Non mi hai mai lasciato farti l'offerta del 50/50 revenue split, che ho sempre dato per scontata. (L'offerta è ancora valida.)",
+            "ja": "当然だと思ってた50/50のレベニューシェアを、お前は一度も提案させてくれなかった。(その提案はまだ有効だ。)",
+            "ko": "난 늘 당연하다고 생각했던 50/50 수익 배분을 넌 한 번도 제안하게 해 준 적이 없어. (그 제안은 아직 유효해.)",
+            "pl": "Nigdy nie pozwoliłeś mi złożyć ci oferty podziału przychodów 50/50, który zawsze uważałem za oczywistość. (Ta oferta wciąż jest aktualna.)",
+            "pt-BR": "Você nunca me deixou te oferecer o 50/50 revenue split, que eu sempre achei óbvio. (A oferta continua de pé.)",
+            "ru": "Ты так и не дал мне предложить тебе раздел доходов 50/50, который я всегда считал само собой разумеющимся. (Предложение всё ещё в силе.)",
+            "uk": "Ти так і не дав мені запропонувати тобі поділ доходів 50/50, який я завжди вважав само собою зрозумілим. (Пропозиція досі в силі.)",
+            "vi": "Mày chưa bao giờ để tao đề nghị chia doanh thu 50/50, điều mà tao luôn coi là đương nhiên. (Lời đề nghị vẫn còn nguyên.)"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "final",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "R.I.P.",
+          "kind": "speech",
+          "i18n": {
+            "de": "R.I.P.",
+            "en": "R.I.P.",
+            "fr": "R.I.P.",
+            "it": "R.I.P.",
+            "ja": "R.I.P.",
+            "ko": "R.I.P.",
+            "pl": "R.I.P.",
+            "pt-BR": "R.I.P.",
+            "ru": "R.I.P.",
+            "uk": "R.I.P.",
+            "vi": "R.I.P."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "mug of tea",
+        "snowy window light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the laptop lid slowly closing, steam from the mug"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_4",
+      "characters": [
+        {
+          "id": "dvojcata_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "waving",
+        "laughing",
+        "snow on their hats",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojcata_zima",
+          "text": "Tati, pojď ven, tati!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, komm raus, Papa!",
+            "en": "Daddy, come outside, Daddy!",
+            "fr": "Papa, viens dehors, papa !",
+            "it": "Papà, vieni fuori, papà!",
+            "ja": "パパ、おそと来て、パパー!",
+            "ko": "아빠, 밖에 나와, 아빠!",
+            "pl": "Tato, chodź na dwór, tato!",
+            "pt-BR": "Pai, vem lá fora, pai!",
+            "ru": "Папа, пойдём на улицу, папа!",
+            "uk": "Тату, ходімо надвір, тату!",
+            "vi": "Bố ơi, ra ngoài đi, bố ơi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "warm smile",
+        "turning towards the door"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_zima",
+          "text": "Už jdu, holky!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich komm schon, Mädels!",
+            "en": "Coming, girls!",
+            "fr": "J'arrive, les filles !",
+            "it": "Arrivo, ragazze!",
+            "ja": "今行くぞ、お前たち!",
+            "ko": "지금 간다, 얘들아!",
+            "pl": "Już idę, dziewczyny!",
+            "pt-BR": "Já vou, meninas!",
+            "ru": "Иду, девчонки!",
+            "uk": "Іду, дівчата!",
+            "vi": "Bố ra đây, các con!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_okno_4",
+      "characters": [
+        {
+          "id": "ol1n_zima"
+        }
+      ],
+      "visual_tags": [
+        "walking away towards a doorway",
+        "from behind",
+        "warm light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_4",
+      "characters": [],
+      "visual_tags": [
+        "dark monitor",
+        "tiny blue light",
+        "total darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "one tiny blue light on the dark monitor flickers and goes out"
+    }
+  ]
+}

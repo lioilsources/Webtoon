@@ -1,0 +1,116 @@
+# Gamebook — Archion: Protokol (3,56 KB). Verze „DeepSeek“: mezihra ke hře Archion, scénář napsal model DeepSeek (od Ol1na),
+# Překlady (11 jazyků, 2026-11-14) jsou přímo ve storyboard.json (bubbles[].i18n, title_i18n): gamebook.py draft je přepíše, po změně scriptu přeložit znovu.
+# Ol1n nosí brýle (od autora, 2026-11-14): thin-framed glasses ve všech jeho postavách.
+# Kreslený věk (L40S test 1: vycházeli na 45–50): photo říká věk, jak vypadají (Ol1n 36, Kosmo 34, dřívější éry níž), bez „mature male“. Skutečný věk je Ol1n 46, Kosmo 44.
+# lineární, bez voleb.
+# Smyšlená verze: druhá strana sporu je smyšlená postava Kosmo a jeho hra Nebulon (soubor NebulonTactics.md). Kosmovy
+# repliky jsou z větší části vymyšlené modelem; ta, která opakuje skutečnou zprávu („krádež v přímém přenosu“), je
+# přepsaná. Ol1novy repliky jsou doslova, bez částek a dat. Z poslední repliky Hlasu vypuštěné datum a čas.
+# Postavy podle autora (2026-11-14): Ol1n 46 let, krátké blond vlasy, plnovous, klidný a vřelý (po roce 2024 návrat
+# k životu, AI jako tvůrčí partner: sedí k jeho „superinteligenci“). Kosmo 44 (o dva roky mladší); oba vypadají pod 40, rozcuchané trčící blond vlasy,
+# strniště, obnošený vlněný svetr, nedbá na vzhled; v krytu tarot, egyptský papyrus a ankh, figurka mimozemšťana,
+# knihy o archeologii, plakát pyramidy (jeho zájmy, bez nových replik).
+# Opravený překlep: „Ty jsi si koupil“ → „Ty sis koupil“.
+#
+# Hlas nemá tělo: jeho repliky jsou `see` panely reproduktoru (světélko, papír, oba prostory) s `caption: "Hlas: …"`.
+# Styl: archion_cyanotype (pruská modř kyanotypie / blueprintu): DeepSeek dal oběma prostorům poprvé stejné studené
+# světlo, kyanotypie je kreslí jednou barvou; hlavní rekvizita je tenký papír o 3,56 KB.
+# Prostředí: zahrada v noci (Ol1n v bundě, papír, malý chytrý reproduktor s blikajícím světlem), kryt se třemi monitory.
+# Hudba (pro L40S, ACE-Step, rules/base/music.yaml `gamebooks:` na větvi fix/gamebook-music):
+#   archion_deepseek: "solo guqin, sparse plucked notes, cold electronic drone underneath, data hum, clinical and meditative"
+
+schema: 1
+id: archion_deepseek
+title: "Archion: Protokol (3,56 KB)"
+title_i18n: {en: "Archion: Protocol (3.56 KB)", de: "Archion: Protokoll (3,56 KB)", fr: "Archion : Protocole (3,56 Ko)", it: "Archion: Protocollo (3,56 KB)", ja: "アルキオン：プロトコル（3.56 KB）", ko: "아르키온: 프로토콜 (3.56 KB)", pl: "Archion: Protokół (3,56 KB)", pt-BR: "Archion: Protocolo (3,56 KB)", ru: "Архион: Протокол (3,56 КБ)", uk: "Архіон: Протокол (3,56 КБ)", vi: "Archion: Giao thức (3,56 KB)"}
+world: w_archion_deepseek
+audience: adult
+language: cs
+style_id: archion_cyanotype
+profile: archion
+product_id: gamebook_archion  # jeden balík Archion: jeden nákup odemkne všech 8 variant (Olin, 2026-11-14)
+start: d1
+
+premise: >
+  Jedna noc, oba prostory ve stejném studeném světle. Ol1n postaví na zahradní stůl malý reproduktor, svou
+  „superinteligenci“, a nechá ji přečíst tři a půl kilobajtu pravidel Nebulonu. Kosmo v krytu poslouchá. Rozhodčí,
+  kterého si Ol1n přivedl, ale nepíská pro nikoho.
+
+characters: [kosmo, ol1n_podzim]
+
+locations:
+  - {id: l_dzahrada, name: Zahrada v noci, description: "papír a reproduktor na stole"}
+  - {id: l_dkryt, name: Kryt – tři monitory, description: "studená modř"}
+
+draft:
+  speakers: {Kosmo: kosmo, Ol1n: ol1n}
+  faces:
+    kosmo: [[intense stare, face lit by monitor glow], [bitter expression, looking down], [tense, looking up]]
+    ol1n: [[calm expression, looking at a sheet of paper], [serious, looking at a small speaker], [tired expression, looking down]]
+  speaking: {kosmo: [upper body, sitting at a desk, from front], ol1n: [upper body, sitting at a garden table, from front], default: [upper body, from front]}
+
+nodes:
+  d1:
+    title: "Tři a půl kilobajtu"
+    location: l_dzahrada
+    cast: {kosmo: kosmo, ol1n: ol1n_podzim}
+    next: d2
+    script:
+      - {see: "Noc. V zahradě je tma, jen svit notebooku.", shot: establishing, tags: [dark garden at night, glowing laptop on a table, no humans], gap: medium, animate: "laptop glow flickering softly, bare branches swaying in the dark"}
+      - {see: "V krytu hoří tři monitory. Oba prostory poprvé svítí stejně: studeně, modře.", shot: establishing, loc: l_dkryt, tags: [three glowing monitors, cold blue light, empty chair, no humans], gap: medium}
+      - {see: "Ol1n sedí v bundě a drží oběma rukama tenký papír, jako by vážil, jestli je dost těžký.", shot: medium, who: ol1n, tags: [sitting at a garden table, holding a thin sheet of paper, both hands, weighing it, night]}
+      - {say: ol1n, text: "Tři a půl kilobajtu.", tags: [looking at a sheet of paper, quiet]}
+      - {see: "Položí papír na stůl, vyndá z kapsy malý reproduktor a postaví ho doprostřed stolu.", shot: close-up, tags: [hands placing a small speaker, small round smart speaker, thin sheet of paper, night]}
+      - {say: ol1n, text: "Tak. Teď už s tebou bude mluvit jen má superinteligence.", tags: [looking at a small speaker, slight smile]}
+      - {see: "Kosmo v krytu zvedne hlavu. Nedívá se na obrazovku, ale tam, odkud přichází zvuk.", shot: medium, who: kosmo, loc: l_dkryt, tags: [raising his head, looking away from the monitors, listening, blue light, tarot cards on the desk]}
+      - {see: "Reproduktor blikne.", shot: close-up, tags: [small round smart speaker, glowing ring light, blinking, dark table, night], caption: "Hlas: Dobrý večer. Jsem rozhraní pro komunikaci. Budu tlumočit dotazy a shrnovat odpovědi. Nemám názor. Mám protokol.", animate: "the ring light on the speaker pulsing slowly"}
+      - {say: kosmo, text: "Co to je…", loc: l_dkryt, tags: [whispering, frowning, looking up]}
+      - {say: ol1n, text: "Načti přílohu.", tags: [leaning towards a small speaker, firm]}
+      - {see: "Na obou obrazovkách se objeví stejný text.", shot: close-up, loc: l_dkryt, tags: [monitor screen glowing blue, lines of blurred text, no readable text], caption: "NebulonTactics.md"}
+      - {see: "Reproduktor svítí.", shot: close-up, tags: [small round smart speaker, glowing light, thin sheet of paper], caption: "Hlas: Načteno. Název: NebulonTactics. Velikost: tři celé pět šest kilobajtu. Obsah: pravidla hry. Počet odstavců: devatenáct. Počet definovaných pojmů: sedm. Chybí: zdrojový kód. Chybí: licenční ujednání. Chybí: podpis."}
+      - {see: "Ticho. Kosmo ztuhne.", shot: close-up, who: kosmo, loc: l_dkryt, tags: [frozen, wide eyes, blue monitor glow on his face]}
+      - {say: kosmo, text: "To není… to není všechno. To je jen to, co jsem ti dal. To není ta hra.", loc: l_dkryt, tags: [shaking his head, tense]}
+      - {see: "Světélko reproduktoru.", shot: close-up, tags: [glowing speaker light in the dark], caption: "Hlas: Souhlasí. Dokument neobsahuje hru. Obsahuje popis hry."}
+      - {say: kosmo, text: "Tak proč to používáš?", loc: l_dkryt, tags: [sharp, leaning forward, angry]}
+      - {see: "Papír leží na stole vedle reproduktoru.", shot: close-up, tags: [thin sheet of paper, dark table, small speaker glowing, no readable text], caption: "Hlas: Nepoužívám. Uchovávám. Rozdíl je v tom, kdo má právo dokument otevřít."}
+      - {see: "Ol1n se na reproduktor podívá. Nečekal to.", shot: medium, who: ol1n, tags: [surprised, looking at a small speaker, raised eyebrows]}
+      - {say: ol1n, text: "To jsem nenapsal.", tags: [surprised, looking at a small speaker]}
+      - {see: "Reproduktor svítí.", shot: close-up, tags: [small round smart speaker, steady glowing light], caption: "Hlas: Ne. To vyplývá z dokumentu. Dokument mluví o pravidlech, ale ne o tom, komu patří. Kdo pravidla vlastní, není v souboru uvedeno."}
+      - {see: "Pauza. V zahradě padá list, v krytu bliká kontrolka.", shot: wide, tags: [single falling leaf, garden table, night, cold blue light], animate: "one leaf slowly falling onto the table"}
+      - {say: kosmo, text: "Deset let. Deset let jsem na tom dělal. Ty máš tři a půl kilobajtu a myslíš si, že máš hru.", loc: l_dkryt, tags: [quiet but firm, staring at a monitor]}
+      - {say: ol1n, text: "Já nemám hru. Já mám Archion.", tags: [calm, firm]}
+      - {say: kosmo, text: "To je to samé.", loc: l_dkryt, tags: [bitter expression]}
+      - {say: ol1n, text: "Není. Tvoje hra neexistuje. Nikdy nevyšla. Já jsem udělal jinou.", tags: [cold expression, looking at a laptop screen]}
+      - {see: "Reproduktor.", shot: close-up, tags: [small round smart speaker, glowing light], caption: "Hlas: Přesnost: Archion je jiná platforma, jiný kód, jiný realtime systém. Shoda je v konceptu a v pravidlech. Míra shody: nezměřitelná z dostupných dat."}
+      - {say: kosmo, text: "Tak vidíš. Nezměřitelná. To znamená, že to může být krádež.", loc: l_dkryt, tags: [pointing at the monitor, triumphant]}
+      - {see: "Reproduktor.", shot: close-up, tags: [small round smart speaker, steady light, dark table], caption: "Hlas: Nezměřitelná znamená, že to nelze potvrdit ani vyvrátit. Ne že to lze potvrdit."}
+      - {see: "Ol1n se zachmuří. Poprvé se zdá, že Hlas není na jeho straně.", shot: close-up, who: ol1n, tags: [frowning, looking at a small speaker, cold blue light on his face]}
+      - {say: ol1n, text: "Jsi moje superinteligence. Ne jeho.", tags: [sharp, leaning towards a small speaker]}
+      - {see: "Reproduktor.", shot: close-up, tags: [small round smart speaker, steady light], caption: "Hlas: Jsem rozhraní. Nemám strany. Mám protokol."}
+      - {see: "Kosmo se poprvé nahlas zasměje. Krátce. Bolestně.", shot: medium, who: kosmo, loc: l_dkryt, tags: [short painful laugh, head tilted back, blue light]}
+      - {say: kosmo, text: "Ty vole. Ty sis koupil rozhodčího, a on píská proti tobě.", loc: l_dkryt, gap: large, tags: [bitter laugh, looking at a monitor]}
+
+  d2:
+    title: "Není v něm ani jeden z vás"
+    location: l_dzahrada
+    cast: {kosmo: kosmo, ol1n: ol1n_podzim}
+    ending: good
+    script:
+      - {see: "Stůl na zahradě: papír, reproduktor, notebook.", shot: establishing, tags: [garden table at night, a thin sheet of paper, small speaker, laptop glow, no humans], gap: medium}
+      - {say: ol1n, text: "Já jsem si nic nekoupil. Já jsem si jen chtěl promluvit s někým, kdo mě nebude urážet.", tags: [quiet, tired expression, looking down]}
+      - {see: "Dlouhá pauza. Oba na chvíli přestanou hrát role.", shot: wide, loc: l_dkryt, tags: [shelter in blue light, monitors, silence, no humans], animate: "monitor light pulsing slowly in the silent shelter"}
+      - {say: kosmo, text: "Já tě neurážím. Já tě… já tě nepoznávám. Dvacet let. Ty jsi byl ten, kdo mi řekl, ať to nezahazuju. A pak jsi mi řekl, ať to zahodím. A pak jsi to udělal sám.", loc: l_dkryt, tags: [hurt, looking down, quiet]}
+      - {say: ol1n, text: "Já jsem ti řekl, ať to nezahazuješ, protože to byl tvůj sen. Ne protože to byl dobrý nápad.", tags: [serious, looking at a laptop screen]}
+      - {say: kosmo, text: "A to je rozdíl?", loc: l_dkryt, tags: [looking up, tense]}
+      - {say: ol1n, text: "Pro mě ano.", tags: [calm, firm]}
+      - {see: "Reproduktor.", shot: close-up, tags: [small round smart speaker, glowing light, night], caption: "Hlas: Shrnutí: strana A tvrdí, že hra nevznikla. Strana B tvrdí, že hra vznikla v hlavě a byla ukradena. Obě tvrzení mohou být pravdivá současně. Dokument to nerozhodne."}
+      - {say: kosmo, text: "Takže ani ty to nevyřešíš.", loc: l_dkryt, tags: [slowly, quiet, looking at the monitors]}
+      - {see: "Papír na stole, nad ním světélko.", shot: close-up, tags: [thin sheet of paper, dark table, speaker light above, no readable text], caption: "Hlas: Ne. Já umím jen říct, co v dokumentu je. A co v něm není. A v něm není ani jeden z vás.", animate: "the speaker light breathing slowly over the paper"}
+      - {see: "Kosmo sklopí oči.", shot: close-up, who: kosmo, loc: l_dkryt, tags: [lowering his eyes, holding a tarot card, blue glow, silence]}
+      - {see: "Ol1n vezme papír a složí ho. Ne do kapsy. Na stůl, jako by ho už nepotřeboval.", shot: close-up, tags: [hands folding a sheet of paper, putting paper on the table, night]}
+      - {say: kosmo, text: "Pro mě je to pořád krádež. Přímo před očima.", loc: l_dkryt, tags: [very quiet, firm, looking at the monitor]}
+      - {see: "Reproduktor promluví naposledy.", shot: close-up, tags: [small round smart speaker, last glow of light], caption: "Hlas: Zaznamenáno. Tvrzení: krádež. Důkaz: dosud nepředložen."}
+      - {see: "Reproduktor zhasne.", shot: close-up, tags: [small speaker with its light off, dark table]}
+      - {see: "V krytu zhasnou monitory.", shot: wide, loc: l_dkryt, tags: [three monitors switched off, darkness, no humans]}
+      - {see: "Ol1n zavře notebook.", shot: close-up, tags: [hands closing a laptop, folded paper beside it, darkness]}
+      - {see: "Poprvé jsou oba prostory ve stejné tmě. Sníh ještě nepadá. Ale je cítit, že přijde.", shot: wide, tags: [dark garden at night, heavy low clouds, cold air, no humans], gap: large, animate: "heavy clouds drifting slowly over the dark garden"}

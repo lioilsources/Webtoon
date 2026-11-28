@@ -1,0 +1,546 @@
+{
+  "title": "Není v něm ani jeden z vás",
+  "title_i18n": {
+    "de": "Keiner von Ihnen beiden steht darin",
+    "en": "Neither of You Is in It",
+    "fr": "Aucun de vous deux n'y figure",
+    "it": "Non c'è nessuno di voi due",
+    "ja": "そこにお二人はいません",
+    "ko": "거기엔 두 분 중 누구도 없습니다",
+    "pl": "Nie ma w nim żadnego z was",
+    "pt-BR": "Nenhum de vocês dois está nele",
+    "ru": "В нём нет ни одного из вас",
+    "uk": "У ньому немає жодного з вас",
+    "vi": "Trong đó không có ai trong hai người"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "garden table at night",
+        "a thin sheet of paper",
+        "small speaker",
+        "laptop glow",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "quiet",
+        "tired expression",
+        "looking down"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem si nic nekoupil. Já jsem si jen chtěl promluvit s někým, kdo mě nebude urážet.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab mir gar nichts gekauft. Ich wollte nur mit jemandem reden, der mich nicht beleidigt.",
+            "en": "I didn't buy anything. I just wanted to talk to someone who wouldn't insult me.",
+            "fr": "J'ai rien acheté. Je voulais juste parler à quelqu'un qui m'insulterait pas.",
+            "it": "Non mi sono comprato niente. Volevo solo parlare con qualcuno che non mi insultasse.",
+            "ja": "何も買収なんかしてない。ただ、オレを侮辱しない相手と話したかっただけだ。",
+            "ko": "난 아무것도 매수 안 했어. 그냥 날 모욕하지 않을 누군가랑 얘기하고 싶었을 뿐이야.",
+            "pl": "Niczego sobie nie kupiłem. Chciałem tylko pogadać z kimś, kto nie będzie mnie obrażał.",
+            "pt-BR": "Eu não comprei nada. Só queria conversar com alguém que não fosse me insultar.",
+            "ru": "Я ничего не покупал. Я просто хотел поговорить с кем-то, кто не будет меня оскорблять.",
+            "uk": "Я нічого не купував. Я просто хотів поговорити з кимось, хто не буде мене ображати.",
+            "vi": "Tao chẳng mua gì cả. Tao chỉ muốn nói chuyện với ai đó không xúc phạm tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "shelter in blue light",
+        "monitors",
+        "silence",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "monitor light pulsing slowly in the silent shelter"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "hurt",
+        "looking down",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Já tě neurážím. Já tě… já tě nepoznávám. Dvacet let. Ty jsi byl ten, kdo mi řekl, ať to nezahazuju. A pak jsi mi řekl, ať to zahodím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich beleidige dich nicht. Ich… ich erkenn dich nicht wieder. Zwanzig Jahre. Du warst der, der mir gesagt hat, ich soll's nicht hinschmeißen. Und dann hast du mir gesagt, ich soll's hinschmeißen.",
+            "en": "I'm not insulting you. I… I don't recognize you. Twenty years. You were the one who told me not to give up on it. And then you told me to give it up.",
+            "fr": "Je t'insulte pas. Je… je te reconnais plus. Vingt ans. C'est toi qui m'as dit de pas laisser tomber. Et après tu m'as dit de laisser tomber.",
+            "it": "Non ti sto insultando. Io… non ti riconosco. Vent'anni. Sei stato tu a dirmi di non mollare. E poi mi hai detto di mollare.",
+            "ja": "侮辱してねえよ。オレは…お前がわからなくなったんだ。二十年だぞ。諦めるなって言ったのはお前だろ。それから諦めろって言った。",
+            "ko": "모욕하는 거 아니야. 난… 네가 누군지 모르겠어. 20년이야. 포기하지 말라고 한 게 너였잖아. 그러다 포기하라고 했지.",
+            "pl": "Nie obrażam cię. Ja… ja cię nie poznaję. Dwadzieścia lat. To ty mi mówiłeś, żebym tego nie rzucał. A potem mówiłeś, żebym to rzucił.",
+            "pt-BR": "Eu não tô te insultando. Eu… eu não te reconheço. Vinte anos. Foi você quem me disse pra não largar isso. E depois me disse pra largar.",
+            "ru": "Я тебя не оскорбляю. Я… я тебя не узнаю. Двадцать лет. Это ты говорил мне не бросать. А потом сказал бросить.",
+            "uk": "Я тебе не ображаю. Я… я тебе не впізнаю. Двадцять років. Це ти казав мені не кидати. А потім сказав кинути.",
+            "vi": "Tao không xúc phạm mày. Tao… tao không còn nhận ra mày. Hai mươi năm. Chính mày bảo tao đừng bỏ. Rồi mày lại bảo tao bỏ đi."
+          }
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "A pak jsi to udělal sám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und dann hast du's selbst gemacht.",
+            "en": "And then you made it yourself.",
+            "fr": "Et après, tu l'as fait toi-même.",
+            "it": "E poi l'hai fatto tu.",
+            "ja": "それで、自分で作りやがった。",
+            "ko": "그러고는 네가 직접 만들었지.",
+            "pl": "A potem sam to zrobiłeś.",
+            "pt-BR": "E depois você mesmo fez.",
+            "ru": "А потом сделал это сам.",
+            "uk": "А потім зробив це сам.",
+            "vi": "Rồi mày tự làm nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem ti řekl, ať to nezahazuješ, protože to byl tvůj sen. Ne protože to byl dobrý nápad.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir gesagt, du sollst es nicht hinschmeißen, weil es dein Traum war. Nicht, weil es eine gute Idee war.",
+            "en": "I told you not to give up on it because it was your dream. Not because it was a good idea.",
+            "fr": "Je t'ai dit de pas laisser tomber parce que c'était ton rêve. Pas parce que c'était une bonne idée.",
+            "it": "Ti ho detto di non mollare perché era il tuo sogno. Non perché fosse una buona idea.",
+            "ja": "諦めるなって言ったのは、それがお前の夢だったからだ。いいアイデアだったからじゃない。",
+            "ko": "포기하지 말라고 한 건 그게 네 꿈이었으니까. 좋은 아이디어라서가 아니라.",
+            "pl": "Mówiłem ci, żebyś tego nie rzucał, bo to było twoje marzenie. Nie dlatego, że to był dobry pomysł.",
+            "pt-BR": "Eu te disse pra não largar porque era o seu sonho. Não porque era uma boa ideia.",
+            "ru": "Я говорил тебе не бросать, потому что это была твоя мечта. А не потому, что это была хорошая идея.",
+            "uk": "Я казав тобі не кидати, бо це була твоя мрія. А не тому, що це була добра ідея.",
+            "vi": "Tao bảo mày đừng bỏ vì đó là giấc mơ của mày. Không phải vì nó là ý tưởng hay."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "looking up",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "A to je rozdíl?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Und das ist ein Unterschied?",
+            "en": "And there's a difference?",
+            "fr": "Et c'est différent ?",
+            "it": "E c'è differenza?",
+            "ja": "それって違うのか？",
+            "ko": "그게 달라?",
+            "pl": "A to jest różnica?",
+            "pt-BR": "E isso faz diferença?",
+            "ru": "А есть разница?",
+            "uk": "А це різниця?",
+            "vi": "Thế thì khác gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Pro mě ano.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für mich schon.",
+            "en": "To me, yes.",
+            "fr": "Pour moi, oui.",
+            "it": "Per me sì.",
+            "ja": "オレにとってはな。",
+            "ko": "나한텐 달라.",
+            "pl": "Dla mnie tak.",
+            "pt-BR": "Pra mim, sim.",
+            "ru": "Для меня — да.",
+            "uk": "Для мене — так.",
+            "vi": "Với tao thì có."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "glowing light",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Shrnutí: strana A tvrdí, že hra nevznikla. Strana B tvrdí, že hra vznikla v hlavě a byla ukradena. Obě tvrzení mohou být pravdivá současně.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Zusammenfassung: Partei A behauptet, das Spiel sei nie entstanden. Partei B behauptet, das Spiel sei im Kopf entstanden und gestohlen worden. Beide Behauptungen können gleichzeitig wahr sein.",
+            "en": "Voice: Summary: Party A claims the game was never created. Party B claims the game was created in the mind and stolen. Both claims may be true simultaneously.",
+            "fr": "Voix : Synthèse : la partie A affirme que le jeu n'a jamais vu le jour. La partie B affirme que le jeu a vu le jour dans sa tête et a été volé. Les deux affirmations peuvent être vraies simultanément.",
+            "it": "Voce: Riepilogo: la parte A sostiene che il gioco non è mai nato. La parte B sostiene che il gioco è nato nella sua testa ed è stato rubato. Entrambe le affermazioni possono essere vere contemporaneamente.",
+            "ja": "ボイス：要約：当事者Aは、ゲームは生まれなかったと主張しています。当事者Bは、ゲームは頭の中で生まれ、盗まれたと主張しています。両方の主張は同時に真であり得ます。",
+            "ko": "보이스: 요약: 당사자 A는 게임이 만들어지지 않았다고 주장합니다. 당사자 B는 게임이 머릿속에서 만들어졌고 도난당했다고 주장합니다. 두 주장은 동시에 참일 수 있습니다.",
+            "pl": "Głos: Podsumowanie: strona A twierdzi, że gra nie powstała. Strona B twierdzi, że gra powstała w głowie i została ukradziona. Oba twierdzenia mogą być prawdziwe jednocześnie.",
+            "pt-BR": "Voz: Resumo: a parte A afirma que o jogo não chegou a existir. A parte B afirma que o jogo existiu na cabeça e foi roubado. As duas afirmações podem ser verdadeiras ao mesmo tempo.",
+            "ru": "Голос: Резюме: сторона А утверждает, что игра не была создана. Сторона Б утверждает, что игра была создана в голове и украдена. Оба утверждения могут быть истинными одновременно.",
+            "uk": "Голос: Підсумок: сторона А стверджує, що гра не з'явилася. Сторона Б стверджує, що гра з'явилася в голові й була вкрадена. Обидва твердження можуть бути істинними одночасно.",
+            "vi": "Giọng nói: Tóm tắt: bên A khẳng định trò chơi chưa từng được tạo ra. Bên B khẳng định trò chơi đã hình thành trong đầu và bị đánh cắp. Cả hai khẳng định có thể cùng lúc đúng."
+          }
+        },
+        {
+          "speaker_id": "",
+          "text": "Dokument to nerozhodne.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Das Dokument entscheidet das nicht.",
+            "en": "The document will not decide it.",
+            "fr": "Le document ne tranchera pas.",
+            "it": "Il documento non lo stabilirà.",
+            "ja": "文書では判断できません。",
+            "ko": "문서로는 판단할 수 없습니다.",
+            "pl": "Dokument tego nie rozstrzygnie.",
+            "pt-BR": "O documento não decide isso.",
+            "ru": "Документ этого не решит.",
+            "uk": "Документ цього не вирішить.",
+            "vi": "Tài liệu không thể phân định điều này."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "slowly",
+        "quiet",
+        "looking at the monitors"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Takže ani ty to nevyřešíš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Also kannst nicht mal du das lösen.",
+            "en": "So not even you can settle this.",
+            "fr": "Donc même toi, tu peux pas régler ça.",
+            "it": "Quindi nemmeno tu lo risolvi.",
+            "ja": "つまり、お前にも解決できないってわけか。",
+            "ko": "그러니까 너도 해결 못 한다는 거네.",
+            "pl": "Czyli nawet ty tego nie rozwiążesz.",
+            "pt-BR": "Então nem você resolve isso.",
+            "ru": "Значит, даже ты это не решишь.",
+            "uk": "Тобто навіть ти цього не розв'яжеш.",
+            "vi": "Vậy là ngay cả mày cũng không giải quyết được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "thin sheet of paper",
+        "dark table",
+        "speaker light above",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Ne. Já umím jen říct, co v dokumentu je. A co v něm není. A v něm není ani jeden z vás.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Nein. Ich kann nur sagen, was im Dokument steht. Und was nicht darin steht. Und keiner von Ihnen beiden steht darin.",
+            "en": "Voice: No. I can only state what is in the document. And what is not. And neither of you is in it.",
+            "fr": "Voix : Non. Je peux seulement dire ce que contient le document. Et ce qu'il ne contient pas. Et aucun de vous deux n'y figure.",
+            "it": "Voce: No. Posso solo dire cosa c'è nel documento. E cosa non c'è. E lì dentro non c'è nessuno di voi due.",
+            "ja": "ボイス：いいえ。私に言えるのは、文書に何が含まれているか、そして何が含まれていないかだけです。そして、文書にはお二人のどちらも含まれていません。",
+            "ko": "보이스: 아닙니다. 저는 문서에 무엇이 있는지만 말할 수 있습니다. 그리고 무엇이 없는지도. 그리고 문서에는 두 분 중 누구도 없습니다.",
+            "pl": "Głos: Nie. Potrafię tylko powiedzieć, co jest w dokumencie. I czego w nim nie ma. A nie ma w nim żadnego z was.",
+            "pt-BR": "Voz: Não. Só sei dizer o que está no documento. E o que não está. E nenhum de vocês dois está nele.",
+            "ru": "Голос: Нет. Я могу лишь сказать, что есть в документе. И чего в нём нет. А в нём нет ни одного из вас.",
+            "uk": "Голос: Ні. Я можу лише сказати, що є в документі. І чого в ньому немає. А в ньому немає жодного з вас.",
+            "vi": "Giọng nói: Không. Tôi chỉ có thể nói tài liệu có gì. Và không có gì. Và trong đó không có ai trong hai người."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the speaker light breathing slowly over the paper"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "lowering his eyes",
+        "holding a tarot card",
+        "blue glow",
+        "silence"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "hands folding a sheet of paper",
+        "putting paper on the table",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "very quiet",
+        "firm",
+        "looking at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Pro mě je to pořád krádež. Přímo před očima.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Für mich ist es immer noch Diebstahl. Direkt vor meinen Augen.",
+            "en": "To me it's still theft. Right before my eyes.",
+            "fr": "Pour moi, c'est toujours du vol. Sous mes yeux.",
+            "it": "Per me resta un furto. Proprio sotto i miei occhi.",
+            "ja": "オレにとっては今でも盗みだ。目の前でな。",
+            "ko": "나한텐 여전히 도둑질이야. 바로 눈앞에서.",
+            "pl": "Dla mnie to wciąż kradzież. Na moich oczach.",
+            "pt-BR": "Pra mim continua sendo roubo. Bem na minha cara.",
+            "ru": "Для меня это всё равно кража. Прямо у меня на глазах.",
+            "uk": "Для мене це однаково крадіжка. Просто в мене на очах.",
+            "vi": "Với tao, đó vẫn là ăn cắp. Ngay trước mắt tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "last glow of light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Zaznamenáno. Tvrzení: krádež. Důkaz: dosud nepředložen.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Vermerkt. Behauptung: Diebstahl. Beweis: bislang nicht vorgelegt.",
+            "en": "Voice: Noted. Claim: theft. Evidence: not yet submitted.",
+            "fr": "Voix : Enregistré. Allégation : vol. Preuve : non produite à ce jour.",
+            "it": "Voce: Registrato. Affermazione: furto. Prova: non ancora presentata.",
+            "ja": "ボイス：記録しました。主張：窃盗。証拠：未提出。",
+            "ko": "보이스: 기록되었습니다. 주장: 절도. 증거: 아직 제출되지 않음.",
+            "pl": "Głos: Odnotowano. Twierdzenie: kradzież. Dowód: dotąd nieprzedłożony.",
+            "pt-BR": "Voz: Registrado. Alegação: roubo. Prova: ainda não apresentada.",
+            "ru": "Голос: Зафиксировано. Утверждение: кража. Доказательство: пока не представлено.",
+            "uk": "Голос: Зафіксовано. Твердження: крадіжка. Доказ: досі не надано.",
+            "vi": "Giọng nói: Đã ghi nhận. Khẳng định: ăn cắp. Bằng chứng: chưa được đưa ra."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small speaker with its light off",
+        "dark table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "three monitors switched off",
+        "darkness",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "hands closing a laptop",
+        "folded paper beside it",
+        "darkness"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "dark garden at night",
+        "heavy low clouds",
+        "cold air",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "heavy clouds drifting slowly over the dark garden"
+    }
+  ]
+}

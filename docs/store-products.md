@@ -20,11 +20,11 @@ python3 tools/gen_products.py --catalog --check                 # fail when out 
 |---|---|---|---|
 | pack | `pack_<type>_<n>` (`pack_kids_1`, `pack_kids_2`, …) | 0.99 USD (Tier 1) | pack `<type>-<n>`: up to 50 stories, all 12 languages |
 | everything | `bundle_all` | 4.99 USD (Tier 5) | every pack of every type, current and future |
-| gamebook | `gamebook_<id>` | 1.99 USD (Tier 2) | one branching gamebook (today's four gamebooks are free: no product) |
-| gamebook + kit | `kit_<id>` | 3.99 USD (Tier 4) | the gamebook plus its editor kit (a free gamebook includes its kit) |
+| gamebook | `gamebook_<id>` | 0.99 USD (Tier 1) | one gamebook, or one story family (Archion, Guláš a špagety: every variant shares the product) |
+| gamebook + kit | `kit_<id>` | 0.99 USD (Tier 1) | the gamebook plus its editor kit (a free gamebook includes its kit) |
 
 Tiers: Apple replaced price tiers with price points (USD base price, other storefronts derived); "Tier N" is the
-old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 4.99 = Tier 5). No type bundles are sold (decided 2026-11-08): only `bundle_all`.
+old tier of the same USD price (0.99 = Tier 1, 1.99 = Tier 2, 2.99 = Tier 3, 3.99 = Tier 4, 4.99 = Tier 5). No type bundles are sold (decided 2026-11-08): only `bundle_all`. Fixed tiers: pack 0.99, a bundle of more than 2 packs 1.99, the whole app 4.99, the all-apps pass 49.99.
 In Play Console set the USD default price and let Play convert the other countries.
 
 Bundles never list their packs in the store: the app resolves a bundle against the catalog at runtime
@@ -42,14 +42,16 @@ Current list (generated; names ≤ 30 and descriptions ≤ 45 characters for App
 | `pack_kids_1` | pack | kids | 0.99 | Tier 1 | Pro děti 1 | Kids 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `pack_superhero_1` | pack | superhero | 0.99 | Tier 1 | Superhrdinové 1 | Superheroes 1 | Balíček komiksových příběhů, 12 jazyků | A pack of comic stories, 12 languages |
 | `bundle_all` | bundle | all | 4.99 | Tier 5 | Úplně všechno | Everything | Všechny balíčky všech typů, i budoucí | Every pack of every type, future too |
+| `gamebook_archion` | gamebook | gamebook | 0.99 | Tier 1 | Gamebook: Archion | Gamebook: Archion | Série gamebooků, jeden nákup | A gamebook series, one purchase |
+| `gamebook_gulasspagety` | gamebook | gamebook | 0.99 | Tier 1 | Gamebook: Guláš a špagety | Gamebook: Goulash & Spaghetti | Série gamebooků, jeden nákup | A gamebook series, one purchase |
 <!-- products:end -->
 
 Paid gamebooks (none yet: every published gamebook is free and needs no product), e.g. for a gamebook `drak`:
 
 | product id | kind | USD | tier | name cs | name en | description cs | description en |
 |---|---|---|---|---|---|---|---|
-| `gamebook_drak` | gamebook | 1.99 | Tier 2 | Gamebook: Drakova hora | Gamebook: Dragon Mountain | Interaktivní příběh s volbami | Interactive branching story |
-| `kit_drak` | kit | 3.99 | Tier 4 | Drakova hora + editor | Dragon Mountain + editor kit | Gamebook a sada pro vlastní úpravy | The gamebook plus its editor kit |
+| `gamebook_drak` | gamebook | 0.99 | Tier 1 | Gamebook: Drakova hora | Gamebook: Dragon Mountain | Interaktivní příběh s volbami | Interactive branching story |
+| `kit_drak` | kit | 0.99 | Tier 1 | Drakova hora + editor | Dragon Mountain + editor kit | Gamebook a sada pro vlastní úpravy | The gamebook plus its editor kit |
 
 (`python3 tools/gen_products.py --gamebook "drak:Drakova hora:Dragon Mountain"` adds them to the CSV.)
 
@@ -66,12 +68,13 @@ One-time:
    Kids category: the Kids category forbids third-party content downloads and requires no external links;
    instead the app has a reader profile (Děti / Dospělí) and a **parental gate** before every purchase and before
    switching to the adult profile.
-3. **App Privacy**: no data collected (purchases are handled by Apple; the app stores entitlements on device).
+3. **App Privacy**: per `store/privacy-answers.md`: anonymous usage statistics (Product Interaction, Performance Data;
+   Analytics, not linked, no tracking); purchases are handled by Apple and the app stores entitlements on device.
 
 Per product (Features → **In-App Purchases** → **+**):
 1. Type **Non-Consumable**; Reference Name = the product id (e.g. `pack_kids_1`); Product ID = the product id.
 2. **Availability**: all countries the app is in.
-3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 3.99 / 4.99 USD (table above);
+3. **Price Schedule**: base country United States, price 0.99 / 1.99 / 4.99 USD (table above);
    accept the generated prices of the other storefronts.
 4. **App Store Localization**: add **Czech** and **English (U.S.)** (more later) with the display name and
    description from the table / `tools/products.csv`.
@@ -98,12 +101,13 @@ One-time:
    any track (internal testing is enough) — Play lets you create products only after that.
 3. **Policy → App content**: content rating questionnaire (IARC) → IARC decides (no override on Play; likely PEGI 12 or 16)
    (answers in `store/age-rating.md`); **Target audience and content**: 16+ and older (not "children"), so the app is **not** in the Designed for Families program; the
-   in-app parental gate still protects purchases and the adult profile. Data safety: no data collected.
+   in-app parental gate still protects purchases and the adult profile. Data safety: per `store/privacy-answers.md` (anonymous app interactions
+   and diagnostics, not shared, optional).
 
 Per product (**Monetize → Products → In-app products → Create product**):
 1. Product ID = the product id (lower case, digits, `_` and `.` only: `pack_kids_1` is valid). Permanent.
 2. Name and description: English (default) and Czech from the table (Play allows 55 / 200 characters).
-3. Default price 0.99 / 1.99 / 3.99 / 4.99 USD → **Update exchange rates** fills the other countries.
+3. Default price 0.99 / 1.99 / 4.99 USD → **Update exchange rates** fills the other countries.
 4. **Activate**. (Play has no consumable flag; the app never consumes these purchases, which makes them
    non-consumable.)
 

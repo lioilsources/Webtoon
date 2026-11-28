@@ -1,0 +1,1052 @@
+{
+  "title": "Tři a půl kilobajtu",
+  "title_i18n": {
+    "de": "Dreieinhalb Kilobyte",
+    "en": "Three and a Half Kilobytes",
+    "fr": "Trois kilo-octets et demi",
+    "it": "Tre kilobyte e mezzo",
+    "ja": "3.5キロバイト",
+    "ko": "3.5킬로바이트",
+    "pl": "Trzy i pół kilobajta",
+    "pt-BR": "Três kilobytes e meio",
+    "ru": "Три с половиной килобайта",
+    "uk": "Три з половиною кілобайта",
+    "vi": "Ba kilobyte rưỡi"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "dark garden at night",
+        "glowing laptop on a table",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "laptop glow flickering softly, bare branches swaying in the dark"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "three glowing monitors",
+        "cold blue light",
+        "empty chair",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a garden table",
+        "holding a thin sheet of paper",
+        "both hands",
+        "weighing it",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "looking at a sheet of paper",
+        "quiet"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Tři a půl kilobajtu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dreieinhalb Kilobyte.",
+            "en": "Three and a half kilobytes.",
+            "fr": "Trois kilo-octets et demi.",
+            "it": "Tre kilobyte e mezzo.",
+            "ja": "3.5キロバイトだ。",
+            "ko": "3.5킬로바이트.",
+            "pl": "Trzy i pół kilobajta.",
+            "pt-BR": "Três kilobytes e meio.",
+            "ru": "Три с половиной килобайта.",
+            "uk": "Три з половиною кілобайта.",
+            "vi": "Ba kilobyte rưỡi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "hands placing a small speaker",
+        "small round smart speaker",
+        "thin sheet of paper",
+        "night"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "looking at a small speaker",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Tak. Teď už s tebou bude mluvit jen má superinteligence.",
+          "kind": "speech",
+          "i18n": {
+            "de": "So. Ab jetzt redet nur noch meine Superintelligenz mit dir.",
+            "en": "Right. From now on, only my superintelligence talks to you.",
+            "fr": "Bon. Désormais, c'est ma superintelligence qui te parle, et elle seule.",
+            "it": "Bene. D'ora in poi ti parla solo la mia superintelligenza.",
+            "ja": "よし。ここからはオレの超知能だけがお前と話す。",
+            "ko": "자. 이제부터 너랑은 내 초지능만 얘기할 거야.",
+            "pl": "No. Od teraz rozmawia z tobą już tylko moja superinteligencja.",
+            "pt-BR": "Pronto. Daqui pra frente, só a minha superinteligência fala com você.",
+            "ru": "Так. Теперь с тобой будет говорить только мой сверхразум.",
+            "uk": "Так. Тепер із тобою говоритиме лише мій надінтелект.",
+            "vi": "Rồi. Từ giờ chỉ có siêu trí tuệ của tao nói chuyện với mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "raising his head",
+        "looking away from the monitors",
+        "listening",
+        "blue light",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "glowing ring light",
+        "blinking",
+        "dark table",
+        "night",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Dobrý večer. Jsem rozhraní pro komunikaci. Budu tlumočit dotazy a shrnovat odpovědi. Nemám názor. Mám protokol.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Guten Abend. Ich bin eine Kommunikationsschnittstelle. Ich dolmetsche Anfragen und fasse Antworten zusammen. Ich habe keine Meinung. Ich habe ein Protokoll.",
+            "en": "Voice: Good evening. I am a communication interface. I will interpret queries and summarize responses. I have no opinion. I have a protocol.",
+            "fr": "Voix : Bonsoir. Je suis une interface de communication. J'interpréterai les requêtes et résumerai les réponses. Je n'ai pas d'opinion. J'ai un protocole.",
+            "it": "Voce: Buonasera. Sono un'interfaccia di comunicazione. Interpreterò le richieste e riassumerò le risposte. Non ho opinioni. Ho un protocollo.",
+            "ja": "ボイス：こんばんは。私はコミュニケーション・インターフェースです。質問を通訳し、回答を要約します。意見はありません。プロトコルがあります。",
+            "ko": "보이스: 안녕하십니까. 저는 커뮤니케이션 인터페이스입니다. 질의를 통역하고 답변을 요약하겠습니다. 저는 의견이 없습니다. 프로토콜이 있습니다.",
+            "pl": "Głos: Dobry wieczór. Jestem interfejsem komunikacyjnym. Będę tłumaczyć zapytania i streszczać odpowiedzi. Nie mam opinii. Mam protokół.",
+            "pt-BR": "Voz: Boa noite. Sou uma interface de comunicação. Vou interpretar as perguntas e resumir as respostas. Não tenho opinião. Tenho um protocolo.",
+            "ru": "Голос: Добрый вечер. Я — интерфейс для коммуникации. Я буду переводить запросы и резюмировать ответы. У меня нет мнения. У меня есть протокол.",
+            "uk": "Голос: Добрий вечір. Я — інтерфейс для комунікації. Я перекладатиму запити й підсумовуватиму відповіді. Я не маю думки. Я маю протокол.",
+            "vi": "Giọng nói: Chào buổi tối. Tôi là giao diện giao tiếp. Tôi sẽ thông dịch câu hỏi và tóm tắt câu trả lời. Tôi không có quan điểm. Tôi có giao thức."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the ring light on the speaker pulsing slowly"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "whispering",
+        "frowning",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Co to je…",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was ist das…",
+            "en": "What is this…",
+            "fr": "C'est quoi, ça…",
+            "it": "Che cos'è…",
+            "ja": "なんだよ、これ…",
+            "ko": "이게 뭐야…",
+            "pl": "Co to jest…",
+            "pt-BR": "Que é isso…",
+            "ru": "Это что…",
+            "uk": "Що це таке…",
+            "vi": "Cái gì đây…"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "leaning towards a small speaker",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Načti přílohu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Lade den Anhang.",
+            "en": "Load the attachment.",
+            "fr": "Charge la pièce jointe.",
+            "it": "Carica l'allegato.",
+            "ja": "添付ファイルを読み込め。",
+            "ko": "첨부 파일 불러와.",
+            "pl": "Wczytaj załącznik.",
+            "pt-BR": "Carrega o anexo.",
+            "ru": "Загрузи вложение.",
+            "uk": "Завантаж вкладення.",
+            "vi": "Tải tệp đính kèm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [],
+      "visual_tags": [
+        "monitor screen glowing blue",
+        "lines of blurred text",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "NebulonTactics.md",
+          "kind": "narration",
+          "i18n": {
+            "de": "NebulonTactics.md",
+            "en": "NebulonTactics.md",
+            "fr": "NebulonTactics.md",
+            "it": "NebulonTactics.md",
+            "ja": "NebulonTactics.md",
+            "ko": "NebulonTactics.md",
+            "pl": "NebulonTactics.md",
+            "pt-BR": "NebulonTactics.md",
+            "ru": "NebulonTactics.md",
+            "uk": "NebulonTactics.md",
+            "vi": "NebulonTactics.md"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "glowing light",
+        "thin sheet of paper",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Načteno. Název: NebulonTactics. Velikost: tři celé pět šest kilobajtu. Obsah: pravidla hry. Počet odstavců: devatenáct.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Geladen. Name: NebulonTactics. Größe: drei Komma fünf sechs Kilobyte. Inhalt: Spielregeln. Anzahl der Absätze: neunzehn.",
+            "en": "Voice: Loaded. Name: NebulonTactics. Size: three point five six kilobytes. Content: game rules. Paragraph count: nineteen.",
+            "fr": "Voix : Chargé. Nom : NebulonTactics. Taille : trois virgule cinq six kilo-octets. Contenu : règles du jeu. Nombre de paragraphes : dix-neuf.",
+            "it": "Voce: Caricato. Nome: NebulonTactics. Dimensione: tre virgola cinque sei kilobyte. Contenuto: regole del gioco. Numero di paragrafi: diciannove.",
+            "ja": "ボイス：読み込み完了。名称：NebulonTactics。サイズ：3.56キロバイト。内容：ゲームのルール。段落数：19。",
+            "ko": "보이스: 로드 완료. 이름: NebulonTactics. 크기: 3.56킬로바이트. 내용: 게임 규칙. 문단 수: 19.",
+            "pl": "Głos: Wczytano. Nazwa: NebulonTactics. Rozmiar: trzy przecinek pięć sześć kilobajta. Zawartość: zasady gry. Liczba akapitów: dziewiętnaście.",
+            "pt-BR": "Voz: Carregado. Nome: NebulonTactics. Tamanho: três vírgula cinco seis kilobytes. Conteúdo: regras do jogo. Número de parágrafos: dezenove.",
+            "ru": "Голос: Загружено. Название: NebulonTactics. Размер: три целых пятьдесят шесть сотых килобайта. Содержание: правила игры. Количество абзацев: девятнадцать.",
+            "uk": "Голос: Завантажено. Назва: NebulonTactics. Розмір: три цілих п'ятдесят шість сотих кілобайта. Вміст: правила гри. Кількість абзаців: дев'ятнадцять.",
+            "vi": "Giọng nói: Đã tải. Tên: NebulonTactics. Dung lượng: ba phẩy năm sáu kilobyte. Nội dung: luật chơi. Số đoạn: mười chín."
+          }
+        },
+        {
+          "speaker_id": "",
+          "text": "Počet definovaných pojmů: sedm. Chybí: zdrojový kód. Chybí: licenční ujednání. Chybí: podpis.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Anzahl definierter Begriffe: sieben. Fehlt: Quellcode. Fehlt: Lizenzvereinbarung. Fehlt: Unterschrift.",
+            "en": "Defined terms: seven. Missing: source code. Missing: license agreement. Missing: signature.",
+            "fr": "Termes définis : sept. Manquant : code source. Manquant : contrat de licence. Manquant : signature.",
+            "it": "Termini definiti: sette. Mancante: codice sorgente. Mancante: accordo di licenza. Mancante: firma.",
+            "ja": "定義済み用語：7。欠落：ソースコード。欠落：ライセンス契約。欠落：署名。",
+            "ko": "정의된 용어 수: 7. 누락: 소스 코드. 누락: 라이선스 계약. 누락: 서명.",
+            "pl": "Liczba zdefiniowanych pojęć: siedem. Brak: kodu źródłowego. Brak: umowy licencyjnej. Brak: podpisu.",
+            "pt-BR": "Termos definidos: sete. Ausente: código-fonte. Ausente: contrato de licença. Ausente: assinatura.",
+            "ru": "Определённых терминов: семь. Отсутствует: исходный код. Отсутствует: лицензионное соглашение. Отсутствует: подпись.",
+            "uk": "Визначених термінів: сім. Відсутній: вихідний код. Відсутня: ліцензійна угода. Відсутній: підпис.",
+            "vi": "Số thuật ngữ được định nghĩa: bảy. Thiếu: mã nguồn. Thiếu: thỏa thuận cấp phép. Thiếu: chữ ký."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "frozen",
+        "wide eyes",
+        "blue monitor glow on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "shaking his head",
+        "tense"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To není… to není všechno. To je jen to, co jsem ti dal. To není ta hra.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist nicht… das ist nicht alles. Das ist nur das, was ich dir gegeben hab. Das ist nicht das Spiel.",
+            "en": "That's not… that's not everything. That's just what I gave you. That's not the game.",
+            "fr": "C'est pas… c'est pas tout. C'est juste ce que je t'ai donné. C'est pas le jeu.",
+            "it": "Non è… non è tutto. È solo quello che ti ho dato io. Non è il gioco.",
+            "ja": "それは…それが全部じゃない。オレがお前に渡した分だけだ。ゲームそのものじゃない。",
+            "ko": "그건… 그게 다가 아니야. 내가 너한테 준 것뿐이야. 그게 게임은 아니라고.",
+            "pl": "To nie jest… to nie jest wszystko. To tylko to, co ci dałem. To nie jest ta gra.",
+            "pt-BR": "Isso não é… isso não é tudo. É só o que eu te dei. Isso não é o jogo.",
+            "ru": "Это не… это не всё. Это только то, что я тебе дал. Это не сама игра.",
+            "uk": "Це не… це не все. Це лише те, що я тобі дав. Це не сама гра.",
+            "vi": "Đó không phải… đó không phải tất cả. Đó chỉ là thứ tao đưa mày. Đó không phải trò chơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "glowing speaker light in the dark",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Souhlasí. Dokument neobsahuje hru. Obsahuje popis hry.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Korrekt. Das Dokument enthält kein Spiel. Es enthält die Beschreibung eines Spiels.",
+            "en": "Voice: Confirmed. The document does not contain a game. It contains a description of a game.",
+            "fr": "Voix : Exact. Le document ne contient pas de jeu. Il contient la description d'un jeu.",
+            "it": "Voce: Confermato. Il documento non contiene un gioco. Contiene la descrizione di un gioco.",
+            "ja": "ボイス：その通りです。文書にゲームは含まれていません。含まれているのはゲームの説明です。",
+            "ko": "보이스: 확인되었습니다. 문서에는 게임이 포함되어 있지 않습니다. 게임에 대한 설명이 포함되어 있습니다.",
+            "pl": "Głos: Zgadza się. Dokument nie zawiera gry. Zawiera opis gry.",
+            "pt-BR": "Voz: Confere. O documento não contém um jogo. Contém a descrição de um jogo.",
+            "ru": "Голос: Верно. Документ не содержит игру. Он содержит описание игры.",
+            "uk": "Голос: Підтверджено. Документ не містить гри. Він містить опис гри.",
+            "vi": "Giọng nói: Chính xác. Tài liệu không chứa trò chơi. Tài liệu chứa mô tả trò chơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "sharp",
+        "leaning forward",
+        "angry"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tak proč to používáš?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Warum benutzt du's dann?",
+            "en": "Then why are you using it?",
+            "fr": "Alors pourquoi tu t'en sers ?",
+            "it": "E allora perché lo usi?",
+            "ja": "じゃあなんで使ってんだよ？",
+            "ko": "그럼 왜 그걸 쓰는데?",
+            "pl": "To czemu tego używasz?",
+            "pt-BR": "Então por que você tá usando isso?",
+            "ru": "Тогда зачем ты это используешь?",
+            "uk": "Тоді навіщо ти це використовуєш?",
+            "vi": "Thế sao mày lại dùng nó?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "thin sheet of paper",
+        "dark table",
+        "small speaker glowing",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Nepoužívám. Uchovávám. Rozdíl je v tom, kdo má právo dokument otevřít.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Ich benutze es nicht. Ich bewahre es auf. Der Unterschied liegt darin, wer das Recht hat, das Dokument zu öffnen.",
+            "en": "Voice: I am not using it. I am storing it. The difference lies in who has the right to open the document.",
+            "fr": "Voix : Je ne m'en sers pas. Je le conserve. La différence tient à qui a le droit d'ouvrir le document.",
+            "it": "Voce: Non lo uso. Lo conservo. La differenza sta in chi ha il diritto di aprire il documento.",
+            "ja": "ボイス：使用していません。保管しています。違いは、誰が文書を開く権利を持つかにあります。",
+            "ko": "보이스: 사용하지 않습니다. 보관합니다. 차이는 누가 문서를 열 권리를 가지는가에 있습니다.",
+            "pl": "Głos: Nie używam. Przechowuję. Różnica polega na tym, kto ma prawo otworzyć dokument.",
+            "pt-BR": "Voz: Não estou usando. Estou armazenando. A diferença está em quem tem o direito de abrir o documento.",
+            "ru": "Голос: Я не использую. Я храню. Разница в том, у кого есть право открыть документ.",
+            "uk": "Голос: Я не використовую. Я зберігаю. Різниця в тому, хто має право відкрити документ.",
+            "vi": "Giọng nói: Tôi không sử dụng. Tôi lưu trữ. Khác biệt nằm ở chỗ ai có quyền mở tài liệu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "surprised",
+        "looking at a small speaker",
+        "raised eyebrows"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "surprised",
+        "looking at a small speaker"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "To jsem nenapsal.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das hab ich nicht geschrieben.",
+            "en": "I didn't write that.",
+            "fr": "J'ai pas écrit ça.",
+            "it": "Questo non l'ho scritto io.",
+            "ja": "そんなの書いてないぞ。",
+            "ko": "그건 내가 안 썼는데.",
+            "pl": "Tego nie napisałem.",
+            "pt-BR": "Isso eu não escrevi.",
+            "ru": "Этого я не писал.",
+            "uk": "Цього я не писав.",
+            "vi": "Cái đó tao không viết."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "steady glowing light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Ne. To vyplývá z dokumentu. Dokument mluví o pravidlech, ale ne o tom, komu patří. Kdo pravidla vlastní, není v souboru uvedeno.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Nein. Es ergibt sich aus dem Dokument. Das Dokument spricht von Regeln, aber nicht davon, wem sie gehören. Wer die Regeln besitzt, ist in der Datei nicht angegeben.",
+            "en": "Voice: No. It follows from the document. The document speaks of rules, but not of whom they belong to. Ownership of the rules is not stated in the file.",
+            "fr": "Voix : Non. Cela découle du document. Le document parle de règles, mais pas de leur propriétaire. Qui détient les règles n'est pas indiqué dans le fichier.",
+            "it": "Voce: No. Deriva dal documento. Il documento parla di regole, ma non di chi siano. Chi possiede le regole non è indicato nel file.",
+            "ja": "ボイス：いいえ。文書から導かれます。文書はルールについて述べていますが、それが誰のものかは述べていません。ルールの所有者はファイルに記載されていません。",
+            "ko": "보이스: 아닙니다. 문서에서 도출된 내용입니다. 문서는 규칙을 다루지만, 그것이 누구의 것인지는 다루지 않습니다. 규칙의 소유자는 파일에 명시되어 있지 않습니다.",
+            "pl": "Głos: Nie. To wynika z dokumentu. Dokument mówi o zasadach, ale nie o tym, do kogo należą. Kto jest właścicielem zasad, nie podano w pliku.",
+            "pt-BR": "Voz: Não. Isso decorre do documento. O documento fala de regras, mas não de quem elas são. Quem é dono das regras não consta no arquivo.",
+            "ru": "Голос: Нет. Это следует из документа. Документ говорит о правилах, но не о том, кому они принадлежат. Кто владеет правилами, в файле не указано.",
+            "uk": "Голос: Ні. Це випливає з документа. Документ говорить про правила, але не про те, кому вони належать. Хто володіє правилами, у файлі не зазначено.",
+            "vi": "Giọng nói: Không. Điều đó suy ra từ tài liệu. Tài liệu nói về luật chơi, nhưng không nói chúng thuộc về ai. Ai sở hữu luật chơi không được ghi trong tệp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "single falling leaf",
+        "garden table",
+        "night",
+        "cold blue light",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "one leaf slowly falling onto the table"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "quiet but firm",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Deset let. Deset let jsem na tom dělal. Ty máš tři a půl kilobajtu a myslíš si, že máš hru.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Zehn Jahre. Zehn Jahre hab ich daran gearbeitet. Du hast dreieinhalb Kilobyte und denkst, du hast ein Spiel.",
+            "en": "Ten years. Ten years I worked on it. You've got three and a half kilobytes and you think you've got a game.",
+            "fr": "Dix ans. Dix ans que j'ai bossé dessus. T'as trois kilo-octets et demi et tu crois que t'as un jeu.",
+            "it": "Dieci anni. Dieci anni ci ho lavorato. Tu hai tre kilobyte e mezzo e pensi di avere un gioco.",
+            "ja": "十年だ。十年かけてやってきたんだ。お前は3.5キロバイト持ってるだけで、ゲームを持ってるつもりかよ。",
+            "ko": "10년이야. 10년을 거기에 매달렸다고. 넌 3.5킬로바이트 가지고 게임을 가졌다고 생각하는 거야.",
+            "pl": "Dziesięć lat. Dziesięć lat nad tym siedziałem. Ty masz trzy i pół kilobajta i myślisz, że masz grę.",
+            "pt-BR": "Dez anos. Dez anos eu trabalhei nisso. Você tem três kilobytes e meio e acha que tem um jogo.",
+            "ru": "Десять лет. Десять лет я над этим работал. У тебя три с половиной килобайта, а ты думаешь, что у тебя игра.",
+            "uk": "Десять років. Десять років я над цим працював. У тебе три з половиною кілобайта, а ти думаєш, що маєш гру.",
+            "vi": "Mười năm. Tao đã làm nó suốt mười năm. Mày có ba kilobyte rưỡi mà tưởng mày có cả trò chơi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já nemám hru. Já mám Archion.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab nicht das Spiel. Ich hab Archion.",
+            "en": "I don't have the game. I have Archion.",
+            "fr": "J'ai pas le jeu. J'ai Archion.",
+            "it": "Io non ho il gioco. Io ho Archion.",
+            "ja": "オレが持ってるのはゲームじゃない。Archionだ。",
+            "ko": "난 게임을 가진 게 아니야. 난 Archion을 가졌지.",
+            "pl": "Ja nie mam gry. Ja mam Archion.",
+            "pt-BR": "Eu não tenho o jogo. Eu tenho o Archion.",
+            "ru": "У меня не игра. У меня Archion.",
+            "uk": "У мене не гра. У мене Archion.",
+            "vi": "Tao không có trò chơi. Tao có Archion."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To je to samé.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist dasselbe.",
+            "en": "Same thing.",
+            "fr": "C'est pareil.",
+            "it": "È la stessa cosa.",
+            "ja": "同じことだろ。",
+            "ko": "그게 그거잖아.",
+            "pl": "To jest to samo.",
+            "pt-BR": "É a mesma coisa.",
+            "ru": "Это одно и то же.",
+            "uk": "Це одне й те саме.",
+            "vi": "Thì cũng thế thôi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Není. Tvoje hra neexistuje. Nikdy nevyšla. Já jsem udělal jinou.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Dein Spiel existiert nicht. Es ist nie erschienen. Ich hab ein anderes gemacht.",
+            "en": "It's not. Your game doesn't exist. It never came out. I made a different one.",
+            "fr": "Non. Ton jeu n'existe pas. Il n'est jamais sorti. Moi, j'en ai fait un autre.",
+            "it": "No. Il tuo gioco non esiste. Non è mai uscito. Io ne ho fatto un altro.",
+            "ja": "違う。お前のゲームは存在しない。一度も出てない。オレは別のを作ったんだ。",
+            "ko": "아니. 네 게임은 존재하지 않아. 한 번도 안 나왔잖아. 난 다른 걸 만든 거야.",
+            "pl": "Nie jest. Twoja gra nie istnieje. Nigdy nie wyszła. Ja zrobiłem inną.",
+            "pt-BR": "Não é. Seu jogo não existe. Nunca foi lançado. Eu fiz outro.",
+            "ru": "Нет. Твоей игры не существует. Она так и не вышла. Я сделал другую.",
+            "uk": "Ні. Твоєї гри не існує. Вона так і не вийшла. Я зробив іншу.",
+            "vi": "Không. Trò chơi của mày không tồn tại. Nó chưa từng ra mắt. Tao làm một cái khác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "glowing light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Přesnost: Archion je jiná platforma, jiný kód, jiný realtime systém. Shoda je v konceptu a v pravidlech.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Präzisierung: Archion ist eine andere Plattform, anderer Code, ein anderes Echtzeitsystem. Übereinstimmung besteht im Konzept und in den Regeln.",
+            "en": "Voice: Clarification: Archion is a different platform, different code, a different real-time system. The overlap lies in the concept and the rules.",
+            "fr": "Voix : Précision : Archion est une autre plateforme, un autre code, un autre système temps réel. La concordance porte sur le concept et les règles.",
+            "it": "Voce: Precisazione: Archion è un'altra piattaforma, un altro codice, un altro sistema in tempo reale. La corrispondenza riguarda il concept e le regole.",
+            "ja": "ボイス：補足：Archionは別のプラットフォーム、別のコード、別のリアルタイムシステムです。一致はコンセプトとルールにあります。",
+            "ko": "보이스: 정정: Archion은 다른 플랫폼, 다른 코드, 다른 실시간 시스템입니다. 일치하는 부분은 콘셉트와 규칙입니다.",
+            "pl": "Głos: Uściślenie: Archion to inna platforma, inny kod, inny system czasu rzeczywistego. Zgodność dotyczy koncepcji i zasad.",
+            "pt-BR": "Voz: Precisão: Archion é outra plataforma, outro código, outro sistema em tempo real. A coincidência está no conceito e nas regras.",
+            "ru": "Голос: Уточнение: Archion — другая платформа, другой код, другая система реального времени. Совпадение — в концепции и в правилах.",
+            "uk": "Голос: Уточнення: Archion — інша платформа, інший код, інша система реального часу. Збіг — у концепції та в правилах.",
+            "vi": "Giọng nói: Làm rõ: Archion là nền tảng khác, mã khác, hệ thống thời gian thực khác. Điểm trùng khớp nằm ở ý tưởng và luật chơi."
+          }
+        },
+        {
+          "speaker_id": "",
+          "text": "Míra shody: nezměřitelná z dostupných dat.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Grad der Übereinstimmung: anhand der verfügbaren Daten nicht messbar.",
+            "en": "Degree of overlap: not measurable from the available data.",
+            "fr": "Taux de concordance : non mesurable à partir des données disponibles.",
+            "it": "Grado di corrispondenza: non misurabile con i dati disponibili.",
+            "ja": "一致度：利用可能なデータからは測定不能。",
+            "ko": "일치도: 가용 데이터로는 측정 불가.",
+            "pl": "Stopień zgodności: niemierzalny na podstawie dostępnych danych.",
+            "pt-BR": "Grau de coincidência: não mensurável com os dados disponíveis.",
+            "ru": "Степень совпадения: неизмерима по имеющимся данным.",
+            "uk": "Ступінь збігу: не вимірюваний за наявними даними.",
+            "vi": "Mức độ trùng khớp: không thể đo lường từ dữ liệu hiện có."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "pointing at the monitor",
+        "triumphant"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tak vidíš. Nezměřitelná. To znamená, že to může být krádež.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Na siehst du. Nicht messbar. Das heißt, es kann Diebstahl sein.",
+            "en": "See? Not measurable. That means it could be theft.",
+            "fr": "Tu vois. Non mesurable. Ça veut dire que ça peut être du vol.",
+            "it": "Visto? Non misurabile. Vuol dire che può essere un furto.",
+            "ja": "ほらな。測定不能。つまり盗みかもしれないってことだ。",
+            "ko": "봐. 측정 불가래. 그럼 도둑질일 수도 있다는 거잖아.",
+            "pl": "No widzisz. Niemierzalny. To znaczy, że to może być kradzież.",
+            "pt-BR": "Tá vendo? Não mensurável. Quer dizer que pode ser roubo.",
+            "ru": "Вот видишь. Неизмерима. Значит, это может быть кражей.",
+            "uk": "От бачиш. Не вимірюваний. Отже, це може бути крадіжка.",
+            "vi": "Thấy chưa. Không thể đo lường. Nghĩa là có thể là ăn cắp."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "steady light",
+        "dark table",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Nezměřitelná znamená, že to nelze potvrdit ani vyvrátit. Ne že to lze potvrdit.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Nicht messbar bedeutet, dass es weder bestätigt noch widerlegt werden kann. Nicht, dass es bestätigt werden kann.",
+            "en": "Voice: Not measurable means it can be neither confirmed nor refuted. Not that it can be confirmed.",
+            "fr": "Voix : Non mesurable signifie que cela ne peut être ni confirmé ni infirmé. Non que cela puisse être confirmé.",
+            "it": "Voce: Non misurabile significa che non si può né confermare né smentire. Non che si possa confermare.",
+            "ja": "ボイス：測定不能とは、肯定も否定もできないという意味です。肯定できるという意味ではありません。",
+            "ko": "보이스: 측정 불가란 확인도 반박도 할 수 없다는 뜻입니다. 확인할 수 있다는 뜻이 아닙니다.",
+            "pl": "Głos: Niemierzalny oznacza, że nie można tego ani potwierdzić, ani obalić. Nie, że można to potwierdzić.",
+            "pt-BR": "Voz: Não mensurável significa que não é possível confirmar nem refutar. Não que seja possível confirmar.",
+            "ru": "Голос: Неизмерима означает, что это нельзя ни подтвердить, ни опровергнуть. А не то, что это можно подтвердить.",
+            "uk": "Голос: Не вимірюваний означає, що це не можна ні підтвердити, ні спростувати. А не те, що це можна підтвердити.",
+            "vi": "Giọng nói: Không thể đo lường nghĩa là không thể xác nhận cũng không thể bác bỏ. Không phải là có thể xác nhận."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "frowning",
+        "looking at a small speaker",
+        "cold blue light on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "sharp",
+        "leaning towards a small speaker"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jsi moje superinteligence. Ne jeho.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist meine Superintelligenz. Nicht seine.",
+            "en": "You're my superintelligence. Not his.",
+            "fr": "T'es ma superintelligence. Pas la sienne.",
+            "it": "Sei la mia superintelligenza. Non la sua.",
+            "ja": "お前はオレの超知能だろ。あいつのじゃない。",
+            "ko": "넌 내 초지능이야. 쟤 거 아니고.",
+            "pl": "Jesteś moją superinteligencją. Nie jego.",
+            "pt-BR": "Você é a minha superinteligência. Não a dele.",
+            "ru": "Ты мой сверхразум. Не его.",
+            "uk": "Ти мій надінтелект. Не його.",
+            "vi": "Mày là siêu trí tuệ của tao. Không phải của nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_dzahrada",
+      "characters": [],
+      "visual_tags": [
+        "small round smart speaker",
+        "steady light",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Hlas: Jsem rozhraní. Nemám strany. Mám protokol.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Stimme: Ich bin eine Schnittstelle. Ich ergreife keine Partei. Ich habe ein Protokoll.",
+            "en": "Voice: I am an interface. I have no sides. I have a protocol.",
+            "fr": "Voix : Je suis une interface. Je n'ai pas de camp. J'ai un protocole.",
+            "it": "Voce: Sono un'interfaccia. Non ho parti. Ho un protocollo.",
+            "ja": "ボイス：私はインターフェースです。どちらの側にも立ちません。プロトコルがあります。",
+            "ko": "보이스: 저는 인터페이스입니다. 편이 없습니다. 프로토콜이 있습니다.",
+            "pl": "Głos: Jestem interfejsem. Nie mam stron. Mam protokół.",
+            "pt-BR": "Voz: Sou uma interface. Não tenho lados. Tenho um protocolo.",
+            "ru": "Голос: Я — интерфейс. У меня нет сторон. У меня есть протокол.",
+            "uk": "Голос: Я — інтерфейс. Я не маю сторін. Я маю протокол.",
+            "vi": "Giọng nói: Tôi là giao diện. Tôi không đứng về phe nào. Tôi có giao thức."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "short painful laugh",
+        "head tilted back",
+        "blue light"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_dkryt",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter laugh",
+        "looking at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty vole. Ty sis koupil rozhodčího, a on píská proti tobě.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter. Du hast dir 'nen Schiri gekauft, und der pfeift gegen dich.",
+            "en": "Dude. You bought yourself a ref, and he's calling it against you.",
+            "fr": "Putain, mec. T'as acheté un arbitre, et il siffle contre toi.",
+            "it": "Cazzo, amico. Ti sei comprato l'arbitro, e fischia contro di te.",
+            "ja": "マジかよ。審判を買収したのに、そいつがお前に不利な笛吹いてんじゃん。",
+            "ko": "와, 미쳤다. 심판을 매수했더니 그 심판이 너한테 휘슬 부네.",
+            "pl": "Kurde, stary. Kupiłeś sobie sędziego, a on gwiżdże przeciwko tobie.",
+            "pt-BR": "Caramba, cara. Você comprou um juiz, e ele tá apitando contra você.",
+            "ru": "Охренеть. Ты купил себе судью, а он свистит против тебя.",
+            "uk": "Ну ти даєш. Ти купив собі суддю, а він свистить проти тебе.",
+            "vi": "Trời đất. Mày mua trọng tài, rồi hắn thổi phạt chính mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "title": "Pozdní podzim: Krádež čeho přesně?",
+  "title_i18n": {
+    "de": "Spätherbst: Diebstahl wovon genau?",
+    "en": "Late Autumn: Theft of What, Exactly?",
+    "fr": "Fin d'automne : le vol de quoi, au juste ?",
+    "it": "Tardo autunno: furto di cosa, esattamente?",
+    "ja": "晩秋：いったい何を盗んだって？",
+    "ko": "늦가을: 정확히 뭘 훔쳤다는 건데?",
+    "pl": "Późna jesień: Kradzież czego dokładnie?",
+    "pt-BR": "Fim de outono: Roubo do quê, exatamente?",
+    "ru": "Поздняя осень: Кража чего именно?",
+    "uk": "Пізня осінь: Крадіжка чого саме?",
+    "vi": "Cuối thu: Chính xác là ăn cắp cái gì?"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "one cold monitor",
+        "stacks of printed paper",
+        "thick evidence folder",
+        "dust in the air",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "dust drifting through the cold monitor light"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_xdum_3",
+      "characters": [],
+      "visual_tags": [
+        "warm lit window",
+        "shadows of children",
+        "bare branches",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting alone at a garden table",
+        "laptop on his lap",
+        "bare trees",
+        "cold"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "hunched close to the monitor",
+        "stacks of printed paper",
+        "tarot cards on the desk"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "jabbing a finger at the monitor",
+        "intense stare"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Asi ti to pořád nedochází. Nebulon není jen nějaký nápad. Je to můj majetek a umím to doložit. Deset let práce, dokumentace, celý herní systém.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kapierst es wohl immer noch nicht. Nebulon ist nicht bloß irgendeine Idee. Es ist mein Eigentum, und das kann ich belegen. Zehn Jahre Arbeit, Dokumentation, ein komplettes Spielsystem.",
+            "en": "Guess it still hasn't sunk in. Nebulon isn't just some idea. It's my property, and I can prove it. Ten years of work, documentation, an entire game system.",
+            "fr": "T'as toujours pas pigé, on dirait. Nebulon, c'est pas juste une idée. C'est ma propriété, et je peux le prouver. Dix ans de boulot, de la doc, tout un système de jeu.",
+            "it": "Non ci arrivi ancora, eh. Nebulon non è solo un'idea qualunque. È di mia proprietà e posso dimostrarlo. Dieci anni di lavoro, documentazione, un intero sistema di gioco.",
+            "ja": "まだわかってねえみたいだな。Nebulonはただのアイデアじゃない。オレの財産だ、証明もできる。十年分の作業、資料、ゲームシステム丸ごとだ。",
+            "ko": "아직도 감이 안 오나 보네. Nebulon은 그냥 아이디어가 아니야. 내 재산이고, 증명할 수 있어. 10년의 작업, 문서, 게임 시스템 전체.",
+            "pl": "Chyba dalej do ciebie nie dociera. Nebulon to nie jest jakiś tam pomysł. To moja własność i potrafię to udowodnić. Dziesięć lat pracy, dokumentacja, cały system gry.",
+            "pt-BR": "Acho que você ainda não sacou. Nebulon não é só uma ideia qualquer. É propriedade minha, e eu consigo provar. Dez anos de trabalho, documentação, um sistema de jogo inteiro.",
+            "ru": "Похоже, до тебя всё ещё не доходит. Nebulon — это не просто какая-то идея. Это моя собственность, и я могу это доказать. Десять лет работы, документация, целая игровая система.",
+            "uk": "Здається, до тебе досі не доходить. Nebulon — це не просто якась ідея. Це моя власність, і я можу це довести. Десять років роботи, документація, ціла ігрова система.",
+            "vi": "Chắc mày vẫn chưa hiểu ra. Nebulon không chỉ là một ý tưởng vu vơ. Nó là tài sản của tao và tao chứng minh được. Mười năm làm việc, tài liệu, cả một hệ thống trò chơi."
+          }
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Nemáš na něj žádný nárok.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast keinerlei Anspruch darauf.",
+            "en": "You have no claim to it.",
+            "fr": "T'as aucun droit dessus.",
+            "it": "Non hai nessun diritto su di esso.",
+            "ja": "お前には何の権利もない。",
+            "ko": "넌 거기에 아무 권리도 없어.",
+            "pl": "Nie masz do niego żadnych praw.",
+            "pt-BR": "Você não tem direito nenhum sobre ele.",
+            "ru": "У тебя нет на него никаких прав.",
+            "uk": "Ти не маєш на нього жодних прав.",
+            "vi": "Mày không có quyền gì với nó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "bitter expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Nabídl jsem ti dohodu a tys ji přešel mlčením.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab dir einen Deal angeboten, und du hast ihn einfach totgeschwiegen.",
+            "en": "I offered you a deal and you met it with silence.",
+            "fr": "Je t'ai proposé un accord et t'as fait comme si de rien n'était.",
+            "it": "Ti ho offerto un accordo e tu l'hai ignorato in silenzio.",
+            "ja": "取引を持ちかけたのに、お前は黙って無視した。",
+            "ko": "내가 합의를 제안했는데 넌 그냥 씹었지.",
+            "pl": "Zaproponowałem ci układ, a ty go przemilczałeś.",
+            "pt-BR": "Eu te ofereci um acordo e você simplesmente ignorou.",
+            "ru": "Я предложил тебе договориться, а ты просто промолчал.",
+            "uk": "Я запропонував тобі домовитися, а ти просто змовчав.",
+            "vi": "Tao đã đề nghị thỏa thuận với mày, còn mày thì im lặng lờ đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak hovado. Ale pojďme to konečně říct přesně.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du benimmst dich wie ein Arsch. Aber lass es uns endlich präzise sagen.",
+            "en": "You're acting like an asshole. But let's finally put it precisely.",
+            "fr": "Tu te comportes comme un connard. Mais disons-le enfin précisément.",
+            "it": "Ti comporti da stronzo. Ma diciamolo finalmente con precisione.",
+            "ja": "お前、最低のクズみたいな真似してるな。でも、そろそろ正確に話そう。",
+            "ko": "너 진짜 개같이 구네. 하지만 이제 정확하게 짚고 넘어가자.",
+            "pl": "Zachowujesz się jak bydlak. Ale powiedzmy to wreszcie precyzyjnie.",
+            "pt-BR": "Você tá agindo feito um escroto. Mas vamos finalmente falar com precisão.",
+            "ru": "Ведёшь себя как скотина. Но давай наконец скажем точно.",
+            "uk": "Поводишся як скотина. Але давай нарешті скажемо точно.",
+            "vi": "Mày cư xử như thằng súc vật. Nhưng giờ nói cho chính xác đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi mi nikdy nedal zdrojový kód. Ani jeden asset. Poslal jsi mi dokument s pravidly. Tři a půl kilobajtu textu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mir nie Quellcode gegeben. Kein einziges Asset. Du hast mir ein Regeldokument geschickt. Dreieinhalb Kilobyte Text.",
+            "en": "You never gave me source code. Not a single asset. You sent me a rules document. Three and a half kilobytes of text.",
+            "fr": "Tu m'as jamais donné de code source. Pas un seul asset. Tu m'as envoyé un document de règles. Trois kilo-octets et demi de texte.",
+            "it": "Non mi hai mai dato il codice sorgente. Neanche un asset. Mi hai mandato un documento con le regole. Tre kilobyte e mezzo di testo.",
+            "ja": "お前はソースコードを一度もくれなかった。アセットひとつもだ。送ってきたのはルールの文書だけ。3.5キロバイトのテキストだ。",
+            "ko": "넌 나한테 소스 코드를 준 적이 없어. 에셋 하나도. 규칙 문서 하나 보냈지. 3.5킬로바이트짜리 텍스트.",
+            "pl": "Nigdy nie dałeś mi kodu źródłowego. Ani jednego assetu. Wysłałeś mi dokument z zasadami. Trzy i pół kilobajta tekstu.",
+            "pt-BR": "Você nunca me deu código-fonte. Nenhum asset. Você me mandou um documento com as regras. Três kilobytes e meio de texto.",
+            "ru": "Ты никогда не давал мне исходный код. Ни одного ассета. Ты прислал мне документ с правилами. Три с половиной килобайта текста.",
+            "uk": "Ти ніколи не давав мені вихідного коду. Жодного асета. Ти надіслав мені документ із правилами. Три з половиною кілобайта тексту.",
+            "vi": "Mày chưa bao giờ đưa tao mã nguồn. Không một asset nào. Mày gửi tao một tài liệu luật chơi. Ba kilobyte rưỡi văn bản."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já jsem postavil úplně novou hru. Jiná platforma. Jiná architektura. Vlastní realtime bojový systém, protože ten tvůj nebyl dotažený.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab ein komplett neues Spiel gebaut. Andere Plattform. Andere Architektur. Ein eigenes Echtzeit-Kampfsystem, weil deins nicht ausgereift war.",
+            "en": "I built a completely new game. Different platform. Different architecture. My own real-time combat system, because yours was never finished.",
+            "fr": "J'ai construit un jeu entièrement nouveau. Autre plateforme. Autre architecture. Mon propre système de combat en temps réel, parce que le tien n'était pas abouti.",
+            "it": "Ho costruito un gioco completamente nuovo. Altra piattaforma. Altra architettura. Un mio sistema di combattimento in tempo reale, perché il tuo non era rifinito.",
+            "ja": "オレはまったく新しいゲームを作った。別のプラットフォーム。別のアーキテクチャ。独自のリアルタイム戦闘システムだ。お前のは完成してなかったからな。",
+            "ko": "난 완전히 새로운 게임을 만들었어. 다른 플랫폼. 다른 아키텍처. 내 실시간 전투 시스템. 네 건 완성이 안 돼 있었으니까.",
+            "pl": "Zbudowałem zupełnie nową grę. Inna platforma. Inna architektura. Własny system walki w czasie rzeczywistym, bo twój nie był dopracowany.",
+            "pt-BR": "Eu construí um jogo totalmente novo. Outra plataforma. Outra arquitetura. Um sistema de combate em tempo real próprio, porque o seu não estava acabado.",
+            "ru": "Я построил совершенно новую игру. Другая платформа. Другая архитектура. Собственная боевая система в реальном времени, потому что твоя была не доведена до ума.",
+            "uk": "Я збудував абсолютно нову гру. Інша платформа. Інша архітектура. Власна бойова система в реальному часі, бо твоя не була доведена до ладу.",
+            "vi": "Tao xây một trò chơi hoàn toàn mới. Nền tảng khác. Kiến trúc khác. Hệ thống chiến đấu thời gian thực của riêng tao, vì cái của mày chưa hoàn thiện."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "hands flipping through an evidence folder",
+        "printed pages",
+        "no readable text",
+        "monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "angry expression",
+        "clutching an evidence folder"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Je to dědictví celýho mýho života. Na pravidla, co k tomu patří, kašleš. Bereš si to silou. Pro mě je to krádež přímo před očima.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist das Vermächtnis von meinem ganzen Leben. Auf die Regeln, die dazugehören, pfeifst du. Du nimmst es dir mit Gewalt. Für mich ist das Diebstahl direkt vor meinen Augen.",
+            "en": "It's the legacy of my whole damn life. You don't give a crap about the rules that come with it. You're taking it by force. To me it's theft, right before my eyes.",
+            "fr": "C'est l'héritage de toute ma vie. Les règles qui vont avec, t'en as rien à faire. Tu te l'appropries de force. Pour moi, c'est du vol sous mes yeux.",
+            "it": "È l'eredità di tutta la mia vita. Delle regole che ci vanno dietro te ne freghi. Te lo prendi con la forza. Per me è un furto proprio sotto i miei occhi.",
+            "ja": "オレの人生まるごとの遺産なんだよ。それに付いてくるルールなんかどうでもいいってか。力ずくで奪ってる。オレにとっちゃ目の前での盗みだ。",
+            "ko": "이건 내 인생 전부를 건 유산이야. 거기 딸린 규칙 따윈 신경도 안 쓰지. 힘으로 뺏어 가는 거야. 나한텐 눈앞에서 벌어지는 도둑질이라고.",
+            "pl": "To dziedzictwo całego mojego życia. Zasady, które do tego należą, olewasz. Bierzesz to siłą. Dla mnie to kradzież na moich oczach.",
+            "pt-BR": "É o legado da minha vida inteira. As regras que vêm junto, você tá nem aí. Tá pegando na marra. Pra mim é roubo bem na minha cara.",
+            "ru": "Это наследие всей моей жизни. На правила, которые к этому прилагаются, тебе плевать. Ты берёшь это силой. Для меня это кража прямо у меня на глазах.",
+            "uk": "Це спадок усього мого життя. На правила, що до цього додаються, тобі начхати. Ти береш це силою. Для мене це крадіжка просто в мене на очах.",
+            "vi": "Đó là di sản cả đời tao. Mấy luật đi kèm thì mày bất cần. Mày cướp nó bằng vũ lực. Với tao, đó là ăn cắp ngay trước mắt."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "raised eyebrow",
+        "calm",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Krádež čeho přesně?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Diebstahl wovon genau?",
+            "en": "Theft of what, exactly?",
+            "fr": "Le vol de quoi, au juste ?",
+            "it": "Furto di cosa, esattamente?",
+            "ja": "いったい何を盗んだって？",
+            "ko": "정확히 뭘 훔쳤다는 건데?",
+            "pl": "Kradzież czego dokładnie?",
+            "pt-BR": "Roubo do quê, exatamente?",
+            "ru": "Кража чего именно?",
+            "uk": "Крадіжка чого саме?",
+            "vi": "Chính xác là ăn cắp cái gì?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Autorské právo nechrání nápady, systémy ani herní mechaniky. Chrání jen konkrétní vyjádření.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das Urheberrecht schützt keine Ideen, keine Systeme und keine Spielmechaniken. Es schützt nur die konkrete Ausdrucksform.",
+            "en": "Copyright doesn't protect ideas, systems, or game mechanics. It only protects the specific expression.",
+            "fr": "Le droit d'auteur ne protège ni les idées, ni les systèmes, ni les mécaniques de jeu. Il ne protège que la forme d'expression concrète.",
+            "it": "Il diritto d'autore non tutela idee, sistemi né meccaniche di gioco. Tutela solo la forma espressiva concreta.",
+            "ja": "著作権はアイデアも、システムも、ゲームメカニクスも保護しない。保護するのは具体的な表現だけだ。",
+            "ko": "저작권은 아이디어도, 시스템도, 게임 메커니즘도 보호하지 않아. 구체적인 표현만 보호하지.",
+            "pl": "Prawo autorskie nie chroni pomysłów, systemów ani mechanik gry. Chroni tylko konkretny sposób wyrażenia.",
+            "pt-BR": "O direito autoral não protege ideias, sistemas nem mecânicas de jogo. Protege só a expressão concreta.",
+            "ru": "Авторское право не охраняет идеи, системы и игровые механики. Оно охраняет только конкретную форму выражения.",
+            "uk": "Авторське право не охороняє ідей, систем чи ігрових механік. Воно охороняє лише конкретну форму вираження.",
+            "vi": "Luật bản quyền không bảo hộ ý tưởng, hệ thống hay cơ chế trò chơi. Nó chỉ bảo hộ hình thức thể hiện cụ thể."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "To je základní princip – dichotomie idea versus expression. Platí to v Česku, v Evropě i v Americe.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist ein Grundprinzip – die Idee-Ausdruck-Dichotomie. Das gilt in Tschechien, in Europa und in Amerika.",
+            "en": "It's a basic principle – the idea–expression dichotomy. It applies in Czechia, in Europe, and in America.",
+            "fr": "C'est un principe fondamental – la dichotomie idée/expression. Ça vaut en Tchéquie, en Europe et en Amérique.",
+            "it": "È un principio fondamentale – la dicotomia idea/espressione. Vale in Repubblica Ceca, in Europa e in America.",
+            "ja": "基本原則だ――アイデア・表現二分論。チェコでも、ヨーロッパでも、アメリカでも通用する。",
+            "ko": "기본 원칙이야 – 아이디어·표현 이분법. 체코에서도, 유럽에서도, 미국에서도 똑같아.",
+            "pl": "To podstawowa zasada – dychotomia idei i wyrażenia. Obowiązuje w Czechach, w Europie i w Ameryce.",
+            "pt-BR": "É um princípio básico – a dicotomia ideia/expressão. Vale na República Tcheca, na Europa e nos Estados Unidos.",
+            "ru": "Это базовый принцип – дихотомия идеи и выражения. Он действует и в Чехии, и в Европе, и в Америке.",
+            "uk": "Це базовий принцип – дихотомія ідеї та вираження. Він діє і в Чехії, і в Європі, і в Америці.",
+            "vi": "Đó là nguyên tắc cơ bản – phân biệt ý tưởng và hình thức thể hiện. Áp dụng ở Séc, ở châu Âu lẫn ở Mỹ."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi mi dal text pravidel. Ten text jako literární dílo chráněný je. Ale herní systém, který popisuje, chráněný není.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast mir einen Regeltext gegeben. Der Text als Sprachwerk ist geschützt. Aber das Spielsystem, das er beschreibt, ist es nicht.",
+            "en": "You gave me the text of the rules. That text, as a literary work, is protected. But the game system it describes is not.",
+            "fr": "Tu m'as donné le texte des règles. Ce texte, en tant qu'œuvre littéraire, est protégé. Mais le système de jeu qu'il décrit ne l'est pas.",
+            "it": "Mi hai dato il testo delle regole. Quel testo, come opera letteraria, è tutelato. Ma il sistema di gioco che descrive no.",
+            "ja": "お前がくれたのはルールのテキストだ。そのテキストは言語の著作物として保護される。でも、そこに書かれたゲームシステムは保護されない。",
+            "ko": "넌 나한테 규칙 텍스트를 줬어. 그 텍스트는 어문저작물로 보호받아. 하지만 그게 설명하는 게임 시스템은 보호 안 돼.",
+            "pl": "Dałeś mi tekst zasad. Ten tekst jako utwór literacki jest chroniony. Ale system gry, który opisuje, chroniony nie jest.",
+            "pt-BR": "Você me deu o texto das regras. Esse texto, como obra literária, é protegido. Mas o sistema de jogo que ele descreve não é.",
+            "ru": "Ты дал мне текст правил. Этот текст как литературное произведение охраняется. Но игровая система, которую он описывает, — нет.",
+            "uk": "Ти дав мені текст правил. Цей текст як літературний твір охороняється. Але ігрова система, яку він описує, — ні.",
+            "vi": "Mày đưa tao văn bản luật chơi. Văn bản đó, với tư cách tác phẩm văn học, được bảo hộ. Nhưng hệ thống trò chơi nó mô tả thì không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "slight smile",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Nikdo nevlastní mechaniku. Nikdo nevlastní „karty se líčí“, „hráči se střídají“ nebo „souboj probíhá v reálném čase“.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Niemandem gehört eine Mechanik. Niemandem gehört „Karten werden gezogen“, „Spieler wechseln sich ab“ oder „der Kampf läuft in Echtzeit“.",
+            "en": "Nobody owns a mechanic. Nobody owns “cards are drawn,” “players take turns,” or “combat happens in real time.”",
+            "fr": "Personne ne possède une mécanique. Personne ne possède « on pioche des cartes », « les joueurs jouent à tour de rôle » ou « le combat se déroule en temps réel ».",
+            "it": "Nessuno possiede una meccanica. Nessuno possiede «si pescano carte», «i giocatori si alternano» o «il combattimento avviene in tempo reale».",
+            "ja": "メカニクスは誰のものでもない。「カードを引く」「プレイヤーが交代する」「戦闘がリアルタイムで進む」なんて、誰も所有してない。",
+            "ko": "메커니즘은 누구의 소유도 아니야. “카드를 뽑는다”, “플레이어가 번갈아 한다”, “전투가 실시간으로 진행된다” 같은 건 아무도 소유 못 해.",
+            "pl": "Nikt nie jest właścicielem mechaniki. Nikt nie jest właścicielem „dobiera się karty”, „gracze wykonują ruchy na zmianę” ani „walka toczy się w czasie rzeczywistym”.",
+            "pt-BR": "Ninguém é dono de uma mecânica. Ninguém é dono de “compram-se cartas”, “os jogadores se revezam” ou “o combate acontece em tempo real”.",
+            "ru": "Никто не владеет механикой. Никто не владеет «карты тянут из колоды», «игроки ходят по очереди» или «бой идёт в реальном времени».",
+            "uk": "Ніхто не володіє механікою. Ніхто не володіє «карти тягнуть із колоди», «гравці ходять по черзі» чи «бій іде в реальному часі».",
+            "vi": "Không ai sở hữu cơ chế. Không ai sở hữu “rút bài”, “người chơi lần lượt đi” hay “trận đấu diễn ra theo thời gian thực”."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Stejně jako nikdo nevlastní myšlenku deck-buildingu nebo rogueliku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Genauso wenig, wie jemandem die Idee von Deckbuilding oder Roguelikes gehört.",
+            "en": "Just like nobody owns the idea of deck-building or the roguelike.",
+            "fr": "Tout comme personne ne possède l'idée du deck-building ou du roguelike.",
+            "it": "Così come nessuno possiede l'idea del deck-building o del roguelike.",
+            "ja": "デッキ構築やローグライクの発想を誰も所有してないのと同じだ。",
+            "ko": "덱빌딩이나 로그라이크라는 발상을 아무도 소유하지 않는 것처럼.",
+            "pl": "Tak samo jak nikt nie jest właścicielem idei deck-buildingu czy roguelike'a.",
+            "pt-BR": "Assim como ninguém é dono da ideia de deck-building ou de roguelike.",
+            "ru": "Так же, как никто не владеет идеей декбилдинга или рогалика.",
+            "uk": "Так само, як ніхто не володіє ідеєю декбілдингу чи рогалика.",
+            "vi": "Cũng như không ai sở hữu ý tưởng deck-building hay roguelike."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [],
+      "visual_tags": [
+        "tarot cards",
+        "egyptian papyrus",
+        "small alien figurine",
+        "printed paper",
+        "monitor glow",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "monitor glow flickering over the tarot cards"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xkryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "hurt",
+        "bitter expression",
+        "looking at the monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty jsi věděl, že to je moje. Věděl jsi, že to má hodnotu. A stejně jsi to vzal a přepsal si to podle sebe.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du wusstest, dass es meins ist. Du wusstest, dass es was wert ist. Und trotzdem hast du's genommen und nach deinem Gusto umgeschrieben.",
+            "en": "You knew it was mine. You knew it was worth something. And you took it anyway and rewrote it your way.",
+            "fr": "Tu savais que c'était à moi. Tu savais que ça avait de la valeur. Et tu l'as pris quand même pour le réécrire à ta sauce.",
+            "it": "Sapevi che era mio. Sapevi che valeva qualcosa. E l'hai preso lo stesso e riscritto a modo tuo.",
+            "ja": "オレのだってわかってたよな。価値があるってわかってた。それでも奪って、好き勝手に書き換えた。",
+            "ko": "내 거라는 거 알았잖아. 가치가 있다는 것도 알았고. 그런데도 가져가서 네 멋대로 고쳐 썼지.",
+            "pl": "Wiedziałeś, że to moje. Wiedziałeś, że to ma wartość. A i tak to wziąłeś i przerobiłeś po swojemu.",
+            "pt-BR": "Você sabia que era meu. Sabia que tinha valor. E mesmo assim pegou e reescreveu do seu jeito.",
+            "ru": "Ты знал, что это моё. Знал, что это чего-то стоит. И всё равно взял и переписал под себя.",
+            "uk": "Ти знав, що це моє. Знав, що це має цінність. І все одно взяв і переписав під себе.",
+            "vi": "Mày biết đó là của tao. Mày biết nó có giá trị. Vậy mà mày vẫn lấy và viết lại theo ý mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "cold expression",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Věděl jsem, že máš koncept, který jsi deset let nedokázal vydat. Věděl jsem, že jsi mi nikdy nedal kód. A věděl jsem, že mi dlužíš peníze.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich wusste, dass du ein Konzept hast, das du zehn Jahre lang nicht rausbringen konntest. Ich wusste, dass du mir nie Code gegeben hast. Und ich wusste, dass du mir Geld schuldest.",
+            "en": "I knew you had a concept you couldn't release for ten years. I knew you never gave me any code. And I knew you owed me money.",
+            "fr": "Je savais que t'avais un concept que t'as pas réussi à sortir en dix ans. Je savais que tu m'avais jamais donné de code. Et je savais que tu me devais de l'argent.",
+            "it": "Sapevo che avevi un concept che in dieci anni non eri riuscito a pubblicare. Sapevo che non mi avevi mai dato il codice. E sapevo che mi dovevi dei soldi.",
+            "ja": "知ってたのは、お前が十年かけても出せなかったコンセプトを持ってるってことだ。コードを一度もくれなかったってこと。それと、オレに金を借りてるってことだ。",
+            "ko": "내가 안 건, 네가 10년 동안 출시 못 한 콘셉트를 갖고 있다는 거야. 나한테 코드를 한 번도 안 줬다는 거. 그리고 나한테 돈을 빚졌다는 거.",
+            "pl": "Wiedziałem, że masz koncept, którego przez dziesięć lat nie zdołałeś wydać. Wiedziałem, że nigdy nie dałeś mi kodu. I wiedziałem, że jesteś mi winien pieniądze.",
+            "pt-BR": "Eu sabia que você tinha um conceito que em dez anos não conseguiu lançar. Sabia que você nunca me deu o código. E sabia que você me devia dinheiro.",
+            "ru": "Я знал, что у тебя есть концепт, который ты десять лет не мог выпустить. Знал, что ты так и не дал мне код. И знал, что ты должен мне деньги.",
+            "uk": "Я знав, що в тебе є концепт, який ти десять років не міг випустити. Знав, що ти так і не дав мені код. І знав, що ти винен мені гроші.",
+            "vi": "Tao biết mày có một ý tưởng mà mười năm mày không phát hành nổi. Tao biết mày chưa bao giờ đưa tao mã. Và tao biết mày nợ tiền tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "serious",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Když někdo postaví vlastní implementaci na jiné platformě, s vlastní architekturou a vlastními systémy, nejde o odvozené dílo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wenn jemand eine eigene Implementierung auf einer anderen Plattform baut, mit eigener Architektur und eigenen Systemen, ist das keine Bearbeitung.",
+            "en": "When someone builds their own implementation on a different platform, with their own architecture and their own systems, it's not a derivative work.",
+            "fr": "Quand quelqu'un construit sa propre implémentation sur une autre plateforme, avec sa propre architecture et ses propres systèmes, ce n'est pas une œuvre dérivée.",
+            "it": "Se qualcuno costruisce una propria implementazione su un'altra piattaforma, con una propria architettura e propri sistemi, non si tratta di un'opera derivata.",
+            "ja": "誰かが別のプラットフォームで、独自のアーキテクチャと独自のシステムで実装を作ったなら、それは二次的著作物じゃない。",
+            "ko": "누군가 다른 플랫폼에서 자체 아키텍처와 자체 시스템으로 독자적인 구현을 만들었다면, 그건 2차적저작물이 아니야.",
+            "pl": "Jeśli ktoś buduje własną implementację na innej platformie, z własną architekturą i własnymi systemami, to nie jest utwór zależny.",
+            "pt-BR": "Quando alguém constrói a própria implementação em outra plataforma, com arquitetura e sistemas próprios, não se trata de obra derivada.",
+            "ru": "Если кто-то создаёт собственную реализацию на другой платформе, со своей архитектурой и своими системами, это не производное произведение.",
+            "uk": "Якщо хтось створює власну реалізацію на іншій платформі, з власною архітектурою й власними системами, це не похідний твір.",
+            "vi": "Khi ai đó xây dựng bản triển khai riêng trên nền tảng khác, với kiến trúc và hệ thống riêng, thì đó không phải là tác phẩm phái sinh."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jde o nezávislé vytvoření.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Es ist eine eigenständige Schöpfung.",
+            "en": "It's independent creation.",
+            "fr": "C'est une création indépendante.",
+            "it": "Si tratta di una creazione indipendente.",
+            "ja": "独立した創作だ。",
+            "ko": "독자적인 창작이야.",
+            "pl": "To niezależna twórczość.",
+            "pt-BR": "É criação independente.",
+            "ru": "Это самостоятельное создание.",
+            "uk": "Це самостійне створення.",
+            "vi": "Đó là sáng tạo độc lập."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm expression",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "To, co ty teď děláš, je pokus tvrdit, že vlastnictví nápadu se rovná vlastnictví všech budoucích implementací. Tak to v autorském právu nefunguje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was du gerade machst, ist der Versuch zu behaupten, dass der Besitz einer Idee dem Besitz aller künftigen Umsetzungen gleichkommt. So funktioniert Urheberrecht nicht.",
+            "en": "What you're doing now is trying to claim that owning an idea equals owning every future implementation. That's not how copyright works.",
+            "fr": "Ce que tu fais là, c'est essayer de prétendre que posséder une idée revient à posséder toutes ses futures implémentations. Le droit d'auteur ne marche pas comme ça.",
+            "it": "Quello che stai facendo è cercare di sostenere che possedere un'idea equivalga a possedere tutte le sue future implementazioni. Il diritto d'autore non funziona così.",
+            "ja": "お前が今やってるのは、アイデアを持ってれば将来のすべての実装も持ってることになる、って言い張ることだ。著作権はそういう仕組みじゃない。",
+            "ko": "지금 네가 하는 건, 아이디어를 소유하면 앞으로의 모든 구현도 소유한다고 우기는 거야. 저작권은 그렇게 안 돌아가.",
+            "pl": "To, co teraz robisz, to próba twierdzenia, że posiadanie pomysłu równa się posiadaniu wszystkich przyszłych implementacji. Prawo autorskie tak nie działa.",
+            "pt-BR": "O que você tá fazendo agora é tentar afirmar que ser dono de uma ideia é ser dono de todas as implementações futuras. O direito autoral não funciona assim.",
+            "ru": "То, что ты сейчас делаешь, — попытка утверждать, что владение идеей равно владению всеми будущими реализациями. В авторском праве так не работает.",
+            "uk": "Те, що ти зараз робиш, — спроба стверджувати, що володіння ідеєю дорівнює володінню всіма майбутніми реалізаціями. В авторському праві так не працює.",
+            "vi": "Cái mày đang làm là cố khẳng định rằng sở hữu ý tưởng đồng nghĩa với sở hữu mọi bản triển khai trong tương lai. Luật bản quyền không vận hành như thế."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "pausing",
+        "breathing out",
+        "looking at the bare trees",
+        "cold wind"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "firm",
+        "typing on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi peníze. Nesplnil jsi podmínky půjčky. Dlužíš mi server, na kterém jsem pracoval stovky hodin.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir Geld. Du hast die Bedingungen des Darlehens nicht erfüllt. Du schuldest mir den Server, an dem ich Hunderte Stunden gearbeitet hab.",
+            "en": "You owe me money. You didn't meet the terms of the loan. You owe me the server I put hundreds of hours into.",
+            "fr": "Tu me dois de l'argent. T'as pas respecté les conditions du prêt. Tu me dois le serveur sur lequel j'ai bossé des centaines d'heures.",
+            "it": "Mi devi dei soldi. Non hai rispettato le condizioni del prestito. Mi devi il server su cui ho lavorato centinaia di ore.",
+            "ja": "お前はオレに金を借りてる。貸付の条件も守らなかった。何百時間もかけたサーバーの借りもある。",
+            "ko": "넌 나한테 돈을 빚졌어. 대출 조건도 안 지켰고. 내가 수백 시간을 들인 서버도 빚졌지.",
+            "pl": "Jesteś mi winien pieniądze. Nie dotrzymałeś warunków pożyczki. Jesteś mi winien serwer, nad którym przesiedziałem setki godzin.",
+            "pt-BR": "Você me deve dinheiro. Não cumpriu as condições do empréstimo. Você me deve o servidor em que eu trabalhei centenas de horas.",
+            "ru": "Ты должен мне деньги. Ты не выполнил условия займа. Ты должен мне за сервер, над которым я работал сотни часов.",
+            "uk": "Ти винен мені гроші. Ти не виконав умов позики. Ти винен мені сервер, над яким я працював сотні годин.",
+            "vi": "Mày nợ tao tiền. Mày không thực hiện điều kiện khoản vay. Mày nợ tao cái máy chủ tao đã bỏ ra hàng trăm giờ."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi z něj vykradl moje disky a ještě sis ho zpeněžil. Dlužíš mi poděkování za web, který u mě pořád běží.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast meine Festplatten daraus geplündert und ihn dann noch zu Geld gemacht. Du schuldest mir ein Dankeschön für die Website, die immer noch bei mir läuft.",
+            "en": "You stripped my drives out of it and then cashed it in. You owe me a thank-you for the website that's still running on my end.",
+            "fr": "T'en as pillé mes disques et en plus tu l'as revendu. Tu me dois un merci pour le site qui tourne toujours chez moi.",
+            "it": "Ci hai rubato i miei dischi e poi l'hai pure monetizzato. Mi devi un grazie per il sito che gira ancora da me.",
+            "ja": "お前はそこからオレのディスクを抜き取って、しかも売り払った。今もオレのところで動いてるウェブサイトの礼もまだだ。",
+            "ko": "넌 거기서 내 디스크를 빼돌리고, 서버까지 팔아 치웠지. 아직도 내 쪽에서 돌아가는 웹사이트에 대해 고맙다는 말도 빚졌고.",
+            "pl": "Ukradłeś z niego moje dyski, a potem jeszcze go spieniężyłeś. Jesteś mi winien podziękowanie za stronę, która wciąż działa u mnie.",
+            "pt-BR": "Você roubou meus discos dele e ainda vendeu o servidor. Você me deve um obrigado pelo site que ainda roda comigo.",
+            "ru": "Ты вытащил из него мои диски, да ещё и продал его. Ты должен мне спасибо за сайт, который до сих пор работает у меня.",
+            "uk": "Ти повитягував із нього мої диски, ще й продав його. Ти винен мені подяку за сайт, який досі працює в мене.",
+            "vi": "Mày lấy trộm ổ đĩa của tao trong đó rồi còn đem bán nó. Mày còn nợ tao một lời cảm ơn vì cái web vẫn đang chạy ở chỗ tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "matter-of-fact",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Začneme penězi. Do Vánoc první část. Do března druhou. Do srpna zbytek.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fangen wir mit dem Geld an. Bis Weihnachten der erste Teil. Bis März der zweite. Bis August der Rest.",
+            "en": "Let's start with the money. First installment by Christmas. Second by March. The rest by August.",
+            "fr": "On commence par l'argent. La première partie d'ici Noël. La deuxième d'ici mars. Le reste d'ici août.",
+            "it": "Cominciamo dai soldi. La prima parte entro Natale. La seconda entro marzo. Il resto entro agosto.",
+            "ja": "まず金からだ。クリスマスまでに一回目。三月までに二回目。八月までに残り全部。",
+            "ko": "돈부터 시작하자. 크리스마스까지 첫 번째. 3월까지 두 번째. 8월까지 나머지.",
+            "pl": "Zacznijmy od pieniędzy. Do świąt pierwsza rata. Do marca druga. Do sierpnia reszta.",
+            "pt-BR": "Vamos começar pelo dinheiro. A primeira parte até o Natal. A segunda até março. O resto até agosto.",
+            "ru": "Начнём с денег. До Рождества первую часть. До марта вторую. До августа остальное.",
+            "uk": "Почнімо з грошей. До Різдва першу частину. До березня другу. До серпня решту.",
+            "vi": "Bắt đầu từ tiền. Trước Giáng sinh phần đầu. Trước tháng Ba phần hai. Trước tháng Tám phần còn lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_xzahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a garden table",
+        "from front",
+        "calm",
+        "final",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ze stránek mažu všechny odkazy na tebe. Projekt se jmenuje Archion. Nemáš na něm žádný podíl.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich lösche alle Verweise auf dich von der Website. Das Projekt heißt Archion. Du hast keinen Anteil daran.",
+            "en": "I'm deleting every reference to you from the website. The project is called Archion. You have no stake in it.",
+            "fr": "Je supprime du site toutes les mentions de toi. Le projet s'appelle Archion. T'as aucune part dedans.",
+            "it": "Tolgo dal sito tutti i riferimenti a te. Il progetto si chiama Archion. Non ne hai nessuna quota.",
+            "ja": "サイトからお前への言及は全部消す。プロジェクトの名前はArchionだ。お前の取り分はない。",
+            "ko": "사이트에서 너에 대한 언급은 전부 지울 거야. 프로젝트 이름은 Archion이야. 넌 지분이 없어.",
+            "pl": "Usuwam ze strony wszystkie odnośniki do ciebie. Projekt nazywa się Archion. Nie masz w nim żadnego udziału.",
+            "pt-BR": "Vou apagar do site todas as referências a você. O projeto se chama Archion. Você não tem participação nenhuma nele.",
+            "ru": "Я удаляю с сайта все упоминания о тебе. Проект называется Archion. У тебя в нём нет никакой доли.",
+            "uk": "Я видаляю із сайту всі згадки про тебе. Проєкт називається Archion. У тебе в ньому немає жодної частки.",
+            "vi": "Tao xóa mọi đường dẫn tới mày khỏi trang web. Dự án tên là Archion. Mày không có phần nào trong đó."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_xzahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "last brown leaves",
+        "wind over the table",
+        "bare trees",
+        "grey sky",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the last leaves blown off the garden table by a cold wind"
+    }
+  ]
+}

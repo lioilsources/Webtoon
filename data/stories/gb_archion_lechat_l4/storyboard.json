@@ -1,0 +1,559 @@
+{
+  "title": "Podzim: Tři a půl kilobajtu",
+  "title_i18n": {
+    "de": "Herbst: Dreieinhalb Kilobyte",
+    "en": "Autumn: Three and a Half Kilobytes",
+    "fr": "Automne : Trois kilo-octets et demi",
+    "it": "Autunno: Tre kilobyte e mezzo",
+    "ja": "秋：3.5キロバイト",
+    "ko": "가을: 3.5킬로바이트",
+    "pl": "Jesień: Trzy i pół kilobajta",
+    "pt-BR": "Outono: Três kilobytes e meio",
+    "ru": "Осень: Три с половиной килобайта",
+    "uk": "Осінь: Три з половиною кілобайти",
+    "vi": "Mùa thu: Ba kilobyte rưỡi"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_potager_podzim",
+      "characters": [],
+      "visual_tags": [
+        "french potager in autumn",
+        "colourful falling leaves",
+        "wind",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "colourful leaves whirling across the beds"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting on a stone floor",
+        "keyboard on his knees",
+        "graphics cards around"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "typing hard",
+        "wide eyes"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Asi ti to nedochází. Nebulon i celý ten koncept jsou můj majetek a můžu to doložit. Ty na to nárok nemáš. Nabídl jsem ti dohodu a tys ji přešel.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du checkst es wohl nicht. Nebulon und das ganze Konzept sind mein Eigentum, und das kann ich belegen. Du hast keinen Anspruch darauf. Ich hab dir einen Deal angeboten und du bist drüber weggegangen.",
+            "en": "You don't get it, do you. Nebulon and the whole concept are my property and I can prove it. You've got no claim to it. I offered you a deal and you brushed it off.",
+            "fr": "Tu piges pas, on dirait. Nebulon et tout le concept sont ma propriété, et je peux le prouver. T'as aucun droit dessus. Je t'ai proposé un accord et tu l'as ignoré.",
+            "it": "Non ci arrivi, eh. Nebulon e tutto il concept sono di mia proprietà e posso dimostrarlo. Non hai alcun diritto. Ti ho offerto un accordo e l'hai ignorato.",
+            "ja": "分かってねえみたいだな。Nebulonもコンセプトも全部俺のもんだ、証明もできる。お前に権利はない。取引を持ちかけたのに、お前はスルーした。",
+            "ko": "넌 감이 안 오나 보다. Nebulon도 그 콘셉트도 전부 내 재산이고, 증명할 수 있어. 넌 권리 없어. 합의 제안했는데 네가 무시했잖아.",
+            "pl": "Chyba do ciebie nie dociera. Nebulon i cały koncept to moja własność i mogę to udowodnić. Nie masz do tego prawa. Zaproponowałem ci układ, a ty go olałeś.",
+            "pt-BR": "Acho que você não tá entendendo. O Nebulon e todo o conceito são meus, e posso provar. Você não tem direito nenhum. Te ofereci um acordo e você ignorou.",
+            "ru": "Ты, похоже, не догоняешь. Nebulon и весь концепт — моя собственность, и я могу это доказать. У тебя на это нет прав. Я предложил тебе договор, а ты его проигнорил.",
+            "uk": "Ти, схоже, не доганяєш. Nebulon і весь концепт — моя власність, і я можу це довести. У тебе на це немає прав. Я запропонував тобі домовленість, а ти її проігнорував.",
+            "vi": "Hình như mày chưa hiểu. Nebulon và cả ý tưởng đó là tài sản của tao, tao chứng minh được. Mày không có quyền gì. Tao đề nghị thỏa thuận mà mày lờ đi."
+          }
+        },
+        {
+          "speaker_id": "kosmo",
+          "text": "Nevěřím vlastním očím.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich trau meinen Augen nicht.",
+            "en": "I can't believe my eyes.",
+            "fr": "J'en crois pas mes yeux.",
+            "it": "Non credo ai miei occhi.",
+            "ja": "自分の目が信じられねえ。",
+            "ko": "내 눈을 못 믿겠다.",
+            "pl": "Nie wierzę własnym oczom.",
+            "pt-BR": "Não acredito no que tô vendo.",
+            "ru": "Глазам своим не верю.",
+            "uk": "Очам своїм не вірю.",
+            "vi": "Tao không tin nổi vào mắt mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "cold expression",
+        "wind in his hair"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Chováš se jak hovado. Nevěřím svým očima.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du benimmst dich wie ein Arschloch. Ich trau meinen Augen nicht.",
+            "en": "You're acting like a jerk. I can't believe my eyes.",
+            "fr": "Tu te comportes comme un connard. J'en crois pas mes yeux.",
+            "it": "Ti comporti da stronzo. Non credo ai miei occhi.",
+            "ja": "お前、クソ野郎みたいな真似しやがって。こっちこそ目を疑うわ。",
+            "ko": "너 완전 개자식처럼 구네. 내가 내 눈을 못 믿겠다.",
+            "pl": "Zachowujesz się jak bydlak. Nie wierzę własnym oczom.",
+            "pt-BR": "Você tá agindo feito um babaca. Não acredito no que tô vendo.",
+            "ru": "Ведёшь себя как скотина. Глазам своим не верю.",
+            "uk": "Поводишся як скотина. Очам своїм не вірю.",
+            "vi": "Mày cư xử như thằng khốn. Tao không tin nổi vào mắt mình."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_podzim",
+      "characters": [],
+      "visual_tags": [
+        "laptop on a zinc table",
+        "file being sent",
+        "no readable text",
+        "leaves",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_sklep_3",
+      "characters": [],
+      "visual_tags": [
+        "violet neon flash",
+        "cellar vault",
+        "scattered cards",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "calm",
+        "firm"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Teď už s tebou bude mluvit jen moje superinteligence, pokud nezměníš přístup a tón.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ab jetzt redet nur noch meine Superintelligenz mit dir, solange du deine Haltung und deinen Ton nicht änderst.",
+            "en": "From now on only my superintelligence talks to you, unless you change your attitude and tone.",
+            "fr": "Désormais, seule ma superintelligence te parlera, à moins que tu changes d'attitude et de ton.",
+            "it": "D'ora in poi con te parlerà solo la mia superintelligenza, a meno che non cambi atteggiamento e tono.",
+            "ja": "これからはお前と話すのは俺のスーパーインテリジェンスだけだ。態度と口調を変えない限りな。",
+            "ko": "이제부터 너랑은 내 초지능만 얘기할 거야. 태도랑 말투 안 바꾸면.",
+            "pl": "Od teraz gadać z tobą będzie tylko moja superinteligencja, chyba że zmienisz podejście i ton.",
+            "pt-BR": "De agora em diante, só a minha superinteligência fala com você, a não ser que mude a atitude e o tom.",
+            "ru": "Теперь с тобой будет говорить только мой суперинтеллект, если не сменишь подход и тон.",
+            "uk": "Тепер із тобою говоритиме лише мій суперінтелект, якщо не зміниш підхід і тон.",
+            "vi": "Từ giờ chỉ có siêu trí tuệ của tao nói chuyện với mày, trừ khi mày đổi thái độ và giọng điệu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "reading a monitor",
+        "hollow voice"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Tři a půl kilobajtu. Třicet pět set bajtů.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Dreieinhalb Kilobyte. Fünfunddreißighundert Byte.",
+            "en": "Three and a half kilobytes. Thirty-five hundred bytes.",
+            "fr": "Trois kilo-octets et demi. Trois mille cinq cents octets.",
+            "it": "Tre kilobyte e mezzo. Tremilacinquecento byte.",
+            "ja": "3.5キロバイト。3500バイト。",
+            "ko": "3.5킬로바이트. 3500바이트.",
+            "pl": "Trzy i pół kilobajta. Trzy tysiące pięćset bajtów.",
+            "pt-BR": "Três kilobytes e meio. Três mil e quinhentos bytes.",
+            "ru": "Три с половиной килобайта. Три тысячи пятьсот байт.",
+            "uk": "Три з половиною кілобайти. Три тисячі п'ятсот байтів.",
+            "vi": "Ba kilobyte rưỡi. Ba nghìn năm trăm byte."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "standing up",
+        "staring at a monitor",
+        "disbelief"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To je celé moje dědictví? Třicet pět set bajtů?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist mein ganzes Vermächtnis? Fünfunddreißighundert Byte?",
+            "en": "That's my whole legacy? Thirty-five hundred bytes?",
+            "fr": "C'est tout mon héritage ? Trois mille cinq cents octets ?",
+            "it": "Questa è tutta la mia eredità? Tremilacinquecento byte?",
+            "ja": "これが俺の遺産の全部か？3500バイト？",
+            "ko": "이게 내 유산 전부야? 3500바이트?",
+            "pl": "To całe moje dziedzictwo? Trzy tysiące pięćset bajtów?",
+            "pt-BR": "Esse é todo o meu legado? Três mil e quinhentos bytes?",
+            "ru": "Это всё моё наследие? Три тысячи пятьсот байт?",
+            "uk": "Це вся моя спадщина? Три тисячі п'ятсот байтів?",
+            "vi": "Đó là toàn bộ di sản của tao à? Ba nghìn năm trăm byte?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "typing furiously",
+        "shaking with anger"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Podívej. Tohle je to, co po mně zůstane, a ty to nechceš respektovat. Bereš si to silou. Mezi námi je konec. Navždy. Okrádáš mě a ani se neschováváš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Schau. Das ist das, was von mir bleibt, und du willst das nicht respektieren. Du nimmst es dir mit Gewalt. Zwischen uns ist Schluss. Für immer. Du beklaust mich und versteckst dich nicht mal.",
+            "en": "Look. This is what's left of me, and you won't respect it. You're taking it by force. We're done. Forever. You're robbing me and not even hiding it.",
+            "fr": "Regarde. C'est ce qui restera de moi, et tu veux pas le respecter. Tu le prends de force. Entre nous, c'est fini. Pour toujours. Tu me voles et tu te caches même pas.",
+            "it": "Guarda. Questo è ciò che resterà di me, e tu non vuoi rispettarlo. Te lo prendi con la forza. Tra noi è finita. Per sempre. Mi derubi e nemmeno ti nascondi.",
+            "ja": "見ろよ。これが俺の残すものなのに、お前は尊重しようとしない。力ずくで奪ってる。俺たちは終わりだ。永遠にな。俺から盗んでて、隠そうともしねえ。",
+            "ko": "봐. 이게 내가 남길 건데, 넌 존중할 생각이 없지. 억지로 빼앗고 있어. 우린 끝이야. 영원히. 넌 날 털면서 숨기지도 않아.",
+            "pl": "Patrz. To jest to, co po mnie zostanie, a ty nie chcesz tego uszanować. Bierzesz to siłą. Między nami koniec. Na zawsze. Okradasz mnie i nawet się nie kryjesz.",
+            "pt-BR": "Olha. Isso é o que vai ficar de mim, e você não quer respeitar. Tá tomando na marra. Entre nós acabou. Pra sempre. Você tá me roubando e nem se esconde.",
+            "ru": "Смотри. Это то, что после меня останется, а ты не хочешь это уважать. Берёшь силой. Между нами всё. Навсегда. Ты меня грабишь и даже не прячешься.",
+            "uk": "Дивись. Це те, що після мене залишиться, а ти не хочеш це поважати. Береш силою. Між нами все. Назавжди. Ти мене грабуєш і навіть не ховаєшся.",
+            "vi": "Nhìn đi. Đây là thứ còn lại sau tao, mà mày không chịu tôn trọng. Mày cướp bằng vũ lực. Giữa mình hết rồi. Mãi mãi. Mày ăn cướp của tao mà chẳng thèm giấu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "alone at a zinc table",
+        "empty garden",
+        "no children"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "cold",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi peníze. Nesplnil jsi podmínky mojí půjčky. Dlužíš mi server, na kterém jsem pracoval stovky hodin.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir Geld. Du hast die Bedingungen meines Darlehens nicht erfüllt. Du schuldest mir den Server, an dem ich Hunderte Stunden gearbeitet habe.",
+            "en": "You owe me money. You didn't meet the terms of my loan. You owe me the server I put hundreds of hours into.",
+            "fr": "Tu me dois de l'argent. T'as pas respecté les conditions de mon prêt. Tu me dois le serveur sur lequel j'ai bossé des centaines d'heures.",
+            "it": "Mi devi dei soldi. Non hai rispettato le condizioni del mio prestito. Mi devi il server su cui ho lavorato centinaia di ore.",
+            "ja": "お前は俺に金を借りてる。貸した時の条件も守らなかった。俺が何百時間もかけたサーバーの借りもある。",
+            "ko": "너 나한테 돈 빚졌어. 내 대출 조건도 안 지켰고. 내가 수백 시간 작업한 서버도 빚졌지.",
+            "pl": "Wisisz mi kasę. Nie spełniłeś warunków mojej pożyczki. Wisisz mi serwer, nad którym przesiedziałem setki godzin.",
+            "pt-BR": "Você me deve dinheiro. Não cumpriu as condições do meu empréstimo. Me deve o servidor em que trabalhei centenas de horas.",
+            "ru": "Ты мне должен деньги. Ты не выполнил условия моего займа. Ты мне должен сервер, над которым я работал сотни часов.",
+            "uk": "Ти мені винен гроші. Ти не виконав умов моєї позики. Ти мені винен сервер, над яким я працював сотні годин.",
+            "vi": "Mày nợ tao tiền. Mày không giữ điều kiện khoản vay của tao. Mày nợ tao cái server tao làm cả trăm giờ."
+          }
+        },
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ty jsi z něj vykrad moje disky a navíc sis ho zpeněžil.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du hast meine Festplatten daraus geplündert und ihn obendrein zu Geld gemacht.",
+            "en": "You stripped my drives out of it and cashed it in on top.",
+            "fr": "T'en as pillé mes disques et en plus tu l'as revendu.",
+            "it": "Gli hai fregato i miei dischi e per giunta l'hai venduto.",
+            "ja": "お前はそこから俺のディスクを抜き取って、しかも売っ払った。",
+            "ko": "거기서 내 디스크를 빼가고 게다가 팔아먹었지.",
+            "pl": "Wybebeszyłeś z niego moje dyski i jeszcze go spieniężyłeś.",
+            "pt-BR": "Você depenou meus discos dele e ainda vendeu.",
+            "ru": "Ты выпотрошил из него мои диски и вдобавок его продал.",
+            "uk": "Ти випатрав із нього мої диски й до того ж його продав.",
+            "vi": "Mày rút trộm ổ cứng của tao ra rồi còn bán nó lấy tiền."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "cold",
+        "matter-of-fact"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Dlužíš mi poděkování za tvojí webovou prezentaci, která u mě pořád běží. Dlužíš mi omluvu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du schuldest mir Dank für deine Webpräsenz, die immer noch bei mir läuft. Du schuldest mir eine Entschuldigung.",
+            "en": "You owe me thanks for your website that's still running on my end. You owe me an apology.",
+            "fr": "Tu me dois un merci pour ton site web qui tourne toujours chez moi. Tu me dois des excuses.",
+            "it": "Mi devi un grazie per il tuo sito che gira ancora da me. Mi devi delle scuse.",
+            "ja": "まだ俺のとこで動いてるお前のウェブサイトの礼も言ってもらってない。謝罪もな。",
+            "ko": "아직 내 쪽에서 돌아가는 네 웹사이트에 대해 고맙단 말도 빚졌어. 사과도 빚졌고.",
+            "pl": "Wisisz mi podziękowanie za twoją stronę, która ciągle chodzi u mnie. Wisisz mi przeprosiny.",
+            "pt-BR": "Me deve um obrigado pelo seu site, que ainda roda no meu servidor. Me deve um pedido de desculpas.",
+            "ru": "Ты мне должен спасибо за свой сайт, который до сих пор крутится у меня. Ты мне должен извинение.",
+            "uk": "Ти мені винен подяку за свій сайт, який досі крутиться в мене. Ти мені винен вибачення.",
+            "vi": "Mày nợ tao một lời cảm ơn vì cái website của mày vẫn chạy bên tao. Mày nợ tao một lời xin lỗi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_podzim",
+      "characters": [],
+      "visual_tags": [
+        "leaves falling on a laptop keyboard",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "firm",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Začněme penězi. Do Vánoc chci vrátit první část. V březnu další. V srpnu zbytek.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Fangen wir mit dem Geld an. Bis Weihnachten will ich den ersten Teil zurück. Im März den nächsten. Im August den Rest.",
+            "en": "Let's start with the money. I want the first part back by Christmas. The next in March. The rest in August.",
+            "fr": "Commençons par l'argent. Je veux la première partie avant Noël. La suivante en mars. Le reste en août.",
+            "it": "Cominciamo dai soldi. Entro Natale voglio indietro la prima parte. A marzo la seconda. Ad agosto il resto.",
+            "ja": "まず金からだ。クリスマスまでに最初の分を返せ。3月に次。8月に残り。",
+            "ko": "돈부터 시작하자. 크리스마스까지 첫 부분 갚아. 3월에 다음. 8월에 나머지.",
+            "pl": "Zacznijmy od kasy. Do świąt chcę pierwszą część. W marcu kolejną. W sierpniu resztę.",
+            "pt-BR": "Vamos começar pelo dinheiro. Até o Natal quero a primeira parte. Em março, a próxima. Em agosto, o resto.",
+            "ru": "Начнём с денег. До Рождества хочу первую часть. В марте следующую. В августе остальное.",
+            "uk": "Почнімо з грошей. До Різдва хочу першу частину. У березні наступну. У серпні решту.",
+            "vi": "Bắt đầu từ tiền. Trước Giáng sinh tao muốn lấy lại phần đầu. Tháng Ba phần tiếp. Tháng Tám phần còn lại."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_potager_podzim",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "final",
+        "cold expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Ze stránek NebulonTactics mažu všechny odkazy na tebe a tvůj projekt. Projekt přejmenuju na Archion. Nemáš na něm žádný podíl, jenom hejty.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Von der NebulonTactics-Seite lösche ich alle Links zu dir und deinem Projekt. Das Projekt benenne ich in Archion um. Du hast keinen Anteil daran, nur Hate.",
+            "en": "I'm deleting every link to you and your project from the NebulonTactics site. I'm renaming the project Archion. You've got no stake in it, just hate.",
+            "fr": "Je supprime du site NebulonTactics tous les liens vers toi et ton projet. Je renomme le projet Archion. T'y as aucune part, que de la haine.",
+            "it": "Dal sito NebulonTactics cancello tutti i link a te e al tuo progetto. Il progetto lo rinomino Archion. Non ne hai nessuna quota, solo odio.",
+            "ja": "NebulonTacticsのサイトからお前とお前のプロジェクトへのリンクは全部消す。プロジェクトはArchionに改名する。お前の取り分はゼロ、あるのはヘイトだけだ。",
+            "ko": "NebulonTactics 사이트에서 너랑 네 프로젝트 링크 전부 지운다. 프로젝트 이름은 Archion으로 바꿀 거야. 넌 지분 없어, 악플뿐이지.",
+            "pl": "Ze strony NebulonTactics usuwam wszystkie linki do ciebie i twojego projektu. Projekt zmieniam na Archion. Nie masz w nim żadnego udziału, tylko hejty.",
+            "pt-BR": "Do site NebulonTactics vou apagar todos os links pra você e pro seu projeto. Vou renomear o projeto pra Archion. Você não tem parte nenhuma, só ódio.",
+            "ru": "С сайта NebulonTactics удаляю все ссылки на тебя и твой проект. Проект переименую в Archion. У тебя в нём нет доли, только хейт.",
+            "uk": "Із сайту NebulonTactics видаляю всі посилання на тебе й твій проєкт. Проєкт перейменую на Archion. У тебе в ньому немає частки, тільки хейт.",
+            "vi": "Trên trang NebulonTactics tao xóa hết link tới mày và dự án của mày. Dự án tao đổi tên thành Archion. Mày chẳng có phần nào, chỉ có chửi bới."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_sklep_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sweeping a rack over",
+        "falling graphics cards"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "graphics cards falling through the air like leaves"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_potager_podzim",
+      "characters": [],
+      "visual_tags": [
+        "leaves falling over the garden",
+        "empty zinc table",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "leaves falling in the same rhythm as the cards"
+    }
+  ]
+}

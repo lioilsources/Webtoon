@@ -1,0 +1,94 @@
+{
+  "id": "w_gb_archion_chatgpt_g3",
+  "title": "Archion: Zahrada uprostřed hluku — 2020–2021: Home office",
+  "synopsis": "Sedm let života v režimu přerušení: dítě, výpovědi, covid, dvojčata, rekonstrukce za provozu. Ol1n mezitím pomáhá kamarádovi Kosmovi stavět jeho svět, až konečně najde kus ticha na zahradě a spustí vlastní build.",
+  "tone": "civilní, unavený, tiše hořký, lidský",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_charcoal",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Nikdy dva dospělí v jednom obraze: Ol1n, partnerka a Kosmo mají každý svůj panel.",
+      "Děti jen oblečené, miminka v dečkách a postýlkách, nikdo jim neubližuje.",
+      "Obrazovky a telefony bez čitelného textu; hlasy z reproduktoru a zprávy jsou jen v titulcích a bublinách."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Ol1n nikdy nedokončí větu, dokud nenajde zahradu; hra končí spuštěním buildu Archionu."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_homeoffice",
+      "l_kuchyne",
+      "l_postylky"
+    ]
+  },
+  "characters": [
+    {
+      "id": "ol1n_doma",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a gaunt Czech man aged 32, with overgrown blond hair, an unkempt full blond beard, thin-framed glasses and hollow blue-grey eyes, worn out by years at home",
+      "base": "adult, young adult male, overgrown messy blond hair, unkempt full blond beard, blue-grey eyes, glasses, gaunt face, hollow eyes, dark circles under the eyes, youthful face under the exhaustion, looks early thirties",
+      "outfits": {
+        "default": "stained worn navy t-shirt, baggy grey sweatpants, headset around the neck"
+      },
+      "photo": "a gaunt Czech man aged 32, with overgrown blond hair, an unkempt full blond beard, thin-framed glasses and hollow blue-grey eyes, worn out by years at home",
+      "tag_prompt": "adult, young adult male, overgrown messy blond hair, unkempt full blond beard, blue-grey eyes, glasses, gaunt face, hollow eyes, dark circles under the eyes, youthful face under the exhaustion, looks early thirties, stained worn navy t-shirt, baggy grey sweatpants, headset around the neck",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "partnerka",
+      "name": "Partnerka",
+      "role": "playable",
+      "gender": "f",
+      "count_tag": "1girl",
+      "human": true,
+      "description": "a tired Czech woman aged 33 with brown hair in a loose bun and a serious face",
+      "base": "adult, mature female, brown hair, loose messy bun, serious face, tired eyes",
+      "outfits": {
+        "default": "oversized beige cardigan, long sleeves, dark trousers"
+      },
+      "photo": "a tired Czech woman aged 33 with brown hair in a loose bun and a serious face",
+      "tag_prompt": "adult, mature female, brown hair, loose messy bun, serious face, tired eyes, oversized beige cardigan, long sleeves, dark trousers",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_homeoffice",
+      "name": "Home office – 2020",
+      "description": "Stůl s notebookem, sluchátky, hrnkem a dětskými hračkami.",
+      "tag_prompt": "indoors, kitchen table turned home office, laptop, headset, coffee mug, scattered children's toys, toy blocks on the floor, grey charcoal tones, cold muted light",
+      "mood": ""
+    },
+    {
+      "id": "l_kuchyne",
+      "name": "Kuchyň",
+      "description": "Kuchyň za dveřmi, nádobí, prádlo.",
+      "tag_prompt": "indoors, small busy kitchen, dishes in the sink, laundry basket, grey charcoal tones, cold muted light",
+      "mood": ""
+    },
+    {
+      "id": "l_postylky",
+      "name": "Dvě postýlky – 2021",
+      "description": "Pokoj se dvěma dětskými postýlkami a pracovním notebookem.",
+      "tag_prompt": "indoors, small bedroom with two baby cribs side by side, baby bottles, work laptop blinking on a table, night lamp, grey charcoal tones, cold muted light",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_chatgpt",
+    "node": "g3"
+  }
+}

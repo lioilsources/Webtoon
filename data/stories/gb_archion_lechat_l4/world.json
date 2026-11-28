@@ -1,0 +1,86 @@
+{
+  "id": "w_gb_archion_lechat_l4",
+  "title": "Archion: Dva světy — Podzim: Tři a půl kilobajtu",
+  "synopsis": "Pět ročních dob, jedna obálka s penězi. Kosmo deset let sní o hře Nebulon ve sklepě pod městem, Ol1n píše kód na zahradě plné dětí. Kdysi jedno přikývnutí, „dobře, v titulcích“, a z něj celý spor.",
+  "tone": "hořký, ironický, něžný",
+  "audience": "adult",
+  "language": "cs",
+  "style_id": "archion_ligne",
+  "profile": "archion",
+  "bible": {
+    "rules": [
+      "SFW. Žádná romantika. Kosmo a Ol1n nikdy spolu v jednom obraze, ani ve vzpomínce.",
+      "Děti jen oblečené, nikdo jim v obraze neubližuje.",
+      "Obrazovky bez čitelného textu; nápisy (COMING SOON, štítek krabice) jsou jen v titulcích."
+    ],
+    "factions": []
+  },
+  "canon": {
+    "nodes": [],
+    "constraints": [
+      "Nikdo nic nevydal spolu; na hranici obou světů zůstane prázdná roztržená obálka."
+    ]
+  },
+  "permissions": {
+    "allowed_locations": [
+      "l_potager_podzim",
+      "l_sklep_3"
+    ]
+  },
+  "characters": [
+    {
+      "id": "kosmo",
+      "name": "Kosmo",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a Czech loner aged 34, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "base": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "worn chunky wool sweater"
+      },
+      "photo": "a Czech loner aged 34, with messy tousled blond hair sticking out, stubble, unkempt, who does not care about his looks",
+      "tag_prompt": "adult, young adult male, messy tousled blond hair sticking out, stubble, unkempt, youthful face, looks mid thirties, smooth skin, no wrinkles, worn chunky wool sweater",
+      "identity_level": "prompt",
+      "reference_images": []
+    },
+    {
+      "id": "ol1n_podzim",
+      "name": "Ol1n",
+      "role": "playable",
+      "gender": "m",
+      "count_tag": "1boy",
+      "human": true,
+      "description": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes, in an autumn jacket",
+      "base": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles",
+      "outfits": {
+        "default": "dark green zip-up field jacket over a grey sweater, jeans"
+      },
+      "photo": "a calm Czech man aged 36, with short blond hair, a full blond beard, thin-framed glasses and quiet blue-grey eyes",
+      "tag_prompt": "adult, young adult male, short blond hair, full blond beard, blue-grey eyes, glasses, youthful face, looks mid thirties, smooth skin, no wrinkles, dark green zip-up field jacket over a grey sweater, jeans",
+      "identity_level": "prompt",
+      "reference_images": []
+    }
+  ],
+  "locations": [
+    {
+      "id": "l_sklep_3",
+      "name": "Sklep – podzim",
+      "description": "Kosmo sedí na zemi mezi kartami.",
+      "tag_prompt": "indoors, vaulted stone cellar, tarot cards, an Egyptian papyrus and an ankh on the wall, a small alien figurine, archaeology books, a pyramid poster, graphics cards scattered on the stone floor, keyboard on the floor, violet neon flicker, cold light",
+      "mood": ""
+    },
+    {
+      "id": "l_potager_podzim",
+      "name": "Zahrada – podzim",
+      "description": "Barevné listí, vítr.",
+      "tag_prompt": "outdoors, french potager in autumn, colourful falling leaves, wind, small zinc garden table with a laptop, pumpkins",
+      "mood": ""
+    }
+  ],
+  "gamebook": {
+    "id": "archion_lechat",
+    "node": "l4"
+  }
+}

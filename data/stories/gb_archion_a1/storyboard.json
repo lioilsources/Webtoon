@@ -1,0 +1,498 @@
+{
+  "title": "Jaro: Budu ti chybět",
+  "title_i18n": {
+    "de": "Frühling: Du wirst mich vermissen",
+    "en": "Spring: You'll Miss Me",
+    "fr": "Printemps : Je vais te manquer",
+    "it": "Primavera: Ti mancherò",
+    "ja": "春:寂しくなるぞ",
+    "ko": "봄: 나 보고 싶을걸",
+    "pl": "Wiosna: Będziesz za mną tęsknić",
+    "pt-BR": "Primavera: Você vai sentir minha falta",
+    "ru": "Весна: Ты будешь по мне скучать",
+    "uk": "Весна: Ти за мною сумуватимеш",
+    "vi": "Mùa xuân: Mày sẽ nhớ tao"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_bunkr_1",
+      "characters": [],
+      "visual_tags": [
+        "flickering neon tubes",
+        "stacks of graphics cards",
+        "cooling fans",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "neon tubes flickering, cooling fans spinning, monitor light pulsing"
+    },
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "blossoming fruit trees",
+        "bees",
+        "sunny spring garden",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blossom petals drifting, bees buzzing between the flowers, leaves swaying"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a desk",
+        "typing furiously on a keyboard",
+        "hunched over",
+        "face lit by monitor glow"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "his fingers hammering the keyboard, monitor light flickering on his face"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a wooden garden table",
+        "laptop on his lap",
+        "sunlight"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "crouching in the grass",
+        "ladybug",
+        "leaf",
+        "looking down",
+        "pointing",
+        "laughing"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dvojcata_5"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "ladybug",
+        "pointing",
+        "excited",
+        "looking up"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojcata_5",
+          "text": "Tati! Podívej, beruška! Na listu!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa! Guck mal, ein Marienkäfer! Auf dem Blatt!",
+            "en": "Daddy! Look, a ladybug! On a leaf!",
+            "fr": "Papa ! Regarde, une coccinelle ! Sur la feuille !",
+            "it": "Papà! Guarda, una coccinella! Su una foglia!",
+            "ja": "パパ!見て、テントウムシ!葉っぱの上!",
+            "ko": "아빠! 봐봐, 무당벌레! 나뭇잎 위에!",
+            "pl": "Tato! Patrz, biedronka! Na liściu!",
+            "pt-BR": "Papai! Olha, uma joaninha! Na folha!",
+            "ru": "Папа! Смотри, божья коровка! На листике!",
+            "uk": "Тату! Дивись, сонечко! На листочку!",
+            "vi": "Bố ơi! Nhìn kìa, con bọ rùa! Trên chiếc lá!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "looking up from the laptop",
+        "warm smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Hned jsem u vás, holky, vydržte vteřinu.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Bin gleich bei euch, Mädels, wartet eine Sekunde.",
+            "en": "Be right there, girls, hang on a sec.",
+            "fr": "J'arrive, les filles, une seconde.",
+            "it": "Arrivo subito, ragazze, aspettate un secondo.",
+            "ja": "すぐ行くから、ちょっと待ってろ。",
+            "ko": "금방 갈게, 얘들아, 잠깐만 기다려.",
+            "pl": "Zaraz do was przyjdę, dziewczyny, poczekajcie sekundkę.",
+            "pt-BR": "Já vou, meninas, só um segundinho.",
+            "ru": "Сейчас подойду, девчонки, секундочку.",
+            "uk": "Зараз прийду, дівчата, зачекайте секундочку.",
+            "vi": "Bố ra ngay đây, các con, đợi bố một giây."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [],
+      "visual_tags": [
+        "hands on a laptop keyboard",
+        "glowing chat window on the screen",
+        "no readable text",
+        "garden table"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "calm expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Blb seš ty. Dál to „rozebírat“ nemusíš. Nestojím o to.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du bist der Idiot. Du musst das nicht weiter „auseinandernehmen“. Kein Bedarf.",
+            "en": "You're the idiot. No need to keep “picking it apart.” I'm not interested.",
+            "fr": "Le con, c'est toi. Pas besoin de continuer à « décortiquer ». Ça m'intéresse pas.",
+            "it": "Il cretino sei tu. Non serve continuare a «sviscerarla». Non mi interessa.",
+            "ja": "バカはお前だよ。これ以上「分析」しなくていい。興味ねえから。",
+            "ko": "멍청한 건 너야. 더 이상 ‘분석’할 필요 없어. 관심 없으니까.",
+            "pl": "To ty jesteś głupi. Nie musisz tego dalej „rozbierać na części”. Nie zależy mi.",
+            "pt-BR": "Idiota é você. Não precisa ficar “dissecando” isso. Não tô interessado.",
+            "ru": "Сам ты дебил. Дальше это «разбирать» не надо. Мне это не нужно.",
+            "uk": "Сам ти дурень. Далі це «розбирати» не треба. Мені це не потрібно.",
+            "vi": "Mày mới là thằng ngu. Khỏi cần “mổ xẻ” thêm nữa. Tao không quan tâm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "standing up from the chair",
+        "slamming fist on the desk",
+        "furious"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "he slams the desk, cans and cables shaking, neon flicker"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "standing",
+        "from front",
+        "shouting at the monitor",
+        "furious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "On vůbec nechápe, o co jde! Vleze mi do práce, něco tam přilepí a ještě si připadá chytrej!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Er kapiert überhaupt nicht, worum's geht! Platzt in meine Arbeit, klebt irgendwas dran und hält sich noch für schlau!",
+            "en": "He doesn't get it at all! Barges into my work, slaps something on and thinks he's clever!",
+            "fr": "Il pige rien du tout ! Il débarque dans mon boulot, il y colle un truc et en plus il se croit malin !",
+            "it": "Non capisce proprio niente! Si infila nel mio lavoro, ci appiccica qualcosa e si sente pure furbo!",
+            "ja": "あいつ、全然わかってねえ!人の作業に入ってきて、何か貼り付けて、それで賢いつもりかよ!",
+            "ko": "이 자식은 뭐가 문제인지 전혀 몰라! 내 작업에 끼어들어서 뭘 갖다 붙이고는 자기가 똑똑한 줄 알아!",
+            "pl": "On w ogóle nie łapie, o co chodzi! Włazi mi w robotę, coś tam dokleja i jeszcze myśli, że jest mądry!",
+            "pt-BR": "Ele não entende nada! Se mete no meu trabalho, cola alguma coisa ali e ainda se acha esperto!",
+            "ru": "Он вообще не понимает, в чём дело! Лезет в мою работу, что-то туда прилепит и ещё считает себя умным!",
+            "uk": "Він узагалі не розуміє, в чому річ! Лізе в мою роботу, щось туди приліпить і ще вважає себе розумним!",
+            "vi": "Nó chẳng hiểu gì cả! Chui vào công việc của tao, dán thêm cái gì đó rồi còn tưởng mình giỏi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing fast",
+        "smug bitter smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "O čem to mluvíš? Mimochodem, svoje věci ti už ukazovat nebudu. Dobrý video chce dobrý záběry, a ty je ode mě nedostaneš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wovon redest du? Übrigens zeig ich dir meine Sachen nicht mehr. Ein gutes Video braucht gute Aufnahmen, und die kriegst du von mir nicht.",
+            "en": "What are you talking about? By the way, I'm not showing you my stuff anymore. A good video needs good footage, and you won't get it from me.",
+            "fr": "De quoi tu parles ? Au fait, je te montrerai plus mes trucs. Une bonne vidéo, il lui faut de bonnes images, et tu les auras pas de moi.",
+            "it": "Di che parli? Comunque non ti faccio più vedere le mie cose. Un bel video vuole belle riprese, e da me non le avrai.",
+            "ja": "何言ってんだ?ちなみに、もう俺の作ったもんは見せねえからな。いい動画にはいい素材がいる。それを俺から手に入れることはないぞ。",
+            "ko": "무슨 소리야? 그건 그렇고, 이제 내 거 너한테 안 보여 줄 거야. 좋은 영상엔 좋은 장면이 필요한데, 그건 나한테서 못 얻을 거다.",
+            "pl": "O czym ty mówisz? A tak w ogóle, nie będę ci już pokazywał swoich rzeczy. Dobry film potrzebuje dobrych ujęć, a ode mnie ich nie dostaniesz.",
+            "pt-BR": "Do que você tá falando? Aliás, não vou mais te mostrar minhas coisas. Vídeo bom precisa de imagem boa, e de mim você não vai ter.",
+            "ru": "О чём ты вообще? Кстати, свои вещи я тебе больше показывать не буду. Хорошему видео нужны хорошие кадры, а от меня ты их не получишь.",
+            "uk": "Про що ти взагалі? До речі, свої штуки я тобі більше не показуватиму. Хорошому відео потрібні хороші кадри, а від мене ти їх не отримаєш.",
+            "vi": "Mày nói cái gì vậy? Mà này, tao sẽ không cho mày xem đồ của tao nữa. Video hay cần cảnh quay tốt, và mày sẽ không có được từ tao đâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "dcera_9"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "standing in the garden",
+        "hands on hips",
+        "pouting",
+        "looking at another"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9",
+          "text": "Tati, ty zas jenom ťukáš do počítače. Kdy půjdeme stavět tu základnu z větví?",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, du tippst schon wieder nur am Computer rum. Wann bauen wir die Basis aus Ästen?",
+            "en": "Daddy, you're just tapping at the computer again. When are we building the stick fort?",
+            "fr": "Papa, tu tapotes encore sur l'ordi. Quand est-ce qu'on construit la base en branches ?",
+            "it": "Papà, stai di nuovo solo a picchiettare sul computer. Quando costruiamo la base coi rami?",
+            "ja": "パパ、またパソコンカタカタしてるだけじゃん。いつ枝でひみつきちつくるの?",
+            "ko": "아빠, 또 컴퓨터만 톡톡 두드리고 있어. 나뭇가지 기지는 언제 만들어?",
+            "pl": "Tato, ty znowu tylko stukasz w komputer. Kiedy zbudujemy bazę z gałęzi?",
+            "pt-BR": "Pai, você tá só batucando no computador de novo. Quando a gente vai construir a base de galhos?",
+            "ru": "Папа, ты опять только стучишь по компьютеру. Когда мы будем строить базу из веток?",
+            "uk": "Тату, ти знову тільки стукаєш по комп'ютеру. Коли ми будуватимемо базу з гілок?",
+            "vi": "Bố ơi, bố lại chỉ gõ máy tính thôi. Bao giờ mình xây căn cứ bằng cành cây ạ?"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "sighing",
+        "eyes on the laptop screen",
+        "sunlight on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_1",
+      "characters": [
+        {
+          "id": "ol1n_jaro"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing on the laptop",
+        "slight smile"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_jaro",
+          "text": "Budu ti chybět ;)",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du wirst mich vermissen ;)",
+            "en": "You'll miss me ;)",
+            "fr": "Je vais te manquer ;)",
+            "it": "Ti mancherò ;)",
+            "ja": "寂しくなるぞ ;)",
+            "ko": "나 보고 싶을걸 ;)",
+            "pl": "Będziesz za mną tęsknić ;)",
+            "pt-BR": "Você vai sentir minha falta ;)",
+            "ru": "Будешь по мне скучать ;)",
+            "uk": "Сумуватимеш за мною ;)",
+            "vi": "Mày sẽ nhớ tao ;)"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "reading the monitor",
+        "clenched fists",
+        "blue monitor glow on his face"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "blue monitor glow on his face, jaw clenching, slow breath"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_bunkr_1",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "clenched fists",
+        "bitter expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Chybět? Bere mi deset let snění. Nebulon je to jediný, co mám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Vermissen? Er nimmt mir zehn Jahre Träume. Nebulon ist das Einzige, was ich hab.",
+            "en": "Miss him? He's taking ten years of my dreams. Nebulon is all I've got.",
+            "fr": "Manquer ? Il me prend dix ans de rêves. Nebulon, c'est tout ce que j'ai.",
+            "it": "Mancare? Mi porta via dieci anni di sogni. Nebulon è l'unica cosa che ho.",
+            "ja": "寂しい?あいつは俺の十年分の夢を奪ってくんだぞ。Nebulonは俺のすべてなんだ。",
+            "ko": "보고 싶다고? 쟤는 내 10년 꿈을 가져가는 거야. Nebulon은 내가 가진 전부라고.",
+            "pl": "Tęsknić? Zabiera mi dziesięć lat marzeń. Nebulon to jedyne, co mam.",
+            "pt-BR": "Sentir falta? Ele tá me tirando dez anos de sonho. Nebulon é a única coisa que eu tenho.",
+            "ru": "Скучать? Он забирает у меня десять лет мечты. Nebulon — это всё, что у меня есть.",
+            "uk": "Сумувати? Він забирає в мене десять років мрій. Nebulon — це все, що в мене є.",
+            "vi": "Nhớ á? Nó lấy mất mười năm mơ ước của tao. Nebulon là thứ duy nhất tao có."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_bunkr_1",
+      "characters": [],
+      "visual_tags": [
+        "lights going out",
+        "servers glowing in the dark",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "large",
+      "animate": true,
+      "motion": "the lights dying one by one, server LEDs blinking in the dark"
+    }
+  ]
+}

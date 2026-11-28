@@ -24,3 +24,20 @@ deploy/cloudflared/config.yml
 voice-data/
 secrets/
 deploy/voice-worker/worker.env
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+lib/**/secrets.dart
+# devconv:start
+!.env.example
+*.p8
+*.p12
+*.jks
+key.properties
+.claude/settings.local.json
+CLAUDE.local.md
+# devconv:end
+bin/
+*.test
+*.out

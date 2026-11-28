@@ -1,0 +1,964 @@
+{
+  "title": "Podzim: Nesdílný a Dluh",
+  "title_i18n": {
+    "de": "Herbst: Verschlossen und die Schuld",
+    "en": "Autumn: Closed Off and the Debt",
+    "fr": "Automne : Renfermé et la Dette",
+    "it": "Autunno: Chiuso e il debito",
+    "ja": "秋：閉ざされた心と借金",
+    "ko": "가을: 닫힌 마음 그리고 빚",
+    "pl": "Jesień: Zamknięty i Dług",
+    "pt-BR": "Outono: Fechado e a Dívida",
+    "ru": "Осень: Замкнутый и Долг",
+    "uk": "Осінь: Замкнутий і Борг",
+    "vi": "Mùa thu: Khép kín và Món nợ"
+  },
+  "panels": [
+    {
+      "shot": "establishing",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "rust red leaves falling",
+        "a big pile of raked leaves",
+        "leaves on a laptop",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "rust leaves falling onto the table and the laptop"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "sitting at a garden table",
+        "wool blanket over his shoulders",
+        "laptop",
+        "falling leaves"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_3",
+      "characters": [],
+      "visual_tags": [
+        "half of the neon tubes dark",
+        "shelves of graphics cards",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Obraz první: Nesdílný",
+          "kind": "narration",
+          "i18n": {
+            "de": "Erstes Bild: Verschlossen",
+            "en": "Scene One: Closed Off",
+            "fr": "Premier tableau : Renfermé",
+            "it": "Primo quadro: Chiuso",
+            "ja": "第一場：閉ざされた心",
+            "ko": "첫 번째 장면: 닫힌 마음",
+            "pl": "Obraz pierwszy: Zamknięty",
+            "pt-BR": "Primeiro quadro: Fechado",
+            "ru": "Картина первая: Замкнутый",
+            "uk": "Картина перша: Замкнутий",
+            "vi": "Cảnh một: Khép kín"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "typing",
+        "closed expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ať je jasno: o vývoji se s tebou už bavit nechci. Spolupráce nevyšla. Něco mě naštvalo a něco fakt bolelo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Damit das klar ist: Über die Entwicklung will ich mit dir nicht mehr reden. Die Zusammenarbeit hat nicht geklappt. Manches hat mich geärgert, manches hat echt wehgetan.",
+            "en": "Let's be clear: I don't want to talk dev with you anymore. The collaboration didn't work. Some things pissed me off and some really hurt.",
+            "fr": "Que ce soit clair : je veux plus parler dev avec toi. La collab a pas marché. Des trucs m'ont énervé, d'autres m'ont vraiment fait mal.",
+            "it": "Sia chiaro: di sviluppo con te non voglio più parlare. La collaborazione non ha funzionato. Qualcosa mi ha fatto incazzare e qualcosa mi ha fatto proprio male.",
+            "ja": "はっきり言っとく。開発の話はもうお前としたくない。協力はうまくいかなかった。ムカついたこともあるし、本気でこたえたこともある。",
+            "ko": "확실히 해 두자. 개발 얘기는 이제 너랑 안 해. 협업은 망했어. 열받은 것도 있고 진짜 아팠던 것도 있어.",
+            "pl": "Żeby było jasne: o developmencie nie chcę już z tobą gadać. Współpraca nie wyszła. Coś mnie wkurzyło, a coś naprawdę zabolało.",
+            "pt-BR": "Pra ficar claro: não quero mais falar de desenvolvimento com você. A parceria não deu certo. Umas coisas me irritaram e outras doeram de verdade.",
+            "ru": "Чтоб было ясно: о разработке я с тобой больше говорить не хочу. Сотрудничество не вышло. Что-то меня взбесило, а что-то реально задело.",
+            "uk": "Щоб було ясно: про розробку я з тобою більше говорити не хочу. Співпраця не вийшла. Щось мене розлютило, а щось реально зачепило.",
+            "vi": "Nói rõ luôn: tao không muốn bàn chuyện phát triển với mày nữa. Hợp tác không thành. Có chuyện làm tao bực, có chuyện làm tao đau thật."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "calm expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Já sdílím rád. Ale pochopil jsem, že ty to máš nastavené jinak.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich teile gern. Aber ich hab kapiert, dass du da anders tickst.",
+            "en": "I like sharing. But I've figured out you're wired differently.",
+            "fr": "Moi, j'aime partager. Mais j'ai compris que toi, t'es pas réglé pareil.",
+            "it": "Io condivido volentieri. Ma ho capito che tu sei fatto diversamente.",
+            "ja": "俺は分かち合うのが好きだ。でもお前は違うんだって、わかったよ。",
+            "ko": "난 나누는 거 좋아해. 근데 넌 다르게 생겨먹었다는 거 알았어.",
+            "pl": "Ja chętnie się dzielę. Ale zrozumiałem, że ty masz to ustawione inaczej.",
+            "pt-BR": "Eu gosto de compartilhar. Mas entendi que você funciona diferente.",
+            "ru": "Я люблю делиться. Но понял, что у тебя всё устроено иначе.",
+            "uk": "Я люблю ділитися. Але зрозумів, що в тебе все влаштовано інакше.",
+            "vi": "Tao thích chia sẻ. Nhưng tao hiểu ra mày được lập trình khác."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "cruel expression",
+        "typing hard"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Ty umíš jen jedno: vzít člověku práci, rozebrat ji a říct mu, ať ji smaže. Není divu, že tě nikde dlouho nedrží.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du kannst nur eins: jemandem die Arbeit wegnehmen, sie zerlegen und ihm sagen, er soll sie löschen. Kein Wunder, dass dich nirgends einer lange behält.",
+            "en": "You're good at one thing: taking someone's work, tearing it apart and telling them to delete it. No wonder nobody keeps you around for long.",
+            "fr": "Tu sais faire qu'une chose : prendre le boulot des autres, le démonter et leur dire de l'effacer. Pas étonnant qu'on te garde nulle part longtemps.",
+            "it": "Sai fare una cosa sola: prendere il lavoro di uno, smontarlo e dirgli di cancellarlo. Non c'è da stupirsi se nessuno ti tiene a lungo.",
+            "ja": "お前にできるのは一つだけだ。人の仕事を取って、バラして、消せって言う。どこにも長く置いてもらえないのも当然だ。",
+            "ko": "넌 할 줄 아는 게 하나뿐이야. 남의 작업 가져다 뜯어보고 지우라고 하는 거. 어디서도 오래 못 버티는 게 당연하지.",
+            "pl": "Umiesz tylko jedno: zabrać człowiekowi pracę, rozebrać ją i kazać mu ją skasować. Nic dziwnego, że nigdzie cię długo nie trzymają.",
+            "pt-BR": "Você só sabe fazer uma coisa: pegar o trabalho dos outros, desmontar e mandar apagar. Não admira que ninguém te aguente muito tempo.",
+            "ru": "Ты умеешь одно: забрать у человека работу, разобрать её и сказать удалить. Неудивительно, что тебя нигде долго не держат.",
+            "uk": "Ти вмієш одне: забрати в людини роботу, розібрати її і сказати видалити. Не дивно, що тебе ніде довго не тримають.",
+            "vi": "Mày chỉ giỏi mỗi một việc: lấy công sức người ta, mổ xẻ rồi bảo người ta xóa đi. Chẳng trách chẳng ở đâu giữ mày lâu."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "rust red leaf on a hand",
+        "frozen"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Blb seš ty. Dál to rozebírat nemusíš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Der Idiot bist du. Weiter zerlegen musst du das nicht.",
+            "en": "You're the idiot. No need to pick it apart any further.",
+            "fr": "Le con, c'est toi. Pas la peine de décortiquer plus.",
+            "it": "L'idiota sei tu. Non serve sviscerarlo oltre.",
+            "ja": "バカはお前だ。これ以上バラさなくていい。",
+            "ko": "멍청이는 너야. 더 뜯어볼 필요 없어.",
+            "pl": "To ty jesteś debil. Dalej nie musisz tego rozbierać.",
+            "pt-BR": "Idiota é você. Não precisa destrinchar mais.",
+            "ru": "Сам ты дебил. Дальше разбирать не надо.",
+            "uk": "Сам ти дурень. Далі розбирати не треба.",
+            "vi": "Mày mới là đồ ngu. Khỏi mổ xẻ thêm."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "flat expression",
+        "staring at a monitor"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Dobře.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gut.",
+            "en": "Fine.",
+            "fr": "D'accord.",
+            "it": "Va bene.",
+            "ja": "わかった。",
+            "ko": "그래.",
+            "pl": "Dobra.",
+            "pt-BR": "Beleza.",
+            "ru": "Ладно.",
+            "uk": "Гаразд.",
+            "vi": "Được."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "quiet",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Budeš mi chybět.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Du wirst mir fehlen.",
+            "en": "I'll miss you.",
+            "fr": "Tu vas me manquer.",
+            "it": "Mi mancherai.",
+            "ja": "寂しくなるよ。",
+            "ko": "보고 싶을 거야.",
+            "pl": "Będzie mi ciebie brakowało.",
+            "pt-BR": "Vou sentir tua falta.",
+            "ru": "Мне будет тебя не хватать.",
+            "uk": "Мені тебе бракуватиме.",
+            "vi": "Tao sẽ nhớ mày."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "a finger pressing the backspace key",
+        "leaves on the keyboard",
+        "no readable text",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "slight smile",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Budu ti chybět.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich werde dir fehlen.",
+            "en": "You'll miss me.",
+            "fr": "Je vais te manquer.",
+            "it": "Ti mancherò.",
+            "ja": "お前も寂しくなるさ。",
+            "ko": "너도 내가 보고 싶을걸.",
+            "pl": "Będzie ci mnie brakowało.",
+            "pt-BR": "Você vai sentir a minha falta.",
+            "ru": "Тебе будет меня не хватать.",
+            "uk": "Тобі мене бракуватиме.",
+            "vi": "Mày sẽ nhớ tao."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_kryt_3",
+      "characters": [],
+      "visual_tags": [
+        "shelter in dim teal light",
+        "an empty chair before a monitor",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "O tři dny později.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Drei Tage später.",
+            "en": "Three days later.",
+            "fr": "Trois jours plus tard.",
+            "it": "Tre giorni dopo.",
+            "ja": "三日後。",
+            "ko": "사흘 뒤.",
+            "pl": "Trzy dni później.",
+            "pt-BR": "Três dias depois.",
+            "ru": "Три дня спустя.",
+            "uk": "Через три дні.",
+            "vi": "Ba ngày sau."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "quiet",
+        "half smile",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "O hokeji si pokecat můžem. Zas tak zlý to není.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Über Eishockey können wir quatschen. So schlimm ist es nicht.",
+            "en": "We can still chat about hockey. It's not that bad.",
+            "fr": "On peut causer hockey. C'est pas si grave.",
+            "it": "Di hockey possiamo parlare. Non è così grave.",
+            "ja": "ホッケーの話ならしてもいい。そこまで悪くはない。",
+            "ko": "하키 얘기는 해도 돼. 그렇게까지 나쁜 건 아니야.",
+            "pl": "O hokeju możemy pogadać. Aż tak źle nie jest.",
+            "pt-BR": "De hóquei a gente pode falar. Não tá tão ruim assim.",
+            "ru": "О хоккее потрещать можно. Не так всё плохо.",
+            "uk": "Про хокей побалакати можна. Не все так погано.",
+            "vi": "Chuyện khúc côn cầu thì tán được. Cũng không tệ đến thế."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "wide",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "a high pile of leaves",
+        "wind blowing leaves across the lawn",
+        "no humans",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Obraz druhý: Dluh",
+          "kind": "narration",
+          "i18n": {
+            "de": "Zweites Bild: Die Schuld",
+            "en": "Scene Two: The Debt",
+            "fr": "Tableau deux : La Dette",
+            "it": "Quadro secondo: Il debito",
+            "ja": "第二場：借金",
+            "ko": "제2장: 빚",
+            "pl": "Obraz drugi: Dług",
+            "pt-BR": "Cena dois: A Dívida",
+            "ru": "Картина вторая: Долг",
+            "uk": "Картина друга: Борг",
+            "vi": "Cảnh hai: Món nợ"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "wind lifting leaves off the pile"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing",
+        "blanket over the shoulders",
+        "serious"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Jak to máš s příjmem? Pořád mi něco visíš. Teď by se mi něco hodilo zpátky.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Wie sieht's bei dir mit Einkommen aus? Du schuldest mir noch was. Gerade könnt ich was zurück gebrauchen.",
+            "en": "How's your income? You still owe me. I could use some of it back right now.",
+            "fr": "T'en es où côté revenus ? Tu me dois encore des sous. Là, ça m'arrangerait d'en récupérer.",
+            "it": "Come sei messo con le entrate? Mi devi ancora qualcosa. Adesso mi farebbe comodo riaverne un po'.",
+            "ja": "収入はどうなってる？まだ貸しがあるだろ。今ちょっと返してほしいんだ。",
+            "ko": "수입은 어때? 아직 나한테 갚을 거 있잖아. 지금 좀 돌려받으면 좋겠어.",
+            "pl": "Jak tam z dochodem? Wciąż mi coś wisisz. Teraz by mi się przydało coś z powrotem.",
+            "pt-BR": "Como tá tua renda? Você ainda me deve. Agora uma parte ia me ajudar.",
+            "ru": "Как у тебя с доходом? Ты мне ещё должен. Сейчас бы мне что-нибудь вернуть.",
+            "uk": "Як у тебе з доходом? Ти мені ще винен. Зараз мені щось повернути було б доречно.",
+            "vi": "Thu nhập mày sao rồi? Mày còn nợ tao. Giờ tao đang cần lấy lại ít."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting",
+        "from front",
+        "looking around the shelter",
+        "defensive",
+        "tired"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Cože? Tolik ti nedlužím, spíš míň. Pozítří jdu na úřad. Všechno jsem dal do Nebulonu a teď nevím, co dál. Příjem nemám.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Was? So viel schulde ich dir nicht, eher weniger. Übermorgen geh ich zum Amt. Ich hab alles in Nebulon gesteckt und weiß jetzt nicht weiter. Einkommen hab ich keins.",
+            "en": "What? I don't owe you that much, less if anything. Day after tomorrow I'm going to the job centre. I put everything into Nebulon and now I don't know what next. I've got no income.",
+            "fr": "Quoi ? Je te dois pas autant, plutôt moins. Après-demain je vais au chômage. J'ai tout mis dans Nebulon et là je sais plus quoi faire. J'ai aucun revenu.",
+            "it": "Cosa? Non ti devo così tanto, semmai meno. Dopodomani vado all'ufficio di collocamento. Ho messo tutto in Nebulon e ora non so che fare. Entrate non ne ho.",
+            "ja": "は？そんなに借りてない、むしろ少ないくらいだ。明後日、職安に行く。全部Nebulonにつぎ込んで、この先どうするかもわからない。収入はゼロだ。",
+            "ko": "뭐? 그렇게 많이 안 빌렸어, 오히려 적지. 모레 고용센터 가. 다 Nebulon에 쏟아붓고 이제 어떡할지 모르겠어. 수입 없어.",
+            "pl": "Co? Aż tyle ci nie wiszę, raczej mniej. Pojutrze idę do urzędu pracy. Wszystko włożyłem w Nebulon i teraz nie wiem, co dalej. Dochodu nie mam.",
+            "pt-BR": "O quê? Não te devo tudo isso, devo é menos. Depois de amanhã vou no seguro-desemprego. Pus tudo no Nebulon e agora não sei o que fazer. Não tenho renda.",
+            "ru": "Чего? Столько я тебе не должен, скорее меньше. Послезавтра иду на биржу. Я всё вложил в Nebulon и теперь не знаю, что дальше. Дохода нет.",
+            "uk": "Що? Стільки я тобі не винен, радше менше. Післязавтра йду в центр зайнятості. Я все вклав у Nebulon і тепер не знаю, що далі. Доходу нема.",
+            "vi": "Cái gì? Tao đâu nợ mày nhiều thế, ít hơn ấy. Ngày kia tao đi trung tâm việc làm. Tao dồn hết vào Nebulon, giờ không biết làm gì. Không có thu nhập."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "calm",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Nepospíchám. Jen mě zajímá, jestli to řešíš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich hab's nicht eilig. Mich interessiert nur, ob du's angehst.",
+            "en": "I'm in no rush. I just want to know if you're dealing with it.",
+            "fr": "Je suis pas pressé. Je veux juste savoir si tu t'en occupes.",
+            "it": "Non ho fretta. Mi interessa solo sapere se te ne occupi.",
+            "ja": "急いでない。ちゃんと考えてるか知りたいだけだ。",
+            "ko": "급한 건 아니야. 그냥 네가 해결하고 있는지 궁금한 거지.",
+            "pl": "Nie spieszę się. Ciekawi mnie tylko, czy to ogarniasz.",
+            "pt-BR": "Não tô com pressa. Só quero saber se você tá resolvendo.",
+            "ru": "Я не тороплю. Мне просто интересно, решаешь ли ты это.",
+            "uk": "Я не підганяю. Мені просто цікаво, чи ти це вирішуєш.",
+            "vi": "Tao không vội. Chỉ muốn biết mày có đang lo không."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "dvojce_1_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "jumping into a pile of leaves",
+        "laughing",
+        "leaves flying"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dvojce_1_podzim",
+          "text": "Tati, pojď skákat do listí!",
+          "kind": "speech",
+          "i18n": {
+            "de": "Papa, komm in die Blätter springen!",
+            "en": "Daddy, come jump in the leaves!",
+            "fr": "Papa, viens sauter dans les feuilles !",
+            "it": "Papà, vieni a saltare nelle foglie!",
+            "ja": "パパ、はっぱにジャンプしよー！",
+            "ko": "아빠, 낙엽에 뛰어들자!",
+            "pl": "Tato, chodź skakać w liście!",
+            "pt-BR": "Papai, vem pular nas folhas!",
+            "ru": "Папа, пошли прыгать в листья!",
+            "uk": "Тату, ходімо стрибати в листя!",
+            "vi": "Bố ơi, ra nhảy vào đống lá đi!"
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "distracted",
+        "eyes on the laptop"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Za chvilku.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Gleich.",
+            "en": "In a minute.",
+            "fr": "Dans une minute.",
+            "it": "Tra un attimo.",
+            "ja": "ちょっと待って。",
+            "ko": "조금만.",
+            "pl": "Za chwilkę.",
+            "pt-BR": "Daqui a pouco.",
+            "ru": "Сейчас.",
+            "uk": "Зараз.",
+            "vi": "Chút nữa."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "typing harder",
+        "hard expression"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "O penězích na release, který se nikdy nestal, radši mluvit nebudu. Beru to tak, že mi za ně dáváš svolení vydat vlastní projekt inspirovaný Nebulonem.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Über das Geld für den Release, den es nie gab, red ich lieber nicht. Ich seh's so, dass du mir damit erlaubst, ein eigenes Projekt rauszubringen, inspiriert von Nebulon.",
+            "en": "I'd rather not talk about the money for the release that never happened. I take it that means you're letting me put out my own project inspired by Nebulon.",
+            "fr": "L'argent pour la sortie qui n'a jamais eu lieu, je préfère pas en parler. Je considère que tu me donnes le feu vert pour sortir mon propre projet inspiré de Nebulon.",
+            "it": "Dei soldi per il rilascio che non c'è mai stato preferisco non parlare. Lo prendo come il tuo permesso a pubblicare un mio progetto ispirato a Nebulon.",
+            "ja": "結局出なかったリリースの金の話はしないでおく。その代わり、Nebulonに着想を得た俺のプロジェクトを出す許可をもらったってことにする。",
+            "ko": "결국 안 나온 출시 돈 얘긴 안 할게. 대신 Nebulon에서 영감 받은 내 프로젝트를 내도 된다는 허락으로 칠게.",
+            "pl": "O kasie na release, który nigdy nie nastąpił, wolę nie mówić. Biorę to tak, że w zamian pozwalasz mi wydać własny projekt inspirowany Nebulonem.",
+            "pt-BR": "Do dinheiro pro lançamento que nunca aconteceu eu prefiro nem falar. Encaro como tua permissão pra eu lançar um projeto meu inspirado no Nebulon.",
+            "ru": "О деньгах на релиз, которого так и не было, лучше промолчу. Считаю, что этим ты разрешаешь мне выпустить свой проект по мотивам Nebulon.",
+            "uk": "Про гроші на реліз, якого так і не було, краще змовчу. Вважаю, що цим ти дозволяєш мені випустити власний проєкт за мотивами Nebulon.",
+            "vi": "Tiền cho bản phát hành chưa bao giờ ra thì thôi tao không nhắc. Tao coi như mày cho phép tao ra dự án riêng lấy cảm hứng từ Nebulon."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "stubborn",
+        "then softer",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "To ne. Ten koncept má mnohem větší cenu, stál mě celý život. Ale jestli chceš vydat Nebulon po svým, domluvme se. Na to právo máš.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Nein. Das Konzept ist viel mehr wert, es hat mich mein ganzes Leben gekostet. Aber wenn du Nebulon auf deine Art rausbringen willst, lass uns reden. Das Recht hast du.",
+            "en": "No. The concept is worth way more, it cost me my whole life. But if you want to release Nebulon your way, let's make a deal. You've earned that right.",
+            "fr": "Non. Le concept vaut bien plus, il m'a coûté toute ma vie. Mais si tu veux sortir Nebulon à ta façon, mettons-nous d'accord. T'en as le droit.",
+            "it": "No. Il concept vale molto di più, mi è costato una vita. Ma se vuoi pubblicare Nebulon a modo tuo, mettiamoci d'accordo. Ne hai il diritto.",
+            "ja": "ダメだ。あのコンセプトはもっと価値がある。俺の人生全部かかってる。でもNebulonをお前のやり方で出したいなら、話し合おう。その権利はある。",
+            "ko": "안 돼. 그 콘셉트는 훨씬 더 가치 있어, 내 인생 전부가 들어갔어. 근데 Nebulon을 네 식대로 내고 싶으면 얘기하자. 그럴 권리는 있어.",
+            "pl": "Nie. Ten koncept jest wart dużo więcej, kosztował mnie całe życie. Ale jeśli chcesz wydać Nebulon po swojemu, dogadajmy się. Masz do tego prawo.",
+            "pt-BR": "Não. O conceito vale muito mais, me custou a vida inteira. Mas se quer lançar o Nebulon do teu jeito, vamos combinar. Esse direito você tem.",
+            "ru": "Нет. Концепт стоит гораздо больше, он стоил мне всей жизни. Но если хочешь выпустить Nebulon по-своему — давай договоримся. На это ты право имеешь.",
+            "uk": "Ні. Концепт коштує набагато більше, він коштував мені всього життя. Але якщо хочеш випустити Nebulon по-своєму — домовмося. На це ти маєш право.",
+            "vi": "Không. Ý tưởng đó đáng giá hơn nhiều, nó tốn cả đời tao. Nhưng nếu mày muốn ra Nebulon theo kiểu mày, thì thỏa thuận đi. Quyền đó mày có."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "a spotlight on a laptop screen",
+        "a blinking cursor",
+        "no readable text",
+        "leaves",
+        "no humans"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "",
+          "text": "Půl na půl. Padesát na padesát. Vždycky jsem to tak bral.",
+          "kind": "narration",
+          "i18n": {
+            "de": "Halbe-halbe. Fünfzig zu fünfzig. So hab ich's immer gesehen.",
+            "en": "Half and half. Fifty-fifty. That's how I always saw it.",
+            "fr": "Moitié-moitié. Cinquante-cinquante. Je l'ai toujours vu comme ça.",
+            "it": "Metà e metà. Cinquanta e cinquanta. L'ho sempre vista così.",
+            "ja": "半々。フィフティ・フィフティ。ずっとそう思ってた。",
+            "ko": "반반. 50 대 50. 난 늘 그렇게 생각했어.",
+            "pl": "Pół na pół. Pięćdziesiąt na pięćdziesiąt. Zawsze tak to widziałem.",
+            "pt-BR": "Meio a meio. Cinquenta-cinquenta. Sempre vi assim.",
+            "ru": "Пополам. Пятьдесят на пятьдесят. Я всегда так считал.",
+            "uk": "Навпіл. П'ятдесят на п'ятдесят. Я завжди так вважав.",
+            "vi": "Chia đôi. Năm mươi năm mươi. Tao luôn nghĩ vậy."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "dcera_9_podzim"
+        }
+      ],
+      "visual_tags": [
+        "standing behind someone",
+        "reading over a shoulder",
+        "autumn jacket",
+        "gentle expression"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "dcera_9_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "smile",
+        "looking at a laptop screen"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "dcera_9_podzim",
+          "text": "To je hezký. To mu pošli.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Das ist schön. Schick ihm das.",
+            "en": "That's nice. Send him that.",
+            "fr": "C'est joli. Envoie-lui ça.",
+            "it": "È bello. Mandaglielo.",
+            "ja": "それ、いいね。送ってあげなよ。",
+            "ko": "그거 좋다. 그거 보내.",
+            "pl": "Ładne. Wyślij mu to.",
+            "pt-BR": "Que bonito. Manda isso pra ele.",
+            "ru": "Красиво. Отправь ему это.",
+            "uk": "Гарно. Надішли йому це.",
+            "vi": "Hay đó. Gửi cho chú ấy đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [],
+      "visual_tags": [
+        "a finger holding the backspace key",
+        "laptop screen",
+        "no readable text",
+        "falling leaves",
+        "no humans"
+      ],
+      "bubbles": [],
+      "sfx": [],
+      "gap_after": "medium",
+      "animate": true,
+      "motion": "the cursor eating the message letter by letter, leaves falling"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "cold expression",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Asi tě dám jenom do titulků. Sorry.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Ich nenn dich wohl nur im Abspann. Sorry.",
+            "en": "I'll probably just put you in the credits. Sorry.",
+            "fr": "Je vais sûrement te mettre juste au générique. Désolé.",
+            "it": "Credo che ti metterò solo nei titoli di coda. Sorry.",
+            "ja": "お前はたぶんクレジットに載せるだけになる。悪いな。",
+            "ko": "넌 그냥 크레딧에만 넣을 것 같아. 미안.",
+            "pl": "Chyba dam cię tylko do napisów końcowych. Sorry.",
+            "pt-BR": "Acho que vou te pôr só nos créditos. Foi mal.",
+            "ru": "Наверное, укажу тебя только в титрах. Сорян.",
+            "uk": "Мабуть, вкажу тебе тільки в титрах. Сорі.",
+            "vi": "Chắc tao chỉ để tên mày ở phần credit. Sorry."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "medium",
+      "location_id": "l_kryt_3",
+      "characters": [
+        {
+          "id": "kosmo"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "sitting at a desk",
+        "from front",
+        "furious",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "kosmo",
+          "text": "Kámo, jdi do háje.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Alter, hau ab.",
+            "en": "Mate, get lost.",
+            "fr": "Mon pote, va te faire voir.",
+            "it": "Amico, vai al diavolo.",
+            "ja": "相棒、消えろ。",
+            "ko": "야, 꺼져.",
+            "pl": "Stary, idź do diabła.",
+            "pt-BR": "Mano, vai pro inferno.",
+            "ru": "Братан, иди к чёрту.",
+            "uk": "Друже, йди до біса.",
+            "vi": "Bạn ơi, biến đi."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "small"
+    },
+    {
+      "shot": "close-up",
+      "location_id": "l_zahrada_3",
+      "characters": [
+        {
+          "id": "ol1n_podzim"
+        }
+      ],
+      "visual_tags": [
+        "upper body",
+        "from front",
+        "bitter half smile",
+        "typing"
+      ],
+      "bubbles": [
+        {
+          "speaker_id": "ol1n_podzim",
+          "text": "Teď sis to poprvé trefil. Kámo.",
+          "kind": "speech",
+          "i18n": {
+            "de": "Jetzt hast du's zum ersten Mal getroffen. Alter.",
+            "en": "First time you've nailed it. Mate.",
+            "fr": "Là, pour la première fois, t'as visé juste. Mon pote.",
+            "it": "Per la prima volta ci hai preso. Amico.",
+            "ja": "初めて的を射たな。相棒。",
+            "ko": "이번에 처음으로 제대로 맞혔네. 친구.",
+            "pl": "Pierwszy raz trafiłeś. Stary.",
+            "pt-BR": "Agora você acertou pela primeira vez. Mano.",
+            "ru": "Вот сейчас ты впервые попал. Братан.",
+            "uk": "Ось тепер ти вперше влучив. Друже.",
+            "vi": "Lần đầu mày nói trúng đấy. Bạn."
+          }
+        }
+      ],
+      "sfx": [],
+      "gap_after": "large"
+    }
+  ]
+}

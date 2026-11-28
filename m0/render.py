@@ -16,6 +16,7 @@ import time
 from pathlib import Path
 
 import comfy
+import pixelate
 import prompts
 import rules
 from common import DATA, OUT, load_json, save_json, split_tags, wd14_tag
@@ -182,6 +183,9 @@ def main():
                 for cid, strip in zip(ids, comfy.strips(len(ids))) if cid in char_refs]
         png, tags, bad, s, rec["attempts"] = draw(p, seed, f"webtoon/{day}/{args.run}/p{i:02d}_s{k}", refs)
         rec["refs"] = [cid for cid in ids if cid in char_refs]
+        if px := pixelate.spec(p["preset"]):  # pixel-art preset: the drawn image is pixelated here (m0/pixelate.py)
+            png = pixelate.png(png, px)
+            rec["pixelate"] = px
         name = f"p{i:02d}_s{k}.png"
         (outdir / name).write_bytes(png)
         rec.update(file=name, seed=s, status="failed" if bad else "ok", rating=tags.get("rating"), wd14_tags=top_tags(tags))
