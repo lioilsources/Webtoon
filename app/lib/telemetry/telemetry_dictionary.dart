@@ -10,7 +10,7 @@ import '../i18n/languages.dart';
 
 /// The app version this build reports; test/telemetry_test.dart keeps it equal to `version:`
 /// in pubspec.yaml.
-const kAppVersion = '1.0.0';
+const kAppVersion = '1.0.1';
 
 /// Route name → screen. Pushed reader routes carry these names (RouteSettings); the home
 /// route `/` is the current tab or the start screen ([ToonforkScreenObserver]).
